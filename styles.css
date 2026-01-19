@@ -1081,3 +1081,97 @@ footer {
         width: 100%;
     }
 }
+/* ================================
+   DARK MODE STYLES
+   ================================ */
+
+   .dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+    background: var(--slate-100);
+}
+
+/* Dark mode colours */
+body.dark-mode {
+    --slate-50: #1a1a2e;
+    --slate-100: #252541;
+    --slate-200: #2d2d4a;
+    --slate-300: #3d3d5c;
+    --slate-400: #6b6b8a;
+    --slate-500: #8a8aa3;
+    --slate-600: #a3a3b8;
+    --slate-700: #c4c4d4;
+    --slate-800: #e0e0eb;
+    --slate-900: #f5f5fa;
+    background-color: #1a1a2e;
+    color: #e0e0eb;
+}
+
+body.dark-mode .navbar {
+    background: rgba(26, 26, 46, 0.95);
+    border-bottom-color: var(--slate-200);
+}
+
+body.dark-mode .article-card {
+    background: var(--slate-100);
+    border-color: var(--slate-200);
+}
+
+body.dark-mode .article-card:hover {
+    border-color: var(--orange-500);
+}
+
+body.dark-mode .btn-secondary {
+    background: var(--slate-200);
+    color: var(--slate-800);
+}
+
+body.dark-mode footer {
+    background: var(--slate-100);
+    border-top-color: var(--slate-200);
+}
+
+body.dark-mode .resource-card {
+    background: var(--slate-100);
+    border-color: var(--slate-200);
+}
+
+body.dark-mode .video-card {
+    background: var(--slate-100);
+}
+
+body.dark-mode .newsletter {
+    background: var(--slate-100);
+}
+
+body.dark-mode input[type="email"] {
+    background: var(--slate-200);
+    border-color: var(--slate-300);
+    color: var(--slate-800);
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+    background: var(--slate-200);
+}
+
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #252541 100%);
+}
+
+body.dark-mode .filter-tab {
+    background: var(--slate-200);
+    color: var(--slate-600);
+}
+
+body.dark-mode .filter-tab.active {
+    background: var(--orange-500);
+    color: white;
+}

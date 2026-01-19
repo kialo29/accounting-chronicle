@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar">
         <a href="/" class="logo">
-            <span class="logo-the">The</span>
+            <img src="/images/logo.png" alt="The Accounting Chronicle" style="height: 45px; border-radius: 50%;">
             <span class="logo-main">Accounting Chronicle</span>
         </a>
         <button class="mobile-menu-btn" aria-label="Toggle menu">
@@ -28,6 +28,7 @@
             <li><a href="/resources/"{% if page.url == "/resources/" %} class="active"{% endif %}>Resources</a></li>
             <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
             <li><a href="/youtube/"{% if page.url == "/youtube/" %} class="active"{% endif %}>YouTube</a></li>
+            <li><button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button></li>
         </ul>
     </nav>
 
@@ -38,8 +39,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-brand">
-                <span class="logo-the">The</span>
-                <span class="logo-main">Accounting Chronicle</span>
+                <img src="/images/logo.png" alt="The Accounting Chronicle" style="height: 40px; border-radius: 50%; margin-bottom: 1rem;">
                 <p>Documenting the ACA journey, one chapter at a time.</p>
             </div>
             <div class="footer-links">
