@@ -1,77 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if title %}{{ title }} | {% endif %}The Accounting Chronicle</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-</head>
-<body>
-    <nav class="navbar">
-        <a href="/" class="logo">
-            <img src="/images/logo.png" alt="The Accounting Chronicle" style="height: 100px;">
+---
+layout: base.njk
+title: ""
+---
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-tag">ACA Journey • Study Guides • Real Talk</p>
+        <h1>Documenting the path through <span class="highlight">ACA</span>, one chapter at a time.</h1>
+        <p class="hero-subtitle">Join me as I navigate the world of accounting qualifications, share what I learn, and try to keep my sanity intact along the way.</p>
+        <div class="hero-buttons">
+            <a href="/articles/" class="btn btn-primary">Read the Blog</a>
+            <a href="/youtube/" class="btn btn-secondary">Watch on YouTube</a>
+        </div>
+    </div>
+    <div class="hero-decoration">
+        <img src="/images/circle.png" alt="" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+    </div>
+</section>
+
+<!-- Featured Video Section -->
+<section class="featured-video">
+    <div class="section-header">
+        <h2>Latest from YouTube</h2>
+        <a href="/youtube/" class="see-all">See all videos →</a>
+    </div>
+    <div class="video-container">
+        <div class="video-placeholder">
+            <div class="play-button">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+            <p>Your featured video here</p>
+            <span class="video-note">Replace this with your YouTube embed</span>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Articles -->
+<section class="latest-articles">
+    <div class="section-header">
+        <h2>Latest Articles</h2>
+        <a href="/articles/" class="see-all">See all articles →</a>
+    </div>
+    <div class="articles-grid">
+        {% for article in collections.sortedArticles | reverse %}
+        {% if loop.index <= 3 %}
+        <a href="{{ article.url }}" class="article-card{% if loop.first %} featured{% endif %}">
+            <span class="article-category">{{ article.data.category }}</span>
+            <h3>{{ article.data.title }}</h3>
+            <p>{{ article.data.description }}</p>
+            <div class="article-meta">
+                <span class="read-time">{{ article.data.readTime }}</span>
+                <span class="date">{{ article.data.date | dateFormat }}</span>
+            </div>
         </a>
-        <button class="mobile-menu-btn" aria-label="Toggle menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-links">
-            <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Home</a></li>
-            <li><a href="/articles/"{% if "/articles" in page.url %} class="active"{% endif %}>Articles</a></li>
-            <li><a href="/beyond-the-books/"{% if page.url == "/beyond-the-books/" %} class="active"{% endif %}>Beyond the Books</a></li>
-            <li><a href="/resources/"{% if page.url == "/resources/" %} class="active"{% endif %}>Resources</a></li>
-            <li><a href="/about/"{% if page.url == "/about/" %} class="active"{% endif %}>About</a></li>
-            <li><a href="/youtube/"{% if page.url == "/youtube/" %} class="active"{% endif %}>YouTube</a></li>
-            <li><button class="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button></li>
-        </ul>
-    </nav>
-
-    <main>
-        {{ content | safe }}
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <img src="/images/logo.png" alt="The Accounting Chronicle" style="height: 70px; margin-bottom: 1rem;">
-                <p>Documenting the ACA journey, one chapter at a time.</p>
+        {% endif %}
+        {% endfor %}
+        
+        {% if collections.sortedArticles.length == 0 %}
+        <a href="#" class="article-card featured">
+            <span class="article-category">ACA Journey</span>
+            <h3>Your First Article Title</h3>
+            <p>Write articles in the CMS and they'll appear here automatically...</p>
+            <div class="article-meta">
+                <span class="read-time">5 min read</span>
+                <span class="date">Jan 2025</span>
             </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Content</h4>
-                    <a href="/articles/">Articles</a>
-                    <a href="/beyond-the-books/">Beyond the Books</a>
-                    <a href="/resources/">Resources</a>
-                </div>
-                <div class="footer-column">
-                    <h4>Connect</h4>
-                    <a href="/youtube/">YouTube</a>
-                    <a href="#" target="_blank">LinkedIn</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2025 The Accounting Chronicle. Built with ☕ and spreadsheets.</p>
-        </div>
-    </footer>
+        </a>
+        {% endif %}
+    </div>
+</section>
 
-    <script src="/script.js"></script>
-    <script>
-      // Redirect after Netlify Identity login
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-          if (!user) {
-            window.netlifyIdentity.on("login", () => {
-              document.location.href = "/admin/";
-            });
-          }
-        });
-      }
-    </script>
-</body>
-</html>
+<!-- Beyond the Books Teaser -->
+<section class="beyond-teaser">
+    <div class="beyond-content">
+        <span class="section-tag">Beyond the Books</span>
+        <h2>It's not all debits and credits.</h2>
+        <p>The ACA is a marathon, not a sprint. I write about staying sane, managing stress, and actually having a life while studying.</p>
+        <a href="/beyond-the-books/" class="btn btn-outline">Explore this section →</a>
+    </div>
+    <div class="beyond-topics">
+        <span class="topic-tag">Mental Health</span>
+        <span class="topic-tag">Work-Life Balance</span>
+        <span class="topic-tag">Productivity</span>
+        <span class="topic-tag">Motivation</span>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>Stay in the loop</h2>
+        <p>Get new articles and resources straight to your inbox. No spam, just useful stuff.</p>
+        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+</section>
