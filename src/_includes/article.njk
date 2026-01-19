@@ -1,0 +1,39 @@
+---
+layout: base.njk
+---
+
+<article class="article-single">
+    <span class="article-category">{{ category }}</span>
+    
+    <h1>{{ title }}</h1>
+    
+    <div class="article-meta">
+        <span class="read-time">{{ readTime }}</span>
+        <span class="date">{{ date | dateFormat }}</span>
+    </div>
+
+    <div class="article-body">
+        {{ content | safe }}
+    </div>
+
+    {% if youtubeId %}
+    <div style="margin-top: 3rem; padding: 2rem; background: var(--slate-50); border-radius: var(--radius-lg);">
+        <h3 style="margin-bottom: 1rem;">📺 Related Video</h3>
+        <p style="color: var(--slate-600); margin-bottom: 1rem;">I also made a video about this topic:</p>
+        <div style="aspect-ratio: 16/9; border-radius: var(--radius-md); overflow: hidden;">
+            <iframe 
+                width="100%" 
+                height="100%" 
+                src="https://www.youtube.com/embed/{{ youtubeId }}" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    {% endif %}
+</article>
+
+<div style="text-align: center; padding: 2rem 5% 4rem;">
+    <a href="/articles/" class="btn btn-secondary">← Back to all articles</a>
+</div>

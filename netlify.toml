@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# Redirect for Netlify Identity
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200

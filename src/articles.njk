@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: "Articles"
+---
+
+<section class="page-header">
+    <h1>Articles</h1>
+    <p>Thoughts, guides, and lessons from my ACA journey.</p>
+</section>
+
+<section class="articles-listing">
+    <div class="articles-grid">
+        {% for article in collections.sortedArticles | reverse %}
+        <a href="{{ article.url }}" class="article-card">
+            <span class="article-category">{{ article.data.category }}</span>
+            <h3>{{ article.data.title }}</h3>
+            <p>{{ article.data.description }}</p>
+            <div class="article-meta">
+                <span class="read-time">{{ article.data.readTime }}</span>
+                <span class="date">{{ article.data.date | dateFormat }}</span>
+            </div>
+        </a>
+        {% endfor %}
+        
+        {% if collections.sortedArticles.length == 0 %}
+        <div class="empty-state" style="grid-column: 1 / -1; text-align: center; padding: 4rem 2rem;">
+            <p style="color: var(--slate-500);">No articles yet. Head to <a href="/admin/">/admin</a> to write your first one!</p>
+        </div>
+        {% endif %}
+    </div>
+</section>

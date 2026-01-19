@@ -1,0 +1,79 @@
+---
+layout: base.njk
+title: "Beyond the Books"
+---
+
+<header class="page-header" style="background: linear-gradient(135deg, var(--slate-900) 0%, var(--slate-800) 100%); color: white;">
+    <span class="section-tag" style="color: var(--orange-500);">Beyond the Books</span>
+    <h1 style="color: white;">It's not all debits and credits.</h1>
+    <p style="color: var(--slate-400);">The ACA is a marathon, not a sprint. Here's where I write about staying sane, managing stress, and actually having a life while studying for professional exams.</p>
+</header>
+
+<section>
+    <div class="filter-tabs">
+        <button class="filter-tab active" data-category="all">All</button>
+        <button class="filter-tab" data-category="mental health">Mental Health</button>
+        <button class="filter-tab" data-category="work-life">Work-Life Balance</button>
+        <button class="filter-tab" data-category="productivity">Productivity</button>
+        <button class="filter-tab" data-category="motivation">Motivation</button>
+    </div>
+
+    <div class="articles-grid">
+        {% for article in collections.sortedArticles | reverse %}
+        {% if article.data.category == "Beyond the Books" or article.data.category == "Mental Health" or article.data.category == "Productivity" %}
+        <a href="{{ article.url }}" class="article-card">
+            <span class="article-category">{{ article.data.category }}</span>
+            <h3>{{ article.data.title }}</h3>
+            <p>{{ article.data.description }}</p>
+            <div class="article-meta">
+                <span class="read-time">{{ article.data.readTime }}</span>
+                <span class="date">{{ article.data.date | dateFormat }}</span>
+            </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+        
+        <!-- Placeholder articles - remove these once you have real content -->
+        <article class="article-card">
+            <span class="article-category">Mental Health</span>
+            <h3>When Exam Anxiety Gets Too Much</h3>
+            <p>Real talk about the pressure of professional exams and what's helped me manage the worst of it.</p>
+            <div class="article-meta">
+                <span class="read-time">6 min read</span>
+                <span class="date">Coming soon</span>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <span class="article-category">Work-Life Balance</span>
+            <h3>How I Actually Switch Off After Work</h3>
+            <p>Busy season nearly broke me. Here's how I learned to create boundaries that actually stick.</p>
+            <div class="article-meta">
+                <span class="read-time">5 min read</span>
+                <span class="date">Coming soon</span>
+            </div>
+        </article>
+
+        <article class="article-card">
+            <span class="article-category">Productivity</span>
+            <h3>My Morning Routine (That I Actually Follow)</h3>
+            <p>Forget the 5am club. Here's a realistic morning routine for people who value their sleep.</p>
+            <div class="article-meta">
+                <span class="read-time">4 min read</span>
+                <span class="date">Coming soon</span>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>Stay in the loop</h2>
+        <p>Get new articles and resources straight to your inbox. No spam, just useful stuff.</p>
+        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+</section>

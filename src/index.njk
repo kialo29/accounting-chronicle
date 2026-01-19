@@ -1,0 +1,105 @@
+---
+layout: base.njk
+title: ""
+---
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <p class="hero-tag">ACA Journey • Study Guides • Real Talk</p>
+        <h1>Documenting the path through <span class="highlight">ACA</span>, one chapter at a time.</h1>
+        <p class="hero-subtitle">Join me as I navigate the world of accounting qualifications, share what I learn, and try to keep my sanity intact along the way.</p>
+        <div class="hero-buttons">
+            <a href="/articles/" class="btn btn-primary">Read the Blog</a>
+            <a href="/youtube/" class="btn btn-secondary">Watch on YouTube</a>
+        </div>
+    </div>
+    <div class="hero-decoration">
+        <div class="decoration-circle"></div>
+        <div class="decoration-lines">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Video Section -->
+<section class="featured-video">
+    <div class="section-header">
+        <h2>Latest from YouTube</h2>
+        <a href="/youtube/" class="see-all">See all videos →</a>
+    </div>
+    <div class="video-container">
+        <div class="video-placeholder">
+            <div class="play-button">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+            <p>Your featured video here</p>
+            <span class="video-note">Replace this with your YouTube embed</span>
+        </div>
+    </div>
+</section>
+
+<!-- Latest Articles -->
+<section class="latest-articles">
+    <div class="section-header">
+        <h2>Latest Articles</h2>
+        <a href="/articles/" class="see-all">See all articles →</a>
+    </div>
+    <div class="articles-grid">
+        {% for article in collections.sortedArticles | reverse %}
+        {% if loop.index <= 3 %}
+        <a href="{{ article.url }}" class="article-card{% if loop.first %} featured{% endif %}">
+            <span class="article-category">{{ article.data.category }}</span>
+            <h3>{{ article.data.title }}</h3>
+            <p>{{ article.data.description }}</p>
+            <div class="article-meta">
+                <span class="read-time">{{ article.data.readTime }}</span>
+                <span class="date">{{ article.data.date | dateFormat }}</span>
+            </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+        
+        {% if collections.sortedArticles.length == 0 %}
+        <a href="#" class="article-card featured">
+            <span class="article-category">ACA Journey</span>
+            <h3>Your First Article Title</h3>
+            <p>Write articles in the CMS and they'll appear here automatically...</p>
+            <div class="article-meta">
+                <span class="read-time">5 min read</span>
+                <span class="date">Jan 2025</span>
+            </div>
+        </a>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Beyond the Books Teaser -->
+<section class="beyond-teaser">
+    <div class="beyond-content">
+        <span class="section-tag">Beyond the Books</span>
+        <h2>It's not all debits and credits.</h2>
+        <p>The ACA is a marathon, not a sprint. I write about staying sane, managing stress, and actually having a life while studying.</p>
+        <a href="/beyond-the-books/" class="btn btn-outline">Explore this section →</a>
+    </div>
+    <div class="beyond-topics">
+        <span class="topic-tag">Mental Health</span>
+        <span class="topic-tag">Work-Life Balance</span>
+        <span class="topic-tag">Productivity</span>
+        <span class="topic-tag">Motivation</span>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <h2>Stay in the loop</h2>
+        <p>Get new articles and resources straight to your inbox. No spam, just useful stuff.</p>
+        <form class="newsletter-form" name="newsletter" method="POST" data-netlify="true">
+            <input type="email" name="email" placeholder="your@email.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+    </div>
+</section>
