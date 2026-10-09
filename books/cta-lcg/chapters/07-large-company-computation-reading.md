@@ -214,7 +214,7 @@ Relief goes to **TEL as employer**, though the shares are in TPLC. The timing di
 
 ## When people leave.
 
-On **30 September GY3**, Calder Valve Engineering (Calder) closed its process valves division and **Dan Hartley** was made redundant after 12 years' service (*The Living Law*, chapter 9, covered his side).
+On **30 September GY3**, Calder Valve Engineering (Calder) closed its process valves division and **Dan Hartley** (invented, as in TKS) was made redundant after 12 years' service (*The Living Law*, chapter 9, covered his side).
 
 | Calder's payments to Dan (paid 30 September GY3) | £ |
 |---|---|
@@ -269,6 +269,8 @@ The principle in *McKnight* is a public policy rule, not a statutory one, which 
 
 **CTA 2009 Part 10 Ch 8, s 979:** corporation tax is charged on income "not otherwise" within the charge: the successor of old Schedule D Case VI.
 
+**Why a sweeper?** A tax built on named headings leaks at the joins. The residual charge means the question is never *whether* income is taxed, only under which heading, and the heading decides what can be set against it and how losses behave.
+
 - It charges **income**, not capital; gains go to the gains rules.
 - It does not apply to **annual payments** (Part 10 Ch 7) or exempt income.
 - **s 980:** commercial woodlands; **s 981:** certain gains on financial futures; **s 982:** priority rules.
@@ -315,7 +317,9 @@ Under a **long funding lease** the lessee is treated as owning the plant and get
 | Right-of-use lease (remeasurement of the liability) | Deduction adjusted | s 377A |
 | Long funding **operating** lease | Reduced by the time-apportioned expected fall in value | s 379 |
 
-Gateways: a lease of **7 years or less** is a short lease and cannot be a long funding lease (CAA 2001 s 70I); the lessee's return for the initial period must treat it as one (s 70H), and that choice cannot be corrected later as an error.
+**Why the lessee "owns" the plant:** a long funding lease is, in economic substance, a purchase financed by borrowing. The allowances go to the party bearing the economics of ownership, and the revenue deduction is cut back so the capital is not relieved twice: capital through allowances, financing cost through the P&L.
+
+Gateways: a lease of **7 years or less** is a short lease and cannot be a long funding lease (CAA 2001 s 70I); the lessee's return for the initial period must treat it as one (s 70H), and that choice cannot be corrected later as an error, so the treatment must be decided when the lease is signed.
 
 > **Worked example (hypothetical).** TEL leases a machine for 10 years under a long funding finance lease. Rentals charged in the year **£500,000**, of which finance charge **£120,000**. Deductible as rental: **£120,000**; add back **£380,000** (relieved through CAs). **N25 examiners:** candidates put long funding lease plant in the special rate pool; it belonged in the main pool.
 
@@ -419,6 +423,10 @@ CT is about 8.6% of profit before tax. That is not a gap in the law: it is the l
 > **Recurring items:** bonuses/LTIPs unpaid at 9 months; pensions (spreading tested, usually not triggered); staff v customer entertaining; branded drink v pens; fines and penalties; donations; trade debt v intra-group loan impairments; long funding leases; capitalised revenue expenditure (N23 Q4: handled badly); then CAs, losses, MR.
 >
 > **Habits that earn marks:** list every item, including nil adjustments, with a short reason; follow the statutory order of reliefs; keep **£ or £000 consistent** within a table (M26 examiners); apply MR properly, with associated companies and any straddle.
+>
+> **Favourite companions:** CAs, losses, QIPs and deferred tax; in group questions, group relief or a property disposal. Practise carrying the adjusted profit forward into all of them.
+>
+> **Reported traps (M23–M26):** spreading pensions when neither test is met; employee entertaining limits applied to the company; LFL plant as special rate; missing MR in a small group or applying 26.5% to everything; skipping the tax charge tail.
 >
 > **Four habits.** (1) List every item, including those needing no adjustment, with a few words of reason: nil adjustments earn marks too. (2) Follow the statutory order of reliefs. (3) Never mix £ and £000 in one table. (4) Deal with the rate properly, and never apply 26.5% to the whole profit.
 >
