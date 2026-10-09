@@ -33,10 +33,36 @@ chk('dis1',an1-0.3*te1,2.21); chk('dis2',an2-0.3*te2,2.30); chk('react3',0.3*te3
 chk('cve gy2',3/12*4.4+9/12*4.8,4.7); chk('cve gy3',3/12*4.8+3.2+6.0-1.8,8.6)
 chk('angie1',30.25+1.6,31.85); chk('angie2',30.25+2.77,33.02); chk('angie3',30.25+1.3,31.55)
 # TEL
-chk('TEL GY1 before',50-14-12,24.0); chk('TEL GY1 TTP',24-5.9-6.59-1.8,9.71); chk('TEL GY1 CT',0.25*9.71,2.4275)
-chk('TPLC GY1 excess ME',8.0-2.1,5.9); chk('TPLC GY1 NTLR',7.2+1.6-2.21,6.59)
-chk('TEL GY2 TP',42.0-16.0,26.0); chk('TPLC GY2 NTLR',7.2+2.77-2.30,7.67); chk('TEL GY2 TTP',26.0-6.3-7.67-2.6-1.35,8.08); chk('TEL GY2 CT',0.25*8.08,2.02)
-chk('TEL group relief GY2',6.3+7.67+2.6+1.35,17.92)
+chk('TEL GY1 before',50-14-12,24.0)
+# R3 (continuity rulings): TPLC's ME surrender capped at the excess over the s 105(3A) profit-related threshold
+# (gross profits + TCM's CFC apportionment 825k). Old checks TEL GY1 TTP 9.71 / CT 2.4275 and GY2 TTP 8.08 / CT 2.02 / GR 17.92 replaced.
+cfc_app=0.25*(60*0.06-0.3); chk('TCM apportioned GY1-4 (£m)',cfc_app,0.825)
+chk('TPLC GY1 excess ME over gross profits',8.0-2.1,5.9); chk('TPLC GY1 threshold',2.1+cfc_app,2.925); chk('TPLC GY1 ME surrender',8.0-2.1-cfc_app,5.075)
+chk('TPLC GY1 NTLR',7.2+1.6-2.21,6.59); chk('TPLC GY1 total to TEL',5.075+6.59,11.665)
+chk('TEL GY1 TTP',24-5.075-6.59-1.8,10.535); chk('TEL GY1 CT',0.25*10.535,2.63375)
+chk('TEL GY2 TP',42.0-16.0,26.0); chk('TPLC GY2 NTLR',7.2+2.77-2.30,7.67)
+chk('TPLC GY2 threshold',2.2+cfc_app,3.025); chk('TPLC GY2 ME surrender',8.5-2.2-cfc_app,5.475)
+chk('TEL group relief GY2',5.475+7.67+2.6+1.35,17.095); chk('TEL GY2 TTP',26.0-17.095,8.905); chk('TEL GY2 CT',0.25*8.905,2.22625)
+chk('TEL GY2 QIP due',2.22625/4,0.5565625); chk('TEL GY2 paid (short 0.4)',2.22625-0.4,1.82625); chk('TEL GY2 paid each',1.82625/4,0.4565625)
+chk('TEL GY2 net after RDEC',2.22625-0.6,1.62625); chk('TPLC stranded ME end GY4',4*cfc_app,3.3)
+chk('TES refund surrender: repaid',569375-400000,169375); chk('TES overpaid',0.25*2277500,569375)
+chk('Group GY2 tax charge £000',25000-1500-528+132+500+575+0.25*825,24385.25); chk('Group GY2 TCM rate line',3300*(0.25-0.09),528)
+# R1/R2: QIP divisors counted the day before the AP begins; RDEC not deducted in QIPs
+chk('QIP 31Dec GY1 large',1.5e6/8,187500); chk('QIP 31Dec GY1 vl',20e6/8,2.5e6)
+chk('QIP GY3+ vl',20e6/10,2e6); chk('Calder 9m vl',20e6/10*9/12,1.5e6); chk('Calder 9m large',1.5e6/10*9/12,112500)
+chk('Calder GY1 QIP each (on CT before RDEC)',0.25*3.0e6/4,187500)
+chk('MR GY1 lower',50000/9,5555.56); chk('MR GY1 upper',250000/9,27777.78)
+# R7: BSL RDEC surrender
+chk('BSL step 2 amount',600000*0.19,114000); chk('BSL surrender total',114000+486000,600000)
+# R11: AIA allocation for the year to 31 March GY3
+chk('AIA yr to 31 Mar GY3',400000+600000,1e6)
+# R12: Calder pools consistent with CAs and TWDV at 31 March GY2
+mpool=1.925; spool=7.175; chk('Calder WDAs',0.14*mpool+0.06*spool,0.7); chk('Calder TWDV',0.86*mpool+0.94*spool,8.4); chk('Calder CAs',0.5+0.6+0.7,1.8)
+chk('Calder TTP via PBT',3.8+0.6-1.8+0.8-0.4,3.0)
+# R13: RCF fees
+chk('RCF fees',0.25+0.05+0.2+0.1,0.6); chk('TPLC GY2 NTLR debits',7.2+2.52+0.25,9.97); chk('RCF GY2 int',30*0.06+24*0.06/2,2.52)
+# R5: TES GY3 composition (aggregate unchanged)
+chk('TES GY3 net gains',0.8-0.5+0.3512,0.6512); chk('TES GY3 split',14.1488+0.6512,14.8)
 # TEL CAs
 mp=39.5+0.48+0.5-0.3; chk('main pool',mp,40.18); wda=0.14*mp; chk('WDA',wda,5.6252)
 tot=9.0+0.6+0.32+wda+0.06*6.6+0.03*1.96; chk('TEL CA total',tot,16.0)
@@ -68,13 +94,15 @@ gi=5.1e6; chk('P2 topup',(0.15-(0.09*gi+204000)/gi)*gi,102000)
 chk('deg',7.5e6-5.0e6,2.5e6)
 # Ridgeway
 chk('RC CT',0.25*600000-25000,125000); chk('Irish',0.125*200000,25000); chk('DTL',0.25*0.8e6,200000)
-chk('RC divisor11 large',1.5e6/11,136363.64); chk('vl',20e6/11,1818181.82); chk('first yr',10e6/11,909090.91)
+# R1: RC's QIP divisor is 1 (counted 31 March, RH passive); divisor 11 figures kept for TAL's GY6 AP (QIP divisor 11)
+chk('div11 large (TAL)',1.5e6/11,136363.64); chk('div11 vl (TAL)',20e6/11,1818181.82); chk('div11 first yr',10e6/11,909090.91)
+chk('RC not large (div 1)',600000<1.5e6,True)
 # deferred tax Calder
 chk('DTL',0.25*(14.0-8.4),1.4); chk('DTA',0.25*0.8,0.2); chk('movement',(1.4-1.1)-(0.2-0.1),0.2)
 # Helmside exchange
 chk('HEL shares',2e6*8,16e6)
-# group thresholds
-chk('GY1 vl',20e6/9,2222222.22); chk('GY1 large',1.5e6/9,166666.67)
+# group thresholds (R1: divisor 9 is the GY1 marginal relief count; for QIPs it applies to the 31 Dec companies in GY2 and to Calder's AP from 1 April GY2)
+chk('div9 vl (QIP GY2)',20e6/9,2222222.22); chk('div9 large (QIP GY2)',1.5e6/9,166666.67)
 bad=[c for c in checks if not c[1]]
 print(len(checks),'checks;',len(bad),'failures')
 for b in bad: print(b)
