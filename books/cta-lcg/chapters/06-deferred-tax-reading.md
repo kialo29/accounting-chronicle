@@ -25,7 +25,7 @@ For that year, in our invented case, Calder's taxable total profits are **£3.0m
 
 The gap between £750,000 and £950,000 is £200,000 of deferred tax. By the end of this chapter you will be able to build it from the ground up.
 
-**Law year.** FY2026 (1 April 2026 to 31 March 2027). The main rate is 25% (FY2026 by FA 2025 s 13); FA 2026 ss 11–12 set the FY2027 main rate at 25%, the small profits rate at 19% and the marginal relief fraction at 3/200. Every balance in this chapter is measured at 25%.
+**Law year.** FY2026 (1 April 2026 to 31 March 2027). The main rate is 25% (FY2026 by FA 2025 ss 13–14, which also set the 19% small profits rate); FA 2026 ss 11–12 set the FY2027 main rate at 25%, the small profits rate at 19% and the marginal relief fraction at 3/200. Every balance in this chapter is measured at 25%.
 
 ---
 
@@ -112,7 +112,7 @@ Deferred tax is measured at the rate expected to apply when the difference rever
 
 **FY2026 and FY2027.** FA 2026 (Royal Assent 18 March 2026) ss 11–12 fix FY2027 at 25% main rate, 19% small profits rate and 3/200 marginal relief fraction. For a large company, 25% is enacted for every reversal the examiner is likely to set. Use it, and say why.
 
-**Marginal relief companies** measure at the rate they expect to pay on reversal (in 2021 practice, "up to 25%"). Every Tarnmoor company pays at the main rate (with 10 associated companies in GY2, the limits are £5,000 and £25,000 per company), so the point never arises in the story.
+**Marginal relief companies** measure at the rate they expect to pay on reversal (in 2021 practice, "up to 25%"). Every Tarnmoor company pays at the main rate (with nine associated companies in GY2, divisor 10, the limits are £5,000 and £25,000 per company), so the point never arises in the story.
 
 **Allowance changes are not rate changes.** FA 2026 s 28 cut the main pool WDA from 18% to 14% for CT chargeable periods beginning on or after 1 April 2026 (hybrid rate for straddling periods). That does not remeasure existing deferred tax, because the rate of tax is unchanged; it changes the pattern of reversal, which matters to scheduling of DTAs, not to measurement.
 
@@ -136,7 +136,7 @@ TEL claims full expensing of **£9.0m** on new plant in GY2 (chapter 8). Ignorin
 
 The plant sits in the accounts near cost; its tax base is nil. **Full expensing is a cash benefit, not a reduction in the effective tax rate.** The company gains time, and the value of money over that time.
 
-The **40% FYA** (CAA 2001 s 45U; main-rate plant, new and unused, expenditure on or after 1 January 2026; plant for leasing allowed under s 46(4B)) works the same way on a smaller scale. TEL's **£800,000** of test rigs leased to customers: FYA £320,000; £480,000 to the main pool, on which the 14% WDA gives £67,200 in GY2: total relief £387,200 against a modest first-year depreciation charge, so a DTL builds.
+The **40% FYA** (CAA 2001 s 45U; main-rate plant, new and unused, expenditure on or after 1 January 2026; plant for leasing allowed under s 46(4B)) works the same way on a smaller scale. TEL's **£800,000** of test rigs leased to customers: FYA £320,000 in GY2; the £480,000 balance joins the main pool after the WDA for the period and draws 14% from GY3 (CAA 2001 s 58(5)). Relief of £320,000 against a modest first-year depreciation charge, so a DTL builds.
 
 **Reversal.** When a fully expensed asset is sold, the special balancing charge (CAA 2001 s 59A) brings the tax into current tax and the DTL unwinds. A company that keeps investing may see its DTL grow for years, which is why it is tempting, and wrong, to think it will never be paid.
 
@@ -171,14 +171,14 @@ Calder's numbers, all invented, for its year to **31 March GY2**. Calder still r
 
 | | £000 | Note |
 |---|---|---|
-| Profit before tax (includes RDEC income £400k above the line) | 3,800 | Story fact fixed in this chapter |
+| Profit before tax (includes RDEC income £400k above the line) | 3,800 | Invented (story) |
 | Add: depreciation of qualifying plant | 600 | Replaced by capital allowances; Calder's heavy plant has long useful lives, so its depreciation is low against its allowances |
 | Less: capital allowances | (1,800) | Chapter 8 |
 | Add: LTIP and pension accruals unpaid at the year end (paid more than 9 months later / paid basis) | 800 | CTA 2009 s 1288; FA 2004 s 196 |
 | Less: opening accruals paid in the year | (400) | Deductible when paid |
 | **Taxable total profits** | **3,000** | Invented (story) |
 | Corporation tax at 25% | 750 | |
-| Less: RDEC set off (step 1) | (400) | CTA 2009 Part 3 Ch 6A |
+| Less: RDEC set off (step 1) | (400) | CTA 2009 Part 13 Ch 1A (s 1042I) |
 | **Payable** (large, not very large: QIPs in months 7, 10, 13 and 16, 4 × £187,500 on the £750k before the RDEC; chapter 3) | **350** | |
 
 (The adjusted trading profit before RDEC of £2.6m (chapter 10) is £3,000k less the taxable RDEC of £400k. Calder has no permanent differences this year: a story simplification.)
@@ -224,7 +224,7 @@ In the invented story, Nadia Kerr, Tarnmoor's CFO, likes the result: low cash ta
 > - **Past appearances:** M24 Q2(b) (4 of 15 marks: deferred tax on vehicles only; some computed it for all assets); M25 Q2(b) (5 of 15: deferred tax movement; land wrongly included, bonus and pension differences missed); N25 Q1(b) (3 of 20: total tax charge and closing balance; "only a small number of candidates calculated the deferred tax charge"); **M26 Q6** (10 marks: a new IFRS company with full expensing, unpaid pensions, a tax loss and the recognition criteria).
 > - **Style:** "Calculate" requirements; 0.5–1 mark per point: fixed asset difference, short-term difference, rate, recognition comment, movement, total charge.
 > - **Layout:** fixed asset and short-term differences on separate lines; opening, closing, movement; then current + deferred = total. £ or £000 throughout, never both.
-> - **Traps (exam-intel trap 21):** liabilities always provided; recognise a loss asset to offset a liability; a new company has **no b/f balances**; include short-term differences; land usually has no CA difference; compute the **charge**, not just balances.
+> - **Traps:** liabilities always provided; recognise a loss asset to offset a liability; a new company has **no b/f balances**; include short-term differences; land usually has no CA difference; compute the **charge**, not just balances.
 
 ---
 
@@ -366,7 +366,7 @@ In a group like Tarnmoor, deferred tax is a quarterly discipline. The tax functi
 3. **Rate changes.** A rate change becomes a remeasurement when the Bill clears the Commons. Model it before the vote.
 
 > **Exam lens: the whole topic.**
-> - **Frequency:** M24 Q2(b), M25 Q2(b), N25 Q1(b), M26 Q6: growing; "a tax-accounting tail" is now common after a computation (exam-intel synthesis).
+> - **Frequency:** M24 Q2(b), M25 Q2(b), N25 Q1(b), M26 Q6: growing; "a tax-accounting tail" is now common after a computation.
 > - **Marks:** 3–5 marks as a tail; 10 marks standalone (M26).
 > - **What scores:** both categories of difference; 25% with a reason (enacted); the movement and the total charge; a recognition sentence for any DTA; exclusion of land; no b/f balances for a new company.
 > - **What wastes time:** describing IAS 12 in general terms without numbers; computing deferred tax on all assets when only one class is asked (M24).
@@ -396,7 +396,7 @@ The next chapter takes the profit we have learned to account for and turns it in
 
 | Rule | Detail | Source |
 |---|---|---|
-| CT main rate FY2026 / FY2027 | 25% (19% small profits; 3/200) | FA 2025 s 13; FA 2026 ss 11–12 |
+| CT main rate FY2026 / FY2027 | 25% (19% small profits; 3/200) | FA 2025 ss 13–14; FA 2026 ss 11–12 |
 | Measurement rate | Enacted or substantively enacted at the balance sheet date | IAS 12 para 47; FRS 102 para 29.12 |
 | UK substantive enactment | Bill through all Commons stages; or PCTA 1968 resolution | ICAEW / practice (secondary) |
 | DTL recognition | All taxable temporary differences (exceptions: goodwill, IRE, Pillar Two) | IAS 12 paras 15, 4A |
@@ -419,7 +419,7 @@ The next chapter takes the profit we have learned to account for and turns it in
 
 ## Statutory and other references
 
-**Statute:** CTA 2009 ss 46, 1038, 1288, 1290–1297, Part 3 Ch 6A (RDEC), Part 8, Part 12; CTA 2010 Part 7ZA (s 269ZD), Part 14; CAA 2001 ss 45S, 45U, 46(4B), 59A; FA 2004 ss 196–197; FA 2009 Sch 46; FA 2019 Sch 14 Part 3; FA 2022 Sch 17; F(No.2)A 2023 Part 3; FA 2025 s 13; FA 2026 ss 11, 12, 28, 29; Provisional Collection of Taxes Act 1968.
+**Statute:** CTA 2009 ss 46, 1038, 1288, 1290–1297, Part 8, Part 12, Part 13 Ch 1A (merged RDEC); CTA 2010 Part 7ZA (s 269ZD), Part 14; CAA 2001 ss 45S, 45U, 46(4B), 58(5), 59A; FA 2004 ss 196–197; FA 2009 Sch 46; FA 2019 Sch 14 Part 3; FA 2022 Sch 17; F(No.2)A 2023 Part 3; FA 2025 ss 13–14; FA 2026 ss 11, 12, 28, 29; Provisional Collection of Taxes Act 1968.
 
 **Accounting standards and interpretations:** IAS 12 *Income Taxes* (paras 4A, 15, 19, 24, 28, 34–35, 47, 51C, 53, 66, 68A–68C, 81(c), 85, 88A–88D); IAS 12 amendments *Deferred Tax related to Assets and Liabilities arising from a Single Transaction* (May 2021) and *International Tax Reform: Pillar Two Model Rules* (23 May 2023); IFRIC 23 *Uncertainty over Income Tax Treatments*; IFRS 2; IFRS 3; IAS 40; FRS 101; FRS 102 Section 29 (paras 29.7, 29.12, 29.15–29.16) and the FRC's July 2023 Pillar Two amendments.
 

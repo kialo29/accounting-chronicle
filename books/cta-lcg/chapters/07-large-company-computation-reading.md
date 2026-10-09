@@ -381,10 +381,12 @@ The same answer comes from charging 19% on the first £50,000 and 26.5% on the n
 > | Consortium relief: Helmside (link company route) | (1,350) | chapter 15 |
 > | **TTP** | **8,905** | |
 > | **CT at 25%** (9 associates: upper limit £25,000; no MR) | **2,226.25** | |
+> | Less: RDEC surrendered by Brackenwell (step 2 £114 + step 5 £486) | (600.00) | CTA 2009 s 1042L; chapter 10 |
+> | **CT payable after the surrendered credit** | **1,626.25** | |
 >
 > **No adjustment (each worth stating):** annual bonus £2,000 paid 31 March GY3 (within 9 months); staff party £120 (s 1299 Case B); trading LR debit £12,000 (CTA 2009 Part 5); ERP costs £24,000 (revenue per accounts; UTT, chapter 4); specific trade debt impairment; legal costs of defending the prosecution.
 >
-> **Payment:** very large company (chapter 3): QIPs of **£556,562.50** each due 14 March, 14 June, 14 September and 14 December GY2, based on the full liability. Brackenwell's surrendered RDEC then discharges part of the liability (chapter 10).
+> **Payment:** very large company (chapter 3): QIPs of **£556,562.50** each due 14 March, 14 June, 14 September and 14 December GY2, based on the full liability of £2,226.25 (the surrendered credit does not reduce them: chapter 3). Brackenwell's surrendered RDEC then discharges £600 of the liability when its claim is made (chapter 10).
 >
 > **Cross-check:** TEL's tax-EBITDA for CIR (chapter 28) = £42,000 + £12,000 = **£54,000**.
 
@@ -460,7 +462,7 @@ Sixteen million pounds of capital allowances did a great deal of work in TEL's a
 | QCDs | After other reliefs, before group relief; no loss; no c/f (except investment cos); benefits 25% / £25 + 5% / £2,500; tainted donations outcome test from 6 April 2026 | CTA 2010 ss 189–217, 939A–939FB; FA 2026 s 56, Sch 9 |
 | Excess QCD surrender | Only the excess over the surrendering company's profits (profit-related threshold) | CTA 2010 ss 99(1)(d), 105 |
 | LFL lessee | Finance lease: finance charge only; operating lease: reduced by expected fall in value | CTA 2010 ss 377, 377A, 379 |
-| Rates FY2026 | 25% / 19%; £50,000 / £250,000 ÷ (1 + associates); 3/200; marginal rate 26.5% | CTA 2010 Part 2; FA 2025 s 13; FA 2026 ss 11–12 |
+| Rates FY2026 | 25% / 19%; £50,000 / £250,000 ÷ (1 + associates); 3/200; marginal rate 26.5% | CTA 2010 Part 2; FA 2025 ss 13–14; FA 2026 ss 11–12 |
 | TEL GY2 | PBT £23.5m → £42.0m → CAs £16.0m → £26.0m → GR £17.095m → TTP £8.905m → CT £2,226,250 | invented (story) |
 | Dan's package (Calder) | £97,812 deductible in the 9-month AP to 31 Dec GY3; s 79 safety net £27,036 | invented (story); this chapter |
 

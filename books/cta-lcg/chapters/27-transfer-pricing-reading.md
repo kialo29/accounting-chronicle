@@ -73,8 +73,8 @@ Slow down here: the basic rule is where marks are won. **TIOPA 2010 s 147** has 
 | Block | Rule | Reference |
 |---|---|---|
 | 1. Provision | **Provision** made or imposed between two **affected persons** by a **transaction or series** of transactions. Provision = the terms (price, rate, amount, duration, risk allocation). A series includes arrangements, understandings and mutual practices; not every party need be party to every step | s 147(1); s 150 |
-| 2. Participation | The **participation condition** is met (next section) | ss 147(1)(b), 148 |
-| 3. Arm's length | The actual provision differs from the **arm's length provision**, the terms independent enterprises would have made. The arm's length provision can be **no provision at all** | s 147(1)(d); s 151(2) |
+| 2. Participation | The **participation condition** is met (next section) | ss 147(1), 148 |
+| 3. Arm's length | The actual provision differs from the **arm's length provision**, the terms independent enterprises would have made. The arm's length provision can be **no provision at all** | s 147(1); s 151(2) |
 | 4. Advantage | The actual provision confers a **potential advantage in relation to UK taxation**: Effect A, smaller profits; Effect B, larger losses. In deciding advantage, **ignore the CIR (Part 10)** and the s 1000(1)E distribution rule | ss 147(2), 155 |
 | 5. Adjustment | The advantaged person's profits and losses are computed as if the arm's length provision had been made; if both are advantaged, both | s 147(3), (5) |
 
@@ -151,8 +151,8 @@ The thresholds are in the CIOT tax tables. **FA 2026 left the exemption unchange
 
 | Exception | Rule | Reference |
 |---|---|---|
-| Election | An SME may elect out, irrevocably | s 167(2) |
-| Non-qualifying territory | Exemption never applies where the other party (or a party to the series) is resident in a non-qualifying territory (broadly, no treaty with a non-discrimination article) | ss 167(3), 173 |
+| Election | An SME may elect out, irrevocably | s 167 |
+| Non-qualifying territory | Exemption never applies where the other party (or a party to the series) is resident in a non-qualifying territory (broadly, no treaty with a non-discrimination article) | ss 167, 173 |
 | Small: TP notice | Only where the provision feeds **patent box** relevant IP profits | s 167A |
 | Medium: TP notice | HMRC may give a notice requiring an arm's length computation **only after an enquiry notice**; appeal only on the ground that the company is not medium-sized; return may be amended within **90 days** | ss 168–171 |
 
@@ -169,5 +169,184 @@ The thresholds are in the CIOT tax tables. **FA 2026 left the exemption unchange
 **The joining-a-group twist.** **N24 Q5** (20 marks) had a US multinational buy a UK SME. The marking guide gave **6.5 marks** for seeing that TP now applied (the target's linked enterprises include the whole group) and for the Master File and Local File contents. **In our invented case**, Brackenwell Sensors (45 staff) was small on its own; from 1 July GY2 its linked enterprises included the whole Tarnmoor group (about 6,000 people) and the exemption fell away. Calder (about 300 staff) never had it.
 
 **3. The UK-to-UK exemption** (s 164A): next section.
+
+---
+
+## The UK-to-UK exemption at work
+
+**TIOPA 2010 s 164A** disapplies s 147(3) and (5) for **qualifying UK to UK provision** (s 164A(2)(a)–(d) and (5); INTM414320). The conditions are cumulative:
+
+| Condition | Detail |
+|---|---|
+| UK companies | Both affected persons are **UK-resident companies** |
+| Within CT | The provision is relevant to both, with the profits chargeable to corporation tax |
+| **Same rate** | Both charged at the **same rate of CT** (advisers' example: small profits rate against main rate fails) |
+| Same currency | Same **reference currency** |
+| Disqualifications | No one-sided derivative of the s 589 kind; **no s 18A** (branch exemption) adjustments; **not patent box provision** |
+| No excluded company (s 164A(5)) | e.g. **banking companies**, ring fence, oil contractors, BLAGAB life business, tonnage tax, OEICs, AUTs, investment trusts, UK REITs, securitisation and insurance securitisation companies, qualifying transformer vehicles, **QAHCs**, electricity generator levy undertakings, RPDT developers |
+
+**Off-switches.** (1) An **irrevocable election** that the exemption is not to apply (per provision or per period). (2) An HMRC **transfer pricing notice** where expedient to prevent a **loss of tax**, judged across **both** parties, normally only after a notice of enquiry (INTM414330); appeal on the ground that there is no such loss. HMRC's stated logic (INTM414320): where both parties are taxed in the UK at the same rate, s 174 compensating adjustments usually make the pricing neutral, so the exemption removes compliance cost while keeping protection against a net loss of tax.
+
+**CFCs excluded.** A CFC cannot use s 164A in computing its chargeable profits, although those are computed as if it were UK resident (**s 371SD(5A)**; chapter 26).
+
+> **Worked example 27.3: Tarnmoor's dealings and s 164A (in our invented case)**
+>
+> | Dealing | Within s 164A? | Reason |
+> |---|---|---|
+> | TFL → TEL £200m, TWS £40m, TES £70m at 6% | Yes | UK companies, 25%, sterling, no excluded company (TFL takes no deposits and carries on no banking business: story assumption; the statutory definition is checked in Tom's file) |
+> | TFL → TPLC £120m at 6% | Relied on, with a fallback | TPLC rarely has taxable profits: how the **same rate** condition reads for a nil-profit company is **not settled** in the material checked (statute text not seen; commentary gives only the SPR v main rate example). Tom keeps evidence that 6% is arm's length anyway (the market evidence used for the TVS loan) |
+> | TFL → BSL £8m (from 1 July GY2) | Yes | As above |
+> | Calder ↔ TEL dealings feeding Calder's patent box profits (from GY4), e.g. engineering services to the Ashlar programme | **No** | **Patent box provision**: price at arm's length |
+> | TPLC → TIL £20m interest-free | Yes **until 30 June GY4**; **No** from 1 July GY4 | TIL migrates to Ireland on 30 June GY4 (chapter 22); from then the loan is cross-border (book's reading of the residence condition for a straddling period: flagged) |
+> | TFL → TVS £120m; TPLC → TVS services | No | Cross-border: full Part 4 |
+>
+> UK-to-UK lending by TFL: £430m (interest £25.8m a year), plus £8m to BSL from GY2.
+
+**The exemption switches off one rule, not the code.** The unallowable purpose rule (CTA 2009 s 441) and the CIR (chapter 28) still apply to every one of these loans.
+
+> **Going further: the tax function and s 164A**
+> - Record the s 164A analysis for each UK-to-UK provision and **re-test it each period**: a migration, a company becoming a bank or a QAHC, a patent box election, a small company paying the small profits rate, or a different functional currency can take a provision out.
+> - Decide whether to **elect out**. Advisers note that groups sometimes prefer arm's length pricing where other rules lean on it [secondary, RSM].
+> - Where the exemption fails, remember the old symmetry: the **compensating adjustment** (s 174) normally neutralises a UK-to-UK adjustment, so the risk is cost and timing, not usually tax.
+
+> **Exam lens: exemptions**
+> - **Grade:** within TP **1 (core)**. s 164A is new in FA 2026 and first examinable in 2027 sittings.
+> - **Likely angles:** a target losing SME status on acquisition (N24 Q5); a UK group with UK and overseas subsidiaries where you must say which dealings need TP before computing CIR.
+> - **Traps:** testing SME status on the company alone (linked enterprises count); using the R&D ceilings; applying s 164A to a cross-border loan, a CFC, patent box provision, or companies paying different rates; assuming s 164A also switches off s 441 or CIR.
+
+---
+
+## Five ways to find a stranger's price
+
+Once a dealing is inside Part 4, the company needs a price. The TPG (read through s 164) describe five methods; HMRC's manual summarises them in the same terms (INTM421010–INTM421080). *The TPG themselves were not opened for this chapter (oecd.org blocked); descriptions follow HMRC's manual.*
+
+| Method | Type | How it works | Best for | HMRC |
+|---|---|---|---|---|
+| **Comparable uncontrolled price (CUP)** | Traditional | Compare the controlled price with prices between independent parties for the same thing in comparable circumstances | Commodities; identical goods; loans with market comparables | INTM421010 |
+| **Resale price** ("resale minus") | Traditional | Resale price to an independent customer, less an arm's length **gross margin** covering the reseller's functions, assets and risks | Marketing and distribution | INTM421050 |
+| **Cost plus** | Traditional | Supplier's costs plus an arm's length **mark-up**; the cost base must include all relevant costs (e.g. share option charges) | Semi-finished goods; long-term supply; services | INTM421060 |
+| **Transactional net margin (TNMM)** | Transactional profit | Compare a **net profit indicator** of the tested party (operating margin, mark-up on total costs) with comparables | Routine distributors and manufacturers where gross data are poor | INTM421080 |
+| **Profit split** | Transactional profit | Split the combined profit by contribution, or by routine returns then a residual key | Highly integrated operations; unique and valuable contributions on both sides | INTM421070 |
+
+**Choice of method.** The 1995 Guidelines had a strict hierarchy, with profit methods a last resort. From the 2010 Guidelines the test is the **most appropriate method** for the case, with a natural preference for traditional methods (and the CUP) where equally reliable (INTM421010). The choice follows from the facts, and the facts come from a **functional analysis**.
+
+> **Worked example 27.4: the five methods in numbers (invented for illustration)**
+>
+> | Method | Facts | Arm's length result |
+> |---|---|---|
+> | CUP | Calder sells a valve to a sister for £900 and to independent customers for £1,000, same terms and volumes | £1,000 (adjust only if comparable in all material respects) |
+> | Resale price | Distributor resells at £1,000; comparable gross margin 25% | Purchase price £1,000 × 75% = **£750** |
+> | Cost plus | Manufacturer's cost £400; arm's length mark-up 20% | Price £400 × 1.20 = **£480** |
+> | TNMM | Distributor's sales £10,000,000; operating expenses £1,500,000; arm's length operating margin 3% | Operating profit £300,000, so purchases from the group ≤ £10,000,000 − £1,500,000 − £300,000 = **£8,200,000** |
+> | Residual profit split | Combined profit £10,000,000; routine returns A £3,000,000, B £2,000,000; residual £5,000,000 split 60:40 by relative R&D spend | A £3,000,000 + £3,000,000 = **£6,000,000**; B £2,000,000 + £2,000,000 = **£4,000,000** |
+
+> **Exam lens: methods**
+> - **N23 Q6 (20 marks):** methods for a manufacturer, a distributor and an R&D centre (CUP, resale price, cost plus; no profit methods), low value-adding services and stewardship costs. The examiners noted the "style … was different to that of previous sittings" and found **theory good, application weak: functions and risks were not analysed**; most did not know the low value services approach or the stewardship point.
+> - **Match method to entity:** routine manufacturer → cost plus; distributor → resale price or TNMM; contract R&D centre → cost plus, **but only after checking who controls the research risk** (a centre that controls its own risk is not a contract researcher).
+
+---
+
+## Dixons and the point of sale
+
+The first UK case is still the best illustration of why functions matter. ***DSG Retail Ltd v HMRC* [2009] UKFTT 31 (TC)** was decided by the Special Commissioners, **John Avery Jones and Charles Hellier**, released **31 March 2009**. The tribunal described it as "the first transfer pricing case to have come to the Tribunal".
+
+DSG Retail was the Dixons retail group. Its shops sold extended warranties on electrical goods. The insurance risk ended up with a captive insurer in the Isle of Man, **Dixons Insurance Services Ltd (DISL)**, a group company; from **May 1986 to April 1997** an independent insurer, **Cornhill**, acted as fronting insurer and passed the risk to DISL. The question was whether the retailer had been paid enough for what it provided to DISL.
+
+The group put forward other insurance arrangements as **CUPs**. The tribunal rejected them because of the retailer's **"point of sale advantage"**: the retailer owned the moment of sale, when a customer buying an electrical item could be offered a warranty, and arrangements without that access were not comparable. It found that DSG had provided **business facilities** to DISL below an arm's length price (under the old ICTA 1988 s 770 and Sch 28AA), pointed to a **profit split based on a return on DISL's capital**, and adjourned the quantum.
+
+| Functional analysis | DSG Retail |
+|---|---|
+| Functions | The retailer: staff and shops selling the warranty |
+| Assets | The retailer: the customer relationship at the till |
+| Risks | DISL: insurance risk backed by its capital, earning a return on capital, but no more |
+
+The case shows how a TP dispute is really fought: not a contest of formulae but of facts about what each party did and could have done without the other. The comparables failed for want of one fact, access to the customer at the moment of sale. Calder's dispute turns on the same kind of fact: where the know-how really lived.
+
+---
+
+## Services, stewardship and 5%
+
+Head offices do a great deal for subsidiaries. What may be charged for? Two ideas do the work.
+
+**Services v stewardship.** A **service** is something an independent company would pay for or do for itself (payroll, IT support, purchasing). **Stewardship** (shareholder activity) is what a parent does because it is the owner: board meetings, listing obligations, group accounts, raising group capital, overseeing its investments. The TPG treat shareholder activities as **not chargeable** to subsidiaries [TPG Chapter VII not opened: stated as the Guidelines' position as applied in the N23 Q6 marking; flagged]. The N23 examiners noted that most candidates missed the stewardship point.
+
+**Low value-adding services (LVAS).** HMRC's manual (INTM440071) describes them as supportive, not part of the group's core business, using no unique and valuable intangibles and involving no significant risk. Under the **simplified approach** the group pools the costs, allocates them by sensible keys (headcount for payroll, users for IT) and adds a **5% mark-up**; pass-through costs are excluded from the mark-up; documentation is still needed; and the 5% is not a benchmark for services outside the definition.
+
+> **Worked example 27.5: TPLC's recharge to TVS, GY1 (in our invented case)**
+>
+> TPLC provides TVS with group purchasing (indirect supplies only: software licences, travel and insurance, not the raw materials TVS uses to make valves, which would be core), engineering standards (common manuals and audits) and IT support (chapter 13). Classified as LVAS. TPLC had charged a figure carried over from an old budget. The provision is UK → Vallaria (s 164A irrelevant); Tarnmoor is not an SME; TPLC is advantaged (smaller income).
+>
+> | | £ |
+> |---|---|
+> | Cost of services | 2,000,000 |
+> | Arm's length charge: cost + 5% | 2,100,000 |
+> | Charged | 1,600,000 |
+> | **TP adjustment (TPLC self-assesses)** | **500,000** |
+> | Tax at 25% | **125,000** |
+>
+> **Where the tax is collected.** TPLC pays no tax itself: its management expenses exceed its income and it surrenders the excess to TEL. But the surrender is capped at the excess over the **profit-related threshold**, gross profits plus CFC profits apportioned (CTA 2010 s 105(3A); chapter 13). The adjustment raises gross profits by £500,000, so TEL gets £500,000 less group relief.
+>
+> | GY1 (£) | Recharge as charged | Recharge at arm's length |
+> |---|---|---|
+> | TPLC management expenses | 8,000,000 | 8,000,000 |
+> | Gross profits (recharge income) | 1,600,000 | 2,100,000 |
+> | CFC profits apportioned (TCM) | 825,000 | 825,000 |
+> | Profit-related threshold | 2,425,000 | 2,925,000 |
+> | Maximum ME surrender | 5,575,000 | 5,075,000 |
+> | TEL TTP (24,000,000 − ME − NTLR 6,590,000 − consortium 1,800,000) | 10,035,000 | **10,535,000** |
+> | TEL CT at 25% | 2,508,750 | **2,633,750** |
+> | Difference | | **125,000** |
+>
+> The rest of TPLC's head office (board, listing, investor relations, group finance and tax, plc audit: £5.7m in GY1) is **stewardship**: not recharged, and stays in TPLC's management expenses.
+
+**A second benefit.** Chapter 13 explained HMRC's view after its 2025 letter campaign: a holding company's costs of serving a subsidiary's business are not its own management expenses unless recharged at arm's length. Pricing the recharge properly protects the deduction as well as the income.
+
+TVS gets no UK relief for paying more. Whether Vallaria lets TVS deduct the higher charge is a Vallarian matter; if it refused, the treaty's MAP would be the route.
+
+---
+
+## Lending to relatives
+
+Financing is where TP meets the CIR, and where the money is largest. HMRC (INTM413010): "thin cap means looking at every aspect of lending and borrowing from a transfer pricing angle": the **amount** of the debt, the **rate**, the duration, the currency and any guarantees. Two questions follow: would an independent lender have lent **this amount** to this borrower on its own? And at **what rate**?
+
+> **Worked example 27.6: inbound thin capitalisation, then CIR (invented for illustration; M23 Q3 / M26 Q1 style)**
+>
+> A UK subsidiary borrows £100m from its US parent at 9%. It could have borrowed only £60m on its own, at 7% (no guarantee or implicit support adjustment needed).
+>
+> | | £ |
+> |---|---|
+> | Interest paid: £100m × 9% | 9,000,000 |
+> | Arm's length interest: £60m × 7% | 4,200,000 |
+> | **TP disallowance (s 147; s 153A if a parent guarantee was needed for the excess)** | **4,800,000** |
+> | CIR on the remaining £4,200,000: tax-EBITDA £12,000,000 (not reduced by the TP disallowance); 30% = £3,600,000 (above the £2m de minimis) | |
+> | **CIR disallowance** (4,200,000 − 3,600,000) | **600,000** |
+> | Total disallowed | 5,400,000 |
+> | Tax at 25% | 1,350,000 |
+>
+> **TP first, then CIR** (s 155(6) ignores the CIR in deciding advantage). Chapter 28 teaches the second step. The US parent gets no UK compensating adjustment (it is not within UK tax on the interest).
+
+**Guarantees and implicit support (FA 2026).**
+
+| Rule | Detail | Reference |
+|---|---|---|
+| Guarantee never arm's length | Where an amount would not have been lent but for a guarantee from a participator, the guarantee provision is **never** arm's length (the borrower cannot borrow the guarantor's credit) | s 153A |
+| Deemed guarantee election | A UK company with a qualifying participatory relationship may elect to be treated as guaranteeing the **excessive** borrowing; irrevocable; within **4 years** after the first period (or 1 year after a discovery assessment); links to guarantor claims (ss 191–194) | s 153B |
+| Implicit support | Not a guarantee (s 154(4A)); the incidental benefit of group membership (s 154(5B)); taken into account in pricing (usually a better rating, a lower rate) | s 154 |
+| Commencement | Periods ending on or after 1 January 2026 that start within two years: only **borrowing on or after 1 January 2026**; **all** borrowing for periods commencing on or after **1 January 2028**, or earlier by **election** | FA 2026 Sch 6 para 12 |
+
+> **Worked example 27.7: Tarnmoor's cross-border loans (in our invented case)**
+>
+> **TFL → TVS: £120m at 6% (£7.2m a year).** TFL is the party that could be advantaged (a rate below arm's length would shrink its UK profit). Tom's team tested the rate against yields on comparable bonds of similarly rated industrial borrowers, allowing for TVS's stand-alone credit standing and its implicit support from the group (s 154). No guarantee. 6% sat within the range: **no adjustment**.
+>
+> **TPLC → TIL: £20m interest-free.** From **1 July GY4** TIL is Irish (chapter 22). An independent lender would not lend for nothing; arm's length rate 6%.
+>
+> | Period | Arm's length interest brought in by TPLC | Tax effect at 25% (through TPLC's smaller NTLR deficit surrendered to TEL) |
+> |---|---|---|
+> | 1 July–31 December GY4: £20m × 6% × 6/12 | **£600,000** | £150,000 |
+> | Each year from GY5: £20m × 6% | **£1,200,000** | £300,000 |
+>
+> TIL gets no UK compensating adjustment: it is no longer within UK tax on the business the loan funds (its Irish distribution business; story assumption). Its relief is for Ireland under the UK–Ireland treaty (Art 9(2) and MAP).
+>
+> **Interaction:** an interest TP adjustment **reduces ANTIE but not tax-EBITDA** (M26 Q1 marking guide): TPLC's extra interest income reduces the group's net interest expense (chapter 28).
 
 ---

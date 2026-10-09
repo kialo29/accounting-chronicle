@@ -71,7 +71,7 @@ A **CFC** is a company that is **not UK resident** and is **controlled by a UK r
 | Accounting control | P is C's parent under the relevant accounting standard, **and** the **50% condition**: at least 50% of chargeable profits would be apportioned to P and its UK subsidiaries | s 371RE |
 | **> 50% investment** | A UK resident company, alone or with associated enterprises (25% investment links), directly or indirectly has **more than a 50% investment** in C | s 371RG (FA 2019 s 20(4)); CFC APs beginning on or after **1 January 2019** |
 
-The 40% rule matters for joint ventures. A 50:50 venture between a UK group and a French group would otherwise be under joint UK-and-foreign control and caught; the rule confirms it is a CFC (50% ≥ 40%; partner 50% ≤ 55%). A company run by a foreign partner with 60% is not.
+The 40% rule matters for joint ventures. Without it, it is not obvious that a company controlled jointly by a UK person and a foreign person is "controlled by UK resident persons". The rule answers that: a 50:50 venture between a UK group and a French group is a CFC (UK 50% ≥ 40%; partner 50% ≤ 55%); a company run by a foreign partner with 60% is not.
 
 The > 50% investment rule was the UK's implementation of the EU **Anti-Tax Avoidance Directive** (ATAD) control test. It remains UK law after Brexit.
 
@@ -259,6 +259,14 @@ Chapter 9 (ss 371IA–371IJ) is where the State aid saga began, and where Tarnmo
 | **Matched interest** | Remaining QLR profits ("matched interest profits") exempt so far as the UK share exceeds the worldwide group's **aggregate net tax-interest expense** (CIR, TIOPA Part 10) | Nil if ANTIE is nil; nothing if ANTIE is large | s 371IE |
 
 The current s 371IE (substituted by F(No.2)A 2017 for worldwide group periods of account beginning on or after 1 April 2017): if ANTIE is **nil**, matched interest profits are **fully exempt** (s 371IE(3)); otherwise, where the **relevant proportion** (each relevant chargeable company's step 5 percentage × matched interest profits, summed: s 371IE(5)) exceeds ANTIE, the **excess** is exempt (s 371IE(4)). HMRC's example (INTM219380): matched interest profits 25, ANTIE 9: **16 exempt**. ANTIE for this purpose ignores banking and insurance amounts (s 371IE(8)). *(Statute and INTM219380 seen in search extracts; the older INTM219250 formula predates 2017 and should not be used.)*
+
+> **Going further: designing a finance company that works**
+> - **Premises and people first.** Ch 9 needs the business premises condition, and since FA 2019 only profits outside s 371EB qualify. A finance company whose credit decisions are taken in the UK has UK SPFs: those profits pass through s 371EB and cannot be exempted. Local directors with real authority, local staff who assess and monitor the loans, and minutes that show it are the substance.
+> - **Choose the borrowers.** Loans to foreign group companies controlled by the same UK persons qualify; loans to UK companies (without a s 18A election), to borrowers whose interest reduces UK PE or UK property profits, or to other CFCs whose chargeable profits it would reduce, do not.
+> - **Funding.** Equity from the UK puts the profits inside s 371EC (that is why Ch 9 is needed at all). Funding from qualifying resources (local profits of the debtor's territory, pre-acquisition funds, external ordinary share issues) can unlock the full exemption: track the source of funds loan by loan.
+> - **Matched interest.** Only useful to groups whose UK net interest expense is small; check ANTIE each year (chapter 28).
+> - **The price of a claim.** The 25% that passes still raises the parent's s 105(3A) threshold; model that with the group relief plan.
+> - **Trading groups.** For a foreign trading subsidiary, aim for Ch 3 Condition A or B (no tax-motivated arrangements; no UK-managed assets or risks), and keep the safe harbour's five facts (premises, UK income, UK management expenditure, UK IP, UK exports) inside the limits.
 
 > **Exam lens: gateways and Chapter 9**
 > - **Grade:** core.

@@ -144,7 +144,7 @@ Picture a door. In **2002** it opened: companies buying a business could write o
 
 **Qualifying IP assets (s 879J):** patents, registered designs, copyright and design right, plant breeders' rights, and their foreign equivalents and licences (not excluded or pre-FA 2002 assets).
 
-**The 6× cap (ss 879M–879O).** Where the business includes qualifying IP but the relevant assets cost more than **6 × the IP expenditure**, the debits are scaled down in proportion: in effect relief on relevant-asset cost is limited to six times the qualifying IP spend. (The s 879O formula is an image on legislation.gov.uk; the rule is taken from s 879M's wording.)
+**The 6× cap (ss 879M–879O).** Where the business includes qualifying IP but the relevant assets cost more than **6 × the IP expenditure**, the debits are scaled down in proportion: in effect relief on relevant-asset cost is limited to six times the qualifying IP spend. The statute does this with a "relevant amount": RA = (A × N) ÷ B, where A is the expenditure on qualifying IP assets, B the expenditure on the relevant assets and N = 6 (s 879M(3), s 879O(6)). If RA is less than 1, each debit is multiplied by RA (s 879O(2)); HMRC's own example is IP of £1m against a relevant asset of £10m, RA 0.6 (CIRD44093).
 
 > **Worked example 11.4 (labelled): the 6× cap**
 >
@@ -155,7 +155,7 @@ Picture a door. In **2002** it opened: companies buying a business could write o
 > | Qualifying IP expenditure (A) | 2,000,000 |
 > | Cap: 6 × A | 12,000,000 |
 > | Relevant assets (B) | 15,000,000 |
-> | Proportion relievable: 12,000,000 / 15,000,000 | 0.8 |
+> | RA = (A × 6) ÷ B = 12,000,000 / 15,000,000 | 0.8 |
 > | 6.5% × £15,000,000 × 0.8 = **annual debit** | **780,000** |
 > | CT value at 25% | 195,000 |
 >
@@ -176,7 +176,7 @@ It is wrong in at least four ways:
 3. **The 6× cap** limits relief even where IP is acquired.
 4. **Related-individual acquisitions** (incorporations) are blocked (s 879K).
 
-And where relief is due it is at **6.5%** (about 15½ years for the whole cost), not the accounts rate.
+And where relief is due it is at **6.5%** (just over 15 years for the whole cost), not the accounts rate.
 
 > **Going further: asset deal or share deal?**
 >
@@ -459,7 +459,7 @@ The intangibles code showed tax following the accounts for things you cannot tou
 | Fixed-rate election | 4% of cost (lower of that and WDV); 2 years; irrevocable | ss 730–731 |
 | Realisation | Proceeds − WDV (or − cost) | ss 734–736, 739 |
 | Non-trading loss | Same-AP total profits; group relief; carry forward as next AP's debit | s 753 |
-| Goodwill and customer-related assets | 6.5% from 1 April 2019; qualifying IP needed; 6× cap; no related-individual relief | ss 879A–879O |
+| Goodwill and customer-related assets | 6.5% from 1 April 2019; qualifying IP needed; 6× cap (debits × RA, where RA = 6 × IP spend ÷ relevant-asset spend, if below 1); no related-individual relief | ss 879A–879O; CIRD44093 |
 | Goodwill withdrawn | Acquisitions 8 July 2015–31 March 2019 | ss 879C–879H |
 | Reinvestment relief | 12 months before to 3 years after; capitalised; claim | ss 754–763 |
 | Group | 75% subsidiaries; effective 51% | ss 764–773 |
@@ -476,13 +476,13 @@ The intangibles code showed tax following the accounts for things you cannot tou
 
 ## Statutory and case references
 
-- CTA 2009 Part 8: ss 711–715 (definitions), 729–731 (debits; fixed-rate election), 734–739 (realisation; proceeds), 741–742 (chargeable intangible asset; tax WDV), Ch 6 incl. s 753 (non-trading gains and losses), Ch 7 ss 754–763 (reinvestment; ss 755, 756, 758), ss 764–773 (groups), 775–779 (tax-neutral transfers; group reinvestment), 780–799 (degrouping; ss 782A, 783, 789, 791, 792, 795), Ch 10 ss 800–816 (excluded assets), ss 835–847 (related parties; s 845, new s 846), Ch 15A ss 879A–879O (goodwill and relevant assets), s 882 (pre-FA 2002 boundary) — legislation.gov.uk.
+- CTA 2009 Part 8: ss 711–715 (definitions), 729–731 (debits; fixed-rate election), 734–739 (realisation; proceeds), 741–742 (chargeable intangible asset; tax WDV), Ch 6 incl. s 753 (non-trading gains and losses), Ch 7 ss 754–763 (reinvestment; ss 755, 756, 758), ss 764–773 (groups), 775–779 (tax-neutral transfers; group reinvestment), 780–799 (degrouping; ss 782A, 783, 789, 791, 792, 795), Ch 10 ss 800–816 (excluded assets), ss 835–847 (related parties; s 845, new s 846), Ch 15A ss 879A–879O (goodwill and relevant assets; inserted by FA 2019 Sch 9), s 882 (pre-FA 2002 boundary) — legislation.gov.uk.
 - FA 2002 Sch 29 (origin of the regime); FA 2019 s 26 (s 782A); FA 2020 s 31 (1 July 2020 change); FA 2026 Sch 6 paras 25 and 28.
 - CTA 2010 Part 8A (Patent Box), s 357A; Part 14 (change in ownership).
 - TIOPA 2010 Part 4 (transfer pricing), s 164A (UK-to-UK exemption), ss 407–408 (CIR tax-EBITDA).
 - TCGA 1992 s 179 (gains degrouping, for contrast); Sch 7AC paras 6 and 15A.
 - ITA 2007 ss 906, 911 (royalty withholding).
-- HMRC manuals: CIRD20150, CIRD20210, CIRD20220 (reinvestment); CIRD40510, CIRD40560–40575 (degrouping); CIRD201010, CIRD260100, CIRD260110, CIRD275000 (Patent Box); CFM95805, CFM95800 (CIR).
+- HMRC manuals: CIRD20150, CIRD20210, CIRD20220 (reinvestment); CIRD40510, CIRD40560–40575 (degrouping); CIRD201010, CIRD260100, CIRD260110, CIRD275000 (Patent Box); CIRD44075, CIRD44086, CIRD44093 (goodwill restrictions); CFM95805, CFM95800 (CIR).
 - HM Treasury / HMRC, *Restriction of CT relief for business goodwill amortisation* (policy paper, July 2015); TIIN *Reform of tax relief for goodwill amortisation in the corporate intangibles regime* (for FA 2019).
 - GOV.UK, *Corporation Tax: the Patent Box* (guidance, updated 7 May 2020).
 - CIOT, November 2023 LCG paper, Q4, suggested answer and examiners' report.
