@@ -164,6 +164,8 @@ This is the chapter that can make a UK borrower need facts about companies it ne
 
 **Why the narrowing mattered.** As first enacted, Chapter 11 could reach a mismatch that another territory's own hybrid rules were already dealing with, which sits uneasily with the BEPS aim of neutralising each mismatch once and only once. The 2021 test asks a narrower question: could the mismatch be counteracted under the law of a territory whose hybrid rules match the OECD's? If so, the UK leaves it alone.
 
+Imported mismatches matter less to a UK-parented group like Tarnmoor than to groups whose parent or financing hub is abroad, but the question is still asked whenever a UK company borrows from a group company overseas.
+
 Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wrong or income arrives late; Chapter 13 (ss 259MA–259MD) is a targeted anti-avoidance rule.
 
 > **Exam lens: hybrid mismatches**
@@ -176,7 +178,7 @@ Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wr
 
 ## Project Undertow.
 
-GY4, and Tom Hesketh's memo for the board. Everything below is part of our invented story. Before writing, Tom asked the adviser three questions: how exactly would Marrovia tax the coupon; who would be the debtor; and where would the £80m come from? The answers drove everything that followed. Imported mismatches matter less to a UK-parented group like Tarnmoor than to groups whose parent or financing hub is abroad, but the question is still asked whenever a UK company borrows from a group company overseas.
+GY4, and Tom Hesketh's memo for the board. Everything below is part of our invented story. Before writing, Tom asked the adviser three questions: how exactly would Marrovia tax the coupon; who would be the debtor; and where would the £80m come from? The answers drove everything that followed.
 
 > **Worked example 29.3: the adviser's pitch (invented)**
 >
@@ -227,7 +229,7 @@ The best case was break-even; the worst a loss of **£1.4m a year**, plus breaki
 > **Exam lens: cross-border intra-group financing**
 >
 > - **Grade:** hybrids 1; CFCs 1; TP 1; CIR 1; loan relationships (including s 441) 1; deduction of income tax 1 (2026 grid).
-> - **What a marker rewards:** one point per regime spotted and explained, with the amount: D/NI denial (£1.4m), withholding (£1.12m and the absence of exemptions), the CFC charge and creditable tax (£1.4m less £1.12m), TP, CIR, s 441, and the debt/equity question. A recommendation if asked.
+> - **What a marker rewards:** marks (typically 0.5–1 per point) for each regime spotted and explained, with the amount: D/NI denial (£1.4m), withholding (£1.12m and the absence of exemptions), the CFC charge and creditable tax (£1.4m less £1.12m), TP, CIR, s 441, and the debt/equity question. A recommendation if asked.
 > - **Traps:** treating the CFC Ch 9 75% exemption as automatic (a UK debtor is not a qualifying loan relationship); forgetting that UK income tax withheld is creditable tax for the CFC charge; netting the CFC charge against the deduction denial without explaining the s 259BD point; DPT/UTPP on a loan.
 
 **How Tom built the memo.** He did not stop at the first problem. A scheme that fails on one ground invites a fix; one that fails on six does not. An examiner rewards a cross-border financing answer the same way: each regime is a separate set of marks.
