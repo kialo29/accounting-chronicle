@@ -45,7 +45,7 @@ For years before 2018, most new commercial buildings in the UK earned no capital
 - **Allowance period start.** The later of (a) the date the building is first brought into non-residential use and (b) the date the qualifying expenditure is incurred.
 - **Older buildings.** A building constructed under pre-29 October 2018 contracts earns nothing, but **capital expenditure on later alterations, extensions or renovations** can qualify in its own right if contracted for after the start date. The May 2026 paper tested exactly this with an office built in 2010: many candidates gave SBA on the whole office; only the alterations qualified.
 
-**TEL's GY2 extension (ledger).** TEL's GY2 capital allowances (£16.0m in total, chapter 8) include SBA on a **£1.96m extension** to an older factory, contracted for after the start date and in use throughout GY2: 3% × £1,960,000 = **£58,800**. The older factory earns nothing.
+**TEL's GY2 extension (invented).** TEL's GY2 capital allowances (£16.0m in total, chapter 8) include SBA on a **£1.96m extension** to an older factory, contracted for after the start date and in use throughout GY2: 3% × £1,960,000 = **£58,800**. The older factory earns nothing.
 
 ---
 
@@ -103,7 +103,7 @@ TEL buys and pays for the distribution centre on **1 September GY3** and first u
 > | GY4 onwards (full year) | 102,000 |
 > | Total over 33⅓ years | 3,400,000 |
 >
-> *Check by days (for interest only): £102,000 × 122/365 = £34,093. The exam convention (months) gives £34,000, the ledger figure.*
+> *Check by days (for interest only): £102,000 × 122/365 = £34,093. The exam convention (months) gives £34,000, the figure used in this book.*
 
 **The integral features (£600,000).** These are special rate expenditure. Do they also earn the **50% special rate FYA** (CAA 2001 s 45S; chapter 8)? That needs the plant to be **unused and not second-hand**. Fixtures in a new building bought straight from the developer arguably meet the test, because nobody has used them, but no HMRC statement settling the point for fixtures in a building bought from a developer was found in the research for this chapter. In our invented case the tax team logs the question and the computation takes the cautious route:
 
@@ -207,10 +207,10 @@ The tool for meeting the fixed value requirement is the joint election in **CAA 
 > | TES, GY2 | Special rate pool £ |
 > |---|---|
 > | Addition: s 198 elected value | 400,000 |
-> | WDA 6% (if no AIA is allocated to cover it) | (24,000) |
-> | c/f | 376,000 |
+> | AIA | (400,000) |
+> | c/f | nil |
 >
-> If the group allocates enough of its single £1m AIA to TES (chapter 8 allocates the group AIA to Calder and TES in GY2), the whole £400,000 is relieved at once instead.
+> The group allocates £400,000 of its single £1m AIA to TES (chapter 8: the AIA for the year to 31 March GY3), so the whole £400,000 is relieved at once. Without the AIA, the 6% WDA would have given only £24,000 in GY2, leaving £376,000 in the pool.
 
 **The gains trap.** The election does **not** change the gains computation. TES's base cost is the **whole price** paid for the office, including the fixtures element; on a sale, the **whole price** is the proceeds. The examiners reported after M23 (Q4) that candidates deducted fixtures amounts from gains computations, and the N25 (Q5) report stressed that CA-claimed expenditure adjusts the gains computation only where there is a loss. The only interaction is the **loss restriction** for capital allowances (TCGA 1992 s 41): an allowable loss is restricted by the net allowances given.
 
@@ -329,7 +329,7 @@ When one person succeeds to another's qualifying activity, the plant passes with
 
 **Non-P&M Parts (ss 567–570).** Where buyer and seller are under common control, or the sole or main benefit of the sale is a tax advantage, the sale is treated as at **market value** (ss 567–568). Where control is the only reason and there is no tax advantage, the parties may elect for the **alternative amount** (broadly the lower of market value and the unrelieved balance) (s 569); barred where the buyer is a **dual resident investing company** (s 570). These sections do not apply to Part 2 (P&M) or where s 561 applies; within the syllabus they matter mainly for R&D allowances (chapter 10). **s 570A** denies a balancing allowance where a tax avoidance scheme has reduced the proceeds.
 
-**Cross-border transfers (ss 561, 561A).** s 561 applies to a transfer within TCGA 1992 s 140A between qualifying companies ("relevant state" = the UK or a member State, s 561(4A)), where the transferee is UK resident or carries on the business through a UK PE: **no allowances or charges**, and the transferee **stands in the transferor's shoes** (CTA 2010 s 948 then disapplied). s 561A covers cross-border mergers (TCGA s 140E). These rules were built for EU law; **how far TCGA s 140A's conditions still operate after Brexit is unclear** (bible flag 25). In an exam, recognise them, state the effect, and note that the conditions turn on the definition of a relevant state.
+**Cross-border transfers (ss 561, 561A).** s 561 applies to a transfer within TCGA 1992 s 140A between qualifying companies ("relevant state" = the UK or a member State, s 561(4A)), where the transferee is UK resident or carries on the business through a UK PE: **no allowances or charges**, and the transferee **stands in the transferor's shoes** (CTA 2010 s 948 then disapplied). s 561A covers cross-border mergers (TCGA s 140E). These rules were built for EU law; **how far TCGA s 140A's conditions still operate after Brexit is unclear**. In an exam, recognise them, state the effect, and note that the conditions turn on the definition of a relevant state.
 
 **Apportionment (s 562)** and **final provisions (ss 571–581)**: the Act's toolbox of definitions, including transfers treated as sales (s 573) and connected persons (s 575). They answer three questions every transaction raises: was there a sale, at what price, and between whom?
 
@@ -411,7 +411,7 @@ Capital allowances relieve the cost a business bears.
 - A building is a bundle of tax assets: land (nothing), structure (SBA), integral features and other fixtures (P&M). A just and reasonable apportionment (s 562) splits the price, whatever the contract says.
 - **SBA:** 3% a year of qualifying construction cost for 33⅓ years from the later of first non-residential use and the expenditure; construction contract on or after 29 October 2018; older buildings: only later alterations and extensions. Land, land alteration and plant excluded. Bought unused from a developer: price paid; unused from anyone else: lower of price and construction cost; used: 3% of the original cost continues. No balancing adjustment on sale; the seller adds its SBA to its gains consideration. Demolition ends it. No claim without an allowance statement.
 - **TEL's distribution centre:** structure £3.4m, SBA £102,000 a year, **£34,000** for 4 months of GY3; land £1.2m nothing; integral features £0.6m to the special rate pool.
-- **Fixtures:** a buyer claims only if the past owner pooled (from April 2014) and the value was fixed (from April 2012), usually by a joint **s 198 election** within 2 years, capped at the seller's original cost. Miss either and the claim is nil for every later owner. The election affects allowances, not gains (except the loss restriction). TES's office fixtures: **£400,000**.
+- **Fixtures:** a buyer claims only if the past owner pooled (from April 2014) and the value was fixed (from April 2012), usually by a joint **s 198 election** within 2 years, capped at the seller's original cost. Miss either and the claim is nil for every later owner. The election affects allowances, not gains (except the loss restriction). TES's office fixtures: **£400,000**, covered by the group AIA.
 - **LFLs:** a funding lease (finance lease, 80% payments or 65% useful life test) of more than 7 years; the lessee claims on the PV of the payments and deducts only the finance charge. TEL's machine: **£1.5m** to the main pool.
 - **Successions:** market value, no AIA/FYA (s 265), unless connected parties elect within 2 years for TWDV (ss 266–267), or Part 22 Ch 1 passes it at TWDV automatically (s 948). Connected plant sales: no AIA/FYA; cost capped at the seller's disposal value.
 - **Contributions:** public grants reduce qualifying expenditure; connected contributors get no contribution allowance. TES's flood wall qualifies on **£300,000** (SBA £9,000 a year).
@@ -448,7 +448,7 @@ Next, chapter 10 turns from buildings and machines to ideas, and to research and
 | Contributions | Public or other contributions not incurred by recipient; exceptions; contribution allowances if unconnected | ss 532–538A |
 | Allowance buying | Ch 16A; thresholds £50m / £2m / unallowable purpose | ss 212A–212S |
 | Special tax sites | 100% FYA; 10% SBA over 10 years; SBA sunset 30 Sept 2031 (England) / 30 Sept 2034 (Scotland, Wales, IZs) | ss 45O–45R, 270AA |
-| **Story** | TEL distribution centre SBA £102,000 a year, £34,000 GY3; TEL GY2 extension £58,800; TES office fixtures £400,000; TEL LFL £1.5m (main pool, WDA effect £210,000); TES flood wall £300,000 (SBA £9,000) | ledger; this chapter |
+| **Story** | TEL distribution centre SBA £102,000 a year, £34,000 GY3; TEL GY2 extension £58,800; TES office fixtures £400,000 (AIA £400,000); TEL LFL £1.5m (main pool, WDA effect £210,000); TES flood wall £300,000 (SBA £9,000) | invented (story) |
 
 ## Statutory and case references
 

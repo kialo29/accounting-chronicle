@@ -1,6 +1,6 @@
 # Chapter seven: The large company computation.
 
-On the morning our invented group, Tarnmoor, published its results for Group Year Two (GY2), an analyst rang the investor relations team with a simple question. Tarnmoor Engineering Ltd (TEL), the group's main UK trading company, had made a profit before tax of £23.5m. The main rate of corporation tax is 25%. So why was its current tax bill about £2m, and not nearly £6m?
+On the morning our invented group, Tarnmoor, published its results for Group Year Two (GY2), an analyst rang the investor relations team with a simple question. Tarnmoor Engineering Ltd (TEL), the group's main UK trading company, had made a profit before tax of £23.5m. The main rate of corporation tax is 25%. So why was its current tax bill about £2.2m, and not nearly £6m?
 
 The call was passed to Tom Hesketh, the group's head of tax. Like everyone and everything at Tarnmoor, he is invented for teaching. His answer took twenty minutes. This chapter takes a little longer, because it is the full answer.
 
@@ -277,7 +277,7 @@ The principle in *McKnight* is a public policy rule, not a statutory one, which 
 
 In a group, the sweeper earns its place at head office, where income often arises that is neither trading, property nor financing.
 
-**In our invented case:** TPLC charges Tarnmoor Vallaria SA (TVS; Vallaria is an invented country) for management services: **£2.2m in GY2**, at arm's length. TPLC does not trade; the fees are not property income or a loan relationship credit, so Tom treats them as **income not otherwise charged**. TPLC's management expenses (£8.5m) are set first against its own profits, including that income, leaving **£6.3m** to surrender to TEL; CTA 2010 s 105 limits surrender of excess management expenses to the excess over the surrendering company's own profits (chapters 13 and 15). *(Classification is the book's working assumption; bible flag 55 remains open on whether the recharge could be trading.)*
+**In our invented case:** TPLC charges Tarnmoor Vallaria SA (TVS; Vallaria is an invented country) for management services: **£2.2m in GY2**, at arm's length. TPLC does not trade; the fees are not property income or a loan relationship credit, so Tom treats them as **income not otherwise charged**. TPLC's management expenses (£8.5m) exceed its gross profits (that income) by £6.3m, but CTA 2010 s 105(3A) limits surrender to the excess over the **profit-related threshold**: gross profits plus the controlled foreign company (CFC) profits apportioned to TPLC from its Marrovian subsidiary Tarnmoor Capital Ltd (TCM; Marrovia is another invented country), **£825,000**. Threshold £2.2m + £0.825m = £3.025m; surrender **£5.475m** to TEL; the other £825,000 is carried forward (chapters 13 and 15). *(Classification is the book's working assumption; whether the recharge could be trading is not settled, and the s 105 outcome is the same either way.)*
 
 > **Exam lens.** Grade **1** (Income not otherwise charged, Part 10 Ch 8). Recognition marks: name the charge and why it applies.
 
@@ -299,7 +299,7 @@ Relief is given from total profits rather than as a trading expense because a do
 | Charity-owned companies | May treat a payment as made in an AP within the 9 months before | s 199 |
 | **Tainted donations (FA 2026 s 56, Sch 9)** | Donations made **on or after 6 April 2026**: outcome test replaces the purpose test in s 939C(5). Condition B: a linked person who is not a charity receives **financial assistance** (loan, guarantee, indemnity or any investment, arm's length or not) from the charity or a connected charity under or in connection with the arrangements. Associated donation rules (new s 939FB). A tainted donation gets no relief (s 939F) | CTA 2010 Part 21C |
 
-> **Worked example (hypothetical, not story).** Suppose TEL had given **£200,000** to an engineering education charity in GY2: added back in the trading computation; deducted from total profits before group relief. TTP £26.0m − £0.2m − £17.92m = **£7.88m** (instead of £8.08m); CT £1.97m: saving **£50,000**. In the story TEL made no such gift.
+> **Worked example (hypothetical, not story).** Suppose TEL had given **£200,000** to an engineering education charity in GY2: added back in the trading computation; deducted from total profits before group relief. TTP £26.0m − £0.2m − £17.095m = **£8.705m** (instead of £8.905m); CT £2,176,250 (instead of £2,226,250): saving **£50,000**. In the story TEL made no such gift.
 
 > **Going further.** Give listed shares rather than cash where held (relief at market value); place the gift in a company with profits; check, from 6 April 2026, that no charity in the arrangement lends to or invests in any group company.
 
@@ -375,20 +375,20 @@ The same answer comes from charging 19% on the first £50,000 and 26.5% on the n
 > | **Tax-adjusted trading profit before CAs** | **42,000** | after the £12,000 trading LR debit to TFL |
 > | Capital allowances (chapter 8) | (16,000) | |
 > | **Trading profits = total profits** | **26,000** | no other income |
-> | Group relief: TPLC excess management expenses | (6,300) | chapter 15 |
+> | Group relief: TPLC excess management expenses (over its profit-related threshold) | (5,475) | CTA 2010 s 105(3A); chapters 13, 15 |
 > | Group relief: TPLC NTLR deficit (after CIR disallowance) | (7,670) | chapters 12, 28 |
 > | Group relief: Brackenwell post-acquisition loss | (2,600) | chapter 15 |
 > | Consortium relief: Helmside (link company route) | (1,350) | chapter 15 |
-> | **TTP** | **8,080** | |
-> | **CT at 25%** (9 associates: upper limit £25,000; no MR) | **2,020** | |
+> | **TTP** | **8,905** | |
+> | **CT at 25%** (9 associates: upper limit £25,000; no MR) | **2,226.25** | |
 >
 > **No adjustment (each worth stating):** annual bonus £2,000 paid 31 March GY3 (within 9 months); staff party £120 (s 1299 Case B); trading LR debit £12,000 (CTA 2009 Part 5); ERP costs £24,000 (revenue per accounts; UTT, chapter 4); specific trade debt impairment; legal costs of defending the prosecution.
 >
-> **Payment:** very large company (chapter 3): QIPs of **£505** each (£000) due 14 March, 14 June, 14 September and 14 December GY2. Brackenwell's surrendered RDEC then discharges part of the liability (chapter 10).
+> **Payment:** very large company (chapter 3): QIPs of **£556,562.50** each due 14 March, 14 June, 14 September and 14 December GY2, based on the full liability. Brackenwell's surrendered RDEC then discharges part of the liability (chapter 10).
 >
 > **Cross-check:** TEL's tax-EBITDA for CIR (chapter 28) = £42,000 + £12,000 = **£54,000**.
 
-Told in words: profit before tax of £23.5m; add back £20.0m (depreciation £16.2m, the unpaid LTIP £1.4m, unpaid pensions £0.9m, the IFRS 2 charge £1.1m, and £0.4m between the fine, hospitality, whisky and planning fees); deduct £1.5m (last year's pension accrual £0.6m, Part 12 relief £0.8m, the accounting profit on plant £0.1m). That gives £42.0m before capital allowances, already after the £12.0m of trading interest to TFL. Capital allowances of £16.0m (chapter 8 builds them line by line) leave trading profits of £26.0m, which are also total profits because TEL has no other income. Group relief of £17.92m (chapter 15) comes from three places: TPLC's excess management expenses and NTLR deficit, Brackenwell's post-acquisition loss, and consortium relief from the Helmside hydrogen joint venture. TTP is £8.08m and CT £2.02m, paid in four very large company instalments of £505,000 during the year itself (chapter 3).
+Told in words: profit before tax of £23.5m; add back £20.0m (depreciation £16.2m, the unpaid LTIP £1.4m, unpaid pensions £0.9m, the IFRS 2 charge £1.1m, and £0.4m between the fine, hospitality, whisky and planning fees); deduct £1.5m (last year's pension accrual £0.6m, Part 12 relief £0.8m, the accounting profit on plant £0.1m). That gives £42.0m before capital allowances, already after the £12.0m of trading interest to TFL. Capital allowances of £16.0m (chapter 8 builds them line by line) leave trading profits of £26.0m, which are also total profits because TEL has no other income. Group relief of £17.095m (chapter 15) comes from three places: TPLC's excess management expenses and NTLR deficit, Brackenwell's post-acquisition loss, and consortium relief from the Helmside hydrogen joint venture. TTP is £8.905m and CT £2,226,250, due in four very large company instalments of £556,562.50 during the year itself (chapter 3).
 
 **The answer to the analyst (£m):**
 
@@ -397,10 +397,10 @@ Told in words: profit before tax of £23.5m; add back £20.0m (depreciation £16
 | Profit before tax | 23.50 | 5.875 |
 | + net adjustments (20.0 − 1.5) | +18.50 | +4.625 |
 | − capital allowances | −16.00 | −4.000 |
-| − group and consortium relief | −17.92 | −4.480 |
-| **TTP / CT** | **8.08** | **2.020** |
+| − group and consortium relief | −17.095 | −4.27375 |
+| **TTP / CT** | **8.905** | **2.22625** |
 
-CT is about 8.6% of profit before tax. That is not a gap in the law: it is the law working as designed, with much of the relief bought by losses and expenses elsewhere in the same group.
+CT is about 9.5% of profit before tax. That is not a gap in the law: it is the law working as designed, with much of the relief bought by losses and expenses elsewhere in the same group.
 
 > **Going further: the tax function's year-end checklist for the computation.**
 > - **Remuneration:** list every bonus, LTIP and commission accrual with its expected payment date; flag anything paid after month 9 (s 1288) and diarise the later deduction.
@@ -461,12 +461,12 @@ Sixteen million pounds of capital allowances did a great deal of work in TEL's a
 | Excess QCD surrender | Only the excess over the surrendering company's profits (profit-related threshold) | CTA 2010 ss 99(1)(d), 105 |
 | LFL lessee | Finance lease: finance charge only; operating lease: reduced by expected fall in value | CTA 2010 ss 377, 377A, 379 |
 | Rates FY2026 | 25% / 19%; £50,000 / £250,000 ÷ (1 + associates); 3/200; marginal rate 26.5% | CTA 2010 Part 2; FA 2025 s 13; FA 2026 ss 11–12 |
-| TEL GY2 | PBT £23.5m → £42.0m → CAs £16.0m → £26.0m → GR £17.92m → TTP £8.08m → CT £2.02m | ledger |
-| Dan's package (Calder) | £97,812 deductible in the 9-month AP to 31 Dec GY3; s 79 safety net £27,036 | ledger; this chapter |
+| TEL GY2 | PBT £23.5m → £42.0m → CAs £16.0m → £26.0m → GR £17.095m → TTP £8.905m → CT £2,226,250 | invented (story) |
+| Dan's package (Calder) | £97,812 deductible in the 9-month AP to 31 Dec GY3; s 79 safety net £27,036 | invented (story); this chapter |
 
 ## Statutory and case references
 
-**Statute:** CTA 2009 ss 46, 53, 54, 76, 79, 979–982, 1007–1010, 1013, 1018, 1038, 1038A, 1223, 1288–1290, 1292, 1298–1300, 1301B, 1303, 1304; CTA 2010 Part 2 (rates, marginal relief), ss 99, 105, 189–217, 377, 377A, 379, 939A–939FB; FA 2004 ss 196–198; CAA 2001 ss 70A, 70H, 70I; F(No.2)A 2017 s 37; FA 2013 s 40; FA 2026 ss 11–12, 56, Sch 9; ITEPA 2003 ss 18–19.
+**Statute:** CTA 2009 ss 46, 53, 54, 76, 79, 979–982, 1007–1010, 1013, 1018, 1038, 1038A, 1223, 1288–1290, 1292, 1298–1300, 1301B, 1303, 1304; CTA 2010 Part 2 (rates, marginal relief), ss 99, 105(3)–(3A), 189–217, 377, 377A, 379, 939A–939FB; FA 2004 ss 196–198; CAA 2001 ss 70A, 70H, 70I; F(No.2)A 2017 s 37; FA 2013 s 40; FA 2026 ss 11–12, 56, Sch 9; ITEPA 2003 ss 18–19.
 
 **Cases:**
 - *Marson v Morton* (Ch D, 1986) (report citation not checked)

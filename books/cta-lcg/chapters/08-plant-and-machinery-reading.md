@@ -396,7 +396,7 @@ A year later, Calder's sale to TVS runs the sorting in reverse: **£1.0m** of sp
 - **Special balancing charge (ss 59A–59C):** disposal value × FE expenditure ÷ total; half for 50% assets, the other half off the special rate pool. Calder's GY3 sale: **£1.0m** of charges.
 - **40% FYA (s 45U):** from 1 January 2026; new main-rate plant; any business; leasing into the UK allowed; 60% to the main pool; no special balancing charge.
 - **WDA 14%** for CT periods beginning on or after 1 April 2026; hybrid by days, rounded up (calendar 2026: **14.99%**); special rate **6%**.
-- **AIA £1m**, one per group for chargeable periods ending in the financial year (s 51C); allocate to expenditure with no FYA, special rate first.
+- **AIA £1m**, one per group for chargeable periods ending in the same financial year, the year to 31 March (s 51C; Interpretation Act 1978); allocate to expenditure with no FYA, special rate first.
 - **Cars:** over 50g/km special rate; no AIA or FYA except new zero-emission cars to 31 March 2027. **LLA:** 25 years; £100,000 ÷ (1 + associates); all or nothing. **SLA:** 2-year election; 8-year cut-off. **Software:** plant, but Part 8 unless s 815 election within 2 years.
 - **HP:** whole capital element when brought into use. **Part use and entertainment:** just and reasonable reduction, single asset pool.
 - **Giving effect:** trade expense; property business expense; investment business, then management expenses. **Claims:** in the return; para 82 window (*Dundas Heritable*).
@@ -417,7 +417,7 @@ The SBA in that total is the bridge to the next chapter. Plant is the apparatus;
 | 40% FYA | From 1 January 2026; new; main rate; any business; leasing into UK tax net; 60% to main pool; no special charge | s 45U, 45V, 46(4B)–(4C); FA 2026 s 29 |
 | Main pool WDA | 14% (CT periods beginning on or after 1 April 2026); hybrid by days, rounded up | s 56; FA 2026 s 28 |
 | Special rate WDA | 6% | s 104D |
-| AIA | £1,000,000; one per group (parent undertaking + subsidiaries) for periods ending in the financial year; related companies | ss 38A, 51A, 51C–51G |
+| AIA | £1,000,000; one per group (parent undertaking + subsidiaries) for periods ending in the financial year (year to 31 March); related companies | ss 38A, 51A, 51C–51G; Interpretation Act 1978 Sch 1 |
 | No double relief | Not AIA + FYA, or two FYAs | s 52A |
 | Connected-party purchase | No AIA or FYA; cost capped at seller's disposal value | ss 214, 217, 218 |
 | Cars | Main rate ≤ 50g/km or electric; otherwise special rate; no AIA/FE/40%; new zero-emission 100% FYA to 31 March 2027 | ss 104AA, 268A; FA 2026 s 30 |
@@ -446,6 +446,7 @@ The SBA in that total is the bridge to the next chapter. Plant is the apparatus;
 - Taxation (International and Other Provisions) Act 2010 s 407 (tax-EBITDA).
 - Finance Act 1998 Sch 18 paras 78–83 (claims).
 - Companies Act 2006 s 1162 (parent undertaking).
+- Interpretation Act 1978 Sch 1 ("financial year": the twelve months ending with 31 March).
 - HMRC manuals: CA11140 (claims), CA11800 (when expenditure is incurred), CA27100 (assets provided for directors or employees), CIRD25180 (software election).
 - GOV.UK policy papers: *Capital allowances: permanent full expensing* (22 November 2023); *Capital allowances: new first-year allowance and reducing main rate writing-down allowances* (26 November 2025); Spring Budget 2023 full expensing factsheet.
 - *HMRC v Dundas Heritable Ltd* [2019] UKUT 208 (TCC).

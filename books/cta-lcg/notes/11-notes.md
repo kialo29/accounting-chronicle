@@ -22,7 +22,7 @@ WebSearch (10 of 12 used; WebFetch not used per addendum). Queries and the URLs 
 
 ## Fact-check flags
 
-1. **CONTRADICTION WITH LEDGER (for chapter 28): Calder's £6.0m IFA realisation credit in CIR tax-EBITDA.** Ledger GY3 includes the £6.0m credit in Calder's tax-EBITDA contribution (£8.6m = 1.2 + 3.2 + 6.0 − 1.8). HMRC's CFM95805 says excluded "relevant intangibles debits and credits" (TIOPA s 407, defined in s 408) are mainly amortisation (including 4%), losses **and gains on disposal of IFAs**, and reversals. If so, Calder's contribution is **£2.6m**, aggregate tax-EBITDA **£81.7m**, 30% = **£24.51m**; ANTIE £24.35m; still no disallowance, but **reactivation £0.16m (not £1.96m)** and disallowances c/f **£4.35m (not £2.55m)** (computed in Python; group ratio lower at about 16.1% so fixed ratio governs). The chapter states the HMRC-guidance position without numbers and refers to chapter 28. s 408 Columns 1–2 not read (extract only): chapter 28's writer/orchestrator should verify and issue a ruling. Also unverified: whether royalty credits (s 722) stay in tax-EBITDA (CFM95805 extract truncated); not stated in the chapter.
+1. **Resolved by R4 (ledger stands):** TIOPA s 408 excludes s 735 credits only to the extent cost exceeds TWDV; Calder's £6.0m credit (no tax cost, no past debits) stays in tax-EBITDA (Calder £8.6m; aggregate £87.7m; reactivation £1.96m; c/f £2.55m). Chapter text corrected; the original flag follows for the record. **CONTRADICTION WITH LEDGER (for chapter 28): Calder's £6.0m IFA realisation credit in CIR tax-EBITDA.** Ledger GY3 includes the £6.0m credit in Calder's tax-EBITDA contribution (£8.6m = 1.2 + 3.2 + 6.0 − 1.8). HMRC's CFM95805 says excluded "relevant intangibles debits and credits" (TIOPA s 407, defined in s 408) are mainly amortisation (including 4%), losses **and gains on disposal of IFAs**, and reversals. If so, Calder's contribution is **£2.6m**, aggregate tax-EBITDA **£81.7m**, 30% = **£24.51m**; ANTIE £24.35m; still no disallowance, but **reactivation £0.16m (not £1.96m)** and disallowances c/f **£4.35m (not £2.55m)** (computed in Python; group ratio lower at about 16.1% so fixed ratio governs). The chapter states the HMRC-guidance position without numbers and refers to chapter 28. s 408 Columns 1–2 not read (extract only): chapter 28's writer/orchestrator should verify and issue a ruling. Also unverified: whether royalty credits (s 722) stay in tax-EBITDA (CFM95805 extract truncated); not stated in the chapter.
 2. **Law sheet 1 §4 formula for the 6× cap appears inverted.** It writes "A ÷ (B × N) < 1"; the rule as taught (relief limited to relevant-asset cost up to 6 × IP spend, i.e. proportion 6A/B) follows s 879M's wording and the law sheet's own explanation. s 879O formula is an image (bible flag 12): still open; exact statutory formula not seen.
 3. **s 729 accounts-basis scaling:** inputs (L, WDV, AV) verified from legislation.gov.uk extract; the combination L × WDV/AV is inferred (formula image not rendered). Stated in words ("scaled by the ratio").
 4. **Patent Box small claims threshold:** CIRD220470 extract (QRP ≤ £1m route) and GOV.UK guidance (£3m) conflict; the chapter mentions small claims without a figure. Pre-grant ("patent pending") profits: the 6-year point **UNVERIFIED** and omitted. Relevant IP income categories in the reading edition (sales, licence fees/royalties, infringement income, notional royalties) are from general knowledge of s 357CC: outline only, not individually verified.
@@ -38,7 +38,7 @@ WebSearch (10 of 12 used; WebFetch not used per addendum). Queries and the URLs 
 
 ## Contradictions
 
-- Ledger GY3 CIR (Calder £8.6m including the £6.0m IFA credit): see flag 1. Correction proposed: Calder £2.6m; aggregate £81.7m; reactivation £0.16m; c/f £4.35m (subject to ch 28 verification of s 408).
+- Ledger GY3 CIR (Calder £8.6m including the £6.0m IFA credit): see flag 1. Correction proposed: Calder £2.6m; aggregate £81.7m; reactivation £0.16m; c/f £4.35m (subject to ch 28 verification of s 408). Resolved by continuity ruling R4 (ledger stands; proposal withdrawn).
 - Law sheet 1 §4 cap formula: see flag 2.
 - No contradiction found with the bible §3.7 figures.
 
@@ -74,7 +74,7 @@ WebSearch (10 of 12 used; WebFetch not used per addendum). Queries and the URLs 
 - Assets with no balance sheet value treated as having one (s 734(3)); s 739(1A) non-cash proceeds (FA 2018) — legislation.gov.uk.
 - Reinvestment: full reinvestment relief = proceeds − cost; partial = expenditure − cost (s 758(2)–(3)) — CIRD20210/20220.
 - Patent Box: start 1 April 2013, full 1 April 2017 (CIRD201010); election within 12 months after the filing date (CIRD260100); 5-year bar after revocation (CIRD260110); nexus fraction (D+S1)×1.3/(D+S1+S2+A) ≤ 1 (CIRD275000).
-- CIR tax-EBITDA excludes relevant intangibles debits and credits (amortisation, 4% debits, disposal gains and losses) — CFM95805 (HMRC guidance).
+- CIR tax-EBITDA excludes relevant intangibles debits (amortisation, 4% debits, disposal losses) and realisation credits only to the extent of cost less TWDV — TIOPA s 408 (R4; CFM95805 is HMRC's looser summary).
 - 2015 goodwill withdrawal rationale (policy paper quote above).
 
 **Debates covered:** L9 (tax following the accounts) through the accounts-basis debit and the 4% fix; L3 (arm's length) touched via the FA 2026 single valuation standard; the asset-versus-share deal tension (feeds chapter 20).
@@ -87,5 +87,19 @@ WebSearch (10 of 12 used; WebFetch not used per addendum). Queries and the URLs 
 - **Patent Box saving** for Calder: **£135,000** a year (CT £225,000 without the box v £90,000).
 - **TAL patents counterfactual** (labelled, not a story event): degrouping credit £2.8m, CT £700,000 if s 782A had not applied; after the sale TAL keeps WDV £1.2m (no uplift).
 - **Calder GY3 sale:** CT on the £6.0m credit **£1.5m** at 25%; no reinvestment relief claimed.
-- Proposed CIR correction (flag 1) for the orchestrator's continuity ruling.
+- Proposed CIR correction (flag 1) for the orchestrator's continuity ruling: withdrawn (R4; ledger figures stand).
 - `ledger-check.py` re-run: 96 checks, 0 failures (no canonical numbers changed).
+
+---
+
+## Continuity fixes applied (9 October 2026, after `continuity-rulings.md`)
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R4 | `11-intangibles-and-ip-reading.md` (Going further, CIR paragraph) | "HMRC's guidance (CFM95805) says it also ignores relevant intangibles debits and credits (s 407, defined in s 408): mainly amortisation, including 4% write-downs, losses and gains on disposals of IFAs, and reversals of excluded amounts. On that guidance, a large realisation credit like Calder's £6.0m raises taxable profits but not interest capacity." → tax-EBITDA ignores amortisation (including 4%) and losses on disposal; the s 408 table excludes s 735 realisation credits only to the extent cost exceeds TWDV ("amortisation in, amortisation out"); CFM95805 is HMRC's looser summary; Calder's £6.0m (no tax cost, no past debits) is a gain over cost and raises both taxable profits and interest capacity |
+| R4 | `11-intangibles-and-ip-reading.md` (Key rules and figures, CIR row) | "Patent Box deduction and relevant intangibles debits and credits excluded from tax-EBITDA" → "Patent Box deduction and intangibles debits excluded from tax-EBITDA; realisation credits excluded only to the extent of cost less TWDV (s 408)" |
+| R4 | `11-intangibles-and-ip.txt` (CIR paragraph) | "H M R C's guidance says it also ignores ... gains and losses on disposals of intangibles. So a large realisation credit, like Calder's six million pounds, raises taxable profit but, on that guidance, does not raise the interest capacity." → ignores amortisation, four per cent write-downs and losses on disposals; a realisation credit is left out only so far as it claws back earlier tax debits (cost less tax written-down value); "amortisation in, amortisation out"; H M R C's summary sounds wider but the statute is the test; Calder's six million pound credit raises both taxable profit and interest capacity |
+| R4 | `notes/11-notes.md` | flag 1 marked resolved (ledger stands); Contradictions line "Resolved by continuity ruling R4"; Bible-update CFM95805 line and Ledger-additions proposal corrected/withdrawn |
+| R16 | both editions | `grep -n -i -E "ledger|continuity|the plan for this book"`: no hits; no change |
+
+No numbers changed (ledger GY3 CIR figures stand: Calder £8.6m; aggregate £87.7m; reactivation £1.96m; c/f £2.55m). §11 scans on the script: 0 symbol/digit hits (heading colon only), 0 dash hits, 0 unspaced acronyms. Word counts after fixes: script 7,400; reading edition 7,840. `ledger-check.py`: 132 checks, 0 failures.

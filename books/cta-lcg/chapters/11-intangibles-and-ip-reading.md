@@ -407,7 +407,7 @@ where D = the company's own qualifying R&D expenditure; S1 = R&D subcontracted t
 
 **Royalties.** A UK company paying a royalty for IP to a non-resident must normally deduct income tax at the basic rate (ITA 2007 s 906), unless it reasonably believes a lower treaty rate applies (s 911) (chapter 23). Calder's royalty from TVS bears Vallarian withholding of 5% (£60,000 a year); the credit and its limit are chapter 24's.
 
-**CIR (chapter 28).** Tax-EBITDA ignores the **Patent Box deduction** (TIOPA s 407(3)(l)). HMRC's guidance (CFM95805) says it also ignores **relevant intangibles debits and credits** (s 407, defined in s 408): mainly amortisation, including 4% write-downs, **losses and gains on disposals of IFAs**, and reversals of excluded amounts. On that guidance, a large realisation credit like Calder's £6.0m raises taxable profits but **not** interest capacity. Chapter 28 works through the effect on Tarnmoor's figures.
+**CIR (chapter 28).** Tax-EBITDA ignores the **Patent Box deduction** (TIOPA s 407(3)(l)). It also ignores **relevant intangibles debits and credits** (s 407, defined in s 408). The debits are amortisation, including 4% write-downs, and losses on disposals of IFAs. The credits are narrower: the s 408 table excludes a realisation credit under s 735 only **to the extent that the cost of the asset exceeds its tax written-down value**, that is, only so far as it claws back earlier tax debits. Amortisation in, amortisation out. HMRC's summary in CFM95805 (excluded credits are "mainly" gains on disposal) is looser than the statute. Calder's know-how and customer contracts had no tax cost and no past debits, so its £6.0m credit is a gain over cost: it raises **both** taxable profits **and** interest capacity. Chapter 28 works through the effect on Tarnmoor's figures.
 
 > **Going further: judgement and ethics**
 >
@@ -471,7 +471,7 @@ The intangibles code showed tax following the accounts for things you cannot tou
 | Patent Box | Deduction RP × (MR − 10%)/MR; full from 1 April 2017; nexus for elections after 30 June 2016 | CTA 2010 s 357A |
 | Nexus fraction | (D + S1) × 1.3 / (D + S1 + S2 + A), max 1 | Part 8A Ch 2A; CIRD275000 |
 | Patent Box election | Within 12 months after the filing date; 5-year bar after revocation | CIRD260100–260110 |
-| CIR | Patent Box deduction and relevant intangibles debits and credits excluded from tax-EBITDA | TIOPA s 407(3)(l), s 408; CFM95805 |
+| CIR | Patent Box deduction and intangibles debits excluded from tax-EBITDA; realisation credits excluded only to the extent of cost less TWDV (s 408) | TIOPA s 407(3)(l), s 408; CFM95805 |
 | Story | Calder credit £6.0m (CT £1.5m); TIL list £3.0m no debits; TAL patents WDV £1.2m / MV £4.0m (charge switched off); Calder Patent Box RP £0.9m, deduction £540,000, CT £90,000; royalty £1.2m, WHT £60,000 | invented |
 
 ## Statutory and case references

@@ -74,7 +74,7 @@ Three features set the credit apart from the old enhanced deduction.
 > | Step 1: RDEC discharges CT of the period | (400,000) |
 > | **CT payable** | **350,000** |
 >
-> Net benefit to the group: £400,000 − (25% × £400,000) = **£300,000**, i.e. 15% of qualifying expenditure. Calder is very large in this AP (augmented profits £3.0m > £20m ÷ 9 = £2,222,222: chapter 3), so it pays by instalments in months 3, 6, 9 and 12.
+> Net benefit to the group: £400,000 − (25% × £400,000) = **£300,000**, i.e. 15% of qualifying expenditure. Calder is large, not very large, in this AP (its associates are counted on 31 March GY1, when it had none: chapter 3), so it pays four instalments of £187,500 in months 7, 10, 13 and 16; the credit does not reduce them (CIRD89870).
 
 ---
 
@@ -175,7 +175,7 @@ The credit is not simply paid out. It flows through seven steps (CTA 2009 ss 104
 
 Step 5 is where a large group finds value. A loss-making subsidiary can take cash, net of notional tax and subject to the PAYE cap; or it can surrender the credit to a taxpaying group company, which uses it to pay its own CT. Inside a group with a large tax bill, surrender turns a deferred, restricted asset into an immediate saving, and the step 2 amount, which would otherwise sit idle in a company that will make losses for years, can travel too.
 
-*In our invented case*, Tom Hesketh, the group head of tax, compares the options for Brackenwell's GY2 credit. Cash would bring in £486,000 now, with the £114,000 step 2 amount carried forward against tax Brackenwell may not pay for years. Surrender to Tarnmoor Engineering, whose GY2 CT is £2,020,000, uses the whole £600,000 at once. He surrenders both amounts.
+*In our invented case*, Tom Hesketh, the group head of tax, compares the options for Brackenwell's GY2 credit. Cash would bring in £486,000 now, with the £114,000 step 2 amount carried forward against tax Brackenwell may not pay for years. Surrender to Tarnmoor Engineering, whose GY2 CT is £2,226,250, uses the whole £600,000 at once. He surrenders both amounts. The surrendered credit discharges TEL's liability when Brackenwell's claim is made; TEL's instalments are still based on its full liability (our reading of HMRC's guidance at CIRD89870, which deals with a company's own credit).
 
 > **Worked example 10.2: Brackenwell's merged credit, GY2 (year to 31 December GY2) (invented)**
 >
@@ -191,7 +191,7 @@ Step 5 is where a large group finds value. A loss-making subsidiary can take cas
 > | Step 4: no other CT liabilities | — |
 > | Step 5: surrendered to Tarnmoor Engineering Ltd (TEL) | (486,000) |
 > | Step 2 amount also surrendered to TEL (s 1042L) | 114,000 |
-> | **Total credit discharging TEL's GY2 CT of £2,020,000** | **600,000** |
+> | **Total credit discharging TEL's GY2 CT of £2,226,250** | **600,000** |
 >
 > **Group economics:** the credit is taxable in BSL, so BSL's loss (and the group relief it surrenders to TEL) is £600,000 smaller, costing 25% × £600,000 = £150,000. Net benefit **£450,000** = 15% of £3,000,000. The steps move cash; the rate decides value.
 >

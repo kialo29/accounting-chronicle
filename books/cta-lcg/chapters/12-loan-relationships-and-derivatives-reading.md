@@ -58,7 +58,7 @@ Our **invented** group, Tarnmoor, shows how it works. Tarnmoor plc (TPLC), the l
 > | Fee 2 (£24m drawing, paid 1 July GY2) | — | 200 | 100 | 300 |
 > | **Loan relationship debit (non-trading)** | **250** | **250** | **100** | **600** |
 >
-> TPLC does not trade, so these are non-trading debits (s 301). They are kept apart from TPLC's management expenses (chapter 13). The ledger's amortisation amounts (£0.25m, £0.25m, £0.1m) feed the CIR figures in chapter 28.
+> TPLC does not trade, so these are non-trading debits (s 301). They are kept apart from TPLC's management expenses (chapter 13). These amortisation amounts (£0.25m, £0.25m, £0.1m) feed the CIR figures in chapter 28.
 
 **Exchange movements** follow the same logic. Section 328 brings exchange gains and losses on loan relationships into account, except translation differences on a functional-currency translation recognised in other comprehensive income (s 328(3)).
 
@@ -227,7 +227,7 @@ Immediately afterwards TPLC and BSL were connected, and TPLC had paid £1.8m for
 > **Exam lens: deemed releases and corporate rescue**
 >
 > - **Grade:** 1 (within loan relationships).
-> - **Past appearances:** not the main focus of an LCG question M23–M26 (exam-intel); a natural add-on to any "acquisition of a loss-making target" scenario.
+> - **Past appearances:** not the main focus of an LCG question M23–M26; a natural add-on to any "acquisition of a loss-making target" scenario.
 > - **Traps:** taxing the **creditor** (it is the debtor that is taxed); forgetting the 60-day window; describing the rescue test loosely ("the company was struggling") rather than as a material risk of inability to pay debts within 12 months; confusing s 322 (actual release by an unconnected lender) with s 361 (deemed release on acquisition).
 
 ---
@@ -277,18 +277,18 @@ That **"but for"** reasoning became the template. The hard question, which the 2
 |---|---|---|
 | *BlackRock HoldCo 5, LLC v HMRC* [2024] EWCA Civ 330 (11 April 2024) | US group acquisition; LLC5, a Delaware LLC resident in the UK, took on about $4bn of intra-group loans to buy preference shares (prologue) | Taxpayer **won** on transfer pricing (the loans could have been made at arm's length) but **lost** on unallowable purpose: a main tax avoidance purpose, and on the facts all debits attributable to it |
 | *Kwik-Fit Group Ltd v HMRC* [2024] EWCA Civ 434 (3 May 2024) | Reported facts (secondary commentary): one company (Speedy 1) held about £48m of pre-2017 NTLR deficits usable only against its own non-trading profits; expected use about 25 years, cut to about 3 by reorganising intra-group loans (new loans, assignments, higher rates) so that interest income flowed to it | Appeals dismissed: debits on the new loans attributable to an unallowable purpose. As commentators read it, the advantage was the deductions made available to the paying companies while the receiving company's income was sheltered. HMRC accepted that once the target losses were used, continued denial would no longer be just and reasonable (paras 101–103) |
-| *JTI Acquisition Company (2011) Ltd v HMRC* [2024] EWCA Civ 652 (13 June 2024) | UK company set up by a US group to buy a US business (LeTourneau Technologies), borrowing from a group company; interest surrendered as group relief (secondary commentary) | Appeal dismissed: the FTT's finding of no commercial purpose for the borrower's part stood; the tax advantage was "bolted on" to a commercial deal (paras 81–83, per law sheet 1); debits wholly attributable |
+| *JTI Acquisition Company (2011) Ltd v HMRC* [2024] EWCA Civ 652 (13 June 2024) | UK company set up by a US group to buy a US business (LeTourneau Technologies), borrowing from a group company; interest surrendered as group relief (secondary commentary) | Appeal dismissed: the FTT's finding of no commercial purpose for the borrower's part stood; the tax advantage was "bolted on" to a commercial deal (paras 81–83); debits wholly attributable |
 
 In **October 2024** the Supreme Court refused permission to appeal in all three cases.
 
 **The chapter's misconception.** "Interest on money borrowed to buy a company must be deductible, because buying a company is commercial." The Court of Appeal has closed that argument. The test looks at the **borrower's purpose in being party to the loan**, not the purpose of the acquisition. A commercial deal can carry a loan whose own purpose is tax.
 
-**The debate (book-plan L2).** The profession argues that the trilogy leaves groups uncertain: ordinary acquisition finance with a tax benefit attached is common, and the line between a tax-efficient structure and a main purpose is hard to draw. HMRC's view is that the rule asks a factual question and the tribunals answer it. **Still being litigated:** *Syngenta Holdings Ltd v HMRC* [2024] UKFTT 998 (TC) (FTT for HMRC, 1 November 2024); the Upper Tribunal gave permission to appeal on some grounds ([2025] UKUT 338 (TCC), October 2025). Commentators report the main question is whether a genuine business purpose must lead to **apportionment** rather than total disallowance. No Upper Tribunal decision had been published by October 2026.
+**The debate.** The profession argues that the trilogy leaves groups uncertain: ordinary acquisition finance with a tax benefit attached is common, and the line between a tax-efficient structure and a main purpose is hard to draw. HMRC's view is that the rule asks a factual question and the tribunals answer it. **Still being litigated:** *Syngenta Holdings Ltd v HMRC* [2024] UKFTT 998 (TC) (FTT for HMRC, 1 November 2024); the Upper Tribunal gave permission to appeal on some grounds ([2025] UKUT 338 (TCC), October 2025). Commentators report the main question is whether a genuine business purpose must lead to **apportionment** rather than total disallowance. No Upper Tribunal decision had been published by October 2026.
 
 > **Exam lens: unallowable purpose**
 >
 > - **Grade:** 1 (s 441 is within Part 5).
-> - **Past appearances:** no LCG question M23–M26 was built around s 441 (exam-intel's summaries), but it is the natural "discuss" point in any intra-group debt, debt pushdown or acquisition finance scenario, and the 2024 trilogy is recent enough to be topical.
+> - **Past appearances:** no LCG question M23–M26 was built around s 441, but it is the natural "discuss" point in any intra-group debt, debt pushdown or acquisition finance scenario, and the 2024 trilogy is recent enough to be topical.
 > - **Style:** "Explain whether the interest will be deductible": state the test (business or commercial purpose; tax avoidance main purpose; any person), apply it to the facts, and conclude on apportionment.
 > - **Traps:** arguing that a commercial acquisition guarantees deductibility (*JTI*); looking only at the borrower's own advantage (s 442: any person); forgetting that s 441 can apply even where transfer pricing is satisfied (*BlackRock*); raising DPT/UTPP (not relevant to loan relationships: M23 Q3).
 
@@ -425,7 +425,7 @@ The courts have patrolled the edges. *Union Castle Mail Steamship Co Ltd v HMRC*
 > | Taxed this year | nil (disregarded; brought in when the hedged copper purchases reach profit or loss, reg 8) | 400,000 |
 > | CT at 25% this year | nil | 100,000 |
 >
-> **TFL's interest rate swap.** Designated as a **fair value hedge** of the external notes. In a fair value hedge the accounts already adjust the notes for the hedged risk, so the two movements offset in profit or loss. TFL has made **no election and needs none**: tax follows the accounts. The swap's amounts are **non-trading** (TFL does not trade), in the same pot as the interest. *(This corrects the planning note that "the Disregard Regulations apply" to the swap: see the chapter notes.)*
+> **TFL's interest rate swap.** Designated as a **fair value hedge** of the external notes. In a fair value hedge the accounts already adjust the notes for the hedged risk, so the two movements offset in profit or loss. TFL has made **no election**. On HMRC's guidance it **needs none**: tax follows the accounts. The swap's amounts are **non-trading** (TFL does not trade), in the same pot as the interest.
 
 > **Exam lens: derivatives and the Disregard Regulations**
 >
@@ -486,7 +486,7 @@ A debit can survive one rule and fall to another: *BlackRock* won on transfer pr
 - **Late-paid interest:** only close company participator cases (corporate creditors only in non-qualifying territories) and pension scheme loans. Tarnmoor is not close.
 - **Second bouncer: s 441.** Debits disallowed so far as attributable to an unallowable purpose; tax advantage for **any person**; per loan, per period; just and reasonable apportionment, which can be 100%. *Fidex* ("but for"); *BlackRock*, *Kwik-Fit*, *JTI* (2024; permission refused October 2024); *Syngenta* pending. Tarnmoor rejected a £24m debt pushdown (Calder saving £360,000 a year; group cost £360,000 a year if disallowed).
 - **NTLR deficits (post-2017):** current year; carry back 12 months against NTLR profits only; group relief; carry forward against total profits (Part 5A, Part 7ZA). Claims within **2 years**. TPLC surrendered £6.59m (GY1) and £7.67m (GY2) to TEL.
-- **Third bouncer: the Disregard Regulations.** Derivatives follow profit or loss; since 2015 regs 7–9 apply only by **election** (reg 6A) or automatically where the hedged item is not taxed in line with the accounts. TEL's copper futures: elected. TFL's fair value hedge: follows the accounts.
+- **Third bouncer: the Disregard Regulations.** Derivatives follow profit or loss; since 2015 regs 7–9 apply only by **election** (reg 6A) or automatically where the hedged item is not taxed in line with the accounts, or in the other automatic cases HMRC lists. TEL's copper futures: elected. TFL's fair value hedge: follows the accounts.
 - **Grades:** loan relationships **1**; relationships treated as loan relationships **2**; derivatives and hedging **2**.
 
 Next: one kind of company sits at the centre of all this borrowing, and its costs are among the most misunderstood on the paper. Chapter 13 turns to companies with investment business.
@@ -514,11 +514,11 @@ Next: one kind of company sits at the centre of all this borrowing, and its cost
 | Derivatives | Relevant contract + accounting condition; profit or loss | ss 576–579, 595 |
 | Disregard Regulations | Elect-in (reg 6A); regs 7, 8, 9; reg 9A revoked | SI 2004/3256 |
 | Withholding on yearly interest | 20% (2026/27); 22% from 2027/28 (enacted) | ITA 2007 s 874; FA 2026 ss 5–6 |
-| Tarnmoor (invented) | TFL notes £550m at 5.5% (£30.25m); lends £550m at 6% (£33.0m); TTP £2.15m | ledger §6 |
+| Tarnmoor (invented) | TFL notes £550m at 5.5% (£30.25m); lends £550m at 6% (£33.0m); TTP £2.15m | invented (story) |
 | | RCF fees £300,000 + £300,000; debits £250,000 (GY1), £250,000 (GY2), £100,000 (GY3) | this chapter |
-| | BSL notes: £3.0m bought for £1.8m on 1 July GY2; deemed release £1.2m avoided (s 361D); released by 29 August GY2 | ledger GY2 |
-| | Rejected pushdown: £24m at 6% = £1.44m a year; £360,000 | ledger GY2 |
-| | TPLC NTLR deficit surrendered: £6.59m (GY1), £7.67m (GY2) | ledger GY1, GY2 |
+| | BSL notes: £3.0m bought for £1.8m on 1 July GY2; deemed release £1.2m avoided (s 361D); released by 29 August GY2 | invented (story) |
+| | Rejected pushdown: £24m at 6% = £1.44m a year; £360,000 | invented (story) |
+| | TPLC NTLR deficit surrendered: £6.59m (GY1), £7.67m (GY2) | invented (story) |
 
 ## Statutory and case references
 

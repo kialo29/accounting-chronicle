@@ -43,7 +43,10 @@
 - None with the ledger: all canonical Calder deferred tax figures used unchanged (NBV £14.0m; TWDV £8.4m; DTL £1.4m; short-term £0.8m; DTA £0.2m; opening DTL £1.1m / DTA £0.1m; charge £0.2m), and CT £750,000 / RDEC £400,000 / payable £350,000.
 - Plan brief said the ETR reconciliation is "for Tarnmoor GY2": done, simplified. Calder's own reconciliation added (exactly 25%).
 - Plan's IAS 12 Pillar Two "UK endorsement 19 July 2023 [S]": now verified (IAS Plus report of UKEB adoption).
-- Ledger arithmetic note (not a contradiction): Calder's AP to 31 March GY2 implies qualifying depreciation of only £0.6m (flag 1).
+- Ledger arithmetic note (not a contradiction): Calder's AP to 31 March GY2 implies qualifying depreciation of only £0.6m (flag 1). **Resolved by continuity ruling R12** (heavy long-life plant; special rate pool); note added beside the depreciation line.
+- Group ETR GY2 omitted TPLC's management expenses trapped by the s 105(3A) profit-related threshold. **Resolved by continuity ruling R3**: reconciling line £206k (0.21%) added; total £24,385k; ETR 24.39%.
+- Calder's current tax table described Calder as a very large company (QIPs in months 3, 6, 9, 12). **Resolved by continuity ruling R1**: large, not very large, in its AP to 31 March GY2 (four QIPs of £187,500 in months 7, 10, 13, 16, on CT before the RDEC: R2).
+- Production words ("ledger") in source cells and asides. **Resolved by continuity ruling R16**.
 
 ## Pronunciation guide
 
@@ -62,7 +65,7 @@
 
 **Cast (real):** none new (no cases). Institutions: IASB (Pillar Two amendments 23 May 2023; single-transaction amendment May 2021); UK Endorsement Board (adopted 19 July 2023); FRC (FRS 102/101 amendments July 2023).
 
-**Invented facts fixed:** Calder PBT £3.8m (AP to 31 March GY2) with RDEC presented above the line, no permanent differences, qualifying depreciation £0.6m; Tarnmoor GY2 consolidated PBT £100m; TVS GY2 profit £30m (Vallaria 20%); Tarnmoor GY2 expenses not deductible £2.0m; no DTA recognised on the GY2 CIR disallowance; Tarnmoor GY2 total tax charge £24.179m (ETR 24.18%, simplified, Pillar Two omitted); customer relationships £4.0m amortised over 10 years in group accounts (£0.4m a year; £0.3m in GY1), DT unwinding £0.1m a year (£75k GY1); Brackenwell potential DTA £2.15m unrecognised at and after acquisition (goodwill correspondingly higher). Nadia Kerr and Tom Hesketh appear briefly.
+**Invented facts fixed:** Calder PBT £3.8m (AP to 31 March GY2) with RDEC presented above the line, no permanent differences, qualifying depreciation £0.6m; Tarnmoor GY2 consolidated PBT £100m; TVS GY2 profit £30m (Vallaria 20%); Tarnmoor GY2 expenses not deductible £2.0m; no DTA recognised on the GY2 CIR disallowance; Tarnmoor GY2 total tax charge £24.385m (ETR 24.39%, simplified, Pillar Two omitted; amended by R3, was £24.179m / 24.18%); customer relationships £4.0m amortised over 10 years in group accounts (£0.4m a year; £0.3m in GY1), DT unwinding £0.1m a year (£75k GY1); Brackenwell potential DTA £2.15m unrecognised at and after acquisition (goodwill correspondingly higher). Nadia Kerr and Tom Hesketh appear briefly.
 
 **Glossary terms explained (chapter 6):** current tax; deferred tax; temporary difference; timing difference; tax base; carrying amount; deferred tax liability; deferred tax asset; permanent difference; substantively enacted; effective tax rate reconciliation; Pillar Two exception (IAS 12); initial recognition exception; single-transaction amendment; uncertain tax treatment (IFRIC 23); "timing differences plus".
 
@@ -82,8 +85,27 @@
 | Tarnmoor consolidated PBT GY2 | **£100.0m** (simplified illustration) |
 | TVS profit GY2 | **£30.0m** (taxed at 20%) |
 | Tarnmoor GY2 non-deductible expenses | **£2.0m** (illustrative aggregate) |
-| Tarnmoor GY2 total tax charge | **£24.179m; ETR 24.18%** (Pillar Two top-up excluded) |
+| Tarnmoor GY2 total tax charge | **£24.385m (exact £24,385,250); ETR 24.39%** (Pillar Two top-up excluded; includes TPLC's £825,000 carried-forward management expenses, no DTA, £206,250) (amended by R3) |
 | CIR disallowance GY2 | no DTA recognised (judgement) |
 | Customer relationships (Calder) in group accounts | FV £4.0m; DTL £1.0m; amortised over **10 years** (£0.4m a year; £0.3m GY1); DT credit £0.1m a year (£75,000 GY1) |
 | Brackenwell losses | potential DTA **£2.15m** (25% × £8.6m), unrecognised |
 | TEL full expensing GY2 | illustrative DTL effect £2.25m (ignoring depreciation) |
+
+## Continuity fixes applied
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R3 | `chapters/06-deferred-tax-reading.md`, Tarnmoor GY2 ETR reconciliation table | New line after the CIR line: "TPLC management expenses carried forward (CFC threshold), no DTA recognised: 825 × 25% \| 206 \| 0.21"; total **24,179 / 24.18** → **24,385 / 24.39** (exact £24,385,250; recomputed in Python) |
+| R3 | `chapters/06-deferred-tax-reading.md`, after the table | Added the optional sentence: "TPLC's surplus management expenses that the CFC threshold traps (CTA 2010 s 105(3A); chapter 13) carry forward with no asset recognised." |
+| R3 | `chapters/06-deferred-tax-reading.md`, "What to take away" and Key rules row | 24.18% → 24.39% |
+| R3 | `chapters/06-deferred-tax.txt`, reconciliation passage | New paragraph after the interest line: "One more line. Tarnmoor plc's surplus management expenses that the controlled foreign company threshold traps, eight hundred and twenty five thousand pounds, carry forward with no asset recognised, as chapter thirteen explains. That adds about two hundred and six thousand pounds." |
+| R3 | `chapters/06-deferred-tax.txt`, reconciliation total | "about twenty four point two million pounds, an effective rate of about twenty four point two per cent" → "about twenty four point four million pounds, an effective rate of about twenty four point three nine per cent" |
+| R3 | `chapters/06-deferred-tax.txt`, "What to take away" | "about twenty four point two per cent" → "about twenty four point three nine per cent" |
+| R12 | `chapters/06-deferred-tax-reading.md`, Calder current tax table | Note on "Add: depreciation of qualifying plant 600": "Replaced by capital allowances" → "Replaced by capital allowances; Calder's heavy plant has long useful lives, so its depreciation is low against its allowances" |
+| R1 (consequential) | `chapters/06-deferred-tax-reading.md`, Calder current tax table | "**Payable** (very large company QIPs: months 3, 6, 9, 12)" → "**Payable** (large, not very large: QIPs in months 7, 10, 13 and 16, 4 × £187,500 on the £750k before the RDEC; chapter 3)". Not listed in R1's "Fix needed in" but contradicted R1/R2's canonical position; script has no equivalent statement. |
+| R16 | `chapters/06-deferred-tax-reading.md`, full expensing example | "GY2 (ledger)" → "GY2 (chapter 8)" |
+| R16 | `chapters/06-deferred-tax-reading.md`, Calder current tax table | Source "Ledger (chapter 8)" → "Chapter 8"; "Ledger" (TTP row) → "Invented (story)" |
+| R16 | `chapters/06-deferred-tax-reading.md`, note under the table | "£2.6m in the ledger" → "£2.6m (chapter 10)" |
+| R16 | `chapters/06-deferred-tax-reading.md`, Key rules row "Calder GY2" | Source "ledger; this chapter" → "invented (story); this chapter" |
+| R3 | `notes/06-notes.md`, Bible update and Ledger additions | £24.179m / 24.18% → £24.385m / 24.39% |
+

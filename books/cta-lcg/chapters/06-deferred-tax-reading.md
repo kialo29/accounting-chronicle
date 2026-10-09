@@ -128,7 +128,7 @@ In most trading companies the largest balance comes from capital allowances:
 
 ### Worked example: full expensing and deferred tax (Tarnmoor Engineering, GY2; invented)
 
-TEL claims full expensing of **£9.0m** on new plant in GY2 (ledger). Ignoring depreciation in the year for simplicity:
+TEL claims full expensing of **£9.0m** on new plant in GY2 (chapter 8). Ignoring depreciation in the year for simplicity:
 
 | £000 | Current tax | Deferred tax | Total |
 |---|---|---|---|
@@ -172,16 +172,16 @@ Calder's numbers, all invented, for its year to **31 March GY2**. Calder still r
 | | £000 | Note |
 |---|---|---|
 | Profit before tax (includes RDEC income £400k above the line) | 3,800 | Story fact fixed in this chapter |
-| Add: depreciation of qualifying plant | 600 | Replaced by capital allowances |
-| Less: capital allowances | (1,800) | Ledger (chapter 8) |
+| Add: depreciation of qualifying plant | 600 | Replaced by capital allowances; Calder's heavy plant has long useful lives, so its depreciation is low against its allowances |
+| Less: capital allowances | (1,800) | Chapter 8 |
 | Add: LTIP and pension accruals unpaid at the year end (paid more than 9 months later / paid basis) | 800 | CTA 2009 s 1288; FA 2004 s 196 |
 | Less: opening accruals paid in the year | (400) | Deductible when paid |
-| **Taxable total profits** | **3,000** | Ledger |
+| **Taxable total profits** | **3,000** | Invented (story) |
 | Corporation tax at 25% | 750 | |
 | Less: RDEC set off (step 1) | (400) | CTA 2009 Part 3 Ch 6A |
-| **Payable** (very large company QIPs: months 3, 6, 9, 12) | **350** | |
+| **Payable** (large, not very large: QIPs in months 7, 10, 13 and 16, 4 × £187,500 on the £750k before the RDEC; chapter 3) | **350** | |
 
-(The adjusted trading profit before RDEC of £2.6m in the ledger is £3,000k less the taxable RDEC of £400k. Calder has no permanent differences this year: a story simplification.)
+(The adjusted trading profit before RDEC of £2.6m (chapter 10) is £3,000k less the taxable RDEC of £400k. Calder has no permanent differences this year: a story simplification.)
 
 ### Worked example: Calder's deferred tax (£000, 25%)
 
@@ -311,7 +311,10 @@ Timing differences fully provided at 25% **do not appear** in the reconciliation
 | UK CFC charge on TPLC in respect of TCM | 132 | 0.13 |
 | Expenses not deductible (fines, customer gifts, capital deal costs) £2,000k | 500 | 0.50 |
 | CIR disallowance £2,300k: carried forward, no DTA recognised | 575 | 0.58 |
-| **Total tax charge** | **24,179** | **24.18** |
+| TPLC management expenses carried forward (CFC threshold), no DTA recognised: 825 × 25% | 206 | 0.21 |
+| **Total tax charge** | **24,385** | **24.39** |
+
+TPLC's surplus management expenses that the CFC threshold traps (CTA 2010 s 105(3A); chapter 13) carry forward with no asset recognised.
 
 Not in the list: full expensing, unpaid bonuses, pension accruals, the customer relationship amortisation. All timing; all absorbed by deferred tax.
 
@@ -382,7 +385,7 @@ In a group like Tarnmoor, deferred tax is a quarterly discipline. The tax functi
 - **Calder (invented), 31 March GY2:** NBV £14.0m − TWDV £8.4m = £5.6m → DTL £1.4m; short-term £0.8m → DTA £0.2m; opening DTL £1.1m, DTA £0.1m; **deferred tax charge £0.2m**; current tax £750,000; **total £950,000 = 25% × PBT £3.8m**.
 - **Brackenwell:** losses £8.6m, potential DTA £2.15m, **not recognised** (Part 14; history of losses).
 - **Acquisitions:** fair value uplifts create deferred tax in the group accounts only; Calder's customer relationships £4.0m → DTL £1.0m, increasing goodwill and unwinding £0.1m a year; no DTL on goodwill.
-- **ETR reconciliation** shows only permanent and rate items: Tarnmoor GY2 (simplified) **24.18%**.
+- **ETR reconciliation** shows only permanent and rate items: Tarnmoor GY2 (simplified) **24.39%**.
 - **Pillar Two exception** (IASB 23 May 2023; UKEB 19 July 2023; FRC July 2023): no deferred tax on top-up taxes; current top-up tax disclosed separately.
 
 The next chapter takes the profit we have learned to account for and turns it into a full large company computation, line by line, the way the examiner sets it every sitting.
@@ -411,8 +414,8 @@ The next chapter takes the profit we have learned to account for and turns it in
 | Share option charge | Not deductible; Part 12 relief on acquisition | CTA 2009 s 1038; Part 12 |
 | Full expensing; 40% FYA; WDA | 100%; 40% from 1 January 2026; main pool 14% from 1 April 2026 | CAA 2001 ss 45S, 45U; FA 2026 ss 28–29 |
 | Loss restriction | £5m allowance + 50% of excess | CTA 2010 Part 7ZA (s 269ZD) |
-| Calder GY2 (invented) | DTL £1.4m; DTA £0.2m; charge £0.2m; total £950,000 | ledger; this chapter |
-| Tarnmoor GY2 ETR (invented, simplified) | 24.18% on PBT £100m | this chapter |
+| Calder GY2 (invented) | DTL £1.4m; DTA £0.2m; charge £0.2m; total £950,000 | invented (story); this chapter |
+| Tarnmoor GY2 ETR (invented, simplified) | 24.39% on PBT £100m | this chapter |
 
 ## Statutory and other references
 

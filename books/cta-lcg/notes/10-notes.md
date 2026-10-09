@@ -48,7 +48,7 @@
 15. **UK-to-UK TP exemption and connected-party R&D:** stated with "usually" and "subject to conditions (chapter 27)". Not separately verified in this chapter.
 16. **Tax tables:** the 2026 tables include RDEC 20%, ERIS 186%, 14.5% and the EU SME definition with R&D notes (exam-intel V). **Check the 2027 tables** (not yet published).
 17. **2028 grid:** R&D-intensive SMEs dropped (exam-intel V); irrelevant to 2027 sittings.
-18. **Calder instalments (WE 10.1 note):** uses the ledger's very large threshold £20m ÷ 9 = £2,222,222, which still carries ledger flag (bible §5.2 flag 6). Chapter 3 owns.
+18. **Calder instalments (WE 10.1 note):** uses the ledger's very large threshold £20m ÷ 9 = £2,222,222, which still carries ledger flag (bible §5.2 flag 6). Chapter 3 owns. **Resolved by R1** (and R2): Calder is large, not very large, in AP 1 April GY1–31 March GY2 (QIP divisor 1); 4 × £187,500 in months 7, 10, 13, 16; RDEC does not reduce QIPs (CIRD89870).
 
 **Bible §5.2 flags touched:** flag 11 (claim notification paragraphs; PAYE cap exemption; ERIS 186% cap; SME status on acquisition): **186% cap resolved (CIRD122000)**; **acquisition timing: HMRC's view, secondary-sourced, labelled**; **PAYE cap: partly resolved**; **claim notification paragraphs: identified (s 1142A; Sch 18 paras 83E, 83EA, 83EB)**. Flag 6 (QIP thresholds) touched only in a WE note; carried forward.
 
@@ -62,6 +62,8 @@
 - **Ledger "BSL GY2 ... [verify SME loss timing]"**: kept (large for the whole GY2) on HMRC's view (flag 2).
 - **Ledger "CAs £1.8m; R&D allowance on £0.5m test rig [within the £1.8m? writer decides]"**: decided **within** (£1.3m P&M allowances + £0.5m R&D allowance), consistent with tax-EBITDA £4.4m − CAs £1.8m = adjusted profit £2.6m.
 - None with the bible's rates.
+- Calder's instalment status in WE 10.1 (very large, months 3, 6, 9, 12): Resolved by continuity ruling R1 (large; 4 × £187,500, months 7, 10, 13, 16) and R2 (RDEC does not reduce QIPs).
+- TEL's GY2 CT £2,020,000: Resolved by continuity ruling R3 (now £2,226,250) and R7 (£600,000 surrender of step 2 and step 5 amounts adopted; net £1,626,250).
 
 ---
 
@@ -112,8 +114,26 @@
 | Calder CAs £1.8m composition | R&D allowance £500,000 + P&M allowances £1,300,000 |
 | Calder claim notification | Window to 30 September GY2; filed April GY2 |
 | BSL relevant PAYE and NIC | about £900,000 a year (GY1 and GY2); PAYE cap £2,720,000 (not restrictive) |
-| BSL GY2 RDEC use | £600,000: step 2 notional tax £114,000 (step 2 amount) and step 5 remainder £486,000 **both surrendered to TEL**; TEL pays BSL £600,000 (FA 2026 s 31 / s 1042N(5)–(6)); £600,000 of TEL's GY2 CT (£2,020,000) discharged by RDEC; group net benefit £450,000 |
+| BSL GY2 RDEC use | £600,000: step 2 notional tax £114,000 (step 2 amount) and step 5 remainder £486,000 **both surrendered to TEL**; TEL pays BSL £600,000 (FA 2026 s 31 / s 1042N(5)–(6)); £600,000 of TEL's GY2 CT (£2,226,250 after R3) discharged by RDEC; group net benefit £450,000 |
 | BSL GY1 ERIS | as ledger; unrelieved loss £7,210,000 (no other profits, no group) |
 | BSL acquisition AP | BSL kept its 31 December AP; not shortened at completion (missed planning point) |
 
 All figures re-run in Python (scratch `calc.py`, `calc2.py`); `ledger-check.py` re-run: 96 checks, 0 failures (no canonical number changed).
+
+---
+
+## Continuity fixes applied (9 October 2026, after `continuity-rulings.md`)
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R1, R2 | `10-research-and-development-reading.md` (WE 10.1 note) | "Calder is very large in this AP (augmented profits £3.0m > £20m ÷ 9 = £2,222,222: chapter 3), so it pays by instalments in months 3, 6, 9 and 12" → "Calder is large, not very large, in this AP (its associates are counted on 31 March GY1, when it had none: chapter 3), so it pays four instalments of £187,500 in months 7, 10, 13 and 16; the credit does not reduce them (CIRD89870)" |
+| R1, R2 | `10-research-and-development.txt` | Checked: no equivalent instalment sentence for Calder in the script; no change |
+| R3, R7 | `10-research-and-development-reading.md` (Surrender inside the group, story paragraph) | "whose GY2 CT is £2,020,000" → "whose GY2 CT is £2,226,250" |
+| R3, R7 | `10-research-and-development-reading.md` (WE 10.2 table, total row) | "TEL's GY2 CT of £2,020,000" → "TEL's GY2 CT of £2,226,250" |
+| R2 | `10-research-and-development-reading.md` (same paragraph) | added: "The surrendered credit discharges TEL's liability when Brackenwell's claim is made; TEL's instalments are still based on its full liability (our reading of HMRC's guidance at CIRD89870, which deals with a company's own credit)." |
+| R3, R7 | `10-research-and-development.txt` (step five paragraph) | "a corporation tax bill of two million and twenty thousand pounds" → "a corporation tax bill of two million, two hundred and twenty six thousand, two hundred and fifty pounds" |
+| R2 | `10-research-and-development.txt` (same paragraph) | added: "The surrendered credit discharges Tarnmoor Engineering's liability when Brackenwell's claim is made. Its instalments are still based on its full liability." |
+| R1, R3, R7 | `notes/10-notes.md` | flag 18 marked resolved; two "Resolved by continuity ruling" lines under Contradictions; ledger-additions row TEL CT £2,020,000 → £2,226,250 |
+| R16 | both editions | `grep -n -i -E "ledger|continuity|the plan for this book"`: no hits; no change |
+
+Recomputed in Python: £8,905,000 × 25% = £2,226,250; less £600,000 = £1,626,250; £750,000 ÷ 4 = £187,500. §11 scans on the script: 0 symbol/digit hits (heading colon only), 0 dash hits, 0 unspaced acronyms. Word counts after fixes: script 7,796; reading edition 7,705. `ledger-check.py`: 132 checks, 0 failures.
