@@ -102,7 +102,7 @@ The matrix below is owned by this chapter and applied throughout the book. Learn
 | **MNE group (Pillar Two)** | Consolidated group | All consolidated members | MTT/DTT; €750m threshold | F(No.2)A 2023 s 129 | 30 |
 | **CbC group** | Consolidated group | All consolidated members | Country-by-country reporting; TP records | SI 2016/237 reg 3; SI 2023/818 | 27 |
 | **TP participation** | One party directly or indirectly participates in the management, control or capital of the other (or common participation) | Any persons | Transfer pricing (Part 4) | TIOPA 2010 s 148 | 27 |
-| **CFC control** | Legal, economic or accounting control; > 50% investment rule | Non-UK resident companies controlled from the UK | CFC charge (with a separate 25% interest test for apportionment) | TIOPA 2010 ss 371RB–371RG | 26 |
+| **CFC control** | Legal or economic control (> 50% of proceeds, income or assets on a winding up); accounting control (with a 50% condition); the 40% joint-venture rule | Non-UK resident companies controlled from the UK | CFC charge (with a separate 25% interest test for apportionment) | TIOPA 2010 ss 371RB–371RE | 26 |
 | **"Group other than a small group"** | Companies Act 2006 small group tests | Members of medium and large groups | Enquiry window runs from the filing date | FA 1998 Sch 18 para 24 | 3 |
 
 ---

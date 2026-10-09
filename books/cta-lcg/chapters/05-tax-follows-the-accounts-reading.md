@@ -111,11 +111,11 @@ The loan relationship rules apply the same philosophy with a sharper edge (chapt
 | Same for derivative contracts | ss 595, 597 |
 | Any GAAP-compliant basis may normally be used | s 313(1) |
 | Connected companies relationships: amortised cost compulsory, even if the accounts fair value | s 349 |
-| Certain fair value movements on hedging derivatives left out | Disregard Regulations, SI 2004/3256 regs 6–9 |
+| Certain fair value movements on hedging derivatives left out, since 2015 only by election or in automatic cases | Disregard Regulations, SI 2004/3256 regs 6A–9 |
 
 An entry made directly in **equity** is not an amount recognised in profit or loss at all. *Union Castle Mail Steamship Co Ltd v HMRC* [2020] EWCA Civ 547, decided under the older derivative rules, concerned a scheme that tried to turn an equity entry on derivatives (the derecognition of FTSE put options, debited to equity) into a £39.1m tax debit; the Court of Appeal held the amount did not count, and the appeals (with Ladbrokes') were dismissed. Today's profit-or-loss focus makes that kind of scheme harder still.
 
-In our invented group, Tarnmoor Finance Ltd hedges its £550m listed notes with an interest rate swap designated as a fair value hedge: chapter 12 applies the Disregard Regulations to it.
+In our invented group, Tarnmoor Finance Ltd hedges its £550m listed notes with an interest rate swap designated as a fair value hedge. Since 2015 the Disregard Regulations' hedging rules (regs 7–9) apply only by election (reg 6A) or in the automatic cases HMRC lists; TFL has made no election and, on HMRC's guidance, because its notes are themselves taxed in line with the accounts, the swap simply follows profit or loss (chapter 12).
 
 ---
 
@@ -160,7 +160,7 @@ Now a moment from our invented case. On **15 June GY3**, Calder Valve Engineerin
 >
 > **Result: the whole £1,800,000 is deductible in Calder's 9-month AP to 31 December GY3.**
 
-Graham Pike (Calder's finance director, invented) asked whether the £500,000 still provided was deductible now. On HMRC's four tests, yes. Dan Hartley's package (statutory £9,012; holiday pay £3,800; ex gratia £60,000 of which £10,000 into his pension; PENP £25,000), told from his side in TKS chapter 9, is part of the redundancy line; chapter 7 deals with the employer's deduction for each element.
+Graham Pike (Calder's finance director, invented) asked whether the £500,000 still provided was deductible now. On HMRC's four tests, yes. Dan Hartley's package (statutory £9,012; ex gratia £60,000 of which £10,000 into his pension; PENP £25,000), told from his side in TKS chapter 9, is part of the redundancy line (his holiday pay of £3,800 is ordinary pay, outside the provision); chapter 7 deals with the employer's deduction for each element.
 
 > **Exam lens: provisions and impairments**
 > - **Grade:** impact of accounting standards **1**; Part 20 **1**.

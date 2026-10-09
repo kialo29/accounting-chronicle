@@ -95,7 +95,7 @@ Groups may file combined notifications and certificates (by the earliest deadlin
 
 No reduction for disclosure or cooperation. A reasonable excuse can defeat a penalty **except for an inaccurate certificate**.
 
-**Cases (as reported; full judgments not opened).** *Thathiah v HMRC* [2017] UKFTT 601 (TC): the first SAO penalty appeal; HMRC lost. The FTT held that HMRC had focused on whether the officer had a reasonable excuse rather than whether he had breached the main duty; errors, even material or repeated ones, do not automatically show a breach of the duty to take reasonable steps. *Castlelaw (No 628) Ltd and Irene Douglas v HMRC* (FTT, 2020, TC07540): penalties on the company and its SAO for **omitting a dormant company from the group notification** were upheld, though the tribunal said HMRC should have considered its discretion on the facts; HMRC's guidance was then updated to say penalties should not normally be charged where a dormant company is omitted and the risk is low.
+**Cases (as reported; full judgments not opened).** *Thathiah v HMRC* [2017] UKFTT 601 (TC): the first SAO penalty appeal; HMRC lost. The FTT held that HMRC had focused on whether the officer had a reasonable excuse rather than whether he had breached the main duty; errors, even material or repeated ones, do not automatically show a breach of the duty to take reasonable steps. *Castlelaw (No 628) Ltd and Douglas v HMRC* [2020] UKFTT 34 (TC) (17 January 2020): the £5,000 penalties on the company and its SAO for **omitting a dormant company from the group notification** were upheld (no reasonable excuse); the tribunal could not review HMRC's discretion but said HMRC should have considered it on the facts; HMRC's guidance (SAOG18850) was then updated to say penalties should not normally be charged where a dormant company is omitted and the risk is low.
 
 > **Worked example: Tarnmoor's SAO deadlines (invented case)**
 >
@@ -116,7 +116,7 @@ No reduction for disclosure or cooperation. A reasonable excuse can defeat a pen
 
 ## Publishing a tax strategy
 
-**FA 2016 Sch 19** (the tax strategy rules) requires large groups and companies to publish a tax strategy on the internet, free of charge, annually, for financial years beginning after **15 September 2016**.
+**FA 2016 Sch 19** (the tax strategy rules) requires large groups and companies to publish a tax strategy on the internet, free of charge, annually, for financial years beginning on or after **15 September 2016**, the day FA 2016 was passed (FA 2016 s 161).
 
 **Two routes in** (GOV.UK, "Large businesses: publish your tax strategy", updated 30 July 2024):
 
@@ -271,7 +271,7 @@ Risk factors include country, sector, transaction and business opportunity risk.
 
 ## Avoidance, evasion and the disclosure rules
 
-*The Living Law*, chapter 3, drew the line. **Evasion** is illegal and involves dishonesty. **Avoidance** uses the law to reduce tax, sometimes as Parliament never intended: lawful, but it often fails. Since *WT Ramsay Ltd v IRC* (HL, 1981) the courts read tax statutes purposively and view transactions realistically, confirmed by the Supreme Court in *RFC 2012 plc v Advocate General for Scotland* [2017] UKSC 45 (Rangers). The profession's **PCRT** standards forbid members to create, encourage or promote planning that is contrary to the clear intention of Parliament, or highly artificial or highly contrived and exploiting shortcomings in the legislation.
+*The Living Law*, chapter 3, drew the line. **Evasion** is illegal and involves dishonesty. **Avoidance** uses the law to reduce tax, sometimes as Parliament never intended: lawful, but it often fails. Since *WT Ramsay Ltd v IRC* (HL, 1981) the courts read tax statutes purposively and view transactions realistically, confirmed by the Supreme Court in *RFC 2012 plc v Advocate General for Scotland* [2017] UKSC 45 (Rangers). The profession's **PCRT** Standard for Tax Planning (from 1 March 2017) forbids members to create, encourage or promote tax planning arrangements that set out to achieve results contrary to the clear intention of Parliament, or that are highly artificial or highly contrived and seek to exploit shortcomings in the legislation.
 
 **DOTAS** (FA 2004 Part 7; s 306): arrangements are **notifiable** if they fall within a prescribed description (**hallmark**) and are expected to give a tax advantage as **a main benefit**.
 
@@ -282,7 +282,7 @@ Risk factors include country, sector, transaction and business opportunity risk.
 | Standardised tax products | "Plug and play" schemes with standardised documentation and transactions |
 | Others | Specified loss schemes, leasing arrangements, employment income and financial products |
 
-Case: *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC): the premium fee hallmark was not met where no premium fee was in fact paid (summary from secondary sources).
+Case: *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC) (29 April 2022): on HMRC's application the FTT held the arrangements notifiable, finding the premium fee hallmark met and AML a promoter. The confidentiality and premium fee hallmarks are hypothetical tests: the question is whether a promoter might reasonably be expected to want confidentiality or to obtain a premium fee, not whether one was actually paid (as also in *Curzon* and *Hyrax*) (headnote and secondary summaries).
 
 **Mechanics:** the promoter normally notifies within **5 days** of making the scheme available or of its first implementation; HMRC issues a **scheme reference number (SRN)**; the promoter passes it to clients; users report it on their returns. Where there is no promoter (in-house schemes), the user notifies.
 
@@ -298,9 +298,9 @@ Case: *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC): the premium fee hallmark 
 
 **Follower notice** (ss 204–218): conditions: an enquiry or appeal is open; the return or claim relies on particular arrangements; HMRC is of the opinion that a **final judicial ruling** in another case, on relevantly similar arrangements, would deny the advantage. The taxpayer must take **corrective action** (give up the advantage). If it does not and loses, **penalty 30%** of the denied advantage (s 208; **20%** under s 208A).
 
-*R (Haworth) v HMRC* [2021] UKSC 25 (2 July 2021): HMRC issued an FN (and an APN) relying on *HMRC v Smallwood* [2010] EWCA Civ 778 in a round-the-world trust scheme case. The Supreme Court unanimously dismissed HMRC's appeal against the quashing of the notice. As commentators summarise it, HMRC may give an FN only where it considers there is no real scope for a reasonable person to disagree that the earlier ruling denies the advantage; a higher threshold than the Court of Appeal's "substantial degree of confidence".
+*R (Haworth) v HMRC* [2021] UKSC 25 (2 July 2021): HMRC issued an FN (and an APN) relying on *HMRC v Smallwood* [2010] EWCA Civ 778 in a round-the-world trust scheme case. The Supreme Court unanimously dismissed HMRC's appeal against the quashing of the notice. As commentators summarise it, HMRC may give an FN only where it considers there is "no scope for a reasonable person to disagree" that the earlier ruling denies the advantage; a higher threshold than the Court of Appeal's "substantial degree of confidence".
 
-**Accelerated payment notice** (ss 219–229): conditions: an enquiry or appeal is open, and **either** an FN has been given, **or** the arrangements are DOTAS-notifiable, **or** a GAAR counteraction notice has been given. Pay within **90 days** (or **30 days** after HMRC determines any representations, if later) (s 223). No appeal against the notice; if the taxpayer later wins, the tax is repaid with interest.
+**Accelerated payment notice** (ss 219–229): conditions: an enquiry or appeal is open, and **either** an FN has been given, **or** the arrangements are DOTAS-notifiable, **or** a GAAR counteraction notice has been given. Pay within **90 days** (or **30 days** after HMRC determines any representations, if later) (s 223). There is **no right of appeal** against the notice: the taxpayer may make written **representations within 90 days** (s 222) that a condition was not met or the amount is wrong, and otherwise only judicial review is available (the courts expect representations to be made first: *R (Archer) v HMRC* [2019] EWCA Civ 1021). If the taxpayer later wins, the tax is repaid with interest.
 
 > **Going further:** for a large group, an APN turns a marketed scheme's saving from an interest-free loan into a cash cost from day one; an FN forces a quick decision between corrective action (amend and pay) and risking the 30% penalty against a ruling that, after *Haworth*, HMRC must believe is decisive.
 
@@ -312,7 +312,7 @@ Case: *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC): the premium fee hallmark 
 
 **Stage 1: tax arrangements** (s 207(1)): it would be reasonable to conclude that obtaining a tax advantage was **the main purpose, or one of the main purposes**.
 
-**Stage 2: abusive** (s 207(2)): entering into or carrying out the arrangements **cannot reasonably be regarded as a reasonable course of action** in relation to the relevant tax provisions, having regard to all the circumstances (**double reasonableness**), including whether the result is consistent with the provisions' principles and policy, whether the means involve **contrived or abnormal steps**, and whether the arrangements **exploit shortcomings** in the legislation. Statutory **indicators of abuse** include income or profits for tax purposes significantly less than the economic amount, and deductions or losses significantly greater; arrangements in line with **established practice HMRC had accepted** point the other way.
+**Stage 2: abusive** (s 207(2)): entering into or carrying out the arrangements **cannot reasonably be regarded as a reasonable course of action** in relation to the relevant tax provisions, having regard to all the circumstances (**double reasonableness**), including whether the result is consistent with the provisions' principles and policy, whether the means involve **contrived or abnormal steps**, and whether the arrangements **exploit shortcomings** in the legislation. Statutory **indicators of abuse** (s 207(4)): income, profits or gains for tax purposes significantly less than the economic amount; deductions or losses significantly greater; or a claim to repayment or crediting of tax (including foreign tax) that has not been, and is unlikely to be, paid; each counts **only if it is reasonable to assume that the result was not anticipated** when the relevant provisions were enacted. Arrangements in line with **established practice HMRC had accepted** point the other way (s 207(5)). The examples are not exhaustive.
 
 The GAAR connects to the rest of the architecture. A GAAR counteraction notice is one of the conditions for an APN, so a group facing the GAAR may also face paying the tax up front. The Advisory Panel is independent of HMRC; its opinion is not binding, but the tribunal must take it into account, and a published Panel opinion that an arrangement is abusive is a powerful signal for every user of similar arrangements.
 
@@ -407,7 +407,7 @@ Part Two turns from who answers for the tax to how the profit is measured. Chapt
 | SAO start | Financial years beginning on or after 21 July 2009 | FA 2009 Sch 46 |
 | SAO deadlines | End of accounts filing period: 6 months (public), 9 months (private) | Sch 46 paras 2–3 |
 | SAO penalties | £5,000 fixed each; no reduction; no reasonable excuse for an inaccurate certificate | Sch 46 paras 4–8 |
-| Tax strategy | > £200m / > £2bn (51% UK group) or €750m CbC; FYs beginning after 15 September 2016 | FA 2016 Sch 19 |
+| Tax strategy | > £200m / > £2bn (51% UK group) or €750m CbC; FYs beginning on or after 15 September 2016 | FA 2016 Sch 19 |
 | Tax strategy timing | Before the end of the FY; within 15 months of the previous | Sch 19 para 16(3) |
 | Tax strategy penalties | £7,500; £7,500 at 6 months; £7,500 per further month | Sch 19 para 18 onwards |
 | UTT | > £200m / > £2bn (CT-paying 51% group members); returns due on or after 1 April 2022 | FA 2022 Sch 17 paras 2–5, 33 |
@@ -417,7 +417,7 @@ Part Two turns from who answers for the tax to how the profit is measured. Chapt
 | DOTAS | Promoter notifies within 5 days (normally); penalties up to £600 a day (£5,000 a day after an order), up to £1m | FA 2004 Part 7; s 315 (FA 2026 s 216) |
 | Discovery (DOTAS failure) | 20 years | FA 1998 Sch 18 para 46 |
 | Follower notice penalty | 30% (20% under s 208A) | FA 2014 ss 208, 208A |
-| APN | Pay within 90 days (or 30 days after representations) | FA 2014 s 223 |
+| APN | Pay within 90 days (or 30 days after representations); no appeal, representations within 90 days, otherwise judicial review | FA 2014 ss 222, 223 |
 | GAAR | From 17 July 2013; double reasonableness; penalty 60% | FA 2013 ss 206–215, 212A |
 | Tarnmoor UTT (GY2) | £24m × 25% = £6m > £5m: notify by 31 December GY3 | invented case |
 
@@ -431,15 +431,16 @@ Part Two turns from who answers for the tax to how the profit is measured. Chapt
 - Criminal Finances Act 2017 Part 3, ss 44–52; SI 2017/739; GOV.UK "Corporate offences for failing to prevent criminal facilitation of tax evasion".
 - Finance Act 2004 Part 7 (s 306; s 315 as substituted by FA 2026 s 216); FA 2026 ss 159 onwards, 216–219.
 - Finance Act 1998 Sch 18 para 46.
-- Finance Act 2014 Part 4: ss 204–218 (follower notices; ss 208, 208A), ss 219–229 (APNs; s 223).
+- Finance Act 2014 Part 4: ss 204–218 (follower notices; ss 208, 208A), ss 219–229 (APNs; ss 222, 223).
 - Finance Act 2013 Part 5, ss 206–215 (s 207, s 209, s 211, s 212A).
 - HMRC Litigation and Settlement Strategy (LSS10000); ADR guidance (ADRG02600; GOV.UK "Tax disputes: alternative dispute resolution").
 
 **Cases**
-- *WT Ramsay Ltd v IRC* [1982] AC 300 (HL, decided 1981) (recap).
+- *WT Ramsay Ltd v IRC* [1982] AC 300 (HL, decided 12 March 1981) (recap).
 - *RFC 2012 plc v Advocate General for Scotland* [2017] UKSC 45 (recap).
 - *HMRC v Smallwood* [2010] EWCA Civ 778.
 - *Thathiah v HMRC* [2017] UKFTT 601 (TC) (as reported).
-- *Castlelaw (No 628) Ltd and Irene Douglas v HMRC* (FTT, 2020, TC07540) (as reported; neutral citation not verified).
+- *Castlelaw (No 628) Ltd and Douglas v HMRC* [2020] UKFTT 34 (TC) (TC07540; 17 January 2020).
 - *R (Haworth) v HMRC* [2021] UKSC 25.
-- *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC) (as reported).
+- *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC) (headnote).
+- *R (Archer) v HMRC* [2019] EWCA Civ 1021.

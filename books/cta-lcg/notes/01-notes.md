@@ -163,3 +163,10 @@ All figures recomputed in Python (scratch `lcg-fix-ch01-02/calc.py`): £1.5m ÷ 
 | R1 | notes | Flag 1 marked resolved by R1; Contradictions lines added for R1, R2, R3, R17 |
 
 Not changed: the "Computations" and "Contradictions … none with the ledger" paragraphs above record the original drafting position (TEL £2,427,500; divisor 9) and are superseded by this section.
+
+## Technical review fixes (review A)
+
+- Reading, group-definitions matrix, "CFC control" row: replaced the garbled "> 50% investment rule" with legal or economic control (> 50% of proceeds, income or assets), accounting control (50% condition) and the 40% joint-venture rule; authority now TIOPA 2010 ss 371RB–371RE (LS5 A2).
+- Script: "including Vallaria, Marrovia and the dormant Pumps company" → "including Tarnmoor Vallaria, Tarnmoor Capital and the dormant Pumps company".
+- Script: "Tarnmoor plc" → "Tarnmoor P L C" (first use declared "a public limited company").
+- No numbers changed; R1 and R3 figures re-checked in Python. Script 6,025 words.

@@ -18,7 +18,7 @@ Start with the Acts. As *The Living Law*, chapter 2, explained, statute is the l
 
 | Statute | Spoken name (audio) | What a larger company finds there |
 |---|---|---|
-| Corporation Tax Act 2009 (CTA 2009) | "the two thousand and nine Act" | The charge (s 5) and residence (s 14); UK PE profits (ss 19–21, as rewritten by FA 2026); the foreign branch exemption (Part 2 Ch 3A, ss 18A–18S); trading income (Part 3, including s 46); loan relationships (Part 5); derivative contracts (Part 7); intangible fixed assets (Part 8); R&D (Part 13) |
+| Corporation Tax Act 2009 (CTA 2009) | "the two thousand and nine Act" | The charge (s 2), its territorial scope (s 5) and residence (s 14); UK PE profits (ss 19–21, as rewritten by FA 2026); the foreign branch exemption (Part 2 Ch 3A, ss 18A–18S); trading income (Part 3, including s 46); loan relationships (Part 5); derivative contracts (Part 7); intangible fixed assets (Part 8); R&D (Part 13) |
 | Corporation Tax Act 2010 (CTA 2010) | "the twenty ten Act" | Losses (Part 4); group and consortium relief (Part 5); carried-forward losses and the restriction (Parts 5A, 7ZA); change in ownership (Part 14); Part 22; distributions (Part 23); definitions (Part 24), including control (s 1124), the PE definition (ss 1140A–1144) and GAAP (s 1127) |
 | Taxation (International and Other Provisions) Act 2010 (TIOPA 2010) | "the International Act" | Treaties and DTR (Part 2; Orders in Council under s 2); transfer pricing (Part 4); UTPP (new Part 4A, ss 217A–217T, FA 2026); APAs (Part 5); hybrids (Part 6A); CFCs (Part 9A); CIR (Part 10, Sch 7A) |
 | Taxation of Chargeable Gains Act 1992 (TCGA 1992) | "the Gains Act" | Company gains, groups (ss 171–181), share reorganisations, Sch 7AC SSE |

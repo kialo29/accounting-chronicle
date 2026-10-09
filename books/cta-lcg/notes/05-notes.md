@@ -123,3 +123,10 @@ R14 (Calder's very large instalments for AP 1 April GY2–31 March GY3) and R15 
 - Change of accounting standard Exam lens: "(exam-intel synthesis)" deleted.
 - Foreign currency Exam lens: "...“exchange gains and losses” (exam-intel §5)." → "...“exchange gains and losses”."
 - Currency status line: "The full current text was not opened (see notes)." → "The full current text was not opened."
+
+## Technical review fixes (review A)
+
+- **TFL swap (ERROR, R6):** reading "chapter 12 applies the Disregard Regulations to it" and the script's equivalent replaced: since 2015 regs 7–9 apply only by election (reg 6A) or in HMRC's automatic cases; TFL has made no election and, on HMRC's guidance, its swap follows profit or loss (chapter 12). Table row qualified ("since 2015 only by election or in automatic cases"; regs 6A–9).
+- **Dan's package (R15):** reading no longer lists the £3,800 holiday pay as part of the redundancy line; it is ordinary pay outside the provision. Resolved by continuity ruling R15.
+- Script: "F R S" declared ("the Financial Reporting Standards, or F R S"); "Tarnmoor plc" → "Tarnmoor P L C".
+- Script 6,678 words.

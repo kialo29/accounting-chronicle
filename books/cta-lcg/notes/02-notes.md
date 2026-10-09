@@ -107,3 +107,9 @@ Brief §11 scans on the script: clean (only the heading colon). Script unchanged
 | R16 | reading, s 164A worked example | "Step 3: conditions (s 164A(2) and (5), as summarised in law sheet 5 and INTM414320)" → "Step 3: conditions (s 164A(2) and (5); INTM414320)" |
 | R1 | reading, s 164A conditions table | "(with 9 associated companies in GY1 the marginal relief upper limit is about £27,778 per company)" → "(with a marginal relief divisor of 9 in GY1 the upper limit is about £27,778 per company)" |
 | R16 | script | Scanned: no production words; no change |
+
+## Technical review fixes (review A)
+
+- Reading, statute map, CTA 2009 row: "The charge (s 5)" → "The charge (s 2), its territorial scope (s 5)".
+- Script: "U K" declared at first use ("the law of the United Kingdom, the U K,").
+- Still open: whether s 1140A's OECD reference is dynamic (text already labels it unconfirmed). Script 5,896 words.

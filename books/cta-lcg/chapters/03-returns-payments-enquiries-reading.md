@@ -370,7 +370,7 @@ Returns and instalments are the spine of the calendar, but a large group's year 
 
 ## How the examiner tests it.
 
-Administration is a regular 10–15 mark question or the tail of a computation (exam-intel: compliance and governance in N23 Q5, M25 Q3, M25 Q6, M24 Q3(c), N24 Q5, N25 Q4(a), M26 Q1(a), N23 Q1(b)).
+Administration is a regular 10–15 mark question or the tail of a computation (compliance and governance appeared in N23 Q5, M25 Q3, M25 Q6, M24 Q3(c), N24 Q5, N25 Q4(a), M26 Q1(a), N23 Q1(b)).
 
 - **M25 Q2** (15 marks, 10/5): CT computation then very large instalments with changing forecasts: badly done (no truing up; very large rules unknown).
 - **M25 Q6** (10 marks, 5/5): enquiry windows for a large-group company with a 15-month POA; discovery for careless behaviour: poor (small-group limits applied; long period missed).

@@ -119,3 +119,10 @@ Law sheet V items restated without new search: TMA s 59F (GPA: 51% group; UK nom
 | R3 | `notes/03-notes.md`, Ledger additions item 6 | 4 × £405,000 = £1,620,000 against £2,020,000 → 4 × £456,562.50 = £1,826,250 against £2,226,250 |
 | R2, R14 | — | No change required (chapter 3 already canonical). |
 
+
+## Technical review fixes (review A)
+
+- **Script, "Counting the family" (ERROR):** the paragraph presented divisor 9 (£166,667 / £2,222,222) as the GY1 instalment thresholds, contradicting R1 and the following paragraphs. Reworded: divisor 9 applies to marginal relief at once; for instalments it arrives in GY2 (GY1 QIP divisor 8).
+- Script: "enhanced R and D intensive support" → "enhanced research and development intensive support".
+- Reading: removed the production word "exam-intel" from "How the examiner tests it" (R16).
+- Verified by search: QIP interest 6.25% / 3.50% from 29 December 2025. Script 7,093 words.

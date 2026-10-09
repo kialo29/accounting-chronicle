@@ -93,3 +93,7 @@ None. No Tarnmoor numbers used or created; Tarnmoor named once as invented. `led
 No ruling item touches the prologue. R16 clean-up of production references in `00-prologue-reading.md`, Status note (script had none; no numbers changed):
 - "practitioner commentaries (listed in the notes)." → "practitioner commentaries."
 - "were checked against the judgment in the law sheets (9 October 2026)." → "were checked against the judgment (9 October 2026)."
+
+## Technical review fixes (review A)
+
+- Script: "J T I came on..." → "J T I Acquisition Company came on..." (acronym declared by the full case name). No law or number changed; review confirmed the *BlackRock*, *Kwik-Fit* and *JTI* facts and dates. See `review/review-A.md`.

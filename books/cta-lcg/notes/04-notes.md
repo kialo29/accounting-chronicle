@@ -121,3 +121,16 @@ R10: chapter already consistent; no change. R16 clean-up of production reference
 - UTT Exam lens: "(law sheet 1 trap 27)" deleted. CCO Exam lens: "(exam-intel)" deleted.
 - DOTAS penalties: "(law sheet 1: Royal Assent inferred)" → "(commencement on Royal Assent is inferred)".
 - FA 2026 Part 6: "(Commencement dates not verified in this chapter's research: see notes.)" → "(Commencement dates not verified.)".
+
+## Technical review fixes (review A)
+
+Memory points verified (see `review/review-A.md` for sources): *Ramsay* decided 12 March 1981 ([1982] AC 300): correct; APN "no appeal": correct but incomplete; GAAR indicators: incomplete; PCRT wording: close, tightened. Changes, both editions unless stated:
+- **AML Tax (ERROR):** the FTT ([2022] UKFTT 174 (TC), 29 April 2022) found the premium fee hallmark **met** and the arrangements notifiable; the text had the outcome reversed. Now states the outcome and the hypothetical test (whether a promoter might reasonably be expected to obtain a premium fee, not whether one was paid).
+- **GAAR indicators (s 207(4)–(5)):** added the third indicator (claim to repayment or credit of tax not paid and unlikely to be paid) and the qualifier that each counts only if the result was not anticipated when the provisions were enacted.
+- **APN:** added written representations within 90 days (FA 2014 s 222) and judicial review as the only court route (*R (Archer) v HMRC* [2019] EWCA Civ 1021, reading edition); key rules row and references updated.
+- **Castlelaw:** citation now [2020] UKFTT 34 (TC) (17 January 2020); outcome wording refined (penalties upheld, no reasonable excuse; tribunal could not review discretion; SAOG18850 updated). Reading only (script unchanged in substance).
+- **Tax strategy commencement:** "beginning after" → "beginning on or after 15 September 2016" (FA 2016 s 161: the day the Act was passed).
+- ***Haworth*:** "no scope for a reasonable person to disagree" (the court's words).
+- **PCRT:** "set out to achieve results contrary to the clear intention of Parliament ... seek to exploit shortcomings"; reading adds the 1 March 2017 start.
+- Script: "P A Y E" → "pay as you earn". Reading references: *Ramsay* full date.
+- Script 7,674 words (ceiling 7,700).
