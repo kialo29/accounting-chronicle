@@ -37,7 +37,7 @@ Yet the newest rules lean the other way:
 | Presence: residence | Incorporation (CTA 2009 s 14) or central management and control; treaty tie-breaker (s 18); exit charge (TCGA s 185) | TIL migrates 30 June GY4: CT £850,000, plan £525,000 in 6 × £87,500 | 22 |
 | Presence: PE | Fixed place or dependent agent; for chargeable periods beginning on or after 1 January 2026, "principal role" in concluding contracts (CTA 2010 s 1141, FA 2026 Sch 7) | TVS: domestic PE in GY4, no treaty PE | 23 |
 | Sharing | Treaties allocate and limit; DTR credit capped at UK tax on the income | Calder's Vallarian project: £180,000 credited; top-up £45,000 | 24 |
-| Exemption | Branch exemption by election (CTA 2009 s 18A) | Calder did not elect | 25 |
+| Exemption | Branch exemption by election (CTA 2009 s 18A) | Calder did not elect; Ridgeway Cycles elects for its Dublin branch | 25, 31 |
 | Drift: TP | Arm's length (TIOPA 2010 Part 4) | Know-how re-priced £6.0m → £8.0m; MAP relief in Vallaria | 27 |
 | Drift: CFC | Only profits diverted from the UK (Part 9A) | TPLC's charge on TCM: £204,000 (GY5) | 26 |
 | Drift: interest | Net interest capped at 30% of tax-EBITDA, subject to the debt cap (Part 10) | Disallowed £2.21m (GY1), £2.30m (GY2) | 28 |
@@ -69,7 +69,7 @@ The law gives everyone a part:
 | Company (criminal) | Failure to prevent facilitation of tax evasion; defence of reasonable prevention procedures | Criminal Finances Act 2017 ss 45–46 | 4 |
 | Tax function | The calendar: QIPs, returns, CIR returns, TP files, CbC, Pillar Two registration and returns | Various | 3, 27, 28, 30 |
 
-The adviser's part is the one the CIOT names: identify the issues, explain them precisely, coordinate the specialists. Chapter 31 showed what that means. One modest acquisition, of Ridgeway from Jess Hartley, touched stamp duty, instalments, transfer pricing, the SAO, the CIR, Pillar Two, R&D, deferred tax and a foreign branch. None of those points was hard alone. The skill was to find them all.
+The adviser's part is the one the CIOT names: identify the issues, explain them precisely, coordinate the specialists. Chapter 31 showed what that means. One modest acquisition, of Ridgeway from Jess Hartley, touched stamp duty, instalments, transfer pricing, the SAO, the CIR, Pillar Two, R&D, deferred tax, a retention bonus and a foreign branch. None of those points was hard alone. The skill was to find them all, and then to answer the one question Jess had left open: Ridgeway Cycles elects for the branch exemption.
 
 ## The debates, revisited.
 
@@ -99,7 +99,7 @@ The book has tried to give each side at its strongest, and to say where the law 
 | Withholding on yearly interest | Savings basic rate, 22% for 2027/28 (20% for 2026/27) | 2027/28 | **Enacted, coming next** (FA 2026 ss 5–6) |
 | TP guarantees | New rules reach all borrowing for periods commencing on or after 1 January 2028 (earlier by election) | 1 January 2028 | **Enacted, coming next** (FA 2026 Sch 6 para 12) |
 | Draft Finance Bill 2026-27 | Draft clauses published; technical consultation closed 7 September 2026 | 13 July 2026 | **Proposed, not law** |
-| – Foreign branch exemption | Compulsory for APs beginning on or after 1 January 2027; opening negative amount rules replaced by restrictions on carrying forward branch losses; anti-avoidance from 13 July 2026 | — | **Proposed, not law** (chapter 25) |
+| – Foreign branch exemption | Compulsory for APs beginning on or after 1 January 2027; opening negative amount rules replaced by restrictions on carrying forward branch losses; anti-avoidance from 13 July 2026. Ridgeway's election (chapter 31) would become a rule rather than a choice, with the same result on its facts | — | **Proposed, not law** (chapters 25, 31) |
 | – Pillar Two side-by-side package | Implementation, with further MTT/DTT amendments | — | **Proposed, not law** (chapter 30) |
 | ICTS | Reporting of international controlled transactions under FA 2026 s 48; consultation 16 June–31 July 2026; intended for APs beginning on or after 1 January 2027 | — | Power enacted; **regulations not made** (chapter 27) |
 | Distributions consultation | Distributions, repayments of capital, demergers; 23 June–14 September 2026 | — | **Proposed, not law** (chapter 19) |

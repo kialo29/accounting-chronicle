@@ -2,7 +2,7 @@
 
 **Interpretation and assumptions.** Capstone application chapter: one share acquisition (TPLC buys RH from Jess for £4.5m on 1 April of the Ridgeway year) walked "floor by floor" through rules owned by earlier chapters (3, 6, 7, 8, 10, 13–15, 17, 18, 20–22, 25–28, 30), with the multi-issue method, the misconception "a small acquisition is a small tax job", the Dublin branch decision (s 18A election v s 140 incorporation v transfer to TIL) and a recommendation; no rule taught in depth. FY2026 law throughout. TKS recap kept to what the bible §1B / §4.1, the ledger §1 and the plan §5 brief record (Wharfe Wheels purchase and sale, Skipton unit, Dublin branch Years 1–4, base cost £162,000, the hypothetical £4m offer). RC's APs are labelled AP1–AP3 and "RY" (the Ridgeway year) in the reading edition; no calendar year attached.
 
-Files: `chapters/31-the-ridgeway-deal.txt` (**6,980 words** by `wc -w`; target 7,000 ± 10%), `chapters/31-the-ridgeway-deal-reading.md` (**8,688 words**). 14 sections plus Part and chapter headings. Script section lengths: 338–817 words; four sit a little under the 400-word guide (opening "Completion day" 338; "The group accounts" 395; "Keeping Jess" 380; "How the examiner would mark it" 366): accepted for a consolidation chapter. "What to take away" is 646 words (guide 300–500), because it recaps every floor.
+Files: `chapters/31-the-ridgeway-deal.txt` (**6,984 words** by `wc -w` after review G; target 7,000 ± 10%), `chapters/31-the-ridgeway-deal-reading.md` (**8,688 words**). 14 sections plus Part and chapter headings. Script section lengths: 338–817 words; four sit a little under the 400-word guide (opening "Completion day" 338; "The group accounts" 395; "Keeping Jess" 380; "How the examiner would mark it" 366): accepted for a consolidation chapter. "What to take away" was 646 words; review G trimmed it to about 500 words of recap (597 with the closing answer and the turn to chapter 32), keeping every figure.
 
 ## Sources by section
 
@@ -95,3 +95,15 @@ New story facts fixed by this chapter (for `calder-ledger.md` §8, "Ridgeway yea
 - **Retention bonus**: accrued evenly (£30,000 in AP1 and AP2); paid 1 April RY+2; deductible £30,000 in AP2 and £30,000 in AP3 (s 1288); AP1 short-term timing difference DTA £7,500. (Ch 31)
 - **Jess's gain** (not examined): £4,338,000 before costs. (Ch 31)
 - **Not story** (labelled alternatives): the Irish subsidiary under s 140 and its CFC analysis; the transfer to TIL.
+
+## Technical review fixes (review G)
+
+Every applied rule was re-checked against the owning chapter's reading edition (3, 6, 7, 8, 11, 17, 20, 21, 25, 26, 27, 28) and rulings R1, R9–R11, R20–R22, R25, R29; every number recomputed in Python (scratch `reviewG/calc.py`): all correct except as below.
+
+- **AIA timing (LIKELY, both editions):** the 31 December RY periods end **three** months before RC's AP1 ends (31 March RY+1), not nine: "which ended nine months earlier" → "three months earlier (nine months into RC's AP1)". The same slip is in R11's guidance (reported to the orchestrator).
+- **Intangibles on incorporating the branch (LIKELY, both editions):** added the parallel Part 8 postponement claim for a transfer of a non-UK trade, CTA 2009 ss 827–830 (all assets or all but cash; shares or securities; ≥ 25%; genuine commercial purpose test, s 831; clawback on disposal of the shares or realisation within 6 years). Source: legislation.gov.uk s 827 and CIRD42050 (search extract). WE 31.7, key rules row, references and "What to take away" updated.
+- **Degrouping (MINOR, both editions):** TCGA s 170(10) now leads (RH's group becomes the same group as Tarnmoor's, so no company leaves a group); s 179(2) kept as the fallback.
+- **CFC exempt period (MINOR, reading):** "not relevant" now reasoned: a newly formed company meets the initial condition only if it already carried on a business or is an acquisition vehicle (INTM224200, search extract).
+- **WE 31.3 AP3 payment cell (MINOR, reading):** garbled "3/12 × CT ≈ £100,000 = 4 × £25,000" rewritten.
+- **Script "What to take away"** trimmed from 646 to about 500 words of recap; "The Dublin branch should elect" → "Ridgeway Cycles should elect" (the company elects).
+- Flag 1 (reg 3(5) text): still not seen; COM30110 (search extract) confirms the test (profits ≤ £10m, divided; not large in the preceding 12 months) but not the grace-year counting point, which stays labelled as HMRC's and practitioners' reading. Flag 4 (Ireland and SI 2012/3024): search again inconclusive; label kept.

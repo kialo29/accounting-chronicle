@@ -346,7 +346,7 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Enquiries | Large-group windows; a long period of account shifts dates | M25 Q6, N25 Q4 | 3 |
 | Tax strategy, SAO | Use the accounts for the year ending in the parent's FY; SAO counts **UK-incorporated** companies only | M25 Q3, N23 Q5 | 4 |
 | CIR | Interest TP adjustments reduce ANTIE, not tax-EBITDA; adjust both for a QIC; no group ratio when told not to | M26 Q1 | 28 |
-| DTR | Royalties from different payers can be one source with credits aggregated | N25 Q1 | 24 |
+| DTR | Royalties for one asset paid from several jurisdictions are one source, credits aggregated (TIOPA 2010 s 47) | N25 Q1 | 24 |
 | Migration | Land acquired after 5 April 2019 automatically postponed; payment plans | N25 Q3 | 22 |
 | Branches | Incorporation gain postponement; election irrevocable, covers all PEs, timing for losses; anti-fragmentation | M23 Q2, N25 Q2, M26 Q5 | 23, 25 |
 | DPT | Do not raise it for loans; now repealed (UTPP, awareness) | M23 Q3, N23 Q1, N24 Q5 | 30 |
@@ -359,7 +359,7 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Earn-out receipts after an SSE sale | Later receipts are disposals of the earn-out right (*Marren v Ingles*): chargeable on the generally accepted view, not settled law | book | 18, 20 |
 | Blocked foreign trade receipts | A trading receipt that cannot be remitted is relieved under CTA 2009 ss 173–175, not Part 18 (which is for other foreign income) | book | 25 |
 
-On DTR the N25 examiners put it starkly: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." On CFCs, after M26 Q5 they criticised "not mentioning obvious points (e.g. how CFC legislation works)": two lines on how the charge works and who pays it are almost free marks.
+On DTR the N25 examiners put it starkly: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." The statutory basis is **TIOPA 2010 s 47**: where double taxation arrangements apply, royalties for one asset paid from more than one foreign jurisdiction are treated as income from a single asset (chapter 24; N25 Q1 itself involved no treaty, and the examiners took the same approach under unilateral relief). On CFCs, after M26 Q5 they criticised "not mentioning obvious points (e.g. how CFC legislation works)": two lines on how the charge works and who pays it are almost free marks.
 
 > **Exam lens: compliance questions**
 > - **Frequency:** compliance and governance appeared eight times M23–M26 (N23 Q5, M25 Q3, M25 Q6, M24 Q3(c), N24 Q5, N25 Q4(a), M26 Q1(a), N23 Q1(b)): a 10–15 mark "admin" question is very common.

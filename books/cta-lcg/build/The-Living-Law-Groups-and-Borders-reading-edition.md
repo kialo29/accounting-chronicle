@@ -242,7 +242,7 @@ Most chapters follow one group of companies, **Tarnmoor**. **Everything about Ta
 
 **Tarnmoor plc** is a listed engineering group with its head office in Leeds and no controlling shareholder. It was built to match the examiner's description of a typical scenario, and to be large enough to switch on every regime the paper tests (GY1 consolidated revenue £1,180m). Its main trading company, Tarnmoor Engineering, makes industrial valves, actuators and pumps. Around it sit a property company, a treasury company, a joint venture (Helmside), overseas subsidiaries in Vallaria, Marrovia and Ireland, and the companies it buys and sells as the story runs.
 
-The story begins in chapter 1, when Tarnmoor buys **Calder Valve Engineering** for **£32m**. If you have read *The Living Law*, you know Calder: the invented valve maker where **Dan Hartley** worked as an engineer, and his story continues here. So does his sister **Jess**'s. Some years after the group's story begins, Tarnmoor buys her business, Ridgeway, and chapter 31 tells that deal.
+The story begins in chapter 1, when Tarnmoor buys **Calder Valve Engineering** for **£32m**. If you have read *The Living Law*, you know Calder: the invented valve maker where **Dan Hartley** worked as an engineer, and his story continues here. So does his sister **Jess**'s. Some years after the rest of the group's story, Tarnmoor buys her business, Ridgeway, and chapter 31 tells that deal.
 
 **Group Years.** Tarnmoor lives in Group Years (GY1, GY2, ...), not calendar years. Group Years are Tarnmoor's accounting years to 31 December; GY1 is the year in which Calder joins. No calendar year is ever attached to a Tarnmoor event, and **every Tarnmoor computation applies FY2026 law**, whichever Group Year the story has reached. Real rules start on real dates (for example, "accounting periods beginning on or after 1 January 2026"). Where a chapter needs to teach a real commencement date, it uses a **labelled example with real dates**, outside the story. That keeps the story simple and the dates honest.
 
@@ -13767,7 +13767,7 @@ The third floor is where most candidates lose marks. **Associated companies** (c
 > | Grace limit £10m ÷ divisor (£) | 10,000,000 | **909,091** | 909,091 |
 > | Augmented profits (forecast) (£) | 600,000 | 400,000 (after the election) | 400,000 |
 > | Large? | **No** | **Yes**, but **grace**: not large in the previous 12 months and profits ≤ £909,091 (reg 3(5)) | **Yes**: large in AP2, and the grace year counts as a year of being large |
-> | Payment | 9 months and 1 day after the AP: **1 January RY+2** | 1 January RY+3 | **QIPs**: 3/12 × CT ≈ £100,000 = **4 × £25,000** in months 7, 10, 13, 16 (14 October RY+2; 14 January, 14 April, 14 July RY+3) |
+> | Payment | 9 months and 1 day after the AP: **1 January RY+2** | 1 January RY+3 | **QIPs** on forecast CT of about £100,000: each 3/12 of it, **4 × £25,000**, in months 7, 10, 13, 16 (14 October RY+2; 14 January, 14 April, 14 July RY+3) |
 >
 > The marginal relief divisor changes nothing in practice: RC's profits were already far above the upper limit, so it already paid at 25%. (Checked in Python: 1,500,000/11 = 136,363.6; 20,000,000/11 = 1,818,181.8; 10,000,000/11 = 909,090.9.)
 
@@ -13787,7 +13787,7 @@ The third floor is where most candidates lose marks. **Associated companies** (c
 
 - **Trading losses**: none. The Dublin losses were relieved long ago against RC's own profits. CTA 2010 Part 14 (chapter 14's Brackenwell analysis) has nothing to restrict.
 - **Capital losses**: none, so the pre-entry loss rules (TCGA 1992 Sch 7A; chapter 17) are silent.
-- **Degrouping**: if RH and RC had moved an asset between them at no gain, no loss within the last six years, s 179 would be the worry. It is not: they leave Jess's ownership **together**, RC remaining RH's subsidiary throughout (the "associated companies leaving together" exception, s 179(2), Condition B), and RH's group becomes part of Tarnmoor's (s 170(10)). Chapter 17.
+- **Degrouping**: if RH and RC had moved an asset between them at no gain, no loss within the last six years, s 179 would be the worry. It is not. When the principal company of a group (RH) becomes a member of another group, the two groups are treated as the same (TCGA 1992 s 170(10)), so neither company leaves a group at all. Even if one did, RH and RC leave Jess's ownership **together**, RC remaining RH's subsidiary throughout (the "associated companies leaving together" exception, s 179(2); chapter 17).
 
 **Group regimes switch on** (floor 4).
 
@@ -13795,7 +13795,7 @@ The third floor is where most candidates lose marks. **Associated companies** (c
 |---|---|---|
 | Group relief | RC and RH join TPLC's group relief group on completion (1 April RY); no relief before then. RC's AP (to 31 March) and the 31 December companies' APs overlap only partly: relief is limited by the **overlapping period** on each side. The same arrangements analysis as chapter 15 applies to the heads of terms with Jess: group relief with Tarnmoor companies starts only on completion | CTA 2010 ss 139–142, 154 (15) |
 | Deductions allowance | RH and RC countersign TPLC's **standing nomination**; RC has no losses, so nothing turns on it now, but a company left out gets no allowance | CTA 2010 ss 269ZR ff (14) |
-| AIA | One £1m for all members' chargeable periods **ending in the same financial year to 31 March** (parent test at the end of each period). RC's AP1 ends 31 March RY+1: it shares the allowance with the 31 December RY periods of Tarnmoor's companies, which ended nine months earlier. RC gets whatever the group allocates | CAA 2001 s 51C; Interpretation Act 1978 (8) |
+| AIA | One £1m for all members' chargeable periods **ending in the same financial year to 31 March** (parent test at the end of each period). RC's AP1 ends 31 March RY+1: it shares the allowance with the 31 December RY periods of Tarnmoor's companies, which ended three months earlier (nine months into RC's AP1). RC gets whatever the group allocates | CAA 2001 s 51C; Interpretation Act 1978 (8) |
 | R&D | RC is now linked to a large enterprise: not an SME for any purpose. Any claim is under the merged scheme's **expenditure credit** (20%, taxable, set against the liability); ERIS is out of reach; HMRC's view is that a company taken over is large for the whole AP of the takeover (here the AP begins on completion anyway) | CTA 2009 Part 13; CIRD92000 (10) |
 
 > **Exam lens: target history and group regimes**
@@ -13900,14 +13900,14 @@ The election never costs money on these facts while the branch is profitable; it
 | Transferor holds **≥ 25%** of the ordinary share capital | 100% |
 | Result | Net gain postponed × securities ÷ total consideration; crystallises if RC disposes of the shares, or the subsidiary disposes of the assets within 6 years |
 
-Postponement is all it gives. The branch's goodwill and customer relationships are intangible fixed assets, dealt with under CTA 2009 Part 8 (chapter 11), not the gains rules; its plant leaves RC's pools with balancing adjustments (chapter 8).
+Postponement is all it gives. The branch's goodwill and customer relationships are intangible fixed assets, dealt with under CTA 2009 Part 8 (chapter 11), not the gains rules. Part 8 has its own **parallel postponement claim** for the transfer of a non-UK trade (CTA 2009 ss 827–830): the transfer must include all the trade's assets, or all except cash; the consideration must include shares or securities in the transferee; the transferor must then hold at least 25% of its ordinary share capital; and the transfer must meet a genuine commercial purpose test (s 831). The postponed credit returns if RC disposes of the shares, or if the subsidiary realises the assets within 6 years (s 829). The branch's plant leaves RC's pools with balancing adjustments (chapter 8).
 
 > **Worked example 31.6: the new subsidiary through the CFC order of attack (labelled alternative, not story)**
 >
 > | Step | Analysis | Result |
 > |---|---|---|
 > | CFC? | Non-UK resident company controlled by UK persons (RC, TPLC) | **Yes** |
-> | Exempt period | Not relevant (a new company, not a newly acquired one) | — |
+> | Exempt period | Not available: a newly formed company meets the initial condition only if it carried on a business before, or is an acquisition vehicle (HMRC's description, INTM224200) | — |
 > | Excluded territories (Ch 11) | Ireland's place on the SI 2012/3024 list was **not confirmed** for this book (secondary sources report Ireland was removed from the pre-2013 list in 2002): do not rely on it | Not relied on |
 > | Low profits (Ch 12) | Profits about £200,000 ≤ £500,000; non-trading income ≤ £50,000 | **Exempt: stop** |
 > | (For completeness) Low profit margin (Ch 13) | A retailer's margin over relevant operating expenditure is likely above 10% | Not needed |
@@ -13932,7 +13932,7 @@ So the subsidiary reaches the **same 12.5%** as the elected branch by a longer r
 > | | (1) Elect | (2) Irish subsidiary (s 140) | (3) Transfer to TIL |
 > |---|---|---|---|
 > | Rate on Dublin profits | 12.5% (Irish only) | 12.5% (Irish only) | 12.5% |
-> | One-off UK tax | None | Gains postponed; IFA credits and CA balancing adjustments | Gains and IFA credits now |
+> | One-off UK tax | None | Gains (s 140) and IFA credits (s 827) postponed on a claim; CA balancing adjustments | Gains and IFA credits now |
 > | Annual saving v today | £25,000 (less interactions: £5,000–£25,000 net) | Similar, less running costs | Similar, after an up-front charge |
 > | Future branch losses of RC | No UK relief, anywhere | RC unaffected; subsidiary's losses stay in Ireland | — |
 > | Extra compliance | Attribution file | New company; CMC; TP; CFC review | TP; CFC position of TIL |
@@ -14051,7 +14051,7 @@ Set this deal as a **20-mark** question: about **42 minutes** at roughly 2.1 min
 - **RC's associates**: 10 (divisor 11) for marginal relief at once; for QIPs counted the day before each AP: **divisor 1 in AP1** (not large), **11 in AP2** (large at £136,364, but **grace**: profits ≤ £909,091 and not large before), **QIPs from AP3** (about 4 × £25,000).
 - **Nothing to restrict**: no losses, no capital losses, no degrouping charge.
 - **Switched on at completion**: group relief (overlapping periods), the deductions allowance nomination, a share of the single AIA, RDEC only; **TP** (SME exemption lost; s 164A for UK-to-UK dealings); CbC and master file; UTT; CCO procedures reaching Dublin; CIR worldwide group and reporting company authorisation; Pillar Two. **SAO from AP2.**
-- **Dublin**: elect under **s 18A** during AP1, effective from **1 April RY+1**; **no opening negative amount** (losses £110,000 matched by Years 3–4 profits £320,000); UK CT **£125,000 → £100,000**, saving **up to £25,000** a year, perhaps as little as **£5,000** after lost interest capacity (up to £15,000) and simplified Pillar Two top-up (up to £5,000). Irrevocable after the relevant day; covers all future PEs of RC. **s 140** incorporation only postpones gains and creates a CFC (low profits exemption today); **transfer to TIL** fails the 25% test and s 171. The compulsory exemption in the draft Finance Bill 2026-27 is **proposed, not law**.
+- **Dublin**: elect under **s 18A** during AP1, effective from **1 April RY+1**; **no opening negative amount** (losses £110,000 matched by Years 3–4 profits £320,000); UK CT **£125,000 → £100,000**, saving **up to £25,000** a year, perhaps as little as **£5,000** after lost interest capacity (up to £15,000) and simplified Pillar Two top-up (up to £5,000). Irrevocable after the relevant day; covers all future PEs of RC. **s 140** incorporation (with the parallel intangibles claim, CTA 2009 s 827) only postpones gains and creates a CFC (low profits exemption today); **transfer to TIL** fails the 25% test and s 171. The compulsory exemption in the draft Finance Bill 2026-27 is **proposed, not law**.
 - **Group accounts**: fair value uplift **£0.8m** → **DTL £200,000**, debited to goodwill; none on goodwill.
 - **Jess**: MD for two years at £90,000; retention bonus **£60,000** paid by RC on 1 April RY+2: **£30,000 deductible in AP2, £30,000 in AP3** (s 1288).
 
@@ -14074,7 +14074,7 @@ One chapter remains. Chapter 32 turns from the law to the craft: how to put all 
 | Branch exemption | All PEs; from the next AP; irrevocable after the relevant day; no credit on exempt profits | CTA 2009 ss 18A, 18F; TIOPA 2010 s 18(3A) |
 | Opening negative amount | 6-year look-back; unmatched net PE losses; RC: nil | CTA 2009 ss 18J–18N; INTM284020 |
 | RC CT with/without election | £100,000 / £125,000; saving £25,000 (net £5,000–£25,000 after CIR and Pillar Two) | invented (story) |
-| s 140 | PE trade to non-resident company for securities; ≥ 25%; postponement; 6 years | TCGA 1992 s 140 |
+| s 140 | PE trade to non-resident company for securities; ≥ 25%; postponement; 6 years. Intangibles: parallel claim (commercial purpose test) | TCGA 1992 s 140; CTA 2009 ss 827–831 |
 | CFC: Irish subsidiary | Tax exemption fails (12.5% < 18.75%); low profits exemption (≤ £500,000) applies | TIOPA 2010 ss 371LB, 371NB |
 | Deferred tax on uplift | £800,000 × 25% = £200,000 DTL; Dr goodwill | IAS 12 paras 15(a), 19, 66 |
 | Retention bonus | £60,000; s 1288: £30,000 AP2, £30,000 AP3 | CTA 2009 ss 1288–1289 |
@@ -14082,13 +14082,13 @@ One chapter remains. Chapter 32 turns from the law to the craft: how to put all 
 
 ## Statutory and case references
 
-- **CTA 2009**: s 10 (APs); ss 18A, 18F, 18G–18I, 18J–18N, 18R (branch exemption); s 54 (wholly and exclusively); Part 8 (intangible fixed assets); Part 13 (R&D); s 1219 (management expenses); ss 1288–1289 (unpaid remuneration).
+- **CTA 2009**: s 10 (APs); ss 18A, 18F, 18G–18I, 18J–18N, 18R (branch exemption); s 54 (wholly and exclusively); Part 8 (intangible fixed assets), ss 827–831 (transfer of non-UK trade); Part 13 (R&D); s 1219 (management expenses); ss 1288–1289 (unpaid remuneration).
 - **CTA 2010**: ss 18E, 18F (associated companies; passive companies); Part 5, ss 139–142, 154 (group relief); ss 269ZR ff (deductions allowance); Part 14 (change in ownership).
 - **TIOPA 2010**: ss 18(3A), 42 (DTR); ss 164A, 166, 172 (TP; UK-to-UK; SME); Part 9A, ss 371LB, 371NB (CFC exemptions); Part 10 and Sch 7A para 1 (CIR; reporting company, as amended by FA 2026 s 61); s 406 (tax-EBITDA).
 - **TCGA 1992**: ss 38, 140, 140C, 170(10), 171, 179(2); Sch 7A; Sch 7AC.
 - **CAA 2001** s 51C. **FA 1930** s 42. **FA 1999** Sch 13. **FA 1998** Sch 18 para 24. **TMA 1970** s 59F. **FA 2009** Sch 46. **FA 2016** Sch 19. **FA 2022** Sch 17. **Criminal Finances Act 2017** ss 45–46. **F(No.2)A 2023** Parts 3–4. **FA 2026** s 61, Sch 6.
 - **SIs**: SI 1998/3175 reg 3 (incl. reg 3(5)); SI 2012/3024 (excluded territories); SI 2016/237 (CbC); SI 2023/818 (TP records).
-- **HMRC manuals**: CTM92520, CTM92530, CTM92800, CTM03580, CTM03945; COM95001; CTM08190, CTM08260; INTM281020, INTM284020, INTM284030, INTM284040; CIRD92000; SAOG11260; BIM38380–BIM38390.
+- **HMRC manuals**: CTM92520, CTM92530, CTM92800, CTM03580, CTM03945; COM95001; CTM08190, CTM08260; INTM224200, INTM281020, INTM284020, INTM284030, INTM284040; CIRD92000; SAOG11260; BIM38380–BIM38390.
 - **Accounting**: IFRS 3 (measurement period); IAS 12 paras 4A, 15(a), 19, 66.
 - **Cases**: *Centrica Overseas Holdings Ltd v HMRC* [2024] UKSC 25 (deal costs).
 - **Proposed, not law**: draft Finance Bill 2026-27 clauses on the foreign branch exemption (13 July 2026).
@@ -14443,7 +14443,7 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Enquiries | Large-group windows; a long period of account shifts dates | M25 Q6, N25 Q4 | 3 |
 | Tax strategy, SAO | Use the accounts for the year ending in the parent's FY; SAO counts **UK-incorporated** companies only | M25 Q3, N23 Q5 | 4 |
 | CIR | Interest TP adjustments reduce ANTIE, not tax-EBITDA; adjust both for a QIC; no group ratio when told not to | M26 Q1 | 28 |
-| DTR | Royalties from different payers can be one source with credits aggregated | N25 Q1 | 24 |
+| DTR | Royalties for one asset paid from several jurisdictions are one source, credits aggregated (TIOPA 2010 s 47) | N25 Q1 | 24 |
 | Migration | Land acquired after 5 April 2019 automatically postponed; payment plans | N25 Q3 | 22 |
 | Branches | Incorporation gain postponement; election irrevocable, covers all PEs, timing for losses; anti-fragmentation | M23 Q2, N25 Q2, M26 Q5 | 23, 25 |
 | DPT | Do not raise it for loans; now repealed (UTPP, awareness) | M23 Q3, N23 Q1, N24 Q5 | 30 |
@@ -14456,7 +14456,7 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Earn-out receipts after an SSE sale | Later receipts are disposals of the earn-out right (*Marren v Ingles*): chargeable on the generally accepted view, not settled law | book | 18, 20 |
 | Blocked foreign trade receipts | A trading receipt that cannot be remitted is relieved under CTA 2009 ss 173–175, not Part 18 (which is for other foreign income) | book | 25 |
 
-On DTR the N25 examiners put it starkly: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." On CFCs, after M26 Q5 they criticised "not mentioning obvious points (e.g. how CFC legislation works)": two lines on how the charge works and who pays it are almost free marks.
+On DTR the N25 examiners put it starkly: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." The statutory basis is **TIOPA 2010 s 47**: where double taxation arrangements apply, royalties for one asset paid from more than one foreign jurisdiction are treated as income from a single asset (chapter 24; N25 Q1 itself involved no treaty, and the examiners took the same approach under unilateral relief). On CFCs, after M26 Q5 they criticised "not mentioning obvious points (e.g. how CFC legislation works)": two lines on how the charge works and who pays it are almost free marks.
 
 > **Exam lens: compliance questions**
 > - **Frequency:** compliance and governance appeared eight times M23–M26 (N23 Q5, M25 Q3, M25 Q6, M24 Q3(c), N24 Q5, N25 Q4(a), M26 Q1(a), N23 Q1(b)): a 10–15 mark "admin" question is very common.
@@ -14608,7 +14608,7 @@ Yet the newest rules lean the other way:
 | Presence: residence | Incorporation (CTA 2009 s 14) or central management and control; treaty tie-breaker (s 18); exit charge (TCGA s 185) | TIL migrates 30 June GY4: CT £850,000, plan £525,000 in 6 × £87,500 | 22 |
 | Presence: PE | Fixed place or dependent agent; for chargeable periods beginning on or after 1 January 2026, "principal role" in concluding contracts (CTA 2010 s 1141, FA 2026 Sch 7) | TVS: domestic PE in GY4, no treaty PE | 23 |
 | Sharing | Treaties allocate and limit; DTR credit capped at UK tax on the income | Calder's Vallarian project: £180,000 credited; top-up £45,000 | 24 |
-| Exemption | Branch exemption by election (CTA 2009 s 18A) | Calder did not elect | 25 |
+| Exemption | Branch exemption by election (CTA 2009 s 18A) | Calder did not elect; Ridgeway Cycles elects for its Dublin branch | 25, 31 |
 | Drift: TP | Arm's length (TIOPA 2010 Part 4) | Know-how re-priced £6.0m → £8.0m; MAP relief in Vallaria | 27 |
 | Drift: CFC | Only profits diverted from the UK (Part 9A) | TPLC's charge on TCM: £204,000 (GY5) | 26 |
 | Drift: interest | Net interest capped at 30% of tax-EBITDA, subject to the debt cap (Part 10) | Disallowed £2.21m (GY1), £2.30m (GY2) | 28 |
@@ -14640,7 +14640,7 @@ The law gives everyone a part:
 | Company (criminal) | Failure to prevent facilitation of tax evasion; defence of reasonable prevention procedures | Criminal Finances Act 2017 ss 45–46 | 4 |
 | Tax function | The calendar: QIPs, returns, CIR returns, TP files, CbC, Pillar Two registration and returns | Various | 3, 27, 28, 30 |
 
-The adviser's part is the one the CIOT names: identify the issues, explain them precisely, coordinate the specialists. Chapter 31 showed what that means. One modest acquisition, of Ridgeway from Jess Hartley, touched stamp duty, instalments, transfer pricing, the SAO, the CIR, Pillar Two, R&D, deferred tax and a foreign branch. None of those points was hard alone. The skill was to find them all.
+The adviser's part is the one the CIOT names: identify the issues, explain them precisely, coordinate the specialists. Chapter 31 showed what that means. One modest acquisition, of Ridgeway from Jess Hartley, touched stamp duty, instalments, transfer pricing, the SAO, the CIR, Pillar Two, R&D, deferred tax, a retention bonus and a foreign branch. None of those points was hard alone. The skill was to find them all, and then to answer the one question Jess had left open: Ridgeway Cycles elects for the branch exemption.
 
 ## The debates, revisited.
 
@@ -14670,7 +14670,7 @@ The book has tried to give each side at its strongest, and to say where the law 
 | Withholding on yearly interest | Savings basic rate, 22% for 2027/28 (20% for 2026/27) | 2027/28 | **Enacted, coming next** (FA 2026 ss 5–6) |
 | TP guarantees | New rules reach all borrowing for periods commencing on or after 1 January 2028 (earlier by election) | 1 January 2028 | **Enacted, coming next** (FA 2026 Sch 6 para 12) |
 | Draft Finance Bill 2026-27 | Draft clauses published; technical consultation closed 7 September 2026 | 13 July 2026 | **Proposed, not law** |
-| – Foreign branch exemption | Compulsory for APs beginning on or after 1 January 2027; opening negative amount rules replaced by restrictions on carrying forward branch losses; anti-avoidance from 13 July 2026 | — | **Proposed, not law** (chapter 25) |
+| – Foreign branch exemption | Compulsory for APs beginning on or after 1 January 2027; opening negative amount rules replaced by restrictions on carrying forward branch losses; anti-avoidance from 13 July 2026. Ridgeway's election (chapter 31) would become a rule rather than a choice, with the same result on its facts | — | **Proposed, not law** (chapters 25, 31) |
 | – Pillar Two side-by-side package | Implementation, with further MTT/DTT amendments | — | **Proposed, not law** (chapter 30) |
 | ICTS | Reporting of international controlled transactions under FA 2026 s 48; consultation 16 June–31 July 2026; intended for APs beginning on or after 1 January 2027 | — | Power enacted; **regulations not made** (chapter 27) |
 | Distributions consultation | Distributions, repayments of capital, demergers; 23 June–14 September 2026 | — | **Proposed, not law** (chapter 19) |

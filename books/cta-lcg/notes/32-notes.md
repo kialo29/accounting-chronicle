@@ -70,3 +70,7 @@ No "Fix needed in" item names chapter 32. Following the rulings' guidance for ch
 ## Technical review fixes (review F)
 
 - No errors found. Verified this review: autumn 2027 sitting 26 October 2027, 2.30pm (CIOT exam entry page; the 28 October line is still flagged); pass rates and time plan recomputed (Python). Script unchanged (5,990 words; ceiling 6,050).
+
+## Technical review fixes (review G)
+
+- Per review E: the DTR trap-atlas row and the N25 paragraph (reading edition) now cite **TIOPA 2010 s 47** (royalties for one asset paid from more than one jurisdiction under double taxation arrangements treated as income from a single asset), with chapter 24's caveat that N25 Q1 involved unilateral relief. Script: two sentences added after the N25 examiners' remark. Script now **6,023 words** (band 4,950–6,050).

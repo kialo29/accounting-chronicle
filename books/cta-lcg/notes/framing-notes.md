@@ -94,3 +94,9 @@
 ## Ledger additions
 
 None. No new story numbers were fixed.
+
+## Technical review fixes (review G)
+
+- **Flag 1 resolved:** the conclusion's Ridgeway sentences now match chapter 31 as written (both editions): the list adds the retention bonus and states the outcome (Ridgeway Cycles elects for the branch exemption); the "What is coming" branch row/sentence now says the draft would turn Ridgeway's election into a rule "with the same result on its facts" (chapter 31: RC has no branch losses to carry forward); the "Exemption" row of the reading table adds Ridgeway (chapters 25, 31).
+- **Introduction:** "Some years after the group's story begins" → "Some years after the rest of the group's story" (the Ridgeway year follows GY7); the script now names Ridgeway. Structure promises (prologue, introduction, 32 chapters in five Parts with the stated chapter counts, conclusion, note on sources) checked against the chapter files: consistent.
+- Word counts after review G: introduction script 2,849; conclusion script 3,097 (both within ±10%). Note on sources: no change.
