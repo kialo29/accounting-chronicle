@@ -2,7 +2,7 @@
 
 **Interpretation and assumptions.** Wrote ch 15 per plan §5 as the opening chapter of Part Three (part heading included), applying continuity rulings R1–R3, R7–R9 (TPLC's s 105(3A) cap with the TCM apportionment; stranded c/f ME; TEL GY1/GY2 figures; RDEC never netted off QIPs; standing GAAS nomination); WebFetch unavailable, 14 WebSearch calls used (two over the limit of 12: see Sources); no TKS files available (TKS recaps kept to bible §4.1: ch 24 taught 75% group relief, non-coterminous periods, consortia in outline, *Marks and Spencer*, *Farnborough*).
 
-Files: `chapters/15-group-relief-consortia-jvs.txt` (8,196 words; target 8,500, range 7,650–9,350), `chapters/15-group-relief-consortia-jvs-reading.md` (9,129 words). 15 sections plus "What to take away" (16 headed sections in total, at the brief's maximum).
+Files: `chapters/15-group-relief-consortia-jvs.txt` (8,386 words; target 8,500, range 7,650–9,350), `chapters/15-group-relief-consortia-jvs-reading.md` (9,276 words). 15 sections plus "What to take away" (16 headed sections in total, at the brief's maximum).
 
 ---
 

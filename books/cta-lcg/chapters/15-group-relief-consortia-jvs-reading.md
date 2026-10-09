@@ -232,7 +232,7 @@ Group relief is claimed in the **claimant's company tax return** (FA 1998 Sch 18
 |---|---|---|
 | Consent | Surrendering company gives written notice of consent to HMRC at or before the claim; a copy accompanies the claim | Sch 18 para 70; CTM97020 |
 | Consortium claims | Consent of **every member** of the consortium as well, whichever way relief flows (a member = a company owning ≥ 5%); copies accompany the claim | para 70(2), (5); CTM80520 |
-| Amending | A notice of consent cannot be amended: withdraw and replace it | COM53100 |
+| Amending | A notice of consent cannot be amended: withdraw and replace it. Consents are given company by company and period by period; a missing consent sinks the claim | COM53100 |
 | Amount | The claim is for a stated amount and may be less than the maximum | Sch 18 Part 8 |
 | Time limit | Made or withdrawn up to the **latest** of: first anniversary of the claimant's filing date; 30 days after an enquiry into the claimant's return is completed; 30 days after HMRC amend the return after an enquiry; 30 days after an appeal against that amendment is finally determined (HMRC may allow later) | para 74; CTM97060 |
 | Simplified arrangements | One authorised company may make and withdraw claims and consents for the group without sending copies of every notice | SI 1999/2975; CT600C guidance (HMRC's description) |
@@ -256,6 +256,8 @@ Before April 2017 group relief was for current-year amounts only. **CTA 2010 Par
 | Payments | Disregarded up to the amount of the loss | s 188FA; CTM82170 |
 | Consortia | Carried-forward losses can pass between consortium companies and members, within the ownership proportion (link company: its proportion of the claimant's relevant maximum) | CTM82505–CTM82525 |
 
+Think of current-year relief as the main door between the tanks; Part 5A is a second door that opens only after each company has used its own carried-forward losses, and the loss restriction still caps how much old loss shelters new profit wherever it lands. For the exam Part 5A matters most as a contrast: current-year relief is unlimited and immediate; carried-forward relief is conditional, capped and slow.
+
 The first restriction explains TPLC's **stranded** £825,000 a year (book's reading, as above; not tested in any decided case). BSL's pre-acquisition losses were in any case barred until **31 December GY7** (Ch 2C) and restricted under Part 14 Ch 2 (chapter 14).
 
 ---
@@ -267,6 +269,8 @@ The first restriction explains TPLC's **stranded** £825,000 a year (book's read
 **2. EEA losses: repealed.** CTA 2010 Part 5 Ch 3 (ss 111–128) let a UK parent claim the losses of an EEA-resident subsidiary where every possibility of relief abroad was exhausted (the *Marks and Spencer* "no possibilities" test). FA 2022 s 24(3) repealed it with effect from **27 October 2021** (CTM81502; the policy paper "Abolition of cross-border group relief" explains that the UK was no longer required to keep the rules after leaving the EU). EEA-resident companies with UK PEs are now treated like other non-residents.
 
 **3. Dual resident investing companies (s 109).** A UK resident company also within a non-UK tax charge (by incorporation, place of management or other residence criteria) cannot surrender if, in outline, it is not a trading company or its trade is mainly acquiring and holding shares or making loans and similar (conditions A–C). The fear is "double dipping": one interest cost relieved in two countries. A DRIC also cannot receive assets at no gain, no loss (TCGA 1992 s 171(2)(d); chapter 17). The examiners reported after N24 that many candidates missed the bar.
+
+**Spotting a DRIC.** The point usually hides in the facts: a company incorporated abroad whose board meets in London, or a UK company whose directors meet abroad. Ask in turn: is it UK resident? Is it also within another country's charge? Does it carry on a real trade other than holding shares or lending? Only yes, yes and no leads to the bar.
 
 **TIL, the near miss (invented).** Before 30 June GY4 TIL was UK resident (CMC in Leeds) with an Irish incorporation, and the UK and Irish competent authorities had agreed it was UK resident for treaty purposes. Even if Ireland had also treated it as resident, s 109 would not have bitten: TIL trades. From 30 June GY4 it is Irish resident with no UK PE (its UK warehouse is let: a UK property business, not a PE), so it is not UK related and neither surrenders nor claims.
 
