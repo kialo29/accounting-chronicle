@@ -10,7 +10,7 @@
 
 Research files opened: `book-plan.md` (§0, §3, §5 ch 11–14, §6, §8–§11), `calder-ledger.md` (all), `book-bible.md` (§1, §3.1–3.9, §3.15–3.16, §4, §5, §6), `ORCHESTRATOR-ADDENDUM.md`, `research/law-sheet-1-ct-core.md` (§0, §2, §3, §10–12), `research/law-sheet-4-accounting-misc.md` (§1.1–1.3, teaching notes, traps), `research/exam-intel.md` (§3 paper tables, synthesis, traps), `research/lcg-grid-extract-v2.txt` (rows p6 253–256, p7 277), `ledger-check.py` (read and run: 96 checks, 0 failures; not edited).
 
-WebSearch (9 of 12 allowed; WebFetch not used per addendum):
+WebSearch (10 of 12 allowed; WebFetch not used per addendum):
 
 | # | Query | Results relied on | Used for |
 |---|---|---|---|
