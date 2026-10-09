@@ -18,7 +18,8 @@
 - In your notes' source list, give the search query and the URLs whose extracts you relied on.
 
 ## Continuity
-- There is no `continuity-rulings.md` yet for batch 1. If one exists when you start, it overrides the ledger and plan.
+- `continuity-rulings.md` (R1–R17, after batch 1) now exists. **Read it in full, especially each ruling's "Guidance for later chapters"**. It overrides the plan; the ledger has been updated to match (§8 lists facts fixed by chapters 1–14). Chapters 1–14 are written in `chapters/` (reading editions `*-reading.md`): read the ones your chapter builds on so you recap accurately and do not contradict them.
+- R16: never put production words such as "ledger", "bible", "the plan", "brief" or "ruling" in the chapter text.
 - Do not edit shared files (plan, bible, ledger, ledger-check.py, this addendum, other chapters).
 
 ## Output check

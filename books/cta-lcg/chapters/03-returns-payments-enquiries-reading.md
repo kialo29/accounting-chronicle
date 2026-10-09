@@ -119,7 +119,7 @@ So the same acquisition has two timings. Join a group and your marginal relief l
 > | Calder, AP 1 Apr GY2 – 31 Mar GY3 | 31 Mar GY2 (Brackenwell joins 1 July GY2: too late) | 8 | 9 | 166,667 | 2,222,222 | 1,111,111 |
 > | Calder, 9-month AP 1 Apr – 31 Dec GY3 | 31 Mar GY3 | 9 | 10 | 112,500 (× 9/12) | 1,500,000 (× 9/12) | 750,000 (× 9/12) |
 >
-> Tarnmoor Pumps Ltd (dormant) never counts. For **marginal relief** the ledger's divisors apply (GY1 9, because Calder is associated for part of GY1; GY2 10; GY3 10): irrelevant in practice, since every trading company is far above £250,000. Every main trading company is far above every QIP threshold too, so conclusions do not change; but the divisor and the counting date earn the marks.
+> Tarnmoor Pumps Ltd (dormant) never counts. For **marginal relief** the divisors are (GY1 9, because Calder is associated for part of GY1; GY2 10; GY3 10): irrelevant in practice, since every trading company is far above £250,000. Every main trading company is far above every QIP threshold too, so conclusions do not change; but the divisor and the counting date earn the marks.
 
 ---
 
@@ -159,8 +159,6 @@ Some years later, in our invented story, TPLC buys Calder from the Oldroyd famil
 > **AP 1 April GY2 – 31 March GY3.** Associates counted at 31 March GY2: 8; divisor 9; very large threshold £2,222,222. Calder's forecast profits are comfortably above it (the AP's figures are fixed in later chapters), so Calder is **very large** (no grace): instalments on **14 June GY2, 14 September GY2, 14 December GY2 and 14 March GY3**.
 >
 > **Calder's instalment dates in calendar GY2:** 14 January, 14 April, 14 July (AP to 31 March GY2) and 14 June, 14 September, 14 December (AP to 31 March GY3): **six instalments in twelve months**.
-
-The plan for this book had assumed that Calder would be very large in its first group AP, with instalments based on the CT after the RDEC set-off. Both assumptions fail on HMRC's guidance: the associates are counted on 31 March GY1, and the RDEC does not reduce the QIPs. The corrected position is used here and recorded in the chapter notes.
 
 > **Going further: acquisitions and the instalment calendar**
 > - **Diligence point:** on any acquisition, establish the target's QIP status for its current AP (its own history, not the buyer's divisor) and the date its first very large instalment will fall once the group's associates count.
@@ -236,13 +234,13 @@ QIP Regulations **reg 9** extends the rule to instalment overpayments so that th
 >
 > | | TES (£) | TEL (£) |
 > |---|---|---|
-> | Final CT for GY2 | (forecast included the depot gain; sale slipped to 30 April GY3) | 2,020,000 |
+> | Final CT for GY2 | (forecast included the depot gain; sale slipped to 30 April GY3) | 2,226,250 |
 > | Overpaid / (underpaid) in total | 569,375 (tax at 25% on the expected £2,277,500 gain) | (400,000) |
 > | Per instalment | 142,343.75 over | 100,000 short |
 > | Refund surrendered (joint notice before repayment) | (400,000) | +400,000 |
 > | Repaid to TES | 169,375 | — |
 >
-> TEL paid four instalments of £405,000 (£1,620,000) on an early forecast; a stronger second half took its liability to £2,020,000. Because TES's overpayment on each date (£142,343.75) exceeds TEL's shortfall on that date (£100,000), reg 9 leaves TEL with no QIP shortfall at any date.
+> TEL paid four instalments of £456,562.50 (£1,826,250) on an early forecast; a stronger second half took its liability to £2,226,250. Because TES's overpayment on each date (£142,343.75) exceeds TEL's shortfall on that date (£100,000), reg 9 leaves TEL with no QIP shortfall at any date.
 >
 > **Interest saved (simplified):** assume that without the surrender TEL's shortfalls and TES's overpayments would each have been settled on the normal due date, 1 October GY3; months to the nearest month from each instalment date: 19, 16, 13 and 10 (58 in total).
 >

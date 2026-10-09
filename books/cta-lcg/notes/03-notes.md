@@ -53,6 +53,9 @@ Law sheet V items restated without new search: TMA s 59F (GPA: 51% group; UK nom
 - **C2 (ledger §3 thresholds; plan §6.6 "GY1 £2.22m; GY2–GY4 £2.0m"):** these are marginal-relief divisors (associates at any time in the AP). For **QIPs**, 31 December companies count at the end of the previous year: **GY1 divisor 8 (£2,500,000 / £187,500)**, **GY2 divisor 9 (£2,222,222 / £166,667)**, **GY3–GY4 divisor 10 (£2,000,000 / £150,000)**; GY5 divisor 10 (Helmside joins 1 March GY5, after the count; TWS still counted at 31 Dec GY4); GY6 divisor 10 (HEL in, TWS out; TAL joins 1 Feb GY6, after the count). Ledger-check arithmetic is unaffected; the labels need a note.
 - **C3 (plan ch 3 misconception):** "a company in its first year in a group can't be very large (associated companies divide the threshold at once)". On HMRC's reading the divisor does **not** apply at once for QIPs. The chapter uses instead: "every company gets a year's grace" (false for very large), plus the two-timings point (marginal relief at once; QIPs from the next AP).
 - **C4 (law sheet 4 §9):** s 963 group "Part 5 group relief definition" is correct; the bible glossary wording is fine.
+- C1 and C2: **Resolved by continuity ruling R1** (QIP count on the day before the AP; marginal relief count at any time in the AP) and **R2** (the RDEC does not reduce QIPs). Chapter 3's position adopted as canonical.
+- **C5 (TEL's GY2 liability):** TEL's final GY2 CT of £2,020,000 (4 × £405,000 paid) was superseded when TPLC's management expense surrender was capped at its profit-related threshold. **Resolved by continuity ruling R3**: £2,226,250 against 4 × £456,562.50 = £1,826,250 paid; shortfall £400,000 and all later figures unchanged.
+- Production references in the reading edition: **Resolved by continuity ruling R16** (and R1).
 
 ## Pronunciation guide
 
@@ -99,7 +102,20 @@ Law sheet V items restated without new search: TMA s 59F (GPA: 51% group; UK nom
 3. Calder 9-month AP GY3: divisor 10 (9 associates at 31 Mar GY3); very large threshold £1,500,000; three instalments (one third each) on 14 Jun, 14 Sep, 14 Dec GY3; truing up after the 15 June announcement and 1 October sale.
 4. QIP divisors for 31 December companies: GY1 8; GY2 9; GY3–GY6 10 (see C2).
 5. **Group payment arrangement from GY3** for the 31 December UK companies, **TFL nominated**; Calder joins from GY4.
-6. **GY2 refund surrender:** TES overpaid **£569,375** (tax at 25% on the expected £2,277,500 depot gain; sale slipped to 30 April GY3); TEL's instalments **4 × £405,000 = £1,620,000** against liability £2,020,000 (short **£400,000**); TES surrenders **£400,000** to TEL (s 963; reg 9) and is repaid **£169,375**; simplified interest saving **£13,291** (months 19/16/13/10 to 1 October GY3); rule of thumb £11,000 a year.
+6. **GY2 refund surrender:** TES overpaid **£569,375** (tax at 25% on the expected £2,277,500 depot gain; sale slipped to 30 April GY3); TEL's instalments **4 × £456,562.50 = £1,826,250** against liability £2,226,250 (short **£400,000**) (amended by R3); TES surrenders **£400,000** to TEL (s 963; reg 9) and is repaid **£169,375**; simplified interest saving **£13,291** (months 19/16/13/10 to 1 October GY3); rule of thumb £11,000 a year.
 7. **Brackenwell:** its return for the year to 31 December GY1 (carrying the ERIS payable credit claim £943,950) was unfiled at completion (1 July GY2); its two previous returns were late; Tarnmoor files it before 31 December GY2; persistent penalty (£1,000/£2,000) avoided.
 8. Calder's GY3 return: filing date 31 December GY4; enquiry window to 31 December GY5 (consistent with ledger GY5 entry); discovery limits 31 December GY7 / GY9 / GY23.
 9. Calder had been large in its last standalone years (consistent with TKS "large in the prior year").
+
+## Continuity fixes applied
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R3 | `chapters/03-returns-payments-enquiries.txt` (refund surrender passage) | "Its liability came in at two million and twenty thousand pounds, and its instalments had totalled one million, six hundred and twenty thousand." → "Its liability came in at two million, two hundred and twenty six thousand, two hundred and fifty pounds, and its instalments had totalled one million, eight hundred and twenty six thousand, two hundred and fifty." |
+| R3 | `chapters/03-returns-payments-enquiries-reading.md`, Worked example 3.6 table | TEL "Final CT for GY2" 2,020,000 → 2,226,250 |
+| R3 | `chapters/03-returns-payments-enquiries-reading.md`, Worked example 3.6 text | "four instalments of £405,000 (£1,620,000) … liability to £2,020,000" → "four instalments of £456,562.50 (£1,826,250) … liability to £2,226,250" (shortfall £400,000, £100,000 per date, interest figures, £169,375 repayment and £13,291 saving unchanged; checked in Python) |
+| R1, R16 | `chapters/03-returns-payments-enquiries-reading.md`, note under Worked example 3.2 | "For **marginal relief** the ledger's divisors apply" → "For **marginal relief** the divisors are" |
+| R1, R16 | `chapters/03-returns-payments-enquiries-reading.md`, after Worked example 3.3 | Deleted the production paragraph beginning "The plan for this book had assumed…" |
+| R3 | `notes/03-notes.md`, Ledger additions item 6 | 4 × £405,000 = £1,620,000 against £2,020,000 → 4 × £456,562.50 = £1,826,250 against £2,226,250 |
+| R2, R14 | — | No change required (chapter 3 already canonical). |
+

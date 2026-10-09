@@ -194,29 +194,31 @@ The rest of the pool mechanics are as TKS chapter 12 taught: a pool of **£1,000
 
 The AIA (ss 38A, 51A) gives 100% relief on up to **£1,000,000** a year (proportioned for short or long periods). For companies it matters less than before, because full expensing gives 100% on new main-rate plant without limit. It still covers ground full expensing does not: second-hand plant; special rate expenditure (where 100% beats 50%); fixtures acquired with a second-hand building. **Cars** are excluded (s 38B), as is expenditure in the final chargeable period.
 
-**The group rule (s 51C).** Where a company is a **parent undertaking** (Companies Act 2006 s 1162) of other companies in a financial year, the parent and its subsidiaries are entitled to **only one AIA** between them for their chargeable periods **ending in that financial year**. A company is treated as the parent's subsidiary for this purpose if the parent holds that status at the end of the subsidiary's chargeable period. Groups and companies under common control that are "related" share one AIA under ss 51D–51E (with ss 51F–51G). The companies allocate the AIA **as they think fit**.
+**The group rule (s 51C).** Where a company is a **parent undertaking** (Companies Act 2006 s 1162) of other companies in a financial year, the parent and its subsidiaries are entitled to **only one AIA** between them for their chargeable periods **ending in that financial year**. Section 51C has no definition of its own and does not import the Companies Act 2006 s 390 meaning, so, read with the Interpretation Act 1978 (Sch 1: "the twelve months ending with 31st March"), **"financial year" means the year to 31 March**, not the parent's accounting year (the book's reading of the statute). A company is treated as the parent's subsidiary for this purpose if the parent holds that status at the end of the subsidiary's chargeable period. Groups and companies under common control that are "related" share one AIA under ss 51D–51E (with ss 51F–51G). The companies allocate the AIA **as they think fit**.
 
 **Acquisitions and changing year ends:**
 - A target's period that **ended before** the acquisition is outside the group. Calder's year to 31 March GY1 ended the day before TPLC bought it: Calder kept its own £1m AIA for that year.
-- Calder's year to **31 March GY2** ended while TPLC was its parent: it shares the **GY2** group AIA.
-- A company with **two periods ending in the same financial year** draws on the same single AIA: Calder's year to 31 March GY3 **and** its 9-month AP to 31 December GY3 both end in GY3, alongside every other group company's GY3 period.
+- Calder's year to **31 March GY2** ended while TPLC was its parent: it shares the AIA for the **year to 31 March GY2** with the other companies' GY1 periods (to 31 December GY1).
+- Calder's year to **31 March GY3** shares the AIA with the other companies' GY2 periods; its **9-month AP to 31 December GY3** falls in the **next** AIA year (to 31 March GY4), with their GY3 periods, and is capped at **£750,000** on its own. Calder's two periods ending in calendar GY3 therefore draw on **different** AIA years.
 
 **Where should it go?** Every Tarnmoor company pays 25%, so the question is timing. The AIA adds most relief this year where **no FYA is available at all**, and most of all where the alternative is the 6% special rate pool.
 
-> **Worked example: the group AIA for GY2 (invented)**
+> **Worked example: the group AIA for the year to 31 March GY3 (invented)**
 >
-> | Company | Chargeable period ending in GY2 | Expenditure | AIA allocated £ | Why |
+> | Company | Chargeable period ending in the year to 31 March GY3 | Expenditure | AIA allocated £ | Why |
 > |---|---|---|---|---|
-> | TES | Year to 31 December GY2 | Fixtures in the office bought in GY2 (s 198 figure £0.4m: chapter 9) | 400,000 | Not new: no FYA available |
-> | CVE | Year to 31 March GY2 | Second-hand plant | 600,000 | Not new: no FYA available; Calder's period ends 9 months earlier, so its relief reduces instalments falling due sooner |
-> | TEL | Year to 31 December GY2 | — | nil | New main-rate plant has FE; special rate plant has the 50% FYA; its £0.5m second-hand milling line competes with Calder's on equal terms |
+> | TES | Year to 31 December GY2 | Fixtures in the office bought in GY2 (s 198 figure £0.4m: chapter 9) | 400,000 | Second-hand integral features: special rate, no FYA |
+> | CVE | AP to 31 March GY3 | Second-hand special rate plant | 600,000 | Second-hand special rate plant: no FYA |
+> | TEL | Year to 31 December GY2 | — | nil | Its £0.5m second-hand milling line is main rate (14%); special rate first. New main-rate plant has FE; new special rate plant has the 50% FYA |
 > | **Total** | | | **1,000,000** | |
+>
+> The AIA displaces a 6% WDA on the TES and Calder items, but only a 14% WDA on TEL's milling line. Calder's £600,000 of second-hand plant in its AP to 31 March GY2 used the previous AIA year's allowance.
 
 The allocation is a group decision that must reach each company's return; record it centrally each year.
 
 > **Going further: the AIA and acquisitions**
 > - **Test date.** Because s 51C looks at the parent's status at the end of the subsidiary's chargeable period, a target acquired just before its year end shares the group's AIA for that whole period, including spending incurred while it was independent. If the target has already claimed its own AIA on that spending, the group's allocation must absorb it.
-> - **Year-end changes.** Calder's move to a 31 December year end gave it two periods ending in GY3, both drawing on the GY3 group AIA (the 9-month period also capped at £750,000 on its own). Plan purchases across the change.
+> - **Year-end changes.** Calder's move to a 31 December year end gave it two periods ending in calendar GY3, but they fall in different AIA years: its year to 31 March GY3 shares the AIA with the other companies' GY2 periods; its 9-month AP to 31 December GY3 falls in the next AIA year, with their GY3 periods (and is capped at £750,000 on its own). Plan purchases across the change.
 > - **Documentation.** Each company's return claims only its allocated share; keep a group schedule each financial year so that an amendment in one company can be matched elsewhere within the para 82 window.
 
 > **Exam lens: the AIA in groups**
@@ -362,7 +364,7 @@ The sorting questions apply at the date the asset is brought into use: new main-
 >
 > TEL's tax-adjusted trading profit before capital allowances is **£42.0m** (chapter 7); after allowances of **£16.0m**, its trading profit is **£26.0m**. At 25%, the allowances are worth **£4.0m** of tax.
 
-Notice what the computation does not contain: no AIA (allocated to Calder and TES), no special balancing charge, and no depreciation (added back in chapter 7). Notice how much came from the sorting: had the machining centres been second-hand, £9.0m of full expensing would have been £1.26m of WDA. Tom's question was worth more than **£7.7m** of first-year relief.
+Notice what the computation does not contain: no AIA (the group allocated it to special rate spending in TES and Calder), no special balancing charge, and no depreciation (added back in chapter 7). Notice how much came from the sorting: had the machining centres been second-hand, £9.0m of full expensing would have been £1.26m of WDA. Tom's question was worth more than **£7.7m** of first-year relief.
 
 A year later, Calder's sale to TVS runs the sorting in reverse: **£1.0m** of special balancing charges and **£250,000** of tax fall in the same 9-month AP in which Calder bears the cost of closing the process valves division where Dan Hartley worked (his redundancy on 30 September GY3 is a deductible restructuring cost: chapter 7). The relief came fast, and so does the clawback.
 
@@ -431,7 +433,7 @@ The SBA in that total is the bridge to the next chapter. Plant is the apparatus;
 | Claims | In the return; para 82 time limits | FA 1998 Sch 18 paras 78–83 |
 | Small pools | ≤ £1,000 written off | s 56A |
 | Story: TEL GY2 | £16,000,000 total; main pool c/f £34,554,800; special rate c/f £6,204,000 | invented |
-| Story: GY2 group AIA | TES £400,000; Calder £600,000; TEL nil | invented |
+| Story: group AIA, year to 31 March GY3 | TES £400,000; Calder £600,000 (second-hand special rate plant, AP to 31 March GY3); TEL nil | invented |
 | Story: Calder GY3 plant sale | DV £1.4m; special balancing charges £1.0m; pool deductions £0.3m main, £0.1m special rate | invented |
 
 ## Statutory and case references
