@@ -26,6 +26,8 @@ Read together, the policy is clear: generous to new investment, less generous to
 
 For a large group, every asset has to be **sorted**: new or used; main rate or special rate; owned, hired or leased out; kept or sold. Each answer sends the asset down a different road. A good capital allowances computation is a sorting machine, and it is only as good as the fixed asset register behind it.
 
+> **Misconception to drop: "a large company just depreciates its plant for tax."** No depreciation, amortisation or impairment of plant is deducted. The computation adds it back and substitutes allowances, which may be far faster (full expensing) or far slower (a 6% special rate pool) than the accounts. The gap between the two is the largest source of deferred tax in most industrial groups (chapter 6).
+
 ---
 
 ## What counts, and when
@@ -128,6 +130,12 @@ The analogy from *The Living Law*: the main pool is a bath draining at 14% a yea
 >
 > The charges (£1.0m) are taxable in Calder's 9-month AP; at 25% they cost **£250,000**. TVS is a connected company, so the price must be at arm's length (TIOPA 2010 Part 4; chapter 27). TVS is outside UK tax, so s 218 is irrelevant to it.
 
+> **Going further: special balancing charges in group reorganisations**
+> - **Intra-group sales of FE plant.** Selling fully expensed plant to a fellow UK group company triggers the seller's s 59A charge on the disposal value, while the buyer, being connected, gets no AIA or FYA and is capped at the seller's disposal value (ss 217–218). The group pays tax now and gets only pool relief back. Consider whether the plant can stay where it is, or whether a transfer of the whole trade within CTA 2010 Part 22 Ch 1 (s 948: allowances continue as if the successor had always carried on the trade, with no balancing adjustments) is the better route (chapters 9 and 19). How s 948 interacts with each asset's s 59A history should be confirmed on the facts.
+> - **Cross-border sales** (Calder to TVS) add an arm's length price requirement, so the disposal value is effectively market value whatever the intra-group contract says.
+> - **s 59C** disregards arrangements with a main purpose of avoiding or reducing a special balancing charge, for example routing a sale through a company that never had full expensing.
+> - **Due diligence.** When buying a company, ask for the FE history of its plant: later sales or scrapping of that plant bring contingent special balancing charges, a hidden tax cost (reflected in the target's deferred tax liability, chapter 6).
+
 ---
 
 ## The 40% first-year allowance
@@ -206,6 +214,11 @@ The AIA (ss 38A, 51A) gives 100% relief on up to **£1,000,000** a year (proport
 
 The allocation is a group decision that must reach each company's return; record it centrally each year.
 
+> **Going further: the AIA and acquisitions**
+> - **Test date.** Because s 51C looks at the parent's status at the end of the subsidiary's chargeable period, a target acquired just before its year end shares the group's AIA for that whole period, including spending incurred while it was independent. If the target has already claimed its own AIA on that spending, the group's allocation must absorb it.
+> - **Year-end changes.** Calder's move to a 31 December year end gave it two periods ending in GY3, both drawing on the GY3 group AIA (the 9-month period also capped at £750,000 on its own). Plan purchases across the change.
+> - **Documentation.** Each company's return claims only its allocated share; keep a group schedule each financial year so that an amendment in one company can be matched elsewhere within the para 82 window.
+
 > **Exam lens: the AIA in groups**
 > - **Grade:** Annual Investment Allowance **1**.
 > - **Past papers:** M26 Q4 (AIA and instalment timing in a two-company group); M24 Q6 (FE and instalment timing, two-company computation).
@@ -252,6 +265,9 @@ The examiner hides long-life assets in a passing sentence about useful lives.
 | Other capital software | Part 8, unless the company **elects** for capital allowances | CTA 2009 s 815 |
 
 HMRC's guidance (CIRD25180) says the s 815 election must be in writing, identify the expenditure, and be made **within 2 years** after the end of the AP in which the expenditure was incurred; it is **irrevocable**. Why elect? Capital allowances may give faster relief than amortisation, which the intangibles regime generally follows. Realisation is then dealt with mainly through capital allowances (s 815(4)–(5)).
+
+> **Going further: a group software implementation**
+> Large enterprise system projects mix capital licence costs, capitalised implementation costs, subscription and service costs, and data migration. Sort each element: hardware-bundled software to capital allowances; other capital software to Part 8 or, by election, capital allowances; revenue costs deducted (with the uncertain tax treatment rules in view where a provision is involved, as with TEL's £24m ERP costs in GY2: chapters 3 and 4). Diarise the s 815 deadline (2 years) when the asset is first capitalised.
 
 > **Exam lens: special assets**
 > - **Grade:** cars, short life assets, long life assets, computer software, special rate expenditure: all **core (1)**.

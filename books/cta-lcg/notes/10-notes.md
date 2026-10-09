@@ -2,7 +2,7 @@
 
 **Interpretation and assumptions.** Chapter 10 as briefed in plan §5 (merged RDEC, ERIS, linked enterprises, overseas restriction, claim notification, R&D allowances), FY2026 law, using the ledger's Calder (Project Ashlar) and Brackenwell numbers unchanged; new story numbers are limited to the split of Calder's £2.0m qualifying expenditure, Brackenwell's PAYE/NIC (£0.9m), the inclusion of the £0.5m R&D allowance within Calder's £1.8m CAs, and the surrender of BSL's £114,000 step 2 amount to TEL (all listed below). TKS files were unavailable (addendum): TKS recaps limited to "*The Living Law*, chapter twenty one, introduced the merged scheme and ERIS" (bible §4.1).
 
-**Files.** `chapters/10-research-and-development.txt` (script, 7,765 words; target 7,500 ± 10%); `chapters/10-research-and-development-reading.md` (reading edition, 7,656 words by `wc -w`, including tables); scratch computations in the session scratchpad `lcg-ch10/calc.py`, `calc2.py`.
+**Files.** `chapters/10-research-and-development.txt` (script, 7,768 words; target 7,500 ± 10%); `chapters/10-research-and-development-reading.md` (reading edition, 7,656 words by `wc -w`, including tables); scratch computations in the session scratchpad `lcg-ch10/calc.py`, `calc2.py`.
 
 ---
 
