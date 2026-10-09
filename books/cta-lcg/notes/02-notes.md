@@ -2,7 +2,7 @@
 
 **Interpretation and assumptions (one line).** Taught as the book's "how we know" chapter: the statute map (CTA 2009/2010, TIOPA, TCGA, CAA, TMA, FA 1998 Sch 18, free-standing FA schedules, five key SIs, treaties via TIOPA s 2), FA 2026's dynamic references to OECD texts (s 164 TIOPA, s 20 CTA 2009, s 1140A CTA 2010) with the "just guidance" misconception, treaty reading (*Fowler*, MLI PPT), accounts as a source (s 46; *NCL*; *GDF Suez*), HMRC guidance and its UTT edge, clearances (statutory, non-statutory, FA 2026 advance tax certainty, APAs), case law and EU echo, legislation.gov.uk dating and commencement, the Tarnmoor s 164A research memo (GY1), and exam-room research; WebFetch unavailable, so verification used 13 WebSearch calls (one over budget) plus the law sheets' V items.
 
-**Files.** Script `chapters/02-where-corporate-tax-law-lives.txt` (5,890 words by `wc -w`; target 5,500 ± 10%); reading edition `chapters/02-where-corporate-tax-law-lives-reading.md` (about 7,580 words). 11 sections plus opening (section lengths 404–873 words in the script).
+**Files.** Script `chapters/02-where-corporate-tax-law-lives.txt` (5,890 words by `wc -w`; target 5,500 ± 10%); reading edition `chapters/02-where-corporate-tax-law-lives-reading.md` (about 7,580 words). 11 sections plus opening (section lengths about 405–897 words in the script).
 
 ---
 

@@ -309,7 +309,9 @@ Capital expenditure never enters RDEC or ERIS. **CAA 2001 Part 6** gives an **R&
 >
 > The rig is not qualifying expenditure for RDEC.
 
-**Why choose it over full expensing?** For a company, new plant may already get full expensing at 100% (chapter 8). The R&D allowance also covers **buildings** used for R&D, which full expensing never does. Against that, a disposal triggers a balancing charge. N25 Q4 (a new subsidiary) expected R&D allowances; "few mentioned" them.
+**Why choose it over full expensing?** For a company, new plant may already get full expensing at 100% (chapter 8). The R&D allowance also covers **buildings** used for R&D, which full expensing never does. Against that, a disposal triggers a balancing charge. N25 Q4 (a new subsidiary) expected R&D allowances; "few mentioned" them. A new company may incur R&D capital spending before it trades: the allowance then falls in the period the trade begins, which affects the timing of tax and instalments.
+
+**Why the allowance exists.** Without it, research buildings and equipment would be relieved slowly or not at all, and the incentive would favour R&D done with people and materials over R&D that needs heavy kit. The allowance gives the whole cost at once, matching the credit's treatment of revenue spending.
 
 > **Exam lens: R&D allowances (grade 1 core)**
 > - **Past appearances:** N25 Q4 (CA, SBA and R&D allowances with instalment timing).
@@ -324,9 +326,9 @@ Research relief does not live alone, and the examiner likes the joins. The most 
 | Regime | Interaction | Chapter |
 |---|---|---|
 | CIR | RDEC and ERIS deductions excluded from tax-EBITDA (TIOPA 2010 s 407(3)(a), (b)); capital allowances (including R&D allowances) also excluded. Calder's tax-EBITDA £4.4m is before both its allowances and its credit | 28 |
-| Accounts and deferred tax | RDEC above the line (operating profit) and taxable; ERIS payable credit not taxable and in practice often shown in the tax charge, affecting the reported ETR | 6 |
+| Accounts and deferred tax | RDEC above the line (operating profit) and taxable; ERIS payable credit not taxable and in practice often shown in the tax charge, affecting the reported ETR. The 100% R&D allowance on Calder's rig against depreciation over its life creates a temporary difference and a DTL that unwinds as the rig is depreciated | 6 |
 | Patent Box | Ashlar patents (filed GY2) qualify from GY4; the nexus fraction favours R&D done by the company itself over acquired IP and connected-party R&D | 11 |
-| Transfer pricing | Intra-group R&D services priced at arm's length (cost plus: N23 Q6); location of DEMPE functions | 27 |
+| Transfer pricing | Intra-group R&D services priced at arm's length (cost plus: N23 Q6); location of DEMPE functions. Contrast: if BSL does R&D for Calder after 1 July GY2, the FA 2026 UK-to-UK exemption (TIOPA 2010 s 164A) will usually take it out of TP (subject to its conditions: chapter 27), but for RDEC the two are now **connected**, so Calder's payments are measured by the connected-party rule, not 65% | 27 |
 | Groups | RDEC surrender (step 2 and step 5) and FA 2026 s 31 payments; separate from loss group relief, though the credit reduces the surrendering company's loss | 15 |
 
 ---
@@ -334,7 +336,7 @@ Research relief does not live alone, and the examiner likes the joins. The most 
 ## Going further, the tax function's work.
 
 > **Going further: running R&D relief in a large group**
-> 1. **Find the R&D.** Engineers do not think in tax categories. Build a process that reaches project leads, asks what was uncertain, and records answers when the work happens (time sheets, technical narratives, prototype logs). Dan Hartley's notes are worth more than an adviser's narrative written two years later.
+> 1. **Find the R&D.** Engineers do not think in tax categories, and in a group of Tarnmoor's size R&D happens where the tax team never visits (a pump-seal product team, a controls software group, last year's acquisition). In an HMRC enquiry the questions are about the project: what was uncertain, who resolved it, and how do you know? Build a process that reaches project leads, asks what was uncertain, and records answers when the work happens (time sheets, technical narratives, prototype logs). Dan Hartley's notes are worth more than an adviser's narrative written two years later.
 > 2. **The calendar.** Claim notifications, AIFs and returns, company by company (above).
 > 3. **Location.** Overseas contractor R&D will usually not qualify (s 1138A); weigh that with the transfer pricing consequences of placing valuable functions abroad.
 > 4. **Acquisitions.** Due diligence: has the target claimed correctly? Is its SME status right? Are credits pending? Will the acquisition end ERIS (HMRC's whole-period view)? Consider ending the target's AP at completion.
@@ -356,7 +358,8 @@ R&D has appeared three times in the seven LCG papers from M23 to M26, plus the R
 
 > **Exam lens: how to answer**
 > - **Grades (2026 grid):** R&D intensive companies **1**; RDEC **1**; R&D allowances **1**. At least 70% of the CT element comes from core material. (Check the 2027 grid; the 2028 grid keeps CTA 2009 Part 13 Chs 1, 1A, 8, 9 at 1 but drops R&D-intensive SMEs.)
-> - **Style:** technical prose and computations; no letter format; 0.5–1 mark per point.
+> - **Style:** technical prose and computations; no letter format; 0.5–1 mark per point. R&D is usually a few marks inside a 15–20 mark computation; M24 Q4 was the only standalone question (10 marks).
+> - **Tax tables:** give the RDEC rate, the ERIS extra deduction and payable credit rates and the SME definition; they do **not** give the step order, the 25%/19% notional tax rule or claim notification.
 > - **Method:** (1) test size across linked and partner enterprises; (2) strip out capital items, repairs, overheads and overseas contractor costs; apply 65% to unconnected contractors and EPWs; (3) RDEC = 20%, added as trading income; (4) step 1 against the AP's CT; step 2 at 25% or 19% with the reason; (5) R&D allowances for capital items; (6) mention claim notification where the company has not claimed before.
 
 ---
