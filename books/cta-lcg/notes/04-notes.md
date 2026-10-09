@@ -6,7 +6,7 @@
 
 Research files: `research/law-sheet-1-ct-core.md` §0, §8, §9, §10, §11 (items marked verified were restated without new searches: SAO duties/deadlines/penalties, tax strategy who/content/timing/penalties, UTT paras 2–5, 8–11, 18, 20–21, 33 and consultation, CCO s 45 and commencement, DOTAS s 306 and FA 2026 s 216 text, FN/APN rates, GAAR s 207/s 212A, ADR guidance); `research/exam-intel.md` (N23 Q5, M25 Q3, topic frequency, traps 15 and 27 of LS1); `research/lcg-grid-extract-v2.txt` rows p2 (SAO 1, tax strategy 1, CCO 1, DOTAS 2, APN/FN 2, avoidance v evasion 2, GAAR 2, ADR 3), p7 (UTT 3), p6 (Part 14B 2); `book-bible.md` §3.3, §3.4, §4.1, §5.2; `calder-ledger.md`; `book-plan.md` §5, §6, §8, §11.
 
-WebSearch (12 calls, standard mode; WebFetch not used):
+WebSearch (**13 calls**, standard mode, one over the addendum's budget of 12; WebFetch not used), in the order made:
 1. "SAOG11260 senior accounting officer qualifying company group..." → https://www.gov.uk/hmrc-internal-manuals/senior-accounting-officers-guidance/saog11260 (UK incorporation; tax residence irrelevant; aggregation with UK-incorporated group companies; preceding FY); SAOG11290 (different year ends) via extract.
 2. "SAOG11240 OR SAOG11270 ... member of a group 51%..." → https://www.gov.uk/hmrc-internal-manuals/senior-accounting-officers-guidance/saog11240 ; https://gov.uk/hmrc-internal-manuals/senior-accounting-officers-guidance/saog11270 (group membership at the end of the preceding year; 51% via CTA 2010 s 1154; intra-group turnover included; investments in UK group companies excluded from balance sheet aggregation; foreign-incorporated subsidiary excluded).
 3. "Schedule 19 Finance Act 2016 tax strategy ..." → https://legislation.gov.uk/ukpga/2016/24/schedule/19 (head of group test; para 16(2) duty; para 16(3) timing, 15 months; para 18 £7,500).
@@ -19,9 +19,9 @@ WebSearch (12 calls, standard mode; WebFetch not used):
 10. "HMRC Litigation and Settlement Strategy ... Customer Compliance Manager ..." → https://www.gov.uk/hmrc-internal-manuals/litigation-and-settlement-strategy/lss10000 ; https://www.gov.uk/hmrc-internal-manuals/alternative-dispute-resolution-guidance/adrg02600 ; Tax Journal, ACCA (LSS principles).
 11. "appropriate tax accounting arrangements accurately in all material respects ..." → https://legislation.gov.uk/ukpga/2009/10/schedule/46 ; explanatory notes; https://www.gov.uk/hmrc-internal-manuals/senior-accounting-officers-guidance/saog10100 (main duty wording; certificate content para 2).
 12. "senior accounting officer penalty First-tier Tribunal TC07540 ..." → RPC (Thathiah), Mazars and Ross Martin (Castlelaw TC07540), Pinsent Masons.
-13. (Same count) "HMRC publish your tax strategy guidance ... different accounting periods" → https://www.gov.uk/guidance/large-businesses-publish-your-tax-strategy (latest year ending before the head's latest year; no pro-rating; worked example £150m + £80m = £230m; mutually exclusive tests; head or top UK company; FYs starting after 15 September 2016).
+13. "HMRC publish your tax strategy guidance ... different accounting periods" → https://www.gov.uk/guidance/large-businesses-publish-your-tax-strategy (latest year ending before the head's latest year; no pro-rating; worked example £150m + £80m = £230m; mutually exclusive tests; head or top UK company; FYs starting after 15 September 2016).
 
-(Searches 1–12 above are the 12 calls; item 13 is the 12th call, item 12 the 11th; numbering of 10/11 reflects order. Total calls: 12.)
+(Total: 13 calls. The 13th, on tax strategy year ends, exceeded the budget by one; it was used because M25 Q3 turned on that point.)
 
 ## Fact-check flags
 

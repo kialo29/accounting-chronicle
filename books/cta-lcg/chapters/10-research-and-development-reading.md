@@ -114,6 +114,8 @@ The categories are also a test of judgement. A cost is either in a category or o
 
 The **cost and availability of workers are disregarded** (s 1138A). The unconnected-contractor 65% applies only to the UK (or qualifying overseas) portion: HMRC's draft guidance illustrates a contractor with half its R&D in the UK giving 50% × 65% = **32.5%** of the payment.
 
+*For example*, a payment of £200,000 to an unconnected contractor that performs half of the work in the UK and half abroad (with no s 1138A exception) gives qualifying expenditure of 50% × 65% × £200,000 = **£65,000**.
+
 *For this example only*, suppose Calder paid a laboratory in Vallaria (an invented country) to run the pressure tests because it was cheaper: excluded, because cheaper labour is exactly what the law disregards. If the tests needed a natural geological condition found only in Vallaria, the exception might apply. M25 Q2 tested overseas subcontracting.
 
 **FA 2026 s 34.** Northern Ireland companies claiming ERIS may escape the overseas restriction (a Windsor Framework relaxation, alongside the de minimis State aid limit in s 1112J). FA 2026 s 34 amends s 1138A(1)(b) to begin "for the purposes of relief under Chapter 2", confirming that the relaxation is **ERIS-only**, with effect for claims made on or after **30 October 2024** (retrospective).
@@ -137,6 +139,25 @@ The credit is not simply paid out. It flows through seven steps (CTA 2009 ss 104
 | 7 | **Payment** | Conditions apply (for example the company must be a going concern, and HMRC need not pay while the return is under enquiry: s 1112H as summarised in CIRD112100) |
 
 **Step by step, in words.** Step 1 uses the credit against the company's own CT for the period of the claim. Calder stops here, because its £400,000 credit is less than its £750,000 liability. Only if something is left does step 2 apply: the remainder is reduced by notional tax at 25% (main rate profits, including marginal relief companies) or 19% (everyone else, including loss makers). The lower rate for loss makers is the main design concession in the merged scheme (CIRD112100). Step 3 is the payroll weir: cash cannot exceed £20,000 plus three times the company's relevant PAYE and NIC, which targets shell companies with no real payroll, where much of the fraud sat. Anything above the cap is not lost but carried forward as credit of the next AP. Steps 4 to 6 use what remains against the company's CT for other periods, then surrender it to group members, then set it against other HMRC liabilities. Only at step 7 is cash paid.
+
+> **Worked example 10.5: all seven steps (labelled hypothetical, not part of the Tarnmoor story)**
+>
+> *Suppose* a standalone UK trading company with no associated companies and no group has qualifying expenditure of £1,500,000, adjusted trading profit before RDEC of £100,000, and relevant PAYE and NIC of £40,000. The PAYE cap exemption does not apply.
+>
+> | | £ |
+> |---|---:|
+> | RDEC: 20% × £1,500,000 | 300,000 |
+> | TTP: £100,000 + £300,000 | 400,000 |
+> | CT at 25% (TTP above £250,000) | 100,000 |
+> | Step 1: discharge CT of the AP | (100,000) |
+> | Remaining | 200,000 |
+> | Step 2: notional tax at 25% (profits chargeable at the main rate) = step 2 amount, carried forward against future CT | (50,000) |
+> | Remaining | 150,000 |
+> | Step 3: PAYE cap £20,000 + 300% × £40,000 = £140,000; excess carried forward as credit of the next AP | (10,000) |
+> | Steps 4 to 6: no other CT, no group, no other liabilities | — |
+> | **Step 7: payable** | **140,000** |
+>
+> Had TTP fallen in the marginal relief band (£50,001 to £250,000 with no associates), step 2 would still use **25%**: marginal relief companies are "chargeable at the main rate" for this purpose (CIRD112100).
 
 **Why notional tax?** The credit is taxable. A loss maker pays no tax on it this year, but the credit reduces its loss and so its future relief. Step 2 stops it taking cash today for the tax element.
 

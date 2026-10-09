@@ -80,7 +80,7 @@ HMRC's guidance adds that if a buyer pays more than market value, the claim is l
 
 > **Exam lens: SBA**
 > - **Grade:** "Buildings and structures allowances" **1 (core)** (2026 grid; check the 2027 grid when published).
-> - **Past appearances:** M26 Q2 (15 marks: warehouse bought from a developer on the price paid excluding land and integral features; office built in 2010 where only alterations qualified, not planning permission); M25 Q4 (20 marks: SBA on second-hand buildings with conversion costs: "SBA qualifying expenditure was weak"); N25 Q4 (20 marks: SBA time-apportioned, 1/12th not 1/9th); M23 Q1 (20 marks: SBA on a new factory in a CT computation); N23 Q3(b) (CAs/SBA on a training facility: land, levelling, buildings).
+> - **Past appearances:** M26 Q2 (15 marks: warehouse bought from a developer on the price paid excluding land and integral features; office built in 2010 where only alterations qualified, not planning permission); M25 Q4 (20 marks: SBA on second-hand buildings with conversion costs; the examiners found SBA qualifying expenditure weak); N25 Q4 (20 marks: SBA time-apportioned, 1/12th not 1/9th); M23 Q1 (20 marks: SBA on a new factory in a CT computation); N23 Q3(b) (CAs/SBA on a training facility: land, levelling, buildings).
 > - **Style:** computations with explanations; 0.5–1 mark per point; conventional CA layout with SBA shown separately from the pools.
 > - **Traps:** SBA on land, land alteration or integral features; SBA on a pre-29 October 2018 building beyond its alterations; using the price paid for a used building; months wrongly counted; forgetting the gains add-back on sale.
 
@@ -197,7 +197,7 @@ The tool for meeting the fixed value requirement is the joint election in **CAA 
 - **Joint:** made by seller and buyer.
 - **Effect:** fixes the part of the sale price attributable to the fixtures. It is the seller's disposal value and the buyer's qualifying expenditure. The balance of the price is the price of the rest of the property.
 - **Cap:** cannot exceed the seller's original qualifying expenditure on the fixtures, or the actual price.
-- **Irrevocable;** made within **2 years** of the sale (GOV.UK guidance; s 201).
+- **Irrevocable;** made within **2 years** of the sale (GOV.UK guidance).
 
 **The negotiation.** The seller wants a **low** figure (smaller pool reduction, no balancing charge); the buyer wants a **high** figure (more qualifying expenditure). Every pound moved is a pound of allowances moved from one side to the other. A common outcome is a figure that leaves the seller with no balancing charge, with the price adjusted to compensate.
 
@@ -212,7 +212,7 @@ The tool for meeting the fixed value requirement is the joint election in **CAA 
 >
 > If the group allocates enough of its single £1m AIA to TES (chapter 8 allocates the group AIA to Calder and TES in GY2), the whole £400,000 is relieved at once instead.
 
-**The gains trap.** The election does **not** change the gains computation. TES's base cost is the **whole price** paid for the office, including the fixtures element; on a sale, the **whole price** is the proceeds. Examiners: after M23 (Q4), candidates "deducted fixtures amounts from gains computations"; after N25 (Q5), "CA-claimed expenditure is adjusted only in a loss". The only interaction is the **loss restriction** for capital allowances (TCGA 1992 s 41): an allowable loss is restricted by the net allowances given.
+**The gains trap.** The election does **not** change the gains computation. TES's base cost is the **whole price** paid for the office, including the fixtures element; on a sale, the **whole price** is the proceeds. The examiners reported after M23 (Q4) that candidates deducted fixtures amounts from gains computations, and the N25 (Q5) report stressed that CA-claimed expenditure adjusts the gains computation only where there is a loss. The only interaction is the **loss restriction** for capital allowances (TCGA 1992 s 41): an allowable loss is restricted by the net allowances given.
 
 > **Worked example: the loss restriction (hypothetical figures, TES's office)**
 > Suppose TES paid £3,000,000 for the office (no indexation: bought after December 2017) and has had allowances of £400,000 on the fixtures.
@@ -229,7 +229,7 @@ The tool for meeting the fixed value requirement is the joint election in **CAA 
 
 > **Exam lens: fixtures**
 > - **Grade:** "Fixtures" **1 (core)**.
-> - **Past appearances:** M23 Q4 (20 marks: property, factory hived down, **s 198 elections**, group roll-over; "deducted fixtures amounts from gains computations"); N25 Q5 (20 marks: group property, intra-group NGNL transfer, refurbishment with integral features, **s 198 joint election**, SDLT, roll-over; "a minority dealt with CAs and the fixtures election"); M26 Q4 (fixtures disposal value in a property question).
+> - **Past appearances:** M23 Q4 (20 marks: property, factory hived down, **s 198 elections**, group roll-over; candidates deducted fixtures amounts from gains computations); N25 Q5 (20 marks: group property, intra-group NGNL transfer, refurbishment with integral features, **s 198 joint election**, SDLT, roll-over; only a minority dealt with CAs and the fixtures election); M26 Q4 (fixtures disposal value in a property question).
 > - **Traps:** fixtures values deducted from gains; forgetting the pooling and fixed value requirements on a second-hand building; elected value above the seller's original cost; forgetting that a developer seller means no s 198 election is needed (or possible).
 > - **Layout:** the elected figure enters the CA columns (special rate or main pool), never the gains computation (except the loss restriction).
 
