@@ -2,7 +2,7 @@
 
 **Interpretation and assumptions.** A full Advanced Technical chapter on TIOPA 2010 Part 9A for FY2026, opened on the CJEU State aid judgment (19 September 2024) as the documented moment, structured on the "order of attack", with the GY5 annual CFC review (TCM, TVS, TIL) as the running case and labelled hypotheticals (law sheet 5 examples 1–6) for variants; Pillar Two, TP, CIR and hybrids are signposted only (chapters 27–30); R3 (CFC apportionment in TPLC's s 105(3A) threshold; s 371UD repealed) is taught as the "pair" in both editions.
 
-**Files.** Script `chapters/26-controlled-foreign-companies.txt` (9,301 words; target 9,000 ±10%); reading edition `chapters/26-controlled-foreign-companies-reading.md` (about 9,400 words); 16 sections plus heading. Computations: scratch `lcg-ch26/calc.py` (session scratchpad), all figures re-run.
+**Files.** Script `chapters/26-controlled-foreign-companies.txt` (9,307 words; target 9,000 ±10%); reading edition `chapters/26-controlled-foreign-companies-reading.md` (9,410 words); 16 sections plus heading. Computations: scratch `lcg-ch26/calc.py` (session scratchpad), all figures re-run.
 
 ## Sources by section
 

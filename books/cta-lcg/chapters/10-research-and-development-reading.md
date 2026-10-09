@@ -20,7 +20,7 @@ GOV.UK's guidance on the merged scheme gives the policy aim as "to support and i
 
 **The other side is abuse.** During the years of easy claims, a market grew up of advisers who promised refunds for routine work and took a percentage. HMRC revised its estimate of error and fraud for 2020–21 to **16.7%** of the cost of the reliefs (about **£1.13bn**), with **24.4%** in the old SME scheme. Later HMRC publications give lower figures for later years on different bases (for example 9.9% for 2022–23 in the HMRC Annual Report and Accounts 2024–25), which do not fully reconcile. Those numbers explain almost every procedural rule in this chapter: advance notification, the additional information form, the overseas restriction and the PAYE cap.
 
-**The debate (L7).** One side says R&D relief is among the most effective things the tax system does, and that complexity and compliance burdens deter the honest small firms who need it most. The other says a relief paid in cash to loss-making companies will attract fraud unless it is fenced, and that the fences are the price of keeping the relief. The law today reflects the second view tempered by the first. As a larger-company adviser you will meet both the group that under-claims because nobody joined up the engineers and the tax team, and the boutique adviser who offers to find a refund that is not there.
+**The debate.** One side says R&D relief is among the most effective things the tax system does, and that complexity and compliance burdens deter the honest small firms who need it most. The other says a relief paid in cash to loss-making companies will attract fraud unless it is fenced, and that the fences are the price of keeping the relief. The law today reflects the second view tempered by the first. As a larger-company adviser you will meet both the group that under-claims because nobody joined up the engineers and the tax team, and the boutique adviser who offers to find a refund that is not there.
 
 ---
 
@@ -193,7 +193,7 @@ Step 5 is where a large group finds value. A loss-making subsidiary can take cas
 > | Step 2 amount also surrendered to TEL (s 1042L) | 114,000 |
 > | **Total credit discharging TEL's GY2 CT of £2,226,250** | **600,000** |
 >
-> **Group economics:** the credit is taxable in BSL, so BSL's loss (and the group relief it surrenders to TEL) is £600,000 smaller, costing 25% × £600,000 = £150,000. Net benefit **£450,000** = 15% of £3,000,000. The steps move cash; the rate decides value.
+> **Group economics:** the credit is taxable in BSL, so BSL's GY2 loss is £600,000 smaller. The loss is time-apportioned, so half of that reduction (£300,000) falls on the post-acquisition loss surrendered to TEL and half on the pre-acquisition loss, which is restricted (chapter 14). Valuing the whole reduction at 25% gives a cost of £150,000 and a net benefit of **£450,000** = 15% of £3,000,000; because the pre-acquisition half may never be usable, the near-term cost is lower. The steps move cash; the rate decides value.
 >
 > **Payment for the surrender.** TEL pays BSL £600,000 under a written agreement. Under **CTA 2009 s 1042N(5)–(6)** (inserted by **FA 2026 s 31**, for payments made on or after **26 November 2025**), a payment for surrendered RDEC that does not exceed the credit surrendered is **ignored** in computing both companies' profits and is **not a distribution**. Any excess is outside the protection.
 
