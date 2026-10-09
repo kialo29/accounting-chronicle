@@ -442,3 +442,128 @@ A dispute settled after five years is expensive. For a recurring flow of real va
 > Practical points: the TP records regulations exclude only APAs made **on or before 31 March 2023** (SI 2023/818), so Calder still documents the royalty in its Local File; the draft ICTS regulations would exempt transactions under an APA in force. An APA does not remove the work; it removes the argument.
 
 ---
+
+## Keeping the file
+
+TP is self-assessed, so the law requires evidence. Three layers apply to a group of Tarnmoor's size.
+
+**1. The TP records regulations (SI 2023/818).**
+
+| Point | Rule |
+|---|---|
+| Who | UK members of an MNE group meeting the **CbC threshold** (consolidated revenue **€750m**, SI 2016/237 reg 3) |
+| When | CT accounting periods beginning on or after **1 April 2023** (in force 9 August 2023) |
+| What | **Master File** (TPG Chapter V Annex I: the group picture, its structure, businesses, intangibles, financing and TP policies) and **Local File** (Annex II: the company's material transactions, functional analysis and method) |
+| How | **Kept and preserved, not filed**; produced when HMRC asks (by information notice; the often-quoted 30-day period is not in the regulations as read) |
+| Local File exclusions | Transactions between two UK-resident companies (unless patent box or ring fence: reg 6); transactions covered by an APA made **on or before 31 March 2023**; no records obligation where nothing would go in the Local File |
+| Regulation lag | Reg 3(1)(c) still cross-refers to s 162, which FA 2026 omitted |
+
+**Penalties.** **FA 2007 Sch 24 para 3C** (inserted by F(No.2)A 2023 Sch 5 para 5(2), 11 July 2023): an inaccuracy involving a Part 4 computation is **presumed careless** if the person failed to keep the specified TP records (or comply with an information notice), unless it was deliberate or the person shows reasonable care. Inaccuracy penalties (Sch 24 para 4): careless **30%**, deliberate **70%**, deliberate and concealed **100%** of potential lost revenue, reduced for disclosure. Failure to keep records: up to **£3,000** per AP (FA 1998 Sch 18 para 23).
+
+**2. Country-by-country reporting (SI 2016/237).** MNE groups with consolidated revenue of at least **€750m** (measured, as the regulations are usually summarised, on the **previous** period: flagged) report, broadly, revenue, profit, tax paid and accrued, employees and assets by jurisdiction. A UK ultimate parent files with HMRC within **12 months** after the end of the period (reg 2, "filing deadline"); a UK entity may have to file where its foreign parent's country does not require or exchange reports. Penalties, as advisers summarise them: **£300** for a failure, **£60 a day** if it continues, up to **£3,000** for an inaccurate report [secondary; HMRC factsheet CC/FS59 lists the obligations].
+
+> **Worked example 27.10: Tarnmoor's documentation (in our invented case)**
+>
+> | Item | GY1 |
+> |---|---|
+> | Consolidated revenue | £1,180m |
+> | At the story's assumed €1.15 per £ (invented; never a real rate) | €1,357m |
+> | CbC threshold | €750m: exceeded (and in prior periods: chapter 1's assumption) |
+> | Consequences | TPLC files the CbC report within 12 months of each 31 December; every UK company keeps a Master File (prepared centrally) and a Local File for its cross-border dealings (TPLC: TVS services, TIL loan from GY4; TFL: TVS loan; Calder: TVS sale and royalty) |
+
+**3. Coming next: the International Controlled Transactions Schedule (ICTS).** **FA 2026 s 48** gives HMRC power to require "reporting entities" to report international controlled transactions (TP with a non-UK counterparty, or PE cases). HMRC consulted on draft regulations, a notice and a template from **16 June to 31 July 2026**, intending them to apply to **APs beginning on or after 1 January 2027**, filed with the return; draft scope excludes SME-exempt transactions and transactions under an APA in force; thresholds in an HMRC notice, higher for CbC groups. **The regulations have not been made: not law, and not examinable on FA 2026** (one adviser expects first reports by 30 September 2028 [secondary]).
+
+> **Going further: the tax function's TP calendar**
+> 1. **Each year:** refresh the Master File; update each Local File for new or changed transactions; re-test s 164A; check SME status of any new acquisition (N24 Q5); file the CbC report within 12 months; diarise s 174 claim deadlines (2 years).
+> 2. **Before a restructuring:** valuation; functional analysis (functions, assets, risks; who controls the risk); the options realistically available to each party; Local File entry; consider an APA for any recurring flow it creates; consider UTT.
+> 3. **In an enquiry:** the contemporaneous file is the defence (para 3C); MAP requests within the treaty time limit (3 years under the OECD Model wording).
+> 4. **Governance:** the published tax strategy (chapter 4) commits Tarnmoor to arm's length pricing; the SAO's "appropriate tax accounting arrangements" include TP processes.
+
+> **Exam lens: compliance and documentation**
+> - **N24 Q5 (20 marks):** TP now applies because the group is not an SME, with Master and Local File contents (**6.5 marks**); CbC conditions and exceptions (**3 marks**). The examiners reported that most candidates identified TP, but some covered it in depth and ignored easier points.
+> - LCG narrative syllabus: "UK reporting and other UK company compliance concerning transfer pricing" is expressly examinable.
+> - **Trap:** treating the Master File and Local File as returns to be filed (they are kept and produced on request); treating ICTS as law.
+
+---
+
+## How the examiner tests it
+
+**Grade:** transfer pricing and APAs **1 (core)** on the 2026 grid (and still 1 on the 2028 grid). **Appearances since May 2023:**
+
+| Sitting | Question | Marks | TP content | Examiners' comments (paraphrased unless quoted) |
+|---|---|---|---|---|
+| M23 | Q3 | 15 | Loan from a US company that may take 60% control: participation, thin cap, CIR, WHT | Main issues TP and CIR; time wasted on DPT, which does not apply to loan relationships |
+| N23 | Q6 | 20 | Methods for a manufacturer, distributor and R&D centre; LVAS; stewardship | Theory good, application weak: functions and risks not analysed |
+| N24 | Q5 | 20 | SME status lost on acquisition; Master and Local File; CbC | Most identified TP; some over-wrote it and missed easier marks |
+| M25 | Q4 | 20 | CT computation: interest-free loan to an overseas subsidiary; undercharged management fee | TP marks mostly for spotting and explaining |
+| M26 | Q1 | 20 | TP adjustments feeding CIR (ANTIE and tax-EBITDA) | Very few adjusted ANTIE and tax-EBITDA correctly |
+| M26 | Q5 | 20 | TP **excluded** | Some did TP anyway |
+
+**Style:** technical prose and computations; questions of 10, 15 or 20 marks; 0.5–1 mark per point; no letter or report format. **Approach:** state each condition, apply it, compute the adjustment and its tax, say who can claim relief; analyse functions, assets and risks before choosing a method; TP before CIR. **Traps:** forgetting the SME test, or testing it on the subsidiary alone; using the R&D ceilings; reducing UK profits under s 147; giving the overseas counterparty a UK compensating adjustment; applying s 164A to a cross-border loan, a CFC, patent box provision or different-rate companies; assuming s 164A switches off s 441 or CIR; writing TP when the question excludes it.
+
+---
+
+## What to take away
+
+Transfer pricing exists because a group is one business taxed as many companies. The **arm's length principle** prices each related party dealing as if strangers had agreed it. **TIOPA 2010 s 147** applies where there is provision between two affected persons, the participation condition is met, the provision differs from arm's length, and it gives a **potential UK tax advantage**. The arm's length provision can be **no provision at all** (s 151(2)). The rule only ever **increases** UK profits, and it ignores capital allowances and gains (ss 213–214).
+
+**Participation** means control or common control, tested at the time, or within **6 months** for financing. FA 2026 added s 148A notices, acting together (s 161), common management (s 162A) and an anti-avoidance rule (s 162B).
+
+**SMEs** are exempt: fewer than **250** staff and turnover ≤ **€50m** or balance sheet ≤ **€43m**, with linked and partner enterprises; joining a large group ends that. **s 164A** (chargeable periods commencing on or after **1 January 2026**) exempts most dealings between UK companies paying the **same rate** in the **same currency**, with no patent box provision and no excluded company; CFCs cannot use it.
+
+**Five methods** (CUP, resale price, cost plus, TNMM, profit split), chosen as the **most appropriate method** after a **functional analysis**. *DSG Retail* shows why functions, assets and risks decide the answer. **Stewardship** is not charged; **LVAS** at cost + **5%**.
+
+**In our invented story:** TPLC's recharge to TVS rose from £1.6m to **£2.1m** (adjustment **£500,000**, tax **£125,000**, collected through TEL's smaller group relief); TFL's **£120m** loan to TVS at **6%** was accepted; the interest-free TIL loan brought in **£600,000** (second half of GY4), then **£1.2m** a year; Calder's know-how sale was re-priced from **£6.0m** to **£8.0m** (adjustment **£2.0m**, CT **£500,000** plus interest, no penalty), with a Vallarian corresponding adjustment through **MAP** in GY7; a **bilateral APA** covers the Ashlar royalty (£1.2m a year) from GY6.
+
+Relief comes by **compensating adjustment** at home (s 174, 2 years), by **MAP** abroad (s 124), and by **APA** in advance where the flow recurs. Records are the defence: **Master File, Local File** (SI 2023/818) and the **CbC report** (€750m), with careless behaviour **presumed** where records are missing (FA 2007 Sch 24 para 3C).
+
+Transfer pricing decides how much interest a company may pay. The next chapter asks how much of what is left the UK will allow: **chapter 28, the corporate interest restriction**.
+
+---
+
+## Key rules and figures
+
+| Rule | Figure or test | Reference | Status |
+|---|---|---|---|
+| Basic rule | Provision; participation; differs from arm's length; potential UK tax advantage (smaller profits / larger losses) | TIOPA 2010 ss 147, 155 | V |
+| No provision at all | Arm's length provision can be none | s 151(2) | V |
+| CIR and E distributions | Ignored in deciding advantage; TP before CIR | s 155(6) | V |
+| Not CAs or gains | Part 4 does not apply to them | ss 213–214 | V |
+| FX | Qualifying financial instruments' exchange gains/losses outside the adjustment | s 173A (FA 2026) | V |
+| Interpretation | OECD Model Art 9 (18 November 2025) and TPG 2022 as amended | s 164 (FA 2026 Sch 6 para 18) | V |
+| Commissioners' sanction | Removed from 18 March 2026 | ss 208–211 omitted | V |
+| Participation | Control (CTA 2010 s 1124) or common control; financing: at the time or within 6 months | s 148 | V |
+| FA 2026 participation | s 148A notice; s 161 acting together; s 162A common management; s 162B anti-avoidance | FA 2026 Sch 6 | V |
+| Dormant | Dormant since 31 March 2004 | s 165 | V |
+| SME exemption | Small < 50 staff and ≤ €10m; medium < 250 staff and turnover ≤ €50m or balance sheet ≤ €43m; linked and partner enterprises | ss 166, 172; Rec 2003/361/EC | V / S |
+| Medium: TP notice | After an enquiry; appeal only on size; 90 days to amend | ss 168–171 | V |
+| UK-to-UK exemption | Both UK companies; within CT; same rate; same currency; no s 18A, patent box or excluded company; election out; HMRC notice | s 164A; chargeable periods commencing on or after 1 January 2026 | V (conditions via law sheet and INTM414320) |
+| CFCs | Cannot use s 164A | s 371SD(5A) | V |
+| LVAS | Cost + 5% | INTM440071 | V (manual) |
+| Guarantees | Never arm's length where loan depends on it; deemed guarantee election (4 years) | ss 153A, 153B | V |
+| Guarantee commencement | New borrowing from 1 January 2026; all from periods commencing on or after 1 January 2028 (or by election) | FA 2026 Sch 6 para 12 | V |
+| Intangibles cross-border | Arm's length, not market value, for transfers on or after 1 January 2026 | CTA 2009 s 845(4ZA) | V |
+| Compensating adjustment | UK disadvantaged person; claim within 2 years | ss 174, 176–178 | V |
+| Balancing payment | Payer within UK tax; not taxable/deductible up to the adjustment; not a distribution | ss 195–196 | V (enacted text) |
+| MAP | HMRC gives effect despite any enactment; consequential claims 12 months; OECD Model: 3 years to present a case | s 124; Art 25 | V / S |
+| APA | Tax Acts apply in accordance; void if fraudulent or negligent misinformation; past periods not before 27 July 1999 | ss 218–226 | V |
+| APA timing | HMRC target 30 months; bilateral 36+ | INTM422090 | V (manual extract) |
+| TP records | Master File and Local File for €750m groups; APs beginning on or after 1 April 2023 | SI 2023/818 | V |
+| Presumed carelessness | Missing TP records → careless unless reasonable care | FA 2007 Sch 24 para 3C | V |
+| CbC | €750m; file within 12 months | SI 2016/237 regs 2–3 | V (threshold, deadline); S (prior-period measure, penalties) |
+| ICTS | Power enacted; regs not made; intended APs from 1 January 2027 | FA 2026 s 48 | V / S |
+| Tarnmoor recharge (GY1) | £2.0m cost; charged £1.6m; arm's length £2.1m; adjustment £500,000; tax £125,000 | invented (story) | — |
+| Calder restructuring | £6.0m → £8.0m (HMRC £9.5m); adjustment £2.0m; CT £500,000 + interest; no penalty | invented (story) | — |
+| TIL loan | £600,000 (Jul–Dec GY4); £1.2m a year from GY5 | invented (story) | — |
+
+---
+
+## Statutory and case references
+
+**Statute and regulations:** TIOPA 2010 Part 4: ss 146, 147, 148, 148A, 150, 151, 153A, 153B, 154, 155, 157–163 (incl. new ss 161, 162A, 162B), 164, 164A, 165, 166, 167, 167A, 168–171, 172, 173, 173A, 174, 174A, 176–178, 191–198, 208–211 (omitted), 213, 214; Part 4A ss 217A–217T (chapter 30); Part 5 ss 218–226; s 124; s 371SD(5A). FA 2026 s 46 and Sch 5; s 47 and Sch 6 (paras 2, 3, 4, 12–16, 18, 20, 25, 28, 29, 32); s 48. FA 2025 s 22. CTA 2009 ss 845(4ZA)–(4ZG), 846. CTA 2010 ss 105(3A), 1124. FA 2004 ss 30–37. FA 2007 Sch 24 paras 3C, 4. F(No.2)A 2023 Sch 5 para 5(2). FA 1998 Sch 18 para 23. SI 2023/818 (regs 2–6). SI 2016/237 (regs 2, 3). Commission Recommendation 2003/361/EC.
+
+**HMRC guidance:** INTM412080, INTM412140, INTM413010, INTM413250, INTM414020, INTM414320, INTM414330, INTM421010–INTM421080, INTM422070, INTM422090, INTM423090, INTM440071; SP 1/2018 (MAP); CC/FS59 (CbC penalties); consultation "Transfer Pricing: International Controlled Transactions Schedule" (16 June 2026).
+
+**Cases:** *DSG Retail Ltd v HMRC* [2009] UKFTT 31 (TC) (Special Commissioners John Avery Jones and Charles Hellier, 31 March 2009); *BlackRock HoldCo 5, LLC v HMRC* [2024] EWCA Civ 330 (11 April 2024); *Test Claimants in the Thin Cap Group Litigation v HMRC* [2011] EWCA Civ 127; Case C-524/04 *Test Claimants in the Thin Cap Group Litigation* (Court of Justice, 13 March 2007); *Lankhorst-Hohorst* (Court of Justice, 2002; case number not checked).
+
+**OECD (not opened; described via statute, HMRC's manual and reproductions):** Model Tax Convention Arts 9 and 25 (18 November 2025 version referred to by s 164; the 2017 articles are the exam PDF); Transfer Pricing Guidelines 2022 (Chapters I–II methods, V documentation, VII services, IX business restructurings).
