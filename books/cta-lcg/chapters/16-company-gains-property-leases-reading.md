@@ -383,7 +383,7 @@ The whole profit, including what would otherwise be a capital gain, is trading p
 
 - **Indirect disposals (ss 356OD–356OE):** disposals of property (such as shares) deriving **at least 50%** of its value from UK land, where the person is party to an arrangement whose main purpose is to deal in or develop the land and realise a gain from disposals of property deriving value from it.
 - **Pre-intention carve-out (s 356OL):** under Condition D, the part of the gain fairly attributable to the period **before the intention to develop** was formed is excluded (and so remains a capital gain).
-- **No double charge (s 356OC):** the rule does not apply where the profit is already taxed as income.
+- **No double charge (ss 356OB–356OC):** the rule does not apply where the profit is already taxed as income.
 - Anti-fragmentation (s 356OH), tracing value (s 356OM), related parties (s 356OT).
 
 **Applying it to the field.** If the field was bought as a long-term investment and the decision to develop came later, Condition D catches the development profit but not the pre-intention growth in value; s 161 reaches the same dividing line from the other side. Had the company bought the field intending to obtain planning consent and sell, **Condition A** would make the whole profit trading from day one, whatever its accounts called the land.
