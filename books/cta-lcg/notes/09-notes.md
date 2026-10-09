@@ -52,6 +52,8 @@
 - **None with ledger numbers.** All canonical figures used as given: distribution centre £5.2m (£1.2m/£0.6m/£3.4m), SBA £102,000 and £34,000; GY2 extension SBA £58,800; TES s 198 £0.4m; depot £6.0m, TEL base cost £3,722,500; TAL hive-down 1 February GY6 at TWDV (s 948). `ledger-check.py`: 96 checks, 0 failures.
 - **Plan §5 ch 9 "TEL leases a large CNC machine ... (TEL claims, main pool)"**: kept, but I made the machine **refurbished (second-hand)** so that the main pool result does not depend on the unsettled LFL/FYA point. Proposed for the ledger.
 - **Plan wording "flood defences"**: specified as a concrete flood wall (a structure, so SBA), since land alteration is excluded from SBA (CA94010). Chapter 28 should treat the grant as capital (reducing qualifying expenditure under s 532), not income.
+- Resolved by continuity ruling R11 (TES's £400,000 s 198 fixtures are covered by the group AIA for the year to 31 March GY3; the 6% WDA of £24,000 is shown only as the position without the AIA).
+- Resolved by continuity ruling R16 (production references removed from the reading edition).
 - **Bible §1A** lists *Barclays Mercantile v Mawson* as "not to be used without verification": now used, with secondary-source status (S) noted.
 
 ---
@@ -106,7 +108,25 @@
 | TEL GY2 SBA extension | Contracted after 29 October 2018; in use throughout GY2 (consistent with the ledger's £0.0588m) |
 | TEL distribution centre: integral features treatment (GY3) | Special rate pool; cautious computation WDA 6% = **£36,000** in GY3 (alternative if 50% FYA available: £300,000 FYA + £18,000 WDA) |
 | TEL distribution centre: price split | Supported by a surveyor's report (just and reasonable, s 562) |
-| TES GY2 office: seller's original fixtures cost | **£700,000**; s 198 value £400,000; all integral features; special rate pool (WDA £24,000) unless group AIA allocated to TES covers it |
+| TES GY2 office: seller's original fixtures cost | **£700,000**; s 198 value £400,000; all integral features; (amended by R11) **AIA £400,000** from the group AIA for the year to 31 March GY3; special rate pool c/f nil (without the AIA: WDA £24,000, c/f £376,000) |
 | TEL LFL | From **1 January GY3**; refurbished (second-hand) machining centre; 10-year finance lease from an unconnected lessor; PV of minimum lease payments **£1,500,000**; rentals **£203,802** a year in arrears; implicit rate 6%; GY3 finance charge **£90,000** (deductible); capital element £113,802; main pool addition £1.5m (WDA effect £210,000); no FYA |
 | TES flood wall | GY3; concrete flood wall at a riverside site let to TEL; cost **£500,000**; local authority grant **£200,000**; in use from **1 January GY3**; SBA qualifying expenditure **£300,000**; SBA **£9,000** a year |
 | TAL hive-down | Plant at TWDV under CTA 2010 s 948 (no s 266 election needed) — as plan |
+
+---
+
+## Continuity fixes applied (9 October 2026)
+
+Applied `continuity-rulings.md` R11 and R16. Numbers re-run in Python (£400,000 − AIA £400,000 = nil c/f; without the AIA 6% × £400,000 = £24,000, c/f £376,000). `ledger-check.py`: 132 checks, 0 failures. Word counts after the fixes: script 8,163 (`wc -w`; within 7,500 ± 10%); reading edition 8,357.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R11 | reading, worked example "TES's office fixtures" | table "WDA 6% (if no AIA is allocated to cover it) (24,000); c/f 376,000" → "AIA (400,000); c/f nil"; "If the group allocates enough of its single £1m AIA to TES (chapter 8 allocates the group AIA to Calder and TES in GY2), the whole £400,000 is relieved at once instead" → "The group allocates £400,000 of its single £1m AIA to TES (chapter 8: the AIA for the year to 31 March GY3), so the whole £400,000 is relieved at once. Without the AIA, the 6% WDA would have given only £24,000 in GY2, leaving £376,000 in the pool" |
+| R11 | reading, "What to take away" fixtures bullet and key figures story row | "TES's office fixtures: £400,000" → "... £400,000, covered by the group AIA"; "TES office fixtures £400,000" → "TES office fixtures £400,000 (AIA £400,000)" |
+| R11 | script, Tarnmoor Estates office paragraph | "adds four hundred thousand pounds to its special rate pool, unless the group allocates enough ... On the pool route, the first writing down allowance is six per cent, twenty four thousand pounds" → "The group allocates four hundred thousand pounds of its single annual investment allowance to Tarnmoor Estates, so the whole four hundred thousand pounds is relieved at once. Without the allowance ... six per cent, only twenty four thousand pounds" |
+| R11 | script, "What to take away" | "office fixtures were fixed at four hundred thousand pounds." → "... four hundred thousand pounds, all covered by the annual investment allowance." |
+| R16 | reading, TEL extension heading (line ~48) | "TEL's GY2 extension (ledger)" → "TEL's GY2 extension (invented)" |
+| R16 | reading, SBA days check (line ~106) | "£34,000, the ledger figure" → "£34,000, the figure used in this book" |
+| R16 | reading, cross-border transfers (line ~332) | "... after Brexit is unclear (bible flag 25)." → "... after Brexit is unclear." |
+| R16 | reading, key figures source cell (line ~451) | "ledger; this chapter" → "invented (story)" |
+| R11, R16 | notes (this file) | "Resolved by continuity ruling R11 / R16" under Contradictions; ledger-additions TES row amended |

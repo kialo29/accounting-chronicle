@@ -31,7 +31,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 
 ## Fact-check flags
 
-1. **s 51C "financial year"**: the search extract confirmed the single AIA for chargeable periods ending in a financial year and the end-of-subsidiary's-period parent test, but not which company's financial year (I assumed the parent's Companies Act financial year, i.e. TPLC's calendar year). The Calder consequences (pre-acquisition year outside; two Calder periods ending in GY3 sharing one AIA) depend on it. **Partly verified; check s 51C(5)–(7) text.**
+1. **RESOLVED by continuity ruling R11** ("financial year" = year to 31 March, Interpretation Act 1978 Sch 1; book's reading, labelled in text). Original flag: **s 51C "financial year"**: the search extract confirmed the single AIA for chargeable periods ending in a financial year and the end-of-subsidiary's-period parent test, but not which company's financial year (I assumed the parent's Companies Act financial year, i.e. TPLC's calendar year). The Calder consequences (pre-acquisition year outside; two Calder periods ending in GY3 sharing one AIA) depend on it. **Partly verified; check s 51C(5)–(7) text.**
 2. **Short-period WDA reduction (s 56(3)) and AIA proportioning**: AIA proportioning is V (law sheet); the WDA reduction (Calder's 9-month 10.5%) is from statute knowledge, not re-opened. **UNVERIFIED (not searched; standard rule).**
 3. **Partial FYA claims (s 52(4)) and unclaimed balance to pool**: stated in both editions; not re-opened. **UNVERIFIED (standard rule).**
 4. **s 45T "disqualifying arrangements"** paraphrased as "broadly arrangements with a main purpose of securing the allowance": text not opened. Labelled "broadly". **UNVERIFIED wording.**
@@ -56,6 +56,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 ## Contradictions with plan, bible or ledger
 
 - **Ledger GY2 "The group AIA is allocated to Calder and TES (TEL needs none)".** Kept the allocation, but TEL does have AIA-eligible spend (its £0.5m second-hand milling line). The chapter presents TEL's nil allocation as a choice: Calder's second-hand plant competes on equal terms and Calder's period ends nine months earlier, so its relief reduces earlier instalments. Suggest the ledger wording "TEL gets none (its second-hand plant ranks behind Calder's)".
+- Resolved by continuity ruling R11 (the AIA year is the year to 31 March; the group AIA for the year to 31 March GY3 goes to TES £400,000 and Calder £600,000, special rate first; TEL nil because its milling line is main rate).
 - No other contradictions. TEL's £16.0000m total, pools and c/f balances match the ledger exactly.
 
 ---
@@ -97,7 +98,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 
 **Debates covered:** policy of generous FYAs versus a cut WDA on historic pools (policy paper); HMRC view on employee-use assets (personal choice limit).
 
-**Open threads:** chapter 9 should (a) give TES's £0.4m s 198 fixtures the GY2 AIA (this chapter's allocation) and (b) settle the LFL lessee FYA point (flag 19). Chapter 10 / 7 should keep Calder's £0.6m AIA (year to 31 March GY2) inside the ledger's £1.8m CAs for that AP. Chapter 11/27: the £1.4m plant DV split below.
+**Open threads:** chapter 9 should (a) give TES's £0.4m s 198 fixtures the AIA for the year to 31 March GY3 (superseded wording "GY2 AIA"; R11) and (b) settle the LFL lessee FYA point (flag 19). Chapter 10 / 7 should keep Calder's £0.6m AIA (year to 31 March GY2) inside the ledger's £1.8m CAs for that AP. Chapter 11/27: the £1.4m plant DV split below.
 
 ---
 
@@ -107,8 +108,29 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 |---|---|
 | TEL GY2 purchases (descriptions) | £9.0m new machining centres (FE); £1.2m new chillers and test-hall electrical systems (special rate, 50% FYA); £0.8m new test rigs hired to UK utility customers on two-year hires (40% FYA; TEL as lessor keeps allowances); £0.5m second-hand milling line from an unconnected competitor closing a site (main pool, no AIA); £0.3m disposal proceeds of old plant never fully expensed |
 | TEL GY2 pools c/f (ledger-consistent) | Main pool £34,554,800; special rate pool £6,204,000 |
-| Group AIA, GY2 | £1,000,000: TES £400,000 (office fixtures acquired GY2, not new); Calder £600,000 (second-hand plant, AP to 31 March GY2); TEL nil |
+| Group AIA, year to 31 March GY3 (amended by R11; was "GY2") | £1,000,000: TES £400,000 (office fixtures acquired GY2, second-hand integral features); Calder £600,000 (second-hand special rate plant, AP to 31 March GY3); TEL nil. Calder's £600,000 of second-hand plant in its AP to 31 March GY2 used the AIA for the year to 31 March GY2 |
 | Calder AIA, AP to 31 March GY1 | Own £1m AIA (pre-acquisition period; outside the group) |
 | Calder GY3 sale of plant to TVS (1 October GY3), DV £1.4m | FE machines DV £900,000 → s 59A charge £900,000; long-life heavy test bed (50% FYA) DV £200,000 → s 59B charge £100,000 and £100,000 off the special rate pool; older main-pool plant DV £300,000 → main pool deduction. Total special balancing charges **£1,000,000** (CT at 25% £250,000) in Calder's 9-month AP to 31 December GY3; each DV below original cost |
-| Calder 9-month AP | WDA rate 10.5% (9/12 × 14%); AIA cap £750,000; both Calder periods ending in GY3 share the GY3 group AIA |
+| Calder 9-month AP | WDA rate 10.5% (9/12 × 14%); AIA cap £750,000; (amended by R11) the 9-month AP falls in the AIA year to 31 March GY4, not the same AIA year as Calder's year to 31 March GY3 |
 | Hypotheticals (not story facts) | £500,000 split machine (AIA £200,000 / FE £300,000; DV £250,000 → charge £150,000, pool £100,000); £300,000 30-year furnace (LLA limit £10,000 in GY2); £40,000 120g/km car (WDA £2,400); hospitality launch (40 of 60 days customer use) |
+
+---
+
+## Continuity fixes applied (9 October 2026)
+
+Applied `continuity-rulings.md` R11 (and the R16 search, which found no production words in either edition). Numbers re-run in Python (AIA £400,000 + £600,000 + nil = £1,000,000; 9-month cap £1,000,000 × 9/12 = £750,000). `ledger-check.py`: 132 checks, 0 failures. Word counts after the fixes: script 8,242 (`wc -w`; within 7,500 ± 10%); reading edition 8,222.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R11 | reading, "The group rule (s 51C)" | (no statement of whose financial year) → added: s 51C has no definition and does not import CA 2006 s 390; read with the Interpretation Act 1978 Sch 1, "financial year" means the year to 31 March (book's reading) |
+| R11 | reading, acquisitions bullets | "Calder's year to 31 March GY2 ... shares the GY2 group AIA" → "shares the AIA for the year to 31 March GY2 with the other companies' GY1 periods"; "two periods ending in the same financial year ... both end in GY3" → year to 31 March GY3 shares with the GY2 periods; 9-month AP to 31 December GY3 falls in the next AIA year with the GY3 periods (capped at £750,000) |
+| R11 | reading, worked example | "the group AIA for GY2" → "the group AIA for the year to 31 March GY3"; TES row reason "Not new: no FYA available" → "Second-hand integral features: special rate, no FYA"; CVE row "Year to 31 March GY2, second-hand plant ... instalments falling due sooner" → "AP to 31 March GY3, second-hand special rate plant: no FYA"; TEL row → "its £0.5m second-hand milling line is main rate (14%); special rate first"; added line on Calder's £600,000 in its AP to 31 March GY2 using the previous AIA year |
+| R11 | reading, Going further "Year-end changes" | "two periods ending in GY3, both drawing on the GY3 group AIA" → the two periods fall in different AIA years (as above) |
+| R11 | reading, TEL computation note | "no AIA (allocated to Calder and TES)" → "no AIA (the group allocated it to special rate spending in TES and Calder)" |
+| R11 | reading, summary bullet, key rules row, key figures row, references | "periods ending in the financial year" → "... the year to 31 March" (Interpretation Act 1978 Sch 1 added to authority and references); "Story: GY2 group AIA" → "Story: group AIA, year to 31 March GY3" (Calder's £600,000 described as second-hand special rate plant, AP to 31 March GY3) |
+| R11 | script, "The group rule is the Advanced Technical point" | added: the section does not define financial year; on this book's reading with the Interpretation Act nineteen seventy eight it is the year to the thirty first of March |
+| R11 | script, "Two consequences matter" | "shares the group's single allowance for Group Year Two ... both end in Group Year Three. One allowance covers both" → shares that allowance year with the Group Year One periods; the year to March Group Year Three shares with the Group Year Two periods; the nine-month period falls in the next allowance year (capped at seven hundred and fifty thousand pounds) |
+| R11 | script, "So where should the allowance go?" | "for Group Year Two ... second-hand plant bought in its year to ... Group Year Two ... competes with Calder's on equal terms ... Calder's period ends nine months earlier" → for the year to March Group Year Three; Tarnmoor Estates' second-hand integral features (special rate); Calder's second-hand special rate plant (year to March Group Year Three); the milling line is main rate at fourteen per cent, so special rate goes first; Calder's earlier six hundred thousand pounds used the previous year's allowance |
+| R11 | script, computation note | "because the group gave it to Calder and Tarnmoor Estates" → "because the group allocated it to special rate spending in Tarnmoor Estates and Calder" |
+| R11 | script, "What to take away" | "ending in the financial year" → "ending in the same financial year, the year to the thirty first of March" |
+| R11 | notes (this file) | flag 1 marked resolved; "Resolved by continuity ruling R11" under Contradictions; open thread (a) and ledger-additions rows (group AIA; Calder 9-month AP) amended |

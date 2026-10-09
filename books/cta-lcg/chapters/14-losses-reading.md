@@ -50,7 +50,7 @@ Other kinds of loss have their own rules, and the differences are a favourite tr
 |---|---|---|---|---|
 | Trading loss (post-2017) | Total profits (s 37) | 12 months, total profits (s 37) | Total profits by claim, any amount (s 45A) | Yes, in full |
 | NTLR deficit (post-2017; chapter 12) | Total profits (CTA 2009 s 463B) | 12 months, **NTLR profits only** (ss 463E–463F) | Total profits, claim within 2 years after the later period (s 463G) | Yes, in full |
-| Excess management expenses (chapter 13) | Deducted first from total profits (CTA 2009 s 1219) | **None** | As next period's expenses, by claim within 2 years; priority lost (s 1223) | Only the excess over the company's gross profits |
+| Excess management expenses (chapter 13) | Deducted first from total profits (CTA 2009 s 1219) | **None** | As next period's expenses, by claim within 2 years; priority lost (s 1223) | Only the excess over the company's profit-related threshold (gross profits plus apportioned controlled foreign company (CFC) profits) |
 | Capital loss | Gains only | **None** | Gains only | No (s 171A instead; chapter 17) |
 
 One more current-year route matters most of all in a group: the loss-making company can **surrender its current-year loss as group relief** to a company in the same 75% group for the overlapping period (Part 5; chapter 15). Current-year group relief, like s 37, is **outside Part 7ZA**. A pound of loss used now, somewhere in the group, is almost always worth more than a pound carried forward.
@@ -155,7 +155,7 @@ Notice the timing: the GAAS is filed long after the year end, when the group kno
 
 In a listed group the largest losses are often not trading losses but the holding company's interest and running costs.
 
-> **Worked example 14.3: TPLC's non-trading amounts, GY1 (invented; £000; canonical ledger figures)**
+> **Worked example 14.3: TPLC's non-trading amounts, GY1 (invented; £000)**
 >
 > | | £000 |
 > |---|---|
@@ -166,17 +166,20 @@ In a listed group the largest losses are often not trading losses but the holdin
 > | **NTLR deficit** | **6,590** |
 > | Management expenses (after excluding £0.9m capital deal costs; chapter 13) | 8,000 |
 > | Less recharge income from TVS at arm's length (chapter 27) | (2,100) |
-> | **Excess management expenses** | **5,900** |
-> | **Surrendered to TEL as current-year group relief** | **12,490** |
+> | Excess over gross profits | 5,900 |
+> | Less CFC chargeable profits apportioned to TPLC from Tarnmoor Capital Ltd (TCM, the group's Marrovian finance company), part of the profit-related threshold (s 105(3A); chapters 13 and 26) | (825) |
+> | **Excess management expenses surrenderable** | **5,075** |
+> | Carried forward as surplus management expenses (s 1223) | 825 |
+> | **Surrendered to TEL as current-year group relief (6,590 + 5,075)** | **11,665** |
 
 The options, in the order the examiner expects (N25 Q4 asked exactly this):
 
 - **NTLR deficit:** against TPLC's own total profits of GY1 (none left); carry back 12 months against **NTLR profits** only (none); carry forward against total profits by claim (then within Part 7ZA); or **surrender in full** as current-year group relief, whatever TPLC's own profits.
-- **Excess management expenses:** no carry-back; carry forward as next period's management expenses by claim (within Part 7ZA, s 1219(1A) priority lost); or surrender as current-year group relief **only to the extent they exceed TPLC's gross profits** (CTA 2010 s 105; chapter 15).
+- **Excess management expenses:** no carry-back; carry forward as next period's management expenses by claim (within Part 7ZA, s 1219(1A) priority lost); or surrender as current-year group relief **only to the extent they exceed TPLC's profit-related threshold, gross profits plus apportioned CFC profits** (CTA 2010 s 105(3A); chapter 15).
 
 **Order of events.** The CIR comes first. The £2.21m disallowed is not part of the deficit: it is carried forward under TIOPA 2010 Part 10 and can be reactivated later (some of Tarnmoor's was reactivated in GY3, chapter 28).
 
-TPLC surrendered both amounts, £12.49m, to TEL. Current-year group relief is unrestricted and certain; carried forward, the same amounts would face the 50% rule, claim deadlines, and the risk that a later change in ownership would strand them.
+TPLC surrendered the deficit and the surrenderable management expenses, £11.665m in all, to TEL; the other £825,000 of management expenses carried forward. Current-year group relief is unrestricted and certain; carried forward, the same amounts would face the 50% rule, claim deadlines, and the risk that a later change in ownership would strand them.
 
 > **Going further: the holding company's deficits.** A recurring audit point in large groups is a parent with years of carried-forward NTLR deficits and management expenses that "nobody claimed". Check each year that current-year group relief claims and consents are made (FA 1998 Sch 18 Part 8; chapter 15), that the CIR allocation of disallowed amounts to particular companies (TIOPA 2010 Sch 7A) is chosen with group relief in mind, and that carried-forward balances are tracked for Part 7ZA and Part 14.
 
@@ -249,7 +252,7 @@ Imagine a company that has run out of business but kept its tax losses. Its shar
 
 ## Brackenwell's £8.6m
 
-> **Worked example 14.4: Brackenwell's pre-change losses (invented; canonical ledger figures; £000)**
+> **Worked example 14.4: Brackenwell's pre-change losses (invented; £000)**
 >
 > | Source | £000 |
 > |---|---|
@@ -463,9 +466,9 @@ Losses are only half of the group story. Chapter fifteen, on group relief, conso
 | Administration AP | Ends immediately before the day of entry | CTA 2009 s 10 |
 | Final-year rate; repayment interest | Fixed / proposed / penultimate; ≤ £2,000 not taxable | CTA 2010 ss 626–633 |
 | Gains group in liquidation | Survives | TCGA 1992 s 170(11) |
-| Story: Brackenwell pre-change losses | £5.3m + £0.7m + £2.6m = **£8.6m**; restricted (Ch 2) | ledger |
-| Story: Helmside | c/f £1.2m used v £2.5m profit in GY4; TTP £1.3m; own £5m allowance | ledger |
-| Story: TPLC GY1 | NTLR deficit £6.59m + excess ME £5.9m = £12.49m to TEL | ledger |
+| Story: Brackenwell pre-change losses | £5.3m + £0.7m + £2.6m = **£8.6m**; restricted (Ch 2) | invented (story) |
+| Story: Helmside | c/f £1.2m used v £2.5m profit in GY4; TTP £1.3m; own £5m allowance | invented (story) |
+| Story: TPLC GY1 | NTLR deficit £6.59m + surrenderable ME £5.075m (excess £5.9m less CFC apportionment £825,000) = £11.665m to TEL; £825,000 ME c/f | invented (story) |
 | Story: GAAS | TPLC nominated from GY1; whole £5m to TEL in GY1–GY4 | this chapter |
 
 ## Statutory and case references

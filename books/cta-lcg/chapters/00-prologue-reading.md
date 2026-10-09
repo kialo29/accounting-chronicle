@@ -60,7 +60,7 @@ Then came the **apportionment**. On a "but for" approach, without the tax advant
 
 The Supreme Court refused permission to appeal. The Court of Appeal's judgment stands.
 
-> **Status note.** The facts above come from the judgments as summarised on Find Case Law, the Judiciary press summary and practitioner commentaries (listed in the notes). The **"sole raison d'être"** words and the paragraph references (97, 186–187, 192–193) were checked against the judgment in the law sheets (9 October 2026). The Supreme Court's permission list prints the date **13 October 2024** (a Sunday) and the citation [2024] EWCA Civ 419; Find Case Law's citation is [2024] EWCA Civ 330, which this book uses.
+> **Status note.** The facts above come from the judgments as summarised on Find Case Law, the Judiciary press summary and practitioner commentaries. The **"sole raison d'être"** words and the paragraph references (97, 186–187, 192–193) were checked against the judgment (9 October 2026). The Supreme Court's permission list prints the date **13 October 2024** (a Sunday) and the citation [2024] EWCA Civ 419; Find Case Law's citation is [2024] EWCA Civ 330, which this book uses.
 
 ## Why one loan can get two answers.
 

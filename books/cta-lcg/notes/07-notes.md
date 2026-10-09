@@ -1,8 +1,8 @@
 # Notes: Chapter 7, The large company computation
 
-**Interpretation and assumptions.** Wrote the AT-level CT computation chapter per plan §5 (owned topics: badges for companies, employment costs, Part 20 items, income not otherwise charged, QCDs, LFL lessee deductions, rates/MR/straddle, the full TEL GY2 computation). Kept all ledger figures; designed TEL's GY2 adjustments so PBT reconciles to the canonical £42.0m; taught the QCD, EBT, pension spreading, LFL and MR points as labelled hypotheticals so the ledger's TTP £8.08m and CT £2.02m are untouched. TKS files unavailable (addendum): TKS recaps limited to what the bible §4.1 and ledger §1 record.
+**Interpretation and assumptions.** Wrote the AT-level CT computation chapter per plan §5 (owned topics: badges for companies, employment costs, Part 20 items, income not otherwise charged, QCDs, LFL lessee deductions, rates/MR/straddle, the full TEL GY2 computation). Kept all ledger figures; designed TEL's GY2 adjustments so PBT reconciles to the canonical £42.0m; taught the QCD, EBT, pension spreading, LFL and MR points as labelled hypotheticals so the ledger's TTP and CT are untouched (now TTP £8,905,000 and CT £2,226,250 after continuity ruling R3; originally £8.08m / £2.02m). TKS files unavailable (addendum): TKS recaps limited to what the bible §4.1 and ledger §1 record.
 
-**Files:** `chapters/07-large-company-computation.txt` (script, 8,616 words; target 8,500 ±10%); `chapters/07-large-company-computation-reading.md` (reading edition, about 8,400 words). Computations: scratch `.../scratchpad/lcg-ch07/calc.py` (all assertions pass); `ledger-check.py` re-run: 96 checks, 0 failures (no canonical number changed).
+**Files:** `chapters/07-large-company-computation.txt` (script, 8,699 words after the continuity fixes; target 8,500 ±10%); `chapters/07-large-company-computation-reading.md` (reading edition, 8,430 words). Computations: scratch `.../scratchpad/lcg-ch07/calc.py` (all assertions pass); `ledger-check.py` re-run: 96 checks, 0 failures (no canonical number changed).
 
 ---
 
@@ -31,7 +31,7 @@ WebSearch (12 used; `mode: standard`):
 1. **ScottishPower Supreme Court judgment pending** (UKSC/2025/0047, heard 18–19 May 2026). Both editions say "judgment reserved when this chapter was written; check the outcome". Re-check before publication; if decided, update the section "Entertaining, gifts, fines and crimes".
 2. **Calder's ex gratia payment: deductibility on general principles where only part of the trade ceases** is this book's view on invented facts (labelled in both editions); the s 79 cap (£27,036) is given as the fallback. HMRC's specific view on part-closures (BIM472xx beyond BIM47210) not opened. Bible flag **20 (ss 76–81)**: **partly resolved** (s 79 verified via legislation.gov.uk search extract and BIM47210; s 76 described from BIM47210; ss 77, 78, 80, 81 not opened and not taught).
 3. **Bible flag 24 (s 105 restriction on surrender of excess QCDs): resolved** (legislation.gov.uk s 105; CTM80142; Explanatory Notes): only the excess over the surrendering company's profits (now "profit-related threshold") is surrenderable; QCDs treated as surrendered first.
-4. **Bible flag 55 (TPLC recharge income characterisation): still open.** Chapter treats TPLC's £2.2m GY2 recharge to TVS as income not otherwise charged (s 979), labelled as Tom's/the book's working assumption. No change to ledger figures (TPLC excess ME £6.3m = £8.5m − £2.2m either way).
+4. **Bible flag 55 (TPLC recharge income characterisation): still open.** Chapter treats TPLC's £2.2m GY2 recharge to TVS as income not otherwise charged (s 979), labelled as Tom's/the book's working assumption. No change to ledger figures (TPLC excess ME £6.3m = £8.5m − £2.2m either way). **Settled by continuity ruling R17** (s 979 is the book's working assumption; s 105 outcome identical either way); surrender now capped by R3 at £5,475,000.
 5. **Marson v Morton**: secondary sources only (ACCA, HMRC BIM summaries via search); report citation (often given as 59 TC 381) **not verified** and removed; facts not stated because sources conflict.
 6. **Section numbers not verified and therefore removed** from the reading edition: CTA 2010 s 3, s 8 (straddle apportionment), s 18B (MR formula), CTA 2009 s 297 (trading LR debits), FRS 102 s 26. References now point to "CTA 2010 Part 2" and "CTA 2009 Part 5". The MR formula wording relies on bible §3.2 (V) and TKS.
 7. **s 1290(1A) five-year rule**: stated as "a period beginning more than 5 years after the end of the period of contribution" (LS4 and bible say "a period starting more than 5 years after the period of contribution"). Wording "after the end of" is from memory of the statute: **check s 1290(1A)** (substance unaffected for teaching).
@@ -41,7 +41,7 @@ WebSearch (12 used; `mode: standard`):
 11. **Part 12 and tax-advantaged schemes**: deliberately not taught (story options are non tax-advantaged); whether/how Part 12 relief applies on CSOP/SAYE exercises not verified.
 12. **ScottishPower details** (about £28m; settlements 2013–2016; nominal penalties) from law firm commentary and the CA citation page; the "replacement" principle summary is from RPC/Simmons commentary.
 13. **TEL QIP dates (14th of months 3, 6, 9, 12)** stated in the reading edition; chapter 3 owns QIPs and bible flag 6 (whether the £20m is divided, and whether the divisor is associated or related 51% group companies) remains **open**. TEL is very large on any divisor, so nothing turns on it here.
-14. **RDEC surrender to TEL**: chapter signposts that Brackenwell's surrendered RDEC discharges part of TEL's £2.02m; the net payable is **not computed** (ledger flags PAYE cap check; chapter 10 owns it).
+14. **RDEC surrender to TEL**: chapter signposts that Brackenwell's surrendered RDEC discharges part of TEL's £2,226,250 (R3; R2/R7: £600,000 discharged, net £1,626,250, QIPs still on the full liability); the net payable is **not computed** (ledger flags PAYE cap check; chapter 10 owns it).
 15. **2027 grid**: all items here graded 1 on the 2026 grid; check the 2027 grid when published (no grade change expected to matter; 2028 grid keeps badges at 1).
 16. Exam-intel quote used verbatim: M26 ER "whilst the marginal rate of tax between the thresholds is 26.5%, this is not the rate that should be applied in full" (exam-intel teaching notes give this full form; the paper table shows it with an ellipsis). Check against the M26 ER PDF before publication.
 
@@ -51,6 +51,8 @@ WebSearch (12 used; `mode: standard`):
 - **Associated companies wording**: the ledger's "GY2–GY4 10" is the divisor (count including the company itself); the chapter says TEL has **9 associated companies (divisor 10)**, consistent with plan §6.3 ("each company's divisor is the count shown").
 - **Law sheet 4 trap 18** says consortia are outside LCG; bible §3.1 corrects it (V). This chapter refers to Helmside consortium relief per the ledger; no conflict.
 - No other contradictions found.
+- **TPLC's surrender capped by the s 105(3A) profit-related threshold** (TCM's £825,000 CFC apportionment): TPLC ME surrender GY2 £5,475,000 (not £6.3m); TEL group relief £17.095m, TTP £8,905,000, CT £2,226,250. Resolved by continuity ruling R3.
+- Production references in the reading edition ("ledger" source cells; "bible flag 55"). Resolved by continuity ruling R16.
 
 ## Pronunciation guide
 
@@ -107,9 +109,9 @@ TEL, year ended 31 December GY2 (£000):
 - No-adjustment items: annual bonus **2,000** paid **31 March GY3**; staff party **120**; ERP costs **24,000** (ledger); specific trade debt impairment (no amount); legal costs of defending the prosecution (no amount).
 - Pension contributions paid: GY1 **£11.0m**; GY2 **£11.5m** (no s 197 spreading). Accounts pension charge GY2 £11.8m. Contributions paid on the 22nd of the following month.
 - TPLC option plan: not tax-advantaged; employees taxed on exercise. (No share price fixed.)
-- QIPs: four of **£505,000** due 14 March, 14 June, 14 September, 14 December GY2 (derived from canonical CT; subject to chapter 3's QIP rules and the RDEC surrender, chapter 10).
+- QIPs: four of **£556,562.50** due 14 March, 14 June, 14 September, 14 December GY2 (amended by R3; was £505,000; on the full liability, R2; chapter 3 tells TEL's early-forecast underpayment).
 - TPLC GY2 recharge income (£2.2m, ledger) characterised as **income not otherwise charged** (working assumption; flag 55).
 
 Calder, 9-month AP to 31 December GY3: Dan's package paid **30 September GY3**, deductible in full in that AP: **£97,812** (statutory £9,012; holiday £3,800; PENP £25,000; ex gratia £60,000 incl. £10,000 pension contribution), excluding the legal fee (amount not fixed in TKS ledger). Fallback s 79 cap **£27,036**. Calder's MR limits for the 9-month AP (divisor 10): £3,750 / £18,750.
 
-Labelled hypotheticals (NOT story facts): TEL £1.0m EBT contribution (£0.6m deductible GY2); pension spreading CPCP £1.0m / CCCP £2.6m (excess £1.5m; £1.6m now, £0.5m in each of next two periods); TEL £200,000 QCD (TTP £7.88m, CT £1.97m, saving £50,000); LFL rentals £500,000 / finance charge £120,000; stand-alone company TTP £150,000, CT £36,000.
+Labelled hypotheticals (NOT story facts): TEL £1.0m EBT contribution (£0.6m deductible GY2); pension spreading CPCP £1.0m / CCCP £2.6m (excess £1.5m; £1.6m now, £0.5m in each of next two periods); TEL £200,000 QCD (TTP £8,705,000, CT £2,176,250, saving £50,000; amended by R3, was £7.88m / £1.97m); LFL rentals £500,000 / finance charge £120,000; stand-alone company TTP £150,000, CT £36,000.

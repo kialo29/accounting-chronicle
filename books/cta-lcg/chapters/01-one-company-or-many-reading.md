@@ -73,7 +73,7 @@ But the consolidated charge is an accounting figure:
 - it includes **deferred tax**, which is not a payment but a recognition of tax that will fall due, or be saved, in later years (chapter 6);
 - it reflects consolidation adjustments that no tax return contains.
 
-The UK tax bill is a set of **separate liabilities, company by company**, each computed on that company's TTP and paid on its own timetable. In GY1, TEL's CT after group and consortium relief is **£2,427,500** (TTP £9.71m × 25%); Calder, in its first group accounting period, computes CT of **£750,000** (TTP £3.0m × 25%) before setting off its RDEC. There is **no group return** for corporation tax.
+The UK tax bill is a set of **separate liabilities, company by company**, each computed on that company's TTP and paid on its own timetable. In GY1, TEL's CT after group and consortium relief is **£2,633,750** (TTP £10.535m × 25%); Calder, in its first group accounting period, computes CT of **£750,000** (TTP £3.0m × 25%) before setting off its RDEC. There is **no group return** for corporation tax.
 
 There is a second reason the two numbers differ. The accounts measure profit under accounting standards; tax law then adjusts it, adding back some costs, deducting others, replacing depreciation with capital allowances. Some differences reverse later and some never do. The consolidated charge captures the reversing ones as deferred tax; the return simply taxes this year's adjusted profit.
 
@@ -111,7 +111,7 @@ The matrix below is owned by this chapter and applied throughout the book. Learn
 
 Run Tarnmoor through the lists in GY1 and the family changes shape.
 
-**Associated companies.** TPLC controls everything it owns outright: TPLC, TEL, TES, TFL, TWS, TVS, TCM, TIL, and Calder from 1 April. **Nine.** The two overseas companies count (association turns on control, not residence). Tarnmoor Pumps does not count (dormant). Helmside does not count: 45% is not control, and no single shareholder controls it. So each company's thresholds are divided by **9** (itself plus eight associates).
+**Associated companies.** TPLC controls everything it owns outright: TPLC, TEL, TES, TFL, TWS, TVS, TCM, TIL, and Calder from 1 April. **Nine.** The two overseas companies count (association turns on control, not residence). Tarnmoor Pumps does not count (dormant). Helmside does not count: 45% is not control, and no single shareholder controls it. For marginal relief a company counts if associated **at any time in the AP**, so each company's limits are divided by **9** at once (itself plus eight associates). The QIP count is taken on a different day (see "Tarnmoor on the ladder").
 
 **Group relief.** Every wholly owned company passes the 75% tests, but losses pass only between UK related companies. TVS and TCM are outside the charge, so their losses stay abroad. **TIL**, though incorporated in Ireland, is UK resident while its board meets in Leeds, so it can surrender and claim like any other UK company. **Helmside** is not in the group relief group at all: it is a **consortium company**, and its losses flow in proportion to the members' holdings (chapter 15).
 
@@ -119,7 +119,7 @@ Run Tarnmoor through the lists in GY1 and the family changes shape.
 
 **Worldwide group (CIR).** TPLC and every subsidiary in its consolidated accounts, including TVS, TCM and the dormant Pumps company. Helmside sits outside it as an unconsolidated joint venture.
 
-| Company | Associated (divisor 9) | 75% group relief group | Gains group | Worldwide group | Note |
+| Company | Associated (marginal relief divisor 9) | 75% group relief group | Gains group | Worldwide group | Note |
 |---|---|---|---|---|---|
 | TPLC | ✓ | ✓ | ✓ (principal) | ✓ (ultimate parent) | |
 | TEL, TES, TFL, TWS | ✓ | ✓ | ✓ | ✓ | |
@@ -151,9 +151,9 @@ Every line is a **cliff edge**: one pound or euro either side changes a company'
 
 | Rung | Measure | Threshold | What it switches on | Authority | Status | Chapter |
 |---|---|---|---|---|---|---|
-| Marginal relief | Augmented profits | Lower limit £50,000, upper limit £250,000, each divided by 1 + associated companies and time-apportioned | Small profits rate 19% / marginal relief (fraction 3/200) below the upper limit; main rate 25% above | CTA 2010 Part 3A | V | 7 |
-| Large company (QIPs) | Augmented profits | > **£1.5m**, divided by 1 + associated companies, reduced for short periods | Instalments in months 7, 10, 13 and 16; first-year exception where not large in the previous period and profits ≤ £10m (divided) | SI 1998/3175 reg 3; CTM92520 | V (rates) / guidance (divisor) | 3 |
-| Very large company (QIPs) | Augmented profits | > **£20m**, divided by 1 + associated companies, reduced for short periods | Instalments in months 3, 6, 9 and 12; **no** first-year exception | SI 1998/3175 (APs beginning on or after 1 April 2019); CTM92800 | V / guidance (divisor) | 3 |
+| Marginal relief | Augmented profits | Lower limit £50,000, upper limit £250,000, each divided by 1 + associated companies (associated at any time in the AP) and time-apportioned | Small profits rate 19% / marginal relief (fraction 3/200) below the upper limit; main rate 25% above | CTA 2010 Part 3A | V | 7 |
+| Large company (QIPs) | Augmented profits | > **£1.5m**, divided by 1 + associated companies counted on the day before the AP begins, reduced for short periods | Instalments in months 7, 10, 13 and 16; first-year exception where not large in the previous 12 months and profits ≤ £10m (divided) | SI 1998/3175 reg 3; CTM92520, CTM92530 | V (rates) / guidance (divisor) | 3 |
+| Very large company (QIPs) | Augmented profits | > **£20m**, divided by 1 + associated companies counted on the day before the AP begins, reduced for short periods | Instalments in months 3, 6, 9 and 12; **no** first-year exception | SI 1998/3175 (APs beginning on or after 1 April 2019); CTM92800, CTM92530 | V / guidance (divisor) | 3 |
 | CIR de minimis | Worldwide group's aggregate net tax-interest expense | > **£2m** a year (pro rata for long or short periods) | Interest restriction can bite; below it no restriction | TIOPA 2010 s 392(3) | V | 28 |
 | Deductions allowance | Profits against which carried-forward losses are set | **£5m** per company or group per 12 months | Only 50% of profits above the allowance can be relieved by carried-forward losses; one allowance per group (nomination needed) | CTA 2010 Part 7ZA (ss 269ZR–269ZV) | V | 14 |
 | UTT notification | Tax advantage | > **£5m** | Notify uncertain tax treatments (if also above the £200m/£2bn rung) | FA 2022 Sch 17 | V | 4 |
@@ -173,7 +173,7 @@ Two further points. HMRC's Large Business directorate works with most UK busines
 > - **Grades (2026 grid):** CT self-assessment 1; SAO 1; tax strategy 1; group relief (consortia included for LCG) 1; CIR 1; TP and APAs 1; CFCs 1; notification of uncertain tax treatment 3; MTT and DTT 3. No row is "thresholds": they are tested inside these rows.
 > - **Past appearances:** **N24 Q5 (20 marks)**: a US multinational buys a UK SME; the marking guide gave 4 marks for filing and QIPs in a large group (thresholds divided across the group, payment dates), 3 for CbC reporting, 6.5 for TP now applying (not an SME) with master and local file contents, 3.5 for CIR (file to protect the position, reporting company, abbreviated return) and 3 for stamp duty on the share purchase. Examiners: most found TP, but some wrote at length on it and ignored easier points; some raised hybrids with no trigger. **N23 Q5 (10 marks)**: SAO thresholds known but misapplied (which companies count). **M25 Q3 (15 marks)**: tax strategy thresholds with different year ends; candidates apportioned subsidiaries' figures instead of using the accounts for the year ending in the parent's financial year. **M25 Q2**: very large company instalments with changing forecasts done badly.
 > - **Style:** technical prose; list the obligations a transaction switches on, with the threshold and the authority; 0.5–1 mark per point.
-> - **Traps:** dividing by the wrong number (associated companies, counting the company itself); forgetting that overseas companies count as associates; SAO applies to **UK-incorporated** companies; very large companies have no first-year exception; mixing the tests' measurement periods; treating TP as optional once a target joins a large group.
+> - **Traps:** dividing by the wrong number (associated companies, counting the company itself), or counting on the wrong day (QIPs: the day before the AP begins; marginal relief: any time in the AP); forgetting that overseas companies count as associates; SAO applies to **UK-incorporated** companies; very large companies have no first-year exception; mixing the tests' measurement periods; treating TP as optional once a target joins a large group.
 > - **Layout:** a short table or numbered list of obligations, each with threshold, deadline and penalty.
 
 ---
@@ -193,28 +193,30 @@ Two further points. HMRC's Large Business directorate works with most UK busines
 >
 > The €1.15 rate is invented for illustration only; even at parity revenue would exceed €750m.
 >
-> **QIP thresholds for each Tarnmoor company in GY1 (divisor 9)**
+> **Thresholds for each 31 December Tarnmoor company in GY1: two counts**
+>
+> Marginal relief counts a company associated **at any time** in the AP, so Calder counts at once: divisor **9**. HMRC's manuals (CTM92530; COM95001) count associates for QIPs **on the day before the AP begins**: on 31 December before GY1 the association was TPLC, TEL, TES, TFL, TWS, TVS, TCM and TIL, so the QIP divisor is **8**.
 >
 > | | £ |
 > |---|---|
-> | Large: £1,500,000 ÷ 9 | 166,667 |
-> | Very large: £20,000,000 ÷ 9 | 2,222,222 |
 > | Marginal relief lower limit: £50,000 ÷ 9 | 5,556 |
 > | Marginal relief upper limit: £250,000 ÷ 9 | 27,778 |
+> | QIP large: £1,500,000 ÷ 8 | 187,500 |
+> | QIP very large: £20,000,000 ÷ 8 | 2,500,000 |
 >
 > **Calder before and after**
 >
 > | | Calder alone (TKS ch 5) | Calder's first group AP (1 April GY1 – 31 March GY2) |
 > |---|---|---|
-> | Associated companies | 0 (divisor 1) | 8 (divisor 9) |
+> | Associated companies | 0 (divisor 1) | For QIPs (counted 31 March GY1, the day before the AP): 0 (divisor 1); for marginal relief (any time in the AP): 8 (divisor 9) |
 > | TTP (£) | 2,000,000 | 3,000,000 |
-> | Large threshold (£) | 1,500,000 | 166,667 |
-> | Very large threshold (£) | 20,000,000 | 2,222,222 |
-> | Status | Large (was large in the prior period) | **Very large** |
+> | Large threshold (£) | 1,500,000 | 1,500,000 |
+> | Very large threshold (£) | 20,000,000 | 20,000,000 |
+> | Status | Large (was large in the prior period) | **Large** (large before, so no first-year exception) |
 > | CT at 25% (£) | 500,000 | 750,000 (before RDEC set-off of £400,000: £350,000 payable) |
-> | Instalments | Months 7, 10, 13, 16: 4 × £125,000 | Months 3, 6, 9, 12 of the AP (chapter 3 computes them) |
+> | Instalments | Months 7, 10, 13, 16: 4 × £125,000 | Months 7, 10, 13, 16: 4 × £187,500 (14 October GY1; 14 January, 14 April, 14 July GY2); the RDEC does not reduce them (CIRD89870; chapter 3) |
 >
-> Calder's TTP rose from £2.0m to £3.0m, still far below the stand-alone £20m line; its payment timetable moved four months earlier because it acquired eight associates.
+> Calder's TTP rose from £2.0m to £3.0m, still far below the stand-alone £20m line. On 31 March GY2, the day before its next AP, it has eight associates: QIP divisor 9, very large threshold £20,000,000 ÷ 9 = £2,222,222. So Calder becomes **very large one period later**, paying in months 3, 6, 9 and 12 from its AP beginning 1 April GY2: its payment timetable moves four months earlier because it acquired eight associates.
 >
 > **Transfer pricing.** With about 300 staff, Calder was never a small or medium-sized enterprise (fewer than 250 staff is required). Many targets are; when they join a group like Tarnmoor the SME exemption is lost, because the size test includes linked enterprises. Calder's dealings with TVS will be priced at arm's length, and tested (chapter 27).
 >
@@ -246,11 +248,11 @@ The CIOT's description of the paper explains why this matters. Candidates "are n
 > A tax function maps every threshold and every group list **every year**, and again whenever the group changes shape.
 >
 > - **Acquisitions** are the usual trigger. A group just under €750m can cross it by buying one company; CbC reporting, TP records and Pillar Two follow.
-> - **Each new subsidiary changes the associated company count**, lowering every company's QIP thresholds. When Tarnmoor buys Brackenwell Sensors Ltd (invented) on 1 July GY2, the count rises to 10 and every company's very large threshold falls to £2,000,000 (£20m ÷ 10); the large threshold to £150,000.
-> - **Disposals and demergers** work the other way (the count is 11 in GY5 and GY6 and 10 in GY7).
+> - **Each new subsidiary changes the associated company count**, lowering every company's thresholds. When Tarnmoor buys Brackenwell Sensors Ltd (invented) on 1 July GY2, the marginal relief count rises to 10 at once; the QIP thresholds fall to £2,000,000 / £150,000 (£20m and £1.5m ÷ 10) from GY3.
+> - **Disposals and demergers** work the other way (the marginal relief count is 11 in GY5 and GY6 and 10 in GY7; the QIP count stays at 10).
 > - **Currency**: the highest line is drawn in euros, so a weaker pound can carry a sterling group across it without a single extra sale.
 >
-> **A joiner's checklist** (picked up in chapters 3, 4, 10, 14 and 20): different year end (Calder keeps 31 March until GY3); returns and instalments to take over, now on an earlier timetable; losses restricted after a change in ownership; loss of SME status (an R&D-intensive SME loses ERIS and falls back on the merged RDEC); a new SAO answerable for its arrangements; TP switching on.
+> **A joiner's checklist** (picked up in chapters 3, 4, 10, 14 and 20): different year end (Calder keeps 31 March until GY3); returns and instalments to take over, on an earlier timetable once the QIP count catches up (for Calder, one period later); losses restricted after a change in ownership; loss of SME status (an R&D-intensive SME loses ERIS and falls back on the merged RDEC); a new SAO answerable for its arrangements; TP switching on.
 >
 > **Professional judgement.** Thresholds are measured on different numbers, from different accounts, over different periods. Write each test down with the source of each figure, so the SAO can rely on it, and review the map whenever the deal team is busy: the tax function is often the last to hear about a purchase and the first to be blamed for a missed deadline.
 
@@ -290,7 +292,7 @@ The law bridges the gap between the many companies and the one business with a t
 
 **The ladder, for FY2026:** profits over £1.5m make a company large for QIPs, and over £20m very large, both divided by 1 + associated companies; net interest over £2m brings the CIR into play; £5m is the deductions allowance; £200m turnover or £2bn balance sheet switches on SAO, tax strategy and UTT; €750m switches on CbC reporting, TP records and Pillar Two; leaving the SME category switches on transfer pricing.
 
-For Tarnmoor in GY1: revenue £1,180m (about €1,357m at the invented rate), a divisor of 9, a very large threshold of £2,222,222, and Calder turned from large to very large overnight.
+For Tarnmoor in GY1: revenue £1,180m (about €1,357m at the invented rate); a marginal relief divisor of 9 at once (limits £5,556 / £27,778); a QIP divisor of 8 for the 31 December companies (£187,500 / £2,500,000), because HMRC's manual counts associates on the day before the AP begins; and Calder still **large** in its first group AP (divisor 1: four instalments of £187,500 in months 7, 10, 13 and 16), becoming very large (divisor 9, £2,222,222) one period later.
 
 And the job: identify the issues, explain them precisely, and coordinate the specialists.
 
@@ -304,9 +306,9 @@ To answer this chapter's question: Calder is **one company among many** for comp
 |---|---|---|
 | Separate entity principle | Each company computes, files and pays; no group CT return | *Salomon* [1897] AC 22; CTA 2009 s 2 |
 | Associated companies | Control; overseas count; dormant and passive holding companies ignored | CTA 2010 ss 18E–18F |
-| Marginal relief | £50,000 / £250,000 ÷ (1 + associates); 3/200; 19% / 25% | CTA 2010 Part 3A |
-| Large company (QIPs) | > £1.5m ÷ (1 + associates); months 7, 10, 13, 16 | SI 1998/3175 |
-| Very large company (QIPs) | > £20m ÷ (1 + associates); months 3, 6, 9, 12 | SI 1998/3175 |
+| Marginal relief | £50,000 / £250,000 ÷ (1 + associates at any time in the AP); 3/200; 19% / 25% | CTA 2010 Part 3A |
+| Large company (QIPs) | > £1.5m ÷ (1 + associates on the day before the AP begins); months 7, 10, 13, 16 | SI 1998/3175; CTM92530 |
+| Very large company (QIPs) | > £20m ÷ (1 + associates on the day before the AP begins); months 3, 6, 9, 12 | SI 1998/3175; CTM92530 |
 | 51% group | > 50% ordinary share capital | CTA 2010 s 1154 |
 | Group relief group | 75% shares + 75% profits and assets; UK related | CTA 2010 s 151(4) |
 | Consortium | ≥ 75% owned by companies each ≥ 5% | CTA 2010 s 153 |
@@ -320,7 +322,7 @@ To answer this chapter's question: Calder is **one company among many** for comp
 | CbC, TP records | €750m consolidated revenue | SI 2016/237; SI 2023/818 |
 | Pillar Two | > €750m in 2 of previous 4 periods | F(No.2)A 2023 s 129 |
 | TP SME exemption | Medium: < 250 staff; turnover ≤ €50m or balance sheet ≤ €43m (with linked enterprises) | TIOPA 2010 ss 166, 172 |
-| Tarnmoor GY1 | Revenue £1,180m ≈ €1,357m; divisor 9; large £166,667; very large £2,222,222 | Invented |
+| Tarnmoor GY1 | Revenue £1,180m ≈ €1,357m; marginal relief divisor 9 (£5,556 / £27,778); QIP divisor 8 for 31 December companies (large £187,500; very large £2,500,000); Calder QIP divisor 1 (large: 4 × £187,500), very large from its AP beginning 1 April GY2 (divisor 9; £2,222,222) | Invented |
 
 ## Statutory and case references
 
@@ -336,6 +338,6 @@ To answer this chapter's question: Calder is **one company among many** for comp
 - F(No.2)A 2023 s 129
 - FA 2026 ss 266–274
 - SI 1998/3175 (instalment payments) reg 3; SI 2016/237 reg 3; SI 2023/818
-- HMRC manuals: CTM92520, CTM92800 (QIPs); CFM95330 (worldwide group); INTM412080 (SME); TCRM1000 (risk); SAOG11231 (SAO qualifying company)
+- HMRC manuals: CTM92520, CTM92530, CTM92800, COM95001 (QIPs); CIRD89870 (RDEC and QIPs); CFM95330 (worldwide group); INTM412080 (SME); TCRM1000 (risk); SAOG11231 (SAO qualifying company)
 - GOV.UK: "HMRC's compliance approach for large businesses"; "Large businesses: publish your tax strategy"
 - CIOT: Taxation of Larger Companies and Groups page (paper description)

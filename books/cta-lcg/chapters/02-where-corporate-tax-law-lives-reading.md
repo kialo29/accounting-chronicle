@@ -204,12 +204,12 @@ Tarnmoor's consolidated revenue (GY1 £1,180m, about €1,357m at the story's as
 >
 > **Step 2: commencement.** Chargeable periods commencing on or after 1 January 2026 (FA 2026 Sch 6 para 32(1)). Every Tarnmoor story period runs on FA 2026 law, so the exemption is available from GY1.
 >
-> **Step 3: conditions (s 164A(2) and (5), as summarised in law sheet 5 and INTM414320).**
+> **Step 3: conditions (s 164A(2) and (5); INTM414320).**
 >
 > | Condition | Tarnmoor's four UK loans | Point to check |
 > |---|---|---|
 > | Both affected persons UK-resident companies, within the charge to CT on the relevant profits | TFL, TEL, TPLC, TES, TWS: all UK-incorporated and UK resident | — |
-> | Same rate of CT | All profitable UK members pay 25% (with 9 associated companies in GY1 the marginal relief upper limit is about £27,778 per company) | TPLC has excess management expenses and no taxable profits most years: read the exact wording of the rate condition |
+> | Same rate of CT | All profitable UK members pay 25% (with a marginal relief divisor of 9 in GY1 the upper limit is about £27,778 per company) | TPLC has excess management expenses and no taxable profits most years: read the exact wording of the rate condition |
 > | Same reference currency | Sterling throughout | — |
 > | No one-sided s 589 derivative; no s 18A exemption adjustments; not patent box provision | None | — |
 > | Neither party an excluded company (e.g. banking company, ring fence, tonnage tax, BLAGAB life, OEICs, AUTs, investment trusts, UK REITs, securitisation companies, QAHCs, electricity generator levy and RPDT cases) | TFL is a group treasury company taking no deposits | Read the statutory definition of "banking company" rather than relying on the label |
@@ -319,7 +319,7 @@ The next chapter turns from where the law lives to how a large group lives with 
 | Advance tax certainty | ≥ £1bn UK expenditure; binding up to 5 years; launched 1 July 2026 | FA 2026 ss 266–274 | V (statute) / S (launch, exclusions) |
 | Find Case Law | National Archives; launched April 2022 | — | V (secondary reports) |
 | Exam resources | RM Assessment Master; OECD Model 2017 articles PDF; Croner-i or Tolley; tags with section numbers only | CIOT Candidate Instructions (Oct 2026); FAQs | V |
-| Story: TFL's UK-to-UK loans | £430m at 6% = £25.8m a year | calder-ledger §6 | I |
+| Story: TFL's UK-to-UK loans | £430m at 6% = £25.8m a year | invented (story) | I |
 
 ## Statutory and case references
 

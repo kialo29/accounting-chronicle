@@ -53,6 +53,8 @@ By section: Opening (FA 2026 and TIOPA Royal Assent dates: LS5 header, search 3)
 
 - **Plan §5 ch 2** marks the "as amended from time to time" wording [V] for all three FA 2026 provisions; only s 164 and s 20 are confirmed (flag 1). The chapter is written to the narrower, verified position.
 - **Plan §5 ch 2** lists "advance tax clearances for major projects": the GOV.UK name of the service is the **Advance Tax Certainty Service**; the script calls it "the advance tax certainty service for major projects".
+- Production references in the reading edition (source cell "calder-ledger §6"; "as summarised in law sheet 5"): Resolved by continuity ruling R16.
+- "with 9 associated companies in GY1" (same-rate row): the GY1 marginal relief count is a divisor of 9 (eight associates): Resolved by continuity ruling R1 (wording now states the marginal relief divisor).
 - No contradiction with the ledger. The ledger's "TFL → BSL £8m from 1 July GY2 (UK-to-UK; within s 164A)" is not mentioned (avoids pre-empting the Brackenwell acquisition).
 
 ## Pronunciation guide
@@ -92,3 +94,16 @@ By section: Opening (FA 2026 and TIOPA Royal Assent dates: LS5 header, search 3)
 - GY1 (first weeks): s 164A research memo (Tom Hesketh for Nadia Kerr). No new numbers: £430m and £25.8m are sums of ledger §6 figures.
 - Story assumption: **TFL is not a "banking company"** (takes no deposits) for s 164A.
 - The 5.5% arm's length rate in the illustration is a labelled hypothetical, **not** a story fact.
+
+---
+
+## Continuity fixes applied (9 October 2026)
+
+Brief §11 scans on the script: clean (only the heading colon). Script unchanged: 5,890 words. Reading edition 7,573 words (was 7,579). `ledger-check.py` 132 checks, 0 failures. Figures checked in Python: £430m × 6% = £25.8m; £250,000 ÷ 9 = £27,778.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R16 | reading, sources table | "Story: TFL's UK-to-UK loans ... \| calder-ledger §6 \|" → "\| invented (story) \|" |
+| R16 | reading, s 164A worked example | "Step 3: conditions (s 164A(2) and (5), as summarised in law sheet 5 and INTM414320)" → "Step 3: conditions (s 164A(2) and (5); INTM414320)" |
+| R1 | reading, s 164A conditions table | "(with 9 associated companies in GY1 the marginal relief upper limit is about £27,778 per company)" → "(with a marginal relief divisor of 9 in GY1 the upper limit is about £27,778 per company)" |
+| R16 | script | Scanned: no production words; no change |

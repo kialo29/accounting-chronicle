@@ -33,7 +33,7 @@
 
 ## Fact-check flags
 
-1. **QIP divisor (bible §5.2 flag 6): partly resolved.** HMRC's manuals (CTM92520/CTM92800; COM95001 as summarised by search) say both the £1.5m and £20m thresholds, and the £10m first-year limit, are divided by associated companies for periods from 2023 (previously related 51% group companies). Very large companies have no year of grace. **The amended text of SI 1998/3175 reg 3 was not seen** (search returned only the as-made 1998 and 2017 SIs). The script labels this "H M R C's guidance says"; the reading edition marks the divisor as "guidance". Exact commencement wording (APs beginning or ending on or after 1 April 2023) not confirmed: the text says only "since twenty twenty three". Chapter 3 should verify reg 3 and the first-year rule.
+1. **Resolved by continuity ruling R1** (QIP count taken on the day before the AP begins, CTM92530/COM95001; GY1 QIP divisor 8 for 31 December companies, Calder 1; text updated, see "Continuity fixes applied"). Original flag: **QIP divisor (bible §5.2 flag 6): partly resolved.** HMRC's manuals (CTM92520/CTM92800; COM95001 as summarised by search) say both the £1.5m and £20m thresholds, and the £10m first-year limit, are divided by associated companies for periods from 2023 (previously related 51% group companies). Very large companies have no year of grace. **The amended text of SI 1998/3175 reg 3 was not seen** (search returned only the as-made 1998 and 2017 SIs). The script labels this "H M R C's guidance says"; the reading edition marks the divisor as "guidance". Exact commencement wording (APs beginning or ending on or after 1 April 2023) not confirmed: the text says only "since twenty twenty three". Chapter 3 should verify reg 3 and the first-year rule.
 2. **Contradiction with plan §5 chapter 1 brief:** the brief lists "51% for QIP associates". On current law (per HMRC guidance) QIP thresholds are divided by **associated companies** (control test), not related 51% group companies. Chapter written on the associated-company basis. For Tarnmoor the count is the same (9 in GY1) either way, so no ledger number changes. Note also that exam-intel's summary of the **N24 Q5 marking guide** says "thresholds divided by the 51% group companies": either the guide used the old wording or exam-intel paraphrased; the reading edition's Exam lens says only "thresholds divided across the group". Flag for chapter 3 and chapter 32.
 3. **CbC measurement period UNVERIFIED** (search returned nothing conclusive): whether SI 2016/237 reg 3 tests €750m in the previous period or the current period. The chapter states only "€750m consolidated revenue". Chapter 27 to verify.
 4. **HMRC terminology (plan [verify]): resolved.** "Large Business directorate", "Customer Compliance Manager", "around 2,000" businesses, "most businesses with turnover above £200m" (GOV.UK, search 3). The TCRM risk spectrum is stated generally ("from low to high"); the exact category labels were not verified and are not given.
@@ -54,7 +54,9 @@
 
 ## Contradictions with plan, bible or ledger
 
-- Plan ch 1 brief "51% for QIP associates": superseded by associated companies (flag 2). Bible §3.3 already says "divided by associates": consistent with this chapter.
+- Plan ch 1 brief "51% for QIP associates": superseded by associated companies (flag 2). Bible §3.3 already says "divided by associates": consistent with this chapter. Resolved by continuity ruling R17 (associated companies) and R1.
+- GY1 QIP divisor 9 and Calder "very large overnight": Resolved by continuity ruling R1 (QIP divisor 8 for 31 December companies; Calder large in its first group AP, 4 × £187,500; very large one period later). Resolved by continuity ruling R2 (RDEC does not reduce QIPs).
+- TEL GY1 CT £2,427,500: Resolved by continuity ruling R3 (£2,633,750 on TTP £10.535m).
 - Plan §4 graded-row count (flag 7).
 - None with the ledger: all story numbers used are ledger numbers (revenue £1,180m; €1,357m; divisor 9; £166,667 and £2,222,222; Calder £32m, TTP £3.0m, CT £750,000, RDEC £400,000, payable £350,000; TEL CT £2,427,500; ANTIE £24.65m; disallowance £2.21m; TFL notes interest £30.25m; Brackenwell count 10 and £2,000,000/£150,000; GY5–GY6 count 11; GY7 10). `ledger-check.py` re-run: 96 checks, 0 failures (not edited).
 
@@ -129,3 +131,35 @@
 - Tarnmoor plc's shareholders: pension funds, insurers and private investors (descriptive only).
 - Calder described as "owned by one family" (the Oldroyds) with "same 300 staff" on acquisition (consistent with ledger §5).
 - Derived thresholds used: GY1 marginal relief limits per company £5,556 / £27,778 (divisor 9).
+
+---
+
+## Continuity fixes applied (9 October 2026)
+
+All figures recomputed in Python (scratch `lcg-fix-ch01-02/calc.py`): £1.5m ÷ 8 = £187,500; £20m ÷ 8 = £2,500,000; £20m ÷ 9 = £2,222,222; £50,000 / £250,000 ÷ 9 = £5,556 / £27,778; ÷ 10 = £150,000 / £2,000,000; Calder £3.0m × 25% = £750,000 = 4 × £187,500; TEL £24.0m − £5.075m − £6.59m − £1.8m = £10.535m × 25% = £2,633,750. New word counts: script 6,013 (was 5,762; target 5,500 ±10%); reading edition 6,726 (was 6,371). Brief §11 scans clean; `ledger-check.py` 132 checks, 0 failures.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R3 | script | TEL GY1 liability "about two point four three million pounds" → "about two point six three million pounds" |
+| R3 | reading | TEL GY1 CT "£2,427,500 (TTP £9.71m × 25%)" → "£2,633,750 (TTP £10.535m × 25%)" |
+| R1 | script | Associated companies paragraph: "So each company's thresholds are divided by nine..." → marginal relief counts a company associated at any time in the period, so limits divided by nine at once; instalment thresholds count on a different day |
+| R1 | script | First rung: added "Its manuals count them on the day before the accounting period begins, not at any time in the period as for marginal relief" |
+| R1 | script | "Now the instalment rung...": divisor nine, very large about £2.22m, large about £167,000 → marginal relief divisor nine at once; December companies counted on 31 December before GY1: divisor eight, large £187,500, very large £2,500,000 |
+| R1, R2 | script | "Watch what that does to Calder...": "Calder is now very large, and pays in months three, six, nine and twelve" → counted on 31 March (no associates), divisor one, stays large, four instalments of £187,500 in months 7, 10, 13, 16; research credit does not reduce them (chapter 3); very large (divisor nine, about £2.22m) from its next period, "one period later" |
+| R1 | script | Threshold map: "the count rises to ten, and every company's very large threshold falls to two million pounds" → marginal relief count ten at once; instalment count catches up from GY3 (£2,000,000 / £150,000 for a full year) |
+| R1 | script | Joiner checklist: "now, as Calder does, must pay on another, earlier one" → "then, as Calder does from its second group period, have to pay on another, earlier one" |
+| R1 | script | What to take away: "a divisor of nine ... very large threshold of about two point two two million ... large to very large overnight" → marginal relief divisor nine at once; instalment count on the day before each period; December companies divide by eight; Calder large in first group period, very large one period later |
+| R1 | reading | "Applying the guest lists": "each company's thresholds are divided by 9" → marginal relief limits divided by 9 at once (associated at any time in the AP); QIP count on a different day; table header "Associated (divisor 9)" → "Associated (marginal relief divisor 9)" |
+| R1 | reading | Ladder rows: marginal relief "(associated at any time in the AP)"; QIP rows "counted on the day before the AP begins", authority + CTM92530; first-year exception "not large in the previous period" → "previous 12 months" |
+| R1 | reading | Exam lens traps: added "or counting on the wrong day (QIPs: the day before the AP begins; marginal relief: any time in the AP)" |
+| R1 | reading | Worked example: "QIP thresholds for each Tarnmoor company in GY1 (divisor 9)" (£166,667 / £2,222,222 / £5,556 / £27,778) → "two counts" table: marginal relief divisor 9 (£5,556 / £27,778); QIP divisor 8 (£187,500 / £2,500,000), with the CTM92530/COM95001 explanation |
+| R1, R2 | reading | "Calder before and after": associated 8 (divisor 9) → QIPs 0 (divisor 1) / marginal relief 8 (divisor 9); thresholds £166,667 / £2,222,222 → £1,500,000 / £20,000,000; status Very large → **Large** (no first-year exception); instalments "Months 3, 6, 9, 12" → months 7, 10, 13, 16: 4 × £187,500 (14 October GY1; 14 January, 14 April, 14 July GY2), RDEC does not reduce them (CIRD89870); follow-on sentence → very large one period later (divisor 9, £2,222,222) from AP beginning 1 April GY2 |
+| R1 | reading | Threshold map bullets: Brackenwell "count rises to 10 and every company's very large threshold falls to £2,000,000 ... large £150,000" → "marginal relief count rises to 10 at once; the QIP thresholds fall to £2,000,000 / £150,000 from GY3"; "the count is 11 in GY5 and GY6 and 10 in GY7" → "the marginal relief count is 11 in GY5 and GY6 and 10 in GY7; the QIP count stays at 10". "51% vs associated" note in the matrix kept |
+| R1 | reading | Joiner's checklist: "now on an earlier timetable" → "on an earlier timetable once the QIP count catches up (for Calder, one period later)" |
+| R1 | reading | What to take away: "a divisor of 9, a very large threshold of £2,222,222, and Calder turned from large to very large overnight" → marginal relief divisor 9 (£5,556 / £27,778); QIP divisor 8 (£187,500 / £2,500,000); Calder large (divisor 1; 4 × £187,500 in months 7, 10, 13, 16), very large (divisor 9, £2,222,222) one period later |
+| R1 | reading | Key rules rows: marginal relief "associates at any time in the AP"; QIP rows "associates on the day before the AP begins", + CTM92530; key figures row "Tarnmoor GY1 ... divisor 9; large £166,667; very large £2,222,222" → MR divisor 9; QIP divisor 8 (£187,500 / £2,500,000); Calder QIP divisor 1 (large: 4 × £187,500), very large from AP beginning 1 April GY2 (divisor 9; £2,222,222) |
+| R1, R2 | reading | References: HMRC manuals + CTM92530, COM95001, CIRD89870 |
+| R16 | both | Scanned for production words (ledger, continuity, bible, ruling, the plan, law sheet): no hits in chapter text (the two "brief" hits are ordinary English) |
+| R1 | notes | Flag 1 marked resolved by R1; Contradictions lines added for R1, R2, R3, R17 |
+
+Not changed: the "Computations" and "Contradictions … none with the ledger" paragraphs above record the original drafting position (TEL £2,427,500; divisor 9) and are superseded by this section.

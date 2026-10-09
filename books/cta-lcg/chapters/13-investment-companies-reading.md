@@ -156,15 +156,15 @@ And there is no escape against the CFC charge: TIOPA 2010 s 371UD (relief agains
 > | CFC chargeable profits apportioned from TCM | 825,000 |
 > | Profit-related threshold | (2,925,000) |
 > | **Maximum surrender to TEL** | **5,075,000** |
-> | Excess over gross profits only (the ledger's figure) | 5,900,000 |
+> | Excess over gross profits | 5,900,000 |
 > | **Carried forward as surplus management expenses (s 1223)** | **825,000** |
 >
 > Check: 2,100,000 used + 5,075,000 surrendered + 825,000 carried forward = 8,000,000.
-> Cost of the trap: £825,000 × 25% = **£206,250** of tax paid earlier than expected.
+> Cost of the trap: £825,000 × 25% = **£206,250** of relief a year that the group may never obtain (see "Carrying the surplus forward").
 >
 > **GY2:** management expenses £8,500,000; arm's length recharge £2,200,000; excess over gross profits £6,300,000; threshold £2,200,000 + £825,000 = £3,025,000; **maximum surrender £5,475,000**; £825,000 carried forward. (NTLR deficit £7,670,000 surrendered separately.)
 
-**Contradiction flag (for the continuity pass):** the ledger records TPLC surrendering the whole excess over gross profits (£5.9m in GY1, £6.3m in GY2). Section 105(3A) caps the surrender at £5,075,000 and £5,475,000 because of the TCM apportionment. See the chapter notes.
+With these caps, and its other group and consortium relief, TEL's TTP is **£10,535,000** in GY1 and **£8,905,000** in GY2 (chapter 7 builds the GY2 computation).
 
 ## Carrying the surplus forward.
 
@@ -176,7 +176,7 @@ Surplus management expenses do not die. Section 1223 carries them forward as man
 
 **Group route:** carried-forward management expenses from APs beginning on or after 1 April 2017 can be surrendered under the rules for group relief for carried-forward losses (CTA 2010 Part 5A; s 1223(3A)), taught in chapter 15.
 
-For TPLC, current management expenses always consume its own profits first, so its carried-forward £825,000 a year will rarely find room in its own computation. The practical route is a later Part 5A surrender to TEL, within the group's £5m allowance: relief delayed, not lost, provided someone remembers the claim.
+For TPLC, that route is closed on this book's reading. HMRC's guidance (CTM82030, on CTA 2010 s 188BE) says a company may not surrender carried-forward losses under Part 5A so far as it could deduct them from its own total profits. TPLC's recharge income can always absorb carried-forward expenses, but using them there only displaces current expenses that the s 105 cap then traps. So TPLC's carried-forward management expenses are **stranded**: cumulative **£825,000** (end GY1), **£1,650,000** (GY2), **£2,475,000** (GY3) and **£3,300,000** (GY4), plus a further **£1,275,000** in GY5 if TPLC's excess still exceeds the threshold. No deferred tax asset is recognised on them (chapter 6).
 
 > **Exam lens: management expenses and the surplus**
 > - **Grade:** companies with investment businesses, **core (1)** (2026 grid; check the 2027 grid when published).
@@ -245,8 +245,8 @@ The topic appears often but quietly: four papers in a row (M23 Q6, M24 Q1, M25 Q
 - **Capital is excluded** (s 1219(3)(a), FA 2004 s 38). *Centrica* [2024] UKSC 25: the capital test is the trader's test; £2,529,697 of Oxxio disposal fees were capital. HMRC's view: appraisal is revenue; acquisition costs begin, at the earliest, at the decision to acquire. Record that decision.
 - In our invented case TPLC allowed **£300,000** of strategic review costs and excluded **£900,000** of post-decision Calder deal costs. Management expenses: **£8.0m** (GY1), **£8.5m** (GY2).
 - Other gates: unallowable purpose (s 1220), accounts timing (s 1225), clawback (s 1229), 9-month remuneration rule. Excess CAs on head office assets become management expenses (s 1233); an investment business's excess QCDs can be carried forward.
-- Surplus can be group-relieved only above the **profit-related threshold**: gross profits **plus apportioned CFC profits** (s 105(3A)). TPLC: excess over gross profits £5.9m, but only **£5,075,000** to TEL; **£825,000** carried forward.
-- Carried-forward management expenses need a **claim within 2 years**, lose priority, and sit within the **£5m allowance and 50% restriction**; post-2017 amounts can go via **Part 5A**.
+- Surplus can be group-relieved only above the **profit-related threshold**: gross profits **plus apportioned CFC profits** (s 105(3A)). TPLC: excess over gross profits £5.9m, but only **£5,075,000** to TEL; **£825,000** carried forward (stranded).
+- Carried-forward management expenses need a **claim within 2 years**, lose priority, and sit within the **£5m allowance and 50% restriction**; post-2017 amounts can go via **Part 5A**, but not where the company could deduct them itself (s 188BE, HMRC's view): TPLC's are stranded.
 - After a **change in ownership**, pre-change management expenses are lost if there is a **significant increase in capital (≥ £1m and ≥ 125%)**, a **major change within 8 years beginning 3 years before**, or a change while the business is **small or negligible** (Part 14 Ch 3).
 
 The question was which of a parent's costs the tax system recognises, and when. The answer: the costs of running its own investments, judged as a trader's would be, used first, and used fully only if the company keeps its business and remembers its claims.
@@ -270,13 +270,13 @@ Next, chapter 14 turns from the parent's surplus to the losses of the trading co
 | Group relief cap | Excess over gross profits + apportioned CFC profits | CTA 2010 s 105(3A) |
 | No relief against CFC charge | s 371UD omitted (CFC APs beginning on or after 8 July 2015) | F(No.2)A 2015 s 36 |
 | Change of ownership | > 50% (s 719); capital ≥ £1m and ≥ 125%; major change within 8 years beginning 3 years before; small or negligible | CTA 2010 ss 677–691, 719 |
-| TPLC GY1 (invented) | ME £8.0m; income £2.1m; surrender £5,075,000; c/f £825,000 | — |
-| TPLC GY2 (invented) | ME £8.5m; income £2.2m; surrender £5,475,000; c/f £825,000 | — |
+| TPLC GY1 (invented) | ME £8.0m; income £2.1m; surrender £5,075,000; c/f £825,000 (stranded) | — |
+| TPLC GY2 (invented) | ME £8.5m; income £2.2m; surrender £5,475,000; c/f £825,000 (stranded; cumulative £1,650,000) | — |
 
 ## Statutory and case references
 
 - CTA 2009 Part 16: ss 1218B, 1219, 1220, 1222, 1223, 1224–1229, 1233, 1239–1243, 1248–1251; ss 53, 307, 979; Part 9A.
-- CTA 2010: s 4; ss 99, 105 (including s 105(3A), (5)); Part 5A; Part 7ZA (s 269ZD); Part 14 Ch 3 (ss 677–691), ss 719, 723, 724A; s 1000(1).
+- CTA 2010: s 4; ss 99, 105 (including s 105(3A), (5)); Part 5A (s 188BE); Part 7ZA (s 269ZD); Part 14 Ch 3 (ss 677–691), ss 719, 723, 724A; s 1000(1).
 - CAA 2001 ss 15(1)(g), 253, 270CA(f).
 - TIOPA 2010 s 371BC; s 371UD (omitted by F(No.2)A 2015 s 36).
 - FA 2004 s 38.
@@ -284,4 +284,4 @@ Next, chapter 14 turns from the parent's surplus to the losses of the trading co
 - *Camas plc v Atkinson* [2004] EWCA Civ 541.
 - *Dawsongroup plc v HMRC* [2010] EWHC 1061 (Ch).
 - *Capital and National Trust Ltd v Golder*; *Sun Life Assurance Society v Davidson* (as cited in CTM08190).
-- HMRC manuals: CTM08040, CTM08060, CTM08180, CTM08190, CTM08250, CTM08260, CTM08580, CTM08750, CTM80110, CTM80142.
+- HMRC manuals: CTM08040, CTM08060, CTM08180, CTM08190, CTM08250, CTM08260, CTM08580, CTM08750, CTM80110, CTM80142, CTM82030.

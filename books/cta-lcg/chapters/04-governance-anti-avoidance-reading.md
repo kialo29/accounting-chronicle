@@ -1,6 +1,6 @@
 # Chapter 4: Governance and the anti-avoidance architecture
 
-In August 2025 HMRC charged a company with an offence no company in Britain had been charged with before. The company was an accountancy firm in Stockport. The charge was failing to prevent the criminal facilitation of tax evasion, under s 45 of the Criminal Finances Act 2017. According to the published reports (law firm commentaries; see the notes), it was linked to an alleged fraud involving R&D tax credit repayments, and six individuals, including a former director, were charged with separate offences such as cheating the public revenue and money laundering. **These are allegations only.** Nothing has been proved, and the reports say the trial is listed for 27 September 2027, after your exam.
+In August 2025 HMRC charged a company with an offence no company in Britain had been charged with before. The company was an accountancy firm in Stockport. The charge was failing to prevent the criminal facilitation of tax evasion, under s 45 of the Criminal Finances Act 2017. According to the published reports (law firm commentaries), it was linked to an alleged fraud involving R&D tax credit repayments, and six individuals, including a former director, were charged with separate offences such as cheating the public revenue and money laundering. **These are allegations only.** Nothing has been proved, and the reports say the trial is listed for 27 September 2027, after your exam.
 
 The offence had been in force since 30 September 2017. For almost eight years it sat unused, and commentators called it a paper tiger. The striking thing about it is this: a company can commit the offence without any director knowing anything, without the company gaining a penny, and without the company itself evading any tax. Its crime is to have failed to prevent someone acting for it from helping someone else to evade.
 
@@ -10,7 +10,7 @@ This chapter asks a question that sounds managerial but is pure law: **who, insi
 
 ## The ladder of accountability
 
-For most of the twentieth century HMRC's question to a company was: *is this return right?* The modern question to a large group is: *are your systems the kind that produce right returns, and who will put their name to that?* Large groups are too big to audit line by line, so the law moved upstream. It now regulates the people and processes that produce the numbers, and it makes the group say publicly how it approaches tax. A group like Tarnmoor files dozens of returns across many taxes every year; an inspector cannot check every journal. Regulating systems scales where checking returns does not, and naming a person, publishing an attitude and flagging uncertainty all change behaviour before the return is filed. Whether transparency actually changes behaviour is one of the book's debates (L10): supporters point to better-resourced tax functions and fewer surprises on enquiry; critics to box-ticking certificates and boilerplate strategies.
+For most of the twentieth century HMRC's question to a company was: *is this return right?* The modern question to a large group is: *are your systems the kind that produce right returns, and who will put their name to that?* Large groups are too big to audit line by line, so the law moved upstream. It now regulates the people and processes that produce the numbers, and it makes the group say publicly how it approaches tax. A group like Tarnmoor files dozens of returns across many taxes every year; an inspector cannot check every journal. Regulating systems scales where checking returns does not, and naming a person, publishing an attitude and flagging uncertainty all change behaviour before the return is filed. Whether transparency actually changes behaviour is one of the book's debates: supporters point to better-resourced tax functions and fewer surprises on enquiry; critics to box-ticking certificates and boilerplate strategies.
 
 | Rung | Regime | Who is accountable | Grade |
 |---|---|---|---|
@@ -40,7 +40,7 @@ The rules are in **FA 2009 Sch 46** and apply for financial years beginning on o
 
 Once the aggregate passes the threshold, **every UK-incorporated company in the group is a qualifying company**, however small, dormant ones included. Each needs an SAO and each must be notified.
 
-The acquisition point deserves slow reading. Calder has a 31 March year end and joins Tarnmoor on 1 April GY1. For Calder's financial year starting that day, the preceding financial year ended on 31 March GY1, the day before the deal, when Calder belonged to the Oldroyd family and to no group; its own turnover (about £64m a year) was far below £200m. So Calder is **not** a qualifying company for its first year in the group, even though it is part of one of the largest groups in the story. For its next financial year (from 1 April GY2) the test looks at 31 March GY2, when Calder was firmly inside Tarnmoor: it qualifies from then on. HMRC's guidance on joining and leaving (SAOG11300 onwards) was not opened for this chapter; the conclusion follows from the "member of a group at the end of the preceding year" rule in SAOG11240.
+The acquisition point deserves slow reading. Calder has a 31 March year end and joins Tarnmoor on 1 April GY1. For Calder's financial year starting that day, the preceding financial year ended on 31 March GY1, the day before the deal, when Calder belonged to the Oldroyd family and to no group; its own turnover (about £64m a year) was far below £200m. So Calder is **not** a qualifying company for its first year in the group, even though it is part of one of the largest groups in the story. For its next financial year (from 1 April GY2) the test looks at 31 March GY2, when Calder was firmly inside Tarnmoor: it qualifies from then on. HMRC's further guidance on joining and leaving (SAOG11300 onwards) is not covered here; the conclusion follows from the "member of a group at the end of the preceding year" rule in SAOG11240.
 
 > **Worked example: Tarnmoor's SAO coverage (invented case)**
 >
@@ -168,7 +168,7 @@ HMRC treats the routes as **mutually exclusive**: in its guidance, a UK company 
 1. **Provision trigger:** the company has recognised a **provision in its accounts** reflecting the probability that a different tax treatment will be applied.
 2. **Known position trigger:** the treatment relies on an interpretation or application of the law **not in accordance with the way HMRC is known to interpret or apply it** (published guidance, or dealings with the company).
 
-**Threshold** (para 11): notification only where the **tax advantage** in the relevant period from the uncertain amount (aggregating related amounts) exceeds **£5m**. (HMRC's manual, UTT14100, is summarised in the search extract as "£5m or more"; the statute, per law sheet 1, says over £5m. The difference never matters in this book's story.)
+**Threshold** (para 11): notification only where the **tax advantage** in the relevant period from the uncertain amount (aggregating related amounts) exceeds **£5m**. (HMRC's manual, UTT14100, is summarised in the search extract as "£5m or more"; the statute says over £5m. The difference never matters in this book's story.)
 
 **Exemption** (para 18): no notification where it is reasonable to conclude that **HMRC already has all, or substantially all, of the information** (for example through discussion with the Customer Compliance Manager or a disclosure under another regime such as DOTAS).
 
@@ -213,7 +213,7 @@ The notification is made online. HMRC's statutory notice requires, among other t
 > **Going further:** notification is **not an admission**: it records that a position is uncertain, not that it is wrong. The provision that triggered it also feeds the accounts (chapter 6 covers the current tax charge and uncertain tax provisions). Good practice is a group-wide register of uncertain positions, reviewed at each year end against the two triggers and the £5m threshold, aggregated across related amounts, and cross-checked with the tax provision.
 
 > **Exam lens: UTT (grade 3)**
-> Not examined M23–M26. At awareness level know: the thresholds and 51% CT group; the two triggers; £5m; the exemption; the deadline; penalties £5,000/£25,000/£50,000; the 2026 consultation is not law. **Trap:** confusing UTT and SAO aggregation (law sheet 1 trap 27).
+> Not examined M23–M26. At awareness level know: the thresholds and 51% CT group; the two triggers; £5m; the exemption; the deadline; penalties £5,000/£25,000/£50,000; the 2026 consultation is not law. **Trap:** confusing UTT and SAO aggregation.
 
 ---
 
@@ -239,7 +239,7 @@ The notification is made online. HMRC's statutory notice requires, among other t
 The offence does **not** require the company to benefit, the board to know, or the company to be dishonest. The individuals (evader and facilitator) remain liable for their own offences.
 
 > **Exam lens: CCO (grade 1)**
-> Not examined M23–M26 (exam-intel). Expect: the three stages; associated person; s 46's dual criminality and UK nexus; the defence and HMRC's six principles; unlimited fine. **Trap:** assuming the company must benefit or the board must know.
+> Not examined M23–M26. Expect: the three stages; associated person; s 46's dual criminality and UK nexus; the defence and HMRC's six principles; unlimited fine. **Trap:** assuming the company must benefit or the board must know.
 
 ---
 
@@ -286,7 +286,7 @@ Case: *HMRC v AML Tax (UK) Ltd* [2022] UKFTT 174 (TC): the premium fee hallmark 
 
 **Mechanics:** the promoter normally notifies within **5 days** of making the scheme available or of its first implementation; HMRC issues a **scheme reference number (SRN)**; the promoter passes it to clients; users report it on their returns. Where there is no promoter (in-house schemes), the user notifies.
 
-**Penalties (FA 2026 s 216: new FA 2004 s 315, replacing TMA 1970 s 98C):** initial daily "applicable rate" up to **£600** (or **£5,000 a day** after an order under s 306A or s 314A), and up to **£1m** where the amount would otherwise be inappropriately low; **£5,000** fixed maximum for many information duties; s 313 other-party failures **£5,000 / £7,500 / £10,000**. Penalty proceedings already under way continue under the old rules (FA 2026 s 219). No separate commencement date was found (law sheet 1: Royal Assent inferred); secondary sources describe the reform as letting HMRC issue penalties directly rather than seeking tribunal approval.
+**Penalties (FA 2026 s 216: new FA 2004 s 315, replacing TMA 1970 s 98C):** initial daily "applicable rate" up to **£600** (or **£5,000 a day** after an order under s 306A or s 314A), and up to **£1m** where the amount would otherwise be inappropriately low; **£5,000** fixed maximum for many information duties; s 313 other-party failures **£5,000 / £7,500 / £10,000**. Penalty proceedings already under way continue under the old rules (FA 2026 s 219). No separate commencement date was found (commencement on Royal Assent is inferred); secondary sources describe the reform as letting HMRC issue penalties directly rather than seeking tribunal approval.
 
 **Discovery:** a **20-year** time limit applies where the loss of tax is connected with DOTAS non-compliance (FA 1998 Sch 18 para 46).
 
@@ -344,7 +344,7 @@ The GAAR connects to the rest of the architecture. A GAAR counteraction notice i
 >
 > Tom's board paper recommends that the group decline, record the approach and send a short written refusal. The board declines in a single meeting. The architecture works not only by defeating schemes but by making them unattractive before anyone has to defeat them.
 
-**FA 2026 Part 6** continues the pressure on promoters: a prohibition on promoting certain marketed avoidance arrangements (s 159 onwards), promoter action notices and anti-avoidance information notices. Non-core background: know that it exists. (Commencement dates not verified in this chapter's research: see notes.)
+**FA 2026 Part 6** continues the pressure on promoters: a prohibition on promoting certain marketed avoidance arrangements (s 159 onwards), promoter action notices and anti-avoidance information notices. Non-core background: know that it exists. (Commencement dates not verified.)
 
 ---
 

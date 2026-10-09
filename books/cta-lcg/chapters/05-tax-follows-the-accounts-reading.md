@@ -275,7 +275,7 @@ So the honest answer to a finance director who asks whether a change of standard
 
 > **Exam lens: change of accounting basis**
 > - **Grade:** impact of accounting standards **1** (the LCG prospectus expects "an understanding of current accounting issues relevant to tax such as deferred tax, profit recognition and share schemes").
-> - **Past appearances:** not the main focus of any M23–M26 question (exam-intel synthesis); a natural add-on to a computation or an "advise the CFO" requirement on a GAAP transition.
+> - **Past appearances:** not the main focus of any M23–M26 question; a natural add-on to a computation or an "advise the CFO" requirement on a GAAP transition.
 > - **What earns marks:** (1) identify Chapter 14 and why it applies (change of policy between valid bases); (2) compute the adjustment; (3) say it arises on day one of the new basis and is taxed in that AP; (4) state that no spreading applies (unless leases, s 186 or COAP); (5) the knock-ons: QIPs, the £5m allowance, CIR, deferred tax (chapter 6).
 > - **Traps:** spreading a revenue transition; treating an error correction as a change of basis; treating a change forced by new legislation as within Chapter 14; forgetting that a change of view of the law **is** a change of basis (s 180(6)).
 
@@ -297,7 +297,7 @@ Some businesses do not think in pounds. A UK company that buys, sells and borrow
 | s 11 | Translation into sterling: HMRC (CFM64330, CFM64170) says the average rate for the period or an appropriate spot rate (a just and reasonable blend where several transactions); an average rate usually appropriate; method applied consistently |
 | ss 12–17 | Losses carried back or forward between periods with different tax calculation currencies: special translation rules (for example s 15: translate into the later currency at the start of the first affected period, then to sterling at the later period's s 11 rate) |
 
-Status: ss 5–8 from the legislation.gov.uk explanatory notes and FA 2011 Sch 7 amendments; ss 9A and 11 from HMRC's manual (search extracts, 9 October 2026). The full current text was not opened (see notes).
+Status: ss 5–8 from the legislation.gov.uk explanatory notes and FA 2011 Sch 7 amendments; ss 9A and 11 from HMRC's manual (search extracts, 9 October 2026). The full current text was not opened.
 
 > **Worked example: euro functional currency (illustrative; not story)**
 >
@@ -306,7 +306,7 @@ Status: ss 5–8 from the legislation.gov.uk explanatory notes and FA 2011 Sch 7
 **Exchange gains and losses on loans** are loan relationship amounts (CTA 2009 s 328(1)), except translation differences on a translation of results into another currency recognised in **OCI** (s 328(3)); for investment companies, no amount arises only from a change of functional currency (s 328(3B)). Matching of liabilities hedging shares: Disregard Regulations reg 3 (chapter 12).
 
 > **Exam lens: foreign currency**
-> - **Grade:** the LCG grid's core row "Calculation of liability in respect of profits" (grade **1**) is not limited to sterling (the OMB row reads "excluding foreign currency"); the LCG narrative syllabus names "profits accounted for in a foreign currency and the functional currency election" and "exchange gains and losses" (exam-intel §5).
+> - **Grade:** the LCG grid's core row "Calculation of liability in respect of profits" (grade **1**) is not limited to sterling (the OMB row reads "excluding foreign currency"); the LCG narrative syllabus names "profits accounted for in a foreign currency and the functional currency election" and "exchange gains and losses".
 > - **Past appearances:** none as a main topic M23–M26. Expect add-on marks.
 > - **Traps:** translating each line instead of the final profit; forgetting that the designated currency election is for **investment companies** only.
 
