@@ -32,7 +32,7 @@ WebSearch (standard mode), 9 of 12 used:
 
 ## Contradictions with plan, bible or ledger
 
-- None with canonical numbers. All figures as ledger: works £4.2m/£5.6m; factory £4.6m/£6.0m; SDLT £269,500/£289,500/£364,500; depot gain £2,277,500, £0.8m chargeable, £1,477,500 rolled over, TEL base £3,722,500; s 171A £0.5m; TES net gains £651,200 (R5); BSL £0.4m; TAL £5.0m/£7.5m/£2.5m. `ledger-check.py`: 132 checks, 0 failures (not modified).
+- None with canonical numbers. All figures as ledger: works £4.2m/£5.6m; factory £4.6m/£6.0m; SDLT £269,500/£289,500/£364,500; depot gain £2,277,500, £0.8m chargeable, £1,477,500 rolled over, TEL base £3,722,500; s 171A £0.5m; TES net gains £489,000 (R19; was £651,200 under R5). **Resolved by continuity ruling R19.**; BSL £0.4m; TAL £5.0m/£7.5m/£2.5m. `ledger-check.py`: 132 checks, 0 failures (not modified).
 - Plan §5 brief says the s 171A election is "2 years" (correct) and the degrouping origin is FA 1968 (not used; see flag 3).
 - Law sheet 2 §17 says the s 171A election dates "from FA 2009": the election was first enacted by FA 2000 and rewritten for gains/losses accruing from 21 July 2009 (CG45356, CG45358; legislation.gov.uk version dated 28 July 2000). The chapter follows the sources.
 - Law sheet 2 trap 8 cites "s 179(2ZA)–(2ZB)" while §9 cites "s 179(2)–(2B)"; the chapter avoids both for Conditions A/B ("s 179(2) ff").
@@ -72,3 +72,9 @@ WebSearch (standard mode), 9 of 12 used:
 4. **BSL**: no gains between 1 January and 30 June GY2; no chargeable (TCGA) asset with a gain in prospect at entry (patents/know-how are Part 8; lab equipment is plant); the £400,000 pre-entry loss is governed by Sch 7A (not s 184A); no DTA.
 5. **Water-systems factory**: at 1 October GY3 there were **no arrangements** for TWS to leave the group (the demerger idea came later), so SDLT group relief was available and later clawed back (consistent with chapter 21's clawback).
 6. Not story (labelled hypotheticals): chain example 75%/56.25%/42.19%; s 173 plot (£2.0m cost, £3.0m value); s 176 subsidiary X (£10m cost, £3m value moved, sold £7m); s 31 subsidiary Z (£20m cost, £50m value, £12m drain-out, sold £38m, CT up to £3m); sale of TEL with TAL beneath it (Condition B); s 190 notice on TPLC for TES's £75,000.
+
+## Continuity fixes applied (R18–R29; reviewer D, 9 October 2026)
+
+- **R19:** reading edition s 171A worked example: "lease assignment gain £351,200 (chapter 16) = **£651,200**" → "lease assignment gain £189,000 (chapter 16) = **£489,000**"; key figures table: "TES net gains GY3 £651,200" → "£489,000". Script (s 171A section): "net gains of six hundred and fifty one thousand, two hundred pounds" → "net gains of four hundred and eighty nine thousand pounds". Contradictions entry updated ("Resolved by continuity ruling R19").
+- **R28.6 (s 171A history):** both editions already say Finance Act 2000 introduced the election and the rule was rewritten for gains and losses accruing on or after 21 July 2009 (CG45356). No change.
+- **R29:** depot let to TEL throughout (s 175(2B)); no arrangements for TWS to leave on 1 October GY3: both consistent. No change.

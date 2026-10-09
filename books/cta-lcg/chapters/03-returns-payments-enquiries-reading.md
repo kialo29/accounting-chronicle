@@ -336,8 +336,10 @@ The statute says £200 then £400 in total (GOV.UK's "another £200" means the s
 |---|---|---|
 | Late payment interest (Bank Rate + 4%) | **7.75%** | 9 January 2026 |
 | Repayment interest (Bank Rate − 1%, minimum 0.5%) | **2.75%** | 9 January 2026 |
-| QIP underpayments | **6.25%** | 29 December 2025 |
-| QIP overpayments | **3.50%** | 29 December 2025 |
+| QIP underpayments (Bank Rate + 2.5%) | **6.25%** | 29 December 2025 |
+| QIP overpayments (Bank Rate − 0.25%) | **3.50%** | 29 December 2025 |
+
+The margins over Bank Rate for QIP underpayments and late payment rose on **6 April 2025** (from + 1% and + 2.5%); Bank Rate has been 3.75% since 18 December 2025.
 
 **Late payment penalty pending further appeal (FA 2026 s 264).** FA 2009 Sch 56 item 18 is extended to amounts payable under TMA s 56(3)(b), tax due after a tribunal decision while a further appeal is pending, for amounts payable on or after **1 April 2026**. A group that loses at the tribunal and appeals further can no longer sit on the tax without that risk.
 

@@ -120,6 +120,17 @@ Law sheet V items restated without new search: TMA s 59F (GPA: 51% group; UK nom
 | R2, R14 | — | No change required (chapter 3 already canonical). |
 
 
+### Second pass (rulings R18–R29, 9 October 2026)
+
+Rates recomputed in Python: Bank Rate 3.75% + 2.5% = 6.25%; 3.75% − 0.25% = 3.50% (late payment 3.75% + 4% = 7.75%; repayment 3.75% − 1% = 2.75%). No figure changed. `ledger-check.py`: 212 checks, 0 failures. Word counts: script 7,132 (target 7,000 ± 10%); reading 7,248.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R26 | `chapters/03-returns-payments-enquiries-reading.md`, interest table | "QIP underpayments" → "QIP underpayments (Bank Rate + 2.5%)"; "QIP overpayments" → "QIP overpayments (Bank Rate − 0.25%)" |
+| R26 | same, after the interest table | (none) → added: "The margins over Bank Rate for QIP underpayments and late payment rose on **6 April 2025** (from + 1% and + 2.5%); Bank Rate has been 3.75% since 18 December 2025." |
+| R26 | `chapters/03-returns-payments-enquiries.txt`, interest paragraph | "six point two five per cent on underpayments and three point five per cent on overpayments." → "six point two five per cent on underpayments, which is Bank Rate plus two and a half per cent, and three point five per cent on overpayments, which is Bank Rate less a quarter of one per cent. The margins for instalment underpayments and late payment rose on the sixth of April, twenty twenty five." |
+| R29 | both editions (checked) | TPLC's CFC charge and TAL's 11-month AP are not discussed in this chapter: no change |
+
 ## Technical review fixes (review A)
 
 - **Script, "Counting the family" (ERROR):** the paragraph presented divisor 9 (£166,667 / £2,222,222) as the GY1 instalment thresholds, contradicting R1 and the following paragraphs. Reworded: divisor 9 applies to marginal relief at once; for instalments it arrives in GY2 (GY1 QIP divisor 8).

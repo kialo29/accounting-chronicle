@@ -104,3 +104,10 @@ Python: `scratchpad/lcg-ch18/calc.py` (Coldwater pool and sale; matching hypothe
 - **Helmside shares:** share capital £20m in **£1 ordinary shares**: TPLC 9,000,000; Greyfell 8,000,000; Northlight 3,000,000. **Greyfell's cost £8,000,000; gain £8,000,000 exempt (SSE, para 4 priority over s 135); Greyfell's base cost of its 2,000,000 TPLC shares £16,000,000.** TPLC's Helmside pool after 1 March GY5: **17,000,000 shares (85%), cost £25,000,000** (*Stanton v Drayton*; CG52562). **No s 138 clearance** sought (board paper records why).
 - **TAL earn-out:** measured on the business's results over the two years after completion; TEL's base cost in the right **£3,000,000**. **GY7 receipt £2,000,000**, residual right then valued **£2,000,000** → cost £1,500,000, **gain £500,000, CT £125,000**. **GY8 final receipt £2,500,000** → cost £1,500,000, **gain £1,000,000, CT £250,000**. Total receipts **£4,500,000** (cap £6.0m); total gains **£1,500,000**; CT **£375,000** (chargeable on the accepted view; label).
 - **Not story (labelled hypotheticals):** matching example (100,000 June 2004 shares £150,000; 50,000 post-2017 £200,000; 20,000 bought 5 days before; 60,000 sold at £3.00 → gain £7,107; at £2.00 → losses £33,333); Coldwater scrip alternative (1 for 50; 64,000 shares; cost unchanged); Northlight also exchanging (new s 137 applies to every partner); TAL shortfall (single £2.0m receipt → £1.0m allowable loss).
+
+## Continuity fixes applied (R18–R29; reviewer D, 9 October 2026)
+
+- **R21 guidance:** the chapter never uses £585,000 (grep). No change.
+- **R22.4:** earn-out receipts GY7 £2.0m (gain £0.5m) and GY8 £2.5m (gain £1.0m), CT £375,000, labelled "accepted view": consistent. No change.
+- **R28.3 (*Marren v Ingles*):** see the technical review fixes below.
+- **R29:** Coldwater's remaining 8% exempt under the **main** SSE (para 7 look-back) to about September GY9: both editions already say so. TPLC's Helmside base cost £16.0m (*Stanton v Drayton*); pool £25.0m; no s 138 clearance: consistent. No change.

@@ -57,6 +57,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 
 - **Ledger GY2 "The group AIA is allocated to Calder and TES (TEL needs none)".** Kept the allocation, but TEL does have AIA-eligible spend (its £0.5m second-hand milling line). The chapter presents TEL's nil allocation as a choice: Calder's second-hand plant competes on equal terms and Calder's period ends nine months earlier, so its relief reduces earlier instalments. Suggest the ledger wording "TEL gets none (its second-hand plant ranks behind Calder's)".
 - Resolved by continuity ruling R11 (the AIA year is the year to 31 March; the group AIA for the year to 31 March GY3 goes to TES £400,000 and Calder £600,000, special rate first; TEL nil because its milling line is main rate).
+- Resolved by continuity ruling R18 (FYA balances pooled after the period's WDA, CAA 2001 s 58(5); TEL's special rate pool b/f £7,720,000 adopted and the ledger amended).
 - No other contradictions. TEL's £16.0000m total, pools and c/f balances match the ledger exactly.
 
 ---
@@ -107,7 +108,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 | Fact | Value |
 |---|---|
 | TEL GY2 purchases (descriptions) | £9.0m new machining centres (FE); £1.2m new chillers and test-hall electrical systems (special rate, 50% FYA); £0.8m new test rigs hired to UK utility customers on two-year hires (40% FYA; TEL as lessor keeps allowances); £0.5m second-hand milling line from an unconnected competitor closing a site (main pool, no AIA); £0.3m disposal proceeds of old plant never fully expensed |
-| TEL GY2 pools (amended by review B, s 58(5); needs ledger update) | Special rate pool b/f £7,720,000 (was £6,000,000); main pool before WDA £39,700,000, WDA £5,558,000; special rate WDA £463,200; FYA balances (£480,000 main; £600,000 special rate) pooled after the WDA; c/f main £34,622,000, special rate £7,856,800; total allowances unchanged at £16,000,000 |
+| TEL GY2 pools (amended by review B, s 58(5); resolved by continuity ruling R18, ledger amended) | Special rate pool b/f £7,720,000 (was £6,000,000); main pool before WDA £39,700,000, WDA £5,558,000; special rate WDA £463,200; FYA balances (£480,000 main; £600,000 special rate) pooled after the WDA; c/f main £34,622,000, special rate £7,856,800; total allowances unchanged at £16,000,000 |
 | Group AIA, year to 31 March GY3 (amended by R11; was "GY2") | £1,000,000: TES £400,000 (office fixtures acquired GY2, second-hand integral features); Calder £600,000 (second-hand special rate plant, AP to 31 March GY3); TEL nil. Calder's £600,000 of second-hand plant in its AP to 31 March GY2 used the AIA for the year to 31 March GY2 |
 | Calder AIA, AP to 31 March GY1 | Own £1m AIA (pre-acquisition period; outside the group) |
 | Calder GY3 sale of plant to TVS (1 October GY3), DV £1.4m | FE machines DV £900,000 → s 59A charge £900,000; long-life heavy test bed (50% FYA) DV £200,000 → s 59B charge £100,000 and £100,000 off the special rate pool; older main-pool plant DV £300,000 → main pool deduction. Total special balancing charges **£1,000,000** (CT at 25% £250,000) in Calder's 9-month AP to 31 December GY3; each DV below original cost |
@@ -134,6 +135,16 @@ Applied `continuity-rulings.md` R11 (and the R16 search, which found no producti
 | R11 | script, computation note | "because the group gave it to Calder and Tarnmoor Estates" → "because the group allocated it to special rate spending in Tarnmoor Estates and Calder" |
 | R11 | script, "What to take away" | "ending in the financial year" → "ending in the same financial year, the year to the thirty first of March" |
 | R11 | notes (this file) | flag 1 marked resolved; "Resolved by continuity ruling R11" under Contradictions; open thread (a) and ledger-additions rows (group AIA; Calder 9-month AP) amended |
+
+### Second pass (rulings R18–R29, 9 October 2026)
+
+R18 confirms the review B fix (CAA 2001 s 58(5)). Recomputed in Python: main pool 39,500,000 + 500,000 − 300,000 = 39,700,000; WDA 14% 5,558,000; + 480,000 → c/f 34,622,000; special rate 7,720,000, WDA 6% 463,200; + 600,000 → c/f 7,856,800; total 9,000,000 + 600,000 + 320,000 + 5,558,000 + 463,200 + 58,800 = 16,000,000; 18% comparator 7,146,000. Both editions already state these figures and the "318,000" alternative is gone: no chapter text changed. `ledger-check.py`: 212 checks, 0 failures. Word counts unchanged: script 8,226; reading 8,435.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R18 | `chapters/08-plant-and-machinery.txt` and `-reading.md` | checked (7,720,000 / 34,622,000 / 7,856,800 / 7,146,000 present; no FYA balance gets a same-period WDA): no change |
+| R18 | notes (this file), Contradictions | (none) → added "Resolved by continuity ruling R18" (special rate pool b/f £7,720,000 adopted; ledger amended) |
+| R18 | notes (this file), Ledger additions row "TEL GY2 pools" | "(amended by review B, s 58(5); needs ledger update)" → "(amended by review B, s 58(5); resolved by continuity ruling R18, ledger amended)" |
 
 ## Technical review fixes (review B)
 

@@ -187,7 +187,7 @@ The design is careful. The law is not against groups buying distressed debt. It 
 
 ## Brackenwell's notes
 
-Brackenwell Sensors Ltd (BSL), in our invented case, was a loss-making sensor developer founded by **Dr Asha Varma**. Before Tarnmoor bought it, its venture investors held **£3.0m** of its convertible notes. On **1 July GY2** TPLC bought BSL's shares (£22.2m; stamp duty £111,000) and, the same day, bought the notes from the (unconnected) venture investors for **£1.8m**, at arm's length.
+Brackenwell Sensors Ltd (BSL), in our invented case, was a loss-making sensor developer founded by **Dr Asha Varma**. Before Tarnmoor bought it, its venture investors held **£3.0m** of its convertible notes. On **1 July GY2** TPLC bought BSL's shares (£22.2m; stamp duty £111,000, plus £9,000 on the convertible notes: chapter 21) and, the same day, bought the notes from the (unconnected) venture investors for **£1.8m**, at arm's length.
 
 Immediately afterwards TPLC and BSL were connected, and TPLC had paid £1.8m for a debt carried at £3.0m: the deemed release rule's exact target.
 

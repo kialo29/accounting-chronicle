@@ -110,6 +110,17 @@
 | R3 | `notes/06-notes.md`, Bible update and Ledger additions | £24.179m / 24.18% → £24.385m / 24.39% |
 
 
+### Second pass (rulings R18–R29, 9 October 2026)
+
+Figures recomputed in Python: Marrovia top-up 15% × £3.3m − (£297,000 + £132,000) = £66,000; total tax charge unchanged at £24,385k (24.39%; with the top-up it would be £24,451k, 24.45%, not stated in the chapter). `ledger-check.py`: 212 checks, 0 failures. Word counts: script 6,596 (target 6,000 ± 10%, upper limit 6,600); reading 7,094.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R20 | `chapters/06-deferred-tax-reading.md`, "Disallowed interest and deferred tax" | "(chapter 28; Tarnmoor reactivates £1.96m in GY3)" → "(chapter 28; Tarnmoor reactivates £1.87m in GY3 as first filed, £2.47m after a later revision)" |
+| R20 | `chapters/06-deferred-tax.txt` | checked: no "one point nine six" or other reactivation figure; no change |
+| R25 (optional) | `chapters/06-deferred-tax-reading.md`, *Simplifications* | "is omitted (chapter 30 computes Tarnmoor's)" → "is omitted (£66,000 for GY2; chapter 30 computes Tarnmoor's)" |
+| R25 (optional) | `chapters/06-deferred-tax.txt`, reconciliation passage | "leaves out top-up tax under the Pillar Two rules, which chapter thirty computes." → "leaves out top-up tax under the Pillar Two rules, about sixty six thousand pounds for Group Year Two, which chapter thirty computes." |
+
 ## Technical review fixes (review B)
 
 Independent technical review, 9 October 2026 (`review/review-B.md`, items 6.1–6.6). Numbers re-run in Python; `ledger-check.py` 132 checks, 0 failures. Word counts after fixes: script 6,587 (within 6,000 ± 10%); reading edition 7,083.

@@ -176,7 +176,7 @@ Before 2000, a group wanting to set one member's loss against another's gain tra
 > - TEL's loss is a **current-year** loss: set against current gains in full; the Part 7ZA restriction applies only to losses carried forward (chapter 14). Without the election, the loss could be used only against TEL's own future gains, within the restriction.
 > - TES pays TEL **£125,000** for the use of the loss; it is below £500,000, so it is ignored for CT.
 > - Deadline: **31 December GY5**; filed with the GY3 returns.
-> - TES's net gains for GY3: £300,000 + lease assignment gain £351,200 (chapter 16) = **£651,200** (the figure chapter 28 uses in tax-EBITDA).
+> - TES's net gains for GY3: £300,000 + lease assignment gain £189,000 (chapter 16) = **£489,000** (the figure chapter 28 uses in tax-EBITDA).
 
 ---
 
@@ -518,7 +518,7 @@ The doors in this chapter mostly lead to share sales, and the shareholding exemp
 | Story: Calder's works | Cost £4.2m (March 2019); value £5.6m; NGNL to TES 1 April GY3; SDLT relief £269,500 | invented (story) |
 | Story: water-systems factory | Cost £4.6m (GY1); value £6.0m; NGNL to TWS 1 October GY3; no s 179 on the GY5 demerger; SDLT clawback £289,500 | invented (story) |
 | Story: depot and roll-over | Gain £2,277,500; chargeable £800,000; rolled over £1,477,500; TEL's base cost £3,722,500 | invented (story) |
-| Story: s 171A | £500,000 of TES's gain to TEL's £500,000 loss; tax saved £125,000; TES pays TEL £125,000 (ignored); TES keeps £300,000; TES net gains GY3 £651,200 | invented (story; this chapter) |
+| Story: s 171A | £500,000 of TES's gain to TEL's £500,000 loss; tax saved £125,000; TES pays TEL £125,000 (ignored); TES keeps £300,000; TES net gains GY3 £489,000 | invented (story; this chapter) |
 | Story: BSL pre-entry loss | £400,000; Sch 7A (not s 184A); no use in prospect | invented (story) |
 | Story: TAL degrouping | £7.5m − £5.0m = £2.5m added to TEL's proceeds; SSE; TAL's factory cost £7.5m; SDLT clawback £364,500 | invented (story) |
 

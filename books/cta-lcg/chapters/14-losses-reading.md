@@ -81,7 +81,7 @@ Helmside Energy Ltd, our invented hydrogen joint venture, was formed on 1 Januar
 >
 > **GY4 computation (£000):** trading profit 2,500; less carried-forward losses (s 45A claim) (1,200); TTP before consortium relief **1,300**.
 >
-> **Part 7ZA check:** Helmside is owned by a consortium and is not a 75% subsidiary of any company, so it is not in a group for Part 7ZA and has its own £5m deductions allowance. Qualifying profits £2.5m are below £5m, so the relevant maximum equals the profits and the whole £1.2m is deductible. Chapter 15 continues with TPLC's surrender down to Helmside (limited to 45% × £1.3m = £585,000).
+> **Part 7ZA check:** Helmside is owned by a consortium and is not a 75% subsidiary of any company, so it is not in a group for Part 7ZA and has its own £5m deductions allowance. Qualifying profits £2.5m are below £5m, so the relevant maximum equals the profits and the whole £1.2m is deductible. Chapter 15 continues with TPLC's surrender down to Helmside (a full-year ceiling of 45% × £1.3m = £585,000, cut to £536,250 by the arrangements rules: chapter 15).
 
 ---
 

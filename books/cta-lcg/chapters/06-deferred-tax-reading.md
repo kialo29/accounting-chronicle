@@ -318,9 +318,9 @@ TPLC's surplus management expenses that the CFC threshold traps (CTA 2010 s 105(
 
 Not in the list: full expensing, unpaid bonuses, pension accruals, the customer relationship amortisation. All timing; all absorbed by deferred tax.
 
-*Simplifications:* top-up tax under the Pillar Two rules (Marrovia) is omitted (chapter 30 computes Tarnmoor's); the equity-accounted Helmside loss and the consortium relief claimed for it are treated as offsetting; intra-group interest eliminates on consolidation, and the overseas lines use each company's own profit.
+*Simplifications:* top-up tax under the Pillar Two rules (Marrovia) is omitted (£66,000 for GY2; chapter 30 computes Tarnmoor's); the equity-accounted Helmside loss and the consortium relief claimed for it are treated as offsetting; intra-group interest eliminates on consolidation, and the overseas lines use each company's own profit.
 
-**Disallowed interest and deferred tax.** CIR disallowances carried forward can be reactivated (chapter 28; Tarnmoor reactivates £1.96m in GY3). In principle the carried-forward amount is a deductible item supporting a DTA if reactivation is probable. In GY2 Tarnmoor judges future interest capacity too uncertain and recognises none (invented judgement).
+**Disallowed interest and deferred tax.** CIR disallowances carried forward can be reactivated (chapter 28; Tarnmoor reactivates £1.87m in GY3 as first filed, £2.47m after a later revision). In principle the carried-forward amount is a deductible item supporting a DTA if reactivation is probable. In GY2 Tarnmoor judges future interest capacity too uncertain and recognises none (invented judgement).
 
 > **Going further: the reconciliation as a control.** Tom Hesketh (invented head of tax) reviews the reconciliation line by line before the audit committee sees it: an unexplained item usually means an error in the provision. Year-on-year movements in each line should be explicable by events (an acquisition, a rate change, a new CFC charge).
 

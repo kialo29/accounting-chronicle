@@ -67,10 +67,10 @@ Python: `scratchpad/lcg-ch15/calc.py` (TPLC s 105 caps; TEL GY1/GY2; s 142 half-
 
 ## Contradictions with plan, bible or ledger
 
-1. **Ledger §7 GY4 / ledger-check ("HEL GY4 = 0.45 × 1.3m = £585,000") and plan §5 ch 15:** the plan asked the writer to "consider the arrangements rules from the signing of heads of terms on 1 December GY4 [verify]". On the verified text of s 155 the consortium relationship is broken from 1 December GY4, so TPLC's surrender down is **£536,250** (45% × £1.3m × 11/12), not £585,000. The chapter presents £585,000 as the full-year ceiling and £536,250 as the amount claimed. **Proposed ledger amendment:** "Helmside GY4: TPLC surrenders £536,250 (s 155 arrangements from the 1 December GY4 heads of terms; overlapping period 11 months); Helmside TTP £763,750; CT £190,937.50; Helmside pays TPLC £134,062.50; the £48,750 balance of TPLC's ME goes to TEL within the s 105 cap." ledger-check's arithmetic check (0.45 × 1.3m) still passes; a new check could be added for 1.3m × 11/12 × 0.45 = 536,250. Chapter 18 (share exchange) and chapter 28 (CIR) should not use £585,000 as the claimed figure.
+1. **Adopted by continuity ruling R21.** **Ledger §7 GY4 / ledger-check ("HEL GY4 = 0.45 × 1.3m = £585,000") and plan §5 ch 15:** the plan asked the writer to "consider the arrangements rules from the signing of heads of terms on 1 December GY4 [verify]". On the verified text of s 155 the consortium relationship is broken from 1 December GY4, so TPLC's surrender down is **£536,250** (45% × £1.3m × 11/12), not £585,000. The chapter presents £585,000 as the full-year ceiling and £536,250 as the amount claimed. **Proposed ledger amendment:** "Helmside GY4: TPLC surrenders £536,250 (s 155 arrangements from the 1 December GY4 heads of terms; overlapping period 11 months); Helmside TTP £763,750; CT £190,937.50; Helmside pays TPLC £134,062.50; the £48,750 balance of TPLC's ME goes to TEL within the s 105 cap." ledger-check's arithmetic check (0.45 × 1.3m) still passes; a new check could be added for 1.3m × 11/12 × 0.45 = 536,250. Chapter 18 (share exchange) and chapter 28 (CIR) should not use £585,000 as the claimed figure.
 2. **Plan §5 ch 15 running case** uses the pre-R3 figures (TPLC ME £5.9m/£6.3m): superseded by R3; the chapter uses £5,075,000/£5,475,000.
-3. **Chapter 13 (reading, "Group route" paragraph)** says TPLC's c/f management expenses can later be surrendered under Part 5A; R3 says they are stranded. This chapter follows R3. (Chapter 13's fixer may already be aligning it.)
-4. **Chapter 14 reading** still shows TPLC GY1 surrender £12.49m (pre-R3); R3 fix list covers it. This chapter uses £11.665m.
+3. **Already fixed (R27).** **Chapter 13 (reading, "Group route" paragraph)** says TPLC's c/f management expenses can later be surrendered under Part 5A; R3 says they are stranded. This chapter follows R3. (Chapter 13's fixer may already be aligning it.)
+4. **Already fixed (R27).** **Chapter 14 reading** still shows TPLC GY1 surrender £12.49m (pre-R3); R3 fix list covers it. This chapter uses £11.665m.
 5. **Plan §5 ch 15 brief** cites "s 154 and related provisions" for arrangements; the consortium rule is **s 155** (with ss 155A–155B safe harbours), now taught.
 
 ---
@@ -141,3 +141,11 @@ Python: `scratchpad/lcg-ch15/calc.py` (TPLC s 105 caps; TEL GY1/GY2; s 142 half-
 - **GY5 Helmside:** no relief 1 January–28 February GY5; group relief from 1 March GY5.
 - **Moorgate LLP GY4:** figures above; TES net taxable share £400,000.
 - **Not story:** Calder/BSL £2.0m hypothetical; 75/65 illustration; 72% chain example.
+
+## Continuity fixes applied (R18–R29; reviewer D, 9 October 2026)
+
+- **R21 (Helmside GY4):** the chapter is the source; both editions already present £585,000 as the full-year ceiling and £536,250 as the amount claimed. Contradiction 1 marked "adopted by R21". No text change.
+- **R27:** Contradictions 3–4 marked "already fixed (R27)". No text change.
+- **R28.5 (*FCE Bank*):** consistent with chapter 24; no change.
+- **R29 checks:** BSL joins the group relief group on completion, 1 July GY2 (both editions say so); no statement of the R7 benefit as a £150,000 cash saving (grep: none). No change.
+- R18–R20, R22–R26: nothing in this chapter.

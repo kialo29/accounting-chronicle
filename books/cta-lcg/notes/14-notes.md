@@ -138,6 +138,16 @@ Figures recomputed in Python: excess 8,000,000 − 2,100,000 = 5,900,000; thresh
 - R16, reading: Worked examples 14.3 and 14.4 titles: removed "canonical ledger figures"; Key rules source cells "ledger" (Brackenwell, Helmside, TPLC rows) → "invented (story)".
 - R8, R9: chapter already correct; no text change.
 
+### Second pass (rulings R18–R29, 9 October 2026)
+
+Recomputed in Python: 45% × £1,300,000 = £585,000 (full-year ceiling); × 11/12 = £536,250. `ledger-check.py`: 212 checks, 0 failures. Word counts: script 8,069 (unchanged; target 8,000 ± 10%); reading 8,391.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R21 | `chapters/14-losses-reading.md`, Worked example 14.1 "Part 7ZA check" | "(limited to 45% × £1.3m = £585,000)" → "(a full-year ceiling of 45% × £1.3m = £585,000, cut to £536,250 by the arrangements rules: chapter 15)" |
+| R21 | `chapters/14-losses.txt` | checked: no surrender figure for Helmside stated; no change |
+| R27 | both editions | checked: R3 figures (£11.665m; £5,075,000; £825,000 c/f) in place; no change |
+
 ## Technical review fixes (review C)
 
 - Both editions: added the s 45A claim time limit (within 2 years after the end of the period in which the loss is used, or later if HMRC allows; CTM04135) in "Relief later", the loss table, key rules and the takeaway.

@@ -27,7 +27,7 @@ WebSearch (11 of 12 used; standard mode; one call per numbered item):
 
 ## Fact-check flags
 
-1. **Distributing company's position on a direct demerger.** The ledger/plan wording "TPLC's disposal of TWS shares is within the SSE in priority to s 192(2)(a)" is slightly off: s 192(2)(a) is a shareholder-level rule (no capital distribution under s 122). TPLC makes a market value disposal under the general rules and the SSE exempts it (secondary sources; HMRC consultation Annex E). The chapter teaches it that way and explains para 4 separately (priority over s 192(2)(a) for a corporate shareholder with a substantial holding in the distributor). Market value via TCGA s 17 is the book's reading (sources say "market value" without a section).
+1. **Resolved by continuity ruling R24** (ledger GY5 wording replaced). **Distributing company's position on a direct demerger.** The ledger/plan wording "TPLC's disposal of TWS shares is within the SSE in priority to s 192(2)(a)" is slightly off: s 192(2)(a) is a shareholder-level rule (no capital distribution under s 122). TPLC makes a market value disposal under the general rules and the SSE exempts it (secondary sources; HMRC consultation Annex E). The chapter teaches it that way and explains para 4 separately (priority over s 192(2)(a) for a corporate shareholder with a substantial holding in the distributor). Market value via TCGA s 17 is the book's reading (sources say "market value" without a section).
 2. **Post-2017 losses on a Part 22 transfer (ss 944A–944E):** existence seen, content **not read**. The chapter says only that further provisions adapt the rules for post-1 April 2017 losses. UNVERIFIED detail.
 3. **Conditions G–K and L–M:** taught in outline only; lettering per LS2 (s 1083 G–K; s 1085 L–M); exact wording not seen. Condition A wording after SI 2019/818 ("member State") kept as LS2 states; post-Brexit meaning not examined.
 4. **Section numbers for demerger returns** (commonly cited as s 1095 / chargeable payment returns): not confirmed; the chapter cites CTM17260/CTM17290 instead of section numbers.
@@ -87,3 +87,8 @@ WebSearch (11 of 12 used; standard mode; one call per numbered item):
 - **Tarnwater demerger (1 July GY5):** routes considered and rejected: indirect demerger; capital reduction demerger. Direct demerger chosen; conditions A–F met as tabled; s 1091 clearance obtained before 1 July GY5; return to HMRC within 30 days. TPLC's shareholders "mostly pension funds and insurers". TWS holds no transferred intangibles. Shareholder base-cost illustration (£500,000; £6.80 / £1.20; £425,000 / £75,000) is **not story** (labelled).
 - **TAL hive-down (1 February GY6):** the actuators business is **part** of TEL's trade (ss 951–952); Part 22 Ch 1 applies; no losses pass; decision to sell taken "early in GY6".
 - Not story (labelled hypotheticals): category E £10m loan at 12% v 7% (£500,000; £125,000); L − A example (R £4.0m; L £3.0m; assets £1.2m; consideration £0.8m; E £1.0m; relief £3.0m); TiS circumstance D preference-share example.
+
+## Continuity fixes applied (R18–R29; reviewer D, 9 October 2026)
+
+- **R24:** the chapter is the source of the framing (market value disposal by TPLC exempt under the SSE; s 192(2) shareholder-level; para 4 priority only for a corporate shareholder of the distributor; s 192(3) no degrouping charge). Flag 1 marked "resolved by R24". No text change.
+- **R29 (TAL hive-down; Tarnmoor Pumps):** consistent. No change.

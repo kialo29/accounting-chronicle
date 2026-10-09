@@ -137,7 +137,7 @@ Exclude:
 > |---|---|---|---|---|
 > | TEL | 50.0 | 54.0 | 58.0 | Trading profit before interest and CAs (GY2: £42.0m before CAs + £12.0m trading interest = £54.0m; chapter 7) |
 > | TWS | 12.0 | 12.5 | 13.0 | |
-> | TES | 13.0 | 13.5 | 14.8 | GY3 = property and other profits 14,148,800 + net gains 651,200 |
+> | TES | 13.0 | 13.5 | 14.8 | GY3 = property and other profits 14,311,000 + net gains 489,000 |
 > | Calder (CVE) | 3.3 | 4.7 | 8.6 | WE 28.1; GY3 includes the £6.0m IFA realisation credit |
 > | TIL | 3.0 | 3.2 | 3.4 | UK resident until 30 June GY4 |
 > | TFL | (0.6) | (0.6) | (0.6) | Running costs; its interest is excluded |
@@ -149,7 +149,7 @@ Exclude:
 
 **Calder's £6.0m (GY3).** Calder sold its process-valve know-how and customer contracts to TVS for £6.0m. Those assets had no tax cost and had produced no debits, so the s 408 exclusion (credits only to the extent cost exceeds TWDV) removes nothing. The credit raises Calder's TTP **and** the group's interest capacity. HMRC's summary at CFM95805 ("mainly" gains on disposal) is looser than the statute (chapter 11). Calder's special balancing charges of £1.0m on the plant sold (chapter 8) are capital allowance charges: **excluded**.
 
-**TES's gains (GY3).** The depot gain of £2,277,500 was partly rolled over (£1,477,500: nothing enters TTP). Of the £800,000 chargeable, **£500,000** was reallocated to TEL by s 171A election and matched there by TEL's £500,000 capital loss on listed shares (net nil in TEL); TES keeps **£300,000**. Add the lease assignment gain of **£351,200**: TES's net gains are **£651,200**. The no gain, no loss transfers of Calder's works and the water-systems factory contribute nothing.
+**TES's gains (GY3).** The depot gain of £2,277,500 was partly rolled over (£1,477,500: nothing enters TTP). Of the £800,000 chargeable, **£500,000** was reallocated to TEL by s 171A election and matched there by TEL's £500,000 capital loss on listed shares (net nil in TEL); TES keeps **£300,000**. Add the lease assignment gain of **£189,000** (after indexation: chapter 16): TES's net gains are **£489,000**. The no gain, no loss transfers of Calder's works and the water-systems factory contribute nothing.
 
 > **Exam lens: tax-interest and tax-EBITDA**
 > - **Grade:** CIR **1 (core)** (2026 grid; falls to 2 only in the 2028 grid).
@@ -225,9 +225,9 @@ For Tarnmoor the group ratio never helps (WE 28.5): its ratio of 16–19% is wel
 
 In our invented case, Tarnmoor came into GY1 with **nothing brought forward** under the restriction: no unused allowance, no disallowed amounts and no excess debt cap.
 
-> **Worked example 28.5: Tarnmoor's CIR, GY1–GY3 (invented; worldwide group period = TPLC's calendar year; £m)**
+> **Worked example 28.5: Tarnmoor's CIR, GY1–GY3 (invented; worldwide group period = TPLC's calendar year; GY3 as filed in GY4; £m)**
 >
-> | Step | GY1 | GY2 | GY3 |
+> | Step | GY1 | GY2 | GY3 (as filed) |
 > |---|---|---|---|
 > | 1. ANTIE (WE 28.2) | 24.65 | 25.82 | 24.44 |
 > | 2. Aggregate tax-EBITDA (WE 28.3) | 74.80 | 78.40 | 87.70 |
@@ -251,7 +251,7 @@ In our invented case, Tarnmoor came into GY1 with **nothing brought forward** un
 > | *Memo: group ratio % (QNGIE = ANGIE: all third-party)* | *18.74%* | *18.14%* | *16.14%* |
 > | *Memo: group ratio allowance (% × tax-EBITDA)* | *14.01* | *14.22* | *14.16* |
 >
-> **Tax effect at 25%:** GY1 disallowance £552,500; GY2 £575,000; GY3 reactivation saves £467,500; £2.64m (potential £660,000) still waiting.
+> **Tax effect at 25%:** GY1 disallowance £552,500; GY2 £575,000; GY3 reactivation saves £467,500; £2.64m as filed (£2.04m after the GY6 revision: below) still waiting.
 >
 > Excess debt cap working (s 400): GY1 31.85 − 22.44 = 9.41, limited to 0 + 2.21 = **2.21**; GY2 35.23 − 23.52 = 11.71, limited to 2.21 + 2.30 = **4.51**; GY3 36.15 − 26.31 = 9.84, limited to 4.51 + nil = **4.51**.
 
@@ -311,7 +311,20 @@ The group has one disallowance; the companies have tax returns.
 
 **Unused interest allowance** (ss 393–395). If the interest allowance exceeds the sum of ANTIE and reactivations, the excess is unused allowance. It is **available** in later periods for up to **5 years**, time-apportioned where a receiving period straddles the five-year point (s 395). It is **nil** if an **abbreviated return** election has effect for the originating period, the receiving period or any period in between, or if **no return** is submitted for any of them (s 393).
 
-**GY3: no unused allowance.** HMRC's guidance is that the year's spare capacity must first be applied to reactivate (CFM98620, CFM95250); all £1.87m was used, so on this book's reading of ss 394–396 nothing is banked. Had there been nothing to reactivate, £1.87m of unused allowance would have arisen, available in GY4 to GY8, provided full returns were filed throughout.
+**GY3: no unused allowance.** HMRC's guidance is that the year's spare capacity must first be applied to reactivate (CFM98620, CFM95250); all £1.87m was used, so on HMRC's guidance (CFM98240: the allowance carried forward is what is left after the amounts used in the originating period) nothing is banked. Had there been nothing to reactivate, £1.87m of unused allowance would have arisen, available in GY4 to GY8, provided full returns were filed throughout.
+
+**A return revisited (GY6).** The GY3 figures above are the return **as filed** in GY4. In GY6 HMRC's enquiry into Calder's know-how sale settles (chapter 27): the price rises from £6.0m to £8.0m, adding **£2.0m** to Calder's taxable profit for its 9-month AP to 31 December GY3 and, because a sale adjustment is ordinary profit, to its tax-EBITDA (Calder £8.6m → £10.6m). A figure in the GY3 return is now wrong, so TPLC, as reporting company, **must** file a **revised** interest restriction return within **3 months** (TIOPA Sch 7A para 8(4); HMRC's example at CFM98645).
+
+> | GY3 (£m) | As filed (GY4) | Revised (GY6) |
+> |---|---|---|
+> | Aggregate tax-EBITDA | 87.70 | 89.70 |
+> | 30% = interest allowance | 26.31 | 26.91 |
+> | ANTIE | 24.44 | 24.44 |
+> | Reactivation cap (allowance − ANTIE) = reactivated | 1.87 | **2.47** |
+> | Disallowed amounts c/f (TPLC) | 2.64 | **2.04** |
+> | TPLC GY3 non-trading debits (8.50 + reactivation) | 10.37 | 10.97 |
+
+TPLC then amends its own GY3 CT return to bring in the extra **£0.6m** reactivation (HMRC's guidance gives the later of 3 months after the revised return and the normal amendment window: CFM98640). But the extra deficit cannot follow the first £10.37m to TEL: TEL's GY3 group relief claim could be made only until **31 December GY5** (one year after its filing date; FA 1998 Sch 18 para 74; TEL's return was not under enquiry), and that window has closed. HMRC's manual warns of exactly this trap (CFM98645). TPLC carries the £0.6m forward, where (as with its carried-forward management expenses, chapter 13) it is **stranded** on this book's reading of CTA 2010 s 188BE: tax value forgone **£150,000**. Still no unused allowance arises. The lesson for the exam: a TP settlement can raise interest capacity years later, but the time limits decide whether the group can use it.
 
 **Deferred tax.** Disallowed interest carried forward is a deductible temporary difference; a deferred tax asset is recognised only if future reactivation (spare capacity) is probable. At the end of GY2 Tarnmoor recognised none (chapter 6); that remains a judgement, not a rule.
 
@@ -471,7 +484,7 @@ The CIR answers one question: how much net interest should the UK let a whole gr
 
 The tested figure is **ANTIE**: tax-interest covers loan relationship amounts (without exchange movements or impairment), interest-type derivative amounts and the financing cost in finance leases, factoring and service concessions; UK-to-UK interest cancels. Tarnmoor: **£24.65m** (GY1), **£25.82m** (GY2), **£24.44m** (GY3). The earnings measure is **tax-EBITDA**, excluding interest, CAs, intangibles debits and clawback credits, other periods' losses, group relief, qualifying reliefs and (FA 2026 s 62) ss 86A/142/145/147 capex: **£74.8m**, **£78.4m**, **£87.7m**.
 
-The fixed ratio allowance is the lower of **30%** of tax-EBITDA and the **debt cap** (ANGIE + excess debt cap b/f); the group ratio is an election; capacity is allowance + unused allowance b/f, **never less than £2m**. Tarnmoor lost **£2.21m** (GY1) and **£2.30m** (GY2), allocated by TPLC to its own non-trading debits; in GY3 it reactivated **£1.87m**, leaving **£2.64m** waiting, and created no unused allowance.
+The fixed ratio allowance is the lower of **30%** of tax-EBITDA and the **debt cap** (ANGIE + excess debt cap b/f); the group ratio is an election; capacity is allowance + unused allowance b/f, **never less than £2m**. Tarnmoor lost **£2.21m** (GY1) and **£2.30m** (GY2), allocated by TPLC to its own non-trading debits; in GY3 it reactivated **£1.87m** as filed, leaving **£2.64m** waiting, and created no unused allowance. After the GY6 transfer pricing settlement TPLC filed a revised GY3 return (within 3 months): reactivation **£2.47m**, **£2.04m** still waiting, though the extra £0.6m deficit came too late for TEL's group relief claim.
 
 Disallowed interest waits without limit; unused allowance lasts five years and needs full returns; reactivation needs a full return and must be taken at once. Under FA 2026, for periods ending on or after 31 March 2026, a reporting company is appointed per period, with no deadline or notice, by **more than half** of eligible companies; the IRR is due 12 months after the period; penalties £500 / £1,000 and £1,000 for an unappointed filer. TP and other interest rules come first; an interest adjustment moves ANTIE, a services adjustment moves tax-EBITDA; a QIC comes out of both.
 
@@ -504,7 +517,7 @@ The next chapter follows money that tries a different trick: chapter 29, on hybr
 | PIE | QIC election; limited-recourse third-party interest out; tax-EBITDA nil; 5-year anti-cycling | ss 432–449 |
 | TP interaction | TP first; CIR ignored for TP advantage; interest adj → ANTIE; services adj → tax-EBITDA | s 155(6) |
 | Anti-avoidance | Regime TAAR: main purpose + CIR-derived advantage; just and reasonable counteraction | s 461 |
-| Tarnmoor GY1 / GY2 / GY3 | ANTIE 24.65 / 25.82 / 24.44; tax-EBITDA 74.8 / 78.4 / 87.7; allowance 22.44 / 23.52 / 26.31; disallowed 2.21 / 2.30 / nil; reactivated GY3 1.87; c/f 2.21 / 4.51 / 2.64 (£m) | invented (story) |
+| Tarnmoor GY1 / GY2 / GY3 | ANTIE 24.65 / 25.82 / 24.44; tax-EBITDA 74.8 / 78.4 / 87.7; allowance 22.44 / 23.52 / 26.31; disallowed 2.21 / 2.30 / nil; reactivated GY3 1.87; c/f 2.21 / 4.51 / 2.64 (£m; GY3 as filed). Revised GY6: tax-EBITDA 89.7; allowance 26.91; reactivated 2.47; c/f 2.04 | invented (story) |
 
 ---
 

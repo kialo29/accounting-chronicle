@@ -124,6 +124,16 @@ Hypotheticals used and **not** story facts: £2.4m exchange gain (£600,000 tax)
 - R16, reading, other production references: "**The debate (book-plan L2).**" → "**The debate.**"; "(exam-intel)" and "(exam-intel's summaries)" in two Exam lens boxes deleted; *JTI* row "(paras 81–83, per law sheet 1)" → "(paras 81–83)".
 - R13: no change needed (chapter already canonical). No numbers changed; script figures unchanged.
 
+### Second pass (rulings R18–R29, 9 October 2026)
+
+Recomputed in Python: BSL shares 0.5% × £22.2m = £111,000; notes 0.5% × £1.8m = £9,000 (total £120,000, chapter 21). `ledger-check.py`: 212 checks, 0 failures. Word counts: script 8,532 (unchanged; target 8,500 ± 10%); reading 9,378.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R22 (optional) | `chapters/12-loan-relationships-and-derivatives-reading.md`, Brackenwell's convertible notes | "(£22.2m; stamp duty £111,000)" → "(£22.2m; stamp duty £111,000, plus £9,000 on the convertible notes: chapter 21)" |
+| R22 | `chapters/12-loan-relationships-and-derivatives.txt` | checked: the script states no stamp duty figure; no change |
+| R28 | both editions | checked: *JTI* and *Fidex* are cited with no named judge; kept so; no change |
+
 ## Technical review fixes (review C)
 
 - Script: "the exemption for wholly domestic transactions that applies from chargeable periods beginning" → "which applies for chargeable periods beginning".
