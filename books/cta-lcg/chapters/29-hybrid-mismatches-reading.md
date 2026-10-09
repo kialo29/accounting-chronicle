@@ -120,6 +120,8 @@ The next group of chapters deals with mismatches caused not by the instrument bu
 | 7 Hybrid payee | Payee is a hybrid (e.g. a **reverse hybrid**: transparent in its own territory, opaque to its investors) | Payer's deduction reduced | UK investor taxed | ss 259GA–259GE; FA 2022 s 26 (relevant transparent entities, retrospective) |
 | 8 Multinational payee | Payment to a PE that no territory taxes (head office exempts, branch territory does not recognise the PE) | Payer's deduction reduced | — | ss 259HA–259HC |
 
+*Illustration (Ch 5):* a UK company whose foreign parent treats it as transparent pays interest to that parent. The UK gives a deduction; the parent's country sees a payment from itself to itself and ignores it. Nothing is included anywhere, so the UK company may deduct the interest only against DII.
+
 **CFC charges count.** HMRC's worked example (INTM555240) shows a payment to a reverse hybrid wholly brought into a CFC charge: recognition is given under s 259BD and no hybrid payee mismatch remains. Keep this in mind for Undertow.
 
 The pattern is the same in every chapter: **identify the hybrid element, measure the mismatch, apply the chapter's response in the right country.**
@@ -130,6 +132,7 @@ The pattern is the same in every chapter: **identify the hybrid element, measure
 - **Primary (s 259IB):** the **investor**'s deduction is allowed only against DII; excess carried forward.
 - **Secondary (s 259IC):** if the investor's territory does not counteract and the two are in the same control group (or structured), the **hybrid entity**'s deduction is restricted to DII.
 - Stranded deductions can be released in some cases where no further DII can arise.
+- Because restricted amounts wait for future DII, the deferred tax question follows (chapter 6): is future DII probable?
 
 > **Worked example 29.2: hybrid entity double deduction (labelled hypothetical, not story)**
 >
@@ -153,7 +156,7 @@ The pattern is the same in every chapter: **identify the hybrid element, measure
 
 ## Imported mismatches.
 
-**Chapter 11 (ss 259KA–259KF)** denies a UK payer's deduction where its payment funds, through a series of arrangements, a mismatch elsewhere, between members of the same control group or under a structured arrangement.
+This is the chapter that can make a UK borrower need facts about companies it never deals with. **Chapter 11 (ss 259KA–259KF)** denies a UK payer's deduction where its payment funds, through a series of arrangements, a mismatch elsewhere, between members of the same control group or under a structured arrangement.
 
 *Illustration (all countries invented):* UK Co borrows from a group finance company in country A, whose hybrid rules match the OECD's. The finance company funds itself with a hybrid instrument from a group company in country B, which has no hybrid rules. Country A can counteract that mismatch itself, so the UK does nothing. If country A could not, the UK deduction would be at risk to the extent it funds the mismatch.
 
@@ -173,7 +176,7 @@ Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wr
 
 ## Project Undertow.
 
-GY4, and Tom Hesketh's memo for the board. Everything below is part of our invented story.
+GY4, and Tom Hesketh's memo for the board. Everything below is part of our invented story. Before writing, Tom asked the adviser three questions: how exactly would Marrovia tax the coupon; who would be the debtor; and where would the £80m come from? The answers drove everything that followed. Imported mismatches matter less to a UK-parented group like Tarnmoor than to groups whose parent or financing hub is abroad, but the question is still asked whenever a UK company borrows from a group company overseas.
 
 > **Worked example 29.3: the adviser's pitch (invented)**
 >
@@ -188,9 +191,11 @@ GY4, and Tom Hesketh's memo for the board. Everything below is part of our inven
 
 **Step 1: would the UK even see debt?** Perpetual notes held by a company associated with the issuer are **equity notes**, so they are **special securities** (CTA 2010 s 1015, Condition E; ss 1016–1017), and interest on them is a **distribution** (s 1000(1) para F): not deductible at all. HMRC's manual gives perpetual securities as the example (CTM15515).
 
-The adviser's answer: draft the notes so that TFL can **defer or cancel** the coupon, give them **no other significant equity features**, and **elect** to treat them as **hybrid capital instruments** (CTA 2009 s 475C). A hybrid capital instrument is not a special security by reason of Condition E (CTA 2010 s 1015(1A)), and deferral or cancellation rights are ignored in deciding whether payments are distributions (s 420A). But the election (irrevocable, within six months of issue) has **no effect where there are arrangements a main purpose of which is to obtain a tax advantage** for any person. Undertow had no other purpose. **First conclusion:** a serious risk that the coupon is a distribution, with no deduction from the start.
+The adviser's answer: draft the notes so that TFL can **defer or cancel** the coupon, give them **no other significant equity features**, and **elect** to treat them as **hybrid capital instruments** (CTA 2009 s 475C). A hybrid capital instrument is not a special security by reason of Condition E (CTA 2010 s 1015(1A)), and deferral or cancellation rights are ignored in deciding whether payments are distributions (s 420A). The regime (FA 2019 Sch 20) replaced earlier rules for regulatory capital; HMRC describes its aim as allowing coupon deductibility in all sectors, but only for instruments that are, in essence, debt (HMRC Corporate Finance Manual, CFM37800 ff). But the election (irrevocable, within six months of issue) has **no effect where there are arrangements a main purpose of which is to obtain a tax advantage** for any person. Undertow had no other purpose. **First conclusion:** a serious risk that the coupon is a distribution, with no deduction from the start.
 
-**Suppose the election stood.** Then:
+## Tom's memo.
+
+**Suppose the election stood.** Tom worked through the rules in the order a marker would want.
 
 **Step 2: hybrids (Ch 3).** Payment under a financial instrument; TFL within CT; the mismatch arises from the notes' perpetual, subordinated terms, which Marrovia reads as equity; TFL and TCM are related (same control group: both 100% TPLC). Case 1 D/NI of **£5,600,000**; primary response on TFL (s 259CD): deduction denied, **£1,400,000** of CT.
 
@@ -242,6 +247,18 @@ The examiners reported, after **November 2025** (Q6), that some candidates thoug
 
 **Interactions (HMRC's view).** Hybrids before CIR; TP and hybrids applied together, without picking the better result (INTM550080, INTM550085, examples at INTM550086A–E); s 441 alongside, and an amount it disallows cannot be relieved under another rule.
 
+**How the examiner tests it.** Hybrids have appeared once as a whole question (**N25 Q6**, 10 marks) and once as a warning (**N24 Q5**, where some candidates raised them without a trigger). Expect them alongside **TP, CIR and CFCs**. For any cross-border intra-group financing, run Tom's checklist:
+
+1. Is it debt under UK law (distribution rules; hybrid capital instruments)?
+2. Is there a hybrid element (Part 6A chapter, mismatch, response)?
+3. Transfer pricing: amount and rate?
+4. CIR?
+5. Withholding (and exemptions)?
+6. CFC charge on the recipient?
+7. Unallowable purpose?
+
+Then for the hybrid part: name the element, the mismatch, the chapter, the responding country and its response, compute (Case 2 scaling; DII and carry forward), finish with the CT600B administration. Keep it tight.
+
 ## Administration and the tax function.
 
 - **Self-assessment.** The counteraction is made in the CT computation: denied deductions added back; secondary-response amounts brought in as income. No HMRC notice is needed (contrast the old Part 6).
@@ -257,20 +274,6 @@ The examiners reported, after **November 2025** (Q6), that some candidates thoug
 > - **Remember who is related.** A 25% investment is enough: joint ventures and consortium companies (Helmside, in our invented story, while TPLC held 45%) can be related to their investors. Relationships change on the day a company joins or leaves.
 > - **Document.** Where the answer depends on foreign law or on whether the mismatch arises from an instrument's terms, record who advised, what they said and when. A large uncertain position may need an uncertain tax treatment notification (chapter 4).
 > - **Ethics.** Tom's memo put the tax strategy point in one line at the top.
-
-## How the examiner tests it.
-
-Hybrids have appeared once as a whole question (**N25 Q6**, 10 marks) and once as a warning (**N24 Q5**, where some candidates raised them without a trigger). Expect them alongside **TP, CIR and CFCs**. For any cross-border intra-group financing, run Tom's checklist:
-
-1. Is it debt under UK law (distribution rules; hybrid capital instruments)?
-2. Is there a hybrid element (Part 6A chapter, mismatch, response)?
-3. Transfer pricing: amount and rate?
-4. CIR?
-5. Withholding (and exemptions)?
-6. CFC charge on the recipient?
-7. Unallowable purpose?
-
-Then for the hybrid part: name the element, the mismatch, the chapter, the responding country and its response, compute (Case 2 scaling; DII and carry forward), finish with the CT600B administration. Keep it tight.
 
 ## What to take away.
 
@@ -320,4 +323,4 @@ The question was which country taxes a payment two countries describe differentl
 - ITA 2007 ss 874, 882, 888A; Qualifying Private Placement Regulations 2015 (SI 2015/2002); FA 2026 ss 5–6, Sch 1 para 29.
 - *BlackRock HoldCo 5, LLC v HMRC* [2024] EWCA Civ 330.
 - OECD, *Neutralising the Effects of Hybrid Mismatch Arrangements, Action 2: 2015 Final Report* (5 October 2015) (not opened; referred to in s 259KA(7D)).
-- HMRC manuals and forms: INTM550080, INTM550085, INTM550086A–E, INTM550560, INTM550570, INTM551170, INTM555240, INTM557050, INTM561720; CTM15515; CFM37840, CFM37850, CFM38165; SAIM9360; CT600B supplementary pages and guidance.
+- HMRC manuals and forms: INTM550080, INTM550085, INTM550086A–E, INTM550560, INTM550570, INTM551170, INTM555240, INTM557050, INTM561720; CTM15515; CFM37800 ff (including CFM37830, CFM37840, CFM37850), CFM38165; SAIM9360; CT600B supplementary pages and guidance.
