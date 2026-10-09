@@ -85,3 +85,8 @@ WebFetch unavailable; **9 WebSearch calls** used (standard mode). Law sheet V it
 - **UTPP check on the GY6 TP settlement (simplified):** £2.0m adjustment; UK CT £500,000; Vallarian tax on the corresponding profit £400,000 = 80%: no ETMO.
 - **Transitional CbCR safe harbour illustration:** Vallaria passes the simplified ETR test (20% ≥ 17%); Marrovia fails all three tests (TCM revenue ≈ €6.21m, profit ≈ €5.87m at €1.15).
 - Labelled hypothetical (**not story**): royalty overpaid £4.0m to a 5% territory: underlying £1.0m; corresponding £200,000 (20%); UTPP at 31% £1.24m; premium £240,000.
+
+## Continuity fixes applied (R18–R29; reviewer F, stage 0)
+
+- **R28.8 (UTPP gateways):** reading edition: "(s 217C, with s 217D on the mismatch ...)" → "(ss 217C–217E, with s 217D on the mismatch; HMRC, INTM489105, ...)"; key-rules row "ss 217C–217D" → "ss 217C–217E"; references "ss 217C–217D conditions" → "ss 217C–217E conditions". Script states no section numbers for the conditions (none needed). UTPP rate CT + 6% (31%) confirmed by R28.
+- **R25 (Pillar Two GY1–GY4 £66,000):** consistent with the chapter (checked). **R28.9 (threshold "exceeds" v "or more"):** kept.

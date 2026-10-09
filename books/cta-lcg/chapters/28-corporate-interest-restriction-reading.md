@@ -216,7 +216,7 @@ For Tarnmoor the group ratio never helps (WE 28.5): its ratio of 16–19% is wel
 
 > **Exam lens: fixed ratio, group ratio and the floor**
 > - **Past appearances:** M26 Q1: "Fixed ratio only"; some candidates still computed the group ratio, earning nothing. M24 Q6 (20 marks): an interest allowance brought forward inside a two-company CT computation.
-> - **Traps:** the £2m de minimis as an addition (law sheet trap 1); forgetting that the debt cap is the lower limb for lowly geared groups with intra-group funding (trap 2); confusing ANTIE (UK companies, tax numbers) with ANGIE (consolidated, accounts numbers); applying the group ratio without an election.
+> - **Traps:** the £2m de minimis as an addition; forgetting that the debt cap is the lower limb for lowly geared groups with intra-group funding; confusing ANTIE (UK companies, tax numbers) with ANGIE (consolidated, accounts numbers); applying the group ratio without an election.
 > - **Style:** "Calculate, with explanations, the CIR disallowance"; 0.5–1 mark per step.
 
 ---
@@ -330,7 +330,7 @@ TPLC then amends its own GY3 CT return to bring in the extra **£0.6m** reactiva
 
 > **Exam lens: allocation, carry forward and reactivation**
 > - **Past appearances:** M24 Q1 (20 marks; 11 for the CIR calculation): ANTIE, ANGIE, an interest-free loan with TP, and **b/f disallowance reactivation**. M24 Q6: allowance b/f in a computation.
-> - **Traps:** "disallowed interest expires after five years" (no: that is unused **allowance**; disallowed interest has no time limit, law sheet trap 6); reactivating with brought-forward allowance; electing an abbreviated return and then using unused allowance (trap 4); forgetting the default order hits **non-trading** debits first, which shrinks an NTLR deficit (trap 7).
+> - **Traps:** "disallowed interest expires after five years" (no: that is unused **allowance**; disallowed interest has no time limit); reactivating with brought-forward allowance; electing an abbreviated return and then using unused allowance; forgetting the default order hits **non-trading** debits first, which shrinks an NTLR deficit.
 > - **Layout:** finish the computation with a line for reactivation (or disallowance), then allocation by company.
 
 > **Going further: allocating and reactivating well**
@@ -438,7 +438,7 @@ Some businesses are debt-financed by design: a toll road, a network, a hospital 
 
 > **Exam lens: interactions and PIE**
 > - **Past appearances:** M26 Q1 (TP adjustments into ANTIE and tax-EBITDA; a QIC to carve out); M23 Q3 (15 marks: TP and CIR on a loan from a US company; "time was wasted on DPT, which does not apply to loan relationships"); N24 Q5 (TP now applying, CIR "file to protect the position").
-> - **Traps:** exam-intel trap 16 (interest TP adjustments reduce ANTIE but not tax-EBITDA; adjust both for a QIC; no group ratio when told not to); reducing tax-EBITDA for the CIR disallowance; raising DPT (abolished for APs beginning on or after 1 January 2026 and never relevant to loans); hybrids with no hybrid element.
+> - **Traps:** the M26 marking point (interest TP adjustments reduce ANTIE but not tax-EBITDA; adjust both for a QIC; no group ratio when told not to); reducing tax-EBITDA for the CIR disallowance; raising DPT (abolished for APs beginning on or after 1 January 2026 and never relevant to loans); hybrids with no hybrid element.
 
 > **Going further: the tax function's CIR calendar**
 > - **Before the year end:** forecast ANTIE and tax-EBITDA; model disposals, refinancing and TP adjustments; consider whether a group ratio or other election helps; decide whether a QIC election is wanted (it must be made before the end of the QIC's accounting period).

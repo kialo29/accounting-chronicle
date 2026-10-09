@@ -45,7 +45,7 @@ Vallarian domestic law (its loss relief, dividend and exit rules, and how it adm
 **Three practical points.**
 1. **Treaty relief is not automatic.** It is claimed, at source from the paying country or from HMRC (HMRC: "The benefit of a double taxation agreement cannot be assumed" in the context of UK payments, INTM342510).
 2. A treaty binds only its two parties. The UK–Vallaria treaty limits Vallarian withholding on a royalty paid to a UK company; it says nothing about a payment to Marrovia.
-3. **In the exam** the OECD Model is an on-screen PDF of the **2017 articles** (UK statute now refers to the version approved on 18 November 2025 for PE and TP purposes: chapter 2). A **supplied treaty extract is the treaty for that question**. After N23 the examiners reported that some candidates "ignored the supplied treaty article and used the OECD Model text instead".
+3. **In the exam** the OECD Model is an on-screen PDF of the **2017 articles** (UK statute now refers to the version approved on 18 November 2025 for PE and TP purposes: chapter 2). A **supplied treaty extract is the treaty for that question**. After N23 the examiners reported that some candidates ignored the supplied treaty article and used the OECD Model text instead.
 
 > **Exam lens: treaties**
 > - **Grade:** "Double tax treaties – application of OECD model and supplied extracts from treaties" **core (1)** on the 2026 grid (check the 2027 grid when published).
@@ -139,7 +139,7 @@ Purpose tests run through this book: the GAAR (chapter 4), unallowable purpose (
 | Giving effect | A solution or mutual agreement is given effect **notwithstanding anything in any enactment** | TIOPA 2010 s 124(2) |
 | Form of relief | Discharge, repayment, credit, amended assessment or otherwise | s 124(3) |
 | Consequential claims | Out-of-time consequential claims (loss carry-back, group relief) within **12 months** of notification of the agreement | s 124(4) (INTM423070) |
-| Failure to agree | INTM153270 still says the treaty has no provision for this: **out of date** where MLI Part VI **arbitration** applies (it does for UK–Ireland) | Law sheet 3; UK–Ireland synthesised text |
+| Failure to agree | INTM153270 still says the treaty has no provision for this: **out of date** where MLI Part VI **arbitration** applies (it does for UK–Ireland) | INTM153270; UK–Ireland synthesised text |
 
 **In our invented case.** In **GY6** HMRC and Calder settle the TP dispute on Calder's GY3 sale of its process-valve business to TVS: price re-set at £8.0m, adjustment **£2.0m**. Vallaria had computed TVS's profits on the original price. Under the invented treaty's Arts 9 and 25 the group seeks a **corresponding adjustment**, obtained in **GY7** (chapter 27).
 
@@ -183,7 +183,7 @@ Treaties tell the residence state to relieve double taxation; **TIOPA 2010 Part 
 
 **Trade income: s 44.** The credit cannot exceed the CT attributable to the income from **the particular transaction, arrangement or asset**, after a **just and reasonable** apportionment of the trade's deductions, which can include expenses of **connected companies** reasonably attributable to the income (anti-avoidance in ss 45–49). A royalty cannot be presented as cost-free because the research was paid for elsewhere in the group.
 
-**The N25 wrinkle.** In N25 Q1 (overseas royalties under withholding, no treaty), the examiners reported: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." **This book could not confirm the statutory reasoning** behind that answer (s 44's "particular transaction, arrangement or asset" points the other way unless the royalties arise under a single arrangement). Treat it as the examiners' approach on those facts: where a question's royalties look like one stream of the same income, consider treating them as one source, state the assumption, and show the aggregated credit.
+**The N25 wrinkle.** In N25 Q1 (overseas royalties under withholding, no treaty), the examiners reported: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." **The statutory basis is TIOPA 2010 s 47.** Where double taxation arrangements apply and royalties are paid in respect of **an asset** in more than one foreign jurisdiction, s 47 applies s 44(2) so that the royalties from that asset are treated as income from a **single asset**: the credits are aggregated and tested against UK tax on the combined royalty income. N25 Q1's royalties were relieved unilaterally (no treaty); whether s 47 reaches unilateral relief was not confirmed for this book, but the examiners took the same single-source approach. In an answer: where several payers pay royalties for the same asset, treat them as one source, cite s 47, and show the aggregated credit.
 
 ### The misconception: "foreign tax is always fully credited"
 
@@ -417,7 +417,7 @@ A credit is one way to relieve foreign profits. Chapter 25, on going abroad thro
 | Unilateral relief | Where no treaty | ss 8–17 |
 | Gross up | No deduction for foreign tax; dividends grossed up by full underlying tax | s 31 |
 | Minimisation | All reasonable steps, including treaty claims | s 33 |
-| Credit limit | R × IG, source by source | s 42 |
+| Credit limit | R × IG, source by source; royalties for one asset paid in several jurisdictions treated as one source | ss 42, 44, 47 |
 | Trade income | Per transaction, arrangement or asset; just and reasonable deductions incl. connected companies' expenses | s 44 |
 | Allocation | As the company thinks fit | s 52 |
 | Expense relief | Elect no credit; deduct foreign tax | ss 27, 112 |

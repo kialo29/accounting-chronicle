@@ -335,6 +335,7 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Group transfers | NGNL = transferor's cost, not market value; but appropriation from stock is at market value | M23 Q4, N25 Q5 | 17 |
 | Fixtures | s 198 values go into the CA pool; adjust gains only for a loss | M23 Q4, N25 Q5 | 9 |
 | Full expensing | Disposals give a balancing charge (or a split) | M23 Q1, N24 Q4, M26 Q2 | 8 |
+| FYAs | The balance after a 40% or 50% FYA joins the pool **after** that period's WDA, so it gets no WDA until the next period (CAA 2001 s 58(5)) | book (marking-guide logic) | 8 |
 | HP | Whole capital element in the pool when brought into use | M26 Q2 | 8 |
 | SBA | Price paid excluding land and integral features; pre-29 October 2018 buildings: alterations only; 1/12th not 1/9th | M25 Q4, N25 Q4, M26 Q2 | 9 |
 | CFC | 25% test ≠ control; stop at the first exemption; low profit margin; apportion creditable tax; say how the charge works | M24 Q5, M25 Q1, M26 Q5 | 26 |
@@ -354,6 +355,9 @@ Every one of these layouts can be typed as a simple table in the answer box, or 
 | Pensions | Spread only when the rules are triggered | N25 Q1 | 7 |
 | Marginal relief | Deal with straddles; "whilst the marginal rate of tax between the thresholds is 26.5%, this is not the rate that should be applied in full" | M24 Q6, M26 Q4 | 7 |
 | Stamp taxes | Add-on marks routinely missed; stamp duty ≠ SDLT | N25 Q5, N23 Q2 | 21 |
+| Stamp duty on earn-outs | A capped contingent consideration is charged on its **stated maximum** (contingency principle) | book | 21 |
+| Earn-out receipts after an SSE sale | Later receipts are disposals of the earn-out right (*Marren v Ingles*): chargeable on the generally accepted view, not settled law | book | 18, 20 |
+| Blocked foreign trade receipts | A trading receipt that cannot be remitted is relieved under CTA 2009 ss 173–175, not Part 18 (which is for other foreign income) | book | 25 |
 
 On DTR the N25 examiners put it starkly: "Nearly all candidates failed to realise that the royalties can be treated as one source and the foreign tax credits aggregated." On CFCs, after M26 Q5 they criticised "not mentioning obvious points (e.g. how CFC legislation works)": two lines on how the charge works and who pays it are almost free marks.
 
@@ -389,7 +393,7 @@ For each sitting the CIOT publishes the question paper, suggested answers with a
 | Hybrids | 1 (N25 Q6, 10 marks) | 29 |
 | Not seen M23–M26 | Patent Box, DPT, Pillar Two, demergers, transactions in securities, liquidations, CCO, DOTAS/GAAR, standalone IFAs | 4, 11, 19, 30 |
 
-**Favourite combinations** (this book's cross-references mirror them): CT computation + CAs + losses + QIPs + deferred tax; TP + CIR (M23 Q3, M26 Q1, N24 Q5); PE + branch exemption + incorporation + CFC (M23 Q2, N25 Q2, M26 Q5); residence + CFC (N23 Q1); property gains + roll-over + fixtures election + CAs + SDLT (M23 Q4, N25 Q5); sale of a subsidiary + degrouping + SSE + change of ownership + enquiries (M24 Q3); investment company + group relief + lease premiums (M26 Q4). Chapter 31, on the Ridgeway deal, showed the method for a question that touches many regimes at once.
+**Favourite combinations** (this book's cross-references mirror them): CT computation + CAs + losses + QIPs + deferred tax; TP + CIR (M23 Q3, M26 Q1, N24 Q5), where a TP settlement years later can require a revised interest restriction return whose extra relief may be stranded by group relief time limits (Tarnmoor's GY6, chapters 27 and 28); PE + branch exemption + incorporation + CFC (M23 Q2, N25 Q2, M26 Q5); residence + CFC (N23 Q1); property gains + roll-over + fixtures election + CAs + SDLT (M23 Q4, N25 Q5); sale of a subsidiary + degrouping + SSE + change of ownership + enquiries (M24 Q3); investment company + group relief + lease premiums (M26 Q4). Chapter 31, on the Ridgeway deal, showed the method for a question that touches many regimes at once.
 
 **Silence is not safety.** Demergers, transactions in securities, liquidations, the CCO and the GAAR are core or non-core and could appear at any sitting.
 

@@ -174,7 +174,7 @@ These points come from the draft and from professional commentary (KPMG; SWG; Pa
 
 > **Exam lens: the branch exemption**
 > - **Grade:** core (within "Company residence ... concept of permanent establishment/branch", 1).
-> - **Past appearances:** **M23 Q2** (15 marks: stay non-exempt, elect, or incorporate; recommend: "Some failed to give the recommendation and lost marks"; the best answers covered the transitional rules and deferral of the incorporation gain); **N25 Q2** (15 marks: PE analysis, then credit relief, the election (timing, irrevocable) and incorporation); **M26 Q5** (20 marks: construction PE, branch taxation and DTR, the election and its timing for losses, subsidiary, CMC, CFC, dividend exemption; TP excluded).
+> - **Past appearances:** **M23 Q2** (15 marks: stay non-exempt, elect, or incorporate; recommend: the examiners reported that some candidates failed to give the recommendation and lost marks; the best answers covered the transitional rules and deferral of the incorporation gain); **N25 Q2** (15 marks: PE analysis, then credit relief, the election (timing, irrevocable) and incorporation); **M26 Q5** (20 marks: construction PE, branch taxation and DTR, the election and its timing for losses, subsidiary, CMC, CFC, dividend exemption; TP excluded).
 > - **Style:** explain and compare; short computations of UK tax with and without the election; a recommendation.
 > - **Traps:** treating the election as per branch; forgetting it starts from the **next** AP and is irrevocable after the relevant day; ignoring the **opening negative amount**; giving credit for foreign tax on exempt profits (s 18(3A)); discussing UK residence or migration in a PE question (M26 Q5).
 > - **Layout:** a short table of UK tax per AP under each option, all in £.
@@ -261,7 +261,7 @@ In GY2, Tom Hesketh's paper for Calder's board ran the two routes side by side, 
 | Scope | Company-wide decision | All PEs of the company | Entity by entity |
 
 > **Exam lens: branch or subsidiary**
-> - **M26 Q5 (20 marks)** set exactly this choice. Examiners: "Many wrongly discussed residence or migration of the UK company"; the best answers covered PE thresholds, the branch exemption and its timing (losses), the impact of the overseas rate, and the subsidiary through CMC and CFC; some did TP although it was excluded; candidates also lost marks for "not mentioning obvious points (e.g. how CFC legislation works)".
+> - **M26 Q5 (20 marks)** set exactly this choice. The examiners reported that many candidates wrongly discussed residence or migration of the UK company; the best answers covered PE thresholds, the branch exemption and its timing (losses), the impact of the overseas rate, and the subsidiary through CMC and CFC; some did TP although it was excluded; candidates also lost marks for "not mentioning obvious points (e.g. how CFC legislation works)".
 > - **Layout:** three options in turn; a short tax-cost comparison; a recommendation naming the option and the main reason.
 
 ## Incorporating a branch.
@@ -297,7 +297,7 @@ In GY2, Tom Hesketh's paper for Calder's board ran the two routes side by side, 
 | s 140C (with s 140D) | A UK company transfers a business carried on through a **PE in a member State** to a company resident in a **member State**, for securities: gains and losses netted; notional foreign tax credit under TIOPA 2010 s 122 where appropriate (CG45713) |
 | ss 140E–140L | Cross-border mergers (s 561A CAA 2001) |
 
-Since **31 December 2020**, the Taxes (Amendments) (EU Exit) Regulations 2019 (SI 2019/689) reg 6 replaced "member State" with "**relevant state**" in s 140A, defined in s 140L(10) as **the UK or a member State**. Whether every reference in s 140C was also reworded was not confirmed: treat s 140C's post-Brexit scope with care. Vallaria is not a member State, so none of these reliefs helps Calder; Ireland is (chapter 31).
+Since **31 December 2020**, the Taxes (Amendments) (EU Exit) Regulations 2019 (SI 2019/689) reg 6 replaced "member State" with "**relevant state**" in s 140A, defined in s 140L(10) as **the UK or a member State**. The same regulation also amended s 140C (for example "another member State" became "a member State", and "other than the United Kingdom" was omitted), so after Brexit s 140C still turns on a PE in, and a transferee resident in, an EU member State; treat its detailed post-Brexit scope with care. Vallaria is not a member State, so none of these reliefs helps Calder; Ireland is (chapter 31).
 
 > **Exam lens: incorporation reliefs**
 > - **Grades:** s 140 within the core PE/branch row; "Transfers concerning companies of different member States" **non-core (2)**.

@@ -105,3 +105,7 @@ Bible §5.2 flags touched:
 - Board minute: three reasons (cannot beat doing nothing; annual multi-regime dispute; conflicts with tax strategy). TCM continues lending to TVS; TFL's funding stays plain.
 - Tom asked the adviser three questions before writing (Marrovian treatment; debtor; source of the £80m).
 - Labelled hypotheticals (not story): Case 1/Case 2 £1,000,000 coupon (CT £250,000 / mismatch £750,000, CT £187,500); Ch 9 £2.0m expenses, DII £1.4m, c/f £600,000 (CT £150,000 timing); UK-payee example £500,000 receipt taxed under s 931D(c) (CT £125,000, reading edition only).
+
+## Continuity fixes applied (R18–R29; reviewer F, stage 0)
+
+- **R29 (Undertow):** both editions already state the adviser's assumed CFC charge £350,000, claimed net saving £1,050,000, full CFC charge £1.4m less the £1.12m withholding credit = £280,000, and the board's three minuted reasons. No change needed. No other ruling R18–R29 names chapter 29.

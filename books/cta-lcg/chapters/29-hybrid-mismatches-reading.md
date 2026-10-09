@@ -166,7 +166,7 @@ This is the chapter that can make a UK borrower need facts about companies it ne
 
 Imported mismatches matter less to a UK-parented group like Tarnmoor than to groups whose parent or financing hub is abroad, but the question is still asked whenever a UK company borrows from a group company overseas.
 
-Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wrong or income arrives late; Chapter 13 (ss 259MA–259MD) is a targeted anti-avoidance rule.
+Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wrong or income arrives late; Chapter 13 (s 259M) is a targeted anti-avoidance rule (relevant avoidance arrangements, counteracted on a just and reasonable basis).
 
 > **Exam lens: hybrid mismatches**
 >
@@ -317,7 +317,7 @@ The question was which country taxes a payment two countries describe differentl
 
 ## Statutory and case references
 
-- TIOPA 2010 Part 6A, ss 259A–259NF (especially ss 259A(20), 259B, 259BC, 259BD, 259BE, 259CA–259CE, 259DA–259DG, 259EA–259ED, 259FA–259FC, 259GA–259GE, 259HA–259HC, 259IA–259IC, 259JA–259JD, 259KA–259KF, 259LA–259LB, 259MA–259MD, 259NB–259ND, 259NEB–259NEF; Ch 12A including s 259ZMB); former Part 6 (ss 231–259).
+- TIOPA 2010 Part 6A, ss 259A–259NF (especially ss 259A(20), 259B, 259BC, 259BD, 259BE, 259CA–259CE, 259DA–259DG, 259EA–259ED, 259FA–259FC, 259GA–259GE, 259HA–259HC, 259IA–259IC, 259JA–259JD, 259KA–259KF, 259LA–259LB, 259M, 259NB–259ND, 259NEB–259NEF; Ch 12A, ss 259ZMA–259ZMF, including s 259ZMB); former Part 6 (ss 231–259).
 - TIOPA 2010 Part 9A: ss 371EC, 371IA, 371IG–371IH, 371PA. Part 4 (transfer pricing). Part 10 (CIR).
 - FA 2016 Sch 10; F(No.2)A 2005 ss 24–31, Sch 3; FA 2018 Sch 7; FA 2021 Sch 7; FA 2022 s 26.
 - CTA 2009 ss 420A, 441–442, 475C, 931B, 931D; Part 10 Ch 8.

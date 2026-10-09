@@ -59,7 +59,7 @@ Most foreign subsidiaries of UK groups have boards abroad that listen closely to
 
 **Usurped.** In *Unit Construction Co Ltd v Bullock* [1960] AC 351 (HL), a UK company's African subsidiaries had constitutions requiring their boards to meet, and their business to be managed, outside the UK. In practice the local boards stood back and the parent's board in London took the real decisions. The subsidiaries were UK resident. Lord Radcliffe treated the location of control as a matter of fact, of "actuality"; it did not matter that the parent's conduct was contrary to the subsidiaries' constitutions. Residence follows what happens, not what the documents say should happen.
 
-**Influenced.** *Wood v Holden* [2006] EWCA Civ 26 (Chadwick LJ giving the leading judgment; Moore-Bick LJ and Sir Christopher Staughton). Note first: Mr Wood was the businessman behind Ron Wood Greetings Card Holdings Ltd, **not the musician**. In 1996 he and his wife sold their shares for £23.7m through a chain of companies ending with a Dutch company, Eulalia Holding BV, whose sole managing director was a Dutch trust company. The planning depended on Eulalia being resident outside the UK. HMRC argued that Eulalia's director simply did what Mr Wood and his advisers wanted, so no real decisions were taken in the Netherlands. The Special Commissioners agreed; Park J reversed them; the Court of Appeal upheld Park J. Eulalia was Dutch resident.
+**Influenced.** *Wood v Holden* [2006] EWCA Civ 26 (Chadwick LJ giving the leading judgment; Moore-Bick LJ and Sir Christopher Staughton). Note first: Mr Wood was the businessman behind Ron Wood Greetings Card Holdings Ltd, **not the musician**. In July 1996 the shares, held through an offshore company in the Woods' structure (Copsewood Investments Ltd, a British Virgin Islands company), were sold for £23.7m to a Dutch company, Eulalia Holding BV, whose sole managing director was a Dutch trust company; three months later Eulalia sold them on to a trade buyer for about £30.8m. Mr and Mrs Wood were assessed on the gains under TCGA 1992 s 13 (gains of non-resident close companies), and the planning depended on Eulalia being resident outside the UK. HMRC argued that Eulalia's director simply did what Mr Wood and his advisers wanted, so no real decisions were taken in the Netherlands. The Special Commissioners agreed; Park J reversed them; the Court of Appeal upheld Park J. Eulalia was Dutch resident.
 
 The distinction is the one every group tax function lives by:
 
@@ -286,7 +286,7 @@ Disputes over the amount in the statement go to the tribunal, whose decision is 
 |---|---|
 | s 109C | Company migrating without meeting A–D: penalty up to the **unpaid tax** for pre-migration periods |
 | s 109D | Any person who knowingly takes part (directors; controlling companies and their directors) liable to a penalty of the same maximum; directors presumed party unless they show otherwise; professional advisers acting only as advisers excluded |
-| s 109E | Tax unpaid **6 months** after it is payable (under the plan, if any): HMRC may, within a **3-year** time limit, serve notice on companies in the migrating company's **51% group** in the 12 months before migration and on **controlling directors**, who must pay within **30 days**; they may recover from the migrating company; the payment is not deductible |
+| s 109E | Tax unpaid **6 months** after it is payable (under the plan, if any): HMRC may, within **3 years** of a relevant time (broadly when the tax is finally determined, with a plan-based rule where a payment plan exists), serve notice on companies in the migrating company's **51% group** in the 12 months before migration and on **controlling directors** of the migrating company or of a company controlling it, who must pay within **30 days**; they may recover from the migrating company; the payment is not deductible |
 
 So migration is a group event: TPLC and TEL would be first in line if TIL failed to pay.
 
@@ -307,7 +307,7 @@ So migration is a group event: TPLC and TEL would be first in line if TIL failed
 
 ## Paying over six years.
 
-**TMA 1970 Sch 3ZB** (inserted by FA 2013 Sch 49; amended by FA 2019 Sch 8 Part 1 for APs ending on or after 1 January 2020).
+**TMA 1970 Sch 3ZB** (inserted by FA 2013 Sch 49; amended by FA 2019 Sch 8 Part 1, which replaced the old payment paragraphs 11–17 with a single six-instalment rule).
 
 | Feature | Rule | Reference |
 |---|---|---|

@@ -181,7 +181,7 @@ The rate was **25%** (s 79 as enacted), set above corporation tax on purpose; fo
 
 The design mattered as much as the rate. HMRC issued notices, and the company had to **pay before it could argue**; review and appeal came later (ss 101–102). The aim was plain: a group facing an immediate cash bill at a premium rate had every reason to agree its transfer pricing on the ordinary CT basis instead.
 
-**The case: *Glencore Energy UK Ltd v HMRC* [2017] EWHC 1476 (Admin).** HMRC issued Glencore Energy UK Ltd with a **charging notice under FA 2015 s 95** for **£21,129,349 plus interest**, for its nine-month AP **1 April – 31 December 2015**. Glencore did not wait for the statutory review and appeal; it asked the High Court for judicial review of the notice. **Green J** (judgment 29 June 2017) **refused permission**: the statute's own route, a review under s 101 and an appeal to the First-tier Tribunal, was an adequate alternative remedy, and judicial review is a remedy of last resort; he also refused permission on wider discretionary grounds. A separate ruling held that the High Court could not grant permission to appeal its own refusal ([2017] EWHC 1587 (Admin)). Glencore took the matter to the Court of Appeal (*R (Glencore Energy UK Ltd) v HMRC* [2017] EWCA Civ 1716, 2 November 2017; Gloster, Sales and Singh LJJ); later commentary cites that decision for the same principle, that a suitable alternative remedy will usually exclude judicial review.
+**The case: *Glencore Energy UK Ltd v HMRC* [2017] EWHC 1476 (Admin).** HMRC issued Glencore Energy UK Ltd with a **charging notice under FA 2015 s 95** for **£21,129,349 plus interest**, for its nine-month AP **1 April – 31 December 2015**. Glencore did not wait for the statutory review and appeal; it asked the High Court for judicial review of the notice. **Green J** (judgment 29 June 2017) **refused permission**: the statute's own route, a review under s 101 and an appeal to the First-tier Tribunal, was an adequate alternative remedy, and judicial review is a remedy of last resort; he also refused permission on wider discretionary grounds. A separate ruling held that the High Court could not grant permission to appeal its own refusal ([2017] EWHC 1587 (Admin)). Glencore appealed. The **Court of Appeal dismissed the appeal** (*R (Glencore Energy UK Ltd) v HMRC* [2017] EWCA Civ 1716, 2 November 2017; Gloster, Sales and Singh LJJ, Sales LJ giving the lead judgment): the statutory review and appeal were a suitable alternative remedy, and judicial review would be appropriate only in an exceptional case.
 
 Glencore's lesson is the one the design intended: **pay now, argue later**. The tax would be argued, if at all, after the money had moved.
 
@@ -213,7 +213,7 @@ Old periods keep the old tax, so an enquiry into an earlier year can still invol
 
 ## Three gates.
 
-UTPP is not charged at the premium rate just because a price was wrong. **Three conditions** must all be met (s 217C, with s 217D on the mismatch; HMRC, INTM489115–489150):
+UTPP is not charged at the premium rate just because a price was wrong. **Three conditions** must all be met (ss 217C–217E, with s 217D on the mismatch; HMRC, INTM489105, INTM489115–489150):
 
 | Gate | Test | HMRC guidance |
 |---|---|---|
@@ -331,7 +331,7 @@ Next, Part Five puts it all together: chapter 31 follows a single deal, Tarnmoor
 | Accounts | No deferred tax for Pillar Two; separate current tax | IAS 12 paras 4A, 88A–88D |
 | DPT | APs from 1 April 2015; 25%; 31% from APs beginning 1 April 2023; repealed for APs beginning on or after 1 January 2026 | FA 2015 Part 3; FA 2021 s 8; FA 2026 s 46, Sch 5 |
 | UTPP rate | Underlying CT rate + 6% (31% at main rate) | TIOPA 2010 s 217A |
-| UTPP conditions | ETMO (< 80%); TDC; not wholly excepted loan relationships | ss 217C–217D; INTM489130–489150 |
+| UTPP conditions | ETMO (< 80%); TDC; not wholly excepted loan relationships | ss 217C–217E; INTM489105, INTM489130–489150 |
 | UTPP procedure | Preliminary notice ≤ 4 years; 30 days; assessment ≤ 60 days; 15-month amendment period; pay first; no reliefs | ss 217F–217S |
 | Tarnmoor GY5 (invented) | Marrovia ETR 13.0%; MTT £102,000 (TPLC); due 31 March GY7 | — |
 | Tarnmoor GY1–GY4 (invented) | Marrovia ETR 13.0%; MTT £66,000 a year | — |
@@ -343,8 +343,8 @@ Next, Part Five puts it all together: chapter 31 follows a single deal, Tarnmoor
 - **FA 2025** Sch 4 (UTPR; para 52, 30 June 2026 floor).
 - **FA 2026** s 46 and Sch 5 (DPT repealed; TIOPA Part 4A); s 50 and Sch 8 (Pillar Two amendments; para 53 commencement); Sch 7 (PE definition, CTA 2010 s 1141).
 - **FA 2015** Part 3: ss 79 (rate), 80–81, 86–87, 95 (charging notice), 101–102 (review and appeal), 116 (commencement). **FA 2021** s 8 (31%).
-- **TIOPA 2010** Part 4A, ss 217A–217T (s 217A rate; s 217B UTPP; ss 217C–217D conditions; ss 217F–217L procedure; s 217K payment; s 217M appeal; ss 217Q–217S no reliefs).
+- **TIOPA 2010** Part 4A, ss 217A–217T (s 217A rate; s 217B UTPP; ss 217C–217E conditions; ss 217F–217L procedure; s 217K payment; s 217M appeal; ss 217Q–217S no reliefs).
 - **IAS 12** *Income Taxes* paras 4A, 88A–88D (*International Tax Reform: Pillar Two Model Rules*, 23 May 2023).
-- *Glencore Energy UK Ltd v HMRC* [2017] EWHC 1476 (Admin) (Green J, 29 June 2017); [2017] EWHC 1587 (Admin); *R (Glencore Energy UK Ltd) v HMRC* [2017] EWCA Civ 1716 (2 November 2017).
+- *Glencore Energy UK Ltd v HMRC* [2017] EWHC 1476 (Admin) (Green J, 29 June 2017); [2017] EWHC 1587 (Admin); *R (Glencore Energy UK Ltd) v HMRC* [2017] EWCA Civ 1716 (2 November 2017; appeal dismissed).
 - HMRC manuals: MTT01100, MTT01200, MTT15110, MTT15120, MTT32000–MTT32030; INTM489105, INTM489115, INTM489120, INTM489125, INTM489130, INTM489135, INTM489140, INTM489145, INTM489150, INTM489155, INTM489215.
 - GOV.UK: "Domestic Top-up Tax and Multinational Top-up Tax: detailed information" (collection); "Check if you need to report Pillar 2 top-up taxes"; "How to report Pillar 2 top-up taxes"; "Pay Pillar 2 top-up taxes"; TIIN "Reform of UK law in relation to transfer pricing, permanent establishment and Diverted Profits Tax" (26 November 2025); policy paper on the side-by-side package (13 July 2026).

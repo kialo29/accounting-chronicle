@@ -59,3 +59,10 @@
 ## Ledger additions
 
 None (only canonical TEL GY2 figures used: total profits £26,000,000; group and consortium relief £17,095,000; TTP £8,905,000; CT £2,226,250; QIPs 4 × £556,562.50).
+
+## Continuity fixes applied (R18–R29; reviewer F, stage 0)
+
+No "Fix needed in" item names chapter 32. Following the rulings' guidance for chapter 32 (reading edition only; the script is at the top of its word band):
+- Trap atlas rows added: FYA balance pooled after the period's WDA (R18, CAA 2001 s 58(5)); stamp duty on a capped earn-out charged on the stated maximum (R22); earn-out receipts after an SSE sale "generally accepted view, not settled" (R22); blocked foreign trade receipts under CTA 2009 ss 173–175, not Part 18 (R23). These rows are marked "book" in the Sitting column (not examiners' evidence).
+- Favourite combinations: TP + CIR now mentions the GY6 revised interest restriction return and group relief time limits as the interaction example (R20).
+- R19: the chapter never states £351,200 or £651,200 (checked). R26: the chapter quotes no interest rates (checked).

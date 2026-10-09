@@ -170,7 +170,7 @@ HMRC's guidance calls this the **relevant liabilities restriction** and describe
 
 ## The actuators hive-down
 
-Early in GY6, TEL decides to sell its actuators business to Brennock Industries Inc, an invented US group. The business is part of TEL's single company, so the group first creates a new subsidiary, **Tarnmoor Actuators Ltd (TAL)**. On **1 February GY6** TEL transfers the actuators trade and assets into TAL; on **31 December GY6** it sells TAL's shares.
+Early in GY6, TEL's board decides to run its actuators business as a separate company and to review the options for it later in the year. The business is part of TEL's single company, so the group first creates a new subsidiary, **Tarnmoor Actuators Ltd (TAL)**. On **1 February GY6** TEL transfers the actuators trade and assets into TAL. No buyer is in view on that date; Brennock Industries Inc, an invented US group, first approaches the group in the summer, and on **31 December GY6** TEL sells it TAL's shares.
 
 That two-step, the **hive-down**, is a staple of corporate deals, and each regime meets it differently:
 

@@ -122,7 +122,7 @@ For agents outside the group, the usual factors still matter: legal and economic
 
 Two words carry the weight: "only" and "as a whole". An activity that is an essential and significant part of the company's business is not auxiliary even if it is on the list: a company whose business **is** warehousing cannot call its warehouse auxiliary.
 
-**Anti-fragmentation (s 1143(2A)–(2C), added by FA 2019).** The exception does not apply where the activities carried on by the company, or by a closely related person, at the same place or at another place in the same territory, are **complementary functions that form part of a cohesive business operation**, and either:
+**Anti-fragmentation (s 1143(2A)–(2C), added by FA 2019 s 21).** The exception does not apply where the activities carried on by the company, or by a closely related person, at the same place or at another place in the same territory, are **complementary functions that form part of a cohesive business operation**, and either:
 
 - the **combination** of activities is not merely preparatory or auxiliary; or
 - one of the places is already a PE of the company or of the closely related person.
@@ -398,7 +398,7 @@ The treaty has been the hero of this chapter. Chapter 24, on treaties and double
 | Independent agent | Not independent if closely related and acting exclusively or almost exclusively for the group | s 1142(1), (1A)–(1B) |
 | Closely related | Control, or common control; 50% investment condition | s 1143(2CA) |
 | Preparatory or auxiliary | Only, viewed against the business as a whole | s 1143(1)–(3) |
-| Anti-fragmentation | Complementary functions forming a cohesive business operation (FA 2019) | s 1143(2A)–(2C) |
+| Anti-fragmentation | Complementary functions forming a cohesive business operation (FA 2019 s 21) | s 1143(2A)–(2C) |
 | Treaty priority | Treaty Art 5 and Art 7 prevail | TIOPA s 6; INTM153060 |
 | MLI Art 12 | Not adopted by the UK (UK–Ireland confirmed) | MLI synthesised text |
 | Attribution | Separate and independent enterprise; FAR; credit rating; capital | CTA 2009 ss 20(1A)–(1E), 21 |

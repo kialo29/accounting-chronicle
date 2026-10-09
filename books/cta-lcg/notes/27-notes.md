@@ -94,3 +94,10 @@ Files: `chapters/27-transfer-pricing.txt` (script, 9,227 words; target 9,000 ±1
 - **APA:** bilateral application prepared by Tom's team after the royalty began (GY4); could not finish while the enquiry was open; agreed after the GY6 settlement; covers the royalty **from GY6** (term not fixed). Calder still documents the royalty in its Local File.
 - **Documentation:** TPLC files the CbC report within 12 months of each 31 December; Master File prepared centrally; Local Files for cross-border dealings (TPLC: TVS services, TIL loan from GY4; TFL: TVS loan; Calder: TVS sale and royalty).
 - **Not story (labelled hypotheticals):** Calder valve at £900 v £1,000 (CUP illustration); 220 staff / €60m / €40m SME example; resale £1,000 / 25%; cost plus £400 / 20%; TNMM £10m / £1.5m / 3%; residual split £10m; inbound £100m at 9% / £60m at 7% (TP £4.8m; CIR £0.6m).
+
+## Continuity fixes applied (R18–R29; reviewer F, stage 0)
+
+- **R20 (GY3 CIR revised return):** reading edition, "Going further: the restructuring ripple", CIR bullet now says the reporting company must file a revised GY3 interest restriction return within three months of the settlement (reactivation £1.87m → £2.47m; TEL's group relief claim for the extra deficit out of time). Script: one sentence added after the settlement paragraph ("The settlement also reopened the group's interest restriction return for Group Year Three, as chapter twenty eight explains."). **Flag 17 resolved by R20** (figures 89.7 / 26.91 / 2.47 / 2.04, not 2.56 / 1.95).
+- **R26 (interest):** reading edition, "Interest runs on the £500,000": now "until the normal due date, 1 October GY4, and then late payment interest until paid". Script: "at the instalment rate until the normal due date and at the late payment rate after that". **Flag 16 withdrawn:** 6.25% = Bank Rate 3.75% + 2.5% (R26).
+- **R29 (s 164A and TIL; TPLC GY1 adjustment):** text already consistent (s 164A ceases at migration; £0.6m / £1.2m; £125,000 through TEL's smaller group relief). Flag 3 remains open as R29 records (book's reading).
+- Contradictions: resolved by continuity rulings R20, R26 and R29.

@@ -53,7 +53,7 @@ The **appropriate rate** is the main rate for the chargeable company's AP (avera
 > **Exam lens: the order of attack**
 > - **Grade:** controlled foreign companies **1 (core)** (2026 grid; also 1 in the 2028 grid).
 > - **Layout the examiners reward:** company by company: (1) is it a CFC (control)? (2) does an entity exemption apply? if so, **stop**; (3) which gateway chapters apply and what passes? (4) apportionment and the 25% test; (5) creditable tax and the charge.
-> - **Trap:** "kept discussing other exemptions after finding one that applied" (M24 Q5 examiners' report).
+> - **Trap:** candidates kept discussing other exemptions after finding one that applied (M24 Q5 examiners' report, paraphrased).
 
 **The theory of the gateway.** The regime borrows its central test from the OECD's **2010 Report on the Attribution of Profits to Permanent Establishments** (the AOA): where are the **significant people functions** (SPFs), the people who take the decisions about assets and risks? If they are in the UK, the profits they generate belong to the UK (s 371DA(3)). *(The OECD report was not opened for this book; the statute's reference to it was.)*
 
@@ -116,8 +116,8 @@ Exempt if accounting profits **or** ATTP are **≤ £50,000**; or **≤ £500,00
 
 For routine, low-margin activity (a distributor, a service centre). A CFC is exempt if its **accounting profits are no more than 10% of its relevant operating expenditure** (ROE). Two details decide almost every answer:
 
-1. Profits are measured **before interest** (s 371MB).
-2. ROE is operating expenditure in the accounts **excluding** (a) the **cost of goods purchased that are not used in the CFC's territory**, and (b) expenditure that **gives rise to income of a related person** (s 371MC). A management fee to the UK parent is the classic (b) item.
+1. Profits are measured **before any deduction for interest** (s 371MB(2)): interest **expense** is added back, but interest **income** stays in (INTM225800). A finance company cannot use the rule to strip out its own interest income.
+2. ROE is operating expenditure in the accounts **excluding** (a) the **cost of goods purchased that are not used in the CFC's territory**, and (b) expenditure that **gives rise to income of a related person** (s 371MB). A management fee to the UK parent is the classic (b) item. s 371MC adds anti-avoidance: no exemption where arrangements have a main purpose of securing it.
 
 "Accounting profits" are pre-tax profits under an acceptable GAAP, ignoring exempt distributions, property business profits or losses and capital profits; Part 4 transfer pricing applies, but a difference of **£50,000 or less** is ignored (ss 371VC–371VD).
 
@@ -169,7 +169,7 @@ The five doors share a logic: each is Parliament's advance judgement that a whol
 
 > **Exam lens: the entity exemptions**
 > - **Grade:** core (within CFCs).
-> - **Past appearances:** M24 Q5 (20 marks: five overseas companies; tax rate comparisons; a tax-holiday company): exemptions "good on the whole". M25 Q1 (20 marks): "Few calculated the low profit margin correctly"; the exempt period was well understood.
+> - **Past appearances:** M24 Q5 (20 marks: five overseas companies; tax rate comparisons; a tax-holiday company): exemptions good on the whole. M25 Q1 (20 marks): few calculated the low profit margin correctly; the exempt period was well understood.
 > - **Traps:** profit **before** interest; trim ROE for goods not used locally and related-person expenditure; adjust **both** sides of the tax exemption; tax holidays and designer rates fail; pro-rate thresholds for short APs; **stop** at the first exemption that works.
 
 ## Which gateway chapters apply.
@@ -270,12 +270,12 @@ The current s 371IE (substituted by F(No.2)A 2017 for worldwide group periods of
 
 > **Exam lens: gateways and Chapter 9**
 > - **Grade:** core.
-> - **Past appearances:** N23 Q1(c): a finance company paying 1% tax taken through the NTFP gateway (good answers; some strayed into DPT and CIR). M24 Q5: "Gateways weaker than exemptions".
+> - **Past appearances:** N23 Q1(c): a finance company paying 1% tax taken through the NTFP gateway (good answers; some strayed into DPT and CIR). M24 Q5: gateways answered less well than exemptions.
 > - **What earns marks:** Ch 3 Conditions A–D and why Ch 4 is or is not switched off; the 5% rule; **s 371EC** (UK equity); the Ch 9 claim with the **business premises condition**; 75% exemption arithmetic (6.25%); QLR exclusions (UK debtor; UK PE).
 
 ## From chargeable profits to the charge.
 
-Chargeable profits are not yet tax. Two thresholds must be kept apart: **control** decides whether the foreign company is a CFC; the **25% test** decides which UK companies pay. The examiners reported after **M24** that candidates "confused the 25% apportionment threshold with the control tests".
+Chargeable profits are not yet tax. Two thresholds must be kept apart: **control** decides whether the foreign company is a CFC; the **25% test** decides which UK companies pay. The examiners reported after **M24** that candidates confused the 25% apportionment threshold with the control tests.
 
 **Relevant interests (s 371OC).** A UK resident company's interest is relevant **except** an indirect interest held **through another UK resident company**: the charge sits at the **lowest UK company** in the chain.
 
@@ -355,7 +355,7 @@ Marrovian finance company; Marrovian CT **9%** (invented; no UK treaty). Funded 
 > - Effective UK rate on TCM's profit: 204,000 / 5,100,000 = **4.0%**; with Marrovian tax, 13.0%.
 > - **GY1–GY4** (lending only to TVS): profit 3,600,000 − 300,000 = 3,300,000; chargeable 825,000; creditable 74,250; charge 206,250 − 74,250 = **£132,000** a year.
 > - **The pair to remember:** the £1,275,000 apportioned in GY5 (and £825,000 in each of GY1–GY4) enters TPLC's s 105(3A) profit-related threshold, capping its group relief surrender of management expenses (chapters 13 and 15); s 371UD is gone, so the expenses cannot shelter the charge either.
-> - ANTIE: £24.65m (GY1), £25.82m (GY2), £24.35m (GY3) (chapter 28); GY5 is assumed of the same order.
+> - ANTIE: £24.65m (GY1), £25.82m (GY2), £24.44m (GY3) (chapter 28); GY5 is assumed of the same order.
 
 ### Tarnmoor Vallaria SA (TVS)
 
@@ -406,7 +406,7 @@ Two lessons outlast the saga. Whether an exemption is a gift depends on what you
 
 ## Running the regime.
 
-**Returns.** Each chargeable company self-assesses the CFC charge in its own CT return, with the supplementary pages **CT600B** ("Controlled foreign companies and foreign permanent establishment exemptions, hybrid and other mismatches"), which summarise each CFC and show how the charge is computed. The charge is CT of the chargeable company (s 371UA): returns, enquiries, assessments, appeals, interest and penalties apply. **Instalments:** HMRC's manual includes "tax charged on controlled foreign companies" in the total liability that a very large company pays by instalments (CTM92825). *(Whether a parent with no taxable profits of its own is "large" for the instalment rules is a separate test on its own profits; this book does not resolve it for TPLC.)*
+**Returns.** Each chargeable company self-assesses the CFC charge in its own CT return, with the supplementary pages **CT600B** ("Controlled foreign companies and foreign permanent establishment exemptions, hybrid and other mismatches"), which summarise each CFC and show how the charge is computed. The charge is CT of the chargeable company (s 371UA): returns, enquiries, assessments, appeals, interest and penalties apply. **Instalments:** HMRC's manual includes "tax charged on controlled foreign companies" in the total liability that a very large company pays by instalments (CTM92825). *(Whether the chargeable company is "large" is a separate test on its own profits. TPLC's own taxable total profits are nil, so on this book's reading it is not large, and it pays its CFC charge (£132,000 a year in GY1–GY4; £204,000 for GY5) 9 months and 1 day after the end of its AP.)*
 
 **Positive actions and deadlines.**
 

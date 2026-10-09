@@ -285,7 +285,7 @@ On **31 December GY6** TEL sold TAL's shares to Brennock for **£48.0m** cash pl
 
 > **Worked example 20.5: the sale of TAL (invented; £)**
 >
-> **1. SSE (TCGA 1992 Sch 7AC).** TEL held TAL for 11 months. The actuators assets were used in TEL's own trade, as a member of the Tarnmoor group, throughout the 12 months before the sale: **para 15A** treats TEL as holding the shares for that time. TAL was trading before and immediately after the sale (para 19). **Exempt.**
+> **1. SSE (TCGA 1992 Sch 7AC).** TEL held TAL for 11 months. The actuators assets were used in TEL's own trade, as a member of the Tarnmoor group, throughout the 12 months before the sale: **para 15A** treats TEL as holding the shares for that time. Para 15A also treats TAL as a qualifying (trading) company for that period, before it existed (as HMRC's guidance at CG53080C and commentators describe it); it was trading from 1 February GY6 and immediately after the sale (para 19). **Exempt.**
 >
 > **2. Degrouping charge on the factory (s 179).** TAL acquired it from TEL on 1 February GY6 and leaves within 6 years.
 >

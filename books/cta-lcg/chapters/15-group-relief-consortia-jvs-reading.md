@@ -2,7 +2,7 @@
 
 # Chapter fifteen: Group relief, consortia and joint ventures.
 
-On 27 October 2021, a Budget day, a set of rules written to satisfy European law quietly left the British statute book. For more than a decade a UK company had been able, in narrow circumstances, to claim relief for the losses of a subsidiary resident elsewhere in the European Economic Area (CTA 2010 Part 5 Ch 3, ss 111–128). Those rules were the long shadow of the *Marks and Spencer* litigation (*HMRC v Marks and Spencer plc* [2013] UKSC 30 and [2014] UKSC 11), which *The Living Law* (TKS), chapter 24, told. **Finance Act 2022 s 24(3)** repealed Chapter 3 with effect from that Budget day. In substance, HMRC's manual (CTM81502) now says that relief for the overseas losses of group companies resident in the EU, for periods after 26 October 2021, is no longer available.
+On 27 October 2021, a Budget day, a set of rules written to satisfy European law quietly stopped working. For more than a decade a UK company had been able, in narrow circumstances, to claim relief for the losses of a subsidiary resident elsewhere in the European Economic Area (CTA 2010 Part 5 Ch 3, ss 111–128). Those rules were the long shadow of the *Marks and Spencer* litigation (*HMRC v Marks and Spencer plc* [2013] UKSC 30 and [2014] UKSC 11), which *The Living Law* (TKS), chapter 24, told. **Finance Act 2022 s 24(3)**, enacted the following year, repealed Chapter 3 with effect from that Budget day. In substance, HMRC's manual (CTM81502) now says that relief for the overseas losses of group companies resident in the EU, for periods after 26 October 2021, is no longer available.
 
 So the border is back where it began. Losses move between companies inside the UK tax net, and almost nowhere else. And even inside it they do not flow freely. They move one company at a time, by claim and by consent, measured period by period, and they stop dead when the ownership tests fail or when someone has agreed to sell.
 
@@ -156,7 +156,7 @@ Two practical points:
 
 The **overlapping period** (s 142) is the time common to the surrender period and the claim period. Any part of it during which the group (or consortium) condition is not met is treated as not part of the overlapping period (s 142(2)). Both companies' figures are apportioned to the overlapping period, on HMRC's approach by **time unless that would be unjust or unreasonable** (CTM80260–CTM80265, not opened: label as HMRC's guidance).
 
-**Several claims for the same months (s 142).** Where a claimant takes relief for overlapping periods that cover the same months, prior claims attributable to those months reduce the unused part of its available total profits, so no slice of profit is relieved twice.
+**Several claims for the same months (s 140(3)–(6); s 139 does the same on the surrendering side).** Where a claimant takes relief for overlapping periods that cover the same months, prior claims attributable to those months reduce the unused part of its available total profits, so no slice of profit is relieved twice.
 
 > **Worked example 15.3: TEL's capacity for BSL's loss, 1 July–31 December GY2 (£; invented)**
 >
@@ -290,7 +290,7 @@ Joint ventures between groups are everywhere in infrastructure, energy and prope
 | 2 (s 133) | Consortium company | A company in the same group as a **link company** (a member) | Both UK related; same trading-receipt exclusion |
 | 3 (s 133) | A company in the same group as a link company | Consortium company | As above |
 
-**Refinements (in outline).** Where the consortium company heads a group of its own, relief its own group could give is taken into account first (s 149; CTM80585). Where a member is in a group, its group companies can claim or surrender through it as link company (below).
+**Refinements (in outline).** Where the consortium company heads a group of its own, relief its own group could give is taken into account first (ss 148–149; CTM80585). Where a member is in a group, its group companies can claim or surrender through it as link company (below).
 
 **Helmside (invented).** Helmside Energy Ltd was formed on **1 January GY1** to make hydrogen balance-of-plant equipment, and it trades from the start (a consortium company must be a trading or holding company: a pre-trading company fails). Shareholders: TPLC 45%; Greyfell Utilities plc (invented listed utility) 40%; Northlight Infrastructure Fund LP (invented limited partnership) 15%.
 
@@ -340,7 +340,7 @@ Think of the consortium as a shared allotment: each member takes produce only in
 >
 > Consents: TPLC and Greyfell (the members) consent to every claim (Sch 18 para 70(2)); Helmside gives notice as surrendering company. The payment terms are in Helmside's shareholders' agreement (invented); each payment is within s 183 (less than the amount surrendered).
 
-**Down: member to consortium company.** When a member surrenders to the consortium company, the limit is the member's ownership proportion of the **consortium company's available total profits** for the overlapping period (s 143). **Not the member's loss.** This is the trap the examiners named after N24 Q2.
+**Down: member to consortium company.** When a member surrenders to the consortium company, the limit is the member's ownership proportion of the **consortium company's available total profits** for the overlapping period (s 144; s 143 governs the claim going up). **Not the member's loss.** This is the trap the examiners named after N24 Q2.
 
 **Helmside GY4 (invented).** Helmside's first profit was **£2.5m**. It first used its own carried-forward losses of **£1.2m** (s 45A; within its own £5m deductions allowance, since a consortium company is not in a 75% group: chapter 14), leaving available total profits of **£1.3m**. TPLC had surplus current-year management expenses, and the shareholders' agreement asks members to offer surplus relief to Helmside at full value (25p per £). On a **full year**, the ceiling would be 45% × £1.3m = **£585,000**. Section 155 changes that: see the next section.
 
@@ -529,7 +529,7 @@ Losses are not the only thing a group moves. Chapter sixteen turns to company ga
 
 ## Statutory and case references
 
-**Statute.** CTA 2010 Part 5: ss 97–99, 105, 107, 109, 111–128 (repealed), 129–134, 137–147, 149, 151–157, 155A, 155B, 157–182, 183; Part 5A ss 188AA–188FD (esp. 188BE, 188FA); Part 7ZA; Part 14 Ch 2C; s 719. CTA 2009 ss 931E, 931F, 979, 1008, 1223, 1257, 1259, 1262, 1264A, 1265, 1273. ITTOIA 2005 s 850C. TIOPA 2010 s 371BC, Part 10. TCGA 1992 ss 170(11), 171(2)(d). FA 1998 Sch 18 paras 66–77 (esp. 70, 74). SI 1999/2975. FA 2013; FA 2014 Sch 17; F(No.2)A 2015; FA 2022 s 24(3); FA 2026 s 31.
+**Statute.** CTA 2010 Part 5: ss 97–99, 105, 107, 109, 111–128 (repealed), 129–134, 137–147, 148–149, 151–157, 155A, 155B, 157–182, 183; Part 5A ss 188AA–188FD (esp. 188BE, 188FA); Part 7ZA; Part 14 Ch 2C; s 719. CTA 2009 ss 931E, 931F, 979, 1008, 1223, 1257, 1259, 1262, 1264A, 1265, 1273. ITTOIA 2005 s 850C. TIOPA 2010 s 371BC, Part 10. TCGA 1992 ss 170(11), 171(2)(d). FA 1998 Sch 18 paras 66–77 (esp. 70, 74). SI 1999/2975. FA 2013; FA 2014 Sch 17; F(No.2)A 2015; FA 2022 s 24(3); FA 2026 s 31.
 
 **HMRC manuals.** CTM80142; CTM80170, CTM80181, CTM80185, CTM80190, CTM80195, CTM80205, CTM80206; CTM80225, CTM80260, CTM80265; CTM80520, CTM80525, CTM80540, CTM80585, CTM80605, CTM80625, CTM80630, CTM80696; CTM81502; CTM82030, CTM82170, CTM82505–CTM82525; CTM97020, CTM97060; COM53100; CIRD89870.
 

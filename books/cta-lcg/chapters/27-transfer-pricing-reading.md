@@ -384,14 +384,14 @@ A **business restructuring** is a cross-border reorganisation of functions, asse
 > | **Additional CT at 25%** | **500,000** |
 > | Total CT on the transfer (1,500,000 + 500,000) | 2,000,000 |
 >
-> **Interest** runs on the £500,000 from the dates the tax should have been paid: Calder was very large in the 9-month AP (QIP divisor 10), so from its instalment dates (14 June, 14 September, 14 December GY3), until paid (chapter 3 explains the instalment and late payment interest rules). The amount depends on the payment date and is not fixed in the story.
+> **Interest** runs on the £500,000 from the dates the tax should have been paid: Calder was very large in the 9-month AP (QIP divisor 10), so from its instalment dates (14 June, 14 September, 14 December GY3) until the normal due date, 1 October GY4, and then late payment interest until paid (chapter 3 explains the instalment and late payment interest rules). The amount depends on the payment date and is not fixed in the story.
 >
 > **No penalty.** Calder kept TP records (Local File entry, the valuation report, a contemporaneous note of the functional analysis) and took reasonable care, so there was no careless inaccuracy and the FA 2007 Sch 24 para 3C presumption never arose.
 
 **The planning lesson.** A restructuring is the transaction HMRC reviews most closely, because it moves future profit for good. The defence is evidence assembled at the time: who did what, what transferred, what each party could otherwise have done. Calder's file was good enough to avoid a penalty, but not to avoid an adjustment.
 
 > **Going further: the restructuring ripple**
-> - **CIR.** The extra £2.0m is taxable profit of Calder's 9-month AP and, on the statute's reading (TIOPA s 408 excludes the realisation credit only so far as it reverses earlier debits: chapter 11), part of tax-EBITDA for that period. A services or sale TP adjustment **increases** tax-EBITDA (M26 Q1 guide). Whether and how the group's interest restriction return for GY3 is revisited is chapter 28's subject [flagged].
+> - **CIR.** The extra £2.0m is taxable profit of Calder's 9-month AP and, on the statute's reading (TIOPA s 408 excludes the realisation credit only so far as it reverses earlier debits: chapter 11), part of tax-EBITDA for that period. A services or sale TP adjustment **increases** tax-EBITDA (M26 Q1 guide). The reporting company must file a revised GY3 interest restriction return within three months of the settlement (chapter 28): reactivation rises from £1.87m to £2.47m, but TEL's group relief claim for the extra deficit is out of time.
 > - **UTT.** If the advantage of a filing position on a price exceeds £5m and departs from HMRC's known position, consider notification (chapter 4).
 > - **UTPP.** A TP shortfall that is not self-assessed can expose a group to UTPP where its conditions are met (chapter 30). A correct return is the best protection.
 
@@ -537,7 +537,7 @@ Transfer pricing decides how much interest a company may pay. The next chapter a
 | Dormant | Dormant since 31 March 2004 | s 165 | V |
 | SME exemption | Small < 50 staff and ≤ €10m; medium < 250 staff and turnover ≤ €50m or balance sheet ≤ €43m; linked and partner enterprises | ss 166, 172; Rec 2003/361/EC | V / S |
 | Medium: TP notice | After an enquiry; appeal only on size; 90 days to amend | ss 168–171 | V |
-| UK-to-UK exemption | Both UK companies; within CT; same rate; same currency; no s 18A, patent box or excluded company; election out; HMRC notice | s 164A; chargeable periods commencing on or after 1 January 2026 | V (conditions via law sheet and INTM414320) |
+| UK-to-UK exemption | Both UK companies; within CT; same rate; same currency; no s 18A, patent box or excluded company; election out; HMRC notice | s 164A; chargeable periods commencing on or after 1 January 2026 | V (conditions via INTM414320) |
 | CFCs | Cannot use s 164A | s 371SD(5A) | V |
 | LVAS | Cost + 5% | INTM440071 | V (manual) |
 | Guarantees | Never arm's length where loan depends on it; deemed guarantee election (4 years) | ss 153A, 153B | V |
