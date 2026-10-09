@@ -255,6 +255,13 @@ This is HMRC guidance, not statute, but it is how claims are processed. Advisers
 
 **Partner enterprises in reverse.** A small company part-owned (25%–50%) by an investor must include a proportion of the investor's figures. The Recommendation has special rules for some investor types (for example certain venture capital investors); check them in CIRD92800 (text of the Recommendation) on real facts. *In our invented case* BSL's venture investors did not make it a partner or linked enterprise of any larger group.
 
+> **Going further: R&D in the Brackenwell deal (invented)**
+> - **Pending credit.** BSL's GY1 ERIS credit of £943,950 related to a period when it was independent. If the claim is made after completion, the cash arrives in a Tarnmoor company; the SPA should say whether the price already reflects it, and who bears the loss if HMRC enquires into the claim and reduces it (an indemnity or a price adjustment: chapter 20).
+> - **Status of the acquisition year.** On HMRC's whole-period view, BSL's January to June GY2 spending gets the merged RDEC, not ERIS. Ending BSL's AP on 30 June GY2 was the planning point that was missed.
+> - **Payment step 7 conditions.** A target that is not a going concern, or has PAYE or VAT arrears, may find its cash credit delayed; due diligence should check both.
+> - **Losses.** The ERIS credit extinguishes the losses surrendered, and the remaining £0.7m joins BSL's other pre-acquisition losses, which chapter 14 shows are restricted after the change in ownership.
+> - **Claim history.** HMRC enquiries into past R&D claims are common; a target with aggressive historic claims (or contingent-fee advisers) is a warranty and indemnity issue.
+
 > **Exam lens: ERIS and linked enterprises (grade 1 core in 2026; not examined from 2028)**
 > - **Past appearances:** M24 Q4 (linked enterprises; poor).
 > - **Traps:** testing the subsidiary alone; forgetting partner enterprises; using the transfer pricing SME thresholds (250 staff, €50m/€43m) instead of the doubled R&D ceilings (500, €100m/€86m); applying 14.5% to the whole enhanced loss rather than the lower of the unrelieved loss and 186% of qualifying expenditure; treating the ERIS credit as taxable.
