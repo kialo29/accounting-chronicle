@@ -101,3 +101,9 @@ Files: `chapters/27-transfer-pricing.txt` (script, 9,227 words; target 9,000 ±1
 - **R26 (interest):** reading edition, "Interest runs on the £500,000": now "until the normal due date, 1 October GY4, and then late payment interest until paid". Script: "at the instalment rate until the normal due date and at the late payment rate after that". **Flag 16 withdrawn:** 6.25% = Bank Rate 3.75% + 2.5% (R26).
 - **R29 (s 164A and TIL; TPLC GY1 adjustment):** text already consistent (s 164A ceases at migration; £0.6m / £1.2m; £125,000 through TEL's smaller group relief). Flag 3 remains open as R29 records (book's reading).
 - Contradictions: resolved by continuity rulings R20, R26 and R29.
+
+## Technical review fixes (review F)
+
+- Reading, key rules status cell: "V (conditions via law sheet and INTM414320)" → "V (conditions via INTM414320)" (R16 production word).
+- Script, takeaway: "applies from chargeable periods commencing" → "applies for chargeable periods commencing" (brief §13).
+- Verified this review: FA 2007 Sch 24 para 3C inserted by F(No.2)A 2023 Sch 5 (APs beginning on or after 1 April 2023). Still unverified (labels kept): s 164A "same rate" for a nil-profit company, banking company definition, residence "throughout" (flags 1–3); CbC prior-period measure and penalty amounts (flags 4–5; secondary only, one source gives £30).

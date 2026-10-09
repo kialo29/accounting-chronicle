@@ -152,3 +152,13 @@ The script `calc.py` used rent less expenses at one stage; the text uses the sim
 - **BSL royalty (Ch 23).** £50,000 a year, paid each **31 December**. BSL holds the university's evidence of Vallarian residence. It deducts **£2,500** (5%) under s 911 and pays £47,500. The deduction goes on the CT61 for the quarter to 31 December, due **14 January**. s 917A does not apply because the licensor is unconnected.
 - **TIL after migration (Ch 23).** The UK property business is within CT. TIL's (Tom's team's) application for **NRL approval to receive rent gross** is made. No rent figure is fixed.
 - **Not story (labelled hypotheticals).** TVS parts store near Leeds (anti-fragmentation); £800,000 attributed PE profit (CT £200,000); TIL rent £200,000, profit £180,000, NRL £40,000, CT £45,000, payable £5,000; counterfactual £6.05m withholding on unlisted TFL notes.
+
+## Continuity fixes applied (rulings R18–R29)
+
+- No "Fix needed in" item in R18–R29 names chapter 23. Checked against R29: TVS's GY4 service fee to TEL stays **unpriced** (both editions say only that it is priced under the TP rules, chapter 27; no figure): consistent. TIL's NRL application and UK property business (ledger §8 GY4) consistent. Grep for superseded figures: none.
+
+## Technical review fixes (review E)
+
+- Anti-fragmentation rule: inserting provision tightened to **FA 2019 s 21** (reading edition, two places). Source: legislation.gov.uk FA 2019 s 21 (search extract).
+- No ERROR or LIKELY items found; all computations re-run (BSL royalty, Undertow, TFL notes, TIL NRL illustration) and agree.
+- Still unverified: whether HMRC requires DTTP2 within 30 days of the loan (loan-agreement drafting uses 30 days; the GOV.UK page was not retrieved); the text keeps "as soon as possible" from the law sheet. UK reservation on the whole of MLI Art 12 remains secondary.

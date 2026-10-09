@@ -109,3 +109,8 @@ Bible §5.2 flags touched:
 ## Continuity fixes applied (R18–R29; reviewer F, stage 0)
 
 - **R29 (Undertow):** both editions already state the adviser's assumed CFC charge £350,000, claimed net saving £1,050,000, full CFC charge £1.4m less the £1.12m withholding credit = £280,000, and the board's three minuted reasons. No change needed. No other ruling R18–R29 names chapter 29.
+
+## Technical review fixes (review F)
+
+- Reading, "Imported mismatches": "Chapter 13 (ss 259MA–259MD)" → "Chapter 13 (s 259M) ... (relevant avoidance arrangements, counteracted on a just and reasonable basis)"; references: "259MA–259MD" → "259M"; Ch 12A cited as ss 259ZMA–259ZMF including s 259ZMB (ERROR, citation; INTM561500, INTM561210, FA 2021 Sch 7 Part 6). Script names no sections: no change.
+- Verified this review: s 259BD per INTM550570 (relevant chargeable company ≥ 25%).

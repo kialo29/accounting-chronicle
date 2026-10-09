@@ -32,7 +32,7 @@ WebSearch (standard mode), 10 of 12 used:
 8. **"On the usual account of the policy"** (finance company exemption as a competitiveness measure) is the law sheet's teaching note, not a sourced quotation: labelled in both editions.
 9. **CFC charge and instalments:** CTM92825 (very large companies) includes CFC tax in total liability (V-HMRC extract). Whether TPLC (nil TTP) is itself "large" for QIPs is **not resolved** (reading edition says so). Ledger/R1 do not fix TPLC's QIP status.
 10. **TCM creditable tax = 9% × chargeable profits**: a just and reasonable attribution of Marrovian tax to the 25% charged (as in the ledger and law sheet example 1). Statute s 371PA (V) does not prescribe the attribution method.
-11. **Matched interest for GY5:** Tarnmoor's ANTIE for GY5 is not fixed (GY1–GY3 are £24.65m, £25.82m, £24.35m); the chapter says "about £25m a year"; the conclusion (no matched interest exemption) holds for any ANTIE above £1,275,000.
+11. **Matched interest for GY5:** Tarnmoor's ANTIE for GY5 is not fixed (GY1–GY3 are £24.65m, £25.82m, £24.44m as filed: R20); the chapter says "about £25m a year"; the conclusion (no matched interest exemption) holds for any ANTIE above £1,275,000.
 12. **Recovery and joint appeals:** section numbers within ss 371UA–371UF not individually verified (reading edition cites the range; s 371UC for substitution per law sheet).
 13. **Exempt period extension** "by HMRC notice given before it ends" (law sheet V). Script phrasing: "can be extended only by H M R C's notice given before the period ends, so a group that needs more time must ask early".
 14. **Low profit margin "before interest"** and ROE exclusions: law sheet V (s 371MB, s 371MC).
@@ -93,3 +93,18 @@ WebSearch (standard mode), 10 of 12 used:
 - TCM: its own Marrovian team makes and manages the lending decisions (no UK significant people functions); full exemption unavailable (UK equity is not qualifying resources); Ch 9 claim each year by TPLC; matched interest nil (ANTIE far above the 25% passing). Without the claim GY5 charge would be £816,000 (saving £612,000); effective UK rate 4.0%. (Ch 26)
 - TVS: Vallarian tax on a reconciled base = 80% of corresponding UK tax: tax exemption every year. (Ch 26)
 - TIL (from 30 June GY4): Dublin staff manage all assets and risks, including the letting of the UK warehouse (Ch 3 Condition B); buys most of its stock from TEL (related person; fails low profit margin); deposit interest £60,000 on trading working capital; **GY5 trading profits before interest and tax about £2.4m** (5% = £120,000); excluded territories and exempt period points left unchecked in the file. (Ch 26)
+
+## Continuity fixes applied (rulings R18–R29)
+
+- **R20:** reading edition, TCM worked example: ANTIE GY3 "£24.35m" → **"£24.44m"**; flag 11 updated.
+- **R29 (flag 9):** TPLC's own TTP is nil, so it is not large for QIPs; its CFC charge (£132,000 GY1–GY4; £204,000 GY5) is due 9 months and 1 day after its AP (book's reading). Reading edition "Running the regime" note and one script sentence added. Flag 9 **resolved by R29**.
+- **R28.7:** the chapter already states that Part 9A applies to CFC APs beginning on or after 1 January 2013: consistent.
+- **R25:** Pillar Two GY5 figures (£459,000 + £204,000; ETR 13.0%; top-up about £102,000) consistent.
+
+## Technical review fixes (review E)
+
+- **Low profit margin "before interest" clarified (both editions):** profits are taken before any deduction for interest **expense**; interest **income** stays in (INTM225800, search extract). This matters for TCM, whose income is interest.
+- **Section reference (reading):** ROE exclusions cited to s 371MB, not s 371MC; s 371MC described as the main-purpose anti-avoidance rule (INTM225800 extract).
+- Four examiners' remarks (M24 Q5, M25 Q1) that were paraphrases in the research summary are no longer shown in quotation marks.
+- Still open after searches: Ireland on the SI 2012/3024 Part 1 list (the extract seen jumps from Greece to Panama in a truncated list; not confirmed either way); QDMTT as "local tax" or creditable tax (no HMRC CFC guidance found).
+- Word count after fixes: script 9,357 (target 9,000 ± 10%).

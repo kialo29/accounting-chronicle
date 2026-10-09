@@ -66,3 +66,7 @@ No "Fix needed in" item names chapter 32. Following the rulings' guidance for ch
 - Trap atlas rows added: FYA balance pooled after the period's WDA (R18, CAA 2001 s 58(5)); stamp duty on a capped earn-out charged on the stated maximum (R22); earn-out receipts after an SSE sale "generally accepted view, not settled" (R22); blocked foreign trade receipts under CTA 2009 ss 173–175, not Part 18 (R23). These rows are marked "book" in the Sitting column (not examiners' evidence).
 - Favourite combinations: TP + CIR now mentions the GY6 revised interest restriction return and group relief time limits as the interaction example (R20).
 - R19: the chapter never states £351,200 or £651,200 (checked). R26: the chapter quotes no interest rates (checked).
+
+## Technical review fixes (review F)
+
+- No errors found. Verified this review: autumn 2027 sitting 26 October 2027, 2.30pm (CIOT exam entry page; the 28 October line is still flagged); pass rates and time plan recomputed (Python). Script unchanged (5,990 words; ceiling 6,050).

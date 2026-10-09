@@ -77,3 +77,15 @@ WebSearch (11 of 12 used; standard mode):
 - **Not story facts** (labelled hypotheticals): PPT conduit via a third-country holding company; Vallarian over-measurement variant (£1.2m; £15,000 lost); Marrovian licensee at 30% (£270,000 / £135,000 wasted); s 52 allocation example (UK £500,000; TVS £900,000; Marrovian £500,000 gross / £400,000 profit / £150,000 WHT; deductions £1,000,000; credit £60,000 bad / £104,444 pro rata / £160,000 good; CT payable £140,000 / £95,556 / £40,000; £50,000 lost); taxed TVS dividend under s 931R (£1.0m; WHT £150,000; UT £250,000; UK CT £312,500; credit £312,500; £87,500 wasted).
 
 `ledger-check.py` re-run: 132 checks, 0 failures (no canonical numbers changed).
+
+## Continuity fixes applied (rulings R18–R29)
+
+- No "Fix needed in" item in R18–R29 names chapter 24. R29 confirms this chapter's facts (UK–Vallaria treaty preamble and PPT; Calder's royalty: costs £300,000, profit £900,000, Patent Box CT £90,000, WHT £60,000 credited, UK CT £30,000): both editions consistent. R28.5 (*FCE Bank*): consistent with chapter 15. Grep for superseded figures: none.
+
+## Technical review fixes (review E)
+
+- **N25 "royalties as one source" (flag 1, open item 20): statutory basis found.** TIOPA 2010 **s 47** applies s 44(2) where double taxation arrangements apply and royalties are paid in respect of an asset in more than one foreign jurisdiction: the royalties are treated as income from a single asset and the credits aggregated. Both editions now cite it (reading: "The N25 wrinkle" and Key rules table; script: the examination wrinkle paragraph), noting that N25 Q1 was a non-treaty (unilateral) case and that s 47's reach to unilateral relief is not confirmed. Source: https://www.legislation.gov.uk/ukpga/2010/8/section/47 (search extract).
+- R16: "Law sheet 3" removed from the MAP table's source column (reading).
+- Examiners' N23 remark no longer shown in quotation marks (it is a paraphrase from the research summary).
+- *Bayfine* quotation: the opening words ("the primary purposes of the Treaty are, on the one hand, to eliminate double taxation") corroborated by a secondary source; the second limb was not seen verbatim (kept, with ellipsis).
+- Word count after fixes: script 8,024 (target 7,500 ± 10%).

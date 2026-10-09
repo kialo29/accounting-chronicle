@@ -90,3 +90,10 @@ WebFetch unavailable; **9 WebSearch calls** used (standard mode). Law sheet V it
 
 - **R28.8 (UTPP gateways):** reading edition: "(s 217C, with s 217D on the mismatch ...)" → "(ss 217C–217E, with s 217D on the mismatch; HMRC, INTM489105, ...)"; key-rules row "ss 217C–217D" → "ss 217C–217E"; references "ss 217C–217D conditions" → "ss 217C–217E conditions". Script states no section numbers for the conditions (none needed). UTPP rate CT + 6% (31%) confirmed by R28.
 - **R25 (Pillar Two GY1–GY4 £66,000):** consistent with the chapter (checked). **R28.9 (threshold "exceeds" v "or more"):** kept.
+
+## Technical review fixes (review F)
+
+- *Glencore* (both editions): flag 5 **resolved**. The Court of Appeal dismissed Glencore's appeal ([2017] EWCA Civ 1716, 2 November 2017; Gloster, Sales and Singh LJJ; Sales LJ lead judgment): the statutory review and appeal were a suitable alternative remedy; judicial review only in an exceptional case. Reading text and references updated; script now "Glencore appealed, and later that year the Court of Appeal dismissed the appeal on the same ground. Judicial review would be right only in an exceptional case." Green J's judgment date 29 June 2017 confirmed (Find Case Law listing; Devereux Chambers note).
+- Script, takeaway: "do not arise wholly from loans" → "wholly from excepted loan arrangements".
+- Not changed (canonical; referred to the orchestrator): WE 30.1 GY7 €1,322m (£1,150m × 1.15 = €1,322.5m; conventional rounding €1,323m).
+- Verified this review: DPT 31% by FA 2021 s 8 for APs beginning on or after 1 April 2023 (straddles split); UTPP preliminary notice within 4 years and s 217C(1) conditions (INTM489215); UTPR as F(No.2)A 2023 Ch 9A from FB 2024-25 Sch 4. Script word count 5,454 (ceiling 5,500).

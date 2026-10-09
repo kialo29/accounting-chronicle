@@ -85,3 +85,20 @@ WebSearch (10 of 12 used, standard mode):
 - **No s 187B election** (deadline 30 June GY6).
 - From 1 July GY4 a new AP: TIL non-resident, within CT on its UK property business; leaves group relief; stays in the gains group.
 - Labelled illustration only (not a story fact): warehouse sold for £4.5m → actual gain £700,000 + postponed £800,000 = £1.5m.
+
+## Continuity fixes applied (rulings R18–R29)
+
+- R18–R27: no "Fix needed in" item touches chapter 22; grep of both editions for superseded figures (£351,200, £651,200, £585,000, £240,000, £24.35m) found none.
+- R28.1 (*Development Securities*): the chapter's practice (name the panel; no proposition attributed to a named judge; "one member of the court" for the reservations remark) is confirmed; flag 9 closed on that basis.
+- R28.4 (*Unit Construction*): the chapter already follows the INTM/extract version (London board controlled the African subsidiaries; no "Kenya"); flag 10 closed.
+- R29 (s 164A and TIL): consistent; the chapter says the UK-to-UK exemption ceases at migration and full Part 4 applies (chapter 27).
+- R26 (interest rates): the plan instalments carry interest "as if there were no plan"; no rate is stated, so nothing to align.
+
+## Technical review fixes (review E)
+
+- ***Wood v Holden* facts corrected (both editions).** The £23.7m sale (23 July 1996) was by Copsewood Investments Ltd (BVI company in the Woods' structure) to Eulalia Holding BV, which sold on to Birthdays Group Ltd on 21 October 1996 for £30,799,384; the Woods were assessed under TCGA s 13. The text had said the Woods sold their shares for £23.7m through a chain ending with Eulalia. Source: Find Case Law [2006] EWCA Civ 26 (judgment opening, via search extract).
+- **TMA s 109E (both editions):** the 3-year limit runs from a "relevant time" (broadly when the tax is finally determined; plan-based where a payment plan exists); notices may go to controlling directors of the migrating company **or of a company controlling it**. Source: legislation.gov.uk s 109E (point-in-time versions); CTM34190. Flag 3 resolved.
+- **Old s 187 (script):** postponement described as lasting until the foreign trading assets were sold within six years, or the parent relationship ended.
+- **Sch 3ZB amending provision (reading):** "amended by FA 2019 Sch 8 Part 1 for APs ending on or after 1 January 2020" replaced by "which replaced paras 11–17 with a single six-instalment rule" (the Part 1 commencement date was not confirmed; legislation.gov.uk Sch 3ZB para 11 and FA 2019 Sch 8 seen in extracts).
+- Word count after fixes: script 8,162 (target 7,500 ± 10%).
+- Still unverified: CAA 2001 s 61(2) table item giving market value on a deemed discontinuance (reviewer's knowledge: the residual "any other event" item; not seen in the search extract); QIP treatment of tax deferred under a Sch 3ZB plan; FA 2019 Sch 8 Part 1 commencement.

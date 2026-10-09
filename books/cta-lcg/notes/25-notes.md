@@ -83,3 +83,15 @@ WebFetch unavailable; **12 WebSearch calls** used (standard mode). Law sheet V i
 - Counterfactual only (not story): election in AP to 31 March GY3 → TONA £300,000; exempt £600,000; top-up £15,000; saving £30,000.
 - **GY6 unremittable (labelled example):** TEL's Marrovian receipt **£400,000** (pumps), paid into a local account and blocked by exchange controls; s 173 deduction in GY6; relief withdrawn in **GY7** when controls lift (s 175); CT of £100,000 deferred one year.
 - Labelled, not story: TVS dividend £10m (withholding £1.5m); s 140 example (gain £1.0m; shares £3m, cash £1m; postponed £750,000); TVS £120m share issue (IMC report).
+
+## Continuity fixes applied (rulings R18–R29)
+
+- **R23:** Contradiction 1 (TEL's blocked Marrovian receipt: s 173, not Part 18) **resolved by R23**; the ledger now records the s 173 deduction (£400,000, GY6) and its s 175 reversal in GY7. Both editions already teach this; no text change.
+- **R29:** Calder's branch decision (no s 18A election; £75,000 relief; project-life tax £150,000) and the draft Finance Bill 2026-27 compulsory exemption ("proposed, not law") confirmed; both editions consistent.
+- Grep for superseded figures: none.
+
+## Technical review fixes (review E)
+
+- **s 140C after Brexit (flag 3; open item 19):** SI 2019/689 reg 6 also amended s 140C ("another" → "a" member State; "other than the United Kingdom" omitted), so the reading edition now says so instead of "not confirmed". Source: https://www.legislation.gov.uk/uksi/2019/689/regulation/6/2020-12-31 (search extract). Bible flag 25: s 140L(10) definition and s 140C rewording now both located.
+- Two examiners' remarks (M23 Q2, M26 Q5) that were paraphrases in the research summary are no longer shown in quotation marks.
+- CTA 2009 s 173 (BIM42750 and legislation extracts): deduction against profits, not so as to create a loss, excess carried forward: consistent with the text. s 174 and any claim time limit still not seen.
