@@ -115,3 +115,28 @@ TEL, year ended 31 December GY2 (£000):
 Calder, 9-month AP to 31 December GY3: Dan's package paid **30 September GY3**, deductible in full in that AP: **£97,812** (statutory £9,012; holiday £3,800; PENP £25,000; ex gratia £60,000 incl. £10,000 pension contribution), excluding the legal fee (amount not fixed in TKS ledger). Fallback s 79 cap **£27,036**. Calder's MR limits for the 9-month AP (divisor 10): £3,750 / £18,750.
 
 Labelled hypotheticals (NOT story facts): TEL £1.0m EBT contribution (£0.6m deductible GY2); pension spreading CPCP £1.0m / CCCP £2.6m (excess £1.5m; £1.6m now, £0.5m in each of next two periods); TEL £200,000 QCD (TTP £8,705,000, CT £2,176,250, saving £50,000; amended by R3, was £7.88m / £1.97m); LFL rentals £500,000 / finance charge £120,000; stand-alone company TTP £150,000, CT £36,000.
+
+## Continuity fixes applied
+
+Applied 9 October 2026 from `continuity-rulings.md` (numbers recomputed in Python; `ledger-check.py`: 132 checks, 0 failures). R2 and R7: no change beyond R3 (QIPs stay on the full liability). R15: no change (the reading edition already places Dan's package "within the restructuring costs provided for (chapter 5)"). R17: TEL "9 associated companies (divisor 10)" confirmed as the marginal relief count; no change.
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R3 | script | Opening: "about two million pounds, and not nearly six" → "about two point two million pounds, and not nearly six" |
+| R3 | script | Recharge paragraph: "are set first against its own profits ... Only the excess, six point three million pounds, can be surrendered" → excess over gross profits six point three million pounds, but only the excess over the profit-related threshold (adds eight hundred and twenty five thousand pounds of controlled foreign company profits apportioned from the Marrovian subsidiary) can be surrendered: "five point four seven five million pounds"; the rest carried forward |
+| R3 | script | QCD hypothetical: "eight point oh eight ... to seven point eight eight million pounds" → "eight point nine oh five ... to eight point seven oh five million pounds" (saving fifty thousand pounds unchanged) |
+| R3 | script | TEL computation: ME surrender "six point three million" → "five point four seven five million"; group relief "seventeen point nine two" → "seventeen point oh nine five"; TTP "eight point oh eight" → "eight point nine oh five"; CT "two point oh two million pounds" → "two million, two hundred and twenty six thousand, two hundred and fifty pounds"; instalments "five hundred and five thousand pounds" → "five hundred and fifty six thousand, five hundred and sixty two pounds and fifty pence" |
+| R3 | script | Analyst steps: group relief "about seventeen point nine million pounds, about four and a half million" → "about seventeen point one million pounds, about four point three million"; "What remains is two point oh two million pounds" → "about two point two three million pounds" |
+| R3 | script | "What to take away" TEL line: "seventeen point nine two ... eight point oh eight ... two point oh two million pounds" → "seventeen point oh nine five ... eight point nine oh five ... two million, two hundred and twenty six thousand, two hundred and fifty pounds" |
+| R3 | reading | Opening "about £2m" → "about £2.2m" |
+| R3 | reading | Recharge paragraph: "leaving £6.3m to surrender to TEL; CTA 2010 s 105 limits ... own profits" → excess £6.3m, but s 105(3A) caps surrender at the excess over the profit-related threshold (gross profits + £825,000 CFC apportionment from TCM): threshold £3.025m, surrender **£5.475m**, £825,000 carried forward |
+| R3 | reading | QCD hypothetical: "£26.0m − £0.2m − £17.92m = £7.88m (instead of £8.08m); CT £1.97m" → "£26.0m − £0.2m − £17.095m = £8.705m (instead of £8.905m); CT £2,176,250 (instead of £2,226,250)" |
+| R3 | reading | Worked example table: TPLC ME "(6,300) chapter 15" → "(5,475) CTA 2010 s 105(3A); chapters 13, 15"; TTP 8,080 → 8,905; CT 2,020 → 2,226.25 |
+| R3 | reading | Payment line: "QIPs of £505 each (£000)" → "QIPs of £556,562.50 each ..., based on the full liability" |
+| R3 | reading | Told in words: GR "£17.92m" → "£17.095m"; "TTP is £8.08m and CT £2.02m, paid in four ... instalments of £505,000" → "TTP is £8.905m and CT £2,226,250, due in four ... instalments of £556,562.50" |
+| R3 | reading | Analyst table: GR −17.92 / −4.480 → −17.095 / −4.27375; TTP/CT 8.08 / 2.020 → 8.905 / 2.22625; "about 8.6% of profit before tax" → "about 9.5%" |
+| R3, R16 | reading | Key figures row TEL GY2: "GR £17.92m → TTP £8.08m → CT £2.02m | ledger" → "GR £17.095m → TTP £8.905m → CT £2,226,250 | invented (story)" |
+| R16 | reading | Key figures row Dan's package: source "ledger; this chapter" → "invented (story); this chapter" |
+| R16, R17 | reading | Recharge aside: "bible flag 55 remains open on whether the recharge could be trading" → "whether the recharge could be trading is not settled, and the s 105 outcome is the same either way" |
+| R3 | reading | Statute list: "ss 99, 105" → "ss 99, 105(3)–(3A)" |
+| R3 | notes | Interpretation line, files line, flags 4 and 14, Contradictions (R3, R16 resolved), ledger additions (QIPs £556,562.50; QCD hypothetical £8,705,000 / £2,176,250) |

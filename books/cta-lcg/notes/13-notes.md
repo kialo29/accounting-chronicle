@@ -82,3 +82,23 @@ WebFetch unavailable; 12 WebSearch calls used (standard mode). Law sheets' V ite
 - TPLC recharge income treated as non-trading (s 979) (book assumption).
 - TES company-level costs (board, audit) claimed as ME (no amount fixed).
 - Hypothetical only (not story): activist >50% of TPLC with £2m c/f ME; capital-test cases (£4.0m→£5.5m; £50m→£60m).
+
+## Continuity fixes applied
+
+Applied 9 October 2026 from `continuity-rulings.md` (numbers recomputed in Python; `ledger-check.py`: 132 checks, 0 failures). The s 105(3A) teaching and numbers are kept (R3). R13: no change (chapter consistent).
+
+| Ruling | File | Before → after |
+|---|---|---|
+| R3, R16 | reading | Worked example 13.3 row "Excess over gross profits only (the ledger's figure)" → "Excess over gross profits" |
+| R3 | reading | "Cost of the trap: ... £206,250 of tax paid earlier than expected" → "£206,250 of relief a year that the group may never obtain (see 'Carrying the surplus forward')" |
+| R3, R16 | reading | Deleted the "Contradiction flag (for the continuity pass)" paragraph; replaced with "With these caps, and its other group and consortium relief, TEL's TTP is £10,535,000 in GY1 and £8,905,000 in GY2 (chapter 7 builds the GY2 computation)." |
+| R3 | reading | TPLC paragraph after "Group route": "The practical route is a later Part 5A surrender to TEL ...: relief delayed, not lost" → route closed on the book's reading of s 188BE (HMRC's guidance, CTM82030); carried-forward ME **stranded**: cumulative £825,000 / £1,650,000 / £2,475,000 / £3,300,000 (GY1–GY4), plus £1,275,000 in GY5 if the excess still exceeds the threshold; no DTA |
+| R3 | reading | Summary bullets: "£825,000 carried forward" → "... (stranded)"; "post-2017 amounts can go via Part 5A" → "..., but not where the company could deduct them itself (s 188BE, HMRC's view): TPLC's are stranded" |
+| R3 | reading | Key figures rows TPLC GY1/GY2: "c/f £825,000" → "c/f £825,000 (stranded)" / "(stranded; cumulative £1,650,000)" |
+| R3 | reading | References: "Part 5A" → "Part 5A (s 188BE)"; HMRC manuals add CTM82030 |
+| R3 | script | "delaying eight hundred and twenty five thousand pounds of relief means two hundred and six thousand two hundred and fifty pounds of tax paid earlier than the group expected" → "that relief is worth two hundred and six thousand two hundred and fifty pounds of tax a year, and the group may never get it" |
+| R3 | script | TPLC paragraph after the group route: "The practical route is a later surrender to Tarnmoor Engineering ... Relief delayed, not lost" → route closed on the book's reading (H M R C's guidance bars surrender of carried forward losses the company could deduct itself); expenses stranded, building up by eight hundred and twenty five thousand pounds a year to three point three million pounds by the end of Group Year Four; no deferred tax asset (the GY5 £1,275,000 point is in the reading edition only, to keep the script within its word target) |
+| R3 | script | Summary: "Eight hundred and twenty five thousand pounds is carried forward." → "..., and for Tarnmoor P L C it is stranded." |
+| R3, R13, R16 | notes | Files line; flags 1 and 11 marked resolved; Contradictions (R3, R16 resolved); threads (stranded position replaces "available for later Part 5A surrender"); ledger additions confirmed by R3 |
+
+TEL's TTP sentence was added to the reading edition only (R3 makes it optional); the script omits it to stay within the word target (6,028 against an upper limit of 6,050).

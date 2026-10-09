@@ -121,5 +121,5 @@ All computations re-run in Python (scratch: `/tmp/claude-0/-home-user-accounting
 
 R14 (Calder's very large instalments for AP 1 April GY2–31 March GY3) and R15 (Dan's package inside the £1.2m redundancy element of the £1.8m provision): chapter already consistent; no change. R16 clean-up of production references in `05-tax-follows-the-accounts-reading.md` (script had none; no numbers changed):
 - Change of accounting standard Exam lens: "(exam-intel synthesis)" deleted.
-- Foreign currency Exam lens: "...\"exchange gains and losses\" (exam-intel §5)." → "...\"exchange gains and losses\"."
+- Foreign currency Exam lens: "...“exchange gains and losses” (exam-intel §5)." → "...“exchange gains and losses”."
 - Currency status line: "The full current text was not opened (see notes)." → "The full current text was not opened."

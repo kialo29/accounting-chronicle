@@ -58,10 +58,9 @@ Python: `scratchpad/lcg-ch14/calc.py` (GY2 split, £8.6m, Helmside £1.2m/£1.3m
 2. **Plan §5 ch 14**: "Tarnmoor's members nominate TPLC each year". HMRC guidance: a nomination is a standing document (continues until replaced, revoked or the nominee leaves); it is the GAAS that is filed each period. The chapter uses a standing nomination from GY1, countersigned by joiners as group practice. Resolved by continuity ruling R9.
 3. **Bible glossary / plan** describe Ch 2C as "pre-acquisition losses of a joiner not surrenderable under Part 5A for 5 years": consistent; CTM06815 adds that the 5 years run from the end of the AP in which the change occurs.
 4. **Bible §1A** dates *Ayerst* "(1974)": not confirmed; chapter omits the year.
+5. **TPLC's GY1 surrender of excess management expenses** (ledger and earlier text: whole excess over gross profits, £5.9m; total to TEL £12.49m): capped by CTA 2010 s 105(3A) at the excess over gross profits plus the £825,000 CFC apportionment from TCM: £5,075,000 surrenderable, £825,000 carried forward, total to TEL £11,665,000. Resolved by continuity ruling R3.
 
 ---
-
-5. **TPLC's GY1 surrender of excess management expenses** (ledger and earlier text: whole excess over gross profits, £5.9m; total to TEL £12.49m): capped by CTA 2010 s 105(3A) at the excess over gross profits plus the £825,000 CFC apportionment from TCM: £5,075,000 surrenderable, £825,000 carried forward, total to TEL £11,665,000. Resolved by continuity ruling R3.
 
 ## Pronunciation guide
 
