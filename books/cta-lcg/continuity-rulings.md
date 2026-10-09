@@ -1,4 +1,4 @@
-# Continuity rulings after batch 1 (prologue, chapters 1–14)
+# Continuity rulings after batch 1 (prologue, chapters 1–14) and batches 2–3 (chapters 15–30)
 
 *Issued 9 October 2026 by the continuity editor. These rulings override `calder-ledger.md`, `book-plan.md` (including §6.6 and the chapter briefs) and `book-bible.md` where they conflict. The ledger has been amended to match (entries marked "(amended by Rn)"), and `ledger-check.py` has been extended (0 failures). All numbers were recomputed in Python (scratch `continuity/calc.py`).*
 
@@ -110,11 +110,13 @@ Not affected: CIR tax-EBITDA (TPLC −£5.9m GY1, −£6.3m GY2: current-year ex
 - `14-losses` both editions: Worked example 14.3: "Excess management expenses 5,900" → split: "Excess over gross profits 5,900; less CFC apportionment in the profit-related threshold (825); **surrenderable 5,075**; carried forward 825"; total surrendered **11,665** (was 12,490); prose "£12.49m" → **£11.665m** ("eleven point six six five million pounds"); bullet "only to the extent they exceed TPLC's gross profits (CTA 2010 s 105)" → "only to the extent they exceed TPLC's profit-related threshold, gross profits plus apportioned CFC profits (CTA 2010 s 105(3A))"; key figures row updated.
 - Notes 07, 13, 14: record R3.
 
-**Guidance for later chapters.** Chapter 15: teach s 105(3A) with TPLC; GY3 and GY4 surrenders must apply the cap (TPLC's excess over recharge income less £825,000); Helmside GY4 consortium surrender of £585,000 is within the cap; do not use Part 5A for TPLC's stranded expenses. Chapter 26: the CFC charge and the threshold are the pair to teach (s 371UD gone). Chapter 28: TPLC tax-EBITDA unchanged. Chapter 30: no effect on GloBE figures. Any GY5 TPLC surrender uses a threshold including £1,275,000.
+**Guidance for later chapters.** Chapter 15: teach s 105(3A) with TPLC; GY3 and GY4 surrenders must apply the cap (TPLC's excess over recharge income less £825,000); Helmside GY4 consortium surrender of £585,000 is within the cap (*amended by R21: the amount claimed is £536,250, because s 155 arrangements break the consortium from 1 December GY4*); do not use Part 5A for TPLC's stranded expenses. Chapter 26: the CFC charge and the threshold are the pair to teach (s 371UD gone). Chapter 28: TPLC tax-EBITDA unchanged. Chapter 30: no effect on GloBE figures. Any GY5 TPLC surrender uses a threshold including £1,275,000.
 
 ---
 
 ## R4. CIR tax-EBITDA and Calder's £6.0m intangibles realisation credit
+
+*Amended by R20 (second pass): the s 408 analysis stands, but the GY3 numbers below are superseded. As filed: ANTIE £24.44m (TEL's £90,000 lease finance charge is tax-interest), reactivation £1.87m, c/f £2.64m; after the revised return following the GY6 TP settlement: Calder £10.6m, aggregate £89.7m, 30% £26.91m, reactivation £2.47m, c/f £2.04m.*
 
 **Issue.** Chapter 11 relied on CFM95805 ("excluded credits will mainly be gains on disposal") to say Calder's £6.0m credit drops out of tax-EBITDA, cutting GY3 aggregate tax-EBITDA to £81.7m and reactivation to £0.16m.
 
@@ -129,6 +131,8 @@ Not affected: CIR tax-EBITDA (TPLC −£5.9m GY1, −£6.3m GY2: current-year ex
 ---
 
 ## R5. CIR: chargeable gains, capital losses and unused allowance in GY3
+
+*Amended by R19 and R20 (second pass): TES's lease assignment gain is £189,000 after indexation, so TES's net gains are £489,000 and its property and other profits £14,311,000 (tax-EBITDA still £14.8m); reactivation and c/f figures as R20; nil unused allowance is now HMRC's view (CFM98240).*
 
 **Issue.** Ledger GY3 put TES's whole £0.8m chargeable gain in its £14.8m tax-EBITDA although £0.5m is reallocated to TEL (s 171A) and matched by TEL's £0.5m capital loss, and flagged whether unused interest allowance arises.
 
@@ -294,14 +298,269 @@ Calder's pre-acquisition year to 31 March GY1 is outside the group (TPLC not its
 
 ---
 
+# Continuity rulings after batches 2–3 (chapters 15–30) and reviews A–C
+
+*Issued 9 October 2026 by the continuity editor (second pass). Sources: every notes file 15–30, `review/batch23-issues-log.md`, review B's "Needs orchestrator ruling" (reviews A and C raised nothing outside R1–R17). Same status labels and fixer instructions as above. All numbers were recomputed in Python (scratch `continuity2/calc.py`); `calder-ledger.md` is amended in place ("(amended by Rn)") and §8 extended; `ledger-check.py` is extended (212 checks, 0 failures). 13 WebSearch calls were used (budget 25).*
+
+*Earlier rulings amended by this pass: **R3** guidance (Helmside GY4 figure: R21), **R4** and **R5** (GY3 CIR numbers: R19, R20). Where an earlier ruling and a later one differ, the later one governs.*
+
+---
+
+## R18. First-year allowance balances are pooled after the period's WDA (CAA 2001 s 58(5)); TEL's GY2 pools restated
+
+**Issue.** Review B (8.1, 8.2, 9.1) found WDAs given in the period of expenditure on the balance left after a 40% or 50% FYA. Chapter 8's fixer restated TEL's special rate pool brought forward so that the canonical GY2 total (£16,000,000) stands, and asked for a ruling.
+
+**Ruling.** Confirmed. s 58(5)(a) bars allocating FYA expenditure to a pool in the chargeable period in which it is incurred; the balance joins the pool **after** that period's WDA and draws WDA from the next period. Expenditure with no FYA (AIA excess, second-hand plant, LFL deemed expenditure such as TEL's GY3 machining centre) is pooled and gets WDA in the same period. To keep every canonical total, TEL's special rate pool **b/f at 1 January GY2 is £7,720,000** (was £6,000,000; a chapter-8-only figure).
+
+| TEL GY2 (£) | Main pool | Special rate pool |
+|---|---|---|
+| b/f | 39,500,000 | 7,720,000 |
+| Second-hand plant / disposal | +500,000 / (300,000) | — |
+| Before WDA | 39,700,000 | 7,720,000 |
+| WDA 14% / 6% | (5,558,000) | (463,200) |
+| FYA balances added after WDA | +480,000 (40% FYA rigs) | +600,000 (50% FYA chillers) |
+| **c/f** | **34,622,000** | **7,856,800** |
+
+Total CAs: FE £9,000,000 + 50% FYA £600,000 + 40% FYA £320,000 + WDAs £5,558,000 + £463,200 + SBA £58,800 = **£16,000,000** (unchanged; TEL trading profits £26.0m, TTP £8,905,000, CT £2,226,250 unchanged). The chapter 8 "at 18%" comparator is £7,146,000.
+
+**Authority.** CAA 2001 s 58(5) (legislation.gov.uk extract, review B search 1) **V-statute**; general exclusion 5 and LLA (CA23174ac) **V-HMRC** (review B).
+
+**Fix needed in.** `08-plant-and-machinery` and `09-buildings-fixtures-leasing-successions`: already applied by the review B fixer (verified: 7,720,000 / 34,622,000 / 7,856,800 present; the "318,000" alternative removed). Notes `08-notes.md`: add "Resolved by continuity ruling R18". Ledger §7 GY2 and §8 amended; `ledger-check.py` "TEL CA total" rewritten.
+
+**Guidance for later chapters.** Chapter 31: RC's plant (if any FYA is claimed) follows s 58(5). Chapter 32: list "WDA on the FYA balance in the same period" as a marking trap.
+
+---
+
+## R19. TES's GY3 lease assignment needs indexation: gain £189,000; GY4 lease grant cost £290,000
+
+**Issue.** The ledger and R5 gave the GY3 assignment gain as £351,200 with no indexation. Chapter 16 showed the lease was bought 25 years before GY3, which on the TKS chronology (Dan's 12 years' service at 30 September GY3; Dan at Calder in 2026/27) must be before December 2017. Chapter 16 also resolved the GY4 grant (bible flag 27).
+
+**Ruling.**
+1. Indexation applies to the restricted cost (CG17380). Because no Group Year may be dated, the story uses an **assumed indexation factor of 0.250**, labelled in both editions as a round figure chosen for the story (in the exam, compute from RPI). Allowable cost £800,000 × 81.100/100 = **£648,800**; indexation £162,200; **gain £189,000** (was £351,200). The lease was an investment, never used in a group trade (no roll-over); assigned to an unconnected buyer.
+2. R5 amended: TES's GY3 net gains **£489,000** (£300,000 depot + £189,000 lease); TES tax-EBITDA unchanged at **£14.8m**, now **property and other profits £14,311,000** + net gains £489,000. Aggregate tax-EBITDA and all CIR totals are unaffected by this ruling.
+3. GY4 30-year lease grant (HMRC's method, CG70960: capital part over full premium plus reversion): income element £2,000,000 × 21/50 = **£840,000**; capital part £1,160,000; part-disposal cost £1,500,000 × 1,160,000/6,000,000 = **£290,000**; **gain £870,000**; reversion cost c/f **£1,210,000**; TES taxable £1,710,000, CT **£427,500**; tenant (unconnected logistics operator) deducts £28,000 a year. The plan's £500,000 / £337,209 alternatives are wrong.
+
+**Authority.** CG17380 (indexation on restricted lease cost) and CG70960 (premium part disposal) **V-HMRC** (chapter 16 searches); TCGA Sch 8 para 1 (lease percentage table) **V** (law sheet 2). The 0.250 factor is a **story assumption**.
+
+**Fix needed in.**
+- `17-gains-inside-the-group` reading line ~179: "lease assignment gain £351,200 (chapter 16) = **£651,200**" → "lease assignment gain £189,000 (chapter 16) = **£489,000**"; line ~521: "TES net gains GY3 £651,200" → "£489,000". Script line ~85: "net gains of six hundred and fifty one thousand, two hundred pounds" → "net gains of four hundred and eighty nine thousand pounds". Notes `17-notes.md` Contradictions: "TES net gains £651,200 (R5)" → "£489,000 (R19)"; add "Resolved by continuity ruling R19".
+- `28-corporate-interest-restriction` reading line ~140 comment cell: "property and other profits 14,148,800 + net gains 651,200" → "property and other profits 14,311,000 + net gains 489,000"; "TES's gains (GY3)" paragraph (~152): "Add the lease assignment gain of **£351,200**: TES's net gains are **£651,200**" → "Add the lease assignment gain of **£189,000** (after indexation: chapter 16): TES's net gains are **£489,000**". Script line ~79: "six hundred and fifty one thousand, two hundred pounds of net gains" → "four hundred and eighty nine thousand pounds of net gains". Notes `28-notes.md`: record R19.
+- `16-company-gains-property-leases`: none (it is the source); notes: mark flag 1 "adopted by R19".
+- Ledger §7 GY3 and GY4 amended; `ledger-check.py` 'assign', 'TES GY3 net gains', 'TES GY3 split' replaced.
+
+**Guidance.** Chapter 31 and 32: never restate £351,200 or £651,200. If a later chapter needs a dated RPI computation, use a labelled hypothetical, not TES's lease.
+
+---
+
+## R20. GY3 corporate interest restriction: one canonical position (TEL's lease charge; the GY6 TP settlement and the revised return)
+
+**Issue.** Two later chapters changed the GY3 CIR set by the ledger (R4/R5: ANTIE £24.35m, reactivation £1.96m, disallowed c/f £2.55m). (a) Chapter 28: TEL's £90,000 GY3 finance charge on its long funding lease (chapter 9) is tax-interest (TIOPA s 382 Condition C) and a relevant expense in ANGIE; it was omitted. (b) Chapter 27: the GY6 TP settlement adds £2.0m to Calder's taxable profit for its 9-month AP to 31 December GY3, and (R4) to its tax-EBITDA. Chapter 27 computed £89.7m / £2.56m / £1.95m on the old ANTIE.
+
+**Ruling.** Adopt both corrections, in story order.
+
+| GY3 (£m) | As filed (GY4) | Revised return (GY6) |
+|---|---|---|
+| Aggregate tax-EBITDA | 87.70 | **89.70** (Calder 8.6 → 10.6) |
+| ANTIE (incl. TEL lease charge 0.09) | 24.44 | 24.44 |
+| ANGIE | 31.64 | 31.64 |
+| 30% of tax-EBITDA | 26.31 | **26.91** |
+| Fixed ratio debt cap (ANGIE + excess debt cap b/f 4.51) | 36.15 | 36.15 |
+| Group ratio (16.14%) × tax-EBITDA (not elected) | 14.16 | 14.48 |
+| Interest allowance (no unused allowance b/f) | 26.31 | 26.91 |
+| Interest reactivation cap = allowance − ANTIE (s 373(3)) | 1.87 | **2.47** |
+| Disallowed amounts b/f (TPLC: 2.21 + 2.30) | 4.51 | 4.51 |
+| **Reactivated (TPLC)** | **1.87** | **2.47** |
+| **Disallowed amounts c/f** | **2.64** | **2.04** |
+| Unused interest allowance generated | nil | nil |
+| Excess debt cap c/f | 4.51 | 4.51 |
+| TPLC GY3 NTLR debits (8.50 + reactivation) | 10.37 | 10.97 |
+
+1. **As filed.** TPLC files the GY3 full return (by 31 December GY4) with ANTIE £24.44m, reactivation **£1.87m** (CT value £467,500), c/f **£2.64m**. TPLC's GY3 NTLR deficit of **£10.37m** is surrendered to TEL as current-year group relief (s 99(1)(c); not within the s 105(3A) cap) (new story fact; TEL's GY3 TTP is not fixed).
+2. **Revised return (GY6).** The settlement of HMRC's enquiry into Calder's GY3 return makes figures in the GY3 return incorrect, so TPLC, as reporting company, **must** file a revised return within **3 months** (TIOPA Sch 7A para 8(4); HMRC's example at CFM98645; CFM98535 for periods beginning on or after 1 April 2023). Revised: aggregate tax-EBITDA **£89.7m**; allowance **£26.91m**; reactivation **£2.47m** (+£0.6m); disallowed c/f **£2.04m**; still no unused allowance.
+3. **Consequences.** TPLC amends its GY3 return to bring in the extra £0.6m reactivation (time limit: the later of 3 months after the revised return and the normal amendment window: CFM98640). TEL's GY3 group relief claim window has closed (FA 1998 Sch 18 para 74: latest date one year after TEL's filing date, 31 December GY5; TEL's return was not under enquiry), so the extra £0.6m of TPLC deficit **cannot be surrendered to TEL**: HMRC's manual warns of exactly this (CFM98645). TPLC carries it forward (CTA 2009 Part 5 Ch 16A); on R3's reading of s 188BE it is effectively **stranded**, like TPLC's carried-forward management expenses (tax value forgone £150,000; book's reading). This is the teaching point: a TP settlement can raise interest capacity, but the timing rules decide whether the group can use it.
+4. **Unused allowance.** HMRC's guidance confirms the allowance is used first against ANTIE and reactivations, and only the remainder is carried forward (CFM98240: "amount A ... less the amounts used in the originating period"; CFM98620; CFM95250): nil in GY3 on both bases. R5's "book's reading" label becomes **HMRC's view (V-HMRC)**.
+5. **Canonical for later chapters:** the **revised** position (reactivation £2.47m; disallowed amounts c/f at end GY3 **£2.04m**). The "as filed" figures are history that chapter 28 teaches first. No CIR figures exist for GY4 onward; chapter 31 must not invent a carry-forward balance for the Ridgeway year.
+
+R4 amended: Calder's GY3 contribution is £8.6m as filed and **£10.6m** after the settlement; the s 408 analysis of the £6.0m credit is unchanged. R5 amended: reactivation and c/f as above.
+
+**Authority.** TIOPA 2010 s 373(3) (cap = interest allowance (s 396) less ANTIE; nil if negative): statutory text via lawplayer reproduction and CFM98620 **V-statute (secondary copy)/V-HMRC**; s 382 Condition C and finance lease cost in ANGIE: CFM95660, CFM95930 **V-HMRC** (chapter 28); Sch 7A para 8(3)–(5): legislation.gov.uk extract (para 8(3): 36 months) and CFM98645, CFM98535, CFM98640 **V-HMRC**; CFM98240 (unused allowance) **V-HMRC**. The stranding of TPLC's extra deficit is the **book's reading**.
+
+**Fix needed in.**
+- `28-corporate-interest-restriction` both editions: keep the GY3 computation and WE tables as they stand (they show the **as filed** figures 24.44 / 31.64 / 1.87 / 2.64); label the GY3 column "as filed". After the paragraph "GY3: no unused allowance" add a short section **"A return revisited (GY6)"**: the GY6 TP settlement (chapter 27) adds £2.0m to Calder's GY3 TTP and tax-EBITDA; TPLC must file a revised GY3 return within three months (Sch 7A para 8(4); HMRC's example at CFM98645); revised aggregate £89.7m, allowance £26.91m, reactivation £2.47m, c/f £2.04m; TPLC amends its GY3 return, but TEL's group relief claim window has closed, so the extra £0.6m deficit stays in TPLC (stranded on this book's reading; CFM98645 warns of this trap). In the "unused allowance" paragraph replace "on this book's reading of ss 394–396" with "on HMRC's guidance (CFM98240)". Tax-effect line: "£2.64m (potential £660,000) still waiting" → "£2.64m as filed (£2.04m after the GY6 revision) still waiting". Key figures / story table row (line ~507): add "revised GY6: tax-EBITDA 89.7; reactivated 2.47; c/f 2.04". Script: after "Two point six four million pounds stays in the queue for a later year." add three or four sentences with the same content (numbers in words). Notes `28-notes.md`: Contradiction 1 "adopted by R20"; record the revision.
+- `27-transfer-pricing` both editions: "Going further: the restructuring ripple", CIR bullet: replace "Whether and how the group's interest restriction return for GY3 is revisited is chapter 28's subject [flagged]" with "The reporting company must file a revised GY3 interest restriction return within three months of the settlement (chapter 28): reactivation rises from £1.87m to £2.47m, but TEL's group relief claim for the extra deficit is out of time." Script: if it states nothing about CIR, add one sentence. Notes `27-notes.md` flag 17: "Resolved by R20 (figures 89.7 / 26.91 / 2.47 / 2.04, not 2.56 / 1.95)".
+- `06-deferred-tax` reading line ~323: "(chapter 28; Tarnmoor reactivates £1.96m in GY3)" → "(chapter 28; Tarnmoor reactivates £1.87m in GY3 as first filed, £2.47m after a later revision)". Script: check for "one point nine six" (none found) and align any equivalent.
+- `26-controlled-foreign-companies` reading line ~358: "£24.35m (GY3)" → "£24.44m (GY3)".
+- `continuity-rulings.md` R4/R5: amendment notes added (done).
+- Ledger §7 GY3 CIR, §8 GY3 and GY6 amended; `ledger-check.py` antie3/angie3/react3/cf3 replaced and revised checks added.
+
+**Guidance.** Chapter 31: the Ridgeway acquisition brings RC into the worldwide group; say only that the group's CIR position carries disallowed amounts forward from earlier years (no figure). Chapter 32: the GY6 revision is a good "interaction" example (TP → CIR → group relief time limits).
+
+---
+
+## R21. Helmside GY4: consortium relationship broken by s 155 arrangements; TPLC's surrender £536,250
+
+**Issue.** Ledger, ledger-check and R3's guidance used £585,000 (45% × £1.3m). Chapter 15 found that the 1 December GY4 heads of terms (TPLC to buy Greyfell's 40%) are s 155 arrangements.
+
+**Ruling.** Adopt chapter 15. TPLC is a "third company" (s 155(4): not, apart from the arrangements, in the same group as Helmside); arrangements under which Helmside could become its 75% subsidiary (Effect 1) exist from agreement in principle, **1 December GY4** (heads of terms naming price, structure and timetable, approved by both boards). Helmside is not owned by a consortium from that date; the overlapping period is **11 months**. TPLC surrenders **£536,250** (45% × £1,300,000 × 11/12; months, as the exam rubric uses); full-year ceiling £585,000 shown only as a comparison. Helmside TTP **£763,750**, CT **£190,937.50** (not large: QIP divisor 1; due 1 October GY5); Helmside pays TPLC **£134,062.50** (25p per £; s 183 disregard); the other **£48,750** of TPLC's surrenderable management expenses goes to TEL (within the s 105(3A) cap). No consortium or group relief for 1 January–28 February GY5; group relief from 1 March GY5.
+
+**Authority.** CTA 2010 s 155 including s 155(4) "third company" (legislation.gov.uk extract; also CTM80615) **V-statute**; CTM80625/80630 (agreement in principle) **V-HMRC**. Treating a consortium member acquiring control as the third company is the **book's reading** of the statutory definition (no HMRC worked example seen).
+
+**Fix needed in.**
+- `14-losses` reading line ~84 (Part 7ZA check box): "(limited to 45% × £1.3m = £585,000)" → "(a full-year ceiling of 45% × £1.3m = £585,000, cut to £536,250 by the arrangements rules: chapter 15)". Script: no equivalent found; none.
+- `15-group-relief-consortia-jvs`: none (source). Notes: Contradiction 1 "adopted by R21".
+- R3 guidance amended (note added). Ledger §7 GY4 amended; ledger-check 'HEL GY4' relabelled as the ceiling and new checks added.
+
+**Guidance.** Chapter 18 (share exchange) and chapter 28: never use £585,000 as the amount claimed. Chapter 31: the same arrangements analysis applies to any heads of terms with Jess (group relief between RC and Tarnmoor companies starts only on completion, 1 April).
+
+---
+
+## R22. Stamp duty on the TAL sale (£270,000), Brackenwell's notes (£9,000), and TEL's consideration for TAL
+
+**Issue.** Ledger, plan and bible §1B: Brennock's stamp duty £240,000 (0.5% × £48.0m). Chapters 20 and 21 independently applied the contingency principle. Chapter 21 added duty on BSL's convertible notes. The log asked whether chapter 20's "TEL total consideration £53.5m" fits chapter 18's earn-out figures.
+
+**Ruling.**
+1. A capped earn-out is charged on its stated maximum: £48.0m + £6.0m = £54.0m × 0.5% = **£270,000** (Brennock pays; earn-out cap £6.0m on TAL's results over GY7 and GY8; no refund if less is paid). £240,000 (cash only) and £255,000 (cash + £3.0m value) are the traps chapter 21 names.
+2. BSL's £3.0m convertible notes, bought for £1.8m, are convertible loan capital outside the loan capital exemption (FA 1986 s 79(5); holders had the conversion right): stamp duty **£9,000**. BSL deal stamp duty **£120,000** (£111,000 shares + £9,000 notes); Calder + BSL **£280,000**.
+3. Story totals: stamp duty **£652,500** (Calder £160,000; BSL £120,000; Helmside £80,000; TAL £270,000 paid by Brennock; RH £22,500 in the Ridgeway year); paid by Tarnmoor companies £382,500. SDLT group relief **£923,500** claimed (£269,500 + £289,500 + £364,500), **£654,000** clawed back, **£269,500** kept. Buyer's SDLT on the head office £689,500 (not Tarnmoor's).
+4. **No conflict on consideration.** TEL's consideration for the TAL shares at completion is £48.0m cash + earn-out right valued **£3.0m** (*Marren v Ingles*) + degrouping gain **£2.5m** added to the consideration (TCGA s 179(3D)) = **£53.5m**, all exempt (SSE, para 15A). The later receipts are disposals of the earn-out right (chapter 18, "generally accepted view, not settled"): GY7 £2.0m (gain £0.5m, CT £125,000), GY8 £2.5m (gain £1.0m, CT £250,000); total receipts £4.5m, gains £1.5m, CT **£375,000**. The stamp duty base (£54.0m) and the gains consideration (£53.5m) measure different things.
+
+**Authority.** STSM021120 (contingency principle; stated maximum) **V-HMRC** (chapters 20, 21); FA 1986 s 79(5), STSM041070, STSM021230 **V**; TCGA s 179(3D) **V** (law sheet 2; chapter 17).
+
+**Fix needed in.**
+- `20-buying-and-selling-companies` script line ~231: "The two point five million pound degrouping gain joined fifty three point five million pounds of exempt proceeds" → "The two point five million pound degrouping gain was added to the consideration, making fifty three point five million pounds, all of it exempt." Reading: none (line ~400 correct; table line ~330 shows the £240,000 component correctly). Notes: flag 1 "resolved by R22".
+- `21-stamp-taxes-groups`: none. Notes: flag 1 resolved by R22.
+- `12-loan-relationships-and-derivatives` (optional): where BSL's stamp duty £111,000 is stated, add "(plus £9,000 on the convertible notes: chapter 21)".
+- `book-bible.md` §1B TAL row: "buyer's stamp duty £240,000" → "£270,000 (cash £48.0m + earn-out cap £6.0m)".
+- Ledger §7 GY2, GY6 amended; `ledger-check.py` 'TAL SD' replaced, new checks added.
+
+**Guidance.** Chapter 31: RH purchase £4.5m cash, stamp duty **£22,500**; if the deal has any contingent element with a stated maximum, charge the maximum. Chapter 32: the cap rule is a classic trap; earn-out receipts after an SSE sale carry the "accepted view" label.
+
+---
+
+## R23. TEL's blocked Marrovian receipt (GY6) is relieved under CTA 2009 ss 173–175, not Part 18
+
+**Ruling.** Adopt chapter 25. A receipt of TEL's UK trade that is unremittable because of foreign exchange restrictions is deducted from trading profits (s 173; not so as to create a loss) and brought back when it ceases to be unremittable (s 175); Part 18 (s 1275, two-year claim) is for other foreign income. Story: TEL's Marrovian customer pays **£400,000** for pumps into a blocked local account in GY6; s 173 deduction GY6; controls lift and the amount is brought back in **GY7** (s 175); £100,000 of CT deferred one year. The amount is now a story fact.
+
+**Authority.** CTA 2009 ss 173, 175 (legislation.gov.uk extract) and BIM42750 **V** (chapter 25). s 173 claim mechanics and s 174 not seen (open item).
+
+**Fix needed in.** Ledger §7 GY6 amended. Chapter 25: none (notes: "resolved by R23"). No other chapter states the old wording.
+
+**Guidance.** Chapter 32: "Part 18 for trading receipts" is a named trap.
+
+---
+
+## R24. The Tarnwater demerger: how TPLC's disposal is exempt
+
+**Ruling.** Adopt chapter 19's framing. On a direct demerger TPLC makes a **market value disposal** of the TWS shares under the general rules, and the **SSE** exempts it. TCGA s 192(2) is a **shareholder-level** rule (no capital distribution under s 122; reorganisation treatment for TPLC's shareholders). Sch 7AC para 4 gives the SSE priority over s 192(2)(a) only for a **corporate shareholder of the distributing company** with a substantial holding. s 192(3): no s 179 degrouping charge for TWS leaving by reason only of the exempt distribution (subject to s 192(4) and chargeable payments within 5 years). Story: s 1091 clearance obtained before 1 July GY5; demerger return within 30 days; TWS holds no transferred intangibles; SDLT clawback £289,500 on the water-systems factory (no arrangements existed on 1 October GY3).
+
+**Authority.** CG45620 (s 192 reorganisation treatment), practitioner guides (market value disposal; SSE or s 139 needed), Sch 7AC para 15 / CG53108 (SSE through a demerger) **V-HMRC/secondary** (search this pass); chapter 19's sources.
+
+**Fix needed in.** Ledger §7 GY5 amended ("TPLC's disposal within the SSE in priority to s 192(2)(a)" replaced). Chapters: none (no chapter uses the old wording; chapter 18's para 4 teaching is general and correct). Notes `19-notes.md`: flag 1 "resolved by R24".
+
+---
+
+## R25. Pillar Two top-up on Marrovia in GY1–GY4 (£66,000 a year) and chapter 6's reconciliation
+
+**Ruling.** No contradiction: chapter 6 already labels its GY2 reconciliation as leaving Pillar Two top-up out (both editions). The canonical figures: GY1–GY4 TCM profit £3.3m, Marrovian tax £297,000 + pushed-down CFC charge £132,000 = £429,000, ETR **13.0%**, IIR top-up **£66,000 a year** (simplified: no substance-based income exclusion, as in GY5); GY5 **£102,000** (£765,000 in total = 15% of £5.1m). Chapter 6's total tax charge stays **£24,385k (24.39%)**; with the top-up it would be £24,451k (24.45%).
+
+**Fix needed in.** `06-deferred-tax` both editions (optional precision): reading line ~321 "top-up tax under the Pillar Two rules (Marrovia) is omitted (chapter 30 computes Tarnmoor's)" → add "(£66,000 for GY2)"; script line ~199 add "about sixty six thousand pounds for Group Year Two". Ledger §7 GY1 and §8 amended.
+
+**Guidance.** Chapter 31: RC and RH join the MNE group for Pillar Two at once; UK entities are covered by DTT (no figures needed).
+
+---
+
+## R26. Interest rates on corporation tax: the bible's rates stand
+
+**Issue.** Chapter 27 (flag 16) doubted the bible's 6.25% for underpaid instalments, on the assumption that QIP debit interest is Bank Rate + 1%. Review A had confirmed 6.25% / 3.50%.
+
+**Ruling.** The rates stand. From **6 April 2025** QIP debit interest is **Bank Rate + 2.5%** (raised from + 1%) and late payment interest **Bank Rate + 4%** (raised from + 2.5%); QIP credit interest is Bank Rate − 0.25%; repayment interest Bank Rate − 1% (minimum 0.5%). Bank Rate has been **3.75%** since 18 December 2025 (held on 17 September 2026; next decision 5 November 2026). So: QIP underpayments **6.25%** and overpayments **3.50%** from **29 December 2025**; late payment **7.75%** and repayment **2.75%** from **9 January 2026**. Every chapter statement found (chapter 3 both editions; bible §3) is correct. A grep of all chapters found no other rate statements (chapter 27 deliberately gives none).
+
+Interest on Calder's £500,000 (chapter 27): QIP debit interest from each 9-month AP instalment date (14 June, 14 September, 14 December GY3) to the normal due date (**1 October GY4**), then late payment interest to payment (Instalment Regulations reg 7 with TMA s 87A; standard rule, not re-verified this pass: label "in outline"). No figure is fixed.
+
+**Authority.** HMRC rate announcements as reported (Taxation / Tax Journal / professional summaries; GOV.UK news story "HMRC revises interest rates for late payments"): formula change from 6 April 2025; 6.25% / 3.50% from 29 December 2025; 7.75% / 2.75% from 9 January 2026 **V (secondary reproductions of HMRC's published rates)**; Bank Rate decisions 18 December 2025, 19 March 2026, 17 September 2026 (CIPP; reports of the MPC decision) **V-secondary**.
+
+**Fix needed in.**
+- `03-returns-payments-enquiries` reading table (lines ~337–340): add the formula to the QIP rows: "QIP underpayments (Bank Rate + 2.5%)" and "QIP overpayments (Bank Rate − 0.25%)"; optional note "the QIP and late payment margins rose on 6 April 2025". Script: optional one sentence.
+- `27-transfer-pricing` reading, the "Interest runs on the £500,000" paragraph: replace "until paid" with "until the normal due date, 1 October GY4, and then late payment interest until paid". Notes `27-notes.md` flag 16: "withdrawn: 6.25% = Bank Rate 3.75% + 2.5% (R26)".
+- Bible §3 rows: add the formulas. No ledger number changes (ledger-check gains rate checks).
+
+**Guidance.** Chapters 31–32: quote rates as "when this book was written" and give the formula; re-check after the 5 November 2026 decision and before release.
+
+---
+
+## R27. Pre-R3 leftovers in chapters 13 and 14: checked
+
+**Ruling.** Chapters 15 and 28 flagged leftover pre-R3 text (TPLC's £12.49m surrender; Part 5A use of TPLC's carried-forward expenses). A grep of both editions of chapters 13 and 14 shows the R3 fix has been applied: £11.665m / £5,075,000 / £825,000 stranded; chapter 13 states the general Part 5A route and then that it is closed for TPLC (s 188BE, book's reading). The only residue is chapter 14's £585,000 Helmside figure (R21).
+
+**Fix needed in.** None beyond R21. Notes 15 (Contradictions 3–4) and 28 (Contradiction 2): mark "already fixed (R27)".
+
+---
+
+## R28. Judges, citations, dates and section numbers
+
+1. ***HMRC v Development Securities plc*** [2020] EWCA Civ 1705: panel David Richards, Newey and Nugee LJJ. Authorship of the lead judgment is **not confirmed** (one secondary source says Newey LJ summarised the CMC case law). Chapter 22's practice stands: name the panel, attribute no proposition to a named judge, "one member of the court" for the reservations remark. **Fix:** `book-bible.md` §1A row "Newey LJ | Lead judgment in *Development Securities* ..." → "Member of the *Development Securities* court [2020] EWCA Civ 1705 (lead authorship unconfirmed) and of the *JTI* court". Chapter 22: none.
+2. ***JTI*** [2024] EWCA Civ 652: panel Lewison, Newey and Baker LJJ (bible). Lead authorship unconfirmed; chapter 12 names no judge: keep it so. *Fidex* lead judge still unchecked (unchanged).
+3. ***Marren v Ingles*** (1980) 54 TC 76; [1980] STC 500; [1980] 1 WLR 983: chapter 20's secondary sources say House of Lords; citations confirmed this pass; no judge to be named. Chapter 18's "the courts held" may stay or become "the House of Lords held" (label secondary).
+4. ***Unit Construction v Bullock*** [1960] AC 351: follow the INTM/extract version (the London board in fact controlled the African subsidiaries); do not say "Kenya" or "a representative in East Africa" (law sheet 3's teaching note is superseded).
+5. ***FCE Bank*** [2012] EWCA Civ 1290: chapters 15 and 24 consistent.
+6. **TCGA s 171A election**: first enacted by FA 2000; current rules for gains and losses accruing on or after 21 July 2009 (CG45356) (law sheet 2's "from FA 2009" superseded).
+7. **CFC regime start**: TIOPA Part 9A was inserted by FA 2012 (Royal Assent 17 July 2012) and **applies to CFC APs beginning on or after 1 January 2013** (FA 2012 Sch 20 para 49). **Fix:** bible §3.11 "Regime | TIOPA Part 9A, inserted 17 July 2012" → add "; applies to CFC accounting periods beginning on or after 1 January 2013".
+8. **UTPP gateways**: HMRC's structure puts the conditions (ETMO, TDC) in TIOPA Part 4A **Ch 2, ss 217C–217E** (INTM489105). **Fix:** `30-global-minimum-and-dpt` reading lines ~216, ~334, ~346: "s 217C, with s 217D on the mismatch" may stay; "ss 217C–217D" → "ss 217C–217E" (and "ss 217C–217D conditions" → "ss 217C–217E conditions"). UTPP rate = CT rate + 6% (31%) confirmed.
+9. **Pillar Two threshold**: chapters 1 and 30 consistently say the statute (F(No.2)A 2023 s 129) says "exceeds" €750m while HMRC guidance says "or more": keep.
+
+---
+
+## R29. Smaller points settled
+
+- **BSL group economics (review B, 10.1):** the £450,000 group net benefit (R7) stays; chapter 10's wording (half the £600,000 loss reduction falls on restricted pre-acquisition losses) is correct. Chapters 15 and 20 must not restate the benefit as a cash saving of £150,000 on the surrender.
+- **TPLC and the CFC charge (chapter 26 flag 9):** TPLC's own taxable total profits are nil, so it is not "large" for QIPs; its CFC charge (£132,000 GY1–GY4; £204,000 GY5) is paid 9 months and 1 day after the AP (book's reading; CTM92825 includes CFC tax in a very large company's total liability, but status turns on profits).
+- **TAL's 11-month AP (1 February–31 December GY6):** QIP divisor 11 (R1); thresholds time-apportioned: large **£125,000**, very large **£1,666,667**, first-year limit **£833,333** (chapter 20).
+- **s 164A and TIL:** the UK-to-UK exemption stops when TIL ceases to be UK resident (30 June GY4); TP applies to the £20m loan from 1 July GY4 (£0.6m for July–December GY4; £1.2m a year from GY5); taxed through TPLC's smaller NTLR deficit surrendered to TEL (tax £150,000 GY4; £300,000 a year from GY5). Whether s 164A requires residence throughout the period remains open (book's reading).
+- **TPLC's GY1 TP adjustment (£500,000; CT £125,000)** is collected through TEL's smaller group relief: TEL's GY1 CT £2,633,750 with the adjustment v £2,508,750 without (R3 arithmetic); it raised GY1 tax-EBITDA by £0.5m and capacity by £0.15m (disallowance £2.21m v £2.36m without).
+- **SDLT and the TAL hive-down:** no arrangements to sell on 1 February GY6 (no buyer, no heads of terms; board minute); Brennock first approached in summer GY6 (chapters 20 and 21 agree). Same for the water-systems factory on 1 October GY3 (chapter 17).
+- **TES's depot** was let to TEL and used only for TEL's trade throughout TES's ownership (chapters 16 and 17 agree); contracts exchanged unconditionally 30 April GY3.
+- **TVS's GY4 service fee to TEL** (chapter 23) stays unpriced; no later chapter may price it without a ruling.
+- **Coldwater:** the remaining 8% is exempt under the **main** SSE (para 7 six-year look-back), not the subsidiary exemption (plan wrong).
+- **TPLC's Helmside base cost** after the share exchange: £16.0m for the 40% (*Stanton v Drayton*; CG52562); pool £25.0m for 85%. No s 138 clearance.
+- **BSL joins** the group relief group on completion (1 July GY2), not on the conditional SPA (1 May GY2).
+- **Calder's branch decision:** no s 18A election (GY2 board paper; summer GY3 decision minuted); the PE loss of £300,000 gave £75,000 of relief; project-life tax £150,000.
+- **Calder's royalty and DTR (GY4 onward):** attributable costs £300,000; royalty profit £900,000; Patent Box CT £90,000; Vallarian WHT £60,000 fully credited; UK CT payable **£30,000**.
+- **Undertow (chapter 29):** the adviser assumed a CFC charge of £350,000 and claimed a net saving of £1,050,000 a year; the full CFC charge would be £1.4m less the £1.12m UK withholding credit = £280,000; the board rejected it for three minuted reasons.
+- **UK–Vallaria treaty** has the MLI-style preamble and principal purpose test (chapter 24; ledger §2 amended).
+- **Draft Finance Bill 2026-27:** compulsory foreign branch exemption for APs beginning on or after 1 January 2027 is **proposed, not law** (chapter 25); chapter 31 must present the s 18A election as current law and the proposal as "proposed".
+
+---
+
 ## Open verification items for the technical reviewers
 
+*Updated after the second pass. Resolved since batch 1: item 6 (unused allowance after reactivation: CFM98240, R20); s 1142A inserting Act (review B: F(No.2)A 2023 Sch 1); s 164A for TIL around migration (ceases at migration: R29, chapters 22 and 27); Patent Box small-claims point not reopened; QIP interest rates (R26).*
+
+**Carried from batch 1**
 1. SI 1998/3175 reg 3 (as amended for APs beginning on or after 1 April 2023): the statutory counting date for associated companies (R1 rests on CTM92530/COM95001).
-2. CAA 2001 s 51C: confirm that "financial year" takes the Interpretation Act meaning and check HMRC CA23088's worked example (R11).
-3. CTA 2010 s 188BE and the ordering of s 1223 carried-forward expenses: confirm TPLC's carried-forward management expenses cannot be surrendered under Part 5A while it has recharge income (R3).
+2. CAA 2001 s 51C: "financial year" takes the Interpretation Act meaning; check HMRC CA23088's worked example (R11).
+3. CTA 2010 s 188BE and the ordering of s 1223 carried-forward expenses: confirm TPLC's carried-forward management expenses cannot be surrendered under Part 5A while it has recharge income (R3); the same reading strands TPLC's extra GY3 deficit after the revised CIR return (R20).
 4. FA 2026 s 31 text: does the payment disregard cover a step 2 amount surrender (R7)?
 5. SI 2004/3256 reg 6 as amended: the list of automatic cases (R6).
-6. TIOPA 2010 ss 395–396: unused interest allowance after reactivation (R5).
-7. CFM95720 full text on capital losses in tax-EBITDA (R5).
-8. CIRD89870 applied to RDEC surrendered **to** a group company (R2).
-9. Still open from batch 1 notes: CTA 2010 s 1140A dynamic reference (ch 2); s 164A same-rate condition for TPLC and banking-company definition (ch 2 → ch 27); s 164A for TIL around migration (ch 2 → ch 22/27); CbC €750m measurement period (ch 1 → ch 27); Patent Box small-claims threshold £1m v £3m (ch 11); s 879O formula (ch 11); *JTI* lead judge and *Fidex* lead judge (ch 12); *Syngenta* UT outcome (ch 12); *ScottishPower* UKSC judgment (ch 7); FA 2026 ss 216 and 159 commencement (ch 4); Castlelaw citation, GAAR s 207 indicators, APN appeal rule, *Ramsay* date (ch 4); s 45A time limit and s 45F order (ch 14); *Ayerst* court and year (ch 14); s 1290(1A) wording (ch 7); CTA 2010 s 676CB/676CE text (ch 14); functional currency s 9A Condition B (ch 5); IAS 12 Pillar Two exception end date (ch 6); s 70C amount and LFL lessee full expensing (ch 9); freeport plant FYA sunset dates (ch 9); s 1142A inserting Act (ch 10); "competent professional" wording in the R&D Guidelines (ch 10).
+6. CFM95720 full text on capital losses in tax-EBITDA (R5).
+7. CIRD89870 applied to RDEC surrendered **to** a group company (R2).
+8. Still open from batch 1 notes: CTA 2010 s 1140A dynamic reference (ch 2, 23); s 164A "same rate" condition for a nil-profit TPLC and the banking-company definition (ch 2, 27); s 164A where residence changes mid-period (ch 27); CbC €750m measurement period (secondary: previous period) and CbC penalties (ch 27); s 879O formula (ch 11); *Fidex* lead judge (ch 12); *JTI* lead judge (ch 12; R28); *Syngenta* UT outcome (ch 12); *ScottishPower* UKSC judgment (ch 7); FA 2026 ss 216 and 159 commencement (ch 4); Castlelaw citation, GAAR s 207 indicators, APN appeal rule, *Ramsay* date (ch 4); s 45A time limit and s 45F order (ch 14); *Ayerst* court and year (ch 14); s 1290(1A) wording (ch 7); CTA 2010 s 676CB/676CE text (ch 14); functional currency s 9A Condition B (ch 5); IAS 12 Pillar Two exception end date (ch 6); s 70C amount and LFL lessee full expensing (ch 9); 50% FYA on integral features bought new from a developer (ch 9); "competent professional" wording in the R&D Guidelines (ch 10); FA 1998 Sch 18 paras 83EA–83EB (ch 10); allowance-buying thresholds and s 538A (ch 9).
+
+**New from chapters 15–30**
+9. TIOPA Sch 7A para 8(4)–(5) statutory text (3-month window for a required revised return) and CFM98640 amendment window (R20; seen in HMRC extracts only).
+10. TIOPA s 373(3) on legislation.gov.uk (seen via a reproduction and CFM98620) (R20).
+11. CTA 2010 s 155: any HMRC example of a consortium **member** as the "third company"; ss 155A–155B not engaged (R21).
+12. Earn-out receipts after an SSE-exempt share sale (chargeable on the practitioner view; no HMRC page found); *Marren v Ingles* court (House of Lords per secondary sources) (R22, R28).
+13. STSM021120 wording on capped consideration; whether FA 1986 s 75 applies to an indirect (s 1077) demerger for the chapter 21 alternative.
+14. CTA 2009 s 173 claim mechanics and time limit; s 174 (R23).
+15. Instalment Regulations reg 7: QIP interest runs to the normal due date, then TMA s 87A interest (R26).
+16. *Development Securities* lead judgment authorship (R28).
+17. Sch 3ZB and QIPs for a migrating company's deferred tax; TMA s 109E start date; CTA 2009 s 162 wording; CAA s 61 table item for market value on a deemed discontinuance (ch 22).
+18. SI 2012/3024: is Ireland on the excluded territories list? Exempt period for a migrating company (s 371JB); QDMTT as local tax for the CFC tax exemption and as creditable tax (ch 26; bible flags 38, 39).
+19. TCGA s 140C post-Brexit wording (ch 25; flag 25); ss 944A–944E (post-2017 losses on a Part 22 transfer) (ch 19); para 19 qualifying period before a hive-down company existed (ch 20).
+20. N25 Q1 "royalties as one source, credits aggregated": statutory basis under TIOPA s 44 (ch 24).
+21. UK MLI position on Art 12 (secondary: reservation on the whole article) (ch 23); relief where a foreign TP adjustment relates to a UK PE (bible flag 41) (ch 23).
+22. Draft Finance Bill 2026-27 (compulsory branch exemption from 1 January 2027): check the Autumn Budget (28 October 2026) and the Bill as introduced (ch 25); Bank Rate decision of 5 November 2026 (R26).
+23. *Glencore* CA outcome and DPT announcement facts (ch 30); s 259B list and DPT (ch 29, flag 44); withholding on a hybrid capital instrument coupon (ch 29).
+24. *Tower One* judgments (ch 21; commentary only); *HC-One* appeal status (ch 21); LBTT page currency (ch 21).
+25. Stock dividends: CTM17005's citation of s 141 (ch 18, flag 21); *Prudential* and *Gallaher* (ch 17, flag 33).
+26. Check the 2027 LCG grid when published (every chapter's Exam lens).
