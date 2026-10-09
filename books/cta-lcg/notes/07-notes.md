@@ -140,3 +140,14 @@ Applied 9 October 2026 from `continuity-rulings.md` (numbers recomputed in Pytho
 | R16, R17 | reading | Recharge aside: "bible flag 55 remains open on whether the recharge could be trading" → "whether the recharge could be trading is not settled, and the s 105 outcome is the same either way" |
 | R3 | reading | Statute list: "ss 99, 105" → "ss 99, 105(3)–(3A)" |
 | R3 | notes | Interpretation line, files line, flags 4 and 14, Contradictions (R3, R16 resolved), ledger additions (QIPs £556,562.50; QCD hypothetical £8,705,000 / £2,176,250) |
+
+## Technical review fixes (review B)
+
+Independent technical review, 9 October 2026 (`review/review-B.md`, items 7.1–7.2). All computations re-run in Python (no arithmetic errors); `ledger-check.py` 132 checks, 0 failures. Script unchanged (8,699 words); reading edition 8,486.
+
+| Item | File | Change |
+|---|---|---|
+| 7.1 MINOR | reading, TEL worked example | Layout completed per the brief (CT → RDEC set-off → payable): added "Less: RDEC surrendered by Brackenwell (600.00)" and "CT payable after the surrendered credit 1,626.25"; payment note states the QIPs stay on the full £2,226.25 (R2, R7) |
+| 7.2 MINOR | reading, key rules and statute list | FY2026 rates: "FA 2025 s 13" → "FA 2025 ss 13–14" |
+
+Verified by review B: *ScottishPower* [2025] EWCA Civ 3 (17 January 2025); UKSC/2025/0047 heard 18–19 May 2026; no judgment found at 9 October 2026 (keep "check the outcome"). *Eclipse 35* £635m is HMRC's own estimate (press release), as the text says.

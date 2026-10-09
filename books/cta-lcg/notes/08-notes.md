@@ -107,7 +107,7 @@ Law-sheet **V** items restated without new search: s 45S/45T/46/52 (FE and 50%);
 | Fact | Value |
 |---|---|
 | TEL GY2 purchases (descriptions) | £9.0m new machining centres (FE); £1.2m new chillers and test-hall electrical systems (special rate, 50% FYA); £0.8m new test rigs hired to UK utility customers on two-year hires (40% FYA; TEL as lessor keeps allowances); £0.5m second-hand milling line from an unconnected competitor closing a site (main pool, no AIA); £0.3m disposal proceeds of old plant never fully expensed |
-| TEL GY2 pools c/f (ledger-consistent) | Main pool £34,554,800; special rate pool £6,204,000 |
+| TEL GY2 pools (amended by review B, s 58(5); needs ledger update) | Special rate pool b/f £7,720,000 (was £6,000,000); main pool before WDA £39,700,000, WDA £5,558,000; special rate WDA £463,200; FYA balances (£480,000 main; £600,000 special rate) pooled after the WDA; c/f main £34,622,000, special rate £7,856,800; total allowances unchanged at £16,000,000 |
 | Group AIA, year to 31 March GY3 (amended by R11; was "GY2") | £1,000,000: TES £400,000 (office fixtures acquired GY2, second-hand integral features); Calder £600,000 (second-hand special rate plant, AP to 31 March GY3); TEL nil. Calder's £600,000 of second-hand plant in its AP to 31 March GY2 used the AIA for the year to 31 March GY2 |
 | Calder AIA, AP to 31 March GY1 | Own £1m AIA (pre-acquisition period; outside the group) |
 | Calder GY3 sale of plant to TVS (1 October GY3), DV £1.4m | FE machines DV £900,000 → s 59A charge £900,000; long-life heavy test bed (50% FYA) DV £200,000 → s 59B charge £100,000 and £100,000 off the special rate pool; older main-pool plant DV £300,000 → main pool deduction. Total special balancing charges **£1,000,000** (CT at 25% £250,000) in Calder's 9-month AP to 31 December GY3; each DV below original cost |
@@ -134,3 +134,16 @@ Applied `continuity-rulings.md` R11 (and the R16 search, which found no producti
 | R11 | script, computation note | "because the group gave it to Calder and Tarnmoor Estates" → "because the group allocated it to special rate spending in Tarnmoor Estates and Calder" |
 | R11 | script, "What to take away" | "ending in the financial year" → "ending in the same financial year, the year to the thirty first of March" |
 | R11 | notes (this file) | flag 1 marked resolved; "Resolved by continuity ruling R11" under Contradictions; open thread (a) and ledger-additions rows (group AIA; Calder 9-month AP) amended |
+
+## Technical review fixes (review B)
+
+Independent technical review, 9 October 2026 (`review/review-B.md`, items 8.1–8.4). Numbers re-run in Python; `ledger-check.py` 132 checks, 0 failures (it checks the ledger's own arithmetic, not this chapter). Word counts after fixes: script 8,226 (within 7,500 ± 10%); reading edition 8,435.
+
+| Item | File | Change |
+|---|---|---|
+| 8.1 ERROR | both, TEL GY2 computation; "14%, and the hybrid rate" | CAA 2001 s 58(5)(a): FYA expenditure is not pooled in the period it is incurred. The computation had given WDAs in GY2 on the £480,000 (40% FYA) and £600,000 (50% FYA) balances (£103,200 too much). Rebuilt in the conventional order (b/f, non-FYA additions, disposals, WDA, then FYA additions with balances transferred after the WDA). To keep the canonical £16,000,000 total, the special rate pool b/f is restated from £6,000,000 to **£7,720,000**: main pool £39,700,000, WDA £5,558,000, c/f £34,622,000; special rate WDA £463,200, c/f £7,856,800; "at 18%" comparator £7,146,000. Key rules row added for s 58(5). **Needs orchestrator ruling / ledger update** (review-B "Needs orchestrator ruling" item 1) |
+| 8.2 ERROR | both, LLA furnace hypothetical | No WDA on the 50% balance in the period: right-column relief £150,000 (was £159,000); overstatement £150,000 (was £141,000; script "roughly one hundred and forty thousand" → "one hundred and fifty thousand") |
+| 8.3 MINOR | reading, 50% and 40% FYA rules | Added that the balance is pooled only after the WDA and first draws WDA in the next period (s 58(5)); Exam lens layout line updated |
+| 8.4 MINOR | reading | Full stops added to the chapter and section headings |
+
+Verified by review B: long-life assets qualify for the 50% FYA (general exclusion 5 catches only Sch 3 para 20 transitional expenditure: HMRC CA23174ac), so Calder's test bed s 59B charge stands; *Dundas Heritable* facts and outcome confirmed.

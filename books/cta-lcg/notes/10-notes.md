@@ -35,7 +35,7 @@
 2. **HMRC's whole-period view on acquisition** (BSL large for all of GY2): CIRD92000 extract cut off before the takeover example; relied on secondary summaries (2008, 2022). Labelled "HMRC's view" and "guidance rather than settled law". The July 2022 draft transitional proposal mentioned by Slaughter and May was not checked and is not taught. Resolves bible §5.2 flag 11 (second limb) as "HMRC's view, secondary-sourced".
 3. **ERIS surrenderable loss cap 186%:** verified (CIRD122000). Resolves bible §5.2 flag 11 (first limb).
 4. **PAYE cap exemption conditions:** CIRD140000 confirms the cap and that an exemption exists; condition wording (IP mainly by own staff; ≤ 15% connected EPW/subcontract) from GOV.UK policy note and secondary sources. Labelled "Broadly, HMRC's guidance says". Bible §5.2 flag 11 (CIRD140000 not re-read): partly resolved.
-5. **Claim notification statutory basis:** s 1142A CTA 2009 (SI 2023/813 refers to it). Which Act inserted s 1142A was **not confirmed** (search suggested F(No.2)A 2023 Sch 1 for the RDEC equivalent s 104AA; claim notification may have been introduced by FA 2022): the text names no inserting Act. Six-month window and 3-year rule from GOV.UK guidance (LS1 V guidance) plus the s 104AA extract. Bible flag 11 (para 83E ff not opened): paras 83E, 83EA, 83EB now identified (via legislation.gov.uk extracts).
+5. **Claim notification statutory basis:** s 1142A CTA 2009 (SI 2023/813 refers to it). Which Act inserted s 1142A was **not confirmed** [RESOLVED by review B: inserted by F(No.2)A 2023 Sch 1 paras 2(6), 20, for APs beginning on or after 1 April 2023 (legislation.gov.uk s 1142A record)] (search suggested F(No.2)A 2023 Sch 1 for the RDEC equivalent s 104AA; claim notification may have been introduced by FA 2022): the text names no inserting Act. Six-month window and 3-year rule from GOV.UK guidance (LS1 V guidance) plus the s 104AA extract. Bible flag 11 (para 83E ff not opened): paras 83E, 83EA, 83EB now identified (via legislation.gov.uk extracts).
 6. **Get Onbord and Tills Plus:** outcomes and reasoning from secondary sources (ICAEW, Bloomberg Tax, Stewarts); judgments not opened. No direct quotation used (the Bloomberg-reported Tills Plus sentence is paraphrased).
 7. **Guidelines' "competent professional" and "advance in science or technology / scientific or technological uncertainty":** the uncertainty wording is corroborated by the Tills Plus reporting; "competent professional" is stated from general knowledge of the DSIT/BEIS Guidelines and was **not re-verified** in this session (no search budget left). Low risk; reviewer to confirm.
 8. **R&D allowance details:** 100% and land excluded are V (LS1, plan). "Covers buildings used for research" (facilities for R&D) is from statute knowledge, **not re-verified**; "may claim less" V (LS1); "disposal value and balancing charge" V (LS1, generic). A claim that R&D allowances cover second-hand assets was removed as unverified.
@@ -137,3 +137,14 @@ All figures re-run in Python (scratch `calc.py`, `calc2.py`); `ledger-check.py` 
 | R16 | both editions | `grep -n -i -E "ledger|continuity|the plan for this book"`: no hits; no change |
 
 Recomputed in Python: £8,905,000 × 25% = £2,226,250; less £600,000 = £1,626,250; £750,000 ÷ 4 = £187,500. §11 scans on the script: 0 symbol/digit hits (heading colon only), 0 dash hits, 0 unspaced acronyms. Word counts after fixes: script 7,796; reading edition 7,705. `ledger-check.py`: 132 checks, 0 failures.
+
+## Technical review fixes (review B)
+
+Independent technical review, 9 October 2026 (`review/review-B.md`, items 10.1–10.2). Numbers re-run in Python; `ledger-check.py` 132 checks, 0 failures. Word counts after fixes: script 7,831 (within 7,500 ± 10%); reading edition 7,748.
+
+| Item | File | Change |
+|---|---|---|
+| 10.1 LIKELY | both, BSL group economics | "BSL's loss (and the group relief it surrenders to TEL) is £600,000 smaller" was wrong: the GY2 loss is time-apportioned, so the credit cuts the post-acquisition surrender by £300,000 and the restricted pre-acquisition loss by £300,000. Reworded; canonical net benefit £450,000 kept, described as valuing the whole reduction at 25% (near-term cost lower) |
+| 10.2 MINOR | reading | R16: "The debate (L7)" → "The debate" |
+
+Verified by review B: s 1142A inserted by F(No.2)A 2023 Sch 1 (flag 5 resolved); SI 2024/286 appointed day 1 April 2024; claim time limit two years beginning with the last day of the period of account (CIRD81800); September 2026 statistics. Still unverified: the paragraph numbers 83EA/83EB for the additional information form and claim removal.

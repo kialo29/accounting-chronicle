@@ -137,3 +137,12 @@ Figures recomputed in Python: excess 8,000,000 − 2,100,000 = 5,900,000; thresh
 - R3, `14-losses.txt`: "...but only so far as they exceeded Tarnmoor plc's own gross profits, which chapter fifteen explains." → "...but only so far as they exceeded Tarnmoor plc's profit-related threshold, which chapter fifteen explains." plus three new sentences (threshold = gross profits plus apportioned controlled foreign company profits; eight hundred and twenty five thousand pounds apportioned from the Marrovian finance company, chapter thirteen; five million and seventy five thousand pounds surrendered, eight hundred and twenty five thousand pounds carried forward). "...surrendered both amounts to Tarnmoor Engineering, twelve point four nine million pounds in all." → "...surrendered the deficit and the surrenderable expenses to Tarnmoor Engineering, eleven point six six five million pounds in all."
 - R16, reading: Worked examples 14.3 and 14.4 titles: removed "canonical ledger figures"; Key rules source cells "ledger" (Brackenwell, Helmside, TPLC rows) → "invented (story)".
 - R8, R9: chapter already correct; no text change.
+
+## Technical review fixes (review C)
+
+- Both editions: added the s 45A claim time limit (within 2 years after the end of the period in which the loss is used, or later if HMRC allows; CTM04135) in "Relief later", the loss table, key rules and the takeaway.
+- Reading: s 45/s 45B losses are automatic, but a company may claim not to use them in a period (same 2-year limit; CTM04135).
+- Reading: the 5-year Ch 2 window applies only where both the change in ownership and the major change occur on or after 1 April 2017 (CTM06370; F(No.2)A 2017 Sch 4 para 72).
+- Reading: *Williams v Peeters Picture Frames Ltd* (HMRC's spelling) now also cited as *Willis v Peeters Picture Frames Ltd* [1983] STC 453 (plan's spelling flag: both forms given).
+- Both editions: *Ayerst v C & K (Construction) Ltd*: House of Lords, 21 May 1975, [1976] AC 167, 50 TC 651 (script: "decided by the House of Lords in nineteen seventy five"). Ayerst court/year flag resolved.
+- Confirmed by review searches: Part 14B from APs beginning on or after 18 March 2015 and covers s 45A losses (CTM07505; s 730F); FA 2014 s 37 inserted s 724A and the 125% test. Still secondary only: s 45F 2-year claim limit. Script word count after fixes 8,069.

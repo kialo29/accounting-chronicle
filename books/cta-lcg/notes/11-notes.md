@@ -103,3 +103,10 @@ WebSearch (10 of 12 used; WebFetch not used per addendum). Queries and the URLs 
 | R16 | both editions | `grep -n -i -E "ledger|continuity|the plan for this book"`: no hits; no change |
 
 No numbers changed (ledger GY3 CIR figures stand: Calder £8.6m; aggregate £87.7m; reactivation £1.96m; c/f £2.55m). §11 scans on the script: 0 symbol/digit hits (heading colon only), 0 dash hits, 0 unspaced acronyms. Word counts after fixes: script 7,400; reading edition 7,840. `ledger-check.py`: 132 checks, 0 failures.
+
+## Technical review fixes (review C)
+
+- Reading, "The 6× cap": replaced "(The s 879O formula is an image ...; the rule is taken from s 879M's wording.)" with the statutory mechanism: RA = (A × N) ÷ B (A = qualifying IP spend, B = relevant-asset spend, N = 6; s 879M(3), s 879O(6)); debits × RA if RA < 1 (s 879O(2)); HMRC's example RA 0.6 (CIRD44093). Worked example 11.4 row relabelled "RA = (A × 6) ÷ B"; key-rules row updated. Flag 2 and bible flag 12 (s 879O) **resolved**: the chapter's proportion was right; law sheet 1 §4's formula is inverted.
+- Both editions: "about 15½ years" / "about fifteen and a half years" → "just over 15 years" (100 ÷ 6.5 = 15.4).
+- Reading references: Ch 15A inserted by FA 2019 Sch 9; CIRD44075, CIRD44086, CIRD44093 added.
+- Confirmed by review searches: s 782A conditions and FA 2019 s 26 (CIRD40570/40575); s 879C–879H windows (CIRD44075–44078).

@@ -102,3 +102,11 @@ Applied 9 October 2026 from `continuity-rulings.md` (numbers recomputed in Pytho
 | R3, R13, R16 | notes | Files line; flags 1 and 11 marked resolved; Contradictions (R3, R16 resolved); threads (stranded position replaces "available for later Part 5A surrender"); ledger additions confirmed by R3 |
 
 TEL's TTP sentence was added to the reading edition only (R3 makes it optional); the script omits it to stay within the word target (6,028 against an upper limit of 6,050).
+
+## Technical review fixes (review C)
+
+- Both editions, Part 14 Ch 3 "Effect": Chapter 2A no longer said to "run alongside"; it gives way where Chapter 3 (or Chapter 2) can apply (s 676AB; CTM06775), consistent with chapter 14 and R8.
+- Reading, Worked example 13.2: arrangement fee authority "CTA 2009 s 307" → "s 306A".
+- Script, *Dawsongroup*: deleted "The flotation disappointed" (unsourced scene detail about a real case).
+- Script: "P w C" → "P W C".
+- Still unverified: the "20 March 2013 (FA 2013)" start of the s 105(3A) profit-related threshold (secondary, PwC). Script word count after fixes 6,025 (cap 6,050).

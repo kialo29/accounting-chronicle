@@ -123,3 +123,9 @@ Hypotheticals used and **not** story facts: £2.4m exchange gain (£600,000 tax)
 - R16, reading, Key rules and figures source cells: "ledger §6", "ledger GY2" (twice), "ledger GY1, GY2" → "invented (story)".
 - R16, reading, other production references: "**The debate (book-plan L2).**" → "**The debate.**"; "(exam-intel)" and "(exam-intel's summaries)" in two Exam lens boxes deleted; *JTI* row "(paras 81–83, per law sheet 1)" → "(paras 81–83)".
 - R13: no change needed (chapter already canonical). No numbers changed; script figures unchanged.
+
+## Technical review fixes (review C)
+
+- Script: "the exemption for wholly domestic transactions that applies from chargeable periods beginning" → "which applies for chargeable periods beginning".
+- Disregard Regulations, automatic cases (R6 alignment): reading table row relabelled "Automatic cases (HMRC's guidance; not exhaustive)" and now also mentions designated fair value hedges and hedges of fair-valued loan relationships, with the note that a derivative hedging an item taxed in line with the accounts simply follows profit or loss; script "identifies one main automatic case" → "lists several automatic cases, and its list is not closed. The one to know is ...". TFL position unchanged.
+- Confirmed by review searches: Supreme Court refused permission in *BlackRock*, *Kwik-Fit* and *JTI*, listed 13 October 2024; *Kwik-Fit* and *JTI* facts as stated (secondary). Flag 8 (SC date): resolved (13 October 2024; text says "October 2024").

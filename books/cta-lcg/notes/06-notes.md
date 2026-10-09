@@ -109,3 +109,16 @@
 | R16 | `chapters/06-deferred-tax-reading.md`, Key rules row "Calder GY2" | Source "ledger; this chapter" → "invented (story); this chapter" |
 | R3 | `notes/06-notes.md`, Bible update and Ledger additions | £24.179m / 24.18% → £24.385m / 24.39% |
 
+
+## Technical review fixes (review B)
+
+Independent technical review, 9 October 2026 (`review/review-B.md`, items 6.1–6.6). Numbers re-run in Python; `ledger-check.py` 132 checks, 0 failures. Word counts after fixes: script 6,587 (within 6,000 ± 10%); reading edition 7,083.
+
+| Item | File | Change |
+|---|---|---|
+| 6.1 ERROR | reading, full expensing worked example | 40% FYA rigs: removed the £67,200 WDA on the £480,000 balance in GY2 and the £387,200 total; the balance joins the main pool after the WDA and draws 14% from GY3 (CAA 2001 s 58(5)); relief in GY2 £320,000 |
+| 6.2 ERROR | reading, Calder current tax table and statute list | "CTA 2009 Part 3 Ch 6A" (old RDEC, abolished by FA 2024) → "CTA 2009 Part 13 Ch 1A (s 1042I)" |
+| 6.3 LIKELY | reading, "Which rate, and when" | "10 associated companies in GY2" → "nine associated companies in GY2, divisor 10" (R1, R17) |
+| 6.4 MINOR | reading | R16: deleted "(exam-intel trap 21)" and "(exam-intel synthesis)"; "Story fact fixed in this chapter" → "Invented (story)" |
+| 6.5 MINOR | both | FY2026 rates attributed to FA 2025 ss 13–14 (reading law-year line, key rules, statute list); script take-away now says FY2026 enacted by FA 2025 and FY2027 by FA 2026 |
+| 6.6 MINOR | script | Trimmed three sentences to bring the script within the word target (6,610 → 6,587) |

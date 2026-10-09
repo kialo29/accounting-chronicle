@@ -32,7 +32,7 @@
 4. **TCGA s 37B** as the add-back section: GOV.UK guidance (rule) verified; section number from a forum post only (S). Script avoids the section number; reading edition cites "TCGA 1992 s 37B (GOV.UK)".
 5. **SBA history line** ("for years before 2018, most new commercial buildings got no allowance"): general statement, not sourced (IBA abolition dates not checked). Kept vague; no dates given.
 6. **Allowance buying effect** ("excess restricted so a change of ownership cannot put it to work for the new owners"): purpose from FA 2010 explanatory notes; mechanics ss 212N–212S NOT opened. Labelled in reading edition. Bible flag 29 (ss 212A–212S not opened): PARTLY RESOLVED (scope, start date, thresholds verified via explanatory notes and search extracts; mechanics still open).
-7. **Freeport P&M FYA sunset dates:** UNVERIFIED (only a third-party glossary gives 2031); text says check per site. Bible flag 31 (freeport sunset dates): PARTLY RESOLVED for SBA (GOV.UK: 30 Sept 2031 England; 30 Sept 2034 Scotland, Wales, IZs).
+7. **Freeport P&M FYA sunset dates:** [Review B: the GOV.UK sunset-extension policy paper gives the same dates (30 Sept 2031 England; 30 Sept 2034 Scotland, Wales, IZs) for the special tax site reliefs generally; text updated] Originally UNVERIFIED (only a third-party glossary gives 2031); text says check per site. Bible flag 31 (freeport sunset dates): PARTLY RESOLVED for SBA (GOV.UK: 30 Sept 2031 England; 30 Sept 2034 Scotland, Wales, IZs).
 8. **s 561 "relevant state"/ s 140A post-Brexit scope** (bible flag 25): OPEN. LS2 gives s 561(4A) relevant state = UK or member State (V); whether s 140A still operates is unclear; labelled "unclear" in both editions.
 9. **Final provisions ss 571–581:** only ss 573 and 575 described (V via LS2). The other sections' content was not checked; text describes them only as "definitions", no detail. Grid grade 1.
 10. **BMBF v Mawson facts:** secondary sources (Taxation magazine, Mondaq). Bible §1A listed it as U; now S. Not quoted. Decision date not stated.
@@ -130,3 +130,13 @@ Applied `continuity-rulings.md` R11 and R16. Numbers re-run in Python (£400,000
 | R16 | reading, cross-border transfers (line ~332) | "... after Brexit is unclear (bible flag 25)." → "... after Brexit is unclear." |
 | R16 | reading, key figures source cell (line ~451) | "ledger; this chapter" → "invented (story)" |
 | R11, R16 | notes (this file) | "Resolved by continuity ruling R11 / R16" under Contradictions; ledger-additions TES row amended |
+
+## Technical review fixes (review B)
+
+Independent technical review, 9 October 2026 (`review/review-B.md`, items 9.1–9.3). Numbers re-run in Python; `ledger-check.py` 132 checks, 0 failures. Word counts after fixes: script 8,172 (within 7,500 ± 10%); reading edition 8,415.
+
+| Item | File | Change |
+|---|---|---|
+| 9.1 ERROR | reading, distribution centre alternative ("if the 50% FYA is available") | WDA £18,000 on the £300,000 balance removed (CAA 2001 s 58(5): pooled after the WDA, first draws 6% in GY4); total £318,000 → £300,000. Script already said £300,000 |
+| 9.2 MINOR | reading | Heading "Chapter 9: ..." → "Chapter nine: ... ."; full stops on section headings |
+| 9.3 MINOR | both, special tax sites | The sunset-extension policy paper gives the same dates for the special tax site reliefs generally, including the plant FYA; text now says so, keeping "check the site's designation" |
