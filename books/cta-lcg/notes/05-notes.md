@@ -116,3 +116,10 @@ WebFetch unavailable (addendum). 10 WebSearch calls used (of 12). Law sheet V it
 | Calder FRS 102 (2024) adoption | In the year to 31 March 2027 (TKS ch 5's year), its first period beginning after 1 January 2026; leases on balance sheet; FA 2019 Sch 14 spreading. **Transition numbers are a labelled hypothetical only** (£90,000; warehouse £60,000/8 years, forklifts £30,000/2 years; 6-year spread; £15,000 a year): not story facts | I (adoption only) |
 
 All computations re-run in Python (scratch: `/tmp/claude-0/-home-user-accounting-chronicle/7222567c-185b-51e3-b4bc-bb4854026617/scratchpad/lcg-ch05/calc.py`). `ledger-check.py`: 96 checks, 0 failures (no canonical numbers changed).
+
+## Continuity fixes applied
+
+R14 (Calder's very large instalments for AP 1 April GY2–31 March GY3) and R15 (Dan's package inside the £1.2m redundancy element of the £1.8m provision): chapter already consistent; no change. R16 clean-up of production references in `05-tax-follows-the-accounts-reading.md` (script had none; no numbers changed):
+- Change of accounting standard Exam lens: "(exam-intel synthesis)" deleted.
+- Foreign currency Exam lens: "...\"exchange gains and losses\" (exam-intel §5)." → "...\"exchange gains and losses\"."
+- Currency status line: "The full current text was not opened (see notes)." → "The full current text was not opened."

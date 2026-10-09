@@ -59,6 +59,9 @@ WebSearch (10 of 12 allowed; WebFetch not used per addendum):
 - Law sheet 1 §3 reg 6 summary (designated fair value hedge as an automatic gateway) → inconsistent with HMRC guidance (flag 1).
 - Bible §1A lists the *JTI* court as Lewison, Newey and Baker LJJ (correct as a panel); search suggests Newey LJ gave the lead judgment, whereas LS1's teaching note implies Lewison LJ's remarks at para 85. Not used in the chapter.
 
+- Resolved by continuity ruling R6 (TFL: no reg 6A election; the swap follows profit or loss; teach the automatic cases as non-exhaustive, as HMRC's guidance).
+- Resolved by continuity ruling R13 (two £300,000 RCF fees, as this chapter fixed them).
+
 ## Pronunciation guide
 
 | Written | Say it |
@@ -109,3 +112,14 @@ WebSearch (10 of 12 allowed; WebFetch not used per addendum):
 | Loans to TVS | No exchange movements in the story (story exchange rates ignored per ledger §2) |
 
 Hypotheticals used and **not** story facts: £2.4m exchange gain (£600,000 tax); £10m/£4m/£6m deemed release; £10m fixed-rate loan; TEL late-payment interest on customer accounts.
+
+## Continuity fixes applied
+
+- R6, `12-loan-relationships-and-derivatives-reading.md`, Worked example 12.10 (TFL's swap): "TFL has made **no election and needs none**: tax follows the accounts." → "TFL has made **no election**. On HMRC's guidance it **needs none**: tax follows the accounts."
+- R6 and R16, same box: deleted the aside "*(This corrects the planning note that "the Disregard Regulations apply" to the swap: see the chapter notes.)*".
+- R6, reading, "What to take away" (third bouncer): "...or automatically where the hedged item is not taxed in line with the accounts." → "...or automatically where the hedged item is not taxed in line with the accounts, or in the other automatic cases HMRC lists."
+- R6, `12-loan-relationships-and-derivatives.txt`, summary paragraph ("The third bouncer..."): stated the automatic case as exhaustive; added ", or in the other automatic cases H M R C lists". Swap paragraph: "Tarnmoor Finance has made no election, and none is needed." → "Tarnmoor Finance has made no election. On H M R C's guidance, none is needed." (to match the reading edition). The "one main automatic case" paragraph is not exhaustive and is unchanged.
+- R16, reading, Worked example 12.1: "The ledger's amortisation amounts" → "These amortisation amounts".
+- R16, reading, Key rules and figures source cells: "ledger §6", "ledger GY2" (twice), "ledger GY1, GY2" → "invented (story)".
+- R16, reading, other production references: "**The debate (book-plan L2).**" → "**The debate.**"; "(exam-intel)" and "(exam-intel's summaries)" in two Exam lens boxes deleted; *JTI* row "(paras 81–83, per law sheet 1)" → "(paras 81–83)".
+- R13: no change needed (chapter already canonical). No numbers changed; script figures unchanged.

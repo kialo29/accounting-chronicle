@@ -51,7 +51,7 @@ WebSearch (**13 calls**, standard mode, one over the addendum's budget of 12; We
 
 ## Contradictions with plan, bible, ledger
 
-- **exam-intel trap 15** says "include UK-resident companies incorporated abroad" for SAO/tax strategy thresholds. For the **SAO** this is wrong: SAOG11260 says the regime turns on UK incorporation and tax residence is irrelevant; foreign-incorporated subsidiaries are excluded (SAOG11240 example of a German subsidiary). The book teaches exclusion (TIL is outside the SAO aggregation). The N23 Q5 marking guide was not re-opened; the bible/exam-intel trap should be corrected or narrowed (it may refer to UTT, which aggregates CT-paying members).
+- **exam-intel trap 15** says "include UK-resident companies incorporated abroad" for SAO/tax strategy thresholds. For the **SAO** this is wrong: SAOG11260 says the regime turns on UK incorporation and tax residence is irrelevant; foreign-incorporated subsidiaries are excluded (SAOG11240 example of a German subsidiary). The book teaches exclusion (TIL is outside the SAO aggregation). The N23 Q5 marking guide was not re-opened; the bible/exam-intel trap should be corrected or narrowed (it may refer to UTT, which aggregates CT-paying members). Resolved by continuity ruling R10 (SAO turns on UK incorporation; TIL outside).
 - **Plan §5 chapter 4** lists "Calder (from GY2's financial year)": consistent; precisely, Calder's financial year beginning 1 April GY2.
 - **LS1 §8 "Board-approved"** tax strategy: not confirmed as a statutory requirement; not taught as law.
 - No ledger numbers changed. `ledger-check.py`: 96 checks, 0 failures.
@@ -110,3 +110,14 @@ WebSearch (**13 calls**, standard mode, one over the addendum's budget of 12; We
 | SAO first qualifying years | Calder FY from 1 April GY2; Brackenwell GY3; Helmside GY6; TIL never; Tarnmoor Pumps every year |
 | GY3 CCO incident | Self-employed commission-paid Marrovian sales agent of TEL; customer refused and reported; agent dismissed |
 | GY3 promoter scheme | Fee = percentage of tax saved; confidentiality agreement demanded; declined by the board |
+
+## Continuity fixes applied
+
+R10: chapter already consistent; no change. R16 clean-up of production references in `04-governance-anti-avoidance-reading.md` (script had none; no numbers changed):
+- Opening: "(law firm commentaries; see the notes)" → "(law firm commentaries)".
+- Why section: "one of the book's debates (L10):" → "one of the book's debates:".
+- SAO acquisition paragraph: "HMRC's guidance on joining and leaving (SAOG11300 onwards) was not opened for this chapter;" → "HMRC's further guidance on joining and leaving (SAOG11300 onwards) is not covered here;".
+- UTT threshold: "the statute, per law sheet 1, says over £5m" → "the statute says over £5m".
+- UTT Exam lens: "(law sheet 1 trap 27)" deleted. CCO Exam lens: "(exam-intel)" deleted.
+- DOTAS penalties: "(law sheet 1: Royal Assent inferred)" → "(commencement on Royal Assent is inferred)".
+- FA 2026 Part 6: "(Commencement dates not verified in this chapter's research: see notes.)" → "(Commencement dates not verified.)".

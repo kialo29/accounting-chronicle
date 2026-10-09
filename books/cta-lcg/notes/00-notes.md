@@ -87,3 +87,9 @@ Web access: WebFetch not used (broken per addendum). 10 WebSearch calls (standar
 ## Ledger additions
 
 None. No Tarnmoor numbers used or created; Tarnmoor named once as invented. `ledger-check.py`: 96 checks, 0 failures (unchanged).
+
+## Continuity fixes applied
+
+No ruling item touches the prologue. R16 clean-up of production references in `00-prologue-reading.md`, Status note (script had none; no numbers changed):
+- "practitioner commentaries (listed in the notes)." → "practitioner commentaries."
+- "were checked against the judgment in the law sheets (9 October 2026)." → "were checked against the judgment (9 October 2026)."

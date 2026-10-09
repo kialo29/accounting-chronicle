@@ -54,12 +54,14 @@ Python: `scratchpad/lcg-ch14/calc.py` (GY2 split, £8.6m, Helmside £1.2m/£1.3m
 
 ## Contradictions with plan, bible or ledger
 
-1. **Ledger §7 GY2 and plan §5 ch 14**: "restricted (major change ...; Ch 2A)". **Correction:** the restriction is under **CTA 2010 Part 14 Ch 2 (s 673)**; Ch 2A gives way where Ch 2 applies (CTM06775). Ch 2C (Part 5A bar) applies in any case. Suggest ledger wording: "restricted under Part 14 Ch 2 (s 673); Ch 2C bars Part 5A surrender to the end of GY7".
-2. **Plan §5 ch 14**: "Tarnmoor's members nominate TPLC each year". HMRC guidance: a nomination is a standing document (continues until replaced, revoked or the nominee leaves); it is the GAAS that is filed each period. The chapter uses a standing nomination from GY1, countersigned by joiners as group practice.
+1. **Ledger §7 GY2 and plan §5 ch 14**: "restricted (major change ...; Ch 2A)". **Correction:** the restriction is under **CTA 2010 Part 14 Ch 2 (s 673)**; Ch 2A gives way where Ch 2 applies (CTM06775). Ch 2C (Part 5A bar) applies in any case. Suggest ledger wording: "restricted under Part 14 Ch 2 (s 673); Ch 2C bars Part 5A surrender to the end of GY7". Resolved by continuity ruling R8.
+2. **Plan §5 ch 14**: "Tarnmoor's members nominate TPLC each year". HMRC guidance: a nomination is a standing document (continues until replaced, revoked or the nominee leaves); it is the GAAS that is filed each period. The chapter uses a standing nomination from GY1, countersigned by joiners as group practice. Resolved by continuity ruling R9.
 3. **Bible glossary / plan** describe Ch 2C as "pre-acquisition losses of a joiner not surrenderable under Part 5A for 5 years": consistent; CTM06815 adds that the 5 years run from the end of the AP in which the change occurs.
 4. **Bible §1A** dates *Ayerst* "(1974)": not confirmed; chapter omits the year.
 
 ---
+
+5. **TPLC's GY1 surrender of excess management expenses** (ledger and earlier text: whole excess over gross profits, £5.9m; total to TEL £12.49m): capped by CTA 2010 s 105(3A) at the excess over gross profits plus the £825,000 CFC apportionment from TCM: £5,075,000 surrenderable, £825,000 carried forward, total to TEL £11,665,000. Resolved by continuity ruling R3.
 
 ## Pronunciation guide
 
@@ -123,3 +125,16 @@ Python: `scratchpad/lcg-ch14/calc.py` (GY2 split, £8.6m, Helmside £1.2m/£1.3m
 - **Helmside GY4:** own £5m deductions allowance (not in a 75% group); c/f losses £1.2m fully relieved; TTP before consortium relief £1.3m (ledger figure).
 - **Calder:** single trade; GY3 division closure is not a cessation.
 - **Labelled hypotheticals (not story facts):** BSL GY4 profit £4.0m with £1.0m allocation → relief £2.5m, TTP £1.5m, CT £375,000, c/f £6.1m; with £5m allocation → relief £4.0m, c/f £4.6m. Part 7ZA example: qualifying £14m, losses £20m → relief £9.5m, TTP £4.5m, CT £1.125m, c/f £10.5m.
+
+## Continuity fixes applied
+
+Figures recomputed in Python: excess 8,000,000 − 2,100,000 = 5,900,000; threshold 2,100,000 + 825,000 = 2,925,000; surrenderable 8,000,000 − 2,925,000 = 5,075,000; carried forward 825,000; total to TEL 6,590,000 + 5,075,000 = 11,665,000.
+
+- R3, `14-losses-reading.md`, Worked example 14.3: "Excess management expenses 5,900; Surrendered to TEL 12,490" → "Excess over gross profits 5,900; less CFC chargeable profits apportioned to TPLC from Tarnmoor Capital Ltd (TCM), part of the profit-related threshold (825); **Excess management expenses surrenderable 5,075**; carried forward (s 1223) 825; **Surrendered to TEL (6,590 + 5,075) 11,665**".
+- R3, reading, options bullet: "only to the extent they exceed TPLC's gross profits (CTA 2010 s 105; chapter 15)" → "only to the extent they exceed TPLC's profit-related threshold, gross profits plus apportioned CFC profits (CTA 2010 s 105(3A); chapter 15)".
+- R3, reading, prose: "TPLC surrendered both amounts, £12.49m, to TEL." → "TPLC surrendered the deficit and the surrenderable management expenses, £11.665m in all, to TEL; the other £825,000 of management expenses carried forward."
+- R3, reading, loss-types table (group relief column for excess management expenses): "Only the excess over the company's gross profits" → "Only the excess over the company's profit-related threshold (gross profits plus apportioned controlled foreign company (CFC) profits)" (consistency with the bullet; also first use of "CFC" in the chapter).
+- R3, reading, Key rules and figures row "Story: TPLC GY1": "NTLR deficit £6.59m + excess ME £5.9m = £12.49m to TEL | ledger" → "NTLR deficit £6.59m + surrenderable ME £5.075m (excess £5.9m less CFC apportionment £825,000) = £11.665m to TEL; £825,000 ME c/f | invented (story)".
+- R3, `14-losses.txt`: "...but only so far as they exceeded Tarnmoor plc's own gross profits, which chapter fifteen explains." → "...but only so far as they exceeded Tarnmoor plc's profit-related threshold, which chapter fifteen explains." plus three new sentences (threshold = gross profits plus apportioned controlled foreign company profits; eight hundred and twenty five thousand pounds apportioned from the Marrovian finance company, chapter thirteen; five million and seventy five thousand pounds surrendered, eight hundred and twenty five thousand pounds carried forward). "...surrendered both amounts to Tarnmoor Engineering, twelve point four nine million pounds in all." → "...surrendered the deficit and the surrenderable expenses to Tarnmoor Engineering, eleven point six six five million pounds in all."
+- R16, reading: Worked examples 14.3 and 14.4 titles: removed "canonical ledger figures"; Key rules source cells "ledger" (Brackenwell, Helmside, TPLC rows) → "invented (story)".
+- R8, R9: chapter already correct; no text change.
