@@ -12,6 +12,8 @@ This is the third chapter of Part Two, on measuring profit. Chapter 5 showed tha
 
 Start with the misconception, because the analyst held it and so do many people who should know better: **"a large company simply pays 25% of its accounting profit."** It is easy to see why. The headline rate is 25%, the accounts show a profit, and the tax note even reconciles one to the other. But the accounting profit is where the computation starts, not where it ends.
 
+Three things separate accounting profit from tax. First, the accounts measure profit under GAAP, while tax overrides GAAP where the law says so. Second, some reliefs pass *between* companies: in a group, losses and expenses in one company reduce profits in another. Third, the rate rules themselves (marginal relief, associated companies, straddling years) depend on facts the accounts do not show.
+
 Think of the computation as a customs checkpoint. Everything in the profit and loss account passes through it. Some items are **stopped** (a fine; whisky given to customers). Some are **held at the barrier and released later**, because tax allows them only when cash moves (unpaid bonuses; pension contributions). Some are **swapped for a different document**, because tax has its own measure (capital allowances for depreciation; Part 12 share relief for the IFRS 2 charge). The officer at the checkpoint is the law.
 
 *The Living Law*, chapters 20 and 21, set out the shape: corporation tax is charged on a company's taxable total profits (TTP) for an accounting period; those profits gather income under several headings and chargeable gains, less reliefs. At AT level the shape is the same, but every line has more rules behind it.
@@ -54,6 +56,8 @@ Before any adjustment, ask whether the company trades at all. For a company the 
 
 - ***Marson v Morton*** (Ch D, 1986): Sir Nicolas Browne-Wilkinson V-C stressed that whether there is a trade is a question of fact on all the circumstances; the badges are not a comprehensive list and no single one is decisive (as summarised in HMRC's BIM20205 and secondary sources).
 - ***Eclipse Film Partners No 35 LLP v HMRC*** [2015] EWCA Civ 95 (17 February 2015): a partnership that acquired film rights and sub-licensed them to a distributor, playing no meaningful part in marketing or distribution, was not trading. Whether a trade exists is for the tribunal of fact; speculation indicates trade but is not essential. HMRC estimated about £635m of tax protected (HMRC's estimate, not a finding).
+
+*Marson v Morton* concerned a single purchase and sale of land, which is why it is cited so often for property: the sale of an investment does not become trading just because a profit was made or planning permission obtained. *Eclipse* concerned a highly structured arrangement financed by borrowing, and shows the opposite pressure: taxpayers who *want* a trade (for loss relief or interest relief) must show real commercial activity.
 
 *Eclipse* matters for groups because activity, money and paperwork are not enough: the company itself must do something commercial.
 
@@ -249,6 +253,8 @@ On **30 September GY3**, Calder Valve Engineering (Calder) closed its process va
 
 **Fines and penalties.** Not in the statute: disallowed by case law. ***McKnight v Sheppard*** [1999] 1 WLR 1333 (HL): a stockbroker's Stock Exchange fines were not deductible, but his legal costs of defending the proceedings were (wholly and exclusively to preserve the trade). Lord Hoffmann explained that a fine is meant to punish and a deduction would pass part of it to taxpayers generally (paraphrase). TEL's **£250,000** fine after a health and safety prosecution: **add back**; its legal costs of defence: deductible.
 
+The principle in *McKnight* is a public policy rule, not a statutory one, which is why its edges are argued case by case. A regulator's penalty is plainly within it; the costs of defending the proceedings are plainly outside it; a payment to customers agreed with a regulator sits between the two.
+
 **Being litigated: *ScottishPower*.** Between 2013 and 2016 ScottishPower settled investigations by the energy regulator, paying nominal penalties and about **£28m** to consumers and consumer organisations. The FTT largely, and the UT wholly, agreed with HMRC that the payments were not deductible. In ***ScottishPower (SCPL) Ltd v HMRC*** [2025] EWCA Civ 3 (January 2025) the Court of Appeal held they were not fines or penalties, so nothing prevented deduction, and rejected the idea that a payment takes the treatment of what it replaces. The Supreme Court (UKSC/2025/0047) heard HMRC's appeal on 18–19 May 2026 and had **reserved judgment** when this chapter was written. **Check the outcome before the exam.**
 
 **Statute:**
@@ -391,6 +397,18 @@ Told in words: profit before tax of £23.5m; add back £20.0m (depreciation £16
 | **TTP / CT** | **8.08** | **2.020** |
 
 CT is about 8.6% of profit before tax. That is not a gap in the law: it is the law working as designed, with much of the relief bought by losses and expenses elsewhere in the same group.
+
+> **Going further: the tax function's year-end checklist for the computation.**
+> - **Remuneration:** list every bonus, LTIP and commission accrual with its expected payment date; flag anything paid after month 9 (s 1288) and diarise the later deduction.
+> - **EBTs:** reconcile contributions to benefits paid out in the period and the following 9 months; confirm PAYE and NIC on those benefits were paid within 12 months; track the 5-year long-stop for undistributed balances.
+> - **Pensions:** reconcile the accounts charge to cash paid; run both s 197 tests every year a large or special contribution is paid, and keep the workings for the CPCP comparison (adjusting for period length).
+> - **Share plans:** obtain exercise data (dates, market values, prices paid) from the plan administrator by employing company; add back IFRS 2; keep scheme set-up and administration invoices separate because they stay deductible.
+> - **Entertaining and gifts:** split staff from customer events at the coding stage; record gift recipients so the £50 per-person test can be shown.
+> - **Fines and settlements:** read the settlement documents: a fine is disallowed, but a compensatory payment may not be (*ScottishPower*); legal costs of defence are usually deductible.
+> - **Donations:** confirm the recipient is a charity, check benefits against the s 197 limits, and from 6 April 2026 ask whether the charity, or a connected charity, has lent to, guaranteed, indemnified or invested in any group company.
+> - **Group interaction:** confirm group relief surrenders and claims (chapter 15) and consortium shares; the CIR disallowance allocation (chapter 28); the RDEC surrender (chapter 10); and QIP true-ups when forecasts change (chapter 3).
+
+> **Going further: interaction with other regimes.** Every adjustment in this chapter moves at least one other number. Timing adjustments (LTIP, pensions, Part 12) create deferred tax balances (chapter 6). Disallowances such as fines and entertaining are permanent differences that appear in the effective tax rate reconciliation (chapter 6). Tax-EBITDA for the corporate interest restriction is built from the same adjusted profits before capital allowances and interest, so an error in the adjustments flows straight into the interest capacity (chapter 28). And the adjusted profit is also the starting point for the QIP forecasts on which very large companies pay four times during the year (chapter 3).
 
 ---
 
