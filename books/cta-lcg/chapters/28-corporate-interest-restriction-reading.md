@@ -30,6 +30,8 @@ Each piece of the UK rule answers one of those risks:
 
 The rule applies to periods of account beginning on or after **1 April 2017** (straddling periods were split) and replaced the **worldwide debt cap** (old TIOPA Part 7), which compared UK interest with the group's external interest and nothing else (CFM95110).
 
+The OECD work ran from an interim report (2014) through the final report (October 2015) to an update (December 2016). Its recommended fixed ratio rule let each country choose a benchmark ratio of net interest to tax-based EBITDA within a **corridor of 10% to 30%**, optionally supplemented by a group ratio rule, a de minimis threshold and carry-forwards, with special treatment for highly geared public-benefit infrastructure (secondary summaries: EY and Deloitte alerts, October 2015). The UK chose the top of the corridor and adopted every optional element.
+
 Think of the restriction as a **ration book**. Each year the group receives interest coupons worth 30% of its UK earnings. Coupons it does not spend can be kept for five years. Interest that cannot find a coupon is not destroyed: it waits in a queue, with no expiry date, until a later year has coupons to spare. Every rule that follows is a detail of how the coupons are counted, who holds the queue, and who fills in the forms.
 
 Two features make this regime different from everything in Part Two of this book. It works at the level of the **group**, not the company. And its answer, once found, must be **pushed back down** into individual company returns: the group computes one disallowance and then decides which companies bear it.
@@ -43,6 +45,8 @@ The unit is the **worldwide group** (ss 473–474; CFM95330): the **ultimate par
 Take our invented group, **Tarnmoor**. Everything about Tarnmoor, its companies, people and numbers, is made up for teaching. Tarnmoor plc (TPLC) is a listed engineering group with its head office in Leeds. Its worldwide group includes its UK trading, property, finance and holding companies, Tarnmoor Vallaria SA (TVS) and Tarnmoor Capital Ltd (TCM) in the invented countries of Vallaria and Marrovia, Tarnmoor Ireland Ltd (TIL), and even the dormant Tarnmoor Pumps Ltd. **Helmside Energy Ltd**, the hydrogen joint venture in which TPLC holds 45% from GY1 to GY4, sits **outside** it because it is not consolidated.
 
 The calculation runs for the worldwide group's **period of account** (here TPLC's year to 31 December). Only **UK group companies** (companies within the charge to CT) contribute tax-interest and tax-EBITDA. TVS's interest and earnings count for nothing in the UK measures, although its results are part of the consolidated accounts from which the group measures (ANGIE, group-EBITDA) are taken.
+
+**Joiners and leavers.** A company that leaves (TWS on its demerger on 1 July GY5) counts only to the day it goes. A company that joins brings its own carried-forward disallowed amounts, which the CTA 2010 Part 14 loss-buying rules can reach after a change in ownership (CFM98693).
 
 **Non-coterminous periods.** Where a company's accounting period does not coincide with the group's period of account, amounts for the part outside it (a **"disregarded period"**) are left out, on a just and reasonable basis (s 382(7)–(8) for tax-interest; s 406(6) for tax-EBITDA). HMRC's guidance (Corporate Finance Manual) says time apportionment will be suitable in most cases, that a common-sense approach applies where it would distort, and that apportionments must be consistent. The same applies to joiners and leavers.
 
@@ -194,7 +198,7 @@ Why people believe it: for small groups the floor *behaves* like an allowance. I
 >
 > Not nil (the floor is not a bonus) and not £1,000,000 (the floor does lift capacity).
 
-A group under the floor should still keep evidence that its net interest is below £2m (GOV.UK guidance), and may choose to file a **full** return anyway to bank **unused allowance** for later years (an abbreviated return or no return makes it nil: below).
+N24 Q5 tested exactly this judgement: a newly acquired UK company in a US group was probably not restricted, but appointing a reporting company and filing a return would protect the position. A group under the floor should still keep evidence that its net interest is below £2m (GOV.UK guidance), and may choose to file a **full** return anyway to bank **unused allowance** for later years (an abbreviated return or no return makes it nil: below).
 
 ---
 
@@ -250,6 +254,8 @@ In our invented case, Tarnmoor came into GY1 with **nothing brought forward** un
 > **Tax effect at 25%:** GY1 disallowance £552,500; GY2 £575,000; GY3 reactivation saves £467,500; £2.64m (potential £660,000) still waiting.
 >
 > Excess debt cap working (s 400): GY1 31.85 − 22.44 = 9.41, limited to 0 + 2.21 = **2.21**; GY2 35.23 − 23.52 = 11.71, limited to 2.21 + 2.30 = **4.51**; GY3 36.15 − 26.31 = 9.84, limited to 4.51 + nil = **4.51**.
+
+**How the board sees it (invented).** Nadia Kerr, TPLC's CFO, sees the restriction in the tax note (each year's disallowance is a reconciling item because no DTA is recognised: chapter 6) and in the treasury forecast, where every new borrowing proposal now carries the question whether UK earnings will grow fast enough to carry it. In GY2 the board accepted a second year of restriction as the price of buying Brackenwell: a business decision the tax function priced in advance.
 
 **What the restriction is really measuring.** Tarnmoor's interest has hardly moved; its earnings have. The group borrowed in the UK partly to fund TVS. The £7.2m TVS pays back is outside the UK figures, but so are TVS's earnings. The 30% rule does not ask whether the borrowing was sensible. It asks whether the UK earnings can carry it.
 

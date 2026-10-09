@@ -1,6 +1,6 @@
 # Chapter twenty nine: Hybrid mismatches.
 
-The slide deck arrived in **GY4**. In our invented story, an outside adviser had a proposal for the group's treasury company, **Tarnmoor Finance Ltd (TFL)**. It would issue **£80m of perpetual subordinated notes** to **Tarnmoor Capital Ltd (TCM)**, the group's finance company in the invented country of **Marrovia**. The coupon would be **7%: £5.6m a year**.
+The slide deck arrived in **GY4**. In our invented story, an outside adviser had a proposal for our invented group, Tarnmoor, and its treasury company, **Tarnmoor Finance Ltd (TFL)**. It would issue **£80m of perpetual subordinated notes** to **Tarnmoor Capital Ltd (TCM)**, the group's finance company in the invented country of **Marrovia**. The coupon would be **7%: £5.6m a year**.
 
 The pitch rested on one fact. The UK would see the notes as debt, so the coupon would be deductible here. Marrovia, under its (invented) law, would see the same notes as shares, so the coupon would arrive as an exempt dividend. One payment, two readings: a deduction in one country, nothing taxed in the other. The project even had a name: **Project Undertow**.
 
