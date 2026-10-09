@@ -2,13 +2,13 @@
 
 **Interpretation and assumptions.** Teach TIOPA 2010 Part 6A at core depth (FY2026 law; no FA 2025/FA 2026 amendment) through its two outcomes, primary/secondary responses and chapter map, with Project Undertow (GY4, rejected) as the running case; I added a UK debt/equity first step (equity notes and the hybrid capital instrument election) and the CFC/hybrid interaction (s 259BD) because the plan's analysis would otherwise be legally incomplete, while keeping every ledger number.
 
-Files: `chapters/29-hybrid-mismatches.txt` (script, 6,111 words by `wc -w`), `chapters/29-hybrid-mismatches-reading.md` (reading edition, about 6,040 words). Scratch: `/tmp/claude-0/-home-user-accounting-chronicle/7222567c-185b-51e3-b4bc-bb4854026617/scratchpad/lcg-ch29/calc.py`.
+Files: `chapters/29-hybrid-mismatches.txt` (script, 6,110 words by `wc -w`), `chapters/29-hybrid-mismatches-reading.md` (reading edition, 6,032 words by `wc -w`). Scratch: `/tmp/claude-0/-home-user-accounting-chronicle/7222567c-185b-51e3-b4bc-bb4854026617/scratchpad/lcg-ch29/calc.py`.
 
 ## Sources by section
 
 Research base read: `writer-brief.md`, `ORCHESTRATOR-ADDENDUM.md`, `continuity-rulings.md` (R1–R17), `book-plan.md` §0, §3, §5 (ch 28–30 briefs), §6, §11; `calder-ledger.md` (§1–§3, GY4, facts fixed by chapters); `book-bible.md` §3.13, §5.2 flags, §6 pronunciation; `research/law-sheet-5-cfc-tp-hybrids-migration.md` Part C (C1–C3), Part A (A3–A7), teaching notes and examples 10–11, traps; `research/law-sheet-3-international.md` §7 (withholding rows); `research/exam-intel.md` (N25 Q6, N24 Q5, synthesis, examiner messages); chapter 12 script and reading edition (s 441, financing table, withholding paragraph); chapter 13 reading edition (format).
 
-WebSearch (11 of 12 used; WebFetch not used, per addendum):
+WebSearch (13 calls; WebFetch not used, per addendum):
 
 | # | Query | Pages relied on (extracts) | Used for |
 |---|---|---|---|
@@ -26,7 +26,7 @@ WebSearch (11 of 12 used; WebFetch not used, per addendum):
 | 12 | TIOPA 2010 Part 6 "tax arbitrage" repealed ... | https://www.legislation.gov.uk/ukpga/2010/8/section/239/data.xht ; https://www.legislation.gov.uk/ukpga/2010/8/notes/division/2/6 ; INTM595510 | F(No.2)A 2005 origin; notice-activated; Part 6 omitted by FA 2016 Sch 10 para 15 for APs beginning on or after 1 January 2017 |
 | 13 | CTA 2009 section 931D distribution exempt "deduction is allowed" ... | https://www.legislation.gov.uk/ukpga/2009/4/part/9A ; https://www.gov.uk/hmrc-internal-manuals/international-manual/intm551170 | s 931D(c) / s 931B(c) linking rule; HMRC's view on overlap with Part 6A |
 
-(Thirteen rows, eleven distinct calls are counted against the budget? No: thirteen searches were run in total. **Correction: 13 WebSearch calls were used, one over the addendum's budget of 12.** The last (row 13) was used to verify the dividend-exemption linking rule for the "UK as payee" section.)
+**13 WebSearch calls were used, one over the addendum's budget of 12.** The thirteenth (row 13) verified the dividend-exemption linking rule for the "UK as payee" section.
 
 Law sheet V items restated without new search: Part 6A structure, commencement (FA 2016 Sch 10 Part 3), s 259A(20) order, s 259B "tax" incl. withholding ignored and DPT still listed, s 259BE hybrid entity, ss 259NB–259ND related, Ch 3 Case 1/Case 2 and the UTA × (FMR − R)/FMR formula, s 259CD/s 259CE responses, Chs 4–13 table, FA 2021 Sch 7 (10 June 2021; Ch 12A from 1 January 2021), FA 2022 s 26, no FA 2025/FA 2026 amendment, CFC QLR (UK debtor excluded), s 371EC, s 371PA creditable tax (UK income tax suffered), s 874/s 882/s 888A, FA 2026 ss 5–6 (22% from 2027/28), BEPS Action 2 report date (s 259KA(7D)).
 
