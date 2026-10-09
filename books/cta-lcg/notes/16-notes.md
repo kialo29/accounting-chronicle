@@ -90,3 +90,10 @@ WebSearch (standard mode), 9 calls:
 - **R19:** the chapter is the source (gain £189,000 with the labelled assumed indexation factor 0.250; GY4 grant cost £290,000, gain £870,000). Flag 1 marked "adopted by R19". No text change.
 - **R29 (TES's depot):** let to TEL and used only for TEL's trade; consistent with chapter 17. No change.
 - Other rulings: nothing in this chapter.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **MINOR (16.1):** reading, Part 8ZB refinements: "No double charge (s 356OC)" → "(ss 356OB–356OC)". The exact home of the exclusion is still unverified; the pre-intention carve-out (s 356OL) is also unverified.
+- Everything else was confirmed: R19 figures, CG70960 grant, roll-over, lease table, s 153A, s 154, s 161, s 280, chattels and Part 8ZB dates. Script unchanged (7,867 words).

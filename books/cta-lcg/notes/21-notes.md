@@ -100,3 +100,10 @@ WebFetch unavailable; **12 WebSearch calls** used (standard mode; the full budge
 
 - **R22:** the chapter is the source (TAL £270,000; BSL notes £9,000; totals £652,500 / £923,500 / £654,000 / £269,500). Flag 1 marked "resolved by R22". No text change.
 - **R29 (no arrangements at the TAL hive-down and the 1 October GY3 factory transfer):** consistent. No change.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **MINOR (21.1):** reading, *Tower One* Court of Appeal: panel added (Asplin, Warby and Falk LJJ). The outcome as stated (no group relief argument; UT reversed on s 53; s 75A applied) is confirmed by Find Case Law and practitioner summaries. Open item 24 (Tower One) resolved. *HC-One* appeal status remains open.
+- Everything else confirmed (Python re-run of every figure). Script unchanged (4,772 words).

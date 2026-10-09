@@ -86,3 +86,11 @@
 
 - **R22.4:** script, "What to take away": "The two point five million pound degrouping gain joined fifty three point five million pounds of exempt proceeds" → "The two point five million pound degrouping gain was added to the consideration, making fifty three point five million pounds, all of it exempt." Reading edition already correct. Flag 1 marked "resolved by R22".
 - **R29:** TAL's 11-month AP thresholds £125,000 / £1,666,667 / £833,333 already stated; no arrangements at the 1 February GY6 hive-down; BSL benefit not restated as a £150,000 cash saving. No change.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **LIKELY (20.1), fixed in Stage 0:** script wording on the £53.5m (R22.4).
+- **MINOR (20.2):** reading, worked example 20.5 point 1: added that para 15A also treats TAL as a qualifying company for the earlier part of the 12 months (CG53080C and commentary; labelled). Open item 19 ("para 19 qualifying period before a hive-down company existed") resolved on HMRC's guidance.
+- Script words 7,286 (target 7,000 ±10%).

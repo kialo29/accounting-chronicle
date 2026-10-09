@@ -149,3 +149,13 @@ Python: `scratchpad/lcg-ch15/calc.py` (TPLC s 105 caps; TEL GY1/GY2; s 142 half-
 - **R28.5 (*FCE Bank*):** consistent with chapter 24; no change.
 - **R29 checks:** BSL joins the group relief group on completion, 1 July GY2 (both editions say so); no statement of the R7 benefit as a £150,000 cash saving (grep: none). No change.
 - R18–R20, R22–R26: nothing in this chapter.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **LIKELY (15.1):** reading, "Relief up, and relief down", Down paragraph: "(s 143)" → "(s 144; s 143 governs the claim going up)". s 144 limits a consortium company's claim (relief down); s 143 limits a member's claim (relief up).
+- **MINOR (15.2):** reading, "Several claims for the same months (s 142)" → "(s 140(3)–(6); s 139 does the same on the surrendering side)".
+- **MINOR (15.3):** reading, consortium company heading a group: "(s 149; CTM80585)" → "(ss 148–149; CTM80585)"; s 148 added to the statute list.
+- **MINOR (15.4):** opening, both editions: "quietly left the British statute book" → "quietly stopped working"; reading adds that FA 2022 s 24(3) was "enacted the following year".
+- Script words 8,383 (target 8,500 ±10%). Scans clean.

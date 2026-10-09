@@ -78,3 +78,10 @@ WebSearch (standard mode), 9 of 12 used:
 - **R19:** reading edition s 171A worked example: "lease assignment gain £351,200 (chapter 16) = **£651,200**" → "lease assignment gain £189,000 (chapter 16) = **£489,000**"; key figures table: "TES net gains GY3 £651,200" → "£489,000". Script (s 171A section): "net gains of six hundred and fifty one thousand, two hundred pounds" → "net gains of four hundred and eighty nine thousand pounds". Contradictions entry updated ("Resolved by continuity ruling R19").
 - **R28.6 (s 171A history):** both editions already say Finance Act 2000 introduced the election and the rule was rewritten for gains and losses accruing on or after 21 July 2009 (CG45356). No change.
 - **R29:** depot let to TEL throughout (s 175(2B)); no arrangements for TWS to leave on 1 October GY3: both consistent. No change.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **ERROR (17.1), fixed in Stage 0:** R19 net gains (£489,000) in both editions; see "Continuity fixes applied".
+- No other changes. Flag 1 (s 171A with Sch 7A para 7) remains the book's reading: search 7 was inconclusive. Script 8,697 words (cap 8,800): keep any later additions word-neutral.

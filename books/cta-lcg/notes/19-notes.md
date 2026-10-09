@@ -92,3 +92,12 @@ WebSearch (11 of 12 used; standard mode; one call per numbered item):
 
 - **R24:** the chapter is the source of the framing (market value disposal by TPLC exempt under the SSE; s 192(2) shareholder-level; para 4 priority only for a corporate shareholder of the distributor; s 192(3) no degrouping charge). Flag 1 marked "resolved by R24". No text change.
 - **R29 (TAL hive-down; Tarnmoor Pumps):** consistent. No change.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **ERROR (19.1):** "The actuators hive-down", both editions. "Early in GY6, TEL decides to sell its actuators business to Brennock" contradicted R29 and the ledger: no buyer, heads of terms or arrangements existed on 1 February GY6, and Brennock first approached in summer GY6. It would also have undercut the SDLT group relief that chapters 20 and 21 teach (Sch 7 para 2(2)(b)). Both editions now say the board decided to run actuators as a separate company and review options later; no buyer was in view on 1 February; Brennock approached in the summer; the sale was on 31 December.
+- **MINOR (19.2):** reading, Part 22 effects: added that, on HMRC's guidance (CTM06110–CTM06120), the successor relieves inherited post-1 April 2017 losses under s 45A (or s 45B), rather than only by streaming. Flag 2 partly resolved.
+- Confirmed: s 1021 and s 1002 were repealed by FA 2012 s 33 (s 1020(2A) added).
+- Script words 7,422 (target 7,500 ±10%).

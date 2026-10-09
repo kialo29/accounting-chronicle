@@ -111,3 +111,13 @@ Python: `scratchpad/lcg-ch18/calc.py` (Coldwater pool and sale; matching hypothe
 - **R22.4:** earn-out receipts GY7 £2.0m (gain £0.5m) and GY8 £2.5m (gain £1.0m), CT £375,000, labelled "accepted view": consistent. No change.
 - **R28.3 (*Marren v Ingles*):** see the technical review fixes below.
 - **R29:** Coldwater's remaining 8% exempt under the **main** SSE (para 7 look-back) to about September GY9: both editions already say so. TPLC's Helmside base cost £16.0m (*Stanton v Drayton*); pool £25.0m; no s 138 clearance: consistent. No change.
+
+## Technical review fixes (review D)
+
+See `review/review-D.md` for sources.
+
+- **MINOR (18.1, R28.3):** *Marren v Ingles*: "The courts held" → "The House of Lords held" (both editions; reading adds "(the court as reported in secondary sources)"). Flag 2 partly resolved (HL per R28 and chapter 20's secondary sources; no primary source opened).
+- **MINOR (18.2):** worked example 18.1: added a note that s 110 indexes a pool by the unrounded ratio (CG51621); the book's rounded 0.489 is kept for consistency. Flag 10 resolved.
+- **MINOR (18.3):** stock dividends: CTM17005's "s 141" citation is out of date. FA 1998 s 126 substituted a new s 142 for the old ss 141–142, for share capital issued on or after 6 April 1998. Open item 25 (s 141 status) resolved.
+- **MINOR (18.4):** para 15A paragraph: added that the company sold is treated as a qualifying company for the deemed period, even before it existed (CG53080C and commentary; labelled).
+- Script words 8,690 (cap 8,800).
