@@ -35,6 +35,8 @@ Two statutes do most of the work: the **Corporation Tax Act 2009** (CTA 2009: co
 | 11 | = TTP | |
 | 12 | CT at 25% / 19% / marginal relief; RDEC set-off; payment dates (QIPs) | CTA 2010 Part 2 (rates and marginal relief; TKS ch 20); chapters 3, 10 |
 
+Spoken once, so you can hear its rhythm: begin with profit before tax; make the adjustments, each labelled with its reason; that gives the tax-adjusted trading profit before capital allowances; deduct capital allowances to reach trading profits; add the other sources; that is total profits; then the reliefs in statutory order (losses of the same period and losses brought forward, then qualifying charitable donations, and group relief last); what remains is TTP. Apply the rate, with marginal relief if it applies, set off any expenditure credit, and work out when the tax is paid. The analyst's mistake was to stop at line 1 and jump to line 12.
+
 Capital allowances belong to chapters 8 and 9, R&D to 10, intangibles to 11, loan relationships to 12, losses and group relief to 14 and 15. This chapter owns the trading adjustments, employment costs, entertaining and gifts, fines, income not otherwise charged, charitable donations, the lessee's side of long funding leases, and the rates; then it assembles TEL's GY2 computation.
 
 ---
@@ -63,6 +65,8 @@ Before any adjustment, ask whether the company trades at all. For a company the 
 | Tarnmoor plc (TPLC) | Holds shares, raises money, directs the group | Company with investment business |
 | Tarnmoor Estates (TES) | Owns and lets sites, mostly to group companies | Investment business; dealing or Part 8ZB if it bought to develop and sell |
 | Tarnmoor Finance (TFL) | Borrows on the bond market, lends to the group | Trading or non-trading loan relationships: chapter 12 |
+
+The classification is a fact-finding exercise, not a label chosen for convenience. A holding company that also provides management services does not become a trader by sending invoices; a property company that buys a site, obtains planning permission and sells to a developer may become one. In a group the tax team keeps a short note for each company explaining its classification, because HMRC enquiries into losses, the SSE and R&D claims often start with the question "does this company trade?".
 
 > **Exam lens: badges and classification.** Grade **1** (Badges of Trade; Trading income). Rarely a standalone question, but the classification drives every later line (M24 Q1: most candidates failed to identify that the parent had an investment business). Trap: computing trading profits for a holding company. Say *why* a company trades or invests before computing.
 
@@ -99,6 +103,8 @@ Before any adjustment, ask whether the company trades at all. For a company the 
 
 The 9 months run from the end of the **period of account**: Calder's 9-month AP to 31 December GY3 had its window to 30 September GY4.
 
+The November 2025 examiners set exactly this trap: an LTIP bonus unpaid at 9 months. Note that the rule bites on the *timing* of the deduction, not its amount: the £1.4m is not lost, it moves to GY3. That timing difference also produces a deferred tax asset in TEL's accounts (chapter 6). Two refinements matter at this level. First, the 9 months run from the end of the period of account, so a short period moves the deadline. Second, the rule is about remuneration: share awards have their own regime (Part 12), and contributions to trusts for employees have theirs (ss 1290–1297).
+
 > **Going further.** Check the payroll calendar against large accruals at the year end. Paying in month 9 keeps the deduction in the year of charge; paying in month 10 moves it a year, which matters if the company is about to become loss-making, change rate, or leave the group. Employer's NIC on bonuses is a separate deduction question; check the treatment applied in the accounts.
 
 ---
@@ -109,6 +115,8 @@ Employee benefit trusts (EBTs) were long used to take a deduction now and defer 
 
 - ***Macdonald v Dextra Accessories Ltd*** [2005] UKHL 47 (7 July 2005): contributions to an EBT whose trustee paid no emoluments but made loans to beneficiaries were "potential emoluments" (FA 1989 s 43(11)), so not deductible until paid out as emoluments. HMRC's guidance (IHTM42959) applies *Dextra* to contributions made **before 27 November 2002**; the statutory rule governs later ones.
 - ***RFC 2012 plc v Advocate General for Scotland*** [2017] UKSC 45 (the Rangers case; TKS chapter 3): remuneration routed through a trust is still the employee's earnings.
+
+The pattern of the story is one of Parliament and the courts closing a timing gap step by step. In *Dextra* the companies had deducted the contributions when they paid them into the trust, while the trustee made loans rather than paying salaries, so nobody was taxed on pay. The House of Lords looked at what the money was held *for*. The statutory rule now in s 1290 generalised that answer, and the 2017 amendments added two further locks: a long-stop on how long a deduction can wait, and a requirement that the employee's tax is actually paid. The result is a deduction that tracks the employee's taxable receipt.
 
 **CTA 2009 ss 1290–1297 (employee benefit contributions):**
 
@@ -137,6 +145,8 @@ Employee benefit trusts (EBTs) were long used to take a deduction now and defer 
 | Accounts charge GY2 (11.5 − 0.6 + 0.9) | | 11.8 |
 | Computation GY2: add back accrual | | +0.9 |
 | Computation GY2: deduct GY1 accrual paid | | −0.6 |
+
+**Why spreading exists.** A company might pay one enormous contribution, perhaps to repair a defined benefit deficit, and wipe out a year's profits (or move profits between years with very different rates or loss positions). Section 197 spreads the deduction for genuinely exceptional contributions, but only when two tests are both met. The examiners say it is over-applied.
 
 **Spreading (FA 2004 s 197)** applies only if **both** tests are met:
 
@@ -167,6 +177,8 @@ Employee benefit trusts (EBTs) were long used to take a deduction now and defer 
 ## Shares for staff.
 
 Under IFRS 2 (and its UK GAAP equivalents) a company charges the fair value of share options over the vesting period though no cash leaves it. **CTA 2009 Part 12** instead ties the company's deduction to the employee's gain.
+
+**Why Part 12 exists.** The IFRS 2 charge is an estimate of the value of the option at grant, spread over vesting, and bears no relation to what the employee eventually receives. Part 12 swaps it for a deduction equal to the employee's actual gain, given when the employee acquires the shares, so the company's relief mirrors the employee's income tax charge in amount and timing.
 
 | Condition (ss 1007–1009) | Detail |
 |---|---|
@@ -213,6 +225,8 @@ On **30 September GY3**, Calder Valve Engineering (Calder) closed its process va
 - **s 76:** a statutory redundancy payment, or an approved contractual payment in its place, is deductible where it would not otherwise be.
 - **s 79:** where a trade **or part of a trade** permanently ceases, an **additional payment** that would have been deductible but for the cessation is allowed, **up to 3 × the redundancy payment**; a payment after cessation is treated as made on the last day of trading. HMRC (BIM47210) says entitlement under s 76 must come first, and that payments made as part of a bargain for the sale of shares do not qualify (*George Peters & Co Ltd v Smith*, per BIM47210).
 
+**Why the cap?** On a cessation the usual justification for a payment, that it serves the continuing trade, has gone. Without s 79 an ex gratia payment made only because the business is closing might not be deductible at all; Parliament allows a generous but limited amount anyway. HMRC's manual stresses that s 79 only rescues payments that would have been deductible but for the cessation.
+
 **Calder's position.** Its trade continued; one division closed. **In our invented case** the payments were made to secure an orderly closure and protect Calder's standing with the remaining workforce, so they are deductible under the ordinary rules (ss 46, 54) as expenses of the continuing trade. That is this book's view on the invented facts. If HMRC argued the extras were made only because part of the trade ceased, s 79 would still allow additional payments up to 3 × £9,012 = **£27,036**. The £10,000 pension element follows the paid basis (FA 2004 s 196). All paid within Calder's 9-month AP to 31 December GY3, so all deductible in that AP, within the restructuring costs provided for (chapter 5).
 
 ---
@@ -253,6 +267,8 @@ On **30 September GY3**, Calder Valve Engineering (Calder) closed its process va
 - It does not apply to **annual payments** (Part 10 Ch 7) or exempt income.
 - **s 980:** commercial woodlands; **s 981:** certain gains on financial futures; **s 982:** priority rules.
 
+In a group, the sweeper earns its place at head office, where income often arises that is neither trading, property nor financing.
+
 **In our invented case:** TPLC charges Tarnmoor Vallaria SA (TVS; Vallaria is an invented country) for management services: **£2.2m in GY2**, at arm's length. TPLC does not trade; the fees are not property income or a loan relationship credit, so Tom treats them as **income not otherwise charged**. TPLC's management expenses (£8.5m) are set first against its own profits, including that income, leaving **£6.3m** to surrender to TEL; CTA 2010 s 105 limits surrender of excess management expenses to the excess over the surrendering company's own profits (chapters 13 and 15). *(Classification is the book's working assumption; bible flag 55 remains open on whether the recharge could be trading.)*
 
 > **Exam lens.** Grade **1** (Income not otherwise charged, Part 10 Ch 8). Recognition marks: name the charge and why it applies.
@@ -262,6 +278,8 @@ On **30 September GY3**, Calder Valve Engineering (Calder) closed its process va
 ## Giving to charity.
 
 **CTA 2009 s 1301B:** a qualifying charitable donation (QCD) is not deductible in computing income: add back any charge in the accounts. Relief is under **CTA 2010 Part 6**, from total profits.
+
+Relief is given from total profits rather than as a trading expense because a donation is not, in principle, an expense of earning profits: it is a use of them. The order matters most in the exam. Because QCDs come *before* group relief, a company that will claim group relief should still deduct its own donations first; because they cannot create a loss or be carried forward, a donation in a year of low profits can simply be wasted unless the excess is surrendered.
 
 | Rule | Detail | Reference |
 |---|---|---|
@@ -311,6 +329,8 @@ Gateways: a lease of **7 years or less** is a short lease and cannot be a long f
 > CT at 25%: £37,500. MR: 3/200 × (£250,000 − £150,000) = £1,500. **CT £36,000.**
 > Check: 19% × £50,000 = £9,500 + 26.5% × £100,000 = £26,500 = £36,000.
 
+The same answer comes from charging 19% on the first £50,000 and 26.5% on the next £100,000: the marginal rate applies to the slice, never to the whole.
+
 **Large groups.** TEL in GY2 has **9 associated companies** (divisor 10): limits **£5,000** and **£25,000**; every member with real profits pays 25%. Calder's 9-month AP to 31 December GY3 (divisor 10): limits **£3,750** and **£18,750**. MR questions therefore come in small groups (M26 Q4: the best answers used group relief to keep profits in the 19% band).
 
 **Straddling financial years.** Rates are set for financial years from 1 April. Profits of an AP that straddles 1 April are apportioned by time, and each FY's rates and limits applied (TKS chapter 20). *Real-calendar example (labelled):* a year ended 31 December 2026 has **90 days** in FY2025 and **275 days** in FY2026; rates and limits are identical, so the split changes nothing (say so). The split mattered when the main rate rose from 19% to 25% on 1 April 2023 (TKS chapter 20). FY2027 keeps the same rates (FA 2026 ss 11–12), so every Tarnmoor computation uses one set of figures.
@@ -358,6 +378,8 @@ Gateways: a lease of **7 years or less** is a short lease and cannot be a long f
 >
 > **Cross-check:** TEL's tax-EBITDA for CIR (chapter 28) = £42,000 + £12,000 = **£54,000**.
 
+Told in words: profit before tax of £23.5m; add back £20.0m (depreciation £16.2m, the unpaid LTIP £1.4m, unpaid pensions £0.9m, the IFRS 2 charge £1.1m, and £0.4m between the fine, hospitality, whisky and planning fees); deduct £1.5m (last year's pension accrual £0.6m, Part 12 relief £0.8m, the accounting profit on plant £0.1m). That gives £42.0m before capital allowances, already after the £12.0m of trading interest to TFL. Capital allowances of £16.0m (chapter 8 builds them line by line) leave trading profits of £26.0m, which are also total profits because TEL has no other income. Group relief of £17.92m (chapter 15) comes from three places: TPLC's excess management expenses and NTLR deficit, Brackenwell's post-acquisition loss, and consortium relief from the Helmside hydrogen joint venture. TTP is £8.08m and CT £2.02m, paid in four very large company instalments of £505,000 during the year itself (chapter 3).
+
 **The answer to the analyst (£m):**
 
 | Step | Profit | Tax at 25% |
@@ -379,6 +401,8 @@ CT is about 8.6% of profit before tax. That is not a gap in the law: it is the l
 > **Recurring items:** bonuses/LTIPs unpaid at 9 months; pensions (spreading tested, usually not triggered); staff v customer entertaining; branded drink v pens; fines and penalties; donations; trade debt v intra-group loan impairments; long funding leases; capitalised revenue expenditure (N23 Q4: handled badly); then CAs, losses, MR.
 >
 > **Habits that earn marks:** list every item, including nil adjustments, with a short reason; follow the statutory order of reliefs; keep **£ or £000 consistent** within a table (M26 examiners); apply MR properly, with associated companies and any straddle.
+>
+> **Four habits.** (1) List every item, including those needing no adjustment, with a few words of reason: nil adjustments earn marks too. (2) Follow the statutory order of reliefs. (3) Never mix £ and £000 in one table. (4) Deal with the rate properly, and never apply 26.5% to the whole profit.
 >
 > **RM Assessment Master (from October 2026):** "Calculations left in the spreadsheet and not copied to the answer box will not be marked." Build or copy the computation into the answer box.
 
