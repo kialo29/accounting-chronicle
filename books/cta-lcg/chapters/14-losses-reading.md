@@ -48,7 +48,7 @@ Other kinds of loss have their own rules, and the differences are a favourite tr
 
 | Amount | Same period | Carry back | Carry forward | Group relief (current year) |
 |---|---|---|---|---|
-| Trading loss (post-2017) | Total profits (s 37) | 12 months, total profits (s 37) | Total profits by claim, any amount (s 45A) | Yes, in full |
+| Trading loss (post-2017) | Total profits (s 37) | 12 months, total profits (s 37) | Total profits by claim within 2 years after the later period, any amount (s 45A) | Yes, in full |
 | NTLR deficit (post-2017; chapter 12) | Total profits (CTA 2009 s 463B) | 12 months, **NTLR profits only** (ss 463E–463F) | Total profits, claim within 2 years after the later period (s 463G) | Yes, in full |
 | Excess management expenses (chapter 13) | Deducted first from total profits (CTA 2009 s 1219) | **None** | As next period's expenses, by claim within 2 years; priority lost (s 1223) | Only the excess over the company's profit-related threshold (gross profits plus apportioned controlled foreign company (CFC) profits) |
 | Capital loss | Gains only | **None** | Gains only | No (s 171A instead; chapter 17) |
@@ -59,9 +59,9 @@ One more current-year route matters most of all in a group: the loss-making comp
 
 ## Relief later, by carrying forward
 
-What is not used now is carried forward. For losses of periods beginning on or after 1 April 2017, **s 45A** lets the company claim to set the carried-forward loss against its total profits of a later period. The claim can be **for any amount**, so loss can be held in reserve. Unused carried-forward losses can also be surrendered to group companies under **Part 5A** (chapter 15).
+What is not used now is carried forward. For losses of periods beginning on or after 1 April 2017, **s 45A** lets the company claim to set the carried-forward loss against its total profits of a later period. The claim can be **for any amount**, so loss can be held in reserve, and it must be made **within 2 years after the end of the period in which the loss is used** (or later if HMRC allows; CTM04135). Unused carried-forward losses can also be surrendered to group companies under **Part 5A** (chapter 15).
 
-The flexible route has exclusions. Where the trade has become small or negligible, or s 37 relief was not available for the loss in the first place (for example an uncommercial trade), the loss falls under **s 45B** and is set **automatically** against later profits of the **same trade** only. Losses of periods before 1 April 2017 follow **s 45**: same trade, automatic. *The Living Law*, chapter 22, told *Leekes Ltd v HMRC* [2018] EWCA Civ 1185 on streaming such losses when trades are combined; you need only the outline here.
+The flexible route has exclusions. Where the trade has become small or negligible, or s 37 relief was not available for the loss in the first place (for example an uncommercial trade), the loss falls under **s 45B** and is set **automatically** against later profits of the **same trade** only. Losses of periods before 1 April 2017 follow **s 45**: same trade, automatic. (Since 2017 a company may claim, within the same 2-year limit, that some or all of an s 45 or s 45B loss is **not** used in a period: CTM04135.) *The Living Law*, chapter 22, told *Leekes Ltd v HMRC* [2018] EWCA Civ 1185 on streaming such losses when trades are combined; you need only the outline here.
 
 Other carried-forward amounts follow the same pattern (table above). Capital losses carry forward against chargeable gains only.
 
@@ -237,14 +237,14 @@ Imagine a company that has run out of business but kept its tax losses. Its shar
 - **Condition A:** within **any period of 5 years beginning no more than 3 years before the change**, there is a **major change in the nature or conduct of a trade** carried on by the company; or
 - **Condition B:** the change occurs at any time after the scale of the trade has become **small or negligible** and before any significant revival.
 
-(The window was 3 years for accounting periods ending before 1 April 2017: CTM06370.)
+(The window was 3 years for accounting periods ending before 1 April 2017, and the 5-year window applies only where both the change in ownership and the major change occur on or after 1 April 2017: CTM06370; F(No.2)A 2017 Sch 4 para 72.)
 
 **Read the window slowly.** It is not "5 years after the change". A change the sellers made two years before the sale, to dress the company up, can count; so can a change the buyer makes four years after.
 
 **Meaning (s 673).** A major change includes a major change in the type of property dealt in or services or facilities provided, and a major change in customers, outlets or markets; it can result from a gradual process. HMRC's view is in **Statement of Practice 10/91** (revised 1996; CTM06380), and CTM06370 reports the cases:
 
 - *Purchase v Tesco Stores Ltd* (1984) 58 TC 46: "major" means more than significant but less than fundamental (as HMRC's manual summarises it).
-- *Williams v Peeters Picture Frames Ltd* (1983) 56 TC 436 (HMRC's spelling of the name): after a takeover the company sold through a group distributor, which sold on to the company's original customers. The Special Commissioners thought this could be a major change looked at in isolation; on the special facts, as the manual reports it, it was held not to be a major change. The end customers were unchanged; only the route to them changed.
+- *Williams v Peeters Picture Frames Ltd* (1983) 56 TC 436 (HMRC's spelling of the name; other reports give it as *Willis v Peeters Picture Frames Ltd* [1983] STC 453): after a takeover the company sold through a group distributor, which sold on to the company's original customers. The Special Commissioners thought this could be a major change looked at in isolation; on the special facts, as the manual reports it, it was held not to be a major change. The end customers were unchanged; only the route to them changed.
 
 **Consequences.** Losses made before the change cannot be carried forward against profits after it (ss 45, 45A, 45B); a loss made after the change cannot be carried back to a pre-change period (s 37). Where the change falls mid-period, the period is split into two notional accounting periods and amounts are apportioned on a time basis, or another basis if time would be unjust (s 674). Because a later change can disallow losses already used, **Chapter 8 extends HMRC's assessment time limit** (s 727). The tax function's job does not end at completion.
 
@@ -366,7 +366,7 @@ Companies in liquidation or administration are **core** and have not been examin
 | Final-year rate | Rate fixed for the year; else proposed by Budget resolution; else the penultimate year's rate (CTA 2010 s 628) | Same approach (s 630) |
 | Assessments | Liquidator may assume a completion date; if wrong, a new AP begins (s 629) | Equivalent (s 631) |
 | Repayment interest | £2,000 or less in the final period not taxable (s 633) | Same |
-| Beneficial ownership | **Lost** on commencement of winding up (*Ayerst v C & K (Construction) Ltd* 50 TC 651, as cited by HMRC) | Not generally thought to be lost (secondary commentary; facts matter) |
+| Beneficial ownership | **Lost** on commencement of winding up (*Ayerst v C & K (Construction) Ltd* [1976] AC 167, 50 TC 651, House of Lords, 21 May 1975) | Not generally thought to be lost (secondary commentary; facts matter) |
 
 **Group relief.** Group relief requires beneficial ownership of the shares in a 75% subsidiary (s 152; CTM80151). When an intermediate holding company goes into liquidation it loses beneficial ownership of its subsidiaries' shares, so, in HMRC's view, its subsidiaries are no longer grouped with it or, through it, with the rest of the group. HMRC's guidance (CTM97750) also treats the appointment of an insolvency practitioner as taking control away from the owners and breaking the group relationship; the "arrangements" rules (s 154) sit behind that view (chapter 15).
 
@@ -427,7 +427,7 @@ The choice then turns on:
 
 - **The 2017 bargain:** post-1 April 2017 losses are flexible (total profits; group surrender), restricted (Part 7ZA) and fragile (Part 14).
 - **Current year:** s 37 against total profits, then 12 months back; current year first; all or nothing; unrestricted. The three-year carry-back has gone. NTLR deficits carry back only against NTLR profits; management expenses do not carry back; capital losses never touch income.
-- **Carry forward:** s 45A against total profits by claim, any amount; s 45B and s 45 same trade, automatic.
+- **Carry forward:** s 45A against total profits by claim (2 years after the period of use), any amount; s 45B and s 45 same trade, automatic.
 - **Part 7ZA:** £5m deductions allowance; above it 50% (worked example: £14m qualifying profits allowed £9.5m relief). Current-year relief, carry-back and s 45F are outside it.
 - **Groups:** one £5m allowance; nomination signed for every CT member; GAAS by the first anniversary of the nominated company's filing date; otherwise nil for everyone.
 - **Cessation:** s 39 final-year loss back 3 years; s 45F carried-forward losses against the final 3 years, unrestricted, not before April 2017, not the loss-making period. Closing a division is not ceasing a trade.
@@ -447,7 +447,7 @@ Losses are only half of the group story. Chapter fifteen, on group relief, conso
 |---|---|---|
 | Current-year and carry-back relief | Total profits; 12 months back; current year first; unrestricted | CTA 2010 s 37 |
 | Terminal loss | Final 12 months' loss back 3 years | CTA 2010 s 39 |
-| Carry forward (post-2017) | Total profits; claim; any amount | CTA 2010 s 45A |
+| Carry forward (post-2017) | Total profits; claim within 2 years after the end of the period of use; any amount | CTA 2010 s 45A; CTM04135 |
 | Carry forward (restricted cases; pre-2017) | Same trade; automatic | CTA 2010 ss 45B, 45 |
 | Terminal relief for c/f losses | Final period and 3 years before; unrestricted; not pre-1 April 2017 periods; claim 2 years | CTA 2010 s 45F |
 | NTLR deficit | Carry back 12 months v NTLR profits only; c/f v total profits, claim within 2 years | CTA 2009 ss 463B–463I |
@@ -477,4 +477,4 @@ Losses are only half of the group story. Chapter fifteen, on group relief, conso
 
 **HMRC manuals.** CTM04130 (s 45F); CTM05030, CTM05040, CTM05120, CTM05140, CTM05180, CTM05200, CTM05260 (Part 7ZA); CTM06065 (trade transfers and terminal claims); CTM06355 (s 724A); CTM06370, CTM06380 (major change; SP 10/91); CTM06715, CTM06720, CTM06725, CTM06750, CTM06775 (Chs 2A–2E); CTM06815 (Ch 2C); CTM07505, CTM07520 (Part 14B); CTM80151 (group relationship); CTM97750 (insolvency practitioners); CG45135 (s 170(11)); SDLTM23084 (*Ayerst* cited).
 
-**Cases.** *Williams v Peeters Picture Frames Ltd* (1983) 56 TC 436 (as reported in CTM06370); *Purchase v Tesco Stores Ltd* (1984) 58 TC 46 (as summarised by HMRC); *Ayerst (Inspector of Taxes) v C & K (Construction) Ltd* 50 TC 651 (as cited by HMRC); *Leekes Ltd v HMRC* [2018] EWCA Civ 1185 (recap).
+**Cases.** *Williams v Peeters Picture Frames Ltd* (1983) 56 TC 436 (as reported in CTM06370; also reported as *Willis v Peeters Picture Frames Ltd* [1983] STC 453); *Purchase v Tesco Stores Ltd* (1984) 58 TC 46 (as summarised by HMRC); *Ayerst (Inspector of Taxes) v C & K (Construction) Ltd* [1976] AC 167, 50 TC 651 (HL, 1975); *Leekes Ltd v HMRC* [2018] EWCA Civ 1185 (recap).

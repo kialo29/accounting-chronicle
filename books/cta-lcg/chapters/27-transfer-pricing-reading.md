@@ -350,3 +350,95 @@ Financing is where TP meets the CIR, and where the money is largest. HMRC (INTM4
 > **Interaction:** an interest TP adjustment **reduces ANTIE but not tax-EBITDA** (M26 Q1 marking guide): TPLC's extra interest income reduces the group's net interest expense (chapter 28).
 
 ---
+
+## Selling the know-how
+
+A **business restructuring** is a cross-border reorganisation of functions, assets and risks within a group: moving a product line, converting a full manufacturer into a contract manufacturer, centralising IP abroad. The question is what an independent party would have been paid for giving up what it gave up.
+
+**Two rules frame it.**
+1. **One valuation standard (FA 2026 Sch 6 paras 25, 28).** Between related parties the intangibles regime normally substitutes **market value** (CTA 2009 s 845). For a **cross-border** transfer **subject to transfer pricing**, made on or after **1 January 2026**, the market value rule is disapplied and the **arm's length price** under Part 4 governs (new s 845(4ZA)–(4ZG); s 846; chapter 11).
+2. **Options realistically available.** The TPG chapter on business restructurings (Chapter IX, as reproduced by commentators; not opened here) asks what options were realistically available to each party. An independent company would not accept a deal that left it worse off than its next best option. A mere loss of future profit potential does not automatically need compensation; a transfer of something of value (rights, intangibles, a going concern) does.
+
+> **Worked example 27.8: Calder's sale to TVS and the settlement (in our invented case)**
+>
+> **The transaction (1 October GY3).** Calder sold its process-valve customer contracts and manufacturing know-how (created after 2002; no tax cost) to TVS for **£6.0m**, supported by a valuation report; the related plant went for **£1.4m** under the CA rules (TP does not reach CAs: s 213). Chapter 11: realisation credit £6.0m, CT **£1,500,000** in the 9-month AP to 31 December GY3.
+>
+> **The enquiry.** Return due 31 December GY4; Calder is in a large group, so the window ran to 31 December GY5; HMRC opened its enquiry on **1 June GY5** (chapter 3). HMRC argued for **£9.5m** (an adjustment of £3.5m, CT £875,000). Its reasons, in our story: (1) the valuation counted only the remaining terms of existing customer contracts, while an independent buyer would also pay for expected renewals; (2) an independent seller had a realistic alternative, carrying on the business itself, so would not sell for less than that alternative was worth.
+>
+> **The functional analysis.** Interviews, with Dan among the engineers (his know-how had been documented at the time of the sale), established:
+>
+> | Finding | Points towards |
+> |---|---|
+> | Development of the designs and manufacturing methods was controlled in the UK by Calder's engineers and their managers | HMRC: Calder, as developer, earns the value of the know-how |
+> | TVS performed none of those functions before the sale | HMRC |
+> | Only part of the know-how was documented; the rest (process settings, fault-finding) sat with the team, none of whom moved to Vallaria. In our invented story Dan put it plainly: the drawings tell you what to make, not how to make it run | The group: less than a going concern crossed the border; TVS rebuilt the rest at its own cost |
+> | Calder's division was closing anyway (restructuring announced 15 June GY3) | The group: shapes Calder's realistic options |
+>
+> **The settlement (GY6).**
+>
+> | | £ |
+> |---|---|
+> | Price agreed for TP purposes | 8,000,000 |
+> | Price used in the return | 6,000,000 |
+> | **TP adjustment: Calder's 9-month AP to 31 December GY3** | **2,000,000** |
+> | **Additional CT at 25%** | **500,000** |
+> | Total CT on the transfer (1,500,000 + 500,000) | 2,000,000 |
+>
+> **Interest** runs on the £500,000 from the dates the tax should have been paid: Calder was very large in the 9-month AP (QIP divisor 10), so from its instalment dates (14 June, 14 September, 14 December GY3), until paid (chapter 3 explains the instalment and late payment interest rules). The amount depends on the payment date and is not fixed in the story.
+>
+> **No penalty.** Calder kept TP records (Local File entry, the valuation report, a contemporaneous note of the functional analysis) and took reasonable care, so there was no careless inaccuracy and the FA 2007 Sch 24 para 3C presumption never arose.
+
+**The planning lesson.** A restructuring is the transaction HMRC reviews most closely, because it moves future profit for good. The defence is evidence assembled at the time: who did what, what transferred, what each party could otherwise have done. Calder's file was good enough to avoid a penalty, but not to avoid an adjustment.
+
+> **Going further: the restructuring ripple**
+> - **CIR.** The extra £2.0m is taxable profit of Calder's 9-month AP and, on the statute's reading (TIOPA s 408 excludes the realisation credit only so far as it reverses earlier debits: chapter 11), part of tax-EBITDA for that period. A services or sale TP adjustment **increases** tax-EBITDA (M26 Q1 guide). Whether and how the group's interest restriction return for GY3 is revisited is chapter 28's subject [flagged].
+> - **UTT.** If the advantage of a filing position on a price exceeds £5m and departs from HMRC's known position, consider notification (chapter 4).
+> - **UTPP.** A TP shortfall that is not self-assessed can expose a group to UTPP where its conditions are met (chapter 30). A correct return is the best protection.
+
+> **Exam lens: business restructurings**
+> - New for FA 2026 sittings: a cross-border IP transfer must be priced at **arm's length under Part 4, not s 845 market value**, and the intra-group tax-neutral rule (s 775) does not apply because the asset leaves the UK charge (chapter 11).
+> - Do not drift into a full TP essay unless asked: a paragraph on functions, assets, risks and realistic options, plus documentation, earns the marks.
+
+---
+
+## Making both sides whole
+
+A TP adjustment taxes the same profit twice unless someone gives relief on the other side. Three tools.
+
+| Tool | Rule | Reference |
+|---|---|---|
+| **Compensating adjustment** | Where only one party is advantaged and the **disadvantaged person is within UK income tax or CT** on the relevant profits, it may **claim** to be computed on the arm's length basis; the advantaged person must have returned (or been assessed) on that basis; claim generally within **2 years** of the return or relevant notice. Also for UK PE cases (s 174(1A)). A non-company income tax payer cannot claim against a company (s 174A) | ss 174, 174A, 176–178 |
+| **Balancing payment** | Conditions A–D (s 195): one party advantaged; the **disadvantaged person within UK income tax or CT** on the relevant profits; payment(s) by it to the advantaged person; sole or main reason the TP adjustment. Then the payment is ignored for tax and **not a distribution**, up to the available compensating adjustment (s 196). HMRC: **no obligation** to make one (INTM412140) | ss 195–198 |
+| **MAP and corresponding adjustment** | Treaty Art 9(2) (corresponding adjustment) and Art 25 (MAP). Under the Model's wording the case must be presented within **3 years** of the first notification of the action [TPG summary; Art 25 text not opened]. Where the UK gives relief, HMRC must give effect to a MAP solution **despite any enactment**; consequential claims within **12 months** of notification (TIOPA s 124). HMRC practice: SP 1/2018 and INTM423000 onwards | TIOPA s 124 |
+
+**Since 2026** compensating adjustments matter less, because most UK-to-UK dealings are exempt. They still matter where a s 164A condition fails (different rates, a patent box provision).
+
+**In our invented case.** TVS is Vallarian, so (a) it cannot claim under s 174, and (b) a balancing payment from TVS to Calder of £2.0m would **not** be sheltered by s 196, because Condition B (payer within UK tax) fails. The group made **no balancing payment**. TVS asked the Vallarian competent authority for relief after the settlement; in **GY7** Vallaria made a **corresponding adjustment**, treating TVS as having paid £8.0m for the know-how (how that works in Vallarian law is outside our scope). Advisers summarising HMRC's 2024-25 statistics report MAP cases concluded in about **24.8 months** on average [secondary].
+
+**Secondary adjustments.** Some countries recharacterise the cash left with the advantaged party (as a deemed dividend or loan). HMRC's manual notes that secondary adjustments can themselves cause double taxation unless the other state gives relief (INTM423090).
+
+---
+
+## Agreeing the price in advance
+
+A dispute settled after five years is expensive. For a recurring flow of real value, a group can agree the method before the periods it covers: an **advance pricing agreement (APA)** under **TIOPA 2010 Part 5**.
+
+| Point | Rule | Reference |
+|---|---|---|
+| Definition | Written agreement between a person and HMRC, following an application, settling how certain matters (including **TP between associates** and **attribution of profits to a PE**) are dealt with for covered periods; declares itself an APA | ss 218–219 |
+| Effect | The Tax Acts apply **in accordance with the agreement** for the covered periods; counterparties' s 174 claims follow it (s 222) | ss 220–226 |
+| Ending | Ceases on revocation under its terms, breach of a significant provision, or failure of a key condition; may be modified or revoked | ss 220–226 |
+| Void | If obtained by **fraudulent or negligent** misinformation | ss 220–226 |
+| Past periods | Can cover earlier periods, but not before **27 July 1999** | ss 220–226 |
+| Application | Sets out the applicant's understanding of the law, the points needing clarification and the proposal | s 223 |
+| FA 2025 s 22 | Indirect participation in financing cases applies to APA "associates", treated as always having had effect | FA 2025 s 22 |
+
+**Practice (HMRC's manual, INTM422000 onwards).** **Unilateral** APAs bind only the UK; **bilateral** APAs, negotiated with the other competent authority, bind both and are HMRC's preference. Apply ideally **before the first period** to be covered; give the **same information to both authorities** at the same time (INTM422070). Agreements usually carry **critical assumptions** and an **annual compliance report**; HMRC aims to complete within **30 months** of a formal application, and says bilateral agreements can take **36 months or longer** (INTM422090). Advisers reading HMRC's 2023 guidance report that an **open enquiry** into related matters will generally hold an application back [secondary: Simmons & Simmons]. Advisers summarising the 2024-25 statistics report an average of about **44 months** to conclude an APA [secondary].
+
+> **Worked example 27.9: the Ashlar royalty APA (in our invented case)**
+>
+> From GY4 Calder licenses the Ashlar patents to TVS at **6% of Ashlar sales**: about **£1.2m** a year (implying TVS Ashlar sales of about £20m). The royalty (1) sets Calder's taxable income; (2) drives Calder's **Patent Box** relevant IP profits (£0.9m; deduction £540,000: chapter 11), so any later adjustment would ripple into the Patent Box; (3) bears Vallarian withholding at **5%** (£60,000), so the two states must agree on the figure. Tom's team prepared a bilateral application; work could not finish while HMRC's enquiry into the know-how sale was open; once that settled, HMRC and the Vallarian authority agreed the method. The **bilateral APA covers the royalty from GY6**.
+>
+> Practical points: the TP records regulations exclude only APAs made **on or before 31 March 2023** (SI 2023/818), so Calder still documents the royalty in its Local File; the draft ICTS regulations would exempt transactions under an APA in force. An APA does not remove the work; it removes the argument.
+
+---

@@ -1,4 +1,4 @@
-# Chapter eight: Plant and machinery for larger companies
+# Chapter eight: Plant and machinery for larger companies.
 
 *In our invented group, Tarnmoor, the capital expenditure committee meets early in GY2 with a list of purchases for Tarnmoor Engineering Ltd (TEL), the main trading company. New computer-controlled machining centres for the valve factory. Chillers and a new electrical system for the test hall. Test rigs that will be hired out to customers. A second-hand milling line bought from a competitor that is closing a site. Tom Hesketh, the group's head of tax, reads the list and asks the engineers the same question about every line: is it new, or has somebody used it before?*
 
@@ -8,7 +8,7 @@ This chapter takes plant and machinery allowances to Advanced Technical depth, f
 
 ---
 
-## Why the tax code ignores depreciation
+## Why the tax code ignores depreciation.
 
 A company that buys a machine for £1m does not charge £1m against its profit that year. Its accounts spread the cost over the machine's useful life as depreciation. Depreciation is an estimate: it depends on the directors' view of useful lives, residual values and impairment, and two honest companies with identical machines can depreciate them quite differently. A tax system that followed depreciation would let every board choose its own timetable of relief.
 
@@ -30,7 +30,7 @@ For a large group, every asset has to be **sorted**: new or used; main rate or s
 
 ---
 
-## What counts, and when
+## What counts, and when.
 
 **Qualifying activities** (CAA 2001 s 15) include a trade, an ordinary UK property business (how Tarnmoor Estates Ltd (TES) claims for plant in the buildings it lets), the management of a company with investment business (how Tarnmoor plc (TPLC) claims for its head office equipment), and an employment (irrelevant for companies).
 
@@ -55,7 +55,7 @@ The examiner tested timing with plant built in stages in M24 Q6.
 
 ---
 
-## Full expensing and the 50% allowance
+## Full expensing and the 50% allowance.
 
 **The law (CAA 2001 s 45S).** An FYA is available on expenditure:
 - incurred **on or after 1 April 2023**;
@@ -64,7 +64,7 @@ The examiner tested timing with plant built in stages in M24 Q6.
 - not incurred under **disqualifying arrangements** (s 45T: broadly, arrangements with a main purpose of securing the allowance);
 - not excluded by s 46.
 
-The rate is **100%** for main rate expenditure ("full expensing") and **50%** for **special rate expenditure** (s 52(3) Table), with the balance of a 50% asset going to the special rate pool. There is **no cap**.
+The rate is **100%** for main rate expenditure ("full expensing") and **50%** for **special rate expenditure** (s 52(3) Table), with the balance of a 50% asset going to the special rate pool. That balance is allocated to the pool only after the WDA for the period of expenditure, so it first draws 6% in the next period (s 58(5)). There is **no cap**.
 
 **General exclusions (s 46)** include: (1) the final chargeable period of the qualifying activity; (2) cars; (6) plant for **leasing** (including hire), except, for s 45S, an **excluded lease of background plant or machinery for a building** (s 46(4A)); (8) s 13/13A/14 cases.
 
@@ -91,7 +91,7 @@ The analogy from *The Living Law*: the main pool is a bath draining at 14% a yea
 
 ---
 
-## The receipt you hand back
+## The receipt you hand back.
 
 **The misconception:** "selling a fully expensed machine just reduces the main pool." It does not. A disposal of an asset that had full expensing triggers a **special balancing charge**.
 
@@ -138,7 +138,7 @@ The analogy from *The Living Law*: the main pool is a bath draining at 14% a yea
 
 ---
 
-## The 40% first-year allowance
+## The 40% first-year allowance.
 
 Full expensing has a hole: plant for leasing is excluded, and so is anything bought by a business outside corporation tax. Before 2026, a company buying new plant to lease out got only the AIA (if any was left) and then the main pool.
 
@@ -146,7 +146,7 @@ Full expensing has a hole: plant for leasing is excluded, and so is anything bou
 - **any business** (no "company" condition);
 - **leasing allowed** (s 46(4B)): the lessee must use the plant wholly or almost wholly to earn income within the charge to tax, or be UK resident and not use it to a significant extent to earn untaxed non-UK income; DTR-relieved income counts as outside the charge (s 46(4C)). In short: plant leased into the UK tax net qualifies; plant leased overseas does not;
 - cars excluded (general exclusion 2);
-- the **60% balance goes to the main pool** (GOV.UK guidance);
+- the **60% balance goes to the main pool** (GOV.UK guidance), but only after the WDA for the period of expenditure, so it first draws 14% in the next period (s 58(5));
 - **no special balancing charge** on disposal: proceeds come off the main pool.
 
 **Commencement (real-calendar example).** A leasing company with a year ending **31 March 2026** buys a new machine to lease to a UK customer. If the obligation to pay became unconditional on **20 December 2025**, there is no FYA at all (full expensing excludes leasing; s 45U had not started). If it became unconditional on **5 January 2026**, the company has 40%. Section 5 decides which.
@@ -157,7 +157,7 @@ Full expensing has a hole: plant for leasing is excluded, and so is anything bou
 
 ---
 
-## 14%, and the hybrid rate
+## 14%, and the hybrid rate.
 
 **FA 2026 s 28** amends CAA 2001 s 56(1): main pool WDA **14%** for **corporation tax chargeable periods beginning on or after 1 April 2026** (income tax: 6 April 2026). The special rate (s 104D) stays at **6%**.
 
@@ -181,7 +181,7 @@ where BRD = days before 1 April 2026, ARD = days on or after, CP = days in the p
 
 The rest of the pool mechanics are as TKS chapter 12 taught: a pool of **£1,000** or less may be written off (small pools allowance); a balancing allowance on the main pool arises only in the final chargeable period.
 
-**In our invented case**, every story period is run on FY2026 rules, so Tarnmoor's pools use 14% with no hybrid rate. TEL's main pool brings forward **£39.5m**, mostly pre-full-expensing spend. After additions and disposals it stands at **£40.18m**; 14% gives **£5,625,200**. At 18% it would have been £7,232,400: the policy paper's "historic pool" in the flesh.
+**In our invented case**, every story period is run on FY2026 rules, so Tarnmoor's pools use 14% with no hybrid rate. TEL's main pool brings forward **£39.5m**, mostly pre-full-expensing spend. After the second-hand addition and the disposal it stands at **£39.7m**; 14% gives **£5,558,000**. At 18% it would have been £7,146,000: the policy paper's "historic pool" in the flesh. (The £480,000 balance of the test rigs joins the pool after the WDA: s 58(5).)
 
 > **Exam lens: rates and the 2027 tables**
 > - **Grade:** other allowances and charges **1**.
@@ -190,7 +190,7 @@ The rest of the pool mechanics are as TKS chapter 12 taught: a pool of **£1,000
 
 ---
 
-## One annual investment allowance for the whole group
+## One annual investment allowance for the whole group.
 
 The AIA (ss 38A, 51A) gives 100% relief on up to **£1,000,000** a year (proportioned for short or long periods). For companies it matters less than before, because full expensing gives 100% on new main-rate plant without limit. It still covers ground full expensing does not: second-hand plant; special rate expenditure (where 100% beats 50%); fixtures acquired with a second-hand building. **Cars** are excluded (s 38B), as is expenditure in the final chargeable period.
 
@@ -228,7 +228,7 @@ The allocation is a group decision that must reach each company's return; record
 
 ---
 
-## Cars and long-life assets
+## Cars and long-life assets.
 
 **Cars.** "Car" (s 268A) excludes motorcycles, vans and vehicles not commonly used or suitable for private use. A **main-rate car** (s 104AA) has CO2 emissions **not exceeding 50g/km**, is electric, or was first registered before 1 March 2001; every other car is special rate. Cars get **no AIA, no full expensing, no 50% and no 40% FYA**. The exception: a **new zero-emission car** has a **100% FYA** for expenditure to **31 March 2027** (CT) (FA 2026 s 30): coming next, that window closes.
 
@@ -246,16 +246,16 @@ The allocation is a group decision that must reach each company's return; record
 > | | Treated as main rate (wrong) £ | Treated as LLA, special rate (right) £ |
 > |---|---|---|
 > | FYA | 300,000 (100%) | 150,000 (50%) |
-> | WDA on balance at 6% | — | 9,000 |
-> | Relief in GY2 | 300,000 | 159,000 |
+> | Balance to special rate pool (WDA from the next period, s 58(5)) | — | 150,000 |
+> | Relief in GY2 | 300,000 | 150,000 |
 >
-> Misclassification overstates first-year relief by **£141,000** on one asset.
+> Misclassification overstates first-year relief by **£150,000** on one asset.
 
 The examiner hides long-life assets in a passing sentence about useful lives.
 
 ---
 
-## Short-life assets and software
+## Short-life assets and software.
 
 **Short-life assets (ss 83–86).** An election puts an asset in its own single asset pool, so that a sale or scrapping below TWDV gives an immediate balancing allowance. For CT the election is due **within 2 years** after the end of the chargeable period of the expenditure and is **irrevocable**. If the asset is still held at the **8th anniversary** of the end of that period, the balance moves to the main pool. Not available for cars, special rate expenditure, plant for leasing (with exceptions) or s 13/14 cases. With full expensing the election matters less: it earns its keep on main-rate assets that cannot be fully expensed, such as second-hand computer equipment beyond the AIA. A sale above TWDV gives a balancing charge.
 
@@ -278,7 +278,7 @@ HMRC's guidance (CIRD25180) says the s 815 election must be in writing, identify
 
 ---
 
-## Hire purchase and plant provided by lessees
+## Hire purchase and plant provided by lessees.
 
 **Hire purchase (s 67).** A person incurring capital expenditure under a contract providing that it **shall or may become the owner** of plant on performing the contract is treated as the owner while entitled to the benefit of the contract. When the plant is **brought into use**, all capital expenditure still to be incurred under the contract is treated as incurred **at that time**: the **whole capital element** enters the computation at once. The interest element is not capital expenditure: it is a finance cost relieved over the contract.
 
@@ -295,7 +295,7 @@ The sorting questions apply at the date the asset is brought into use: new main-
 
 ---
 
-## Part use and business entertainment
+## Part use and business entertainment.
 
 **Partly qualifying use (ss 205–208).** Where plant is used partly for other purposes, an FYA or AIA is reduced to a **just and reasonable** amount (s 205), and the asset goes into a **single asset pool** (ss 206–207) so that WDAs and balancing adjustments are reduced in the same way.
 
@@ -312,7 +312,7 @@ The sorting questions apply at the date the asset is brought into use: new main-
 
 ---
 
-## Giving effect, claiming, and VAT adjustments
+## Giving effect, claiming, and VAT adjustments.
 
 **Giving effect.**
 
@@ -335,32 +335,35 @@ The sorting questions apply at the date the asset is brought into use: new main-
 
 ---
 
-## Tarnmoor's sixteen million pounds
+## Tarnmoor's sixteen million pounds.
 
 > **Worked example: TEL capital allowances, year ended 31 December GY2 (invented; FY2026 law)**
 >
 > | | FYA / FE £ | Main pool £ | Special rate pool £ | Allowances £ |
 > |---|---|---|---|---|
-> | TWDV b/f | | 39,500,000 | 6,000,000 | |
+> | TWDV b/f | | 39,500,000 | 7,720,000 | |
+> | **Additions not qualifying for FYAs** | | | | |
+> | Second-hand milling line (no AIA allocated to TEL) | | 500,000 | | |
+> | **Disposals** | | | | |
+> | Old plant, never fully expensed (no s 59A charge) | | (300,000) | | |
+> | | | 39,700,000 | 7,720,000 | |
+> | WDA 14% | | (5,558,000) | | 5,558,000 |
+> | WDA 6% | | | (463,200) | 463,200 |
+> | | | 34,142,000 | 7,256,800 | |
 > | **Additions qualifying for FYAs** | | | | |
 > | New machining centres: full expensing 100% | 9,000,000 | | | |
 > | FE claimed | (9,000,000) | | | 9,000,000 |
 > | New chillers and electrical systems (special rate): 50% FYA | 1,200,000 | | | |
 > | FYA 50% | (600,000) | | | 600,000 |
-> | Balance to special rate pool | (600,000) | | 600,000 | |
+> | Balance to special rate pool (after the WDA: s 58(5)) | (600,000) | | 600,000 | |
 > | New test rigs for leasing to UK customers: 40% FYA | 800,000 | | | |
 > | FYA 40% | (320,000) | | | 320,000 |
-> | Balance to main pool | (480,000) | 480,000 | | |
-> | **Additions not qualifying for FYAs** | | | | |
-> | Second-hand milling line (no AIA allocated to TEL) | | 500,000 | | |
-> | **Disposals** | | | | |
-> | Old plant, never fully expensed (no s 59A charge) | | (300,000) | | |
-> | | | 40,180,000 | 6,600,000 | |
-> | WDA 14% | | (5,625,200) | | 5,625,200 |
-> | WDA 6% | | | (396,000) | 396,000 |
-> | TWDV c/f | | 34,554,800 | 6,204,000 | |
+> | Balance to main pool (after the WDA: s 58(5)) | (480,000) | 480,000 | | |
+> | TWDV c/f | | 34,622,000 | 7,856,800 | |
 > | SBA: factory extension £1,960,000 × 3% (chapter 9) | | | | 58,800 |
 > | **Total allowances** | | | | **16,000,000** |
+>
+> **Why the FYA balances come in at the foot.** CAA 2001 s 58(5) says that where an FYA is made on first-year qualifying expenditure, none of it is allocated to a pool for the chargeable period in which it is incurred. The £600,000 and £480,000 balances therefore join the pools **after** the WDA and first draw WDA in GY3. The second-hand milling line, which had no FYA, is pooled at once and draws 14% in GY2.
 >
 > TEL's tax-adjusted trading profit before capital allowances is **£42.0m** (chapter 7); after allowances of **£16.0m**, its trading profit is **£26.0m**. At 25%, the allowances are worth **£4.0m** of tax.
 
@@ -370,7 +373,7 @@ A year later, Calder's sale to TVS runs the sorting in reverse: **£1.0m** of sp
 
 ---
 
-## Planning, and how the examiner tests it
+## Planning, and how the examiner tests it.
 
 > **Going further: the tax function's year**
 > 1. **Timing.** Expenditure is incurred when the obligation becomes unconditional (s 5), so a purchase committed just before a year end can bring a year's relief forward, subject to the 4-month rule (s 5(5)) and the anti-acceleration rule (s 5(6)). For a very large company paying QIPs, relief in the current year reduces the instalments still to come: update the forecast when a large purchase is committed (chapter 3).
@@ -384,12 +387,12 @@ A year later, Calder's sale to TVS runs the sorting in reverse: **£1.0m** of sp
 > - **Frequency:** standalone M24 Q2 (15), M26 Q2 (15), N23 Q3(b); embedded in nearly every computation (M23 Q1, M24 Q6, N24 Q4, M25 Q2, N25 Q1, M26 Q4) and in property questions (M23 Q4, N25 Q4, N25 Q5).
 > - **What the examiners said:** M24 Q2: "some did not use a conventional CA layout"; M26 Q2: errors on the HP capital element; N24 Q4: the FE disposal split was the harder part; M23 Q1: disposal of FE plant gives a balancing charge.
 > - **Style:** "Calculate, with explanations"; 0.5–1 mark per item; no letter format.
-> - **Layout:** columns for FYA/FE, main pool, special rate pool, single asset pools, allowances; additions with and without FYAs; disposals (pool deduction or special balancing charge); WDAs; c/f; £ throughout (never mix £ and £000).
+> - **Layout:** columns for FYA/FE, main pool, special rate pool, single asset pools, allowances; additions without FYAs and disposals (pool deduction or special balancing charge); WDAs; then additions with FYAs, their balances transferred to the pools after the WDA (s 58(5)); c/f; £ throughout (never mix £ and £000).
 > - **Traps:** second-hand plant gets no FE; HP capital element in full when brought into use; cars excluded from AIA and FYAs (except new zero-emission cars to 31 March 2027); FE disposals give a balancing charge; LLA limit divided by associated companies; **14% not the 2026 tables' 18%**.
 
 ---
 
-## What to take away
+## What to take away.
 
 - The tax code ignores depreciation and gives statutory allowances; every allowance depends on **sorting**: new or used, main or special rate, owned, hired or leased, kept or sold.
 - **Full expensing (s 45S):** companies; new and unused; 100% main rate, 50% special rate; from 1 April 2023; permanent; not for second-hand plant, cars, leasing (except background plant), or the final period.
@@ -400,7 +403,7 @@ A year later, Calder's sale to TVS runs the sorting in reverse: **£1.0m** of sp
 - **Cars:** over 50g/km special rate; no AIA or FYA except new zero-emission cars to 31 March 2027. **LLA:** 25 years; £100,000 ÷ (1 + associates); all or nothing. **SLA:** 2-year election; 8-year cut-off. **Software:** plant, but Part 8 unless s 815 election within 2 years.
 - **HP:** whole capital element when brought into use. **Part use and entertainment:** just and reasonable reduction, single asset pool.
 - **Giving effect:** trade expense; property business expense; investment business, then management expenses. **Claims:** in the return; para 82 window (*Dundas Heritable*).
-- **TEL GY2 (invented):** total allowances **£16,000,000** (FE £9.0m; 50% FYA £0.6m; 40% FYA £0.32m; main pool WDA £5,625,200; special rate WDA £396,000; SBA £58,800).
+- **TEL GY2 (invented):** total allowances **£16,000,000** (FE £9.0m; 50% FYA £0.6m; 40% FYA £0.32m; main pool WDA £5,558,000; special rate WDA £463,200; SBA £58,800). FYA balances join the pools after the WDA (s 58(5)).
 
 The SBA in that total is the bridge to the next chapter. Plant is the apparatus; chapter 9 turns to the setting itself (buildings and the fixtures inside them) and to what happens to allowances when assets are leased or a whole trade changes hands.
 
@@ -419,6 +422,7 @@ The SBA in that total is the bridge to the next chapter. Plant is the apparatus;
 | Special rate WDA | 6% | s 104D |
 | AIA | £1,000,000; one per group (parent undertaking + subsidiaries) for periods ending in the financial year (year to 31 March); related companies | ss 38A, 51A, 51C–51G; Interpretation Act 1978 Sch 1 |
 | No double relief | Not AIA + FYA, or two FYAs | s 52A |
+| FYA balances | Pooled only after the WDA of the period of expenditure | s 58(5) |
 | Connected-party purchase | No AIA or FYA; cost capped at seller's disposal value | ss 214, 217, 218 |
 | Cars | Main rate ≤ 50g/km or electric; otherwise special rate; no AIA/FE/40%; new zero-emission 100% FYA to 31 March 2027 | ss 104AA, 268A; FA 2026 s 30 |
 | Long-life assets | ≥ 25 years; £100,000 ÷ (1 + associates); reduced for short periods; all or nothing; special rate | ss 90–102 |
@@ -432,13 +436,13 @@ The SBA in that total is the bridge to the next chapter. Plant is the apparatus;
 | Giving effect | Trade s 247; property business s 248; investment business s 253 | ss 247–253 |
 | Claims | In the return; para 82 time limits | FA 1998 Sch 18 paras 78–83 |
 | Small pools | ≤ £1,000 written off | s 56A |
-| Story: TEL GY2 | £16,000,000 total; main pool c/f £34,554,800; special rate c/f £6,204,000 | invented |
+| Story: TEL GY2 | £16,000,000 total; main pool c/f £34,622,000; special rate c/f £7,856,800 | invented |
 | Story: group AIA, year to 31 March GY3 | TES £400,000; Calder £600,000 (second-hand special rate plant, AP to 31 March GY3); TEL nil | invented |
 | Story: Calder GY3 plant sale | DV £1.4m; special balancing charges £1.0m; pool deductions £0.3m main, £0.1m special rate | invented |
 
 ## Statutory and case references
 
-- Capital Allowances Act 2001 ss 5, 11, 13, 15, 21–23, 25, 33A, 38A, 38B, 45S, 45T, 45U, 45V, 46, 51A, 51C–51G, 52, 52A, 56, 56A, 59A, 59B, 59C, 61, 62, 67, 70, 71, 72, 83–86, 90–102, 104A, 104AA, 104D, 205–208, 214, 217, 218, 234–240, 247, 248, 253, 268A, 269.
+- Capital Allowances Act 2001 ss 5, 11, 13, 15, 21–23, 25, 33A, 38A, 38B, 45S, 45T, 45U, 45V, 46, 51A, 51C–51G, 52, 52A, 56, 58, 56A, 59A, 59B, 59C, 61, 62, 67, 70, 71, 72, 83–86, 90–102, 104A, 104AA, 104D, 205–208, 214, 217, 218, 234–240, 247, 248, 253, 268A, 269.
 - Finance Act 2026 ss 28 (14% WDA; hybrid rate), 29 (40% FYA), 30 (zero-emission cars).
 - Finance (No. 2) Act 2023 (full expensing, CAA ss 45S–45T); Finance Act 2024 (permanence; ss 59A–59C as amended).
 - Corporation Tax Act 2009 ss 813, 815 (software), 1233 (excess capital allowances as management expenses).

@@ -123,6 +123,8 @@ Indexation can reduce a gain to nil but **cannot create or increase a loss** (s 
 
 **The misconception: "the SSE is a relief you claim".** It is not. There is no claim, election or time limit. If the conditions are met, the gain is not a chargeable gain and **the loss is not an allowable loss**, whether the company wants that or not (Sch 7AC para 1; TCGA 1992 s 2A(2) as HMRC's CG40200 explains). A group holding a subsidiary that has fallen in value cannot keep the loss if the conditions are met at the date of disposal. Think of the SSE as a **wall around a qualifying holding**: neither gains nor losses get out.
 
+**Why the symmetry.** A gain on shares in a trading company largely reflects profits the company has made, or will make, and those profits bear corporation tax inside the company; taxing the gain again would tax the same profits twice. If gains are kept out on that reasoning, losses must be kept out too, or groups would sell their failures and keep their successes.
+
 ---
 
 ## The substantial shareholding.
@@ -317,6 +319,8 @@ Then ss 127–131 apply as if A and B were the same company (s 135(3)), **subjec
 - A clearance is narrow: it does **not** confirm that s 135 or 136 applies, or whether loan notes are QCBs.
 - One application to HMRC's Clearance and Counteraction Team can cover s 138, s 139(5), CTA 2010 s 1091, CTA 2010 s 748 and others.
 
+**Without a clearance**, the shareholder files on the basis that s 135 applies. If HMRC disagree, they make their just and reasonable adjustments by assessment or by amending a self assessment (s 137(1C)), within the usual enquiry and discovery limits. The best evidence is the commercial record made at the time; the worst is an email like Euromoney's.
+
 **Tarnmoor.** No application was made for the Helmside exchange: Greyfell relied on the SSE, not s 135, and Northlight was not part of the deal. Tom Hesketh's board paper recorded why, so that the decision not to seek clearance was itself on the file.
 
 > **Going further: share exchanges after FA 2026.** For any share-for-share deal: (1) identify each seller's route (SSE, s 135, or neither); (2) list the arrangements "relating to" the exchange (preference shares, redemptions, pre-sale dividends, loan notes) and the tax each affects; (3) record the commercial drivers contemporaneously (*Delinian* turned on the evidence of purpose); (4) decide on clearance early; (5) remember stamp duty and SDRT on the target shares (chapter 21) and the buyer's base cost (*Stanton v Drayton*).
@@ -337,6 +341,8 @@ Then ss 127–131 apply as if A and B were the same company (s 135(3)), **subjec
 - payment of the tax by instalments under s 280 is not available for unascertainable consideration (CG14910).
 
 **Earn-outs in paper: s 138A.** An "earn-out right" is a right to be issued shares or debentures in the acquirer, unascertainable when conferred and dischargeable only by such an issue. If the exchange would be within s 135 (unaffected by s 137), the right is treated as a non-QCB security of the acquirer: the exchange is paper for paper and the later issue a conversion. The seller may **elect out** (s 138A(2A)); a company must do so **within 2 years of the end of the accounting period** in which the right is conferred; the election is **irrevocable**. A right satisfiable in cash *or* shares at the buyer's option is not an earn-out right.
+
+## The Tarnmoor earn-out.
 
 > **Worked example 18.6: the TAL earn-out (invented; £)**
 >
@@ -368,7 +374,7 @@ Then ss 127–131 apply as if A and B were the same company (s 135(3)), **subjec
 
 ---
 
-## Going further, the tax function's share file.
+## Going further, and how the examiner tests it.
 
 > **Going further: standing tasks for a large group**
 >
@@ -380,10 +386,6 @@ Then ss 127–131 apply as if A and B were the same company (s 135(3)), **subjec
 > 6. **Earn-outs**: compare a fixed contingent sum (s 48: within the original exempt disposal) with a formula-based right (*Marren*: a separate, taxable asset); compare cash with shares (s 138A helps a seller outside the SSE); agree the completion value, and the residual value after each instalment, with HMRC's Shares and Assets Valuation team (form CG34 for post-transaction checks).
 > 7. **Never plan to fail the SSE just to keep a loss** without considering s 16A.
 > 8. **Deferred tax**: an exempt gain needs no deferred tax; a chargeable earn-out right or a holding past its SSE sell-by date may.
-
----
-
-## How the examiner tests it.
 
 > **Exam lens: shares overall**
 >

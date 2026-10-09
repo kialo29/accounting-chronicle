@@ -39,13 +39,13 @@ BEPS Action 2 made two design choices that the UK adopted.
 | Term | Meaning | Reference |
 |---|---|---|
 | Tax | Income tax and CT on income; the **CFC charge**; foreign taxes on income (not sub-national); foreign CFC charges. Still lists **DPT** in the text checked (a loose end now DPT is replaced by UTPP for APs beginning on or after 1 January 2026). **Withholding tax is ignored** | s 259B (s 259B(3A) inserted by FA 2018 Sch 7) |
-| Ordinary income | Income brought into account in calculating the profits on which tax is charged, before deductions; exempt or excluded income is not ordinary income; income taxed at a reduced rate because of the instrument is "under-taxed" | s 259BC; INTM550560 |
+| Ordinary income | Income brought into account in calculating the profits on which tax is charged; exempt or excluded income is not ordinary income; income taxed at a reduced rate because of the instrument is "under-taxed" | s 259BC; INTM550560 |
 | CFC inclusion | Income that has given rise to a CFC charge (UK or foreign) may be treated as ordinary income of a relevant chargeable company (≥ 25% interest), to the extent s 259BD allows | s 259BD; INTM550570 (HMRC's view) |
 | Hybrid entity | Regarded as a person under one territory's law, while its income is treated as another person's under some territory's law (or another territory does not regard it as distinct) | s 259BE |
 | Related | Same **control group** (consolidated, participation condition, or 50% investment) **or** a **25% investment** by one in the other, or by a third person in both | ss 259NB–259ND; INTM557050 |
 | Structured arrangement | Reasonable to suppose it was **designed to secure** the mismatch, or its terms **share the economic benefit** of the mismatch between the parties; a commercial objective does not prevent this | s 259CA(7)–(8) |
 | Dual inclusion income (DII) | Income taxed in both relevant territories; restricted deductions may be set against it | Chs 5, 6, 9, 10; Ch 12A |
-| Permitted taxable period | Broadly a period beginning within 12 months after the end of the payer's period (later if just and reasonable on a claim) | s 259CA ff |
+| Permitted taxable period | Broadly a period beginning within 12 months after the end of the payer's period | Ch 3 (s 259CA ff) |
 | Order of application | Ch 4 → Ch 3 → Ch 5 → Ch 6 → Ch 7 → Ch 8 → Ch 9 → Ch 10 | s 259A(20) |
 
 **Misconception: "the hybrid rules are anti-avoidance rules with a motive test."** Between related parties they are mechanical: if the mismatch exists and arises from the hybrid feature, the counteraction follows. Purpose matters only for unrelated parties, through the structured arrangement test, and then only in the "designed to secure" sense.
@@ -54,7 +54,7 @@ BEPS Action 2 made two design choices that the UK adopted.
 
 Chapter 3 (ss 259CA–259CE) is the chapter the examiner meets most often, and it is Project Undertow's chapter.
 
-**Conditions (s 259CA).** A payment under (or connected with) a financial instrument; the payer or payee within the charge to CT; a D/NI mismatch that arises **by reason of the terms or other features of the instrument**; and payer and payee **related** (at any time from the making of the arrangement to the end of the payment period) or the arrangement **structured**.
+**Conditions (s 259CA).** A payment under (or connected with) a financial instrument; the payer or payee within the charge to CT; a D/NI mismatch that arises **by reason of the terms or other features of the instrument**; and payer and payee **related** or the arrangement **structured**.
 
 **Two cases (s 259CB).**
 - **Case 1:** the relevant deduction exceeds the ordinary income arising to the payee in a **permitted taxable period** (classic case: a coupon the payee's country treats as an exempt dividend).
@@ -181,7 +181,7 @@ The adviser's answer: draft the notes so that TFL can **defer or cancel** the co
 
 **Step 4: the CFC charge.** The Ch 9 finance company exemption needs a **qualifying loan relationship**; a creditor relationship whose ultimate debtor is a **UK company** (without a s 18A election) is not one (TIOPA 2010 ss 371IG–371IH). The coupon derives from **capital invested from the UK** (TPLC's £80m subscription), so it passes the Ch 5 gateway (s 371EC). Charge on TPLC: 25% × £5,600,000 = **£1,400,000**, less **creditable tax** including UK income tax suffered by deduction (s 371PA): **£280,000** payable.
 
-**Step 5: the interaction.** HMRC's guidance (INTM550570) says income that has given rise to a CFC charge may be treated as ordinary income of a relevant chargeable company, to the extent s 259BD allows. On that reading the CFC charge could stand in for the missing Marrovian tax and the deduction might survive. The memo did not need to settle the point (the full text of s 259BD was not checked for this book), because neither answer helps.
+**Step 5: the interaction.** HMRC's guidance (INTM550570) says income that has given rise to a CFC charge may be treated as ordinary income of a relevant chargeable company, to the extent s 259BD allows. On that reading the CFC charge could stand in for the missing Marrovian tax and the deduction might survive. The memo did not need to settle the point (read the full text of s 259BD before relying on this), because neither answer helps.
 
 **Step 6: the other gates.**
 - **Transfer pricing (Part 4):** would an independent finance company issue perpetual notes at 7% at all? HMRC's view is that Part 4 and Part 6A are applied together, with Part 6A built into both the actual and the arm's length provision, and then Part 6A checked again; companies cannot choose the order (INTM550080, INTM550085).
@@ -297,4 +297,4 @@ The question was which country taxes a payment two countries describe differentl
 - ITA 2007 ss 874, 882, 888A; Qualifying Private Placement Regulations 2015 (SI 2015/2002); FA 2026 ss 5–6, Sch 1 para 29.
 - *BlackRock HoldCo 5, LLC v HMRC* [2024] EWCA Civ 330.
 - OECD, *Neutralising the Effects of Hybrid Mismatch Arrangements, Action 2: 2015 Final Report* (5 October 2015) (not opened; referred to in s 259KA(7D)).
-- HMRC manuals and forms: INTM550060, INTM550080, INTM550085, INTM550086A–E, INTM550560, INTM550570, INTM551170, INTM555240, INTM557050, INTM561720; CTM15515; CFM37840, CFM37850, CFM38165; SAIM9360; CT600B supplementary pages and guidance.
+- HMRC manuals and forms: INTM550080, INTM550085, INTM550086A–E, INTM550560, INTM550570, INTM551170, INTM555240, INTM557050, INTM561720; CTM15515; CFM37840, CFM37850, CFM38165; SAIM9360; CT600B supplementary pages and guidance.

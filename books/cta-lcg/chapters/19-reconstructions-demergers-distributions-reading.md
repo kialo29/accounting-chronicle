@@ -41,7 +41,7 @@ C and D stop a company issuing paper that can later be cashed in as a disguised 
 > | **Category E distribution (excess)** | **500,000** |
 > | Deduction lost by the payer at 25% | 125,000 |
 >
-> The £500,000 is not deductible for the payer (CTA 2009 s 1305) and, being a para E distribution, is not exempt for a recipient within CT (CTA 2009 s 931D(b)). The £700,000 commercial element remains interest under the loan relationship rules.
+> The £500,000 is not deductible for the payer (CTA 2009 s 1305) and, being a para E distribution, is not exempt for a recipient within CT (CTA 2009 s 931D). The £700,000 commercial element remains interest under the loan relationship rules.
 
 **Transfers at an undervalue (s 1020).** If a company transfers an asset (or a liability) to a member and the market value of the benefit exceeds the new consideration given, the excess is a distribution. The old exception for transfers between a company and its group members (s 1021) was **repealed by FA 2012 s 33**, so an undervalue transfer from a subsidiary up to its parent is a distribution of the shortfall even inside a group. Section 1020 looks only upwards, at members: a transfer between **sister companies** is outside it, although the gains rules (chapter 17) and transfer pricing (chapter 27) must still be checked.
 
@@ -118,9 +118,9 @@ Large groups accumulate dormant companies the way old houses accumulate keys. Ea
 
 ## Moving a trade inside the group
 
-Now we move from closing companies to reshaping them. A group often moves a trade from one company to another: tidying up after an acquisition, or preparing a business for sale. If every such move were a cessation and a fresh start, the old company would face balancing charges on its plant, and its unused trading losses would die with the trade. **CTA 2010 Part 22 Chapter 1 (ss 938–953)** prevents that for transfers within common ownership. It applies **automatically**: no claim is needed.
+Now we move from closing companies to reshaping them. A group often moves a trade from one company to another: tidying up after an acquisition, or preparing a business for sale. If every such move were a cessation and a fresh start, the old company would face balancing charges on its plant, and its unused trading losses would die with the trade. **CTA 2010 Part 22 Chapter 1** prevents that for transfers within common ownership. It applies **automatically**: no claim is needed.
 
-**The ownership condition (s 941).** (a) On the transfer, **or at some time in the 2 years beginning immediately after it**, a **75% interest** in the transferred trade belongs to certain persons; and (b) at some time in the **1 year ending immediately before** the transfer, a 75% interest belonged to **the same persons**. A trade carried on by a company is treated as belonging to the company's owners, so inside a group the test is normally met through the common parent (s 942). Because limb (a) can be met **at the moment of transfer**, a later sale of the successor does not undo it: the basis of the classic hive-down.
+**The ownership condition (s 941).** (a) On the transfer, **or at some time in the 2 years beginning immediately after it**, a **75% interest** in the transferred trade belongs to certain persons; and (b) at some time in the **1 year ending immediately before** the transfer, a 75% interest belonged to **the same persons**. A trade carried on by a company is treated as belonging to the company's owners, so inside a group the test is normally met through the common parent. Because limb (a) can be met **at the moment of transfer**, a later sale of the successor does not undo it: the basis of the classic hive-down.
 
 **The tax condition (s 943).** Throughout the relevant period, the trade is carried on by a company **within the charge to CT** on it.
 
@@ -228,7 +228,7 @@ Until recently s 139 carried a narrow anti-avoidance rule (bona fide commercial 
 - **New s 139(4A)–(4D):** where **the main purpose, or one of the main purposes**, of the arrangements is to reduce or avoid **capital gains tax, corporation tax or income tax**, the advantage is counteracted by **just and reasonable adjustments**, which may include disapplying s 139.
 - **Income tax is new.** Section 137 (share exchanges and s 136 reconstructions; FA 2026 s 37) covers CGT and CT only (chapter 18). Section 139 now reaches income tax as well.
 - **Clearance (s 139(5)):** on application by the **acquiring** company, using the s 138(2)–(5) procedure: HMRC have 30 days to reply or ask for particulars; on refusal the applicant may require the matter to go to the tribunal; clearance is void without full disclosure.
-- **Recovery:** tax may be assessed on the acquirer if the transferor is wound up, and recovered from holders of the assets if unpaid 6 months after it is due (s 139(6)–(7), (10)).
+- **Recovery:** tax may be assessed on the acquirer if the transferor is wound up, and recovered from holders of the assets if unpaid 6 months after it is due (s 139).
 - **Commencement:** arrangements involving the transfer of assets of a business **on or after 26 November 2025**, with transitional protection where a clearance application was made before that date, clearance was given, and the transfer took place before 26 January 2026 or within 60 days of the notification if later.
 - **CIS (awareness):** FA 2026 s 36 recast TCGA s 103K in the same way, also covering income tax.
 
@@ -273,7 +273,7 @@ The conditions are lettered A to M. They fall into four groups, each with a reas
 - **E:** the shares distributed are **not redeemable**, and are the **whole or substantially the whole** of the distributing company's holding of the subsidiary's ordinary share capital and confer the whole or substantially the whole of its voting rights. You cannot demerge half a subsidiary.
 - **F:** **after** the distribution the distributing company is a **trading company or the holding company of a trading group**, except where (i) it is itself a 75% subsidiary (s 1082(3)), or (ii) it distributes two or more 75% subsidiaries and is then dissolved with no net assets available for distribution (s 1082(4)).
 
-**Indirect demerger (s 1083), conditions G–K (outline).** The transferee companies issue shares only to the distributing company's members; they take the whole or substantially the whole of the transferred trade or holding; the distributing company retains no more than a minor interest and (where it transfers shares) the transferee holds the whole or substantially the whole of the subsidiary; and the transferee carries on the business rather than passing it on. (Learn the purpose of each limb; the exact lettering of G–K is not reproduced here.)
+**Indirect demerger (s 1083), conditions G–K (outline).** The transferee companies issue shares only to the distributing company's members; they take the whole or substantially the whole of the transferred trade or holding; and they carry on the business rather than simply passing it on. Learn the purpose of the group of conditions; the exact wording of each lettered limb is in s 1083 and is not reproduced here.
 
 **Distributing company itself a 75% subsidiary (conditions L and M, s 1085, outline).** The demerged shares must travel up and out through further exempt distributions until they reach the members of the top company: a demerger cannot leave them stranded halfway up a group.
 
@@ -285,7 +285,7 @@ The conditions are lettered A to M. They fall into four groups, each with a reas
 
 **One application, many clearances.** HMRC's Clearance and Counteraction Team accepts a single application covering, for example, CTA 2010 s 1091, TCGA ss 138 and 139(5), and the transactions in securities clearance (CTA 2010 s 748; ITA 2007 s 701). Clearance binds only on full and accurate disclosure, and it does not confirm matters outside the provision cleared.
 
-**Chargeable payments (ss 1086, 1088).** For **5 years** after an exempt distribution, a **chargeable payment** is taxed as **income** (IT or CT) of the recipient and is not deductible for the payer. Broadly, it is a payment by a company concerned in the demerger to its members, in connection with their shares, that is not made for genuine commercial reasons or is part of a tax avoidance scheme; distributions and intra-group payments are excluded. A chargeable payment within 5 years also **revives the s 179 degrouping charge** (TCGA s 192(4)).
+**Chargeable payments (ss 1086, 1088).** For **5 years** after an exempt distribution, a **chargeable payment** is taxed as **income** (IT or CT) of the recipient. Broadly, it is a payment by a company concerned in the demerger to its members, in connection with their shares, that is not made for genuine commercial reasons or is part of a tax avoidance scheme; distributions and intra-group payments are excluded. A chargeable payment within 5 years also **revives the s 179 degrouping charge** (TCGA s 192(4)).
 
 **Returns.** The distributing company must make a **return to HMRC within 30 days** of an exempt distribution, and a payer must report any payment that is, or may be, a chargeable payment within 30 days unless cleared (CTM17260, CTM17290).
 
@@ -460,7 +460,7 @@ Chapter twenty, on buying and selling companies, follows Tarnmoor Actuators out 
 
 ## Statutory and case references
 
-**Statute.** CTA 2010 Part 15 (ss 731–751, especially 732–739, 743–750); Part 22 Ch 1 (ss 938–953, especially 941–945, 948, 951–952) and Ch 2 (s 954); Part 23 (ss 1000, 1015, 1020, 1021 (repealed), 1022, 1027A, 1030, 1030A, 1030B) and Ch 5 (ss 1073–1099, especially 1074–1078, 1081–1086, 1088, 1091–1094). CTA 2009 Part 9A (ss 931A–931S) and s 1305. TCGA 1992 ss 17, 122, 126–130, 136, 137, 139, 103K, 171, 179, 192, Sch 5AA, Sch 7AC paras 3, 4, 15A, 19. CAA 2001 ss 265–267, 561. FA 2012 s 33; SI 2012/266; FA 2026 ss 36–38. ITA 2007 Part 13 Ch 1 (s 701). Companies Act 2006 ss 1000, 1003.
+**Statute.** CTA 2010 Part 15 (ss 731–751, especially 732–739, 743–750); Part 22 Ch 1 (especially ss 939–945, 948, 951–952) and Ch 2 (s 954); Part 23 (ss 1000, 1015, 1020, 1021 (repealed), 1022, 1027A, 1030, 1030A, 1030B) and Ch 5 (ss 1073–1099, especially 1074–1078, 1081–1086, 1088, 1091–1094). CTA 2009 Part 9A (ss 931A–931S) and s 1305. TCGA 1992 ss 17, 122, 126–130, 136, 137, 139, 103K, 171, 179, 192, Sch 5AA, Sch 7AC paras 3, 4, 15A, 19. CAA 2001 ss 265–267, 561. FA 2012 s 33; SI 2012/266; FA 2026 ss 36–38. ITA 2007 Part 13 Ch 1 (s 701). Companies Act 2006 ss 1000, 1003.
 
 **HMRC manuals and guidance.** CTM06210, CTM06250, CTM06280 (relevant liabilities restriction); CTM06065 (trade transfers and terminal relief); CTM17250, CTM17260, CTM17270, CTM17280, CTM17290 (demergers); CTM36220 (dissolution distributions); CTM36800–CTM36841 (transactions in securities, especially CTM36810); CG52631; Statement of Practice 13 (1980); "Apply for statutory clearance for a transaction" (GOV.UK); *Modernising the taxation of distributions and repayments of capital from companies* (consultation, 23 June 2026).
 
