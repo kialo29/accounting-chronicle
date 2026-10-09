@@ -2,7 +2,7 @@
 
 # Chapter fifteen: Group relief, consortia and joint ventures.
 
-On 27 October 2021, a Budget day, a set of rules written to satisfy European law quietly left the British statute book. Since 2006 a UK company had been able, in narrow circumstances, to claim relief for the losses of a subsidiary resident elsewhere in the European Economic Area (CTA 2010 Part 5 Ch 3, ss 111–128). Those rules were the long shadow of the *Marks and Spencer* litigation (*HMRC v Marks and Spencer plc* [2013] UKSC 30 and [2014] UKSC 11), which *The Living Law* (TKS), chapter 24, told. **Finance Act 2022 s 24(3)** repealed Chapter 3 with effect from that Budget day. In substance, HMRC's manual (CTM81502) now says that relief for the overseas losses of group companies resident in the EU, for periods after 26 October 2021, is no longer available.
+On 27 October 2021, a Budget day, a set of rules written to satisfy European law quietly left the British statute book. For more than a decade a UK company had been able, in narrow circumstances, to claim relief for the losses of a subsidiary resident elsewhere in the European Economic Area (CTA 2010 Part 5 Ch 3, ss 111–128). Those rules were the long shadow of the *Marks and Spencer* litigation (*HMRC v Marks and Spencer plc* [2013] UKSC 30 and [2014] UKSC 11), which *The Living Law* (TKS), chapter 24, told. **Finance Act 2022 s 24(3)** repealed Chapter 3 with effect from that Budget day. In substance, HMRC's manual (CTM81502) now says that relief for the overseas losses of group companies resident in the EU, for periods after 26 October 2021, is no longer available.
 
 So the border is back where it began. Losses move between companies inside the UK tax net, and almost nowhere else. And even inside it they do not flow freely. They move one company at a time, by claim and by consent, measured period by period, and they stop dead when the ownership tests fail or when someone has agreed to sell.
 
@@ -77,7 +77,7 @@ Two companies are in the same group for group relief if one is the **75% subsidi
 
 | Family | Amounts | Rule |
 |---|---|---|
-| A: surrender in full | (a) trading losses; (b) excess capital allowances; (c) non-trading loan relationship deficits | Surrenderable whether or not the company has other profits of its own (s 99(2)–(3)) |
+| A: surrender in full | (a) trading losses; (b) excess capital allowances; (c) non-trading loan relationship deficits | Surrenderable whether or not the company has other profits of its own (s 99) |
 | B: surrender only above the **profit-related threshold** | (d) excess qualifying charitable donations; (e) UK property business losses; (f) management expenses; (g) non-trading losses on intangible fixed assets | Only so far as their total exceeds the threshold, and only the excess (s 105) |
 
 Two features of the surrendering side:
@@ -217,7 +217,7 @@ If groups ended only at completion, a seller could agree to sell a loss-making s
 > **Exam lens: group relief**
 >
 > - **Grade:** group relief **1** (core), consortia included for LCG; non-resident and dual resident companies **1**.
-> - **Past appearances:** **N24 Q2** (20 marks: group and consortium relief over two years; joining by conditional contract and arrangements; leaving; a holding company in liquidation; a DRIC; preference-share equity holder tests; the link company; consortium limits). Examiners: "poor"; wrong joining and leaving dates, DRIC bar missed, liquidation missed, consortium % applied to the member's loss instead of the consortium company's profit, trading requirement and link company missed. **M24 Q6** (20: a two-company computation with NTLR deficit group relief: losses well done). **M26 Q4** (20: group relief "to minimise long-term costs"; the best answers used it to keep a profit in the 19% band; keep £ and £000 consistent).
+> - **Past appearances:** **N24 Q2** (20 marks: group and consortium relief over two years; joining by conditional contract and arrangements; leaving; a holding company in liquidation; a DRIC; preference-share equity holder tests; the link company; consortium limits). Examiners' verdict: poor; wrong joining and leaving dates, DRIC bar missed, liquidation missed, consortium % applied to the member's loss instead of the consortium company's profit, trading requirement and link company missed. **M24 Q6** (20: a two-company computation with NTLR deficit group relief: losses well done). **M26 Q4** (20: group relief "to minimise long-term costs"; the best answers used it to keep a profit in the 19% band; keep £ and £000 consistent).
 > - **Style:** "Calculate, with explanations" / "Explain"; technical prose and computations, no letter format; 0.5–1 mark per point.
 > - **Layout:** a time line; for each claim, the overlapping period, surrenderable amount for it, claimant's available total profits for it, relief = lower; then the claimant's computation with group relief last.
 > - **Traps:** adding indirect percentages; forgetting the profits and assets tests; family B amounts surrendered in full; the CFC element of the s 105 threshold; completion v exchange dates; ignoring arrangements; mixing £ and £000.
@@ -264,7 +264,7 @@ The first restriction explains TPLC's **stranded** £825,000 a year (book's read
 
 **1. Non-resident companies with a UK PE.** A non-UK resident company trading in the UK through a PE is UK related and can surrender and claim, but (in outline: s 107 not re-read) it can surrender only losses of its UK PE activities that are not deductible or otherwise allowable against non-UK profits for foreign tax. The UK will not relieve a loss another country is also relieving.
 
-**2. EEA losses: repealed.** CTA 2010 Part 5 Ch 3 (ss 111–128) let a UK parent claim the losses of an EEA-resident subsidiary where every possibility of relief abroad was exhausted (the *Marks and Spencer* "no possibilities" test). FA 2022 s 24(3) repealed it with effect from **27 October 2021** (CTM81502; policy paper "Abolition of cross-border group relief": the UK "is no longer required" to maintain the rules after leaving the EU). EEA-resident companies with UK PEs are now treated like other non-residents.
+**2. EEA losses: repealed.** CTA 2010 Part 5 Ch 3 (ss 111–128) let a UK parent claim the losses of an EEA-resident subsidiary where every possibility of relief abroad was exhausted (the *Marks and Spencer* "no possibilities" test). FA 2022 s 24(3) repealed it with effect from **27 October 2021** (CTM81502; the policy paper "Abolition of cross-border group relief" explains that the UK was no longer required to keep the rules after leaving the EU). EEA-resident companies with UK PEs are now treated like other non-residents.
 
 **3. Dual resident investing companies (s 109).** A UK resident company also within a non-UK tax charge (by incorporation, place of management or other residence criteria) cannot surrender if, in outline, it is not a trading company or its trade is mainly acquiring and holding shares or making loans and similar (conditions A–C). The fear is "double dipping": one interest cost relieved in two countries. A DRIC also cannot receive assets at no gain, no loss (TCGA 1992 s 171(2)(d); chapter 17). The examiners reported after N24 that many candidates missed the bar.
 
@@ -340,7 +340,7 @@ Think of the consortium as a shared allotment: each member takes produce only in
 
 **Helmside GY4 (invented).** Helmside's first profit was **£2.5m**. It first used its own carried-forward losses of **£1.2m** (s 45A; within its own £5m deductions allowance, since a consortium company is not in a 75% group: chapter 14), leaving available total profits of **£1.3m**. TPLC had surplus current-year management expenses, and the shareholders' agreement asks members to offer surplus relief to Helmside at full value (25p per £). On a **full year**, the ceiling would be 45% × £1.3m = **£585,000**. Section 155 changes that: see the next section.
 
-**Anti-avoidance (ss 146A–146B).** For claims for APs beginning on or after **12 July 2010**, relief is **halved** where arrangements prevent a member from controlling the consortium company and a main purpose is a tax advantage for the member (CTM80525). The target is a structure that keeps a member just short of control so that relief flows as consortium relief. The Upper Tribunal applied s 146B in *HMRC v South Eastern Power Networks plc* [2019] UKUT 367 (TCC) (as summarised in HMRC's manual commentary and the professional press; later history not checked).
+**Anti-avoidance (ss 146A–146B).** For claims for APs beginning on or after **12 July 2010**, relief is **halved** where arrangements prevent a member from controlling the consortium company and a main purpose is a tax advantage for the member (CTM80525). The target is a structure that keeps a member just short of control so that relief flows as consortium relief. The Upper Tribunal applied s 146B in *HMRC v South Eastern Power Networks* [2019] UKUT 367 (TCC) (as summarised in HMRC's manual commentary and the professional press; later history not checked).
 
 ---
 
@@ -391,7 +391,7 @@ The examiners asked in **M23 Q5** to compare a 75% subsidiary with a 65% one; so
 |---|---|---|---|
 | Taxpayer | JV company | JV company | Each partner on its share |
 | Losses | Group relief to the investor's group, no proportion limit; the minority partner gets none | Each corporate member its ownership proportion; relief can also flow down | Each corporate partner's share is its own loss |
-| Assets moving in | No gain, no loss (gains group: chapter 17) | Market value; no gains group | Fractional-share rules (chapter 16) |
+| Assets moving in | No gain, no loss (gains group: chapter 17) | Market value; no gains group | No gains group; each partner taxed on its share of partnership gains |
 | Exit | Degrouping charges (chapter 17); arrangements | Arrangements (s 155); s 146A–146B | Partnership disposal rules |
 | Dividends received | Exempt (subsidiary) | Exempt: the **40/55 JV class** or ordinary shares class | Not applicable |
 
@@ -529,4 +529,4 @@ Losses are not the only thing a group moves. Chapter sixteen turns to company ga
 
 **HMRC manuals.** CTM80142; CTM80170, CTM80181, CTM80185, CTM80190, CTM80195, CTM80205, CTM80206; CTM80225, CTM80260, CTM80265; CTM80520, CTM80525, CTM80540, CTM80585, CTM80605, CTM80625, CTM80630, CTM80696; CTM81502; CTM82030, CTM82170, CTM82505–CTM82525; CTM97020, CTM97060; COM53100; CIRD89870.
 
-**Cases.** *HMRC v Marks and Spencer plc* [2013] UKSC 30; [2014] UKSC 11 (recap). *HMRC v FCE Bank plc* [2012] EWCA Civ 1290. *Farnborough Airport Properties Co v HMRC* [2019] EWCA Civ 118 (UT [2017] UKUT 394 (TCC)). *HMRC v South Eastern Power Networks plc* [2019] UKUT 367 (TCC).
+**Cases.** *HMRC v Marks and Spencer plc* [2013] UKSC 30; [2014] UKSC 11 (recap). *HMRC v FCE Bank plc* [2012] EWCA Civ 1290. *Farnborough Airport Properties Co v HMRC* [2019] EWCA Civ 118 (UT [2017] UKUT 394 (TCC)). *HMRC v South Eastern Power Networks* [2019] UKUT 367 (TCC) (as summarised by HMRC and the professional press).

@@ -37,7 +37,7 @@ The rest of the code follows the same pattern: a relief because the group is one
 **Section 170** builds the group from the top down:
 
 1. A **principal company**, its **75% subsidiaries**, their 75% subsidiaries and so on down the chain (75% = beneficial ownership of three quarters of the ordinary share capital, directly or indirectly).
-2. Every member must also be an **effective 51% subsidiary** of the principal company: the principal company must be beneficially entitled to **more than 50% of the profits available for distribution** and **more than 50% of the assets on a winding up** (s 170(7)).
+2. Every member must also be an **effective 51% subsidiary** of the principal company: the principal company must be beneficially entitled to **more than 50% of the profits available for distribution** and **more than 50% of the assets on a winding up**.
 3. A 75% subsidiary cannot itself be a principal company (subject to s 170(5)); a company can be in **only one** gains group, with tie-breakers in s 170(6).
 4. **Residence is irrelevant to membership** (s 170(2)): overseas companies are members, although what they can do with an asset depends on the UK charge (next section).
 5. A company does not leave merely because it or another member goes into liquidation (s 170(11); chapter 14).

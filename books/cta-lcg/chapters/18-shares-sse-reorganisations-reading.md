@@ -385,7 +385,7 @@ Then ss 127–131 apply as if A and B were the same company (s 135(3)), **subjec
 > 5. **Deals in shares**: decide early whether any seller relies on s 135; build s 138 clearance into the timetable; assume the 5% exception has gone.
 > 6. **Earn-outs**: compare a fixed contingent sum (s 48: within the original exempt disposal) with a formula-based right (*Marren*: a separate, taxable asset); compare cash with shares (s 138A helps a seller outside the SSE); agree the completion value, and the residual value after each instalment, with HMRC's Shares and Assets Valuation team (form CG34 for post-transaction checks).
 > 7. **Never plan to fail the SSE just to keep a loss** without considering s 16A.
-> 8. **Deferred tax**: an exempt gain needs no deferred tax; a chargeable earn-out right or a holding past its SSE sell-by date may.
+> 8. **Deferred tax**: where a sale would be exempt, there is usually no deferred tax on the holding; a chargeable earn-out right or a holding past its SSE sell-by date may.
 
 > **Exam lens: shares overall**
 >

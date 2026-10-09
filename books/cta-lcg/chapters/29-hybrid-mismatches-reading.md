@@ -96,7 +96,22 @@ Turn the coin over: a UK company receives a payment that its foreign payer deduc
 
 **Answer technique.** Check both ends of the payment: how the payer's country treats it, how the payee's country treats it, and which country's rules respond first.
 
+> **Worked example 29.5: the UK as payee (labelled hypothetical, not story)**
+>
+> UK Co (large) holds preference-style shares in a related company in Territory Y. Territory Y treats the instrument as debt and allows its company a deduction for a **£500,000** "dividend". The UK would otherwise treat the receipt as an exempt distribution.
+>
+> | £ | Amount |
+> |---|---|
+> | Receipt | 500,000 |
+> | Exempt under Part 9A? | No: a deduction is allowed to a resident of Territory Y (CTA 2009 s 931D(c)) |
+> | Taxable in UK Co | 500,000 |
+> | CT at 25% | 125,000 |
+>
+> The mismatch is closed from the payee's side by the dividend exemption's linking rule. If instead the receipt had been within Part 6A Ch 3 and Territory Y had not counteracted, the secondary response (s 259CE) would bring the relevant amount into charge. Either way, the UK answer names both territories and both rules.
+
 ## Hybrid entities, payees and establishments.
+
+The next group of chapters deals with mismatches caused not by the instrument but by the **entity in the middle**: a payer that one country sees as a person and another sees through; a payee that nobody taxes because each country thinks the other will; a branch that one country exempts and the other does not recognise. The questions are always the same: who is the hybrid, which territory deducts, which territory fails to include, and who responds first.
 
 | Chapter | Mismatch | Primary response | Secondary response | Reference |
 |---|---|---|---|---|
@@ -143,6 +158,8 @@ The pattern is the same in every chapter: **identify the hybrid element, measure
 *Illustration (all countries invented):* UK Co borrows from a group finance company in country A, whose hybrid rules match the OECD's. The finance company funds itself with a hybrid instrument from a group company in country B, which has no hybrid rules. Country A can counteract that mismatch itself, so the UK does nothing. If country A could not, the UK deduction would be at risk to the extent it funds the mismatch.
 
 **FA 2021 Sch 7** narrowed Chapter 11, generally for payments and periods from **10 June 2021** (Royal Assent): it now bites only on a mismatch **not capable of counteraction** under the law of an **OECD mismatch compliant** territory (s 259KA(7)–(7D)). The same package excluded non-taxable income of entities taxed through others from "foreign tax" (s 259B(3ZA)), added the **relevant debt relief circumstances** carve-out (ss 259NEB–259NEF, retrospective), Chapter 12A, and Chapter 13A (transparent funds). It was the UK correcting its own over-reach. **Part 6A was not amended by FA 2025 or FA 2026.**
+
+**Why the narrowing mattered.** As first enacted, Chapter 11 could reach a mismatch that another territory's own hybrid rules were already dealing with, which sits uneasily with the BEPS aim of neutralising each mismatch once and only once. The 2021 test asks a narrower question: could the mismatch be counteracted under the law of a territory whose hybrid rules match the OECD's? If so, the UK leaves it alone.
 
 Chapter 12 (ss 259LA–259LB) adjusts counteractions where suppositions prove wrong or income arrives late; Chapter 13 (ss 259MA–259MD) is a targeted anti-avoidance rule.
 
@@ -201,6 +218,12 @@ The adviser's answer: draft the notes so that TFL can **defer or cancel** the co
 > At the 2027/28 withholding rate of 22% the withholding is £1,232,000 and the net CFC charge £168,000; the totals in C and D are unchanged. Withholding is a cash cost at the time of payment; the credit arrives with TPLC's CFC charge.
 
 The best case was break-even; the worst a loss of **£1.4m a year**, plus breaking the group's published tax strategy (it does not use tax avoidance schemes: chapter 4). The board rejected Undertow in one meeting. The minute gave three reasons: it could not beat doing nothing; it would create an annual dispute on several regimes at once; it conflicted with the tax strategy. TCM went on lending to TVS; TFL's funding stayed plain.
+
+> **Exam lens: cross-border intra-group financing**
+>
+> - **Grade:** hybrids 1; CFCs 1; TP 1; CIR 1; loan relationships (including s 441) 1; deduction of income tax 1 (2026 grid).
+> - **What a marker rewards:** one point per regime spotted and explained, with the amount: D/NI denial (£1.4m), withholding (£1.12m and the absence of exemptions), the CFC charge and creditable tax (£1.4m less £1.12m), TP, CIR, s 441, and the debt/equity question. A recommendation if asked.
+> - **Traps:** treating the CFC Ch 9 75% exemption as automatic (a UK debtor is not a qualifying loan relationship); forgetting that UK income tax withheld is creditable tax for the CFC charge; netting the CFC charge against the deduction denial without explaining the s 259BD point; DPT/UTPP on a loan.
 
 **How Tom built the memo.** He did not stop at the first problem. A scheme that fails on one ground invites a fix; one that fails on six does not. An examiner rewards a cross-border financing answer the same way: each regime is a separate set of marks.
 

@@ -1,4 +1,4 @@
-# Chapter 9: Buildings, fixtures, leasing and successions
+# Chapter nine: Buildings, fixtures, leasing and successions.
 
 On 1 September in Group Year Three (GY3), Tarnmoor Engineering Ltd (TEL) takes the keys to a new distribution centre. Our invented group, Tarnmoor, is a listed engineering group, and everything about it in this book is made up for teaching. The building is brand new, bought from the developer who built it, for £5.2m. To the tax system it is at least three things, and possibly four.
 
@@ -10,7 +10,7 @@ This chapter is about the assets that sit between land and machinery, and about 
 
 ---
 
-## One building, four tax assets
+## One building, four tax assets.
 
 Start with the price. A building purchase contract usually gives one figure; the tax rules need it split, because each piece follows a different regime. Where property is sold together, the price is apportioned on a **just and reasonable** basis, whatever the parties call each part (CAA 2001 s 562). A contractual label does not bind HMRC if it is not just and reasonable.
 
@@ -34,7 +34,7 @@ For TEL's distribution centre, the developer's price is split in our invented ca
 
 ---
 
-## Why buildings got an allowance again
+## Why buildings got an allowance again.
 
 For years before 2018, most new commercial buildings in the UK earned no capital allowance: a company could claim for the machines inside a factory and for some fixtures, but the shell was relieved only on sale, against a gain. The Budget of 29 October 2018 filled that gap with the SBA.
 
@@ -49,7 +49,7 @@ For years before 2018, most new commercial buildings in the UK earned no capital
 
 ---
 
-## What qualifies, and what does not
+## What qualifies, and what does not.
 
 **Construction by the claimant.** Qualifying expenditure is the capital cost of construction. Site preparation counts, and HMRC's manual treats demolition of an existing building to clear the site as site preparation. Excluded: land; land alteration (other than site preparation); plant (which qualifies under Part 2 instead); planning permission costs.
 
@@ -86,7 +86,7 @@ HMRC's guidance adds that if a buyer pays more than market value, the claim is l
 
 ---
 
-## Tarnmoor's distribution centre
+## Tarnmoor's distribution centre.
 
 TEL buys and pays for the distribution centre on **1 September GY3** and first uses it the same day, so the allowance period starts then. TEL's year ends on 31 December: 4 months of qualifying use in GY3.
 
@@ -111,10 +111,10 @@ TEL buys and pays for the distribution centre on **1 September GY3** and first u
 |---|---|---|
 | 50% FYA | — | 300,000 |
 | Addition to special rate pool | 600,000 | 300,000 |
-| WDA 6% on this addition | 36,000 | 18,000 |
-| **Allowances on the £600,000 in GY3** | **36,000** | **318,000** |
+| WDA 6% on this addition in GY3 | 36,000 | nil (the balance joins the pool after the WDA: CAA 2001 s 58(5)) |
+| **Allowances on the £600,000 in GY3** | **36,000** | **300,000** |
 
-(Special rate WDAs are not time-apportioned for part-year ownership within a 12-month period.)
+(Special rate WDAs are not time-apportioned for part-year ownership within a 12-month period. Where an FYA is claimed, the balance is pooled only after the WDA of the period of expenditure, so it first draws 6% in GY4.)
 
 **No fixtures requirements here.** The developer held the building as trading stock: it never incurred capital expenditure on the fixtures and was never entitled to allowances on them. The pooling and fixed value requirements (ss 187A–187B, below) apply only where a **past owner was entitled to claim**. Buying new from a developer avoids them; the split is governed only by s 562.
 
@@ -122,7 +122,7 @@ TEL buys and pays for the distribution centre on **1 September GY3** and first u
 
 ---
 
-## The allowance statement and the life of a building
+## The allowance statement and the life of a building.
 
 Because the allowance travels with the building, each new owner needs facts it cannot easily discover. The law answers with the **allowance statement** (CAA 2001 s 270IA).
 
@@ -156,7 +156,7 @@ This is why the SBA behaves so differently from plant allowances: a pool claws b
 
 ---
 
-## Fixtures, and who owns what is fixed
+## Fixtures, and who owns what is fixed.
 
 A **fixture** is plant or machinery so installed or fixed in or to a building or other land that it becomes, in law, part of that building or land (CAA 2001 Part 2 Ch 14, from s 172). Lifts, heating, air conditioning, wiring and sanitary fittings are classic examples.
 
@@ -174,7 +174,7 @@ Two practical points for a group:
 
 ---
 
-## The pooling and fixed value requirements
+## The pooling and fixed value requirements.
 
 Before 2012, a seller could claim on fixtures for years, sell the building without a meaningful disposal value, and leave the buyer to claim again on its own valuation of the same fixtures: two claims on one boiler. Parliament closed this in two steps:
 
@@ -190,7 +190,7 @@ The law says that where a **past owner was entitled to claim** on the fixture, a
 
 ---
 
-## The section 198 election
+## The section 198 election.
 
 The tool for meeting the fixed value requirement is the joint election in **CAA 2001 s 198** (s 199 is its twin on the **grant of a lease**).
 
@@ -235,7 +235,7 @@ The tool for meeting the fixed value requirement is the joint election in **CAA 
 
 ---
 
-## Long funding leases, where allowances follow the economics
+## Long funding leases, where allowances follow the economics.
 
 Leasing raises a different question: when one company owns a machine and another uses it, who gets the allowances? Historically the owner, meaning the lessor. Lessors with taxable profits bought plant, claimed the allowances and passed part of the benefit to lessees in lower rentals. The largest deals ended in court.
 
@@ -255,7 +255,7 @@ In **FA 2006 (Sch 8, inserting CAA 2001 Part 2 Ch 6A)** Parliament changed the q
 
 ---
 
-## Tarnmoor's machine on a lease
+## Tarnmoor's machine on a lease.
 
 In our invented case, from **1 January GY3**, TEL takes a large, **refurbished (previously used)** computer-controlled machining centre on a **10-year finance lease** from an unconnected leasing company. PV of the minimum lease payments: **£1,500,000**; rentals £203,802 a year in arrears; implicit rate 6%.
 
@@ -298,7 +298,7 @@ In our invented case, from **1 January GY3**, TEL takes a large, **refurbished (
 
 ---
 
-## Successions, when a business changes hands
+## Successions, when a business changes hands.
 
 When one person succeeds to another's qualifying activity, the plant passes with it (CAA 2001 ss 265–268).
 
@@ -323,7 +323,7 @@ When one person succeeds to another's qualifying activity, the plant passes with
 
 ---
 
-## Connected parties, cross-border transfers and the Act's toolbox
+## Connected parties, cross-border transfers and the Act's toolbox.
 
 **Connected sales of plant (ss 214, 217, 218).** A group company selling plant to a fellow group company is a connected-party transaction (s 575). The buyer gets **no AIA and no FYA** (s 217), and its qualifying expenditure is **capped at the seller's disposal value** (or, if none, the lower of market value and the original cost to the seller or a connected person) (s 218). The aim: no fresh allowances from selling plant to yourself at a high price.
 
@@ -340,7 +340,7 @@ When one person succeeds to another's qualifying activity, the plant passes with
 
 ---
 
-## Contributions and grants
+## Contributions and grants.
 
 Capital allowances relieve the cost a business bears.
 
@@ -372,14 +372,14 @@ Capital allowances relieve the cost a business bears.
 
 ---
 
-## Anti-avoidance and the special tax sites
+## Anti-avoidance and the special tax sites.
 
 **Allowance buying (awareness).** A company whose plant has a tax written down value above its balance sheet value holds latent allowances that a buyer with profits might exploit. **FA 2010 (s 26, Sch 4)** inserted **CAA 2001 Part 2 Ch 16A (ss 212A–212S)**, effective from **21 July 2009**. It applies where there is a **qualifying change** in ownership (s 212C) of a company with a **relevant excess of allowances** (TWDV above balance sheet value, ss 212J–212L) and a **limiting condition** is met (s 212LA, FA 2013): excess **£50m or more**; excess **£2m or more** and not insignificant relative to the benefits of the change; or a smaller excess where the change has an **unallowable purpose** (s 212M); or arrangements to keep below the thresholds. FA 2013 also renamed the Chapter "restrictions on allowance buying" and extended it to all qualifying activities. When the rules bite, the excess is restricted so that the change of ownership cannot be used to put it to work for the new owners (detailed mechanics, ss 212N–212S, not opened for this chapter). CTA 2010 Part 9 separately deals with sales of lessor companies. **Pattern to recognise:** tax value above book value plus a change of ownership.
 
 **Freeports and investment zones: special tax sites (awareness).**
 - **P&M:** 100% FYA for companies on unused plant for use **primarily** in a special tax site, in a trade, incurred by the site's sunset date (CAA 2001 ss 45O–45R); the plant must remain primarily in use in the site for **5 years** (s 45R).
 - **SBA:** an enhanced **10% a year over 10 years** for special tax site qualifying expenditure (s 270AA(2A), (5)).
-- **Sunset dates:** GOV.UK guidance gives the enhanced SBA for expenditure up to **30 September 2031** for English freeport tax sites and **30 September 2034** for Scottish Green Freeports, Welsh Freeports and Investment Zones (the building must also be brought into qualifying use by then). The original date was 30 September 2026. **The P&M FYA end date per site was not confirmed from a primary source:** check before use.
+- **Sunset dates:** GOV.UK guidance gives the enhanced SBA for expenditure up to **30 September 2031** for English freeport tax sites and **30 September 2034** for Scottish Green Freeports, Welsh Freeports and Investment Zones (the building must also be brought into qualifying use by then). The original date was 30 September 2026. The government's policy paper extending the sunset dates gives the same new dates for the special tax site reliefs generally, including the plant FYA; reliefs vary by investment zone, so check the site's designation before use.
 - Tarnmoor has no freeport site. In an exam, a scenario that mentions a freeport invites a line on these reliefs.
 
 > **Exam lens: avoidance and freeports**
@@ -389,7 +389,7 @@ Capital allowances relieve the cost a business bears.
 
 ---
 
-## The tax function's checklist, and the examiner's
+## The tax function's checklist, and the examiner's.
 
 > **Going further: the checklist**
 >
@@ -406,7 +406,7 @@ Capital allowances relieve the cost a business bears.
 
 ---
 
-## What to take away
+## What to take away.
 
 - A building is a bundle of tax assets: land (nothing), structure (SBA), integral features and other fixtures (P&M). A just and reasonable apportionment (s 562) splits the price, whatever the contract says.
 - **SBA:** 3% a year of qualifying construction cost for 33⅓ years from the later of first non-residential use and the expenditure; construction contract on or after 29 October 2018; older buildings: only later alterations and extensions. Land, land alteration and plant excluded. Bought unused from a developer: price paid; unused from anyone else: lower of price and construction cost; used: 3% of the original cost continues. No balancing adjustment on sale; the seller adds its SBA to its gains consideration. Demolition ends it. No claim without an allowance statement.
