@@ -44,7 +44,7 @@ Take our invented group, **Tarnmoor**. Everything about Tarnmoor, its companies,
 
 The calculation runs for the worldwide group's **period of account** (here TPLC's year to 31 December). Only **UK group companies** (companies within the charge to CT) contribute tax-interest and tax-EBITDA. TVS's interest and earnings count for nothing in the UK measures, although its results are part of the consolidated accounts from which the group measures (ANGIE, group-EBITDA) are taken.
 
-**Non-coterminous periods.** Where a company's accounting period does not coincide with the group's period of account, amounts for the part outside it (a **"disregarded period"**) are left out, on a just and reasonable basis (s 382(7)–(8) for tax-interest; s 406(6) for tax-EBITDA). HMRC's guidance says time apportionment will be suitable in most cases, and that apportionments must be consistent (CFM98320 and related pages). The same applies to joiners and leavers.
+**Non-coterminous periods.** Where a company's accounting period does not coincide with the group's period of account, amounts for the part outside it (a **"disregarded period"**) are left out, on a just and reasonable basis (s 382(7)–(8) for tax-interest; s 406(6) for tax-EBITDA). HMRC's guidance (Corporate Finance Manual) says time apportionment will be suitable in most cases, that a common-sense approach applies where it would distort, and that apportionments must be consistent. The same applies to joiners and leavers.
 
 > **Worked example 28.1: Calder's contributions (invented)**
 >
@@ -131,7 +131,7 @@ Exclude:
 >
 > | Company | GY1 | GY2 | GY3 | Comment |
 > |---|---|---|---|---|
-> | TEL | 50.0 | 54.0 | 58.0 | Trading profit before interest and CAs (GY2: £42.0m after the £12.0m interest + £12.0m; chapter 7) |
+> | TEL | 50.0 | 54.0 | 58.0 | Trading profit before interest and CAs (GY2: £42.0m before CAs + £12.0m trading interest = £54.0m; chapter 7) |
 > | TWS | 12.0 | 12.5 | 13.0 | |
 > | TES | 13.0 | 13.5 | 14.8 | GY3 = property and other profits 14,148,800 + net gains 651,200 |
 > | Calder (CVE) | 3.3 | 4.7 | 8.6 | WE 28.1; GY3 includes the £6.0m IFA realisation credit |
@@ -305,7 +305,7 @@ The group has one disallowance; the companies have tax returns.
 
 **Unused interest allowance** (ss 393–395). If the interest allowance exceeds the sum of ANTIE and reactivations, the excess is unused allowance. It is **available** in later periods for up to **5 years**, time-apportioned where a receiving period straddles the five-year point (s 395). It is **nil** if an **abbreviated return** election has effect for the originating period, the receiving period or any period in between, or if **no return** is submitted for any of them (s 393).
 
-**GY3: no unused allowance.** HMRC's guidance is that the year's spare capacity must first be applied to reactivate (CFM98620, CFM95250); all £1.87m was used, so on this book's reading of ss 394–396 nothing is banked. Had there been nothing to reactivate, £1.87m of unused allowance would have arisen, usable to the end of GY8's window, provided full returns were filed throughout.
+**GY3: no unused allowance.** HMRC's guidance is that the year's spare capacity must first be applied to reactivate (CFM98620, CFM95250); all £1.87m was used, so on this book's reading of ss 394–396 nothing is banked. Had there been nothing to reactivate, £1.87m of unused allowance would have arisen, available in GY4 to GY8, provided full returns were filed throughout.
 
 **Deferred tax.** Disallowed interest carried forward is a deductible temporary difference; a deferred tax asset is recognised only if future reactivation (spare capacity) is probable. At the end of GY2 Tarnmoor recognised none (chapter 6); that remains a judgement, not a rule.
 
@@ -334,7 +334,7 @@ The group has one disallowance; the companies have tax returns.
 | Appointment | A member appoints a reporting company **for each period of account** | Sch 7A para 1 |
 | Deadline / notice | **No time limit; no notice to HMRC** | para 1 |
 | Authorisation | **More than half** of eligible companies (UK group companies at some time in the period, not dormant throughout) | para 1 |
-| Evidence | Name and UTR of the reporting company, the list of authorising companies and a statement that they were eligible and more than half, **in the return** | para 20 |
+| Evidence | Name and UTR of the reporting company, the list of authorising companies and a statement that they were eligible and more than half, **in the return** (the para 20 content changes take effect from a date set by HMRC regulations) | para 20 |
 | Regularisation | A return filed by a company not yet appointed is validated by a later appointment, treated as made just before the return: periods of account ending on or after **31 March 2024** | para 1A |
 | Is a return compulsory? | A group-appointed reporting company "may" submit; one appointed by HMRC (para 4) or as replacement (para 5) "must". HMRC: needed to allocate disallowances to specific companies, carry forward unused allowance, reactivate, or elect | para 7(1)–(3); GOV.UK "Submit a CIR return" (14 April 2026) |
 | HMRC appointment | If no return **18 months** after the period of account | para 4 |
@@ -344,7 +344,7 @@ The group has one disallowance; the companies have tax returns.
 
 **Real-calendar example (labelled).** A group with a period of account ending **31 December 2025** is under the **old** rules: appointment by notice within 12 months (by 31 December 2026), at least 50% of eligible companies. A group whose period of account ends **31 March 2026** is under the **new** rules.
 
-**Full and abbreviated returns.** A **full** return contains the group computation, allocations and any elections; an **abbreviated** return carries basic information only and suits a group sure it is not restricted, at the cost that unused allowance for the period is nil (s 393). A group that can later convert by filing a full return within the time limit; the safe course where allowance may matter is to file full.
+**Full and abbreviated returns.** A **full** return contains the group computation, allocations and any elections; an **abbreviated** return carries basic information only and suits a group sure it is not restricted, at the cost that unused allowance for the period is nil (s 393). Where allowance may matter, file a full return.
 
 **Tarnmoor's practice (invented).** Tom Hesketh, the group head of tax, treats the appointment as year-end routine: the parent's board paper lists every eligible UK company, each board authorises TPLC, and TPLC files a **full** return every year: it has disallowances to allocate in GY1 and GY2 and a reactivation to claim in GY3. Each company's own CT return then reflects its allocated disallowance or reactivation, with amendments if figures move.
 
@@ -360,7 +360,7 @@ The group has one disallowance; the companies have tax returns.
 Some businesses are debt-financed by design: a toll road, a network, a hospital built under a public contract. Thirty per cent of earnings would cripple them, and their debt is not the base erosion Action 4 targeted. The **public infrastructure exemption** (Part 10 Ch 8, ss 432–449) takes them out.
 
 - **Qualifying infrastructure company (QIC)** (s 433): elects in; **all or all but an insignificant proportion** of its income derives from **qualifying infrastructure activities** (public infrastructure assets) and the same holds for its assets (public infrastructure income test and assets test); and it is **fully taxed in the UK** (CFM97190, CFM97210).
-- **Effect:** interest on **third-party** debt (and QIC-to-QIC debt) is left out of tax-interest where the creditor's **recourse is limited** to the income, assets, shares or debt of QICs (s 438; CFM97320); in exchange the QIC's **tax-EBITDA is nil** (s 439). Grandfathering exists for certain loans made before 13 May 2016.
+- **Effect:** interest on **third-party** debt (and QIC-to-QIC debt) is left out of tax-interest where the creditor's **recourse is limited** to the income, assets, shares or debt of QICs (ss 438–441; CFM97320); in exchange the QIC's **tax-EBITDA is nil**. Grandfathering exists for certain loans made before 13 May 2016.
 - **Election** (s 434): on HMRC's guidance, made **before the end of the accounting period** it is to cover; **revocation** cannot take effect for a period beginning within **five years** of the start of the first period it covered (anti-cycling); joint elections (s 435) have their own rule (CFM97240, CFM97290).
 
 **The M26 point:** where a QIC sits inside a larger group, **adjust both sides**: remove its qualifying interest from ANTIE **and** its earnings from aggregate tax-EBITDA.
@@ -504,7 +504,7 @@ The next chapter follows money that tries a different trick: chapter 29, on hybr
 
 ## Statutory and case references
 
-- Taxation (International and Other Provisions) Act 2010 Part 10: ss 372–376 (overview, total disallowed amount, allocation, pro rata), 377 (order), 378–381 (carry forward, reactivation, netting), 382–386 (tax-interest), 389–390 (net tax-interest; ANTIE), 392–400 (capacity, unused allowance, allowance, fixed ratio, group ratio, debt caps), 401–404 (blended group ratio), 405–408 (tax-EBITDA), 410–416 (net group-interest, ANGIE, QNGIE, group-EBITDA), 420–430 (derivatives and elections), 432–449 (public infrastructure), 461 (anti-avoidance), 473–474 (worldwide group); Sch 7A paras 1, 1A, 4, 5, 7, 11A, 11B, 20, 22, 24, 25, 29.
+- Taxation (International and Other Provisions) Act 2010 Part 10: ss 372–376 (overview, total disallowed amount, allocation, pro rata), 377 (order), 378–381 (carry forward, reactivation, netting), 382–386 (tax-interest), 390 (ANTIE), 392–400 (capacity, unused allowance, allowance, fixed ratio, group ratio, debt caps), 401–404 (blended group ratio), 405–408 (tax-EBITDA), 410–416 (net group-interest, ANGIE, QNGIE, group-EBITDA), 420–430 (derivatives and elections), 432–449 (public infrastructure), 461 (anti-avoidance), 473–474 (worldwide group); Sch 7A paras 1, 1A, 4, 5, 7, 11A, 11B, 20, 22, 24, 25, 29.
 - TIOPA 2010 s 155(6) (TP: CIR disregarded); s 164A (UK-to-UK exemption); s 371IE (CFC matched interest).
 - Finance (No. 2) Act 2017 Sch 5 (CIR inserted); Finance Act 2019 Sch 14 paras 18–19 (leases); Finance Act 2026 s 61 (reporting companies) and s 62 (tax-EBITDA capex).
 - Corporation Tax Act 2009 ss 86A, 142, 145, 147 (FA 2026 s 62 items); s 446 (TP adjustments in loan relationships); ss 441–442 (unallowable purpose).

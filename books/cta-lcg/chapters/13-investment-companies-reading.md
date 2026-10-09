@@ -92,7 +92,7 @@ In our invented case TPLC bought Calder on 1 April GY1 for £32.0m. The tax team
 >
 > Two further deal costs take other routes:
 > - **Stamp duty £160,000** on the Calder shares: part of the price (like brokerage in *Sun Life*); not a management expense.
-> - **RCF arrangement fee £300,000**: a **loan relationship debit** (CTA 2009 s 307), recognised as the accounts amortise it (chapter 12). Section 1219(3)(b) bars a management expense deduction for anything deductible elsewhere.
+> - **RCF arrangement fee £300,000**: a **loan relationship debit** (CTA 2009 s 306A), recognised as the accounts amortise it (chapter 12). Section 1219(3)(b) bars a management expense deduction for anything deductible elsewhere.
 >
 > TPLC's management expenses for GY1: **£8,000,000** (after excluding the £900,000; including the £300,000).
 
@@ -199,7 +199,7 @@ Carried-forward reliefs have value, and value attracts buyers. If a company with
 | B: major change | A major change in the nature or conduct of the business **within the 8 years beginning 3 years before** the change (including a major change in the nature of investments held, even if gradual) |
 | C: small or negligible | The change occurs while the business is small or negligible, before a significant revival |
 
-**Effect.** The AP is split notionally at the change (s 678). Pre-change management expenses, non-trading LR deficits and debits, non-trading intangibles losses and property losses cannot be carried forward against post-change profits (ss 679–684), with apportionment under s 685; excess capital allowances treated as management expenses are caught too (s 682(4)). Chapter 2A (post-1 April 2017 reliefs; "major change in the business") runs alongside and is taught with the trading company rules in chapter 14.
+**Effect.** The AP is split notionally at the change (s 678). Pre-change management expenses, non-trading LR deficits and debits, non-trading intangibles losses and property losses cannot be carried forward against post-change profits (ss 679–684), with apportionment under s 685; excess capital allowances treated as management expenses are caught too (s 682(4)). Chapter 2A (post-1 April 2017 reliefs; "major change in the business") does not apply where Chapter 3 (or Chapter 2) can apply instead (s 676AB; CTM06775); it is taught with the trading company rules in chapter 14.
 
 > **Worked example 13.4: the capital test (labelled hypotheticals, not story facts)**
 >

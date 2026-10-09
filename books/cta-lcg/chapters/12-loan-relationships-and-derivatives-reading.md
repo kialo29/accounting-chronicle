@@ -410,7 +410,7 @@ The courts have patrolled the edges. *Union Castle Mail Steamship Co Ltd v HMRC*
 | Effect of regs 7 and 8 | Fair value movements on the hedging derivative left out and brought back into account **in line with the hedged item** | regs 7, 8 |
 | Effect of reg 9 | Interest rate contracts brought in on an **appropriate accruals basis** | reg 9 |
 | Election timing | New adopters of fair value accounting: within the later of 6 months after the start of the first relevant period or 6 months after first holding a fair-valued derivative (non-SAO companies: up to 12 months after the period end); otherwise prospective; initial lock-in | reg 6A |
-| Automatic case | Where the hedged item is **not** taxed in line with the accounts (for example connected company debt), the regulations apply without an election (HMRC guidance) | reg 6; CFM57075 |
+| Automatic cases (HMRC's guidance; not exhaustive) | Where the hedged item is **not** taxed in line with the accounts (for example connected company debt), the regulations apply without an election. HMRC's list also mentions designated fair value hedges and hedges of loan relationships accounted for at fair value; where the hedged item is itself taxed in line with the accounts, the derivative simply follows profit or loss | reg 6; CFM57071, CFM57075 |
 | Anti-avoidance | Regs 7–9 can apply where a main purpose is to avoid them | reg 6; CFM57371 |
 | Matching with shares | Exchange movements on liabilities and currency contracts hedging shares | regs 3, 4 |
 | Cash flow hedges | Reg 9A (the old default for designated cash flow hedges) **revoked** (SI 2015/1961) | — |

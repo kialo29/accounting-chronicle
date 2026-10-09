@@ -468,7 +468,7 @@ Sixteen million pounds of capital allowances did a great deal of work in TEL's a
 
 ## Statutory and case references
 
-**Statute:** CTA 2009 ss 46, 53, 54, 76, 79, 979–982, 1007–1010, 1013, 1018, 1038, 1038A, 1223, 1288–1290, 1292, 1298–1300, 1301B, 1303, 1304; CTA 2010 Part 2 (rates, marginal relief), ss 99, 105(3)–(3A), 189–217, 377, 377A, 379, 939A–939FB; FA 2004 ss 196–198; CAA 2001 ss 70A, 70H, 70I; F(No.2)A 2017 s 37; FA 2013 s 40; FA 2026 ss 11–12, 56, Sch 9; ITEPA 2003 ss 18–19.
+**Statute:** CTA 2009 ss 46, 53, 54, 76, 79, 979–982, 1007–1010, 1013, 1018, 1038, 1038A, 1223, 1288–1290, 1292, 1298–1300, 1301B, 1303, 1304; CTA 2010 Part 2 (rates, marginal relief), ss 99, 105(3)–(3A), 189–217, 377, 377A, 379, 939A–939FB; FA 2004 ss 196–198; CAA 2001 ss 70A, 70H, 70I; F(No.2)A 2017 s 37; FA 2013 s 40; FA 2025 ss 13–14; FA 2026 ss 11–12, 56, Sch 9; ITEPA 2003 ss 18–19.
 
 **Cases:**
 - *Marson v Morton* (Ch D, 1986) (report citation not checked)
