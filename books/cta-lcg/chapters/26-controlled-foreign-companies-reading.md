@@ -385,14 +385,12 @@ The 75% exemption was a policy choice. On the usual account of the policy, the g
 |---|---|---|
 | 2 April 2019 | Commission Decision (EU) 2019/1352 (SA.44896): the group financing exemption was partly unlawful State aid (2013–2018) where finance profits derived from UK SPFs | secondary |
 | 1 January 2019 | FA 2019 s 20(2) had already narrowed Ch 9 for later periods (profits within s 371EB excluded) | verified |
-| 2019–2020 | HMRC recovered the aid by **charging notices** and **interest charging notices** under TIOPA 2010 **Sch 7ZA** (inserted by the Taxation (Post-transition Period) Act 2020 Sch 4) | verified |
+| After the decision | HMRC recovered the aid by **charging notices** and **interest charging notices** under TIOPA 2010 **Sch 7ZA** (inserted by the Taxation (Post-transition Period) Act 2020 Sch 4) | verified |
 | 8 June 2022 | General Court (T-363/19 *UK v Commission*, T-456/19 *ITV v Commission*) upheld the Commission | secondary |
 | 11 April 2024 | Advocate General Medina: the Commission chose the wrong reference framework | secondary |
 | 19 September 2024 | Court of Justice (C-555/22 P, C-556/22 P, C-564/22 P): General Court judgment set aside; **Commission decision annulled**: the CFC rules were not the correct reference framework; the UK CT system as a whole was | secondary (press release as reproduced) |
 | 31 December 2024 | **Controlled Foreign Companies (Reversal of State Aid Recovery) Regulations 2024** (SI 2024/1307) in force: HMRC must give reversal notices cancelling charging notices and cancel interest charging notices; consequential adjustments within 12 months after the AP of the notice | verified |
 | 2 December 2025 (deemed) | **FA 2026 s 51**: interest (at the ICTA 1988 s 826 rate) on repayments of interest made because interest charging notices were cancelled | verified |
-
-*The "2019–2020" dating of the charging notices is approximate; the recovery steps themselves are verified from FA 2026 s 51 and SI 2024/1307.*
 
 Selectivity, the core of a State aid finding, is judged against the normal tax system. The CFC rules were not a free-standing system: they were part of UK corporation tax, which by design does not tax most profits of foreign subsidiaries. Because the Commission started from the wrong baseline, its selectivity finding could not stand.
 
@@ -410,8 +408,8 @@ Two lessons outlast the saga. Whether an exemption is a gift depends on what you
 | Group treasury election (TFP as NTFP) | Notice within **20 months** after the CFC's AP | s 371CE |
 | Exempt period extension | HMRC notice given before the exempt period ends | Ch 10 |
 | Exempt period amendments | Up to **12 months after the filing date** for the AP in which the first post-exempt-period CFC AP ends | s 371JG |
-| Just and reasonable apportionment | HMRC may substitute; joint appeals | ss 371UC–371UE |
-| Recovery | Unpaid CFC charge recoverable from another UK company holding the same interest (after 3 months) | s 371UF |
+| Just and reasonable apportionment | HMRC may substitute its own basis; joint appeals where apportionment is disputed | s 371UC; ss 371UA–371UF |
+| Recovery | Unpaid CFC charge recoverable from another UK company holding the same interest (after 3 months) | ss 371UA–371UF |
 
 > **Going further: the tax function's annual cycle**
 > - **Register:** every overseas company; control position and date; residence; APs; exemption or gateway conclusion each year.
@@ -444,7 +442,7 @@ Two lessons outlast the saga. Whether an exemption is a gift depends on what you
 
 > **Exam lens: CFCs overall**
 > - **Grade:** **1 (core)**; also core in the 2028 grid. Check the 2027 grid when published.
-> - **Style:** technical prose and computations; no letter format; 0.5–1 mark per point; questions of 15–20 marks on CFCs alone.
+> - **Style:** technical prose and computations; no letter format; 0.5–1 mark per point; whole 20-mark questions on CFCs alone (M24 Q5, M25 Q1).
 > - **Favourite combinations:** residence + CFC (N23 Q1); PE + branch exemption + incorporation of the branch + CFC (M26 Q5).
 > - **Traps:** 25% test ≠ control; stop at the first exemption; profit before interest and trimmed ROE; adjust both sides of the tax exemption; apply the shareholding % to both profits and creditable tax; adjust for gains and exempt dividends; know s 371EC and the Ch 9 business premises condition; state in two lines how the charge works and who pays it.
 > - **Layout:** an order-of-attack table per company (as Worked examples 26.8 and 26.9), then the charge computation in £.

@@ -16,15 +16,13 @@ A UK-resident company pays corporation tax on its profits wherever they arise. A
 
 **CTA 2009 s 5** lists the footprints. A non-UK resident company is within the charge to CT only if it:
 
-| Head | Statutory basis | Since |
-|---|---|---|
-| (a) carries on a trade of dealing in or developing UK land | s 5(2)(za) and Part 8ZB CTA 2010 | 5 July 2016 |
-| (b) carries on a trade in the UK through a UK PE | s 5(2)(a), s 19 | long-standing |
-| (c) carries on a UK property business | s 5(2)(b) | **6 April 2020** (FA 2019 Sch 5) |
-| (d) has other UK property income | s 5(2)(c) | 6 April 2020 |
-| related loan relationship and derivative profits of the property business | s 5(3A)–(3B) | 6 April 2020 |
-
-*(Paragraph letters in s 5(2) are given for orientation; the exam needs the heads, not the lettering.)*
+| Head | Since |
+|---|---|
+| Carries on a trade of dealing in or developing UK land | 5 July 2016 (with CTA 2010 Part 8ZB) |
+| Carries on a trade in the UK through a UK PE | long-standing (s 19) |
+| Carries on a UK property business | **6 April 2020** (FA 2019 Sch 5) |
+| Has other UK property income | 6 April 2020 |
+| Loan relationship and derivative profits of that property business (s 5(3A)–(3B)) | 6 April 2020 |
 
 Notice what is missing. A foreign company that sells to UK customers from abroad, with no PE here and no UK land, is not within CT on its trading profits at all. Trading **with** the UK is not trading **in** the UK through a PE.
 
@@ -52,7 +50,7 @@ For the PE head, **s 19 CTA 2009** charges the trading income arising directly o
 
 On the usual reading, three ideas sit inside "fixed place of business": a **place** (which may be modest, even floor space in someone else's premises); **fixed** (a link to a location with some permanence); and the company's **business carried on through it** (usually meaning the place is at the company's disposal and its business is done there). Since FA 2026, s 1140A directs that the PE chapter be read consistently with Article 5 of the OECD Model and its Commentary, so the Commentary's account of these ideas now shapes the UK reading.
 
-**The domestic list sets no time limit for a building site.** Treaties usually do: under Article 5(3) of the OECD Model a building site or construction project is a PE only if it lasts **more than 12 months**. Under the domestic list, whether a short site is "fixed" is a question of degree (the book's reading: s 1141(2) contains no duration test). Where a treaty applies, its time limit protects the foreign company. In **M26 Q5** (20 marks) a construction PE turned on the 12-month test in the supplied treaty.
+**The domestic list sets no time limit for a building site.** Treaties usually do: under Article 5(3) of the OECD Model a building site or construction project is a PE only if it lasts **more than 12 months**. Under the domestic list, whether a short site is "fixed" is a question of degree (the book's reading: s 1141(2) contains no duration test). Where a treaty applies, its time limit protects the foreign company. In **M26 Q5** (20 marks) a construction PE turned on the 12-month test.
 
 > **The subsidiary misconception.** A UK subsidiary is **not** a PE of its foreign parent merely because the parent controls it (HMRC, INTM153060, following the OECD Model). The subsidiary is a separate taxpayer. But a subsidiary **can** be the parent's dependent agent on the facts. Control alone proves nothing; conduct can prove a great deal.
 
@@ -228,7 +226,7 @@ Suppose the treaty had not protected TVS. What profit would the UK tax?
 >
 > TVS would then look to Vallaria for relief from double taxation under the treaty's elimination article (chapter 24). In practice the UK attribution and the TP pricing of TEL's fee must be consistent: chapter 27.
 
-**Gains on PE assets.** Assets used for the PE's trade are within s 2B(3) TCGA; if the PE ceases, assets leaving the UK charge are deemed disposed of at market value (TCGA s 25, not considered further here).
+**Gains on PE assets.** Assets used for the PE's trade or held for the PE are within the CT charge on gains under TCGA s 2B(3), attributed under CTA 2009 ss 20 and 24.
 
 **Coming from abroad.** HMRC's manual describes a compensating adjustment where a TP adjustment to a connected foreign company relates to a UK PE (INTM414510, reformed from 1 January 2026); the precise statutory route after FA 2026 was not located (flagged).
 
@@ -242,7 +240,7 @@ Taxing a company that lives abroad raises a practical problem: its directors, ba
 |---|---|---|
 | Ch 6: UK representatives | ss 969–972 | A non-resident company's **UK PE is its UK representative**, treated as a separate person; the company's obligations on assessment, collection and recovery of CT are also the representative's (s 970); it remains the representative after the PE ceases, for tax relating to its period; limited exceptions (s 971) |
 | Ch 7: recovery from related companies | ss 973–980 | If CT assessed on a **non-UK resident company** is unpaid **6 months** after it became payable, HMRC may serve a notice on a **related company** (a member of the same group, or of a consortium owning it, in the relevant period) requiring payment **within 30 days**; the notice has effect as an assessment; in consortium cases only a proportion (s 979); time limits in s 978 |
-| Ch 5: set-off of income tax deductions | ss 967–968 | Income tax deducted from payments a company receives is set against its CT for the AP (s 967, UK resident; **s 968, non-UK resident**); any excess is repaid |
+| Ch 5: set-off of income tax deductions | ss 967–968 | Income tax deducted from payments a company receives is set against its CT for the AP (s 967, UK resident; **s 968, non-UK resident**) |
 
 **Do not confuse** Part 22 Ch 7 with **TMA 1970 ss 109B–109F** (chapter 22): the migration rules let HMRC recover unpaid exit tax from group companies and controlling directors at the moment of leaving. Ch 7 covers a company that is non-resident and remains chargeable here.
 
@@ -279,7 +277,7 @@ Now turn the telescope around: a UK company is paying money to someone abroad. T
 | Exit | Rule | Reference |
 |---|---|---|
 | **Excepted payments** | Beneficial owner is a **UK-resident company**; or a **non-UK resident company trading in the UK through a PE** that brings the interest into its chargeable profits; certain gross-paid bodies (local authorities, charities, pension scheme administrators) and partnerships of them | ITA 2007 ss 933–937 |
-| **Reasonable belief** | The duty does not apply if the payer **reasonably believes** the payment is excepted; HMRC may direct otherwise (s 931); if the belief was wrong the payer is liable | ss 930–931 |
+| **Reasonable belief** | The duty does not apply if the payer **reasonably believes** the payment is excepted; HMRC may direct otherwise (s 931) | ss 930–931 |
 | **Banks** | Interest paid by a bank in the ordinary course of business; interest on an advance from a bank where the person beneficially entitled is within the CT charge on it | ss 878, 879 |
 | **Quoted Eurobonds** | No deduction from interest on a quoted Eurobond: a security issued by a company, carrying a right to interest, **listed on a recognised stock exchange** or **admitted to trading on a multilateral trading facility operated by a regulated recognised stock exchange** (MTF limb from FA 2018; "regulated" from 31 December 2020) | ss 882, 987 |
 | **Qualifying private placements** | Unlisted debt securities of a company meeting Treasury regulation conditions (in force 1 January 2016) | s 888A |
@@ -345,7 +343,7 @@ Now turn the telescope around: a UK company is paying money to someone abroad. T
 
 **In our invented case.** Until 30 June GY4 TIL's board met in Leeds, so it was UK resident (chapter 22 tells the migration story: exit charges and a £525,000 payment plan). Afterwards TIL is non-resident, earning its distribution profits in Ireland with no UK PE. But it still owns the **UK warehouse** bought for **£3.0m** in GY1, let to an unconnected logistics company.
 
-- **Income:** TIL carries on a **UK property business** (CTA 2009 s 5), within **CT**, not income tax, since **6 April 2020**. It files CT returns on its rental profits at the main rate (it has more than enough associated companies for the marginal relief limits to be exceeded) and is inside the corporate interest restriction like any group company with UK profits.
+- **Income:** TIL carries on a **UK property business** (CTA 2009 s 5), within **CT**, not income tax, since **6 April 2020**. It files CT returns on its rental profits at the main rate (with its many associated companies, its marginal relief upper limit is far below its profits) and is inside the corporate interest restriction like any group company with UK profits.
 - **Non-resident landlord scheme.** The letting agent, or the tenant if there is no agent, must normally deduct income tax at the basic rate from rent paid to a landlord whose usual place of abode is abroad, unless HMRC has approved the landlord to receive the rent gross. Companies remain within the scheme after the 2020 move to CT; tax deducted is credited against the company's CT on that rental income (CTA 2010 s 968) (HMRC guidance note on the 2020 changes; professional summaries).
 - **Gains:** on a sale of the warehouse TIL is chargeable under TCGA s 2B(4) (direct interest in UK land). The **£0.8m** gain postponed on migration under s 187B comes back into charge on that disposal (chapter 22).
 
