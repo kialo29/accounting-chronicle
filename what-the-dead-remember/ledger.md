@@ -1,58 +1,38 @@
 # Ledger
 
 ## Facts established
+- Day 1 (26 BBY): Anakin wakes in his 15-year-old body in the shared Padawan quarters; Sidious's death felt as a "hole."
+- Canon lines spent: "You were right about me." / "Tell your sister... you were right." (Ch 1); "Master Skywalker, there are too many of them. What are we going to do?" (Ch 2, flashback). None spent in Ch 3-11.
+- Bond: shut "rather hard"; closed "like a door" ten nights before day 10; held at a crack; slammed shut overnight day 10-11; re-thinned each morning.
+- Hawkbat Clan: Anakin assists Drallig each tenday (Obi-Wan's arrangement, ~2 years). Kessa Ruun, Ilyo, Brannick, Wix, Tam Dorreth. Clan-mother Master Imari Sen (human, grey hair, hands in sleeves). Drallig: "I didn't teach him that."
+- Ahsoka Tano, 10: saber reversed since age seven; grey flimsi list under her mattress, eight lines in Togruti; reversed Jar'Kai about one night in five in the small third-level dojo (lighting on a three-year fault ticket); asked Plo at five whether a dream can be true; Caleb Dume (7, Bear) follows her; felt the bell "above and to the west." Her spill version (hall, fire, white ranks, boy's face) is hers alone.
+- Gathering: "Tano seventh of seven," Kessa on the list; Kenobi's Padawan assigned to accompany Yoda.
+- Audiences: tenth-day audiences since age nine; Obi-Wan waited in Monument Plaza six years (Palpatine knows); Council refused his request to reduce them; Palpatine: "forty times." Sly Moore in outer office. Dooku's pamphlet; Amidala/Organa/Mothma disclosure bill. Anakin froze in the plaza at the Endor flash.
+- Mirren Dask: invented crush (human Padawan, a year older, Vos-Kerrick's politics class), where Bellas also sits; Dooku's Serenno Institute of Letters speech (recorded four days before) seen there.
+- Bellas bout: Anakin has thrown three bouts to Bellas and won one by instinct (one-handed overhand, saber the length of the hall, blade a finger from her throat). Penances: Bellas, a tenday with Bear Clan; Anakin, show Drallig the stroke each morning before first bell until the Crucible leaves.
+- Convor: first seen on the roof; green, owl-like; does not fly.
+- Archive: eleven letters from Anakin, nine from Shmi, over three years (first at twelve, before her freedom). Shmi's names Cliegg, Owen (16), the tin from Watto's shop, the apron. Cipher keyed to serial of his first respirator unit. Carnelion IV file matches memory.
+- Queries, 28 BBY, terminal four: Obi-Wan's "Kamino" (forty minutes, null), then "Sifo-Dyas" four days later (public record, eleven minutes). Kamino query tagged KENOBI, O., two years old. Anakin sliced the general log via a dead librarian's maintenance account; terminal-nine slice (eight days) traced by Jocasta Nu to Padawan Skywalker.
+- Tano's file: healer's note (31 BBY, age five, night terrors, "whether a dream can be a memory," no recurrence); Sen: "older than her years, and knows it."
+- Obi-Wan's night-pad with two columns (written / not written); Dex has "asked around" since 28 BBY, found nothing.
+- Second spill (night of day 10-11): 31+ younglings under twelve shared a dream (stair, boots, gate, water, circle of chairs, blue light); four initiates dreamed they held the blade; centre located on Anakin's level. Vokara Che found beneath his forged Tatooine dream "a wall, old and scarred, as if built over years"; asked "Who taught you to shield?" / "He didn't."
+- Windu asked whether he knew what had come into the Temple; Anakin lied; Windu will report "a nightmare."
+- Palpatine found the wall, pressed nothing, was pleased; "my Master" slip; knows the Crucible date, the dream, the Bellas bout, Drallig's penance, Obi-Wan's refusals.
+- Satine: "Who told you about Satine?" (mild); Obi-Wan says he knew her on a mission with Qui-Gon.
+- Jocasta has logged both of Anakin's Archive visits and the slice; noted him "checking something for my master."
 
 ## Open threads
+- Struck-bell note from below and east, unplaced.
+- Obi-Wan's counting look; "not surprise" down the bond (day 19), unnamed; shoulder-touch and "my friend" logged.
+- Ahsoka: Plo's long look; Plo to "say a word" to Sen; unidentified presence in the dojo gallery (dust on rail, floor worn where someone sat since day one); Anakin's left wrist logged.
+- Obi-Wan won't say where he recognised the parry; hasn't asked about the wall; sat on Anakin's bed. Che: come to the Halls if it recurs.
+- Obi-Wan knows Anakin read the Kamino/Sifo-Dyas queries; neither has raised it. Jocasta undecided: tell Yoda or leave it with Obi-Wan.
+- Obi-Wan in Council tower until seventh hour (purpose unknown); Council wanted him at sixth (day 19). Council hunt for the shadow ongoing.
+- Anakin's question now "who sent us"; convor unplaced; theory board: Obi-Wan / the child / both / neither.
+- Reply to Shmi sealed for day-10 courier (outcome unrecorded). Anakin expects Dooku sent to look; Palpatine asked about "these last ten days."
+- Obi-Wan told Chancellor "I'll put it to the Council"; reception not refused; Palpatine invited Obi-Wan back while Anakin is away.
 
 ## Current state
-
-
-### After Ch 1
-- Facts established: Anakin woke early 26 BBY in his 15-year-old body in the shared Padawan quarters; Sidious's death is felt as a "hole"; he suspects no trick but does not know why he is back. Canon line spent: "You were right about me." / "Tell your sister... you were right."
-- Open threads: the bond shut hard enough for Obi-Wan to feel it ("You shut the door rather hard"); Obi-Wan's long counting look round the room; the struck-bell note from below and east that Anakin cannot place.
-- Current state: dawn after the waking night; shield fully up, must be thinned to a boy's sulk by morning; resolve is hide everything, change nothing yet, find out why and whether he is alone.
-
-### After Ch 2
-- Facts established: Anakin assists Drallig with Hawkbat Clan every tenday (Obi-Wan's arrangement, ~2 years); Hawkbat names seen: Kessa Ruun, Ilyo, Brannick, Wix, Tam Dorreth; Ahsoka Tano, 10, in the back corner, holds her saber reversed and has since she was seven (Drallig, Plo, clan-master have all "had words"). Canon line spent: "Master Skywalker, there are too many of them. What are we going to do?" (flashback).
-- Open threads: Obi-Wan's shoulder-touch and "my friend" logged by Anakin as a thing to write down; Ahsoka watched Anakin's shaking hand, not his face, and said only "Yes"; Anakin did not correct her grip and she reversed it again; Drallig saw Anakin's reaction and asked "Was there something?"
-- Current state: mid-morning of day one, Anakin sick in a refresher after class, bond thinned to a boy's sulk; he assumes Tano is simply a child and has not connected her to the struck-bell note; he has not eaten; resolve to find out whether anything is wrong or only his memory.
-
-### After Ch 3
-- Facts established: Ahsoka felt the bell from "above and to the west"; her list is grey workshop flimsi under her mattress, now eight lines in Togruti (Plo can read a little); she practises reversed Jar'Kai roughly one night in five in the small third-level dojo (lighting on a three-year fault ticket); at five she asked Plo whether a dream can be true; Caleb Dume (7, Bear) follows her; she avoids looking at Barriss Offee.
-- Open threads: Ahsoka asked Plo if he felt anything in the night (he was meditating, felt nothing, noticed it troubles her that she did); she sensed a presence in the dojo gallery she could not confirm; she senses a new hard-shielded thing in the Temple and has fixed it on the Padawan.
-- Current state: night of day one, Ahsoka awake in her bunk a second night, convinced something wearing Skywalker's face has come into the Temple, telling herself nothing; the Padawan does not know she felt him arrive.
-
-### After Ch 4
-- Facts established: tenth-day audiences since Anakin was nine; Obi-Wan has waited in Monument Plaza every time for six years (Palpatine knows and said so); Obi-Wan's Council request to reduce the audiences (two years ago) was refused; Sly Moore in the outer office; Dooku's privately printed pamphlet on Senate ethics; Amidala/Organa/Mothma disclosure bill; invented crush name: Mirren Dask (human Padawan, a year older, Vos-Kerrick's politics class). No new canon line spent.
-- Open threads: Sidious found the wall, pressed nothing, was pleased; "my Master" slip in Vader's cadence and Palpatine's three-second look; Palpatine asked whether something happened at the Temple "these last ten days"; Anakin expects Dooku to be sent to look.
-- Current state: late morning of day nine, Anakin and Obi-Wan walking home from the Senate District; Anakin's surface and thinned bond holding; he froze in the plaza on the Endor flash and Obi-Wan saw; he now knows the story has left its rails and cannot see "and then".
-
-### After Ch 5
-- Facts established: bond closed ten nights ago "like a door", now held at a crack Obi-Wan measures daily; Yoda felt the shadow and the younglings of four clans woke crying; Yoda also felt Obi-Wan's "door" close that night; Obi-Wan's accounts include an Archives name not found (Jocasta's look), a question to Dex, and a list in a disguised hand in a drawer; Drallig saw the parry and said "I didn't teach him that." No canon line spent.
-- Open threads: the Council (Windu already asking, healers to be asked) will search the Temple for the shadow; Yoda has told Obi-Wan to come "when I send"; Obi-Wan recognised the parry and refuses to think where; Anakin did not look at the gallery after sparring.
-- Current state: noon of day ten; Obi-Wan alone below the Council chamber after the convor left, hand unsteady, having said "Not again"; Anakin walking home from Drallig's hall with a stung shoulder; the Council's hunt has begun.
-
-### After Ch 6
-- Facts established: courier archive holds eleven letters from Anakin, nine from Shmi, over three years (first when he was twelve, before her freedom; the fourth after it); Shmi's letter names Cliegg, Owen (16), the tin from Watto's shop, the apron; Anakin's cipher is keyed to the serial of his first respirator unit; the Archives log unfilled queries with requester and date; Carnelion IV file and his own file (audience log, Obi-Wan's declined petition) match his memory. No canon line spent.
-- Open threads: the Kamino query tagged KENOBI, O., two years old, now on the list; Anakin has not confronted Obi-Wan and stood at the door without going in; Obi-Wan knocked for supper and did not open the door; Jocasta Nu has noted Anakin in the Archives after dark "checking something for my master".
-- Current state: night of day ten; Anakin on the corridor ledge outside the quarters with the list open, first theory (rotten memory) discarded, theories two and three alive; reply to Shmi sealed on the table for the morning courier; the list now has five entries and three theories.
-
-### After Ch 7
-- Facts established: second, far stronger spill (night of day ten/eleven): thirty-one-plus younglings under twelve shared one dream (stair, boots, gate, water, circle of chairs, blue light), four older initiates dreamed they held the blade; healers located its centre on Anakin's level; Vokara Che walked his forged Tatooine dream and found beneath it "a wall, old and scarred, as if built over years" and said "Who taught you to shield?" / "He didn't" in front of Obi-Wan; she will report to Yoda. No canon line spent.
-- Open threads: Windu asked directly ("Something has come into this Temple, Padawan. If you know what it is, now is the time.") and Anakin lied; Windu will tell the Council "a nightmare"; Obi-Wan heard the healer's verdict and has not asked about the wall; Obi-Wan sat on Anakin's bed at night (another tell logged); Che told Anakin to come to the Halls if it recurs.
-- Current state: morning of day eleven, Anakin and Obi-Wan in the refectory, Anakin unable to eat; bond slammed shut again overnight (must be re-thinned); the Council now has a healer's finding of a non-Jedi wall in Skywalker and a located epicentre; Anakin knows the spill is his and that holding the shield in sleep has failed twice.
-
-### After Ch 8
-- Facts established: Ahsoka's version of the spill was larger than the children's (hall, fire, white ranks, boy's face) and only hers; Hawkbat clan-mother is Master Imari Sen (human, grey hair, hands in sleeves); the Gathering is nine days from day thirteen with Kenobi's Padawan assigned to accompany Yoda; Gathering list: Tano seventh of seven, Kessa on it; Ahsoka trains with wooden rods, reversed, in the dim half of the third-level dojo. No canon line spent.
-- Open threads: Plo's long look after she lied about not remembering asking at five; Plo said he would "say a word" to Sen; Kenobi's beat-too-long look at the Fountains (day eighteen) and she looked away first; she saw Anakin's hand go to his left wrist and logged it; dust on the gallery rail and floor worn where someone sat since day one, identity unknown.
-- Current state: night of day eighteen, Ahsoka alone on the dojo gallery telling herself "I do not know who sat here"; Ilum in about four days; she is on the list and the Padawan is going.
-
-### After Ch 9
-- Facts established: Dooku's Serenno Institute of Letters speech (recorded four days before) seen in Vos-Kerrick's class; Bellas and Mirren Dask are in that class; Anakin has now thrown three bouts to Bellas and won one by instinct (one-handed overhand, saber the length of the hall, blade a finger from Bellas's throat); Drallig's question and Anakin's answer verbatim; Obi-Wan witnessed it from the doorway; Bellas's penance is a tenday with Bear Clan; Anakin's penance is to show Drallig the stroke every morning before first bell until the Crucible leaves; the convor appeared to Anakin on the roof (first time), green, owl-like, did not fly. No canon line spent.
-- Open threads: what came down the bond from Obi-Wan was not surprise and Anakin cannot name it; Obi-Wan said Bellas was wrong about the promise and "I don't think you do, but we'll leave it"; the Council wanted Obi-Wan at the sixth hour that day (purpose unknown); Anakin has not placed where he saw a bird like it; Anakin's question has shifted from "who else is here" to "who sent us".
-- Current state: night of day nineteen, Anakin on the Temple roof with the convor still on the parapet, outer shield slightly lowered, Ilum in four days with him assigned to Yoda and Tano seventh on the list; Part One ends.
-
-### After Ch 10
-- Facts established: Obi-Wan's Archive queries, 28 BBY, terminal four: "Kamino" (forty minutes, null) then "Sifo-Dyas" four days later (public record, read eleven minutes); Anakin sliced the general query log and initiate files via a dead librarian's maintenance account; Tano's file holds a healer's note (31 BBY, age five, night terrors, "whether a dream can be a memory", no recurrence) and Sen's note "older than her years, and knows it"; Jocasta has logged both of Anakin's visits. No canon line spent.
-- Open threads: theory board (four lines: Obi-Wan / the child / both / neither) on a second page of the datapad; the Satine test gave nothing ("Who told you about Satine?" mild; Obi-Wan says he knew her on a mission with Qui-Gon); Obi-Wan in the Council tower until the seventh hour again, purpose unknown; Anakin skipped Vos-Kerrick's class.
-- Current state: night of day twenty, Anakin in bed unlit, ashamed of having enjoyed the game; Drallig again at dawn; Crucible leaves in three days with Tano seventh on the list; bond thin and slack.
+- Hour before first bell, day 22: Obi-Wan awake after the desert dream; Anakin asleep through the wall; bond thin and slack.
+- Crucible leaves in two days (day 24 per Ch 11; Ch 9-10 implied day 23), Anakin escorting, Tano seventh; Obi-Wan stays behind. Drallig's penance runs until departure.
+- Naboo anniversary reception "some weeks" off; Palpatine wants Anakin for the evening. Jocasta's unreported trace undecided.
