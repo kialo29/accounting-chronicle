@@ -36,3 +36,8 @@
 - Hour before first bell, day 22: Obi-Wan awake after the desert dream; Anakin asleep through the wall; bond thin and slack.
 - Crucible leaves in two days (day 24 per Ch 11; Ch 9-10 implied day 23), Anakin escorting, Tano seventh; Obi-Wan stays behind. Drallig's penance runs until departure.
 - Naboo anniversary reception "some weeks" off; Palpatine wants Anakin for the evening. Jocasta's unreported trace undecided.
+
+### After Ch 12
+- Facts established: Sidious found the wall 22 days before (day ~1 reckoned from his audience); has taught Sith shielding to two people only (Maul, Dooku; Maul unnamed); Temple leaks via liaison Knight Aben Tuur and Vos-Kerrick's dining chain; Dooku has never met Anakin; met Kenobi four times; Serenno house has nineteen staff; Amidala/Organa/Mothma bill = Outer Rim franchise disclosure + Rim tribunal, to be gutted in committee.
+- Open threads: Sidious's "third possibility" (the one who fell on Naboo) deliberately left unopened; residue of doubt about Dooku set aside; Dooku's private cost-counting begun.
+- Current state: Dooku ordered to Coruscant for the Naboo anniversary reception as Sidious's guest, to look at Anakin and not touch; Sidious says the Council "will tell [Kenobi] what I tell it"; Crucible leaves in two days; reception "some weeks" off.
