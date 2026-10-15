@@ -4,3 +4,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 | Question | Result | Note |
 |---|---|---|
 | — | — | All answers and solutions checked. The diagrams in q14 (chord regions) and q16 (transversal, $72^\circ$ and $74^\circ$ drawn to scale, lines meeting on the right) are accurate. No changes. |
+
+### Diagram audit
+2 diagrams checked: 2 ok, 0 fixed.
