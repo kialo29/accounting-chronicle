@@ -68,3 +68,9 @@
 - Open threads: "Will you tell Yoda?" / "When he can hear it"; Anakin has not told Obi-Wan he heard him on the bank; Ahsoka's Maul list withheld from the datapad; letter to Shmi sent by courier (ten-day promise); Drallig's figure "entered" and unraised.
 - Current state: late evening, quarters, lamp turned down not off, two cold cups, notebook face up with stylus across it, neither going to bed; Ahsoka back in the Hawkbat dormitory.
 - Reserved, unspent: "I hate you!"; "Always in motion is the future."
+
+### After Ch 34
+- Facts established: Ahsoka's crystal is green by her own wish (unspoken to the others); Amidala's select committee on Outer Rim labour practices formed, Jedi adviser requested, Obi-Wan replied as channel ("excellent health, no account to share"; "You were right to ask twice"); courier compensator repaired for the Tatooine run; convor seen by Anakin at the hangar mouth; Sidious's order to Dooku: "Find out what happened to Maul" / "Then find out what else is."
+- Open threads: Plo still untold; Council's answer on the adviser; the forty-second audience in four days; Dooku's search for Maul and "what else"; Qui-Gon silent.
+- Current state: morning of the thirteenth-plus day; Ahsoka on the roof, Obi-Wan at the window, Anakin under the courier in bay four; the Works cold, the boy's face frozen on the wall. Book ends.
+- Reserved, unspent: "I hate you!"; "Always in motion is the future."
