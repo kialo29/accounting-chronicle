@@ -1,0 +1,282 @@
+[
+ {
+  "id": "pure-exponential-modelling-q01",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Solve $3^x = 20$, giving your answer to 3 significant figures.",
+  "hint": "The unknown is a power. Take logarithms of both sides so that you can bring $x$ down.",
+  "answer": "$x = 2.73$ (3 s.f.)",
+  "solution": "Take natural logs of both sides:\n$$\\ln(3^x) = \\ln 20$$\n\nUse $\\ln(a^x) = x\\ln a$:\n$$x\\ln 3 = \\ln 20$$\n\n$$x = \\frac{\\ln 20}{\\ln 3} = 2.7268\\ldots$$\n\n$x = 2.73$ (3 s.f.)\n\nCheck: $3^{2.73} \\approx 20.1$ ✓. (Note $x \\ne \\frac{20}{3}$: $3^{6.67}$ is about 1500.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q02",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $3^x = \\frac{1}{20}$, giving your answer to 3 significant figures.",
+  "hint": "Same method as for $3^x = 20$. What is $\\ln\\frac{1}{20}$ compared with $\\ln 20$?",
+  "answer": "$x = -2.73$ (3 s.f.)",
+  "solution": "Take logs of both sides:\n$$x\\ln 3 = \\ln\\tfrac{1}{20} = -\\ln 20$$\n\n$$x = -\\frac{\\ln 20}{\\ln 3} = -2.7268\\ldots$$\n\n$x = -2.73$ (3 s.f.)\n\n**What changed:** the right-hand side became the reciprocal of 20. Since $\\ln\\frac{1}{b} = -\\ln b$, the answer simply changes sign. This makes sense: $3^{-x} = \\frac{1}{3^x}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q03",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $3^{2x - 1} = 20$, giving your answer to 3 significant figures.",
+  "hint": "Take logs to find the value of the whole power $2x - 1$ first, then solve the linear equation.",
+  "answer": "$x = 1.86$ (3 s.f.)",
+  "solution": "Take logs:\n$$(2x - 1)\\ln 3 = \\ln 20$$\n\n$$2x - 1 = \\frac{\\ln 20}{\\ln 3} = 2.7268\\ldots$$\n\n$$2x = 3.7268\\ldots \\Rightarrow x = 1.8634\\ldots$$\n\n$x = 1.86$ (3 s.f.)\n\n**What changed:** the power is now $2x - 1$ instead of $x$. The log step is identical (the power still equals $2.7268\\ldots$); there is just one extra linear step at the end. Keep the bracket round $(2x - 1)$ when you bring it down.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q04",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $3^{2x - 1} = 5^x$, giving your answer to 3 significant figures.",
+  "hint": "Take logs of both sides, then collect the terms in $x$ on one side and factorise.",
+  "answer": "$x = \\dfrac{\\ln 3}{\\ln 1.8} = 1.87$ (3 s.f.)",
+  "solution": "Take logs of both sides:\n$$(2x - 1)\\ln 3 = x\\ln 5$$\n\nExpand and collect the $x$ terms:\n$$2x\\ln 3 - x\\ln 5 = \\ln 3$$\n$$x(2\\ln 3 - \\ln 5) = \\ln 3$$\n\nSince $2\\ln 3 - \\ln 5 = \\ln 9 - \\ln 5 = \\ln\\frac{9}{5}$:\n$$x = \\frac{\\ln 3}{\\ln 1.8} = 1.8690\\ldots$$\n\n$x = 1.87$ (3 s.f.)\n\n**What changed:** the right-hand side is now a power with $x$ in it, so after taking logs there are $x$ terms on both sides. You have to collect and factorise instead of dividing straight away.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q05",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $5^{2x} - 7(5^x) + 12 = 0$, giving your answers to 3 significant figures.",
+  "hint": "Notice that $5^{2x} = (5^x)^2$. Let $y = 5^x$.",
+  "answer": "$x = 0.683$ or $x = 0.861$ (3 s.f.)",
+  "solution": "Let $y = 5^x$, so $5^{2x} = (5^x)^2 = y^2$:\n$$y^2 - 7y + 12 = 0$$\n$$(y - 3)(y - 4) = 0 \\Rightarrow y = 3 \\text{ or } y = 4$$\n\n$5^x = 3$: $x = \\dfrac{\\ln 3}{\\ln 5} = 0.6826\\ldots = 0.683$ (3 s.f.)\n\n$5^x = 4$: $x = \\dfrac{\\ln 4}{\\ln 5} = 0.8613\\ldots = 0.861$ (3 s.f.)\n\n(Both values of $y$ are positive, so both give solutions. If one value of $y$ had been negative or zero it would be rejected, since $5^x > 0$ for all $x$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q06",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "question": "Leo is solving $3^{x + 2} + 3^x = 50$. His working is shown below.\n\nLine 1: $\\ln(3^{x+2}) + \\ln(3^x) = \\ln 50$\n\nLine 2: $(x + 2)\\ln 3 + x\\ln 3 = \\ln 50$\n\nLine 3: $2x\\ln 3 = \\ln 50 - 2\\ln 3$\n\nLine 4: $x = \\dfrac{\\ln 50 - 2\\ln 3}{2\\ln 3} = 0.780$ (3 s.f.)\n\n(a) Identify the line containing Leo's error and explain the mistake.\n\n(b) Solve the equation correctly, giving your answer to 3 significant figures.",
+  "hint": "Is $\\ln(A + B)$ the same as $\\ln A + \\ln B$? Try writing $3^{x+2}$ as $9 \\times 3^x$.",
+  "answer": "(a) Line 1: he took logs term by term, but $\\ln(A + B) \\ne \\ln A + \\ln B$.\n(b) $x = \\dfrac{\\ln 5}{\\ln 3} = 1.46$ (3 s.f.)",
+  "solution": "**(a)** The error is in **Line 1**. Taking logs of both sides gives $\\ln(3^{x+2} + 3^x) = \\ln 50$, and the log of a **sum** cannot be split: $\\ln(A + B) \\ne \\ln A + \\ln B$. (The rule is $\\ln(AB) = \\ln A + \\ln B$, for a product.)\n\nA quick check shows the answer is wrong: $3^{2.780} + 3^{0.780} \\approx 21.2 + 2.4 = 23.6$, not 50.\n\n**(b)** Factorise first. Since $3^{x+2} = 3^2 \\times 3^x = 9 \\times 3^x$:\n$$9(3^x) + 3^x = 50$$\n$$10(3^x) = 50 \\Rightarrow 3^x = 5$$\n\nNow there is a single power, so take logs:\n$$x\\ln 3 = \\ln 5 \\Rightarrow x = \\frac{\\ln 5}{\\ln 3} = 1.4649\\ldots$$\n\n$x = 1.46$ (3 s.f.). Check: $3^{3.465} + 3^{1.465} = 45 + 5 = 50$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q07",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><line x1=\"87.33\" y1=\"24\" x2=\"87.33\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"132.67\" y1=\"24\" x2=\"132.67\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"178\" y1=\"24\" x2=\"178\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"223.33\" y1=\"24\" x2=\"223.33\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"268.67\" y1=\"24\" x2=\"268.67\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"314\" y1=\"24\" x2=\"314\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"185.67\" x2=\"314\" y2=\"185.67\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"153.33\" x2=\"314\" y2=\"153.33\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"121\" x2=\"314\" y2=\"121\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"88.67\" x2=\"314\" y2=\"88.67\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"56.33\" x2=\"314\" y2=\"56.33\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"24\" x2=\"314\" y2=\"24\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"218\" x2=\"322\" y2=\"218\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"42\" y1=\"218\" x2=\"42\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M322,218 l-7,-3.5 v7 z\" fill=\"currentColor\"/><path d=\"M42,16 l-3.5,7 h7 z\" fill=\"currentColor\"/><line x1=\"42\" y1=\"215\" x2=\"42\" y2=\"221\" stroke=\"currentColor\"/><line x1=\"87.33\" y1=\"215\" x2=\"87.33\" y2=\"221\" stroke=\"currentColor\"/><text x=\"87.33\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.2</text><line x1=\"132.67\" y1=\"215\" x2=\"132.67\" y2=\"221\" stroke=\"currentColor\"/><text x=\"132.67\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.4</text><line x1=\"178\" y1=\"215\" x2=\"178\" y2=\"221\" stroke=\"currentColor\"/><text x=\"178\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.6</text><line x1=\"223.33\" y1=\"215\" x2=\"223.33\" y2=\"221\" stroke=\"currentColor\"/><text x=\"223.33\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.8</text><line x1=\"268.67\" y1=\"215\" x2=\"268.67\" y2=\"221\" stroke=\"currentColor\"/><text x=\"268.67\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"314\" y1=\"215\" x2=\"314\" y2=\"221\" stroke=\"currentColor\"/><text x=\"314\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1.2</text><line x1=\"39\" y1=\"218\" x2=\"45\" y2=\"218\" stroke=\"currentColor\"/><line x1=\"39\" y1=\"185.67\" x2=\"45\" y2=\"185.67\" stroke=\"currentColor\"/><text x=\"37\" y=\"189.67\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.4</text><line x1=\"39\" y1=\"153.33\" x2=\"45\" y2=\"153.33\" stroke=\"currentColor\"/><text x=\"37\" y=\"157.33\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.8</text><line x1=\"39\" y1=\"121\" x2=\"45\" y2=\"121\" stroke=\"currentColor\"/><text x=\"37\" y=\"125\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1.2</text><line x1=\"39\" y1=\"88.67\" x2=\"45\" y2=\"88.67\" stroke=\"currentColor\"/><text x=\"37\" y=\"92.67\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1.6</text><line x1=\"39\" y1=\"56.33\" x2=\"45\" y2=\"56.33\" stroke=\"currentColor\"/><text x=\"37\" y=\"60.33\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"39\" y1=\"24\" x2=\"45\" y2=\"24\" stroke=\"currentColor\"/><text x=\"37\" y=\"28\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2.4</text><text x=\"37\" y=\"232\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><text x=\"314\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">log₁₀ x</text><text x=\"50\" y=\"14\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">log₁₀ y</text><polyline points=\"42,179.2 314,33.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"87.33\" cy=\"154.95\" r=\"3\" fill=\"currentColor\"/><circle cx=\"268.67\" cy=\"57.95\" r=\"3\" fill=\"currentColor\"/><text x=\"93.33\" y=\"170.95\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">(0.2, 0.78)</text><text x=\"262.67\" y=\"51.95\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">(1.0, 1.98)</text></svg>",
+  "question": "A scientist believes two variables are related by $y = ax^n$. She plots $\\log_{10} y$ against $\\log_{10} x$ and obtains the straight line shown, which passes through $(0.2, 0.78)$ and $(1.0, 1.98)$.\n\nMia's working is shown below.\n\n\"Gradient $= \\dfrac{1.98 - 0.78}{1.0 - 0.2} = 1.5$, so $n = 1.5$.\n\nIntercept: $0.78 - 1.5 \\times 0.2 = 0.48$, so $a = 0.48$.\n\nThe model is $y = 0.48x^{1.5}$.\"\n\n(a) Explain the error in Mia's working.\n\n(b) Find the correct model, giving $a$ to 3 significant figures, and check it using the point $(1.0, 1.98)$.",
+  "hint": "Take logs of $y = ax^n$. Which quantity does the intercept on the $\\log_{10} y$ axis actually represent?",
+  "answer": "(a) The intercept is $\\log_{10} a$, not $a$. (b) $y = 3.02x^{1.5}$",
+  "solution": "**(a)** Taking logs of $y = ax^n$:\n$$\\log_{10} y = n\\log_{10} x + \\log_{10} a$$\nComparing with $Y = mX + c$: the gradient is $n$ (Mia is right that $n = 1.5$), but the intercept is $\\log_{10} a$, **not** $a$. Mia forgot to undo the logarithm.\n\n**(b)** $\\log_{10} a = 0.48 \\Rightarrow a = 10^{0.48} = 3.0199\\ldots = 3.02$ (3 s.f.)\n\nModel: $y = 3.02x^{1.5}$\n\nCheck with $(1.0, 1.98)$: this point means $x = 10^{1.0} = 10$ and $y = 10^{1.98} = 95.5$.\nModel: $3.02 \\times 10^{1.5} = 3.02 \\times 31.62 = 95.5$ ✓\n\n(Mia's model would give $0.48 \\times 31.62 = 15.2$, far too small.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q08",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "The value, £$V$, of a car $t$ years after it is bought new is modelled by\n$$V = 18\\,000e^{-0.15t}$$\n\n(a) Write down the price of the car when new.\n\n(b) Find the value of the car 4 years after it is bought, to the nearest pound.\n\n(c) Explain how the model shows that the value of the car is decreasing.",
+  "hint": "Put $t = 0$ for the price when new. Remember $e^0 = 1$.",
+  "answer": "(a) £18 000 (b) £9879 (c) The power $-0.15t$ is negative, so $e^{-0.15t}$ decreases as $t$ increases.",
+  "solution": "**(a)** When new, $t = 0$: $V = 18\\,000e^{0} = 18\\,000 \\times 1 = 18\\,000$. The car cost £18 000.\n\n**(b)** $t = 4$:\n$$V = 18\\,000e^{-0.15 \\times 4} = 18\\,000e^{-0.6} = 9878.6\\ldots$$\nThe value is £9879 (nearest pound).\n\n**(c)** The constant $k = -0.15$ is negative, so this is exponential **decay**: as $t$ increases, $e^{-0.15t}$ gets smaller (towards 0), so $V$ decreases. (Each year the value is multiplied by $e^{-0.15} \\approx 0.861$, a loss of about 14% per year.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q09",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A set of experimental data is shown in the table.\n\n| $x$ | 1 | 2 | 4 | 8 | 16 |\n|---|---|---|---|---|---|\n| $y$ | 3.0 | 8.5 | 24.0 | 67.9 | 192.0 |\n\nSam says: \"To test the model $y = ax^n$ I should plot $\\log_{10} y$ against $x$. If it is a straight line, the gradient is $n$.\"\n\n(a) Explain why Sam is wrong, and state which graph should be plotted.\n\n(b) By calculating suitable logarithms, decide whether the data fit a model of the form $y = ax^n$ or $y = kb^x$. Justify your answer and find the constants of the model you choose.",
+  "hint": "Take logs of $y = ax^n$ and compare with $Y = mX + c$: which variable has to go on the horizontal axis? Then work out $\\log_{10} x$ and $\\log_{10} y$ for each pair.",
+  "answer": "(a) $\\log_{10} y = n\\log_{10} x + \\log_{10} a$ is linear in $\\log_{10} x$, not $x$; plot $\\log_{10} y$ against $\\log_{10} x$.\n(b) $y = ax^n$ with $n = 1.5$, $a = 3$, i.e. $y = 3x^{1.5}$.",
+  "solution": "**(a)** Taking logs of $y = ax^n$:\n$$\\log_{10} y = n\\log_{10} x + \\log_{10} a$$\nThis is a straight line when $\\log_{10} y$ is plotted against $\\log_{10} x$ (not against $x$). Plotting $\\log_{10} y$ against $x$ gives a straight line for the other model, $y = kb^x$, and then the gradient is $\\log_{10} b$, not a constant of the power model.\n\n**(b)** Work out the logs (3 d.p.):\n\n| $x$ | 1 | 2 | 4 | 8 | 16 |\n|---|---|---|---|---|---|\n| $\\log_{10} x$ | 0 | 0.301 | 0.602 | 0.903 | 1.204 |\n| $\\log_{10} y$ | 0.477 | 0.929 | 1.380 | 1.832 | 2.283 |\n\n$\\log_{10} y$ against $\\log_{10} x$: each step of 0.301 in $\\log_{10} x$ gives a step of about $0.451$ in $\\log_{10} y$, a constant gradient of $\\frac{0.451}{0.301} = 1.5$. So the points are collinear and $y = ax^n$ fits.\n\n$\\log_{10} y$ against $x$: the $x$-steps are 1, 2, 4, 8 while the $\\log_{10} y$ steps are all about 0.451, so the gradients are $0.451, 0.226, 0.113, 0.056$, not constant. The points are not collinear, so $y = kb^x$ does not fit.\n\nConstants: gradient $n = 1.5$; intercept (at $\\log_{10} x = 0$) is $\\log_{10} a = 0.477$, so $a = 10^{0.477} = 3.00$.\n\nModel: $y = 3x^{1.5}$. Check: $x = 8$ gives $3 \\times 8^{1.5} = 67.9$ ✓\n\n(Alternative view: every time $x$ doubles, $y$ is multiplied by about 2.83 $= 2^{1.5}$. A constant multiplier for a constant *ratio* of $x$ is the signature of a power law; $y = kb^x$ would need a constant multiplier for a constant *difference* in $x$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q10",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 3,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><line x1=\"85.67\" y1=\"24\" x2=\"85.67\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"131.33\" y1=\"24\" x2=\"131.33\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"177\" y1=\"24\" x2=\"177\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"222.67\" y1=\"24\" x2=\"222.67\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"268.33\" y1=\"24\" x2=\"268.33\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"314\" y1=\"24\" x2=\"314\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"190.29\" x2=\"314\" y2=\"190.29\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"162.57\" x2=\"314\" y2=\"162.57\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"134.86\" x2=\"314\" y2=\"134.86\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"107.14\" x2=\"314\" y2=\"107.14\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"79.43\" x2=\"314\" y2=\"79.43\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"51.71\" x2=\"314\" y2=\"51.71\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"24\" x2=\"314\" y2=\"24\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"218\" x2=\"322\" y2=\"218\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40\" y1=\"218\" x2=\"40\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M322,218 l-7,-3.5 v7 z\" fill=\"currentColor\"/><path d=\"M40,16 l-3.5,7 h7 z\" fill=\"currentColor\"/><line x1=\"40\" y1=\"215\" x2=\"40\" y2=\"221\" stroke=\"currentColor\"/><line x1=\"85.67\" y1=\"215\" x2=\"85.67\" y2=\"221\" stroke=\"currentColor\"/><text x=\"85.67\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"131.33\" y1=\"215\" x2=\"131.33\" y2=\"221\" stroke=\"currentColor\"/><text x=\"131.33\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"177\" y1=\"215\" x2=\"177\" y2=\"221\" stroke=\"currentColor\"/><text x=\"177\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"222.67\" y1=\"215\" x2=\"222.67\" y2=\"221\" stroke=\"currentColor\"/><text x=\"222.67\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8</text><line x1=\"268.33\" y1=\"215\" x2=\"268.33\" y2=\"221\" stroke=\"currentColor\"/><text x=\"268.33\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10</text><line x1=\"314\" y1=\"215\" x2=\"314\" y2=\"221\" stroke=\"currentColor\"/><text x=\"314\" y=\"233\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">12</text><line x1=\"37\" y1=\"218\" x2=\"43\" y2=\"218\" stroke=\"currentColor\"/><line x1=\"37\" y1=\"190.29\" x2=\"43\" y2=\"190.29\" stroke=\"currentColor\"/><text x=\"35\" y=\"194.29\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.5</text><line x1=\"37\" y1=\"162.57\" x2=\"43\" y2=\"162.57\" stroke=\"currentColor\"/><text x=\"35\" y=\"166.57\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"37\" y1=\"134.86\" x2=\"43\" y2=\"134.86\" stroke=\"currentColor\"/><text x=\"35\" y=\"138.86\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1.5</text><line x1=\"37\" y1=\"107.14\" x2=\"43\" y2=\"107.14\" stroke=\"currentColor\"/><text x=\"35\" y=\"111.14\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"37\" y1=\"79.43\" x2=\"43\" y2=\"79.43\" stroke=\"currentColor\"/><text x=\"35\" y=\"83.43\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2.5</text><line x1=\"37\" y1=\"51.71\" x2=\"43\" y2=\"51.71\" stroke=\"currentColor\"/><text x=\"35\" y=\"55.71\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"37\" y1=\"24\" x2=\"43\" y2=\"24\" stroke=\"currentColor\"/><text x=\"35\" y=\"28\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">3.5</text><text x=\"35\" y=\"232\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><text x=\"314\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">t (weeks)</text><text x=\"48\" y=\"14\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">log₁₀ P</text><polyline points=\"40,84.97 314,38.41\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"40\" cy=\"84.97\" r=\"3\" fill=\"currentColor\"/><circle cx=\"268.33\" cy=\"46.17\" r=\"3\" fill=\"currentColor\"/><text x=\"46\" y=\"100.97\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">(0, 2.4)</text><text x=\"264.33\" y=\"38.17\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">(10, 3.1)</text></svg>",
+  "calculator": true,
+  "question": "The number of subscribers, $P$, to a new online channel is recorded for 10 weeks after launch. A model of the form\n$$P = ab^t$$\nis proposed, where $t$ is the time in weeks and $a$ and $b$ are constants.\n\nThe graph of $\\log_{10} P$ against $t$ is a straight line passing through $(0, 2.4)$ and $(10, 3.1)$, as shown.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $P = ab^t$ can be written in the form $\\log_{10} P = mt + c$, stating $m$ and $c$ in terms of $a$ and $b$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the values of $a$ and $b$, giving your answers to 3 significant figures.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Interpret the value of $b$ in the context of the model.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Use the model to estimate the number of subscribers 20 weeks after launch, and comment on the reliability of this estimate.",
+    "marks": 2
+   }
+  ],
+  "marks": 9,
+  "hint": "Take $\\log_{10}$ of both sides and use the laws of logs. The gradient and intercept of the line are logarithms of the constants.",
+  "answer": "(a) $\\log_{10} P = (\\log_{10} b)t + \\log_{10} a$; $m = \\log_{10} b$, $c = \\log_{10} a$\n(b) $a = 251$, $b = 1.17$\n(c) The number of subscribers is multiplied by about 1.17 each week (about 17.5% growth per week).\n(d) About 6310; unreliable, as it extrapolates beyond the 10 weeks of data.",
+  "solution": "**(a)** $\\log_{10} P = \\log_{10}(ab^t) = \\log_{10} a + \\log_{10}(b^t) = \\log_{10} a + t\\log_{10} b$ **M1**\n\nSo $\\log_{10} P = (\\log_{10} b)t + \\log_{10} a$, with $m = \\log_{10} b$ and $c = \\log_{10} a$. **A1**\n\n**(b)** Gradient $= \\dfrac{3.1 - 2.4}{10 - 0} = 0.07$ **M1**\n\n$\\log_{10} a = 2.4 \\Rightarrow a = 10^{2.4} = 251.18\\ldots = 251$ (3 s.f.) **M1 A1**\n\n$\\log_{10} b = 0.07 \\Rightarrow b = 10^{0.07} = 1.1748\\ldots = 1.17$ (3 s.f.) **A1**\n\n(Common error: giving $a = 2.4$ or $b = 0.07$; the intercept and gradient are logs of the constants.)\n\n**(c)** Each week the number of subscribers is multiplied by 1.17, i.e. it grows by about 17.5% per week. **B1**\n\n(Also $a = 251$ is the number of subscribers at launch.)\n\n**(d)** $\\log_{10} P = 2.4 + 0.07 \\times 20 = 3.8 \\Rightarrow P = 10^{3.8} = 6309.5\\ldots \\approx 6310$ **B1**\n\nThe data only cover $0 \\le t \\le 10$, so this is extrapolation; growth of 17.5% per week is unlikely to continue indefinitely, so the estimate may be unreliable (probably an overestimate). **B1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q11",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A cup of tea is made with water at $95\\,°\\text{C}$ and left in a room. Its temperature, $\\theta\\,°\\text{C}$, $t$ minutes later is modelled by\n$$\\theta = 20 + 75e^{-kt}$$\nwhere $k$ is a positive constant. After 5 minutes the temperature is $60\\,°\\text{C}$.\n\n(a) Find the value of $k$, giving your answer to 3 significant figures.\n\n(b) Find how long it takes for the tea to cool to $30\\,°\\text{C}$, giving your answer to the nearest minute.\n\n(c) State the temperature of the room according to the model, and give one limitation of the model.",
+  "hint": "Substitute $t = 5$ and $\\theta = 60$, rearrange to get $e^{-5k}$ on its own, then take natural logs.",
+  "answer": "(a) $k = 0.126$ (b) 16 minutes (c) $20\\,°\\text{C}$; e.g. the model predicts the tea never actually reaches room temperature, or it assumes the room temperature stays constant.",
+  "solution": "**(a)** At $t = 5$:\n$$60 = 20 + 75e^{-5k} \\Rightarrow e^{-5k} = \\frac{40}{75} = \\frac{8}{15}$$\n$$-5k = \\ln\\tfrac{8}{15} \\Rightarrow k = \\frac{1}{5}\\ln\\tfrac{15}{8} = 0.12572\\ldots$$\n$k = 0.126$ (3 s.f.)\n\n**(b)** $30 = 20 + 75e^{-kt} \\Rightarrow e^{-kt} = \\frac{10}{75} = \\frac{2}{15}$\n$$t = \\frac{\\ln 7.5}{k} = \\frac{2.0149\\ldots}{0.12572\\ldots} = 16.03\\ldots$$\n(Use the unrounded $k$.) It takes about **16 minutes**.\n\n**(c)** As $t \\to \\infty$, $e^{-kt} \\to 0$, so $\\theta \\to 20$: the room is at $20\\,°\\text{C}$.\n\nLimitations (any one): the model says the tea gets ever closer to $20\\,°\\text{C}$ but never reaches it; it assumes the room temperature stays constant; it ignores things like stirring, adding milk or the cup absorbing heat.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q12",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 4,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "calculator": true,
+  "question": "The table shows the mean distance from the Sun, $r$ (in astronomical units, AU), and the orbital period, $T$ (in years), of three planets.\n\n| Planet | Mercury | Venus | Jupiter |\n|---|---|---|---|\n| $r$ (AU) | 0.387 | 0.723 | 5.203 |\n| $T$ (years) | 0.241 | 0.615 | 11.86 |\n\nIt is suggested that $T$ and $r$ are related by $T = ar^n$, where $a$ and $n$ are constants.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that this relationship gives a straight line when $\\log_{10} T$ is plotted against $\\log_{10} r$, and state the gradient and the intercept of the line.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Using the data for Mercury and Jupiter only, find the values of $n$ and $a$. Give each answer to 2 significant figures.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Saturn has a mean distance from the Sun of 9.537 AU. Use your model to estimate the orbital period of Saturn, giving your answer to 3 significant figures.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Use the data for Venus to comment on the suitability of the model.",
+    "marks": 2
+   }
+  ],
+  "marks": 10,
+  "hint": "Find $\\log_{10} r$ and $\\log_{10} T$ for Mercury and Jupiter: these are two points on the line. The gradient is $n$ itself; the intercept is $\\log_{10} a$.",
+  "answer": "(a) $\\log_{10} T = n\\log_{10} r + \\log_{10} a$: gradient $n$, intercept $\\log_{10} a$\n(b) $n = 1.5$, $a = 1.0$\n(c) 29.5 years\n(d) Model gives $0.723^{1.5} = 0.615$ years, matching the data, so the model is suitable.",
+  "solution": "**(a)** $\\log_{10} T = \\log_{10}(ar^n) = \\log_{10} a + n\\log_{10} r$ **M1**\n\nThis is of the form $Y = mX + c$ with $Y = \\log_{10} T$, $X = \\log_{10} r$: a straight line with gradient $n$ and intercept $\\log_{10} a$. **A1**\n\n**(b)** Points $(\\log_{10} r, \\log_{10} T)$ to 3 d.p.:\nMercury $(-0.412, -0.618)$, Jupiter $(0.716, 1.074)$ **M1**\n\n$$n = \\frac{1.074 - (-0.618)}{0.716 - (-0.412)} = \\frac{1.692}{1.128} = 1.500\\ldots$$\n$n = 1.5$ (2 s.f.) **M1 A1**\n\nIntercept: $\\log_{10} a = -0.618 - 1.5 \\times (-0.412) = -0.618 + 0.618 = 0.000$ (to 3 d.p.)\n\n$a = 10^{0.000} = 1.0$ (2 s.f.) **A1**\n\n(Note: the gradient gives $n$ directly, because the horizontal axis is $\\log_{10} r$; it is the intercept that must be \"un-logged\".)\n\n**(c)** $T = 1.0 \\times 9.537^{1.5}$ **M1**\n$= 29.45\\ldots = 29.5$ years (3 s.f.) **A1**\n\n**(d)** Model for Venus: $T = 0.723^{1.5} = 0.6147\\ldots \\approx 0.615$ years **M1**\n\nThis agrees with the observed period of 0.615 years, so the model fits well (a point not used to find the constants fits the line), supporting the model. **A1**\n\n(This is Kepler's third law: $T^2 = r^3$ when $T$ is in years and $r$ in AU.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q13",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The number of users, $N$, of a new app $t$ months after launch is modelled by $N = Ae^{kt}$, where $A$ and $k$ are constants.\n\nAfter 2 months there are 320 users and after 7 months there are 1250 users.\n\n(a) Find the values of $k$ and $A$, giving $k$ to 3 significant figures and $A$ to the nearest whole number.\n\n(b) Find the percentage increase in users per month predicted by the model.\n\n(c) The company will add a second server when the number of users first exceeds 10 000. Find in which month after launch this happens.",
+  "hint": "Write two equations and divide one by the other: $A$ cancels, leaving an equation in $e^{5k}$.",
+  "answer": "(a) $k = 0.273$, $A = 186$ (b) about 31.3% per month (c) during the 15th month (at $t \\approx 14.6$)",
+  "solution": "**(a)** $Ae^{2k} = 320$ and $Ae^{7k} = 1250$.\n\nDivide the second by the first:\n$$e^{5k} = \\frac{1250}{320} = 3.90625$$\n$$k = \\frac{\\ln 3.90625}{5} = 0.27251\\ldots = 0.273 \\text{ (3 s.f.)}$$\n\nThen $A = 320e^{-2k} = 320e^{-0.54503\\ldots} = 185.54\\ldots$, so $A = 186$ (nearest whole number).\n\n**(b)** Each month $N$ is multiplied by $e^{k} = e^{0.27251\\ldots} = 1.3133\\ldots$, an increase of about **31.3%** per month.\n\n**(c)** $Ae^{kt} > 10\\,000 \\Rightarrow e^{kt} > \\frac{10\\,000}{185.54\\ldots}$\n$$t > \\frac{1}{k}\\ln\\left(\\frac{10\\,000}{185.54\\ldots}\\right) = \\frac{3.9869\\ldots}{0.27251\\ldots} = 14.63\\ldots$$\n\nThe number of users first exceeds 10 000 at $t \\approx 14.6$, i.e. during the **15th month** after launch. (Using the unrounded constants avoids rounding errors.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q14",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-derivatives-exp-log-trig"
+  ],
+  "question": "The number of bacteria, $N$, in a culture $t$ hours after it is set up is modelled by\n$$N = 400e^{0.25t}$$\n\n(a) Find $\\dfrac{dN}{dt}$ and show that the rate of growth is proportional to $N$.\n\n(b) Find the rate at which the population is increasing when $t = 6$, to the nearest whole number.\n\n(c) Find the exact time at which the population is increasing at a rate of 1000 bacteria per hour, and the number of bacteria at that time.",
+  "hint": "$\\dfrac{d}{dt}\\left(e^{kt}\\right) = ke^{kt}$. For (c), set the derivative equal to 1000 and solve with logs.",
+  "answer": "(a) $\\dfrac{dN}{dt} = 100e^{0.25t} = 0.25N$ (b) 448 bacteria per hour (c) $t = 4\\ln 10 \\approx 9.21$ hours; $N = 4000$",
+  "solution": "**(a)** $\\dfrac{dN}{dt} = 400 \\times 0.25e^{0.25t} = 100e^{0.25t}$\n\nSince $N = 400e^{0.25t}$, $\\dfrac{dN}{dt} = 0.25 \\times 400e^{0.25t} = 0.25N$, so the rate of growth is proportional to $N$ (constant of proportionality 0.25).\n\n**(b)** $t = 6$: $\\dfrac{dN}{dt} = 100e^{1.5} = 448.16\\ldots$, about **448 bacteria per hour**.\n\n**(c)** $100e^{0.25t} = 1000 \\Rightarrow e^{0.25t} = 10$\n$$0.25t = \\ln 10 \\Rightarrow t = 4\\ln 10 \\approx 9.21 \\text{ hours}$$\n\nThen $N = 400 \\times 10 = 4000$ (or: $\\frac{dN}{dt} = 0.25N = 1000 \\Rightarrow N = 4000$)."
+ },
+ {
+  "id": "pure-exponential-modelling-q15",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-geometric-series",
+   "rat-compound-growth-decay"
+  ],
+  "question": "At the start of every year Hannah pays £2000 into a savings account. The account pays 3.5% interest per year, added at the end of each year. No money is withdrawn.\n\n(a) Show that the amount in the account at the end of the $n$th year is\n$$£\\,\\frac{2070(1.035^n - 1)}{0.035}$$\n\n(b) Find the number of complete years after which the amount in the account first exceeds £50 000.\n\n(c) Hannah's sister wants exactly £50 000 at the end of 15 years, paying the same amount $£D$ at the start of each year into the same type of account. Find $D$ to the nearest penny.",
+  "hint": "Track each £2000 payment separately: the first payment earns interest for $n$ years, the last for 1 year. The total is a geometric series. In (b) you will need to solve an inequality of the form $1.035^n > c$ using logs.",
+  "answer": "(a) Shown (b) 18 years (c) $D = £2503.63$",
+  "solution": "**(a)** At the end of year $n$:\n* the 1st payment has grown for $n$ years: $2000 \\times 1.035^n$\n* the 2nd for $n - 1$ years: $2000 \\times 1.035^{n-1}$\n* …\n* the last payment for 1 year: $2000 \\times 1.035$\n\nTotal $= 2000(1.035 + 1.035^2 + \\cdots + 1.035^n)$, a geometric series with first term $2000 \\times 1.035 = 2070$, ratio $1.035$, $n$ terms:\n$$S_n = \\frac{2070(1.035^n - 1)}{1.035 - 1} = \\frac{2070(1.035^n - 1)}{0.035}$$\n\n**(b)** Need\n$$\\frac{2070(1.035^n - 1)}{0.035} > 50\\,000$$\n$$1.035^n - 1 > \\frac{1750}{2070} \\Rightarrow 1.035^n > 1.84541\\ldots$$\n\nTake logs (both sides positive, $\\ln 1.035 > 0$ so the inequality is unchanged):\n$$n > \\frac{\\ln 1.84541\\ldots}{\\ln 1.035} = 17.81\\ldots$$\n\nSo $n = 18$. Check: $S_{17} = £46\\,999.38 < 50\\,000$, $S_{18} = £50\\,714.36 > 50\\,000$ ✓. The amount first exceeds £50 000 after **18 years**.\n\n**(c)** $\\dfrac{1.035D(1.035^{15} - 1)}{0.035} = 50\\,000$\n$$D = \\frac{50\\,000 \\times 0.035}{1.035(1.035^{15} - 1)} = \\frac{1750}{1.035 \\times 0.67534\\ldots} = 2503.626\\ldots$$\n$D = £2503.63$"
+ },
+ {
+  "id": "pure-exponential-modelling-q16",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find all real solutions of\n$$4^x + 6^x = 9^x$$\ngiving your answer in exact form and to 4 significant figures. Explain how you know there are no other solutions.",
+  "hint": "Divide every term by $4^x$. Then $\\left(\\frac{9}{4}\\right)^x$ is the square of $\\left(\\frac{3}{2}\\right)^x$.",
+  "answer": "$x = \\dfrac{\\ln\\left(\\frac{1 + \\sqrt{5}}{2}\\right)}{\\ln 1.5} = 1.187$ (4 s.f.); the only solution.",
+  "solution": "Logs cannot be taken term by term ($\\ln(4^x + 6^x) \\ne \\ln 4^x + \\ln 6^x$), so look for a hidden quadratic. Divide by $4^x$ (which is never 0):\n$$1 + \\left(\\tfrac{6}{4}\\right)^x = \\left(\\tfrac{9}{4}\\right)^x$$\n\nLet $y = \\left(\\frac{3}{2}\\right)^x$. Then $\\left(\\frac{9}{4}\\right)^x = \\left(\\left(\\frac{3}{2}\\right)^2\\right)^x = y^2$:\n$$y^2 - y - 1 = 0 \\Rightarrow y = \\frac{1 \\pm \\sqrt{5}}{2}$$\n\nSince $y = 1.5^x > 0$ for all real $x$, reject $y = \\frac{1 - \\sqrt{5}}{2} < 0$. So\n$$1.5^x = \\frac{1 + \\sqrt{5}}{2} \\Rightarrow x = \\frac{\\ln\\left(\\frac{1 + \\sqrt{5}}{2}\\right)}{\\ln 1.5} = \\frac{0.48121\\ldots}{0.40546\\ldots} = 1.1868\\ldots$$\n\n$x = 1.187$ (4 s.f.)\n\n**No other solutions:** every real $x$ gives exactly one positive $y$, and the quadratic has only one positive root. Also $y = 1.5^x$ is one-to-one (strictly increasing), so this value of $y$ corresponds to exactly one $x$.\n\nCheck: $4^{1.1868} + 6^{1.1868} \\approx 5.18 + 8.38 = 13.56$ and $9^{1.1868} \\approx 13.56$ ✓\n\n(The positive root is the golden ratio $\\varphi$, so $x = \\log_{1.5}\\varphi$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponential-modelling-q17",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "calc-derivatives-exp-log-trig"
+  ],
+  "question": "After a tablet is swallowed, the concentration, $C$ mg per litre, of a drug in a patient's blood $t$ hours later is modelled by\n$$C = 12\\left(e^{-0.2t} - e^{-0.8t}\\right), \\quad t \\ge 0$$\n\n(a) Show that the concentration is greatest when $e^{0.6t} = 4$.\n\n(b) Hence find the exact time at which the concentration is greatest, and the maximum concentration to 3 significant figures.\n\n(c) Describe what happens to $C$ in the long term and explain why this is realistic.",
+  "hint": "Differentiate and set $\\dfrac{dC}{dt} = 0$. Multiply through by $e^{0.8t}$ to combine the exponentials.",
+  "answer": "(a) Shown (b) $t = \\dfrac{\\ln 4}{0.6} = \\dfrac{5}{3}\\ln 4 \\approx 2.31$ hours; $C_{\\max} = 5.67$ mg per litre (c) $C \\to 0$: the body gradually removes the drug.",
+  "solution": "**(a)** $\\dfrac{dC}{dt} = 12\\left(-0.2e^{-0.2t} + 0.8e^{-0.8t}\\right)$\n\nAt a stationary point $\\dfrac{dC}{dt} = 0$:\n$$0.8e^{-0.8t} = 0.2e^{-0.2t}$$\nMultiply both sides by $e^{0.8t}$:\n$$0.8 = 0.2e^{0.6t} \\Rightarrow e^{0.6t} = 4$$\n\nIt is a maximum: for small $t$, $\\frac{dC}{dt} > 0$ (at $t = 0$ it is $12 \\times 0.6 = 7.2$), and for large $t$ the $-0.2e^{-0.2t}$ term dominates so $\\frac{dC}{dt} < 0$; there is only one stationary point.\n\n**(b)** $0.6t = \\ln 4 \\Rightarrow t = \\dfrac{\\ln 4}{0.6} = \\dfrac{5}{3}\\ln 4 = 2.3104\\ldots \\approx 2.31$ hours.\n\nAt this time $e^{-0.2t} = (e^{0.6t})^{-1/3} = 4^{-1/3}$ and $e^{-0.8t} = 4^{-4/3}$, so\n$$C = 12\\left(4^{-1/3} - 4^{-4/3}\\right) = 12 \\times 4^{-1/3}\\left(1 - \\tfrac{1}{4}\\right) = 9 \\times 4^{-1/3} = 5.6696\\ldots$$\nMaximum concentration $= 5.67$ mg per litre (3 s.f.).\n\n**(c)** As $t \\to \\infty$, $e^{-0.2t} \\to 0$ and $e^{-0.8t} \\to 0$, so $C \\to 0$. This is realistic: the drug is gradually broken down and removed by the body, so after a long time there is effectively none left in the blood."
+ },
+ {
+  "id": "pure-exponential-modelling-q18",
+  "topicId": "pure-exponential-modelling",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Data that follow a model $y = kb^x$ (with $k > 0$, $b > 1$) are plotted as $\\log_{10} y$ against $x$. The result is a straight line with gradient $m$.\n\n(a) Prove that the value of $y$ doubles every time $x$ increases by $\\dfrac{\\log_{10} 2}{m}$, whatever the value of $k$.\n\n(b) For the number of cases of an infection, the line of $\\log_{10} y$ against $x$ (in days) has gradient 0.0602. Ravi says: \"So the doubling time is $\\frac{2}{0.0602} \\approx 33$ days.\" Is Ravi correct? Justify your answer.",
+  "hint": "Write down what the gradient represents in terms of $b$. Then solve $kb^{x + d} = 2kb^x$ for $d$.",
+  "answer": "(a) Proof: $kb^{x+d} = 2kb^x \\Rightarrow b^d = 2 \\Rightarrow d = \\dfrac{\\log_{10} 2}{\\log_{10} b} = \\dfrac{\\log_{10} 2}{m}$\n(b) No: doubling time $= \\dfrac{\\log_{10} 2}{0.0602} \\approx 5.0$ days.",
+  "solution": "**(a)** Taking logs: $\\log_{10} y = (\\log_{10} b)x + \\log_{10} k$, so the gradient is $m = \\log_{10} b$ (not $b$).\n\nSuppose $y$ doubles when $x$ increases by $d$. Then for any $x$:\n$$kb^{x + d} = 2kb^x$$\nDivide by $kb^x$ (which is non-zero):\n$$b^d = 2$$\nTake $\\log_{10}$:\n$$d\\log_{10} b = \\log_{10} 2 \\Rightarrow d = \\frac{\\log_{10} 2}{\\log_{10} b} = \\frac{\\log_{10} 2}{m}$$\n\n$k$ cancelled, so the doubling time is the same whatever $k$ (and whatever the starting value of $x$). $\\blacksquare$\n\n**(b)** Ravi is **not** correct: he has used 2 instead of $\\log_{10} 2$. The doubling time is\n$$\\frac{\\log_{10} 2}{0.0602} = \\frac{0.30103}{0.0602} = 5.00\\ldots \\approx 5.0 \\text{ days}$$\n\nCheck: $b = 10^{0.0602} = 1.1487$, and $1.1487^5 = 2.00$ ✓",
+  "linkedTopicIds": []
+ }
+]

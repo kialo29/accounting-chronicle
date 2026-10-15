@@ -1,0 +1,269 @@
+[
+ {
+  "id": "pure-trig-compound-angles-q01",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use $75° = 45° + 30°$ to find the exact value of $\\sin 75°$.",
+  "hint": "Use $\\sin(A + B) \\equiv \\sin A\\cos B + \\cos A\\sin B$ with $A = 45°$, $B = 30°$. You cannot just add $\\sin 45°$ and $\\sin 30°$.",
+  "answer": "$\\sin 75° = \\dfrac{\\sqrt{6} + \\sqrt{2}}{4}$",
+  "solution": "$$\\sin(45° + 30°) = \\sin 45°\\cos 30° + \\cos 45°\\sin 30°$$\n\nExact values: $\\sin 45° = \\cos 45° = \\frac{\\sqrt{2}}{2}$, $\\cos 30° = \\frac{\\sqrt{3}}{2}$, $\\sin 30° = \\frac{1}{2}$.\n$$= \\frac{\\sqrt{2}}{2} \\times \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\times \\frac{1}{2} = \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}$$\n\nCheck: $\\frac{\\sqrt{6} + \\sqrt{2}}{4} \\approx 0.966$, and a calculator gives $\\sin 75° \\approx 0.966$ ✓.\n\n(Adding $\\sin 45° + \\sin 30° = \\frac{\\sqrt{2} + 1}{2} \\approx 1.21$ cannot be right: a sine is never bigger than 1.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q02",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use $75° = 45° + 30°$ to find the exact value of $\\cos 75°$.",
+  "hint": "$\\cos(A + B) \\equiv \\cos A\\cos B - \\sin A\\sin B$. Watch the sign: it is the opposite of the sign in the bracket.",
+  "answer": "$\\cos 75° = \\dfrac{\\sqrt{6} - \\sqrt{2}}{4}$",
+  "solution": "**What changed:** cosine instead of sine, so we need the cosine addition formula, which has a **minus** sign for $A + B$.\n$$\\cos(45° + 30°) = \\cos 45°\\cos 30° - \\sin 45°\\sin 30°$$\n$$= \\frac{\\sqrt{2}}{2} \\times \\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{2}}{2} \\times \\frac{1}{2} = \\frac{\\sqrt{6} - \\sqrt{2}}{4}$$\n\nCheck: $\\frac{\\sqrt{6} - \\sqrt{2}}{4} \\approx 0.259$ and $\\cos 75° \\approx 0.259$ ✓. (With a plus sign you would get $\\frac{\\sqrt{6} + \\sqrt{2}}{4} \\approx 0.966$, which is $\\cos 15°$, not $\\cos 75°$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q03",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use $75° = 45° + 30°$ to find the exact value of $\\tan 75°$, giving your answer in the form $a + b\\sqrt{3}$ where $a$ and $b$ are integers.",
+  "hint": "$\\tan(A + B) \\equiv \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$, with $\\tan 45° = 1$ and $\\tan 30° = \\frac{1}{\\sqrt{3}}$. Then rationalise the denominator.",
+  "answer": "$\\tan 75° = 2 + \\sqrt{3}$",
+  "solution": "**What changed:** tangent now, so use the tan addition formula (plus on top, minus underneath).\n$$\\tan(45° + 30°) = \\frac{\\tan 45° + \\tan 30°}{1 - \\tan 45°\\tan 30°} = \\frac{1 + \\frac{1}{\\sqrt{3}}}{1 - \\frac{1}{\\sqrt{3}}}$$\n\nMultiply top and bottom by $\\sqrt{3}$:\n$$= \\frac{\\sqrt{3} + 1}{\\sqrt{3} - 1}$$\n\nRationalise by multiplying top and bottom by $\\sqrt{3} + 1$:\n$$= \\frac{(\\sqrt{3} + 1)^2}{3 - 1} = \\frac{4 + 2\\sqrt{3}}{2} = 2 + \\sqrt{3}$$\n\nCheck: $2 + \\sqrt{3} \\approx 3.732$ and $\\tan 75° \\approx 3.732$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q04",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use $15° = 45° - 30°$ to find the exact value of $\\tan 15°$, giving your answer in the form $a + b\\sqrt{3}$ where $a$ and $b$ are integers.",
+  "hint": "$\\tan(A - B) \\equiv \\dfrac{\\tan A - \\tan B}{1 + \\tan A\\tan B}$. Both signs change compared with $\\tan(A + B)$.",
+  "answer": "$\\tan 15° = 2 - \\sqrt{3}$",
+  "solution": "**What changed:** a difference ($45° - 30°$) instead of a sum, so both signs in the tan formula swap.\n$$\\tan(45° - 30°) = \\frac{\\tan 45° - \\tan 30°}{1 + \\tan 45°\\tan 30°} = \\frac{1 - \\frac{1}{\\sqrt{3}}}{1 + \\frac{1}{\\sqrt{3}}} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$$\n\nMultiply top and bottom by $\\sqrt{3} - 1$:\n$$= \\frac{(\\sqrt{3} - 1)^2}{3 - 1} = \\frac{4 - 2\\sqrt{3}}{2} = 2 - \\sqrt{3}$$\n\nCheck: $2 - \\sqrt{3} \\approx 0.268$ and $\\tan 15° \\approx 0.268$ ✓.\n\nNotice that $\\tan 15° = \\frac{1}{\\tan 75°}$: $(2 - \\sqrt{3})(2 + \\sqrt{3}) = 4 - 3 = 1$, as expected since $15° + 75° = 90°$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q05",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The angle $A$ is acute and $\\sin A = \\frac{3}{5}$.\n\nFind the exact values of\n(a) $\\sin 2A$\n(b) $\\cos 2A$\n(c) $\\tan 2A$",
+  "hint": "First find $\\cos A$ (a 3-4-5 triangle helps). Then use $\\sin 2A \\equiv 2\\sin A\\cos A$; it is not $2\\sin A$.",
+  "answer": "(a) $\\frac{24}{25}$ (b) $\\frac{7}{25}$ (c) $\\frac{24}{7}$",
+  "solution": "$A$ is acute, so $\\cos A > 0$: $\\cos A = \\sqrt{1 - \\frac{9}{25}} = \\frac{4}{5}$ (a 3-4-5 right-angled triangle).\n\n**(a)** $\\sin 2A = 2\\sin A\\cos A = 2 \\times \\frac{3}{5} \\times \\frac{4}{5} = \\frac{24}{25}$\n\n(Note $2\\sin A = \\frac{6}{5} > 1$, which could not be a sine, so $\\sin 2A \\ne 2\\sin A$.)\n\n**(b)** $\\cos 2A = \\cos^2 A - \\sin^2 A = \\frac{16}{25} - \\frac{9}{25} = \\frac{7}{25}$\n\n**(c)** $\\tan 2A = \\dfrac{\\sin 2A}{\\cos 2A} = \\dfrac{24/25}{7/25} = \\dfrac{24}{7}$\n\n(Or: $\\tan A = \\frac{3}{4}$, so $\\tan 2A = \\dfrac{2 \\times \\frac{3}{4}}{1 - \\frac{9}{16}} = \\dfrac{3/2}{7/16} = \\dfrac{24}{7}$ ✓.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q06",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Given that $\\sin A = \\frac{5}{13}$ and $90° < A < 180°$, find the exact values of $\\sin 2A$ and $\\cos 2A$.\n\nTom's working is shown below.\n\nLine 1: $\\cos^2 A = 1 - \\frac{25}{169} = \\frac{144}{169}$, so $\\cos A = \\frac{12}{13}$\nLine 2: $\\sin 2A = 2\\sin A\\cos A = 2 \\times \\frac{5}{13} \\times \\frac{12}{13} = \\frac{120}{169}$\nLine 3: $\\cos 2A = 1 - 2\\sin^2 A = 1 - \\frac{50}{169} = \\frac{119}{169}$\n\n(a) Identify Tom's mistake and explain why it is wrong.\n(b) Write down the correct values of $\\sin 2A$ and $\\cos 2A$.",
+  "hint": "Which quadrant is $A$ in? What is the sign of cosine there?",
+  "answer": "(a) $A$ is obtuse, so $\\cos A = -\\frac{12}{13}$, not $+\\frac{12}{13}$. (b) $\\sin 2A = -\\frac{120}{169}$, $\\cos 2A = \\frac{119}{169}$",
+  "solution": "**(a)** The error is in Line 1. $\\cos^2 A = \\frac{144}{169}$ gives $\\cos A = \\pm\\frac{12}{13}$, and Tom took the positive root without thinking about the quadrant. Since $90° < A < 180°$, $A$ is in the second quadrant, where cosine is **negative**:\n$$\\cos A = -\\frac{12}{13}$$\n\n**(b)**\n$$\\sin 2A = 2 \\times \\frac{5}{13} \\times \\left(-\\frac{12}{13}\\right) = -\\frac{120}{169}$$\n\nTom's $\\cos 2A$ is actually correct: $1 - 2\\sin^2 A$ only uses $\\sin^2 A$, so the sign of $\\cos A$ never enters.\n$$\\cos 2A = 1 - 2 \\times \\frac{25}{169} = \\frac{119}{169}$$\n\nSense check: $A \\approx 157.4°$, so $2A \\approx 314.8°$, which is in the fourth quadrant: sine negative, cosine positive ✓.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q07",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Jo writes: \"$\\sin 2x = \\sin(x + x) = \\sin x + \\sin x = 2\\sin x$.\"\n\n(a) Show, with a counter-example, that $\\sin 2x \\equiv 2\\sin x$ is **not** an identity.\n(b) Explain which step in Jo's argument is wrong.\n(c) Find all the values of $x$ in the interval $0° \\le x < 360°$ for which $\\sin 2x = 2\\sin x$ **is** true.",
+  "hint": "(a) Try $x = 90°$. (c) Replace $\\sin 2x$ with $2\\sin x\\cos x$ and factorise; do not divide by $\\sin x$.",
+  "answer": "(a) e.g. $x = 90°$: $\\sin 180° = 0$ but $2\\sin 90° = 2$. (b) $\\sin(x + x) \\ne \\sin x + \\sin x$: sine is not distributive. (c) $x = 0°$ or $x = 180°$",
+  "solution": "**(a)** Take $x = 90°$: $\\sin 2x = \\sin 180° = 0$, but $2\\sin x = 2\\sin 90° = 2$. These are different, so the statement is not true for all $x$ and is not an identity.\n\n**(b)** The step $\\sin(x + x) = \\sin x + \\sin x$ is wrong. Sine is a function, not a multiplier, so it does not \"distribute\" over a sum. The correct expansion is\n$$\\sin(x + x) = \\sin x\\cos x + \\cos x\\sin x = 2\\sin x\\cos x$$\n\n**(c)**\n$$2\\sin x\\cos x = 2\\sin x$$\n$$2\\sin x\\cos x - 2\\sin x = 0$$\n$$2\\sin x(\\cos x - 1) = 0$$\n\n(Dividing by $\\sin x$ would lose the solutions where $\\sin x = 0$.)\n\n$\\sin x = 0 \\Rightarrow x = 0°, 180°$\n\n$\\cos x = 1 \\Rightarrow x = 0°$ (already found)\n\nSo the equation holds only at $x = 0°$ and $x = 180°$, where both sides are 0.",
+  "misconceptionIds": [
+   "m3",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q08",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to express $\\cos(x + 60°) - \\cos(x - 60°)$ in the form $k\\sin x$, and hence to solve $\\cos(x + 60°) - \\cos(x - 60°) = 1.5$ for $0° \\le x < 360°$.\n\nPriya's working is shown below.\n\nLine 1: $\\cos(x + 60°) = \\cos x\\cos 60° + \\sin x\\sin 60°$\nLine 2: $\\cos(x - 60°) = \\cos x\\cos 60° - \\sin x\\sin 60°$\nLine 3: Subtracting: $\\cos(x + 60°) - \\cos(x - 60°) = 2\\sin x\\sin 60° = \\sqrt{3}\\sin x$\nLine 4: $\\sqrt{3}\\sin x = 1.5 \\Rightarrow \\sin x = \\frac{\\sqrt{3}}{2} \\Rightarrow x = 60°, 120°$\n\n(a) Identify and explain Priya's error.\n(b) Give the correct expression and the correct solutions.",
+  "hint": "Check her expansion of $\\cos(x + 60°)$ with $x = 30°$: what is $\\cos 90°$?",
+  "answer": "(a) She used the wrong signs in the cosine formulae: $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$. (b) $-\\sqrt{3}\\sin x$; $x = 240°, 300°$",
+  "solution": "**(a)** Priya has copied the sign in the bracket into the formula. For cosine the sign **swaps**:\n$$\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B, \\qquad \\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B$$\n\nQuick check of her Line 1 with $x = 30°$: her formula gives $\\cos 90° = \\frac{\\sqrt{3}}{2} \\times \\frac{1}{2} + \\frac{1}{2} \\times \\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{3}}{2}$, but $\\cos 90° = 0$.\n\n**(b)**\n$$\\cos(x + 60°) - \\cos(x - 60°) = (\\cos x\\cos 60° - \\sin x\\sin 60°) - (\\cos x\\cos 60° + \\sin x\\sin 60°)$$\n$$= -2\\sin x\\sin 60° = -2 \\times \\frac{\\sqrt{3}}{2}\\sin x = -\\sqrt{3}\\sin x$$\n\nCheck with $x = 90°$: $\\cos 150° - \\cos 30° = -\\frac{\\sqrt{3}}{2} - \\frac{\\sqrt{3}}{2} = -\\sqrt{3}$ ✓.\n\nSolving:\n$$-\\sqrt{3}\\sin x = 1.5 \\Rightarrow \\sin x = -\\frac{1.5}{\\sqrt{3}} = -\\frac{\\sqrt{3}}{2}$$\n\nPrincipal value $-60°$; sine is negative in the third and fourth quadrants:\n$$x = 180° + 60° = 240°, \\quad x = 360° - 60° = 300°$$\n\nHer single sign error flipped the sign of the whole expression, so she found the solutions of $\\sin x = +\\frac{\\sqrt{3}}{2}$ instead.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q09",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "This question uses the product-to-sum, sum-to-product and power-reducing identities:\n$$\\sin A\\cos B \\equiv \\tfrac{1}{2}\\left[\\sin(A + B) + \\sin(A - B)\\right]$$\n$$\\cos P + \\cos Q \\equiv 2\\cos\\frac{P + Q}{2}\\cos\\frac{P - Q}{2}$$\n$$\\cos^2\\theta \\equiv \\tfrac{1}{2}(1 + \\cos 2\\theta)$$\n\nWithout a calculator, find the exact value of\n(a) $\\sin 75°\\cos 15°$\n(b) $\\cos 75° + \\cos 15°$\n(c) $\\cos^2 15°$\n\n(d) Explain why your answers to (a) and (c) are equal.",
+  "hint": "(a) $A + B = 90°$ and $A - B = 60°$. (b) The half-sum is $45°$ and the half-difference is $30°$. (c) Put $\\theta = 15°$.",
+  "answer": "(a) $\\frac{2 + \\sqrt{3}}{4}$ (b) $\\frac{\\sqrt{6}}{2}$ (c) $\\frac{2 + \\sqrt{3}}{4}$ (d) $\\sin 75° = \\cos 15°$, so $\\sin 75°\\cos 15° = \\cos^2 15°$.",
+  "solution": "**(a)** Product-to-sum with $A = 75°$, $B = 15°$:\n$$\\sin 75°\\cos 15° = \\tfrac{1}{2}\\left[\\sin 90° + \\sin 60°\\right] = \\tfrac{1}{2}\\left(1 + \\frac{\\sqrt{3}}{2}\\right) = \\frac{2 + \\sqrt{3}}{4}$$\n\n**(b)** Sum-to-product with $P = 75°$, $Q = 15°$:\n$$\\cos 75° + \\cos 15° = 2\\cos 45°\\cos 30° = 2 \\times \\frac{\\sqrt{2}}{2} \\times \\frac{\\sqrt{3}}{2} = \\frac{\\sqrt{6}}{2}$$\n\n(Check: $0.2588 + 0.9659 = 1.2247$ and $\\frac{\\sqrt{6}}{2} \\approx 1.2247$ ✓.)\n\n**(c)** Power-reducing with $\\theta = 15°$:\n$$\\cos^2 15° = \\tfrac{1}{2}(1 + \\cos 30°) = \\tfrac{1}{2}\\left(1 + \\frac{\\sqrt{3}}{2}\\right) = \\frac{2 + \\sqrt{3}}{4}$$\n\n**(d)** $75°$ and $15°$ are complementary, so $\\sin 75° = \\cos(90° - 75°) = \\cos 15°$. Hence $\\sin 75°\\cos 15° = \\cos 15° \\times \\cos 15° = \\cos^2 15°$: the two expressions are the same number written differently.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q10",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 3,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "mech-projectiles"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 170\" width=\"340\" height=\"170\"><line x1=\"10\" y1=\"135\" x2=\"330\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"30,135 34.7,128.8 39.3,122.8 44,117 48.7,111.4 53.3,106 58,100.8 62.7,95.8 67.3,91.1 72,86.6 76.7,82.2 81.3,78.1 86,74.2 90.7,70.5 95.3,67 100,63.8 104.7,60.7 109.3,57.8 114,55.2 118.7,52.8 123.3,50.6 128,48.5 132.7,46.8 137.3,45.2 142,43.8 146.7,42.6 151.3,41.7 156,40.9 160.7,40.4 165.3,40.1 170,40 174.7,40.1 179.3,40.4 184,41 188.7,41.7 193.3,42.6 198,43.8 202.7,45.2 207.3,46.8 212,48.6 216.7,50.6 221.3,52.8 226,55.2 230.7,57.8 235.3,60.7 240,63.8 244.7,67 249.3,70.5 254,74.2 258.7,78.1 263.3,82.2 268,86.5 272.7,91.1 277.3,95.8 282,100.8 286.7,106 291.3,111.4 296,116.9 300.7,122.8 305.3,128.8 310,135\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"30\" y1=\"135\" x2=\"71.5\" y2=\"78.6\" stroke=\"#3b82f6\" stroke-width=\"2\"/><path d=\"M71.5,78.6 l-2.1,9.6 l-6.4,-4.7 z\" fill=\"#3b82f6\"/><path d=\"M64,135 A34,34 0 0 0 50.2,107.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"70\" y=\"127\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">θ</text><text x=\"37.5\" y=\"74.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">u m/s</text><circle cx=\"30\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><circle cx=\"310\" cy=\"135\" r=\"3\" fill=\"currentColor\"/><line x1=\"30\" y1=\"151\" x2=\"310\" y2=\"151\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"30\" y1=\"146\" x2=\"30\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"310\" y1=\"146\" x2=\"310\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"144.0\" y=\"143\" width=\"52\" height=\"16\" fill=\"none\" stroke=\"none\"/><text x=\"170.0\" y=\"165\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">range R</text></svg>",
+  "question": "A footballer kicks a ball from level ground with speed $u$ m/s at an angle $\\theta$ above the horizontal. Ignoring air resistance, the ball lands a horizontal distance\n$$R = \\frac{2u^2\\sin\\theta\\cos\\theta}{g}$$\nfrom where it was kicked, where $g = 9.8\\ \\text{m/s}^2$. The diagram is not drawn to scale.\n\n(a) Show that $R = \\dfrac{u^2\\sin 2\\theta}{g}$, and hence find the angle that gives the greatest range for a given speed.\n(b) The ball is kicked at 20 m/s and lands 30 m away. Find the two possible angles of projection, to 1 decimal place.",
+  "hint": "(a) Spot $2\\sin\\theta\\cos\\theta$. The biggest value of a sine is 1. (b) Solve for $\\sin 2\\theta$ first; $2\\theta$ can be anywhere between $0°$ and $180°$.",
+  "answer": "(a) $2\\sin\\theta\\cos\\theta = \\sin 2\\theta$; greatest range at $\\theta = 45°$. (b) $\\theta = 23.7°$ or $\\theta = 66.3°$",
+  "solution": "**(a)** Using the double angle formula $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$:\n$$R = \\frac{u^2 (2\\sin\\theta\\cos\\theta)}{g} = \\frac{u^2\\sin 2\\theta}{g}$$\n\nFor fixed $u$, $R$ is greatest when $\\sin 2\\theta = 1$, i.e. $2\\theta = 90°$, so $\\theta = 45°$.\n\n**(b)**\n$$30 = \\frac{20^2\\sin 2\\theta}{9.8} \\Rightarrow \\sin 2\\theta = \\frac{30 \\times 9.8}{400} = 0.735$$\n\nThe ball is kicked upwards, so $0° < \\theta < 90°$ and $0° < 2\\theta < 180°$. Sine is positive in the first and second quadrants:\n$$2\\theta = \\sin^{-1}(0.735) = 47.31° \\quad \\text{or} \\quad 2\\theta = 180° - 47.31° = 132.69°$$\n$$\\theta = 23.7° \\quad \\text{or} \\quad \\theta = 66.3° \\text{ (1 d.p.)}$$\n\nThe two angles add to $90°$: a low, flat kick and a high, lofted kick reach the same spot (but the lofted one stays in the air much longer)."
+ },
+ {
+  "id": "pure-trig-compound-angles-q11",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "In this question you must show all stages of your working. Solutions relying entirely on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\cos 3x \\equiv 4\\cos^3 x - 3\\cos x$.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve, for $0° \\le x \\le 180°$,\n$$8\\cos^3 x - 6\\cos x = 1$$",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Write $3x = 2x + x$ and use the addition formula, then double angle formulae, then $\\sin^2 x = 1 - \\cos^2 x$. (b) The left-hand side is $2\\cos 3x$; find the range of values of $3x$ first.",
+  "answer": "(a) Proof (see solution). (b) $x = 20°, 100°, 140°$",
+  "solution": "**(a)**\n$$\\cos 3x = \\cos(2x + x) = \\cos 2x\\cos x - \\sin 2x\\sin x$$\nM1 (uses the compound angle formula with $2x + x$)\n$$= (2\\cos^2 x - 1)\\cos x - (2\\sin x\\cos x)\\sin x$$\nM1 (correct double angle formulae for both $\\cos 2x$ and $\\sin 2x$)\n$$= 2\\cos^3 x - \\cos x - 2\\sin^2 x\\cos x$$\n$$= 2\\cos^3 x - \\cos x - 2(1 - \\cos^2 x)\\cos x$$\nM1 (uses $\\sin^2 x = 1 - \\cos^2 x$)\n$$= 2\\cos^3 x - \\cos x - 2\\cos x + 2\\cos^3 x = 4\\cos^3 x - 3\\cos x$$\nA1* (fully correct proof, no errors)\n\n**(b)** $8\\cos^3 x - 6\\cos x = 2(4\\cos^3 x - 3\\cos x) = 2\\cos 3x$, so\n$$2\\cos 3x = 1 \\Rightarrow \\cos 3x = \\frac{1}{2}$$\nM1 (uses part (a) to get $\\cos 3x = k$)\n\n$0° \\le x \\le 180° \\Rightarrow 0° \\le 3x \\le 540°$.\n$$3x = 60°, \\ 300°, \\ 420°$$\nM1 (at least two correct values of $3x$ in the extended range)\n$$x = 20°, \\ 100°, \\ 140°$$\nA1 (all three, no extras)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q12",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Prove that\n$$\\frac{1 - \\cos 2x}{\\sin 2x} \\equiv \\tan x, \\qquad \\sin 2x \\ne 0$$\n(b) Hence find the exact value of $\\tan 22.5°$, in the form $a + b\\sqrt{2}$.\n\n(c) The half-angle formula is $\\sin\\dfrac{\\theta}{2} = \\pm\\sqrt{\\dfrac{1 - \\cos\\theta}{2}}$. Use it to find the exact value of $\\sin 22.5°$, explaining how you chose the sign.",
+  "hint": "(a) Choose the version of $\\cos 2x$ that cancels the 1. (b) Put $x = 22.5°$, so $2x = 45°$. (c) Put $\\theta = 45°$; which quadrant is $22.5°$ in?",
+  "answer": "(a) Proof (see solution). (b) $\\tan 22.5° = \\sqrt{2} - 1$ (c) $\\sin 22.5° = \\dfrac{\\sqrt{2 - \\sqrt{2}}}{2}$ (positive root, as $22.5°$ is acute)",
+  "solution": "**(a)** Start from the left-hand side. Use $\\cos 2x = 1 - 2\\sin^2 x$, so the 1s cancel, and $\\sin 2x = 2\\sin x\\cos x$:\n$$\\frac{1 - \\cos 2x}{\\sin 2x} = \\frac{1 - (1 - 2\\sin^2 x)}{2\\sin x\\cos x} = \\frac{2\\sin^2 x}{2\\sin x\\cos x} = \\frac{\\sin x}{\\cos x} = \\tan x$$\n\n(Cancelling $\\sin x$ is valid because $\\sin 2x \\ne 0$ means $\\sin x \\ne 0$.) $\\blacksquare$\n\n**(b)** Put $x = 22.5°$, so $2x = 45°$:\n$$\\tan 22.5° = \\frac{1 - \\cos 45°}{\\sin 45°} = \\frac{1 - \\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2}} = \\frac{2 - \\sqrt{2}}{\\sqrt{2}} = \\frac{2\\sqrt{2} - 2}{2} = \\sqrt{2} - 1$$\n\nCheck: $\\sqrt{2} - 1 \\approx 0.4142$ and $\\tan 22.5° \\approx 0.4142$ ✓.\n\n**(c)** With $\\theta = 45°$:\n$$\\sin 22.5° = \\pm\\sqrt{\\frac{1 - \\frac{\\sqrt{2}}{2}}{2}} = \\pm\\sqrt{\\frac{2 - \\sqrt{2}}{4}} = \\pm\\frac{\\sqrt{2 - \\sqrt{2}}}{2}$$\n\n$22.5°$ is in the first quadrant, where sine is positive, so take the positive root:\n$$\\sin 22.5° = \\frac{\\sqrt{2 - \\sqrt{2}}}{2} \\approx 0.3827$$\n\n(The half-angle formula itself comes from $\\cos\\theta = 1 - 2\\sin^2\\frac{\\theta}{2}$, the same identity used in part (a).)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q13",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "question": "Given that $\\tan(x + 45°) = 6\\tan x$,",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "show that $6\\tan^2 x - 5\\tan x + 1 = 0$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve $\\tan(x + 45°) = 6\\tan x$ for $0° \\le x < 360°$, giving your answers to 1 decimal place.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Using your answers to part (b), write down the solutions of $\\tan(2y + 45°) = 6\\tan 2y$ for $0° \\le y < 90°$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Expand with the tan addition formula and $\\tan 45° = 1$, then multiply out. (b) Factorise; tan repeats every $180°$. (c) Let $x = 2y$: what range does $x$ now cover?",
+  "answer": "(a) Shown (see solution). (b) $x = 18.4°, 26.6°, 198.4°, 206.6°$ (c) $y = 9.2°, 13.3°$",
+  "solution": "**(a)**\n$$\\tan(x + 45°) = \\frac{\\tan x + \\tan 45°}{1 - \\tan x\\tan 45°} = \\frac{\\tan x + 1}{1 - \\tan x}$$\nM1 (correct use of the tan addition formula)\n\nLet $t = \\tan x$:\n$$\\frac{t + 1}{1 - t} = 6t \\Rightarrow t + 1 = 6t - 6t^2$$\nM1 (multiplies out to remove the fraction)\n$$6t^2 - 5t + 1 = 0$$\nA1* (given answer reached with no errors)\n\n**(b)**\n$$(3t - 1)(2t - 1) = 0 \\Rightarrow \\tan x = \\tfrac{1}{3} \\text{ or } \\tan x = \\tfrac{1}{2}$$\nM1 A1 (solves the quadratic, both values)\n\n$\\tan^{-1}\\frac{1}{3} = 18.43°$, $\\tan^{-1}\\frac{1}{2} = 26.57°$; tan has period $180°$:\n$$x = 18.4°, \\ 26.6°, \\ 198.4°, \\ 206.6°$$\nM1 (uses $+180°$ for at least one value) A1 (all four, no extras)\n\n**(c)** Put $x = 2y$. Then $0° \\le y < 90°$ gives $0° \\le x < 180°$, so only the first two solutions of (b) apply:\n$$2y = 18.43° \\text{ or } 26.57° \\Rightarrow y = 9.2°, \\ 13.3°$$\nM1 (halves solutions from (b)) A1 (exactly these two)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q14",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-straight-line-graphs",
+   "alg-equation-of-a-line"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"34\" y1=\"260\" x2=\"34\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"83.2\" y1=\"260\" x2=\"83.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"132.4\" y1=\"260\" x2=\"132.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"260\" x2=\"181.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"230.8\" y1=\"260\" x2=\"230.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"280\" y1=\"260\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"260\" x2=\"280\" y2=\"260\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"225.1\" x2=\"280\" y2=\"225.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"190.3\" x2=\"280\" y2=\"190.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"155.4\" x2=\"280\" y2=\"155.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"120.6\" x2=\"280\" y2=\"120.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"85.7\" x2=\"280\" y2=\"85.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"50.9\" x2=\"280\" y2=\"50.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"16\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"190.3\" x2=\"286\" y2=\"190.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"132.4\" y1=\"260\" x2=\"132.4\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M286,190.3 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M132.4,10 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"34\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-2</text><text x=\"83.2\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-1</text><text x=\"125.4\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"181.6\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"230.8\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"280\" y=\"206.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"126.4\" y=\"264.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-2</text><text x=\"126.4\" y=\"229.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-1</text><text x=\"126.4\" y=\"159.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"126.4\" y=\"125.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"126.4\" y=\"90.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"126.4\" y=\"55.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"126.4\" y=\"20.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"284\" y=\"182.3\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"140.4\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"83.2,260 198,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"181.6\" cy=\"120.6\" r=\"3\" fill=\"currentColor\"/><text x=\"189.6\" y=\"125.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">P(1, 2)</text><text x=\"87.2\" y=\"232.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = 3x + 1</text></svg>",
+  "question": "The line $L_1$ has equation $y = 3x + 1$. The point $P(1, 2)$ is shown on the diagram.\n\n(a) A line with gradient $m$ makes an angle $\\theta$ with the positive $x$-axis, where $\\tan\\theta = m$. Show that if two lines have gradients $m_1$ and $m_2$, the acute angle $\\phi$ between them satisfies\n$$\\tan\\phi = \\left|\\frac{m_1 - m_2}{1 + m_1 m_2}\\right|, \\qquad m_1 m_2 \\ne -1$$\n(b) Find the equations of the **two** lines through $P$ that make an angle of $45°$ with $L_1$. Give each in the form $y = mx + c$.",
+  "hint": "(a) The angle between the lines is $\\theta_1 - \\theta_2$ (or its supplement): use $\\tan(A - B)$. (b) Set $\\left|\\frac{3 - m}{1 + 3m}\\right| = 1$ and consider both signs.",
+  "answer": "(a) Proof (see solution). (b) $y = -2x + 4$ and $y = \\frac{1}{2}x + \\frac{3}{2}$",
+  "solution": "**(a)** Let the lines make angles $\\theta_1$ and $\\theta_2$ with the positive $x$-axis, so $\\tan\\theta_1 = m_1$ and $\\tan\\theta_2 = m_2$. The angle between the lines is $\\theta_1 - \\theta_2$ (or $180°$ minus this, which has the same size of tangent). Using the subtraction formula:\n$$\\tan(\\theta_1 - \\theta_2) = \\frac{\\tan\\theta_1 - \\tan\\theta_2}{1 + \\tan\\theta_1\\tan\\theta_2} = \\frac{m_1 - m_2}{1 + m_1 m_2}$$\n\nThe acute angle has a positive tangent, so $\\tan\\phi = \\left|\\frac{m_1 - m_2}{1 + m_1 m_2}\\right|$. (If $m_1 m_2 = -1$ the lines are perpendicular and $\\tan\\phi$ is undefined.)\n\n**(b)** We need $\\tan\\phi = \\tan 45° = 1$ with $m_1 = 3$:\n$$\\left|\\frac{3 - m}{1 + 3m}\\right| = 1$$\n\nCase 1: $3 - m = 1 + 3m \\Rightarrow 4m = 2 \\Rightarrow m = \\frac{1}{2}$\n\nCase 2: $3 - m = -(1 + 3m) \\Rightarrow 3 - m = -1 - 3m \\Rightarrow 2m = -4 \\Rightarrow m = -2$\n\nLines through $P(1, 2)$, using $y - 2 = m(x - 1)$:\n$$m = \\tfrac{1}{2}: \\ y = \\tfrac{1}{2}x + \\tfrac{3}{2}, \\qquad m = -2: \\ y = -2x + 4$$\n\nCheck: $\\frac{3 - \\frac{1}{2}}{1 + \\frac{3}{2}} = 1$ ✓ and $\\frac{3 - (-2)}{1 + 3(-2)} = \\frac{5}{-5} = -1$, so the acute angle is $45°$ ✓.\n\n(The two answer lines are perpendicular to each other: $\\frac{1}{2} \\times (-2) = -1$. That makes sense, as they are the two $45°$ \"diagonals\" relative to $L_1$.)"
+ },
+ {
+  "id": "pure-trig-compound-angles-q15",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-integration-standard",
+   "calc-definite-integrals-area"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 230\" width=\"320\" height=\"230\"><polygon points=\"40,196 40,196 42.1,196 44.3,196 46.4,196 48.5,196 50.7,196 52.8,196 54.9,196 57.1,196 59.2,196 61.3,195.9 63.5,195.9 65.6,195.9 67.7,195.9 69.9,195.8 72,195.7 74.1,195.7 76.3,195.6 78.4,195.5 80.5,195.3 82.7,195.2 84.8,195 86.9,194.8 89.1,194.6 91.2,194.4 93.3,194.1 95.5,193.8 97.6,193.4 99.7,193 101.9,192.6 104,192.1 106.1,191.6 108.3,191.1 110.4,190.5 112.5,189.8 114.7,189.1 116.8,188.4 118.9,187.5 121.1,186.7 123.2,185.7 125.3,184.8 127.5,183.7 129.6,182.6 131.7,181.4 133.9,180.2 136,178.9 138.1,177.5 140.3,176 142.4,174.5 144.5,172.9 146.7,171.3 148.8,169.6 150.9,167.8 153.1,165.9 155.2,164 157.3,162 159.5,159.9 161.6,157.8 163.7,155.6 165.9,153.3 168,151 170.1,148.6 172.3,146.2 174.4,143.7 176.5,141.1 178.7,138.5 180.8,135.8 182.9,133.1 185.1,130.3 187.2,127.5 189.3,124.7 191.5,121.8 193.6,118.9 195.7,115.9 197.9,113 200,110 202.1,106.9 204.3,103.9 206.4,100.9 208.5,97.8 210.7,94.8 212.8,91.7 214.9,88.6 217.1,85.6 219.2,82.6 221.3,79.5 223.5,76.5 225.6,73.6 227.7,70.6 229.9,67.7 232,64.9 234.1,62 236.3,59.3 238.4,56.5 240.5,53.9 242.7,51.3 244.8,48.7 246.9,46.3 249.1,43.9 251.2,41.5 253.3,39.3 255.5,37.2 257.6,35.1 259.7,33.1 261.9,31.2 264,29.4 266.1,27.8 268.3,26.2 270.4,24.7 272.5,23.3 274.7,22.1 276.8,20.9 278.9,19.9 281.1,19 283.2,18.2 285.3,17.5 287.5,17 289.6,16.6 291.7,16.2 293.9,16.1 296,16 296,196\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"40\" y1=\"196\" x2=\"40\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"104\" y1=\"196\" x2=\"104\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"168\" y1=\"196\" x2=\"168\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"232\" y1=\"196\" x2=\"232\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"296\" y1=\"196\" x2=\"296\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"196\" x2=\"296\" y2=\"196\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"151\" x2=\"296\" y2=\"151\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"106\" x2=\"296\" y2=\"106\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"61\" x2=\"296\" y2=\"61\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"16\" x2=\"296\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"196\" x2=\"302\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"196\" x2=\"40\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M302,196 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M40,10 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"33\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"104\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/8</text><text x=\"168\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/4</text><text x=\"232\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3π/8</text><text x=\"296\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/2</text><text x=\"34\" y=\"155.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.25</text><text x=\"34\" y=\"110.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.5</text><text x=\"34\" y=\"65.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.75</text><text x=\"34\" y=\"20.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"300\" y=\"188\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"48\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"40,196 41.3,196 42.6,196 43.8,196 45.1,196 46.4,196 47.7,196 49,196 50.2,196 51.5,196 52.8,196 54.1,196 55.4,196 56.6,196 57.9,196 59.2,196 60.5,196 61.8,195.9 63,195.9 64.3,195.9 65.6,195.9 66.9,195.9 68.2,195.8 69.4,195.8 70.7,195.8 72,195.7 73.3,195.7 74.6,195.6 75.8,195.6 77.1,195.5 78.4,195.5 79.7,195.4 81,195.3 82.2,195.2 83.5,195.1 84.8,195 86.1,194.9 87.4,194.8 88.6,194.7 89.9,194.5 91.2,194.4 92.5,194.2 93.8,194 95,193.8 96.3,193.6 97.6,193.4 98.9,193.2 100.2,192.9 101.4,192.7 102.7,192.4 104,192.1 105.3,191.8 106.6,191.5 107.8,191.2 109.1,190.8 110.4,190.5 111.7,190.1 113,189.7 114.2,189.3 115.5,188.8 116.8,188.4 118.1,187.9 119.4,187.4 120.6,186.8 121.9,186.3 123.2,185.7 124.5,185.2 125.8,184.5 127,183.9 128.3,183.3 129.6,182.6 130.9,181.9 132.2,181.2 133.4,180.4 134.7,179.6 136,178.9 137.3,178 138.6,177.2 139.8,176.3 141.1,175.4 142.4,174.5 143.7,173.6 145,172.6 146.2,171.6 147.5,170.6 148.8,169.6 150.1,168.5 151.4,167.4 152.6,166.3 153.9,165.1 155.2,164 156.5,162.8 157.8,161.6 159,160.3 160.3,159.1 161.6,157.8 162.9,156.5 164.2,155.1 165.4,153.8 166.7,152.4 168,151 169.3,149.6 170.6,148.1 171.8,146.7 173.1,145.2 174.4,143.7 175.7,142.1 177,140.6 178.2,139 179.5,137.4 180.8,135.8 182.1,134.2 183.4,132.6 184.6,130.9 185.9,129.2 187.2,127.5 188.5,125.8 189.8,124.1 191,122.4 192.3,120.6 193.6,118.9 194.9,117.1 196.2,115.4 197.4,113.6 198.7,111.8 200,110 201.3,108.2 202.6,106.3 203.8,104.5 205.1,102.7 206.4,100.9 207.7,99 209,97.2 210.2,95.4 211.5,93.5 212.8,91.7 214.1,89.9 215.4,88 216.6,86.2 217.9,84.4 219.2,82.6 220.5,80.7 221.8,78.9 223,77.1 224.3,75.3 225.6,73.6 226.9,71.8 228.2,70 229.4,68.3 230.7,66.6 232,64.9 233.3,63.2 234.6,61.5 235.8,59.8 237.1,58.2 238.4,56.5 239.7,54.9 241,53.4 242.2,51.8 243.5,50.3 244.8,48.7 246.1,47.2 247.4,45.8 248.6,44.3 249.9,42.9 251.2,41.5 252.5,40.2 253.8,38.9 255,37.6 256.3,36.3 257.6,35.1 258.9,33.9 260.2,32.7 261.4,31.6 262.7,30.5 264,29.4 265.3,28.4 266.6,27.4 267.8,26.5 269.1,25.6 270.4,24.7 271.7,23.9 273,23.1 274.2,22.3 275.5,21.6 276.8,20.9 278.1,20.3 279.4,19.7 280.6,19.2 281.9,18.7 283.2,18.2 284.5,17.8 285.8,17.4 287,17.1 288.3,16.8 289.6,16.6 290.9,16.4 292.2,16.2 293.4,16.1 294.7,16 296,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"23026.6\" y=\"-14996\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = sin⁴x</text></svg>",
+  "question": "The diagram shows part of the curve $y = \\sin^4 x$ for $0 \\le x \\le \\frac{\\pi}{2}$. The shaded region is bounded by the curve, the $x$-axis and the line $x = \\frac{\\pi}{2}$.\n\n(a) Use the power-reducing identities $\\sin^2\\theta \\equiv \\frac{1}{2}(1 - \\cos 2\\theta)$ and $\\cos^2\\theta \\equiv \\frac{1}{2}(1 + \\cos 2\\theta)$ to show that\n$$\\sin^4 x \\equiv \\frac{3}{8} - \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$$\n(b) Hence find the exact area of the shaded region.",
+  "hint": "(a) Write $\\sin^4 x = (\\sin^2 x)^2$, expand, and then reduce the $\\cos^2 2x$ term with $\\theta = 2x$. (b) $\\int \\cos kx \\, dx = \\frac{1}{k}\\sin kx$.",
+  "answer": "(a) Shown (see solution). (b) $\\dfrac{3\\pi}{16}$",
+  "solution": "**(a)**\n$$\\sin^4 x = (\\sin^2 x)^2 = \\left(\\frac{1 - \\cos 2x}{2}\\right)^2 = \\frac{1 - 2\\cos 2x + \\cos^2 2x}{4}$$\n\nReduce $\\cos^2 2x$ using the second identity with $\\theta = 2x$: $\\cos^2 2x = \\frac{1}{2}(1 + \\cos 4x)$.\n$$\\sin^4 x = \\frac{1}{4}\\left(1 - 2\\cos 2x + \\frac{1}{2} + \\frac{1}{2}\\cos 4x\\right) = \\frac{3}{8} - \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x$$\n\n**(b)**\n$$\\int_0^{\\pi/2}\\sin^4 x \\, dx = \\int_0^{\\pi/2}\\left(\\frac{3}{8} - \\frac{1}{2}\\cos 2x + \\frac{1}{8}\\cos 4x\\right)dx$$\n$$= \\left[\\frac{3x}{8} - \\frac{1}{4}\\sin 2x + \\frac{1}{32}\\sin 4x\\right]_0^{\\pi/2}$$\n\nAt $x = \\frac{\\pi}{2}$: $\\sin \\pi = 0$ and $\\sin 2\\pi = 0$, so the value is $\\frac{3\\pi}{16}$. At $x = 0$ every term is 0.\n$$\\text{Area} = \\frac{3\\pi}{16} \\approx 0.589$$\n\nSense check: the region sits inside a rectangle of area $\\frac{\\pi}{2} \\times 1 \\approx 1.571$ and the curve stays low for small $x$, so an area of about $0.59$ (roughly 37.5% of the rectangle) is reasonable.\n\n(Without the identity there is no direct way to integrate $\\sin^4 x$; power-reducing turns it into a sum of cosines you can integrate.)"
+ },
+ {
+  "id": "pure-trig-compound-angles-q16",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A piano tuner strikes a tuning fork of frequency 440 Hz at the same moment as a slightly flat piano string of frequency 436 Hz. With equal amplitudes, the combined pressure wave is modelled by\n$$p = \\sin(880\\pi t) + \\sin(872\\pi t)$$\nwhere $t$ is the time in seconds.\n\n(a) Use the sum-to-product identity $\\sin P + \\sin Q \\equiv 2\\sin\\dfrac{P + Q}{2}\\cos\\dfrac{P - Q}{2}$ to write $p$ as a product.\n(b) The tuner hears a note of frequency 438 Hz whose loudness rises and falls, with amplitude $2\\left|\\cos(4\\pi t)\\right|$. Find the times in the first second, $0 \\le t \\le 1$, at which the sound fades to silence.\n(c) How many \"beats\" (moments of silence) per second does the tuner hear? Explain how this number relates to the two frequencies, and what the tuner should listen for while adjusting the string.",
+  "hint": "(a) Half-sum and half-difference of $880\\pi t$ and $872\\pi t$. (b) $\\cos(4\\pi t) = 0$ when $4\\pi t = \\frac{\\pi}{2} + k\\pi$.",
+  "answer": "(a) $p = 2\\sin(876\\pi t)\\cos(4\\pi t)$ (b) $t = 0.125, 0.375, 0.625, 0.875$ s (c) 4 beats per second $= 440 - 436$; the beats slow down and disappear as the string reaches 440 Hz.",
+  "solution": "**(a)** With $P = 880\\pi t$ and $Q = 872\\pi t$:\n$$\\frac{P + Q}{2} = 876\\pi t, \\qquad \\frac{P - Q}{2} = 4\\pi t$$\n$$p = 2\\sin(876\\pi t)\\cos(4\\pi t)$$\n\n$\\sin(876\\pi t) = \\sin(2\\pi \\times 438t)$ is a 438 Hz wave (the average of the two pitches); its amplitude $2\\cos(4\\pi t)$ varies slowly.\n\n**(b)** Silence when $\\cos(4\\pi t) = 0$:\n$$4\\pi t = \\frac{\\pi}{2}, \\frac{3\\pi}{2}, \\frac{5\\pi}{2}, \\frac{7\\pi}{2}, \\ldots \\Rightarrow t = \\frac{1}{8}, \\frac{3}{8}, \\frac{5}{8}, \\frac{7}{8}, \\ldots$$\n\nIn $0 \\le t \\le 1$: $t = 0.125, 0.375, 0.625, 0.875$ seconds (the next, $t = \\frac{9}{8}$, is too late).\n\n**(c)** There are 4 silences per second, spaced $0.25$ s apart, so the beat frequency is 4 Hz. This equals the difference between the frequencies, $440 - 436 = 4$ Hz: in general the envelope $\\left|\\cos\\left(\\pi(f_1 - f_2)t\\right)\\right|$ vanishes $f_1 - f_2$ times a second.\n\nAs the tuner tightens the string towards 440 Hz, the difference shrinks, the beats get slower, and they disappear completely when the string is in tune.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q17",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "In this question you may use, without proof, the identity $\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$.\n\nLet $\\theta = 18°$.\n\n(a) Explain why $\\sin 2\\theta = \\cos 3\\theta$.\n(b) Hence show that $\\sin 18° = \\dfrac{\\sqrt{5} - 1}{4}$.\n(c) Deduce the exact value of $\\cos 36°$.",
+  "hint": "(a) $2\\theta + 3\\theta = 90°$. (b) After expanding, you can divide by $\\cos\\theta$ (why is that allowed?) and then get a quadratic in $\\sin\\theta$. (c) Use a double angle formula.",
+  "answer": "(a) $2\\theta = 90° - 3\\theta$, so $\\sin 2\\theta = \\sin(90° - 3\\theta) = \\cos 3\\theta$. (b) Shown (see solution). (c) $\\cos 36° = \\dfrac{1 + \\sqrt{5}}{4}$",
+  "solution": "**(a)** $5\\theta = 90°$, so $2\\theta = 90° - 3\\theta$. Since $\\sin(90° - A) = \\cos A$,\n$$\\sin 2\\theta = \\sin(90° - 3\\theta) = \\cos 3\\theta$$\n\n**(b)** Expand both sides:\n$$2\\sin\\theta\\cos\\theta = 4\\cos^3\\theta - 3\\cos\\theta$$\n\n$\\cos 18° \\ne 0$, so we may divide by $\\cos\\theta$:\n$$2\\sin\\theta = 4\\cos^2\\theta - 3 = 4(1 - \\sin^2\\theta) - 3 = 1 - 4\\sin^2\\theta$$\n$$4\\sin^2\\theta + 2\\sin\\theta - 1 = 0$$\n\nQuadratic formula with $s = \\sin\\theta$:\n$$s = \\frac{-2 \\pm \\sqrt{4 + 16}}{8} = \\frac{-2 \\pm 2\\sqrt{5}}{8} = \\frac{-1 \\pm \\sqrt{5}}{4}$$\n\n$18°$ is acute, so $\\sin 18° > 0$, and we reject $\\frac{-1 - \\sqrt{5}}{4} < 0$:\n$$\\sin 18° = \\frac{\\sqrt{5} - 1}{4} \\approx 0.3090 \\ ✓$$\n\n**(c)** $\\cos 36° = \\cos 2\\theta = 1 - 2\\sin^2 18°$.\n\n$\\sin^2 18° = \\frac{(\\sqrt{5} - 1)^2}{16} = \\frac{6 - 2\\sqrt{5}}{16} = \\frac{3 - \\sqrt{5}}{8}$\n$$\\cos 36° = 1 - \\frac{3 - \\sqrt{5}}{4} = \\frac{1 + \\sqrt{5}}{4} \\approx 0.8090$$\n\n(This is half the golden ratio, which is why $36°$ appears throughout the geometry of the regular pentagon.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-compound-angles-q18",
+  "topicId": "pure-trig-compound-angles",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-proof",
+   "geo-angle-facts"
+  ],
+  "question": "(a) $A$, $B$ and $C$ are the angles of a triangle, none of which is a right angle. Prove that\n$$\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C$$\n(b) Show that $\\tan^{-1} 1 + \\tan^{-1} 2 + \\tan^{-1} 3 = 180°$.\n(c) Find every triangle in which the tangent of each angle is a positive integer, and prove that there are no others.",
+  "hint": "(a) $A + B = 180° - C$; take tan of both sides and use $\\tan(180° - C) = -\\tan C$. (c) If $x \\le y \\le z$ are positive integers with $x + y + z = xyz$, then $xyz \\le 3z$.",
+  "answer": "(a) Proof (see solution). (b) Shown (see solution). (c) Only the triangle with angles $\\tan^{-1} 1 = 45°$, $\\tan^{-1} 2 \\approx 63.4°$, $\\tan^{-1} 3 \\approx 71.6°$.",
+  "solution": "**(a)** $A + B + C = 180°$, so $A + B = 180° - C$. None of the angles is $90°$, so all three tangents exist, and $A + B \\ne 90°$ (otherwise $C = 90°$), so $\\tan A\\tan B \\ne 1$. Then\n$$\\tan(A + B) = \\tan(180° - C) = -\\tan C$$\n$$\\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B} = -\\tan C$$\n$$\\tan A + \\tan B = -\\tan C + \\tan A\\tan B\\tan C$$\n$$\\tan A + \\tan B + \\tan C = \\tan A\\tan B\\tan C \\qquad \\blacksquare$$\n\n**(b)** Let $\\beta = \\tan^{-1} 2$ and $\\gamma = \\tan^{-1} 3$. Then\n$$\\tan(\\beta + \\gamma) = \\frac{2 + 3}{1 - 6} = -1$$\nSince $\\tan 45° = 1$, both $\\beta$ and $\\gamma$ lie between $45°$ and $90°$, so $90° < \\beta + \\gamma < 180°$. The only angle in that interval with tangent $-1$ is $135°$. Hence\n$$\\tan^{-1} 1 + \\tan^{-1} 2 + \\tan^{-1} 3 = 45° + 135° = 180°$$\n\n**(c)** If all tangents are positive, all angles are acute, and by (a) the integers $x = \\tan A$, $y = \\tan B$, $z = \\tan C$ satisfy $x + y + z = xyz$. Order them so $x \\le y \\le z$. Then\n$$xyz = x + y + z \\le 3z \\Rightarrow xy \\le 3$$\nso $(x, y) = (1, 1), (1, 2)$ or $(1, 3)$.\n\nCase $(1, 1)$: $2 + z = z$, impossible.\nCase $(1, 2)$: $3 + z = 2z \\Rightarrow z = 3$.\nCase $(1, 3)$: $4 + z = 3z \\Rightarrow z = 2 < y$, contradicting $y \\le z$ (it is the same set as before anyway).\n\nSo $\\{x, y, z\\} = \\{1, 2, 3\\}$ is the only possibility, and part (b) shows these angles really do add to $180°$, so they form a triangle. The only such triangle (up to size) has angles $45°$, $\\tan^{-1} 2 \\approx 63.4°$ and $\\tan^{-1} 3 \\approx 71.6°$."
+ }
+]
