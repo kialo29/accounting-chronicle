@@ -640,8 +640,9 @@ document.addEventListener('click', function (e) {
 // ---------- theme ----------
 var themes = ['system', 'light', 'dark'];
 var theme = load('theme', 'system');
+var hostTheme = document.documentElement.getAttribute('data-theme'); // set by a hosting viewer, if any
 function applyTheme() {
-  if (theme === 'system') document.documentElement.removeAttribute('data-theme');
+  if (theme === 'system') { if (hostTheme) document.documentElement.setAttribute('data-theme', hostTheme); else document.documentElement.removeAttribute('data-theme'); }
   else document.documentElement.setAttribute('data-theme', theme);
   document.getElementById('theme-btn').textContent = 'Theme: ' + theme;
 }
