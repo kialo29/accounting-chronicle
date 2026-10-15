@@ -1,0 +1,281 @@
+[
+ {
+  "id": "stat-t-procedures-q01",
+  "topicId": "stat-t-procedures",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A coffee chain wants to estimate the mean amount of caffeine in its 12-ounce cups of brewed coffee. A lab measures the caffeine content of a random sample of 25 cups and finds a mean of 148.2 mg with a standard deviation of 5 mg. A dotplot of the sample shows no strong skew or outliers.\n\nConstruct a 95% confidence interval for the mean caffeine content of all the chain's 12-ounce cups of brewed coffee.",
+  "hint": "$\\sigma$ is unknown, so use $t^*$ with $df = n - 1$ and $SE = \\frac{s}{\\sqrt{n}}$.",
+  "answer": "$148.2 \\pm 2.064(1) = (146.14, 150.26)$ mg",
+  "solution": "One-sample $t$-interval for $\\mu$, the mean caffeine content of all the chain's 12-ounce cups.\n\n$df = 25 - 1 = 24$, so for 95% confidence $t^* = 2.064$.\n\n$$SE = \\frac{s}{\\sqrt{n}} = \\frac{5}{\\sqrt{25}} = 1$$\n$$ME = t^* \\times SE = 2.064 \\times 1 = 2.064$$\n$$148.2 \\pm 2.064 = (146.14, 150.26) \\text{ mg}$$\n\nWe are 95% confident that the interval from 146.14 mg to 150.26 mg captures the true mean caffeine content of all the chain's 12-ounce cups of brewed coffee.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-t-procedures-q02",
+  "topicId": "stat-t-procedures",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A coffee chain wants to estimate the mean amount of caffeine in its 12-ounce cups of brewed coffee. A lab measures the caffeine content of a random sample of 25 cups and finds a mean of 148.2 mg with a standard deviation of 5 mg. A dotplot of the sample shows no strong skew or outliers.\n\nConstruct a 99% confidence interval for the mean caffeine content of all the chain's 12-ounce cups of brewed coffee.",
+  "hint": "Only the confidence level has changed. What happens to $t^*$?",
+  "answer": "$148.2 \\pm 2.797(1) = (145.40, 151.00)$ mg",
+  "solution": "**What changed:** the confidence level, from 95% to 99%. $n$, $s$ and $SE$ are unchanged.\n\n$df = 24$; for 99% confidence $t^* = 2.797$.\n\n$$SE = \\frac{5}{\\sqrt{25}} = 1, \\qquad ME = 2.797 \\times 1 = 2.797$$\n$$148.2 \\pm 2.797 = (145.40, 151.00) \\text{ mg}$$\n\nWe are 99% confident that the interval from 145.40 mg to 151.00 mg captures the true mean caffeine content.\n\n**Effect:** higher confidence needs a larger $t^*$, so the interval is wider.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-t-procedures-q03",
+  "topicId": "stat-t-procedures",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A coffee chain wants to estimate the mean amount of caffeine in its 12-ounce cups of brewed coffee. A lab measures the caffeine content of a random sample of 100 cups and finds a mean of 148.2 mg with a standard deviation of 5 mg. A dotplot of the sample shows no strong skew or outliers.\n\nConstruct a 99% confidence interval for the mean caffeine content of all the chain's 12-ounce cups of brewed coffee.",
+  "hint": "Now $n$ has changed. Both $SE$ and $df$ (and so $t^*$) change.",
+  "answer": "$148.2 \\pm 2.626(0.5) = (146.89, 149.51)$ mg",
+  "solution": "**What changed:** the sample size, from 25 to 100 (still 99% confidence).\n\n$df = 100 - 1 = 99$; for 99% confidence $t^* = 2.626$.\n\n$$SE = \\frac{5}{\\sqrt{100}} = 0.5, \\qquad ME = 2.626 \\times 0.5 = 1.313$$\n$$148.2 \\pm 1.313 = (146.89, 149.51) \\text{ mg}$$\n\n**Effect:** multiplying $n$ by 4 halves the standard error. The margin of error falls by slightly **more** than half (from 2.797 to 1.313), because with more degrees of freedom $t^*$ is also smaller (2.626 instead of 2.797).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-t-procedures-q04",
+  "topicId": "stat-t-procedures",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A coffee chain wants to estimate the mean amount of caffeine in its 12-ounce cups of brewed coffee. A lab measures the caffeine content of a random sample of 100 cups and finds a mean of 148.2 mg with a standard deviation of 10 mg. A dotplot of the sample shows no strong skew or outliers.\n\nConstruct a 99% confidence interval for the mean caffeine content of all the chain's 12-ounce cups of brewed coffee.",
+  "hint": "Only $s$ has changed. $df$ and $t^*$ stay the same.",
+  "answer": "$148.2 \\pm 2.626(1) = (145.57, 150.83)$ mg",
+  "solution": "**What changed:** the sample standard deviation, from 5 mg to 10 mg. $n = 100$ and 99% confidence as before, so $df = 99$ and $t^* = 2.626$.\n\n$$SE = \\frac{10}{\\sqrt{100}} = 1, \\qquad ME = 2.626 \\times 1 = 2.626$$\n$$148.2 \\pm 2.626 = (145.57, 150.83) \\text{ mg}$$\n\n**Effect:** doubling $s$ doubles the standard error and so doubles the margin of error (1.313 becomes 2.626). More variable data give a less precise estimate.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-t-procedures-q05",
+  "topicId": "stat-t-procedures",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the degrees of freedom and the critical value $t^*$ for each one-sample $t$-interval.\n\n(a) 90% confidence, sample size $n = 12$.\n\n(b) 95% confidence, sample size $n = 40$.\n\n(c) The critical value $z^*$ for 95% confidence is 1.960. Explain why $t^*$ in part (b) is larger than 1.960.",
+  "hint": "$df = n - 1$. Look up the $t$ table in the row for that $df$ and the column for the confidence level.",
+  "answer": "(a) $df = 11$, $t^* = 1.796$ (b) $df = 39$, $t^* = 2.023$ (c) Using $s$ in place of $\\sigma$ adds extra variability, so $t$ distributions have heavier tails than the standard normal; a larger critical value is needed to capture the middle 95%.",
+  "solution": "(a) $df = 12 - 1 = 11$. For 90% confidence (0.05 in each tail), $t^* = 1.796$.\n\n(b) $df = 40 - 1 = 39$. For 95% confidence (0.025 in each tail), $t^* = 2.023$. (If your table has no row for 39, use technology, or the next **smaller** $df$ in the table, which gives a slightly larger, conservative $t^*$.)\n\n(c) When $\\sigma$ is unknown we estimate it with $s$, which varies from sample to sample. This extra uncertainty makes the standardized statistic $\\frac{\\bar{x} - \\mu}{s/\\sqrt{n}}$ more spread out than $Z$: its $t$ distribution has heavier tails. To capture the central 95% we must go further out, so $t^* = 2.023 > 1.960$. As $df$ increases, $s$ becomes a more reliable estimate and $t^*$ approaches $z^*$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q06",
+  "topicId": "stat-t-procedures",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A bottling plant fills bottles labeled 500 mL (16.9 fl oz). A quality inspector suspects the bottles are being underfilled on average. She measures the contents of a random sample of 20 bottles from today's production: $\\bar{x} = 497.6$ mL and $s = 4.1$ mL. A dotplot of the data is roughly symmetric with no outliers.\n\nCarry out a test of $H_0: \\mu = 500$ against $H_a: \\mu < 500$ at $\\alpha = 0.05$, where $\\mu$ is the mean content of all bottles filled today.",
+  "hint": "$t = \\dfrac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$ with $df = n - 1$. The P-value is a left-tail area.",
+  "answer": "$t \\approx -2.62$, $df = 19$, P-value $\\approx 0.0085 < 0.05$: reject $H_0$. There is convincing evidence that the mean content of all bottles filled today is less than 500 mL.",
+  "solution": "**Conditions:** Random sample ✓; 20 bottles is less than 10% of today's production ✓; $n = 20 < 30$, but the dotplot is roughly symmetric with no outliers, so a normal population is plausible ✓.\n\n$$SE = \\frac{4.1}{\\sqrt{20}} = 0.9168$$\n$$t = \\frac{497.6 - 500}{0.9168} = \\frac{-2.4}{0.9168} \\approx -2.62, \\qquad df = 19$$\n$$\\text{P-value} = P(t_{19} \\le -2.62) \\approx 0.0085$$\n\n$0.0085 < 0.05$, so reject $H_0$. There is convincing evidence that the mean amount in all bottles filled today is less than 500 mL.",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "id": "stat-t-procedures-q07",
+  "topicId": "stat-t-procedures",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Household incomes in a large city are strongly skewed to the right. A researcher takes a random sample of 40 households and plans to construct a $t$-interval for the mean household income in the city. She writes:\n\n\"Normal/Large Sample condition: $n = 40 \\ge 30$, so the population of household incomes in the city is approximately normal.\"\n\n(a) Is her statement correct? Explain.\n\n(b) Rewrite the condition check correctly.\n\n(c) Would the condition still be met if the sample size were 12? Explain.",
+  "hint": "Does taking a sample change the shape of the population? What does the central limit theorem actually say?",
+  "answer": "(a) No. The population of incomes is still strongly right-skewed; sampling cannot change its shape. (b) \"$n = 40 \\ge 30$, so by the central limit theorem the sampling distribution of $\\bar{x}$ is approximately normal.\" (c) No: with $n = 12$ from a strongly skewed population the sampling distribution of $\\bar{x}$ may still be noticeably skewed, so a $t$-interval is not reliable.",
+  "solution": "(a) She is **not** correct. The population is the set of all household incomes in the city, and it is strongly skewed to the right however large a sample we take. Sample size cannot change the shape of the population.\n\n(b) What a large sample does change is the **sampling distribution of $\\bar{x}$**. Correct check: \"$n = 40 \\ge 30$, so by the central limit theorem the sampling distribution of $\\bar{x}$ is approximately normal, even though the population of incomes is skewed.\" That is what the $t$-interval needs.\n\n(c) No. With only 12 households and a strongly skewed population, the central limit theorem has not \"kicked in\" enough: the sampling distribution of $\\bar{x}$ is likely to be noticeably right-skewed. The Normal/Large Sample condition would not be met, so a $t$-interval would not be appropriate.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q08",
+  "topicId": "stat-t-procedures",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A health researcher measures the resting heart rate of a random sample of 16 adults who run at least 20 miles a week. The sample mean is 72.5 beats per minute (bpm) and the sample standard deviation is 8 bpm. A dotplot shows no strong skew or outliers.\n\nAva's 95% confidence interval for the mean resting heart rate of all such runners is shown below.\n\nLine 1: $SE = \\dfrac{8}{\\sqrt{16}} = 2$\n\nLine 2: For 95% confidence the critical value is 1.96.\n\nLine 3: $72.5 \\pm 1.96(2) = 72.5 \\pm 3.92 = (68.58, 76.42)$ bpm\n\n(a) Identify the line containing the error and explain why it is wrong.\n\n(b) Construct the correct interval.",
+  "hint": "Is $\\sigma$ known here, or has it been estimated by $s$? How many degrees of freedom are there?",
+  "answer": "(a) Line 2: $\\sigma$ is unknown (estimated by $s$), so she must use $t^*$ with $df = 15$, not $z^* = 1.96$. (b) $t^* = 2.131$; $72.5 \\pm 4.26 = (68.24, 76.76)$ bpm",
+  "solution": "(a) Line 1 is correct. The error is in **Line 2**: 1.96 is the critical value $z^*$ from the standard normal distribution. Here the population standard deviation is unknown and has been replaced by the sample standard deviation $s = 8$, so the correct distribution is $t$ with $df = n - 1 = 16 - 1 = 15$.\n\n(b) For 95% confidence and $df = 15$: $t^* = 2.131$.\n$$ME = 2.131 \\times 2 = 4.262$$\n$$72.5 \\pm 4.26 = (68.24, 76.76) \\text{ bpm}$$\n\nWe are 95% confident that the interval from 68.24 to 76.76 bpm captures the true mean resting heart rate of all adults who run at least 20 miles a week.\n\nAva's interval was too narrow: using $z^*$ understates the uncertainty when $\\sigma$ is estimated from a small sample. (Using $df = 16$ would also be wrong.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q09",
+  "topicId": "stat-t-procedures",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A company claims that its fuel additive improves gas mileage. Eight randomly selected cars from a rental fleet were each driven on the same test route twice, once with and once without the additive (in a random order). The fuel economy, in miles per gallon (mpg), is shown.\n\n| Car | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| Without | 24.1 | 31.5 | 28.2 | 19.8 | 35.0 | 26.4 | 22.7 | 30.3 |\n| With | 24.9 | 32.1 | 28.6 | 20.9 | 35.4 | 27.5 | 23.0 | 31.2 |\n\nEthan's analysis is shown below.\n\nLine 1: With: $\\bar{x}_1 = 27.95$, $s_1 = 4.891$. Without: $\\bar{x}_2 = 27.25$, $s_2 = 5.003$.\n\nLine 2: $t = \\dfrac{27.95 - 27.25}{\\sqrt{\\frac{4.891^2}{8} + \\frac{5.003^2}{8}}} = \\dfrac{0.70}{2.473} = 0.28$\n\nLine 3: P-value $\\approx 0.39$, so there is not convincing evidence that the additive improves mileage.\n\n(a) Explain the error in Ethan's choice of method.\n\n(b) Carry out the correct test at $\\alpha = 0.05$. The differences show no strong skew or outliers.\n\n(c) Explain why the two methods give such different P-values.",
+  "hint": "Each car was measured twice. Work with the 8 differences (With $-$ Without).",
+  "answer": "(a) The data are paired (the same car under both conditions), but he used a two-sample $t$-test for independent groups. (b) Differences: $\\bar{x}_{\\text{diff}} = 0.70$, $s_{\\text{diff}} = 0.321$, $t \\approx 6.17$, $df = 7$, P-value $\\approx 0.0002 < 0.05$: reject $H_0$; convincing evidence that the additive increases mean mileage. (c) Pairing removes the large car-to-car variation (s about 5 mpg), leaving only the small variation in the differences (0.32 mpg).",
+  "solution": "(a) Ethan used a **two-sample** $t$-test, which assumes two independent groups. But each car gives two linked measurements, so the data are **paired**. A matched-pairs design must be analyzed using the differences for each car.\n\n(b) Differences (With $-$ Without): $0.8, 0.6, 0.4, 1.1, 0.4, 1.1, 0.3, 0.9$.\n\n$H_0: \\mu_{\\text{diff}} = 0$, $H_a: \\mu_{\\text{diff}} > 0$, where $\\mu_{\\text{diff}}$ is the true mean difference in mileage (with $-$ without) for cars in this fleet.\n\nConditions: random sample of cars, with random order of treatments ✓; 8 is less than 10% of the fleet ✓; the differences show no strong skew or outliers ✓.\n\n$$\\bar{x}_{\\text{diff}} = \\frac{5.6}{8} = 0.70, \\qquad s_{\\text{diff}} = 0.321$$\n$$t = \\frac{0.70 - 0}{0.321/\\sqrt{8}} = \\frac{0.70}{0.1134} \\approx 6.17, \\qquad df = 7$$\n$$\\text{P-value} = P(t_7 \\ge 6.17) \\approx 0.0002$$\n\n$0.0002 < 0.05$, so reject $H_0$. There is convincing evidence that the additive increases mean fuel economy for cars like these.\n\n(c) The cars differ hugely in mileage (from about 20 to 35 mpg), so in the two-sample test the standard error ($2.47$) is dominated by car-to-car variation and the 0.70 mpg improvement is swamped. Pairing compares each car with itself, so that variation cancels out; the differences vary very little ($s_{\\text{diff}} = 0.32$), the standard error is only $0.11$, and the improvement is clear.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q10",
+  "topicId": "stat-t-procedures",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Researchers compare the daily exercise time of teenagers in two large school districts. Independent random samples give:\n\n| District | $n$ | Mean (min) | SD (min) |\n|---|---|---|---|\n| A | 35 | 68.3 | 12.4 |\n| B | 40 | 61.9 | 9.8 |\n\nRosa's 95% confidence interval for $\\mu_A - \\mu_B$ is shown below. She uses the conservative $df = 34$, so $t^* = 2.032$.\n\nLine 1: $\\bar{x}_A - \\bar{x}_B = 68.3 - 61.9 = 6.4$\n\nLine 2: $SE = \\sqrt{\\dfrac{12.4^2}{35} - \\dfrac{9.8^2}{40}} = \\sqrt{4.393 - 2.401} = 1.411$\n\nLine 3: $6.4 \\pm 2.032(1.411) = 6.4 \\pm 2.87 = (3.53, 9.27)$ minutes\n\n(a) Identify the line containing the error and explain why it is wrong.\n\n(b) Construct the correct interval and interpret it.",
+  "hint": "For independent random variables, does the variance of a difference equal the difference of the variances?",
+  "answer": "(a) Line 2: the variances must be **added**, $SE = \\sqrt{\\frac{12.4^2}{35} + \\frac{9.8^2}{40}}$. (b) $SE = 2.607$; $6.4 \\pm 5.30 = (1.10, 11.70)$ minutes. We are 95% confident the true mean daily exercise time in District A is between 1.10 and 11.70 minutes more than in District B.",
+  "solution": "(a) The error is in **Line 2**. Rosa subtracted the two variance terms because the parameter is a **difference**. But $\\bar{x}_A$ and $\\bar{x}_B$ vary independently, and for independent random variables\n$$\\text{Var}(\\bar{x}_A - \\bar{x}_B) = \\text{Var}(\\bar{x}_A) + \\text{Var}(\\bar{x}_B)$$\nEach sample mean contributes its own uncertainty, so the uncertainty of the difference is larger, never smaller.\n\n(b) $$SE = \\sqrt{\\frac{12.4^2}{35} + \\frac{9.8^2}{40}} = \\sqrt{4.393 + 2.401} = \\sqrt{6.794} = 2.607$$\n$$ME = 2.032 \\times 2.607 = 5.30$$\n$$6.4 \\pm 5.30 = (1.10, 11.70) \\text{ minutes}$$\n\n(Technology, with $df \\approx 64.5$, gives $(1.19, 11.61)$.)\n\nWe are 95% confident that the interval from 1.10 to 11.70 minutes captures the true difference in mean daily exercise time (District A minus District B) for teenagers in these districts. Since the whole interval is above 0, it suggests District A teenagers exercise more on average.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q11",
+  "topicId": "stat-t-procedures",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A toy company is choosing between two brands of AA batteries for a remote-control car. Engineers test independent random samples of batteries from each brand in the car and record how long each battery lasts.\n\n| Brand | $n$ | Mean (hours) | SD (hours) |\n|---|---|---|---|\n| PowerMax | 15 | 8.7 | 0.9 |\n| Volta | 12 | 7.9 | 1.2 |\n\nDotplots of both samples show no strong skew or outliers.\n\n(a) Construct a 90% confidence interval for the difference in mean battery life (PowerMax $-$ Volta). Use the conservative degrees of freedom.\n\n(b) Does the interval give convincing evidence that PowerMax batteries last longer on average? Explain.",
+  "hint": "$SE = \\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}$. The conservative $df$ is the smaller of $n_1 - 1$ and $n_2 - 1$.",
+  "answer": "(a) $0.8 \\pm 1.796(0.4171) = 0.8 \\pm 0.749 = (0.05, 1.55)$ hours (b) Yes: every value in the interval is positive, so at 90% confidence the mean life of PowerMax batteries is greater, by between about 0.05 and 1.55 hours.",
+  "solution": "(a) Two-sample $t$-interval for $\\mu_P - \\mu_V$.\n\nConditions: independent random samples ✓; each sample is less than 10% of each brand's batteries ✓; both $n < 30$, but the dotplots show no strong skew or outliers ✓.\n\n$$\\bar{x}_P - \\bar{x}_V = 8.7 - 7.9 = 0.8$$\n$$SE = \\sqrt{\\frac{0.9^2}{15} + \\frac{1.2^2}{12}} = \\sqrt{0.054 + 0.12} = \\sqrt{0.174} = 0.4171$$\n\nConservative $df$ = smaller of $14$ and $11$ = $11$, so $t^* = 1.796$ for 90%.\n$$0.8 \\pm 1.796(0.4171) = 0.8 \\pm 0.749 = (0.05, 1.55) \\text{ hours}$$\n\n(Technology with $df \\approx 19.95$ gives $(0.08, 1.52)$.)\n\nWe are 90% confident that the interval from 0.05 to 1.55 hours captures the true difference in mean battery life (PowerMax minus Volta) in this car.\n\n(b) **Yes.** The entire interval is above 0, so 0 (no difference) is not a plausible value. At the 90% confidence level, the data give convincing evidence that PowerMax batteries last longer on average, although the advantage could be as small as about 3 minutes.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q12",
+  "topicId": "stat-t-procedures",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A high school offers a 4-week keyboarding course. To see whether it improves typing speed, a teacher selects a random sample of 10 students taking the course and records their typing speeds, in words per minute (wpm), before and after the course.\n\n| Student | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |\n|---|---|---|---|---|---|---|---|---|---|---|\n| Before | 38 | 45 | 29 | 52 | 41 | 35 | 47 | 33 | 50 | 40 |\n| After | 44 | 47 | 38 | 51 | 45 | 42 | 50 | 38 | 50 | 48 |\n\nThe dotplot shows the differences (After $-$ Before).\n\nDo the data give convincing evidence at $\\alpha = 0.05$ that the course increases mean typing speed for students who take it?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 96\" width=\"340\" height=\"96\"><line x1=\"25.0\" y1=\"50.0\" x2=\"315.0\" y2=\"50.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"25.0\" y1=\"50.0\" x2=\"25.0\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"25.0\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"49.2\" y1=\"50.0\" x2=\"49.2\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"73.3\" y1=\"50.0\" x2=\"73.3\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"73.3\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"97.5\" y1=\"50.0\" x2=\"97.5\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"121.7\" y1=\"50.0\" x2=\"121.7\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"121.7\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"145.8\" y1=\"50.0\" x2=\"145.8\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170.0\" y1=\"50.0\" x2=\"170.0\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"170.0\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"194.2\" y1=\"50.0\" x2=\"194.2\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"218.3\" y1=\"50.0\" x2=\"218.3\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"218.3\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"242.5\" y1=\"50.0\" x2=\"242.5\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"266.7\" y1=\"50.0\" x2=\"266.7\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"266.7\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"290.8\" y1=\"50.0\" x2=\"290.8\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"315.0\" y1=\"50.0\" x2=\"315.0\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"315.0\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><circle cx=\"218.3\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"121.7\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"290.8\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"49.2\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"170.0\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"242.5\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"145.8\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"194.2\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"73.3\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><circle cx=\"266.7\" cy=\"42.0\" r=\"5\" fill=\"currentColor\"/><text x=\"170.0\" y=\"88.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Difference (After − Before), wpm</text></svg>",
+  "hint": "Each student is measured twice, so analyze the 10 differences with a one-sample $t$-test for $\\mu_{\\text{diff}}$.",
+  "answer": "$\\bar{x}_{\\text{diff}} = 4.3$, $s_{\\text{diff}} \\approx 3.335$, $t \\approx 4.08$, $df = 9$, P-value $\\approx 0.0014 < 0.05$: reject $H_0$. There is convincing evidence that the course increases mean typing speed.",
+  "solution": "**State:** $H_0: \\mu_{\\text{diff}} = 0$, $H_a: \\mu_{\\text{diff}} > 0$, where $\\mu_{\\text{diff}}$ is the true mean change in typing speed (After $-$ Before) for all students who take the course. $\\alpha = 0.05$.\n\n**Plan:** paired $t$-test.\n* Random: random sample of students ✓\n* 10%: 10 is less than 10% of all students who take the course ✓\n* Normal: $n = 10 < 30$, but the dotplot of differences is roughly symmetric with no outliers ✓\n\n**Do:** Differences: $6, 2, 9, -1, 4, 7, 3, 5, 0, 8$.\n$$\\bar{x}_{\\text{diff}} = \\frac{43}{10} = 4.3$$\nSquared deviations sum to $100.1$, so $s_{\\text{diff}} = \\sqrt{\\frac{100.1}{9}} \\approx 3.335$.\n$$t = \\frac{4.3 - 0}{3.335/\\sqrt{10}} = \\frac{4.3}{1.0546} \\approx 4.08, \\qquad df = 9$$\n$$\\text{P-value} = P(t_9 \\ge 4.08) \\approx 0.0014$$\n\n**Conclude:** $0.0014 < 0.05$, so reject $H_0$. There is convincing evidence that the mean typing speed of students who take the course is higher after the course than before.\n\n(Note: with no control group, we cannot be sure the course itself **caused** the improvement; students might improve with 4 weeks of ordinary practice.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q13",
+  "topicId": "stat-t-procedures",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 7,
+  "question": "A sleep researcher recruited 60 adult volunteers and randomly assigned them to two groups of 30. For two weeks, one group avoided all screens for the hour before bed; the other group kept their usual habits. At the end of the study, each volunteer's average time to fall asleep (in minutes) was recorded.\n\n| Group | $n$ | Mean (min) | SD (min) |\n|---|---|---|---|\n| No screens | 30 | 14.8 | 6.2 |\n| Usual habits | 30 | 19.3 | 8.5 |\n\nTimes to fall asleep tend to be skewed to the right.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "State the hypotheses for testing whether avoiding screens before bed reduces the mean time to fall asleep, defining any parameters. Identify the appropriate test and check its conditions.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Calculate the test statistic and P-value.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "State your conclusion at the $\\alpha = 0.05$ level in context.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "A newspaper headline reads: \"Screens before bed keep you awake!\" Is a cause-and-effect conclusion justified by this study? Explain.",
+    "marks": 1
+   }
+  ],
+  "hint": "Two independent groups formed by random assignment: two-sample $t$-test. For the Normal condition, think about what $n = 30$ does for the sampling distribution of each $\\bar{x}$.",
+  "answer": "(a) $H_0: \\mu_1 - \\mu_2 = 0$, $H_a: \\mu_1 - \\mu_2 < 0$ ($\\mu_1$, $\\mu_2$ = true mean time to fall asleep for adults like these with no screens / usual habits); two-sample $t$-test; random assignment, both $n = 30 \\ge 30$. (b) $t \\approx -2.34$, $df \\approx 53.05$, P-value $\\approx 0.011$. (c) Reject $H_0$: convincing evidence that avoiding screens reduces mean time to fall asleep. (d) Yes, because the treatments were randomly assigned; but only for volunteers like these.",
+  "solution": "(a) $H_0: \\mu_1 - \\mu_2 = 0$ and $H_a: \\mu_1 - \\mu_2 < 0$, where $\\mu_1$ is the true mean time to fall asleep for adults like these who avoid screens for the hour before bed, and $\\mu_2$ is the true mean for those with usual habits. **1 pt**\n\nTwo-sample $t$-test for a difference in means. **1 pt**\n\nConditions: Random: volunteers were randomly assigned to the two groups ✓. Normal/Large Sample: $n_1 = 30 \\ge 30$ and $n_2 = 30 \\ge 30$, so by the CLT the sampling distributions of $\\bar{x}_1$ and $\\bar{x}_2$ are approximately normal, even though the times themselves are skewed ✓. (10% is not required: this is an experiment, not sampling without replacement.) **1 pt**\n\n(b) $$SE = \\sqrt{\\frac{6.2^2}{30} + \\frac{8.5^2}{30}} = \\sqrt{1.2813 + 2.4083} = 1.9208$$\n$$t = \\frac{(14.8 - 19.3) - 0}{1.9208} = \\frac{-4.5}{1.9208} \\approx -2.34$$ **1 pt**\n\nTechnology: $df \\approx 53.05$, P-value $\\approx 0.011$. (Conservative $df = 29$ gives P-value $\\approx 0.013$.) **1 pt**\n\n(c) Because the P-value $\\approx 0.011 < 0.05$, reject $H_0$. There is convincing evidence that avoiding screens for the hour before bed reduces the mean time to fall asleep for adults like those in the study. **1 pt**\n\n(d) Yes, a cause-and-effect conclusion is justified, because the volunteers were **randomly assigned** to the treatments, so the groups should be similar apart from the screen treatment. However, the volunteers were not a random sample, so the conclusion only applies to adults similar to these volunteers, not necessarily to everyone. **1 pt**",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q14",
+  "topicId": "stat-t-procedures",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "For each study, state whether the appropriate procedure is a one-sample $t$ procedure, a paired $t$ procedure, or a two-sample $t$ procedure. Justify each choice, and define the parameter.\n\n(a) Grip strength (in pounds) is measured on both the left hand and the right hand of each of 25 randomly selected right-handed adults, to estimate how much stronger the dominant hand is on average.\n\n(b) A random sample of 40 homes recently sold in a county is used to test a real estate agent's claim that the mean selling price is \\$350,000.\n\n(c) Random samples of 50 juniors and 50 seniors at a large high school report how many hours they slept last night, to compare the mean amount of sleep in the two grades.\n\n(d) Twenty pairs of identical twins take part in a diet study. In each pair, a coin flip decides which twin follows Diet A and which follows Diet B, and weight loss is recorded.",
+  "hint": "Ask: is there one group or two? If two sets of measurements, is each value in one set naturally linked to a specific value in the other?",
+  "answer": "(a) Paired: two linked measurements on each adult; $\\mu_{\\text{diff}}$ = mean (right $-$ left) grip strength. (b) One-sample: one sample, one quantitative variable compared with a claimed value; $\\mu$ = mean selling price. (c) Two-sample: two independent random samples; $\\mu_J - \\mu_S$. (d) Paired: twins are matched pairs; $\\mu_{\\text{diff}}$ = mean (A $-$ B) weight loss within a pair.",
+  "solution": "(a) **Paired $t$.** Each adult gives two measurements (left and right), which are linked: a strong person tends to be strong in both hands. Analyze the 25 differences. Parameter: $\\mu_{\\text{diff}}$ = true mean of (right $-$ left) grip strength for right-handed adults.\n\n(b) **One-sample $t$.** There is one sample and one quantitative variable, compared with a single claimed value. Parameter: $\\mu$ = true mean selling price of all recently sold homes in the county; $H_0: \\mu = 350{,}000$.\n\n(c) **Two-sample $t$.** The juniors and seniors are two separate, independent random samples; no junior is linked to a particular senior. Parameter: $\\mu_J - \\mu_S$, the difference in true mean hours of sleep.\n\n(d) **Paired $t$.** Each pair of twins is a matched pair (same genes, similar upbringing), and the treatments were randomized within each pair. Using differences removes twin-to-twin variation. Parameter: $\\mu_{\\text{diff}}$ = true mean difference in weight loss (Diet A $-$ Diet B) within twin pairs.\n\nUsing a two-sample procedure for (a) or (d) would wrongly treat linked values as independent and usually lose power.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q15",
+  "topicId": "stat-t-procedures",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A random sample of 20 customers at a theme park gave a 95% $t$-interval for the mean time, in minutes, that customers spend in line for the park's most popular ride of $(31.2, 36.8)$. The conditions for inference were met.\n\n(a) Find the sample mean and the sample standard deviation.\n\n(b) Construct a 99% confidence interval for the mean time in line.\n\n(c) The park advertises that the mean waiting time is 30 minutes. Without doing any further calculation, use your interval from (b) to decide whether a two-sided test of $H_0: \\mu = 30$ at $\\alpha = 0.01$ would reject $H_0$. Then calculate the P-value to confirm.",
+  "hint": "The interval is $\\bar{x} \\pm t^* \\frac{s}{\\sqrt{n}}$: the mean is the midpoint and the margin of error is half the width. Use $t^*$ for $df = 19$.",
+  "answer": "(a) $\\bar{x} = 34.0$ min, $s \\approx 5.98$ min (b) $34.0 \\pm 2.861(1.338) = (30.17, 37.83)$ min (c) 30 is outside the 99% interval, so reject $H_0$ at $\\alpha = 0.01$; $t \\approx 2.99$, $df = 19$, P-value $\\approx 0.0075 < 0.01$.",
+  "solution": "(a) Midpoint: $\\bar{x} = \\frac{31.2 + 36.8}{2} = 34.0$ minutes. Margin of error: $ME = \\frac{36.8 - 31.2}{2} = 2.8$.\n\nFor 95% confidence and $df = 19$, $t^* = 2.093$:\n$$SE = \\frac{2.8}{2.093} = 1.3378, \\qquad s = SE \\times \\sqrt{20} = 1.3378 \\times 4.4721 \\approx 5.98 \\text{ min}$$\n\n(b) For 99% and $df = 19$, $t^* = 2.861$:\n$$34.0 \\pm 2.861(1.3378) = 34.0 \\pm 3.83 = (30.17, 37.83) \\text{ min}$$\n\n(c) A two-sided test at $\\alpha = 0.01$ rejects $H_0: \\mu = \\mu_0$ exactly when $\\mu_0$ lies outside the 99% confidence interval. 30 is below 30.17, so we **reject** $H_0$.\n\nCheck: $$t = \\frac{34.0 - 30}{1.3378} \\approx 2.99, \\quad df = 19, \\quad \\text{P-value} = 2P(t_{19} \\ge 2.99) \\approx 0.0075 < 0.01 \\;✓$$\n\nThere is convincing evidence that the true mean waiting time for this ride is not 30 minutes (it appears to be longer).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q16",
+  "topicId": "stat-t-procedures",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A paint manufacturer claims that its quick-dry paint is touch-dry in 60 minutes on average. A contractor suspects it takes longer. She records the drying time $x$ (in minutes) for a random sample of 12 freshly painted test panels, and summarizes the results as\n$$\\sum x = 756, \\qquad \\sum x^2 = 47{,}958$$\nA dotplot of the 12 times shows no strong skew or outliers.\n\n(a) Calculate the sample mean and the sample standard deviation.\n\n(b) Test the contractor's suspicion at $\\alpha = 0.05$.\n\n(c) Would the conclusion change at $\\alpha = 0.01$?",
+  "hint": "$s^2 = \\dfrac{\\sum x^2 - \\frac{(\\sum x)^2}{n}}{n - 1}$. Then carry out a one-sample $t$-test with $H_a: \\mu > 60$.",
+  "answer": "(a) $\\bar{x} = 63$ min, $s = \\sqrt{30} \\approx 5.477$ min (b) $t \\approx 1.90$, $df = 11$, P-value $\\approx 0.042 < 0.05$: reject $H_0$; convincing evidence that the mean drying time is more than 60 minutes. (c) Yes: $0.042 > 0.01$, so at $\\alpha = 0.01$ we would fail to reject $H_0$.",
+  "solution": "(a) $$\\bar{x} = \\frac{756}{12} = 63 \\text{ min}$$\n$$S_{xx} = \\sum x^2 - \\frac{(\\sum x)^2}{n} = 47{,}958 - \\frac{756^2}{12} = 47{,}958 - 47{,}628 = 330$$\n$$s = \\sqrt{\\frac{330}{12 - 1}} = \\sqrt{30} \\approx 5.477 \\text{ min}$$\n(Divide by $n - 1$, not $n$: we are estimating the population standard deviation from a sample.)\n\n(b) $H_0: \\mu = 60$, $H_a: \\mu > 60$, where $\\mu$ is the true mean drying time of this paint. Conditions: random sample ✓; 12 panels is less than 10% of all possible panels ✓; no strong skew or outliers in the dotplot ✓.\n$$t = \\frac{63 - 60}{5.477/\\sqrt{12}} = \\frac{3}{1.5811} \\approx 1.90, \\qquad df = 11$$\n$$\\text{P-value} = P(t_{11} \\ge 1.90) \\approx 0.042$$\n$0.042 < 0.05$, so reject $H_0$. There is convincing evidence that the true mean drying time is more than 60 minutes.\n\n(c) Yes. $0.042 > 0.01$, so at the 1% level we would fail to reject $H_0$ and would not have convincing evidence that the mean drying time exceeds 60 minutes.",
+  "linkedTopicIds": [
+   "stat-standard-deviation"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "stat-t-procedures-q17",
+  "topicId": "stat-t-procedures",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A physical therapist measures the knee flexibility (in degrees) of 10 randomly selected patients before and after a new stretching program. A 90% paired $t$-interval for the mean improvement $\\mu_{\\text{diff}}$ (After $-$ Before) is $(0.4, 5.2)$ degrees. The conditions for inference were met.\n\nFor each of the following tests of $H_0: \\mu_{\\text{diff}} = 0$, decide whether $H_0$ would be rejected. Justify each answer, using calculations where the interval alone is not enough.\n\n(a) $H_a: \\mu_{\\text{diff}} \\ne 0$ at $\\alpha = 0.10$\n\n(b) $H_a: \\mu_{\\text{diff}} > 0$ at $\\alpha = 0.05$\n\n(c) $H_a: \\mu_{\\text{diff}} \\ne 0$ at $\\alpha = 0.05$",
+  "hint": "Recover $\\bar{x}_{\\text{diff}}$ and the standard error from the interval (with $t^*$ for 90% and $df = 9$). Then you can compute the $t$ statistic and any P-value.",
+  "answer": "(a) Reject: 0 is outside the 90% interval. (b) Reject: one-sided P-value $= \\frac{0.061}{2} \\approx 0.031 < 0.05$ (equivalently, the 90% interval corresponds to a one-sided test at 0.05 and lies entirely above 0). (c) Fail to reject: $t \\approx 2.14$, $df = 9$, two-sided P-value $\\approx 0.061 > 0.05$.",
+  "solution": "Recover the summary statistics. Midpoint $\\bar{x}_{\\text{diff}} = \\frac{0.4 + 5.2}{2} = 2.8$; $ME = 2.4$. For 90% confidence and $df = 9$, $t^* = 1.833$, so\n$$SE = \\frac{2.4}{1.833} = 1.3092, \\qquad t = \\frac{2.8 - 0}{1.3092} \\approx 2.14$$\nThe two-sided P-value is $2P(t_9 \\ge 2.14) \\approx 0.061$.\n\n(a) A two-sided test at $\\alpha = 0.10$ matches a 90% confidence interval. 0 is not in $(0.4, 5.2)$, so **reject** $H_0$. (Check: $0.061 < 0.10$.)\n\n(b) A 90% interval leaves 5% in each tail, so it matches a **one-sided** test at $\\alpha = 0.05$. The interval lies entirely above 0, so **reject** $H_0$. (Check: one-sided P-value $= P(t_9 \\ge 2.14) \\approx 0.031 < 0.05$.)\n\n(c) The 90% interval cannot settle this: we would need the 95% interval. Calculating: two-sided P-value $\\approx 0.061 > 0.05$, so **fail to reject** $H_0$. (Equivalently, the 95% interval is $2.8 \\pm 2.262(1.3092) = (-0.16, 5.76)$, which contains 0.)\n\nSo the same data are \"significant\" or not depending on the choice of $H_a$ and $\\alpha$, which is why both must be decided **before** looking at the data.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-t-procedures-q18",
+  "topicId": "stat-t-procedures",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Two independent random samples of sizes $n_1$ and $n_2$ are taken from populations with means $\\mu_1$, $\\mu_2$ and standard deviations $\\sigma_1$, $\\sigma_2$.\n\n(a) Using rules for combining random variables, show that the standard deviation of $\\bar{x}_1 - \\bar{x}_2$ is $\\sqrt{\\dfrac{\\sigma_1^2}{n_1} + \\dfrac{\\sigma_2^2}{n_2}}$.\n\n(b) Hugo claims the standard error of $\\bar{x}_1 - \\bar{x}_2$ should be $\\sqrt{\\dfrac{s_1^2}{n_1} - \\dfrac{s_2^2}{n_2}}$ \"because we are subtracting\". Give a numerical example showing that his formula can give an impossible result.\n\n(c) In a matched-pairs study, the \"before\" and \"after\" scores of the same subjects are recorded. Explain which step of your proof in (a) fails for these data, and what should be done instead.",
+  "hint": "For independent $X$ and $Y$: $\\text{Var}(X - Y) = \\text{Var}(X) + \\text{Var}(Y)$. And $\\text{Var}(\\bar{x}) = \\frac{\\sigma^2}{n}$.",
+  "answer": "(a) $\\text{Var}(\\bar{x}_1) = \\frac{\\sigma_1^2}{n_1}$, $\\text{Var}(\\bar{x}_2) = \\frac{\\sigma_2^2}{n_2}$; independence gives $\\text{Var}(\\bar{x}_1 - \\bar{x}_2) = \\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}$; take the square root. (b) e.g. $s_1 = 4$, $n_1 = 20$, $s_2 = 6$, $n_2 = 20$: $\\frac{16}{20} - \\frac{36}{20} = -1$, square root of a negative (or equal samples give $SE = 0$). (c) Independence fails: before and after scores on the same subject are linked, so the variances cannot simply be added. Compute the differences and use a one-sample $t$ procedure on them.",
+  "solution": "(a) For a sample mean, $\\text{Var}(\\bar{x}_1) = \\frac{\\sigma_1^2}{n_1}$ and $\\text{Var}(\\bar{x}_2) = \\frac{\\sigma_2^2}{n_2}$.\n\nThe samples are independent, so $\\bar{x}_1$ and $\\bar{x}_2$ are independent random variables. For independent random variables, **variances add** for both sums and differences:\n$$\\text{Var}(\\bar{x}_1 - \\bar{x}_2) = \\text{Var}(\\bar{x}_1) + (-1)^2\\,\\text{Var}(\\bar{x}_2) = \\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}$$\nTaking the square root gives $\\sigma_{\\bar{x}_1 - \\bar{x}_2} = \\sqrt{\\frac{\\sigma_1^2}{n_1} + \\frac{\\sigma_2^2}{n_2}}$. $\\blacksquare$\n\n(The $(-1)^2$ is why subtraction does not cancel variability.)\n\n(b) Take $s_1 = 4$, $n_1 = 20$ and $s_2 = 6$, $n_2 = 20$:\n$$\\frac{4^2}{20} - \\frac{6^2}{20} = 0.8 - 1.8 = -1$$\nHugo's formula asks for $\\sqrt{-1}$, which is impossible for a standard error. Even with identical samples ($s_1 = s_2$, $n_1 = n_2$) his formula gives $SE = 0$, claiming the difference of two random means has no variability at all, which is absurd. The correct value here is $\\sqrt{0.8 + 1.8} = \\sqrt{2.6} \\approx 1.61$.\n\n(c) The step that fails is \"$\\bar{x}_1$ and $\\bar{x}_2$ are independent\". Before and after scores come from the **same** subjects, so they are strongly linked (a subject who scores high before tends to score high after), and $\\text{Var}(X - Y) \\ne \\text{Var}(X) + \\text{Var}(Y)$ in general. Instead, compute each subject's difference and apply a **one-sample $t$ procedure** to the differences, with $df = (\\text{number of pairs}) - 1$.",
+  "linkedTopicIds": [
+   "prob-combining-random-variables",
+   "stat-sampling-distributions"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ]
+ }
+]

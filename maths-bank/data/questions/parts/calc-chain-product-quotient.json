@@ -1,0 +1,382 @@
+[
+ {
+  "id": "calc-chain-product-quotient-q01",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=(2x+1)^4$ with respect to $x$.",
+  "hint": "Let $u=2x+1$. Differentiate $u^4$, then multiply by $\\frac{du}{dx}$.",
+  "answer": "$\\dfrac{dy}{dx}=8(2x+1)^3$",
+  "solution": "Chain rule with $u=2x+1$, so $y=u^4$.\n\n$$\\frac{dy}{du}=4u^3,\\qquad \\frac{du}{dx}=2$$\n\n$$\\frac{dy}{dx}=\\frac{dy}{du}\\times\\frac{du}{dx}=4(2x+1)^3\\times2=8(2x+1)^3$$\n\nThe factor $2$ (the derivative of the inside) is the part that is easy to forget.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q02",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=(2x+1)^{-4}$ with respect to $x$.",
+  "hint": "Same method as for $(2x+1)^4$: bring down the power, reduce the power by $1$, multiply by the derivative of the inside.",
+  "answer": "$\\dfrac{dy}{dx}=-8(2x+1)^{-5}=-\\dfrac{8}{(2x+1)^5}$",
+  "solution": "**What changed:** the power is now $-4$ instead of $4$.\n\nWith $u=2x+1$, $y=u^{-4}$:\n$$\\frac{dy}{du}=-4u^{-5},\\qquad\\frac{du}{dx}=2$$\n\n$$\\frac{dy}{dx}=-4(2x+1)^{-5}\\times2=-8(2x+1)^{-5}=-\\frac{8}{(2x+1)^5}$$\n\nThe negative power makes the answer negative and the new power is $-4-1=-5$ (not $-3$).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q03",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=(2x^2+1)^{-4}$ with respect to $x$.",
+  "hint": "The inside function is now $2x^2+1$. What is its derivative?",
+  "answer": "$\\dfrac{dy}{dx}=-16x(2x^2+1)^{-5}=-\\dfrac{16x}{(2x^2+1)^5}$",
+  "solution": "**What changed:** the inside is $2x^2+1$ instead of $2x+1$, so the derivative of the inside is $4x$ instead of $2$.\n\nWith $u=2x^2+1$, $y=u^{-4}$:\n$$\\frac{dy}{du}=-4u^{-5},\\qquad\\frac{du}{dx}=4x$$\n\n$$\\frac{dy}{dx}=-4(2x^2+1)^{-5}\\times4x=-\\frac{16x}{(2x^2+1)^5}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q04",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=(2x^2+1)^{-\\frac12}$ with respect to $x$.",
+  "hint": "Bring down $-\\frac12$ and reduce the power by $1$ to get $-\\frac32$. Don't forget the derivative of the inside.",
+  "answer": "$\\dfrac{dy}{dx}=-2x(2x^2+1)^{-\\frac32}=-\\dfrac{2x}{(2x^2+1)^{\\frac32}}$",
+  "solution": "**What changed:** the power is now the fraction $-\\frac12$ instead of $-4$.\n\nWith $u=2x^2+1$, $y=u^{-\\frac12}$:\n$$\\frac{dy}{du}=-\\tfrac12u^{-\\frac32},\\qquad\\frac{du}{dx}=4x$$\n\n$$\\frac{dy}{dx}=-\\tfrac12(2x^2+1)^{-\\frac32}\\times4x=-2x(2x^2+1)^{-\\frac32}=-\\frac{2x}{(2x^2+1)\\sqrt{2x^2+1}}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q05",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Use the product rule to differentiate $y=x^3e^{2x}$. Give your answer in fully factorised form.",
+  "hint": "Let $u=x^3$ and $v=e^{2x}$. You need $\\frac{du}{dx}$ and $\\frac{dv}{dx}$, then $u\\frac{dv}{dx}+v\\frac{du}{dx}$.",
+  "answer": "$\\dfrac{dy}{dx}=x^2e^{2x}(2x+3)$",
+  "solution": "$u=x^3\\Rightarrow\\frac{du}{dx}=3x^2$; $\\quad v=e^{2x}\\Rightarrow\\frac{dv}{dx}=2e^{2x}$ (chain rule).\n\n$$\\frac{dy}{dx}=u\\frac{dv}{dx}+v\\frac{du}{dx}=x^3\\cdot2e^{2x}+e^{2x}\\cdot3x^2$$\n\nCommon factor $x^2e^{2x}$:\n$$\\frac{dy}{dx}=x^2e^{2x}(2x+3)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q06",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use the quotient rule to differentiate $y=\\dfrac{3x}{x^2+4}$. Simplify your answer.",
+  "hint": "$u=3x$ (top), $v=x^2+4$ (bottom). The numerator of the derivative is $v\\frac{du}{dx}-u\\frac{dv}{dx}$.",
+  "answer": "$\\dfrac{dy}{dx}=\\dfrac{12-3x^2}{(x^2+4)^2}=\\dfrac{3(2-x)(2+x)}{(x^2+4)^2}$",
+  "solution": "$u=3x\\Rightarrow\\frac{du}{dx}=3$; $\\quad v=x^2+4\\Rightarrow\\frac{dv}{dx}=2x$.\n\n$$\\frac{dy}{dx}=\\frac{v\\frac{du}{dx}-u\\frac{dv}{dx}}{v^2}=\\frac{(x^2+4)\\cdot3-3x\\cdot2x}{(x^2+4)^2}$$\n\n$$=\\frac{3x^2+12-6x^2}{(x^2+4)^2}=\\frac{12-3x^2}{(x^2+4)^2}=\\frac{3(2-x)(2+x)}{(x^2+4)^2}$$\n\nDo not expand the denominator – leaving it squared makes the sign of $\\frac{dy}{dx}$ easy to read.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q07",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A curve has equation $y=(ax+b)e^{2x}$, where $a$ and $b$ are constants. Given that\n$$\\frac{dy}{dx}=(6x+7)e^{2x},$$\nfind the values of $a$ and $b$, and hence find the exact coordinates of the stationary point of the curve.",
+  "hint": "Differentiate $(ax+b)e^{2x}$ with the product rule, factor out $e^{2x}$ and compare coefficients with $6x+7$.",
+  "answer": "$a=3$, $b=2$; stationary point $\\left(-\\dfrac76,\\ -\\dfrac32e^{-\\frac73}\\right)$",
+  "solution": "Product rule with $u=ax+b$, $v=e^{2x}$:\n$$\\frac{dy}{dx}=a\\,e^{2x}+(ax+b)\\cdot2e^{2x}=e^{2x}\\big(2ax+a+2b\\big)$$\n\nCompare with $(6x+7)e^{2x}$:\n- coefficient of $x$: $2a=6\\Rightarrow a=3$;\n- constant: $a+2b=7\\Rightarrow3+2b=7\\Rightarrow b=2$.\n\nSo $y=(3x+2)e^{2x}$.\n\nStationary point: $e^{2x}>0$ for all $x$, so $\\frac{dy}{dx}=0\\iff6x+7=0\\iff x=-\\frac76$.\n\n$$y=\\left(3\\cdot\\left(-\\tfrac76\\right)+2\\right)e^{-\\frac73}=\\left(-\\tfrac72+2\\right)e^{-\\frac73}=-\\tfrac32e^{-\\frac73}$$\n\nStationary point: $\\left(-\\frac76,\\ -\\frac32e^{-\\frac73}\\right)$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q08",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to differentiate $y=e^x(4x-3)^3$ and factorise her answer. Her working is shown below.\n\n$$\\begin{aligned}\\frac{dy}{dx}&=e^x\\times3(4x-3)^2+(4x-3)^3\\times e^x\\\\&=e^x(4x-3)^2\\big[3+(4x-3)\\big]\\\\&=4xe^x(4x-3)^2\\end{aligned}$$\n\nIdentify the error in Priya's working, explain why it is wrong, and give the correct answer.",
+  "hint": "Check each derivative Priya used. What is $\\frac{d}{dx}(4x-3)^3$?",
+  "answer": "The first line is wrong: $\\dfrac{d}{dx}(4x-3)^3=12(4x-3)^2$, not $3(4x-3)^2$. Correct answer: $\\dfrac{dy}{dx}=e^x(4x-3)^2(4x+9)$",
+  "solution": "Priya used the product rule correctly, but in the **first line** she differentiated $(4x-3)^3$ as $3(4x-3)^2$. She forgot the chain rule factor: the inside, $4x-3$, has derivative $4$, so\n$$\\frac{d}{dx}(4x-3)^3=3(4x-3)^2\\times4=12(4x-3)^2$$\n\nCorrected working:\n$$\\frac{dy}{dx}=e^x\\cdot12(4x-3)^2+(4x-3)^3e^x$$\n$$=e^x(4x-3)^2\\big[12+(4x-3)\\big]=e^x(4x-3)^2(4x+9)$$\n\nHer factorising step was fine; it was the missing $\\times4$ that made the answer wrong.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q09",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Sam is asked whether $f(x)=\\dfrac{x^2}{2x+1}$ is increasing or decreasing for $x>0$. His working is shown below.\n\n$$f'(x)=\\frac{x^2\\cdot2-(2x+1)\\cdot2x}{(2x+1)^2}=\\frac{2x^2-4x^2-2x}{(2x+1)^2}=\\frac{-2x(x+1)}{(2x+1)^2}$$\n\n\"For $x>0$ the top is negative and the bottom is positive, so $f'(x)<0$ and $f$ is decreasing.\"\n\nIdentify Sam's error, explain it, and give the correct conclusion.",
+  "hint": "Write down the quotient rule carefully: which goes first in the numerator, $v\\frac{du}{dx}$ or $u\\frac{dv}{dx}$?",
+  "answer": "Sam reversed the numerator (he used $u\\frac{dv}{dx}-v\\frac{du}{dx}$). Correctly $f'(x)=\\dfrac{2x(x+1)}{(2x+1)^2}>0$ for $x>0$, so $f$ is **increasing** for $x>0$.",
+  "solution": "With $u=x^2$ (top) and $v=2x+1$ (bottom), $\\frac{du}{dx}=2x$ and $\\frac{dv}{dx}=2$. The quotient rule is\n$$f'(x)=\\frac{v\\frac{du}{dx}-u\\frac{dv}{dx}}{v^2}$$\n\nSam wrote $u\\frac{dv}{dx}-v\\frac{du}{dx}$ (\"top × derivative of bottom\" first). Swapping the order of a subtraction changes the sign, so his derivative is exactly the negative of the true one, and his conclusion is reversed.\n\nCorrect working:\n$$f'(x)=\\frac{(2x+1)\\cdot2x-x^2\\cdot2}{(2x+1)^2}=\\frac{2x^2+2x}{(2x+1)^2}=\\frac{2x(x+1)}{(2x+1)^2}$$\n\nFor $x>0$: $2x>0$, $x+1>0$ and $(2x+1)^2>0$, so $f'(x)>0$ and $f$ is **increasing** for $x>0$.\n\nQuick check: $f(1)=\\frac13$ and $f(2)=\\frac45$, so $f$ does increase.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q10",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leo is asked to find all the stationary points of the curve $y=x^2e^{-x}$. His working is shown below.\n\n$$\\frac{dy}{dx}=2x\\times\\left(-e^{-x}\\right)=-2xe^{-x}$$\n\n\"$e^{-x}$ is never $0$, so $\\frac{dy}{dx}=0$ only when $x=0$. The only stationary point is $(0,0)$.\"\n\nIdentify the error in Leo's working, explain it, and find all the stationary points.",
+  "hint": "$y$ is a product of two functions of $x$. How many terms should the derivative of a product have?",
+  "answer": "Leo multiplied the two derivatives instead of using the product rule. $\\dfrac{dy}{dx}=xe^{-x}(2-x)$; stationary points $(0,0)$ and $\\left(2,\\ \\dfrac{4}{e^2}\\right)$.",
+  "solution": "Leo differentiated $x^2$ and $e^{-x}$ separately and **multiplied the derivatives**. The derivative of a product is not the product of the derivatives; the product rule gives two terms.\n\nWith $u=x^2$, $v=e^{-x}$: $\\frac{du}{dx}=2x$, $\\frac{dv}{dx}=-e^{-x}$.\n$$\\frac{dy}{dx}=x^2\\left(-e^{-x}\\right)+e^{-x}\\cdot2x=xe^{-x}(2-x)$$\n\nSince $e^{-x}>0$, $\\frac{dy}{dx}=0\\iff x=0$ or $x=2$.\n\n- $x=0$: $y=0$.\n- $x=2$: $y=4e^{-2}=\\frac{4}{e^2}$.\n\nStationary points: $(0,0)$ and $\\left(2,\\frac{4}{e^2}\\right)$. Leo missed the second one.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q11",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The curve $C$ has equation $x=y^3+3y$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Jamal says: \"$\\frac{dx}{dy}=3y^2+3$, so $\\frac{dy}{dx}=\\frac{1}{3y^2}+\\frac13$, and the gradient of $C$ at $(4,1)$ is $\\frac23$.\" Is Jamal correct? Justify your answer."
+   },
+   {
+    "label": "b",
+    "prompt": "Explain why $C$ has no stationary points, and state the greatest value of the gradient of $C$."
+   }
+  ],
+  "hint": "$\\frac{dy}{dx}$ is $1$ divided by the **whole** of $\\frac{dx}{dy}$. For (b), what is the smallest value of $3y^2+3$?",
+  "answer": "(a) No: $\\dfrac{dy}{dx}=\\dfrac{1}{3y^2+3}$, so the gradient at $(4,1)$ is $\\dfrac16$, not $\\dfrac23$. (b) $\\dfrac{dy}{dx}=\\dfrac{1}{3y^2+3}$ is never $0$; the greatest gradient is $\\dfrac13$ (at the origin).",
+  "solution": "**(a)** Jamal's $\\frac{dx}{dy}=3y^2+3$ is right, but $\\frac{dy}{dx}=\\frac{1}{\\frac{dx}{dy}}$ is the reciprocal of the **whole** expression:\n$$\\frac{dy}{dx}=\\frac{1}{3y^2+3}$$\nIn general $\\frac{1}{a+b}\\ne\\frac1a+\\frac1b$, so he cannot take reciprocals term by term.\n\nAt $(4,1)$ (check: $1+3=4$ ✓), $\\frac{dy}{dx}=\\frac{1}{3+3}=\\frac16$. Jamal is **not** correct.\n\n**(b)** A fraction with numerator $1$ can never equal $0$, so $\\frac{dy}{dx}\\ne0$ anywhere on $C$: there are no stationary points. (Also $3y^2+3\\ge3>0$, so $\\frac{dy}{dx}$ is always defined and positive.)\n\nThe gradient $\\frac{1}{3y^2+3}$ is largest when $3y^2+3$ is smallest, i.e. when $y=0$ (so $x=0$). The greatest gradient is $\\frac13$, at the origin.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q12",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "In this question, use only the results $\\dfrac{d}{dx}(\\sin x)=\\cos x$, $\\dfrac{d}{dx}(\\cos x)=-\\sin x$ and $\\dfrac{d}{dx}(\\ln x)=\\dfrac1x$, together with the chain, product and quotient rules.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that $\\dfrac{d}{dx}(\\tan x)=\\sec^2x$."
+   },
+   {
+    "label": "b",
+    "prompt": "By writing $\\sec x=(\\cos x)^{-1}$, prove that $\\dfrac{d}{dx}(\\sec x)=\\sec x\\tan x$."
+   },
+   {
+    "label": "c",
+    "prompt": "Hence prove that $\\dfrac{d}{dx}\\ln(\\sec x+\\tan x)=\\sec x$."
+   }
+  ],
+  "hint": "(a) Write $\\tan x=\\frac{\\sin x}{\\cos x}$ and use $\\sin^2x+\\cos^2x=1$. (c) Use the chain rule with $u=\\sec x+\\tan x$, then look for a common factor in the numerator.",
+  "answer": "(a), (b), (c) Proofs – see solution.",
+  "solution": "**(a)** $\\tan x=\\frac{\\sin x}{\\cos x}$. Quotient rule with $u=\\sin x$, $v=\\cos x$:\n$$\\frac{d}{dx}(\\tan x)=\\frac{\\cos x\\cdot\\cos x-\\sin x\\cdot(-\\sin x)}{\\cos^2x}=\\frac{\\cos^2x+\\sin^2x}{\\cos^2x}=\\frac{1}{\\cos^2x}=\\sec^2x\\qquad\\blacksquare$$\n\n**(b)** $\\sec x=(\\cos x)^{-1}$. Chain rule with inside $\\cos x$:\n$$\\frac{d}{dx}(\\sec x)=-1\\cdot(\\cos x)^{-2}\\cdot(-\\sin x)=\\frac{\\sin x}{\\cos^2x}=\\frac{1}{\\cos x}\\cdot\\frac{\\sin x}{\\cos x}=\\sec x\\tan x\\qquad\\blacksquare$$\n\n**(c)** Chain rule with $u=\\sec x+\\tan x$, $\\frac{du}{dx}=\\sec x\\tan x+\\sec^2x$ (from (a) and (b)):\n$$\\frac{d}{dx}\\ln(\\sec x+\\tan x)=\\frac{\\sec x\\tan x+\\sec^2x}{\\sec x+\\tan x}=\\frac{\\sec x(\\tan x+\\sec x)}{\\sec x+\\tan x}=\\sec x\\qquad\\blacksquare$$\n\n(The cancellation is valid wherever $\\sec x+\\tan x>0$, which is where the logarithm is defined.)",
+  "linkedTopicIds": [
+   "pure-trig-reciprocal-inverse"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q13",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "$$f(x)=\\frac{\\ln x}{x^2},\\qquad x>0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f'(x)=\\dfrac{1-2\\ln x}{x^3}$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact coordinates of the stationary point of the curve $y=f(x)$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find an equation of the tangent to the curve $y=f(x)$ at the point where the curve crosses the $x$-axis.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Quotient rule with $u=\\ln x$, $v=x^2$, then divide top and bottom by $x$. (b) Solve $1-2\\ln x=0$. (c) Where is $\\ln x=0$?",
+  "answer": "(a) Shown. (b) $\\left(\\sqrt{e},\\ \\dfrac{1}{2e}\\right)$ (c) $y=x-1$",
+  "solution": "**(a)** $u=\\ln x$, $\\frac{du}{dx}=\\frac1x$; $v=x^2$, $\\frac{dv}{dx}=2x$. **B1** (both derivatives)\n$$f'(x)=\\frac{x^2\\cdot\\frac1x-\\ln x\\cdot2x}{x^4}$$\n**M1** (quotient rule applied with numerator in the correct order)\n$$=\\frac{x-2x\\ln x}{x^4}=\\frac{x(1-2\\ln x)}{x^4}=\\frac{1-2\\ln x}{x^3}$$\n**A1** (cso – the given answer reached with no errors)\n\n**(b)** $f'(x)=0\\Rightarrow1-2\\ln x=0$ (as $x^3\\ne0$) **M1**\n$$\\ln x=\\tfrac12\\Rightarrow x=e^{\\frac12}=\\sqrt e$$ **A1**\n$$y=\\frac{\\frac12}{(\\sqrt e)^2}=\\frac{1}{2e}$$\nStationary point $\\left(\\sqrt e,\\frac{1}{2e}\\right)$. **A1**\n\n**(c)** $f(x)=0\\Rightarrow\\ln x=0\\Rightarrow x=1$, so the point is $(1,0)$. **B1**\n\n$f'(1)=\\frac{1-0}{1}=1$ **M1** (substituting their $x$ into $f'(x)$)\n\nTangent: $y-0=1(x-1)$, i.e. $y=x-1$. **A1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-chain-product-quotient-q14",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "The functions $f$ and $g$ are differentiable for all real numbers. The table gives values of $f$, $f'$, $g$ and $g'$ at selected values of $x$.\n\n| $x$ | $f(x)$ | $f'(x)$ | $g(x)$ | $g'(x)$ |\n|---|---|---|---|---|\n| $1$ | $3$ | $-2$ | $2$ | $5$ |\n| $2$ | $1$ | $4$ | $1$ | $-3$ |\n| $3$ | $2$ | $6$ | $4$ | $1$ |\n\n(AP Calculus FRQ style – show the work that leads to each answer.)",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Let $h(x)=f(g(x))$. Find $h'(1)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Let $k(x)=x^2f(x)$. Find $k'(3)$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Let $m(x)=\\dfrac{g(x)}{f(x)}$. Find $m'(2)$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Write an equation for the line tangent to the graph of $y=h(x)$ at $x=2$.",
+    "marks": 3
+   }
+  ],
+  "hint": "For $h'(1)$ you need $f'$ evaluated at $g(1)$, not at $1$. Read every value from the correct row.",
+  "answer": "(a) $h'(1)=20$ (b) $k'(3)=66$ (c) $m'(2)=-7$ (d) $y-3=6(x-2)$",
+  "solution": "**(a)** Chain rule: $h'(x)=f'(g(x))\\,g'(x)$. **1 pt**\n$$h'(1)=f'(g(1))\\,g'(1)=f'(2)\\times5=4\\times5=20$$ **1 pt**\n\n**(b)** Product rule: $k'(x)=2x\\,f(x)+x^2f'(x)$. **1 pt**\n$$k'(3)=2(3)(2)+9(6)=12+54=66$$ **1 pt**\n\n**(c)** Quotient rule: $m'(x)=\\dfrac{f(x)g'(x)-g(x)f'(x)}{\\big(f(x)\\big)^2}$. **1 pt**\n$$m'(2)=\\frac{(1)(-3)-(1)(4)}{1^2}=-7$$ **1 pt**\n\n**(d)** $h(2)=f(g(2))=f(1)=3$. **1 pt**\n$$h'(2)=f'(g(2))\\,g'(2)=f'(1)\\times(-3)=(-2)(-3)=6$$ **1 pt**\nTangent line: $y-3=6(x-2)$. **1 pt**\n\nCommon error: in (a), writing $h'(1)=f'(1)g'(1)=-10$ uses $f'$ at the wrong input.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-chain-product-quotient-q15",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The curve $C$ has equation\n$$y=\\frac{\\sin x}{2+\\cos x},\\qquad0\\le x\\le2\\pi.$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{dy}{dx}=\\dfrac{1+2\\cos x}{(2+\\cos x)^2}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the exact coordinates of the stationary points of $C$ and determine their nature."
+   }
+  ],
+  "hint": "(a) After the quotient rule, the numerator contains $\\cos^2x+\\sin^2x$. (b) Solve $\\cos x=-\\frac12$ in the given interval; consider the sign of $1+2\\cos x$ either side.",
+  "answer": "(a) Shown. (b) Maximum $\\left(\\dfrac{2\\pi}{3},\\ \\dfrac{\\sqrt3}{3}\\right)$; minimum $\\left(\\dfrac{4\\pi}{3},\\ -\\dfrac{\\sqrt3}{3}\\right)$",
+  "solution": "**(a)** $u=\\sin x$, $\\frac{du}{dx}=\\cos x$; $v=2+\\cos x$, $\\frac{dv}{dx}=-\\sin x$.\n$$\\frac{dy}{dx}=\\frac{(2+\\cos x)\\cos x-\\sin x(-\\sin x)}{(2+\\cos x)^2}=\\frac{2\\cos x+\\cos^2x+\\sin^2x}{(2+\\cos x)^2}=\\frac{1+2\\cos x}{(2+\\cos x)^2}$$\nusing $\\sin^2x+\\cos^2x\\equiv1$.\n\n**(b)** The denominator is always positive ($2+\\cos x\\ge1$), so $\\frac{dy}{dx}=0\\iff\\cos x=-\\frac12$.\n\nIn $0\\le x\\le2\\pi$: $x=\\frac{2\\pi}{3}$ or $x=\\frac{4\\pi}{3}$.\n\n- $x=\\frac{2\\pi}{3}$: $\\sin x=\\frac{\\sqrt3}{2}$, $\\cos x=-\\frac12$, so $y=\\frac{\\sqrt3/2}{3/2}=\\frac{\\sqrt3}{3}$.\n- $x=\\frac{4\\pi}{3}$: $\\sin x=-\\frac{\\sqrt3}{2}$, $\\cos x=-\\frac12$, so $y=-\\frac{\\sqrt3}{3}$.\n\nNature: the sign of $\\frac{dy}{dx}$ is the sign of $1+2\\cos x$.\n- Just before $\\frac{2\\pi}{3}$, $\\cos x>-\\frac12$ so $\\frac{dy}{dx}>0$; just after, $\\frac{dy}{dx}<0$: **maximum** at $\\left(\\frac{2\\pi}{3},\\frac{\\sqrt3}{3}\\right)$.\n- Just before $\\frac{4\\pi}{3}$, $\\frac{dy}{dx}<0$; just after, $\\cos x>-\\frac12$ so $\\frac{dy}{dx}>0$: **minimum** at $\\left(\\frac{4\\pi}{3},-\\frac{\\sqrt3}{3}\\right)$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "pure-trig-identities-equations",
+   "calc-stationary-points"
+  ]
+ },
+ {
+  "id": "calc-chain-product-quotient-q16",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A lake is stocked with 500 trout. A biologist models the number of trout, $P$, after $t$ years by\n$$P=\\frac{5000}{1+9e^{-0.4t}},\\qquad t\\ge0.$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{dP}{dt}=0.4P\\left(1-\\dfrac{P}{5000}\\right)$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the greatest rate at which, according to the model, the trout population increases, and the time at which this happens. Give the time in years to 3 significant figures."
+   }
+  ],
+  "hint": "(a) Write $P=5000(1+9e^{-0.4t})^{-1}$ and use the chain rule; then express $\\frac{9e^{-0.4t}}{1+9e^{-0.4t}}$ in terms of $P$. (b) $\\frac{dP}{dt}$ is a quadratic in $P$.",
+  "answer": "(a) Shown. (b) Greatest rate 500 trout per year, when $P=2500$, at $t=\\dfrac{\\ln9}{0.4}\\approx5.49$ years.",
+  "solution": "**(a)** $P=5000(1+9e^{-0.4t})^{-1}$. Chain rule (the inside has derivative $9\\times(-0.4)e^{-0.4t}=-3.6e^{-0.4t}$):\n$$\\frac{dP}{dt}=-5000(1+9e^{-0.4t})^{-2}\\times(-3.6e^{-0.4t})=\\frac{18000e^{-0.4t}}{(1+9e^{-0.4t})^2}$$\n\nNow\n$$0.4P\\left(1-\\frac{P}{5000}\\right)=0.4\\cdot\\frac{5000}{1+9e^{-0.4t}}\\cdot\\frac{(1+9e^{-0.4t})-1}{1+9e^{-0.4t}}=\\frac{2000\\cdot9e^{-0.4t}}{(1+9e^{-0.4t})^2}=\\frac{18000e^{-0.4t}}{(1+9e^{-0.4t})^2}$$\nwhich is the same, so $\\frac{dP}{dt}=0.4P\\left(1-\\frac{P}{5000}\\right)$.\n\n**(b)** $\\frac{dP}{dt}=0.4P-\\frac{0.4P^2}{5000}$ is a quadratic in $P$ with roots $P=0$ and $P=5000$ and negative $P^2$ coefficient, so its maximum is at the midpoint $P=2500$:\n$$\\left(\\frac{dP}{dt}\\right)_{\\max}=0.4\\times2500\\times\\left(1-\\tfrac12\\right)=500\\text{ trout per year}$$\n\n$P=2500$ when $\\frac{5000}{1+9e^{-0.4t}}=2500$, so $1+9e^{-0.4t}=2$, $e^{-0.4t}=\\frac19$:\n$$t=\\frac{\\ln9}{0.4}=5.493\\ldots\\approx5.49\\text{ years}$$\n\n(Since $P$ increases from 500 towards 5000, it passes through 2500 exactly once, so this is the only time.)",
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q17",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The curve $C$ has equation $y=xe^{-x}$. The point $Q$ has coordinates $(k,0)$, where $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the tangent to $C$ at the point where $x=a$ has equation $y=(1-a)e^{-a}x+a^2e^{-a}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Show that this tangent passes through $Q$ if and only if $a^2-ka+k=0$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the set of values of $k$ for which there are two different points on $C$ at which the tangent passes through $Q$."
+   },
+   {
+    "label": "d",
+    "prompt": "For $k=4$, find the equation of the tangent to $C$ that passes through $Q$."
+   }
+  ],
+  "hint": "(a) Use the product rule for the gradient, then $y-y_1=m(x-x_1)$. (c) A quadratic in $a$ has two different real roots when its discriminant is positive.",
+  "answer": "(a), (b) Shown. (c) $k<0$ or $k>4$ (d) $x+e^2y=4$, i.e. $y=-e^{-2}x+4e^{-2}$",
+  "solution": "**(a)** $\\frac{dy}{dx}=1\\cdot e^{-x}+x\\cdot(-e^{-x})=(1-x)e^{-x}$ (product rule).\n\nAt $x=a$: point $(a,\\ ae^{-a})$, gradient $(1-a)e^{-a}$.\n$$y-ae^{-a}=(1-a)e^{-a}(x-a)$$\n$$y=(1-a)e^{-a}x-a(1-a)e^{-a}+ae^{-a}=(1-a)e^{-a}x+a^2e^{-a}$$\n\n**(b)** Substitute $(k,0)$: $0=(1-a)e^{-a}k+a^2e^{-a}$. Multiply by $e^a$ (which is never $0$, so this is reversible):\n$$0=k-ak+a^2\\iff a^2-ka+k=0$$\n\n**(c)** Each real root $a$ gives a point of contact $(a,ae^{-a})$, and different values of $a$ give different points. So we need two distinct real roots:\n$$\\text{discriminant}=k^2-4k>0\\iff k(k-4)>0\\iff k<0\\ \\text{or}\\ k>4$$\n\n**(d)** $k=4$: $a^2-4a+4=(a-2)^2=0$, so $a=2$ (one point of contact, as the discriminant is $0$).\n\nTangent: $y=(1-2)e^{-2}x+4e^{-2}=-e^{-2}x+4e^{-2}$. Multiplying by $e^2$: $x+e^2y=4$.",
+  "linkedTopicIds": [
+   "calc-tangents-normals",
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-chain-product-quotient-q18",
+  "topicId": "calc-chain-product-quotient",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A lamp $L$ hangs directly above the centre $O$ of a circular table of radius 0.9 m, at a height of $h$ metres above the table top. $P$ is a point on the edge of the table, $LP=d$ metres and $\\theta$ is the angle between $LP$ and the table top, as shown.\n\nThe illuminance at $P$ is modelled by\n$$I=\\frac{k\\sin\\theta}{d^2},$$\nwhere $k$ is a positive constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $I=\\dfrac{kh}{(h^2+0.81)^{\\frac32}}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find, to 3 significant figures, the height $h$ that makes the illuminance at the edge of the table as large as possible, and justify that it gives a maximum."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\">\n<line x1=\"30\" y1=\"180\" x2=\"310\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2.5\"/>\n<line x1=\"80\" y1=\"46\" x2=\"80\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<line x1=\"80\" y1=\"40\" x2=\"280\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polyline points=\"80,170 90,170 90,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<circle cx=\"80\" cy=\"40\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<path d=\"M 250 180 A 30 30 0 0 1 255.42 162.79\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<circle cx=\"80\" cy=\"180\" r=\"3\" fill=\"currentColor\"/>\n<circle cx=\"280\" cy=\"180\" r=\"3\" fill=\"currentColor\"/>\n<text x=\"92\" y=\"38\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">L</text>\n<text x=\"64\" y=\"116\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">h</text>\n<text x=\"186\" y=\"104\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">d</text>\n<text x=\"226\" y=\"174\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">θ</text>\n<text x=\"74\" y=\"200\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text>\n<text x=\"274\" y=\"200\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text>\n<text x=\"160\" y=\"200\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.9 m</text>\n</svg>",
+  "hint": "(a) Use Pythagoras for $d$ and right-angled trigonometry for $\\sin\\theta$. (b) Use the quotient rule (with the chain rule for the denominator) and factor out $(h^2+0.81)^{\\frac12}$ in the numerator.",
+  "answer": "(a) Shown. (b) $h=\\dfrac{0.9}{\\sqrt2}\\approx0.636$ m (maximum, since $\\dfrac{dI}{dh}$ changes from positive to negative there).",
+  "solution": "**(a)** Triangle $LOP$ is right-angled at $O$, so $d^2=h^2+0.9^2=h^2+0.81$ and $\\sin\\theta=\\frac{h}{d}$.\n$$I=\\frac{k\\cdot\\frac hd}{d^2}=\\frac{kh}{d^3}=\\frac{kh}{(h^2+0.81)^{\\frac32}}$$\n\n**(b)** Quotient rule with $u=kh$, $v=(h^2+0.81)^{\\frac32}$: $\\frac{du}{dh}=k$ and, by the chain rule, $\\frac{dv}{dh}=\\frac32(h^2+0.81)^{\\frac12}\\cdot2h=3h(h^2+0.81)^{\\frac12}$.\n$$\\frac{dI}{dh}=\\frac{(h^2+0.81)^{\\frac32}\\cdot k-kh\\cdot3h(h^2+0.81)^{\\frac12}}{(h^2+0.81)^3}$$\nFactor $k(h^2+0.81)^{\\frac12}$ from the numerator:\n$$\\frac{dI}{dh}=\\frac{k(h^2+0.81-3h^2)}{(h^2+0.81)^{\\frac52}}=\\frac{k(0.81-2h^2)}{(h^2+0.81)^{\\frac52}}$$\n\n$\\frac{dI}{dh}=0\\iff2h^2=0.81\\iff h=\\frac{0.9}{\\sqrt2}=0.6364\\ldots$ (taking $h>0$).\n\nJustification: the denominator and $k$ are positive, so the sign of $\\frac{dI}{dh}$ is the sign of $0.81-2h^2$: positive for $0<h<0.636$ and negative for $h>0.636$. So $I$ increases then decreases: a **maximum**.\n\nThe lamp should be hung about **0.636 m** above the table.",
+  "linkedTopicIds": [
+   "calc-optimisation",
+   "geo-trig-right-angled"
+  ],
+  "misconceptionIds": []
+ }
+]

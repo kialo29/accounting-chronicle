@@ -1,0 +1,278 @@
+[
+ {
+  "id": "stat-sampling-distributions-q01",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "In a large city, $30\\%$ of households have a pet cat. A random sample of 100 households is selected and $\\hat{p}$ is the proportion of the sample with a pet cat.\n\n(a) Find the mean of the sampling distribution of $\\hat{p}$.\n\n(b) Find the standard deviation of the sampling distribution of $\\hat{p}$, and state the condition you need to check to use the formula.",
+  "hint": "$\\mu_{\\hat{p}} = p$ and $\\sigma_{\\hat{p}} = \\sqrt{\\dfrac{p(1-p)}{n}}$.",
+  "answer": "(a) $\\mu_{\\hat{p}} = 0.30$ (b) $\\sigma_{\\hat{p}} \\approx 0.0458$; 10% condition: the city has more than $10(100) = 1000$ households.",
+  "solution": "(a) $\\hat{p}$ is an unbiased estimator of $p$, so\n$$\\mu_{\\hat{p}} = p = 0.30$$\n\n(b)\n$$\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}} = \\sqrt{\\frac{0.30(0.70)}{100}} = \\sqrt{0.0021} \\approx 0.0458$$\n\nThis formula assumes the observations are (approximately) independent. Because we sample without replacement, we check the **10% condition**: $n = 100$ is at most $10\\%$ of the population, i.e. the city has at least $10(100) = 1000$ households, which is clearly true for a large city.\n\nInterpretation: in repeated random samples of 100 households, the sample proportion with a cat typically varies by about $0.046$ from the true proportion $0.30$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q02",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The time it takes adults to complete a standardized online training module is approximately normally distributed with mean $\\mu = 50$ minutes and standard deviation $\\sigma = 12$ minutes. Thousands of adults take the module each year.\n\nFind the probability that one randomly selected adult takes more than 53 minutes.",
+  "hint": "This is about a single individual, so use $\\sigma = 12$ directly.",
+  "answer": "$P(X > 53) \\approx 0.4013$",
+  "solution": "For one adult, $X \\sim N(50, 12)$.\n$$z = \\frac{53 - 50}{12} = 0.25$$\n$$P(X > 53) = P(Z > 0.25) \\approx 0.4013$$\n\nThis is the starting point of the sequence: a sample of size $n = 1$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q03",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The time it takes adults to complete a standardized online training module is approximately normally distributed with mean $\\mu = 50$ minutes and standard deviation $\\sigma = 12$ minutes. Thousands of adults take the module each year.\n\nA random sample of 16 adults is selected. Find the probability that the **mean** time for the sample, $\\bar{x}$, is more than 53 minutes.",
+  "hint": "Now the statistic is $\\bar{x}$, whose standard deviation is $\\dfrac{\\sigma}{\\sqrt{n}}$.",
+  "answer": "$P(\\bar{x} > 53) \\approx 0.1587$",
+  "solution": "**What changed:** one adult became a sample of $n = 16$.\n\nSince the population is normal, $\\bar{x}$ is exactly normal with\n$$\\mu_{\\bar{x}} = 50, \\qquad \\sigma_{\\bar{x}} = \\frac{12}{\\sqrt{16}} = 3$$\n(10% condition: thousands of adults take the module, far more than $10(16) = 160$.)\n$$z = \\frac{53 - 50}{3} = 1, \\qquad P(\\bar{x} > 53) = P(Z > 1) \\approx 0.1587$$\n\n**Effect:** the mean of 16 adults varies much less than one adult, so 53 minutes is now further out in the tail (0.1587 compared with 0.4013). Using $\\sigma = 12$ here would wrongly give 0.4013 again.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q04",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The time it takes adults to complete a standardized online training module is approximately normally distributed with mean $\\mu = 50$ minutes and standard deviation $\\sigma = 12$ minutes. Thousands of adults take the module each year.\n\nA random sample of 64 adults is selected. Find the probability that the sample mean time $\\bar{x}$ is more than 53 minutes.",
+  "hint": "$n$ has been multiplied by 4. What happens to $\\sqrt{n}$?",
+  "answer": "$P(\\bar{x} > 53) \\approx 0.0228$",
+  "solution": "**What changed:** $n = 16$ became $n = 64$ (4 times as large).\n$$\\sigma_{\\bar{x}} = \\frac{12}{\\sqrt{64}} = 1.5$$\nMultiplying $n$ by 4 multiplies $\\sqrt{n}$ by 2, so the standard deviation **halves** (from 3 to 1.5).\n$$z = \\frac{53 - 50}{1.5} = 2, \\qquad P(\\bar{x} > 53) = P(Z > 2) \\approx 0.0228$$\n\n(10% condition: $10(64) = 640$ is far fewer than the thousands of adults.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q05",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The time it takes adults to complete a standardized online training module is approximately normally distributed with mean $\\mu = 50$ minutes and standard deviation $\\sigma = 12$ minutes. Thousands of adults take the module each year.\n\nA random sample of 36 adults is selected. Find the probability that the sample mean time $\\bar{x}$ is more than 53 minutes.",
+  "hint": "Compute $\\sigma_{\\bar{x}}$ for the new $n$, then the $z$-score.",
+  "answer": "$P(\\bar{x} > 53) \\approx 0.0668$",
+  "solution": "**What changed:** $n = 64$ became $n = 36$.\n$$\\sigma_{\\bar{x}} = \\frac{12}{\\sqrt{36}} = 2$$\n$$z = \\frac{53 - 50}{2} = 1.5, \\qquad P(\\bar{x} > 53) = P(Z > 1.5) \\approx 0.0668$$\n\n**Pattern across the sequence:** as $n$ goes $1 \\to 16 \\to 36 \\to 64$, $\\sigma_{\\bar{x}}$ goes $12 \\to 3 \\to 2 \\to 1.5$, the $z$-score goes $0.25 \\to 1 \\to 1.5 \\to 2$, and the probability goes $0.4013 \\to 0.1587 \\to 0.0668 \\to 0.0228$. Larger samples give sample means closer to $\\mu$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q06",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A machine produces phone cases, and $4\\%$ of all cases it makes have a flaw. An inspector takes a random sample of cases from a day's production of 20,000.\n\n(a) For samples of size $n = 50$, Taylor says: \"The sampling distribution of $\\hat{p}$ is approximately normal because $50 \\ge 30$.\" Is Taylor correct? Explain.\n\n(b) For samples of size $n = 400$, describe the shape, center, and variability of the sampling distribution of $\\hat{p}$. Check any conditions you use.",
+  "hint": "For proportions, the shape condition is Large Counts: $np \\ge 10$ and $n(1-p) \\ge 10$.",
+  "answer": "(a) No: $np = 2 < 10$, so Large Counts fails and the distribution is right-skewed. (b) Approximately normal ($np = 16$, $n(1-p) = 384$), mean $0.04$, SD $\\approx 0.0098$ (10% condition: $400 \\le 2000$).",
+  "solution": "(a) Taylor is **not** correct. \"$n \\ge 30$\" is the Central Limit Theorem guideline for **sample means**. For a sample proportion we check **Large Counts**:\n$$np = 50(0.04) = 2 < 10$$\nso the sampling distribution of $\\hat{p}$ is **not** approximately normal. With an expected 2 flawed cases per sample, $\\hat{p}$ is often 0, 0.02 or 0.04 and occasionally larger: the distribution is right-skewed.\n\n(b) **Shape:** $np = 400(0.04) = 16 \\ge 10$ and $n(1-p) = 400(0.96) = 384 \\ge 10$, so approximately normal.\n\n**Center:** $\\mu_{\\hat{p}} = 0.04$.\n\n**Variability:** 10% condition: $400 \\le 0.10(20{,}000) = 2000$ ✓, so\n$$\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.04(0.96)}{400}} \\approx 0.0098$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q07",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Three different methods, A, B and C, are proposed for estimating the mean $\\mu$ of a population. The diagram shows the sampling distribution of the statistic produced by each method for samples of the same size. The dashed line shows the value of $\\mu$.\n\n(a) Which method(s) give an unbiased estimator of $\\mu$? Explain.\n\n(b) Which method has the most variability?\n\n(c) Which method would you choose? Justify your answer.\n\n(d) Explain why taking a larger sample would not fix the problem with method B.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"340\" height=\"280\"><line x1=\"30\" y1=\"88\" x2=\"320\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M30.0 87.9 L31.4 87.9 L32.9 87.9 L34.4 87.9 L35.8 87.9 L37.2 87.9 L38.7 87.9 L40.1 87.8 L41.6 87.8 L43.0 87.8 L44.5 87.8 L46.0 87.8 L47.4 87.7 L48.9 87.7 L50.3 87.7 L51.8 87.7 L53.2 87.6 L54.6 87.6 L56.1 87.5 L57.5 87.5 L59.0 87.4 L60.5 87.4 L61.9 87.3 L63.3 87.3 L64.8 87.2 L66.2 87.2 L67.7 87.1 L69.2 87.0 L70.6 86.9 L72.0 86.8 L73.5 86.7 L75.0 86.6 L76.4 86.5 L77.8 86.4 L79.3 86.3 L80.8 86.2 L82.2 86.0 L83.7 85.9 L85.1 85.7 L86.6 85.6 L88.0 85.4 L89.4 85.2 L90.9 85.0 L92.3 84.8 L93.8 84.6 L95.2 84.4 L96.7 84.2 L98.2 83.9 L99.6 83.7 L101.1 83.4 L102.5 83.2 L104.0 82.9 L105.4 82.6 L106.9 82.3 L108.3 82.0 L109.8 81.7 L111.2 81.4 L112.7 81.1 L114.1 80.7 L115.6 80.4 L117.0 80.1 L118.5 79.7 L119.9 79.3 L121.3 79.0 L122.8 78.6 L124.2 78.2 L125.7 77.8 L127.2 77.4 L128.6 77.1 L130.1 76.7 L131.5 76.3 L132.9 75.9 L134.4 75.5 L135.8 75.1 L137.3 74.7 L138.8 74.3 L140.2 74.0 L141.7 73.6 L143.1 73.2 L144.6 72.9 L146.0 72.5 L147.4 72.2 L148.9 71.9 L150.4 71.5 L151.8 71.2 L153.2 70.9 L154.7 70.7 L156.1 70.4 L157.6 70.2 L159.1 69.9 L160.5 69.7 L161.9 69.5 L163.4 69.3 L164.8 69.2 L166.3 69.0 L167.8 68.9 L169.2 68.8 L170.7 68.8 L172.1 68.7 L173.6 68.7 L175.0 68.7 L176.4 68.7 L177.9 68.7 L179.3 68.8 L180.8 68.8 L182.2 68.9 L183.7 69.0 L185.1 69.2 L186.6 69.3 L188.1 69.5 L189.5 69.7 L190.9 69.9 L192.4 70.2 L193.9 70.4 L195.3 70.7 L196.8 70.9 L198.2 71.2 L199.6 71.5 L201.1 71.9 L202.5 72.2 L204.0 72.5 L205.4 72.9 L206.9 73.2 L208.3 73.6 L209.8 74.0 L211.2 74.3 L212.7 74.7 L214.2 75.1 L215.6 75.5 L217.1 75.9 L218.5 76.3 L220.0 76.7 L221.4 77.1 L222.9 77.4 L224.3 77.8 L225.8 78.2 L227.2 78.6 L228.6 79.0 L230.1 79.3 L231.6 79.7 L233.0 80.1 L234.4 80.4 L235.9 80.7 L237.4 81.1 L238.8 81.4 L240.2 81.7 L241.7 82.0 L243.2 82.3 L244.6 82.6 L246.1 82.9 L247.5 83.2 L248.9 83.4 L250.4 83.7 L251.8 83.9 L253.3 84.2 L254.8 84.4 L256.2 84.6 L257.6 84.8 L259.1 85.0 L260.6 85.2 L262.0 85.4 L263.5 85.6 L264.9 85.7 L266.4 85.9 L267.8 86.0 L269.2 86.2 L270.7 86.3 L272.1 86.4 L273.6 86.5 L275.0 86.6 L276.5 86.7 L278.0 86.8 L279.4 86.9 L280.9 87.0 L282.3 87.1 L283.8 87.2 L285.2 87.2 L286.6 87.3 L288.1 87.3 L289.5 87.4 L291.0 87.4 L292.4 87.5 L293.9 87.5 L295.4 87.6 L296.8 87.6 L298.2 87.7 L299.7 87.7 L301.1 87.7 L302.6 87.7 L304.1 87.8 L305.5 87.8 L307.0 87.8 L308.4 87.8 L309.9 87.8 L311.3 87.9 L312.8 87.9 L314.2 87.9 L315.6 87.9 L317.1 87.9 L318.5 87.9 L320.0 87.9\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"8\" y=\"48\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><line x1=\"30\" y1=\"166\" x2=\"320\" y2=\"166\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M30.0 166.0 L31.4 166.0 L32.9 166.0 L34.4 166.0 L35.8 166.0 L37.2 166.0 L38.7 166.0 L40.1 166.0 L41.6 166.0 L43.0 166.0 L44.5 166.0 L46.0 166.0 L47.4 166.0 L48.9 166.0 L50.3 166.0 L51.8 166.0 L53.2 166.0 L54.6 166.0 L56.1 166.0 L57.5 166.0 L59.0 166.0 L60.5 166.0 L61.9 166.0 L63.3 166.0 L64.8 166.0 L66.2 166.0 L67.7 166.0 L69.2 166.0 L70.6 166.0 L72.0 166.0 L73.5 166.0 L75.0 166.0 L76.4 166.0 L77.8 166.0 L79.3 166.0 L80.8 166.0 L82.2 166.0 L83.7 166.0 L85.1 166.0 L86.6 166.0 L88.0 166.0 L89.4 166.0 L90.9 166.0 L92.3 166.0 L93.8 166.0 L95.2 166.0 L96.7 166.0 L98.2 166.0 L99.6 166.0 L101.1 166.0 L102.5 166.0 L104.0 166.0 L105.4 166.0 L106.9 166.0 L108.3 166.0 L109.8 166.0 L111.2 166.0 L112.7 166.0 L114.1 166.0 L115.6 166.0 L117.0 166.0 L118.5 166.0 L119.9 166.0 L121.3 166.0 L122.8 166.0 L124.2 166.0 L125.7 166.0 L127.2 166.0 L128.6 166.0 L130.1 166.0 L131.5 166.0 L132.9 166.0 L134.4 166.0 L135.8 166.0 L137.3 166.0 L138.8 166.0 L140.2 166.0 L141.7 166.0 L143.1 166.0 L144.6 166.0 L146.0 166.0 L147.4 166.0 L148.9 166.0 L150.4 166.0 L151.8 166.0 L153.2 166.0 L154.7 166.0 L156.1 166.0 L157.6 166.0 L159.1 166.0 L160.5 166.0 L161.9 166.0 L163.4 166.0 L164.8 166.0 L166.3 166.0 L167.8 166.0 L169.2 166.0 L170.7 166.0 L172.1 166.0 L173.6 165.9 L175.0 165.9 L176.4 165.9 L177.9 165.8 L179.3 165.7 L180.8 165.7 L182.2 165.5 L183.7 165.4 L185.1 165.1 L186.6 164.8 L188.1 164.5 L189.5 164.0 L190.9 163.5 L192.4 162.7 L193.9 161.9 L195.3 160.8 L196.8 159.6 L198.2 158.2 L199.6 156.5 L201.1 154.5 L202.5 152.3 L204.0 149.9 L205.4 147.2 L206.9 144.2 L208.3 141.1 L209.8 137.8 L211.2 134.3 L212.7 130.8 L214.2 127.3 L215.6 123.9 L217.1 120.6 L218.5 117.6 L220.0 114.8 L221.4 112.5 L222.9 110.6 L224.3 109.1 L225.8 108.3 L227.2 108.0 L228.6 108.3 L230.1 109.1 L231.6 110.6 L233.0 112.5 L234.4 114.8 L235.9 117.6 L237.4 120.6 L238.8 123.9 L240.2 127.3 L241.7 130.8 L243.2 134.3 L244.6 137.8 L246.1 141.1 L247.5 144.2 L248.9 147.2 L250.4 149.9 L251.8 152.3 L253.3 154.5 L254.8 156.5 L256.2 158.2 L257.6 159.6 L259.1 160.8 L260.6 161.9 L262.0 162.7 L263.5 163.5 L264.9 164.0 L266.4 164.5 L267.8 164.8 L269.2 165.1 L270.7 165.4 L272.1 165.5 L273.6 165.7 L275.0 165.7 L276.5 165.8 L278.0 165.9 L279.4 165.9 L280.9 165.9 L282.3 166.0 L283.8 166.0 L285.2 166.0 L286.6 166.0 L288.1 166.0 L289.5 166.0 L291.0 166.0 L292.4 166.0 L293.9 166.0 L295.4 166.0 L296.8 166.0 L298.2 166.0 L299.7 166.0 L301.1 166.0 L302.6 166.0 L304.1 166.0 L305.5 166.0 L307.0 166.0 L308.4 166.0 L309.9 166.0 L311.3 166.0 L312.8 166.0 L314.2 166.0 L315.6 166.0 L317.1 166.0 L318.5 166.0 L320.0 166.0\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"8\" y=\"126\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><line x1=\"30\" y1=\"244\" x2=\"320\" y2=\"244\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M30.0 244.0 L31.4 244.0 L32.9 244.0 L34.4 244.0 L35.8 244.0 L37.2 244.0 L38.7 244.0 L40.1 244.0 L41.6 244.0 L43.0 244.0 L44.5 244.0 L46.0 244.0 L47.4 244.0 L48.9 244.0 L50.3 244.0 L51.8 244.0 L53.2 244.0 L54.6 244.0 L56.1 244.0 L57.5 244.0 L59.0 244.0 L60.5 244.0 L61.9 244.0 L63.3 244.0 L64.8 244.0 L66.2 244.0 L67.7 244.0 L69.2 244.0 L70.6 244.0 L72.0 244.0 L73.5 244.0 L75.0 244.0 L76.4 244.0 L77.8 244.0 L79.3 244.0 L80.8 244.0 L82.2 244.0 L83.7 244.0 L85.1 244.0 L86.6 244.0 L88.0 244.0 L89.4 244.0 L90.9 244.0 L92.3 244.0 L93.8 244.0 L95.2 244.0 L96.7 244.0 L98.2 244.0 L99.6 244.0 L101.1 244.0 L102.5 244.0 L104.0 244.0 L105.4 244.0 L106.9 244.0 L108.3 244.0 L109.8 244.0 L111.2 244.0 L112.7 244.0 L114.1 244.0 L115.6 244.0 L117.0 244.0 L118.5 244.0 L119.9 244.0 L121.3 243.9 L122.8 243.9 L124.2 243.9 L125.7 243.8 L127.2 243.7 L128.6 243.7 L130.1 243.5 L131.5 243.4 L132.9 243.1 L134.4 242.8 L135.8 242.5 L137.3 242.0 L138.8 241.5 L140.2 240.7 L141.7 239.9 L143.1 238.8 L144.6 237.6 L146.0 236.2 L147.4 234.5 L148.9 232.5 L150.4 230.3 L151.8 227.9 L153.2 225.2 L154.7 222.2 L156.1 219.1 L157.6 215.8 L159.1 212.3 L160.5 208.8 L161.9 205.3 L163.4 201.9 L164.8 198.6 L166.3 195.6 L167.8 192.8 L169.2 190.5 L170.7 188.6 L172.1 187.1 L173.6 186.3 L175.0 186.0 L176.4 186.3 L177.9 187.1 L179.3 188.6 L180.8 190.5 L182.2 192.8 L183.7 195.6 L185.1 198.6 L186.6 201.9 L188.1 205.3 L189.5 208.8 L190.9 212.3 L192.4 215.8 L193.9 219.1 L195.3 222.2 L196.8 225.2 L198.2 227.9 L199.6 230.3 L201.1 232.5 L202.5 234.5 L204.0 236.2 L205.4 237.6 L206.9 238.8 L208.3 239.9 L209.8 240.7 L211.2 241.5 L212.7 242.0 L214.2 242.5 L215.6 242.8 L217.1 243.1 L218.5 243.4 L220.0 243.5 L221.4 243.7 L222.9 243.7 L224.3 243.8 L225.8 243.9 L227.2 243.9 L228.6 243.9 L230.1 244.0 L231.6 244.0 L233.0 244.0 L234.4 244.0 L235.9 244.0 L237.4 244.0 L238.8 244.0 L240.2 244.0 L241.7 244.0 L243.2 244.0 L244.6 244.0 L246.1 244.0 L247.5 244.0 L248.9 244.0 L250.4 244.0 L251.8 244.0 L253.3 244.0 L254.8 244.0 L256.2 244.0 L257.6 244.0 L259.1 244.0 L260.6 244.0 L262.0 244.0 L263.5 244.0 L264.9 244.0 L266.4 244.0 L267.8 244.0 L269.2 244.0 L270.7 244.0 L272.1 244.0 L273.6 244.0 L275.0 244.0 L276.5 244.0 L278.0 244.0 L279.4 244.0 L280.9 244.0 L282.3 244.0 L283.8 244.0 L285.2 244.0 L286.6 244.0 L288.1 244.0 L289.5 244.0 L291.0 244.0 L292.4 244.0 L293.9 244.0 L295.4 244.0 L296.8 244.0 L298.2 244.0 L299.7 244.0 L301.1 244.0 L302.6 244.0 L304.1 244.0 L305.5 244.0 L307.0 244.0 L308.4 244.0 L309.9 244.0 L311.3 244.0 L312.8 244.0 L314.2 244.0 L315.6 244.0 L317.1 244.0 L318.5 244.0 L320.0 244.0\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"8\" y=\"204\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><line x1=\"175.0\" y1=\"10\" x2=\"175.0\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><text x=\"175.0\" y=\"266\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">μ</text><text x=\"320\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">value of statistic</text></svg>",
+  "hint": "Bias is about where the sampling distribution is **centered**; variability is about how **spread out** it is.",
+  "answer": "(a) A and C: their sampling distributions are centered at $\\mu$. (b) A (c) C: it is unbiased and has low variability. (d) A larger sample reduces variability but B would still be centered above $\\mu$ (bias does not depend on $n$).",
+  "solution": "(a) A statistic is **unbiased** if the center (mean) of its sampling distribution equals the parameter. The curves for A and C are both centered on the dashed line at $\\mu$, so A and C are unbiased. B is centered to the right of $\\mu$, so it is biased: it tends to overestimate $\\mu$.\n\n(b) A has the widest sampling distribution, so it has the most variability.\n\n(c) **C**. It is unbiased (centered at $\\mu$) **and** has low variability, so its estimates are consistently close to $\\mu$. B also has low variability, but its estimates are consistently too high; A is unbiased but individual estimates can be far from $\\mu$.\n\n(d) Increasing $n$ makes a sampling distribution narrower (less variability), but it does not move its center. B's curve would get narrower but would stay centered above $\\mu$, so B would give precise but still wrong estimates. Bias comes from the method, not from the sample size.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q08",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Waiting times at a walk-in clinic are strongly skewed to the right, with mean $\\mu = 18$ minutes and standard deviation $\\sigma = 10$ minutes. A random sample of 40 patients is selected from the thousands who visit each month. Find the probability that their mean waiting time is less than 16 minutes.\n\nMarcus's working is shown below.\n\n**Line 1:** $\\mu_{\\bar{x}} = 18$\n\n**Line 2:** Since $n = 40 \\ge 30$, by the CLT the sampling distribution of $\\bar{x}$ is approximately normal.\n\n**Line 3:** $z = \\dfrac{16 - 18}{10} = -0.2$\n\n**Line 4:** $P(\\bar{x} < 16) = P(Z < -0.2) \\approx 0.4207$\n\nIdentify Marcus's error, explain why it is wrong, and find the correct probability.",
+  "hint": "Which standard deviation describes how much **sample means** vary?",
+  "answer": "Line 3: he used $\\sigma = 10$ instead of $\\sigma_{\\bar{x}} = \\frac{10}{\\sqrt{40}} \\approx 1.581$. Correct: $z \\approx -1.26$, $P(\\bar{x} < 16) \\approx 0.103$.",
+  "solution": "Lines 1 and 2 are correct: $\\mu_{\\bar{x}} = \\mu = 18$, and with $n = 40 \\ge 30$ the CLT applies even though waiting times are skewed.\n\n**The error is in Line 3.** Marcus used the population standard deviation, $\\sigma = 10$, which describes how much **individual** waiting times vary. Sample means vary much less, so he must use\n$$\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}} = \\frac{10}{\\sqrt{40}} \\approx 1.581$$\n(valid because 40 is less than 10% of the thousands of patients).\n\n**Correct working:**\n$$z = \\frac{16 - 18}{1.581} \\approx -1.26$$\n$$P(\\bar{x} < 16) = P(Z < -1.265) \\approx 0.103$$\n\nSo there is only about a $10\\%$ chance that 40 randomly chosen patients have a mean wait under 16 minutes, compared with Marcus's $42\\%$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q09",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The annual incomes of households in a large county are strongly skewed to the right. A researcher takes a random sample of 50 households.\n\nPriya is asked to describe the shape of (a) the distribution of the incomes of the 50 households in the sample, and (b) the sampling distribution of the sample mean income, $\\bar{x}$. Her answers are:\n\n**(a)** Approximately normal, because $n = 50 \\ge 30$, so the Central Limit Theorem applies.\n\n**(b)** Approximately normal, by the Central Limit Theorem, since $n = 50 \\ge 30$.\n\nOne of her answers is wrong. Identify it, explain the error, and correct it.",
+  "hint": "The CLT is a statement about the distribution of a **statistic** over many samples, not about the data in one sample.",
+  "answer": "(a) is wrong: the sample of 50 incomes is drawn from a right-skewed population, so it will itself tend to be right-skewed. The CLT applies only to the sampling distribution of $\\bar{x}$, so (b) is correct.",
+  "solution": "**Answer (b) is correct.** The CLT says that for a large enough random sample ($n \\ge 30$ is the usual guide), the **sampling distribution of $\\bar{x}$** (the distribution of the sample mean over all possible samples of size 50) is approximately normal, whatever the shape of the population.\n\n**Answer (a) is wrong.** A random sample tends to resemble the population it comes from. The population of incomes is strongly right-skewed, so the 50 incomes in the sample will also probably be **right-skewed** (a few very high incomes). Taking a bigger sample does not make the data normal; it just makes the sample look even more like the skewed population.\n\n**Correct answer to (a):** the distribution of incomes in the sample is likely to be skewed to the right, like the population.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q10",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Suppose that $62\\%$ of registered voters in a state support a proposal to fund new public libraries. A polling organization takes a random sample of 500 registered voters.\n\n(a) Describe the sampling distribution of $\\hat{p}$, the proportion of the sample who support the proposal, checking any conditions.\n\n(b) Find the probability that the poll shows $58\\%$ or less support.\n\n(c) A newspaper reports a poll of 500 voters showing $55\\%$ support. Would this be surprising if the true proportion is $62\\%$? Explain.",
+  "hint": "Find $\\sigma_{\\hat{p}}$, then standardize $0.58$ and $0.55$.",
+  "answer": "(a) Approximately normal, mean $0.62$, SD $\\approx 0.0217$ (b) $P(\\hat{p} \\le 0.58) \\approx 0.033$ (c) Yes: $z \\approx -3.22$, probability about $0.0006$, so $55\\%$ would be very surprising.",
+  "solution": "(a) **Center:** $\\mu_{\\hat{p}} = 0.62$.\n\n**Variability:** 10% condition: the state has far more than $10(500) = 5000$ registered voters.\n$$\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.62(0.38)}{500}} \\approx 0.0217$$\n\n**Shape:** Large Counts: $np = 310 \\ge 10$ and $n(1-p) = 190 \\ge 10$, so approximately normal.\n\n(b)\n$$z = \\frac{0.58 - 0.62}{0.0217} \\approx -1.84$$\n$$P(\\hat{p} \\le 0.58) = P(Z \\le -1.843) \\approx 0.033$$\n\n(c)\n$$z = \\frac{0.55 - 0.62}{0.0217} \\approx -3.22, \\qquad P(\\hat{p} \\le 0.55) \\approx 0.0006$$\nA result this low would happen in fewer than 1 in 1000 random samples if $p = 0.62$, so it **would** be very surprising. It suggests either that support is really lower than $62\\%$, or that the poll was not a random sample (e.g. it was biased).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q11",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The battery life of a brand of laptop has a standard deviation of $\\sigma = 6$ hours; the distribution of battery life is skewed. A consumer group wants to choose a sample size $n$ so that there is at least a $95\\%$ probability that the mean battery life $\\bar{x}$ of a random sample of $n$ laptops is within 1 hour of the true mean $\\mu$.\n\nFind the smallest sample size that achieves this, and explain why the normal model you used is reasonable.",
+  "hint": "You need $P(|\\bar{x} - \\mu| < 1) \\ge 0.95$. The middle $95\\%$ of a normal distribution lies within $1.96$ standard deviations of the mean.",
+  "answer": "$n = 139$. With $n = 139 \\ge 30$ the CLT makes $\\bar{x}$ approximately normal despite the skewed population (and thousands of laptops are sold, so the 10% condition holds).",
+  "solution": "$\\bar{x}$ has mean $\\mu$ and standard deviation $\\frac{6}{\\sqrt{n}}$. If it is approximately normal, the middle $95\\%$ of sample means lie within $1.96\\,\\sigma_{\\bar{x}}$ of $\\mu$. So we need\n$$1.96 \\times \\frac{6}{\\sqrt{n}} \\le 1$$\n$$\\sqrt{n} \\ge 11.76 \\quad \\Rightarrow \\quad n \\ge 138.3$$\n\n$n$ must be a whole number and the inequality must hold, so round **up**: $n = 139$.\n\n**Why normal is reasonable:** battery life is skewed, but $n = 139 \\ge 30$, so by the Central Limit Theorem the sampling distribution of $\\bar{x}$ is approximately normal. The 10% condition holds since the brand sells far more than $1390$ laptops.\n\n(Check: $\\sigma_{\\bar{x}} = \\frac{6}{\\sqrt{139}} = 0.5089$ and $1.96(0.5089) = 0.9975 < 1$ ✓; with $n = 138$, $1.96 \\times \\frac{6}{\\sqrt{138}} = 1.0011 > 1$ ✗.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q12",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 8,
+  "question": "A bottling plant fills \"16-ounce\" bottles of juice on two machines. The amount of juice dispensed by Machine A is approximately normally distributed with mean 16.1 ounces and standard deviation 0.2 ounce. The amount dispensed by Machine B is approximately normally distributed with mean 16.0 ounces and standard deviation 0.15 ounce. Each machine fills thousands of bottles per day.\n\nA quality-control technician takes a random sample of 10 bottles from Machine A and, independently, a random sample of 8 bottles from Machine B. Let $\\bar{x}_A$ and $\\bar{x}_B$ be the sample mean amounts.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the probability that one randomly selected bottle from Machine A contains less than 16.0 ounces. Show your work.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Describe the sampling distribution of $\\bar{x}_A - \\bar{x}_B$. Justify your answer.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the probability that the sample mean for Machine A is less than the sample mean for Machine B. Show your work.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Suppose instead that the amounts dispensed by Machine B were strongly skewed. Explain whether your method in part (c) would still be appropriate.",
+    "marks": 1
+   }
+  ],
+  "hint": "For independent samples, means subtract and **variances add**: $\\sigma^2_{\\bar{x}_A - \\bar{x}_B} = \\dfrac{\\sigma_A^2}{n_A} + \\dfrac{\\sigma_B^2}{n_B}$.",
+  "answer": "(a) $0.3085$ (b) Normal, mean $0.1$ oz, SD $\\approx 0.0825$ oz (c) $P(\\bar{x}_A - \\bar{x}_B < 0) \\approx 0.113$ (d) No: with $n_B = 8 < 30$ and a skewed population, $\\bar{x}_B$ would not be approximately normal, so the normal calculation would not be justified.",
+  "solution": "(a) $z = \\frac{16.0 - 16.1}{0.2} = -0.5$ **1 pt** (correct normal distribution and boundary)\n\n$P(X < 16.0) = P(Z < -0.5) \\approx 0.3085$ **1 pt**\n\n(b) **Shape:** both populations are normal, so $\\bar{x}_A$ and $\\bar{x}_B$ are normal, and the difference of independent normal variables is normal. **1 pt**\n\n**Center:** $\\mu_{\\bar{x}_A - \\bar{x}_B} = 16.1 - 16.0 = 0.1$ ounce. **1 pt**\n\n**Variability:** the samples are independent and each is less than 10% of the day's output, so\n$$\\sigma_{\\bar{x}_A - \\bar{x}_B} = \\sqrt{\\frac{0.2^2}{10} + \\frac{0.15^2}{8}} = \\sqrt{0.004 + 0.0028125} \\approx 0.0825 \\text{ ounce} \\quad \\textbf{1 pt}$$\n\n(c)\n$$P(\\bar{x}_A < \\bar{x}_B) = P(\\bar{x}_A - \\bar{x}_B < 0), \\qquad z = \\frac{0 - 0.1}{0.0825} \\approx -1.21 \\quad \\textbf{1 pt}$$\n$$P(Z < -1.212) \\approx 0.113 \\quad \\textbf{1 pt}$$\n\n(d) Not appropriate. The sample from Machine B has only $n = 8$, which is too small for the Central Limit Theorem to guarantee that $\\bar{x}_B$ is approximately normal when the population is strongly skewed. So $\\bar{x}_A - \\bar{x}_B$ might not be approximately normal and the normal probability could be inaccurate. **1 pt**",
+  "linkedTopicIds": [
+   "prob-combining-random-variables",
+   "prob-normal-distribution"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-sampling-distributions-q13",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Suppose that $45\\%$ of households in City A and $35\\%$ of households in City B own a smart speaker. A market researcher takes independent random samples of 200 households from City A and 150 households from City B.\n\n(a) Find the mean and standard deviation of the sampling distribution of $\\hat{p}_A - \\hat{p}_B$.\n\n(b) Justify that this sampling distribution is approximately normal.\n\n(c) Find the probability that the sample proportion for City B is **higher** than the sample proportion for City A.",
+  "hint": "$\\sigma_{\\hat{p}_A - \\hat{p}_B} = \\sqrt{\\dfrac{p_A(1-p_A)}{n_A} + \\dfrac{p_B(1-p_B)}{n_B}}$. \"B higher than A\" means $\\hat{p}_A - \\hat{p}_B < 0$.",
+  "answer": "(a) Mean $0.10$, SD $\\approx 0.0525$ (b) Large Counts: $90, 110, 52.5, 97.5$ all $\\ge 10$ (c) $P(\\hat{p}_A - \\hat{p}_B < 0) \\approx 0.028$",
+  "solution": "(a)\n$$\\mu_{\\hat{p}_A - \\hat{p}_B} = 0.45 - 0.35 = 0.10$$\nBoth cities have more than $10(200) = 2000$ and $10(150) = 1500$ households (10% condition), and the samples are independent, so the variances add:\n$$\\sigma_{\\hat{p}_A - \\hat{p}_B} = \\sqrt{\\frac{0.45(0.55)}{200} + \\frac{0.35(0.65)}{150}} = \\sqrt{0.0012375 + 0.0015167} \\approx 0.0525$$\n\n(b) Large Counts in each sample:\n$200(0.45) = 90$, $200(0.55) = 110$, $150(0.35) = 52.5$, $150(0.65) = 97.5$, all at least 10. So $\\hat{p}_A$ and $\\hat{p}_B$ are each approximately normal, and so is their difference.\n\n(c)\n$$z = \\frac{0 - 0.10}{0.0525} \\approx -1.91$$\n$$P(\\hat{p}_A - \\hat{p}_B < 0) = P(Z < -1.905) \\approx 0.028$$\n\nSo only about $2.8\\%$ of pairs of samples like these would show City B ahead, even though City A really has the higher rate.",
+  "linkedTopicIds": [
+   "prob-combining-random-variables"
+  ]
+ },
+ {
+  "id": "stat-sampling-distributions-q14",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "In a large orchard, $10\\%$ of apples have bruises. A random sample of 40 apples is chosen and $\\hat{p}$ is the proportion that are bruised.\n\n(a) Find the mean and standard deviation of $\\hat{p}$.\n\n(b) Leo uses a normal model: $P(\\hat{p} \\ge 0.15) \\approx P\\left(Z \\ge \\dfrac{0.15 - 0.10}{\\sigma_{\\hat{p}}}\\right)$. Calculate Leo's value.\n\n(c) Use the binomial distribution to find the exact value of $P(\\hat{p} \\ge 0.15)$.\n\n(d) Explain the difference between your answers to (b) and (c), referring to an appropriate condition.",
+  "hint": "$\\hat{p} \\ge 0.15$ means the number of bruised apples, $X$, satisfies $X \\ge 0.15 \\times 40 = 6$, where $X \\sim B(40, 0.10)$.",
+  "answer": "(a) mean $0.10$, SD $\\approx 0.0474$ (b) $\\approx 0.146$ (c) $P(X \\ge 6) \\approx 0.206$ (d) Large Counts fails ($np = 4 < 10$): the distribution of $\\hat{p}$ is right-skewed, so the normal model underestimates the upper tail.",
+  "solution": "(a) $\\mu_{\\hat{p}} = 0.10$, $\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.10(0.90)}{40}} \\approx 0.0474$ (10% condition: the orchard has far more than 400 apples).\n\n(b)\n$$z = \\frac{0.15 - 0.10}{0.0474} \\approx 1.054, \\qquad P(Z \\ge 1.054) \\approx 0.146$$\n\n(c) Let $X$ be the number of bruised apples: $X \\sim B(40, 0.10)$ (independent trials, fixed $n$, constant $p$). $\\hat{p} \\ge 0.15 \\iff X \\ge 6$.\n$$P(X \\ge 6) = 1 - P(X \\le 5) \\approx 1 - 0.7937 = 0.206$$\n(using binomcdf$(40, 0.10, 5) \\approx 0.7937$).\n\n(d) The normal model is only appropriate when **Large Counts** holds. Here\n$$np = 40(0.10) = 4 < 10$$\nso the sampling distribution of $\\hat{p}$ is noticeably **right-skewed** (it cannot go below 0 but has a long tail to the right). The normal curve is symmetric, so it gives too little probability to the upper tail: $0.146$ instead of the true $0.206$. (Note that $n = 40 \\ge 30$ does not help: \"$n \\ge 30$\" is the guideline for means, not proportions.)",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-sampling-distributions-q15",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A polling company plans to survey a random sample of 600 of the 8,000 registered voters in a small town about a new road. Assume the true proportion in favor is about $p = 0.5$.\n\n(a) The manager says: \"If we survey 1,200 voters instead of 600, the standard deviation of $\\hat{p}$ will be cut in half.\" Is the manager correct? Justify your answer with calculations.\n\n(b) What sample size would halve the standard deviation of $\\hat{p}$ compared with $n = 600$? Explain why the formula $\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}$ is not reliable for this sample size in this town.\n\n(c) The company decides to contact voters only by calling landline phone numbers. Explain why surveying more voters by this method does not solve the problem this creates.",
+  "hint": "$\\sigma_{\\hat{p}}$ is proportional to $\\dfrac{1}{\\sqrt{n}}$. For (b), compare your $n$ with $10\\%$ of 8,000.",
+  "answer": "(a) No: $\\sigma_{\\hat{p}}$ goes from $0.0204$ to $0.0144$ (divided by $\\sqrt{2}$, not 2). (b) $n = 2400$; this is more than $10\\%$ of 8,000 (800), so the 10% condition fails and the formula overstates the SD. (c) Landline-only sampling is biased (undercoverage); a larger sample reduces variability but does not remove bias.",
+  "solution": "(a) With $n = 600$: $\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.25}{600}} \\approx 0.0204$. With $n = 1200$: $\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.25}{1200}} \\approx 0.0144$.\n\n$\\frac{0.0144}{0.0204} \\approx 0.707 = \\frac{1}{\\sqrt{2}}$. Doubling $n$ divides the SD by $\\sqrt{2}$, not by 2, so the manager is **not** correct.\n\n(b) To halve the SD we need $\\sqrt{n}$ to double, so $n$ must be multiplied by 4: $n = 2400$ (giving $\\sqrt{\\frac{0.25}{2400}} \\approx 0.0102$).\n\nBut $2400 > 0.10 \\times 8000 = 800$, so the **10% condition** fails. Sampling 30% of the town without replacement means the observations are noticeably dependent; the actual SD of $\\hat{p}$ is **smaller** than the formula gives, so the formula is not reliable here. (Even $n = 1200$ breaks the 10% condition.)\n\n(c) Calling only landlines leaves out voters without one (often younger voters), whose views may differ: this is **undercoverage**, which creates **bias**. A larger sample makes $\\hat{p}$ less variable, but its sampling distribution is still centered in the wrong place. Larger samples reduce variability, not bias; the sampling method must be fixed.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q16",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The weights of adults who use an office elevator are approximately normally distributed with mean 175 lb and standard deviation 30 lb. The elevator has a maximum safe load of 2,000 lb. Assume the people who get into the elevator are a random sample of users.\n\n(a) Explain why the total weight of $n$ people exceeds 2,000 lb exactly when their mean weight $\\bar{x}$ exceeds $\\dfrac{2000}{n}$ lb.\n\n(b) Find the probability that the total weight of 11 people exceeds 2,000 lb.\n\n(c) The building manager wants the probability of exceeding the safe load to be less than $0.01$. Find the largest number of people that should be allowed in the elevator. Show your method.",
+  "hint": "For (c), with $n$ people you need $\\dfrac{2000}{n}$ to be at least $2.326$ standard deviations of $\\bar{x}$ above 175. Substitute $s = \\sqrt{n}$ to get a quadratic.",
+  "answer": "(a) Total $= n\\bar{x}$, so total $> 2000 \\iff \\bar{x} > \\frac{2000}{n}$. (b) $\\approx 0.225$ (c) 10 people",
+  "solution": "(a) If the weights are $x_1, \\dots, x_n$, then total $= \\sum x_i = n\\bar{x}$. Since $n > 0$, $n\\bar{x} > 2000 \\iff \\bar{x} > \\frac{2000}{n}$.\n\n(b) For $n = 11$: the population is normal, so $\\bar{x}$ is normal with $\\mu_{\\bar{x}} = 175$ and $\\sigma_{\\bar{x}} = \\frac{30}{\\sqrt{11}} \\approx 9.045$ lb.\n$$\\frac{2000}{11} = 181.82, \\qquad z = \\frac{181.82 - 175}{9.045} \\approx 0.754$$\n$$P(\\bar{x} > 181.82) = P(Z > 0.754) \\approx 0.225$$\n(Equivalently, the total $T$ has mean $11(175) = 1925$ and SD $30\\sqrt{11} \\approx 99.5$ lb, giving the same $z$.)\n\n(c) We need $P\\left(\\bar{x} > \\frac{2000}{n}\\right) < 0.01$. Since $P(Z > 2.326) = 0.01$, we need\n$$\\frac{\\frac{2000}{n} - 175}{30/\\sqrt{n}} > 2.326 \\iff 2000 - 175n > 2.326 \\times 30\\sqrt{n} = 69.79\\sqrt{n}$$\nLet $s = \\sqrt{n}$: $175s^2 + 69.79s - 2000 < 0$. The positive root is\n$$s = \\frac{-69.79 + \\sqrt{69.79^2 + 4(175)(2000)}}{2(175)} \\approx 3.187$$\nso $\\sqrt{n} < 3.187$, i.e. $n < 10.16$. The largest whole number is $n = 10$.\n\nCheck: $n = 10$: $z = \\frac{200 - 175}{30/\\sqrt{10}} = 2.635$, $P \\approx 0.0042 < 0.01$ ✓. $n = 11$: $P \\approx 0.225$ ✗.\n\n(The normal model is valid for small $n$ only because the population of weights is itself normal; the CLT would not justify it for $n = 10$.)",
+  "linkedTopicIds": [
+   "prob-combining-random-variables",
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-sampling-distributions-q17",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A tiny population consists of just three values: 2, 5 and 11. Its mean is $\\mu = 6$ and its standard deviation is $\\sigma = \\sqrt{14}$.\n\nSamples of size 2 are taken **with replacement** (so there are 9 equally likely ordered samples).\n\n(a) List the 9 samples and the value of $\\bar{x}$ for each. Show that $\\bar{x}$ is an unbiased estimator of $\\mu$.\n\n(b) Show that the standard deviation of the sampling distribution of $\\bar{x}$ equals $\\dfrac{\\sigma}{\\sqrt{2}}$.\n\n(c) Is the sample maximum an unbiased estimator of the population maximum? Justify your answer.\n\n(d) If the samples of size 2 were taken **without** replacement, the standard deviation of $\\bar{x}$ would be $\\sqrt{3.5} \\approx 1.87$. Use this to explain why AP Statistics requires the 10% condition before using $\\sigma_{\\bar{x}} = \\dfrac{\\sigma}{\\sqrt{n}}$.",
+  "hint": "A statistic is unbiased if the mean of its sampling distribution equals the parameter. Find the mean of the 9 values of $\\bar{x}$, then the mean of the squared deviations from 6.",
+  "answer": "(a) $\\bar{x}$ values $2, 3.5, 6.5, 3.5, 5, 8, 6.5, 8, 11$; their mean is $6 = \\mu$. (b) variance $= \\frac{63}{9} = 7 = \\frac{14}{2}$, so SD $= \\sqrt{7} = \\frac{\\sqrt{14}}{\\sqrt{2}}$. (c) No: its mean is $8 < 11$ (biased low). (d) Without replacement the SD is $1.87$, not $\\sqrt{7} \\approx 2.65$: the formula only works when draws are (nearly) independent, which needs $n \\le 10\\%$ of the population; here $n$ is $67\\%$ of it.",
+  "solution": "(a)\n\n| Sample | (2,2) | (2,5) | (2,11) | (5,2) | (5,5) | (5,11) | (11,2) | (11,5) | (11,11) |\n|---|---|---|---|---|---|---|---|---|---|\n| $\\bar{x}$ | 2 | 3.5 | 6.5 | 3.5 | 5 | 8 | 6.5 | 8 | 11 |\n| max | 2 | 5 | 11 | 5 | 5 | 11 | 11 | 11 | 11 |\n\nMean of $\\bar{x}$:\n$$\\mu_{\\bar{x}} = \\frac{2 + 3.5 + 6.5 + 3.5 + 5 + 8 + 6.5 + 8 + 11}{9} = \\frac{54}{9} = 6 = \\mu$$\nThe sampling distribution of $\\bar{x}$ is centered at $\\mu$, so $\\bar{x}$ is unbiased.\n\n(b) Deviations of $\\bar{x}$ from 6: $-4, -2.5, 0.5, -2.5, -1, 2, 0.5, 2, 5$. Squares: $16, 6.25, 0.25, 6.25, 1, 4, 0.25, 4, 25$, total $63$.\n$$\\sigma_{\\bar{x}}^2 = \\frac{63}{9} = 7 = \\frac{14}{2} = \\frac{\\sigma^2}{2}$$\nso $\\sigma_{\\bar{x}} = \\sqrt{7} = \\frac{\\sqrt{14}}{\\sqrt{2}} = \\frac{\\sigma}{\\sqrt{2}}$ ✓.\n\n(c) Mean of the sample maximum:\n$$\\frac{2 + 5 + 11 + 5 + 5 + 11 + 11 + 11 + 11}{9} = \\frac{72}{9} = 8$$\nThe population maximum is 11, but the sampling distribution of the sample maximum is centered at 8. So it is a **biased** estimator: it tends to underestimate (a sample can never exceed the true maximum, but it often misses it).\n\n(d) $\\frac{\\sigma}{\\sqrt{n}}$ was derived assuming the observations are independent (as with replacement), giving $\\sqrt{7} \\approx 2.65$. Without replacement, the two values must be different, which makes extreme means like 2 and 11 impossible; the true SD is only $1.87$, so the formula is badly wrong. Here the sample is 2 out of 3, i.e. $67\\%$ of the population. When the sample is at most $10\\%$ of the population, sampling without replacement is so close to independent that $\\frac{\\sigma}{\\sqrt{n}}$ is accurate, which is why the 10% condition is checked.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-distributions-q18",
+  "topicId": "stat-sampling-distributions",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A factory makes tens of thousands of LED bulbs per week. An inspector takes a random sample of $n$ bulbs each week and stops the production line if the sample proportion of defective bulbs, $\\hat{p}$, is greater than $0.08$.\n\nShe wants the plan to satisfy both of the following:\n* when the true defect rate is $p = 0.05$, the probability of stopping the line is at most $0.01$;\n* when the true defect rate is $p = 0.10$, the probability of **not** stopping the line is at most $0.05$.\n\nUsing normal approximations, find the smallest sample size $n$ that satisfies both requirements, and check that a normal model is reasonable for this $n$.",
+  "hint": "Write each requirement as \"$0.08$ is at least $z^*$ standard deviations away from $p$\", with $\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}$, using $z = 2.326$ for $0.01$ and $z = 1.645$ for $0.05$. Each gives a lower bound on $n$.",
+  "answer": "$n = 609$ (requirement 1 needs $n \\ge 286$; requirement 2 needs $n \\ge 609$). Large Counts: $609(0.05) \\approx 30$, $609(0.10) \\approx 61$, and the complements are all $\\ge 10$; 10% condition holds.",
+  "solution": "**Requirement 1** ($p = 0.05$): $P(\\hat{p} > 0.08) \\le 0.01$ needs\n$$\\frac{0.08 - 0.05}{\\sqrt{0.05(0.95)/n}} \\ge 2.326 \\iff \\sqrt{n} \\ge \\frac{2.326\\sqrt{0.0475}}{0.03} = 16.90 \\iff n \\ge 285.6$$\n\n**Requirement 2** ($p = 0.10$): $P(\\hat{p} \\le 0.08) \\le 0.05$ needs\n$$\\frac{0.10 - 0.08}{\\sqrt{0.10(0.90)/n}} \\ge 1.645 \\iff \\sqrt{n} \\ge \\frac{1.645 \\times 0.3}{0.02} = 24.675 \\iff n \\ge 608.9$$\n\nBoth must hold, so $n \\ge 608.9$: the smallest sample size is $n = 609$ (round **up**).\n\n**Checks for $n = 609$:**\n* Large Counts: $609(0.05) = 30.45$, $609(0.95) = 578.55$, $609(0.10) = 60.9$, $609(0.90) = 548.1$, all at least 10, so $\\hat{p}$ is approximately normal in both scenarios.\n* 10% condition: tens of thousands of bulbs per week is more than $10(609) = 6090$.\n\n**Why requirement 2 dominates:** the cut-off $0.08$ is only $0.02$ below $0.10$ but $0.03$ above $0.05$, and the SD is larger when $p = 0.10$, so more data are needed to tell $p = 0.10$ apart from the cut-off.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ }
+]

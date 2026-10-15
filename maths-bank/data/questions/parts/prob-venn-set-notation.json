@@ -189,7 +189,7 @@
   "type": "exam-style",
   "calculator": true,
   "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 290\" width=\"330\" height=\"290\"><rect x=\"10\" y=\"10\" width=\"310\" height=\"270\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"130\" cy=\"112\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"200\" cy=\"112\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"165\" cy=\"172\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"68\" y=\"54\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">F</text><text x=\"262\" y=\"54\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">S</text><text x=\"233\" y=\"234\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">M</text></svg>",
-  "question": "80 people were asked whether they like films ($F$), sport ($S$) and music ($M$).\n\n4 people like all three.\n12 people like films and sport.\n10 people like films and music.\n7 people like sport and music.\n40 people like films, 30 like sport and 25 like music.",
+  "question": "80 people were asked whether they like films ($F$), sport ($S$) and music ($M$).\n\n4 people like all three.\n12 people like films and sport.\n10 people like films and music.\n7 people like sport and music.\n(Each of these three numbers includes the 4 people who like all three.)\n40 people like films, 30 like sport and 25 like music.",
   "parts": [
    {
     "label": "a",
@@ -208,7 +208,7 @@
    }
   ],
   "marks": 7,
-  "hint": "Start with the centre (all three). \"12 like films and sport\" includes the 4 who like all three, so subtract before filling each two-set overlap.",
+  "hint": "Start with the centre (all three). Each pair total includes the centre, so subtract the 4 before filling each two-set overlap.",
   "answer": "(a) $F$ only 22, $S$ only 15, $M$ only 12, $F$ and $S$ only 8, $F$ and $M$ only 6, $S$ and $M$ only 3, all three 4, none 10 (b) $\\dfrac{49}{80}$ (c) $\\dfrac{18}{80} = \\dfrac{9}{40}$",
   "solution": "(a) Centre: $n(F \\cap S \\cap M) = 4$ B1\n\nTwo-set overlaps (excluding the centre):\n\n$F$ and $S$ only: $12 - 4 = 8$; $F$ and $M$ only: $10 - 4 = 6$; $S$ and $M$ only: $7 - 4 = 3$ M1\n\n\"Only\" regions:\n\n$F$ only: $40 - 8 - 6 - 4 = 22$\n\n$S$ only: $30 - 8 - 3 - 4 = 15$\n\n$M$ only: $25 - 6 - 3 - 4 = 12$ M1\n\nInside the circles: $22 + 15 + 12 + 8 + 6 + 3 + 4 = 70$, so none: $80 - 70 = 10$ A1\n\n(b) Exactly one: $22 + 15 + 12 = 49$ M1\n$$P = \\frac{49}{80}$$ A1\n\n(c) $S \\cap F'$ is \"sport but not films\": $S$ only $+$ ($S$ and $M$ only) $= 15 + 3 = 18$\n$$P(S \\cap F') = \\frac{18}{80} = \\frac{9}{40}$$ B1 (ft from their diagram)",
   "misconceptionIds": [
