@@ -1,0 +1,286 @@
+[
+ {
+  "id": "stat-hypothesis-binomial-q01",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "For each situation, define the parameter $p$ and write down suitable null and alternative hypotheses. Do not carry out the tests.\n\n(a) A dice manufacturer says its dice are fair. A gamer suspects that one particular dice lands on six more often than it should.\n\n(b) A train company claims that $92\\%$ of its trains arrive on time. A passenger group believes the true figure is lower.\n\n(c) Historically $10\\%$ of the population of a region is left-handed. A researcher wants to know whether the proportion is different in a large city.\n\n(d) In part (b), a sample of 50 trains found that 43 arrived on time. Explain why $H_0: p = 0.86$ would be wrong.",
+  "hint": "$H_0$ always uses the claimed or historical value. The wording (\"more often\", \"lower\", \"different\") tells you whether $H_1$ uses $>$, $<$ or $\\ne$.",
+  "answer": "(a) $p$ = probability the dice lands on six; $H_0: p = \\frac{1}{6}$, $H_1: p > \\frac{1}{6}$ (b) $p$ = proportion of trains on time; $H_0: p = 0.92$, $H_1: p < 0.92$ (c) $p$ = proportion of left-handed people in the city; $H_0: p = 0.1$, $H_1: p \\ne 0.1$ (d) Hypotheses are about the population parameter using the claimed value 0.92; $\\frac{43}{50} = 0.86$ is the sample result, which is used only to test the claim.",
+  "solution": "(a) Let $p$ be the probability that the dice lands on a six. A fair dice has $p = \\frac{1}{6}$; the suspicion is \"more often\", so one-tailed:\n$$H_0: p = \\tfrac{1}{6}, \\qquad H_1: p > \\tfrac{1}{6}$$\n\n(b) Let $p$ be the proportion of the company's trains that arrive on time.\n$$H_0: p = 0.92, \\qquad H_1: p < 0.92$$\n\n(c) Let $p$ be the proportion of people in the city who are left-handed. \"Different\" gives a two-tailed test:\n$$H_0: p = 0.1, \\qquad H_1: p \\ne 0.1$$\n\n(d) The hypotheses are statements about the **population** parameter $p$, and $H_0$ uses the **claimed** value, 0.92. The value $\\frac{43}{50} = 0.86$ is the sample result; it is the evidence we use to calculate a probability, not part of the hypotheses.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q02",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In the past, $30\\%$ of customers at a café ordered a cake. After a new menu is introduced, the owner takes a random sample of 20 customers. 10 of them order a cake.\n\nTest, at the $5\\%$ level of significance, whether the proportion of customers who order a cake has **increased**.\n\nYou may use $P(X \\le 9) = 0.9520$ for $X \\sim B(20, 0.3)$.",
+  "hint": "Find $P(X \\ge 10)$ under $H_0$ and compare it with $0.05$.",
+  "answer": "$P(X \\ge 10) = 0.0480 < 0.05$: reject $H_0$. There is sufficient evidence at the $5\\%$ level that the proportion ordering cake has increased.",
+  "solution": "Let $p$ be the proportion of customers who order a cake.\n\n$H_0: p = 0.3$, $H_1: p > 0.3$ (one-tailed).\n\nUnder $H_0$, $X \\sim B(20, 0.3)$, where $X$ is the number in the sample who order cake.\n\n$$P(X \\ge 10) = 1 - P(X \\le 9) = 1 - 0.9520 = 0.0480$$\n\n$0.0480 < 0.05$, so the result is significant: reject $H_0$.\n\nThere is sufficient evidence at the $5\\%$ level to suggest that the proportion of customers ordering a cake has increased.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q03",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "In the past, $30\\%$ of customers at a café ordered a cake. After a new menu is introduced, the owner takes a random sample of 20 customers. 10 of them order a cake.\n\nTest, at the $5\\%$ level of significance, whether the proportion of customers who order a cake has **changed**.\n\nYou may use $P(X \\le 9) = 0.9520$ for $X \\sim B(20, 0.3)$.",
+  "hint": "\"Changed\" means a two-tailed test. What do you compare the tail probability with?",
+  "answer": "Two-tailed: $P(X \\ge 10) = 0.0480 > 0.025$, so do not reject $H_0$. There is insufficient evidence at the $5\\%$ level that the proportion has changed.",
+  "solution": "**What changed:** only $H_1$, which is now two-tailed.\n\n$H_0: p = 0.3$, $H_1: p \\ne 0.3$.\n\nUnder $H_0$, $X \\sim B(20, 0.3)$. The expected number is $20 \\times 0.3 = 6$, and 10 is above this, so use the upper tail:\n$$P(X \\ge 10) = 1 - 0.9520 = 0.0480$$\n\nIn a two-tailed test at $5\\%$, each tail has $2.5\\%$. Compare with $0.025$: $0.0480 > 0.025$, so the result is **not** significant. Do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level to suggest that the proportion ordering cake has changed.\n\nThe same data gave a significant result for the one-tailed test: a two-tailed test needs stronger evidence in a given direction.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q04",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "In the past, $30\\%$ of customers at a café ordered a cake. After a new menu is introduced, the owner takes a random sample of 20 customers. 10 of them order a cake.\n\nTest, at the $10\\%$ level of significance, whether the proportion of customers who order a cake has **changed**.\n\nYou may use $P(X \\le 9) = 0.9520$ for $X \\sim B(20, 0.3)$.",
+  "hint": "The test is still two-tailed. How much of the $10\\%$ goes in each tail?",
+  "answer": "$P(X \\ge 10) = 0.0480 < 0.05$: reject $H_0$. There is sufficient evidence at the $10\\%$ level that the proportion has changed.",
+  "solution": "**What changed:** the significance level, from $5\\%$ to $10\\%$.\n\n$H_0: p = 0.3$, $H_1: p \\ne 0.3$. Under $H_0$, $X \\sim B(20, 0.3)$.\n\n$P(X \\ge 10) = 1 - 0.9520 = 0.0480$\n\nTwo-tailed at $10\\%$: $5\\%$ in each tail. $0.0480 < 0.05$, so the result is significant: reject $H_0$.\n\nThere is sufficient evidence at the $10\\%$ level to suggest that the proportion ordering cake has changed (and, since $X$ was high, that it has increased).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q05",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In the past, $30\\%$ of customers at a café ordered a cake. After a new menu is introduced, the owner takes a random sample of 20 customers. Only 2 of them order a cake.\n\nTest, at the $10\\%$ level of significance, whether the proportion of customers who order a cake has **changed**.\n\nYou may use $P(X \\le 2) = 0.0355$ for $X \\sim B(20, 0.3)$.",
+  "hint": "2 is below the expected value of 6, so the relevant tail is the lower tail.",
+  "answer": "$P(X \\le 2) = 0.0355 < 0.05$: reject $H_0$. There is sufficient evidence at the $10\\%$ level that the proportion has changed.",
+  "solution": "**What changed:** the observed value is now 2, which is in the **lower** tail.\n\n$H_0: p = 0.3$, $H_1: p \\ne 0.3$. Under $H_0$, $X \\sim B(20, 0.3)$, with mean 6.\n\nSince $2 < 6$, find the lower-tail probability:\n$$P(X \\le 2) = 0.0355$$\n\nTwo-tailed at $10\\%$: compare with $0.05$. $0.0355 < 0.05$, so the result is significant: reject $H_0$.\n\nThere is sufficient evidence at the $10\\%$ level to suggest that the proportion of customers ordering a cake has changed (here, apparently decreased).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q06",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 345 260\" width=\"345\" height=\"260\"><line x1=\"55.0\" y1=\"215.0\" x2=\"335.0\" y2=\"215.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"55.0\" y1=\"215.0\" x2=\"55.0\" y2=\"16.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"51.0\" y1=\"215.0\" x2=\"55.0\" y2=\"215.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"219.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.00</text><line x1=\"51.0\" y1=\"169.0\" x2=\"55.0\" y2=\"169.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"173.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.05</text><line x1=\"55.0\" y1=\"169.0\" x2=\"335.0\" y2=\"169.0\" stroke=\"currentColor\" stroke-width=\"0.6\" stroke-opacity=\"0.25\"/><line x1=\"51.0\" y1=\"123.1\" x2=\"55.0\" y2=\"123.1\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"127.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.10</text><line x1=\"55.0\" y1=\"123.1\" x2=\"335.0\" y2=\"123.1\" stroke=\"currentColor\" stroke-width=\"0.6\" stroke-opacity=\"0.25\"/><line x1=\"51.0\" y1=\"77.1\" x2=\"55.0\" y2=\"77.1\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"81.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.15</text><line x1=\"55.0\" y1=\"77.1\" x2=\"335.0\" y2=\"77.1\" stroke=\"currentColor\" stroke-width=\"0.6\" stroke-opacity=\"0.25\"/><line x1=\"51.0\" y1=\"31.2\" x2=\"55.0\" y2=\"31.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"35.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.20</text><line x1=\"55.0\" y1=\"31.2\" x2=\"335.0\" y2=\"31.2\" stroke=\"currentColor\" stroke-width=\"0.6\" stroke-opacity=\"0.25\"/><rect x=\"57.8\" y=\"211.5\" width=\"13.1\" height=\"3.5\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"64.3\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><rect x=\"76.5\" y=\"193.3\" width=\"13.1\" height=\"21.7\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"95.1\" y=\"149.9\" width=\"13.1\" height=\"65.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"101.7\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><rect x=\"113.8\" y=\"90.2\" width=\"13.1\" height=\"124.8\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"132.5\" y=\"43.4\" width=\"13.1\" height=\"171.6\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"139.0\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><rect x=\"151.1\" y=\"34.9\" width=\"13.1\" height=\"180.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"169.8\" y=\"64.9\" width=\"13.1\" height=\"150.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"176.3\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><rect x=\"188.5\" y=\"113.1\" width=\"13.1\" height=\"101.9\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"207.1\" y=\"157.7\" width=\"13.1\" height=\"57.3\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"213.7\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><rect x=\"225.8\" y=\"187.9\" width=\"13.1\" height=\"27.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"244.5\" y=\"204.2\" width=\"13.1\" height=\"10.8\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"251.0\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><rect x=\"263.1\" y=\"211.3\" width=\"13.1\" height=\"3.7\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"281.8\" y=\"213.9\" width=\"13.1\" height=\"1.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"288.3\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><rect x=\"300.5\" y=\"214.7\" width=\"13.1\" height=\"0.3\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><rect x=\"319.1\" y=\"214.9\" width=\"13.1\" height=\"0.1\" fill=\"#3b82f6\" fill-opacity=\"0.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"325.7\" y=\"232.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">14</text><text x=\"195.0\" y=\"250.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">x</text><text x=\"18.0\" y=\"118.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 18 118.5)\">P(X = x)</text></svg>",
+  "question": "A spinner is designed so that the probability it lands on red is $0.2$. Mo thinks the spinner lands on red more often than this. He will spin it 25 times and test $H_0: p = 0.2$ against $H_1: p > 0.2$ at the $5\\%$ level.\n\nThe diagram shows the distribution of $X \\sim B(25, 0.2)$, the number of reds under $H_0$.\n\n(a) Using $P(X \\le 7) = 0.8909$ and $P(X \\le 8) = 0.9532$, find the critical region.\n\n(b) State the actual significance level of the test.\n\n(c) Mo gets 8 reds. State, with a reason, the conclusion of the test.",
+  "hint": "The critical region is $X \\ge c$ where $c$ is the smallest value with $P(X \\ge c) \\le 0.05$.",
+  "answer": "(a) $X \\ge 9$ (b) $0.0468$ ($4.68\\%$) (c) 8 is not in the critical region: do not reject $H_0$. There is insufficient evidence that the spinner lands on red more often than $0.2$.",
+  "solution": "(a) Under $H_0$, $X \\sim B(25, 0.2)$.\n\n$P(X \\ge 9) = 1 - P(X \\le 8) = 1 - 0.9532 = 0.0468 \\le 0.05$\n\n$P(X \\ge 8) = 1 - P(X \\le 7) = 1 - 0.8909 = 0.1091 > 0.05$\n\nSo the critical region is $X \\ge 9$. On the diagram, these are the bars from 9 upwards: together they make up less than $5\\%$ of the distribution.\n\n(b) The actual significance level is $P(X \\ge 9) = 0.0468$, i.e. $4.68\\%$. It is less than $5\\%$ because $X$ is discrete, so we cannot hit $5\\%$ exactly.\n\n(c) 8 is not in the critical region, so do not reject $H_0$. There is insufficient evidence at the $5\\%$ level to suggest that the probability of landing on red is greater than $0.2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q07",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A sweet manufacturer claims that $20\\%$ of the sweets in its mixed bags are red. Jo thinks the proportion is higher. In a random sample of 30 sweets, 10 are red. Jo tests at the $5\\%$ level.\n\nJo's working is shown below.\n\n$H_0: p = 0.2$, $H_1: p > 0.2$, $X \\sim B(30, 0.2)$\n$P(X = 10) = 0.0355$\n$0.0355 < 0.05$, so reject $H_0$. There is evidence that more than $20\\%$ of the sweets are red.\n\n(a) Identify Jo's error and explain why it is wrong.\n\n(b) Carry out the test correctly. You may use $P(X \\le 9) = 0.9389$.",
+  "hint": "The p-value is the probability of a result at least as extreme as the one observed.",
+  "answer": "(a) She used $P(X = 10)$; the p-value is $P(X \\ge 10)$. (b) $P(X \\ge 10) = 0.0611 > 0.05$: do not reject $H_0$; insufficient evidence that more than $20\\%$ of the sweets are red.",
+  "solution": "(a) Jo's hypotheses and distribution are correct. Her error is the second line: she used the probability of **exactly** 10 red sweets. The p-value must be the probability of a result **at least as extreme** as the one observed, $P(X \\ge 10)$. Any single value has a small probability (especially when $n$ is large), so $P(X = 10)$ being small is not evidence against $H_0$.\n\n(b) Under $H_0$, $X \\sim B(30, 0.2)$:\n$$P(X \\ge 10) = 1 - P(X \\le 9) = 1 - 0.9389 = 0.0611$$\n$0.0611 > 0.05$, so the result is not significant. Do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level to suggest that more than $20\\%$ of the sweets are red. Jo's mistake reversed the conclusion.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q08",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A florist claims that $20\\%$ of a variety of tulip bulbs fail to flower. A gardener thinks the failure rate is higher. She plants 25 bulbs chosen at random and 8 fail to flower. She tests at the $5\\%$ level.\n\nHer working is shown below.\n\n$H_0: p = 0.2$, $H_1: p > 0.2$, $X \\sim B(25, 0.2)$\n$P(X \\ge 8) = 1 - P(X \\le 8) = 1 - 0.9532 = 0.0468$\n$0.0468 < 0.05$, so reject $H_0$.\n\n(a) Identify the error in her working.\n\n(b) Correct the test and state the conclusion in context. You may use $P(X \\le 7) = 0.8909$.",
+  "hint": "Which event is the complement of $X \\ge 8$?",
+  "answer": "(a) $P(X \\ge 8) = 1 - P(X \\le 7)$, not $1 - P(X \\le 8)$ (she calculated $P(X \\ge 9)$). (b) $P(X \\ge 8) = 0.1091 > 0.05$: do not reject $H_0$; insufficient evidence that more than $20\\%$ of bulbs fail to flower.",
+  "solution": "(a) The error is in the second line. The complement of $X \\ge 8$ is $X \\le 7$, not $X \\le 8$. Her expression $1 - P(X \\le 8)$ is actually $P(X \\ge 9)$, which leaves out $X = 8$, the observed value itself.\n\n(b) $$P(X \\ge 8) = 1 - P(X \\le 7) = 1 - 0.8909 = 0.1091$$\n$0.1091 > 0.05$, so the result is not significant: do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level to suggest that the proportion of bulbs failing to flower is greater than $20\\%$.\n\nThe off-by-one error changed the conclusion. A quick check: list the values in the tail $\\{8, 9, 10, \\ldots\\}$ and make sure the observed value is included.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q09",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A politician claims that half of the voters in her constituency support her new policy. A journalist thinks the support is higher. In a random sample of 20 voters, 13 support the policy.\n\nElla writes: $H_0: p = 0.65$, $H_1: p > 0.65$.\n\nBen writes: $H_0: X = 10$, $H_1: X > 10$.\n\n(a) Explain what is wrong with each student's hypotheses.\n\n(b) Write down correct hypotheses and carry out the test at the $5\\%$ level. You may use $P(X \\le 12) = 0.8684$ for $X \\sim B(20, 0.5)$.\n\n(c) The journalist says, \"13 out of 20 is $65\\%$, which is clearly more than half, so the politician has underestimated her support.\" Comment on this statement.",
+  "hint": "Hypotheses are about the population parameter $p$, using the claimed value. The sample result is only used to find the p-value.",
+  "answer": "(a) Ella used the sample proportion $\\frac{13}{20}$ instead of the claimed value $0.5$; Ben wrote the hypotheses about the random variable $X$ instead of the parameter $p$. (b) $H_0: p = 0.5$, $H_1: p > 0.5$; $P(X \\ge 13) = 0.1316 > 0.05$, do not reject $H_0$. (c) A sample of 20 can easily give $65\\%$ by chance when $p = 0.5$ (probability $0.13$), so it is not significant evidence.",
+  "solution": "(a) Ella has used the sample proportion, $\\frac{13}{20} = 0.65$, as the hypothesised value. $H_0$ must state the **claimed** population value, $0.5$; the sample result is the evidence being tested.\n\nBen has written hypotheses about $X$, the number in the sample. Hypotheses are statements about the population **parameter** $p$, not about a sample statistic.\n\n(b) Let $p$ be the proportion of voters in the constituency who support the policy.\n\n$H_0: p = 0.5$, $H_1: p > 0.5$. Under $H_0$, $X \\sim B(20, 0.5)$.\n$$P(X \\ge 13) = 1 - P(X \\le 12) = 1 - 0.8684 = 0.1316$$\n$0.1316 > 0.05$: not significant, do not reject $H_0$. There is insufficient evidence at the $5\\%$ level to suggest that more than half of the voters support the policy.\n\n(c) The journalist ignores sampling variation. If the true proportion were $0.5$, a result of 13 or more out of 20 would happen about $13\\%$ of the time, which is not unusual. A sample proportion above $0.5$ does not, on its own, show that the population proportion is above $0.5$; a larger sample would be needed.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q10",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 8,
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A seed company states that $85\\%$ of its sunflower seeds germinate. A gardener believes the true proportion may be different. She plants a random sample of 30 seeds and counts the number, $X$, that germinate.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down suitable null and alternative hypotheses.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Using a $5\\%$ level of significance, find the critical region for $X$. You should state the probability in each tail, which should be as close as possible to $2.5\\%$ without exceeding it.\n\nYou may use: $P(X \\le 20) = 0.0097$, $P(X \\le 21) = 0.0278$, $P(X \\le 28) = 0.9520$, $P(X \\le 29) = 0.9924$ for $X \\sim B(30, 0.85)$.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Find the actual significance level of the test.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "21 of the seeds germinate. Comment on this result in the light of your critical region.",
+    "marks": 2
+   }
+  ],
+  "hint": "Two-tailed at $5\\%$: find the lower tail with probability at most $0.025$ and the upper tail with probability at most $0.025$.",
+  "answer": "(a) $H_0: p = 0.85$, $H_1: p \\ne 0.85$ (b) $X \\le 20$ or $X = 30$ (c) $0.0173$ (d) 21 is not in the critical region: insufficient evidence that the germination rate differs from $85\\%$.",
+  "solution": "(a) $H_0: p = 0.85$, $H_1: p \\ne 0.85$, where $p$ is the proportion of seeds that germinate. B1\n\n(b) Under $H_0$, $X \\sim B(30, 0.85)$. M1 for using $B(30, 0.85)$\n\nLower tail: $P(X \\le 20) = 0.0097 \\le 0.025$ but $P(X \\le 21) = 0.0278 > 0.025$, so $X \\le 20$. M1 A1\n\nUpper tail: $P(X \\ge 30) = 1 - P(X \\le 29) = 1 - 0.9924 = 0.0076 \\le 0.025$, but $P(X \\ge 29) = 1 - P(X \\le 28) = 1 - 0.9520 = 0.0480 > 0.025$, so $X = 30$ (i.e. $X \\ge 30$).\n\nCritical region: $X \\le 20$ or $X = 30$. A1\n\n(Using $5\\%$ in each tail, a common error, would wrongly put 29 in the upper tail.)\n\n(c) Actual significance level $= 0.0097 + 0.0076 = 0.0173$ ($1.73\\%$). B1\n\n(d) 21 is not in the critical region, so do not reject $H_0$. M1\n\nThere is insufficient evidence at the $5\\%$ level to suggest that the proportion of seeds that germinate differs from $85\\%$. A1 (in context, not definite)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q11",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A parcel delivery company claims that $90\\%$ of its parcels are delivered on the day promised. A consumer group suspects that the true proportion is lower. They track a random sample of 50 parcels and find that 40 were delivered on the promised day.\n\n(a) Explain why a binomial distribution is a suitable model for the number of parcels delivered on time, stating any assumptions.\n\n(b) Test the consumer group's suspicion at the $5\\%$ level. You may use $P(X \\le 40) = 0.0245$ for $X \\sim B(50, 0.9)$.\n\n(c) Would the conclusion be the same at the $1\\%$ level? Explain.",
+  "hint": "The suspicion is \"lower\", so use the lower tail $P(X \\le 40)$.",
+  "answer": "(a) Fixed $n = 50$; each parcel is on time or not; assume parcels are independent and each has the same probability of being on time. (b) $P(X \\le 40) = 0.0245 < 0.05$: reject $H_0$; sufficient evidence that fewer than $90\\%$ are delivered on time. (c) No: $0.0245 > 0.01$, so it would not be significant at $1\\%$.",
+  "solution": "(a) There is a fixed number of trials ($n = 50$ parcels), and each parcel is either delivered on the promised day or not. We must assume that parcels are delivered on time independently of each other and that each has the same probability, $p$, of being on time. (Independence could fail if, say, many parcels were on the same van that broke down, which is one reason the sample should be random.)\n\n(b) Let $p$ be the proportion of the company's parcels delivered on the promised day.\n\n$H_0: p = 0.9$, $H_1: p < 0.9$. Under $H_0$, $X \\sim B(50, 0.9)$, with mean 45.\n\n$$P(X \\le 40) = 0.0245$$\n\n$0.0245 < 0.05$: significant, reject $H_0$.\n\nThere is sufficient evidence at the $5\\%$ level to suggest that fewer than $90\\%$ of parcels are delivered on the promised day.\n\n(c) At $1\\%$: $0.0245 > 0.01$, so the result would **not** be significant and we would not reject $H_0$. A lower significance level demands stronger evidence before the company's claim is rejected.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q12",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Amir wants to test whether a coin is biased towards heads, using $H_0: p = 0.5$ and $H_1: p > 0.5$ at the $1\\%$ level. He plans to toss the coin 6 times.\n\n(a) Show that, whatever happens, Amir cannot reject $H_0$.\n\n(b) Find the smallest number of tosses that would make it possible to reject $H_0$ at the $1\\%$ level, and state the critical region for that number of tosses.\n\n(c) Amir says, \"If I don't reject $H_0$, that proves the coin is fair.\" Explain why this is wrong.",
+  "hint": "The most extreme possible result is all heads. What is its probability?",
+  "answer": "(a) The most extreme result, 6 heads, has $P(X = 6) = \\frac{1}{64} = 0.0156 > 0.01$, so even this is not significant. (b) 7 tosses; critical region $X = 7$ (probability $0.0078$). (c) Not rejecting $H_0$ only means there is insufficient evidence of bias; a small sample has little power to detect bias.",
+  "solution": "(a) Under $H_0$, $X \\sim B(6, 0.5)$. The most extreme result in the direction of $H_1$ is 6 heads, with\n$$P(X \\ge 6) = P(X = 6) = 0.5^6 = \\frac{1}{64} = 0.015625 > 0.01$$\nEvery other outcome has an even larger tail probability. So no outcome gives a p-value below $0.01$: the critical region is empty and $H_0$ can never be rejected.\n\n(b) With $n$ tosses, the smallest possible p-value is $P(X = n) = 0.5^n$. We need $0.5^n \\le 0.01$:\n\n$0.5^6 = 0.0156 > 0.01$ and $0.5^7 = 0.0078 \\le 0.01$, so the smallest number is $n = 7$.\n\nFor $n = 7$: $P(X \\ge 7) = 0.0078 \\le 0.01$, but $P(X \\ge 6) = 0.0078 + 7(0.5^7) = 0.0625 > 0.01$, so the critical region is $X = 7$.\n\n(c) A hypothesis test can only give evidence **against** $H_0$; failing to reject $H_0$ means there is insufficient evidence of bias, not that $H_0$ is true. With only 6 tosses the test could never detect any bias at all, so it certainly cannot prove the coin is fair.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q13",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 4,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Lucy wants to find out whether a coin is biased. She will toss it 16 times and let $X$ be the number of heads, using a $5\\%$ significance level. For $X \\sim B(16, 0.5)$:\n\n| $k$ | 3 | 4 | 5 | 10 | 11 | 12 |\n|---|---|---|---|---|---|---|\n| $P(X \\le k)$ | 0.0106 | 0.0384 | 0.1051 | 0.8949 | 0.9616 | 0.9894 |\n\n(a) Find the critical region for a test of $H_0: p = 0.5$ against $H_1: p \\ne 0.5$.\n\n(b) Find the critical region for a test of $H_0: p = 0.5$ against $H_1: p > 0.5$.\n\n(c) Lucy tosses the coin and gets 12 heads. She says, \"I'll use the one-tailed test, because then my result is significant.\" Explain whether the result is significant in each test, and why Lucy's approach is not acceptable.",
+  "hint": "For the two-tailed test use $2.5\\%$ in each tail. For an upper tail use $P(X \\ge c) = 1 - P(X \\le c - 1)$.",
+  "answer": "(a) $X \\le 3$ or $X \\ge 13$ (b) $X \\ge 12$ (c) 12 is significant in the one-tailed test but not the two-tailed test. $H_1$ must be decided before seeing the data; choosing it afterwards to get significance is invalid.",
+  "solution": "(a) Two-tailed: $2.5\\%$ in each tail.\n\nLower tail: $P(X \\le 3) = 0.0106 \\le 0.025$ but $P(X \\le 4) = 0.0384 > 0.025$, so $X \\le 3$.\n\nUpper tail: $P(X \\ge 13) = 1 - P(X \\le 12) = 1 - 0.9894 = 0.0106 \\le 0.025$ but $P(X \\ge 12) = 1 - P(X \\le 11) = 1 - 0.9616 = 0.0384 > 0.025$, so $X \\ge 13$.\n\nCritical region: $X \\le 3$ or $X \\ge 13$ (symmetrical, as expected for $p = 0.5$).\n\n(b) One-tailed, all $5\\%$ in the upper tail: $P(X \\ge 12) = 1 - 0.9616 = 0.0384 \\le 0.05$ and $P(X \\ge 11) = 1 - P(X \\le 10) = 1 - 0.8949 = 0.1051 > 0.05$, so the critical region is $X \\ge 12$.\n\n(c) With 12 heads: in the one-tailed test, 12 is in the critical region, so the result is significant. In the two-tailed test, 12 is not in the critical region ($X \\ge 13$), so it is not significant.\n\nThe alternative hypothesis must be chosen **before** the data are collected, based on the question being asked. Lucy's question, \"is the coin biased?\", has no direction, so the two-tailed test is the appropriate one. Choosing the one-tailed test after seeing 12 heads, in order to get a significant result, means the real probability of wrongly rejecting $H_0$ is larger than the stated $5\\%$, so the test is not valid.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q14",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "question": "A test of $H_0: p = 0.2$ against $H_1: p > 0.2$ uses a sample of size 25 and has critical region $X \\ge 9$, with actual significance level $0.0468$.\n\nTwenty independent research groups each carry out this test on the same type of spinner, which is in fact fair ($p = 0.2$ is true).\n\n(a) Explain what the actual significance level means in this context.\n\n(b) Find the probability that at least one of the twenty groups rejects $H_0$.\n\n(c) Find the expected number of groups that reject $H_0$.\n\n(d) A journal only publishes \"significant\" results. Explain why a published report that $H_0$ was rejected may give a misleading impression.",
+  "hint": "Let $Y$ be the number of groups that reject $H_0$. What distribution does $Y$ have?",
+  "answer": "(a) It is the probability of rejecting $H_0$ when $H_0$ is true: $4.68\\%$. (b) $1 - 0.9532^{20} = 0.617$ (3 s.f.) (c) $0.936$ (d) With many tests, some will be significant by chance alone even though $H_0$ is true; publishing only those hides the many non-significant results.",
+  "solution": "(a) The actual significance level, $0.0468$, is the probability that the test rejects $H_0$ when $H_0$ is actually true, i.e. the probability that a fair spinner happens to give 9 or more reds in 25 spins, leading to the wrong conclusion that it is biased.\n\n(b) Let $Y$ be the number of groups (out of 20) that reject $H_0$. Each group independently rejects with probability $0.0468$, so $Y \\sim B(20, 0.0468)$.\n$$P(Y \\ge 1) = 1 - P(Y = 0) = 1 - (1 - 0.0468)^{20} = 1 - 0.9532^{20} = 0.617 \\text{ (3 s.f.)}$$\n\n(c) $E(Y) = 20 \\times 0.0468 = 0.936$\n\n(d) Even though the spinner is fair, there is about a $62\\%$ chance that at least one group gets a \"significant\" result just by chance. If only significant results are published, readers see the one group that rejected $H_0$ but not the many that did not, and wrongly conclude there is strong evidence of bias. A significance level controls the error rate of **one** test, not of many tests taken together (this is sometimes called publication bias or the multiple-testing problem)."
+ },
+ {
+  "id": "stat-hypothesis-binomial-q15",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "question": "A drug company believes a new treatment reduces the proportion of patients who suffer a side effect from $30\\%$. It plans a test of $H_0: p = 0.3$ against $H_1: p < 0.3$ at the $5\\%$ level, using a random sample of $n$ patients. $X$ is the number in the sample who suffer the side effect.\n\n(a) Explain why $X = 0$ is in the critical region if and only if $0.7^n \\le 0.05$.\n\n(b) Use logarithms to find the smallest value of $n$ for which $X = 0$ is in the critical region.\n\n(c) For this value of $n$, find the critical region and the actual significance level.",
+  "hint": "$P(X = 0) = 0.7^n$. When you divide an inequality by $\\log 0.7$, remember that $\\log 0.7 < 0$.",
+  "answer": "(a) $X = 0$ is the most extreme value, and $P(X \\le 0) = 0.7^n$ must be at most $0.05$. (b) $n = 9$ (c) $X = 0$; actual significance level $0.0404$",
+  "solution": "(a) For a lower-tailed test, the critical region is $X \\le c$ for the largest $c$ with $P(X \\le c) \\le 0.05$. The value $X = 0$ is in the critical region exactly when $P(X \\le 0) \\le 0.05$. Under $H_0$, $X \\sim B(n, 0.3)$ and\n$$P(X \\le 0) = P(X = 0) = 0.7^n$$\nso the condition is $0.7^n \\le 0.05$.\n\n(b) Take logs of both sides:\n$$n \\log 0.7 \\le \\log 0.05$$\nSince $\\log 0.7 < 0$, dividing reverses the inequality:\n$$n \\ge \\frac{\\log 0.05}{\\log 0.7} = \\frac{-1.3010}{-0.1549} = 8.399\\ldots$$\nSo the smallest $n$ is 9. Check: $0.7^8 = 0.0576 > 0.05$ and $0.7^9 = 0.0404 \\le 0.05$ ✓\n\n(c) With $n = 9$: $P(X \\le 0) = 0.0404 \\le 0.05$ and $P(X \\le 1) = 0.7^9 + 9(0.3)(0.7^8) = 0.0404 + 0.1556 = 0.1960 > 0.05$.\n\nCritical region: $X = 0$. Actual significance level $= 0.0404$ ($4.04\\%$)."
+ },
+ {
+  "id": "stat-hypothesis-binomial-q16",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A factory uses a two-stage plan to check large batches of components. The batch is supposed to have a defect rate of $5\\%$.\n\nStage 1: a random sample of 20 components is tested.\nIf 0 or 1 is defective, the batch is accepted.\nIf 4 or more are defective, the batch is rejected.\nIf 2 or 3 are defective, a second random sample of 20 is tested, and the batch is rejected if the **total** number of defectives in the two samples is 5 or more.\n\nThe plan can be viewed as a test of $H_0: p = 0.05$ against $H_1: p > 0.05$, where \"reject the batch\" means \"reject $H_0$\".\n\nFind the actual significance level of this plan, to 3 significant figures.\n\nYou may use these values for $Y \\sim B(20, 0.05)$:\n$P(Y \\le 1) = 0.7358$, $P(Y = 2) = 0.1887$, $P(Y = 3) = 0.0596$, $P(Y \\le 3) = 0.9841$",
+  "hint": "List the ways the batch can be rejected: at Stage 1, or after $X_1 = 2$, or after $X_1 = 3$. How many defectives must the second sample then contain?",
+  "answer": "$0.0459$ (3 s.f.)",
+  "solution": "The actual significance level is $P(\\text{reject batch})$ when $p = 0.05$. Let $X_1$ and $X_2$ be the numbers of defectives in the two samples; under $H_0$ each is $B(20, 0.05)$, independently.\n\n**Rejected at Stage 1:** $P(X_1 \\ge 4) = 1 - P(X_1 \\le 3) = 1 - 0.9841 = 0.0159$\n\n**$X_1 = 2$:** reject if $X_1 + X_2 \\ge 5$, i.e. $X_2 \\ge 3$.\n$P(X_2 \\ge 3) = 1 - P(X_2 \\le 2) = 1 - (0.7358 + 0.1887) = 0.0755$\nContribution: $0.1887 \\times 0.0755 = 0.01425$\n\n**$X_1 = 3$:** reject if $X_2 \\ge 2$.\n$P(X_2 \\ge 2) = 1 - P(X_2 \\le 1) = 1 - 0.7358 = 0.2642$\nContribution: $0.0596 \\times 0.2642 = 0.01575$\n\nTotal:\n$$P(\\text{reject}) = 0.0159 + 0.01425 + 0.01575 = 0.0459 \\text{ (3 s.f.)}$$\n\nSo, although no single significance level was set, the plan wrongly rejects about $4.6\\%$ of batches that genuinely have a $5\\%$ defect rate.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-binomial-q17",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-conditional"
+  ],
+  "question": "A machine produces bolts. When it is well adjusted, $10\\%$ of bolts are faulty; when it is badly adjusted, $30\\%$ are faulty. Each morning a random sample of 20 bolts is tested, and the engineer tests $H_0: p = 0.1$ against $H_1: p > 0.1$, rejecting $H_0$ (and recalibrating the machine) if 5 or more bolts are faulty.\n\nYou may use $P(X \\le 4) = 0.9568$ for $X \\sim B(20, 0.1)$ and $P(X \\le 4) = 0.2375$ for $X \\sim B(20, 0.3)$.\n\n(a) Find the actual significance level of the test.\n\n(b) Find the probability that, on a morning when the machine is badly adjusted, the test fails to reject $H_0$.\n\n(c) On $80\\%$ of mornings the machine is well adjusted. Given that the test rejects $H_0$ on a particular morning, find the probability that the machine was actually well adjusted.",
+  "hint": "For (c), draw a tree: first branch well/badly adjusted, second branch reject/do not reject. Then use $P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$.",
+  "answer": "(a) $0.0432$ (b) $0.2375$ (c) $0.185$ (3 s.f.)",
+  "solution": "(a) Under $H_0$, $X \\sim B(20, 0.1)$:\n$$P(X \\ge 5) = 1 - P(X \\le 4) = 1 - 0.9568 = 0.0432$$\n\n(b) If the machine is badly adjusted, $X \\sim B(20, 0.3)$. The test fails to reject $H_0$ when $X \\le 4$:\n$$P(X \\le 4) = 0.2375$$\nSo about a quarter of badly adjusted mornings are missed.\n\n(c) Let $W$ = well adjusted, $R$ = test rejects $H_0$.\n\n$P(W \\cap R) = 0.8 \\times 0.0432 = 0.03456$\n\n$P(W' \\cap R) = 0.2 \\times (1 - 0.2375) = 0.2 \\times 0.7625 = 0.1525$\n\n$P(R) = 0.03456 + 0.1525 = 0.18706$\n\n$$P(W \\mid R) = \\frac{0.03456}{0.18706} = 0.185 \\text{ (3 s.f.)}$$\n\nSo even though the significance level is only about $4\\%$, roughly $18.5\\%$ of the recalibrations happen when the machine was actually fine. The significance level is $P(R \\mid W)$, which is very different from $P(W \\mid R)$."
+ },
+ {
+  "id": "stat-hypothesis-binomial-q18",
+  "topicId": "stat-hypothesis-binomial",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "question": "In the past, $15\\%$ of visitors to an online shop made a purchase. After the website is redesigned, the manager takes a random sample of 30 visitors and records the number, $X$, who make a purchase.\n\nFor $X \\sim B(30, 0.15)$: $P(X \\le 6) = 0.8474$, $P(X \\le 7) = 0.9302$, $P(X \\le 8) = 0.9722$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down hypotheses to test whether the proportion of visitors who make a purchase has increased.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the critical region for the test at the $5\\%$ level of significance.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "State the actual significance level of this test.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "In the sample, 8 visitors made a purchase. State, with a reason, the conclusion of the test at the $5\\%$ level.",
+    "marks": 1
+   },
+   {
+    "label": "e",
+    "prompt": "The manager says that she would have reached a different conclusion if she had used a $10\\%$ level. Determine whether she is correct.",
+    "marks": 2
+   }
+  ],
+  "hint": "Find the smallest $c$ with $P(X \\ge c) = 1 - P(X \\le c - 1) \\le 0.05$.",
+  "answer": "(a) $H_0: p = 0.15$, $H_1: p > 0.15$ (b) $X \\ge 9$ (c) $0.0278$ (d) 8 is not in the critical region: insufficient evidence that the proportion has increased. (e) Correct: at $10\\%$ the critical region is $X \\ge 8$, so 8 would be significant.",
+  "solution": "(a) $H_0: p = 0.15$, $H_1: p > 0.15$, where $p$ is the proportion of visitors who make a purchase. B1\n\n(b) Under $H_0$, $X \\sim B(30, 0.15)$. M1\n\n$P(X \\ge 9) = 1 - P(X \\le 8) = 1 - 0.9722 = 0.0278 \\le 0.05$ M1\n\n$P(X \\ge 8) = 1 - P(X \\le 7) = 1 - 0.9302 = 0.0698 > 0.05$\n\nCritical region: $X \\ge 9$ A1\n\n(c) Actual significance level $= 0.0278$ B1\n\n(d) 8 is not in the critical region, so there is insufficient evidence at the $5\\%$ level to suggest that the proportion of visitors making a purchase has increased. B1\n\n(e) At $10\\%$: $P(X \\ge 8) = 0.0698 \\le 0.10$ and $P(X \\ge 7) = 1 - 0.8474 = 0.1526 > 0.10$, so the critical region becomes $X \\ge 8$. M1\n\n8 is now in the critical region, so the result would be significant at $10\\%$: the manager is correct. A1",
+  "linkedTopicIds": []
+ }
+]

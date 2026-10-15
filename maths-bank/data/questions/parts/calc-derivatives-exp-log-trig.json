@@ -1,0 +1,299 @@
+[
+ {
+  "id": "calc-derivatives-exp-log-trig-q01",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=e^{3x}$ with respect to $x$.",
+  "hint": "Use $\\dfrac{d}{dx}\\left(e^{kx}\\right)=ke^{kx}$. What is $k$ here?",
+  "answer": "$\\dfrac{dy}{dx}=3e^{3x}$",
+  "solution": "Here $k=3$, and $\\frac{d}{dx}(e^{kx})=ke^{kx}$, so\n$$\\frac{dy}{dx}=3e^{3x}$$\n\nThe exponential part stays the same; the multiplier $3$ from the power comes down in front.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q02",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=e^{-3x}$ with respect to $x$.",
+  "hint": "Same rule as for $e^{3x}$. What is $k$ now?",
+  "answer": "$\\dfrac{dy}{dx}=-3e^{-3x}$",
+  "solution": "**What changed:** the power is now $-3x$, so $k=-3$.\n$$\\frac{dy}{dx}=-3e^{-3x}$$\n\nEffect: the derivative is now negative for every $x$ – the graph of $e^{-3x}$ is always decreasing (exponential decay).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q03",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=4e^{-3x}$ with respect to $x$.",
+  "hint": "A constant multiple just stays in front: differentiate $e^{-3x}$ and multiply by $4$.",
+  "answer": "$\\dfrac{dy}{dx}=-12e^{-3x}$",
+  "solution": "**What changed:** there is now a coefficient of $4$ in front.\n$$\\frac{dy}{dx}=4\\times(-3e^{-3x})=-12e^{-3x}$$\n\nEffect: the derivative is $4$ times the previous one. Note $\\frac{dy}{dx}=-3y$ – the rate of decrease is proportional to $y$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q04",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Differentiate $y=4e^{-x/3}$ with respect to $x$, and find the exact gradient of the curve at the point where $x=3$.",
+  "hint": "Write $-\\dfrac{x}{3}$ as $-\\dfrac{1}{3}x$. What is $k$?",
+  "answer": "$\\dfrac{dy}{dx}=-\\dfrac{4}{3}e^{-x/3}$; gradient at $x=3$ is $-\\dfrac{4}{3e}$",
+  "solution": "**What changed:** $k$ is now the fraction $-\\frac{1}{3}$ instead of $-3$.\n$$\\frac{dy}{dx}=4\\times\\left(-\\frac{1}{3}\\right)e^{-x/3}=-\\frac{4}{3}e^{-x/3}$$\n\nAt $x=3$:\n$$\\frac{dy}{dx}=-\\frac{4}{3}e^{-1}=-\\frac{4}{3e}\\approx-0.491$$\n\nEffect: with $|k|<1$ the curve decays much more slowly than $4e^{-3x}$, so the gradient is much less steep.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q05",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Differentiate each of the following with respect to $x$.\n\n(a) $y=\\sin2x$\n\n(b) $y=\\cos5x$\n\n(c) $y=3\\tan4x$",
+  "hint": "$\\frac{d}{dx}(\\sin kx)=k\\cos kx$, $\\frac{d}{dx}(\\cos kx)=-k\\sin kx$, $\\frac{d}{dx}(\\tan kx)=k\\sec^2kx$.",
+  "answer": "(a) $2\\cos2x$ (b) $-5\\sin5x$ (c) $12\\sec^24x$",
+  "solution": "**(a)** $\\dfrac{dy}{dx}=2\\cos2x$ (the $2$ from inside comes out in front).\n\n**(b)** $\\dfrac{dy}{dx}=-5\\sin5x$ (cos differentiates to **minus** sin).\n\n**(c)** $\\dfrac{dy}{dx}=3\\times4\\sec^24x=12\\sec^24x$.",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q06",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Differentiate each of the following with respect to $x$.\n\n(a) $y=3^x$\n\n(b) $y=5\\times2^x$\n\n(c) $y=\\ln(x^4)$, $x>0$\n\n(d) $y=\\ln(7x)$, $x>0$",
+  "hint": "For $a^x$, the derivative is $a^x\\ln a$. For the logarithms, use the laws of logarithms to simplify first.",
+  "answer": "(a) $3^x\\ln3$ (b) $5\\ln2\\times2^x$ (c) $\\dfrac{4}{x}$ (d) $\\dfrac{1}{x}$",
+  "solution": "**(a)** $\\dfrac{d}{dx}(a^x)=a^x\\ln a$, so $\\dfrac{dy}{dx}=3^x\\ln3$.\n\n**(b)** $\\dfrac{dy}{dx}=5\\times2^x\\ln2=(5\\ln2)\\,2^x$.\n\n**(c)** $\\ln(x^4)=4\\ln x$, so $\\dfrac{dy}{dx}=\\dfrac{4}{x}$.\n\n**(d)** $\\ln(7x)=\\ln7+\\ln x$, and $\\ln7$ is a constant, so $\\dfrac{dy}{dx}=0+\\dfrac{1}{x}=\\dfrac{1}{x}$.\n\nCompare (c) and (d): a power **inside** the log becomes a multiplier; a constant multiple inside the log disappears.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q07",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Given $f(x)=2\\sec x-\\cot x$, find $f'(x)$ and show that $f'\\!\\left(\\dfrac{\\pi}{3}\\right)=4\\sqrt{3}+\\dfrac{4}{3}$.\n\n(b) Given $g(x)=\\operatorname{cosec}x$, find the exact value of $g'\\!\\left(\\dfrac{\\pi}{4}\\right)$.",
+  "hint": "$\\frac{d}{dx}(\\sec x)=\\sec x\\tan x$, $\\frac{d}{dx}(\\cot x)=-\\operatorname{cosec}^2x$, $\\frac{d}{dx}(\\operatorname{cosec}x)=-\\operatorname{cosec}x\\cot x$. Then use exact values.",
+  "answer": "(a) $f'(x)=2\\sec x\\tan x+\\operatorname{cosec}^2x$ (b) $g'\\!\\left(\\frac{\\pi}{4}\\right)=-\\sqrt{2}$",
+  "solution": "**(a)**\n$$f'(x)=2\\sec x\\tan x-(-\\operatorname{cosec}^2x)=2\\sec x\\tan x+\\operatorname{cosec}^2x$$\n\nAt $x=\\frac{\\pi}{3}$: $\\cos\\frac{\\pi}{3}=\\frac{1}{2}\\Rightarrow\\sec\\frac{\\pi}{3}=2$; $\\tan\\frac{\\pi}{3}=\\sqrt{3}$; $\\sin\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}\\Rightarrow\\operatorname{cosec}\\frac{\\pi}{3}=\\frac{2}{\\sqrt{3}}$.\n$$f'\\!\\left(\\frac{\\pi}{3}\\right)=2(2)(\\sqrt{3})+\\left(\\frac{2}{\\sqrt{3}}\\right)^2=4\\sqrt{3}+\\frac{4}{3}$$\n\n**(b)** $g'(x)=-\\operatorname{cosec}x\\cot x$. At $x=\\frac{\\pi}{4}$: $\\operatorname{cosec}\\frac{\\pi}{4}=\\sqrt{2}$, $\\cot\\frac{\\pi}{4}=1$.\n$$g'\\!\\left(\\frac{\\pi}{4}\\right)=-\\sqrt{2}\\times1=-\\sqrt{2}$$",
+  "linkedTopicIds": [
+   "pure-trig-reciprocal-inverse",
+   "geo-trig-exact-values"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q08",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Lily writes:\n\n\"Using the power rule, bring the power down and subtract one: $\\dfrac{d}{dx}\\left(2^x\\right)=x\\cdot2^{x-1}$.\"\n\n(a) Explain why Lily's method is not valid.\n\n(b) By writing $2^x=e^{x\\ln2}$, show that $\\dfrac{d}{dx}\\left(2^x\\right)=2^x\\ln2$.\n\n(c) Show that Lily's answer gives the wrong gradient at $x=0$, by comparing with the correct value.",
+  "hint": "In $x^n$ the power is a fixed number. What is fixed in $2^x$? For (b), $e^{x\\ln2}$ has the form $e^{kx}$ with $k=\\ln2$.",
+  "answer": "(a) The power rule applies to $x^n$ (variable base, constant power); in $2^x$ the base is constant and the power varies. (b) $\\frac{d}{dx}e^{x\\ln2}=\\ln2\\,e^{x\\ln2}=2^x\\ln2$ (c) Lily: $0$; correct: $\\ln2\\approx0.693$",
+  "solution": "**(a)** The power rule $\\frac{d}{dx}(x^n)=nx^{n-1}$ is for a **variable base** raised to a **constant power**. In $2^x$ the base is the constant $2$ and the variable is in the power, so it is an exponential function, not a power function. The rule does not apply.\n\n**(b)** Since $e^{\\ln2}=2$, we have $2^x=\\left(e^{\\ln2}\\right)^x=e^{x\\ln2}$. This is $e^{kx}$ with the constant $k=\\ln2$, so\n$$\\frac{d}{dx}\\left(2^x\\right)=\\ln2\\cdot e^{x\\ln2}=2^x\\ln2$$\n\n**(c)** Lily's formula at $x=0$: $0\\times2^{-1}=0$, which would mean a horizontal tangent at $(0,1)$.\n\nCorrect value: $2^0\\ln2=\\ln2\\approx0.693$. The graph of $y=2^x$ is increasing everywhere, so its gradient cannot be $0$ – Lily's answer must be wrong.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q09",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to find the gradient of the curve $y=\\ln(5x)$ at the point where $x=2$. His working is shown below.\n\nLine 1: $y=\\ln(5x)$\n\nLine 2: $\\dfrac{dy}{dx}=\\dfrac{5}{x}$\n\nLine 3: At $x=2$, gradient $=\\dfrac{5}{2}$\n\nIdentify Ben's error, explain it, and find the correct gradient.",
+  "hint": "Use a law of logarithms to split $\\ln(5x)$ into two terms before differentiating.",
+  "answer": "Line 2 is wrong: $\\ln(5x)=\\ln5+\\ln x$, so $\\frac{dy}{dx}=\\frac{1}{x}$. Correct gradient $\\frac{1}{2}$.",
+  "solution": "**Error (Line 2):** Ben has treated the $5$ inside the logarithm like the $k$ in $e^{kx}$, bringing it out in front. That rule does not apply to logarithms.\n\n**Correct working:**\n$$y=\\ln(5x)=\\ln5+\\ln x$$\n$\\ln5$ is a constant, so its derivative is $0$:\n$$\\frac{dy}{dx}=\\frac{1}{x}$$\n\nAt $x=2$ the gradient is $\\dfrac{1}{2}$.\n\n(Check: the graph of $y=\\ln(5x)$ is the graph of $y=\\ln x$ translated up by $\\ln5$, so it has exactly the same gradient at every $x$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q10",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Amira is asked whether the curve $y=3\\cos2x$ is increasing or decreasing at the point where $x=\\dfrac{\\pi}{12}$. Her working is shown below.\n\nLine 1: $\\dfrac{dy}{dx}=6\\sin2x$\n\nLine 2: At $x=\\dfrac{\\pi}{12}$: $\\dfrac{dy}{dx}=6\\sin\\dfrac{\\pi}{6}=6\\times\\dfrac{1}{2}=3$\n\nLine 3: The gradient is positive, so the curve is increasing at $x=\\dfrac{\\pi}{12}$.\n\nIdentify Amira's error, explain it, and give the correct conclusion.",
+  "hint": "Think about the graph of $\\cos$ just to the right of $0$: is it going up or down?",
+  "answer": "Line 1: $\\frac{d}{dx}(\\cos2x)=-2\\sin2x$, so $\\frac{dy}{dx}=-6\\sin2x$. At $x=\\frac{\\pi}{12}$ the gradient is $-3$, so the curve is decreasing.",
+  "solution": "**Error (Line 1):** Amira correctly multiplied by $3\\times2=6$, but she has the wrong sign. The derivative of $\\cos$ is **minus** $\\sin$:\n$$\\frac{d}{dx}(\\cos kx)=-k\\sin kx$$\n\n**Correct working:**\n$$\\frac{dy}{dx}=3\\times(-2\\sin2x)=-6\\sin2x$$\n\nAt $x=\\frac{\\pi}{12}$:\n$$\\frac{dy}{dx}=-6\\sin\\frac{\\pi}{6}=-6\\times\\frac{1}{2}=-3$$\n\nThe gradient is negative, so the curve is **decreasing** at $x=\\frac{\\pi}{12}$.\n\nSense check: $y=3\\cos2x$ has a maximum $3$ at $x=0$ and falls to $0$ at $x=\\frac{\\pi}{4}$; $\\frac{\\pi}{12}$ is between these, where the curve is going down.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q11",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "The curve $C$ has equation $y=e^{2x}-6x$.\n\nFind the exact coordinates of the stationary point of $C$, and determine its nature.",
+  "hint": "Set $\\frac{dy}{dx}=0$, isolate $e^{2x}$, then take natural logarithms. Use $e^{\\ln3}=3$ to simplify the $y$-coordinate.",
+  "answer": "Minimum at $\\left(\\tfrac{1}{2}\\ln3,\\ 3-3\\ln3\\right)$",
+  "solution": "$$\\frac{dy}{dx}=2e^{2x}-6$$\n\nStationary point: $2e^{2x}-6=0\\implies e^{2x}=3\\implies2x=\\ln3\\implies x=\\frac{1}{2}\\ln3$.\n\n$y$-coordinate: $e^{2x}=3$ at this point, so\n$$y=3-6\\times\\frac{1}{2}\\ln3=3-3\\ln3$$\n\nNature: $\\dfrac{d^2y}{dx^2}=4e^{2x}=4\\times3=12>0$, so it is a **minimum**.\n\nStationary point: minimum at $\\left(\\frac{1}{2}\\ln3,\\ 3-3\\ln3\\right)\\approx(0.549,\\,-0.296)$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q12",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A cup of tea is left on a table. Its temperature, $T\\ ^\\circ\\text{C}$, $t$ minutes later is modelled by\n$$T=20+70e^{-0.04t}$$\n\n(a) State the initial temperature of the tea and the temperature of the room.\n\n(b) Find $\\dfrac{dT}{dt}$ when $t=10$, giving your answer to 3 significant figures, and interpret it in context.\n\n(c) Find the time at which the tea is cooling at a rate of $1\\ ^\\circ\\text{C}$ per minute.\n\n(d) Show that $\\dfrac{dT}{dt}=-0.04(T-20)$ and explain what this means about the rate of cooling.",
+  "hint": "Differentiate $70e^{-0.04t}$ using $\\frac{d}{dt}(e^{kt})=ke^{kt}$. 'Cooling at $1\\ ^\\circ\\text{C}$ per minute' means $\\frac{dT}{dt}=-1$.",
+  "answer": "(a) $90\\ ^\\circ\\text{C}$; $20\\ ^\\circ\\text{C}$ (b) $-1.88\\ ^\\circ\\text{C}$ per minute: after 10 minutes the tea is cooling at about $1.88\\ ^\\circ\\text{C}$ per minute (c) $t=25\\ln2.8\\approx25.7$ minutes (d) The rate of cooling is proportional to the difference between the tea's temperature and room temperature.",
+  "solution": "**(a)** At $t=0$: $T=20+70=90\\ ^\\circ\\text{C}$. As $t\\to\\infty$, $e^{-0.04t}\\to0$, so $T\\to20$: the room is at $20\\ ^\\circ\\text{C}$.\n\n**(b)**\n$$\\frac{dT}{dt}=70\\times(-0.04)e^{-0.04t}=-2.8e^{-0.04t}$$\nAt $t=10$: $\\dfrac{dT}{dt}=-2.8e^{-0.4}=-1.876\\ldots\\approx-1.88\\ ^\\circ\\text{C}$ per minute.\n\nAfter 10 minutes the temperature is falling at about $1.88\\ ^\\circ\\text{C}$ per minute.\n\n**(c)** $-2.8e^{-0.04t}=-1\\implies e^{-0.04t}=\\dfrac{1}{2.8}\\implies-0.04t=-\\ln2.8\\implies t=25\\ln2.8\\approx25.7$ minutes.\n\n**(d)** $T-20=70e^{-0.04t}$, so\n$$\\frac{dT}{dt}=-0.04\\times70e^{-0.04t}=-0.04(T-20)$$\nThe rate of cooling is proportional to how much hotter the tea is than the room (Newton's law of cooling): it cools quickly at first and more slowly as it approaches room temperature.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q13",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The depth of water, $h$ metres, in a harbour $t$ hours after midnight is modelled by\n$$h=3+2\\sin\\left(\\frac{\\pi t}{6}\\right),\\qquad 0\\le t\\le24$$\nThe graph of $h$ against $t$ is shown.\n\n(a) Find the rate at which the depth is changing at 2 a.m., giving an exact answer and its value to 3 significant figures.\n\n(b) Find the times between midnight and noon when the depth is momentarily neither rising nor falling, and the depth at each of these times.\n\n(c) Find the greatest rate at which the water rises, and the times at which this happens.",
+  "hint": "$\\frac{d}{dt}\\sin(kt)=k\\cos(kt)$ with $k=\\frac{\\pi}{6}$ – make sure your calculator is in radians.",
+  "answer": "(a) $\\dfrac{\\pi}{6}\\approx0.524$ m per hour (rising) (b) 3 a.m. (depth 5 m, high tide) and 9 a.m. (depth 1 m, low tide) (c) $\\dfrac{\\pi}{3}\\approx1.05$ m per hour, at midnight, noon and midnight the next night ($t=0,12,24$)",
+  "solution": "$$\\frac{dh}{dt}=2\\times\\frac{\\pi}{6}\\cos\\left(\\frac{\\pi t}{6}\\right)=\\frac{\\pi}{3}\\cos\\left(\\frac{\\pi t}{6}\\right)$$\n\n**(a)** At $t=2$: $\\dfrac{dh}{dt}=\\dfrac{\\pi}{3}\\cos\\dfrac{\\pi}{3}=\\dfrac{\\pi}{3}\\times\\dfrac{1}{2}=\\dfrac{\\pi}{6}\\approx0.524$ m per hour. The depth is increasing at $0.524$ m per hour.\n\n**(b)** $\\dfrac{dh}{dt}=0\\iff\\cos\\left(\\dfrac{\\pi t}{6}\\right)=0\\iff\\dfrac{\\pi t}{6}=\\dfrac{\\pi}{2},\\dfrac{3\\pi}{2}\\ (0\\le t\\le12)\\iff t=3,\\ 9$.\n\n$t=3$: $h=3+2\\sin\\frac{\\pi}{2}=5$ m (high tide, 3 a.m.).\n$t=9$: $h=3+2\\sin\\frac{3\\pi}{2}=1$ m (low tide, 9 a.m.).\n\n**(c)** The rate $\\frac{\\pi}{3}\\cos\\left(\\frac{\\pi t}{6}\\right)$ is greatest when $\\cos\\left(\\frac{\\pi t}{6}\\right)=1$, i.e. $\\frac{\\pi t}{6}=0,2\\pi,4\\pi$, so $t=0,12,24$.\n\nGreatest rate of rise $=\\dfrac{\\pi}{3}\\approx1.05$ m per hour, at midnight, noon and the following midnight – halfway between low and high tide, where the graph is steepest.",
+  "linkedTopicIds": [
+   "pure-trig-graphs"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\"><line x1=\"46\" y1=\"200\" x2=\"46\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"80.9\" y1=\"200\" x2=\"80.9\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"115.8\" y1=\"200\" x2=\"115.8\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"150.6\" y1=\"200\" x2=\"150.6\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"185.5\" y1=\"200\" x2=\"185.5\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"220.4\" y1=\"200\" x2=\"220.4\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"255.2\" y1=\"200\" x2=\"255.2\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"290.1\" y1=\"200\" x2=\"290.1\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"325\" y1=\"200\" x2=\"325\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"200\" x2=\"325\" y2=\"200\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"169.2\" x2=\"325\" y2=\"169.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"138.3\" x2=\"325\" y2=\"138.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"107.5\" x2=\"325\" y2=\"107.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"76.7\" x2=\"325\" y2=\"76.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"45.8\" x2=\"325\" y2=\"45.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"15\" x2=\"325\" y2=\"15\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"200\" x2=\"325\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"46\" y1=\"200\" x2=\"46\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"46\" y1=\"200\" x2=\"46\" y2=\"204\" stroke=\"currentColor\"/><text x=\"46\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"80.9\" y1=\"200\" x2=\"80.9\" y2=\"204\" stroke=\"currentColor\"/><text x=\"80.9\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"115.8\" y1=\"200\" x2=\"115.8\" y2=\"204\" stroke=\"currentColor\"/><text x=\"115.8\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"150.6\" y1=\"200\" x2=\"150.6\" y2=\"204\" stroke=\"currentColor\"/><text x=\"150.6\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><line x1=\"185.5\" y1=\"200\" x2=\"185.5\" y2=\"204\" stroke=\"currentColor\"/><text x=\"185.5\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"220.4\" y1=\"200\" x2=\"220.4\" y2=\"204\" stroke=\"currentColor\"/><text x=\"220.4\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">15</text><line x1=\"255.2\" y1=\"200\" x2=\"255.2\" y2=\"204\" stroke=\"currentColor\"/><text x=\"255.2\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">18</text><line x1=\"290.1\" y1=\"200\" x2=\"290.1\" y2=\"204\" stroke=\"currentColor\"/><text x=\"290.1\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">21</text><line x1=\"325\" y1=\"200\" x2=\"325\" y2=\"204\" stroke=\"currentColor\"/><text x=\"325\" y=\"216\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">24</text><line x1=\"42\" y1=\"200\" x2=\"46\" y2=\"200\" stroke=\"currentColor\"/><text x=\"40\" y=\"204\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"42\" y1=\"169.2\" x2=\"46\" y2=\"169.2\" stroke=\"currentColor\"/><text x=\"40\" y=\"173.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"42\" y1=\"138.3\" x2=\"46\" y2=\"138.3\" stroke=\"currentColor\"/><text x=\"40\" y=\"142.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"42\" y1=\"107.5\" x2=\"46\" y2=\"107.5\" stroke=\"currentColor\"/><text x=\"40\" y=\"111.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"42\" y1=\"76.7\" x2=\"46\" y2=\"76.7\" stroke=\"currentColor\"/><text x=\"40\" y=\"80.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"42\" y1=\"45.8\" x2=\"46\" y2=\"45.8\" stroke=\"currentColor\"/><text x=\"40\" y=\"49.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"42\" y1=\"15\" x2=\"46\" y2=\"15\" stroke=\"currentColor\"/><text x=\"40\" y=\"19\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"185.5\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">t (hours after midnight)</text><text x=\"13\" y=\"107.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 13 107.5)\">h (m)</text><path d=\"M46,107.5 L46.7,105.6 L47.4,103.6 L48.1,101.7 L48.8,99.8 L49.5,97.9 L50.2,95.9 L50.9,94 L51.6,92.2 L52.3,90.3 L53,88.4 L53.7,86.6 L54.4,84.8 L55.1,83 L55.8,81.2 L56.5,79.5 L57.2,77.8 L57.9,76.1 L58.6,74.5 L59.3,72.8 L60,71.3 L60.6,69.7 L61.3,68.2 L62,66.7 L62.7,65.3 L63.4,63.9 L64.1,62.5 L64.8,61.2 L65.5,60 L66.2,58.8 L66.9,57.6 L67.6,56.5 L68.3,55.4 L69,54.4 L69.7,53.5 L70.4,52.6 L71.1,51.7 L71.8,50.9 L72.5,50.2 L73.2,49.5 L73.9,48.9 L74.6,48.3 L75.3,47.8 L76,47.3 L76.7,46.9 L77.4,46.6 L78.1,46.3 L78.8,46.1 L79.5,46 L80.2,45.9 L80.9,45.8 L81.6,45.9 L82.3,46 L83,46.1 L83.7,46.3 L84.4,46.6 L85.1,46.9 L85.8,47.3 L86.5,47.8 L87.2,48.3 L87.8,48.9 L88.5,49.5 L89.2,50.2 L89.9,50.9 L90.6,51.7 L91.3,52.6 L92,53.5 L92.7,54.4 L93.4,55.4 L94.1,56.5 L94.8,57.6 L95.5,58.8 L96.2,60 L96.9,61.2 L97.6,62.5 L98.3,63.9 L99,65.3 L99.7,66.7 L100.4,68.2 L101.1,69.7 L101.8,71.3 L102.5,72.8 L103.2,74.5 L103.9,76.1 L104.6,77.8 L105.3,79.5 L106,81.2 L106.7,83 L107.4,84.8 L108.1,86.6 L108.8,88.4 L109.5,90.3 L110.2,92.2 L110.9,94 L111.6,95.9 L112.3,97.9 L113,99.8 L113.7,101.7 L114.4,103.6 L115.1,105.6 L115.8,107.5 L116.4,109.4 L117.1,111.4 L117.8,113.3 L118.5,115.2 L119.2,117.1 L119.9,119.1 L120.6,121 L121.3,122.8 L122,124.7 L122.7,126.6 L123.4,128.4 L124.1,130.2 L124.8,132 L125.5,133.8 L126.2,135.5 L126.9,137.2 L127.6,138.9 L128.3,140.5 L129,142.2 L129.7,143.7 L130.4,145.3 L131.1,146.8 L131.8,148.3 L132.5,149.7 L133.2,151.1 L133.9,152.5 L134.6,153.8 L135.3,155 L136,156.2 L136.7,157.4 L137.4,158.5 L138.1,159.6 L138.8,160.6 L139.5,161.5 L140.2,162.4 L140.9,163.3 L141.6,164.1 L142.3,164.8 L143,165.5 L143.7,166.1 L144.3,166.7 L145,167.2 L145.7,167.7 L146.4,168.1 L147.1,168.4 L147.8,168.7 L148.5,168.9 L149.2,169 L149.9,169.1 L150.6,169.2 L151.3,169.1 L152,169 L152.7,168.9 L153.4,168.7 L154.1,168.4 L154.8,168.1 L155.5,167.7 L156.2,167.2 L156.9,166.7 L157.6,166.1 L158.3,165.5 L159,164.8 L159.7,164.1 L160.4,163.3 L161.1,162.4 L161.8,161.5 L162.5,160.6 L163.2,159.6 L163.9,158.5 L164.6,157.4 L165.3,156.2 L166,155 L166.7,153.8 L167.4,152.5 L168.1,151.1 L168.8,149.7 L169.5,148.3 L170.2,146.8 L170.9,145.3 L171.6,143.7 L172.2,142.2 L172.9,140.5 L173.6,138.9 L174.3,137.2 L175,135.5 L175.7,133.8 L176.4,132 L177.1,130.2 L177.8,128.4 L178.5,126.6 L179.2,124.7 L179.9,122.8 L180.6,121 L181.3,119.1 L182,117.1 L182.7,115.2 L183.4,113.3 L184.1,111.4 L184.8,109.4 L185.5,107.5 L186.2,105.6 L186.9,103.6 L187.6,101.7 L188.3,99.8 L189,97.9 L189.7,95.9 L190.4,94 L191.1,92.2 L191.8,90.3 L192.5,88.4 L193.2,86.6 L193.9,84.8 L194.6,83 L195.3,81.2 L196,79.5 L196.7,77.8 L197.4,76.1 L198.1,74.5 L198.8,72.8 L199.4,71.3 L200.1,69.7 L200.8,68.2 L201.5,66.7 L202.2,65.3 L202.9,63.9 L203.6,62.5 L204.3,61.2 L205,60 L205.7,58.8 L206.4,57.6 L207.1,56.5 L207.8,55.4 L208.5,54.4 L209.2,53.5 L209.9,52.6 L210.6,51.7 L211.3,50.9 L212,50.2 L212.7,49.5 L213.4,48.9 L214.1,48.3 L214.8,47.8 L215.5,47.3 L216.2,46.9 L216.9,46.6 L217.6,46.3 L218.3,46.1 L219,46 L219.7,45.9 L220.4,45.8 L221.1,45.9 L221.8,46 L222.5,46.1 L223.2,46.3 L223.9,46.6 L224.6,46.9 L225.3,47.3 L226,47.8 L226.7,48.3 L227.3,48.9 L228,49.5 L228.7,50.2 L229.4,50.9 L230.1,51.7 L230.8,52.6 L231.5,53.5 L232.2,54.4 L232.9,55.4 L233.6,56.5 L234.3,57.6 L235,58.8 L235.7,60 L236.4,61.2 L237.1,62.5 L237.8,63.9 L238.5,65.3 L239.2,66.7 L239.9,68.2 L240.6,69.7 L241.3,71.3 L242,72.8 L242.7,74.5 L243.4,76.1 L244.1,77.8 L244.8,79.5 L245.5,81.2 L246.2,83 L246.9,84.8 L247.6,86.6 L248.3,88.4 L249,90.3 L249.7,92.2 L250.4,94 L251.1,95.9 L251.8,97.9 L252.5,99.8 L253.2,101.7 L253.9,103.6 L254.6,105.6 L255.2,107.5 L255.9,109.4 L256.6,111.4 L257.3,113.3 L258,115.2 L258.7,117.1 L259.4,119.1 L260.1,121 L260.8,122.8 L261.5,124.7 L262.2,126.6 L262.9,128.4 L263.6,130.2 L264.3,132 L265,133.8 L265.7,135.5 L266.4,137.2 L267.1,138.9 L267.8,140.5 L268.5,142.2 L269.2,143.7 L269.9,145.3 L270.6,146.8 L271.3,148.3 L272,149.7 L272.7,151.1 L273.4,152.5 L274.1,153.8 L274.8,155 L275.5,156.2 L276.2,157.4 L276.9,158.5 L277.6,159.6 L278.3,160.6 L279,161.5 L279.7,162.4 L280.4,163.3 L281.1,164.1 L281.8,164.8 L282.5,165.5 L283.1,166.1 L283.8,166.7 L284.5,167.2 L285.2,167.7 L285.9,168.1 L286.6,168.4 L287.3,168.7 L288,168.9 L288.7,169 L289.4,169.1 L290.1,169.2 L290.8,169.1 L291.5,169 L292.2,168.9 L292.9,168.7 L293.6,168.4 L294.3,168.1 L295,167.7 L295.7,167.2 L296.4,166.7 L297.1,166.1 L297.8,165.5 L298.5,164.8 L299.2,164.1 L299.9,163.3 L300.6,162.4 L301.3,161.5 L302,160.6 L302.7,159.6 L303.4,158.5 L304.1,157.4 L304.8,156.2 L305.5,155 L306.2,153.8 L306.9,152.5 L307.6,151.1 L308.3,149.7 L309,148.3 L309.7,146.8 L310.4,145.3 L311.1,143.7 L311.7,142.2 L312.4,140.5 L313.1,138.9 L313.8,137.2 L314.5,135.5 L315.2,133.8 L315.9,132 L316.6,130.2 L317.3,128.4 L318,126.6 L318.7,124.7 L319.4,122.8 L320.1,121 L320.8,119.1 L321.5,117.1 L322.2,115.2 L322.9,113.3 L323.6,111.4 L324.3,109.4 L325,107.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>"
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q14",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "question": "The curve $C$ has equation\n$$y=6\\ln x-x^2,\\qquad x>0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dy}{dx}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $C$ has exactly one stationary point, and find its exact coordinates, giving the $y$-coordinate in the form $a\\ln3+b$ where $a$ and $b$ are integers.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Determine the nature of this stationary point.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the equation of the tangent to $C$ at the point where $x=1$, giving your answer in the form $y=mx+c$.",
+    "marks": 3
+   }
+  ],
+  "marks": 10,
+  "hint": "(b) Solve $\\frac{6}{x}-2x=0$ for $x>0$, then use $\\ln\\sqrt{3}=\\frac{1}{2}\\ln3$.",
+  "answer": "(a) $\\dfrac{6}{x}-2x$ (b) $\\left(\\sqrt{3},\\ 3\\ln3-3\\right)$ (c) Maximum (d) $y=4x-5$",
+  "solution": "**(a)**\n$$\\frac{dy}{dx}=\\frac{6}{x}-2x$$\nB1: $\\frac{6}{x}$. B1: $-2x$.\n\n**(b)** $\\dfrac{6}{x}-2x=0\\implies6=2x^2\\implies x^2=3$. Since $x>0$, $x=\\sqrt{3}$ only, so there is exactly one stationary point.\nM1: sets derivative $=0$ and solves. A1: $x=\\sqrt{3}$ only, with reason for rejecting $-\\sqrt{3}$.\n\n$$y=6\\ln\\sqrt{3}-3=6\\times\\frac{1}{2}\\ln3-3=3\\ln3-3$$\nA1: $\\left(\\sqrt{3},\\ 3\\ln3-3\\right)$.\n\n**(c)**\n$$\\frac{d^2y}{dx^2}=-\\frac{6}{x^2}-2$$\nM1: finds $\\frac{d^2y}{dx^2}$ and considers its sign at $x=\\sqrt{3}$.\n\nAt $x=\\sqrt{3}$: $\\dfrac{d^2y}{dx^2}=-2-2=-4<0$, so the stationary point is a **maximum**.\nA1: correct value or sign with conclusion.\n\n**(d)** At $x=1$: $y=6\\ln1-1=-1$ and $\\dfrac{dy}{dx}=6-2=4$.\nB1: $y=-1$. M1: gradient $4$ used in $y-y_1=m(x-x_1)$.\n\n$y+1=4(x-1)\\implies y=4x-5$.\nA1: $y=4x-5$.",
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q15",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The result $\\dfrac{d}{dx}(\\sin x)=\\cos x$ is only true when $x$ is measured in radians.\n\n(a) Use the fact that $x^\\circ=\\dfrac{\\pi x}{180}$ radians to show that\n$$\\frac{d}{dx}\\left(\\sin x^\\circ\\right)=\\frac{\\pi}{180}\\cos x^\\circ$$\n\n(b) Hence find the gradient of $y=\\sin x^\\circ$ at $x=60$, to 3 significant figures.\n\n(c) Using the graph of $y=\\sin x^\\circ$ for $0\\le x\\le360$, explain why its gradient at the origin is so much smaller than $1$, the gradient of $y=\\sin x$ ($x$ in radians) at the origin.",
+  "hint": "Write $\\sin x^\\circ=\\sin\\left(kx\\right)$ in radians, where $k$ is a constant. Then use $\\frac{d}{dx}\\sin kx=k\\cos kx$.",
+  "answer": "(a) $\\sin x^\\circ=\\sin\\left(\\frac{\\pi}{180}x\\right)$, so the derivative is $\\frac{\\pi}{180}\\cos\\left(\\frac{\\pi}{180}x\\right)=\\frac{\\pi}{180}\\cos x^\\circ$ (b) $\\frac{\\pi}{360}\\approx0.00873$ (c) The degree graph is stretched horizontally by a factor of $\\frac{180}{\\pi}\\approx57.3$, so all gradients are divided by $57.3$.",
+  "solution": "**(a)** $x$ degrees is $\\frac{\\pi x}{180}$ radians, so in radian terms\n$$\\sin x^\\circ=\\sin\\left(\\frac{\\pi}{180}x\\right)$$\nThis is $\\sin kx$ with the constant $k=\\frac{\\pi}{180}$, so\n$$\\frac{d}{dx}\\left(\\sin x^\\circ\\right)=\\frac{\\pi}{180}\\cos\\left(\\frac{\\pi}{180}x\\right)=\\frac{\\pi}{180}\\cos x^\\circ$$\n\n**(b)** At $x=60$: $\\dfrac{\\pi}{180}\\cos60^\\circ=\\dfrac{\\pi}{180}\\times\\dfrac{1}{2}=\\dfrac{\\pi}{360}\\approx0.00873$.\n\n**(c)** In degrees, one complete cycle of $\\sin$ takes $360$ units along the $x$-axis instead of $2\\pi\\approx6.28$. The graph of $y=\\sin x^\\circ$ is the graph of $y=\\sin x$ stretched horizontally by scale factor $\\frac{360}{2\\pi}=\\frac{180}{\\pi}\\approx57.3$, while the heights stay between $-1$ and $1$. A horizontal stretch by factor $57.3$ divides every gradient by $57.3$, so the gradient at the origin is $\\frac{\\pi}{180}\\approx0.0175$, not $1$.\n\nThis is why calculus with trig functions always uses radians: only then is the derivative of $\\sin x$ exactly $\\cos x$, with no extra constant.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-radians-unit-circle",
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q16",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A particle moves along a straight line. Its displacement from a fixed point $O$ at time $t$ seconds is $s$ metres, where\n$$s=2\\sin3t+4\\cos3t$$\n\n(a) Find expressions for the velocity $v$ and the acceleration $a$ of the particle at time $t$.\n\n(b) Show that $a=-9s$ for all $t$.\n\n(c) Find the initial velocity and the initial acceleration of the particle.\n\n(d) Find the first time $t>0$ at which the particle is instantaneously at rest, giving your answer to 3 significant figures.",
+  "hint": "$v=\\frac{ds}{dt}$ and $a=\\frac{dv}{dt}$. Watch the sign when differentiating $\\cos3t$. For (d), $v=0$ gives an equation you can write in terms of $\\tan3t$.",
+  "answer": "(a) $v=6\\cos3t-12\\sin3t$, $a=-18\\sin3t-36\\cos3t$ (b) $a=-9(2\\sin3t+4\\cos3t)=-9s$ (c) $6\\ \\text{m s}^{-1}$, $-36\\ \\text{m s}^{-2}$ (d) $t=\\frac{1}{3}\\arctan\\frac{1}{2}\\approx0.155$ s",
+  "solution": "**(a)**\n$$v=\\frac{ds}{dt}=2(3\\cos3t)+4(-3\\sin3t)=6\\cos3t-12\\sin3t$$\n$$a=\\frac{dv}{dt}=6(-3\\sin3t)-12(3\\cos3t)=-18\\sin3t-36\\cos3t$$\n\n**(b)**\n$$a=-18\\sin3t-36\\cos3t=-9(2\\sin3t+4\\cos3t)=-9s$$\n(The acceleration is always directed towards $O$ and proportional to the distance from $O$ – simple harmonic motion.)\n\n**(c)** At $t=0$: $v=6\\cos0-12\\sin0=6\\ \\text{m s}^{-1}$ and $a=-18(0)-36(1)=-36\\ \\text{m s}^{-2}$.\n\n**(d)** $v=0\\implies6\\cos3t=12\\sin3t\\implies\\tan3t=\\dfrac{1}{2}$.\n\nThe smallest positive solution has $3t=\\arctan\\frac{1}{2}=0.4636\\ldots$ (radians), so\n$$t=\\frac{1}{3}\\arctan\\frac{1}{2}\\approx0.155\\text{ s}$$",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "mech-variable-acceleration",
+   "pure-trig-identities-equations"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q17",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "In this question $x$ is in radians. You may use the small-angle approximations $\\sin h\\approx h$ and $\\cos h\\approx1-\\dfrac{h^2}{2}$ for small $h$, and the identity $\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B$.\n\n(a) Prove from first principles that $\\dfrac{d}{dx}(\\sin x)=\\cos x$.\n\n(b) Using $\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B$, prove from first principles that $\\dfrac{d}{dx}(\\cos x)=-\\sin x$, and explain where the minus sign comes from.",
+  "hint": "Start from $\\dfrac{\\sin(x+h)-\\sin x}{h}$, expand, and group the terms in $\\sin x$ and in $\\cos x$. What happens to $\\dfrac{\\cos h-1}{h}$ and $\\dfrac{\\sin h}{h}$ as $h\\to0$?",
+  "answer": "(a) $\\dfrac{\\sin(x+h)-\\sin x}{h}=\\sin x\\dfrac{\\cos h-1}{h}+\\cos x\\dfrac{\\sin h}{h}\\to\\sin x\\cdot0+\\cos x\\cdot1=\\cos x$ (b) $\\dfrac{\\cos(x+h)-\\cos x}{h}=\\cos x\\dfrac{\\cos h-1}{h}-\\sin x\\dfrac{\\sin h}{h}\\to-\\sin x$; the minus sign comes from the $-\\sin A\\sin B$ term in the compound-angle formula.",
+  "solution": "**(a)** By definition,\n$$\\frac{d}{dx}(\\sin x)=\\lim_{h\\to0}\\frac{\\sin(x+h)-\\sin x}{h}$$\n\nExpand with the compound-angle formula:\n$$\\frac{\\sin x\\cos h+\\cos x\\sin h-\\sin x}{h}=\\sin x\\left(\\frac{\\cos h-1}{h}\\right)+\\cos x\\left(\\frac{\\sin h}{h}\\right)$$\n\nFor small $h$ (in radians):\n$$\\frac{\\cos h-1}{h}\\approx\\frac{-\\tfrac{1}{2}h^2}{h}=-\\frac{h}{2}\\to0,\\qquad\\frac{\\sin h}{h}\\approx\\frac{h}{h}=1$$\n\nSo as $h\\to0$ the expression tends to $\\sin x\\times0+\\cos x\\times1=\\cos x$:\n$$\\frac{d}{dx}(\\sin x)=\\cos x\\qquad\\blacksquare$$\n\n**(b)**\n$$\\frac{\\cos(x+h)-\\cos x}{h}=\\frac{\\cos x\\cos h-\\sin x\\sin h-\\cos x}{h}=\\cos x\\left(\\frac{\\cos h-1}{h}\\right)-\\sin x\\left(\\frac{\\sin h}{h}\\right)$$\n\nAs $h\\to0$ this tends to $\\cos x\\times0-\\sin x\\times1=-\\sin x$:\n$$\\frac{d}{dx}(\\cos x)=-\\sin x\\qquad\\blacksquare$$\n\nThe minus sign comes directly from the $-\\sin A\\sin B$ term in the expansion of $\\cos(A+B)$; in the $\\sin(A+B)$ expansion every term is positive. (The small-angle approximations hold only in radians, which is why these results need radians.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "calc-first-principles",
+   "pure-trig-compound-angles",
+   "pure-radians-unit-circle"
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig-q18",
+  "topicId": "calc-derivatives-exp-log-trig",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The diagram shows the curve $y=\\ln x$ and a line $y=kx$ through the origin, where $k$ is a constant.\n\n(a) Find the value of $k$ for which the line $y=kx$ is a tangent to the curve $y=\\ln x$, and the coordinates of the point of contact.\n\n(b) Find the set of values of $k$ for which the equation $\\ln x=kx$ has exactly two real solutions. Justify your answer.",
+  "hint": "(a) At the point of contact $(a,\\ln a)$, the curve and the line have the same $y$-value **and** the same gradient. (b) Consider $g(x)=\\ln x-kx$ for $k>0$ and find its maximum value.",
+  "answer": "(a) $k=\\dfrac{1}{e}$, touching at $(e,\\,1)$ (b) $0<k<\\dfrac{1}{e}$",
+  "solution": "**(a)** Suppose the line touches the curve at $(a,\\ln a)$, $a>0$.\n\nSame gradient: $\\dfrac{d}{dx}(\\ln x)=\\dfrac{1}{x}$, so $k=\\dfrac{1}{a}$.\n\nSame $y$-value: $ka=\\ln a\\implies\\dfrac{1}{a}\\times a=\\ln a\\implies\\ln a=1\\implies a=e$.\n\nSo $k=\\dfrac{1}{e}$ and the point of contact is $(e,1)$.\n\n**(b)** If $k\\le0$: $\\ln x$ is increasing and $kx$ is constant or decreasing for $x>0$, so the graphs cross at most once – never two solutions.\n\nIf $k>0$: let $g(x)=\\ln x-kx$ for $x>0$. Then\n$$g'(x)=\\frac{1}{x}-k=0\\implies x=\\frac{1}{k},\\qquad g''(x)=-\\frac{1}{x^2}<0$$\nso $g$ increases on $\\left(0,\\frac{1}{k}\\right)$, decreases after, and has maximum value\n$$g\\left(\\frac{1}{k}\\right)=\\ln\\frac{1}{k}-1=-\\ln k-1$$\n\nAlso $g(x)\\to-\\infty$ as $x\\to0^+$ (since $\\ln x\\to-\\infty$) and as $x\\to\\infty$ (since $kx$ eventually outgrows $\\ln x$).\n\nSo $g(x)=0$ has two solutions exactly when the maximum is positive:\n$$-\\ln k-1>0\\iff\\ln k<-1\\iff k<\\frac{1}{e}$$\n\n(If $k=\\frac{1}{e}$ the maximum is $0$: one solution, the tangency in (a). If $k>\\frac{1}{e}$: no solutions.)\n\nAnswer: $0<k<\\dfrac{1}{e}$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" width=\"330\" height=\"240\"><line x1=\"15\" y1=\"126\" x2=\"316\" y2=\"126\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"41\" y1=\"220\" x2=\"41\" y2=\"9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M316,126 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M41,9 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"316\" y=\"119\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"48\" y=\"18\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"84.4\" y1=\"123\" x2=\"84.4\" y2=\"129\" stroke=\"currentColor\"/><text x=\"84.4\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"127.8\" y1=\"123\" x2=\"127.8\" y2=\"129\" stroke=\"currentColor\"/><text x=\"127.8\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"171.2\" y1=\"123\" x2=\"171.2\" y2=\"129\" stroke=\"currentColor\"/><text x=\"171.2\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"214.6\" y1=\"123\" x2=\"214.6\" y2=\"129\" stroke=\"currentColor\"/><text x=\"214.6\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"257.9\" y1=\"123\" x2=\"257.9\" y2=\"129\" stroke=\"currentColor\"/><text x=\"257.9\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"301.3\" y1=\"123\" x2=\"301.3\" y2=\"129\" stroke=\"currentColor\"/><text x=\"301.3\" y=\"141\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"38\" y1=\"211.5\" x2=\"44\" y2=\"211.5\" stroke=\"currentColor\"/><text x=\"35\" y=\"215.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"38\" y1=\"168.7\" x2=\"44\" y2=\"168.7\" stroke=\"currentColor\"/><text x=\"35\" y=\"172.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"38\" y1=\"83.3\" x2=\"44\" y2=\"83.3\" stroke=\"currentColor\"/><text x=\"35\" y=\"87.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"38\" y1=\"40.6\" x2=\"44\" y2=\"40.6\" stroke=\"currentColor\"/><text x=\"35\" y=\"44.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"35\" y=\"140\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M46,218.5 L46.6,213.3 L47.3,208.7 L47.9,204.6 L48.6,200.8 L49.2,197.3 L49.8,194.1 L50.5,191.1 L51.1,188.3 L51.8,185.7 L52.4,183.2 L53,180.9 L53.7,178.7 L54.3,176.5 L55,174.5 L55.6,172.6 L56.2,170.8 L56.9,169 L57.5,167.3 L58.2,165.7 L58.8,164.1 L59.4,162.6 L60.1,161.2 L60.7,159.8 L61.4,158.4 L62,157.1 L62.6,155.8 L63.3,154.5 L63.9,153.3 L64.6,152.2 L65.2,151 L65.8,149.9 L66.5,148.8 L67.1,147.8 L67.8,146.7 L68.4,145.7 L69,144.7 L69.7,143.8 L70.3,142.8 L71,141.9 L71.6,141 L72.2,140.1 L72.9,139.2 L73.5,138.4 L74.2,137.6 L74.8,136.7 L75.4,135.9 L76.1,135.1 L76.7,134.4 L77.4,133.6 L78,132.9 L78.6,132.1 L79.3,131.4 L79.9,130.7 L80.6,130 L81.2,129.3 L81.8,128.7 L82.5,128 L83.1,127.3 L83.8,126.7 L84.4,126.1 L85,125.4 L85.7,124.8 L86.3,124.2 L87,123.6 L87.6,123 L88.2,122.4 L88.9,121.9 L89.5,121.3 L90.2,120.7 L90.8,120.2 L91.4,119.6 L92.1,119.1 L92.7,118.6 L93.4,118 L94,117.5 L94.6,117 L95.3,116.5 L95.9,116 L96.6,115.5 L97.2,115 L97.8,114.5 L98.5,114 L99.1,113.6 L99.8,113.1 L100.4,112.6 L101,112.2 L101.7,111.7 L102.3,111.3 L103,110.8 L103.6,110.4 L104.2,110 L104.9,109.5 L105.5,109.1 L106.2,108.7 L106.8,108.3 L107.4,107.9 L108.1,107.4 L108.7,107 L109.4,106.6 L110,106.2 L110.6,105.8 L111.3,105.5 L111.9,105.1 L112.6,104.7 L113.2,104.3 L113.8,103.9 L114.5,103.6 L115.1,103.2 L115.8,102.8 L116.4,102.5 L117,102.1 L117.7,101.7 L118.3,101.4 L119,101 L119.6,100.7 L120.2,100.3 L120.9,100 L121.5,99.6 L122.2,99.3 L122.8,99 L123.4,98.6 L124.1,98.3 L124.7,98 L125.4,97.7 L126,97.3 L126.6,97 L127.3,96.7 L127.9,96.4 L128.6,96.1 L129.2,95.8 L129.8,95.4 L130.5,95.1 L131.1,94.8 L131.8,94.5 L132.4,94.2 L133,93.9 L133.7,93.6 L134.3,93.3 L135,93.1 L135.6,92.8 L136.2,92.5 L136.9,92.2 L137.5,91.9 L138.2,91.6 L138.8,91.3 L139.4,91.1 L140.1,90.8 L140.7,90.5 L141.4,90.2 L142,90 L142.6,89.7 L143.3,89.4 L143.9,89.2 L144.6,88.9 L145.2,88.6 L145.8,88.4 L146.5,88.1 L147.1,87.9 L147.8,87.6 L148.4,87.3 L149,87.1 L149.7,86.8 L150.3,86.6 L150.9,86.3 L151.6,86.1 L152.2,85.8 L152.9,85.6 L153.5,85.4 L154.1,85.1 L154.8,84.9 L155.4,84.6 L156.1,84.4 L156.7,84.2 L157.3,83.9 L158,83.7 L158.6,83.5 L159.3,83.2 L159.9,83 L160.5,82.8 L161.2,82.5 L161.8,82.3 L162.5,82.1 L163.1,81.9 L163.7,81.6 L164.4,81.4 L165,81.2 L165.7,81 L166.3,80.8 L166.9,80.5 L167.6,80.3 L168.2,80.1 L168.9,79.9 L169.5,79.7 L170.1,79.5 L170.8,79.3 L171.4,79 L172.1,78.8 L172.7,78.6 L173.3,78.4 L174,78.2 L174.6,78 L175.3,77.8 L175.9,77.6 L176.5,77.4 L177.2,77.2 L177.8,77 L178.5,76.8 L179.1,76.6 L179.7,76.4 L180.4,76.2 L181,76 L181.7,75.8 L182.3,75.6 L182.9,75.4 L183.6,75.2 L184.2,75 L184.9,74.9 L185.5,74.7 L186.1,74.5 L186.8,74.3 L187.4,74.1 L188.1,73.9 L188.7,73.7 L189.3,73.5 L190,73.4 L190.6,73.2 L191.3,73 L191.9,72.8 L192.5,72.6 L193.2,72.4 L193.8,72.3 L194.5,72.1 L195.1,71.9 L195.7,71.7 L196.4,71.6 L197,71.4 L197.7,71.2 L198.3,71 L198.9,70.9 L199.6,70.7 L200.2,70.5 L200.9,70.3 L201.5,70.2 L202.1,70 L202.8,69.8 L203.4,69.7 L204.1,69.5 L204.7,69.3 L205.3,69.2 L206,69 L206.6,68.8 L207.3,68.7 L207.9,68.5 L208.5,68.3 L209.2,68.2 L209.8,68 L210.5,67.9 L211.1,67.7 L211.7,67.5 L212.4,67.4 L213,67.2 L213.7,67.1 L214.3,66.9 L214.9,66.7 L215.6,66.6 L216.2,66.4 L216.9,66.3 L217.5,66.1 L218.1,66 L218.8,65.8 L219.4,65.7 L220.1,65.5 L220.7,65.4 L221.3,65.2 L222,65 L222.6,64.9 L223.3,64.7 L223.9,64.6 L224.5,64.4 L225.2,64.3 L225.8,64.2 L226.5,64 L227.1,63.9 L227.7,63.7 L228.4,63.6 L229,63.4 L229.7,63.3 L230.3,63.1 L230.9,63 L231.6,62.8 L232.2,62.7 L232.9,62.6 L233.5,62.4 L234.1,62.3 L234.8,62.1 L235.4,62 L236.1,61.8 L236.7,61.7 L237.3,61.6 L238,61.4 L238.6,61.3 L239.3,61.2 L239.9,61 L240.5,60.9 L241.2,60.7 L241.8,60.6 L242.5,60.5 L243.1,60.3 L243.7,60.2 L244.4,60.1 L245,59.9 L245.7,59.8 L246.3,59.7 L246.9,59.5 L247.6,59.4 L248.2,59.3 L248.9,59.1 L249.5,59 L250.1,58.9 L250.8,58.7 L251.4,58.6 L252.1,58.5 L252.7,58.4 L253.3,58.2 L254,58.1 L254.6,58 L255.3,57.8 L255.9,57.7 L256.5,57.6 L257.2,57.5 L257.8,57.3 L258.5,57.2 L259.1,57.1 L259.7,57 L260.4,56.8 L261,56.7 L261.7,56.6 L262.3,56.5 L262.9,56.3 L263.6,56.2 L264.2,56.1 L264.8,56 L265.5,55.8 L266.1,55.7 L266.8,55.6 L267.4,55.5 L268,55.4 L268.7,55.2 L269.3,55.1 L270,55 L270.6,54.9 L271.2,54.8 L271.9,54.6 L272.5,54.5 L273.2,54.4 L273.8,54.3 L274.4,54.2 L275.1,54.1 L275.7,53.9 L276.4,53.8 L277,53.7 L277.6,53.6 L278.3,53.5 L278.9,53.4 L279.6,53.2 L280.2,53.1 L280.8,53 L281.5,52.9 L282.1,52.8 L282.8,52.7 L283.4,52.6 L284,52.5 L284.7,52.3 L285.3,52.2 L286,52.1 L286.6,52 L287.2,51.9 L287.9,51.8 L288.5,51.7 L289.2,51.6 L289.8,51.5 L290.4,51.3 L291.1,51.2 L291.7,51.1 L292.4,51 L293,50.9 L293.6,50.8 L294.3,50.7 L294.9,50.6 L295.6,50.5 L296.2,50.4 L296.8,50.3 L297.5,50.2 L298.1,50 L298.8,49.9 L299.4,49.8 L300,49.7 L300.7,49.6 L301.3,49.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M19.3,131.4 L301.3,62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-dasharray=\"5 4\"/><text x=\"227.6\" y=\"49.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = ln x</text><text x=\"293\" y=\"83\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = kx</text></svg>",
+  "linkedTopicIds": []
+ }
+]

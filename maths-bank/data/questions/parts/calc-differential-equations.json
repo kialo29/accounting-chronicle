@@ -237,7 +237,7 @@
   "question": "Find the particular solution of the differential equation\n$$\\frac{dy}{dx} = xy\\cos x, \\qquad y > 0$$\nfor which $y = 2$ when $x = 0$. Hence find the exact value of $y$ when $x = \\frac{\\pi}{2}$.",
   "hint": "After separating, the $x$-integral $\\int x\\cos x\\,dx$ needs integration by parts.",
   "answer": "$y = 2e^{x\\sin x + \\cos x - 1}$; when $x = \\frac{\\pi}{2}$, $y = 2e^{\\frac{\\pi}{2} - 1}$",
-  "solution": "Separate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int x\\cos x\\,dx$$\n\nIntegrate by parts with $u = x$, $\\frac{dv}{dx} = \\cos x$, so $\\frac{du}{dx} = 1$, $v = \\sin x$:\n$$\\int x\\cos x\\,dx = x\\sin x - \\int \\sin x\\,dx = x\\sin x + \\cos x$$\n\nSo\n$$\\ln y = x\\sin x + \\cos x + c$$\n\nWhen $x = 0$, $y = 2$: $\\ln 2 = 0 + 1 + c$, so $c = \\ln 2 - 1$.\n$$\\ln y = x\\sin x + \\cos x - 1 + \\ln 2$$\n\n$$y = e^{\\ln 2}\\, e^{x\\sin x + \\cos x - 1} = 2e^{x\\sin x + \\cos x - 1}$$\n\nWhen $x = \\frac{\\pi}{2}$: $x\\sin x = \\frac{\\pi}{2}$ and $\\cos x = 0$, so\n$$y = 2e^{\\frac{\\pi}{2} - 1} \\approx 3.43$$",
+  "solution": "Separate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int x\\cos x\\,dx$$\n\nIntegrate by parts with $u = x$, $\\frac{dv}{dx} = \\cos x$, so $\\frac{du}{dx} = 1$, $v = \\sin x$:\n$$\\int x\\cos x\\,dx = x\\sin x - \\int \\sin x\\,dx = x\\sin x + \\cos x$$\n\nSo\n$$\\ln y = x\\sin x + \\cos x + c$$\n\nWhen $x = 0$, $y = 2$: $\\ln 2 = 0 + 1 + c$, so $c = \\ln 2 - 1$.\n$$\\ln y = x\\sin x + \\cos x - 1 + \\ln 2$$\n\n$$y = e^{\\ln 2}\\, e^{x\\sin x + \\cos x - 1} = 2e^{x\\sin x + \\cos x - 1}$$\n\nWhen $x = \\frac{\\pi}{2}$: $x\\sin x = \\frac{\\pi}{2}$ and $\\cos x = 0$, so\n$$y = 2e^{\\frac{\\pi}{2} - 1} \\approx 3.54$$",
   "linkedTopicIds": [
    "calc-integration-by-parts"
   ]

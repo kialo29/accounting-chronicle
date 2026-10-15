@@ -1,0 +1,366 @@
+[
+ {
+  "id": "calc-implicit-differentiation-q01",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$ for the curve $x^2+y^2=20$.",
+  "hint": "Differentiate each term with respect to $x$. Since $y$ is a function of $x$, $\\frac{d}{dx}(y^2)=2y\\frac{dy}{dx}$.",
+  "answer": "$\\dfrac{dy}{dx}=-\\dfrac{x}{y}$",
+  "solution": "Differentiate every term with respect to $x$:\n$$2x+2y\\frac{dy}{dx}=0$$\n(the constant $20$ differentiates to $0$; $y^2$ needs the chain rule).\n\n$$\\frac{dy}{dx}=-\\frac{2x}{2y}=-\\frac{x}{y}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q02",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$ for the curve $x^2+y^3=20$.",
+  "hint": "Only the $y$ term has changed. What is $\\frac{d}{dx}(y^3)$?",
+  "answer": "$\\dfrac{dy}{dx}=-\\dfrac{2x}{3y^2}$",
+  "solution": "**What changed:** $y^2$ became $y^3$.\n\n$$2x+3y^2\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{2x}{3y^2}$$\n\nThe $x$ term is unchanged; only the $y$-part of the denominator changes, from $2y$ to $3y^2$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q03",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$ for the curve $x^2+xy+y^3=20$.",
+  "hint": "The new term $xy$ is a product of $x$ and $y$, so it needs the product rule.",
+  "answer": "$\\dfrac{dy}{dx}=-\\dfrac{2x+y}{x+3y^2}$",
+  "solution": "**What changed:** a mixed term $xy$ has been added.\n\nProduct rule: $\\frac{d}{dx}(xy)=x\\frac{dy}{dx}+y$.\n$$2x+x\\frac{dy}{dx}+y+3y^2\\frac{dy}{dx}=0$$\n\nCollect the $\\frac{dy}{dx}$ terms:\n$$(x+3y^2)\\frac{dy}{dx}=-(2x+y)\\implies\\frac{dy}{dx}=-\\frac{2x+y}{x+3y^2}$$\n\nThe mixed term puts a $y$ in the numerator **and** an $x$ in the denominator.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q04",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$ for the curve $x^2+xy^2+y^3=20$.",
+  "hint": "Product rule on $x\\cdot y^2$, and the chain rule on the $y^2$ inside it.",
+  "answer": "$\\dfrac{dy}{dx}=-\\dfrac{2x+y^2}{2xy+3y^2}$",
+  "solution": "**What changed:** the mixed term is now $xy^2$ instead of $xy$.\n\n$$\\frac{d}{dx}(xy^2)=x\\cdot2y\\frac{dy}{dx}+y^2\\cdot1$$\n\nSo\n$$2x+2xy\\frac{dy}{dx}+y^2+3y^2\\frac{dy}{dx}=0$$\n$$(2xy+3y^2)\\frac{dy}{dx}=-(2x+y^2)\\implies\\frac{dy}{dx}=-\\frac{2x+y^2}{2xy+3y^2}$$",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q05",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The point $(2,0)$ lies on the curve $x^2+e^y=5$. Find the gradient of the curve at this point.",
+  "hint": "$\\frac{d}{dx}(e^y)=e^y\\frac{dy}{dx}$. Substitute both coordinates at the end.",
+  "answer": "$-4$",
+  "solution": "Check: $4+e^0=5$ ✓.\n\nDifferentiate with respect to $x$:\n$$2x+e^y\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{2x}{e^y}$$\n\nAt $(2,0)$:\n$$\\frac{dy}{dx}=-\\frac{4}{e^0}=-4$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q06",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ava is asked to find the gradient of the curve $x^2+3y^2+4y=21$ at the point $(1,2)$. Her working is shown below.\n\n$$\\begin{aligned}2x+6y+4\\frac{dy}{dx}&=0\\\\\\frac{dy}{dx}&=-\\frac{2x+6y}{4}\\\\\\text{At }(1,2):\\ \\frac{dy}{dx}&=-\\frac{2+12}{4}=-\\frac72\\end{aligned}$$\n\nIdentify the error in Ava's working, explain why it is wrong, and find the correct gradient.",
+  "hint": "Ava remembered $\\frac{dy}{dx}$ on one of the $y$ terms. Should the other $y$ term have one too?",
+  "answer": "$\\dfrac{d}{dx}(3y^2)$ should be $6y\\dfrac{dy}{dx}$, not $6y$. Correct gradient: $-\\dfrac18$",
+  "solution": "In the first line Ava differentiated $3y^2$ as $6y$, as if $y$ were $x$. Because $y$ is a function of $x$, the chain rule gives\n$$\\frac{d}{dx}(3y^2)=6y\\frac{dy}{dx}$$\n(She correctly wrote $4\\frac{dy}{dx}$ for $4y$ – every $y$ term needs the factor $\\frac{dy}{dx}$.)\n\nCorrect working:\n$$2x+6y\\frac{dy}{dx}+4\\frac{dy}{dx}=0\\implies(6y+4)\\frac{dy}{dx}=-2x\\implies\\frac{dy}{dx}=-\\frac{2x}{6y+4}$$\n\nAt $(1,2)$:\n$$\\frac{dy}{dx}=-\\frac{2}{16}=-\\frac18$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q07",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to find the equation of the tangent to the curve $2x^2-xy+y^2=8$ at the point $(2,2)$. His working is shown below.\n\n$$\\begin{aligned}4x-x\\frac{dy}{dx}+2y\\frac{dy}{dx}&=0\\\\(2y-x)\\frac{dy}{dx}&=-4x\\\\\\frac{dy}{dx}&=\\frac{-4x}{2y-x}\\\\\\text{At }(2,2):\\ \\frac{dy}{dx}&=\\frac{-8}{2}=-4\\end{aligned}$$\n\nTangent: $y-2=-4(x-2)$, so $y=-4x+10$.\n\nIdentify the error in Ben's working, explain it, and find the correct equation of the tangent.",
+  "hint": "Look at how Ben differentiated $-xy$. It is a product of two functions of $x$.",
+  "answer": "Ben differentiated $-xy$ as $-x\\dfrac{dy}{dx}$, missing the $-y$ term from the product rule. Correct tangent: $y=-3x+8$",
+  "solution": "Ben's first line is wrong: $xy$ is a product of $x$ and $y$, so the product rule gives\n$$\\frac{d}{dx}(xy)=x\\frac{dy}{dx}+y\\cdot1$$\nand therefore $\\frac{d}{dx}(-xy)=-x\\frac{dy}{dx}-y$. Ben left out the $-y$.\n\nCorrect working:\n$$4x-x\\frac{dy}{dx}-y+2y\\frac{dy}{dx}=0\\implies(2y-x)\\frac{dy}{dx}=y-4x\\implies\\frac{dy}{dx}=\\frac{y-4x}{2y-x}$$\n\nAt $(2,2)$ (check: $8-4+4=8$ ✓):\n$$\\frac{dy}{dx}=\\frac{2-8}{4-2}=-3$$\n\nTangent: $y-2=-3(x-2)$, i.e. $y=-3x+8$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q08",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is asked to find $\\dfrac{d^2y}{dx^2}$ at the point $(4,4)$ on the curve $y^2=4x$. Her working is shown below.\n\n$$\\begin{aligned}2y\\frac{dy}{dx}&=4\\implies\\frac{dy}{dx}=\\frac2y=2y^{-1}\\\\\\frac{d^2y}{dx^2}&=-2y^{-2}=-\\frac{2}{y^2}\\\\\\text{At }(4,4):\\ \\frac{d^2y}{dx^2}&=-\\frac{2}{16}=-\\frac18\\end{aligned}$$\n\nIdentify the error in Chloe's working, explain it, and find the correct value.",
+  "hint": "When Chloe differentiates $2y^{-1}$ with respect to $x$, is $y$ a constant?",
+  "answer": "Chloe treated $y$ as a variable but forgot the chain-rule factor $\\dfrac{dy}{dx}$: $\\dfrac{d^2y}{dx^2}=-\\dfrac{2}{y^2}\\cdot\\dfrac{dy}{dx}=-\\dfrac{4}{y^3}$. Correct value: $-\\dfrac{1}{16}$",
+  "solution": "Her first derivative, $\\frac{dy}{dx}=2y^{-1}$, is correct. The error is in the second line: she differentiated $2y^{-1}$ as if she were differentiating with respect to $y$. We are differentiating with respect to $x$, and $y$ depends on $x$, so the chain rule is needed:\n$$\\frac{d^2y}{dx^2}=\\frac{d}{dx}\\left(2y^{-1}\\right)=-2y^{-2}\\cdot\\frac{dy}{dx}$$\n\nSubstitute $\\frac{dy}{dx}=\\frac{2}{y}$:\n$$\\frac{d^2y}{dx^2}=-\\frac{2}{y^2}\\cdot\\frac{2}{y}=-\\frac{4}{y^3}$$\n\nAt $(4,4)$:\n$$\\frac{d^2y}{dx^2}=-\\frac{4}{64}=-\\frac{1}{16}$$\n\n**Check** using the explicit form for $y>0$: $y=2x^{\\frac12}$, $\\frac{d^2y}{dx^2}=-\\frac12x^{-\\frac32}=-\\frac12\\times\\frac18=-\\frac1{16}$ ✓.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q09",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows the curve $x^2+xy+y^2=12$.\n\nDan is asked to find the coordinates of the points on the curve where the tangent is horizontal. His working is shown below.\n\n$$2x+x\\frac{dy}{dx}+y+2y\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{2x+y}{x+2y}$$\n\n\"Horizontal tangent, so $x+2y=0$, i.e. $x=-2y$. Substituting: $4y^2-2y^2+y^2=12$, so $y^2=4$, $y=\\pm2$. The points are $(-4,2)$ and $(4,-2)$.\"\n\nIdentify the error in Dan's working, explain it, and find the correct points.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\" width=\"320\" height=\"300\"><line x1=\"11.6\" y1=\"150.0\" x2=\"308.4\" y2=\"150.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"160.0\" y1=\"290.0\" x2=\"160.0\" y2=\"10.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"308.4,150.0 300.4,146.0 300.4,154.0\" fill=\"currentColor\"/><polygon points=\"160.0,10.0 156.0,18.0 164.0,18.0\" fill=\"currentColor\"/><text x=\"304.4\" y=\"168.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"168.0\" y=\"20.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"146.0\" y=\"166.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"216.0,94.0 218.5,96.6 221.0,99.2 223.4,101.8 225.8,104.4 228.2,107.1 230.5,109.9 232.7,112.6 234.9,115.4 237.1,118.2 239.2,121.0 241.2,123.9 243.2,126.7 245.2,129.6 247.0,132.5 248.9,135.4 250.6,138.3 252.3,141.2 253.9,144.1 255.5,147.1 257.0,150.0 258.4,152.9 259.8,155.9 261.1,158.8 262.3,161.7 263.5,164.6 264.6,167.5 265.6,170.4 266.5,173.3 267.4,176.1 268.2,179.0 268.9,181.8 269.6,184.6 270.1,187.4 270.6,190.1 271.0,192.9 271.4,195.6 271.7,198.2 271.8,200.8 272.0,203.4 272.0,206.0 272.0,208.5 271.8,211.0 271.7,213.4 271.4,215.8 271.0,218.2 270.6,220.5 270.1,222.7 269.6,224.9 268.9,227.1 268.2,229.2 267.4,231.2 266.5,233.2 265.6,235.2 264.6,237.0 263.5,238.9 262.3,240.6 261.1,242.3 259.8,243.9 258.4,245.5 257.0,247.0 255.5,248.4 253.9,249.8 252.3,251.1 250.6,252.3 248.9,253.5 247.0,254.6 245.2,255.6 243.2,256.5 241.2,257.4 239.2,258.2 237.1,258.9 234.9,259.6 232.7,260.1 230.5,260.6 228.2,261.0 225.8,261.4 223.4,261.7 221.0,261.8 218.5,262.0 216.0,262.0 213.4,262.0 210.8,261.8 208.2,261.7 205.6,261.4 202.9,261.0 200.1,260.6 197.4,260.1 194.6,259.6 191.8,258.9 189.0,258.2 186.1,257.4 183.3,256.5 180.4,255.6 177.5,254.6 174.6,253.5 171.7,252.3 168.8,251.1 165.9,249.8 162.9,248.4 160.0,247.0 157.1,245.5 154.1,243.9 151.2,242.3 148.3,240.6 145.4,238.9 142.5,237.0 139.6,235.2 136.7,233.2 133.9,231.2 131.0,229.2 128.2,227.1 125.4,224.9 122.6,222.7 119.9,220.5 117.1,218.2 114.4,215.8 111.8,213.4 109.2,211.0 106.6,208.5 104.0,206.0 101.5,203.4 99.0,200.8 96.6,198.2 94.2,195.6 91.8,192.9 89.5,190.1 87.3,187.4 85.1,184.6 82.9,181.8 80.8,179.0 78.8,176.1 76.8,173.3 74.8,170.4 73.0,167.5 71.1,164.6 69.4,161.7 67.7,158.8 66.1,155.9 64.5,152.9 63.0,150.0 61.6,147.1 60.2,144.1 58.9,141.2 57.7,138.3 56.5,135.4 55.4,132.5 54.4,129.6 53.5,126.7 52.6,123.9 51.8,121.0 51.1,118.2 50.4,115.4 49.9,112.6 49.4,109.9 49.0,107.1 48.6,104.4 48.3,101.8 48.2,99.2 48.0,96.6 48.0,94.0 48.0,91.5 48.2,89.0 48.3,86.6 48.6,84.2 49.0,81.8 49.4,79.5 49.9,77.3 50.4,75.1 51.1,72.9 51.8,70.8 52.6,68.8 53.5,66.8 54.4,64.8 55.4,63.0 56.5,61.1 57.7,59.4 58.9,57.7 60.2,56.1 61.6,54.5 63.0,53.0 64.5,51.6 66.1,50.2 67.7,48.9 69.4,47.7 71.1,46.5 73.0,45.4 74.8,44.4 76.8,43.5 78.8,42.6 80.8,41.8 82.9,41.1 85.1,40.4 87.3,39.9 89.5,39.4 91.8,39.0 94.2,38.6 96.6,38.3 99.0,38.2 101.5,38.0 104.0,38.0 106.6,38.0 109.2,38.2 111.8,38.3 114.4,38.6 117.1,39.0 119.9,39.4 122.6,39.9 125.4,40.4 128.2,41.1 131.0,41.8 133.9,42.6 136.7,43.5 139.6,44.4 142.5,45.4 145.4,46.5 148.3,47.7 151.2,48.9 154.1,50.2 157.1,51.6 160.0,53.0 162.9,54.5 165.9,56.1 168.8,57.7 171.7,59.4 174.6,61.1 177.5,63.0 180.4,64.8 183.3,66.8 186.1,68.8 189.0,70.8 191.8,72.9 194.6,75.1 197.4,77.3 200.1,79.5 202.9,81.8 205.6,84.2 208.2,86.6 210.8,89.0 213.4,91.5 216.0,94.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"48.0\" y1=\"146.0\" x2=\"48.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"48.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"104.0\" y1=\"146.0\" x2=\"104.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"104.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"216.0\" y1=\"146.0\" x2=\"216.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"216.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"272.0\" y1=\"146.0\" x2=\"272.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"272.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"156.0\" y1=\"262.0\" x2=\"164.0\" y2=\"262.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"152.0\" y=\"267.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"156.0\" y1=\"206.0\" x2=\"164.0\" y2=\"206.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"152.0\" y=\"211.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"156.0\" y1=\"94.0\" x2=\"164.0\" y2=\"94.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"152.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"156.0\" y1=\"38.0\" x2=\"164.0\" y2=\"38.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"152.0\" y=\"43.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text></svg>",
+  "hint": "A horizontal tangent has gradient $0$. Which part of a fraction must be zero for the fraction to be zero?",
+  "answer": "Dan set the denominator to zero (that gives the **vertical** tangents). Horizontal tangents need $2x+y=0$: the points are $(2,-4)$ and $(-2,4)$.",
+  "solution": "Dan's derivative is correct. His error is the condition: a horizontal tangent has $\\frac{dy}{dx}=0$, which happens when the **numerator** is zero. Setting the denominator $x+2y=0$ makes $\\frac{dy}{dx}$ undefined – those are the points with **vertical** tangents. (On the diagram, $(4,-2)$ and $(-4,2)$ are the right-most and left-most points of the curve.)\n\nCorrect working: $2x+y=0$, so $y=-2x$. Substitute into the curve:\n$$x^2+x(-2x)+(-2x)^2=12\\implies x^2-2x^2+4x^2=3x^2=12\\implies x=\\pm2$$\n\n- $x=2$: $y=-4$; check denominator $x+2y=-6\\ne0$ ✓\n- $x=-2$: $y=4$; denominator $6\\ne0$ ✓\n\nHorizontal tangents at $(2,-4)$ and $(-2,4)$ – the lowest and highest points of the curve.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q10",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The point $P(p,q)$ lies on the circle $x^2+y^2=r^2$, where $r>0$.\n\nUse implicit differentiation to prove that the tangent to the circle at $P$ is perpendicular to the radius $OP$, where $O$ is the origin. Make sure your proof covers every point on the circle.",
+  "hint": "Find $\\frac{dy}{dx}$ at $P$ and the gradient of $OP$, and multiply them. Then think about the points where one of these gradients is undefined.",
+  "answer": "Proof: for $p\\ne0$ and $q\\ne0$ the gradients $-\\dfrac pq$ and $\\dfrac qp$ multiply to $-1$; the cases $p=0$ and $q=0$ are checked separately.",
+  "solution": "Differentiate $x^2+y^2=r^2$ with respect to $x$:\n$$2x+2y\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{x}{y}\\quad(y\\ne0)$$\n\n**Case 1: $p\\ne0$ and $q\\ne0$.** Gradient of tangent at $P$: $-\\frac pq$. Gradient of $OP$: $\\frac{q-0}{p-0}=\\frac qp$.\n$$\\left(-\\frac pq\\right)\\times\\frac qp=-1$$\nso the tangent is perpendicular to $OP$.\n\n**Case 2: $q=0$** (so $P=(\\pm r,0)$). From $2x+2y\\frac{dy}{dx}=0$ with $y=0$ and $x=\\pm r\\ne0$, there is no finite value of $\\frac{dy}{dx}$: the tangent is vertical. $OP$ lies along the $x$-axis (horizontal), so they are perpendicular.\n\n**Case 3: $p=0$** (so $P=(0,\\pm r)$). $\\frac{dy}{dx}=-\\frac{0}{\\pm r}=0$: the tangent is horizontal, and $OP$ lies along the $y$-axis (vertical), so again they are perpendicular.\n\nIn every case the tangent at $P$ is perpendicular to $OP$. $\\blacksquare$ (This is the circle theorem \"tangent ⟂ radius\", proved by calculus.)",
+  "linkedTopicIds": [
+   "geo-circle-theorems",
+   "alg-circle-equations"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q11",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The ellipse $E$ has equation $\\dfrac{x^2}{a^2}+\\dfrac{y^2}{b^2}=1$, where $a$ and $b$ are positive constants.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that the tangent to $E$ at the point $(p,q)$ on $E$, where $q\\ne0$, has equation $\\dfrac{px}{a^2}+\\dfrac{qy}{b^2}=1$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the equation of the tangent to $\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1$ at the point $\\left(4,\\dfrac95\\right)$, and the area of the triangle it forms with the coordinate axes."
+   }
+  ],
+  "hint": "(a) Find $\\frac{dy}{dx}$ implicitly, write $y-q=m(x-p)$ and divide through by $b^2$; at the end use the fact that $(p,q)$ satisfies the equation of $E$.",
+  "answer": "(a) Proof – see solution. (b) $4x+5y=25$; area $\\dfrac{125}{8}$",
+  "solution": "**(a)** Differentiate implicitly:\n$$\\frac{2x}{a^2}+\\frac{2y}{b^2}\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{b^2x}{a^2y}$$\n\nAt $(p,q)$ with $q\\ne0$ the gradient is $-\\frac{b^2p}{a^2q}$, so the tangent is\n$$y-q=-\\frac{b^2p}{a^2q}(x-p)$$\n\nMultiply both sides by $\\frac{q}{b^2}$:\n$$\\frac{qy}{b^2}-\\frac{q^2}{b^2}=-\\frac{px}{a^2}+\\frac{p^2}{a^2}\\implies\\frac{px}{a^2}+\\frac{qy}{b^2}=\\frac{p^2}{a^2}+\\frac{q^2}{b^2}$$\n\nSince $(p,q)$ lies on $E$, the right-hand side equals $1$:\n$$\\frac{px}{a^2}+\\frac{qy}{b^2}=1\\qquad\\blacksquare$$\n\n**(b)** Check the point: $\\frac{16}{25}+\\frac{81/25}{9}=\\frac{16}{25}+\\frac{9}{25}=1$ ✓.\n\nWith $a^2=25$, $b^2=9$, $p=4$, $q=\\frac95$:\n$$\\frac{4x}{25}+\\frac{\\frac95y}{9}=1\\implies\\frac{4x}{25}+\\frac{y}{5}=1\\implies4x+5y=25$$\n\nIntercepts: $y=0\\Rightarrow x=\\frac{25}{4}$; $x=0\\Rightarrow y=5$.\n$$\\text{Area}=\\frac12\\times\\frac{25}{4}\\times5=\\frac{125}{8}$$",
+  "linkedTopicIds": [
+   "alg-conic-sections"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q12",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 11,
+  "question": "The curve $C$ has equation\n$$x^2-2xy+4y^2=12.$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Find the coordinates of the points on $C$ at which the tangent is parallel to the $x$-axis.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "The point $P(2,-1)$ lies on $C$. Find an equation of the normal to $C$ at $P$, giving your answer in the form $ax+by+c=0$, where $a$, $b$ and $c$ are integers.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) $-2xy$ needs the product rule. (b) Tangent parallel to the $x$-axis means $\\frac{dy}{dx}=0$. (c) The normal is perpendicular to the tangent.",
+  "answer": "(a) $\\dfrac{dy}{dx}=\\dfrac{y-x}{4y-x}$ (b) $(2,2)$ and $(-2,-2)$ (c) $2x+y-3=0$",
+  "solution": "**(a)** Differentiate with respect to $x$:\n$$2x-\\left(2x\\frac{dy}{dx}+2y\\right)+8y\\frac{dy}{dx}=0$$\n**M1** (implicit differentiation, at least one $y$ term giving $k\\frac{dy}{dx}$) **B1** ($-2x\\frac{dy}{dx}-2y$ from the product rule) **A1** (all correct)\n$$(8y-2x)\\frac{dy}{dx}=2y-2x\\implies\\frac{dy}{dx}=\\frac{y-x}{4y-x}$$\n**A1** (cao, or equivalent)\n\n**(b)** $\\frac{dy}{dx}=0\\Rightarrow y-x=0\\Rightarrow y=x$ **M1** (numerator $=0$)\n\nSubstitute into $C$: $x^2-2x^2+4x^2=12$ **M1**\n$$3x^2=12\\Rightarrow x=\\pm2$$ **A1**\nPoints $(2,2)$ and $(-2,-2)$ **A1** (denominators $4y-x=6$ and $-6$, both non-zero).\n\n**(c)** At $(2,-1)$: $\\frac{dy}{dx}=\\frac{-1-2}{-4-2}=\\frac{-3}{-6}=\\frac12$ **M1**\n\nNormal gradient $=-2$ **M1** (negative reciprocal of their tangent gradient)\n$$y+1=-2(x-2)\\implies y=-2x+3\\implies2x+y-3=0$$ **A1**",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q13",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "Consider the curve given by $y^3-3xy=2$.\n\n(AP Calculus FRQ style – show the work that leads to your answers.)",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{dy}{dx}=\\dfrac{y}{y^2-x}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write an equation for the line tangent to the curve at the point $(1,2)$. Use it to approximate the $y$-coordinate of the point on the curve near $(1,2)$ where $x=1.3$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the value of $\\dfrac{d^2y}{dx^2}$ at the point $(1,2)$. Is the approximation in part (b) an overestimate or an underestimate? Justify your answer.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Is there any point on the curve at which the tangent line is horizontal? Justify your answer.",
+    "marks": 2
+   }
+  ],
+  "hint": "(c) Differentiate $\\frac{y}{y^2-x}$ with the quotient rule, remembering that $y$ depends on $x$, then substitute $x=1$, $y=2$ and $\\frac{dy}{dx}$. (d) What would $y$ have to be?",
+  "answer": "(a) Shown. (b) $y=2+\\dfrac23(x-1)$; $y\\approx2.2$ (c) $\\dfrac{d^2y}{dx^2}=-\\dfrac{4}{27}$; overestimate, since the curve is concave down there. (d) No: $\\dfrac{dy}{dx}=0$ requires $y=0$, but $(x,0)$ gives $0=2$, which is impossible.",
+  "solution": "**(a)** $3y^2\\frac{dy}{dx}-3\\left(x\\frac{dy}{dx}+y\\right)=0$ **1 pt** (implicit differentiation with product rule)\n$$(3y^2-3x)\\frac{dy}{dx}=3y\\implies\\frac{dy}{dx}=\\frac{y}{y^2-x}$$ **1 pt**\n\n**(b)** At $(1,2)$ (check: $8-6=2$ ✓): $\\frac{dy}{dx}=\\frac{2}{4-1}=\\frac23$.\n$$y=2+\\tfrac23(x-1)$$ **1 pt**\nAt $x=1.3$: $y\\approx2+\\frac23(0.3)=2.2$ **1 pt**\n\n**(c)** Quotient rule, with $y$ a function of $x$:\n$$\\frac{d^2y}{dx^2}=\\frac{(y^2-x)\\frac{dy}{dx}-y\\left(2y\\frac{dy}{dx}-1\\right)}{(y^2-x)^2}$$ **1 pt**\nAt $(1,2)$ with $\\frac{dy}{dx}=\\frac23$:\n$$\\frac{d^2y}{dx^2}=\\frac{3\\cdot\\frac23-2\\left(\\frac83-1\\right)}{9}=\\frac{2-\\frac{10}{3}}{9}=-\\frac{4}{27}$$ **1 pt**\nSince $\\frac{d^2y}{dx^2}<0$, the curve is concave down near $(1,2)$, so it lies below its tangent line: the approximation $2.2$ is an **overestimate**. **1 pt**\n\n**(d)** A horizontal tangent needs $\\frac{dy}{dx}=\\frac{y}{y^2-x}=0$, so $y=0$. **1 pt** Substituting $y=0$ into the curve gives $0-0=2$, which is false. So no point on the curve has a horizontal tangent. **1 pt**\n\nCommon error in (c): writing $\\frac{d^2y}{dx^2}=\\frac{-y(-1)}{(y^2-x)^2}$ by treating $y$ as a constant.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals",
+   "calc-concavity-inflection"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q14",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The curve $C$ has equation $x^2-xy+y^2=7$.\n\nFind the exact coordinates of all the points on $C$ at which the normal to $C$ passes through the origin.",
+  "hint": "The normal at $(x,y)$ passes through $O$ exactly when the tangent at $(x,y)$ is perpendicular to the line from $O$ to $(x,y)$. Write that condition using $\\frac{dy}{dx}$ and simplify before substituting into the curve.",
+  "answer": "$(\\sqrt7,\\sqrt7)$, $(-\\sqrt7,-\\sqrt7)$, $\\left(\\dfrac{\\sqrt{21}}{3},-\\dfrac{\\sqrt{21}}{3}\\right)$, $\\left(-\\dfrac{\\sqrt{21}}{3},\\dfrac{\\sqrt{21}}{3}\\right)$",
+  "solution": "Differentiate implicitly:\n$$2x-\\left(x\\frac{dy}{dx}+y\\right)+2y\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=\\frac{y-2x}{2y-x}$$\n\nThe normal at $(x,y)$ passes through $O$ exactly when the tangent there is perpendicular to the vector $\\begin{pmatrix}x\\\\y\\end{pmatrix}$ from $O$. The tangent has direction $\\begin{pmatrix}2y-x\\\\y-2x\\end{pmatrix}$ (this also works where $2y-x=0$ and the tangent is vertical), so we need the scalar product to be zero:\n$$x(2y-x)+y(y-2x)=0\\implies2xy-x^2+y^2-2xy=0\\implies y^2=x^2\\implies y=\\pm x$$\n\n**$y=x$:** $x^2-x^2+x^2=7\\Rightarrow x=\\pm\\sqrt7$, giving $(\\sqrt7,\\sqrt7)$ and $(-\\sqrt7,-\\sqrt7)$.\n\n**$y=-x$:** $x^2+x^2+x^2=7\\Rightarrow x=\\pm\\sqrt{\\tfrac73}=\\pm\\frac{\\sqrt{21}}{3}$, giving $\\left(\\frac{\\sqrt{21}}{3},-\\frac{\\sqrt{21}}{3}\\right)$ and $\\left(-\\frac{\\sqrt{21}}{3},\\frac{\\sqrt{21}}{3}\\right)$.\n\nCheck one: at $(\\sqrt7,\\sqrt7)$, $\\frac{dy}{dx}=\\frac{-\\sqrt7}{\\sqrt7}=-1$, so the normal has gradient $1$ and passes through $(\\sqrt7,\\sqrt7)$: it is $y=x$, which passes through $O$ ✓.\n\nThere are four points: they are the ends of the longest and shortest diameters of this ellipse.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q15",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $y=x^{\\frac1x}$ for $x>0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "By taking natural logarithms of both sides, show that $\\dfrac{dy}{dx}=\\dfrac{x^{\\frac1x}(1-\\ln x)}{x^2}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $y$ has exactly one stationary point, and that it is a maximum. State its exact coordinates."
+   },
+   {
+    "label": "c",
+    "prompt": "Hence, without a calculator, determine which is larger: $e^{\\pi}$ or $\\pi^{e}$."
+   }
+  ],
+  "hint": "(a) $\\ln y=\\frac{\\ln x}{x}$; differentiate both sides with respect to $x$, using $\\frac{d}{dx}(\\ln y)=\\frac1y\\frac{dy}{dx}$. (c) Compare $y$ at $x=\\pi$ with $y$ at $x=e$, then raise both sides to a suitable power.",
+  "answer": "(a) Shown. (b) Maximum at $\\left(e,\\ e^{\\frac1e}\\right)$. (c) $e^{\\pi}>\\pi^{e}$",
+  "solution": "**(a)** $\\ln y=\\frac1x\\ln x=\\frac{\\ln x}{x}$. Differentiate both sides with respect to $x$ (chain rule on the left, quotient rule on the right):\n$$\\frac1y\\frac{dy}{dx}=\\frac{x\\cdot\\frac1x-\\ln x\\cdot1}{x^2}=\\frac{1-\\ln x}{x^2}$$\n$$\\frac{dy}{dx}=y\\cdot\\frac{1-\\ln x}{x^2}=\\frac{x^{\\frac1x}(1-\\ln x)}{x^2}$$\n\n**(b)** $x^{\\frac1x}>0$ and $x^2>0$, so the sign of $\\frac{dy}{dx}$ is the sign of $1-\\ln x$.\n- $\\frac{dy}{dx}=0\\iff\\ln x=1\\iff x=e$: exactly one stationary point.\n- For $0<x<e$, $\\ln x<1$ so $\\frac{dy}{dx}>0$; for $x>e$, $\\frac{dy}{dx}<0$. So it is a maximum – in fact the greatest value of $y$ for all $x>0$.\n\nCoordinates: $\\left(e,\\ e^{\\frac1e}\\right)$.\n\n**(c)** Since $\\pi\\ne e$ and $e^{\\frac1e}$ is the greatest value of $x^{\\frac1x}$:\n$$\\pi^{\\frac1\\pi}<e^{\\frac1e}$$\nBoth sides are positive, so raising them to the positive power $e\\pi$ keeps the inequality:\n$$\\left(\\pi^{\\frac1\\pi}\\right)^{e\\pi}<\\left(e^{\\frac1e}\\right)^{e\\pi}\\implies\\pi^{e}<e^{\\pi}$$\n\nSo $e^\\pi$ is larger. (Indeed $e^\\pi\\approx23.14$ and $\\pi^e\\approx22.46$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "pure-exponentials-logs",
+   "calc-stationary-points"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q16",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The diagram shows the curve $x^3+y^3=6xy$, which has a loop in the first quadrant.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\" width=\"320\" height=\"300\"><line x1=\"12.0\" y1=\"170.0\" x2=\"306.0\" y2=\"170.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"120.0\" y1=\"293.0\" x2=\"120.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"306.0,170.0 298.0,166.0 298.0,174.0\" fill=\"currentColor\"/><polygon points=\"120.0,14.0 116.0,22.0 124.0,22.0\" fill=\"currentColor\"/><text x=\"302.0\" y=\"188.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"128.0\" y=\"24.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"106.0\" y=\"186.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"120.0,170.0 123.6,169.9 127.2,169.7 130.8,169.4 134.4,168.8 138.0,168.2 141.6,167.4 145.1,166.5 148.7,165.4 152.2,164.2 155.7,162.9 159.2,161.4 162.6,159.8 166.0,158.0 169.3,156.2 172.6,154.2 175.8,152.1 178.9,150.0 181.9,147.7 184.9,145.3 187.7,142.9 190.4,140.4 193.0,137.9 195.5,135.3 197.8,132.6 200.0,130.0 202.1,127.3 204.0,124.6 205.8,122.0 207.4,119.3 208.8,116.7 210.1,114.1 211.3,111.6 212.3,109.1 213.1,106.7 213.8,104.3 214.4,102.0 214.8,99.8 215.1,97.7 215.2,95.7 215.1,92.0 214.6,88.6 213.7,85.7 212.4,83.1 210.9,80.9 209.1,79.1 207.1,77.7 204.9,76.6 202.7,75.7 200.3,75.2 198.0,74.9 195.6,74.8 193.2,74.9 190.8,75.1 188.4,75.5 186.1,76.1 183.9,76.7 181.7,77.4 179.6,78.3 177.5,79.1 175.5,80.1 173.6,81.0 171.7,82.0 169.9,83.1 168.2,84.1 165.8,85.7 163.5,87.3 161.3,88.9 159.3,90.6 157.4,92.1 155.6,93.7 154.0,95.2 152.4,96.7 150.9,98.2 149.1,100.1 147.4,101.9 145.9,103.7 144.5,105.4 143.2,107.0 141.7,108.9 140.3,110.8 139.0,112.5 137.9,114.2 136.6,116.0 135.5,117.8 134.3,119.8 133.3,121.6 132.2,123.5 131.3,125.3 130.3,127.1 129.4,129.0 128.6,131.0 127.7,132.8 127.0,134.7 126.2,136.6 125.5,138.6 124.8,140.5 124.2,142.5 123.6,144.4 123.1,146.4 122.6,148.4 122.2,150.3 121.7,152.3 121.4,154.3 121.0,156.3 120.8,158.3 120.5,160.3 120.3,162.3 120.2,164.2 120.1,166.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"12.1,114.2 13.6,115.6 15.3,117.0 16.9,118.4 18.5,119.7 20.1,121.1 21.7,122.4 23.3,123.8 25.0,125.1 26.6,126.5 28.2,127.7 29.8,129.0 31.5,130.3 33.1,131.7 34.7,132.9 36.3,134.2 38.0,135.5 39.7,136.7 41.4,138.0 43.0,139.2 44.7,140.4 46.4,141.7 48.1,142.8 49.8,144.0 51.5,145.2 53.3,146.3 55.0,147.5 56.6,148.6 58.4,149.7 60.2,150.8 61.9,151.8 63.7,152.9 65.5,153.9 67.3,154.9 69.1,155.9 70.9,156.9 72.8,157.8 74.6,158.7 76.4,159.6 78.3,160.5 80.2,161.3 82.1,162.1 83.9,162.8 85.9,163.6 87.8,164.3 89.7,164.9 91.6,165.6 93.6,166.1 95.6,166.7 97.6,167.2 99.6,167.7 101.5,168.1 103.5,168.5 105.5,168.8 107.5,169.1 109.6,169.4 111.6,169.6 113.7,169.8 115.8,169.9 117.8,170.0 119.9,170.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"120.1,173.0 120.1,175.0 120.3,177.0 120.4,179.0 120.7,181.0 120.9,183.0 121.2,185.0 121.6,186.9 122.0,188.9 122.4,190.9 122.9,192.9 123.4,194.8 124.0,196.8 124.6,198.8 125.2,200.7 125.9,202.7 126.6,204.6 127.3,206.5 128.1,208.4 128.9,210.3 129.8,212.2 130.6,214.1 131.5,215.9 132.5,217.8 133.4,219.6 134.5,221.6 135.5,223.5 136.5,225.3 137.6,227.2 138.7,228.9 139.8,230.8 141.1,232.8 142.2,234.6 143.5,236.5 144.9,238.6 146.1,240.3 147.3,242.1 148.7,244.1 150.2,246.2 151.4,247.8 152.7,249.5 154.1,251.4 155.5,253.3 157.1,255.3 158.8,257.4 160.6,259.7 161.9,261.3 163.2,263.0 164.6,264.7 166.1,266.5 167.7,268.4 169.4,270.4 171.2,272.5 173.0,274.8 175.0,277.1 177.2,279.5 179.5,282.1 181.9,284.9 184.5,287.8 185.9,289.4 187.3,290.9 188.8,292.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"180.0\" y1=\"166.0\" x2=\"180.0\" y2=\"174.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"187.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"116.0\" y1=\"110.0\" x2=\"124.0\" y2=\"110.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"112.0\" y=\"115.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"240.0\" y1=\"166.0\" x2=\"240.0\" y2=\"174.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"240.0\" y=\"187.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"116.0\" y1=\"50.0\" x2=\"124.0\" y2=\"50.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"112.0\" y=\"55.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"60.0\" y1=\"166.0\" x2=\"60.0\" y2=\"174.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"60.0\" y=\"187.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"116.0\" y1=\"230.0\" x2=\"124.0\" y2=\"230.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"112.0\" y=\"235.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{dy}{dx}=\\dfrac{2y-x^2}{y^2-2x}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the equation of the tangent to the curve at the point $(3,3)$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact coordinates of the point on the loop, other than the origin, at which the tangent is horizontal. Give each coordinate in the form $2^k$, where $k$ is a rational number."
+   },
+   {
+    "label": "d",
+    "prompt": "Use the symmetry of the curve to write down the point on the loop, other than the origin, at which the tangent is vertical. Explain your reasoning."
+   }
+  ],
+  "hint": "(c) Set the numerator to zero, so $y=\\frac{x^2}{2}$, and substitute into the curve. Write $16$ as a power of $2$. (d) What happens to the equation if you swap $x$ and $y$?",
+  "answer": "(a) Shown. (b) $x+y=6$ (c) $\\left(2^{\\frac43},\\ 2^{\\frac53}\\right)$ (d) $\\left(2^{\\frac53},\\ 2^{\\frac43}\\right)$",
+  "solution": "**(a)** $3x^2+3y^2\\frac{dy}{dx}=6\\left(x\\frac{dy}{dx}+y\\right)$\n$$(3y^2-6x)\\frac{dy}{dx}=6y-3x^2\\implies\\frac{dy}{dx}=\\frac{2y-x^2}{y^2-2x}$$\n\n**(b)** Check: $27+27=54=6\\times9$ ✓. At $(3,3)$: $\\frac{dy}{dx}=\\frac{6-9}{9-6}=-1$.\n\nTangent: $y-3=-(x-3)$, i.e. $x+y=6$.\n\n**(c)** Horizontal tangent: numerator $2y-x^2=0$, so $y=\\frac{x^2}{2}$. Substitute into the curve:\n$$x^3+\\frac{x^6}{8}=6x\\cdot\\frac{x^2}{2}=3x^3\\implies\\frac{x^6}{8}=2x^3\\implies x^3(x^3-16)=0$$\n$x=0$ is the origin, so $x^3=16=2^4$, giving $x=2^{\\frac43}$.\n$$y=\\frac{x^2}{2}=\\frac{2^{\\frac83}}{2}=2^{\\frac53}$$\nDenominator check: $y^2-2x=2^{\\frac{10}{3}}-2^{\\frac73}=2^{\\frac73}(2-1)\\ne0$ ✓. The point is $\\left(2^{\\frac43},2^{\\frac53}\\right)\\approx(2.52,3.17)$.\n\n**(d)** Swapping $x$ and $y$ leaves $x^3+y^3=6xy$ unchanged, so the curve is symmetric in the line $y=x$. Reflecting in $y=x$ turns a horizontal tangent into a vertical one, so the vertical tangent is at $\\left(2^{\\frac53},2^{\\frac43}\\right)$. (Check: there $y^2-2x=2^{\\frac83}-2^{\\frac83}=0$, the denominator is zero ✓.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "num-negative-fractional-indices",
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation-q17",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A furniture maker can produce a fixed weekly output using different combinations of labour, $L$ (in hundreds of hours), and capital, $K$ (in thousands of pounds). The combinations that give this output satisfy\n$$L^2K=64\\,000.$$\nThe maker currently uses $L=40$ and $K=40$.\n\nUse implicit differentiation to find $\\dfrac{dK}{dL}$ at the current combination, and interpret your answer in context.",
+  "hint": "Differentiate both sides with respect to $L$, treating $K$ as a function of $L$. $L^2K$ is a product.",
+  "answer": "$\\dfrac{dK}{dL}=-2$: each extra 100 hours of labour allows about £2000 less capital for the same output.",
+  "solution": "Differentiate $L^2K=64\\,000$ with respect to $L$ (product rule, $K$ depends on $L$):\n$$2LK+L^2\\frac{dK}{dL}=0\\implies\\frac{dK}{dL}=-\\frac{2LK}{L^2}=-\\frac{2K}{L}$$\n\nAt $L=40$, $K=40$ (check: $1600\\times40=64\\,000$ ✓):\n$$\\frac{dK}{dL}=-\\frac{2\\times40}{40}=-2$$\n\n**Interpretation:** at this combination, increasing labour by 1 unit (100 hours) allows capital to be reduced by about 2 units (£2000) while keeping the same output. The negative sign shows that labour and capital can be traded off against each other.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-implicit-differentiation-q18",
+  "topicId": "calc-implicit-differentiation",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A car is driven along a curved road that, in the first quadrant, follows the curve\n$$x^2+4y^2=400,$$\nwhere $x$ and $y$ are in metres. The car travels clockwise, from $(0,10)$ towards $(20,0)$. Its headlights shine along the tangent to the road in the direction of travel.\n\nA gate is at $G(40,0)$, as shown. Find the exact coordinates of the car when its headlights shine directly at the gate.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 180\" width=\"340\" height=\"180\"><line x1=\"30.0\" y1=\"150.0\" x2=\"331.0\" y2=\"150.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"30.0\" y1=\"150.0\" x2=\"30.0\" y2=\"38.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"331.0,150.0 323.0,146.0 323.0,154.0\" fill=\"currentColor\"/><polygon points=\"30.0,38.0 26.0,46.0 34.0,46.0\" fill=\"currentColor\"/><text x=\"327.0\" y=\"168.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"38.0\" y=\"48.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"16.0\" y=\"166.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"170.0,150.0 169.9,147.3 169.6,144.5 169.0,141.8 168.3,139.0 167.3,136.3 166.1,133.7 164.7,131.0 163.7,129.2 162.6,127.5 161.3,125.8 160.0,124.1 158.6,122.4 157.1,120.7 155.6,119.0 153.9,117.4 152.1,115.8 150.3,114.2 148.4,112.6 146.4,111.1 144.3,109.6 142.2,108.1 139.9,106.7 137.6,105.2 135.3,103.8 132.8,102.5 130.3,101.2 127.7,99.9 125.0,98.6 122.3,97.4 119.5,96.2 116.7,95.0 113.8,93.9 110.8,92.8 107.8,91.8 104.7,90.8 101.6,89.8 98.4,88.9 95.2,88.1 91.9,87.2 88.6,86.4 85.3,85.7 81.9,85.0 78.5,84.3 75.0,83.7 71.5,83.1 68.0,82.6 64.5,82.2 60.9,81.7 57.3,81.3 53.7,81.0 50.1,80.7 46.5,80.5 42.8,80.3 39.2,80.1 35.5,80.1 31.8,80.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"170.0\" y1=\"146.0\" x2=\"170.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"170.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"26.0\" y1=\"80.0\" x2=\"34.0\" y2=\"80.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"22.0\" y=\"85.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><circle cx=\"310.0\" cy=\"150.0\" r=\"4\" fill=\"currentColor\"/><text x=\"282.0\" y=\"140.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">G(40, 0)</text><text x=\"134.0\" y=\"88.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">road</text></svg>",
+  "hint": "Find the tangent at a general point $(p,q)$ on the road, then make it pass through $(40,0)$. You will also need $p^2+4q^2=400$.",
+  "answer": "$\\left(10,\\ 5\\sqrt3\\right)$, about $(10,\\ 8.66)$",
+  "solution": "Differentiate implicitly:\n$$2x+8y\\frac{dy}{dx}=0\\implies\\frac{dy}{dx}=-\\frac{x}{4y}$$\n\nAt a point $(p,q)$ on the road ($q>0$) the tangent is\n$$y-q=-\\frac{p}{4q}(x-p)\\implies4qy-4q^2=-px+p^2\\implies px+4qy=p^2+4q^2=400$$\nusing $p^2+4q^2=400$.\n\nFor the tangent to pass through $G(40,0)$:\n$$40p+0=400\\implies p=10$$\n\nThen $4q^2=400-100=300$, so $q^2=75$ and $q=5\\sqrt3$ (first quadrant).\n\n**Direction check:** at $(10,5\\sqrt3)$ the gradient is $-\\frac{10}{20\\sqrt3}=-\\frac{1}{2\\sqrt3}<0$. Travelling clockwise the car is moving right and down, which is towards $G$ (to the right and below), so the headlights point at the gate rather than away from it.\n\nThe car is at $\\left(10,5\\sqrt3\\right)\\approx(10,\\ 8.66)$.",
+  "linkedTopicIds": [
+   "alg-conic-sections",
+   "calc-tangents-normals"
+  ],
+  "misconceptionIds": []
+ }
+]
