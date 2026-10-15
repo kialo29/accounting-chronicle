@@ -61,10 +61,9 @@ def main():
             r = re.match(r"\|\s*([a-z0-9-]+-q\d\d)\s*\|\s*(fixed|clarified)\s*\|\s*(.+?)\s*\|\s*$", line)
             if r:
                 rows.append((t["id"], r.group(1), r.group(2), r.group(3)))
-        dm = re.search(r"(\d+) diagrams? checked: (\d+) ok, (\d+) fixed", text)
-        if dm:
-            n, a, b = map(int, dm.groups())
-            diag.update(checked=n, ok=a, fixed=b, topics=1)
+        for dm in re.finditer(r"(\d+) diagrams? checked[^:\n]*: (\d+) ok(?:, (\d+) (?:fixed|changed))?", text):
+            n, a = int(dm.group(1)), int(dm.group(2))
+            diag.update(checked=n, ok=a, fixed=int(dm.group(3) or 0), topics=1)
 
     val = subprocess.run(["node", str(ROOT / "scripts" / "validate.mjs"), "--quiet"], capture_output=True, text=True)
     vline = val.stdout.strip().splitlines()[-1] if val.stdout.strip() else val.stderr.strip()
