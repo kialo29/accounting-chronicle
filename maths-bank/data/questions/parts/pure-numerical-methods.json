@@ -1,0 +1,290 @@
+[
+ {
+  "id": "pure-numerical-methods-q01",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 + 2x - 7$.\n\nShow that the equation $f(x) = 0$ has a root between $x = 1$ and $x = 2$.",
+  "hint": "Work out $f(1)$ and $f(2)$. What do their signs tell you, and what property of $f$ do you need to mention?",
+  "answer": "$f(1) = -4 < 0$, $f(2) = 5 > 0$; sign change and $f$ continuous, so a root lies in $(1, 2)$.",
+  "solution": "$f(1) = 1 + 2 - 7 = -4 < 0$\n\n$f(2) = 8 + 4 - 7 = 5 > 0$\n\nThere is a **change of sign** between $x = 1$ and $x = 2$, and $f$ is **continuous** (it is a polynomial), so its graph must cross the $x$-axis between them. Hence $f(x) = 0$ has a root in the interval $(1, 2)$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q02",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 + 2x - 7$.\n\nShow that the equation $f(x) = 0$ has a root between $x = 1.5$ and $x = 1.6$.",
+  "hint": "Same method as for the interval $[1, 2]$, but with decimal values. A calculator helps.",
+  "answer": "$f(1.5) = -0.625 < 0$, $f(1.6) = 0.296 > 0$; sign change and $f$ continuous, so a root lies in $(1.5, 1.6)$.",
+  "solution": "$f(1.5) = 3.375 + 3 - 7 = -0.625 < 0$\n\n$f(1.6) = 4.096 + 3.2 - 7 = 0.296 > 0$\n\nSign change and $f$ is continuous, so there is a root in $(1.5, 1.6)$.\n\n**What changed:** the interval is 10 times narrower, so we now know the root more precisely (it is $1.5\\ldots$). The method and the conclusion are the same.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q03",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "$f(x) = x^3 + 2x - 7$.\n\nShow that the root of $f(x) = 0$ is $1.57$, correct to 2 decimal places.",
+  "hint": "Which interval of numbers rounds to $1.57$ (2 d.p.)? Test the ends of that interval, not $1.57$ and $1.58$.",
+  "answer": "$f(1.565) = -0.0370 < 0$, $f(1.575) = 0.0570 > 0$; sign change and $f$ continuous, so $1.565 < \\alpha < 1.575$ and $\\alpha = 1.57$ (2 d.p.).",
+  "solution": "Numbers that round to $1.57$ (2 d.p.) lie in $[1.565, 1.575)$, so test the bounds:\n\n$f(1.565) = 3.8330\\ldots + 3.13 - 7 = -0.0370 < 0$\n\n$f(1.575) = 3.9069\\ldots + 3.15 - 7 = 0.0570 > 0$\n\nSign change and $f$ is continuous, so the root $\\alpha$ satisfies $1.565 < \\alpha < 1.575$. Hence $\\alpha = 1.57$ to 2 d.p.\n\n**What changed:** now we must prove a *rounded* value. Testing $1.57$ and $1.58$ would only show $1.57 < \\alpha < 1.58$, and $\\alpha$ could then round to $1.58$; we need the rounding bounds $1.565$ and $1.575$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q04",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "$f(x) = x^3 + 2x - 7$.\n\nShow that the root of $f(x) = 0$ is $1.569$, correct to 3 decimal places.",
+  "hint": "Same idea as for 2 decimal places: the interval that rounds to $1.569$ now has half-width $0.0005$.",
+  "answer": "$f(1.5685) = -0.00419 < 0$, $f(1.5695) = 0.00520 > 0$; sign change and $f$ continuous, so $\\alpha = 1.569$ (3 d.p.).",
+  "solution": "Numbers that round to $1.569$ (3 d.p.) lie in $[1.5685, 1.5695)$.\n\n$f(1.5685) = -0.00419 < 0$\n\n$f(1.5695) = 0.00520 > 0$\n\nSign change and $f$ is continuous, so $1.5685 < \\alpha < 1.5695$, hence $\\alpha = 1.569$ (3 d.p.).\n\n**What changed:** one more decimal place, so the bounds are $\\pm 0.0005$ instead of $\\pm 0.005$. The values of $f$ are now very small, so keep enough figures to be sure of their signs.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q05",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Use the iterative formula\n$$x_{n+1} = \\sqrt{3x_n + 5}$$\nwith $x_0 = 4$ to find $x_1$, $x_2$ and $x_3$, giving each answer to 4 decimal places. State the value the sequence appears to converge to, and the equation it is a root of.",
+  "hint": "Put $x_0 = 4$ into the formula to get $x_1$, then put $x_1$ in to get $x_2$. Use the ANS key to avoid rounding errors. If $x_n \\to \\alpha$, then $\\alpha = \\sqrt{3\\alpha + 5}$.",
+  "answer": "$x_1 = 4.1231$, $x_2 = 4.1677$, $x_3 = 4.1837$; it converges to $\\alpha = \\frac{3 + \\sqrt{29}}{2} = 4.1926$ (4 d.p.), a root of $x^2 - 3x - 5 = 0$.",
+  "solution": "$x_1 = \\sqrt{3(4) + 5} = \\sqrt{17} = 4.1231$\n\n$x_2 = \\sqrt{3(4.1231\\ldots) + 5} = 4.1677$\n\n$x_3 = \\sqrt{3(4.1677\\ldots) + 5} = 4.1837$\n\nThe values increase steadily towards a limit $\\alpha$ with $\\alpha = \\sqrt{3\\alpha + 5}$, i.e. $\\alpha^2 = 3\\alpha + 5$, so $\\alpha$ is a root of\n$$x^2 - 3x - 5 = 0$$\nThe positive root is $\\frac{3 + \\sqrt{29}}{2} = 4.1926$ (4 d.p.), which the iterates are approaching.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q06",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "$f(x) = x^3 + x - 5$.\n\nTaking $x_0 = 1.5$, use the Newton–Raphson method twice to find an approximation to the root of $f(x) = 0$, giving your answer to 5 decimal places.",
+  "hint": "$x_{n+1} = x_n - \\dfrac{f(x_n)}{f'(x_n)}$. First find $f'(x)$.",
+  "answer": "$x_1 = 1.51613$, $x_2 = 1.51598$ (5 d.p.)",
+  "solution": "$f'(x) = 3x^2 + 1$\n\n$f(1.5) = 3.375 + 1.5 - 5 = -0.125$, $f'(1.5) = 6.75 + 1 = 7.75$\n$$x_1 = 1.5 - \\frac{-0.125}{7.75} = 1.516129\\ldots$$\n\n$f(x_1) = 0.0011748\\ldots$, $f'(x_1) = 7.89594\\ldots$\n$$x_2 = 1.516129\\ldots - \\frac{0.0011748\\ldots}{7.89594\\ldots} = 1.515980\\ldots$$\n\n$x_2 = 1.51598$ (5 d.p.)\n\n(The correction shrinks very quickly: $0.016$ then $0.00015$. Newton–Raphson converges fast near a simple root.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q07",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "$f(x) = x^3 - 6x + 3$. The equation $f(x) = 0$ has a root $\\alpha$ between 2 and 3. Ellie is asked to find $\\alpha$ correct to 2 decimal places. Her working is shown below.\n\n\"$f(2.14) = -0.0397 < 0$ and $f(2.15) = 0.0384 > 0$.\n\nThere is a change of sign and $f$ is continuous, so $\\alpha = 2.14$ to 2 decimal places.\"\n\n(a) Explain why Ellie's conclusion is not justified.\n\n(b) Find $\\alpha$ correct to 2 decimal places, showing that your answer is correct.",
+  "hint": "Ellie has shown $2.14 < \\alpha < 2.15$. Which of these numbers round to $2.14$, and which to $2.15$? Test the midpoint $2.145$.",
+  "answer": "(a) She has only shown $2.14 < \\alpha < 2.15$; values above $2.145$ round to $2.15$. (b) $f(2.145) = -0.0008 < 0$ and $f(2.155) = 0.0779 > 0$, so $2.145 < \\alpha < 2.155$ and $\\alpha = 2.15$ (2 d.p.).",
+  "solution": "**(a)** A sign change on $[2.14, 2.15]$ shows only that $2.14 < \\alpha < 2.15$. Numbers in this interval round to $2.14$ if they are below $2.145$, but to $2.15$ if they are above $2.145$. Ellie has truncated rather than rounded: she needs to test the rounding bounds, not $2.14$ and $2.15$.\n\n**(b)** Test the midpoint:\n$f(2.145) = 9.8692\\ldots - 12.87 + 3 = -0.0008 < 0$\n\nSince $f(2.15) > 0$, the root is between $2.145$ and $2.15$. To confirm the 2 d.p. value, test the bounds for $2.15$:\n\n$f(2.145) = -0.0008 < 0$, $f(2.155) = 0.0779 > 0$\n\nSign change and $f$ is continuous, so $2.145 < \\alpha < 2.155$: $\\alpha = 2.15$ (2 d.p.), **not** $2.14$. (In fact $\\alpha = 2.1451\\ldots$)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q08",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Jamal uses the Newton–Raphson method on $f(x) = x^3 + x - 5$ with $x_0 = 1.5$. His working is shown below.\n\nLine 1: $f'(x) = 3x^2 + 1$\n\nLine 2: $f(1.5) = -0.125$, $f'(1.5) = 7.75$\n\nLine 3: $x_1 = x_0 - \\dfrac{f'(x_0)}{f(x_0)} = 1.5 - \\dfrac{7.75}{-0.125} = 63.5$\n\n(a) Without finding the root, explain why $x_1 = 63.5$ must be wrong.\n\n(b) Identify Jamal's error. Use the geometry of the tangent to derive the correct formula and find the correct value of $x_1$.",
+  "hint": "Is $f(63.5)$ anywhere near zero? The tangent at $(x_0, f(x_0))$ has gradient $f'(x_0)$: where does it cross the $x$-axis?",
+  "answer": "(a) $f(1.5) = -0.125$ is already close to 0, so the root is near 1.5; also $f(63.5) \\approx 256\\,000$. (b) The fraction is upside down: $x_1 = x_0 - \\dfrac{f(x_0)}{f'(x_0)} = 1.5 + \\dfrac{0.125}{7.75} = 1.51613$ (5 d.p.)",
+  "solution": "**(a)** $f(1.5) = -0.125$ is small and $f(2) = 5$, so there is a root between 1.5 and 2, and close to 1.5. A good approximation cannot jump to 63.5; indeed $f(63.5) = 63.5^3 + 63.5 - 5 \\approx 256\\,106$, nowhere near 0.\n\n**(b)** The error is in **Line 3**: the fraction is upside down. It should be function over derivative.\n\nDerivation: the tangent at $(x_0, f(x_0))$ has gradient $f'(x_0)$, so its equation is\n$$y - f(x_0) = f'(x_0)(x - x_0)$$\nIt meets the $x$-axis where $y = 0$:\n$$-f(x_0) = f'(x_0)(x - x_0) \\Rightarrow x = x_0 - \\frac{f(x_0)}{f'(x_0)}$$\n\nCorrect value:\n$$x_1 = 1.5 - \\frac{-0.125}{7.75} = 1.5 + 0.016129\\ldots = 1.51613 \\text{ (5 d.p.)}$$\n\nCheck: $f(1.51613) \\approx 0.0012$, much closer to 0 ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q09",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Lily is looking for solutions of $\\tan x = 0$ (with $x$ in radians). She writes:\n\n\"$\\tan 1 = 1.557 > 0$ and $\\tan 2 = -2.185 < 0$. There is a change of sign, so there is a root of $\\tan x = 0$ between $x = 1$ and $x = 2$.\"\n\n(a) Explain why Lily's reasoning is not valid.\n\n(b) Show that in fact $\\tan x = 0$ has no solution with $1 < x < 2$.",
+  "hint": "The change-of-sign rule needs a condition on the function. Is $\\tan x$ defined for every $x$ between 1 and 2? Think about the graph of $y = \\tan x$.",
+  "answer": "(a) $\\tan x$ is not continuous on $[1, 2]$: it has a vertical asymptote at $x = \\frac{\\pi}{2} \\approx 1.571$, where the sign changes without the graph crossing the axis. (b) Solutions of $\\tan x = 0$ are $x = k\\pi$; none lies between 1 and 2 since $0 < 1$ and $\\pi > 2$.",
+  "solution": "**(a)** The change-of-sign rule only applies when $f$ is **continuous** on the interval. $\\tan x = \\frac{\\sin x}{\\cos x}$ is undefined where $\\cos x = 0$, i.e. at $x = \\frac{\\pi}{2} = 1.5707\\ldots$, which lies between 1 and 2. The graph has a vertical asymptote there: $\\tan x \\to +\\infty$ as $x \\to \\frac{\\pi}{2}^-$ and $\\tan x \\to -\\infty$ as $x \\to \\frac{\\pi}{2}^+$. The sign changes by \"jumping\" through the asymptote, not by crossing the $x$-axis.\n\n**(b)** $\\tan x = 0 \\iff \\sin x = 0$ (with $\\cos x \\ne 0$) $\\iff x = k\\pi$ for integer $k$. The nearest solutions are $x = 0$ and $x = \\pi \\approx 3.14$, so there are none in $(1, 2)$.\n\nMoral: before using a sign change, check for discontinuities in the interval (e.g. a sketch, or where a denominator is zero).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q10",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><line x1=\"114.6\" y1=\"24\" x2=\"114.6\" y2=\"252\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"165.66\" y1=\"24\" x2=\"165.66\" y2=\"252\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"216.72\" y1=\"24\" x2=\"216.72\" y2=\"252\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"267.79\" y1=\"24\" x2=\"267.79\" y2=\"252\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"38\" y1=\"164.31\" x2=\"278\" y2=\"164.31\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"38\" y1=\"120.46\" x2=\"278\" y2=\"120.46\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"38\" y1=\"76.62\" x2=\"278\" y2=\"76.62\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"38\" y1=\"32.77\" x2=\"278\" y2=\"32.77\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"38\" y1=\"208.15\" x2=\"286\" y2=\"208.15\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"63.53\" y1=\"252\" x2=\"63.53\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M286,208.15 l-7,-3.5 v7 z\" fill=\"currentColor\"/><path d=\"M63.53,16 l-3.5,7 h7 z\" fill=\"currentColor\"/><line x1=\"114.6\" y1=\"205.15\" x2=\"114.6\" y2=\"211.15\" stroke=\"currentColor\"/><text x=\"114.6\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.5</text><line x1=\"165.66\" y1=\"205.15\" x2=\"165.66\" y2=\"211.15\" stroke=\"currentColor\"/><text x=\"165.66\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"216.72\" y1=\"205.15\" x2=\"216.72\" y2=\"211.15\" stroke=\"currentColor\"/><text x=\"216.72\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1.5</text><line x1=\"267.79\" y1=\"205.15\" x2=\"267.79\" y2=\"211.15\" stroke=\"currentColor\"/><text x=\"267.79\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"60.53\" y1=\"164.31\" x2=\"66.53\" y2=\"164.31\" stroke=\"currentColor\"/><text x=\"32\" y=\"168.31\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.5</text><line x1=\"60.53\" y1=\"120.46\" x2=\"66.53\" y2=\"120.46\" stroke=\"currentColor\"/><text x=\"32\" y=\"124.46\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"60.53\" y1=\"76.62\" x2=\"66.53\" y2=\"76.62\" stroke=\"currentColor\"/><text x=\"32\" y=\"80.62\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1.5</text><line x1=\"60.53\" y1=\"32.77\" x2=\"66.53\" y2=\"32.77\" stroke=\"currentColor\"/><text x=\"32\" y=\"36.77\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2</text><text x=\"284\" y=\"201.15\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" text-anchor=\"end\" fill=\"currentColor\">x</text><text x=\"71.53\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><text x=\"63.53\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"32\" y=\"212.15\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0</text><polyline points=\"57.26,25.41 58.07,27.47 58.87,29.54 59.67,31.6 60.47,33.67 61.28,35.73 62.08,37.8 62.88,39.87 63.69,41.93 64.49,44 65.29,46.07 66.09,48.14 66.9,50.2 67.7,52.27 68.5,54.33 69.3,56.39 70.11,58.45 70.91,60.51 71.71,62.57 72.52,64.62 73.32,66.67 74.12,68.72 74.92,70.76 75.73,72.8 76.53,74.84 77.33,76.87 78.13,78.9 78.94,80.92 79.74,82.94 80.54,84.95 81.34,86.96 82.15,88.96 82.95,90.96 83.75,92.95 84.56,94.93 85.36,96.91 86.16,98.88 86.96,100.84 87.77,102.79 88.57,104.74 89.37,106.68 90.17,108.61 90.98,110.53 91.78,112.45 92.58,114.35 93.38,116.25 94.19,118.13 94.99,120.01 95.79,121.88 96.6,123.73 97.4,125.58 98.2,127.41 99,129.24 99.81,131.05 100.61,132.85 101.41,134.64 102.21,136.42 103.02,138.18 103.82,139.93 104.62,141.67 105.42,143.4 106.23,145.11 107.03,146.81 107.83,148.5 108.64,150.17 109.44,151.83 110.24,153.47 111.04,155.1 111.85,156.71 112.65,158.31 113.45,159.89 114.25,161.45 115.06,163 115.86,164.54 116.66,166.05 117.46,167.55 118.27,169.04 119.07,170.5 119.87,171.95 120.68,173.38 121.48,174.79 122.28,176.18 123.08,177.55 123.89,178.91 124.69,180.25 125.49,181.56 126.29,182.86 127.1,184.14 127.9,185.39 128.7,186.63 129.51,187.84 130.31,189.04 131.11,190.21 131.91,191.36 132.72,192.49 133.52,193.6 134.32,194.69 135.12,195.75 135.93,196.79 136.73,197.81 137.53,198.8 138.33,199.77 139.14,200.72 139.94,201.64 140.74,202.54 141.55,203.41 142.35,204.26 143.15,205.08 143.95,205.88 144.76,206.65 145.56,207.4 146.36,208.12 147.16,208.82 147.97,209.48 148.77,210.12 149.57,210.74 150.37,211.32 151.18,211.88 151.98,212.41 152.78,212.92 153.59,213.39 154.39,213.84 155.19,214.25 155.99,214.64 156.8,215 157.6,215.33 158.4,215.63 159.2,215.89 160.01,216.13 160.81,216.34 161.61,216.52 162.41,216.66 163.22,216.77 164.02,216.86 164.82,216.91 165.63,216.92 166.43,216.91 167.23,216.86 168.03,216.78 168.84,216.67 169.64,216.52 170.44,216.34 171.24,216.12 172.05,215.87 172.85,215.59 173.65,215.27 174.45,214.92 175.26,214.53 176.06,214.1 176.86,213.64 177.67,213.14 178.47,212.61 179.27,212.04 180.07,211.44 180.88,210.79 181.68,210.11 182.48,209.39 183.28,208.64 184.09,207.84 184.89,207.01 185.69,206.14 186.49,205.23 187.3,204.28 188.1,203.29 188.9,202.26 189.71,201.19 190.51,200.09 191.31,198.94 192.11,197.75 192.92,196.52 193.72,195.25 194.52,193.93 195.32,192.58 196.13,191.18 196.93,189.74 197.73,188.26 198.54,186.74 199.34,185.17 200.14,183.56 200.94,181.91 201.75,180.21 202.55,178.47 203.35,176.68 204.15,174.85 204.96,172.98 205.76,171.06 206.56,169.09 207.36,167.08 208.17,165.02 208.97,162.92 209.77,160.77 210.58,158.58 211.38,156.34 212.18,154.05 212.98,151.71 213.79,149.33 214.59,146.89 215.39,144.41 216.19,141.89 217,139.31 217.8,136.68 218.6,134.01 219.4,131.29 220.21,128.51 221.01,125.69 221.81,122.81 222.62,119.89 223.42,116.92 224.22,113.89 225.02,110.81 225.83,107.69 226.63,104.51 227.43,101.27 228.23,97.99 229.04,94.65 229.84,91.26 230.64,87.82 231.44,84.33 232.25,80.78 233.05,77.18 233.85,73.52 234.66,69.81 235.46,66.05 236.26,62.23 237.06,58.35 237.87,54.42 238.67,50.44 239.47,46.4 240.27,42.3 241.08,38.15 241.88,33.94 242.68,29.67 243.48,25.35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"236.98\" y=\"98.9\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\" font-style=\"italic\">y = f(x)</text></svg>",
+  "question": "$f(x) = x^3 - 3x + 1.9$. Max calculates $f(0.5) = 0.525$ and $f(1.5) = 0.775$ and says: \"There is no change of sign, so $f(x) = 0$ has no roots between 0.5 and 1.5.\"\n\n(a) Using the graph of $y = f(x)$ shown, explain why Max is wrong.\n\n(b) By evaluating $f(1)$, prove that $f(x) = 0$ has at least two roots in the interval $(0.5, 1.5)$.\n\n(c) Use calculus to explain why the change-of-sign test over $[0.5, 1.5]$ was always likely to fail here.",
+  "hint": "Look at what the curve does between $x = 0.5$ and $x = 1.5$. Split the interval at $x = 1$ and test each half.",
+  "answer": "(a) The curve dips below the axis and comes back up: it crosses twice, so the signs at the ends are the same. (b) $f(1) = -0.1 < 0$: sign changes on $[0.5, 1]$ and $[1, 1.5]$, with $f$ continuous, so there is a root in each. (c) $f'(x) = 3x^2 - 3 = 0$ at $x = 1$: a minimum just below the axis, so two close roots either side of it.",
+  "solution": "**(a)** The graph shows the curve coming down, dipping just below the $x$-axis near $x = 1$, then rising again. It crosses the axis **twice** between 0.5 and 1.5, so it starts and ends above the axis. An even number of crossings gives no overall change of sign. \"No sign change\" does not mean \"no root\".\n\n**(b)** $f(1) = 1 - 3 + 1.9 = -0.1 < 0$\n\n* $f(0.5) = 0.525 > 0$ and $f(1) < 0$: sign change on $[0.5, 1]$\n* $f(1) < 0$ and $f(1.5) = 0.775 > 0$: sign change on $[1, 1.5]$\n\n$f$ is a polynomial, so continuous. Hence there is a root in $(0.5, 1)$ and another in $(1, 1.5)$: at least two roots in $(0.5, 1.5)$. $\\blacksquare$ (They are $0.811\\ldots$ and $1.177\\ldots$)\n\n**(c)** $f'(x) = 3x^2 - 3 = 0$ at $x = \\pm 1$, and $f''(1) = 6 > 0$, so $(1, -0.1)$ is a local minimum lying only just below the axis. Close to a turning point that barely crosses the axis there are two roots close together, and an interval containing both shows no sign change. Use a sketch or smaller intervals before concluding there is no root.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q11",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "The equation $e^x - 3x - 2 = 0$ has a positive root $\\alpha$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\alpha$ lies in the interval $[2, 2.2]$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that the equation can be written in the form $x = \\ln(3x + 2)$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Using the iteration formula $x_{n+1} = \\ln(3x_n + 2)$ with $x_0 = 2$, find the values of $x_1$, $x_2$ and $x_3$, giving your answers to 4 decimal places.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Show that $\\alpha = 2.125$ correct to 3 decimal places.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "hint": "For (d), choose an interval whose ends are the rounding bounds of $2.125$ and show a change of sign of $e^x - 3x - 2$.",
+  "answer": "(a) $f(2) = -0.611 < 0$, $f(2.2) = 0.425 > 0$, sign change, continuous\n(b) Shown\n(c) $x_1 = 2.0794$, $x_2 = 2.1088$, $x_3 = 2.1194$\n(d) $f(2.1245) = -0.00479 < 0$, $f(2.1255) = 0.00058 > 0$, so $\\alpha = 2.125$ (3 d.p.)",
+  "solution": "Let $f(x) = e^x - 3x - 2$.\n\n**(a)** $f(2) = e^2 - 8 = -0.611 < 0$ and $f(2.2) = e^{2.2} - 8.6 = 0.425 > 0$ **M1**\n\nChange of sign and $f$ is continuous, so $2 < \\alpha < 2.2$ **A1**\n\n**(b)** $e^x = 3x + 2 \\Rightarrow x = \\ln(3x + 2)$ (valid as $3x + 2 > 0$ near the root) **B1**\n\n**(c)** $x_1 = \\ln 8 = 2.0794$ **M1 A1**\n\n$x_2 = 2.1088$, $x_3 = 2.1194$ **A1**\n\n(Increasing towards $\\alpha$: a staircase. Here $g'(x) = \\frac{3}{3x + 2}$ is about $0.37$ near $\\alpha$, between 0 and 1.)\n\n**(d)** Choose the interval $[2.1245, 2.1255]$: **M1**\n\n$f(2.1245) = -0.00479 < 0$, $f(2.1255) = 0.00058 > 0$\n\nChange of sign and $f$ continuous, so $2.1245 < \\alpha < 2.1255$, hence $\\alpha = 2.125$ (3 d.p.) **A1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q12",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 4,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "calculator": true,
+  "question": "$f(x) = 2\\sin x - x$, where $x$ is in radians. The equation $f(x) = 0$ has a root $\\alpha$ in the interval $[1.8, 2]$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\alpha$ lies in the interval $[1.8, 2]$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Taking $x_0 = 2$ as a first approximation, apply the Newton–Raphson procedure twice to $f(x)$ to find $x_2$. Give your answer to 4 decimal places.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Show that $\\alpha = 1.8955$ correct to 4 decimal places.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Explain why $x_0 = \\dfrac{\\pi}{3}$ would not be a suitable first approximation for the Newton–Raphson procedure.",
+    "marks": 2
+   }
+  ],
+  "marks": 10,
+  "hint": "$f'(x) = 2\\cos x - 1$. Make sure your calculator is in radians. For (d), work out $f'\\left(\\frac{\\pi}{3}\\right)$.",
+  "answer": "(a) $f(1.8) = 0.148 > 0$, $f(2) = -0.181 < 0$; sign change, continuous\n(b) $x_2 = 1.8955$\n(c) $f(1.89545) > 0$, $f(1.89555) < 0$\n(d) $f'\\left(\\frac{\\pi}{3}\\right) = 0$: the tangent is horizontal, so it never meets the $x$-axis (division by zero).",
+  "solution": "**(a)** $f(1.8) = 2\\sin 1.8 - 1.8 = 0.148 > 0$ and $f(2) = 2\\sin 2 - 2 = -0.181 < 0$ **M1**\n\nSign change and $f$ is continuous, so $1.8 < \\alpha < 2$ **A1**\n\n**(b)** $f'(x) = 2\\cos x - 1$ **B1**\n\n$x_1 = 2 - \\dfrac{f(2)}{f'(2)} = 2 - \\dfrac{-0.18141\\ldots}{-1.83229\\ldots} = 1.90100\\ldots$ **M1 A1**\n\n$x_2 = 1.90100\\ldots - \\dfrac{f(1.90100\\ldots)}{f'(1.90100\\ldots)} = 1.8955$ (4 d.p.) **A1**\n\n**(c)** $f(1.89545) = 0.0000725 > 0$ and $f(1.89555) = -0.0000913 < 0$ **M1**\n\nSign change, $f$ continuous, so $1.89545 < \\alpha < 1.89555$, hence $\\alpha = 1.8955$ (4 d.p.) **A1**\n\n**(d)** $f'\\left(\\frac{\\pi}{3}\\right) = 2\\cos\\frac{\\pi}{3} - 1 = 2 \\times \\frac{1}{2} - 1 = 0$ **M1**\n\nThe formula would require division by $f'(x_0) = 0$: the tangent at $x = \\frac{\\pi}{3}$ is horizontal (a turning point of $f$), so it never meets the $x$-axis and $x_1$ cannot be found. **A1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q13",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 4,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"80\" y1=\"24\" x2=\"80\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"124\" y1=\"24\" x2=\"124\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"168\" y1=\"24\" x2=\"168\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"212\" y1=\"24\" x2=\"212\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"256\" y1=\"24\" x2=\"256\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"218.73\" x2=\"278\" y2=\"218.73\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"175.45\" x2=\"278\" y2=\"175.45\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"132.18\" x2=\"278\" y2=\"132.18\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"88.91\" x2=\"278\" y2=\"88.91\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"45.64\" x2=\"278\" y2=\"45.64\" stroke=\"currentColor\" stroke-opacity=\"0.25\" stroke-width=\"0.6\"/><line x1=\"36\" y1=\"262\" x2=\"286\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"36\" y1=\"262\" x2=\"36\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M286,262 l-7,-3.5 v7 z\" fill=\"currentColor\"/><path d=\"M36,16 l-3.5,7 h7 z\" fill=\"currentColor\"/><line x1=\"80\" y1=\"259\" x2=\"80\" y2=\"265\" stroke=\"currentColor\"/><text x=\"80\" y=\"278\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.2</text><line x1=\"124\" y1=\"259\" x2=\"124\" y2=\"265\" stroke=\"currentColor\"/><text x=\"124\" y=\"278\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.4</text><line x1=\"168\" y1=\"259\" x2=\"168\" y2=\"265\" stroke=\"currentColor\"/><text x=\"168\" y=\"278\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.6</text><line x1=\"212\" y1=\"259\" x2=\"212\" y2=\"265\" stroke=\"currentColor\"/><text x=\"212\" y=\"278\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0.8</text><line x1=\"256\" y1=\"259\" x2=\"256\" y2=\"265\" stroke=\"currentColor\"/><text x=\"256\" y=\"278\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"33\" y1=\"218.73\" x2=\"39\" y2=\"218.73\" stroke=\"currentColor\"/><text x=\"30\" y=\"222.73\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.2</text><line x1=\"33\" y1=\"175.45\" x2=\"39\" y2=\"175.45\" stroke=\"currentColor\"/><text x=\"30\" y=\"179.45\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.4</text><line x1=\"33\" y1=\"132.18\" x2=\"39\" y2=\"132.18\" stroke=\"currentColor\"/><text x=\"30\" y=\"136.18\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.6</text><line x1=\"33\" y1=\"88.91\" x2=\"39\" y2=\"88.91\" stroke=\"currentColor\"/><text x=\"30\" y=\"92.91\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">0.8</text><line x1=\"33\" y1=\"45.64\" x2=\"39\" y2=\"45.64\" stroke=\"currentColor\"/><text x=\"30\" y=\"49.64\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1</text><text x=\"31\" y=\"276\" font-size=\"11\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><text x=\"284\" y=\"255\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" text-anchor=\"end\" fill=\"currentColor\">x</text><text x=\"44\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><polyline points=\"36,262 37.22,260.8 38.43,259.61 39.65,258.41 40.86,257.22 42.08,256.02 43.3,254.82 44.51,253.63 45.73,252.43 46.94,251.24 48.16,250.04 49.38,248.84 50.59,247.65 51.81,246.45 53.03,245.26 54.24,244.06 55.46,242.86 56.67,241.67 57.89,240.47 59.11,239.28 60.32,238.08 61.54,236.88 62.75,235.69 63.97,234.49 65.19,233.3 66.4,232.1 67.62,230.9 68.83,229.71 70.05,228.51 71.27,227.32 72.48,226.12 73.7,224.92 74.91,223.73 76.13,222.53 77.35,221.34 78.56,220.14 79.78,218.94 80.99,217.75 82.21,216.55 83.43,215.36 84.64,214.16 85.86,212.96 87.08,211.77 88.29,210.57 89.51,209.38 90.72,208.18 91.94,206.98 93.16,205.79 94.37,204.59 95.59,203.4 96.8,202.2 98.02,201.01 99.24,199.81 100.45,198.61 101.67,197.42 102.88,196.22 104.1,195.03 105.32,193.83 106.53,192.63 107.75,191.44 108.96,190.24 110.18,189.05 111.4,187.85 112.61,186.65 113.83,185.46 115.05,184.26 116.26,183.07 117.48,181.87 118.69,180.67 119.91,179.48 121.13,178.28 122.34,177.09 123.56,175.89 124.77,174.69 125.99,173.5 127.21,172.3 128.42,171.11 129.64,169.91 130.85,168.71 132.07,167.52 133.29,166.32 134.5,165.13 135.72,163.93 136.93,162.73 138.15,161.54 139.37,160.34 140.58,159.15 141.8,157.95 143.02,156.75 144.23,155.56 145.45,154.36 146.66,153.17 147.88,151.97 149.1,150.77 150.31,149.58 151.53,148.38 152.74,147.19 153.96,145.99 155.18,144.79 156.39,143.6 157.61,142.4 158.82,141.21 160.04,140.01 161.26,138.81 162.47,137.62 163.69,136.42 164.9,135.23 166.12,134.03 167.34,132.83 168.55,131.64 169.77,130.44 170.98,129.25 172.2,128.05 173.42,126.85 174.63,125.66 175.85,124.46 177.07,123.27 178.28,122.07 179.5,120.87 180.71,119.68 181.93,118.48 183.15,117.29 184.36,116.09 185.58,114.89 186.79,113.7 188.01,112.5 189.23,111.31 190.44,110.11 191.66,108.91 192.87,107.72 194.09,106.52 195.31,105.33 196.52,104.13 197.74,102.93 198.95,101.74 200.17,100.54 201.39,99.35 202.6,98.15 203.82,96.95 205.04,95.76 206.25,94.56 207.47,93.37 208.68,92.17 209.9,90.97 211.12,89.78 212.33,88.58 213.55,87.39 214.76,86.19 215.98,84.99 217.2,83.8 218.41,82.6 219.63,81.41 220.84,80.21 222.06,79.02 223.28,77.82 224.49,76.62 225.71,75.43 226.92,74.23 228.14,73.04 229.36,71.84 230.57,70.64 231.79,69.45 233.01,68.25 234.22,67.06 235.44,65.86 236.65,64.66 237.87,63.47 239.09,62.27 240.3,61.08 241.52,59.88 242.73,58.68 243.95,57.49 245.17,56.29 246.38,55.1 247.6,53.9 248.81,52.7 250.03,51.51 251.25,50.31 252.46,49.12 253.68,47.92 254.89,46.72 256.11,45.53 257.33,44.33 258.54,43.14 259.76,41.94 260.97,40.74 262.19,39.55 263.41,38.35 264.62,37.16 265.84,35.96 267.06,34.76 268.27,33.57 269.49,32.37 270.7,31.18 271.92,29.98 273.14,28.78 274.35,27.59 275.57,26.39 276.78,25.2 278,24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><polyline points=\"36,45.64 37.22,45.64 38.43,45.65 39.65,45.67 40.86,45.69 42.08,45.72 43.3,45.76 44.51,45.8 45.73,45.85 46.94,45.9 48.16,45.97 49.38,46.04 50.59,46.11 51.81,46.19 53.03,46.28 54.24,46.38 55.46,46.48 56.67,46.59 57.89,46.71 59.11,46.83 60.32,46.96 61.54,47.09 62.75,47.23 63.97,47.38 65.19,47.54 66.4,47.7 67.62,47.87 68.83,48.04 70.05,48.22 71.27,48.41 72.48,48.6 73.7,48.81 74.91,49.01 76.13,49.23 77.35,49.45 78.56,49.67 79.78,49.91 80.99,50.15 82.21,50.39 83.43,50.64 84.64,50.9 85.86,51.17 87.08,51.44 88.29,51.72 89.51,52 90.72,52.3 91.94,52.59 93.16,52.9 94.37,53.21 95.59,53.52 96.8,53.85 98.02,54.18 99.24,54.51 100.45,54.86 101.67,55.2 102.88,55.56 104.1,55.92 105.32,56.29 106.53,56.66 107.75,57.04 108.96,57.43 110.18,57.82 111.4,58.22 112.61,58.62 113.83,59.03 115.05,59.45 116.26,59.88 117.48,60.31 118.69,60.74 119.91,61.18 121.13,61.63 122.34,62.09 123.56,62.55 124.77,63.01 125.99,63.49 127.21,63.96 128.42,64.45 129.64,64.94 130.85,65.44 132.07,65.94 133.29,66.45 134.5,66.96 135.72,67.48 136.93,68.01 138.15,68.54 139.37,69.08 140.58,69.63 141.8,70.18 143.02,70.73 144.23,71.3 145.45,71.86 146.66,72.44 147.88,73.02 149.1,73.6 150.31,74.19 151.53,74.79 152.74,75.39 153.96,76 155.18,76.61 156.39,77.23 157.61,77.86 158.82,78.49 160.04,79.13 161.26,79.77 162.47,80.41 163.69,81.07 164.9,81.73 166.12,82.39 167.34,83.06 168.55,83.73 169.77,84.42 170.98,85.1 172.2,85.79 173.42,86.49 174.63,87.19 175.85,87.9 177.07,88.61 178.28,89.33 179.5,90.05 180.71,90.78 181.93,91.52 183.15,92.25 184.36,93 185.58,93.75 186.79,94.5 188.01,95.26 189.23,96.03 190.44,96.8 191.66,97.57 192.87,98.35 194.09,99.14 195.31,99.93 196.52,100.72 197.74,101.52 198.95,102.32 200.17,103.13 201.39,103.95 202.6,104.77 203.82,105.59 205.04,106.42 206.25,107.25 207.47,108.09 208.68,108.94 209.9,109.78 211.12,110.64 212.33,111.49 213.55,112.35 214.76,113.22 215.98,114.09 217.2,114.97 218.41,115.85 219.63,116.73 220.84,117.62 222.06,118.51 223.28,119.41 224.49,120.31 225.71,121.22 226.92,122.13 228.14,123.04 229.36,123.96 230.57,124.88 231.79,125.81 233.01,126.74 234.22,127.68 235.44,128.62 236.65,129.56 237.87,130.51 239.09,131.46 240.3,132.42 241.52,133.37 242.73,134.34 243.95,135.31 245.17,136.28 246.38,137.25 247.6,138.23 248.81,139.21 250.03,140.2 251.25,141.19 252.46,142.19 253.68,143.18 254.89,144.18 256.11,145.19 257.33,146.2 258.54,147.21 259.76,148.23 260.97,149.24 262.19,150.27 263.41,151.29 264.62,152.32 265.84,153.35 267.06,154.39 268.27,155.43 269.49,156.47 270.7,157.52 271.92,158.57 273.14,159.62 274.35,160.67 275.57,161.73 276.78,162.79 278,163.86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><polyline points=\"80,262 80,49.95 251.61,49.95 251.61,141.49 158.53,141.49 158.53,78.34 222.75,78.34 222.75,119.02 181.38,119.02 181.38,91.19 209.69,91.19\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.2\"/><line x1=\"251.61\" y1=\"262\" x2=\"251.61\" y2=\"49.95\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-dasharray=\"3 3\"/><line x1=\"158.53\" y1=\"262\" x2=\"158.53\" y2=\"141.49\" stroke=\"currentColor\" stroke-width=\"0.9\" stroke-dasharray=\"3 3\"/><text x=\"83\" y=\"257\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">x₀</text><text x=\"161.53\" y=\"257\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">x₂</text><text x=\"248.61\" y=\"257\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">x₁</text><text x=\"226.4\" y=\"33.31\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\" font-style=\"italic\">y = x</text><text x=\"265\" y=\"170.34\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\" font-style=\"italic\">y = cos x</text></svg>",
+  "question": "The diagram shows the graphs of $y = x$ and $y = \\cos x$ (radians), together with the first few steps of the iteration $x_{n+1} = \\cos x_n$ starting from $x_0 = 0.2$.\n\n(a) Find $x_1$, $x_2$ and $x_3$ to 4 decimal places.\n\n(b) State the name of this type of diagram, and explain, by considering the gradient of $y = \\cos x$ near the root, why the iteration converges and why the iterates fall alternately on either side of the root.\n\n(c) The same equation $x = \\cos x$ can be rearranged as $x = \\cos^{-1} x$. Explain why the iteration $x_{n+1} = \\cos^{-1} x_n$ will not converge to the root $\\alpha = 0.7391$, even with $x_0$ very close to $\\alpha$.",
+  "hint": "An iteration $x_{n+1} = g(x_n)$ converges to $\\alpha$ if $|g'(\\alpha)| < 1$; the sign of $g'(\\alpha)$ decides between a staircase and a cobweb. $\\dfrac{d}{dx}\\cos^{-1}x = -\\dfrac{1}{\\sqrt{1 - x^2}}$.",
+  "answer": "(a) $x_1 = 0.9801$, $x_2 = 0.5570$, $x_3 = 0.8489$\n(b) A cobweb diagram; $g'(\\alpha) = -\\sin\\alpha \\approx -0.67$, which lies between $-1$ and $0$, so it converges and oscillates either side of the root.\n(c) $g'(\\alpha) = -\\dfrac{1}{\\sqrt{1 - \\alpha^2}} \\approx -1.48$, so $|g'(\\alpha)| > 1$ and the iterates move away from the root.",
+  "solution": "**(a)** $x_1 = \\cos 0.2 = 0.9801$, $x_2 = \\cos 0.9801\\ldots = 0.5570$, $x_3 = \\cos 0.5570\\ldots = 0.8489$\n\n**(b)** It is a **cobweb** diagram: the path spirals in towards the intersection of $y = x$ and $y = \\cos x$.\n\nWith $g(x) = \\cos x$, $g'(x) = -\\sin x$, and near the root $\\alpha \\approx 0.739$:\n$$g'(\\alpha) = -\\sin 0.739 \\approx -0.67$$\n\nSince $|g'(\\alpha)| < 1$, each error is multiplied by about $0.67$ in size, so the iterates get closer to $\\alpha$ and the iteration **converges**. Because $g'(\\alpha)$ is **negative**, the error also changes sign at each step: if $x_n < \\alpha$ then $x_{n+1} > \\alpha$ and vice versa. That is why the values go $0.98, 0.56, 0.85, 0.66, \\ldots$ alternately above and below $0.739$, producing a cobweb rather than a staircase.\n\n**(c)** For $g(x) = \\cos^{-1}x$, $g'(x) = -\\dfrac{1}{\\sqrt{1 - x^2}}$, so\n$$g'(\\alpha) = -\\frac{1}{\\sqrt{1 - 0.7391^2}} \\approx -1.48$$\n\nNow $|g'(\\alpha)| > 1$: each error is multiplied by about $1.48$ in size, so the iterates spiral **away** from $\\alpha$ (a diverging cobweb), however close $x_0$ is (unless $x_0 = \\alpha$ exactly). Geometrically, $y = \\cos^{-1}x$ is the reflection of $y = \\cos x$ in $y = x$, so its gradient at $\\alpha$ is the reciprocal, $\\frac{1}{-0.67} \\approx -1.48$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q14",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Sanjay borrows £10 000 and repays it with five equal annual payments of £2300, the first one year after the loan. The annual interest rate $r$ (as a decimal) satisfies\n$$f(r) = 0, \\quad \\text{where } f(r) = \\frac{2300}{1 + r} + \\frac{2300}{(1 + r)^2} + \\frac{2300}{(1 + r)^3} + \\frac{2300}{(1 + r)^4} + \\frac{2300}{(1 + r)^5} - 10\\,000$$\n\n(a) Find $f(0.04)$ and $f(0.05)$, and explain what they show.\n\n(b) Show that the interest rate is $4.8\\%$ to 1 decimal place.\n\n(c) Explain why $f(r)$ is decreasing for $r > 0$, and hence why the interest rate found is the only one.",
+  "hint": "Each term is a payment \"discounted\" back to the start. $4.8\\%$ to 1 d.p. means $r$ is between $0.0475$ and $0.0485$.",
+  "answer": "(a) $f(0.04) = 239.19 > 0$, $f(0.05) = -42.20 < 0$: sign change, $f$ continuous for $r > 0$, so the rate is between 4% and 5%.\n(b) $f(0.0475) = 26.99 > 0$, $f(0.0485) = -0.78 < 0$, so $4.75\\% < r < 4.85\\%$, i.e. $4.8\\%$ (1 d.p.).\n(c) Each term $\\frac{2300}{(1 + r)^k}$ decreases as $r$ increases, so $f$ is strictly decreasing and can cross zero only once.",
+  "solution": "**(a)** Using a calculator:\n\n$f(0.04) = 10\\,239.19 - 10\\,000 = 239.19 > 0$\n\n$f(0.05) = 9957.80 - 10\\,000 = -42.20 < 0$\n\n$f$ is continuous for $r > 0$ (no denominator is zero), so the sign change shows the interest rate is between $4\\%$ and $5\\%$.\n\n**(b)** $4.8\\%$ to 1 d.p. means $0.0475 \\le r < 0.0485$:\n\n$f(0.0475) = 26.99 > 0$, $f(0.0485) = -0.78 < 0$\n\nSign change and $f$ continuous, so $0.0475 < r < 0.0485$: the interest rate is $4.8\\%$ (1 d.p.).\n\n(Testing $0.048$ and $0.049$ would not be enough, since a rate of $4.86\\%$, say, would round to $4.9\\%$.)\n\n**(c)** For $r > 0$, as $r$ increases each denominator $(1 + r)^k$ increases, so each term $\\frac{2300}{(1 + r)^k}$ decreases. Hence $f$ is strictly decreasing and can equal zero at most once. So the root found (about $4.85\\%$) is the only possible interest rate.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q15",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 4,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A spherical marker buoy of radius 1 m floats in water. Its density is 0.4 times that of water, so it floats with $0.4$ of its volume submerged. The submerged part is a spherical cap of depth $h$ metres, with volume $\\frac{1}{3}\\pi h^2(3 - h)$.\n\n(a) Show that $h$ satisfies $h^3 - 3h^2 + 1.6 = 0$.\n\n(b) Explain why only a root with $0 < h < 2$ is relevant, and show that there is a root between $0.8$ and $0.9$.\n\n(c) Use the Newton–Raphson method with $h_0 = 1$ to find $h_1$ and $h_2$, giving $h_2$ to 4 decimal places. Interpret your answer.\n\n(d) Explain why $h_0 = 2$ would be a poor choice of starting value.",
+  "hint": "Volume of a sphere of radius 1 is $\\frac{4}{3}\\pi$. For (d), find $f'(2)$.",
+  "answer": "(a) Shown (b) The depth must be between 0 and the diameter 2; $f(0.8) = 0.192 > 0$, $f(0.9) = -0.101 < 0$ (c) $h_1 = 0.8667$, $h_2 = 0.8659$: the buoy floats with about 0.866 m (87 cm) below the waterline (d) $f'(2) = 0$, so the tangent is horizontal and Newton–Raphson fails.",
+  "solution": "**(a)** Submerged volume $= 0.4 \\times \\frac{4}{3}\\pi(1)^3$:\n$$\\tfrac{1}{3}\\pi h^2(3 - h) = 0.4 \\times \\tfrac{4}{3}\\pi \\Rightarrow h^2(3 - h) = 1.6$$\n$$3h^2 - h^3 = 1.6 \\Rightarrow h^3 - 3h^2 + 1.6 = 0$$\n\n**(b)** The depth of the cap cannot be negative or more than the diameter, so $0 < h < 2$. (The cubic also has roots near $-0.66$ and $2.80$, which make no physical sense.)\n\nLet $f(h) = h^3 - 3h^2 + 1.6$: $f(0.8) = 0.512 - 1.92 + 1.6 = 0.192 > 0$, $f(0.9) = 0.729 - 2.43 + 1.6 = -0.101 < 0$. Sign change and $f$ continuous, so there is a root in $(0.8, 0.9)$.\n\n**(c)** $f'(h) = 3h^2 - 6h$\n\n$f(1) = -0.4$, $f'(1) = -3$:\n$$h_1 = 1 - \\frac{-0.4}{-3} = 1 - 0.1333\\ldots = 0.8667 \\text{ (4 d.p.)}$$\n\n$f(h_1) = -0.002370\\ldots$, $f'(h_1) = -2.9467\\ldots$:\n$$h_2 = 0.8667\\ldots - \\frac{-0.002370\\ldots}{-2.9467\\ldots} = 0.8659 \\text{ (4 d.p.)}$$\n\nThe buoy floats with its lowest point about $0.866$ m (about 87 cm) below the water surface, i.e. a little less than half its 2 m height submerged, as expected since less than half its volume is under water.\n\n**(d)** $f'(2) = 12 - 12 = 0$. The Newton–Raphson formula would divide by zero: the tangent at $h = 2$ is horizontal (a turning point of $f$) and never meets the $h$-axis, so $h_1$ cannot be calculated. Starting values near 2 (or near 0, where $f'(0) = 0$ too) give very large, unreliable steps.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-numerical-methods-q16",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-derivatives-exp-log-trig",
+   "calc-stationary-points"
+  ],
+  "question": "The curve $C$ has equation $y = x\\ln x - \\dfrac{x^2}{4}$, $x > 0$.\n\n(a) Show that the $x$-coordinates of the stationary points of $C$ satisfy $\\ln x + 1 - \\dfrac{x}{2} = 0$.\n\n(b) Show that $C$ has a stationary point with $x$-coordinate $\\beta$ in the interval $[5, 6]$.\n\n(c) Use the Newton–Raphson method with $x_0 = 5$ to find $x_1$ and $x_2$, giving your answers to 4 decimal places.\n\n(d) Show that $\\beta = 5.357$ to 3 decimal places, and determine the nature of this stationary point.",
+  "hint": "Use the product rule on $x\\ln x$. In (c) the function you apply Newton–Raphson to is $g(x) = \\ln x + 1 - \\frac{x}{2}$, so you need $g'(x)$, which is the second derivative of the curve.",
+  "answer": "(a) $\\dfrac{dy}{dx} = \\ln x + 1 - \\dfrac{x}{2}$ (b) $g(5) = 0.109 > 0$, $g(6) = -0.208 < 0$ (c) $x_1 = 5.3648$, $x_2 = 5.3567$ (d) $g(5.3565) > 0$, $g(5.3575) < 0$; $\\dfrac{d^2y}{dx^2} = \\dfrac{1}{x} - \\dfrac{1}{2} < 0$, so it is a maximum.",
+  "solution": "**(a)** Product rule: $\\dfrac{d}{dx}(x\\ln x) = \\ln x + x \\cdot \\dfrac{1}{x} = \\ln x + 1$. So\n$$\\frac{dy}{dx} = \\ln x + 1 - \\frac{x}{2}$$\nStationary points where $\\frac{dy}{dx} = 0$: $\\ln x + 1 - \\frac{x}{2} = 0$.\n\n**(b)** Let $g(x) = \\ln x + 1 - \\frac{x}{2}$.\n$g(5) = \\ln 5 + 1 - 2.5 = 0.109 > 0$, $g(6) = \\ln 6 + 1 - 3 = -0.208 < 0$.\n$g$ is continuous for $x > 0$, so there is a root $\\beta$ in $(5, 6)$: a stationary point of $C$.\n\n**(c)** $g'(x) = \\dfrac{1}{x} - \\dfrac{1}{2}$\n\n$x_1 = 5 - \\dfrac{0.10944\\ldots}{0.2 - 0.5} = 5 + 0.36479\\ldots = 5.3648$\n\n$x_2 = 5.3648\\ldots - \\dfrac{g(5.3648\\ldots)}{g'(5.3648\\ldots)} = 5.3567$ (4 d.p.)\n\n**(d)** $g(5.3565) = 0.0000608 > 0$, $g(5.3575) = -0.000253 < 0$. Sign change, $g$ continuous, so $5.3565 < \\beta < 5.3575$: $\\beta = 5.357$ (3 d.p.).\n\n$\\dfrac{d^2y}{dx^2} = g'(x) = \\dfrac{1}{x} - \\dfrac{1}{2}$, and at $x = \\beta \\approx 5.357$ this is $0.187 - 0.5 < 0$, so the stationary point is a **maximum**.\n\n(The other stationary point, near $x = 0.464$, has $\\frac{d^2y}{dx^2} > 0$: a minimum.)"
+ },
+ {
+  "id": "pure-numerical-methods-q17",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-surds",
+   "alg-algebraic-fractions"
+  ],
+  "question": "Let $a$ be a positive number. The Newton–Raphson method is applied to $f(x) = x^2 - a$ to find $\\sqrt{a}$.\n\n(a) Show that the iteration can be written as $x_{n+1} = \\dfrac{1}{2}\\left(x_n + \\dfrac{a}{x_n}\\right)$.\n\n(b) Prove that, for $x_n > 0$,\n$$x_{n+1} - \\sqrt{a} = \\frac{\\left(x_n - \\sqrt{a}\\right)^2}{2x_n}$$\n\n(c) Hence explain why, for any $x_0 > 0$, every iterate from $x_1$ onwards is at least $\\sqrt{a}$, and why the number of correct decimal places roughly doubles at each step once $x_n$ is close to $\\sqrt{a}$.\n\n(d) Taking $a = 10$ and $x_0 = 3$, find $x_1$ and $x_2$ as exact fractions, and state how many decimal places of $x_2$ agree with $\\sqrt{10} = 3.16227766\\ldots$",
+  "hint": "For (b), write $x_{n+1} - \\sqrt{a}$ as a single fraction over $2x_n$ and recognise a perfect square in the numerator.",
+  "answer": "(a) $x_{n+1} = x_n - \\dfrac{x_n^2 - a}{2x_n} = \\dfrac{x_n^2 + a}{2x_n}$ (b) Shown (c) The right-hand side is $\\ge 0$; the new error is about (old error)$^2 \\div 2\\sqrt{a}$. (d) $x_1 = \\frac{19}{6}$, $x_2 = \\frac{721}{228} = 3.1622807\\ldots$, which agrees with $\\sqrt{10}$ to 5 decimal places.",
+  "solution": "**(a)** $f'(x) = 2x$, so\n$$x_{n+1} = x_n - \\frac{x_n^2 - a}{2x_n} = \\frac{2x_n^2 - x_n^2 + a}{2x_n} = \\frac{x_n^2 + a}{2x_n} = \\frac{1}{2}\\left(x_n + \\frac{a}{x_n}\\right)$$\n\n**(b)**\n$$x_{n+1} - \\sqrt{a} = \\frac{x_n^2 + a}{2x_n} - \\frac{2x_n\\sqrt{a}}{2x_n} = \\frac{x_n^2 - 2x_n\\sqrt{a} + a}{2x_n} = \\frac{\\left(x_n - \\sqrt{a}\\right)^2}{2x_n}$$\nsince $\\left(\\sqrt{a}\\right)^2 = a$. $\\blacksquare$\n\n**(c)** If $x_n > 0$, the right-hand side is a square divided by a positive number, so it is $\\ge 0$: $x_{n+1} \\ge \\sqrt{a}$ (and $x_{n+1} > 0$, so this continues for every later step). So from $x_1$ onwards every iterate is at least $\\sqrt{a}$.\n\nWrite $e_n = x_n - \\sqrt{a}$. When $x_n \\approx \\sqrt{a}$,\n$$e_{n+1} \\approx \\frac{e_n^2}{2\\sqrt{a}}$$\nIf $e_n \\approx 10^{-k}$ then $e_{n+1}$ is roughly $10^{-2k}$ (times a constant): the number of correct decimal places roughly doubles each step (quadratic convergence).\n\n**(d)** $x_1 = \\dfrac{1}{2}\\left(3 + \\dfrac{10}{3}\\right) = \\dfrac{19}{6} = 3.1666\\ldots$\n\n$x_2 = \\dfrac{1}{2}\\left(\\dfrac{19}{6} + \\dfrac{60}{19}\\right) = \\dfrac{1}{2} \\times \\dfrac{361 + 360}{114} = \\dfrac{721}{228} = 3.16228070\\ldots$\n\nCompared with $\\sqrt{10} = 3.16227766\\ldots$, $x_2$ agrees to 5 decimal places ($3.16228$), with error about $3.0 \\times 10^{-6}$.\n\nCheck with (b): $e_0 = 3 - \\sqrt{10} \\approx -0.1623$, so $e_1 = \\frac{0.1623^2}{6} \\approx 0.00439$ ✓ ($\\frac{19}{6} - \\sqrt{10} = 0.00439$), then $e_2 = \\frac{0.00439^2}{2 \\times 19/6} \\approx 3.0 \\times 10^{-6}$ ✓"
+ },
+ {
+  "id": "pure-numerical-methods-q18",
+  "topicId": "pure-numerical-methods",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "$f(x) = x^3 - 2x + 2$.\n\n(a) Show that applying the Newton–Raphson method to $f$ with $x_0 = 0$ produces a sequence that never converges.\n\n(b) Use calculus to show that $f(x) = 0$ has exactly one real root $\\alpha$, and that $\\alpha < -1$.\n\n(c) Choose a suitable starting value and use the Newton–Raphson method to find $\\alpha$ correct to 3 decimal places, justifying the accuracy of your answer.",
+  "hint": "For (a), find $x_1$ and $x_2$. For (b), find the turning points of $f$ and the signs of $f$ there. For (c), start on the correct side of the turning points, e.g. $x_0 = -2$.",
+  "answer": "(a) $x_1 = 1$, $x_2 = 0$, so the sequence alternates $0, 1, 0, 1, \\ldots$\n(b) Turning points at $x = \\pm\\sqrt{\\frac{2}{3}}$ with $f > 0$ at both; $f(-2) = -2 < 0$, $f(-1) = 3 > 0$\n(c) $\\alpha = -1.769$ (3 d.p.)",
+  "solution": "**(a)** $f'(x) = 3x^2 - 2$.\n\n$x_1 = 0 - \\dfrac{f(0)}{f'(0)} = 0 - \\dfrac{2}{-2} = 1$\n\n$x_2 = 1 - \\dfrac{f(1)}{f'(1)} = 1 - \\dfrac{1}{1} = 0$\n\nSo $x_2 = x_0$, and the iterates repeat $0, 1, 0, 1, \\ldots$ for ever: a 2-cycle that never converges. (The tangent at $x = 0$ hits the axis at 1, and the tangent at $x = 1$ hits the axis at 0. Both points are near the turning points of $f$, far from the root.)\n\n**(b)** $f'(x) = 0 \\Rightarrow x = \\pm\\sqrt{\\frac{2}{3}} = \\pm 0.8165\\ldots$\n\n$f\\left(-\\sqrt{\\tfrac{2}{3}}\\right) = 3.089 > 0$ (local maximum), $f\\left(\\sqrt{\\tfrac{2}{3}}\\right) = 0.911 > 0$ (local minimum).\n\nFor $x > -0.8165$ the function never goes below its minimum value $0.911 > 0$ (it decreases to the minimum, then increases), so there are no roots there. For $x < -0.8165$, $f$ is strictly increasing (from $-\\infty$ up to $3.089$), so it crosses zero exactly once. Hence exactly one real root.\n\n$f(-2) = -8 + 4 + 2 = -2 < 0$ and $f(-1) = -1 + 2 + 2 = 3 > 0$, so $-2 < \\alpha < -1$; in particular $\\alpha < -1$.\n\n**(c)** Take $x_0 = -2$ (left of the turning points, where $f$ is increasing and the tangent leads towards the root).\n\n$x_1 = -2 - \\dfrac{-2}{10} = -1.8$\n\n$x_2 = -1.8 - \\dfrac{-0.232}{7.72} = -1.76995\\ldots$\n\n$x_3 = -1.76929\\ldots$, $x_4 = -1.76929\\ldots$\n\nThis suggests $\\alpha = -1.769$ (3 d.p.). Check with the rounding bounds:\n\n$f(-1.7695) = -0.00153 < 0$, $f(-1.7685) = 0.00585 > 0$\n\nSign change and $f$ continuous, so $-1.7695 < \\alpha < -1.7685$: $\\alpha = -1.769$ (3 d.p.).",
+  "linkedTopicIds": []
+ }
+]

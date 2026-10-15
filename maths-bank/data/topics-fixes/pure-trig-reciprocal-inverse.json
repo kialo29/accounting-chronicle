@@ -1,0 +1,26 @@
+{
+ "id": "pure-trig-reciprocal-inverse",
+ "keyIdea": "**Reciprocal functions:**\n$$\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}$$\n(US texts write $\\csc\\theta$ for cosec.) Pair them by the **third** letter: se**c**–**c**os, co**s**ec–**s**in.\n\n**Graphs:** $\\sec$ has asymptotes where $\\cos\\theta = 0$; $\\operatorname{cosec}$ and $\\cot$ where $\\sin\\theta = 0$. $\\sec$ and $\\operatorname{cosec}$ take values $\\le -1$ or $\\ge 1$ only.\n\n**Identities** (divide $\\sin^2\\theta + \\cos^2\\theta = 1$ by $\\cos^2\\theta$ or $\\sin^2\\theta$):\n$$1 + \\tan^2\\theta \\equiv \\sec^2\\theta \\qquad 1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$$\n\n**Inverse functions** (restricted domains so they are one-to-one):\n* $\\arcsin x$: domain $[-1, 1]$, range $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$\n* $\\arccos x$: domain $[-1, 1]$, range $[0, \\pi]$\n* $\\arctan x$: domain all reals, range $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$\n\n$\\arcsin x = \\sin^{-1}x$ is **not** $\\frac{1}{\\sin x}$.",
+ "misconceptions": [
+  {
+   "id": "m1",
+   "text": "Pairs reciprocal functions by first letter: writes $\\sec\\theta = \\frac{1}{\\sin\\theta}$ and $\\operatorname{cosec}\\theta = \\frac{1}{\\cos\\theta}$.",
+   "correction": "$\\sec\\theta = \\frac{1}{\\cos\\theta}$ and $\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}$ (third letters: se**c** ↔ **c**os, co**s**ec ↔ **s**in). E.g. $\\sec 60° = \\frac{1}{\\cos 60°} = 2$."
+  },
+  {
+   "id": "m2",
+   "text": "Treats the inverse as the reciprocal: writes $\\sin^{-1}(0.5) = \\frac{1}{\\sin 0.5}$, or $\\arccos x = \\sec x$.",
+   "correction": "$\\sin^{-1}x$ (= $\\arcsin x$) is the **angle** whose sine is $x$: $\\sin^{-1}(0.5) = \\frac{\\pi}{6}$. The reciprocal $\\frac{1}{\\sin x}$ is $\\operatorname{cosec}x$."
+  },
+  {
+   "id": "m3",
+   "text": "Gives an inverse-trig value outside the principal range, e.g. $\\arccos\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{3}$ or $\\arcsin\\left(-\\frac{1}{2}\\right) = \\frac{7\\pi}{6}$.",
+   "correction": "$\\arccos$ outputs values in $[0, \\pi]$: $\\arccos\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$. $\\arcsin$ outputs values in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$: $\\arcsin\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$."
+  },
+  {
+   "id": "m4",
+   "text": "Gets the Pythagorean identities wrong: writes $\\tan^2\\theta = 1 + \\sec^2\\theta$ or $\\sec^2\\theta = \\tan^2\\theta - 1$.",
+   "correction": "Derive it: divide $\\sin^2\\theta + \\cos^2\\theta = 1$ by $\\cos^2\\theta$ to get $\\tan^2\\theta + 1 = \\sec^2\\theta$, so $\\tan^2\\theta = \\sec^2\\theta - 1$. (Check at $\\theta = 0$: $0 + 1 = 1$.)"
+  }
+ ]
+}
