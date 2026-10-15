@@ -1,0 +1,292 @@
+[
+ {
+  "id": "geo-similarity-q01",
+  "topicId": "geo-similarity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangles $ABC$ and $DEF$ are similar, with $A$ corresponding to $D$, $B$ to $E$ and $C$ to $F$.\n\n$AB = 4$ cm, $BC = 5$ cm and $DE = 12$ cm. Work out the length of $EF$.",
+  "hint": "Find the scale factor from $ABC$ to $DEF$ using the pair $AB$ and $DE$.",
+  "answer": "$EF = 15$ cm",
+  "solution": "Scale factor from $ABC$ to $DEF$:\n$$k = \\frac{DE}{AB} = \\frac{12}{4} = 3$$\n\n$EF$ corresponds to $BC$, so\n$$EF = 5 \\times 3 = 15\\text{ cm}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q02",
+  "topicId": "geo-similarity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangles $ABC$ and $DEF$ are similar, with $A$ corresponding to $D$, $B$ to $E$ and $C$ to $F$.\n\n$AB = 4$ cm, $BC = 5$ cm and $DE = 10$ cm. Work out the length of $EF$.",
+  "hint": "The method is the same, but the scale factor is no longer a whole number.",
+  "answer": "$EF = 12.5$ cm",
+  "solution": "**What changed:** $DE$ is now 10 cm, so the scale factor is not a whole number.\n$$k = \\frac{10}{4} = 2.5$$\n$$EF = 5 \\times 2.5 = 12.5\\text{ cm}$$\n\n(Adding $10 - 4 = 6$ to get $5 + 6 = 11$ would be wrong: similar shapes are related by multiplying, not adding.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q03",
+  "topicId": "geo-similarity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangles $ABC$ and $DEF$ are similar, with $A$ corresponding to $D$, $B$ to $E$ and $C$ to $F$.\n\n$AB = 4$ cm, $DE = 10$ cm and $EF = 15$ cm. Work out the length of $BC$.",
+  "hint": "This time the unknown is on the smaller triangle. Do you multiply or divide by the scale factor?",
+  "answer": "$BC = 6$ cm",
+  "solution": "**What changed:** the unknown is now on the smaller triangle $ABC$.\n\nThe scale factor from $ABC$ to $DEF$ is still $k = \\frac{10}{4} = 2.5$. Going from the large triangle back to the small one, **divide**:\n$$BC = 15 \\div 2.5 = 6\\text{ cm}$$\n\nCheck: $6 \\times 2.5 = 15$ ✓, and $BC < EF$ as expected.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q04",
+  "topicId": "geo-similarity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangles $ABC$ and $DEF$ are similar, with $A$ corresponding to $D$, $B$ to $E$ and $C$ to $F$.\n\n$AB = 10$ cm, $BC = 15$ cm and $DE = 4$ cm. Work out the length of $EF$.",
+  "hint": "Now $DEF$ is the smaller triangle. The scale factor from $ABC$ to $DEF$ is less than 1.",
+  "answer": "$EF = 6$ cm",
+  "solution": "**What changed:** now $ABC$ is the larger triangle, so the scale factor from $ABC$ to $DEF$ is less than 1:\n$$k = \\frac{DE}{AB} = \\frac{4}{10} = 0.4$$\n$$EF = 15 \\times 0.4 = 6\\text{ cm}$$\n\nMultiplying by a scale factor between 0 and 1 makes lengths smaller.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q05",
+  "topicId": "geo-similarity",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "In the diagram, $\\angle BAC = \\angle PRQ$ (one arc) and $\\angle ABC = \\angle RPQ$ (two arcs).\n\n$AB = 8$ cm, $AC = 10$ cm, $RP = 12$ cm and $PQ = 10.5$ cm.\n\n(a) Explain why triangles $ABC$ and $RPQ$ are similar.\n(b) Work out the length of $QR$.\n(c) Work out the length of $BC$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"20,240 108,240 99.1,163.5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><polygon points=\"262,153.5 357,219.1 200,270\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><path d=\"M31.5 228.9 A16 16 0 0 1 36 240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M92 240 A16 16 0 0 1 106.1 224.1\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M87 240 A21 21 0 0 1 105.6 219.1\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M208.5 254.1 A18 18 0 0 1 217.1 264.5\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M276.8 163.7 A18 18 0 0 1 253.5 169.3\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M280.9 166.5 A23 23 0 0 1 251.2 173.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"18\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"114\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"99.1\" y=\"155.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"268\" y=\"145.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"371\" y=\"224.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"188\" y=\"275\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"64\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 cm</text><text x=\"51.2\" y=\"193.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">10 cm</text><text x=\"239.8\" y=\"216.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">12 cm</text><text x=\"303.8\" y=\"194.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">10.5 cm</text></svg>",
+  "hint": "Match vertices using the marked angles: one arc with one arc, two arcs with two arcs. Then the third vertices match. Corresponding sides join corresponding vertices.",
+  "answer": "(a) Two pairs of equal angles (AA). (b) $QR = 15$ cm (c) $BC = 7$ cm",
+  "solution": "(a) Two pairs of angles are equal, so the third angles are equal too (angles in a triangle add up to $180^\\circ$). The triangles are similar (AA).\n\nMatching: $A \\leftrightarrow R$ (one arc), $B \\leftrightarrow P$ (two arcs), $C \\leftrightarrow Q$.\n\n(b) $AB$ (from one arc to two arcs) corresponds to $RP$, so the scale factor from $ABC$ to $RPQ$ is\n$$k = \\frac{RP}{AB} = \\frac{12}{8} = 1.5$$\n$QR$ corresponds to $CA$:\n$$QR = 10 \\times 1.5 = 15\\text{ cm}$$\n\n(c) $BC$ corresponds to $PQ$:\n$$BC = 10.5 \\div 1.5 = 7\\text{ cm}$$\n\nNote that the triangles face different ways, so pairing sides by their position on the page would give wrong answers. Always pair them through the matched vertices.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q06",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "In the diagram, $B$ lies on $AD$ and $C$ lies on $AE$, with $BC$ parallel to $DE$.\n\n$AB = 9$ cm, $BD = 3$ cm, $DE = 10$ cm and $AC = 6$ cm.\n\n(a) Work out the length of $BC$.\n(b) Work out the length of $CE$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"180,25 40,265 320,265\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"75\" y1=\"205\" x2=\"285\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"174,209.2 180,205 174,200.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"174,269.2 180,265 174,260.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"17\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"63\" y=\"209\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"297\" y=\"209\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"28\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"332\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"139.6\" y=\"127.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">9 cm</text><text x=\"69.6\" y=\"247.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3 cm</text><text x=\"180\" y=\"285\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10 cm</text><text x=\"220.4\" y=\"127.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">6 cm</text></svg>",
+  "hint": "Triangles $ABC$ and $ADE$ are similar. Use the whole side $AD = AB + BD$, not just $BD$.",
+  "answer": "(a) $BC = 7.5$ cm (b) $CE = 2$ cm",
+  "solution": "$\\angle A$ is common, and $\\angle ABC = \\angle ADE$ (corresponding angles, $BC \\parallel DE$), so triangles $ABC$ and $ADE$ are similar.\n\nWhole side: $AD = 9 + 3 = 12$ cm. Scale factor from $ADE$ to $ABC$:\n$$k = \\frac{AB}{AD} = \\frac{9}{12} = \\frac{3}{4}$$\n\n(a) $$BC = DE \\times \\tfrac{3}{4} = 10 \\times \\tfrac{3}{4} = 7.5\\text{ cm}$$\n\n(b) $AC$ corresponds to $AE$, so\n$$AE = 6 \\div \\tfrac{3}{4} = 8\\text{ cm}, \\qquad CE = AE - AC = 8 - 6 = 2\\text{ cm}$$\n\n(Check with the side-splitter theorem: $\\frac{AB}{BD} = \\frac{9}{3} = 3$ and $\\frac{AC}{CE} = \\frac{6}{2} = 3$ ✓.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q07",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "question": "In the diagram, the straight lines $AE$ and $BD$ cross at $C$. $AB$ is parallel to $DE$.\n\n$AC = 4$ cm, $BC = 4.4$ cm, $AB = 3$ cm and $CE = 10$ cm.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"149.5\" y1=\"14.7\" x2=\"238.8\" y2=\"250.3\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"203.1\" y1=\"7.9\" x2=\"104.8\" y2=\"267.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"149.5\" y1=\"14.7\" x2=\"203.1\" y2=\"7.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"104.8\" y1=\"267.2\" x2=\"238.8\" y2=\"250.3\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"170.8,16.2 176.3,11.3 169.8,7.9\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"166.4,263.7 171.8,258.7 165.3,255.3\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"137.5\" y=\"14.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"215.1\" y=\"7.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"189\" y=\"87\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"92.8\" y=\"277.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"250.8\" y=\"260.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"171.6\" y=\"44.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">4 cm</text><text x=\"179.7\" y=\"41.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">4.4 cm</text><text x=\"176.3\" y=\"2.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">3 cm</text><text x=\"195.7\" y=\"170.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">10 cm</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why triangles $ABC$ and $EDC$ are similar.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the length of $DE$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the length of $BD$.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "hint": "Use vertically opposite angles at $C$ and alternate angles from the parallel lines. $AC$ and $CE$ are corresponding sides.",
+  "answer": "(a) $\\angle ACB = \\angle ECD$ (vertically opposite), $\\angle BAC = \\angle DEC$ (alternate), so AA. (b) $DE = 7.5$ cm (c) $BD = 15.4$ cm",
+  "solution": "(a) $\\angle ACB = \\angle ECD$ (vertically opposite angles) B1\n\n$\\angle BAC = \\angle DEC$ (alternate angles, $AB \\parallel DE$), so the triangles have two pairs of equal angles and are similar. B1\n\nThe correspondence is $A \\leftrightarrow E$, $B \\leftrightarrow D$, $C \\leftrightarrow C$.\n\n(b) $AC$ corresponds to $EC$, so the scale factor from $ABC$ to $EDC$ is\n$$k = \\frac{10}{4} = 2.5 \\quad \\text{M1}$$\n$$DE = 3 \\times 2.5 = 7.5\\text{ cm} \\quad \\text{A1}$$\n\n(c) $CD$ corresponds to $CB$:\n$$CD = 4.4 \\times 2.5 = 11\\text{ cm} \\quad \\text{M1}$$\n$$BD = BC + CD = 4.4 + 11 = 15.4\\text{ cm} \\quad \\text{A1}$$",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-similarity-q08",
+  "topicId": "geo-similarity",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Triangles $PQR$ and $P'Q'R'$ are similar, with $P$ corresponding to $P'$, $Q$ to $Q'$ and $R$ to $R'$. $PQ = 8$ cm, $QR = 10$ cm and $P'Q' = 12$ cm.\n\nOllie's working to find $Q'R'$ is shown below.\n\n\"$PQ$ went from 8 to 12, which is $+4$. So $Q'R' = 10 + 4 = 14$ cm.\"\n\nIdentify Ollie's mistake, explain why it is wrong, and find the correct length of $Q'R'$.",
+  "hint": "Is $P'Q'R'$ an enlargement of $PQR$? What do enlargements do to every length?",
+  "answer": "He added the difference instead of multiplying by the scale factor. $Q'R' = 10 \\times 1.5 = 15$ cm.",
+  "solution": "**Mistake:** Ollie assumed every side increases by the same **amount** (4 cm). Similar shapes are enlargements, so every side is multiplied by the same **scale factor**.\n\nIf you added 4 cm to every side, a very short side would grow by a much bigger proportion than a long side, and the shape would change.\n\n**Correct working:**\n$$k = \\frac{P'Q'}{PQ} = \\frac{12}{8} = 1.5$$\n$$Q'R' = 10 \\times 1.5 = 15\\text{ cm}$$\n\nCheck: $\\frac{12}{8} = \\frac{15}{10} = 1.5$, the same ratio for both pairs. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q09",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "In the diagram, $BC$ is parallel to $DE$. $AB = 5$ cm, $BD = 10$ cm and $BC = 4$ cm.\n\nMia works out $DE$ like this:\n\n\"Scale factor $= \\dfrac{BD}{AB} = \\dfrac{10}{5} = 2$. So $DE = 4 \\times 2 = 8$ cm.\"\n\n(a) Explain Mia's mistake.\n(b) Work out the correct length of $DE$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"180,25 40,265 320,265\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"133.3\" y1=\"105\" x2=\"226.7\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"174,109.2 180,105 174,100.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"174,269.2 180,265 174,260.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"17\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"121.3\" y=\"109\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"238.7\" y=\"109\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"28\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"332\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"168.8\" y=\"77.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5 cm</text><text x=\"98.8\" y=\"197.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">10 cm</text><text x=\"180\" y=\"98\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4 cm</text></svg>",
+  "hint": "Which two triangles are similar? Sketch them separately. Which side of the large triangle corresponds to $AB$?",
+  "answer": "(a) She used the part $BD$ instead of the whole side $AD$. (b) $DE = 12$ cm",
+  "solution": "(a) The similar triangles are $ABC$ and $ADE$ (common angle $A$; corresponding angles $\\angle ABC = \\angle ADE$ since $BC \\parallel DE$). The side of the large triangle that corresponds to $AB$ is the **whole** of $AD$, not the piece $BD$. $BD$ is not a side of either triangle.\n\n(b) $$AD = AB + BD = 5 + 10 = 15\\text{ cm}$$\n$$k = \\frac{AD}{AB} = \\frac{15}{5} = 3$$\n$$DE = 4 \\times 3 = 12\\text{ cm}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q10",
+  "topicId": "geo-similarity",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Kai says, \"Rectangle $R$ measures 4 cm by 6 cm and rectangle $S$ measures 6 cm by 8 cm. All their angles are $90^\\circ$, so they are similar.\"\n\n(a) Explain why Kai is wrong.\n(b) Rectangle $T$ is similar to rectangle $R$ and one of its sides is 9 cm. Find the two possible lengths of the other side of $T$.\n(c) Are all squares similar? Explain your answer.",
+  "hint": "For shapes other than triangles, equal angles are not enough: compare the ratios of corresponding sides.",
+  "answer": "(a) $\\frac{6}{4} = 1.5$ but $\\frac{8}{6} = \\frac{4}{3}$; the sides are not in the same ratio. (b) 6 cm or 13.5 cm (c) Yes: all angles are $90^\\circ$ and all sides are in the same ratio.",
+  "solution": "(a) For polygons other than triangles, equal angles do **not** guarantee similarity. The sides must all be in the same ratio:\n$$\\frac{6}{4} = 1.5 \\qquad \\frac{8}{6} = 1.33\\ldots$$\nThese are different, so $S$ is not an enlargement of $R$ and the rectangles are not similar. (Equivalently, the length-to-width ratios are $1.5$ and $1.33\\ldots$.)\n\n(b) $T$ must have length $= 1.5 \\times$ width.\n* If 9 cm is the shorter side: other side $= 9 \\times 1.5 = 13.5$ cm.\n* If 9 cm is the longer side: other side $= 9 \\div 1.5 = 6$ cm.\n\n(c) Yes. Any two squares have all angles $90^\\circ$, and if their sides are $a$ and $b$, every side is multiplied by $\\frac{b}{a}$. So one is always an enlargement of the other.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q11",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Triangle $J$ has sides 4 cm, 6 cm and 8 cm.\nTriangle $K$ has sides 6 cm, 9 cm and 12 cm.\nTriangle $L$ has sides 6 cm, 8 cm and 12 cm.\n\n(a) Which of $K$ and $L$ is similar to $J$? Justify your answer.\n(b) Triangle $M$ has two sides of 5 cm and 7.5 cm with an angle of $40^\\circ$ between them. Triangle $N$ has two sides of 4 cm and 6 cm with an angle of $40^\\circ$ between them. Prove that $M$ and $N$ are similar.",
+  "hint": "Pair shortest with shortest, middle with middle and longest with longest, then compare the ratios. For (b), use SAS similarity.",
+  "answer": "(a) $K$ only: $\\frac{6}{4} = \\frac{9}{6} = \\frac{12}{8} = 1.5$ (SSS similarity); for $L$ the ratios $1.5$, $1.\\overline{3}$, $1.5$ differ. (b) $\\frac{5}{4} = \\frac{7.5}{6} = 1.25$ with equal included angles (SAS similarity).",
+  "solution": "(a) Order the sides and compare corresponding ratios.\n\n$J \\to K$: $\\dfrac{6}{4} = 1.5$, $\\dfrac{9}{6} = 1.5$, $\\dfrac{12}{8} = 1.5$. All three ratios are equal, so $K$ is similar to $J$ (SSS similarity), with scale factor 1.5.\n\n$J \\to L$: $\\dfrac{6}{4} = 1.5$, $\\dfrac{8}{6} = 1.33\\ldots$, $\\dfrac{12}{8} = 1.5$. The ratios are not all equal, so $L$ is **not** similar to $J$, even though two pairs match.\n\n(b) Pair the shorter sides and the longer sides:\n$$\\frac{5}{4} = 1.25, \\qquad \\frac{7.5}{6} = 1.25$$\nThe two pairs of sides are in the same ratio and the angles **between** them are both $40^\\circ$. So $M$ and $N$ are similar (SAS similarity), with $M$ an enlargement of $N$ by scale factor 1.25.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q12",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "In triangle $ABC$, $D$ is a point on $AB$ and $E$ is a point on $AC$.\n\n(a) $AD = 4$ cm, $DB = 6$ cm, $AE = 5$ cm and $EC = 7.5$ cm. Prove that $DE$ is parallel to $BC$.\n(b) In a different triangle, $AD = 4$ cm, $DB = 6$ cm, $AE = 5$ cm and $EC = 8$ cm. Is $DE$ parallel to $BC$? Explain.",
+  "hint": "Compare $\\frac{AD}{AB}$ with $\\frac{AE}{AC}$ (whole sides). If they are equal, triangles $ADE$ and $ABC$ are similar by SAS.",
+  "answer": "(a) $\\frac{AD}{AB} = \\frac{4}{10} = 0.4 = \\frac{5}{12.5} = \\frac{AE}{AC}$, so $\\triangle ADE \\sim \\triangle ABC$ (SAS) and $\\angle ADE = \\angle ABC$, giving $DE \\parallel BC$. (b) No: $\\frac{4}{10} = 0.4 \\ne \\frac{5}{13} \\approx 0.385$.",
+  "solution": "(a) Whole sides: $AB = 4 + 6 = 10$ cm and $AC = 5 + 7.5 = 12.5$ cm.\n$$\\frac{AD}{AB} = \\frac{4}{10} = 0.4, \\qquad \\frac{AE}{AC} = \\frac{5}{12.5} = 0.4$$\n\nSo triangles $ADE$ and $ABC$ have two sides in the same ratio and share the included angle $A$. They are similar (SAS similarity). Hence $\\angle ADE = \\angle ABC$. These are corresponding angles on the lines $DE$ and $BC$ cut by $AB$, so $DE \\parallel BC$.\n\n(This is the **converse of the side-splitter theorem**: if a line divides two sides of a triangle in the same ratio, here $\\frac{AD}{DB} = \\frac{AE}{EC} = \\frac{2}{3}$, it is parallel to the third side.)\n\n(b) $AC = 5 + 8 = 13$ cm:\n$$\\frac{AD}{AB} = 0.4, \\qquad \\frac{AE}{AC} = \\frac{5}{13} = 0.384\\ldots$$\nThe ratios are different. If $DE$ were parallel to $BC$, the triangles would be similar and these ratios would be equal (side-splitter theorem). So $DE$ is **not** parallel to $BC$.",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-similarity-q13",
+  "topicId": "geo-similarity",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Triangle $ABC$ has a right angle at $C$. $D$ is the point on $AB$ such that $CD$ is perpendicular to $AB$. $AD = 4$ cm and $DB = 9$ cm.\n\n(a) Prove that triangles $ADC$ and $CDB$ are similar.\n(b) Hence show that $CD^2 = AD \\times DB$, and find $CD$.\n(c) Find the exact lengths of $AC$ and $BC$, giving your answers as simplified surds.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"37,245 323,245 125,113\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"125\" y1=\"113\" x2=\"125\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"118.9,122.2 128.1,128.3 134.2,119.1\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"135,245 135,235 125,235\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"33\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"327\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"125\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"125\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"81\" y=\"239\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4 cm</text><text x=\"224\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9 cm</text></svg>",
+  "hint": "Let $\\angle A = x$. Find the other angles in each small triangle in terms of $x$. For (c), triangle $ACB$ is similar to triangle $ADC$ too, or use Pythagoras.",
+  "answer": "(a) Both have a right angle at $D$ and $\\angle ACD = \\angle CBD = 90^\\circ - \\angle A$ (AA). (b) $CD = 6$ cm (c) $AC = 2\\sqrt{13}$ cm, $BC = 3\\sqrt{13}$ cm",
+  "solution": "(a) Let $\\angle CAB = x$.\n\nIn triangle $ADC$: $\\angle ADC = 90^\\circ$, so $\\angle ACD = 90^\\circ - x$.\n\nIn triangle $ABC$: $\\angle ACB = 90^\\circ$, so $\\angle CBA = 90^\\circ - x$. Then in triangle $CDB$: $\\angle CDB = 90^\\circ$, $\\angle CBD = 90^\\circ - x$ and $\\angle DCB = x$.\n\nSo triangles $ADC$ and $CDB$ both have angles $90^\\circ$, $x$ and $90^\\circ - x$: they are similar (AA), with $A \\leftrightarrow C$, $D \\leftrightarrow D$, $C \\leftrightarrow B$.\n\n(b) Corresponding sides are in the same ratio:\n$$\\frac{AD}{CD} = \\frac{CD}{DB} \\quad\\Rightarrow\\quad CD^2 = AD \\times DB = 4 \\times 9 = 36 \\quad\\Rightarrow\\quad CD = 6\\text{ cm}$$\n($CD$ is the **geometric mean** of $AD$ and $DB$.)\n\n(c) By Pythagoras in the two small right-angled triangles:\n$$AC = \\sqrt{4^2 + 6^2} = \\sqrt{52} = 2\\sqrt{13}\\text{ cm}, \\qquad BC = \\sqrt{9^2 + 6^2} = \\sqrt{117} = 3\\sqrt{13}\\text{ cm}$$\n\n(Equivalently, $\\triangle ADC \\sim \\triangle ACB$ gives $AC^2 = AD \\times AB = 4 \\times 13 = 52$.)\n\nCheck: $AC^2 + BC^2 = 52 + 117 = 169 = 13^2 = AB^2$ ✓",
+  "linkedTopicIds": [
+   "num-surds",
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-similarity-q14",
+  "topicId": "geo-similarity",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "In triangle $ABC$, $AB = 9$ cm, $AC = 6$ cm and $BC = 10$ cm. The bisector of angle $BAC$ meets $BC$ at $D$.\n\nThe angle bisector theorem states that $\\dfrac{BD}{DC} = \\dfrac{AB}{AC}$.\n\n(a) Work out the lengths of $BD$ and $DC$.\n(b) A line through $C$ parallel to $DA$ meets $BA$ extended at $E$. Show that triangle $ACE$ is isosceles, and use this to prove the angle bisector theorem for this triangle.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"240.8,111 45,255 315,255\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"240.8\" y1=\"111\" x2=\"207\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M234.8 136.3 A26 26 0 0 1 219.8 126.4\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M254.5 137.7 A30 30 0 0 1 233.9 140.2\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"240.8\" y=\"103\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"33\" y=\"260\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"327\" y=\"260\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"207\" y=\"273\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"148.8\" y=\"191.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">9 cm</text><text x=\"269\" y=\"187.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">6 cm</text></svg>",
+  "hint": "For (a), split 10 cm in the ratio $9 : 6$. For (b), use corresponding and alternate angles to show that $\\angle ACE = \\angle AEC$, then apply the side-splitter idea to triangle $BCE$.",
+  "answer": "(a) $BD = 6$ cm, $DC = 4$ cm (b) $\\angle AEC = \\angle ACE$, so $AE = AC$; then $\\frac{BD}{DC} = \\frac{BA}{AE} = \\frac{AB}{AC}$.",
+  "solution": "(a) $BD : DC = AB : AC = 9 : 6 = 3 : 2$. Split $BC = 10$ cm in the ratio $3 : 2$:\n$$BD = \\tfrac{3}{5} \\times 10 = 6\\text{ cm}, \\qquad DC = \\tfrac{2}{5} \\times 10 = 4\\text{ cm}$$\n\n(b) Let $\\angle BAD = \\angle DAC = y$ ($AD$ bisects angle $A$).\n\n$\\angle AEC = \\angle BAD = y$ (corresponding angles, $AD \\parallel EC$, with $BE$ as the transversal).\n\n$\\angle ACE = \\angle DAC = y$ (alternate angles, $AD \\parallel EC$, with $AC$ as the transversal).\n\nSo $\\angle AEC = \\angle ACE$ and triangle $ACE$ is isosceles with $AE = AC$.\n\nIn triangle $BCE$, $DA \\parallel CE$, so triangles $BDA$ and $BCE$ are similar, which gives the side-splitter result\n$$\\frac{BD}{DC} = \\frac{BA}{AE} = \\frac{AB}{AC}$$\nusing $AE = AC$. This proves the angle bisector theorem. (Here $\\frac{9}{6} = \\frac{6}{4}$ ✓.)",
+  "linkedTopicIds": [
+   "rat-ratio-sharing",
+   "geo-parallel-lines-angles"
+  ]
+ },
+ {
+  "id": "geo-similarity-q15",
+  "topicId": "geo-similarity",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "On a sunny afternoon, Zara (1.6 m tall) stands so that the end of her shadow is exactly at the end of the shadow of a tree. She is 12 m from the base of the tree, and the end of the shadows is 3 m from her feet. The tree and Zara are both vertical on level ground.\n\nWork out the height of the tree.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"20\" y1=\"250\" x2=\"345\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"266\" y1=\"250\" x2=\"266\" y2=\"221.2\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"50\" y1=\"106\" x2=\"320\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><polyline points=\"50,241 59,241 59,250\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"266,243 273,243 273,250\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"42\" y=\"178\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">tree</text><text x=\"260\" y=\"215.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">1.6 m</text><text x=\"158\" y=\"270\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">12 m</text><text x=\"293\" y=\"270\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3 m</text><text x=\"200\" y=\"135\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">sun ray</text></svg>",
+  "hint": "The sun ray, the ground and the tree form a large triangle; the sun ray, the ground and Zara form a smaller similar triangle. What is the base of the large triangle?",
+  "answer": "8 m",
+  "solution": "Both triangles share the angle at the end of the shadow, and both have a right angle at the ground, so they are similar (AA).\n\nThe small triangle has base 3 m (Zara's shadow) and height 1.6 m. The large triangle has base $12 + 3 = 15$ m (the **whole** of the tree's shadow, not just 12 m).\n\nScale factor:\n$$k = \\frac{15}{3} = 5$$\n\nHeight of the tree:\n$$1.6 \\times 5 = 8\\text{ m}$$\n\n(Using 12 m as the base would give $1.6 \\times 4 = 6.4$ m, which is wrong.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-q16",
+  "topicId": "geo-similarity",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A garden fence is 2 m high and stands 1.2 m from the vertical wall of a house, on level ground. A straight ladder rests on the ground 0.8 m from the fence on the other side, just touches the top of the fence, and leans against the wall.\n\n(a) How high up the wall does the ladder reach?\n(b) Work out the length of the ladder, correct to 2 decimal places.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"40\" y1=\"262\" x2=\"300\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"262\" x2=\"300\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"246\" y1=\"262\" x2=\"246\" y2=\"172\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"210\" y1=\"262\" x2=\"300\" y2=\"37\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"300,253 291,253 291,262\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"246,255 239,255 239,262\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"240\" y=\"222\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2 m</text><text x=\"228\" y=\"282\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">0.8 m</text><text x=\"273\" y=\"282\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1.2 m</text><text x=\"306\" y=\"140\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">wall</text><text x=\"150\" y=\"80\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">ladder</text><text x=\"238\" y=\"166\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">fence</text></svg>",
+  "hint": "The fence and the wall are parallel (both vertical). Compare the triangle formed by the ladder, the ground and the fence with the triangle formed by the ladder, the ground and the wall.",
+  "answer": "(a) 5 m (b) 5.39 m",
+  "solution": "(a) The fence and the wall are both vertical, so the triangle (ladder foot, fence base, fence top) is similar to the triangle (ladder foot, wall base, ladder top): they share the angle at the foot of the ladder and both have a right angle (AA).\n\nSmall triangle: base 0.8 m, height 2 m.\nLarge triangle: base $0.8 + 1.2 = 2$ m (the whole distance to the wall).\n$$k = \\frac{2}{0.8} = 2.5, \\qquad \\text{height} = 2 \\times 2.5 = 5\\text{ m}$$\n\n(b) By Pythagoras in the large triangle:\n$$\\text{ladder} = \\sqrt{2^2 + 5^2} = \\sqrt{29} = 5.385\\ldots \\approx 5.39\\text{ m}$$",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-similarity-q17",
+  "topicId": "geo-similarity",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "International paper sizes (A4, A5, …) are designed so that when a sheet is cut in half across its longer side, each half is similar to the original sheet. An A4 sheet has shorter side 210 mm and longer side $L$ mm; cutting it in half gives an A5 sheet.\n\n(a) Show that $L = 210\\sqrt{2}$, and find $L$ to the nearest millimetre.\n(b) Find the scale factor from A4 to A5, giving your answer as an exact surd.\n(c) Sam says, \"A6 is half of A5, so the sides of A6 are half the sides of A4.\" Is Sam correct? Explain.",
+  "hint": "Half of a $210 \\times L$ sheet is a $\\frac{L}{2} \\times 210$ sheet. Write the ratio (longer side) $\\div$ (shorter side) for both sheets and set them equal.",
+  "answer": "(a) $L = 210\\sqrt{2} \\approx 297$ mm (b) $\\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$ (c) Yes: two steps each with scale factor $\\frac{1}{\\sqrt{2}}$ give $\\frac{1}{2}$.",
+  "solution": "(a) Cutting the $210 \\times L$ sheet in half across its longer side gives a sheet $\\frac{L}{2}$ by 210. Its longer side is 210 and shorter side $\\frac{L}{2}$.\n\nFor similarity, longer $\\div$ shorter must be the same for both sheets:\n$$\\frac{L}{210} = \\frac{210}{L/2} \\quad\\Rightarrow\\quad \\frac{L}{210} = \\frac{420}{L} \\quad\\Rightarrow\\quad L^2 = 210 \\times 420 = 2 \\times 210^2$$\n$$L = 210\\sqrt{2} = 296.98\\ldots \\approx 297\\text{ mm}$$\n\n(b) The longer side of A5 (210) corresponds to the longer side of A4 ($210\\sqrt{2}$):\n$$k = \\frac{210}{210\\sqrt{2}} = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} \\approx 0.707$$\n\n(c) A6 is to A5 as A5 is to A4, so the scale factor from A4 to A6 is\n$$\\frac{1}{\\sqrt{2}} \\times \\frac{1}{\\sqrt{2}} = \\frac{1}{2}$$\nSo Sam is **correct**: A6 measures $105 \\times 148.5$ mm (exactly half of each A4 side; in practice rounded to $105 \\times 148$ mm). Note that the **area** is a quarter of A4, which is why two halvings are needed.\n\nThis also shows a non-square rectangle is similar to its half only when its sides are in the ratio $\\sqrt{2} : 1$.",
+  "linkedTopicIds": [
+   "num-surds",
+   "alg-forming-equations"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-similarity-q18",
+  "topicId": "geo-similarity",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$ABCD$ is a trapezium with $AB$ parallel to $DC$. $AB = 6$ cm and $DC = 15$ cm. The diagonals $AC$ and $BD$ meet at $X$, and $AC = 14$ cm.\n\n(a) Work out the length of $AX$.\n(b) The line through $X$ parallel to $AB$ meets $AD$ at $P$ and $BC$ at $Q$. Show that $PQ = \\frac{60}{7}$ cm.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"110,80 218,80 315,250 45,250\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"110\" y1=\"80\" x2=\"315\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"218\" y1=\"80\" x2=\"45\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"91.4\" y1=\"128.6\" x2=\"245.7\" y2=\"128.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><polyline points=\"158,84.2 164,80 158,75.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"174,254.2 180,250 174,245.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"102\" y=\"74\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"226\" y=\"74\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"327\" y=\"255\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"33\" y=\"255\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"168.6\" y=\"118.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">X</text><text x=\"79.4\" y=\"133.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"257.7\" y=\"133.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"164\" y=\"68\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6 cm</text><text x=\"180\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">15 cm</text></svg>",
+  "hint": "Triangles $ABX$ and $CDX$ are similar (alternate and vertically opposite angles). For (b), look at triangle $ADC$ with $PX \\parallel DC$, and triangle $BDC$ with $XQ \\parallel DC$.",
+  "answer": "(a) $AX = 4$ cm (b) $PX = XQ = \\frac{30}{7}$ cm, so $PQ = \\frac{60}{7}$ cm",
+  "solution": "(a) $\\angle XAB = \\angle XCD$ and $\\angle XBA = \\angle XDC$ (alternate angles, $AB \\parallel DC$), so triangles $ABX$ and $CDX$ are similar with scale factor $\\frac{15}{6} = 2.5$.\n\nSo $AX : XC = 6 : 15 = 2 : 5$, and\n$$AX = \\tfrac{2}{7} \\times 14 = 4\\text{ cm}$$\n\n(b) In triangle $ADC$, $PX \\parallel DC$, so triangle $APX$ is similar to triangle $ADC$ with\n$$\\frac{AX}{AC} = \\frac{2}{7} \\quad\\Rightarrow\\quad PX = \\tfrac{2}{7} \\times DC = \\tfrac{2}{7} \\times 15 = \\tfrac{30}{7}$$\n\nSimilarly $BX : XD = 6 : 15 = 2 : 5$ (from the similar triangles in (a)). In triangle $BDC$, $XQ \\parallel DC$, so triangle $BXQ$ is similar to triangle $BDC$ with\n$$\\frac{BX}{BD} = \\frac{2}{7} \\quad\\Rightarrow\\quad XQ = \\tfrac{2}{7} \\times 15 = \\tfrac{30}{7}$$\n\n$$PQ = PX + XQ = \\tfrac{30}{7} + \\tfrac{30}{7} = \\tfrac{60}{7}\\text{ cm} \\approx 8.57\\text{ cm}$$\n\n(Notice $X$ is the midpoint of $PQ$, and $PQ = \\frac{2 \\times 6 \\times 15}{6 + 15}$, the harmonic mean of the parallel sides, which does not depend on $AC$.)",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles",
+   "rat-ratio-sharing"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

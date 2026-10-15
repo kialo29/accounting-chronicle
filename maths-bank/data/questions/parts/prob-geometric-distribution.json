@@ -1,0 +1,274 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X$ has a geometric distribution with probability of success $p = 0.3$. Find $P(X = 4)$.",
+  "hint": "The first success on trial 4 means trials 1, 2 and 3 are all failures.",
+  "answer": "$P(X = 4) = 0.1029$",
+  "solution": "For the first success to be on trial 4 we need fail, fail, fail, success. The probability of failure is $1 - 0.3 = 0.7$.\n$$P(X = 4) = (0.7)^{3}(0.3) = 0.343 \\times 0.3 = 0.1029$$\n\nThe power on $0.7$ is $4 - 1 = 3$: one fewer than the trial number, because the last trial is the success.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-geometric-distribution-q01",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X$ has a geometric distribution with $p = 0.3$. Find $P(X = 2)$.",
+  "hint": "How many failures come before the first success this time?",
+  "answer": "$P(X = 2) = 0.21$",
+  "solution": "**What changed:** the trial number went from 4 to 2, so now only one failure comes first.\n$$P(X = 2) = (0.7)^{1}(0.3) = 0.21$$\n\nCompare with $P(X = 4) = 0.1029$: each extra trial multiplies the probability by another $0.7$, so later trials are always less likely.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-geometric-distribution-q02",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X$ has a geometric distribution with $p = 0.3$. Find $P(X \\le 2)$.",
+  "hint": "$X \\le 2$ means the first success is on trial 1 or trial 2. Or: what has to happen for $X$ to be **more** than 2?",
+  "answer": "$P(X \\le 2) = 0.51$",
+  "solution": "**What changed:** \"$= 2$\" became \"$\\le 2$\", so we now include $X = 1$ as well.\n\nAdding:\n$$P(X \\le 2) = P(X = 1) + P(X = 2) = 0.3 + 0.21 = 0.51$$\n\nUsing the cumulative formula:\n$$P(X \\le 2) = 1 - (0.7)^2 = 1 - 0.49 = 0.51$$\n(the only way to **not** have a success by trial 2 is to fail twice).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q03",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X$ has a geometric distribution with $p = 0.3$. Find $P(X > 2)$.",
+  "hint": "Needing more than 2 trials means the first 2 trials were both failures.",
+  "answer": "$P(X > 2) = 0.49$",
+  "solution": "**What changed:** \"$\\le 2$\" became \"$> 2$\", the complementary event.\n\n$X > 2$ means no success in the first two trials:\n$$P(X > 2) = (0.7)^2 = 0.49$$\n\nCheck: $P(X \\le 2) + P(X > 2) = 0.51 + 0.49 = 1$ ✓. Notice that $(0.7)^2$ on its own is the \"more than\" probability; $1 - (0.7)^2$ is the \"at most\" probability.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q04",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X$ has a geometric distribution with $p = 0.3$. Find $P(X \\ge 2)$.",
+  "hint": "$X \\ge 2$ is the same as $X > 1$.",
+  "answer": "$P(X \\ge 2) = 0.7$",
+  "solution": "**What changed:** \"$> 2$\" became \"$\\ge 2$\", which now includes 2.\n\nFor whole numbers, $X \\ge 2$ is the same as $X > 1$: the first trial is a failure.\n$$P(X \\ge 2) = P(X > 1) = (0.7)^1 = 0.7$$\n\nOr: $P(X \\ge 2) = 1 - P(X = 1) = 1 - 0.3 = 0.7$.\n\nIncluding the boundary value changed the answer from $0.49$ to $0.7$, because it adds $P(X = 2) = 0.21$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q05",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the mean and standard deviation of each geometric random variable. Give standard deviations to 2 decimal places.\n\n(a) $X$ is the number of rolls of a fair six-sided die needed to get the first 6.\n\n(b) $Y$ is the number of cards dealt, with replacement, from a standard 52-card deck until the first heart appears.",
+  "hint": "Find $p$ first, then use $\\mu = \\dfrac{1}{p}$ and $\\sigma = \\dfrac{\\sqrt{1-p}}{p}$.",
+  "answer": "(a) $\\mu_X = 6$ rolls, $\\sigma_X \\approx 5.48$ rolls (b) $\\mu_Y = 4$ cards, $\\sigma_Y \\approx 3.46$ cards",
+  "solution": "(a) $p = \\frac{1}{6}$.\n$$\\mu_X = \\frac{1}{1/6} = 6 \\text{ rolls}, \\qquad \\sigma_X = \\frac{\\sqrt{5/6}}{1/6} = 6\\sqrt{\\tfrac{5}{6}} \\approx 5.48 \\text{ rolls}$$\n\n(b) A quarter of the cards are hearts and the card is replaced each time, so $p = 0.25$ on every deal.\n$$\\mu_Y = \\frac{1}{0.25} = 4 \\text{ cards}, \\qquad \\sigma_Y = \\frac{\\sqrt{0.75}}{0.25} \\approx 3.46 \\text{ cards}$$\n\nThe standard deviations are almost as large as the means: geometric distributions are very spread out, with a long right tail.",
+  "misconceptionIds": [],
+  "id": "prob-geometric-distribution-q06",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "For each random variable, decide whether it has a **geometric** distribution, a **binomial** distribution, or **neither**. Give a reason, and state the value of $p$ for each geometric one.\n\n(a) A fair coin is flipped until it lands heads. $A$ is the number of flips.\n\n(b) A fair coin is flipped 10 times. $B$ is the number of heads.\n\n(c) Cards are dealt one at a time from a shuffled standard deck, **without replacement**, until the first ace appears. $C$ is the number of cards dealt.\n\n(d) A pollster dials randomly chosen phone numbers until someone agrees to take a survey. About $15\\%$ of people agree. $D$ is the number of calls made.\n\n(e) A basketball player makes $80\\%$ of her free throws, independently. $E$ is the number of free throws she takes until her first miss.",
+  "hint": "Geometric: count trials up to the first success, with constant $p$ and independent trials. Binomial: count successes in a fixed number of trials.",
+  "answer": "(a) Geometric, $p = 0.5$ (b) Binomial, $n = 10$, $p = 0.5$ (c) Neither: $p$ changes as cards are removed (d) Geometric, $p = 0.15$ (e) Geometric, $p = 0.2$ (a \"success\" is a miss)",
+  "solution": "(a) **Geometric**: flips are independent, each is heads or tails with constant $p = 0.5$, and we count flips up to the first heads. No fixed number of trials.\n\n(b) **Binomial**: there is a fixed number of trials ($n = 10$) and we count successes, $B \\sim B(10, 0.5)$.\n\n(c) **Neither**: without replacement the probability of an ace changes ($\\frac{4}{52}$, then $\\frac{4}{51}$, …), so the trials are not independent with constant $p$. A deck is a small population; 52 cards is nowhere near \"10 times the sample\".\n\n(d) **Geometric** with $p = 0.15$: calls are to random numbers (independent), each person agrees or not, and we count calls until the first agreement.\n\n(e) **Geometric** with $p = 0.2$: the \"success\" we are waiting for is a **miss**, which has probability $1 - 0.8 = 0.2$.\n\nThe key difference between (a) and (b): in a geometric setting the number of trials is the random variable; in a binomial setting it is fixed in advance.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-geometric-distribution-q07",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "About $15\\%$ of callers to a customer-service line are calling to cancel their subscription. Calls are independent. Jada wants the probability that the first cancellation call of the day is the 5th call. Her work is shown below.\n\nLine 1: $X$ = number of calls until the first cancellation, $p = 0.15$\n\nLine 2: $P(X = 5) = (0.85)^5(0.15)$\n\nLine 3: $= 0.4437 \\times 0.15$\n\nLine 4: $\\approx 0.0666$\n\nIdentify Jada's error, explain why it is wrong, and find the correct probability to 4 decimal places.",
+  "hint": "List what has to happen on calls 1 to 5. How many of them are **not** cancellations?",
+  "answer": "Line 2 uses the wrong power: it should be $(0.85)^4(0.15) \\approx 0.0783$",
+  "solution": "The error is in Line 2. For the first cancellation to be the 5th call, calls 1–4 are **not** cancellations and call 5 **is**:\n$$\\text{N, N, N, N, C}$$\nThat is only 4 failures, not 5. Jada's $(0.85)^5(0.15)$ describes five non-cancellations and then a cancellation, which is the first cancellation on the 6th call.\n\nCorrect work:\n$$P(X = 5) = (0.85)^{5-1}(0.15) = (0.85)^4(0.15) = 0.52200625 \\times 0.15 \\approx 0.0783$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-geometric-distribution-q08",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "In a promotion, $10\\%$ of scratch-off cards are winners. Kenji buys cards one at a time. He wants the probability that his first winning card is the 4th card he buys. His work is shown below.\n\nLine 1: $p = 0.1$, so I need 1 winner in 4 cards.\n\nLine 2: $P = \\binom{4}{1}(0.1)^1(0.9)^3$\n\nLine 3: $= 4 \\times 0.1 \\times 0.729$\n\nLine 4: $= 0.2916$\n\n(a) Explain the mistake in Kenji's reasoning.\n\n(b) Find the correct probability.",
+  "hint": "The $\\binom{4}{1}$ counts the positions the winner could be in. In this question, can the winner be in any position?",
+  "answer": "(a) He used the binomial probability of exactly 1 winner in 4 cards, which allows the winner to be in any position; \"first winner on card 4\" allows only one order. (b) $0.0729$",
+  "solution": "(a) The mistake starts in Line 1 and shows in Line 2. \"Exactly 1 winner in 4 cards\" (binomial) includes the orders WLLL, LWLL, LLWL and LLLW, and the $\\binom{4}{1} = 4$ counts these. But \"the **first** winner is the 4th card\" requires the order LLLW only: a winner earlier would make an earlier card the first winner (and Kenji would have stopped buying).\n\n(b) Only one order is allowed, so there is no $\\binom{4}{1}$ factor:\n$$P(X = 4) = (0.9)^3(0.1) = 0.729 \\times 0.1 = 0.0729$$\n\nKenji's answer is exactly 4 times too big, one for each possible position of the winning card.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-geometric-distribution-q09",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$20\\%$ of boxes of a cereal contain a prize. Let $X$ be the number of boxes a shopper opens until she finds the first prize. The probability distribution of $X$ for $k = 1$ to $10$ is shown.\n\nMarcus says: \"The mean of $X$ is 5, so a shopper is most likely to find her first prize in the 5th box.\"\n\n(a) Is Marcus correct? Justify your answer with probabilities.\n\n(b) Find the median of $X$, and explain why the mean is larger than the median.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"52\" y1=\"175.0\" x2=\"345\" y2=\"175.0\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"47\" y1=\"175.0\" x2=\"52\" y2=\"175.0\" stroke=\"currentColor\"/><text x=\"44\" y=\"179.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.05</text><line x1=\"52\" y1=\"130.0\" x2=\"345\" y2=\"130.0\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"47\" y1=\"130.0\" x2=\"52\" y2=\"130.0\" stroke=\"currentColor\"/><text x=\"44\" y=\"134.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.10</text><line x1=\"52\" y1=\"85.0\" x2=\"345\" y2=\"85.0\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"47\" y1=\"85.0\" x2=\"52\" y2=\"85.0\" stroke=\"currentColor\"/><text x=\"44\" y=\"89.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.15</text><line x1=\"52\" y1=\"40.0\" x2=\"345\" y2=\"40.0\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"47\" y1=\"40.0\" x2=\"52\" y2=\"40.0\" stroke=\"currentColor\"/><text x=\"44\" y=\"44.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.20</text><text x=\"44\" y=\"224\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"52\" y1=\"220\" x2=\"348\" y2=\"220\" stroke=\"currentColor\"/><line x1=\"52\" y1=\"220\" x2=\"52\" y2=\"12\" stroke=\"currentColor\"/><rect x=\"60\" y=\"40.0\" width=\"20\" height=\"180.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"70\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><rect x=\"89\" y=\"76.0\" width=\"20\" height=\"144.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"99\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><rect x=\"118\" y=\"104.8\" width=\"20\" height=\"115.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"128\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><rect x=\"147\" y=\"127.8\" width=\"20\" height=\"92.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"157\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><rect x=\"176\" y=\"146.3\" width=\"20\" height=\"73.7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"186\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><rect x=\"205\" y=\"161.0\" width=\"20\" height=\"59.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"215\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><rect x=\"234\" y=\"172.8\" width=\"20\" height=\"47.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"244\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><rect x=\"263\" y=\"182.3\" width=\"20\" height=\"37.7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"273\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><rect x=\"292\" y=\"189.8\" width=\"20\" height=\"30.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"302\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><rect x=\"321\" y=\"195.8\" width=\"20\" height=\"24.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"331\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><text x=\"200\" y=\"258\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">k (number of boxes opened)</text><text x=\"60\" y=\"12\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">P(X = k)</text></svg>",
+  "hint": "Compare $P(X = 1)$ and $P(X = 5)$. For the median, find the smallest $k$ with $P(X \\le k) \\ge 0.5$.",
+  "answer": "(a) No. $P(X = 1) = 0.2$ is the largest probability; $P(X = 5) \\approx 0.082$. The most likely value (mode) is 1. (b) Median $= 4$; the distribution is strongly skewed right, and the long right tail pulls the mean up",
+  "solution": "(a) Marcus is **not** correct.\n$$P(X = 1) = 0.2, \\qquad P(X = 5) = (0.8)^4(0.2) \\approx 0.082$$\nEach bar is $0.8$ times the one before, so the probabilities decrease steadily and the tallest bar is always at $X = 1$. The mean tells us the **average** number of boxes over many shoppers, not the most likely number.\n\n(b) Cumulative probabilities: $P(X \\le 3) = 1 - 0.8^3 = 0.488$ and $P(X \\le 4) = 1 - 0.8^4 = 0.5904$. The 50% point is first passed at $k = 4$, so the median is 4 boxes.\n\nThe distribution is strongly **right-skewed**: most shoppers find a prize quickly, but a few need 15, 20 or more boxes (e.g. $P(X > 15) = 0.8^{15} \\approx 0.035$). These large values pull the mean ($5$) above the median ($4$), and both are above the mode ($1$).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "prob-geometric-distribution-q10",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "About $7\\%$ of blood donors in the US have type O-negative blood. A blood drive tests donors one at a time, and donors' blood types are independent. Let $X$ be the number of donors tested until the first O-negative donor is found.\n\n(a) Find the probability that the first O-negative donor is the 10th donor tested.\n\n(b) Find the probability that an O-negative donor is found within the first 20 donors.\n\n(c) Find the probability that more than 30 donors must be tested.\n\n(d) Find the mean and standard deviation of $X$, and interpret the mean in context.\n\nGive probabilities to 4 decimal places.",
+  "hint": "For (c), think about what the first 30 donors must all be.",
+  "answer": "(a) $0.0364$ (b) $0.7658$ (c) $0.1134$ (d) $\\mu_X \\approx 14.29$ donors, $\\sigma_X \\approx 13.78$ donors; over many blood drives, the average number of donors tested to find the first O-negative donor is about 14.3",
+  "solution": "$X$ is geometric with $p = 0.07$, so $1 - p = 0.93$.\n\n(a) Nine donors who are not O-negative, then one who is:\n$$P(X = 10) = (0.93)^9(0.07) \\approx 0.0364$$\n\n(b) \"Within the first 20\" means $X \\le 20$:\n$$P(X \\le 20) = 1 - (0.93)^{20} = 1 - 0.2342 = 0.7658$$\n\n(c) \"More than 30\" means the first 30 donors are **all** not O-negative:\n$$P(X > 30) = (0.93)^{30} \\approx 0.1134$$\n(Not $1 - (0.93)^{30} = 0.8866$, which is $P(X \\le 30)$.)\n\n(d)\n$$\\mu_X = \\frac{1}{0.07} \\approx 14.29 \\text{ donors}, \\qquad \\sigma_X = \\frac{\\sqrt{0.93}}{0.07} \\approx 13.78 \\text{ donors}$$\nInterpretation: if this process were repeated at many blood drives, the number of donors tested until the first O-negative donor would average about $14.3$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q11",
+  "topicId": "prob-geometric-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "In a video game, players can buy loot boxes for \\$2.50 each. Each loot box, independently, has a $4\\%$ chance of containing a rare item. Lena buys loot boxes one at a time and stops as soon as she gets a rare item. Let $X$ be the number of loot boxes she buys.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why $X$ has a geometric distribution.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that Lena gets a rare item within her first 10 loot boxes. Show your work.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Calculate the mean and standard deviation of the amount of money Lena spends. Interpret the mean in context.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the probability that Lena spends more than \\$100.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "calculator": true,
+  "hint": "The amount spent is $2.5X$. Spending more than \\$100 means buying more than how many boxes?",
+  "answer": "(a) Each box is rare or not, boxes are independent with constant $p = 0.04$, and $X$ counts boxes up to the first rare item (b) $0.3352$ (c) mean \\$62.50, SD \\$61.24; over many such sprees, players like Lena would spend an average of \\$62.50 to get a rare item (d) $0.1954$",
+  "solution": "(a) Each loot box has two outcomes (rare item or not); boxes are independent; the probability of success is the same, $p = 0.04$, for every box; and $X$ counts the boxes up to and including the first success, with no fixed number of trials. **1 pt**\n\n(b)\n$$P(X \\le 10) = 1 - (0.96)^{10}$$ **1 pt** for the method (or geometcdf with $p = 0.04$, upper bound 10)\n$$= 1 - 0.6648 = 0.3352$$ **1 pt**\n\n(c)\n$$\\mu_X = \\frac{1}{0.04} = 25 \\text{ boxes}, \\qquad \\sigma_X = \\frac{\\sqrt{0.96}}{0.04} \\approx 24.49 \\text{ boxes}$$ **1 pt**\n\nThe amount spent is $M = 2.5X$, so\n$$\\mu_M = 2.5 \\times 25 = \\$62.50, \\qquad \\sigma_M = 2.5 \\times 24.49 \\approx \\$61.24$$ **1 pt**\n\nInterpretation: if Lena (or many players) repeated this many times, the amount spent to get the first rare item would average about \\$62.50. **1 pt**\n\n(d) Spending more than \\$100 means buying more than $100 \\div 2.5 = 40$ boxes, i.e. the first 40 boxes all have no rare item: **1 pt**\n$$P(X > 40) = (0.96)^{40} \\approx 0.1954$$ **1 pt**",
+  "linkedTopicIds": [
+   "prob-combining-random-variables"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q12",
+  "topicId": "prob-geometric-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A Girl Scout sells cookies door to door. At each house, independently, there is a $15\\%$ chance that the household buys cookies.\n\n(a) Find the smallest number of houses $k$ such that there is at least a $90\\%$ chance that she makes her first sale at or before house $k$.\n\n(b) Her troop leader says: \"If you visit twice as many houses, you double your chance of making a sale.\" Use your answer to (a) to show this is false.",
+  "hint": "You need $P(X \\le k) = 1 - (0.85)^k \\ge 0.9$. Solve for $k$ using logarithms, or by trying values of $k$.",
+  "answer": "(a) $k = 15$ houses (b) e.g. $P(X \\le 15) \\approx 0.913$, but $P(X \\le 30) \\approx 0.992$, not $1.826$ (a probability cannot exceed 1)",
+  "solution": "Let $X$ be the number of houses visited up to the first sale; $X$ is geometric with $p = 0.15$.\n\n(a) We need\n$$P(X \\le k) = 1 - (0.85)^k \\ge 0.9 \\quad\\Longleftrightarrow\\quad (0.85)^k \\le 0.1$$\nTake logs:\n$$k \\ln 0.85 \\le \\ln 0.1 \\quad\\Longrightarrow\\quad k \\ge \\frac{\\ln 0.1}{\\ln 0.85} \\approx 14.17$$\n(the inequality flips because $\\ln 0.85 < 0$). So the smallest whole number is $k = 15$.\n\nCheck: $(0.85)^{14} \\approx 0.1028 > 0.1$ but $(0.85)^{15} \\approx 0.0874 \\le 0.1$ ✓.\n\n(b) $P(X \\le 15) = 1 - 0.0874 = 0.9126$. Doubling to 30 houses:\n$$P(X \\le 30) = 1 - (0.85)^{30} \\approx 1 - 0.0076 = 0.9924$$\nDoubling the chance would give $1.825$, which is impossible. The chance of **no** sale is what changes multiplicatively: it is squared ($0.0874^2 \\approx 0.0076$), not halved, and the chance of a sale only creeps closer to 1.",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q13",
+  "topicId": "prob-geometric-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$X$ has a geometric distribution with probability of success $p$, where $0 < p < 1$. Let $q = 1 - p$.\n\n(a) Use the formula for the sum of an infinite geometric series to show that\n$$\\sum_{k=1}^{\\infty} P(X = k) = 1$$\n\n(b) By summing a geometric series, show that $P(X > n) = q^n$ for any positive integer $n$.\n\n(c) Hence show that $P(a < X \\le b) = q^a - q^b$ for positive integers $a < b$, and evaluate $P(3 < X \\le 7)$ when $p = 0.2$.",
+  "hint": "$\\sum_{k=1}^{\\infty} q^{k-1}p$ is a geometric series with first term $p$ and common ratio $q$. It converges because $|q| < 1$.",
+  "answer": "(a) $\\dfrac{p}{1 - q} = 1$ (b) $\\dfrac{q^n p}{1 - q} = q^n$ (c) $P(a < X \\le b) = P(X > a) - P(X > b)$; $0.3023$ (4 d.p.)",
+  "solution": "(a)\n$$\\sum_{k=1}^{\\infty} q^{k-1}p = p + pq + pq^2 + \\cdots$$\nThis is a geometric series with first term $p$ and common ratio $q$, where $0 < q < 1$, so it converges to\n$$\\frac{p}{1 - q} = \\frac{p}{p} = 1$$\nSo the probabilities add to 1, as they must for a probability distribution.\n\n(b)\n$$P(X > n) = \\sum_{k=n+1}^{\\infty} q^{k-1}p = q^n p + q^{n+1}p + \\cdots$$\nFirst term $q^n p$, ratio $q$:\n$$P(X > n) = \\frac{q^n p}{1 - q} = \\frac{q^n p}{p} = q^n$$\nThis matches the direct argument that the first $n$ trials must all fail.\n\n(c) The event $X > a$ splits into $a < X \\le b$ and $X > b$, which do not overlap, so\n$$P(a < X \\le b) = P(X > a) - P(X > b) = q^a - q^b$$\n\nWith $p = 0.2$, $q = 0.8$:\n$$P(3 < X \\le 7) = 0.8^3 - 0.8^7 = 0.512 - 0.2097152 = 0.3022848 \\approx 0.3023$$",
+  "linkedTopicIds": [
+   "pure-geometric-series"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-geometric-distribution-q14",
+  "topicId": "prob-geometric-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Priya is trying to beat a difficult level in a video game. Each attempt, independently, succeeds with probability $0.12$. Let $X$ be the number of attempts she needs.\n\n(a) Find $P(X > 3)$.\n\n(b) Priya has already failed her first 5 attempts. Find the probability that she needs more than 8 attempts in total, that is, $P(X > 8 \\mid X > 5)$.\n\n(c) Her friend says: \"You've failed 5 times in a row, so you're due a win. Your next attempt has a better chance than 0.12.\" Use your answers to comment on this claim.\n\nGive probabilities to 4 decimal places.",
+  "hint": "Use $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$. If $X > 8$, is it automatically true that $X > 5$?",
+  "answer": "(a) $0.6815$ (b) $0.6815$ (c) The friend is wrong: the past failures do not change the probability; $P(X > 8 \\mid X > 5) = P(X > 3)$, and the next attempt still succeeds with probability $0.12$",
+  "solution": "(a)\n$$P(X > 3) = (0.88)^3 = 0.681472 \\approx 0.6815$$\n\n(b) If $X > 8$ then certainly $X > 5$, so $\\{X > 8\\} \\cap \\{X > 5\\} = \\{X > 8\\}$.\n$$P(X > 8 \\mid X > 5) = \\frac{P(X > 8)}{P(X > 5)} = \\frac{(0.88)^8}{(0.88)^5} = (0.88)^3 \\approx 0.6815$$\n\n(c) The answers to (a) and (b) are equal. Having already failed 5 times, the chance that she needs more than 3 **further** attempts is exactly the same as for someone just starting. The attempts are independent, so the game does not \"remember\" past failures. Similarly\n$$P(X = 6 \\mid X > 5) = \\frac{(0.88)^5(0.12)}{(0.88)^5} = 0.12$$\nHer next attempt still has probability $0.12$ of success, not more. The friend's claim is the gambler's fallacy. (This \"memoryless\" property is special to the geometric distribution.)",
+  "linkedTopicIds": [
+   "prob-conditional"
+  ],
+  "misconceptionIds": [],
+  "id": "prob-geometric-distribution-q15",
+  "topicId": "prob-geometric-distribution"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Ava and Bea take turns shooting at a basket, with Ava shooting first. Ava scores with probability $0.4$ on each shot and Bea scores with probability $0.5$, independently. The first person to score wins.\n\n(a) Find the probability that Ava wins on her 3rd shot.\n\n(b) Show that the probability that Ava wins is $\\dfrac{4}{7}$.\n\n(c) Bea practices so that her probability of scoring is now $b$. Ava still shoots first with probability $0.4$. Find the value of $b$ that makes the game fair.",
+  "hint": "For Ava to win on her $k$th shot, both players must miss in each of the first $k - 1$ rounds. A full round of two misses has probability $0.6 \\times 0.5$.",
+  "answer": "(a) $0.036$ (b) $\\dfrac{0.4}{1 - 0.3} = \\dfrac{4}{7}$ (c) $b = \\dfrac{2}{3}$",
+  "solution": "Call a **round** one shot by Ava followed by one by Bea. Both miss in a round with probability $0.6 \\times 0.5 = 0.3$.\n\n(a) Ava wins on her 3rd shot if the first two rounds are both double misses and then Ava scores:\n$$(0.3)^2 \\times 0.4 = 0.09 \\times 0.4 = 0.036$$\n\n(b) Ava wins on her $k$th shot with probability $(0.3)^{k-1}(0.4)$: the round number in which the game ends has a geometric-type distribution. Summing over all $k$ gives a geometric series with first term $0.4$ and ratio $0.3$:\n$$P(\\text{Ava wins}) = 0.4 + 0.4(0.3) + 0.4(0.3)^2 + \\cdots = \\frac{0.4}{1 - 0.3} = \\frac{0.4}{0.7} = \\frac{4}{7}$$\n\n(c) Now both miss in a round with probability $0.6(1 - b)$, so\n$$P(\\text{Ava wins}) = \\frac{0.4}{1 - 0.6(1 - b)}$$\nFor a fair game this equals $\\frac{1}{2}$:\n$$1 - 0.6(1 - b) = 0.8 \\;\\Rightarrow\\; 0.6(1 - b) = 0.2 \\;\\Rightarrow\\; 1 - b = \\frac{1}{3} \\;\\Rightarrow\\; b = \\frac{2}{3}$$\n\nCheck: $\\frac{0.4}{1 - 0.6 \\times \\frac{1}{3}} = \\frac{0.4}{0.8} = 0.5$ ✓. Bea needs to be much better than Ava to make up for shooting second.",
+  "linkedTopicIds": [
+   "pure-geometric-series"
+  ],
+  "misconceptionIds": [],
+  "id": "prob-geometric-distribution-q16",
+  "topicId": "prob-geometric-distribution"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A cereal company puts one of 3 different toys in each box. Each box is equally likely to contain any of the 3 toys, independently of other boxes. Diego wants to collect all 3 toys. Let $T$ be the number of boxes he must buy.\n\n(a) Explain why $T = 1 + X_2 + X_3$, where $X_2$ is geometric with $p = \\frac{2}{3}$ and $X_3$ is geometric with $p = \\frac{1}{3}$.\n\n(b) Find the mean of $T$.\n\n(c) Assuming $X_2$ and $X_3$ are independent, find the standard deviation of $T$.\n\n(d) Each box costs \\$4.29. Find the expected amount Diego spends.",
+  "hint": "After Diego has 1 toy, a new box gives a **new** toy with probability $\\frac{2}{3}$. After he has 2 different toys, what is the probability that a box gives the last one?",
+  "answer": "(a) The first box always gives a new toy; then $X_2$ boxes until a second new toy ($p = \\frac{2}{3}$), then $X_3$ boxes until the third ($p = \\frac{1}{3}$) (b) $5.5$ boxes (c) $\\approx 2.60$ boxes (d) \\$23.60 (to the nearest cent)",
+  "solution": "(a) The first box always contains a toy Diego doesn't have: that is the \"1\". After that, each box gives a new toy with probability $\\frac{2}{3}$ (2 of the 3 toys are new), independently, so the number of boxes until his second different toy, $X_2$, is geometric with $p = \\frac{2}{3}$. Once he has 2 different toys, only 1 of the 3 is new, so the number of further boxes until the third toy, $X_3$, is geometric with $p = \\frac{1}{3}$. Adding the three stages gives $T$.\n\n(b) Means add:\n$$\\mu_T = 1 + \\frac{1}{2/3} + \\frac{1}{1/3} = 1 + 1.5 + 3 = 5.5 \\text{ boxes}$$\n\n(c) A geometric variable has variance $\\sigma^2 = \\dfrac{1-p}{p^2}$. The constant 1 has variance 0. For independent variables the **variances** add (not the standard deviations):\n$$\\sigma^2_{X_2} = \\frac{1/3}{4/9} = 0.75, \\qquad \\sigma^2_{X_3} = \\frac{2/3}{1/9} = 6$$\n$$\\sigma^2_T = 0 + 0.75 + 6 = 6.75, \\qquad \\sigma_T = \\sqrt{6.75} \\approx 2.60 \\text{ boxes}$$\n\n(d) Expected cost $= 4.29 \\times \\mu_T = 4.29 \\times 5.5 = \\$23.595 \\approx \\$23.60$.\n\nThe last toy is the slow one: on average it takes 3 boxes on its own, more than half of the total.",
+  "linkedTopicIds": [
+   "prob-combining-random-variables"
+  ],
+  "misconceptionIds": [],
+  "id": "prob-geometric-distribution-q17",
+  "topicId": "prob-geometric-distribution"
+ }
+]

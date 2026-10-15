@@ -1,0 +1,251 @@
+[
+ {
+  "id": "stat-sampling-methods-q01",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A head teacher wants the views of students in her school. Name the sampling method described in each case.\n\nChoose from: **simple random**, **systematic**, **stratified**, **cluster**, **quota**, **opportunity**.\n\n(a) She asks the first 40 students who arrive in the canteen.\n(b) She lists all students alphabetically, picks a random starting point among the first 25 names and then takes every 25th name.\n(c) She numbers every student and uses a random number generator to choose 60 different numbers.\n(d) She randomly chooses 3 tutor groups and asks every student in those groups.\n(e) She works out how many students from each year group to include, in proportion to the size of each year group, and chooses them at random within each year.\n(f) She tells a prefect to interview 10 boys and 10 girls from each year group, choosing whoever is willing.",
+  "hint": "Ask yourself: is there a list? Is the choice made at random? Are whole groups chosen, or are groups represented in proportion?",
+  "answer": "(a) opportunity (b) systematic (c) simple random (d) cluster (e) stratified (f) quota",
+  "solution": "(a) Whoever happens to be available: **opportunity** (convenience) sampling.\n\n(b) Every $k$th member of a list after a random start ($k = 25$): **systematic** sampling.\n\n(c) Every student has an equal chance and selection uses random numbers: **simple random** sampling.\n\n(d) Whole groups are chosen at random and everyone in them is surveyed: **cluster** sampling.\n\n(e) The population is split into strata (year groups), each represented in proportion, with random selection inside each stratum: **stratified** sampling.\n\n(f) A fixed number from each group is filled, but the interviewer chooses who, not a random process: **quota** sampling.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q02",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A school has 150 students in Year 7 and 250 students in Year 8. A stratified sample of 40 students is taken by year group.\n\nHow many students from each year group should be in the sample?",
+  "hint": "Find the total number of students first. Then use $\\dfrac{\\text{year group size}}{\\text{total}} \\times 40$.",
+  "answer": "Year 7: 15, Year 8: 25",
+  "solution": "Total: $150 + 250 = 400$ students.\n\nYear 7: $\\dfrac{150}{400} \\times 40 = 15$\n\nYear 8: $\\dfrac{250}{400} \\times 40 = 25$\n\nCheck: $15 + 25 = 40$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q03",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A school has 150 students in Year 7 and 250 students in Year 8. A stratified sample of 48 students is taken by year group.\n\nHow many students from each year group should be in the sample?",
+  "hint": "Same school, different sample size. Use $\\dfrac{\\text{year group size}}{\\text{total}} \\times 48$.",
+  "answer": "Year 7: 18, Year 8: 30",
+  "solution": "**What changed:** the sample size is 48 instead of 40. The proportions $\\frac{150}{400}$ and $\\frac{250}{400}$ are unchanged.\n\nYear 7: $\\dfrac{150}{400} \\times 48 = 18$\n\nYear 8: $\\dfrac{250}{400} \\times 48 = 30$\n\nCheck: $18 + 30 = 48$ ✓\n\nThe sample was multiplied by $\\frac{48}{40} = 1.2$, so each stratum was too: $15 \\times 1.2 = 18$, $25 \\times 1.2 = 30$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q04",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A school has 150 students in Year 7, 250 students in Year 8 and 200 students in Year 9. A stratified sample of 48 students is taken by year group.\n\nHow many students from each year group should be in the sample?",
+  "hint": "There is now a third year group, so the total population has changed.",
+  "answer": "Year 7: 12, Year 8: 20, Year 9: 16",
+  "solution": "**What changed:** a third stratum (Year 9) has been added; the sample size is still 48.\n\nTotal: $150 + 250 + 200 = 600$ students.\n\nYear 7: $\\dfrac{150}{600} \\times 48 = 12$\n\nYear 8: $\\dfrac{250}{600} \\times 48 = 20$\n\nYear 9: $\\dfrac{200}{600} \\times 48 = 16$\n\nCheck: $12 + 20 + 16 = 48$ ✓\n\nYears 7 and 8 now make up a smaller share of the population, so they get fewer places than before.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q05",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A school has 150 students in Year 7, 250 students in Year 8 and 200 students in Year 9. A stratified sample of 50 students is taken by year group.\n\nHow many students from each year group should be in the sample?",
+  "hint": "Some answers are not whole numbers. After rounding, check that your three numbers add up to 50.",
+  "answer": "Year 7: 12, Year 8: 21, Year 9: 17",
+  "solution": "**What changed:** the sample size is 50 instead of 48, and now the calculations do not give whole numbers.\n\nTotal: 600 students.\n\nYear 7: $\\dfrac{150}{600} \\times 50 = 12.5$\n\nYear 8: $\\dfrac{250}{600} \\times 50 = 20.83\\ldots$\n\nYear 9: $\\dfrac{200}{600} \\times 50 = 16.66\\ldots$\n\nRounding each to the nearest whole number gives $13 + 21 + 17 = 51$, which is one too many.\n\nAdjust the value that was closest to halfway: $12.5$ is exactly halfway, so round it **down** to 12.\n\nYear 7: **12**, Year 8: **21**, Year 9: **17**\n\nCheck: $12 + 21 + 17 = 50$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q06",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A supermarket has a list of its 1200 loyalty-card customers. It wants a systematic sample of 60 customers.\n\n(a) Work out the sampling interval $k$.\n\n(b) The random starting point is customer number 13. Write down the numbers of the first four customers in the sample.\n\n(c) What is the number of the last customer in the sample?",
+  "hint": "$k = \\dfrac{\\text{population size}}{\\text{sample size}}$. Then keep adding $k$ to the starting number.",
+  "answer": "(a) $k = 20$ (b) 13, 33, 53, 73 (c) 1193",
+  "solution": "(a)\n$$k = \\frac{1200}{60} = 20$$\n\n(b) Start at 13 and add 20 each time: **13, 33, 53, 73**.\n\n(c) The sample has 60 customers. The $n$th customer chosen is number $13 + 20(n - 1)$, so the 60th is\n$$13 + 20 \\times 59 = 13 + 1180 = 1193$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q07",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A company has 850 employees. The manager wants to take a **simple random sample** of 40 employees.\n\n(a) What is meant by a **sampling frame**? Suggest a suitable sampling frame here.\n\n(b) Describe how the manager should select the sample.",
+  "hint": "A simple random sample needs a complete list, a number for each person and a random process.",
+  "answer": "(a) A list of every member of the population, from which the sample is chosen; e.g. the company's payroll list of all 850 employees. (b) Number the employees 1 to 850; use a random number generator to produce numbers from 1 to 850, ignoring repeats, until 40 different employees have been chosen.",
+  "solution": "(a) A **sampling frame** is a list of all the members of the population from which the sample is drawn. Here, a suitable frame is the company's staff or payroll list containing all 850 employees.\n\n(b)\n* Number the employees on the list from 1 to 850 (or 001 to 850).\n* Use a random number generator (calculator or computer) to produce whole numbers from 1 to 850.\n* Ignore any repeated numbers.\n* Continue until 40 different numbers have been obtained; the employees with these numbers form the sample.\n\nThis gives every employee an equal chance of being chosen, and every possible group of 40 employees an equal chance of being the sample.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q08",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A cricket club has 45 junior members, 120 adult members and 75 senior members. The secretary wants a stratified sample of 32 members.\n\nCallum's working is shown below.\n\n\"There are 3 groups, so $32 \\div 3 = 10.66\\ldots$\nI will take 11 juniors, 11 adults and 10 seniors, which makes 32.\"\n\nIdentify Callum's mistake, explain why it is wrong and work out the correct sample.",
+  "hint": "In a stratified sample, should a small group and a large group have the same number of places?",
+  "answer": "Callum shares the sample equally between the groups instead of in proportion to their sizes. Correct sample: 6 juniors, 16 adults, 10 seniors.",
+  "solution": "Callum's first line is wrong: he splits the sample **equally** between the three groups. In a stratified sample each stratum must be represented **in proportion to its size**. Juniors make up a much smaller part of the club than adults, so they should get fewer places; his sample over-represents juniors and under-represents adults.\n\nCorrect method. Total members: $45 + 120 + 75 = 240$.\n\nJuniors: $\\dfrac{45}{240} \\times 32 = 6$\n\nAdults: $\\dfrac{120}{240} \\times 32 = 16$\n\nSeniors: $\\dfrac{75}{240} \\times 32 = 10$\n\nCheck: $6 + 16 + 10 = 32$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q09",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kai wants to find out how students at his school (1100 students, Years 7 to 13) feel about the school uniform. His write-up is shown below.\n\n\"**Method:** I stood at the school gate at 8:15 am and asked the first 30 students who walked past.\n**Type of sample:** I did not choose anyone on purpose, so this is a random sample.\n**Conclusion:** Because the sample is random, the results are unbiased.\"\n\n(a) Identify the mistake in Kai's write-up and explain why it is wrong.\n\n(b) Give one reason why Kai's sample is likely to be biased.\n\n(c) Suggest a better sampling method.",
+  "hint": "In a random sample, every student in the school has an equal chance of being chosen. Did everyone have that chance here?",
+  "answer": "(a) The sample is not random; it is an opportunity (convenience) sample, because the students did not all have an equal chance of being chosen. (b) e.g. students who arrive early (often those who come by bus, or are in a breakfast club) are over-represented; sixth formers who arrive later may be missed. (c) e.g. number all 1100 students on the school roll and choose 30 using a random number generator, or take a stratified sample by year group.",
+  "solution": "(a) The mistake is the line \"I did not choose anyone on purpose, so this is a random sample.\" Not choosing on purpose is **not** the same as random. In a random sample, every member of the population has an equal chance of selection, using a random process applied to a complete list. Students who were not at the gate at 8:15 am had **no** chance of being chosen. This is an **opportunity** (convenience) sample, so the conclusion \"the results are unbiased\" does not follow.\n\n(b) Any sensible reason, e.g.:\n* students who arrive at 8:15 am may be those on early buses or at breakfast club, while students who arrive later (for example sixth formers, who may not wear uniform at all) are left out;\n* students may walk in with friends, so the 30 may be a few friendship groups with similar views.\n\n(c) Use the school roll as a sampling frame: number the 1100 students and use a random number generator to choose 30 different students (simple random sample). Better still, take a **stratified** sample by year group so that each year is represented in proportion.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q10",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A television programme asks viewers to vote online on the question \"Should the school day be made longer?\". There are 20 000 votes and 78% say \"No\".\n\nA polling company asks a simple random sample of 1000 adults the same question. 61% say \"No\".\n\nEllie says, \"The online vote is far more reliable, because it is 20 times bigger than the poll.\"\n\n(a) Is Ellie correct? Explain your answer.\n\n(b) What is the benefit of increasing the size of a **random** sample?",
+  "hint": "Who chooses to take part in an online vote? Does adding more of the same kind of people fix that?",
+  "answer": "(a) No. The online vote is a voluntary-response (self-selected) sample: only viewers who chose to vote, typically with strong opinions, took part, so it is biased however many votes there are. The random poll gives every adult an equal chance and is more reliable. (b) A larger random sample reduces sampling variability, so the estimate is likely to be closer to the true population value (more precise). It cannot correct a biased method.",
+  "solution": "(a) **Ellie is not correct.**\n\n* The online vote is a **voluntary-response** (self-selected) sample. Only people who watch that programme and feel strongly enough to vote take part. People who strongly dislike the idea are more likely to bother voting, so \"No\" is probably over-represented.\n* A larger sample reduces the effect of **chance** variation, but it does nothing to remove **bias**: 20 000 self-selected people are still self-selected. The error is in the method, not the size.\n* The polling company's random sample gives every adult an equal chance of selection, so it is representative of the population, and 1000 is large enough for a reasonably precise estimate.\n\nThe 61% from the random sample is the more trustworthy figure.\n\n(b) Increasing the size of a random sample reduces **sampling variability**: different random samples would give results closer to each other and to the true population value, so the estimate is more precise. It should be done after making sure the method is unbiased.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q11",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "For each survey below, identify the main source of bias and explain how it might affect the results.\n\n(a) A council phones households chosen at random from the landline telephone directory to ask how much they use the internet.\n\n(b) A gaming magazine invites readers to text in to say whether video games are good for young people.\n\n(c) A residents' association posts a questionnaire about noise to 500 randomly chosen homes near an airport. Only 120 are returned.\n\n(d) A survey about road safety asks: \"Do you agree that the dangerous junction outside the primary school urgently needs a pedestrian crossing?\" ",
+  "hint": "Think about who is missing from the sample, who chooses to take part, and how the question is worded.",
+  "answer": "(a) Undercoverage / incomplete sampling frame: households without a landline (often younger, heavier internet users) are excluded, so internet use is likely underestimated. (b) Voluntary response: keen gamers are most likely to reply, so \"good\" is likely over-represented. (c) Non-response: the 120 who replied may be those most bothered by noise, so concern is likely overstated. (d) Leading question (response bias): the words \"dangerous\" and \"urgently\" push people to agree, so support is likely overstated.",
+  "solution": "(a) **Incomplete sampling frame (undercoverage).** Many households have no landline and use only mobile phones; these are often younger households who use the internet a lot. They cannot be chosen, so the survey is likely to **underestimate** internet use.\n\n(b) **Voluntary response (self-selection).** Readers of a gaming magazine who choose to text in are likely to be enthusiastic gamers, so the proportion saying video games are good for young people is likely to be **too high**.\n\n(c) **Non-response.** Only $\\frac{120}{500} = 24\\%$ replied. People who are most annoyed by the noise are the most likely to return the form, so the level of concern is likely to be **overstated**. The random choice of homes does not help if most of them do not reply.\n\n(d) **Leading question (response bias).** The words \"dangerous\" and \"urgently\" suggest the answer the survey wants. People are pushed towards agreeing, so support for a crossing is likely to be **overstated**. A neutral question would be: \"Do you think a pedestrian crossing is needed at the junction outside the primary school?\" ",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q12",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A market researcher on a high street is asked to interview a **quota sample** of 120 adults about where they shop. The quotas must match the town's adult population:\n\n| Age group | 18–34 | 35–59 | 60 and over |\n|---|---|---|---|\n| Percentage of adults | 30% | 45% | 25% |\n\n(a) Work out the quota for each age group.\n\n(b) Describe how the researcher would collect the quota sample, and explain why it is **not** a random sample.\n\n(c) Give one advantage of quota sampling over stratified sampling in this situation.",
+  "hint": "For (a), find each percentage of 120. For (b), think about who decides which people are interviewed.",
+  "answer": "(a) 18–34: 36, 35–59: 54, 60 and over: 30 (b) The researcher stops passers-by of each age group and interviews them until each quota is filled; the interviewer chooses who to approach and only people on the high street at that time can be chosen, so not everyone has an equal chance. (c) No sampling frame (list of all adults) is needed, and it is quick and cheap.",
+  "solution": "(a)\n* 18–34: $30\\% \\text{ of } 120 = 0.3 \\times 120 = 36$\n* 35–59: $0.45 \\times 120 = 54$\n* 60 and over: $0.25 \\times 120 = 30$\n\nCheck: $36 + 54 + 30 = 120$ ✓\n\n(b) The researcher approaches people on the high street, checks their age group and interviews them, continuing until 36, 54 and 30 people in the three age groups have been interviewed. People in a group whose quota is full are no longer interviewed.\n\nIt is **not random** because:\n* the interviewer decides whom to approach (they may avoid people who look busy or unfriendly);\n* only people on that high street at that time can be included, so most adults in the town have no chance of selection.\n\n(c) Quota sampling does not need a **sampling frame** (a list of every adult in the town), which would be hard to obtain. It is also quick and cheap, and the interviewer can replace anyone who refuses with another person from the same age group.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q13",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A school has 1500 students in 60 tutor groups of 25. Each tutor group contains students from a single year group (Years 7 to 11).\n\nThe school council wants the views of 75 students about after-school clubs.\n\n* **Plan A:** choose 3 tutor groups at random and survey every student in them.\n* **Plan B:** take a stratified sample of 75 students by year group.\n\n(a) Name the sampling method used in Plan A.\n\n(b) Give one advantage of Plan A.\n\n(c) Explain why Plan B is likely to give more representative results than Plan A.",
+  "hint": "In Plan A, how many different year groups could the 75 students come from?",
+  "answer": "(a) Cluster sampling (b) e.g. quick and easy to carry out: the survey can be given out in just three tutor rooms; no need to track down 75 individual students. (c) In Plan A all 75 students come from at most 3 year groups (possibly just one), and students in the same tutor group may have similar views, so some years are not represented at all. Plan B guarantees every year group is represented in proportion.",
+  "solution": "(a) Whole groups are chosen at random and everyone in them is surveyed: **cluster sampling**.\n\n(b) Any one, e.g.\n* it is quick and convenient: the questionnaire is handed out in just three tutor rooms;\n* no list of individual students needs to be numbered and searched.\n\n(c) Each tutor group is from a single year group, so the 75 students in Plan A come from **at most 3** of the 5 year groups, and could all come from **one**. Views on after-school clubs probably differ by age (Year 11 students are revising for exams; Year 7 students may want more clubs), so whole years could be missing from the results. Students in one tutor group also share the same tutor and timetable, so their views may be similar to each other.\n\nPlan B puts students from **every** year group into the sample, in proportion to the size of each year, so it is far more likely to be representative of the whole school.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q14",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": true,
+  "question": "A company employs 360 staff at site A, 240 staff at site B and 150 staff at site C. The human resources manager wants to take a sample of 50 staff to complete a questionnaire about working conditions.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why a stratified sample by site would be appropriate.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Calculate the number of staff from each site that should be in the stratified sample.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Describe how the staff from site B could be selected.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "The manager considers using a quota sample with the same numbers from each site instead. Give one advantage and one disadvantage of quota sampling compared with stratified sampling in this context.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (b), use $\\dfrac{\\text{site size}}{\\text{total}} \\times 50$. For (c), you need a list, numbering and a random process.",
+  "answer": "(a) Working conditions may differ between sites, so each site should be represented in proportion to its size. (b) A: 24, B: 16, C: 10 (c) List the 240 site B staff, number them 1–240, use a random number generator to choose 16 different numbers (ignoring repeats). (d) Advantage: e.g. no sampling frame needed / quicker and cheaper / non-responders easily replaced. Disadvantage: e.g. not random, so the interviewer can introduce bias / not possible to measure sampling error.",
+  "solution": "(a) The sites are natural groups whose working conditions (and so staff opinions) may differ. A stratified sample ensures each site is represented in proportion to its number of staff. **B1**\n\n(b) Total staff: $360 + 240 + 150 = 750$.\n\n$\\dfrac{360}{750} \\times 50 = 24$, $\\quad \\dfrac{240}{750} \\times 50 = 16$, $\\quad \\dfrac{150}{750} \\times 50 = 10$\n\n**M1** for $\\dfrac{\\text{site}}{750} \\times 50$ used for at least one site, **A1** for all of A: 24, B: 16, C: 10.\n\n(c) Obtain a list of the 240 staff at site B and number them from 1 to 240. **B1**\nUse a random number generator to select 16 different numbers between 1 and 240, ignoring repeats; those staff form the sample. **B1**\n\n(d) **Advantage (B1)**, any one of:\n* no sampling frame (complete list of staff) is needed;\n* quick and cheap to carry out;\n* staff who refuse can simply be replaced by others from the same site.\n\n**Disadvantage (B1)**, any one of:\n* it is not random, so the person collecting the data can (consciously or not) choose staff with particular views, introducing bias;\n* because it is non-random, sampling error cannot be estimated.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-sampling-methods-q15",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "In a college, the numbers of students studying Arts, Science and Business are in the ratio $4 : 7 : 5$.\n\nA stratified sample of students, by subject, contains 21 Science students.\n\n(a) How many students are in the sample altogether?\n\n(b) How many Arts students and how many Business students are in the sample?\n\n(c) There are 960 more Science students than Arts students in the college. Work out the total number of students in the college, and the fraction of the college's students who are in the sample.",
+  "hint": "In a stratified sample, the strata in the sample are in the same ratio as in the population. Find the value of one part.",
+  "answer": "(a) 48 (b) Arts: 12, Business: 15 (c) 5120 students; $\\frac{3}{320}$ of the students are in the sample",
+  "solution": "In a stratified sample each stratum is represented in proportion to its size, so the sample is also in the ratio $4 : 7 : 5$.\n\n(a) Science is 7 parts and there are 21 Science students, so one part is $21 \\div 7 = 3$ students.\nTotal parts: $4 + 7 + 5 = 16$, so the sample has $16 \\times 3 = 48$ students.\n\n(b) Arts: $4 \\times 3 = 12$; Business: $5 \\times 3 = 15$. (Check: $12 + 21 + 15 = 48$ ✓)\n\n(c) Science $-$ Arts $= 7 - 4 = 3$ parts $= 960$ students, so one part is $960 \\div 3 = 320$ students.\nTotal: $16 \\times 320 = 5120$ students.\n\nFraction in the sample:\n$$\\frac{48}{5120} = \\frac{3}{320}$$\n(Check: each stratum is sampled at this rate, e.g. Science has $7 \\times 320 = 2240$ students and $\\frac{3}{320} \\times 2240 = 21$ ✓)",
+  "linkedTopicIds": [
+   "rat-ratio-sharing"
+  ]
+ },
+ {
+  "id": "stat-sampling-methods-q16",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A youth club has members in two age groups, **juniors** and **seniors**. A stratified sample of 30 members, by age group, contains 12 juniors.\n\nLater, 40 new seniors join the club and no one leaves. A new stratified sample of 30 members now contains only 10 juniors.\n\nFind how many juniors and how many seniors the club had originally. Assume the stratum sizes were exact (no rounding was needed).",
+  "hint": "Let the original total be $T$ and the number of juniors be $j$. Write one equation for each sample, then solve them simultaneously.",
+  "answer": "80 juniors and 120 seniors (200 members originally)",
+  "solution": "Let $j$ be the number of juniors and $T$ the original total number of members.\n\n**First sample:**\n$$\\frac{j}{T} \\times 30 = 12 \\Rightarrow 30j = 12T \\Rightarrow j = 0.4T \\qquad (1)$$\n\n**Second sample:** the number of juniors is still $j$, but the total is now $T + 40$:\n$$\\frac{j}{T + 40} \\times 30 = 10 \\Rightarrow 3j = T + 40 \\qquad (2)$$\n\nSubstitute (1) into (2):\n$$3(0.4T) = T + 40 \\Rightarrow 1.2T = T + 40 \\Rightarrow 0.2T = 40 \\Rightarrow T = 200$$\n\nSo $j = 0.4 \\times 200 = 80$ juniors and $200 - 80 = 120$ seniors.\n\n**Check:** first sample $\\frac{80}{200} \\times 30 = 12$ ✓; after the new members the club has 240 members, and $\\frac{80}{240} \\times 30 = 10$ ✓ (and seniors $\\frac{160}{240} \\times 30 = 20$).",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "stat-sampling-methods-q17",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A machine makes bolts using 8 cutting heads in strict rotation, so bolts 1, 9, 17, … come from head 1, bolts 2, 10, 18, … from head 2, and so on. Head 8 is faulty: **every bolt it makes is defective**, and all other bolts are fine.\n\nIn one shift the machine makes 2000 bolts, numbered in order. An inspector takes a systematic sample of 100 bolts: she chooses a random starting bolt from 1 to 20 and then takes every 20th bolt.\n\n(a) What proportion of the 2000 bolts are defective?\n\n(b) Find all the starting points that give a sample containing at least one defective bolt. For these starting points, what proportion of the sample is defective?\n\n(c) Find the probability that the inspector's sample contains **no** defective bolts.\n\n(d) Explain why systematic sampling is a poor choice here, and suggest a better method.",
+  "hint": "Bolt $b$ is defective exactly when $b$ is a multiple of 8. The sample is $s, s+20, s+40, \\dots$ Think about what adding 20 does to the remainder when you divide by 8.",
+  "answer": "(a) $\\frac{1}{8} = 12.5\\%$ (b) Starting points 4, 8, 12, 16, 20; for each, exactly half of the sample (50 bolts) is defective. (c) $\\frac{3}{4}$ (d) The sampling interval (20) interacts with the 8-bolt cycle, so the sample is either 0% or 50% defective, never close to 12.5%. Use simple random sampling (or a systematic interval that shares no factor with 8, such as 21, though random is safer).",
+  "solution": "(a) Defective bolts are numbers $8, 16, 24, \\dots, 2000$: that is $2000 \\div 8 = 250$ bolts, so the proportion is $\\dfrac{250}{2000} = \\dfrac{1}{8} = 12.5\\%$.\n\n(b) The sample is $s, s + 20, s + 40, \\dots, s + 1980$. Look at remainders on division by 8. Since $20 = 2 \\times 8 + 4$, adding 20 adds 4 to the remainder (mod 8). So the remainders of the sampled bolts alternate:\n$$r,\\ r + 4,\\ r,\\ r + 4,\\ \\dots \\pmod 8$$\nwhere $r$ is the remainder of $s$.\n\nA bolt is defective when its remainder is 0. This happens only if $r = 0$ or $r + 4 \\equiv 0$, i.e. $r = 0$ or $r = 4$. Among $1, \\dots, 20$ the starting points with remainder 0 or 4 are\n$$s = 4, 8, 12, 16, 20$$\n\nFor these, exactly every other bolt in the sample is defective, so **50 of the 100** sampled bolts (50%) are defective. For every other starting point, **none** of the sample is defective.\n\n(c) The start is chosen at random from 20 values and 15 of them give no defective bolts:\n$$P(\\text{no defective bolts}) = \\frac{15}{20} = \\frac{3}{4}$$\n\n(d) The production line has a repeating pattern (period 8), and the sampling interval 20 shares the factor 4 with 8, so the sample keeps landing on the same few heads. The inspector will either see 0% defective (probability $\\frac{3}{4}$) or 50% defective (probability $\\frac{1}{4}$), never anything near the true 12.5%. (Interestingly, the average over all starting points is $\\frac{1}{4} \\times 50\\% = 12.5\\%$, but any single sample is badly wrong.)\n\nA **simple random sample** of 100 bolts from the 2000 avoids this, because it does not follow any pattern. Alternatively, a stratified sample by cutting head (about $\\frac{100}{8}$ from each head) would guarantee every head is checked.",
+  "linkedTopicIds": [
+   "prob-basic-probability"
+  ]
+ },
+ {
+  "id": "stat-sampling-methods-q18",
+  "topicId": "stat-sampling-methods",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A sixth form college wants a stratified sample of 50 students, stratified by **both** year group and gender. The numbers of students are shown in the table.\n\n| | Male | Female |\n|---|---|---|\n| Year 12 | 112 | 128 |\n| Year 13 | 96 | 104 |\n\n(a) Work out how many students from each of the four groups should be in the sample. Make sure your answers are whole numbers with a total of 50.\n\n(b) Ravi says, \"It would be simpler to stratify by year group only.\" Explain one disadvantage of Ravi's suggestion.",
+  "hint": "There are four strata. Each is $\\frac{\\text{group size}}{440} \\times 50$. If the rounded numbers do not total 50, adjust the one closest to a half.",
+  "answer": "(a) Year 12 male: 13, Year 12 female: 14, Year 13 male: 11, Year 13 female: 12 (b) e.g. the sample could then contain very unequal numbers of males and females within a year group, so gender would not be fairly represented.",
+  "solution": "(a) Total: $112 + 128 + 96 + 104 = 440$ students.\n\n| Group | Calculation | Value |\n|---|---|---|\n| Year 12 male | $\\frac{112}{440} \\times 50$ | $12.727\\ldots$ |\n| Year 12 female | $\\frac{128}{440} \\times 50$ | $14.545\\ldots$ |\n| Year 13 male | $\\frac{96}{440} \\times 50$ | $10.909\\ldots$ |\n| Year 13 female | $\\frac{104}{440} \\times 50$ | $11.818\\ldots$ |\n\nRounding each to the nearest whole number gives $13 + 15 + 11 + 12 = 51$: one too many.\n\nAll four values were rounded up. The one that only just rounded up is $14.545\\ldots$ (closest to the halfway point), so round it **down** to 14.\n\nSample: Year 12 male **13**, Year 12 female **14**, Year 13 male **11**, Year 13 female **12**. Check: $13 + 14 + 11 + 12 = 50$ ✓\n\n(b) Stratifying by year group only fixes how many come from each year (27 from Year 12 and 23 from Year 13), but the males and females within each year would then be chosen at random, so by chance the sample could, for example, contain far more males than females in Year 13. If views differ by gender, the results could be unrepresentative. Stratifying by both factors guarantees each combination is represented in proportion.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "stat-two-way-tables"
+  ]
+ }
+]

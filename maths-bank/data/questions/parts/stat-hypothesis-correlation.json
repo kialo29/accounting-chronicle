@@ -1,0 +1,285 @@
+[
+ {
+  "id": "stat-hypothesis-correlation-q01",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For a sample of bivariate data,\n$$S_{xx} = 125, \\quad S_{yy} = 80, \\quad S_{xy} = -70$$\n\n(a) Calculate the product moment correlation coefficient, $r$.\n\n(b) Describe the correlation shown by your answer.",
+  "hint": "Use $r = \\dfrac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}$. Work out the product under the square root first.",
+  "answer": "(a) $r = -0.7$ (b) fairly strong negative linear correlation",
+  "solution": "(a)\n$$r = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}} = \\frac{-70}{\\sqrt{125 \\times 80}} = \\frac{-70}{\\sqrt{10000}} = \\frac{-70}{100} = -0.7$$\n\n(b) $r$ is negative, so as $x$ increases $y$ tends to decrease. $|r| = 0.7$ is fairly close to 1, so this is fairly strong **negative linear** correlation.\n\nNote that $S_{xx}$ and $S_{yy}$ are always positive, so the sign of $r$ always comes from $S_{xy}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q02",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Lena records the altitude and the air temperature at 14 randomly chosen points on a mountain walk. She wants to test, at the $5\\%$ level, whether there is negative correlation between altitude and temperature.\n\nShe writes:\n$$H_0: r = 0, \\qquad H_1: r < 0$$\n\n(a) Explain what is wrong with Lena's hypotheses.\n\n(b) Write down the correct hypotheses, defining any symbol you use.",
+  "hint": "Is $r$ something Lena already knows from her data, or something she is trying to find out about?",
+  "answer": "(a) Hypotheses must be about the population PMCC, not the sample value $r$, which is already known. (b) $H_0: \\rho = 0$, $H_1: \\rho < 0$, where $\\rho$ is the population PMCC between altitude and temperature.",
+  "solution": "(a) $r$ is the PMCC of Lena's **sample**. She calculates it from her 14 readings, so it is a known number: there is nothing to test about it. A hypothesis test makes a statement about the **population** (all points on the walk), which she cannot measure completely.\n\n(b) Let $\\rho$ be the product moment correlation coefficient between altitude and temperature for the whole population of points on the walk.\n$$H_0: \\rho = 0 \\qquad H_1: \\rho < 0$$\n\nThe test is one-tailed because Lena is only looking for **negative** correlation. She will then compare her sample value $r$ with the critical value for $n = 14$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q03",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random sample of 12 pairs of observations gives a product moment correlation coefficient of $r = 0.55$.\n\nTest, at the $5\\%$ level of significance, whether there is evidence of **positive** correlation in the population.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% | 0.5% |\n|---|---|---|---|---|\n| Critical value of $r$, $n = 12$ | 0.4973 | 0.5760 | 0.6581 | 0.7079 |",
+  "hint": "$H_1: \\rho > 0$ is one-tailed, so use the $5\\%$ column. Is $r$ positive and at least the critical value?",
+  "answer": "$0.55 > 0.4973$: reject $H_0$. There is evidence of positive correlation.",
+  "solution": "$H_0: \\rho = 0$, $H_1: \\rho > 0$ (one-tailed).\n\nCritical value for $n = 12$ at $5\\%$ one-tailed: $0.4973$.\n\n$r = 0.55$ is positive and $0.55 > 0.4973$, so $r$ lies in the critical region. Reject $H_0$.\n\nThere is evidence at the $5\\%$ level of positive correlation in the population.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q04",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random sample of 12 pairs of observations gives a product moment correlation coefficient of $r = -0.55$.\n\nTest, at the $5\\%$ level of significance, whether there is evidence of **negative** correlation in the population.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% | 0.5% |\n|---|---|---|---|---|\n| Critical value of $r$, $n = 12$ | 0.4973 | 0.5760 | 0.6581 | 0.7079 |",
+  "hint": "The table gives positive values. For $H_1: \\rho < 0$ the critical region is $r \\le -(\\text{critical value})$.",
+  "answer": "$r = -0.55 < -0.4973$ (i.e. $|r| > 0.4973$ and $r < 0$): reject $H_0$. There is evidence of negative correlation.",
+  "solution": "**What changed:** the sign of $r$ and the direction of $H_1$ have both flipped.\n\n$H_0: \\rho = 0$, $H_1: \\rho < 0$ (one-tailed, $5\\%$ column).\n\nThe critical region is $r \\le -0.4973$. Compare sizes: $|r| = 0.55 > 0.4973$, and $r$ is negative as $H_1$ requires.\n\nSo $r$ is in the critical region: reject $H_0$. There is evidence at the $5\\%$ level of negative correlation in the population.\n\n(Writing \"$-0.55 < 0.4973$ so not significant\" would be wrong: it compares a negative number with a positive critical value. By symmetry the conclusion is exactly as in the previous question, with the sign reversed.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q05",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random sample of 12 pairs of observations gives a product moment correlation coefficient of $r = -0.55$.\n\nTest, at the $5\\%$ level of significance, whether there is evidence of **any** correlation in the population.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% | 0.5% |\n|---|---|---|---|---|\n| Critical value of $r$, $n = 12$ | 0.4973 | 0.5760 | 0.6581 | 0.7079 |",
+  "hint": "\"Any correlation\" means $H_1: \\rho \\ne 0$, which is two-tailed. How much of the $5\\%$ goes in each tail?",
+  "answer": "Two-tailed, so use $2.5\\%$: $|r| = 0.55 < 0.5760$. Do not reject $H_0$; insufficient evidence of correlation.",
+  "solution": "**What changed:** only the alternative hypothesis, from $\\rho < 0$ to $\\rho \\ne 0$.\n\n$H_0: \\rho = 0$, $H_1: \\rho \\ne 0$ (two-tailed).\n\nA two-tailed test at $5\\%$ puts $2.5\\%$ in each tail, so use the $2.5\\%$ column: critical value $0.5760$. The critical region is $r \\le -0.5760$ or $r \\ge 0.5760$.\n\n$|r| = 0.55 < 0.5760$, so $r$ is **not** in the critical region. Do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level of correlation in the population.\n\n**Effect of the change:** the same data were significant for the one-tailed test but are not for the two-tailed test, because splitting $\\alpha$ between two tails makes each tail's critical value larger.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q06",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random sample of 12 pairs of observations gives a product moment correlation coefficient of $r = -0.55$.\n\nTest, at the $10\\%$ level of significance, whether there is evidence of **any** correlation in the population.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% | 0.5% |\n|---|---|---|---|---|\n| Critical value of $r$, $n = 12$ | 0.4973 | 0.5760 | 0.6581 | 0.7079 |",
+  "hint": "Two-tailed at $10\\%$: how much is in each tail, and which column is that?",
+  "answer": "Use the $5\\%$ column: $|r| = 0.55 > 0.4973$. Reject $H_0$; there is evidence of correlation.",
+  "solution": "**What changed:** only the significance level, from $5\\%$ to $10\\%$.\n\n$H_0: \\rho = 0$, $H_1: \\rho \\ne 0$ (two-tailed).\n\n$10\\%$ two-tailed means $5\\%$ in each tail, so the critical value is $0.4973$.\n\n$|r| = 0.55 > 0.4973$: reject $H_0$.\n\nThere is evidence at the $10\\%$ level of correlation in the population.\n\n**Effect of the change:** a higher significance level gives a smaller critical value, so it is easier to reject $H_0$ (at the cost of a greater chance of wrongly rejecting a true $H_0$).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q07",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A teacher records the number of hours of revision and the mock exam mark for a random sample of 16 students. The PMCC is $r = 0.63$. Ravi tests for positive correlation at the $1\\%$ level. His working is shown below.\n\n**Line 1:** $H_0: \\rho = 0$, $H_1: \\rho > 0$\n\n**Line 2:** Critical value for $n = 16$, $1\\%$ one-tailed: $0.5742$\n\n**Line 3:** $0.63 > 0.5742$, so reject $H_0$.\n\n**Line 4:** Conclusion: doing more revision causes students to get higher marks.\n\nIdentify Ravi's error, explain why it is an error, and write a correct conclusion.",
+  "hint": "Lines 1 to 3 are correct. What exactly does a significant PMCC give evidence for?",
+  "answer": "Line 4: a significant PMCC shows evidence of positive linear correlation, not causation. Correct conclusion: there is evidence at the $1\\%$ level of positive correlation between hours of revision and mock exam mark.",
+  "solution": "Lines 1–3 are correct: the hypotheses are about $\\rho$, the test is one-tailed, and $0.63 > 0.5742$.\n\n**The error is in Line 4.** The test only provides evidence that the two variables are positively (linearly) **associated** in the population. It cannot show that one *causes* the other. For example, students who are more motivated, or who have more support at home, may both revise more and score higher; a third variable like this could explain the correlation.\n\nTo show cause and effect you would need a controlled experiment (e.g. randomly allocating students to different amounts of revision).\n\n**Correct conclusion:** reject $H_0$; there is evidence at the $1\\%$ level of positive correlation between the number of hours of revision and the mock exam mark.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q08",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A researcher records the screen time and the hours of sleep of 20 randomly chosen teenagers. The PMCC is $r = -0.41$. Chloe tests whether there is any correlation, at the $5\\%$ significance level. Part of a table of critical values is given.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% |\n|---|---|---|---|\n| Critical value, $n = 20$ | 0.3783 | 0.4438 | 0.5155 |\n\nChloe's working:\n\n**Line 1:** $H_0: \\rho = 0$, $H_1: \\rho \\ne 0$\n\n**Line 2:** Critical value at $5\\%$: $0.3783$\n\n**Line 3:** $|r| = 0.41 > 0.3783$, so reject $H_0$.\n\n**Line 4:** There is evidence of correlation between screen time and hours of sleep.\n\nFind Chloe's error, explain it, and give the correct conclusion.",
+  "hint": "Look at the form of $H_1$ in Line 1. How is the $5\\%$ shared out?",
+  "answer": "Line 2: the test is two-tailed, so she should use the $2.5\\%$ column, $0.4438$. Since $0.41 < 0.4438$, do not reject $H_0$: there is insufficient evidence at the $5\\%$ level of correlation between screen time and hours of sleep.",
+  "solution": "Line 1 is correct: \"any correlation\" gives $H_1: \\rho \\ne 0$, which is **two-tailed**.\n\n**The error is in Line 2.** In a two-tailed test at $5\\%$, the $5\\%$ is split between the two tails, $2.5\\%$ in each. Chloe has used the one-tailed $5\\%$ critical value, which would make the overall significance level $10\\%$.\n\n**Correct working:**\n\nCritical value ($2.5\\%$ one-tailed column, $n = 20$): $0.4438$.\n\n$|r| = 0.41 < 0.4438$, so $r$ is not in the critical region. Do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level of correlation between screen time and hours of sleep for teenagers.\n\n(Had the researcher decided **before** collecting data to test for *negative* correlation, $H_1: \\rho < 0$ with critical value $0.3783$ would have been correct and the result significant. The choice of $H_1$ must not be made after seeing the data.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q09",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A health survey takes a random sample of 150 adults and records their daily step count and their resting heart rate. The PMCC is $r = -0.18$.\n\n(a) Given that the critical value for $n = 150$ at the $1\\%$ one-tailed level is $0.1898$ and at the $5\\%$ one-tailed level is $0.1348$, test at the $5\\%$ level whether there is negative correlation.\n\n(b) Amir says: \"The result is significant, so there is a strong relationship between step count and heart rate.\" Is Amir correct? Justify your answer.\n\n(c) Explain why the critical values for the PMCC get smaller as the sample size increases.",
+  "hint": "Significance tells you whether $\\rho = 0$ is believable; the size of $r$ tells you how strong the linear relationship is in the sample.",
+  "answer": "(a) $|r| = 0.18 > 0.1348$ and $r < 0$: reject $H_0$; evidence of negative correlation. (b) No: the evidence suggests $\\rho \\ne 0$, but $r = -0.18$ shows only very weak linear correlation. (c) With larger samples, $r$ varies less from sample to sample, so a smaller $|r|$ is already unlikely if $\\rho = 0$.",
+  "solution": "(a) $H_0: \\rho = 0$, $H_1: \\rho < 0$. Critical value $0.1348$ (5% one-tailed).\n\n$r = -0.18$ is negative and $|r| = 0.18 > 0.1348$. Reject $H_0$: there is evidence at the $5\\%$ level of negative correlation between daily step count and resting heart rate. (It is not significant at $1\\%$, since $0.18 < 0.1898$.)\n\n(b) **No.** A significant result means that the sample gives evidence that the population correlation is **not zero**. It says nothing about the relationship being strong. Here $r = -0.18$ is close to 0: the linear relationship is very weak, and step count would be a poor predictor of heart rate. With a sample as large as 150, even a weak correlation can be detected.\n\n(c) If $\\rho = 0$, a small sample can easily produce a fairly large $|r|$ just by chance (with 3 or 4 points, random scatter can look quite linear). As $n$ increases, the sampling distribution of $r$ becomes more tightly concentrated around 0, so a smaller value of $|r|$ is enough to be unlikely under $H_0$. Hence the critical value falls as $n$ increases.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q10",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A kiosk owner records the mean daily temperature, $x$ °C, and the mean number of hot drinks sold per day, $y$, for 8 randomly chosen weeks.\n\n| $x$ (°C) | 4 | 7 | 9 | 12 | 15 | 18 | 21 | 24 |\n|---|---|---|---|---|---|---|---|---|\n| $y$ | 176 | 171 | 152 | 160 | 128 | 133 | 112 | 104 |\n\nThe data are shown on the scatter diagram.\n\n(a) Use your calculator to find the product moment correlation coefficient, giving your answer to 4 decimal places.\n\n(b) Test, at the $1\\%$ level of significance, whether there is negative correlation between temperature and hot drink sales. The critical value for $n = 8$ at $1\\%$ one-tailed is $0.7887$.\n\n(c) Explain why the scatter diagram supports using the PMCC for these data.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><line x1=\"52\" y1=\"14\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"91.1\" y1=\"14\" x2=\"91.1\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"130.3\" y1=\"14\" x2=\"130.3\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"169.4\" y1=\"14\" x2=\"169.4\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"208.6\" y1=\"14\" x2=\"208.6\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"247.7\" y1=\"14\" x2=\"247.7\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"286.9\" y1=\"14\" x2=\"286.9\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"326\" y1=\"14\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"216\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"182.3\" x2=\"326\" y2=\"182.3\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"148.7\" x2=\"326\" y2=\"148.7\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"115\" x2=\"326\" y2=\"115\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"81.3\" x2=\"326\" y2=\"81.3\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"47.7\" x2=\"326\" y2=\"47.7\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"14\" x2=\"326\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"216\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"52\" y1=\"14\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"52\" y1=\"216\" x2=\"52\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"52\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"91.1\" y1=\"216\" x2=\"91.1\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"91.1\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"130.3\" y1=\"216\" x2=\"130.3\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"130.3\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"169.4\" y1=\"216\" x2=\"169.4\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"169.4\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"208.6\" y1=\"216\" x2=\"208.6\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"208.6\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">16</text><line x1=\"247.7\" y1=\"216\" x2=\"247.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"247.7\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"286.9\" y1=\"216\" x2=\"286.9\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"286.9\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">24</text><line x1=\"326\" y1=\"216\" x2=\"326\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"326\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">28</text><line x1=\"47\" y1=\"216\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"220\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">80</text><line x1=\"47\" y1=\"182.3\" x2=\"52\" y2=\"182.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"186.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">100</text><line x1=\"47\" y1=\"148.7\" x2=\"52\" y2=\"148.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"152.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">120</text><line x1=\"47\" y1=\"115\" x2=\"52\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"119\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">140</text><line x1=\"47\" y1=\"81.3\" x2=\"52\" y2=\"81.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"85.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">160</text><line x1=\"47\" y1=\"47.7\" x2=\"52\" y2=\"47.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"51.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">180</text><line x1=\"47\" y1=\"14\" x2=\"52\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">200</text><text x=\"189\" y=\"254\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Temperature, x (°C)</text><text x=\"14\" y=\"115\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 14 115)\">Hot drinks per day, y</text><path d=\"M87.1 50.4 L95.1 58.4 M87.1 58.4 L95.1 50.4\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M116.5 58.8 L124.5 66.8 M116.5 66.8 L124.5 58.8\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M136.1 90.8 L144.1 98.8 M136.1 98.8 L144.1 90.8\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M165.4 77.3 L173.4 85.3 M165.4 85.3 L173.4 77.3\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M194.8 131.2 L202.8 139.2 M194.8 139.2 L202.8 131.2\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M224.1 122.8 L232.1 130.8 M224.1 130.8 L232.1 122.8\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M253.5 158.1 L261.5 166.1 M253.5 166.1 L261.5 158.1\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M282.9 171.6 L290.9 179.6 M282.9 179.6 L290.9 171.6\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/></svg>",
+  "hint": "Enter the data in your calculator's two-variable statistics mode. For (b), the critical region for $H_1: \\rho < 0$ is $r \\le -0.7887$.",
+  "answer": "(a) $r = -0.9643$ (b) $-0.9643 < -0.7887$: reject $H_0$; evidence at the $1\\%$ level of negative correlation between temperature and hot drink sales. (c) The points lie close to a straight line, so the relationship is linear and the PMCC is an appropriate measure.",
+  "solution": "(a) From the calculator (or by hand): $\\sum x = 110$, $\\sum y = 1136$, $\\sum x^2 = 1856$, $\\sum y^2 = 166354$, $\\sum xy = 14351$.\n\n$S_{xx} = 1856 - \\frac{110^2}{8} = 343.5$, $S_{yy} = 166354 - \\frac{1136^2}{8} = 5042$, $S_{xy} = 14351 - \\frac{110 \\times 1136}{8} = -1269$.\n$$r = \\frac{-1269}{\\sqrt{343.5 \\times 5042}} = -0.9643 \\text{ (4 d.p.)}$$\n\n(b) $H_0: \\rho = 0$, $H_1: \\rho < 0$, where $\\rho$ is the population PMCC between weekly mean temperature and hot drink sales.\n\n$|r| = 0.9643 > 0.7887$ and $r$ is negative, so reject $H_0$.\n\nThere is evidence at the $1\\%$ level of negative correlation between temperature and the number of hot drinks sold: in warmer weeks fewer hot drinks tend to be sold.\n\n(c) The PMCC measures **linear** correlation. The points on the scatter diagram lie close to a straight line sloping downwards, with no curve and no outliers, so a linear measure is appropriate.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q11",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A pilot study suggests that the PMCC between the age of a tree and the width of its trunk in a forest is about $0.46$. An ecologist plans to measure a random sample of trees and test for positive correlation at the $5\\%$ level. She assumes that her sample will give $r = 0.46$.\n\n| $n$ | 10 | 11 | 12 | 13 | 14 | 15 | 16 |\n|---|---|---|---|---|---|---|---|\n| 5% one-tailed critical value | 0.5494 | 0.5214 | 0.4973 | 0.4762 | 0.4575 | 0.4409 | 0.4259 |\n\n(a) Find the smallest sample size for which her result would be significant.\n\n(b) For this sample size, would $r = 0.46$ give evidence of correlation if she had instead tested $H_1: \\rho \\ne 0$ at the $5\\%$ level? The $2.5\\%$ one-tailed critical value for this $n$ is $0.5324$.",
+  "hint": "The result is significant when $r$ is at least the critical value. How do critical values change as $n$ increases?",
+  "answer": "(a) $n = 14$ (b) No: $0.46 < 0.5324$, so the two-tailed test would not be significant.",
+  "solution": "(a) She needs $0.46 \\ge$ critical value. The critical values decrease as $n$ increases:\n\n$n = 13$: $0.4762 > 0.46$, not significant.\n\n$n = 14$: $0.4575 < 0.46$, significant.\n\nSo the smallest sample size is $n = 14$ (and any larger sample would also work, since the critical values keep falling).\n\n(b) For $H_1: \\rho \\ne 0$ at $5\\%$, use $2.5\\%$ in each tail: critical value $0.5324$ for $n = 14$. Since $0.46 < 0.5324$, she would **not** reject $H_0$. A two-tailed test needs a larger sample (or a stronger correlation) to reach significance.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q12",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 9,
+  "question": "A used-car dealer records the age, $x$ years, and the selling price, $y$ thousand pounds, of 10 randomly selected cars of the same model. The summary statistics are\n$$\\sum x = 47, \\quad \\sum y = 121.5, \\quad \\sum x^2 = 289, \\quad \\sum y^2 = 1637.41, \\quad \\sum xy = 467.4$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $S_{xy} = -103.65$ and find the values of $S_{xx}$ and $S_{yy}$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Calculate the product moment correlation coefficient between $x$ and $y$. Give your answer to 3 significant figures.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Test, at the $1\\%$ level of significance, whether there is evidence of negative correlation between the age and the price of cars of this model. State your hypotheses clearly. (The critical value for $n = 10$ at $1\\%$ one-tailed is $0.7155$.)",
+    "marks": 4
+   },
+   {
+    "label": "d",
+    "prompt": "The dealer recalculates the PMCC with the prices measured in pounds instead of thousands of pounds. State, with a reason, the effect on the value of the PMCC.",
+    "marks": 1
+   }
+  ],
+  "hint": "$S_{xy} = \\sum xy - \\frac{\\sum x \\sum y}{n}$, and similarly for $S_{xx}$ and $S_{yy}$.",
+  "answer": "(a) $S_{xy} = -103.65$, $S_{xx} = 68.1$, $S_{yy} = 161.185$ (b) $r = -0.989$ (c) $H_0: \\rho = 0$, $H_1: \\rho < 0$; $|r| > 0.7155$, reject $H_0$: evidence of negative correlation between age and price. (d) No change: the PMCC is unaffected by multiplying a variable by a positive constant.",
+  "solution": "(a) $S_{xy} = 467.4 - \\frac{47 \\times 121.5}{10} = 467.4 - 571.05 = -103.65$ **M1 A1** (shown)\n\n$S_{xx} = 289 - \\frac{47^2}{10} = 68.1$, $S_{yy} = 1637.41 - \\frac{121.5^2}{10} = 1637.41 - 1476.225 = 161.185$ **B1**\n\n(b) $r = \\frac{-103.65}{\\sqrt{68.1 \\times 161.185}} = -0.9893\\ldots = -0.989$ (3 s.f.) **B1**\n\n(c) $H_0: \\rho = 0$, $H_1: \\rho < 0$, where $\\rho$ is the population PMCC between age and price **B1** (both hypotheses in terms of $\\rho$)\n\nCritical value $-0.7155$ (or compare $|r|$ with $0.7155$) **M1**\n\n$-0.989 < -0.7155$, so $r$ lies in the critical region: reject $H_0$ **A1**\n\nThere is evidence (at the $1\\%$ level) of negative correlation between the age of a car of this model and its selling price, i.e. older cars tend to sell for less. **A1** (conclusion in context, not \"proves\" or \"causes\")\n\n(d) It is unchanged: $r = -0.989$. Multiplying every $y$ value by 1000 multiplies $S_{xy}$ by 1000 and $\\sqrt{S_{yy}}$ by 1000, so the ratio is the same (the PMCC has no units). **B1**",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q13",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "For a random sample of 12 days, a café records the maximum temperature, $x$ °C, and the number of cold drinks sold, $y$. The regression line of $y$ on $x$ is\n$$y = 2.4 + 1.5x$$\nand $S_{xx} = 40$, $S_{yy} = 144$.\n\n(a) Find $S_{xy}$, and hence find the product moment correlation coefficient.\n\n(b) Test, at the $1\\%$ level, whether there is any correlation between maximum temperature and cold drink sales. (Critical values for $n = 12$: $0.6581$ at $1\\%$ one-tailed, $0.7079$ at $0.5\\%$ one-tailed.)\n\n(c) Comment on whether the regression line is likely to give reliable estimates of sales for temperatures within the range of the data.",
+  "hint": "The gradient of the regression line of $y$ on $x$ is $b = \\dfrac{S_{xy}}{S_{xx}}$.",
+  "answer": "(a) $S_{xy} = 60$, $r = 0.791$ (3 s.f.) (b) $0.791 > 0.7079$: reject $H_0$; evidence at the $1\\%$ level of correlation. (c) Yes: there is strong, significant positive linear correlation, so estimates within the range of the data (interpolation) should be fairly reliable.",
+  "solution": "(a) The gradient of the regression line is $b = \\frac{S_{xy}}{S_{xx}}$, so\n$$S_{xy} = b \\times S_{xx} = 1.5 \\times 40 = 60$$\n$$r = \\frac{60}{\\sqrt{40 \\times 144}} = \\frac{60}{\\sqrt{5760}} = 0.7906 \\ldots = 0.791 \\text{ (3 s.f.)}$$\n\n(b) $H_0: \\rho = 0$, $H_1: \\rho \\ne 0$ (two-tailed, since \"any correlation\").\n\nAt $1\\%$ two-tailed there is $0.5\\%$ in each tail: critical value $0.7079$.\n\n$|r| = 0.791 > 0.7079$, so reject $H_0$. There is evidence at the $1\\%$ level of correlation between maximum temperature and the number of cold drinks sold.\n\n(c) The correlation is fairly strong ($r \\approx 0.79$) and significant even at $1\\%$, so a linear model is appropriate and estimates for temperatures **within** the observed range should be reasonably reliable. Estimates outside the range (extrapolation) would be less reliable.\n\n(Note: $r$ has the same sign as the gradient of the regression line, since both have $S_{xy}$ as numerator.)",
+  "linkedTopicIds": [
+   "stat-linear-regression"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-hypothesis-correlation-q14",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A retail analyst records the floor area, $x$ (hundreds of $\\text{m}^2$), and the weekly sales, $y$ (£ thousands), of 9 shops in a chain. The scatter diagram shows the data. One of the shops, $S$, is a large out-of-town superstore.\n\nFor all 9 shops, $r = 0.922$. For the 8 shops without $S$, $r = -0.346$.\n\n| Significance level (one-tailed) | 5% | 2.5% | 1% |\n|---|---|---|---|\n| $n = 8$ | 0.6215 | 0.7067 | 0.7887 |\n| $n = 9$ | 0.5822 | 0.6664 | 0.7498 |\n\n(a) Using all 9 shops, test at the $1\\%$ level whether there is positive correlation between floor area and weekly sales.\n\n(b) Using the 8 shops without $S$, test at the $5\\%$ level whether there is positive correlation.\n\n(c) The analyst concludes that increasing the floor area of the small shops will increase their sales. Comment on this conclusion.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><line x1=\"52\" y1=\"14\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"106.8\" y1=\"14\" x2=\"106.8\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"161.6\" y1=\"14\" x2=\"161.6\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"216.4\" y1=\"14\" x2=\"216.4\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"271.2\" y1=\"14\" x2=\"271.2\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"326\" y1=\"14\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"216\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"165.5\" x2=\"326\" y2=\"165.5\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"115\" x2=\"326\" y2=\"115\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"64.5\" x2=\"326\" y2=\"64.5\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"14\" x2=\"326\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.15\" stroke-width=\"1\"/><line x1=\"52\" y1=\"216\" x2=\"326\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"52\" y1=\"14\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"52\" y1=\"216\" x2=\"52\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"52\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"106.8\" y1=\"216\" x2=\"106.8\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"106.8\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"161.6\" y1=\"216\" x2=\"161.6\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.6\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"216.4\" y1=\"216\" x2=\"216.4\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"216.4\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"271.2\" y1=\"216\" x2=\"271.2\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"271.2\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"326\" y1=\"216\" x2=\"326\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"326\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"47\" y1=\"216\" x2=\"52\" y2=\"216\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"220\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"47\" y1=\"165.5\" x2=\"52\" y2=\"165.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"169.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"47\" y1=\"115\" x2=\"52\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"119\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20</text><line x1=\"47\" y1=\"64.5\" x2=\"52\" y2=\"64.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"68.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">30</text><line x1=\"47\" y1=\"14\" x2=\"52\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"44\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">40</text><text x=\"189\" y=\"254\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Floor area, x (100 m²)</text><text x=\"14\" y=\"115\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 14 115)\">Weekly sales, y (£000)</text><path d=\"M80.9 141.3 L88.9 149.3 M80.9 149.3 L88.9 141.3\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M89.1 166.6 L97.1 174.6 M89.1 174.6 L97.1 166.6\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M97.3 151.4 L105.3 159.4 M97.3 159.4 L105.3 151.4\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M102.8 171.6 L110.8 179.6 M102.8 179.6 L110.8 171.6\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M111 146.3 L119 154.3 M111 154.3 L119 146.3\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M119.2 161.5 L127.2 169.5 M119.2 169.5 L127.2 161.5\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M127.5 156.4 L135.5 164.4 M127.5 164.4 L135.5 156.4\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M132.9 166.6 L140.9 174.6 M132.9 174.6 L140.9 166.6\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><path d=\"M294.6 20.1 L302.6 28.1 M294.6 28.1 L302.6 20.1\" stroke=\"currentColor\" stroke-width=\"1.6\" fill=\"none\"/><circle cx=\"298.6\" cy=\"24.1\" r=\"9\" stroke=\"#3b82f6\" stroke-width=\"1.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"286.6\" y=\"28.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">S</text></svg>",
+  "hint": "Look at where the 8 small shops lie on the diagram compared with $S$. In (b), can a negative $r$ ever give evidence that $\\rho > 0$?",
+  "answer": "(a) $0.922 > 0.7498$: reject $H_0$; evidence at $1\\%$ of positive correlation. (b) $r = -0.346$ is negative, so it cannot be in the critical region $r \\ge 0.6215$: do not reject $H_0$; no evidence of positive correlation among the 8 shops. (c) Not justified: the significant result is caused by the single outlier $S$; the small shops show no positive correlation, and correlation would not show causation anyway.",
+  "solution": "(a) $H_0: \\rho = 0$, $H_1: \\rho > 0$. Critical value ($n = 9$, $1\\%$): $0.7498$.\n\n$r = 0.922 > 0.7498$: reject $H_0$. There is evidence at the $1\\%$ level of positive correlation between floor area and weekly sales.\n\n(b) $H_0: \\rho = 0$, $H_1: \\rho > 0$. Critical value ($n = 8$, $5\\%$): $0.6215$.\n\n$r = -0.346$ is negative, so it is not in the critical region $r \\ge 0.6215$. Do not reject $H_0$: there is no evidence of positive correlation between floor area and sales for the small shops.\n\n(c) The conclusion is not justified.\n* The strong correlation in (a) comes almost entirely from the single extreme point $S$; the diagram shows the 8 small shops form a cluster with no upward trend, and the test in (b) gives no evidence of positive correlation among them.\n* Even a significant correlation only shows association, not that a larger floor area **causes** higher sales (the superstore also differs in location, parking, range of goods, etc.).\n* It would also be extrapolation to apply a pattern driven by one superstore to small shops.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-correlation-q15",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A sports scientist measures 13 variables on a random sample of 25 athletes. She tests 12 different pairs of variables for correlation, each test at the $5\\%$ significance level. Assume that, in fact, $\\rho = 0$ for every pair, and that the 12 tests are independent.\n\n(a) Write down the probability that any one of the tests leads to the incorrect rejection of $H_0$.\n\n(b) Let $X$ be the number of tests that give a significant result. State the distribution of $X$ and find $P(X \\ge 1)$.\n\n(c) She reports only the one pair that gave a significant result, saying \"these variables are definitely correlated\". Comment on her claim.",
+  "hint": "The significance level is the probability of rejecting $H_0$ when it is true. Then each test is a \"trial\" with this probability of \"success\".",
+  "answer": "(a) $0.05$ (b) $X \\sim B(12, 0.05)$; $P(X \\ge 1) = 1 - 0.95^{12} = 0.460$ (3 s.f.) (c) Not justified: even if no pairs were correlated there would be about a $46\\%$ chance of at least one significant result, so one significant result out of 12 is weak evidence; and a test never makes it \"definite\".",
+  "solution": "(a) The significance level is the probability of rejecting $H_0$ when $H_0$ is true, so each test has probability $0.05$ of a (wrongly) significant result.\n\n(b) There are 12 independent tests, each \"significant\" with probability $0.05$:\n$$X \\sim B(12, 0.05)$$\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - 0.95^{12} = 1 - 0.5404 = 0.460 \\text{ (3 s.f.)}$$\n\n(c) Her claim is not justified.\n* Even if **none** of the pairs were correlated, there is about a $46\\%$ chance that at least one of the 12 tests would be significant at $5\\%$. One significant result among 12 is roughly what chance alone would produce ($E(X) = 12 \\times 0.05 = 0.6$).\n* Reporting only the significant pair hides the other 11 tests and makes the evidence look stronger than it is.\n* A hypothesis test never proves anything \"definitely\"; it only gives evidence at a stated significance level. A fair approach would be to test that pair again with a new sample.",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ]
+ },
+ {
+  "id": "stat-hypothesis-correlation-q16",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "For 9 pairs of observations,\n$$\\sum x = 54, \\quad \\sum y = 72, \\quad \\sum x^2 = 360, \\quad \\sum y^2 = 620, \\quad \\sum xy = 455$$\n\n(a) Show that these 9 pairs do **not** give evidence, at the $5\\%$ level, of positive correlation. (Critical value for $n = 9$, $5\\%$ one-tailed: $0.5822$.)\n\nA tenth observation $(10, k)$ is added.\n\n(b) Show that, for the 10 pairs, $S_{xx} = 50.4$, $S_{xy} = 3.6k - 5.8$ and $S_{yy} = 0.9k^2 - 14.4k + 101.6$.\n\n(c) Find the set of integer values of $k$ for which the 10 pairs **do** give evidence, at the $5\\%$ level, of positive correlation. (Critical value for $n = 10$, $5\\%$ one-tailed: $0.5494$.)",
+  "hint": "In (c) you need $S_{xy} > 0$ and $\\dfrac{S_{xy}^2}{S_{xx}S_{yy}} \\ge 0.5494^2$. Multiply out to get a quadratic inequality in $k$. Is there an upper limit as well as a lower one?",
+  "answer": "(a) $r = \\frac{23}{\\sqrt{36 \\times 44}} = 0.578 < 0.5822$, not significant. (b) shown. (c) $9 \\le k \\le 233$, $k \\in \\mathbb{Z}$",
+  "solution": "(a) $S_{xx} = 360 - \\frac{54^2}{9} = 36$, $S_{yy} = 620 - \\frac{72^2}{9} = 44$, $S_{xy} = 455 - \\frac{54 \\times 72}{9} = 23$.\n$$r = \\frac{23}{\\sqrt{36 \\times 44}} = 0.5779\\ldots$$\n$0.578 < 0.5822$, so do not reject $H_0: \\rho = 0$; no evidence at $5\\%$ of positive correlation.\n\n(b) New totals: $n = 10$, $\\sum x = 64$, $\\sum y = 72 + k$, $\\sum x^2 = 460$, $\\sum y^2 = 620 + k^2$, $\\sum xy = 455 + 10k$.\n\n$S_{xx} = 460 - \\frac{64^2}{10} = 460 - 409.6 = 50.4$\n\n$S_{xy} = 455 + 10k - \\frac{64(72 + k)}{10} = 455 + 10k - 460.8 - 6.4k = 3.6k - 5.8$\n\n$S_{yy} = 620 + k^2 - \\frac{(72 + k)^2}{10} = 620 + k^2 - 518.4 - 14.4k - 0.1k^2 = 0.9k^2 - 14.4k + 101.6$\n\n(c) We need $r \\ge 0.5494$, which requires $S_{xy} > 0$ (so $k > 1.61$) and\n$$(3.6k - 5.8)^2 \\ge 0.5494^2 \\times 50.4\\,(0.9k^2 - 14.4k + 101.6)$$\n\n$0.5494^2 \\times 50.4 = 15.2127\\ldots$, so\n$$12.96k^2 - 41.76k + 33.64 \\ge 13.6915k^2 - 219.06k + 1545.6$$\n$$0 \\ge 0.7315k^2 - 177.30k + 1512.0$$\n\nThe roots of $0.7315k^2 - 177.30k + 1512.0 = 0$ are $k \\approx 8.85$ and $k \\approx 233.5$. The quadratic is positive outside its roots, so we need\n$$8.85 \\le k \\le 233.5$$\n(and these $k$ also satisfy $S_{xy} > 0$).\n\nInteger values: $9 \\le k \\le 233$.\n\nCheck: $k = 8$ gives $r = 0.488$ (not significant), $k = 9$ gives $r = 0.559$ (significant).\n\n**Why an upper limit?** If $k$ is enormous, the new point lies far above all the others. Then $y$ is large only at $x = 10$, the points no longer lie close to a line, and $r$ falls back towards $\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}} \\to \\frac{3.6}{\\sqrt{50.4 \\times 0.9}} = 0.535 < 0.5494$.",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ]
+ },
+ {
+  "id": "stat-hypothesis-correlation-q17",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A psychologist believes that the time, $y$ minutes, a person takes to solve a type of puzzle and the number of puzzles of that type they have already solved, $x$, are related by a model of the form $y = ax^{b}$, where $a$ and $b$ are constants.\n\nFor a random sample of 8 people she calculates $X = \\log_{10} x$ and $Y = \\log_{10} y$, and obtains\n$$\\sum X = 6.4, \\quad \\sum Y = 4.8, \\quad S_{XX} = 0.84, \\quad S_{YY} = 0.40, \\quad S_{XY} = -0.56$$\n\n(a) Explain why she calculated the PMCC of $X$ and $Y$ rather than that of $x$ and $y$.\n\n(b) Calculate the PMCC of $X$ and $Y$ and test, at the $1\\%$ level, whether there is negative correlation between $X$ and $Y$. (Critical value for $n = 8$, $1\\%$ one-tailed: $0.7887$.)\n\n(c) Find the regression line of $Y$ on $X$ and hence estimate $a$ and $b$, giving $a$ to 3 significant figures.",
+  "hint": "Take logs of $y = ax^b$: $\\log y = \\log a + b \\log x$. What kind of relationship does that give between $X$ and $Y$?",
+  "answer": "(a) If $y = ax^b$ then $Y = \\log_{10} a + bX$, a linear relationship; the PMCC measures linear correlation, and $x$ and $y$ would have a curved relationship. (b) $r = -0.966$ (3 s.f.); $|r| > 0.7887$, reject $H_0$: evidence of negative correlation between $X$ and $Y$. (c) $Y = 1.133 - 0.667X$; $b = -\\frac{2}{3}$, $a = 13.6$ (3 s.f.)",
+  "solution": "(a) Taking logs of $y = ax^b$:\n$$\\log_{10} y = \\log_{10} a + b\\log_{10} x \\quad \\Rightarrow \\quad Y = \\log_{10} a + bX$$\nSo if the model is right, $Y$ is a **linear** function of $X$, whereas $y$ against $x$ is a curve. The PMCC measures the strength of **linear** correlation, so it is appropriate for $(X, Y)$ but not for $(x, y)$.\n\n(b)\n$$r = \\frac{-0.56}{\\sqrt{0.84 \\times 0.40}} = \\frac{-0.56}{\\sqrt{0.336}} = -0.9661\\ldots$$\n\n$H_0: \\rho = 0$, $H_1: \\rho < 0$, where $\\rho$ is the population PMCC between $\\log_{10} x$ and $\\log_{10} y$.\n\n$|r| = 0.966 > 0.7887$ and $r < 0$: reject $H_0$. There is evidence at the $1\\%$ level of negative correlation between $X$ and $Y$, supporting a model $y = ax^b$ with $b < 0$ (people get faster with practice).\n\n(c) Gradient: $b = \\frac{S_{XY}}{S_{XX}} = \\frac{-0.56}{0.84} = -\\frac{2}{3}$.\n\n$\\bar{X} = \\frac{6.4}{8} = 0.8$, $\\bar{Y} = \\frac{4.8}{8} = 0.6$. The line passes through $(\\bar{X}, \\bar{Y})$:\n$$\\text{intercept} = 0.6 - \\left(-\\tfrac{2}{3}\\right)(0.8) = 0.6 + 0.5333 = 1.1333$$\n$$Y = 1.133 - 0.667X$$\n\nComparing with $Y = \\log_{10} a + bX$: $b = -\\frac{2}{3}$ and $\\log_{10} a = 1.1333$, so $a = 10^{1.1333} = 13.6$ (3 s.f.).\n\nModel: $y = 13.6x^{-2/3}$.",
+  "linkedTopicIds": [
+   "pure-exponential-modelling",
+   "stat-linear-regression"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-hypothesis-correlation-q18",
+  "topicId": "stat-hypothesis-correlation",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Data $(x, y)$ are coded using\n$$u = \\frac{x - a}{c}, \\qquad v = \\frac{y - b}{d}$$\nwhere $a$, $b$, $c$, $d$ are constants and $c \\ne 0$, $d \\ne 0$.\n\n(a) Prove that $S_{uu} = \\dfrac{S_{xx}}{c^2}$ and $S_{uv} = \\dfrac{S_{xy}}{cd}$.\n\n(b) Hence prove that if $c$ and $d$ are both positive, the PMCC of $u$ and $v$ equals the PMCC of $x$ and $y$.\n\n(c) What happens to the PMCC if $c > 0$ and $d < 0$? Explain how this affects a test of $H_0: \\rho = 0$ against $H_1: \\rho > 0$ carried out on the coded data.",
+  "hint": "Use $S_{xy} = \\sum (x - \\bar{x})(y - \\bar{y})$ and note that $\\bar{u} = \\dfrac{\\bar{x} - a}{c}$, so $u - \\bar{u} = \\dfrac{x - \\bar{x}}{c}$.",
+  "answer": "(a) Proof: $u - \\bar{u} = \\frac{x - \\bar{x}}{c}$, $v - \\bar{v} = \\frac{y - \\bar{y}}{d}$. (b) $r_{uv} = \\frac{cd}{|c||d|}r_{xy} = r_{xy}$ when $c, d > 0$. (c) $r_{uv} = -r_{xy}$: the sign changes, so a test for $\\rho > 0$ on the coded data is really a test for negative correlation between $x$ and $y$.",
+  "solution": "(a) Averaging $u = \\frac{x - a}{c}$ over the data gives $\\bar{u} = \\frac{\\bar{x} - a}{c}$, so\n$$u - \\bar{u} = \\frac{x - a}{c} - \\frac{\\bar{x} - a}{c} = \\frac{x - \\bar{x}}{c}$$\nSimilarly $v - \\bar{v} = \\frac{y - \\bar{y}}{d}$. Therefore\n$$S_{uu} = \\sum (u - \\bar{u})^2 = \\sum \\frac{(x - \\bar{x})^2}{c^2} = \\frac{S_{xx}}{c^2}$$\n$$S_{uv} = \\sum (u - \\bar{u})(v - \\bar{v}) = \\sum \\frac{(x - \\bar{x})(y - \\bar{y})}{cd} = \\frac{S_{xy}}{cd}$$\n\n(b) Similarly $S_{vv} = \\frac{S_{yy}}{d^2}$. So\n$$r_{uv} = \\frac{S_{uv}}{\\sqrt{S_{uu}S_{vv}}} = \\frac{S_{xy}/(cd)}{\\sqrt{\\dfrac{S_{xx}S_{yy}}{c^2d^2}}} = \\frac{S_{xy}}{cd} \\times \\frac{|c||d|}{\\sqrt{S_{xx}S_{yy}}} = \\frac{|cd|}{cd}\\, r_{xy}$$\n(since $\\sqrt{c^2d^2} = |cd|$). If $c > 0$ and $d > 0$ then $|cd| = cd$, so $r_{uv} = r_{xy}$. $\\blacksquare$\n\n(c) If $c > 0$ and $d < 0$ then $cd < 0$, so $\\frac{|cd|}{cd} = -1$ and $r_{uv} = -r_{xy}$: the size is unchanged but the sign reverses (coding with a negative scale factor flips the $v$ axis).\n\nSo a test of $H_1: \\rho > 0$ for the coded variables $u$ and $v$ is equivalent to testing for **negative** correlation between $x$ and $y$. To test for positive correlation between $x$ and $y$ from the coded value you should use $r_{xy} = -r_{uv}$ and compare it with the critical value.",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

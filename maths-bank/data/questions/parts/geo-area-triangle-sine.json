@@ -1,0 +1,295 @@
+[
+ {
+  "id": "geo-area-triangle-sine-q01",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A triangle has sides of 6 cm and 9 cm with an angle of $40^\\circ$ between them.\n\nWork out the area of the triangle. Give your answer to 3 significant figures.",
+  "hint": "Use Area $= \\frac{1}{2}ab\\sin C$, where $C$ is the angle between sides $a$ and $b$.",
+  "answer": "$17.4 \\text{ cm}^2$",
+  "solution": "The $40^\\circ$ angle is included between the two sides:\n$$\\text{Area} = \\frac{1}{2} \\times 6 \\times 9 \\times \\sin 40^\\circ = 27\\sin 40^\\circ = 17.355\\ldots$$\n\n$$\\text{Area} \\approx 17.4 \\text{ cm}^2$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q02",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A triangle has sides of 6 cm and 9 cm with an angle of $140^\\circ$ between them.\n\nWork out the area of the triangle. Give your answer to 3 significant figures.",
+  "hint": "Same formula. Compare $\\sin 140^\\circ$ with $\\sin 40^\\circ$.",
+  "answer": "$17.4 \\text{ cm}^2$",
+  "solution": "What changed: the included angle is now $140^\\circ = 180^\\circ - 40^\\circ$.\n$$\\text{Area} = \\frac{1}{2} \\times 6 \\times 9 \\times \\sin 140^\\circ = 27\\sin 140^\\circ = 17.355\\ldots \\approx 17.4 \\text{ cm}^2$$\n\nEffect: the area is **the same** as with $40^\\circ$, because $\\sin 140^\\circ = \\sin 40^\\circ$. The two triangles look very different, but the perpendicular height onto the 6 cm side is $9\\sin 40^\\circ$ in both.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q03",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A triangle has sides of 6 cm and 9 cm and an area of $20 \\text{ cm}^2$. The angle between the two given sides is acute.\n\nFind the angle between the two given sides, to 1 decimal place.",
+  "hint": "Substitute into $\\frac{1}{2}ab\\sin C = \\text{Area}$ and solve for $\\sin C$.",
+  "answer": "$47.8^\\circ$",
+  "solution": "What changed: now the area is given and the angle is unknown.\n$$\\frac{1}{2} \\times 6 \\times 9 \\times \\sin C = 20 \\quad\\Rightarrow\\quad 27\\sin C = 20$$\n\n$$\\sin C = \\frac{20}{27} = 0.7407\\ldots$$\n\n$$C = \\sin^{-1}(0.7407\\ldots) = 47.79\\ldots^\\circ \\approx 47.8^\\circ$$\n\n(The obtuse angle $180^\\circ - 47.8^\\circ = 132.2^\\circ$ would give the same area; we were told the angle is acute.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q04",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A triangle has an area of $20 \\text{ cm}^2$. Two of its sides are 6 cm and $x$ cm, and the angle between them is $40^\\circ$.\n\nFind $x$, to 3 significant figures.",
+  "hint": "Write $\\frac{1}{2} \\times 6 \\times x \\times \\sin 40^\\circ = 20$ and solve for $x$.",
+  "answer": "$x = 10.4$",
+  "solution": "What changed: the angle is known again, but now a **side** is the unknown.\n$$\\frac{1}{2} \\times 6 \\times x \\times \\sin 40^\\circ = 20$$\n\n$$3x\\sin 40^\\circ = 20$$\n\n$$x = \\frac{20}{3\\sin 40^\\circ} = 10.371\\ldots \\approx 10.4$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q05",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "**Do not use a calculator.** A triangle has sides of 4 cm and 7 cm with an angle of $30^\\circ$ between them.\n\nFind the area of the triangle.",
+  "hint": "$\\sin 30^\\circ = \\frac{1}{2}$.",
+  "answer": "$7 \\text{ cm}^2$",
+  "solution": "$$\\text{Area} = \\frac{1}{2} \\times 4 \\times 7 \\times \\sin 30^\\circ = 14 \\times \\frac{1}{2} = 7 \\text{ cm}^2$$",
+  "linkedTopicIds": [
+   "geo-trig-exact-values"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q06",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "In triangle $ABC$, $AB = 9$ cm, $AC = 12$ cm and angle $ABC = 70^\\circ$. (Not drawn to scale.)\n\nHassan works out the area like this:\n\n$$\\text{Area} = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 70^\\circ = 50.7 \\text{ cm}^2$$\n\n**(a)** Explain why Hassan's method is wrong.\n**(b)** Find the correct area of the triangle, to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"330\" height=\"260\"><polygon points=\"98.5,69.3 40,230 260.2,230\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><text x=\"94.2\" y=\"61\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"27.9\" y=\"242\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"273.1\" y=\"240.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"48.6\" y=\"147.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9 cm</text><text x=\"196.3\" y=\"137.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12 cm</text><path d=\"M46.8 211.2 A20 20 0 0 1 60 230\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"69.5\" y=\"214.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">70°</text></svg>",
+  "hint": "Where do the sides $AB$ and $AC$ meet? You need that angle. Use the sine rule to find angle $C$ first.",
+  "answer": "(a) $70^\\circ$ is not the angle between $AB$ and $AC$; the included angle is at $A$. (b) $49.0 \\text{ cm}^2$",
+  "solution": "**(a)** In $\\frac{1}{2}ab\\sin C$ the angle must be the **included** angle, between the two sides used. $AB$ and $AC$ meet at $A$, so the formula needs angle $BAC$, not angle $ABC = 70^\\circ$.\n\n**(b)** Sine rule to find angle $C$ ($AB = 9$ is opposite $C$, $AC = 12$ is opposite $B$):\n$$\\sin C = \\frac{9\\sin 70^\\circ}{12} = 0.7047\\ldots \\quad\\Rightarrow\\quad C = 44.81\\ldots^\\circ$$\n\n($C$ must be acute, because it is opposite the shorter side $AB < AC$.)\n\n$$A = 180^\\circ - 70^\\circ - 44.81\\ldots^\\circ = 65.18\\ldots^\\circ$$\n\n$$\\text{Area} = \\frac{1}{2} \\times 9 \\times 12 \\times \\sin 65.18\\ldots^\\circ = 49.01\\ldots \\approx 49.0 \\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q07",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A triangle has sides 7.5 cm and 12 cm with an included angle of $115^\\circ$. Chloe works out its area.\n\n$$\\text{Area} = 7.5 \\times 12 \\times \\sin 115^\\circ = 90 \\times 0.9063\\ldots = 81.6 \\text{ cm}^2$$\n\nFind Chloe's mistake and work out the correct area, to 3 significant figures.",
+  "hint": "Where does the formula $\\frac{1}{2}ab\\sin C$ come from? Compare it with the area of a triangle using base and height.",
+  "answer": "She left out the $\\frac{1}{2}$. Correct area $= 40.8 \\text{ cm}^2$.",
+  "solution": "**Mistake:** Chloe left out the $\\frac{1}{2}$. The formula comes from $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$, where the height is $b\\sin C$, so the half must stay. Her answer is the area of a parallelogram with those sides, twice the triangle.\n\n**Correct working:**\n$$\\text{Area} = \\frac{1}{2} \\times 7.5 \\times 12 \\times \\sin 115^\\circ = 45\\sin 115^\\circ = 40.78\\ldots \\approx 40.8 \\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q08",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a circle with centre $O$ and radius 10 cm. The chord $AB$ subtends an angle of $120^\\circ$ at $O$. The shaded region is the minor segment. (Not drawn to scale.)\n\nJamal's working for the area of the segment is shown below.\n\n$$\\text{Sector} = \\frac{120}{360} \\times \\pi \\times 10^2 = 104.72\\ldots$$\n$$\\text{Triangle } OAB = \\frac{1}{2} \\times 10 \\times 10 = 50$$\n$$\\text{Segment} = 104.72\\ldots - 50 = 54.7 \\text{ cm}^2$$\n\nIdentify Jamal's error and find the correct area of the segment. Give your answer to 3 significant figures and also as an exact value.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><circle cx=\"180\" cy=\"120\" r=\"105\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><path d=\"M89.1 172.5 A105 105 0 0 0 270.9 172.5 Z\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"180\" y1=\"120\" x2=\"89.1\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"180\" y1=\"120\" x2=\"270.9\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"180\" y=\"110\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">O</text><path d=\"M197.3 130 A20 20 0 0 1 162.7 130\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"159\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">120°</text><text x=\"118.5\" y=\"144.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">10 cm</text><text x=\"79.1\" y=\"184.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"280.9\" y=\"184.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "hint": "Is triangle $OAB$ right-angled? What angle is between the two radii?",
+  "answer": "He treated triangle $OAB$ as right-angled (no $\\sin 120^\\circ$). Segment $= \\dfrac{100\\pi}{3} - 25\\sqrt{3} \\approx 61.4 \\text{ cm}^2$.",
+  "solution": "**Error (line 2):** $\\frac{1}{2} \\times 10 \\times 10$ is the area only if the angle between the radii is $90^\\circ$. Here it is $120^\\circ$, so the triangle's area is $\\frac{1}{2}r^2\\sin 120^\\circ$.\n\n**Correct working:**\n$$\\text{Sector} = \\frac{120}{360} \\times \\pi \\times 100 = \\frac{100\\pi}{3}$$\n\n$$\\text{Triangle } OAB = \\frac{1}{2} \\times 10 \\times 10 \\times \\sin 120^\\circ = 50 \\times \\frac{\\sqrt{3}}{2} = 25\\sqrt{3}$$\n\n$$\\text{Segment} = \\frac{100\\pi}{3} - 25\\sqrt{3} = 104.719\\ldots - 43.301\\ldots = 61.418\\ldots \\approx 61.4 \\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "geo-arcs-sectors"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q09",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A triangle has sides of 6 cm and 10 cm and an area of $15 \\text{ cm}^2$.\n\nZara says: \"There is only one possible angle between the two sides, so there is only one possible triangle.\"\n\n**(a)** Show that Zara is wrong.\n**(b)** For each possible triangle, find the length of the third side, to 3 significant figures.",
+  "hint": "Find $\\sin C$. How many angles between $0^\\circ$ and $180^\\circ$ have that sine?",
+  "answer": "(a) $\\sin C = \\frac{1}{2}$, so $C = 30^\\circ$ or $C = 150^\\circ$: two triangles. (b) 5.66 cm (for $30^\\circ$) and 15.5 cm (for $150^\\circ$)",
+  "solution": "**(a)**\n$$\\frac{1}{2} \\times 6 \\times 10 \\times \\sin C = 15 \\quad\\Rightarrow\\quad \\sin C = \\frac{15}{30} = \\frac{1}{2}$$\n\nBoth $C = 30^\\circ$ and $C = 180^\\circ - 30^\\circ = 150^\\circ$ have $\\sin C = \\frac{1}{2}$, and either can be an angle of a triangle. So there are two different triangles with these two sides and this area. Zara is wrong.\n\n**(b)** Cosine rule for the third side $c$:\n* $C = 30^\\circ$: $c^2 = 36 + 100 - 120\\cos 30^\\circ = 136 - 103.92\\ldots = 32.07\\ldots$, so $c = 5.66$ cm.\n* $C = 150^\\circ$: $c^2 = 136 - 120\\cos 150^\\circ = 136 + 103.92\\ldots = 239.92\\ldots$, so $c = 15.5$ cm.\n\nThe triangles really are different: one has third side about 5.7 cm, the other about 15.5 cm.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q10",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "In triangle $ABC$, $BC = a$, $CA = b$, and the angle at $C$ is $C$.\n\n**(a)** Prove that, when $C$ is acute, the area of the triangle is $\\frac{1}{2}ab\\sin C$.\n**(b)** Explain why the same formula still gives the correct area when $C$ is obtuse.",
+  "hint": "Take $BC$ as the base and drop a perpendicular from $A$. Express its length using $b$ and an angle. For (b) the foot of the perpendicular lies outside the triangle.",
+  "answer": "(a) Height from $A$ to $BC$ is $b\\sin C$, so area $= \\frac{1}{2} \\times a \\times b\\sin C$. (b) The height is then $b\\sin(180^\\circ - C)$, and $\\sin(180^\\circ - C) = \\sin C$.",
+  "solution": "**(a)** Take $BC = a$ as the base. Let $N$ be the foot of the perpendicular from $A$ to the line $BC$, so $AN$ is the height $h$.\n\nBecause $C$ is acute, $N$ lies on the same side of $C$ as $B$, and triangle $ANC$ has a right angle at $N$ with hypotenuse $AC = b$:\n$$\\sin C = \\frac{h}{b} \\quad\\Rightarrow\\quad h = b\\sin C$$\n\n$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times a \\times b\\sin C = \\frac{1}{2}ab\\sin C$$\n\n**(b)** If $C$ is obtuse, $N$ lies on $BC$ extended beyond $C$. In right-angled triangle $ANC$ the angle at $C$ is now $180^\\circ - C$ (angles on a straight line), so\n$$h = b\\sin(180^\\circ - C)$$\n\nSince $\\sin(180^\\circ - C) = \\sin C$, again $h = b\\sin C$ and the area is $\\frac{1}{2}ab\\sin C$. (If $C = 90^\\circ$, $\\sin C = 1$ and the formula becomes $\\frac{1}{2}ab$, as expected.)",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q11",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "**Heron's formula** says that a triangle with sides $a$, $b$, $c$ and semi-perimeter $s = \\frac{1}{2}(a + b + c)$ has\n$$\\text{Area} = \\sqrt{s(s - a)(s - b)(s - c)}$$\n\nUse Heron's formula to find the area of a triangle with sides 13 cm, 14 cm and 15 cm.",
+  "hint": "First find $s$, then the three brackets $s - a$, $s - b$, $s - c$.",
+  "answer": "$84 \\text{ cm}^2$",
+  "solution": "$$s = \\frac{13 + 14 + 15}{2} = 21$$\n\n$$s - a = 8, \\quad s - b = 7, \\quad s - c = 6$$\n\n$$\\text{Area} = \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7056} = 84 \\text{ cm}^2$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-area-triangle-sine-q12",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "**Do not use a calculator.** A triangle has sides 5 cm, 6 cm and 7 cm.\n\n**(a)** Use the cosine rule to show that the cosine of the largest angle is $\\dfrac{1}{5}$.\n**(b)** Hence find the exact area of the triangle, using $\\text{Area} = \\frac{1}{2}ab\\sin C$.\n**(c)** Check your answer using Heron's formula.",
+  "hint": "The largest angle is opposite the 7 cm side. For (b), draw a right-angled triangle with adjacent 1 and hypotenuse 5 to find $\\sin C$ exactly.",
+  "answer": "(a) $\\cos C = \\frac{12}{60} = \\frac{1}{5}$ (b) $6\\sqrt{6} \\text{ cm}^2$ (c) $\\sqrt{9 \\times 4 \\times 3 \\times 2} = \\sqrt{216} = 6\\sqrt{6}$ ✓",
+  "solution": "**(a)** The largest angle $C$ is opposite the longest side, 7 cm:\n$$\\cos C = \\frac{5^2 + 6^2 - 7^2}{2 \\times 5 \\times 6} = \\frac{25 + 36 - 49}{60} = \\frac{12}{60} = \\frac{1}{5}$$\n\n**(b)** $C$ is acute, so picture a right-angled triangle with adjacent side 1 and hypotenuse 5. By Pythagoras the opposite side is $\\sqrt{25 - 1} = \\sqrt{24} = 2\\sqrt{6}$, so\n$$\\sin C = \\frac{2\\sqrt{6}}{5}$$\n\n$$\\text{Area} = \\frac{1}{2} \\times 5 \\times 6 \\times \\frac{2\\sqrt{6}}{5} = 6\\sqrt{6} \\text{ cm}^2$$\n\n**(c)** $s = \\frac{5 + 6 + 7}{2} = 9$:\n$$\\text{Area} = \\sqrt{9 \\times 4 \\times 3 \\times 2} = \\sqrt{216} = \\sqrt{36 \\times 6} = 6\\sqrt{6} \\text{ cm}^2 \\checkmark$$\n\n($6\\sqrt{6} \\approx 14.7 \\text{ cm}^2$.)",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules",
+   "num-surds",
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q13",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": true,
+  "question": "The diagram shows triangle $ABC$ with $AB = 8$ cm, $BC = 11$ cm and $AC = 14$ cm. (Not drawn accurately.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"330\" height=\"260\"><polygon points=\"71.5,94.3 80,230 267,230\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><text x=\"63.1\" y=\"88.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"68.9\" y=\"243.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"280.2\" y=\"239.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"49.8\" y=\"168.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 cm</text><text x=\"173.5\" y=\"249\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11 cm</text><text x=\"178.4\" y=\"154\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">14 cm</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the size of angle $ABC$. Give your answer to 1 decimal place.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the area of triangle $ABC$. Give your answer to 3 significant figures.",
+    "marks": 2
+   }
+  ],
+  "hint": "Angle $ABC$ is opposite the 14 cm side. Then use the two sides that meet at $B$.",
+  "answer": "(a) $93.6^\\circ$ (b) $43.9 \\text{ cm}^2$",
+  "solution": "**(a)** Cosine rule with the angle at $B$, opposite $AC = 14$:\n$$\\cos B = \\frac{8^2 + 11^2 - 14^2}{2 \\times 8 \\times 11} \\quad \\text{M1}$$\n\n$$\\cos B = \\frac{-11}{176} = -0.0625 \\quad \\text{M1}$$\n\n$$B = \\cos^{-1}(-0.0625) = 93.58\\ldots^\\circ \\approx 93.6^\\circ \\quad \\text{A1}$$\n\n(The negative cosine means $B$ is obtuse, which fits $14^2 > 8^2 + 11^2$.)\n\n**(b)** Sides $AB$ and $BC$ meet at $B$:\n$$\\text{Area} = \\frac{1}{2} \\times 8 \\times 11 \\times \\sin 93.58\\ldots^\\circ \\quad \\text{M1}$$\n\n$$= 43.91\\ldots \\approx 43.9 \\text{ cm}^2 \\quad \\text{A1}$$\n\n(ft their angle from (a). Heron's formula is an acceptable alternative for (b).)",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q14",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "The diagram shows a circle with centre $O$ and radius $r$. The chord $AB$ subtends an angle $\\theta$ radians at $O$. The shaded region is the minor segment. (Not drawn to scale.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><circle cx=\"180\" cy=\"120\" r=\"105\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><path d=\"M89.1 172.5 A105 105 0 0 0 270.9 172.5 Z\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"180\" y1=\"120\" x2=\"89.1\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"180\" y1=\"120\" x2=\"270.9\" y2=\"172.5\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><text x=\"180\" y=\"110\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">O</text><path d=\"M197.3 130 A20 20 0 0 1 162.7 130\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"159\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">2π/3</text><text x=\"118.5\" y=\"144.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">6 cm</text><text x=\"79.1\" y=\"184.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"280.9\" y=\"184.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the area of the segment is $\\frac{1}{2}r^2(\\theta - \\sin\\theta)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $r = 6$ cm and $\\theta = \\dfrac{2\\pi}{3}$, find the exact area of the segment, giving your answer in the form $a\\pi - b\\sqrt{3}$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact perimeter of the segment.",
+    "marks": 2
+   }
+  ],
+  "hint": "Segment $=$ sector $-$ triangle. In radians the sector area is $\\frac{1}{2}r^2\\theta$. The triangle $OAB$ has two sides $r$ with included angle $\\theta$.",
+  "answer": "(a) Shown. (b) $(12\\pi - 9\\sqrt{3}) \\text{ cm}^2$ (c) $(4\\pi + 6\\sqrt{3})$ cm",
+  "solution": "**(a)** Sector $OAB$ has area $\\frac{1}{2}r^2\\theta$ (B1). Triangle $OAB$ has two sides of length $r$ with included angle $\\theta$, so its area is $\\frac{1}{2}r^2\\sin\\theta$. Then\n$$\\text{Segment} = \\frac{1}{2}r^2\\theta - \\frac{1}{2}r^2\\sin\\theta = \\frac{1}{2}r^2(\\theta - \\sin\\theta) \\quad \\text{B1 (shown)}$$\n\n**(b)**\n$$\\text{Segment} = \\frac{1}{2} \\times 36 \\times \\left(\\frac{2\\pi}{3} - \\sin\\frac{2\\pi}{3}\\right) \\quad \\text{M1}$$\n\n$\\sin\\frac{2\\pi}{3} = \\frac{\\sqrt{3}}{2}$ B1, so\n$$= 18 \\times \\frac{2\\pi}{3} - 18 \\times \\frac{\\sqrt{3}}{2} = 12\\pi - 9\\sqrt{3} \\text{ cm}^2 \\quad \\text{A1}$$\n\n**(c)** Arc length $= r\\theta = 6 \\times \\frac{2\\pi}{3} = 4\\pi$ cm. B1\n\nChord: by the cosine rule, $AB^2 = 36 + 36 - 72\\cos\\frac{2\\pi}{3} = 72 + 36 = 108$, so $AB = \\sqrt{108} = 6\\sqrt{3}$ cm (or $AB = 2r\\sin\\frac{\\theta}{2} = 12 \\times \\frac{\\sqrt{3}}{2}$).\n\n$$\\text{Perimeter} = 4\\pi + 6\\sqrt{3} \\text{ cm} \\quad \\text{B1}$$\n\n(Using $\\frac{1}{2}r^2$ for the triangle, as if it were right-angled, scores M0 in (b).)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-radians-unit-circle",
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q15",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A triangular corner of a garden is bounded by two straight fences, 18 m and 25 m long, which meet at an angle of $68^\\circ$. The third side runs straight between the ends of the fences. (Not drawn to scale.)\n\nThe whole triangle is to be covered in turf. Turf is sold in whole square metres and costs £4.80 per square metre.\n\nWork out the cost of the turf.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><polygon points=\"90.7,84.8 30,235 255,235\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"86.1\" y=\"76.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\"></text><text x=\"17.6\" y=\"246.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\"></text><text x=\"268.1\" y=\"245\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\"></text><text x=\"36.2\" y=\"155.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">18 m</text><text x=\"142.5\" y=\"254\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">25 m</text><path d=\"M39 212.7 A24 24 0 0 1 54 235\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"64.8\" y=\"216.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">68°</text></svg>",
+  "hint": "The $68^\\circ$ is between the two fences, so it is the included angle. Round the area **up** to a whole number of square metres.",
+  "answer": "£1003.20",
+  "solution": "$$\\text{Area} = \\frac{1}{2} \\times 18 \\times 25 \\times \\sin 68^\\circ = 225\\sin 68^\\circ = 208.61\\ldots \\text{ m}^2$$\n\nTurf comes in whole square metres and 208 would not be enough, so buy $209 \\text{ m}^2$.\n\n$$\\text{Cost} = 209 \\times £4.80 = £1003.20$$",
+  "linkedTopicIds": [
+   "num-rounding"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q16",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A farmer's triangular field has sides of 120 m, 150 m and 200 m. Land in the area sells for £9500 per hectare ($1 \\text{ hectare} = 10\\,000 \\text{ m}^2$).\n\n**(a)** Estimate the value of the field, to the nearest £100.\n**(b)** A straight path is to be laid from the corner opposite the 200 m side, meeting that side at right angles. Find the length of the path, to 3 significant figures.",
+  "hint": "Use Heron's formula (or find an angle with the cosine rule, then use $\\frac{1}{2}ab\\sin C$). For (b), area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+  "answer": "(a) £8500 (b) 89.7 m",
+  "solution": "**(a)** Heron's formula with $s = \\frac{120 + 150 + 200}{2} = 235$:\n$$\\text{Area} = \\sqrt{235 \\times 115 \\times 85 \\times 35} = \\sqrt{80\\,399\\,375} = 8966.5\\ldots \\text{ m}^2$$\n\n$$8966.5\\ldots \\text{ m}^2 = 0.89665\\ldots \\text{ hectares}$$\n\n$$\\text{Value} = 0.89665\\ldots \\times £9500 = £8518.24\\ldots \\approx £8500$$\n\n(Alternative: $\\cos C = \\frac{120^2 + 150^2 - 200^2}{2 \\times 120 \\times 150} = -0.0875$, $C = 95.02^\\circ$, area $= \\frac{1}{2} \\times 120 \\times 150 \\times \\sin 95.02^\\circ = 8966.5 \\text{ m}^2$.)\n\n**(b)** The path is the perpendicular height $h$ onto the 200 m side:\n$$\\frac{1}{2} \\times 200 \\times h = 8966.5\\ldots \\quad\\Rightarrow\\quad h = \\frac{8966.5\\ldots}{100} = 89.66\\ldots \\approx 89.7 \\text{ m}$$",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q17",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A regular polygon with $n$ sides is drawn inside a circle of radius 1 unit, with all its vertices on the circle.\n\n**(a)** Show that the area of the polygon is $\\dfrac{n}{2}\\sin\\left(\\dfrac{360^\\circ}{n}\\right)$.\n**(b)** Without a calculator, find the area of the regular 12-sided polygon.\n**(c)** Find the smallest value of $n$ for which the area of the polygon is greater than 3.1 square units.\n**(d)** Explain what happens to the area as $n$ gets very large.",
+  "hint": "Join the centre to every vertex. This splits the polygon into $n$ congruent isosceles triangles. What is the angle at the centre of each?",
+  "answer": "(a) $n$ triangles, each $\\frac{1}{2} \\times 1 \\times 1 \\times \\sin\\frac{360^\\circ}{n}$. (b) 3 square units (c) $n = 23$ (d) It increases towards $\\pi$, the area of the circle.",
+  "solution": "**(a)** Joining the centre to each vertex gives $n$ congruent isosceles triangles. Each has two sides of length 1 (radii) with included angle $\\frac{360^\\circ}{n}$, so each has area $\\frac{1}{2} \\times 1 \\times 1 \\times \\sin\\frac{360^\\circ}{n}$. In total:\n$$\\text{Area} = \\frac{n}{2}\\sin\\left(\\frac{360^\\circ}{n}\\right)$$\n\n**(b)** $n = 12$: $\\frac{360^\\circ}{12} = 30^\\circ$, so\n$$\\text{Area} = 6\\sin 30^\\circ = 6 \\times \\frac{1}{2} = 3 \\text{ square units}$$\n\n**(c)** Try values (the area increases with $n$):\n\n| $n$ | Area |\n|---|---|\n| 20 | $10\\sin 18^\\circ = 3.0902$ |\n| 22 | $11\\sin 16.36^\\circ = 3.0990$ |\n| 23 | $11.5\\sin 15.65^\\circ = 3.1027$ |\n\n$n = 22$ gives $3.0990\\ldots < 3.1$ and $n = 23$ gives $3.1026\\ldots > 3.1$, so the smallest $n$ is 23.\n\n**(d)** As $n$ increases the polygon hugs the circle more and more closely, filling more of it. The area increases and gets closer and closer to the area of the circle, $\\pi \\times 1^2 = \\pi \\approx 3.14159$, but never reaches it, because the polygon always lies inside the circle.",
+  "linkedTopicIds": [
+   "geo-polygon-angles"
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine-q18",
+  "topicId": "geo-area-triangle-sine",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Two sides of a triangle have lengths $x$ cm and $(x + 2)$ cm. The angle $\\theta$ between them satisfies $\\sin\\theta = \\dfrac{1}{2}$. The area of the triangle is $12 \\text{ cm}^2$.\n\n**(a)** Show that $x^2 + 2x - 48 = 0$ and hence find $x$.\n**(b)** Find, in exact form, the two possible lengths of the third side of the triangle.",
+  "hint": "Use $\\frac{1}{2}ab\\sin\\theta$ to form the equation. For (b), think about which angles have $\\sin\\theta = \\frac{1}{2}$, then use the cosine rule for each.",
+  "answer": "(a) $x = 6$ (b) $\\sqrt{100 - 48\\sqrt{3}}$ cm (when $\\theta = 30^\\circ$) or $\\sqrt{100 + 48\\sqrt{3}}$ cm (when $\\theta = 150^\\circ$)",
+  "solution": "**(a)**\n$$\\frac{1}{2} \\times x \\times (x + 2) \\times \\frac{1}{2} = 12$$\n\n$$x(x + 2) = 48 \\quad\\Rightarrow\\quad x^2 + 2x - 48 = 0$$\n\n$$(x + 8)(x - 6) = 0$$\n\nA length must be positive, so $x = 6$. The sides are 6 cm and 8 cm.\n\n**(b)** $\\sin\\theta = \\frac{1}{2}$ gives $\\theta = 30^\\circ$ or $\\theta = 150^\\circ$; both give area 12. Cosine rule for the third side $c$:\n\n$\\theta = 30^\\circ$:\n$$c^2 = 36 + 64 - 2 \\times 6 \\times 8 \\times \\frac{\\sqrt{3}}{2} = 100 - 48\\sqrt{3}, \\qquad c = \\sqrt{100 - 48\\sqrt{3}} \\approx 4.11 \\text{ cm}$$\n\n$\\theta = 150^\\circ$, where $\\cos 150^\\circ = -\\frac{\\sqrt{3}}{2}$:\n$$c^2 = 100 + 48\\sqrt{3}, \\qquad c = \\sqrt{100 + 48\\sqrt{3}} \\approx 13.5 \\text{ cm}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "geo-sine-cosine-rules",
+   "geo-trig-exact-values"
+  ]
+ }
+]

@@ -1,0 +1,299 @@
+[
+ {
+  "id": "geo-surface-area-q01",
+  "topicId": "geo-surface-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cube has edges of length $3\\text{ cm}$. Work out its surface area.",
+  "hint": "A cube has 6 identical square faces.",
+  "answer": "$54\\text{ cm}^2$",
+  "solution": "Each face is a $3 \\times 3$ square with area $9\\text{ cm}^2$.\n\nThere are 6 faces:\n$$SA = 6 \\times 9 = 54\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q02",
+  "topicId": "geo-surface-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cuboid measures $4\\text{ cm}$ by $3\\text{ cm}$ by $2\\text{ cm}$. Work out its surface area.",
+  "hint": "The faces are no longer all the same, but they come in three identical pairs.",
+  "answer": "$52\\text{ cm}^2$",
+  "solution": "**What changed:** the edges are no longer all equal, so the faces are three different rectangles, each appearing twice.\n\n* top and bottom: $4 \\times 3 = 12\\text{ cm}^2$ each\n* front and back: $4 \\times 2 = 8\\text{ cm}^2$ each\n* two ends: $3 \\times 2 = 6\\text{ cm}^2$ each\n\n$$SA = 2(12 + 8 + 6) = 2 \\times 26 = 52\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q03",
+  "topicId": "geo-surface-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cuboid measures $4\\text{ cm}$ by $3\\text{ cm}$ by $2.5\\text{ cm}$. Work out its surface area.",
+  "hint": "Only the height has changed. Which faces does the height affect?",
+  "answer": "$59\\text{ cm}^2$",
+  "solution": "**What changed:** the height went from $2\\text{ cm}$ to $2.5\\text{ cm}$.\n\n* top and bottom: $4 \\times 3 = 12\\text{ cm}^2$ each (unchanged: they do not involve the height)\n* front and back: $4 \\times 2.5 = 10\\text{ cm}^2$ each\n* two ends: $3 \\times 2.5 = 7.5\\text{ cm}^2$ each\n\n$$SA = 2(12 + 10 + 7.5) = 2 \\times 29.5 = 59\\text{ cm}^2$$\n\nOnly the four side faces grew: by $2 \\times (2 + 1.5) = 7\\text{ cm}^2$, from 52 to 59.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q04",
+  "topicId": "geo-surface-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "An open box (no lid) is a cuboid measuring $4\\text{ cm}$ long, $3\\text{ cm}$ wide and $2.5\\text{ cm}$ high. Work out the area of card needed to make the box, ignoring any overlaps.",
+  "hint": "Same cuboid as before, but one face is missing. Which one?",
+  "answer": "$47\\text{ cm}^2$",
+  "solution": "**What changed:** the same cuboid, but there is no lid, so the top face ($4 \\times 3$) is missing.\n\n$$SA = 59 - 12 = 47\\text{ cm}^2$$\n\nOr face by face: bottom $12$, front and back $2 \\times 10 = 20$, two ends $2 \\times 7.5 = 15$:\n$$12 + 20 + 15 = 47\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q05",
+  "topicId": "geo-surface-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 228\" width=\"340\" height=\"228\"><rect x=\"60\" y=\"90\" width=\"219.9\" height=\"56\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"55\" r=\"35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"181\" r=\"35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"55\" r=\"2.5\" fill=\"currentColor\"/><line x1=\"170\" y1=\"55\" x2=\"205\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"187.5\" y=\"49\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5 cm</text><text x=\"52\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">8 cm</text></svg>",
+  "question": "The diagram shows the net of a closed cylinder with radius $5\\text{ cm}$ and height $8\\text{ cm}$.\n\n(a) Explain why the length of the rectangle is $10\\pi\\text{ cm}$.\n\n(b) Work out the total surface area of the cylinder. Give your answer in terms of $\\pi$ and correct to 1 decimal place.",
+  "hint": "The rectangle wraps exactly once around the circular end.",
+  "answer": "(a) It wraps around the circle, so its length is the circumference $2\\pi \\times 5 = 10\\pi$. (b) $130\\pi \\approx 408.4\\text{ cm}^2$",
+  "solution": "(a) The rectangle rolls up to form the curved surface. Its long side wraps exactly once around the edge of a circular end, so its length equals the circumference:\n$$2\\pi r = 2 \\times \\pi \\times 5 = 10\\pi\\text{ cm}$$\n\n(b) Two circles:\n$$2 \\times \\pi \\times 5^2 = 50\\pi\\text{ cm}^2$$\nCurved surface (the rectangle):\n$$10\\pi \\times 8 = 80\\pi\\text{ cm}^2$$\nTotal:\n$$SA = 50\\pi + 80\\pi = 130\\pi = 408.40\\ldots \\approx 408.4\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q06",
+  "topicId": "geo-surface-area",
+  "difficulty": 1,
+  "type": "spot-the-mistake",
+  "question": "Ava is asked to find the surface area of a cuboid measuring $6\\text{ cm}$ by $4\\text{ cm}$ by $2\\text{ cm}$. She writes:\n\n$$6 \\times 4 \\times 2 = 48\\text{ cm}^2$$\n\nExplain Ava's mistake and find the correct surface area.",
+  "hint": "What does $6 \\times 4 \\times 2$ actually measure? Surface area is about the faces.",
+  "answer": "Ava found the volume ($48\\text{ cm}^3$). The surface area is $88\\text{ cm}^2$.",
+  "solution": "**Mistake:** multiplying the three dimensions gives the **volume** (the space inside), which is $48\\text{ cm}^3$ in cubic units. Surface area is the total area of the faces.\n\nFaces in pairs:\n* $6 \\times 4 = 24\\text{ cm}^2$ (top and bottom)\n* $6 \\times 2 = 12\\text{ cm}^2$ (front and back)\n* $4 \\times 2 = 8\\text{ cm}^2$ (two ends)\n\n$$SA = 2(24 + 12 + 8) = 2 \\times 44 = 88\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q07",
+  "topicId": "geo-surface-area",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Callum works out the surface area of a cuboid measuring $7\\text{ cm}$ by $5\\text{ cm}$ by $3\\text{ cm}$:\n\n$$7 \\times 5 = 35, \\quad 7 \\times 3 = 21, \\quad 5 \\times 3 = 15$$\n$$SA = 35 + 21 + 15 = 71\\text{ cm}^2$$\n\nIdentify Callum's mistake and find the correct surface area.",
+  "hint": "Sketch the net. How many faces does a cuboid have?",
+  "answer": "He counted each different face only once; there are two of each. Correct $SA = 142\\text{ cm}^2$.",
+  "solution": "Callum's three face areas are correct.\n\n**Mistake:** a cuboid has **6** faces, made of 3 pairs of identical rectangles (top/bottom, front/back, left/right). He has only added one face from each pair.\n\n$$SA = 2(35 + 21 + 15) = 2 \\times 71 = 142\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q08",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A pencil pot is a cylinder that is open at the top. It has radius $4\\text{ cm}$ and height $10\\text{ cm}$. Maya works out the area of material needed:\n\n$$\\text{ends: } 2 \\times \\pi \\times 4^2 = 32\\pi$$\n$$\\text{curved surface: } 2 \\times \\pi \\times 4 \\times 10 = 80\\pi$$\n$$\\text{total} = 112\\pi = 351.9\\text{ cm}^2$$\n\nIdentify Maya's mistake and work out the correct area to 1 decimal place.",
+  "hint": "How many circular ends does a pot with an open top have?",
+  "answer": "She included two circular ends but the pot has only a base. Correct area $= 96\\pi \\approx 301.6\\text{ cm}^2$.",
+  "solution": "Maya's curved surface is correct.\n\n**Mistake:** the pot is open at the top, so it has **only one** circular end (the base). Maya used the formula for a closed cylinder, which has two.\n\nCorrect working:\n$$\\text{base: } \\pi \\times 4^2 = 16\\pi$$\n$$\\text{curved surface: } 2 \\times \\pi \\times 4 \\times 10 = 80\\pi$$\n$$\\text{total} = 96\\pi = 301.59\\ldots \\approx 301.6\\text{ cm}^2$$\n\nAlways read the context: closed cylinder $2\\pi r^2 + 2\\pi rh$; open at one end $\\pi r^2 + 2\\pi rh$; open tube $2\\pi rh$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q09",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><polygon points=\"40,215 160,215 40,125\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"113.7\" y1=\"163.4\" x2=\"233.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"215\" x2=\"113.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"233.7\" y1=\"163.4\" x2=\"113.7\" y2=\"73.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"160\" y1=\"215\" x2=\"233.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"113.7\" y1=\"73.4\" x2=\"113.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"125\" x2=\"113.7\" y2=\"73.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"48,215 48,207 40,207\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"100\" y=\"233\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8 cm</text><text x=\"32\" y=\"175\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">6 cm</text><text x=\"138\" y=\"186.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">10 cm</text><text x=\"210.9\" y=\"203.2\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">12 cm</text></svg>",
+  "question": "The diagram shows a triangular prism. Its cross-section is a right-angled triangle with sides $6\\text{ cm}$, $8\\text{ cm}$ and $10\\text{ cm}$. The prism is $12\\text{ cm}$ long.\n\nZara works out the surface area:\n\n$$\\text{triangles: } 2 \\times \\tfrac{1}{2} \\times 8 \\times 6 = 48$$\n$$\\text{rectangles: } 3 \\times (10 \\times 12) = 360$$\n$$SA = 48 + 360 = 408\\text{ cm}^2$$\n\nIdentify Zara's mistake and work out the correct surface area.",
+  "hint": "Are the three rectangular faces all the same size? Each one is as wide as one side of the triangle.",
+  "answer": "She treated all three rectangles as $10 \\times 12$, but they are $6 \\times 12$, $8 \\times 12$ and $10 \\times 12$. Correct $SA = 336\\text{ cm}^2$.",
+  "solution": "Zara's two triangles are correct: $48\\text{ cm}^2$.\n\n**Mistake:** the triangle is not equilateral, so the three rectangles are different. Each rectangle has the length of the prism ($12\\text{ cm}$) and the width of **its own** side of the triangle.\n\n$$6 \\times 12 + 8 \\times 12 + 10 \\times 12 = 72 + 96 + 120 = 288\\text{ cm}^2$$\n(This is the perimeter of the triangle times the length: $(6 + 8 + 10) \\times 12 = 24 \\times 12 = 288$.)\n\n$$SA = 48 + 288 = 336\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q10",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Kai says: \"If two cuboids have the same volume, they must have the same surface area.\"\n\n(a) Show that Kai is wrong by finding two cuboids with whole-number edge lengths, each with volume $12\\text{ cm}^3$, that have different surface areas.\n\n(b) Of all cuboids with whole-number edge lengths and volume $12\\text{ cm}^3$, which one has the smallest surface area? Show how you know.",
+  "hint": "List the ways of writing 12 as a product of three whole numbers, e.g. $1 \\times 1 \\times 12$, $1 \\times 2 \\times 6$, …",
+  "answer": "(a) e.g. $1 \\times 1 \\times 12$ has $SA = 50\\text{ cm}^2$ and $2 \\times 2 \\times 3$ has $SA = 32\\text{ cm}^2$. (b) $2 \\times 2 \\times 3$, with $32\\text{ cm}^2$.",
+  "solution": "Use $SA = 2(lw + lh + wh)$.\n\nAll whole-number cuboids with volume 12:\n\n| Dimensions | $SA$ |\n|---|---|\n| $1 \\times 1 \\times 12$ | $2(1 + 12 + 12) = 50$ |\n| $1 \\times 2 \\times 6$ | $2(2 + 6 + 12) = 40$ |\n| $1 \\times 3 \\times 4$ | $2(3 + 4 + 12) = 38$ |\n| $2 \\times 2 \\times 3$ | $2(4 + 6 + 6) = 32$ |\n\n(a) For example, $1 \\times 1 \\times 12$ and $2 \\times 2 \\times 3$ both have volume $12\\text{ cm}^3$, but surface areas $50\\text{ cm}^2$ and $32\\text{ cm}^2$. So Kai is wrong: volume does not fix surface area.\n\n(b) The table lists every possibility, and the smallest surface area is $32\\text{ cm}^2$ for the $2 \\times 2 \\times 3$ cuboid. The more \"cube-like\" the cuboid, the smaller its surface area for a given volume; long thin shapes have much more surface.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q11",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 235\" width=\"340\" height=\"235\"><polygon points=\"60,205 204,205 204,169 114,169 114,97 60,97\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"133.7\" y1=\"153.4\" x2=\"277.7\" y2=\"153.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"60\" y1=\"205\" x2=\"133.7\" y2=\"153.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"277.7\" y1=\"153.4\" x2=\"277.7\" y2=\"117.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"204\" y1=\"205\" x2=\"277.7\" y2=\"153.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"277.7\" y1=\"117.4\" x2=\"187.7\" y2=\"117.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"204\" y1=\"169\" x2=\"277.7\" y2=\"117.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187.7\" y1=\"117.4\" x2=\"187.7\" y2=\"45.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"169\" x2=\"187.7\" y2=\"117.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187.7\" y1=\"45.4\" x2=\"133.7\" y2=\"45.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"114\" y1=\"97\" x2=\"187.7\" y2=\"45.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"133.7\" y1=\"45.4\" x2=\"133.7\" y2=\"153.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"60\" y1=\"97\" x2=\"133.7\" y2=\"45.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"132\" y=\"223\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8 cm</text><text x=\"52\" y=\"156\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">6 cm</text><text x=\"87\" y=\"115\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3 cm</text><text x=\"198\" y=\"192\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2 cm</text><text x=\"258.9\" y=\"191.2\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">10 cm</text></svg>",
+  "question": "The diagram shows a prism with an L-shaped cross-section. All corners are right angles. The prism is $10\\text{ cm}$ long.\n\nWork out the total surface area of the prism.",
+  "hint": "Surface area of a prism $= 2 \\times$ (area of cross-section) $+$ (perimeter of cross-section) $\\times$ length. Find the two missing side lengths of the L-shape first.",
+  "answer": "$336\\text{ cm}^2$",
+  "solution": "**Cross-section area.** Split the L into a $3 \\times 6$ rectangle and a $5 \\times 2$ rectangle:\n$$18 + 10 = 28\\text{ cm}^2$$\n\n**Perimeter of the L.** The missing sides are $8 - 3 = 5\\text{ cm}$ (top of the bottom bar) and $6 - 2 = 4\\text{ cm}$ (right side of the tall part). Going round:\n$$8 + 2 + 5 + 4 + 3 + 6 = 28\\text{ cm}$$\n\n**Rectangular faces:** one for each side of the L, each $10\\text{ cm}$ long, total area\n$$28 \\times 10 = 280\\text{ cm}^2$$\n\n**Total:**\n$$SA = 2 \\times 28 + 280 = 56 + 280 = 336\\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q12",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A tin of beans is a cylinder with diameter $7.5\\text{ cm}$ and height $11\\text{ cm}$. Its paper label is a rectangle $9\\text{ cm}$ tall that wraps once around the curved surface, with an overlap of $1\\text{ cm}$ for the glue.\n\n(a) Work out the length of the label, to 1 decimal place.\n\n(b) Work out the area of paper in one label, to 3 significant figures.",
+  "hint": "Unrolled, the label is a rectangle. Its length is the circumference of the tin plus the overlap.",
+  "answer": "(a) $24.6\\text{ cm}$ (b) $221\\text{ cm}^2$",
+  "solution": "(a) Circumference of the tin:\n$$\\pi d = \\pi \\times 7.5 = 23.56\\ldots\\text{ cm}$$\nAdd the overlap:\n$$23.56\\ldots + 1 = 24.56\\ldots \\approx 24.6\\text{ cm}$$\n\n(b) Area of the rectangle:\n$$24.56\\ldots \\times 9 = 221.05\\ldots \\approx 221\\text{ cm}^2$$\n\n(The tin's height, $11\\text{ cm}$, is not needed: the label is only $9\\text{ cm}$ tall.)",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q13",
+  "topicId": "geo-surface-area",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 5,
+  "question": "A company makes closed cardboard boxes. Each box is a cuboid measuring $30\\text{ cm}$ by $20\\text{ cm}$ by $15\\text{ cm}$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the surface area of one box.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Cardboard costs £1.20 per square metre. Work out the cost of the cardboard needed to make 500 boxes. Ignore any overlaps.",
+    "marks": 3
+   }
+  ],
+  "hint": "For (b), convert $\\text{cm}^2$ to $\\text{m}^2$: $1\\text{ m}^2 = 100 \\times 100 = 10\\,000\\text{ cm}^2$.",
+  "answer": "(a) $2700\\text{ cm}^2$ (b) £162",
+  "solution": "(a) $2(30 \\times 20 + 30 \\times 15 + 20 \\times 15)$ **M1**\n$$= 2(600 + 450 + 300) = 2 \\times 1350 = 2700\\text{ cm}^2$$\n**A1**\n\n(b) $2700 \\div 10\\,000 = 0.27\\text{ m}^2$ per box **M1** (correct conversion of their area)\n\n$0.27 \\times 500 = 135\\text{ m}^2$ **M1**\n\n$135 \\times 1.20 = £162$ **A1**\n\n(A common error is dividing by 100: $1\\text{ m}^2 = 10\\,000\\text{ cm}^2$, not $100\\text{ cm}^2$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q14",
+  "topicId": "geo-surface-area",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><polygon points=\"40,215 184,215 112,119\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"113.7\" y1=\"163.4\" x2=\"257.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"215\" x2=\"113.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"257.7\" y1=\"163.4\" x2=\"185.7\" y2=\"67.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"184\" y1=\"215\" x2=\"257.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"185.7\" y1=\"67.4\" x2=\"113.7\" y2=\"163.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"112\" y1=\"119\" x2=\"185.7\" y2=\"67.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"112\" y1=\"119\" x2=\"112\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><polyline points=\"112,207 120,207 120,215\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"112\" y=\"233\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2.4 m</text><text x=\"118\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">1.6 m</text><text x=\"234.9\" y=\"203.2\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">3 m</text></svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ],
+  "question": "A ridge tent is a triangular prism. Each end is an isosceles triangle with base $2.4\\text{ m}$ and perpendicular height $1.6\\text{ m}$. The tent is $3\\text{ m}$ long. The tent is made of fabric, including a groundsheet for the floor.\n\nWork out the total area of fabric needed.",
+  "hint": "You need the length of each sloping side. Split an end triangle in half to get a right-angled triangle and use Pythagoras.",
+  "answer": "$23.04\\text{ m}^2$",
+  "solution": "**Sloping side.** Half of the base is $1.2\\text{ m}$, so by Pythagoras\n$$\\sqrt{1.2^2 + 1.6^2} = \\sqrt{1.44 + 2.56} = \\sqrt{4} = 2\\text{ m}$$\n\n**Faces:**\n* two triangular ends: $2 \\times \\frac{1}{2} \\times 2.4 \\times 1.6 = 3.84\\text{ m}^2$\n* two sloping sides: $2 \\times (2 \\times 3) = 12\\text{ m}^2$\n* groundsheet: $2.4 \\times 3 = 7.2\\text{ m}^2$\n\n$$\\text{Total} = 3.84 + 12 + 7.2 = 23.04\\text{ m}^2$$\n\n(Check with perimeter $\\times$ length: $(2 + 2 + 2.4) \\times 3 = 19.2$, plus $3.84$ for the ends, $= 23.04$ ✓)",
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-surface-area-q15",
+  "topicId": "geo-surface-area",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "A closed cylinder has radius $r\\text{ cm}$. Its height is twice its radius.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the total surface area of the cylinder is $6\\pi r^2\\text{ cm}^2$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "The total surface area of the cylinder is $216\\pi\\text{ cm}^2$. Find the value of $r$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the volume of the cylinder. Give your answer in terms of $\\pi$.",
+    "marks": 2
+   }
+  ],
+  "hint": "Substitute $h = 2r$ into $SA = 2\\pi r^2 + 2\\pi rh$.",
+  "answer": "(a) $2\\pi r^2 + 2\\pi r(2r) = 6\\pi r^2$ (b) $r = 6$ (c) $432\\pi\\text{ cm}^3$",
+  "solution": "(a) $SA = 2\\pi r^2 + 2\\pi r h$ with $h = 2r$: **M1**\n$$SA = 2\\pi r^2 + 2\\pi r(2r) = 2\\pi r^2 + 4\\pi r^2 = 6\\pi r^2$$\n**A1** (fully correct working to the given answer)\n\n(b) $6\\pi r^2 = 216\\pi$ **M1**\n$$r^2 = 36 \\;\\Rightarrow\\; r = 6$$\n**A1** (reject $r = -6$, a length is positive)\n\n(c) $h = 2 \\times 6 = 12$, so $V = \\pi \\times 6^2 \\times 12$ **M1**\n$$V = 432\\pi\\text{ cm}^3$$\n**A1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-surface-area-q16",
+  "topicId": "geo-surface-area",
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "geo-volume-prisms"
+  ],
+  "question": "A cylinder fits exactly inside a cube of edge length $2r$: its circular ends touch the top and bottom of the cube and its curved surface touches the four sides.\n\n(a) Prove that the ratio (surface area of cylinder) : (surface area of cube) is $\\pi : 4$.\n\n(b) Is the ratio of their volumes the same? Justify your answer.",
+  "hint": "Write the cylinder's radius and height in terms of $r$ first. Then simplify each ratio by cancelling common factors.",
+  "answer": "(a) $6\\pi r^2 : 24r^2 = \\pi : 4$ (b) Yes: $2\\pi r^3 : 8r^3 = \\pi : 4$.",
+  "solution": "The cylinder has radius $r$ (its diameter is the edge $2r$) and height $2r$.\n\n(a) Cylinder:\n$$SA = 2\\pi r^2 + 2\\pi r \\times 2r = 2\\pi r^2 + 4\\pi r^2 = 6\\pi r^2$$\nCube: six faces, each $(2r)^2 = 4r^2$:\n$$SA = 6 \\times 4r^2 = 24r^2$$\nRatio:\n$$6\\pi r^2 : 24r^2 = 6\\pi : 24 = \\pi : 4$$\n(dividing both parts by $6r^2$). This holds for every value of $r$.\n\n(b) Cylinder: $V = \\pi r^2 \\times 2r = 2\\pi r^3$. Cube: $V = (2r)^3 = 8r^3$.\n$$2\\pi r^3 : 8r^3 = 2\\pi : 8 = \\pi : 4$$\nSo yes, the volumes are in the same ratio, $\\pi : 4$ (about $0.785$): the cylinder fills about $78.5\\%$ of the cube. (The two ratios happen to agree for this particular shape; for most pairs of solids they would not.)",
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-surface-area-q17",
+  "topicId": "geo-surface-area",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "alg-forming-equations"
+  ],
+  "question": "A closed cylindrical can has radius $r\\text{ cm}$. Its height is $5\\text{ cm}$ more than its radius. The total surface area of the can is $150\\pi\\text{ cm}^2$.\n\n(a) Show that $2r^2 + 5r - 75 = 0$.\n\n(b) Solve the equation to find the radius of the can, explaining why you reject one solution.\n\n(c) Find the exact volume of the can.",
+  "hint": "Height $h = r + 5$. Substitute into $2\\pi r^2 + 2\\pi r h = 150\\pi$, divide through by $2\\pi$, and factorise the quadratic.",
+  "answer": "(a) Shown. (b) $r = 5\\text{ cm}$ (reject $r = -7.5$, since a radius cannot be negative). (c) $250\\pi\\text{ cm}^3$",
+  "solution": "(a) With $h = r + 5$:\n$$2\\pi r^2 + 2\\pi r(r + 5) = 150\\pi$$\n$$2\\pi r^2 + 2\\pi r^2 + 10\\pi r = 150\\pi$$\n$$4\\pi r^2 + 10\\pi r - 150\\pi = 0$$\nDivide by $2\\pi$:\n$$2r^2 + 5r - 75 = 0$$\n\n(b) Factorise (look for two numbers with product $2 \\times (-75) = -150$ and sum $5$: $15$ and $-10$):\n$$2r^2 + 15r - 10r - 75 = r(2r + 15) - 5(2r + 15) = (2r + 15)(r - 5) = 0$$\nSo $r = 5$ or $r = -7.5$. A radius must be positive, so reject $-7.5$:\n$$r = 5\\text{ cm}$$\n\nCheck: $h = 10$; $SA = 2\\pi(25) + 2\\pi(5)(10) = 50\\pi + 100\\pi = 150\\pi$ ✓\n\n(c)\n$$V = \\pi r^2 h = \\pi \\times 25 \\times 10 = 250\\pi\\text{ cm}^3$$",
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-surface-area-q18",
+  "topicId": "geo-surface-area",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 270\" width=\"260\" height=\"270\"><polygon points=\"100,210 140,210 140,170 100,170\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"250\" x2=\"60\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"250\" x2=\"180\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"250\" x2=\"100\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"60\" y1=\"210\" x2=\"180\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"250\" x2=\"140\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"60\" y1=\"170\" x2=\"180\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"250\" x2=\"180\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"130\" x2=\"180\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"130\" x2=\"109.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"130\" x2=\"180\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"130\" x2=\"149.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"76.4\" y1=\"118.5\" x2=\"196.4\" y2=\"118.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"130\" x2=\"189.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"92.8\" y1=\"107.1\" x2=\"212.8\" y2=\"107.1\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"130\" x2=\"229.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"109.1\" y1=\"95.6\" x2=\"229.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"250\" x2=\"180\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"250\" x2=\"229.1\" y2=\"215.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"196.4\" y1=\"238.5\" x2=\"196.4\" y2=\"118.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"210\" x2=\"229.1\" y2=\"175.6\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"212.8\" y1=\"227.1\" x2=\"212.8\" y2=\"107.1\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"170\" x2=\"229.1\" y2=\"135.6\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"229.1\" y1=\"215.6\" x2=\"229.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"130\" x2=\"229.1\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg>",
+  "question": "A large cube is made from 27 centimetre cubes glued together ($3 \\times 3 \\times 3$).\n\n(a) Write down its surface area.\n\n(b) A square tunnel is made straight through the centre of the cube from the front face to the back face by removing the 3 cubes in the tunnel (shaded on the front face). Work out the new surface area, **including the inside walls of the tunnel**.\n\n(c) Two more tunnels are made in the same way, one through the centre from left to right and one through the centre from top to bottom. Work out the surface area of the final solid, and the number of centimetre cubes left.",
+  "hint": "For each removed cube, count which of its faces were on the outside (that area is lost) and which were touching cubes that remain (those become new inside walls).",
+  "answer": "(a) $54\\text{ cm}^2$ (b) $64\\text{ cm}^2$ (c) $72\\text{ cm}^2$, with 20 cubes left",
+  "solution": "(a) Each face of the large cube is $3 \\times 3 = 9\\text{ cm}^2$:\n$$6 \\times 9 = 54\\text{ cm}^2$$\n\n(b) The tunnel removes one square ($1\\text{ cm}^2$) from the front face and one from the back face: $-2\\text{ cm}^2$.\n\nThe tunnel is $3\\text{ cm}$ long with 4 inside walls, each $1\\text{ cm}$ wide: $4 \\times 3 = 12\\text{ cm}^2$ of new surface.\n$$54 - 2 + 12 = 64\\text{ cm}^2$$\n\n(c) The left-to-right tunnel passes through the centre cube, which has already gone, so only 2 more cubes are removed: the centre cube of the left face and of the right face.\n\nFor each of these cubes: 2 of its faces were exposed before (one on the outside face, one facing the empty centre), and 4 faces touch cubes that remain. Removing it loses 2 and creates 4 new walls: $+2\\text{ cm}^2$ each, so $+4$ for the second tunnel:\n$$64 + 4 = 68\\text{ cm}^2$$\n\nThe top-to-bottom tunnel is exactly the same (2 more cubes, $+2$ each):\n$$68 + 4 = 72\\text{ cm}^2$$\n\nCubes left: $27 - 3 - 2 - 2 = 20$.\n\n(Check: the solid left is the 8 corner cubes and the 12 edge cubes. Each corner cube touches 3 edge cubes, so it has $6 - 3 = 3$ exposed faces; each edge cube touches only 2 corner cubes, so it has $6 - 2 = 4$ exposed faces. Total $8 \\times 3 + 12 \\times 4 = 24 + 48 = 72\\text{ cm}^2$ ✓)",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ }
+]
