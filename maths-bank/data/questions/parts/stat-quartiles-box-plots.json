@@ -219,7 +219,7 @@
    },
    {
     "label": "c",
-    "prompt": "The biologist finds that the 95 g reading was a recording error and removes it. Find the mean of the remaining 39 masses.",
+    "prompt": "The biologist finds that the 95 g reading was a recording error and removes it. Find the mean of the remaining 39 masses. Give your answer to 3 significant figures.",
     "marks": 2
    },
    {
@@ -256,10 +256,10 @@
   "topicId": "stat-quartiles-box-plots",
   "difficulty": 5,
   "type": "synoptic",
-  "question": "The heights of adult men in a country are modelled by $H \\sim N(170, 8^2)$, in cm.\n\n(a) Find the lower and upper quartiles of $H$, giving your answers to 1 decimal place.\n(b) Find the values of $H$ beyond which a man would be classed as an outlier by the $1.5 \\times \\text{IQR}$ rule.\n(c) Find the proportion of men who would be classed as outliers.\n(d) Show that this proportion is the same for every normal distribution, whatever its mean and standard deviation.",
+  "question": "The heights of adult men in a country are modelled by $H \\sim N(170, 8^2)$, in cm.\n\n(a) Find the lower and upper quartiles of $H$, giving your answers to 1 decimal place.\n(b) Find the values of $H$ beyond which a man would be classed as an outlier by the $1.5 \\times \\text{IQR}$ rule, giving your answers to 1 decimal place.\n(c) Find the proportion of men who would be classed as outliers, giving your answer to 3 significant figures.\n(d) Show that this proportion is the same for every normal distribution, whatever its mean and standard deviation.",
   "hint": "$Q_3$ satisfies $P(H < Q_3) = 0.75$, so $Q_3 = \\mu + z\\sigma$ where $\\Phi(z) = 0.75$. Work in terms of $z$ for part (d).",
-  "answer": "(a) $Q_1 = 164.6$ cm, $Q_3 = 175.4$ cm (b) below 148.4 cm or above 191.6 cm (c) 0.0070 (about 0.7%) (d) The fences are always at $\\mu \\pm 2.698\\sigma$.",
-  "solution": "(a) $\\Phi(z) = 0.75$ gives $z = 0.6745$ (4 d.p.).\n$$Q_3 = 170 + 0.6745 \\times 8 = 175.396 \\approx 175.4 \\text{ cm}, \\qquad Q_1 = 170 - 0.6745 \\times 8 = 164.604 \\approx 164.6 \\text{ cm}$$\n\n(b) $\\text{IQR} = 175.396 - 164.604 = 10.792$; $1.5 \\times \\text{IQR} = 16.188$.\n\nUpper fence $= 175.396 + 16.188 = 191.58 \\approx 191.6$ cm; lower fence $= 164.604 - 16.188 = 148.42 \\approx 148.4$ cm.\n\n(c) Upper fence in standard units: $\\frac{191.584 - 170}{8} = 2.698$.\n$$P(\\text{outlier}) = P(Z > 2.698) + P(Z < -2.698) = 2 \\times 0.003488 = 0.00698 \\approx 0.0070$$\nAbout 0.7% of men (roughly 1 in 143).\n\n(d) For $X \\sim N(\\mu, \\sigma^2)$: $Q_1 = \\mu - 0.6745\\sigma$, $Q_3 = \\mu + 0.6745\\sigma$, so $\\text{IQR} = 1.349\\sigma$.\n\nUpper fence $= \\mu + 0.6745\\sigma + 1.5 \\times 1.349\\sigma = \\mu + 2.698\\sigma$, and the lower fence is $\\mu - 2.698\\sigma$.\n\nSo $P(\\text{outlier}) = 2P(Z > 2.698) \\approx 0.0070$ for every $\\mu$ and $\\sigma$: the rule picks out about 0.7% of any normal population.",
+  "answer": "(a) $Q_1 = 164.6$ cm, $Q_3 = 175.4$ cm (b) below 148.4 cm or above 191.6 cm (c) 0.00698 (about 0.7%) (d) The fences are always at $\\mu \\pm 2.698\\sigma$.",
+  "solution": "(a) $\\Phi(z) = 0.75$ gives $z = 0.6745$ (4 d.p.).\n$$Q_3 = 170 + 0.6745 \\times 8 = 175.396 \\approx 175.4 \\text{ cm}, \\qquad Q_1 = 170 - 0.6745 \\times 8 = 164.604 \\approx 164.6 \\text{ cm}$$\n\n(b) $\\text{IQR} = 175.396 - 164.604 = 10.792$; $1.5 \\times \\text{IQR} = 16.188$.\n\nUpper fence $= 175.396 + 16.188 = 191.58 \\approx 191.6$ cm; lower fence $= 164.604 - 16.188 = 148.42 \\approx 148.4$ cm.\n\n(c) Upper fence in standard units: $\\frac{191.584 - 170}{8} = 2.698$.\n$$P(\\text{outlier}) = P(Z > 2.698) + P(Z < -2.698) = 2 \\times 0.003488 = 0.00698 \\text{ (3 s.f.)}$$\nAbout 0.7% of men (roughly 1 in 143).\n\n(d) For $X \\sim N(\\mu, \\sigma^2)$: $Q_1 = \\mu - 0.6745\\sigma$, $Q_3 = \\mu + 0.6745\\sigma$, so $\\text{IQR} = 1.349\\sigma$.\n\nUpper fence $= \\mu + 0.6745\\sigma + 1.5 \\times 1.349\\sigma = \\mu + 2.698\\sigma$, and the lower fence is $\\mu - 2.698\\sigma$.\n\nSo $P(\\text{outlier}) = 2P(Z > 2.698) \\approx 0.0070$ for every $\\mu$ and $\\sigma$: the rule picks out about 0.7% of any normal population.",
   "linkedTopicIds": [
    "prob-normal-distribution"
   ],
