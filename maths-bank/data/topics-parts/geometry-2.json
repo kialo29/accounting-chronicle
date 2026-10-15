@@ -1,0 +1,633 @@
+[
+ {
+  "id": "geo-similarity",
+  "prerequisites": [
+   "rat-ratio-basics",
+   "rat-scale-drawings-maps",
+   "geo-angle-facts",
+   "geo-parallel-lines-angles",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "Two shapes are **similar** when one is an enlargement of the other: corresponding angles are equal and corresponding sides are all in the same ratio.\n\n**Scale factor** $k = \\dfrac{\\text{length on new shape}}{\\text{corresponding length on original}}$. Multiply by $k$ to go from original to new; divide by $k$ to go back.\n\n**Triangles:** two pairs of equal angles is enough (**AA similarity**); equivalently, all three pairs of sides in the same ratio (SSS) or two sides in proportion with the included angle equal (SAS).\n\nMethod: match vertices by equal angles, then write $\\dfrac{AB}{DE} = \\dfrac{BC}{EF} = \\dfrac{AC}{DF}$. For one triangle inside another (a parallel line cutting a triangle), sketch the two triangles separately and use **whole** sides. US texts call the enlargement a dilation.",
+  "workedExamples": [
+   {
+    "question": "Triangles $ABC$ and $DEF$ are similar, with $A$ corresponding to $D$, $B$ to $E$ and $C$ to $F$. $AB = 6$ cm, $BC = 9$ cm, $DE = 10$ cm and $DF = 12$ cm. Find $EF$ and $AC$.",
+    "solution": "$AB$ and $DE$ are a corresponding pair, so the scale factor from $ABC$ to $DEF$ is\n$$k = \\frac{10}{6} = \\frac{5}{3}$$\n\n$EF$ corresponds to $BC$ (going from small to large, so multiply):\n$$EF = 9 \\times \\frac{5}{3} = 15 \\text{ cm}$$\n\n$AC$ corresponds to $DF$ (going from large to small, so divide):\n$$AC = 12 \\div \\frac{5}{3} = 12 \\times \\frac{3}{5} = 7.2 \\text{ cm}$$\n\nCheck: $AC < DF$ and $BC < EF$, as expected since $ABC$ is the smaller triangle."
+   },
+   {
+    "question": "In the diagram, $B$ lies on $AD$ and $C$ lies on $AE$, with $BC$ parallel to $DE$. $AB = 4$ cm, $BD = 6$ cm and $BC = 5$ cm. Find $DE$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><path d=\"M180 30 L40 260 L320 260 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><line x1=\"124\" y1=\"122\" x2=\"236\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"174\" y=\"22\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"108\" y=\"124\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text><text x=\"242\" y=\"124\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">C</text><text x=\"24\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">D</text><text x=\"326\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">E</text><text x=\"104\" y=\"80\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">4 cm</text><text x=\"38\" y=\"196\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">6 cm</text><text x=\"164\" y=\"114\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">5 cm</text><text x=\"170\" y=\"282\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">?</text></svg>",
+    "solution": "**Show the triangles are similar.** Angle $A$ is shared. $\\angle ABC = \\angle ADE$ (corresponding angles, $BC \\parallel DE$). So triangles $ABC$ and $ADE$ are similar (AA).\n\n**Use whole sides.** $AD = AB + BD = 4 + 6 = 10$ cm, and $AD$ corresponds to $AB$:\n$$k = \\frac{AD}{AB} = \\frac{10}{4} = 2.5$$\n\n$DE$ corresponds to $BC$:\n$$DE = 5 \\times 2.5 = 12.5 \\text{ cm}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the difference between corresponding sides instead of multiplying by a scale factor, e.g. $AB = 6 \\to DE = 10$ is \"$+4$\", so $BC = 9 \\to EF = 9 + 4 = 13$.",
+    "correction": "Similar shapes are enlargements, so lengths are **multiplied**: $k = \\frac{10}{6} = \\frac{5}{3}$ and $EF = 9 \\times \\frac{5}{3} = 15$. Check that every pair of sides has the same ratio, not the same difference."
+   },
+   {
+    "id": "m2",
+    "text": "Pairs sides by their position on the page (or the order they are listed) rather than by the equal angles, so divides non-corresponding sides, e.g. compares the shortest side of one triangle with the middle-length side of the other.",
+    "correction": "Match vertices using the equal angles first; corresponding sides lie opposite equal angles. A quick check: shortest pairs with shortest and longest with longest. Rotate or redraw one triangle so both face the same way."
+   },
+   {
+    "id": "m3",
+    "text": "In a triangle cut by a parallel line, uses the part of a side instead of the whole side, e.g. with $AB = 4$, $BD = 6$, $BC = 5$ writes $k = \\frac{6}{4} = 1.5$ and $DE = 7.5$.",
+    "correction": "The similar triangles are $ABC$ and $ADE$, so the corresponding side to $AB$ is the whole of $AD = 4 + 6 = 10$. Then $k = \\frac{10}{4} = 2.5$ and $DE = 12.5$ cm. Sketch the two triangles separately before using ratios."
+   },
+   {
+    "id": "m4",
+    "text": "Assumes shapes are similar because their angles match, e.g. \"all rectangles are similar\" (a $2 \\times 3$ and a $2 \\times 5$ rectangle both have four right angles).",
+    "correction": "Equal angles guarantee similarity only for **triangles**. For other polygons the sides must also be in the same ratio: $\\frac{2}{2} = 1$ but $\\frac{5}{3} \\ne 1$, so those rectangles are not similar."
+   }
+  ]
+ },
+ {
+  "id": "geo-similarity-area-volume",
+  "prerequisites": [
+   "geo-similarity",
+   "geo-perimeter-area",
+   "geo-volume-prisms",
+   "num-powers-roots"
+  ],
+  "keyIdea": "If two shapes are similar with **length** scale factor $k$, then\n$$\\text{area scale factor} = k^2, \\qquad \\text{volume scale factor} = k^3$$\n\n* Lengths, perimeters, heights: multiply by $k$.\n* Areas, surface areas, amount of paint or label material: multiply by $k^2$.\n* Volumes, capacities, and masses of solids made of the same material: multiply by $k^3$.\n\n**Working backwards:** always return to the length scale factor first. From an area factor take the square root; from a volume factor take the cube root. E.g. areas in ratio $4 : 9$ give lengths $2 : 3$, so volumes are $8 : 27$.\n\nThe same idea explains unit conversions: $1 \\text{ m} = 100 \\text{ cm}$, so $1 \\text{ m}^2 = 100^2 = 10\\,000 \\text{ cm}^2$ and $1 \\text{ m}^3 = 1\\,000\\,000 \\text{ cm}^3$.",
+  "workedExamples": [
+   {
+    "question": "Two bottles are mathematically similar. The smaller is 12 cm tall and holds 400 ml. The larger is 18 cm tall. Find the capacity of the larger bottle.",
+    "solution": "Length scale factor:\n$$k = \\frac{18}{12} = 1.5$$\n\nCapacity is a volume, so use $k^3$:\n$$k^3 = 1.5^3 = 3.375$$\n\n$$\\text{Capacity} = 400 \\times 3.375 = 1350 \\text{ ml}$$"
+   },
+   {
+    "question": "Two solids are similar. Their surface areas are $50 \\text{ cm}^2$ and $200 \\text{ cm}^2$. The volume of the larger solid is $960 \\text{ cm}^3$. Find the volume of the smaller solid.",
+    "solution": "Area scale factor (small to large):\n$$k^2 = \\frac{200}{50} = 4$$\n\nLength scale factor:\n$$k = \\sqrt{4} = 2$$\n\nVolume scale factor:\n$$k^3 = 2^3 = 8$$\n\nGoing from large to small, divide:\n$$V = 960 \\div 8 = 120 \\text{ cm}^3$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the length scale factor for an area or volume, e.g. heights 12 cm and 18 cm so $k = 1.5$, then larger capacity $= 400 \\times 1.5 = 600$ ml.",
+    "correction": "Capacity is a volume, so multiply by $k^3 = 1.5^3 = 3.375$: $400 \\times 3.375 = 1350$ ml. Ask \"is this a length, an area or a volume?\" before choosing $k$, $k^2$ or $k^3$."
+   },
+   {
+    "id": "m2",
+    "text": "Converts directly from an area factor to a volume factor, e.g. area factor $4$ so volume factor $4$ (or $4^3 = 64$).",
+    "correction": "Go back to lengths first: area factor $4 \\Rightarrow k = \\sqrt{4} = 2 \\Rightarrow$ volume factor $2^3 = 8$. Equivalently, volume factor $= (\\text{area factor})^{3/2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Treats mass like an area, e.g. two similar statues with heights in ratio $1 : 3$; the smaller has mass 2 kg, so the larger is $2 \\times 3^2 = 18$ kg.",
+    "correction": "For the same material, mass is proportional to volume, so use $k^3$: $2 \\times 3^3 = 54$ kg. Only surface quantities (paint, area, wrapping) use $k^2$."
+   },
+   {
+    "id": "m4",
+    "text": "Converts area or volume units with the length factor, e.g. $3 \\text{ m}^2 = 300 \\text{ cm}^2$ or $2 \\text{ m}^3 = 200 \\text{ cm}^3$.",
+    "correction": "Units are a scale factor too: $k = 100$ for m to cm, so areas scale by $100^2$ and volumes by $100^3$. $3 \\text{ m}^2 = 30\\,000 \\text{ cm}^2$ and $2 \\text{ m}^3 = 2\\,000\\,000 \\text{ cm}^3$."
+   }
+  ]
+ },
+ {
+  "id": "geo-pythagoras",
+  "prerequisites": [
+   "num-powers-roots",
+   "geo-angle-facts",
+   "geo-perimeter-area",
+   "num-rounding"
+  ],
+  "keyIdea": "In a right-angled triangle the **hypotenuse** $c$ is the longest side, opposite the right angle. **Pythagoras' theorem** (US: Pythagorean theorem):\n$$a^2 + b^2 = c^2$$\n\n* **Finding the hypotenuse:** square, **add**, square root: $c = \\sqrt{a^2 + b^2}$.\n* **Finding a shorter side:** square, **subtract**, square root: $a = \\sqrt{c^2 - b^2}$.\n* **Converse:** if the longest side $c$ satisfies $a^2 + b^2 = c^2$, the triangle is right-angled.\n* **Distance between two points:** form a right-angled triangle with the horizontal and vertical differences: $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.\n\nUseful triples: $3, 4, 5$; $5, 12, 13$; $8, 15, 17$ (and multiples). Sanity check: the hypotenuse must be longer than each other side, but shorter than their sum.",
+  "workedExamples": [
+   {
+    "question": "A ladder 5.2 m long leans against a vertical wall. The foot of the ladder is 2 m from the wall on horizontal ground. How far up the wall does the ladder reach?",
+    "solution": "The ladder is the hypotenuse (opposite the right angle between wall and ground). We want a shorter side, so subtract:\n$$h^2 = 5.2^2 - 2^2 = 27.04 - 4 = 23.04$$\n\n$$h = \\sqrt{23.04} = 4.8 \\text{ m}$$\n\nCheck: $4.8 < 5.2$, so the answer is sensible."
+   },
+   {
+    "question": "Find the distance between the points $P(-2, 3)$ and $Q(4, 11)$.",
+    "solution": "Horizontal difference: $4 - (-2) = 6$. Vertical difference: $11 - 3 = 8$.\n\nThese are the two shorter sides of a right-angled triangle with $PQ$ as hypotenuse:\n$$PQ^2 = 6^2 + 8^2 = 36 + 64 = 100$$\n\n$$PQ = \\sqrt{100} = 10 \\text{ units}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the squares when finding a shorter side, e.g. ladder 5.2 m, foot 2 m from wall: $h = \\sqrt{5.2^2 + 2^2} = \\sqrt{31.04} \\approx 5.57$ m.",
+    "correction": "Only the hypotenuse is found by adding. For a shorter side subtract: $h = \\sqrt{5.2^2 - 2^2} = \\sqrt{23.04} = 4.8$ m. An answer longer than the hypotenuse is impossible."
+   },
+   {
+    "id": "m2",
+    "text": "Square-roots term by term: $\\sqrt{a^2 + b^2} = a + b$, e.g. $\\sqrt{6^2 + 8^2} = 6 + 8 = 14$.",
+    "correction": "The square root does not split over addition. Add first, then root: $\\sqrt{36 + 64} = \\sqrt{100} = 10$. (Also $14 = 6 + 8$ would make a flat, not a triangle.)"
+   },
+   {
+    "id": "m3",
+    "text": "Doubles instead of squaring, e.g. $5^2 = 10$, giving $c^2 = 2 \\times 3 + 2 \\times 4 = 14$ for legs 3 and 4.",
+    "correction": "Squaring means multiplying a number by itself: $5^2 = 5 \\times 5 = 25$. For legs 3 and 4: $c^2 = 9 + 16 = 25$, so $c = 5$."
+   },
+   {
+    "id": "m4",
+    "text": "When using the converse, puts a side other than the longest in the place of $c$, e.g. for sides 9, 40, 41 checks $9^2 + 41^2 = 1762 \\ne 40^2$ and concludes \"not right-angled\".",
+    "correction": "The hypotenuse is always the longest side, so test $9^2 + 40^2 = 81 + 1600 = 1681 = 41^2$. The triangle **is** right-angled."
+   }
+  ]
+ },
+ {
+  "id": "geo-trig-right-angled",
+  "prerequisites": [
+   "geo-pythagoras",
+   "geo-similarity",
+   "alg-linear-equations",
+   "num-rounding"
+  ],
+  "keyIdea": "Label the sides of a right-angled triangle **relative to the angle** $\\theta$: **hypotenuse** (opposite the right angle), **opposite** (facing $\\theta$), **adjacent** (next to $\\theta$, not the hypotenuse).\n$$\\sin\\theta = \\frac{O}{H}, \\quad \\cos\\theta = \\frac{A}{H}, \\quad \\tan\\theta = \\frac{O}{A} \\qquad \\text{(SOH CAH TOA)}$$\n\n* **Missing side:** pick the ratio linking the known side and the wanted side. If the unknown is on top, multiply ($x = 12\\sin 35^\\circ$); if it is on the bottom, divide ($x = \\dfrac{8}{\\tan 40^\\circ}$).\n* **Missing angle:** use the inverse function, e.g. $\\theta = \\tan^{-1}\\left(\\dfrac{O}{A}\\right)$.\n* **Angle of elevation:** measured **up** from the horizontal; **angle of depression:** **down** from the horizontal. They are equal (alternate angles).\n\nKeep the calculator in degree mode.",
+  "workedExamples": [
+   {
+    "question": "In triangle $ABC$, angle $C = 90^\\circ$, angle $A = 35^\\circ$ and $AB = 12$ cm. Find $BC = x$ to 3 significant figures.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 270\" width=\"340\" height=\"270\"><path d=\"M40 240 L300 240 L300 58 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M288 240 L288 228 L300 228\" stroke=\"currentColor\" fill=\"none\"/><path d=\"M90 240 A50 50 0 0 0 81 211.3\" stroke=\"currentColor\" fill=\"none\"/><text x=\"96\" y=\"232\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">35°</text><text x=\"132\" y=\"138\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">12 cm</text><text x=\"308\" y=\"154\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">x</text><text x=\"24\" y=\"252\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"306\" y=\"256\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">C</text><text x=\"306\" y=\"56\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text></svg>",
+    "solution": "Label relative to the $35^\\circ$ angle: $AB = 12$ is the hypotenuse, $BC = x$ is opposite. O and H means sine:\n$$\\sin 35^\\circ = \\frac{x}{12}$$\n\nThe unknown is on top, so multiply:\n$$x = 12 \\sin 35^\\circ = 6.8829\\ldots$$\n\n$$x = 6.88 \\text{ cm (3 s.f.)}$$\n\nCheck: $6.88 < 12$, the opposite side is shorter than the hypotenuse."
+   },
+   {
+    "question": "From a point on level ground 40 m from the foot of a tower, the top of the tower is 28 m above the ground. Find the angle of elevation of the top of the tower, to 1 decimal place.",
+    "solution": "The angle of elevation $\\theta$ is at the observer, measured up from the horizontal. Opposite $= 28$ m (tower), adjacent $= 40$ m (ground). O and A means tangent:\n$$\\tan\\theta = \\frac{28}{40} = 0.7$$\n\n$$\\theta = \\tan^{-1}(0.7) = 34.99\\ldots^\\circ$$\n\n$$\\theta = 35.0^\\circ \\text{ (1 d.p.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Mislabels the sides, calling the side next to the angle \"adjacent\" even when it is the hypotenuse, e.g. uses $\\cos 35^\\circ = \\frac{x}{12}$ to find the side opposite $35^\\circ$.",
+    "correction": "Label the hypotenuse first (opposite the right angle), then the side facing $\\theta$ is opposite and the remaining side is adjacent. Here $x$ is opposite and 12 is the hypotenuse, so $\\sin 35^\\circ = \\frac{x}{12}$."
+   },
+   {
+    "id": "m2",
+    "text": "Divides when the unknown is on top, e.g. from $\\sin 35^\\circ = \\frac{x}{12}$ writes $x = \\frac{12}{\\sin 35^\\circ} \\approx 20.9$ cm.",
+    "correction": "Multiply both sides by 12: $x = 12 \\sin 35^\\circ \\approx 6.88$ cm. Divide only when the unknown is in the denominator, e.g. $\\sin 35^\\circ = \\frac{12}{x} \\Rightarrow x = \\frac{12}{\\sin 35^\\circ}$. Check: a leg cannot be longer than the hypotenuse."
+   },
+   {
+    "id": "m3",
+    "text": "Finds an angle using the ordinary function instead of the inverse, e.g. $\\sin\\theta = 0.7 \\Rightarrow \\theta = \\sin 0.7$, or writes $\\theta = \\frac{0.7}{\\sin}$.",
+    "correction": "$\\sin$ turns an angle into a ratio; to turn a ratio back into an angle use $\\sin^{-1}$: $\\theta = \\sin^{-1}(0.7) \\approx 44.4^\\circ$. $\\sin$ is a function, not a number, so it cannot be divided by."
+   },
+   {
+    "id": "m4",
+    "text": "Measures an angle of depression from the vertical instead of the horizontal, e.g. a cliff 50 m high and a boat 120 m from its foot gives $\\tan\\theta = \\frac{120}{50}$, so $\\theta \\approx 67.4^\\circ$.",
+    "correction": "Angles of elevation and depression are always measured from the **horizontal**. By alternate angles the depression equals the elevation from the boat: $\\tan\\theta = \\frac{50}{120}$, so $\\theta \\approx 22.6^\\circ$."
+   }
+  ]
+ },
+ {
+  "id": "geo-trig-exact-values",
+  "prerequisites": [
+   "geo-trig-right-angled",
+   "geo-pythagoras",
+   "num-surds"
+  ],
+  "keyIdea": "Exact values come from two special triangles.\n\n* **Half an equilateral triangle** of side 2: sides $1, \\sqrt{3}, 2$ with angles $30^\\circ, 60^\\circ, 90^\\circ$. The side **opposite $30^\\circ$ is the shortest** (1).\n* **Isosceles right triangle** with legs 1: hypotenuse $\\sqrt{2}$, angles $45^\\circ, 45^\\circ, 90^\\circ$.\n\n| $\\theta$ | $0^\\circ$ | $30^\\circ$ | $45^\\circ$ | $60^\\circ$ | $90^\\circ$ |\n|---|---|---|---|---|---|\n| $\\sin\\theta$ | $0$ | $\\frac{1}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{\\sqrt{3}}{2}$ | $1$ |\n| $\\cos\\theta$ | $1$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{\\sqrt{2}}{2}$ | $\\frac{1}{2}$ | $0$ |\n| $\\tan\\theta$ | $0$ | $\\frac{\\sqrt{3}}{3}$ | $1$ | $\\sqrt{3}$ | undefined |\n\nUS form: in a 45-45-90 triangle sides are $x, x, x\\sqrt{2}$; in a 30-60-90 triangle sides are $x, x\\sqrt{3}, 2x$. Note $\\sin$ increases and $\\cos$ decreases from $0^\\circ$ to $90^\\circ$.",
+  "workedExamples": [
+   {
+    "question": "An isosceles right-angled triangle has hypotenuse 8 cm. Find the exact length of each of the other sides.",
+    "solution": "The angles are $45^\\circ, 45^\\circ, 90^\\circ$. Using $\\sin 45^\\circ = \\frac{\\sqrt{2}}{2}$:\n$$x = 8 \\sin 45^\\circ = 8 \\times \\frac{\\sqrt{2}}{2} = 4\\sqrt{2} \\text{ cm}$$\n\n(Equivalently, hypotenuse $= x\\sqrt{2}$, so $x = \\frac{8}{\\sqrt{2}} = \\frac{8\\sqrt{2}}{2} = 4\\sqrt{2}$.)\n\nCheck with Pythagoras: $(4\\sqrt{2})^2 + (4\\sqrt{2})^2 = 32 + 32 = 64 = 8^2$."
+   },
+   {
+    "question": "In a right-angled triangle with angles $30^\\circ$, $60^\\circ$ and $90^\\circ$, the side opposite the $30^\\circ$ angle is 7 cm. Find the exact lengths of the other two sides.",
+    "solution": "The side opposite $30^\\circ$ is the shortest side, $x = 7$.\n\nHypotenuse: $2x = 14$ cm. (Check: $\\sin 30^\\circ = \\frac{7}{14} = \\frac{1}{2}$.)\n\nSide opposite $60^\\circ$: $x\\sqrt{3} = 7\\sqrt{3}$ cm. (Check: $\\tan 60^\\circ = \\frac{7\\sqrt{3}}{7} = \\sqrt{3}$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Swaps the $30^\\circ$ and $60^\\circ$ values, e.g. writes $\\sin 30^\\circ = \\frac{\\sqrt{3}}{2}$ and $\\cos 30^\\circ = \\frac{1}{2}$.",
+    "correction": "$\\sin\\theta$ increases from 0 to 1 as $\\theta$ goes from $0^\\circ$ to $90^\\circ$, so $\\sin 30^\\circ$ is the smaller value $\\frac{1}{2}$ and $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\approx 0.866$. Redraw the half-equilateral triangle: the side opposite $30^\\circ$ is 1 out of a hypotenuse of 2."
+   },
+   {
+    "id": "m2",
+    "text": "In a 30-60-90 triangle puts the $\\sqrt{3}$ side opposite the $30^\\circ$ angle, e.g. short leg 7 gives \"side opposite $30^\\circ = 7\\sqrt{3}$\".",
+    "correction": "The shortest side is opposite the smallest angle. Opposite $30^\\circ$ is $x$, opposite $60^\\circ$ is $x\\sqrt{3}$, and the hypotenuse is $2x$."
+   },
+   {
+    "id": "m3",
+    "text": "Assumes trig functions are linear in the angle, e.g. $\\sin 60^\\circ = 2\\sin 30^\\circ = 1$ or $\\sin 90^\\circ = 3 \\sin 30^\\circ = \\frac{3}{2}$.",
+    "correction": "$\\sin(2\\theta) \\ne 2\\sin\\theta$ in general. Use the table: $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\approx 0.866$, not 1. (Any value of $\\sin$ above 1 is impossible.)"
+   },
+   {
+    "id": "m4",
+    "text": "Uses the 30-60-90 pattern for a 45-45-90 triangle, giving hypotenuse $2x$, e.g. legs 5 so hypotenuse 10.",
+    "correction": "In a 45-45-90 triangle the hypotenuse is $x\\sqrt{2}$: legs 5 give $5\\sqrt{2} \\approx 7.07$. Check with Pythagoras: $5^2 + 5^2 = 50$, and $\\sqrt{50} = 5\\sqrt{2}$, not 10."
+   }
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig",
+  "prerequisites": [
+   "geo-pythagoras",
+   "geo-trig-right-angled",
+   "geo-3d-shapes-nets"
+  ],
+  "keyIdea": "In 3D, find a **right-angled triangle lying in a flat plane** inside the solid and sketch it separately. Usually this takes two stages.\n\n* **Cuboid** $a \\times b \\times c$: base diagonal $\\sqrt{a^2 + b^2}$, then space diagonal\n$$d = \\sqrt{a^2 + b^2 + c^2}$$\n* **Angle between a line and a plane:** from the end of the line not on the plane, drop a perpendicular to the plane. The angle is between the line and its **projection** (the line from where it meets the plane to the foot of the perpendicular). The right angle is at the foot.\n* **Pyramid** with apex above the centre of a rectangular base: the foot of the height is the midpoint of the base diagonal, so use **half the diagonal**.\n\nKeep unrounded values (or surds) between stages and round only at the end.",
+  "workedExamples": [
+   {
+    "question": "The cuboid $ABCDEFGH$ has $AB = 8$ cm, $BC = 6$ cm and $CG = 5$ cm. Find (a) the length $AG$, (b) the angle between $AG$ and the base $ABCD$. Give answers to 3 significant figures.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><path d=\"M40 250 L240 250 L300 200 L300 100 L100 100 L40 150 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><line x1=\"40\" y1=\"150\" x2=\"240\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"240\" y1=\"150\" x2=\"240\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"240\" y1=\"150\" x2=\"300\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"250\" x2=\"100\" y2=\"200\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"100\" y1=\"200\" x2=\"300\" y2=\"200\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"100\" y1=\"200\" x2=\"100\" y2=\"100\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"40\" y1=\"250\" x2=\"300\" y2=\"200\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"40\" y1=\"250\" x2=\"300\" y2=\"100\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"26\" y=\"266\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"236\" y=\"268\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text><text x=\"306\" y=\"212\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">C</text><text x=\"86\" y=\"196\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">D</text><text x=\"24\" y=\"148\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">E</text><text x=\"228\" y=\"144\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">F</text><text x=\"306\" y=\"98\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">G</text><text x=\"92\" y=\"94\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">H</text><text x=\"124\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">8 cm</text><text x=\"276\" y=\"242\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">6 cm</text><text x=\"306\" y=\"155\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">5 cm</text></svg>",
+    "solution": "**(a)** Triangle $ABC$ (in the base, right angle at $B$):\n$$AC = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10 \\text{ cm}$$\n\nTriangle $ACG$ (vertical, right angle at $C$):\n$$AG = \\sqrt{10^2 + 5^2} = \\sqrt{125} = 11.18\\ldots \\approx 11.2 \\text{ cm}$$\n\n**(b)** $G$ is directly above $C$, so the projection of $AG$ onto the base is $AC$. The angle is $\\angle GAC$:\n$$\\tan \\angle GAC = \\frac{CG}{AC} = \\frac{5}{10}$$\n\n$$\\angle GAC = \\tan^{-1}(0.5) = 26.56\\ldots^\\circ \\approx 26.6^\\circ$$"
+   },
+   {
+    "question": "A pyramid has a square base of side 6 cm. The apex is vertically above the centre of the base and each sloping edge is 7 cm. Find (a) the exact height of the pyramid, (b) the angle between a sloping edge and the base, to 1 decimal place.",
+    "solution": "**(a)** Base diagonal $= \\sqrt{6^2 + 6^2} = \\sqrt{72} = 6\\sqrt{2}$, so half-diagonal $= 3\\sqrt{2}$ cm.\n\nThe height, the half-diagonal and a sloping edge form a right-angled triangle (right angle at the centre of the base):\n$$h^2 = 7^2 - (3\\sqrt{2})^2 = 49 - 18 = 31$$\n\n$$h = \\sqrt{31} \\text{ cm} \\ (\\approx 5.57 \\text{ cm})$$\n\n**(b)** The projection of the sloping edge onto the base is the half-diagonal, so\n$$\\cos\\theta = \\frac{3\\sqrt{2}}{7}$$\n\n$$\\theta = \\cos^{-1}\\left(\\frac{3\\sqrt{2}}{7}\\right) = 52.69\\ldots^\\circ \\approx 52.7^\\circ$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses an edge of the base instead of the projection of the line, e.g. takes the angle between $AG$ and the base as $\\tan^{-1}\\left(\\frac{5}{8}\\right) \\approx 32.0^\\circ$ using edge $AB$.",
+    "correction": "The angle with the plane is measured to the **projection** of the line, which runs from $A$ to the point directly below $G$, i.e. $C$. So use $\\tan^{-1}\\left(\\frac{5}{AC}\\right) = \\tan^{-1}\\left(\\frac{5}{10}\\right) \\approx 26.6^\\circ$."
+   },
+   {
+    "id": "m2",
+    "text": "For a pyramid with apex above the centre, uses half the side length (or the whole diagonal) instead of half the diagonal, e.g. base 6, edge 7: $h = \\sqrt{7^2 - 3^2} = \\sqrt{40}$.",
+    "correction": "The sloping **edge** goes to a corner, so the horizontal leg runs from the centre to a corner: half the diagonal, $3\\sqrt{2}$. $h = \\sqrt{49 - 18} = \\sqrt{31}$. (Half the side, 3, is correct only for the slant height of a triangular face.)"
+   },
+   {
+    "id": "m3",
+    "text": "Puts the angle at the wrong vertex of the right-angled triangle, e.g. gives $\\angle AGC = \\tan^{-1}\\left(\\frac{10}{5}\\right) \\approx 63.4^\\circ$ as the angle between $AG$ and the base.",
+    "correction": "The angle between a line and a plane is at the point where the line **meets** the plane ($A$), between the line and the plane. Here that is $\\angle GAC \\approx 26.6^\\circ$; $63.4^\\circ$ is the angle with the vertical."
+   },
+   {
+    "id": "m4",
+    "text": "Finds the space diagonal in one step by adding lengths or using only two dimensions, e.g. $AG = \\sqrt{8^2 + 6^2} = 10$ or $AG = \\sqrt{8 + 6 + 5}$.",
+    "correction": "The space diagonal needs all three dimensions, each squared: $AG = \\sqrt{8^2 + 6^2 + 5^2} = \\sqrt{125} \\approx 11.2$ cm. Two stages: base diagonal, then the vertical triangle."
+   }
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules",
+  "prerequisites": [
+   "geo-trig-right-angled",
+   "alg-rearranging-formulae",
+   "geo-angle-facts"
+  ],
+  "keyIdea": "For **any** triangle, label side $a$ opposite angle $A$, $b$ opposite $B$, $c$ opposite $C$. (US: Law of Sines, Law of Cosines.)\n\n**Sine rule** (use when you know a side and its opposite angle):\n$$\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} \\quad \\text{or} \\quad \\frac{\\sin A}{a} = \\frac{\\sin B}{b}$$\n\n**Cosine rule** (use for SAS, two sides and the angle between, or SSS):\n$$a^2 = b^2 + c^2 - 2bc\\cos A, \\qquad \\cos A = \\frac{b^2 + c^2 - a^2}{2bc}$$\n\n**Ambiguous case:** finding an angle with the sine rule, $\\sin B = 0.9$ has two solutions $B$ and $180^\\circ - B$. Both are valid if the angles still total less than $180^\\circ$.\n\nA negative $\\cos A$ means $A$ is obtuse. In bearings problems draw north lines and use parallel-line angle facts to find the angle inside the triangle.",
+  "workedExamples": [
+   {
+    "question": "In triangle $ABC$, $b = 7$ cm, $c = 9$ cm and angle $A = 48^\\circ$. Find $a$ to 3 significant figures.",
+    "solution": "Two sides and the included angle (SAS), so use the cosine rule:\n$$a^2 = 7^2 + 9^2 - 2 \\times 7 \\times 9 \\times \\cos 48^\\circ$$\n\n$$a^2 = 130 - 126\\cos 48^\\circ = 130 - 84.310\\ldots = 45.689\\ldots$$\n\n$$a = \\sqrt{45.689\\ldots} = 6.759\\ldots \\approx 6.76 \\text{ cm}$$"
+   },
+   {
+    "question": "In triangle $ABC$, $AB = 10$ cm, $BC = 7$ cm and angle $A = 40^\\circ$. Find the possible sizes of angle $C$, to 1 decimal place.",
+    "solution": "$BC = a = 7$ is opposite $A$, and $AB = c = 10$ is opposite $C$. A side–opposite-angle pair is known, so use the sine rule:\n$$\\frac{\\sin C}{10} = \\frac{\\sin 40^\\circ}{7}$$\n\n$$\\sin C = \\frac{10 \\sin 40^\\circ}{7} = 0.91826\\ldots$$\n\n$$C = \\sin^{-1}(0.91826\\ldots) = 66.7^\\circ \\quad \\text{or} \\quad C = 180^\\circ - 66.7^\\circ = 113.3^\\circ$$\n\nCheck both: $40^\\circ + 66.7^\\circ < 180^\\circ$ and $40^\\circ + 113.3^\\circ < 180^\\circ$, so both triangles exist (the given angle is opposite the shorter of the two given sides).\n\n$C = 66.7^\\circ$ or $C = 113.3^\\circ$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Evaluates the cosine rule in the wrong order, subtracting before multiplying: $a^2 = (7^2 + 9^2 - 2 \\times 7 \\times 9)\\cos 48^\\circ = 4\\cos 48^\\circ \\approx 2.68$.",
+    "correction": "$2bc\\cos A$ is one term, worked out first: $a^2 = 130 - 126\\cos 48^\\circ = 130 - 84.31 = 45.69$, so $a \\approx 6.76$ cm. Type the whole expression into the calculator, or work out $2bc\\cos A$ separately."
+   },
+   {
+    "id": "m2",
+    "text": "Pairs a side with an angle that is not opposite it in the sine rule, e.g. with $AB = 10$ and $A = 40^\\circ$ writes $\\frac{10}{\\sin 40^\\circ}$.",
+    "correction": "$AB$ joins $A$ and $B$, so it is opposite $C$: it is side $c$. Label $a, b, c$ opposite $A, B, C$ before substituting, and only pair a side with the angle across from it."
+   },
+   {
+    "id": "m3",
+    "text": "In the ambiguous case gives only the calculator's acute answer, e.g. $\\sin C = 0.918 \\Rightarrow C = 66.7^\\circ$ only, missing $C = 113.3^\\circ$.",
+    "correction": "$\\sin\\theta = \\sin(180^\\circ - \\theta)$, so also test $180^\\circ - 66.7^\\circ = 113.3^\\circ$. Keep it if the angle sum with the known angle is under $180^\\circ$; reject it otherwise."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a negative value of $\\cos A$ means there is no such triangle or an error, e.g. $\\cos A = -0.3 \\Rightarrow$ \"impossible\".",
+    "correction": "For angles between $90^\\circ$ and $180^\\circ$, cosine is negative. $\\cos A = -0.3$ gives $A = \\cos^{-1}(-0.3) \\approx 107.5^\\circ$, an obtuse angle. This happens when $a$ is the longest side and $a^2 > b^2 + c^2$."
+   }
+  ]
+ },
+ {
+  "id": "geo-area-triangle-sine",
+  "prerequisites": [
+   "geo-trig-right-angled",
+   "geo-perimeter-area",
+   "geo-arcs-sectors"
+  ],
+  "keyIdea": "For any triangle with two sides $a$ and $b$ and the **included angle** $C$ (the angle between them):\n$$\\text{Area} = \\frac{1}{2}ab\\sin C$$\n\nIt reduces to $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$ because $b\\sin C$ is the perpendicular height.\n\n* **Reverse problems:** rearrange to $\\sin C = \\dfrac{2 \\times \\text{Area}}{ab}$. Since $\\sin C = \\sin(180^\\circ - C)$, there may be an acute and an obtuse answer.\n* **Segment of a circle** (radius $r$, angle $\\theta$ at the centre):\n$$\\text{segment} = \\text{sector} - \\text{triangle} = \\frac{\\theta}{360}\\pi r^2 - \\frac{1}{2}r^2\\sin\\theta$$\n(in radians: $\\frac{1}{2}r^2(\\theta - \\sin\\theta)$).\n* If the included angle is not given, find it first with the cosine rule (SSS) or sine rule.",
+  "workedExamples": [
+   {
+    "question": "A triangle has sides 8 cm and 11 cm with an angle of $52^\\circ$ between them. Find its area to 3 significant figures.",
+    "solution": "The $52^\\circ$ angle is included between the two sides:\n$$\\text{Area} = \\frac{1}{2} \\times 8 \\times 11 \\times \\sin 52^\\circ$$\n\n$$= 44 \\sin 52^\\circ = 34.67\\ldots$$\n\n$$\\text{Area} \\approx 34.7 \\text{ cm}^2$$"
+   },
+   {
+    "question": "A chord of a circle of radius 6 cm subtends an angle of $70^\\circ$ at the centre. Find the area of the minor segment, to 3 significant figures.",
+    "solution": "Sector area:\n$$\\frac{70}{360} \\times \\pi \\times 6^2 = 7\\pi = 21.991\\ldots \\text{ cm}^2$$\n\nTriangle (two radii with included angle $70^\\circ$):\n$$\\frac{1}{2} \\times 6 \\times 6 \\times \\sin 70^\\circ = 18\\sin 70^\\circ = 16.914\\ldots \\text{ cm}^2$$\n\nSegment:\n$$21.991\\ldots - 16.914\\ldots = 5.0766\\ldots \\approx 5.08 \\text{ cm}^2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses an angle that is not between the two given sides, e.g. sides $AB$ and $AC$ with angle $B$: Area $= \\frac{1}{2} \\times AB \\times AC \\times \\sin B$.",
+    "correction": "The angle must be **included**, formed where the two sides meet. Sides $AB$ and $AC$ meet at $A$, so use $\\sin A$. If only another angle is known, find the included angle first (angle sum or sine rule)."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the $\\frac{1}{2}$, e.g. Area $= 8 \\times 11 \\times \\sin 52^\\circ \\approx 69.3 \\text{ cm}^2$.",
+    "correction": "The formula comes from $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$, so the half stays: $\\frac{1}{2} \\times 8 \\times 11 \\times \\sin 52^\\circ \\approx 34.7 \\text{ cm}^2$."
+   },
+   {
+    "id": "m3",
+    "text": "In a reverse problem gives only the acute angle, e.g. area $20 \\text{ cm}^2$ with sides 8 cm and 10 cm: $\\sin C = 0.5 \\Rightarrow C = 30^\\circ$ only.",
+    "correction": "$\\sin C = \\frac{2 \\times 20}{8 \\times 10} = 0.5$ gives $C = 30^\\circ$ **or** $C = 150^\\circ$; both triangles have area $20 \\text{ cm}^2$. Use any extra information (e.g. \"obtuse\") to choose."
+   },
+   {
+    "id": "m4",
+    "text": "When finding a segment, treats the triangle in the sector as right-angled, e.g. triangle area $= \\frac{1}{2} \\times 6 \\times 6 = 18$, so segment $= 7\\pi - 18 \\approx 3.99 \\text{ cm}^2$.",
+    "correction": "The angle between the radii is $70^\\circ$, not $90^\\circ$, so the triangle is $\\frac{1}{2} \\times 6 \\times 6 \\times \\sin 70^\\circ \\approx 16.91$ and the segment is $7\\pi - 16.91 \\approx 5.08 \\text{ cm}^2$."
+   }
+  ]
+ },
+ {
+  "id": "geo-bearings",
+  "prerequisites": [
+   "geo-angle-facts",
+   "geo-parallel-lines-angles",
+   "rat-scale-drawings-maps"
+  ],
+  "keyIdea": "A **bearing** is an angle measured **clockwise from north**, written with **three figures**: $045^\\circ$, $160^\\circ$, $270^\\circ$. North $= 000^\\circ$, east $= 090^\\circ$, south $= 180^\\circ$, west $= 270^\\circ$.\n\n\"The bearing of $B$ **from** $A$\": stand at $A$, draw a north line at $A$, turn clockwise until you face $B$.\n\n**Back bearing** (bearing of $A$ from $B$): add $180^\\circ$ if the bearing is less than $180^\\circ$; subtract $180^\\circ$ if it is $180^\\circ$ or more. This works because north lines are parallel, so co-interior angles add to $180^\\circ$.\n\n**Scale drawings:** draw north lines, measure angles with a protractor, convert lengths using the scale.\n\n**With trigonometry:** if two legs of a journey are at right angles use Pythagoras and SOH CAH TOA; otherwise use the sine or cosine rule.",
+  "workedExamples": [
+   {
+    "question": "The bearing of $B$ from $A$ is $070^\\circ$. Find the bearing of $A$ from $B$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><line x1=\"80\" y1=\"210\" x2=\"80\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M74 72 L80 60 L86 72\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><text x=\"74\" y=\"52\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">N</text><line x1=\"268\" y1=\"142\" x2=\"268\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M262 42 L268 30 L274 42\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><text x=\"262\" y=\"22\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">N</text><line x1=\"80\" y1=\"210\" x2=\"268\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M80 170 A40 40 0 0 1 117.6 196.3\" stroke=\"currentColor\" fill=\"none\"/><text x=\"96\" y=\"160\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">70°</text><text x=\"62\" y=\"226\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"276\" y=\"150\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text></svg>",
+    "solution": "The north lines at $A$ and $B$ are parallel. The angle at $B$ between the north line and $BA$ (between the parallel lines) is co-interior with the $70^\\circ$ at $A$:\n$$\\angle = 180^\\circ - 70^\\circ = 110^\\circ$$\n\nThis $110^\\circ$ is measured **anticlockwise** from north at $B$ to $A$. The clockwise angle is therefore\n$$360^\\circ - 110^\\circ = 250^\\circ$$\n\nShortcut: the direction from $B$ to $A$ is exactly opposite, so $070^\\circ + 180^\\circ = 250^\\circ$.\n\nThe bearing of $A$ from $B$ is $250^\\circ$."
+   },
+   {
+    "question": "A ship sails 12 km on a bearing of $090^\\circ$, then 5 km on a bearing of $180^\\circ$. Find its distance and bearing from its starting point, giving the bearing to the nearest degree.",
+    "solution": "East then south gives a right angle at the turning point.\n\nDistance (Pythagoras):\n$$d = \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13 \\text{ km}$$\n\nAngle below the east direction at the start:\n$$\\theta = \\tan^{-1}\\left(\\frac{5}{12}\\right) = 22.6^\\circ$$\n\nBearing (clockwise from north: $90^\\circ$ to east, then $22.6^\\circ$ more):\n$$090^\\circ + 22.6^\\circ = 112.6^\\circ \\approx 113^\\circ$$\n\nThe ship is 13 km from the start on a bearing of $113^\\circ$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Measures anticlockwise from north (or from east), e.g. $B$ is $30^\\circ$ east of north from $A$ and the bearing is given as $330^\\circ$ (or $060^\\circ$ measured from east).",
+    "correction": "Bearings always start at **north** and turn **clockwise**. $30^\\circ$ east of north is $030^\\circ$; $330^\\circ$ would be $30^\\circ$ west of north."
+   },
+   {
+    "id": "m2",
+    "text": "Does not use three figures, e.g. writes a bearing of $45^\\circ$ or $7^\\circ$.",
+    "correction": "Bearings are always written with three digits: $045^\\circ$, $007^\\circ$. This avoids confusion in navigation."
+   },
+   {
+    "id": "m3",
+    "text": "Measures at the wrong point: for \"the bearing of $A$ from $B$\" draws the north line at $A$ and gives the bearing of $B$ from $A$ instead.",
+    "correction": "The point after \"from\" is where you stand and draw the north line. Bearing of $A$ from $B$: north line at $B$, turn clockwise to face $A$. If the bearing of $B$ from $A$ is $070^\\circ$, the bearing of $A$ from $B$ is $250^\\circ$."
+   },
+   {
+    "id": "m4",
+    "text": "Always adds $180^\\circ$ for a back bearing, e.g. bearing $250^\\circ$ gives a back bearing of $250^\\circ + 180^\\circ = 430^\\circ$.",
+    "correction": "A bearing must be less than $360^\\circ$. If the bearing is $180^\\circ$ or more, subtract $180^\\circ$: $250^\\circ - 180^\\circ = 070^\\circ$."
+   }
+  ]
+ },
+ {
+  "id": "geo-circle-theorems",
+  "prerequisites": [
+   "geo-angle-facts",
+   "geo-parallel-lines-angles",
+   "geo-polygon-angles",
+   "geo-shape-properties",
+   "geo-congruence"
+  ],
+  "keyIdea": "Learn each theorem **with its reason wording**:\n\n1. The angle at the centre is **twice** the angle at the circumference (same arc). US: an inscribed angle is half its intercepted arc.\n2. The angle in a semicircle is $90^\\circ$.\n3. Angles in the same segment are equal.\n4. Opposite angles of a cyclic quadrilateral add to $180^\\circ$.\n5. A tangent is perpendicular to the radius at the point of contact.\n6. Two tangents from an external point are equal in length.\n7. The perpendicular from the centre to a chord bisects the chord.\n8. **Alternate segment theorem:** the angle between a tangent and a chord equals the angle in the alternate segment.\n\nTwo radii form an **isosceles triangle**, so mark radii equal straight away. Proofs: join the centre to the point on the circumference to split into isosceles triangles.",
+  "workedExamples": [
+   {
+    "question": "$A$, $B$ and $C$ lie on a circle with centre $O$. Angle $AOB = 110^\\circ$. Find angle $ACB = x$ and angle $OAB$, giving reasons.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><circle cx=\"180\" cy=\"150\" r=\"110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M89.9 213.1 L180 150 L270.1 213.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M89.9 213.1 L180 40 L270.1 213.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"150\" r=\"2.5\" fill=\"currentColor\"/><text x=\"176\" y=\"140\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">O</text><text x=\"74\" y=\"228\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"274\" y=\"228\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text><text x=\"175\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">C</text><text x=\"164\" y=\"184\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">110°</text><text x=\"175\" y=\"80\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">x</text></svg>",
+    "solution": "$\\angle AOB$ (at the centre) and $\\angle ACB$ (at the circumference) stand on the same arc $AB$:\n$$x = 110^\\circ \\div 2 = 55^\\circ$$\n(the angle at the centre is twice the angle at the circumference).\n\n$OA = OB$ (radii), so triangle $OAB$ is isosceles:\n$$\\angle OAB = \\frac{180^\\circ - 110^\\circ}{2} = 35^\\circ$$\n(base angles of an isosceles triangle are equal; angles in a triangle add to $180^\\circ$)."
+   },
+   {
+    "question": "$PA$ and $PB$ are tangents to a circle with centre $O$, touching it at $A$ and $B$. Angle $APB = 50^\\circ$. $C$ is a point on the major arc $AB$. Find angle $AOB$ and angle $ACB$, giving reasons.",
+    "solution": "$\\angle OAP = \\angle OBP = 90^\\circ$ (a tangent is perpendicular to the radius).\n\nAngles in quadrilateral $OAPB$ add to $360^\\circ$:\n$$\\angle AOB = 360^\\circ - 90^\\circ - 90^\\circ - 50^\\circ = 130^\\circ$$\n\n$C$ is on the major arc, so $\\angle ACB$ stands on the minor arc $AB$, the same arc as $\\angle AOB$:\n$$\\angle ACB = 130^\\circ \\div 2 = 65^\\circ$$\n(the angle at the centre is twice the angle at the circumference)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Doubles instead of halving (or vice versa), e.g. angle at the centre $110^\\circ$ so angle at the circumference $= 220^\\circ$.",
+    "correction": "The angle at the **centre** is the bigger one: centre $= 2 \\times$ circumference. So the angle at the circumference is $110^\\circ \\div 2 = 55^\\circ$."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the cyclic quadrilateral rule to a quadrilateral with a vertex at the centre, e.g. in $OACB$ writes $\\angle AOB + \\angle ACB = 180^\\circ$.",
+    "correction": "A cyclic quadrilateral needs **all four vertices on the circle**; $O$ is not on the circle. Use \"angle at the centre is twice the angle at the circumference\" instead."
+   },
+   {
+    "id": "m3",
+    "text": "Assumes an angle is $90^\\circ$ \"because it is in a semicircle\" when the chord it stands on does not pass through the centre.",
+    "correction": "The angle in a semicircle theorem needs the chord to be a **diameter** (through $O$). For any other chord use the angle-at-the-centre or same-segment theorems."
+   },
+   {
+    "id": "m4",
+    "text": "With the alternate segment theorem, equates the tangent–chord angle with an angle on the same side of the chord (in the wrong segment), e.g. sets it equal to the angle adjacent to it.",
+    "correction": "The equal angle is in the **alternate** (opposite) segment: the angle between tangent and chord $AB$ equals the angle subtended by $AB$ at a point on the arc on the **other** side of the chord from that angle."
+   }
+  ]
+ },
+ {
+  "id": "geo-vectors",
+  "prerequisites": [
+   "geo-transformations",
+   "alg-notation-simplifying",
+   "geo-pythagoras",
+   "rat-ratio-basics"
+  ],
+  "keyIdea": "A **vector** has magnitude and direction. Column vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$: $x$ right, $y$ up.\n\n* Add/subtract component by component; $k\\mathbf{a}$ multiplies each component; $-\\mathbf{a}$ reverses direction.\n* **Magnitude:** $\\left|\\begin{pmatrix} x \\\\ y \\end{pmatrix}\\right| = \\sqrt{x^2 + y^2}$.\n* **Routes:** with position vectors $\\overrightarrow{OA} = \\mathbf{a}$, $\\overrightarrow{OB} = \\mathbf{b}$:\n$$\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$$\n* **Ratios:** if $AP : PB = m : n$, then $\\overrightarrow{AP} = \\frac{m}{m+n}\\overrightarrow{AB}$.\n* **Parallel:** one vector is a scalar multiple of the other.\n* **Collinear:** $\\overrightarrow{AB} = k\\overrightarrow{BC}$ (parallel **and** sharing point $B$).\n\nIn proofs, write each vector in terms of $\\mathbf{a}$ and $\\mathbf{b}$, simplify, then state the conclusion.",
+  "workedExamples": [
+   {
+    "question": "$\\mathbf{a} = \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix}$ and $\\mathbf{b} = \\begin{pmatrix} -2 \\\\ 4 \\end{pmatrix}$. Find (a) $2\\mathbf{a} - 3\\mathbf{b}$, (b) $|\\mathbf{a} + \\mathbf{b}|$.",
+    "solution": "**(a)**\n$$2\\mathbf{a} = \\begin{pmatrix} 6 \\\\ -2 \\end{pmatrix}, \\qquad 3\\mathbf{b} = \\begin{pmatrix} -6 \\\\ 12 \\end{pmatrix}$$\n\n$$2\\mathbf{a} - 3\\mathbf{b} = \\begin{pmatrix} 6 - (-6) \\\\ -2 - 12 \\end{pmatrix} = \\begin{pmatrix} 12 \\\\ -14 \\end{pmatrix}$$\n\n**(b)**\n$$\\mathbf{a} + \\mathbf{b} = \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}, \\qquad |\\mathbf{a} + \\mathbf{b}| = \\sqrt{1^2 + 3^2} = \\sqrt{10}$$"
+   },
+   {
+    "question": "$\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$. $P$ lies on $AB$ with $AP : PB = 1 : 2$. $Q$ is the point with $\\overrightarrow{OQ} = 2\\mathbf{a} + \\mathbf{b}$. Show that $O$, $P$ and $Q$ lie on a straight line.",
+    "solution": "$$\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$$\n\n$AP$ is $\\frac{1}{1+2} = \\frac{1}{3}$ of $AB$:\n$$\\overrightarrow{AP} = \\frac{1}{3}(\\mathbf{b} - \\mathbf{a})$$\n\n$$\\overrightarrow{OP} = \\mathbf{a} + \\frac{1}{3}(\\mathbf{b} - \\mathbf{a}) = \\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b} = \\frac{1}{3}(2\\mathbf{a} + \\mathbf{b})$$\n\nSo $\\overrightarrow{OQ} = 2\\mathbf{a} + \\mathbf{b} = 3\\overrightarrow{OP}$.\n\n$\\overrightarrow{OQ}$ is a multiple of $\\overrightarrow{OP}$, so they are parallel, and they share the point $O$. Hence $O$, $P$ and $Q$ are collinear."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Writes $\\overrightarrow{AB} = \\mathbf{a} - \\mathbf{b}$ (start minus end) when $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$.",
+    "correction": "Follow a route from $A$ to $B$: back along $\\mathbf{a}$ to $O$, then along $\\mathbf{b}$: $\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$ (\"end minus start\")."
+   },
+   {
+    "id": "m2",
+    "text": "Finds magnitude by adding components, e.g. $\\left|\\begin{pmatrix} 3 \\\\ 4 \\end{pmatrix}\\right| = 3 + 4 = 7$, or $\\left|\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}\\right| = \\sqrt{3^2 - 4^2}$.",
+    "correction": "Magnitude is the hypotenuse of a right-angled triangle, so square both components (squares are never negative) and add: $\\sqrt{3^2 + 4^2} = \\sqrt{25} = 5$, and $\\left|\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix}\\right| = 5$ too."
+   },
+   {
+    "id": "m3",
+    "text": "Turns a ratio into the wrong fraction, e.g. $AP : PB = 1 : 2$ so $\\overrightarrow{AP} = \\frac{1}{2}\\overrightarrow{AB}$.",
+    "correction": "The ratio $1 : 2$ splits $AB$ into $1 + 2 = 3$ equal parts, and $AP$ is one of them: $\\overrightarrow{AP} = \\frac{1}{3}\\overrightarrow{AB}$."
+   },
+   {
+    "id": "m4",
+    "text": "Concludes points are collinear just because two vectors are parallel, e.g. \"$\\overrightarrow{AB} = 2\\overrightarrow{CD}$, so $A$, $B$, $C$, $D$ lie on a straight line\".",
+    "correction": "Parallel vectors can lie on different parallel lines. For collinearity the vectors must be parallel **and share a point**, e.g. $\\overrightarrow{AB} = k\\overrightarrow{BC}$ (common point $B$)."
+   }
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals",
+  "prerequisites": [
+   "geo-angle-facts",
+   "geo-shape-properties"
+  ],
+  "keyIdea": "A **conditional** $p \\to q$ reads \"If $p$, then $q$\": $p$ is the hypothesis, $q$ the conclusion. It is false only when $p$ is true and $q$ is false, so **one counterexample** disproves it.\n\n| Statement | Form |\n|---|---|\n| Converse | $q \\to p$ |\n| Inverse | $\\sim p \\to \\sim q$ |\n| Contrapositive | $\\sim q \\to \\sim p$ |\n\nA conditional and its **contrapositive** always have the same truth value; so do the converse and inverse.\n\nA **biconditional** $p \\leftrightarrow q$ (\"$p$ if and only if $q$\") is true when the conditional and its converse are both true. Good definitions are biconditionals.\n\n**Inductive reasoning** spots a pattern and makes a conjecture (which may be false). **Deductive reasoning** proves: Law of Detachment ($p \\to q$ and $p$, so $q$); Law of Syllogism ($p \\to q$ and $q \\to r$, so $p \\to r$).",
+  "workedExamples": [
+   {
+    "question": "For the true statement \"If an angle measures $30^\\circ$, then it is acute,\" write the converse, inverse and contrapositive, and decide whether each is true. Give a counterexample for any that are false.",
+    "solution": "$p$: the angle measures $30^\\circ$. $q$: the angle is acute.\n\n**Converse** ($q \\to p$): If an angle is acute, then it measures $30^\\circ$. **False**: a $50^\\circ$ angle is acute but does not measure $30^\\circ$.\n\n**Inverse** ($\\sim p \\to \\sim q$): If an angle does not measure $30^\\circ$, then it is not acute. **False**: $50^\\circ$ again.\n\n**Contrapositive** ($\\sim q \\to \\sim p$): If an angle is not acute, then it does not measure $30^\\circ$. **True**, as it must be, since the original statement is true."
+   },
+   {
+    "question": "Given: \"If a figure is a square, then it is a rectangle.\" \"If a figure is a rectangle, then its diagonals are congruent.\" \"$ABCD$ is a square.\" What can you conclude? Name the laws of logic used.",
+    "solution": "Law of Syllogism: from \"square $\\to$ rectangle\" and \"rectangle $\\to$ congruent diagonals\" we get \"If a figure is a square, then its diagonals are congruent.\"\n\nLaw of Detachment: the hypothesis \"$ABCD$ is a square\" is true, so the conclusion follows:\n\nThe diagonals of $ABCD$ are congruent."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Assumes the converse of a true conditional is true, e.g. \"If two angles are vertical angles, then they are congruent\" so \"If two angles are congruent, then they are vertical angles.\"",
+    "correction": "A conditional and its converse are independent. Two base angles of an isosceles triangle are congruent but are not vertical angles, so this converse is false. Always test the converse separately."
+   },
+   {
+    "id": "m2",
+    "text": "Confuses the inverse and contrapositive, e.g. writes the contrapositive of \"If $p$, then $q$\" as \"If not $p$, then not $q$.\"",
+    "correction": "The contrapositive both **swaps and negates**: \"If not $q$, then not $p$.\" Negating without swapping gives the inverse, which need not have the same truth value as the original."
+   },
+   {
+    "id": "m3",
+    "text": "Treats several confirming examples as a proof, e.g. $n^2 + n + 41$ is prime for $n = 1, 2, 3, 4, 5$, so it is prime for every positive integer $n$.",
+    "correction": "That is inductive reasoning: it gives a conjecture, not a proof. A single counterexample disproves it: $n = 40$ gives $40^2 + 40 + 41 = 1681 = 41^2$, which is not prime."
+   },
+   {
+    "id": "m4",
+    "text": "Reasons backwards from the conclusion (affirming the conclusion), e.g. \"If a figure is a square, then it has four right angles. $ABCD$ has four right angles, so $ABCD$ is a square.\"",
+    "correction": "The Law of Detachment needs the **hypothesis** to be true, not the conclusion. A $3 \\times 5$ rectangle has four right angles but is not a square, so no conclusion can be drawn."
+   }
+  ]
+ },
+ {
+  "id": "geo-two-column-proofs",
+  "prerequisites": [
+   "geo-logic-conditionals",
+   "alg-linear-equations",
+   "geo-congruence",
+   "geo-parallel-lines-angles"
+  ],
+  "keyIdea": "A **two-column proof** lists **Statements** on the left and **Reasons** on the right. Start with the Given, end with the Prove statement, and justify every line.\n\nValid reasons: Given; definitions (midpoint, angle bisector, perpendicular, congruent); postulates (Segment Addition, Angle Addition); theorems (Vertical Angles, Linear Pair, Alternate Interior Angles); and properties of equality: Addition, Subtraction, Multiplication, Division, Distributive, Substitution, **Reflexive** ($AB = AB$), **Symmetric** (if $a = b$ then $b = a$), **Transitive** (if $a = b$ and $b = c$ then $a = c$).\n\nTriangle congruence: SSS, SAS, ASA, AAS, HL (never SSA or AAA). After the triangles are proved congruent, use **CPCTC** (Corresponding Parts of Congruent Triangles are Congruent) to get matching sides or angles.\n\nTip: mark the diagram with the Given information first, and only use facts that are given or proved, not what \"looks\" true.",
+  "workedExamples": [
+   {
+    "question": "Given: $3(x - 2) = 2x + 4$. Prove: $x = 10$. Write a two-column proof.",
+    "solution": "| Statements | Reasons |\n|---|---|\n| 1. $3(x - 2) = 2x + 4$ | Given |\n| 2. $3x - 6 = 2x + 4$ | Distributive Property |\n| 3. $x - 6 = 4$ | Subtraction Property of Equality (subtract $2x$) |\n| 4. $x = 10$ | Addition Property of Equality (add 6) |"
+   },
+   {
+    "question": "Segments $\\overline{AE}$ and $\\overline{BD}$ intersect at $M$. Given: $M$ is the midpoint of $\\overline{AE}$ and of $\\overline{BD}$. Prove: $\\overline{AB} \\cong \\overline{ED}$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"60\" y1=\"60\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"240\" x2=\"300\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"42\" y=\"56\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"42\" y=\"254\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text><text x=\"306\" y=\"56\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">D</text><text x=\"306\" y=\"254\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">E</text><text x=\"174\" y=\"132\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">M</text></svg>",
+    "solution": "| Statements | Reasons |\n|---|---|\n| 1. $M$ is the midpoint of $\\overline{AE}$ and $\\overline{BD}$ | Given |\n| 2. $\\overline{AM} \\cong \\overline{EM}$, $\\overline{BM} \\cong \\overline{DM}$ | Definition of midpoint |\n| 3. $\\angle AMB \\cong \\angle EMD$ | Vertical Angles Theorem |\n| 4. $\\triangle AMB \\cong \\triangle EMD$ | SAS |\n| 5. $\\overline{AB} \\cong \\overline{ED}$ | CPCTC |\n\nThe angle in step 3 lies between the two pairs of sides in step 2, so it is the included angle and SAS applies."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses CPCTC before the triangles have been proved congruent, e.g. writes \"$\\angle A \\cong \\angle E$, CPCTC\" and then uses that angle to prove $\\triangle AMB \\cong \\triangle EMD$.",
+    "correction": "CPCTC can only be used **after** a line stating the triangles are congruent (by SSS, SAS, ASA, AAS or HL). Prove congruence from given facts and theorems first; CPCTC comes afterwards."
+   },
+   {
+    "id": "m2",
+    "text": "Claims congruence by SSA (two sides and a non-included angle) or AAA.",
+    "correction": "SSA and AAA are not congruence tests: two different triangles can share SSA, and AAA only gives similar triangles. For SAS, the angle must be **between** the two sides; for right triangles HL is the special exception."
+   },
+   {
+    "id": "m3",
+    "text": "Uses facts that only look true from the diagram, e.g. states \"$\\overline{AC} \\perp \\overline{BD}$\" or \"$M$ is the midpoint\" with the reason \"Given\" or \"from the diagram\" when it was not given.",
+    "correction": "Diagrams are not drawn to prove anything. A statement can be justified only by the Given, a definition, a postulate or a theorem. Mark only the given information on the diagram before starting."
+   },
+   {
+    "id": "m4",
+    "text": "Misnames the properties of equality or congruence, e.g. gives \"Reflexive Property\" for \"$\\overline{AB} \\cong \\overline{CD}$ and $\\overline{CD} \\cong \\overline{EF}$, so $\\overline{AB} \\cong \\overline{EF}$\", or \"Reflexive\" for $a = b \\Rightarrow b = a$.",
+    "correction": "Reflexive: a thing equals itself ($\\overline{AC} \\cong \\overline{AC}$, a shared side). Symmetric: if $a = b$ then $b = a$. Transitive: if $a = b$ and $b = c$ then $a = c$. The first example is the Transitive Property."
+   }
+  ]
+ },
+ {
+  "id": "geo-triangle-centers",
+  "prerequisites": [
+   "geo-constructions-loci",
+   "geo-congruence",
+   "geo-similarity",
+   "alg-linear-inequalities"
+  ],
+  "keyIdea": "**Bisector theorems:** points on a segment's perpendicular bisector are equidistant from its endpoints; points on an angle bisector are equidistant from the angle's sides.\n\n| Lines that meet (concurrent) | Point of concurrency | Key property |\n|---|---|---|\n| Perpendicular bisectors | Circumcenter | Equidistant from the **vertices** (center of circumscribed circle) |\n| Angle bisectors | Incenter | Equidistant from the **sides** (center of inscribed circle) |\n| Medians | Centroid | $\\frac{2}{3}$ of each median from the vertex |\n| Altitudes | Orthocenter | |\n\nThe circumcenter lies outside an obtuse triangle and at the hypotenuse's midpoint in a right triangle.\n\n**Midsegment** (joins two midpoints): parallel to the third side, **half** its length.\n\n**Triangle inequality:** any two sides sum to more than the third, so $|a - b| < x < a + b$.",
+  "workedExamples": [
+   {
+    "question": "(a) $G$ is the centroid of $\\triangle ABC$ and median $\\overline{AD}$ has length 18. Find $AG$ and $GD$. (b) Find the centroid of the triangle with vertices $(0, 0)$, $(6, 0)$ and $(3, 9)$.",
+    "solution": "**(a)** The centroid is $\\frac{2}{3}$ of the way along each median from the vertex:\n$$AG = \\frac{2}{3} \\times 18 = 12, \\qquad GD = 18 - 12 = 6$$\n(So $AG = 2 \\cdot GD$.)\n\n**(b)** The centroid is the mean of the vertices:\n$$\\left(\\frac{0 + 6 + 3}{3}, \\frac{0 + 0 + 9}{3}\\right) = (3, 3)$$"
+   },
+   {
+    "question": "(a) Two sides of a triangle measure 7 in. and 12 in. Find the possible lengths of the third side. (b) In $\\triangle ABC$, $\\overline{DE}$ is a midsegment parallel to $\\overline{BC}$ with $DE = 2x - 1$ and $BC = 3x + 4$. Find $x$, $DE$ and $BC$.",
+    "solution": "**(a)** The third side $x$ must satisfy $12 - 7 < x < 12 + 7$:\n$$5 \\text{ in.} < x < 19 \\text{ in.}$$\n\n**(b)** A midsegment is half the third side, so $BC = 2 \\cdot DE$:\n$$3x + 4 = 2(2x - 1)$$\n\n$$3x + 4 = 4x - 2$$\n\n$$x = 6$$\n\n$DE = 2(6) - 1 = 11$ and $BC = 3(6) + 4 = 22$. Check: $22 = 2 \\times 11$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Mixes up the centers, e.g. says the centroid is equidistant from the vertices, or that the incenter is where the perpendicular bisectors meet.",
+    "correction": "Match each center to its lines: perpendicular bisectors $\\to$ circumcenter (equidistant from vertices); angle bisectors $\\to$ incenter (equidistant from sides); medians $\\to$ centroid (balance point, 2 : 1 split); altitudes $\\to$ orthocenter."
+   },
+   {
+    "id": "m2",
+    "text": "Splits a median at the centroid into halves, or puts the $\\frac{2}{3}$ on the wrong piece, e.g. median 18 so $GD = 12$ and $AG = 6$.",
+    "correction": "The longer piece is next to the vertex: $AG = \\frac{2}{3} \\times 18 = 12$ and the piece to the midpoint is $GD = \\frac{1}{3} \\times 18 = 6$, so $AG : GD = 2 : 1$."
+   },
+   {
+    "id": "m3",
+    "text": "Allows equality or checks only one pair in the triangle inequality, e.g. says 3, 4, 7 form a triangle because $3 + 4 = 7$, or 2, 3, 10 form a triangle because $10 + 3 > 2$.",
+    "correction": "The inequality is strict and the key check is the **two shortest** sides against the longest: $3 + 4 = 7$ is not greater than 7 (the \"triangle\" is flat), and $2 + 3 = 5 < 10$, so neither set forms a triangle."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the wrong relationship for a midsegment, e.g. sets the midsegment equal to the third side ($2x - 1 = 3x + 4$) or twice it ($DE = 2 \\cdot BC$).",
+    "correction": "The midsegment is **half** the parallel side: $DE = \\frac{1}{2}BC$, i.e. $BC = 2 \\cdot DE$. With $DE = 2x - 1$ and $BC = 3x + 4$: $3x + 4 = 2(2x - 1)$, so $x = 6$."
+   }
+  ]
+ },
+ {
+  "id": "geo-coordinate-proofs",
+  "prerequisites": [
+   "alg-coordinates-midpoint-distance",
+   "alg-perpendicular-lines",
+   "geo-shape-properties",
+   "rat-ratio-sharing"
+  ],
+  "keyIdea": "Use three tools on the coordinate plane:\n\n* **Slope** $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$: parallel lines have equal slopes; perpendicular slopes are opposite reciprocals (product $-1$).\n* **Distance** $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$: congruent segments, perimeter.\n* **Midpoint** $\\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$: diagonals bisecting each other.\n\n**Classifying:** parallelogram (opposite sides parallel); rectangle (parallelogram + right angle); rhombus (four congruent sides); square (rhombus + right angle); trapezoid (exactly one pair of parallel sides); right triangle (perpendicular slopes).\n\n**Partitioning** $\\overline{AB}$ in the ratio $m : n$ from $A$: $P = A + \\dfrac{m}{m+n}(B - A)$, applied to $x$ and $y$ separately.\n\n**Area:** base $\\times$ height, or enclose in a rectangle and subtract corner triangles. For general proofs use convenient coordinates like $(0, 0)$, $(a, 0)$; end with a concluding sentence.",
+  "workedExamples": [
+   {
+    "question": "Quadrilateral $ABCD$ has vertices $A(1, 2)$, $B(5, 4)$, $C(7, 0)$ and $D(3, -2)$. Prove that $ABCD$ is a square, and find its area.",
+    "solution": "**Slopes:**\n$$m_{AB} = \\frac{4 - 2}{5 - 1} = \\frac{1}{2}, \\quad m_{BC} = \\frac{0 - 4}{7 - 5} = -2, \\quad m_{CD} = \\frac{-2 - 0}{3 - 7} = \\frac{1}{2}, \\quad m_{DA} = \\frac{2 - (-2)}{1 - 3} = -2$$\n\n$AB \\parallel CD$ and $BC \\parallel DA$ (equal slopes), so $ABCD$ is a parallelogram. $\\frac{1}{2} \\times (-2) = -1$, so $\\overline{AB} \\perp \\overline{BC}$: it is a rectangle.\n\n**Lengths:**\n$$AB = \\sqrt{4^2 + 2^2} = \\sqrt{20}, \\qquad BC = \\sqrt{2^2 + (-4)^2} = \\sqrt{20}$$\n\nA rectangle with two consecutive sides congruent has all four sides congruent, so $ABCD$ is a square.\n\n**Area:** $(\\sqrt{20})^2 = 20$ square units."
+   },
+   {
+    "question": "Find the point $P$ on the directed segment from $A(-2, 1)$ to $B(10, 7)$ that partitions it in the ratio $1 : 2$.",
+    "solution": "$AP : PB = 1 : 2$, so $P$ is $\\frac{1}{1 + 2} = \\frac{1}{3}$ of the way from $A$ to $B$.\n\nChange from $A$ to $B$: $\\Delta x = 10 - (-2) = 12$, $\\Delta y = 7 - 1 = 6$.\n\n$$x = -2 + \\frac{1}{3}(12) = 2, \\qquad y = 1 + \\frac{1}{3}(6) = 3$$\n\n$P = (2, 3)$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $\\frac{m}{n}$ instead of $\\frac{m}{m+n}$ when partitioning, e.g. ratio $1 : 2$ so $P$ is $\\frac{1}{2}$ of the way from $A$ (the midpoint).",
+    "correction": "A $1 : 2$ ratio splits the segment into $1 + 2 = 3$ equal parts, so $P$ is $\\frac{1}{3}$ of the way from $A$: from $A(-2, 1)$ to $B(10, 7)$ this gives $(2, 3)$, not the midpoint $(4, 4)$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks perpendicular slopes are just negatives (or just reciprocals), e.g. says a line with slope $\\frac{1}{2}$ is perpendicular to one with slope $-\\frac{1}{2}$.",
+    "correction": "Perpendicular slopes are **opposite reciprocals**: flip and change sign, so $\\frac{1}{2}$ pairs with $-2$. Check: $\\frac{1}{2} \\times (-2) = -1$, whereas $\\frac{1}{2} \\times \\left(-\\frac{1}{2}\\right) = -\\frac{1}{4}$."
+   },
+   {
+    "id": "m3",
+    "text": "Concludes a quadrilateral is a square because all four sides are congruent (or a rectangle because opposite sides are parallel).",
+    "correction": "Four congruent sides only proves a **rhombus**; you also need a right angle (perpendicular slopes) or congruent diagonals for a square. Two pairs of parallel sides only proves a parallelogram."
+   },
+   {
+    "id": "m4",
+    "text": "Computes slope as run over rise, or subtracts coordinates in inconsistent orders, e.g. $m = \\frac{4 - 2}{1 - 5} = -\\frac{1}{2}$ for $A(1, 2)$ and $B(5, 4)$.",
+    "correction": "Slope is rise over run with both subtractions in the **same** order: $m = \\frac{4 - 2}{5 - 1} = \\frac{1}{2}$ (or $\\frac{2 - 4}{1 - 5} = \\frac{1}{2}$). Check with the picture: $A$ to $B$ goes up and right, so the slope is positive."
+   }
+  ]
+ }
+]

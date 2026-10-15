@@ -1,0 +1,703 @@
+[
+ {
+  "id": "calc-integration-basics",
+  "prerequisites": [
+   "calc-differentiation-basics",
+   "num-negative-fractional-indices"
+  ],
+  "keyIdea": "Integration reverses differentiation (US: finding an antiderivative). If $\\frac{dy}{dx} = f(x)$ then $y = \\int f(x)\\,dx$.\n\n**Power rule:** $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1} + c$ for $n \\ne -1$: add one to the power, then divide by the new power. Integrate term by term, and constant multiples stay in front: $\\int (6x^2 + 4)\\,dx = 2x^3 + 4x + c$.\n\n**Always add $+c$:** differentiating removes constants, so $x^2$, $x^2 + 5$ and $x^2 - 3$ all have derivative $2x$.\n\n**Rewrite first:** roots and fractions become powers ($\\sqrt{x} = x^{\\frac{1}{2}}$, $\\frac{3}{x^2} = 3x^{-2}$); expand brackets and split fractions before integrating, because there is no product rule in reverse here.\n\n**Finding $f$ from $f'$ and a point:** integrate, then substitute the known point to find $c$.",
+  "workedExamples": [
+   {
+    "question": "Find $\\displaystyle\\int \\left(6x^2 - \\frac{4}{x^3} + 3\\sqrt{x}\\right)dx$.",
+    "solution": "Rewrite every term as a power of $x$:\n$$6x^2 - 4x^{-3} + 3x^{\\frac{1}{2}}$$\n\nAdd one to each power and divide by the new power:\n$$\\int 6x^2\\,dx = \\frac{6x^3}{3} = 2x^3, \\qquad \\int -4x^{-3}\\,dx = \\frac{-4x^{-2}}{-2} = 2x^{-2}, \\qquad \\int 3x^{\\frac{1}{2}}\\,dx = \\frac{3x^{\\frac{3}{2}}}{\\frac{3}{2}} = 2x^{\\frac{3}{2}}$$\n\nCombine and add the constant:\n$$\\int \\left(6x^2 - \\frac{4}{x^3} + 3\\sqrt{x}\\right)dx = 2x^3 + \\frac{2}{x^2} + 2x^{\\frac{3}{2}} + c$$"
+   },
+   {
+    "question": "A curve has $\\frac{dy}{dx} = (2x - 1)(x + 3)$ and passes through the point $(1, 5)$. Find the equation of the curve.",
+    "solution": "Expand first (you cannot integrate the brackets separately):\n$$\\frac{dy}{dx} = 2x^2 + 6x - x - 3 = 2x^2 + 5x - 3$$\n\nIntegrate term by term:\n$$y = \\frac{2}{3}x^3 + \\frac{5}{2}x^2 - 3x + c$$\n\nSubstitute $x = 1$, $y = 5$:\n$$5 = \\frac{2}{3} + \\frac{5}{2} - 3 + c = \\frac{1}{6} + c \\quad\\Rightarrow\\quad c = \\frac{29}{6}$$\n\nSo $y = \\frac{2}{3}x^3 + \\frac{5}{2}x^2 - 3x + \\frac{29}{6}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Leaves out the constant of integration, e.g. writes $\\int (3x^2 + 2)\\,dx = x^3 + 2x$, and then cannot use a given point to find the particular curve.",
+    "correction": "Every indefinite integral needs $+c$: $\\int (3x^2 + 2)\\,dx = x^3 + 2x + c$. The family of curves differs by vertical translations; a known point fixes the value of $c$."
+   },
+   {
+    "id": "m2",
+    "text": "Divides by the old power instead of the new one: $\\int x^4\\,dx = \\frac{x^5}{4} + c$ (or differentiates by mistake: $\\int x^4\\,dx = 4x^3$).",
+    "correction": "Raise the power by one, then divide by the **new** power: $\\int x^4\\,dx = \\frac{x^5}{5} + c$. Check by differentiating: $\\frac{d}{dx}\\left(\\frac{x^5}{5}\\right) = x^4$."
+   },
+   {
+    "id": "m3",
+    "text": "Integrates a product factor by factor: $\\int x(x^2 + 1)\\,dx = \\frac{x^2}{2}\\left(\\frac{x^3}{3} + x\\right) + c$.",
+    "correction": "There is no 'multiply the integrals' rule. Expand first: $\\int (x^3 + x)\\,dx = \\frac{x^4}{4} + \\frac{x^2}{2} + c$."
+   },
+   {
+    "id": "m4",
+    "text": "Integrates the denominator of a fraction: $\\int \\frac{1}{x^2}\\,dx = \\frac{1}{\\frac{x^3}{3}} + c = \\frac{3}{x^3} + c$.",
+    "correction": "Rewrite as a negative power before integrating: $\\int x^{-2}\\,dx = \\frac{x^{-1}}{-1} + c = -\\frac{1}{x} + c$."
+   }
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area",
+  "prerequisites": [
+   "calc-integration-basics",
+   "alg-gradient-area-under-graph",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "$$\\int_a^b f(x)\\,dx = \\Big[F(x)\\Big]_a^b = F(b) - F(a)$$\nwhere $F$ is any antiderivative ($c$ cancels). Write the bracket in full, especially with negative limits.\n\nThe definite integral is a **signed** area: regions above the $x$-axis count positive, regions below count negative. For the total area of a region that crosses the axis, find the roots, integrate each piece separately and add the sizes.\n\n**Area between curves:** $\\int_a^b (\\text{top} - \\text{bottom})\\,dx$, where $a$ and $b$ are usually the $x$-coordinates of the intersection points. This works wherever the curves sit relative to the axis.\n\n**Mean (US: average) value** of $f$ on $[a, b]$: $\\frac{1}{b - a}\\int_a^b f(x)\\,dx$.\n\nUseful rules: $\\int_b^a f\\,dx = -\\int_a^b f\\,dx$ and $\\int_a^b f\\,dx + \\int_b^c f\\,dx = \\int_a^c f\\,dx$.",
+  "workedExamples": [
+   {
+    "question": "Find the area of the region enclosed by the curve $y = x^2$ and the line $y = x + 2$.",
+    "solution": "Intersections: $x^2 = x + 2 \\Rightarrow x^2 - x - 2 = 0 \\Rightarrow (x - 2)(x + 1) = 0$, so $x = -1$ and $x = 2$.\n\nBetween these the line is on top (e.g. at $x = 0$: $2 > 0$), so\n$$\\text{Area} = \\int_{-1}^{2} \\left(x + 2 - x^2\\right)dx = \\left[\\frac{x^2}{2} + 2x - \\frac{x^3}{3}\\right]_{-1}^{2}$$\n\nEvaluate:\n$$\\left(2 + 4 - \\frac{8}{3}\\right) - \\left(\\frac{1}{2} - 2 + \\frac{1}{3}\\right) = \\frac{10}{3} - \\left(-\\frac{7}{6}\\right) = \\frac{27}{6} = \\frac{9}{2}$$\n\nArea $= \\frac{9}{2}$ square units."
+   },
+   {
+    "question": "Let $f(x) = x^2 - 3x$.\n\n(a) Find the total area between the curve $y = f(x)$, the $x$-axis and the lines $x = 0$ and $x = 4$.\n\n(b) Find the mean value of $f$ on $[0, 4]$.",
+    "solution": "(a) Roots: $x(x - 3) = 0$, so the curve crosses the axis at $x = 3$. It is below the axis on $(0, 3)$ and above on $(3, 4)$. Use $F(x) = \\frac{x^3}{3} - \\frac{3x^2}{2}$.\n\n$$\\int_0^3 f(x)\\,dx = F(3) - F(0) = 9 - \\frac{27}{2} = -\\frac{9}{2}$$\n\n$$\\int_3^4 f(x)\\,dx = F(4) - F(3) = \\left(\\frac{64}{3} - 24\\right) - \\left(-\\frac{9}{2}\\right) = -\\frac{8}{3} + \\frac{9}{2} = \\frac{11}{6}$$\n\nTotal area $= \\frac{9}{2} + \\frac{11}{6} = \\frac{27}{6} + \\frac{11}{6} = \\frac{19}{3}$ square units.\n\n(b) Here we need the signed integral: $\\int_0^4 f(x)\\,dx = -\\frac{9}{2} + \\frac{11}{6} = -\\frac{8}{3}$.\n$$\\text{Mean value} = \\frac{1}{4 - 0}\\times\\left(-\\frac{8}{3}\\right) = -\\frac{2}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Integrates straight across a root when asked for an area: $\\int_0^4 (x^2 - 3x)\\,dx = -\\frac{8}{3}$, so 'area $= \\frac{8}{3}$'.",
+    "correction": "The parts below and above the axis cancel inside one integral. Split at the root $x = 3$: the areas are $\\frac{9}{2}$ and $\\frac{11}{6}$, giving a total of $\\frac{19}{3}$. Always sketch first to see where the curve crosses the axis."
+   },
+   {
+    "id": "m2",
+    "text": "Mishandles a negative lower limit: $\\left[x^3\\right]_{-2}^{1} = 1 - 8 = -7$.",
+    "correction": "Substitute the lower limit in brackets: $\\left[x^3\\right]_{-2}^{1} = 1^3 - (-2)^3 = 1 - (-8) = 9$. Writing $F(b) - F(a)$ in full with brackets avoids this."
+   },
+   {
+    "id": "m3",
+    "text": "Subtracts the curves the wrong way round, e.g. $\\int_{-1}^{2} \\left(x^2 - (x + 2)\\right)dx = -\\frac{9}{2}$, and reports the area as $-\\frac{9}{2}$.",
+    "correction": "Use top minus bottom: $\\int_{-1}^{2} \\left(x + 2 - x^2\\right)dx = \\frac{9}{2}$. An area is never negative; a negative result means the order of subtraction was reversed."
+   },
+   {
+    "id": "m4",
+    "text": "Finds the mean value of a function by averaging the end values: mean of $x^2$ on $[0, 2]$ $= \\frac{f(0) + f(2)}{2} = 2$ (or forgets to divide by $b - a$).",
+    "correction": "The mean value uses the whole curve: $\\frac{1}{2 - 0}\\int_0^2 x^2\\,dx = \\frac{1}{2}\\times\\frac{8}{3} = \\frac{4}{3}$. Averaging the endpoints only works for straight lines."
+   }
+  ]
+ },
+ {
+  "id": "calc-riemann-sums",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "pure-sigma-recurrence",
+   "alg-gradient-area-under-graph"
+  ],
+  "keyIdea": "A Riemann sum estimates $\\int_a^b f(x)\\,dx$ with rectangles. With $n$ equal subintervals, $\\Delta x = \\frac{b - a}{n}$ and $x_i = a + i\\,\\Delta x$:\n$$L_n = \\sum_{i=0}^{n-1} f(x_i)\\,\\Delta x, \\qquad R_n = \\sum_{i=1}^{n} f(x_i)\\,\\Delta x$$\nA midpoint sum uses the height at the middle of each subinterval.\n\n**From a table:** subintervals may have different widths, so multiply each height by its own width.\n\n**Over/under:** if $f$ is increasing, the left sum is an underestimate and the right sum an overestimate; if $f$ is decreasing, it is the other way around.\n\n**Limit definition:**\n$$\\int_a^b f(x)\\,dx = \\lim_{n\\to\\infty} \\sum_{i=1}^{n} f\\left(a + \\frac{(b - a)i}{n}\\right)\\frac{b - a}{n}$$\nTo read an integral from a limit of a sum, identify $\\Delta x$ (gives $b - a$), the starting value $a$, and the function $f$.",
+  "workedExamples": [
+   {
+    "question": "Water flows into a tank at a rate of $r(t)$ gallons per minute, where $r$ is increasing. Selected values are shown.\n\n| $t$ (minutes) | 0 | 2 | 5 | 10 |\n|---|---|---|---|---|\n| $r(t)$ (gal/min) | 4 | 7 | 9 | 12 |\n\nUse a left Riemann sum and a right Riemann sum with the three subintervals shown to approximate $\\int_0^{10} r(t)\\,dt$. State whether each is an over- or underestimate.",
+    "solution": "The widths are $2$, $3$ and $5$ minutes (not equal).\n\nLeft sum (heights at the left end of each subinterval):\n$$2(4) + 3(7) + 5(9) = 8 + 21 + 45 = 74 \\text{ gallons}$$\n\nRight sum (heights at the right end):\n$$2(7) + 3(9) + 5(12) = 14 + 27 + 60 = 101 \\text{ gallons}$$\n\nSince $r$ is increasing, each left rectangle sits below the graph and each right rectangle sits above it: $74$ gallons is an underestimate and $101$ gallons is an overestimate of the total water added."
+   },
+   {
+    "question": "Write $\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\left(1 + \\frac{2i}{n}\\right)^2\\frac{2}{n}$ as a definite integral and evaluate it.",
+    "solution": "Match to $\\sum f(a + i\\,\\Delta x)\\,\\Delta x$: here $\\Delta x = \\frac{2}{n}$, so $b - a = 2$.\n\nThe input is $1 + \\frac{2i}{n} = 1 + i\\,\\Delta x$, so $a = 1$, $b = 1 + 2 = 3$, and $f(x) = x^2$.\n\n$$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\left(1 + \\frac{2i}{n}\\right)^2\\frac{2}{n} = \\int_1^3 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_1^3 = 9 - \\frac{1}{3} = \\frac{26}{3}$$\n\n(Equivalently $\\int_0^2 (1 + x)^2\\,dx = \\frac{26}{3}$, taking $a = 0$ and $f(x) = (1 + x)^2$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses one width for every rectangle when the table has unequal intervals, e.g. $R = 2(7 + 9 + 12) = 56$ for the table with $t = 0, 2, 5, 10$.",
+    "correction": "Each rectangle has its own width $t_{i} - t_{i-1}$: $R = 2(7) + 3(9) + 5(12) = 101$. Only factor out $\\Delta x$ when the intervals really are equal."
+   },
+   {
+    "id": "m2",
+    "text": "Believes a right Riemann sum is always an overestimate (and a left sum always an underestimate), whatever the function does.",
+    "correction": "It depends on whether $f$ is increasing or decreasing. For a decreasing function the right endpoint is the lowest point of each subinterval, so the right sum is an **under**estimate and the left sum an overestimate."
+   },
+   {
+    "id": "m3",
+    "text": "Uses all $n + 1$ points in a left or right sum, e.g. for $f(x) = x^2$ on $[0, 4]$ with $n = 4$: $L_4 = 1(0 + 1 + 4 + 9 + 16) = 30$.",
+    "correction": "A sum with $n$ rectangles uses $n$ heights. Left: $L_4 = 1(0 + 1 + 4 + 9) = 14$ (omit the last point). Right: $R_4 = 1(1 + 4 + 9 + 16) = 30$ (omit the first point)."
+   },
+   {
+    "id": "m4",
+    "text": "Reads the upper limit directly from $\\Delta x$: turns $\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\left(1 + \\frac{2i}{n}\\right)^2\\frac{2}{n}$ into $\\int_1^2 x^2\\,dx$.",
+    "correction": "$\\Delta x = \\frac{b - a}{n}$, so the $2$ is the **length** of the interval, not its end. Starting at $a = 1$ gives $b = 3$: the limit equals $\\int_1^3 x^2\\,dx = \\frac{26}{3}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-trapezium-rule",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "geo-perimeter-area",
+   "calc-concavity-inflection"
+  ],
+  "keyIdea": "The trapezium rule (US: trapezoidal rule) replaces the curve by straight chords and adds the areas of the trapezia. With $n$ strips of equal width $h = \\frac{b - a}{n}$ there are $n + 1$ ordinates $y_0, y_1, \\dots, y_n$:\n$$\\int_a^b y\\,dx \\approx \\frac{h}{2}\\Big[y_0 + y_n + 2\\left(y_1 + y_2 + \\dots + y_{n-1}\\right)\\Big]$$\nThe ends are counted once; every middle ordinate is shared by two trapezia, so it is doubled.\n\n**Unequal intervals** (common in AP tables): add the trapezia one at a time, $\\frac{1}{2}(y_i + y_{i+1})(x_{i+1} - x_i)$.\n\n**Over or under?** If the curve is concave up (convex, $f''(x) > 0$) the chords lie above it, so the rule overestimates. If concave down ($f''(x) < 0$) it underestimates. More strips give a better estimate.",
+  "workedExamples": [
+   {
+    "question": "Use the trapezium rule with 4 strips to estimate $\\displaystyle\\int_0^2 \\frac{1}{1 + x}\\,dx$, giving your answer to 3 decimal places. The exact value is $\\ln 3 \\approx 1.0986$; explain why your estimate is too large.",
+    "solution": "$h = \\frac{2 - 0}{4} = 0.5$, so the ordinates are at $x = 0, 0.5, 1, 1.5, 2$:\n$$y_0 = 1, \\quad y_1 = \\frac{2}{3}, \\quad y_2 = \\frac{1}{2}, \\quad y_3 = \\frac{2}{5}, \\quad y_4 = \\frac{1}{3}$$\n\nEnds: $y_0 + y_4 = \\frac{4}{3}$. Middles: $y_1 + y_2 + y_3 = \\frac{20 + 15 + 12}{30} = \\frac{47}{30}$.\n\n$$\\int_0^2 \\frac{1}{1 + x}\\,dx \\approx \\frac{0.5}{2}\\left[\\frac{4}{3} + 2\\times\\frac{47}{30}\\right] = 0.25\\times\\frac{67}{15} = \\frac{67}{60} \\approx 1.117$$\n\n$f''(x) = \\frac{2}{(1 + x)^3} > 0$ for $x \\ge 0$, so the curve is concave up: each chord lies above the curve, and the trapezium rule overestimates."
+   },
+   {
+    "question": "Water enters a tank at a rate $R(t)$ litres per hour. Use a trapezium rule with the intervals in the table to estimate the total water that enters during $0 \\le t \\le 9$.\n\n| $t$ (hours) | 0 | 3 | 5 | 9 |\n|---|---|---|---|---|\n| $R(t)$ (litres/hour) | 10 | 16 | 18 | 14 |",
+    "solution": "The widths are $3$, $2$ and $4$, so add each trapezium separately:\n$$\\frac{10 + 16}{2}\\times 3 = 39, \\qquad \\frac{16 + 18}{2}\\times 2 = 34, \\qquad \\frac{18 + 14}{2}\\times 4 = 64$$\n\nTotal $\\approx 39 + 34 + 64 = 137$ litres."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses strips with ordinates: for 4 strips on $[0, 2]$ (5 values of $y$) uses $h = \\frac{2}{5} = 0.4$.",
+    "correction": "$h = \\frac{b - a}{n}$ where $n$ is the number of **strips**: $h = \\frac{2}{4} = 0.5$. There is always one more ordinate than strips."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets to double the middle ordinates: $\\frac{h}{2}\\left[y_0 + y_1 + y_2 + y_3 + y_4\\right]$.",
+    "correction": "Each interior ordinate is a side of two trapezia, so it appears twice: $\\frac{h}{2}\\left[y_0 + y_4 + 2(y_1 + y_2 + y_3)\\right]$."
+   },
+   {
+    "id": "m3",
+    "text": "Gets the concavity rule the wrong way round: 'the curve is concave up (bends upwards), so the trapezia are below it and the rule underestimates'.",
+    "correction": "For a concave up curve, a chord joining two points lies **above** the curve, so the trapezia include extra area: overestimate. Concave down gives an underestimate."
+   },
+   {
+    "id": "m4",
+    "text": "Applies the equal-width formula to a table with unequal intervals, e.g. $\\frac{3}{2}\\left[10 + 14 + 2(16 + 18)\\right] = 138$ for $t = 0, 3, 5, 9$.",
+    "correction": "With unequal widths compute each trapezium separately: $39 + 34 + 64 = 137$. The formula with a common $h$ only applies when every strip has the same width."
+   }
+  ]
+ },
+ {
+  "id": "calc-ftc-accumulation",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "calc-riemann-sums",
+   "calc-chain-product-quotient"
+  ],
+  "keyIdea": "**FTC Part 1:** if $g(x) = \\int_a^x f(t)\\,dt$ then $g'(x) = f(x)$: the rate an accumulated amount grows is the height of $f$ at the moving edge. With a variable upper limit use the chain rule:\n$$\\frac{d}{dx}\\int_a^{u(x)} f(t)\\,dt = f\\big(u(x)\\big)\\,u'(x)$$\n\n**FTC Part 2:** $\\int_a^b f(x)\\,dx = F(b) - F(a)$ for any antiderivative $F$.\n\n**Net change:** $F(b) = F(a) + \\int_a^b F'(t)\\,dt$, so the amount at the end equals the starting amount plus the accumulated change.\n\n**Reading $g$ from a graph of $f$:** values of $g$ are signed areas; $g$ increases where $f > 0$; $g$ has a relative maximum where $f$ changes from positive to negative; $g$ is concave up where $f$ is increasing.",
+  "workedExamples": [
+   {
+    "question": "Let $g(x) = \\displaystyle\\int_1^{x^3} \\sqrt{1 + t^2}\\,dt$. Find $g(1)$, $g'(x)$ and $g'(1)$.",
+    "solution": "$g(1) = \\int_1^1 \\sqrt{1 + t^2}\\,dt = 0$ (no width).\n\nThe upper limit is $u = x^3$, so by FTC Part 1 and the chain rule:\n$$g'(x) = \\sqrt{1 + (x^3)^2}\\cdot 3x^2 = 3x^2\\sqrt{1 + x^6}$$\n\n$$g'(1) = 3(1)\\sqrt{1 + 1} = 3\\sqrt{2}$$"
+   },
+   {
+    "question": "A tank contains 200 gallons of water at time $t = 0$. For $0 \\le t \\le 8$ hours, the amount of water changes at a rate $W'(t) = 30 - 6t$ gallons per hour.\n\n(a) Find the amount of water in the tank at $t = 8$.\n\n(b) At what time is the amount of water greatest? Justify your answer.",
+    "solution": "(a) Net change:\n$$W(8) = 200 + \\int_0^8 (30 - 6t)\\,dt = 200 + \\Big[30t - 3t^2\\Big]_0^8 = 200 + (240 - 192) = 248 \\text{ gallons}$$\n\n(b) $W'(t) = 0$ when $t = 5$. $W'(t) > 0$ for $0 \\le t < 5$ and $W'(t) < 0$ for $5 < t \\le 8$, so $W$ increases then decreases and has its absolute maximum at $t = 5$ hours.\n$$W(5) = 200 + \\Big[30t - 3t^2\\Big]_0^5 = 200 + 75 = 275 \\text{ gallons}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets the chain rule with a variable upper limit: $\\frac{d}{dx}\\int_1^{x^3}\\sqrt{1 + t^2}\\,dt = \\sqrt{1 + x^6}$.",
+    "correction": "Substitute the upper limit **and** multiply by its derivative: $\\sqrt{1 + x^6}\\cdot 3x^2$."
+   },
+   {
+    "id": "m2",
+    "text": "Subtracts a term for the constant lower limit: for $g(x) = \\int_1^x \\sqrt{1 + t^2}\\,dt$ writes $g'(x) = \\sqrt{1 + x^2} - \\sqrt{2}$.",
+    "correction": "A constant lower limit contributes a constant, $-F(1)$, whose derivative is $0$. So $g'(x) = \\sqrt{1 + x^2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Given the graph of $f$ and $g(x) = \\int_0^x f(t)\\,dt$, says $g$ has its maximum where the graph of $f$ has its highest point.",
+    "correction": "$g' = f$, so $g$ has a relative maximum where $f$ **crosses the axis** from positive to negative. Where $f$ is highest, $g$ is increasing fastest (a point of inflection of $g$ if $f$ changes from increasing to decreasing there)."
+   },
+   {
+    "id": "m4",
+    "text": "Reports the accumulated change as the amount: 'the tank contains $\\int_0^8 (30 - 6t)\\,dt = 48$ gallons at $t = 8$'.",
+    "correction": "The integral of a rate gives the **change** in amount. Add the initial amount: $W(8) = 200 + 48 = 248$ gallons."
+   }
+  ]
+ },
+ {
+  "id": "calc-integration-standard",
+  "prerequisites": [
+   "calc-integration-basics",
+   "calc-derivatives-exp-log-trig",
+   "calc-chain-product-quotient",
+   "pure-trig-compound-angles"
+  ],
+  "keyIdea": "Each standard integral comes from reading a standard derivative backwards. Trig results only hold with $x$ in radians:\n$$\\int e^x\\,dx = e^x + c, \\quad \\int \\frac{1}{x}\\,dx = \\ln|x| + c, \\quad \\int \\cos x\\,dx = \\sin x + c$$\n$$\\int \\sin x\\,dx = -\\cos x + c, \\quad \\int \\sec^2 x\\,dx = \\tan x + c$$\n\n**Linear inside:** $\\int f(ax + b)\\,dx = \\frac{1}{a}F(ax + b) + c$, e.g. $\\int e^{3x}\\,dx = \\frac{1}{3}e^{3x} + c$ and $\\int \\cos(2x + 1)\\,dx = \\frac{1}{2}\\sin(2x + 1) + c$. Divide by $a$, because differentiating would multiply by $a$.\n\n**Reverse chain rule:** $\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)| + c$, e.g. $\\int \\frac{2x}{x^2 + 5}\\,dx = \\ln(x^2 + 5) + c$.\n\n**Use identities** to reach a standard form: $\\sin^2 x = \\frac{1}{2}(1 - \\cos 2x)$, $\\cos^2 x = \\frac{1}{2}(1 + \\cos 2x)$, $\\tan^2 x = \\sec^2 x - 1$.",
+  "workedExamples": [
+   {
+    "question": "Find $\\displaystyle\\int \\left(e^{2x} + \\frac{3}{2x + 1} - 4\\sin 3x\\right)dx$.",
+    "solution": "Treat each term as $f(ax + b)$ and divide by $a$:\n$$\\int e^{2x}\\,dx = \\frac{1}{2}e^{2x}$$\n\n$$\\int \\frac{3}{2x + 1}\\,dx = 3\\times\\frac{1}{2}\\ln|2x + 1| = \\frac{3}{2}\\ln|2x + 1|$$\n\n$$\\int -4\\sin 3x\\,dx = -4\\times\\left(-\\frac{1}{3}\\cos 3x\\right) = \\frac{4}{3}\\cos 3x$$\n\nSo the integral is $\\frac{1}{2}e^{2x} + \\frac{3}{2}\\ln|2x + 1| + \\frac{4}{3}\\cos 3x + c$."
+   },
+   {
+    "question": "Find the exact value of $\\displaystyle\\int_0^{\\frac{\\pi}{4}} \\cos^2 x\\,dx$.",
+    "solution": "$\\cos^2 x$ is not a standard integral, so use $\\cos^2 x = \\frac{1}{2}(1 + \\cos 2x)$:\n$$\\int_0^{\\frac{\\pi}{4}} \\frac{1}{2}(1 + \\cos 2x)\\,dx = \\frac{1}{2}\\left[x + \\frac{1}{2}\\sin 2x\\right]_0^{\\frac{\\pi}{4}}$$\n\n$$= \\frac{1}{2}\\left(\\frac{\\pi}{4} + \\frac{1}{2}\\sin\\frac{\\pi}{2}\\right) - 0 = \\frac{1}{2}\\left(\\frac{\\pi}{4} + \\frac{1}{2}\\right) = \\frac{\\pi}{8} + \\frac{1}{4}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Gets the sign wrong for sine: $\\int \\sin x\\,dx = \\cos x + c$.",
+    "correction": "$\\frac{d}{dx}(\\cos x) = -\\sin x$, so $\\int \\sin x\\,dx = -\\cos x + c$. Check every trig integral by differentiating."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies by the inner coefficient instead of dividing: $\\int e^{3x}\\,dx = 3e^{3x} + c$ or $\\int \\cos 2x\\,dx = 2\\sin 2x + c$.",
+    "correction": "Differentiating $e^{3x}$ multiplies by $3$, so integrating must divide by $3$: $\\int e^{3x}\\,dx = \\frac{1}{3}e^{3x} + c$, and $\\int \\cos 2x\\,dx = \\frac{1}{2}\\sin 2x + c$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses $\\ln$ for any fraction: $\\int \\frac{1}{x^2}\\,dx = \\ln(x^2) + c$.",
+    "correction": "$\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)|$ needs the numerator to be the derivative of the denominator (here it would need $2x$). $\\frac{1}{x^2} = x^{-2}$ is a power: $\\int x^{-2}\\,dx = -\\frac{1}{x} + c$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats $\\sin^2 x$ like a power of $x$: $\\int \\sin^2 x\\,dx = \\frac{\\sin^3 x}{3} + c$.",
+    "correction": "The power rule only works for powers of $x$ itself. Use $\\sin^2 x = \\frac{1}{2}(1 - \\cos 2x)$: $\\int \\sin^2 x\\,dx = \\frac{x}{2} - \\frac{1}{4}\\sin 2x + c$."
+   }
+  ]
+ },
+ {
+  "id": "calc-integration-substitution",
+  "prerequisites": [
+   "calc-integration-standard",
+   "calc-definite-integrals-area",
+   "calc-chain-product-quotient"
+  ],
+  "keyIdea": "Substitution (US: $u$-substitution) reverses the chain rule: if $u = g(x)$ then $\\frac{du}{dx} = g'(x)$, and\n$$\\int f\\big(g(x)\\big)\\,g'(x)\\,dx = \\int f(u)\\,du$$\n\n**Method:** choose $u$ (often the 'inside' function, or the one given); find $\\frac{du}{dx}$ and replace $dx$ by $\\frac{du}{g'(x)}$; rewrite **every** $x$ in terms of $u$; integrate with respect to $u$; for an indefinite integral substitute back.\n\n**Definite integrals:** change the limits to $u$-values, $u = g(a)$ and $u = g(b)$, then evaluate in $u$ with no need to substitute back.\n\nA-level often gives the substitution, e.g. $u = 2x - 1$, $u = \\sqrt{x}$ or $x = \\sin\\theta$; spotting $f'(x)$ next to a function of $f(x)$ tells you which $u$ to choose.",
+  "workedExamples": [
+   {
+    "question": "Find $\\displaystyle\\int x(x^2 + 3)^4\\,dx$.",
+    "solution": "Let $u = x^2 + 3$, so $\\frac{du}{dx} = 2x$ and $dx = \\frac{du}{2x}$.\n\n$$\\int x\\,u^4\\,\\frac{du}{2x} = \\frac{1}{2}\\int u^4\\,du = \\frac{1}{2}\\times\\frac{u^5}{5} + c = \\frac{u^5}{10} + c$$\n\nSubstitute back: $\\int x(x^2 + 3)^4\\,dx = \\frac{(x^2 + 3)^5}{10} + c$.\n\nCheck: $\\frac{d}{dx}\\left[\\frac{(x^2 + 3)^5}{10}\\right] = \\frac{5(x^2 + 3)^4\\cdot 2x}{10} = x(x^2 + 3)^4$."
+   },
+   {
+    "question": "Use the substitution $u = 2x - 1$ to find the exact value of $\\displaystyle\\int_1^5 \\frac{x}{\\sqrt{2x - 1}}\\,dx$.",
+    "solution": "$u = 2x - 1 \\Rightarrow x = \\frac{u + 1}{2}$ and $dx = \\frac{du}{2}$.\n\nChange the limits: $x = 1 \\Rightarrow u = 1$; $x = 5 \\Rightarrow u = 9$.\n\n$$\\int_1^9 \\frac{\\frac{u + 1}{2}}{u^{\\frac{1}{2}}}\\cdot\\frac{du}{2} = \\frac{1}{4}\\int_1^9 \\left(u^{\\frac{1}{2}} + u^{-\\frac{1}{2}}\\right)du$$\n\n$$= \\frac{1}{4}\\left[\\frac{2}{3}u^{\\frac{3}{2}} + 2u^{\\frac{1}{2}}\\right]_1^9 = \\frac{1}{4}\\left[(18 + 6) - \\left(\\frac{2}{3} + 2\\right)\\right] = \\frac{1}{4}\\times\\frac{64}{3} = \\frac{16}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Keeps the $x$-limits after substituting: $\\frac{1}{4}\\left[\\frac{2}{3}u^{\\frac{3}{2}} + 2u^{\\frac{1}{2}}\\right]_1^5$ for $\\int_1^5 \\frac{x}{\\sqrt{2x - 1}}\\,dx$.",
+    "correction": "Once the integrand is in $u$, the limits must be $u$-values: $x = 1 \\to u = 1$ and $x = 5 \\to u = 9$, giving $\\frac{16}{3}$."
+   },
+   {
+    "id": "m2",
+    "text": "Replaces $dx$ by $du$ without the factor from $\\frac{du}{dx}$: $\\int x(x^2 + 3)^4\\,dx = \\frac{(x^2 + 3)^5}{5} + c$.",
+    "correction": "$du = 2x\\,dx$, so $x\\,dx = \\frac{1}{2}du$ and the answer is $\\frac{(x^2 + 3)^5}{10} + c$. Differentiate your answer to check: $\\frac{(x^2 + 3)^5}{5}$ differentiates to $2x(x^2 + 3)^4$, twice too big."
+   },
+   {
+    "id": "m3",
+    "text": "Leaves an $x$ in the integrand and treats it as a constant: $\\int \\frac{x}{\\sqrt{u}}\\cdot\\frac{du}{2} = x\\sqrt{u} + c$.",
+    "correction": "Every $x$ must be replaced before integrating with respect to $u$. From $u = 2x - 1$, $x = \\frac{u + 1}{2}$, giving $\\frac{1}{4}\\int \\left(u^{\\frac{1}{2}} + u^{-\\frac{1}{2}}\\right)du$."
+   },
+   {
+    "id": "m4",
+    "text": "Changes the limits **and** substitutes back, e.g. $\\frac{1}{4}\\left[\\frac{2}{3}(2x - 1)^{\\frac{3}{2}} + 2(2x - 1)^{\\frac{1}{2}}\\right]_1^9$.",
+    "correction": "Do one or the other: either evaluate in $u$ with the new limits $1$ and $9$, or substitute back to $x$ and use the original limits $1$ and $5$. Both give $\\frac{16}{3}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-integration-by-parts",
+  "prerequisites": [
+   "calc-integration-standard",
+   "calc-chain-product-quotient",
+   "calc-definite-integrals-area"
+  ],
+  "keyIdea": "Integration by parts reverses the product rule:\n$$\\int u\\frac{dv}{dx}\\,dx = uv - \\int v\\frac{du}{dx}\\,dx$$\n\n**Choose $u$** so that it gets simpler when differentiated, and $\\frac{dv}{dx}$ so that it can be integrated. A guide (LATE): pick $u$ as a **L**og first, then **A**lgebraic, then **T**rig, then **E**xponential.\n\n* $\\int \\ln x\\,dx$: write it as $\\int \\ln x \\cdot 1\\,dx$ with $u = \\ln x$, giving $x\\ln x - x + c$.\n* $\\int x^2 e^{x}\\,dx$: apply parts twice (the power drops each time).\n* $\\int e^x \\sin x\\,dx$: apply parts twice with the **same type** of choice; the original integral $I$ reappears, so solve the equation for $I$.\n\n**Tabular method** (US): list $u$ and its derivatives down to $0$, and $\\frac{dv}{dx}$ with repeated integrals; multiply diagonally with signs $+, -, +, \\dots$",
+  "workedExamples": [
+   {
+    "question": "Find $\\displaystyle\\int x^2 e^{3x}\\,dx$.",
+    "solution": "Take $u = x^2$ (it reaches $0$ after three differentiations) and $\\frac{dv}{dx} = e^{3x}$.\n\n| sign | differentiate | integrate |\n|---|---|---|\n| $+$ | $x^2$ | $e^{3x}$ |\n| $-$ | $2x$ | $\\frac{1}{3}e^{3x}$ |\n| $+$ | $2$ | $\\frac{1}{9}e^{3x}$ |\n|  | $0$ | $\\frac{1}{27}e^{3x}$ |\n\nMultiply each entry in the differentiate column by the entry one row down in the integrate column, using the signs:\n$$\\int x^2 e^{3x}\\,dx = \\frac{1}{3}x^2 e^{3x} - \\frac{2}{9}x e^{3x} + \\frac{2}{27}e^{3x} + c = \\frac{e^{3x}}{27}\\left(9x^2 - 6x + 2\\right) + c$$\n\n(This is parts applied twice: first $u = x^2$, then $u = x$.)"
+   },
+   {
+    "question": "Find $I = \\displaystyle\\int e^{x}\\sin x\\,dx$.",
+    "solution": "Parts with $u = \\sin x$, $\\frac{dv}{dx} = e^x$:\n$$I = e^x\\sin x - \\int e^x\\cos x\\,dx$$\n\nParts again, keeping the same type of choice: $u = \\cos x$, $\\frac{dv}{dx} = e^x$:\n$$\\int e^x\\cos x\\,dx = e^x\\cos x - \\int e^x(-\\sin x)\\,dx = e^x\\cos x + I$$\n\nSubstitute back:\n$$I = e^x\\sin x - e^x\\cos x - I \\quad\\Rightarrow\\quad 2I = e^x(\\sin x - \\cos x)$$\n\n$$I = \\frac{1}{2}e^x(\\sin x - \\cos x) + c$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses a plus sign in the formula: $\\int x e^x\\,dx = xe^x + \\int e^x\\,dx = xe^x + e^x + c$.",
+    "correction": "The formula is $uv - \\int v\\frac{du}{dx}\\,dx$: $\\int x e^x\\,dx = xe^x - e^x + c$. Differentiating $xe^x + e^x$ gives $xe^x + 2e^x$, which shows the error."
+   },
+   {
+    "id": "m2",
+    "text": "Chooses $u = x$ in $\\int x\\ln x\\,dx$, so needs $\\int \\ln x\\,dx$ for $v$ and makes the integral harder (or writes $v = \\frac{1}{x}$).",
+    "correction": "Take $u = \\ln x$ (it simplifies to $\\frac{1}{x}$) and $\\frac{dv}{dx} = x$: $\\int x\\ln x\\,dx = \\frac{x^2}{2}\\ln x - \\int \\frac{x}{2}\\,dx = \\frac{x^2}{2}\\ln x - \\frac{x^2}{4} + c$."
+   },
+   {
+    "id": "m3",
+    "text": "In $\\int e^x\\sin x\\,dx$, switches choice on the second application ($u = e^x$, $\\frac{dv}{dx} = \\cos x$), which undoes the first step and gives $I = I$.",
+    "correction": "Keep the same type of choice both times (trig as $u$ both times, or exponential as $u$ both times). Then $I$ reappears with a different coefficient and you can solve $2I = e^x(\\sin x - \\cos x)$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the tabular method without alternating signs: $\\int x^2 e^{3x}\\,dx = \\frac{1}{3}x^2 e^{3x} + \\frac{2}{9}x e^{3x} + \\frac{2}{27}e^{3x} + c$.",
+    "correction": "The signs alternate $+, -, +$ because each application of parts subtracts: $\\frac{1}{3}x^2 e^{3x} - \\frac{2}{9}x e^{3x} + \\frac{2}{27}e^{3x} + c$."
+   }
+  ]
+ },
+ {
+  "id": "calc-integration-partial-fractions",
+  "prerequisites": [
+   "pure-partial-fractions",
+   "calc-integration-standard",
+   "calc-definite-integrals-area",
+   "pure-exponentials-logs"
+  ],
+  "keyIdea": "To integrate a rational function, first split it into partial fractions, then integrate each piece:\n$$\\frac{px + q}{(x - a)(x - b)} = \\frac{A}{x - a} + \\frac{B}{x - b}, \\qquad \\frac{px + q}{(x - a)^2} = \\frac{A}{x - a} + \\frac{B}{(x - a)^2}$$\n\nEach piece is standard:\n$$\\int \\frac{A}{x - a}\\,dx = A\\ln|x - a|, \\quad \\int \\frac{A}{mx + n}\\,dx = \\frac{A}{m}\\ln|mx + n|, \\quad \\int \\frac{B}{(x - a)^2}\\,dx = -\\frac{B}{x - a}$$\n\nIf the fraction is improper (degree of numerator $\\ge$ degree of denominator), divide first to get a polynomial plus a proper fraction.\n\nFor definite integrals, use the laws of logarithms to give an exact answer as a single log, e.g. $2\\ln 3 + \\ln 5 - \\ln 2 = \\ln\\frac{45}{2}$.",
+  "workedExamples": [
+   {
+    "question": "Find the exact value of $\\displaystyle\\int_2^4 \\frac{5x + 1}{(x - 1)(x + 2)}\\,dx$, giving your answer as a single logarithm.",
+    "solution": "Write $\\frac{5x + 1}{(x - 1)(x + 2)} = \\frac{A}{x - 1} + \\frac{B}{x + 2}$, so $5x + 1 = A(x + 2) + B(x - 1)$.\n\n$x = 1$: $6 = 3A \\Rightarrow A = 2$. $\\quad x = -2$: $-9 = -3B \\Rightarrow B = 3$.\n\n$$\\int_2^4 \\left(\\frac{2}{x - 1} + \\frac{3}{x + 2}\\right)dx = \\Big[2\\ln|x - 1| + 3\\ln|x + 2|\\Big]_2^4$$\n\n$$= (2\\ln 3 + 3\\ln 6) - (2\\ln 1 + 3\\ln 4) = \\ln 9 + 3\\ln\\frac{3}{2} = \\ln 9 + \\ln\\frac{27}{8} = \\ln\\frac{243}{8}$$"
+   },
+   {
+    "question": "Find $\\displaystyle\\int \\frac{x + 3}{(x + 1)^2}\\,dx$.",
+    "solution": "Repeated factor: $\\frac{x + 3}{(x + 1)^2} = \\frac{A}{x + 1} + \\frac{B}{(x + 1)^2}$, so $x + 3 = A(x + 1) + B$.\n\n$x = -1$: $B = 2$. Compare $x$ coefficients: $A = 1$.\n\n$$\\int \\left(\\frac{1}{x + 1} + \\frac{2}{(x + 1)^2}\\right)dx = \\ln|x + 1| + 2\\times\\frac{(x + 1)^{-1}}{-1} + c = \\ln|x + 1| - \\frac{2}{x + 1} + c$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to divide by the coefficient of $x$: $\\int \\frac{4}{2x + 1}\\,dx = 4\\ln|2x + 1| + c$.",
+    "correction": "Differentiating $\\ln|2x + 1|$ gives $\\frac{2}{2x + 1}$, so $\\int \\frac{4}{2x + 1}\\,dx = \\frac{4}{2}\\ln|2x + 1| + c = 2\\ln|2x + 1| + c$."
+   },
+   {
+    "id": "m2",
+    "text": "Integrates a repeated-factor term as a logarithm: $\\int \\frac{2}{(x + 1)^2}\\,dx = 2\\ln\\left|(x + 1)^2\\right| + c$.",
+    "correction": "$\\frac{2}{(x + 1)^2} = 2(x + 1)^{-2}$ is a power, so use the power rule: $\\int 2(x + 1)^{-2}\\,dx = -\\frac{2}{x + 1} + c$. Only a power of $-1$ gives a logarithm."
+   },
+   {
+    "id": "m3",
+    "text": "Skips the partial fractions and writes the log of the whole denominator: $\\int \\frac{5x + 1}{(x - 1)(x + 2)}\\,dx = \\ln|(x - 1)(x + 2)| + c$.",
+    "correction": "That would need the numerator to be the derivative of the denominator, $2x + 1$, which it is not. Split first: $\\frac{2}{x - 1} + \\frac{3}{x + 2}$, giving $2\\ln|x - 1| + 3\\ln|x + 2| + c$."
+   },
+   {
+    "id": "m4",
+    "text": "Splits an improper fraction directly: writes $\\frac{x^2}{(x - 1)(x + 1)} = \\frac{A}{x - 1} + \\frac{B}{x + 1}$.",
+    "correction": "The numerator and denominator have the same degree, so divide first: $\\frac{x^2}{x^2 - 1} = 1 + \\frac{1}{(x - 1)(x + 1)} = 1 + \\frac{\\frac{1}{2}}{x - 1} - \\frac{\\frac{1}{2}}{x + 1}$. The integral is $x + \\frac{1}{2}\\ln|x - 1| - \\frac{1}{2}\\ln|x + 1| + c$."
+   }
+  ]
+ },
+ {
+  "id": "calc-differential-equations",
+  "prerequisites": [
+   "calc-integration-standard",
+   "calc-integration-partial-fractions",
+   "pure-exponential-modelling"
+  ],
+  "keyIdea": "A first-order **separable** differential equation has the form $\\frac{dy}{dx} = f(x)\\,g(y)$. Separate the variables and integrate both sides, using one constant:\n$$\\int \\frac{1}{g(y)}\\,dy = \\int f(x)\\,dx + c$$\nThis gives the **general solution**; an initial condition gives a **particular solution**.\n\n**Forming:** 'the rate of change of $N$ is proportional to $N$' means $\\frac{dN}{dt} = kN$; 'decreases at a rate proportional to' means $\\frac{dN}{dt} = -kN$ with $k > 0$. The solution is $N = Ae^{kt}$ (exponential growth or decay).\n\nWhen $\\ln|y| = h(x) + c$, write $y = Ae^{h(x)}$ where $A = \\pm e^c$.\n\n**Logistic model** (AP BC): $\\frac{dP}{dt} = kP\\left(1 - \\frac{P}{L}\\right)$. $P \\to L$ (the carrying capacity), and $P$ grows fastest when $P = \\frac{L}{2}$.",
+  "workedExamples": [
+   {
+    "question": "Solve $\\frac{dy}{dx} = 2xy$, given that $y = 3$ when $x = 0$.",
+    "solution": "Separate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int 2x\\,dx$$\n\nIntegrate (one constant):\n$$\\ln|y| = x^2 + c$$\n\nExponentiate:\n$$y = e^{x^2 + c} = Ae^{x^2}, \\quad A = \\pm e^c$$\n\nUse $y = 3$ at $x = 0$: $3 = Ae^0$, so $A = 3$ and $y = 3e^{x^2}$."
+   },
+   {
+    "question": "A cup of tea cools in a room at $20^\\circ\\text{C}$. Its temperature $\\theta^\\circ\\text{C}$ after $t$ minutes satisfies $\\frac{d\\theta}{dt} = -k(\\theta - 20)$, where $k$ is a positive constant. Initially $\\theta = 90$, and after 5 minutes $\\theta = 60$. Find the time taken for the tea to cool to $40^\\circ\\text{C}$, to 3 significant figures.",
+    "solution": "Separate and integrate:\n$$\\int \\frac{1}{\\theta - 20}\\,d\\theta = \\int -k\\,dt \\quad\\Rightarrow\\quad \\ln|\\theta - 20| = -kt + c \\quad\\Rightarrow\\quad \\theta - 20 = Ae^{-kt}$$\n\nAt $t = 0$: $70 = A$, so $\\theta = 20 + 70e^{-kt}$.\n\nAt $t = 5$: $40 = 70e^{-5k} \\Rightarrow e^{-5k} = \\frac{4}{7} \\Rightarrow k = \\frac{1}{5}\\ln\\frac{7}{4} \\approx 0.1119$.\n\nWhen $\\theta = 40$: $20 = 70e^{-kt} \\Rightarrow e^{-kt} = \\frac{2}{7} \\Rightarrow t = \\frac{\\ln 3.5}{k} = \\frac{5\\ln 3.5}{\\ln 1.75} \\approx 11.2$ minutes."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the constant after exponentiating: from $\\ln y = x^2 + c$ writes $y = e^{x^2} + c$.",
+    "correction": "$e^{x^2 + c} = e^{x^2}\\times e^{c}$, so the constant **multiplies**: $y = Ae^{x^2}$. With $y(0) = 3$ this gives $y = 3e^{x^2}$, whereas $y = e^{x^2} + c$ would wrongly give $y = e^{x^2} + 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Integrates the right-hand side with respect to $x$ while treating $y$ as a constant: $\\frac{dy}{dx} = 2xy \\Rightarrow y = x^2 y + c$.",
+    "correction": "$y$ depends on $x$, so it cannot be treated as a constant. Separate first: $\\int \\frac{1}{y}\\,dy = \\int 2x\\,dx$, giving $\\ln|y| = x^2 + c$."
+   },
+   {
+    "id": "m3",
+    "text": "Loses the minus sign when forming a decay model: 'the volume decreases at a rate proportional to the volume' written as $\\frac{dV}{dt} = kV$ with $k > 0$.",
+    "correction": "A decreasing quantity has a negative derivative: $\\frac{dV}{dt} = -kV$ with $k > 0$, giving $V = Ae^{-kt}$, which decays."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a logistic population grows fastest when it reaches the carrying capacity $L$ (or right at the start).",
+    "correction": "$\\frac{dP}{dt} = kP\\left(1 - \\frac{P}{L}\\right)$ is a downward quadratic in $P$ with roots $0$ and $L$, so it is largest at $P = \\frac{L}{2}$. At $P = L$ the growth rate is $0$."
+   }
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler",
+  "prerequisites": [
+   "calc-tangents-normals",
+   "calc-concavity-inflection",
+   "calc-implicit-differentiation"
+  ],
+  "keyIdea": "A **slope field** shows, at each grid point $(x, y)$, a short segment whose slope is the value of $\\frac{dy}{dx}$ from the differential equation. Solution curves follow the segments; the particular solution through an initial point is traced from that point.\n\n**Reading a field:** if $\\frac{dy}{dx}$ depends only on $x$, segments are identical along each vertical column; if it depends only on $y$, identical along each horizontal row. Segments are horizontal where $\\frac{dy}{dx} = 0$, and a horizontal line $y = k$ with slope $0$ everywhere is an equilibrium solution.\n\n**Euler's method** (BC): follow the tangent line in steps of size $h$:\n$$x_{n+1} = x_n + h, \\qquad y_{n+1} = y_n + h\\cdot\\frac{dy}{dx}\\Big|_{(x_n,\\,y_n)}$$\nRecalculate the slope at each new point. If the solution curve is concave up, Euler's method underestimates; if concave down, it overestimates. Find concavity from $\\frac{d^2y}{dx^2}$.",
+  "workedExamples": [
+   {
+    "question": "Let $y = f(x)$ be the solution to $\\frac{dy}{dx} = x + y$ with $f(0) = 1$. Use Euler's method with two steps of equal size, starting at $x = 0$, to approximate $f(1)$. Is the approximation an overestimate or an underestimate? Justify your answer.",
+    "solution": "Step size $h = 0.5$.\n\nStep 1: slope at $(0, 1)$ is $0 + 1 = 1$, so $y_1 = 1 + 0.5(1) = 1.5$ at $x = 0.5$.\n\nStep 2: slope at $(0.5, 1.5)$ is $0.5 + 1.5 = 2$, so $y_2 = 1.5 + 0.5(2) = 2.5$ at $x = 1$.\n\nSo $f(1) \\approx 2.5$.\n\nConcavity: $\\frac{d^2y}{dx^2} = 1 + \\frac{dy}{dx} = 1 + x + y$, which is positive for $0 \\le x \\le 1$ near the solution (where $x \\ge 0$ and $y \\ge 1$). The solution curve is concave up, so the tangent-line steps lie below it: $2.5$ is an **underestimate**. (The exact solution is $y = 2e^x - x - 1$, with $f(1) = 2e - 2 \\approx 3.44$.)"
+   },
+   {
+    "question": "For the differential equation $\\frac{dy}{dx} = x(y - 1)$, find the slopes at $(-1, 0)$, $(0, 2)$, $(1, 0)$, $(1, 2)$ and $(2, 3)$, and describe two features of its slope field.",
+    "solution": "Substitute each point into $x(y - 1)$:\n\n| point | $(-1, 0)$ | $(0, 2)$ | $(1, 0)$ | $(1, 2)$ | $(2, 3)$ |\n|---|---|---|---|---|---|\n| slope | $1$ | $0$ | $-1$ | $1$ | $4$ |\n\nFeatures: every segment on the $y$-axis ($x = 0$) is horizontal, and every segment on the line $y = 1$ is horizontal. Since $y = 1$ gives $\\frac{dy}{dx} = 0$ for all $x$, the line $y = 1$ is an equilibrium solution. Above $y = 1$ the slopes are positive for $x > 0$ and negative for $x < 0$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reuses the starting slope for every Euler step: for $\\frac{dy}{dx} = x + y$, $y(0) = 1$, $h = 0.5$, writes $y_1 = 1.5$ then $y_2 = 1.5 + 0.5(1) = 2$.",
+    "correction": "Recalculate the slope at each new point: at $(0.5, 1.5)$ the slope is $2$, so $y_2 = 1.5 + 0.5(2) = 2.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets to multiply the slope by the step size: $y_1 = y_0 + \\frac{dy}{dx} = 1 + 1 = 2$.",
+    "correction": "The change in $y$ is slope $\\times$ change in $x$: $y_1 = y_0 + h\\cdot\\frac{dy}{dx} = 1 + 0.5(1) = 1.5$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks that if the segments are the same along each horizontal row, then $\\frac{dy}{dx}$ depends only on $x$.",
+    "correction": "Along a horizontal row $y$ is fixed and $x$ varies. If the slope does not change as $x$ varies, then $\\frac{dy}{dx}$ depends only on $y$ (for example $\\frac{dy}{dx} = y - 2$). Identical segments in vertical columns mean it depends only on $x$."
+   },
+   {
+    "id": "m4",
+    "text": "Believes Euler's method always underestimates, or gets the concavity rule backwards ('concave up, so Euler overestimates').",
+    "correction": "Euler's method follows tangent lines. A concave up curve lies above its tangents, so Euler underestimates; a concave down curve lies below its tangents, so Euler overestimates. Check the sign of $\\frac{d^2y}{dx^2}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-volumes-revolution",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "calc-integration-standard",
+   "geo-volume-prisms"
+  ],
+  "keyIdea": "Rotating the region under $y = f(x)$, $a \\le x \\le b$, through $2\\pi$ about the $x$-axis makes thin discs of radius $y$:\n$$V = \\pi\\int_a^b y^2\\,dx \\qquad \\text{(about the } y\\text{-axis: } V = \\pi\\int_c^d x^2\\,dy\\text{)}$$\n\n**Washers:** for a region between two curves, outer radius $R$ and inner radius $r$:\n$$V = \\pi\\int_a^b \\left(R^2 - r^2\\right)dx$$\nnot $\\pi\\int (R - r)^2\\,dx$.\n\n**Other axes:** the radius is the distance to the axis of rotation. About $y = -1$, a curve at height $f(x)$ has radius $f(x) + 1$.\n\n**Known cross-sections** (AP): $V = \\int_a^b A(x)\\,dx$, where $A(x)$ is the area of the slice. For side length $s$: square $A = s^2$; semicircle on diameter $s$: $A = \\frac{\\pi}{8}s^2$; equilateral triangle: $A = \\frac{\\sqrt{3}}{4}s^2$.",
+  "workedExamples": [
+   {
+    "question": "The region $R$ is bounded by $y = x$ and $y = x^2$. Find the exact volume generated when $R$ is rotated through $2\\pi$ radians about the $x$-axis.",
+    "solution": "Intersections: $x = x^2 \\Rightarrow x = 0$ or $x = 1$. On $0 < x < 1$, $x > x^2$, so the outer radius is $R = x$ and the inner radius is $r = x^2$.\n\n$$V = \\pi\\int_0^1 \\left(x^2 - x^4\\right)dx = \\pi\\left[\\frac{x^3}{3} - \\frac{x^5}{5}\\right]_0^1 = \\pi\\left(\\frac{1}{3} - \\frac{1}{5}\\right) = \\frac{2\\pi}{15}$$"
+   },
+   {
+    "question": "For the same region $R$ (between $y = x$ and $y = x^2$):\n\n(a) Find the volume generated when $R$ is rotated about the line $y = -1$.\n\n(b) $R$ is the base of a solid whose cross-sections perpendicular to the $x$-axis are squares. Find the volume of the solid.",
+    "solution": "(a) Distances to $y = -1$: outer $R = x + 1$, inner $r = x^2 + 1$.\n$$V = \\pi\\int_0^1 \\left[(x + 1)^2 - (x^2 + 1)^2\\right]dx = \\pi\\int_0^1 \\left(x^2 + 2x + 1 - x^4 - 2x^2 - 1\\right)dx$$\n\n$$= \\pi\\int_0^1 \\left(2x - x^2 - x^4\\right)dx = \\pi\\left(1 - \\frac{1}{3} - \\frac{1}{5}\\right) = \\frac{7\\pi}{15}$$\n\n(b) The side of each square is $s = x - x^2$, so $A(x) = (x - x^2)^2 = x^2 - 2x^3 + x^4$.\n$$V = \\int_0^1 \\left(x^2 - 2x^3 + x^4\\right)dx = \\frac{1}{3} - \\frac{1}{2} + \\frac{1}{5} = \\frac{1}{30}$$\n(No $\\pi$: the slices are squares, not circles.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to square $y$: for $y = x^2$, $0 \\le x \\le 1$, about the $x$-axis writes $V = \\pi\\int_0^1 x^2\\,dx = \\frac{\\pi}{3}$.",
+    "correction": "Each disc has area $\\pi y^2$, so $V = \\pi\\int_0^1 (x^2)^2\\,dx = \\pi\\int_0^1 x^4\\,dx = \\frac{\\pi}{5}$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $(R - r)^2$ for a washer: $V = \\pi\\int_0^1 (x - x^2)^2\\,dx = \\frac{\\pi}{30}$.",
+    "correction": "A washer's area is the big circle minus the hole: $\\pi R^2 - \\pi r^2$. So $V = \\pi\\int_0^1 (x^2 - x^4)\\,dx = \\frac{2\\pi}{15}$."
+   },
+   {
+    "id": "m3",
+    "text": "When rotating about $y = -1$, uses the heights $x$ and $x^2$ as radii (or subtracts 1, using $x - 1$).",
+    "correction": "The radius is the distance from the curve to the axis: from height $x$ down to $-1$ is $x - (-1) = x + 1$. So $R = x + 1$, $r = x^2 + 1$."
+   },
+   {
+    "id": "m4",
+    "text": "Puts $\\pi$ in front of a known cross-section volume out of habit: squares of side $x - x^2$ give $V = \\pi\\int_0^1 (x - x^2)^2\\,dx$.",
+    "correction": "$V = \\int A(x)\\,dx$ with $A$ the actual slice area. A square has area $s^2$, so $V = \\int_0^1 (x - x^2)^2\\,dx = \\frac{1}{30}$. $\\pi$ appears only for circular or semicircular slices."
+   }
+  ]
+ },
+ {
+  "id": "calc-improper-integrals",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "calc-integration-standard",
+   "calc-limits-infinity"
+  ],
+  "keyIdea": "An integral is **improper** if a limit is infinite or the integrand is unbounded somewhere in $[a, b]$. Replace the problem point with a variable and take a limit:\n$$\\int_a^\\infty f(x)\\,dx = \\lim_{t\\to\\infty}\\int_a^t f(x)\\,dx, \\qquad \\int_a^b f(x)\\,dx = \\lim_{t\\to a^+}\\int_t^b f(x)\\,dx \\ \\text{ (if } f \\text{ is unbounded at } a\\text{)}$$\nIt **converges** if the limit is a finite number; otherwise it **diverges**.\n\nIf the bad point is inside the interval, split there; both pieces must converge.\n\nBenchmarks: $\\int_1^\\infty \\frac{1}{x^p}\\,dx$ converges only for $p > 1$; $\\int_0^1 \\frac{1}{x^p}\\,dx$ converges only for $p < 1$; $p = 1$ diverges in both.\n\nUseful limits as $t \\to \\infty$: $e^{-t} \\to 0$, $\\frac{1}{t} \\to 0$, $\\ln t \\to \\infty$, $t^n e^{-t} \\to 0$.",
+  "workedExamples": [
+   {
+    "question": "Evaluate, or show divergence: (a) $\\displaystyle\\int_1^\\infty \\frac{3}{x^2}\\,dx$ $\\quad$ (b) $\\displaystyle\\int_0^4 \\frac{1}{\\sqrt{x}}\\,dx$",
+    "solution": "(a) Infinite upper limit:\n$$\\int_1^\\infty \\frac{3}{x^2}\\,dx = \\lim_{t\\to\\infty}\\left[-\\frac{3}{x}\\right]_1^t = \\lim_{t\\to\\infty}\\left(-\\frac{3}{t} + 3\\right) = 3$$\nConverges to $3$.\n\n(b) $\\frac{1}{\\sqrt{x}}$ is unbounded at $x = 0$:\n$$\\int_0^4 x^{-\\frac{1}{2}}\\,dx = \\lim_{t\\to 0^+}\\Big[2\\sqrt{x}\\Big]_t^4 = \\lim_{t\\to 0^+}\\left(4 - 2\\sqrt{t}\\right) = 4$$\nConverges to $4$."
+   },
+   {
+    "question": "A student writes $\\displaystyle\\int_{-1}^{1} \\frac{1}{x^2}\\,dx = \\left[-\\frac{1}{x}\\right]_{-1}^{1} = -1 - 1 = -2$. Explain why this is wrong and determine whether the integral converges.",
+    "solution": "A positive integrand cannot give a negative integral. The problem is that $\\frac{1}{x^2}$ is unbounded at $x = 0$, inside the interval, so the integral is improper and must be split:\n$$\\int_{-1}^{1} \\frac{1}{x^2}\\,dx = \\int_{-1}^{0} \\frac{1}{x^2}\\,dx + \\int_{0}^{1} \\frac{1}{x^2}\\,dx$$\n\n$$\\int_0^1 \\frac{1}{x^2}\\,dx = \\lim_{t\\to 0^+}\\left[-\\frac{1}{x}\\right]_t^1 = \\lim_{t\\to 0^+}\\left(-1 + \\frac{1}{t}\\right) = \\infty$$\n\nOne piece diverges, so the whole integral **diverges**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Integrates straight through a discontinuity inside the interval: $\\int_{-1}^{1} \\frac{1}{x^2}\\,dx = \\left[-\\frac{1}{x}\\right]_{-1}^{1} = -2$.",
+    "correction": "Check for points where the integrand is undefined before evaluating. $\\frac{1}{x^2}$ is unbounded at $x = 0$, so split at $0$; $\\int_0^1 \\frac{1}{x^2}\\,dx$ diverges, so the integral diverges."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks that if $f(x) \\to 0$ as $x \\to \\infty$ then $\\int_1^\\infty f(x)\\,dx$ converges, e.g. '$\\frac{1}{x} \\to 0$, so $\\int_1^\\infty \\frac{1}{x}\\,dx$ converges'.",
+    "correction": "The function tending to $0$ is necessary but not enough. $\\int_1^\\infty \\frac{1}{x}\\,dx = \\lim_{t\\to\\infty}\\ln t = \\infty$, so it diverges; $\\frac{1}{x}$ does not decay fast enough."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the $p$-rule for $[1, \\infty)$ near $0$: '$\\int_1^\\infty \\frac{1}{x^2}\\,dx$ converges, so $\\int_0^1 \\frac{1}{x^2}\\,dx$ converges too'.",
+    "correction": "Near $0$ the condition reverses: $\\int_0^1 \\frac{1}{x^p}\\,dx$ converges only for $p < 1$. $\\int_0^1 \\frac{1}{x^2}\\,dx = \\lim_{t\\to 0^+}\\left(\\frac{1}{t} - 1\\right) = \\infty$, which diverges."
+   },
+   {
+    "id": "m4",
+    "text": "Uses one symmetric limit for a doubly infinite integral: $\\int_{-\\infty}^{\\infty} x\\,dx = \\lim_{t\\to\\infty}\\int_{-t}^{t} x\\,dx = 0$, so 'it converges to $0$'.",
+    "correction": "Split at any point and treat each end separately: $\\int_0^\\infty x\\,dx = \\lim_{t\\to\\infty}\\frac{t^2}{2} = \\infty$. Since one piece diverges, $\\int_{-\\infty}^{\\infty} x\\,dx$ diverges; $\\infty - \\infty$ is not $0$."
+   }
+  ]
+ },
+ {
+  "id": "calc-arc-length",
+  "prerequisites": [
+   "calc-definite-integrals-area",
+   "calc-parametric-vector-differentiation",
+   "calc-integration-substitution",
+   "geo-pythagoras"
+  ],
+  "keyIdea": "On a tiny piece of curve, Pythagoras gives $(ds)^2 = (dx)^2 + (dy)^2$. Adding up the pieces:\n\n**For $y = f(x)$, $a \\le x \\le b$:**\n$$L = \\int_a^b \\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2}\\,dx$$\n\n**For a parametric curve $x(t)$, $y(t)$, $t_1 \\le t \\le t_2$ (BC):**\n$$L = \\int_{t_1}^{t_2} \\sqrt{\\left(\\frac{dx}{dt}\\right)^2 + \\left(\\frac{dy}{dt}\\right)^2}\\,dt$$\nFor a particle, the integrand is its speed, so this is the total distance traveled (not the displacement).\n\nSquare the derivative, add, then take the square root; the root does not split over the $+$. Most arc lengths need a calculator; exact answers appear when $1 + (f')^2$ simplifies nicely. An arc is always at least as long as the straight segment joining its ends.",
+  "workedExamples": [
+   {
+    "question": "Find the length of the curve $y = \\frac{2}{3}x^{\\frac{3}{2}}$ from $x = 0$ to $x = 3$.",
+    "solution": "$\\frac{dy}{dx} = x^{\\frac{1}{2}}$, so $\\left(\\frac{dy}{dx}\\right)^2 = x$.\n\n$$L = \\int_0^3 \\sqrt{1 + x}\\,dx = \\left[\\frac{2}{3}(1 + x)^{\\frac{3}{2}}\\right]_0^3 = \\frac{2}{3}\\left(4^{\\frac{3}{2}} - 1\\right) = \\frac{2}{3}(8 - 1) = \\frac{14}{3}$$"
+   },
+   {
+    "question": "A particle moves with $x(t) = 3t^2$ and $y(t) = 2t^3$ for $0 \\le t \\le 1$. Find the total distance traveled by the particle.",
+    "solution": "$\\frac{dx}{dt} = 6t$ and $\\frac{dy}{dt} = 6t^2$.\n\n$$\\text{Speed} = \\sqrt{36t^2 + 36t^4} = 6t\\sqrt{1 + t^2} \\quad (t \\ge 0)$$\n\n$$L = \\int_0^1 6t\\sqrt{1 + t^2}\\,dt = \\Big[2(1 + t^2)^{\\frac{3}{2}}\\Big]_0^1 = 2\\left(2\\sqrt{2} - 1\\right) = 4\\sqrt{2} - 2 \\approx 3.657$$\n\n(Check: the straight-line distance from $(0, 0)$ to $(3, 2)$ is $\\sqrt{13} \\approx 3.606$, which is slightly less, as it should be.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to square the derivative: uses $L = \\int_a^b \\sqrt{1 + f'(x)}\\,dx$, e.g. $\\int_0^3 \\sqrt{1 + \\sqrt{x}}\\,dx$ for $y = \\frac{2}{3}x^{\\frac{3}{2}}$.",
+    "correction": "The formula comes from Pythagoras, so the derivative is squared: $\\sqrt{1 + \\left(x^{\\frac{1}{2}}\\right)^2} = \\sqrt{1 + x}$, giving $L = \\frac{14}{3}$."
+   },
+   {
+    "id": "m2",
+    "text": "Splits the square root over the sum: $\\sqrt{1 + (f'(x))^2} = 1 + f'(x)$, giving $\\int_0^3 \\left(1 + \\sqrt{x}\\right)dx = 3 + 2\\sqrt{3}$.",
+    "correction": "$\\sqrt{a^2 + b^2} \\ne a + b$ (e.g. $\\sqrt{9 + 16} = 5$, not $7$). Simplify inside the root first: $\\sqrt{1 + x}$, and integrate that."
+   },
+   {
+    "id": "m3",
+    "text": "For a parametric curve, uses the coordinates instead of their derivatives: $L = \\int_0^1 \\sqrt{(3t^2)^2 + (2t^3)^2}\\,dt$.",
+    "correction": "Arc length adds up small changes $dx$ and $dy$, so use $\\frac{dx}{dt} = 6t$ and $\\frac{dy}{dt} = 6t^2$: $L = \\int_0^1 \\sqrt{36t^2 + 36t^4}\\,dt = 4\\sqrt{2} - 2$."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the displacement as the distance traveled: 'the particle ends at $(3, 2)$, so it traveled $\\sqrt{3^2 + 2^2} = \\sqrt{13}$'.",
+    "correction": "$\\sqrt{13}$ is the straight-line distance between the endpoints. Distance traveled is the arc length $\\int \\text{speed}\\,dt = 4\\sqrt{2} - 2 \\approx 3.657$, which is at least as large."
+   }
+  ]
+ },
+ {
+  "id": "calc-series-convergence",
+  "prerequisites": [
+   "pure-geometric-series",
+   "calc-improper-integrals",
+   "calc-limits-infinity",
+   "calc-lhopital"
+  ],
+  "keyIdea": "$\\sum a_n$ **converges** if its partial sums $S_n$ approach a finite limit. Toolkit:\n\n* **$n$th-term test:** if $\\lim_{n\\to\\infty} a_n \\ne 0$, the series diverges. If the limit is $0$, this test says nothing.\n* **Geometric:** $\\sum ar^n$ converges if and only if $|r| < 1$, with sum $\\frac{\\text{first term}}{1 - r}$.\n* **$p$-series:** $\\sum \\frac{1}{n^p}$ converges if and only if $p > 1$.\n* **Integral test:** for $f$ positive, continuous and decreasing, $\\sum f(n)$ and $\\int_1^\\infty f(x)\\,dx$ both converge or both diverge.\n* **Comparison / limit comparison** with a known geometric or $p$-series.\n* **Ratio test:** $L = \\lim\\left|\\frac{a_{n+1}}{a_n}\\right|$; $L < 1$ converges absolutely, $L > 1$ diverges, $L = 1$ is inconclusive.\n* **Alternating series test:** if $|a_n|$ decreases to $0$, $\\sum (-1)^n |a_n|$ converges.\n\n**Absolute** convergence: $\\sum |a_n|$ converges. **Conditional:** $\\sum a_n$ converges but $\\sum |a_n|$ diverges.",
+  "workedExamples": [
+   {
+    "question": "Determine whether $\\displaystyle\\sum_{n=1}^{\\infty} \\frac{n^2}{3^n}$ converges or diverges.",
+    "solution": "Use the ratio test (powers of $n$ and an exponential):\n$$\\left|\\frac{a_{n+1}}{a_n}\\right| = \\frac{(n + 1)^2}{3^{n+1}}\\cdot\\frac{3^n}{n^2} = \\frac{1}{3}\\left(\\frac{n + 1}{n}\\right)^2$$\n\n$$L = \\lim_{n\\to\\infty}\\frac{1}{3}\\left(1 + \\frac{1}{n}\\right)^2 = \\frac{1}{3}$$\n\nSince $L = \\frac{1}{3} < 1$, the series converges (absolutely)."
+   },
+   {
+    "question": "Does $\\displaystyle\\sum_{n=1}^{\\infty} \\frac{(-1)^{n+1}}{\\sqrt{n}}$ converge absolutely, converge conditionally, or diverge?",
+    "solution": "Absolute values: $\\sum \\frac{1}{\\sqrt{n}} = \\sum \\frac{1}{n^{\\frac{1}{2}}}$ is a $p$-series with $p = \\frac{1}{2} \\le 1$, so it diverges. The series is not absolutely convergent.\n\nAlternating series test: $\\frac{1}{\\sqrt{n}} > 0$, it decreases as $n$ increases, and $\\lim_{n\\to\\infty}\\frac{1}{\\sqrt{n}} = 0$. So the series converges.\n\nIt converges, but not absolutely: the series is **conditionally convergent**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks terms tending to zero guarantees convergence: '$\\frac{1}{n} \\to 0$, so $\\sum \\frac{1}{n}$ converges'.",
+    "correction": "$\\lim a_n = 0$ is necessary but not sufficient. The harmonic series $\\sum \\frac{1}{n}$ is a $p$-series with $p = 1$ and diverges. The $n$th-term test can only prove **divergence**."
+   },
+   {
+    "id": "m2",
+    "text": "Treats a ratio-test limit of $1$ as a verdict: for $\\sum \\frac{1}{n^2}$, $L = \\lim \\frac{n^2}{(n + 1)^2} = 1$, 'so the series diverges'.",
+    "correction": "$L = 1$ means the ratio test is inconclusive. Use another test: $\\sum \\frac{1}{n^2}$ is a $p$-series with $p = 2 > 1$, so it converges."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong first term in a geometric sum: $\\sum_{n=1}^{\\infty}\\left(\\frac{1}{2}\\right)^n = \\frac{1}{1 - \\frac{1}{2}} = 2$.",
+    "correction": "The formula is $\\frac{\\text{first term}}{1 - r}$, and the first term (at $n = 1$) is $\\frac{1}{2}$: the sum is $\\frac{\\frac{1}{2}}{\\frac{1}{2}} = 1$. Write out the first term before using the formula."
+   },
+   {
+    "id": "m4",
+    "text": "Compares in the wrong direction: 'since $\\frac{1}{\\sqrt{n} + 1} < \\frac{1}{\\sqrt{n}}$ and $\\sum \\frac{1}{\\sqrt{n}}$ diverges, $\\sum \\frac{1}{\\sqrt{n} + 1}$ diverges'.",
+    "correction": "Being smaller than a divergent series proves nothing (direct comparison needs smaller than a convergent series, or larger than a divergent one). Use limit comparison: $\\lim \\frac{1/(\\sqrt{n} + 1)}{1/\\sqrt{n}} = \\lim \\frac{\\sqrt{n}}{\\sqrt{n} + 1} = 1$, a positive finite number, so both diverge."
+   }
+  ]
+ },
+ {
+  "id": "calc-taylor-maclaurin",
+  "prerequisites": [
+   "calc-derivatives-exp-log-trig",
+   "calc-chain-product-quotient",
+   "pure-binomial-general",
+   "pure-sigma-recurrence"
+  ],
+  "keyIdea": "The Taylor series of $f$ about $x = a$ is\n$$f(x) = f(a) + f'(a)(x - a) + \\frac{f''(a)}{2!}(x - a)^2 + \\dots = \\sum_{n=0}^{\\infty}\\frac{f^{(n)}(a)}{n!}(x - a)^n$$\nA Maclaurin series is the case $a = 0$; stopping at $(x - a)^n$ gives the Taylor polynomial $P_n(x)$.\n\nStandard Maclaurin series:\n$$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\dots, \\quad \\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\dots, \\quad \\cos x = 1 - \\frac{x^2}{2!} + \\frac{x^4}{4!} - \\dots$$\n$$\\ln(1 + x) = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\dots \\ (-1 < x \\le 1)$$\n\nBuild new series by substituting (replace $x$ by $2x$ or $x^2$, keeping brackets), multiplying, differentiating or integrating term by term.\n\n**Lagrange error bound** (BC): $|f(x) - P_n(x)| \\le \\frac{M}{(n + 1)!}|x - a|^{n+1}$, where $M$ is the maximum of $\\left|f^{(n+1)}\\right|$ between $a$ and $x$.",
+  "workedExamples": [
+   {
+    "question": "(a) Find the third-degree Taylor polynomial $P_3(x)$ for $f(x) = \\ln x$ about $x = 1$.\n\n(b) Use it to estimate $\\ln 1.2$, and use the Lagrange error bound to show the error is less than $0.0004$.",
+    "solution": "(a) Derivatives at $x = 1$:\n$$f(1) = 0, \\quad f'(x) = \\frac{1}{x} \\to 1, \\quad f''(x) = -\\frac{1}{x^2} \\to -1, \\quad f'''(x) = \\frac{2}{x^3} \\to 2$$\n\n$$P_3(x) = 0 + 1(x - 1) - \\frac{1}{2!}(x - 1)^2 + \\frac{2}{3!}(x - 1)^3 = (x - 1) - \\frac{(x - 1)^2}{2} + \\frac{(x - 1)^3}{3}$$\n\n(b) $P_3(1.2) = 0.2 - \\frac{0.04}{2} + \\frac{0.008}{3} = 0.2 - 0.02 + 0.002\\,667 \\approx 0.182\\,67$.\n\n$f^{(4)}(x) = -\\frac{6}{x^4}$, and on $[1, 1.2]$ its size is largest at $x = 1$: $M = 6$.\n$$|\\text{error}| \\le \\frac{6}{4!}(0.2)^4 = \\frac{6}{24}\\times 0.0016 = 0.0004$$\n(The true value is $\\ln 1.2 \\approx 0.182\\,32$, an error of about $0.000\\,35$.)"
+   },
+   {
+    "question": "Find the first three nonzero terms of the Maclaurin series for $\\sin(x^2)$, and hence estimate $\\displaystyle\\int_0^1 \\sin(x^2)\\,dx$.",
+    "solution": "Substitute $x^2$ for $x$ in $\\sin x = x - \\frac{x^3}{3!} + \\frac{x^5}{5!} - \\dots$:\n$$\\sin(x^2) = x^2 - \\frac{(x^2)^3}{6} + \\frac{(x^2)^5}{120} - \\dots = x^2 - \\frac{x^6}{6} + \\frac{x^{10}}{120} - \\dots$$\n\nIntegrate term by term:\n$$\\int_0^1 \\sin(x^2)\\,dx \\approx \\left[\\frac{x^3}{3} - \\frac{x^7}{42} + \\frac{x^{11}}{1320}\\right]_0^1 = \\frac{1}{3} - \\frac{1}{42} + \\frac{1}{1320} \\approx 0.3103$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Leaves out the factorials: writes $P_3(x) = (x - 1) - (x - 1)^2 + 2(x - 1)^3$ for $\\ln x$ about $x = 1$.",
+    "correction": "The coefficient of $(x - a)^n$ is $\\frac{f^{(n)}(a)}{n!}$: $-\\frac{1}{2!} = -\\frac{1}{2}$ and $\\frac{2}{3!} = \\frac{1}{3}$, giving $(x - 1) - \\frac{(x - 1)^2}{2} + \\frac{(x - 1)^3}{3}$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses powers of $x$ for a series about $x = a \\ne 0$: writes $\\ln x \\approx x - \\frac{x^2}{2} + \\frac{x^3}{3}$ for the expansion about $x = 1$.",
+    "correction": "A Taylor series about $a$ is in powers of $(x - a)$: $\\ln x \\approx (x - 1) - \\frac{(x - 1)^2}{2} + \\frac{(x - 1)^3}{3}$. (The version in powers of $x$ is the series for $\\ln(1 + x)$.)"
+   },
+   {
+    "id": "m3",
+    "text": "Substitutes without brackets: $\\sin 2x = 2x - \\frac{2x^3}{3!} + \\dots$.",
+    "correction": "Replace every $x$ by $(2x)$, including inside the powers: $\\sin 2x = 2x - \\frac{(2x)^3}{3!} + \\dots = 2x - \\frac{8x^3}{6} + \\dots = 2x - \\frac{4x^3}{3} + \\dots$"
+   },
+   {
+    "id": "m4",
+    "text": "Uses the wrong derivative and factorial in the Lagrange bound: for $P_3$ writes $|\\text{error}| \\le \\frac{\\max|f'''|}{3!}|x - a|^3$.",
+    "correction": "For $P_n$ the bound uses the **next** derivative: $\\frac{\\max\\left|f^{(n+1)}\\right|}{(n + 1)!}|x - a|^{n+1}$. For $P_3$ of $\\ln x$ at $1.2$: $\\frac{6}{4!}(0.2)^4 = 0.0004$."
+   }
+  ]
+ },
+ {
+  "id": "calc-power-series",
+  "prerequisites": [
+   "calc-taylor-maclaurin",
+   "calc-series-convergence",
+   "alg-absolute-value"
+  ],
+  "keyIdea": "A power series $\\sum c_n(x - a)^n$ is centered at $a$ and converges on an interval centered at $a$.\n\n**Radius:** apply the ratio test to the terms and require the limit to be less than $1$; this gives $|x - a| < R$, the radius of convergence.\n\n**Interval:** the ratio test gives $L = 1$ at the endpoints $x = a \\pm R$, so test each endpoint separately by substituting it ($p$-series, alternating series test, $n$th-term test). The interval may be open, closed or half-open.\n\n**Calculus on series:** differentiating or integrating term by term keeps the same radius $R$, but convergence at the endpoints can change, so recheck them.\n\n**Alternating series error bound:** if a series alternates and its terms decrease in size to $0$, the error from stopping is at most the size of the **first omitted term**, and has the same sign as that term.",
+  "workedExamples": [
+   {
+    "question": "Find the interval of convergence of $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(x - 2)^n}{n\\cdot 3^n}$.",
+    "solution": "Ratio test:\n$$\\left|\\frac{(x - 2)^{n+1}}{(n + 1)3^{n+1}}\\cdot\\frac{n\\cdot 3^n}{(x - 2)^n}\\right| = \\frac{|x - 2|}{3}\\cdot\\frac{n}{n + 1} \\to \\frac{|x - 2|}{3}$$\n\nConverges when $\\frac{|x - 2|}{3} < 1$, i.e. $|x - 2| < 3$, so $-1 < x < 5$ and $R = 3$.\n\n$x = 5$: $\\sum \\frac{3^n}{n\\cdot 3^n} = \\sum \\frac{1}{n}$, the harmonic series, diverges.\n\n$x = -1$: $\\sum \\frac{(-3)^n}{n\\cdot 3^n} = \\sum \\frac{(-1)^n}{n}$ converges by the alternating series test ($\\frac{1}{n}$ decreases to $0$).\n\nInterval of convergence: $-1 \\le x < 5$."
+   },
+   {
+    "question": "Starting from $\\frac{1}{1 + t} = 1 - t + t^2 - t^3 + \\dots$ for $|t| < 1$, find a power series for $\\ln(1 + x)$. Use its first three terms to approximate $\\ln 1.1$ and give a bound for the error.",
+    "solution": "Integrate term by term from $0$ to $x$:\n$$\\ln(1 + x) = \\int_0^x \\frac{1}{1 + t}\\,dt = x - \\frac{x^2}{2} + \\frac{x^3}{3} - \\frac{x^4}{4} + \\dots, \\quad R = 1$$\n\nWith $x = 0.1$:\n$$\\ln 1.1 \\approx 0.1 - \\frac{0.01}{2} + \\frac{0.001}{3} = 0.1 - 0.005 + 0.000\\,333 \\approx 0.095\\,33$$\n\nThe series alternates with terms decreasing to $0$, so the error is at most the first omitted term:\n$$|\\text{error}| \\le \\frac{(0.1)^4}{4} = 0.000\\,025$$\nThat omitted term is negative, so the approximation is an overestimate (true value $\\approx 0.095\\,31$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Stops at the open interval from the ratio test and never checks the endpoints: 'the interval of convergence is $-1 < x < 5$'.",
+    "correction": "The ratio test is inconclusive at $|x - a| = R$. Substitute each endpoint: here $x = -1$ gives a convergent alternating series and $x = 5$ gives the divergent harmonic series, so the interval is $-1 \\le x < 5$."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the center: from $|x - 2| < 3$ writes the interval as $-3 < x < 3$.",
+    "correction": "$|x - 2| < 3$ means $x$ is within $3$ of the center $2$: $-3 < x - 2 < 3$, so $-1 < x < 5$."
+   },
+   {
+    "id": "m3",
+    "text": "Assumes a differentiated series has exactly the same interval, endpoints included: '$\\sum \\frac{x^n}{n^2}$ converges on $-1 \\le x \\le 1$, so its derivative $\\sum \\frac{x^{n-1}}{n}$ converges at $x = 1$'.",
+    "correction": "Only the radius is guaranteed to stay the same. At $x = 1$ the derivative series is $\\sum \\frac{1}{n}$, which diverges, so its interval is $-1 \\le x < 1$. Always retest endpoints after differentiating or integrating."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the last term included as the alternating series error bound: for $\\ln 1.1 \\approx 0.1 - \\frac{0.01}{2} + \\frac{0.001}{3}$, says $|\\text{error}| \\le \\frac{0.001}{3} \\approx 0.000\\,333$.",
+    "correction": "The bound is the size of the **first omitted** term: $\\frac{(0.1)^4}{4} = 0.000\\,025$. The last included term gives a much weaker (though still true) bound and is not what the theorem states."
+   }
+  ]
+ }
+]

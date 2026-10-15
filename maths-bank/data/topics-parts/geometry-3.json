@@ -1,0 +1,88 @@
+[
+ {
+  "id": "geo-foundations-definitions",
+  "prerequisites": [
+   "geo-angle-facts",
+   "alg-linear-equations",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "Geometry starts from three **undefined terms**: point, line and plane. Everything else is defined from them. Notation matters: $\\overleftrightarrow{AB}$ is a line, $\\overrightarrow{AB}$ is a ray starting at $A$ through $B$, $\\overline{AB}$ is a segment, and $AB$ (no bar) is its length, a number.\n\n**Postulates you can use as reasons:**\n* Segment Addition: if $B$ is between $A$ and $C$, then $AB + BC = AC$.\n* Angle Addition: if $D$ is in the interior of $\\angle ABC$, then $m\\angle ABD + m\\angle DBC = m\\angle ABC$.\n\nA midpoint splits a segment into two congruent halves; an angle bisector splits an angle into two congruent angles. Angles are acute, right, obtuse or straight. Adjacent angles share a vertex and a side but no interior points. A linear pair is adjacent and supplementary; vertical angles are congruent. For algebra problems, form an equation from a definition or postulate, solve, then substitute.",
+  "workedExamples": [
+   {
+    "question": "Point $B$ lies between $A$ and $C$ on $\\overline{AC}$. $AB = 2x + 3$, $BC = 3x - 1$ and $AC = 32$.\n\n(a) Find $x$, $AB$ and $BC$.\n\n(b) Point $M$ is the midpoint of $\\overline{AC}$. Find $MB$.",
+    "solution": "**(a)** By the Segment Addition Postulate, $AB + BC = AC$:\n$$(2x + 3) + (3x - 1) = 32$$\n\nCollect like terms:\n$$5x + 2 = 32 \\quad\\Rightarrow\\quad 5x = 30 \\quad\\Rightarrow\\quad x = 6$$\n\nSubstitute back: $AB = 2(6) + 3 = 15$ and $BC = 3(6) - 1 = 17$.\n\nCheck: $15 + 17 = 32$.\n\n**(b)** $M$ is the midpoint, so $AM = \\frac{1}{2}AC = \\frac{1}{2}(32) = 16$.\n\nBoth $B$ and $M$ lie on $\\overline{AC}$, with $AB = 15 < 16 = AM$, so $B$ is between $A$ and $M$. By Segment Addition, $AB + BM = AM$:\n$$MB = 16 - 15 = 1$$"
+   },
+   {
+    "question": "Lines $\\overleftrightarrow{AB}$ and $\\overleftrightarrow{CD}$ intersect at $E$. $m\\angle AEC = (4x + 6)^\\circ$ and $m\\angle BED = (6x - 24)^\\circ$. Find $x$, $m\\angle AEC$ and $m\\angle AED$, giving a reason for each step.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"40\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"131\" y1=\"40\" x2=\"229\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><circle cx=\"40\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><circle cx=\"320\" cy=\"150\" r=\"3\" fill=\"currentColor\"/><circle cx=\"131\" cy=\"40\" r=\"3\" fill=\"currentColor\"/><circle cx=\"229\" cy=\"260\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"140\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><text x=\"320\" y=\"140\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"113\" y=\"40\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><text x=\"237\" y=\"270\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text><text x=\"186\" y=\"142\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">E</text><text x=\"150\" y=\"130\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">(4x + 6)°</text><text x=\"212\" y=\"182\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(6x − 24)°</text></svg>",
+    "solution": "$\\angle AEC$ and $\\angle BED$ are **vertical angles** (formed by two intersecting lines, opposite each other), so they are congruent:\n$$4x + 6 = 6x - 24$$\n\nSolve:\n$$30 = 2x \\quad\\Rightarrow\\quad x = 15$$\n\nSubstitute back: $m\\angle AEC = 4(15) + 6 = 66^\\circ$ (and $m\\angle BED = 6(15) - 24 = 66^\\circ$, as expected).\n\n$\\angle AEC$ and $\\angle AED$ share side $\\overrightarrow{EA}$ and their other sides $\\overrightarrow{EC}$ and $\\overrightarrow{ED}$ are opposite rays, so they form a **linear pair** and are supplementary:\n$$m\\angle AED = 180^\\circ - 66^\\circ = 114^\\circ$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats $\\overrightarrow{AB}$ and $\\overrightarrow{BA}$ as the same ray (or uses ray and line notation interchangeably), not realising a ray has a fixed endpoint and goes on in one direction only.",
+    "correction": "The first letter of a ray is its endpoint: $\\overrightarrow{AB}$ starts at $A$ and passes through $B$; $\\overrightarrow{BA}$ starts at $B$ and goes the other way. Only $\\overline{AB} = \\overline{BA}$ and $\\overleftrightarrow{AB} = \\overleftrightarrow{BA}$ are the same object written two ways."
+   },
+   {
+    "id": "m2",
+    "text": "Writes $\\overline{AB} = 7$ or $AB \\cong CD$, mixing up a segment (a figure) with its length (a number).",
+    "correction": "Lengths are numbers and are **equal**: $AB = 7$, $AB = CD$. Segments are figures and are **congruent**: $\\overline{AB} \\cong \\overline{CD}$. The same applies to angles: $m\\angle 1 = m\\angle 2$ but $\\angle 1 \\cong \\angle 2$."
+   },
+   {
+    "id": "m3",
+    "text": "Given that $M$ is the midpoint of $\\overline{AB}$ with $AM = 3x + 1$ and $AB = 5x + 8$, sets $3x + 1 = 5x + 8$ (treating the half as equal to the whole), getting a negative $x$.",
+    "correction": "A midpoint makes the two **halves** equal: $AM = MB$, and the whole is twice a half: $AB = 2 \\cdot AM$. Here $2(3x + 1) = 5x + 8$, so $x = 6$, $AM = 19$ and $AB = 38$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks any two supplementary angles form a linear pair, or that any two angles sharing a vertex are adjacent / vertical angles.",
+    "correction": "A linear pair must be **adjacent** (common vertex and common side, no shared interior) **and** have non-common sides that are opposite rays; two separate $70^\\circ$ and $110^\\circ$ angles are supplementary but not a linear pair. Vertical angles are the non-adjacent pairs formed by **two intersecting lines**, opposite each other across the vertex."
+   }
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems",
+  "prerequisites": [
+   "geo-foundations-definitions",
+   "geo-two-column-proofs",
+   "geo-congruence",
+   "geo-parallel-lines-angles",
+   "geo-shape-properties"
+  ],
+  "keyIdea": "A **parallelogram** has both pairs of opposite sides parallel. Its theorems: opposite sides are congruent, opposite angles are congruent, consecutive angles are supplementary, and the diagonals bisect each other. Each **converse** proves a quadrilateral is a parallelogram, as does one pair of opposite sides that is both parallel **and** congruent.\n\nSpecial parallelograms add diagonal facts: a **rectangle** has congruent diagonals; a **rhombus** has perpendicular diagonals that bisect its angles; a **square** has all of these.\n\nAn **isosceles trapezoid** has congruent base angles and congruent diagonals. The **midsegment** of a trapezoid is parallel to the bases with length $\\frac{1}{2}(b_1 + b_2)$. A **kite** has perpendicular diagonals, one of which bisects the other, and one pair of congruent opposite angles.\n\nMost proofs draw a diagonal, prove two triangles congruent, then use CPCTC.",
+  "workedExamples": [
+   {
+    "question": "Given: quadrilateral $ABCD$ with $\\overline{AB} \\parallel \\overline{CD}$ and $\\overline{AB} \\cong \\overline{CD}$.\n\nProve: $ABCD$ is a parallelogram.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><polygon points=\"40,220 240,220 320,80 120,80\" fill=\"#3b82f6\" fill-opacity=\"0.12\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"220\" x2=\"320\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"140\" y1=\"212\" x2=\"140\" y2=\"228\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"72\" x2=\"220\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"95,214 103,220 95,226\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"275,74 283,80 275,86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"24\" y=\"240\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><text x=\"244\" y=\"240\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"326\" y=\"76\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><text x=\"104\" y=\"76\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text></svg>",
+    "solution": "**Plan:** draw diagonal $\\overline{AC}$, show $\\triangle ABC \\cong \\triangle CDA$, then use CPCTC to get the second pair of sides parallel.\n\n| Statement | Reason |\n|---|---|\n| 1. $\\overline{AB} \\parallel \\overline{CD}$, $\\overline{AB} \\cong \\overline{CD}$ | Given |\n| 2. Draw diagonal $\\overline{AC}$ | Through any two points there is exactly one line |\n| 3. $\\angle BAC \\cong \\angle DCA$ | Alternate Interior Angles Theorem (transversal $\\overline{AC}$ cuts parallel $\\overline{AB}$ and $\\overline{CD}$) |\n| 4. $\\overline{AC} \\cong \\overline{CA}$ | Reflexive Property of Congruence |\n| 5. $\\triangle ABC \\cong \\triangle CDA$ | SAS (steps 1, 3, 4) |\n| 6. $\\angle BCA \\cong \\angle DAC$ | CPCTC |\n| 7. $\\overline{BC} \\parallel \\overline{AD}$ | Converse of the Alternate Interior Angles Theorem |\n| 8. $ABCD$ is a parallelogram | Definition of a parallelogram (both pairs of opposite sides parallel) |\n\nThis proves the theorem: if one pair of opposite sides of a quadrilateral is both parallel and congruent, the quadrilateral is a parallelogram."
+   },
+   {
+    "question": "(a) The diagonals of rectangle $PQRS$ intersect at $T$. $PT = 3x + 4$ and $QS = 10x - 12$. Find $x$ and $QS$.\n\n(b) A trapezoid has bases of length $3x - 2$ and $18$, and its midsegment has length $2x + 3$. Find $x$ and the length of each base and the midsegment.",
+    "solution": "**(a)** A rectangle is a parallelogram, so its diagonals bisect each other: $PR = 2 \\cdot PT$. A rectangle's diagonals are also congruent: $PR = QS$. So\n$$2(3x + 4) = 10x - 12$$\n$$6x + 8 = 10x - 12 \\quad\\Rightarrow\\quad 20 = 4x \\quad\\Rightarrow\\quad x = 5$$\n\nThen $PT = 3(5) + 4 = 19$ and $QS = 10(5) - 12 = 38$. Check: $2 \\times 19 = 38$.\n\n**(b)** Trapezoid Midsegment Theorem: midsegment $= \\frac{1}{2}(b_1 + b_2)$:\n$$2x + 3 = \\frac{1}{2}\\big((3x - 2) + 18\\big) = \\frac{1}{2}(3x + 16)$$\n\nMultiply both sides by 2:\n$$4x + 6 = 3x + 16 \\quad\\Rightarrow\\quad x = 10$$\n\nBases: $3(10) - 2 = 28$ and $18$. Midsegment: $2(10) + 3 = 23$. Check: $\\frac{1}{2}(28 + 18) = 23$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Assumes the diagonals of every parallelogram are congruent, e.g. setting $AC = BD$ in a general parallelogram $ABCD$.",
+    "correction": "In a general parallelogram the diagonals only **bisect each other** ($AE = EC$, $BE = ED$). Congruent diagonals happen exactly when the parallelogram is a rectangle; a slanted parallelogram has one long and one short diagonal."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks the diagonals of any parallelogram (or any rectangle) are perpendicular and bisect its angles, e.g. writes $m\\angle DAC = \\frac{1}{2}m\\angle DAB$ in a rectangle.",
+    "correction": "Perpendicular diagonals that bisect the vertex angles are rhombus properties (and so also hold in a square). In a non-square rectangle the diagonal splits each $90^\\circ$ angle into two **unequal** angles."
+   },
+   {
+    "id": "m3",
+    "text": "Claims a quadrilateral is a parallelogram because one pair of opposite sides is parallel and the **other** pair is congruent.",
+    "correction": "That condition is also satisfied by an isosceles trapezoid, which is not a parallelogram. The valid test needs the **same** pair of opposite sides to be both parallel and congruent (or use another converse: both pairs of opposite sides congruent, both pairs of opposite angles congruent, or diagonals that bisect each other)."
+   },
+   {
+    "id": "m4",
+    "text": "Finds a trapezoid's midsegment by adding the bases without halving ($b_1 + b_2$), or by averaging the two legs instead of the two bases.",
+    "correction": "The midsegment joins the midpoints of the **legs** and is the **average of the bases**: $\\frac{1}{2}(b_1 + b_2)$. Check that its length lies between the two base lengths."
+   }
+  ]
+ }
+]

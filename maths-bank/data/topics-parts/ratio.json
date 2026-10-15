@@ -1,0 +1,586 @@
+[
+ {
+  "id": "rat-ratio-basics",
+  "prerequisites": [
+   "num-hcf-lcm",
+   "num-fractions-equivalence",
+   "num-decimals-operations",
+   "geo-units-measures"
+  ],
+  "keyIdea": "A ratio $a:b$ compares the sizes of quantities, and **order matters**: boys : girls is not girls : boys.\n\n**Simplify** by dividing every part by the HCF: $12:18 = 2:3$ (HCF 6). A ratio is in simplest form when the parts are whole numbers with no common factor.\n\n**Equivalent ratios** come from multiplying or dividing every part by the same number, which is how a ratio table works: $2:3 = 4:6 = 10:15$.\n\n**Units first**: write both quantities in the same unit, then the units cancel: $50\\text{ cm} : 2\\text{ m} = 50:200 = 1:4$.\n\nClear decimals and fractions by multiplying: $1.5:2 = 3:4$ and $\\frac{1}{2}:\\frac{1}{3} = 3:2$ (multiply by 6).\n\n**Form $1:n$**: divide both parts by the first part, so $4:10 = 1:2.5$ ($n$ may be a decimal).",
+  "workedExamples": [
+   {
+    "question": "(a) Write 45 minutes : 2 hours in its simplest form.\n\n(b) Write $8:20$ in the form $1:n$.",
+    "solution": "(a) Put both quantities in the same units: 2 hours = 120 minutes.\n$$45:120$$\n\nThe HCF of 45 and 120 is 15. Divide both parts by 15:\n$$45:120 = 3:8$$\n\n(b) Divide both parts by the first part, 8:\n$$8:20 = \\frac{8}{8}:\\frac{20}{8} = 1:2.5$$"
+   },
+   {
+    "question": "A biscuit recipe uses flour and butter in the ratio 150 g : 60 g. Complete the ratio table and give the ratio in its simplest form.\n\n| Flour (g) | Butter (g) |\n|---|---|\n| 150 | 60 |\n| 300 | ? |\n| ? | 20 |",
+    "solution": "Row 2: the flour has been multiplied by 2 ($150 \\to 300$), so multiply the butter by 2:\n$$60 \\times 2 = 120 \\text{ g}$$\n\nRow 3: the butter has been divided by 3 ($60 \\to 20$), so divide the flour by 3:\n$$150 \\div 3 = 50 \\text{ g}$$\n\nSimplest form: the HCF of 150 and 60 is 30, so\n$$150:60 = 5:2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Simplifies without converting to the same units, e.g. $50\\text{ cm} : 2\\text{ m} = 50:2 = 25:1$.",
+    "correction": "Convert first: $2\\text{ m} = 200\\text{ cm}$, so $50:200 = 1:4$. Only once both parts are in the same unit can the units be dropped."
+   },
+   {
+    "id": "m2",
+    "text": "Writes the parts in the wrong order. For example, with 12 girls and 8 boys, asked for the ratio of boys to girls, writes $12:8 = 3:2$.",
+    "correction": "Follow the order of the words: boys first, so $8:12 = 2:3$."
+   },
+   {
+    "id": "m3",
+    "text": "Stops before the ratio is fully simplified because they divided by a common factor that is not the HCF, e.g. $24:36 = 12:18$ and leaves it there.",
+    "correction": "Divide by the HCF (12), or keep dividing until no common factor is left: $24:36 = 2:3$. Check that the final parts have no common factor other than 1."
+   },
+   {
+    "id": "m4",
+    "text": "In the form $1:n$, divides by the wrong part, e.g. $4:10 = 1:\\frac{4}{10} = 1:0.4$, or thinks $n$ must be a whole number and writes $4:10 = 2:5$.",
+    "correction": "Divide **both** parts by the first part: $4:10 = \\frac{4}{4}:\\frac{10}{4} = 1:2.5$. In the form $1:n$, $n$ is often a decimal."
+   }
+  ]
+ },
+ {
+  "id": "rat-ratio-sharing",
+  "prerequisites": [
+   "rat-ratio-basics",
+   "num-written-methods"
+  ],
+  "keyIdea": "A ratio tells you how many equal **parts** each share gets. A bar model makes this clear.\n\n**Sharing a total** in $a:b$:\n1. Total parts $= a + b$.\n2. One part $=$ total $\\div (a + b)$.\n3. Multiply by each number in the ratio, then check the shares add to the total.\n\nE.g. share £60 in $2:3$: 5 parts, 1 part $= £12$, so £24 and £36.\n\n**Given one share**: if A : B $= 2:5$ and B gets £35, then 5 parts $= £35$, so 1 part $= £7$ and A gets $2 \\times 7 = £14$.\n\n**Given the difference**: the difference is $b - a$ parts. If red : blue $= 3:7$ and there are 28 more blue, then 4 parts $= 28$.\n\nRatios with three parts work the same way: add all three numbers to get the total parts.",
+  "workedExamples": [
+   {
+    "question": "Share £84 between Ava and Ben in the ratio $2:5$.",
+    "solution": "Total number of parts:\n$$2 + 5 = 7$$\n\nValue of one part:\n$$84 \\div 7 = £12$$\n\nAva gets $2 \\times 12 = £24$ and Ben gets $5 \\times 12 = £60$.\n\nCheck: $24 + 60 = 84$. ✓"
+   },
+   {
+    "question": "A bag contains red and blue counters in the ratio $3:7$. There are 28 more blue counters than red counters. How many counters are in the bag altogether?",
+    "solution": "The difference between blue and red is\n$$7 - 3 = 4 \\text{ parts}$$\n\nSo 4 parts = 28 counters, and\n$$1 \\text{ part} = 28 \\div 4 = 7$$\n\nRed: $3 \\times 7 = 21$. Blue: $7 \\times 7 = 49$.\n\nTotal: $21 + 49 = 70$ counters (or $10 \\times 7 = 70$).\n\nCheck: $49 - 21 = 28$. ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides the total by each number in the ratio instead of by the total number of parts. Sharing £60 in $2:3$: $60 \\div 2 = 30$ and $60 \\div 3 = 20$, giving £30 and £20.",
+    "correction": "First find the total number of parts, $2 + 3 = 5$, so one part is $60 \\div 5 = £12$, giving $£24$ and $£36$. Check the shares add up to £60 (the wrong answer only adds to £50)."
+   },
+   {
+    "id": "m2",
+    "text": "When given one person's share, treats it as the total. A : B $= 2:5$ and B gets £35: writes $35 \\div 7 = 5$, so A gets $2 \\times 5 = £10$.",
+    "correction": "£35 is B's share, which is 5 parts, not 7. So 1 part $= 35 \\div 5 = £7$ and A gets $2 \\times 7 = £14$."
+   },
+   {
+    "id": "m3",
+    "text": "In a difference problem, divides the difference by the total parts. Red : blue $= 3:7$, 28 more blue: writes $28 \\div 10 = 2.8$ per part.",
+    "correction": "The difference corresponds to $7 - 3 = 4$ parts, so 1 part $= 28 \\div 4 = 7$, giving 21 red and 49 blue. A non-whole number of counters is a sign something has gone wrong."
+   }
+  ]
+ },
+ {
+  "id": "rat-ratio-fractions-combining",
+  "prerequisites": [
+   "rat-ratio-sharing",
+   "num-fractions-multiply-divide",
+   "num-hcf-lcm",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "**Ratio ↔ fraction.** If boys : girls $= 3:5$ there are 8 parts, so boys are $\\frac{3}{8}$ of the class and girls $\\frac{5}{8}$. Also, boys $= \\frac{3}{5} \\times$ girls. Going back: if $\\frac{2}{5}$ are boys, then $\\frac{3}{5}$ are girls, so boys : girls $= 2:3$.\n\n**Combining ratios** $a:b$ and $b:c$: make the shared quantity the same number using the LCM. A : B $= 2:3$ and B : C $= 4:5$; LCM of 3 and 4 is 12, so A : B $= 8:12$ and B : C $= 12:15$, giving A : B : C $= 8:12:15$.\n\n**Changes and transfers.** Let the amounts be $ax$ and $bx$. Apply the change to **every** quantity it affects (a gift leaves one person and joins another), write the new ratio as an equation, cross-multiply and solve for $x$.",
+  "workedExamples": [
+   {
+    "question": "The ratio of cats to dogs at a rescue centre is $3:4$. The ratio of dogs to rabbits is $6:5$. Find the ratio cats : dogs : rabbits.",
+    "solution": "Dogs appear in both ratios (4 and 6). The LCM of 4 and 6 is 12.\n\nCats : dogs: multiply by 3\n$$3:4 = 9:12$$\n\nDogs : rabbits: multiply by 2\n$$6:5 = 12:10$$\n\nNow the dogs match, so\n$$\\text{cats} : \\text{dogs} : \\text{rabbits} = 9:12:10$$"
+   },
+   {
+    "question": "Amy and Bea share some money in the ratio $5:3$. Amy then gives Bea £12, and the ratio becomes $7:5$. How much money did Amy have at the start?",
+    "solution": "Let Amy have $5x$ and Bea have $3x$.\n\nAfter the transfer, Amy has $5x - 12$ and Bea has $3x + 12$, so\n$$\\frac{5x - 12}{3x + 12} = \\frac{7}{5}$$\n\nCross-multiply:\n$$5(5x - 12) = 7(3x + 12)$$\n$$25x - 60 = 21x + 84$$\n$$4x = 144 \\quad\\Rightarrow\\quad x = 36$$\n\nAmy had $5 \\times 36 = £180$ (and Bea had £108).\n\nCheck: after the transfer, $168:120$; dividing by 24 gives $7:5$. ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the other part as the denominator when converting a ratio to a fraction: boys : girls $= 3:5$, so \"boys are $\\frac{3}{5}$ of the class\".",
+    "correction": "The whole class is $3 + 5 = 8$ parts, so boys are $\\frac{3}{8}$ of the class. ($\\frac{3}{5}$ compares boys to girls, not boys to the whole class.)"
+   },
+   {
+    "id": "m2",
+    "text": "Converts a fraction to a ratio by using the numerator and denominator directly: \"$\\frac{2}{5}$ of the class are boys, so boys : girls $= 2:5$\".",
+    "correction": "If $\\frac{2}{5}$ are boys then $\\frac{3}{5}$ are girls, so boys : girls $= 2:3$. The denominator is the total, not the other part."
+   },
+   {
+    "id": "m3",
+    "text": "Combines two ratios without matching the shared quantity: A : B $= 2:3$ and B : C $= 4:5$ written as A : B : C $= 2:3:5$ (or $2:4:5$).",
+    "correction": "B must be the same number in both ratios. Scale to the LCM of 3 and 4: A : B $= 8:12$, B : C $= 12:15$, so A : B : C $= 8:12:15$."
+   },
+   {
+    "id": "m4",
+    "text": "In a transfer problem, changes only one of the amounts: Amy ($5x$) gives Bea £12, written as $\\frac{5x}{3x + 12} = \\frac{7}{5}$.",
+    "correction": "Money given away leaves the giver as well as reaching the receiver: the new amounts are $5x - 12$ and $3x + 12$. If something is added or removed from outside, only that quantity changes, so read carefully which amounts change."
+   }
+  ]
+ },
+ {
+  "id": "rat-unit-rates-best-buys",
+  "prerequisites": [
+   "rat-ratio-basics",
+   "num-decimals-operations",
+   "geo-units-measures"
+  ],
+  "keyIdea": "A **unit rate** is the amount for one unit: £3.60 for 4 kg gives $3.60 \\div 4 = £0.90$ per kg.\n\n**Best buys**: compare like with like, using the same units throughout.\n* price per unit (e.g. pence per 100 g): **lower** is better value;\n* amount per £1 or per penny: **higher** is better value;\n* or scale both packs to a common amount.\n\n**Conversions** use a rate as a multiplier. If £1 $=$ €1.16, then pounds → euros: $\\times 1.16$, and euros → pounds: $\\div 1.16$. Ask: should the answer be bigger or smaller?\n\n**Conversion graphs** are straight lines through the origin. Read across to the line and down to the other axis; for values off the graph, use a value you can read and scale it (e.g. €300 $= 3 \\times$ €100).",
+  "workedExamples": [
+   {
+    "question": "Pasta is sold in a 500 g bag for £2.15 or a 750 g bag for £3.15. Which bag is the better value? Show your working.",
+    "solution": "Find the price per 100 g for each bag.\n\n500 g bag: $500 \\text{ g} = 5 \\times 100 \\text{ g}$\n$$2.15 \\div 5 = £0.43 \\text{ per } 100 \\text{ g}$$\n\n750 g bag: $750 \\text{ g} = 7.5 \\times 100 \\text{ g}$\n$$3.15 \\div 7.5 = £0.42 \\text{ per } 100 \\text{ g}$$\n\nThe 750 g bag costs less per 100 g, so it is the better value."
+   },
+   {
+    "question": "The exchange rate is £1 $=$ €1.16.\n\n(a) Change £250 into euros.\n\n(b) Change €87 into pounds.",
+    "solution": "(a) Pounds to euros: there will be more euros, so multiply.\n$$250 \\times 1.16 = 290$$\nSo £250 = €290.\n\n(b) Euros to pounds: there will be fewer pounds, so divide.\n$$87 \\div 1.16 = £75$$\n\nCheck: $75 \\times 1.16 = 87$. ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Works out amount per penny but then picks the smaller value as the better buy. For 500 g at 215p and 750 g at 315p: $500 \\div 215 \\approx 2.33$ g per penny and $750 \\div 315 \\approx 2.38$ g per penny, so \"the 500 g bag is better because 2.33 is smaller\".",
+    "correction": "Grams per penny is how much you get for your money, so **higher** is better: the 750 g bag (2.38 g per penny) is better value. Lower is better only for price per unit."
+   },
+   {
+    "id": "m2",
+    "text": "Compares unit rates in different units. 250 g for £1.20 gives £0.0048 per g; 2 kg for £9 gives £4.50 per kg; concludes the 250 g pack is cheaper because $0.0048 < 4.50$.",
+    "correction": "Use the same unit for both: £4.50 per kg $= 4.50 \\div 1000 = £0.0045$ per g, which is less than £0.0048 per g, so the 2 kg pack is better value."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies by the exchange rate in both directions. With £1 $=$ €1.16, converts €87 to pounds as $87 \\times 1.16 = £100.92$.",
+    "correction": "Going from euros to pounds gives fewer pounds (each pound is worth more than a euro), so divide: $87 \\div 1.16 = £75$. Sense-check whether the answer should be larger or smaller."
+   },
+   {
+    "id": "m4",
+    "text": "Assumes the bigger pack is always the better value without calculating.",
+    "correction": "Bulk is often cheaper per unit but not always (multi-buy offers and small-pack promotions change this). Always work out a comparable unit price, e.g. a 1 kg bag at £2.60 (26p per 100 g) is worse value than a 500 g bag at £1.25 (25p per 100 g)."
+   }
+  ]
+ },
+ {
+  "id": "rat-direct-proportion",
+  "prerequisites": [
+   "rat-unit-rates-best-buys",
+   "num-fractions-multiply-divide",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "Two quantities are in **direct proportion** when multiplying one by a number multiplies the other by the same number, so $\\frac{y}{x}$ stays constant.\n\n**Unitary method**: find the value for one, then multiply. 5 pens cost £3.40, so 1 pen costs £0.68 and 8 pens cost $8 \\times 0.68 = £5.44$.\n\n**Scale factor**: a recipe for 4 people → 6 people: multiply every ingredient by $\\frac{6}{4} = 1.5$. With limited ingredients, the ingredient that makes the **fewest** portions decides the maximum.\n\n**Constant of proportionality** (US: grade 7): $y = kx$ where $k = \\frac{y}{x}$ is the unit rate. Test a table by checking $\\frac{y}{x}$ is the same for every pair.\n\n**Graph**: a straight line **through the origin** with gradient $k$; the point $(1, k)$ is on it. A line with a starting value (e.g. a taxi fare with a fixed charge) is not proportional.",
+  "workedExamples": [
+   {
+    "question": "A recipe for 12 biscuits uses 150 g of flour, 90 g of butter and 2 eggs.\n\n(a) Work out the amounts needed for 18 biscuits.\n\n(b) Jo has 600 g of flour, 270 g of butter and plenty of eggs. What is the greatest number of biscuits she can make?",
+    "solution": "(a) Scale factor:\n$$\\frac{18}{12} = 1.5$$\n\nFlour: $150 \\times 1.5 = 225$ g. Butter: $90 \\times 1.5 = 135$ g. Eggs: $2 \\times 1.5 = 3$.\n\n(b) How many batches does each ingredient allow?\n\nFlour: $600 \\div 150 = 4$ batches, i.e. $4 \\times 12 = 48$ biscuits.\n\nButter: $270 \\div 90 = 3$ batches, i.e. $3 \\times 12 = 36$ biscuits.\n\nThe butter runs out first, so the greatest number is **36 biscuits**."
+   },
+   {
+    "question": "Is $y$ directly proportional to $x$? If so, find the constant of proportionality, write an equation, and find $y$ when $x = 12$.\n\n| $x$ | 2 | 5 | 8 |\n|---|---|---|---|\n| $y$ | 7 | 17.5 | 28 |",
+    "solution": "Work out $\\frac{y}{x}$ for each pair:\n$$\\frac{7}{2} = 3.5, \\quad \\frac{17.5}{5} = 3.5, \\quad \\frac{28}{8} = 3.5$$\n\nThe ratio is constant, so $y$ is directly proportional to $x$ with $k = 3.5$:\n$$y = 3.5x$$\n\nWhen $x = 12$:\n$$y = 3.5 \\times 12 = 42$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses additive instead of multiplicative reasoning: \"4 people need 6 eggs, so 6 people need 8 eggs\" (adding 2 to both).",
+    "correction": "In proportion you multiply, not add. From 4 to 6 people is $\\times 1.5$, so eggs: $6 \\times 1.5 = 9$. Check with the unit rate: $1.5$ eggs per person, $6 \\times 1.5 = 9$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks any straight-line graph shows direct proportion, e.g. a taxi fare $C = 2m + 3$ (£3 plus £2 per mile).",
+    "correction": "Direct proportion needs a straight line **through the origin**. For $C = 2m + 3$: 2 miles costs £7 but 4 miles costs £11, not £14, so doubling the distance does not double the cost."
+   },
+   {
+    "id": "m3",
+    "text": "Finds the constant of proportionality the wrong way up: from the point $(4, 10)$ writes $k = \\frac{4}{10} = 0.4$ and $y = 0.4x$.",
+    "correction": "For $y = kx$, $k = \\frac{y}{x} = \\frac{10}{4} = 2.5$, so $y = 2.5x$. Check with the point: $2.5 \\times 4 = 10$ ✓, whereas $0.4 \\times 4 = 1.6$ ✗."
+   },
+   {
+    "id": "m4",
+    "text": "In a limited-ingredients problem, uses the ingredient that allows the **most** portions: with 600 g flour (48 biscuits' worth) and 270 g butter (36 biscuits' worth), answers 48 biscuits.",
+    "correction": "Every ingredient must be available, so the one that runs out first limits the recipe. The answer is the **smallest** number of portions: 36 biscuits."
+   }
+  ]
+ },
+ {
+  "id": "rat-inverse-proportion",
+  "prerequisites": [
+   "rat-direct-proportion",
+   "alg-substitution-formulae"
+  ],
+  "keyIdea": "$y$ is **inversely proportional** to $x$ (US: $y$ varies inversely as $x$) when multiplying $x$ by a number **divides** $y$ by the same number. The product stays constant:\n$$xy = k \\quad\\Leftrightarrow\\quad y = \\frac{k}{x}$$\n\n**Workers / time problems**: find the total amount of work. 4 workers take 6 days, so the job is $4 \\times 6 = 24$ worker-days; 3 workers take $24 \\div 3 = 8$ days. This assumes everyone works at the same rate.\n\n**Test a table**: is $xy$ the same for every pair?\n\n**Graph**: $y = \\frac{k}{x}$ is a curve (a reciprocal graph) that gets closer and closer to both axes but never touches them. It is **not** a straight line and does not pass through the origin.\n\nSense check: more workers → less time.",
+  "workedExamples": [
+   {
+    "question": "6 machines can complete an order in 10 hours. All machines work at the same rate.\n\n(a) How long would 4 machines take?\n\n(b) How many machines are needed to complete the order in 5 hours?",
+    "solution": "Total work:\n$$6 \\times 10 = 60 \\text{ machine-hours}$$\n\n(a) With 4 machines:\n$$60 \\div 4 = 15 \\text{ hours}$$\n(Fewer machines, so it takes longer. ✓)\n\n(b) In 5 hours:\n$$60 \\div 5 = 12 \\text{ machines}$$"
+   },
+   {
+    "question": "$y$ is inversely proportional to $x$. When $x = 3$, $y = 8$.\n\n(a) Find $y$ when $x = 6$.\n\n(b) Find $x$ when $y = 2$.",
+    "solution": "$y = \\frac{k}{x}$, so $k = xy = 3 \\times 8 = 24$ and\n$$y = \\frac{24}{x}$$\n\n(a) $y = \\frac{24}{6} = 4$ (doubling $x$ halves $y$ ✓).\n\n(b) $2 = \\frac{24}{x}$, so $x = \\frac{24}{2} = 12$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats an inverse situation as direct proportion: 6 machines take 10 hours, so 4 machines take $10 \\times \\frac{4}{6} = 6.67$ hours.",
+    "correction": "Fewer machines must take **longer**. Use the constant product: $6 \\times 10 = 60$ machine-hours, so 4 machines take $60 \\div 4 = 15$ hours."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks inverse proportion means \"one goes up by an amount, the other goes down by the same amount\": 4 workers take 6 days, so 5 workers take 5 days.",
+    "correction": "Inverse proportion is multiplicative: the product is constant. $4 \\times 6 = 24$ worker-days, so 5 workers take $24 \\div 5 = 4.8$ days."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks the graph of inverse proportion is a straight line sloping down, e.g. chooses $y = 12 - x$ as an inverse proportion graph.",
+    "correction": "Check the product: on $y = 12 - x$, $(2, 10)$ gives $xy = 20$ but $(6, 6)$ gives $xy = 36$, so it is not inverse proportion. Inverse proportion graphs are curves $y = \\frac{k}{x}$ that never meet the axes."
+   }
+  ]
+ },
+ {
+  "id": "rat-proportion-equations",
+  "prerequisites": [
+   "rat-direct-proportion",
+   "rat-inverse-proportion",
+   "num-powers-roots",
+   "alg-rearranging-formulae"
+  ],
+  "keyIdea": "\"$y$ is directly proportional to $x^n$\": $y \\propto x^n \\Rightarrow y = kx^n$.\n\"$y$ is inversely proportional to $x^n$\": $y \\propto \\frac{1}{x^n} \\Rightarrow y = \\frac{k}{x^n}$.\n\n**Method**\n1. Write the equation with $k$.\n2. Substitute the known pair to find $k$.\n3. Write the formula, then use it.\n\nE.g. $y \\propto x^2$ and $y = 45$ when $x = 3$: $45 = k \\times 3^2 = 9k$, so $k = 5$ and $y = 5x^2$.\n\n**Scaling**: if $y \\propto x^2$, multiplying $x$ by 3 multiplies $y$ by $3^2 = 9$. If $y \\propto \\frac{1}{\\sqrt{x}}$, multiplying $x$ by 4 divides $y$ by 2.\n\n**Joint variation** (US): $z$ varies jointly as $x$ and $y$ means $z = kxy$; combined variation, e.g. $z = \\frac{kx}{y^2}$.",
+  "workedExamples": [
+   {
+    "question": "$d$ is inversely proportional to the square of $r$. When $r = 3$, $d = 20$.\n\n(a) Find a formula for $d$ in terms of $r$.\n\n(b) Find $d$ when $r = 6$.\n\n(c) Find the positive value of $r$ when $d = 1.25$.",
+    "solution": "(a) $d = \\frac{k}{r^2}$. Substitute $r = 3$, $d = 20$:\n$$20 = \\frac{k}{9} \\quad\\Rightarrow\\quad k = 180$$\n$$d = \\frac{180}{r^2}$$\n\n(b)\n$$d = \\frac{180}{6^2} = \\frac{180}{36} = 5$$\n\n(c)\n$$1.25 = \\frac{180}{r^2} \\quad\\Rightarrow\\quad r^2 = \\frac{180}{1.25} = 144 \\quad\\Rightarrow\\quad r = 12$$"
+   },
+   {
+    "question": "The power $P$ generated by a wind turbine is proportional to the cube of the wind speed $v$. The wind speed increases by 20%. Find the percentage increase in $P$.",
+    "solution": "$P = kv^3$. The new speed is $1.2v$, so the new power is\n$$k(1.2v)^3 = 1.2^3 \\times kv^3 = 1.728P$$\n\nSo $P$ is multiplied by $1.728$, an increase of $72.8\\%$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Ignores the power when finding $k$: for $y \\propto x^2$ with $y = 45$ when $x = 3$, writes $k = \\frac{45}{3} = 15$.",
+    "correction": "Substitute into $y = kx^2$: $45 = k \\times 3^2 = 9k$, so $k = 5$. The formula is $y = 5x^2$; check $5 \\times 9 = 45$ ✓."
+   },
+   {
+    "id": "m2",
+    "text": "For inverse proportion, divides instead of multiplies when finding $k$: $d = \\frac{k}{r^2}$ with $d = 20$, $r = 3$ gives $k = \\frac{20}{9}$.",
+    "correction": "From $20 = \\frac{k}{9}$, multiply both sides by 9: $k = 20 \\times 9 = 180$. For inverse proportion, $k = d \\times r^2$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies by the power instead of raising to it when scaling: \"$y \\propto x^2$, so if $x$ is tripled, $y$ is multiplied by $3 \\times 2 = 6$\".",
+    "correction": "$y = k(3x)^2 = 9kx^2$, so $y$ is multiplied by $3^2 = 9$. The scale factor is raised to the power."
+   },
+   {
+    "id": "m4",
+    "text": "Multiplies a percentage change by the power: \"$P \\propto v^3$ and $v$ increases by 20%, so $P$ increases by $3 \\times 20\\% = 60\\%$\".",
+    "correction": "Use the multiplier: $1.2^3 = 1.728$, so $P$ increases by $72.8\\%$. Percentage changes compound; they do not add."
+   }
+  ]
+ },
+ {
+  "id": "rat-percentages-of-amounts",
+  "prerequisites": [
+   "num-fdp-conversions",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "Per cent means \"out of 100\": $35\\% = \\frac{35}{100} = 0.35$.\n\n**Without a calculator**, build from easy percentages:\n* $10\\%$: divide by 10; $1\\%$: divide by 100;\n* $50\\%$: halve; $25\\%$: divide by 4; $5\\%$: half of $10\\%$.\n\nE.g. $35\\%$ of £240: $10\\% = 24$, so $30\\% = 72$; $5\\% = 12$; total £84. Similarly $17.5\\% = 10\\% + 5\\% + 2.5\\%$. Handy swap: $x\\%$ of $y$ $=$ $y\\%$ of $x$, e.g. $8\\%$ of 50 $= 50\\%$ of 8 $= 4$.\n\n**With a calculator**, multiply by the decimal: $0.35 \\times 240 = 84$.\n\n**One quantity as a percentage of another**:\n$$\\frac{\\text{part}}{\\text{whole}} \\times 100$$\nwith both in the **same units**: 45 cm as a percentage of 2 m is $\\frac{45}{200} \\times 100 = 22.5\\%$.",
+  "workedExamples": [
+   {
+    "question": "Without a calculator, work out $17.5\\%$ of £360.",
+    "solution": "Build $17.5\\%$ from $10\\% + 5\\% + 2.5\\%$.\n\n$10\\%$ of 360: $360 \\div 10 = 36$\n\n$5\\%$ is half of $10\\%$: $36 \\div 2 = 18$\n\n$2.5\\%$ is half of $5\\%$: $18 \\div 2 = 9$\n\n$$17.5\\% = 36 + 18 + 9 = £63$$"
+   },
+   {
+    "question": "Sam scored 42 out of 60 in a French test and 54 out of 75 in a Spanish test. In which test did Sam do better?",
+    "solution": "Write each score as a percentage of the total.\n\nFrench:\n$$\\frac{42}{60} \\times 100 = 70\\%$$\n\nSpanish:\n$$\\frac{54}{75} \\times 100 = 72\\%$$\n\nSam did better in Spanish ($72\\% > 70\\%$), even though the raw scores are not directly comparable."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds $5\\%$ by dividing by 5 (or $1\\%$ by dividing by 10): $5\\%$ of 240 $= 240 \\div 5 = 48$.",
+    "correction": "Dividing by 5 gives $20\\%$. $5\\%$ is half of $10\\%$: $240 \\div 10 = 24$, then $24 \\div 2 = 12$. Similarly $1\\%$ means divide by 100."
+   },
+   {
+    "id": "m2",
+    "text": "Writes the fraction the wrong way up when finding one quantity as a percentage of another: 42 out of 60 as $\\frac{60}{42} \\times 100 \\approx 142.9\\%$.",
+    "correction": "The part goes on top and the whole underneath: $\\frac{42}{60} \\times 100 = 70\\%$. A part of a whole cannot be more than $100\\%$."
+   },
+   {
+    "id": "m3",
+    "text": "Does not convert to the same units: 45 cm as a percentage of 2 m written as $\\frac{45}{2} \\times 100 = 2250\\%$.",
+    "correction": "Convert first: $2\\text{ m} = 200\\text{ cm}$, so $\\frac{45}{200} \\times 100 = 22.5\\%$."
+   },
+   {
+    "id": "m4",
+    "text": "Converts a single-digit percentage to the wrong decimal: $5\\% = 0.5$, so $5\\%$ of 80 $= 0.5 \\times 80 = 40$.",
+    "correction": "$5\\% = \\frac{5}{100} = 0.05$ (while $0.5 = 50\\%$). So $5\\%$ of $80 = 0.05 \\times 80 = 4$."
+   }
+  ]
+ },
+ {
+  "id": "rat-percentage-change",
+  "prerequisites": [
+   "rat-percentages-of-amounts",
+   "num-fdp-conversions"
+  ],
+  "keyIdea": "**Multipliers**: an increase of $r\\%$ is $\\times\\left(1 + \\frac{r}{100}\\right)$; a decrease of $r\\%$ is $\\times\\left(1 - \\frac{r}{100}\\right)$.\nIncrease $15\\% \\to \\times 1.15$; decrease $15\\% \\to \\times 0.85$; increase $3\\% \\to \\times 1.03$.\n$$\\text{new} = \\text{original} \\times \\text{multiplier}$$\n\n**Percentage change**: always divide by the **original**:\n$$\\text{percentage change} = \\frac{\\text{change}}{\\text{original}} \\times 100$$\nE.g. £80 to £92: $\\frac{12}{80} \\times 100 = 15\\%$ increase. Or: $\\frac{92}{80} = 1.15$, so $+15\\%$.\n\nSuccessive changes multiply: up $15\\%$ then down $15\\%$ is $\\times 1.15 \\times 0.85 = \\times 0.9775$, which is **not** back to the start.\n\n**Percent error** (US):\n$$\\frac{|\\text{measured} - \\text{actual}|}{\\text{actual}} \\times 100\\%$$",
+  "workedExamples": [
+   {
+    "question": "A jacket costs £64. Its price is increased by $15\\%$. Later, the new price is reduced by $15\\%$. Find the final price and explain why it is not £64.",
+    "solution": "Increase by $15\\%$: multiplier $1.15$\n$$64 \\times 1.15 = £73.60$$\n\nDecrease by $15\\%$: multiplier $0.85$\n$$73.60 \\times 0.85 = £62.56$$\n\nThe $15\\%$ decrease is $15\\%$ of a **larger** amount (£73.60) than the $15\\%$ increase was (£64), so more is taken off than was added. Overall the multiplier is $1.15 \\times 0.85 = 0.9775$, a $2.25\\%$ decrease."
+   },
+   {
+    "question": "(a) A town's population rose from 2400 to 2760. Find the percentage increase.\n\n(b) Mia estimated the mass of an apple as 50 g. Its actual mass was 40 g. Find the percent error.",
+    "solution": "(a) Change $= 2760 - 2400 = 360$.\n$$\\frac{360}{2400} \\times 100 = 15\\%$$\n\n(b) Divide the error by the **actual** value:\n$$\\frac{|50 - 40|}{40} \\times 100\\% = \\frac{10}{40} \\times 100\\% = 25\\%$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides the change by the new value: £80 to £92 gives $\\frac{12}{92} \\times 100 \\approx 13.0\\%$.",
+    "correction": "Percentage change is always relative to the **original**: $\\frac{12}{80} \\times 100 = 15\\%$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the wrong multiplier, e.g. a $3\\%$ increase on £200 as $200 \\times 1.3 = £260$, or a $15\\%$ decrease as $\\times 0.15$.",
+    "correction": "$3\\% = 0.03$, so the multiplier is $1 + 0.03 = 1.03$: $200 \\times 1.03 = £206$. A $15\\%$ decrease leaves $85\\%$, so multiply by $0.85$ ($\\times 0.15$ finds the amount taken off, not what is left)."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks an increase of $x\\%$ followed by a decrease of $x\\%$ returns to the original amount (e.g. £64 up $15\\%$ then down $15\\%$ is £64).",
+    "correction": "The second percentage is of a different amount. $1.15 \\times 0.85 = 0.9775$, so the result is $2.25\\%$ less than the original: £62.56."
+   },
+   {
+    "id": "m4",
+    "text": "Divides by the measured value when finding percent error: measured 50 g, actual 40 g, so $\\frac{10}{50} \\times 100 = 20\\%$.",
+    "correction": "Percent error compares the error to the **actual** (true) value: $\\frac{10}{40} \\times 100 = 25\\%$."
+   }
+  ]
+ },
+ {
+  "id": "rat-reverse-percentages",
+  "prerequisites": [
+   "rat-percentage-change"
+  ],
+  "keyIdea": "In a reverse percentage problem you know the amount **after** a percentage change and need the original, which is always $100\\%$.\n\nWrite the change as a multiplier:\n$$\\text{original} \\times \\text{multiplier} = \\text{new} \\quad\\Rightarrow\\quad \\text{original} = \\text{new} \\div \\text{multiplier}$$\n\nE.g. after a $20\\%$ discount a price is £48: $0.8x = 48$, so $x = 48 \\div 0.8 = £60$.\nAfter a $15\\%$ increase a value is £230: $230 \\div 1.15 = £200$.\n\nUnitary alternative: $80\\% = £48$, so $1\\% = £0.60$ and $100\\% = £60$.\n\nPrices including VAT at $20\\%$: divide by $1.2$. For several changes, divide by each multiplier (or by their product).\n\n**Never** find the percentage of the new amount and add or subtract it. Always check by applying the change forwards.",
+  "workedExamples": [
+   {
+    "question": "In a sale, all prices are reduced by $30\\%$. A coat costs £84 in the sale. What was its original price?",
+    "solution": "After a $30\\%$ reduction, the sale price is $70\\%$ of the original, multiplier $0.7$.\n$$0.7 \\times \\text{original} = 84$$\n$$\\text{original} = 84 \\div 0.7 = £120$$\n\nCheck: $120 \\times 0.7 = 84$. ✓"
+   },
+   {
+    "question": "The value of an investment increased by $8\\%$ in the first year and then decreased by $10\\%$ in the second year. At the end of the second year it was worth £388.80. Find its value at the start.",
+    "solution": "Overall multiplier:\n$$1.08 \\times 0.9 = 0.972$$\n\nSo\n$$\\text{original} = 388.80 \\div 0.972 = £400$$\n\nCheck: $400 \\times 1.08 = 432$, then $432 \\times 0.9 = 388.80$. ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds the percentage of the new amount and adds it back: a coat is £84 after $30\\%$ off, so $30\\%$ of 84 is 25.20 and the original is $84 + 25.20 = £109.20$.",
+    "correction": "The $30\\%$ was taken off the **original**, not the sale price. £84 is $70\\%$ of the original: $84 \\div 0.7 = £120$. Check: $30\\%$ of 120 is 36 and $120 - 36 = 84$ ✓, whereas $30\\%$ of 109.20 is 32.76, giving £76.44 ✗."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the multiplier (or its opposite) instead of dividing: a value is £230 after a $15\\%$ increase, so the original is $230 \\times 0.85 = £195.50$.",
+    "correction": "Undo a multiplication by dividing: $230 \\div 1.15 = £200$. Check: $200 \\times 1.15 = 230$ ✓, but $195.50 \\times 1.15 = 224.83$ ✗."
+   },
+   {
+    "id": "m3",
+    "text": "Matches the known amount to the wrong percentage: \"after $30\\%$ off the price is £84, so £84 is $30\\%$\" and works out $84 \\div 30 \\times 100 = £280$.",
+    "correction": "After $30\\%$ off, what is left is $100\\% - 30\\% = 70\\%$ of the original, so $70\\% = £84$, $1\\% = £1.20$ and $100\\% = £120$."
+   }
+  ]
+ },
+ {
+  "id": "rat-financial-maths",
+  "prerequisites": [
+   "rat-percentages-of-amounts",
+   "rat-percentage-change"
+  ],
+  "keyIdea": "**Simple interest** is the same every year because it is always worked out on the original amount $P$:\n$$I = \\frac{P \\times R \\times T}{100}$$\n£2000 at $3\\%$ for 4 years: $I = 2000 \\times 0.03 \\times 4 = £240$, so the total is £2240.\n\n**VAT** (UK, $20\\%$) or **sales tax** / **tips** (US): add a percentage, e.g. $\\times 1.2$.\n**Discount**: subtract a percentage, e.g. $25\\%$ off is $\\times 0.75$.\n**Markup / profit**: selling price $=$ cost $\\times (1 + \\text{markup})$.\n**Commission**: a percentage of sales.\n\n**Wages**: hourly rate $\\times$ hours. Overtime at time-and-a-half pays $1.5 \\times$ the hourly rate.\n\n**Bills**: standing charge per day $\\times$ number of days, plus units used $\\times$ price per unit.\n\nGive money answers to 2 decimal places.",
+  "workedExamples": [
+   {
+    "question": "Priya invests £3500 at $2.4\\%$ per year simple interest for 5 years. Work out the total value of her investment after 5 years.",
+    "solution": "Interest per year:\n$$3500 \\times 0.024 = £84$$\n\nInterest for 5 years:\n$$84 \\times 5 = £420$$\n\nTotal value:\n$$3500 + 420 = £3920$$"
+   },
+   {
+    "question": "Josh is paid £12.40 per hour for a 37-hour week. Overtime is paid at time-and-a-half. One week he works 37 hours plus 6 hours of overtime. Work out his pay for the week.",
+    "solution": "Basic pay:\n$$12.40 \\times 37 = £458.80$$\n\nOvertime rate:\n$$12.40 \\times 1.5 = £18.60 \\text{ per hour}$$\n\nOvertime pay:\n$$18.60 \\times 6 = £111.60$$\n\nTotal pay:\n$$458.80 + 111.60 = £570.40$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to multiply by the number of years in simple interest: £2000 at $3\\%$ for 4 years gives interest of $2000 \\times 0.03 = £60$.",
+    "correction": "£60 is one year's interest. Simple interest adds the same amount every year: $60 \\times 4 = £240$."
+   },
+   {
+    "id": "m2",
+    "text": "Gives the interest when the question asks for the total amount (or the total when asked for the interest): \"the investment is worth £240 after 4 years\".",
+    "correction": "The value after 4 years is the original plus the interest: $2000 + 240 = £2240$. Read whether the question asks for the interest earned or the total value."
+   },
+   {
+    "id": "m3",
+    "text": "Adds $1.5$ to the hourly rate for time-and-a-half: overtime at £12.40 per hour becomes $12.40 + 1.5 = £13.90$ per hour.",
+    "correction": "Time-and-a-half means $1.5$ **times** the normal rate: $12.40 \\times 1.5 = £18.60$ per hour."
+   },
+   {
+    "id": "m4",
+    "text": "Includes a daily standing charge only once on a bill: \"standing charge 45p per day\" over a 90-day quarter is added as just £0.45.",
+    "correction": "The standing charge applies every day: $90 \\times 0.45 = £40.50$, which is added on top of the cost of the units used."
+   }
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay",
+  "prerequisites": [
+   "rat-percentage-change",
+   "rat-financial-maths",
+   "num-powers-roots"
+  ],
+  "keyIdea": "In **compound** change the percentage is applied to the **new** amount each time, so you multiply by the same multiplier repeatedly.\n\n**Growth / compound interest**:\n$$A = P\\left(1 + \\frac{r}{100}\\right)^n$$\n**Decay / depreciation**:\n$$A = P\\left(1 - \\frac{r}{100}\\right)^n$$\n\nE.g. £5000 at $4\\%$ compound interest for 3 years: $5000 \\times 1.04^3 = £5624.32$. (Simple interest would give only £5600.) Interest earned $=$ final amount $-$ original.\n\nGeneral growth/decay formulas look like $N = N_0 \\times a^t$: $a > 1$ is growth, $0 < a < 1$ is decay.\n\n\"How many years until…?\": try successive powers until the target is passed.\n\nDifferent rates in different years: multiply the multipliers, e.g. $\\times 1.1 \\times 0.95$.",
+  "workedExamples": [
+   {
+    "question": "A car is bought for £18 000. It depreciates by $15\\%$ each year. Find its value after 3 years.",
+    "solution": "Decrease of $15\\%$: multiplier $0.85$.\n$$18\\,000 \\times 0.85^3$$\n\n$0.85^2 = 0.7225$ and $0.85^3 = 0.614125$, so\n$$18\\,000 \\times 0.614125 = £11\\,054.25$$"
+   },
+   {
+    "question": "£2000 is invested at $3.5\\%$ per year compound interest. After how many whole years will the investment first be worth more than £2500?",
+    "solution": "Value after $n$ years: $2000 \\times 1.035^n$. Try values of $n$:\n\n$n = 6$: $2000 \\times 1.035^6 = £2458.51$ (to the nearest penny), which is less than £2500.\n\n$n = 7$: $2000 \\times 1.035^7 = £2544.56$ (to the nearest penny), which is more than £2500.\n\nSo it first exceeds £2500 after **7 years**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses simple interest when the question says compound: £5000 at $4\\%$ for 3 years as $5000 + 3 \\times 200 = £5600$.",
+    "correction": "With compound interest, each year's interest is on the new balance: $5000 \\times 1.04^3 = £5624.32$. Each year earns slightly more interest than the year before."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the percentage itself as the multiplier for depreciation: $15\\%$ per year for 3 years gives $18\\,000 \\times 0.15^3 = £60.75$.",
+    "correction": "$\\times 0.15$ finds the amount lost, not what remains. Losing $15\\%$ leaves $85\\%$, so use $0.85$: $18\\,000 \\times 0.85^3 = £11\\,054.25$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies by $n$ instead of raising to the power $n$: $5000 \\times 1.04 \\times 3 = £15\\,600$.",
+    "correction": "The multiplier is applied once per year, so it is $1.04 \\times 1.04 \\times 1.04 = 1.04^3$: $5000 \\times 1.04^3 = £5624.32$. Sense check: $4\\%$ a year cannot triple the money in 3 years."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a $15\\%$ decrease per year for 7 years means a total loss of $7 \\times 15\\% = 105\\%$, so the car becomes worthless (or negative).",
+    "correction": "Each year loses $15\\%$ of a **smaller** value, so the value never reaches zero: after 7 years it is $0.85^7 \\approx 0.321$ of the original, a loss of about $68\\%$."
+   }
+  ]
+ },
+ {
+  "id": "rat-speed-distance-time",
+  "prerequisites": [
+   "rat-unit-rates-best-buys",
+   "geo-units-measures"
+  ],
+  "keyIdea": "$$\\text{speed} = \\frac{\\text{distance}}{\\text{time}}, \\qquad \\text{distance} = \\text{speed} \\times \\text{time}, \\qquad \\text{time} = \\frac{\\text{distance}}{\\text{speed}}$$\n\n**Units must match**: for km/h use km and hours. Convert minutes to hours by dividing by 60: 45 minutes $= \\frac{45}{60} = 0.75$ h (not 0.45 h); 1 h 40 min $= 1\\frac{2}{3}$ h. Convert back: $2.4$ h $= 2$ h $+ 0.4 \\times 60$ min $= 2$ h 24 min.\n\n**Average speed** $= \\dfrac{\\text{total distance}}{\\text{total time}}$, not the mean of the speeds.\n\n**Converting speeds**: km/h → m/s: $\\times 1000 \\div 3600$ (that is, $\\div 3.6$), so $72$ km/h $= 20$ m/s. m/s → km/h: $\\times 3.6$.",
+  "workedExamples": [
+   {
+    "question": "A train travels 150 km in 1 hour 40 minutes.\n\n(a) Work out its average speed in km/h.\n\n(b) Convert this speed to m/s.",
+    "solution": "(a) Convert the time to hours:\n$$40 \\text{ min} = \\frac{40}{60} \\text{ h} = \\frac{2}{3} \\text{ h}, \\quad\\text{so}\\quad 1 \\text{ h } 40 \\text{ min} = \\frac{5}{3} \\text{ h}$$\n\n$$\\text{speed} = 150 \\div \\frac{5}{3} = 150 \\times \\frac{3}{5} = 90 \\text{ km/h}$$\n\n(b) 90 km = 90 000 m and 1 h = 3600 s:\n$$\\frac{90\\,000}{3600} = 25 \\text{ m/s}$$"
+   },
+   {
+    "question": "A cyclist rides 60 km at 40 km/h and then a further 60 km at 60 km/h. Find the average speed for the whole journey.",
+    "solution": "Time for each stage:\n$$\\frac{60}{40} = 1.5 \\text{ h}, \\qquad \\frac{60}{60} = 1 \\text{ h}$$\n\nTotal distance $= 120$ km; total time $= 2.5$ h.\n$$\\text{average speed} = \\frac{120}{2.5} = 48 \\text{ km/h}$$\n\n(Not 50 km/h: more time is spent at the slower speed.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats minutes as a decimal part of an hour: 1 h 40 min $= 1.4$ h, so $150 \\div 1.4 \\approx 107.1$ km/h.",
+    "correction": "There are 60 minutes in an hour, so $40 \\text{ min} = \\frac{40}{60} = 0.\\dot{6}$ h and 1 h 40 min $= \\frac{5}{3}$ h: $150 \\div \\frac{5}{3} = 90$ km/h."
+   },
+   {
+    "id": "m2",
+    "text": "Finds average speed by averaging the speeds: 60 km at 40 km/h and 60 km at 60 km/h gives $\\frac{40 + 60}{2} = 50$ km/h.",
+    "correction": "Average speed $=$ total distance $\\div$ total time $= 120 \\div (1.5 + 1) = 48$ km/h. The mean of the speeds only works if equal **times** are spent at each speed."
+   },
+   {
+    "id": "m3",
+    "text": "Converts km/h to m/s in the wrong direction: $90$ km/h $= 90 \\times 3.6 = 324$ m/s.",
+    "correction": "A metre is much smaller than a km but a second is much smaller than an hour; overall the number gets smaller: $90 \\times 1000 \\div 3600 = 25$ m/s. Multiply by 3.6 only to go from m/s to km/h."
+   },
+   {
+    "id": "m4",
+    "text": "Reads a decimal time as hours and minutes: $2.4$ h $= 2$ h 40 min.",
+    "correction": "$0.4$ of an hour is $0.4 \\times 60 = 24$ minutes, so $2.4$ h $= 2$ h 24 min."
+   }
+  ]
+ },
+ {
+  "id": "rat-density-pressure",
+  "prerequisites": [
+   "rat-speed-distance-time",
+   "geo-volume-prisms",
+   "geo-perimeter-area"
+  ],
+  "keyIdea": "A **compound measure** combines two units.\n$$\\text{density} = \\frac{\\text{mass}}{\\text{volume}} \\qquad \\text{pressure} = \\frac{\\text{force}}{\\text{area}} \\qquad \\text{flow rate} = \\frac{\\text{volume}}{\\text{time}}$$\nUnits: g/cm³ or kg/m³; N/m² (pascals, Pa) or N/cm²; litres per minute.\n\nRearrange as needed: mass $=$ density $\\times$ volume, volume $=$ mass $\\div$ density, force $=$ pressure $\\times$ area.\n\n**Units must match**: with density in g/cm³, use mass in g and volume in cm³. Remember $1\\text{ m}^2 = 10\\,000\\text{ cm}^2$ and $1\\text{ m}^3 = 1\\,000\\,000\\text{ cm}^3$.\n\n**Mixtures/alloys**: total mass $\\div$ total volume. Never average the densities.\n\nFor the same force, a larger area gives a smaller pressure.",
+  "workedExamples": [
+   {
+    "question": "(a) A metal cuboid measures 5 cm by 4 cm by 2 cm and has a mass of 312 g. Find its density.\n\n(b) A crate exerts a force of 120 N on the floor. Its base is a rectangle 0.4 m by 0.5 m. Find the pressure on the floor in N/m².",
+    "solution": "(a) Volume:\n$$5 \\times 4 \\times 2 = 40 \\text{ cm}^3$$\n$$\\text{density} = \\frac{312}{40} = 7.8 \\text{ g/cm}^3$$\n\n(b) Area:\n$$0.4 \\times 0.5 = 0.2 \\text{ m}^2$$\n$$\\text{pressure} = \\frac{120}{0.2} = 600 \\text{ N/m}^2$$"
+   },
+   {
+    "question": "An alloy is made by mixing 300 cm³ of metal A (density 8 g/cm³) with 200 cm³ of metal B (density 3 g/cm³). Find the density of the alloy.",
+    "solution": "Mass of each metal (mass $=$ density $\\times$ volume):\n$$A: 8 \\times 300 = 2400 \\text{ g}, \\qquad B: 3 \\times 200 = 600 \\text{ g}$$\n\nTotals: mass $= 3000$ g, volume $= 500$ cm³.\n$$\\text{density} = \\frac{3000}{500} = 6 \\text{ g/cm}^3$$\n\n(Not $\\frac{8 + 3}{2} = 5.5$: there is more of the denser metal.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Averages the densities when combining materials: 300 cm³ at 8 g/cm³ with 200 cm³ at 3 g/cm³ gives $\\frac{8 + 3}{2} = 5.5$ g/cm³.",
+    "correction": "Find the total mass ($2400 + 600 = 3000$ g) and total volume ($500$ cm³), then divide: $3000 \\div 500 = 6$ g/cm³."
+   },
+   {
+    "id": "m2",
+    "text": "Rearranges the formula incorrectly, e.g. finds volume as density $\\times$ mass: density 7.8 g/cm³ and mass 312 g gives volume $= 7.8 \\times 312 = 2433.6$ cm³.",
+    "correction": "From density $= \\frac{\\text{mass}}{\\text{volume}}$, volume $= \\frac{\\text{mass}}{\\text{density}} = \\frac{312}{7.8} = 40$ cm³. Check the units: $\\text{g} \\div \\text{g/cm}^3 = \\text{cm}^3$."
+   },
+   {
+    "id": "m3",
+    "text": "Converts area units using a linear factor: thinks $1\\text{ m}^2 = 100\\text{ cm}^2$, so $600\\text{ N/m}^2 = 6\\text{ N/cm}^2$.",
+    "correction": "$1\\text{ m}^2 = 100\\text{ cm} \\times 100\\text{ cm} = 10\\,000\\text{ cm}^2$, so $600\\text{ N/m}^2 = 600 \\div 10\\,000 = 0.06\\text{ N/cm}^2$."
+   }
+  ]
+ },
+ {
+  "id": "rat-scale-drawings-maps",
+  "prerequisites": [
+   "rat-ratio-basics",
+   "geo-units-measures"
+  ],
+  "keyIdea": "A map scale $1:n$ means 1 unit on the map represents $n$ of the **same** unit in real life. On a $1:25\\,000$ map, 1 cm represents $25\\,000$ cm $= 250$ m.\n\n**Map → real**: multiply by $n$, then convert units (cm $\\div 100 \\to$ m, $\\div 1000 \\to$ km).\n\n**Real → map**: convert the real length into the map unit (usually cm), then divide by $n$.\n\nA scale like \"1 cm to 5 km\" becomes $1:n$ by writing both in cm: $5\\text{ km} = 500\\,000$ cm, so $1:500\\,000$.\n\n**Scale drawings**: every length is multiplied by the same scale factor, while angles stay the same. To find a real length, measure carefully on the drawing and multiply by the scale factor.",
+  "workedExamples": [
+   {
+    "question": "A map has a scale of $1:50\\,000$.\n\n(a) Two villages are 7.2 cm apart on the map. Find the real distance in km.\n\n(b) Two farms are 4.5 km apart. How far apart are they on the map?",
+    "solution": "(a) Map to real: multiply by $50\\,000$.\n$$7.2 \\times 50\\,000 = 360\\,000 \\text{ cm}$$\n$$360\\,000 \\text{ cm} \\div 100 = 3600 \\text{ m}, \\qquad 3600 \\text{ m} \\div 1000 = 3.6 \\text{ km}$$\n\n(b) Real to map: convert to cm, then divide by $50\\,000$.\n$$4.5 \\text{ km} = 4500 \\text{ m} = 450\\,000 \\text{ cm}$$\n$$450\\,000 \\div 50\\,000 = 9 \\text{ cm}$$"
+   },
+   {
+    "question": "(a) A rectangular room is 6 m by 4.5 m. Draw it to a scale of $1:50$: what are the dimensions on the drawing?\n\n(b) Write the scale \"1 cm to 2 km\" in the form $1:n$.",
+    "solution": "(a) Convert to cm: 6 m = 600 cm and 4.5 m = 450 cm. Divide by 50:\n$$600 \\div 50 = 12 \\text{ cm}, \\qquad 450 \\div 50 = 9 \\text{ cm}$$\nThe drawing is a 12 cm by 9 cm rectangle (still with right-angled corners).\n\n(b) Write both in cm: $2 \\text{ km} = 2000 \\text{ m} = 200\\,000$ cm, so the scale is\n$$1:200\\,000$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Converts the real distance with the wrong factor: $7.2 \\times 50\\,000 = 360\\,000$ cm, then divides by 100 only and writes 3600 km.",
+    "correction": "cm → m is $\\div 100$ and m → km is $\\div 1000$, so cm → km is $\\div 100\\,000$: $360\\,000$ cm $= 3.6$ km. Sense check: villages 3600 km apart would not fit on a local map."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies instead of dividing when going from real life to the map: 4.5 km $= 450\\,000$ cm, so the map distance is $450\\,000 \\times 50\\,000$ cm (or $4.5 \\times 50\\,000 = 225\\,000$ cm).",
+    "correction": "Map lengths are **smaller** than real lengths, so divide by the scale number: $450\\,000 \\div 50\\,000 = 9$ cm."
+   },
+   {
+    "id": "m3",
+    "text": "Writes a scale with mixed units as a ratio directly: \"1 cm to 5 km\" becomes $1:5$ (or $1:5000$).",
+    "correction": "A ratio scale has no units, so both parts must be in the same unit: $5 \\text{ km} = 500\\,000$ cm, giving $1:500\\,000$."
+   }
+  ]
+ }
+]

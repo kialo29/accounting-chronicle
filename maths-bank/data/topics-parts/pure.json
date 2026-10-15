@@ -1,0 +1,898 @@
+[
+ {
+  "id": "pure-proof",
+  "prerequisites": [
+   "alg-algebraic-proof",
+   "num-rational-irrational",
+   "num-factors-multiples-primes"
+  ],
+  "keyIdea": "A proof must work for **every** case, not just the ones you try.\n\n* **Deduction:** start from known facts and reason step by step. Write an even number as $2n$, an odd number as $2n+1$, consecutive integers as $n$ and $n+1$ (use different letters for independent numbers).\n* **Exhaustion:** split into a finite set of cases that covers everything (e.g. $n = 3k,\\ 3k+1,\\ 3k+2$) and prove each one.\n* **Disproof by counter-example:** one example where the statement fails is enough to disprove it.\n* **Contradiction:** assume the statement is false, deduce something impossible, so the statement must be true. Classics: $\\sqrt{2}$ is irrational (assume $\\sqrt{2} = \\frac{a}{b}$ in lowest terms) and there are infinitely many primes.\n\nAlways finish with a concluding sentence.",
+  "workedExamples": [
+   {
+    "question": "Prove by exhaustion that the square of any integer is either a multiple of 3 or one more than a multiple of 3.",
+    "solution": "Every integer $n$ can be written as $3k$, $3k+1$ or $3k+2$ for some integer $k$, so check all three cases.\n\n**Case 1:** $n = 3k$\n$$n^2 = 9k^2 = 3(3k^2)$$\na multiple of 3.\n\n**Case 2:** $n = 3k+1$\n$$n^2 = 9k^2 + 6k + 1 = 3(3k^2 + 2k) + 1$$\none more than a multiple of 3.\n\n**Case 3:** $n = 3k+2$\n$$n^2 = 9k^2 + 12k + 4 = 3(3k^2 + 4k + 1) + 1$$\none more than a multiple of 3.\n\nThe cases cover every integer, so $n^2$ is always of the form $3m$ or $3m+1$."
+   },
+   {
+    "question": "Prove by contradiction that there are infinitely many prime numbers.",
+    "solution": "Assume the opposite: there are finitely many primes, and list all of them as $p_1, p_2, \\ldots, p_n$.\n\nConsider\n$$N = p_1 p_2 p_3 \\cdots p_n + 1$$\n\nDividing $N$ by any prime $p_i$ in the list leaves remainder 1, so no prime in the list divides $N$.\n\n$N > 1$, so either $N$ is itself prime or it has a prime factor. Either way there is a prime that is not in the list.\n\nThis contradicts the assumption that the list contained every prime. Hence there are infinitely many primes."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks that checking several examples proves a statement. E.g. \"$n^2 + n + 41$ is prime for $n = 1, 2, \\ldots, 10$, so it is always prime.\"",
+    "correction": "Examples can only suggest a pattern; a proof must cover every case (deduction or exhaustion over a complete set of cases). Here a counter-example exists: $n = 40$ gives $40^2 + 40 + 41 = 1681 = 41^2$, which is not prime."
+   },
+   {
+    "id": "m2",
+    "text": "In a proof that $\\sqrt{2}$ is irrational, writes \"Assume $\\sqrt{2} = \\frac{a}{b}$\" without saying that $a$ and $b$ are integers with no common factor, so showing that $a$ and $b$ are both even gives no contradiction.",
+    "correction": "The assumption must be: $\\sqrt{2} = \\frac{a}{b}$ where $a, b$ are integers, $b \\ne 0$, and the fraction is in its lowest terms (HCF$(a, b) = 1$). Then $a^2 = 2b^2$ forces $a$ even, $a = 2c$, so $b^2 = 2c^2$ forces $b$ even, contradicting the lowest-terms condition."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the same letter for two independent numbers, e.g. \"Let the two odd numbers be $2n+1$ and $2n+1$\", which only proves the result when the numbers are equal.",
+    "correction": "Independent numbers need different letters: $2m+1$ and $2n+1$. For example their sum is $2m + 2n + 2 = 2(m + n + 1)$, which is even for **all** odd pairs."
+   },
+   {
+    "id": "m4",
+    "text": "Argues backwards from the result: to prove $a^2 + b^2 \\ge 2ab$ starts with $a^2 + b^2 \\ge 2ab$, rearranges to $(a-b)^2 \\ge 0$ and says \"this is true, so proved\".",
+    "correction": "Starting from what you want to prove assumes it. Begin with a known truth and reason forwards: $(a-b)^2 \\ge 0$ for all real $a, b$, so $a^2 - 2ab + b^2 \\ge 0$, hence $a^2 + b^2 \\ge 2ab$. (If you work backwards in rough, rewrite it in the forward direction, checking each step is reversible.)"
+   }
+  ]
+ },
+ {
+  "id": "pure-quadratic-functions-discriminant",
+  "prerequisites": [
+   "alg-quadratic-formula",
+   "alg-completing-the-square",
+   "alg-quadratic-inequalities"
+  ],
+  "keyIdea": "For $ax^2 + bx + c = 0$ the **discriminant** is $b^2 - 4ac$ (the part under the square root in the quadratic formula).\n\n* $b^2 - 4ac > 0$: two distinct real roots (graph crosses the $x$-axis twice)\n* $b^2 - 4ac = 0$: one repeated root (graph touches the $x$-axis)\n* $b^2 - 4ac < 0$: no real roots (graph does not meet the $x$-axis)\n\n\"Real roots\" means $b^2 - 4ac \\ge 0$.\n\n**Parameter problems:** write the discriminant in terms of $k$, then solve an equation or a quadratic inequality (sketch it).\n\n**Tangency:** substitute the line into the curve; the line is a tangent when the resulting quadratic has $b^2 - 4ac = 0$.\n\n**Quadratics in disguise:** e.g. $x^4 - 5x^2 + 4 = 0$ with $u = x^2$, or $x - 5\\sqrt{x} + 6 = 0$ with $u = \\sqrt{x}$; solve for $u$, then convert back.",
+  "workedExamples": [
+   {
+    "question": "Find the set of values of $k$ for which $x^2 + kx + (k + 3) = 0$ has no real roots.",
+    "solution": "Here $a = 1$, $b = k$, $c = k + 3$. No real roots means $b^2 - 4ac < 0$:\n$$k^2 - 4(1)(k + 3) < 0$$\n\nSimplify:\n$$k^2 - 4k - 12 < 0$$\n$$(k - 6)(k + 2) < 0$$\n\nCritical values $k = -2$ and $k = 6$. The graph of $y = (k-6)(k+2)$ is a positive parabola, which is below the axis between its roots:\n$$-2 < k < 6$$"
+   },
+   {
+    "question": "Find the value of $c$ for which the line $y = 2x + c$ is a tangent to the curve $y = x^2 - 4x + 7$, and the coordinates of the point of contact.",
+    "solution": "Set the equations equal:\n$$x^2 - 4x + 7 = 2x + c$$\n$$x^2 - 6x + (7 - c) = 0$$\n\nFor a tangent there is exactly one point of contact, so $b^2 - 4ac = 0$:\n$$(-6)^2 - 4(1)(7 - c) = 0$$\n$$36 - 28 + 4c = 0 \\Rightarrow c = -2$$\n\nThen $x^2 - 6x + 9 = 0$, so $(x - 3)^2 = 0$ and $x = 3$.\n\n$y = 2(3) - 2 = 4$. Point of contact: $(3, 4)$ (check: $3^2 - 12 + 7 = 4$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Drops the sign of a negative coefficient: for $2x^2 - 3x - 5$ writes $b^2 - 4ac = (-3)^2 - 4(2)(5) = -31$ and concludes \"no real roots\".",
+    "correction": "Substitute with signs: $c = -5$, so $b^2 - 4ac = 9 - 4(2)(-5) = 9 + 40 = 49 > 0$: two distinct real roots (in fact $x = -1$ and $x = \\frac{5}{2}$)."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $b^2 - 4ac > 0$ for \"the equation has real roots\", losing the boundary case.",
+    "correction": "\"Real roots\" includes a repeated root, so the condition is $b^2 - 4ac \\ge 0$. Use $> 0$ only for \"two **distinct** real roots\"."
+   },
+   {
+    "id": "m3",
+    "text": "Solves the quadratic inequality in $k$ incorrectly, e.g. $(k - 6)(k + 2) < 0 \\Rightarrow k < 6$ and $k < -2$, or gives $k < -2$ or $k > 6$.",
+    "correction": "Sketch $y = (k - 6)(k + 2)$: it is negative **between** the roots, so $-2 < k < 6$. The outside region $k < -2$ or $k > 6$ is the answer to $> 0$."
+   },
+   {
+    "id": "m4",
+    "text": "In a quadratic in disguise, stops at the substitution or loses the negative roots: $x^4 - 5x^2 + 4 = 0 \\Rightarrow (x^2 - 1)(x^2 - 4) = 0 \\Rightarrow x = 1, 4$ (or $x = 1, 2$ only).",
+    "correction": "With $u = x^2$ the roots are $u = 1$ and $u = 4$; convert back: $x^2 = 1$ or $x^2 = 4$, so $x = \\pm 1$ or $x = \\pm 2$ (four roots)."
+   }
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem",
+  "prerequisites": [
+   "alg-factorising-quadratics",
+   "alg-expand-double-triple",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "**Factor theorem:** $(x - a)$ is a factor of $f(x)$ if and only if $f(a) = 0$. More generally $(px - q)$ is a factor if and only if $f\\left(\\frac{q}{p}\\right) = 0$.\n\n**Remainder theorem:** when $f(x)$ is divided by $(x - a)$ the remainder is $f(a)$; when divided by $(px - q)$ it is $f\\left(\\frac{q}{p}\\right)$.\n\n**Algebraic (long) division:** divide the leading term, multiply back, subtract, bring down; include $0x^2$ etc. for missing terms. Alternatively compare coefficients in $f(x) \\equiv (x - a)(px^2 + qx + r)$.\n\n**Fully factorising a cubic:**\n1. Test factors of the constant term ($\\pm 1, \\pm 2, \\ldots$) until $f(a) = 0$.\n2. Divide by $(x - a)$ to get a quadratic.\n3. Factorise the quadratic (if $b^2 - 4ac < 0$ it does not factorise).\n\nUnknown coefficients: each factor/remainder fact gives one equation.",
+  "workedExamples": [
+   {
+    "question": "$f(x) = 2x^3 - 3x^2 - 11x + 6$. Show that $(x - 3)$ is a factor of $f(x)$ and hence factorise $f(x)$ fully.",
+    "solution": "Factor theorem:\n$$f(3) = 2(27) - 3(9) - 11(3) + 6 = 54 - 27 - 33 + 6 = 0$$\nso $(x - 3)$ is a factor.\n\nDivide $2x^3 - 3x^2 - 11x + 6$ by $(x - 3)$:\n\n$2x^3 \\div x = 2x^2$; $2x^2(x - 3) = 2x^3 - 6x^2$; subtract: $3x^2 - 11x$.\n\n$3x^2 \\div x = 3x$; $3x(x - 3) = 3x^2 - 9x$; subtract: $-2x + 6$.\n\n$-2x \\div x = -2$; $-2(x - 3) = -2x + 6$; subtract: $0$.\n\nSo $f(x) = (x - 3)(2x^2 + 3x - 2)$.\n\nFactorise the quadratic: $2x^2 + 3x - 2 = (2x - 1)(x + 2)$.\n$$f(x) = (x - 3)(2x - 1)(x + 2)$$"
+   },
+   {
+    "question": "$f(x) = x^3 + ax^2 + bx - 6$. $(x - 2)$ is a factor of $f(x)$ and when $f(x)$ is divided by $(x + 1)$ the remainder is $-12$. Find $a$ and $b$.",
+    "solution": "Factor theorem, $f(2) = 0$:\n$$8 + 4a + 2b - 6 = 0 \\Rightarrow 2a + b = -1$$\n\nRemainder theorem, $f(-1) = -12$:\n$$-1 + a - b - 6 = -12 \\Rightarrow a - b = -5$$\n\nAdd the equations: $3a = -6$, so $a = -2$, then $b = -1 - 2a = 3$.\n\nCheck: $f(x) = x^3 - 2x^2 + 3x - 6$, $f(-1) = -1 - 2 - 3 - 6 = -12$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Mixes up the sign in the factor theorem: says \"$f(-2) = 0$, so $(x - 2)$ is a factor\", or tests $f(3)$ to check the factor $(x + 3)$.",
+    "correction": "$(x - a)$ is a factor when $f(a) = 0$: the root is the value that makes the bracket zero. $f(-2) = 0$ means $(x + 2)$ is a factor; to test $(x + 3)$ evaluate $f(-3)$. The same applies to remainders: dividing by $(x + 1)$ gives remainder $f(-1)$."
+   },
+   {
+    "id": "m2",
+    "text": "For a factor such as $(2x - 1)$, evaluates $f(1)$ or $f(2)$ instead of $f\\left(\\frac{1}{2}\\right)$.",
+    "correction": "Solve the bracket equal to zero: $2x - 1 = 0 \\Rightarrow x = \\frac{1}{2}$. So $(2x - 1)$ is a factor iff $f\\left(\\frac{1}{2}\\right) = 0$, and the remainder on dividing by $(2x - 1)$ is $f\\left(\\frac{1}{2}\\right)$."
+   },
+   {
+    "id": "m3",
+    "text": "Leaves out a placeholder for a missing power in long division, e.g. divides $x^3 - 7x + 6$ by $(x - 1)$ as if it were $x^3 - 7x^2 + 6$, so the columns misalign and the quotient is wrong.",
+    "correction": "Write $x^3 + 0x^2 - 7x + 6$ before dividing. Then $x^3 - 7x + 6 = (x - 1)(x^2 + x - 6) = (x - 1)(x - 2)(x + 3)$."
+   },
+   {
+    "id": "m4",
+    "text": "Stops too early when asked to \"factorise fully\", e.g. gives $(x - 3)(2x^2 + 3x - 2)$ as the final answer.",
+    "correction": "Fully factorise means check whether the quadratic factor factorises: $2x^2 + 3x - 2 = (2x - 1)(x + 2)$, so the answer is $(x - 3)(2x - 1)(x + 2)$. Only stop at a quadratic if its discriminant is negative."
+   }
+  ]
+ },
+ {
+  "id": "pure-curve-sketching",
+  "prerequisites": [
+   "alg-graph-shapes",
+   "alg-quadratic-graphs",
+   "alg-graph-transformations",
+   "pure-polynomials-factor-theorem"
+  ],
+  "keyIdea": "To sketch a polynomial, factorise first, then mark:\n\n* **Roots:** $(x - a)$ gives the root $x = a$.\n* **Multiplicity:** a single root crosses the $x$-axis; a **double** root $(x - a)^2$ touches it (turning point on the axis); a **triple** root $(x - a)^3$ crosses with a flat point of inflection.\n* **$y$-intercept:** put $x = 0$.\n* **End behaviour** from the leading term: $+x^3$ goes bottom-left to top-right, $-x^3$ top-left to bottom-right; $+x^4$ has both ends up, $-x^4$ both down.\n\n**Reciprocal graphs:** $y = \\frac{k}{x}$ (branches in the 1st and 3rd quadrants if $k > 0$), $y = \\frac{k}{x^2}$ (both branches above the $x$-axis if $k > 0$). Asymptotes $x = 0$ and $y = 0$; the curve never meets them.\n\n**Intersections:** the number of points where $y = f(x)$ and $y = g(x)$ meet equals the number of real solutions of $f(x) = g(x)$.",
+  "workedExamples": [
+   {
+    "question": "Sketch the curve $y = (x + 1)(x - 2)^2$, showing the coordinates of the points where it meets the axes.",
+    "solution": "**Roots:** $x = -1$ (single, so the curve crosses) and $x = 2$ (double, so the curve touches the axis there).\n\n**$y$-intercept:** $x = 0$ gives $y = (1)(-2)^2 = 4$, so $(0, 4)$.\n\n**End behaviour:** expanding, the leading term is $x \\cdot x^2 = +x^3$, so the curve comes up from bottom-left and ends at top-right.\n\n**Shape:** from bottom-left it crosses at $(-1, 0)$, rises through $(0, 4)$ to a maximum, comes down to touch the axis at $(2, 0)$ (a minimum), then rises to top-right.\n\nPoints on axes: $(-1, 0)$, $(2, 0)$, $(0, 4)$."
+   },
+   {
+    "question": "On the same axes sketch $y = \\frac{2}{x}$ and $y = x + 1$. Hence state the number of real solutions of $\\frac{2}{x} = x + 1$ and find them.",
+    "solution": "$y = \\frac{2}{x}$: two branches in the 1st and 3rd quadrants, asymptotes $x = 0$ and $y = 0$.\n\n$y = x + 1$: straight line, gradient 1, through $(0, 1)$ and $(-1, 0)$.\n\nThe line meets each branch once, so there are **2** solutions.\n\nSolve: multiply by $x$ ($x \\ne 0$):\n$$2 = x^2 + x$$\n$$x^2 + x - 2 = 0 \\Rightarrow (x + 2)(x - 1) = 0$$\n\n$x = 1$ or $x = -2$; points of intersection $(1, 2)$ and $(-2, -1)$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Draws the curve **crossing** the $x$-axis at a repeated root, e.g. for $y = (x + 1)(x - 2)^2$ draws it passing through the axis at $x = 2$.",
+    "correction": "A squared factor does not change sign either side of the root, so the curve **touches** the axis there (a turning point). Only odd multiplicity (single or triple roots) gives a crossing."
+   },
+   {
+    "id": "m2",
+    "text": "Takes roots with the wrong sign: for $y = (x + 1)(x - 3)$ marks roots at $x = 1$ and $x = -3$.",
+    "correction": "A root is where the bracket is zero: $x + 1 = 0 \\Rightarrow x = -1$ and $x - 3 = 0 \\Rightarrow x = 3$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores a hidden negative leading coefficient, e.g. sketches $y = (2 - x)(x + 1)(x + 3)$ as a positive cubic (bottom-left to top-right).",
+    "correction": "Find the leading term: $(-x)(x)(x) = -x^3$, so it is a negative cubic: top-left to bottom-right. Checking the $y$-intercept, $(2)(1)(3) = 6$, confirms the shape."
+   },
+   {
+    "id": "m4",
+    "text": "Draws $y = \\frac{1}{x^2}$ like $y = \\frac{1}{x}$, with a branch in the third quadrant (negative $y$-values).",
+    "correction": "$x^2 > 0$ for all $x \\ne 0$, so $\\frac{1}{x^2} > 0$: both branches lie above the $x$-axis (1st and 2nd quadrants), symmetric in the $y$-axis."
+   }
+  ]
+ },
+ {
+  "id": "pure-modulus",
+  "prerequisites": [
+   "alg-graph-transformations",
+   "pure-curve-sketching",
+   "alg-linear-inequalities",
+   "alg-quadratic-inequalities"
+  ],
+  "keyIdea": "$|x| = x$ if $x \\ge 0$ and $|x| = -x$ if $x < 0$: the distance from 0, never negative.\n\n**Graphs**\n* $y = |f(x)|$: keep the parts of $y = f(x)$ on or above the $x$-axis and **reflect the parts below it in the $x$-axis**.\n* $y = f(|x|)$: keep the part for $x \\ge 0$ and **reflect it in the $y$-axis** (the graph becomes symmetric about the $y$-axis).\n\n**Equations** $|f(x)| = g(x)$: sketch both graphs to see how many solutions to expect, solve $f(x) = g(x)$ and $-f(x) = g(x)$, then **check** each answer in the original equation and reject any that fail. For $|f(x)| = |g(x)|$ you may square both sides.\n\n**Inequalities:** $|x - a| < b \\iff a - b < x < a + b$; $|x - a| > b \\iff x < a - b$ or $x > a + b$. Find critical values, then use the sketch to choose the region.",
+  "workedExamples": [
+   {
+    "question": "Solve $|2x - 3| = x + 1$.",
+    "solution": "**Case 1:** $2x - 3 = x + 1 \\Rightarrow x = 4$.\nCheck: $|8 - 3| = 5$ and $4 + 1 = 5$ ✓\n\n**Case 2:** $-(2x - 3) = x + 1 \\Rightarrow -2x + 3 = x + 1 \\Rightarrow x = \\frac{2}{3}$.\nCheck: $\\left|\\frac{4}{3} - 3\\right| = \\frac{5}{3}$ and $\\frac{2}{3} + 1 = \\frac{5}{3}$ ✓\n\nSolutions: $x = 4$ or $x = \\frac{2}{3}$."
+   },
+   {
+    "question": "Solve the inequality $|2x + 1| < |x - 3|$.",
+    "solution": "Both sides are non-negative, so square:\n$$(2x + 1)^2 < (x - 3)^2$$\n$$4x^2 + 4x + 1 < x^2 - 6x + 9$$\n$$3x^2 + 10x - 8 < 0$$\n$$(3x - 2)(x + 4) < 0$$\n\nCritical values $x = -4$ and $x = \\frac{2}{3}$. A positive quadratic is negative between its roots:\n$$-4 < x < \\frac{2}{3}$$\n\nCheck $x = 0$: $|1| < |-3|$ ✓; $x = -5$: $|-9| < |-8|$ is false ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses $y = |f(x)|$ with $y = f(|x|)$, e.g. for $y = |x - 2|$ reflects the right-hand part in the $y$-axis, or for $y = f(|x|)$ reflects the negative $y$-values up.",
+    "correction": "$|f(x)|$ changes the **output**: negative $y$-values are reflected in the $x$-axis, so the graph never goes below the $x$-axis. $f(|x|)$ changes the **input**: the right half ($x \\ge 0$) is copied into the left half by reflecting in the $y$-axis, and the graph can still go below the $x$-axis."
+   },
+   {
+    "id": "m2",
+    "text": "Does not check solutions of a modulus equation: for $|x - 1| = 2x + 5$ gives both $x = -6$ and $x = -\\frac{4}{3}$.",
+    "correction": "Check each in the original equation. $x = -6$: $|-7| = 7$ but $2(-6) + 5 = -7$, so reject. $x = -\\frac{4}{3}$: $\\left|-\\frac{7}{3}\\right| = \\frac{7}{3}$ and $2\\left(-\\frac{4}{3}\\right) + 5 = \\frac{7}{3}$ ✓. Only $x = -\\frac{4}{3}$. (A modulus cannot equal a negative number.)"
+   },
+   {
+    "id": "m3",
+    "text": "Solves $|x - 3| < 5$ as \"$x < 8$ and $x < -2$\" or \"$x < -2$ or $x > 8$\".",
+    "correction": "$|x - 3| < 5$ means $x$ is within 5 of 3: $-5 < x - 3 < 5$, so $-2 < x < 8$. The \"or\" form ($x < -2$ or $x > 8$) is the answer to $|x - 3| > 5$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats the modulus as \"make everything positive\": writes $|2 - x| = 2 + x$, or $|a + b| = |a| + |b|$.",
+    "correction": "The modulus acts on the value of the whole expression: $|2 - x| = 2 - x$ when $x \\le 2$ and $x - 2$ when $x > 2$. Also $|a + b| \\le |a| + |b|$, with equality only when $a, b$ have the same sign: $|3 + (-5)| = 2$ but $|3| + |-5| = 8$."
+   }
+  ]
+ },
+ {
+  "id": "pure-partial-fractions",
+  "prerequisites": [
+   "alg-algebraic-fractions",
+   "pure-polynomials-factor-theorem",
+   "alg-simultaneous-linear"
+  ],
+  "keyIdea": "Partial fractions reverse adding algebraic fractions.\n\n* **Distinct linear factors:** $\\dfrac{px + q}{(x - a)(x - b)} \\equiv \\dfrac{A}{x - a} + \\dfrac{B}{x - b}$\n* **Repeated factor:** $\\dfrac{\\ldots}{(x - a)(x - b)^2} \\equiv \\dfrac{A}{x - a} + \\dfrac{B}{x - b} + \\dfrac{C}{(x - b)^2}$\n* **Improper fraction** (degree of numerator $\\ge$ degree of denominator): divide first, $\\dfrac{f(x)}{g(x)} \\equiv Q(x) + \\dfrac{R(x)}{g(x)}$, then split the proper part.\n\n**Method:** multiply both sides by the denominator to get an identity, substitute the values of $x$ that make each factor zero, then compare coefficients (e.g. of $x^2$) for any constant still unknown. Check by recombining or substituting a test value.",
+  "workedExamples": [
+   {
+    "question": "Express $\\dfrac{5x + 1}{(x - 1)(x + 2)}$ in partial fractions.",
+    "solution": "Write\n$$\\frac{5x + 1}{(x - 1)(x + 2)} \\equiv \\frac{A}{x - 1} + \\frac{B}{x + 2}$$\n\nMultiply by $(x - 1)(x + 2)$:\n$$5x + 1 \\equiv A(x + 2) + B(x - 1)$$\n\n$x = 1$: $6 = 3A \\Rightarrow A = 2$\n\n$x = -2$: $-9 = -3B \\Rightarrow B = 3$\n$$\\frac{5x + 1}{(x - 1)(x + 2)} \\equiv \\frac{2}{x - 1} + \\frac{3}{x + 2}$$\n\nCheck: $2(x + 2) + 3(x - 1) = 5x + 1$ ✓"
+   },
+   {
+    "question": "Express $\\dfrac{2x^2 + 3}{x(x - 1)^2}$ in partial fractions.",
+    "solution": "Repeated factor, so three terms:\n$$\\frac{2x^2 + 3}{x(x - 1)^2} \\equiv \\frac{A}{x} + \\frac{B}{x - 1} + \\frac{C}{(x - 1)^2}$$\n\nMultiply by $x(x - 1)^2$:\n$$2x^2 + 3 \\equiv A(x - 1)^2 + Bx(x - 1) + Cx$$\n\n$x = 0$: $3 = A$\n\n$x = 1$: $5 = C$\n\nCompare $x^2$ coefficients: $2 = A + B \\Rightarrow B = -1$\n$$\\frac{2x^2 + 3}{x(x - 1)^2} \\equiv \\frac{3}{x} - \\frac{1}{x - 1} + \\frac{5}{(x - 1)^2}$$\n\nCheck at $x = 2$: LHS $= \\frac{11}{2}$; RHS $= \\frac{3}{2} - 1 + 5 = \\frac{11}{2}$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "For a repeated factor, uses too few terms, e.g. $\\dfrac{2x^2 + 3}{x(x - 1)^2} \\equiv \\dfrac{A}{x} + \\dfrac{B}{(x - 1)^2}$, then finds the constants cannot all be satisfied.",
+    "correction": "A repeated factor $(x - 1)^2$ needs **both** $\\frac{B}{x - 1}$ and $\\frac{C}{(x - 1)^2}$. Three unknowns for a cubic denominator: $\\frac{3}{x} - \\frac{1}{x - 1} + \\frac{5}{(x - 1)^2}$."
+   },
+   {
+    "id": "m2",
+    "text": "Splits an improper fraction without dividing first: writes $\\dfrac{x^2 + 1}{(x - 1)(x + 1)} \\equiv \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1}$.",
+    "correction": "Numerator and denominator both have degree 2, so divide first: $\\frac{x^2 + 1}{x^2 - 1} = 1 + \\frac{2}{(x - 1)(x + 1)}$. Then split: $1 + \\frac{1}{x - 1} - \\frac{1}{x + 1}$."
+   },
+   {
+    "id": "m3",
+    "text": "Substitutes the wrong value to eliminate a term, e.g. for $5x + 1 \\equiv A(x + 2) + B(x - 1)$ uses $x = -1$ and $x = 2$ (the opposite signs).",
+    "correction": "Use the values that make each factor zero: $x - 1 = 0 \\Rightarrow x = 1$ eliminates $B$; $x + 2 = 0 \\Rightarrow x = -2$ eliminates $A$. For a factor like $(2x + 1)$ use $x = -\\frac{1}{2}$."
+   }
+  ]
+ },
+ {
+  "id": "pure-binomial-expansion",
+  "prerequisites": [
+   "alg-expand-double-triple",
+   "num-index-laws",
+   "alg-substitution-formulae"
+  ],
+  "keyIdea": "For a positive integer $n$:\n$$(a + b)^n = a^n + \\binom{n}{1}a^{n-1}b + \\binom{n}{2}a^{n-2}b^2 + \\cdots + b^n$$\n\n* The coefficients $\\binom{n}{r} = {}^nC_r = \\frac{n!}{r!(n-r)!}$ are row $n$ of **Pascal's triangle** (each entry is the sum of the two above).\n* There are $n + 1$ terms; powers of $a$ go down as powers of $b$ go up, always adding to $n$.\n* General term: $\\binom{n}{r}a^{n-r}b^r$ is the $(r+1)$th term.\n* Bracket the whole of each part: in $(2 - 3x)^5$, $a = 2$ and $b = (-3x)$, so terms contain $2^{5-r}(-3x)^r$.\n\n**Specific coefficient:** pick $r$ to give the required power. **Approximations:** for small $x$ keep the first few terms, e.g. use $\\left(1 + \\frac{x}{4}\\right)^8$ with $x = 0.1$ to estimate $1.025^8$.",
+  "workedExamples": [
+   {
+    "question": "Find the first four terms, in ascending powers of $x$, of the binomial expansion of $(2 - 3x)^5$, simplifying each term.",
+    "solution": "Use $a = 2$, $b = (-3x)$, $n = 5$, Pascal row $1, 5, 10, 10, 5, 1$.\n\n$\\binom{5}{0}2^5 = 32$\n\n$\\binom{5}{1}2^4(-3x) = 5 \\times 16 \\times (-3x) = -240x$\n\n$\\binom{5}{2}2^3(-3x)^2 = 10 \\times 8 \\times 9x^2 = 720x^2$\n\n$\\binom{5}{3}2^2(-3x)^3 = 10 \\times 4 \\times (-27x^3) = -1080x^3$\n$$(2 - 3x)^5 = 32 - 240x + 720x^2 - 1080x^3 + \\cdots$$"
+   },
+   {
+    "question": "(a) Find the first three terms, in ascending powers of $x$, of $\\left(1 + \\frac{x}{4}\\right)^8$.\n(b) Use your answer to estimate $1.025^8$, giving your answer to 4 decimal places.",
+    "solution": "(a)\n$$\\left(1 + \\frac{x}{4}\\right)^8 = 1 + \\binom{8}{1}\\left(\\frac{x}{4}\\right) + \\binom{8}{2}\\left(\\frac{x}{4}\\right)^2 + \\cdots$$\n$$= 1 + 8 \\times \\frac{x}{4} + 28 \\times \\frac{x^2}{16} + \\cdots = 1 + 2x + \\frac{7}{4}x^2 + \\cdots$$\n\n(b) $1 + \\frac{x}{4} = 1.025 \\Rightarrow \\frac{x}{4} = 0.025 \\Rightarrow x = 0.1$\n$$1.025^8 \\approx 1 + 2(0.1) + \\frac{7}{4}(0.01) = 1 + 0.2 + 0.0175 = 1.2175$$\n\n(The true value is $1.2184$ to 4 d.p.; the approximation is good because $x$ is small.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Applies the power only to the variable and not to its coefficient: in $(2 - 3x)^5$ writes the $x^2$ term as $\\binom{5}{2}2^3 \\times 3x^2 = 240x^2$.",
+    "correction": "The whole of $b$ is raised to the power: $(-3x)^2 = 9x^2$, so the term is $10 \\times 8 \\times 9x^2 = 720x^2$. Always write the bracket $(-3x)^r$ before simplifying."
+   },
+   {
+    "id": "m2",
+    "text": "Loses the negative sign, e.g. writes all terms of $(2 - 3x)^5$ as positive, giving $+1080x^3$ for the $x^3$ term.",
+    "correction": "$b = -3x$, so odd powers are negative: $(-3x)^3 = -27x^3$, giving $10 \\times 4 \\times (-27x^3) = -1080x^3$. The signs alternate: $+, -, +, -, \\ldots$"
+   },
+   {
+    "id": "m3",
+    "text": "Off by one with the general term: says \"the 4th term of $(1 + x)^{10}$ is $\\binom{10}{4}x^4$\".",
+    "correction": "The $(r+1)$th term is $\\binom{n}{r}a^{n-r}b^r$ (the first term has $r = 0$). So the 4th term has $r = 3$: $\\binom{10}{3}x^3 = 120x^3$. If asked for the **coefficient of** $x^4$, then use $r = 4$: $\\binom{10}{4} = 210$."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets to raise the first part to its power: writes $(2 + x)^5 = 2 + 5 \\times 2x + \\cdots$",
+    "correction": "Each term contains $a^{n-r}$: the first term is $2^5 = 32$ and the second is $\\binom{5}{1}2^4x = 80x$. So $(2 + x)^5 = 32 + 80x + \\cdots$"
+   }
+  ]
+ },
+ {
+  "id": "pure-binomial-general",
+  "prerequisites": [
+   "pure-binomial-expansion",
+   "num-negative-fractional-indices",
+   "pure-partial-fractions"
+  ],
+  "keyIdea": "For any rational $n$:\n$$(1 + x)^n = 1 + nx + \\frac{n(n-1)}{2!}x^2 + \\frac{n(n-1)(n-2)}{3!}x^3 + \\cdots$$\n\nIf $n$ is negative or a fraction the series never stops, and it is valid only for $|x| < 1$.\n\n**For $(a + bx)^n$** take out $a^n$ first:\n$$(a + bx)^n = a^n\\left(1 + \\frac{b}{a}x\\right)^n, \\quad \\text{valid for } \\left|\\frac{bx}{a}\\right| < 1 \\text{, i.e. } |x| < \\left|\\frac{a}{b}\\right|$$\n\nReplace $x$ by the whole term, in brackets: e.g. $\\left(-\\frac{x}{4}\\right)^2$.\n\n**Approximations:** substitute a small value of $x$ inside the range of validity.\n\n**With partial fractions:** split first, expand each fraction, add; the expansion is valid where **all** parts are valid (the narrowest range).",
+  "workedExamples": [
+   {
+    "question": "Find the binomial expansion of $\\dfrac{1}{\\sqrt{4 - x}}$ up to and including the term in $x^2$, and state the values of $x$ for which it is valid.",
+    "solution": "Write as a power and take out $4^{-\\frac{1}{2}}$:\n$$(4 - x)^{-\\frac{1}{2}} = 4^{-\\frac{1}{2}}\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}} = \\frac{1}{2}\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}}$$\n\nExpand with $n = -\\frac{1}{2}$ and $\\left(-\\frac{x}{4}\\right)$ in place of $x$:\n$$1 + \\left(-\\frac{1}{2}\\right)\\left(-\\frac{x}{4}\\right) + \\frac{\\left(-\\frac{1}{2}\\right)\\left(-\\frac{3}{2}\\right)}{2}\\left(-\\frac{x}{4}\\right)^2 = 1 + \\frac{x}{8} + \\frac{3}{8} \\times \\frac{x^2}{16}$$\n$$= 1 + \\frac{x}{8} + \\frac{3x^2}{128}$$\n\nMultiply by $\\frac{1}{2}$:\n$$\\frac{1}{\\sqrt{4 - x}} \\approx \\frac{1}{2} + \\frac{x}{16} + \\frac{3x^2}{256}$$\n\nValid for $\\left|\\frac{x}{4}\\right| < 1$, i.e. $|x| < 4$."
+   },
+   {
+    "question": "(a) Express $\\dfrac{3}{(1 + x)(1 - 2x)}$ in partial fractions.\n(b) Hence find its expansion in ascending powers of $x$ up to the term in $x^2$, and state the range of validity.",
+    "solution": "(a) $3 \\equiv A(1 - 2x) + B(1 + x)$\n\n$x = -1$: $3 = 3A \\Rightarrow A = 1$; $x = \\frac{1}{2}$: $3 = \\frac{3}{2}B \\Rightarrow B = 2$\n$$\\frac{3}{(1 + x)(1 - 2x)} \\equiv \\frac{1}{1 + x} + \\frac{2}{1 - 2x}$$\n\n(b) $(1 + x)^{-1} = 1 - x + x^2 - \\cdots$, valid for $|x| < 1$\n\n$2(1 - 2x)^{-1} = 2\\left(1 + 2x + (2x)^2 + \\cdots\\right) = 2 + 4x + 8x^2 + \\cdots$, valid for $|x| < \\frac{1}{2}$\n\nAdd:\n$$\\frac{3}{(1 + x)(1 - 2x)} = 3 + 3x + 9x^2 + \\cdots$$\n\nBoth must be valid, so $|x| < \\frac{1}{2}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Takes out the wrong factor: writes $(4 - x)^{-\\frac{1}{2}} = 4\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}}$ (or $\\frac{1}{2}(1 - x)^{-\\frac{1}{2}}$, forgetting to divide $x$ by 4).",
+    "correction": "Factor out $a^n$, not $a$, and divide **every** term inside by $a$: $(4 - x)^{-\\frac{1}{2}} = 4^{-\\frac{1}{2}}\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}} = \\frac{1}{2}\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}}$."
+   },
+   {
+    "id": "m2",
+    "text": "States the validity incorrectly, e.g. \"$|x| < 1$\" for $\\left(1 - \\frac{x}{4}\\right)^{-\\frac{1}{2}}$, or \"$|x| < 3$\" for $(1 + 3x)^{-1}$.",
+    "correction": "The condition is on the whole term replacing $x$: $\\left|\\frac{x}{4}\\right| < 1 \\Rightarrow |x| < 4$, and $|3x| < 1 \\Rightarrow |x| < \\frac{1}{3}$."
+   },
+   {
+    "id": "m3",
+    "text": "Does not bracket the substituted term, so the coefficient is not squared: writes the $x^2$ term of $(1 - 2x)^{-1}$ as $\\frac{(-1)(-2)}{2}(-2x^2) = -2x^2$.",
+    "correction": "Substitute $(-2x)$ with brackets: $\\frac{(-1)(-2)}{2}(-2x)^2 = 1 \\times 4x^2 = 4x^2$. So $(1 - 2x)^{-1} = 1 + 2x + 4x^2 + \\cdots$"
+   },
+   {
+    "id": "m4",
+    "text": "Assumes the expansion stops like a positive-integer one, e.g. $(1 + x)^{-2} = 1 - 2x + x^2$ (copying the pattern of $(1 + x)^2$), or uses $\\binom{n}{r}$ from a calculator with negative $n$.",
+    "correction": "Use the formula with $n = -2$: $\\frac{(-2)(-3)}{2!} = 3$, $\\frac{(-2)(-3)(-4)}{3!} = -4$, so $(1 + x)^{-2} = 1 - 2x + 3x^2 - 4x^3 + \\cdots$, an infinite series valid for $|x| < 1$."
+   }
+  ]
+ },
+ {
+  "id": "pure-arithmetic-series",
+  "prerequisites": [
+   "alg-sequences-linear",
+   "alg-forming-equations",
+   "alg-simultaneous-linear"
+  ],
+  "keyIdea": "An **arithmetic sequence** adds the same **common difference** $d$ each time; first term $a$.\n\n* $n$th term: $u_n = a + (n - 1)d$\n* Sum of the first $n$ terms (arithmetic series):\n$$S_n = \\frac{n}{2}\\big(2a + (n - 1)d\\big) = \\frac{n}{2}(a + l)$$\nwhere $l$ is the last term. (Proof: write $S_n$ forwards and backwards and add: $2S_n = n(a + l)$.)\n\n**Sigma:** $\\sum_{r=1}^{20}(3r + 2)$ is arithmetic: first term 5, last term 62, 20 terms. Number of terms in $\\sum_{r=p}^{q}$ is $q - p + 1$.\n\n**Problems:** two facts give simultaneous equations in $a$ and $d$; inequalities like $S_n > 1000$ need $n$ to be a positive integer (round up); $u_n = S_n - S_{n-1}$.",
+  "workedExamples": [
+   {
+    "question": "The 5th term of an arithmetic sequence is 23 and the 12th term is 51. Find the first term, the common difference and the sum of the first 20 terms.",
+    "solution": "$u_5 = a + 4d = 23$ and $u_{12} = a + 11d = 51$.\n\nSubtract: $7d = 28 \\Rightarrow d = 4$, then $a = 23 - 16 = 7$.\n$$S_{20} = \\frac{20}{2}\\big(2(7) + 19(4)\\big) = 10(14 + 76) = 900$$"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\sum_{r=5}^{30}(4r - 1)$.",
+    "solution": "First term ($r = 5$): $4(5) - 1 = 19$. Last term ($r = 30$): $4(30) - 1 = 119$.\n\nNumber of terms: $30 - 5 + 1 = 26$.\n$$S = \\frac{26}{2}(19 + 119) = 13 \\times 138 = 1794$$\n\nCheck: $\\sum_{r=1}^{30} - \\sum_{r=1}^{4} = (4 \\times 465 - 30) - (4 \\times 10 - 4) = 1830 - 36 = 1794$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $u_n = a + nd$, e.g. for $a = 7$, $d = 4$ says $u_{10} = 7 + 40 = 47$.",
+    "correction": "The first term already has no $d$ added, so the $n$th term has $(n - 1)$ steps: $u_{10} = 7 + 9 \\times 4 = 43$."
+   },
+   {
+    "id": "m2",
+    "text": "Miscounts the terms in a sigma sum, e.g. says $\\sum_{r=5}^{30}$ has $30 - 5 = 25$ terms.",
+    "correction": "Both ends are included: the number of terms is $30 - 5 + 1 = 26$."
+   },
+   {
+    "id": "m3",
+    "text": "When solving $S_n > k$, gives a non-integer $n$ or rounds down, e.g. \"$n > 21.3$, so $n = 21$\".",
+    "correction": "$n$ counts terms so it must be a positive integer, and it must satisfy the inequality: $n > 21.3 \\Rightarrow$ smallest $n = 22$. Check $S_{21}$ and $S_{22}$ either side. Reject the negative root of the quadratic."
+   },
+   {
+    "id": "m4",
+    "text": "Confuses the $n$th term with the sum, e.g. \"she saves £20 in month 1 and £5 more each month; how much in total after 12 months?\" answers $u_{12} = 20 + 11 \\times 5 = £75$.",
+    "correction": "\"Total\" means add all the terms: $S_{12} = \\frac{12}{2}(2 \\times 20 + 11 \\times 5) = 6 \\times 95 = £570$. The amount saved **in** month 12 is $u_{12} = £75$."
+   }
+  ]
+ },
+ {
+  "id": "pure-geometric-series",
+  "prerequisites": [
+   "alg-sequences-quadratic-geometric",
+   "rat-compound-growth-decay",
+   "pure-exponentials-logs"
+  ],
+  "keyIdea": "A **geometric sequence** multiplies by the **common ratio** $r$ each time; first term $a$.\n\n* $n$th term: $u_n = ar^{n-1}$\n* Sum of first $n$ terms: $S_n = \\dfrac{a(1 - r^n)}{1 - r} = \\dfrac{a(r^n - 1)}{r - 1}$, $r \\ne 1$\n* **Sum to infinity:** if $|r| < 1$ then $r^n \\to 0$, the series **converges** and $S_\\infty = \\dfrac{a}{1 - r}$. If $|r| \\ge 1$ it has no sum to infinity.\n\n**Finding $n$:** take logs, e.g. $0.75^n < 0.0156 \\Rightarrow n > \\frac{\\log 0.0156}{\\log 0.75}$; the inequality flips because $\\log 0.75 < 0$.\n\n**Finance:** a deposit growing at 4% per year is multiplied by 1.04 each year; regular deposits form a geometric series. Work out the first term carefully (does interest apply before the first total is taken?).",
+  "workedExamples": [
+   {
+    "question": "The second term of a geometric series is 12 and the fifth term is 40.5. Find the common ratio, the first term and the sum of the first 10 terms.",
+    "solution": "$ar = 12$ and $ar^4 = 40.5$.\n\nDivide: $r^3 = \\frac{40.5}{12} = 3.375 \\Rightarrow r = 1.5$, then $a = \\frac{12}{1.5} = 8$.\n$$S_{10} = \\frac{8(1.5^{10} - 1)}{1.5 - 1} = 16(1.5^{10} - 1) = 16(57.665\\ldots - 1) = 906.640625$$\n\n$S_{10} = 906.64$ (2 d.p.)."
+   },
+   {
+    "question": "A geometric series has first term 80 and common ratio 0.75.\n(a) Find the sum to infinity.\n(b) Find the smallest value of $n$ for which $S_n > 315$.",
+    "solution": "(a) $|r| < 1$, so\n$$S_\\infty = \\frac{80}{1 - 0.75} = 320$$\n\n(b)\n$$\\frac{80(1 - 0.75^n)}{0.25} > 315 \\Rightarrow 320(1 - 0.75^n) > 315$$\n$$1 - 0.75^n > 0.984375 \\Rightarrow 0.75^n < 0.015625$$\n\nTake logs: $n\\log 0.75 < \\log 0.015625$. Divide by $\\log 0.75$, which is **negative**, so flip the inequality:\n$$n > \\frac{\\log 0.015625}{\\log 0.75} = 14.46\\ldots$$\n\nSmallest $n = 15$ (check: $S_{14} = 314.3$, $S_{15} = 315.7$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $u_n = ar^n$, e.g. for $a = 8$, $r = 1.5$ says $u_5 = 8 \\times 1.5^5$.",
+    "correction": "The first term has $r^0$, so the $n$th term has $r^{n-1}$: $u_5 = 8 \\times 1.5^4 = 40.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the sum-to-infinity formula when $|r| \\ge 1$, e.g. for $a = 3$, $r = 2$ writes $S_\\infty = \\frac{3}{1 - 2} = -3$.",
+    "correction": "$S_\\infty = \\frac{a}{1 - r}$ only holds when $|r| < 1$ (so $r^n \\to 0$). With $r = 2$ the terms grow without limit and the series diverges: there is no sum to infinity."
+   },
+   {
+    "id": "m3",
+    "text": "Does not reverse the inequality when dividing by the log of a number less than 1: from $n\\log 0.75 < \\log 0.015625$ writes $n < 14.46$.",
+    "correction": "$\\log 0.75 < 0$; dividing by a negative reverses the inequality, giving $n > 14.46$, so $n = 15$. (Sense check: $S_n$ increases with $n$, so we need $n$ large.)"
+   },
+   {
+    "id": "m4",
+    "text": "In a savings problem uses the wrong first term: £1000 is deposited at the **start** of each year at 5% interest; for the total at the end of year 10 uses $\\frac{1000(1.05^{10} - 1)}{0.05}$.",
+    "correction": "Each deposit earns interest before the year-end total, so the series is $1000(1.05) + 1000(1.05)^2 + \\cdots + 1000(1.05)^{10}$, with $a = 1050$: $\\frac{1050(1.05^{10} - 1)}{0.05} = £13\\,206.79$. Write out the first two or three terms before choosing $a$ and $n$."
+   }
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence",
+  "prerequisites": [
+   "pure-arithmetic-series",
+   "pure-geometric-series",
+   "alg-iteration"
+  ],
+  "keyIdea": "**Sigma notation:** $\\sum_{r=1}^{n} f(r)$ means substitute $r = 1, 2, \\ldots, n$ and add. The number of terms in $\\sum_{r=p}^{q}$ is $q - p + 1$, and a constant is added once per term: $\\sum_{r=1}^{n} c = cn$.\n\n**Recurrence relations:** $u_{n+1} = f(u_n)$ with a starting value $u_1$ defines each term from the one before. Generate terms one at a time; use given terms to form equations for unknown constants.\n\n**Types of sequence**\n* **increasing:** $u_{n+1} > u_n$ for all $n$\n* **decreasing:** $u_{n+1} < u_n$ for all $n$\n* **periodic** with order $k$: $u_{n+k} = u_n$ for all $n$ (the terms repeat in a cycle of length $k$).\n\nTo sum a periodic sequence: sum one cycle, multiply by the number of complete cycles, then add the leftover terms.",
+  "workedExamples": [
+   {
+    "question": "A sequence is defined by $u_{n+1} = ku_n + 3$, $u_1 = 2$, where $k$ is a positive constant. Given that $u_3 = 23$, find $k$ and hence find $\\displaystyle\\sum_{r=1}^{4} u_r$.",
+    "solution": "$u_2 = 2k + 3$\n\n$u_3 = k(2k + 3) + 3 = 2k^2 + 3k + 3$\n\nSet $u_3 = 23$:\n$$2k^2 + 3k - 20 = 0 \\Rightarrow (2k - 5)(k + 4) = 0$$\n\n$k > 0$, so $k = \\frac{5}{2}$.\n\nTerms: $u_1 = 2$, $u_2 = 8$, $u_3 = 23$, $u_4 = \\frac{5}{2}(23) + 3 = 60.5$\n$$\\sum_{r=1}^{4} u_r = 2 + 8 + 23 + 60.5 = 93.5$$"
+   },
+   {
+    "question": "A sequence is defined by $u_{n+1} = \\dfrac{1}{1 - u_n}$, $u_1 = 2$. Show that the sequence is periodic, state its order, and find $\\displaystyle\\sum_{r=1}^{100} u_r$.",
+    "solution": "$u_2 = \\frac{1}{1 - 2} = -1$, $u_3 = \\frac{1}{1 + 1} = \\frac{1}{2}$, $u_4 = \\frac{1}{1 - \\frac{1}{2}} = 2 = u_1$.\n\nSo the terms repeat $2, -1, \\frac{1}{2}, \\ldots$: periodic with order 3.\n\nOne cycle sums to $2 - 1 + \\frac{1}{2} = 1.5$.\n\n$100 = 33 \\times 3 + 1$: 33 complete cycles (terms 1 to 99) plus $u_{100} = u_1 = 2$.\n$$\\sum_{r=1}^{100} u_r = 33 \\times 1.5 + 2 = 51.5$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds a constant only once inside a sigma: $\\sum_{r=1}^{10}(2r + 5) = 2 \\times 55 + 5 = 115$.",
+    "correction": "The 5 appears in every one of the 10 terms: $\\sum_{r=1}^{10} 5 = 50$. So $\\sum_{r=1}^{10}(2r + 5) = 110 + 50 = 160$."
+   },
+   {
+    "id": "m2",
+    "text": "Miscounts terms, e.g. says $\\sum_{r=3}^{10} u_r$ has 7 terms.",
+    "correction": "From $r = 3$ to $r = 10$ inclusive there are $10 - 3 + 1 = 8$ terms. Write the first and last terms explicitly to check."
+   },
+   {
+    "id": "m3",
+    "text": "Sums a periodic sequence by dividing and multiplying decimals: \"$100 \\div 3 = 33.3$, so the sum is $33.3 \\times 1.5 = 50$\", ignoring the leftover terms.",
+    "correction": "Use whole cycles: $100 = 33 \\times 3 + 1$, so 33 full cycles give $49.5$, then add the one leftover term $u_{100} = u_1 = 2$: total $51.5$."
+   },
+   {
+    "id": "m4",
+    "text": "Substitutes the index $n$ instead of the previous term: for $u_{n+1} = 3u_n - 1$ with $u_1 = 4$, writes $u_2 = 3(1) - 1 = 2$.",
+    "correction": "$u_n$ is the **value** of the previous term, not its position: $u_2 = 3u_1 - 1 = 3(4) - 1 = 11$, then $u_3 = 3(11) - 1 = 32$."
+   }
+  ]
+ },
+ {
+  "id": "pure-radians-unit-circle",
+  "prerequisites": [
+   "geo-arcs-sectors",
+   "geo-trig-exact-values",
+   "geo-trig-right-angled"
+  ],
+  "keyIdea": "**Radians:** $\\pi \\text{ rad} = 180°$, so $1 \\text{ rad} \\approx 57.3°$; e.g. $90° = \\frac{\\pi}{2}$, $60° = \\frac{\\pi}{3}$.\n\n**Sectors** (angle $\\theta$ in radians): arc length $s = r\\theta$, area $A = \\frac{1}{2}r^2\\theta$.\n\n**Unit circle:** the point at angle $\\theta$ (anticlockwise from the positive $x$-axis) on the circle of radius 1 is $(\\cos\\theta, \\sin\\theta)$, and $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$. Signs by quadrant: all positive in the 1st, only sin in the 2nd, only tan in the 3rd, only cos in the 4th (CAST). The **reference angle** is the acute angle to the $x$-axis, e.g. $\\cos\\frac{2\\pi}{3} = -\\cos\\frac{\\pi}{3} = -\\frac{1}{2}$.\n\n**Small-angle approximations** ($\\theta$ small, in **radians**):\n$$\\sin\\theta \\approx \\theta, \\quad \\tan\\theta \\approx \\theta, \\quad \\cos\\theta \\approx 1 - \\frac{\\theta^2}{2}$$",
+  "workedExamples": [
+   {
+    "question": "A sector of a circle has radius 6 cm and angle 1.2 radians. Find the arc length, the area and the perimeter of the sector.",
+    "solution": "Arc length:\n$$s = r\\theta = 6 \\times 1.2 = 7.2 \\text{ cm}$$\n\nArea:\n$$A = \\frac{1}{2}r^2\\theta = \\frac{1}{2} \\times 36 \\times 1.2 = 21.6 \\text{ cm}^2$$\n\nPerimeter = arc + two radii $= 7.2 + 6 + 6 = 19.2$ cm."
+   },
+   {
+    "question": "Given that $\\theta$ is small and measured in radians, show that $\\dfrac{1 - \\cos 2\\theta}{\\theta\\tan\\theta} \\approx 2$.",
+    "solution": "Replace $\\theta$ by $2\\theta$ in the cosine approximation:\n$$\\cos 2\\theta \\approx 1 - \\frac{(2\\theta)^2}{2} = 1 - 2\\theta^2$$\n\nSo the numerator $\\approx 1 - (1 - 2\\theta^2) = 2\\theta^2$.\n\nDenominator: $\\tan\\theta \\approx \\theta$, so $\\theta\\tan\\theta \\approx \\theta^2$.\n$$\\frac{1 - \\cos 2\\theta}{\\theta\\tan\\theta} \\approx \\frac{2\\theta^2}{\\theta^2} = 2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses degrees in the radian formulae: for a sector of radius 6 cm and angle $60°$ writes $s = 6 \\times 60 = 360$ cm.",
+    "correction": "$s = r\\theta$ and $A = \\frac{1}{2}r^2\\theta$ need $\\theta$ in radians: $60° = \\frac{\\pi}{3}$, so $s = 6 \\times \\frac{\\pi}{3} = 2\\pi \\approx 6.28$ cm."
+   },
+   {
+    "id": "m2",
+    "text": "Does not square the coefficient in the small-angle cosine: writes $\\cos 3\\theta \\approx 1 - \\frac{3\\theta^2}{2}$.",
+    "correction": "Replace $\\theta$ by $3\\theta$ throughout: $\\cos 3\\theta \\approx 1 - \\frac{(3\\theta)^2}{2} = 1 - \\frac{9\\theta^2}{2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the quadrant on the unit circle, e.g. $\\cos\\frac{2\\pi}{3} = \\frac{1}{2}$ or $\\sin\\frac{4\\pi}{3} = \\frac{\\sqrt{3}}{2}$.",
+    "correction": "$\\frac{2\\pi}{3}$ is in the 2nd quadrant where $x$-coordinates (cos) are negative: $\\cos\\frac{2\\pi}{3} = -\\frac{1}{2}$. $\\frac{4\\pi}{3}$ is in the 3rd quadrant where sin is negative: $\\sin\\frac{4\\pi}{3} = -\\frac{\\sqrt{3}}{2}$. Use the reference angle for the size and the quadrant for the sign."
+   },
+   {
+    "id": "m4",
+    "text": "Applies small-angle approximations to angles in degrees, e.g. $\\sin 5° \\approx 5$.",
+    "correction": "Convert first: $5° = \\frac{5\\pi}{180} = \\frac{\\pi}{36} \\approx 0.0873$, so $\\sin 5° \\approx 0.0873$ (true value $0.0872$). The approximations come from the radian unit circle."
+   }
+  ]
+ },
+ {
+  "id": "pure-trig-graphs",
+  "prerequisites": [
+   "geo-trig-right-angled",
+   "geo-trig-exact-values",
+   "alg-graph-transformations"
+  ],
+  "keyIdea": "* $y = \\sin x$ and $y = \\cos x$: period $360°$ ($2\\pi$), range $-1 \\le y \\le 1$; $\\cos x$ is $\\sin x$ shifted $90°$ left.\n* $y = \\tan x$: period $180°$ ($\\pi$), all real values, vertical asymptotes at $x = 90°, 270°, \\ldots$\n\n**Transformations** of $y = a\\sin\\big(b(x + c)\\big) + d$:\n* **amplitude** $|a|$ (stretch parallel to the $y$-axis)\n* **period** $\\frac{360°}{b}$ (stretch parallel to the $x$-axis, factor $\\frac{1}{b}$)\n* **phase shift** $c$ to the **left** (translation $\\begin{pmatrix} -c \\\\ 0 \\end{pmatrix}$)\n* **midline** $y = d$; max $d + |a|$, min $d - |a|$\n\nFactor out $b$ before reading the shift: $\\sin(2x + 60°) = \\sin 2(x + 30°)$, a shift of $30°$ left.\n\n**Modelling:** tides, Ferris wheels and daylight hours follow $y = d + a\\sin(bt)$ or $y = d - a\\cos(bt)$; read off max, min, period and solve for times.",
+  "workedExamples": [
+   {
+    "question": "For $0° \\le x \\le 360°$, sketch $y = 3\\cos 2x + 1$, stating its amplitude, period and the coordinates of its maximum and minimum points.",
+    "solution": "Amplitude 3, period $\\frac{360°}{2} = 180°$, midline $y = 1$.\n\nMaximum value $1 + 3 = 4$ where $\\cos 2x = 1$: $2x = 0°, 360°, 720°$, so $x = 0°, 180°, 360°$.\n\nMinimum value $1 - 3 = -2$ where $\\cos 2x = -1$: $2x = 180°, 540°$, so $x = 90°, 270°$.\n\nMaxima $(0°, 4)$, $(180°, 4)$, $(360°, 4)$; minima $(90°, -2)$, $(270°, -2)$. The curve completes two full cosine waves between $y = -2$ and $y = 4$."
+   },
+   {
+    "question": "The height of a seat on a Ferris wheel is modelled by $h = 20 - 18\\cos(12t)°$ metres, where $t$ is the time in minutes.\n(a) Find the maximum and minimum heights and the time for one revolution.\n(b) Find the first time at which the seat is 29 m high.",
+    "solution": "(a) $\\cos(12t)°$ ranges from $-1$ to $1$:\n\nmax $h = 20 + 18 = 38$ m (when $\\cos = -1$); min $h = 20 - 18 = 2$ m.\n\nPeriod $= \\frac{360}{12} = 30$ minutes.\n\n(b)\n$$20 - 18\\cos(12t)° = 29 \\Rightarrow \\cos(12t)° = -\\frac{1}{2}$$\n\nFirst solution: $12t = 120 \\Rightarrow t = 10$ minutes."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies instead of divides for the period: says $y = \\sin 2x$ has period $720°$.",
+    "correction": "$\\sin 2x$ completes a cycle when $2x$ goes through $360°$, i.e. when $x$ goes through $180°$. Period $= \\frac{360°}{b}$; larger $b$ means a **shorter** period."
+   },
+   {
+    "id": "m2",
+    "text": "Shifts the wrong way: says $y = \\sin(x + 30°)$ is $y = \\sin x$ translated $30°$ to the right.",
+    "correction": "$f(x + c)$ is a translation by $c$ to the **left**: the peak of $\\sin(x + 30°)$ occurs when $x + 30° = 90°$, i.e. at $x = 60°$, which is $30°$ left of $90°$."
+   },
+   {
+    "id": "m3",
+    "text": "Reads the phase shift before factoring out $b$: says $y = \\sin(2x + 60°)$ is shifted $60°$ left.",
+    "correction": "Write $\\sin(2x + 60°) = \\sin 2(x + 30°)$: the shift is $30°$ left. (Check: the first peak is where $2x + 60° = 90°$, i.e. $x = 15°$, which is $30°$ left of the peak of $\\sin 2x$ at $45°$.)"
+   },
+   {
+    "id": "m4",
+    "text": "Gives $y = \\tan x$ a period of $360°$ (like sin and cos), drawing only one branch between $0°$ and $360°$ apart from the asymptotes, or puts asymptotes at $0°$ and $180°$.",
+    "correction": "$\\tan x = \\frac{\\sin x}{\\cos x}$ is undefined where $\\cos x = 0$: asymptotes at $x = 90°, 270°, \\ldots$ It repeats every $180°$ ($\\tan 225° = \\tan 45° = 1$), and crosses the $x$-axis at $0°, 180°, 360°$."
+   }
+  ]
+ },
+ {
+  "id": "pure-trig-identities-equations",
+  "prerequisites": [
+   "pure-trig-graphs",
+   "pure-radians-unit-circle",
+   "geo-trig-exact-values",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "Two identities:\n$$\\tan\\theta \\equiv \\frac{\\sin\\theta}{\\cos\\theta} \\qquad \\sin^2\\theta + \\cos^2\\theta \\equiv 1$$\n\n**Solving in an interval:** find the principal value with $\\sin^{-1}$, $\\cos^{-1}$ or $\\tan^{-1}$, then use symmetry (or CAST):\n* sin: $\\alpha$ and $180° - \\alpha$\n* cos: $\\alpha$ and $360° - \\alpha$\n* tan: $\\alpha$ and $\\alpha + 180°$\nthen add or subtract $360°$ ($2\\pi$) to find every solution in the interval.\n\n**Transformed angles:** for $\\sin 2x$ with $0° \\le x \\le 360°$, solve for $2x$ in $0° \\le 2x \\le 720°$, then halve.\n\n**Quadratics:** use $\\cos^2\\theta = 1 - \\sin^2\\theta$ to get one function, factorise; reject values outside $[-1, 1]$. Never divide by $\\sin\\theta$ or $\\cos\\theta$: factorise instead.\n\n**Proving identities:** start from one side and manipulate it into the other.",
+  "workedExamples": [
+   {
+    "question": "Solve $2\\cos^2 x = 3\\sin x$ for $0° \\le x < 360°$.",
+    "solution": "Use $\\cos^2 x = 1 - \\sin^2 x$:\n$$2(1 - \\sin^2 x) = 3\\sin x$$\n$$2\\sin^2 x + 3\\sin x - 2 = 0$$\n$$(2\\sin x - 1)(\\sin x + 2) = 0$$\n\n$\\sin x = -2$ has no solutions (outside $[-1, 1]$).\n\n$\\sin x = \\frac{1}{2}$: principal value $30°$, second solution $180° - 30° = 150°$.\n\n$x = 30°$ or $x = 150°$."
+   },
+   {
+    "question": "Solve $\\tan 2\\theta = \\sqrt{3}$ for $0 \\le \\theta \\le 2\\pi$.",
+    "solution": "If $0 \\le \\theta \\le 2\\pi$ then $0 \\le 2\\theta \\le 4\\pi$.\n\nPrincipal value: $\\tan^{-1}\\sqrt{3} = \\frac{\\pi}{3}$. Tan repeats every $\\pi$:\n$$2\\theta = \\frac{\\pi}{3}, \\ \\frac{4\\pi}{3}, \\ \\frac{7\\pi}{3}, \\ \\frac{10\\pi}{3}$$\n\nHalve:\n$$\\theta = \\frac{\\pi}{6}, \\ \\frac{2\\pi}{3}, \\ \\frac{7\\pi}{6}, \\ \\frac{5\\pi}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides by a trig function and loses solutions: solves $2\\sin x\\cos x = \\sin x$ ($0° \\le x \\le 360°$) by dividing by $\\sin x$ to get $\\cos x = \\frac{1}{2}$, so $x = 60°, 300°$ only.",
+    "correction": "Factorise instead: $\\sin x(2\\cos x - 1) = 0$, so $\\sin x = 0$ **or** $\\cos x = \\frac{1}{2}$. Solutions: $x = 0°, 60°, 180°, 300°, 360°$."
+   },
+   {
+    "id": "m2",
+    "text": "Gives only the calculator value: for $\\sin x = 0.4$ ($0° \\le x < 360°$) answers $x = 23.6°$ only.",
+    "correction": "The sine graph gives a second solution at $180° - 23.6° = 156.4°$. Always sketch the graph or use CAST to find every solution in the interval."
+   },
+   {
+    "id": "m3",
+    "text": "Does not extend the interval for a transformed angle: for $\\sin 2x = \\frac{\\sqrt{3}}{2}$, $0° \\le x \\le 360°$, finds $2x = 60°, 120°$ so $x = 30°, 60°$ only.",
+    "correction": "$2x$ runs from $0°$ to $720°$, so $2x = 60°, 120°, 420°, 480°$, giving $x = 30°, 60°, 210°, 240°$."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets the negative square root: $\\sin^2 x = \\frac{1}{4} \\Rightarrow \\sin x = \\frac{1}{2}$ only.",
+    "correction": "$\\sin^2 x = \\frac{1}{4} \\Rightarrow \\sin x = \\pm\\frac{1}{2}$. For $0° \\le x < 360°$ that gives $30°, 150°$ (from $+\\frac{1}{2}$) and $210°, 330°$ (from $-\\frac{1}{2}$)."
+   }
+  ]
+ },
+ {
+  "id": "pure-trig-reciprocal-inverse",
+  "prerequisites": [
+   "pure-trig-identities-equations",
+   "pure-trig-graphs",
+   "alg-composite-inverse-functions"
+  ],
+  "keyIdea": "**Reciprocal functions:**\n$$\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}$$\n(US texts write $\\csc\\theta$ for cosec.) Pair them by the **third** letter: s**e**c–cos, cos**e**c–sin.\n\n**Graphs:** $\\sec$ has asymptotes where $\\cos\\theta = 0$; $\\operatorname{cosec}$ and $\\cot$ where $\\sin\\theta = 0$. $\\sec$ and $\\operatorname{cosec}$ take values $\\le -1$ or $\\ge 1$ only.\n\n**Identities** (divide $\\sin^2\\theta + \\cos^2\\theta = 1$ by $\\cos^2\\theta$ or $\\sin^2\\theta$):\n$$1 + \\tan^2\\theta \\equiv \\sec^2\\theta \\qquad 1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$$\n\n**Inverse functions** (restricted domains so they are one-to-one):\n* $\\arcsin x$: domain $[-1, 1]$, range $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$\n* $\\arccos x$: domain $[-1, 1]$, range $[0, \\pi]$\n* $\\arctan x$: domain all reals, range $\\left(-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right)$\n\n$\\arcsin x = \\sin^{-1}x$ is **not** $\\frac{1}{\\sin x}$.",
+  "workedExamples": [
+   {
+    "question": "Solve $2\\tan^2 x + \\sec x = 1$ for $0° \\le x < 360°$, giving answers to 1 decimal place.",
+    "solution": "Use $\\tan^2 x = \\sec^2 x - 1$:\n$$2(\\sec^2 x - 1) + \\sec x = 1$$\n$$2\\sec^2 x + \\sec x - 3 = 0$$\n$$(2\\sec x + 3)(\\sec x - 1) = 0$$\n\n$\\sec x = 1 \\Rightarrow \\cos x = 1 \\Rightarrow x = 0°$\n\n$\\sec x = -\\frac{3}{2} \\Rightarrow \\cos x = -\\frac{2}{3} \\Rightarrow x = 131.8°$ or $360° - 131.8° = 228.2°$\n\n$x = 0°, 131.8°, 228.2°$"
+   },
+   {
+    "question": "Find the exact value of (a) $\\arcsin\\left(-\\frac{1}{2}\\right) + \\arccos\\left(-\\frac{1}{2}\\right)$ (b) $\\sec\\left(\\arctan\\frac{3}{4}\\right)$.",
+    "solution": "(a) $\\arcsin\\left(-\\frac{1}{2}\\right)$ must lie in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$: it is $-\\frac{\\pi}{6}$.\n\n$\\arccos\\left(-\\frac{1}{2}\\right)$ must lie in $[0, \\pi]$: it is $\\frac{2\\pi}{3}$.\n\nSum: $-\\frac{\\pi}{6} + \\frac{2\\pi}{3} = \\frac{\\pi}{2}$.\n\n(b) Let $\\theta = \\arctan\\frac{3}{4}$, an acute angle with $\\tan\\theta = \\frac{3}{4}$. In a right-angled triangle with opposite 3 and adjacent 4 the hypotenuse is 5, so $\\cos\\theta = \\frac{4}{5}$.\n$$\\sec\\theta = \\frac{5}{4}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Pairs reciprocal functions by first letter: writes $\\sec\\theta = \\frac{1}{\\sin\\theta}$ and $\\operatorname{cosec}\\theta = \\frac{1}{\\cos\\theta}$.",
+    "correction": "$\\sec\\theta = \\frac{1}{\\cos\\theta}$ and $\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}$ (third letters: s**e**c ↔ **c**os, co**s**ec ↔ **s**in). E.g. $\\sec 60° = \\frac{1}{\\cos 60°} = 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Treats the inverse as the reciprocal: writes $\\sin^{-1}(0.5) = \\frac{1}{\\sin 0.5}$, or $\\arccos x = \\sec x$.",
+    "correction": "$\\sin^{-1}x$ (= $\\arcsin x$) is the **angle** whose sine is $x$: $\\sin^{-1}(0.5) = \\frac{\\pi}{6}$. The reciprocal $\\frac{1}{\\sin x}$ is $\\operatorname{cosec}x$."
+   },
+   {
+    "id": "m3",
+    "text": "Gives an inverse-trig value outside the principal range, e.g. $\\arccos\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{3}$ or $\\arcsin\\left(-\\frac{1}{2}\\right) = \\frac{7\\pi}{6}$.",
+    "correction": "$\\arccos$ outputs values in $[0, \\pi]$: $\\arccos\\left(-\\frac{1}{2}\\right) = \\frac{2\\pi}{3}$. $\\arcsin$ outputs values in $\\left[-\\frac{\\pi}{2}, \\frac{\\pi}{2}\\right]$: $\\arcsin\\left(-\\frac{1}{2}\\right) = -\\frac{\\pi}{6}$."
+   },
+   {
+    "id": "m4",
+    "text": "Gets the Pythagorean identities wrong: writes $\\tan^2\\theta = 1 + \\sec^2\\theta$ or $\\sec^2\\theta = \\tan^2\\theta - 1$.",
+    "correction": "Derive it: divide $\\sin^2\\theta + \\cos^2\\theta = 1$ by $\\cos^2\\theta$ to get $\\tan^2\\theta + 1 = \\sec^2\\theta$, so $\\tan^2\\theta = \\sec^2\\theta - 1$. (Check at $\\theta = 0$: $0 + 1 = 1$.)"
+   }
+  ]
+ },
+ {
+  "id": "pure-trig-compound-angles",
+  "prerequisites": [
+   "pure-trig-identities-equations",
+   "geo-trig-exact-values"
+  ],
+  "keyIdea": "**Addition formulae:**\n$$\\sin(A \\pm B) \\equiv \\sin A\\cos B \\pm \\cos A\\sin B$$\n$$\\cos(A \\pm B) \\equiv \\cos A\\cos B \\mp \\sin A\\sin B$$\n$$\\tan(A \\pm B) \\equiv \\frac{\\tan A \\pm \\tan B}{1 \\mp \\tan A\\tan B}$$\n(note the sign swap in cos and in the tan denominator).\n\n**Double angle formulae** (put $B = A$):\n$$\\sin 2A \\equiv 2\\sin A\\cos A, \\qquad \\tan 2A \\equiv \\frac{2\\tan A}{1 - \\tan^2 A}$$\n$$\\cos 2A \\equiv \\cos^2 A - \\sin^2 A \\equiv 2\\cos^2 A - 1 \\equiv 1 - 2\\sin^2 A$$\n\n**Exact values:** write e.g. $75° = 45° + 30°$ or $15° = 45° - 30°$.\n\n**Equations and identities:** choose the version of $\\cos 2A$ that matches the other terms (e.g. $1 - 2\\sin^2 A$ if the equation has $\\sin A$), giving a quadratic in one function. Use the quadrant of $A$ to fix signs when finding $\\cos A$ from $\\sin A$.",
+  "workedExamples": [
+   {
+    "question": "Find the exact value of $\\cos 15°$.",
+    "solution": "$15° = 45° - 30°$:\n$$\\cos(45° - 30°) = \\cos 45°\\cos 30° + \\sin 45°\\sin 30°$$\n$$= \\frac{\\sqrt{2}}{2} \\times \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\times \\frac{1}{2}$$\n$$= \\frac{\\sqrt{6} + \\sqrt{2}}{4}$$"
+   },
+   {
+    "question": "Solve $\\cos 2x = 5\\sin x - 2$ for $0° \\le x \\le 360°$.",
+    "solution": "The equation contains $\\sin x$, so use $\\cos 2x = 1 - 2\\sin^2 x$:\n$$1 - 2\\sin^2 x = 5\\sin x - 2$$\n$$2\\sin^2 x + 5\\sin x - 3 = 0$$\n$$(2\\sin x - 1)(\\sin x + 3) = 0$$\n\n$\\sin x = -3$ is impossible.\n\n$\\sin x = \\frac{1}{2} \\Rightarrow x = 30°$ or $180° - 30° = 150°$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats sine as distributive: $\\sin(A + B) = \\sin A + \\sin B$, e.g. $\\sin 75° = \\sin 45° + \\sin 30° = \\frac{\\sqrt{2} + 1}{2}$.",
+    "correction": "Use the addition formula: $\\sin 75° = \\sin 45°\\cos 30° + \\cos 45°\\sin 30° = \\frac{\\sqrt{6} + \\sqrt{2}}{4} \\approx 0.966$. (The wrong answer is $1.21 > 1$, which is impossible for a sine.)"
+   },
+   {
+    "id": "m2",
+    "text": "Uses the same sign in the cosine formula: $\\cos(A + B) = \\cos A\\cos B + \\sin A\\sin B$.",
+    "correction": "The sign flips for cosine: $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$ and $\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B$. Check with $A = B = 45°$: $\\cos 90° = \\frac{1}{2} - \\frac{1}{2} = 0$ ✓"
+   },
+   {
+    "id": "m3",
+    "text": "Writes $\\sin 2A = 2\\sin A$ (or $\\cos 2A = 2\\cos A$).",
+    "correction": "$\\sin 2A = 2\\sin A\\cos A$. Check with $A = 90°$: $\\sin 180° = 0$, but $2\\sin 90° = 2$."
+   },
+   {
+    "id": "m4",
+    "text": "Ignores the quadrant: given $\\sin A = \\frac{3}{5}$ with $A$ obtuse, uses $\\cos A = \\frac{4}{5}$ and gets $\\sin 2A = \\frac{24}{25}$.",
+    "correction": "In the 2nd quadrant cosine is negative: $\\cos A = -\\frac{4}{5}$, so $\\sin 2A = 2 \\times \\frac{3}{5} \\times \\left(-\\frac{4}{5}\\right) = -\\frac{24}{25}$."
+   }
+  ]
+ },
+ {
+  "id": "pure-trig-harmonic-form",
+  "prerequisites": [
+   "pure-trig-compound-angles",
+   "pure-trig-graphs",
+   "geo-pythagoras"
+  ],
+  "keyIdea": "Any $a\\cos x + b\\sin x$ can be written as a single wave, e.g.\n$$a\\cos x + b\\sin x \\equiv R\\cos(x - \\alpha)$$\n\n**Method:** expand $R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$ and compare coefficients:\n$$R\\cos\\alpha = a, \\quad R\\sin\\alpha = b$$\n$$R = \\sqrt{a^2 + b^2}, \\quad \\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{b}{a}$$\n\nThe same method works for $R\\cos(x + \\alpha)$, $R\\sin(x \\pm \\alpha)$; always expand the target form to get the signs right.\n\n**Max/min:** the maximum of $R\\cos(x - \\alpha)$ is $R$ (when $x = \\alpha$), the minimum is $-R$ (when $x = \\alpha + 180°$).\n\n**Equations:** $a\\cos x + b\\sin x = c \\Rightarrow \\cos(x - \\alpha) = \\frac{c}{R}$; adjust the interval for $x - \\alpha$ before solving.",
+  "workedExamples": [
+   {
+    "question": "(a) Express $3\\cos x + 4\\sin x$ in the form $R\\cos(x - \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$.\n(b) Hence solve $3\\cos x + 4\\sin x = 2.5$ for $0° \\le x < 360°$, giving answers to 1 decimal place.",
+    "solution": "(a) $R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$, so\n\n$R\\cos\\alpha = 3$, $R\\sin\\alpha = 4$.\n\n$R = \\sqrt{3^2 + 4^2} = 5$; $\\tan\\alpha = \\frac{4}{3} \\Rightarrow \\alpha = 53.13°$\n$$3\\cos x + 4\\sin x = 5\\cos(x - 53.13°)$$\n\n(b) $5\\cos(x - 53.13°) = 2.5 \\Rightarrow \\cos(x - 53.13°) = 0.5$\n\nInterval: $-53.13° \\le x - 53.13° < 306.87°$.\n\n$x - 53.13° = 60°$ or $300°$ ($-60°$ is outside the interval).\n\n$x = 113.1°$ or $x = 353.1°$"
+   },
+   {
+    "question": "Express $\\sin x - \\sqrt{3}\\cos x$ in the form $R\\sin(x - \\alpha)$, $R > 0$, $0 < \\alpha < \\frac{\\pi}{2}$. Hence find the maximum value of $\\dfrac{1}{4 + \\sin x - \\sqrt{3}\\cos x}$ and the value of $x$ in $0 \\le x < 2\\pi$ at which it occurs.",
+    "solution": "$R\\sin(x - \\alpha) = R\\sin x\\cos\\alpha - R\\cos x\\sin\\alpha$, so\n\n$R\\cos\\alpha = 1$, $R\\sin\\alpha = \\sqrt{3}$.\n\n$R = \\sqrt{1 + 3} = 2$, $\\tan\\alpha = \\sqrt{3} \\Rightarrow \\alpha = \\frac{\\pi}{3}$:\n$$\\sin x - \\sqrt{3}\\cos x = 2\\sin\\left(x - \\frac{\\pi}{3}\\right)$$\n\nThe fraction is largest when the denominator $4 + 2\\sin\\left(x - \\frac{\\pi}{3}\\right)$ is **smallest**, i.e. when $\\sin\\left(x - \\frac{\\pi}{3}\\right) = -1$:\n\nmaximum $= \\frac{1}{4 - 2} = \\frac{1}{2}$.\n\n$x - \\frac{\\pi}{3} = \\frac{3\\pi}{2} \\Rightarrow x = \\frac{11\\pi}{6}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Inverts the ratio for $\\alpha$: for $3\\cos x + 4\\sin x = R\\cos(x - \\alpha)$ uses $\\tan\\alpha = \\frac{3}{4}$, getting $\\alpha = 36.87°$.",
+    "correction": "$\\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{4}{3}$ (the coefficient matched with $\\sin\\alpha$ goes on top), so $\\alpha = 53.13°$. Check: $5\\cos(0 - 53.13°) = 3$ equals the original at $x = 0$."
+   },
+   {
+    "id": "m2",
+    "text": "Finds $R$ by adding the coefficients ($R = 3 + 4 = 7$) or forgets the square root ($R = 3^2 + 4^2 = 25$).",
+    "correction": "$R^2\\cos^2\\alpha + R^2\\sin^2\\alpha = R^2 = a^2 + b^2$, so $R = \\sqrt{3^2 + 4^2} = 5$."
+   },
+   {
+    "id": "m3",
+    "text": "Gets the sign of $\\alpha$ wrong by not expanding the target form: for $4\\cos x - 3\\sin x = R\\cos(x + \\alpha)$ writes $R\\sin\\alpha = -3$, giving a negative $\\alpha$.",
+    "correction": "Expand: $R\\cos(x + \\alpha) = R\\cos x\\cos\\alpha - R\\sin x\\sin\\alpha$. Matching $-3\\sin x$ gives $-R\\sin\\alpha = -3$, so $R\\sin\\alpha = 3$ and $\\tan\\alpha = \\frac{3}{4}$, $\\alpha = 36.87°$ (positive)."
+   },
+   {
+    "id": "m4",
+    "text": "Finds only one solution because the interval is not adjusted: from $\\cos(x - 53.13°) = 0.5$ gives only $x = 113.1°$.",
+    "correction": "For $0° \\le x < 360°$, $x - 53.13°$ runs over $[-53.13°, 306.87°)$, which contains $60°$ and $300°$. So $x = 113.1°$ and $353.1°$."
+   }
+  ]
+ },
+ {
+  "id": "pure-exponentials-logs",
+  "prerequisites": [
+   "num-negative-fractional-indices",
+   "num-index-laws",
+   "alg-graph-shapes"
+  ],
+  "keyIdea": "**Exponential graphs** $y = a^x$ ($a > 0$): pass through $(0, 1)$, always positive, asymptote $y = 0$; growth if $a > 1$, decay if $0 < a < 1$.\n\n**$e \\approx 2.718$:** the gradient of $y = e^x$ at any point equals $y$; $y = e^{kx}$ has gradient $ke^{kx}$.\n\n**Logarithms:** $\\log_a b = c \\iff a^c = b$ (\"the power you raise $a$ to, to get $b$\"). $\\ln x = \\log_e x$, and $y = \\ln x$ is the reflection of $y = e^x$ in $y = x$: $\\ln(e^x) = x$, $e^{\\ln x} = x$.\n\n**Laws:**\n$$\\log_a x + \\log_a y = \\log_a(xy), \\quad \\log_a x - \\log_a y = \\log_a\\frac{x}{y}, \\quad \\log_a x^k = k\\log_a x$$\n$$\\log_a a = 1, \\quad \\log_a 1 = 0$$\n\n**Change of base:** $\\log_a b = \\dfrac{\\log_c b}{\\log_c a}$, e.g. $\\log_5 20 = \\frac{\\ln 20}{\\ln 5}$.\n\nYou can only take logs of positive numbers, so check solutions.",
+  "workedExamples": [
+   {
+    "question": "Solve $\\log_3 x + \\log_3(x - 8) = 2$.",
+    "solution": "Combine using the addition law:\n$$\\log_3\\big(x(x - 8)\\big) = 2$$\n\nUndo the log:\n$$x(x - 8) = 3^2 = 9$$\n$$x^2 - 8x - 9 = 0 \\Rightarrow (x - 9)(x + 1) = 0$$\n\n$x = 9$ or $x = -1$. But $\\log_3(-1)$ is undefined, so reject $x = -1$.\n\n$x = 9$ (check: $\\log_3 9 + \\log_3 1 = 2 + 0 = 2$ ✓)"
+   },
+   {
+    "question": "(a) Write $2\\ln 3 + \\ln 4 - \\frac{1}{2}\\ln 9$ as a single logarithm.\n(b) Use the change of base formula to evaluate $\\log_5 20$ to 3 significant figures.",
+    "solution": "(a) Power law first: $2\\ln 3 = \\ln 9$ and $\\frac{1}{2}\\ln 9 = \\ln 3$.\n$$\\ln 9 + \\ln 4 - \\ln 3 = \\ln\\frac{9 \\times 4}{3} = \\ln 12$$\n\n(b)\n$$\\log_5 20 = \\frac{\\ln 20}{\\ln 5} = \\frac{2.9957\\ldots}{1.6094\\ldots} = 1.86 \\text{ (3 s.f.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Splits the log of a sum: $\\log(a + b) = \\log a + \\log b$, e.g. $\\log_2(x + 4) = \\log_2 x + 2$.",
+    "correction": "The addition law works on products: $\\log a + \\log b = \\log(ab)$. There is no rule for $\\log(a + b)$; e.g. $\\log_2(4 + 4) = 3$ but $\\log_2 4 + \\log_2 4 = 4$."
+   },
+   {
+    "id": "m2",
+    "text": "Treats a quotient of logs as a log of a quotient: $\\frac{\\ln 8}{\\ln 2} = \\ln 4$.",
+    "correction": "$\\frac{\\ln 8}{\\ln 2}$ is the change of base form of $\\log_2 8 = 3$. The subtraction law is $\\ln 8 - \\ln 2 = \\ln 4$, which is a different expression."
+   },
+   {
+    "id": "m3",
+    "text": "Keeps a solution that makes a log argument negative, e.g. gives $x = 9$ or $x = -1$ for $\\log_3 x + \\log_3(x - 8) = 2$.",
+    "correction": "Logs are defined only for positive arguments. $x = -1$ makes $\\log_3(-1)$ undefined, so reject it: $x = 9$ only. Always substitute back into the **original** equation."
+   },
+   {
+    "id": "m4",
+    "text": "Mixes up the definition: $\\log_2 x = 5 \\Rightarrow x = 5^2 = 25$ (or $x = \\frac{5}{2}$).",
+    "correction": "$\\log_2 x = 5$ means $2^5 = x$, so $x = 32$. The base is raised to the power equal to the log."
+   }
+  ]
+ },
+ {
+  "id": "pure-exponential-modelling",
+  "prerequisites": [
+   "pure-exponentials-logs",
+   "alg-equation-of-a-line",
+   "rat-compound-growth-decay"
+  ],
+  "keyIdea": "**Solving $a^x = b$:** take logs of both sides, $x\\ln a = \\ln b$, so $x = \\frac{\\ln b}{\\ln a}$. Spot hidden quadratics: $3^{2x} - 4(3^x) + 3 = 0$ is $y^2 - 4y + 3 = 0$ with $y = 3^x$.\n\n**Models:** $N = N_0e^{kt}$ ($k > 0$ growth, $k < 0$ decay); $N_0$ is the initial value and the rate of change is proportional to $N$. Interpret constants in context; note limitations (unlimited growth is unrealistic).\n\n**Log graphs turn curves into straight lines:**\n* $y = ax^n \\Rightarrow \\log y = n\\log x + \\log a$. Plot $\\log y$ against $\\log x$: gradient $n$, intercept $\\log a$.\n* $y = kb^x \\Rightarrow \\log y = x\\log b + \\log k$. Plot $\\log y$ against $x$: gradient $\\log b$, intercept $\\log k$.\n\nThen undo the logs: e.g. $\\log_{10}k = 0.6 \\Rightarrow k = 10^{0.6}$.",
+  "workedExamples": [
+   {
+    "question": "The number of bacteria in a culture is modelled by $P = 200e^{0.3t}$, where $t$ is the time in hours.\n(a) State the initial number of bacteria.\n(b) Find the time taken for the population to reach 5000, giving your answer to 3 significant figures.",
+    "solution": "(a) At $t = 0$: $P = 200e^0 = 200$.\n\n(b)\n$$200e^{0.3t} = 5000 \\Rightarrow e^{0.3t} = 25$$\n\nTake natural logs:\n$$0.3t = \\ln 25 \\Rightarrow t = \\frac{\\ln 25}{0.3} = 10.729\\ldots$$\n\n$t = 10.7$ hours (3 s.f.)."
+   },
+   {
+    "question": "Data are believed to follow a model $y = ab^x$. A graph of $\\log_{10}y$ against $x$ is a straight line passing through $(0, 0.6)$ and $(4, 1.2)$. Find $a$ and $b$ to 3 significant figures.",
+    "solution": "Take logs of the model:\n$$\\log_{10}y = \\log_{10}a + x\\log_{10}b$$\nso the intercept is $\\log_{10}a$ and the gradient is $\\log_{10}b$.\n\nGradient $= \\frac{1.2 - 0.6}{4 - 0} = 0.15$, intercept $= 0.6$.\n\n$\\log_{10}a = 0.6 \\Rightarrow a = 10^{0.6} = 3.98$ (3 s.f.)\n\n$\\log_{10}b = 0.15 \\Rightarrow b = 10^{0.15} = 1.41$ (3 s.f.)\n\nModel: $y = 3.98 \\times 1.41^x$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Solves $5^x = 12$ by dividing: $x = \\frac{12}{5}$, or writes $x = \\log 12 - \\log 5$.",
+    "correction": "Take logs: $x\\ln 5 = \\ln 12$, so $x = \\frac{\\ln 12}{\\ln 5} = 1.544$ (4 s.f.). Check: $5^{1.544} \\approx 12$."
+   },
+   {
+    "id": "m2",
+    "text": "Reads the intercept of the log graph as the constant itself: for $\\log_{10}y = 0.15x + 0.6$ from $y = ab^x$, gives $a = 0.6$.",
+    "correction": "The intercept is $\\log_{10}a$, so $a = 10^{0.6} = 3.98$. Undo the log for every constant read from the graph."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong gradient meaning: for $y = kb^x$ says $b$ equals the gradient of $\\log y$ against $x$; or for $y = ax^n$ plots $\\log y$ against $x$ (not $\\log x$).",
+    "correction": "For $y = kb^x$ the gradient is $\\log b$, so $b = 10^{\\text{gradient}}$. For $y = ax^n$ you must plot $\\log y$ against $\\log x$, and then the gradient is $n$ itself."
+   },
+   {
+    "id": "m4",
+    "text": "Takes logs term by term across a sum: $2^x + 2^{x+1} = 24 \\Rightarrow x\\ln 2 + (x + 1)\\ln 2 = \\ln 24$.",
+    "correction": "$\\ln(A + B) \\ne \\ln A + \\ln B$. Factorise first: $2^x + 2 \\times 2^x = 3 \\times 2^x = 24$, so $2^x = 8$ and $x = 3$."
+   }
+  ]
+ },
+ {
+  "id": "pure-vectors",
+  "prerequisites": [
+   "geo-vectors",
+   "geo-pythagoras",
+   "geo-trig-right-angled",
+   "geo-3d-pythagoras-trig"
+  ],
+  "keyIdea": "A vector has **magnitude** and **direction**: $\\begin{pmatrix} 3 \\\\ -4 \\end{pmatrix} = 3\\mathbf{i} - 4\\mathbf{j}$ (US component form $\\langle 3, -4\\rangle$); in 3D $a\\mathbf{i} + b\\mathbf{j} + c\\mathbf{k}$.\n\n* **Magnitude:** $|a\\mathbf{i} + b\\mathbf{j} + c\\mathbf{k}| = \\sqrt{a^2 + b^2 + c^2}$\n* **Direction (2D):** angle with the positive $x$-axis from $\\tan\\theta = \\frac{b}{a}$; check the quadrant with a sketch.\n* **Unit vector:** $\\hat{\\mathbf{a}} = \\dfrac{\\mathbf{a}}{|\\mathbf{a}|}$ (magnitude 1).\n* **Position vectors:** $\\overrightarrow{OA} = \\mathbf{a}$; $\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$ (\"end minus start\"); distance $AB = |\\mathbf{b} - \\mathbf{a}|$; midpoint $\\frac{1}{2}(\\mathbf{a} + \\mathbf{b})$.\n* **Parallel:** one vector is a scalar multiple of the other. **Collinear:** $\\overrightarrow{AB} = k\\overrightarrow{BC}$ with a common point $B$.\n\nGeometric problems: parallelograms ($\\overrightarrow{AB} = \\overrightarrow{DC}$), ratios along lines, proving collinearity.",
+  "workedExamples": [
+   {
+    "question": "$A$ and $B$ have coordinates $(2, -1, 3)$ and $(5, 3, 3)$. Find $\\overrightarrow{AB}$, the distance $AB$ and a unit vector in the direction of $\\overrightarrow{AB}$.",
+    "solution": "End minus start:\n$$\\overrightarrow{AB} = (5 - 2)\\mathbf{i} + (3 - (-1))\\mathbf{j} + (3 - 3)\\mathbf{k} = 3\\mathbf{i} + 4\\mathbf{j}$$\n\n$$AB = |\\overrightarrow{AB}| = \\sqrt{3^2 + 4^2 + 0^2} = 5$$\n\nUnit vector:\n$$\\frac{1}{5}(3\\mathbf{i} + 4\\mathbf{j}) = 0.6\\mathbf{i} + 0.8\\mathbf{j}$$"
+   },
+   {
+    "question": "$ABCD$ is a parallelogram with $A(1, 2)$, $B(4, 3)$ and $C(6, 7)$. Find the coordinates of $D$ and the angle $\\overrightarrow{AB}$ makes with the positive $x$-axis.",
+    "solution": "In parallelogram $ABCD$, $\\overrightarrow{DC} = \\overrightarrow{AB}$.\n\n$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a} = 3\\mathbf{i} + \\mathbf{j}$\n\n$\\mathbf{d} = \\mathbf{c} - \\overrightarrow{AB} = (6 - 3)\\mathbf{i} + (7 - 1)\\mathbf{j} = 3\\mathbf{i} + 6\\mathbf{j}$, so $D(3, 6)$.\n\nCheck: $\\overrightarrow{AD} = 2\\mathbf{i} + 4\\mathbf{j} = \\overrightarrow{BC}$ ✓\n\nDirection: both components positive (1st quadrant), $\\theta = \\tan^{-1}\\frac{1}{3} = 18.4°$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Subtracts the wrong way: $\\overrightarrow{AB} = \\mathbf{a} - \\mathbf{b}$.",
+    "correction": "Travel from $A$ back to $O$ then out to $B$: $\\overrightarrow{AB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$ (\"end minus start\"). $\\mathbf{a} - \\mathbf{b}$ is $\\overrightarrow{BA}$."
+   },
+   {
+    "id": "m2",
+    "text": "Mishandles negative components in the magnitude: $|3\\mathbf{i} - 4\\mathbf{j}| = \\sqrt{3^2 - 4^2}$ (or $= 3 - 4$).",
+    "correction": "Square each component: $(-4)^2 = 16$, so $|3\\mathbf{i} - 4\\mathbf{j}| = \\sqrt{9 + 16} = 5$. Magnitudes are never negative."
+   },
+   {
+    "id": "m3",
+    "text": "Takes the calculator angle without checking the quadrant: for $-3\\mathbf{i} + 4\\mathbf{j}$ gives the direction as $\\tan^{-1}\\left(\\frac{4}{-3}\\right) = -53.1°$.",
+    "correction": "$-3\\mathbf{i} + 4\\mathbf{j}$ points into the 2nd quadrant. The acute angle with the negative $x$-axis is $\\tan^{-1}\\frac{4}{3} = 53.1°$, so the angle with the positive $x$-axis is $180° - 53.1° = 126.9°$."
+   },
+   {
+    "id": "m4",
+    "text": "Finds a unit vector by dividing by the sum of the components: unit vector of $3\\mathbf{i} + 4\\mathbf{j}$ is $\\frac{1}{7}(3\\mathbf{i} + 4\\mathbf{j})$.",
+    "correction": "Divide by the magnitude: $|3\\mathbf{i} + 4\\mathbf{j}| = 5$, so the unit vector is $\\frac{1}{5}(3\\mathbf{i} + 4\\mathbf{j})$. Check: $\\sqrt{0.6^2 + 0.8^2} = 1$."
+   }
+  ]
+ },
+ {
+  "id": "pure-parametric-equations",
+  "prerequisites": [
+   "alg-rearranging-formulae",
+   "alg-simultaneous-nonlinear",
+   "alg-circle-equations",
+   "pure-trig-identities-equations"
+  ],
+  "keyIdea": "A **parametric curve** gives both coordinates in terms of a parameter: $x = f(t)$, $y = g(t)$. Plot it from a table of $t$ values.\n\n**Converting to Cartesian form** (eliminate $t$):\n* rearrange one equation for $t$ and substitute into the other, or\n* use a trig identity, e.g. $x = 3\\cos t$, $y = 3\\sin t \\Rightarrow x^2 + y^2 = 9$.\n\nThe **domain and range** of the Cartesian curve come from the parameter's range: e.g. $x = \\sin t$ means $-1 \\le x \\le 1$.\n\n**Intersections:** substitute $x(t)$ and $y(t)$ into the other equation, solve for $t$, then convert each $t$ back to coordinates. For the axes, solve $x(t) = 0$ or $y(t) = 0$.\n\n**Modelling:** $t$ is often time, e.g. a ball's path $x = 12t$, $y = 15t - 4.9t^2$; the domain of $t$ is limited by the context.",
+  "workedExamples": [
+   {
+    "question": "A curve has parametric equations $x = 2t - 1$, $y = t^2 + 3$.\n(a) Find a Cartesian equation of the curve.\n(b) Find the coordinates of the points where the curve meets the line $y = 4x$.",
+    "solution": "(a) $t = \\frac{x + 1}{2}$, so\n$$y = \\left(\\frac{x + 1}{2}\\right)^2 + 3 = \\frac{(x + 1)^2}{4} + 3$$\n\n(b) Substitute the parametric forms into $y = 4x$:\n$$t^2 + 3 = 4(2t - 1)$$\n$$t^2 - 8t + 7 = 0 \\Rightarrow (t - 1)(t - 7) = 0$$\n\n$t = 1$: $(2 - 1, \\ 1 + 3) = (1, 4)$\n\n$t = 7$: $(14 - 1, \\ 49 + 3) = (13, 52)$\n\nCheck: $4 \\times 1 = 4$ ✓, $4 \\times 13 = 52$ ✓"
+   },
+   {
+    "question": "A curve has parametric equations $x = \\sin t$, $y = \\cos 2t$ for $0 \\le t \\le 2\\pi$. Find a Cartesian equation of the curve and state the possible values of $x$.",
+    "solution": "Use the double angle formula $\\cos 2t = 1 - 2\\sin^2 t$:\n$$y = 1 - 2\\sin^2 t = 1 - 2x^2$$\n\nSince $x = \\sin t$, $-1 \\le x \\le 1$.\n\nThe curve is the part of the parabola $y = 1 - 2x^2$ for $-1 \\le x \\le 1$ (so $-1 \\le y \\le 1$), not the whole parabola."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Ignores the restriction from the parameter: for $x = \\sin t$, $y = \\cos 2t$ states the curve is the whole parabola $y = 1 - 2x^2$.",
+    "correction": "$x = \\sin t$ can only take values in $[-1, 1]$, so the curve is $y = 1 - 2x^2$ for $-1 \\le x \\le 1$. Always state the domain (and range) inherited from the parameter."
+   },
+   {
+    "id": "m2",
+    "text": "Stops at the parameter values: for the intersection of $x = 2t - 1$, $y = t^2 + 3$ with $y = 4x$ answers \"$t = 1$ and $t = 7$\" or gives the points as $(1, 7)$.",
+    "correction": "$t$ values are not coordinates. Substitute each into $x(t)$ and $y(t)$: $t = 1$ gives $(1, 4)$ and $t = 7$ gives $(13, 52)$."
+   },
+   {
+    "id": "m3",
+    "text": "Eliminates a trig parameter incorrectly: from $x = 3\\cos\\theta$, $y = 3\\sin\\theta$ writes $x + y = 3$ or $x^2 + y^2 = 3$.",
+    "correction": "Square and add: $x^2 + y^2 = 9\\cos^2\\theta + 9\\sin^2\\theta = 9(\\cos^2\\theta + \\sin^2\\theta) = 9$, a circle of radius 3. Or write $\\cos\\theta = \\frac{x}{3}$, $\\sin\\theta = \\frac{y}{3}$ and use $\\cos^2\\theta + \\sin^2\\theta = 1$."
+   }
+  ]
+ },
+ {
+  "id": "pure-numerical-methods",
+  "prerequisites": [
+   "alg-iteration",
+   "calc-differentiation-basics",
+   "pure-curve-sketching"
+  ],
+  "keyIdea": "**Change of sign:** if $f$ is **continuous** on $[a, b]$ and $f(a)$, $f(b)$ have opposite signs, there is a root in $(a, b)$. It can fail: an asymptote gives a sign change without a root (e.g. $\\frac{1}{x - 2}$); a repeated root or two close roots gives a root without a sign change. To show a root is $2.09$ to 2 d.p., show a sign change on $[2.085, 2.095]$.\n\n**Iteration:** rearrange $f(x) = 0$ as $x = g(x)$ and use $x_{n+1} = g(x_n)$. It converges if $|g'(x)| < 1$ near the root: a **staircase** diagram when $0 < g'(x) < 1$, a **cobweb** when $-1 < g'(x) < 0$. Otherwise it diverges.\n\n**Newton–Raphson:**\n$$x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$$\nIt follows the tangent to the $x$-axis. It fails if $f'(x_n) = 0$ (horizontal tangent) and behaves badly near a turning point.",
+  "workedExamples": [
+   {
+    "question": "$f(x) = x^3 - 2x - 5$.\n(a) Show that $f(x) = 0$ has a root $\\alpha$ between 2 and 3.\n(b) Taking $x_0 = 2$, use the Newton–Raphson method twice to find an approximation to $\\alpha$, giving your answer to 4 decimal places.",
+    "solution": "(a) $f(2) = 8 - 4 - 5 = -1 < 0$ and $f(3) = 27 - 6 - 5 = 16 > 0$. There is a change of sign and $f$ is continuous (a polynomial), so there is a root in $(2, 3)$.\n\n(b) $f'(x) = 3x^2 - 2$.\n\n$x_1 = 2 - \\frac{f(2)}{f'(2)} = 2 - \\frac{-1}{10} = 2.1$\n\n$f(2.1) = 9.261 - 4.2 - 5 = 0.061$; $f'(2.1) = 13.23 - 2 = 11.23$\n\n$x_2 = 2.1 - \\frac{0.061}{11.23} = 2.09457\\ldots$\n\n$\\alpha \\approx 2.0946$ (4 d.p.)"
+   },
+   {
+    "question": "The equation $x^3 - 2x - 5 = 0$ can be rearranged as $x = \\sqrt[3]{2x + 5}$.\n(a) Using $x_{n+1} = \\sqrt[3]{2x_n + 5}$ with $x_0 = 2$, find $x_1$, $x_2$, $x_3$ to 4 decimal places.\n(b) Show that the root is $2.095$ to 3 decimal places.",
+    "solution": "(a) $x_1 = \\sqrt[3]{9} = 2.0801$\n\n$x_2 = \\sqrt[3]{2(2.0801) + 5} = 2.0924$\n\n$x_3 = \\sqrt[3]{2(2.0924) + 5} = 2.0942$\n\n(The values increase steadily towards the root: a staircase diagram.)\n\n(b) Test the bounds of the interval that rounds to $2.095$, i.e. $[2.0945, 2.0955]$:\n\n$f(2.0945) = -0.00057\\ldots < 0$\n\n$f(2.0955) = 0.0106\\ldots > 0$\n\nChange of sign and $f$ is continuous, so $2.0945 < \\alpha < 2.0955$, hence $\\alpha = 2.095$ (3 d.p.)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Assumes a sign change always means a root, even across a discontinuity: for $f(x) = \\frac{1}{x - 2}$, $f(1) = -1$ and $f(3) = 1$, so \"there is a root between 1 and 3\".",
+    "correction": "The change-of-sign rule needs $f$ continuous on the interval. $\\frac{1}{x - 2}$ has a vertical asymptote at $x = 2$, where the sign changes without the graph crossing the axis; $\\frac{1}{x - 2} = 0$ has no solutions."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes no sign change means no root, e.g. $f(x) = (x - 1.5)^2 - 0.01$ has $f(1) > 0$ and $f(2) > 0$, so \"no root in $[1, 2]$\".",
+    "correction": "Two roots ($x = 1.4$ and $x = 1.6$) or a repeated root (touching the axis) give no overall sign change. Use smaller intervals or a sketch before concluding there is no root."
+   },
+   {
+    "id": "m3",
+    "text": "Writes the Newton–Raphson formula upside down or with the wrong sign: $x_{n+1} = x_n - \\frac{f'(x_n)}{f(x_n)}$ or $x_{n+1} = x_n + \\frac{f(x_n)}{f'(x_n)}$.",
+    "correction": "The tangent at $x_n$ meets the $x$-axis where $0 - f(x_n) = f'(x_n)(x - x_n)$, giving $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$: function on top, derivative on the bottom, subtract."
+   },
+   {
+    "id": "m4",
+    "text": "To show a root is $2.09$ to 2 d.p., tests $f(2.09)$ and $f(2.10)$ (or $f(2.08)$ and $f(2.10)$).",
+    "correction": "A sign change on $[2.09, 2.10]$ only shows $2.09 < \\alpha < 2.10$, so $\\alpha$ could round to $2.10$. Test the rounding bounds $2.085$ and $2.095$: a sign change there shows $\\alpha$ rounds to $2.09$."
+   }
+  ]
+ }
+]

@@ -1,0 +1,592 @@
+[
+ {
+  "id": "fur-complex-numbers",
+  "prerequisites": [
+   "alg-quadratic-formula",
+   "pure-quadratic-functions-discriminant",
+   "alg-expand-double-triple",
+   "num-surds"
+  ],
+  "keyIdea": "Define $i$ by $i^2 = -1$, so $\\sqrt{-k} = i\\sqrt{k}$ for $k > 0$. A complex number is $z = a + bi$ with **real part** $\\mathrm{Re}(z) = a$ and **imaginary part** $\\mathrm{Im}(z) = b$ (a real number – no $i$).\n\n* Add/subtract: combine real parts and imaginary parts separately.\n* Multiply: expand the brackets, then replace $i^2$ by $-1$.\n* Conjugate: $z^* = a - bi$ (US notation $\\bar{z}$); $zz^* = a^2 + b^2$ is real.\n* Divide: multiply numerator and denominator by the conjugate of the denominator.\n* Equal complex numbers have equal real parts **and** equal imaginary parts.\n\nA quadratic with real coefficients and $b^2 - 4ac < 0$ has two non-real roots forming a conjugate pair:\n$$z = \\frac{-b \\pm i\\sqrt{4ac - b^2}}{2a}$$",
+  "workedExamples": [
+   {
+    "question": "Express $\\dfrac{3 + 4i}{1 - 2i}$ in the form $a + bi$.",
+    "solution": "Multiply top and bottom by the conjugate of the denominator, $1 + 2i$:\n$$\\frac{(3 + 4i)(1 + 2i)}{(1 - 2i)(1 + 2i)}$$\n\nNumerator: $3 + 6i + 4i + 8i^2 = 3 + 10i - 8 = -5 + 10i$\n\nDenominator: $1^2 + 2^2 = 5$\n\nSo $\\dfrac{-5 + 10i}{5} = -1 + 2i$.\n\nCheck: $(-1 + 2i)(1 - 2i) = -1 + 2i + 2i - 4i^2 = 3 + 4i$ ✓"
+   },
+   {
+    "question": "Solve $z^2 - 6z + 13 = 0$.",
+    "solution": "Discriminant: $b^2 - 4ac = 36 - 52 = -16 < 0$, so the roots are non-real.\n\n$\\sqrt{-16} = \\sqrt{16}\\sqrt{-1} = 4i$\n\n$$z = \\frac{6 \\pm 4i}{2} = 3 \\pm 2i$$\n\nCheck: sum of roots $= 6$ and product $= (3 + 2i)(3 - 2i) = 9 + 4 = 13$, matching $z^2 - 6z + 13$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats $i^2$ as $+1$ (or just drops it) when multiplying, e.g. $(2 + 3i)(1 + i) = 2 + 2i + 3i + 3i^2 = 5 + 5i$.",
+    "correction": "$i^2 = -1$, so $3i^2 = -3$: $(2 + 3i)(1 + i) = 2 + 5i - 3 = -1 + 5i$. Always replace $i^2$ by $-1$ before collecting terms."
+   },
+   {
+    "id": "m2",
+    "text": "Includes the $i$ in the imaginary part, e.g. writes $\\mathrm{Im}(4 - 7i) = -7i$.",
+    "correction": "The imaginary part is the real coefficient of $i$: $\\mathrm{Im}(4 - 7i) = -7$. Both $\\mathrm{Re}(z)$ and $\\mathrm{Im}(z)$ are real numbers."
+   },
+   {
+    "id": "m3",
+    "text": "Divides real part by real part and imaginary part by imaginary part, e.g. $\\dfrac{6 + 8i}{2 + 4i} = 3 + 2i$.",
+    "correction": "Multiply top and bottom by the conjugate $2 - 4i$: $\\dfrac{(6 + 8i)(2 - 4i)}{20} = \\dfrac{44 - 8i}{20} = \\dfrac{11}{5} - \\dfrac{2}{5}i$. Check by multiplying back: $(2 + 4i)(3 + 2i) = -2 + 16i \\ne 6 + 8i$, so componentwise division is wrong."
+   },
+   {
+    "id": "m4",
+    "text": "Takes $\\sqrt{-16} = -4$ in the quadratic formula, so solves $z^2 - 6z + 13 = 0$ as $z = \\frac{6 \\pm (-4)}{2}$, giving the real 'roots' $5$ and $1$.",
+    "correction": "$\\sqrt{-16} = \\sqrt{16} \\times \\sqrt{-1} = 4i$, so $z = 3 \\pm 2i$. Substituting $z = 5$ gives $25 - 30 + 13 = 8 \\ne 0$, which shows $5$ is not a root."
+   }
+  ]
+ },
+ {
+  "id": "fur-argand-modulus-argument",
+  "prerequisites": [
+   "fur-complex-numbers",
+   "pure-radians-unit-circle",
+   "geo-trig-right-angled",
+   "alg-circle-equations",
+   "alg-perpendicular-lines"
+  ],
+  "keyIdea": "On an **Argand diagram** $z = x + iy$ is the point $(x, y)$.\n\n* **Modulus** $|z| = r = \\sqrt{x^2 + y^2}$ (distance from $O$).\n* **Argument** $\\arg z = \\theta$, the angle from the positive real axis; the **principal argument** satisfies $-\\pi < \\theta \\le \\pi$. Sketch the point first, then use $\\tan^{-1}\\left|\\frac{y}{x}\\right|$ and adjust for the quadrant.\n* **Modulus–argument form** (US: polar/trigonometric form): $z = r(\\cos\\theta + i\\sin\\theta)$.\n\nMultiplying: multiply moduli, add arguments. Dividing: divide moduli, subtract arguments. Then adjust by $\\pm 2\\pi$ into the principal range.\n\nLoci ($|z - a|$ is the distance from $z$ to $a$):\n* $|z - a| = r$: circle, centre $a$, radius $r$\n* $|z - a| = |z - b|$: perpendicular bisector of $a$ and $b$\n* $\\arg(z - a) = \\alpha$: half-line from $a$ (not including $a$) at angle $\\alpha$",
+  "workedExamples": [
+   {
+    "question": "$z = -1 + \\sqrt{3}\\,i$ and $w = \\sqrt{3} - i$. Write $z$ and $w$ in modulus–argument form and hence find $\\dfrac{z}{w}$ in modulus–argument form.",
+    "solution": "$|z| = \\sqrt{1 + 3} = 2$. $z$ is in the second quadrant, with $\\tan^{-1}\\frac{\\sqrt{3}}{1} = \\frac{\\pi}{3}$, so $\\arg z = \\pi - \\frac{\\pi}{3} = \\frac{2\\pi}{3}$.\n$$z = 2\\left(\\cos\\tfrac{2\\pi}{3} + i\\sin\\tfrac{2\\pi}{3}\\right)$$\n\n$|w| = \\sqrt{3 + 1} = 2$. $w$ is in the fourth quadrant, so $\\arg w = -\\frac{\\pi}{6}$.\n$$w = 2\\left(\\cos\\left(-\\tfrac{\\pi}{6}\\right) + i\\sin\\left(-\\tfrac{\\pi}{6}\\right)\\right)$$\n\nDivide moduli and subtract arguments: $\\left|\\frac{z}{w}\\right| = \\frac{2}{2} = 1$ and $\\arg\\frac{z}{w} = \\frac{2\\pi}{3} - \\left(-\\frac{\\pi}{6}\\right) = \\frac{5\\pi}{6}$.\n$$\\frac{z}{w} = \\cos\\tfrac{5\\pi}{6} + i\\sin\\tfrac{5\\pi}{6} = -\\tfrac{\\sqrt{3}}{2} + \\tfrac{1}{2}i$$"
+   },
+   {
+    "question": "Find a Cartesian equation for each locus and describe it.\n(a) $|z - 3 + 2i| = 4$\n(b) $|z - 2| = |z - 4i|$",
+    "solution": "(a) Rewrite as $|z - (3 - 2i)| = 4$: points a distance 4 from $3 - 2i$. Circle centre $(3, -2)$, radius 4:\n$$(x - 3)^2 + (y + 2)^2 = 16$$\n\n(b) Points equidistant from $(2, 0)$ and $(0, 4)$: the perpendicular bisector. With $z = x + iy$:\n$$(x - 2)^2 + y^2 = x^2 + (y - 4)^2$$\n$$-4x + 4 = -8y + 16$$\n$$y = \\tfrac{1}{2}x + \\tfrac{3}{2}$$\n\nCheck: the midpoint $(1, 2)$ lies on it, and its gradient $\\frac{1}{2}$ is perpendicular to the gradient $-2$ of the segment ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $\\arg z = \\tan^{-1}\\frac{y}{x}$ without checking the quadrant, e.g. $\\arg(-1 - i) = \\tan^{-1}\\frac{-1}{-1} = \\frac{\\pi}{4}$.",
+    "correction": "Plot the point first. $-1 - i$ is in the third quadrant, so $\\arg(-1 - i) = -\\pi + \\frac{\\pi}{4} = -\\frac{3\\pi}{4}$."
+   },
+   {
+    "id": "m2",
+    "text": "Includes $i$ or a minus sign inside the modulus, e.g. $|3 - 4i| = \\sqrt{3^2 - 4^2}$ or $\\sqrt{9 + 16i^2}$.",
+    "correction": "$|x + iy| = \\sqrt{x^2 + y^2}$ uses the real numbers $x$ and $y$ only: $|3 - 4i| = \\sqrt{9 + 16} = 5$. A modulus is a distance, so it is never negative or non-real."
+   },
+   {
+    "id": "m3",
+    "text": "Reads the centre of a circle locus with the wrong signs, e.g. says $|z - 3 + 2i| = 4$ has centre $(-3, 2)$ or $(3, 2)$.",
+    "correction": "Write it as $|z - (3 - 2i)| = 4$: the centre is the number being subtracted, $3 - 2i$, i.e. the point $(3, -2)$."
+   },
+   {
+    "id": "m4",
+    "text": "After multiplying in modulus–argument form, leaves the argument outside the principal range, e.g. $\\arg z_1 = \\arg z_2 = \\frac{3\\pi}{4}$ so $\\arg(z_1 z_2) = \\frac{3\\pi}{2}$.",
+    "correction": "Adding arguments is right, but the principal argument must satisfy $-\\pi < \\theta \\le \\pi$: subtract $2\\pi$ to get $\\arg(z_1 z_2) = \\frac{3\\pi}{2} - 2\\pi = -\\frac{\\pi}{2}$."
+   }
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity",
+  "prerequisites": [
+   "fur-argand-modulus-argument",
+   "pure-binomial-expansion",
+   "pure-trig-identities-equations",
+   "fur-proof-by-induction"
+  ],
+  "keyIdea": "**Euler's form:** $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$, so $z = r(\\cos\\theta + i\\sin\\theta) = re^{i\\theta}$.\n\n**De Moivre's theorem:** $\\left[r(\\cos\\theta + i\\sin\\theta)\\right]^n = r^n(\\cos n\\theta + i\\sin n\\theta)$ for integer $n$ (provable by induction).\n\n**$n$th roots:** to solve $z^n = Re^{i\\phi}$, write the argument as $\\phi + 2k\\pi$:\n$$z = R^{1/n} e^{i(\\phi + 2k\\pi)/n}, \\quad k = 0, 1, \\ldots, n - 1$$\nThere are exactly $n$ roots, equally spaced on a circle of radius $R^{1/n}$ (vertices of a regular $n$-gon).\n\n**Roots of unity:** $z^n = 1$ gives $1, \\omega, \\omega^2, \\ldots, \\omega^{n-1}$ with $\\omega = e^{2\\pi i/n}$, and $1 + \\omega + \\cdots + \\omega^{n-1} = 0$.\n\n**Trig identities:** expand $(\\cos\\theta + i\\sin\\theta)^n$ binomially and equate real/imaginary parts for $\\cos n\\theta$, $\\sin n\\theta$; use $z^n + z^{-n} = 2\\cos n\\theta$ and $z^n - z^{-n} = 2i\\sin n\\theta$ (with $z = e^{i\\theta}$) to write $\\cos^n\\theta$ in terms of multiple angles.",
+  "workedExamples": [
+   {
+    "question": "Solve $z^3 = 8i$, giving the roots in the form $a + bi$.",
+    "solution": "$8i = 8e^{i\\pi/2}$, so write $z^3 = 8e^{i(\\pi/2 + 2k\\pi)}$.\n\nTake the cube root of the modulus and divide the argument by 3:\n$$z = 2e^{i(\\pi/6 + 2k\\pi/3)}, \\quad k = 0, 1, 2$$\n\n$k = 0$: $z = 2e^{i\\pi/6} = 2\\left(\\frac{\\sqrt{3}}{2} + \\frac{1}{2}i\\right) = \\sqrt{3} + i$\n\n$k = 1$: $z = 2e^{i5\\pi/6} = -\\sqrt{3} + i$\n\n$k = 2$: $z = 2e^{i3\\pi/2} = 2e^{-i\\pi/2} = -2i$\n\nCheck: $(-2i)^3 = -8i^3 = 8i$ ✓. The three roots are $\\frac{2\\pi}{3}$ apart on the circle $|z| = 2$."
+   },
+   {
+    "question": "Use De Moivre's theorem to show that $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$.",
+    "solution": "Let $c = \\cos\\theta$, $s = \\sin\\theta$. By De Moivre, $\\cos 3\\theta + i\\sin 3\\theta = (c + is)^3$.\n\nExpand binomially, remembering $i^2 = -1$ and $i^3 = -i$:\n$$(c + is)^3 = c^3 + 3c^2(is) + 3c(is)^2 + (is)^3 = c^3 + 3ic^2 s - 3cs^2 - is^3$$\n\nEquate real parts:\n$$\\cos 3\\theta = c^3 - 3cs^2 = c^3 - 3c(1 - c^2) = 4c^3 - 3c$$\n\nSo $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$ as required."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds only one root of $z^n = w$, e.g. gives just $z = 2e^{i\\pi/6}$ for $z^3 = 8i$, by dividing the principal argument by 3 and forgetting the $+2k\\pi$.",
+    "correction": "Write the argument as $\\frac{\\pi}{2} + 2k\\pi$ before dividing by $n$; $k = 0, 1, 2$ give the three distinct roots $\\sqrt{3} + i$, $-\\sqrt{3} + i$, $-2i$. An equation $z^n = w$ (with $w \\ne 0$) always has $n$ roots."
+   },
+   {
+    "id": "m2",
+    "text": "Divides the modulus by $n$ instead of taking the $n$th root, e.g. for $z^3 = 8i$ writes $|z| = \\frac{8}{3}$.",
+    "correction": "$|z|^3 = 8$, so $|z| = \\sqrt[3]{8} = 2$. Only the argument is divided by $n$; the modulus is rooted."
+   },
+   {
+    "id": "m3",
+    "text": "Applies De Moivre to a number not in the form $\\cos\\theta + i\\sin\\theta$, e.g. writes $(\\sin\\theta + i\\cos\\theta)^2 = \\sin 2\\theta + i\\cos 2\\theta$.",
+    "correction": "De Moivre needs $\\cos\\theta$ as the real part and $\\sin\\theta$ as the imaginary part of the same angle. Expanding: $(\\sin\\theta + i\\cos\\theta)^2 = \\sin^2\\theta - \\cos^2\\theta + 2i\\sin\\theta\\cos\\theta = -\\cos 2\\theta + i\\sin 2\\theta$. Alternatively rewrite $\\sin\\theta + i\\cos\\theta = \\cos\\left(\\frac{\\pi}{2} - \\theta\\right) + i\\sin\\left(\\frac{\\pi}{2} - \\theta\\right)$ first."
+   },
+   {
+    "id": "m4",
+    "text": "Drops the powers of $i$ in the binomial expansion, e.g. $(c + is)^3 = c^3 + 3c^2 s i + 3cs^2 + s^3 i$, giving $\\cos 3\\theta = c^3 + 3cs^2$.",
+    "correction": "$(is)^2 = i^2 s^2 = -s^2$ and $(is)^3 = i^3 s^3 = -is^3$. The real part is $c^3 - 3cs^2$, giving $\\cos 3\\theta = 4c^3 - 3c$. Check with $\\theta = \\frac{\\pi}{3}$: $\\cos\\pi = -1$ and $4\\left(\\frac{1}{8}\\right) - 3\\left(\\frac{1}{2}\\right) = -1$ ✓, whereas $c^3 + 3cs^2 = \\frac{1}{8} + \\frac{9}{8} = \\frac{5}{4}$."
+   }
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials",
+  "prerequisites": [
+   "fur-complex-numbers",
+   "pure-polynomials-factor-theorem",
+   "pure-quadratic-functions-discriminant",
+   "alg-algebraic-fractions"
+  ],
+  "keyIdea": "**Fundamental theorem of algebra:** a polynomial of degree $n$ has exactly $n$ complex roots (counting repeats).\n\n**Conjugate root theorem:** if the coefficients are **real** and $\\alpha$ is a root, so is $\\alpha^*$. The pair gives a real quadratic factor $z^2 - 2\\mathrm{Re}(\\alpha)z + |\\alpha|^2$.\n\n**Sums and products of roots:**\n* $az^2 + bz + c = 0$: $\\alpha + \\beta = -\\frac{b}{a}$, $\\alpha\\beta = \\frac{c}{a}$\n* $az^3 + bz^2 + cz + d = 0$: $\\sum\\alpha = -\\frac{b}{a}$, $\\sum\\alpha\\beta = \\frac{c}{a}$, $\\alpha\\beta\\gamma = -\\frac{d}{a}$\n* quartic: $\\sum\\alpha = -\\frac{b}{a}$, $\\sum\\alpha\\beta = \\frac{c}{a}$, $\\sum\\alpha\\beta\\gamma = -\\frac{d}{a}$, $\\alpha\\beta\\gamma\\delta = \\frac{e}{a}$\n\nUseful: $\\alpha^2 + \\beta^2 + \\gamma^2 = \\left(\\sum\\alpha\\right)^2 - 2\\sum\\alpha\\beta$.\n\n**Transformed equations:** for roots $2\\alpha, 2\\beta, \\ldots$ let $w = 2z$, substitute $z = \\frac{w}{2}$; for roots $\\alpha + 1, \\ldots$ substitute $z = w - 1$.",
+  "workedExamples": [
+   {
+    "question": "Given that $2 + i$ is a root of $z^3 - 7z^2 + 17z - 15 = 0$, find the other roots.",
+    "solution": "The coefficients are real, so $2 - i$ is also a root.\n\nQuadratic factor: $(z - (2 + i))(z - (2 - i)) = z^2 - 4z + (4 + 1) = z^2 - 4z + 5$\n\nThe constant terms give $5 \\times (z - k)$ with $-5k = -15$, so the linear factor is $z - 3$. Check by expanding:\n$$(z^2 - 4z + 5)(z - 3) = z^3 - 7z^2 + 17z - 15$$\nwhich matches the original cubic ✓\n\nRoots: $2 + i$, $2 - i$, $3$."
+   },
+   {
+    "question": "The roots of $2z^3 + 3z^2 - 4z + 5 = 0$ are $\\alpha$, $\\beta$, $\\gamma$.\n(a) Find $\\alpha^2 + \\beta^2 + \\gamma^2$.\n(b) Find a cubic equation with integer coefficients whose roots are $2\\alpha$, $2\\beta$, $2\\gamma$.",
+    "solution": "$\\sum\\alpha = -\\frac{3}{2}$, $\\sum\\alpha\\beta = \\frac{-4}{2} = -2$, $\\alpha\\beta\\gamma = -\\frac{5}{2}$.\n\n(a) $\\alpha^2 + \\beta^2 + \\gamma^2 = \\left(-\\frac{3}{2}\\right)^2 - 2(-2) = \\frac{9}{4} + 4 = \\frac{25}{4}$\n\n(b) Let $w = 2z$, so $z = \\frac{w}{2}$:\n$$2\\left(\\frac{w}{2}\\right)^3 + 3\\left(\\frac{w}{2}\\right)^2 - 4\\left(\\frac{w}{2}\\right) + 5 = 0$$\n$$\\frac{w^3}{4} + \\frac{3w^2}{4} - 2w + 5 = 0$$\nMultiply by 4: $w^3 + 3w^2 - 8w + 20 = 0$\n\nCheck: new sum $= 2(-\\frac{3}{2}) = -3$ ✓, new pair sum $= 4(-2) = -8$ ✓, new product $= 8(-\\frac{5}{2}) = -20$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Gets the signs in the root relationships wrong, e.g. for $2z^3 + 3z^2 - 4z + 5 = 0$ writes $\\alpha + \\beta + \\gamma = \\frac{3}{2}$ and $\\alpha\\beta\\gamma = \\frac{5}{2}$.",
+    "correction": "The signs alternate starting with minus: $\\sum\\alpha = -\\frac{b}{a} = -\\frac{3}{2}$, $\\sum\\alpha\\beta = +\\frac{c}{a} = -2$, $\\alpha\\beta\\gamma = -\\frac{d}{a} = -\\frac{5}{2}$. Check on $(z - 1)(z - 2)(z - 3) = z^3 - 6z^2 + 11z - 6$: sum 6, product 6."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks $\\alpha^2 + \\beta^2 + \\gamma^2 = (\\alpha + \\beta + \\gamma)^2$, e.g. gives $\\frac{9}{4}$ for the cubic above.",
+    "correction": "$(\\alpha + \\beta + \\gamma)^2 = \\alpha^2 + \\beta^2 + \\gamma^2 + 2(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha)$, so $\\alpha^2 + \\beta^2 + \\gamma^2 = \\frac{9}{4} - 2(-2) = \\frac{25}{4}$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the conjugate root theorem when the coefficients are not all real, e.g. says that since $i$ is a root of $z^2 - 3iz - 2 = 0$, the other root is $-i$.",
+    "correction": "Conjugate pairs are only guaranteed for real coefficients. Here use the sum of roots: $i + \\beta = 3i$, so $\\beta = 2i$. Check: $(2i)^2 - 3i(2i) - 2 = -4 + 6 - 2 = 0$ ✓, whereas $(-i)^2 - 3i(-i) - 2 = -1 - 3 - 2 \\ne 0$."
+   },
+   {
+    "id": "m4",
+    "text": "Substitutes the wrong way round for a transformed equation, e.g. for roots $2\\alpha, 2\\beta, 2\\gamma$ replaces $z$ by $2w$ instead of $\\frac{w}{2}$.",
+    "correction": "If $w = 2z$ then $z = \\frac{w}{2}$, and that is what replaces $z$. Substituting $z = 2w$ gives the equation whose roots are $\\frac{\\alpha}{2}, \\frac{\\beta}{2}, \\frac{\\gamma}{2}$. Check by comparing the sum of the new roots with $-\\frac{b}{a}$."
+   }
+  ]
+ },
+ {
+  "id": "fur-matrices-arithmetic",
+  "prerequisites": [
+   "num-negative-numbers",
+   "alg-notation-simplifying",
+   "geo-vectors"
+  ],
+  "keyIdea": "A matrix of **order** $m \\times n$ has $m$ rows and $n$ columns.\n\n* **Add/subtract** only matrices of the same order, entry by entry.\n* **Scalar multiplication:** $k\\mathbf{A}$ multiplies every entry by $k$.\n* **Matrix multiplication:** $\\mathbf{AB}$ exists only if the number of columns of $\\mathbf{A}$ equals the number of rows of $\\mathbf{B}$: $(m \\times n)(n \\times p) \\to m \\times p$. Entry in row $i$, column $j$ of $\\mathbf{AB}$ = row $i$ of $\\mathbf{A}$ \"dot\" column $j$ of $\\mathbf{B}$.\n* **Not commutative:** in general $\\mathbf{AB} \\ne \\mathbf{BA}$ (one may not even exist). It is associative: $(\\mathbf{AB})\\mathbf{C} = \\mathbf{A}(\\mathbf{BC})$.\n* **Identity** $\\mathbf{I} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$: $\\mathbf{AI} = \\mathbf{IA} = \\mathbf{A}$. **Zero matrix** $\\mathbf{0}$.\n* $\\mathbf{A}^2 = \\mathbf{AA}$ (not the entries squared).",
+  "workedExamples": [
+   {
+    "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & -1 \\\\ 3 & 4 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 1 & 5 \\\\ 0 & -2 \\end{pmatrix}$. Find $\\mathbf{AB}$ and $\\mathbf{BA}$.",
+    "solution": "Row of the first times column of the second:\n$$\\mathbf{AB} = \\begin{pmatrix} 2(1) + (-1)(0) & 2(5) + (-1)(-2) \\\\ 3(1) + 4(0) & 3(5) + 4(-2) \\end{pmatrix} = \\begin{pmatrix} 2 & 12 \\\\ 3 & 7 \\end{pmatrix}$$\n\n$$\\mathbf{BA} = \\begin{pmatrix} 1(2) + 5(3) & 1(-1) + 5(4) \\\\ 0(2) + (-2)(3) & 0(-1) + (-2)(4) \\end{pmatrix} = \\begin{pmatrix} 17 & 19 \\\\ -6 & -8 \\end{pmatrix}$$\n\n$\\mathbf{AB} \\ne \\mathbf{BA}$: the order of multiplication matters."
+   },
+   {
+    "question": "$\\mathbf{C} = \\begin{pmatrix} 1 & 0 & 2 \\\\ -1 & 3 & 1 \\end{pmatrix}$ and $\\mathbf{D} = \\begin{pmatrix} 4 \\\\ 1 \\\\ -2 \\end{pmatrix}$. State which of $\\mathbf{CD}$ and $\\mathbf{DC}$ exist, and find any that do.",
+    "solution": "$\\mathbf{C}$ is $2 \\times 3$ and $\\mathbf{D}$ is $3 \\times 1$.\n\n$\\mathbf{CD}$: $(2 \\times 3)(3 \\times 1)$ – inner numbers match, result is $2 \\times 1$.\n$\\mathbf{DC}$: $(3 \\times 1)(2 \\times 3)$ – $1 \\ne 2$, so it does not exist.\n\n$$\\mathbf{CD} = \\begin{pmatrix} 1(4) + 0(1) + 2(-2) \\\\ -1(4) + 3(1) + 1(-2) \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -3 \\end{pmatrix}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies matrices entry by entry, e.g. $\\begin{pmatrix} 2 & -1 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 1 & 5 \\\\ 0 & -2 \\end{pmatrix} = \\begin{pmatrix} 2 & -5 \\\\ 0 & -8 \\end{pmatrix}$.",
+    "correction": "Each entry of the product is a row of the first matrix combined with a column of the second: the top-left entry is $2(1) + (-1)(0) = 2$, top-right $2(5) + (-1)(-2) = 12$, giving $\\begin{pmatrix} 2 & 12 \\\\ 3 & 7 \\end{pmatrix}$."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes matrix multiplication is commutative, e.g. expands $(\\mathbf{A} + \\mathbf{B})^2 = \\mathbf{A}^2 + 2\\mathbf{AB} + \\mathbf{B}^2$.",
+    "correction": "$(\\mathbf{A} + \\mathbf{B})^2 = (\\mathbf{A} + \\mathbf{B})(\\mathbf{A} + \\mathbf{B}) = \\mathbf{A}^2 + \\mathbf{AB} + \\mathbf{BA} + \\mathbf{B}^2$, and $\\mathbf{AB} \\ne \\mathbf{BA}$ in general (e.g. the matrices above give $\\begin{pmatrix} 2 & 12 \\\\ 3 & 7 \\end{pmatrix}$ and $\\begin{pmatrix} 17 & 19 \\\\ -6 & -8 \\end{pmatrix}$)."
+   },
+   {
+    "id": "m3",
+    "text": "Gets the order of a product wrong or multiplies non-conformable matrices, e.g. thinks a $2 \\times 3$ matrix times a $3 \\times 1$ matrix is $3 \\times 3$, or that two $2 \\times 3$ matrices can be multiplied.",
+    "correction": "Write the orders side by side: $(m \\times n)(n \\times p)$. The inner numbers must match; the outer numbers give the order of the answer. So $(2 \\times 3)(3 \\times 1)$ is $2 \\times 1$, and $(2 \\times 3)(2 \\times 3)$ does not exist."
+   },
+   {
+    "id": "m4",
+    "text": "Squares each entry to find $\\mathbf{A}^2$, e.g. $\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}^2 = \\begin{pmatrix} 1 & 4 \\\\ 9 & 16 \\end{pmatrix}$.",
+    "correction": "$\\mathbf{A}^2 = \\mathbf{AA}$ uses matrix multiplication: $\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 7 & 10 \\\\ 15 & 22 \\end{pmatrix}$."
+   }
+  ]
+ },
+ {
+  "id": "fur-determinants-inverses",
+  "prerequisites": [
+   "fur-matrices-arithmetic",
+   "alg-simultaneous-linear",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "For $\\mathbf{M} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$: $\\det\\mathbf{M} = ad - bc$ and\n$$\\mathbf{M}^{-1} = \\frac{1}{ad - bc}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$$\n(swap the leading diagonal, negate the other diagonal, divide by the determinant).\n\nIf $\\det\\mathbf{M} = 0$ the matrix is **singular** – it has no inverse.\n\n$3 \\times 3$ determinant: expand along the top row with signs $+ \\; - \\; +$, each entry times its $2 \\times 2$ minor. The inverse is the transposed matrix of cofactors divided by the determinant.\n\n$(\\mathbf{AB})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}$ (reverse the order).\n\n**Systems:** write $\\mathbf{Mx} = \\mathbf{b}$; if $\\det\\mathbf{M} \\ne 0$ there is a unique solution $\\mathbf{x} = \\mathbf{M}^{-1}\\mathbf{b}$. If $\\det\\mathbf{M} = 0$ there is no unique solution: three planes form a sheaf, a prism or have no common point.\n\n**Geometric meaning:** $|\\det\\mathbf{M}|$ is the area (2D) or volume (3D) scale factor.",
+  "workedExamples": [
+   {
+    "question": "Use an inverse matrix to solve $3x + 2y = 7$, $5x + 4y = 11$.",
+    "solution": "$\\mathbf{M} = \\begin{pmatrix} 3 & 2 \\\\ 5 & 4 \\end{pmatrix}$, $\\det\\mathbf{M} = 3(4) - 2(5) = 2$\n\n$$\\mathbf{M}^{-1} = \\frac{1}{2}\\begin{pmatrix} 4 & -2 \\\\ -5 & 3 \\end{pmatrix}$$\n\n$$\\begin{pmatrix} x \\\\ y \\end{pmatrix} = \\frac{1}{2}\\begin{pmatrix} 4 & -2 \\\\ -5 & 3 \\end{pmatrix}\\begin{pmatrix} 7 \\\\ 11 \\end{pmatrix} = \\frac{1}{2}\\begin{pmatrix} 28 - 22 \\\\ -35 + 33 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -1 \\end{pmatrix}$$\n\nSo $x = 3$, $y = -1$. Check: $9 - 2 = 7$ ✓, $15 - 4 = 11$ ✓"
+   },
+   {
+    "question": "(a) Find $\\det\\begin{pmatrix} 2 & 1 & -1 \\\\ 0 & 3 & 2 \\\\ 1 & -1 & 4 \\end{pmatrix}$.\n(b) Find the values of $k$ for which $\\begin{pmatrix} k & 2 \\\\ 3 & k - 1 \\end{pmatrix}$ is singular.",
+    "solution": "(a) Expand along the top row with signs $+ \\; - \\; +$:\n$$2\\begin{vmatrix} 3 & 2 \\\\ -1 & 4 \\end{vmatrix} - 1\\begin{vmatrix} 0 & 2 \\\\ 1 & 4 \\end{vmatrix} + (-1)\\begin{vmatrix} 0 & 3 \\\\ 1 & -1 \\end{vmatrix}$$\n$$= 2(12 + 2) - 1(0 - 2) - 1(0 - 3) = 28 + 2 + 3 = 33$$\n\n(b) Singular means determinant zero:\n$$k(k - 1) - 6 = 0 \\Rightarrow k^2 - k - 6 = 0 \\Rightarrow (k - 3)(k + 2) = 0$$\nSo $k = 3$ or $k = -2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds instead of subtracts (or subtracts the wrong way round) in a $2 \\times 2$ determinant, e.g. $\\det\\begin{pmatrix} 3 & 2 \\\\ 5 & 4 \\end{pmatrix} = 12 + 10 = 22$ or $10 - 12 = -2$.",
+    "correction": "$\\det = ad - bc$: leading diagonal product minus the other diagonal product, $3(4) - 2(5) = 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Builds the $2 \\times 2$ inverse wrongly, e.g. $\\begin{pmatrix} 3 & 2 \\\\ 5 & 4 \\end{pmatrix}^{-1} = \\frac{1}{2}\\begin{pmatrix} 4 & 2 \\\\ 5 & 3 \\end{pmatrix}$ (swapping without negating) or $\\begin{pmatrix} 4 & -2 \\\\ -5 & 3 \\end{pmatrix}$ (forgetting to divide by the determinant).",
+    "correction": "Swap $a$ and $d$, negate $b$ and $c$, then divide by $ad - bc$: $\\frac{1}{2}\\begin{pmatrix} 4 & -2 \\\\ -5 & 3 \\end{pmatrix}$. Check: $\\mathbf{M}\\mathbf{M}^{-1}$ must equal $\\mathbf{I}$."
+   },
+   {
+    "id": "m3",
+    "text": "Forgets the minus sign on the middle term of a $3 \\times 3$ expansion, e.g. $2(14) + 1(-2) + (-1)(-3) = 29$ instead of $33$.",
+    "correction": "The signs along the top row are $+ \\; - \\; +$, so the middle term is $-1 \\times (0 - 2) = +2$: $28 + 2 + 3 = 33$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks $(\\mathbf{AB})^{-1} = \\mathbf{A}^{-1}\\mathbf{B}^{-1}$.",
+    "correction": "$(\\mathbf{AB})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}$, because $(\\mathbf{AB})(\\mathbf{B}^{-1}\\mathbf{A}^{-1}) = \\mathbf{A}(\\mathbf{BB}^{-1})\\mathbf{A}^{-1} = \\mathbf{AA}^{-1} = \\mathbf{I}$. Like taking off socks then shoes: undo in reverse order."
+   }
+  ]
+ },
+ {
+  "id": "fur-matrix-transformations",
+  "prerequisites": [
+   "fur-matrices-arithmetic",
+   "fur-determinants-inverses",
+   "geo-transformations",
+   "geo-trig-exact-values",
+   "alg-equation-of-a-line"
+  ],
+  "keyIdea": "The **columns** of a matrix are the images of $\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 0 \\\\ 1 \\end{pmatrix}$ – so draw where the unit square goes.\n\n| Transformation | Matrix |\n|---|---|\n| Reflection in $x$-axis / $y = x$ | $\\begin{pmatrix} 1 & 0 \\\\ 0 & -1 \\end{pmatrix}$ / $\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$ |\n| Rotation $\\theta$ anticlockwise about $O$ | $\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}$ |\n| Enlargement, scale factor $k$, centre $O$ | $\\begin{pmatrix} k & 0 \\\\ 0 & k \\end{pmatrix}$ |\n| Stretch parallel to $x$-axis, factor $k$ | $\\begin{pmatrix} k & 0 \\\\ 0 & 1 \\end{pmatrix}$ |\n| Shear, $x$-axis invariant | $\\begin{pmatrix} 1 & k \\\\ 0 & 1 \\end{pmatrix}$ |\n\n**Composition:** \"$\\mathbf{P}$ then $\\mathbf{Q}$\" is $\\mathbf{QP}$ (the first transformation sits next to the vector).\n\n**Area scale factor** $= |\\det\\mathbf{M}|$; $\\det\\mathbf{M} < 0$ means orientation is reversed.\n\n**Invariant point:** $\\mathbf{Mx} = \\mathbf{x}$. **Invariant line:** each point maps to a point on the same line (substitute $(x, mx + c)$). A line of invariant points is stronger: every point stays fixed.",
+  "workedExamples": [
+   {
+    "question": "Find the single matrix representing a reflection in $y = x$ followed by a rotation of $90^\\circ$ anticlockwise about $O$, and describe the single transformation.",
+    "solution": "Reflection: $\\mathbf{P} = \\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$. Rotation: $\\mathbf{Q} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$.\n\n\"$\\mathbf{P}$ then $\\mathbf{Q}$\" is $\\mathbf{QP}$:\n$$\\mathbf{QP} = \\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} -1 & 0 \\\\ 0 & 1 \\end{pmatrix}$$\n\nThis sends $(x, y) \\to (-x, y)$: a reflection in the $y$-axis.\n\nCheck with a point: $(1, 0) \\to (0, 1)$ after reflecting, then $\\to (-1, 0)$ after rotating ✓"
+   },
+   {
+    "question": "$\\mathbf{M} = \\begin{pmatrix} 3 & 1 \\\\ 2 & 2 \\end{pmatrix}$. Find the invariant lines of the form $y = mx$, and the area scale factor of the transformation.",
+    "solution": "A point $(x, mx)$ maps to\n$$\\begin{pmatrix} 3 & 1 \\\\ 2 & 2 \\end{pmatrix}\\begin{pmatrix} x \\\\ mx \\end{pmatrix} = \\begin{pmatrix} (3 + m)x \\\\ (2 + 2m)x \\end{pmatrix}$$\n\nFor the image to lie on $y = mx$: $(2 + 2m)x = m(3 + m)x$ for all $x$\n$$m^2 + m - 2 = 0 \\Rightarrow (m + 2)(m - 1) = 0$$\n\nInvariant lines: $y = x$ and $y = -2x$.\n\nNote: on $y = x$, $(1, 1) \\to (4, 4)$ – points move but stay on the line. On $y = -2x$, $(1, -2) \\to (1, -2)$ – this is a line of invariant points.\n\nArea scale factor $= |\\det\\mathbf{M}| = |6 - 2| = 4$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies in the wrong order for a composition, e.g. writes \"$\\mathbf{P}$ followed by $\\mathbf{Q}$\" as $\\mathbf{PQ}$.",
+    "correction": "The vector is on the right, so the first transformation must be next to it: $\\mathbf{Q}(\\mathbf{P}\\mathbf{x}) = (\\mathbf{QP})\\mathbf{x}$. Check by tracking where $(1, 0)$ goes step by step."
+   },
+   {
+    "id": "m2",
+    "text": "Writes the images of the unit vectors as rows instead of columns, e.g. for $(1, 0) \\to (2, 1)$ and $(0, 1) \\to (-1, 3)$ writes $\\begin{pmatrix} 2 & 1 \\\\ -1 & 3 \\end{pmatrix}$.",
+    "correction": "The images are the **columns**: $\\begin{pmatrix} 2 & -1 \\\\ 1 & 3 \\end{pmatrix}$. Check: $\\begin{pmatrix} 2 & -1 \\\\ 1 & 3 \\end{pmatrix}\\begin{pmatrix} 1 \\\\ 0 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ ✓"
+   },
+   {
+    "id": "m3",
+    "text": "Misplaces the minus sign in the rotation matrix, using $\\begin{pmatrix} \\cos\\theta & \\sin\\theta \\\\ -\\sin\\theta & \\cos\\theta \\end{pmatrix}$ for an anticlockwise rotation.",
+    "correction": "That matrix rotates **clockwise** by $\\theta$. Anticlockwise is $\\begin{pmatrix} \\cos\\theta & -\\sin\\theta \\\\ \\sin\\theta & \\cos\\theta \\end{pmatrix}$: for $\\theta = 90^\\circ$ it sends $(1, 0)$ to $(0, 1)$ as it should."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks an invariant line must be made of invariant points, e.g. rejects $y = x$ for $\\begin{pmatrix} 3 & 1 \\\\ 2 & 2 \\end{pmatrix}$ because $(1, 1) \\to (4, 4)$.",
+    "correction": "An invariant line only needs each point to map to **some** point on the same line; $(4, 4)$ is on $y = x$, so the line is invariant. A **line of invariant points** is the special case where every point maps to itself, like $y = -2x$ here."
+   }
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction",
+  "prerequisites": [
+   "pure-proof",
+   "pure-sigma-recurrence",
+   "fur-matrices-arithmetic",
+   "num-index-laws"
+  ],
+  "keyIdea": "To prove a statement $P(n)$ for all integers $n \\ge 1$:\n\n1. **Basis:** show $P(1)$ is true.\n2. **Assumption:** assume $P(k)$ is true for some integer $k \\ge 1$.\n3. **Inductive step:** using the assumption, show $P(k + 1)$ is true.\n4. **Conclusion:** \"If $P(k)$ is true then $P(k + 1)$ is true. Since $P(1)$ is true, $P(n)$ is true for all $n \\in \\mathbb{Z}^+$ by mathematical induction.\"\n\nTypical inductive steps:\n* **Sums:** $\\sum_{r=1}^{k+1} = \\sum_{r=1}^{k} + (\\text{the } (k+1)\\text{th term})$.\n* **Divisibility:** show $f(k + 1) - f(k)$ (or $f(k + 1) - m f(k)$) is a multiple of the divisor.\n* **Matrix powers:** $\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M}$.\n* **Recurrence relations:** substitute the assumed $u_k$ into $u_{k+1} = f(u_k)$.\n\nBoth the basis and the inductive step are essential.",
+  "workedExamples": [
+   {
+    "question": "Prove by induction that $\\displaystyle\\sum_{r=1}^{n} r(r + 1) = \\frac{n(n + 1)(n + 2)}{3}$ for all positive integers $n$.",
+    "solution": "**Basis:** $n = 1$: LHS $= 1 \\times 2 = 2$, RHS $= \\frac{1 \\times 2 \\times 3}{3} = 2$ ✓\n\n**Assume** true for $n = k$: $\\sum_{r=1}^{k} r(r + 1) = \\frac{k(k + 1)(k + 2)}{3}$\n\n**Inductive step:** add the $(k + 1)$th term, $(k + 1)(k + 2)$:\n$$\\sum_{r=1}^{k+1} r(r + 1) = \\frac{k(k + 1)(k + 2)}{3} + (k + 1)(k + 2) = (k + 1)(k + 2)\\left(\\frac{k}{3} + 1\\right) = \\frac{(k + 1)(k + 2)(k + 3)}{3}$$\nwhich is the formula with $n = k + 1$.\n\n**Conclusion:** If true for $n = k$ then true for $n = k + 1$; it is true for $n = 1$, so it is true for all positive integers $n$ by induction."
+   },
+   {
+    "question": "Prove by induction that $f(n) = 5^n + 8n + 3$ is divisible by 4 for all positive integers $n$.",
+    "solution": "**Basis:** $f(1) = 5 + 8 + 3 = 16 = 4 \\times 4$ ✓\n\n**Assume** $f(k)$ is divisible by 4 for some positive integer $k$.\n\n**Inductive step:**\n$$f(k + 1) - f(k) = 5^{k+1} + 8(k + 1) + 3 - 5^k - 8k - 3 = 5 \\cdot 5^k - 5^k + 8 = 4 \\cdot 5^k + 8 = 4(5^k + 2)$$\nSo $f(k + 1) = f(k) + 4(5^k + 2)$, a sum of two multiples of 4, hence divisible by 4.\n\n**Conclusion:** If true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so true for all positive integers $n$ by induction."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a working inductive step is enough and skips (or fakes) the basis. E.g. \"proves\" $1 + 2 + \\cdots + n = \\frac{n^2 + n + 2}{2}$: the step $\\frac{k^2 + k + 2}{2} + (k + 1) = \\frac{(k + 1)^2 + (k + 1) + 2}{2}$ works, so the student claims it is true.",
+    "correction": "The inductive step only shows \"if true for $k$, then true for $k + 1$\". You must also show it is true for $n = 1$. Here $n = 1$ gives LHS $= 1$, RHS $= 2$, so the statement is false for every $n$."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes what is to be proved: writes \"assume true for $n = k + 1$\" or simply substitutes $n = k + 1$ into the formula and states it is therefore true.",
+    "correction": "Assume $P(k)$ only. Start from the $(k + 1)$ case of the left-hand side (or $f(k + 1)$), use the assumption to rewrite it, and show it equals the $n = k + 1$ form of the right-hand side."
+   },
+   {
+    "id": "m3",
+    "text": "Adds the wrong term in a sum proof, e.g. for $\\sum_{r=1}^{n} r(r + 1)$ writes $\\sum_{r=1}^{k+1} = \\frac{k(k + 1)(k + 2)}{3} + k(k + 1)$.",
+    "correction": "The next term is found by replacing $r$ with $k + 1$: $(k + 1)(k + 2)$. Adding $k(k + 1)$ counts the $k$th term twice and the step will not reach $\\frac{(k + 1)(k + 2)(k + 3)}{3}$."
+   },
+   {
+    "id": "m4",
+    "text": "Mishandles indices in a divisibility step, e.g. writes $5^{k+1} = 5^k + 5$ (or $5^{k+1} = 5^k \\cdot 5^1 = 25^k$).",
+    "correction": "$5^{k+1} = 5^k \\times 5 = 5 \\cdot 5^k$, so $5^{k+1} - 5^k = 4 \\cdot 5^k$. Check with $k = 1$: $5^2 = 25$, whereas $5^1 + 5 = 10$."
+   }
+  ]
+ },
+ {
+  "id": "fur-series-summation",
+  "prerequisites": [
+   "pure-sigma-recurrence",
+   "pure-arithmetic-series",
+   "pure-partial-fractions",
+   "alg-algebraic-fractions"
+  ],
+  "keyIdea": "**Standard results:**\n$$\\sum_{r=1}^{n} 1 = n, \\quad \\sum_{r=1}^{n} r = \\tfrac{1}{2}n(n + 1), \\quad \\sum_{r=1}^{n} r^2 = \\tfrac{1}{6}n(n + 1)(2n + 1), \\quad \\sum_{r=1}^{n} r^3 = \\tfrac{1}{4}n^2(n + 1)^2$$\n\n**Linearity:** expand the general term, split the sum and take out constants, e.g. $\\sum (3r^2 - 2) = 3\\sum r^2 - 2\\sum 1$. Factorise the result fully.\n\n**Not starting at 1:** $\\sum_{r=k}^{n} f(r) = \\sum_{r=1}^{n} f(r) - \\sum_{r=1}^{k-1} f(r)$.\n\n**Method of differences:** if $u_r = f(r) - f(r + 1)$, the terms cancel (\"telescope\"):\n$$\\sum_{r=1}^{n} u_r = f(1) - f(n + 1)$$\nUsually start with partial fractions, then write out the first few and last few rows to see exactly which terms survive.",
+  "workedExamples": [
+   {
+    "question": "(a) Show that $\\displaystyle\\sum_{r=1}^{n} r(r + 2) = \\frac{n(n + 1)(2n + 7)}{6}$.\n(b) Hence find $\\displaystyle\\sum_{r=11}^{20} r(r + 2)$.",
+    "solution": "(a) $\\sum r(r + 2) = \\sum r^2 + 2\\sum r$\n$$= \\frac{n(n + 1)(2n + 1)}{6} + n(n + 1) = \\frac{n(n + 1)\\left[(2n + 1) + 6\\right]}{6} = \\frac{n(n + 1)(2n + 7)}{6}$$\n\n(b) Subtract the sum up to $r = 10$ (not 11):\n$$S(20) - S(10) = \\frac{20 \\times 21 \\times 47}{6} - \\frac{10 \\times 11 \\times 27}{6} = 3290 - 495 = 2795$$"
+   },
+   {
+    "question": "Use the method of differences to find $\\displaystyle\\sum_{r=1}^{n} \\frac{1}{r(r + 2)}$, giving your answer as a single fraction.",
+    "solution": "Partial fractions: $\\frac{1}{r(r + 2)} = \\frac{1}{2}\\left(\\frac{1}{r} - \\frac{1}{r + 2}\\right)$\n\nWrite out the rows:\n$r = 1$: $\\frac{1}{1} - \\frac{1}{3}$\n$r = 2$: $\\frac{1}{2} - \\frac{1}{4}$\n$r = 3$: $\\frac{1}{3} - \\frac{1}{5}$\n$\\ldots$\n$r = n - 1$: $\\frac{1}{n - 1} - \\frac{1}{n + 1}$\n$r = n$: $\\frac{1}{n} - \\frac{1}{n + 2}$\n\nTwo terms survive at each end:\n$$\\sum_{r=1}^{n} \\frac{1}{r(r + 2)} = \\frac{1}{2}\\left(1 + \\frac{1}{2} - \\frac{1}{n + 1} - \\frac{1}{n + 2}\\right) = \\frac{3(n + 1)(n + 2) - 2(2n + 3)}{4(n + 1)(n + 2)} = \\frac{n(3n + 5)}{4(n + 1)(n + 2)}$$\n\nCheck $n = 1$: $\\frac{1}{3}$ and $\\frac{1 \\times 8}{4 \\times 2 \\times 3} = \\frac{1}{3}$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats the sum of a constant as the constant, e.g. $\\sum_{r=1}^{n} (r^2 + 3) = \\frac{1}{6}n(n + 1)(2n + 1) + 3$.",
+    "correction": "The constant is added once for each of the $n$ terms: $\\sum_{r=1}^{n} 3 = 3n$, so the sum is $\\frac{1}{6}n(n + 1)(2n + 1) + 3n$."
+   },
+   {
+    "id": "m2",
+    "text": "Splits a sum of products into a product of sums, e.g. $\\sum r(r + 2) = \\left(\\sum r\\right)\\left(\\sum (r + 2)\\right)$.",
+    "correction": "Sums only split over addition. Expand first: $r(r + 2) = r^2 + 2r$, so $\\sum r(r + 2) = \\sum r^2 + 2\\sum r$. Check $n = 2$: $3 + 8 = 11$, but $(1 + 2)(3 + 4) = 21$."
+   },
+   {
+    "id": "m3",
+    "text": "Subtracts the wrong partial sum, e.g. $\\sum_{r=11}^{20} f(r) = S(20) - S(11)$.",
+    "correction": "$S(20) - S(11)$ removes the $r = 11$ term as well. The correct subtraction is $S(20) - S(10)$, i.e. $\\sum_{r=k}^{n} = S(n) - S(k - 1)$."
+   },
+   {
+    "id": "m4",
+    "text": "In the method of differences assumes only one term survives at each end, e.g. writes $\\sum_{r=1}^{n} \\frac{1}{2}\\left(\\frac{1}{r} - \\frac{1}{r + 2}\\right) = \\frac{1}{2}\\left(1 - \\frac{1}{n + 2}\\right)$.",
+    "correction": "When the terms are two apart, two terms survive at each end: $\\frac{1}{1}$ and $\\frac{1}{2}$ at the start, $-\\frac{1}{n + 1}$ and $-\\frac{1}{n + 2}$ at the end. Always write out the first three and last two rows and cross out cancelling terms."
+   }
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes",
+  "prerequisites": [
+   "pure-vectors",
+   "alg-simultaneous-linear",
+   "alg-equation-of-a-line",
+   "geo-3d-pythagoras-trig"
+  ],
+  "keyIdea": "**Line:** $\\mathbf{r} = \\mathbf{a} + \\lambda\\mathbf{b}$ ($\\mathbf{a}$ a point, $\\mathbf{b}$ the direction); Cartesian $\\frac{x - a_1}{b_1} = \\frac{y - a_2}{b_2} = \\frac{z - a_3}{b_3}$.\n\n**Scalar product:** $\\mathbf{a} \\cdot \\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3 = |\\mathbf{a}||\\mathbf{b}|\\cos\\theta$; perpendicular $\\iff \\mathbf{a} \\cdot \\mathbf{b} = 0$.\n\n**Plane:** $\\mathbf{r} = \\mathbf{a} + \\lambda\\mathbf{b} + \\mu\\mathbf{c}$, or $\\mathbf{r} \\cdot \\mathbf{n} = \\mathbf{a} \\cdot \\mathbf{n}$, i.e. $n_1x + n_2y + n_3z = d$ with normal $\\mathbf{n}$.\n\n**Angles:** two lines – use direction vectors; two planes – use normals; line and plane – $\\sin\\theta = \\frac{|\\mathbf{b} \\cdot \\mathbf{n}|}{|\\mathbf{b}||\\mathbf{n}|}$ (the angle with the normal is $90^\\circ - \\theta$).\n\n**Intersections:** lines – equate components, solve two equations, **check the third** (no solution and not parallel means skew). Line and plane – substitute the line into the plane.\n\n**Distances:** point $(\\alpha, \\beta, \\gamma)$ to plane $= \\frac{|n_1\\alpha + n_2\\beta + n_3\\gamma - d|}{|\\mathbf{n}|}$; point to line via the foot of the perpendicular; skew lines via the common perpendicular.",
+  "workedExamples": [
+   {
+    "question": "Line $l$: $\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix} + \\lambda\\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix}$ and plane $\\Pi$: $2x + y - 2z = 5$.\n(a) Find the acute angle between $l$ and $\\Pi$.\n(b) Find the point where $l$ meets $\\Pi$.\n(c) Find the distance from $P(4, -1, 3)$ to $\\Pi$.",
+    "solution": "(a) $\\mathbf{b} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix}$, $\\mathbf{n} = \\begin{pmatrix} 2 \\\\ 1 \\\\ -2 \\end{pmatrix}$, $\\mathbf{b} \\cdot \\mathbf{n} = 4 - 1 - 4 = -1$, $|\\mathbf{b}| = |\\mathbf{n}| = 3$.\n$$\\sin\\theta = \\frac{|-1|}{3 \\times 3} = \\frac{1}{9} \\Rightarrow \\theta = 6.38^\\circ \\text{ (3 s.f.)}$$\n\n(b) Substitute $x = 1 + 2\\lambda$, $y = 2 - \\lambda$, $z = -1 + 2\\lambda$:\n$$2(1 + 2\\lambda) + (2 - \\lambda) - 2(-1 + 2\\lambda) = 5 \\Rightarrow 6 - \\lambda = 5 \\Rightarrow \\lambda = 1$$\nPoint $(3, 1, 1)$. Check: $6 + 1 - 2 = 5$ ✓\n\n(c) $$\\frac{|2(4) + 1(-1) - 2(3) - 5|}{\\sqrt{4 + 1 + 4}} = \\frac{|-4|}{3} = \\frac{4}{3}$$"
+   },
+   {
+    "question": "Show that the lines $\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 1 \\\\ -1 \\end{pmatrix}$ and $\\mathbf{r} = \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix} + \\mu\\begin{pmatrix} 0 \\\\ 1 \\\\ 1 \\end{pmatrix}$ are skew.",
+    "solution": "The directions $\\begin{pmatrix} 1 \\\\ 1 \\\\ -1 \\end{pmatrix}$ and $\\begin{pmatrix} 0 \\\\ 1 \\\\ 1 \\end{pmatrix}$ are not multiples of each other, so the lines are not parallel.\n\nEquate components:\n$x$: $1 + \\lambda = 2 \\Rightarrow \\lambda = 1$\n$y$: $\\lambda = 3 + \\mu \\Rightarrow \\mu = -2$\n$z$: $2 - \\lambda = 1$ but $1 + \\mu = -1$, and $1 \\ne -1$\n\nThe third equation is not satisfied, so the lines do not intersect. Not parallel and not intersecting, so they are skew."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Gives the angle between the line and the **normal** as the angle between the line and the plane, e.g. $\\cos\\theta = \\frac{1}{9}$ so $\\theta = 83.6^\\circ$.",
+    "correction": "The scalar product with $\\mathbf{n}$ gives the angle with the normal. The angle with the plane is $90^\\circ - 83.6^\\circ = 6.4^\\circ$; equivalently use $\\sin\\theta = \\frac{|\\mathbf{b} \\cdot \\mathbf{n}|}{|\\mathbf{b}||\\mathbf{n}|}$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses position vectors instead of direction vectors to find the angle between two lines, e.g. uses $\\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix}$.",
+    "correction": "The angle between lines depends only on their directions: use the vectors multiplied by $\\lambda$ and $\\mu$, here $\\begin{pmatrix} 1 \\\\ 1 \\\\ -1 \\end{pmatrix} \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 1 \\end{pmatrix} = 0$, so the lines are perpendicular (though skew)."
+   },
+   {
+    "id": "m3",
+    "text": "Solves two of the three component equations and concludes the lines intersect, without checking the third.",
+    "correction": "Two equations in $\\lambda$ and $\\mu$ always have a solution (unless parallel). The lines intersect only if those values also satisfy the third equation; otherwise (and not parallel) they are skew."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets to divide by $|\\mathbf{n}|$ (or forgets the $-d$) in the point–plane distance, e.g. gives $|8 - 1 - 6 - 5| = 4$ for $P(4, -1, 3)$ and $2x + y - 2z = 5$.",
+    "correction": "The formula is $\\frac{|n_1\\alpha + n_2\\beta + n_3\\gamma - d|}{|\\mathbf{n}|}$; here $|\\mathbf{n}| = 3$, so the distance is $\\frac{4}{3}$. The numerator is only a distance if $\\mathbf{n}$ is a unit vector."
+   }
+  ]
+ },
+ {
+  "id": "fur-polar-coordinates",
+  "prerequisites": [
+   "pure-radians-unit-circle",
+   "pure-trig-graphs",
+   "pure-trig-compound-angles",
+   "calc-integration-standard",
+   "calc-parametric-vector-differentiation"
+  ],
+  "keyIdea": "A point has polar coordinates $(r, \\theta)$: distance $r$ from the pole $O$, angle $\\theta$ anticlockwise from the initial line.\n\n**Converting:** $x = r\\cos\\theta$, $y = r\\sin\\theta$, $r^2 = x^2 + y^2$, $\\tan\\theta = \\frac{y}{x}$ (check the quadrant).\n\n**Sketching:** use a table of values; in UK Further Maths only $r \\ge 0$ is plotted. Know $r = a$ (circle), $\\theta = \\alpha$ (half-line), $r = a\\theta$ (spiral), $r = a(1 + \\cos\\theta)$ (cardioid), $r = a\\cos\\theta$ (circle through $O$).\n\n**Area** of the region bounded by the curve and the half-lines $\\theta = \\alpha$, $\\theta = \\beta$:\n$$A = \\frac{1}{2}\\int_{\\alpha}^{\\beta} r^2 \\, d\\theta$$\nUse $\\cos^2\\theta = \\frac{1}{2}(1 + \\cos 2\\theta)$ to integrate.\n\n**Tangents:** write $x = r\\cos\\theta$, $y = r\\sin\\theta$ as functions of $\\theta$. Parallel to the initial line: $\\frac{dy}{d\\theta} = 0$; perpendicular: $\\frac{dx}{d\\theta} = 0$; gradient $\\frac{dy}{dx} = \\frac{dy/d\\theta}{dx/d\\theta}$ (AP BC).",
+  "workedExamples": [
+   {
+    "question": "Find the area enclosed by the cardioid $r = 2(1 + \\cos\\theta)$, $0 \\le \\theta < 2\\pi$.",
+    "solution": "$$A = \\frac{1}{2}\\int_0^{2\\pi} 4(1 + \\cos\\theta)^2 \\, d\\theta = 2\\int_0^{2\\pi} \\left(1 + 2\\cos\\theta + \\cos^2\\theta\\right) d\\theta$$\n\nUse $\\cos^2\\theta = \\frac{1}{2} + \\frac{1}{2}\\cos 2\\theta$:\n$$A = 2\\int_0^{2\\pi} \\left(\\tfrac{3}{2} + 2\\cos\\theta + \\tfrac{1}{2}\\cos 2\\theta\\right) d\\theta = 2\\left[\\tfrac{3}{2}\\theta + 2\\sin\\theta + \\tfrac{1}{4}\\sin 2\\theta\\right]_0^{2\\pi}$$\n$$= 2 \\times \\tfrac{3}{2} \\times 2\\pi = 6\\pi$$"
+   },
+   {
+    "question": "Find the points on $r = 2(1 + \\cos\\theta)$, other than the pole, where the tangent is parallel to the initial line.",
+    "solution": "$y = r\\sin\\theta = 2\\sin\\theta + 2\\sin\\theta\\cos\\theta = 2\\sin\\theta + \\sin 2\\theta$\n\n$$\\frac{dy}{d\\theta} = 2\\cos\\theta + 2\\cos 2\\theta = 0$$\n$$\\cos\\theta + 2\\cos^2\\theta - 1 = 0 \\Rightarrow (2\\cos\\theta - 1)(\\cos\\theta + 1) = 0$$\n\n$\\cos\\theta = \\frac{1}{2}$ gives $\\theta = \\pm\\frac{\\pi}{3}$, $r = 2(1 + \\frac{1}{2}) = 3$.\n$\\cos\\theta = -1$ gives $\\theta = \\pi$, $r = 0$: the pole, which is excluded.\n\nPoints: $\\left(3, \\frac{\\pi}{3}\\right)$ and $\\left(3, -\\frac{\\pi}{3}\\right)$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets the $\\frac{1}{2}$ or the square in the area formula, e.g. uses $\\int_0^{2\\pi} 2(1 + \\cos\\theta) \\, d\\theta = 4\\pi$ for the cardioid.",
+    "correction": "Area is built from thin sectors of area $\\frac{1}{2}r^2\\,\\delta\\theta$, so $A = \\frac{1}{2}\\int r^2 \\, d\\theta = 6\\pi$ here."
+   },
+   {
+    "id": "m2",
+    "text": "Converts to polar using $\\theta = \\tan^{-1}\\frac{y}{x}$ without checking the quadrant, e.g. gives $(-3, 3)$ as $\\left(3\\sqrt{2}, -\\frac{\\pi}{4}\\right)$.",
+    "correction": "$(-3, 3)$ is in the second quadrant, so $\\theta = \\pi - \\frac{\\pi}{4} = \\frac{3\\pi}{4}$: the point is $\\left(3\\sqrt{2}, \\frac{3\\pi}{4}\\right)$. Always sketch the point first."
+   },
+   {
+    "id": "m3",
+    "text": "Uses limits $0$ to $2\\pi$ when part of that range gives $r < 0$ or retraces the curve, e.g. area inside $r = 4\\cos\\theta$ as $\\frac{1}{2}\\int_0^{2\\pi} 16\\cos^2\\theta \\, d\\theta = 8\\pi$.",
+    "correction": "With $r \\ge 0$ the curve exists only for $-\\frac{\\pi}{2} \\le \\theta \\le \\frac{\\pi}{2}$, where it is traced once: $\\frac{1}{2}\\int_{-\\pi/2}^{\\pi/2} 16\\cos^2\\theta \\, d\\theta = 4\\pi$, the area of a circle of radius 2. Find where $r \\ge 0$ before choosing limits."
+   },
+   {
+    "id": "m4",
+    "text": "Sets $\\frac{dr}{d\\theta} = 0$ to find where the tangent is parallel to the initial line (thinking the greatest $r$ gives a horizontal tangent).",
+    "correction": "$\\frac{dr}{d\\theta} = 0$ gives where the curve is furthest from (or nearest to) the pole, where the tangent is perpendicular to the radius, not necessarily horizontal. Use $y = r\\sin\\theta$ and set $\\frac{dy}{d\\theta} = 0$ (or $x = r\\cos\\theta$ and $\\frac{dx}{d\\theta} = 0$ for perpendicular)."
+   }
+  ]
+ },
+ {
+  "id": "fur-hyperbolic-functions",
+  "prerequisites": [
+   "pure-exponentials-logs",
+   "alg-composite-inverse-functions",
+   "pure-trig-identities-equations",
+   "calc-derivatives-exp-log-trig",
+   "calc-integration-standard"
+  ],
+  "keyIdea": "**Definitions:** $\\sinh x = \\frac{e^x - e^{-x}}{2}$, $\\cosh x = \\frac{e^x + e^{-x}}{2}$, $\\tanh x = \\frac{\\sinh x}{\\cosh x}$.\n\n**Graphs:** $\\sinh$ is odd through $O$; $\\cosh$ is even with minimum $(0, 1)$, so $\\cosh x \\ge 1$; $\\tanh$ is odd with asymptotes $y = \\pm 1$.\n\n**Identities:** $\\cosh^2 x - \\sinh^2 x = 1$. **Osborn's rule:** from a trig identity, change the sign of any term with a product of two sines, e.g. $\\cosh 2x = 1 + 2\\sinh^2 x$, $\\sinh 2x = 2\\sinh x\\cosh x$.\n\n**Inverses:** $\\operatorname{arsinh} x = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$; $\\operatorname{arcosh} x = \\ln\\left(x + \\sqrt{x^2 - 1}\\right)$, $x \\ge 1$; $\\operatorname{artanh} x = \\frac{1}{2}\\ln\\frac{1 + x}{1 - x}$, $|x| < 1$.\n\n**Calculus:** $\\frac{d}{dx}\\sinh x = \\cosh x$, $\\frac{d}{dx}\\cosh x = \\sinh x$ (no minus sign), $\\frac{d}{dx}\\tanh x = \\operatorname{sech}^2 x$, $\\frac{d}{dx}\\operatorname{arsinh} x = \\frac{1}{\\sqrt{x^2 + 1}}$, $\\frac{d}{dx}\\operatorname{arcosh} x = \\frac{1}{\\sqrt{x^2 - 1}}$, so $\\int \\frac{dx}{\\sqrt{x^2 + a^2}} = \\operatorname{arsinh}\\frac{x}{a} + c$.",
+  "workedExamples": [
+   {
+    "question": "Solve $5\\cosh x - 3\\sinh x = 5$, giving exact answers.",
+    "solution": "Use the exponential definitions:\n$$\\frac{5(e^x + e^{-x})}{2} - \\frac{3(e^x - e^{-x})}{2} = 5 \\Rightarrow \\frac{2e^x + 8e^{-x}}{2} = 5 \\Rightarrow e^x + 4e^{-x} = 5$$\n\nMultiply by $e^x$: $e^{2x} - 5e^x + 4 = 0 \\Rightarrow (e^x - 1)(e^x - 4) = 0$\n\n$e^x = 1 \\Rightarrow x = 0$; $e^x = 4 \\Rightarrow x = \\ln 4 = 2\\ln 2$.\n\nCheck $x = \\ln 4$: $\\cosh x = \\frac{4 + \\frac{1}{4}}{2} = \\frac{17}{8}$, $\\sinh x = \\frac{4 - \\frac{1}{4}}{2} = \\frac{15}{8}$, and $\\frac{85 - 45}{8} = 5$ ✓"
+   },
+   {
+    "question": "Prove that $\\operatorname{arsinh} x = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$ and hence find the exact value of $\\displaystyle\\int_0^3 \\frac{1}{\\sqrt{x^2 + 9}} \\, dx$.",
+    "solution": "Let $y = \\operatorname{arsinh} x$, so $x = \\sinh y = \\frac{e^y - e^{-y}}{2}$.\n\nMultiply by $2e^y$: $e^{2y} - 2xe^y - 1 = 0$, a quadratic in $e^y$:\n$$e^y = \\frac{2x \\pm \\sqrt{4x^2 + 4}}{2} = x \\pm \\sqrt{x^2 + 1}$$\n\nSince $\\sqrt{x^2 + 1} > x$, the minus sign gives $e^y < 0$, which is impossible. So $e^y = x + \\sqrt{x^2 + 1}$ and $y = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$.\n\nIntegral: $$\\int_0^3 \\frac{dx}{\\sqrt{x^2 + 3^2}} = \\left[\\operatorname{arsinh}\\frac{x}{3}\\right]_0^3 = \\operatorname{arsinh} 1 = \\ln\\left(1 + \\sqrt{2}\\right)$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Carries the trig sign over to calculus: writes $\\frac{d}{dx}\\cosh x = -\\sinh x$.",
+    "correction": "From the definitions, $\\frac{d}{dx}\\frac{e^x + e^{-x}}{2} = \\frac{e^x - e^{-x}}{2} = \\sinh x$. There is no minus sign: both $\\sinh$ and $\\cosh$ differentiate to each other."
+   },
+   {
+    "id": "m2",
+    "text": "Copies trig identities unchanged, e.g. uses $\\cosh^2 x + \\sinh^2 x = 1$ or $\\cosh 2x = 1 - 2\\sinh^2 x$.",
+    "correction": "Apply Osborn's rule (change sign where there is a product of two sines): $\\cosh^2 x - \\sinh^2 x = 1$ and $\\cosh 2x = 1 + 2\\sinh^2 x$. Check at $x = \\ln 2$: $\\cosh x = \\frac{5}{4}$ and $\\sinh x = \\frac{3}{4}$, so $\\cosh^2 x - \\sinh^2 x = \\frac{25}{16} - \\frac{9}{16} = 1$, while $\\cosh^2 x + \\sinh^2 x = \\frac{17}{8}$."
+   },
+   {
+    "id": "m3",
+    "text": "Keeps the negative root when deriving the logarithmic form, e.g. writes $\\operatorname{arsinh} x = \\ln\\left(x \\pm \\sqrt{x^2 + 1}\\right)$.",
+    "correction": "$x - \\sqrt{x^2 + 1} < 0$ for every $x$, and $e^y$ must be positive, so that root is rejected: $\\operatorname{arsinh} x = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$, a single value."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets the range of $\\cosh$, e.g. tries to solve $\\cosh x = \\frac{1}{2}$ and gives an answer such as $x = \\operatorname{arcosh}\\frac{1}{2}$.",
+    "correction": "$\\cosh x \\ge 1$ for all real $x$, so $\\cosh x = \\frac{1}{2}$ has no real solutions (and $\\operatorname{arcosh}$ is only defined for $x \\ge 1$). In equations like $e^{2x} - e^x + 1 = 0$ that arise this way, check the discriminant."
+   }
+  ]
+ },
+ {
+  "id": "fur-first-order-de",
+  "prerequisites": [
+   "calc-differential-equations",
+   "calc-chain-product-quotient",
+   "calc-integration-by-parts",
+   "pure-exponentials-logs"
+  ],
+  "keyIdea": "A first-order linear differential equation can be written in **standard form**\n$$\\frac{dy}{dx} + P(x)y = Q(x)$$\n(the coefficient of $\\frac{dy}{dx}$ must be 1 – divide through first).\n\n**Integrating factor:** $I(x) = e^{\\int P(x)\\,dx}$ (no constant needed). Multiplying through by $I$ makes the left-hand side an exact derivative by the product rule:\n$$\\frac{d}{dx}\\left(Iy\\right) = IQ \\quad\\Rightarrow\\quad Iy = \\int IQ \\, dx + c$$\nThen divide **everything**, including $c$, by $I$.\n\nThe **general solution** contains $c$; a **particular solution** uses a given condition such as $y(1) = 3$.\n\n**Modelling:** rate of change = rate in $-$ rate out. In mixing problems the amount leaving per unit time is (concentration) $\\times$ (outflow rate), where concentration $= \\frac{\\text{amount}}{\\text{volume at time } t}$. Interpret the solution and its long-term behaviour.",
+  "workedExamples": [
+   {
+    "question": "Solve $x\\dfrac{dy}{dx} + 2y = 5x^3$, $x > 0$, given that $y = 3$ when $x = 1$.",
+    "solution": "Standard form (divide by $x$): $\\frac{dy}{dx} + \\frac{2}{x}y = 5x^2$\n\nIntegrating factor: $I = e^{\\int \\frac{2}{x}dx} = e^{2\\ln x} = x^2$\n\nMultiply through: $x^2\\frac{dy}{dx} + 2xy = 5x^4$, i.e. $\\frac{d}{dx}\\left(x^2y\\right) = 5x^4$\n\nIntegrate: $x^2y = x^5 + c \\Rightarrow y = x^3 + \\frac{c}{x^2}$\n\n$y(1) = 3$: $1 + c = 3 \\Rightarrow c = 2$\n\n$$y = x^3 + \\frac{2}{x^2}$$\n\nCheck: $x\\frac{dy}{dx} + 2y = (3x^3 - \\frac{4}{x^2}) + (2x^3 + \\frac{4}{x^2}) = 5x^3$ ✓"
+   },
+   {
+    "question": "A tank initially holds 100 litres of water containing 5 kg of salt. Brine containing 0.2 kg of salt per litre flows in at 3 litres per minute, and the well-mixed solution flows out at 2 litres per minute. Find the mass of salt, $x$ kg, after 50 minutes.",
+    "solution": "Volume at time $t$: $100 + t$ litres. Concentration: $\\frac{x}{100 + t}$ kg per litre.\n$$\\frac{dx}{dt} = 0.2 \\times 3 - \\frac{2x}{100 + t} \\Rightarrow \\frac{dx}{dt} + \\frac{2}{100 + t}x = 0.6$$\n\n$I = e^{\\int \\frac{2}{100 + t}dt} = (100 + t)^2$\n\n$$\\frac{d}{dt}\\left(x(100 + t)^2\\right) = 0.6(100 + t)^2 \\Rightarrow x(100 + t)^2 = 0.2(100 + t)^3 + c$$\n\n$t = 0$, $x = 5$: $50\\,000 = 200\\,000 + c \\Rightarrow c = -150\\,000$\n\n$$x = 0.2(100 + t) - \\frac{150\\,000}{(100 + t)^2}$$\n\nAt $t = 50$: $x = 30 - \\frac{150\\,000}{22\\,500} = 30 - 6.67 = 23.3$ kg (3 s.f.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds the integrating factor before putting the equation in standard form, e.g. for $x\\frac{dy}{dx} + 2y = 5x^3$ takes $P = 2$ and $I = e^{2x}$.",
+    "correction": "Divide by $x$ first so the coefficient of $\\frac{dy}{dx}$ is 1: $P(x) = \\frac{2}{x}$, so $I = e^{2\\ln x} = x^2$. Check: $x^2$ times the standard form gives $\\frac{d}{dx}(x^2y)$ exactly."
+   },
+   {
+    "id": "m2",
+    "text": "Adds the constant after dividing by the integrating factor, e.g. $x^2y = x^5 \\Rightarrow y = x^3 + c$.",
+    "correction": "The constant appears when integrating: $x^2y = x^5 + c$, and then the whole right-hand side is divided by $x^2$: $y = x^3 + \\frac{c}{x^2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies only the left-hand side by the integrating factor, e.g. writes $\\frac{d}{dx}(x^2y) = 5x^2$ instead of $5x^4$.",
+    "correction": "Every term of the standard form, including $Q(x)$, must be multiplied by $I$: $\\frac{d}{dx}(x^2y) = x^2 \\times 5x^2 = 5x^4$."
+   },
+   {
+    "id": "m4",
+    "text": "Simplifies the integrating factor incorrectly, e.g. $e^{2\\ln x} = 2x$ or $e^{2\\ln x} = e^2 x$.",
+    "correction": "Use log laws first: $2\\ln x = \\ln x^2$, so $e^{2\\ln x} = e^{\\ln x^2} = x^2$. Similarly $e^{-\\ln x} = \\frac{1}{x}$."
+   }
+  ]
+ },
+ {
+  "id": "fur-second-order-de",
+  "prerequisites": [
+   "fur-first-order-de",
+   "fur-complex-numbers",
+   "pure-quadratic-functions-discriminant",
+   "pure-trig-harmonic-form"
+  ],
+  "keyIdea": "For $a\\frac{d^2y}{dx^2} + b\\frac{dy}{dx} + cy = f(x)$, solve the **auxiliary equation** $am^2 + bm + c = 0$ for the **complementary function** (CF):\n\n| Roots | CF |\n|---|---|\n| real, distinct $m_1, m_2$ | $Ae^{m_1x} + Be^{m_2x}$ |\n| repeated $m$ | $(A + Bx)e^{mx}$ |\n| complex $p \\pm qi$ | $e^{px}(A\\cos qx + B\\sin qx)$ |\n\n**Particular integral** (PI): try the same type as $f(x)$ – a full polynomial of the same degree; $\\lambda e^{kx}$; $\\lambda\\cos kx + \\mu\\sin kx$. If the trial already appears in the CF, multiply it by $x$.\n\n**General solution** $=$ CF $+$ PI; apply initial conditions only after adding the PI.\n\n**SHM:** $\\ddot{x} = -\\omega^2x$ gives $x = A\\cos\\omega t + B\\sin\\omega t = R\\sin(\\omega t + \\alpha)$, period $\\frac{2\\pi}{\\omega}$, amplitude $R$.\n\n**Damping** $\\ddot{x} + k\\dot{x} + \\omega^2x = 0$: $k^2 > 4\\omega^2$ heavy, $k^2 = 4\\omega^2$ critical, $k^2 < 4\\omega^2$ light (decaying oscillations).",
+  "workedExamples": [
+   {
+    "question": "Solve $\\dfrac{d^2y}{dx^2} - 3\\dfrac{dy}{dx} + 2y = 4x$, given that $y = 0$ and $\\dfrac{dy}{dx} = 0$ when $x = 0$.",
+    "solution": "Auxiliary equation: $m^2 - 3m + 2 = 0 \\Rightarrow m = 1, 2$. CF: $y = Ae^x + Be^{2x}$\n\nPI: try $y = px + q$, so $y' = p$, $y'' = 0$:\n$$0 - 3p + 2(px + q) = 4x \\Rightarrow 2p = 4, \\; 2q - 3p = 0 \\Rightarrow p = 2, \\; q = 3$$\n\nGeneral solution: $y = Ae^x + Be^{2x} + 2x + 3$\n\n$y(0) = 0$: $A + B + 3 = 0$\n$y'(0) = 0$: $y' = Ae^x + 2Be^{2x} + 2$, so $A + 2B + 2 = 0$\n\nSubtract: $B - 1 = 0 \\Rightarrow B = 1$, $A = -4$.\n\n$$y = -4e^x + e^{2x} + 2x + 3$$"
+   },
+   {
+    "question": "A particle moves so that $\\ddot{x} + 4\\dot{x} + 13x = 0$, with $x = 2$ and $\\dot{x} = 0$ when $t = 0$. Find $x$ in terms of $t$ and state the type of damping.",
+    "solution": "Auxiliary equation: $m^2 + 4m + 13 = 0 \\Rightarrow m = \\frac{-4 \\pm \\sqrt{16 - 52}}{2} = -2 \\pm 3i$\n\n$$x = e^{-2t}(A\\cos 3t + B\\sin 3t)$$\n\n$t = 0$: $x = A = 2$.\n\n$\\dot{x} = -2e^{-2t}(A\\cos 3t + B\\sin 3t) + e^{-2t}(-3A\\sin 3t + 3B\\cos 3t)$, so $\\dot{x}(0) = -2A + 3B = 0 \\Rightarrow B = \\frac{4}{3}$.\n\n$$x = e^{-2t}\\left(2\\cos 3t + \\tfrac{4}{3}\\sin 3t\\right)$$\n\n$k^2 = 16 < 4\\omega^2 = 52$ (complex roots), so the motion is **lightly damped**: oscillations whose amplitude decays to zero."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Swaps the real and imaginary parts for complex roots, e.g. for $m = -2 \\pm 3i$ writes $y = e^{3x}(A\\cos 2x + B\\sin 2x)$ or $e^{-3x}(A\\cos 2x + B\\sin 2x)$.",
+    "correction": "For $m = p \\pm qi$ the real part goes in the exponential and the imaginary part is the frequency: $y = e^{-2x}(A\\cos 3x + B\\sin 3x)$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses two separate exponentials for a repeated root, e.g. $m^2 + 6m + 9 = 0$ gives $y = Ae^{-3x} + Be^{-3x}$.",
+    "correction": "$Ae^{-3x} + Be^{-3x} = (A + B)e^{-3x}$ has only one arbitrary constant. For a repeated root use $y = (A + Bx)e^{-3x}$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses a PI trial that is already part of the CF, e.g. for $y'' + 4y = 8\\cos 2x$ tries $\\lambda\\cos 2x + \\mu\\sin 2x$, gets $0 = 8\\cos 2x$ and concludes there is no solution.",
+    "correction": "$\\cos 2x$ and $\\sin 2x$ are in the CF $A\\cos 2x + B\\sin 2x$, so they give zero when substituted. Multiply the trial by $x$: $y = x(\\lambda\\cos 2x + \\mu\\sin 2x)$ gives $-4\\lambda\\sin 2x + 4\\mu\\cos 2x = 8\\cos 2x$, so the PI is $2x\\sin 2x$."
+   },
+   {
+    "id": "m4",
+    "text": "Applies the initial conditions to the CF before adding the PI, e.g. for $y'' - 3y' + 2y = 4x$ with $y(0) = y'(0) = 0$ gets $A = B = 0$ and the answer $y = 2x + 3$.",
+    "correction": "Form the general solution $y = Ae^x + Be^{2x} + 2x + 3$ first, then use the conditions: $A = -4$, $B = 1$. Note $y = 2x + 3$ fails $y(0) = 0$."
+   }
+  ]
+ }
+]

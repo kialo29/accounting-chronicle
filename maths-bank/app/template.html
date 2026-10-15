@@ -1,0 +1,984 @@
+<title>Learn With Kian Maths Bank</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>/*KATEX_CSS*/</style>
+<style>
+/* Layout: exercise-book app. Graph-paper header band, a filter rail beside the results on wide screens,
+   a single column on phones. Ink-blue accent; the margin-red is reserved for "spot the mistake" and errors. */
+:root {
+  --paper: #f6f8fb;
+  --sheet: #ffffff;
+  --ink: #18212f;
+  --ink-soft: #536075;
+  --rule: #dbe2ec;
+  --grid: rgba(47, 91, 211, 0.07);
+  --accent: #2f5bd3;
+  --accent-soft: rgba(47, 91, 211, 0.1);
+  --margin: #c9443a;
+  --margin-soft: rgba(201, 68, 58, 0.1);
+  --good: #23855b;
+  --d1: #2f9e8f; --d2: #3f86c9; --d3: #5b62d6; --d4: #9a4fc2; --d5: #c43f6e;
+  --font-display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Atkinson Hyperlegible", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --radius: 6px;
+  --shadow: 0 1px 2px rgba(24, 33, 47, 0.06), 0 4px 14px rgba(24, 33, 47, 0.05);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f131a; --sheet: #161b24; --ink: #e5e9f1; --ink-soft: #9aa5b8; --rule: #2a3241;
+    --grid: rgba(125, 157, 255, 0.07); --accent: #85a3ff; --accent-soft: rgba(133, 163, 255, 0.14);
+    --margin: #ff8174; --margin-soft: rgba(255, 129, 116, 0.13); --good: #4cc590;
+    --d1: #4fc2b2; --d2: #66a8ea; --d3: #8b90f5; --d4: #c182e6; --d5: #ec6f98;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f131a; --sheet: #161b24; --ink: #e5e9f1; --ink-soft: #9aa5b8; --rule: #2a3241;
+  --grid: rgba(125, 157, 255, 0.07); --accent: #85a3ff; --accent-soft: rgba(133, 163, 255, 0.14);
+  --margin: #ff8174; --margin-soft: rgba(255, 129, 116, 0.13); --good: #4cc590;
+  --d1: #4fc2b2; --d2: #66a8ea; --d3: #8b90f5; --d4: #c182e6; --d5: #ec6f98;
+  --shadow: 0 1px 2px rgba(0,0,0,.3), 0 4px 14px rgba(0,0,0,.25);
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { background: var(--paper); color: var(--ink); }
+body { font-family: var(--font-body); font-size: 16px; line-height: 1.55; margin: 0; }
+button, input, select { font: inherit; color: inherit; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--font-display); line-height: 1.2; text-wrap: balance; margin: 0; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* header */
+.masthead {
+  background-color: var(--sheet);
+  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 22px 22px;
+  border-bottom: 1px solid var(--rule);
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20;
+}
+.masthead .wrap { display: flex; align-items: center; gap: 12px 20px; flex-wrap: wrap; padding-block: 10px; }
+.brand { display: flex; align-items: baseline; gap: 10px; text-decoration: none; color: var(--ink); }
+.brand b { font-family: var(--font-display); font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; }
+.brand span { font-family: var(--font-mono); font-size: 0.72rem; color: var(--ink-soft); text-transform: uppercase; letter-spacing: 0.08em; }
+nav.tabs { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+nav.tabs button, .theme-btn {
+  background: transparent; border: 1px solid transparent; border-radius: var(--radius); padding: 6px 12px; cursor: pointer; color: var(--ink-soft); font-weight: 700;
+}
+nav.tabs button[aria-current="page"] { color: var(--accent); background: var(--accent-soft); }
+nav.tabs button:hover { color: var(--ink); }
+.theme-btn { border-color: var(--rule); font-weight: 400; font-size: 0.85rem; }
+.badge { display: inline-block; min-width: 1.4em; padding: 0 5px; margin-left: 4px; border-radius: 99px; background: var(--accent); color: var(--sheet); font-size: 0.75rem; text-align: center; font-family: var(--font-mono); }
+
+main { padding-block: 24px 64px; }
+.view[hidden] { display: none !important; }
+
+/* common bits */
+.eyebrow { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.09em; color: var(--ink-soft); }
+.muted { color: var(--ink-soft); }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px; border-radius: 99px; border: 1px solid var(--rule);
+  background: var(--sheet); font-size: 0.8rem; color: var(--ink); white-space: nowrap; text-decoration: none; cursor: default;
+}
+a.chip, button.chip { cursor: pointer; }
+a.chip:hover, button.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.stage { font-family: var(--font-mono); font-size: 0.7rem; padding: 1px 7px; color: var(--ink-soft); }
+.chip.stage.us { border-style: dashed; }
+.chip.type-spot-the-mistake { color: var(--margin); border-color: var(--margin); background: var(--margin-soft); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.dots { display: inline-flex; gap: 3px; vertical-align: middle; }
+.dots i { width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--dc, var(--accent)); display: inline-block; }
+.dots i.on { background: var(--dc, var(--accent)); }
+.btn {
+  border: 1px solid var(--rule); background: var(--sheet); border-radius: var(--radius); padding: 7px 14px; cursor: pointer; font-weight: 700; font-size: 0.9rem;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--sheet); }
+.btn.primary:hover { filter: brightness(1.08); color: var(--sheet); }
+.btn[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+input[type="search"], input[type="text"], input[type="number"], select {
+  width: 100%; padding: 8px 10px; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--sheet);
+}
+label.check { display: flex; gap: 8px; align-items: center; cursor: pointer; font-size: 0.92rem; }
+.empty { padding: 32px; text-align: center; color: var(--ink-soft); border: 1px dashed var(--rule); border-radius: var(--radius); }
+
+/* browse */
+.hero { display: grid; gap: 14px; margin-bottom: 22px; }
+.hero h1 { font-size: clamp(1.6rem, 3.4vw, 2.3rem); font-weight: 800; letter-spacing: -0.02em; }
+.hero p { margin: 0; max-width: 65ch; color: var(--ink-soft); }
+.searchbar { display: flex; gap: 8px; max-width: 760px; }
+.searchbar input { font-size: 1.05rem; padding: 11px 14px; }
+.stats { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.stats b { color: var(--ink); }
+.browse { display: grid; grid-template-columns: 250px minmax(0, 1fr); gap: 28px; align-items: start; }
+.filters { display: grid; gap: 16px; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 76px); max-height: calc(100vh - 96px); overflow: auto; padding-right: 4px; }
+.filters fieldset { border: 0; padding: 0; margin: 0; display: grid; gap: 6px; }
+.filters legend { padding: 0; margin-bottom: 4px; }
+.filters .chips button { font-size: 0.8rem; }
+.filter-toggle { display: none; }
+.result-tabs { display: flex; gap: 6px; border-bottom: 1px solid var(--rule); margin-bottom: 16px; }
+.result-tabs button { background: none; border: 0; border-bottom: 2px solid transparent; padding: 8px 12px; cursor: pointer; font-weight: 700; color: var(--ink-soft); }
+.result-tabs button[aria-selected="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.strand-group { margin-bottom: 28px; }
+.strand-group h2 { font-size: 1.15rem; margin-bottom: 10px; display: flex; align-items: baseline; gap: 10px; }
+.topic-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 10px; }
+.topic-card {
+  display: grid; gap: 6px; align-content: start; padding: 12px 14px; background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius);
+  text-decoration: none; color: var(--ink); cursor: pointer; text-align: left;
+}
+.topic-card:hover { border-color: var(--accent); box-shadow: var(--shadow); }
+.topic-card .t { font-weight: 700; line-height: 1.3; }
+.topic-card .meta { display: flex; justify-content: space-between; gap: 8px; font-size: 0.78rem; color: var(--ink-soft); font-family: var(--font-mono); }
+
+/* question cards */
+.qlist { display: grid; gap: 12px; }
+.qcard { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: 14px 16px; display: grid; gap: 10px; min-width: 0; }
+.qhead { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 0.8rem; }
+.qhead .qid { font-family: var(--font-mono); color: var(--ink-soft); font-size: 0.72rem; }
+.qhead .marks { margin-left: auto; font-family: var(--font-mono); font-weight: 600; }
+.qbody { min-width: 0; overflow-wrap: anywhere; }
+.qbody p { margin: 0 0 0.6em; }
+.qbody p:last-child { margin-bottom: 0; }
+.parts { list-style: none; padding: 0; margin: 4px 0 0; display: grid; gap: 6px; }
+.parts li { display: grid; grid-template-columns: 2.2em minmax(0, 1fr) auto; gap: 6px; }
+.parts .pl { font-weight: 700; }
+.parts .pm { font-family: var(--font-mono); font-size: 0.85rem; color: var(--ink-soft); white-space: nowrap; }
+.diagram { overflow-x: auto; color: var(--ink); }
+.diagram svg { max-width: 100%; height: auto; display: block; }
+.qactions { display: flex; flex-wrap: wrap; gap: 6px; }
+.qactions .btn { padding: 4px 11px; font-size: 0.82rem; }
+.qactions .add { margin-left: auto; }
+.reveal { border-top: 1px dashed var(--rule); padding-top: 10px; min-width: 0; overflow-wrap: anywhere; }
+.reveal .lab { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); display: block; margin-bottom: 4px; }
+.reveal.answer .lab { color: var(--good); }
+.reveal p { margin: 0 0 0.6em; }
+.linked { font-size: 0.8rem; }
+.md table { border-collapse: collapse; margin: 6px 0; font-variant-numeric: tabular-nums; }
+.md th, .md td { border: 1px solid var(--rule); padding: 4px 10px; text-align: center; }
+.md th { background: var(--accent-soft); }
+.md .tablewrap { overflow-x: auto; max-width: 100%; }
+.katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
+.more { display: flex; justify-content: center; margin-top: 16px; }
+
+/* topic page */
+.crumbs { font-size: 0.85rem; margin-bottom: 8px; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.crumbs button { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; }
+.topic-head { display: grid; gap: 10px; margin-bottom: 22px; }
+.topic-head h1 { font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 800; letter-spacing: -0.015em; }
+.topic-head .row { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; }
+.topic-layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 28px; align-items: start; }
+.panel { background: var(--sheet); border: 1px solid var(--rule); border-radius: var(--radius); padding: 16px 18px; display: grid; gap: 10px; min-width: 0; }
+.panel h2 { font-size: 1.05rem; }
+.keyidea { font-size: 1.04rem; }
+.side { display: grid; gap: 16px; }
+.misc { display: grid; gap: 10px; }
+.misc .m { display: grid; gap: 4px; padding-left: 12px; border-left: 2px solid var(--margin); }
+.misc .m .wrong { color: var(--ink); }
+.misc .m .fix { color: var(--ink-soft); font-size: 0.93rem; }
+.misc .m .fix b { color: var(--good); }
+details.we { border: 1px solid var(--rule); border-radius: var(--radius); padding: 10px 12px; }
+details.we summary { cursor: pointer; font-weight: 700; }
+.diff-section { margin-top: 26px; }
+.diff-section h2 { font-size: 1.1rem; display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.typefilter { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 4px; }
+
+/* worksheet */
+.ws-layout { display: grid; grid-template-columns: 340px minmax(0, 1fr); gap: 28px; align-items: start; }
+.ws-form { display: grid; gap: 16px; }
+.topic-picker { max-height: 340px; overflow: auto; border: 1px solid var(--rule); border-radius: var(--radius); padding: 8px 10px; background: var(--sheet); display: grid; gap: 2px; }
+.topic-picker .sg { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); margin-top: 8px; }
+.topic-picker label { font-size: 0.88rem; }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sheet { background: #fff; color: #111; border: 1px solid var(--rule); border-radius: var(--radius); padding: 28px 30px; box-shadow: var(--shadow); }
+.sheet-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; border-bottom: 2px solid #111; padding-bottom: 8px; margin-bottom: 6px; flex-wrap: wrap; }
+.sheet-head h2 { font-size: 1.4rem; color: #111; }
+.sheet-head .brandline { font-family: var(--font-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: #444; }
+.sheet .nameline { display: flex; gap: 24px; font-size: 0.9rem; margin: 10px 0 18px; flex-wrap: wrap; }
+.sheet .nameline span { flex: 1; min-width: 140px; border-bottom: 1px solid #999; padding-bottom: 2px; }
+.sheet ol.wsq { padding-left: 0; list-style: none; margin: 0; display: grid; gap: 4px; counter-reset: q; }
+.sheet ol.wsq > li { display: grid; grid-template-columns: 2em minmax(0, 1fr); gap: 4px 8px; padding: 10px 0; border-bottom: 1px solid #e3e3e3; break-inside: avoid; }
+.sheet ol.wsq > li > .n { font-weight: 700; font-family: var(--font-display); }
+.sheet .wsmeta { font-family: var(--font-mono); font-size: 0.65rem; color: #777; }
+.sheet .space { min-height: var(--space, 0); }
+.sheet .wsmarks { float: right; font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; margin-left: 10px; }
+.sheet .md th { background: #eef1f7; }
+.sheet .md th, .sheet .md td { border-color: #bbb; }
+.sheet .diagram { color: #111; }
+.sheet .reveal { border-top: 0; padding-top: 4px; }
+.sheet .reveal .lab { color: #555; }
+.ws-output { display: grid; gap: 20px; min-width: 0; }
+.ws-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.note { font-size: 0.85rem; color: var(--ink-soft); }
+
+/* learning path */
+.path-layout { display: grid; gap: 18px; max-width: 900px; }
+.path-pick { display: flex; gap: 8px; flex-wrap: wrap; }
+.path-pick input { flex: 1 1 320px; }
+ol.path { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; counter-reset: step; }
+ol.path li { display: grid; grid-template-columns: 2.6em minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 12px 0; border-bottom: 1px solid var(--rule); position: relative; }
+ol.path li .step { font-family: var(--font-mono); font-size: 0.85rem; color: var(--sheet); background: var(--accent); width: 2.1em; height: 2.1em; border-radius: 50%; display: grid; place-items: center; font-weight: 600; }
+ol.path li.known .step { background: var(--rule); color: var(--ink-soft); }
+ol.path li.known .ptitle { color: var(--ink-soft); text-decoration: line-through; }
+ol.path li.target .step { background: var(--margin); }
+ol.path .ptitle { font-weight: 700; background: none; border: 0; padding: 0; text-align: left; cursor: pointer; color: var(--ink); }
+ol.path .ptitle:hover { color: var(--accent); }
+ol.path .needs { font-size: 0.8rem; color: var(--ink-soft); }
+
+@media (max-width: 900px) {
+  .browse, .topic-layout, .ws-layout { grid-template-columns: minmax(0, 1fr); }
+  .filters { position: static; max-height: none; overflow: visible; display: none; }
+  .filters.open { display: grid; }
+  .filter-toggle { display: inline-flex; }
+  .side { order: -1; }
+}
+@media (max-width: 560px) {
+  nav.tabs { margin-left: 0; width: 100%; }
+  .sheet { padding: 18px 14px; }
+  .parts li { grid-template-columns: 1.8em minmax(0, 1fr); }
+  .parts .pm { grid-column: 2; }
+  ol.path li { grid-template-columns: 2.4em minmax(0, 1fr); }
+  ol.path li > label { grid-column: 2; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .topic-card, .btn { transition: border-color .15s, box-shadow .15s, color .15s; }
+}
+
+/* print: only the chosen sheet */
+@media print {
+  @page { margin: 14mm; }
+  html, body { background: #fff !important; color: #111 !important; }
+  .masthead, .ws-form, .ws-bar, .note, #view-browse, #view-topic, #view-path, .ws-output > h3 { display: none !important; }
+  main { padding: 0; }
+  .wrap { max-width: none; padding: 0; }
+  .ws-layout { display: block; }
+  .sheet { border: 0; box-shadow: none; padding: 0; border-radius: 0; }
+  body[data-print="worksheet"] #ws-answers, body[data-print="answers"] #ws-sheet { display: none !important; }
+  #ws-answers { break-before: page; }
+  body[data-print="answers"] #ws-answers { break-before: auto; }
+  .sheet ol.wsq > li { break-inside: avoid; }
+  .katex-display { overflow: visible; }
+}
+</style>
+<!--BODY-->
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="#browse" data-go="browse"><b>Learn With Kian</b><span>Maths question bank</span></a>
+    <nav class="tabs" aria-label="Sections">
+      <button type="button" data-go="browse" id="nav-browse">Browse</button>
+      <button type="button" data-go="worksheet" id="nav-worksheet">Worksheet <span class="badge" id="basket-count" hidden>0</span></button>
+      <button type="button" data-go="path" id="nav-path">Learning path</button>
+    </nav>
+    <button type="button" class="theme-btn" id="theme-btn" title="Switch theme">Theme: system</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- BROWSE -->
+  <section class="view" id="view-browse">
+    <div class="hero">
+      <h1>Every topic from Year 7 to Further Maths, and Grade 6 to AP</h1>
+      <p>One merged bank for UK KS3, GCSE, A-level and Further Maths and US Common Core 6–8, Algebra 1, Geometry, Algebra 2, Precalculus, AP Calculus and AP Statistics. Search, filter, open a topic, or build a printable worksheet.</p>
+      <div class="searchbar">
+        <input type="search" id="q" placeholder="Search topics and questions, e.g. completing the square, chi-square, bearings" aria-label="Search">
+        <button type="button" class="btn filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filters</button>
+      </div>
+      <div class="stats" id="stats"></div>
+    </div>
+    <div class="browse">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <fieldset>
+          <legend class="eyebrow">Strand</legend>
+          <select id="f-strand"><option value="">All strands</option></select>
+        </fieldset>
+        <fieldset>
+          <legend class="eyebrow">Stage band</legend>
+          <select id="f-stage"><option value="">All stages</option></select>
+        </fieldset>
+        <fieldset>
+          <legend class="eyebrow">Year / grade</legend>
+          <select id="f-year"><option value="">Any year or grade</option></select>
+        </fieldset>
+        <fieldset>
+          <legend class="eyebrow">Topic</legend>
+          <input type="text" id="f-topic" list="topic-list" placeholder="Type a topic name">
+        </fieldset>
+        <fieldset>
+          <legend class="eyebrow">Difficulty</legend>
+          <div class="chips" id="f-diff"></div>
+        </fieldset>
+        <fieldset>
+          <legend class="eyebrow">Question type</legend>
+          <div class="chips" id="f-type"></div>
+        </fieldset>
+        <fieldset>
+          <label class="check"><input type="checkbox" id="f-diagram"> Only questions with diagrams</label>
+        </fieldset>
+        <button type="button" class="btn" id="f-reset">Clear filters</button>
+      </aside>
+      <div style="min-width:0">
+        <div class="result-tabs" role="tablist">
+          <button type="button" role="tab" id="tab-topics" aria-selected="true">Topics</button>
+          <button type="button" role="tab" id="tab-questions" aria-selected="false">Questions</button>
+        </div>
+        <div id="results"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPIC -->
+  <section class="view" id="view-topic" hidden></section>
+
+  <!-- WORKSHEET -->
+  <section class="view" id="view-worksheet" hidden>
+    <div class="ws-layout">
+      <form class="ws-form" id="ws-form" autocomplete="off">
+        <div>
+          <h1 style="font-size:1.5rem">Worksheet builder</h1>
+          <p class="muted" style="margin:6px 0 0">Pick topics, difficulties and question types. Questions you add with “+ Worksheet” are always included.</p>
+        </div>
+        <fieldset style="border:0;padding:0;margin:0;display:grid;gap:6px">
+          <legend class="eyebrow">Title</legend>
+          <input type="text" id="ws-title" value="Practice worksheet">
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin:0;display:grid;gap:6px">
+          <legend class="eyebrow">Topics <span id="ws-topic-count"></span></legend>
+          <input type="search" id="ws-topic-filter" placeholder="Filter topics">
+          <div class="topic-picker" id="ws-topics"></div>
+          <div class="chips"><button type="button" class="chip" id="ws-clear-topics">Clear topics</button></div>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin:0;display:grid;gap:6px">
+          <legend class="eyebrow">Difficulty</legend>
+          <div class="chips" id="ws-diff"></div>
+        </fieldset>
+        <fieldset style="border:0;padding:0;margin:0;display:grid;gap:6px">
+          <legend class="eyebrow">Question types</legend>
+          <div class="chips" id="ws-type"></div>
+        </fieldset>
+        <div class="row2">
+          <label style="display:grid;gap:6px"><span class="eyebrow">Questions</span><input type="number" id="ws-count" min="1" max="60" value="12"></label>
+          <label style="display:grid;gap:6px"><span class="eyebrow">Order</span>
+            <select id="ws-order"><option value="difficulty">Easiest first</option><option value="topic">By topic</option><option value="mixed">Mixed</option></select></label>
+        </div>
+        <div class="row2">
+          <label style="display:grid;gap:6px"><span class="eyebrow">Working space</span>
+            <select id="ws-space"><option value="0">None</option><option value="60px">Small</option><option value="140px" selected>Medium</option><option value="260px">Large</option></select></label>
+          <label style="display:grid;gap:6px"><span class="eyebrow">Answer sheet</span>
+            <select id="ws-ans"><option value="answers">Answers only</option><option value="solutions" selected>Answers + worked solutions</option></select></label>
+        </div>
+        <label class="check"><input type="checkbox" id="ws-hints"> Print hints under each question</label>
+        <div class="ws-bar">
+          <button type="submit" class="btn primary">Generate worksheet</button>
+          <button type="button" class="btn" id="ws-shuffle">Pick different questions</button>
+          <button type="button" class="btn" id="ws-clear-basket">Clear hand-picked</button>
+        </div>
+        <p class="note" id="ws-pool"></p>
+      </form>
+      <div class="ws-output" id="ws-output">
+        <div class="ws-bar" id="ws-print-bar">
+          <button type="button" class="btn primary" id="print-ws">Print worksheet</button>
+          <button type="button" class="btn" id="print-ans">Print answer sheet</button>
+          <span class="note" id="print-note">Use “Save as PDF” in the print dialog to make a PDF.</span>
+        </div>
+        <article class="sheet" id="ws-sheet"></article>
+        <article class="sheet" id="ws-answers"></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LEARNING PATH -->
+  <section class="view" id="view-path" hidden>
+    <div class="path-layout">
+      <div>
+        <h1 style="font-size:1.6rem">Learning path</h1>
+        <p class="muted" style="margin:6px 0 0;max-width:65ch">Choose a target topic. You get every topic it builds on, in a teachable order. Tick topics the student already knows to hide them from the plan.</p>
+      </div>
+      <div class="path-pick">
+        <input type="text" id="path-input" list="topic-list" placeholder="Target topic, e.g. Integration by parts">
+        <button type="button" class="btn primary" id="path-go">Show path</button>
+        <label class="check"><input type="checkbox" id="path-hide"> Hide known topics</label>
+      </div>
+      <div id="path-out"></div>
+    </div>
+  </section>
+  <datalist id="topic-list"></datalist>
+</main>
+
+<script>/*KATEX_JS*/</script>
+<script type="application/json" id="bank">/*BANK_JSON*/</script>
+<script>
+(function () {
+'use strict';
+var IS_ARTIFACT = /*IS_ARTIFACT*/false;
+var BANK = JSON.parse(document.getElementById('bank').textContent);
+var TOPICS = BANK.topics, QS = BANK.questions;
+var topicById = new Map(TOPICS.map(function (t) { return [t.id, t]; }));
+var qById = new Map(QS.map(function (q) { return [q.id, q]; }));
+var qsByTopic = new Map(TOPICS.map(function (t) { return [t.id, []]; }));
+QS.forEach(function (q) { if (qsByTopic.has(q.topicId)) qsByTopic.get(q.topicId).push(q); });
+var topicOrder = new Map(TOPICS.map(function (t, i) { return [t.id, i]; }));
+
+var STRANDS = BANK.strands;
+var STAGE_LABEL = {
+  'KS3': 'KS3', 'GCSE-F': 'GCSE Foundation', 'GCSE-H': 'GCSE Higher', 'A-level': 'A-level', 'Further': 'Further Maths',
+  'US-6-8': 'US Grades 6–8', 'US-Alg1': 'Algebra 1', 'US-Geo': 'Geometry', 'US-Alg2': 'Algebra 2', 'US-Precalc': 'Precalculus',
+  'US-AP-Calc': 'AP Calculus', 'US-AP-Stats': 'AP Statistics'
+};
+var TYPES = ['fluency', 'reasoning', 'problem-solving', 'spot-the-mistake', 'exam-style', 'real-world', 'synoptic'];
+var TYPE_LABEL = { 'fluency': 'Fluency', 'reasoning': 'Reasoning', 'problem-solving': 'Problem-solving', 'spot-the-mistake': 'Spot the mistake', 'exam-style': 'Exam-style', 'real-world': 'Real-world', 'synoptic': 'Synoptic' };
+var DIFF_LABEL = { 1: 'First steps', 2: 'Practice', 3: 'Core', 4: 'Challenging', 5: 'Stretch' };
+
+// ---------- storage (per-viewer conveniences only) ----------
+function load(key, fallback) { try { var v = localStorage.getItem('lwk-' + key); return v ? JSON.parse(v) : fallback; } catch (e) { return fallback; } }
+function save(key, val) { try { localStorage.setItem('lwk-' + key, JSON.stringify(val)); } catch (e) { /* ignore */ } }
+
+// ---------- rich text: $..$, $$..$$, \$, **bold**, pipe tables ----------
+function tokenize(s) {
+  var out = [], i = 0, buf = '';
+  while (i < s.length) {
+    if (s[i] === '\\' && s[i + 1] === '$') { buf += '$'; i += 2; continue; }
+    if (s[i] === '$') {
+      var display = s[i + 1] === '$', open = display ? 2 : 1, j = i + open, found = -1;
+      while (j < s.length) {
+        if (s[j] === '\\') { j += 2; continue; }
+        if (s[j] === '$') { if (!display || s[j + 1] === '$') { found = j; break; } }
+        j++;
+      }
+      if (found < 0) { buf += s.slice(i); break; }
+      if (buf) out.push({ t: 'text', v: buf });
+      buf = '';
+      out.push({ t: display ? 'display' : 'inline', v: s.slice(i + open, found) });
+      i = found + open;
+      continue;
+    }
+    buf += s[i++];
+  }
+  if (buf) out.push({ t: 'text', v: buf });
+  return out;
+}
+function esc(s) { return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); }
+var mathCache = new Map();
+function tex(src, display) {
+  var key = (display ? 'D' : 'I') + src;
+  if (mathCache.has(key)) return mathCache.get(key);
+  var html;
+  try { html = katex.renderToString(src, { displayMode: display, throwOnError: false, strict: 'ignore' }); }
+  catch (e) { html = '<code>' + esc(src) + '</code>'; }
+  mathCache.set(key, html);
+  return html;
+}
+function rich(s) {
+  if (!s) return '';
+  var toks = tokenize(String(s)), maths = [], text = '';
+  toks.forEach(function (t) {
+    if (t.t === 'text') text += t.v;
+    else { maths.push(t); text += '' + (maths.length - 1) + ''; }
+  });
+  var lines = text.split('\n'), html = '', para = [], table = [];
+  function inline(l) { return esc(l).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>'); }
+  function flushPara() { if (para.length) { html += '<p>' + para.map(inline).join('<br>') + '</p>'; para = []; } }
+  function cells(l) { return l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|'); }
+  function flushTable() {
+    if (!table.length) return;
+    var rows = table.filter(function (l) { return !/^\s*\|?\s*:?-{2,}/.test(l); });
+    var hasHead = table.length > 1 && /^\s*\|?\s*:?-{2,}/.test(table[1]);
+    var h = '<div class="tablewrap"><table>';
+    rows.forEach(function (r, i) {
+      var tag = hasHead && i === 0 ? 'th' : 'td';
+      h += '<tr>' + cells(r).map(function (c) { return '<' + tag + '>' + inline(c.trim()) + '</' + tag + '>'; }).join('') + '</tr>';
+    });
+    html += h + '</table></div>';
+    table = [];
+  }
+  lines.forEach(function (l) {
+    if (/^\s*\|.*\|\s*$/.test(l)) { flushPara(); table.push(l); return; }
+    flushTable();
+    if (!l.trim()) { flushPara(); return; }
+    para.push(l);
+  });
+  flushPara(); flushTable();
+  return html.replace(/(\d+)/g, function (_, n) { var m = maths[+n]; return tex(m.v, m.t === 'display'); });
+}
+function plain(s) { return String(s || '').replace(/\\[a-zA-Z]+/g, ' ').replace(/[${}^_\\]/g, ' ').toLowerCase(); }
+
+function el(tag, attrs, html) {
+  var e = document.createElement(tag);
+  if (attrs) Object.keys(attrs).forEach(function (k) { if (attrs[k] !== undefined && attrs[k] !== null) e.setAttribute(k, attrs[k]); });
+  if (html !== undefined) e.innerHTML = html;
+  return e;
+}
+function dots(d) {
+  var h = '<span class="dots" style="--dc:var(--d' + d + ')" title="Difficulty ' + d + ' of 5: ' + DIFF_LABEL[d] + '">';
+  for (var i = 1; i <= 5; i++) h += '<i class="' + (i <= d ? 'on' : '') + '"></i>';
+  return h + '</span>';
+}
+function stageChips(stages) {
+  return stages.map(function (s) { return '<span class="chip stage' + (s.indexOf('US-') === 0 ? ' us' : '') + '">' + esc(STAGE_LABEL[s] || s) + '</span>'; }).join('');
+}
+function yearsText(t) {
+  var p = [];
+  if (t.years.uk) p.push(t.years.uk[0] === t.years.uk[1] ? 'Y' + t.years.uk[0] : 'Y' + t.years.uk[0] + '–' + t.years.uk[1]);
+  if (t.years.us) p.push(t.years.us[0] === t.years.us[1] ? 'Grade ' + t.years.us[0] : 'Grades ' + t.years.us[0] + '–' + t.years.us[1]);
+  return p.join(' · ');
+}
+
+// ---------- search index ----------
+var topicText = new Map(TOPICS.map(function (t) { return [t.id, plain([t.title, t.scope, t.strand, t.keyIdea].join(' '))]; }));
+var qText = new Map(QS.map(function (q) {
+  var t = topicById.get(q.topicId);
+  return [q.id, plain([t ? t.title : '', q.id, TYPE_LABEL[q.type], q.question, (q.parts || []).map(function (p) { return p.prompt; }).join(' '), q.answer, q.solution].join(' '))];
+}));
+
+// ---------- basket ----------
+var basket = new Set(load('basket', []).filter(function (id) { return qById.has(id); }));
+function updateBasket() {
+  save('basket', Array.from(basket));
+  var b = document.getElementById('basket-count');
+  b.textContent = basket.size; b.hidden = basket.size === 0;
+}
+
+// ---------- question card ----------
+function questionCard(q, opts) {
+  opts = opts || {};
+  var t = topicById.get(q.topicId);
+  var card = el('article', { 'class': 'qcard', id: 'card-' + q.id });
+  var head = '<div class="qhead">' + dots(q.difficulty) +
+    '<span class="chip type-' + q.type + '">' + TYPE_LABEL[q.type] + '</span>' +
+    (opts.showTopic && t ? '<a class="chip" href="#topic-' + t.id + '" data-topic="' + t.id + '">' + esc(t.title) + '</a>' : '') +
+    (q.calculator === false ? '<span class="chip">Non-calculator</span>' : '') +
+    '<span class="qid">' + esc(q.id) + '</span>' +
+    (q.marks ? '<span class="marks">[' + q.marks + ' mark' + (q.marks > 1 ? 's' : '') + ']</span>' : '') + '</div>';
+  var body = '<div class="qbody md">' + rich(q.question) + '</div>';
+  if (q.diagram) body += '<div class="diagram">' + q.diagram + '</div>';
+  if (q.parts && q.parts.length) {
+    body += '<ol class="parts">' + q.parts.map(function (p) {
+      return '<li><span class="pl">(' + esc(p.label) + ')</span><div class="md">' + rich(p.prompt) + '</div><span class="pm">' + (p.marks ? '[' + p.marks + ']' : '') + '</span></li>';
+    }).join('') + '</ol>';
+  }
+  var links = (q.linkedTopicIds || []).filter(function (id) { return topicById.has(id); });
+  var linked = links.length ? '<div class="chips linked"><span class="muted">Also uses:</span>' + links.map(function (id) { return '<a class="chip" href="#topic-' + id + '" data-topic="' + id + '">' + esc(topicById.get(id).title) + '</a>'; }).join('') + '</div>' : '';
+  var miscs = (q.misconceptionIds || []).length && t ? '<div class="chips linked"><span class="muted">Targets misconception:</span>' + q.misconceptionIds.map(function (m) {
+    var mm = (t.misconceptions || []).find(function (x) { return x.id === m; });
+    return '<span class="chip" title="' + esc(mm ? plain(mm.text) : m) + '">' + esc(m.toUpperCase()) + '</span>';
+  }).join('') + '</div>' : '';
+  card.innerHTML = head + body + linked + miscs +
+    '<div class="qactions">' +
+    '<button type="button" class="btn" data-reveal="hint" aria-expanded="false">Hint</button>' +
+    '<button type="button" class="btn" data-reveal="answer" aria-expanded="false">Answer</button>' +
+    '<button type="button" class="btn" data-reveal="solution" aria-expanded="false">Worked solution</button>' +
+    '<button type="button" class="btn add" data-add="' + q.id + '" aria-pressed="' + basket.has(q.id) + '">' + (basket.has(q.id) ? '✓ On worksheet' : '+ Worksheet') + '</button>' +
+    '</div>';
+  card.addEventListener('click', function (e) {
+    var b = e.target.closest('button');
+    if (!b || !card.contains(b)) return;
+    if (b.dataset.reveal) {
+      var kind = b.dataset.reveal, panel = card.querySelector('.reveal.' + kind);
+      if (!panel) {
+        var label = { hint: 'Hint', answer: 'Answer', solution: 'Worked solution' }[kind];
+        panel = el('div', { 'class': 'reveal md ' + kind }, '<span class="lab">' + label + '</span>' + rich(q[kind]));
+        var order = ['hint', 'answer', 'solution'], before = null;
+        for (var i = order.indexOf(kind) + 1; i < order.length && !before; i++) before = card.querySelector('.reveal.' + order[i]);
+        card.insertBefore(panel, before || null);
+        panel.hidden = true;
+      }
+      panel.hidden = !panel.hidden;
+      b.setAttribute('aria-expanded', String(!panel.hidden));
+      b.setAttribute('aria-pressed', String(!panel.hidden));
+    } else if (b.dataset.add) {
+      if (basket.has(q.id)) basket.delete(q.id); else basket.add(q.id);
+      b.setAttribute('aria-pressed', String(basket.has(q.id)));
+      b.textContent = basket.has(q.id) ? '✓ On worksheet' : '+ Worksheet';
+      updateBasket();
+    }
+  });
+  return card;
+}
+
+// ---------- routing ----------
+var views = ['browse', 'topic', 'worksheet', 'path'];
+function show(view) {
+  views.forEach(function (v) { document.getElementById('view-' + v).hidden = v !== view; });
+  ['browse', 'worksheet', 'path'].forEach(function (v) {
+    var n = document.getElementById('nav-' + v);
+    if (v === view) n.setAttribute('aria-current', 'page'); else n.removeAttribute('aria-current');
+  });
+}
+function go(hash) {
+  if (location.hash !== '#' + hash) { try { location.hash = hash; return; } catch (e) { /* fall through */ } }
+  route(hash);
+}
+function route(h) {
+  h = h || (location.hash || '#browse').slice(1);
+  if (h.indexOf('topic-') === 0 && topicById.has(h.slice(6))) { renderTopic(h.slice(6)); show('topic'); window.scrollTo(0, 0); }
+  else if (h === 'worksheet') { show('worksheet'); renderWorksheetForm(); }
+  else if (h.indexOf('path') === 0) { show('path'); var id = h.slice(5); if (topicById.has(id)) { pathTarget = id; document.getElementById('path-input').value = topicById.get(id).title; } renderPath(); }
+  else { show('browse'); }
+}
+window.addEventListener('hashchange', function () { route(); });
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('[data-topic]');
+  if (a) { e.preventDefault(); go('topic-' + a.dataset.topic); return; }
+  var g = e.target.closest('[data-go]');
+  if (g) { e.preventDefault(); go(g.dataset.go); }
+});
+
+// ---------- theme ----------
+var themes = ['system', 'light', 'dark'];
+var theme = load('theme', 'system');
+function applyTheme() {
+  if (theme === 'system') document.documentElement.removeAttribute('data-theme');
+  else document.documentElement.setAttribute('data-theme', theme);
+  document.getElementById('theme-btn').textContent = 'Theme: ' + theme;
+}
+document.getElementById('theme-btn').addEventListener('click', function () {
+  theme = themes[(themes.indexOf(theme) + 1) % 3]; save('theme', theme); applyTheme();
+});
+
+// ---------- browse ----------
+var F = { q: '', strand: '', stage: '', year: '', topic: '', diff: new Set(), type: new Set(), diagram: false, tab: 'topics', limit: 30 };
+var titleToId = new Map(TOPICS.map(function (t) { return [t.title.toLowerCase(), t.id]; }));
+function initBrowse() {
+  var s = document.getElementById('f-strand');
+  STRANDS.forEach(function (x) { s.appendChild(el('option', { value: x }, esc(x))); });
+  var st = document.getElementById('f-stage');
+  var ukg = el('optgroup', { label: 'UK' }), usg = el('optgroup', { label: 'US' });
+  BANK.stages.forEach(function (x) { (x.indexOf('US-') === 0 ? usg : ukg).appendChild(el('option', { value: x }, esc(STAGE_LABEL[x]))); });
+  st.appendChild(ukg); st.appendChild(usg);
+  var y = document.getElementById('f-year');
+  var yg = el('optgroup', { label: 'UK year' }), gg = el('optgroup', { label: 'US grade' });
+  for (var i = 7; i <= 13; i++) yg.appendChild(el('option', { value: 'uk' + i }, 'Year ' + i));
+  for (var g = 6; g <= 12; g++) gg.appendChild(el('option', { value: 'us' + g }, 'Grade ' + g));
+  y.appendChild(yg); y.appendChild(gg);
+  var dl = document.getElementById('topic-list');
+  TOPICS.forEach(function (t) { dl.appendChild(el('option', { value: t.title })); });
+  var fd = document.getElementById('f-diff');
+  [1, 2, 3, 4, 5].forEach(function (d) { fd.appendChild(el('button', { type: 'button', 'class': 'chip', 'data-d': d, 'aria-pressed': 'false' }, dots(d) + ' ' + d)); });
+  var ft = document.getElementById('f-type');
+  TYPES.forEach(function (x) { ft.appendChild(el('button', { type: 'button', 'class': 'chip', 'data-t': x, 'aria-pressed': 'false' }, TYPE_LABEL[x])); });
+  function toggleChip(set, key, btn) { if (set.has(key)) set.delete(key); else set.add(key); btn.setAttribute('aria-pressed', String(set.has(key))); btn.style.borderColor = set.has(key) ? 'var(--accent)' : ''; btn.style.background = set.has(key) ? 'var(--accent-soft)' : ''; }
+  fd.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { toggleChip(F.diff, +b.dataset.d, b); F.tab = 'questions'; renderResults(); } });
+  ft.addEventListener('click', function (e) { var b = e.target.closest('button'); if (b) { toggleChip(F.type, b.dataset.t, b); F.tab = 'questions'; renderResults(); } });
+  var debounce;
+  document.getElementById('q').addEventListener('input', function (e) { clearTimeout(debounce); debounce = setTimeout(function () { F.q = e.target.value.trim().toLowerCase(); F.limit = 30; renderResults(); }, 150); });
+  s.addEventListener('change', function () { F.strand = s.value; renderResults(); });
+  st.addEventListener('change', function () { F.stage = st.value; renderResults(); });
+  y.addEventListener('change', function () { F.year = y.value; renderResults(); });
+  document.getElementById('f-topic').addEventListener('change', function (e) { F.topic = titleToId.get(e.target.value.trim().toLowerCase()) || ''; if (F.topic) F.tab = 'questions'; renderResults(); });
+  document.getElementById('f-diagram').addEventListener('change', function (e) { F.diagram = e.target.checked; if (F.diagram) F.tab = 'questions'; renderResults(); });
+  document.getElementById('f-reset').addEventListener('click', function () {
+    F.q = ''; F.strand = ''; F.stage = ''; F.year = ''; F.topic = ''; F.diff.clear(); F.type.clear(); F.diagram = false; F.limit = 30;
+    ['q', 'f-strand', 'f-stage', 'f-year', 'f-topic'].forEach(function (id) { document.getElementById(id).value = ''; });
+    document.getElementById('f-diagram').checked = false;
+    document.querySelectorAll('#f-diff button, #f-type button').forEach(function (b) { b.setAttribute('aria-pressed', 'false'); b.style.borderColor = ''; b.style.background = ''; });
+    renderResults();
+  });
+  document.getElementById('tab-topics').addEventListener('click', function () { F.tab = 'topics'; renderResults(); });
+  document.getElementById('tab-questions').addEventListener('click', function () { F.tab = 'questions'; F.limit = 30; renderResults(); });
+  var tog = document.getElementById('filter-toggle');
+  tog.addEventListener('click', function () { var f = document.getElementById('filters'); f.classList.toggle('open'); tog.setAttribute('aria-expanded', String(f.classList.contains('open'))); });
+  var counts = {}; STRANDS.forEach(function (x) { counts[x] = 0; });
+  TOPICS.forEach(function (t) { counts[t.strand]++; });
+  document.getElementById('stats').innerHTML = '<span><b>' + TOPICS.length + '</b> topics</span><span><b>' + QS.length.toLocaleString('en-GB') + '</b> questions</span><span><b>' + STRANDS.length + '</b> strands</span><span>UK Year 7 → Further Maths · US Grade 6 → AP</span>';
+}
+function topicMatches(t) {
+  if (F.strand && t.strand !== F.strand) return false;
+  if (F.stage && t.stages.indexOf(F.stage) < 0) return false;
+  if (F.year) {
+    var sys = F.year.slice(0, 2), n = +F.year.slice(2), r = t.years[sys];
+    if (!r || n < r[0] || n > r[1]) return false;
+  }
+  if (F.topic && t.id !== F.topic) return false;
+  return true;
+}
+function termsMatch(text) {
+  if (!F.q) return true;
+  return F.q.split(/\s+/).every(function (w) { return text.indexOf(w) >= 0; });
+}
+function renderResults() {
+  var topics = TOPICS.filter(topicMatches);
+  var tset = new Set(topics.map(function (t) { return t.id; }));
+  var matchedTopics = topics.filter(function (t) { return termsMatch(topicText.get(t.id)); });
+  var qs = QS.filter(function (q) {
+    if (!tset.has(q.topicId)) return false;
+    if (F.diff.size && !F.diff.has(q.difficulty)) return false;
+    if (F.type.size && !F.type.has(q.type)) return false;
+    if (F.diagram && !q.diagram) return false;
+    return termsMatch(qText.get(q.id));
+  });
+  var tt = document.getElementById('tab-topics'), tq = document.getElementById('tab-questions');
+  tt.textContent = 'Topics (' + matchedTopics.length + ')';
+  tq.textContent = 'Questions (' + qs.length.toLocaleString('en-GB') + ')';
+  tt.setAttribute('aria-selected', String(F.tab === 'topics'));
+  tq.setAttribute('aria-selected', String(F.tab === 'questions'));
+  var out = document.getElementById('results');
+  out.innerHTML = '';
+  if (F.tab === 'topics') {
+    if (!matchedTopics.length) { out.appendChild(el('div', { 'class': 'empty' }, 'No topics match. Try fewer words or clear a filter.')); return; }
+    STRANDS.forEach(function (s) {
+      var ts = matchedTopics.filter(function (t) { return t.strand === s; });
+      if (!ts.length) return;
+      var g = el('section', { 'class': 'strand-group' }, '<h2>' + esc(s) + ' <span class="eyebrow">' + ts.length + ' topics</span></h2>');
+      var grid = el('div', { 'class': 'topic-grid' });
+      ts.forEach(function (t) {
+        var n = (qsByTopic.get(t.id) || []).length;
+        grid.appendChild(el('a', { 'class': 'topic-card', href: '#topic-' + t.id, 'data-topic': t.id },
+          '<span class="t">' + esc(t.title) + '</span><span class="chips">' + stageChips(t.stages) + '</span><span class="meta"><span>' + esc(yearsText(t)) + '</span><span>' + n + ' Qs</span></span>'));
+      });
+      g.appendChild(grid); out.appendChild(g);
+    });
+  } else {
+    if (!qs.length) { out.appendChild(el('div', { 'class': 'empty' }, 'No questions match. Try fewer words or clear a filter.')); return; }
+    var list = el('div', { 'class': 'qlist' });
+    qs.slice(0, F.limit).forEach(function (q) { list.appendChild(questionCard(q, { showTopic: true })); });
+    out.appendChild(list);
+    if (qs.length > F.limit) {
+      var more = el('div', { 'class': 'more' });
+      var b = el('button', { type: 'button', 'class': 'btn' }, 'Show 30 more (' + (qs.length - F.limit) + ' left)');
+      b.addEventListener('click', function () { F.limit += 30; renderResults(); });
+      more.appendChild(b); out.appendChild(more);
+    }
+  }
+}
+
+// ---------- topic page ----------
+function topicChip(id) { var t = topicById.get(id); return t ? '<a class="chip" href="#topic-' + id + '" data-topic="' + id + '">' + esc(t.title) + '</a>' : ''; }
+function renderTopic(id) {
+  var t = topicById.get(id), qs = (qsByTopic.get(id) || []).slice();
+  var v = document.getElementById('view-topic');
+  var typeCounts = {};
+  qs.forEach(function (q) { typeCounts[q.type] = (typeCounts[q.type] || 0) + 1; });
+  var html = '<div class="crumbs"><button type="button" data-go="browse">Browse</button><span class="muted">/</span><span class="muted">' + esc(t.strand) + '</span></div>' +
+    '<div class="topic-head"><h1>' + esc(t.title) + '</h1>' +
+    '<div class="row"><span class="chips">' + stageChips(t.stages) + '</span><span class="eyebrow">' + esc(yearsText(t)) + (t.convention === 'US' ? ' · US conventions' : '') + '</span></div>' +
+    '<div class="row"><button type="button" class="btn" id="tp-path">Learning path to this topic</button><button type="button" class="btn" id="tp-ws">Make a worksheet on this topic</button></div></div>' +
+    '<div class="topic-layout"><div style="min-width:0;display:grid;gap:16px">' +
+    '<section class="panel"><span class="eyebrow">Key idea</span><div class="keyidea md">' + rich(t.keyIdea) + '</div>' +
+    (t.scope ? '<p class="muted" style="margin:0;font-size:.9rem"><b>Covers:</b> ' + esc(t.scope) + '</p>' : '') + '</section>' +
+    '<section class="panel"><h2>Worked example' + ((t.workedExamples || []).length > 1 ? 's' : '') + '</h2>' +
+    (t.workedExamples || []).map(function (w, i) {
+      return '<div class="md"><p><b>Example ' + (i + 1) + '.</b></p>' + rich(w.question) + (w.diagram ? '<div class="diagram">' + w.diagram + '</div>' : '') +
+        '</div><details class="we"' + (i === 0 ? ' open' : '') + '><summary>Solution</summary><div class="md" style="margin-top:8px">' + rich(w.solution) + '</div></details>';
+    }).join('') + '</section></div>' +
+    '<aside class="side">' +
+    '<section class="panel"><span class="eyebrow">Common misconceptions</span><div class="misc">' +
+    (t.misconceptions || []).map(function (m) { return '<div class="m"><div class="wrong md"><b>' + esc(m.id.toUpperCase()) + '</b> ' + rich(m.text) + '</div><div class="fix md"><b>Fix:</b> ' + rich(m.correction) + '</div></div>'; }).join('') +
+    '</div></section>' +
+    '<section class="panel"><span class="eyebrow">Prerequisites</span><div class="chips">' + ((t.prerequisites || []).map(topicChip).join('') || '<span class="muted">None – a starting point.</span>') + '</div>' +
+    '<span class="eyebrow" style="margin-top:6px">Leads to</span><div class="chips">' + ((t.leadsTo || []).map(topicChip).join('') || '<span class="muted">End of this branch.</span>') + '</div></section>' +
+    '</aside></div>' +
+    '<div class="typefilter" id="tp-types"><span class="eyebrow" style="align-self:center">Show:</span><button type="button" class="chip" data-tt="" aria-pressed="true">All ' + qs.length + '</button>' +
+    TYPES.filter(function (x) { return typeCounts[x]; }).map(function (x) { return '<button type="button" class="chip" data-tt="' + x + '" aria-pressed="false">' + TYPE_LABEL[x] + ' ' + typeCounts[x] + '</button>'; }).join('') + '</div>' +
+    '<div id="tp-questions"></div>';
+  v.innerHTML = html;
+  var typeSel = '';
+  function drawQs() {
+    var box = document.getElementById('tp-questions');
+    box.innerHTML = '';
+    [1, 2, 3, 4, 5].forEach(function (d) {
+      var group = qs.filter(function (q) { return q.difficulty === d && (!typeSel || q.type === typeSel); });
+      if (!group.length) return;
+      var sec = el('section', { 'class': 'diff-section' }, '<h2>' + dots(d) + ' Difficulty ' + d + ' <span class="eyebrow">' + DIFF_LABEL[d] + ' · ' + group.length + '</span></h2>');
+      var list = el('div', { 'class': 'qlist' });
+      group.forEach(function (q) { list.appendChild(questionCard(q)); });
+      sec.appendChild(list); box.appendChild(sec);
+    });
+    if (!box.children.length) box.appendChild(el('div', { 'class': 'empty' }, 'No questions of this type for this topic.'));
+  }
+  document.getElementById('tp-types').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    typeSel = b.dataset.tt;
+    this.querySelectorAll('button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); x.style.borderColor = x === b ? 'var(--accent)' : ''; x.style.background = x === b ? 'var(--accent-soft)' : ''; });
+    drawQs();
+  });
+  document.getElementById('tp-path').addEventListener('click', function () { go('path-' + id); });
+  document.getElementById('tp-ws').addEventListener('click', function () { WS.topics = new Set([id]); wsFormBuilt = false; go('worksheet'); generate(); });
+  drawQs();
+}
+
+// ---------- worksheet ----------
+var WS = { topics: new Set(), diff: new Set([1, 2, 3, 4, 5]), type: new Set(TYPES), seed: 1 };
+var wsFormBuilt = false;
+function rng(seed) { var s = seed >>> 0; return function () { s = (s + 0x6D2B79F5) >>> 0; var t = s; t = Math.imul(t ^ (t >>> 15), t | 1); t ^= t + Math.imul(t ^ (t >>> 7), t | 61); return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; }
+function renderWorksheetForm() {
+  if (wsFormBuilt) { updatePool(); return; }
+  wsFormBuilt = true;
+  var box = document.getElementById('ws-topics');
+  box.innerHTML = '';
+  STRANDS.forEach(function (s) {
+    box.appendChild(el('div', { 'class': 'sg' }, esc(s)));
+    TOPICS.filter(function (t) { return t.strand === s; }).forEach(function (t) {
+      var lab = el('label', { 'class': 'check', 'data-name': t.title.toLowerCase() }, '<input type="checkbox" value="' + t.id + '"' + (WS.topics.has(t.id) ? ' checked' : '') + '> ' + esc(t.title));
+      box.appendChild(lab);
+    });
+  });
+  var dBox = document.getElementById('ws-diff'); dBox.innerHTML = '';
+  [1, 2, 3, 4, 5].forEach(function (d) { dBox.appendChild(el('label', { 'class': 'chip' }, '<input type="checkbox" value="' + d + '"' + (WS.diff.has(d) ? ' checked' : '') + '> ' + dots(d) + ' ' + d)); });
+  var tBox = document.getElementById('ws-type'); tBox.innerHTML = '';
+  TYPES.forEach(function (x) { tBox.appendChild(el('label', { 'class': 'chip' }, '<input type="checkbox" value="' + x + '"' + (WS.type.has(x) ? ' checked' : '') + '> ' + TYPE_LABEL[x])); });
+  updatePool();
+}
+function wireWorksheet() {
+  document.getElementById('ws-topics').addEventListener('change', function (e) { if (e.target.checked) WS.topics.add(e.target.value); else WS.topics.delete(e.target.value); updatePool(); });
+  document.getElementById('ws-diff').addEventListener('change', function (e) { var d = +e.target.value; if (e.target.checked) WS.diff.add(d); else WS.diff.delete(d); updatePool(); });
+  document.getElementById('ws-type').addEventListener('change', function (e) { if (e.target.checked) WS.type.add(e.target.value); else WS.type.delete(e.target.value); updatePool(); });
+  document.getElementById('ws-topic-filter').addEventListener('input', function (e) {
+    var w = e.target.value.trim().toLowerCase();
+    document.querySelectorAll('#ws-topics label').forEach(function (l) { l.hidden = !!w && l.dataset.name.indexOf(w) < 0; });
+    document.querySelectorAll('#ws-topics .sg').forEach(function (h) { h.hidden = !!w; });
+  });
+  document.getElementById('ws-clear-topics').addEventListener('click', function () { WS.topics.clear(); document.querySelectorAll('#ws-topics input').forEach(function (i) { i.checked = false; }); updatePool(); });
+  document.getElementById('ws-clear-basket').addEventListener('click', function () { basket.clear(); updateBasket(); updatePool(); });
+  document.getElementById('ws-form').addEventListener('submit', function (e) { e.preventDefault(); generate(); });
+  document.getElementById('ws-shuffle').addEventListener('click', function () { WS.seed++; generate(); });
+  ['ws-space', 'ws-ans', 'ws-hints', 'ws-title', 'ws-order'].forEach(function (id) { document.getElementById(id).addEventListener('change', function () { if (lastPicked) drawSheets(lastPicked); }); });
+  function doPrint(which) { document.body.setAttribute('data-print', which); window.print(); }
+  document.getElementById('print-ws').addEventListener('click', function () { doPrint('worksheet'); });
+  document.getElementById('print-ans').addEventListener('click', function () { doPrint('answers'); });
+  window.addEventListener('afterprint', function () { document.body.removeAttribute('data-print'); });
+  if (IS_ARTIFACT) {
+    document.getElementById('print-ws').hidden = true; document.getElementById('print-ans').hidden = true;
+    document.getElementById('print-note').textContent = 'To print or save as PDF, open the offline index.html file in your browser and use the print buttons there.';
+  }
+}
+function poolFor() {
+  return QS.filter(function (q) { return WS.topics.has(q.topicId) && WS.diff.has(q.difficulty) && WS.type.has(q.type) && !basket.has(q.id); });
+}
+function updatePool() {
+  var n = poolFor().length;
+  document.getElementById('ws-topic-count').textContent = WS.topics.size ? '(' + WS.topics.size + ' selected)' : '';
+  document.getElementById('ws-pool').textContent = n + ' matching questions in the selected topics' + (basket.size ? ' · ' + basket.size + ' hand-picked question' + (basket.size > 1 ? 's' : '') + ' always included' : '') + '.';
+}
+var lastPicked = null;
+function generate() {
+  renderWorksheetForm();
+  var count = Math.max(1, Math.min(60, +document.getElementById('ws-count').value || 12));
+  var r = rng(WS.seed * 7919 + count);
+  var picked = Array.from(basket).map(function (id) { return qById.get(id); }).filter(Boolean);
+  var pool = poolFor();
+  var byT = new Map();
+  pool.forEach(function (q) { if (!byT.has(q.topicId)) byT.set(q.topicId, []); byT.get(q.topicId).push(q); });
+  byT.forEach(function (arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var tmp = arr[i]; arr[i] = arr[j]; arr[j] = tmp; } });
+  var keys = Array.from(byT.keys()), k = 0, need = Math.max(0, count - picked.length);
+  while (need > 0 && keys.some(function (key) { return byT.get(key).length; })) {
+    var arr = byT.get(keys[k % keys.length]); k++;
+    if (arr.length) { picked.push(arr.pop()); need--; }
+  }
+  var order = document.getElementById('ws-order').value;
+  if (order === 'difficulty') picked.sort(function (a, b) { return a.difficulty - b.difficulty || topicOrder.get(a.topicId) - topicOrder.get(b.topicId); });
+  else if (order === 'topic') picked.sort(function (a, b) { return topicOrder.get(a.topicId) - topicOrder.get(b.topicId) || a.difficulty - b.difficulty; });
+  else for (var i = picked.length - 1; i > 0; i--) { var j = Math.floor(r() * (i + 1)); var tmp = picked[i]; picked[i] = picked[j]; picked[j] = tmp; }
+  lastPicked = picked;
+  drawSheets(picked);
+}
+function drawSheets(picked) {
+  var title = document.getElementById('ws-title').value.trim() || 'Practice worksheet';
+  var space = document.getElementById('ws-space').value;
+  var hints = document.getElementById('ws-hints').checked;
+  var sols = document.getElementById('ws-ans').value === 'solutions';
+  var topicsUsed = Array.from(new Set(picked.map(function (q) { return q.topicId; }))).map(function (id) { return topicById.get(id).title; });
+  var totalMarks = picked.reduce(function (s, q) { return s + (q.marks || 0); }, 0);
+  var sheet = document.getElementById('ws-sheet'), ans = document.getElementById('ws-answers');
+  if (!picked.length) {
+    sheet.innerHTML = '<div class="empty">Choose at least one topic (or add questions with “+ Worksheet”), then generate.</div>';
+    ans.innerHTML = ''; ans.hidden = true; document.getElementById('ws-print-bar').hidden = true; return;
+  }
+  ans.hidden = false; document.getElementById('ws-print-bar').hidden = false;
+  var head = function (sub) {
+    return '<div class="sheet-head"><div><div class="brandline">Learn With Kian</div><h2>' + esc(title) + (sub ? ' — ' + sub : '') + '</h2></div><div class="brandline">' + picked.length + ' questions' + (totalMarks ? ' · exam-style marks: ' + totalMarks : '') + '</div></div>';
+  };
+  var html = head('') + '<div class="nameline"><span>Name:</span><span>Date:</span><span>Score:</span></div>' +
+    '<p class="wsmeta" style="margin:0 0 10px">Topics: ' + esc(topicsUsed.join(', ')) + '</p><ol class="wsq">';
+  picked.forEach(function (q, i) {
+    html += '<li><span class="n">' + (i + 1) + '.</span><div class="md" style="min-width:0">' +
+      (q.marks ? '<span class="wsmarks">[' + q.marks + ']</span>' : '') + rich(q.question) +
+      (q.diagram ? '<div class="diagram">' + q.diagram + '</div>' : '') +
+      (q.parts && q.parts.length ? '<ol class="parts">' + q.parts.map(function (p) { return '<li><span class="pl">(' + esc(p.label) + ')</span><div class="md">' + rich(p.prompt) + '</div><span class="pm">' + (p.marks ? '[' + p.marks + ']' : '') + '</span></li>'; }).join('') + '</ol>' : '') +
+      (hints ? '<div class="reveal md"><span class="lab">Hint</span>' + rich(q.hint) + '</div>' : '') +
+      '<div class="space" style="--space:' + space + '"></div><div class="wsmeta">' + esc(q.id) + '</div></div></li>';
+  });
+  sheet.innerHTML = html + '</ol>';
+  var ah = head('Answers') + '<ol class="wsq">';
+  picked.forEach(function (q, i) {
+    ah += '<li><span class="n">' + (i + 1) + '.</span><div class="md" style="min-width:0"><div class="reveal answer"><span class="lab">Answer</span>' + rich(q.answer) + '</div>' +
+      (sols ? '<div class="reveal"><span class="lab">Worked solution</span>' + rich(q.solution) + '</div>' : '') + '<div class="wsmeta">' + esc(q.id) + '</div></div></li>';
+  });
+  ans.innerHTML = ah + '</ol>';
+}
+
+// ---------- learning path ----------
+var pathTarget = null;
+var known = new Set(load('known', []));
+function minYear(t) { var a = t.years.uk ? t.years.uk[0] : 99, b = t.years.us ? t.years.us[0] + 1 : 99; return Math.min(a, b); }
+function ancestors(id) {
+  var seen = new Set(), stack = [id];
+  while (stack.length) {
+    var x = stack.pop();
+    (topicById.get(x).prerequisites || []).forEach(function (p) { if (!seen.has(p) && topicById.has(p)) { seen.add(p); stack.push(p); } });
+  }
+  return seen;
+}
+function orderedPath(id) {
+  var set = ancestors(id); set.add(id);
+  var done = new Set(), out = [];
+  var remaining = Array.from(set);
+  while (remaining.length) {
+    var ready = remaining.filter(function (x) { return (topicById.get(x).prerequisites || []).every(function (p) { return !set.has(p) || done.has(p); }); });
+    if (!ready.length) ready = remaining.slice(0, 1);
+    ready.sort(function (a, b) { return minYear(topicById.get(a)) - minYear(topicById.get(b)) || topicOrder.get(a) - topicOrder.get(b); });
+    var pick = ready[0];
+    out.push(pick); done.add(pick);
+    remaining.splice(remaining.indexOf(pick), 1);
+  }
+  return out;
+}
+function renderPath() {
+  var out = document.getElementById('path-out');
+  if (!pathTarget) { out.innerHTML = '<div class="empty">Pick a target topic above to see the order to teach its prerequisites.</div>'; return; }
+  var hide = document.getElementById('path-hide').checked;
+  var seq = orderedPath(pathTarget);
+  var shown = seq.filter(function (id) { return !(hide && known.has(id) && id !== pathTarget); });
+  var t = topicById.get(pathTarget);
+  var h = '<p class="muted" style="margin:0 0 8px">' + (seq.length - 1) + ' prerequisite topic' + (seq.length === 2 ? '' : 's') + ' lead to <b>' + esc(t.title) + '</b>' +
+    (known.size ? ' · ' + seq.filter(function (id) { return known.has(id); }).length + ' marked known' : '') + '.</p><ol class="path">';
+  shown.forEach(function (id, i) {
+    var x = topicById.get(id), isT = id === pathTarget;
+    var needs = (x.prerequisites || []).filter(function (p) { return topicById.has(p); }).map(function (p) { return topicById.get(p).title; });
+    h += '<li class="' + (known.has(id) ? 'known ' : '') + (isT ? 'target' : '') + '"><span class="step">' + (i + 1) + '</span><div style="min-width:0">' +
+      '<button type="button" class="ptitle" data-topic="' + id + '">' + esc(x.title) + '</button>' +
+      '<div class="chips" style="margin:4px 0">' + stageChips(x.stages) + '<span class="eyebrow" style="align-self:center">' + esc(yearsText(x)) + '</span></div>' +
+      (needs.length ? '<div class="needs">Builds on: ' + esc(needs.join(', ')) + '</div>' : '<div class="needs">Starting point</div>') + '</div>' +
+      (isT ? '<span class="eyebrow">Target</span>' : '<label class="check"><input type="checkbox" data-known="' + id + '"' + (known.has(id) ? ' checked' : '') + '> Known</label>') + '</li>';
+  });
+  h += '</ol>';
+  if ((t.leadsTo || []).length) h += '<div class="panel" style="margin-top:16px"><span class="eyebrow">After this, students can move on to</span><div class="chips">' + t.leadsTo.map(topicChip).join('') + '</div></div>';
+  out.innerHTML = h;
+}
+function wirePath() {
+  function pick() {
+    var id = titleToId.get(document.getElementById('path-input').value.trim().toLowerCase());
+    if (id) { pathTarget = id; go('path-' + id); } else { document.getElementById('path-out').innerHTML = '<div class="empty">No topic with that name. Start typing and pick one from the list.</div>'; }
+  }
+  document.getElementById('path-go').addEventListener('click', pick);
+  document.getElementById('path-input').addEventListener('change', pick);
+  document.getElementById('path-hide').addEventListener('change', renderPath);
+  document.getElementById('path-out').addEventListener('change', function (e) {
+    var id = e.target.dataset.known; if (!id) return;
+    if (e.target.checked) known.add(id); else known.delete(id);
+    save('known', Array.from(known)); renderPath();
+  });
+}
+
+// ---------- boot ----------
+applyTheme();
+initBrowse();
+wireWorksheet();
+wirePath();
+updateBasket();
+renderResults();
+route();
+})();
+</script>

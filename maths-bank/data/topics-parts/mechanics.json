@@ -1,0 +1,491 @@
+[
+ {
+  "id": "mech-modelling-units",
+  "prerequisites": [
+   "geo-units-measures",
+   "rat-speed-distance-time",
+   "geo-vectors"
+  ],
+  "keyIdea": "**SI units:** length in metres (m), mass in kilograms (kg), time in seconds (s). Derived units: velocity $\\text{m s}^{-1}$, acceleration $\\text{m s}^{-2}$, force in newtons, $1\\text{ N} = 1\\text{ kg m s}^{-2}$. Weight $W = mg$ with $g = 9.8$ $\\text{m s}^{-2}$.\n\n**Scalars** have size only (distance, speed, mass, time). **Vectors** have size and direction (displacement, velocity, acceleration, force).\n\n**Modelling assumptions** simplify reality:\n* **particle** – dimensions negligible, so no rotation and air resistance ignored\n* **light** – mass negligible, so tension is the same throughout a string\n* **inextensible** – does not stretch, so connected objects have the same acceleration\n* **smooth** – no friction\n* **rigid** – does not bend; **uniform** – mass evenly spread, so weight acts at the centre.\n\nAlways state how an assumption affects the model.",
+  "workedExamples": [
+   {
+    "question": "A parcel has mass 450 g and is carried in a van travelling at 72 km h$^{-1}$.\n\n(a) Convert the speed to $\\text{m s}^{-1}$.\n\n(b) Find the weight of the parcel.",
+    "solution": "(a) $72$ km in one hour means $72\\,000$ m in $3600$ s:\n$$72\\text{ km h}^{-1} = \\frac{72 \\times 1000}{3600} = 20\\text{ m s}^{-1}$$\n\n(b) Convert the mass to kilograms first: $450\\text{ g} = 0.45\\text{ kg}$.\n$$W = mg = 0.45 \\times 9.8 = 4.41\\text{ N}$$\nWeight is a force, so it is measured in newtons, not kilograms."
+   },
+   {
+    "question": "A box is dragged across a floor by a rope. The box is modelled as a particle, the rope as light and inextensible and the floor as smooth. Explain what each assumption means and how it affects the model.",
+    "solution": "**Particle:** the size of the box is ignored, so it does not rotate and all forces act at one point; air resistance is ignored.\n\n**Light rope:** the mass of the rope is ignored, so the tension is the same all the way along it.\n\n**Inextensible rope:** the rope does not stretch, so the box moves with the same acceleration as the end of the rope being pulled.\n\n**Smooth floor:** there is no friction. In reality friction would act, so the model will **overestimate** the acceleration of the box."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Converts km h$^{-1}$ to $\\text{m s}^{-1}$ by dividing by 60 (or multiplying by 3.6), e.g. $72\\text{ km h}^{-1} = 72 \\div 60 = 1.2\\text{ m s}^{-1}$ or $72 \\times 3.6 = 259.2\\text{ m s}^{-1}$.",
+    "correction": "Multiply by 1000 (km to m) and divide by 3600 (hours to seconds), which is the same as dividing by 3.6: $72 \\div 3.6 = 20$ $\\text{m s}^{-1}$. Sense check: 20 $\\text{m s}^{-1}$ is a sensible car speed; 259 $\\text{m s}^{-1}$ is not."
+   },
+   {
+    "id": "m2",
+    "text": "Treats distance and displacement (speed and velocity) as the same: a runner completes one 400 m lap in 80 s and the student says the average velocity is $\\frac{400}{80} = 5$ $\\text{m s}^{-1}$.",
+    "correction": "The runner finishes where they started, so the displacement is 0 m and the average velocity is $0$ $\\text{m s}^{-1}$. The average **speed** is $\\frac{400}{80} = 5$ $\\text{m s}^{-1}$. Velocity and displacement are vectors and depend only on start and end positions."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses mass and weight, e.g. says \"the box weighs 5 kg so its weight is $W = 5$ N\", or uses the weight in place of the mass in $F = ma$.",
+    "correction": "Mass (kg) is the amount of matter; weight (N) is the force of gravity on it: $W = mg = 5 \\times 9.8 = 49$ N. In $F = ma$ the $m$ is the mass in kg."
+   },
+   {
+    "id": "m4",
+    "text": "Mixes up \"light\" and \"inextensible\", e.g. writes \"the string is light, so both particles have the same acceleration\".",
+    "correction": "**Inextensible** (does not stretch) is what makes the accelerations equal. **Light** (mass negligible) is what makes the tension the same throughout the string. Each assumption must be matched to its own consequence."
+   }
+  ]
+ },
+ {
+  "id": "mech-kinematics-graphs",
+  "prerequisites": [
+   "mech-modelling-units",
+   "alg-real-life-graphs",
+   "alg-gradient-area-under-graph"
+  ],
+  "keyIdea": "**Displacement–time graph:** gradient $=$ velocity. A straight line means constant velocity; a horizontal line means at rest; a negative gradient means moving back towards the start.\n\n**Velocity–time graph:**\n* gradient $=$ acceleration, $a = \\dfrac{v - u}{t}$; a horizontal line means **constant velocity**, not at rest\n* area between the graph and the $t$-axis $=$ displacement. Area **below** the axis counts as negative displacement\n* total **distance** $=$ sum of the sizes of all the areas.\n\n**Acceleration–time graph:** area $=$ change in velocity.\n\nSplit areas into triangles, rectangles and trapezia; a trapezium gives $s = \\frac{1}{2}(u + v)t$. A speed–time graph never goes below the axis.",
+  "workedExamples": [
+   {
+    "question": "A car starts from rest and accelerates uniformly to 15 $\\text{m s}^{-1}$ in 6 s. It then travels at 15 $\\text{m s}^{-1}$ for $T$ seconds and finally decelerates uniformly to rest in 4 s. The total distance travelled is 345 m.\n\n(a) Find the acceleration in the first 6 s.\n\n(b) Find $T$.",
+    "solution": "Sketch the velocity–time graph: a trapezium with top side $T$ and base $T + 10$.\n\n(a) Gradient of the first section:\n$$a = \\frac{15 - 0}{6} = 2.5\\text{ m s}^{-2}$$\n\n(b) Area of the trapezium $=$ distance:\n$$\\frac{1}{2}\\big(T + (T + 10)\\big) \\times 15 = 345$$\n$$(2T + 10) \\times 7.5 = 345 \\quad\\Rightarrow\\quad 2T + 10 = 46 \\quad\\Rightarrow\\quad T = 18$$\n\nCheck: $\\frac{1}{2}(6)(15) + 18(15) + \\frac{1}{2}(4)(15) = 45 + 270 + 30 = 345$ ✓"
+   },
+   {
+    "question": "The velocity of a particle decreases uniformly from 6 $\\text{m s}^{-1}$ at $t = 0$ to $-4$ $\\text{m s}^{-1}$ at $t = 5$. Find (a) when the particle is at rest, (b) its displacement and (c) the distance it travels over the 5 seconds.",
+    "solution": "(a) Gradient $= \\frac{-4 - 6}{5} = -2$, so $v = 6 - 2t$. At rest when $v = 0$: $t = 3$ s.\n\n(b) Triangle above the axis (from $t = 0$ to 3): $\\frac{1}{2}(3)(6) = 9$.\nTriangle below the axis (from $t = 3$ to 5): $\\frac{1}{2}(2)(4) = 4$, which counts as $-4$.\nDisplacement $= 9 - 4 = 5$ m.\n\n(c) Distance $= 9 + 4 = 13$ m."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a horizontal line on a velocity–time graph means the object is stationary.",
+    "correction": "On a $v$–$t$ graph a horizontal line means the velocity is **constant** (zero acceleration). The object is at rest only where $v = 0$ (on the $t$-axis), or where a **displacement**–time graph is horizontal."
+   },
+   {
+    "id": "m2",
+    "text": "Counts area below the $t$-axis as positive displacement, e.g. displacement $= 9 + 4 = 13$ m for a particle that travels 9 m forwards then 4 m back.",
+    "correction": "Area below the axis is displacement in the negative direction: displacement $= 9 - 4 = 5$ m. The total **distance** is $9 + 4 = 13$ m. Decide which one the question asks for."
+   },
+   {
+    "id": "m3",
+    "text": "Finds acceleration by dividing a coordinate by a coordinate instead of using changes: for a line from $(4, 10)$ to $(10, 22)$ writes $a = \\frac{22}{10} = 2.2$ $\\text{m s}^{-2}$.",
+    "correction": "Acceleration is change in velocity over change in time: $a = \\dfrac{22 - 10}{10 - 4} = \\dfrac{12}{6} = 2$ $\\text{m s}^{-2}$. The graph does not pass through the origin, so $\\frac{v}{t}$ is not the gradient."
+   },
+   {
+    "id": "m4",
+    "text": "Reads a straight line sloping downwards on a displacement–time graph as \"slowing down\" (deceleration).",
+    "correction": "A straight line has constant gradient, so the velocity is constant and the acceleration is zero. A negative gradient means the velocity is negative: the object is moving back towards its starting point at constant speed."
+   }
+  ]
+ },
+ {
+  "id": "mech-suvat",
+  "prerequisites": [
+   "mech-kinematics-graphs",
+   "alg-rearranging-formulae",
+   "alg-quadratic-formula"
+  ],
+  "keyIdea": "For **constant acceleration** in a straight line, with $s$ displacement, $u$ initial velocity, $v$ final velocity, $a$ acceleration, $t$ time:\n$$v = u + at \\qquad s = \\frac{(u + v)}{2}t \\qquad v^2 = u^2 + 2as$$\n$$s = ut + \\frac{1}{2}at^2 \\qquad s = vt - \\frac{1}{2}at^2$$\n**Derivation:** on a $v$–$t$ graph the gradient is $a = \\frac{v - u}{t}$, giving $v = u + at$; the trapezium area gives $s = \\frac{(u+v)}{2}t$. Substituting one into the other gives the rest.\n\n**Method:** choose a positive direction, list $s, u, v, a, t$, mark the three you know, and pick the equation without the one you don't need. A deceleration is a negative $a$.\n\n**Multi-stage motion:** each stage has its own constant $a$; the final $v$ of one stage is the $u$ of the next.",
+  "workedExamples": [
+   {
+    "question": "A train starts from rest at station A and accelerates uniformly at 0.5 $\\text{m s}^{-2}$ for 40 s. It then decelerates uniformly and comes to rest at station B. The distance AB is 1000 m. Find the deceleration and the total journey time.",
+    "solution": "**Stage 1:** $u = 0$, $a = 0.5$, $t = 40$.\n$$v = u + at = 0 + 0.5 \\times 40 = 20\\text{ m s}^{-1}$$\n$$s_1 = ut + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(0.5)(40^2) = 400\\text{ m}$$\n\n**Stage 2:** $u = 20$ (the final speed of stage 1), $v = 0$, $s = 1000 - 400 = 600$.\n$$v^2 = u^2 + 2as: \\quad 0 = 400 + 2a(600) \\quad\\Rightarrow\\quad a = -\\frac{1}{3}$$\nSo the deceleration is $\\frac{1}{3}$ $\\text{m s}^{-2}$ $\\approx 0.333$ $\\text{m s}^{-2}$.\n$$t_2 = \\frac{v - u}{a} = \\frac{0 - 20}{-\\frac{1}{3}} = 60\\text{ s}$$\n\nTotal time $= 40 + 60 = 100$ s."
+   },
+   {
+    "question": "Car P moves along a straight road at a constant 20 $\\text{m s}^{-1}$. At $t = 0$ it passes car Q, which is at rest. At that instant Q sets off in the same direction with constant acceleration 2.5 $\\text{m s}^{-2}$. Find when Q catches P and Q's speed at that time.",
+    "solution": "Both start at the same point at $t = 0$.\n\nP: $s = 20t$. Q: $s = 0 \\times t + \\frac{1}{2}(2.5)t^2 = 1.25t^2$.\n\nQ catches P when the displacements are equal:\n$$1.25t^2 = 20t \\quad\\Rightarrow\\quad t(1.25t - 20) = 0$$\n$t = 0$ is the start, so $t = 16$ s.\n\nQ's speed: $v = u + at = 0 + 2.5 \\times 16 = 40$ $\\text{m s}^{-1}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses one suvat equation across a whole multi-stage journey, e.g. for the train above writes $1000 = \\frac{1}{2}(0.5)t^2$ and gets $t \\approx 63.2$ s.",
+    "correction": "suvat only holds while the acceleration is constant. Split the journey into stages at every change of acceleration, solve each stage separately and add the times: $40 + 60 = 100$ s."
+   },
+   {
+    "id": "m2",
+    "text": "Enters a deceleration as a positive acceleration: a car at 25 $\\text{m s}^{-1}$ brakes with deceleration 5 $\\text{m s}^{-2}$ and the student writes $0 = 25^2 + 2(5)s$, getting $s = -62.5$ m.",
+    "correction": "With the direction of motion positive, a deceleration of 5 $\\text{m s}^{-2}$ means $a = -5$: $0 = 625 + 2(-5)s \\Rightarrow s = 62.5$ m. A negative distance for a car moving forwards is a warning sign."
+   },
+   {
+    "id": "m3",
+    "text": "Square roots term by term: from $v^2 = u^2 + 2as$ with $u = 3$, $a = 2$, $s = 4$ writes $v = u + \\sqrt{2as} = 3 + 4 = 7$ $\\text{m s}^{-1}$.",
+    "correction": "$\\sqrt{A + B} \\ne \\sqrt{A} + \\sqrt{B}$. Work out the right-hand side first: $v^2 = 9 + 16 = 25$, so $v = 5$ $\\text{m s}^{-1}$."
+   },
+   {
+    "id": "m4",
+    "text": "Sets $u = 0$ at the start of every stage, e.g. for stage 2 of the train writes $0^2 = 0^2 + 2a(600)$.",
+    "correction": "$u = 0$ only when the object starts from rest. At the start of stage 2 the train is moving at the final velocity of stage 1, so $u = 20$ $\\text{m s}^{-1}$."
+   }
+  ]
+ },
+ {
+  "id": "mech-vertical-motion",
+  "prerequisites": [
+   "mech-suvat"
+  ],
+  "keyIdea": "An object moving freely under gravity (air resistance ignored) has constant acceleration $g = 9.8$ $\\text{m s}^{-2}$ **downwards**, whether it is going up, at the top, or coming down, and whatever its mass. So suvat applies.\n\n* Choose a positive direction (usually **up** for an object projected upwards); then $a = -9.8$.\n* **Free fall** from rest: $u = 0$.\n* **Greatest height:** $v = 0$, giving $H = \\dfrac{u^2}{2g}$ after time $\\dfrac{u}{g}$.\n* **Time of flight:** returns to the launch level when $s = 0$; lands $h$ m **below** the launch point when $s = -h$.\n* Symmetry: going up and coming back down to the same level take equal times, and the speed is the same at the same height.\n\nWith $g = 9.8$, give answers to 2 or 3 significant figures.",
+  "workedExamples": [
+   {
+    "question": "A ball is projected vertically upwards at 19.6 $\\text{m s}^{-1}$ from a point 24.5 m above the ground.\n\n(a) Find the greatest height of the ball above the ground.\n\n(b) Find the time taken to reach the ground and the speed of the ball as it hits the ground.",
+    "solution": "Take up as positive: $u = 19.6$, $a = -9.8$.\n\n(a) At the top $v = 0$:\n$$0 = 19.6^2 + 2(-9.8)s \\quad\\Rightarrow\\quad s = \\frac{384.16}{19.6} = 19.6\\text{ m}$$\nHeight above the ground $= 19.6 + 24.5 = 44.1$ m.\n\n(b) The ground is 24.5 m **below** the launch point, so $s = -24.5$:\n$$-24.5 = 19.6t - 4.9t^2 \\quad\\Rightarrow\\quad 4.9t^2 - 19.6t - 24.5 = 0$$\n$$t^2 - 4t - 5 = 0 \\quad\\Rightarrow\\quad (t - 5)(t + 1) = 0$$\n$t > 0$, so $t = 5$ s.\n$$v = u + at = 19.6 - 9.8 \\times 5 = -29.4$$\nThe ball hits the ground at 29.4 $\\text{m s}^{-1}$ (moving downwards)."
+   },
+   {
+    "question": "For the ball in the previous example, find the length of time for which it is at least 14.7 m above its point of projection.",
+    "solution": "Take up as positive and set $s = 14.7$:\n$$14.7 = 19.6t - 4.9t^2 \\quad\\Rightarrow\\quad 4.9t^2 - 19.6t + 14.7 = 0 \\quad\\Rightarrow\\quad t^2 - 4t + 3 = 0$$\n$$(t - 1)(t - 3) = 0 \\quad\\Rightarrow\\quad t = 1 \\text{ or } t = 3$$\nIt passes this height going up at $t = 1$ and coming down at $t = 3$, so it is at least 14.7 m above the point of projection for $3 - 1 = 2$ s."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks the acceleration is zero at the greatest height because the velocity is zero there.",
+    "correction": "At the top $v = 0$ but gravity still acts, so $a = 9.8$ $\\text{m s}^{-2}$ downwards throughout. If the acceleration were zero the object would stay at the top."
+   },
+   {
+    "id": "m2",
+    "text": "Uses inconsistent signs: takes up as positive for $u$ but uses $a = +9.8$, e.g. $0 = 19.6^2 + 2(9.8)s$, giving $s = -19.6$ m.",
+    "correction": "Once up is positive, everything pointing down is negative: $a = -9.8$. Then $0 = 19.6^2 - 19.6s$, so $s = 19.6$ m."
+   },
+   {
+    "id": "m3",
+    "text": "When the object lands below its point of projection, uses $s = +24.5$ (or $s = 0$) instead of $s = -24.5$.",
+    "correction": "$s$ is displacement from the point of projection. The ground is 24.5 m below it, so with up positive $s = -24.5$. Using $s = 0$ gives the time to return to the launch level instead."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks heavier objects have a greater acceleration when falling, e.g. for a 2 kg ball writes $a = mg = 2 \\times 9.8 = 19.6$ $\\text{m s}^{-2}$.",
+    "correction": "$mg$ is the weight (a force). By $F = ma$, $mg = ma$, so $a = g = 9.8$ $\\text{m s}^{-2}$ for every mass (ignoring air resistance)."
+   }
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration",
+  "prerequisites": [
+   "mech-kinematics-graphs",
+   "calc-differentiation-basics",
+   "calc-integration-basics",
+   "calc-definite-integrals-area"
+  ],
+  "keyIdea": "When acceleration varies with time, suvat does **not** apply. Use calculus:\n$$v = \\frac{ds}{dt}, \\qquad a = \\frac{dv}{dt} = \\frac{d^2s}{dt^2}$$\n$$s = \\int v\\,dt, \\qquad v = \\int a\\,dt$$\nEach integration needs a **constant**, found from given conditions (e.g. $v = 5$ when $t = 0$).\n\n* At rest: $v = 0$. Changes direction where $v$ changes sign.\n* Maximum or minimum velocity: $a = 0$.\n* Displacement from $t_1$ to $t_2$: $\\int_{t_1}^{t_2} v\\,dt$. **Distance:** split the interval wherever $v = 0$ and add the sizes of the pieces.\n* **Speeding up** when $v$ and $a$ have the same sign; **slowing down** when their signs are opposite (US: position $x(t)$, AP particle motion).",
+  "workedExamples": [
+   {
+    "question": "A particle moves in a straight line. At time $t$ seconds its velocity is $v = 3t^2 - 12t + 9$ $\\text{m s}^{-1}$, $t \\ge 0$. It starts at O.\n\n(a) Find its acceleration when $t = 4$.\n\n(b) Find the times when it is at rest.\n\n(c) Find the distance travelled in the first 3 seconds.\n\n(d) Is the particle speeding up or slowing down when $t = 2.5$?",
+    "solution": "(a) $a = \\dfrac{dv}{dt} = 6t - 12$, so at $t = 4$: $a = 12$ $\\text{m s}^{-2}$.\n\n(b) $3t^2 - 12t + 9 = 0 \\Rightarrow 3(t - 1)(t - 3) = 0$, so $t = 1$ s and $t = 3$ s.\n\n(c) $s = \\int (3t^2 - 12t + 9)\\,dt = t^3 - 6t^2 + 9t + c$, and $s = 0$ at $t = 0$ gives $c = 0$.\n$s(1) = 1 - 6 + 9 = 4$ and $s(3) = 27 - 54 + 27 = 0$.\nIt moves 4 m out to $t = 1$, then 4 m back. Distance $= 4 + 4 = 8$ m (although the displacement is 0).\n\n(d) $v(2.5) = 18.75 - 30 + 9 = -2.25$ and $a(2.5) = 15 - 12 = 3$. The signs are opposite, so it is **slowing down**."
+   },
+   {
+    "question": "A particle starts from rest at O. Its acceleration is $a = 6 - 2t$ $\\text{m s}^{-2}$. Find its maximum velocity and its displacement from O when $t = 6$.",
+    "solution": "$v = \\int (6 - 2t)\\,dt = 6t - t^2 + c$; $v = 0$ at $t = 0$ so $c = 0$.\n\nMaximum velocity when $a = 0$: $t = 3$, so $v = 18 - 9 = 9$ $\\text{m s}^{-1}$.\n\n$s = \\int (6t - t^2)\\,dt = 3t^2 - \\dfrac{t^3}{3} + k$; $s = 0$ at $t = 0$ so $k = 0$.\n$$s(6) = 108 - 72 = 36\\text{ m}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses suvat when the acceleration varies, e.g. with $a = 6 - 2t$ from rest takes $a = 6$ and writes $v = u + at = 6 \\times 3 = 18$ $\\text{m s}^{-1}$ at $t = 3$.",
+    "correction": "suvat needs constant acceleration. Integrate instead: $v = 6t - t^2$, so $v(3) = 9$ $\\text{m s}^{-1}$."
+   },
+   {
+    "id": "m2",
+    "text": "Leaves out (or assumes zero) the constant of integration: given $a = 4t$ and $v = 5$ when $t = 0$, writes $v = 2t^2$ and gets $v = 8$ $\\text{m s}^{-1}$ at $t = 2$.",
+    "correction": "$v = 2t^2 + c$ and $v = 5$ at $t = 0$ gives $c = 5$, so $v = 2t^2 + 5$ and $v(2) = 13$ $\\text{m s}^{-1}$. The constant is zero only if the initial value is zero."
+   },
+   {
+    "id": "m3",
+    "text": "Finds the distance by integrating straight across a change of direction, e.g. $\\int_0^3 (3t^2 - 12t + 9)\\,dt = 0$, so \"distance $= 0$ m\".",
+    "correction": "The integral gives displacement. Find where $v = 0$ (at $t = 1$), integrate over $[0, 1]$ and $[1, 3]$ separately and add the sizes: $4 + 4 = 8$ m."
+   },
+   {
+    "id": "m4",
+    "text": "Decides speeding up or slowing down from the sign of $a$ alone: \"$a = 3 > 0$, so the particle is speeding up\" when $v = -2.25$.",
+    "correction": "Speed increases when $v$ and $a$ have the **same** sign. Here $v < 0$ and $a > 0$, so the particle is slowing down."
+   }
+  ]
+ },
+ {
+  "id": "mech-forces-newtons-laws",
+  "prerequisites": [
+   "mech-modelling-units",
+   "mech-suvat",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "**Newton's first law:** a body stays at rest or moves with constant velocity unless a resultant force acts.\n**Second law:** $F = ma$, where $F$ is the **resultant** force, in the direction of the acceleration.\n**Third law:** if A exerts a force on B, then B exerts an equal and opposite force on A. The two forces act on **different** bodies.\n\nForces: weight $W = mg$ (down), normal reaction $R$ (perpendicular to the surface), tension or thrust, friction, resistance, driving force.\n\n**Method:** draw a force diagram, then resolve in the direction of the acceleration:\n$$(\\text{forces with } a) - (\\text{forces against } a) = ma$$\n**Lifts:** for a person of mass $m$, $R - mg = ma$ when accelerating upwards, so $R = m(g + a)$; accelerating downwards $R = m(g - a)$; constant velocity $R = mg$.",
+  "workedExamples": [
+   {
+    "question": "A lift of mass 500 kg carries a woman of mass 60 kg. The lift is raised by a vertical cable and accelerates upwards at 0.5 $\\text{m s}^{-2}$. Find the tension in the cable and the normal reaction on the woman from the floor.",
+    "solution": "**Whole system** (mass $560$ kg), upwards positive:\n$$T - 560g = 560 \\times 0.5$$\n$$T = 560(9.8 + 0.5) = 5768\\text{ N}$$\n\n**Woman only:** forces are $R$ up and $60g$ down.\n$$R - 60g = 60 \\times 0.5 \\quad\\Rightarrow\\quad R = 60 \\times 10.3 = 618\\text{ N}$$\n$R$ is larger than her weight ($588$ N) because she is accelerating upwards."
+   },
+   {
+    "question": "A car of mass 1200 kg starts from rest on a straight horizontal road. The engine gives a driving force of 3000 N and the total resistance is a constant 600 N.\n\n(a) Find the distance travelled in the first 10 s.\n\n(b) After 10 s the engine is switched off. How much further does the car travel before stopping?",
+    "solution": "(a) Resultant force $= 3000 - 600 = 2400$ N.\n$$2400 = 1200a \\quad\\Rightarrow\\quad a = 2\\text{ m s}^{-2}$$\n$$s = ut + \\tfrac{1}{2}at^2 = 0 + \\tfrac{1}{2}(2)(10^2) = 100\\text{ m}$$\nSpeed at 10 s: $v = 0 + 2 \\times 10 = 20$ $\\text{m s}^{-1}$.\n\n(b) Only the resistance acts: $-600 = 1200a$, so $a = -0.5$ $\\text{m s}^{-2}$.\n$$0 = 20^2 + 2(-0.5)s \\quad\\Rightarrow\\quad s = 400\\text{ m}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Believes a moving object needs a resultant force in its direction of motion, e.g. \"the car moves at a constant 25 $\\text{m s}^{-1}$, so the driving force must be greater than the 600 N resistance\".",
+    "correction": "Constant velocity means $a = 0$, so the resultant force is zero (Newton's first law). The driving force equals the resistance: exactly 600 N."
+   },
+   {
+    "id": "m2",
+    "text": "Uses one force instead of the resultant in $F = ma$, e.g. $a = \\frac{3000}{1200} = 2.5$ $\\text{m s}^{-2}$, ignoring the 600 N resistance.",
+    "correction": "$F$ in $F = ma$ is the **resultant**: $3000 - 600 = 2400$ N, so $a = \\frac{2400}{1200} = 2$ $\\text{m s}^{-2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Assumes the reaction in a lift always equals the weight, $R = 60g = 588$ N, or writes $60g - R = 60a$ for upward acceleration.",
+    "correction": "Resolve in the direction of the acceleration. Upwards: $R - 60g = 60(0.5)$, so $R = 618$ N. $R = mg$ only when the lift is at rest or moving at constant velocity."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks the weight of a book on a table and the normal reaction on the book form a Newton's third law pair.",
+    "correction": "Both forces act on the **same** body (the book), so they cannot be a third-law pair; they balance because the book is in equilibrium. The partner of the book's weight is the book's gravitational pull on the Earth; the partner of the reaction is the book pushing down on the table."
+   }
+  ]
+ },
+ {
+  "id": "mech-connected-particles",
+  "prerequisites": [
+   "mech-forces-newtons-laws",
+   "alg-simultaneous-linear"
+  ],
+  "keyIdea": "Particles joined by a **light, inextensible** string that passes over a **smooth** pulley or peg have:\n* the same magnitude of acceleration (and speed), because the string is inextensible\n* the same tension throughout the string, because it is light and the pulley is smooth.\n\n**Method:** draw a force diagram for each particle and write $F = ma$ for each in its **own** direction of motion. Solve simultaneously (adding the equations eliminates $T$).\n\n**Whole system:** treat the particles as one body of total mass; tensions are internal and cancel. This quickly gives $a$; then use one particle to find $T$.\n\n**Towing:** a car and trailer share the same acceleration; the tow bar is in tension (or thrust when braking).\n\nForce on a pulley $=$ resultant of the two tensions ($2T$ for vertical strings). If the string goes slack, $T = 0$ and each particle moves independently.",
+  "workedExamples": [
+   {
+    "question": "Particles A of mass 5 kg and B of mass 3 kg are attached to the ends of a light inextensible string passing over a smooth fixed pulley. They hang vertically and are released from rest. Find the acceleration of the particles, the tension in the string and the force exerted on the pulley.",
+    "solution": "A moves down and B moves up with acceleration $a$.\n\nA (down positive): $5g - T = 5a$\n\nB (up positive): $T - 3g = 3a$\n\nAdd the equations: $2g = 8a$, so $a = \\dfrac{g}{4} = 2.45$ $\\text{m s}^{-2}$.\n\nThen $T = 3g + 3a = 3(9.8 + 2.45) = 36.75$ N.\n\nBoth parts of the string pull down on the pulley, so the force on it is $2T = 73.5$ N vertically downwards."
+   },
+   {
+    "question": "A car of mass 1200 kg tows a trailer of mass 400 kg along a straight horizontal road using a light rigid tow bar. The resistances are 400 N on the car and 200 N on the trailer, and the engine's driving force is 2400 N. Find the acceleration and the tension in the tow bar.",
+    "solution": "**Whole system** (1600 kg); the tension is internal:\n$$2400 - 400 - 200 = 1600a \\quad\\Rightarrow\\quad a = \\frac{1800}{1600} = 1.125\\text{ m s}^{-2}$$\n\n**Trailer only:** the tow bar pulls it forwards with tension $T$.\n$$T - 200 = 400 \\times 1.125 = 450 \\quad\\Rightarrow\\quad T = 650\\text{ N}$$\n\nCheck with the car: $2400 - 400 - 650 = 1350 = 1200 \\times 1.125$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Includes the tension as an external force when treating the whole system, e.g. $2400 - 600 - T = 1600a$.",
+    "correction": "For the whole system the tension is internal: it pulls the car back and the trailer forward by the same amount, so it cancels. Use $2400 - 600 = 1600a$. Bring $T$ in only when looking at one body."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes the tension equals the weight of the hanging particle, e.g. $T = 3g = 29.4$ N for B in the pulley system.",
+    "correction": "$T = 3g$ only if B is in equilibrium. B accelerates upwards, so $T - 3g = 3a$ and $T = 36.75$ N, more than its weight (and less than A's weight)."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong mass in the system equation, e.g. $(5 - 3)g = (5 - 3)a$, giving $a = g$, or $2g = 5a$.",
+    "correction": "The resultant force $(5 - 3)g = 2g$ accelerates **both** particles, so the mass is the total: $2g = (5 + 3)a$, giving $a = \\frac{g}{4}$."
+   },
+   {
+    "id": "m4",
+    "text": "After the hanging particle hits the floor, assumes the particle on a smooth table stops at once, or keeps the same acceleration.",
+    "correction": "When the string goes slack $T = 0$. On a smooth horizontal table no horizontal force acts, so the particle moves on at **constant speed** equal to its speed at that moment (e.g. $v^2 = 2(1.96)(0.5)$ gives 1.4 $\\text{m s}^{-1}$), until it reaches the pulley or the string becomes taut again."
+   }
+  ]
+ },
+ {
+  "id": "mech-resolving-equilibrium",
+  "prerequisites": [
+   "mech-forces-newtons-laws",
+   "geo-trig-right-angled",
+   "geo-vectors"
+  ],
+  "keyIdea": "A force $F$ at angle $\\theta$ to a direction has component $F\\cos\\theta$ **along** that direction and $F\\sin\\theta$ **perpendicular** to it.\n\n**Resultant:** add components, $X = \\sum F_x$ and $Y = \\sum F_y$; then $|R| = \\sqrt{X^2 + Y^2}$ at angle $\\tan^{-1}\\left(\\frac{Y}{X}\\right)$ to the $x$-direction.\n\n**Equilibrium:** the resultant is zero, so the components sum to zero in **any two perpendicular directions**.\n\n**Inclined plane** at angle $\\alpha$: resolve parallel and perpendicular to the slope. The weight splits into $mg\\sin\\alpha$ down the slope and $mg\\cos\\alpha$ into the slope, so $R = mg\\cos\\alpha$ only when no other force has a perpendicular component.\n\nIf the particle accelerates, resolve along the motion: resultant $= ma$; perpendicular to the motion the forces still balance.\n\nUse exact ratios: $\\tan\\alpha = \\frac{3}{4}$ gives $\\sin\\alpha = \\frac{3}{5}$, $\\cos\\alpha = \\frac{4}{5}$.",
+  "workedExamples": [
+   {
+    "question": "A particle of mass 4 kg rests on a smooth plane inclined at angle $\\alpha$ to the horizontal, where $\\tan\\alpha = \\frac{3}{4}$. It is held in equilibrium by a horizontal force of magnitude $P$ N acting in the vertical plane containing a line of greatest slope, as shown. Find $P$ and the normal reaction $R$.",
+    "solution": "$\\tan\\alpha = \\frac{3}{4}$, so $\\sin\\alpha = \\frac{3}{5}$ and $\\cos\\alpha = \\frac{4}{5}$.\n\n**Parallel to the slope** (up the slope positive): $P$ has component $P\\cos\\alpha$ up the slope; the weight has $4g\\sin\\alpha$ down it.\n$$P\\cos\\alpha = 4g\\sin\\alpha \\quad\\Rightarrow\\quad \\tfrac{4}{5}P = \\tfrac{12}{5}g \\quad\\Rightarrow\\quad P = 3g = 29.4\\text{ N}$$\n\n**Perpendicular to the slope:** $P$ pushes into the slope with component $P\\sin\\alpha$, and so does the weight with $4g\\cos\\alpha$.\n$$R = 4g\\cos\\alpha + P\\sin\\alpha = \\tfrac{16}{5}g + \\tfrac{9}{5}g = 5g = 49\\text{ N}$$\nNote $R \\ne 4g\\cos\\alpha$ here, because $P$ also has a component perpendicular to the plane.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><polygon points=\"20,240 300,240 300,30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 288 240 L 288 228 L 300 228\" fill=\"none\" stroke=\"currentColor\"/><path d=\"M 60 240 A 40 40 0 0 0 52 216\" fill=\"none\" stroke=\"currentColor\"/><text x=\"66\" y=\"234\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">α</text><circle cx=\"160\" cy=\"135\" r=\"5\" fill=\"currentColor\"/><line x1=\"160\" y1=\"135\" x2=\"160\" y2=\"188\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"160,197 155,187 165,187\" fill=\"currentColor\"/><text x=\"167\" y=\"196\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">4g N</text><line x1=\"160\" y1=\"135\" x2=\"129\" y2=\"94\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"124,87 134,92 126,98\" fill=\"currentColor\"/><text x=\"106\" y=\"86\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><line x1=\"88\" y1=\"135\" x2=\"149\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"156,135 146,130 146,140\" fill=\"currentColor\"/><text x=\"88\" y=\"127\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text></svg>"
+   },
+   {
+    "question": "A particle of mass 5 kg hangs in equilibrium from two light strings. One string makes an angle of $30^\\circ$ with the horizontal and has tension $T_1$; the other makes an angle of $60^\\circ$ with the horizontal and has tension $T_2$. Find $T_1$ and $T_2$.",
+    "solution": "**Horizontally:** $T_1\\cos 30^\\circ = T_2\\cos 60^\\circ$, so $\\frac{\\sqrt{3}}{2}T_1 = \\frac{1}{2}T_2$, giving $T_2 = \\sqrt{3}\\,T_1$.\n\n**Vertically:** $T_1\\sin 30^\\circ + T_2\\sin 60^\\circ = 5g$\n$$\\tfrac{1}{2}T_1 + \\sqrt{3}\\,T_1 \\times \\tfrac{\\sqrt{3}}{2} = 5g \\quad\\Rightarrow\\quad 2T_1 = 5g$$\n$$T_1 = 2.5g = 24.5\\text{ N}, \\qquad T_2 = 24.5\\sqrt{3} = 42.4\\text{ N (3 s.f.)}$$\nThe steeper string carries the greater tension."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Swaps sine and cosine for the weight on a slope, writing the component down the slope as $mg\\cos\\alpha$ and into the slope as $mg\\sin\\alpha$.",
+    "correction": "The component down the slope is $mg\\sin\\alpha$. Check with extremes: if $\\alpha = 0^\\circ$ (flat ground) there is no pull down the slope, and $\\sin 0^\\circ = 0$ ✓."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes the normal reaction always equals $mg$ (or always $mg\\cos\\alpha$), e.g. $R = 4g\\cos\\alpha = 31.36$ N even when a horizontal force $P$ also pushes into the plane.",
+    "correction": "Find $R$ by resolving perpendicular to the surface every time and include **every** force with a perpendicular component: $R = 4g\\cos\\alpha + P\\sin\\alpha = 49$ N."
+   },
+   {
+    "id": "m3",
+    "text": "Adds the magnitudes of forces that act in different directions, e.g. a 3 N force east and a 4 N force north give a resultant of 7 N.",
+    "correction": "Forces are vectors; combine components: $|R| = \\sqrt{3^2 + 4^2} = 5$ N at $\\tan^{-1}\\left(\\frac{4}{3}\\right) = 53.1^\\circ$ north of east."
+   },
+   {
+    "id": "m4",
+    "text": "Assumes two supporting strings have equal tensions, e.g. $T_1 = T_2 = \\frac{5g}{2} = 24.5$ N for strings at $30^\\circ$ and $60^\\circ$ to the horizontal.",
+    "correction": "Tensions are equal only when the arrangement is symmetrical. Resolve horizontally and vertically: $T_2 = \\sqrt{3}\\,T_1$, giving $T_1 = 24.5$ N and $T_2 = 42.4$ N."
+   }
+  ]
+ },
+ {
+  "id": "mech-friction",
+  "prerequisites": [
+   "mech-resolving-equilibrium"
+  ],
+  "keyIdea": "Friction acts along the surface, opposing motion or the **tendency** to move.\n$$F \\le \\mu R$$\nwhere $\\mu$ is the coefficient of friction ($\\mu = 0$ means smooth) and $R$ is the normal reaction.\n\n* **Before slipping**, $F$ is only as large as needed to keep equilibrium.\n* **Limiting equilibrium** (on the point of moving) or **sliding**: $F = \\mu R$.\n\n**Method:** resolve perpendicular to the surface to find $R$ first (it is not always $mg$), then use $F = \\mu R$ if limiting, then resolve along the surface ($= 0$ in equilibrium, $= ma$ if moving).\n\n**Direction on a slope:** on the point of sliding down, friction acts **up** the slope; on the point of being pushed up, friction acts **down** the slope. This gives a range of forces for equilibrium.\n\nA particle resting on a rough slope with only $W$, $R$ and $F$ acting, in limiting equilibrium, has $\\mu = \\tan\\alpha$.",
+  "workedExamples": [
+   {
+    "question": "A box of mass 5 kg rests on rough horizontal ground, with coefficient of friction 0.4. It is pulled by a force of 30 N at $20^\\circ$ above the horizontal. Find the acceleration of the box.",
+    "solution": "**Vertically** (no vertical motion):\n$$R + 30\\sin 20^\\circ = 5g \\quad\\Rightarrow\\quad R = 49 - 10.261 = 38.739\\text{ N}$$\nThe box is sliding, so friction is limiting:\n$$F = \\mu R = 0.4 \\times 38.739 = 15.496\\text{ N}$$\n**Horizontally:**\n$$30\\cos 20^\\circ - F = 5a \\quad\\Rightarrow\\quad 28.191 - 15.496 = 5a$$\n$$a = 2.54\\text{ m s}^{-2}\\text{ (3 s.f.)}$$\nCheck that it does move: $28.191 > 15.496$ ✓"
+   },
+   {
+    "question": "A particle of mass 2 kg rests on a rough plane inclined at $30^\\circ$ to the horizontal, with $\\mu = 0.2$. A force $P$ N acts on the particle up a line of greatest slope. Find the range of values of $P$ for which the particle remains in equilibrium.",
+    "solution": "**Perpendicular:** $R = 2g\\cos 30^\\circ = 16.974$ N, so $\\mu R = 0.2 \\times 16.974 = 3.395$ N.\nWeight component down the slope: $2g\\sin 30^\\circ = 9.8$ N.\n\n**On the point of slipping down** (friction acts up the slope):\n$$P + 3.395 = 9.8 \\quad\\Rightarrow\\quad P = 6.405$$\n\n**On the point of moving up** (friction acts down the slope):\n$$P = 9.8 + 3.395 = 13.195$$\n\nSo $6.41 \\le P \\le 13.2$ (3 s.f.)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $F = \\mu R$ when friction is not limiting: a 10 kg box on rough ground with $\\mu = 0.5$ is pushed by 20 N, and the student writes $F = 0.5 \\times 98 = 49$ N, so $a = \\frac{20 - 49}{10} = -2.9$ $\\text{m s}^{-2}$.",
+    "correction": "$\\mu R = 49$ N is only the **maximum** friction available. The push of 20 N is less than this, so the box stays at rest and friction is just 20 N. Always compare the driving force with $\\mu R$ before using $F = \\mu R$."
+   },
+   {
+    "id": "m2",
+    "text": "Takes $R = mg$ when a pulling force has a vertical component (or on a slope), e.g. $R = 5g = 49$ N for the box pulled at $20^\\circ$.",
+    "correction": "Resolve perpendicular to the surface: $R = 5g - 30\\sin 20^\\circ = 38.7$ N. The upward component of the pull reduces the reaction, and so reduces the friction."
+   },
+   {
+    "id": "m3",
+    "text": "Always puts friction up the slope (or always opposite the applied force), even when the particle is on the point of moving **up** the slope.",
+    "correction": "Friction opposes the way the particle would move. On the point of moving up, friction acts down the slope: $P = mg\\sin\\alpha + \\mu R$. On the point of sliding down, it acts up the slope: $P = mg\\sin\\alpha - \\mu R$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses $\\mu = \\tan\\alpha$ for any particle in limiting equilibrium on a slope, even when an extra force $P$ is acting.",
+    "correction": "$\\mu = \\tan\\alpha$ follows from $mg\\sin\\alpha = \\mu\\, mg\\cos\\alpha$, which is true only when weight, reaction and friction are the **only** forces. With another force, resolve both ways and use $F = \\mu R$."
+   }
+  ]
+ },
+ {
+  "id": "mech-projectiles",
+  "prerequisites": [
+   "mech-vertical-motion",
+   "geo-trig-right-angled",
+   "pure-trig-identities-equations"
+  ],
+  "keyIdea": "A particle projected with speed $U$ at angle $\\theta$ above the horizontal (no air resistance) moves independently in two directions; **time** links them.\n\n* **Horizontal:** constant velocity $U\\cos\\theta$, so $x = Ut\\cos\\theta$.\n* **Vertical:** suvat with $a = -g$: $v_y = U\\sin\\theta - gt$ and $y = Ut\\sin\\theta - \\frac{1}{2}gt^2$.\n\n**Greatest height:** $v_y = 0$, giving $H = \\dfrac{U^2\\sin^2\\theta}{2g}$; the speed there is $U\\cos\\theta$, not zero.\n**Time of flight** (back to launch level, $y = 0$): $T = \\dfrac{2U\\sin\\theta}{g}$.\n**Range:** $\\dfrac{U^2\\sin 2\\theta}{g}$, greatest when $\\theta = 45^\\circ$.\n\n**Trajectory:** eliminate $t$:\n$$y = x\\tan\\theta - \\frac{gx^2}{2U^2\\cos^2\\theta}$$\n**Velocity at time $t$:** speed $\\sqrt{v_x^2 + v_y^2}$, direction $\\tan^{-1}\\frac{v_y}{v_x}$ to the horizontal.",
+  "workedExamples": [
+   {
+    "question": "A ball is projected from a point O on horizontal ground with speed 24.5 $\\text{m s}^{-1}$ at angle $\\alpha$ above the horizontal, where $\\tan\\alpha = \\frac{3}{4}$. Find (a) the time of flight, (b) the range, (c) the greatest height and (d) the speed and direction of motion of the ball 2 s after projection.",
+    "solution": "$\\sin\\alpha = 0.6$, $\\cos\\alpha = 0.8$. Horizontal velocity $= 24.5 \\times 0.8 = 19.6$ $\\text{m s}^{-1}$; initial vertical velocity $= 24.5 \\times 0.6 = 14.7$ $\\text{m s}^{-1}$.\n\n(a) Vertically, $y = 0$ on landing: $0 = 14.7t - 4.9t^2 = 4.9t(3 - t)$, so $t = 3$ s.\n\n(b) Range $= 19.6 \\times 3 = 58.8$ m.\n\n(c) At the top $v_y = 0$: $0 = 14.7^2 - 2(9.8)H$, so $H = \\frac{216.09}{19.6} = 11.0$ m (3 s.f.).\n\n(d) $v_x = 19.6$, $v_y = 14.7 - 9.8 \\times 2 = -4.9$.\n$$\\text{speed} = \\sqrt{19.6^2 + 4.9^2} = \\sqrt{408.17} = 20.2\\text{ m s}^{-1}$$\nDirection: $\\tan^{-1}\\left(\\frac{4.9}{19.6}\\right) = 14.0^\\circ$ **below** the horizontal (it is on the way down)."
+   },
+   {
+    "question": "A particle is projected with speed 14 $\\text{m s}^{-1}$ at $45^\\circ$ above the horizontal from a point O on level ground. Show that its trajectory is $y = x - \\dfrac{x^2}{20}$, and determine whether it clears a vertical wall 4 m high that stands 10 m from O.",
+    "solution": "Horizontal: $x = 14t\\cos 45^\\circ$, so $t = \\dfrac{x}{14\\cos 45^\\circ}$.\n\nVertical: $y = 14t\\sin 45^\\circ - 4.9t^2$. Substituting for $t$:\n$$y = x\\tan 45^\\circ - \\frac{4.9x^2}{196\\cos^2 45^\\circ} = x - \\frac{4.9x^2}{196 \\times \\frac{1}{2}} = x - \\frac{x^2}{20}$$\n\nAt $x = 10$: $y = 10 - \\dfrac{100}{20} = 5$ m.\n$5 > 4$, so the particle clears the wall by 1 m."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the full speed $U$ (or applies gravity) in the horizontal direction, e.g. range $= 24.5 \\times 3 = 73.5$ m.",
+    "correction": "Horizontally only the component $U\\cos\\alpha$ applies and there is no acceleration: range $= 19.6 \\times 3 = 58.8$ m."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the full speed $U$ as the initial vertical velocity, e.g. time to the top $= \\frac{24.5}{9.8} = 2.5$ s.",
+    "correction": "The initial vertical velocity is $U\\sin\\alpha = 14.7$ $\\text{m s}^{-1}$, so the time to the top is $\\frac{14.7}{9.8} = 1.5$ s."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks the velocity (speed) at the greatest height is zero.",
+    "correction": "Only the **vertical** component is zero at the top. The horizontal component is unchanged, so the speed there is $U\\cos\\theta$ (19.6 $\\text{m s}^{-1}$ in the example), which is the minimum speed."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a ball projected horizontally faster takes longer to reach the ground, e.g. \"from a 44.1 m cliff, the ball thrown at 30 $\\text{m s}^{-1}$ stays in the air longer than one thrown at 15 $\\text{m s}^{-1}$\".",
+    "correction": "The initial vertical velocity is 0 for any horizontal projection, so $44.1 = 4.9t^2$ gives $t = 3$ s for both. A faster ball lands **further away**, not later."
+   }
+  ]
+ },
+ {
+  "id": "mech-moments",
+  "prerequisites": [
+   "mech-resolving-equilibrium",
+   "mech-friction"
+  ],
+  "keyIdea": "The **moment** of a force about a point $=$ force $\\times$ **perpendicular** distance from the point to the line of action of the force (units N m), with a sense: clockwise or anticlockwise. For a force $F$ at angle $\\theta$ to a rod, at distance $d$ along the rod, the moment is $Fd\\sin\\theta$.\n\nA **rigid body in equilibrium** needs both:\n* resultant force $= 0$ (resolve), and\n* total clockwise moments $=$ total anticlockwise moments about **any** point.\n\nTake moments about a point where an unknown force acts.\n\n* **Uniform** rod: weight acts at the midpoint. **Non-uniform** rod: weight acts at the centre of mass, often an unknown distance.\n* **On the point of tilting** about one support: the reaction at the **other** support is zero.\n* **Ladders:** smooth wall gives a horizontal reaction; rough ground gives friction and a vertical reaction. Take moments about the foot.",
+  "workedExamples": [
+   {
+    "question": "A uniform plank AB of length 6 m and mass 40 kg rests horizontally on supports at C and D, where $AC = 1$ m and $DB = 2$ m. A man of mass 70 kg stands on the plank 2 m from A.\n\n(a) Find the reactions at C and D.\n\n(b) The man walks towards B. How far from A can he stand before the plank starts to tilt?",
+    "solution": "The plank's weight $40g$ acts at its midpoint, 3 m from A. Distances from A: $C = 1$, man $= 2$, $G = 3$, $D = 4$.\n\n(a) **Moments about C** (eliminates $R_C$):\n$$R_D \\times 3 = 70g \\times 1 + 40g \\times 2 = 150g \\quad\\Rightarrow\\quad R_D = 50g = 490\\text{ N}$$\n**Resolve vertically:** $R_C + R_D = 110g$, so $R_C = 60g = 588$ N.\n\n(b) On the point of tilting about D, the plank lifts off C, so $R_C = 0$. Let the man be $x$ m from A.\n**Moments about D:**\n$$70g(x - 4) = 40g \\times 1 \\quad\\Rightarrow\\quad x - 4 = \\frac{4}{7}$$\n$$x = \\frac{32}{7} = 4.57\\text{ m from A (3 s.f.)}$$",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"340\" height=\"190\"><rect x=\"20\" y=\"90\" width=\"300\" height=\"10\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"70,100 61,116 79,116\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"220,100 211,116 229,116\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"90\" x2=\"70\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"70,38 65,48 75,48\" fill=\"currentColor\"/><text x=\"77\" y=\"50\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R<tspan font-size=\"11\" dy=\"3\">C</tspan></text><line x1=\"220\" y1=\"90\" x2=\"220\" y2=\"47\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"220,38 215,48 225,48\" fill=\"currentColor\"/><text x=\"227\" y=\"50\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R<tspan font-size=\"11\" dy=\"3\">D</tspan></text><line x1=\"120\" y1=\"100\" x2=\"120\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"120,150 115,140 125,140\" fill=\"currentColor\"/><text x=\"126\" y=\"150\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">70g</text><line x1=\"170\" y1=\"100\" x2=\"170\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"170,150 165,140 175,140\" fill=\"currentColor\"/><text x=\"176\" y=\"150\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">40g</text><text x=\"6\" y=\"100\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><text x=\"325\" y=\"100\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"70\" y=\"132\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><text x=\"220\" y=\"132\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text><line x1=\"20\" y1=\"175\" x2=\"320\" y2=\"175\" stroke=\"currentColor\"/><line x1=\"20\" y1=\"169\" x2=\"20\" y2=\"181\" stroke=\"currentColor\"/><line x1=\"70\" y1=\"169\" x2=\"70\" y2=\"181\" stroke=\"currentColor\"/><line x1=\"120\" y1=\"169\" x2=\"120\" y2=\"181\" stroke=\"currentColor\"/><line x1=\"220\" y1=\"169\" x2=\"220\" y2=\"181\" stroke=\"currentColor\"/><line x1=\"320\" y1=\"169\" x2=\"320\" y2=\"181\" stroke=\"currentColor\"/><text x=\"45\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1 m</text><text x=\"95\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1 m</text><text x=\"170\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2 m</text><text x=\"270\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2 m</text></svg>"
+   },
+   {
+    "question": "A uniform ladder of length 4 m and mass 12 kg rests with its foot on rough horizontal ground and its top against a smooth vertical wall. The ladder makes an angle of $60^\\circ$ with the ground and is in limiting equilibrium. Find the coefficient of friction between the ladder and the ground.",
+    "solution": "Forces: weight $12g$ at the midpoint; at the wall a horizontal reaction $S$ (wall smooth); at the ground a vertical reaction $R$ and friction $F$ towards the wall.\n\n**Vertically:** $R = 12g$. **Horizontally:** $F = S$.\n\n**Moments about the foot:** the perpendicular distance to $S$ is $4\\sin 60^\\circ$ and to the weight is $2\\cos 60^\\circ$.\n$$S \\times 4\\sin 60^\\circ = 12g \\times 2\\cos 60^\\circ$$\n$$S \\times 2\\sqrt{3} = 12g \\quad\\Rightarrow\\quad S = 2\\sqrt{3}\\,g = 33.9\\text{ N}$$\n\nLimiting, so $F = \\mu R$:\n$$\\mu = \\frac{2\\sqrt{3}\\,g}{12g} = \\frac{\\sqrt{3}}{6} = 0.289\\text{ (3 s.f.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies by the distance along the rod instead of the perpendicular distance, e.g. for the ladder writes $S \\times 4 = 12g \\times 2$.",
+    "correction": "The moment uses the perpendicular distance from the pivot to the line of action: $S \\times 4\\sin 60^\\circ = 12g \\times 2\\cos 60^\\circ$. Equivalently, multiply by the component of the force perpendicular to the rod."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes the two supports share the load equally, e.g. $R_C = R_D = \\frac{110g}{2} = 55g$, whatever the positions of the supports and loads.",
+    "correction": "Equal reactions occur only in a symmetrical arrangement. Take moments about one support to find the other reaction ($R_D = 50g$), then resolve vertically ($R_C = 60g$)."
+   },
+   {
+    "id": "m3",
+    "text": "On the point of tilting about D, sets $R_D = 0$ (the reaction at the pivot) instead of the reaction at the other support.",
+    "correction": "When the plank is about to tip about D, it loses contact with C, so $R_C = 0$. All the weight is then carried at D, so $R_D = 110g$."
+   },
+   {
+    "id": "m4",
+    "text": "Places the weight of a non-uniform rod at its midpoint.",
+    "correction": "Only a **uniform** rod has its weight at the midpoint. For a non-uniform rod, let the centre of mass be $x$ m from one end and find $x$ by taking moments."
+   }
+  ]
+ },
+ {
+  "id": "mech-vectors-2d-motion",
+  "prerequisites": [
+   "mech-suvat",
+   "mech-variable-acceleration",
+   "pure-vectors"
+  ],
+  "keyIdea": "Position $\\mathbf{r}$, velocity $\\mathbf{v}$ and acceleration $\\mathbf{a}$ are vectors, written with $\\mathbf{i}$ (usually east) and $\\mathbf{j}$ (usually north).\n\n**Constant acceleration** (vector suvat):\n$$\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t, \\qquad \\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\tfrac{1}{2}\\mathbf{a}t^2$$\n**Variable acceleration:** differentiate or integrate each component separately:\n$$\\mathbf{v} = \\frac{d\\mathbf{r}}{dt}, \\quad \\mathbf{a} = \\frac{d\\mathbf{v}}{dt}, \\quad \\mathbf{r} = \\int \\mathbf{v}\\,dt + \\mathbf{c}$$\nThe constant $\\mathbf{c}$ is a vector.\n\n* Speed $= |\\mathbf{v}| = \\sqrt{v_x^2 + v_y^2}$; give a direction as an angle or a bearing measured clockwise from north.\n* Moving parallel to $\\mathbf{j}$: the $\\mathbf{i}$-component of $\\mathbf{v}$ is 0. Parallel to $\\mathbf{i} + \\mathbf{j}$: components equal.\n* Newton's second law: $\\mathbf{F} = m\\mathbf{a}$.\n* Two particles meet when their position vectors are equal at the **same** time.",
+  "workedExamples": [
+   {
+    "question": "A particle starts at the point with position vector $(2\\mathbf{i} - 3\\mathbf{j})$ m with velocity $(4\\mathbf{i} + \\mathbf{j})$ $\\text{m s}^{-1}$ and moves with constant acceleration $(-\\mathbf{i} + 2\\mathbf{j})$ $\\text{m s}^{-2}$.\n\n(a) Find its position vector when $t = 4$.\n\n(b) Find its speed when $t = 4$ and describe its direction of motion.\n\n(c) Find the time when it is moving parallel to $\\mathbf{i} + \\mathbf{j}$.",
+    "solution": "(a)\n$$\\mathbf{r} = (2\\mathbf{i} - 3\\mathbf{j}) + (4\\mathbf{i} + \\mathbf{j})(4) + \\tfrac{1}{2}(-\\mathbf{i} + 2\\mathbf{j})(16)$$\n$$= (2 + 16 - 8)\\mathbf{i} + (-3 + 4 + 16)\\mathbf{j} = (10\\mathbf{i} + 17\\mathbf{j})\\text{ m}$$\n\n(b) $\\mathbf{v} = (4\\mathbf{i} + \\mathbf{j}) + 4(-\\mathbf{i} + 2\\mathbf{j}) = 9\\mathbf{j}$, so the speed is 9 $\\text{m s}^{-1}$ and it is moving due north (parallel to $\\mathbf{j}$).\n\n(c) $\\mathbf{v} = (4 - t)\\mathbf{i} + (1 + 2t)\\mathbf{j}$. Parallel to $\\mathbf{i} + \\mathbf{j}$ when the components are equal:\n$$4 - t = 1 + 2t \\quad\\Rightarrow\\quad t = 1$$\nCheck: $\\mathbf{v} = 3\\mathbf{i} + 3\\mathbf{j}$ ✓"
+   },
+   {
+    "question": "A particle of mass 0.5 kg has position vector $\\mathbf{r} = (t^3 - 6t)\\mathbf{i} + (2t^2 + 1)\\mathbf{j}$ m at time $t$ seconds.\n\n(a) Find the time when it is moving parallel to $\\mathbf{j}$, and its speed then.\n\n(b) Find the magnitude of the resultant force on it when $t = 2$.",
+    "solution": "(a) $\\mathbf{v} = \\dfrac{d\\mathbf{r}}{dt} = (3t^2 - 6)\\mathbf{i} + 4t\\,\\mathbf{j}$.\nParallel to $\\mathbf{j}$ when the $\\mathbf{i}$-component is 0: $3t^2 = 6$, so $t = \\sqrt{2}$ (as $t \\ge 0$).\nThen $\\mathbf{v} = 4\\sqrt{2}\\,\\mathbf{j}$, so the speed is $4\\sqrt{2} \\approx 5.66$ $\\text{m s}^{-1}$.\n\n(b) $\\mathbf{a} = \\dfrac{d\\mathbf{v}}{dt} = 6t\\,\\mathbf{i} + 4\\mathbf{j}$, so at $t = 2$: $\\mathbf{a} = 12\\mathbf{i} + 4\\mathbf{j}$.\n$$\\mathbf{F} = m\\mathbf{a} = 0.5(12\\mathbf{i} + 4\\mathbf{j}) = 6\\mathbf{i} + 2\\mathbf{j}$$\n$$|\\mathbf{F}| = \\sqrt{36 + 4} = \\sqrt{40} = 2\\sqrt{10} \\approx 6.32\\text{ N}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds the speed by adding the components, e.g. $|3\\mathbf{i} + 4\\mathbf{j}| = 3 + 4 = 7$ $\\text{m s}^{-1}$.",
+    "correction": "Speed is the magnitude of the velocity vector, found by Pythagoras: $\\sqrt{3^2 + 4^2} = 5$ $\\text{m s}^{-1}$."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the initial position, using $\\mathbf{r} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ when the particle does not start at the origin (e.g. answering $8\\mathbf{i} + 20\\mathbf{j}$ instead of $10\\mathbf{i} + 17\\mathbf{j}$).",
+    "correction": "$\\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ is the **displacement**. The position vector is $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$, so add the starting position $2\\mathbf{i} - 3\\mathbf{j}$."
+   },
+   {
+    "id": "m3",
+    "text": "For \"moving parallel to $\\mathbf{j}$\" sets the $\\mathbf{j}$-component of the velocity to zero.",
+    "correction": "A velocity parallel to $\\mathbf{j}$ has **no** $\\mathbf{i}$-component, so set the $\\mathbf{i}$-component to zero. Setting the $\\mathbf{j}$-component to zero gives motion parallel to $\\mathbf{i}$."
+   },
+   {
+    "id": "m4",
+    "text": "Gives $\\tan^{-1}\\left(\\frac{y}{x}\\right)$ as a bearing, e.g. for $\\mathbf{v} = 3\\mathbf{i} + 4\\mathbf{j}$ says the bearing is $053.1^\\circ$.",
+    "correction": "$\\tan^{-1}\\left(\\frac{4}{3}\\right) = 53.1^\\circ$ is measured from $\\mathbf{i}$ (east). A bearing is measured clockwise from north: $90^\\circ - 53.1^\\circ = 036.9^\\circ$. Draw a sketch before converting."
+   }
+  ]
+ }
+]

@@ -1,0 +1,589 @@
+[
+ {
+  "id": "geo-angle-facts",
+  "prerequisites": [],
+  "keyIdea": "An angle measures an amount of turn in degrees. Estimate first (acute $< 90^\\circ$, right $= 90^\\circ$, obtuse between $90^\\circ$ and $180^\\circ$, reflex $> 180^\\circ$), then measure with a protractor, reading from the scale that starts at 0 on one arm.\n\n**Facts (always quote the reason):**\n* Angles on a straight line add up to $180^\\circ$.\n* Angles around a point add up to $360^\\circ$.\n* Vertically opposite angles are equal.\n* Angles in a triangle add up to $180^\\circ$.\n* An isosceles triangle has two equal sides, and the base angles opposite them are equal.\n\nTwo angles adding to $90^\\circ$ are complementary; two adding to $180^\\circ$ are supplementary (US terms). When angles are given in algebra, form an equation from a fact, solve it, then substitute back.",
+  "workedExamples": [
+   {
+    "question": "Triangle $ABC$ is isosceles with $AB = AC$. Angle $BAC = 48^\\circ$. Work out the size of angle $ABC$, giving a reason.",
+    "solution": "The equal sides $AB$ and $AC$ meet at $A$, so $48^\\circ$ is the apex angle and the two base angles at $B$ and $C$ are equal.\n\nAngles in a triangle add up to $180^\\circ$:\n$$180^\\circ - 48^\\circ = 132^\\circ$$\n\nBase angles of an isosceles triangle are equal, so share $132^\\circ$ equally:\n$$\\angle ABC = 132^\\circ \\div 2 = 66^\\circ$$\n\nCheck: $48^\\circ + 66^\\circ + 66^\\circ = 180^\\circ$."
+   },
+   {
+    "question": "Three angles lie together on a straight line. They are $(2x + 15)^\\circ$, $(3x - 5)^\\circ$ and $(x + 20)^\\circ$. Find $x$ and the size of each angle.",
+    "solution": "Angles on a straight line add up to $180^\\circ$:\n$$(2x + 15) + (3x - 5) + (x + 20) = 180$$\n\nCollect like terms:\n$$6x + 30 = 180$$\n\nSolve:\n$$6x = 150 \\quad\\Rightarrow\\quad x = 25$$\n\nSubstitute back: $2(25) + 15 = 65^\\circ$, $3(25) - 5 = 70^\\circ$, $25 + 20 = 45^\\circ$.\n\nCheck: $65^\\circ + 70^\\circ + 45^\\circ = 180^\\circ$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reads the wrong scale on the protractor, e.g. measures an acute angle of $50^\\circ$ as $130^\\circ$ because they read the outer scale when the arm lines up with the 0 on the inner scale.",
+    "correction": "Estimate first: an acute angle must be less than $90^\\circ$. Put the centre of the protractor on the vertex, line up one arm with 0, and count up from that same 0 to the other arm."
+   },
+   {
+    "id": "m2",
+    "text": "In an isosceles triangle, treats the given apex angle as a base angle. For example, with apex angle $40^\\circ$ they write the other angles as $40^\\circ$ and $180^\\circ - 80^\\circ = 100^\\circ$ instead of $70^\\circ$ and $70^\\circ$.",
+    "correction": "Find which angle lies between the two equal sides (the apex). The base angles are the two angles opposite the equal sides. Here $(180^\\circ - 40^\\circ) \\div 2 = 70^\\circ$ each."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong total: uses $360^\\circ$ for angles on a straight line (e.g. $x = 360^\\circ - 130^\\circ = 230^\\circ$) or $180^\\circ$ for angles around a point.",
+    "correction": "Angles on a straight line make a half turn, $180^\\circ$, so $x = 180^\\circ - 130^\\circ = 50^\\circ$. Angles around a point make a full turn, $360^\\circ$. Sanity check: an angle on a straight line can never be reflex."
+   },
+   {
+    "id": "m4",
+    "text": "Mixes up complementary and supplementary, e.g. says the complement of $35^\\circ$ is $145^\\circ$.",
+    "correction": "Complementary angles add to $90^\\circ$ (complement of $35^\\circ$ is $55^\\circ$); supplementary angles add to $180^\\circ$ (supplement of $35^\\circ$ is $145^\\circ$). Memory aid: \"C\" comes before \"S\", and $90$ comes before $180$."
+   }
+  ]
+ },
+ {
+  "id": "geo-parallel-lines-angles",
+  "prerequisites": [
+   "geo-angle-facts"
+  ],
+  "keyIdea": "A transversal is a line that crosses two (or more) lines. When the lines are **parallel** (marked with arrows), it creates three key pairs:\n* **Corresponding angles are equal** – the same position at each crossing (an F-shape).\n* **Alternate angles are equal** – between the parallel lines, on opposite sides of the transversal (a Z-shape).\n* **Co-interior angles add up to $180^\\circ$** – between the parallel lines, on the same side of the transversal (a C- or U-shape). In the US these are called same-side interior angles.\n\nIn exam answers write the full reason, e.g. \"alternate angles are equal\", never \"Z angles\". These facts only apply to parallel lines. Conversely, if alternate or corresponding angles are equal, the lines must be parallel. Multi-step problems combine these with angles on a line, in a triangle and vertically opposite angles.",
+  "workedExamples": [
+   {
+    "question": "In the diagram the two horizontal lines are parallel and the transversal meets them at $P$ and $Q$. The angle at $P$ below the top line and to the left of the transversal is $58^\\circ$. Find the angles marked $x$ and $y$ at $Q$, giving reasons. (Not drawn to scale.)",
+    "solution": "**Angle $x$:** it lies between the parallel lines, on the opposite side of the transversal from the $58^\\circ$ angle. They form a Z-shape, so\n$$x = 58^\\circ \\quad \\text{(alternate angles are equal)}$$\n\n**Angle $y$:** it lies between the parallel lines, on the same side of the transversal as the $58^\\circ$ angle, so the pair is co-interior:\n$$y = 180^\\circ - 58^\\circ = 122^\\circ \\quad \\text{(co-interior angles add up to } 180^\\circ\\text{)}$$\n\nCheck: $x$ and $y$ lie on a straight line at $Q$, and $58^\\circ + 122^\\circ = 180^\\circ$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\">\n<line x1=\"30\" y1=\"80\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"30\" y1=\"200\" x2=\"330\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"233\" y1=\"40\" x2=\"118\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M284 74 L292 80 L284 86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M284 194 L292 200 L284 206\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"178\" y=\"102\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">58°</text>\n<text x=\"174\" y=\"190\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text>\n<text x=\"120\" y=\"182\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">y</text>\n<text x=\"216\" y=\"74\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">P</text>\n<text x=\"122\" y=\"218\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Q</text>\n</svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks co-interior angles are equal (treats a C-shape like a Z-shape), e.g. in the example writes $y = 58^\\circ$.",
+    "correction": "Co-interior angles add up to $180^\\circ$: $y = 180^\\circ - 58^\\circ = 122^\\circ$. One is acute and one obtuse unless both are $90^\\circ$ – if a diagram shows one acute and one obtuse angle, they cannot be equal."
+   },
+   {
+    "id": "m2",
+    "text": "Gives informal reasons such as \"Z angles\", \"F angles\" or \"because they look the same\", which score no reasoning marks.",
+    "correction": "Use the correct vocabulary and mention the parallel lines: \"alternate angles are equal\", \"corresponding angles are equal\", \"co-interior angles add up to $180^\\circ$\"."
+   },
+   {
+    "id": "m3",
+    "text": "Applies alternate/corresponding angle facts to lines that are not marked as parallel, e.g. concludes two angles are equal just because they are in a Z-shape.",
+    "correction": "Check for parallel arrows (or a statement that the lines are parallel) first. Without parallel lines, alternate and corresponding angles are generally not equal."
+   }
+  ]
+ },
+ {
+  "id": "geo-polygon-angles",
+  "prerequisites": [
+   "geo-angle-facts",
+   "geo-shape-properties",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "From one vertex, an $n$-sided polygon splits into $n - 2$ triangles, so\n$$\\text{sum of interior angles} = (n - 2) \\times 180^\\circ$$\ne.g. pentagon $3 \\times 180^\\circ = 540^\\circ$, hexagon $720^\\circ$.\n\nAn exterior angle is between one side and the extension of the next side. At each vertex, **interior $+$ exterior $= 180^\\circ$**, and the exterior angles of any convex polygon add up to $360^\\circ$.\n\nFor a **regular** polygon (all sides and angles equal):\n$$\\text{exterior angle} = \\frac{360^\\circ}{n}, \\qquad \\text{interior angle} = 180^\\circ - \\frac{360^\\circ}{n}$$\n\nTo find the number of sides of a regular polygon, find the exterior angle, then $n = 360^\\circ \\div \\text{exterior angle}$. If this is not a whole number, no such regular polygon exists. For an irregular polygon, use the angle sum and form an equation.",
+  "workedExamples": [
+   {
+    "question": "Each interior angle of a regular polygon is $156^\\circ$. How many sides does it have?",
+    "solution": "Interior and exterior angles add up to $180^\\circ$:\n$$\\text{exterior} = 180^\\circ - 156^\\circ = 24^\\circ$$\n\nThe exterior angles of a polygon add up to $360^\\circ$, and in a regular polygon they are all equal:\n$$n = 360^\\circ \\div 24^\\circ = 15$$\n\nThe polygon has 15 sides. Check: $(15 - 2) \\times 180^\\circ = 2340^\\circ$ and $2340^\\circ \\div 15 = 156^\\circ$."
+   },
+   {
+    "question": "A pentagon has angles $2x$, $3x$, $100^\\circ$, $110^\\circ$ and $120^\\circ$. Find the size of the largest angle.",
+    "solution": "Sum of interior angles of a pentagon:\n$$(5 - 2) \\times 180^\\circ = 540^\\circ$$\n\nForm an equation:\n$$2x + 3x + 100 + 110 + 120 = 540$$\n$$5x + 330 = 540 \\quad\\Rightarrow\\quad 5x = 210 \\quad\\Rightarrow\\quad x = 42$$\n\nThe angles are $84^\\circ$, $126^\\circ$, $100^\\circ$, $110^\\circ$, $120^\\circ$ (sum $540^\\circ$).\n\nThe largest angle is $126^\\circ$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Splits the polygon into $n$ triangles instead of $n - 2$, e.g. hexagon angle sum $= 6 \\times 180^\\circ = 1080^\\circ$.",
+    "correction": "Triangles drawn from one vertex: a hexagon gives 4 triangles, so the sum is $(6 - 2) \\times 180^\\circ = 720^\\circ$. Check with a square: $(4 - 2) \\times 180^\\circ = 360^\\circ$, which is correct."
+   },
+   {
+    "id": "m2",
+    "text": "Gives $\\frac{360^\\circ}{n}$ as the interior angle of a regular polygon, e.g. says each interior angle of a regular octagon is $360^\\circ \\div 8 = 45^\\circ$.",
+    "correction": "$\\frac{360^\\circ}{n}$ is the exterior angle. Interior $= 180^\\circ - 45^\\circ = 135^\\circ$. An interior angle of a polygon with 5 or more sides is always obtuse."
+   },
+   {
+    "id": "m3",
+    "text": "Finds the number of sides by dividing $360^\\circ$ by the interior angle, e.g. interior angle $140^\\circ$ gives $n = 360 \\div 140 \\approx 2.6$.",
+    "correction": "Divide $360^\\circ$ by the exterior angle: exterior $= 180^\\circ - 140^\\circ = 40^\\circ$, so $n = 360 \\div 40 = 9$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the regular-polygon method on an irregular polygon, e.g. finds a missing angle of an irregular hexagon as $720^\\circ \\div 6 = 120^\\circ$.",
+    "correction": "Only a regular polygon has equal angles. For an irregular polygon, subtract the known angles from the angle sum: missing angle $= 720^\\circ - (\\text{sum of the other five})$."
+   }
+  ]
+ },
+ {
+  "id": "geo-shape-properties",
+  "prerequisites": [],
+  "keyIdea": "**Triangles:** equilateral, isosceles (2 equal sides and angles), scalene, right-angled.\n\n**Quadrilaterals:**\n\n| Shape | Key properties | Lines | Order |\n|---|---|---|---|\n| Square | 4 equal sides, 4 right angles | 4 | 4 |\n| Rectangle | 4 right angles | 2 | 2 |\n| Rhombus | 4 equal sides | 2 | 2 |\n| Parallelogram | 2 pairs of parallel sides | 0 | 2 |\n| Kite | 2 pairs of adjacent equal sides | 1 | 1 |\n| Trapezium (US: trapezoid) | one pair of parallel sides | 0 | 1 |\n\n(An isosceles trapezium has 1 line of symmetry.)\n\n**Hierarchy:** a square is a special rectangle and a special rhombus; both are special parallelograms.\n\n**Line symmetry:** a mirror line folds the shape onto itself. **Order of rotational symmetry:** how many times it looks the same in a full turn; order 1 means none.",
+  "workedExamples": [
+   {
+    "question": "A quadrilateral has diagonals that bisect each other at right angles, but the diagonals are not equal in length. Name the quadrilateral and state its number of lines of symmetry and its order of rotational symmetry.",
+    "solution": "Diagonals that bisect each other means it is a parallelogram.\n\nDiagonals crossing at right angles as well means all four sides are equal, so it is a **rhombus**.\n\nThe diagonals are not equal, so it is not a square.\n\nA rhombus has **2 lines of symmetry** (along its diagonals) and **rotational symmetry of order 2** (it looks the same after a half turn)."
+   },
+   {
+    "question": "True or false? Give a reason for each.\n\n(a) Every square is a rectangle.\n(b) Every rectangle is a square.\n(c) Every parallelogram has at least one line of symmetry.",
+    "solution": "(a) **True.** A rectangle is a quadrilateral with four right angles; a square has four right angles, so it is a special rectangle.\n\n(b) **False.** A $2\\text{ cm}$ by $5\\text{ cm}$ rectangle does not have four equal sides.\n\n(c) **False.** A general (non-rectangular, non-rhombus) parallelogram has no lines of symmetry: folding along a diagonal or through the midpoints of opposite sides does not make the halves match. It does have rotational symmetry of order 2."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a parallelogram has two lines of symmetry along its diagonals.",
+    "correction": "Folding a general parallelogram along a diagonal does not make the two halves match (the corners miss). A parallelogram has 0 lines of symmetry but rotational symmetry of order 2. Only special cases (rhombus, rectangle) have lines of symmetry."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks a rectangle has 4 lines of symmetry, including the diagonals.",
+    "correction": "A non-square rectangle has only 2 lines of symmetry (through the midpoints of opposite sides). Its diagonals are not mirror lines – only a square's are."
+   },
+   {
+    "id": "m3",
+    "text": "Gives the order of rotational symmetry as 0 for a shape with no rotational symmetry (e.g. a kite).",
+    "correction": "Every shape looks the same after a full $360^\\circ$ turn, so the smallest order is 1. A kite has rotational symmetry of order 1."
+   },
+   {
+    "id": "m4",
+    "text": "Uses exclusive classification, e.g. \"a square is not a rectangle because a rectangle has two long sides and two short sides\".",
+    "correction": "Classify by properties: a rectangle needs four right angles and opposite sides equal – a square satisfies these, so a square is a rectangle (and a rhombus, and a parallelogram)."
+   }
+  ]
+ },
+ {
+  "id": "geo-constructions-loci",
+  "prerequisites": [
+   "geo-shape-properties",
+   "geo-angle-facts",
+   "rat-scale-drawings-maps"
+  ],
+  "keyIdea": "Use only a ruler and compasses, and **leave all construction arcs visible**.\n* **Perpendicular bisector of $AB$:** equal arcs (radius more than half $AB$) from $A$ and $B$; join the crossings. Locus of points equidistant from $A$ and $B$.\n* **Angle bisector:** arc from the vertex cutting both arms, equal arcs from those points, join the vertex to the crossing. Locus of points equidistant from the two arms.\n* **Perpendicular from a point $P$ to a line:** arc from $P$ cutting the line twice, then bisect that segment.\n* **Triangle (SSS):** draw one side, then arcs of the other two lengths from its ends.\n\n**Loci:** fixed distance from a point is a circle; from a segment, a \"stadium\" (parallel lines joined by semicircles). \"Closer to $A$ than $B$\" is the side of the perpendicular bisector containing $A$. Shade the region meeting every condition, using a scale.",
+  "workedExamples": [
+   {
+    "question": "A rectangular garden $ABCD$ has $AB = 10\\text{ m}$ and $BC = 6\\text{ m}$. A sprinkler at $A$ waters everything within $4\\text{ m}$ of $A$. Describe how to construct, and then shade, the region that is watered **and** is closer to side $AB$ than to side $AD$. Use a scale of 1 cm to 1 m.",
+    "solution": "**Step 1 – scale drawing.** Draw $AB = 10\\text{ cm}$ and $BC = 6\\text{ cm}$ with right angles at each corner.\n\n**Step 2 – within 4 m of $A$.** Set the compasses to $4\\text{ cm}$ and draw an arc centred on $A$ from side $AB$ to side $AD$. Points inside this quarter circle are watered.\n\n**Step 3 – equidistant from $AB$ and $AD$.** These sides meet at $A$, so construct the bisector of angle $DAB$: arc from $A$ cutting both sides, equal arcs from those two points, join $A$ to the crossing. (Because angle $A = 90^\\circ$, the bisector is at $45^\\circ$ to each side.)\n\n**Step 4 – choose the side.** Points closer to $AB$ lie between the bisector and $AB$.\n\n**Step 5 – shade** the part of the quarter circle between the bisector and $AB$: a sector of radius $4\\text{ cm}$ and angle $45^\\circ$ at $A$, as shown. Leave all arcs visible.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\">\n<path d=\"M30 240 L150 240 A120 120 0 0 0 114.85 155.15 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/>\n<rect x=\"30\" y=\"60\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M150 240 A120 120 0 0 0 30 120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<line x1=\"30\" y1=\"240\" x2=\"210\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<text x=\"16\" y=\"256\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text>\n<text x=\"334\" y=\"256\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text>\n<text x=\"334\" y=\"56\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text>\n<text x=\"16\" y=\"56\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text>\n<text x=\"180\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 m</text>\n<text x=\"340\" y=\"154\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6 m</text>\n</svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Changes the compass width between drawing the arc from $A$ and the arc from $B$ when bisecting $AB$, so the line drawn is not the perpendicular bisector (or uses a radius less than half of $AB$, so the arcs do not meet).",
+    "correction": "Keep the compasses fixed at one radius, more than half of $AB$, for all four arcs. Equal radii are what make every point on the line the same distance from $A$ and $B$."
+   },
+   {
+    "id": "m2",
+    "text": "Draws the locus of points a fixed distance from a line segment as a rectangle (square corners) instead of two parallel lines joined by semicircles at the ends.",
+    "correction": "Beyond each end of the segment, the nearest point of the segment is the endpoint itself, so the locus there is a semicircle centred on the endpoint. The full locus is a \"stadium\" shape."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks the locus of points equidistant from $A$ and $B$ is just the midpoint of $AB$ (or a circle around the midpoint).",
+    "correction": "The midpoint is only one such point. Every point on the perpendicular bisector of $AB$ is equidistant from $A$ and $B$, so the locus is the whole line."
+   },
+   {
+    "id": "m4",
+    "text": "Shades the wrong side of a boundary, e.g. for \"closer to $A$ than to $B$\" shades the side of the perpendicular bisector that contains $B$.",
+    "correction": "Test a point: $A$ itself is obviously closer to $A$, so the required region is the side of the perpendicular bisector that contains $A$."
+   }
+  ]
+ },
+ {
+  "id": "geo-units-measures",
+  "prerequisites": [
+   "num-place-value-ordering",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "**Metric:** $10\\text{ mm} = 1\\text{ cm}$, $100\\text{ cm} = 1\\text{ m}$, $1000\\text{ m} = 1\\text{ km}$, $1000\\text{ g} = 1\\text{ kg}$, $1000\\text{ kg} = 1$ tonne, $1000\\text{ ml} = 1$ litre, $1\\text{ cm}^3 = 1\\text{ ml}$.\n\nBig unit to small unit: multiply; small to big: divide.\n\n**Area and volume:** square or cube the length factor. Since $1\\text{ m} = 100\\text{ cm}$,\n$$1\\text{ m}^2 = 100^2\\text{ cm}^2 = 10\\,000\\text{ cm}^2, \\qquad 1\\text{ m}^3 = 100^3\\text{ cm}^3 = 1\\,000\\,000\\text{ cm}^3$$\n\n**Customary units (US):** $12$ in $= 1$ ft, $3$ ft $= 1$ yd, $5280$ ft $= 1$ mi, $16$ oz $= 1$ lb. These are not base 10. Useful links: $1$ in $= 2.54$ cm, $1$ kg $\\approx 2.2$ lb, $5$ miles $\\approx 8$ km.\n\n**Time:** $60$ s $= 1$ min, $60$ min $= 1$ h, so decimal hours are not minutes: $0.4\\text{ h} = 0.4 \\times 60 = 24$ min.",
+  "workedExamples": [
+   {
+    "question": "Convert $3.5\\text{ m}^2$ into $\\text{cm}^2$.",
+    "solution": "$1\\text{ m} = 100\\text{ cm}$, so a $1\\text{ m}$ by $1\\text{ m}$ square is $100\\text{ cm}$ by $100\\text{ cm}$:\n$$1\\text{ m}^2 = 100 \\times 100 = 10\\,000\\text{ cm}^2$$\n\nMetres squared to centimetres squared is big to small, so multiply:\n$$3.5 \\times 10\\,000 = 35\\,000\\text{ cm}^2$$"
+   },
+   {
+    "question": "(a) A fish tank holds $45\\,000\\text{ cm}^3$ of water. How many litres is this?\n(b) A journey takes $2.4$ hours. Write this in hours and minutes.",
+    "solution": "(a) $1\\text{ cm}^3 = 1\\text{ ml}$, so $45\\,000\\text{ cm}^3 = 45\\,000\\text{ ml}$.\n\n$1000\\text{ ml} = 1$ litre, so divide by 1000:\n$$45\\,000 \\div 1000 = 45 \\text{ litres}$$\n\n(b) $2.4$ hours $= 2$ hours $+ 0.4$ of an hour.\n$$0.4 \\times 60 = 24 \\text{ minutes}$$\n\nSo $2.4$ hours $= 2$ hours $24$ minutes."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the length conversion factor for area or volume, e.g. $3.5\\text{ m}^2 = 3.5 \\times 100 = 350\\text{ cm}^2$, or $2\\text{ m}^3 = 200\\text{ cm}^3$.",
+    "correction": "Square the factor for area and cube it for volume: $3.5\\text{ m}^2 = 3.5 \\times 100^2 = 35\\,000\\text{ cm}^2$ and $2\\text{ m}^3 = 2 \\times 100^3 = 2\\,000\\,000\\text{ cm}^3$. Sketch a $1\\text{ m}$ square split into $1\\text{ cm}$ squares to see why."
+   },
+   {
+    "id": "m2",
+    "text": "Divides when they should multiply (or vice versa), e.g. $4.2\\text{ km} = 4.2 \\div 1000 = 0.0042\\text{ m}$.",
+    "correction": "A metre is smaller than a kilometre, so there must be more of them: $4.2\\text{ km} = 4.2 \\times 1000 = 4200\\text{ m}$. Always ask \"should the number get bigger or smaller?\"."
+   },
+   {
+    "id": "m3",
+    "text": "Treats decimal hours as hours and minutes, e.g. $2.4$ hours $= 2$ h $40$ min, or $1$ h $30$ min $= 1.3$ hours.",
+    "correction": "An hour has 60 minutes, not 100. $0.4\\text{ h} = 0.4 \\times 60 = 24$ min, so $2.4$ h $= 2$ h $24$ min; and $30$ min $= \\frac{30}{60} = 0.5$ h, so $1$ h $30$ min $= 1.5$ h."
+   },
+   {
+    "id": "m4",
+    "text": "Assumes customary units are base 10, e.g. writes 5 ft 6 in as $5.6$ ft.",
+    "correction": "There are 12 inches in a foot, so $6$ in $= \\frac{6}{12} = 0.5$ ft and 5 ft 6 in $= 5.5$ ft. Use the actual conversion factor (12, 3, 16, 5280), not 10."
+   }
+  ]
+ },
+ {
+  "id": "geo-perimeter-area",
+  "prerequisites": [
+   "geo-shape-properties",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "**Perimeter** is the total distance around the outside (units: cm, m). **Area** is the space inside (units: $\\text{cm}^2$, $\\text{m}^2$).\n\n$$\\text{rectangle: } A = lw \\qquad \\text{triangle: } A = \\tfrac{1}{2}bh \\qquad \\text{parallelogram: } A = bh$$\n$$\\text{trapezium (US: trapezoid): } A = \\tfrac{1}{2}(a + b)h$$\nwhere $a$ and $b$ are the parallel sides. In every formula $h$ is the **perpendicular** height, at right angles to the base – never a slanted side.\n\n**Compound shapes:** first work out any missing lengths (opposite sides of a rectilinear shape add up to the same total). Then split into rectangles and triangles and add, or take a big rectangle and subtract the missing piece. For perimeter, go all the way round and count every side, labelled or not. Make sure all lengths are in the same units first.",
+  "workedExamples": [
+   {
+    "question": "A trapezium has parallel sides of $7\\text{ cm}$ and $13\\text{ cm}$. The perpendicular distance between them is $6\\text{ cm}$ and each slanted side is $6.7\\text{ cm}$. Find its area.",
+    "solution": "Use $A = \\frac{1}{2}(a + b)h$ with the perpendicular height. The slanted sides ($6.7\\text{ cm}$) are not needed for area.\n$$A = \\tfrac{1}{2}(7 + 13) \\times 6$$\n$$A = \\tfrac{1}{2} \\times 20 \\times 6 = 60\\text{ cm}^2$$"
+   },
+   {
+    "question": "The diagram shows an L-shape made of right angles. Find its perimeter and its area.",
+    "solution": "**Missing lengths.** Horizontal: the bottom is $10\\text{ cm}$ and the top is $6\\text{ cm}$, so the step is $10 - 6 = 4\\text{ cm}$.\nVertical: the left side is $8\\text{ cm}$ and the right side is $5\\text{ cm}$, so the step is $8 - 5 = 3\\text{ cm}$.\n\n**Perimeter** – all six sides:\n$$10 + 8 + 6 + 3 + 4 + 5 = 36\\text{ cm}$$\n\n**Area** – big rectangle minus the missing corner:\n$$10 \\times 8 - 4 \\times 3 = 80 - 12 = 68\\text{ cm}^2$$\n\nCheck by splitting into two rectangles: $6 \\times 8 + 4 \\times 5 = 48 + 20 = 68\\text{ cm}^2$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\">\n<path d=\"M40 40 L160 40 L160 100 L240 100 L240 200 L40 200 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"140\" y=\"222\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 cm</text>\n<text x=\"34\" y=\"125\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8 cm</text>\n<text x=\"100\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6 cm</text>\n<text x=\"246\" y=\"155\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n</svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the slanted side instead of the perpendicular height, e.g. a parallelogram with base $8\\text{ cm}$, slanted side $5\\text{ cm}$ and perpendicular height $4\\text{ cm}$ gets $A = 8 \\times 5 = 40\\text{ cm}^2$.",
+    "correction": "The height must be perpendicular to the base: $A = 8 \\times 4 = 32\\text{ cm}^2$. The slanted side is only used for perimeter."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the $\\frac{1}{2}$ in the triangle formula, e.g. base $10\\text{ cm}$, height $6\\text{ cm}$ gives $A = 10 \\times 6 = 60\\text{ cm}^2$.",
+    "correction": "A triangle is half of a rectangle (or parallelogram) with the same base and height: $A = \\frac{1}{2} \\times 10 \\times 6 = 30\\text{ cm}^2$."
+   },
+   {
+    "id": "m3",
+    "text": "For a compound shape, adds only the labelled sides to find the perimeter, e.g. gives $10 + 8 + 6 + 5 = 29\\text{ cm}$ for the L-shape.",
+    "correction": "Find the missing lengths first ($4\\text{ cm}$ and $3\\text{ cm}$), then trace all the way round counting every side: $36\\text{ cm}$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks shapes with the same area must have the same perimeter (or vice versa).",
+    "correction": "A $1 \\times 16$ rectangle and a $4 \\times 4$ square both have area $16\\text{ cm}^2$, but perimeters $34\\text{ cm}$ and $16\\text{ cm}$. Area and perimeter measure different things."
+   }
+  ]
+ },
+ {
+  "id": "geo-circles",
+  "prerequisites": [
+   "geo-perimeter-area",
+   "num-powers-roots",
+   "num-rounding"
+  ],
+  "keyIdea": "For a circle with radius $r$ and diameter $d = 2r$:\n$$C = \\pi d = 2\\pi r \\qquad\\qquad A = \\pi r^2$$\n\nThe area formula uses the **radius** – halve a diameter first. $\\pi r^2$ means square the radius, then multiply by $\\pi$.\n\n**Parts of circles:**\n* Semicircle: area $= \\frac{1}{2}\\pi r^2$; perimeter $= \\frac{1}{2}\\pi d + d$ (curved part **plus** the diameter).\n* Quarter circle: area $= \\frac{1}{4}\\pi r^2$; perimeter $= \\frac{1}{4} \\times 2\\pi r + 2r$.\n\n**Exact answers:** \"in terms of $\\pi$\" means leave $\\pi$ as a symbol, e.g. $r = 5$ gives $A = 25\\pi\\text{ cm}^2$. Otherwise use the $\\pi$ button and round as asked.\n\n**Working backwards:** $r = \\dfrac{C}{2\\pi}$, or $r = \\sqrt{\\dfrac{A}{\\pi}}$.",
+  "workedExamples": [
+   {
+    "question": "A semicircle has diameter $10\\text{ cm}$. Find (a) its area and (b) its perimeter. Give each answer in terms of $\\pi$ and to 1 decimal place.",
+    "solution": "Radius $r = 10 \\div 2 = 5\\text{ cm}$.\n\n(a) Area is half of a full circle:\n$$A = \\tfrac{1}{2}\\pi r^2 = \\tfrac{1}{2} \\times \\pi \\times 25 = 12.5\\pi \\approx 39.3\\text{ cm}^2$$\n\n(b) Curved part is half the circumference:\n$$\\tfrac{1}{2} \\times \\pi \\times 10 = 5\\pi$$\n\nAdd the straight diameter:\n$$P = 5\\pi + 10 \\approx 15.71 + 10 = 25.7\\text{ cm}$$"
+   },
+   {
+    "question": "A circle has area $50\\text{ cm}^2$. Find its circumference, correct to 3 significant figures.",
+    "solution": "Work backwards from $A = \\pi r^2$:\n$$r^2 = \\frac{50}{\\pi} = 15.915\\ldots$$\n$$r = \\sqrt{15.915\\ldots} = 3.9894\\ldots\\text{ cm}$$\n\nKeep the unrounded value in the calculator:\n$$C = 2\\pi r = 2 \\times \\pi \\times 3.9894\\ldots = 25.066\\ldots$$\n\n$C = 25.1\\text{ cm}$ (3 s.f.)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the diameter in $\\pi r^2$, e.g. diameter $10\\text{ cm}$ gives $A = \\pi \\times 10^2 = 100\\pi\\text{ cm}^2$.",
+    "correction": "Halve the diameter first: $r = 5$, so $A = \\pi \\times 5^2 = 25\\pi\\text{ cm}^2$. Using the diameter makes the area four times too big."
+   },
+   {
+    "id": "m2",
+    "text": "Squares $\\pi r$ instead of just $r$ on the calculator, e.g. $r = 5$: $\\pi \\times 5 = 15.71$, then $15.71^2 = 246.7\\text{ cm}^2$.",
+    "correction": "Only $r$ is squared: $\\pi r^2 = \\pi \\times 25 = 78.5\\text{ cm}^2$. Square the radius first, then multiply by $\\pi$."
+   },
+   {
+    "id": "m3",
+    "text": "Doubles the radius instead of squaring it, e.g. $r = 3$ gives $A = \\pi \\times 6 = 6\\pi$.",
+    "correction": "$3^2 = 3 \\times 3 = 9$, not $3 \\times 2$. So $A = 9\\pi\\text{ cm}^2$."
+   },
+   {
+    "id": "m4",
+    "text": "Finds the perimeter of a semicircle (or quarter circle) as just the curved part, e.g. semicircle of diameter $10\\text{ cm}$ has perimeter $5\\pi \\approx 15.7\\text{ cm}$.",
+    "correction": "Perimeter is the whole boundary, so add the straight edge(s): $5\\pi + 10 \\approx 25.7\\text{ cm}$. A quarter circle needs two radii added."
+   }
+  ]
+ },
+ {
+  "id": "geo-arcs-sectors",
+  "prerequisites": [
+   "geo-circles",
+   "num-fractions-multiply-divide",
+   "alg-rearranging-formulae"
+  ],
+  "keyIdea": "A sector with angle $\\theta$ at the centre is the fraction $\\frac{\\theta}{360}$ of the whole circle, so\n$$\\text{arc length} = \\frac{\\theta}{360} \\times 2\\pi r \\qquad\\qquad \\text{sector area} = \\frac{\\theta}{360} \\times \\pi r^2$$\n\n**Perimeter of a sector** $=$ arc length $+ 2r$ (the two straight radii).\n\nA chord splits a circle into a minor and a major sector: the major sector's angle is $360^\\circ - \\theta$, so make sure you use the angle of the sector you want.\n\n**Reverse problems:** substitute what you know, then solve for $\\theta$ or $r$. With exact values, $\\pi$ cancels, e.g. $\\frac{\\theta}{360} \\times 36\\pi = 15\\pi$ gives $\\theta = 150^\\circ$. Sense-check: $\\theta$ must be between $0^\\circ$ and $360^\\circ$, and the arc must be shorter than the full circumference. Give exact answers in terms of $\\pi$ when asked.",
+  "workedExamples": [
+   {
+    "question": "A sector has radius $9\\text{ cm}$ and angle $80^\\circ$. Find (a) the arc length, (b) the area, (c) the perimeter. Give (a) and (b) in terms of $\\pi$, and (c) to 1 decimal place.",
+    "solution": "Fraction of the circle: $\\dfrac{80}{360} = \\dfrac{2}{9}$.\n\n(a) Arc length:\n$$\\frac{2}{9} \\times 2\\pi \\times 9 = \\frac{2}{9} \\times 18\\pi = 4\\pi\\text{ cm}$$\n\n(b) Area:\n$$\\frac{2}{9} \\times \\pi \\times 9^2 = \\frac{2}{9} \\times 81\\pi = 18\\pi\\text{ cm}^2$$\n\n(c) Perimeter is the arc plus two radii:\n$$4\\pi + 9 + 9 = 4\\pi + 18 = 12.566\\ldots + 18 = 30.6\\text{ cm}$$"
+   },
+   {
+    "question": "A sector of a circle of radius $6\\text{ cm}$ has area $15\\pi\\text{ cm}^2$. Find the angle of the sector and its arc length.",
+    "solution": "Substitute into the sector area formula:\n$$\\frac{\\theta}{360} \\times \\pi \\times 6^2 = 15\\pi$$\n$$\\frac{\\theta}{360} \\times 36\\pi = 15\\pi$$\n\nDivide both sides by $36\\pi$:\n$$\\frac{\\theta}{360} = \\frac{15}{36}$$\n\nMultiply by 360:\n$$\\theta = \\frac{15 \\times 360}{36} = 150^\\circ$$\n\nArc length:\n$$\\frac{150}{360} \\times 2\\pi \\times 6 = \\frac{5}{12} \\times 12\\pi = 5\\pi\\text{ cm}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Gives the arc length as the perimeter of the sector, forgetting the two radii, e.g. perimeter $= 4\\pi \\approx 12.6\\text{ cm}$ for radius $9\\text{ cm}$, angle $80^\\circ$.",
+    "correction": "The perimeter goes all the way round: arc $+$ radius $+$ radius $= 4\\pi + 18 \\approx 30.6\\text{ cm}$."
+   },
+   {
+    "id": "m2",
+    "text": "Mixes the formulas, using the radius where the diameter belongs, e.g. arc length $= \\frac{\\theta}{360} \\times \\pi r$, or uses $\\pi r^2$ for an arc.",
+    "correction": "Arc length is a fraction of the circumference $2\\pi r$ (or $\\pi d$); area is a fraction of $\\pi r^2$. Check units: a length uses $r$, an area uses $r^2$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong angle for a major sector, e.g. for the major sector of a circle cut by a $80^\\circ$ minor sector, calculates with $80^\\circ$.",
+    "correction": "The major sector's angle is $360^\\circ - 80^\\circ = 280^\\circ$. Check which region the question asks for before substituting."
+   },
+   {
+    "id": "m4",
+    "text": "Inverts the fraction when solving a reverse problem, e.g. from $\\frac{\\theta}{360} \\times 36\\pi = 15\\pi$ writes $\\theta = \\frac{36 \\times 360}{15} = 864^\\circ$.",
+    "correction": "Divide both sides by $36\\pi$, then multiply by 360: $\\theta = \\frac{15 \\times 360}{36} = 150^\\circ$. An angle above $360^\\circ$ is impossible, which signals an error."
+   }
+  ]
+ },
+ {
+  "id": "geo-3d-shapes-nets",
+  "prerequisites": [
+   "geo-shape-properties"
+  ],
+  "keyIdea": "**Faces** are flat surfaces, **edges** are where two faces meet, **vertices** are corners. A cuboid has 6 faces, 12 edges, 8 vertices. For any polyhedron, Euler's formula holds:\n$$F + V - E = 2$$\n\nA **prism** has the same cross-section all the way through (two identical end faces joined by rectangles); a **pyramid** has a base and triangular faces meeting at an apex.\n\nA **net** is a 2D shape that folds up to make the solid: it needs exactly the right faces, and no two faces may overlap when folded (a cube has 11 different nets).\n\n**Plan** = view from above; **front elevation** = view from the front; **side elevation** = view from the side. Draw what you would see, with solid lines for every visible edge.\n\n**Cross-sections (US grade 7):** slicing parallel to a prism's base gives a copy of the base; other slices can give different shapes.",
+  "workedExamples": [
+   {
+    "question": "Find the number of faces, edges and vertices of (a) a triangular prism and (b) a pentagonal pyramid. Check each with Euler's formula.",
+    "solution": "(a) Triangular prism: 2 triangular ends $+$ 3 rectangles $= 5$ faces. Each triangle has 3 edges, plus 3 edges joining the ends $= 9$ edges. Each end has 3 vertices $= 6$ vertices.\n$$F + V - E = 5 + 6 - 9 = 2 \\checkmark$$\n\n(b) Pentagonal pyramid: 1 pentagon base $+$ 5 triangles $= 6$ faces. 5 base edges $+$ 5 edges up to the apex $= 10$ edges. 5 base vertices $+$ 1 apex $= 6$ vertices.\n$$F + V - E = 6 + 6 - 10 = 2 \\checkmark$$"
+   },
+   {
+    "question": "Describe the cross-section when (a) a cylinder is sliced parallel to its circular base, (b) a cylinder is sliced vertically through the centre of both circular faces, (c) a square-based pyramid is sliced parallel to its base.",
+    "solution": "(a) A slice parallel to the base of a prism-like solid is a copy of the base: a **circle** of the same radius.\n\n(b) The cut runs straight down the full height and across a full diameter: a **rectangle** of width $2r$ and height $h$.\n\n(c) Every horizontal slice of the pyramid is a square, getting smaller towards the apex: a **smaller square**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Counts only what is visible in a 3D drawing, e.g. says a cuboid has 9 edges and 7 vertices.",
+    "correction": "Hidden edges and vertices still exist. A cuboid has 12 edges (4 on top, 4 on the bottom, 4 vertical) and 8 vertices. Check with $F + V - E = 6 + 8 - 12 = 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks any arrangement of six squares is a net of a cube, e.g. a 2 by 3 rectangle of squares.",
+    "correction": "In a 2 by 3 block, folding makes some faces overlap and leaves the cube with gaps. Imagine folding: each face must land in a different position. A row of four squares with one square attached above and one below is a valid net."
+   },
+   {
+    "id": "m3",
+    "text": "Mixes up plan and elevations, e.g. draws the front view when asked for the plan.",
+    "correction": "Plan $=$ looking straight down from above; front elevation $=$ looking from the front; side elevation $=$ looking from the side. For a cylinder standing upright, the plan is a circle and the front elevation is a rectangle."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a flat slice through a cube must always be a square or rectangle.",
+    "correction": "Slicing off a corner through three edges gives a triangle; other slices give pentagons or hexagons. Only slices parallel to a face are guaranteed to be squares."
+   }
+  ]
+ },
+ {
+  "id": "geo-volume-prisms",
+  "prerequisites": [
+   "geo-perimeter-area",
+   "geo-3d-shapes-nets",
+   "geo-circles",
+   "geo-units-measures"
+  ],
+  "keyIdea": "Volume is the space inside a solid, measured in cubic units ($\\text{cm}^3$, $\\text{m}^3$).\n\nFor any **prism**:\n$$V = \\text{area of cross-section} \\times \\text{length}$$\n* Cuboid: $V = l \\times w \\times h$.\n* Triangular prism: $V = \\tfrac{1}{2}bh \\times l$.\n* Cylinder (circular cross-section): $V = \\pi r^2 h$.\n\nFind the cross-section's area first (using the perpendicular height), then multiply by the length – the distance between the two identical end faces.\n\n**Capacity:** $1\\text{ cm}^3 = 1\\text{ ml}$ and $1000\\text{ cm}^3 = 1$ litre; $1\\text{ m}^3 = 1000$ litres.\n\n**Compound solids:** split into prisms and add, or subtract a removed part. Make sure all lengths are in the same unit before multiplying.",
+  "workedExamples": [
+   {
+    "question": "A triangular prism has a right-angled triangle as its cross-section, with base $6\\text{ cm}$ and perpendicular height $4\\text{ cm}$. The prism is $10\\text{ cm}$ long. Find its volume.",
+    "solution": "Area of the cross-section:\n$$\\tfrac{1}{2} \\times 6 \\times 4 = 12\\text{ cm}^2$$\n\nMultiply by the length:\n$$V = 12 \\times 10 = 120\\text{ cm}^3$$"
+   },
+   {
+    "question": "A cylindrical water tank has diameter $40\\text{ cm}$ and height $50\\text{ cm}$. How many litres does it hold when full? Give your answer to 1 decimal place.",
+    "solution": "Radius $r = 40 \\div 2 = 20\\text{ cm}$.\n\n$$V = \\pi r^2 h = \\pi \\times 20^2 \\times 50 = 20\\,000\\pi\\text{ cm}^3$$\n$$V = 62\\,831.85\\ldots\\text{ cm}^3$$\n\n$1000\\text{ cm}^3 = 1$ litre:\n$$62\\,831.85\\ldots \\div 1000 = 62.8 \\text{ litres}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the diameter as the radius in $V = \\pi r^2 h$, e.g. diameter $40\\text{ cm}$, height $50\\text{ cm}$: $V = \\pi \\times 40^2 \\times 50 = 80\\,000\\pi$.",
+    "correction": "Halve the diameter: $r = 20$, so $V = \\pi \\times 20^2 \\times 50 = 20\\,000\\pi\\text{ cm}^3$. Using the diameter makes the volume four times too big."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies every length on the diagram of a triangular prism, e.g. $6 \\times 4 \\times 10 = 240\\text{ cm}^3$ (forgetting the $\\frac{1}{2}$), or also multiplying by the slanted side.",
+    "correction": "Volume of a prism $=$ area of cross-section $\\times$ length. The triangle's area is $\\frac{1}{2} \\times 6 \\times 4 = 12\\text{ cm}^2$, so $V = 120\\text{ cm}^3$. Only \"length $\\times$ width $\\times$ height\" works for a cuboid."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong factor converting volume units, e.g. $62\\,832\\text{ cm}^3 = 628.32$ litres (dividing by 100), or $1\\text{ m}^3 = 100\\text{ cm}^3$.",
+    "correction": "$1$ litre $= 1000\\text{ cm}^3$ (a $10\\text{ cm}$ cube), so divide by 1000: $62.8$ litres. And $1\\text{ m}^3 = 100^3 = 1\\,000\\,000\\text{ cm}^3$."
+   }
+  ]
+ },
+ {
+  "id": "geo-surface-area",
+  "prerequisites": [
+   "geo-3d-shapes-nets",
+   "geo-perimeter-area",
+   "geo-circles"
+  ],
+  "keyIdea": "Surface area is the total area of all the faces of a solid – the area of its net. Units are square units ($\\text{cm}^2$).\n\n* **Cuboid** with dimensions $l$, $w$, $h$: three pairs of identical faces,\n$$SA = 2lw + 2lh + 2wh$$\n* **Any prism:** two ends plus a rectangle for each side face,\n$$SA = 2 \\times \\text{cross-section area} + \\text{perimeter of cross-section} \\times \\text{length}$$\n* **Cylinder:** two circles plus a curved surface that unrolls into a rectangle of width $2\\pi r$ (the circumference) and height $h$:\n$$SA = 2\\pi r^2 + 2\\pi r h$$\n\nSketch the net and list every face before adding. Read the context: an **open** box or tube has one or both ends missing. Leave answers in terms of $\\pi$ when asked.",
+  "workedExamples": [
+   {
+    "question": "Find the surface area of a cuboid measuring $5\\text{ cm}$ by $3\\text{ cm}$ by $2\\text{ cm}$.",
+    "solution": "There are three pairs of faces:\n* top and bottom: $5 \\times 3 = 15\\text{ cm}^2$ each\n* front and back: $5 \\times 2 = 10\\text{ cm}^2$ each\n* two sides: $3 \\times 2 = 6\\text{ cm}^2$ each\n\n$$SA = 2(15 + 10 + 6) = 2 \\times 31 = 62\\text{ cm}^2$$"
+   },
+   {
+    "question": "A closed cylinder has radius $4\\text{ cm}$ and height $10\\text{ cm}$. Find its total surface area, in terms of $\\pi$ and to 1 decimal place.",
+    "solution": "Two circular ends:\n$$2 \\times \\pi \\times 4^2 = 32\\pi$$\n\nCurved surface (rectangle $2\\pi r$ by $h$):\n$$2 \\times \\pi \\times 4 \\times 10 = 80\\pi$$\n\nTotal:\n$$SA = 32\\pi + 80\\pi = 112\\pi \\approx 351.9\\text{ cm}^2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Calculates the volume instead of the surface area, e.g. for a $5 \\times 3 \\times 2$ cuboid answers $30\\text{ cm}^2$.",
+    "correction": "Surface area adds the areas of the faces: $2(15 + 10 + 6) = 62\\text{ cm}^2$. Volume ($30\\text{ cm}^3$) measures space inside and has cubic units."
+   },
+   {
+    "id": "m2",
+    "text": "Counts each different face only once, e.g. cuboid surface area $= 15 + 10 + 6 = 31\\text{ cm}^2$.",
+    "correction": "A cuboid has 6 faces in 3 identical pairs, so double: $62\\text{ cm}^2$. Sketching the net shows all six."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong number of circular ends for a cylinder, e.g. includes two ends for an open-topped tin, or only one for a closed cylinder.",
+    "correction": "Read the context: closed cylinder $= 2\\pi r^2 + 2\\pi rh$; open at one end $= \\pi r^2 + 2\\pi rh$; open tube $= 2\\pi rh$ only."
+   },
+   {
+    "id": "m4",
+    "text": "For a triangular prism whose triangle is not equilateral, multiplies one rectangular face by 3, e.g. cross-section with sides $3$, $4$, $5$ and length $10$ gives rectangles $3 \\times (5 \\times 10) = 150$.",
+    "correction": "Each rectangle has width equal to its own side of the triangle: $3 \\times 10 + 4 \\times 10 + 5 \\times 10 = 120\\text{ cm}^2$, i.e. perimeter of cross-section $\\times$ length. Then add the two triangles."
+   }
+  ]
+ },
+ {
+  "id": "geo-pyramids-cones-spheres",
+  "prerequisites": [
+   "geo-volume-prisms",
+   "geo-surface-area",
+   "geo-pythagoras"
+  ],
+  "keyIdea": "$$\\text{Pyramid: } V = \\tfrac{1}{3} \\times \\text{base area} \\times h \\qquad \\text{Cone: } V = \\tfrac{1}{3}\\pi r^2 h, \\quad \\text{curved } SA = \\pi r l$$\n$$\\text{Sphere: } V = \\tfrac{4}{3}\\pi r^3, \\quad SA = 4\\pi r^2$$\n\n$h$ is the **perpendicular** height; $l$ is the **slant** height of a cone, with $l^2 = r^2 + h^2$ (Pythagoras). Total surface area of a cone adds the base: $\\pi r l + \\pi r^2$.\n\nA hemisphere has volume $\\frac{2}{3}\\pi r^3$, curved surface $2\\pi r^2$, and total surface $3\\pi r^2$ including the flat circle.\n\nA **frustum** is a cone with its top cut off parallel to the base: volume $=$ large cone $-$ small (similar) cone.\n\n**Cavalieri's principle (US):** two solids of equal height with equal cross-sectional areas at every level have equal volume, e.g. an oblique cylinder has volume $\\pi r^2 h$.",
+  "workedExamples": [
+   {
+    "question": "A cone has base radius $5\\text{ cm}$ and perpendicular height $12\\text{ cm}$. Find (a) its volume and (b) its total surface area, in terms of $\\pi$ and to 1 decimal place.",
+    "solution": "(a) $$V = \\tfrac{1}{3}\\pi r^2 h = \\tfrac{1}{3} \\times \\pi \\times 25 \\times 12 = 100\\pi \\approx 314.2\\text{ cm}^3$$\n\n(b) First the slant height, by Pythagoras:\n$$l = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13\\text{ cm}$$\n\nCurved surface plus circular base:\n$$SA = \\pi r l + \\pi r^2 = \\pi \\times 5 \\times 13 + \\pi \\times 25 = 65\\pi + 25\\pi = 90\\pi \\approx 282.7\\text{ cm}^2$$"
+   },
+   {
+    "question": "The cone from the previous example (radius $5\\text{ cm}$, height $12\\text{ cm}$) has the top $6\\text{ cm}$ cut off parallel to the base, leaving a frustum. Find the volume of the frustum to 1 decimal place.",
+    "solution": "The removed top is a small cone similar to the whole cone. Its height is $6\\text{ cm}$, half of $12\\text{ cm}$, so its radius is half of $5\\text{ cm}$: $r = 2.5\\text{ cm}$.\n\nLarge cone: $V = 100\\pi$ (from before).\n\nSmall cone:\n$$V = \\tfrac{1}{3} \\times \\pi \\times 2.5^2 \\times 6 = \\tfrac{1}{3} \\times \\pi \\times 6.25 \\times 6 = 12.5\\pi$$\n\nFrustum:\n$$100\\pi - 12.5\\pi = 87.5\\pi \\approx 274.9\\text{ cm}^3$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets the $\\frac{1}{3}$ in the volume of a pyramid or cone, e.g. cone radius $5$, height $12$: $V = \\pi \\times 25 \\times 12 = 300\\pi$.",
+    "correction": "A cone (or pyramid) fills exactly one third of the cylinder (or prism) with the same base and height: $V = \\frac{1}{3} \\times 300\\pi = 100\\pi\\text{ cm}^3$."
+   },
+   {
+    "id": "m2",
+    "text": "Swaps the slant height and the perpendicular height, e.g. uses $l = 13$ in $V = \\frac{1}{3}\\pi r^2 h$, or $h = 12$ in $\\pi r l$.",
+    "correction": "Volume uses the perpendicular height $h$ (centre of base straight up to the apex). Curved surface area uses the slant height $l$ along the surface. If only one is given, find the other with $l^2 = r^2 + h^2$."
+   },
+   {
+    "id": "m3",
+    "text": "Gives the total surface area of a solid hemisphere as $2\\pi r^2$, forgetting the flat circular face (or uses $4\\pi r^2$, the whole sphere).",
+    "correction": "Curved part $=$ half of $4\\pi r^2 = 2\\pi r^2$; flat face $= \\pi r^2$. Total $= 3\\pi r^2$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats a frustum as a cone with the differences of the dimensions, e.g. volume $= \\frac{1}{3}\\pi (5 - 2.5)^2 \\times (12 - 6)$.",
+    "correction": "A frustum is the large cone minus the small cone: $\\frac{1}{3}\\pi \\times 5^2 \\times 12 - \\frac{1}{3}\\pi \\times 2.5^2 \\times 6 = 87.5\\pi$. Find the missing dimensions of the small cone using similarity."
+   }
+  ]
+ },
+ {
+  "id": "geo-transformations",
+  "prerequisites": [
+   "geo-shape-properties",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "To describe a transformation, name **one** transformation and give every detail:\n* **Reflection** – the mirror line, e.g. $x = 2$ (vertical), $y = -1$ (horizontal), $y = x$. Each point and its image are the same perpendicular distance from the line.\n* **Rotation** – angle, direction (clockwise/anticlockwise) and centre. Tracing paper helps.\n* **Translation** – a column vector $\\begin{pmatrix} a \\\\ b \\end{pmatrix}$: $a$ right ($+$) or left ($-$), $b$ up ($+$) or down ($-$).\n* **Enlargement** (US: dilation) – scale factor $k$ and centre. Distances from the centre, and all lengths, are multiplied by $k$. If $0 < k < 1$ the image is smaller; if $k < 0$ the image is on the opposite side of the centre and upside down.\n\nReflections, rotations and translations keep shape and size (congruent images); enlargements keep shape only (similar images).",
+  "workedExamples": [
+   {
+    "question": "Triangle $T$ has vertices $(2, 2)$, $(6, 2)$ and $(2, 6)$. Enlarge $T$ by scale factor $-\\frac{1}{2}$, centre $(0, 0)$. Give the coordinates of the image.",
+    "solution": "With centre $(0, 0)$, each position vector is multiplied by $-\\frac{1}{2}$: the image is half the distance from the origin, on the opposite side.\n\n$$(2, 2) \\to (-1, -1)$$\n$$(6, 2) \\to (-3, -1)$$\n$$(2, 6) \\to (-1, -3)$$\n\nThe image is half the size of $T$ and is rotated $180^\\circ$ about the origin relative to it (as every negative scale factor enlargement is)."
+   },
+   {
+    "question": "Triangle $A$ has vertices $(1, 1)$, $(3, 1)$ and $(1, 2)$. Triangle $B$ has vertices $(1, -1)$, $(1, -3)$ and $(2, -1)$. Describe fully the single transformation that maps $A$ onto $B$.",
+    "solution": "The shape is the same size but has turned, so it is a rotation.\n\nTest $90^\\circ$ clockwise about the origin, which maps $(x, y) \\to (y, -x)$:\n$$(1, 1) \\to (1, -1), \\qquad (3, 1) \\to (1, -3), \\qquad (1, 2) \\to (2, -1)$$\nThese are exactly the vertices of $B$.\n\n**Rotation, $90^\\circ$ clockwise, centre $(0, 0)$.** (All three details are needed for full marks.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses the mirror lines $x = a$ and $y = a$, e.g. draws $x = 2$ as a horizontal line.",
+    "correction": "$x = 2$ is the set of points whose $x$-coordinate is 2, such as $(2, 0)$, $(2, 5)$: a **vertical** line. $y = 2$ is horizontal."
+   },
+   {
+    "id": "m2",
+    "text": "Describes a transformation incompletely or with two transformations, e.g. \"rotation $90^\\circ$\" (no direction or centre) or \"reflected then translated\".",
+    "correction": "The question asks for a single transformation. Rotation needs angle, direction and centre; reflection needs the mirror line; translation needs a vector; enlargement needs scale factor and centre."
+   },
+   {
+    "id": "m3",
+    "text": "Writes the translation vector the wrong way round or with the wrong signs, e.g. \"3 left and 2 up\" written as $\\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$ or $\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$.",
+    "correction": "Top number $=$ horizontal (right positive), bottom $=$ vertical (up positive): 3 left and 2 up is $\\begin{pmatrix} -3 \\\\ 2 \\end{pmatrix}$."
+   },
+   {
+    "id": "m4",
+    "text": "Multiplies the coordinates by the scale factor when the centre of enlargement is not the origin, e.g. centre $(1, 1)$, scale factor 2, point $(3, 2) \\to (6, 4)$.",
+    "correction": "Multiply the distance **from the centre**: $(3, 2)$ is $\\begin{pmatrix} 2 \\\\ 1 \\end{pmatrix}$ from $(1, 1)$; doubled this is $\\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}$, so the image is $(1 + 4, 1 + 2) = (5, 3)$."
+   }
+  ]
+ },
+ {
+  "id": "geo-congruence",
+  "prerequisites": [
+   "geo-angle-facts",
+   "geo-parallel-lines-angles",
+   "geo-shape-properties",
+   "geo-transformations"
+  ],
+  "keyIdea": "Two shapes are **congruent** if they are exactly the same shape and size: one maps onto the other by reflections, rotations and translations (rigid motions).\n\nTwo triangles are congruent if one of these sets of corresponding parts are equal:\n* **SSS** – three sides.\n* **SAS** – two sides and the angle **between** them (the included angle).\n* **ASA** or **AAS** – two angles and a **corresponding** side.\n* **RHS** (US: HL) – right angle, hypotenuse and one other side.\n\n**Not enough:** AAA (only proves the triangles are similar) and SSA where the angle is not between the sides.\n\n**Writing a proof:** list three equal pairs, each with a reason (given, common side, alternate angles, shape properties), then name the condition. Write the triangles with corresponding vertices in the same order, e.g. $\\triangle ABC \\cong \\triangle PQR$. Congruence then shows other corresponding sides and angles are equal.",
+  "workedExamples": [
+   {
+    "question": "$ABCD$ is a parallelogram with diagonal $AC$. Prove that triangle $ABC$ is congruent to triangle $CDA$.",
+    "solution": "$AB = CD$ (opposite sides of a parallelogram are equal)\n\n$BC = DA$ (opposite sides of a parallelogram are equal)\n\n$AC = CA$ (common side)\n\nSo $\\triangle ABC \\cong \\triangle CDA$ (SSS).\n\n(Alternatively: $\\angle BAC = \\angle DCA$ because they are alternate angles with $AB \\parallel DC$, then SAS using $AB = CD$ and $AC$ common.)"
+   },
+   {
+    "question": "Triangle $ABC$ has $AB = 6\\text{ cm}$, $\\angle A = 50^\\circ$, $\\angle B = 70^\\circ$. Triangle $PQR$ has $PQ = 6\\text{ cm}$, $\\angle P = 70^\\circ$, $\\angle Q = 50^\\circ$. Are the triangles congruent? If so, complete $\\triangle ABC \\cong \\triangle \\ldots$.",
+    "solution": "In each triangle the $6\\text{ cm}$ side lies between the $50^\\circ$ and $70^\\circ$ angles.\n\nMatch the angles: $\\angle A = \\angle Q = 50^\\circ$ and $\\angle B = \\angle P = 70^\\circ$, with the included side $AB = QP = 6\\text{ cm}$.\n\nSo the triangles are congruent by **ASA**, and the third vertices correspond: $C \\leftrightarrow R$.\n\n$$\\triangle ABC \\cong \\triangle QPR$$\n\nNote that writing $\\triangle ABC \\cong \\triangle PQR$ would wrongly match $A$ with $P$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks three equal angles (AAA) prove two triangles are congruent.",
+    "correction": "Equal angles only fix the shape, not the size: a triangle with angles $50^\\circ, 60^\\circ, 70^\\circ$ and sides twice as long has the same angles. AAA proves similarity, not congruence – you need at least one pair of corresponding sides."
+   },
+   {
+    "id": "m2",
+    "text": "Uses two sides and a non-included angle (SSA) as if it were SAS.",
+    "correction": "For SAS the angle must be between the two sides. With SSA two different triangles are often possible (the ambiguous case), so SSA does not prove congruence (except RHS, where the angle is $90^\\circ$)."
+   },
+   {
+    "id": "m3",
+    "text": "Matches vertices in the wrong order, e.g. writes $\\triangle ABC \\cong \\triangle PQR$ when $A$ corresponds to $Q$, then wrongly concludes $BC = QR$.",
+    "correction": "Order the letters so equal angles and sides correspond: here $\\triangle ABC \\cong \\triangle QPR$, so $BC = PR$ and $AC = QR$."
+   },
+   {
+    "id": "m4",
+    "text": "Gives a \"proof\" with equal parts but no reasons, or uses the conclusion as a reason (e.g. \"$AB = CD$ because the triangles are congruent\").",
+    "correction": "Each equal pair needs a reason that does not depend on what you are proving: given information, a common side, vertically opposite angles, alternate angles, or properties of the shape. State the condition (SSS, SAS, ASA/AAS, RHS) at the end."
+   }
+  ]
+ }
+]

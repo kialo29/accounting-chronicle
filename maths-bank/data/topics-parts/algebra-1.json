@@ -1,0 +1,895 @@
+[
+ {
+  "id": "alg-notation-simplifying",
+  "prerequisites": [
+   "num-order-of-operations",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "**Notation.** Leave out $\\times$ signs and write the number first: $3 \\times a = 3a$, $a \\times b = ab$, $a \\times a = a^2$, $a \\div b = \\frac{a}{b}$, $1a = a$.\n\n**Writing from words.** \"5 more than $n$\" is $n + 5$; \"5 less than $n$\" is $n - 5$; \"$n$ less than 5\" is $5 - n$; \"double $n$ then add 3\" is $2n + 3$.\n\n**Like terms** have exactly the same letter part: $3xy$ and $-5yx$ are like terms; $x$ and $x^2$ are not. Collect like terms by adding their coefficients, keeping the sign in front of each term: $7x - 3y - 2x = 5x - 3y$.\n\n**Products and quotients:** multiply numbers, then letters: $2a \\times 3ab = 6a^2b$; $\\frac{12x^2y}{4x} = 3xy$.\n\nTwo expressions are **equivalent** if they are equal for every value of the letters.",
+  "workedExamples": [
+   {
+    "question": "Simplify $5x + 3y - 2x - 7y + 4$.",
+    "solution": "Collect the $x$ terms (the sign belongs to the term after it):\n$$5x - 2x = 3x$$\n\nCollect the $y$ terms:\n$$3y - 7y = -4y$$\n\nThe constant 4 has no like term, so it stays.\n\n$$5x + 3y - 2x - 7y + 4 = 3x - 4y + 4$$"
+   },
+   {
+    "question": "Simplify (a) $4a \\times 3ab$ (b) $\\dfrac{12x^2y}{4x}$",
+    "solution": "(a) Multiply the numbers: $4 \\times 3 = 12$. Multiply the letters: $a \\times a \\times b = a^2b$.\n$$4a \\times 3ab = 12a^2b$$\n\n(b) Divide the numbers: $12 \\div 4 = 3$. Cancel one $x$: $\\frac{x^2}{x} = x$. The $y$ stays.\n$$\\frac{12x^2y}{4x} = 3xy$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Combines unlike terms, e.g. writes $3a + 2b = 5ab$ or $2x + 3x^2 = 5x^3$.",
+    "correction": "Only like terms (identical letter parts, including powers) can be added. $3a + 2b$ and $2x + 3x^2$ are already fully simplified. Test with numbers: if $a = b = 1$, then $3a + 2b = 5$ but $5ab = 5$; with $a = 2, b = 1$: $3a + 2b = 8$ but $5ab = 10$."
+   },
+   {
+    "id": "m2",
+    "text": "Confuses $2a$ with $a^2$: writes $a + a = a^2$ or $a \\times a = 2a$.",
+    "correction": "$a + a$ means two lots of $a$, so $a + a = 2a$; $a \\times a$ means $a$ multiplied by itself, so $a \\times a = a^2$. Check with $a = 5$: $5 + 5 = 10 = 2 \\times 5$, but $5 \\times 5 = 25 = 5^2$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the sign in front of a term when collecting, e.g. $7x - 3y - 2x + 5y = 9x + 2y$ (treating $-2x$ as $+2x$).",
+    "correction": "Each sign belongs to the term that follows it. The $x$ terms are $7x$ and $-2x$, so $7x - 2x = 5x$; the $y$ terms are $-3y + 5y = 2y$. The answer is $5x + 2y$."
+   },
+   {
+    "id": "m4",
+    "text": "Writes subtraction phrases the wrong way round, e.g. \"5 less than $n$\" as $5 - n$.",
+    "correction": "\"5 less than $n$\" means start with $n$ and take 5 away: $n - 5$. Test with a number: 5 less than 12 is 7, and $12 - 5 = 7$, whereas $5 - 12 = -7$."
+   }
+  ]
+ },
+ {
+  "id": "alg-substitution-formulae",
+  "prerequisites": [
+   "alg-notation-simplifying",
+   "num-order-of-operations",
+   "num-negative-numbers",
+   "num-fractions-multiply-divide"
+  ],
+  "keyIdea": "To **substitute**, replace each letter by its value **in brackets**, then follow the order of operations (BIDMAS).\n\n* $3x^2$ means $3 \\times x^2$: square first, then multiply. With $x = 5$: $3(5)^2 = 3 \\times 25 = 75$.\n* $2x$ means $2 \\times x$, so with $x = 4$, $2x = 8$ (not 24).\n* Negative values: with $x = -4$, $x^2 = (-4)^2 = 16$, but $-x^2 = -(16) = -16$. Subtracting a negative adds: $10 - 2(-3) = 10 + 6 = 16$.\n* Fractions: work with the fraction exactly, e.g. $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$.\n\nA **formula** links quantities, e.g. $v = u + at$. Substitute the known values; if the unknown is not the subject, substitute and then solve the resulting equation.",
+  "workedExamples": [
+   {
+    "question": "Work out the value of $2a^2 - 3b$ when $a = -3$ and $b = -5$.",
+    "solution": "Substitute, keeping each value in brackets:\n$$2(-3)^2 - 3(-5)$$\n\nIndices first: $(-3)^2 = 9$.\n$$2 \\times 9 - 3 \\times (-5) = 18 - (-15)$$\n\nSubtracting a negative is adding:\n$$18 + 15 = 33$$"
+   },
+   {
+    "question": "The kinetic energy of an object is $E = \\frac{1}{2}mv^2$. Find $E$ when $m = 6$ and $v = \\frac{2}{3}$.",
+    "solution": "Substitute:\n$$E = \\frac{1}{2} \\times 6 \\times \\left(\\frac{2}{3}\\right)^2$$\n\nSquare the fraction first: $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$.\n\n$$E = 3 \\times \\frac{4}{9} = \\frac{12}{9} = \\frac{4}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Squares a negative value without brackets: with $x = -4$, writes $x^2 = -4^2 = -16$.",
+    "correction": "Substitute in brackets: $x^2 = (-4)^2 = (-4) \\times (-4) = 16$. A square of any non-zero number is positive. (On a calculator, type the brackets.)"
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies before squaring: with $x = 5$, works out $3x^2$ as $(3 \\times 5)^2 = 225$.",
+    "correction": "The power applies only to $x$. Indices come before multiplication: $3x^2 = 3 \\times 5^2 = 3 \\times 25 = 75$."
+   },
+   {
+    "id": "m3",
+    "text": "Writes the digits side by side instead of multiplying: with $x = 4$, $2x = 24$; with $a = 3, b = 5$, $ab = 35$.",
+    "correction": "Letters written next to each other are multiplied: $2x = 2 \\times 4 = 8$ and $ab = 3 \\times 5 = 15$. Always write the multiplication sign when you substitute."
+   },
+   {
+    "id": "m4",
+    "text": "Mishandles subtracting a negative term: with $y = -3$, works out $10 - 2y$ as $10 - 6 = 4$.",
+    "correction": "$2y = 2 \\times (-3) = -6$, so $10 - 2y = 10 - (-6) = 10 + 6 = 16$. Keep the substituted value in brackets so the double negative is visible."
+   }
+  ]
+ },
+ {
+  "id": "alg-expand-factorise-single",
+  "prerequisites": [
+   "alg-notation-simplifying",
+   "num-hcf-lcm",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "**Expanding** uses the distributive property: the term outside multiplies **every** term inside, signs included.\n$$a(b + c) = ab + ac \\qquad -3(x - 4) = -3x + 12 \\qquad 2x(x + 5) = 2x^2 + 10x$$\n\n**Expand and simplify:** expand each bracket, then collect like terms:\n$3(x + 2) - 2(x - 5) = 3x + 6 - 2x + 10 = x + 16$.\n\n**Factorising** is the reverse. Find the highest common factor (HCF; US: GCF) of all the terms, numbers **and** letters, write it outside the bracket, and divide each term by it:\n$$12x^2 - 8x = 4x(3x - 2)$$\n\"Factorise fully\" means nothing more can be taken out. If a term equals the HCF, a $1$ is left behind: $5x + 5 = 5(x + 1)$. Always check by expanding.",
+  "workedExamples": [
+   {
+    "question": "Expand and simplify $4(2x - 3) - 3(x - 5)$.",
+    "solution": "Expand each bracket; the $-3$ multiplies both $x$ and $-5$:\n$$8x - 12 - 3x + 15$$\n\nCollect like terms:\n$$8x - 3x = 5x \\qquad -12 + 15 = 3$$\n\n$$4(2x - 3) - 3(x - 5) = 5x + 3$$"
+   },
+   {
+    "question": "Factorise fully $18a^2b - 12ab^2$.",
+    "solution": "HCF of the numbers: $\\text{HCF}(18, 12) = 6$.\n\nLetters: both terms contain at least one $a$ and at least one $b$, so the HCF is $6ab$.\n\nDivide each term by $6ab$: $\\frac{18a^2b}{6ab} = 3a$ and $\\frac{12ab^2}{6ab} = 2b$.\n$$18a^2b - 12ab^2 = 6ab(3a - 2b)$$\n\nCheck: $6ab \\times 3a = 18a^2b$ and $6ab \\times 2b = 12ab^2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies only the first term in the bracket: $3(x + 4) = 3x + 4$.",
+    "correction": "The 3 multiplies every term inside: $3(x + 4) = 3x + 12$. Check with $x = 1$: $3(5) = 15$, and $3 + 12 = 15$, but $3 + 4 = 7$."
+   },
+   {
+    "id": "m2",
+    "text": "Gets the sign wrong when the multiplier is negative: $-2(x - 5) = -2x - 10$.",
+    "correction": "$-2 \\times (-5) = +10$, so $-2(x - 5) = -2x + 10$. A negative outside the bracket changes the sign of every term inside."
+   },
+   {
+    "id": "m3",
+    "text": "Factorises only partly, e.g. $12x^2 - 8x = 4(3x^2 - 2x)$ or $2x(6x - 4)$, and calls it fully factorised.",
+    "correction": "Take out the HCF of numbers and letters: $\\text{HCF}(12, 8) = 4$ and both terms contain $x$, so $12x^2 - 8x = 4x(3x - 2)$. If the bracket still has a common factor, you have not finished."
+   },
+   {
+    "id": "m4",
+    "text": "Leaves out the 1 when a term is the whole HCF: $3x^2 + x = x(3x)$ or $5x + 5 = 5(x)$.",
+    "correction": "$x \\div x = 1$, so $3x^2 + x = x(3x + 1)$, and $5x + 5 = 5(x + 1)$. Expanding $x(3x)$ gives only $3x^2$, so a term has been lost."
+   }
+  ]
+ },
+ {
+  "id": "alg-expand-double-triple",
+  "prerequisites": [
+   "alg-expand-factorise-single"
+  ],
+  "keyIdea": "Every term in the first bracket multiplies every term in the second:\n$$(a + b)(c + d) = ac + ad + bc + bd$$\nUse a **grid** or **FOIL** (First, Outer, Inner, Last), then collect like terms:\n$(x + 3)(x - 5) = x^2 - 5x + 3x - 15 = x^2 - 2x - 15$.\n\n**Squaring a bracket** means writing it twice: $(x + 3)^2 = (x + 3)(x + 3) = x^2 + 6x + 9$, **not** $x^2 + 9$. In general $(a + b)^2 = a^2 + 2ab + b^2$.\n\n**Triple brackets:** expand two brackets first, then multiply the result by the third bracket. Before simplifying, $(x + a)(x + b)(x + c)$ gives $2 \\times 2 \\times 2 = 8$ products.\n\nKeep careful track of signs: $(-) \\times (-) = (+)$. Check by substituting a value such as $x = 1$ into both forms.",
+  "workedExamples": [
+   {
+    "question": "Expand and simplify $(2x - 3)(x + 5)$.",
+    "solution": "Multiply each term in the first bracket by each term in the second:\n\n| $\\times$ | $x$ | $+5$ |\n|---|---|---|\n| $2x$ | $2x^2$ | $10x$ |\n| $-3$ | $-3x$ | $-15$ |\n\nAdd the four products and collect the $x$ terms:\n$$2x^2 + 10x - 3x - 15 = 2x^2 + 7x - 15$$"
+   },
+   {
+    "question": "Expand and simplify $(x + 1)(x - 2)(x + 3)$.",
+    "solution": "First expand two brackets:\n$$(x + 1)(x - 2) = x^2 - 2x + x - 2 = x^2 - x - 2$$\n\nNow multiply every term by $(x + 3)$:\n$$(x^2 - x - 2)(x + 3) = x^3 + 3x^2 - x^2 - 3x - 2x - 6$$\n\nCollect like terms:\n$$x^3 + 2x^2 - 5x - 6$$\n\nCheck with $x = 1$: $(2)(-1)(4) = -8$ and $1 + 2 - 5 - 6 = -8$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Squares each term separately: $(x + 5)^2 = x^2 + 25$.",
+    "correction": "$(x + 5)^2 = (x + 5)(x + 5) = x^2 + 5x + 5x + 25 = x^2 + 10x + 25$. Check with $x = 1$: $6^2 = 36$, and $1 + 10 + 25 = 36$, but $1 + 25 = 26$."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies only the first terms and the last terms: $(x + 3)(x + 4) = x^2 + 12$.",
+    "correction": "There are four products, including the outer and inner ones: $x^2 + 4x + 3x + 12 = x^2 + 7x + 12$. A grid makes sure none is missed."
+   },
+   {
+    "id": "m3",
+    "text": "Gets the sign of the constant wrong with two negatives: $(x - 3)(x - 5) = x^2 - 8x - 15$.",
+    "correction": "$(-3) \\times (-5) = +15$, so $(x - 3)(x - 5) = x^2 - 5x - 3x + 15 = x^2 - 8x + 15$."
+   },
+   {
+    "id": "m4",
+    "text": "Cubes each term of a bracket: $(x + 2)^3 = x^3 + 8$.",
+    "correction": "Write it as three brackets and expand in two stages: $(x + 2)^2 = x^2 + 4x + 4$, then $(x^2 + 4x + 4)(x + 2) = x^3 + 2x^2 + 4x^2 + 8x + 4x + 8 = x^3 + 6x^2 + 12x + 8$."
+   }
+  ]
+ },
+ {
+  "id": "alg-polynomial-operations",
+  "prerequisites": [
+   "alg-expand-double-triple",
+   "alg-notation-simplifying",
+   "num-index-laws"
+  ],
+  "keyIdea": "A **polynomial** is a sum of terms of the form $ax^n$ where $n$ is a whole number. By number of terms: monomial ($5x^3$), binomial ($x - 4$), trinomial ($x^2 + 3x - 7$).\n\nThe **degree** of a term is its exponent (for several variables, add the exponents: $4x^2y^3$ has degree 5). The degree of a polynomial is the greatest degree of any term.\n\n**Standard form** lists terms in descending degree: $-5x^3 + 2x + 7$. The **leading coefficient** is the coefficient of the highest-degree term ($-5$ here), not just the first number written.\n\n**Add:** combine like terms. **Subtract:** distribute the negative to **every** term of the second polynomial (add the opposite). **Multiply:** use the distributive property, multiplying every term by every term; exponents add ($x^2 \\cdot x^3 = x^5$). The result of each operation is again a polynomial (closure).",
+  "workedExamples": [
+   {
+    "question": "Simplify $(4x^3 - 2x^2 + 7) - (x^3 + 5x^2 - 3x + 2)$. Write the answer in standard form and state its degree and leading coefficient.",
+    "solution": "Distribute the negative to every term of the second polynomial:\n$$4x^3 - 2x^2 + 7 - x^3 - 5x^2 + 3x - 2$$\n\nCombine like terms:\n$$4x^3 - x^3 = 3x^3 \\qquad -2x^2 - 5x^2 = -7x^2 \\qquad 3x \\qquad 7 - 2 = 5$$\n\n$$3x^3 - 7x^2 + 3x + 5$$\n\nDegree 3, leading coefficient 3."
+   },
+   {
+    "question": "Multiply $(2x - 3)(x^2 + 4x - 5)$.",
+    "solution": "Multiply each term of the binomial by every term of the trinomial:\n$$2x(x^2 + 4x - 5) = 2x^3 + 8x^2 - 10x$$\n$$-3(x^2 + 4x - 5) = -3x^2 - 12x + 15$$\n\nCombine like terms:\n$$2x^3 + (8x^2 - 3x^2) + (-10x - 12x) + 15 = 2x^3 + 5x^2 - 22x + 15$$\n\nCheck with $x = 2$: $(1)(4 + 8 - 5) = 7$ and $16 + 20 - 44 + 15 = 7$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Distributes the subtraction sign to the first term only: $(5x^2 + 3x - 1) - (2x^2 - 4x + 6) = 3x^2 - x + 5$.",
+    "correction": "Subtracting a polynomial means subtracting every term: $5x^2 + 3x - 1 - 2x^2 + 4x - 6 = 3x^2 + 7x - 7$. Rewrite as adding the opposite before combining."
+   },
+   {
+    "id": "m2",
+    "text": "Adds the exponents when adding like terms: $3x^2 + 4x^2 = 7x^4$.",
+    "correction": "When adding like terms, add the coefficients and keep the variable part: $3x^2 + 4x^2 = 7x^2$. Exponents add only when you **multiply** powers of the same base."
+   },
+   {
+    "id": "m3",
+    "text": "Reads the degree or leading coefficient from the first term written: for $7 + 2x - 5x^3$ says the leading coefficient is 7 (or the degree is 0).",
+    "correction": "Write the polynomial in standard form first: $-5x^3 + 2x + 7$. The degree is 3 and the leading coefficient is $-5$ (including its sign)."
+   },
+   {
+    "id": "m4",
+    "text": "Multiplies the exponents when multiplying powers: $x^2 \\cdot x^3 = x^6$, so $2x^2 \\cdot 3x^3 = 6x^6$.",
+    "correction": "$x^2 \\cdot x^3 = (x \\cdot x)(x \\cdot x \\cdot x) = x^5$, so exponents add: $2x^2 \\cdot 3x^3 = 6x^5$."
+   }
+  ]
+ },
+ {
+  "id": "alg-factorising-quadratics",
+  "prerequisites": [
+   "alg-expand-double-triple",
+   "alg-expand-factorise-single"
+  ],
+  "keyIdea": "Factorising reverses expanding. **Always take out any common factor first.**\n\n**$x^2 + bx + c$:** find two numbers that **multiply to $c$** and **add to $b$**: $x^2 + 7x + 12 = (x + 3)(x + 4)$. If $c > 0$ both numbers have the sign of $b$; if $c < 0$ they have opposite signs: $x^2 - x - 12 = (x - 4)(x + 3)$.\n\n**$ax^2 + bx + c$:** find two numbers that multiply to $ac$ and add to $b$, split the middle term, then factorise in pairs.\n\n**Difference of two squares (DOTS):** $a^2 - b^2 = (a + b)(a - b)$, e.g. $9x^2 - 25 = (3x + 5)(3x - 5)$. A sum of squares such as $x^2 + 9$ does not factorise.\n\n**Factorise completely** (US: factor completely): $2x^2 - 18 = 2(x^2 - 9) = 2(x + 3)(x - 3)$. Check by expanding.",
+  "workedExamples": [
+   {
+    "question": "Factorise $6x^2 + x - 15$.",
+    "solution": "$ac = 6 \\times (-15) = -90$. We need two numbers with product $-90$ and sum $+1$: $10$ and $-9$.\n\nSplit the middle term:\n$$6x^2 + 10x - 9x - 15$$\n\nFactorise each pair:\n$$2x(3x + 5) - 3(3x + 5)$$\n\nTake out the common bracket:\n$$(3x + 5)(2x - 3)$$\n\nCheck: $(3x + 5)(2x - 3) = 6x^2 - 9x + 10x - 15 = 6x^2 + x - 15$."
+   },
+   {
+    "question": "Factorise completely $3x^3 - 12x$.",
+    "solution": "Common factor first: the HCF is $3x$.\n$$3x^3 - 12x = 3x(x^2 - 4)$$\n\n$x^2 - 4 = x^2 - 2^2$ is a difference of two squares:\n$$3x(x + 2)(x - 2)$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds the right pair of numbers but with the wrong signs: $x^2 - x - 12 = (x + 4)(x - 3)$.",
+    "correction": "The numbers must multiply to $-12$ **and** add to $-1$: these are $-4$ and $+3$, so $x^2 - x - 12 = (x - 4)(x + 3)$. Expanding $(x + 4)(x - 3)$ gives $x^2 + x - 12$, so always expand to check."
+   },
+   {
+    "id": "m2",
+    "text": "For $ax^2 + bx + c$ uses only $c$ and ignores $a$, e.g. $2x^2 + 7x + 3 = (2x + 3)(x + 1)$.",
+    "correction": "Expanding $(2x + 3)(x + 1)$ gives $2x^2 + 5x + 3$, not $2x^2 + 7x + 3$. Use $ac = 6$: numbers $6$ and $1$ (sum 7), so $2x^2 + 6x + x + 3 = 2x(x + 3) + 1(x + 3) = (2x + 1)(x + 3)$."
+   },
+   {
+    "id": "m3",
+    "text": "Factorises a difference of two squares as a square: $x^2 - 16 = (x - 4)^2$ (or tries to factorise $x^2 + 16$ as $(x + 4)(x - 4)$).",
+    "correction": "$(x - 4)^2 = x^2 - 8x + 16$. The correct factorisation is $x^2 - 16 = (x + 4)(x - 4)$, whose middle terms $+4x - 4x$ cancel. A sum of two squares, $x^2 + 16$, does not factorise."
+   },
+   {
+    "id": "m4",
+    "text": "Does not factorise completely: $2x^2 - 8 = (2x + 4)(x - 2)$.",
+    "correction": "$(2x + 4)$ still has a common factor of 2. Take the common factor out first: $2x^2 - 8 = 2(x^2 - 4) = 2(x + 2)(x - 2)$."
+   }
+  ]
+ },
+ {
+  "id": "alg-linear-equations",
+  "prerequisites": [
+   "alg-notation-simplifying",
+   "alg-expand-factorise-single",
+   "num-negative-numbers",
+   "num-fractions-multiply-divide"
+  ],
+  "keyIdea": "An equation is a balance: whatever you do to one side, do to the other. Undo operations with **inverse operations** in reverse order: for $3x + 5 = 20$, subtract 5 then divide by 3, giving $x = 5$.\n\n* **Unknown on both sides:** collect the $x$ terms on one side (usually the side with more $x$), numbers on the other.\n* **Brackets:** expand first (or divide both sides by the number outside).\n* **Fractions:** multiply **every term** on both sides by the LCM of the denominators.\n\nAlways check by substituting your answer into the original equation.\n\nIf the $x$ terms cancel: a **false** statement (e.g. $6 = 5$) means **no solution**; a **true** statement (e.g. $6 = 6$) means **infinitely many solutions** (the equation is an identity).",
+  "workedExamples": [
+   {
+    "question": "Solve $5(x - 2) = 3x + 4$.",
+    "solution": "Expand the bracket:\n$$5x - 10 = 3x + 4$$\n\nSubtract $3x$ from both sides:\n$$2x - 10 = 4$$\n\nAdd 10 to both sides:\n$$2x = 14$$\n\nDivide by 2:\n$$x = 7$$\n\nCheck: $5(7 - 2) = 25$ and $3(7) + 4 = 25$."
+   },
+   {
+    "question": "Solve $\\dfrac{x + 1}{3} - \\dfrac{x - 2}{4} = 2$.",
+    "solution": "The LCM of 3 and 4 is 12. Multiply every term by 12:\n$$4(x + 1) - 3(x - 2) = 24$$\n\nExpand, taking care with $-3 \\times (-2) = +6$:\n$$4x + 4 - 3x + 6 = 24$$\n\nSimplify and solve:\n$$x + 10 = 24 \\quad\\Rightarrow\\quad x = 14$$\n\nCheck: $\\frac{15}{3} - \\frac{12}{4} = 5 - 3 = 2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong inverse operation when moving a term: $3x + 5 = 20 \\Rightarrow 3x = 25$.",
+    "correction": "To remove $+5$, subtract 5 from **both** sides: $3x = 15$, so $x = 5$. Check: $3(5) + 5 = 20$."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies only the fraction term by the denominator: $\\frac{x}{3} + 2 = 5 \\Rightarrow x + 2 = 15$.",
+    "correction": "Every term must be multiplied by 3: $x + 6 = 15$, so $x = 9$. (Or subtract 2 first: $\\frac{x}{3} = 3$, $x = 9$.)"
+   },
+   {
+    "id": "m3",
+    "text": "Divides the wrong way round when the answer is not a whole number: $4x = 2 \\Rightarrow x = 2$ (working out $4 \\div 2$).",
+    "correction": "Divide both sides by the coefficient of $x$: $x = \\frac{2}{4} = \\frac{1}{2}$. Check: $4 \\times \\frac{1}{2} = 2$."
+   },
+   {
+    "id": "m4",
+    "text": "When the $x$ terms cancel, concludes $x = 0$: $2(x + 3) = 2x + 5 \\Rightarrow 6 = 5$, \"so $x = 0$\".",
+    "correction": "$6 = 5$ is false whatever $x$ is, so the equation has **no solution**. (Substituting $x = 0$ gives $6 = 5$, which fails.) If the result is a true statement like $6 = 6$, every value of $x$ works."
+   }
+  ]
+ },
+ {
+  "id": "alg-forming-equations",
+  "prerequisites": [
+   "alg-linear-equations",
+   "alg-notation-simplifying",
+   "geo-angle-facts",
+   "geo-perimeter-area"
+  ],
+  "keyIdea": "**Method:** (1) define the unknown, e.g. \"let $x$ be the son's age in years\"; (2) write each quantity as an expression in $x$; (3) find two things that are **equal** and form the equation; (4) solve; (5) answer the actual question, in context, and check.\n\nUseful facts:\n* angles on a straight line sum to $180^\\circ$, in a triangle $180^\\circ$, around a point $360^\\circ$;\n* perimeter is the sum of all the sides;\n* ages: in $k$ years **everyone** is $k$ years older;\n* consecutive integers $n, n + 1, n + 2$; consecutive even (or odd) numbers $n, n + 2, n + 4$;\n* \"$A$ is 3 times $B$\" means $A = 3B$: test the statement with simple numbers.",
+  "workedExamples": [
+   {
+    "question": "The angles of a triangle are $x^\\circ$, $(2x + 10)^\\circ$ and $(3x - 40)^\\circ$. Find the size of the largest angle.",
+    "solution": "Angles in a triangle sum to $180^\\circ$:\n$$x + (2x + 10) + (3x - 40) = 180$$\n\nSimplify and solve:\n$$6x - 30 = 180 \\quad\\Rightarrow\\quad 6x = 210 \\quad\\Rightarrow\\quad x = 35$$\n\nThe angles are $35^\\circ$, $2(35) + 10 = 80^\\circ$ and $3(35) - 40 = 65^\\circ$ (check: $35 + 80 + 65 = 180$).\n\nThe largest angle is $80^\\circ$."
+   },
+   {
+    "question": "Amira is 3 times as old as her son. In 12 years' time she will be twice as old as him. How old are they now?",
+    "solution": "Let the son's age now be $s$ years. Amira is $3s$ years old.\n\nIn 12 years: son $s + 12$, Amira $3s + 12$. Amira will be twice as old:\n$$3s + 12 = 2(s + 12)$$\n\nExpand and solve:\n$$3s + 12 = 2s + 24 \\quad\\Rightarrow\\quad s = 12$$\n\nThe son is 12 and Amira is 36.\n\nCheck: in 12 years they are 24 and 48, and $48 = 2 \\times 24$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reverses a multiplicative comparison: \"there are 4 times as many girls as boys\" written as $4g = b$.",
+    "correction": "Test with numbers: 40 girls and 10 boys fits the sentence, and $40 = 4 \\times 10$, so $g = 4b$. Multiply the **smaller** group to make it equal the larger."
+   },
+   {
+    "id": "m2",
+    "text": "In age problems adds the years to only one person or outside the bracket: writes $3s + 12 = 2s + 12$ instead of $3s + 12 = 2(s + 12)$.",
+    "correction": "In 12 years the son is $s + 12$, so twice his age is $2(s + 12) = 2s + 24$. Both people age by 12 years and the whole future age is doubled."
+   },
+   {
+    "id": "m3",
+    "text": "Solves for $x$ but does not answer the question, e.g. gives $x = 35$ when asked for the largest angle.",
+    "correction": "After solving, substitute back to find what was asked: the angles are $35^\\circ$, $80^\\circ$, $65^\\circ$, so the largest angle is $80^\\circ$. Reread the question before writing the final answer."
+   },
+   {
+    "id": "m4",
+    "text": "Writes consecutive even (or odd) numbers as $n, n + 1, n + 2$.",
+    "correction": "Consecutive even (or odd) numbers differ by 2: $n, n + 2, n + 4$ (e.g. $8, 10, 12$). Using $n + 1$ would give a number of the opposite parity."
+   }
+  ]
+ },
+ {
+  "id": "alg-linear-inequalities",
+  "prerequisites": [
+   "alg-linear-equations",
+   "num-place-value-ordering",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "Symbols: $<$ less than, $>$ greater than, $\\le$ less than or equal to, $\\ge$ greater than or equal to.\n\n**Number lines:** open circle for $<$ or $>$ (end value not included), filled circle for $\\le$ or $\\ge$ (included).\n\n**Solving:** treat it like an equation, **except** that multiplying or dividing both sides by a **negative** number reverses the inequality sign:\n$$-2x < 6 \\quad\\Rightarrow\\quad x > -3$$\n\n**Double inequalities:** do the same operation to all three parts:\n$$-3 < 2x + 1 \\le 9 \\;\\Rightarrow\\; -4 < 2x \\le 8 \\;\\Rightarrow\\; -2 < x \\le 4$$\nThe **integer solutions** are $-1, 0, 1, 2, 3, 4$.\n\n**Compound inequalities (US):** \"and\" means both must hold (the overlap); \"or\" means either holds, e.g. $x < -1$ or $x \\ge 3$.",
+  "workedExamples": [
+   {
+    "question": "Solve $5 - 3x \\ge 17$ and describe the solution on a number line.",
+    "solution": "Subtract 5 from both sides:\n$$-3x \\ge 12$$\n\nDivide both sides by $-3$; dividing by a negative **reverses** the sign:\n$$x \\le -4$$\n\nOn a number line: a filled circle at $-4$ (since $-4$ is included) with an arrow to the left.\n\nCheck with $x = -5$: $5 - 3(-5) = 20 \\ge 17$ ✓."
+   },
+   {
+    "question": "Find all the integers $n$ such that $-7 \\le 3n - 1 < 8$.",
+    "solution": "Add 1 to all three parts:\n$$-6 \\le 3n < 9$$\n\nDivide all three parts by 3:\n$$-2 \\le n < 3$$\n\n$-2$ is included, 3 is not. The integers are $-2, -1, 0, 1, 2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Does not reverse the sign when dividing by a negative: $-4x > 12 \\Rightarrow x > -3$.",
+    "correction": "Dividing by $-4$ reverses the inequality: $x < -3$. Check with $x = -4$: $-4(-4) = 16 > 12$ ✓, whereas $x = 0$ (which satisfies $x > -3$) gives $0 > 12$ ✗."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the wrong circle on a number line, e.g. an open circle for $x \\le 2$ (or a filled circle for $x > 2$).",
+    "correction": "A filled circle means the end value is included ($\\le$, $\\ge$); an open circle means it is not ($<$, $>$). For $x \\le 2$, 2 is a solution, so use a filled circle."
+   },
+   {
+    "id": "m3",
+    "text": "Includes or excludes the end values incorrectly when listing integers: for $-2 < n \\le 3$ writes $-2, -1, 0, 1, 2$.",
+    "correction": "$-2 < n$ excludes $-2$; $n \\le 3$ includes 3. The integers are $-1, 0, 1, 2, 3$."
+   },
+   {
+    "id": "m4",
+    "text": "Applies an operation to only part of a double inequality: $-3 < 2x + 1 < 9 \\Rightarrow -3 < 2x < 8$.",
+    "correction": "Subtract 1 from **all three** parts: $-4 < 2x < 8$, then divide all three by 2: $-2 < x < 4$."
+   }
+  ]
+ },
+ {
+  "id": "alg-inequality-regions",
+  "prerequisites": [
+   "alg-linear-inequalities",
+   "alg-straight-line-graphs"
+  ],
+  "keyIdea": "An inequality in $x$ and $y$ describes a **region** of the plane.\n\n1. Draw the **boundary** by replacing the sign with $=$. Use a **dashed** line for $<$ or $>$ (points on the line are not included) and a **solid** line for $\\le$ or $\\ge$ (included).\n2. Choose a **test point** not on the line, often $(0, 0)$, and substitute. If it satisfies the inequality, its side is the region; if not, the other side is.\n\nWith $y$ as the subject, $y > mx + c$ is **above** the line and $y < mx + c$ is **below**. $x > k$ is to the **right** of the vertical line $x = k$; $y > k$ is above the horizontal line $y = k$. Curved boundaries work the same way: $y \\ge x^2$ is on or above the parabola.\n\nFor a **system** of inequalities, the required region satisfies all of them at once; label it $R$ and check whether to shade the wanted or unwanted side.",
+  "workedExamples": [
+   {
+    "question": "The region $R$ shown satisfies $y > 1$, $x + y \\le 5$ and $y \\le 2x$. Explain the boundary lines, then list all the points with integer coordinates in $R$.",
+    "solution": "Boundaries: $y = 1$ is **dashed** ($>$, so not included); $x + y = 5$ and $y = 2x$ are **solid** ($\\le$, so included).\n\nSince $y > 1$, integer points need $y \\ge 2$. For each $y$, the conditions give $x \\ge \\frac{y}{2}$ and $x \\le 5 - y$.\n\n$y = 2$: $1 \\le x \\le 3$, giving $(1, 2), (2, 2), (3, 2)$.\n\n$y = 3$: $1.5 \\le x \\le 2$, giving $(2, 3)$.\n\n$y = 4$: $2 \\le x \\le 1$, impossible.\n\nThe integer points are $(1, 2), (2, 2), (3, 2), (2, 3)$. Note $(3, 2)$ and $(2, 3)$ lie on the solid line $x + y = 5$ and $(1, 2)$ on $y = 2x$, so they are included; no points on $y = 1$ count.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><polygon points=\"80,220 220,220 126.67,126.67\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"20\" y1=\"260\" x2=\"345\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"348\" y=\"264\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"66\" y=\"14\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">y</text><text x=\"46\" y=\"276\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><line x1=\"100\" y1=\"256\" x2=\"100\" y2=\"264\" stroke=\"currentColor\"/><text x=\"96\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><line x1=\"140\" y1=\"256\" x2=\"140\" y2=\"264\" stroke=\"currentColor\"/><text x=\"136\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">2</text><line x1=\"180\" y1=\"256\" x2=\"180\" y2=\"264\" stroke=\"currentColor\"/><text x=\"176\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">3</text><line x1=\"220\" y1=\"256\" x2=\"220\" y2=\"264\" stroke=\"currentColor\"/><text x=\"216\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4</text><line x1=\"260\" y1=\"256\" x2=\"260\" y2=\"264\" stroke=\"currentColor\"/><text x=\"256\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5</text><line x1=\"300\" y1=\"256\" x2=\"300\" y2=\"264\" stroke=\"currentColor\"/><text x=\"296\" y=\"278\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6</text><line x1=\"56\" y1=\"220\" x2=\"64\" y2=\"220\" stroke=\"currentColor\"/><text x=\"44\" y=\"225\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><line x1=\"56\" y1=\"180\" x2=\"64\" y2=\"180\" stroke=\"currentColor\"/><text x=\"44\" y=\"185\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">2</text><line x1=\"56\" y1=\"140\" x2=\"64\" y2=\"140\" stroke=\"currentColor\"/><text x=\"44\" y=\"145\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">3</text><line x1=\"56\" y1=\"100\" x2=\"64\" y2=\"100\" stroke=\"currentColor\"/><text x=\"44\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4</text><line x1=\"56\" y1=\"60\" x2=\"64\" y2=\"60\" stroke=\"currentColor\"/><text x=\"44\" y=\"65\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5</text><line x1=\"56\" y1=\"20\" x2=\"64\" y2=\"20\" stroke=\"currentColor\"/><text x=\"44\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6</text><line x1=\"20\" y1=\"220\" x2=\"340\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><line x1=\"20\" y1=\"20\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"300\" x2=\"180\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"290\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">y = 1</text><text x=\"72\" y=\"44\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">x + y = 5</text><text x=\"186\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">y = 2x</text><text x=\"160\" y=\"208\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text></svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong line style: draws $y < 2x + 1$ with a solid line, or counts points on a dashed boundary as being in the region.",
+    "correction": "Strict inequalities ($<$, $>$) exclude the boundary, so draw it dashed and do not count points on it. Only $\\le$ and $\\ge$ have solid boundaries whose points are included."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes \"$>$\" always means shade above the line, e.g. shades above the line for $2x - y > 4$.",
+    "correction": "Rearrange so that $y$ is the subject with a positive coefficient: $2x - y > 4 \\Leftrightarrow y < 2x - 4$, which is **below** the line. Or test $(0, 0)$: $0 > 4$ is false, so the origin's side is not the region."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses $x = k$ and $y = k$, e.g. draws $x \\ge 2$ as the horizontal line through $(0, 2)$ and shades above it.",
+    "correction": "$x = 2$ is the **vertical** line through $(2, 0)$ (every point has $x$-coordinate 2), and $x \\ge 2$ is on or to the right of it."
+   },
+   {
+    "id": "m4",
+    "text": "Uses a test point that lies on the boundary, e.g. tests $(0, 0)$ for $y > 3x$, gets $0 > 0$ (false) and shades the wrong side.",
+    "correction": "$(0, 0)$ lies on $y = 3x$, so it tells you nothing about either side. Choose a point clearly off the line, e.g. $(0, 1)$: $1 > 0$ is true, so the region is the side containing $(0, 1)$, above the line."
+   }
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae",
+  "prerequisites": [
+   "alg-linear-equations",
+   "alg-substitution-formulae",
+   "alg-expand-factorise-single",
+   "num-powers-roots"
+  ],
+  "keyIdea": "Changing the subject (US: solving literal equations) is solving an equation where the answer contains letters. Undo the operations on the new subject **in reverse order**, doing the same to the **whole** of each side:\n$$v = u + at \\;\\Rightarrow\\; v - u = at \\;\\Rightarrow\\; t = \\frac{v - u}{a}$$\n\n**Powers and roots:** undo a square by square-rooting the whole side ($\\pm$, or just $+$ when the quantity must be positive); undo a square root by squaring the whole side. $a^2 = b^2 + c^2$ gives $a = \\sqrt{b^2 + c^2}$, **not** $b + c$.\n\n**Subject appearing twice:** clear fractions, expand brackets, collect all terms containing the subject on one side and everything else on the other, **factorise** out the subject, then divide by the bracket.",
+  "workedExamples": [
+   {
+    "question": "Make $r$ the subject of $V = \\frac{1}{3}\\pi r^2 h$, where $r > 0$.",
+    "solution": "Multiply both sides by 3:\n$$3V = \\pi r^2 h$$\n\nDivide both sides by $\\pi h$:\n$$r^2 = \\frac{3V}{\\pi h}$$\n\nSquare-root (positive, since $r > 0$):\n$$r = \\sqrt{\\frac{3V}{\\pi h}}$$"
+   },
+   {
+    "question": "Make $x$ the subject of $y = \\dfrac{2x + 3}{x - 1}$.",
+    "solution": "Multiply both sides by $(x - 1)$:\n$$y(x - 1) = 2x + 3$$\n\nExpand:\n$$xy - y = 2x + 3$$\n\nCollect the $x$ terms on the left, the others on the right:\n$$xy - 2x = y + 3$$\n\nFactorise out $x$:\n$$x(y - 2) = y + 3$$\n\nDivide by $(y - 2)$:\n$$x = \\frac{y + 3}{y - 2}$$\n\nCheck: $x = 2$ gives $y = \\frac{7}{1} = 7$, and $\\frac{7 + 3}{7 - 2} = 2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Undoes the operations in the wrong order: $y = 3x + 5 \\Rightarrow x = \\frac{y}{3} - 5$.",
+    "correction": "The last operation done to $x$ was $+5$, so undo that first: $y - 5 = 3x$, then divide the whole side by 3: $x = \\frac{y - 5}{3}$. Check with $x = 1$: $y = 8$, and $\\frac{8 - 5}{3} = 1$, but $\\frac{8}{3} - 5 \\ne 1$."
+   },
+   {
+    "id": "m2",
+    "text": "Square-roots term by term: $a^2 = b^2 + c^2 \\Rightarrow a = b + c$.",
+    "correction": "The square root of a sum is not the sum of the square roots: $a = \\sqrt{b^2 + c^2}$. Check with $b = 3$, $c = 4$: $\\sqrt{9 + 16} = 5$, but $3 + 4 = 7$."
+   },
+   {
+    "id": "m3",
+    "text": "When the subject appears twice, leaves it on both sides: $ax + b = cx \\Rightarrow x = \\frac{cx - b}{a}$.",
+    "correction": "Collect all the $x$ terms on one side and factorise: $b = cx - ax = x(c - a)$, so $x = \\frac{b}{c - a}$. The subject must not appear on the other side of the final answer."
+   },
+   {
+    "id": "m4",
+    "text": "Divides only one term by a number: $P = 2l + 2w \\Rightarrow l = \\frac{P}{2} - 2w$.",
+    "correction": "After $P - 2w = 2l$, divide the **whole** of the left side by 2: $l = \\frac{P - 2w}{2} = \\frac{P}{2} - w$."
+   }
+  ]
+ },
+ {
+  "id": "alg-identities-equations",
+  "prerequisites": [
+   "alg-expand-factorise-single",
+   "alg-linear-equations",
+   "alg-substitution-formulae"
+  ],
+  "keyIdea": "* **Expression:** terms with no equals sign, e.g. $3x + 2$.\n* **Equation:** true only for particular values, e.g. $3x + 2 = 11$ (only $x = 3$).\n* **Formula:** a rule linking different quantities, each letter standing for something, e.g. $A = lw$.\n* **Identity:** true for **every** value of the variable, written with $\\equiv$, e.g. $2(x + 3) \\equiv 2x + 6$.\n\nTo **show that** an identity holds, start from one side and manipulate it until it becomes the other; do not \"solve\" it.\n\n**Unknown coefficients:** if two expressions are identical, the coefficients of each power of $x$ must match. Expand, then **compare coefficients**:\n$$a(x + 2) + 3 \\equiv 5x + b \\;\\Rightarrow\\; a = 5,\\; 2a + 3 = b \\;\\Rightarrow\\; b = 13$$",
+  "workedExamples": [
+   {
+    "question": "State whether each is an expression, an equation, a formula or an identity.\n(a) $5(x - 2) \\equiv 5x - 10$ (b) $5(x - 2) = 20$ (c) $V = IR$ (d) $5x - 10$",
+    "solution": "(a) **Identity**: expanding the left side gives the right side, so it is true for every $x$.\n\n(b) **Equation**: only true when $x - 2 = 4$, i.e. $x = 6$.\n\n(c) **Formula**: it links three different quantities (voltage, current, resistance).\n\n(d) **Expression**: there is no equals sign."
+   },
+   {
+    "question": "Given that $a(2x + 3) - 4(x - b) \\equiv 6x + 23$, find the values of $a$ and $b$.",
+    "solution": "Expand the left side, taking care with $-4 \\times (-b) = +4b$:\n$$2ax + 3a - 4x + 4b$$\n\nGroup the $x$ terms and the constants:\n$$(2a - 4)x + (3a + 4b) \\equiv 6x + 23$$\n\nCompare coefficients of $x$:\n$$2a - 4 = 6 \\;\\Rightarrow\\; a = 5$$\n\nCompare constants:\n$$3(5) + 4b = 23 \\;\\Rightarrow\\; 4b = 8 \\;\\Rightarrow\\; b = 2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Tries to solve an identity: from $3(x + 2) \\equiv 3x + 6$ gets $0 = 0$ and concludes \"$x = 0$\" (or \"no solution\").",
+    "correction": "Reaching a statement that is always true, like $0 = 0$, shows the two sides are equal for **every** value of $x$: it is an identity, so any $x$ works (e.g. $x = 10$: $36 = 36$)."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks an equation is an identity because it is true for some value, e.g. calls $x^2 = 4x$ an identity because it works when $x = 0$.",
+    "correction": "An identity must hold for **all** values. Test another value: $x = 1$ gives $1 = 4$, which is false, so $x^2 = 4x$ is an equation (solutions $x = 0$ and $x = 4$)."
+   },
+   {
+    "id": "m3",
+    "text": "Makes a sign error when expanding before comparing coefficients: writes $-4(x - b) = -4x - 4b$, leading to $3a - 4b = 23$ and $b = -2$.",
+    "correction": "$-4 \\times (-b) = +4b$, so the constants give $3a + 4b = 23$, and with $a = 5$, $b = 2$. Check by substituting back: $5(2x + 3) - 4(x - 2) = 10x + 15 - 4x + 8 = 6x + 23$."
+   },
+   {
+    "id": "m4",
+    "text": "In a \"show that\", starts from the statement to be proved and works on both sides at once until reaching something true (e.g. $0 = 0$).",
+    "correction": "That assumes what you are trying to show. Start with one side only (usually the more complicated one) and transform it step by step into the other side, writing $\\equiv$ or $=$ between each line."
+   }
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof",
+  "prerequisites": [
+   "alg-identities-equations",
+   "alg-expand-double-triple",
+   "alg-expand-factorise-single",
+   "num-factors-multiples-primes"
+  ],
+  "keyIdea": "For any integer $n$:\n* even number: $2n$; odd number: $2n + 1$;\n* consecutive integers: $n, n + 1, n + 2$;\n* consecutive even numbers: $2n, 2n + 2$; consecutive odd numbers: $2n + 1, 2n + 3$;\n* two **unrelated** numbers need **different** letters: $2m + 1$ and $2n + 1$.\n\nTo prove an expression is a **multiple of $k$**, rearrange it into the form $k \\times (\\text{integer})$, e.g. $8n + 12 = 4(2n + 3)$. To prove it is **odd**, write it as $2(\\text{integer}) + 1$.\n\nChecking examples is **not** a proof: the argument must work for every integer $n$. Finish with a concluding sentence, e.g. \"$3(n + 1)$ is a multiple of 3 because $n + 1$ is an integer\".",
+  "workedExamples": [
+   {
+    "question": "Prove that the sum of any three consecutive integers is a multiple of 3.",
+    "solution": "Let the integers be $n$, $n + 1$ and $n + 2$, where $n$ is an integer.\n\n$$n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1)$$\n\nSince $n + 1$ is an integer, $3(n + 1)$ is a multiple of 3. So the sum of any three consecutive integers is a multiple of 3."
+   },
+   {
+    "question": "Prove that the difference between the squares of two consecutive odd numbers is a multiple of 8.",
+    "solution": "Let the consecutive odd numbers be $2n + 1$ and $2n + 3$, where $n$ is an integer.\n\n$$(2n + 3)^2 - (2n + 1)^2 = (4n^2 + 12n + 9) - (4n^2 + 4n + 1)$$\n\n$$= 8n + 8 = 8(n + 1)$$\n\n$n + 1$ is an integer, so $8(n + 1)$ is a multiple of 8. Hence the difference is always a multiple of 8."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses numerical examples as a proof: checks $3 + 5 = 8$, $7 + 9 = 16$ and $11 + 13 = 24$, then concludes that the sum of two consecutive odd numbers is always a multiple of 4.",
+    "correction": "Examples can only show a statement is true in those cases; there are infinitely many cases. Use algebra: $(2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1)$, a multiple of 4 for every integer $n$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the same letter for two unrelated numbers: \"let the two odd numbers be $2n + 1$ and $2n + 1$\".",
+    "correction": "That only covers the case where the two numbers are equal. Use different letters for independent numbers: $2m + 1$ and $2n + 1$. For example, their sum is $2m + 2n + 2 = 2(m + n + 1)$, which is even."
+   },
+   {
+    "id": "m3",
+    "text": "Represents an odd number as $n + 1$ (or an even number as $n$), or consecutive odd numbers as $2n + 1$ and $2n + 2$.",
+    "correction": "$n + 1$ can be even or odd, so it does not represent an odd number. Use $2n$ for even and $2n + 1$ for odd; consecutive odd numbers differ by 2: $2n + 1$ and $2n + 3$."
+   },
+   {
+    "id": "m4",
+    "text": "Concludes divisibility from the first term only, e.g. claims $4n + 6$ is a multiple of 4 \"because it has $4n$ in it\".",
+    "correction": "Every term must share the factor. $4n + 6 = 2(2n + 3)$ shows it is a multiple of 2 only; with $n = 1$, $4n + 6 = 10$, which is not a multiple of 4."
+   }
+  ]
+ },
+ {
+  "id": "alg-sequences-linear",
+  "prerequisites": [
+   "alg-substitution-formulae",
+   "alg-linear-equations",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "A **term-to-term rule** says how to get from one term to the next (\"add 4\"). A **position-to-term rule** (the **$n$th term**) gives any term directly from its position $n$.\n\nIn an **arithmetic (linear) sequence** the common difference $d$ is constant, and the $n$th term is $dn + (\\text{zeroth term})$. For $7, 11, 15, 19, \\ldots$: $d = 4$, the zeroth term is $7 - 4 = 3$, so the $n$th term is $4n + 3$. For $20, 17, 14, \\ldots$: $d = -3$, $n$th term $23 - 3n$.\n\nEquivalent form (US): $a_n = a_1 + (n - 1)d$. A sequence is a function whose domain is the positive integers $1, 2, 3, \\ldots$\n\n**Is $N$ a term?** Solve $n$th term $= N$. It is a term only if $n$ is a **positive whole number**.",
+  "workedExamples": [
+   {
+    "question": "Find the $n$th term of $7, 11, 15, 19, \\ldots$ and decide whether 99 is a term of the sequence.",
+    "solution": "The common difference is $d = 4$, so the $n$th term starts $4n$.\n\nZeroth term: $7 - 4 = 3$. So the $n$th term is\n$$4n + 3$$\n\nCheck: $n = 1$ gives $7$ ✓.\n\nSet the $n$th term equal to 99:\n$$4n + 3 = 99 \\;\\Rightarrow\\; 4n = 96 \\;\\Rightarrow\\; n = 24$$\n\n$n = 24$ is a whole number, so 99 is the 24th term."
+   },
+   {
+    "question": "Find the $n$th term of $20, 17, 14, 11, \\ldots$ and decide whether $-30$ is a term.",
+    "solution": "The common difference is $d = -3$, so the $n$th term contains $-3n$.\n\nZeroth term: $20 - (-3) = 23$. So the $n$th term is\n$$23 - 3n$$\n\nCheck: $n = 2$ gives $23 - 6 = 17$ ✓.\n\nSet it equal to $-30$:\n$$23 - 3n = -30 \\;\\Rightarrow\\; 3n = 53 \\;\\Rightarrow\\; n = 17.67\\ldots$$\n\n$n$ is not a whole number, so $-30$ is **not** a term (the 17th term is $-28$ and the 18th is $-31$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the common difference as the constant term, or adds the first term: writes the $n$th term of $7, 11, 15, \\ldots$ as $n + 4$ (or $4n + 7$).",
+    "correction": "The difference 4 is the coefficient of $n$, and the constant is the zeroth term $7 - 4 = 3$: $n$th term $4n + 3$. Always check with $n = 1$: $4(1) + 7 = 11$, not 7."
+   },
+   {
+    "id": "m2",
+    "text": "Ignores the sign of a negative difference: writes the $n$th term of $20, 17, 14, \\ldots$ as $3n + 23$ (or $3n + 17$).",
+    "correction": "The terms go down by 3, so $d = -3$ and the $n$th term contains $-3n$: $23 - 3n$. Check: $n = 1$ gives $20$ ✓, while $3(1) + 23 = 26$."
+   },
+   {
+    "id": "m3",
+    "text": "Decides a number is a term when $n$ is not a whole number, e.g. rounds $4n + 3 = 60$, $n = 14.25$ to $n = 14$ and says 60 is the 14th term.",
+    "correction": "Positions are whole numbers. Since $n = 14.25$ is not an integer, 60 is not a term: the 14th term is 59 and the 15th is 63."
+   },
+   {
+    "id": "m4",
+    "text": "Finds a later term by scaling an earlier one, e.g. for $4n + 2$, says the 10th term is double the 5th term: $2 \\times 22 = 44$.",
+    "correction": "A linear sequence with a non-zero constant is not proportional to $n$. Substitute directly: the 10th term is $4(10) + 2 = 42$."
+   }
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric",
+  "prerequisites": [
+   "alg-sequences-linear",
+   "num-powers-roots",
+   "num-index-laws"
+  ],
+  "keyIdea": "**Quadratic sequences** have a constant **second difference**. The $n$th term is $an^2 + bn + c$ where $2a$ equals the second difference. Find $a$, subtract $an^2$ from each term, and find the $n$th term $bn + c$ of the linear sequence that remains.\n\n**Geometric sequences** multiply by a common ratio $r = \\frac{\\text{term}}{\\text{previous term}}$: $2, 6, 18, 54, \\ldots$ has $r = 3$. The $n$th term is $ar^{n - 1}$, where $a$ is the first term: $2 \\times 3^{n - 1}$ (note $2 \\times 3^{n-1} \\ne 6^{n-1}$).\n\n**Fibonacci-type:** each term is the sum of the two before: $a, b, a + b, a + 2b, 2a + 3b, \\ldots$\n\n**Special sequences:** square numbers $n^2$; cube numbers $n^3$; triangular numbers $1, 3, 6, 10, \\ldots$ with $n$th term $\\frac{n(n + 1)}{2}$.",
+  "workedExamples": [
+   {
+    "question": "Find the $n$th term of the quadratic sequence $4, 11, 22, 37, 56, \\ldots$",
+    "solution": "First differences: $7, 11, 15, 19$. Second differences: $4, 4, 4$.\n\n$2a = 4$, so $a = 2$ and the $n$th term starts $2n^2$.\n\n| $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| term | 4 | 11 | 22 | 37 | 56 |\n| $2n^2$ | 2 | 8 | 18 | 32 | 50 |\n| term $- 2n^2$ | 2 | 3 | 4 | 5 | 6 |\n\nThe remainder $2, 3, 4, 5, 6$ has $n$th term $n + 1$.\n\n$$n\\text{th term} = 2n^2 + n + 1$$\n\nCheck: $n = 5$ gives $50 + 5 + 1 = 56$ ✓."
+   },
+   {
+    "question": "A geometric sequence is $162, 54, 18, 6, \\ldots$ Write down its $n$th term and find the 6th term.",
+    "solution": "Common ratio: $r = \\frac{54}{162} = \\frac{1}{3}$. First term $a = 162$.\n\n$$n\\text{th term} = 162 \\times \\left(\\frac{1}{3}\\right)^{n - 1}$$\n\n6th term:\n$$162 \\times \\left(\\frac{1}{3}\\right)^5 = \\frac{162}{243} = \\frac{2}{3}$$\n\n(Check by continuing: $6 \\to 2 \\to \\frac{2}{3}$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the second difference itself as the coefficient of $n^2$: second difference 4, so writes $4n^2 + \\ldots$",
+    "correction": "For $an^2$ the second difference is $2a$ (e.g. $n^2$: $1, 4, 9, 16$ has second difference 2). So a second difference of 4 gives $a = 2$, i.e. $2n^2$."
+   },
+   {
+    "id": "m2",
+    "text": "Writes the geometric $n$th term with power $n$ instead of $n - 1$: for $2, 6, 18, 54, \\ldots$ writes $2 \\times 3^n$.",
+    "correction": "The first term has had the ratio applied zero times, so the power is $n - 1$: $2 \\times 3^{n - 1}$. Check: $n = 1$ gives $2 \\times 3^0 = 2$ ✓, whereas $2 \\times 3^1 = 6$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies the first term into the base: $2 \\times 3^{n - 1} = 6^{n - 1}$.",
+    "correction": "Powers are worked out before multiplying, so $2 \\times 3^{n - 1}$ cannot be combined. Check $n = 2$: $2 \\times 3 = 6$ but $6^1 = 6$; $n = 3$: $2 \\times 9 = 18$ but $6^2 = 36$."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets to halve for triangular numbers: gives the $n$th triangular number as $n(n + 1)$.",
+    "correction": "$n(n + 1)$ gives $2, 6, 12, 20, \\ldots$, which are double the triangular numbers. The $n$th triangular number is $\\frac{n(n + 1)}{2}$: $1, 3, 6, 10, \\ldots$"
+   }
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance",
+  "prerequisites": [
+   "num-negative-numbers",
+   "num-decimals-operations",
+   "num-powers-roots"
+  ],
+  "keyIdea": "A point is written $(x, y)$: go **across** by $x$ first, then **up or down** by $y$. The axes split the plane into four quadrants; the origin is $(0, 0)$.\n\n**Midpoint** of $A(x_1, y_1)$ and $B(x_2, y_2)$: average the coordinates\n$$M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$\n\n**Distance (length of $AB$):** the horizontal and vertical changes are the two shorter sides of a right-angled triangle, so by Pythagoras\n$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$\nSquaring makes the changes positive. Give the length exactly (as a surd) or rounded, as asked.\n\n**Missing endpoint:** if $M$ is the midpoint of $AB$, step from $A$ to $M$ and repeat the same step: $B = (2x_M - x_A,\\; 2y_M - y_A)$.",
+  "workedExamples": [
+   {
+    "question": "$A$ is $(-3, 5)$ and $B$ is $(5, -1)$. Find (a) the midpoint of $AB$ (b) the length of $AB$.",
+    "solution": "(a) Average the coordinates:\n$$\\left(\\frac{-3 + 5}{2}, \\frac{5 + (-1)}{2}\\right) = \\left(\\frac{2}{2}, \\frac{4}{2}\\right) = (1, 2)$$\n\n(b) Changes: $x_2 - x_1 = 5 - (-3) = 8$ and $y_2 - y_1 = -1 - 5 = -6$.\n$$AB = \\sqrt{8^2 + (-6)^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10$$"
+   },
+   {
+    "question": "$M(2, -1)$ is the midpoint of $AB$, where $A$ is $(-4, 3)$. Find the coordinates of $B$.",
+    "solution": "From $A$ to $M$: $x$ changes by $2 - (-4) = +6$, $y$ changes by $-1 - 3 = -4$.\n\nRepeat the same step from $M$:\n$$B = (2 + 6, -1 - 4) = (8, -5)$$\n\nCheck: $\\left(\\frac{-4 + 8}{2}, \\frac{3 + (-5)}{2}\\right) = (2, -1)$ ✓."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reverses the order of coordinates: plots $(3, -2)$ by going 3 up and 2 left (i.e. at $(-2, 3)$).",
+    "correction": "The first coordinate is always horizontal: $(3, -2)$ is 3 to the **right** and 2 **down**. Remember \"along the corridor, then up (or down) the stairs\"."
+   },
+   {
+    "id": "m2",
+    "text": "Subtracts instead of adding when finding a midpoint: for $(-3, 5)$ and $(5, -1)$ works out $\\left(\\frac{5 - (-3)}{2}, \\frac{-1 - 5}{2}\\right) = (4, -3)$.",
+    "correction": "The midpoint is the **average** of the coordinates, so add then halve: $\\left(\\frac{-3 + 5}{2}, \\frac{5 + (-1)}{2}\\right) = (1, 2)$. Half the difference gives half the change, not a position."
+   },
+   {
+    "id": "m3",
+    "text": "Adds the horizontal and vertical changes to get the length: from $(-3, 5)$ to $(5, -1)$ says the distance is $8 + 6 = 14$.",
+    "correction": "The changes are the two shorter sides of a right-angled triangle; the segment is the hypotenuse. Use Pythagoras: $\\sqrt{8^2 + 6^2} = \\sqrt{100} = 10$."
+   },
+   {
+    "id": "m4",
+    "text": "Given the midpoint $M$ and one end $A$, finds the midpoint of $A$ and $M$ instead of $B$: with $A(-4, 3)$, $M(2, -1)$ gives $B = (-1, 1)$.",
+    "correction": "$M$ is halfway, so $B$ is as far beyond $M$ as $A$ is before it: $B = (2 \\times 2 - (-4),\\; 2 \\times (-1) - 3) = (8, -5)$. Check that the midpoint of $A$ and your $B$ is $M$."
+   }
+  ]
+ },
+ {
+  "id": "alg-straight-line-graphs",
+  "prerequisites": [
+   "alg-coordinates-midpoint-distance",
+   "alg-substitution-formulae"
+  ],
+  "keyIdea": "Every straight line (except vertical ones) can be written $y = mx + c$.\n\n* $m$ is the **gradient** (US: slope): $m = \\frac{\\text{change in } y}{\\text{change in } x}$ (\"rise over run\"). Positive lines go up from left to right, negative lines go down; a larger $|m|$ is steeper.\n* $c$ is the **$y$-intercept**: the line crosses the $y$-axis at $(0, c)$.\n\n**Plotting:** make a table of values, plot the points and join them with a ruler.\n\n**Gradient from a graph:** choose two points far apart on the line, find the change in $y$ and the change in $x$ (with signs) and divide.\n\n$y = k$ is a **horizontal** line (gradient 0); $x = k$ is a **vertical** line (gradient undefined).\n\nIf the equation is not in the form $y = mx + c$, rearrange first: $2y - 6x = 8 \\Rightarrow y = 3x + 4$.",
+  "workedExamples": [
+   {
+    "question": "Complete a table of values for $y = 2x - 3$ for $x = -1, 0, 1, 2, 3$, and state the gradient and the coordinates of the $y$-intercept.",
+    "solution": "Substitute each $x$-value:\n\n| $x$ | $-1$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|---|\n| $y$ | $-5$ | $-3$ | $-1$ | $1$ | $3$ |\n\nFor example, $x = -1$: $y = 2(-1) - 3 = -5$.\n\nEach time $x$ increases by 1, $y$ increases by 2, so the gradient is $2$ (the coefficient of $x$).\n\nThe line crosses the $y$-axis at $(0, -3)$."
+   },
+   {
+    "question": "Find the gradient and $y$-intercept of the line $3x + 2y = 12$.",
+    "solution": "Rearrange into the form $y = mx + c$. Subtract $3x$:\n$$2y = -3x + 12$$\n\nDivide every term by 2:\n$$y = -\\frac{3}{2}x + 6$$\n\nGradient $-\\frac{3}{2}$; $y$-intercept $(0, 6)$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Calculates gradient as change in $x$ over change in $y$: for a line through $(0, 1)$ and $(2, 7)$ gives $\\frac{2}{6} = \\frac{1}{3}$.",
+    "correction": "Gradient is change in $y$ (vertical) divided by change in $x$ (horizontal): $\\frac{7 - 1}{2 - 0} = \\frac{6}{2} = 3$."
+   },
+   {
+    "id": "m2",
+    "text": "Reads the gradient or intercept straight from an equation not in the form $y = mx + c$: says $3x + 2y = 12$ has gradient 3 and intercept 12.",
+    "correction": "Make $y$ the subject first: $y = -\\frac{3}{2}x + 6$, so the gradient is $-\\frac{3}{2}$ and the intercept is $(0, 6)$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks $y = 3$ is a vertical line (and $x = 3$ horizontal).",
+    "correction": "On $y = 3$ every point has $y$-coordinate 3, e.g. $(0, 3), (5, 3)$, so it is **horizontal**. $x = 3$ is vertical."
+   },
+   {
+    "id": "m4",
+    "text": "Gives a positive gradient for a line that slopes downwards, by counting squares and ignoring direction: says the line through $(-1, 4)$ and $(3, -4)$ has gradient 2.",
+    "correction": "As $x$ increases by 4, $y$ **decreases** by 8: gradient $= \\frac{-4 - 4}{3 - (-1)} = \\frac{-8}{4} = -2$. Lines going down from left to right have negative gradients."
+   }
+  ]
+ },
+ {
+  "id": "alg-equation-of-a-line",
+  "prerequisites": [
+   "alg-straight-line-graphs",
+   "alg-linear-equations",
+   "alg-rearranging-formulae"
+  ],
+  "keyIdea": "To find the equation of a line you need its **gradient** and **one point** on it.\n\n* **Gradient and a point $(x_1, y_1)$:** substitute into $y = mx + c$ and solve for $c$; or use **point-slope form** $y - y_1 = m(x - x_1)$.\n* **Two points:** first find $m = \\frac{y_2 - y_1}{x_2 - x_1}$ (same order top and bottom), then use either point.\n\n**Parallel lines** have the **same gradient**: $y = 3x - 2$ and $y = 3x + 7$ are parallel.\n\nForms of answer: $y = mx + c$; $ax + by + c = 0$ with integers $a, b, c$ (often asked at A-level); standard form $Ax + By = C$ (US). Clear fractions by multiplying through.\n\nCheck by substituting each given point into your final equation.",
+  "workedExamples": [
+   {
+    "question": "Find the equation of the line through $(2, -1)$ and $(6, 7)$.",
+    "solution": "Gradient:\n$$m = \\frac{7 - (-1)}{6 - 2} = \\frac{8}{4} = 2$$\n\nSo $y = 2x + c$. Substitute $(2, -1)$, with $x = 2$ and $y = -1$:\n$$-1 = 2(2) + c \\;\\Rightarrow\\; c = -5$$\n\n$$y = 2x - 5$$\n\nCheck $(6, 7)$: $2(6) - 5 = 7$ ✓."
+   },
+   {
+    "question": "Find the equation of the line parallel to $2x + 3y = 6$ that passes through $(3, -4)$. Give your answer in the form $ax + by + c = 0$ where $a$, $b$ and $c$ are integers.",
+    "solution": "Rearrange to find the gradient: $3y = -2x + 6$, so $y = -\\frac{2}{3}x + 2$ and $m = -\\frac{2}{3}$.\n\nParallel lines have the same gradient. Point-slope form with $(3, -4)$:\n$$y - (-4) = -\\frac{2}{3}(x - 3)$$\n$$y + 4 = -\\frac{2}{3}(x - 3)$$\n\nMultiply by 3:\n$$3y + 12 = -2x + 6$$\n\nRearrange:\n$$2x + 3y + 6 = 0$$\n\nCheck $(3, -4)$: $6 - 12 + 6 = 0$ ✓."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Substitutes the coordinates the wrong way round: for $m = 2$ through $(2, -1)$ writes $2 = 2(-1) + c$, so $c = 4$.",
+    "correction": "The $x$-coordinate replaces $x$ and the $y$-coordinate replaces $y$: $-1 = 2(2) + c$, so $c = -5$ and $y = 2x - 5$. Check the point lies on your line."
+   },
+   {
+    "id": "m2",
+    "text": "Gets the signs wrong in point-slope form: through $(3, -4)$ writes $y - 4 = m(x - 3)$ or $y + 4 = m(x + 3)$.",
+    "correction": "In $y - y_1 = m(x - x_1)$ substitute $y_1 = -4$ and $x_1 = 3$: $y - (-4) = m(x - 3)$, i.e. $y + 4 = m(x - 3)$. Check by substituting $(3, -4)$: both sides are 0."
+   },
+   {
+    "id": "m3",
+    "text": "Takes the gradient of a parallel line from the coefficient of $x$ without rearranging: says a line parallel to $2x + 3y = 6$ has gradient 2.",
+    "correction": "Make $y$ the subject first: $y = -\\frac{2}{3}x + 2$, so the gradient (and the gradient of any parallel line) is $-\\frac{2}{3}$."
+   },
+   {
+    "id": "m4",
+    "text": "Mixes the order of the points when finding the gradient: for $(2, -1)$ and $(6, 7)$ writes $\\frac{7 - (-1)}{2 - 6} = -2$.",
+    "correction": "Subtract in the same order on top and bottom: $\\frac{7 - (-1)}{6 - 2} = 2$ (or $\\frac{-1 - 7}{2 - 6} = 2$). The line goes up from left to right, so the gradient must be positive."
+   }
+  ]
+ },
+ {
+  "id": "alg-perpendicular-lines",
+  "prerequisites": [
+   "alg-equation-of-a-line",
+   "alg-coordinates-midpoint-distance",
+   "num-fractions-multiply-divide"
+  ],
+  "keyIdea": "Two lines are **perpendicular** (meet at right angles) when the product of their gradients is $-1$:\n$$m_1 \\times m_2 = -1 \\qquad\\Leftrightarrow\\qquad m_2 = -\\frac{1}{m_1}$$\nThe perpendicular gradient is the **negative reciprocal**: flip the fraction **and** change the sign. $3 \\to -\\frac{1}{3}$; $-\\frac{2}{5} \\to \\frac{5}{2}$; $-1 \\to 1$. (Horizontal and vertical lines are also perpendicular.)\n\n**Perpendicular bisector of $AB$:** the line through the **midpoint** of $AB$ at right angles to $AB$. Every point on it is the same distance from $A$ and $B$.\n1. Find the midpoint of $AB$.\n2. Find the gradient of $AB$, then its negative reciprocal.\n3. Use the point and gradient to find the equation.",
+  "workedExamples": [
+   {
+    "question": "Find the equation of the line perpendicular to $y = 4x - 1$ that passes through $(8, 3)$.",
+    "solution": "The given gradient is 4, so the perpendicular gradient is $-\\frac{1}{4}$ (check: $4 \\times -\\frac{1}{4} = -1$).\n\n$y = -\\frac{1}{4}x + c$. Substitute $(8, 3)$:\n$$3 = -\\frac{1}{4}(8) + c = -2 + c \\;\\Rightarrow\\; c = 5$$\n\n$$y = -\\frac{1}{4}x + 5$$"
+   },
+   {
+    "question": "$A$ is $(-2, 1)$ and $B$ is $(4, 5)$. Find the equation of the perpendicular bisector of $AB$ in the form $ax + by + c = 0$.",
+    "solution": "Midpoint of $AB$:\n$$\\left(\\frac{-2 + 4}{2}, \\frac{1 + 5}{2}\\right) = (1, 3)$$\n\nGradient of $AB$: $\\frac{5 - 1}{4 - (-2)} = \\frac{4}{6} = \\frac{2}{3}$. Perpendicular gradient: $-\\frac{3}{2}$.\n\nLine through $(1, 3)$:\n$$y - 3 = -\\frac{3}{2}(x - 1)$$\n\nMultiply by 2:\n$$2y - 6 = -3x + 3$$\n$$3x + 2y - 9 = 0$$\n\nCheck the midpoint: $3(1) + 2(3) - 9 = 0$ ✓."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Only does half of the negative reciprocal: gives the perpendicular gradient to 4 as $\\frac{1}{4}$ (reciprocal only) or $-4$ (sign change only).",
+    "correction": "Do both: flip **and** change the sign, giving $-\\frac{1}{4}$. Check the product: $4 \\times \\left(-\\frac{1}{4}\\right) = -1$, whereas $4 \\times \\frac{1}{4} = 1$ and $4 \\times (-4) = -16$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks lines with gradients $m$ and $-m$ are perpendicular, e.g. that $y = 2x + 1$ and $y = -2x + 5$ meet at right angles.",
+    "correction": "$2 \\times (-2) = -4 \\ne -1$, so they are not perpendicular (they are reflections of each other in a vertical line). A line perpendicular to $y = 2x + 1$ has gradient $-\\frac{1}{2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses an endpoint instead of the midpoint for a perpendicular bisector, e.g. uses $A(-2, 1)$ with gradient $-\\frac{3}{2}$.",
+    "correction": "A **bisector** cuts $AB$ in half, so it must pass through the midpoint $(1, 3)$. A line through $A$ with gradient $-\\frac{3}{2}$ is perpendicular to $AB$ but does not bisect it."
+   }
+  ]
+ },
+ {
+  "id": "alg-real-life-graphs",
+  "prerequisites": [
+   "alg-coordinates-midpoint-distance",
+   "rat-unit-rates-best-buys"
+  ],
+  "keyIdea": "Before reading a real-life graph, check the **axis labels, units and scales** (what one small square is worth).\n\nThe **gradient** is a **rate of change**, measured in $\\frac{\\text{vertical unit}}{\\text{horizontal unit}}$ (e.g. km per hour, £ per hour, litres per minute).\n\n**Distance–time graphs:** gradient = speed; a horizontal section means **stationary**; steeper means faster; a line sloping back down to the time axis is the return journey. Convert minutes to hours for km/h.\n\n**Conversion graphs** (e.g. pounds to euros) are straight lines through the origin, so quantities are in direct proportion and can be scaled up.\n\n**Graphs with an intercept** (e.g. a fixed call-out charge plus an hourly rate) do **not** pass through the origin, so you cannot simply scale. Filling containers: a wider part of the container makes the depth rise more slowly.",
+  "workedExamples": [
+   {
+    "question": "Sam cycles 12 km from home in 40 minutes, stops for 20 minutes, then cycles home in 30 minutes. Describe the distance–time graph and find his speed on each moving section in km/h.",
+    "solution": "Graph: a straight line from $(0, 0)$ to $(40, 12)$ (time in minutes, distance in km), a horizontal line from $(40, 12)$ to $(60, 12)$, then a straight line down to $(90, 0)$.\n\nOutward: 40 minutes $= \\frac{40}{60} = \\frac{2}{3}$ hour.\n$$\\text{speed} = 12 \\div \\frac{2}{3} = 18 \\text{ km/h}$$\n\nStop: horizontal section, speed 0.\n\nReturn: 30 minutes $= 0.5$ hours.\n$$\\text{speed} = 12 \\div 0.5 = 24 \\text{ km/h}$$\n\nThe return section is steeper, matching the faster speed."
+   },
+   {
+    "question": "A graph of a plumber's charge $C$ (£) against time $t$ (hours) is a straight line through $(0, 40)$ and $(3, 130)$. Interpret the gradient and intercept, and find the charge for a 5-hour job.",
+    "solution": "Gradient:\n$$\\frac{130 - 40}{3 - 0} = \\frac{90}{3} = 30$$\nThe plumber charges £30 per hour.\n\nIntercept: £40 is the fixed call-out charge (the cost at $t = 0$).\n\nEquation: $C = 30t + 40$. For 5 hours:\n$$C = 30(5) + 40 = 190$$\nThe charge is £190. (Not $\\frac{5}{3} \\times 130$, because the line does not pass through the origin.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reads a distance–time graph like a picture of the journey: thinks a horizontal section means moving at a constant speed (or a downward slope means going downhill).",
+    "correction": "A horizontal section means the distance from the start is not changing, so the object is **stationary**. A downward slope means the distance from the start is decreasing: it is coming back."
+   },
+   {
+    "id": "m2",
+    "text": "Calculates speed using minutes but labels it km/h: $12 \\div 40 = 0.3$ km/h.",
+    "correction": "Either convert the time to hours first ($40$ min $= \\frac{2}{3}$ h, so $12 \\div \\frac{2}{3} = 18$ km/h) or give $0.3$ km per **minute** and multiply by 60 to get 18 km/h."
+   },
+   {
+    "id": "m3",
+    "text": "Scales up a graph that does not pass through the origin as if it were proportional: if 3 hours cost £130, says 6 hours cost £260.",
+    "correction": "The £40 fixed charge is paid only once. The rate is £30 per hour, so 6 hours cost $40 + 30 \\times 6 = £220$. Only straight lines through the origin show direct proportion."
+   },
+   {
+    "id": "m4",
+    "text": "Misreads the scale by assuming each small square is worth 1, e.g. when 5 small squares represent 10 km, reads 3 squares as 3 km.",
+    "correction": "Work out the value of one square first: $10 \\div 5 = 2$ km per square, so 3 squares represent 6 km."
+   }
+  ]
+ },
+ {
+  "id": "alg-gradient-area-under-graph",
+  "prerequisites": [
+   "alg-real-life-graphs",
+   "alg-straight-line-graphs",
+   "geo-perimeter-area",
+   "rat-speed-distance-time"
+  ],
+  "keyIdea": "**Gradient of a curve** at a point is the gradient of the **tangent** there: draw a straight line that just touches the curve at that point, pick two points far apart on the tangent and calculate $\\frac{\\text{change in } y}{\\text{change in } x}$. This is an estimate. The gradient of a **chord** between two points gives the **average** rate of change over that interval.\n\n**Area under a graph:** split into strips of equal width $h$ and treat each as a trapezium with area $\\frac{1}{2}(a + b)h$, where $a$ and $b$ are the heights at each end. For a curve this is an estimate: if the curve bends upwards (the chords lie above it) the trapezia give an **overestimate**; if it bends downwards, an **underestimate**.\n\n**Velocity–time graphs:** gradient = acceleration ($\\text{m/s}^2$); area under the graph = distance travelled (m). On a distance–time graph, gradient = speed.",
+  "workedExamples": [
+   {
+    "question": "A car starts from rest and accelerates uniformly to $12$ m/s in 4 seconds. It travels at $12$ m/s for 6 seconds, then decelerates uniformly to rest in a further 6 seconds. Find (a) the initial acceleration (b) the deceleration (c) the total distance travelled.",
+    "solution": "The velocity–time graph joins $(0, 0)$, $(4, 12)$, $(10, 12)$ and $(16, 0)$.\n\n(a) Gradient of the first section: $\\frac{12 - 0}{4 - 0} = 3$ m/s$^2$.\n\n(b) Gradient of the last section: $\\frac{0 - 12}{16 - 10} = -2$, so the deceleration is $2$ m/s$^2$.\n\n(c) Distance = area under the graph, a trapezium with parallel sides 6 s (top) and 16 s (bottom) and height 12 m/s:\n$$\\frac{1}{2}(6 + 16) \\times 12 = 132 \\text{ m}$$\n\nCheck by splitting: $\\frac{1}{2}(4)(12) + 6(12) + \\frac{1}{2}(6)(12) = 24 + 72 + 36 = 132$ ✓."
+   },
+   {
+    "question": "The velocity of an object is $v = t^2$ m/s. Use 3 strips of equal width to estimate the area under the graph from $t = 0$ to $t = 6$, and say whether this is an over- or underestimate.",
+    "solution": "Strip width $h = 2$. Heights at $t = 0, 2, 4, 6$: $v = 0, 4, 16, 36$.\n\n$$\\frac{1}{2}(0 + 4)(2) + \\frac{1}{2}(4 + 16)(2) + \\frac{1}{2}(16 + 36)(2)$$\n$$= 4 + 20 + 52 = 76$$\n\nThe estimated distance is 76 m.\n\nThe curve $v = t^2$ bends upwards, so the top of each trapezium lies above the curve: this is an **overestimate**. (The exact value is 72 m.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Estimates the gradient at a point by joining it to the origin (or another point on the curve) instead of drawing a tangent: for $v = t^2$ at $t = 3$ gives $\\frac{9}{3} = 3$.",
+    "correction": "The gradient at a point is the gradient of the tangent touching the curve there. A tangent to $v = t^2$ at $(3, 9)$ has gradient 6, not 3. Joining to the origin gives the average rate from $t = 0$ to $t = 3$."
+   },
+   {
+    "id": "m2",
+    "text": "Mixes up what gradient and area represent on a velocity–time graph, e.g. says the gradient gives the distance or the area gives the acceleration.",
+    "correction": "Gradient = $\\frac{\\text{change in velocity}}{\\text{time}}$ = acceleration. Area = velocity $\\times$ time = distance. Check units: $\\frac{\\text{m/s}}{\\text{s}} = \\text{m/s}^2$, and $\\text{m/s} \\times \\text{s} = \\text{m}$."
+   },
+   {
+    "id": "m3",
+    "text": "Leaves out the $\\frac{1}{2}$ in the trapezium area, using $(a + b)h$, e.g. a strip of width 1 between heights 3 and 5 gets area 8 instead of 4.",
+    "correction": "A trapezium's area is the **mean** of the parallel sides times the width: $\\frac{1}{2}(3 + 5) \\times 1 = 4$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks the trapezium rule always underestimates, or says it underestimates for a curve that bends upwards.",
+    "correction": "For a curve that bends upwards (like $v = t^2$), each straight top joins two points on the curve and lies **above** it, so the trapezia include extra area: an overestimate. For a curve bending downwards it is an underestimate."
+   }
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear",
+  "prerequisites": [
+   "alg-linear-equations",
+   "alg-straight-line-graphs",
+   "alg-forming-equations"
+  ],
+  "keyIdea": "Simultaneous equations (US: a system of equations) are satisfied by the **same** values at the same time.\n\n**Elimination:** multiply one or both equations so a variable has the same coefficient, then **subtract** if the signs are the same, **add** if they are different (\"Same Signs Subtract\"). Multiply **every** term when scaling.\n\n**Substitution:** rearrange one equation (e.g. $y = 2x - 1$) and substitute into the other: $3x + 2(2x - 1) = 19 \\Rightarrow x = 3$, $y = 5$.\n\nFind the second variable by substituting back, and check in the **other** equation.\n\n**Graphically:** the solution is the intersection point of the two lines. Parallel lines: no solution; the same line: infinitely many.\n\n**In context:** define the two variables and form two equations. **Three variables (US Algebra 2):** eliminate the same variable from two different pairs to get a $2 \\times 2$ system.",
+  "workedExamples": [
+   {
+    "question": "Solve $3x + 2y = 16$ and $5x - 3y = 14$.",
+    "solution": "Make the $y$ coefficients equal: multiply the first equation by 3 and the second by 2.\n$$9x + 6y = 48$$\n$$10x - 6y = 28$$\n\nThe signs of $6y$ are different, so add:\n$$19x = 76 \\;\\Rightarrow\\; x = 4$$\n\nSubstitute into $3x + 2y = 16$:\n$$12 + 2y = 16 \\;\\Rightarrow\\; y = 2$$\n\nCheck in the other equation: $5(4) - 3(2) = 20 - 6 = 14$ ✓.\n\n$x = 4$, $y = 2$."
+   },
+   {
+    "question": "3 adult tickets and 2 child tickets cost £47. 2 adult tickets and 5 child tickets cost £57. Find the cost of each type of ticket.",
+    "solution": "Let an adult ticket cost £$a$ and a child ticket £$c$.\n$$3a + 2c = 47 \\quad (1)$$\n$$2a + 5c = 57 \\quad (2)$$\n\nMake the $a$ coefficients equal: $(1) \\times 2$ and $(2) \\times 3$:\n$$6a + 4c = 94$$\n$$6a + 15c = 171$$\n\nSame signs, so subtract:\n$$11c = 77 \\;\\Rightarrow\\; c = 7$$\n\nSubstitute into (1): $3a + 14 = 47$, so $3a = 33$ and $a = 11$.\n\nCheck in (2): $22 + 35 = 57$ ✓.\n\nAn adult ticket costs £11 and a child ticket costs £7."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the equations when the coefficients have the same sign: from $3x + 2y = 16$ and $x + 2y = 8$ writes $4x = 24$.",
+    "correction": "Adding gives $4x + 4y = 24$, which does not eliminate $y$. Same signs subtract: $(3x + 2y) - (x + 2y) = 16 - 8$, so $2x = 8$, $x = 4$, and then $y = 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies only some terms when scaling an equation: $5x - 3y = 14$ multiplied by 2 written as $10x - 6y = 14$.",
+    "correction": "Every term on both sides must be multiplied: $10x - 6y = 28$. Otherwise the new equation is not equivalent to the original."
+   },
+   {
+    "id": "m3",
+    "text": "Makes a sign error when subtracting a negative term: $(4x + 3y) - (4x - 2y)$ written as $y$, so from $4x + 3y = 18$ and $4x - 2y = 8$ gets $y = 10$.",
+    "correction": "$3y - (-2y) = 3y + 2y = 5y$, so $5y = 18 - 8 = 10$, giving $y = 2$ and then $4x = 12$, $x = 3$. Check: $4(3) - 2(2) = 8$ ✓."
+   },
+   {
+    "id": "m4",
+    "text": "Stops after finding one variable (or gives one number as \"the solution\"), e.g. answers $x = 4$ only.",
+    "correction": "A solution to a pair of simultaneous equations is a **pair** of values (the intersection point $(x, y)$). Substitute back to find the other variable and check it in both equations."
+   }
+  ]
+ }
+]

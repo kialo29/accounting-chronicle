@@ -1,0 +1,519 @@
+[
+ {
+  "id": "stat-data-collection",
+  "prerequisites": [],
+  "keyIdea": "**Qualitative** (categorical) data are descriptions or categories, e.g. eye colour or shirt number. **Quantitative** data are numerical measurements or counts. Quantitative data are **discrete** if they can only take particular separate values (number of siblings, shoe size) and **continuous** if they are measured and can take any value in a range (height, time, mass). **Primary** data you collect yourself; **secondary** data were collected by someone else.\n\nA **statistical question** expects variability in the answers: \"How long do Year 8 students sleep?\" is statistical; \"How long did I sleep last night?\" is not.\n\nThe **population** is the whole group you want to know about; a **sample** is the part you actually collect data from. In a **random sample** every member has an equal chance of being chosen, so its results can be scaled up to make inferences about the population.",
+  "workedExamples": [
+   {
+    "question": "Classify each variable as qualitative, discrete or continuous.\n\n(a) Number of goals scored in a match (b) Time to run 100 m (c) Shoe size (d) Favourite colour (e) Shirt number of a footballer",
+    "solution": "(a) Goals are counted and can only be $0, 1, 2, \\dots$ — **discrete**.\n\n(b) Time is measured and could be any value in a range (e.g. 14.37 s) — **continuous**.\n\n(c) Shoe sizes jump in steps of a half ($5, 5\\frac{1}{2}, 6, \\dots$); there is no size $5.3$ — **discrete**, even though the values are not whole numbers.\n\n(d) Colours are categories — **qualitative**.\n\n(e) A shirt number is a label, not a measurement: you cannot meaningfully add or average shirt numbers — **qualitative**, even though it is written as a number."
+   },
+   {
+    "question": "A school has 1200 students. A random sample of 60 students is asked how they travel to school; 18 say they come by bus.\n\n(a) State the population and the sample.\n(b) Estimate the number of students in the school who travel by bus.\n(c) Why would asking 60 students waiting in the bus queue be a poor sample?",
+    "solution": "(a) Population: all 1200 students in the school. Sample: the 60 students who were asked.\n\n(b) Proportion in the sample who use the bus:\n$$\\frac{18}{60} = 0.3$$\nScale up to the population:\n$$0.3 \\times 1200 = 360$$\nAbout **360 students** travel by bus. (This is an estimate: a different random sample would give a slightly different answer.)\n\n(c) Everyone in the bus queue travels by bus, so bus users would be over-represented. The sample would be **biased** and not representative of the whole school."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks any data that include decimals or fractions must be continuous, e.g. classifies shoe size ($5\\frac{1}{2}$, $6$, $6\\frac{1}{2}$) or dress size as continuous.",
+    "correction": "Discrete data take separate, distinct values with gaps between them; those values need not be whole numbers. Shoe sizes go up in halves, so there is no size between $5\\frac{1}{2}$ and $6$: discrete. Continuous data (length, time, mass) can take any value in a range."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks anything written as a number is quantitative, e.g. classifies shirt numbers, phone numbers or bus route numbers as discrete data.",
+    "correction": "Ask: \"Does it make sense to add or average these?\" The mean of shirt numbers $7$ and $9$ is meaningless, because the numbers are just labels for categories. They are qualitative (categorical) data."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses the population with the sample, e.g. says \"the population is the 60 students who were asked\".",
+    "correction": "The population is the whole group the question is about (all 1200 students). The sample is the subset actually surveyed (the 60). Results from the sample are used to make estimates about the population."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a question with a single fixed answer is a statistical question, e.g. \"How tall is my brother?\" or \"How many students are in my class?\".",
+    "correction": "A statistical question anticipates variability in the data collected: \"How tall are the students in my class?\" gives many different answers. \"How many students are in my class?\" has one answer, so it is not statistical."
+   }
+  ]
+ },
+ {
+  "id": "stat-sampling-methods",
+  "prerequisites": [
+   "stat-data-collection",
+   "rat-direct-proportion",
+   "num-rounding"
+  ],
+  "keyIdea": "A **census** surveys the whole population; a **sample** surveys part of it (cheaper, quicker). Methods:\n\n* **Simple random**: number every member of the sampling frame and choose with a random number generator, so every member has an equal chance.\n* **Systematic**: choose every $k$th member from a list, where $k = \\frac{N}{n}$, starting at a random point among the first $k$.\n* **Stratified**: split the population into groups (strata) and sample each in proportion:\n$$\\text{number from stratum} = \\frac{\\text{stratum size}}{\\text{population size}} \\times \\text{sample size}$$\n* **Cluster**: randomly choose whole groups (e.g. whole classes) and survey everyone in them.\n* **Quota**: the interviewer fills a fixed number from each group, but not randomly.\n* **Opportunity** (convenience): whoever is available.\n\n**Bias** occurs when a method systematically over- or under-represents part of the population: an incomplete sampling frame, non-response, volunteers only, leading questions, or a convenient location or time.",
+  "workedExamples": [
+   {
+    "question": "A sports club has 84 junior, 156 adult and 60 senior members. A stratified sample of 50 members is taken.\n\n(a) How many of each type of member should be in the sample?\n(b) Describe how the junior members could be chosen.",
+    "solution": "(a) Population size: $84 + 156 + 60 = 300$.\n\nJuniors: $\\dfrac{84}{300} \\times 50 = 14$\n\nAdults: $\\dfrac{156}{300} \\times 50 = 26$\n\nSeniors: $\\dfrac{60}{300} \\times 50 = 10$\n\nCheck: $14 + 26 + 10 = 50$ ✓\n\n(b) List the 84 juniors and number them 1 to 84. Use a random number generator to produce numbers from 1 to 84, ignoring repeats, until 14 different juniors have been chosen."
+   },
+   {
+    "question": "A council wants residents' views on a new bus route. It asks the first 100 people it meets at the bus station at 8 am on a Monday.\n\n(a) Name this sampling method.\n(b) Give two reasons why the sample may be biased.\n(c) Suggest a better method.",
+    "solution": "(a) An **opportunity** (convenience) sample: the people are simply those available.\n\n(b) Everyone asked already uses the buses, so non-bus users (car drivers, cyclists) are left out. Asking at 8 am on a weekday over-represents commuters and under-represents, for example, retired people or shift workers.\n\n(c) Take a **simple random sample** from the electoral register (a list of all adult residents), or a **stratified** sample by area of the town, so every resident has a chance of being chosen."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "In stratified sampling, takes an equal number from each stratum, e.g. for a sample of 50 from three groups writes $50 \\div 3 \\approx 17$ from each group.",
+    "correction": "Each stratum must be represented in proportion to its size. Use $\\frac{\\text{stratum size}}{\\text{population size}} \\times \\text{sample size}$: juniors $\\frac{84}{300} \\times 50 = 14$, adults $26$, seniors $10$."
+   },
+   {
+    "id": "m2",
+    "text": "Rounds every stratum to the nearest whole number without checking the total, e.g. strata of $13.5$, $15.75$, $12$, $11.25$, $7.5$ become $14 + 16 + 12 + 11 + 8 = 61$ when the sample size is 60.",
+    "correction": "After rounding, check that the strata add up to the required sample size. If they do not, adjust the stratum whose value was closest to the halfway point (here round $13.5$ down to $13$) so that the total is exactly 60."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks an opportunity sample is random because the interviewer \"didn't pick anyone on purpose\", e.g. \"I asked whoever walked past, so it was a random sample\".",
+    "correction": "Random means every member of the population has an equal (known) chance of selection, using a random process on a complete list. People who happen to walk past one place at one time do not give everyone that chance, so the sample is non-random and likely biased."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a larger sample removes bias, e.g. \"the online poll had 20000 voluntary responses, so it must be representative\".",
+    "correction": "A larger sample reduces random variability, but it does not fix a biased method. Voluntary responders are people with strong opinions, however many there are. Fix the method (random selection) first; then increase the size for precision."
+   }
+  ]
+ },
+ {
+  "id": "stat-experimental-design",
+  "prerequisites": [
+   "stat-sampling-methods",
+   "stat-data-collection"
+  ],
+  "keyIdea": "In an **observational study** researchers measure variables without influencing them; it can show association but not cause and effect, because of possible **confounding** variables (variables related to both the explanatory variable and the response, whose effects cannot be separated).\n\nIn an **experiment**, researchers deliberately impose **treatments** on **experimental units** (subjects). Principles of design:\n\n* **Comparison** of at least two treatments (a **control** group gets a placebo or the current standard treatment).\n* **Random assignment** of units to treatments, to balance confounding variables across groups.\n* **Replication**: enough units in each group.\n* **Control** of other variables; **blinding** where possible.\n\n**Blocking**: group similar units, then randomize within each block. **Matched pairs**: pair similar units (or give each subject both treatments in random order).\n\n**Scope of inference**: random *sampling* lets you generalize to the population; random *assignment* lets you conclude causation.",
+  "workedExamples": [
+   {
+    "question": "A gardener has 40 tomato plants in a greenhouse: 20 are by the sunny windows and 20 are in a shaded area. She wants to know whether a new fertilizer increases yield compared with her current fertilizer.\n\n(a) Describe a randomized block design.\n(b) Explain why blocking is useful here.",
+    "solution": "(a) **Blocks**: sunny plants (20) and shaded plants (20).\n\nWithin the sunny block, label the plants 1–20. Use a random number generator to select 10 different labels; those plants get the new fertilizer and the other 10 get the current fertilizer. Repeat separately for the shaded block.\n\nAfter the season, compare the mean yield (lb of tomatoes per plant) for the two fertilizers within each block, then combine the results.\n\n(b) Sunlight affects yield. Blocking makes sure each fertilizer is tested on equal numbers of sunny and shaded plants, so the variability in yield due to sunlight is accounted for and the comparison of fertilizers is more precise."
+   },
+   {
+    "question": "Researchers surveyed a random sample of 1500 U.S. high school students and found that students who eat breakfast every day have a higher mean GPA than students who do not.\n\n(a) Is this an observational study or an experiment?\n(b) Can we conclude that eating breakfast causes a higher GPA? Explain using a confounding variable.\n(c) To whom can the results be generalized?",
+    "solution": "(a) **Observational study**: no treatment was imposed; students chose whether to eat breakfast.\n\n(b) **No.** A possible confounding variable is the amount of family support at home. Students with more structured home routines may be more likely to eat breakfast **and** may also get more help with homework, which raises GPA. We cannot separate the effect of breakfast from the effect of home routine.\n\n(c) Because the students were **randomly sampled**, the association can be generalized to all U.S. high school students, but only as an association, not cause and effect."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses random sampling with random assignment, e.g. \"the 60 volunteers were randomly assigned to two groups, so the results apply to all adults\".",
+    "correction": "Random **assignment** to treatments allows a cause-and-effect conclusion for the subjects in the study. Generalizing to a population needs random **sampling** from that population. Volunteers were not randomly sampled, so the results apply only to people like these volunteers."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks an observational study can show causation if the sample is large or the association is strong, e.g. \"50000 people were studied and coffee drinkers lived longer, so coffee makes you live longer\".",
+    "correction": "Without imposed treatments and random assignment, confounding variables (income, exercise, smoking, …) may explain the association. Sample size does not remove confounding; only a well-designed randomized experiment supports a causal conclusion."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks blocking means giving each block a different treatment, e.g. all sunny plants get the new fertilizer and all shaded plants get the old one.",
+    "correction": "That design **confounds** sunlight with fertilizer. In a block design every treatment is used within every block, and units are randomly assigned to treatments separately inside each block."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a control group must receive no treatment at all, so an experiment comparing a new drug with the current standard drug \"has no control group\".",
+    "correction": "A control group provides a baseline for comparison. It can receive a placebo, no treatment, or the current standard treatment. Comparing a new drug with the standard drug is a valid controlled experiment."
+   }
+  ]
+ },
+ {
+  "id": "stat-averages-range",
+  "prerequisites": [
+   "num-place-value-ordering",
+   "num-decimals-operations",
+   "num-written-methods"
+  ],
+  "keyIdea": "Three averages and one measure of spread:\n\n* **Mean** $= \\dfrac{\\text{total of the values}}{\\text{number of values}}$\n* **Median**: the middle value once the data are **in order**; for $n$ values it is the $\\frac{n+1}{2}$th value (for even $n$, the mean of the middle two).\n* **Mode**: the most common value (there can be more than one, or none). It is the only average for qualitative data.\n* **Range** $=$ largest value $-$ smallest value. It measures spread, not an average.\n\n**Choosing**: the mean uses every value but is pulled by extreme values; the median is not affected by extremes (good for skewed data like house prices); the mode suits categories or \"most popular\".\n\n**Missing values**: total $=$ mean $\\times$ number of values. If 5 numbers have mean 12, they total $60$.",
+  "workedExamples": [
+   {
+    "question": "Find the mean, median, mode and range of\n$$7,\\ 3,\\ 9,\\ 4,\\ 3,\\ 10,\\ 6,\\ 2$$",
+    "solution": "**Mean**: total $= 7+3+9+4+3+10+6+2 = 44$, and there are 8 values.\n$$\\text{mean} = \\frac{44}{8} = 5.5$$\n\n**Median**: order first: $2,\\ 3,\\ 3,\\ 4,\\ 6,\\ 7,\\ 9,\\ 10$. Position $\\frac{8+1}{2} = 4.5$, so it is halfway between the 4th and 5th values:\n$$\\text{median} = \\frac{4+6}{2} = 5$$\n\n**Mode**: $3$ (it appears twice).\n\n**Range**: $10 - 2 = 8$"
+   },
+   {
+    "question": "The mean of Amira's first 5 test scores is 12. After her sixth test, the mean of all 6 scores is 13. What did she score on the sixth test?",
+    "solution": "Total of the first 5 scores: $5 \\times 12 = 60$\n\nTotal of all 6 scores: $6 \\times 13 = 78$\n\nSixth score $= 78 - 60 = 18$\n\nCheck: $\\frac{60 + 18}{6} = \\frac{78}{6} = 13$ ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Finds the median without putting the data in order, e.g. for $7, 3, 9, 4, 3$ says the median is $9$ (the middle value as written).",
+    "correction": "Always order the data first: $3, 3, 4, 7, 9$, so the median is $4$."
+   },
+   {
+    "id": "m2",
+    "text": "Gives the position of the median as its value, e.g. for 8 values writes \"median $= \\frac{8+1}{2} = 4.5$\".",
+    "correction": "$\\frac{n+1}{2}$ tells you **where** the median is, not what it is. Position $4.5$ means halfway between the 4th and 5th ordered values: for $2, 3, 3, 4, 6, 7, 9, 10$ the median is $\\frac{4+6}{2} = 5$."
+   },
+   {
+    "id": "m3",
+    "text": "Gives the range as an interval (\"2 to 10\") or subtracts the first and last values in the list as written, e.g. for $7, 3, 9, 4, 3, 10, 6, 2$ writes range $= 7 - 2 = 5$.",
+    "correction": "The range is a single number: largest $-$ smallest $= 10 - 2 = 8$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks an added value equals the new mean, e.g. \"the mean went up to 13, so the sixth score was 13\", or adds the change in the mean ($12 + 1 = 13$).",
+    "correction": "Work with totals: before $5 \\times 12 = 60$, after $6 \\times 13 = 78$, so the new value is $78 - 60 = 18$. A score of 13 would make the mean $\\frac{73}{6} \\approx 12.2$."
+   }
+  ]
+ },
+ {
+  "id": "stat-averages-frequency-tables",
+  "prerequisites": [
+   "stat-averages-range",
+   "stat-data-collection",
+   "num-rounding"
+  ],
+  "keyIdea": "In a frequency table each value $x$ occurs $f$ times.\n\n* **Mean** $= \\dfrac{\\sum fx}{\\sum f}$ (total of the $fx$ column divided by total frequency).\n* **Median**: the $\\frac{n+1}{2}$th value, found with running totals of $f$.\n* **Mode**: the value with the highest frequency (the value, not the frequency).\n\n**Grouped data**: the exact values are unknown, so use the **midpoint** of each class as $x$. This gives an **estimated mean** $\\dfrac{\\sum fx}{\\sum f}$. The **modal class** has the highest frequency (for equal widths), and you can state the class containing the median.\n\n**Interpolation** (A-level): assume values are spread evenly through the median class. With $n$ values,\n$$\\text{median} \\approx L + \\frac{\\frac{n}{2} - F}{f} \\times w$$\nwhere $L$ is the lower class boundary, $F$ the cumulative frequency before the class, $f$ its frequency and $w$ its width. Quartiles work the same way.",
+  "workedExamples": [
+   {
+    "question": "The table shows the number of pets owned by 20 students.\n\n| Number of pets, $x$ | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 5 | 8 | 4 | 2 | 1 |\n\nFind the mean, median and mode.",
+    "solution": "**Mean**: $fx$ values: $0 \\times 5 = 0$, $1 \\times 8 = 8$, $2 \\times 4 = 8$, $3 \\times 2 = 6$, $4 \\times 1 = 4$.\n$$\\sum fx = 26, \\quad \\sum f = 20, \\quad \\text{mean} = \\frac{26}{20} = 1.3 \\text{ pets}$$\n\n**Median**: position $\\frac{20+1}{2} = 10.5$. Running totals: $5$ (0 pets), $13$ (up to 1 pet). The 10th and 11th values are both in the \"1\" group, so the median is **1**.\n\n**Mode**: highest frequency is 8, for **1 pet**, so the mode is 1."
+   },
+   {
+    "question": "The times, $t$ minutes, that 30 people waited at a clinic are shown.\n\n| Time, $t$ (min) | $0 < t \\le 10$ | $10 < t \\le 20$ | $20 < t \\le 30$ | $30 < t \\le 40$ |\n|---|---|---|---|---|\n| Frequency | 4 | 9 | 12 | 5 |\n\n(a) Estimate the mean waiting time. (b) State the modal class. (c) Use interpolation to estimate the median.",
+    "solution": "(a) Midpoints: $5, 15, 25, 35$.\n$$\\sum fx = 4(5) + 9(15) + 12(25) + 5(35) = 20 + 135 + 300 + 175 = 630$$\n$$\\text{estimated mean} = \\frac{630}{30} = 21 \\text{ minutes}$$\nIt is only an estimate because the midpoints stand in for the unknown actual times.\n\n(b) Modal class: $20 < t \\le 30$ (frequency 12).\n\n(c) $\\frac{n}{2} = 15$. Cumulative frequencies: $4, 13, 25, 30$, so the 15th value is in $20 < t \\le 30$, with $F = 13$, $f = 12$, $w = 10$:\n$$\\text{median} \\approx 20 + \\frac{15 - 13}{12} \\times 10 = 20 + 1.67 = 21.7 \\text{ minutes (3 s.f.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides $\\sum fx$ by the number of rows (classes) instead of the total frequency, e.g. $\\frac{26}{5} = 5.2$ pets.",
+    "correction": "The mean is the total of all values divided by **how many values** there are, which is $\\sum f = 20$, not the 5 rows: $\\frac{26}{20} = 1.3$. A sensible check: the mean must lie between the smallest and largest values (0 and 4)."
+   },
+   {
+    "id": "m2",
+    "text": "Finds the mean of the frequency column, e.g. $\\frac{5+8+4+2+1}{5} = 4$, and gives that as the mean number of pets.",
+    "correction": "The frequencies count how many people gave each value; they are not the data. Multiply each value by its frequency, add to get $\\sum fx = 26$, then divide by $\\sum f = 20$."
+   },
+   {
+    "id": "m3",
+    "text": "For grouped data, uses the upper (or lower) class boundary instead of the midpoint, e.g. $\\sum fx = 4(10) + 9(20) + 12(30) + 5(40) = 780$, giving a mean of $26$ minutes.",
+    "correction": "Use the midpoint as the best single representative of each class: $5, 15, 25, 35$. This gives $\\frac{630}{30} = 21$ minutes. Using upper boundaries overestimates every value."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the highest frequency as the mode, e.g. \"mode $= 8$\" for the pets table, or the largest frequency as the modal class.",
+    "correction": "The mode is the **value** that occurs most often. The highest frequency, 8, belongs to \"1 pet\", so the mode is 1 pet. Likewise the modal class is the class interval, e.g. $20 < t \\le 30$."
+   }
+  ]
+ },
+ {
+  "id": "stat-charts-diagrams",
+  "prerequisites": [
+   "stat-data-collection",
+   "num-fractions-equivalence",
+   "rat-percentages-of-amounts",
+   "geo-angle-facts"
+  ],
+  "keyIdea": "* **Bar charts**: bars of equal width with equal gaps (for categories), labelled axes, and a frequency axis that starts at 0 with an even scale. A **dual** (comparative) bar chart puts bars side by side to compare groups; a **composite** (stacked) bar chart splits each bar into parts of a total.\n* **Pictograms**: a key gives the value of one symbol; part symbols show fractions of that value.\n* **Pie charts**: the whole circle ($360^\\circ$) is the total.\n$$\\text{angle} = \\frac{\\text{frequency}}{\\text{total}} \\times 360^\\circ, \\qquad \\text{frequency} = \\frac{\\text{angle}}{360^\\circ} \\times \\text{total}$$\nPie charts show **proportions**; you can only compare frequencies between two pie charts if you know their totals.\n* **Line graphs**: show how a quantity changes over time, with time on the horizontal axis and points joined by straight lines.",
+  "workedExamples": [
+   {
+    "question": "60 students chose their favourite fruit: apple 21, banana 15, grape 9, orange 15. Draw a pie chart.",
+    "solution": "Each student is represented by $\\frac{360^\\circ}{60} = 6^\\circ$.\n\nApple: $21 \\times 6^\\circ = 126^\\circ$\n\nBanana: $15 \\times 6^\\circ = 90^\\circ$\n\nGrape: $9 \\times 6^\\circ = 54^\\circ$\n\nOrange: $15 \\times 6^\\circ = 90^\\circ$\n\nCheck: $126 + 90 + 54 + 90 = 360$ ✓\n\nDraw a circle and a radius, then measure each angle with a protractor from the previous line and label each sector.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"300\" height=\"250\"><circle cx=\"150\" cy=\"125\" r=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M150 125 L150 25 A100 100 0 0 1 230.9 183.8 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"150\" y1=\"125\" x2=\"150\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"125\" x2=\"230.9\" y2=\"183.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"125\" x2=\"91.2\" y2=\"205.9\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"125\" x2=\"50\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"202\" y=\"96\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Apple</text><text x=\"202\" y=\"112\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">126°</text><text x=\"159\" y=\"172\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Banana</text><text x=\"159\" y=\"188\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">90°</text><text x=\"98\" y=\"148\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Grape</text><text x=\"98\" y=\"164\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">54°</text><text x=\"109\" y=\"82\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Orange</text><text x=\"109\" y=\"98\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">90°</text></svg>"
+   },
+   {
+    "question": "School A (400 students) and School B (900 students) each drew a pie chart of how students travel to school. The bus sector is $90^\\circ$ for School A and $60^\\circ$ for School B. Tom says, \"More students take the bus at School A because its sector is bigger.\" Is Tom right?",
+    "solution": "School A: $\\dfrac{90}{360} \\times 400 = 100$ students.\n\nSchool B: $\\dfrac{60}{360} \\times 900 = 150$ students.\n\nTom is **wrong**: more students take the bus at School B. A bigger sector means a bigger **proportion** ($\\frac{1}{4}$ against $\\frac{1}{6}$), but School B has many more students in total."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Works out pie chart angles as percentages of 100 instead of 360, e.g. apple $= \\frac{21}{60} \\times 100 = 35^\\circ$, or uses the frequency itself as the angle ($21^\\circ$).",
+    "correction": "A full circle is $360^\\circ$, so angle $= \\frac{21}{60} \\times 360^\\circ = 126^\\circ$. Check that all the angles add up to $360^\\circ$."
+   },
+   {
+    "id": "m2",
+    "text": "Compares frequencies between two pie charts using sector size alone, e.g. \"School A's bus sector is bigger, so more students at A take the bus\".",
+    "correction": "Sector size shows a proportion of that chart's own total. Convert to frequencies first: $\\frac{90}{360} \\times 400 = 100$ but $\\frac{60}{360} \\times 900 = 150$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the pictogram key or misreads part symbols, e.g. when one symbol represents 4 cars, counts $3\\frac{1}{2}$ symbols as $3.5$ cars (or as 4).",
+    "correction": "Multiply by the key: $3\\frac{1}{2} \\times 4 = 14$ cars. A half symbol is worth half the key value (2 cars here)."
+   },
+   {
+    "id": "m4",
+    "text": "Judges a bar chart by bar heights when the frequency axis does not start at 0, e.g. on an axis starting at 40, a bar reaching 60 is drawn four times as tall as a bar reaching 45, so the student says \"four times as many\".",
+    "correction": "Read the actual values from the scale: $60$ is only $\\frac{60}{45} = 1\\frac{1}{3}$ times $45$. A truncated axis exaggerates differences; when drawing, start the frequency axis at 0."
+   }
+  ]
+ },
+ {
+  "id": "stat-stem-leaf-dot-plots",
+  "prerequisites": [
+   "stat-averages-range",
+   "stat-charts-diagrams"
+  ],
+  "keyIdea": "**Stem-and-leaf diagram**: split each value into a **stem** (leading digits) and a **leaf** (last digit). Write the leaves in order and always give a **key**, e.g. $2 \\mid 3$ means 23. It keeps every data value and shows the shape, so you can read off the median (the $\\frac{n+1}{2}$th leaf), mode and range.\n\n**Back-to-back stem-and-leaf**: two data sets share the stems. Leaves on the left are read from the stem outwards (right to left), so \"$4 \\mid 1$\" on the left means 14. Each side needs a key.\n\n**Dot plot** (US: line plot): one dot per value stacked above a number line. It shows clusters, gaps, peaks and outliers; the tallest stack is the mode.\n\n**Simple histogram** (equal class widths): group the data into equal intervals and draw bars whose heights are the frequencies, with **no gaps** because the scale is continuous.",
+  "workedExamples": [
+   {
+    "question": "Draw an ordered stem-and-leaf diagram for these 13 scores and find the median, mode and range.\n$$23,\\ 35,\\ 41,\\ 28,\\ 30,\\ 35,\\ 47,\\ 22,\\ 39,\\ 35,\\ 41,\\ 26,\\ 33$$",
+    "solution": "Stems are the tens digits 2, 3 and 4. Put the leaves in order:\n$$\\begin{array}{r|l} 2 & 2\\ \\ 3\\ \\ 6\\ \\ 8 \\\\ 3 & 0\\ \\ 3\\ \\ 5\\ \\ 5\\ \\ 5\\ \\ 9 \\\\ 4 & 1\\ \\ 1\\ \\ 7 \\end{array}$$\nKey: $2 \\mid 3$ means 23.\n\n**Median**: position $\\frac{13+1}{2} = 7$. Counting leaves: 4 in the first row, then the 3rd leaf of the second row: **35**.\n\n**Mode**: **35** (three times).\n\n**Range**: $47 - 22 = 25$"
+   },
+   {
+    "question": "The back-to-back stem-and-leaf diagram shows the times (seconds) for two classes to solve a puzzle.\n$$\\begin{array}{r|c|l} \\text{Class A} & & \\text{Class B} \\\\ \\hline 9\\ \\ 7\\ \\ 4 & 1 & 5\\ \\ 8 \\\\ 8\\ \\ 6\\ \\ 5\\ \\ 2 & 2 & 0\\ \\ 3\\ \\ 6\\ \\ 7\\ \\ 9 \\\\ 3\\ \\ 1 & 3 & 1\\ \\ 4\\ \\ 4 \\end{array}$$\nKey: $4 \\mid 1 \\mid$ means 14 s for Class A; $\\mid 1 \\mid 5$ means 15 s for Class B.\n\nFind the median and range for each class.",
+    "solution": "Read Class A outwards from the stem: $14, 17, 19, 22, 25, 26, 28, 31, 33$ (9 values).\n\nClass B: $15, 18, 20, 23, 26, 27, 29, 31, 34, 34$ (10 values).\n\n**Class A**: median is the $\\frac{9+1}{2} = 5$th value $= 25$ s; range $= 33 - 14 = 19$ s.\n\n**Class B**: median is the $\\frac{10+1}{2} = 5.5$th value $= \\frac{26 + 27}{2} = 26.5$ s; range $= 34 - 15 = 19$ s.\n\nClass A were slightly quicker on average (lower median); both classes had the same range."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Reads the left-hand side of a back-to-back diagram the wrong way, e.g. reads the leaf 4 next to stem 1 as 41, or lists Class A's first row as $19, 17, 14$ and takes the median from that unordered list.",
+    "correction": "Left-hand leaves still attach to the stem as the units digit: $4 \\mid 1$ is 14. The smallest values are the leaves closest to the stem, so read outwards: $14, 17, 19$."
+   },
+   {
+    "id": "m2",
+    "text": "Writes leaves in the order the data were given instead of in order, then counts to the middle leaf, giving the wrong median.",
+    "correction": "An **ordered** stem-and-leaf diagram needs the leaves in increasing order in every row. Order them first (or redraw), then count to the $\\frac{n+1}{2}$th leaf."
+   },
+   {
+    "id": "m3",
+    "text": "Counts a stem with no leaves as a data value, e.g. treats an empty row \"$5 \\mid$\" as the value 50 when counting $n$ or finding the range.",
+    "correction": "Only leaves are data values. A stem with no leaves means there are **no** values in the 50s; it is kept to show the gap but contributes nothing to $n$, the median or the range."
+   },
+   {
+    "id": "m4",
+    "text": "Reads the value with the tallest stack of dots on a dot plot as the median.",
+    "correction": "The tallest stack is the **mode** (most common value). For the median, count the dots from the left until you reach the $\\frac{n+1}{2}$th dot."
+   }
+  ]
+ },
+ {
+  "id": "stat-quartiles-box-plots",
+  "prerequisites": [
+   "stat-averages-range",
+   "stat-stem-leaf-dot-plots"
+  ],
+  "keyIdea": "Order the data. The median $Q_2$ splits it into two halves; the **lower quartile** $Q_1$ is the median of the lower half and the **upper quartile** $Q_3$ is the median of the upper half (for odd $n$, leave the median out of both halves). For GCSE you may also use positions $\\frac{n+1}{4}$ and $\\frac{3(n+1)}{4}$.\n\n**Interquartile range**: $\\text{IQR} = Q_3 - Q_1$, the spread of the middle 50%, not affected by extreme values.\n\n**Five-number summary**: minimum, $Q_1$, median, $Q_3$, maximum. A **box plot** draws the box from $Q_1$ to $Q_3$ with a line at the median, and whiskers out to the smallest and largest values. Each of the four sections holds about 25% of the data, however long it is.\n\n**Outliers**: a value is an outlier if it is below $Q_1 - 1.5 \\times \\text{IQR}$ or above $Q_3 + 1.5 \\times \\text{IQR}$. Plot it as a separate cross and end the whisker at the most extreme value that is not an outlier.",
+  "workedExamples": [
+   {
+    "question": "For the data\n$$3,\\ 7,\\ 8,\\ 12,\\ 13,\\ 14,\\ 15,\\ 16,\\ 18,\\ 21,\\ 40$$\nfind the five-number summary and the IQR, decide whether there are any outliers, and draw a box plot.",
+    "solution": "There are 11 values, already in order.\n\nMedian: the 6th value $= 14$.\n\nLower half $3, 7, 8, 12, 13$: $Q_1 = 8$. Upper half $15, 16, 18, 21, 40$: $Q_3 = 18$.\n\nFive-number summary: $3,\\ 8,\\ 14,\\ 18,\\ 40$; $\\text{IQR} = 18 - 8 = 10$.\n\nOutlier fences:\n$$Q_1 - 1.5 \\times 10 = 8 - 15 = -7, \\qquad Q_3 + 1.5 \\times 10 = 18 + 15 = 33$$\n$40 > 33$, so **40 is an outlier**; no value is below $-7$.\n\nBox plot: box from 8 to 18 with the median line at 14, lower whisker to 3, upper whisker to 21 (the largest non-outlier), and 40 plotted as a cross.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 170\" width=\"360\" height=\"170\"><line x1=\"52.5\" y1=\"65\" x2=\"90.0\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"52.5\" y1=\"52\" x2=\"52.5\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"90.0\" y=\"40\" width=\"75.0\" height=\"50\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"135.0\" y1=\"40\" x2=\"135.0\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"165.0\" y1=\"65\" x2=\"187.5\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"187.5\" y1=\"52\" x2=\"187.5\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"325.0\" y1=\"60\" x2=\"335.0\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"325.0\" y1=\"70\" x2=\"335.0\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30.0\" y1=\"125\" x2=\"330.0\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30.0\" y1=\"125\" x2=\"30.0\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"30.0\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"67.5\" y1=\"125\" x2=\"67.5\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"67.5\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">5</text><line x1=\"105.0\" y1=\"125\" x2=\"105.0\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"105.0\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">10</text><line x1=\"142.5\" y1=\"125\" x2=\"142.5\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"142.5\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">15</text><line x1=\"180.0\" y1=\"125\" x2=\"180.0\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"180.0\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">20</text><line x1=\"217.5\" y1=\"125\" x2=\"217.5\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"217.5\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">25</text><line x1=\"255.0\" y1=\"125\" x2=\"255.0\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"255.0\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">30</text><line x1=\"292.5\" y1=\"125\" x2=\"292.5\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"292.5\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">35</text><line x1=\"330.0\" y1=\"125\" x2=\"330.0\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"330.0\" y=\"147\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">40</text><text x=\"330.0\" y=\"35\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">outlier</text></svg>"
+   },
+   {
+    "question": "A box plot of journey times (minutes) shows: minimum 12, $Q_1 = 20$, median 26, $Q_3 = 30$, maximum 52.\n\n(a) Find the IQR. (b) Is 52 an outlier? (c) What percentage of journeys took between 20 and 52 minutes?",
+    "solution": "(a) $\\text{IQR} = 30 - 20 = 10$ minutes.\n\n(b) Upper fence $= 30 + 1.5 \\times 10 = 45$. Since $52 > 45$, **yes**, 52 is an outlier.\n\n(c) From $Q_1$ up to the maximum covers three of the four quarters: **75%** of journeys."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a longer section of a box plot contains more data, e.g. \"the upper whisker is longest, so most people took over 30 minutes\".",
+    "correction": "Each section (whisker, half-box, half-box, whisker) contains about 25% of the data. A long section means those values are **spread out**, not that there are more of them."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the outlier rule to the value alone, e.g. \"$1.5 \\times \\text{IQR} = 15$ and $40 > 15$, so 40 is an outlier\", or measures $1.5 \\times \\text{IQR}$ from the median.",
+    "correction": "The fences are measured from the quartiles: upper fence $= Q_3 + 1.5 \\times \\text{IQR} = 18 + 15 = 33$, lower fence $= Q_1 - 1.5 \\times \\text{IQR}$. Compare values with these fences."
+   },
+   {
+    "id": "m3",
+    "text": "Gives the position as the quartile, e.g. for 11 values writes \"$Q_1 = \\frac{11+1}{4} = 3$\".",
+    "correction": "$\\frac{n+1}{4} = 3$ is the **position**: $Q_1$ is the 3rd ordered value, which is 8 for $3, 7, 8, 12, \\dots$"
+   },
+   {
+    "id": "m4",
+    "text": "When there is an outlier, still draws the whisker all the way to it (e.g. to 40), or deletes the outlier from the diagram altogether.",
+    "correction": "End the whisker at the most extreme value that is **not** an outlier (21 here) and mark the outlier separately with a cross, so it is shown but does not distort the whisker."
+   }
+  ]
+ },
+ {
+  "id": "stat-cumulative-frequency",
+  "prerequisites": [
+   "stat-averages-frequency-tables",
+   "stat-quartiles-box-plots"
+  ],
+  "keyIdea": "**Cumulative frequency** is a running total of the frequencies. For grouped data:\n\n1. Add a cumulative frequency column: each entry is the previous total plus the class frequency.\n2. Plot each cumulative frequency against the **upper class boundary**, starting with a point at (lowest boundary, $0$).\n3. Join with a smooth curve (or straight line segments).\n\nFor $n$ values, read across from the cumulative frequency axis to the curve, then down:\n* median at $\\frac{n}{2}$, lower quartile at $\\frac{n}{4}$, upper quartile at $\\frac{3n}{4}$; $\\text{IQR} = Q_3 - Q_1$\n* the $p$th percentile at $\\frac{p}{100} \\times n$.\n\nTo find how many values are **above** a value $a$: read the cumulative frequency at $a$ and subtract it from $n$. All answers are estimates, since the original data were grouped.",
+  "workedExamples": [
+   {
+    "question": "The times of 80 runners in a 5 km race are shown.\n\n| Time, $t$ (min) | $20 < t \\le 25$ | $25 < t \\le 30$ | $30 < t \\le 35$ | $35 < t \\le 40$ | $40 < t \\le 45$ |\n|---|---|---|---|---|---|\n| Frequency | 6 | 14 | 30 | 22 | 8 |\n\n(a) Draw a cumulative frequency graph. (b) Estimate the median and the IQR. (c) Estimate how many runners took more than 38 minutes.",
+    "solution": "(a) Cumulative frequencies: $6,\\ 20,\\ 50,\\ 72,\\ 80$.\n\nPlot $(20, 0), (25, 6), (30, 20), (35, 50), (40, 72), (45, 80)$, using the **upper** boundary of each class, and join them (straight segments are used here; a smooth curve gives similar readings).\n\n(b) Median: read across from $\\frac{80}{2} = 40$. This lies between $(30, 20)$ and $(35, 50)$:\n$$t \\approx 30 + \\frac{40 - 20}{30} \\times 5 \\approx 33.3 \\text{ min}$$\n$Q_1$: read across from $20$: $t = 30$ min.\n$Q_3$: read across from $60$, between $(35, 50)$ and $(40, 72)$:\n$$t \\approx 35 + \\frac{60 - 50}{22} \\times 5 \\approx 37.3 \\text{ min}$$\n$\\text{IQR} \\approx 37.3 - 30 = 7.3$ min.\n\n(c) At $t = 38$: cumulative frequency $\\approx 50 + \\frac{3}{5} \\times 22 \\approx 63$. More than 38 minutes: $80 - 63 = 17$ runners (estimate).",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><line x1=\"50\" y1=\"250\" x2=\"340\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50.0\" y1=\"250\" x2=\"50.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"50.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">20</text><line x1=\"106.0\" y1=\"250\" x2=\"106.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"106.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">25</text><line x1=\"162.0\" y1=\"250\" x2=\"162.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">30</text><line x1=\"218.0\" y1=\"250\" x2=\"218.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"218.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">35</text><line x1=\"274.0\" y1=\"250\" x2=\"274.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"274.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">40</text><line x1=\"330.0\" y1=\"250\" x2=\"330.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">45</text><line x1=\"44\" y1=\"250.0\" x2=\"50\" y2=\"250.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"254.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"44\" y1=\"195.0\" x2=\"50\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"199.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">20</text><line x1=\"44\" y1=\"140.0\" x2=\"50\" y2=\"140.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"144.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">40</text><line x1=\"44\" y1=\"85.0\" x2=\"50\" y2=\"85.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"89.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">60</text><line x1=\"44\" y1=\"30.0\" x2=\"50\" y2=\"30.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"34.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">80</text><polyline points=\"50.0,250.0 106.0,233.5 162.0,195.0 218.0,112.5 274.0,52.0 330.0,30.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"50.0\" cy=\"250.0\" r=\"3\" fill=\"currentColor\"/><circle cx=\"106.0\" cy=\"233.5\" r=\"3\" fill=\"currentColor\"/><circle cx=\"162.0\" cy=\"195.0\" r=\"3\" fill=\"currentColor\"/><circle cx=\"218.0\" cy=\"112.5\" r=\"3\" fill=\"currentColor\"/><circle cx=\"274.0\" cy=\"52.0\" r=\"3\" fill=\"currentColor\"/><circle cx=\"330.0\" cy=\"30.0\" r=\"3\" fill=\"currentColor\"/><polyline points=\"50,140.0 199.33,140.0 199.33,250\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"195\" y=\"292\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Time, t (minutes)</text><text x=\"56\" y=\"18\" text-anchor=\"start\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Cumulative frequency</text></svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Plots cumulative frequencies at the class midpoints (e.g. $(22.5, 6), (27.5, 20), \\dots$) instead of the upper class boundaries.",
+    "correction": "A cumulative frequency of 6 means \"6 runners took **up to** 25 minutes\", so it belongs at the end of the class: $(25, 6)$. Plotting at midpoints shifts the whole curve left and underestimates the median and quartiles."
+   },
+   {
+    "id": "m2",
+    "text": "When asked how many values are **more than** a given value, gives the cumulative frequency read off the graph, e.g. \"63 runners took more than 38 minutes\".",
+    "correction": "Cumulative frequency counts values **up to** that point. The number above 38 minutes is $n - 63 = 80 - 63 = 17$."
+   },
+   {
+    "id": "m3",
+    "text": "Finds the IQR by subtracting on the vertical axis, e.g. \"$\\text{IQR} = 60 - 20 = 40$\".",
+    "correction": "$\\frac{n}{4}$ and $\\frac{3n}{4}$ only tell you where to read **from**. Go across to the curve and down to the horizontal axis to get $Q_1 = 30$ and $Q_3 \\approx 37.3$; the IQR is $37.3 - 30 \\approx 7.3$ minutes, in the units of the data."
+   },
+   {
+    "id": "m4",
+    "text": "Starts the curve at the origin $(0, 0)$, or at the first plotted point $(25, 6)$, instead of at (lowest class boundary, 0) $= (20, 0)$.",
+    "correction": "No runner finished in 20 minutes or less, so the cumulative frequency is 0 at $t = 20$. The curve must start at $(20, 0)$; joining to the origin would claim times between 0 and 20 minutes."
+   }
+  ]
+ },
+ {
+  "id": "stat-histograms",
+  "prerequisites": [
+   "stat-averages-frequency-tables",
+   "stat-stem-leaf-dot-plots",
+   "geo-perimeter-area"
+  ],
+  "keyIdea": "In a histogram the **area** of each bar represents frequency, which matters when class widths are unequal. The vertical axis shows **frequency density**:\n$$\\text{frequency density} = \\frac{\\text{frequency}}{\\text{class width}}, \\qquad \\text{frequency} = \\text{frequency density} \\times \\text{class width}$$\nBars touch (the data are continuous) and their widths match the class boundaries exactly.\n\n* The **modal class** is the tallest bar (highest frequency density), which is not necessarily the class with the highest frequency.\n* To estimate the frequency in **part** of a class, assume the values are spread evenly: take the fraction of the bar's width, or use area.\n* If the vertical axis is unlabelled (A-level), use one known bar to find the scale: frequency $= k \\times \\text{area}$.",
+  "workedExamples": [
+   {
+    "question": "The heights of 80 plants are recorded.\n\n| Height, $h$ (cm) | $140 \\le h < 150$ | $150 \\le h < 155$ | $155 \\le h < 160$ | $160 \\le h < 170$ | $170 \\le h < 190$ |\n|---|---|---|---|---|---|\n| Frequency | 10 | 12 | 18 | 24 | 16 |\n\n(a) Draw a histogram. (b) Estimate the number of plants with heights between 165 cm and 180 cm.",
+    "solution": "(a) Frequency densities:\n\n$\\frac{10}{10} = 1$, $\\quad \\frac{12}{5} = 2.4$, $\\quad \\frac{18}{5} = 3.6$, $\\quad \\frac{24}{10} = 2.4$, $\\quad \\frac{16}{20} = 0.8$\n\nDraw touching bars with these heights over the class intervals.\n\n(b) $165$ to $170$ is half of the $160 \\le h < 170$ class: $2.4 \\times 5 = 12$ plants.\n\n$170$ to $180$ is half of the $170 \\le h < 190$ class: $0.8 \\times 10 = 8$ plants.\n\nEstimate: $12 + 8 = 20$ plants (the shaded area).",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><rect x=\"190.0\" y=\"130.0\" width=\"28.0\" height=\"120.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><rect x=\"218.0\" y=\"210.0\" width=\"56.0\" height=\"40.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><rect x=\"50.0\" y=\"200.0\" width=\"56.0\" height=\"50.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"106.0\" y=\"130.0\" width=\"28.0\" height=\"120.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"134.0\" y=\"70.0\" width=\"28.0\" height=\"180.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"162.0\" y=\"130.0\" width=\"56.0\" height=\"120.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"218.0\" y=\"210.0\" width=\"112.0\" height=\"40.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"340\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50.0\" y1=\"250\" x2=\"50.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"50.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">140</text><line x1=\"106.0\" y1=\"250\" x2=\"106.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"106.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">150</text><line x1=\"162.0\" y1=\"250\" x2=\"162.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">160</text><line x1=\"218.0\" y1=\"250\" x2=\"218.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"218.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">170</text><line x1=\"274.0\" y1=\"250\" x2=\"274.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"274.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">180</text><line x1=\"330.0\" y1=\"250\" x2=\"330.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">190</text><line x1=\"44\" y1=\"250\" x2=\"50\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"254\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"44\" y1=\"200\" x2=\"50\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"204\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">1</text><line x1=\"44\" y1=\"150\" x2=\"50\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"154\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">2</text><line x1=\"44\" y1=\"100\" x2=\"50\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"104\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">3</text><line x1=\"44\" y1=\"50\" x2=\"50\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"54\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">4</text><text x=\"195\" y=\"292\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Height, h (cm)</text><text x=\"56\" y=\"25\" text-anchor=\"start\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Frequency density</text></svg>"
+   },
+   {
+    "question": "On a histogram with no vertical scale, the bar for $20 \\le t < 30$ is 2 cm wide and 6 cm tall and represents 30 people. The bar for $30 \\le t < 50$ is 2.5 cm tall. How many people does it represent?",
+    "solution": "Width scale: 10 units of $t$ is 2 cm, so the $30 \\le t < 50$ bar is 4 cm wide.\n\nKnown bar: area $= 2 \\times 6 = 12\\ \\text{cm}^2$ for 30 people, so each $\\text{cm}^2$ represents $\\frac{30}{12} = 2.5$ people.\n\nSecond bar: area $= 4 \\times 2.5 = 10\\ \\text{cm}^2$, so it represents $10 \\times 2.5 = 25$ people."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Plots frequency on the vertical axis when the class widths are unequal, so the $170 \\le h < 190$ bar (frequency 16) looks far bigger than it should.",
+    "correction": "With unequal widths, the bar height must be the frequency density $\\frac{16}{20} = 0.8$ so that the **area** ($0.8 \\times 20 = 16$) represents the frequency."
+   },
+   {
+    "id": "m2",
+    "text": "Calculates frequency density the wrong way round, e.g. $\\frac{\\text{class width}}{\\text{frequency}} = \\frac{5}{12}$, or as frequency $\\times$ width.",
+    "correction": "Frequency density is frequency **per unit** of width: $\\frac{\\text{frequency}}{\\text{class width}} = \\frac{12}{5} = 2.4$. Check: density $\\times$ width gives back the frequency."
+   },
+   {
+    "id": "m3",
+    "text": "Reads the frequency straight from the height of the bar, e.g. \"the $150 \\le h < 155$ class has 2.4 plants\".",
+    "correction": "The height is a density. Multiply by the class width: $2.4 \\times 5 = 12$ plants."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the class with the largest frequency as the modal class, e.g. $160 \\le h < 170$ (frequency 24), instead of the tallest bar.",
+    "correction": "With unequal widths the modal class is the one with the highest **frequency density**: $155 \\le h < 160$ (density 3.6), where values are most concentrated."
+   }
+  ]
+ },
+ {
+  "id": "stat-frequency-polygons-time-series",
+  "prerequisites": [
+   "stat-charts-diagrams",
+   "stat-averages-frequency-tables"
+  ],
+  "keyIdea": "**Frequency polygon** (grouped data): plot each frequency at the **midpoint** of its class, then join neighbouring points with straight lines. Do not join the last point back to the first. Two frequency polygons on the same axes make it easy to compare distributions.\n\n**Time series**: data recorded at regular intervals (days, months, quarters). Put time on the horizontal axis, plot the points and join them with straight lines; the lines between points only show the direction of change, they are not measured values.\n\nLook for:\n* the **trend**: the overall long-term direction (increasing, decreasing, level);\n* **seasonality**: a pattern that repeats each cycle (e.g. ice-cream sales peak every summer).\n\nTo judge the trend in seasonal data, compare like with like: the same quarter or month in different years.",
+  "workedExamples": [
+   {
+    "question": "Draw a frequency polygon for the masses of 30 apples.\n\n| Mass, $m$ (g) | $0 < m \\le 20$ | $20 < m \\le 40$ | $40 < m \\le 60$ | $60 < m \\le 80$ |\n|---|---|---|---|---|\n| Frequency | 5 | 12 | 9 | 4 |",
+    "solution": "Midpoints: $\\frac{0+20}{2} = 10$, $30$, $50$, $70$.\n\nPlot the points $(10, 5)$, $(30, 12)$, $(50, 9)$, $(70, 4)$.\n\nJoin neighbouring points with straight lines. Do not join $(70, 4)$ back to $(10, 5)$.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><line x1=\"50\" y1=\"250\" x2=\"340\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50.0\" y1=\"250\" x2=\"50.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"50.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"120.0\" y1=\"250\" x2=\"120.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"120.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">20</text><line x1=\"190.0\" y1=\"250\" x2=\"190.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"190.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">40</text><line x1=\"260.0\" y1=\"250\" x2=\"260.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"260.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">60</text><line x1=\"330.0\" y1=\"250\" x2=\"330.0\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330.0\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">80</text><line x1=\"44\" y1=\"250\" x2=\"50\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"254\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"44\" y1=\"220\" x2=\"50\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"224\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">2</text><line x1=\"44\" y1=\"190\" x2=\"50\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"194\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">4</text><line x1=\"44\" y1=\"160\" x2=\"50\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"164\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">6</text><line x1=\"44\" y1=\"130\" x2=\"50\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"134\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">8</text><line x1=\"44\" y1=\"100\" x2=\"50\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"104\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">10</text><line x1=\"44\" y1=\"70\" x2=\"50\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"74\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">12</text><polyline points=\"85.0,175 155.0,70 225.0,115 295.0,190\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"81.0\" y1=\"171\" x2=\"89.0\" y2=\"179\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"81.0\" y1=\"179\" x2=\"89.0\" y2=\"171\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151.0\" y1=\"66\" x2=\"159.0\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151.0\" y1=\"74\" x2=\"159.0\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"221.0\" y1=\"111\" x2=\"229.0\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"221.0\" y1=\"119\" x2=\"229.0\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"291.0\" y1=\"186\" x2=\"299.0\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"291.0\" y1=\"194\" x2=\"299.0\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"190\" y=\"292\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Mass, m (grams)</text><text x=\"56\" y=\"42\" text-anchor=\"start\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Frequency</text></svg>"
+   },
+   {
+    "question": "A café's quarterly sales (£ thousand) are shown.\n\n| | Q1 | Q2 | Q3 | Q4 |\n|---|---|---|---|---|\n| 2024 | 12 | 18 | 25 | 15 |\n| 2025 | 14 | 20 | 28 | 17 |\n\nDescribe the trend and the seasonal pattern.",
+    "solution": "**Seasonality**: in both years sales rise from Q1 to a peak in Q3 (summer) and fall in Q4, with Q1 the lowest quarter.\n\n**Trend**: compare the same quarter in each year: Q1 $12 \\to 14$, Q2 $18 \\to 20$, Q3 $25 \\to 28$, Q4 $15 \\to 17$. Every quarter is higher in 2025, so the overall trend is **upward** (by about £2000–£3000 per quarter).\n\nThe fall from Q3 2025 (28) to Q4 2025 (17) is part of the seasonal pattern, not evidence that sales are declining."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Plots frequency polygon points at the upper (or lower) class boundaries, e.g. $(20, 5), (40, 12), \\dots$, instead of at the midpoints.",
+    "correction": "Each class is represented by its midpoint: $0 < m \\le 20$ is plotted at $m = 10$, giving $(10, 5), (30, 12), (50, 9), (70, 4)$."
+   },
+   {
+    "id": "m2",
+    "text": "Joins the last point back to the first to make a closed shape, or draws bars instead of joining points with straight lines.",
+    "correction": "A frequency polygon is an open line: join each point only to its neighbours, from the first class to the last. Bars would make a histogram, a different diagram."
+   },
+   {
+    "id": "m3",
+    "text": "Mistakes a seasonal drop for the trend, e.g. \"sales fell from 28 in Q3 to 17 in Q4, so sales are decreasing\".",
+    "correction": "Q4 is always lower than Q3; that is seasonality. To see the trend compare the same quarter in different years (Q4: $15 \\to 17$), which shows an increase."
+   },
+   {
+    "id": "m4",
+    "text": "Treats the plotted points as exact data values, e.g. reads the point $(30, 12)$ as \"12 apples weigh exactly 30 g\".",
+    "correction": "The point $(30, 12)$ means 12 apples have masses in the class $20 < m \\le 40$; 30 g is just the midpoint used to represent that class. The exact masses are unknown."
+   }
+  ]
+ },
+ {
+  "id": "stat-scatter-correlation",
+  "prerequisites": [
+   "stat-charts-diagrams",
+   "alg-coordinates-midpoint-distance",
+   "alg-straight-line-graphs"
+  ],
+  "keyIdea": "A **scatter graph** plots pairs of values $(x, y)$ for each individual to see whether two variables are related.\n\n* **Positive correlation**: as $x$ increases, $y$ tends to increase. **Negative**: as $x$ increases, $y$ tends to decrease. **No correlation**: no clear pattern.\n* **Strength** depends on how closely the points lie to a straight line, not on how steep it is.\n\nA **line of best fit** is a straight ruled line following the trend, with roughly equal numbers of points on each side; ideally it passes through the mean point $(\\bar{x}, \\bar{y})$. It need not pass through the origin. Its gradient (US: slope) gives the rate of change, e.g. \"about 6 marks per extra hour\".\n\n**Interpolation** (within the data range) gives reasonable estimates; **extrapolation** (outside it) is unreliable. Ignore **outliers** when drawing the line.\n\n**Correlation does not imply causation**: a third variable may drive both.",
+  "workedExamples": [
+   {
+    "question": "Eight students recorded hours revised, $x$, and test score, $y$:\n\n| $x$ | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|---|---|---|\n| $y$ | 35 | 42 | 50 | 55 | 61 | 70 | 72 | 80 |\n\n(a) Describe the correlation. (b) A line of best fit passes through $(0, 30)$ and $(8, 80)$. Find its equation and use it to estimate the score for 3.5 hours. (c) Why should it not be used for 15 hours of revision?",
+    "solution": "(a) **Strong positive correlation**: students who revised for longer tended to score higher, and the points lie close to a straight line.\n\n(b) Check it is a sensible line: mean point $\\bar{x} = 4.5$, $\\bar{y} = \\frac{465}{8} = 58.125$.\n\nGradient $= \\dfrac{80 - 30}{8 - 0} = 6.25$, intercept $30$:\n$$y = 6.25x + 30$$\nAt $x = 4.5$: $y = 58.125$ ✓ (the line passes through the mean point).\n\nAt $x = 3.5$: $y = 6.25 \\times 3.5 + 30 = 51.875 \\approx 52$ marks. This is interpolation, so it is reasonably reliable.\n\n(c) $15$ hours is far outside the data range (extrapolation). The line would predict $6.25 \\times 15 + 30 = 123.75$, which is impossible if the test is out of 100: the pattern need not continue.",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><line x1=\"50\" y1=\"250\" x2=\"340\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"250\" x2=\"50\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"50\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"120\" y1=\"250\" x2=\"120\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"120\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">2</text><line x1=\"190\" y1=\"250\" x2=\"190\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"190\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">4</text><line x1=\"260\" y1=\"250\" x2=\"260\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"260\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">6</text><line x1=\"330\" y1=\"250\" x2=\"330\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330\" y=\"270\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">8</text><line x1=\"44\" y1=\"250.0\" x2=\"50\" y2=\"250.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"254.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">0</text><line x1=\"44\" y1=\"206.0\" x2=\"50\" y2=\"206.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"210.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">20</text><line x1=\"44\" y1=\"162.0\" x2=\"50\" y2=\"162.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"166.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">40</text><line x1=\"44\" y1=\"118.0\" x2=\"50\" y2=\"118.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"122.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">60</text><line x1=\"44\" y1=\"74.0\" x2=\"50\" y2=\"74.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"78.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">80</text><line x1=\"44\" y1=\"30.0\" x2=\"50\" y2=\"30.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40\" y=\"34.0\" text-anchor=\"end\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">100</text><line x1=\"50\" y1=\"184.0\" x2=\"330\" y2=\"74.0\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"81\" y1=\"169.0\" x2=\"89\" y2=\"177.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"81\" y1=\"177.0\" x2=\"89\" y2=\"169.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"116\" y1=\"153.6\" x2=\"124\" y2=\"161.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"116\" y1=\"161.6\" x2=\"124\" y2=\"153.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"136.0\" x2=\"159\" y2=\"144.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"151\" y1=\"144.0\" x2=\"159\" y2=\"136.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"186\" y1=\"125.0\" x2=\"194\" y2=\"133.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"186\" y1=\"133.0\" x2=\"194\" y2=\"125.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"221\" y1=\"111.8\" x2=\"229\" y2=\"119.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"221\" y1=\"119.8\" x2=\"229\" y2=\"111.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"256\" y1=\"92.0\" x2=\"264\" y2=\"100.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"256\" y1=\"100.0\" x2=\"264\" y2=\"92.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"291\" y1=\"87.6\" x2=\"299\" y2=\"95.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"291\" y1=\"95.6\" x2=\"299\" y2=\"87.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"326\" y1=\"70.0\" x2=\"334\" y2=\"78.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"326\" y1=\"78.0\" x2=\"334\" y2=\"70.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"190\" y=\"292\" text-anchor=\"middle\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Hours revised</text><text x=\"56\" y=\"18\" text-anchor=\"start\" font-family=\"sans-serif\" font-size=\"13\" fill=\"currentColor\">Test score</text></svg>"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Concludes that one variable causes the other because they are correlated, e.g. \"ice-cream sales and sunburn cases are positively correlated, so ice cream causes sunburn\".",
+    "correction": "Correlation shows only that the variables move together. Here a third (confounding) variable, hot sunny weather, increases both. Causation needs other evidence, such as a controlled experiment."
+   },
+   {
+    "id": "m2",
+    "text": "Forces the line of best fit through the origin, or joins the first and last points (or every point, dot-to-dot).",
+    "correction": "The line should follow the overall trend with points balanced on both sides, ideally through $(\\bar{x}, \\bar{y})$. It only passes through $(0, 0)$ if the data suggest it; zero hours revised does not mean a score of zero."
+   },
+   {
+    "id": "m3",
+    "text": "Trusts predictions made well outside the range of the data, e.g. \"15 hours of revision gives a score of 124\".",
+    "correction": "Extrapolation assumes the pattern continues beyond the observed data, which may be false (scores are capped at 100). Only interpolation within the data range is reasonably reliable."
+   },
+   {
+    "id": "m4",
+    "text": "Judges the strength of correlation by how steep the points are, e.g. \"the points rise steeply, so the correlation is strong\" even when they are widely scattered.",
+    "correction": "Strength measures how closely the points cluster around a straight line. A shallow line with points very close to it is strong correlation; a steep but widely scattered pattern is weak."
+   }
+  ]
+ },
+ {
+  "id": "stat-mean-absolute-deviation",
+  "prerequisites": [
+   "stat-averages-range",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "The **mean absolute deviation (MAD)** measures variability: the average distance of the data values from the mean.\n\n1. Find the mean $\\bar{x}$.\n2. Find each value's distance from the mean, $|x - \\bar{x}|$ (always positive).\n3. Find the mean of those distances:\n$$\\text{MAD} = \\frac{\\sum |x - \\bar{x}|}{n}$$\n\nThe MAD has the same units as the data. A **small** MAD means the values are clustered close to the mean (consistent); a **large** MAD means they are spread out. The MAD says nothing about whether the values are high or low; that is the job of the center (mean).\n\n**Comparing data sets**: compare the centers (means) and the variability (MADs). To judge how far apart two distributions are, express the difference in means as a multiple of the MAD: means 3 MADs apart barely overlap.",
+  "workedExamples": [
+   {
+    "question": "The daily high temperatures (°F) for 8 days were\n$$62,\\ 64,\\ 65,\\ 67,\\ 68,\\ 68,\\ 70,\\ 72$$\nFind the mean absolute deviation.",
+    "solution": "**Mean**: $\\dfrac{62+64+65+67+68+68+70+72}{8} = \\dfrac{536}{8} = 67$ °F\n\n**Distances from the mean**:\n\n| $x$ | 62 | 64 | 65 | 67 | 68 | 68 | 70 | 72 |\n|---|---|---|---|---|---|---|---|---|\n| $\\lvert x - 67 \\rvert$ | 5 | 3 | 2 | 0 | 1 | 1 | 3 | 5 |\n\nSum of distances: $5+3+2+0+1+1+3+5 = 20$\n\n$$\\text{MAD} = \\frac{20}{8} = 2.5 \\text{ °F}$$\n\nOn average, a day's high temperature was 2.5 °F away from the mean of 67 °F."
+   },
+   {
+    "question": "Juan's mile times have a mean of 8.5 minutes with MAD 0.2 minutes. Kim's have a mean of 8.3 minutes with MAD 0.9 minutes. Who is faster on average, and who is more consistent?",
+    "solution": "**Faster on average**: Kim, since her mean time is lower ($8.3 < 8.5$ minutes).\n\n**More consistent**: Juan, since his MAD is much smaller ($0.2 < 0.9$): his times stay close to his mean, while Kim's vary a lot.\n\nThe difference in means is only $0.2$ minutes, less than one of Kim's MADs, so the two runners' times overlap a great deal."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses signed deviations instead of distances, e.g. $(-5)+(-3)+(-2)+0+1+1+3+5 = 0$, and concludes \"MAD $= 0$, so there is no variability\".",
+    "correction": "Deviations above and below the mean always cancel to 0. Take absolute values (distances) first: $5+3+2+0+1+1+3+5 = 20$, so $\\text{MAD} = \\frac{20}{8} = 2.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the final division by $n$ and gives the total of the distances as the MAD, e.g. \"MAD $= 20$ °F\".",
+    "correction": "The MAD is the **mean** of the absolute deviations: divide the total by the number of values, $\\frac{20}{8} = 2.5$ °F. A MAD bigger than the range is a sign something has gone wrong."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks a larger MAD means larger values, e.g. \"Kim's MAD is bigger, so Kim's times are longer\".",
+    "correction": "The MAD measures **spread**, not center. Kim's larger MAD means her times vary more; her mean time (8.3 min) is actually lower than Juan's. Use the mean to compare typical values."
+   }
+  ]
+ }
+]

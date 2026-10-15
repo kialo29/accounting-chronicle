@@ -1,0 +1,700 @@
+[
+ {
+  "id": "calc-limits",
+  "prerequisites": [
+   "alg-functions-basics",
+   "alg-piecewise-functions",
+   "alg-factorising-quadratics",
+   "alg-algebraic-fractions",
+   "num-surds"
+  ],
+  "keyIdea": "$\\lim_{x\\to a} f(x) = L$ means that $f(x)$ gets as close as we like to $L$ as $x$ approaches $a$ from **both** sides. The value $f(a)$ itself does not matter – it may be different or not even exist.\n\n**One-sided limits:** $\\lim_{x\\to a^-}$ (from the left) and $\\lim_{x\\to a^+}$ (from the right). The two-sided limit exists only if both one-sided limits exist and are equal.\n\n**Graphs and tables:** follow the curve toward $x=a$ (ignore the open/closed dot at $a$); in a table, look at values on both sides closing in on $a$.\n\n**Algebra:** try direct substitution first. If it gives $\\frac{0}{0}$ (an indeterminate form), simplify and substitute again: factor and cancel the common factor, rationalize using the conjugate, or combine complex fractions. A result of $\\frac{k}{0}$ with $k \\ne 0$ signals an infinite limit or a limit that does not exist.",
+  "workedExamples": [
+   {
+    "question": "Evaluate $\\displaystyle\\lim_{x\\to 3}\\frac{x^2-9}{x^2-x-6}$.",
+    "solution": "Direct substitution gives $\\frac{9-9}{9-3-6}=\\frac{0}{0}$, which is indeterminate, so simplify first.\n\nFactor the numerator and denominator:\n$$\\frac{x^2-9}{x^2-x-6}=\\frac{(x-3)(x+3)}{(x-3)(x+2)}$$\n\nFor $x \\ne 3$ the common factor $(x-3)$ cancels:\n$$\\frac{x^2-9}{x^2-x-6}=\\frac{x+3}{x+2}$$\n\nNow substitute $x=3$:\n$$\\lim_{x\\to 3}\\frac{x+3}{x+2}=\\frac{6}{5}$$"
+   },
+   {
+    "question": "Evaluate $\\displaystyle\\lim_{x\\to 4}\\frac{\\sqrt{x}-2}{x-4}$.",
+    "solution": "Direct substitution gives $\\frac{0}{0}$, so rationalize the numerator by multiplying by the conjugate $\\sqrt{x}+2$:\n$$\\frac{\\sqrt{x}-2}{x-4}\\cdot\\frac{\\sqrt{x}+2}{\\sqrt{x}+2}=\\frac{x-4}{(x-4)(\\sqrt{x}+2)}$$\n\nFor $x \\ne 4$, cancel $(x-4)$:\n$$=\\frac{1}{\\sqrt{x}+2}$$\n\nSubstitute $x=4$:\n$$\\lim_{x\\to 4}\\frac{1}{\\sqrt{x}+2}=\\frac{1}{2+2}=\\frac{1}{4}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks that getting $\\frac{0}{0}$ from direct substitution means the limit is $0$ (or that the limit does not exist), e.g. writes $\\lim_{x\\to 3}\\frac{x^2-9}{x^2-x-6}=\\frac{0}{0}=0$.",
+    "correction": "$\\frac{0}{0}$ is an **indeterminate form**: it tells you nothing yet. Simplify (factor and cancel, rationalize) and substitute again. Here $\\frac{x^2-9}{x^2-x-6}=\\frac{x+3}{x+2}$ for $x\\ne3$, so the limit is $\\frac{6}{5}$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks the limit must equal the function value $f(a)$: on a graph with an open circle at $(2,3)$ and a filled dot at $(2,5)$, writes $\\lim_{x\\to 2} f(x)=5$.",
+    "correction": "The limit describes the value $f(x)$ approaches as $x \\to 2$, not the value at $x=2$. The curve approaches the open circle, so $\\lim_{x\\to2}f(x)=3$, while $f(2)=5$. The two agree only when $f$ is continuous at $a$."
+   },
+   {
+    "id": "m3",
+    "text": "Claims a two-sided limit exists after checking only one side, e.g. says $\\lim_{x\\to 0}\\frac{|x|}{x}=1$ because $\\frac{|x|}{x}=1$ for $x>0$.",
+    "correction": "Check both one-sided limits: $\\lim_{x\\to0^+}\\frac{|x|}{x}=1$ but $\\lim_{x\\to0^-}\\frac{|x|}{x}=-1$. They are different, so $\\lim_{x\\to0}\\frac{|x|}{x}$ does not exist."
+   },
+   {
+    "id": "m4",
+    "text": "Cancels individual terms instead of common factors: $\\frac{x^2-4}{x-2}=\\frac{x^2}{x}-\\frac{4}{2}=x-2$, so concludes $\\lim_{x\\to2}\\frac{x^2-4}{x-2}=0$.",
+    "correction": "Only common **factors** of the whole numerator and denominator cancel. Factor first: $\\frac{x^2-4}{x-2}=\\frac{(x-2)(x+2)}{x-2}=x+2$ for $x\\ne2$, so the limit is $4$."
+   }
+  ]
+ },
+ {
+  "id": "calc-continuity",
+  "prerequisites": [
+   "calc-limits",
+   "alg-piecewise-functions",
+   "alg-rational-functions"
+  ],
+  "keyIdea": "$f$ is **continuous at** $x=a$ when all three conditions hold:\n1. $f(a)$ is defined;\n2. $\\lim_{x\\to a} f(x)$ exists (left and right limits agree);\n3. $\\lim_{x\\to a} f(x)=f(a)$.\n\n**Types of discontinuity:** removable (a hole – the limit exists but $f(a)$ is missing or different), jump (one-sided limits exist but are unequal), infinite (a vertical asymptote). Polynomials, $\\sin x$, $\\cos x$, $e^x$ are continuous everywhere; rational functions are continuous on their domains.\n\n**Piecewise functions:** to make $f$ continuous at a boundary $x=a$, set the left-hand limit equal to the right-hand limit (and to $f(a)$) and solve for the unknown constant.\n\n**Intermediate Value Theorem (IVT):** if $f$ is continuous on $[a,b]$ and $N$ is between $f(a)$ and $f(b)$, then $f(c)=N$ for at least one $c$ in $(a,b)$. Always state the continuity condition when using it.",
+  "workedExamples": [
+   {
+    "question": "Find the value of $k$ that makes $f$ continuous at $x=2$, where\n$$f(x)=\\begin{cases} kx+1, & x<2 \\\\ x^2-k, & x\\ge 2 \\end{cases}$$",
+    "solution": "Left-hand limit: $\\lim_{x\\to2^-}(kx+1)=2k+1$.\n\nRight-hand limit (and value): $\\lim_{x\\to2^+}(x^2-k)=4-k=f(2)$.\n\nFor continuity these must be equal:\n$$2k+1=4-k$$\n$$3k=3 \\implies k=1$$\n\nCheck: both sides give $3$, and $f(2)=3$, so all three conditions hold."
+   },
+   {
+    "question": "Show that the equation $x^3-4x+1=0$ has a solution between $x=0$ and $x=1$.",
+    "solution": "Let $f(x)=x^3-4x+1$.\n\n$f(0)=0-0+1=1$ and $f(1)=1-4+1=-2$.\n\n$f$ is a polynomial, so it is continuous on $[0,1]$. Since $f(1)=-2<0<1=f(0)$, the value $0$ lies between $f(0)$ and $f(1)$.\n\nBy the Intermediate Value Theorem there is at least one $c$ in $(0,1)$ with $f(c)=0$, i.e. a solution of $x^3-4x+1=0$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Believes $f$ is continuous at $a$ just because $f(a)$ is defined, e.g. for $f(x)=\\frac{x^2-1}{x-1}$ ($x\\ne1$) with $f(1)=3$, says \"$f(1)$ exists so $f$ is continuous at $x=1$\".",
+    "correction": "All three conditions are needed. Here $\\lim_{x\\to1}f(x)=\\lim_{x\\to1}(x+1)=2$, but $f(1)=3$, so condition 3 fails: there is a removable discontinuity at $x=1$."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the IVT without checking continuity, e.g. for $f(x)=\\frac{1}{x}$ on $[-1,1]$: \"$f(-1)=-1$ and $f(1)=1$, so by the IVT $f(c)=0$ for some $c$\".",
+    "correction": "The IVT requires $f$ to be continuous on the **whole** closed interval. $\\frac{1}{x}$ is not defined at $x=0$ (infinite discontinuity), so the IVT does not apply – and in fact $\\frac{1}{x}$ is never $0$."
+   },
+   {
+    "id": "m3",
+    "text": "Concludes there is no root in $[a,b]$ because $f(a)$ and $f(b)$ have the same sign, e.g. \"$f(x)=x^2-1$ has $f(-2)=3$ and $f(2)=3$, so there is no solution of $f(x)=0$ in $[-2,2]$\".",
+    "correction": "The IVT only works one way: a sign change guarantees a root, but no sign change does **not** rule roots out (there could be an even number of them). Here $x=-1$ and $x=1$ are both roots in $[-2,2]$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats every zero of a denominator as a vertical asymptote (infinite discontinuity), e.g. says $f(x)=\\frac{x^2-4}{x-2}$ has a vertical asymptote at $x=2$.",
+    "correction": "Simplify first: $\\frac{x^2-4}{x-2}=x+2$ for $x\\ne2$, so $\\lim_{x\\to2}f(x)=4$ exists. The discontinuity at $x=2$ is **removable** (a hole at $(2,4)$), not infinite. A vertical asymptote occurs only when the denominator $\\to0$ and the numerator does not."
+   }
+  ]
+ },
+ {
+  "id": "calc-limits-infinity",
+  "prerequisites": [
+   "calc-limits",
+   "alg-rational-functions",
+   "pure-trig-graphs"
+  ],
+  "keyIdea": "**Limits at infinity:** $\\lim_{x\\to\\infty}f(x)=L$ means $f(x)\\to L$ as $x$ grows without bound; then $y=L$ is a horizontal asymptote. For rational functions, divide every term by the highest power of $x$ in the denominator (terms like $\\frac{5}{x}$ and $\\frac{7}{x^2}$ go to $0$):\n- degree of top < degree of bottom: limit $0$;\n- equal degrees: ratio of leading coefficients;\n- degree of top > degree of bottom: $\\pm\\infty$ (no horizontal asymptote).\n\nGrowth rates: exponentials beat powers, powers beat logarithms. As $x\\to-\\infty$ remember $\\sqrt{x^2}=|x|=-x$.\n\n**Infinite limits:** if the denominator $\\to0$ while the numerator does not, $f(x)\\to\\pm\\infty$ and $x=a$ is a vertical asymptote; find the sign from each side.\n\n**Squeeze theorem:** if $g(x)\\le f(x)\\le h(x)$ near $a$ and $\\lim g=\\lim h=L$, then $\\lim f=L$.",
+  "workedExamples": [
+   {
+    "question": "Find (a) $\\displaystyle\\lim_{x\\to\\infty}\\frac{3x^2-5x}{2x^2+7}$ and (b) $\\displaystyle\\lim_{x\\to 2^-}\\frac{x+1}{x-2}$.",
+    "solution": "(a) Divide every term by $x^2$, the highest power in the denominator:\n$$\\frac{3x^2-5x}{2x^2+7}=\\frac{3-\\frac{5}{x}}{2+\\frac{7}{x^2}}$$\n\nAs $x\\to\\infty$, $\\frac{5}{x}\\to0$ and $\\frac{7}{x^2}\\to0$, so the limit is $\\frac{3}{2}$. The graph has horizontal asymptote $y=\\frac{3}{2}$.\n\n(b) As $x\\to2^-$, the numerator $\\to3$ and the denominator $x-2\\to0$ through **negative** values (e.g. $x=1.99$ gives $-0.01$).\n\nA positive number divided by a tiny negative number is a large negative number, so\n$$\\lim_{x\\to2^-}\\frac{x+1}{x-2}=-\\infty$$\nand $x=2$ is a vertical asymptote."
+   },
+   {
+    "question": "Use the squeeze theorem to find $\\displaystyle\\lim_{x\\to 0}x^2\\cos\\left(\\frac{1}{x}\\right)$.",
+    "solution": "For all $x\\ne0$:\n$$-1\\le\\cos\\left(\\frac{1}{x}\\right)\\le1$$\n\nMultiply by $x^2\\ge0$ (inequalities keep their direction):\n$$-x^2\\le x^2\\cos\\left(\\frac{1}{x}\\right)\\le x^2$$\n\nBoth bounds tend to $0$: $\\lim_{x\\to0}(-x^2)=0$ and $\\lim_{x\\to0}x^2=0$.\n\nBy the squeeze theorem,\n$$\\lim_{x\\to0}x^2\\cos\\left(\\frac{1}{x}\\right)=0$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats $\\infty$ as a number, e.g. writes $\\lim_{x\\to\\infty}\\frac{3x^2-5x}{2x^2+7}=\\frac{\\infty}{\\infty}=1$.",
+    "correction": "$\\frac{\\infty}{\\infty}$ is an indeterminate form, not $1$. Divide by the highest power of $x$ in the denominator: $\\frac{3-\\frac{5}{x}}{2+\\frac{7}{x^2}}\\to\\frac{3}{2}$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the ratio of leading coefficients even when the degrees differ, e.g. $\\lim_{x\\to\\infty}\\frac{3x^2+1}{2x^3-x}=\\frac{3}{2}$.",
+    "correction": "The ratio of leading coefficients applies only when the degrees are **equal**. Dividing by $x^3$: $\\frac{\\frac{3}{x}+\\frac{1}{x^3}}{2-\\frac{1}{x^2}}\\to\\frac{0}{2}=0$. The horizontal asymptote is $y=0$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the sign of $\\sqrt{x^2}$ as $x\\to-\\infty$, e.g. $\\lim_{x\\to-\\infty}\\frac{\\sqrt{4x^2+1}}{x+3}=\\frac{2}{1}=2$.",
+    "correction": "For $x<0$, $\\sqrt{x^2}=|x|=-x$, so $\\sqrt{4x^2+1}=-x\\sqrt{4+\\frac{1}{x^2}}$. Then $\\frac{\\sqrt{4x^2+1}}{x+3}=\\frac{-\\sqrt{4+\\frac{1}{x^2}}}{1+\\frac{3}{x}}\\to-2$. (Sanity check: for large negative $x$ the numerator is positive and the denominator negative.)"
+   },
+   {
+    "id": "m4",
+    "text": "Says a limit does not exist just because part of the expression oscillates, e.g. \"$\\lim_{x\\to0}x^2\\cos\\left(\\frac{1}{x}\\right)$ does not exist because $\\cos\\left(\\frac{1}{x}\\right)$ has no limit\".",
+    "correction": "The product law needs both limits to exist, so it cannot be used here – but that does not mean the limit fails to exist. Bound the oscillating part: $-x^2\\le x^2\\cos\\left(\\frac{1}{x}\\right)\\le x^2$, and both bounds $\\to0$, so by the squeeze theorem the limit is $0$."
+   }
+  ]
+ },
+ {
+  "id": "calc-first-principles",
+  "prerequisites": [
+   "alg-equation-of-a-line",
+   "alg-expand-double-triple",
+   "pure-binomial-expansion",
+   "pure-trig-compound-angles",
+   "calc-limits"
+  ],
+  "keyIdea": "The gradient of the chord joining $P(x, f(x))$ and $Q(x+h, f(x+h))$ is $\\frac{f(x+h)-f(x)}{h}$. As $h\\to0$, $Q$ slides towards $P$ and the chord becomes the tangent, so\n$$f'(x)=\\lim_{h\\to0}\\frac{f(x+h)-f(x)}{h}$$\n(US: the limit definition of the derivative).\n\n**Method:** expand $f(x+h)$, subtract **all** of $f(x)$, simplify, divide by $h$ (cancel the factor of $h$ *before* letting $h\\to0$), then take the limit. Write $\\lim_{h\\to0}$ on every line until the limit is taken.\n\nFor $x^n$ the binomial expansion gives $nx^{n-1}$. For $\\sin x$ and $\\cos x$ use the compound-angle formulae with $\\frac{\\sin h}{h}\\to1$ and $\\frac{\\cos h-1}{h}\\to0$ ($h$ in radians).\n\n$f$ is **differentiable** at $a$ only if this limit exists (the same from both sides). Differentiable implies continuous, but not conversely: $|x|$ is continuous at $0$ but has a corner there.",
+  "workedExamples": [
+   {
+    "question": "Prove, from first principles, that the derivative of $f(x)=3x^2-5x$ is $6x-5$.",
+    "solution": "$f(x+h)=3(x+h)^2-5(x+h)=3x^2+6xh+3h^2-5x-5h$\n\nSubtract $f(x)=3x^2-5x$:\n$$f(x+h)-f(x)=6xh+3h^2-5h$$\n\nDivide by $h$:\n$$\\frac{f(x+h)-f(x)}{h}=6x+3h-5$$\n\nLet $h\\to0$:\n$$f'(x)=\\lim_{h\\to0}(6x+3h-5)=6x-5$$"
+   },
+   {
+    "question": "Prove, from first principles, that the derivative of $\\sin x$ is $\\cos x$. You may use $\\frac{\\sin h}{h}\\to1$ and $\\frac{\\cos h-1}{h}\\to0$ as $h\\to0$.",
+    "solution": "Using $\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B$:\n$$\\frac{\\sin(x+h)-\\sin x}{h}=\\frac{\\sin x\\cos h+\\cos x\\sin h-\\sin x}{h}$$\n\nGroup the terms:\n$$=\\sin x\\left(\\frac{\\cos h-1}{h}\\right)+\\cos x\\left(\\frac{\\sin h}{h}\\right)$$\n\nAs $h\\to0$:\n$$\\frac{d}{dx}(\\sin x)=\\lim_{h\\to0}\\left[\\sin x\\left(\\frac{\\cos h-1}{h}\\right)+\\cos x\\left(\\frac{\\sin h}{h}\\right)\\right]=\\sin x\\times0+\\cos x\\times1=\\cos x$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Lets $h\\to0$ before cancelling the factor of $h$, e.g. writes $\\lim_{h\\to0}\\frac{6xh+3h^2-5h}{h}=\\frac{0}{0}$ and concludes the derivative is undefined (or $0$).",
+    "correction": "Simplify first: every term of the numerator has a factor of $h$, so $\\frac{6xh+3h^2-5h}{h}=6x+3h-5$ for $h\\ne0$. Only now let $h\\to0$ to get $6x-5$."
+   },
+   {
+    "id": "m2",
+    "text": "Expands $(x+h)^2$ as $x^2+h^2$, giving $\\frac{(x+h)^2-x^2}{h}=\\frac{h^2}{h}=h\\to0$, so \"the derivative of $x^2$ is $0$\".",
+    "correction": "$(x+h)^2=x^2+2xh+h^2$. Then $\\frac{(x+h)^2-x^2}{h}=\\frac{2xh+h^2}{h}=2x+h\\to2x$."
+   },
+   {
+    "id": "m3",
+    "text": "Does not subtract all of $f(x)$: for $f(x)=3x^2-5x$ writes $f(x+h)-f(x)=3(x+h)^2-5(x+h)-3x^2-5x$, leaving a $-10x$ term that does not cancel.",
+    "correction": "Put $f(x)$ in brackets: $-(3x^2-5x)=-3x^2+5x$. Then $f(x+h)-f(x)=6xh+3h^2-5h$, and every term contains $h$ – a useful check that the subtraction is right."
+   },
+   {
+    "id": "m4",
+    "text": "Believes every continuous function is differentiable, e.g. says $f(x)=|x|$ is differentiable at $x=0$ \"because the graph has no gaps\".",
+    "correction": "Differentiable needs the limit $\\lim_{h\\to0}\\frac{f(0+h)-f(0)}{h}=\\lim_{h\\to0}\\frac{|h|}{h}$ to exist. From the right it is $1$, from the left it is $-1$, so the limit does not exist: $|x|$ is continuous but **not** differentiable at $0$ (a corner)."
+   }
+  ]
+ },
+ {
+  "id": "calc-differentiation-basics",
+  "prerequisites": [
+   "calc-first-principles",
+   "num-negative-fractional-indices",
+   "alg-expand-double-triple"
+  ],
+  "keyIdea": "**Power rule:** if $y=x^n$ then $\\frac{dy}{dx}=nx^{n-1}$ for any rational $n$: multiply by the power, then reduce the power by $1$. Constant multiples stay: $\\frac{d}{dx}(ax^n)=anx^{n-1}$. Differentiate sums term by term; a constant term differentiates to $0$.\n\n**Rewrite first** as powers of $x$: $\\frac{1}{x^2}=x^{-2}$, $\\sqrt{x}=x^{\\frac12}$, $\\frac{3}{\\sqrt{x}}=3x^{-\\frac12}$, $\\frac{1}{3x^2}=\\frac13x^{-2}$. Expand brackets and split fractions with a single-term denominator before differentiating – there is no \"product rule\" shortcut of differentiating each bracket.\n\n**Notation:** $\\frac{dy}{dx}$ or $f'(x)$ is the gradient function (rate of change of $y$ with respect to $x$). Differentiating again gives the second derivative $\\frac{d^2y}{dx^2}$ or $f''(x)$. To find the gradient at a point, substitute its $x$-value into $\\frac{dy}{dx}$.",
+  "workedExamples": [
+   {
+    "question": "Given $y=4x^3-\\dfrac{2}{x}+6\\sqrt{x}-7$, find $\\dfrac{dy}{dx}$ and $\\dfrac{d^2y}{dx^2}$.",
+    "solution": "Rewrite as powers of $x$:\n$$y=4x^3-2x^{-1}+6x^{\\frac12}-7$$\n\nDifferentiate term by term:\n$$\\frac{dy}{dx}=12x^2+2x^{-2}+3x^{-\\frac12}=12x^2+\\frac{2}{x^2}+\\frac{3}{\\sqrt{x}}$$\n\nDifferentiate again:\n$$\\frac{d^2y}{dx^2}=24x-4x^{-3}-\\frac{3}{2}x^{-\\frac32}$$"
+   },
+   {
+    "question": "Given $f(x)=\\dfrac{(2x-1)^2}{x}$, $x\\ne0$, find $f'(2)$.",
+    "solution": "Expand the numerator: $(2x-1)^2=4x^2-4x+1$.\n\nSplit the fraction:\n$$f(x)=\\frac{4x^2}{x}-\\frac{4x}{x}+\\frac{1}{x}=4x-4+x^{-1}$$\n\nDifferentiate:\n$$f'(x)=4-x^{-2}=4-\\frac{1}{x^2}$$\n\nSubstitute $x=2$:\n$$f'(2)=4-\\frac{1}{4}=\\frac{15}{4}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Differentiates a product or quotient factor by factor, e.g. $\\frac{d}{dx}\\big[(x^2+1)(x-3)\\big]=2x\\times1=2x$, or $\\frac{d}{dx}\\left(\\frac{x^3+1}{x}\\right)=\\frac{3x^2}{1}$.",
+    "correction": "Expand or split first. $(x^2+1)(x-3)=x^3-3x^2+x-3$, so the derivative is $3x^2-6x+1$. $\\frac{x^3+1}{x}=x^2+x^{-1}$, so the derivative is $2x-x^{-2}$."
+   },
+   {
+    "id": "m2",
+    "text": "Reduces a negative power the wrong way, e.g. $\\frac{d}{dx}(x^{-2})=-2x^{-1}$.",
+    "correction": "Subtract $1$ from the power: $-2-1=-3$. So $\\frac{d}{dx}(x^{-2})=-2x^{-3}=-\\frac{2}{x^3}$."
+   },
+   {
+    "id": "m3",
+    "text": "Rewrites a coefficient in the denominator incorrectly, e.g. $\\frac{1}{3x^2}=3x^{-2}$, so $\\frac{d}{dx}\\left(\\frac{1}{3x^2}\\right)=-6x^{-3}$.",
+    "correction": "Only the $x^2$ moves up: $\\frac{1}{3x^2}=\\frac{1}{3}x^{-2}$. The derivative is $\\frac{1}{3}\\times(-2)x^{-3}=-\\frac{2}{3x^3}$."
+   },
+   {
+    "id": "m4",
+    "text": "Differentiates a constant as if it were a power of $x$, e.g. $\\frac{d}{dx}(x^2+\\pi^2)=2x+2\\pi$.",
+    "correction": "$\\pi^2$ is a constant (about $9.87$), so its derivative is $0$: $\\frac{d}{dx}(x^2+\\pi^2)=2x$. Only powers of the variable $x$ are reduced."
+   }
+  ]
+ },
+ {
+  "id": "calc-tangents-normals",
+  "prerequisites": [
+   "calc-differentiation-basics",
+   "alg-equation-of-a-line",
+   "alg-perpendicular-lines"
+  ],
+  "keyIdea": "At the point on $y=f(x)$ where $x=a$:\n- the point is $(a, f(a))$ – find the $y$-coordinate from $f$, not from $f'$;\n- the **tangent** has gradient $m=f'(a)$ (a number, found by substituting $a$);\n- the **normal** is perpendicular to the tangent, so its gradient is $-\\frac{1}{f'(a)}$.\n\nThen use $y-y_1=m(x-x_1)$. If $f'(a)=0$ the tangent is horizontal, $y=f(a)$, and the normal is vertical, $x=a$. To find where the gradient has a given value $k$, solve $f'(x)=k$.\n\n**Local linearisation** (US: local linearization): near $x=a$ the tangent line approximates the curve,\n$$f(x)\\approx f(a)+f'(a)(x-a)$$\nThe approximation is an overestimate if the curve is concave down (curve below the tangent) and an underestimate if it is concave up.",
+  "workedExamples": [
+   {
+    "question": "The curve $C$ has equation $y=x^3-3x^2+2$. Find the equations of the tangent and the normal to $C$ at the point where $x=3$.",
+    "solution": "Point: $y=27-27+2=2$, so the point is $(3,2)$.\n\nGradient: $\\frac{dy}{dx}=3x^2-6x$. At $x=3$: $27-18=9$.\n\nTangent: $y-2=9(x-3)$, so $y=9x-25$.\n\nNormal gradient: $-\\frac{1}{9}$.\n\nNormal: $y-2=-\\frac{1}{9}(x-3)$. Multiply by 9: $9y-18=-x+3$, so\n$$x+9y-21=0$$"
+   },
+   {
+    "question": "Use the tangent to $y=\\sqrt{x}$ at $x=9$ to estimate $\\sqrt{9.3}$. State whether your estimate is an overestimate or an underestimate.",
+    "solution": "$f(9)=3$ and $f'(x)=\\frac{1}{2\\sqrt{x}}$, so $f'(9)=\\frac{1}{6}$.\n\nTangent (linear approximation):\n$$L(x)=3+\\frac{1}{6}(x-9)$$\n\n$$L(9.3)=3+\\frac{1}{6}(0.3)=3+0.05=3.05$$\n\n$f''(x)=-\\frac{1}{4}x^{-\\frac32}<0$, so the curve is concave down and lies below its tangent: $3.05$ is an **overestimate** (indeed $\\sqrt{9.3}\\approx3.0496$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the gradient function instead of its value at the point, e.g. writes the tangent at $x=3$ as $y-2=(3x^2-6x)(x-3)$.",
+    "correction": "A tangent is a straight line, so its gradient is a single number. Substitute $x=3$ into $\\frac{dy}{dx}$ first: $m=3(9)-6(3)=9$, giving $y-2=9(x-3)$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the wrong gradient for the normal, e.g. with tangent gradient $9$ uses $-9$ or $\\frac{1}{9}$ for the normal.",
+    "correction": "Perpendicular gradients multiply to $-1$: $m_{\\text{normal}}=-\\frac{1}{m_{\\text{tangent}}}=-\\frac{1}{9}$ (take the reciprocal **and** change the sign)."
+   },
+   {
+    "id": "m3",
+    "text": "Finds the $y$-coordinate by substituting into the derivative, e.g. for $y=x^3-3x^2+2$ at $x=3$ uses the point $(3,9)$.",
+    "correction": "$\\frac{dy}{dx}$ gives the gradient; the point lies on the curve, so substitute into the original equation: $y=27-27+2=2$, giving $(3,2)$."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets the $(x-a)$ in a linear approximation, e.g. $\\sqrt{9.3}\\approx3+\\frac{1}{6}(9.3)=4.55$.",
+    "correction": "The tangent line is $L(x)=f(a)+f'(a)(x-a)$: the gradient multiplies the **change** in $x$ from $a$. Here $L(9.3)=3+\\frac{1}{6}(9.3-9)=3.05$. (Sense check: $\\sqrt{9.3}$ must be just above $3$.)"
+   }
+  ]
+ },
+ {
+  "id": "calc-stationary-points",
+  "prerequisites": [
+   "calc-differentiation-basics",
+   "alg-quadratic-equations-factorising",
+   "alg-quadratic-inequalities",
+   "alg-completing-the-square"
+  ],
+  "keyIdea": "**Increasing/decreasing:** $f$ is increasing where $f'(x)>0$ and decreasing where $f'(x)<0$. To show a function is increasing for all $x$, show $f'(x)>0$ (e.g. by completing the square).\n\n**Stationary points** occur where $f'(x)=0$. Solve for $x$, then substitute into $f$ (not $f'$) to get $y$.\n\n**Determining the nature:**\n- Second derivative: $f''(a)>0$ gives a minimum, $f''(a)<0$ a maximum. If $f''(a)=0$ the test is inconclusive – use the sign change instead.\n- Sign of $f'$ either side (US: first derivative test): $+$ to $-$ is a maximum, $-$ to $+$ is a minimum, no sign change is a stationary point of inflection.\n\nUS terminology: a critical point is where $f'(x)=0$ **or** $f'(x)$ is undefined; $f$ has a relative extremum there only if $f'$ changes sign.",
+  "workedExamples": [
+   {
+    "question": "Find the coordinates of the stationary points of $y=2x^3-3x^2-12x+5$, determine their nature, and state where the curve is decreasing.",
+    "solution": "$\\frac{dy}{dx}=6x^2-6x-12=6(x^2-x-2)=6(x-2)(x+1)$\n\n$\\frac{dy}{dx}=0$ when $x=2$ or $x=-1$.\n\n$x=2$: $y=16-12-24+5=-15$. $x=-1$: $y=-2-3+12+5=12$.\n\n$\\frac{d^2y}{dx^2}=12x-6$.\n\nAt $x=2$: $24-6=18>0$, so $(2,-15)$ is a minimum.\n\nAt $x=-1$: $-12-6=-18<0$, so $(-1,12)$ is a maximum.\n\nDecreasing where $6(x-2)(x+1)<0$, i.e. $-1<x<2$."
+   },
+   {
+    "question": "Find and classify the stationary points of $f(x)=x^4-4x^3$.",
+    "solution": "$f'(x)=4x^3-12x^2=4x^2(x-3)$, so $f'(x)=0$ when $x=0$ or $x=3$ (factorise – do not divide by $x$).\n\n$f''(x)=12x^2-24x$.\n\nAt $x=3$: $f''(3)=108-72=36>0$, minimum at $(3,-27)$ since $f(3)=81-108=-27$.\n\nAt $x=0$: $f''(0)=0$, inconclusive. Check the sign of $f'$:\n$f'(-1)=4(1)(-4)=-16<0$ and $f'(1)=4(1)(-2)=-8<0$.\n\nNo sign change, so $(0,0)$ is a stationary point of inflection."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks $f''(a)=0$ means the stationary point is a point of inflection, e.g. for $y=x^4$: \"$\\frac{d^2y}{dx^2}=12x^2=0$ at $x=0$, so $(0,0)$ is a point of inflection\".",
+    "correction": "$f''(a)=0$ means the second-derivative test is **inconclusive**. Check the sign of $f'$: $\\frac{dy}{dx}=4x^3$ is negative for $x<0$ and positive for $x>0$, so $(0,0)$ is a minimum."
+   },
+   {
+    "id": "m2",
+    "text": "Divides by a power of $x$ and loses a solution, e.g. $4x^3-12x^2=0\\Rightarrow4x^3=12x^2\\Rightarrow4x=12\\Rightarrow x=3$ only.",
+    "correction": "Dividing by $x^2$ assumes $x\\ne0$. Factorise instead: $4x^2(x-3)=0$ gives $x=0$ **or** $x=3$, so there are two stationary points."
+   },
+   {
+    "id": "m3",
+    "text": "Reverses the second-derivative test, e.g. \"$f''(2)=18>0$, so $(2,-15)$ is a maximum\".",
+    "correction": "$f''>0$ means the gradient is increasing: it goes from negative to positive, which is a valley shape – a **minimum**. $f''<0$ gives a maximum."
+   },
+   {
+    "id": "m4",
+    "text": "Confuses where $f$ is positive with where $f$ is increasing, e.g. says $y=x^2-4$ is increasing for $x>2$ (where $y>0$).",
+    "correction": "Increasing depends on the sign of the **derivative**: $\\frac{dy}{dx}=2x>0$ for $x>0$, so $y=x^2-4$ is increasing for $x>0$, even though $y$ is negative for $0<x<2$."
+   }
+  ]
+ },
+ {
+  "id": "calc-concavity-inflection",
+  "prerequisites": [
+   "calc-stationary-points"
+  ],
+  "keyIdea": "**Concavity:** if $f''(x)>0$ on an interval, $f$ is **convex** (US: concave up) – the gradient is increasing and the curve lies above its tangents. If $f''(x)<0$, $f$ is **concave** (US: concave down).\n\n**Point of inflection:** where the curve changes concavity, i.e. where $f''(x)$ **changes sign**. $f''(x)=0$ only gives candidates – always check the sign either side. A point of inflection need not be stationary: the gradient there can be any value.\n\n**Linking $f$, $f'$, $f''$:**\n- $f'>0$ ⟺ $f$ increasing; zeros of $f'$ (with a sign change) ⟺ turning points of $f$;\n- $f'$ increasing ⟺ $f''>0$ ⟺ $f$ convex;\n- turning points of $f'$ ⟺ points of inflection of $f$.\n\nConcavity is about how the gradient changes, not whether $f$ is going up or down.",
+  "workedExamples": [
+   {
+    "question": "Find the point of inflection on $y=x^3-6x^2+9x+1$ and state the intervals on which the curve is convex and concave.",
+    "solution": "$\\frac{dy}{dx}=3x^2-12x+9$, $\\frac{d^2y}{dx^2}=6x-12$.\n\n$\\frac{d^2y}{dx^2}=0$ when $x=2$.\n\nCheck the sign: at $x=1$, $6-12=-6<0$; at $x=3$, $18-12=6>0$. The sign changes, so there is a point of inflection.\n\n$y=8-24+18+1=3$, so the point of inflection is $(2,3)$.\n\nConcave for $x<2$, convex for $x>2$.\n\n(Note $\\frac{dy}{dx}=12-24+9=-3$ at $x=2$: this is a non-stationary point of inflection.)"
+   },
+   {
+    "question": "A function $g$ has derivative $g'(x)=(x-1)^2(x-4)$. Find the $x$-coordinates of the stationary points and the points of inflection of $g$, classifying each stationary point.",
+    "solution": "**Stationary points:** $g'(x)=0$ at $x=1$ and $x=4$.\n\nSign of $g'$: at $x=0$, $(1)(-4)<0$; at $x=2$, $(1)(-2)<0$; at $x=5$, $(16)(1)>0$.\n\n$x=1$: no sign change, so a stationary point of inflection.\n$x=4$: $-$ to $+$, so a minimum.\n\n**Points of inflection:** expand $g'(x)=x^3-6x^2+9x-4$, so\n$$g''(x)=3x^2-12x+9=3(x-1)(x-3)$$\n\n$g''(0)=9>0$, $g''(2)=-3<0$, $g''(4)=9>0$: $g''$ changes sign at $x=1$ and at $x=3$.\n\nPoints of inflection at $x=1$ (stationary) and $x=3$ (non-stationary)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Assumes $f''(a)=0$ guarantees a point of inflection, e.g. \"$y=x^4$ has $\\frac{d^2y}{dx^2}=12x^2=0$ at $x=0$, so there is a point of inflection at the origin\".",
+    "correction": "A point of inflection needs a **change** in concavity. $12x^2\\ge0$ on both sides of $0$, so $y=x^4$ is convex on both sides – no inflection (the origin is a minimum)."
+   },
+   {
+    "id": "m2",
+    "text": "Reads the wrong feature from a graph of $f'$: takes the $x$-intercepts of $y=f'(x)$ as the points of inflection of $f$.",
+    "correction": "Where $f'$ crosses the $x$-axis, $f'=0$ and changes sign, so $f$ has a **turning point** there. Points of inflection of $f$ are where $f'$ has its own turning points (local max/min), because that is where $f''$ changes sign."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses concavity with increasing/decreasing, e.g. says $y=\\frac{1}{x}$ ($x>0$) is concave because it is decreasing.",
+    "correction": "Concavity depends on $f''$, not $f'$. For $y=x^{-1}$, $\\frac{d^2y}{dx^2}=2x^{-3}>0$ for $x>0$, so the curve is **convex** (concave up) even though it is decreasing – its gradient is negative but increasing towards $0$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a point of inflection must have zero gradient, e.g. for $y=x^3-6x^2+9x+1$ says \"$\\frac{dy}{dx}=-3\\ne0$ at $x=2$, so $(2,3)$ cannot be a point of inflection\".",
+    "correction": "Inflection is defined by a change of concavity ($f''$ changes sign), not by $f'=0$. Stationary points of inflection are a special case; at $(2,3)$ the gradient is $-3$ but $f''$ changes from negative to positive, so it is a (non-stationary) point of inflection."
+   }
+  ]
+ },
+ {
+  "id": "calc-mvt-evt",
+  "prerequisites": [
+   "calc-continuity",
+   "calc-stationary-points",
+   "calc-tangents-normals"
+  ],
+  "keyIdea": "**Extreme Value Theorem (EVT):** if $f$ is continuous on a closed interval $[a,b]$, then $f$ attains an absolute maximum and an absolute minimum on $[a,b]$.\n\n**Candidates test (closed interval method):** find the critical points of $f$ **inside** $(a,b)$ (where $f'=0$ or $f'$ is undefined), evaluate $f$ at these and at both endpoints. The largest value is the absolute maximum, the smallest the absolute minimum.\n\n**Mean Value Theorem (MVT):** if $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, there is at least one $c$ in $(a,b)$ with\n$$f'(c)=\\frac{f(b)-f(a)}{b-a}$$\n– the instantaneous rate of change equals the average rate of change (a tangent parallel to the secant line). **Rolle's theorem** is the special case $f(a)=f(b)$, giving $f'(c)=0$.\n\nAP justifications: name the theorem and verify its hypotheses explicitly before concluding.",
+  "workedExamples": [
+   {
+    "question": "Find the absolute maximum and absolute minimum values of $f(x)=x^3-3x^2+1$ on the interval $[-1,4]$. Justify your answer.",
+    "solution": "$f$ is a polynomial, so it is continuous on $[-1,4]$; by the EVT the absolute extrema exist.\n\n$f'(x)=3x^2-6x=3x(x-2)$, so the critical points are $x=0$ and $x=2$ (both in $(-1,4)$).\n\nCandidates test:\n\n| $x$ | $-1$ | $0$ | $2$ | $4$ |\n|---|---|---|---|---|\n| $f(x)$ | $-3$ | $1$ | $-3$ | $17$ |\n\n($f(-1)=-1-3+1=-3$, $f(2)=8-12+1=-3$, $f(4)=64-48+1=17$.)\n\nAbsolute maximum value $17$ at $x=4$; absolute minimum value $-3$, at $x=-1$ and $x=2$."
+   },
+   {
+    "question": "Show that $f(x)=x^3$ satisfies the hypotheses of the Mean Value Theorem on $[0,3]$ and find the value of $c$ guaranteed by the theorem.",
+    "solution": "$f$ is a polynomial, so it is continuous on $[0,3]$ and differentiable on $(0,3)$: the hypotheses hold.\n\nAverage rate of change:\n$$\\frac{f(3)-f(0)}{3-0}=\\frac{27-0}{3}=9$$\n\nSet $f'(c)=9$: $3c^2=9$, so $c^2=3$ and $c=\\pm\\sqrt{3}$.\n\nOnly $c=\\sqrt{3}\\approx1.73$ lies in $(0,3)$, so $c=\\sqrt{3}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Leaves out the endpoints in the candidates test, e.g. for $f(x)=x^3-3x^2+1$ on $[-1,4]$ concludes the absolute maximum is $1$ (at $x=0$).",
+    "correction": "On a closed interval the extreme values can occur at an endpoint. Evaluate $f$ at the endpoints too: $f(4)=17>1$, so the absolute maximum value is $17$, at $x=4$."
+   },
+   {
+    "id": "m2",
+    "text": "Applies Rolle's theorem or the MVT without checking the hypotheses, e.g. \"$f(x)=|x|$ has $f(-1)=f(1)=1$, so by Rolle's theorem $f'(c)=0$ for some $c$ in $(-1,1)$\".",
+    "correction": "$|x|$ is not differentiable at $x=0$, so Rolle's theorem does not apply – and indeed $f'(x)=\\pm1$, never $0$. Always state 'continuous on $[a,b]$ and differentiable on $(a,b)$' and check both."
+   },
+   {
+    "id": "m3",
+    "text": "Sets the function value, not the derivative, equal to the average rate of change, e.g. for $x^3$ on $[0,3]$ solves $c^3=9$ to get $c=\\sqrt[3]{9}$.",
+    "correction": "The MVT is about slopes: $f'(c)=\\frac{f(b)-f(a)}{b-a}$. Solve $3c^2=9$, giving $c=\\sqrt{3}$."
+   },
+   {
+    "id": "m4",
+    "text": "Includes critical points outside the interval, e.g. for $f(x)=x^3-12x$ on $[0,3]$ uses $x=-2$ and states the absolute maximum is $f(-2)=16$.",
+    "correction": "Only critical points in $(a,b)$ are candidates. $f'(x)=3x^2-12=0$ gives $x=\\pm2$, but only $x=2$ is in $(0,3)$. Candidates: $f(0)=0$, $f(2)=-16$, $f(3)=-9$, so the absolute maximum value is $0$ (at $x=0$) and the absolute minimum value is $-16$ (at $x=2$)."
+   }
+  ]
+ },
+ {
+  "id": "calc-optimisation",
+  "prerequisites": [
+   "calc-stationary-points",
+   "alg-forming-equations",
+   "geo-volume-prisms",
+   "geo-surface-area"
+  ],
+  "keyIdea": "Optimisation (US: optimization) means finding the maximum or minimum value of a quantity in context.\n\n1. Draw a diagram and define variables (with units).\n2. Write the quantity to be optimised, e.g. $V$ or $A$, as a formula.\n3. Use the constraint (fixed area, volume, perimeter…) to eliminate all but **one** variable.\n4. State the valid domain, e.g. $0<x<15$.\n5. Differentiate, set the derivative equal to $0$ and solve; reject values outside the domain.\n6. Justify the nature: second derivative or sign change (on a closed interval, compare with the endpoint values – the US candidates test).\n7. Answer the question actually asked – usually the maximum/minimum **value** of the quantity, with units.",
+  "workedExamples": [
+   {
+    "question": "An open-topped box is made from a $30\\text{ cm}$ by $30\\text{ cm}$ square sheet of card by cutting a square of side $x\\text{ cm}$ from each corner and folding up the sides. Find the maximum volume of the box, justifying that it is a maximum.",
+    "solution": "The base is $(30-2x)$ by $(30-2x)$ and the height is $x$, so\n$$V=x(30-2x)^2=4x^3-120x^2+900x,\\quad 0<x<15$$\n\n$$\\frac{dV}{dx}=12x^2-240x+900=12(x^2-20x+75)=12(x-5)(x-15)$$\n\n$\\frac{dV}{dx}=0$ gives $x=5$ or $x=15$; reject $x=15$ (outside the domain – the base would have width $0$).\n\n$\\frac{d^2V}{dx^2}=24x-240$; at $x=5$ this is $-120<0$, so it is a maximum.\n\n$V=5\\times20^2=2000$, so the maximum volume is $2000\\text{ cm}^3$."
+   },
+   {
+    "question": "A closed cylindrical can must hold $500\\text{ cm}^3$. Find the radius that minimises its total surface area, and the minimum surface area, each to 3 significant figures.",
+    "solution": "Constraint: $\\pi r^2h=500$, so $h=\\frac{500}{\\pi r^2}$.\n\n$$A=2\\pi r^2+2\\pi rh=2\\pi r^2+\\frac{1000}{r},\\quad r>0$$\n\n$$\\frac{dA}{dr}=4\\pi r-\\frac{1000}{r^2}=0\\implies r^3=\\frac{250}{\\pi}\\implies r=\\sqrt[3]{\\frac{250}{\\pi}}=4.301\\ldots$$\n\n$\\frac{d^2A}{dr^2}=4\\pi+\\frac{2000}{r^3}>0$ for $r>0$, so this is a minimum.\n\n$A=2\\pi(4.3013)^2+\\frac{1000}{4.3013}=348.7\\ldots$\n\nRadius $4.30\\text{ cm}$, minimum surface area $349\\text{ cm}^2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Differentiates before eliminating a variable, treating the other variable as a constant, e.g. from $A=2\\pi r^2+2\\pi rh$ writes $\\frac{dA}{dr}=4\\pi r+2\\pi h$.",
+    "correction": "$h$ depends on $r$ through the constraint, so it is not constant. Use $\\pi r^2h=500$ to write $h=\\frac{500}{\\pi r^2}$, giving $A=2\\pi r^2+\\frac{1000}{r}$ in terms of $r$ only, then differentiate: $\\frac{dA}{dr}=4\\pi r-\\frac{1000}{r^2}$."
+   },
+   {
+    "id": "m2",
+    "text": "Gives the value of the variable as the answer instead of the optimum quantity, e.g. answers \"$x=5$\" when asked for the maximum volume.",
+    "correction": "$x=5$ is where the maximum occurs. Substitute back into the formula for the quantity asked for: $V=5(30-10)^2=2000\\text{ cm}^3$."
+   },
+   {
+    "id": "m3",
+    "text": "Keeps solutions that are outside the valid domain, e.g. accepts $x=15$ from $12(x-5)(x-15)=0$ for the box made from a $30\\text{ cm}$ square.",
+    "correction": "Write down the domain before solving: the base side $30-2x$ must be positive, so $0<x<15$. $x=15$ gives a box with no base ($V=0$) and is rejected; only $x=5$ is valid."
+   }
+  ]
+ },
+ {
+  "id": "calc-derivatives-exp-log-trig",
+  "prerequisites": [
+   "calc-differentiation-basics",
+   "pure-exponentials-logs",
+   "pure-radians-unit-circle",
+   "pure-trig-reciprocal-inverse"
+  ],
+  "keyIdea": "Standard results ($x$ in **radians**, $k$ constant):\n\n| $f(x)$ | $f'(x)$ |\n|---|---|\n| $e^{kx}$ | $ke^{kx}$ |\n| $a^{x}$ | $a^{x}\\ln a$ |\n| $\\ln x$ | $\\frac{1}{x}$ |\n| $\\sin kx$ | $k\\cos kx$ |\n| $\\cos kx$ | $-k\\sin kx$ |\n| $\\tan kx$ | $k\\sec^2 kx$ |\n| $\\sec x$ | $\\sec x\\tan x$ |\n| $\\operatorname{cosec} x$ | $-\\operatorname{cosec} x\\cot x$ |\n| $\\cot x$ | $-\\operatorname{cosec}^2 x$ |\n\n$e^x$ is the only function equal to its own derivative. The power rule does **not** apply to $a^x$ (the variable is in the power). Use log laws before differentiating: $\\ln(kx)=\\ln k+\\ln x$ has derivative $\\frac{1}{x}$, and $\\ln(x^3)=3\\ln x$ has derivative $\\frac{3}{x}$. The 'cos' derivatives ($\\cos$, $\\operatorname{cosec}$, $\\cot$) all carry a minus sign.",
+  "workedExamples": [
+   {
+    "question": "Differentiate $y=3e^{2x}-4\\ln x+5\\sin 3x$.",
+    "solution": "Term by term:\n\n$\\frac{d}{dx}(3e^{2x})=3\\times2e^{2x}=6e^{2x}$\n\n$\\frac{d}{dx}(-4\\ln x)=-\\frac{4}{x}$\n\n$\\frac{d}{dx}(5\\sin3x)=5\\times3\\cos3x=15\\cos3x$\n\n$$\\frac{dy}{dx}=6e^{2x}-\\frac{4}{x}+15\\cos3x$$"
+   },
+   {
+    "question": "Find the exact gradient of the curve $y=2^x+\\ln(5x^2)$ at the point where $x=1$.",
+    "solution": "Simplify the log first: $\\ln(5x^2)=\\ln5+2\\ln x$.\n\nSo $y=2^x+\\ln5+2\\ln x$.\n\n$$\\frac{dy}{dx}=2^x\\ln2+0+\\frac{2}{x}$$\n\nAt $x=1$:\n$$\\frac{dy}{dx}=2\\ln2+2$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Applies the power rule to an exponential, e.g. $\\frac{d}{dx}(2^x)=x\\cdot2^{x-1}$.",
+    "correction": "The power rule is for $x^n$ (variable base, constant power). For $a^x$ the variable is the power: $\\frac{d}{dx}(2^x)=2^x\\ln2$."
+   },
+   {
+    "id": "m2",
+    "text": "Gets the sign wrong on cosine, e.g. $\\frac{d}{dx}(\\cos x)=\\sin x$.",
+    "correction": "$\\frac{d}{dx}(\\cos x)=-\\sin x$. Check with the graph: just after $x=0$, $\\cos x$ is decreasing, so its gradient is negative, while $\\sin x$ is positive there."
+   },
+   {
+    "id": "m3",
+    "text": "Treats the constant inside a logarithm like the $k$ in $e^{kx}$, e.g. $\\frac{d}{dx}\\ln(5x)=\\frac{5}{x}$.",
+    "correction": "$\\ln(5x)=\\ln5+\\ln x$, and $\\ln5$ is a constant, so $\\frac{d}{dx}\\ln(5x)=\\frac{1}{x}$. (Equivalently, $\\frac{5}{5x}=\\frac{1}{x}$.)"
+   },
+   {
+    "id": "m4",
+    "text": "Forgets the factor $k$ from the inside, e.g. $\\frac{d}{dx}(\\sin3x)=\\cos3x$ or $\\frac{d}{dx}(e^{2x})=e^{2x}$.",
+    "correction": "$\\frac{d}{dx}(\\sin kx)=k\\cos kx$ and $\\frac{d}{dx}(e^{kx})=ke^{kx}$, so $\\frac{d}{dx}(\\sin3x)=3\\cos3x$ and $\\frac{d}{dx}(e^{2x})=2e^{2x}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-chain-product-quotient",
+  "prerequisites": [
+   "calc-derivatives-exp-log-trig",
+   "alg-composite-inverse-functions",
+   "alg-algebraic-fractions"
+  ],
+  "keyIdea": "**Chain rule** (function of a function): if $y=f(g(x))$, then $\\frac{dy}{dx}=f'(g(x))\\times g'(x)$; with $u=g(x)$, $\\frac{dy}{dx}=\\frac{dy}{du}\\times\\frac{du}{dx}$. Differentiate the outside, keep the inside, multiply by the derivative of the inside.\n\n**Product rule:** $y=uv\\implies\\frac{dy}{dx}=u\\frac{dv}{dx}+v\\frac{du}{dx}$.\n\n**Quotient rule:** $y=\\frac{u}{v}\\implies\\frac{dy}{dx}=\\frac{v\\frac{du}{dx}-u\\frac{dv}{dx}}{v^2}$ (order matters: $v$ first).\n\n**Reciprocal:** $\\frac{dy}{dx}=\\frac{1}{\\frac{dx}{dy}}$ – use when $x$ is given in terms of $y$.\n\n**Combining rules:** decide the overall structure first (is it a product, a quotient, or a composite?), then apply rules to each part. Factorise the answer – essential for solving $\\frac{dy}{dx}=0$.",
+  "workedExamples": [
+   {
+    "question": "Differentiate $y=x^2(3x-1)^5$, giving your answer in fully factorised form.",
+    "solution": "Product rule with $u=x^2$, $v=(3x-1)^5$.\n\n$\\frac{du}{dx}=2x$; by the chain rule $\\frac{dv}{dx}=5(3x-1)^4\\times3=15(3x-1)^4$.\n\n$$\\frac{dy}{dx}=x^2\\cdot15(3x-1)^4+(3x-1)^5\\cdot2x$$\n\nTake out the common factor $x(3x-1)^4$:\n$$\\frac{dy}{dx}=x(3x-1)^4\\big[15x+2(3x-1)\\big]=x(3x-1)^4(21x-2)$$"
+   },
+   {
+    "question": "(a) Differentiate $y=\\dfrac{e^{2x}}{x^2+1}$.\n(b) A curve has equation $x=y^3+2y$. Find $\\dfrac{dy}{dx}$ at the point where $y=1$.",
+    "solution": "(a) Quotient rule with $u=e^{2x}$, $v=x^2+1$: $\\frac{du}{dx}=2e^{2x}$, $\\frac{dv}{dx}=2x$.\n$$\\frac{dy}{dx}=\\frac{(x^2+1)\\cdot2e^{2x}-e^{2x}\\cdot2x}{(x^2+1)^2}=\\frac{2e^{2x}(x^2-x+1)}{(x^2+1)^2}$$\n\n(b) $\\frac{dx}{dy}=3y^2+2$. At $y=1$: $\\frac{dx}{dy}=5$.\n\n$$\\frac{dy}{dx}=\\frac{1}{\\frac{dx}{dy}}=\\frac{1}{5}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to multiply by the derivative of the inside function, e.g. $\\frac{d}{dx}(3x-1)^5=5(3x-1)^4$.",
+    "correction": "By the chain rule, multiply by $\\frac{d}{dx}(3x-1)=3$: $\\frac{d}{dx}(3x-1)^5=5(3x-1)^4\\times3=15(3x-1)^4$."
+   },
+   {
+    "id": "m2",
+    "text": "Differentiates a product by multiplying the derivatives, e.g. $\\frac{d}{dx}(x^2\\sin x)=2x\\cos x$.",
+    "correction": "The product rule has two terms: $\\frac{d}{dx}(x^2\\sin x)=x^2\\cos x+2x\\sin x$."
+   },
+   {
+    "id": "m3",
+    "text": "Reverses the order in the numerator of the quotient rule, e.g. for $\\frac{e^{2x}}{x^2+1}$ writes $\\frac{e^{2x}\\cdot2x-(x^2+1)\\cdot2e^{2x}}{(x^2+1)^2}$, which has the wrong sign.",
+    "correction": "The numerator is $v\\frac{du}{dx}-u\\frac{dv}{dx}$ (bottom times derivative of top, minus top times derivative of bottom): $(x^2+1)\\cdot2e^{2x}-e^{2x}\\cdot2x$. Swapping the order changes the sign of the whole answer."
+   },
+   {
+    "id": "m4",
+    "text": "Takes the reciprocal of $\\frac{dx}{dy}$ term by term, e.g. from $\\frac{dx}{dy}=3y^2+2$ writes $\\frac{dy}{dx}=\\frac{1}{3y^2}+\\frac{1}{2}$.",
+    "correction": "$\\frac{dy}{dx}$ is the reciprocal of the **whole** expression: $\\frac{dy}{dx}=\\frac{1}{3y^2+2}$. At $y=1$ this is $\\frac{1}{5}$, not $\\frac{1}{3}+\\frac{1}{2}=\\frac{5}{6}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-implicit-differentiation",
+  "prerequisites": [
+   "calc-chain-product-quotient",
+   "calc-tangents-normals"
+  ],
+  "keyIdea": "When $y$ is not the subject, differentiate **every term** with respect to $x$, treating $y$ as a function of $x$:\n- $\\frac{d}{dx}(y^n)=ny^{n-1}\\frac{dy}{dx}$ (chain rule); likewise $\\frac{d}{dx}(e^y)=e^y\\frac{dy}{dx}$, $\\frac{d}{dx}(\\sin y)=\\cos y\\frac{dy}{dx}$;\n- $\\frac{d}{dx}(xy)=x\\frac{dy}{dx}+y$ (product rule);\n- a constant differentiates to $0$.\n\nThen collect the $\\frac{dy}{dx}$ terms on one side, factorise and divide. The answer usually involves both $x$ and $y$, so the gradient at a point needs both coordinates.\n\nWriting $\\frac{dy}{dx}=\\frac{N}{D}$: horizontal tangents where $N=0$, vertical tangents where $D=0$ (points must also lie on the curve).\n\n**Second derivative (AP):** differentiate $\\frac{dy}{dx}$ again (quotient rule, still treating $y$ as a function of $x$), then substitute the expression for $\\frac{dy}{dx}$.",
+  "workedExamples": [
+   {
+    "question": "The curve $x^2+3xy+y^2=11$ passes through $(1,2)$. Find the equation of the tangent at this point in the form $ax+by+c=0$.",
+    "solution": "Check: $1+6+4=11$. ✓\n\nDifferentiate with respect to $x$:\n$$2x+\\left(3x\\frac{dy}{dx}+3y\\right)+2y\\frac{dy}{dx}=0$$\n\nCollect $\\frac{dy}{dx}$ terms:\n$$(3x+2y)\\frac{dy}{dx}=-(2x+3y)\\implies\\frac{dy}{dx}=-\\frac{2x+3y}{3x+2y}$$\n\nAt $(1,2)$: $\\frac{dy}{dx}=-\\frac{2+6}{3+4}=-\\frac{8}{7}$.\n\nTangent: $y-2=-\\frac{8}{7}(x-1)$, so $7y-14=-8x+8$:\n$$8x+7y-22=0$$"
+   },
+   {
+    "question": "For the circle $x^2+y^2=25$, show that $\\dfrac{d^2y}{dx^2}=-\\dfrac{25}{y^3}$.",
+    "solution": "$2x+2y\\frac{dy}{dx}=0$, so $\\frac{dy}{dx}=-\\frac{x}{y}$.\n\nDifferentiate again using the quotient rule (remember $y$ depends on $x$):\n$$\\frac{d^2y}{dx^2}=-\\frac{y\\cdot1-x\\frac{dy}{dx}}{y^2}$$\n\nSubstitute $\\frac{dy}{dx}=-\\frac{x}{y}$:\n$$=-\\frac{y+\\frac{x^2}{y}}{y^2}=-\\frac{y^2+x^2}{y^3}$$\n\nSince $x^2+y^2=25$:\n$$\\frac{d^2y}{dx^2}=-\\frac{25}{y^3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Differentiates $y$ terms as if $y$ were $x$, e.g. $\\frac{d}{dx}(y^2)=2y$.",
+    "correction": "$y$ is a function of $x$, so the chain rule applies: $\\frac{d}{dx}(y^2)=2y\\frac{dy}{dx}$."
+   },
+   {
+    "id": "m2",
+    "text": "Does not use the product rule on mixed terms, e.g. $\\frac{d}{dx}(3xy)=3\\frac{dy}{dx}$ or $3x\\frac{dy}{dx}$.",
+    "correction": "$3xy$ is a product of $3x$ and $y$: $\\frac{d}{dx}(3xy)=3x\\frac{dy}{dx}+3y$. For $x^2+3xy+y^2=11$ this gives $\\frac{dy}{dx}=-\\frac{2x+3y}{3x+2y}$."
+   },
+   {
+    "id": "m3",
+    "text": "Treats $y$ as a constant when finding the second derivative, e.g. from $\\frac{dy}{dx}=-\\frac{x}{y}$ writes $\\frac{d^2y}{dx^2}=-\\frac{1}{y}$.",
+    "correction": "$y$ still depends on $x$, so use the quotient rule: $\\frac{d^2y}{dx^2}=-\\frac{y-x\\frac{dy}{dx}}{y^2}$, then substitute $\\frac{dy}{dx}=-\\frac{x}{y}$ to get $-\\frac{x^2+y^2}{y^3}$."
+   },
+   {
+    "id": "m4",
+    "text": "Mixes up the conditions for horizontal and vertical tangents, e.g. for $\\frac{dy}{dx}=-\\frac{2x+3y}{3x+2y}$ sets $3x+2y=0$ to find horizontal tangents.",
+    "correction": "A horizontal tangent has gradient $0$, so the **numerator** is zero: $2x+3y=0$. A zero denominator, $3x+2y=0$, makes the gradient undefined – a vertical tangent. In both cases solve together with the curve's equation."
+   }
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation",
+  "prerequisites": [
+   "calc-chain-product-quotient",
+   "pure-parametric-equations",
+   "pure-vectors",
+   "calc-tangents-normals"
+  ],
+  "keyIdea": "For a curve $x=f(t)$, $y=g(t)$, the chain rule gives\n$$\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}\\quad\\left(\\frac{dx}{dt}\\ne0\\right)$$\nTo find a tangent or normal, first find the value of $t$ at the point, then the gradient and the coordinates $(x(t),y(t))$. Horizontal tangents: $\\frac{dy}{dt}=0$; vertical tangents: $\\frac{dx}{dt}=0$.\n\n**Second derivative (BC):** $\\frac{d^2y}{dx^2}=\\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}$ – differentiate $\\frac{dy}{dx}$ with respect to $t$, then divide by $\\frac{dx}{dt}$ again.\n\n**Vector-valued functions (BC):** for position $\\mathbf{r}(t)=\\langle x(t),y(t)\\rangle$, velocity $\\mathbf{v}(t)=\\langle x'(t),y'(t)\\rangle$, acceleration $\\mathbf{a}(t)=\\langle x''(t),y''(t)\\rangle$ and speed $|\\mathbf{v}(t)|=\\sqrt{x'(t)^2+y'(t)^2}$. (US texts call the gradient the slope.)",
+  "workedExamples": [
+   {
+    "question": "A curve has parametric equations $x=t^2+1$, $y=t^3-3t$.\n(a) Find the equation of the tangent at the point where $t=2$.\n(b) Find $\\dfrac{d^2y}{dx^2}$ when $t=2$.",
+    "solution": "(a) $\\frac{dx}{dt}=2t$, $\\frac{dy}{dt}=3t^2-3$, so $\\frac{dy}{dx}=\\frac{3t^2-3}{2t}$.\n\nAt $t=2$: point $(5,2)$ and gradient $\\frac{9}{4}$.\n\n$y-2=\\frac{9}{4}(x-5)\\implies4y-8=9x-45\\implies9x-4y-37=0$.\n\n(b) $\\frac{dy}{dx}=\\frac{3}{2}t-\\frac{3}{2}t^{-1}$, so $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)=\\frac{3}{2}+\\frac{3}{2}t^{-2}$.\n\nDivide by $\\frac{dx}{dt}=2t$:\n$$\\frac{d^2y}{dx^2}=\\frac{\\frac{3}{2}+\\frac{3}{2t^2}}{2t}=\\frac{3t^2+3}{4t^3}$$\n\nAt $t=2$: $\\frac{12+3}{32}=\\frac{15}{32}$."
+   },
+   {
+    "question": "A particle moves in the plane with position $\\mathbf{r}(t)=\\langle t^3-3t,\\ 2t^2\\rangle$. Find its velocity, speed and acceleration at $t=2$.",
+    "solution": "Velocity: $\\mathbf{v}(t)=\\langle3t^2-3,\\ 4t\\rangle$, so $\\mathbf{v}(2)=\\langle9,\\ 8\\rangle$.\n\nSpeed: $|\\mathbf{v}(2)|=\\sqrt{9^2+8^2}=\\sqrt{145}\\approx12.04$.\n\nAcceleration: $\\mathbf{a}(t)=\\langle6t,\\ 4\\rangle$, so $\\mathbf{a}(2)=\\langle12,\\ 4\\rangle$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides the derivatives the wrong way round: $\\frac{dy}{dx}=\\frac{\\frac{dx}{dt}}{\\frac{dy}{dt}}$, e.g. gets $\\frac{2t}{3t^2-3}$ for $x=t^2+1$, $y=t^3-3t$.",
+    "correction": "Think of the $dt$s 'cancelling': $\\frac{dy}{dx}=\\frac{dy}{dt}\\div\\frac{dx}{dt}=\\frac{3t^2-3}{2t}$. The derivative of $y$ goes on top."
+   },
+   {
+    "id": "m2",
+    "text": "Finds the second derivative by differentiating $\\frac{dy}{dx}$ with respect to $t$ only, e.g. gets $\\frac{3}{2}+\\frac{3}{2t^2}=\\frac{15}{8}$ at $t=2$.",
+    "correction": "$\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$ is a rate with respect to $t$; to convert to a rate with respect to $x$ divide by $\\frac{dx}{dt}$: $\\frac{d^2y}{dx^2}=\\frac{15/8}{4}=\\frac{15}{32}$."
+   },
+   {
+    "id": "m3",
+    "text": "Substitutes a coordinate as if it were the parameter, e.g. for the point $(5,2)$ on $x=t^2+1$, $y=t^3-3t$ uses $t=5$.",
+    "correction": "First find $t$ from the coordinates: $t^2+1=5$ gives $t=\\pm2$, and $t^3-3t=2$ selects $t=2$. Then substitute $t=2$ into $\\frac{dy}{dx}$."
+   },
+   {
+    "id": "m4",
+    "text": "Calculates speed by adding the velocity components, e.g. $|\\mathbf{v}|=9+8=17$ for $\\mathbf{v}=\\langle9,8\\rangle$.",
+    "correction": "Speed is the magnitude of the velocity vector (Pythagoras): $\\sqrt{9^2+8^2}=\\sqrt{145}\\approx12.04$."
+   }
+  ]
+ },
+ {
+  "id": "calc-inverse-function-derivatives",
+  "prerequisites": [
+   "calc-implicit-differentiation",
+   "pure-trig-reciprocal-inverse",
+   "alg-composite-inverse-functions",
+   "calc-integration-basics"
+  ],
+  "keyIdea": "**Inverse functions:** if $g=f^{-1}$ then $g'(x)=\\frac{1}{f'(g(x))}$. At a point: if $f(a)=b$, then $(f^{-1})'(b)=\\frac{1}{f'(a)}$. Reflecting in $y=x$ swaps the coordinates and inverts the gradient, so the steps are: find $a$ by solving $f(a)=b$, then take the reciprocal of $f'(a)$.\n\n**Inverse trig** (from implicit differentiation, e.g. $y=\\arcsin x\\Rightarrow\\sin y=x\\Rightarrow\\cos y\\frac{dy}{dx}=1$):\n$$\\frac{d}{dx}\\arcsin x=\\frac{1}{\\sqrt{1-x^2}},\\quad\\frac{d}{dx}\\arccos x=-\\frac{1}{\\sqrt{1-x^2}},\\quad\\frac{d}{dx}\\arctan x=\\frac{1}{1+x^2}$$\nThe arcsin and arccos results hold for $-1<x<1$. With the chain rule: $\\frac{d}{dx}\\arctan(u)=\\frac{u'}{1+u^2}$, and similarly for the others. (US notation: $\\sin^{-1}x$, which is **not** $\\frac{1}{\\sin x}$.)\n\n**Reversing these:**\n$$\\int\\frac{1}{\\sqrt{a^2-x^2}}\\,dx=\\arcsin\\frac{x}{a}+C,\\qquad\\int\\frac{1}{a^2+x^2}\\,dx=\\frac{1}{a}\\arctan\\frac{x}{a}+C$$",
+  "workedExamples": [
+   {
+    "question": "$f(x)=x^3+2x+1$ and $g$ is the inverse of $f$. Find $g'(4)$.",
+    "solution": "First find $a$ with $f(a)=4$: $a^3+2a+1=4$. Try $a=1$: $1+2+1=4$. ✓ So $g(4)=1$.\n\n$f'(x)=3x^2+2$, so $f'(1)=5$.\n\n$$g'(4)=\\frac{1}{f'(g(4))}=\\frac{1}{f'(1)}=\\frac{1}{5}$$"
+   },
+   {
+    "question": "(a) Differentiate $y=\\arcsin\\left(\\dfrac{x}{2}\\right)$.\n(b) Find the exact value of $\\displaystyle\\int_0^3\\frac{1}{9+x^2}\\,dx$.",
+    "solution": "(a) Chain rule with $u=\\frac{x}{2}$, $u'=\\frac{1}{2}$:\n$$\\frac{dy}{dx}=\\frac{\\frac12}{\\sqrt{1-\\frac{x^2}{4}}}=\\frac{\\frac12}{\\frac12\\sqrt{4-x^2}}=\\frac{1}{\\sqrt{4-x^2}}$$\n\n(b) With $a=3$:\n$$\\int_0^3\\frac{1}{9+x^2}\\,dx=\\left[\\frac{1}{3}\\arctan\\frac{x}{3}\\right]_0^3=\\frac{1}{3}\\left(\\arctan1-\\arctan0\\right)=\\frac{1}{3}\\times\\frac{\\pi}{4}=\\frac{\\pi}{12}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Evaluates $f'$ at the wrong point, e.g. for $g=f^{-1}$ with $f(x)=x^3+2x+1$ writes $g'(4)=\\frac{1}{f'(4)}=\\frac{1}{50}$.",
+    "correction": "The input to $f'$ must be $g(4)$, the $x$-value where $f$ equals $4$: $f(1)=4$, so $g'(4)=\\frac{1}{f'(1)}=\\frac{1}{5}$."
+   },
+   {
+    "id": "m2",
+    "text": "Treats inverse trig notation as a reciprocal, e.g. $\\sin^{-1}x=\\frac{1}{\\sin x}$, so $\\frac{d}{dx}\\sin^{-1}x=-\\frac{\\cos x}{\\sin^2x}$.",
+    "correction": "$\\sin^{-1}x$ means $\\arcsin x$, the inverse function, while $\\frac{1}{\\sin x}=\\operatorname{cosec}x$. $\\frac{d}{dx}\\sin^{-1}x=\\frac{1}{\\sqrt{1-x^2}}$."
+   },
+   {
+    "id": "m3",
+    "text": "Drops the chain rule inside an inverse trig function, e.g. $\\frac{d}{dx}\\arctan(3x)=\\frac{1}{1+3x^2}$.",
+    "correction": "With $u=3x$: $\\frac{d}{dx}\\arctan(u)=\\frac{u'}{1+u^2}=\\frac{3}{1+(3x)^2}=\\frac{3}{1+9x^2}$. Both the factor $3$ and the square of $3x$ are needed."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets the factor $\\frac{1}{a}$ when integrating to arctan, e.g. $\\int\\frac{1}{9+x^2}\\,dx=\\arctan\\frac{x}{3}+C$.",
+    "correction": "Differentiate to check: $\\frac{d}{dx}\\arctan\\frac{x}{3}=\\frac{\\frac13}{1+\\frac{x^2}{9}}=\\frac{3}{9+x^2}$, which is 3 times too big. The correct result is $\\frac{1}{3}\\arctan\\frac{x}{3}+C$."
+   }
+  ]
+ },
+ {
+  "id": "calc-related-rates",
+  "prerequisites": [
+   "calc-chain-product-quotient",
+   "geo-pythagoras",
+   "geo-pyramids-cones-spheres",
+   "geo-similarity"
+  ],
+  "keyIdea": "When two quantities are linked by an equation and both change with time, their rates of change (connected rates; US: related rates) are linked by the chain rule:\n$$\\frac{dV}{dt}=\\frac{dV}{dr}\\times\\frac{dr}{dt}$$\n\n**Method:**\n1. Sketch and label: which quantities change (variables) and which are fixed (constants)?\n2. Write the given rate and the required rate in $\\frac{d}{dt}$ notation; a decreasing quantity has a **negative** rate.\n3. Find an equation linking the variables (volume/area formula, Pythagoras, similar triangles to remove an extra variable).\n4. Differentiate with respect to $t$ (chain rule or implicit differentiation).\n5. Only **now** substitute the values at the instant asked about, and solve.\n6. Answer with units, e.g. $\\text{cm s}^{-1}$.",
+  "workedExamples": [
+   {
+    "question": "A spherical balloon is inflated so that its volume increases at $50\\text{ cm}^3\\text{ s}^{-1}$. Find the rate at which the radius is increasing when the radius is $5\\text{ cm}$.",
+    "solution": "$V=\\frac{4}{3}\\pi r^3$, so $\\frac{dV}{dr}=4\\pi r^2$.\n\nChain rule: $\\frac{dV}{dt}=\\frac{dV}{dr}\\times\\frac{dr}{dt}$, so\n$$\\frac{dr}{dt}=\\frac{\\frac{dV}{dt}}{\\frac{dV}{dr}}=\\frac{50}{4\\pi r^2}$$\n\nAt $r=5$:\n$$\\frac{dr}{dt}=\\frac{50}{100\\pi}=\\frac{1}{2\\pi}\\approx0.159\\text{ cm s}^{-1}$$"
+   },
+   {
+    "question": "A $5\\text{ m}$ ladder leans against a vertical wall. The foot slides away from the wall at $0.3\\text{ m s}^{-1}$. How fast is the top sliding down the wall when the foot is $3\\text{ m}$ from the wall?",
+    "solution": "Let $x$ = distance of the foot from the wall, $y$ = height of the top. Then $x^2+y^2=25$ and $\\frac{dx}{dt}=0.3$.\n\nDifferentiate with respect to $t$:\n$$2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0$$\n\nWhen $x=3$: $y=\\sqrt{25-9}=4$. Substitute:\n$$2(3)(0.3)+2(4)\\frac{dy}{dt}=0\\implies\\frac{dy}{dt}=-\\frac{1.8}{8}=-0.225$$\n\nThe top is sliding down at $0.225\\text{ m s}^{-1}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Substitutes the value at the instant before differentiating, e.g. for the ladder puts $x=3$ into $x^2+y^2=25$ first: $9+y^2=25\\Rightarrow2y\\frac{dy}{dt}=0\\Rightarrow\\frac{dy}{dt}=0$.",
+    "correction": "$x=3$ only at one instant – $x$ is changing, so it must stay a variable while you differentiate. Differentiate $x^2+y^2=25$ to get $2x\\frac{dx}{dt}+2y\\frac{dy}{dt}=0$, then substitute $x=3$, $y=4$, $\\frac{dx}{dt}=0.3$ to get $\\frac{dy}{dt}=-0.225$."
+   },
+   {
+    "id": "m2",
+    "text": "Combines the rates the wrong way, e.g. $\\frac{dr}{dt}=\\frac{dV}{dt}\\times\\frac{dV}{dr}=50\\times100\\pi$.",
+    "correction": "Write the chain rule so the units/derivatives match: $\\frac{dV}{dt}=\\frac{dV}{dr}\\times\\frac{dr}{dt}$, so $\\frac{dr}{dt}=\\frac{dV}{dt}\\div\\frac{dV}{dr}=\\frac{50}{100\\pi}=\\frac{1}{2\\pi}\\text{ cm s}^{-1}$. A sense check: a radius growing by thousands of cm per second is absurd."
+   },
+   {
+    "id": "m3",
+    "text": "Uses a positive rate for a quantity that is decreasing, e.g. \"water drains out at $2\\text{ cm}^3\\text{ s}^{-1}$\" written as $\\frac{dV}{dt}=2$, then concludes the depth is increasing.",
+    "correction": "A decreasing quantity has a negative rate: $\\frac{dV}{dt}=-2$. Then $\\frac{dh}{dt}$ comes out negative, and the answer is stated as 'the depth is decreasing at … $\\text{cm s}^{-1}$'."
+   },
+   {
+    "id": "m4",
+    "text": "In a cone-filling problem treats the radius as a constant, e.g. differentiates $V=\\frac{1}{3}\\pi r^2h$ as $\\frac{dV}{dt}=\\frac{1}{3}\\pi r^2\\frac{dh}{dt}$ using the radius of the top of the cone.",
+    "correction": "As the water rises, the radius of the water surface changes too. Use similar triangles to write $r$ in terms of $h$ (e.g. if the cone has radius $3$ and height $6$, then $r=\\frac{h}{2}$), so $V=\\frac{1}{12}\\pi h^3$ and $\\frac{dV}{dt}=\\frac{1}{4}\\pi h^2\\frac{dh}{dt}$."
+   }
+  ]
+ },
+ {
+  "id": "calc-lhopital",
+  "prerequisites": [
+   "calc-limits-infinity",
+   "calc-chain-product-quotient"
+  ],
+  "keyIdea": "**L'Hôpital's rule:** if $\\lim_{x\\to a}\\frac{f(x)}{g(x)}$ has the form $\\frac{0}{0}$ or $\\frac{\\pm\\infty}{\\pm\\infty}$, $f$ and $g$ are differentiable near $a$, and $g'(x)\\ne0$ near $a$, then\n$$\\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\lim_{x\\to a}\\frac{f'(x)}{g'(x)}$$\nprovided the right-hand limit exists (or is $\\pm\\infty$). It also works for $x\\to\\pm\\infty$ and one-sided limits.\n\n- Differentiate the numerator and denominator **separately** – this is not the quotient rule.\n- Check the form **every time** before applying it; repeat only while the form is still indeterminate.\n- Other indeterminate forms ($0\\cdot\\infty$, $\\infty-\\infty$) must first be rewritten as a quotient, e.g. $x\\ln x=\\frac{\\ln x}{1/x}$.\n\nAP FRQs: show that both limits are $0$ (or both infinite) before writing \"by L'Hospital's Rule\".",
+  "workedExamples": [
+   {
+    "question": "Evaluate $\\displaystyle\\lim_{x\\to0}\\frac{e^{2x}-1-2x}{x^2}$.",
+    "solution": "At $x=0$: numerator $1-1-0=0$, denominator $0$. Form $\\frac{0}{0}$, so apply L'Hôpital's rule:\n$$\\lim_{x\\to0}\\frac{2e^{2x}-2}{2x}$$\n\nAt $x=0$ this is still $\\frac{2-2}{0}=\\frac{0}{0}$, so apply it again:\n$$\\lim_{x\\to0}\\frac{4e^{2x}}{2}=\\frac{4}{2}=2$$"
+   },
+   {
+    "question": "Functions $f$ and $g$ are twice differentiable with $f(3)=g(3)=0$, $f'(3)=4$ and $g'(3)=-2$. Find $\\displaystyle\\lim_{x\\to3}\\frac{f(x)}{g(x)}$, justifying your answer.",
+    "solution": "$f$ and $g$ are differentiable, hence continuous, so $\\lim_{x\\to3}f(x)=f(3)=0$ and $\\lim_{x\\to3}g(x)=g(3)=0$.\n\nThe limit has the indeterminate form $\\frac{0}{0}$, so by L'Hôpital's rule\n$$\\lim_{x\\to3}\\frac{f(x)}{g(x)}=\\lim_{x\\to3}\\frac{f'(x)}{g'(x)}=\\frac{f'(3)}{g'(3)}=\\frac{4}{-2}=-2$$\n\n($f'$ and $g'$ are continuous because $f$ and $g$ are twice differentiable, and $g'(3)\\ne0$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the quotient rule instead of differentiating numerator and denominator separately, e.g. replaces $\\frac{\\sin x}{x}$ by $\\frac{x\\cos x-\\sin x}{x^2}$.",
+    "correction": "L'Hôpital's rule replaces $\\frac{f}{g}$ by $\\frac{f'}{g'}$: $\\lim_{x\\to0}\\frac{\\sin x}{x}=\\lim_{x\\to0}\\frac{\\cos x}{1}=1$. The quotient rule finds the derivative of the fraction, which is a different thing."
+   },
+   {
+    "id": "m2",
+    "text": "Applies the rule when the limit is not indeterminate, e.g. $\\lim_{x\\to1}\\frac{x^2+1}{x+1}=\\lim_{x\\to1}\\frac{2x}{1}=2$.",
+    "correction": "Check the form first: direct substitution gives $\\frac{2}{2}=1$, which is not indeterminate, so the limit is simply $1$. L'Hôpital's rule only applies to $\\frac{0}{0}$ or $\\frac{\\infty}{\\infty}$."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the rule to a product without rewriting it as a quotient, e.g. $\\lim_{x\\to0^+}x\\ln x=\\lim_{x\\to0^+}1\\cdot\\frac{1}{x}=\\infty$.",
+    "correction": "$0\\cdot(-\\infty)$ must be rewritten as a quotient first: $x\\ln x=\\frac{\\ln x}{\\frac{1}{x}}$, which has form $\\frac{-\\infty}{\\infty}$. Then $\\lim_{x\\to0^+}\\frac{\\frac{1}{x}}{-\\frac{1}{x^2}}=\\lim_{x\\to0^+}(-x)=0$."
+   },
+   {
+    "id": "m4",
+    "text": "Keeps applying the rule after the form is no longer indeterminate, e.g. $\\lim_{x\\to0}\\frac{1-\\cos x}{x^2+x}=\\lim_{x\\to0}\\frac{\\sin x}{2x+1}=\\lim_{x\\to0}\\frac{\\cos x}{2}=\\frac{1}{2}$.",
+    "correction": "After one application the limit is $\\frac{\\sin 0}{2(0)+1}=\\frac{0}{1}=0$, which is not indeterminate – stop there. The answer is $0$. Re-check the form before every application."
+   }
+  ]
+ }
+]

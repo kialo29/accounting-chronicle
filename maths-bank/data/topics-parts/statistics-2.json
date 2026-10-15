@@ -1,0 +1,525 @@
+[
+ {
+  "id": "stat-standard-deviation",
+  "prerequisites": [
+   "stat-averages-frequency-tables",
+   "stat-mean-absolute-deviation",
+   "alg-substitution-formulae"
+  ],
+  "keyIdea": "**Variance** is the mean of the squared deviations from the mean; the **standard deviation** is its square root, so it is in the same units as the data:\n$$\\sigma^2 = \\frac{\\sum (x-\\bar{x})^2}{n} = \\frac{\\sum x^2}{n} - \\bar{x}^2, \\qquad \\sigma = \\sqrt{\\sigma^2}$$\nFrom a frequency table use $\\frac{\\sum f x^2}{\\sum f} - \\bar{x}^2$. With summary statistics, $S_{xx} = \\sum x^2 - \\frac{(\\sum x)^2}{n}$ and $\\sigma^2 = \\frac{S_{xx}}{n}$ (the sample SD $s$, used in US/AP work, divides by $n-1$).\n**Coding** $y = \\frac{x-a}{b}$: $\\bar{x} = a + b\\bar{y}$ but $\\sigma_x = b\\,\\sigma_y$, because adding or subtracting a constant shifts the data without changing its spread.\nInterpreting: the SD is roughly the typical distance of a value from the mean; a larger SD means less consistent data. Values beyond $\\bar{x} \\pm 2\\sigma$ are often treated as outliers.",
+  "workedExamples": [
+   {
+    "question": "Find the mean and standard deviation of $4, 7, 8, 10, 11$.",
+    "solution": "$\\sum x = 40$ and $n = 5$, so $\\bar{x} = \\frac{40}{5} = 8$.\n\n$\\sum x^2 = 16 + 49 + 64 + 100 + 121 = 350$.\n\nVariance:\n$$\\sigma^2 = \\frac{350}{5} - 8^2 = 70 - 64 = 6$$\n\nStandard deviation:\n$$\\sigma = \\sqrt{6} \\approx 2.45$$"
+   },
+   {
+    "question": "The lengths $x$ mm of 20 bolts are coded using $y = \\frac{x - 150}{5}$, giving $\\sum y = 12$ and $\\sum y^2 = 89$. Find the mean and standard deviation of $x$.",
+    "solution": "Coded mean: $\\bar{y} = \\frac{12}{20} = 0.6$.\n\nCoded variance: $\\sigma_y^2 = \\frac{89}{20} - 0.6^2 = 4.45 - 0.36 = 4.09$, so $\\sigma_y = \\sqrt{4.09} = 2.0224\\ldots$\n\nDecode. From $x = 150 + 5y$:\n$$\\bar{x} = 150 + 5(0.6) = 153 \\text{ mm}$$\nThe $+150$ does not affect spread, only the $\\times 5$ does:\n$$\\sigma_x = 5 \\times 2.0224\\ldots = 10.1 \\text{ mm (3 s.f.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses $\\sum x^2$ with $(\\sum x)^2$. For $4, 7, 8, 10, 11$ they write $\\sigma^2 = \\frac{40^2}{5} - 8^2 = 320 - 64 = 256$.",
+    "correction": "$\\sum x^2$ means square each value first, then add: $16 + 49 + 64 + 100 + 121 = 350$, so $\\sigma^2 = \\frac{350}{5} - 64 = 6$. A variance larger than the square of the range is a warning sign."
+   },
+   {
+    "id": "m2",
+    "text": "Gives the variance as the standard deviation (forgets the square root), e.g. states \"the standard deviation is 6\" when $\\sigma^2 = 6$.",
+    "correction": "Variance is in squared units. The standard deviation is $\\sigma = \\sqrt{6} \\approx 2.45$, in the same units as the data."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the whole coding to the standard deviation. With $y = \\frac{x-150}{5}$ and $\\sigma_y = 2.02$ they write $\\sigma_x = 150 + 5(2.02) = 160.1$ (or $\\sigma_x = \\frac{2.02}{5}$).",
+    "correction": "Adding or subtracting a constant does not change spread, so only the scale factor applies: $x = 150 + 5y$ gives $\\sigma_x = 5\\sigma_y = 10.1$. Only the mean uses the full decoding: $\\bar{x} = 150 + 5\\bar{y}$."
+   },
+   {
+    "id": "m4",
+    "text": "In a frequency table, computes $\\sum (fx)^2$ instead of $\\sum f x^2$, e.g. for $x = 4$, $f = 3$ they use $(3 \\times 4)^2 = 144$ rather than $3 \\times 4^2 = 48$.",
+    "correction": "Only the value is squared: $f x^2 = f \\times x^2$. Each of the 3 values of 4 contributes $4^2 = 16$, giving 48 in total."
+   }
+  ]
+ },
+ {
+  "id": "stat-comparing-distributions",
+  "prerequisites": [
+   "stat-averages-range",
+   "stat-quartiles-box-plots",
+   "stat-stem-leaf-dot-plots"
+  ],
+  "keyIdea": "To compare two distributions, always make **two comparisons, each in context**:\n1. **Average (centre; US: center)**: \"On average, Group A scored higher than Group B because its median is higher ($58$ vs $54$).\"\n2. **Spread**: \"Group B's scores were more consistent because its IQR is smaller ($10$ vs $21$).\" Smaller spread means more consistent.\n\n**Choosing measures:** use the median and IQR when the data are skewed or contain outliers (they are resistant); use the mean and standard deviation when the data are roughly symmetric. The range is easily distorted by one extreme value.\n\n**Shape:** positive (right) skew has a long tail to the right and usually mean $>$ median; on a box plot $Q_3 - Q_2 > Q_2 - Q_1$. Negative skew is the reverse. Comment on shape and any outliers as well.",
+  "workedExamples": [
+   {
+    "question": "Test marks for two classes are summarised below.\n\n| | Min | $Q_1$ | Median | $Q_3$ | Max |\n|---|---|---|---|---|---|\n| Class A | 32 | 45 | 58 | 66 | 90 |\n| Class B | 40 | 50 | 54 | 60 | 72 |\n\nCompare the marks of the two classes.",
+    "solution": "**Average:** median A $= 58$, median B $= 54$. On average Class A scored higher.\n\n**Spread:** IQR A $= 66 - 45 = 21$, IQR B $= 60 - 50 = 10$. Class B's marks were more consistent (less spread out).\n\n**Shape (extra):** for A, $Q_2 - Q_1 = 13$ and $Q_3 - Q_2 = 8$, so A is slightly negatively skewed."
+   },
+   {
+    "question": "Seven runners' times (seconds) are $12, 13, 13, 14, 15, 16, 58$. Which average best represents the data?",
+    "solution": "Mean $= \\frac{141}{7} \\approx 20.1$ s; median $= 14$ s.\n\nThe mean is pulled up by the outlier 58 and is larger than six of the seven times, so it is not typical.\n\nThe **median (14 s)** is the better average because it is not affected by the outlier."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Compares only the averages (or only the spreads), e.g. \"Class A did better because its median is higher\", with no comparison of spread.",
+    "correction": "A full comparison needs both: one statement about the average and one about the spread, each with values and in context (\"Class B's marks were more consistent because its IQR is smaller\")."
+   },
+   {
+    "id": "m2",
+    "text": "Interprets a larger spread as more consistent, e.g. \"Class A is more consistent because its IQR of $21$ is bigger\".",
+    "correction": "Spread measures variability: a **smaller** IQR, range or SD means the values are closer together, i.e. **more** consistent. Class B (IQR $10$) is more consistent."
+   },
+   {
+    "id": "m3",
+    "text": "Compares the maximum (or a single extreme value) instead of an average, e.g. \"Class A did better because its highest mark was 90\".",
+    "correction": "One extreme value says little about the group. Compare medians (or means) for the average, and IQRs (or SDs) for spread."
+   },
+   {
+    "id": "m4",
+    "text": "Gets the direction of skew backwards, saying data with a long tail to the right (mean $>$ median) is negatively skewed because \"the peak is on the left\".",
+    "correction": "Skew is named after the **tail**: a long tail to the right is **positive** skew, typically with mean $>$ median and $Q_3 - Q_2 > Q_2 - Q_1$."
+   }
+  ]
+ },
+ {
+  "id": "stat-two-way-tables",
+  "prerequisites": [
+   "stat-data-collection",
+   "stat-charts-diagrams",
+   "num-fdp-conversions",
+   "rat-percentages-of-amounts"
+  ],
+  "keyIdea": "A **two-way table** shows counts for two categorical variables, with row and column totals. Missing entries are found using the fact that rows and columns must add to their totals.\n\nRelative frequencies:\n* **Joint**: one cell $\\div$ grand total.\n* **Marginal**: a row or column total $\\div$ grand total.\n* **Conditional**: a cell $\\div$ the total of the row or column you are given (\"of those who…\").\n\n**Association:** compare conditional relative frequencies, not raw counts. If the percentage of Year 7s who walk ($50\\%$) differs clearly from the percentage of Year 11s who walk ($18.75\\%$), the variables are associated; if the percentages are about equal, there is no association.\n\nA **segmented bar chart** shows each group as a bar of height $100\\%$, split into conditional percentages, so groups of different sizes can be compared.",
+  "workedExamples": [
+   {
+    "question": "Students were asked how they travel to school.\n\n| | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 7 | 30 | 20 | 10 | 60 |\n| Year 11 | 15 | 45 | 20 | 80 |\n| Total | 45 | 65 | 30 | 140 |\n\nFind (a) the joint relative frequency of Year 7 and walk, (b) the marginal relative frequency of walk, (c) the proportion of walkers who are in Year 7. (d) Is there an association between year group and walking?",
+    "solution": "(a) $\\frac{30}{140} = \\frac{3}{14} \\approx 0.214$\n\n(b) $\\frac{45}{140} = \\frac{9}{28} \\approx 0.321$\n\n(c) Given walkers, divide by the walk total: $\\frac{30}{45} = \\frac{2}{3}$\n\n(d) Year 7 who walk: $\\frac{30}{60} = 50\\%$. Year 11 who walk: $\\frac{15}{80} = 18.75\\%$. These conditional percentages are very different, so there is an association: Year 7s were much more likely to walk."
+   },
+   {
+    "question": "90 pupils: 50 are girls. 28 girls and 17 boys have a pet. Complete a two-way table.",
+    "solution": "Boys $= 90 - 50 = 40$. Girls with no pet $= 50 - 28 = 22$. Boys with no pet $= 40 - 17 = 23$.\n\n| | Pet | No pet | Total |\n|---|---|---|---|\n| Girls | 28 | 22 | 50 |\n| Boys | 17 | 23 | 40 |\n| Total | 45 | 45 | 90 |"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong denominator for a conditional relative frequency. For \"what proportion of walkers are in Year 7?\" they write $\\frac{30}{60}$ (the Year 7 total) or $\\frac{30}{140}$ (the grand total) instead of $\\frac{30}{45}$.",
+    "correction": "The condition (\"of the walkers\") tells you the denominator: the walk total, 45. So the answer is $\\frac{30}{45} = \\frac{2}{3}$. By contrast, $\\frac{30}{60}$ answers \"what proportion of Year 7s walk?\"."
+   },
+   {
+    "id": "m2",
+    "text": "Judges association from raw counts when group sizes differ, e.g. \"40 of 100 boys and 30 of 60 girls play an instrument, so boys are more likely to play because $40 > 30$\".",
+    "correction": "Compare conditional proportions: boys $\\frac{40}{100} = 40\\%$, girls $\\frac{30}{60} = 50\\%$. Girls are more likely to play."
+   },
+   {
+    "id": "m3",
+    "text": "Reads a segmented bar chart by taking the top of each segment as that category's percentage, e.g. a \"Bus\" segment from $50\\%$ to $80\\%$ is read as $80\\%$.",
+    "correction": "Each segment's value is its **length**: top minus bottom. The Bus segment from $50\\%$ to $80\\%$ represents $80\\% - 50\\% = 30\\%$."
+   }
+  ]
+ },
+ {
+  "id": "stat-linear-regression",
+  "prerequisites": [
+   "stat-scatter-correlation",
+   "alg-straight-line-graphs",
+   "stat-standard-deviation"
+  ],
+  "keyIdea": "The **least-squares regression line** of $y$ on $x$, $\\hat{y} = a + bx$, minimises the sum of squared residuals. It passes through $(\\bar{x}, \\bar{y})$ and\n$$b = \\frac{S_{xy}}{S_{xx}} = r\\frac{s_y}{s_x}, \\qquad a = \\bar{y} - b\\bar{x}$$\n* **Slope $b$**: for each extra unit of $x$, the **predicted** $y$ changes by $b$.\n* **Intercept $a$**: predicted $y$ when $x = 0$; often meaningless (extrapolation).\n* **Residual** $=$ observed $y$ $-$ predicted $\\hat{y}$. Positive means the point lies above the line.\n* **Residual plot**: random scatter means a linear model is appropriate; a curve means it is not, however large $r$ is.\n* $r$ gives the direction and strength of the linear relationship; $r^2$ is the proportion of the variation in $y$ explained by the linear model with $x$.\n* An **influential point** (often an extreme $x$-value) changes the slope noticeably if removed.\nPredict only within the data range (interpolation).",
+  "workedExamples": [
+   {
+    "question": "For 8 pupils, $x$ = hours of practice and $y$ = test score: $\\sum x = 40$, $\\sum y = 96$, $\\sum x^2 = 240$, $\\sum xy = 530$. Find the regression line of $y$ on $x$, interpret the gradient, and find the residual for a pupil with $x = 6$, $y = 14$.",
+    "solution": "$S_{xx} = 240 - \\frac{40^2}{8} = 240 - 200 = 40$\n\n$S_{xy} = 530 - \\frac{40 \\times 96}{8} = 530 - 480 = 50$\n\n$b = \\frac{50}{40} = 1.25$. Then $\\bar{x} = 5$ and $\\bar{y} = 12$, so $a = 12 - 1.25(5) = 5.75$:\n$$\\hat{y} = 5.75 + 1.25x$$\n\nGradient: each extra hour of practice is associated with an increase of $1.25$ marks in the predicted score.\n\nAt $x = 6$: $\\hat{y} = 5.75 + 7.5 = 13.25$. Residual $= 14 - 13.25 = 0.75$ (the pupil scored 0.75 above prediction)."
+   },
+   {
+    "question": "For adults, height $x$ cm and mass $y$ kg have $\\bar{x} = 170$, $s_x = 10$, $\\bar{y} = 65$, $s_y = 12$, $r = 0.8$. Find the regression line and interpret $r^2$ and the intercept.",
+    "solution": "$b = r\\frac{s_y}{s_x} = 0.8 \\times \\frac{12}{10} = 0.96$\n\n$a = 65 - 0.96 \\times 170 = 65 - 163.2 = -98.2$, so $\\hat{y} = -98.2 + 0.96x$.\n\n$r^2 = 0.64$: $64\\%$ of the variation in mass is explained by the linear relationship with height.\n\nThe intercept ($-98.2$ kg at height 0 cm) has no practical meaning: $x = 0$ is far outside the data."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Calculates a residual as predicted $-$ observed, e.g. $13.25 - 14 = -0.75$.",
+    "correction": "Residual $=$ observed $-$ predicted $= y - \\hat{y} = 14 - 13.25 = 0.75$. A positive residual means the point is above the line (the model under-predicts)."
+   },
+   {
+    "id": "m2",
+    "text": "Treats $r$ as the proportion of variation explained: \"$r = 0.8$, so $80\\%$ of the variation in mass is explained by height\".",
+    "correction": "The proportion explained is $r^2 = 0.8^2 = 0.64$, i.e. $64\\%$. Conversely, from $r^2 = 0.64$, $r = \\pm 0.8$, with the sign of the slope."
+   },
+   {
+    "id": "m3",
+    "text": "Believes a high $r$ (e.g. $r = 0.95$) proves a linear model is appropriate, even when the residual plot shows a clear curved (U-shaped) pattern.",
+    "correction": "$r$ measures how well a straight line fits, not whether a straight line is the right model. A curved residual plot means a non-linear model is better, however close $r$ is to 1."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the line to predict far outside the data range and treats the result as reliable, e.g. using $\\hat{y} = 5.75 + 1.25x$ (data for $x$ from 1 to 9 hours) to predict a score of $68.25$ for $x = 50$ hours.",
+    "correction": "This is extrapolation: the linear pattern may not continue beyond the observed $x$-values (here the test has a maximum mark). Only predictions within the data range (interpolation) are reliable."
+   }
+  ]
+ },
+ {
+  "id": "stat-hypothesis-binomial",
+  "prerequisites": [
+   "prob-binomial",
+   "stat-sampling-methods"
+  ],
+  "keyIdea": "A hypothesis test asks whether sample evidence is strong enough to doubt a claimed population parameter $p$.\n* $H_0: p = p_0$. $H_1$ is $p > p_0$ or $p < p_0$ (**one-tailed**) or $p \\ne p_0$ (**two-tailed**). Hypotheses always use the parameter $p$.\n* Assume $H_0$ is true: $X \\sim B(n, p_0)$.\n* **P-value method:** find $P(X \\ge x)$ or $P(X \\le x)$ for the observed $x$ (a tail probability, not $P(X = x)$). If it is less than the significance level $\\alpha$, reject $H_0$. For a two-tailed test compare with $\\frac{\\alpha}{2}$.\n* **Critical region:** the set of values of $X$ that would lead to rejecting $H_0$, chosen so its probability is as close as possible to, without exceeding, $\\alpha$ (or $\\frac{\\alpha}{2}$ in each tail). Its probability is the **actual significance level**.\n* Conclude in context, without certainty: \"There is sufficient evidence at the $5\\%$ level to suggest that…\".",
+  "workedExamples": [
+   {
+    "question": "A coin is thrown 20 times and lands heads 15 times. Test, at the $5\\%$ level, whether the coin is biased towards heads.",
+    "solution": "Let $p$ = probability of a head. $H_0: p = 0.5$, $H_1: p > 0.5$.\n\nUnder $H_0$, $X \\sim B(20, 0.5)$.\n\n$P(X \\ge 15) = 1 - P(X \\le 14) = 1 - 0.9793 = 0.0207$\n\n$0.0207 < 0.05$, so the result is significant: reject $H_0$.\n\nThere is sufficient evidence at the $5\\%$ level to suggest that the coin is biased towards heads."
+   },
+   {
+    "question": "$X \\sim B(20, 0.3)$. Find the critical region for a two-tailed test of $H_0: p = 0.3$ at the $10\\%$ level, and the actual significance level.",
+    "solution": "Use $5\\%$ in each tail.\n\nLower tail: $P(X \\le 2) = 0.0355 \\le 0.05$ but $P(X \\le 3) = 0.1071 > 0.05$, so $X \\le 2$.\n\nUpper tail: $P(X \\ge 10) = 1 - P(X \\le 9) = 1 - 0.9520 = 0.0480 \\le 0.05$, but $P(X \\ge 9) = 1 - 0.8867 = 0.1133$, so $X \\ge 10$.\n\nCritical region: $X \\le 2$ or $X \\ge 10$.\n\nActual significance level $= 0.0355 + 0.0480 = 0.0835$ ($8.35\\%$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the probability of exactly the observed value as the p-value, e.g. $P(X = 15) = 0.0148$ instead of $P(X \\ge 15)$.",
+    "correction": "The p-value is the probability of a result **at least as extreme** as observed: $P(X \\ge 15) = 0.0207$. Single values are always unlikely when $n$ is large, so $P(X = x)$ is not evidence."
+   },
+   {
+    "id": "m2",
+    "text": "Makes an off-by-one error with the upper tail: $P(X \\ge 15) = 1 - P(X \\le 15) = 1 - 0.9941 = 0.0059$.",
+    "correction": "$X \\ge 15$ is the complement of $X \\le 14$, so $P(X \\ge 15) = 1 - P(X \\le 14) = 1 - 0.9793 = 0.0207$."
+   },
+   {
+    "id": "m3",
+    "text": "In a two-tailed test compares the tail probability with the full $\\alpha$, e.g. $H_1: p \\ne 0.5$ at $5\\%$, finds $P(X \\ge 15) = 0.0207 < 0.05$ and wrongly rejects $H_0$; or puts $5\\%$ in each tail when finding a critical region.",
+    "correction": "For a two-tailed test at level $\\alpha$, each tail gets $\\frac{\\alpha}{2}$. Compare $0.0207$ with $0.025$: $0.0207 < 0.025$, so here it is still significant, but a value such as $0.03$ would be significant one-tailed and not two-tailed."
+   },
+   {
+    "id": "m4",
+    "text": "Writes the hypotheses using the sample result or the random variable, e.g. $H_0: p = 0.75$ (from $\\frac{15}{20}$) or $H_0: X = 10$.",
+    "correction": "Hypotheses are statements about the population parameter, using the claimed value: $H_0: p = 0.5$, $H_1: p > 0.5$. The sample result is only used to calculate the p-value."
+   }
+  ]
+ },
+ {
+  "id": "stat-hypothesis-normal-mean",
+  "prerequisites": [
+   "stat-hypothesis-binomial",
+   "prob-normal-distribution"
+  ],
+  "keyIdea": "If $X \\sim N(\\mu, \\sigma^2)$, the mean of a random sample of size $n$ has distribution\n$$\\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$$\nso its standard deviation is $\\frac{\\sigma}{\\sqrt{n}}$, which shrinks as $n$ grows.\n\nTo test $H_0: \\mu = \\mu_0$ (known $\\sigma$), assume $H_0$: $\\bar{X} \\sim N\\left(\\mu_0, \\frac{\\sigma^2}{n}\\right)$. Then either\n* find the p-value $P(\\bar{X} \\le \\bar{x})$ or $P(\\bar{X} \\ge \\bar{x})$ and compare with $\\alpha$, or\n* standardise, $z = \\dfrac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}$, and compare with the critical value ($1.6449$ for $5\\%$ one-tailed; $\\pm 1.96$ for $5\\%$ two-tailed).\nThe critical region for $\\bar{x}$ is, e.g., $\\bar{x} > \\mu_0 + 1.6449\\frac{\\sigma}{\\sqrt{n}}$.\nConclude in context about the population mean $\\mu$, without certainty.",
+  "workedExamples": [
+   {
+    "question": "Bottle volumes are $N(\\mu, 2.5^2)$ ml, with $\\mu$ claimed to be 500. A sample of 25 bottles has mean $498.9$ ml. Test at the $5\\%$ level whether the mean volume has decreased.",
+    "solution": "$H_0: \\mu = 500$, $H_1: \\mu < 500$.\n\nUnder $H_0$: $\\bar{X} \\sim N\\left(500, \\frac{2.5^2}{25}\\right)$, so the SD of $\\bar{X}$ is $\\frac{2.5}{\\sqrt{25}} = 0.5$.\n\n$z = \\frac{498.9 - 500}{0.5} = -2.2$\n\n$P(\\bar{X} \\le 498.9) = P(Z \\le -2.2) = 0.0139 < 0.05$, so reject $H_0$.\n\nThere is sufficient evidence at the $5\\%$ level to suggest that the mean volume has decreased."
+   },
+   {
+    "question": "$X \\sim N(\\mu, 12^2)$. A sample of 36 is used to test $H_0: \\mu = 80$ against $H_1: \\mu \\ne 80$ at the $5\\%$ level. Find the critical region for $\\bar{X}$.",
+    "solution": "SD of $\\bar{X}$: $\\frac{12}{\\sqrt{36}} = 2$.\n\nTwo-tailed $5\\%$: $2.5\\%$ in each tail, critical values $z = \\pm 1.96$.\n\n$80 - 1.96 \\times 2 = 76.08$ and $80 + 1.96 \\times 2 = 83.92$.\n\nCritical region: $\\bar{X} < 76.08$ or $\\bar{X} > 83.92$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the population SD instead of the SD of the sample mean: $z = \\frac{498.9 - 500}{2.5} = -0.44$, concluding there is no evidence.",
+    "correction": "A sample mean varies much less than single values. Use $\\frac{\\sigma}{\\sqrt{n}} = \\frac{2.5}{5} = 0.5$, giving $z = -2.2$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $\\frac{\\sigma^2}{n}$ (the variance of $\\bar{X}$) as its standard deviation: $\\frac{6.25}{25} = 0.25$, so $z = \\frac{-1.1}{0.25} = -4.4$. (Or divides by $n$ instead of $\\sqrt{n}$: $\\frac{2.5}{25} = 0.1$.)",
+    "correction": "$\\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$ gives the **variance**. Square root it: $\\sqrt{\\frac{6.25}{25}} = \\frac{2.5}{\\sqrt{25}} = 0.5$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the one-tailed critical value in a two-tailed test, e.g. for $H_1: \\mu \\ne 80$ at $5\\%$ uses $z = 1.6449$ instead of $1.96$.",
+    "correction": "A two-tailed test at $5\\%$ puts $2.5\\%$ in each tail, so the critical values are $\\pm 1.96$. $1.6449$ is for a one-tailed $5\\%$ test."
+   },
+   {
+    "id": "m4",
+    "text": "States the conclusion as a certainty about the sample value: \"The mean volume has decreased to $498.9$ ml\".",
+    "correction": "The test gives evidence about the population mean, not its exact value: \"There is sufficient evidence at the $5\\%$ level to suggest that the mean volume is less than 500 ml\"."
+   }
+  ]
+ },
+ {
+  "id": "stat-hypothesis-correlation",
+  "prerequisites": [
+   "stat-hypothesis-binomial",
+   "stat-scatter-correlation"
+  ],
+  "keyIdea": "The **product moment correlation coefficient** (PMCC) of a sample,\n$$r = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}, \\qquad -1 \\le r \\le 1$$\nmeasures the strength of **linear** correlation. The population PMCC is $\\rho$.\n\nTo test for correlation in the population:\n* $H_0: \\rho = 0$; $H_1: \\rho > 0$ or $\\rho < 0$ (one-tailed) or $\\rho \\ne 0$ (two-tailed).\n* Look up the critical value for the sample size $n$ and significance level (use the column for $\\frac{\\alpha}{2}$ if two-tailed).\n* If $|r|$ is at least the critical value (and $r$ has the sign in $H_1$), reject $H_0$.\n\nConclude in context: \"There is evidence of positive correlation between…\". Critical values fall as $n$ increases. A significant result shows evidence of linear correlation, not causation, and not necessarily a strong relationship.",
+  "workedExamples": [
+   {
+    "question": "For 12 cars, $S_{xx} = 40$, $S_{yy} = 90$ and $S_{xy} = 36$. Calculate $r$ and test, at the $5\\%$ level, for positive correlation. (Critical value for $n = 12$, $5\\%$ one-tailed: $0.4973$.)",
+    "solution": "$r = \\frac{36}{\\sqrt{40 \\times 90}} = \\frac{36}{\\sqrt{3600}} = \\frac{36}{60} = 0.6$\n\n$H_0: \\rho = 0$, $H_1: \\rho > 0$.\n\n$0.6 > 0.4973$, so reject $H_0$.\n\nThere is evidence at the $5\\%$ level of positive correlation between the two variables."
+   },
+   {
+    "question": "For a sample of 10, $r = -0.58$. Test $H_0: \\rho = 0$ against $H_1: \\rho \\ne 0$ at the $5\\%$ level. (Critical values for $n = 10$: $0.5494$ at $5\\%$ one-tailed, $0.6319$ at $2.5\\%$ one-tailed.)",
+    "solution": "Two-tailed at $5\\%$ means $2.5\\%$ in each tail: critical value $0.6319$.\n\n$|r| = 0.58 < 0.6319$, so do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level of correlation between the variables.\n\n(A one-tailed test for $\\rho < 0$ would compare $0.58$ with $0.5494$ and **would** be significant, so the choice of $H_1$ matters.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Writes the hypotheses in terms of the sample PMCC: $H_0: r = 0$, $H_1: r > 0$.",
+    "correction": "$r$ is the sample value and is already known. Hypotheses are about the population: $H_0: \\rho = 0$, $H_1: \\rho > 0$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the one-tailed column for a two-tailed test, e.g. for $H_1: \\rho \\ne 0$ at $5\\%$ with $n = 10$ compares $|r|$ with $0.5494$ instead of $0.6319$.",
+    "correction": "For a two-tailed test at $5\\%$ use the $2.5\\%$ column ($0.6319$ for $n = 10$). With $r = -0.58$ the result is not significant."
+   },
+   {
+    "id": "m3",
+    "text": "With a negative $r$, compares the signed value with the positive critical value: for $H_1: \\rho < 0$, $n = 10$, $r = -0.65$, writes \"$-0.65 < 0.5494$ so not significant\".",
+    "correction": "Compare the size: $|r| = 0.65 > 0.5494$, and $r$ is negative as $H_1$ requires, so reject $H_0$: there is evidence of negative correlation."
+   },
+   {
+    "id": "m4",
+    "text": "Concludes causation from a significant result: \"$r$ is significant, so more revision causes higher marks\".",
+    "correction": "A significant PMCC only gives evidence of a linear association in the population. A third variable or coincidence could explain it; causation needs a controlled experiment."
+   }
+  ]
+ },
+ {
+  "id": "stat-sampling-distributions",
+  "prerequisites": [
+   "prob-normal-distribution",
+   "prob-binomial",
+   "prob-combining-random-variables",
+   "stat-sampling-methods"
+  ],
+  "keyIdea": "A **sampling distribution** is the distribution of a statistic over all possible samples of size $n$.\n\n**Sample proportion** $\\hat{p}$: $\\mu_{\\hat{p}} = p$, $\\sigma_{\\hat{p}} = \\sqrt{\\frac{p(1-p)}{n}}$ (needs the **10% condition**, $n \\le 0.10N$). It is approximately normal if **Large Counts** holds: $np \\ge 10$ and $n(1-p) \\ge 10$.\n\n**Sample mean** $\\bar{x}$: $\\mu_{\\bar{x}} = \\mu$, $\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}}$ (10% condition). It is normal if the population is normal; otherwise the **Central Limit Theorem** says it is approximately normal when $n \\ge 30$, whatever the population's shape.\n\nA statistic is **unbiased** if its sampling distribution is centered at the parameter. **Variability** falls as $n$ rises: multiplying $n$ by 4 halves the standard deviation. A larger sample reduces variability, but it does not fix bias from a poor sampling method.",
+  "workedExamples": [
+   {
+    "question": "At a large high school, $40\\%$ of students bike to school. For random samples of 150 students, describe the sampling distribution of $\\hat{p}$ and find $P(\\hat{p} > 0.45)$.",
+    "solution": "Center: $\\mu_{\\hat{p}} = 0.40$.\n\nVariability: $\\sigma_{\\hat{p}} = \\sqrt{\\frac{0.4(0.6)}{150}} = \\sqrt{0.0016} = 0.04$ (10% condition: the school has more than $10(150) = 1500$ students).\n\nShape: $np = 60 \\ge 10$ and $n(1-p) = 90 \\ge 10$, so approximately normal.\n\n$z = \\frac{0.45 - 0.40}{0.04} = 1.25$, so $P(\\hat{p} > 0.45) = P(Z > 1.25) = 0.1056$."
+   },
+   {
+    "question": "Customer spending at a café is strongly right-skewed with mean \\$8.40 and standard deviation \\$3.00. Find the probability that the mean of a random sample of 36 customers is more than \\$9.00.",
+    "solution": "$\\mu_{\\bar{x}} = 8.40$, $\\sigma_{\\bar{x}} = \\frac{3.00}{\\sqrt{36}} = 0.50$ (assuming more than 360 customers).\n\n$n = 36 \\ge 30$, so by the CLT the sampling distribution of $\\bar{x}$ is approximately normal, even though spending is skewed.\n\n$z = \\frac{9.00 - 8.40}{0.50} = 1.2$, so $P(\\bar{x} > 9.00) = P(Z > 1.2) = 0.1151$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the population SD for a probability about $\\bar{x}$: $z = \\frac{9.00 - 8.40}{3.00} = 0.2$, giving $P \\approx 0.42$.",
+    "correction": "Means of samples vary less than individuals. Use $\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}} = \\frac{3.00}{6} = 0.50$, so $z = 1.2$ and $P = 0.1151$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks the Central Limit Theorem makes the population (or the sample data) normal: \"Since $n = 36 \\ge 30$, the distribution of customer spending is approximately normal\".",
+    "correction": "The population stays right-skewed, and a large sample will look skewed too. The CLT is about the **sampling distribution of $\\bar{x}$**, which becomes approximately normal."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks doubling the sample size halves the standard deviation of the statistic, e.g. going from $n = 150$ to $n = 300$ changes $\\sigma_{\\hat{p}}$ from $0.04$ to $0.02$.",
+    "correction": "The SD depends on $\\frac{1}{\\sqrt{n}}$. Doubling $n$ divides it by $\\sqrt{2}$ ($0.04 \\to 0.0283$). To halve it you need 4 times the sample size ($n = 600$)."
+   },
+   {
+    "id": "m4",
+    "text": "Checks normality of $\\hat{p}$ with \"$n \\ge 30$\" (or with the 10% condition) instead of Large Counts, e.g. says $\\hat{p}$ is approximately normal for $n = 50$, $p = 0.04$ because $50 \\ge 30$.",
+    "correction": "For proportions, check Large Counts: $np = 50(0.04) = 2 < 10$, so $\\hat{p}$ is **not** approximately normal (it is right-skewed). The 10% condition is about the SD formula (independence), not shape."
+   }
+  ]
+ },
+ {
+  "id": "stat-confidence-intervals-proportions",
+  "prerequisites": [
+   "stat-sampling-distributions",
+   "prob-normal-distribution"
+  ],
+  "keyIdea": "A confidence interval is **statistic $\\pm$ (critical value)(standard error)**.\n\nOne-proportion $z$-interval: $\\hat{p} \\pm z^*\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}$.\nTwo-proportion $z$-interval: $(\\hat{p}_1 - \\hat{p}_2) \\pm z^*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1} + \\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}$.\n\nConditions: Random; 10%; Large Counts (at least 10 successes and 10 failures in each sample).\n$z^* = 1.645$ (90%), $1.960$ (95%), $2.576$ (99%).\n\n**Interpret the interval:** \"We are 95% confident that the interval from 0.521 to 0.619 captures the true proportion of all voters who…\".\n**Interpret the level:** if we took many random samples, about 95% of the resulting intervals would capture $p$.\n\nThe margin of error grows with confidence level and shrinks as $n$ grows. Sample size: solve $z^*\\sqrt{\\frac{p^*(1-p^*)}{n}} \\le \\text{ME}$, using $p^* = 0.5$ if unknown, and **round up**.",
+  "workedExamples": [
+   {
+    "question": "In a random sample of 400 registered voters in a city, 228 support a new bond measure. Construct and interpret a 95% confidence interval for the proportion of all registered voters who support it.",
+    "solution": "**Procedure:** one-proportion $z$-interval. $\\hat{p} = \\frac{228}{400} = 0.57$.\n\n**Conditions:** random sample; 400 is less than 10% of the city's voters; $228 \\ge 10$ and $172 \\ge 10$.\n\n**Compute:** $SE = \\sqrt{\\frac{0.57(0.43)}{400}} = 0.02475$. $ME = 1.96(0.02475) = 0.0485$.\n$$0.57 \\pm 0.0485 = (0.521, 0.619)$$\n\n**Conclude:** we are 95% confident that the interval from 0.521 to 0.619 captures the true proportion of all registered voters in the city who support the measure."
+   },
+   {
+    "question": "How large a sample is needed to estimate a proportion to within 3 percentage points with 95% confidence, with no prior estimate?",
+    "solution": "Use $p^* = 0.5$:\n$$1.96\\sqrt{\\frac{0.5(0.5)}{n}} \\le 0.03$$\n\n$\\sqrt{\\frac{0.25}{n}} \\le 0.015306$, so $\\frac{0.25}{n} \\le 0.00023427$ and $n \\ge 1067.1$.\n\nRound **up**: $n = 1068$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Interprets the interval as a probability statement about $p$: \"There is a 95% probability that the true proportion is between 0.521 and 0.619\" (or \"95% of voters are in this interval\").",
+    "correction": "Once calculated, the interval either captures $p$ or it does not. Say \"We are 95% confident that the interval from 0.521 to 0.619 captures the true proportion…\". The 95% describes the method: about 95% of intervals from repeated samples capture $p$."
+   },
+   {
+    "id": "m2",
+    "text": "Rounds a required sample size to the nearest integer, or down, e.g. $n \\ge 1067.1$ gives $n = 1067$.",
+    "correction": "With $n = 1067$ the margin of error is slightly **more** than 0.03. Always round up: $n = 1068$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks a higher confidence level gives a narrower, more precise interval, e.g. expects a 99% interval to be narrower than a 95% one from the same data.",
+    "correction": "Higher confidence needs a larger $z^*$ ($2.576$ vs $1.960$), so the interval is **wider**. To narrow an interval without losing confidence, increase $n$."
+   },
+   {
+    "id": "m4",
+    "text": "For a two-proportion interval, adds the two standard errors: $SE = \\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1}} + \\sqrt{\\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}$ (or subtracts the variances because the statistic is a difference).",
+    "correction": "Variances of independent statistics add, even for a difference: $SE = \\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n_1} + \\frac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}$, with one square root over the sum."
+   }
+  ]
+ },
+ {
+  "id": "stat-significance-tests-proportions",
+  "prerequisites": [
+   "stat-sampling-distributions",
+   "stat-confidence-intervals-proportions"
+  ],
+  "keyIdea": "**Hypotheses** (about parameters, defined in context): $H_0: p = p_0$; $H_a: p > p_0$, $p < p_0$ or $p \\ne p_0$.\n**Conditions:** Random; 10%; Large Counts **using $p_0$**: $np_0 \\ge 10$, $n(1-p_0) \\ge 10$.\n$$z = \\frac{\\hat{p} - p_0}{\\sqrt{\\frac{p_0(1-p_0)}{n}}}$$\nTwo-proportion test, $H_0: p_1 - p_2 = 0$: use the pooled $\\hat{p}_C = \\frac{X_1 + X_2}{n_1 + n_2}$ and $SE = \\sqrt{\\hat{p}_C(1-\\hat{p}_C)\\left(\\frac{1}{n_1} + \\frac{1}{n_2}\\right)}$.\n\n**P-value:** assuming $H_0$ is true, the probability of a statistic at least as extreme as the one observed. If P-value $< \\alpha$, reject $H_0$: convincing evidence for $H_a$. Otherwise fail to reject $H_0$ (never \"accept\").\n\n**Type I error:** reject $H_0$ when it is true ($P = \\alpha$). **Type II error:** fail to reject $H_0$ when $H_a$ is true. **Power** $= 1 - P(\\text{Type II})$; it increases with larger $n$, larger $\\alpha$ or a larger true effect.",
+  "workedExamples": [
+   {
+    "question": "Historically, 30% of patients taking a drug have a side effect. In a random sample of 200 patients on a new formulation, 46 have the side effect. Is there convincing evidence at $\\alpha = 0.05$ that the side-effect rate is lower?",
+    "solution": "**State:** $H_0: p = 0.30$, $H_a: p < 0.30$, where $p$ = proportion of all patients on the new formulation who have the side effect.\n\n**Plan:** one-proportion $z$-test. Random sample; 200 is less than 10% of all patients; $200(0.30) = 60 \\ge 10$ and $200(0.70) = 140 \\ge 10$.\n\n**Do:** $\\hat{p} = \\frac{46}{200} = 0.23$.\n$$z = \\frac{0.23 - 0.30}{\\sqrt{\\frac{0.30(0.70)}{200}}} = \\frac{-0.07}{0.0324} = -2.16$$\nP-value $= P(Z < -2.16) = 0.0154$.\n\n**Conclude:** $0.0154 < 0.05$, so reject $H_0$. There is convincing evidence that the side-effect rate is lower than 30% for the new formulation."
+   },
+   {
+    "question": "For the test above, describe a Type I and a Type II error in context, and give one way to increase power.",
+    "solution": "**Type I:** concluding the new formulation has a lower side-effect rate when in fact the rate is still 30%. (Patients might switch for no real benefit.)\n\n**Type II:** failing to find convincing evidence of a lower rate when the new formulation really does have a lower rate. (A genuine improvement is missed.)\n\n**Power:** increase the sample size (or use a larger $\\alpha$, at the cost of more Type I errors)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Interprets the P-value as the probability that $H_0$ is true: \"P-value $= 0.0154$, so there is a 1.54% chance the side-effect rate is 30%\".",
+    "correction": "The P-value assumes $H_0$ is true: **if** $p = 0.30$, there is a 0.0154 probability of getting $\\hat{p} \\le 0.23$ by chance in a random sample of 200."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $\\hat{p}$ instead of $p_0$ in the standard error of a one-proportion test: $SE = \\sqrt{\\frac{0.23(0.77)}{200}} = 0.0298$, giving $z = -2.35$.",
+    "correction": "The test assumes $H_0$, so the standard error (and the Large Counts check) uses $p_0$: $SE = \\sqrt{\\frac{0.30(0.70)}{200}} = 0.0324$ and $z = -2.16$. Use $\\hat{p}$ only in confidence intervals."
+   },
+   {
+    "id": "m3",
+    "text": "Swaps the error types: \"A Type II error is rejecting $H_0$ when it is actually true\".",
+    "correction": "Type I = rejecting a true $H_0$ (false alarm), with probability $\\alpha$. Type II = failing to reject a false $H_0$ (missed effect)."
+   },
+   {
+    "id": "m4",
+    "text": "When the P-value exceeds $\\alpha$, concludes that $H_0$ is true: \"P-value $= 0.21 > 0.05$, so we accept $H_0$: the rate is 30%\".",
+    "correction": "A large P-value means the data are consistent with $H_0$, not that $H_0$ is proved. Say: \"Fail to reject $H_0$. There is not convincing evidence that the rate is lower than 30%\"."
+   }
+  ]
+ },
+ {
+  "id": "stat-t-procedures",
+  "prerequisites": [
+   "stat-sampling-distributions",
+   "stat-confidence-intervals-proportions",
+   "stat-significance-tests-proportions"
+  ],
+  "keyIdea": "When $\\sigma$ is unknown, estimate it with $s$, using $SE = \\frac{s}{\\sqrt{n}}$ and a **$t$ distribution** with $df = n - 1$ (heavier tails than $z$, so $t^* > z^*$).\n* **One-sample:** interval $\\bar{x} \\pm t^*\\frac{s}{\\sqrt{n}}$; test $t = \\dfrac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$.\n* **Paired data** (two measurements on the same subject or matched pairs): find the differences, then do a one-sample $t$ procedure on them, with parameter $\\mu_{\\text{diff}}$.\n* **Two-sample** (independent groups): $(\\bar{x}_1 - \\bar{x}_2) \\pm t^*\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}$; $df$ from technology (or the smaller of $n_1 - 1$, $n_2 - 1$).\n**Conditions:** Random; 10%; Normal/Large Sample: the population is normal or $n \\ge 30$; for small $n$, a graph of the sample (or of the differences) shows no strong skew or outliers. Conclude in context about the population mean.",
+  "workedExamples": [
+   {
+    "question": "A random sample of 16 commuters has mean commute time 52.3 minutes and standard deviation 6.4 minutes. A dotplot shows no strong skew or outliers. Construct a 95% confidence interval for the mean commute time.",
+    "solution": "One-sample $t$-interval. $df = 15$, so $t^* = 2.131$.\n\n$SE = \\frac{6.4}{\\sqrt{16}} = 1.6$; $ME = 2.131 \\times 1.6 = 3.41$.\n\n$52.3 \\pm 3.41 = (48.89, 55.71)$ minutes.\n\nWe are 95% confident that the interval from 48.89 to 55.71 minutes captures the true mean commute time of all commuters in this population."
+   },
+   {
+    "question": "Six students took a test before and after tutoring. The differences (after $-$ before) were $4, 7, -1, 5, 3, 6$. Test at $\\alpha = 0.05$ whether tutoring increases scores on average.",
+    "solution": "Paired data: $H_0: \\mu_{\\text{diff}} = 0$, $H_a: \\mu_{\\text{diff}} > 0$.\n\n$\\bar{x}_{\\text{diff}} = \\frac{24}{6} = 4$. Deviations $0, 3, -5, 1, -1, 2$; squares sum to 40, so $s = \\sqrt{\\frac{40}{5}} = 2.828$.\n\n$$t = \\frac{4 - 0}{2.828/\\sqrt{6}} = \\frac{4}{1.155} = 3.46, \\quad df = 5$$\nP-value $\\approx 0.009 < 0.05$, so reject $H_0$ (assuming a random sample and no strong skew or outliers in the differences).\n\nThere is convincing evidence that tutoring increases test scores on average."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats paired data as two independent samples, e.g. runs a two-sample $t$-test on the \"before\" and \"after\" scores of the same six students.",
+    "correction": "When each subject gives two linked values, analyze the **differences** with a one-sample $t$ procedure ($df = n - 1$ pairs). The two-sample procedure ignores the pairing and usually loses power."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $z^*$ instead of $t^*$ (or the wrong $df$), e.g. $52.3 \\pm 1.96(1.6)$, or uses $df = 16$ for $n = 16$.",
+    "correction": "With $s$ in place of $\\sigma$ use the $t$ distribution with $df = n - 1 = 15$: $t^* = 2.131$, giving $52.3 \\pm 3.41$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks a large sample makes the population normal: \"Since $n = 40 \\ge 30$, the population of commute times is approximately normal\".",
+    "correction": "The population's shape does not change. With $n \\ge 30$, the CLT makes the **sampling distribution of $\\bar{x}$** approximately normal, which is what the condition needs."
+   },
+   {
+    "id": "m4",
+    "text": "Subtracts the variances for a difference of means: $SE = \\sqrt{\\frac{s_1^2}{n_1} - \\frac{s_2^2}{n_2}}$ (or adds the separate SEs).",
+    "correction": "Variability adds when you combine independent samples, even for a difference: $SE = \\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}$."
+   }
+  ]
+ },
+ {
+  "id": "stat-chi-square",
+  "prerequisites": [
+   "stat-significance-tests-proportions",
+   "stat-two-way-tables"
+  ],
+  "keyIdea": "Chi-square tests compare **observed** counts with the counts **expected** if $H_0$ were true:\n$$\\chi^2 = \\sum \\frac{(\\text{Observed} - \\text{Expected})^2}{\\text{Expected}}$$\n* **Goodness of fit:** one categorical variable, one sample. $E = n \\times$ hypothesized proportion; $df$ = number of categories $- 1$.\n* **Homogeneity:** one variable compared across several separate samples or treatments. $H_0$: the distributions are the same.\n* **Independence:** two variables from one sample. $H_0$: no association.\nFor two-way tables, $E = \\frac{(\\text{row total})(\\text{column total})}{\\text{table total}}$ and $df = (r-1)(c-1)$.\n\n**Conditions:** Random; 10% when sampling without replacement; Large Counts: **all expected counts at least 5**.\n\nA large $\\chi^2$ gives a small P-value (right tail only), which is evidence against $H_0$. Always use counts, never percentages.",
+  "workedExamples": [
+   {
+    "question": "A die is rolled 120 times: faces 1 to 6 appear $25, 17, 15, 23, 24, 16$ times. Test at $\\alpha = 0.05$ whether the die is fair.",
+    "solution": "$H_0$: all faces have probability $\\frac{1}{6}$; $H_a$: at least one probability differs.\n\nExpected counts: $120 \\times \\frac{1}{6} = 20$ each, all at least 5.\n\n$$\\chi^2 = \\frac{5^2}{20} + \\frac{(-3)^2}{20} + \\frac{(-5)^2}{20} + \\frac{3^2}{20} + \\frac{4^2}{20} + \\frac{(-4)^2}{20} = \\frac{100}{20} = 5.0$$\n\n$df = 6 - 1 = 5$; P-value $\\approx 0.42 > 0.05$.\n\nFail to reject $H_0$: there is not convincing evidence that the die is unfair."
+   },
+   {
+    "question": "A random sample of 200 students at a school gave grade level and preferred lunch:\n\n| | Pizza | Salad | Sandwich | Total |\n|---|---|---|---|---|\n| Sophomore | 50 | 25 | 45 | 120 |\n| Senior | 30 | 25 | 25 | 80 |\n| Total | 80 | 50 | 70 | 200 |\n\nName the test, find the expected counts, $\\chi^2$, $df$ and the conclusion at $\\alpha = 0.05$.",
+    "solution": "One sample, two variables: **chi-square test for independence**. $H_0$: no association between grade level and lunch preference.\n\nExpected, e.g. Sophomore–Pizza $= \\frac{120 \\times 80}{200} = 48$. All expected: $48, 30, 42$ and $32, 20, 28$ (all at least 5).\n\n$$\\chi^2 = \\frac{2^2}{48} + \\frac{5^2}{30} + \\frac{3^2}{42} + \\frac{2^2}{32} + \\frac{5^2}{20} + \\frac{3^2}{28} \\approx 2.83$$\n\n$df = (2-1)(3-1) = 2$; P-value $\\approx 0.24 > 0.05$.\n\nFail to reject $H_0$: there is not convincing evidence of an association between grade level and lunch preference for students at this school."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides by the observed count instead of the expected count: $\\sum \\frac{(O - E)^2}{O}$, e.g. $\\frac{(25-20)^2}{25} = 1$ instead of $\\frac{(25-20)^2}{20} = 1.25$.",
+    "correction": "The formula divides by the **expected** count: each term measures the discrepancy relative to what $H_0$ predicts. $\\frac{(25-20)^2}{20} = 1.25$."
+   },
+   {
+    "id": "m2",
+    "text": "Checks the Large Counts condition with the observed counts (e.g. \"one cell has only 3 observed, so the condition fails\") or checks for 10 instead of 5.",
+    "correction": "The condition is that all **expected** counts are at least 5. A small observed count is fine if its expected count is at least 5."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the wrong degrees of freedom, e.g. $df = n - 1 = 199$ (sample size) or $df = rc - 1 = 5$ for a $2 \\times 3$ table.",
+    "correction": "Goodness of fit: $df$ = categories $- 1$. Two-way table: $df = (r-1)(c-1) = (2-1)(3-1) = 2$. The sample size does not enter $df$."
+   },
+   {
+    "id": "m4",
+    "text": "Confuses homogeneity and independence, e.g. calls a study that takes separate random samples of 100 sophomores and 100 seniors a test for independence.",
+    "correction": "Separate samples from several populations (or treatment groups) compared on one variable: **homogeneity**. One sample classified by two variables: **independence**. The calculation is the same; the design, hypotheses and conclusion differ."
+   }
+  ]
+ },
+ {
+  "id": "stat-regression-inference",
+  "prerequisites": [
+   "stat-t-procedures",
+   "stat-linear-regression"
+  ],
+  "keyIdea": "The population model is $\\mu_y = \\alpha + \\beta x$; the sample slope $b$ estimates $\\beta$.\n\n**Conditions (LINER):** **L**inear (residual plot shows no curve); **I**ndependent (10% condition); **N**ormal (residuals show no strong skew or outliers); **E**qual SD (residual plot shows no fanning); **R**andom.\n\nUse $df = n - 2$.\n* Interval: $b \\pm t^* SE_b$.\n* Test: $H_0: \\beta = 0$ (no linear relationship), $t = \\dfrac{b - 0}{SE_b}$.\n\n**Reading computer output:** in the row for the explanatory variable (not \"Constant\"), \"Coef\" is $b$ and \"SE Coef\" is $SE_b$; \"T\" and \"P\" are for $H_0: \\beta = 0$, and the printed P-value is **two-sided** (halve it for a one-sided $H_a$ if $b$ is in the right direction). $s$ is the typical size of a residual and R-Sq is $r^2$.",
+  "workedExamples": [
+   {
+    "question": "For a random sample of 20 students, study hours ($x$) and quiz score ($y$) give:\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 12.40 | 3.10 | 4.00 | 0.001 |\n| Hours | 2.85 | 0.95 | 3.00 | 0.008 |\n\n$s = 4.2$, R-Sq $= 33.3\\%$. Assuming the conditions are met, construct a 95% confidence interval for the slope and interpret it.",
+    "solution": "$b = 2.85$, $SE_b = 0.95$, $df = 20 - 2 = 18$, $t^* = 2.101$.\n\n$$2.85 \\pm 2.101(0.95) = 2.85 \\pm 2.00 = (0.85, 4.85)$$\n\nWe are 95% confident that the interval from 0.85 to 4.85 captures the slope of the population regression line: for each extra hour of study, the average quiz score increases by between about 0.85 and 4.85 points."
+   },
+   {
+    "question": "Using the same output, test $H_0: \\beta = 0$ against $H_a: \\beta > 0$ at $\\alpha = 0.05$.",
+    "solution": "$t = \\frac{2.85 - 0}{0.95} = 3.00$ with $df = 18$.\n\nThe output's P-value (0.008) is two-sided. Since $b > 0$, the one-sided P-value is $\\frac{0.008}{2} = 0.004$.\n\n$0.004 < 0.05$, so reject $H_0$: there is convincing evidence of a positive linear relationship between study hours and quiz score for students like these."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $df = n - 1$ for inference about the slope, e.g. $df = 19$ and $t^* = 2.093$ for $n = 20$.",
+    "correction": "Two parameters (intercept and slope) are estimated, so $df = n - 2 = 18$ and $t^* = 2.101$."
+   },
+   {
+    "id": "m2",
+    "text": "Reads the wrong row or value from the output, e.g. uses the Constant row ($12.40$, SE $3.10$) for the slope, or uses $s = 4.2$ as $SE_b$.",
+    "correction": "The slope is in the row named after the explanatory variable (Hours): $b = 2.85$, $SE_b = 0.95$. $s = 4.2$ is the SD of the residuals, not the SE of the slope."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the printed P-value without adjustment for a one-sided alternative (e.g. reports 0.008 for $H_a: \\beta > 0$), or halves it for a two-sided alternative.",
+    "correction": "Regression output gives the two-sided P-value for $H_0: \\beta = 0$. For a one-sided $H_a$ in the direction of $b$, halve it ($0.004$); for $H_a: \\beta \\ne 0$, use it as printed."
+   },
+   {
+    "id": "m4",
+    "text": "Says the Equal SD condition is met because the residual plot shows no curve, ignoring a clear fan shape (residuals spreading out as $x$ increases).",
+    "correction": "\"No curve\" checks Linear. Equal SD needs the vertical spread of the residuals to be about the same across all $x$-values; a fan shape means the condition is not met."
+   }
+  ]
+ }
+]

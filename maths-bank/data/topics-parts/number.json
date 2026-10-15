@@ -1,0 +1,917 @@
+[
+ {
+  "id": "num-place-value-ordering",
+  "prerequisites": [],
+  "keyIdea": "Every digit's value depends on its **column**: … thousands, hundreds, tens, ones **.** tenths, hundredths, thousandths. In $3.472$ the 7 is worth $\\frac{7}{100}$.\n\n**Ordering decimals:** line up the decimal points, pad with zeros so every number has the same number of decimal places ($0.5 = 0.50$), then compare column by column from the left.\n\n**Inequality symbols:** $<$ means \"is less than\", $>$ means \"is greater than\"; the wide open side faces the bigger number, e.g. $0.45 < 0.5$.\n\n**Powers of 10:** multiplying by $10$, $100$, $1000$ moves every digit 1, 2, 3 places to the left (bigger); dividing moves them to the right (smaller). The decimal point stays still — the digits move: $3.7 \\times 100 = 370$, $45 \\div 1000 = 0.045$.",
+  "workedExamples": [
+   {
+    "question": "Write these numbers in order, smallest first: $0.6$, $0.65$, $0.606$, $0.56$, $0.066$",
+    "solution": "Pad every number to 3 decimal places so they can be compared column by column:\n$$0.600,\\quad 0.650,\\quad 0.606,\\quad 0.560,\\quad 0.066$$\n\nCompare the tenths first: $0.066$ has 0 tenths, so it is smallest. $0.560$ has 5 tenths. The rest have 6 tenths.\n\nAmong $0.600$, $0.606$, $0.650$ compare hundredths: $0$, $0$, $5$, then thousandths: $0.600 < 0.606$.\n\n**Order:** $0.066,\\ 0.56,\\ 0.6,\\ 0.606,\\ 0.65$"
+   },
+   {
+    "question": "Work out (a) $4.08 \\times 100$ (b) $52 \\div 1000$ (c) $0.3 \\times 1000$",
+    "solution": "(a) Multiplying by 100 moves each digit 2 places left: the 4 ones become 4 hundreds, the 8 hundredths become 8 ones.\n$$4.08 \\times 100 = 408$$\n\n(b) Dividing by 1000 moves each digit 3 places right: the 5 tens become 5 hundredths.\n$$52 \\div 1000 = 0.052$$\n\n(c) The 3 tenths move 3 places left to become 3 hundreds:\n$$0.3 \\times 1000 = 300$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a decimal with more digits is bigger: \"$0.45 > 0.5$ because $45 > 5$\".",
+    "correction": "Pad with zeros to compare like with like: $0.45$ vs $0.50$. 45 hundredths is less than 50 hundredths, so $0.45 < 0.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks multiplying by 10 \"adds a zero\": $3.4 \\times 10 = 3.40$.",
+    "correction": "$3.40$ is the same value as $3.4$. Multiplying by 10 moves each digit one place left: $3.4 \\times 10 = 34$."
+   },
+   {
+    "id": "m3",
+    "text": "Divides by a power of 10 by \"crossing off zeros\" wherever they are: $4050 \\div 100 = 45$.",
+    "correction": "Only trailing zeros of a whole number can be removed, and only when there are enough. Move the digits 2 places right: $4050 \\div 100 = 40.5$."
+   },
+   {
+    "id": "m4",
+    "text": "Reads the inequality symbol the wrong way round, e.g. writes $8 < 3$ to mean \"8 is bigger than 3\".",
+    "correction": "The pointed (small) end faces the smaller number: $3 < 8$ or $8 > 3$. Read from left to right: \"$8 > 3$\" is \"8 is greater than 3\"."
+   }
+  ]
+ },
+ {
+  "id": "num-negative-numbers",
+  "prerequisites": [
+   "num-place-value-ordering"
+  ],
+  "keyIdea": "On a number line, numbers get **smaller to the left**, so $-7 < -2$.\n\n**Adding and subtracting:** adding a negative is the same as subtracting, and subtracting a negative is the same as adding:\n$$5 + (-3) = 5 - 3 = 2, \\qquad 4 - (-6) = 4 + 6 = 10$$\n\n**Multiplying and dividing:** same signs give a positive, different signs give a negative: $(-4) \\times (-3) = 12$, $-20 \\div 5 = -4$. These sign rules are for $\\times$ and $\\div$ only — $-3 + (-5) = -8$, not $8$.\n\nRational numbers such as $-2.5$ and $-\\frac{3}{4}$ sit between the integers on the number line.\n\n**Absolute value** (US Grade 6): $|x|$ is the distance of $x$ from zero, so it is never negative: $|-6| = 6$, $|4| = 4$. Work out the inside first: $|-3 + 1| = |-2| = 2$.",
+  "workedExamples": [
+   {
+    "question": "Work out (a) $-8 + 3$ (b) $-2 - 7$ (c) $6 - (-4)$ (d) $(-3) \\times (-5)$ (e) $-24 \\div 6$",
+    "solution": "(a) Start at $-8$, move 3 right: $-8 + 3 = -5$\n\n(b) Start at $-2$, move 7 left: $-2 - 7 = -9$\n\n(c) Subtracting a negative is adding: $6 - (-4) = 6 + 4 = 10$\n\n(d) Same signs, so positive: $(-3) \\times (-5) = 15$\n\n(e) Different signs, so negative: $-24 \\div 6 = -4$"
+   },
+   {
+    "question": "Write in order, smallest first: $-1.5$, $2$, $-\\frac{3}{4}$, $-3$, $|-4|$",
+    "solution": "Rewrite any unfamiliar forms first:\n$$|-4| = 4, \\qquad -\\tfrac{3}{4} = -0.75$$\n\nOn a number line the furthest left is smallest: $-3$, then $-1.5$, then $-0.75$, then $2$, then $4$.\n\n**Order:** $-3,\\ -1.5,\\ -\\frac{3}{4},\\ 2,\\ |-4|$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses \"two negatives make a positive\" for addition: $-3 + (-5) = 8$.",
+    "correction": "The sign rule is only for multiplying and dividing. Adding $-5$ means moving 5 further left from $-3$: $-3 + (-5) = -8$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks $-7 > -2$ because $7 > 2$.",
+    "correction": "$-7$ is further left on the number line (colder, more in debt), so $-7 < -2$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the double negative: $5 - (-3) = 2$.",
+    "correction": "Subtracting a negative is the same as adding: $5 - (-3) = 5 + 3 = 8$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats absolute value as \"make every number positive\" before working out the inside: $|-3 + 1| = 3 + 1 = 4$.",
+    "correction": "Evaluate inside the bars first, then take the distance from zero: $|-3 + 1| = |-2| = 2$."
+   }
+  ]
+ },
+ {
+  "id": "num-written-methods",
+  "prerequisites": [
+   "num-place-value-ordering"
+  ],
+  "keyIdea": "**Column addition and subtraction:** line up the place values (ones under ones), work from the right, carry or exchange (\"borrow\") when needed.\n\n**Multiplication:** short multiplication for a 1-digit multiplier; for 2 digits use long multiplication or the grid method, remembering the placeholder zero when multiplying by tens:\n$$47 \\times 36 = 47 \\times 30 + 47 \\times 6 = 1410 + 282 = 1692$$\n\n**Division:** short division (\"bus stop\") carries remainders into the next column; long division writes out each subtraction. A remainder can be written as $r$, a fraction or a decimal.\n\n**Remainders in context:** round **up** when everyone must fit (coaches, boxes); round **down** when only complete items count (full packs you can make).\n\n**Inverse operations check answers:** $1692 \\div 36 = 47$. Mental strategies: partitioning, and compensation such as $99 \\times 6 = 600 - 6 = 594$.",
+  "workedExamples": [
+   {
+    "question": "Work out $347 \\times 26$.",
+    "solution": "Multiply by the ones digit: $347 \\times 6 = 2082$\n\nMultiply by the tens digit — it is really $20$, so write a placeholder 0: $347 \\times 20 = 6940$\n\nAdd the rows:\n$$2082 + 6940 = 9022$$\n\nCheck with an estimate: $350 \\times 25 = 8750$, close to $9022$. ✓"
+   },
+   {
+    "question": "230 students are going on a trip. Each coach holds 52 students. How many coaches are needed?",
+    "solution": "Divide: $230 \\div 52$.\n\n$52 \\times 4 = 208$ and $52 \\times 5 = 260$, so 52 goes into 230 four times.\n\nRemainder: $230 - 208 = 22$, so $230 \\div 52 = 4$ remainder $22$.\n\nFour coaches would leave 22 students behind, so round **up**: **5 coaches** are needed."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "In column subtraction, takes the smaller digit from the larger in each column instead of exchanging: $503 - 278 = 375$.",
+    "correction": "When the top digit is smaller, exchange from the next column. $503 - 278$: exchange to get $13 - 8 = 5$, $9 - 7 = 2$, $4 - 2 = 2$, giving $225$. Check: $225 + 278 = 503$."
+   },
+   {
+    "id": "m2",
+    "text": "Forgets the placeholder zero in long multiplication: $347 \\times 26$ written as $2082 + 694 = 2776$.",
+    "correction": "The 2 in 26 is 2 tens, so the second row is $347 \\times 20 = 6940$, not $694$. Correct total: $2082 + 6940 = 9022$."
+   },
+   {
+    "id": "m3",
+    "text": "Ignores the context when there is a remainder: answers \"$4.42$ coaches\" or \"4 coaches\" for $230 \\div 52$.",
+    "correction": "You cannot hire part of a coach, and 4 coaches leave 22 students behind. Round up: 5 coaches."
+   },
+   {
+    "id": "m4",
+    "text": "Lines numbers up on the left instead of by place value: $452 + 38$ worked as $452 + 380 = 832$.",
+    "correction": "Line up ones under ones: $452 + 38 = 490$."
+   }
+  ]
+ },
+ {
+  "id": "num-decimals-operations",
+  "prerequisites": [
+   "num-place-value-ordering",
+   "num-written-methods"
+  ],
+  "keyIdea": "**Add/subtract:** line up the decimal points and fill gaps with zeros: $7 - 2.35 = 7.00 - 2.35 = 4.65$.\n\n**Multiply:** ignore the points, multiply the whole numbers, then give the answer as many decimal places as the question has in total:\n$$0.3 \\times 0.04:\\quad 3 \\times 4 = 12,\\ \\text{3 d.p.} \\Rightarrow 0.012$$\n\n**Divide by a decimal:** multiply both numbers by the same power of 10 to make the divisor a whole number: $4.56 \\div 0.3 = 45.6 \\div 3 = 15.2$.\n\n**Place-value reasoning:** from $23 \\times 47 = 1081$ you get $2.3 \\times 4.7 = 10.81$ and $1081 \\div 4.7 = 230$.\n\nMultiplying by a number between 0 and 1 makes the answer **smaller**; dividing by it makes the answer **bigger**. Always sense-check with an estimate.",
+  "workedExamples": [
+   {
+    "question": "Work out $2.7 \\times 0.46$.",
+    "solution": "Ignore the decimal points: $27 \\times 46 = 1242$ (since $27 \\times 40 = 1080$ and $27 \\times 6 = 162$).\n\nCount decimal places in the question: $2.7$ has 1, $0.46$ has 2, so the answer has 3.\n$$2.7 \\times 0.46 = 1.242$$\n\nCheck: $3 \\times 0.5 = 1.5$, so $1.242$ is sensible."
+   },
+   {
+    "question": "Work out $7.84 \\div 0.07$.",
+    "solution": "Make the divisor a whole number by multiplying **both** numbers by 100:\n$$7.84 \\div 0.07 = 784 \\div 7$$\n\nShort division: $784 \\div 7 = 112$.\n\nCheck: dividing by a number less than 1 should give a bigger answer, and $112 \\times 0.07 = 7.84$. ✓"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats the parts after the point as separate whole numbers: $4.5 + 2.36 = 6.41$ (adding $5 + 36$).",
+    "correction": "Line up the decimal points: $4.50 + 2.36 = 6.86$."
+   },
+   {
+    "id": "m2",
+    "text": "Keeps the decimal places of just one number when multiplying: $0.3 \\times 0.2 = 0.6$.",
+    "correction": "$3 \\times 2 = 6$ and the question has 2 decimal places in total, so $0.3 \\times 0.2 = 0.06$ (three tenths of two tenths is less than either)."
+   },
+   {
+    "id": "m3",
+    "text": "Believes \"multiplying makes bigger, dividing makes smaller\", so writes $12 \\div 0.5 = 6$.",
+    "correction": "$12 \\div 0.5$ asks \"how many halves in 12?\", which is 24. Dividing by a number between 0 and 1 gives a larger answer."
+   },
+   {
+    "id": "m4",
+    "text": "Moves the decimal point in the divisor only: $4.56 \\div 0.3 = 4.56 \\div 3 = 1.52$.",
+    "correction": "Both numbers must be multiplied by the same power of 10: $4.56 \\div 0.3 = 45.6 \\div 3 = 15.2$."
+   }
+  ]
+ },
+ {
+  "id": "num-order-of-operations",
+  "prerequisites": [
+   "num-written-methods",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "**BIDMAS** (US: PEMDAS): **B**rackets, **I**ndices, then **D**ivision and **M**ultiplication, then **A**ddition and **S**ubtraction.\n\nD and M have **equal** priority and are done left to right; so are A and S:\n$$12 \\div 3 \\times 2 = 4 \\times 2 = 8, \\qquad 8 - 3 + 2 = 5 + 2 = 7$$\n\nIndices come before multiplication: $2 \\times 3^2 = 2 \\times 9 = 18$, not $6^2$. Note $-3^2 = -9$ but $(-3)^2 = 9$.\n\nA **fraction bar is a grouping symbol** — it acts like brackets round the top and the bottom:\n$$\\frac{12 + 6}{3 \\times 2} = \\frac{18}{6} = 3$$\n\nOn a calculator, type the hidden brackets: (12 + 6) ÷ (3 × 2), or use the fraction key.",
+  "workedExamples": [
+   {
+    "question": "Evaluate $5 + 3 \\times (8 - 2)^2 \\div 9$.",
+    "solution": "Brackets: $8 - 2 = 6$, giving $5 + 3 \\times 6^2 \\div 9$\n\nIndices: $6^2 = 36$, giving $5 + 3 \\times 36 \\div 9$\n\nMultiplication and division, left to right: $3 \\times 36 = 108$, then $108 \\div 9 = 12$\n\nAddition: $5 + 12 = 17$"
+   },
+   {
+    "question": "Use a calculator to work out $\\dfrac{4.2 + 3.8^2}{\\sqrt{2.5 \\times 10}}$. Write down all the figures on your calculator display.",
+    "solution": "Work out the numerator and denominator separately (the fraction bar groups them):\n\nNumerator: $3.8^2 = 14.44$, so $4.2 + 14.44 = 18.64$\n\nDenominator: $\\sqrt{2.5 \\times 10} = \\sqrt{25} = 5$\n\n$$\\frac{18.64}{5} = 3.728$$\n\nIn one go, type (4.2 + 3.8²) ÷ √(2.5 × 10)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Works strictly left to right: $4 + 6 \\times 2 = 10 \\times 2 = 20$.",
+    "correction": "Multiplication comes before addition: $4 + 6 \\times 2 = 4 + 12 = 16$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks M always comes before D (and A before S) because of the order of the letters: $12 \\div 3 \\times 2 = 12 \\div 6 = 2$, or $10 - 4 + 3 = 10 - 7 = 3$.",
+    "correction": "D and M have equal priority, as do A and S; work left to right: $12 \\div 3 \\times 2 = 8$ and $10 - 4 + 3 = 9$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies before applying the power: $2 \\times 3^2 = 6^2 = 36$.",
+    "correction": "The index belongs only to the 3: $2 \\times 3^2 = 2 \\times 9 = 18$."
+   },
+   {
+    "id": "m4",
+    "text": "Ignores the fraction bar as a grouping symbol when typing into a calculator: $\\dfrac{12+6}{3 \\times 2}$ entered as 12 + 6 ÷ 3 × 2, giving $16$.",
+    "correction": "The whole numerator is divided by the whole denominator: enter (12 + 6) ÷ (3 × 2) to get $3$."
+   }
+  ]
+ },
+ {
+  "id": "num-factors-multiples-primes",
+  "prerequisites": [
+   "num-written-methods",
+   "num-powers-roots"
+  ],
+  "keyIdea": "A **factor** of $n$ divides $n$ exactly; find them in pairs: $36 = 1 \\times 36 = 2 \\times 18 = 3 \\times 12 = 4 \\times 9 = 6 \\times 6$. A **multiple** of $n$ is in its times table: $7, 14, 21, \\ldots$\n\nA **prime** has exactly two factors, 1 and itself. 1 is **not** prime; 2 is the only even prime. To test $n$, try primes up to $\\sqrt{n}$.\n\n**Divisibility tests:** 2 (even last digit), 3 (digit sum divisible by 3), 4 (last two digits divisible by 4), 5 (ends 0 or 5), 6 (by 2 and 3), 9 (digit sum divisible by 9), 10 (ends 0).\n\nEvery integer greater than 1 is a unique **product of prime factors**. Use a factor tree, keep splitting until every branch ends in a prime, then write in index form:\n$$360 = 2^3 \\times 3^2 \\times 5$$",
+  "workedExamples": [
+   {
+    "question": "Write $504$ as a product of its prime factors. Give your answer in index form.",
+    "solution": "Keep dividing by primes (a factor tree gives the same result):\n$$504 = 2 \\times 252 = 2 \\times 2 \\times 126 = 2 \\times 2 \\times 2 \\times 63$$\n\n$63 = 3 \\times 21 = 3 \\times 3 \\times 7$\n\nSo $504 = 2 \\times 2 \\times 2 \\times 3 \\times 3 \\times 7$, and in index form\n$$504 = 2^3 \\times 3^2 \\times 7$$\n\nCheck: $8 \\times 9 \\times 7 = 504$ ✓"
+   },
+   {
+    "question": "Is $91$ a prime number? Explain your answer.",
+    "solution": "Only primes up to $\\sqrt{91} \\approx 9.5$ need testing: 2, 3, 5, 7.\n\n91 is odd (not divisible by 2), its digit sum is 10 (not divisible by 3), it does not end in 0 or 5.\n\n$91 \\div 7 = 13$, so $91 = 7 \\times 13$.\n\n91 has factors other than 1 and itself, so it is **not** prime."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks 1 is a prime number.",
+    "correction": "A prime has exactly two different factors. 1 has only one factor (itself), so it is not prime. The smallest prime is 2."
+   },
+   {
+    "id": "m2",
+    "text": "Confuses factors and multiples, e.g. lists the factors of 12 as $12, 24, 36, \\ldots$",
+    "correction": "Factors go **into** the number (they are no bigger than it): 1, 2, 3, 4, 6, 12. Multiples come **out of** the times table: 12, 24, 36, …"
+   },
+   {
+    "id": "m3",
+    "text": "Thinks every odd number is prime, e.g. says 51 or 91 is prime.",
+    "correction": "Test small primes: $51 = 3 \\times 17$ (digit sum 6) and $91 = 7 \\times 13$. Neither is prime."
+   },
+   {
+    "id": "m4",
+    "text": "Stops the factor tree too early and leaves a non-prime in the answer: $72 = 2^3 \\times 9$.",
+    "correction": "Every factor must be prime: $9 = 3 \\times 3$, so $72 = 2^3 \\times 3^2$."
+   }
+  ]
+ },
+ {
+  "id": "num-hcf-lcm",
+  "prerequisites": [
+   "num-factors-multiples-primes"
+  ],
+  "keyIdea": "The **HCF** (highest common factor; US: GCF) is the largest number that divides both numbers. The **LCM** (lowest common multiple) is the smallest number both divide into.\n\nWrite each number as a product of primes and put them in a **Venn diagram**, shared primes in the overlap:\n$$60 = 2^2 \\times 3 \\times 5, \\qquad 84 = 2^2 \\times 3 \\times 7$$\nOverlap: $2, 2, 3$; only 60: $5$; only 84: $7$.\n\n* HCF = product of the overlap $= 2^2 \\times 3 = 12$\n* LCM = product of everything in the diagram $= 2^2 \\times 3 \\times 5 \\times 7 = 420$\n\nIn index form: HCF uses the **lowest** power of each shared prime, LCM the **highest** power of every prime. Check: $\\text{HCF} \\times \\text{LCM} = 60 \\times 84$.\n\n**In context:** splitting into the largest equal groups → HCF; \"when do they happen together again?\" → LCM.",
+  "workedExamples": [
+   {
+    "question": "Find (a) the HCF and (b) the LCM of $72$ and $120$.",
+    "solution": "Prime factorise:\n$$72 = 2^3 \\times 3^2, \\qquad 120 = 2^3 \\times 3 \\times 5$$\n\n(a) HCF: lowest power of each **shared** prime: $2^3 \\times 3 = 24$\n\n(b) LCM: highest power of **every** prime: $2^3 \\times 3^2 \\times 5 = 360$\n\nCheck: $24 \\times 360 = 8640$ and $72 \\times 120 = 8640$ ✓"
+   },
+   {
+    "question": "A number 12 bus leaves the station every 12 minutes and a number 18 bus every 18 minutes. Both leave at 9:00 am. When do they next leave together?",
+    "solution": "They leave together at times that are multiples of both 12 and 18 minutes, so find the LCM.\n\n$12 = 2^2 \\times 3$, $18 = 2 \\times 3^2$, so $\\text{LCM} = 2^2 \\times 3^2 = 36$.\n\n(Or list: 12, 24, **36**; 18, **36**.)\n\nThey next leave together 36 minutes later, at **9:36 am**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Swaps HCF and LCM, e.g. gives the HCF of 12 and 18 as 36.",
+    "correction": "The HCF must be a **factor** of both, so it cannot be bigger than the smaller number: HCF $= 6$. The LCM is a **multiple** of both: LCM $= 36$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks the LCM is always the product of the two numbers: $\\text{LCM}(12, 18) = 12 \\times 18 = 216$.",
+    "correction": "The product is a common multiple but not usually the lowest; it counts the shared factors twice. $\\text{LCM}(12, 18) = 36$ (since $216 \\div 6 = 36$)."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the highest powers for the HCF: HCF of $2^3 \\times 3$ and $2^2 \\times 3^2$ given as $2^3 \\times 3^2 = 72$.",
+    "correction": "The HCF must divide both numbers, so take the **lowest** power of each shared prime: $2^2 \\times 3 = 12$. Highest powers give the LCM, $72$."
+   },
+   {
+    "id": "m4",
+    "text": "In a Venn diagram, puts the shared primes in the outer regions as well as the overlap, so they are counted twice in the LCM: $\\text{LCM}(60, 84) = 2^2 \\times 3 \\times 2^2 \\times 3 \\times 5 \\times 7$.",
+    "correction": "Each prime factor appears **once** in the diagram: shared ones only in the overlap. $\\text{LCM}(60, 84) = 2^2 \\times 3 \\times 5 \\times 7 = 420$."
+   }
+  ]
+ },
+ {
+  "id": "num-powers-roots",
+  "prerequisites": [
+   "num-written-methods"
+  ],
+  "keyIdea": "**Square numbers:** $1, 4, 9, 16, 25, \\ldots, 225$. **Cube numbers:** $1, 8, 27, 64, 125$, and $1000$.\n\n**Index notation:** the index says how many times the base is multiplied by itself:\n$$5^3 = 5 \\times 5 \\times 5 = 125 \\quad (\\text{not } 5 \\times 3)$$\n\n**Roots undo powers:** $\\sqrt{49} = 7$ because $7^2 = 49$; $\\sqrt[3]{64} = 4$ because $4^3 = 64$. A positive number has two square roots ($\\pm 7$), but the $\\sqrt{\\ }$ sign means the positive one. A negative number squared is positive: $(-6)^2 = 36$. A cube root of a negative number is negative: $\\sqrt[3]{-64} = -4$.\n\n**Estimating roots:** find the square numbers either side. $49 < 50 < 64$, so $7 < \\sqrt{50} < 8$, and $50$ is much nearer $49$, so $\\sqrt{50} \\approx 7.1$.",
+  "workedExamples": [
+   {
+    "question": "Without a calculator, estimate $\\sqrt{90}$ to 1 decimal place.",
+    "solution": "Square numbers either side: $81 < 90 < 100$, so $9 < \\sqrt{90} < 10$.\n\nTry values: $9.4^2 = 88.36$ and $9.5^2 = 90.25$, so $9.4 < \\sqrt{90} < 9.5$.\n\nTo decide which way to round, test the halfway value: $9.45^2 = 89.3025 < 90$, so $\\sqrt{90} > 9.45$.\n\n$$\\sqrt{90} \\approx 9.5 \\text{ (1 d.p.)}$$"
+   },
+   {
+    "question": "Work out $2^5 - \\sqrt[3]{27} + 4^2$.",
+    "solution": "$2^5 = 2 \\times 2 \\times 2 \\times 2 \\times 2 = 32$\n\n$\\sqrt[3]{27} = 3$ because $3^3 = 27$\n\n$4^2 = 16$\n\n$$32 - 3 + 16 = 45$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies the base by the index: $3^4 = 12$.",
+    "correction": "The index counts repeated multiplication: $3^4 = 3 \\times 3 \\times 3 \\times 3 = 81$."
+   },
+   {
+    "id": "m2",
+    "text": "Halves instead of square rooting: $\\sqrt{36} = 18$.",
+    "correction": "The square root is the number that multiplies by **itself** to give 36: $6 \\times 6 = 36$, so $\\sqrt{36} = 6$. (Check: $18 \\times 18 = 324$.)"
+   },
+   {
+    "id": "m3",
+    "text": "Thinks squaring a negative gives a negative: $(-5)^2 = -25$.",
+    "correction": "$(-5)^2 = (-5) \\times (-5) = 25$, since negative times negative is positive. (Without brackets, $-5^2 = -25$.)"
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a cube root of a negative number does not exist: \"$\\sqrt[3]{-125}$ has no answer\".",
+    "correction": "$(-5)^3 = (-5) \\times (-5) \\times (-5) = -125$, so $\\sqrt[3]{-125} = -5$. It is only square roots of negatives that have no real value."
+   }
+  ]
+ },
+ {
+  "id": "num-index-laws",
+  "prerequisites": [
+   "num-powers-roots",
+   "alg-notation-simplifying",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "For powers of the **same base**:\n$$a^m \\times a^n = a^{m+n}, \\qquad a^m \\div a^n = a^{m-n}, \\qquad (a^m)^n = a^{mn}, \\qquad a^0 = 1 \\ (a \\ne 0)$$\n\nWhy: $2^3 \\times 2^4 = (2 \\times 2 \\times 2) \\times (2 \\times 2 \\times 2 \\times 2) = 2^7$, so the indices add. The zero index comes from $a^3 \\div a^3 = a^0$, and anything divided by itself is 1.\n\nThe laws need the same base: $2^3 \\times 3^2$ cannot be combined, and $2^3 \\times 2^4 = 2^7$, not $4^7$.\n\n**With algebra:** multiply or divide the numbers, apply the laws to the powers:\n$$3x^4 \\times 5x^2 = 15x^6, \\qquad \\frac{12a^7}{4a^2} = 3a^5$$\nA power of a bracket applies to **everything** inside: $(2y^3)^4 = 2^4 y^{12} = 16y^{12}$.",
+  "workedExamples": [
+   {
+    "question": "Write $\\dfrac{5^6 \\times 5^3}{5^4}$ as a single power of 5.",
+    "solution": "Numerator: same base, add the indices: $5^6 \\times 5^3 = 5^{9}$\n\nDivide: subtract the indices: $5^9 \\div 5^4 = 5^{5}$\n\n$$\\frac{5^6 \\times 5^3}{5^4} = 5^5$$"
+   },
+   {
+    "question": "Simplify $\\dfrac{(2x^3)^4 \\times 3x^2}{6x^5}$.",
+    "solution": "Power of a bracket — apply to the 2 and to $x^3$: $(2x^3)^4 = 2^4 x^{12} = 16x^{12}$\n\nMultiply: $16x^{12} \\times 3x^2 = 48x^{14}$\n\nDivide numbers and subtract indices: $\\dfrac{48x^{14}}{6x^5} = 8x^{9}$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies the indices when multiplying powers: $a^3 \\times a^4 = a^{12}$.",
+    "correction": "Write it out: $a^3 \\times a^4 = (aaa)(aaaa) = a^7$. Add the indices when multiplying; multiply them only for a power of a power, $(a^3)^4 = a^{12}$."
+   },
+   {
+    "id": "m2",
+    "text": "Multiplies the bases as well: $2^3 \\times 2^4 = 4^7$.",
+    "correction": "The base stays the same: $2^3 \\times 2^4 = 2^7 = 128$, whereas $4^7 = 16\\,384$."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the power to the letter but not the number: $(3x^2)^3 = 3x^6$.",
+    "correction": "The power applies to every factor in the bracket: $(3x^2)^3 = 3^3 \\times x^6 = 27x^6$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a zero index gives 0, or leaves the base unchanged: $5^0 = 0$ or $5^0 = 5$.",
+    "correction": "$5^0 = 5^2 \\div 5^2 = 25 \\div 25 = 1$. Any non-zero number to the power 0 is 1."
+   }
+  ]
+ },
+ {
+  "id": "num-negative-fractional-indices",
+  "prerequisites": [
+   "num-index-laws",
+   "num-powers-roots",
+   "num-fractions-multiply-divide"
+  ],
+  "keyIdea": "**Negative index = reciprocal**, not a negative number:\n$$a^{-n} = \\frac{1}{a^n}, \\qquad 2^{-3} = \\frac{1}{8}, \\qquad \\left(\\frac{2}{3}\\right)^{-1} = \\frac{3}{2}$$\n\n**Fractional index = root:** $a^{\\frac{1}{n}} = \\sqrt[n]{a}$, and\n$$a^{\\frac{m}{n}} = \\left(\\sqrt[n]{a}\\right)^m$$\nThe denominator is the root, the numerator the power; rooting first keeps numbers small: $27^{\\frac{2}{3}} = 3^2 = 9$.\n\n**Combined:** deal with the minus (flip), then the root, then the power:\n$$\\left(\\frac{16}{81}\\right)^{-\\frac{3}{4}} = \\left(\\frac{81}{16}\\right)^{\\frac{3}{4}} = \\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8}$$\n\nThe index laws still hold: $x^{\\frac{1}{2}} \\times x^{-2} = x^{-\\frac{3}{2}}$. Rational exponents and radicals (US) are interchangeable: $x^{\\frac{3}{2}} = \\sqrt{x^3} = (\\sqrt{x})^3$. Also $a^0 = 1$.",
+  "workedExamples": [
+   {
+    "question": "Find the exact value of $32^{-\\frac{3}{5}}$.",
+    "solution": "Negative index — take the reciprocal:\n$$32^{-\\frac{3}{5}} = \\frac{1}{32^{\\frac{3}{5}}}$$\n\nDenominator 5 means fifth root: $\\sqrt[5]{32} = 2$ (since $2^5 = 32$)\n\nNumerator 3 means cube: $2^3 = 8$\n\n$$32^{-\\frac{3}{5}} = \\frac{1}{8}$$"
+   },
+   {
+    "question": "Write $\\dfrac{x^3 \\sqrt{x}}{x^{-2}}$ as a single power of $x$, then as a radical.",
+    "solution": "Write the root as a power: $\\sqrt{x} = x^{\\frac{1}{2}}$\n\nNumerator: add indices: $x^3 \\times x^{\\frac{1}{2}} = x^{\\frac{7}{2}}$\n\nDivide: subtract indices: $\\dfrac{x^{\\frac{7}{2}}}{x^{-2}} = x^{\\frac{7}{2} - (-2)} = x^{\\frac{11}{2}}$\n\nAs a radical: $x^{\\frac{11}{2}} = \\sqrt{x^{11}}$ (or $(\\sqrt{x})^{11}$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks a negative index makes the answer negative: $2^{-3} = -8$.",
+    "correction": "A negative index means reciprocal: $2^{-3} = \\dfrac{1}{2^3} = \\dfrac{1}{8}$, which is positive."
+   },
+   {
+    "id": "m2",
+    "text": "Treats a fractional index as division (or multiplication): $16^{\\frac{1}{2}} = 8$.",
+    "correction": "The power $\\frac{1}{2}$ means square root: $16^{\\frac{1}{2}} = \\sqrt{16} = 4$."
+   },
+   {
+    "id": "m3",
+    "text": "Swaps the roles of numerator and denominator: $8^{\\frac{2}{3}} = \\sqrt{8^3} = \\sqrt{512} \\approx 22.6$.",
+    "correction": "The denominator is the root and the numerator is the power: $8^{\\frac{2}{3}} = (\\sqrt[3]{8})^2 = 2^2 = 4$."
+   },
+   {
+    "id": "m4",
+    "text": "With a negative fractional index, flips the index instead of the base: $9^{-\\frac{1}{2}} = 9^{2} = 81$.",
+    "correction": "The minus sign means reciprocal of the **base**: $9^{-\\frac{1}{2}} = \\dfrac{1}{9^{\\frac{1}{2}}} = \\dfrac{1}{3}$."
+   }
+  ]
+ },
+ {
+  "id": "num-standard-form",
+  "prerequisites": [
+   "num-place-value-ordering",
+   "num-index-laws",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "**Standard form** (US: scientific notation) is $A \\times 10^n$ with $1 \\le A < 10$ and $n$ an integer.\n\nLarge numbers have a positive power: $45\\,000\\,000 = 4.5 \\times 10^7$. Numbers less than 1 have a negative power: $0.00062 = 6.2 \\times 10^{-4}$ (the 6 is 4 places right of the units column).\n\n**Ordering:** compare the powers first, then the values of $A$.\n\n**Multiply/divide:** deal with the numbers and the powers of 10 separately (index laws), then re-adjust so $1 \\le A < 10$:\n$$(3 \\times 10^4) \\times (5 \\times 10^6) = 15 \\times 10^{10} = 1.5 \\times 10^{11}$$\n\n**Add/subtract:** make the powers the same first (or convert to ordinary numbers):\n$$3.2 \\times 10^5 + 4 \\times 10^4 = 3.2 \\times 10^5 + 0.4 \\times 10^5 = 3.6 \\times 10^5$$",
+  "workedExamples": [
+   {
+    "question": "Work out $(6 \\times 10^{5}) \\div (8 \\times 10^{-3})$. Give your answer in standard form.",
+    "solution": "Divide the numbers: $6 \\div 8 = 0.75$\n\nDivide the powers (subtract indices): $10^{5} \\div 10^{-3} = 10^{5 - (-3)} = 10^{8}$\n\nSo the answer is $0.75 \\times 10^8$, but $0.75 < 1$. Re-adjust: $0.75 = 7.5 \\times 10^{-1}$, so\n$$0.75 \\times 10^8 = 7.5 \\times 10^{7}$$"
+   },
+   {
+    "question": "Write in order of size, smallest first: $4.2 \\times 10^{-3}$, $0.0039$, $3.9 \\times 10^{-2}$, $4.15 \\times 10^{-3}$",
+    "solution": "Convert to standard form: $0.0039 = 3.9 \\times 10^{-3}$.\n\nThe smallest power is $10^{-3}$; three numbers have it: $3.9$, $4.15$, $4.2$ — in that order.\n\n$3.9 \\times 10^{-2} = 0.039$ is the largest (bigger power).\n\n**Order:** $0.0039,\\ 4.15 \\times 10^{-3},\\ 4.2 \\times 10^{-3},\\ 3.9 \\times 10^{-2}$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Leaves $A$ outside the range $1 \\le A < 10$, e.g. gives $15 \\times 10^{10}$ or $0.75 \\times 10^{8}$ as a final answer.",
+    "correction": "Re-adjust: $15 \\times 10^{10} = 1.5 \\times 10^{11}$ and $0.75 \\times 10^8 = 7.5 \\times 10^7$. Making $A$ bigger by a factor of 10 makes the power one smaller, and vice versa."
+   },
+   {
+    "id": "m2",
+    "text": "Counts the zeros after the decimal point to get the power: $0.00062 = 6.2 \\times 10^{-3}$.",
+    "correction": "Count how many places the digits move so that $A$ is $6.2$: the 6 moves 4 places, so $0.00062 = 6.2 \\times 10^{-4}$. Check: $6.2 \\div 10\\,000 = 0.00062$."
+   },
+   {
+    "id": "m3",
+    "text": "Adds the powers when adding numbers: $(2 \\times 10^3) + (3 \\times 10^4) = 5 \\times 10^7$.",
+    "correction": "Index laws apply to multiplying, not adding. Convert: $2000 + 30\\,000 = 32\\,000 = 3.2 \\times 10^4$."
+   },
+   {
+    "id": "m4",
+    "text": "Orders by the value of $A$ only: thinks $9 \\times 10^3 > 2 \\times 10^5$ because $9 > 2$.",
+    "correction": "Compare powers first: $9 \\times 10^3 = 9000$ and $2 \\times 10^5 = 200\\,000$, so $2 \\times 10^5$ is larger."
+   }
+  ]
+ },
+ {
+  "id": "num-fractions-equivalence",
+  "prerequisites": [
+   "num-factors-multiples-primes",
+   "num-written-methods"
+  ],
+  "keyIdea": "Multiplying or dividing the numerator and denominator by the **same** number gives an equivalent fraction: $\\frac{3}{4} = \\frac{15}{20}$. Adding the same number to both does **not**.\n\n**Simplest form:** divide top and bottom by their HCF: $\\frac{24}{36} = \\frac{2}{3}$ (HCF 12). If you divide by a smaller common factor, keep going until no common factor is left.\n\n**Improper fractions and mixed numbers:** $\\frac{17}{5} = 3\\frac{2}{5}$ (because $17 \\div 5 = 3$ remainder 2); $4\\frac{2}{3} = \\frac{4 \\times 3 + 2}{3} = \\frac{14}{3}$.\n\n**Ordering:** write all fractions with a common denominator (or convert to decimals), then compare numerators. For $\\frac{3}{5}, \\frac{2}{3}, \\frac{7}{12}$ use sixtieths: $\\frac{36}{60}, \\frac{40}{60}, \\frac{35}{60}$, so $\\frac{7}{12} < \\frac{3}{5} < \\frac{2}{3}$. With equal numerators, a bigger denominator means a **smaller** fraction.",
+  "workedExamples": [
+   {
+    "question": "Write in order, smallest first: $\\frac{5}{6}$, $\\frac{3}{4}$, $\\frac{7}{9}$, $\\frac{2}{3}$",
+    "solution": "The LCM of 6, 4, 9 and 3 is 36, so write each in thirty-sixths:\n$$\\frac{5}{6} = \\frac{30}{36}, \\quad \\frac{3}{4} = \\frac{27}{36}, \\quad \\frac{7}{9} = \\frac{28}{36}, \\quad \\frac{2}{3} = \\frac{24}{36}$$\n\nCompare numerators: $24 < 27 < 28 < 30$.\n\n**Order:** $\\frac{2}{3},\\ \\frac{3}{4},\\ \\frac{7}{9},\\ \\frac{5}{6}$"
+   },
+   {
+    "question": "(a) Write $\\frac{42}{56}$ in its simplest form. (b) Write $\\frac{23}{6}$ as a mixed number.",
+    "solution": "(a) $42 = 2 \\times 3 \\times 7$ and $56 = 2^3 \\times 7$, so the HCF is $2 \\times 7 = 14$.\n$$\\frac{42}{56} = \\frac{42 \\div 14}{56 \\div 14} = \\frac{3}{4}$$\n\n(b) $23 \\div 6 = 3$ remainder $5$, so\n$$\\frac{23}{6} = 3\\frac{5}{6}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the same number to the numerator and denominator: $\\frac{2}{3} = \\frac{4}{5}$ (adding 2 to each).",
+    "correction": "Only multiplying or dividing both keeps the value. $\\frac{2}{3} \\approx 0.667$ but $\\frac{4}{5} = 0.8$. Multiply by 2 instead: $\\frac{2}{3} = \\frac{4}{6}$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks a bigger denominator means a bigger fraction: $\\frac{1}{8} > \\frac{1}{5}$.",
+    "correction": "The denominator is how many equal parts the whole is cut into; more parts means smaller parts. $\\frac{1}{8} < \\frac{1}{5}$."
+   },
+   {
+    "id": "m3",
+    "text": "Converts a mixed number by multiplying the whole number by the numerator: $2\\frac{3}{4} = \\frac{2 \\times 3}{4} = \\frac{6}{4}$.",
+    "correction": "Each whole is $\\frac{4}{4}$, so 2 wholes are $\\frac{8}{4}$; add the $\\frac{3}{4}$: $2\\frac{3}{4} = \\frac{2 \\times 4 + 3}{4} = \\frac{11}{4}$."
+   },
+   {
+    "id": "m4",
+    "text": "Stops simplifying too early: gives $\\frac{24}{36} = \\frac{12}{18}$ as the simplest form.",
+    "correction": "12 and 18 still share the factor 6. Divide by the HCF (12) in one step: $\\frac{24}{36} = \\frac{2}{3}$."
+   }
+  ]
+ },
+ {
+  "id": "num-fractions-add-subtract",
+  "prerequisites": [
+   "num-fractions-equivalence",
+   "num-hcf-lcm"
+  ],
+  "keyIdea": "You can only add or subtract fractions with the **same denominator**. Use the LCM of the denominators, convert, then add the numerators (the denominator stays the same):\n$$\\frac{5}{6} + \\frac{3}{8} = \\frac{20}{24} + \\frac{9}{24} = \\frac{29}{24} = 1\\frac{5}{24}$$\n\n**Mixed numbers:** add the whole numbers and the fractions separately, or convert to improper fractions first (safer for subtraction):\n$$3\\tfrac{1}{4} - 1\\tfrac{2}{3} = \\frac{13}{4} - \\frac{5}{3} = \\frac{39}{12} - \\frac{20}{12} = \\frac{19}{12} = 1\\tfrac{7}{12}$$\n\n**In context:** to find what fraction is left, add the parts used and subtract from 1 whole. If $\\frac{1}{3}$ and $\\frac{2}{5}$ of a budget are spent, $\\frac{5}{15} + \\frac{6}{15} = \\frac{11}{15}$, so $\\frac{4}{15}$ is left. Then find that fraction of the amount.",
+  "workedExamples": [
+   {
+    "question": "Work out $2\\frac{3}{5} + 1\\frac{3}{4}$.",
+    "solution": "Add the whole numbers: $2 + 1 = 3$\n\nAdd the fractions using denominator 20:\n$$\\frac{3}{5} + \\frac{3}{4} = \\frac{12}{20} + \\frac{15}{20} = \\frac{27}{20} = 1\\frac{7}{20}$$\n\nCombine: $3 + 1\\frac{7}{20} = 4\\frac{7}{20}$"
+   },
+   {
+    "question": "Sam earns £1800 a month. He spends $\\frac{1}{4}$ on rent and $\\frac{2}{5}$ on bills and food. How much money does he have left?",
+    "solution": "Fraction spent: $\\dfrac{1}{4} + \\dfrac{2}{5} = \\dfrac{5}{20} + \\dfrac{8}{20} = \\dfrac{13}{20}$\n\nFraction left: $1 - \\dfrac{13}{20} = \\dfrac{7}{20}$\n\nAmount left: $\\dfrac{7}{20}$ of £1800: $1800 \\div 20 = 90$, and $90 \\times 7 = 630$.\n\nSam has **£630** left. (Check: rent £450, bills £720, $450 + 720 + 630 = 1800$ ✓)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the numerators and adds the denominators: $\\frac{1}{2} + \\frac{1}{3} = \\frac{2}{5}$.",
+    "correction": "$\\frac{2}{5}$ is less than $\\frac{1}{2}$, which cannot be right. Use a common denominator: $\\frac{3}{6} + \\frac{2}{6} = \\frac{5}{6}$."
+   },
+   {
+    "id": "m2",
+    "text": "Changes the denominators but not the numerators: $\\frac{2}{3} + \\frac{1}{4} = \\frac{2}{12} + \\frac{1}{12} = \\frac{3}{12}$.",
+    "correction": "Whatever the denominator is multiplied by, the numerator must be multiplied by too: $\\frac{2}{3} = \\frac{8}{12}$ and $\\frac{1}{4} = \\frac{3}{12}$, so the sum is $\\frac{11}{12}$."
+   },
+   {
+    "id": "m3",
+    "text": "When subtracting mixed numbers, takes the smaller fraction from the larger one: $3\\frac{1}{4} - 1\\frac{2}{3} = 2\\frac{5}{12}$ (working out $\\frac{2}{3} - \\frac{1}{4}$).",
+    "correction": "$\\frac{1}{4} - \\frac{2}{3}$ is negative, so exchange a whole or convert to improper fractions: $\\frac{39}{12} - \\frac{20}{12} = \\frac{19}{12} = 1\\frac{7}{12}$."
+   }
+  ]
+ },
+ {
+  "id": "num-fractions-multiply-divide",
+  "prerequisites": [
+   "num-fractions-equivalence",
+   "num-written-methods"
+  ],
+  "keyIdea": "**Multiply:** numerator times numerator, denominator times denominator; cancel common factors first to keep numbers small:\n$$\\frac{3}{4} \\times \\frac{8}{9} = \\frac{\\cancel{3}^{\\,1}}{\\cancel{4}_{\\,1}} \\times \\frac{\\cancel{8}^{\\,2}}{\\cancel{9}_{\\,3}} = \\frac{2}{3}$$\nA whole number $n$ is $\\frac{n}{1}$, so $3 \\times \\frac{2}{5} = \\frac{6}{5}$.\n\n**\"Of\" means multiply:** $\\frac{3}{5}$ of $40 = 40 \\div 5 \\times 3 = 24$.\n\n**Reciprocal:** flip the fraction; the reciprocal of $\\frac{a}{b}$ is $\\frac{b}{a}$, the reciprocal of $5$ is $\\frac{1}{5}$. A number times its reciprocal is 1.\n\n**Divide:** multiply by the reciprocal of the **second** fraction (keep, flip, change):\n$$\\frac{2}{3} \\div \\frac{4}{5} = \\frac{2}{3} \\times \\frac{5}{4} = \\frac{10}{12} = \\frac{5}{6}$$\n\n**Mixed numbers:** convert to improper fractions first: $1\\frac{1}{2} \\times 2\\frac{2}{3} = \\frac{3}{2} \\times \\frac{8}{3} = 4$.",
+  "workedExamples": [
+   {
+    "question": "Work out $2\\frac{1}{4} \\div 1\\frac{1}{8}$.",
+    "solution": "Convert to improper fractions: $2\\frac{1}{4} = \\frac{9}{4}$ and $1\\frac{1}{8} = \\frac{9}{8}$.\n\nKeep, flip, change:\n$$\\frac{9}{4} \\div \\frac{9}{8} = \\frac{9}{4} \\times \\frac{8}{9}$$\n\nCancel the 9s, and 8 with 4: $\\dfrac{1}{1} \\times \\dfrac{2}{1} = 2$\n\nSo $2\\frac{1}{4} \\div 1\\frac{1}{8} = 2$ (check: $2 \\times 1\\frac{1}{8} = 2\\frac{2}{8} = 2\\frac{1}{4}$ ✓)"
+   },
+   {
+    "question": "A ribbon is $7\\frac{1}{2}$ m long. It is cut into pieces each $\\frac{3}{4}$ m long. How many pieces are there?",
+    "solution": "\"How many $\\frac{3}{4}$s in $7\\frac{1}{2}$?\" means divide:\n$$7\\tfrac{1}{2} \\div \\tfrac{3}{4} = \\frac{15}{2} \\div \\frac{3}{4} = \\frac{15}{2} \\times \\frac{4}{3} = \\frac{60}{6} = 10$$\n\nThere are **10 pieces**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies mixed numbers by multiplying the whole numbers and the fractions separately: $1\\frac{1}{2} \\times 2\\frac{2}{3} = 2\\frac{2}{6} = 2\\frac{1}{3}$.",
+    "correction": "This misses the cross terms (as in expanding brackets). Convert first: $\\frac{3}{2} \\times \\frac{8}{3} = \\frac{24}{6} = 4$."
+   },
+   {
+    "id": "m2",
+    "text": "Flips the first fraction instead of the second when dividing: $\\frac{2}{3} \\div \\frac{4}{5} = \\frac{3}{2} \\times \\frac{4}{5} = \\frac{12}{10}$.",
+    "correction": "Keep the first, flip the **divisor**: $\\frac{2}{3} \\times \\frac{5}{4} = \\frac{10}{12} = \\frac{5}{6}$."
+   },
+   {
+    "id": "m3",
+    "text": "Multiplies both the numerator and denominator by a whole number: $3 \\times \\frac{2}{5} = \\frac{6}{15}$.",
+    "correction": "$\\frac{6}{15} = \\frac{2}{5}$, so nothing has changed. Write $3 = \\frac{3}{1}$: $\\frac{3}{1} \\times \\frac{2}{5} = \\frac{6}{5} = 1\\frac{1}{5}$."
+   },
+   {
+    "id": "m4",
+    "text": "Finds the reciprocal of a mixed number by flipping only the fraction part: reciprocal of $2\\frac{1}{3}$ is $2\\frac{3}{1} = 5$.",
+    "correction": "Convert to an improper fraction first: $2\\frac{1}{3} = \\frac{7}{3}$, so the reciprocal is $\\frac{3}{7}$. Check: $\\frac{7}{3} \\times \\frac{3}{7} = 1$."
+   }
+  ]
+ },
+ {
+  "id": "num-fdp-conversions",
+  "prerequisites": [
+   "num-fractions-equivalence",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "Per cent means \"out of 100\".\n\n* Decimal → percentage: $\\times 100$: $0.375 = 37.5\\%$. Percentage → decimal: $\\div 100$: $8\\% = 0.08$.\n* Fraction → decimal: divide the numerator by the denominator ($\\frac{3}{8} = 3 \\div 8 = 0.375$), or make the denominator 10, 100 or 1000: $\\frac{7}{25} = \\frac{28}{100} = 0.28$.\n* Decimal → fraction: use place value, then simplify: $0.65 = \\frac{65}{100} = \\frac{13}{20}$.\n\n**Ordering mixed forms:** convert everything to decimals (to the same number of places) and compare.\n\n**Terminating decimals:** a fraction **in its simplest form** gives a terminating decimal exactly when its denominator has no prime factors other than 2 and 5. So $\\frac{7}{40}$ terminates ($40 = 2^3 \\times 5$) but $\\frac{5}{12}$ recurs ($12 = 2^2 \\times 3$).",
+  "workedExamples": [
+   {
+    "question": "Write in order, smallest first: $\\frac{1}{3}$, $0.3$, $32\\%$, $\\frac{7}{20}$, $0.33$",
+    "solution": "Convert everything to decimals:\n$$\\tfrac{1}{3} = 0.333\\ldots, \\quad 0.3 = 0.300, \\quad 32\\% = 0.320, \\quad \\tfrac{7}{20} = \\tfrac{35}{100} = 0.350, \\quad 0.33 = 0.330$$\n\nCompare: $0.300 < 0.320 < 0.330 < 0.333\\ldots < 0.350$\n\n**Order:** $0.3,\\ 32\\%,\\ 0.33,\\ \\frac{1}{3},\\ \\frac{7}{20}$"
+   },
+   {
+    "question": "(a) Write $\\frac{3}{8}$ as a decimal and as a percentage. (b) Write $0.045$ as a fraction in its simplest form.",
+    "solution": "(a) Short division: $3.000 \\div 8 = 0.375$\n\nAs a percentage: $0.375 \\times 100 = 37.5\\%$\n\n(b) The last digit is in the thousandths column:\n$$0.045 = \\frac{45}{1000} = \\frac{9}{200}$$\n(dividing top and bottom by 5)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Writes the digits of the fraction as a decimal: $\\frac{3}{5} = 0.35$.",
+    "correction": "$\\frac{3}{5}$ means $3 \\div 5 = 0.6$ (or $\\frac{3}{5} = \\frac{6}{10}$)."
+   },
+   {
+    "id": "m2",
+    "text": "Converts a decimal to a percentage by just dropping the point: $0.7 = 7\\%$.",
+    "correction": "Multiply by 100: $0.7 = 0.70 = 70\\%$. Check: $7\\% = 0.07$, which is ten times smaller."
+   },
+   {
+    "id": "m3",
+    "text": "Divides the denominator by the numerator: $\\frac{3}{8} = 8 \\div 3 = 2.67$.",
+    "correction": "The fraction bar means numerator $\\div$ denominator: $\\frac{3}{8} = 3 \\div 8 = 0.375$. A proper fraction is always less than 1."
+   },
+   {
+    "id": "m4",
+    "text": "Decides whether a decimal terminates without simplifying first, e.g. says $\\frac{3}{12}$ recurs because 12 has a factor of 3.",
+    "correction": "Simplify first: $\\frac{3}{12} = \\frac{1}{4}$, and $4 = 2^2$, so it terminates: $0.25$."
+   }
+  ]
+ },
+ {
+  "id": "num-rounding",
+  "prerequisites": [
+   "num-place-value-ordering"
+  ],
+  "keyIdea": "Look at the digit **after** the last one you keep: 5 or more → round up; 4 or less → leave it. Then fill in zeros so the number keeps its size.\n\n* **Nearest 10/100/1000:** $3462 \\approx 3500$ (nearest 100).\n* **Decimal places** count digits after the point: $7.2849 = 7.28$ (2 d.p.).\n* **Significant figures** count from the first **non-zero** digit: $0.004729 = 0.0047$ (2 s.f.), $38\\,472 = 38\\,000$ (2 s.f.). Zeros needed to keep the place value must stay.\n* A trailing zero can be significant: $2.997 = 3.00$ (3 s.f.).\n\n**Appropriate accuracy:** do not round in the middle of a calculation; round only the final answer. Money goes to 2 d.p.; a final answer is usually given to 3 s.f. or to the accuracy the question asks for; an answer should not be more accurate than the data.",
+  "workedExamples": [
+   {
+    "question": "Round $46\\,952.76$ to (a) 1 decimal place (b) 3 significant figures (c) 1 significant figure. (d) Round $0.003058$ to 2 significant figures.",
+    "solution": "(a) Keep one digit after the point: $46\\,952.7|6$ — the next digit is 6, so round up: $46\\,952.8$\n\n(b) The first three significant figures are 4, 6, 9: $469|52.76$ — the next digit is 5, so round up to 470 and keep the size: $47\\,000$\n\n(c) First significant figure is the 4 (ten thousands): $4|6952.76$ — next digit 6, round up: $50\\,000$\n\n(d) The first significant figure is the 3; leading zeros don't count. $0.0030|58$ — the next digit is 5, so round up: $0.0031$"
+   },
+   {
+    "question": "Round $9.996$ to (a) 3 significant figures (b) 2 decimal places.",
+    "solution": "(a) $9.99|6$ — next digit 6, so round up. $9.99 + 0.01 = 10.00$, which to 3 s.f. is written $10.0$ (the final 0 is significant and must be shown).\n\n(b) $9.99|6$ to 2 d.p. also rounds up: $10.00$ (two decimal places must be shown)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Counts leading zeros as significant figures: $0.004729$ to 2 s.f. written as $0.0$ or $0.00$.",
+    "correction": "Significant figures start at the first non-zero digit (the 4): $0.004729 = 0.0047$ (2 s.f.)."
+   },
+   {
+    "id": "m2",
+    "text": "Drops the place-holder zeros: $38\\,472$ to 2 s.f. written as $38$.",
+    "correction": "The answer must stay roughly the same size; fill the remaining places with zeros: $38\\,472 \\approx 38\\,000$."
+   },
+   {
+    "id": "m3",
+    "text": "Rounds in a chain from the right: $3.448$ to 1 d.p. → $3.45$ → $3.5$.",
+    "correction": "Look only at the digit immediately after the one you keep: $3.4|48$ — the next digit is 4, so $3.448 = 3.4$ (1 d.p.)."
+   },
+   {
+    "id": "m4",
+    "text": "Drops a significant trailing zero: $2.997$ to 3 s.f. written as $3$.",
+    "correction": "Three significant figures must be shown: $2.997 = 3.00$ (3 s.f.). Writing $3$ would suggest only 1 s.f. accuracy."
+   }
+  ]
+ },
+ {
+  "id": "num-estimation",
+  "prerequisites": [
+   "num-rounding",
+   "num-order-of-operations",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "To **estimate**, round every number to **1 significant figure**, then calculate, using $\\approx$:\n$$\\frac{48.7 \\times 3.12}{0.52} \\approx \\frac{50 \\times 3}{0.5} = \\frac{150}{0.5} = 300$$\nDividing by $0.5$ doubles the number (how many halves?). Sometimes a friendlier value is better: $\\sqrt{63.8} \\approx \\sqrt{64} = 8$.\n\n**Over- or underestimate?** Rounding a number you multiply (or a numerator) **up** makes the estimate bigger; rounding a **divisor** up makes the estimate **smaller**. If the roundings pull in different directions you cannot tell without calculating.\n\n**Checking:** compare a calculator answer with the estimate — if you get $29.2$ but the estimate is $300$, a key was pressed wrongly (the actual answer is $292.2$).",
+  "workedExamples": [
+   {
+    "question": "Estimate the value of $\\dfrac{6.92 \\times 198}{0.487}$. Can you tell whether your estimate is too big or too small?",
+    "solution": "Round each number to 1 significant figure:\n$$\\frac{6.92 \\times 198}{0.487} \\approx \\frac{7 \\times 200}{0.5} = \\frac{1400}{0.5} = 2800$$\n\nDirections: $6.92 \\to 7$ and $198 \\to 200$ were rounded up (makes the estimate bigger); $0.487 \\to 0.5$ is a divisor rounded up (makes it smaller).\n\nThe effects pull in opposite directions, so we **cannot tell** from the rounding alone. (The exact value is about $2813$, so here it is a slight underestimate.)"
+   },
+   {
+    "question": "Estimate $28.7 \\times 4.6$ and state whether your estimate is an overestimate or an underestimate.",
+    "solution": "Round to 1 s.f.: $28.7 \\approx 30$ and $4.6 \\approx 5$\n$$28.7 \\times 4.6 \\approx 30 \\times 5 = 150$$\n\nBoth numbers were rounded **up**, and both are multiplied, so the estimate is an **overestimate**. (Exact value: $132.02$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Rounds to the nearest whole number instead of 1 significant figure, e.g. rounds the divisor $0.487$ to $0$.",
+    "correction": "Round to 1 significant figure: the first non-zero digit is the 4 in the tenths column, so $0.487 \\approx 0.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Halves when dividing by $0.5$: $1400 \\div 0.5 = 700$.",
+    "correction": "Dividing by $0.5$ asks how many halves are in 1400, which is double: $1400 \\div 0.5 = 2800$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks rounding a number up always gives an overestimate, even when it is the divisor: $\\frac{60}{3.7} \\approx \\frac{60}{4} = 15$, \"an overestimate because 3.7 was rounded up\".",
+    "correction": "Dividing by a bigger number gives a smaller answer, so this is an **underestimate** (the actual value is about $16.2$)."
+   },
+   {
+    "id": "m4",
+    "text": "Works out the exact answer on a calculator and then rounds it, instead of estimating: \"$\\frac{48.7 \\times 3.12}{0.52} = 292.2 \\approx 290$\".",
+    "correction": "An estimate rounds the **inputs** first, so it can be done mentally and used to check: $\\frac{50 \\times 3}{0.5} = 300$."
+   }
+  ]
+ },
+ {
+  "id": "num-error-intervals",
+  "prerequisites": [
+   "num-rounding",
+   "alg-linear-inequalities"
+  ],
+  "keyIdea": "A rounded value could really be up to **half a unit** either side, where the unit is the accuracy used.\n\nIf $x = 7.4$ to 1 d.p., the unit is $0.1$, half of it is $0.05$:\n$$7.35 \\le x < 7.45$$\nThe lower bound is **included** ($\\le$) because $7.35$ rounds up to $7.4$; the upper bound is **excluded** ($<$) because $7.45$ would round to $7.5$.\n\nFor significant figures, find the unit first: $m = 3400$ to 2 s.f. has unit 100, so $3350 \\le m < 3450$.\n\n**Truncation** chops off digits without rounding, so the true value can be up to a whole unit **above** (never below): if $y$ truncated to 1 d.p. is $5.2$, then\n$$5.2 \\le y < 5.3$$\nAlways write the answer as an inequality $a \\le x < b$.",
+  "workedExamples": [
+   {
+    "question": "(a) The length $l$ cm of a pencil is 12 cm to the nearest cm. (b) The mass $m$ kg of a bag is 0.38 kg to 2 decimal places. Write down the error interval for each.",
+    "solution": "(a) Unit 1 cm, half a unit 0.5 cm:\n$$11.5 \\le l < 12.5$$\n\n(b) Unit 0.01 kg, half a unit 0.005 kg:\n$$0.375 \\le m < 0.385$$"
+   },
+   {
+    "question": "(a) A number $t$ is truncated to 1 decimal place. The result is 2.7. Write down the error interval for $t$. (b) A number $p$ rounded to 1 significant figure is 80. Write down the error interval for $p$.",
+    "solution": "(a) Truncation removes digits, so $t$ is at least $2.7$ but less than $2.8$ (anything from $2.7$ to $2.7999\\ldots$ truncates to $2.7$):\n$$2.7 \\le t < 2.8$$\n\n(b) 80 to 1 s.f. has unit 10, so half a unit is 5:\n$$75 \\le p < 85$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses $\\le$ at both ends: $7.35 \\le x \\le 7.45$.",
+    "correction": "$7.45$ rounds to $7.5$, not $7.4$, so it is not allowed: $7.35 \\le x < 7.45$."
+   },
+   {
+    "id": "m2",
+    "text": "Goes a whole unit either side instead of half: $x = 7.4$ (1 d.p.) gives $7.3 \\le x < 7.5$.",
+    "correction": "Numbers such as $7.32$ round to $7.3$, not $7.4$. Use half the unit, $0.05$: $7.35 \\le x < 7.45$."
+   },
+   {
+    "id": "m3",
+    "text": "Treats truncation like rounding: $y$ truncated to 1 d.p. is $5.2$, so writes $5.15 \\le y < 5.25$.",
+    "correction": "Truncation only removes digits, so $y$ cannot be below $5.2$: $5.2 \\le y < 5.3$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the wrong unit for significant figures: $m = 3400$ to 2 s.f. gives $3399.5 \\le m < 3400.5$.",
+    "correction": "2 s.f. here means to the nearest 100, so half a unit is 50: $3350 \\le m < 3450$."
+   }
+  ]
+ },
+ {
+  "id": "num-bounds-calculations",
+  "prerequisites": [
+   "num-error-intervals",
+   "num-decimals-operations"
+  ],
+  "keyIdea": "First find the lower bound (LB) and upper bound (UB) of each measurement (half a unit either side). Then choose the combination that makes the result as large or as small as possible:\n\n| Calculation | Upper bound | Lower bound |\n|---|---|---|\n| $a + b$ | $\\text{UB}_a + \\text{UB}_b$ | $\\text{LB}_a + \\text{LB}_b$ |\n| $a - b$ | $\\text{UB}_a - \\text{LB}_b$ | $\\text{LB}_a - \\text{UB}_b$ |\n| $a \\times b$ | $\\text{UB}_a \\times \\text{UB}_b$ | $\\text{LB}_a \\times \\text{LB}_b$ |\n| $a \\div b$ | $\\text{UB}_a \\div \\text{LB}_b$ | $\\text{LB}_a \\div \\text{UB}_b$ |\n\nTo make a difference or quotient big, take away or divide by something **small**.\n\n**Appropriate degree of accuracy:** round the LB and UB to fewer and fewer significant figures until they agree. If $\\text{LB} = 4.2617$ and $\\text{UB} = 4.2683$, at 3 s.f. they give $4.26$ and $4.27$ (disagree), at 2 s.f. both give $4.3$, so the answer is $4.3$ (2 s.f.).",
+  "workedExamples": [
+   {
+    "question": "A rectangle is 8.4 cm long and 5.7 cm wide, both measured to 1 decimal place. Find the upper and lower bounds of its area.",
+    "solution": "Bounds of each length (half of 0.1 is 0.05):\n$$8.35 \\le l < 8.45, \\qquad 5.65 \\le w < 5.75$$\n\nUpper bound of area $= 8.45 \\times 5.75 = 48.5875\\ \\text{cm}^2$\n\nLower bound of area $= 8.35 \\times 5.65 = 47.1775\\ \\text{cm}^2$"
+   },
+   {
+    "question": "A runner covers 248 m (to the nearest metre) in 31.6 s (to 1 decimal place). Work out her average speed to a suitable degree of accuracy. Give a reason for your answer.",
+    "solution": "Bounds: $247.5 \\le d < 248.5$ and $31.55 \\le t < 31.65$\n\nSpeed $= d \\div t$.\n\nUpper bound: biggest distance ÷ smallest time $= 248.5 \\div 31.55 = 7.8763\\ldots$ m/s\n\nLower bound: smallest distance ÷ biggest time $= 247.5 \\div 31.65 = 7.8199\\ldots$ m/s\n\nTo 2 s.f.: $7.9$ and $7.8$ — these disagree. To 1 s.f.: $8$ and $8$ — these agree.\n\nSpeed $= 8$ m/s (1 s.f.), because the upper and lower bounds both round to 8 to 1 s.f. but not to the same value to 2 s.f."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides upper bound by upper bound to get the upper bound of a quotient: $\\text{UB of speed} = 248.5 \\div 31.65$.",
+    "correction": "Dividing by a smaller number gives a bigger answer, so use the **lower** bound of the divisor: $248.5 \\div 31.55 = 7.876\\ldots$"
+   },
+   {
+    "id": "m2",
+    "text": "Subtracts upper bound from upper bound to get the upper bound of a difference: $\\text{UB of } (a - b) = \\text{UB}_a - \\text{UB}_b$.",
+    "correction": "To make a difference as large as possible, subtract as little as possible: $\\text{UB}_a - \\text{LB}_b$. E.g. $a = 50$, $b = 30$ (nearest 10): $\\text{UB} = 55 - 25 = 30$, not $55 - 35 = 20$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses a value such as $248.49$ or $248.4\\dot{9}$ for the upper bound instead of $248.5$, because the upper bound is \"not allowed\".",
+    "correction": "In calculations the upper bound is taken as the limit $248.5$ itself; the strict inequality only matters when writing the error interval $247.5 \\le d < 248.5$."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the answer to 3 s.f. (e.g. $7.85$ m/s) without checking that the upper and lower bounds agree to that accuracy.",
+    "correction": "A suitable accuracy is one where LB and UB round to the same value. Here $7.88$ and $7.82$ (3 s.f.) and $7.9$ and $7.8$ (2 s.f.) disagree; only 1 s.f. works, so the answer is $8$ m/s."
+   }
+  ]
+ },
+ {
+  "id": "num-surds",
+  "prerequisites": [
+   "num-powers-roots",
+   "num-factors-multiples-primes",
+   "num-rational-irrational",
+   "alg-expand-double-triple"
+  ],
+  "keyIdea": "A **surd** (US: radical in simplest radical form) is an irrational root such as $\\sqrt{2}$, left exact. Key rules:\n$$\\sqrt{ab} = \\sqrt{a}\\sqrt{b}, \\qquad \\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}, \\qquad \\sqrt{a} \\times \\sqrt{a} = a$$\n\n**Simplify** by taking out the **largest square factor**: $\\sqrt{72} = \\sqrt{36}\\sqrt{2} = 6\\sqrt{2}$.\n\n**Add/subtract** only like surds: $3\\sqrt{5} + \\sqrt{20} = 3\\sqrt{5} + 2\\sqrt{5} = 5\\sqrt{5}$, but $\\sqrt{2} + \\sqrt{3} \\ne \\sqrt{5}$.\n\n**Multiply** numbers with numbers and roots with roots; expand brackets as in algebra.\n\n**Rationalise the denominator:** $\\dfrac{6}{\\sqrt{3}} \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}$. For a denominator like $3 + \\sqrt{2}$ multiply top and bottom by the **conjugate** $3 - \\sqrt{2}$, since $(3 + \\sqrt{2})(3 - \\sqrt{2}) = 9 - 2 = 7$:\n$$\\frac{1}{3 + \\sqrt{2}} = \\frac{3 - \\sqrt{2}}{7}$$",
+  "workedExamples": [
+   {
+    "question": "Simplify $\\sqrt{48} + \\sqrt{75} - \\sqrt{12}$.",
+    "solution": "Take out the largest square factor from each:\n\n$\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$\n\n$\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$\n\n$\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}$\n\nAll are like surds, so collect them:\n$$4\\sqrt{3} + 5\\sqrt{3} - 2\\sqrt{3} = 7\\sqrt{3}$$"
+   },
+   {
+    "question": "Write $\\dfrac{5 + \\sqrt{3}}{2 - \\sqrt{3}}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+    "solution": "Multiply top and bottom by the conjugate $2 + \\sqrt{3}$.\n\nDenominator: $(2 - \\sqrt{3})(2 + \\sqrt{3}) = 4 - 3 = 1$\n\nNumerator:\n$$(5 + \\sqrt{3})(2 + \\sqrt{3}) = 10 + 5\\sqrt{3} + 2\\sqrt{3} + 3 = 13 + 7\\sqrt{3}$$\n\n$$\\frac{5 + \\sqrt{3}}{2 - \\sqrt{3}} = \\frac{13 + 7\\sqrt{3}}{1} = 13 + 7\\sqrt{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks roots can be added term by term: $\\sqrt{9} + \\sqrt{16} = \\sqrt{25}$, or $\\sqrt{2} + \\sqrt{3} = \\sqrt{5}$.",
+    "correction": "Check with numbers: $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$ but $\\sqrt{25} = 5$. Only like surds combine: $2\\sqrt{3} + 5\\sqrt{3} = 7\\sqrt{3}$; $\\sqrt{2} + \\sqrt{3}$ cannot be simplified."
+   },
+   {
+    "id": "m2",
+    "text": "Does not take out the largest square factor: gives $\\sqrt{72} = 2\\sqrt{18}$ as the simplest form.",
+    "correction": "$18 = 9 \\times 2$ still has a square factor. Use the largest square factor, 36: $\\sqrt{72} = 6\\sqrt{2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Rationalises by multiplying by the denominator itself instead of its conjugate: $\\dfrac{1}{3 + \\sqrt{2}} \\times \\dfrac{3 + \\sqrt{2}}{3 + \\sqrt{2}} = \\dfrac{3 + \\sqrt{2}}{11 + 6\\sqrt{2}}$, which still has a surd in the denominator.",
+    "correction": "Change the sign between the terms: multiply by $\\dfrac{3 - \\sqrt{2}}{3 - \\sqrt{2}}$; the denominator becomes $9 - 2 = 7$, giving $\\dfrac{3 - \\sqrt{2}}{7}$."
+   },
+   {
+    "id": "m4",
+    "text": "Squares only the surd part (or only the number): $(2\\sqrt{3})^2 = 2 \\times 3 = 6$.",
+    "correction": "Square both factors: $(2\\sqrt{3})^2 = 2^2 \\times (\\sqrt{3})^2 = 4 \\times 3 = 12$."
+   }
+  ]
+ },
+ {
+  "id": "num-recurring-decimals",
+  "prerequisites": [
+   "num-fdp-conversions",
+   "num-fractions-equivalence",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "**Dot notation:** dots go over the first and last digits of the repeating block: $0.\\dot{4} = 0.444\\ldots$, $0.\\dot{2}\\dot{7} = 0.272727\\ldots$, $0.1\\dot{3}\\dot{6} = 0.13636\\ldots$, $0.\\dot{1}0\\dot{8} = 0.108108\\ldots$\n\n**Method (algebraic proof):** let $x$ be the decimal. Multiply by powers of 10 to get two numbers with **identical recurring tails**, subtract so the tails cancel, solve, simplify.\n\nFor $x = 0.\\dot{2}\\dot{7}$ (block of 2 digits) use $100x$:\n$$100x = 27.2727\\ldots,\\quad x = 0.2727\\ldots \\ \\Rightarrow\\ 99x = 27,\\ x = \\frac{27}{99} = \\frac{3}{11}$$\n\nIf there is a non-recurring part, line up the tails using two multiples. For $x = 0.1\\dot{3}\\dot{6}$: $1000x = 136.3636\\ldots$ and $10x = 1.3636\\ldots$, so $990x = 135$ and $x = \\frac{135}{990} = \\frac{3}{22}$.\n\nIn \"show that/prove\" questions, write out several digits of each line so the cancellation is visible.",
+  "workedExamples": [
+   {
+    "question": "Prove algebraically that $0.4\\dot{5} = \\dfrac{41}{90}$.",
+    "solution": "Let $x = 0.4555\\ldots$\n\nMultiply by 10 to move the non-recurring digit across: $10x = 4.555\\ldots$\n\nMultiply by 100: $100x = 45.555\\ldots$\n\nBoth have the same recurring tail, so subtract:\n$$100x - 10x = 45.555\\ldots - 4.555\\ldots$$\n$$90x = 41$$\n$$x = \\frac{41}{90} \\quad \\text{as required}$$"
+   },
+   {
+    "question": "Write $0.\\dot{1}0\\dot{8}$ as a fraction in its simplest form.",
+    "solution": "Let $x = 0.108108108\\ldots$ The repeating block has 3 digits, so multiply by 1000:\n$$1000x = 108.108108\\ldots$$\n\nSubtract $x$:\n$$999x = 108$$\n$$x = \\frac{108}{999}$$\n\nSimplify (HCF is 27): $x = \\dfrac{108 \\div 27}{999 \\div 27} = \\dfrac{4}{37}$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Multiplies by the wrong power of 10 so the tails do not line up: for $x = 0.\\dot{2}\\dot{7}$ uses $10x = 2.7272\\ldots$ and gets $9x = 2.4545\\ldots$",
+    "correction": "The repeating block has 2 digits, so multiply by $10^2 = 100$: $100x - x = 27.2727\\ldots - 0.2727\\ldots$, giving $99x = 27$ and $x = \\frac{3}{11}$."
+   },
+   {
+    "id": "m2",
+    "text": "Writes the repeating digits over a power of 10: $0.\\dot{2}\\dot{7} = \\frac{27}{100}$.",
+    "correction": "$\\frac{27}{100} = 0.27$ exactly, which terminates. The algebra gives $99x = 27$, so $0.\\dot{2}\\dot{7} = \\frac{27}{99} = \\frac{3}{11}$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the \"over 9s\" shortcut when there is a non-recurring digit: $0.4\\dot{5} = \\frac{45}{99}$.",
+    "correction": "Only the 5 recurs. Use $100x - 10x$: $90x = 45.5\\dot{5} - 4.5\\dot{5} = 41$, so $0.4\\dot{5} = \\frac{41}{90}$. (Check: $\\frac{45}{99} = 0.\\dot{4}\\dot{5} = 0.4545\\ldots$)"
+   },
+   {
+    "id": "m4",
+    "text": "Misreads dot notation, thinking $0.1\\dot{2} = 0.121212\\ldots$",
+    "correction": "A single dot means only that digit repeats: $0.1\\dot{2} = 0.12222\\ldots$; $0.\\dot{1}\\dot{2} = 0.121212\\ldots$"
+   }
+  ]
+ },
+ {
+  "id": "num-rational-irrational",
+  "prerequisites": [
+   "num-fdp-conversions",
+   "num-powers-roots",
+   "num-negative-numbers"
+  ],
+  "keyIdea": "A **rational** number can be written as $\\frac{a}{b}$ with $a, b$ integers and $b \\ne 0$. This includes integers ($-5 = \\frac{-5}{1}$), terminating decimals ($0.35 = \\frac{7}{20}$) and recurring decimals ($0.\\dot{3} = \\frac{1}{3}$).\n\nAn **irrational** number cannot; its decimal never ends and never repeats: $\\sqrt{2}$, $\\pi$, $\\sqrt{10}$. $\\sqrt{n}$ for a whole number $n$ is irrational unless $n$ is a square number. Rational and irrational numbers together make the **real numbers**.\n\n**Combining:** rational $\\pm$ rational is rational; rational + irrational is irrational; non-zero rational × irrational is irrational; irrational × irrational **can be either**: $\\sqrt{2} \\times \\sqrt{8} = 4$, $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}$.\n\n**Approximating:** $3^2 = 9 < 10 < 16 = 4^2$ and $3.1^2 = 9.61$, $3.2^2 = 10.24$, so $\\sqrt{10}$ lies between $3.1$ and $3.2$ on the number line.",
+  "workedExamples": [
+   {
+    "question": "State whether each number is rational or irrational: $\\sqrt{49}$, $0.\\dot{6}$, $\\pi + 1$, $\\dfrac{\\sqrt{12}}{\\sqrt{3}}$, $\\sqrt{20}$, $-\\dfrac{7}{3}$",
+    "solution": "$\\sqrt{49} = 7 = \\frac{7}{1}$ — **rational**\n\n$0.\\dot{6} = \\frac{2}{3}$ — **rational** (recurring decimal)\n\n$\\pi + 1$ — **irrational** (rational + irrational)\n\n$\\dfrac{\\sqrt{12}}{\\sqrt{3}} = \\sqrt{\\dfrac{12}{3}} = \\sqrt{4} = 2$ — **rational**\n\n$\\sqrt{20} = 2\\sqrt{5}$ — **irrational** (20 is not a square number)\n\n$-\\dfrac{7}{3}$ — **rational** (a fraction of integers)"
+   },
+   {
+    "question": "Between which two consecutive integers does $\\sqrt{55}$ lie? Hence estimate $\\sqrt{55}$ to 1 decimal place.",
+    "solution": "$7^2 = 49$ and $8^2 = 64$; since $49 < 55 < 64$, $\\sqrt{55}$ lies between **7 and 8**.\n\nNarrow down: $7.4^2 = 54.76 < 55$ and $7.5^2 = 56.25 > 55$, so $7.4 < \\sqrt{55} < 7.5$.\n\nHalfway test: $7.45^2 = 55.5025 > 55$, so $\\sqrt{55} < 7.45$.\n\n$$\\sqrt{55} \\approx 7.4 \\text{ (1 d.p.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks every square root is irrational, e.g. classifies $\\sqrt{49}$ or $\\sqrt{\\frac{9}{4}}$ as irrational.",
+    "correction": "Evaluate first: $\\sqrt{49} = 7$ and $\\sqrt{\\frac{9}{4}} = \\frac{3}{2}$, both rational. Only roots of non-square numbers, like $\\sqrt{5}$, are irrational."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks a recurring decimal is irrational because \"it goes on forever\": $0.\\dot{3}$ is irrational.",
+    "correction": "A recurring decimal repeats, so it can be written as a fraction: $0.\\dot{3} = \\frac{1}{3}$, which is rational. Irrational decimals never end **and** never repeat."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks the product of two irrational numbers is always irrational: $\\sqrt{2} \\times \\sqrt{8}$ is irrational.",
+    "correction": "$\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4$, which is rational. The product of two irrationals can be rational or irrational."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks $\\pi$ is rational because $\\pi = \\frac{22}{7}$ or $\\pi = 3.14$.",
+    "correction": "$\\frac{22}{7} = 3.\\dot{1}4285\\dot{7}$ and $3.14$ are only approximations. $\\pi = 3.14159\\ldots$ never ends or repeats, so it is irrational."
+   }
+  ]
+ },
+ {
+  "id": "num-counting-product-rule",
+  "prerequisites": [
+   "num-written-methods",
+   "num-powers-roots"
+  ],
+  "keyIdea": "**Systematic listing:** fix the first choice and run through every option for the next, in order, so nothing is missed or repeated (AB, AC, AD, then BC, BD, then CD).\n\n**Product rule:** if one choice can be made in $m$ ways and a second, independent choice in $n$ ways, together they can be made in $m \\times n$ ways. It extends to any number of stages: 3 starters, 4 mains and 2 desserts give $3 \\times 4 \\times 2 = 24$ meals.\n\n**Repetition allowed:** a 4-digit PIN using 0–9 has $10 \\times 10 \\times 10 \\times 10 = 10^4 = 10\\,000$ possibilities.\n\n**No repetition:** the choices go down by one each time: 5 different books in a row: $5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$.\n\n**Restrictions:** fill the restricted position **first**. Odd 3-digit numbers from 1–6, no repeats: last digit 3 ways (1, 3, 5), then 5, then 4: $3 \\times 5 \\times 4 = 60$.",
+  "workedExamples": [
+   {
+    "question": "List all the different codes that can be made using each of the letters A, B and C exactly once. Check your answer using the product rule.",
+    "solution": "Work systematically, fixing the first letter:\n\nStarting with A: ABC, ACB\n\nStarting with B: BAC, BCA\n\nStarting with C: CAB, CBA\n\nThat is **6 codes**.\n\nProduct rule check: 3 choices for the first letter, then 2, then 1: $3 \\times 2 \\times 1 = 6$ ✓"
+   },
+   {
+    "question": "How many 4-digit numbers greater than 5000 can be made using the digits 1, 2, 3, 4, 5, 6, 7 if no digit can be used more than once?",
+    "solution": "The restriction is on the first digit, so fill it first: to be greater than 5000 it must be 5, 6 or 7 — **3** ways. (Every such number is at least 5123, so all are greater than 5000.)\n\nSecond digit: any of the 6 digits left — **6** ways\n\nThird digit: **5** ways; fourth digit: **4** ways\n\n$$3 \\times 6 \\times 5 \\times 4 = 360$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds the number of options instead of multiplying: 3 starters and 4 mains give $3 + 4 = 7$ meals.",
+    "correction": "Each starter can go with each of the 4 mains, so there are 4 meals per starter: $3 \\times 4 = 12$ meals."
+   },
+   {
+    "id": "m2",
+    "text": "Removes options even when repetition is allowed: number of 4-digit PINs $= 10 \\times 9 \\times 8 \\times 7 = 5040$.",
+    "correction": "A PIN may repeat digits (e.g. 1111), so every position has 10 choices: $10^4 = 10\\,000$. Reduce the choices only when repeats are not allowed."
+   },
+   {
+    "id": "m3",
+    "text": "Fills the positions in order and applies the restriction last: odd 3-digit numbers from 1–6 without repeats $= 6 \\times 5 \\times 3 = 90$.",
+    "correction": "By the time you reach the last digit, some odd digits may already be used, so \"3 ways\" is not always true. Fill the restricted position first: $3 \\times 5 \\times 4 = 60$."
+   },
+   {
+    "id": "m4",
+    "text": "Allows a leading zero: counts the 4-digit numbers as $10^4 = 10\\,000$ (including \"0123\").",
+    "correction": "A 4-digit number cannot start with 0, so the first digit has 9 choices: $9 \\times 10 \\times 10 \\times 10 = 9000$ (the numbers 1000 to 9999)."
+   }
+  ]
+ }
+]

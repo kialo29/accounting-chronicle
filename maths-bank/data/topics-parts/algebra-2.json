@@ -1,0 +1,870 @@
+[
+ {
+  "id": "alg-simultaneous-nonlinear",
+  "prerequisites": [
+   "alg-simultaneous-linear",
+   "alg-quadratic-equations-factorising",
+   "alg-expand-double-triple"
+  ],
+  "keyIdea": "To solve one linear and one non-linear equation simultaneously, rearrange the **linear** equation to make one variable the subject, then **substitute** it into the non-linear equation. This gives a quadratic in one variable: solve it (factorise or use the formula), then substitute each solution back into the **linear** equation to find the matching value. Solutions come in **pairs** $(x, y)$.\n\nGeometrically, each pair is a point where the line meets the curve (a parabola such as $y = x^2 - 3x + 4$, or a circle such as $x^2 + y^2 = 13$). Two distinct solutions: the line crosses the curve twice. One repeated solution: the line is a **tangent**. No real solutions: the line misses the curve completely.",
+  "workedExamples": [
+   {
+    "question": "Solve the simultaneous equations\n$$y = x + 1 \\qquad x^2 + y^2 = 13$$",
+    "solution": "Substitute $y = x + 1$ into the circle equation:\n$$x^2 + (x+1)^2 = 13$$\n\nExpand the bracket carefully, $(x+1)^2 = x^2 + 2x + 1$:\n$$x^2 + x^2 + 2x + 1 = 13 \\Rightarrow 2x^2 + 2x - 12 = 0 \\Rightarrow x^2 + x - 6 = 0$$\n\nFactorise and solve:\n$$(x+3)(x-2) = 0 \\Rightarrow x = -3 \\text{ or } x = 2$$\n\nFind each $y$ from the **linear** equation $y = x + 1$: when $x = -3$, $y = -2$; when $x = 2$, $y = 3$.\n\n**Solutions:** $(-3, -2)$ and $(2, 3)$.\n\nCheck: $(-3)^2 + (-2)^2 = 9 + 4 = 13$ and $2^2 + 3^2 = 4 + 9 = 13$. The line crosses the circle at these two points."
+   },
+   {
+    "question": "Find the coordinates of the points where the line $y = 2x - 2$ meets the curve $y = x^2 - 3x + 4$.",
+    "solution": "At the intersection the $y$-values are equal:\n$$x^2 - 3x + 4 = 2x - 2$$\n\nRearrange to $= 0$:\n$$x^2 - 5x + 6 = 0 \\Rightarrow (x-2)(x-3) = 0 \\Rightarrow x = 2 \\text{ or } x = 3$$\n\nUse $y = 2x - 2$: when $x = 2$, $y = 2$; when $x = 3$, $y = 4$.\n\n**Points:** $(2, 2)$ and $(3, 4)$.\n\nCheck in the curve: $2^2 - 3(2) + 4 = 2$ and $3^2 - 3(3) + 4 = 4$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Expands the squared bracket as the sum of squares when substituting: $x^2 + (x+1)^2 = 13 \\Rightarrow x^2 + x^2 + 1 = 13 \\Rightarrow 2x^2 = 12$.",
+    "correction": "$(x+1)^2 = (x+1)(x+1) = x^2 + 2x + 1$; the middle term $2x$ must not be lost. The correct equation is $2x^2 + 2x - 12 = 0$, giving $x = -3$ or $x = 2$."
+   },
+   {
+    "id": "m2",
+    "text": "Finds the two $x$-values but then stops, or pairs the values wrongly, e.g. gives the answer as \"$x = -3$, $x = 2$\" or as $x = -3,\\ y = 3$.",
+    "correction": "Each $x$-value has its own $y$-value. Substitute each $x$ into the linear equation separately and write the answers as coordinate pairs: $(-3, -2)$ and $(2, 3)$."
+   },
+   {
+    "id": "m3",
+    "text": "Substitutes the $x$-values back into the circle (non-linear) equation, getting extra \"solutions\": for $x = 2$, $4 + y^2 = 13 \\Rightarrow y = \\pm 3$, so lists $(2, -3)$ as a solution.",
+    "correction": "Substitute into the **linear** equation, which gives exactly one $y$ for each $x$. The point $(2, -3)$ is on the circle but not on the line $y = x + 1$ (since $2 + 1 = 3 \\ne -3$), so it is not a solution."
+   },
+   {
+    "id": "m4",
+    "text": "When the quadratic has no real solutions (negative discriminant, e.g. $x^2 + 2x + 5 = 0$), concludes they must have made a mistake rather than that the line and curve do not meet; or treats one repeated root as \"only half the answer\".",
+    "correction": "The number of real solutions is the number of intersection points: $b^2 - 4ac > 0$ gives two points, $b^2 - 4ac = 0$ gives one point (the line is a tangent), and $b^2 - 4ac < 0$ means the line does not meet the curve at all."
+   }
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising",
+  "prerequisites": [
+   "alg-factorising-quadratics",
+   "alg-linear-equations",
+   "num-powers-roots"
+  ],
+  "keyIdea": "A quadratic equation can be written as $ax^2 + bx + c = 0$. **First rearrange so that one side is zero.** Then factorise and use the **zero product property**: if $p \\times q = 0$ then $p = 0$ or $q = 0$.\n\nSo $(x-3)(x+5) = 0$ gives $x - 3 = 0$ or $x + 5 = 0$, i.e. $x = 3$ or $x = -5$ (each root has the opposite sign to the number in its bracket).\n\nCommon factor: $x^2 - 5x = 0 \\Rightarrow x(x-5) = 0 \\Rightarrow x = 0$ or $x = 5$. Never divide by $x$, or the root $x = 0$ is lost.\n\n**Square-root method** (no $x$ term): $3x^2 = 48 \\Rightarrow x^2 = 16 \\Rightarrow x = \\pm 4$; $(x-4)^2 = 25 \\Rightarrow x - 4 = \\pm 5 \\Rightarrow x = 9$ or $x = -1$. Always include both signs. Check answers by substituting back.",
+  "workedExamples": [
+   {
+    "question": "Solve $x^2 + 2x = 15$.",
+    "solution": "Rearrange so one side is zero:\n$$x^2 + 2x - 15 = 0$$\n\nFind two numbers that multiply to $-15$ and add to $2$: $+5$ and $-3$.\n$$(x+5)(x-3) = 0$$\n\nZero product property:\n$$x + 5 = 0 \\Rightarrow x = -5 \\qquad x - 3 = 0 \\Rightarrow x = 3$$\n\nCheck: $(-5)^2 + 2(-5) = 25 - 10 = 15$ and $3^2 + 2(3) = 9 + 6 = 15$.\n\n**Answer:** $x = -5$ or $x = 3$."
+   },
+   {
+    "question": "Solve (a) $3x^2 = 48$ (b) $2x^2 - 7x + 3 = 0$.",
+    "solution": "**(a)** No $x$ term, so use square roots:\n$$x^2 = 16 \\Rightarrow x = \\pm\\sqrt{16} \\Rightarrow x = 4 \\text{ or } x = -4$$\n\n**(b)** $ac = 2 \\times 3 = 6$; numbers multiplying to $6$ and adding to $-7$: $-6$ and $-1$.\n$$2x^2 - 6x - x + 3 = 0 \\Rightarrow 2x(x - 3) - 1(x - 3) = 0 \\Rightarrow (2x - 1)(x - 3) = 0$$\n\nSo $2x - 1 = 0 \\Rightarrow x = \\frac{1}{2}$, or $x - 3 = 0 \\Rightarrow x = 3$.\n\nCheck $x = \\frac{1}{2}$: $2 \\times \\frac{1}{4} - \\frac{7}{2} + 3 = \\frac{1}{2} - \\frac{7}{2} + 3 = 0$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Takes the roots with the same sign as the number in the bracket: $(x-3)(x+5) = 0 \\Rightarrow x = -3$ or $x = 5$.",
+    "correction": "Set each bracket equal to zero and solve: $x - 3 = 0$ gives $x = 3$; $x + 5 = 0$ gives $x = -5$. Check by substituting: $(3 - 3)(3 + 5) = 0$."
+   },
+   {
+    "id": "m2",
+    "text": "Gives only the positive square root: $x^2 = 49 \\Rightarrow x = 7$, or $(x-4)^2 = 25 \\Rightarrow x = 9$ only.",
+    "correction": "Both $7^2$ and $(-7)^2$ equal $49$, so $x = \\pm 7$. Similarly $x - 4 = \\pm 5$ gives $x = 9$ or $x = -1$."
+   },
+   {
+    "id": "m3",
+    "text": "Divides both sides by $x$: $x^2 = 5x \\Rightarrow x = 5$, losing the solution $x = 0$.",
+    "correction": "Dividing by $x$ is only valid if $x \\ne 0$. Instead rearrange and factorise: $x^2 - 5x = 0 \\Rightarrow x(x - 5) = 0 \\Rightarrow x = 0$ or $x = 5$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the zero product idea when the right-hand side is not zero: $x(x + 2) = 15 \\Rightarrow x = 15$ or $x + 2 = 15$.",
+    "correction": "The property only works for a product equal to **zero** (two numbers can multiply to $15$ in infinitely many ways). Expand and rearrange: $x^2 + 2x - 15 = 0 \\Rightarrow (x+5)(x-3) = 0 \\Rightarrow x = -5$ or $x = 3$."
+   }
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula",
+  "prerequisites": [
+   "alg-quadratic-equations-factorising",
+   "num-surds",
+   "num-rounding"
+  ],
+  "keyIdea": "For any quadratic equation $ax^2 + bx + c = 0$ (with $a \\ne 0$):\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\n**Rearrange to $= 0$ first**, then read off $a$, $b$ and $c$ **including their signs**. Work out $b^2 - 4ac$ (the discriminant) first: positive gives two real roots, zero gives one repeated root, negative gives no real roots. The whole of $-b \\pm \\sqrt{b^2 - 4ac}$ is divided by $2a$.\n\nIf the question asks for **exact** answers, leave them as simplified surds, e.g. $3 \\pm \\sqrt{5}$. Otherwise use a calculator and round only at the end (e.g. to 2 decimal places or 3 significant figures).\n\n**Choosing a method:** factorise if it factorises easily; use the formula when it does not, or when decimal/surd answers are wanted; complete the square when the turning point is also needed.",
+  "workedExamples": [
+   {
+    "question": "Solve $2x^2 + 3x - 4 = 0$, giving your answers to 2 decimal places.",
+    "solution": "Identify the coefficients: $a = 2$, $b = 3$, $c = -4$.\n\nDiscriminant:\n$$b^2 - 4ac = 3^2 - 4(2)(-4) = 9 + 32 = 41$$\n\nSubstitute into the formula:\n$$x = \\frac{-3 \\pm \\sqrt{41}}{2 \\times 2} = \\frac{-3 \\pm \\sqrt{41}}{4}$$\n\n$\\sqrt{41} = 6.4031\\ldots$, so\n$$x = \\frac{-3 + 6.4031\\ldots}{4} = 0.8507\\ldots \\qquad x = \\frac{-3 - 6.4031\\ldots}{4} = -2.3507\\ldots$$\n\n**Answer:** $x = 0.85$ or $x = -2.35$ (2 d.p.)."
+   },
+   {
+    "question": "Solve $x^2 - 6x + 4 = 0$, giving your answers in the form $p \\pm \\sqrt{q}$.",
+    "solution": "$a = 1$, $b = -6$, $c = 4$.\n\n$$b^2 - 4ac = (-6)^2 - 4(1)(4) = 36 - 16 = 20$$\n\n$$x = \\frac{-(-6) \\pm \\sqrt{20}}{2(1)} = \\frac{6 \\pm \\sqrt{20}}{2}$$\n\nSimplify the surd: $\\sqrt{20} = \\sqrt{4 \\times 5} = 2\\sqrt{5}$, so\n$$x = \\frac{6 \\pm 2\\sqrt{5}}{2} = 3 \\pm \\sqrt{5}$$\n\n**Answer:** $x = 3 + \\sqrt{5}$ or $x = 3 - \\sqrt{5}$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Squares a negative $b$ incorrectly: with $b = -6$ writes $b^2 = -6^2 = -36$, so $b^2 - 4ac = -36 - 16 = -52$ and concludes there are no real roots.",
+    "correction": "$b^2$ means $(-6)^2 = (-6) \\times (-6) = 36$, which is always positive. Use brackets when substituting: $(-6)^2 - 4(1)(4) = 20$."
+   },
+   {
+    "id": "m2",
+    "text": "Drops the sign of $c$: for $2x^2 + 3x - 4 = 0$ uses $c = 4$, giving $b^2 - 4ac = 9 - 32 = -23$, so \"no solutions\".",
+    "correction": "The coefficients include their signs: $c = -4$, so $-4ac = -4(2)(-4) = +32$ and $b^2 - 4ac = 41$."
+   },
+   {
+    "id": "m3",
+    "text": "Divides only the square root by $2a$: $x = -3 \\pm \\frac{\\sqrt{41}}{4}$, giving $x = -1.40$ or $x = -4.60$.",
+    "correction": "The fraction line goes under the **whole** numerator: $x = \\frac{-3 \\pm \\sqrt{41}}{4}$. On a calculator, put the numerator in brackets: $(-3 + \\sqrt{41}) \\div 4 = 0.85$."
+   },
+   {
+    "id": "m4",
+    "text": "Uses the formula before rearranging to $= 0$: for $x^2 + 3x = 7$ takes $c = 7$.",
+    "correction": "The formula applies to $ax^2 + bx + c = 0$. Rearrange first: $x^2 + 3x - 7 = 0$, so $c = -7$ and $b^2 - 4ac = 9 + 28 = 37$."
+   }
+  ]
+ },
+ {
+  "id": "alg-completing-the-square",
+  "prerequisites": [
+   "alg-expand-double-triple",
+   "alg-quadratic-equations-factorising",
+   "num-surds"
+  ],
+  "keyIdea": "**Completing the square** rewrites $x^2 + bx + c$ using a perfect square: halve the coefficient of $x$, then subtract the square of that half.\n$$x^2 + bx + c = \\left(x + \\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2 + c$$\ne.g. $x^2 + 6x + 11 = (x+3)^2 - 9 + 11 = (x+3)^2 + 2$.\n\nIf $a \\ne 1$, take $a$ out of the $x^2$ and $x$ terms first: $2x^2 - 12x + 5 = 2[(x-3)^2 - 9] + 5 = 2(x-3)^2 - 13$.\n\nIn the form $a(x+p)^2 + q$ (US: vertex form) the **turning point** is $(-p, q)$: a minimum if $a > 0$, a maximum if $a < 0$.\n\n**Solving:** isolate the square, then square-root with $\\pm$: $(x+3)^2 = 5 \\Rightarrow x = -3 \\pm \\sqrt{5}$.",
+  "workedExamples": [
+   {
+    "question": "(a) Write $x^2 - 8x + 3$ in the form $(x + p)^2 + q$.\n(b) Hence state the coordinates of the turning point of $y = x^2 - 8x + 3$.\n(c) Hence solve $x^2 - 8x + 3 = 0$, giving exact answers.",
+    "solution": "**(a)** Half of $-8$ is $-4$:\n$$x^2 - 8x + 3 = (x - 4)^2 - 16 + 3 = (x - 4)^2 - 13$$\n\n**(b)** $(x-4)^2 \\ge 0$ and equals $0$ when $x = 4$, so the minimum value is $-13$. Turning point: $(4, -13)$.\n\n**(c)**\n$$(x-4)^2 - 13 = 0 \\Rightarrow (x-4)^2 = 13 \\Rightarrow x - 4 = \\pm\\sqrt{13} \\Rightarrow x = 4 \\pm \\sqrt{13}$$"
+   },
+   {
+    "question": "Write $2x^2 + 12x + 7$ in the form $a(x + p)^2 + q$ and state the turning point of $y = 2x^2 + 12x + 7$.",
+    "solution": "Factor $2$ out of the first two terms:\n$$2x^2 + 12x + 7 = 2(x^2 + 6x) + 7$$\n\nComplete the square inside the bracket:\n$$= 2\\left[(x+3)^2 - 9\\right] + 7$$\n\nMultiply out the square bracket (the $-9$ is also multiplied by $2$):\n$$= 2(x+3)^2 - 18 + 7 = 2(x+3)^2 - 11$$\n\nCheck: $2(x^2 + 6x + 9) - 11 = 2x^2 + 12x + 7$.\n\nTurning point: $(-3, -11)$, a minimum because $a = 2 > 0$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to subtract the square of the half: $x^2 + 6x + 11 = (x+3)^2 + 11$.",
+    "correction": "$(x+3)^2 = x^2 + 6x + 9$, which is $9$ too many, so subtract it: $x^2 + 6x + 11 = (x+3)^2 - 9 + 11 = (x+3)^2 + 2$. Always check by expanding."
+   },
+   {
+    "id": "m2",
+    "text": "Gets the sign of the $x$-coordinate of the turning point wrong: $y = (x - 4)^2 - 13$ has turning point $(-4, -13)$.",
+    "correction": "The minimum occurs when the bracket is zero: $x - 4 = 0 \\Rightarrow x = 4$. For $a(x + p)^2 + q$ the turning point is $(-p, q)$, so here it is $(4, -13)$."
+   },
+   {
+    "id": "m3",
+    "text": "When $a \\ne 1$, does not multiply the subtracted square by $a$: $2x^2 + 12x + 7 = 2(x+3)^2 - 9 + 7 = 2(x+3)^2 - 2$.",
+    "correction": "The $-9$ is inside the bracket that is multiplied by $2$: $2[(x+3)^2 - 9] + 7 = 2(x+3)^2 - 18 + 7 = 2(x+3)^2 - 11$."
+   },
+   {
+    "id": "m4",
+    "text": "Does not halve the coefficient of $x$: $x^2 + 6x = (x + 6)^2 - 36$.",
+    "correction": "$(x+6)^2 = x^2 + 12x + 36$, which has $12x$ not $6x$. Halve the coefficient: $x^2 + 6x = (x+3)^2 - 9$."
+   }
+  ]
+ },
+ {
+  "id": "alg-quadratic-graphs",
+  "prerequisites": [
+   "alg-straight-line-graphs",
+   "alg-substitution-formulae",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "The graph of $y = ax^2 + bx + c$ is a **parabola**: $\\cup$-shaped if $a > 0$, $\\cap$-shaped if $a < 0$. Key features:\n- **$y$-intercept** $(0, c)$.\n- **Roots** ($x$-intercepts; US: zeros) where $y = 0$, found by solving $ax^2 + bx + c = 0$.\n- **Axis of symmetry**: the vertical line halfway between the roots, $x = -\\frac{b}{2a}$.\n- **Turning point** (vertex) on the axis of symmetry: substitute that $x$ to find $y$.\n\nTo **plot**, make a table of values (take care: $(-3)^2 = 9$), plot the points and join them with a smooth curve, not straight segments; the turning point is often between plotted points.\n\n**Graphical solutions:** the solutions of $ax^2 + bx + c = k$ are the $x$-coordinates where the curve meets the horizontal line $y = k$; the roots are where it meets $y = 0$.",
+  "workedExamples": [
+   {
+    "question": "For the curve $y = x^2 - 2x - 8$ find (a) the roots, (b) the $y$-intercept, (c) the equation of the axis of symmetry, (d) the turning point. Then sketch the curve.",
+    "solution": "**(a)** $x^2 - 2x - 8 = 0 \\Rightarrow (x - 4)(x + 2) = 0 \\Rightarrow x = 4$ or $x = -2$. The curve crosses the $x$-axis at $(-2, 0)$ and $(4, 0)$.\n\n**(b)** When $x = 0$, $y = -8$: $(0, -8)$.\n\n**(c)** Halfway between the roots: $x = \\frac{-2 + 4}{2} = 1$, so the axis of symmetry is $x = 1$.\n\n**(d)** $y = 1^2 - 2(1) - 8 = -9$, so the turning point is $(1, -9)$, a minimum since $a = 1 > 0$.\n\nSketch: a $\\cup$-shaped curve through $(-2, 0)$, $(0, -8)$ and $(4, 0)$ with its lowest point at $(1, -9)$."
+   },
+   {
+    "question": "Complete a table of values for $y = x^2 + x - 4$ for $x = -3$ to $2$. Use it to estimate the solutions of $x^2 + x - 4 = 0$.",
+    "solution": "Substitute each value, using brackets for negatives, e.g. $x = -3$: $(-3)^2 + (-3) - 4 = 9 - 3 - 4 = 2$.\n\n| $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |\n|---|---|---|---|---|---|---|\n| $y$ | $2$ | $-2$ | $-4$ | $-4$ | $-2$ | $2$ |\n\nThe curve is symmetrical about $x = -\\frac{1}{2}$, so the turning point lies between $x = -1$ and $x = 0$, at $\\left(-\\frac{1}{2}, -4\\frac{1}{4}\\right)$, below $-4$.\n\nThe solutions are where the curve crosses $y = 0$: $y$ changes sign between $x = -3$ and $x = -2$, and between $x = 1$ and $x = 2$. Reading from a careful graph: $x \\approx -2.6$ and $x \\approx 1.6$.\n\n(The quadratic formula gives $x = \\frac{-1 \\pm \\sqrt{17}}{2}$, i.e. $-2.56$ and $1.56$.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Squares negative values wrongly in a table of values: for $y = x^2 + x - 4$ at $x = -3$ works out $-3^2 - 3 - 4 = -9 - 3 - 4 = -16$.",
+    "correction": "Squaring a negative gives a positive: $(-3)^2 = 9$, so $y = 9 - 3 - 4 = 2$. Type $(-3)^2$ with brackets on a calculator."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes the turning point is at a plotted point and joins points with straight lines, e.g. for $y = x^2 + x - 4$ says the minimum is $-4$ (from the table) and draws a flat or pointed bottom between $x = -1$ and $x = 0$.",
+    "correction": "A parabola is a smooth curve with a single turning point on its axis of symmetry, here $x = -\\frac{1}{2}$, where $y = \\frac{1}{4} - \\frac{1}{2} - 4 = -4\\frac{1}{4}$. Draw a smooth $\\cup$ that dips just below $-4$."
+   },
+   {
+    "id": "m3",
+    "text": "To solve $x^2 - 2x - 8 = -5$ from the graph of $y = x^2 - 2x - 8$, reads off where the curve crosses the $x$-axis ($x = -2$ and $x = 4$).",
+    "correction": "Draw the line $y = -5$ and read the $x$-coordinates where it meets the curve: $x = -1$ and $x = 3$ (check: $x^2 - 2x - 3 = 0 \\Rightarrow (x-3)(x+1) = 0$). The $x$-axis only gives solutions of \"$= 0$\"."
+   },
+   {
+    "id": "m4",
+    "text": "Draws every parabola $\\cup$-shaped, e.g. sketches $y = 4 - x^2$ with a minimum at $(0, 4)$.",
+    "correction": "The sign of the $x^2$ coefficient decides the shape: $y = 4 - x^2 = -x^2 + 4$ has $a = -1 < 0$, so it is $\\cap$-shaped with a **maximum** at $(0, 4)$ and roots at $x = \\pm 2$."
+   }
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities",
+  "prerequisites": [
+   "alg-linear-inequalities",
+   "alg-quadratic-graphs",
+   "alg-quadratic-equations-factorising",
+   "prob-venn-set-notation"
+  ],
+  "keyIdea": "To solve a quadratic inequality such as $ax^2 + bx + c > 0$:\n1. Rearrange so one side is $0$.\n2. Find the **critical values** by solving $ax^2 + bx + c = 0$.\n3. **Sketch** the parabola through those roots.\n4. Read off where the graph is **above** the $x$-axis (for $> 0$) or **below** it (for $< 0$).\n\nFor a $\\cup$-shaped curve, $(x - 2)(x + 3) < 0$ gives **one** interval, $-3 < x < 2$, while $(x - 2)(x + 3) > 0$ gives **two** separate parts, $x < -3$ or $x > 2$.\n\nAnswers can be written as inequalities, in **set notation**, $\\{x : -3 < x < 2\\}$ or $\\{x : x < -3\\} \\cup \\{x : x > 2\\}$, or in interval notation, $(-3, 2)$. Use $\\le$, $\\ge$ (closed ends) when the original inequality includes equality.",
+  "workedExamples": [
+   {
+    "question": "Solve $x^2 - x - 12 > 0$, giving your answer in set notation.",
+    "solution": "Critical values:\n$$x^2 - x - 12 = 0 \\Rightarrow (x - 4)(x + 3) = 0 \\Rightarrow x = -3 \\text{ or } x = 4$$\n\nSketch: $\\cup$-shaped parabola crossing the $x$-axis at $-3$ and $4$.\n\nWe want $y > 0$: the parts of the curve **above** the axis, which are to the left of $-3$ and to the right of $4$.\n\n**Answer:** $\\{x : x < -3\\} \\cup \\{x : x > 4\\}$\n\nCheck with $x = 5$: $25 - 5 - 12 = 8 > 0$; with $x = 0$: $-12$, not $> 0$, so the middle region is correctly excluded."
+   },
+   {
+    "question": "Solve $2x^2 \\le 5x + 3$.",
+    "solution": "Rearrange so one side is zero:\n$$2x^2 - 5x - 3 \\le 0$$\n\nFactorise ($ac = -6$; use $-6$ and $+1$):\n$$2x^2 - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)$$\n\nCritical values: $x = -\\frac{1}{2}$ and $x = 3$.\n\nThe curve $y = 2x^2 - 5x - 3$ is $\\cup$-shaped, so it is on or below the $x$-axis **between** the roots.\n\n**Answer:** $-\\frac{1}{2} \\le x \\le 3$ (equality included, so the ends are included)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Copies the inequality sign onto each critical value as if solving an equation: $(x - 4)(x + 3) > 0 \\Rightarrow x > 4$ and $x > -3$.",
+    "correction": "The critical values only mark where the expression is zero. Sketch the graph to see where it is positive: $x < -3$ or $x > 4$. (Test $x = 0$: $(0-4)(0+3) = -12$, which is not $> 0$, so $x > -3$ cannot be right.)"
+   },
+   {
+    "id": "m2",
+    "text": "Writes a two-part solution as one combined inequality, e.g. $4 < x < -3$ or $-3 > x > 4$.",
+    "correction": "No number is both greater than $4$ and less than $-3$, so a combined inequality is impossible here. Write the two parts separately: $x < -3$ or $x > 4$, i.e. $\\{x : x < -3\\} \\cup \\{x : x > 4\\}$."
+   },
+   {
+    "id": "m3",
+    "text": "Chooses the wrong region without sketching, e.g. gives $-3 < x < 4$ as the solution of $x^2 - x - 12 > 0$.",
+    "correction": "For a $\\cup$-shaped parabola the curve is **below** the axis between the roots and **above** outside them. $> 0$ means above, so the answer is outside: $x < -3$ or $x > 4$. Test a value such as $x = 0$ to confirm."
+   },
+   {
+    "id": "m4",
+    "text": "Square-roots both sides of $x^2 > 9$ to get $x > 3$, missing the negative part.",
+    "correction": "Rearrange: $x^2 - 9 > 0 \\Rightarrow (x - 3)(x + 3) > 0$, critical values $\\pm 3$. From the sketch, $x < -3$ or $x > 3$ (e.g. $x = -4$ gives $16 > 9$)."
+   }
+  ]
+ },
+ {
+  "id": "alg-graph-shapes",
+  "prerequisites": [
+   "alg-straight-line-graphs",
+   "alg-quadratic-graphs",
+   "num-powers-roots",
+   "num-negative-fractional-indices"
+  ],
+  "keyIdea": "Recognise each family of graphs from its equation:\n- **Linear** $y = mx + c$: a straight line.\n- **Quadratic** $y = ax^2 + bx + c$: a symmetrical parabola, $\\cup$ if $a > 0$, $\\cap$ if $a < 0$.\n- **Cubic** $y = ax^3 + \\ldots$: an S-shaped curve; for $a > 0$ it rises from bottom left to top right (for $a < 0$, top left to bottom right) and may have two turning points. $y = x^3$ passes through the origin.\n- **Reciprocal** $y = \\frac{k}{x}$: two separate branches that never touch the axes ($x = 0$ and $y = 0$ are asymptotes); quadrants 1 and 3 if $k > 0$, quadrants 2 and 4 if $k < 0$.\n- **Exponential** $y = a^x$ ($a > 1$): passes through $(0, 1)$, always above the $x$-axis, getting closer to it on the left and growing rapidly on the right.\n\nPlot from a table of values with a smooth curve; never join points across an asymptote.",
+  "workedExamples": [
+   {
+    "question": "State the type of graph and describe its shape: (a) $y = 3 - 2x$ (b) $y = x^3 - 4x$ (c) $y = \\frac{5}{x}$ (d) $y = 4 - x^2$ (e) $y = 3^x$",
+    "solution": "**(a)** Linear: a straight line with gradient $-2$ through $(0, 3)$.\n\n**(b)** Cubic ($x^3$ term, positive coefficient): S-shaped, rising from bottom left to top right, with two turning points; it crosses the $x$-axis where $x(x^2 - 4) = 0$, i.e. at $-2$, $0$, $2$.\n\n**(c)** Reciprocal with $k = 5 > 0$: two branches in the first and third quadrants, never touching the axes.\n\n**(d)** Quadratic with $x^2$ coefficient $-1$: $\\cap$-shaped, maximum at $(0, 4)$.\n\n**(e)** Exponential: passes through $(0, 1)$, increasing ever more steeply, approaching but never reaching the $x$-axis on the left."
+   },
+   {
+    "question": "Complete a table of values for $y = 2^x$ for $x = -2$ to $3$ and describe the graph.",
+    "solution": "Use the index laws: $2^{-2} = \\frac{1}{2^2} = \\frac{1}{4}$, $2^{-1} = \\frac{1}{2}$, $2^0 = 1$.\n\n| $x$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|---|---|\n| $y$ | $0.25$ | $0.5$ | $1$ | $2$ | $4$ | $8$ |\n\nEach step of $1$ in $x$ **doubles** $y$. All $y$-values are positive, so the curve stays above the $x$-axis, getting closer to it as $x$ decreases (the $x$-axis is an asymptote), passes through $(0, 1)$ and grows rapidly for positive $x$. Join the points with a smooth curve."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Evaluates negative or zero powers wrongly when tabulating $y = 2^x$: writes $2^{-1} = -2$ and $2^0 = 0$, so plots points below the axis or through the origin.",
+    "correction": "$2^{-1} = \\frac{1}{2}$ and $2^0 = 1$. An exponential graph $y = a^x$ ($a > 0$) is always above the $x$-axis and always passes through $(0, 1)$."
+   },
+   {
+    "id": "m2",
+    "text": "Joins the two branches of $y = \\frac{k}{x}$ across $x = 0$, or draws the curve crossing the axes.",
+    "correction": "$\\frac{k}{0}$ is undefined, so there is no point at $x = 0$, and $\\frac{k}{x}$ is never $0$, so the curve never meets $y = 0$. Draw two separate branches that get closer and closer to both axes."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses $y = x^3$ with $y = 3^x$, e.g. says $y = 3^x$ passes through the origin or gives negative $y$-values for negative $x$.",
+    "correction": "In $x^3$ the **variable is the base** (cubic: $(-2)^3 = -8$, through the origin). In $3^x$ the **variable is the power** (exponential: $3^{-2} = \\frac{1}{9} > 0$, through $(0, 1)$)."
+   },
+   {
+    "id": "m4",
+    "text": "Ignores the sign of $k$ for reciprocal graphs: draws $y = -\\frac{4}{x}$ in the first and third quadrants.",
+    "correction": "Test a point: $x = 1$ gives $y = -4$ (fourth quadrant) and $x = -1$ gives $y = 4$ (second quadrant). For $k < 0$ the branches are in the second and fourth quadrants."
+   }
+  ]
+ },
+ {
+  "id": "alg-graph-transformations",
+  "prerequisites": [
+   "alg-functions-basics",
+   "alg-graph-shapes",
+   "geo-transformations"
+  ],
+  "keyIdea": "Starting from $y = f(x)$ (US: a **parent function** such as $y = x^2$, $y = |x|$ or $y = \\sqrt{x}$):\n- $y = f(x) + a$: translation **up** $a$, vector $\\begin{pmatrix} 0 \\\\ a \\end{pmatrix}$.\n- $y = f(x + a)$: translation **left** $a$, vector $\\begin{pmatrix} -a \\\\ 0 \\end{pmatrix}$. Changes inside the bracket act on $x$ the opposite way to how they look.\n- $y = af(x)$: vertical stretch, scale factor $a$ ($y$-coordinates multiplied by $a$).\n- $y = f(ax)$: horizontal stretch, scale factor $\\frac{1}{a}$ ($x$-coordinates divided by $a$).\n- $y = -f(x)$: reflection in the $x$-axis; $y = f(-x)$: reflection in the $y$-axis.\n\nTrack key points: inside changes affect $x$, outside changes affect $y$. For $y = 2f(x - 3) + 1$, the point $(1, 4)$ maps to $(1 + 3,\\ 2 \\times 4 + 1) = (4, 9)$.",
+  "workedExamples": [
+   {
+    "question": "The point $A(2, 5)$ lies on the curve $y = f(x)$. Find the image of $A$ on each curve: (a) $y = f(x) - 3$ (b) $y = f(x + 4)$ (c) $y = 3f(x)$ (d) $y = f(2x)$ (e) $y = -f(x)$",
+    "solution": "**(a)** Outside the function, so $y$ changes: down 3. $(2, 2)$\n\n**(b)** Inside the bracket, so $x$ changes the opposite way: left 4. $(-2, 5)$\n\n**(c)** Vertical stretch, scale factor 3: $y \\times 3$. $(2, 15)$\n\n**(d)** Horizontal stretch, scale factor $\\frac{1}{2}$: $x \\div 2$. $(1, 5)$ (check: at $x = 1$, $f(2 \\times 1) = f(2) = 5$)\n\n**(e)** Reflection in the $x$-axis: $y \\to -y$. $(2, -5)$"
+   },
+   {
+    "question": "Describe the transformations that map $y = x^2$ onto $y = (x - 2)^2 + 3$, and state the turning point of the new curve.",
+    "solution": "With $f(x) = x^2$, the new curve is $y = f(x - 2) + 3$.\n\n$f(x - 2)$: translation 2 units **right**. Then $+3$: translation 3 units **up**. Combined: translation by vector $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$.\n\nThe turning point $(0, 0)$ of $y = x^2$ moves to $(2, 3)$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Moves $y = f(x + a)$ the wrong way: describes $y = f(x + 4)$ as a translation of 4 units to the right, so $(2, 5) \\to (6, 5)$.",
+    "correction": "For $y = f(x + 4)$ to give the same output as $f$ did at $x = 2$, we need $x + 4 = 2$, i.e. $x = -2$. So the graph moves 4 units **left**: $(2, 5) \\to (-2, 5)$."
+   },
+   {
+    "id": "m2",
+    "text": "Treats $y = f(2x)$ as a stretch by scale factor 2 in the $x$-direction, so $(2, 5) \\to (4, 5)$.",
+    "correction": "$y = f(ax)$ is a horizontal stretch with scale factor $\\frac{1}{a}$: $x$-coordinates are **divided** by 2, so $(2, 5) \\to (1, 5)$. Check: $f(2 \\times 1) = f(2) = 5$."
+   },
+   {
+    "id": "m3",
+    "text": "Mixes up $y = -f(x)$ and $y = f(-x)$: reflects in the $y$-axis for $-f(x)$, so $(2, 5) \\to (-2, 5)$.",
+    "correction": "A minus **outside** changes $y$: $y = -f(x)$ is a reflection in the $x$-axis, $(2, 5) \\to (2, -5)$. A minus **inside** changes $x$: $y = f(-x)$ is a reflection in the $y$-axis, $(2, 5) \\to (-2, 5)$."
+   },
+   {
+    "id": "m4",
+    "text": "Applies combined vertical transformations in the wrong order: for $y = 2f(x) + 1$ maps $(1, 4)$ to $(1, 2(4 + 1)) = (1, 10)$.",
+    "correction": "Follow the order of operations on the output: multiply the $y$-value by 2, **then** add 1: $2 \\times 4 + 1 = 9$, so the image is $(1, 9)$."
+   }
+  ]
+ },
+ {
+  "id": "alg-functions-basics",
+  "prerequisites": [
+   "alg-substitution-formulae",
+   "alg-linear-equations",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "A **function** takes each input and gives **exactly one** output. $f(x) = 3x - 2$ means \"multiply by 3, then subtract 2\".\n- **Evaluate**: $f(4) = 3(4) - 2 = 10$; substitute negatives in brackets.\n- **Solve** $f(x) = 7$: set $3x - 2 = 7$, so $x = 3$. ($f(7)$ is a different question: $f(7) = 19$.)\n- The **domain** is the set of allowed inputs; the **range** is the set of outputs. For $g(x) = \\sqrt{x - 1}$ we need $x - 1 \\ge 0$, so the domain is $x \\ge 1$ and the range is $g(x) \\ge 0$. For $h(x) = \\frac{1}{x - 2}$, $x = 2$ is excluded.\n- A **mapping** (or set of ordered pairs) is a function if no input has two outputs; two inputs may share an output.\n- **Vertical line test**: a graph is a function if every vertical line meets it at most once (a circle fails).",
+  "workedExamples": [
+   {
+    "question": "$f(x) = x^2 - 3x$. Find (a) $f(-2)$ (b) $f(2a)$ (c) the values of $x$ for which $f(x) = 10$.",
+    "solution": "**(a)** Substitute with brackets:\n$$f(-2) = (-2)^2 - 3(-2) = 4 + 6 = 10$$\n\n**(b)** Replace every $x$ with $2a$:\n$$f(2a) = (2a)^2 - 3(2a) = 4a^2 - 6a$$\n\n**(c)** Set the **output** equal to 10 and solve:\n$$x^2 - 3x = 10 \\Rightarrow x^2 - 3x - 10 = 0 \\Rightarrow (x - 5)(x + 2) = 0$$\nSo $x = 5$ or $x = -2$. (Consistent with part (a): $f(-2) = 10$.)"
+   },
+   {
+    "question": "(a) State the domain and range of $g(x) = \\sqrt{x - 1} + 2$.\n(b) Is the relation $\\{(1, 3), (2, 5), (1, 4), (3, 5)\\}$ a function? Explain.",
+    "solution": "**(a)** The square root needs $x - 1 \\ge 0$, so the **domain** is $x \\ge 1$.\n$\\sqrt{x - 1}$ takes every value $\\ge 0$, so $\\sqrt{x - 1} + 2 \\ge 2$. The **range** is $g(x) \\ge 2$.\n\n**(b)** No. The input $1$ is paired with two different outputs, $3$ and $4$. (The inputs $2$ and $3$ sharing the output $5$ is allowed.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Confuses solving $f(x) = 10$ with evaluating $f(10)$: for $f(x) = x^2 - 3x$, answers \"$f(x) = 10$\" with $10^2 - 3(10) = 70$.",
+    "correction": "$f(10)$ means the input is 10. $f(x) = 10$ means the **output** is 10, so solve $x^2 - 3x = 10$, giving $x = 5$ or $x = -2$."
+   },
+   {
+    "id": "m2",
+    "text": "Substitutes a negative input without brackets: $f(-2) = -2^2 - 3 \\times -2 = -4 + 6 = 2$.",
+    "correction": "Replace $x$ with $(-2)$ in brackets: $(-2)^2 - 3(-2) = 4 + 6 = 10$."
+   },
+   {
+    "id": "m3",
+    "text": "Thinks a relation is not a function when two inputs share an output, e.g. says $\\{(1, 3), (2, 3)\\}$ is not a function, or that a horizontal line can be used to test whether a graph is a function.",
+    "correction": "A function only needs each **input** to have one output; many-to-one is fine (e.g. $f(x) = x^2$ gives $f(2) = f(-2) = 4$). Use the **vertical** line test, not a horizontal one."
+   },
+   {
+    "id": "m4",
+    "text": "Applies the square-root restriction to $x$ rather than to the expression inside the root: says the domain of $g(x) = \\sqrt{x - 1}$ is $x \\ge 0$.",
+    "correction": "The expression **under** the root must be non-negative: $x - 1 \\ge 0$, so $x \\ge 1$. For example $g(0.5) = \\sqrt{-0.5}$ is not a real number."
+   }
+  ]
+ },
+ {
+  "id": "alg-key-features-functions",
+  "prerequisites": [
+   "alg-functions-basics",
+   "alg-straight-line-graphs",
+   "alg-quadratic-graphs"
+  ],
+  "keyIdea": "Describe a function's graph or equation using:\n- **Intercepts**: $y$-intercept $f(0)$; $x$-intercepts (zeros) where $f(x) = 0$.\n- **Increasing/decreasing intervals**: where the graph rises or falls from left to right, given as **$x$-intervals**, e.g. increasing on $(2, \\infty)$.\n- **Relative maximum/minimum**: the $y$-value at a peak or valley, which occurs at a particular $x$-value.\n- **End behavior**: what $f(x)$ does as $x \\to \\infty$ and as $x \\to -\\infty$, e.g. as $x \\to \\infty$, $f(x) \\to -\\infty$.\n- **Even/odd**: even if $f(-x) = f(x)$ (symmetric about the $y$-axis); odd if $f(-x) = -f(x)$ (symmetric about the origin); otherwise neither.\n- **Average rate of change** on $[a, b]$: $\\dfrac{f(b) - f(a)}{b - a}$, the slope of the line through $(a, f(a))$ and $(b, f(b))$.",
+  "workedExamples": [
+   {
+    "question": "For $f(x) = x^2 - 4x + 3$ find the intercepts, the intervals where $f$ is increasing and decreasing, the relative minimum, the end behavior, and the average rate of change on $[1, 4]$.",
+    "solution": "**Intercepts:** $f(0) = 3$, so the $y$-intercept is $(0, 3)$. $x^2 - 4x + 3 = (x - 1)(x - 3) = 0$, so the zeros are $x = 1$ and $x = 3$.\n\n**Vertex:** $x = -\\frac{b}{2a} = \\frac{4}{2} = 2$, and $f(2) = 4 - 8 + 3 = -1$.\n\n**Intervals:** decreasing on $(-\\infty, 2)$, increasing on $(2, \\infty)$.\n\n**Relative minimum:** $-1$, at $x = 2$.\n\n**End behavior:** as $x \\to \\infty$, $f(x) \\to \\infty$; as $x \\to -\\infty$, $f(x) \\to \\infty$.\n\n**Average rate of change on $[1, 4]$:** $f(4) = 16 - 16 + 3 = 3$ and $f(1) = 0$, so\n$$\\frac{f(4) - f(1)}{4 - 1} = \\frac{3 - 0}{3} = 1$$"
+   },
+   {
+    "question": "Determine whether each function is even, odd, or neither: (a) $f(x) = x^3 - 2x$ (b) $g(x) = x^4 + x^2$ (c) $h(x) = x^2 + x$",
+    "solution": "Find $f(-x)$ and compare.\n\n**(a)** $f(-x) = (-x)^3 - 2(-x) = -x^3 + 2x = -(x^3 - 2x) = -f(x)$: **odd**.\n\n**(b)** $g(-x) = (-x)^4 + (-x)^2 = x^4 + x^2 = g(x)$: **even**.\n\n**(c)** $h(-x) = x^2 - x$. This is neither $h(x) = x^2 + x$ nor $-h(x) = -x^2 - x$: **neither**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "States increasing/decreasing intervals using $y$-values (or points) instead of $x$-values, e.g. for $f(x) = x^2 - 4x + 3$ says \"increasing for $y > -1$\".",
+    "correction": "Intervals of increase and decrease describe the **inputs**: read along the $x$-axis. Here $f$ is decreasing on $(-\\infty, 2)$ and increasing on $(2, \\infty)$."
+   },
+   {
+    "id": "m2",
+    "text": "Computes average rate of change by averaging the outputs, e.g. on $[1, 4]$ gives $\\frac{f(1) + f(4)}{2} = \\frac{0 + 3}{2} = 1.5$, or inverts the fraction, $\\frac{4 - 1}{f(4) - f(1)}$.",
+    "correction": "Average rate of change is change in output divided by change in input: $\\frac{f(4) - f(1)}{4 - 1} = \\frac{3}{3} = 1$, the slope of the secant line."
+   },
+   {
+    "id": "m3",
+    "text": "Decides even/odd from the exponents alone: says $f(x) = x^3 + 1$ is odd \"because the power is odd\".",
+    "correction": "Test the definition: $f(-x) = -x^3 + 1$, while $-f(x) = -x^3 - 1$. These are not equal, and $f(-x) \\ne f(x)$ either, so $f$ is **neither**. The constant term spoils the symmetry."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the location instead of the value of a relative extremum: says \"the relative minimum is $2$\" for $f(x) = x^2 - 4x + 3$.",
+    "correction": "The relative minimum **value** is the output, $f(2) = -1$. It **occurs at** $x = 2$, and the point is $(2, -1)$."
+   }
+  ]
+ },
+ {
+  "id": "alg-composite-inverse-functions",
+  "prerequisites": [
+   "alg-functions-basics",
+   "alg-rearranging-formulae"
+  ],
+  "keyIdea": "The **composite function** $fg(x)$, also written $f(g(x))$ or $(f \\circ g)(x)$, means apply $g$ **first**, then $f$. With $f(x) = 2x + 1$ and $g(x) = x^2$: $fg(x) = 2x^2 + 1$ but $gf(x) = (2x + 1)^2$, so order matters.\n\nThe **inverse function** $f^{-1}$ undoes $f$. Method: write $y = 2x + 1$, make $x$ the subject, $x = \\frac{y - 1}{2}$, then $f^{-1}(x) = \\frac{x - 1}{2}$. Check: $ff^{-1}(x) = x$.\n\nOnly **one-one** functions have inverses; a **many-one** function such as $x^2$ needs a restricted domain (e.g. $x \\ge 0$).\n\nThe graph of $y = f^{-1}(x)$ is the **reflection** of $y = f(x)$ in the line $y = x$. The domain of $f^{-1}$ is the range of $f$, and the range of $f^{-1}$ is the domain of $f$. Note $f^{-1}(x)$ is not $\\frac{1}{f(x)}$.",
+  "workedExamples": [
+   {
+    "question": "$f(x) = 3x - 4$ and $g(x) = x^2 + 1$. Find (a) $fg(2)$ (b) $gf(x)$ (c) $f^{-1}(x)$.",
+    "solution": "**(a)** Apply $g$ first: $g(2) = 2^2 + 1 = 5$. Then $f(5) = 3(5) - 4 = 11$. So $fg(2) = 11$.\n\n**(b)** Apply $f$ first, then $g$:\n$$gf(x) = g(3x - 4) = (3x - 4)^2 + 1 = 9x^2 - 24x + 16 + 1 = 9x^2 - 24x + 17$$\n\n**(c)** Let $y = 3x - 4$. Then $y + 4 = 3x$, so $x = \\frac{y + 4}{3}$.\n$$f^{-1}(x) = \\frac{x + 4}{3}$$\nCheck: $f^{-1}(11) = \\frac{15}{3} = 5$ and $f(5) = 11$."
+   },
+   {
+    "question": "$f(x) = (x - 2)^2 + 1$, $x \\ge 2$. Find $f^{-1}(x)$ and state its domain and range.",
+    "solution": "The domain $x \\ge 2$ makes $f$ one-one. Range of $f$: $(x - 2)^2 \\ge 0$, so $f(x) \\ge 1$.\n\nLet $y = (x - 2)^2 + 1$:\n$$y - 1 = (x - 2)^2 \\Rightarrow x - 2 = \\sqrt{y - 1}$$\n(the positive root, because $x \\ge 2$ means $x - 2 \\ge 0$), so $x = 2 + \\sqrt{y - 1}$.\n$$f^{-1}(x) = 2 + \\sqrt{x - 1}$$\n\nDomain of $f^{-1}$ = range of $f$: $x \\ge 1$. Range of $f^{-1}$ = domain of $f$: $f^{-1}(x) \\ge 2$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Applies a composite in the wrong order: computes $fg(2)$ as $g(f(2))$, i.e. $f(2) = 2$ then $g(2) = 5$, for $f(x) = 3x - 4$, $g(x) = x^2 + 1$.",
+    "correction": "In $fg(x) = f(g(x))$ the function next to $x$ acts first. So $fg(2) = f(g(2)) = f(5) = 11$."
+   },
+   {
+    "id": "m2",
+    "text": "Thinks the inverse is the reciprocal: $f^{-1}(x) = \\frac{1}{f(x)} = \\frac{1}{3x - 4}$.",
+    "correction": "The $-1$ in $f^{-1}$ means \"inverse function\" (undo $f$), not a power. Rearrange $y = 3x - 4$ for $x$: $f^{-1}(x) = \\frac{x + 4}{3}$. Check $f^{-1}(f(2)) = f^{-1}(2) = 2$; the reciprocal gives $\\frac{1}{2}$."
+   },
+   {
+    "id": "m3",
+    "text": "Treats a composite function as a product: $fg(x) = f(x) \\times g(x) = (3x - 4)(x^2 + 1)$.",
+    "correction": "$fg(x)$ means substitute $g(x)$ **into** $f$: $fg(x) = 3(x^2 + 1) - 4 = 3x^2 - 1$."
+   },
+   {
+    "id": "m4",
+    "text": "Reverses the operations but not their order: for $f(x) = 3x - 4$ (\"$\\times 3$ then $-4$\") writes $f^{-1}(x) = \\frac{x}{3} + 4$.",
+    "correction": "To undo, reverse both the operations **and** their order: \"$+4$ then $\\div 3$\", so $f^{-1}(x) = \\frac{x + 4}{3}$. Check: $f(2) = 2$, and $\\frac{2 + 4}{3} = 2$, but $\\frac{2}{3} + 4 \\ne 2$."
+   }
+  ]
+ },
+ {
+  "id": "alg-algebraic-fractions",
+  "prerequisites": [
+   "alg-factorising-quadratics",
+   "num-fractions-add-subtract",
+   "num-fractions-multiply-divide",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "Algebraic fractions (US: rational expressions) follow the same rules as number fractions.\n\n**Simplify:** factorise the numerator and denominator fully, then cancel common **factors**, never individual terms: $\\frac{x^2 - 9}{x^2 + 5x + 6} = \\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \\frac{x - 3}{x + 2}$.\n\n**Multiply:** factorise, cancel, then multiply across. **Divide:** multiply by the reciprocal of the second fraction.\n\n**Add/subtract:** use a common denominator: $\\frac{2}{x} + \\frac{3}{x + 1} = \\frac{2(x + 1) + 3x}{x(x + 1)} = \\frac{5x + 2}{x(x + 1)}$. Put brackets round numerators when subtracting.\n\n**Solve:** multiply **every term** (on both sides) by the common denominator, solve the resulting equation (often a quadratic), and reject any value that makes a denominator zero.",
+  "workedExamples": [
+   {
+    "question": "Simplify fully $\\dfrac{2x^2 - 8}{x^2 + x - 6}$.",
+    "solution": "Factorise the numerator (common factor, then difference of two squares):\n$$2x^2 - 8 = 2(x^2 - 4) = 2(x - 2)(x + 2)$$\n\nFactorise the denominator:\n$$x^2 + x - 6 = (x + 3)(x - 2)$$\n\nCancel the common factor $(x - 2)$:\n$$\\frac{2(x - 2)(x + 2)}{(x + 3)(x - 2)} = \\frac{2(x + 2)}{x + 3}$$"
+   },
+   {
+    "question": "Solve $\\dfrac{3}{x - 1} - \\dfrac{2}{x + 2} = 1$.",
+    "solution": "Multiply **every** term by $(x - 1)(x + 2)$:\n$$3(x + 2) - 2(x - 1) = (x - 1)(x + 2)$$\n\nExpand, taking care with $-2(x - 1) = -2x + 2$:\n$$3x + 6 - 2x + 2 = x^2 + x - 2$$\n$$x + 8 = x^2 + x - 2$$\n\nRearrange:\n$$x^2 = 10 \\Rightarrow x = \\pm\\sqrt{10}$$\n\nNeither value makes $x - 1$ or $x + 2$ zero, so both are valid.\n\n**Answer:** $x = \\sqrt{10}$ or $x = -\\sqrt{10}$ ($\\approx 3.16$ or $-3.16$)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Cancels terms instead of factors: $\\frac{x + 6}{x + 3} = \\frac{6}{3} = 2$, or $\\frac{x^2 + 3}{x} = x + 3$.",
+    "correction": "You can only cancel a **factor** of the whole numerator and the whole denominator. $x + 6$ and $x + 3$ have no common factor, so $\\frac{x + 6}{x + 3}$ does not simplify (test $x = 1$: $\\frac{7}{4} \\ne 2$)."
+   },
+   {
+    "id": "m2",
+    "text": "Adds numerators and adds denominators: $\\frac{2}{x} + \\frac{3}{x + 1} = \\frac{5}{2x + 1}$.",
+    "correction": "Fractions need a common denominator before adding: $\\frac{2(x + 1)}{x(x + 1)} + \\frac{3x}{x(x + 1)} = \\frac{5x + 2}{x(x + 1)}$. (Test $x = 1$: $2 + 1.5 = 3.5$, but $\\frac{5}{3} \\ne 3.5$.)"
+   },
+   {
+    "id": "m3",
+    "text": "Loses a sign when subtracting a numerator: $3(x + 2) - 2(x - 1) = 3x + 6 - 2x - 2$.",
+    "correction": "The $-2$ multiplies **both** terms in the bracket: $-2(x - 1) = -2x + 2$, giving $3x + 6 - 2x + 2 = x + 8$."
+   },
+   {
+    "id": "m4",
+    "text": "When solving, multiplies only the fractions by the common denominator and not the other side: $\\frac{3}{x - 1} - \\frac{2}{x + 2} = 1 \\Rightarrow 3(x + 2) - 2(x - 1) = 1$.",
+    "correction": "Multiply **every** term on **both** sides: the right-hand side becomes $1 \\times (x - 1)(x + 2) = x^2 + x - 2$."
+   }
+  ]
+ },
+ {
+  "id": "alg-iteration",
+  "prerequisites": [
+   "alg-substitution-formulae",
+   "alg-rearranging-formulae",
+   "num-rounding"
+  ],
+  "keyIdea": "Many equations cannot be solved exactly, so we find approximate roots.\n\n**Change of sign:** if $f(x)$ is continuous and $f(a)$ and $f(b)$ have **opposite signs**, there is a root between $a$ and $b$. For $f(x) = x^3 + 2x - 5$: $f(1) = -2 < 0$ and $f(2) = 7 > 0$, so a root lies between 1 and 2.\n\n**Iteration:** rearrange $f(x) = 0$ into the form $x = g(x)$, e.g. $x^3 = 5 - 2x \\Rightarrow x = \\sqrt[3]{5 - 2x}$, giving the **iterative formula** $x_{n+1} = \\sqrt[3]{5 - 2x_n}$. Start with the given $x_0$ (or $x_1$), then feed each answer back in (use the ANS key, without rounding in between). Continue until successive values agree to the accuracy required.\n\nTo justify a rounded root, show a sign change across its bounds, e.g. $f(1.325) < 0$ and $f(1.335) > 0$, so the root is $1.33$ to 2 decimal places.",
+  "workedExamples": [
+   {
+    "question": "(a) Show that $x^3 + 2x - 5 = 0$ has a root between $x = 1$ and $x = 2$.\n(b) Show that the equation can be rearranged to give $x = \\sqrt[3]{5 - 2x}$.\n(c) Using $x_{n+1} = \\sqrt[3]{5 - 2x_n}$ with $x_0 = 1$, find $x_1$, $x_2$ and $x_3$ to 4 decimal places.",
+    "solution": "**(a)** Let $f(x) = x^3 + 2x - 5$.\n$f(1) = 1 + 2 - 5 = -2$ and $f(2) = 8 + 4 - 5 = 7$.\nThere is a change of sign (and $f$ is continuous), so there is a root between 1 and 2.\n\n**(b)** $x^3 + 2x - 5 = 0 \\Rightarrow x^3 = 5 - 2x \\Rightarrow x = \\sqrt[3]{5 - 2x}$\n\n**(c)** Feed each output back in, keeping full calculator accuracy:\n$$x_1 = \\sqrt[3]{5 - 2(1)} = \\sqrt[3]{3} = 1.4422\\ldots$$\n$$x_2 = \\sqrt[3]{5 - 2(1.4422\\ldots)} = 1.2837\\ldots$$\n$$x_3 = \\sqrt[3]{5 - 2(1.2837\\ldots)} = 1.3449\\ldots$$\n\nSo $x_1 = 1.4422$, $x_2 = 1.2837$, $x_3 = 1.3449$. The values oscillate around the root and get closer to it."
+   },
+   {
+    "question": "Continuing the iteration above gives $x_6 = 1.3274\\ldots$ and $x_7 = 1.3286\\ldots$. Show that the root is $1.33$ correct to 2 decimal places.",
+    "solution": "Both $x_6$ and $x_7$ round to $1.33$, which suggests the root is $1.33$. To prove it, check the sign of $f(x) = x^3 + 2x - 5$ at the bounds $1.325$ and $1.335$:\n$$f(1.325) = 2.3262\\ldots + 2.65 - 5 = -0.0238\\ldots < 0$$\n$$f(1.335) = 2.3793\\ldots + 2.67 - 5 = 0.0493\\ldots > 0$$\n\nThere is a change of sign, so the root lies between $1.325$ and $1.335$, and therefore rounds to $1.33$ (2 d.p.)."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks any difference in the values of $f$ shows a root: says $x^3 + x - 5 = 0$ has a root between $x = 2$ and $x = 3$ because $f(2) = 5$ and $f(3) = 25$ are different.",
+    "correction": "A root is where $f(x) = 0$, so the graph must cross the $x$-axis: $f$ must change from **negative to positive** (or vice versa). $f(2) = 5$ and $f(3) = 25$ are both positive, so this does not show a root."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the starting value every time instead of the previous output: computes $x_2 = \\sqrt[3]{5 - 2(1)}$ again, so the \"iterates\" never change.",
+    "correction": "Each new value comes from the **previous** one: $x_2 = \\sqrt[3]{5 - 2x_1}$ uses $x_1 = 1.4422\\ldots$, giving $x_2 = 1.2837\\ldots$. On a calculator, type the formula with ANS in place of $x_n$ and press = repeatedly."
+   },
+   {
+    "id": "m3",
+    "text": "Rounds each iterate (e.g. to 2 decimal places) before substituting it, so later values are inaccurate, and stops as soon as two rounded values happen to match.",
+    "correction": "Keep full calculator accuracy throughout (use ANS) and only round the values you write down. Confirm a rounded root with a sign-change check across its bounds."
+   },
+   {
+    "id": "m4",
+    "text": "Makes a sign error when rearranging: from $x^3 + 2x - 5 = 0$ writes $x^3 = 5 + 2x$, so $x = \\sqrt[3]{5 + 2x}$.",
+    "correction": "Moving $+2x$ and $-5$ to the other side changes their signs: $x^3 = 5 - 2x$, so $x = \\sqrt[3]{5 - 2x}$. Check a rearrangement by substituting back: cubing $x = \\sqrt[3]{5 - 2x}$ gives $x^3 = 5 - 2x$, i.e. $x^3 + 2x - 5 = 0$."
+   }
+  ]
+ },
+ {
+  "id": "alg-circle-equations",
+  "prerequisites": [
+   "alg-completing-the-square",
+   "alg-perpendicular-lines",
+   "geo-pythagoras",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "By Pythagoras, a circle with centre $(a, b)$ and radius $r$ has equation\n$$(x - a)^2 + (y - b)^2 = r^2$$\nWith centre the origin this is $x^2 + y^2 = r^2$. Watch the signs: $(x + 3)^2 + (y - 1)^2 = 16$ has centre $(-3, 1)$ and radius $\\sqrt{16} = 4$.\n\nFrom expanded form, complete the square in $x$ and in $y$:\n$$x^2 + y^2 - 6x + 4y - 12 = 0 \\Rightarrow (x - 3)^2 - 9 + (y + 2)^2 - 4 - 12 = 0$$\nso $(x - 3)^2 + (y + 2)^2 = 25$: centre $(3, -2)$, radius $5$.\n\n**Tangent:** perpendicular to the radius at the point of contact, so its gradient is the negative reciprocal of the radius gradient ($m_1 m_2 = -1$).\n**Chord:** the perpendicular bisector of any chord passes through the centre.",
+  "workedExamples": [
+   {
+    "question": "Find the equation of the tangent to the circle $x^2 + y^2 = 25$ at the point $P(3, 4)$, in the form $ax + by = c$.",
+    "solution": "The centre is $O(0, 0)$. Gradient of radius $OP$:\n$$\\frac{4 - 0}{3 - 0} = \\frac{4}{3}$$\n\nThe tangent is perpendicular to $OP$, so its gradient is the negative reciprocal: $-\\frac{3}{4}$.\n\nLine through $(3, 4)$ with gradient $-\\frac{3}{4}$:\n$$y - 4 = -\\frac{3}{4}(x - 3)$$\nMultiply by 4: $4y - 16 = -3x + 9$, so\n$$3x + 4y = 25$$\n\nCheck: $3(3) + 4(4) = 9 + 16 = 25$, so $P$ is on the line."
+   },
+   {
+    "question": "Find the centre and radius of the circle $x^2 + y^2 + 8x - 2y - 8 = 0$.",
+    "solution": "Group the $x$ terms and $y$ terms, then complete the square for each:\n$$x^2 + 8x = (x + 4)^2 - 16 \\qquad y^2 - 2y = (y - 1)^2 - 1$$\n\nSubstitute:\n$$(x + 4)^2 - 16 + (y - 1)^2 - 1 - 8 = 0$$\n$$(x + 4)^2 + (y - 1)^2 = 25$$\n\n**Centre** $(-4, 1)$, **radius** $\\sqrt{25} = 5$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Takes the signs inside the brackets as the coordinates of the centre: $(x + 3)^2 + (y - 1)^2 = 16$ has centre $(3, -1)$.",
+    "correction": "Compare with $(x - a)^2 + (y - b)^2$: $x + 3 = x - (-3)$, so $a = -3$, and $b = 1$. The centre is $(-3, 1)$. Check: the centre makes both brackets zero."
+   },
+   {
+    "id": "m2",
+    "text": "Gives $r^2$ as the radius: says $(x + 3)^2 + (y - 1)^2 = 16$ has radius 16.",
+    "correction": "The right-hand side is $r^2$, so $r = \\sqrt{16} = 4$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses the radius gradient (or just its negative) for the tangent: for $x^2 + y^2 = 25$ at $(3, 4)$ uses gradient $\\frac{4}{3}$ or $-\\frac{4}{3}$.",
+    "correction": "The tangent is **perpendicular** to the radius, so take the **negative reciprocal**: $-\\frac{3}{4}$. Check: $\\frac{4}{3} \\times -\\frac{3}{4} = -1$."
+   },
+   {
+    "id": "m4",
+    "text": "Forgets to subtract the squared constants when completing the square: $x^2 + y^2 - 6x + 4y - 12 = 0 \\Rightarrow (x - 3)^2 + (y + 2)^2 = 12$.",
+    "correction": "$(x - 3)^2 = x^2 - 6x + 9$ and $(y + 2)^2 = y^2 + 4y + 4$ add an extra $9 + 4 = 13$, which must be balanced: $(x - 3)^2 + (y + 2)^2 = 12 + 9 + 4 = 25$, so the radius is $5$."
+   }
+  ]
+ },
+ {
+  "id": "alg-absolute-value",
+  "prerequisites": [
+   "num-negative-numbers",
+   "alg-linear-equations",
+   "alg-linear-inequalities",
+   "alg-straight-line-graphs"
+  ],
+  "keyIdea": "$|x|$ is the distance from $x$ to $0$ on the number line, so it is never negative: $|-5| = |5| = 5$.\n\n**Equations:** isolate the absolute value first, then split into two cases. $|ax + b| = c$ with $c > 0$ means $ax + b = c$ **or** $ax + b = -c$; if $c < 0$ there is **no solution**. E.g. $|2x - 3| = 7 \\Rightarrow 2x - 3 = 7$ or $2x - 3 = -7$, so $x = 5$ or $x = -2$.\n\n**Inequalities:** $|u| < c$ (\"less thAND\") gives the compound inequality $-c < u < c$; $|u| > c$ (\"greatOR\") gives $u < -c$ **or** $u > c$.\n\n**Graphs:** $y = |x|$ is a V shape with vertex $(0, 0)$ and slopes $\\pm 1$. $y = a|x - h| + k$ has vertex $(h, k)$; it opens down if $a < 0$ and is steeper than $y = |x|$ if $|a| > 1$.",
+  "workedExamples": [
+   {
+    "question": "Solve $3|x + 2| - 4 = 11$.",
+    "solution": "Isolate the absolute value first:\n$$3|x + 2| = 15 \\Rightarrow |x + 2| = 5$$\n\nSplit into two cases:\n$$x + 2 = 5 \\Rightarrow x = 3 \\qquad x + 2 = -5 \\Rightarrow x = -7$$\n\nCheck: $3|3 + 2| - 4 = 15 - 4 = 11$ and $3|-7 + 2| - 4 = 3(5) - 4 = 11$.\n\n**Answer:** $x = 3$ or $x = -7$."
+   },
+   {
+    "question": "Solve $|2x - 1| \\ge 5$ and describe the graph of the solution on a number line.",
+    "solution": "A \"greater than\" absolute value inequality splits into an **or**:\n$$2x - 1 \\le -5 \\quad \\text{or} \\quad 2x - 1 \\ge 5$$\n$$2x \\le -4 \\quad \\text{or} \\quad 2x \\ge 6$$\n$$x \\le -2 \\quad \\text{or} \\quad x \\ge 3$$\n\nNumber line: a closed circle at $-2$ with an arrow to the left, and a closed circle at $3$ with an arrow to the right.\n\nCheck: $x = 0$ gives $|-1| = 1$, which is not $\\ge 5$, so values between $-2$ and $3$ are correctly excluded."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Splits into cases before isolating the absolute value: $3|x + 2| - 4 = 11 \\Rightarrow 3(x + 2) - 4 = 11$ or $3(x + 2) - 4 = -11$, giving $x = 3$ or $x = -\\frac{13}{3}$.",
+    "correction": "Get the absolute value alone first: $3|x + 2| = 15 \\Rightarrow |x + 2| = 5$. Only then split: $x + 2 = \\pm 5$, so $x = 3$ or $x = -7$. (Check $x = -\\frac{13}{3}$: $3\\left|-\\frac{7}{3}\\right| - 4 = 3 \\ne 11$.)"
+   },
+   {
+    "id": "m2",
+    "text": "Uses \"and\" for a \"greater than\" inequality: $|x - 4| > 3 \\Rightarrow 1 < x < 7$.",
+    "correction": "$|x - 4| > 3$ means $x$ is **more than** 3 units from 4, so $x - 4 < -3$ **or** $x - 4 > 3$: $x < 1$ or $x > 7$. The compound \"and\" form $1 < x < 7$ is the solution of $|x - 4| < 3$."
+   },
+   {
+    "id": "m3",
+    "text": "Solves an equation with a negative right-hand side as usual: $|x + 5| = -3 \\Rightarrow x = -8$ or $x = -2$.",
+    "correction": "An absolute value is a distance, so it can never equal a negative number: $|x + 5| = -3$ has **no solution**. (Check: $|-8 + 5| = 3 \\ne -3$.)"
+   },
+   {
+    "id": "m4",
+    "text": "Shifts the graph the wrong way horizontally: says $y = |x + 3| - 2$ has vertex $(3, -2)$.",
+    "correction": "Write it as $y = |x - (-3)| - 2$, so $h = -3$, $k = -2$ and the vertex is $(-3, -2)$. Check: the expression inside is zero when $x = -3$."
+   }
+  ]
+ },
+ {
+  "id": "alg-piecewise-functions",
+  "prerequisites": [
+   "alg-functions-basics",
+   "alg-straight-line-graphs",
+   "alg-linear-inequalities"
+  ],
+  "keyIdea": "A **piecewise function** uses different rules on different parts of its domain, e.g.\n$$f(x) = \\begin{cases} 2x + 1, & x < 1 \\\\ 5 - x, & x \\ge 1 \\end{cases}$$\n**Evaluate:** first decide which interval the input is in, then use only that rule: $f(1)$ uses $5 - x$, so $f(1) = 4$.\n\n**Graph:** draw each piece only over its own interval. Use a **closed dot** where an endpoint is included ($\\le$, $\\ge$) and an **open dot** where it is not ($<$, $>$). Here there is an open dot at $(1, 3)$ and a closed dot at $(1, 4)$.\n\n**Step functions** are constant on intervals. The greatest integer (floor) function $\\lfloor x \\rfloor$ gives the greatest integer less than or equal to $x$: $\\lfloor 2.7 \\rfloor = 2$, $\\lfloor -1.3 \\rfloor = -2$.\n\n**Write** a piecewise function from a graph or context by finding the equation of each piece (slope-intercept form) and its interval.",
+  "workedExamples": [
+   {
+    "question": "For $f(x) = \\begin{cases} 2x + 1, & x < 1 \\\\ 5 - x, & x \\ge 1 \\end{cases}$, find $f(-2)$, $f(1)$ and $f(3)$, and describe the graph.",
+    "solution": "**$f(-2)$:** $-2 < 1$, so use $2x + 1$: $f(-2) = 2(-2) + 1 = -3$.\n\n**$f(1)$:** $1 \\ge 1$, so use $5 - x$: $f(1) = 5 - 1 = 4$.\n\n**$f(3)$:** $3 \\ge 1$, so use $5 - x$: $f(3) = 2$.\n\n**Graph:** for $x < 1$, the line $y = 2x + 1$ (slope 2) approaching $(1, 3)$, drawn with an **open** dot at $(1, 3)$. For $x \\ge 1$, the line $y = 5 - x$ (slope $-1$) starting with a **closed** dot at $(1, 4)$. There is a jump at $x = 1$."
+   },
+   {
+    "question": "A phone plan costs \\$30 per month for up to 5 GB of data, plus \\$10 for each GB used over 5 GB (charged for parts of a GB too). Write a piecewise function for the monthly cost $C(g)$ for $g$ GB used, and find the cost for 7.5 GB.",
+    "solution": "Up to 5 GB the cost is a flat \\$30. Above 5 GB, it is \\$30 plus \\$10 for each GB over 5, i.e. $30 + 10(g - 5) = 10g - 20$.\n$$C(g) = \\begin{cases} 30, & 0 \\le g \\le 5 \\\\ 10g - 20, & g > 5 \\end{cases}$$\n\nFor $g = 7.5$ (greater than 5): $C(7.5) = 10(7.5) - 20 = 55$.\n\n**Cost:** \\$55."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong piece at a boundary: for $f(x) = \\begin{cases} 2x + 1, & x < 1 \\\\ 5 - x, & x \\ge 1 \\end{cases}$ computes $f(1) = 2(1) + 1 = 3$.",
+    "correction": "Check the inequalities: $x = 1$ does not satisfy $x < 1$ but does satisfy $x \\ge 1$, so $f(1) = 5 - 1 = 4$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses closed dots at every endpoint (or swaps open and closed), e.g. draws a closed dot at $(1, 3)$ for the piece $2x + 1,\\ x < 1$.",
+    "correction": "Strict inequalities ($<$, $>$) exclude the endpoint: **open** dot. Inclusive inequalities ($\\le$, $\\ge$) include it: **closed** dot. So $(1, 3)$ is open and $(1, 4)$ is closed."
+   },
+   {
+    "id": "m3",
+    "text": "Rounds negative numbers toward zero with the greatest integer function: $\\lfloor -1.3 \\rfloor = -1$.",
+    "correction": "$\\lfloor x \\rfloor$ is the greatest integer **less than or equal to** $x$. On the number line, $-1$ is to the right of $-1.3$, so it is too big; the answer is $\\lfloor -1.3 \\rfloor = -2$."
+   },
+   {
+    "id": "m4",
+    "text": "Draws each piece as a complete line across the whole coordinate plane instead of only over its interval.",
+    "correction": "Each rule only applies on its own interval: draw $y = 2x + 1$ only for $x < 1$ (to the left of $x = 1$) and $y = 5 - x$ only for $x \\ge 1$. A vertical line should meet the graph at most once."
+   }
+  ]
+ },
+ {
+  "id": "alg-linear-exponential-models",
+  "prerequisites": [
+   "alg-straight-line-graphs",
+   "alg-sequences-linear",
+   "rat-compound-growth-decay",
+   "alg-functions-basics"
+  ],
+  "keyIdea": "Over equal steps in $x$:\n- a **linear** function changes by a **constant difference** (adds the same amount each step);\n- an **exponential** function changes by a **constant ratio** (multiplies by the same factor each step).\n\nTest a table: $y = 5, 8, 11, 14$ has differences of $3$, so it is linear, $y = 3x + 5$ (with $x = 0, 1, 2, 3$). $y = 5, 10, 20, 40$ has ratios of $2$, so it is exponential, $y = 5(2)^x$.\n\nIn $y = mx + b$, $m$ is the rate of change (slope) and $b$ is the initial value. In $y = a(b)^x$, $a$ is the initial value and $b$ is the growth factor: $b = 1 + r$ for growth at rate $r$, $b = 1 - r$ for decay. So $y = 200(0.85)^t$ starts at 200 and decreases by 15 percent per time period. An increasing exponential eventually exceeds any increasing linear function.",
+  "workedExamples": [
+   {
+    "question": "Decide whether the table shows a linear or an exponential relationship, and write an equation.\n\n| $x$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|\n| $y$ | $400$ | $300$ | $225$ | $168.75$ |",
+    "solution": "Differences: $300 - 400 = -100$, $225 - 300 = -75$, $168.75 - 225 = -56.25$. Not constant, so **not linear**.\n\nRatios: $\\frac{300}{400} = 0.75$, $\\frac{225}{300} = 0.75$, $\\frac{168.75}{225} = 0.75$. Constant, so **exponential**.\n\nInitial value (at $x = 0$) is $400$; factor is $0.75$:\n$$y = 400(0.75)^x$$\n\nInterpretation: the quantity decreases by 25 percent each step, since $0.75 = 1 - 0.25$."
+   },
+   {
+    "question": "A town has 12,000 residents and its population grows by 3% per year. (a) Write a model for the population $P$ after $t$ years. (b) Predict the population after 5 years. (c) Compare with a town of 12,000 that grows by 360 people per year.",
+    "solution": "**(a)** Growth rate $r = 0.03$, so the growth factor is $1 + 0.03 = 1.03$:\n$$P = 12{,}000(1.03)^t$$\n\n**(b)** $P = 12{,}000(1.03)^5 = 12{,}000 \\times 1.15927\\ldots = 13{,}911.29\\ldots$, so about 13,911 residents.\n\n**(c)** Linear model: $P = 12{,}000 + 360t$. After 5 years, $12{,}000 + 1{,}800 = 13{,}800$. The exponential town is slightly larger, and the gap keeps widening because 3% of a growing population is more than 360 each year after the first."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Decides the model from the first two values only: for $400, 300, 225, \\ldots$ says \"it decreases by 100, so $y = 400 - 100x$\".",
+    "correction": "Check **all** consecutive differences and ratios. The differences ($-100$, $-75$, $-56.25$) are not constant, but the ratios are all $0.75$, so the model is exponential: $y = 400(0.75)^x$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the percent rate itself as the base: 3% growth written as $P = 12{,}000(0.03)^t$ or $12{,}000(3)^t$; 15% decay written as $(0.15)^t$.",
+    "correction": "The base is the growth/decay **factor**: growth by $r$ gives $1 + r$, decay by $r$ gives $1 - r$. So 3% growth is $(1.03)^t$ and 15% decay is $(0.85)^t$."
+   },
+   {
+    "id": "m3",
+    "text": "Interprets the base as an amount added each period: says $y = 50(1.2)^x$ \"increases by 1.2 each year\".",
+    "correction": "In $y = a(b)^x$ the value is **multiplied** by $b$ each period: $\\times 1.2$ means an increase of 20 percent per period. The first year it rises by $50 \\times 0.2 = 10$, the next by $60 \\times 0.2 = 12$, and so on."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks a linear function that starts higher will always stay ahead: claims $y = 100 + 50x$ is always greater than $y = 2^x$.",
+    "correction": "Exponential growth eventually overtakes any linear growth. At $x = 10$: $100 + 500 = 600$ but $2^{10} = 1{,}024$. (They cross between $x = 9$ and $x = 10$.)"
+   }
+  ]
+ },
+ {
+  "id": "alg-radical-equations",
+  "prerequisites": [
+   "num-surds",
+   "num-negative-fractional-indices",
+   "alg-quadratic-equations-factorising"
+  ],
+  "keyIdea": "To solve a radical equation:\n1. **Isolate** the radical on one side.\n2. Raise both sides to the power that undoes it: square for $\\sqrt{\\ }$, cube for $\\sqrt[3]{\\ }$.\n3. Solve the resulting equation.\n4. **Check every solution in the original equation.**\n\nSquaring can create **extraneous solutions**, because $a^2 = b^2$ does not mean $a = b$. Example: $\\sqrt{x + 7} = x - 5 \\Rightarrow x + 7 = x^2 - 10x + 25 \\Rightarrow x^2 - 11x + 18 = 0$, so $x = 2$ or $x = 9$. Check: $x = 9$ gives $\\sqrt{16} = 4$ (true); $x = 2$ gives $\\sqrt{9} = 3$ but $2 - 5 = -3$ (false), so $x = 2$ is extraneous.\n\nCubing does not create extraneous solutions. For **rational exponents**, raise both sides to the reciprocal power: $x^{3/2} = 8 \\Rightarrow x = 8^{2/3} = 4$.",
+  "workedExamples": [
+   {
+    "question": "Solve $\\sqrt{x + 2} + 4 = x$.",
+    "solution": "Isolate the radical:\n$$\\sqrt{x + 2} = x - 4$$\n\nSquare both sides (the right side is a binomial):\n$$x + 2 = (x - 4)^2 = x^2 - 8x + 16$$\n\nRearrange and factor:\n$$x^2 - 9x + 14 = 0 \\Rightarrow (x - 2)(x - 7) = 0 \\Rightarrow x = 2 \\text{ or } x = 7$$\n\nCheck in the **original** equation:\n- $x = 7$: $\\sqrt{9} + 4 = 3 + 4 = 7$. True.\n- $x = 2$: $\\sqrt{4} + 4 = 6 \\ne 2$. Extraneous.\n\n**Answer:** $x = 7$."
+   },
+   {
+    "question": "Solve (a) $\\sqrt[3]{2x - 5} = 3$ (b) $2x^{3/2} - 3 = 51$.",
+    "solution": "**(a)** Cube both sides:\n$$2x - 5 = 27 \\Rightarrow 2x = 32 \\Rightarrow x = 16$$\nCheck: $\\sqrt[3]{27} = 3$.\n\n**(b)** Isolate the power:\n$$2x^{3/2} = 54 \\Rightarrow x^{3/2} = 27$$\nRaise both sides to the reciprocal power $\\frac{2}{3}$:\n$$x = 27^{2/3} = \\left(\\sqrt[3]{27}\\right)^2 = 3^2 = 9$$\nCheck: $2(9)^{3/2} - 3 = 2(27) - 3 = 51$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Squares each term separately: $\\sqrt{x + 2} = x - 4 \\Rightarrow x + 2 = x^2 - 16$ (or $x^2 + 16$).",
+    "correction": "Square the **whole** side: $(x - 4)^2 = (x - 4)(x - 4) = x^2 - 8x + 16$."
+   },
+   {
+    "id": "m2",
+    "text": "Squares before isolating the radical: $\\sqrt{x + 2} + 4 = x \\Rightarrow x + 2 + 16 = x^2$.",
+    "correction": "$(\\sqrt{x + 2} + 4)^2$ is not $x + 2 + 16$; it has a middle term $8\\sqrt{x + 2}$, so the radical does not disappear. Isolate first: $\\sqrt{x + 2} = x - 4$, then square."
+   },
+   {
+    "id": "m3",
+    "text": "Does not check solutions, so keeps an extraneous one: gives $x = 2$ or $x = 7$ for $\\sqrt{x + 2} + 4 = x$.",
+    "correction": "Substitute each answer into the **original** equation. $x = 2$ gives $\\sqrt{4} + 4 = 6 \\ne 2$, so reject it. Only $x = 7$ works."
+   },
+   {
+    "id": "m4",
+    "text": "Rejects a negative solution automatically, thinking negatives must be extraneous: for $\\sqrt{x + 10} = x + 4$ (which gives $x = -1$ or $x = -6$) rejects both.",
+    "correction": "Extraneous means it fails the **check**, not that it is negative. $x = -1$: $\\sqrt{9} = 3$ and $-1 + 4 = 3$, so it is valid. $x = -6$: $\\sqrt{4} = 2$ but $-6 + 4 = -2$, so only $x = -6$ is extraneous."
+   }
+  ]
+ },
+ {
+  "id": "alg-synthetic-division",
+  "prerequisites": [
+   "alg-polynomial-operations",
+   "alg-quadratic-equations-factorising",
+   "alg-quadratic-formula"
+  ],
+  "keyIdea": "**Synthetic division** divides a polynomial by $x - c$ using only coefficients.\n1. Write $c$ in the box (for $x + 2$, use $c = -2$).\n2. List **all** coefficients in descending powers, writing $0$ for any missing power.\n3. Bring down the first coefficient. Multiply it by $c$, write the result under the next coefficient, and **add**. Repeat.\n4. The last number is the **remainder**; the others are the coefficients of the quotient, which has degree one **less** than the dividend.\n\nSo $p(x) = (x - c)q(x) + r$. **Remainder Theorem:** the remainder equals $p(c)$. If the remainder is $0$, then $c$ is a zero of $p$ and $x - c$ is a factor; factor the quotient (or use the quadratic formula) to find the remaining zeros.",
+  "workedExamples": [
+   {
+    "question": "Divide $x^3 - 7x - 6$ by $x + 2$ using synthetic division, and hence find all the zeros of $p(x) = x^3 - 7x - 6$.",
+    "solution": "Dividing by $x + 2 = x - (-2)$, so $c = -2$. The $x^2$ term is missing, so the coefficients are $1, 0, -7, -6$.\n$$\\begin{array}{r|rrrr} -2 & 1 & 0 & -7 & -6 \\\\ & & -2 & 4 & 6 \\\\ \\hline & 1 & -2 & -3 & 0 \\end{array}$$\n\nBring down 1; $1 \\times (-2) = -2$, $0 + (-2) = -2$; $-2 \\times (-2) = 4$, $-7 + 4 = -3$; $-3 \\times (-2) = 6$, $-6 + 6 = 0$.\n\nRemainder $0$, so $x + 2$ is a factor and the quotient is $x^2 - 2x - 3$:\n$$p(x) = (x + 2)(x^2 - 2x - 3) = (x + 2)(x - 3)(x + 1)$$\n\n**Zeros:** $x = -2$, $x = 3$, $x = -1$."
+   },
+   {
+    "question": "Use synthetic division to find the quotient and remainder when $p(x) = 2x^3 - 5x^2 + 4x - 7$ is divided by $x - 3$. Verify the remainder using the Remainder Theorem.",
+    "solution": "$c = 3$; coefficients $2, -5, 4, -7$.\n$$\\begin{array}{r|rrrr} 3 & 2 & -5 & 4 & -7 \\\\ & & 6 & 3 & 21 \\\\ \\hline & 2 & 1 & 7 & 14 \\end{array}$$\n\nQuotient: $2x^2 + x + 7$; remainder: $14$. So $p(x) = (x - 3)(2x^2 + x + 7) + 14$.\n\nRemainder Theorem check:\n$$p(3) = 2(27) - 5(9) + 4(3) - 7 = 54 - 45 + 12 - 7 = 14$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong sign for $c$: to divide by $x + 2$, puts $2$ in the box.",
+    "correction": "Synthetic division divides by $x - c$. Since $x + 2 = x - (-2)$, use $c = -2$. (Equivalently, $c$ is the solution of $x + 2 = 0$.)"
+   },
+   {
+    "id": "m2",
+    "text": "Leaves out the zero placeholder for a missing power: divides $x^3 - 7x - 6$ by $x + 2$ using only the coefficients $1, -7, -6$.",
+    "correction": "Every power from the highest down to the constant needs a column: $x^3 + 0x^2 - 7x - 6$ gives coefficients $1, 0, -7, -6$. Without the $0$ the columns are misaligned and the answer is wrong."
+   },
+   {
+    "id": "m3",
+    "text": "Subtracts in each column (as in long division) instead of adding: with $c = 3$ and coefficients $2, -5, 4, -7$ writes $-5 - 6 = -11$.",
+    "correction": "In synthetic division you **add** each column: $-5 + 6 = 1$. (The subtraction of long division is already built in by using $c$ rather than $-c$.)"
+   },
+   {
+    "id": "m4",
+    "text": "Reads the bottom row as a quotient of the same degree as the dividend: from $1, -2, -3 \\mid 0$ writes the quotient as $x^3 - 2x^2 - 3x$.",
+    "correction": "Dividing by a linear factor lowers the degree by one, so the bottom row $1, -2, -3$ (before the remainder) means $x^2 - 2x - 3$."
+   }
+  ]
+ },
+ {
+  "id": "alg-rational-functions",
+  "prerequisites": [
+   "alg-algebraic-fractions",
+   "alg-graph-shapes",
+   "alg-graph-transformations",
+   "alg-synthetic-division"
+  ],
+  "keyIdea": "For $f(x) = \\frac{p(x)}{q(x)}$, **factor first**.\n- A factor that cancels from numerator and denominator gives a **hole** (removable discontinuity); find its $y$-value from the simplified function.\n- Zeros of the denominator that remain after canceling give **vertical asymptotes**.\n- Zeros of the simplified numerator give **$x$-intercepts**; the $y$-intercept is $f(0)$.\n- **Horizontal asymptote** (degree $n$ of numerator, $d$ of denominator): if $n < d$, $y = 0$; if $n = d$, $y = \\frac{\\text{leading coefficient of numerator}}{\\text{leading coefficient of denominator}}$; if $n = d + 1$, there is no horizontal asymptote but a **slant (oblique) asymptote** $y = $ the quotient from division.\n\nExample: $\\frac{(x - 1)(x + 2)}{(x - 1)(x - 3)}$ has a hole at $x = 1$, vertical asymptote $x = 3$, horizontal asymptote $y = 1$. A graph may cross a horizontal asymptote, but never a vertical one. To graph, plot these features, then test points in each region.",
+  "workedExamples": [
+   {
+    "question": "Find the holes, asymptotes and intercepts of $f(x) = \\dfrac{2x^2 - 2x - 4}{x^2 - 4}$.",
+    "solution": "Factor:\n$$f(x) = \\frac{2(x^2 - x - 2)}{(x - 2)(x + 2)} = \\frac{2(x - 2)(x + 1)}{(x - 2)(x + 2)} = \\frac{2(x + 1)}{x + 2}, \\quad x \\ne 2$$\n\n**Hole** at $x = 2$: simplified value $\\frac{2(3)}{4} = \\frac{3}{2}$, so the hole is at $\\left(2, \\frac{3}{2}\\right)$.\n\n**Vertical asymptote:** $x = -2$ (remaining zero of the denominator).\n\n**Horizontal asymptote:** degrees equal (2 and 2), so $y = \\frac{2}{1} = 2$.\n\n**$x$-intercept:** $2(x + 1) = 0 \\Rightarrow (-1, 0)$.\n\n**$y$-intercept:** $f(0) = \\frac{-4}{-4} = 1$, so $(0, 1)$."
+   },
+   {
+    "question": "Find the vertical and slant asymptotes of $f(x) = \\dfrac{x^2 + 3x + 1}{x - 1}$.",
+    "solution": "**Vertical asymptote:** the denominator is zero at $x = 1$, and the numerator there is $1 + 3 + 1 = 5 \\ne 0$, so $x = 1$.\n\nThe numerator's degree is one more than the denominator's, so there is a slant asymptote. Divide using synthetic division with $c = 1$:\n$$\\begin{array}{r|rrr} 1 & 1 & 3 & 1 \\\\ & & 1 & 4 \\\\ \\hline & 1 & 4 & 5 \\end{array}$$\n\nSo $f(x) = x + 4 + \\frac{5}{x - 1}$. As $x \\to \\pm\\infty$, $\\frac{5}{x - 1} \\to 0$.\n\n**Slant asymptote:** $y = x + 4$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats every zero of the original denominator as a vertical asymptote: says $f(x) = \\frac{2x^2 - 2x - 4}{x^2 - 4}$ has vertical asymptotes $x = 2$ and $x = -2$.",
+    "correction": "Factor and cancel first. $(x - 2)$ cancels, so $x = 2$ is a **hole** at $\\left(2, \\frac{3}{2}\\right)$, not an asymptote. Only $x = -2$ is a vertical asymptote."
+   },
+   {
+    "id": "m2",
+    "text": "Finds the horizontal asymptote from the constant terms (or always says $y = 0$): for $\\frac{2x^2 - 2x - 4}{x^2 - 4}$ says the horizontal asymptote is $y = \\frac{-4}{-4} = 1$.",
+    "correction": "For large $|x|$ the highest-power terms dominate. With equal degrees, divide the **leading** coefficients: $y = \\frac{2}{1} = 2$. ($y = 0$ is only correct when the denominator has the higher degree.)"
+   },
+   {
+    "id": "m3",
+    "text": "Believes a graph can never cross its horizontal asymptote, e.g. says $f(x) = \\frac{x}{x^2 + 1}$ cannot pass through the origin because $y = 0$ is its asymptote.",
+    "correction": "A horizontal asymptote describes end behavior only (as $x \\to \\pm\\infty$). Here $f(0) = \\frac{0}{1} = 0$, so the graph crosses $y = 0$ at the origin. Only **vertical** asymptotes can never be crossed."
+   },
+   {
+    "id": "m4",
+    "text": "Finds the hole's $y$-value by substituting into the original function, gets $\\frac{0}{0}$, and concludes there is no point to mark (or writes the hole as $(2, 0)$).",
+    "correction": "Substitute the $x$-value of the hole into the **simplified** function: $\\frac{2(2 + 1)}{2 + 2} = \\frac{3}{2}$, so draw an open circle at $\\left(2, \\frac{3}{2}\\right)$."
+   }
+  ]
+ },
+ {
+  "id": "alg-conic-sections",
+  "prerequisites": [
+   "alg-circle-equations",
+   "alg-completing-the-square",
+   "alg-quadratic-graphs",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "keyIdea": "Standard forms with center or vertex $(h, k)$:\n- **Circle:** $(x - h)^2 + (y - k)^2 = r^2$.\n- **Parabola:** $(x - h)^2 = 4p(y - k)$ opens up ($p > 0$) or down; $(y - k)^2 = 4p(x - h)$ opens right or left. The focus is $p$ units from the vertex inside the curve; the directrix is $p$ units on the other side.\n- **Ellipse:** $\\frac{(x - h)^2}{a^2} + \\frac{(y - k)^2}{b^2} = 1$; the major axis is along the variable with the **larger** denominator; vertices are $a$ units from the center (larger value) and foci $c$ units, with $c^2 = a^2 - b^2$.\n- **Hyperbola:** $\\frac{(x - h)^2}{a^2} - \\frac{(y - k)^2}{b^2} = 1$ opens left/right; vertices $a$ from the center, $c^2 = a^2 + b^2$, asymptotes $y - k = \\pm\\frac{b}{a}(x - h)$.\n\nIdentify $Ax^2 + Cy^2 + Dx + Ey + F = 0$: one squared term means parabola; $A = C$ circle; same signs ellipse; opposite signs hyperbola. Complete the square to reach standard form.",
+  "workedExamples": [
+   {
+    "question": "Identify the conic $9x^2 + 4y^2 - 36x + 8y + 4 = 0$, write it in standard form, and find its center, vertices and foci.",
+    "solution": "$A = 9$, $C = 4$: same sign, different values, so it is an **ellipse**.\n\nGroup and factor:\n$$9(x^2 - 4x) + 4(y^2 + 2y) = -4$$\n\nComplete the square, adding $9 \\times 4 = 36$ and $4 \\times 1 = 4$ to **both** sides:\n$$9(x - 2)^2 + 4(y + 1)^2 = -4 + 36 + 4 = 36$$\n\nDivide by 36:\n$$\\frac{(x - 2)^2}{4} + \\frac{(y + 1)^2}{9} = 1$$\n\nCenter $(2, -1)$. The larger denominator, 9, is under $y$, so the major axis is vertical with $a = 3$, $b = 2$.\n\n**Vertices:** $(2, -1 \\pm 3)$, i.e. $(2, 2)$ and $(2, -4)$.\n\n**Foci:** $c^2 = 9 - 4 = 5$, so $c = \\sqrt{5}$ and the foci are $(2, -1 + \\sqrt{5})$ and $(2, -1 - \\sqrt{5})$."
+   },
+   {
+    "question": "Find the vertex, focus and directrix of the parabola $(y - 1)^2 = -8(x + 3)$.",
+    "solution": "Compare with $(y - k)^2 = 4p(x - h)$: $h = -3$, $k = 1$, and $4p = -8$, so $p = -2$.\n\n**Vertex:** $(-3, 1)$. Since $y$ is squared and $p < 0$, the parabola opens to the **left**.\n\n**Focus:** 2 units left of the vertex: $(-3 - 2, 1) = (-5, 1)$.\n\n**Directrix:** 2 units right of the vertex: $x = -1$."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong relationship for $c$: for an ellipse with $a^2 = 9$, $b^2 = 4$ writes $c^2 = a^2 + b^2 = 13$ (or uses $c^2 = a^2 - b^2$ for a hyperbola).",
+    "correction": "For an **ellipse** the foci are inside, closer than the vertices: $c^2 = a^2 - b^2$, here $c = \\sqrt{5}$. For a **hyperbola** the foci are beyond the vertices: $c^2 = a^2 + b^2$."
+   },
+   {
+    "id": "m2",
+    "text": "Always takes the denominator under $x^2$ as $a^2$, so gets the major axis wrong: for $\\frac{(x - 2)^2}{4} + \\frac{(y + 1)^2}{9} = 1$ gives vertices $(4, -1)$ and $(0, -1)$.",
+    "correction": "For an ellipse, $a^2$ is the **larger** denominator. Here $9$ is under $y$, so the major axis is vertical and the vertices are $(2, 2)$ and $(2, -4)$; $(4, -1)$ and $(0, -1)$ are the co-vertices."
+   },
+   {
+    "id": "m3",
+    "text": "Confuses $4p$ with $p$: for $x^2 = 12y$ says the focus is $(0, 12)$ and the directrix is $y = -12$.",
+    "correction": "$4p = 12$, so $p = 3$: the focus is $(0, 3)$ and the directrix is $y = -3$."
+   },
+   {
+    "id": "m4",
+    "text": "Does not balance the equation correctly when completing the square with a factored coefficient: from $9(x^2 - 4x) + 4(y^2 + 2y) = -4$ adds only $4 + 1$ to the right side, getting $9(x - 2)^2 + 4(y + 1)^2 = 1$.",
+    "correction": "The added squares are multiplied by the factors outside the brackets: inside $9(\\ldots)$ adding $4$ really adds $9 \\times 4 = 36$, and inside $4(\\ldots)$ adding $1$ adds $4$. So the right side is $-4 + 36 + 4 = 36$."
+   }
+  ]
+ }
+]

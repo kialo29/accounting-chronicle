@@ -1,0 +1,520 @@
+[
+ {
+  "id": "prob-basic-probability",
+  "prerequisites": [
+   "num-fractions-equivalence",
+   "num-fdp-conversions"
+  ],
+  "keyIdea": "Probability measures how likely an event is on a **scale from 0 to 1**: $0$ = impossible, $\\tfrac{1}{2}$ = evens, $1$ = certain. It can be written as a fraction, decimal or percentage, but never as a ratio, and it can never be negative or greater than $1$.\n\nWhen all outcomes are **equally likely**:\n$$P(A) = \\frac{\\text{number of outcomes in } A}{\\text{total number of outcomes}}$$\n\nThe probabilities of all the possible outcomes (one of which must happen, and only one) **add up to 1**. So the probability that an event does *not* happen is\n$$P(\\text{not } A) = 1 - P(A)$$\n\nUse the \"sum to 1\" fact to find a missing probability in a table: subtract the known probabilities from $1$, then share what is left between the unknowns.",
+  "workedExamples": [
+   {
+    "question": "A bag contains 5 red, 3 blue and 4 green counters. One counter is taken at random.\n\n(a) Find $P(\\text{blue})$.\n\n(b) Find $P(\\text{not green})$.",
+    "solution": "Total number of counters: $5 + 3 + 4 = 12$, all equally likely to be chosen.\n\n(a) There are 3 blue counters:\n$$P(\\text{blue}) = \\frac{3}{12} = \\frac{1}{4}$$\n\n(b) There are 4 green counters, so\n$$P(\\text{green}) = \\frac{4}{12} = \\frac{1}{3}$$\n$$P(\\text{not green}) = 1 - \\frac{1}{3} = \\frac{2}{3}$$\n\nCheck: the counters that are not green are the 8 red and blue ones, and $\\frac{8}{12} = \\frac{2}{3}$ ✓"
+   },
+   {
+    "question": "A biased spinner lands on red, blue, green or yellow. The table shows some of the probabilities. Landing on green and landing on yellow are equally likely.\n\n| Colour | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Probability | $0.15$ | $0.4$ | $x$ | $x$ |\n\nFind the value of $x$.",
+    "solution": "The probabilities of all the outcomes add up to 1:\n$$0.15 + 0.4 + x + x = 1$$\n\nCollect the known values:\n$$0.55 + 2x = 1$$\n\nSubtract $0.55$:\n$$2x = 0.45$$\n\nDivide by 2 (green and yellow share the remaining probability equally):\n$$x = 0.225$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats the different *types* of outcome as equally likely, e.g. for a bag of 5 red and 3 blue counters: \"it is either red or blue, so $P(\\text{red}) = \\frac{1}{2}$\".",
+    "correction": "Count every individual equally likely outcome (each counter). There are 8 counters and 5 are red, so $P(\\text{red}) = \\frac{5}{8}$."
+   },
+   {
+    "id": "m2",
+    "text": "Writes a probability as a ratio of favourable to unfavourable outcomes (odds), e.g. 3 blue out of 12 counters: $P(\\text{blue}) = 3:9$ or $\\frac{3}{9}$.",
+    "correction": "The denominator is the **total** number of outcomes, not the number of other outcomes, and probabilities are written as fractions, decimals or percentages: $P(\\text{blue}) = \\frac{3}{12} = \\frac{1}{4}$."
+   },
+   {
+    "id": "m3",
+    "text": "Mixes up percentages and decimals when using $P(\\text{not } A)$, e.g. $P(A) = 0.3$ so $P(\\text{not } A) = 100 - 0.3 = 99.7$, giving a probability greater than 1.",
+    "correction": "Subtract from $1$ when working in fractions or decimals ($1 - 0.3 = 0.7$), or from $100\\%$ only when working in percentages ($100\\% - 30\\% = 70\\%$). Any answer above $1$ is impossible and is a signal to check."
+   },
+   {
+    "id": "m4",
+    "text": "Believes that past results change the next outcome of a fair event (the gambler's fallacy), e.g. \"a fair coin has landed heads 5 times in a row, so tails is now more likely than $\\frac{1}{2}$\".",
+    "correction": "A fair coin has no memory: each flip is a separate event and $P(\\text{tails}) = \\frac{1}{2}$ every time, whatever happened before."
+   }
+  ]
+ },
+ {
+  "id": "prob-sample-spaces",
+  "prerequisites": [
+   "prob-basic-probability"
+  ],
+  "keyIdea": "The **sample space** is the set of all possible outcomes. List outcomes **systematically** (fix the first item, run through every option for the second, then move on) so that none are missed or repeated.\n\nFor two events, a **sample space diagram** is a grid: one event across the top, the other down the side, one cell per combined outcome. If one event has $m$ equally likely outcomes and the other has $n$, there are $m \\times n$ equally likely combined outcomes, so\n$$P(\\text{event}) = \\frac{\\text{number of cells that fit}}{m \\times n}$$\n\nOrder matters: with two dice, $(2, 5)$ and $(5, 2)$ are *different* outcomes. This is how compound events (US: Grade 7) are handled: build the list, table or tree of all outcomes, then count.",
+  "workedExamples": [
+   {
+    "question": "Two fair six-sided dice are rolled and their scores are added. Find the probability that the total is 8.",
+    "solution": "Draw a sample space diagram of the totals:\n\n| $+$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| **1** | 2 | 3 | 4 | 5 | 6 | 7 |\n| **2** | 3 | 4 | 5 | 6 | 7 | **8** |\n| **3** | 4 | 5 | 6 | 7 | **8** | 9 |\n| **4** | 5 | 6 | 7 | **8** | 9 | 10 |\n| **5** | 6 | 7 | **8** | 9 | 10 | 11 |\n| **6** | 7 | **8** | 9 | 10 | 11 | 12 |\n\nThere are $6 \\times 6 = 36$ equally likely outcomes.\n\nThe totals of 8 (in bold) are $(2,6), (3,5), (4,4), (5,3), (6,2)$: that is 5 outcomes.\n$$P(\\text{total } 8) = \\frac{5}{36}$$"
+   },
+   {
+    "question": "A fair coin is flipped and a fair spinner numbered 1, 2, 3 is spun. List all the possible outcomes and find the probability of getting a head and an odd number.",
+    "solution": "Fix the coin result, then run through every spinner result:\n\nH1, H2, H3, T1, T2, T3\n\nThat is $2 \\times 3 = 6$ equally likely outcomes.\n\nHead and odd: H1 and H3, which is 2 outcomes.\n$$P(\\text{head and odd}) = \\frac{2}{6} = \\frac{1}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats $(2,5)$ and $(5,2)$ as the same outcome, so thinks two dice give 21 outcomes and $P(\\text{total } 7) = \\frac{3}{21}$.",
+    "correction": "The dice are different, so order matters. There are $6 \\times 6 = 36$ ordered outcomes, and six of them give 7: $(1,6),(2,5),(3,4),(4,3),(5,2),(6,1)$, so $P(\\text{total } 7) = \\frac{6}{36} = \\frac{1}{6}$."
+   },
+   {
+    "id": "m2",
+    "text": "Assumes every total from 2 to 12 is equally likely, so writes $P(\\text{total } 7) = \\frac{1}{11}$.",
+    "correction": "The 11 totals are not equally likely outcomes. Count cells in the sample space diagram: 7 occurs 6 times out of 36, but 2 occurs only once."
+   },
+   {
+    "id": "m3",
+    "text": "Adds the numbers of outcomes instead of multiplying, e.g. a coin and a dice give $2 + 6 = 8$ outcomes, so $P(\\text{H and } 6) = \\frac{1}{8}$.",
+    "correction": "Each of the 2 coin results pairs with each of the 6 dice results, giving $2 \\times 6 = 12$ outcomes, so $P(\\text{H and } 6) = \\frac{1}{12}$."
+   }
+  ]
+ },
+ {
+  "id": "prob-relative-frequency",
+  "prerequisites": [
+   "prob-basic-probability",
+   "num-fractions-multiply-divide",
+   "num-fdp-conversions"
+  ],
+  "keyIdea": "When we cannot work out a probability theoretically, we estimate it by experiment:\n$$\\text{relative frequency} = \\frac{\\text{number of times the event happened}}{\\text{total number of trials}}$$\nThis is the **experimental probability**. The more trials, the more reliable the estimate; with few trials results vary a lot. Pool results from several experiments (add the frequencies and the trials) rather than averaging their relative frequencies.\n\n**Expected frequency** $= P(\\text{event}) \\times \\text{number of trials}$. It is a long-run average, not a guarantee.\n\n**Fairness**: compare relative frequencies with the theoretical probabilities. A big difference over a *large* number of trials suggests bias.\n\n**Simulation**: model a random process with random numbers, coins or dice (e.g. digits 0–6 = success for $P = 0.7$), repeat many times, and use the relative frequency as the estimate.",
+  "workedExamples": [
+   {
+    "question": "A four-sided spinner labelled A, B, C, D is spun 400 times.\n\n| Letter | A | B | C | D |\n|---|---|---|---|---|\n| Frequency | 160 | 84 | 78 | 78 |\n\n(a) Find the relative frequency of A.\n\n(b) Is the spinner fair? Give a reason.\n\n(c) The spinner is spun 1500 more times. Estimate how many times it lands on A.",
+    "solution": "(a) Divide by the **total** number of spins:\n$$\\frac{160}{400} = 0.4$$\n\n(b) If the spinner were fair, $P(A) = \\frac{1}{4}$, so we would expect about $\\frac{1}{4} \\times 400 = 100$ A's. 160 is far more than 100, and 400 is a large number of spins, so the spinner is probably **biased** towards A.\n\n(c) Use the relative frequency as the probability:\n$$0.4 \\times 1500 = 600 \\text{ times}$$"
+   },
+   {
+    "question": "A netball player scores 70% of her shots. Simulate pairs of shots using random digits: 0–6 means a goal, 7–9 means a miss. Use the pairs of digits below to estimate the probability that she scores with both shots.\n\n23 81 47 95 06 62 38 14 70 59",
+    "solution": "Each pair of digits is one trial of two shots. Both shots score when **both** digits are 0–6.\n\n23 ✓, 81 ✗, 47 ✗, 95 ✗, 06 ✓, 62 ✓, 38 ✗, 14 ✓, 70 ✗, 59 ✗\n\n4 of the 10 trials give two goals, so the estimate is\n$$\\frac{4}{10} = 0.4$$\n\n(The theoretical value is $0.7 \\times 0.7 = 0.49$; with only 10 trials the estimate is rough, and more trials would make it more reliable.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Treats a small experiment as conclusive, e.g. \"7 heads in 10 flips, so $P(\\text{head}) = 0.7$ and the coin is definitely biased\".",
+    "correction": "Small samples vary a lot. 7 heads in 10 flips is quite likely for a fair coin. Only a large number of trials gives a reliable estimate or real evidence of bias."
+   },
+   {
+    "id": "m2",
+    "text": "Divides instead of multiplying to find an expected frequency, e.g. $P(A) = 0.4$ over 1500 spins: $1500 \\div 0.4 = 3750$.",
+    "correction": "Expected frequency $= P \\times \\text{number of trials} = 0.4 \\times 1500 = 600$. It can never be more than the number of trials."
+   },
+   {
+    "id": "m3",
+    "text": "Divides by the number of times the event did *not* happen instead of the total, e.g. relative frequency of A $= \\frac{160}{240}$.",
+    "correction": "Relative frequency uses the **total** number of trials: $\\frac{160}{400} = 0.4$."
+   },
+   {
+    "id": "m4",
+    "text": "Averages relative frequencies from experiments of different sizes, e.g. 12 heads in 20 flips and 140 heads in 300 flips: $\\frac{0.6 + 0.4\\overline{6}}{2} \\approx 0.53$.",
+    "correction": "Pool the results: $\\frac{12 + 140}{20 + 300} = \\frac{152}{320} = 0.475$. The larger experiment should carry more weight."
+   }
+  ]
+ },
+ {
+  "id": "prob-venn-set-notation",
+  "prerequisites": [
+   "prob-basic-probability",
+   "num-fractions-add-subtract"
+  ],
+  "keyIdea": "A **set** is a collection of elements. Key notation:\n- $\\xi$ the universal set (everything being considered; US texts use $U$)\n- $A \\cap B$ **intersection**: in $A$ **and** $B$\n- $A \\cup B$ **union**: in $A$ **or** $B$ (or both)\n- $A'$ **complement**: **not** in $A$ (including outside both circles)\n- $n(A)$ the number of elements in $A$; $x \\in A$ means $x$ is an element of $A$\n\nTo fill a two-set Venn diagram, **start in the middle**: put $n(A \\cap B)$ in the overlap, then subtract to get \"$A$ only\" and \"$B$ only\", then subtract everything from $n(\\xi)$ for the region outside both circles.\n\nProbabilities come straight from the diagram: $P(A) = \\dfrac{n(A)}{n(\\xi)}$. Combine regions for expressions such as $A' \\cap B$ (\"in $B$ but not $A$\").",
+  "workedExamples": [
+   {
+    "question": "In a class of 30 students, 18 study French ($F$), 12 study Spanish ($S$) and 5 study both. Draw a Venn diagram and find\n\n(a) $P(\\text{neither language})$ (b) $P(F \\cup S)$ (c) $P(F' \\cap S)$",
+    "solution": "Start in the middle: $n(F \\cap S) = 5$.\n\nFrench only: $18 - 5 = 13$. Spanish only: $12 - 5 = 7$.\n\nOutside both: $30 - 13 - 5 - 7 = 5$.\n\n(a) $P(\\text{neither}) = \\dfrac{5}{30} = \\dfrac{1}{6}$\n\n(b) $F \\cup S$ is everything inside the circles: $13 + 5 + 7 = 25$, so $P(F \\cup S) = \\dfrac{25}{30} = \\dfrac{5}{6}$\n\n(c) $F' \\cap S$ is \"in $S$ but not in $F$\", the Spanish-only region: $P(F' \\cap S) = \\dfrac{7}{30}$",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"20\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">ξ</text><text x=\"70\" y=\"45\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">F</text><text x=\"243\" y=\"45\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">S</text><text x=\"95\" y=\"105\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">13</text><text x=\"155\" y=\"105\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5</text><text x=\"220\" y=\"105\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">7</text><text x=\"282\" y=\"178\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5</text></svg>"
+   },
+   {
+    "question": "$\\xi = \\{1, 2, 3, \\dots, 12\\}$, $A = \\{\\text{multiples of } 3\\}$ and $B = \\{\\text{even numbers}\\}$. List $A \\cap B$, $A \\cup B$ and $A' \\cap B$, and find $P(A \\cup B)$ for a number chosen at random from $\\xi$.",
+    "solution": "$A = \\{3, 6, 9, 12\\}$ and $B = \\{2, 4, 6, 8, 10, 12\\}$.\n\n$A \\cap B$ (in both): $\\{6, 12\\}$\n\n$A \\cup B$ (in either or both, each listed once): $\\{2, 3, 4, 6, 8, 9, 10, 12\\}$\n\n$A' \\cap B$ (even but not a multiple of 3): $\\{2, 4, 8, 10\\}$\n\n$A \\cup B$ has 8 elements out of 12:\n$$P(A \\cup B) = \\frac{8}{12} = \\frac{2}{3}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Puts the whole set total in the \"only\" region without subtracting the overlap, e.g. writes 18 in \"French only\" and 12 in \"Spanish only\" with 5 in the middle, so the diagram totals $18 + 5 + 12 = 35 > 30$.",
+    "correction": "Fill the intersection first, then subtract: French only $= 18 - 5 = 13$, Spanish only $= 12 - 5 = 7$. The numbers in the whole circle for $F$ must add to $n(F) = 18$."
+   },
+   {
+    "id": "m2",
+    "text": "Confuses union and intersection, e.g. gives $A \\cap B = \\{2, 3, 4, 6, 8, 9, 10, 12\\}$ and $A \\cup B = \\{6, 12\\}$.",
+    "correction": "$\\cap$ (looks like an arch, \"and\") means in **both** sets; $\\cup$ (like a cup, \"or\") means in **either or both**. So $A \\cap B = \\{6, 12\\}$ and $A \\cup B$ is the larger set."
+   },
+   {
+    "id": "m3",
+    "text": "Forgets the region outside both circles when finding a complement, e.g. $n(F') = 7$ (only the Spanish-only region).",
+    "correction": "$F'$ is everything in $\\xi$ not in $F$: Spanish only **and** neither, so $n(F') = 7 + 5 = 12$ (check: $30 - 18 = 12$)."
+   },
+   {
+    "id": "m4",
+    "text": "Adds the two set probabilities to find the union, double counting the overlap, e.g. $P(F \\cup S) = \\frac{18}{30} + \\frac{12}{30} = 1$.",
+    "correction": "Elements in both sets have been counted twice. Count the regions directly ($13 + 5 + 7 = 25$) or subtract the overlap once: $\\frac{18 + 12 - 5}{30} = \\frac{25}{30}$."
+   }
+  ]
+ },
+ {
+  "id": "prob-tree-diagrams",
+  "prerequisites": [
+   "prob-sample-spaces",
+   "num-fractions-multiply-divide",
+   "num-fractions-add-subtract"
+  ],
+  "keyIdea": "A tree diagram shows the outcomes of events in stages. The branches from any one point **add up to 1**.\n\n- **Multiply along** the branches to find the probability of one route (A **and** then B).\n- **Add** the probabilities of different routes that satisfy the question (**or**).\n\nEvents are **independent** if one does not affect the other; then $P(A \\text{ and } B) = P(A) \\times P(B)$, and the second-stage branches are the same as the first (e.g. picking **with replacement**).\n\n**Without replacement** the second-stage probabilities change: both the numerator and the total go down by one.\n\nFor \"**at least one**\", use $P(\\text{at least one}) = 1 - P(\\text{none})$. For \"one of each\", remember there are two routes (e.g. RB and BR).",
+  "workedExamples": [
+   {
+    "question": "A bag contains 4 red and 6 blue counters. Two counters are taken at random without replacement. Find the probability that both counters are the same colour.",
+    "solution": "Draw the tree. After the first counter is taken there are 9 left, and the numbers change depending on what was taken.\n\nBoth red (multiply along the branches):\n$$P(RR) = \\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90}$$\n\nBoth blue:\n$$P(BB) = \\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90}$$\n\nSame colour means RR **or** BB, so add:\n$$\\frac{12}{90} + \\frac{30}{90} = \\frac{42}{90} = \\frac{7}{15}$$\n\nCheck: all four routes add to $\\frac{12 + 24 + 24 + 30}{90} = 1$ ✓",
+    "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\"><line x1=\"15\" y1=\"110\" x2=\"100\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"15\" y1=\"110\" x2=\"100\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"35\" y=\"75\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4/10</text><text x=\"35\" y=\"158\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6/10</text><text x=\"104\" y=\"65\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><text x=\"104\" y=\"165\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><line x1=\"120\" y1=\"60\" x2=\"205\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"60\" x2=\"205\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"160\" x2=\"205\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"160\" x2=\"205\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"142\" y=\"36\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">3/9</text><text x=\"155\" y=\"92\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6/9</text><text x=\"142\" y=\"136\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4/9</text><text x=\"155\" y=\"192\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5/9</text><text x=\"210\" y=\"35\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><text x=\"210\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"210\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><text x=\"210\" y=\"195\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"240\" y=\"35\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">RR: 12/90</text><text x=\"240\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">RB: 24/90</text><text x=\"240\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">BR: 24/90</text><text x=\"240\" y=\"195\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">BB: 30/90</text></svg>"
+   },
+   {
+    "question": "The probability that it rains on any given day is $0.3$, independently of other days. Find the probability that it rains on at least one of Monday and Tuesday.",
+    "solution": "The opposite of \"at least one rainy day\" is \"no rain on either day\".\n\n$P(\\text{no rain}) = 1 - 0.3 = 0.7$ each day, and the days are independent, so\n$$P(\\text{no rain on both}) = 0.7 \\times 0.7 = 0.49$$\n\nTherefore\n$$P(\\text{at least one rainy day}) = 1 - 0.49 = 0.51$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds along the branches instead of multiplying, e.g. $P(RR) = \\frac{4}{10} + \\frac{3}{9}$.",
+    "correction": "Following a route means A **and then** B, so multiply: $P(RR) = \\frac{4}{10} \\times \\frac{3}{9} = \\frac{12}{90}$. Adding along a route can give answers bigger than 1."
+   },
+   {
+    "id": "m2",
+    "text": "Does not change the second-stage probabilities without replacement, e.g. $P(RR) = \\frac{4}{10} \\times \\frac{4}{10}$, or changes only the numerator: $\\frac{4}{10} \\times \\frac{3}{10}$.",
+    "correction": "After one red counter is removed there are 3 red out of **9** counters left, so $P(RR) = \\frac{4}{10} \\times \\frac{3}{9}$. Both the numerator and the denominator change."
+   },
+   {
+    "id": "m3",
+    "text": "For \"one of each colour\" counts only one route, e.g. $P(\\text{one of each}) = \\frac{4}{10} \\times \\frac{6}{9} = \\frac{24}{90}$.",
+    "correction": "There are two routes: red then blue, **or** blue then red. $P = \\frac{24}{90} + \\frac{24}{90} = \\frac{48}{90} = \\frac{8}{15}$."
+   },
+   {
+    "id": "m4",
+    "text": "Finds \"at least one\" by adding the single probabilities, e.g. $P(\\text{rain on at least one day}) = 0.3 + 0.3 = 0.6$.",
+    "correction": "Adding counts \"rain on both days\" twice. Use $1 - P(\\text{none}) = 1 - 0.7^2 = 0.51$, or add the three routes RR, RN, NR: $0.09 + 0.21 + 0.21 = 0.51$."
+   }
+  ]
+ },
+ {
+  "id": "prob-conditional",
+  "prerequisites": [
+   "prob-tree-diagrams",
+   "prob-venn-set-notation",
+   "stat-two-way-tables"
+  ],
+  "keyIdea": "$P(A \\mid B)$ means \"the probability of $A$ **given that** $B$ has happened\". Knowing $B$ happened shrinks the sample space to $B$:\n$$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)}$$\n\n- **Two-way table**: divide the cell by the total of the row or column you are *given*.\n- **Venn diagram**: $\\dfrac{n(A \\cap B)}{n(B)}$, i.e. the overlap out of the whole of circle $B$.\n- **Tree diagram**: second-stage branches are already conditional probabilities. For a \"reverse\" question (given the second outcome, find the first), use the formula: route probability ÷ total probability of the given outcome.\n\nIn general $P(A \\mid B) \\ne P(B \\mid A)$. If $P(A \\mid B) = P(A)$, knowing $B$ makes no difference: $A$ and $B$ are independent.",
+  "workedExamples": [
+   {
+    "question": "The table shows how 200 students travel to school.\n\n| | Walk | Bus | Car | Total |\n|---|---|---|---|---|\n| Year 10 | 40 | 35 | 25 | 100 |\n| Year 11 | 30 | 50 | 20 | 100 |\n| Total | 70 | 85 | 45 | 200 |\n\nA student is chosen at random. Find (a) $P(\\text{Bus} \\mid \\text{Year 11})$ (b) $P(\\text{Year 11} \\mid \\text{Bus})$.",
+    "solution": "(a) Given Year 11: restrict to the Year 11 row (100 students). 50 of them take the bus:\n$$P(\\text{Bus} \\mid \\text{Year 11}) = \\frac{50}{100} = \\frac{1}{2}$$\n\n(b) Given Bus: restrict to the Bus column (85 students). 50 of them are in Year 11:\n$$P(\\text{Year 11} \\mid \\text{Bus}) = \\frac{50}{85} = \\frac{10}{17}$$\n\nSame numerator, different \"given\" total, so the two answers differ."
+   },
+   {
+    "question": "2% of a population has a condition. A test is positive for 95% of people with the condition and for 10% of people without it. A person tests positive. Find the probability that they have the condition, to 3 significant figures.",
+    "solution": "Let $C$ = has the condition, $+$ = tests positive. From a tree diagram:\n\n$P(C \\cap +) = 0.02 \\times 0.95 = 0.019$\n\n$P(C' \\cap +) = 0.98 \\times 0.10 = 0.098$\n\nTotal probability of testing positive:\n$$P(+) = 0.019 + 0.098 = 0.117$$\n\nUse the conditional probability formula:\n$$P(C \\mid +) = \\frac{P(C \\cap +)}{P(+)} = \\frac{0.019}{0.117} = 0.162 \\text{ (3 s.f.)}$$\n\nEven after a positive test, the person is unlikely to have the condition, because the condition is rare."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides by the wrong total, mixing up $P(A \\mid B)$ and $P(B \\mid A)$, e.g. $P(\\text{Year 11} \\mid \\text{Bus}) = \\frac{50}{100}$ (using the Year 11 total).",
+    "correction": "The denominator is the total of the **given** event (the one after the bar). Given Bus, divide by the Bus total: $\\frac{50}{85}$."
+   },
+   {
+    "id": "m2",
+    "text": "Divides by the grand total, giving $P(A \\cap B)$ instead of $P(A \\mid B)$, e.g. $P(\\text{Bus} \\mid \\text{Year 11}) = \\frac{50}{200}$.",
+    "correction": "\"Given Year 11\" means only the 100 Year 11 students are considered: $\\frac{50}{100}$. $\\frac{50}{200}$ is $P(\\text{Bus} \\cap \\text{Year 11})$."
+   },
+   {
+    "id": "m3",
+    "text": "In a reverse tree question, gives the branch probability as the answer, e.g. \"the test is 95% accurate, so $P(C \\mid +) = 0.95$\".",
+    "correction": "$0.95$ is $P(+ \\mid C)$, not $P(C \\mid +)$. Find every route that ends in a positive test and use $P(C \\mid +) = \\frac{0.019}{0.117} \\approx 0.162$."
+   },
+   {
+    "id": "m4",
+    "text": "Answers a \"given\" question with the probability of the whole route, e.g. \"given the first counter is red (4 red, 6 blue, no replacement), find $P(\\text{second red})$\": $\\frac{4}{10} \\times \\frac{3}{9} = \\frac{2}{15}$.",
+    "correction": "The first red has already happened, so start from the situation after it: 3 red out of 9 left, so $P(\\text{second red} \\mid \\text{first red}) = \\frac{3}{9} = \\frac{1}{3}$."
+   }
+  ]
+ },
+ {
+  "id": "prob-rules-formal",
+  "prerequisites": [
+   "prob-venn-set-notation",
+   "prob-conditional"
+  ],
+  "keyIdea": "**General addition rule**: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ (subtract the overlap so it is not counted twice).\n\n**Mutually exclusive** events cannot happen together: $P(A \\cap B) = 0$, so $P(A \\cup B) = P(A) + P(B)$.\n\n**Multiplication rule**: $P(A \\cap B) = P(A) \\times P(B \\mid A)$.\n\n**Independent** events do not affect each other: $P(B \\mid A) = P(B)$, so $P(A \\cap B) = P(A) \\times P(B)$.\n\n**Testing independence**: calculate $P(A) \\times P(B)$ and compare it with $P(A \\cap B)$ found from the data (or compare $P(A \\mid B)$ with $P(A)$). Equal means independent.\n\nMutually exclusive and independent are **different** ideas: if $P(A) > 0$ and $P(B) > 0$, mutually exclusive events are never independent, since knowing $A$ happened tells you $B$ did not.",
+  "workedExamples": [
+   {
+    "question": "$P(A) = 0.4$, $P(B) = 0.5$ and $P(A \\cup B) = 0.7$.\n\n(a) Find $P(A \\cap B)$. (b) Determine whether $A$ and $B$ are independent. (c) Find $P(A \\mid B)$.",
+    "solution": "(a) Rearrange the addition rule:\n$$P(A \\cap B) = P(A) + P(B) - P(A \\cup B) = 0.4 + 0.5 - 0.7 = 0.2$$\n\n(b) $P(A) \\times P(B) = 0.4 \\times 0.5 = 0.2 = P(A \\cap B)$, so $A$ and $B$ **are independent**.\n\n(c)\n$$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.2}{0.5} = 0.4$$\nThis equals $P(A)$, which confirms the independence found in (b)."
+   },
+   {
+    "question": "$P(A) = 0.3$ and $P(B) = 0.45$. Find $P(A \\cup B)$ if (a) $A$ and $B$ are mutually exclusive, (b) $A$ and $B$ are independent.",
+    "solution": "(a) Mutually exclusive, so $P(A \\cap B) = 0$:\n$$P(A \\cup B) = 0.3 + 0.45 = 0.75$$\n\n(b) Independent, so $P(A \\cap B) = 0.3 \\times 0.45 = 0.135$:\n$$P(A \\cup B) = 0.3 + 0.45 - 0.135 = 0.615$$\n\nNote that in (a) $P(A \\cap B) = 0 \\ne 0.135 = P(A)P(B)$, so mutually exclusive events with these probabilities are **not** independent."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Thinks \"mutually exclusive\" and \"independent\" mean the same thing, e.g. \"$P(A \\cap B) = 0$, so $A$ and $B$ are independent\".",
+    "correction": "Mutually exclusive: $P(A \\cap B) = 0$. Independent: $P(A \\cap B) = P(A)P(B)$. With $P(A) = 0.3$, $P(B) = 0.45$, independence needs $P(A \\cap B) = 0.135$, not $0$, so these mutually exclusive events are dependent."
+   },
+   {
+    "id": "m2",
+    "text": "Uses $P(A \\cup B) = P(A) + P(B)$ for events that can happen together, sometimes getting an answer above 1, e.g. $P(A) = 0.6$, $P(B) = 0.7$, so $P(A \\cup B) = 1.3$.",
+    "correction": "Unless the events are mutually exclusive, subtract the overlap: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. An answer above 1 is a sure sign the overlap has been counted twice."
+   },
+   {
+    "id": "m3",
+    "text": "Reads $P(A)$ from a Venn diagram as just the \"$A$ only\" region when testing independence, e.g. regions $A$ only $= 0.2$, both $= 0.2$, $B$ only $= 0.3$: \"$P(A)P(B) = 0.2 \\times 0.3 = 0.06 \\ne 0.2$\".",
+    "correction": "$P(A)$ is the whole circle: $0.2 + 0.2 = 0.4$, and $P(B) = 0.2 + 0.3 = 0.5$. Then $P(A)P(B) = 0.2 = P(A \\cap B)$, so the events are independent."
+   }
+  ]
+ },
+ {
+  "id": "prob-permutations-combinations",
+  "prerequisites": [
+   "num-counting-product-rule",
+   "prob-basic-probability"
+  ],
+  "keyIdea": "$n! = n \\times (n-1) \\times \\dots \\times 2 \\times 1$ is the number of ways to arrange $n$ different objects in a line, with $0! = 1$. If some objects are identical, divide by the factorial of each repeat: $\\dfrac{n!}{p!\\,q!}$.\n\n**Permutations** (order matters): choose and arrange $r$ from $n$:\n$${}^nP_r = \\frac{n!}{(n-r)!}$$\n**Combinations** (order does not matter): choose $r$ from $n$:\n$${}^nC_r = \\binom{n}{r} = \\frac{n!}{r!\\,(n-r)!}$$\n(US notation: $_nP_r$, $_nC_r$.)\n\n**Restrictions**: place restricted items first. \"Must be together\": glue them into one block, arrange the blocks, then multiply by the arrangements inside the block. \"Not together\" $=$ total $-$ together.\n\n**Probability**: $P = \\dfrac{\\text{number of favourable selections}}{\\text{total number of selections}}$, counting both with combinations.",
+  "workedExamples": [
+   {
+    "question": "Six people, including Ali and Ben, sit in a row of six chairs. In how many ways can they sit if (a) Ali and Ben sit together, (b) Ali and Ben do not sit together?",
+    "solution": "(a) Glue Ali and Ben into one block. There are now 5 \"items\" to arrange: $5! = 120$ ways.\n\nInside the block they can sit as AB or BA: $2! = 2$ ways.\n$$5! \\times 2! = 120 \\times 2 = 240$$\n\n(b) Total arrangements with no restriction: $6! = 720$.\n$$\\text{not together} = 720 - 240 = 480$$"
+   },
+   {
+    "question": "A committee of 4 is chosen at random from 6 men and 5 women. Find the probability that exactly 2 women are chosen.",
+    "solution": "Order does not matter in a committee, so use combinations.\n\nTotal number of committees: $\\binom{11}{4} = 330$\n\nFavourable: choose 2 of the 5 women **and** 2 of the 6 men:\n$$\\binom{5}{2} \\times \\binom{6}{2} = 10 \\times 15 = 150$$\n\n$$P(\\text{exactly 2 women}) = \\frac{150}{330} = \\frac{5}{11}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses permutations when order does not matter, e.g. counts committees of 4 from 11 people as ${}^{11}P_4 = 7920$.",
+    "correction": "A committee $\\{A, B, C, D\\}$ is the same however it is listed, so use ${}^{11}C_4 = \\frac{7920}{4!} = 330$. Ask: \"would swapping two chosen items give a different result?\" If not, use combinations."
+   },
+   {
+    "id": "m2",
+    "text": "Treats a group as a block but forgets the arrangements inside it, e.g. Ali and Ben together: $5! = 120$.",
+    "correction": "The block can be AB or BA, so multiply by $2!$: $5! \\times 2! = 240$."
+   },
+   {
+    "id": "m3",
+    "text": "Does not divide by repeats for identical items, e.g. arrangements of the letters of PARALLEL $= 8! = 40\\,320$.",
+    "correction": "Swapping identical letters gives the same word. PARALLEL has 2 A's and 3 L's, so the number of arrangements is $\\frac{8!}{2!\\,3!} = \\frac{40\\,320}{12} = 3360$."
+   },
+   {
+    "id": "m4",
+    "text": "Believes $0! = 0$, so writes $\\binom{5}{5} = \\frac{5!}{5!\\,0!}$ is undefined (or $0$).",
+    "correction": "$0! = 1$ by definition (there is exactly one way to arrange nothing). So $\\binom{5}{5} = \\frac{120}{120 \\times 1} = 1$: there is one way to choose all 5."
+   }
+  ]
+ },
+ {
+  "id": "prob-discrete-random-variables",
+  "prerequisites": [
+   "prob-sample-spaces",
+   "prob-tree-diagrams",
+   "stat-averages-frequency-tables",
+   "stat-standard-deviation",
+   "alg-linear-equations"
+  ],
+  "keyIdea": "A **discrete random variable** $X$ takes separate values $x$ with probabilities $P(X = x)$, shown in a table or given by a probability function such as $P(X = x) = kx$. The probabilities must satisfy $\\sum P(X = x) = 1$, which is how unknowns like $k$ are found.\n\n**Expected value** (long-run mean; AP: $\\mu_X$):\n$$E(X) = \\sum x\\,P(X = x)$$\nIt need not be a value $X$ can take.\n\n**Variance** (AP: $\\sigma_X^2$):\n$$E(X^2) = \\sum x^2\\,P(X = x), \\qquad \\operatorname{Var}(X) = E(X^2) - [E(X)]^2$$\nand the standard deviation is $\\sqrt{\\operatorname{Var}(X)}$.\n\n**Fair game**: the expected *gain* (expected winnings minus the cost to play) is $0$.",
+  "workedExamples": [
+   {
+    "question": "The discrete random variable $X$ has probability function $P(X = x) = kx$ for $x = 1, 2, 3, 4$. Find $k$, $E(X)$ and $\\operatorname{Var}(X)$.",
+    "solution": "Probabilities sum to 1:\n$$k + 2k + 3k + 4k = 10k = 1 \\;\\Rightarrow\\; k = 0.1$$\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $P(X = x)$ | $0.1$ | $0.2$ | $0.3$ | $0.4$ |\n\n$$E(X) = 1(0.1) + 2(0.2) + 3(0.3) + 4(0.4) = 0.1 + 0.4 + 0.9 + 1.6 = 3$$\n\n$$E(X^2) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.4) = 0.1 + 0.8 + 2.7 + 6.4 = 10$$\n\n$$\\operatorname{Var}(X) = E(X^2) - [E(X)]^2 = 10 - 3^2 = 1$$"
+   },
+   {
+    "question": "A game costs £2 to play. A fair dice is rolled: a six wins £6, a five wins £3, anything else wins nothing. Is the game fair? If not, what should it cost to be fair?",
+    "solution": "Let $W$ be the amount won (in £).\n\n| $w$ | 6 | 3 | 0 |\n|---|---|---|---|\n| $P(W = w)$ | $\\frac{1}{6}$ | $\\frac{1}{6}$ | $\\frac{4}{6}$ |\n\n$$E(W) = 6 \\times \\tfrac{1}{6} + 3 \\times \\tfrac{1}{6} + 0 \\times \\tfrac{4}{6} = 1 + 0.5 = 1.5$$\n\nExpected gain per game $= 1.50 - 2 = -0.50$, so the player loses 50p per game on average: the game is **not fair**.\n\nFor a fair game the expected gain must be $0$, so it should cost **£1.50**."
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Forgets to square $E(X)$ in the variance formula, e.g. $\\operatorname{Var}(X) = E(X^2) - E(X) = 10 - 3 = 7$.",
+    "correction": "$\\operatorname{Var}(X) = E(X^2) - [E(X)]^2 = 10 - 3^2 = 1$. The units must match: $E(X^2)$ is in squared units, so subtract the **square** of the mean."
+   },
+   {
+    "id": "m2",
+    "text": "Finds $E(X)$ by averaging the values and ignoring the probabilities, e.g. $E(X) = \\frac{1 + 2 + 3 + 4}{4} = 2.5$.",
+    "correction": "Weight each value by its probability: $E(X) = \\sum x\\,P(X = x) = 3$. A simple average only works when every value is equally likely."
+   },
+   {
+    "id": "m3",
+    "text": "Squares the probabilities as well when finding $E(X^2)$, e.g. $\\sum (x\\,p)^2 = 0.1^2 + 0.4^2 + 0.9^2 + 1.6^2 = 3.54$.",
+    "correction": "Only the value is squared: $E(X^2) = \\sum x^2\\,P(X = x) = 1(0.1) + 4(0.2) + 9(0.3) + 16(0.4) = 10$."
+   },
+   {
+    "id": "m4",
+    "text": "Ignores the cost of playing when judging fairness, e.g. \"expected winnings are £1.50, which is positive, so the player makes a profit\".",
+    "correction": "Fairness depends on the expected **gain**: expected winnings $-$ cost $= 1.50 - 2 = -0.50$. A game is fair only when this is $0$."
+   }
+  ]
+ },
+ {
+  "id": "prob-combining-random-variables",
+  "prerequisites": [
+   "prob-discrete-random-variables"
+  ],
+  "keyIdea": "**Linear transformation** $Y = a + bX$:\n$$\\mu_Y = a + b\\mu_X, \\qquad \\sigma_Y = |b|\\,\\sigma_X, \\qquad \\sigma_Y^2 = b^2\\sigma_X^2$$\nAdding a constant shifts the center but does not change the spread; multiplying scales both.\n\n**Sums and differences**: $\\mu_{X \\pm Y} = \\mu_X \\pm \\mu_Y$ always.\n\nIf $X$ and $Y$ are **independent**, **variances add** for both sums and differences:\n$$\\sigma_{X \\pm Y}^2 = \\sigma_X^2 + \\sigma_Y^2, \\qquad \\sigma_{X \\pm Y} = \\sqrt{\\sigma_X^2 + \\sigma_Y^2}$$\nNever add standard deviations directly.\n\nTwo independent observations $X_1 + X_2$ are not the same as $2X$: $\\sigma_{X_1 + X_2} = \\sqrt{2}\\,\\sigma_X$ but $\\sigma_{2X} = 2\\sigma_X$.\n\nA sum or difference of independent normal random variables is also normal.",
+  "workedExamples": [
+   {
+    "question": "The number of sessions $X$ a tutor teaches per week has $\\mu_X = 12$ and $\\sigma_X = 3$. Weekly pay is $Y = 25X + 40$ dollars. Find the mean and standard deviation of $Y$.",
+    "solution": "Mean: transform the mean directly.\n$$\\mu_Y = 25\\mu_X + 40 = 25(12) + 40 = \\$340$$\n\nStandard deviation: multiplying by 25 scales the spread; adding \\$40 does not change it.\n$$\\sigma_Y = 25\\sigma_X = 25(3) = \\$75$$"
+   },
+   {
+    "question": "Morning commute time $X$ is approximately normal with $\\mu_X = 22$ minutes and $\\sigma_X = 4$ minutes. Evening commute time $Y$ is approximately normal with $\\mu_Y = 28$ minutes and $\\sigma_Y = 3$ minutes, independent of $X$. Find the mean and standard deviation of the total $T = X + Y$, and find the probability that the evening commute is longer than the morning commute.",
+    "solution": "Total:\n$$\\mu_T = 22 + 28 = 50 \\text{ min}, \\qquad \\sigma_T = \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5 \\text{ min}$$\n\nFor the comparison let $D = Y - X$. Means subtract, variances still **add** (independent):\n$$\\mu_D = 28 - 22 = 6, \\qquad \\sigma_D = \\sqrt{3^2 + 4^2} = 5$$\n\n$D$ is approximately normal, so\n$$P(Y > X) = P(D > 0) = P\\left(z > \\frac{0 - 6}{5}\\right) = P(z > -1.2) \\approx 0.885$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Adds standard deviations, e.g. $\\sigma_{X+Y} = 4 + 3 = 7$.",
+    "correction": "For independent random variables, **variances** add: $\\sigma_{X+Y} = \\sqrt{4^2 + 3^2} = 5$."
+   },
+   {
+    "id": "m2",
+    "text": "Subtracts variances for a difference, e.g. $\\sigma_{Y-X}^2 = 4^2 - 3^2 = 7$, so $\\sigma_{Y-X} = \\sqrt{7}$.",
+    "correction": "Subtracting a random variable adds more variability, not less: $\\sigma_{Y-X}^2 = \\sigma_Y^2 + \\sigma_X^2 = 9 + 16 = 25$, so $\\sigma_{Y-X} = 5$."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the added constant to the standard deviation too, e.g. for $Y = 25X + 40$: $\\sigma_Y = 25(3) + 40 = 115$.",
+    "correction": "Adding a constant shifts every value equally, so the spread is unchanged: $\\sigma_Y = |25| \\times 3 = 75$. Only the mean gets the $+40$."
+   },
+   {
+    "id": "m4",
+    "text": "Treats the sum of two independent observations as $2X$, e.g. two sessions each with $\\sigma = 3$: $\\sigma_{X_1 + X_2} = 2(3) = 6$.",
+    "correction": "Independent observations partly cancel each other's variation: $\\sigma_{X_1 + X_2} = \\sqrt{3^2 + 3^2} = \\sqrt{18} \\approx 4.24$. The formula $\\sigma_{2X} = 2\\sigma_X$ is only for doubling a single observation."
+   }
+  ]
+ },
+ {
+  "id": "prob-binomial",
+  "prerequisites": [
+   "prob-permutations-combinations",
+   "prob-tree-diagrams",
+   "prob-discrete-random-variables"
+  ],
+  "keyIdea": "$X \\sim B(n, p)$ counts the number of successes when:\n- there is a **fixed number** of trials $n$,\n- each trial has **two outcomes** (success / failure),\n- the probability of success $p$ is **constant**,\n- the trials are **independent**.\n\n(AP: \"BINS\"; when sampling without replacement, check the 10% condition.)\n$$P(X = r) = \\binom{n}{r} p^r (1-p)^{n-r}$$\nThe $\\binom{n}{r}$ counts the different orders in which the $r$ successes can occur.\n\n**Cumulative** probabilities $P(X \\le r)$ come from a calculator or tables. Rewrite other inequalities first:\n$P(X < r) = P(X \\le r - 1)$, $\\;P(X \\ge r) = 1 - P(X \\le r - 1)$, $\\;P(X > r) = 1 - P(X \\le r)$.\n\n**Mean** $\\mu = np$, **variance** $np(1-p)$, **standard deviation** $\\sigma = \\sqrt{np(1-p)}$.",
+  "workedExamples": [
+   {
+    "question": "$X \\sim B(12, 0.3)$. Find (a) $P(X = 4)$ (b) $P(X \\ge 3)$ (c) the mean and standard deviation of $X$. Give answers to 4 decimal places.",
+    "solution": "(a)\n$$P(X = 4) = \\binom{12}{4}(0.3)^4(0.7)^8 = 495 \\times 0.0081 \\times 0.057\\,648 = 0.2311$$\n\n(b) \"At least 3\" is the complement of \"at most 2\":\n$$P(X \\ge 3) = 1 - P(X \\le 2)$$\nFrom a calculator, $P(X \\le 2) = 0.2528$, so\n$$P(X \\ge 3) = 1 - 0.2528 = 0.7472$$\n\n(c)\n$$\\mu = np = 12 \\times 0.3 = 3.6$$\n$$\\sigma = \\sqrt{np(1-p)} = \\sqrt{12 \\times 0.3 \\times 0.7} = \\sqrt{2.52} = 1.5875$$"
+   },
+   {
+    "question": "A student guesses every answer on a 20-question multiple-choice test. Each question has 4 options, one of which is correct. Explain why the number of correct answers $X$ can be modelled by a binomial distribution, and find the probability that the student gets at least 8 correct.",
+    "solution": "Conditions: a fixed number of trials ($n = 20$ questions); each answer is either right or wrong; random guessing gives a constant $p = \\frac{1}{4}$; and guesses on different questions are independent. So $X \\sim B(20, 0.25)$.\n\n$$P(X \\ge 8) = 1 - P(X \\le 7)$$\nFrom a calculator, $P(X \\le 7) = 0.8982$, so\n$$P(X \\ge 8) = 1 - 0.8982 = 0.1018 \\text{ (4 d.p.)}$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong boundary when converting \"at least\" to a cumulative probability, e.g. $P(X \\ge 3) = 1 - P(X \\le 3)$.",
+    "correction": "$X \\ge 3$ includes 3, so its complement is $X \\le 2$: $P(X \\ge 3) = 1 - P(X \\le 2)$. Writing out the integers (0, 1, 2 | 3, 4, …) shows where to split."
+   },
+   {
+    "id": "m2",
+    "text": "Leaves out the $\\binom{n}{r}$ coefficient, e.g. $P(X = 4) = (0.3)^4(0.7)^8 \\approx 0.000\\,467$.",
+    "correction": "$(0.3)^4(0.7)^8$ is the probability of one particular order of 4 successes and 8 failures. There are $\\binom{12}{4} = 495$ orders, so $P(X = 4) = 495 \\times (0.3)^4(0.7)^8 \\approx 0.2311$."
+   },
+   {
+    "id": "m3",
+    "text": "Applies the binomial model when a condition fails, e.g. drawing 3 cards without replacement from 10 cards (4 red) and using $B(3, 0.4)$, or counting the number of trials until the first success.",
+    "correction": "Check every condition. Without replacement from a small population, $p$ changes and trials are not independent. \"Trials until the first success\" has no fixed $n$ (that is a geometric situation)."
+   },
+   {
+    "id": "m4",
+    "text": "Gives the variance as the standard deviation, e.g. for $B(12, 0.3)$: $\\sigma = np(1-p) = 2.52$.",
+    "correction": "$np(1-p)$ is the **variance**. The standard deviation is its square root: $\\sigma = \\sqrt{2.52} \\approx 1.587$."
+   }
+  ]
+ },
+ {
+  "id": "prob-geometric-distribution",
+  "prerequisites": [
+   "prob-discrete-random-variables",
+   "prob-binomial"
+  ],
+  "keyIdea": "A **geometric** random variable $X$ counts the number of trials up to and including the **first success**. Conditions: two outcomes on each trial, independent trials, constant probability of success $p$, and **no fixed number of trials**.\n\n$X$ can take values $1, 2, 3, \\dots$, and the first success on trial $k$ needs $k - 1$ failures first:\n$$P(X = k) = (1-p)^{k-1}p$$\n\"More than $k$ trials\" means the first $k$ trials all fail:\n$$P(X > k) = (1-p)^k, \\qquad P(X \\le k) = 1 - (1-p)^k$$\n(calculator: geometpdf and geometcdf).\n\nMean and standard deviation:\n$$\\mu_X = \\frac{1}{p}, \\qquad \\sigma_X = \\frac{\\sqrt{1-p}}{p}$$\nThe distribution is strongly right-skewed and its most likely value (mode) is always $X = 1$.",
+  "workedExamples": [
+   {
+    "question": "20% of cereal boxes contain a prize. Let $X$ be the number of boxes a shopper opens until she finds the first prize. Find (a) $P(X = 3)$, (b) $P(X \\le 4)$, (c) $P(X > 6)$, (d) the mean and standard deviation of $X$.",
+    "solution": "$X$ is geometric with $p = 0.2$, so $1 - p = 0.8$.\n\n(a) Two failures, then a success:\n$$P(X = 3) = (0.8)^2(0.2) = 0.128$$\n\n(b)\n$$P(X \\le 4) = 1 - (0.8)^4 = 1 - 0.4096 = 0.5904$$\n\n(c) The first 6 boxes all have no prize:\n$$P(X > 6) = (0.8)^6 \\approx 0.262$$\n\n(d)\n$$\\mu_X = \\frac{1}{0.2} = 5 \\text{ boxes}, \\qquad \\sigma_X = \\frac{\\sqrt{0.8}}{0.2} \\approx 4.47 \\text{ boxes}$$"
+   },
+   {
+    "question": "A basketball player makes 75% of her free throws, independently. Find the probability that her first **miss** is on her 4th free throw.",
+    "solution": "Here a \"success\" is a miss, so $p = 0.25$ and $1 - p = 0.75$.\n\nThe first miss on shot 4 means three makes, then a miss:\n$$P(X = 4) = (0.75)^3(0.25) = 0.421875 \\times 0.25 \\approx 0.105$$"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Uses the wrong power of $(1-p)$, e.g. $P(X = 3) = (0.8)^3(0.2) = 0.1024$.",
+    "correction": "The success is the 3rd trial, so only $3 - 1 = 2$ trials fail: $P(X = 3) = (0.8)^2(0.2) = 0.128$."
+   },
+   {
+    "id": "m2",
+    "text": "Uses the binomial formula for a \"first success\" question, e.g. $P(\\text{first prize in box 3}) = \\binom{3}{1}(0.2)(0.8)^2 = 0.384$.",
+    "correction": "The binomial counts successes in *any* order. \"First success on trial 3\" allows only one order (fail, fail, success), so there is no $\\binom{n}{k}$ factor: $(0.8)^2(0.2) = 0.128$."
+   },
+   {
+    "id": "m3",
+    "text": "Gets \"more than\" and \"at most\" mixed up, e.g. $P(X > 6) = 1 - (0.8)^6 \\approx 0.738$.",
+    "correction": "$X > 6$ means the first 6 trials are all failures: $P(X > 6) = (0.8)^6 \\approx 0.262$. The expression $1 - (0.8)^6$ is $P(X \\le 6)$."
+   },
+   {
+    "id": "m4",
+    "text": "Thinks the most likely value is the mean, e.g. \"$\\mu_X = 5$, so she is most likely to find the first prize in the 5th box\".",
+    "correction": "$P(X = k)$ gets smaller every step, so $X = 1$ is always most likely: $P(X = 1) = 0.2 > P(X = 5) = (0.8)^4(0.2) \\approx 0.082$. The mean is pulled up by the long right tail."
+   }
+  ]
+ },
+ {
+  "id": "prob-normal-distribution",
+  "prerequisites": [
+   "stat-standard-deviation",
+   "prob-binomial",
+   "alg-rearranging-formulae"
+  ],
+  "keyIdea": "$X \\sim N(\\mu, \\sigma^2)$ is a continuous, bell-shaped distribution, symmetric about the mean, with mean $=$ median $=$ mode and points of inflection at $\\mu \\pm \\sigma$. The total area is 1, and $P(X = a) = 0$, so $<$ and $\\le$ give the same probability. (UK writes the **variance** second; AP writes $N(\\mu, \\sigma)$.)\n\n**Empirical rule**: about 68%, 95%, 99.7% of values lie within $1$, $2$, $3$ standard deviations of the mean.\n\n**Standardise**: $z = \\dfrac{x - \\mu}{\\sigma}$, where $Z \\sim N(0, 1)$. Probabilities are areas from a calculator.\n\n**Inverse normal**: from an area find $z$, then $x = \\mu + z\\sigma$. With unknown $\\mu$ or $\\sigma$, form equations $\\frac{x - \\mu}{\\sigma} = z$ and solve.\n\n**Approximating** $B(n, p)$ (large $n$, $np$ and $n(1-p)$ both large): use $N(np,\\, np(1-p))$ with a **continuity correction**, e.g. $P(X \\le 45) \\approx P(Y < 45.5)$.",
+  "workedExamples": [
+   {
+    "question": "The heights of adult men are modelled by $H \\sim N(170, 8^2)$, in cm.\n\n(a) Find $P(H > 182)$.\n\n(b) 10% of men are taller than $h$ cm. Find $h$.",
+    "solution": "(a) Standardise:\n$$z = \\frac{182 - 170}{8} = 1.5$$\n$$P(H > 182) = P(Z > 1.5) = 1 - 0.9332 = 0.0668 \\text{ (4 d.p.)}$$\n\n(b) $P(H > h) = 0.1$, so $P(Z < z) = 0.9$. Inverse normal gives $z = 1.2816$ (positive, since $h$ is above the mean).\n$$h = \\mu + z\\sigma = 170 + 1.2816 \\times 8 = 180.25\\ldots$$\n$$h = 180.3 \\text{ cm (1 d.p.)}$$"
+   },
+   {
+    "question": "$X \\sim B(100, 0.4)$. Use a suitable normal approximation to estimate $P(X \\le 45)$.",
+    "solution": "$n$ is large and $p$ is not far from $0.5$ ($np = 40$, $n(1-p) = 60$), so a normal approximation is suitable.\n\n$$\\mu = np = 40, \\qquad \\sigma^2 = np(1-p) = 100 \\times 0.4 \\times 0.6 = 24$$\nSo $Y \\sim N(40, 24)$.\n\nContinuity correction: $X \\le 45$ includes the whole bar at 45, which runs up to 45.5.\n$$P(X \\le 45) \\approx P(Y < 45.5)$$\n\nStandardise:\n$$z = \\frac{45.5 - 40}{\\sqrt{24}} = 1.1227$$\n$$P(Y < 45.5) = P(Z < 1.1227) = 0.8692 \\text{ (4 d.p.)}$$\n\n(The exact binomial value is 0.8689, so the approximation is good.)"
+   }
+  ],
+  "misconceptions": [
+   {
+    "id": "m1",
+    "text": "Divides by the variance instead of the standard deviation, e.g. $H \\sim N(170, 64)$: $z = \\frac{182 - 170}{64} = 0.1875$.",
+    "correction": "In $N(\\mu, \\sigma^2)$ the second number is the variance. Standardise with $\\sigma = \\sqrt{64} = 8$: $z = \\frac{12}{8} = 1.5$."
+   },
+   {
+    "id": "m2",
+    "text": "Takes the wrong tail, e.g. $P(H > 182) = P(Z > 1.5) = 0.9332$.",
+    "correction": "$0.9332$ is the area to the **left** of $z = 1.5$. Sketch the curve and shade: $P(Z > 1.5) = 1 - 0.9332 = 0.0668$. A small tail area must be less than $0.5$."
+   },
+   {
+    "id": "m3",
+    "text": "Uses a positive $z$-value for a lower-tail area in inverse normal problems, e.g. $P(X < a) = 0.1$ so $\\frac{a - \\mu}{\\sigma} = 1.2816$.",
+    "correction": "A value with only 10% below it lies **below** the mean, so $z$ is negative: $\\frac{a - \\mu}{\\sigma} = -1.2816$. Always check the sign against a sketch."
+   },
+   {
+    "id": "m4",
+    "text": "Leaves out or misapplies the continuity correction, e.g. $P(X \\le 45) \\approx P(Y < 45)$ or $P(Y < 44.5)$.",
+    "correction": "Each integer $k$ is represented by the interval from $k - 0.5$ to $k + 0.5$. $X \\le 45$ includes 45, so use $P(Y < 45.5)$; $X < 45$ would use $P(Y < 44.5)$."
+   }
+  ]
+ }
+]
