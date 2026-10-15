@@ -46,6 +46,7 @@ def convert(md: str) -> str:
     t = re.sub(r",\s*,", ",", t)
     t = t.replace("…", "...")
     t = re.sub(r"[“”]", '"', t); t = re.sub(r"[‘’]", "'", t)
+    t = re.sub(r"#(\d+)", r"number \1", t)
     for pat, rep in PHON:
         t = re.sub(pat, rep, t)
     t = re.sub(r"\n{3,}", "\n\n", t)
