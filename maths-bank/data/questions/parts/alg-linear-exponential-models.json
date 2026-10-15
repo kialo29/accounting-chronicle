@@ -1,0 +1,288 @@
+[
+ {
+  "id": "alg-linear-exponential-models-q01",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Decide whether the table shows a linear or an exponential relationship. Then write an equation for $y$ in terms of $x$.\n\n| $x$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|\n| $y$ | $4$ | $7$ | $10$ | $13$ |",
+  "hint": "Find the differences between consecutive $y$-values. Are they all the same?",
+  "answer": "Linear (constant difference $3$): $y = 3x + 4$",
+  "solution": "Differences: $7 - 4 = 3$, $10 - 7 = 3$, $13 - 10 = 3$. They are all equal, so the relationship is **linear**.\n\nThe slope is the constant difference per step of $1$ in $x$: $m = 3$. The initial value (at $x = 0$) is $b = 4$.\n$$y = 3x + 4$$\n\nCheck: $x = 3$ gives $9 + 4 = 13$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q02",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Decide whether the table shows a linear or an exponential relationship. Then write an equation for $y$ in terms of $x$.\n\n| $x$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|\n| $y$ | $4$ | $8$ | $16$ | $32$ |",
+  "hint": "Check the differences, then the ratios $\\frac{8}{4}$, $\\frac{16}{8}$, $\\frac{32}{16}$.",
+  "answer": "Exponential (constant ratio $2$): $y = 4(2)^x$",
+  "solution": "**What changed:** the $y$-values now **multiply** by the same amount instead of adding.\n\nDifferences: $4, 8, 16$: not constant, so **not linear**.\n\nRatios: $\\frac{8}{4} = 2$, $\\frac{16}{8} = 2$, $\\frac{32}{16} = 2$: constant, so **exponential**.\n\nInitial value (at $x = 0$): $a = 4$. Growth factor: $b = 2$.\n$$y = 4(2)^x$$\n\nCheck: $x = 3$ gives $4 \\times 8 = 32$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q03",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "Decide whether the table shows a linear or an exponential relationship. Then write an equation for $y$ in terms of $x$.\n\n| $x$ | $1$ | $2$ | $3$ | $4$ |\n|---|---|---|---|---|\n| $y$ | $4$ | $8$ | $16$ | $32$ |",
+  "hint": "The table no longer starts at $x = 0$. Work backward one step to find the value when $x = 0$.",
+  "answer": "Exponential: $y = 2(2)^x$",
+  "solution": "**What changed:** the same $y$-values, but the $x$-values now start at $1$ instead of $0$.\n\nRatios are still all $2$, so the relationship is exponential with $b = 2$.\n\nBut $4$ is now the value at $x = 1$, not the initial value. Work back one step (divide by $2$): at $x = 0$, $y = \\frac{4}{2} = 2$. So $a = 2$.\n$$y = 2(2)^x$$\n\nCheck: $x = 1$ gives $2 \\times 2 = 4$ ✓; $x = 4$ gives $2 \\times 16 = 32$ ✓.\n\nEffect of the change: shifting the table one step to the right halves the initial value $a$ (writing $y = 4(2)^x$ would give $8$ at $x = 1$, which is wrong).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q04",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Decide whether the table shows a linear or an exponential relationship. Then write an equation for $y$ in terms of $x$.\n\n| $x$ | $1$ | $2$ | $3$ | $4$ |\n|---|---|---|---|---|\n| $y$ | $32$ | $16$ | $8$ | $4$ |",
+  "hint": "Find the ratio of consecutive $y$-values. Then work back to $x = 0$.",
+  "answer": "Exponential decay: $y = 64(0.5)^x$",
+  "solution": "**What changed:** the $y$-values are reversed, so they now decrease.\n\nRatios: $\\frac{16}{32} = \\frac{8}{16} = \\frac{4}{8} = 0.5$: constant, so **exponential**, with factor $b = 0.5$ (less than $1$, so decay: $50\\%$ decrease each step).\n\nAt $x = 1$, $y = 32$. Work back one step (divide by $0.5$, i.e. multiply by $2$): at $x = 0$, $y = 64$.\n$$y = 64(0.5)^x$$\n\nCheck: $x = 4$: $64 \\times 0.0625 = 4$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q05",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "question": "For each model, state the initial value and describe how the quantity changes each time $t$ increases by $1$. Say whether each model is linear or exponential, and for exponential models give the percent rate of growth or decay.\n\n**(a)** $y = 1200(0.9)^t$ **(b)** $y = 75 + 12t$ **(c)** $y = 50(1.5)^t$ **(d)** $y = 300 - 20t$",
+  "hint": "In $y = a(b)^t$ the value is multiplied by $b$ each step: $b = 1 + r$ for growth and $b = 1 - r$ for decay.",
+  "answer": "(a) exponential, starts at $1200$, decreases by $10\\%$ per step (b) linear, starts at $75$, increases by $12$ per step (c) exponential, starts at $50$, increases by $50\\%$ per step (d) linear, starts at $300$, decreases by $20$ per step",
+  "solution": "**(a)** Exponential. Initial value $1200$. Factor $0.9 = 1 - 0.10$: multiplied by $0.9$ each step, a **10% decrease** per step. (Not \"decreases by $0.9$\".)\n\n**(b)** Linear. Initial value $75$. Adds $12$ each step (slope $12$).\n\n**(c)** Exponential. Initial value $50$. Factor $1.5 = 1 + 0.50$: a **50% increase** per step. (The amount added grows: $+25$, then $+37.5$, ...)\n\n**(d)** Linear. Initial value $300$. Subtracts $20$ each step (slope $-20$).\n\nNote: in (a) and (c), the base is the **factor**, not the rate. A 10% decay is $0.9$, not $0.1$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q06",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [],
+  "question": "Decide whether each situation is best modeled by a linear function or an exponential function. Give a reason.\n\n**(a)** Jamal adds \\$25 to his savings account every month.\n**(b)** The number of bacteria in a dish doubles every hour.\n**(c)** A car loses 15% of its value each year.\n**(d)** A candle gets 0.5 inch shorter every hour.",
+  "hint": "Is the same **amount** added or subtracted each time (linear), or is the quantity **multiplied** by the same factor each time (exponential)?",
+  "answer": "(a) linear (b) exponential (c) exponential (d) linear",
+  "solution": "**(a) Linear:** the same amount, \\$25, is added each month (constant difference).\n\n**(b) Exponential:** the number is multiplied by $2$ each hour (constant ratio).\n\n**(c) Exponential:** losing 15% means multiplying by $0.85$ each year. The dollar amount lost changes (15% of a smaller value each year), but the ratio is constant.\n\n**(d) Linear:** the same length, 0.5 inch, is subtracted each hour (constant difference, slope $-0.5$ inch per hour).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q07",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Keisha is given this table and asked to write a model.\n\n| $x$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|\n| $y$ | $81$ | $54$ | $36$ | $24$ |\n\nHer answer: \"$81 - 54 = 27$, so $y$ decreases by $27$ each time. The model is $y = 81 - 27x$.\"\n\nIdentify Keisha's mistake, explain it, and write the correct model.",
+  "hint": "Use Keisha's model to predict $y$ when $x = 2$ and $x = 3$. Do the predictions match the table?",
+  "answer": "She only checked the first difference. The differences are $27, 18, 12$ (not constant) but the ratios are all $\\frac{2}{3}$, so $y = 81\\left(\\frac{2}{3}\\right)^x$.",
+  "solution": "**The mistake:** Keisha used only the first two values. Her model predicts $y = 81 - 54 = 27$ at $x = 2$, but the table has $36$; at $x = 3$ it gives $0$, not $24$.\n\nCheck **all** the differences: $54 - 81 = -27$, $36 - 54 = -18$, $24 - 36 = -12$. Not constant, so the relationship is **not linear**.\n\nCheck the ratios: $\\frac{54}{81} = \\frac{2}{3}$, $\\frac{36}{54} = \\frac{2}{3}$, $\\frac{24}{36} = \\frac{2}{3}$. Constant, so it is **exponential** with $b = \\frac{2}{3}$ and $a = 81$:\n$$y = 81\\left(\\frac{2}{3}\\right)^x$$\n\nCheck: $81 \\times \\frac{8}{27} = 24$ at $x = 3$ ✓. The quantity decreases by one-third each step.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q08",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A new car costs \\$18,000. Its value decreases by 12% each year. Ben writes a model and makes a prediction:\n\n$$V = 18{,}000(0.12)^t$$\n$$\\text{After 2 years: } V = 18{,}000(0.12)^2 = \\$259.20$$\n\n**(a)** Explain why Ben's answer is unreasonable, and identify his mistake.\n**(b)** Write the correct model and find the value after 2 years.",
+  "hint": "If the car loses 12%, what percent of its value does it keep?",
+  "answer": "(a) He used the rate $0.12$ as the base, which keeps only 12% each year; the base should be $1 - 0.12 = 0.88$ (b) $V = 18{,}000(0.88)^t$; \\$13,939.20",
+  "solution": "**(a)** A car that loses 12% a year should still be worth most of its price after 2 years, not \\$259.20. Ben's base $0.12$ means the car **keeps** 12% of its value each year, i.e. loses 88%.\n\nThe base must be the **decay factor**: losing 12% leaves $100\\% - 12\\% = 88\\%$, so $b = 1 - 0.12 = 0.88$.\n\n**(b)**\n$$V = 18{,}000(0.88)^t$$\n$$V(2) = 18{,}000 \\times 0.88^2 = 18{,}000 \\times 0.7744 = 13{,}939.20$$\nAfter 2 years the car is worth \\$13,939.20.\n\nCheck year by year: $18{,}000 \\times 0.88 = 15{,}840$, then $15{,}840 \\times 0.88 = 13{,}939.20$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q09",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The height of a sunflower seedling $w$ weeks after it is measured is modeled by $h = 8(1.25)^w$ centimeters.\n\nCarlos says: \"The model means the plant grows 1.25 cm every week.\"\n\nIs Carlos correct? Explain, and describe what the $8$ and the $1.25$ really mean.",
+  "hint": "Work out $h$ for $w = 0$, $1$ and $2$ and look at how much it grows each week.",
+  "answer": "No. $8$ cm is the initial height; $1.25$ is a growth factor: the height is multiplied by $1.25$ (a 25% increase) each week, so the weekly growth increases: $+2$ cm, then $+2.5$ cm, ...",
+  "solution": "Carlos is not correct.\n\n* $w = 0$: $h = 8$ cm\n* $w = 1$: $h = 8 \\times 1.25 = 10$ cm (grew $2$ cm)\n* $w = 2$: $h = 10 \\times 1.25 = 12.5$ cm (grew $2.5$ cm)\n* $w = 3$: $h = 12.5 \\times 1.25 = 15.625$ cm (grew $3.125$ cm)\n\nThe plant does not grow by a fixed $1.25$ cm (that would be a linear model, $h = 8 + 1.25w$). Instead:\n* $8$ is the **initial value**: the height when $w = 0$.\n* $1.25$ is the **growth factor**: each week the height is **multiplied** by $1.25 = 1 + 0.25$, which is a **25% increase per week**. The amount of growth gets bigger each week because it is 25% of a larger height.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q10",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A school fundraiser has two sponsor offers for a sponsored reading challenge lasting $d$ days:\n* **Offer A:** \\$500 plus \\$100 for each day: $A(d) = 500 + 100d$\n* **Offer B:** \\$1 doubled for each day: $B(d) = 2^d$\n\nMaya says: \"Offer A will always give more money, because it starts so much higher.\"\n\nIs Maya correct? Justify your answer.",
+  "hint": "Make a table of $A(d)$ and $B(d)$ for $d = 8, 9, 10, 11, 12$.",
+  "answer": "No. Offer A is larger for $d \\le 10$, but Offer B is larger from day 11 on ($2048 > 1600$), and the gap keeps growing.",
+  "solution": "Compare the two offers:\n\n| $d$ | $8$ | $9$ | $10$ | $11$ | $12$ |\n|---|---|---|---|---|---|\n| $A(d)$ | $1300$ | $1400$ | $1500$ | $1600$ | $1700$ |\n| $B(d)$ | $256$ | $512$ | $1024$ | $2048$ | $4096$ |\n\nOffer A is larger up to day 10, but at $d = 11$, $B = 2048 > 1600 = A$. Maya is **not** correct.\n\nWhy it must happen: $A$ grows by a constant \\$100 per day, but $B$ doubles, so each day $B$ increases by its current value. Once $B$ is above \\$100 (from day 7 on) it grows faster than $A$ every day, and the increases keep getting larger, so B eventually overtakes A and stays ahead. An increasing exponential function eventually exceeds any linear function, however high the linear one starts.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q11",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 4,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A town had a population of 5,000 in 2020 and 5,600 in 2022. Let $t$ be the number of years since 2020.\n\n**(a)** Assuming the population grows **linearly**, write a model for $P$ and interpret its slope.\n**(b)** Assuming the population grows **exponentially**, write a model $P = a(b)^t$. Give $b$ to 4 decimal places and state the annual percent growth rate.\n**(c)** Use each model to predict the population in 2030. Which prediction is larger, and why?",
+  "hint": "For the exponential model, $5{,}000 \\cdot b^2 = 5{,}600$, so $b^2 = 1.12$.",
+  "answer": "(a) $P = 5{,}000 + 300t$: increases by 300 people per year (b) $P = 5{,}000(1.0583)^t$: about 5.83% per year (c) linear 8,000; exponential about 8,812; the exponential one, because it grows by a percent of an ever larger population",
+  "solution": "**(a)** The population increased by $600$ in $2$ years, so the slope is $\\frac{600}{2} = 300$ people per year:\n$$P = 5{,}000 + 300t$$\nThe slope $300$ means the population increases by 300 people each year.\n\n**(b)** At $t = 0$, $a = 5{,}000$. At $t = 2$:\n$$5{,}000 b^2 = 5{,}600 \\Rightarrow b^2 = 1.12 \\Rightarrow b = \\sqrt{1.12} = 1.0583 \\text{ (4 d.p.)}$$\n$$P = 5{,}000(1.0583)^t$$\n$b = 1 + r$ with $r \\approx 0.0583$: about **5.83% growth per year**.\n\n**(c)** 2030 is $t = 10$.\n* Linear: $5{,}000 + 300(10) = 8{,}000$\n* Exponential: $5{,}000 \\times b^{10} = 5{,}000 \\times (b^2)^5 = 5{,}000 \\times 1.12^5 = 8{,}811.7\\ldots \\approx 8{,}812$\n\nThe exponential prediction is larger. Both models agree at $t = 0$ and $t = 2$, but the exponential model adds 5.83% of the current population each year, and as the population grows that is more than 300 people per year, so it pulls ahead.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q12",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A cup of coffee contains 200 mg of caffeine. The amount of caffeine in the body decreases by about 13% every hour.\n\n**(a)** Write a model for the amount of caffeine $C$ mg remaining $t$ hours after drinking the coffee.\n**(b)** How much caffeine remains after 4 hours? Give your answer to the nearest tenth of a milligram.\n**(c)** After how many whole hours is the amount first below 100 mg?",
+  "hint": "A 13% decrease means 87% remains each hour.",
+  "answer": "(a) $C = 200(0.87)^t$ (b) $114.6$ mg (c) after 5 hours (about $99.7$ mg)",
+  "solution": "**(a)** Decay rate $r = 0.13$, so the decay factor is $1 - 0.13 = 0.87$:\n$$C = 200(0.87)^t$$\n\n**(b)** $C(4) = 200 \\times 0.87^4 = 200 \\times 0.572898 = 114.58\\ldots \\approx 114.6$ mg.\n\n**(c)** $C(4) \\approx 114.6$ (still above 100) and $C(5) = 200 \\times 0.87^5 = 99.68\\ldots \\approx 99.7$ mg, which is below 100.\n\nSo the amount is first below 100 mg after **5 hours**. (Half the caffeine is gone after about 5 hours.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q13",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "question": "The table shows the number of monthly listeners of a new podcast, $x$ years after it launched.\n\n| Years since launch, $x$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|\n| Monthly listeners, $y$ | $1600$ | $2000$ | $2500$ | $3125$ |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the data can be modeled by an exponential function and not by a linear function.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write an exponential function that models the data.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Explain what the base of your function means in the context of the podcast.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Use your model to predict the number of monthly listeners 6 years after launch. Round to the nearest whole number.",
+    "marks": 1
+   }
+  ],
+  "marks": 6,
+  "hint": "Compare differences and ratios of consecutive $y$-values.",
+  "answer": "(a) differences $400, 500, 625$ are not constant; ratios are all $1.25$ (b) $y = 1600(1.25)^x$ (c) listeners increase by 25% each year (d) about $6104$",
+  "solution": "**(a)** Differences: $400$, $500$, $625$; not constant, so not linear. **1 pt**\nRatios: $\\frac{2000}{1600} = \\frac{2500}{2000} = \\frac{3125}{2500} = 1.25$; constant, so exponential. **1 pt**\n\n**(b)** Initial value $a = 1600$ (at $x = 0$) **1 pt**, growth factor $b = 1.25$:\n$$y = 1600(1.25)^x \\quad \\textbf{1 pt}$$\n\n**(c)** Each year the number of monthly listeners is multiplied by $1.25$, i.e. it **increases by 25% per year**. **1 pt** (Not \"increases by $1.25$ listeners\".)\n\n**(d)** $y = 1600(1.25)^6 = 1600 \\times 3.8147 \\ldots = 6103.5\\ldots \\approx 6104$ monthly listeners. **1 pt**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q14",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The points $(1, 6)$ and $(3, 54)$ lie on the graph of an exponential function $f(x) = a(b)^x$ with $b > 0$, and also on the graph of a linear function $g(x) = mx + c$.\n\n**(a)** Find $f(x)$.\n**(b)** Find $g(x)$.\n**(c)** Compare $f(5)$ and $g(5)$, and state for which values of $x$ between $1$ and $3$ the graph of $f$ lies below the graph of $g$.",
+  "hint": "Divide $a b^3 = 54$ by $a b^1 = 6$ to eliminate $a$.",
+  "answer": "(a) $f(x) = 2(3)^x$ (b) $g(x) = 24x - 18$ (c) $f(5) = 486$, $g(5) = 102$; $f$ is below $g$ for all $1 < x < 3$",
+  "solution": "**(a)** $ab = 6$ and $ab^3 = 54$. Dividing:\n$$\\frac{ab^3}{ab} = b^2 = 9 \\Rightarrow b = 3 \\ (b > 0)$$\nThen $a = \\frac{6}{3} = 2$:\n$$f(x) = 2(3)^x$$\nCheck: $f(3) = 2 \\times 27 = 54$ ✓.\n\n**(b)** Slope $m = \\dfrac{54 - 6}{3 - 1} = 24$. $6 = 24(1) + c \\Rightarrow c = -18$:\n$$g(x) = 24x - 18$$\n\n**(c)** $f(5) = 2 \\times 243 = 486$, $g(5) = 120 - 18 = 102$. The exponential is far larger.\n\nBetween the two shared points, e.g. at $x = 2$: $f(2) = 18$ and $g(2) = 30$. An increasing exponential curve bends upward (it is concave up), so between two points where it meets a line it lies **below** the line, and outside them it lies above. So $f(x) < g(x)$ for all $1 < x < 3$, and $f(x) > g(x)$ for $x > 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q15",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-sequences-linear",
+   "alg-sequences-quadratic-geometric"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "An arithmetic sequence begins $7, 11, 15, \\ldots$ and a geometric sequence begins $3, 6, 12, \\ldots$\n\n**(a)** Write the $n$th term of each sequence, and explain which is a linear function of $n$ and which is exponential.\n**(b)** Find the first value of $n$ for which the geometric sequence's term is greater than the arithmetic sequence's term.\n**(c)** Explain why the geometric term stays greater for every larger $n$.",
+  "hint": "Arithmetic: constant difference. Geometric: constant ratio. For (c), compare how much each sequence increases from one term to the next.",
+  "answer": "(a) $a_n = 4n + 3$ (linear), $g_n = 3(2)^{n-1}$ (exponential) (b) $n = 4$ ($24 > 19$) (c) from $n = 4$ the geometric sequence increases by $g_n \\ge 24$ each step, but the arithmetic one only by $4$",
+  "solution": "**(a)** Arithmetic: first term $7$, common difference $4$: $a_n = 7 + 4(n - 1) = 4n + 3$. This is a **linear** function of $n$ (constant difference $4$).\n\nGeometric: first term $3$, common ratio $2$: $g_n = 3(2)^{n-1}$. This is **exponential** in $n$ (constant ratio $2$).\n\n**(b)**\n\n| $n$ | $1$ | $2$ | $3$ | $4$ |\n|---|---|---|---|---|\n| $a_n$ | $7$ | $11$ | $15$ | $19$ |\n| $g_n$ | $3$ | $6$ | $12$ | $24$ |\n\nFirst at $n = 4$: $24 > 19$.\n\n**(c)** From one term to the next, $a_n$ always increases by $4$. The geometric sequence increases by $g_{n+1} - g_n = 2g_n - g_n = g_n$, its own current value. For $n \\ge 4$, $g_n \\ge 24 > 4$. So once $g_n$ is ahead, it gains more than $4$ every step and the gap only widens: the geometric term stays greater for all $n \\ge 4$."
+ },
+ {
+  "id": "alg-linear-exponential-models-q16",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "rat-compound-growth-decay",
+   "rat-financial-maths"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m2"
+  ],
+  "question": "Lucia has \\$5,000 to invest for many years. She compares two accounts:\n* **Account A** pays 6% **simple** interest per year (6% of the original \\$5,000 each year).\n* **Account B** pays 4.5% interest per year, **compounded** annually.\n\n**(a)** Write a model for the value of each account after $t$ years, and say which is linear and which is exponential.\n**(b)** Which account is worth more after 10 years, and by how much?\n**(c)** Find the first whole number of years after which Account B is worth more than Account A.\n**(d)** Explain why Account B must eventually overtake Account A, even though its rate is lower.",
+  "hint": "Simple interest adds the same dollar amount every year; compound interest multiplies by the same factor every year.",
+  "answer": "(a) $A = 5{,}000 + 300t$ (linear), $B = 5{,}000(1.045)^t$ (exponential) (b) Account A, by \\$235.15 (\\$8,000 vs \\$7,764.85) (c) 14 years (d) B's yearly interest is 4.5% of a growing balance, which eventually exceeds A's fixed \\$300 a year",
+  "solution": "**(a)** Account A earns $0.06 \\times \\$5{,}000 = \\$300$ every year: $A = 5{,}000 + 300t$ (**linear**, slope 300 dollars per year).\n\nAccount B is multiplied by $1 + 0.045 = 1.045$ each year: $B = 5{,}000(1.045)^t$ (**exponential**, growth factor $1.045$).\n\n**(b)** $A(10) = 5{,}000 + 3{,}000 = 8{,}000$.\n$B(10) = 5{,}000 \\times 1.045^{10} = 5{,}000 \\times 1.552969\\ldots = 7{,}764.85$.\nAccount A is worth more, by $\\$8{,}000 - \\$7{,}764.85 = \\$235.15$.\n\n**(c)**\n\n| $t$ | $12$ | $13$ | $14$ |\n|---|---|---|---|\n| $A$ (\\$) | $8{,}600$ | $8{,}900$ | $9{,}200$ |\n| $B$ (\\$) | $8{,}479.41$ | $8{,}860.98$ | $9{,}259.72$ |\n\nAfter 13 years A is still ahead; after **14 years** B is worth more (\\$9,259.72 vs \\$9,200).\n\n**(d)** Each year A gains a fixed \\$300. B gains 4.5% of its current balance, which keeps growing. At the start that is only \\$225, but once B's balance exceeds $\\frac{300}{0.045} \\approx 6{,}667$ dollars (after about 7 years), B gains more than \\$300 each year, and its yearly gain keeps increasing. So B catches up and then pulls further ahead: exponential growth eventually beats linear growth, whatever the starting rates."
+ },
+ {
+  "id": "alg-linear-exponential-models-q17",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A quantity is modeled by $f(x) = a(b)^x$, where $a > 0$ and $b > 1$.\n\n**(a)** Show that the differences $f(x + 1) - f(x)$ form an exponential pattern with the same factor $b$.\n**(b)** Given that $f(2) - f(1) = 12$ and $f(3) - f(2) = 18$, find $a$ and $b$.\n**(c)** Hence write down $f(1)$, $f(2)$ and $f(3)$, and check your answer.",
+  "hint": "Factor $f(x + 1) - f(x) = ab^{x+1} - ab^x$. For (b), divide the two given differences.",
+  "answer": "(a) $f(x + 1) - f(x) = a(b - 1)b^x$ (b) $a = 16$, $b = 1.5$ (c) $f(1) = 24$, $f(2) = 36$, $f(3) = 54$",
+  "solution": "**(a)**\n$$f(x + 1) - f(x) = ab^{x+1} - ab^x = ab^x(b - 1) = [a(b - 1)]\\,b^x$$\nThis is itself of the form (constant) $\\times\\, b^x$: the differences are multiplied by $b$ at each step. (So for an exponential function, the differences are not constant but they have the same constant ratio $b$ as the values.)\n\n**(b)** By (a), consecutive differences have ratio $b$:\n$$b = \\frac{f(3) - f(2)}{f(2) - f(1)} = \\frac{18}{12} = 1.5$$\nThen $f(2) - f(1) = a(b - 1)b^1 = a(0.5)(1.5) = 0.75a = 12$, so $a = 16$.\n\n**(c)** $f(1) = 16 \\times 1.5 = 24$, $f(2) = 16 \\times 2.25 = 36$, $f(3) = 16 \\times 3.375 = 54$.\n\nCheck: $36 - 24 = 12$ ✓ and $54 - 36 = 18$ ✓. Also $\\frac{36}{24} = \\frac{54}{36} = 1.5$ ✓. The values are **multiplied** by $1.5$ each step (a 50% increase), not increased by $1.5$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-linear-exponential-models-q18",
+  "topicId": "alg-linear-exponential-models",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The graph shows two functions for $0 \\le x \\le 4$. One is linear and one is exponential. Some points with whole-number coordinates are marked.\n\n**(a)** Which graph, A or B, is exponential? Write an equation for each graph.\n**(b)** For which values of $x$ in $0 \\le x \\le 4$ is the exponential function greater than the linear function?\n**(c)** Explain how the graph shows that, after they meet, the exponential function is increasing faster than the linear function.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 316 280\" width=\"316\" height=\"280\"><line x1=\"30\" y1=\"254\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"90\" y1=\"254\" x2=\"90\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"150\" y1=\"254\" x2=\"150\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"210\" y1=\"254\" x2=\"210\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"270\" y1=\"254\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"254\" x2=\"300\" y2=\"254\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"240\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"226\" x2=\"300\" y2=\"226\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"212\" x2=\"300\" y2=\"212\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"198\" x2=\"300\" y2=\"198\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"184\" x2=\"300\" y2=\"184\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"170\" x2=\"300\" y2=\"170\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"156\" x2=\"300\" y2=\"156\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"142\" x2=\"300\" y2=\"142\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"128\" x2=\"300\" y2=\"128\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"114\" x2=\"300\" y2=\"114\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"100\" x2=\"300\" y2=\"100\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"86\" x2=\"300\" y2=\"86\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"72\" x2=\"300\" y2=\"72\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"58\" x2=\"300\" y2=\"58\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"44\" x2=\"300\" y2=\"44\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"30\" x2=\"300\" y2=\"30\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"300\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"254\" x2=\"308\" y2=\"254\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M308,254 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"30\" y1=\"254\" x2=\"30\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M30,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"308\" y=\"247\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"37\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"90\" y1=\"251\" x2=\"90\" y2=\"257\" stroke=\"currentColor\"/><text x=\"90\" y=\"269\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"251\" x2=\"150\" y2=\"257\" stroke=\"currentColor\"/><text x=\"150\" y=\"269\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"210\" y1=\"251\" x2=\"210\" y2=\"257\" stroke=\"currentColor\"/><text x=\"210\" y=\"269\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"270\" y1=\"251\" x2=\"270\" y2=\"257\" stroke=\"currentColor\"/><text x=\"270\" y=\"269\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"27\" y1=\"226\" x2=\"33\" y2=\"226\" stroke=\"currentColor\"/><text x=\"24\" y=\"230\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"27\" y1=\"198\" x2=\"33\" y2=\"198\" stroke=\"currentColor\"/><text x=\"24\" y=\"202\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"27\" y1=\"170\" x2=\"33\" y2=\"170\" stroke=\"currentColor\"/><text x=\"24\" y=\"174\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"27\" y1=\"142\" x2=\"33\" y2=\"142\" stroke=\"currentColor\"/><text x=\"24\" y=\"146\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"27\" y1=\"114\" x2=\"33\" y2=\"114\" stroke=\"currentColor\"/><text x=\"24\" y=\"118\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"27\" y1=\"86\" x2=\"33\" y2=\"86\" stroke=\"currentColor\"/><text x=\"24\" y=\"90\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">12</text><line x1=\"27\" y1=\"58\" x2=\"33\" y2=\"58\" stroke=\"currentColor\"/><text x=\"24\" y=\"62\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">14</text><line x1=\"27\" y1=\"30\" x2=\"33\" y2=\"30\" stroke=\"currentColor\"/><text x=\"24\" y=\"34\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">16</text><text x=\"24\" y=\"268\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><polyline points=\"30,240 32.04,239.67 34.08,239.32 36.12,238.97 38.16,238.62 40.2,238.25 42.24,237.87 44.28,237.49 46.32,237.1 48.36,236.69 50.4,236.28 52.44,235.86 54.48,235.42 56.52,234.98 58.56,234.53 60.6,234.06 62.64,233.59 64.68,233.1 66.72,232.6 68.76,232.09 70.8,231.57 72.84,231.04 74.88,230.49 76.92,229.93 78.96,229.35 81,228.76 83.04,228.16 85.08,227.55 87.12,226.92 89.16,226.27 91.2,225.61 93.24,224.93 95.28,224.24 97.32,223.53 99.36,222.8 101.4,222.06 103.44,221.3 105.48,220.52 107.52,219.72 109.56,218.9 111.6,218.06 113.64,217.21 115.68,216.33 117.72,215.43 119.76,214.51 121.8,213.57 123.84,212.61 125.88,211.62 127.92,210.61 129.96,209.57 132,208.51 134.04,207.43 136.08,206.32 138.12,205.18 140.16,204.02 142.2,202.83 144.24,201.61 146.28,200.36 148.32,199.08 150.36,197.77 152.4,196.43 154.44,195.05 156.48,193.65 158.52,192.21 160.56,190.73 162.6,189.23 164.64,187.68 166.68,186.1 168.72,184.48 170.76,182.82 172.8,181.12 174.84,179.39 176.88,177.61 178.92,175.79 180.96,173.92 183,172.01 185.04,170.06 187.08,168.05 189.12,166 191.16,163.91 193.2,161.76 195.24,159.56 197.28,157.31 199.32,155 201.36,152.64 203.4,150.22 205.44,147.75 207.48,145.21 209.52,142.62 211.56,139.96 213.6,137.24 215.64,134.46 217.68,131.61 219.72,128.69 221.76,125.7 223.8,122.64 225.84,119.51 227.88,116.3 229.92,113.02 231.96,109.66 234,106.22 236.04,102.69 238.08,99.08 240.12,95.39 242.16,91.61 244.2,87.73 246.24,83.77 248.28,79.71 250.32,75.55 252.36,71.3 254.4,66.94 256.44,62.48 258.48,57.91 260.52,53.24 262.56,48.45 264.6,43.55 266.64,38.53 268.68,33.39 270.72,28.13 272.76,22.74 274.8,17.23\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"226\" x2=\"300\" y2=\"163\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"30\" cy=\"240\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"90\" cy=\"226\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"198\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"210\" cy=\"142\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"270\" cy=\"30\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"30\" cy=\"226\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"210\" cy=\"184\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><text x=\"281\" y=\"28.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><text x=\"296\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text></svg>",
+  "hint": "Read off the $y$-values of each graph at $x = 0, 1, 2, 3$. Check for constant differences or constant ratios.",
+  "answer": "(a) A is exponential: $y = 2^x$; B is linear: $y = x + 2$ (b) $2 < x \\le 4$ (c) A gets steeper and steeper while B has a constant slope of $1$",
+  "solution": "**(a)** Graph A passes through $(0, 1)$, $(1, 2)$, $(2, 4)$, $(3, 8)$, $(4, 16)$: each $y$-value is double the one before (constant ratio $2$), so **A is exponential**: $y = 1(2)^x = 2^x$.\n\nGraph B passes through $(0, 2)$ and $(3, 5)$ and is a straight line: slope $\\frac{5 - 2}{3 - 0} = 1$, $y$-intercept $2$, so **B is linear**: $y = x + 2$.\n\n**(b)** The graphs meet where $2^x = x + 2$. At $x = 2$: $4 = 4$ ✓. For $0 \\le x < 2$, B is above A (e.g. at $x = 1$: $3 > 2$). For $x > 2$, A is above B (e.g. at $x = 3$: $8 > 5$).\n\nSo the exponential is greater for $2 < x \\le 4$.\n\n**(c)** B is a straight line, so it rises $1$ unit for every $1$ unit across. A rises by $1$, then $2$, then $4$, then $8$: it gets steeper. After $x = 2$, A is already above B and climbs faster on every interval, so the gap grows ($8 - 5 = 3$ at $x = 3$, $16 - 6 = 10$ at $x = 4$). B started higher, but the exponential overtakes it.",
+  "linkedTopicIds": []
+ }
+]

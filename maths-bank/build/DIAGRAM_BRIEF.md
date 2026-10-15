@@ -18,7 +18,10 @@ SCRATCH = /tmp/claude-0/-home-user-accounting-chronicle/8b5854a7-9e85-5969-9c87-
    * **Axes and grids**: tick labels at the right positions; grid lines exactly on tick values; scales linear and
      consistent; axes labelled where needed.
    * **Geometry**: shapes look plausible (an angle labelled 30° isn't drawn as 80°; parallel lines look parallel;
-     right-angle marks where stated). If the figure is intentionally not to scale, the question must say so.
+     right-angle marks where stated). Prefer an accurate drawing to a disclaimer: if a figure is badly out of
+     proportion (e.g. two sides drawn equal that are 9 cm and 6 cm), redraw it to scale and remove any
+     "not drawn to scale" note that is no longer needed. Use "not to scale" only where accuracy is impossible or
+     would give the answer away.
    * **Legibility**: no labels overlapping lines or each other, nothing clipped by the viewBox, text ≥ 11px, nothing
      unreadable. Uses currentColor (works in dark mode).
    * **No give-aways**: the diagram must not reveal the answer the question asks for.
