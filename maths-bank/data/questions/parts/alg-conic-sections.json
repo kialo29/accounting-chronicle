@@ -1,0 +1,294 @@
+[
+ {
+  "id": "alg-conic-sections-q01",
+  "topicId": "alg-conic-sections",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For the parabola $x^2 = 8y$, find the vertex, the focus and the directrix, and state which way it opens.",
+  "hint": "Compare with $x^2 = 4py$. Find $p$ first: it is not 8.",
+  "answer": "Vertex $(0, 0)$, focus $(0, 2)$, directrix $y = -2$; opens up",
+  "solution": "Compare $x^2 = 8y$ with $x^2 = 4py$: $4p = 8$, so $p = 2$.\n\n- Vertex $(0, 0)$.\n- $x$ is squared and $p > 0$, so the parabola opens **up**.\n- Focus: $p = 2$ units above the vertex, $(0, 2)$.\n- Directrix: $2$ units below the vertex, $y = -2$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q02",
+  "topicId": "alg-conic-sections",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For the parabola $x^2 = -8y$, find the vertex, the focus and the directrix, and state which way it opens.",
+  "hint": "Compare with $x^2 = 4py$. What is the sign of $p$ now?",
+  "answer": "Vertex $(0, 0)$, focus $(0, -2)$, directrix $y = 2$; opens down",
+  "solution": "**What changed:** the coefficient $8$ became $-8$.\n\n$4p = -8$, so $p = -2$.\n\n- Vertex $(0, 0)$.\n- $p < 0$, so the parabola opens **down**.\n- Focus $(0, -2)$; directrix $y = 2$.\n\nChanging the sign of $4p$ flipped the parabola: the focus and directrix swapped sides.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q03",
+  "topicId": "alg-conic-sections",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For the parabola $y^2 = -8x$, find the vertex, the focus and the directrix, and state which way it opens.",
+  "hint": "Now $y$ is squared. Compare with $y^2 = 4px$.",
+  "answer": "Vertex $(0, 0)$, focus $(-2, 0)$, directrix $x = 2$; opens left",
+  "solution": "**What changed:** the roles of $x$ and $y$ swapped, so $y$ is now the squared variable.\n\nCompare with $y^2 = 4px$: $4p = -8$, so $p = -2$.\n\n- Vertex $(0, 0)$.\n- $y$ is squared, so the parabola opens left or right; $p < 0$ means **left**.\n- Focus: 2 units left of the vertex, $(-2, 0)$.\n- Directrix: the vertical line 2 units to the right, $x = 2$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q04",
+  "topicId": "alg-conic-sections",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For the parabola $(y - 3)^2 = -8(x + 1)$, find the vertex, the focus and the directrix, and state which way it opens.",
+  "hint": "Compare with $(y - k)^2 = 4p(x - h)$. The vertex moves; $p$ does not change.",
+  "answer": "Vertex $(-1, 3)$, focus $(-3, 3)$, directrix $x = 1$; opens left",
+  "solution": "**What changed:** the parabola from the previous question has been translated so its vertex is at $(h, k)$.\n\nCompare with $(y - k)^2 = 4p(x - h)$: $h = -1$, $k = 3$, $4p = -8$, so $p = -2$.\n\n- Vertex $(-1, 3)$.\n- Opens **left** (as before).\n- Focus: 2 units left of the vertex, $(-1 - 2, 3) = (-3, 3)$.\n- Directrix: 2 units right of the vertex, $x = -1 + 2 = 1$.\n\nEverything moved 1 left and 3 up compared with $y^2 = -8x$; the shape and $p$ stayed the same.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q05",
+  "topicId": "alg-conic-sections",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The graph shows an ellipse whose vertices, co-vertices and center are all at points with integer coordinates.\n\n(a) Write the equation of the ellipse in standard form.\n\n(b) Find the exact coordinates of its foci.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 257\" width=\"320\" height=\"257\"><line x1=\"30\" y1=\"234.8\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"57.6\" y1=\"234.8\" x2=\"57.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"85.2\" y1=\"234.8\" x2=\"85.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"112.8\" y1=\"234.8\" x2=\"112.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"140.4\" y1=\"234.8\" x2=\"140.4\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"168\" y1=\"234.8\" x2=\"168\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"195.6\" y1=\"234.8\" x2=\"195.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"223.2\" y1=\"234.8\" x2=\"223.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"250.8\" y1=\"234.8\" x2=\"250.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"278.4\" y1=\"234.8\" x2=\"278.4\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"306\" y1=\"234.8\" x2=\"306\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"234.8\" x2=\"306\" y2=\"234.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"207.2\" x2=\"306\" y2=\"207.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"179.6\" x2=\"306\" y2=\"179.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"152\" x2=\"306\" y2=\"152\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"124.4\" x2=\"306\" y2=\"124.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"96.8\" x2=\"306\" y2=\"96.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"69.2\" x2=\"306\" y2=\"69.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"41.6\" x2=\"306\" y2=\"41.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"306\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"69.2\" x2=\"306\" y2=\"69.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"140.4\" y1=\"234.8\" x2=\"140.4\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"66.2\" x2=\"30\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"57.6\" y1=\"66.2\" x2=\"57.6\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"57.6\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"85.2\" y1=\"66.2\" x2=\"85.2\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"85.2\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"112.8\" y1=\"66.2\" x2=\"112.8\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"112.8\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"168\" y1=\"66.2\" x2=\"168\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"168\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"195.6\" y1=\"66.2\" x2=\"195.6\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"195.6\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"223.2\" y1=\"66.2\" x2=\"223.2\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"223.2\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"250.8\" y1=\"66.2\" x2=\"250.8\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"250.8\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"278.4\" y1=\"66.2\" x2=\"278.4\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"278.4\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"306\" y1=\"66.2\" x2=\"306\" y2=\"72.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"306\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"137.4\" y1=\"234.8\" x2=\"143.4\" y2=\"234.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"238.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−6</text><line x1=\"137.4\" y1=\"207.2\" x2=\"143.4\" y2=\"207.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"211.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−5</text><line x1=\"137.4\" y1=\"179.6\" x2=\"143.4\" y2=\"179.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"183.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"137.4\" y1=\"152\" x2=\"143.4\" y2=\"152\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"156\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"137.4\" y1=\"124.4\" x2=\"143.4\" y2=\"124.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"128.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"137.4\" y1=\"96.8\" x2=\"143.4\" y2=\"96.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"100.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"137.4\" y1=\"41.6\" x2=\"143.4\" y2=\"41.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"45.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"137.4\" y1=\"14\" x2=\"143.4\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"140.4\" y=\"249.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"25\" y=\"73.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><text x=\"308\" y=\"64.2\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"146.4\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><path d=\"M278.4 124.4 L278.4 124.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/></svg>",
+  "hint": "Find the center first (the middle of the ellipse), then count how far it stretches horizontally and vertically. The larger distance is $a$.",
+  "answer": "(a) $\\dfrac{(x - 1)^2}{16} + \\dfrac{(y + 2)^2}{9} = 1$ (b) $\\left(1 + \\sqrt{7}, -2\\right)$ and $\\left(1 - \\sqrt{7}, -2\\right)$",
+  "solution": "**(a)** The ellipse runs from $x = -3$ to $x = 5$ and from $y = -5$ to $y = 1$.\n\nCenter: $\\left(\\frac{-3 + 5}{2}, \\frac{-5 + 1}{2}\\right) = (1, -2)$.\n\nHorizontal semi-axis: $5 - 1 = 4$. Vertical semi-axis: $1 - (-2) = 3$.\n\nThe horizontal axis is longer, so it is the major axis: $a = 4$, $b = 3$.\n$$\\frac{(x - 1)^2}{16} + \\frac{(y + 2)^2}{9} = 1$$\n\n**(b)** For an ellipse $c^2 = a^2 - b^2 = 16 - 9 = 7$, so $c = \\sqrt{7}$. The foci are on the major (horizontal) axis, $\\sqrt{7}$ from the center:\n$$\\left(1 + \\sqrt{7}, -2\\right) \\text{ and } \\left(1 - \\sqrt{7}, -2\\right)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q06",
+  "topicId": "alg-conic-sections",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "For the hyperbola $\\dfrac{x^2}{16} - \\dfrac{y^2}{9} = 1$, find\n\n(a) the vertices\n\n(b) the foci\n\n(c) the equations of the asymptotes.",
+  "hint": "The positive term is in $x$, so it opens left and right with $a^2 = 16$. For a hyperbola, $c^2 = a^2 + b^2$.",
+  "answer": "(a) $(4, 0)$ and $(-4, 0)$ (b) $(5, 0)$ and $(-5, 0)$ (c) $y = \\frac{3}{4}x$ and $y = -\\frac{3}{4}x$",
+  "solution": "Center $(0, 0)$; $a^2 = 16$, $b^2 = 9$, so $a = 4$, $b = 3$. The $x^2$ term is positive, so the hyperbola opens left and right.\n\n**(a)** Vertices: $(\\pm a, 0) = (4, 0)$ and $(-4, 0)$.\n\n**(b)** For a hyperbola, the foci are **beyond** the vertices: $c^2 = a^2 + b^2 = 16 + 9 = 25$, so $c = 5$. Foci $(5, 0)$ and $(-5, 0)$.\n\n**(c)** Asymptotes $y = \\pm\\frac{b}{a}x = \\pm\\frac{3}{4}x$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q07",
+  "topicId": "alg-conic-sections",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Identify each conic as a circle, ellipse, parabola or hyperbola.\n\n(a) $4x^2 + 4y^2 - 8x + 16y - 5 = 0$\n\n(b) $3x^2 - 5y^2 + 12x + 10y - 8 = 0$\n\n(c) $y^2 - 6y + 4x + 1 = 0$\n\n(d) $2x^2 + 7y^2 - 14 = 0$\n\nThen write the equations in (a) and (c) in standard form, and state the center and radius of (a) and the vertex of (c).",
+  "hint": "Look only at the $x^2$ and $y^2$ coefficients $A$ and $C$: one of them zero, equal, same sign, or opposite signs?",
+  "answer": "(a) circle (b) hyperbola (c) parabola (d) ellipse. (a) $(x - 1)^2 + (y + 2)^2 = \\frac{25}{4}$, center $(1, -2)$, radius $\\frac{5}{2}$; (c) $(y - 3)^2 = -4(x - 2)$, vertex $(2, 3)$",
+  "solution": "**(a)** $A = C = 4$: **circle**.\n\n**(b)** $A = 3$, $C = -5$, opposite signs: **hyperbola**.\n\n**(c)** Only $y$ is squared ($A = 0$): **parabola**.\n\n**(d)** $A = 2$, $C = 7$, same sign, different values: **ellipse** (it is $\\frac{x^2}{7} + \\frac{y^2}{2} = 1$).\n\n**Standard form of (a):** divide by 4 and complete the square:\n$$x^2 - 2x + y^2 + 4y = \\frac{5}{4}$$\n$$(x - 1)^2 + (y + 2)^2 = \\frac{5}{4} + 1 + 4 = \\frac{25}{4}$$\nCenter $(1, -2)$, radius $\\frac{5}{2}$.\n\n**Standard form of (c):**\n$$y^2 - 6y = -4x - 1$$\n$$(y - 3)^2 = -4x - 1 + 9 = -4x + 8 = -4(x - 2)$$\nVertex $(2, 3)$; it opens left ($4p = -4$, $p = -1$).",
+  "linkedTopicIds": [
+   "alg-circle-equations"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q08",
+  "topicId": "alg-conic-sections",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A parabola is the set of points that are the same distance from the focus $F(2, 5)$ as from the directrix $y = 1$, as shown.\n\n(a) Let $P(x, y)$ be any point on the parabola. Use the distance formula to show that the equation of the parabola is $(x - 2)^2 = 8(y - 3)$.\n\n(b) State the vertex and explain how it could have been found directly from the focus and the directrix.\n\n(c) Verify that the point $(6, 5)$ lies on the parabola by checking both distances.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 274\" width=\"330\" height=\"274\"><line x1=\"30\" y1=\"252.3\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"53.8\" y1=\"252.3\" x2=\"53.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"77.7\" y1=\"252.3\" x2=\"77.7\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"101.5\" y1=\"252.3\" x2=\"101.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"125.3\" y1=\"252.3\" x2=\"125.3\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"149.2\" y1=\"252.3\" x2=\"149.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"173\" y1=\"252.3\" x2=\"173\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"196.8\" y1=\"252.3\" x2=\"196.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"220.7\" y1=\"252.3\" x2=\"220.7\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"244.5\" y1=\"252.3\" x2=\"244.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"268.3\" y1=\"252.3\" x2=\"268.3\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"292.2\" y1=\"252.3\" x2=\"292.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"316\" y1=\"252.3\" x2=\"316\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"252.3\" x2=\"316\" y2=\"252.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"228.5\" x2=\"316\" y2=\"228.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"204.7\" x2=\"316\" y2=\"204.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"180.8\" x2=\"316\" y2=\"180.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"157\" x2=\"316\" y2=\"157\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"133.2\" x2=\"316\" y2=\"133.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"109.3\" x2=\"316\" y2=\"109.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"85.5\" x2=\"316\" y2=\"85.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"61.7\" x2=\"316\" y2=\"61.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"37.8\" x2=\"316\" y2=\"37.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"316\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"228.5\" x2=\"316\" y2=\"228.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"125.3\" y1=\"252.3\" x2=\"125.3\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"225.5\" x2=\"30\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"53.8\" y1=\"225.5\" x2=\"53.8\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"53.8\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"77.7\" y1=\"225.5\" x2=\"77.7\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"77.7\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"101.5\" y1=\"225.5\" x2=\"101.5\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"101.5\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"149.2\" y1=\"225.5\" x2=\"149.2\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"149.2\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"173\" y1=\"225.5\" x2=\"173\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"196.8\" y1=\"225.5\" x2=\"196.8\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"196.8\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"220.7\" y1=\"225.5\" x2=\"220.7\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"220.7\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"244.5\" y1=\"225.5\" x2=\"244.5\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"244.5\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"268.3\" y1=\"225.5\" x2=\"268.3\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"268.3\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"292.2\" y1=\"225.5\" x2=\"292.2\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"292.2\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"316\" y1=\"225.5\" x2=\"316\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"316\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"122.3\" y1=\"252.3\" x2=\"128.3\" y2=\"252.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"256.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"122.3\" y1=\"204.7\" x2=\"128.3\" y2=\"204.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"208.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"122.3\" y1=\"180.8\" x2=\"128.3\" y2=\"180.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"184.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"122.3\" y1=\"157\" x2=\"128.3\" y2=\"157\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"161\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"122.3\" y1=\"133.2\" x2=\"128.3\" y2=\"133.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"137.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"122.3\" y1=\"109.3\" x2=\"128.3\" y2=\"109.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"113.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"122.3\" y1=\"85.5\" x2=\"128.3\" y2=\"85.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"89.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"122.3\" y1=\"61.7\" x2=\"128.3\" y2=\"61.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"65.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><line x1=\"122.3\" y1=\"37.8\" x2=\"128.3\" y2=\"37.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"41.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"122.3\" y1=\"14\" x2=\"128.3\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"25\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">9</text><text x=\"125.3\" y=\"267.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"25\" y=\"232.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><text x=\"318\" y=\"223.5\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"131.3\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"30\" y1=\"204.7\" x2=\"316\" y2=\"204.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><text x=\"313.6\" y=\"198.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = 1</text><path d=\"M30 49.8 L46.4 73 L55.7 84.9 L65 95.9 L80 111.7 L88.6 119.7 L98.6 128 L108.6 135.3 L116.5 140.3 L126.5 145.7 L135.1 149.5 L140.8 151.6 L150.1 154.3 L163 156.5 L170.1 157 L180.9 156.7 L190.2 155.5 L195.9 154.3 L205.2 151.6 L215.2 147.7 L223.8 143.5 L233.1 138.1 L242.4 131.8 L251.7 124.6 L261.7 115.8 L271 106.7 L281 95.9 L290.3 84.9 L299.6 73 L316 49.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"173\" cy=\"109.3\" r=\"3.5\" fill=\"currentColor\"/><text x=\"181\" y=\"113.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">F(2, 5)</text></svg>",
+  "hint": "The distance from $P(x, y)$ to the line $y = 1$ is $|y - 1|$. Set this equal to $PF$, then square both sides.",
+  "answer": "(a) $\\sqrt{(x - 2)^2 + (y - 5)^2} = |y - 1|$; squaring and simplifying gives $(x - 2)^2 = 8y - 24 = 8(y - 3)$. (b) Vertex $(2, 3)$, the midpoint between the focus and the directrix along the axis $x = 2$. (c) Distance to $F$ is 4 and distance to $y = 1$ is 4.",
+  "solution": "**(a)** Distance from $P$ to the focus:\n$$PF = \\sqrt{(x - 2)^2 + (y - 5)^2}$$\nDistance from $P$ to the directrix $y = 1$ (straight down to the line): $|y - 1|$.\n\nSet them equal and square:\n$$(x - 2)^2 + (y - 5)^2 = (y - 1)^2$$\n$$(x - 2)^2 + y^2 - 10y + 25 = y^2 - 2y + 1$$\n$$(x - 2)^2 = 8y - 24 = 8(y - 3)$$\n\n**(b)** Vertex $(2, 3)$. The vertex is the point of the parabola on its axis of symmetry $x = 2$, halfway between the focus $(2, 5)$ and the directrix point $(2, 1)$: $\\left(2, \\frac{5 + 1}{2}\\right) = (2, 3)$. (So $p = 2$, matching $4p = 8$.)\n\n**(c)** For $(6, 5)$: $PF = \\sqrt{4^2 + 0^2} = 4$ and the distance to $y = 1$ is $5 - 1 = 4$. Equal, so $(6, 5)$ is on the parabola. (Check in the equation: $(6 - 2)^2 = 16 = 8(5 - 3)$. ✓)",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q09",
+  "topicId": "alg-conic-sections",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Mia is finding the vertices of the ellipse $\\dfrac{x^2}{9} + \\dfrac{(y - 2)^2}{25} = 1$. Her work is shown below.\n\nLine 1: The center is $(0, 2)$.\n\nLine 2: $a^2$ is under $x^2$, so $a^2 = 9$ and $a = 3$; $b^2 = 25$ and $b = 5$.\n\nLine 3: The vertices are $(0 \\pm 3, 2)$, i.e. $(3, 2)$ and $(-3, 2)$.\n\nFind Mia's error, explain it, and give the correct vertices. Then find the foci.",
+  "hint": "Which denominator is larger? In which direction is the ellipse longer?",
+  "answer": "Line 2 is wrong: $a^2$ is the **larger** denominator, 25, under $y$. Vertices $(0, 7)$ and $(0, -3)$; foci $(0, 6)$ and $(0, -2)$. ($(\\pm 3, 2)$ are the co-vertices.)",
+  "solution": "**Error (Line 2):** For an ellipse, $a^2$ is always the **larger** denominator, wherever it is. Here $25 > 9$ and 25 is under $(y - 2)^2$, so the major axis is **vertical**: $a = 5$, $b = 3$.\n\nMia's points $(3, 2)$ and $(-3, 2)$ are the **co-vertices** (ends of the minor axis).\n\n**Correct vertices:** 5 units above and below the center $(0, 2)$:\n$$(0, 7) \\text{ and } (0, -3)$$\n\n**Foci:** $c^2 = a^2 - b^2 = 25 - 9 = 16$, so $c = 4$, along the vertical major axis:\n$$(0, 6) \\text{ and } (0, -2)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q10",
+  "topicId": "alg-conic-sections",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Daniel is writing $x^2 + 4y^2 + 6x - 16y + 9 = 0$ in standard form. His work is shown below.\n\nLine 1: $(x^2 + 6x) + 4(y^2 - 4y) = -9$\n\nLine 2: $(x^2 + 6x + 9) + 4(y^2 - 4y + 4) = -9 + 9 + 4$\n\nLine 3: $(x + 3)^2 + 4(y - 2)^2 = 4$\n\nLine 4: $\\dfrac{(x + 3)^2}{4} + \\dfrac{(y - 2)^2}{1} = 1$\n\n(a) Find Daniel's error and explain it.\n\n(b) Write the correct standard form, and find the center, the vertices and the foci.",
+  "hint": "Inside $4(\\ldots)$, adding 4 inside the brackets adds how much to the left side?",
+  "answer": "(a) Line 2: adding 4 inside $4(\\ldots)$ adds $4 \\times 4 = 16$, so the right side should be $-9 + 9 + 16 = 16$. (b) $\\dfrac{(x + 3)^2}{16} + \\dfrac{(y - 2)^2}{4} = 1$; center $(-3, 2)$, vertices $(1, 2)$ and $(-7, 2)$, foci $\\left(-3 \\pm 2\\sqrt{3}, 2\\right)$",
+  "solution": "**(a) Error (Line 2):** Daniel added $4$ inside the bracket $4(y^2 - 4y + \\ldots)$, which actually adds $4 \\times 4 = 16$ to the left side. To keep the equation balanced he must add 16 (not 4) to the right side.\n\n**(b)**\n$$(x + 3)^2 + 4(y - 2)^2 = -9 + 9 + 16 = 16$$\nDivide by 16:\n$$\\frac{(x + 3)^2}{16} + \\frac{(y - 2)^2}{4} = 1$$\n\nCenter $(-3, 2)$. The larger denominator, 16, is under $x$: horizontal major axis, $a = 4$, $b = 2$.\n\nVertices: $(-3 \\pm 4, 2)$, i.e. $(1, 2)$ and $(-7, 2)$.\n\nFoci: $c^2 = 16 - 4 = 12$, $c = 2\\sqrt{3}$, so $\\left(-3 + 2\\sqrt{3}, 2\\right)$ and $\\left(-3 - 2\\sqrt{3}, 2\\right)$.",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q11",
+  "topicId": "alg-conic-sections",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Jasmine is analyzing the hyperbola\n$$\\frac{(y - 1)^2}{9} - \\frac{(x + 2)^2}{16} = 1$$\nShe correctly finds that the center is $(-2, 1)$ and the vertices are $(-2, 4)$ and $(-2, -2)$. She then writes:\n\n\"$c^2 = 16 - 9 = 7$, so the foci are $\\left(-2, 1 + \\sqrt{7}\\right)$ and $\\left(-2, 1 - \\sqrt{7}\\right)$.\"\n\n(a) Is Jasmine correct? Justify your answer, and find the foci.\n\n(b) Explain why, for every hyperbola, the foci are farther from the center than the vertices, while for every ellipse they are closer.",
+  "hint": "Compare $\\sqrt{7}$ with the distance from the center to a vertex. Which relationship between $a$, $b$ and $c$ belongs to a hyperbola?",
+  "answer": "(a) No. For a hyperbola $c^2 = a^2 + b^2 = 9 + 16 = 25$, so $c = 5$ and the foci are $(-2, 6)$ and $(-2, -4)$. (b) Hyperbola: $c^2 = a^2 + b^2 > a^2$, so $c > a$. Ellipse: $c^2 = a^2 - b^2 < a^2$, so $c < a$.",
+  "solution": "**(a)** Jasmine is **not** correct. She used the ellipse relationship (and subtracted the denominators). Her foci would be $\\sqrt{7} \\approx 2.6$ from the center, which is **closer** than the vertices (3 from the center). That is impossible for a hyperbola, because each branch curves away from its focus, which lies \"inside\" the branch.\n\nFor a hyperbola $c^2 = a^2 + b^2$. Here $a^2 = 9$ (under the positive $y$ term) and $b^2 = 16$:\n$$c^2 = 9 + 16 = 25 \\Rightarrow c = 5$$\nThe transverse axis is vertical, so the foci are $(-2, 1 \\pm 5)$: $(-2, 6)$ and $(-2, -4)$.\n\n**(b)**\n- **Hyperbola:** $c^2 = a^2 + b^2$ and $b^2 > 0$, so $c^2 > a^2$ and $c > a$: the foci lie beyond the vertices.\n- **Ellipse:** $c^2 = a^2 - b^2$ and $b^2 > 0$, so $c^2 < a^2$ and $c < a$: the foci lie between the center and the vertices, inside the curve.\n\n(Geometrically, in an ellipse the sum of the distances to the foci is $2a$, and in a hyperbola the difference is $2a$; this forces the foci inside for an ellipse and outside the vertices for a hyperbola.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q12",
+  "topicId": "alg-conic-sections",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A satellite dish has a parabolic cross-section. The dish is 4 feet wide and 6 inches deep, as shown. The receiver must be placed at the focus.\n\n(a) Using a coordinate system with the vertex at the origin and the parabola opening upward, find an equation for the cross-section, with $x$ and $y$ in feet.\n\n(b) How far from the vertex should the receiver be placed? Give your answer in inches.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 86\" width=\"320\" height=\"86\"><path d=\"M40 30 L43 31.5 L46 32.9 L49 34.3 L52 35.7 L55 37 L58 38.3 L61 39.6 L64 40.8 L67 42 L70 43.1 L73 44.2 L76 45.3 L79 46.3 L82 47.3 L85 48.3 L88 49.2 L91 50.1 L94 50.9 L97 51.7 L100 52.5 L103 53.2 L106 53.9 L109 54.6 L112 55.2 L115 55.8 L118 56.3 L121 56.8 L124 57.3 L127 57.7 L130 58.1 L133 58.5 L136 58.8 L139 59.1 L142 59.3 L145 59.5 L148 59.7 L151 59.8 L154 59.9 L157 60 L160 60 L163 60 L166 59.9 L169 59.8 L172 59.7 L175 59.5 L178 59.3 L181 59.1 L184 58.8 L187 58.5 L190 58.1 L193 57.7 L196 57.3 L199 56.8 L202 56.3 L205 55.8 L208 55.2 L211 54.6 L214 53.9 L217 53.2 L220 52.5 L223 51.7 L226 50.9 L229 50.1 L232 49.2 L235 48.3 L238 47.3 L241 46.3 L244 45.3 L247 44.2 L250 43.1 L253 42 L256 40.8 L259 39.6 L262 38.3 L265 37 L268 35.7 L271 34.3 L274 32.9 L277 31.5 L280 30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\"/><line x1=\"40\" y1=\"30\" x2=\"280\" y2=\"30\" stroke=\"currentColor\" stroke-dasharray=\"4 4\"/><line x1=\"40\" y1=\"16\" x2=\"280\" y2=\"16\" stroke=\"currentColor\"/><line x1=\"40\" y1=\"11\" x2=\"40\" y2=\"21\" stroke=\"currentColor\"/><line x1=\"280\" y1=\"11\" x2=\"280\" y2=\"21\" stroke=\"currentColor\"/><text x=\"160\" y=\"11\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4 ft</text><line x1=\"160\" y1=\"30\" x2=\"160\" y2=\"60\" stroke=\"currentColor\" stroke-dasharray=\"2 3\"/><text x=\"166\" y=\"50\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6 in</text><text x=\"160\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">vertex</text></svg>",
+  "hint": "The rim of the dish is at the points $(\\pm 2, \\;0.5)$ in feet. Substitute one into $x^2 = 4py$, then remember the focus is $p$ (not $4p$) from the vertex.",
+  "answer": "(a) $x^2 = 8y$ (b) 24 inches (2 ft) from the vertex",
+  "solution": "**(a)** Work in feet: 6 inches = 0.5 ft. With the vertex at the origin, the rim of the dish is at $(2, 0.5)$ and $(-2, 0.5)$.\n\nUse $x^2 = 4py$ with $(2, 0.5)$:\n$$4 = 4p(0.5) = 2p \\Rightarrow p = 2$$\n$$x^2 = 8y$$\n\n**(b)** The focus is at $(0, p) = (0, 2)$: the receiver goes **2 ft = 24 inches** above the vertex, on the axis of the dish. (Note that it is $p = 2$, not $4p = 8$. The receiver is above the rim of the dish, which is normal for a shallow dish.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q13",
+  "topicId": "alg-conic-sections",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "calculator": false,
+  "question": "A conic has equation\n$$4x^2 - 9y^2 - 16x - 54y - 101 = 0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Identify the type of conic. Give a reason for your answer.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "By completing the square, write the equation in standard form. Show your work.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the coordinates of the vertices and the exact coordinates of the foci.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find equations of the asymptotes.",
+    "marks": 2
+   }
+  ],
+  "hint": "Factor 4 out of the $x$ terms and $-9$ out of the $y$ terms before completing the square. Whatever you add inside a bracket is multiplied by the factor in front of it.",
+  "answer": "(a) Hyperbola ($x^2$ and $y^2$ coefficients have opposite signs) (b) $\\dfrac{(x - 2)^2}{9} - \\dfrac{(y + 3)^2}{4} = 1$ (c) Vertices $(5, -3)$ and $(-1, -3)$; foci $\\left(2 + \\sqrt{13}, -3\\right)$ and $\\left(2 - \\sqrt{13}, -3\\right)$ (d) $y + 3 = \\frac{2}{3}(x - 2)$ and $y + 3 = -\\frac{2}{3}(x - 2)$",
+  "solution": "**(a)** The coefficients of $x^2$ (4) and $y^2$ ($-9$) have opposite signs, so it is a **hyperbola**. **B1**\n\n**(b)**\n$$4(x^2 - 4x) - 9(y^2 + 6y) = 101 \\quad \\textbf{M1}$$\nComplete the square. Adding 4 inside the first bracket adds $4 \\times 4 = 16$; adding 9 inside the second adds $-9 \\times 9 = -81$:\n$$4(x - 2)^2 - 9(y + 3)^2 = 101 + 16 - 81 = 36 \\quad \\textbf{M1}$$\nDivide by 36:\n$$\\frac{(x - 2)^2}{9} - \\frac{(y + 3)^2}{4} = 1 \\quad \\textbf{A1}$$\n\n**(c)** Center $(2, -3)$, $a = 3$, $b = 2$, opens left and right.\n\nVertices $(2 \\pm 3, -3)$: $(5, -3)$ and $(-1, -3)$. **B1**\n\n$c^2 = a^2 + b^2 = 9 + 4 = 13$, so the foci are $\\left(2 \\pm \\sqrt{13}, -3\\right)$. **B1**\n\n**(d)** Slopes $\\pm\\frac{b}{a} = \\pm\\frac{2}{3}$ **M1**, through the center:\n$$y + 3 = \\frac{2}{3}(x - 2) \\quad \\text{and} \\quad y + 3 = -\\frac{2}{3}(x - 2) \\quad \\textbf{A1}$$",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q14",
+  "topicId": "alg-conic-sections",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The ellipse $\\dfrac{x^2}{16} + \\dfrac{y^2}{4} = 1$ and the line $x - 2y = 4$ intersect at two points $P$ and $Q$.\n\n(a) Find the coordinates of $P$ and $Q$.\n\n(b) Find the exact length of the chord $PQ$.\n\n(c) The lines $x - 2y = k$ are parallel to the given line. Find the exact values of $k$ for which the line $x - 2y = k$ is tangent to the ellipse.",
+  "hint": "Substitute $x = 2y + 4$ (or $x = 2y + k$) into the equation of the ellipse. A line is tangent when the resulting quadratic has exactly one solution.",
+  "answer": "(a) $(4, 0)$ and $(0, -2)$ (b) $2\\sqrt{5}$ (c) $k = 4\\sqrt{2}$ or $k = -4\\sqrt{2}$",
+  "solution": "**(a)** From the line, $x = 2y + 4$. Substitute:\n$$\\frac{(2y + 4)^2}{16} + \\frac{y^2}{4} = 1$$\nMultiply by 16:\n$$4y^2 + 16y + 16 + 4y^2 = 16 \\Rightarrow 8y^2 + 16y = 0 \\Rightarrow 8y(y + 2) = 0$$\n$y = 0 \\Rightarrow x = 4$; $y = -2 \\Rightarrow x = 0$. So $P(4, 0)$ and $Q(0, -2)$ (both are ends of the ellipse's axes).\n\n**(b)**\n$$PQ = \\sqrt{(4 - 0)^2 + (0 - (-2))^2} = \\sqrt{20} = 2\\sqrt{5}$$\n\n**(c)** Substitute $x = 2y + k$:\n$$\\frac{(2y + k)^2}{16} + \\frac{y^2}{4} = 1 \\Rightarrow 4y^2 + 4ky + k^2 + 4y^2 = 16 \\Rightarrow 8y^2 + 4ky + (k^2 - 16) = 0$$\nTangent means exactly one intersection point, so the discriminant is zero:\n$$(4k)^2 - 4(8)(k^2 - 16) = 0 \\Rightarrow 16k^2 - 32k^2 + 512 = 0 \\Rightarrow k^2 = 32$$\n$$k = \\pm 4\\sqrt{2}$$",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear",
+   "alg-quadratic-formula",
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q15",
+  "topicId": "alg-conic-sections",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A hyperbola has center $(0, 0)$ and asymptotes $y = 2x$ and $y = -2x$, and it passes through the point $(3, 4)$.\n\n(a) Explain why the hyperbola must open left and right.\n\n(b) Find its equation in standard form.\n\n(c) Find its vertices and foci.",
+  "hint": "Hyperbolas with asymptotes $y = \\pm 2x$ have equations of the form $x^2 - \\frac{y^2}{4} = k$ for a constant $k \\ne 0$. The sign of $k$ decides the direction it opens.",
+  "answer": "(a) $(3, 4)$ lies in the region $|y| < 2|x|$ between the asymptotes that contains the $x$-axis. (b) $\\dfrac{x^2}{5} - \\dfrac{y^2}{20} = 1$ (c) Vertices $\\left(\\pm\\sqrt{5}, 0\\right)$, foci $(\\pm 5, 0)$",
+  "solution": "**(a)** The asymptotes $y = \\pm 2x$ split the plane into four regions. A hyperbola with these asymptotes lies either in the two regions containing the $x$-axis ($|y| < 2|x|$, opening left/right) or in the two containing the $y$-axis ($|y| > 2|x|$, opening up/down). At $(3, 4)$: $|y| = 4 < 6 = 2|x|$, so the curve is in the regions containing the $x$-axis and opens **left and right**.\n\n**(b)** Opening left/right: $\\frac{x^2}{a^2} - \\frac{y^2}{b^2} = 1$ with asymptote slopes $\\frac{b}{a} = 2$, so $b = 2a$ and $b^2 = 4a^2$:\n$$\\frac{x^2}{a^2} - \\frac{y^2}{4a^2} = 1$$\nSubstitute $(3, 4)$:\n$$\\frac{9}{a^2} - \\frac{16}{4a^2} = 1 \\Rightarrow \\frac{9 - 4}{a^2} = 1 \\Rightarrow a^2 = 5, \\; b^2 = 20$$\n$$\\frac{x^2}{5} - \\frac{y^2}{20} = 1$$\n\n**(c)** Vertices $\\left(\\pm\\sqrt{5}, 0\\right)$. $c^2 = a^2 + b^2 = 25$, so the foci are $(\\pm 5, 0)$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-conic-sections-q16",
+  "topicId": "alg-conic-sections",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "Two radio stations $A$ and $B$ are 100 miles apart on a straight east–west coastline, with $B$ east of $A$. They send out signals at the same moment. A ship receives the signal from $B$ some time before the signal from $A$, and the time difference shows that the ship is 60 miles closer to $B$ than to $A$.\n\n(a) Set up coordinates with the midpoint of $AB$ at the origin and $A$, $B$ on the $x$-axis. Explain why the ship lies on a hyperbola, and find its equation. Which branch is the ship on?\n\n(b) The ship is due north of station $B$. How far is the ship from $B$? Give an exact answer and an answer to the nearest tenth of a mile.",
+  "hint": "A hyperbola is the set of points whose distances from two foci differ by a constant, $2a$. Here the foci are the stations.",
+  "answer": "(a) The difference of distances to $A(-50, 0)$ and $B(50, 0)$ is constant (60), so the ship is on the hyperbola $\\dfrac{x^2}{900} - \\dfrac{y^2}{1600} = 1$, on the right-hand (eastern) branch, $x > 0$. (b) $\\frac{160}{3} \\approx 53.3$ miles",
+  "solution": "**(a)** Place $A(-50, 0)$ and $B(50, 0)$. The ship $S$ satisfies $SA - SB = 60$, a constant. The set of points whose distances from two fixed points (the foci) differ by a constant is a **hyperbola** with those foci.\n\n- Foci $(\\pm 50, 0)$, so $c = 50$.\n- The constant difference is $2a = 60$, so $a = 30$.\n- $b^2 = c^2 - a^2 = 2500 - 900 = 1600$.\n$$\\frac{x^2}{900} - \\frac{y^2}{1600} = 1$$\nThe ship is closer to $B$, so it is on the branch nearer $B$: the right-hand branch, $x > 0$ (in fact $x \\ge 30$).\n\n**(b)** Due north of $B$ means $x = 50$, $y > 0$:\n$$\\frac{2500}{900} - \\frac{y^2}{1600} = 1 \\Rightarrow \\frac{y^2}{1600} = \\frac{25}{9} - 1 = \\frac{16}{9} \\Rightarrow y^2 = \\frac{25600}{9} \\Rightarrow y = \\frac{160}{3}$$\nThe ship is $\\frac{160}{3} \\approx 53.3$ miles from $B$.\n\n**Check:** $SA = \\sqrt{100^2 + \\left(\\frac{160}{3}\\right)^2} = \\sqrt{\\frac{90000 + 25600}{9}} = \\frac{340}{3}$, and $SA - SB = \\frac{340 - 160}{3} = 60$. ✓",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q17",
+  "topicId": "alg-conic-sections",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Point $P(x, y)$ moves so that the sum of its distances from $F_1(-3, 0)$ and $F_2(3, 0)$ is always 10.\n\n(a) Write this condition as an equation involving two square roots.\n\n(b) By isolating one radical and squaring (twice), show that the path of $P$ is the ellipse $\\dfrac{x^2}{25} + \\dfrac{y^2}{16} = 1$.\n\n(c) Check that your answer is consistent with $c^2 = a^2 - b^2$.",
+  "hint": "Move one radical to the other side before squaring: $\\sqrt{(x + 3)^2 + y^2} = 10 - \\sqrt{(x - 3)^2 + y^2}$. After the first squaring, the $x^2$ and $y^2$ terms cancel, leaving one radical to isolate.",
+  "answer": "(a) $\\sqrt{(x + 3)^2 + y^2} + \\sqrt{(x - 3)^2 + y^2} = 10$ (b) Simplifies to $16x^2 + 25y^2 = 400$, i.e. $\\dfrac{x^2}{25} + \\dfrac{y^2}{16} = 1$ (c) $a^2 - b^2 = 25 - 16 = 9 = 3^2$, matching the foci $(\\pm 3, 0)$.",
+  "solution": "**(a)** By the distance formula:\n$$\\sqrt{(x + 3)^2 + y^2} + \\sqrt{(x - 3)^2 + y^2} = 10$$\n\n**(b)** Isolate one radical:\n$$\\sqrt{(x + 3)^2 + y^2} = 10 - \\sqrt{(x - 3)^2 + y^2}$$\nSquare both sides (the right side is a binomial):\n$$(x + 3)^2 + y^2 = 100 - 20\\sqrt{(x - 3)^2 + y^2} + (x - 3)^2 + y^2$$\n$$x^2 + 6x + 9 = 100 - 20\\sqrt{(x - 3)^2 + y^2} + x^2 - 6x + 9$$\n$$12x - 100 = -20\\sqrt{(x - 3)^2 + y^2}$$\nDivide by $-4$:\n$$25 - 3x = 5\\sqrt{(x - 3)^2 + y^2}$$\nSquare again:\n$$625 - 150x + 9x^2 = 25(x^2 - 6x + 9 + y^2) = 25x^2 - 150x + 225 + 25y^2$$\n$$400 = 16x^2 + 25y^2$$\nDivide by 400:\n$$\\frac{x^2}{25} + \\frac{y^2}{16} = 1$$\n\n(Squaring could introduce extra points, but for every point on this ellipse $|x| \\le 5$, so $25 - 3x > 0$ and the radicals are consistent: no extraneous points.)\n\n**(c)** $a^2 = 25$, $b^2 = 16$: $c^2 = a^2 - b^2 = 9$, $c = 3$, so the foci are $(\\pm 3, 0)$, which are $F_1$ and $F_2$. Also $2a = 10$ is the constant sum. ✓",
+  "linkedTopicIds": [
+   "alg-radical-equations",
+   "alg-coordinates-midpoint-distance"
+  ]
+ },
+ {
+  "id": "alg-conic-sections-q18",
+  "topicId": "alg-conic-sections",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A parabola has focus $F(1, 1)$ and directrix the line $x + y = 0$. The distance from a point $(x, y)$ to the line $x + y = 0$ is $\\dfrac{|x + y|}{\\sqrt{2}}$.\n\n(a) Show that the equation of the parabola is\n$$x^2 - 2xy + y^2 - 4x - 4y + 4 = 0$$\n\n(b) Find the vertex of the parabola, and verify that it satisfies the equation in (a).\n\n(c) Show that the parabola touches the $x$-axis at exactly one point, and state the point.\n\n(d) Explain why the rule \"exactly one squared term means a parabola\" does not apply directly to this equation.",
+  "hint": "Set the distance to the focus equal to the distance to the directrix, and square. For the vertex, the axis of symmetry passes through the focus and is perpendicular to the directrix.",
+  "answer": "(a) $2\\left[(x - 1)^2 + (y - 1)^2\\right] = (x + y)^2$, which expands to the given equation. (b) $\\left(\\frac{1}{2}, \\frac{1}{2}\\right)$ (c) Setting $y = 0$ gives $(x - 2)^2 = 0$, so it touches at $(2, 0)$ only. (d) The equation has an $xy$ term (the parabola's axis $y = x$ is tilted), so the $Ax^2 + Cy^2 + Dx + Ey + F = 0$ rule does not apply.",
+  "solution": "**(a)** For a point $P(x, y)$ on the parabola, $PF$ = distance to the directrix:\n$$\\sqrt{(x - 1)^2 + (y - 1)^2} = \\frac{|x + y|}{\\sqrt{2}}$$\nSquare both sides and multiply by 2:\n$$2(x^2 - 2x + 1 + y^2 - 2y + 1) = x^2 + 2xy + y^2$$\n$$2x^2 + 2y^2 - 4x - 4y + 4 = x^2 + 2xy + y^2$$\n$$x^2 - 2xy + y^2 - 4x - 4y + 4 = 0$$\n\n**(b)** The axis of symmetry passes through $F(1, 1)$ perpendicular to $x + y = 0$ (slope $-1$), so it has slope 1: it is the line $y = x$. It meets the directrix where $x + x = 0$, at $(0, 0)$. The vertex is halfway between the focus and this point: $\\left(\\frac{1}{2}, \\frac{1}{2}\\right)$.\n\nCheck: $\\frac{1}{4} - \\frac{1}{2} + \\frac{1}{4} - 2 - 2 + 4 = 0$. ✓\n\n**(c)** On the $x$-axis $y = 0$:\n$$x^2 - 4x + 4 = 0 \\Rightarrow (x - 2)^2 = 0 \\Rightarrow x = 2$$\nA repeated root means a single point of contact: the parabola touches the $x$-axis at $(2, 0)$. (By symmetry in $y = x$, it also touches the $y$-axis at $(0, 2)$.)\n\n**(d)** The rule classifies equations $Ax^2 + Cy^2 + Dx + Ey + F = 0$, which describe conics whose axes are horizontal or vertical. This equation has both squared terms **and** an $xy$ term, because its axis of symmetry $y = x$ is tilted at $45^\\circ$. Here $x^2 - 2xy + y^2 = (x - y)^2$ is a perfect square, which is the tilted version of \"only one squared term\".",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance",
+   "alg-perpendicular-lines"
+  ]
+ }
+]
