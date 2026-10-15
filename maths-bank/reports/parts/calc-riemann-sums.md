@@ -3,3 +3,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: fixed (worked 
 | Question | Result | Note |
 |---|---|---|
 | calc-riemann-sums-q06 | clarified | Stem said the cyclist "sets off from rest", but the table gives $v(0) = 2$ m/s. Reworded to "rides away from a junction and speeds up"; answers 116 m, 158 m unchanged |
+
+### Diagram audit
+2 diagrams checked: 2 ok, 0 fixed.
