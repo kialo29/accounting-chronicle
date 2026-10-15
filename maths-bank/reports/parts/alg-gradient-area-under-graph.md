@@ -5,3 +5,6 @@ All 10 diagrams rendered and checked against the text: tangent lines and graph c
 
 | Question | Result | Note |
 |---|---|---|
+
+### Diagram audit
+10 diagrams checked: 10 ok, 0 fixed.
