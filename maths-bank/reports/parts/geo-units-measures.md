@@ -5,3 +5,7 @@ All answers independently confirmed (e.g. q12 788.4 litres ≈ 790 litres, q14 1
 
 | Question | Result | Note |
 |---|---|---|
+
+
+### Diagram audit
+2 diagrams checked: 2 ok, 0 fixed.

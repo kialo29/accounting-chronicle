@@ -5,3 +5,7 @@ All answers independently confirmed (e.g. q03 $10+6\pi \approx 28.8$ cm, q04 $30
 
 | Question | Result | Note |
 |---|---|---|
+
+
+### Diagram audit
+7 diagrams checked: 7 ok, 0 fixed.

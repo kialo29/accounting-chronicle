@@ -6,3 +6,8 @@ All answers independently confirmed (e.g. q06 42 cm / 73 cm², q10 46 cm / 60 cm
 | Question | Result | Note |
 |---|---|---|
 | geo-perimeter-area-q13 | clarified | The sloping side was labelled 64 m, but with height 50 m and overhang 40 m it is really $\sqrt{40^2+50^2} = 64.03$ m. The question now says the sloping side is 64 m correct to the nearest metre, and the solution notes this. Answers unchanged (314 m, 13 rolls, £552.50; 5000 m², 9 bags). |
+
+
+### Diagram audit
+14 diagrams checked: 13 ok, 1 fixed.
+geo-perimeter-area-q13 — the "64 m" label touched the sloping side — moved it slightly right.

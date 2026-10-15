@@ -5,3 +5,7 @@ All answers independently confirmed (e.g. q07 7.96 cm, 7.98 cm, 199 cm², q10 9.
 
 | Question | Result | Note |
 |---|---|---|
+
+
+### Diagram audit
+7 diagrams checked: 7 ok, 0 fixed.
