@@ -1,0 +1,3 @@
+## Ch01 — The Masked Jedi
+The night before the Council's dawn vote, Anakin hunts Ventress through the old munitions district to a gallery above the Dovrin Line transit platform. She's bruised, sabers stolen; she begins to say the attacker knew where to wait, then the masked figure drops in with her red sabers. Anakin glimpses Temple defensive forms. The figure throws Ventress off a ledge (fate unknown), uses nano-droids to eat a pylon; a twenty-story hab stack tilts. The figure pauses on a catwalk to watch as Anakin holds the stack while everyone escapes — no deaths. Fox logs the figure as Ventress's accomplice. In an alley Barriss unmasks, vomits, and cannot drop the sabers down an incinerator chute.
+
