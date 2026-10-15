@@ -49,6 +49,7 @@ Requires Node 18+ and Python 3. Once: `npm install` (installs KaTeX and an XML v
 
 ```bash
 # after editing data/questions/parts/*.json or data/topics-parts/*.json / data/topics-fixes/*.json
+npm run build                         # all four steps below in one go
 python3 scripts/build_topics.py      # -> data/topics.json (leadsTo computed from prerequisites)
 python3 scripts/build_questions.py   # -> data/questions/<strand>.json
 node scripts/validate.mjs            # schema, ids, cross-refs, LaTeX (KaTeX parse), SVG, per-topic spread

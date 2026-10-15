@@ -1,16 +1,16 @@
 {
-  "name": "maths-bank",
+  "name": "learn-with-kian-maths-bank",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "Learn With Kian maths question bank: UK KS3 to Further Maths and US Grade 6 to AP, with an offline app",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "python3 scripts/build_topics.py && python3 scripts/build_questions.py && node scripts/validate.mjs --quiet && node scripts/build-app.mjs",
+    "validate": "node scripts/validate.mjs",
+    "test": "node scripts/smoke-test.mjs",
+    "report": "python3 scripts/build_report.py"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "fast-xml-parser": "^4.5.0",
-    "katex": "^0.16.11"
+    "fast-xml-parser": "4.5.0",
+    "katex": "0.16.11"
   }
 }
