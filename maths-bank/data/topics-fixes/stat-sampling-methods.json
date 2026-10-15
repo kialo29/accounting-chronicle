@@ -1,0 +1,25 @@
+{
+ "id": "stat-sampling-methods",
+ "misconceptions": [
+  {
+   "id": "m1",
+   "text": "In stratified sampling, takes an equal number from each stratum, e.g. for a sample of 50 from three groups writes $50 \\div 3 \\approx 17$ from each group.",
+   "correction": "Each stratum must be represented in proportion to its size. Use $\\frac{\\text{stratum size}}{\\text{population size}} \\times \\text{sample size}$: juniors $\\frac{84}{300} \\times 50 = 14$, adults $26$, seniors $10$."
+  },
+  {
+   "id": "m2",
+   "text": "Rounds every stratum to the nearest whole number without checking the total, e.g. strata of $13.5$, $15.75$, $12$, $11.25$, $7.5$ become $14 + 16 + 12 + 11 + 8 = 61$ when the sample size is 60.",
+   "correction": "After rounding, check that the strata add up to the required sample size. If they do not, adjust a stratum whose value was closest to the halfway point. Here $13.5$ and $7.5$ are both exactly halfway, so round one of them down (e.g. $13.5$ to $13$, giving $13 + 16 + 12 + 11 + 8 = 60$) so that the total is exactly 60."
+  },
+  {
+   "id": "m3",
+   "text": "Thinks an opportunity sample is random because the interviewer \"didn't pick anyone on purpose\", e.g. \"I asked whoever walked past, so it was a random sample\".",
+   "correction": "Random means every member of the population has an equal (known) chance of selection, using a random process on a complete list. People who happen to walk past one place at one time do not give everyone that chance, so the sample is non-random and likely biased."
+  },
+  {
+   "id": "m4",
+   "text": "Thinks a larger sample removes bias, e.g. \"the online poll had 20000 voluntary responses, so it must be representative\".",
+   "correction": "A larger sample reduces random variability, but it does not fix a biased method. Voluntary responders are people with strong opinions, however many there are. Fix the method (random selection) first; then increase the size for precision."
+  }
+ ]
+}
