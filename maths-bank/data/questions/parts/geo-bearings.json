@@ -1,0 +1,291 @@
+[
+ {
+  "id": "geo-bearings-q01",
+  "topicId": "geo-bearings",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The bearing of $B$ from $A$ is $050^\\circ$.\n\nWork out the bearing of $A$ from $B$.",
+  "hint": "Going from $B$ back to $A$ is the exact opposite direction. Opposite directions differ by $180^\\circ$.",
+  "answer": "$230^\\circ$",
+  "solution": "The direction from $B$ to $A$ is opposite to the direction from $A$ to $B$, so the bearings differ by $180^\\circ$.\n\n$050^\\circ$ is less than $180^\\circ$, so add $180^\\circ$:\n$$050^\\circ + 180^\\circ = 230^\\circ$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q02",
+  "topicId": "geo-bearings",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The bearing of $B$ from $A$ is $130^\\circ$.\n\nWork out the bearing of $A$ from $B$.",
+  "hint": "Is $130^\\circ$ less than $180^\\circ$? Then add $180^\\circ$.",
+  "answer": "$310^\\circ$",
+  "solution": "What changed: the bearing is $130^\\circ$ instead of $050^\\circ$, but it is still less than $180^\\circ$, so the rule is the same.\n$$130^\\circ + 180^\\circ = 310^\\circ$$\n\n$B$ is south-east of $A$, so $A$ is north-west of $B$, which matches a bearing of about $310^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q03",
+  "topicId": "geo-bearings",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The bearing of $B$ from $A$ is $230^\\circ$.\n\nWork out the bearing of $A$ from $B$.",
+  "hint": "Adding $180^\\circ$ would give more than $360^\\circ$. What should you do instead?",
+  "answer": "$050^\\circ$",
+  "solution": "What changed: the bearing is now more than $180^\\circ$. Adding $180^\\circ$ would give $410^\\circ$, which is more than a full turn, so instead **subtract** $180^\\circ$:\n$$230^\\circ - 180^\\circ = 050^\\circ$$\n\n(This reverses the first question in the set, as it should: if $B$ is on $050^\\circ$ from $A$, then $A$ is on $230^\\circ$ from $B$, and vice versa.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q04",
+  "topicId": "geo-bearings",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Write each direction as a three-figure bearing.\n\n**(a)** East\n**(b)** South-west\n**(c)** North-west\n**(d)** $8^\\circ$ east of north",
+  "hint": "Start facing north ($000^\\circ$) and turn clockwise. A quarter turn is $90^\\circ$; south-west is halfway between south and west.",
+  "answer": "(a) $090^\\circ$ (b) $225^\\circ$ (c) $315^\\circ$ (d) $008^\\circ$",
+  "solution": "Measure clockwise from north and always write three digits.\n\n**(a)** East is a quarter turn clockwise: $090^\\circ$ (not $90^\\circ$).\n\n**(b)** South is $180^\\circ$ and west is $270^\\circ$; south-west is halfway: $225^\\circ$.\n\n**(c)** North-west is halfway between west ($270^\\circ$) and north ($360^\\circ$): $315^\\circ$.\n\n**(d)** $8^\\circ$ clockwise from north: $008^\\circ$. The leading zeros make it a three-figure bearing.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q05",
+  "topicId": "geo-bearings",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The diagram shows the positions of three points $P$, $Q$ and $R$. (Not drawn to scale.)\n\n**(a)** Work out the bearing of $Q$ from $P$.\n**(b)** Work out the bearing of $R$ from $P$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><line x1=\"170\" y1=\"140\" x2=\"170\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M165 50 L170 40 L175 50\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"170\" y=\"34\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"170\" y1=\"140\" x2=\"170\" y2=\"235\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"170\" y1=\"140\" x2=\"109.8\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"170\" y1=\"140\" x2=\"278.8\" y2=\"190.7\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><circle cx=\"109.8\" cy=\"54\" r=\"3\" fill=\"currentColor\"/><circle cx=\"278.8\" cy=\"190.7\" r=\"3\" fill=\"currentColor\"/><text x=\"182\" y=\"144\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">P</text><text x=\"99.8\" y=\"50\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"290.8\" y=\"194.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><path d=\"M150.5 112.1 A34 34 0 0 1 170 106\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"155\" y=\"97.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">35°</text><path d=\"M200.8 154.4 A34 34 0 0 1 170 174\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"197.9\" y=\"188.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">65°</text></svg>",
+  "hint": "Each bearing is the clockwise angle from the north line at $P$. For $R$ the $65^\\circ$ is measured from south, which is $180^\\circ$.",
+  "answer": "(a) $325^\\circ$ (b) $115^\\circ$",
+  "solution": "**(a)** $Q$ is $35^\\circ$ to the **west** of north. Turning clockwise from north to face $Q$ is almost a full turn:\n$$360^\\circ - 35^\\circ = 325^\\circ$$\n\n**(b)** Turning clockwise from north to south is $180^\\circ$. $R$ is $65^\\circ$ short of south (on the east side), so\n$$180^\\circ - 65^\\circ = 115^\\circ$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q06",
+  "topicId": "geo-bearings",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a ship $S$ and a lighthouse $L$. (Not drawn to scale.)\n\nSophie says: \"The angle between north and the line to the lighthouse is $25^\\circ$, so the bearing of $L$ from $S$ is $025^\\circ$.\"\n\nExplain Sophie's mistake and give the correct bearing.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 220\" width=\"320\" height=\"220\"><line x1=\"180\" y1=\"190\" x2=\"180\" y2=\"25\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M175 35 L180 25 L185 35\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"19\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"180\" y1=\"190\" x2=\"116.6\" y2=\"54.1\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"190\" r=\"3\" fill=\"currentColor\"/><circle cx=\"116.6\" cy=\"54.1\" r=\"3\" fill=\"currentColor\"/><text x=\"190\" y=\"206\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">S</text><text x=\"104.6\" y=\"58.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">L</text><path d=\"M158.9 144.7 A50 50 0 0 1 180 140\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"165.3\" y=\"128.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">25°</text></svg>",
+  "hint": "Which way do bearings turn from north? Is $L$ to the east or to the west of the north line?",
+  "answer": "She measured anticlockwise (the lighthouse is west of north). Correct bearing $= 335^\\circ$.",
+  "solution": "**Mistake:** Bearings are always measured **clockwise** from north. $L$ is $25^\\circ$ to the **west** of north, so the $25^\\circ$ in the diagram is an anticlockwise angle. A bearing of $025^\\circ$ would point $25^\\circ$ east of north, on the other side of the north line.\n\n**Correct bearing:** turning clockwise from north to face $L$:\n$$360^\\circ - 25^\\circ = 335^\\circ$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q07",
+  "topicId": "geo-bearings",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "The bearing of $Q$ from $P$ is $048^\\circ$. Tom is asked for the bearing of $P$ from $Q$. He writes:\n\n\"I draw the north line at $P$ and measure clockwise to $Q$. The angle is $48^\\circ$, so the bearing of $P$ from $Q$ is $048^\\circ$.\"\n\nExplain what Tom has done wrong and find the correct bearing.",
+  "hint": "In \"the bearing of $P$ from $Q$\", which point do you stand at?",
+  "answer": "He measured at the wrong point: the north line must be drawn at $Q$. Correct bearing $= 228^\\circ$.",
+  "solution": "**Mistake:** \"The bearing of $P$ **from** $Q$\" means you stand at $Q$, draw the north line at $Q$, and turn clockwise until you face $P$. Tom drew the north line at $P$, so he found the bearing of $Q$ from $P$, which he was already given.\n\n**Correct working:** facing from $Q$ to $P$ is the opposite direction to facing from $P$ to $Q$. $048^\\circ < 180^\\circ$, so\n$$048^\\circ + 180^\\circ = 228^\\circ$$\n\nThe bearing of $P$ from $Q$ is $228^\\circ$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q08",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A boat sails from $A$ to $B$ on a bearing of $285^\\circ$, then from $B$ to $C$ on a bearing of $160^\\circ$. Ellie wants to find angle $ABC$. Her working is shown.\n\n$$\\text{Bearing of } A \\text{ from } B = 285^\\circ + 180^\\circ = 465^\\circ$$\n$$\\text{Angle } ABC = 465^\\circ - 160^\\circ = 305^\\circ$$\n\n**(a)** Explain the error in Ellie's first line.\n**(b)** Find the correct size of angle $ABC$.",
+  "hint": "A bearing must be less than $360^\\circ$. When the bearing is $180^\\circ$ or more, how do you find the back bearing?",
+  "answer": "(a) $285^\\circ \\ge 180^\\circ$, so she should subtract $180^\\circ$; the back bearing is $105^\\circ$. (b) $55^\\circ$",
+  "solution": "**(a)** A bearing is always between $000^\\circ$ and $360^\\circ$. Ellie always added $180^\\circ$; because $285^\\circ$ is already more than $180^\\circ$ she should **subtract** $180^\\circ$:\n$$\\text{Bearing of } A \\text{ from } B = 285^\\circ - 180^\\circ = 105^\\circ$$\n\n**(b)** At $B$, the direction to $A$ is $105^\\circ$ and the direction to $C$ is $160^\\circ$ (both clockwise from the same north line). The angle between them is\n$$\\text{Angle } ABC = 160^\\circ - 105^\\circ = 55^\\circ$$\n\n(Her answer of $305^\\circ$ could not be an angle of a triangle anyway.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q09",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The diagram shows two points $A$ and $B$ with north lines drawn at each. The bearing of $B$ from $A$ is $\\theta$, where $0^\\circ < \\theta < 180^\\circ$. (Not drawn to scale.)\n\n**(a)** Explain why the angle marked $x$ is equal to $180^\\circ - \\theta$.\n**(b)** Hence prove that the bearing of $A$ from $B$ is $\\theta + 180^\\circ$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"330\" height=\"260\"><line x1=\"80\" y1=\"220\" x2=\"80\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M75 120 L80 110 L85 120\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"80\" y=\"104\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"261.9\" y1=\"115\" x2=\"261.9\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M256.9 45 L261.9 35 L266.9 45\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"261.9\" y=\"29\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"80\" y1=\"220\" x2=\"261.9\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"220\" r=\"3\" fill=\"currentColor\"/><circle cx=\"261.9\" cy=\"115\" r=\"3\" fill=\"currentColor\"/><text x=\"68\" y=\"236\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"275.9\" y=\"131\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><path d=\"M80 182 A38 38 0 0 1 112.9 201\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"107\" y=\"178.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">θ</text><line x1=\"261.9\" y1=\"115\" x2=\"261.9\" y2=\"175\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M235.9 130 A30 30 0 0 1 261.9 85\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"222\" y=\"97\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">x</text></svg>",
+  "hint": "The two north lines are parallel. What do you know about co-interior angles between parallel lines?",
+  "answer": "(a) The north lines are parallel and $AB$ is a transversal, so $\\theta$ and $x$ are co-interior angles, which add to $180^\\circ$. (b) Bearing of $A$ from $B$ $= 360^\\circ - x = 360^\\circ - (180^\\circ - \\theta) = 180^\\circ + \\theta$.",
+  "solution": "**(a)** All north lines point the same way, so the north lines at $A$ and $B$ are parallel. $AB$ crosses both of them. The angles $\\theta$ (at $A$) and $x$ (at $B$) lie between the parallel lines on the same side of $AB$, so they are **co-interior** (allied) angles and add to $180^\\circ$:\n$$x = 180^\\circ - \\theta$$\n\n**(b)** At $B$, the angle $x$ is measured **anticlockwise** from north round to $A$. The clockwise angle from north to $A$ (the bearing) is the rest of the full turn:\n$$\\text{bearing of } A \\text{ from } B = 360^\\circ - x = 360^\\circ - (180^\\circ - \\theta) = \\theta + 180^\\circ$$\n\nFor example, if $\\theta = 060^\\circ$, the bearing of $A$ from $B$ is $240^\\circ$.",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles"
+  ]
+ },
+ {
+  "id": "geo-bearings-q10",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Kim says: \"If the bearing of $B$ from $A$ is between $000^\\circ$ and $090^\\circ$, then the bearing of $A$ from $B$ must be between $180^\\circ$ and $270^\\circ$.\"\n\n**(a)** Is Kim correct? Explain your answer.\n**(b)** Raj is told that the bearing of $D$ from $C$ is $230^\\circ$. He says the bearing of $C$ from $D$ is $410^\\circ$. Explain why this cannot be a bearing, find the correct bearing, and show that your answer fits Kim's statement.",
+  "hint": "Add $180^\\circ$ to every bearing in the range $000^\\circ$ to $090^\\circ$. For (b), what range must every bearing lie in?",
+  "answer": "(a) Yes: adding $180^\\circ$ to a bearing between $000^\\circ$ and $090^\\circ$ gives one between $180^\\circ$ and $270^\\circ$ (north-east becomes south-west). (b) Bearings are less than $360^\\circ$; since $230^\\circ \\ge 180^\\circ$ he should subtract: $050^\\circ$. Then $C$ from $D$ is $050^\\circ$ (between $000^\\circ$ and $090^\\circ$) and $D$ from $C$ is $230^\\circ$ (between $180^\\circ$ and $270^\\circ$), as Kim says.",
+  "solution": "**(a)** If the bearing of $B$ from $A$ is $\\theta$ with $0^\\circ \\le \\theta \\le 90^\\circ$, then $\\theta < 180^\\circ$, so the back bearing is $\\theta + 180^\\circ$, and\n$$180^\\circ \\le \\theta + 180^\\circ \\le 270^\\circ$$\n\nKim is correct. In words: if $B$ is somewhere north-east of $A$, then $A$ is somewhere south-west of $B$.\n\n**(b)** A bearing is an amount of clockwise turn from north, so it is always at least $000^\\circ$ and less than $360^\\circ$; $410^\\circ$ is more than a full turn. Raj always added $180^\\circ$, but $230^\\circ \\ge 180^\\circ$, so he should have subtracted:\n$$230^\\circ - 180^\\circ = 050^\\circ$$\n\n(Equivalently $410^\\circ - 360^\\circ = 050^\\circ$.) So the bearing of $C$ from $D$ is $050^\\circ$, which is between $000^\\circ$ and $090^\\circ$, and the bearing of $D$ from $C$ is $230^\\circ$, which is between $180^\\circ$ and $270^\\circ$. This is exactly Kim's statement with the roles of the points swapped.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-bearings-q11",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "On a walking map with scale $1 : 50\\,000$, a church $C$ is 6.4 cm from a school $S$. The bearing of the church from the school is $125^\\circ$.\n\n**(a)** Work out the real distance between the school and the church, in kilometres.\n**(b)** Work out the bearing of the school from the church.\n**(c)** A footbridge $F$ is 3.2 km due east of the school. On the map, how far is the footbridge from the school, in cm?",
+  "hint": "1 cm on the map represents $50\\,000$ cm in real life. Convert to km: $100\\,000$ cm $= 1$ km.",
+  "answer": "(a) 3.2 km (b) $305^\\circ$ (c) 6.4 cm",
+  "solution": "**(a)**\n$$6.4 \\times 50\\,000 = 320\\,000 \\text{ cm} = 3200 \\text{ m} = 3.2 \\text{ km}$$\n\n**(b)** Back bearing: $125^\\circ < 180^\\circ$, so add $180^\\circ$:\n$$125^\\circ + 180^\\circ = 305^\\circ$$\n\n**(c)** 3.2 km is the same real distance as in (a), so it is 6.4 cm on the map. (Check: $3.2 \\text{ km} = 320\\,000$ cm, and $320\\,000 \\div 50\\,000 = 6.4$ cm.)\n\n(On a scale drawing, $F$ would be drawn 6.4 cm from $S$ on a bearing of $090^\\circ$, and $C$ 6.4 cm from $S$ on $125^\\circ$.)",
+  "linkedTopicIds": [
+   "rat-scale-drawings-maps"
+  ]
+ },
+ {
+  "id": "geo-bearings-q12",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A hiker walks 5 km due south from a car park $P$, then 12 km due west to a campsite $C$.\n\n**(a)** How far is the campsite from the car park in a straight line?\n**(b)** Work out the bearing of the campsite from the car park, to the nearest degree.\n**(c)** Write down the bearing she should follow to walk straight back from the campsite to the car park.",
+  "hint": "South then west makes a right angle. Find the angle at $P$ between the south direction and $PC$, then add it to $180^\\circ$.",
+  "answer": "(a) 13 km (b) $247^\\circ$ (c) $067^\\circ$",
+  "solution": "Let $T$ be the turning point. Triangle $PTC$ has a right angle at $T$, with $PT = 5$ km and $TC = 12$ km.\n\n**(a)**\n$$PC = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13 \\text{ km}$$\n\n**(b)** The angle at $P$ between south and $PC$:\n$$\\tan \\angle TPC = \\frac{12}{5} \\quad\\Rightarrow\\quad \\angle TPC = 67.38\\ldots^\\circ$$\n\nTurning clockwise from north: $180^\\circ$ to face south, then a further $67.38^\\circ$ towards west:\n$$180^\\circ + 67.38^\\circ = 247.38\\ldots^\\circ \\approx 247^\\circ$$\n\n**(c)** $247.38^\\circ \\ge 180^\\circ$, so subtract: $247.38^\\circ - 180^\\circ = 67.38^\\circ$, i.e. $067^\\circ$ to the nearest degree.",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "geo-trig-right-angled"
+  ]
+ },
+ {
+  "id": "geo-bearings-q13",
+  "topicId": "geo-bearings",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": true,
+  "question": "A buoy $B$ is 7 km from a harbour $H$ on a bearing of $040^\\circ$. (Not drawn accurately.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 260\" width=\"320\" height=\"260\"><line x1=\"100\" y1=\"230\" x2=\"100\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M95 50 L100 40 L105 50\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"100\" y=\"34\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"100\" y1=\"230\" x2=\"222.1\" y2=\"84.5\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"100\" cy=\"230\" r=\"3\" fill=\"currentColor\"/><circle cx=\"222.1\" cy=\"84.5\" r=\"3\" fill=\"currentColor\"/><text x=\"88\" y=\"246\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><text x=\"236.1\" y=\"88.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><path d=\"M100 184 A46 46 0 0 1 129.6 194.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"121.9\" y=\"174.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">40°</text><text x=\"177.1\" y=\"175.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">7 km</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out how far north of $H$ the buoy is. Give your answer to 3 significant figures.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out how far east of $H$ the buoy is. Give your answer to 3 significant figures.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Write down the bearing of $H$ from $B$.",
+    "marks": 1
+   }
+  ],
+  "hint": "Draw a right-angled triangle with the 7 km line as the hypotenuse and the north line at $H$ as one side. The $40^\\circ$ is at $H$.",
+  "answer": "(a) 5.36 km (b) 4.50 km (c) $220^\\circ$",
+  "solution": "Make a right-angled triangle: from $B$ draw a line due west to meet the north line at $H$, at point $X$. Then $HX$ is the distance north and $XB$ the distance east, with angle $XHB = 40^\\circ$ and hypotenuse $HB = 7$ km.\n\n**(a)**\n$$HX = 7\\cos 40^\\circ \\quad \\text{M1}$$\n\n$$= 5.362\\ldots \\approx 5.36 \\text{ km} \\quad \\text{A1}$$\n\n**(b)**\n$$XB = 7\\sin 40^\\circ \\quad \\text{M1}$$\n\n$$= 4.499\\ldots \\approx 4.50 \\text{ km} \\quad \\text{A1}$$\n\n**(c)** $040^\\circ + 180^\\circ = 220^\\circ$ B1",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ]
+ },
+ {
+  "id": "geo-bearings-q14",
+  "topicId": "geo-bearings",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "calculator": true,
+  "question": "A ship sails 12 km from port $P$ on a bearing of $070^\\circ$ to a point $Q$. It then sails 15 km on a bearing of $190^\\circ$ to a point $R$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that angle $PQR = 60^\\circ$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the distance $PR$. Give your answer to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the bearing of $R$ from $P$. Give your answer to the nearest degree.",
+    "marks": 3
+   }
+  ],
+  "hint": "Sketch it with a north line at $Q$. The bearing of $P$ from $Q$ is the back bearing of $070^\\circ$. Then the triangle is not right-angled, so use the cosine rule.",
+  "answer": "(a) Bearing of $P$ from $Q$ is $250^\\circ$; $250^\\circ - 190^\\circ = 60^\\circ$. (b) 13.7 km (c) $141^\\circ$",
+  "solution": "**(a)** Bearing of $P$ from $Q$ $= 070^\\circ + 180^\\circ = 250^\\circ$ B1.\n\nAt $Q$ the direction to $R$ is $190^\\circ$ and to $P$ is $250^\\circ$, so\n$$\\angle PQR = 250^\\circ - 190^\\circ = 60^\\circ \\quad \\text{B1 (shown)}$$\n\n**(b)** Cosine rule:\n$$PR^2 = 12^2 + 15^2 - 2 \\times 12 \\times 15 \\times \\cos 60^\\circ \\quad \\text{M1}$$\n\n$$PR^2 = 144 + 225 - 180 = 189 \\quad \\text{M1}$$\n\n$$PR = \\sqrt{189} = 13.74\\ldots \\approx 13.7 \\text{ km} \\quad \\text{A1}$$\n\n**(c)** Find angle $QPR$ (cosine rule avoids any ambiguity):\n$$\\cos \\angle QPR = \\frac{12^2 + 189 - 15^2}{2 \\times 12 \\times \\sqrt{189}} = \\frac{108}{24\\sqrt{189}} = 0.3273\\ldots \\quad \\text{M1}$$\n\n$$\\angle QPR = 70.89\\ldots^\\circ \\quad \\text{A1}$$\n\n$R$ is clockwise from $Q$ as seen from $P$, so\n$$\\text{bearing} = 070^\\circ + 70.89^\\circ = 140.89^\\circ \\approx 141^\\circ \\quad \\text{B1 ft}$$",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-bearings-q15",
+  "topicId": "geo-bearings",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Two ships leave a port $O$ at 09:00. Ship $A$ sails at 18 km/h on a bearing of $025^\\circ$. Ship $B$ sails at 24 km/h on a bearing of $115^\\circ$.\n\n**(a)** How far apart are the ships at 10:30?\n**(b)** Work out the bearing of ship $B$ from ship $A$ at 10:30, to the nearest degree.",
+  "hint": "Use distance $=$ speed $\\times$ time for each ship. What is the angle between bearings $025^\\circ$ and $115^\\circ$?",
+  "answer": "(a) 45 km (b) $152^\\circ$",
+  "solution": "Time taken: 09:00 to 10:30 is 1.5 hours.\n$$OA = 18 \\times 1.5 = 27 \\text{ km}, \\qquad OB = 24 \\times 1.5 = 36 \\text{ km}$$\n\nThe angle between the two courses is $115^\\circ - 25^\\circ = 90^\\circ$, so angle $AOB$ is a right angle.\n\n**(a)**\n$$AB = \\sqrt{27^2 + 36^2} = \\sqrt{729 + 1296} = \\sqrt{2025} = 45 \\text{ km}$$\n\n**(b)** In right-angled triangle $AOB$:\n$$\\tan \\angle OAB = \\frac{36}{27} \\quad\\Rightarrow\\quad \\angle OAB = 53.13\\ldots^\\circ$$\n\nThe bearing of $O$ from $A$ is the back bearing $025^\\circ + 180^\\circ = 205^\\circ$. Facing $O$ from $A$ means facing south-west; ship $B$, which is south-east of $O$, is then on the left, so turn **anticlockwise** by $53.13^\\circ$:\n$$205^\\circ - 53.13^\\circ = 151.87^\\circ \\approx 152^\\circ$$\n\nCheck with east/north coordinates (km): $A = (27\\sin 25^\\circ, 27\\cos 25^\\circ) = (11.41, 24.47)$, $B = (36\\sin 115^\\circ, 36\\cos 115^\\circ) = (32.63, -15.21)$. From $A$ to $B$: 21.22 km east and 39.68 km south, so the bearing is $180^\\circ - \\tan^{-1}\\left(\\frac{21.22}{39.68}\\right) = 180^\\circ - 28.13^\\circ = 151.87^\\circ$. ✓",
+  "linkedTopicIds": [
+   "rat-speed-distance-time",
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "geo-bearings-q16",
+  "topicId": "geo-bearings",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A lighthouse $L$ is 8 km due east of a port $P$. A boat $B$ is on a bearing of $040^\\circ$ from $P$ and on a bearing of $300^\\circ$ from $L$. (Not drawn to scale.)\n\n**(a)** Work out the three angles of triangle $PLB$.\n**(b)** A student makes a scale drawing using 1 cm to represent 1 km. Describe how she would locate $B$.\n**(c)** Calculate the distance of the boat from the port, to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 260\" width=\"330\" height=\"260\"><line x1=\"50\" y1=\"230\" x2=\"50\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M45 90 L50 80 L55 90\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"50\" y=\"74\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"290\" y1=\"230\" x2=\"290\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M285 90 L290 80 L295 90\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"290\" y=\"74\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">N</text><line x1=\"50\" y1=\"230\" x2=\"290\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50\" y1=\"230\" x2=\"128.3\" y2=\"136.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"290\" y1=\"230\" x2=\"128.3\" y2=\"136.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"50\" cy=\"230\" r=\"3\" fill=\"currentColor\"/><circle cx=\"290\" cy=\"230\" r=\"3\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"136.7\" r=\"3\" fill=\"currentColor\"/><text x=\"38\" y=\"246\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"302\" y=\"246\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">L</text><text x=\"128.3\" y=\"126.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"170\" y=\"250\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 km</text></svg>",
+  "hint": "At $P$, the angle between north and $PB$ is $40^\\circ$, and $PL$ points east ($090^\\circ$). At $L$, the direction to $P$ is $270^\\circ$.",
+  "answer": "(a) $\\angle P = 50^\\circ$, $\\angle L = 30^\\circ$, $\\angle B = 100^\\circ$ (b) Draw $PL = 8$ cm; draw a line from $P$ on $040^\\circ$ and from $L$ on $300^\\circ$; $B$ is where they cross. (c) 4.06 km",
+  "solution": "**(a)** At $P$: $PL$ is on bearing $090^\\circ$ and $PB$ on $040^\\circ$, so $\\angle LPB = 90^\\circ - 40^\\circ = 50^\\circ$.\n\nAt $L$: $LP$ is on bearing $270^\\circ$ and $LB$ on $300^\\circ$, so $\\angle PLB = 300^\\circ - 270^\\circ = 30^\\circ$.\n\n$\\angle PBL = 180^\\circ - 50^\\circ - 30^\\circ = 100^\\circ$.\n\n**(b)** Draw $P$ and $L$ 8 cm apart with $L$ due east of $P$. Draw north lines at both. At $P$ measure $40^\\circ$ clockwise from north and draw a long line; at $L$ measure $300^\\circ$ clockwise from north (i.e. $60^\\circ$ anticlockwise) and draw a long line. $B$ is where the lines cross; measure $PB$ in cm and convert to km.\n\n**(c)** Sine rule: $PB$ is opposite the $30^\\circ$ angle and $PL = 8$ is opposite the $100^\\circ$ angle:\n$$\\frac{PB}{\\sin 30^\\circ} = \\frac{8}{\\sin 100^\\circ}$$\n\n$$PB = \\frac{8\\sin 30^\\circ}{\\sin 100^\\circ} = \\frac{4}{0.9848\\ldots} = 4.061\\ldots \\approx 4.06 \\text{ km}$$\n\n(A careful scale drawing should give about 4.1 cm.)",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules",
+   "geo-constructions-loci"
+  ]
+ },
+ {
+  "id": "geo-bearings-q17",
+  "topicId": "geo-bearings",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "**Do not use a calculator.** A drone flies 10 km from $A$ on a bearing of $150^\\circ$ to $B$. It then flies 10 km on a bearing of $270^\\circ$ to $C$.\n\nWithout using trigonometry, find the distance and the bearing of $C$ from $A$. Explain your reasoning fully.",
+  "hint": "Work out angle $ABC$ using the back bearing of $150^\\circ$. What kind of triangle has two equal sides and that angle between them?",
+  "answer": "10 km on a bearing of $210^\\circ$",
+  "solution": "**Angle at $B$.** The bearing of $A$ from $B$ is $150^\\circ + 180^\\circ = 330^\\circ$. The bearing of $C$ from $B$ is $270^\\circ$. So\n$$\\angle ABC = 330^\\circ - 270^\\circ = 60^\\circ$$\n\n**Shape of the triangle.** $AB = BC = 10$ km, so triangle $ABC$ is isosceles, and the base angles are $\\frac{180^\\circ - 60^\\circ}{2} = 60^\\circ$ each. All three angles are $60^\\circ$, so the triangle is **equilateral** and $AC = 10$ km.\n\n**Bearing.** At $A$, angle $BAC = 60^\\circ$. $C$ is reached by flying due west from $B$, so from $A$ the direction to $C$ is $60^\\circ$ further round towards the west than the direction to $B$. Turning clockwise from $150^\\circ$ goes towards south ($180^\\circ$) and then west, so\n$$\\text{bearing of } C \\text{ from } A = 150^\\circ + 60^\\circ = 210^\\circ$$\n\nCheck: $C$ is 10 km from $A$ on $210^\\circ$ ($30^\\circ$ west of south) and $B$ is 10 km from $A$ on $150^\\circ$ ($30^\\circ$ east of south). These are mirror images in the south line, so $B$ is due east of $C$ and the last leg $B \\to C$ is indeed on $270^\\circ$. ✓",
+  "linkedTopicIds": [
+   "geo-shape-properties"
+  ]
+ },
+ {
+  "id": "geo-bearings-q18",
+  "topicId": "geo-bearings",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A rock $R$ is 6 km due north of a coastguard station $C$. A boat $B$ is on a bearing of $050^\\circ$ from $C$, and is 5 km from the rock.\n\n**(a)** Show that there are two possible positions for the boat, and find the distance $CB$ for each, to 3 significant figures.\n**(b)** For the position of the boat that is further from $C$, find the bearing of the boat from the rock, to the nearest degree.",
+  "hint": "In triangle $CRB$ you know $CR = 6$, $RB = 5$ and the angle at $C$ (between north and $CB$). Use the sine rule to find angle $CBR$ and remember the obtuse possibility.",
+  "answer": "(a) $CB = 5.83$ km or $CB = 1.89$ km (b) $117^\\circ$",
+  "solution": "**(a)** In triangle $CRB$: $CR = 6$ km, $RB = 5$ km, and the angle at $C$ between north ($CR$) and $CB$ is $50^\\circ$. $RB = 5$ is opposite angle $C$, $CR = 6$ is opposite angle $B$:\n$$\\frac{\\sin B}{6} = \\frac{\\sin 50^\\circ}{5} \\quad\\Rightarrow\\quad \\sin B = \\frac{6\\sin 50^\\circ}{5} = 0.9192\\ldots$$\n\n$$B = 66.82^\\circ \\quad \\text{or} \\quad B = 180^\\circ - 66.82^\\circ = 113.18^\\circ$$\n\nBoth are valid: $50^\\circ + 66.82^\\circ < 180^\\circ$ and $50^\\circ + 113.18^\\circ < 180^\\circ$. (The known angle is opposite the shorter given side, $5 < 6$, and $5 > 6\\sin 50^\\circ = 4.60$, so the circle of radius 5 km round the rock cuts the $050^\\circ$ line twice.)\n\n* $B = 66.82^\\circ$: angle $R = 180^\\circ - 50^\\circ - 66.82^\\circ = 63.18^\\circ$, and $CB = \\dfrac{5\\sin 63.18^\\circ}{\\sin 50^\\circ} = 5.83$ km.\n* $B = 113.18^\\circ$: angle $R = 16.82^\\circ$, and $CB = \\dfrac{5\\sin 16.82^\\circ}{\\sin 50^\\circ} = 1.89$ km.\n\n**(b)** The further position has $\\angle CRB = 63.18^\\circ$. At $R$, the direction to $C$ is due south ($180^\\circ$), and the boat is east of the line $RC$, so turning from south back towards east (anticlockwise) by $63.18^\\circ$:\n$$\\text{bearing of } B \\text{ from } R = 180^\\circ - 63.18^\\circ = 116.82^\\circ \\approx 117^\\circ$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ }
+]

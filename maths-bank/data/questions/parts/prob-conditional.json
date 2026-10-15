@@ -1,0 +1,304 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The two-way table shows the activity chosen by 100 students on a sports day.\n\n| | Swimming | Cycling | Running | Total |\n|---|---|---|---|---|\n| Year 9 | 24 | 18 | 8 | 50 |\n| Year 10 | 16 | 22 | 12 | 50 |\n| Total | 40 | 40 | 20 | 100 |\n\nA student is chosen at random. Find $P(\\text{Swimming} \\mid \\text{Year 9})$.",
+  "hint": "\"Given Year 9\" means you only look at the Year 9 row. How many students are in that row?",
+  "answer": "$\\dfrac{24}{50} = \\dfrac{12}{25}$",
+  "solution": "The bar $\\mid$ means \"given that\". We are told the student is in Year 9, so restrict to the **Year 9 row**: 50 students.\n\nOf these, 24 chose swimming:\n$$P(\\text{Swimming} \\mid \\text{Year 9}) = \\frac{24}{50} = \\frac{12}{25}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q01",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The table is the same as in the previous question.\n\n| | Swimming | Cycling | Running | Total |\n|---|---|---|---|---|\n| Year 9 | 24 | 18 | 8 | 50 |\n| Year 10 | 16 | 22 | 12 | 50 |\n| Total | 40 | 40 | 20 | 100 |\n\nA student is chosen at random. Find $P(\\text{Year 9} \\mid \\text{Swimming})$.",
+  "hint": "Now the given event (after the bar) is Swimming. Which total should you divide by?",
+  "answer": "$\\dfrac{24}{40} = \\dfrac{3}{5}$",
+  "solution": "**What changed:** the two events have swapped sides of the bar. Now we are **given** that the student chose swimming.\n\nRestrict to the **Swimming column**: 40 students. Of these, 24 are in Year 9:\n$$P(\\text{Year 9} \\mid \\text{Swimming}) = \\frac{24}{40} = \\frac{3}{5}$$\n\nSame numerator (24) as before, but a different \"given\" total, so $P(\\text{Year 9} \\mid \\text{Swimming}) \\ne P(\\text{Swimming} \\mid \\text{Year 9})$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q02",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The table is the same as in the previous questions.\n\n| | Swimming | Cycling | Running | Total |\n|---|---|---|---|---|\n| Year 9 | 24 | 18 | 8 | 50 |\n| Year 10 | 16 | 22 | 12 | 50 |\n| Total | 40 | 40 | 20 | 100 |\n\nA student is chosen at random. Find $P(\\text{Year 9} \\cap \\text{Swimming})$, and explain how it differs from $P(\\text{Year 9} \\mid \\text{Swimming})$.",
+  "hint": "There is no \"given\" here. The student could be any of the 100.",
+  "answer": "$\\dfrac{24}{100} = \\dfrac{6}{25}$; nothing is given, so we divide by the grand total 100 rather than the Swimming total 40.",
+  "solution": "**What changed:** the bar $\\mid$ (\"given\") has become $\\cap$ (\"and\").\n\nWith no information about the student, all 100 students are possible. 24 are in Year 9 **and** chose swimming:\n$$P(\\text{Year 9} \\cap \\text{Swimming}) = \\frac{24}{100} = \\frac{6}{25}$$\n\nFor $P(\\text{Year 9} \\mid \\text{Swimming})$ we already know the student chose swimming, so only 40 students are possible: $\\frac{24}{40}$. Knowing the condition shrinks the sample space, so the denominator is smaller.\n\nCheck with the formula: $\\dfrac{P(\\text{Year 9} \\cap \\text{Swimming})}{P(\\text{Swimming})} = \\dfrac{24/100}{40/100} = \\dfrac{24}{40}$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q03",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The table is the same as in the previous questions.\n\n| | Swimming | Cycling | Running | Total |\n|---|---|---|---|---|\n| Year 9 | 24 | 18 | 8 | 50 |\n| Year 10 | 16 | 22 | 12 | 50 |\n| Total | 40 | 40 | 20 | 100 |\n\nA student is chosen at random. Find $P(\\text{Year 9} \\mid \\text{not Running})$.",
+  "hint": "The given event is now \"did not choose running\". Which columns does that include, and how many students is that?",
+  "answer": "$\\dfrac{42}{80} = \\dfrac{21}{40}$",
+  "solution": "**What changed:** the given event is now a combination of columns: not Running = Swimming or Cycling.\n\nStudents who did not choose running: $40 + 40 = 80$ (or $100 - 20 = 80$).\n\nOf these, Year 9 students: $24 + 18 = 42$.\n$$P(\\text{Year 9} \\mid \\text{not Running}) = \\frac{42}{80} = \\frac{21}{40}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q04",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">24</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text></svg>",
+  "question": "The Venn diagram shows the number of elements in each region for sets $A$ and $B$.\n\nAn element is chosen at random from $\\xi$. Find $P(A \\mid B)$.",
+  "hint": "Given $B$: only look inside circle $B$. How many elements are in circle $B$ altogether?",
+  "answer": "$P(A \\mid B) = \\dfrac{8}{32} = \\dfrac{1}{4}$",
+  "solution": "Given that the element is in $B$, the sample space shrinks to circle $B$:\n$$n(B) = 8 + 24 = 32$$\n\nOf these, the ones also in $A$ are in the overlap: $n(A \\cap B) = 8$.\n$$P(A \\mid B) = \\frac{n(A \\cap B)}{n(B)} = \\frac{8}{32} = \\frac{1}{4}$$\n\n(Compare $P(B \\mid A) = \\frac{8}{20} = \\frac{2}{5}$: dividing by circle $A$ instead gives a different answer.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q05",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$A$ and $B$ are events with $P(A) = 0.5$, $P(B) = 0.4$ and $P(A \\cap B) = 0.1$.\n\n(a) Find $P(A \\mid B)$.\n\n(b) Find $P(B \\mid A)$.",
+  "hint": "Use $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$. The denominator is always the probability of the event **after** the bar.",
+  "answer": "(a) $0.25$ (b) $0.2$",
+  "solution": "(a) $$P(A \\mid B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.1}{0.4} = 0.25$$\n\n(b) Now the given event is $A$, so divide by $P(A)$:\n$$P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{0.1}{0.5} = 0.2$$\n\nThe numerators are the same; only the given event, and so the denominator, changes.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q06",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A bag contains 5 red and 3 blue counters. Two counters are taken at random, without replacement.\n\nThe question asks: \"Given that the first counter is red, find the probability that the second counter is blue.\"\n\nDan's answer is\n$$\\frac{5}{8} \\times \\frac{3}{7} = \\frac{15}{56}$$\n\n(a) Explain Dan's mistake.\n\n(b) Find the correct answer.",
+  "hint": "Has the first counter's colour already been decided? What is in the bag when the second counter is taken?",
+  "answer": "(a) He found $P(\\text{red then blue})$, the whole route, but the first counter being red is given, so it should not be multiplied in. (b) $\\dfrac{3}{7}$",
+  "solution": "(a) Dan has calculated $P(\\text{first red} \\cap \\text{second blue})$, the probability of the whole route. But the question **tells us** the first counter is red: that has already happened, so its probability $\\frac{5}{8}$ should not be included.\n\n(b) After a red counter is removed, the bag has 4 red and 3 blue: 7 counters.\n$$P(\\text{second blue} \\mid \\text{first red}) = \\frac{3}{7}$$\n\nThis is just the second-stage branch on the tree. Check with the formula:\n$$\\frac{P(\\text{R then B})}{P(\\text{first R})} = \\frac{15/56}{5/8} = \\frac{15}{56} \\times \\frac{8}{5} = \\frac{3}{7}$$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q07",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "10% of the emails Jamal receives are spam. His spam filter flags 90% of spam emails, and it also wrongly flags 5% of genuine emails.\n\nAn email is flagged. Jamal says:\n\n\"The filter catches 90% of spam, so the probability that a flagged email is spam is $0.9$.\"\n\n(a) Explain the error in Jamal's reasoning.\n\n(b) Find the probability that a flagged email is spam.",
+  "hint": "$0.9$ is the probability of being flagged **given** spam. You want the reverse. Use a tree diagram and find every route that ends in \"flagged\".",
+  "answer": "(a) $0.9 = P(\\text{flagged} \\mid \\text{spam})$, but he needs $P(\\text{spam} \\mid \\text{flagged})$; genuine emails can be flagged too. (b) $\\dfrac{0.09}{0.135} = \\dfrac{2}{3}$",
+  "solution": "(a) Jamal has used $P(\\text{flagged} \\mid \\text{spam}) = 0.9$, the branch probability on the tree. The question asks for $P(\\text{spam} \\mid \\text{flagged})$, which is the reverse condition. Flagged emails include some genuine ones, so this must be calculated.\n\n(b) Tree diagram routes ending in \"flagged\" ($S$ = spam, $F$ = flagged):\n$$P(S \\cap F) = 0.1 \\times 0.9 = 0.09$$\n$$P(S' \\cap F) = 0.9 \\times 0.05 = 0.045$$\n$$P(F) = 0.09 + 0.045 = 0.135$$\n\n$$P(S \\mid F) = \\frac{P(S \\cap F)}{P(F)} = \\frac{0.09}{0.135} = \\frac{2}{3}$$\n\nSo about a third of flagged emails are genuine, because genuine emails are so much more common than spam.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q08",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In a town, the probability that it rains on a given day is $0.3$. A weather app forecasts rain on 80% of the days when it does rain, and on 10% of the days when it stays dry.\n\nYou may find a tree diagram helpful.\n\n(a) Find the probability that the app forecasts rain on a randomly chosen day.\n\n(b) The app forecasts rain. Find the probability that it actually rains. Give your answer to 3 significant figures.\n\n(c) The app forecasts no rain. Find the probability that it rains anyway, to 3 significant figures.",
+  "hint": "First stage: rain or dry. Second stage: what the app forecasts. For (b), divide the \"rain and forecast rain\" route by the total from (a).",
+  "answer": "(a) $0.31$ (b) $0.774$ (c) $0.0870$",
+  "solution": "Let $R$ = it rains, $F$ = the app forecasts rain.\n\nTree routes:\n\n$P(R \\cap F) = 0.3 \\times 0.8 = 0.24$, $P(R \\cap F') = 0.3 \\times 0.2 = 0.06$\n\n$P(R' \\cap F) = 0.7 \\times 0.1 = 0.07$, $P(R' \\cap F') = 0.7 \\times 0.9 = 0.63$\n\n(a) $$P(F) = 0.24 + 0.07 = 0.31$$\n\n(b) $$P(R \\mid F) = \\frac{P(R \\cap F)}{P(F)} = \\frac{0.24}{0.31} = \\frac{24}{31} = 0.774 \\text{ (3 s.f.)}$$\n\nNote this is not $0.8$: that is $P(F \\mid R)$.\n\n(c) $P(F') = 0.06 + 0.63 = 0.69$\n$$P(R \\mid F') = \\frac{0.06}{0.69} = \\frac{2}{23} = 0.0870 \\text{ (3 s.f.)}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q09",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">M</text></svg>",
+  "question": "There are 60 students in Year 11.\n\n32 students study Art ($A$).\n25 students study Music ($M$).\n9 students study neither Art nor Music.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Complete the Venn diagram to show this information.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "One of the students who studies Music is chosen at random. Work out the probability that this student also studies Art.",
+    "marks": 2
+   }
+  ],
+  "marks": 5,
+  "hint": "$60 - 9$ students study at least one subject. Compare that with $32 + 25$ to find the overlap.",
+  "answer": "(a) $A$ only 26, both 6, $M$ only 19, neither 9 (b) $\\dfrac{6}{25}$",
+  "solution": "(a) Students in $A \\cup M$: $60 - 9 = 51$ M1\n\n$32 + 25 = 57$, so the overlap is $57 - 51 = 6$ M1\n\nArt only: $32 - 6 = 26$; Music only: $25 - 6 = 19$; neither: 9 A1 (fully correct diagram)\n\n(b) The student is **given** to study Music, so the total is $n(M) = 6 + 19 = 25$ M1\n\n$$P(A \\mid M) = \\frac{6}{25}$$ A1 (ft from their diagram)\n\nDo not divide by 60; that would give $P(A \\cap M)$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q10",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A survey of 500 car owners recorded their age and whether they own an electric car.\n\n| | Electric | Petrol or diesel | Total |\n|---|---|---|---|\n| Under 40 | 48 | 152 | 200 |\n| 40 and over | 72 | 228 | 300 |\n| Total | 120 | 380 | 500 |\n\nA journalist writes: \"72 older drivers own an electric car but only 48 younger drivers do, so owning an electric car depends on age.\"\n\nUse conditional probabilities to decide whether the journalist's conclusion is supported by the data.",
+  "hint": "Comparing 72 with 48 is unfair because the age groups are different sizes. Compare $P(\\text{Electric} \\mid \\text{Under 40})$ with $P(\\text{Electric} \\mid \\text{40 and over})$.",
+  "answer": "Not supported: $P(\\text{E} \\mid \\text{Under 40}) = P(\\text{E} \\mid \\text{40+}) = P(\\text{E}) = 0.24$, so in this sample owning an electric car is independent of age group.",
+  "solution": "The raw counts cannot be compared directly, because there are 300 older drivers but only 200 younger ones. Compare proportions within each age group:\n$$P(\\text{Electric} \\mid \\text{Under 40}) = \\frac{48}{200} = 0.24$$\n$$P(\\text{Electric} \\mid \\text{40 and over}) = \\frac{72}{300} = 0.24$$\n\nOverall, $P(\\text{Electric}) = \\dfrac{120}{500} = 0.24$.\n\nKnowing a driver's age group does not change the probability that they own an electric car: $P(\\text{E} \\mid \\text{age group}) = P(\\text{E})$. So in this data, owning an electric car and age group are **independent**. The journalist's conclusion is not supported; the larger count for older drivers only reflects that there are more older drivers in the survey.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q11",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "The events $A$ and $B$ are such that\n$$P(A) = 0.4, \\quad P(B) = 0.35, \\quad P(A \\cup B) = 0.55$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $P(A \\cap B)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find $P(A \\mid B')$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Determine whether or not $A$ and $B$ are independent. Give a reason for your answer.",
+    "marks": 2
+   }
+  ],
+  "marks": 7,
+  "hint": "Use the addition rule $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. A Venn diagram with probabilities in each region helps for (b).",
+  "answer": "(a) $0.2$ (b) $\\dfrac{4}{13}$ (c) Not independent, since $P(A \\mid B) = \\dfrac{4}{7} \\ne 0.4 = P(A)$ (equivalently $P(A)P(B) = 0.14 \\ne 0.2$).",
+  "solution": "(a) $$P(A \\cap B) = P(A) + P(B) - P(A \\cup B) = 0.4 + 0.35 - 0.55$$ M1\n$$= 0.2$$ A1\n\n(b) Regions: $A$ only $= 0.4 - 0.2 = 0.2$, $B$ only $= 0.15$, outside $= 1 - 0.55 = 0.45$.\n\n$P(A \\cap B') = 0.2$ B1 and $P(B') = 1 - 0.35 = 0.65$ B1\n\n$$P(A \\mid B') = \\frac{P(A \\cap B')}{P(B')} = \\frac{0.2}{0.65} = \\frac{4}{13}$$ A1 (awrt $0.308$)\n\n(c) $P(A \\mid B) = \\dfrac{0.2}{0.35} = \\dfrac{4}{7} \\approx 0.571$ M1\n\nThis is not equal to $P(A) = 0.4$, so $A$ and $B$ are **not** independent. A1\n\n(Alternative: $P(A) \\times P(B) = 0.14 \\ne 0.2 = P(A \\cap B)$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q12",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "prob-sample-spaces"
+  ],
+  "question": "Two fair six-sided dice are rolled.\n\n(a) Given that the total score is 8, find the probability that at least one dice shows a six.\n\n(b) Given that at least one dice shows a six, find the probability that the total score is at least 10.",
+  "hint": "Use a sample space of 36 equally likely outcomes. For each part, first list only the outcomes in the **given** event: that is your new sample space.",
+  "answer": "(a) $\\dfrac{2}{5}$ (b) $\\dfrac{5}{11}$",
+  "solution": "Write outcomes as (first dice, second dice); all 36 are equally likely.\n\n(a) Given total 8, the possible outcomes are\n$$(2, 6), (3, 5), (4, 4), (5, 3), (6, 2)$$\nThat is 5 outcomes, and 2 of them contain a six:\n$$P(\\text{at least one six} \\mid \\text{total } 8) = \\frac{2}{5}$$\n\n(b) Outcomes with at least one six: $(6, 1), \\dots, (6, 6)$ and $(1, 6), \\dots, (5, 6)$, giving $6 + 5 = 11$ outcomes ($(6,6)$ counted once).\n\nOf these, total at least 10: $(6, 4), (6, 5), (6, 6), (4, 6), (5, 6)$, giving 5 outcomes.\n$$P(\\text{total} \\ge 10 \\mid \\text{at least one six}) = \\frac{5}{11}$$\n\nCheck with the formula: $\\dfrac{5/36}{11/36} = \\dfrac{5}{11}$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-conditional-q13",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">x</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">2x + 2</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text></svg>",
+  "linkedTopicIds": [
+   "alg-forming-equations",
+   "alg-linear-equations"
+  ],
+  "question": "The Venn diagram shows the number of elements in each region for sets $A$ and $B$.\n\nAn element is chosen at random from $\\xi$. Given that $P(A \\mid B) = \\dfrac{3}{10}$,\n\n(a) find the value of $x$\n\n(b) find $P(B \\mid A)$.",
+  "hint": "Write $n(B)$ in terms of $x$, then form an equation from $\\dfrac{n(A \\cap B)}{n(B)} = \\dfrac{3}{10}$.",
+  "answer": "(a) $x = 6$ (b) $P(B \\mid A) = \\dfrac{6}{16} = \\dfrac{3}{8}$",
+  "solution": "(a) $n(B) = x + (2x + 2) = 3x + 2$ and $n(A \\cap B) = x$.\n$$P(A \\mid B) = \\frac{x}{3x + 2} = \\frac{3}{10}$$\n$$10x = 3(3x + 2) = 9x + 6$$\n$$x = 6$$\n\nCheck: $n(B) = 6 + 14 = 20$ and $\\frac{6}{20} = \\frac{3}{10}$ ✓\n\n(b) $n(A) = 10 + 6 = 16$:\n$$P(B \\mid A) = \\frac{n(A \\cap B)}{n(A)} = \\frac{6}{16} = \\frac{3}{8}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-conditional-q14",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "$A$ and $B$ are events with $P(A) > 0$, $P(B) > 0$ and $P(A \\cap B) > 0$.\n\n(a) Prove that if $P(A \\mid B) = P(A)$, then $P(B \\mid A) = P(B)$.\n\n(b) Prove that $P(A \\mid B) = P(B \\mid A)$ if and only if $P(A) = P(B)$.\n\n(c) Hence explain why, in a medical test, $P(\\text{positive} \\mid \\text{disease})$ is usually very different from $P(\\text{disease} \\mid \\text{positive})$.",
+  "hint": "Rearrange the definition: $P(A \\cap B) = P(A \\mid B)\\,P(B) = P(B \\mid A)\\,P(A)$.",
+  "answer": "(a) $P(A \\cap B) = P(A)P(B)$, so $P(B \\mid A) = \\dfrac{P(A)P(B)}{P(A)} = P(B)$. (b) $P(A \\mid B)P(B) = P(B \\mid A)P(A)$, so with $P(A \\cap B) > 0$ the conditionals are equal exactly when $P(A) = P(B)$. (c) $P(\\text{positive})$ and $P(\\text{disease})$ are usually very different (a rare disease), so the two conditionals differ.",
+  "solution": "From the definition, $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$, so\n$$P(A \\cap B) = P(A \\mid B)\\,P(B) = P(B \\mid A)\\,P(A) \\qquad (*)$$\n\n(a) If $P(A \\mid B) = P(A)$, then $(*)$ gives $P(A \\cap B) = P(A)P(B)$. Therefore\n$$P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{P(A)P(B)}{P(A)} = P(B)$$\nSo independence works both ways: if knowing $B$ does not change the chance of $A$, knowing $A$ does not change the chance of $B$.\n\n(b) From $(*)$: $P(A \\mid B)P(B) = P(B \\mid A)P(A)$.\n\nIf $P(A) = P(B)$, divide both sides by this (non-zero) value: $P(A \\mid B) = P(B \\mid A)$.\n\nConversely, if $P(A \\mid B) = P(B \\mid A)$, this common value equals $\\frac{P(A \\cap B)}{P(B)} > 0$, so we can divide both sides by it to get $P(B) = P(A)$.\n\n(c) Let $A$ = positive, $B$ = disease. By (b), the two conditional probabilities can only be equal if $P(\\text{positive}) = P(\\text{disease})$. For a rare disease, many more people test positive (including false positives) than have the disease, so $P(\\text{disease} \\mid \\text{positive})$ is much smaller than $P(\\text{positive} \\mid \\text{disease})$. Confusing the two is a common and serious error.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q15",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "prob-tree-diagrams"
+  ],
+  "question": "A bag contains $r$ red counters and 5 blue counters. Two counters are taken at random from the bag, without replacement.\n\nGiven that the two counters are the same colour, the probability that they are both red is $\\dfrac{3}{5}$.\n\n(a) Show that $r^2 - r - 30 = 0$.\n\n(b) Hence find the probability that the two counters are different colours.",
+  "hint": "Write $P(\\text{RR})$ and $P(\\text{BB})$ in terms of $r$. The common denominator $(r + 5)(r + 4)$ cancels in $\\dfrac{P(\\text{RR})}{P(\\text{RR}) + P(\\text{BB})}$.",
+  "answer": "(a) Shown (b) $\\dfrac{6}{11}$",
+  "solution": "(a) There are $r + 5$ counters.\n$$P(\\text{RR}) = \\frac{r}{r + 5} \\times \\frac{r - 1}{r + 4} = \\frac{r(r - 1)}{(r + 5)(r + 4)}, \\qquad P(\\text{BB}) = \\frac{5}{r + 5} \\times \\frac{4}{r + 4} = \\frac{20}{(r + 5)(r + 4)}$$\n\n$$P(\\text{RR} \\mid \\text{same}) = \\frac{P(\\text{RR})}{P(\\text{RR}) + P(\\text{BB})} = \\frac{r(r - 1)}{r(r - 1) + 20} = \\frac{3}{5}$$\n\nCross-multiply:\n$$5r(r - 1) = 3r(r - 1) + 60$$\n$$2r(r - 1) = 60$$\n$$r^2 - r - 30 = 0 \\quad \\text{as required}$$\n\n(b) $(r - 6)(r + 5) = 0$, so $r = 6$ (a number of counters cannot be negative).\n\nThe bag has 6 red and 5 blue: 11 counters.\n$$P(\\text{different}) = \\frac{6}{11} \\times \\frac{5}{10} + \\frac{5}{11} \\times \\frac{6}{10} = \\frac{60}{110} = \\frac{6}{11}$$\n\nCheck: $P(\\text{RR}) = \\frac{30}{110}$, $P(\\text{BB}) = \\frac{20}{110}$, and $\\frac{30}{50} = \\frac{3}{5}$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "prob-conditional-q16",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "There are three boxes.\n\n- Box 1 contains two gold coins.\n- Box 2 contains one gold coin and one silver coin.\n- Box 3 contains two silver coins.\n\nA box is chosen at random, and then a coin is taken at random from that box. The coin is gold.\n\nFind the probability that the other coin in the same box is also gold.\n\nMany people answer $\\dfrac{1}{2}$, arguing \"it must be Box 1 or Box 2, and they are equally likely\". Explain why this argument is wrong.",
+  "hint": "The other coin is gold only if the box is Box 1. Draw a tree: box first, then coin. Find $P(\\text{Box 1} \\mid \\text{gold drawn})$.",
+  "answer": "$\\dfrac{2}{3}$. Box 1 and Box 2 are not equally likely once a gold coin has been seen: Box 1 always gives gold, Box 2 only half the time.",
+  "solution": "The other coin is gold exactly when the chosen box is Box 1, so we need $P(\\text{Box 1} \\mid G)$, where $G$ = the coin drawn is gold.\n\nTree routes ending in gold:\n\n$P(\\text{Box 1} \\cap G) = \\frac{1}{3} \\times 1 = \\frac{1}{3}$\n\n$P(\\text{Box 2} \\cap G) = \\frac{1}{3} \\times \\frac{1}{2} = \\frac{1}{6}$\n\n$P(\\text{Box 3} \\cap G) = \\frac{1}{3} \\times 0 = 0$\n\n$$P(G) = \\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2}$$\n\n$$P(\\text{Box 1} \\mid G) = \\frac{1/3}{1/2} = \\frac{2}{3}$$\n\n**Why $\\frac{1}{2}$ is wrong:** seeing a gold coin is evidence. Box 1 produces a gold coin every time, but Box 2 only half the time, so after seeing gold, Box 1 is twice as likely as Box 2. Another way to see it: there are three gold coins, equally likely to be the one drawn. Two of them are in Box 1, and for each of those the other coin is gold; for the third (in Box 2) it is silver. So the probability is $\\frac{2}{3}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q17",
+  "topicId": "prob-conditional"
+ },
+ {
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A disease affects 1% of a population. A screening test gives a positive result for 90% of people who have the disease and for 5% of people who do not.\n\n(a) A person chosen at random tests positive. Find the probability that they have the disease.\n\n(b) A person who tests positive takes a second test of the same type. The results of the two tests are independent of each other for a person with the disease, and also for a person without it. The second test is also positive. Find the probability that this person has the disease, giving your answer to 3 significant figures.\n\n(c) Comment on what your answers suggest about using this test.",
+  "hint": "For (b), either draw a three-stage tree (disease, test 1, test 2), or use your answer to (a) as the new starting probability of having the disease.",
+  "answer": "(a) $\\dfrac{2}{13} \\approx 0.154$ (b) $\\dfrac{36}{47} \\approx 0.766$ (c) A single positive result is weak evidence (most positives are false), but two positive results make the disease likely; a positive screen should be followed up with a second test.",
+  "solution": "Let $D$ = has the disease, $+$ = tests positive.\n\n(a) $P(D \\cap +) = 0.01 \\times 0.9 = 0.009$\n\n$P(D' \\cap +) = 0.99 \\times 0.05 = 0.0495$\n\n$P(+) = 0.009 + 0.0495 = 0.0585$\n\n$$P(D \\mid +) = \\frac{0.009}{0.0585} = \\frac{2}{13} \\approx 0.154$$\n\n(b) Three-stage tree, routes with two positives:\n\n$P(D \\cap ++) = 0.01 \\times 0.9 \\times 0.9 = 0.0081$\n\n$P(D' \\cap ++) = 0.99 \\times 0.05 \\times 0.05 = 0.002475$\n\n$$P(D \\mid ++) = \\frac{0.0081}{0.0081 + 0.002475} = \\frac{0.0081}{0.010575} = \\frac{36}{47} = 0.766 \\text{ (3 s.f.)}$$\n\n(Alternatively, start from $P(D) = \\frac{2}{13}$: $\\dfrac{\\frac{2}{13} \\times 0.9}{\\frac{2}{13} \\times 0.9 + \\frac{11}{13} \\times 0.05} = \\dfrac{1.8}{2.35} = \\dfrac{36}{47}$.)\n\n(c) After one positive test the person probably does **not** have the disease (only about 15%), even though the test detects 90% of cases, because the disease is rare and false positives outnumber true positives. A second positive raises the probability to about 77%, so a positive screen should be confirmed with further testing rather than treated as a diagnosis.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-conditional-q18",
+  "topicId": "prob-conditional"
+ }
+]
