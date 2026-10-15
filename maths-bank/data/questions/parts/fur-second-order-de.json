@@ -1,0 +1,267 @@
+[
+ {
+  "id": "fur-second-order-de-q01",
+  "topicId": "fur-second-order-de",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} - 5\\frac{dy}{dx} + 6y = 0$$",
+  "hint": "Write down the auxiliary equation $m^2 - 5m + 6 = 0$ and solve it.",
+  "answer": "$y = Ae^{2x} + Be^{3x}$",
+  "solution": "Auxiliary equation: $m^2 - 5m + 6 = 0 \\Rightarrow (m - 2)(m - 3) = 0 \\Rightarrow m = 2, 3$\n\nReal, distinct roots, so\n$$y = Ae^{2x} + Be^{3x}$$\n(two arbitrary constants, as expected for a second-order equation).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q02",
+  "topicId": "fur-second-order-de",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} - 6\\frac{dy}{dx} + 9y = 0$$",
+  "hint": "The auxiliary equation has a repeated root. How many arbitrary constants must the answer contain?",
+  "answer": "$y = (A + Bx)e^{3x}$",
+  "solution": "**What changed:** the coefficients now give a perfect square.\n\nAuxiliary equation: $m^2 - 6m + 9 = (m - 3)^2 = 0 \\Rightarrow m = 3$ (repeated).\n\nWriting $Ae^{3x} + Be^{3x}$ would be wrong: it equals $(A + B)e^{3x}$, which has only one arbitrary constant. For a repeated root the second solution is $xe^{3x}$:\n$$y = (A + Bx)e^{3x}$$\n\n(Check that $xe^{3x}$ works: $y' = (1 + 3x)e^{3x}$, $y'' = (6 + 9x)e^{3x}$, and $(6 + 9x) - 6(1 + 3x) + 9x = 0$ ✓)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q03",
+  "topicId": "fur-second-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} - 6\\frac{dy}{dx} + 13y = 0$$",
+  "hint": "The discriminant of the auxiliary equation is negative. For roots $p \\pm qi$, which part goes in the exponential?",
+  "answer": "$y = e^{3x}(A\\cos 2x + B\\sin 2x)$",
+  "solution": "**What changed:** the constant term increased from 9 to 13, making the discriminant negative.\n\n$$m^2 - 6m + 13 = 0 \\Rightarrow m = \\frac{6 \\pm \\sqrt{36 - 52}}{2} = 3 \\pm 2i$$\n\nFor $m = p \\pm qi$ the real part $p$ goes in the exponential and the imaginary part $q$ is the frequency:\n$$y = e^{3x}(A\\cos 2x + B\\sin 2x)$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q04",
+  "topicId": "fur-second-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} + 6\\frac{dy}{dx} + 13y = 0$$\nand describe the behaviour of $y$ as $x \\to \\infty$.",
+  "hint": "Only the sign of the middle coefficient has changed. What does that do to the roots?",
+  "answer": "$y = e^{-3x}(A\\cos 2x + B\\sin 2x)$; oscillations whose amplitude decays to 0.",
+  "solution": "**What changed:** the sign of the $\\frac{dy}{dx}$ coefficient. This changes the sign of the real part of the roots but not the imaginary part.\n\n$$m^2 + 6m + 13 = 0 \\Rightarrow m = -3 \\pm 2i$$\n$$y = e^{-3x}(A\\cos 2x + B\\sin 2x)$$\n\n**Effect:** the oscillation frequency (2) is the same as before, but the factor $e^{-3x}$ now decays, so $y$ oscillates with amplitude shrinking to zero: $y \\to 0$ as $x \\to \\infty$. (In the previous question the amplitude grew without bound.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q05",
+  "topicId": "fur-second-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} - 5\\frac{dy}{dx} + 6y = 12x + 2$$",
+  "hint": "The complementary function is in the previous question set. For the particular integral try $y = px + q$ – a full linear polynomial, even though there is a $\\frac{dy}{dx}$ term.",
+  "answer": "$y = Ae^{2x} + Be^{3x} + 2x + 2$",
+  "solution": "CF (from $m = 2, 3$): $Ae^{2x} + Be^{3x}$\n\nPI: try $y = px + q$, so $y' = p$, $y'' = 0$:\n$$0 - 5p + 6(px + q) = 12x + 2$$\nCompare $x$: $6p = 12 \\Rightarrow p = 2$. Constants: $6q - 5p = 2 \\Rightarrow 6q = 12 \\Rightarrow q = 2$.\n\nGeneral solution = CF + PI:\n$$y = Ae^{2x} + Be^{3x} + 2x + 2$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q06",
+  "topicId": "fur-second-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the general solution of\n$$\\frac{d^2y}{dx^2} + 2\\frac{dy}{dx} + 5y = 10\\cos x$$",
+  "hint": "For the PI try $y = \\lambda\\cos x + \\mu\\sin x$ – you need both terms, because differentiating once swaps $\\cos$ and $\\sin$.",
+  "answer": "$y = e^{-x}(A\\cos 2x + B\\sin 2x) + 2\\cos x + \\sin x$",
+  "solution": "Auxiliary equation: $m^2 + 2m + 5 = 0 \\Rightarrow m = -1 \\pm 2i$. CF: $e^{-x}(A\\cos 2x + B\\sin 2x)$\n\nPI: $y = \\lambda\\cos x + \\mu\\sin x$, $y' = -\\lambda\\sin x + \\mu\\cos x$, $y'' = -\\lambda\\cos x - \\mu\\sin x$.\n$$(-\\lambda + 2\\mu + 5\\lambda)\\cos x + (-\\mu - 2\\lambda + 5\\mu)\\sin x = 10\\cos x$$\n$$\\cos x: \\; 4\\lambda + 2\\mu = 10 \\qquad \\sin x: \\; 4\\mu - 2\\lambda = 0$$\nSo $\\lambda = 2\\mu$, then $10\\mu = 10$: $\\mu = 1$, $\\lambda = 2$.\n\n$$y = e^{-x}(A\\cos 2x + B\\sin 2x) + 2\\cos x + \\sin x$$\n\n(Note that $\\cos x$ is not part of the CF, so no extra factor of $x$ is needed.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q07",
+  "topicId": "fur-second-order-de",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Hannah is solving $\\dfrac{d^2y}{dx^2} - \\dfrac{dy}{dx} - 6y = 10e^{3x}$.\n\n\"Auxiliary equation $m^2 - m - 6 = 0$, so $m = 3$ or $m = -2$ and the CF is $Ae^{3x} + Be^{-2x}$.\n\nFor the PI try $y = \\lambda e^{3x}$: $9\\lambda e^{3x} - 3\\lambda e^{3x} - 6\\lambda e^{3x} = 10e^{3x}$, so $0 = 10e^{3x}$.\n\nThis is impossible, so the equation has no solution.\"\n\n(a) Explain why Hannah's trial function failed.\n\n(b) Find the general solution.",
+  "hint": "Is $e^{3x}$ already part of the CF? If so, multiply the trial by $x$.",
+  "answer": "(a) $e^{3x}$ is in the CF, so it gives 0 on substitution; try $\\lambda xe^{3x}$. (b) $y = Ae^{3x} + Be^{-2x} + 2xe^{3x}$",
+  "solution": "**(a)** $e^{3x}$ is already part of the complementary function: it solves $y'' - y' - 6y = 0$. So any multiple of it makes the left-hand side **zero**, and can never produce $10e^{3x}$. That does not mean there is no solution; it means the trial must be modified by multiplying by $x$.\n\n**(b)** Try $y = \\lambda xe^{3x}$:\n$$y' = \\lambda(1 + 3x)e^{3x}, \\qquad y'' = \\lambda(6 + 9x)e^{3x}$$\n$$y'' - y' - 6y = \\lambda e^{3x}\\left[(6 + 9x) - (1 + 3x) - 6x\\right] = 5\\lambda e^{3x}$$\nThe $x$ terms cancel (as they must). $5\\lambda = 10 \\Rightarrow \\lambda = 2$.\n\n$$y = Ae^{3x} + Be^{-2x} + 2xe^{3x}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q08",
+  "topicId": "fur-second-order-de",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leo is asked to solve $\\dfrac{d^2y}{dx^2} + 4y = 8x$, given that $y = 0$ and $\\dfrac{dy}{dx} = 4$ when $x = 0$.\n\n\"CF: $y = A\\cos 2x + B\\sin 2x$. Using $y(0) = 0$: $A = 0$. Using $y'(0) = 4$: $2B = 4$, so $B = 2$.\n\nPI: $y = 2x$. So $y = 2\\sin 2x + 2x$.\"\n\n(a) Show that Leo's answer does not satisfy the initial conditions.\n\n(b) Explain his error and find the correct solution.",
+  "hint": "Find $\\frac{dy}{dx}$ at $x = 0$ for Leo's answer. When should the conditions be applied?",
+  "answer": "(a) His $\\frac{dy}{dx}$ at $x = 0$ is 6, not 4. (b) He applied the conditions before adding the PI; correct: $y = \\sin 2x + 2x$",
+  "solution": "**(a)** $y = 2\\sin 2x + 2x \\Rightarrow \\frac{dy}{dx} = 4\\cos 2x + 2$, which is $6$ at $x = 0$, not 4.\n\n**(b)** Leo used the initial conditions on the CF alone, then added the PI – which changes $y'(0)$ (and could change $y(0)$ too). The conditions apply to the **general solution** CF + PI.\n\nPI check: $y = 2x$ gives $0 + 4(2x) = 8x$ ✓\n\nGeneral solution: $y = A\\cos 2x + B\\sin 2x + 2x$.\n\n$y(0) = 0$: $A = 0$.\n$y' = -2A\\sin 2x + 2B\\cos 2x + 2$, so $y'(0) = 2B + 2 = 4 \\Rightarrow B = 1$.\n\n$$y = \\sin 2x + 2x$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q09",
+  "topicId": "fur-second-order-de",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle $P$ moves along a line so that its displacement $x$ m from a fixed point $O$ at time $t$ s satisfies\n$$\\frac{d^2x}{dt^2} + 2\\frac{dx}{dt} + 10x = 0$$\n\nKemi writes: \"Auxiliary equation $m^2 + 2m + 10 = 0$, so $m = -1 \\pm 3i$. Hence $x = e^{-3t}(A\\cos t + B\\sin t)$. The oscillations have period $2\\pi$ seconds and decay like $e^{-3t}$.\"\n\n(a) Identify Kemi's error and write down the correct general solution.\n\n(b) State the correct time between successive passes through $O$ in the same direction, and the type of damping.",
+  "hint": "For $m = p \\pm qi$, the solution is $e^{pt}(A\\cos qt + B\\sin qt)$. Which number is $p$ here?",
+  "answer": "(a) She swapped the real and imaginary parts; $x = e^{-t}(A\\cos 3t + B\\sin 3t)$. (b) $\\frac{2\\pi}{3}$ s; light damping.",
+  "solution": "**(a)** For $m = -1 \\pm 3i$, the real part $p = -1$ controls growth/decay and the imaginary part $q = 3$ is the angular frequency. Kemi has swapped them. Correct:\n$$x = e^{-t}(A\\cos 3t + B\\sin 3t)$$\n(Check: $e^{-3t}\\cos t$ would come from roots $-3 \\pm i$, i.e. $m^2 + 6m + 10 = 0$ – a different equation.)\n\n**(b)** The trigonometric part has period $\\frac{2\\pi}{3} \\approx 2.09$ s, so $P$ passes through $O$ in the same direction every $\\frac{2\\pi}{3}$ s, with amplitude decaying like $e^{-t}$.\n\nWith $k = 2$, $\\omega^2 = 10$: $k^2 = 4 < 4\\omega^2 = 40$ (complex roots), so the motion is **lightly damped**.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q10",
+  "topicId": "fur-second-order-de",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Consider the differential equation\n$$\\frac{d^2y}{dx^2} - 4\\frac{dy}{dx} + 4y = e^{2x}$$\n\n(a) Explain, without lengthy calculation, why neither $\\lambda e^{2x}$ nor $\\lambda xe^{2x}$ can be a particular integral.\n\n(b) Find a particular integral of the form $\\lambda x^2e^{2x}$, and hence write down the general solution.",
+  "hint": "Find the CF first. Any function in the CF gives 0 when substituted into the left-hand side.",
+  "answer": "(a) The CF is $(A + Bx)e^{2x}$, so both $e^{2x}$ and $xe^{2x}$ make the left-hand side 0. (b) PI $\\frac{1}{2}x^2e^{2x}$; $y = \\left(A + Bx + \\frac{1}{2}x^2\\right)e^{2x}$",
+  "solution": "**(a)** Auxiliary equation $m^2 - 4m + 4 = (m - 2)^2 = 0$: repeated root $m = 2$, CF $= (A + Bx)e^{2x}$.\n\nBoth $e^{2x}$ (take $A = \\lambda$, $B = 0$) and $xe^{2x}$ (take $A = 0$, $B = \\lambda$) are solutions of the homogeneous equation, so substituting either gives $0$, never $e^{2x}$. Multiplying by $x$ once is not enough here; we must multiply by $x$ again.\n\n**(b)** $y = \\lambda x^2e^{2x}$:\n$$y' = \\lambda(2x + 2x^2)e^{2x}, \\qquad y'' = \\lambda(2 + 8x + 4x^2)e^{2x}$$\n$$y'' - 4y' + 4y = \\lambda e^{2x}\\left[(2 + 8x + 4x^2) - (8x + 8x^2) + 4x^2\\right] = 2\\lambda e^{2x}$$\nSo $2\\lambda = 1$, $\\lambda = \\frac{1}{2}$, and the PI is $\\frac{1}{2}x^2e^{2x}$.\n\n$$y = \\left(A + Bx + \\tfrac{1}{2}x^2\\right)e^{2x}$$",
+  "misconceptionIds": [
+   "m3",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q11",
+  "topicId": "fur-second-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A particle moves on a straight line so that its displacement $x$ m from $O$ at time $t$ s satisfies\n$$\\frac{d^2x}{dt^2} = -16x$$\nAt $t = 0$, $x = 3$ and $\\frac{dx}{dt} = 8$.\n\n(a) Find $x$ in terms of $t$.\n\n(b) Find the period and the exact amplitude of the motion, and the greatest speed of the particle.",
+  "hint": "This is SHM with $\\omega = 4$. Write $A\\cos 4t + B\\sin 4t$ as $R\\sin(4t + \\alpha)$ to find the amplitude.",
+  "answer": "(a) $x = 3\\cos 4t + 2\\sin 4t$ (b) Period $\\frac{\\pi}{2}$ s, amplitude $\\sqrt{13}$ m, greatest speed $4\\sqrt{13} \\approx 14.4\\ \\text{m s}^{-1}$",
+  "solution": "**(a)** Auxiliary equation $m^2 + 16 = 0 \\Rightarrow m = \\pm 4i$, so $x = A\\cos 4t + B\\sin 4t$.\n\n$x(0) = 3 \\Rightarrow A = 3$. $\\dot{x} = -4A\\sin 4t + 4B\\cos 4t$, so $\\dot{x}(0) = 4B = 8 \\Rightarrow B = 2$.\n$$x = 3\\cos 4t + 2\\sin 4t$$\n\n**(b)** Period $= \\dfrac{2\\pi}{\\omega} = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2}$ s.\n\n$3\\cos 4t + 2\\sin 4t = R\\sin(4t + \\alpha)$ with $R = \\sqrt{3^2 + 2^2} = \\sqrt{13}$, so the amplitude is $\\sqrt{13} \\approx 3.61$ m.\n\nGreatest speed (at $O$) $= R\\omega = 4\\sqrt{13} \\approx 14.4\\ \\text{m s}^{-1}$.",
+  "linkedTopicIds": [
+   "pure-trig-harmonic-form"
+  ]
+ },
+ {
+  "id": "fur-second-order-de-q12",
+  "topicId": "fur-second-order-de",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A simple model of one corner of a car's suspension gives the vertical displacement $x$ m of the car body from its equilibrium position, $t$ seconds after it is disturbed, as\n$$\\frac{d^2x}{dt^2} + k\\frac{dx}{dt} + 25x = 0$$\nwhere $k$ is a positive constant depending on the shock absorber. The car body is pushed down so that $x = 0.05$, and released from rest.\n\n(a) Find the value of $k$ that gives critical damping.\n\n(b) For this value of $k$, find $x$ in terms of $t$, and find, to 2 decimal places, the time after which $x$ stays below 1 mm.\n\n(c) A worn shock absorber has $k = 6$. Find $x$ in terms of $t$ and the displacement, in mm to 2 decimal places, when the car body first comes to rest after release. Explain why drivers notice the difference.",
+  "hint": "Critical damping: the auxiliary equation has a repeated root ($k^2 = 4 \\times 25$). For (b) you will need a numerical method or calculator solver.",
+  "answer": "(a) $k = 10$ (b) $x = (0.05 + 0.25t)e^{-5t}$; after about 1.17 s (c) $x = e^{-3t}(0.05\\cos 4t + 0.0375\\sin 4t)$; $-4.74$ mm (i.e. 4.74 mm above equilibrium, on the other side) at $t = \\frac{\\pi}{4}$ s: the body overshoots and bounces.",
+  "solution": "**(a)** $m^2 + km + 25 = 0$ has a repeated root when $k^2 = 100$, so $k = 10$.\n\n**(b)** $m = -5$ (repeated): $x = (A + Bt)e^{-5t}$.\n$x(0) = 0.05 \\Rightarrow A = 0.05$. $\\dot{x} = Be^{-5t} - 5(A + Bt)e^{-5t}$, so $\\dot{x}(0) = B - 5A = 0 \\Rightarrow B = 0.25$.\n$$x = (0.05 + 0.25t)e^{-5t}$$\n$x$ decreases steadily for $t > 0$ (since $\\dot{x} = -1.25te^{-5t} < 0$). Solving $(0.05 + 0.25t)e^{-5t} = 0.001$ numerically gives $t = 1.17$ s (2 d.p.).\n\n**(c)** $m^2 + 6m + 25 = 0 \\Rightarrow m = -3 \\pm 4i$: $x = e^{-3t}(A\\cos 4t + B\\sin 4t)$.\n$A = 0.05$; $\\dot{x}(0) = -3A + 4B = 0 \\Rightarrow B = 0.0375$.\n$$x = e^{-3t}(0.05\\cos 4t + 0.0375\\sin 4t)$$\n\n$\\dot{x} = e^{-3t}\\left[(-0.15 + 0.15)\\cos 4t + (-0.1125 - 0.2)\\sin 4t\\right] = -0.3125e^{-3t}\\sin 4t$, which is first zero (after $t = 0$) at $4t = \\pi$, $t = \\frac{\\pi}{4}$ s:\n$$x = e^{-3\\pi/4}(0.05 \\times (-1)) = -0.00474 \\text{ m} = -4.74 \\text{ mm}$$\n\nWith the worn damper the body overshoots equilibrium and oscillates (light damping) before settling, so the car feels \"bouncy\"; with critical damping it returns as quickly as possible without overshooting.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q13",
+  "topicId": "fur-second-order-de",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\"><line x1=\"16\" y1=\"120\" x2=\"324\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M324,120 L317.6,122.7 L317.6,117.3 z\" fill=\"currentColor\"/><line x1=\"33.6\" y1=\"224\" x2=\"33.6\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M33.6,16 L36.3,22.4 L30.9,22.4 z\" fill=\"currentColor\"/><text x=\"322\" y=\"136\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">t</text><text x=\"41.6\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">x</text><text x=\"28.6\" y=\"135\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"121.6\" y1=\"122.5\" x2=\"121.6\" y2=\"117.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"121.6\" y=\"136\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"209.6\" y1=\"122.5\" x2=\"209.6\" y2=\"117.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"209.6\" y=\"136\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"297.6\" y1=\"122.5\" x2=\"297.6\" y2=\"117.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"297.6\" y=\"136\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"29.9\" y1=\"199.2\" x2=\"37.3\" y2=\"199.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.6\" y=\"203.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−8</text><line x1=\"29.9\" y1=\"159.6\" x2=\"37.3\" y2=\"159.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.6\" y=\"163.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"29.9\" y1=\"80.4\" x2=\"37.3\" y2=\"80.4\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.6\" y=\"84.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"29.9\" y1=\"40.8\" x2=\"37.3\" y2=\"40.8\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.6\" y=\"44.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><path d=\"M33.6,120 L105.1,95.9 L176.6,71.7 L248.1,47.6 L319.6,23.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M33.6,120 L105.1,144.1 L176.6,168.3 L248.1,192.4 L319.6,216.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M33.6,120 L34.7,120 L35.8,120 L36.9,120 L38,119.9 L39.1,119.8 L40.2,119.7 L41.3,119.6 L42.4,119.4 L43.5,119.2 L44.6,118.9 L45.7,118.5 L46.8,118.2 L47.9,117.7 L49,117.2 L50.1,116.7 L51.2,116.1 L52.3,115.5 L53.4,114.9 L54.5,114.2 L55.6,113.5 L56.7,112.9 L57.8,112.2 L58.9,111.5 L60,110.9 L61.1,110.3 L62.2,109.8 L63.3,109.3 L64.4,109 L65.5,108.7 L66.6,108.4 L67.7,108.3 L68.8,108.4 L69.9,108.5 L71,108.7 L72.1,109.1 L73.2,109.7 L74.3,110.3 L75.4,111.1 L76.5,112 L77.6,113.1 L78.7,114.3 L79.8,115.6 L80.9,117 L82,118.5 L83.1,120.1 L84.2,121.8 L85.3,123.5 L86.4,125.3 L87.5,127 L88.6,128.8 L89.7,130.6 L90.8,132.3 L91.9,134 L93,135.6 L94.1,137.1 L95.2,138.5 L96.3,139.7 L97.4,140.8 L98.5,141.7 L99.6,142.4 L100.7,143 L101.8,143.3 L102.9,143.3 L104,143.2 L105.1,142.8 L106.2,142.1 L107.3,141.3 L108.4,140.1 L109.5,138.8 L110.6,137.2 L111.7,135.3 L112.8,133.3 L113.9,131.1 L115,128.7 L116.1,126.2 L117.2,123.5 L118.3,120.7 L119.4,117.9 L120.5,114.9 L121.6,112 L122.7,109.1 L123.8,106.2 L124.9,103.4 L126,100.6 L127.1,98 L128.2,95.6 L129.3,93.3 L130.4,91.3 L131.5,89.5 L132.6,88 L133.7,86.8 L134.8,85.9 L135.9,85.3 L137,85 L138.1,85.1 L139.2,85.5 L140.3,86.3 L141.4,87.5 L142.5,89 L143.6,90.9 L144.7,93 L145.8,95.5 L146.9,98.3 L148,101.4 L149.1,104.7 L150.2,108.3 L151.3,112 L152.4,115.8 L153.5,119.8 L154.6,123.9 L155.7,128 L156.8,132.1 L157.9,136.1 L159,140.1 L160.1,143.9 L161.2,147.5 L162.3,151 L163.4,154.2 L164.5,157 L165.6,159.6 L166.7,161.8 L167.8,163.6 L168.9,165.1 L170,166 L171.1,166.6 L172.2,166.6 L173.3,166.3 L174.4,165.4 L175.5,164.1 L176.6,162.3 L177.7,160 L178.8,157.3 L179.9,154.2 L181,150.7 L182.1,146.8 L183.2,142.7 L184.3,138.2 L185.4,133.5 L186.5,128.5 L187.6,123.4 L188.7,118.2 L189.8,113 L190.9,107.7 L192,102.5 L193.1,97.4 L194.2,92.5 L195.3,87.7 L196.4,83.2 L197.5,79.1 L198.6,75.3 L199.7,71.8 L200.8,68.9 L201.9,66.4 L203,64.4 L204.1,62.9 L205.2,62 L206.3,61.7 L207.4,61.9 L208.5,62.7 L209.6,64.2 L210.7,66.2 L211.8,68.7 L212.9,71.8 L214,75.5 L215.1,79.6 L216.2,84.2 L217.3,89.2 L218.4,94.6 L219.5,100.2 L220.6,106.2 L221.7,112.4 L222.8,118.7 L223.9,125.1 L225,131.5 L226.1,137.9 L227.2,144.2 L228.3,150.3 L229.4,156.1 L230.5,161.7 L231.6,166.9 L232.7,171.7 L233.8,176.1 L234.9,179.9 L236,183.2 L237.1,185.8 L238.2,187.9 L239.3,189.2 L240.4,189.9 L241.5,189.9 L242.6,189.2 L243.7,187.8 L244.8,185.7 L245.9,182.9 L247,179.5 L248.1,175.4 L249.2,170.7 L250.3,165.5 L251.4,159.7 L252.5,153.5 L253.6,146.9 L254.7,140 L255.8,132.8 L256.9,125.4 L258,117.8 L259.1,110.2 L260.2,102.7 L261.3,95.2 L262.4,87.9 L263.5,80.9 L264.6,74.2 L265.7,67.9 L266.8,62 L267.9,56.7 L269,51.9 L270.1,47.8 L271.2,44.4 L272.3,41.7 L273.4,39.8 L274.5,38.7 L275.6,38.3 L276.7,38.8 L277.8,40.1 L278.9,42.2 L280,45.1 L281.1,48.8 L282.2,53.3 L283.3,58.4 L284.4,64.2 L285.5,70.6 L286.6,77.6 L287.7,85.1 L288.8,93 L289.9,101.2 L291,109.7 L292.1,118.3 L293.2,127 L294.3,135.8 L295.4,144.5 L296.5,152.9 L297.6,161.2 L298.7,169.1 L299.8,176.5 L300.9,183.5 L302,189.9 L303.1,195.6 L304.2,200.6 L305.3,204.8 L306.4,208.3 L307.5,210.8 L308.6,212.5 L309.7,213.3 L310.8,213.1 L311.9,212 L313,210 L314.1,207.1 L315.2,203.2 L316.3,198.5 L317.4,193 L318.5,186.7 L319.6,179.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/></svg>",
+  "question": "A footbridge is modelled as a light oscillator. When people walk across it in step, its vertical displacement $x$ cm at time $t$ seconds satisfies\n$$\\frac{d^2x}{dt^2} + 4x = 3\\sin 2t$$\nwith $x = 0$ and $\\frac{dx}{dt} = 0$ when $t = 0$.\n\n(a) Find $x$ in terms of $t$.\n\n(b) The diagram shows the graph of your solution together with the lines $x = \\pm\\frac{3}{4}t$. Explain, with reference to your answer to (a), why the oscillations grow, and why engineers worry when the forcing frequency matches the bridge's natural frequency.",
+  "hint": "The forcing term $\\sin 2t$ is already in the CF $A\\cos 2t + B\\sin 2t$, so the PI must be $t(\\lambda\\cos 2t + \\mu\\sin 2t)$.",
+  "answer": "(a) $x = \\frac{3}{8}\\sin 2t - \\frac{3}{4}t\\cos 2t$ (b) The term $-\\frac{3}{4}t\\cos 2t$ has amplitude $\\frac{3}{4}t$, which grows without bound: resonance.",
+  "solution": "**(a)** CF: $m^2 + 4 = 0 \\Rightarrow m = \\pm 2i$, so CF $= A\\cos 2t + B\\sin 2t$.\n\n$\\sin 2t$ is in the CF, so try $x = t(\\lambda\\cos 2t + \\mu\\sin 2t)$:\n$$\\dot{x} = (\\lambda\\cos 2t + \\mu\\sin 2t) + t(-2\\lambda\\sin 2t + 2\\mu\\cos 2t)$$\n$$\\ddot{x} = 2(-2\\lambda\\sin 2t + 2\\mu\\cos 2t) + t(-4\\lambda\\cos 2t - 4\\mu\\sin 2t)$$\n$$\\ddot{x} + 4x = -4\\lambda\\sin 2t + 4\\mu\\cos 2t = 3\\sin 2t$$\n(the $t$ terms cancel). So $\\lambda = -\\frac{3}{4}$, $\\mu = 0$: PI $= -\\frac{3}{4}t\\cos 2t$.\n\nGeneral solution: $x = A\\cos 2t + B\\sin 2t - \\frac{3}{4}t\\cos 2t$.\n\n$x(0) = 0 \\Rightarrow A = 0$. $\\dot{x}(0) = 2B - \\frac{3}{4} = 0 \\Rightarrow B = \\frac{3}{8}$.\n$$x = \\tfrac{3}{8}\\sin 2t - \\tfrac{3}{4}t\\cos 2t$$\n\n**(b)** The $\\frac{3}{8}\\sin 2t$ term stays small, but $-\\frac{3}{4}t\\cos 2t$ oscillates between the lines $x = \\pm\\frac{3}{4}t$, so its amplitude increases linearly with time without limit. This is **resonance**: the forcing has angular frequency 2, exactly the natural frequency of the undamped system ($\\omega = 2$), so every push adds energy in step with the motion. In reality damping limits the growth, but large oscillations can still occur – which is why footbridges are fitted with dampers.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q14",
+  "topicId": "fur-second-order-de",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 11,
+  "calculator": false,
+  "question": "$$\\frac{d^2y}{dx^2} - 2\\frac{dy}{dx} + 5y = 5x + 8$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the general solution of the differential equation.",
+    "marks": 6
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $y = 3$ and $\\dfrac{dy}{dx} = 0$ when $x = 0$, find the particular solution.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Describe the behaviour of $y - (x + 2)$ as $x$ increases.",
+    "marks": 1
+   }
+  ],
+  "hint": "CF from the auxiliary equation (complex roots); for the PI try $y = px + q$. Apply the conditions to CF + PI.",
+  "answer": "(a) $y = e^{x}(A\\cos 2x + B\\sin 2x) + x + 2$ (b) $y = e^{x}(\\cos 2x - \\sin 2x) + x + 2$ (c) It oscillates with exponentially growing amplitude.",
+  "solution": "**(a)** Auxiliary equation $m^2 - 2m + 5 = 0$ **M1**\n\n$m = \\dfrac{2 \\pm \\sqrt{4 - 20}}{2} = 1 \\pm 2i$ **A1**\n\nCF: $y = e^{x}(A\\cos 2x + B\\sin 2x)$ **A1**\n\nPI: $y = px + q$, $y' = p$, $y'' = 0$: $-2p + 5px + 5q = 5x + 8$ **M1**\n\n$5p = 5 \\Rightarrow p = 1$; $5q - 2 = 8 \\Rightarrow q = 2$ **A1**\n\n$$y = e^{x}(A\\cos 2x + B\\sin 2x) + x + 2$$ **A1 ft** (their CF + their PI)\n\n**(b)** $y(0) = 3$: $A + 2 = 3 \\Rightarrow A = 1$ **B1**\n\n$y' = e^{x}(A\\cos 2x + B\\sin 2x) + e^{x}(-2A\\sin 2x + 2B\\cos 2x) + 1$ **M1** (product rule)\n\n$y'(0) = A + 2B + 1 = 0 \\Rightarrow B = -1$ **M1 A1**\n\n$$y = e^{x}(\\cos 2x - \\sin 2x) + x + 2$$\n\n**(c)** $y - (x + 2) = e^{x}(\\cos 2x - \\sin 2x) = \\sqrt{2}e^{x}\\cos\\left(2x + \\frac{\\pi}{4}\\right)$: it oscillates about 0 with amplitude $\\sqrt{2}e^{x}$ growing exponentially. **B1**",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q15",
+  "topicId": "fur-second-order-de",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "In a nature reserve, $x$ and $y$ are the numbers (in hundreds) by which the populations of rabbits and foxes exceed their long-term equilibrium levels, $t$ years after monitoring begins. A linear model is\n$$\\frac{dx}{dt} = 0.2x - 0.6y, \\qquad \\frac{dy}{dt} = 0.3x - 0.4y$$\nInitially $x = 6$ and $y = 1$.\n\n(a) Interpret the terms $-0.6y$ and $0.3x$ in context.\n\n(b) Show that $\\dfrac{d^2x}{dt^2} + 0.2\\dfrac{dx}{dt} + 0.1x = 0$.\n\n(c) Find $x$ in terms of $t$, and hence find $y$ in terms of $t$.\n\n(d) Describe what the model predicts for the two populations in the long term, and state the period of their oscillations to 3 significant figures.",
+  "hint": "(b) From the first equation $y = \\frac{0.2x - \\dot{x}}{0.6}$. Differentiate the first equation, then substitute for $\\dot{y}$ and $y$. (c) You need $\\dot{x}(0)$, which comes from the first equation at $t = 0$.",
+  "answer": "(a) More foxes than equilibrium reduce the rabbit population; more rabbits than equilibrium increase the fox population. (b) Shown (c) $x = e^{-0.1t}(6\\cos 0.3t + 4\\sin 0.3t)$, $y = e^{-0.1t}(\\cos 0.3t + 5\\sin 0.3t)$ (d) Both oscillate with decreasing amplitude and settle at their equilibrium levels; period $\\frac{2\\pi}{0.3} \\approx 20.9$ years.",
+  "solution": "**(a)** $-0.6y$: when foxes are above equilibrium ($y > 0$) they eat more rabbits, so the rabbit excess decreases. $0.3x$: when rabbits are above equilibrium there is more food, so the fox excess increases.\n\n**(b)** Differentiate the first equation:\n$$\\ddot{x} = 0.2\\dot{x} - 0.6\\dot{y} = 0.2\\dot{x} - 0.6(0.3x - 0.4y) = 0.2\\dot{x} - 0.18x + 0.24y$$\nFrom the first equation $0.6y = 0.2x - \\dot{x}$, so $0.24y = 0.4(0.2x - \\dot{x}) = 0.08x - 0.4\\dot{x}$:\n$$\\ddot{x} = 0.2\\dot{x} - 0.18x + 0.08x - 0.4\\dot{x} = -0.2\\dot{x} - 0.1x$$\n$$\\Rightarrow \\ddot{x} + 0.2\\dot{x} + 0.1x = 0 \\quad\\blacksquare$$\n\n**(c)** $m^2 + 0.2m + 0.1 = 0 \\Rightarrow m = \\dfrac{-0.2 \\pm \\sqrt{0.04 - 0.4}}{2} = -0.1 \\pm 0.3i$\n$$x = e^{-0.1t}(A\\cos 0.3t + B\\sin 0.3t)$$\n$x(0) = 6 \\Rightarrow A = 6$. $\\dot{x}(0) = 0.2(6) - 0.6(1) = 0.6$, and $\\dot{x}(0) = -0.1A + 0.3B$, so $-0.6 + 0.3B = 0.6 \\Rightarrow B = 4$.\n$$x = e^{-0.1t}(6\\cos 0.3t + 4\\sin 0.3t)$$\n\nThen $\\dot{x} = e^{-0.1t}\\left[-0.1(6\\cos 0.3t + 4\\sin 0.3t) + (-1.8\\sin 0.3t + 1.2\\cos 0.3t)\\right] = e^{-0.1t}(0.6\\cos 0.3t - 2.2\\sin 0.3t)$, and\n$$y = \\frac{0.2x - \\dot{x}}{0.6} = \\frac{e^{-0.1t}\\left[(1.2 - 0.6)\\cos 0.3t + (0.8 + 2.2)\\sin 0.3t\\right]}{0.6} = e^{-0.1t}(\\cos 0.3t + 5\\sin 0.3t)$$\nCheck: $y(0) = 1$ ✓\n\n**(d)** Both $x$ and $y$ contain the factor $e^{-0.1t} \\to 0$, so the populations oscillate about their equilibrium levels with decreasing amplitude and settle at equilibrium. The period of the oscillations is $\\frac{2\\pi}{0.3} \\approx 20.9$ years, and the fox cycle lags behind the rabbit cycle. (A linear model is only realistic near equilibrium.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-second-order-de-q16",
+  "topicId": "fur-second-order-de",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Show that the general solution of $\\dfrac{d^2y}{dx^2} - 4y = 0$ can be written as $y = C\\cosh 2x + D\\sinh 2x$, where $C$ and $D$ are constants.\n\n(b) Hence solve\n$$\\frac{d^2y}{dx^2} - 4y = 8$$\ngiven that $y = 0$ and $\\dfrac{dy}{dx} = 0$ when $x = 0$. Give your answer in terms of a hyperbolic function, and show that it can be written as $y = 4\\sinh^2 x$.",
+  "hint": "(a) Start from $Ae^{2x} + Be^{-2x}$ and use $e^{2x} = \\cosh 2x + \\sinh 2x$. (b) The PI is a constant. Then use $\\cosh 2x = 1 + 2\\sinh^2 x$.",
+  "answer": "(a) Shown, with $C = A + B$, $D = A - B$. (b) $y = 2\\cosh 2x - 2 = 4\\sinh^2 x$",
+  "solution": "**(a)** $m^2 - 4 = 0 \\Rightarrow m = \\pm 2$, so $y = Ae^{2x} + Be^{-2x}$. Since $e^{2x} = \\cosh 2x + \\sinh 2x$ and $e^{-2x} = \\cosh 2x - \\sinh 2x$:\n$$y = (A + B)\\cosh 2x + (A - B)\\sinh 2x = C\\cosh 2x + D\\sinh 2x$$\nwith $C = A + B$, $D = A - B$ arbitrary.\n\n**(b)** PI: try $y = k$: $0 - 4k = 8 \\Rightarrow k = -2$.\n\nGeneral solution: $y = C\\cosh 2x + D\\sinh 2x - 2$.\n\n$y(0) = 0$: $C - 2 = 0 \\Rightarrow C = 2$.\n$y' = 2C\\sinh 2x + 2D\\cosh 2x$, so $y'(0) = 2D = 0 \\Rightarrow D = 0$.\n$$y = 2\\cosh 2x - 2$$\n\nUsing $\\cosh 2x = 1 + 2\\sinh^2 x$ (Osborn's rule applied to $\\cos 2x = 1 - 2\\sin^2 x$):\n$$y = 2(1 + 2\\sinh^2 x) - 2 = 4\\sinh^2 x$$\n\nThe hyperbolic form makes the initial conditions easy, because $\\sinh 0 = 0$ and $\\cosh 0 = 1$.",
+  "linkedTopicIds": [
+   "fur-hyperbolic-functions"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-second-order-de-q17",
+  "topicId": "fur-second-order-de",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Given that $x = e^{u}$, where $x > 0$, show that\n$$x\\frac{dy}{dx} = \\frac{dy}{du} \\qquad\\text{and}\\qquad x^2\\frac{d^2y}{dx^2} = \\frac{d^2y}{du^2} - \\frac{dy}{du}$$\n\n(b) Hence show that the substitution $x = e^{u}$ transforms\n$$x^2\\frac{d^2y}{dx^2} - x\\frac{dy}{dx} - 3y = 5x^2$$\ninto $\\dfrac{d^2y}{du^2} - 2\\dfrac{dy}{du} - 3y = 5e^{2u}$.\n\n(c) Hence find the general solution of the original equation, giving $y$ in terms of $x$.",
+  "hint": "(a) Use the chain rule: $\\frac{dy}{du} = \\frac{dy}{dx}\\frac{dx}{du} = x\\frac{dy}{dx}$. Differentiate this again with respect to $u$, using the product rule.",
+  "answer": "(a) Shown (b) Shown (c) $y = Ax^3 + \\dfrac{B}{x} - \\dfrac{5}{3}x^2$",
+  "solution": "**(a)** $\\frac{dx}{du} = e^u = x$, so by the chain rule\n$$\\frac{dy}{du} = \\frac{dy}{dx}\\frac{dx}{du} = x\\frac{dy}{dx}$$\nDifferentiate with respect to $u$ (product rule, then chain rule):\n$$\\frac{d^2y}{du^2} = \\frac{dx}{du}\\frac{dy}{dx} + x\\frac{d}{du}\\left(\\frac{dy}{dx}\\right) = x\\frac{dy}{dx} + x \\times \\frac{d^2y}{dx^2}\\frac{dx}{du} = x\\frac{dy}{dx} + x^2\\frac{d^2y}{dx^2}$$\nSo $x^2\\frac{d^2y}{dx^2} = \\frac{d^2y}{du^2} - x\\frac{dy}{dx} = \\frac{d^2y}{du^2} - \\frac{dy}{du}$ $\\blacksquare$\n\n**(b)** Substitute, with $x^2 = e^{2u}$:\n$$\\left(\\frac{d^2y}{du^2} - \\frac{dy}{du}\\right) - \\frac{dy}{du} - 3y = 5e^{2u} \\Rightarrow \\frac{d^2y}{du^2} - 2\\frac{dy}{du} - 3y = 5e^{2u} \\quad\\blacksquare$$\n\n**(c)** Auxiliary equation $m^2 - 2m - 3 = (m - 3)(m + 1) = 0$, CF $= Ae^{3u} + Be^{-u}$.\n\nPI: $e^{2u}$ is not in the CF, so try $\\lambda e^{2u}$: $(4 - 4 - 3)\\lambda = 5 \\Rightarrow \\lambda = -\\frac{5}{3}$.\n\n$y = Ae^{3u} + Be^{-u} - \\frac{5}{3}e^{2u}$. With $e^u = x$:\n$$y = Ax^3 + \\frac{B}{x} - \\frac{5}{3}x^2$$\n\nCheck the PI: $y = -\\frac{5}{3}x^2$ gives $x^2\\left(-\\frac{10}{3}\\right) - x\\left(-\\frac{10}{3}x\\right) + 5x^2 = 5x^2$ ✓",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient"
+  ]
+ },
+ {
+  "id": "fur-second-order-de-q18",
+  "topicId": "fur-second-order-de",
+  "difficulty": 5,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 220\" width=\"330\" height=\"220\"><line x1=\"16\" y1=\"146.6\" x2=\"314\" y2=\"146.6\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M314,146.6 L307.6,149.3 L307.6,143.8 z\" fill=\"currentColor\"/><line x1=\"32.4\" y1=\"204\" x2=\"32.4\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M32.4,16 L35.1,22.4 L29.6,22.4 z\" fill=\"currentColor\"/><text x=\"312\" y=\"162.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">t</text><text x=\"40.4\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">x</text><text x=\"27.4\" y=\"161.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"97.9\" y1=\"148.8\" x2=\"97.9\" y2=\"144.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"97.9\" y=\"162.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"163.4\" y1=\"148.8\" x2=\"163.4\" y2=\"144.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"163.4\" y=\"162.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"228.9\" y1=\"148.8\" x2=\"228.9\" y2=\"144.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"228.9\" y=\"162.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"294.4\" y1=\"148.8\" x2=\"294.4\" y2=\"144.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"294.4\" y=\"162.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"28.8\" y1=\"42.1\" x2=\"35.9\" y2=\"42.1\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"26.4\" y=\"46.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"28.8\" y1=\"198.8\" x2=\"35.9\" y2=\"198.8\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"26.4\" y=\"202.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−0.5</text><line x1=\"28.8\" y1=\"94.3\" x2=\"35.9\" y2=\"94.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"26.4\" y=\"98.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.5</text><path d=\"M32.4,42.1 L34.1,42.4 L35.8,43.4 L37.5,44.9 L39.3,46.9 L41,49.4 L42.7,52.4 L44.4,55.9 L46.1,59.6 L47.8,63.8 L49.6,68.2 L51.3,72.8 L53,77.7 L54.7,82.7 L56.4,87.9 L58.2,93.1 L59.9,98.4 L61.6,103.7 L63.3,109 L65,114.3 L66.8,119.5 L68.5,124.6 L70.2,129.5 L71.9,134.3 L73.6,139 L75.4,143.4 L77.1,147.7 L78.8,151.7 L80.5,155.5 L82.2,159 L84,162.3 L85.7,165.3 L87.4,168 L89.1,170.5 L90.8,172.7 L92.5,174.6 L94.3,176.3 L96,177.7 L97.7,178.8 L99.4,179.7 L101.1,180.4 L102.9,180.8 L104.6,180.9 L106.3,180.9 L108,180.7 L109.7,180.2 L111.5,179.6 L113.2,178.8 L114.9,177.9 L116.6,176.8 L118.3,175.6 L120.1,174.3 L121.8,172.8 L123.5,171.3 L125.2,169.7 L126.9,168.1 L128.7,166.4 L130.4,164.7 L132.1,163 L133.8,161.2 L135.5,159.5 L137.2,157.7 L139,156 L140.7,154.3 L142.4,152.7 L144.1,151.1 L145.8,149.5 L147.6,148 L149.3,146.6 L151,145.3 L152.7,144 L154.4,142.8 L156.2,141.7 L157.9,140.7 L159.6,139.8 L161.3,138.9 L163,138.2 L164.8,137.5 L166.5,136.9 L168.2,136.4 L169.9,136 L171.6,135.7 L173.4,135.5 L175.1,135.3 L176.8,135.2 L178.5,135.2 L180.2,135.3 L181.9,135.4 L183.7,135.6 L185.4,135.8 L187.1,136.1 L188.8,136.5 L190.5,136.9 L192.3,137.3 L194,137.8 L195.7,138.2 L197.4,138.8 L199.1,139.3 L200.9,139.8 L202.6,140.4 L204.3,141 L206,141.5 L207.7,142.1 L209.5,142.7 L211.2,143.3 L212.9,143.8 L214.6,144.4 L216.3,144.9 L218.1,145.4 L219.8,145.9 L221.5,146.4 L223.2,146.8 L224.9,147.3 L226.6,147.7 L228.4,148 L230.1,148.4 L231.8,148.7 L233.5,149 L235.2,149.2 L237,149.5 L238.7,149.7 L240.4,149.8 L242.1,150 L243.8,150.1 L245.6,150.2 L247.3,150.2 L249,150.3 L250.7,150.3 L252.4,150.3 L254.2,150.2 L255.9,150.2 L257.6,150.1 L259.3,150 L261,149.9 L262.8,149.8 L264.5,149.7 L266.2,149.5 L267.9,149.3 L269.6,149.2 L271.3,149 L273.1,148.8 L274.8,148.6 L276.5,148.5 L278.2,148.3 L279.9,148.1 L281.7,147.9 L283.4,147.7 L285.1,147.5 L286.8,147.3 L288.5,147.2 L290.3,147 L292,146.8 L293.7,146.7 L295.4,146.5 L297.1,146.4 L298.9,146.2 L300.6,146.1 L302.3,146 L304,145.9 L305.7,145.8 L307.5,145.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><path d=\"M32.4,42.1 L34.1,42.4 L35.8,43.3 L37.5,44.6 L39.3,46.3 L41,48.4 L42.7,50.7 L44.4,53.2 L46.1,55.9 L47.8,58.7 L49.6,61.6 L51.3,64.6 L53,67.6 L54.7,70.6 L56.4,73.6 L58.2,76.6 L59.9,79.6 L61.6,82.5 L63.3,85.4 L65,88.2 L66.8,90.9 L68.5,93.5 L70.2,96.1 L71.9,98.6 L73.6,101 L75.4,103.3 L77.1,105.5 L78.8,107.6 L80.5,109.6 L82.2,111.6 L84,113.5 L85.7,115.3 L87.4,117 L89.1,118.6 L90.8,120.2 L92.5,121.6 L94.3,123 L96,124.4 L97.7,125.6 L99.4,126.8 L101.1,128 L102.9,129.1 L104.6,130.1 L106.3,131.1 L108,132 L109.7,132.8 L111.5,133.7 L113.2,134.4 L114.9,135.2 L116.6,135.9 L118.3,136.5 L120.1,137.1 L121.8,137.7 L123.5,138.2 L125.2,138.7 L126.9,139.2 L128.7,139.7 L130.4,140.1 L132.1,140.5 L133.8,140.9 L135.5,141.3 L137.2,141.6 L139,141.9 L140.7,142.2 L142.4,142.5 L144.1,142.7 L145.8,143 L147.6,143.2 L149.3,143.4 L151,143.6 L152.7,143.8 L154.4,144 L156.2,144.2 L157.9,144.3 L159.6,144.5 L161.3,144.6 L163,144.7 L164.8,144.8 L166.5,145 L168.2,145.1 L169.9,145.2 L171.6,145.2 L173.4,145.3 L175.1,145.4 L176.8,145.5 L178.5,145.6 L180.2,145.6 L181.9,145.7 L183.7,145.7 L185.4,145.8 L187.1,145.8 L188.8,145.9 L190.5,145.9 L192.3,146 L194,146 L195.7,146.1 L197.4,146.1 L199.1,146.1 L200.9,146.2 L202.6,146.2 L204.3,146.2 L206,146.2 L207.7,146.2 L209.5,146.3 L211.2,146.3 L212.9,146.3 L214.6,146.3 L216.3,146.3 L218.1,146.4 L219.8,146.4 L221.5,146.4 L223.2,146.4 L224.9,146.4 L226.6,146.4 L228.4,146.4 L230.1,146.4 L231.8,146.4 L233.5,146.4 L235.2,146.5 L237,146.5 L238.7,146.5 L240.4,146.5 L242.1,146.5 L243.8,146.5 L245.6,146.5 L247.3,146.5 L249,146.5 L250.7,146.5 L252.4,146.5 L254.2,146.5 L255.9,146.5 L257.6,146.5 L259.3,146.5 L261,146.5 L262.8,146.5 L264.5,146.5 L266.2,146.5 L267.9,146.5 L269.6,146.5 L271.3,146.5 L273.1,146.5 L274.8,146.5 L276.5,146.5 L278.2,146.5 L279.9,146.5 L281.7,146.5 L283.4,146.5 L285.1,146.5 L286.8,146.5 L288.5,146.5 L290.3,146.5 L292,146.5 L293.7,146.5 L295.4,146.5 L297.1,146.5 L298.9,146.5 L300.6,146.5 L302.3,146.5 L304,146.6 L305.7,146.6 L307.5,146.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 3\"/><path d=\"M32.4,42.1 L34.1,42.4 L35.8,43.2 L37.5,44.4 L39.3,45.8 L41,47.5 L42.7,49.3 L44.4,51.3 L46.1,53.3 L47.8,55.3 L49.6,57.4 L51.3,59.5 L53,61.6 L54.7,63.6 L56.4,65.7 L58.2,67.7 L59.9,69.7 L61.6,71.6 L63.3,73.5 L65,75.3 L66.8,77.2 L68.5,78.9 L70.2,80.7 L71.9,82.4 L73.6,84 L75.4,85.6 L77.1,87.2 L78.8,88.7 L80.5,90.2 L82.2,91.7 L84,93.1 L85.7,94.5 L87.4,95.8 L89.1,97.1 L90.8,98.4 L92.5,99.7 L94.3,100.9 L96,102.1 L97.7,103.2 L99.4,104.3 L101.1,105.4 L102.9,106.5 L104.6,107.5 L106.3,108.6 L108,109.5 L109.7,110.5 L111.5,111.4 L113.2,112.3 L114.9,113.2 L116.6,114.1 L118.3,114.9 L120.1,115.8 L121.8,116.5 L123.5,117.3 L125.2,118.1 L126.9,118.8 L128.7,119.5 L130.4,120.2 L132.1,120.9 L133.8,121.6 L135.5,122.2 L137.2,122.9 L139,123.5 L140.7,124.1 L142.4,124.7 L144.1,125.2 L145.8,125.8 L147.6,126.3 L149.3,126.8 L151,127.4 L152.7,127.8 L154.4,128.3 L156.2,128.8 L157.9,129.3 L159.6,129.7 L161.3,130.1 L163,130.6 L164.8,131 L166.5,131.4 L168.2,131.8 L169.9,132.2 L171.6,132.5 L173.4,132.9 L175.1,133.3 L176.8,133.6 L178.5,133.9 L180.2,134.3 L181.9,134.6 L183.7,134.9 L185.4,135.2 L187.1,135.5 L188.8,135.8 L190.5,136.1 L192.3,136.3 L194,136.6 L195.7,136.9 L197.4,137.1 L199.1,137.3 L200.9,137.6 L202.6,137.8 L204.3,138 L206,138.3 L207.7,138.5 L209.5,138.7 L211.2,138.9 L212.9,139.1 L214.6,139.3 L216.3,139.5 L218.1,139.7 L219.8,139.8 L221.5,140 L223.2,140.2 L224.9,140.3 L226.6,140.5 L228.4,140.7 L230.1,140.8 L231.8,141 L233.5,141.1 L235.2,141.2 L237,141.4 L238.7,141.5 L240.4,141.7 L242.1,141.8 L243.8,141.9 L245.6,142 L247.3,142.1 L249,142.3 L250.7,142.4 L252.4,142.5 L254.2,142.6 L255.9,142.7 L257.6,142.8 L259.3,142.9 L261,143 L262.8,143.1 L264.5,143.2 L266.2,143.2 L267.9,143.3 L269.6,143.4 L271.3,143.5 L273.1,143.6 L274.8,143.7 L276.5,143.7 L278.2,143.8 L279.9,143.9 L281.7,143.9 L283.4,144 L285.1,144.1 L286.8,144.1 L288.5,144.2 L290.3,144.3 L292,144.3 L293.7,144.4 L295.4,144.4 L297.1,144.5 L298.9,144.5 L300.6,144.6 L302.3,144.6 L304,144.7 L305.7,144.7 L307.5,144.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"2 3\"/><text x=\"133.9\" y=\"102.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text><text x=\"73\" y=\"81.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Q</text><text x=\"63.8\" y=\"190.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text></svg>",
+  "question": "A particle moves on a line with displacement $x$ from $O$ at time $t$, where\n$$\\frac{d^2x}{dt^2} + 2k\\frac{dx}{dt} + 9x = 0, \\quad k > 0$$\n\n(a) Find the ranges of values of $k$ for which the motion is heavily, critically and lightly damped.\n\n(b) The diagram shows $x$ against $t$ for $k = 1$, $k = 3$ and $k = 5$, each with $x = 1$ and $\\frac{dx}{dt} = 0$ at $t = 0$. Match the curves $P$, $Q$ and $R$ to the values of $k$, with reasons.\n\n(c) Prove that, if the motion is heavily damped and the particle is released from rest at $x = 1$, it never reaches $O$.\n\n(d) Now $k = 3$, and the particle is projected from $x = 1$ towards $O$ with speed $U$. Show that it passes through $O$ if and only if $U > 3$.",
+  "hint": "(a) Compare $(2k)^2$ with $4 \\times 9$. (c) Write the solution as $Ae^{m_1t} + Be^{m_2t}$ with $m_2 < m_1 < 0$, use the initial conditions, and look at when $x = 0$. (d) $x = (A + Bt)e^{-3t}$, and $e^{-3t}$ is never zero.",
+  "answer": "(a) Heavy $k > 3$, critical $k = 3$, light $0 < k < 3$. (b) $R$: $k = 1$ (oscillates); $Q$: $k = 3$ (fastest return without crossing); $P$: $k = 5$ (slowest return). (c) Proof. (d) $x = \\left(1 + (3 - U)t\\right)e^{-3t}$, which is zero at $t = \\frac{1}{U - 3}$, positive only if $U > 3$.",
+  "solution": "**(a)** Auxiliary equation $m^2 + 2km + 9 = 0$, discriminant $4k^2 - 36$.\n* Heavy (real distinct roots): $k^2 > 9$, i.e. $k > 3$.\n* Critical (repeated root): $k = 3$.\n* Light (complex roots): $0 < k < 3$.\n\n**(b)** $k = 1$ is lightly damped, so its graph oscillates about $O$ with decaying amplitude: **$R$** (the only curve going below the $t$-axis). $k = 3$ is critical: the fastest return to $O$ without crossing: **$Q$**. $k = 5$ is heavy: also no crossing, but the strong damping slows the return: **$P$**.\n\n**(c)** For $k > 3$ the roots $m_1, m_2$ are real, distinct and both negative (sum $-2k < 0$, product $9 > 0$); label them $m_2 < m_1 < 0$. With $x = Ae^{m_1t} + Be^{m_2t}$:\n$$A + B = 1, \\quad m_1A + m_2B = 0 \\Rightarrow A = \\frac{m_2}{m_2 - m_1}, \\; B = \\frac{-m_1}{m_2 - m_1}$$\nSo $x = 0$ requires $m_2e^{m_1t} = m_1e^{m_2t}$, i.e. $e^{(m_1 - m_2)t} = \\frac{m_1}{m_2}$.\n\nBut $0 < \\frac{m_1}{m_2} < 1$ (both negative, $|m_1| < |m_2|$), while $e^{(m_1 - m_2)t} \\ge 1$ for $t \\ge 0$ since $m_1 - m_2 > 0$. So there is no solution with $t \\ge 0$: the particle never reaches $O$. $\\blacksquare$\n\n**(d)** $k = 3$: $m = -3$ (repeated), $x = (A + Bt)e^{-3t}$. $x(0) = 1 \\Rightarrow A = 1$. Towards $O$ means $\\dot{x}(0) = -U$:\n$$\\dot{x}(0) = B - 3A = -U \\Rightarrow B = 3 - U$$\n$$x = \\left(1 + (3 - U)t\\right)e^{-3t}$$\nSince $e^{-3t} > 0$, $x = 0 \\iff 1 + (3 - U)t = 0 \\iff t = \\frac{1}{U - 3}$. This is a positive time if and only if $U > 3$. (If $U \\le 3$, $1 + (3 - U)t > 0$ for all $t \\ge 0$, so it never reaches $O$.) $\\blacksquare$",
+  "linkedTopicIds": []
+ }
+]
