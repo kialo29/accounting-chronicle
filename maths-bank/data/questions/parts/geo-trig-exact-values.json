@@ -1,0 +1,269 @@
+[
+ {
+  "id": "geo-trig-exact-values-q01",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Write down the exact value of each of the following.\n\n(a) $\\sin 30^\\circ$ (b) $\\cos 45^\\circ$ (c) $\\tan 60^\\circ$ (d) $\\sin 90^\\circ$ (e) $\\cos 0^\\circ$ (f) $\\tan 45^\\circ$",
+  "hint": "Sketch the two special triangles: half an equilateral triangle with sides $1, \\sqrt{3}, 2$, and a right-angled isosceles triangle with sides $1, 1, \\sqrt{2}$.",
+  "answer": "(a) $\\frac{1}{2}$ (b) $\\frac{\\sqrt{2}}{2}$ (c) $\\sqrt{3}$ (d) $1$ (e) $1$ (f) $1$",
+  "solution": "Use the triangles. In the $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle (sides $1, \\sqrt{3}, 2$) the side **opposite $30^\\circ$** is 1 and the side opposite $60^\\circ$ is $\\sqrt{3}$. In the $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle the legs are 1 and the hypotenuse is $\\sqrt{2}$.\n\n**(a)** $\\sin 30^\\circ = \\dfrac{1}{2}$\n\n**(b)** $\\cos 45^\\circ = \\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2}$\n\n**(c)** $\\tan 60^\\circ = \\dfrac{\\sqrt{3}}{1} = \\sqrt{3}$\n\n**(d)** $\\sin 90^\\circ = 1$ (as an angle grows to $90^\\circ$, the opposite side becomes the whole hypotenuse)\n\n**(e)** $\\cos 0^\\circ = 1$ (with a zero angle the adjacent side is the whole hypotenuse)\n\n**(f)** $\\tan 45^\\circ = \\dfrac{1}{1} = 1$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q02",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Without a calculator, work out the exact value of $6\\sin 30^\\circ$.",
+  "hint": "Replace $\\sin 30^\\circ$ by its exact value, then multiply.",
+  "answer": "$3$",
+  "solution": "$$6\\sin 30^\\circ = 6 \\times \\frac{1}{2} = 3$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q03",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Without a calculator, work out the exact value of $6\\cos 30^\\circ$.",
+  "hint": "Is $\\cos 30^\\circ$ the smaller or the larger of the two values $\\frac{1}{2}$ and $\\frac{\\sqrt{3}}{2}$?",
+  "answer": "$3\\sqrt{3}$",
+  "solution": "**What changed:** sine became cosine. In the $1, \\sqrt{3}, 2$ triangle the side adjacent to $30^\\circ$ is $\\sqrt{3}$, so $\\cos 30^\\circ = \\dfrac{\\sqrt{3}}{2}$.\n$$6\\cos 30^\\circ = 6 \\times \\frac{\\sqrt{3}}{2} = 3\\sqrt{3}$$\n\nThis is bigger than $6\\sin 30^\\circ = 3$, because $\\cos 30^\\circ > \\sin 30^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q04",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Without a calculator, work out the exact value of $6\\tan 30^\\circ$. Give your answer in its simplest surd form.",
+  "hint": "$\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$. Rationalise the denominator.",
+  "answer": "$2\\sqrt{3}$",
+  "solution": "**What changed:** cosine became tangent.\n$$\\tan 30^\\circ = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}$$\n\n$$6\\tan 30^\\circ = 6 \\times \\frac{\\sqrt{3}}{3} = 2\\sqrt{3}$$\n\n(Equivalently $\\dfrac{6}{\\sqrt{3}} = \\dfrac{6\\sqrt{3}}{3} = 2\\sqrt{3}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q05",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Without a calculator, work out the exact value of $\\dfrac{6}{\\tan 30^\\circ}$. Give your answer in its simplest surd form.",
+  "hint": "Dividing by $\\frac{1}{\\sqrt{3}}$ is the same as multiplying by $\\sqrt{3}$.",
+  "answer": "$6\\sqrt{3}$",
+  "solution": "**What changed:** we now divide by $\\tan 30^\\circ$ instead of multiplying.\n$$\\frac{6}{\\tan 30^\\circ} = \\frac{6}{\\frac{1}{\\sqrt{3}}} = 6 \\times \\sqrt{3} = 6\\sqrt{3}$$\n\nThis is 3 times the previous answer $2\\sqrt{3}$, since dividing by $\\frac{1}{\\sqrt{3}}$ multiplies by $\\sqrt{3}$ instead of dividing by it. (It also equals $6\\tan 60^\\circ$, because $\\tan 60^\\circ = \\frac{1}{\\tan 30^\\circ}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q06",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "An isosceles right-angled triangle has two shorter sides of 5 cm. Ollie works out the hypotenuse:\n\n\"The hypotenuse is always double the shortest side in a special triangle, so the hypotenuse is $2 \\times 5 = 10$ cm.\"\n\nExplain Ollie's mistake and find the exact length of the hypotenuse.",
+  "hint": "Which special triangle has the hypotenuse equal to double a side? What are the angles of an isosceles right-angled triangle?",
+  "answer": "Ollie used the $30^\\circ$-$60^\\circ$-$90^\\circ$ rule. The triangle is $45^\\circ$-$45^\\circ$-$90^\\circ$, so the hypotenuse is $5\\sqrt{2}$ cm.",
+  "solution": "\"Hypotenuse $= 2 \\times$ shortest side\" is only true in a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle (sides $x, x\\sqrt{3}, 2x$).\n\nAn isosceles right-angled triangle has angles $45^\\circ, 45^\\circ, 90^\\circ$, with sides $x, x, x\\sqrt{2}$. So the hypotenuse is\n$$5\\sqrt{2} \\text{ cm} \\approx 7.07 \\text{ cm}$$\n\nCheck with Pythagoras: $5^2 + 5^2 = 50$ and $\\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$. Ollie's 10 cm would need $10^2 = 100 \\ne 50$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q07",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 189\" width=\"350\" height=\"189\"><path d=\"M60 149.1 L275 25 L275 149.1 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M263 149.1 L263 137.1 L275 137.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M90 149.1 A30 30 0 0 0 86 134.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"106.4\" y=\"136.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><text x=\"167.5\" y=\"166.1\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"154.1\" y=\"63.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">10 cm</text></svg>",
+  "question": "Lily finds the exact value of $x$ in the triangle shown.\n\n$$\\cos 30^\\circ = \\frac{x}{10}$$\n$$x = 10\\cos 30^\\circ = 10 \\times \\frac{1}{2} = 5 \\text{ cm}$$\n\nFind Lily's mistake and give the correct exact value of $x$.",
+  "hint": "Her first line is correct. Check the exact value she used for $\\cos 30^\\circ$.",
+  "answer": "Lily used $\\cos 30^\\circ = \\frac{1}{2}$, which is $\\cos 60^\\circ$. Correct: $x = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}$ cm.",
+  "solution": "Lily set up the equation correctly: $x$ is adjacent to $30^\\circ$ and 10 cm is the hypotenuse, so cosine is right.\n\nHer mistake is the value $\\cos 30^\\circ = \\frac{1}{2}$. She has swapped the $30^\\circ$ and $60^\\circ$ values: $\\frac{1}{2}$ is $\\sin 30^\\circ$ (and $\\cos 60^\\circ$).\n\nIn the $1, \\sqrt{3}, 2$ triangle the side adjacent to $30^\\circ$ is $\\sqrt{3}$, so $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$.\n$$x = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3} \\text{ cm} \\approx 8.66 \\text{ cm}$$\n\nSense check from the diagram: $x$ is the longer of the two legs, so it should be more than half the hypotenuse.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q08",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 200\" width=\"300\" height=\"200\"><path d=\"M60 50 L60 160 L250.5 160 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M60 148 L72 148 L72 160\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M60 70 A20 20 0 0 0 77.3 60\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"78\" y=\"81.2\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">60°</text><path d=\"M216.5 160 A34 34 0 0 1 221.1 143\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"200.3\" y=\"146.5\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><text x=\"49.5\" y=\"37.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text><text x=\"46.1\" y=\"168\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">Q</text><text x=\"265.9\" y=\"164.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><text x=\"168.7\" y=\"81.8\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">10 cm</text></svg>",
+  "question": "In triangle $PQR$, angle $Q = 90^\\circ$, angle $P = 60^\\circ$, angle $R = 30^\\circ$ and $PR = 10$ cm.\n\nNoah writes:\n\n\"The sides are $x$, $x\\sqrt{3}$ and $2x$, so $2x = 10$ and $x = 5$. The side opposite $30^\\circ$ is $PQ = 5\\sqrt{3}$ cm and the side opposite $60^\\circ$ is $QR = 5$ cm.\"\n\nIdentify Noah's error and give the correct lengths of $PQ$ and $QR$.",
+  "hint": "Which side is the shortest: the one opposite the smallest angle or the one opposite the largest acute angle?",
+  "answer": "Noah put the $\\sqrt{3}$ side opposite $30^\\circ$. Correct: $PQ = 5$ cm (opposite $30^\\circ$) and $QR = 5\\sqrt{3}$ cm (opposite $60^\\circ$).",
+  "solution": "Noah's first step is right: the hypotenuse is $2x = 10$, so $x = 5$.\n\nHis error is matching the sides to the angles. In any triangle the **shortest side is opposite the smallest angle**. So the side opposite $30^\\circ$ is the short side $x$, and the side opposite $60^\\circ$ is $x\\sqrt{3}$.\n\n* $PQ$ is opposite angle $R = 30^\\circ$: $PQ = 5$ cm.\n* $QR$ is opposite angle $P = 60^\\circ$: $QR = 5\\sqrt{3}$ cm.\n\nCheck: $\\sin 30^\\circ = \\dfrac{PQ}{PR} = \\dfrac{5}{10} = \\dfrac{1}{2}$ ✓ and $5^2 + (5\\sqrt{3})^2 = 25 + 75 = 100 = 10^2$ ✓.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q09",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Sam says: \"$60^\\circ$ is double $30^\\circ$, so $\\sin 60^\\circ = 2 \\times \\sin 30^\\circ = 2 \\times \\frac{1}{2} = 1$.\"\n\n(a) Give the correct exact value of $\\sin 60^\\circ$.\n\n(b) Use Sam's method to predict $\\sin 90^\\circ$, and explain why this shows that his method cannot be right.",
+  "hint": "For (b): $90^\\circ = 3 \\times 30^\\circ$. What is the largest value the sine of an angle in a right-angled triangle can have?",
+  "answer": "(a) $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$ (b) Sam's method gives $\\sin 90^\\circ = \\frac{3}{2}$, but sine can never exceed 1 (the opposite side can't be longer than the hypotenuse), so doubling or tripling the angle does not double or triple the sine.",
+  "solution": "**(a)** In the half-equilateral triangle with sides $1, \\sqrt{3}, 2$, the side opposite $60^\\circ$ is $\\sqrt{3}$:\n$$\\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\approx 0.866$$\n\nNot 1. (If $\\sin 60^\\circ$ were 1, the opposite side would equal the hypotenuse.)\n\n**(b)** Sam's method would give\n$$\\sin 90^\\circ = 3 \\times \\sin 30^\\circ = \\frac{3}{2}$$\n\nBut $\\sin\\theta = \\frac{\\text{opposite}}{\\text{hypotenuse}}$, and the opposite side can never be longer than the hypotenuse, so a sine can never be bigger than 1. In fact $\\sin 90^\\circ = 1$.\n\nThe trig functions are **not** proportional to the angle: $\\sin(2\\theta) \\ne 2\\sin\\theta$ in general. Sine grows quickly at first and then levels off as the angle approaches $90^\\circ$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q10",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) An equilateral triangle has sides of length 2. By cutting it in half, show that $\\sin 60^\\circ = \\dfrac{\\sqrt{3}}{2}$ and $\\tan 30^\\circ = \\dfrac{\\sqrt{3}}{3}$.\n\n(b) Using a suitable right-angled triangle, show that $\\cos 45^\\circ = \\dfrac{\\sqrt{2}}{2}$.\n\n(c) Explain why $\\tan 90^\\circ$ has no value.",
+  "hint": "The line of symmetry of the equilateral triangle meets the base at right angles and halves it. Use Pythagoras to find its length.",
+  "answer": "(a) Half-triangle has sides $1, \\sqrt{3}, 2$, so $\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$ and $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}$. (b) Legs 1, 1, hypotenuse $\\sqrt{2}$, so $\\cos 45^\\circ = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$. (c) $\\tan 90^\\circ$ would need division by an adjacent side of length 0.",
+  "solution": "**(a)** All angles of an equilateral triangle are $60^\\circ$. The line of symmetry from the top vertex meets the base at $90^\\circ$, cuts the base into two lengths of 1, and halves the top angle into $30^\\circ$. So each half is a right-angled triangle with hypotenuse 2, short side 1, and angles $30^\\circ, 60^\\circ, 90^\\circ$.\n\nHeight by Pythagoras:\n$$h = \\sqrt{2^2 - 1^2} = \\sqrt{3}$$\n\nThe height is opposite the $60^\\circ$ angle:\n$$\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$$\n\nFor the $30^\\circ$ angle, the opposite side is 1 and the adjacent side is $\\sqrt{3}$:\n$$\\tan 30^\\circ = \\frac{1}{\\sqrt{3}} = \\frac{1 \\times \\sqrt{3}}{\\sqrt{3} \\times \\sqrt{3}} = \\frac{\\sqrt{3}}{3}$$\n\n**(b)** Take a right-angled isosceles triangle with legs 1. Its angles are $45^\\circ, 45^\\circ, 90^\\circ$ and its hypotenuse is $\\sqrt{1^2 + 1^2} = \\sqrt{2}$.\n$$\\cos 45^\\circ = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}$$\n\n**(c)** As an angle $\\theta$ in a right-angled triangle with a fixed hypotenuse grows towards $90^\\circ$, the adjacent side shrinks towards 0. At $90^\\circ$ we would need $\\tan 90^\\circ = \\frac{\\text{opposite}}{0}$, and division by zero is undefined. (Equivalently $\\tan 90^\\circ = \\frac{\\sin 90^\\circ}{\\cos 90^\\circ} = \\frac{1}{0}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q11",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 240 247\" width=\"240\" height=\"247\"><path d=\"M60 206.9 L165 25 L165 206.9 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M153 206.9 L153 194.9 L165 194.9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M90 206.9 A30 30 0 0 0 75 180.9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"101.6\" y=\"182.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">60°</text><text x=\"181.2\" y=\"115.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"112.5\" y=\"223.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text></svg>",
+  "question": "You must not use a calculator in this question.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the exact value of $\\cos 30^\\circ$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "The diagram shows a right-angled triangle. Work out the exact value of $x$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Show that $\\tan^2 30^\\circ + \\tan^2 60^\\circ = \\dfrac{10}{3}$.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (b), relative to the $60^\\circ$ angle, $x$ is opposite and 5 cm is adjacent. In (c), $\\tan^2\\theta$ means $(\\tan\\theta)^2$.",
+  "answer": "(a) $\\frac{\\sqrt{3}}{2}$ (b) $x = 5\\sqrt{3}$ cm (c) Shown: $\\frac{1}{3} + 3 = \\frac{10}{3}$",
+  "solution": "**(a)** $\\cos 30^\\circ = \\dfrac{\\sqrt{3}}{2}$ B1\n\n**(b)** Opposite and adjacent, so tangent:\n$$\\tan 60^\\circ = \\frac{x}{5} \\Rightarrow x = 5\\tan 60^\\circ \\quad \\text{M1}$$\n$$x = 5\\sqrt{3} \\text{ cm} \\quad \\text{A1}$$\n\n**(c)**\n$$\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}, \\quad \\tan 60^\\circ = \\sqrt{3} \\quad \\text{M1 (both values)}$$\n$$\\left(\\frac{1}{\\sqrt{3}}\\right)^2 + (\\sqrt{3})^2 = \\frac{1}{3} + 3 = \\frac{1}{3} + \\frac{9}{3} = \\frac{10}{3} \\quad \\text{A1}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q12",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 190\" width=\"350\" height=\"190\"><path d=\"M40 150 L310 150 L175 72.1 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M175 72.1 L175 150\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M175 141 L184 141 L184 150\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M80 150 A40 40 0 0 0 74.6 130\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"98\" y=\"141\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><path d=\"M270 150 A40 40 0 0 1 275.4 130\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"252\" y=\"141\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><text x=\"175\" y=\"172\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">9 m</text><text x=\"185\" y=\"115\" text-anchor=\"start\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">h</text><text x=\"251.7\" y=\"95.1\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">r</text></svg>",
+  "question": "A builder is making a symmetrical roof truss. The truss is a triangle with a horizontal base of 9 m, and each sloping side (rafter) makes an angle of $30^\\circ$ with the horizontal.\n\n(a) Find the exact height $h$ of the truss.\n\n(b) Find the exact length $r$ of each rafter.\n\nGive your answers in simplest surd form.",
+  "hint": "The vertical line of symmetry splits the truss into two right-angled triangles, each with a horizontal side of 4.5 m and an angle of $30^\\circ$.",
+  "answer": "(a) $h = \\frac{3\\sqrt{3}}{2}$ m (b) $r = 3\\sqrt{3}$ m",
+  "solution": "The line of symmetry splits the base into two halves of 4.5 m, giving right-angled triangles with angle $30^\\circ$ and adjacent side 4.5 m.\n\n**(a)** $h$ is opposite $30^\\circ$:\n$$h = 4.5\\tan 30^\\circ = \\frac{9}{2} \\times \\frac{\\sqrt{3}}{3} = \\frac{9\\sqrt{3}}{6} = \\frac{3\\sqrt{3}}{2} \\text{ m} \\approx 2.60 \\text{ m}$$\n\n**(b)** $r$ is the hypotenuse:\n$$\\cos 30^\\circ = \\frac{4.5}{r} \\Rightarrow r = \\frac{4.5}{\\frac{\\sqrt{3}}{2}} = \\frac{9}{\\sqrt{3}} = \\frac{9\\sqrt{3}}{3} = 3\\sqrt{3} \\text{ m} \\approx 5.20 \\text{ m}$$\n\nCheck using the $x, x\\sqrt{3}, 2x$ pattern: the side opposite $30^\\circ$ is $x = \\frac{3\\sqrt{3}}{2}$, so the side opposite $60^\\circ$ is $x\\sqrt{3} = \\frac{9}{2} = 4.5$ ✓ and the hypotenuse is $2x = 3\\sqrt{3}$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-trig-exact-values-q13",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 4,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><path d=\"M25 220 L300 220\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M190 220 L190 76\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"4\"/><path d=\"M190 76 L46 220\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M190 76 L273.1 220\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M190 208 L202 208 L202 220\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M76 220 A30 30 0 0 0 67.2 198.8\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"90\" y=\"207\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">45°</text><path d=\"M249.1 220 A24 24 0 0 1 261.1 199.2\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"237.1\" y=\"206\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">60°</text><text x=\"166\" y=\"178\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">12 m</text><text x=\"46\" y=\"234\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">X</text><text x=\"273.1\" y=\"234\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">Y</text><text x=\"190\" y=\"64\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">T</text></svg>",
+  "question": "A vertical mast $T$ is 12 m tall and stands on level ground. Two straight wires run from the top of the mast to the points $X$ and $Y$ on the ground, on opposite sides of the mast. Wire $TX$ makes an angle of $45^\\circ$ with the ground and wire $TY$ makes an angle of $60^\\circ$ with the ground.\n\n(a) Find the exact distance $XY$.\n\n(b) Find the exact total length of wire used. Give your answer in the form $a\\sqrt{2} + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "hint": "Split the figure into two right-angled triangles at the foot of the mast. In each one, the mast (12 m) is opposite the given angle.",
+  "answer": "(a) $XY = 12 + 4\\sqrt{3}$ m (b) $12\\sqrt{2} + 8\\sqrt{3}$ m",
+  "solution": "Let $F$ be the foot of the mast.\n\n**(a)** In triangle $TFX$ (angle $45^\\circ$), this is a $45^\\circ$-$45^\\circ$-$90^\\circ$ triangle, so $XF = TF = 12$ m.\n\nIn triangle $TFY$ (angle $60^\\circ$), the mast is opposite $60^\\circ$ and $FY$ is adjacent:\n$$FY = \\frac{12}{\\tan 60^\\circ} = \\frac{12}{\\sqrt{3}} = \\frac{12\\sqrt{3}}{3} = 4\\sqrt{3} \\text{ m}$$\n\n$$XY = 12 + 4\\sqrt{3} \\text{ m} \\approx 18.9 \\text{ m}$$\n\n**(b)** In the $45^\\circ$ triangle the hypotenuse is $12\\sqrt{2}$, so $TX = 12\\sqrt{2}$ m.\n\nIn the $60^\\circ$ triangle:\n$$TY = \\frac{12}{\\sin 60^\\circ} = \\frac{12}{\\frac{\\sqrt{3}}{2}} = \\frac{24}{\\sqrt{3}} = \\frac{24\\sqrt{3}}{3} = 8\\sqrt{3} \\text{ m}$$\n\n(Check: $FY = 4\\sqrt{3}$ is the side opposite $30^\\circ$, so $TY = 2 \\times 4\\sqrt{3} = 8\\sqrt{3}$ ✓.)\n\nTotal wire:\n$$12\\sqrt{2} + 8\\sqrt{3} \\text{ m} \\approx 30.8 \\text{ m}$$",
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-trig-exact-values-q14",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-polygon-angles",
+   "geo-perimeter-area"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"340\" height=\"280\"><path d=\"M290 140 L230 36.1 L110 36.1 L50 140 L110 243.9 L230 243.9 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M170 140 L290 140\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M170 140 L230 36.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M170 140 L110 36.1\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M170 140 L50 140\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M170 140 L110 243.9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M170 140 L230 243.9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><text x=\"170\" y=\"260.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">6 cm</text></svg>",
+  "question": "(a) Show that an equilateral triangle with sides of length $2a$ has area $\\sqrt{3}a^2$.\n\n(b) The diagram shows a regular hexagon with sides of 6 cm. Find the exact area of the hexagon.",
+  "hint": "Cut the equilateral triangle in half to make a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle and find the height. A regular hexagon splits into six equilateral triangles.",
+  "answer": "(a) Shown: height $a\\sqrt{3}$, area $\\frac{1}{2} \\times 2a \\times a\\sqrt{3} = \\sqrt{3}a^2$. (b) $54\\sqrt{3} \\text{ cm}^2$",
+  "solution": "**(a)** Halve the equilateral triangle with its line of symmetry. Each half has hypotenuse $2a$, base $a$ and angles $30^\\circ, 60^\\circ, 90^\\circ$. By the $x, x\\sqrt{3}, 2x$ pattern with $x = a$, the height (opposite $60^\\circ$) is $a\\sqrt{3}$.\n$$\\text{Area} = \\frac{1}{2} \\times 2a \\times a\\sqrt{3} = \\sqrt{3}a^2 \\qquad \\blacksquare$$\n\n**(b)** The angles at the centre of a regular hexagon are $360^\\circ \\div 6 = 60^\\circ$. Each of the six triangles is isosceles with apex angle $60^\\circ$, so its base angles are $(180^\\circ - 60^\\circ) \\div 2 = 60^\\circ$: the triangles are equilateral with side 6 cm.\n\nUsing (a) with $2a = 6$, $a = 3$:\n$$\\text{each triangle} = \\sqrt{3} \\times 3^2 = 9\\sqrt{3} \\text{ cm}^2$$\n\n$$\\text{hexagon} = 6 \\times 9\\sqrt{3} = 54\\sqrt{3} \\text{ cm}^2 \\approx 93.5 \\text{ cm}^2$$"
+ },
+ {
+  "id": "geo-trig-exact-values-q15",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "question": "Without a calculator, show that\n$$\\frac{1 + \\tan 60^\\circ}{1 - \\tan 30^\\circ} = 3 + 2\\sqrt{3}$$",
+  "hint": "Substitute the exact values, clear the fraction inside the denominator by multiplying top and bottom by $\\sqrt{3}$, then rationalise the denominator.",
+  "answer": "Shown: $\\dfrac{1 + \\sqrt{3}}{1 - \\frac{1}{\\sqrt{3}}} = \\dfrac{\\sqrt{3} + 3}{\\sqrt{3} - 1} = \\dfrac{(3 + \\sqrt{3})(\\sqrt{3} + 1)}{2} = 3 + 2\\sqrt{3}$",
+  "solution": "Substitute $\\tan 60^\\circ = \\sqrt{3}$ and $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$:\n$$\\frac{1 + \\sqrt{3}}{1 - \\frac{1}{\\sqrt{3}}}$$\n\nMultiply top and bottom by $\\sqrt{3}$:\n$$= \\frac{\\sqrt{3} + 3}{\\sqrt{3} - 1}$$\n\nRationalise by multiplying top and bottom by $\\sqrt{3} + 1$:\n$$= \\frac{(3 + \\sqrt{3})(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)}$$\n\nNumerator: $3\\sqrt{3} + 3 + 3 + \\sqrt{3} = 6 + 4\\sqrt{3}$. Denominator: $3 - 1 = 2$.\n$$= \\frac{6 + 4\\sqrt{3}}{2} = 3 + 2\\sqrt{3} \\qquad \\blacksquare$$\n\nCheck: $3 + 2\\sqrt{3} \\approx 6.46$, and $\\frac{1 + 1.732}{1 - 0.577} = \\frac{2.732}{0.423} \\approx 6.46$ ✓."
+ },
+ {
+  "id": "geo-trig-exact-values-q16",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 140\" width=\"360\" height=\"140\"><path d=\"M38.9 110 L330 110 L330 32 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M330 32 L194.9 110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M330 98 L318 98 L318 110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M224.9 110 A30 30 0 0 0 220.9 95\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"238.9\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><path d=\"M108.9 110 A70 70 0 0 0 106.5 91.9\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"38.9\" y=\"126\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"194.9\" y=\"126\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text><text x=\"334\" y=\"126\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><text x=\"342\" y=\"26\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><text x=\"344\" y=\"71\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><text x=\"262.5\" y=\"126\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">√3</text><text x=\"271.5\" y=\"83\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">2</text></svg>",
+  "question": "In the diagram, $ACD$ is a right-angled triangle with $AC = 1$, $CD = \\sqrt{3}$, $AD = 2$ and angle $ADC = 30^\\circ$. The side $CD$ is extended to $B$ so that $DB = DA = 2$.\n\n(a) Show that angle $ABC = 15^\\circ$.\n\n(b) Hence show that $\\tan 15^\\circ = 2 - \\sqrt{3}$.\n\n(c) Find the exact value of $\\tan 75^\\circ$.",
+  "hint": "Triangle $ABD$ is isosceles. Angle $ADC$ is an exterior angle of triangle $ABD$. For (c), what is the other acute angle of triangle $ABC$?",
+  "answer": "(a) Shown (b) Shown (c) $\\tan 75^\\circ = 2 + \\sqrt{3}$",
+  "solution": "**(a)** Triangle $ABD$ has $DA = DB$, so it is isosceles and angle $DAB$ = angle $DBA$. Call each $y$.\n\nAngle $ADC = 30^\\circ$ is the exterior angle of triangle $ABD$ at $D$, so it equals the sum of the two opposite interior angles:\n$$y + y = 30^\\circ \\Rightarrow y = 15^\\circ$$\n\nSo angle $ABC = 15^\\circ$. $\\blacksquare$\n\n**(b)** In the right-angled triangle $ABC$: $AC = 1$ is opposite the $15^\\circ$ angle and $BC = BD + DC = 2 + \\sqrt{3}$ is adjacent.\n$$\\tan 15^\\circ = \\frac{1}{2 + \\sqrt{3}}$$\n\nRationalise:\n$$\\frac{1}{2 + \\sqrt{3}} \\times \\frac{2 - \\sqrt{3}}{2 - \\sqrt{3}} = \\frac{2 - \\sqrt{3}}{4 - 3} = 2 - \\sqrt{3} \\qquad \\blacksquare$$\n\n**(c)** The other acute angle of triangle $ABC$ is $BAC = 90^\\circ - 15^\\circ = 75^\\circ$. For it, opposite and adjacent swap:\n$$\\tan 75^\\circ = \\frac{BC}{AC} = \\frac{2 + \\sqrt{3}}{1} = 2 + \\sqrt{3}$$\n\nCheck: $2 - \\sqrt{3} \\approx 0.268$ and $\\tan 15^\\circ \\approx 0.268$ ✓. Note $\\tan 15^\\circ \\ne \\frac{1}{2}\\tan 30^\\circ \\approx 0.289$.",
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-trig-exact-values-q17",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-sequences-quadratic-geometric"
+  ],
+  "question": "A spiral is made from a chain of $30^\\circ$-$60^\\circ$-$90^\\circ$ triangles. The first triangle has hypotenuse 64 cm. The **longer** of the two shorter sides of each triangle is used as the hypotenuse of the next triangle.\n\n(a) Show that the hypotenuses form a geometric sequence and state its common ratio.\n\n(b) Find the exact hypotenuse of the 7th triangle.\n\n(c) Which is the first triangle whose hypotenuse is less than 10 cm?",
+  "hint": "In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with hypotenuse $H$, the longer leg is $H\\cos 30^\\circ$.",
+  "answer": "(a) Each hypotenuse is $\\frac{\\sqrt{3}}{2}$ times the previous one, so ratio $r = \\frac{\\sqrt{3}}{2}$. (b) 27 cm (c) The 14th triangle",
+  "solution": "**(a)** In a $30^\\circ$-$60^\\circ$-$90^\\circ$ triangle with hypotenuse $H$, the longer leg is opposite $60^\\circ$:\n$$H\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}H$$\n\nSo each hypotenuse is $\\frac{\\sqrt{3}}{2}$ times the one before: a geometric sequence with first term 64 and common ratio $r = \\frac{\\sqrt{3}}{2}$.\n\n$$H_n = 64\\left(\\frac{\\sqrt{3}}{2}\\right)^{n-1}$$\n\n**(b)**\n$$H_7 = 64\\left(\\frac{\\sqrt{3}}{2}\\right)^6 = 64 \\times \\frac{(\\sqrt{3})^6}{2^6} = 64 \\times \\frac{27}{64} = 27 \\text{ cm}$$\n\n**(c)** Use $r^2 = \\frac{3}{4}$, so every two steps multiply the hypotenuse by $0.75$:\n$$H_9 = 27 \\times 0.75 = 20.25, \\quad H_{11} = 15.1875, \\quad H_{13} = 11.390625$$\n\n$$H_{14} = H_{13} \\times \\frac{\\sqrt{3}}{2} = 11.390625 \\times 0.8660\\ldots = 9.864\\ldots$$\n\n$H_{13} > 10$ but $H_{14} < 10$, so the 14th triangle is the first with hypotenuse less than 10 cm."
+ },
+ {
+  "id": "geo-trig-exact-values-q18",
+  "topicId": "geo-trig-exact-values",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "geo-circles",
+   "geo-area-triangle-sine"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"340\" height=\"280\"><circle cx=\"170\" cy=\"140\" r=\"110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><path d=\"M170 140 L280 140 L265.3 85 Z\" stroke=\"currentColor\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke-width=\"1.5\"/><path d=\"M280 140 L265.3 85 L225 44.7 L170 30 L115 44.7 L74.7 85 L60 140 L74.7 195 L115 235.3 L170 250 L225 235.3 L265.3 195 Z\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"156\" y=\"144\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><path d=\"M200 140 A30 30 0 0 0 196 125\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"214\" y=\"128\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">30°</text><text x=\"225\" y=\"153\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">r</text></svg>",
+  "question": "A regular 12-sided polygon (dodecagon) is drawn inside a circle of radius $r$, with all its vertices on the circle. $O$ is the centre of the circle.\n\n(a) Show that the area of the dodecagon is exactly $3r^2$.\n\n(b) Hence prove that $\\pi > 3$.",
+  "hint": "Split the dodecagon into 12 congruent triangles meeting at $O$. In the shaded triangle, take one radius as the base and find the perpendicular height to it from the opposite vertex using the $30^\\circ$ angle.",
+  "answer": "(a) Each triangle has area $\\frac{1}{2} \\times r \\times r\\sin 30^\\circ = \\frac{r^2}{4}$, so the dodecagon has area $12 \\times \\frac{r^2}{4} = 3r^2$. (b) The dodecagon lies inside the circle, so $3r^2 < \\pi r^2$, giving $\\pi > 3$.",
+  "solution": "**(a)** Joining $O$ to the 12 vertices gives 12 congruent isosceles triangles, each with two sides $r$ and an angle of $360^\\circ \\div 12 = 30^\\circ$ at $O$.\n\nIn the shaded triangle, take one radius as the base. The perpendicular height from the other vertex to this radius forms a right-angled triangle with hypotenuse $r$ and angle $30^\\circ$, so\n$$\\text{height} = r\\sin 30^\\circ = \\frac{r}{2}$$\n\n$$\\text{Area of one triangle} = \\frac{1}{2} \\times r \\times \\frac{r}{2} = \\frac{r^2}{4}$$\n\n(Equivalently, $\\frac{1}{2}ab\\sin C = \\frac{1}{2}r^2\\sin 30^\\circ$.)\n\n$$\\text{Area of dodecagon} = 12 \\times \\frac{r^2}{4} = 3r^2 \\qquad \\blacksquare$$\n\n**(b)** The dodecagon lies entirely inside the circle and does not fill it (the 12 small segments between the sides and the circle are left over). So\n$$3r^2 < \\pi r^2$$\n\nDividing by $r^2 > 0$:\n$$3 < \\pi \\qquad \\blacksquare$$\n\nThe exact value $\\sin 30^\\circ = \\frac{1}{2}$ is what makes the area come out as a whole-number multiple of $r^2$."
+ }
+]

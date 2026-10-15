@@ -1,0 +1,296 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text></svg>",
+  "question": "The Venn diagram shows the number of elements in each region for two sets $A$ and $B$.\n\nOne element is chosen at random from $\\xi$. Find $P(A \\cap B)$.",
+  "hint": "$\\cap$ means \"and\": the element must be in **both** circles. First add up every number in the diagram to find $n(\\xi)$.",
+  "answer": "$P(A \\cap B) = \\dfrac{6}{30} = \\dfrac{1}{5}$",
+  "solution": "Total number of elements (include the number outside both circles):\n$$n(\\xi) = 9 + 6 + 11 + 4 = 30$$\n\n$A \\cap B$ is the overlap, where elements are in $A$ **and** in $B$: $n(A \\cap B) = 6$.\n\n$$P(A \\cap B) = \\frac{6}{30} = \\frac{1}{5}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q01",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text></svg>",
+  "question": "The Venn diagram is the same as in the previous question.\n\nOne element is chosen at random from $\\xi$. Find $P(A \\cup B)$.",
+  "hint": "$\\cup$ means \"or\": in $A$, in $B$, or in both. Which regions are inside at least one circle?",
+  "answer": "$P(A \\cup B) = \\dfrac{26}{30} = \\dfrac{13}{15}$",
+  "solution": "**What changed:** the symbol $\\cap$ (and) has become $\\cup$ (or), so we now want everything inside **either** circle, not just the overlap.\n\n$A \\cup B$ is made of three regions: $A$ only, the overlap and $B$ only:\n$$n(A \\cup B) = 9 + 6 + 11 = 26$$\n\n$n(\\xi) = 30$, so\n$$P(A \\cup B) = \\frac{26}{30} = \\frac{13}{15}$$\n\nThe union is bigger than the intersection, as it must be: the intersection is part of the union.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q02",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text></svg>",
+  "question": "The Venn diagram is the same as in the previous questions.\n\nOne element is chosen at random from $\\xi$. Find $P(A')$.",
+  "hint": "$A'$ means \"not in $A$\". Look at every region that is outside circle $A$, including the region outside both circles.",
+  "answer": "$P(A') = \\dfrac{15}{30} = \\dfrac{1}{2}$",
+  "solution": "**What changed:** instead of combining two sets, we now want the complement of one set.\n\n$A'$ is everything in $\\xi$ that is **not** in circle $A$. That is the \"$B$ only\" region **and** the region outside both circles:\n$$n(A') = 11 + 4 = 15$$\n\nCheck: $n(A) = 9 + 6 = 15$ and $30 - 15 = 15$ ✓\n\n$$P(A') = \\frac{15}{30} = \\frac{1}{2}$$\n\nA common error is to count only the 11 in \"$B$ only\" and forget the 4 outside both circles.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q03",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text></svg>",
+  "question": "The Venn diagram is the same as in the previous questions.\n\nOne element is chosen at random from $\\xi$. Find $P(A' \\cap B)$.",
+  "hint": "Read it as \"not in $A$ **and** in $B$\". Which region is inside $B$ but outside $A$?",
+  "answer": "$P(A' \\cap B) = \\dfrac{11}{30}$",
+  "solution": "**What changed:** we now intersect the complement $A'$ (from the last question) with $B$.\n\n$A'$ = the regions $11$ and $4$. $B$ = the regions $6$ and $11$.\n\nThe only region in both is the \"$B$ only\" region:\n$$n(A' \\cap B) = 11$$\n\n$$P(A' \\cap B) = \\frac{11}{30}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q04",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$\\xi = \\{1, 2, 3, \\dots, 15\\}$\n\n$A = \\{\\text{prime numbers}\\}$ and $B = \\{\\text{odd numbers}\\}$\n\n(a) List the elements of $A \\cap B$.\n\n(b) List the elements of $A \\cup B$.",
+  "hint": "Write out $A$ and $B$ in full first. Remember that 1 is not a prime number, and 2 is prime but not odd.",
+  "answer": "(a) $A \\cap B = \\{3, 5, 7, 11, 13\\}$ (b) $A \\cup B = \\{1, 2, 3, 5, 7, 9, 11, 13, 15\\}$",
+  "solution": "First list each set:\n$$A = \\{2, 3, 5, 7, 11, 13\\}, \\quad B = \\{1, 3, 5, 7, 9, 11, 13, 15\\}$$\n\n(a) $A \\cap B$ means in $A$ **and** in $B$: the odd primes.\n$$A \\cap B = \\{3, 5, 7, 11, 13\\}$$\n\n(b) $A \\cup B$ means in $A$ **or** $B$ (or both). Combine the lists, writing each number only once:\n$$A \\cup B = \\{1, 2, 3, 5, 7, 9, 11, 13, 15\\}$$\n\nCheck: $n(A \\cup B) = n(A) + n(B) - n(A \\cap B) = 6 + 8 - 5 = 9$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q05",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "In a survey of 40 people, 23 own a dog, 15 own a cat and 6 own both a dog and a cat.\n\n(a) Draw a Venn diagram to show this information.\n\n(b) One of the 40 people is chosen at random. Find the probability that they own neither a dog nor a cat.\n\n(c) Find the probability that the person owns exactly one of the two types of pet.",
+  "hint": "Start in the middle with the 6 who own both, then subtract to find \"dog only\" and \"cat only\".",
+  "answer": "(a) Dog only 17, both 6, cat only 9, neither 8 (b) $\\dfrac{8}{40} = \\dfrac{1}{5}$ (c) $\\dfrac{26}{40} = \\dfrac{13}{20}$",
+  "solution": "(a) Let $D$ = owns a dog and $C$ = owns a cat, with $n(\\xi) = 40$.\n\nOverlap first: $n(D \\cap C) = 6$\n\nDog only: $23 - 6 = 17$\n\nCat only: $15 - 6 = 9$\n\nNeither: $40 - 17 - 6 - 9 = 8$\n\nSo the diagram has 17 in \"$D$ only\", 6 in the overlap, 9 in \"$C$ only\" and 8 outside both circles.\n\n(b) $$P(\\text{neither}) = \\frac{8}{40} = \\frac{1}{5}$$\n\n(c) Exactly one type of pet means dog only **or** cat only (not the overlap):\n$$P(\\text{exactly one}) = \\frac{17 + 9}{40} = \\frac{26}{40} = \\frac{13}{20}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q06",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">F</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">T</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">28</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">19</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text></svg>",
+  "question": "In a year group of 60 students, 28 play football ($F$), 19 play tennis ($T$) and 7 play both.\n\nEllie draws the Venn diagram shown and says:\n\n\"The number who play neither is $60 - 28 - 7 - 19 = 6$, so $P(\\text{neither}) = \\dfrac{6}{60} = \\dfrac{1}{10}$.\"\n\n(a) Explain the mistake Ellie has made.\n\n(b) Work out the correct probability that a student chosen at random plays neither sport.",
+  "hint": "Add up all the numbers inside Ellie's circle $F$. Should that total be 28?",
+  "answer": "(a) She put the totals 28 and 19 in the \"only\" regions without subtracting the 7 who play both. (b) $P(\\text{neither}) = \\dfrac{20}{60} = \\dfrac{1}{3}$",
+  "solution": "(a) In Ellie's diagram the whole of circle $F$ contains $28 + 7 = 35$ students, but only 28 play football. She has written the **total** for each sport in the \"only\" region instead of subtracting the 7 who play both, so the 7 are counted twice.\n\n(b) Fill the overlap first, then subtract:\n\nFootball only: $28 - 7 = 21$\n\nTennis only: $19 - 7 = 12$\n\nNeither: $60 - 21 - 7 - 12 = 20$\n\nCheck: circle $F$ now holds $21 + 7 = 28$ ✓ and circle $T$ holds $12 + 7 = 19$ ✓\n\n$$P(\\text{neither}) = \\frac{20}{60} = \\frac{1}{3}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q07",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$\\xi = \\{1, 2, 3, \\dots, 20\\}$\n\n$A = \\{\\text{multiples of 4}\\}$ and $B = \\{\\text{factors of 24}\\}$\n\nA number is chosen at random from $\\xi$. Omar's working to find $P(A \\cup B)$ is shown below.\n\n$A = \\{4, 8, 12, 16, 20\\}$, so $P(A) = \\dfrac{5}{20}$\n\n$B = \\{1, 2, 3, 4, 6, 8, 12\\}$, so $P(B) = \\dfrac{7}{20}$\n\n$P(A \\cup B) = \\dfrac{5}{20} + \\dfrac{7}{20} = \\dfrac{12}{20} = \\dfrac{3}{5}$\n\n(a) Identify Omar's error and explain why it gives the wrong answer.\n\n(b) Find the correct value of $P(A \\cup B)$.",
+  "hint": "Are there any numbers that appear in both of Omar's lists? How many times has he counted them?",
+  "answer": "(a) He added $P(A)$ and $P(B)$, so the 3 numbers in $A \\cap B = \\{4, 8, 12\\}$ were counted twice. (b) $P(A \\cup B) = \\dfrac{9}{20}$",
+  "solution": "Omar's lists for $A$ and $B$ are correct. His error is in the last line.\n\n(a) Adding $P(A) + P(B)$ only works if the sets have no elements in common. Here $A \\cap B = \\{4, 8, 12\\}$, so these three numbers are counted once in $A$ and again in $B$: they have been **double counted**.\n\n(b) Either list the union, writing each number once:\n$$A \\cup B = \\{1, 2, 3, 4, 6, 8, 12, 16, 20\\}, \\quad n(A \\cup B) = 9$$\n\nor subtract the overlap once:\n$$n(A \\cup B) = 5 + 7 - 3 = 9$$\n\n$$P(A \\cup B) = \\frac{9}{20}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q08",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sasha makes two statements about any two sets $A$ and $B$ in a universal set $\\xi$.\n\n**Statement 1:** \"Every element of $A \\cap B$ is also an element of $A \\cup B$.\"\n\n**Statement 2:** \"$n(A \\cup B) = n(A) + n(B)$ only when $A$ and $B$ have no elements in common.\"\n\nIs each statement true? Justify your answers, using a Venn diagram argument.",
+  "hint": "Label the regions of a two-set Venn diagram $p$ ($A$ only), $q$ (both), $r$ ($B$ only). Write $n(A)$, $n(B)$, $n(A \\cap B)$ and $n(A \\cup B)$ in terms of $p$, $q$ and $r$.",
+  "answer": "Both statements are true. Statement 1: an element in both sets is certainly in at least one. Statement 2: $n(A) + n(B) = n(A \\cup B) + n(A \\cap B)$, so the two sides are equal exactly when $n(A \\cap B) = 0$.",
+  "solution": "Let the numbers of elements in the regions be $p$ ($A$ only), $q$ ($A \\cap B$) and $r$ ($B$ only).\n\n**Statement 1.** $A \\cap B$ is the overlap region. $A \\cup B$ is everything inside at least one circle, i.e. the regions $p$, $q$ and $r$, which **includes** the overlap. An element in both $A$ and $B$ is certainly in \"$A$ or $B$\". So Statement 1 is **true**: $A \\cap B$ is always a subset of $A \\cup B$ (and so $n(A \\cap B) \\le n(A \\cup B)$).\n\n**Statement 2.** From the diagram:\n$$n(A) + n(B) = (p + q) + (q + r) = (p + q + r) + q = n(A \\cup B) + n(A \\cap B)$$\n\nSo $n(A \\cup B) = n(A) + n(B)$ exactly when $q = n(A \\cap B) = 0$, that is, when $A$ and $B$ have no elements in common (the circles do not overlap). If there is any overlap, adding $n(A)$ and $n(B)$ counts those $q$ elements twice. Statement 2 is **true**.\n\nExample: $A = \\{1, 2, 3\\}$, $B = \\{3, 4\\}$ gives $n(A) + n(B) = 5$ but $A \\cup B = \\{1, 2, 3, 4\\}$ has 4 elements, because 3 is in both.",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q09",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "$n(\\xi) = 50$, $n(A) = 26$, $n(B) = 31$ and $n((A \\cup B)') = 5$.\n\nAn element is chosen at random from $\\xi$.\n\n(a) Find $P(A \\cap B')$.\n\n(b) Find the probability that the element is in exactly one of the sets $A$ and $B$.",
+  "hint": "$(A \\cup B)'$ is the region outside both circles, so you can find $n(A \\cup B)$. Then $n(A) + n(B)$ counts the overlap twice.",
+  "answer": "(a) $\\dfrac{14}{50} = \\dfrac{7}{25}$ (b) $\\dfrac{33}{50}$",
+  "solution": "Outside both circles there are 5 elements, so\n$$n(A \\cup B) = 50 - 5 = 45$$\n\n$n(A) + n(B) = 26 + 31 = 57$, which is 12 more than 45. Those 12 elements have been counted twice, so\n$$n(A \\cap B) = 57 - 45 = 12$$\n\nNow fill the diagram: $A$ only $= 26 - 12 = 14$, $B$ only $= 31 - 12 = 19$.\n\nCheck: $14 + 12 + 19 + 5 = 50$ ✓\n\n(a) $A \\cap B'$ means in $A$ but not in $B$, the \"$A$ only\" region:\n$$P(A \\cap B') = \\frac{14}{50} = \\frac{7}{25}$$\n\n(b) Exactly one set means $A$ only or $B$ only:\n$$P = \\frac{14 + 19}{50} = \\frac{33}{50}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q10",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text></svg>",
+  "question": "$\\xi = \\{1, 2, 3, \\dots, 16\\}$\n\n$A = \\{\\text{odd numbers}\\}$\n\n$B = \\{\\text{square numbers}\\}$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Complete the Venn diagram.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "A number is chosen at random from $\\xi$. Find $P(A \\cap B)$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "A number is chosen at random from $\\xi$. Find $P(A' \\cup B)$.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "hint": "List $A$ and $B$ first, then place the numbers that are in both. Every number from 1 to 16 must appear exactly once in the diagram.",
+  "answer": "(a) $A \\cap B$: 1, 9; $A$ only: 3, 5, 7, 11, 13, 15; $B$ only: 4, 16; outside: 2, 6, 8, 10, 12, 14 (b) $\\dfrac{2}{16} = \\dfrac{1}{8}$ (c) $\\dfrac{10}{16} = \\dfrac{5}{8}$",
+  "solution": "(a) $A = \\{1, 3, 5, 7, 9, 11, 13, 15\\}$ and $B = \\{1, 4, 9, 16\\}$.\n\nOverlap $A \\cap B = \\{1, 9\\}$\n\n$A$ only: 3, 5, 7, 11, 13, 15\n\n$B$ only: 4, 16\n\nOutside both: 2, 6, 8, 10, 12, 14\n\nB3 for a fully correct diagram (B2 for at least 3 regions correct; B1 for $A \\cap B$ correct or for $A$ and $B$ listed correctly)\n\n(b) $$P(A \\cap B) = \\frac{2}{16} = \\frac{1}{8}$$ B1 (oe)\n\n(c) $A' \\cup B$ is \"not odd, **or** square\": the even numbers together with the square numbers.\n\n$A'$ = $\\{2, 4, 6, 8, 10, 12, 14, 16\\}$ (8 numbers); adding the elements of $B$ not already listed, 1 and 9, gives 10 numbers. M1 for identifying the regions (outside, $B$ only, $A \\cap B$)\n\n$$P(A' \\cup B) = \\frac{10}{16} = \\frac{5}{8}$$ A1 (oe)",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q11",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 290\" width=\"330\" height=\"290\"><rect x=\"10\" y=\"10\" width=\"310\" height=\"270\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"130\" cy=\"112\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"200\" cy=\"112\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"165\" cy=\"172\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"68\" y=\"54\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">F</text><text x=\"262\" y=\"54\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">S</text><text x=\"233\" y=\"234\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">M</text></svg>",
+  "question": "80 people were asked whether they like films ($F$), sport ($S$) and music ($M$).\n\n4 people like all three.\n12 people like films and sport.\n10 people like films and music.\n7 people like sport and music.\n40 people like films, 30 like sport and 25 like music.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Complete the Venn diagram to show this information.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "One of the 80 people is chosen at random. Work out the probability that this person likes exactly one of films, sport and music.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out $P(S \\cap F')$.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "hint": "Start with the centre (all three). \"12 like films and sport\" includes the 4 who like all three, so subtract before filling each two-set overlap.",
+  "answer": "(a) $F$ only 22, $S$ only 15, $M$ only 12, $F$ and $S$ only 8, $F$ and $M$ only 6, $S$ and $M$ only 3, all three 4, none 10 (b) $\\dfrac{49}{80}$ (c) $\\dfrac{18}{80} = \\dfrac{9}{40}$",
+  "solution": "(a) Centre: $n(F \\cap S \\cap M) = 4$ B1\n\nTwo-set overlaps (excluding the centre):\n\n$F$ and $S$ only: $12 - 4 = 8$; $F$ and $M$ only: $10 - 4 = 6$; $S$ and $M$ only: $7 - 4 = 3$ M1\n\n\"Only\" regions:\n\n$F$ only: $40 - 8 - 6 - 4 = 22$\n\n$S$ only: $30 - 8 - 3 - 4 = 15$\n\n$M$ only: $25 - 6 - 3 - 4 = 12$ M1\n\nInside the circles: $22 + 15 + 12 + 8 + 6 + 3 + 4 = 70$, so none: $80 - 70 = 10$ A1\n\n(b) Exactly one: $22 + 15 + 12 = 49$ M1\n$$P = \\frac{49}{80}$$ A1\n\n(c) $S \\cap F'$ is \"sport but not films\": $S$ only $+$ ($S$ and $M$ only) $= 15 + 3 = 18$\n$$P(S \\cap F') = \\frac{18}{80} = \\frac{9}{40}$$ B1 (ft from their diagram)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q12",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A gym has 1200 members. For a member chosen at random:\n\n- the probability that they use the pool is $0.45$\n- the probability that they use the weights room is $0.6$\n- the probability that they use neither is $0.15$\n\n(a) Find the probability that a member uses both the pool and the weights room.\n\n(b) Find the probability that a member uses exactly one of these facilities.\n\n(c) Estimate the number of members who use the pool but not the weights room.",
+  "hint": "$0.45 + 0.6$ is more than 1, so some members must have been counted twice. What is $P(\\text{pool} \\cup \\text{weights})$?",
+  "answer": "(a) $0.2$ (b) $0.65$ (c) 300 members",
+  "solution": "Let $P$ = uses the pool, $W$ = uses the weights room.\n\n(a) $P(P \\cup W) = 1 - 0.15 = 0.85$\n\n$P(P) + P(W) = 0.45 + 0.6 = 1.05$. This counts members who use both twice, so\n$$P(P \\cap W) = 1.05 - 0.85 = 0.2$$\n\n(b) Pool only: $0.45 - 0.2 = 0.25$. Weights only: $0.6 - 0.2 = 0.4$.\n\nCheck: $0.25 + 0.2 + 0.4 + 0.15 = 1$ ✓\n\n$$P(\\text{exactly one}) = 0.25 + 0.4 = 0.65$$\n\n(c) Pool but not weights is the \"pool only\" region, probability $0.25$:\n$$0.25 \\times 1200 = 300 \\text{ members}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q13",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">3x</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">x</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">2x + 5</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text></svg>",
+  "linkedTopicIds": [
+   "alg-forming-equations",
+   "alg-linear-equations"
+  ],
+  "question": "The Venn diagram shows the number of elements in each region for sets $A$ and $B$. $n(\\xi) = 48$.\n\n(a) Find the value of $x$.\n\n(b) An element is chosen at random from $\\xi$. Find $P(B)$.\n\n(c) Find $P(A \\cup B)$.",
+  "hint": "All four regions together make up $\\xi$, so their expressions must add to 48.",
+  "answer": "(a) $x = 6$ (b) $P(B) = \\dfrac{23}{48}$ (c) $P(A \\cup B) = \\dfrac{41}{48}$",
+  "solution": "(a) The regions add up to $n(\\xi)$:\n$$3x + x + (2x + 5) + 7 = 48$$\n$$6x + 12 = 48$$\n$$6x = 36 \\quad\\Rightarrow\\quad x = 6$$\n\nSo $A$ only $= 18$, $A \\cap B = 6$, $B$ only $= 17$, outside $= 7$. Check: $18 + 6 + 17 + 7 = 48$ ✓\n\n(b) Circle $B$ is the overlap plus \"$B$ only\":\n$$n(B) = 6 + 17 = 23, \\quad P(B) = \\frac{23}{48}$$\n\n(c) Everything inside either circle:\n$$n(A \\cup B) = 18 + 6 + 17 = 41, \\quad P(A \\cup B) = \\frac{41}{48}$$\n\n(Or $1 - \\frac{7}{48} = \\frac{41}{48}$.)",
+  "misconceptionIds": [],
+  "id": "prob-venn-set-notation-q14",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"125\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"195\" cy=\"100\" r=\"65\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"24\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ξ</text><text x=\"74.3\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">A</text><text x=\"245.7\" y=\"43.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" font-style=\"italic\">B</text><text x=\"95\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"160\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">x</text><text x=\"225\" y=\"105\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"290\" y=\"178\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text></svg>",
+  "linkedTopicIds": [
+   "prob-tree-diagrams",
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "The Venn diagram shows the number of elements in each region for sets $A$ and $B$.\n\nTwo **different** elements are chosen at random from $\\xi$. The probability that both are elements of $A \\cap B$ is $\\dfrac{1}{14}$.\n\n(a) Show that $13x^2 - 43x - 210 = 0$.\n\n(b) Hence find the value of $x$.\n\n(c) One element is now chosen at random from $\\xi$. Find $P(A \\cup B)$.",
+  "hint": "$n(\\xi) = x + 15$. Choosing two different elements is like picking without replacement: multiply the probability for the first by the probability for the second.",
+  "answer": "(a) Shown (b) $x = 6$ (c) $P(A \\cup B) = \\dfrac{18}{21} = \\dfrac{6}{7}$",
+  "solution": "(a) $n(\\xi) = 5 + x + 7 + 3 = x + 15$.\n\nFirst element in $A \\cap B$: $\\dfrac{x}{x + 15}$. One such element has gone, so the second is in $A \\cap B$ with probability $\\dfrac{x - 1}{x + 14}$.\n\n$$\\frac{x}{x + 15} \\times \\frac{x - 1}{x + 14} = \\frac{1}{14}$$\n\nCross-multiply:\n$$14x(x - 1) = (x + 15)(x + 14)$$\n$$14x^2 - 14x = x^2 + 29x + 210$$\n$$13x^2 - 43x - 210 = 0 \\quad \\text{as required}$$\n\n(b) Factorise: $(x - 6)(13x + 35) = 0$ (check: $13x^2 + 35x - 78x - 210 = 13x^2 - 43x - 210$ ✓)\n\n$x = 6$ or $x = -\\dfrac{35}{13}$. A number of elements must be a non-negative whole number, so $x = 6$.\n\nCheck: $n(\\xi) = 21$ and $\\frac{6}{21} \\times \\frac{5}{20} = \\frac{30}{420} = \\frac{1}{14}$ ✓\n\n(c) $n(A \\cup B) = 5 + 6 + 7 = 18$:\n$$P(A \\cup B) = \\frac{18}{21} = \\frac{6}{7}$$",
+  "misconceptionIds": [],
+  "id": "prob-venn-set-notation-q15",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "There are 30 students in a class. 21 of them study History and 17 study Geography. Every student may study one, both or neither subject.\n\n(a) What is the smallest possible number of students who study both subjects? Explain your answer.\n\n(b) What is the largest possible number of students who study both subjects? Explain your answer.\n\n(c) In fact, the probability that a student chosen at random studies neither subject is $\\dfrac{1}{10}$. Find the probability that a student chosen at random studies both subjects.",
+  "hint": "$21 + 17 = 38$, but there are only 30 students. What does that tell you about the overlap? For the largest overlap, think about which circle could fit entirely inside the other.",
+  "answer": "(a) 8 (b) 17 (c) $\\dfrac{11}{30}$",
+  "solution": "Let $b$ be the number studying both. Then $n(H \\cup G) = 21 + 17 - b = 38 - b$.\n\n(a) $n(H \\cup G)$ cannot be more than 30, so $38 - b \\le 30$, giving $b \\ge 8$. The value 8 is possible: 13 History only, 8 both, 9 Geography only, 0 neither (total 30). Smallest: **8**.\n\n(b) The overlap cannot be bigger than either set, so $b \\le 17$. The value 17 is possible: all 17 Geography students also study History, giving 4 History only, 17 both, 0 Geography only and 9 neither. Largest: **17**.\n\n(c) Neither: $\\frac{1}{10} \\times 30 = 3$ students, so $n(H \\cup G) = 27$.\n$$38 - b = 27 \\quad\\Rightarrow\\quad b = 11$$\n\nCheck: History only 10, both 11, Geography only 6, neither 3; total 30 ✓\n$$P(\\text{both}) = \\frac{11}{30}$$",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q16",
+  "topicId": "prob-venn-set-notation"
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "In a survey of 100 students, 70 like maths, 75 like science and 80 like art.\n\nKai says: \"We can't know how many like all three subjects, but it must be at least 25.\"\n\n(a) Prove that at least 25 students must like all three subjects.\n\n(b) Show, by describing a possible three-set Venn diagram, that exactly 25 is possible.",
+  "hint": "Think about the complements. How many students do **not** like maths? Not science? Not art? A student who does not like all three subjects must be in at least one of these complements.",
+  "answer": "(a) $n(M') + n(S') + n(A') = 30 + 25 + 20 = 75$, so at most 75 students fail to like at least one subject, and at least $100 - 75 = 25$ like all three. (b) e.g. all three 25, maths and science only 20, maths and art only 25, science and art only 30, every other region 0.",
+  "solution": "(a) Use complements (remember $M'$ is everyone in $\\xi$ outside circle $M$):\n$$n(M') = 100 - 70 = 30, \\quad n(S') = 100 - 75 = 25, \\quad n(A') = 100 - 80 = 20$$\n\nA student who does **not** like all three subjects is in at least one of $M'$, $S'$, $A'$. So\n$$n(M' \\cup S' \\cup A') \\le 30 + 25 + 20 = 75$$\n(with equality only if no student is in two complements). Therefore\n$$n(M \\cap S \\cap A) = 100 - n(M' \\cup S' \\cup A') \\ge 100 - 75 = 25$$\n\n(b) To reach 25 exactly, the three complements must not overlap, and nobody can be in \"none\" (that student would be in all three complements). Put:\n\n- $M \\cap S \\cap A$: 25\n- Science and art only (dislikes maths): 30\n- Maths and art only (dislikes science): 25\n- Maths and science only (dislikes art): 20\n- every other region (one subject only, none): 0\n\nCheck the totals: maths $25 + 25 + 20 = 70$ ✓, science $25 + 30 + 20 = 75$ ✓, art $25 + 30 + 25 = 80$ ✓, and $25 + 30 + 25 + 20 = 100$ students ✓\n\nSo the minimum number liking all three is exactly 25, and Kai is correct.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-venn-set-notation-q17",
+  "topicId": "prob-venn-set-notation"
+ }
+]
