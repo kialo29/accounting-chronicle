@@ -1,0 +1,281 @@
+[
+ {
+  "id": "fur-roots-of-polynomials-q01",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) The roots of $3z^2 - 5z + 7 = 0$ are $\\alpha$ and $\\beta$. Write down the values of $\\alpha + \\beta$ and $\\alpha\\beta$.\n\n(b) A polynomial equation $p(z) = 0$ has degree 5 and real coefficients.\n\n(i) How many complex roots does it have, counting repeated roots?\n\n(ii) Explain why the number of real roots (counting repeats) must be 1, 3 or 5.",
+  "hint": "(a) $\\alpha + \\beta = -\\frac{b}{a}$ and $\\alpha\\beta = \\frac{c}{a}$. (b) Use the fundamental theorem of algebra and the conjugate root theorem.",
+  "answer": "(a) $\\alpha + \\beta = \\dfrac{5}{3}$, $\\alpha\\beta = \\dfrac{7}{3}$ (b)(i) 5 (ii) non-real roots come in conjugate pairs, so there are 0, 2 or 4 of them",
+  "solution": "(a) $a = 3$, $b = -5$, $c = 7$:\n$$\\alpha + \\beta = -\\frac{b}{a} = -\\frac{-5}{3} = \\frac{5}{3}, \\qquad \\alpha\\beta = \\frac{c}{a} = \\frac{7}{3}$$\n\n(b)(i) By the fundamental theorem of algebra, a polynomial of degree 5 has exactly 5 complex roots, counting repeats.\n\n(ii) The coefficients are real, so by the conjugate root theorem every non-real root $\\alpha$ comes with its conjugate $\\alpha^* \\ne \\alpha$. The non-real roots therefore come in pairs, so there are 0, 2 or 4 of them, leaving $5$, $3$ or $1$ real roots.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q02",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The roots of $z^3 - 4z^2 + 6z - 9 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Write down the values of\n$$\\alpha + \\beta + \\gamma, \\qquad \\alpha\\beta + \\beta\\gamma + \\gamma\\alpha, \\qquad \\alpha\\beta\\gamma$$",
+  "hint": "For $az^3 + bz^2 + cz + d = 0$: $\\sum\\alpha = -\\frac{b}{a}$, $\\sum\\alpha\\beta = \\frac{c}{a}$, $\\alpha\\beta\\gamma = -\\frac{d}{a}$.",
+  "answer": "$\\sum\\alpha = 4$, $\\sum\\alpha\\beta = 6$, $\\alpha\\beta\\gamma = 9$",
+  "solution": "$a = 1$, $b = -4$, $c = 6$, $d = -9$.\n\n$\\sum\\alpha = -\\frac{-4}{1} = 4$\n\n$\\sum\\alpha\\beta = \\frac{6}{1} = 6$\n\n$\\alpha\\beta\\gamma = -\\frac{-9}{1} = 9$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q03",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The roots of $2z^3 - 4z^2 + 6z - 9 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Find $\\alpha + \\beta + \\gamma$, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha$ and $\\alpha\\beta\\gamma$.",
+  "hint": "Only the leading coefficient has changed. Every formula divides by $a$.",
+  "answer": "$\\sum\\alpha = 2$, $\\sum\\alpha\\beta = 3$, $\\alpha\\beta\\gamma = \\dfrac{9}{2}$",
+  "solution": "**What changed:** the leading coefficient is now $a = 2$, so each result is divided by 2.\n\n$\\sum\\alpha = -\\frac{-4}{2} = 2$, $\\quad\\sum\\alpha\\beta = \\frac{6}{2} = 3$, $\\quad\\alpha\\beta\\gamma = -\\frac{-9}{2} = \\frac{9}{2}$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q04",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The roots of $2z^3 + 4z^2 + 6z + 9 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Find $\\alpha + \\beta + \\gamma$, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha$ and $\\alpha\\beta\\gamma$.",
+  "hint": "Two of the coefficients have changed sign. Which of the three results change?",
+  "answer": "$\\sum\\alpha = -2$, $\\sum\\alpha\\beta = 3$, $\\alpha\\beta\\gamma = -\\dfrac{9}{2}$",
+  "solution": "**What changed:** the $z^2$ and constant coefficients are now positive.\n\n$\\sum\\alpha = -\\frac{b}{a} = -\\frac{4}{2} = -2$ (sign changes)\n\n$\\sum\\alpha\\beta = \\frac{c}{a} = \\frac{6}{2} = 3$ (unchanged – $c$ did not change)\n\n$\\alpha\\beta\\gamma = -\\frac{d}{a} = -\\frac{9}{2}$ (sign changes)\n\nThe signs in the formulas alternate $-, +, -$; a common error is to forget the minus signs and write $\\sum\\alpha = 2$ and $\\alpha\\beta\\gamma = \\frac{9}{2}$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q05",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The roots of $2z^3 + 4z^2 + 9 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Find $\\alpha + \\beta + \\gamma$, $\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha$ and $\\alpha\\beta\\gamma$.",
+  "hint": "There is no $z$ term. What is $c$?",
+  "answer": "$\\sum\\alpha = -2$, $\\sum\\alpha\\beta = 0$, $\\alpha\\beta\\gamma = -\\dfrac{9}{2}$",
+  "solution": "**What changed:** the $z$ term has gone, so $c = 0$.\n\n$\\sum\\alpha = -\\frac{4}{2} = -2$, $\\quad\\sum\\alpha\\beta = \\frac{0}{2} = 0$, $\\quad\\alpha\\beta\\gamma = -\\frac{9}{2}$\n\nOnly the pair sum is affected.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q06",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The roots of $z^3 + 2z^2 - 5z + 4 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Find the values of\n\n(a) $\\dfrac{1}{\\alpha} + \\dfrac{1}{\\beta} + \\dfrac{1}{\\gamma}$\n\n(b) $\\alpha^2 + \\beta^2 + \\gamma^2$",
+  "hint": "(a) Put the fractions over a common denominator $\\alpha\\beta\\gamma$. (b) Expand $(\\alpha + \\beta + \\gamma)^2$ – it is not just $\\alpha^2 + \\beta^2 + \\gamma^2$.",
+  "answer": "(a) $\\dfrac{5}{4}$ (b) $14$",
+  "solution": "$\\sum\\alpha = -2$, $\\sum\\alpha\\beta = -5$, $\\alpha\\beta\\gamma = -4$.\n\n(a)\n$$\\frac{1}{\\alpha} + \\frac{1}{\\beta} + \\frac{1}{\\gamma} = \\frac{\\beta\\gamma + \\alpha\\gamma + \\alpha\\beta}{\\alpha\\beta\\gamma} = \\frac{-5}{-4} = \\frac{5}{4}$$\n\n(b) $(\\alpha + \\beta + \\gamma)^2 = \\alpha^2 + \\beta^2 + \\gamma^2 + 2(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha)$, so\n$$\\alpha^2 + \\beta^2 + \\gamma^2 = (-2)^2 - 2(-5) = 4 + 10 = 14$$",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials-q07",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Given that $3 - 2i$ is a root of\n$$z^3 - 8z^2 + 25z - 26 = 0$$\nfind the other two roots.",
+  "hint": "The coefficients are real, so the conjugate is also a root. Multiply out the two corresponding factors to get a real quadratic factor.",
+  "answer": "$3 + 2i$ and $2$",
+  "solution": "The coefficients are real, so $3 + 2i$ is also a root.\n\nQuadratic factor:\n$$(z - (3 - 2i))(z - (3 + 2i)) = z^2 - 6z + (9 + 4) = z^2 - 6z + 13$$\n(sum of roots $6$, product $|3 - 2i|^2 = 13$).\n\nThe remaining factor is linear: $z^3 - 8z^2 + 25z - 26 = (z^2 - 6z + 13)(z - k)$. Comparing constants, $-13k = -26$, so $k = 2$.\n\nCheck: $(z^2 - 6z + 13)(z - 2) = z^3 - 8z^2 + 25z - 26$ ✓ (or: sum of roots $= 6 + 2 = 8$ ✓)\n\nThe other roots are $3 + 2i$ and $2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q08",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "(a) Find a cubic equation with real coefficients, in the form $z^3 + bz^2 + cz + d = 0$, two of whose roots are $2$ and $4 - i$.\n\n(b) Hence find a cubic equation whose roots are $1$, $3 - i$ and $3 + i$.",
+  "hint": "(a) With real coefficients, $4 + i$ must also be a root. (b) Each new root is 1 less than an old root: if $w = z - 1$, what do you substitute for $z$?",
+  "answer": "(a) $z^3 - 10z^2 + 33z - 34 = 0$ (b) $w^3 - 7w^2 + 16w - 10 = 0$",
+  "solution": "(a) Real coefficients, so the third root is $4 + i$. The conjugate pair gives\n$$(z - (4 - i))(z - (4 + i)) = z^2 - 8z + 17$$\nso the cubic is\n$$(z - 2)(z^2 - 8z + 17) = z^3 - 10z^2 + 33z - 34 = 0$$\n\n(b) The roots $2$, $4 - i$, $4 + i$ each decrease by 1 to give $1$, $3 - i$, $3 + i$. Let $w = z - 1$, so $z = w + 1$, and substitute:\n$$(w + 1)^3 - 10(w + 1)^2 + 33(w + 1) - 34 = 0$$\n$$w^3 + 3w^2 + 3w + 1 - 10w^2 - 20w - 10 + 33w + 33 - 34 = 0$$\n$$w^3 - 7w^2 + 16w - 10 = 0$$\n\nCheck: sum of new roots $= 1 + 6 = 7$ ✓; product $= 1 \\times 10 = 10$ ✓\n\n(Substituting $z = w - 1$ instead would **increase** each root by 1.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q09",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The roots of $2z^4 - 3z^3 + 5z - 6 = 0$ are $\\alpha$, $\\beta$, $\\gamma$ and $\\delta$. Leah is asked to find $\\dfrac{1}{\\alpha} + \\dfrac{1}{\\beta} + \\dfrac{1}{\\gamma} + \\dfrac{1}{\\delta}$. Her working is shown below.\n\n$\\sum\\alpha = \\dfrac{3}{2}$, $\\quad\\sum\\alpha\\beta = 0$, $\\quad\\sum\\alpha\\beta\\gamma = \\dfrac{5}{2}$, $\\quad\\alpha\\beta\\gamma\\delta = -3$\n\n$$\\frac{1}{\\alpha} + \\frac{1}{\\beta} + \\frac{1}{\\gamma} + \\frac{1}{\\delta} = \\frac{\\sum\\alpha\\beta\\gamma}{\\alpha\\beta\\gamma\\delta} = \\frac{5/2}{-3} = -\\frac{5}{6}$$\n\nIdentify Leah's error, explain it, and find the correct value.",
+  "hint": "For a quartic $az^4 + bz^3 + cz^2 + dz + e = 0$ the signs alternate: $-\\frac{b}{a}$, $+\\frac{c}{a}$, $-\\frac{d}{a}$, $+\\frac{e}{a}$.",
+  "answer": "$\\sum\\alpha\\beta\\gamma$ should be $-\\dfrac{d}{a} = -\\dfrac{5}{2}$; the correct value is $\\dfrac{5}{6}$",
+  "solution": "Here $a = 2$, $b = -3$, $c = 0$, $d = 5$, $e = -6$.\n\nLeah's values: $\\sum\\alpha = -\\frac{-3}{2} = \\frac{3}{2}$ ✓, $\\sum\\alpha\\beta = \\frac{0}{2} = 0$ ✓, $\\alpha\\beta\\gamma\\delta = \\frac{e}{a} = \\frac{-6}{2} = -3$ ✓.\n\n**Error:** $\\sum\\alpha\\beta\\gamma = -\\frac{d}{a}$, not $+\\frac{d}{a}$. The signs alternate, starting with minus for $\\sum\\alpha$, so the triple sum carries a minus sign:\n$$\\sum\\alpha\\beta\\gamma = -\\frac{5}{2}$$\n\n(This comes from expanding $a(z - \\alpha)(z - \\beta)(z - \\gamma)(z - \\delta)$: the $z$ term has coefficient $-a\\sum\\alpha\\beta\\gamma$, an odd number of minus signs.)\n\nCorrect value:\n$$\\frac{1}{\\alpha} + \\frac{1}{\\beta} + \\frac{1}{\\gamma} + \\frac{1}{\\delta} = \\frac{\\beta\\gamma\\delta + \\alpha\\gamma\\delta + \\alpha\\beta\\delta + \\alpha\\beta\\gamma}{\\alpha\\beta\\gamma\\delta} = \\frac{-5/2}{-3} = \\frac{5}{6}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q10",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The roots of $z^3 - 2z^2 + 4z - 1 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$. Ravi is asked to find a cubic equation with integer coefficients whose roots are $3\\alpha$, $3\\beta$ and $3\\gamma$. His working is shown below.\n\nLet $z = 3w$:\n$$(3w)^3 - 2(3w)^2 + 4(3w) - 1 = 0$$\n$$27w^3 - 18w^2 + 12w - 1 = 0$$\n\n(a) By considering the sum of the roots, show that Ravi's answer is wrong.\n\n(b) Explain his error and find the correct equation.",
+  "hint": "If $w$ is a new root then $w = 3z$ for some old root $z$. Rearrange for $z$ before substituting.",
+  "answer": "(a) New roots should sum to $3 \\times 2 = 6$, but Ravi's equation gives $\\frac{18}{27} = \\frac{2}{3}$ (b) He should substitute $z = \\frac{w}{3}$: $w^3 - 6w^2 + 36w - 27 = 0$",
+  "solution": "(a) $\\alpha + \\beta + \\gamma = 2$, so the new roots should have sum $3\\alpha + 3\\beta + 3\\gamma = 6$. Ravi's equation has sum of roots $-\\frac{-18}{27} = \\frac{2}{3}$, so it is wrong. (In fact $\\frac{2}{3}$ is the sum of $\\frac{\\alpha}{3}, \\frac{\\beta}{3}, \\frac{\\gamma}{3}$.)\n\n(b) The new variable is $w = 3z$, so $z = \\frac{w}{3}$ – that is what must replace $z$. Substituting $z = 3w$ produces the equation whose roots are $\\frac{\\alpha}{3}, \\frac{\\beta}{3}, \\frac{\\gamma}{3}$.\n\nCorrect substitution:\n$$\\left(\\frac{w}{3}\\right)^3 - 2\\left(\\frac{w}{3}\\right)^2 + 4\\left(\\frac{w}{3}\\right) - 1 = 0$$\n$$\\frac{w^3}{27} - \\frac{2w^2}{9} + \\frac{4w}{3} - 1 = 0$$\n\nMultiply by 27:\n$$w^3 - 6w^2 + 36w - 27 = 0$$\n\nCheck: sum $= 6 = 3 \\times 2$ ✓; pair sum $= 36 = 9 \\times 4$ ✓; product $= 27 = 27 \\times 1$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q11",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "It is given that $z = 1 + i$ is a root of\n$$z^2 - (3 + i)z + (2 + 2i) = 0$$\n\nMia says: \"By the conjugate root theorem, the other root must be $1 - i$.\"\n\n(a) Show that Mia is wrong.\n\n(b) Explain why the conjugate root theorem does not apply here.\n\n(c) Find the other root.",
+  "hint": "Substitute $1 - i$ into the equation. Then look at the coefficients. For (c), use the sum of the roots.",
+  "answer": "(a) substituting $1 - i$ gives $-2 + 2i \\ne 0$ (b) the coefficients are not all real (c) $2$",
+  "solution": "(a) Substitute $z = 1 - i$:\n$$(1 - i)^2 - (3 + i)(1 - i) + 2 + 2i = -2i - (3 - 3i + i - i^2) + 2 + 2i = -2i - (4 - 2i) + 2 + 2i = -2 + 2i \\ne 0$$\nso $1 - i$ is not a root.\n\n(b) The conjugate root theorem requires **all the coefficients to be real**. It works by taking conjugates of $p(\\alpha) = 0$, which leaves the coefficients unchanged only if they are real. Here the coefficients $-(3 + i)$ and $2 + 2i$ are not real, so non-real roots need not come in conjugate pairs.\n\n(c) Sum of roots $= -\\frac{b}{a} = 3 + i$:\n$$(1 + i) + \\beta = 3 + i \\;\\Rightarrow\\; \\beta = 2$$\n\nCheck with the product: $(1 + i)(2) = 2 + 2i = \\frac{c}{a}$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q12",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The roots of $z^3 - 3z^2 + 5z - 2 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$.\n\n(a) Find the value of $\\alpha^2 + \\beta^2 + \\gamma^2$.\n\n(b) Hence explain why exactly one of the roots is real.\n\n(c) Show that the real root lies between 0 and 1.",
+  "hint": "(a) $\\sum\\alpha^2 = (\\sum\\alpha)^2 - 2\\sum\\alpha\\beta$. (b) If all the roots were real, what could you say about $\\sum\\alpha^2$? Then use the conjugate root theorem. (c) Use a change of sign.",
+  "answer": "(a) $-1$ (b) the sum of squares of real numbers cannot be negative, so not all roots are real; with real coefficients the non-real roots form a conjugate pair, leaving exactly one real root (c) $f(0) = -2 < 0$, $f(1) = 1 > 0$",
+  "solution": "(a) $\\sum\\alpha = 3$ and $\\sum\\alpha\\beta = 5$, so\n$$\\alpha^2 + \\beta^2 + \\gamma^2 = 3^2 - 2(5) = 9 - 10 = -1$$\n\n(Note: it is not $3^2 = 9$; that would ignore the cross terms $2\\sum\\alpha\\beta$.)\n\n(b) If $\\alpha$, $\\beta$, $\\gamma$ were all real, each square would be $\\ge 0$, so $\\alpha^2 + \\beta^2 + \\gamma^2 \\ge 0$. But the sum is $-1$, so **at least one root is non-real**.\n\nThe coefficients are real, so by the conjugate root theorem a non-real root comes with its conjugate. A cubic has exactly three roots (fundamental theorem of algebra), so there is room for one conjugate pair and then exactly **one real root**.\n\n(c) Let $f(z) = z^3 - 3z^2 + 5z - 2$. $f(0) = -2 < 0$ and $f(1) = 1 - 3 + 5 - 2 = 1 > 0$. $f$ is continuous, so there is a real root between 0 and 1 (and by (b) it is the only one).",
+  "linkedTopicIds": [
+   "pure-numerical-methods"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials-q13",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "question": "$f(z) = z^4 + az^3 + 3z^2 + bz + 10$, where $a$ and $b$ are real constants.\n\nGiven that $1 + 2i$ is a root of the equation $f(z) = 0$,",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "write down another complex root of $f(z) = 0$, giving a reason for your answer,",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "show that $z^2 - 2z + 5$ is a factor of $f(z)$,",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "find the values of $a$ and $b$,",
+    "marks": 4
+   },
+   {
+    "label": "d",
+    "prompt": "solve completely the equation $f(z) = 0$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(c) Write $f(z) = (z^2 - 2z + 5)(z^2 + pz + q)$. Compare constant terms first, then the $z^2$ coefficients.",
+  "answer": "(a) $1 - 2i$ (b) shown (c) $a = 0$, $b = 6$ (d) $z = 1 \\pm 2i$, $z = -1 \\pm i$",
+  "solution": "(a) $1 - 2i$, because the coefficients of $f$ are real, so non-real roots occur in conjugate pairs. B1\n\n(b) $(z - (1 + 2i))(z - (1 - 2i)) = z^2 - 2z + (1 + 4)$ M1\n$= z^2 - 2z + 5$, and since both are roots, this is a factor of $f(z)$. A1\n\n(c) $f(z) = (z^2 - 2z + 5)(z^2 + pz + q)$ M1\n\nConstant terms: $5q = 10$, so $q = 2$. B1\n\nExpanding, $(z^2 - 2z + 5)(z^2 + pz + 2) = z^4 + (p - 2)z^3 + (7 - 2p)z^2 + (5p - 4)z + 10$.\n\n$z^2$ coefficient: $7 - 2p = 3$, so $p = 2$. M1\n\n$a = p - 2 = 0$ and $b = 5p - 4 = 6$. A1\n\n(d) The other factor is $z^2 + 2z + 2 = 0$: M1\n$$z = \\frac{-2 \\pm \\sqrt{4 - 8}}{2} = \\frac{-2 \\pm 2i}{2} = -1 \\pm i$$\n\nRoots: $z = 1 + 2i$, $1 - 2i$, $-1 + i$, $-1 - i$. A1\n\nCheck: sum of roots $= 2 + (-2) = 0 = -a$ ✓; product $= 5 \\times 2 = 10$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q14",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The roots of the equation\n$$z^3 - 9z^2 + kz - 15 = 0$$\nwhere $k$ is a real constant, form an arithmetic sequence. Find the roots and the value of $k$.",
+  "hint": "Let the roots be $a - d$, $a$, $a + d$. The sum of the roots gives $a$ immediately.",
+  "answer": "Roots $1$, $3$, $5$; $k = 23$",
+  "solution": "Let the roots be $a - d$, $a$, $a + d$ (consecutive terms of an arithmetic sequence with common difference $d$).\n\nSum: $(a - d) + a + (a + d) = 3a = 9$, so $a = 3$.\n\nProduct: $(3 - d)(3)(3 + d) = 15$, so $3(9 - d^2) = 15$, $9 - d^2 = 5$, $d = \\pm 2$.\n\nEither sign gives the same three roots: $1$, $3$, $5$.\n\n$k = \\sum\\alpha\\beta = (1)(3) + (3)(5) + (1)(5) = 3 + 15 + 5 = 23$\n\nCheck: $(z - 1)(z - 3)(z - 5) = (z^2 - 4z + 3)(z - 5) = z^3 - 9z^2 + 23z - 15$ ✓",
+  "linkedTopicIds": [
+   "alg-sequences-linear"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials-q15",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The equation $z^3 - 12z + q = 0$, where $q$ is a real constant, has roots $\\alpha$, $\\alpha$ and $\\beta$ (so $\\alpha$ is a repeated root).\n\n(a) Using the relationships between roots and coefficients, show that $\\alpha^2 = 4$ and hence find the two possible values of $q$.\n\n(b) For the positive value of $q$, write down all three roots.\n\n(c) By considering the stationary points of $y = z^3 - 12z$ for real $z$, find the set of values of $q$ for which the equation has three distinct real roots, and state how many non-real roots there are when $q > 16$.",
+  "hint": "(a) Use $\\sum\\alpha = 0$ to write $\\beta$ in terms of $\\alpha$, then use $\\sum\\alpha\\beta = -12$. (c) The equation is $z^3 - 12z = -q$: count how many times the horizontal line $y = -q$ meets the curve.",
+  "answer": "(a) $q = 16$ or $q = -16$ (b) $2$, $2$, $-4$ (c) $-16 < q < 16$; two non-real roots (a conjugate pair)",
+  "solution": "(a) The coefficient of $z^2$ is 0, so $2\\alpha + \\beta = 0$, i.e. $\\beta = -2\\alpha$.\n\nPair sum: $\\alpha \\cdot \\alpha + \\alpha\\beta + \\alpha\\beta = \\alpha^2 + 2\\alpha\\beta = -12$. Substituting $\\beta = -2\\alpha$:\n$$\\alpha^2 - 4\\alpha^2 = -12 \\;\\Rightarrow\\; \\alpha^2 = 4 \\;\\Rightarrow\\; \\alpha = \\pm 2$$\n\nProduct: $\\alpha^2\\beta = -q$, so $q = -\\alpha^2\\beta = -\\alpha^2(-2\\alpha) = 2\\alpha^3$.\n\n$\\alpha = 2$: $q = 16$; $\\quad\\alpha = -2$: $q = -16$.\n\n(Alternatively, a repeated root of $p(z) = 0$ is also a root of $p'(z) = 3z^2 - 12 = 0$, giving $\\alpha = \\pm 2$.)\n\n(b) $q = 16$: $\\alpha = 2$, $\\beta = -4$, so the roots are $2$, $2$, $-4$.\n\nCheck: $(z - 2)^2(z + 4) = (z^2 - 4z + 4)(z + 4) = z^3 - 12z + 16$ ✓\n\n(c) Write the equation as $z^3 - 12z = -q$. For $y = z^3 - 12z$: $\\frac{dy}{dz} = 3z^2 - 12 = 0$ at $z = \\pm 2$, with a local maximum $y = -8 + 24 = 16$ at $z = -2$ and a local minimum $y = 8 - 24 = -16$ at $z = 2$.\n\nThe line $y = -q$ meets the cubic curve three times exactly when it lies strictly between the turning values: $-16 < -q < 16$, i.e. $-16 < q < 16$.\n\nWhen $q > 16$, $-q < -16$ and the line meets the curve once, so there is one real root. By the fundamental theorem of algebra there are three roots in total, so the other **two** are non-real, forming a conjugate pair (real coefficients).",
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "pure-curve-sketching"
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials-q16",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The roots of $z^3 - 2z^2 + 3z - 5 = 0$ are $\\alpha$, $\\beta$ and $\\gamma$.\n\n(a) Use the substitution $w = z^2$ to show that $\\alpha^2$, $\\beta^2$ and $\\gamma^2$ are the roots of\n$$w^3 + 2w^2 - 11w - 25 = 0$$\n\n(b) Hence find the value of $\\alpha^4 + \\beta^4 + \\gamma^4$.\n\n(c) Use your answer to (a) to explain why the original equation cannot have three real roots.",
+  "hint": "(a) Put $z = \\sqrt{w}$, collect the terms involving $\\sqrt{w}$ on one side, and square both sides. (b) Apply the identity $\\sum x^2 = (\\sum x)^2 - 2\\sum xy$ to the new roots $\\alpha^2, \\beta^2, \\gamma^2$.",
+  "answer": "(a) shown (b) $26$ (c) $\\alpha^2 + \\beta^2 + \\gamma^2 = -2 < 0$",
+  "solution": "(a) Substitute $z = \\sqrt{w}$, so $z^2 = w$ and $z^3 = w\\sqrt{w}$:\n$$w\\sqrt{w} - 2w + 3\\sqrt{w} - 5 = 0$$\n\nCollect the $\\sqrt{w}$ terms:\n$$\\sqrt{w}\\,(w + 3) = 2w + 5$$\n\nSquare both sides:\n$$w(w + 3)^2 = (2w + 5)^2$$\n$$w^3 + 6w^2 + 9w = 4w^2 + 20w + 25$$\n$$w^3 + 2w^2 - 11w - 25 = 0$$\n\nCheck with the original roots: the new sum should be $\\sum\\alpha^2 = 2^2 - 2(3) = -2$, and the cubic gives $-\\frac{2}{1} = -2$ ✓\n\n(b) For the new equation, $\\sum\\alpha^2 = -2$ and $\\sum\\alpha^2\\beta^2 = -11$. So\n$$\\alpha^4 + \\beta^4 + \\gamma^4 = \\left(\\sum\\alpha^2\\right)^2 - 2\\sum\\alpha^2\\beta^2 = (-2)^2 - 2(-11) = 4 + 22 = 26$$\n\n(c) The sum of the roots of the $w$-equation is $\\alpha^2 + \\beta^2 + \\gamma^2 = -2$. If $\\alpha$, $\\beta$, $\\gamma$ were all real, this sum of squares would be $\\ge 0$. So at least one root is non-real (and, as the coefficients are real, there is exactly one conjugate pair).",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-roots-of-polynomials-q17",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A self-storage company designs a cuboid storage unit whose length, width and height, in metres, are the three roots of\n$$2x^3 - 27x^2 + 118x - 168 = 0$$\n\nWithout solving the cubic, find\n\n(a) the volume of the unit,\n\n(b) the total surface area of its six faces,\n\n(c) the total length of its 12 edges,\n\n(d) the length of the longest straight line inside the unit (the space diagonal), to 3 significant figures.\n\n(e) A customer wants to store an 8 m long scaffolding pole. Could it fit inside the unit? Explain.",
+  "hint": "Let the dimensions be $\\alpha$, $\\beta$, $\\gamma$. The space diagonal is $\\sqrt{\\alpha^2 + \\beta^2 + \\gamma^2}$ (3D Pythagoras).",
+  "answer": "(a) $84\\ \\text{m}^3$ (b) $118\\ \\text{m}^2$ (c) 54 m (d) 8.02 m (e) Yes, just: the space diagonal $\\frac{\\sqrt{257}}{2} \\approx 8.02$ m is longer than 8 m",
+  "solution": "Let the dimensions be $\\alpha$, $\\beta$, $\\gamma$. From the cubic ($a = 2$):\n$$\\sum\\alpha = \\frac{27}{2}, \\qquad \\sum\\alpha\\beta = \\frac{118}{2} = 59, \\qquad \\alpha\\beta\\gamma = \\frac{168}{2} = 84$$\n\n(a) Volume $= \\alpha\\beta\\gamma = 84\\ \\text{m}^3$\n\n(b) Surface area $= 2(\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha) = 2 \\times 59 = 118\\ \\text{m}^2$\n\n(c) Total edge length $= 4(\\alpha + \\beta + \\gamma) = 4 \\times \\frac{27}{2} = 54$ m\n\n(d)\n$$\\alpha^2 + \\beta^2 + \\gamma^2 = \\left(\\frac{27}{2}\\right)^2 - 2(59) = \\frac{729}{4} - \\frac{472}{4} = \\frac{257}{4}$$\n$$\\text{Space diagonal} = \\sqrt{\\frac{257}{4}} = \\frac{\\sqrt{257}}{2} = 8.015\\ldots \\approx 8.02 \\text{ m}$$\n\n(e) Yes – the space diagonal is about 8.02 m, which is longer than 8 m, so the pole fits corner to corner (ignoring its thickness, with less than 2 cm to spare).\n\n(The dimensions are in fact 3.5 m, 4 m and 6 m: $3.5 \\times 4 \\times 6 = 84$ ✓.)",
+  "linkedTopicIds": [
+   "geo-3d-pythagoras-trig"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-roots-of-polynomials-q18",
+  "topicId": "fur-roots-of-polynomials",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A control engineer models the response of a drone's stabiliser with the characteristic equation\n$$s^3 + 4s^2 + 9s + 10 = 0$$\n\nThe system is **stable** if every root has a negative real part. Tests show that $s = -1 + 2i$ is a root.\n\n(a) Find the other two roots.\n\n(b) State, with a reason, whether the system is stable.",
+  "hint": "The coefficients are real. Find the quadratic factor from the conjugate pair, then the linear factor.",
+  "answer": "(a) $-1 - 2i$ and $-2$ (b) Stable: all three real parts ($-1$, $-1$, $-2$) are negative",
+  "solution": "(a) The coefficients are real, so $-1 - 2i$ is also a root. The pair gives the factor\n$$(s - (-1 + 2i))(s - (-1 - 2i)) = s^2 + 2s + (1 + 4) = s^2 + 2s + 5$$\n\nSum of all roots $= -4$, and the pair sums to $-2$, so the third root is $-4 - (-2) = -2$.\n\nCheck: $(s^2 + 2s + 5)(s + 2) = s^3 + 4s^2 + 9s + 10$ ✓\n\n(b) The real parts of the roots are $-1$, $-1$ and $-2$, all negative, so the system is **stable**. (Physically, the complex pair gives a decaying oscillation and the real root a decaying exponential.)",
+  "linkedTopicIds": []
+ }
+]
