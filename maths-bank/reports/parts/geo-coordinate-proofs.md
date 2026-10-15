@@ -15,3 +15,6 @@ I re-solved every question independently with sympy and all stored answers match
 - q14 — y-tick 2 crossed by $\overline{AC}$ — tick labels moved to grid frame.
 - q16 — x-tick 3 hidden under vertex A and the A label squeezed between ticks 3 and 4 — tick labels moved to grid frame.
 - q17 — origin 0 and x-tick −1 crossed by $y = x$, y-tick 4 and x-tick 9 crossed by $\overline{AB}$ — tick labels moved to grid frame (figure scaled to 0.97 to fit the 360 px width).
+
+### Scope coverage
+All 4 scope items covered.

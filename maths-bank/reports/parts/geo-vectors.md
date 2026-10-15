@@ -9,3 +9,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 9 diagrams checked: 7 ok, 2 fixed.
 geo-vectors-q12 — label Q sat on top of line AB — moved it to the outside of AB.
 geo-vectors-q17 — label X touched line BP — moved it to the left of the intersection, clear of both lines.
+
+### Scope coverage
+All 5 scope items covered.

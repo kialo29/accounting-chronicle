@@ -12,3 +12,6 @@ All answers matched my blind solutions, including q05 (kite included in (c) and 
 
 ### Diagram audit
 13 diagrams checked (12 questions + worked example 1): 13 ok, 0 fixed. Parallel arrows, congruence ticks and angle sizes (32°, 35°, 80°, 60° bisector split, 4 px/in kite, 24 px/unit parallelogram) all match the text; no right-angle marks reveal answers.
+
+### Scope coverage
+All 7 scope items covered.

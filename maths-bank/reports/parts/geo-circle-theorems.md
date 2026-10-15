@@ -10,3 +10,6 @@ Checked 18 questions: 15 ok, 1 fixed, 2 clarified. Topic details: ok
 ### Diagram audit
 19 diagrams checked: 18 ok, 1 fixed.
 geo-circle-theorems-q16 — label "(2x + 3y)°" touched the angle arc at B — moved the label 6px left for clearance.
+
+### Scope coverage
+All 10 scope items covered (inscribed angles q01–q04, tangents q06/q13, cyclic quadrilaterals q05/q16, alternate segment q10/q14/q18, proofs q17/q18, arc measure and angles formed by chords/secants q08, intersecting chords q07, secant–secant q07, secant–tangent q13/q15). Key idea extended (topics-fixes) with the US arc-angle and segment-product rules.

@@ -11,3 +11,6 @@ All answers matched my blind solutions, including q09 (KA = 2√2, KB = 2√10, 
 
 ### Diagram audit
 9 diagrams checked: 9 ok, 0 fixed. Centroid, incenter, midpoints, perpendicular feet and grid points recomputed from the SVG coordinates; all exact.
+
+### Scope coverage
+All 8 scope items covered.
