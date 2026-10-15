@@ -1,0 +1,273 @@
+[
+ {
+  "id": "alg-radical-equations-q01",
+  "topicId": "alg-radical-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sqrt{x + 3} = 5$. Check your answer.",
+  "hint": "The radical is already alone on one side. Square both sides.",
+  "answer": "$x = 22$",
+  "solution": "The radical is already isolated, so square both sides:\n$$x + 3 = 25$$\n\nSubtract 3:\n$$x = 22$$\n\n**Check:** $\\sqrt{22 + 3} = \\sqrt{25} = 5$. True, so $x = 22$.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q02",
+  "topicId": "alg-radical-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sqrt{x - 3} = 5$. Check your answer.",
+  "hint": "Square both sides, then undo the $-3$.",
+  "answer": "$x = 28$",
+  "solution": "**What changed:** the $+3$ inside the radical became $-3$.\n\nSquare both sides:\n$$x - 3 = 25$$\n\nAdd 3:\n$$x = 28$$\n\n**Check:** $\\sqrt{28 - 3} = \\sqrt{25} = 5$. True.\n\nChanging the sign inside the radical changed the last step from subtracting 3 to adding 3, so the answer moved from 22 to 28.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q03",
+  "topicId": "alg-radical-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sqrt{x - 3} + 2 = 5$. Check your answer.",
+  "hint": "Isolate the radical **before** squaring.",
+  "answer": "$x = 12$",
+  "solution": "**What changed:** a $+2$ now sits outside the radical, so the radical must be isolated first.\n\nSubtract 2 from both sides:\n$$\\sqrt{x - 3} = 3$$\n\nSquare both sides:\n$$x - 3 = 9 \\Rightarrow x = 12$$\n\n**Check:** $\\sqrt{12 - 3} + 2 = \\sqrt{9} + 2 = 3 + 2 = 5$. True, so $x = 12$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q04",
+  "topicId": "alg-radical-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sqrt{x - 3} + 8 = 5$. Check your answer.",
+  "hint": "Isolate the radical. What sign is the number on the other side? Can a principal square root equal that?",
+  "answer": "No solution ($x = 12$ is extraneous).",
+  "solution": "**What changed:** the $+2$ outside the radical became $+8$.\n\nSubtract 8 from both sides:\n$$\\sqrt{x - 3} = -3$$\n\nIf we square anyway:\n$$x - 3 = 9 \\Rightarrow x = 12$$\n\n**Check:** $\\sqrt{12 - 3} + 8 = 3 + 8 = 11 \\ne 5$. So $x = 12$ is **extraneous**.\n\nIn fact we could have stopped at $\\sqrt{x - 3} = -3$: the principal square root $\\sqrt{\\ }$ is never negative, so the equation has **no solution**. Squaring hid the sign, because $3^2$ and $(-3)^2$ are both $9$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q05",
+  "topicId": "alg-radical-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sqrt[3]{x - 3} + 8 = 5$. Check your answer.",
+  "hint": "Isolate the cube root, then cube both sides. Can a cube root be negative?",
+  "answer": "$x = -24$",
+  "solution": "**What changed:** the square root became a **cube** root.\n\nSubtract 8:\n$$\\sqrt[3]{x - 3} = -3$$\n\nCube both sides:\n$$x - 3 = (-3)^3 = -27 \\Rightarrow x = -24$$\n\n**Check:** $\\sqrt[3]{-24 - 3} + 8 = \\sqrt[3]{-27} + 8 = -3 + 8 = 5$. True.\n\nUnlike the square-root version (which had no solution), a cube root **can** be negative, and cubing keeps the sign ($(-3)^3 = -27$), so cubing never creates extraneous solutions.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q06",
+  "topicId": "alg-radical-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve each equation for real $x$.\n\n(a) $x^{2/3} = 16$\n\n(b) $3x^{3/2} = 24$\n\n(c) $(x - 5)^{3/4} = 8$",
+  "hint": "Isolate the power, then raise both sides to the **reciprocal** exponent. Think about whether a negative value of $x$ could also work.",
+  "answer": "(a) $x = 64$ or $x = -64$ (b) $x = 4$ (c) $x = 21$",
+  "solution": "**(a)** $x^{2/3} = \\left(\\sqrt[3]{x}\\right)^2 = 16$, so $\\sqrt[3]{x} = 4$ or $\\sqrt[3]{x} = -4$.\n\nCubing: $x = 64$ or $x = -64$.\n\nCheck: $\\left(\\sqrt[3]{64}\\right)^2 = 4^2 = 16$ and $\\left(\\sqrt[3]{-64}\\right)^2 = (-4)^2 = 16$. Both work. (Raising to the power $\\frac{3}{2}$ alone gives only $16^{3/2} = 64$ and misses $-64$, because the numerator 2 of the exponent is an even power.)\n\n**(b)** Divide by 3:\n$$x^{3/2} = 8$$\nRaise both sides to the power $\\frac{2}{3}$:\n$$x = 8^{2/3} = \\left(\\sqrt[3]{8}\\right)^2 = 2^2 = 4$$\nHere $x^{3/2} = \\left(\\sqrt{x}\\right)^3$ needs $x \\ge 0$, so there is no negative solution. Check: $3(4)^{3/2} = 3(8) = 24$.\n\n**(c)** Raise both sides to the power $\\frac{4}{3}$:\n$$x - 5 = 8^{4/3} = \\left(\\sqrt[3]{8}\\right)^4 = 2^4 = 16 \\Rightarrow x = 21$$\nCheck: $(21 - 5)^{3/4} = 16^{3/4} = \\left(\\sqrt[4]{16}\\right)^3 = 2^3 = 8$.",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ]
+ },
+ {
+  "id": "alg-radical-equations-q07",
+  "topicId": "alg-radical-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "For each function, describe the transformation of the parent function ($y = \\sqrt{x}$ or $y = \\sqrt[3]{x}$), give the coordinates of the starting point (for square roots) or the center point (for the cube root), and state the domain and range.\n\n(a) $f(x) = \\sqrt{x - 2} + 1$\n\n(b) $g(x) = -\\sqrt{x + 4}$\n\n(c) $h(x) = \\sqrt[3]{x + 1} - 3$",
+  "hint": "$y = \\sqrt{x - h} + k$ is $y = \\sqrt{x}$ shifted $h$ right and $k$ up. A minus sign in front of the radical reflects the graph in the $x$-axis. Cube roots accept negative inputs.",
+  "answer": "(a) Right 2, up 1; starting point $(2, 1)$; domain $x \\ge 2$, range $y \\ge 1$. (b) Left 4, reflected in the $x$-axis; starting point $(-4, 0)$; domain $x \\ge -4$, range $y \\le 0$. (c) Left 1, down 3; center $(-1, -3)$; domain and range all real numbers.",
+  "solution": "**(a)** $\\sqrt{x - 2} + 1$: shift $y = \\sqrt{x}$ **right 2** and **up 1**. The starting point $(0, 0)$ moves to $(2, 1)$.\n\nThe radicand must be non-negative: $x - 2 \\ge 0$, so the domain is $x \\ge 2$. Since $\\sqrt{x - 2} \\ge 0$, the range is $y \\ge 1$.\n\n**(b)** $-\\sqrt{x + 4}$: shift **left 4**, then **reflect in the $x$-axis**. Starting point $(-4, 0)$.\n\nDomain: $x + 4 \\ge 0 \\Rightarrow x \\ge -4$. The outputs are $\\le 0$ because of the minus sign, so the range is $y \\le 0$.\n\n**(c)** $\\sqrt[3]{x + 1} - 3$: shift $y = \\sqrt[3]{x}$ **left 1** and **down 3**; the center point $(0, 0)$ moves to $(-1, -3)$.\n\nThe cube root of any real number exists (for example $\\sqrt[3]{-8} = -2$), and it takes every real value, so the domain and range are both **all real numbers**.",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "alg-radical-equations-q08",
+  "topicId": "alg-radical-equations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The graph shows a function of the form $y = a\\sqrt{x - h} + k$. It starts at $(-3, 1)$ and passes through $(1, 5)$ and $(6, 7)$.\n\n(a) Find $a$, $h$ and $k$.\n\n(b) State the domain and range of the function.\n\n(c) Find the value of $x$ for which $y = 9$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 266\" width=\"320\" height=\"266\"><line x1=\"30\" y1=\"239.8\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"55.1\" y1=\"239.8\" x2=\"55.1\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"80.2\" y1=\"239.8\" x2=\"80.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"105.3\" y1=\"239.8\" x2=\"105.3\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"130.4\" y1=\"239.8\" x2=\"130.4\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"155.5\" y1=\"239.8\" x2=\"155.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"180.5\" y1=\"239.8\" x2=\"180.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"205.6\" y1=\"239.8\" x2=\"205.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"230.7\" y1=\"239.8\" x2=\"230.7\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"255.8\" y1=\"239.8\" x2=\"255.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"280.9\" y1=\"239.8\" x2=\"280.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"306\" y1=\"239.8\" x2=\"306\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"239.8\" x2=\"306\" y2=\"239.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"214.7\" x2=\"306\" y2=\"214.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"189.6\" x2=\"306\" y2=\"189.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"164.5\" x2=\"306\" y2=\"164.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"139.5\" x2=\"306\" y2=\"139.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"114.4\" x2=\"306\" y2=\"114.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"89.3\" x2=\"306\" y2=\"89.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"64.2\" x2=\"306\" y2=\"64.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"39.1\" x2=\"306\" y2=\"39.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"306\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"214.7\" x2=\"306\" y2=\"214.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"130.4\" y1=\"239.8\" x2=\"130.4\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"211.7\" x2=\"30\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"55.1\" y1=\"211.7\" x2=\"55.1\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"55.1\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"80.2\" y1=\"211.7\" x2=\"80.2\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"80.2\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"105.3\" y1=\"211.7\" x2=\"105.3\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"105.3\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"155.5\" y1=\"211.7\" x2=\"155.5\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155.5\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"180.5\" y1=\"211.7\" x2=\"180.5\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"180.5\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"205.6\" y1=\"211.7\" x2=\"205.6\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"205.6\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"230.7\" y1=\"211.7\" x2=\"230.7\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"230.7\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"255.8\" y1=\"211.7\" x2=\"255.8\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"255.8\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"280.9\" y1=\"211.7\" x2=\"280.9\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"280.9\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"306\" y1=\"211.7\" x2=\"306\" y2=\"217.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"306\" y=\"229.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"127.4\" y1=\"239.8\" x2=\"133.4\" y2=\"239.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"243.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"127.4\" y1=\"189.6\" x2=\"133.4\" y2=\"189.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"193.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"127.4\" y1=\"164.5\" x2=\"133.4\" y2=\"164.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"168.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"127.4\" y1=\"139.5\" x2=\"133.4\" y2=\"139.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"143.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"127.4\" y1=\"114.4\" x2=\"133.4\" y2=\"114.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"118.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"127.4\" y1=\"89.3\" x2=\"133.4\" y2=\"89.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"93.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"127.4\" y1=\"64.2\" x2=\"133.4\" y2=\"64.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"68.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"127.4\" y1=\"39.1\" x2=\"133.4\" y2=\"39.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"43.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><line x1=\"127.4\" y1=\"14\" x2=\"133.4\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"125.4\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><text x=\"125.4\" y=\"228.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"308\" y=\"209.7\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"136.4\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><path d=\"M55.1 189.6 L55.9 180.5 L58.4 171.3 L63 161.4 L69.7 151.3 L78.9 140.7 L90.6 129.9 L99.8 122.6 L118.2 110 L134.5 100.3 L152.5 90.7 L173 80.8 L196.4 70.5 L221.9 60.2 L247 50.8 L279.2 39.6 L306 30.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"55.1\" cy=\"189.6\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"155.5\" cy=\"89.3\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"280.9\" cy=\"39.1\" r=\"3.5\" fill=\"currentColor\"/></svg>",
+  "hint": "The starting point is $(h, k)$. Then substitute one of the other points to find $a$.",
+  "answer": "(a) $a = 2$, $h = -3$, $k = 1$, so $y = 2\\sqrt{x + 3} + 1$ (b) Domain $x \\ge -3$, range $y \\ge 1$ (c) $x = 13$",
+  "solution": "**(a)** The starting point of $y = a\\sqrt{x - h} + k$ is $(h, k)$, so $h = -3$ and $k = 1$:\n$$y = a\\sqrt{x + 3} + 1$$\n\nSubstitute $(1, 5)$:\n$$5 = a\\sqrt{4} + 1 \\Rightarrow 4 = 2a \\Rightarrow a = 2$$\n\nCheck with $(6, 7)$: $2\\sqrt{9} + 1 = 7$. ✓\n\n**(b)** The graph starts at $x = -3$ and goes right: domain $x \\ge -3$. It starts at height 1 and rises: range $y \\ge 1$.\n\n**(c)** Solve $2\\sqrt{x + 3} + 1 = 9$:\n$$2\\sqrt{x + 3} = 8 \\Rightarrow \\sqrt{x + 3} = 4 \\Rightarrow x + 3 = 16 \\Rightarrow x = 13$$\nCheck: $2\\sqrt{16} + 1 = 9$. ✓",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "alg-radical-equations-q09",
+  "topicId": "alg-radical-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Jordan's working to solve $\\sqrt{2x + 7} = x + 2$ is shown below.\n\nLine 1: $2x + 7 = x^2 + 4$\n\nLine 2: $0 = x^2 - 2x - 3$\n\nLine 3: $0 = (x - 3)(x + 1)$, so $x = 3$ or $x = -1$\n\nLine 4: Check $x = 3$: $\\sqrt{13} \\approx 3.61$ but $3 + 2 = 5$. ✗ Check $x = -1$: $\\sqrt{5} \\approx 2.24$ but $-1 + 2 = 1$. ✗\n\nLine 5: The equation has no solution.\n\nFind Jordan's error, explain it, and solve the equation correctly.",
+  "hint": "What is $(x + 2)^2$? Write it as $(x + 2)(x + 2)$ and expand.",
+  "answer": "The error is in Line 1: $(x + 2)^2 = x^2 + 4x + 4$, not $x^2 + 4$. Correct solution: $x = 1$ ($x = -3$ is extraneous).",
+  "solution": "**Error (Line 1):** Jordan squared each term of $x + 2$ separately and got $x^2 + 4$. But\n$$(x + 2)^2 = (x + 2)(x + 2) = x^2 + 4x + 4$$\nThe middle term $4x$ is missing. (Jordan's checking was a good habit, but he was checking the roots of the wrong equation.)\n\n**Correct solution:**\n$$2x + 7 = x^2 + 4x + 4$$\n$$0 = x^2 + 2x - 3 = (x + 3)(x - 1)$$\n$$x = -3 \\text{ or } x = 1$$\n\n**Check in the original equation:**\n- $x = 1$: $\\sqrt{9} = 3$ and $1 + 2 = 3$. ✓\n- $x = -3$: $\\sqrt{1} = 1$ but $-3 + 2 = -1$. ✗ Extraneous.\n\n**Answer:** $x = 1$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q10",
+  "topicId": "alg-radical-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya's working to solve $\\sqrt{x + 5} + 1 = x$ is shown below.\n\nLine 1: Square both sides: $x + 5 + 1 = x^2$\n\nLine 2: $x^2 - x - 6 = 0$\n\nLine 3: $(x - 3)(x + 2) = 0$, so $x = 3$ or $x = -2$\n\nLine 4: Check $x = 3$: $\\sqrt{8} + 1 \\approx 3.83 \\ne 3$. ✗ Check $x = -2$: $\\sqrt{3} + 1 \\approx 2.73 \\ne -2$. ✗\n\nLine 5: There is no solution.\n\nFind Priya's error, explain why it is wrong, and solve the equation correctly.",
+  "hint": "Is $\\left(\\sqrt{x + 5} + 1\\right)^2$ really equal to $x + 5 + 1$? What should Priya have done before squaring?",
+  "answer": "The error is in Line 1: she squared before isolating the radical ($\\left(\\sqrt{x + 5} + 1\\right)^2 = x + 6 + 2\\sqrt{x + 5}$). Correct solution: $x = 4$ ($x = -1$ is extraneous).",
+  "solution": "**Error (Line 1):** Priya squared both sides **before isolating the radical**, and squared the left side term by term. In fact\n$$\\left(\\sqrt{x + 5} + 1\\right)^2 = (x + 5) + 2\\sqrt{x + 5} + 1$$\nwhich still contains a radical. Isolate the radical first.\n\n**Correct solution:**\n$$\\sqrt{x + 5} = x - 1$$\nSquare both sides (the right side is a binomial):\n$$x + 5 = x^2 - 2x + 1$$\n$$0 = x^2 - 3x - 4 = (x - 4)(x + 1) \\Rightarrow x = 4 \\text{ or } x = -1$$\n\n**Check in the original equation:**\n- $x = 4$: $\\sqrt{9} + 1 = 4$. ✓\n- $x = -1$: $\\sqrt{4} + 1 = 3 \\ne -1$. ✗ Extraneous.\n\n**Answer:** $x = 4$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q11",
+  "topicId": "alg-radical-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam solves $\\sqrt{x + 13} = x + 7$. He squares both sides and correctly gets $x^2 + 13x + 36 = 0$, so $x = -4$ or $x = -9$.\n\nSam says: \"Both answers are negative, and you can't take the square root of a negative, so both are extraneous. The equation has no solution.\"\n\n(a) Is Sam correct? Justify your answer.\n\n(b) Explain why squaring both sides of an equation can produce an extraneous solution, using $x = -9$ as an example.",
+  "hint": "Substitute each value into the **original** equation. What is under the radical when $x = -4$?",
+  "answer": "(a) No. $x = -4$ is a valid solution ($\\sqrt{9} = 3 = -4 + 7$); only $x = -9$ is extraneous. (b) Squaring gives the same result for $x + 7$ and $-(x + 7)$; $x = -9$ solves $\\sqrt{x + 13} = -(x + 7)$, not the original.",
+  "solution": "**(a)** Sam is **not** correct. A solution is extraneous only if it fails the check in the original equation; being negative does not matter. What matters is whether the **radicand** $x + 13$ is non-negative and the two sides agree.\n\n- $x = -4$: $\\sqrt{-4 + 13} = \\sqrt{9} = 3$ and $-4 + 7 = 3$. ✓ Valid.\n- $x = -9$: $\\sqrt{-9 + 13} = \\sqrt{4} = 2$ but $-9 + 7 = -2$. ✗ Extraneous.\n\nSo the solution is $x = -4$.\n\n**(b)** If $a = b$ then $a^2 = b^2$, but $a^2 = b^2$ only tells us $a = b$ **or** $a = -b$. Squaring $\\sqrt{x + 13} = x + 7$ gives the same equation as squaring $\\sqrt{x + 13} = -(x + 7)$. The value $x = -9$ solves that second equation: $\\sqrt{4} = 2 = -(-9 + 7)$. It came from the \"wrong sign\" version, so it does not solve the original equation.",
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q12",
+  "topicId": "alg-radical-equations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Solve $\\sqrt{3x + 1} - \\sqrt{x - 1} = 2$. Show that you have checked every solution.",
+  "hint": "Isolate one radical: $\\sqrt{3x + 1} = 2 + \\sqrt{x - 1}$. Square, simplify, isolate the remaining radical, and square again. Be careful not to divide by an expression that could be zero.",
+  "answer": "$x = 1$ or $x = 5$",
+  "solution": "Isolate one radical:\n$$\\sqrt{3x + 1} = 2 + \\sqrt{x - 1}$$\n\nSquare both sides (the right side is a binomial):\n$$3x + 1 = 4 + 4\\sqrt{x - 1} + (x - 1)$$\n$$2x - 2 = 4\\sqrt{x - 1}$$\n$$x - 1 = 2\\sqrt{x - 1}$$\n\nSquare again:\n$$(x - 1)^2 = 4(x - 1)$$\n$$(x - 1)^2 - 4(x - 1) = 0 \\Rightarrow (x - 1)(x - 5) = 0$$\n$$x = 1 \\text{ or } x = 5$$\n\n(Dividing both sides by $x - 1$ would have lost $x = 1$; factoring keeps it.)\n\n**Check in the original equation:**\n- $x = 1$: $\\sqrt{4} - \\sqrt{0} = 2 - 0 = 2$. ✓\n- $x = 5$: $\\sqrt{16} - \\sqrt{4} = 4 - 2 = 2$. ✓\n\nBoth are solutions: $x = 1$ or $x = 5$.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q13",
+  "topicId": "alg-radical-equations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Accident investigators estimate a car's speed from its skid marks using\n$$s = \\sqrt{30fd}$$\nwhere $s$ is the speed in miles per hour, $d$ is the length of the skid marks in feet and $f$ is the friction coefficient of the road surface.\n\n(a) A car traveling at 45 mph brakes hard on dry asphalt, where $f = 0.75$. How long will its skid marks be?\n\n(b) On a wet road ($f = 0.5$), a driver leaves skid marks 78 feet long. She says she was driving at no more than 35 mph. Is her claim consistent with the formula? Show your work.",
+  "hint": "In (a), substitute $s = 45$ and $f = 0.75$, then square both sides to remove the radical.",
+  "answer": "(a) 90 feet (b) $s = \\sqrt{1170} \\approx 34.2$ mph, which is no more than 35 mph, so her claim is consistent.",
+  "solution": "**(a)** Substitute $s = 45$, $f = 0.75$:\n$$45 = \\sqrt{30(0.75)d} = \\sqrt{22.5d}$$\nSquare both sides:\n$$2025 = 22.5d \\Rightarrow d = \\frac{2025}{22.5} = 90$$\nThe skid marks will be **90 feet** long. Check: $\\sqrt{22.5 \\times 90} = \\sqrt{2025} = 45$. ✓\n\n**(b)** Substitute $f = 0.5$, $d = 78$:\n$$s = \\sqrt{30(0.5)(78)} = \\sqrt{1170} \\approx 34.2 \\text{ mph}$$\nSince $34.2 \\le 35$, the formula supports her claim (although only just).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q14",
+  "topicId": "alg-radical-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Kepler's third law says that for a planet orbiting the Sun,\n$$T = a^{3/2}$$\nwhere $T$ is the time for one orbit in Earth years and $a$ is the average distance from the Sun in astronomical units (AU).\n\n(a) An asteroid takes 8 years to orbit the Sun. Find its average distance from the Sun.\n\n(b) Pluto takes about 248 years to orbit the Sun. Find its average distance from the Sun, to the nearest tenth of an AU.\n\n(c) Mars is 1.52 AU from the Sun. How long is a Martian year, in Earth days? Use 365 days for one Earth year and round to the nearest day.",
+  "hint": "To solve $a^{3/2} = T$, raise both sides to the reciprocal power $\\frac{2}{3}$.",
+  "answer": "(a) 4 AU (b) about 39.5 AU (c) about 684 days",
+  "solution": "**(a)** Solve $a^{3/2} = 8$ by raising both sides to the power $\\frac{2}{3}$:\n$$a = 8^{2/3} = \\left(\\sqrt[3]{8}\\right)^2 = 2^2 = 4 \\text{ AU}$$\nCheck: $4^{3/2} = \\left(\\sqrt{4}\\right)^3 = 8$. ✓\n\n**(b)**\n$$a = 248^{2/3} = \\left(\\sqrt[3]{248}\\right)^2 \\approx (6.2828)^2 \\approx 39.5 \\text{ AU}$$\n\n**(c)** Here we substitute directly:\n$$T = 1.52^{3/2} = \\left(\\sqrt{1.52}\\right)^3 \\approx 1.8740 \\text{ years}$$\n$$1.8740 \\times 365 \\approx 684 \\text{ days}$$",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ]
+ },
+ {
+  "id": "alg-radical-equations-q15",
+  "topicId": "alg-radical-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "The functions $f(x) = \\sqrt{2x - 1}$ and $g(x) = x - 2$ are graphed on the set of axes below.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 294 290\" width=\"294\" height=\"290\"><line x1=\"30\" y1=\"264\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"61.2\" y1=\"264\" x2=\"61.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"92.5\" y1=\"264\" x2=\"92.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"123.8\" y1=\"264\" x2=\"123.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"155\" y1=\"264\" x2=\"155\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"186.2\" y1=\"264\" x2=\"186.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"217.5\" y1=\"264\" x2=\"217.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"248.8\" y1=\"264\" x2=\"248.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"280\" y1=\"264\" x2=\"280\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"264\" x2=\"280\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"232.8\" x2=\"280\" y2=\"232.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"201.5\" x2=\"280\" y2=\"201.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"170.2\" x2=\"280\" y2=\"170.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"139\" x2=\"280\" y2=\"139\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"107.8\" x2=\"280\" y2=\"107.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"76.5\" x2=\"280\" y2=\"76.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"45.2\" x2=\"280\" y2=\"45.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"280\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"170.2\" x2=\"280\" y2=\"170.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"61.2\" y1=\"264\" x2=\"61.2\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"167.2\" x2=\"30\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"92.5\" y1=\"167.2\" x2=\"92.5\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"92.5\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"123.8\" y1=\"167.2\" x2=\"123.8\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"123.8\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"155\" y1=\"167.2\" x2=\"155\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"186.2\" y1=\"167.2\" x2=\"186.2\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"186.2\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"217.5\" y1=\"167.2\" x2=\"217.5\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"217.5\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"248.8\" y1=\"167.2\" x2=\"248.8\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"248.8\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"280\" y1=\"167.2\" x2=\"280\" y2=\"173.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"280\" y=\"185.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"58.2\" y1=\"264\" x2=\"64.2\" y2=\"264\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"58.2\" y1=\"232.8\" x2=\"64.2\" y2=\"232.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"236.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"58.2\" y1=\"201.5\" x2=\"64.2\" y2=\"201.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"205.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"58.2\" y1=\"139\" x2=\"64.2\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"143\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"58.2\" y1=\"107.8\" x2=\"64.2\" y2=\"107.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"111.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"58.2\" y1=\"76.5\" x2=\"64.2\" y2=\"76.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"80.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"58.2\" y1=\"45.2\" x2=\"64.2\" y2=\"45.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"49.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"58.2\" y1=\"14\" x2=\"64.2\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"56.2\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"56.2\" y=\"184.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"282\" y=\"165.2\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"67.2\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><path d=\"M76.9 170.2 L77.2 165.7 L79.2 158.1 L80.9 154.3 L83.6 149.7 L88.7 143 L96.8 134.9 L106.3 127.3 L116.1 120.7 L128.3 113.5 L142.2 106.3 L159.1 98.5 L176.7 91.2 L196 83.9 L235.3 70.7 L280 57.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M30 264 L280 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-dasharray=\"6 4\"/><circle cx=\"217.5\" cy=\"76.5\" r=\"3.5\" fill=\"currentColor\"/><text x=\"276.9\" y=\"95.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = f(x)</text><text x=\"105\" y=\"223.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = g(x)</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "State the domain of $f$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Algebraically solve $f(x) = g(x)$. Justify your answer.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Explain how the graph confirms your answer to part (b). Include in your explanation what happens at the value of $x$ you rejected.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (b), square both sides, solve the quadratic, then check both roots in the original equation.",
+  "answer": "(a) $x \\ge \\frac{1}{2}$ (b) $x = 5$ ($x = 1$ is extraneous) (c) The graphs meet only at $(5, 3)$; at $x = 1$, $f(1) = 1$ but $g(1) = -1$, so the graphs do not meet there.",
+  "solution": "**(a)** Need $2x - 1 \\ge 0$, so the domain is $x \\ge \\frac{1}{2}$. **B1**\n\n**(b)**\n$$\\sqrt{2x - 1} = x - 2$$\n$$2x - 1 = (x - 2)^2 = x^2 - 4x + 4 \\quad \\textbf{M1} \\text{ (squares the whole right side)}$$\n$$0 = x^2 - 6x + 5 = (x - 1)(x - 5) \\Rightarrow x = 1 \\text{ or } x = 5 \\quad \\textbf{A1}$$\n\nCheck:\n- $x = 5$: $\\sqrt{9} = 3$ and $5 - 2 = 3$. ✓\n- $x = 1$: $\\sqrt{1} = 1$ but $1 - 2 = -1$. ✗ **M1** (checks both values in the original equation)\n\nSo $x = 5$ only; $x = 1$ is extraneous. **A1**\n\n**(c)** The graphs intersect at exactly one point, $(5, 3)$, which matches $x = 5$. **B1**\n\nAt $x = 1$, the point on $y = f(x)$ is $(1, 1)$ and the point on $y = g(x)$ is $(1, -1)$, so the graphs do not meet. $x = 1$ appeared because squaring also solves $\\sqrt{2x - 1} = -(x - 2)$, and the values $1$ and $-1$ have the same square. **B1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q16",
+  "topicId": "alg-radical-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Point $P$ has coordinates $(x, 3)$ and point $A$ has coordinates $(1, -1)$.\n\n(a) Find the value of $x$ for which the distance $PA$ is 2 more than the $x$-coordinate of $P$.\n\n(b) Hamid tries to find $x$ so that the distance $PA$ is 4 **less** than the $x$-coordinate of $P$. Show that there is no such point.\n\n(c) Explain, without solving an equation, why the situation in part (b) is impossible.",
+  "hint": "Use the distance formula to write $PA$ as a radical expression in $x$, then set up a radical equation. Check your solutions.",
+  "answer": "(a) $x = \\frac{13}{6}$ (b) Solving gives $x = -\\frac{1}{6}$, but then $x - 4 = -\\frac{25}{6} < 0$, so it is extraneous and there is no such point. (c) $PA$ is at least the horizontal distance $|x - 1|$, which is always greater than $x - 4$.",
+  "solution": "By the distance formula:\n$$PA = \\sqrt{(x - 1)^2 + (3 - (-1))^2} = \\sqrt{(x - 1)^2 + 16}$$\n\n**(a)** Solve $\\sqrt{(x - 1)^2 + 16} = x + 2$. Square both sides:\n$$x^2 - 2x + 1 + 16 = x^2 + 4x + 4$$\n$$13 = 6x \\Rightarrow x = \\frac{13}{6}$$\nCheck: $x - 1 = \\frac{7}{6}$, so $PA = \\sqrt{\\frac{49}{36} + \\frac{576}{36}} = \\sqrt{\\frac{625}{36}} = \\frac{25}{6}$, and $x + 2 = \\frac{25}{6}$. ✓\n\n**(b)** Solve $\\sqrt{(x - 1)^2 + 16} = x - 4$. Squaring:\n$$x^2 - 2x + 17 = x^2 - 8x + 16 \\Rightarrow 6x = -1 \\Rightarrow x = -\\frac{1}{6}$$\nCheck: the right side is $-\\frac{1}{6} - 4 = -\\frac{25}{6}$, which is negative, but a distance (a principal square root) cannot be negative. So $x = -\\frac{1}{6}$ is extraneous and **no such point exists**.\n\n**(c)** $PA$ is the hypotenuse of a right triangle with horizontal leg $|x - 1|$ and vertical leg 4, so $PA > |x - 1| \\ge x - 1 > x - 4$. The distance is always more than $x - 4$, so it can never equal $x - 4$.",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance",
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-radical-equations-q17",
+  "topicId": "alg-radical-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Solve\n$$\\sqrt{x + \\sqrt{x + 11}} + \\sqrt{x - \\sqrt{x + 11}} = 4$$",
+  "hint": "Square the whole left side as a binomial $(A + B)^2 = A^2 + 2AB + B^2$. The radicals $\\pm\\sqrt{x + 11}$ cancel in $A^2 + B^2$, and $AB$ is a difference of squares under one radical.",
+  "answer": "$x = 5$",
+  "solution": "Let $A = \\sqrt{x + \\sqrt{x + 11}}$ and $B = \\sqrt{x - \\sqrt{x + 11}}$, so $A + B = 4$.\n\nSquare both sides: $A^2 + 2AB + B^2 = 16$.\n\n$A^2 + B^2 = \\left(x + \\sqrt{x + 11}\\right) + \\left(x - \\sqrt{x + 11}\\right) = 2x$\n\n$AB = \\sqrt{\\left(x + \\sqrt{x + 11}\\right)\\left(x - \\sqrt{x + 11}\\right)} = \\sqrt{x^2 - (x + 11)} = \\sqrt{x^2 - x - 11}$\n\nSo\n$$2x + 2\\sqrt{x^2 - x - 11} = 16 \\Rightarrow \\sqrt{x^2 - x - 11} = 8 - x$$\n\nSquare again:\n$$x^2 - x - 11 = 64 - 16x + x^2 \\Rightarrow 15x = 75 \\Rightarrow x = 5$$\n\n**Check:** $\\sqrt{5 + 11} = 4$, so the left side is $\\sqrt{5 + 4} + \\sqrt{5 - 4} = 3 + 1 = 4$. ✓\n\n**Answer:** $x = 5$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-radical-equations-q18",
+  "topicId": "alg-radical-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider the equation $\\sqrt{x + k} = x$, where $k$ is a real constant.\n\n(a) Show that every solution satisfies $x^2 - x - k = 0$ **and** $x \\ge 0$.\n\n(b) Find all values of $k$ for which the equation has exactly two real solutions.\n\n(c) Describe, using graphs of $y = \\sqrt{x + k}$ and $y = x$, why there is only one solution when $k > 0$.",
+  "hint": "For two valid solutions, the quadratic needs two distinct real roots (discriminant), **and** both roots must be non-negative. Use the quadratic formula to write the roots in terms of $k$.",
+  "answer": "(a) Squaring gives $x + k = x^2$; and $x = \\sqrt{x + k} \\ge 0$. (b) $-\\frac{1}{4} < k \\le 0$ (c) For $k > 0$ the curve starts at $(-k, 0)$, above the line at $x = 0$, so it crosses $y = x$ once in $x > 0$; the other root of the quadratic is negative and is extraneous.",
+  "solution": "**(a)** Squaring $\\sqrt{x + k} = x$ gives $x + k = x^2$, i.e. $x^2 - x - k = 0$. Also $x$ equals a principal square root, so $x \\ge 0$. Conversely, any root of the quadratic with $x \\ge 0$ works, because then $\\sqrt{x + k} = \\sqrt{x^2} = x$.\n\n**(b)** By the quadratic formula,\n$$x = \\frac{1 \\pm \\sqrt{1 + 4k}}{2}$$\n\n- Two distinct real roots need $1 + 4k > 0$, i.e. $k > -\\frac{1}{4}$.\n- The larger root $\\frac{1 + \\sqrt{1 + 4k}}{2}$ is always positive.\n- The smaller root is $\\ge 0$ when $\\sqrt{1 + 4k} \\le 1$, i.e. $1 + 4k \\le 1$, i.e. $k \\le 0$.\n\nSo there are exactly two solutions when $-\\frac{1}{4} < k \\le 0$. (At $k = 0$: $x = 0$ and $x = 1$, both valid. At $k = -\\frac{1}{4}$ there is only the double root $x = \\frac{1}{2}$.)\n\n**(c)** $y = \\sqrt{x + k}$ is $y = \\sqrt{x}$ shifted $k$ units left, starting at $(-k, 0)$. When $k > 0$, at $x = 0$ the curve is at height $\\sqrt{k} > 0$, above the line $y = x$. For $x < 0$ the line is below the $x$-axis while the curve is on or above it, so they cannot meet there. For $x > 0$, the line eventually overtakes the curve (it grows faster) and they cross exactly once. The second root of the quadratic, $\\frac{1 - \\sqrt{1 + 4k}}{2} < 0$, is extraneous: it is where the curve meets $y = -x$.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "alg-graph-transformations"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

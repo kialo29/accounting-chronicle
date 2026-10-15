@@ -1,0 +1,274 @@
+[
+ {
+  "id": "pure-proof-q01",
+  "topicId": "pure-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove that the sum of any three consecutive integers is a multiple of 3.",
+  "hint": "Call the smallest integer $n$. What are the next two? Add them and look for a factor of 3.",
+  "answer": "$n + (n+1) + (n+2) = 3n + 3 = 3(n+1)$, which is a multiple of 3 because $n + 1$ is an integer.",
+  "solution": "Let the three consecutive integers be $n$, $n + 1$ and $n + 2$, where $n$ is any integer.\n\nTheir sum is\n$$n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1)$$\n\n$n + 1$ is an integer, so $3(n + 1)$ is a multiple of 3.\n\nHence the sum of any three consecutive integers is a multiple of 3. $\\blacksquare$\n\n(This is **proof by deduction**: one general letter $n$ covers every possible case at once.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q02",
+  "topicId": "pure-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove that the sum of any five consecutive integers is a multiple of 5.",
+  "hint": "Same method as for three consecutive integers, but now there are five terms. It is neatest to call the middle one $n$.",
+  "answer": "$(n-2) + (n-1) + n + (n+1) + (n+2) = 5n$, a multiple of 5.",
+  "solution": "**What changed:** five consecutive integers instead of three.\n\nLet the middle integer be $n$, so the five integers are $n - 2$, $n - 1$, $n$, $n + 1$, $n + 2$ (for any integer $n$).\n\n$$(n - 2) + (n - 1) + n + (n + 1) + (n + 2) = 5n$$\n\nThe $-2$ and $+2$ cancel, as do the $-1$ and $+1$. $n$ is an integer, so $5n$ is a multiple of 5.\n\nHence the sum of any five consecutive integers is a multiple of 5. $\\blacksquare$\n\n(Starting from the smallest, $n + (n+1) + \\cdots + (n+4) = 5n + 10 = 5(n + 2)$, works equally well. Choosing the middle term just makes the algebra shorter.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q03",
+  "topicId": "pure-proof",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "(a) Prove that the sum of any four consecutive integers is even.\n\n(b) Prove that the sum of any four consecutive integers is never a multiple of 4.",
+  "hint": "Write the integers as $n, n+1, n+2, n+3$ and add them. For (b), write the sum as $4(\\ldots) + $ something.",
+  "answer": "(a) Sum $= 4n + 6 = 2(2n + 3)$, which is even. (b) Sum $= 4n + 6 = 4(n + 1) + 2$, which leaves remainder 2 on division by 4, so it is never a multiple of 4.",
+  "solution": "**What changed:** four (an even number of) consecutive integers. With three or five integers the sum was a multiple of the number of terms; now it is not.\n\nLet the integers be $n$, $n + 1$, $n + 2$, $n + 3$ for any integer $n$. Their sum is\n$$S = 4n + 6$$\n\n**(a)** $S = 2(2n + 3)$ and $2n + 3$ is an integer, so $S$ is even. $\\blacksquare$\n\n**(b)** $S = 4n + 4 + 2 = 4(n + 1) + 2$.\n\n$4(n + 1)$ is a multiple of 4, so $S$ is 2 more than a multiple of 4. Its remainder on division by 4 is 2, not 0, so $S$ is never a multiple of 4. $\\blacksquare$\n\n(Check: $1 + 2 + 3 + 4 = 10 = 4 \\times 2 + 2$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q04",
+  "topicId": "pure-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Each statement below is false. Disprove each one by giving a counter-example.\n\n(a) For all real numbers $x$, $x^2 \\ge x$.\n\n(b) For all real numbers $a$ and $b$, if $a > b$ then $a^2 > b^2$.",
+  "hint": "For (a), think about numbers between 0 and 1. For (b), try making $b$ negative.",
+  "answer": "For example: (a) $x = \\frac{1}{2}$, since $\\frac{1}{4} < \\frac{1}{2}$. (b) $a = 1$, $b = -2$, since $1 > -2$ but $1^2 = 1 < 4 = (-2)^2$. (Other counter-examples are possible.)",
+  "solution": "To disprove a \"for all\" statement, **one** example where it fails is enough.\n\n**(a)** Take $x = \\frac{1}{2}$:\n$$x^2 = \\frac{1}{4} \\quad\\text{and}\\quad \\frac{1}{4} < \\frac{1}{2}$$\nso $x^2 \\ge x$ is false for $x = \\frac{1}{2}$. (Any $x$ with $0 < x < 1$ works.)\n\n**(b)** Take $a = 1$ and $b = -2$. Then $a > b$, but\n$$a^2 = 1 \\quad\\text{and}\\quad b^2 = 4$$\nso $a^2 < b^2$. The statement is false.\n\n(It **is** true when $a$ and $b$ are both non-negative, which is why examples with positive numbers can make it look true.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q05",
+  "topicId": "pure-proof",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Lucy works out $n^2 - n + 11$ for $n = 1, 2, 3, \\ldots, 10$ and gets\n$$11,\\ 13,\\ 17,\\ 23,\\ 31,\\ 41,\\ 53,\\ 67,\\ 83,\\ 101$$\nAll ten values are prime. She says: \"This proves that $n^2 - n + 11$ is prime for every positive integer $n$.\"\n\n(a) Explain why Lucy's argument is not a proof.\n\n(b) Show that Lucy's statement is false.",
+  "hint": "Ten examples cannot cover infinitely many cases. Look at the constant term: is there a value of $n$ that makes every term share a factor?",
+  "answer": "(a) Checking some values only shows the statement holds for those values; a proof must cover every positive integer. (b) $n = 11$: $121 - 11 + 11 = 121 = 11^2$, which is not prime.",
+  "solution": "**(a)** Lucy has checked 10 cases, but the statement is about **all** positive integers, infinitely many. Agreement for some values suggests a pattern but cannot rule out a failure at a value she has not tried. A proof must cover every case, for example by a general algebraic argument.\n\n**(b)** Write $n^2 - n + 11 = n(n - 1) + 11$.\n\nWhen $n = 11$ both terms contain a factor of 11:\n$$11 \\times 10 + 11 = 11(10 + 1) = 11^2 = 121$$\n\n121 is not prime, so $n = 11$ is a counter-example and Lucy's statement is false.\n\n(The next value, $n = 12$, gives $143 = 11 \\times 13$, also not prime.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q06",
+  "topicId": "pure-proof",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Tom is asked whether the following statement is true:\n\n\"The product of any two odd numbers is one more than a multiple of 4.\"\n\nTom's working is shown below.\n\nLine 1: Let the two odd numbers be $2n + 1$ and $2n + 1$.\nLine 2: Product $= (2n + 1)(2n + 1) = 4n^2 + 4n + 1$\nLine 3: $= 4(n^2 + n) + 1$\nLine 4: This is one more than a multiple of 4, so the statement is true.\n\n(a) Identify Tom's error and explain why it makes his proof invalid.\n\n(b) Show that the statement is false.\n\n(c) Prove correctly that the product of any two odd numbers is odd.",
+  "hint": "Tom's two odd numbers are always the same number. What should he have written so that they can be different?",
+  "answer": "(a) Line 1: using $2n + 1$ for both numbers only covers the case where the two odd numbers are equal (he has proved that the square of an odd number is $4k + 1$). (b) e.g. $3 \\times 5 = 15 = 4 \\times 3 + 3$. (c) $(2m+1)(2n+1) = 2(2mn + m + n) + 1$, which is odd.",
+  "solution": "**(a)** The error is in **Line 1**. Writing both numbers as $2n + 1$ forces them to be equal, so Tom has only shown that the **square** of an odd number is one more than a multiple of 4. Two independent odd numbers need different letters, e.g. $2m + 1$ and $2n + 1$.\n\n**(b)** Counter-example: $3 \\times 5 = 15$, and $15 = 4 \\times 3 + 3$, which is 3 more than a multiple of 4, not 1 more. So the statement is false.\n\n**(c)** Let the odd numbers be $2m + 1$ and $2n + 1$, where $m$ and $n$ are integers.\n$$(2m + 1)(2n + 1) = 4mn + 2m + 2n + 1 = 2(2mn + m + n) + 1$$\n\n$2mn + m + n$ is an integer, so the product is one more than an even number, i.e. odd. $\\blacksquare$\n\n(Using $m$ and $n$ in the attempt from Line 1 gives $4mn + 2m + 2n + 1$, which is $4k + 1$ only when $m + n$ is even, e.g. not for $m = 1$, $n = 2$, which is $3 \\times 5$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q07",
+  "topicId": "pure-proof",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ravi is asked to prove by contradiction that $\\sqrt{3}$ is irrational. You may assume that if $a^2$ is a multiple of 3 then $a$ is a multiple of 3.\n\nRavi's working:\n\nLine 1: Assume $\\sqrt{3} = \\dfrac{a}{b}$ where $a$ and $b$ are integers.\nLine 2: Then $a^2 = 3b^2$, so $a^2$ is a multiple of 3, so $a$ is a multiple of 3.\nLine 3: Let $a = 3c$. Then $9c^2 = 3b^2$, so $b^2 = 3c^2$.\nLine 4: So $b^2$ is a multiple of 3, so $b$ is a multiple of 3.\nLine 5: $a$ and $b$ are both multiples of 3. This is a contradiction, so $\\sqrt{3}$ is irrational.\n\n(a) Explain why Line 5 is not a contradiction as Ravi has set up the proof.\n\n(b) Write down a corrected version of Line 1 and explain how Line 5 then gives a contradiction.",
+  "hint": "Is there anything wrong with $\\frac{a}{b}$ having a common factor of 3? For example, $\\frac{6}{9}$ is a perfectly good fraction.",
+  "answer": "(a) Ravi never assumed that $\\frac{a}{b}$ was in its lowest terms, so $a$ and $b$ sharing a factor of 3 contradicts nothing. (b) Line 1: \"Assume $\\sqrt{3} = \\frac{a}{b}$ where $a$ and $b$ are integers, $b \\ne 0$, with no common factor (fraction in lowest terms).\" Then $a$ and $b$ both being multiples of 3 contradicts \"no common factor\".",
+  "solution": "**(a)** A contradiction needs two statements that cannot both be true. Ravi's only assumption is that $a$ and $b$ are integers. Integers can easily both be multiples of 3 (e.g. $\\frac{6}{9}$), so Line 5 contradicts nothing he has assumed. As written, the argument proves nothing.\n\n**(b)** Corrected Line 1:\n\n\"Assume, for contradiction, that $\\sqrt{3}$ is rational, so $\\sqrt{3} = \\dfrac{a}{b}$ where $a$ and $b$ are integers, $b \\ne 0$, and $a$ and $b$ have **no common factor** (the fraction is in its lowest terms).\"\n\nThis is allowed, because any rational number can be cancelled down to its lowest terms.\n\nLines 2–4 are then fine: $a^2 = 3b^2$, so $a$ is a multiple of 3; $a = 3c$ gives $b^2 = 3c^2$, so $b$ is a multiple of 3.\n\nLine 5 now **is** a contradiction: $a$ and $b$ have a common factor 3, but we assumed they had no common factor. So the assumption is false and $\\sqrt{3}$ is irrational. $\\blacksquare$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q08",
+  "topicId": "pure-proof",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Mia is asked to prove that $x + \\dfrac{1}{x} \\ge 2$ for all real $x > 0$. Her working:\n\n$$x + \\frac{1}{x} \\ge 2$$\n$$x^2 + 1 \\ge 2x \\qquad (\\text{multiplying by } x)$$\n$$x^2 - 2x + 1 \\ge 0$$\n$$(x - 1)^2 \\ge 0$$\n\"This is true because a square is never negative, so the result is proved.\"\n\n(a) Explain what is wrong with the structure of Mia's proof.\n\n(b) Write out a correct proof.",
+  "hint": "Mia's first line is the thing she is trying to prove. A proof should end with that line, not start with it. Which line is a known fact?",
+  "answer": "(a) She starts by assuming the result and deduces a true statement; reaching something true from an assumption does not show the assumption is true. (b) Start from $(x - 1)^2 \\ge 0$, expand to $x^2 + 1 \\ge 2x$, then divide by $x > 0$ to get $x + \\frac{1}{x} \\ge 2$.",
+  "solution": "**(a)** Mia **begins** with the inequality she is meant to prove, so she has assumed the result. Deducing a true statement from an assumption tells you nothing about whether the assumption is true (e.g. from the false statement $1 = -1$, squaring gives the true statement $1 = 1$). A proof must start from known facts and arrive at the result.\n\n**(b)** Let $x > 0$. For every real $x$,\n$$(x - 1)^2 \\ge 0$$\n\nExpanding,\n$$x^2 - 2x + 1 \\ge 0 \\quad\\Rightarrow\\quad x^2 + 1 \\ge 2x$$\n\nSince $x > 0$, dividing by $x$ keeps the direction of the inequality:\n$$x + \\frac{1}{x} \\ge 2$$\n\nas required. $\\blacksquare$\n\nNote that the step \"divide by $x$\" needs $x > 0$, which is exactly where the condition in the question is used. (Equality holds only when $x = 1$.) Working backwards in rough is fine for finding a proof, but the final write-up must run forwards.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q09",
+  "topicId": "pure-proof",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Prove by contradiction that $\\sqrt{2}$ is irrational.\n\nYou may assume that if $n^2$ is even then $n$ is even.\n\n(b) Hence prove that $3 + \\sqrt{2}$ is irrational.",
+  "hint": "(a) Start: \"Assume $\\sqrt{2} = \\frac{a}{b}$ where $a, b$ are integers with no common factor.\" Square and rearrange. (b) Assume $3 + \\sqrt{2}$ is rational and rearrange for $\\sqrt{2}$.",
+  "answer": "(a) Assuming $\\sqrt{2} = \\frac{a}{b}$ in lowest terms leads to $a$ and $b$ both even, contradicting the lowest-terms assumption. (b) If $3 + \\sqrt{2} = r$ were rational then $\\sqrt{2} = r - 3$ would be rational, contradicting (a).",
+  "solution": "**(a)** Assume, for contradiction, that $\\sqrt{2}$ is rational. Then\n$$\\sqrt{2} = \\frac{a}{b}$$\nwhere $a$ and $b$ are integers, $b \\ne 0$, and the fraction is in its **lowest terms** ($a$ and $b$ have no common factor).\n\nSquaring: $2 = \\dfrac{a^2}{b^2}$, so $a^2 = 2b^2$.\n\nSo $a^2$ is even, hence $a$ is even. Write $a = 2c$ for an integer $c$:\n$$4c^2 = 2b^2 \\quad\\Rightarrow\\quad b^2 = 2c^2$$\n\nSo $b^2$ is even, hence $b$ is even.\n\nNow $a$ and $b$ are both even, so they have a common factor of 2. This contradicts the assumption that $\\frac{a}{b}$ was in its lowest terms. Therefore $\\sqrt{2}$ is irrational. $\\blacksquare$\n\n**(b)** Assume, for contradiction, that $3 + \\sqrt{2}$ is rational, say $3 + \\sqrt{2} = r$ with $r$ rational. Then\n$$\\sqrt{2} = r - 3$$\n\nThe difference of two rational numbers is rational ($r = \\frac{p}{q}$ gives $r - 3 = \\frac{p - 3q}{q}$), so $\\sqrt{2}$ would be rational. This contradicts part (a). Hence $3 + \\sqrt{2}$ is irrational. $\\blacksquare$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "num-rational-irrational"
+  ]
+ },
+ {
+  "id": "pure-proof-q10",
+  "topicId": "pure-proof",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Prove by contradiction that there are infinitely many prime numbers.\n\n(b) Sam has read the proof in (a). He says: \"The proof shows that if you multiply the first few primes together and add 1, the answer is always prime.\"\n\nUse the fact that $2 \\times 3 \\times 5 \\times 7 \\times 11 \\times 13 + 1 = 59 \\times 509$ to show that Sam is wrong, and explain what the proof actually shows about such a number.",
+  "hint": "(a) Suppose $p_1, p_2, \\ldots, p_n$ is a complete list of the primes and consider $N = p_1 p_2 \\cdots p_n + 1$. What is the remainder when $N$ is divided by any $p_i$? (b) Work out the product and check whether 59 and 509 are on the list.",
+  "answer": "(a) If $p_1, \\ldots, p_n$ were all the primes, $N = p_1 p_2 \\cdots p_n + 1$ leaves remainder 1 on division by each $p_i$, so its prime factors are not on the list: contradiction. (b) $30031 = 59 \\times 509$ is not prime. The proof only shows $N$ has a prime factor not in the list (here 59 and 509, both larger than 13).",
+  "solution": "**(a)** Assume, for contradiction, that there are finitely many primes, and list **all** of them: $p_1, p_2, \\ldots, p_n$.\n\nLet\n$$N = p_1 p_2 p_3 \\cdots p_n + 1$$\n\nWhen $N$ is divided by any prime $p_i$ in the list the remainder is 1, so no prime in the list divides $N$.\n\n$N > 1$, so $N$ has at least one prime factor (possibly $N$ itself). That prime factor is not in the list.\n\nThis contradicts the assumption that the list contained every prime. Hence there are infinitely many primes. $\\blacksquare$\n\n**(b)** $2 \\times 3 \\times 5 \\times 7 \\times 11 \\times 13 = 30030$, so the number is $30031 = 59 \\times 509$, which is not prime. So Sam's claim is false: this is a counter-example.\n\nThe proof never says $N$ is prime. It shows that **every prime factor of $N$ is missing from the list**. Here neither 59 nor 509 is among $2, 3, 5, 7, 11, 13$, exactly as the proof predicts. That is enough for the contradiction, because the list was supposed to contain every prime.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q11",
+  "topicId": "pure-proof",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "question": "In this question you must show all stages of your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use a counter-example to show that the statement \"$3^n + 2$ is prime for all positive integers $n$\" is false.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Prove that $n^3 - n$ is a multiple of 6 for all integers $n$.",
+    "marks": 4
+   }
+  ],
+  "hint": "(a) Work through $n = 1, 2, 3, \\ldots$ and test each value for small prime factors. (b) Factorise $n^3 - n$ completely and think about consecutive integers.",
+  "answer": "(a) $n = 5$: $3^5 + 2 = 245 = 5 \\times 49$, not prime. (b) $n^3 - n = (n - 1)n(n + 1)$, a product of three consecutive integers, which contains a multiple of 2 and a multiple of 3, so it is a multiple of 6.",
+  "solution": "**(a)** $n = 1, 2, 3, 4$ give $5, 11, 29, 83$, all prime. For $n = 5$:\n$$3^5 + 2 = 243 + 2 = 245 = 5 \\times 49$$\nM1 (testing values to find a non-prime)\n\n245 is not prime, so the statement is false. A1 (correct counter-example with a reason it is not prime)\n\n**(b)** $n^3 - n = n(n^2 - 1) = (n - 1)n(n + 1)$. M1 (factorising fully)\n\nThis is the product of three consecutive integers. A1\n\nAmong any two consecutive integers one is even, so the product is a multiple of 2. B1\n\nAmong any three consecutive integers one is a multiple of 3 (they have different remainders 0, 1, 2 on division by 3), so the product is a multiple of 3.\n\nThe product is a multiple of both 2 and 3, and these are coprime, so it is a multiple of 6. Hence $n^3 - n$ is a multiple of 6 for all integers $n$. A1 (complete argument with conclusion)\n\n*Alternative for (b), by exhaustion:* consider $n = 6k, 6k \\pm 1, 6k \\pm 2, 6k + 3$ (M1 for a complete set of cases, A1 A1 for the cases, A1 conclusion).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q12",
+  "topicId": "pure-proof",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "question": "In this question $n$, $a$, $b$ and $c$ represent integers.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove by contradiction that if $n^3$ is even then $n$ is even.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove by contradiction that $\\sqrt[3]{2}$ is irrational.",
+    "marks": 5
+   }
+  ],
+  "hint": "(a) Assume $n^3$ is even but $n$ is odd, and write $n = 2k + 1$. (b) Copy the structure of the proof that $\\sqrt{2}$ is irrational, cubing instead of squaring.",
+  "answer": "(a) If $n = 2k + 1$ then $n^3 = 2(4k^3 + 6k^2 + 3k) + 1$ is odd, a contradiction. (b) $\\sqrt[3]{2} = \\frac{a}{b}$ in lowest terms gives $a^3 = 2b^3$, so $a$ is even; $a = 2c$ gives $b^3 = 4c^3$, so $b$ is even: contradiction.",
+  "solution": "**(a)** Assume, for contradiction, that $n^3$ is even and $n$ is odd. B1 (correct assumption)\n\nLet $n = 2k + 1$. Then\n$$n^3 = 8k^3 + 12k^2 + 6k + 1 = 2(4k^3 + 6k^2 + 3k) + 1$$\nM1 (expanding and writing in the form $2(\\ldots) + 1$)\n\nThis is odd, contradicting $n^3$ being even. So if $n^3$ is even, $n$ is even. A1\n\n**(b)** Assume, for contradiction, that $\\sqrt[3]{2}$ is rational:\n$$\\sqrt[3]{2} = \\frac{a}{b}$$\nwhere $a$ and $b$ are integers, $b \\ne 0$, with no common factors. B1 (must include \"no common factors\")\n\nCubing: $a^3 = 2b^3$, so $a^3$ is even and by part (a) $a$ is even. M1\n\nLet $a = 2c$: $8c^3 = 2b^3$, so $b^3 = 4c^3 = 2(2c^3)$. M1\n\nSo $b^3$ is even and by part (a) $b$ is even. A1\n\nThen $a$ and $b$ have a common factor 2, contradicting the assumption that they had no common factors. Hence $\\sqrt[3]{2}$ is irrational. A1 (contradiction stated and conclusion)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q13",
+  "topicId": "pure-proof",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A city-centre car park charges £1.50 for each hour **or part of an hour**. So a stay of 2 hours 10 minutes is charged as 3 hours, costing £4.50.\n\nJo says: \"If I park for twice as long, I will always pay exactly twice as much.\"\n\n(a) Give a counter-example to show that Jo is wrong.\n\n(b) Prove that parking for twice as long never costs **more** than twice as much.",
+  "hint": "(a) Try a stay that is not a whole number of hours. (b) If a stay of $t$ hours is charged as $n$ whole hours, then $t \\le n$. What does that tell you about a stay of $2t$ hours?",
+  "answer": "(a) e.g. 1 hour 30 minutes costs £3.00 (2 hours charged) but 3 hours costs £4.50, not £6.00. (b) If $t$ hours is charged as $n$ hours then $t \\le n$, so $2t \\le 2n$; the charged hours for $2t$ (the smallest whole number $\\ge 2t$) is at most $2n$, so the cost is at most $2 \\times £1.50n$.",
+  "solution": "**(a)** Take a stay of 1 hour 30 minutes. This is charged as 2 hours: £3.00.\n\nTwice as long is 3 hours, charged as 3 hours: £4.50.\n\nTwice £3.00 is £6.00, but the cost is £4.50, so Jo is wrong.\n\n(Be careful to check that a proposed counter-example really fails: 40 minutes costs £1.50 and 80 minutes costs £3.00, which *is* double, so that pair would not disprove Jo's claim.)\n\n**(b)** Suppose a stay lasts $t$ hours ($t > 0$) and is charged as $n$ hours, where $n$ is the smallest whole number with $n \\ge t$. The cost is $1.5n$ pounds.\n\nSince $t \\le n$, doubling gives\n$$2t \\le 2n$$\n\n$2n$ is a whole number that is at least $2t$. The number of hours charged for a stay of $2t$ is the **smallest** whole number that is at least $2t$, so it is at most $2n$.\n\nHence the cost of the doubled stay is at most $1.5 \\times 2n = 2 \\times (1.5n)$ pounds, i.e. at most twice the original cost. $\\blacksquare$\n\n(Equality holds exactly when the doubled stay still needs all $2n$ hours, e.g. any whole-number stay.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q14",
+  "topicId": "pure-proof",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "In the Gregorian calendar the months have 31, 28 (29 in a leap year), 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 days.\n\nProve by exhaustion that every calendar year contains at least one Friday the 13th.\n\n(Consider the number of days from 13 January to the 13th of each later month.)",
+  "hint": "Days of the week repeat every 7 days, so only the remainder on division by 7 matters. Work out the number of days from 13 January to the 13th of each month, find each remainder, and check which remainders appear. Do non-leap and leap years separately.",
+  "answer": "In a non-leap year the 13ths fall $0, 3, 3, 6, 1, 4, 6, 2, 5, 0, 3, 5$ days of the week after 13 January; in a leap year $0, 3, 4, 0, 2, 5, 0, 3, 6, 1, 4, 6$. Both lists contain all of $0, 1, \\ldots, 6$, so whatever day 13 January is, some 13th is a Friday.",
+  "solution": "Let 13 January fall on some day $D$. The 13th of a later month falls $d$ days after 13 January, where $d$ is the total length of the months in between. Its day of the week is $D$ moved on by the remainder $r$ when $d$ is divided by 7.\n\n**Case 1: non-leap year.**\n\n| 13th of | Days after 13 Jan | Remainder mod 7 |\n|---|---|---|\n| Jan | 0 | 0 |\n| Feb | 31 | 3 |\n| Mar | 59 | 3 |\n| Apr | 90 | 6 |\n| May | 120 | 1 |\n| Jun | 151 | 4 |\n| Jul | 181 | 6 |\n| Aug | 212 | 2 |\n| Sep | 243 | 5 |\n| Oct | 273 | 0 |\n| Nov | 304 | 3 |\n| Dec | 334 | 5 |\n\nThe remainders include $0, 1, 2, 3, 4, 5, 6$: all seven.\n\n**Case 2: leap year.** From March onwards every count is one more (29 days in February), so the remainders are\n$$0,\\ 3,\\ 4,\\ 0,\\ 2,\\ 5,\\ 0,\\ 3,\\ 6,\\ 1,\\ 4,\\ 6$$\nAgain all of $0, 1, 2, 3, 4, 5, 6$ appear.\n\nIn both cases the 13ths of the year fall on all seven days of the week. So, whatever day 13 January is, one of the 13ths falls on a Friday.\n\nEvery year is either a leap year or not, so the two cases cover every year. Hence every year contains at least one Friday the 13th. $\\blacksquare$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-proof-q15",
+  "topicId": "pure-proof",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A Pythagorean triple is a set of positive integers $a$, $b$, $c$ with $a^2 + b^2 = c^2$, for example $3, 4, 5$.\n\n(a) Prove that $a$, $b$ and $c$ cannot all be odd.\n\n(b) Prove that at least one of $a$ and $b$ is a multiple of 3.\n\nYou may use the result that the square of any integer is either a multiple of 3 or one more than a multiple of 3.",
+  "hint": "(a) What kind of number is odd + odd? (b) Suppose neither $a$ nor $b$ is a multiple of 3. What does that make $a^2 + b^2$, and can a square have that form?",
+  "answer": "(a) If $a$ and $b$ are odd then $a^2 + b^2$ is even, so $c^2$ is even, so $c$ is even. (b) If neither $a$ nor $b$ is a multiple of 3, then $a^2$ and $b^2$ are each one more than a multiple of 3, so $c^2 = a^2 + b^2$ is two more than a multiple of 3, which is impossible for a square.",
+  "solution": "**(a)** Suppose $a$ and $b$ are both odd. The square of an odd number is odd ($(2k + 1)^2 = 2(2k^2 + 2k) + 1$), so $a^2$ and $b^2$ are odd.\n\nodd + odd = even, so $c^2 = a^2 + b^2$ is even. If $c$ were odd, $c^2$ would be odd; so $c$ is even.\n\nHence $a$, $b$ and $c$ cannot all be odd. $\\blacksquare$\n\n**(b)** Suppose, for contradiction, that neither $a$ nor $b$ is a multiple of 3.\n\nThe square of a number that is not a multiple of 3 is one more than a multiple of 3 (if $n = 3k \\pm 1$ then $n^2 = 9k^2 \\pm 6k + 1 = 3(3k^2 \\pm 2k) + 1$). So\n$$a^2 = 3p + 1, \\quad b^2 = 3q + 1 \\quad\\Rightarrow\\quad c^2 = 3(p + q) + 2$$\n\nBut every square is either $3m$ or $3m + 1$, never $3m + 2$. This is a contradiction.\n\nSo at least one of $a$ and $b$ is a multiple of 3. $\\blacksquare$\n\n(Check with $5, 12, 13$: $12$ is a multiple of 3; with $8, 15, 17$: $15$ is.)",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "pure-proof-q16",
+  "topicId": "pure-proof",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Prove by contradiction that $\\log_2 3$ is irrational.",
+  "hint": "Assume $\\log_2 3 = \\frac{a}{b}$ with $a$, $b$ positive integers. Rewrite this as an equation without logarithms, then raise both sides to the power $b$. Think about odd and even.",
+  "answer": "Assuming $\\log_2 3 = \\frac{a}{b}$ with $a, b$ positive integers gives $2^a = 3^b$; the left side is even and the right side is odd, a contradiction.",
+  "solution": "Assume, for contradiction, that $\\log_2 3$ is rational.\n\nSince $1 < 3 < 4$, we have $1 < \\log_2 3 < 2$, so $\\log_2 3 > 0$ and we can write\n$$\\log_2 3 = \\frac{a}{b}$$\nwhere $a$ and $b$ are **positive** integers.\n\nBy the definition of a logarithm,\n$$2^{a/b} = 3$$\n\nRaise both sides to the power $b$:\n$$2^a = 3^b$$\n\nSince $a \\ge 1$, $2^a$ is even. But $3^b$ is a product of odd numbers, so it is odd. An even number cannot equal an odd number, which is a contradiction.\n\nHence $\\log_2 3$ is irrational. $\\blacksquare$\n\n(Here we did not need \"lowest terms\": the contradiction comes from parity, not from a common factor. Positivity of $a$ is needed so that $2^a$ is even.)",
+  "linkedTopicIds": [
+   "pure-exponentials-logs",
+   "num-rational-irrational"
+  ]
+ },
+ {
+  "id": "pure-proof-q17",
+  "topicId": "pure-proof",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Prove that $\\sqrt{6}$ is irrational.\n\n(b) Hence prove that $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+  "hint": "(a) Assume $\\sqrt{6} = \\frac{a}{b}$ in lowest terms; show $a$ is even, then that $b$ must be even too. (b) Assume $\\sqrt{2} + \\sqrt{3} = r$ is rational and square both sides.",
+  "answer": "(a) $\\sqrt{6} = \\frac{a}{b}$ in lowest terms gives $a^2 = 6b^2$, so $a = 2c$, then $2c^2 = 3b^2$ forces $b$ even: contradiction. (b) If $\\sqrt{2} + \\sqrt{3} = r$ is rational, squaring gives $5 + 2\\sqrt{6} = r^2$, so $\\sqrt{6} = \\frac{r^2 - 5}{2}$ is rational, contradicting (a).",
+  "solution": "**(a)** Assume, for contradiction, that $\\sqrt{6} = \\dfrac{a}{b}$ where $a, b$ are integers, $b \\ne 0$, with no common factor.\n\nThen $a^2 = 6b^2 = 2(3b^2)$, so $a^2$ is even and therefore $a$ is even (an odd number has an odd square).\n\nLet $a = 2c$: $4c^2 = 6b^2$, so\n$$2c^2 = 3b^2$$\n\nThe left side is even, so $3b^2$ is even. Since 3 is odd, $b^2$ must be even, so $b$ is even.\n\n$a$ and $b$ are both even, contradicting \"no common factor\". So $\\sqrt{6}$ is irrational. $\\blacksquare$\n\n**(b)** Assume, for contradiction, that $\\sqrt{2} + \\sqrt{3} = r$ where $r$ is rational.\n\nSquare both sides (surd skills):\n$$(\\sqrt{2} + \\sqrt{3})^2 = 2 + 2\\sqrt{2}\\sqrt{3} + 3 = 5 + 2\\sqrt{6}$$\nso\n$$5 + 2\\sqrt{6} = r^2 \\quad\\Rightarrow\\quad \\sqrt{6} = \\frac{r^2 - 5}{2}$$\n\n$r$ is rational, so $r^2$, $r^2 - 5$ and $\\frac{r^2 - 5}{2}$ are all rational (sums, products and quotients of rationals are rational). So $\\sqrt{6}$ would be rational, contradicting part (a).\n\nHence $\\sqrt{2} + \\sqrt{3}$ is irrational. $\\blacksquare$\n\n(Note: the sum of two irrationals is not automatically irrational, e.g. $\\sqrt{2} + (-\\sqrt{2}) = 0$, which is why a proof is needed.)",
+  "linkedTopicIds": [
+   "num-surds",
+   "num-rational-irrational"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-proof-q18",
+  "topicId": "pure-proof",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find all integers $n$ for which $n^2 + 2n + 12$ is a perfect square, and prove that there are no others.",
+  "hint": "Complete the square: $n^2 + 2n + 12 = (n + 1)^2 + 11$. If this equals $m^2$ (take $m \\ge 0$), rearrange to a difference of two squares equal to 11, and use the fact that 11 is prime.",
+  "answer": "$n = 4$ and $n = -6$ (both give 36), and there are no others.",
+  "solution": "Suppose $n^2 + 2n + 12 = m^2$ for some integer $m \\ge 0$. Completing the square,\n$$(n + 1)^2 + 11 = m^2$$\n\nLet $k = |n + 1| \\ge 0$. Then\n$$m^2 - k^2 = 11 \\quad\\Rightarrow\\quad (m - k)(m + k) = 11$$\n\n$m + k \\ge 0$ and the product is positive, so both factors are positive integers. 11 is prime, so the only factorisation with $m - k \\le m + k$ is\n$$m - k = 1, \\quad m + k = 11$$\n\nAdding: $2m = 12$, so $m = 6$ and $k = 5$.\n\nSo $|n + 1| = 5$, giving $n + 1 = 5$ or $n + 1 = -5$:\n$$n = 4 \\quad\\text{or}\\quad n = -6$$\n\nCheck: $n = 4$: $16 + 8 + 12 = 36 = 6^2$ ✓. $n = -6$: $36 - 12 + 12 = 36 = 6^2$ ✓.\n\nEvery solution must satisfy the factor equations above, and these have only the one solution, so these are the only two integers. $\\blacksquare$\n\n(Checking values of $n$ alone could never show \"no others\"; the factorisation argument covers every case at once.)",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]

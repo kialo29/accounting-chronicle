@@ -1,0 +1,276 @@
+[
+ {
+  "id": "fur-vectors-lines-planes-q01",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the acute angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix}$$\nGive your answer in degrees to 1 decimal place.",
+  "hint": "The angle between two lines depends only on their **direction** vectors (the vectors multiplied by $\\lambda$ and $\\mu$).",
+  "answer": "$63.6^\\circ$",
+  "solution": "Use the direction vectors $\\mathbf{b}_1 = \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$ and $\\mathbf{b}_2 = \\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix}$ (the position vectors only say where each line is, not which way it points).\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = 2 - 2 + 4 = 4, \\quad |\\mathbf{b}_1| = \\sqrt{1 + 4 + 4} = 3, \\quad |\\mathbf{b}_2| = \\sqrt{4 + 1 + 4} = 3$$\n$$\\cos\\theta = \\frac{4}{3 \\times 3} = \\frac{4}{9} \\Rightarrow \\theta = 63.6^\\circ$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q02",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the acute angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} 2 \\\\ 1 \\\\ 2 \\end{pmatrix}$$\nGive your answer in degrees to 1 decimal place.",
+  "hint": "Only the $y$-component of the second direction vector has changed sign. Recalculate the scalar product.",
+  "answer": "$27.3^\\circ$",
+  "solution": "**What changed:** the second direction is now $\\begin{pmatrix} 2 \\\\ 1 \\\\ 2 \\end{pmatrix}$; its magnitude is still 3, but the scalar product changes.\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = 2 + 2 + 4 = 8, \\quad |\\mathbf{b}_1| = |\\mathbf{b}_2| = 3$$\n$$\\cos\\theta = \\frac{8}{9} \\Rightarrow \\theta = 27.3^\\circ$$\nA larger positive scalar product means the directions are closer together, so the angle is smaller.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q03",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the acute angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} -2 \\\\ -1 \\\\ -2 \\end{pmatrix}$$\nGive your answer in degrees to 1 decimal place.",
+  "hint": "This direction vector is the previous one multiplied by $-1$. What does that do to the line? What does it do to the scalar product?",
+  "answer": "$27.3^\\circ$",
+  "solution": "**What changed:** the direction vector has been reversed. It describes the **same** line direction, so the acute angle cannot change.\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = -2 - 2 - 4 = -8, \\quad \\cos\\theta = \\frac{-8}{9} \\Rightarrow \\theta = 152.7^\\circ$$\nThis is the obtuse angle between the vectors. The acute angle between the lines is\n$$180^\\circ - 152.7^\\circ = 27.3^\\circ$$\n(Equivalently, use $\\cos\\theta = \\frac{|\\mathbf{b}_1 \\cdot \\mathbf{b}_2|}{|\\mathbf{b}_1||\\mathbf{b}_2|} = \\frac{8}{9}$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q04",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} -2 \\\\ -1 \\\\ 2 \\end{pmatrix}$$\nWhat can you say about the lines?",
+  "hint": "Now only the $z$-component has changed sign. Work out the scalar product before reaching for a calculator.",
+  "answer": "$90^\\circ$: the lines are perpendicular (their directions have zero scalar product), whether or not they meet.",
+  "solution": "**What changed:** the $z$-component of the second direction is now $+2$.\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = (1)(-2) + (2)(-1) + (2)(2) = -2 - 2 + 4 = 0$$\nSo $\\cos\\theta = 0$ and $\\theta = 90^\\circ$: the lines are perpendicular.\n\nNote that \"perpendicular\" here describes the directions only. To know whether the lines actually cross you would still have to solve for an intersection (they might be skew).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q05",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The points $A(2, -1, 3)$ and $B(5, 1, -1)$ lie on the line $l$.\n\n(a) Find a vector equation of $l$.\n\n(b) Find Cartesian equations of $l$.\n\n(c) Determine whether the point $C(8, 3, -5)$ lies on $l$.",
+  "hint": "A direction vector is $\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$. For (c), find the value of $\\lambda$ from one component and test the others.",
+  "answer": "(a) $\\mathbf{r} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} + \\lambda\\begin{pmatrix} 3 \\\\ 2 \\\\ -4 \\end{pmatrix}$ (b) $\\dfrac{x - 2}{3} = \\dfrac{y + 1}{2} = \\dfrac{z - 3}{-4}$ (c) Yes, with $\\lambda = 2$.",
+  "solution": "**(a)** $\\overrightarrow{AB} = \\begin{pmatrix} 3 \\\\ 1 - (-1) \\\\ -1 - 3 \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 2 \\\\ -4 \\end{pmatrix}$, so\n$$\\mathbf{r} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} + \\lambda\\begin{pmatrix} 3 \\\\ 2 \\\\ -4 \\end{pmatrix}$$\n\n**(b)** $x = 2 + 3\\lambda$, $y = -1 + 2\\lambda$, $z = 3 - 4\\lambda$. Make $\\lambda$ the subject of each and equate:\n$$\\frac{x - 2}{3} = \\frac{y + 1}{2} = \\frac{z - 3}{-4}$$\n\n**(c)** $x$: $2 + 3\\lambda = 8 \\Rightarrow \\lambda = 2$.\n$y$: $-1 + 2(2) = 3$ ✓ $\\quad$ $z$: $3 - 4(2) = -5$ ✓\nAll three components agree, so $C$ lies on $l$ (in fact $C$ is the reflection of $A$ in $B$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-vectors-lines-planes-q06",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The points $A(1, 0, 2)$, $B(3, 1, 1)$ and $C(0, 2, 3)$ lie in the plane $\\Pi$.\n\n(a) Find $\\overrightarrow{AB} \\times \\overrightarrow{AC}$.\n\n(b) Hence find a Cartesian equation of $\\Pi$.\n\n(c) Find the exact area of triangle $ABC$.",
+  "hint": "The vector product of two vectors in the plane is a normal to the plane. The area of the triangle is $\\frac{1}{2}|\\overrightarrow{AB} \\times \\overrightarrow{AC}|$.",
+  "answer": "(a) $\\begin{pmatrix} 3 \\\\ -1 \\\\ 5 \\end{pmatrix}$ (b) $3x - y + 5z = 13$ (c) $\\dfrac{\\sqrt{35}}{2}$",
+  "solution": "**(a)** $\\overrightarrow{AB} = \\begin{pmatrix} 2 \\\\ 1 \\\\ -1 \\end{pmatrix}$, $\\overrightarrow{AC} = \\begin{pmatrix} -1 \\\\ 2 \\\\ 1 \\end{pmatrix}$.\n$$\\overrightarrow{AB} \\times \\overrightarrow{AC} = \\begin{pmatrix} (1)(1) - (-1)(2) \\\\ (-1)(-1) - (2)(1) \\\\ (2)(2) - (1)(-1) \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ -1 \\\\ 5 \\end{pmatrix}$$\nCheck: $\\begin{pmatrix} 3 \\\\ -1 \\\\ 5 \\end{pmatrix} \\cdot \\overrightarrow{AB} = 6 - 1 - 5 = 0$ and $\\begin{pmatrix} 3 \\\\ -1 \\\\ 5 \\end{pmatrix} \\cdot \\overrightarrow{AC} = -3 - 2 + 5 = 0$ ✓\n\n**(b)** $\\mathbf{n} = \\begin{pmatrix} 3 \\\\ -1 \\\\ 5 \\end{pmatrix}$ and $\\mathbf{a} \\cdot \\mathbf{n} = 3 - 0 + 10 = 13$, so\n$$3x - y + 5z = 13$$\nCheck with $B$: $9 - 1 + 5 = 13$ ✓ and $C$: $0 - 2 + 15 = 13$ ✓\n\n**(c)**\n$$\\text{Area} = \\frac{1}{2}\\left|\\overrightarrow{AB} \\times \\overrightarrow{AC}\\right| = \\frac{1}{2}\\sqrt{9 + 1 + 25} = \\frac{\\sqrt{35}}{2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-vectors-lines-planes-q07",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Hassan is asked whether the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 2 \\\\ 0 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix} \\quad \\text{and} \\quad l_2: \\mathbf{r} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 4 \\end{pmatrix} + \\mu\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$$\nintersect. His working is shown below.\n\n$x$: $1 + \\lambda = 2 + \\mu$\n$y$: $2 - \\lambda = -1 + \\mu$\nAdding: $3 = 1 + 2\\mu$, so $\\mu = 1$ and $\\lambda = 2$.\n\"So the lines intersect, at $(3, 0, 4)$.\"\n\nExplain what Hassan has done wrong and determine the correct relationship between $l_1$ and $l_2$.",
+  "hint": "Two equations in two unknowns can (almost) always be solved. What about the $z$-components?",
+  "answer": "He did not check the $z$-equation: with $\\lambda = 2$, $\\mu = 1$, $l_1$ gives $z = 4$ but $l_2$ gives $z = 5$. The lines do not meet, and their directions are not parallel, so they are skew.",
+  "solution": "Hassan's values $\\lambda = 2$, $\\mu = 1$ are correct for the $x$- and $y$-equations, but two equations in two unknowns will almost always have a solution. The lines meet only if the **third** equation is also satisfied.\n\n$z$: $l_1$ gives $2\\lambda = 4$; $l_2$ gives $4 + \\mu = 5$. Since $4 \\ne 5$, the equations are inconsistent and the lines do **not** intersect. (At $\\lambda = 2$, $l_1$ is at $(3, 0, 4)$; at $\\mu = 1$, $l_2$ is at $(3, 0, 5)$, directly above it.)\n\nParallel? $\\begin{pmatrix} 1 \\\\ -1 \\\\ 2 \\end{pmatrix}$ is not a multiple of $\\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$, so the lines are not parallel.\n\nNot parallel and not intersecting, so $l_1$ and $l_2$ are **skew**.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q08",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Grace is finding the acute angle between the line $\\mathbf{r} = \\begin{pmatrix} 2 \\\\ 0 \\\\ 1 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$ and the plane $2x - y + 2z = 7$. Her working is shown below.\n\n$$\\mathbf{b} \\cdot \\mathbf{n} = \\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix} = 2 - 2 - 4 = -4$$\n$$\\cos\\theta = \\frac{|-4|}{3 \\times 3} = \\frac{4}{9} \\Rightarrow \\theta = 63.6^\\circ$$\n\nIdentify Grace's mistake, explain it, and find the correct angle to 1 decimal place.",
+  "hint": "The vector $\\mathbf{n}$ is perpendicular to the plane. Which angle has Grace actually found?",
+  "answer": "She has found the angle between the line and the **normal**, not the plane. The angle with the plane is $90^\\circ - 63.6^\\circ = 26.4^\\circ$ (from $\\sin\\theta = \\frac{4}{9}$).",
+  "solution": "Grace's scalar product and magnitudes are correct, but $\\cos\\theta = \\frac{|\\mathbf{b} \\cdot \\mathbf{n}|}{|\\mathbf{b}||\\mathbf{n}|}$ gives the acute angle between the line and the **normal** $\\mathbf{n}$. The normal is at $90^\\circ$ to the plane, so the angle between the line and the plane is the complement:\n$$\\theta = 90^\\circ - 63.6^\\circ = 26.4^\\circ$$\n\nEquivalently, use $\\sin$ instead of $\\cos$:\n$$\\sin\\theta = \\frac{|\\mathbf{b} \\cdot \\mathbf{n}|}{|\\mathbf{b}||\\mathbf{n}|} = \\frac{4}{9} \\Rightarrow \\theta = 26.4^\\circ \\text{ (1 d.p.)}$$\n\nSense check: a line nearly perpendicular to a plane makes a large angle with it, and its direction is then nearly parallel to $\\mathbf{n}$, giving $|\\mathbf{b} \\cdot \\mathbf{n}|$ close to $|\\mathbf{b}||\\mathbf{n}|$; $\\sin\\theta$ behaves correctly, $\\cos\\theta$ the wrong way round.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q09",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Oliver is asked for the shortest distance from the point $P(3, -2, 5)$ to the plane $\\Pi$: $x + 2y - 2z = 4$. He writes:\n\n\"Distance $= |3 + 2(-2) - 2(5) - 4| = |-15| = 15$\"\n\n(a) Explain Oliver's mistake and find the correct distance.\n\n(b) Find the coordinates of the foot of the perpendicular from $P$ to $\\Pi$, and use them to confirm your answer to (a).",
+  "hint": "Oliver's numerator would be the distance only if $\\mathbf{n}$ were a unit vector. What is $|\\mathbf{n}|$? For (b), travel from $P$ along the normal: $\\mathbf{r} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 5 \\end{pmatrix} + t\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$.",
+  "answer": "(a) He forgot to divide by $|\\mathbf{n}| = 3$; the distance is $5$. (b) Foot $\\left(\\frac{14}{3}, \\frac{4}{3}, \\frac{5}{3}\\right)$, at $t = \\frac{5}{3}$, giving distance $\\frac{5}{3} \\times 3 = 5$ ✓",
+  "solution": "**(a)** The formula is\n$$\\text{distance} = \\frac{|n_1\\alpha + n_2\\beta + n_3\\gamma - d|}{|\\mathbf{n}|}$$\nOliver's numerator is right, but he did not divide by $|\\mathbf{n}| = \\sqrt{1 + 4 + 4} = 3$. His 15 measures distance in units of $|\\mathbf{n}|$, which is only correct when $\\mathbf{n}$ is a unit vector.\n$$\\text{distance} = \\frac{15}{3} = 5$$\n\n**(b)** The perpendicular from $P$ to $\\Pi$ is $\\mathbf{r} = \\begin{pmatrix} 3 \\\\ -2 \\\\ 5 \\end{pmatrix} + t\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$. Substitute into $\\Pi$:\n$$(3 + t) + 2(-2 + 2t) - 2(5 - 2t) = 4 \\Rightarrow 9t - 11 = 4 \\Rightarrow t = \\frac{5}{3}$$\nFoot: $\\left(3 + \\frac{5}{3}, -2 + \\frac{10}{3}, 5 - \\frac{10}{3}\\right) = \\left(\\frac{14}{3}, \\frac{4}{3}, \\frac{5}{3}\\right)$. Check: $\\frac{14}{3} + \\frac{8}{3} - \\frac{10}{3} = 4$ ✓\n\nDistance $= |t|\\,|\\mathbf{n}| = \\frac{5}{3} \\times 3 = 5$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q10",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "The planes $\\Pi_1$: $2x - y + 2z = 3$ and $\\Pi_2$: $x + y - z = 1$ intersect in the line $l$.\n\n(a) Find the acute angle between $\\Pi_1$ and $\\Pi_2$, in degrees to 1 decimal place.\n\n(b) Find a vector equation of $l$.",
+  "hint": "(a) Use the normals. (b) The direction of $l$ is perpendicular to both normals, so use $\\mathbf{n}_1 \\times \\mathbf{n}_2$. For a point on $l$, set $x = 0$ and solve the two plane equations.",
+  "answer": "(a) $78.9^\\circ$ (b) $\\mathbf{r} = \\begin{pmatrix} 0 \\\\ 5 \\\\ 4 \\end{pmatrix} + t\\begin{pmatrix} -1 \\\\ 4 \\\\ 3 \\end{pmatrix}$ (or equivalent)",
+  "solution": "**(a)** $\\mathbf{n}_1 = \\begin{pmatrix} 2 \\\\ -1 \\\\ 2 \\end{pmatrix}$, $\\mathbf{n}_2 = \\begin{pmatrix} 1 \\\\ 1 \\\\ -1 \\end{pmatrix}$:\n$$\\mathbf{n}_1 \\cdot \\mathbf{n}_2 = 2 - 1 - 2 = -1, \\quad |\\mathbf{n}_1| = 3, \\quad |\\mathbf{n}_2| = \\sqrt{3}$$\n$$\\cos\\theta = \\frac{|-1|}{3\\sqrt{3}} = 0.19245\\ldots \\Rightarrow \\theta = 78.9^\\circ$$\n(The angle between the planes equals the angle between their normals; the absolute value gives the acute one.)\n\n**(b)** Direction:\n$$\\mathbf{n}_1 \\times \\mathbf{n}_2 = \\begin{pmatrix} (-1)(-1) - (2)(1) \\\\ (2)(1) - (2)(-1) \\\\ (2)(1) - (-1)(1) \\end{pmatrix} = \\begin{pmatrix} -1 \\\\ 4 \\\\ 3 \\end{pmatrix}$$\nPoint: put $x = 0$: $-y + 2z = 3$ and $y - z = 1$. Adding gives $z = 4$, then $y = 5$. Point $(0, 5, 4)$; check: $\\Pi_1$: $-5 + 8 = 3$ ✓, $\\Pi_2$: $5 - 4 = 1$ ✓.\n$$l: \\mathbf{r} = \\begin{pmatrix} 0 \\\\ 5 \\\\ 4 \\end{pmatrix} + t\\begin{pmatrix} -1 \\\\ 4 \\\\ 3 \\end{pmatrix}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-vectors-lines-planes-q11",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The plane $\\Pi$ has equation $x - y + z = 3$. The lines $l_1$ and $l_2$ are\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 1 \\end{pmatrix}, \\qquad l_2: \\mathbf{r} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 2 \\end{pmatrix} + \\mu\\begin{pmatrix} 1 \\\\ 2 \\\\ 1 \\end{pmatrix}$$\nSam says: \"The direction $\\begin{pmatrix} 1 \\\\ 2 \\\\ 1 \\end{pmatrix}$ is perpendicular to the normal of $\\Pi$, so both lines lie in $\\Pi$.\"\n\n(a) Show that the direction vector is perpendicular to the normal of $\\Pi$.\n\n(b) Is Sam correct? Justify your answer fully, and for any line that does not lie in $\\Pi$, find its exact distance from $\\Pi$.",
+  "hint": "If $\\mathbf{b} \\cdot \\mathbf{n} = 0$, the line is parallel to the plane. It lies **in** the plane only if one of its points is in the plane.",
+  "answer": "(a) $\\begin{pmatrix} 1 \\\\ 2 \\\\ 1 \\end{pmatrix} \\cdot \\begin{pmatrix} 1 \\\\ -1 \\\\ 1 \\end{pmatrix} = 0$ (b) No. Both lines are parallel to $\\Pi$; $l_2$ lies in $\\Pi$ (its point $(2, 1, 2)$ satisfies the equation) but $l_1$ does not ($(1, 1, 1)$ gives $1 \\ne 3$). $l_1$ is at distance $\\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$ from $\\Pi$.",
+  "solution": "**(a)** $\\mathbf{n} = \\begin{pmatrix} 1 \\\\ -1 \\\\ 1 \\end{pmatrix}$ and $\\mathbf{b} \\cdot \\mathbf{n} = 1 - 2 + 1 = 0$, so $\\mathbf{b} \\perp \\mathbf{n}$.\n\n**(b)** $\\mathbf{b} \\cdot \\mathbf{n} = 0$ only tells us each line is **parallel** to $\\Pi$: it either lies in $\\Pi$ or never meets it. To decide, test one point of each line.\n\n$l_2$: $(2, 1, 2)$ gives $2 - 1 + 2 = 3$ ✓. Since the line is parallel to $\\Pi$ and has a point in $\\Pi$, every point is in $\\Pi$: $l_2$ lies in $\\Pi$.\n\n$l_1$: $(1, 1, 1)$ gives $1 - 1 + 1 = 1 \\ne 3$. So $l_1$ is parallel to $\\Pi$ but not in it; Sam is **wrong** about $l_1$.\n\nEvery point of $l_1$ is the same distance from $\\Pi$, so use $(1, 1, 1)$:\n$$\\text{distance} = \\frac{|1 - 1 + 1 - 3|}{\\sqrt{1 + 1 + 1}} = \\frac{2}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q12",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A flat rectangular roof $PQRS$ over a garden room is modelled using coordinates in metres, with the ground as the plane $z = 0$. The corners are $P(0, 0, 3)$, $Q(4, 0, 3)$, $R(4, 5, 5)$ and $S(0, 5, 5)$, as shown in the sketch (not drawn to scale).\n\n(a) Show that $\\begin{pmatrix} 0 \\\\ -2 \\\\ 5 \\end{pmatrix}$ is normal to the roof, and find a Cartesian equation of the plane of the roof.\n\n(b) Find the angle the roof makes with the horizontal ground, to 1 decimal place.\n\n(c) Use a vector product to find the area of the roof, to 3 significant figures.\n\n(d) A vertical aerial pole stands on the ground at $(2, 1, 0)$. Find the height at which it passes through the roof.",
+  "hint": "(a) Take the vector product of $\\overrightarrow{PQ}$ and $\\overrightarrow{PS}$. (b) The ground has normal $\\mathbf{k} = \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$; the angle between planes equals the angle between their normals. (c) A parallelogram has area $|\\mathbf{u} \\times \\mathbf{v}|$.",
+  "answer": "(a) $\\overrightarrow{PQ} \\times \\overrightarrow{PS} = \\begin{pmatrix} 0 \\\\ -8 \\\\ 20 \\end{pmatrix} = 4\\begin{pmatrix} 0 \\\\ -2 \\\\ 5 \\end{pmatrix}$; roof: $-2y + 5z = 15$ (b) $21.8^\\circ$ (c) $21.5\\ \\text{m}^2$ (d) $3.4$ m",
+  "solution": "**(a)** $\\overrightarrow{PQ} = \\begin{pmatrix} 4 \\\\ 0 \\\\ 0 \\end{pmatrix}$, $\\overrightarrow{PS} = \\begin{pmatrix} 0 \\\\ 5 \\\\ 2 \\end{pmatrix}$.\n$$\\overrightarrow{PQ} \\times \\overrightarrow{PS} = \\begin{pmatrix} (0)(2) - (0)(5) \\\\ (0)(0) - (4)(2) \\\\ (4)(5) - (0)(0) \\end{pmatrix} = \\begin{pmatrix} 0 \\\\ -8 \\\\ 20 \\end{pmatrix} = 4\\begin{pmatrix} 0 \\\\ -2 \\\\ 5 \\end{pmatrix}$$\nso $\\mathbf{n} = \\begin{pmatrix} 0 \\\\ -2 \\\\ 5 \\end{pmatrix}$ is normal to the roof. With $P$: $\\mathbf{n} \\cdot \\mathbf{p} = 0 + 0 + 15 = 15$, so the roof is\n$$-2y + 5z = 15$$\nCheck $R$: $-10 + 25 = 15$ ✓\n\n**(b)** Angle between normals $\\mathbf{n}$ and $\\mathbf{k}$:\n$$\\cos\\theta = \\frac{5}{\\sqrt{29} \\times 1} \\Rightarrow \\theta = 21.8^\\circ$$\n(Check: the roof rises 2 m over 5 m horizontally, and $\\tan^{-1}\\frac{2}{5} = 21.8^\\circ$ ✓)\n\n**(c)** Area of parallelogram $= |\\overrightarrow{PQ} \\times \\overrightarrow{PS}| = \\sqrt{0 + 64 + 400} = \\sqrt{464} = 21.5\\ \\text{m}^2$ (3 s.f.)\n(Check: $PQ = 4$ and $PS = \\sqrt{29}$ are perpendicular, so the area is $4\\sqrt{29} = 21.5$ ✓)\n\n**(d)** On the pole $x = 2$, $y = 1$. Substitute into the roof equation:\n$$-2(1) + 5z = 15 \\Rightarrow z = 3.4$$\nThe pole passes through the roof at a height of $3.4$ m.",
+  "linkedTopicIds": [],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><line x1=\"40.0\" y1=\"250.0\" x2=\"258.4\" y2=\"250.0\" stroke=\"currentColor\"/><line x1=\"40.0\" y1=\"250.0\" x2=\"203.8\" y2=\"155.5\" stroke=\"currentColor\"/><line x1=\"40.0\" y1=\"250.0\" x2=\"40.0\" y2=\"35.8\" stroke=\"currentColor\"/><text x=\"268.4\" y=\"254.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"211.8\" y=\"153.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">y</text><text x=\"40.0\" y=\"29.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">z</text><text x=\"30.0\" y=\"264.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><polygon points=\"40.0,148.0 208.0,148.0 338.0,5.0 170.0,5.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"208.0\" y1=\"148.0\" x2=\"208.0\" y2=\"250.0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><line x1=\"338.0\" y1=\"5.0\" x2=\"338.0\" y2=\"175.0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><line x1=\"170.0\" y1=\"5.0\" x2=\"170.0\" y2=\"175.0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><line x1=\"208.0\" y1=\"250.0\" x2=\"338.0\" y2=\"175.0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><line x1=\"170.0\" y1=\"175.0\" x2=\"338.0\" y2=\"175.0\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"28.0\" y=\"153.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text><text x=\"212.0\" y=\"164.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Q</text><text x=\"350.0\" y=\"5.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">R</text><text x=\"162.0\" y=\"-1.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">S</text></svg>"
+ },
+ {
+  "id": "fur-vectors-lines-planes-q13",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The points $A$, $B$, $C$ and $D$ have coordinates $A(2, 1, 0)$, $B(4, 0, 1)$, $C(1, 3, 2)$ and $D(6, 6, -3)$.\n\nThe plane $\\Pi$ contains $A$, $B$ and $C$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\overrightarrow{AB} \\times \\overrightarrow{AC}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find a Cartesian equation of $\\Pi$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact area of triangle $ABC$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the exact shortest distance from $D$ to $\\Pi$.",
+    "marks": 2
+   },
+   {
+    "label": "e",
+    "prompt": "Hence find the volume of the tetrahedron $ABCD$.",
+    "marks": 2
+   }
+  ],
+  "marks": 10,
+  "calculator": true,
+  "hint": "The volume of a tetrahedron is $\\frac{1}{3} \\times \\text{base area} \\times \\text{perpendicular height}$; the height is the distance from $D$ to $\\Pi$.",
+  "answer": "(a) $\\begin{pmatrix} -4 \\\\ -5 \\\\ 3 \\end{pmatrix}$ (b) $4x + 5y - 3z = 13$ (c) $\\dfrac{5\\sqrt{2}}{2}$ (d) $5\\sqrt{2}$ (e) $\\dfrac{25}{3}$",
+  "solution": "**(a)** $\\overrightarrow{AB} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}$, $\\overrightarrow{AC} = \\begin{pmatrix} -1 \\\\ 2 \\\\ 2 \\end{pmatrix}$ **M1**\n$$\\overrightarrow{AB} \\times \\overrightarrow{AC} = \\begin{pmatrix} (-1)(2) - (1)(2) \\\\ (1)(-1) - (2)(2) \\\\ (2)(2) - (-1)(-1) \\end{pmatrix} = \\begin{pmatrix} -4 \\\\ -5 \\\\ 3 \\end{pmatrix}$$ **A1**\n\n**(b)** Take $\\mathbf{n} = \\begin{pmatrix} 4 \\\\ 5 \\\\ -3 \\end{pmatrix}$; $\\mathbf{a} \\cdot \\mathbf{n} = 8 + 5 - 0 = 13$ **M1**\n$$\\Pi: 4x + 5y - 3z = 13$$ **A1**\n(Check $B$: $16 + 0 - 3 = 13$ ✓; $C$: $4 + 15 - 6 = 13$ ✓)\n\n**(c)** $|\\mathbf{n}| = \\sqrt{16 + 25 + 9} = \\sqrt{50} = 5\\sqrt{2}$ **M1**\n$$\\text{Area} = \\frac{1}{2} \\times 5\\sqrt{2} = \\frac{5\\sqrt{2}}{2}$$ **A1**\n\n**(d)**\n$$\\frac{|4(6) + 5(6) - 3(-3) - 13|}{\\sqrt{50}} = \\frac{|24 + 30 + 9 - 13|}{5\\sqrt{2}} = \\frac{50}{5\\sqrt{2}}$$ **M1**\n$$= \\frac{10}{\\sqrt{2}} = 5\\sqrt{2}$$ **A1**\n(Indeed $\\overrightarrow{AD} = \\begin{pmatrix} 4 \\\\ 5 \\\\ -3 \\end{pmatrix} = \\mathbf{n}$, so $D$ lies directly \"above\" $A$ along the normal, at distance $|\\mathbf{n}| = 5\\sqrt{2}$.)\n\n**(e)**\n$$V = \\frac{1}{3} \\times \\frac{5\\sqrt{2}}{2} \\times 5\\sqrt{2}$$ **M1**\n$$= \\frac{1}{3} \\times \\frac{50}{2} = \\frac{25}{3}$$ **A1**",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q14",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The lines $l_1$ and $l_2$ have equations\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ -1 \\\\ 1 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\qquad l_2: \\mathbf{r} = \\begin{pmatrix} 6 \\\\ -5 \\\\ 1 \\end{pmatrix} + \\mu\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n\n(a) Show that $l_1$ and $l_2$ are skew.\n\n(b) Find the shortest distance between $l_1$ and $l_2$.\n\n(c) Find the coordinates of the points $P$ on $l_1$ and $Q$ on $l_2$ for which $PQ$ is this shortest distance.",
+  "hint": "(b) The common perpendicular has direction $\\mathbf{b}_1 \\times \\mathbf{b}_2$; project any vector joining the lines onto it. (c) Write $\\overrightarrow{PQ}$ in terms of $\\lambda$ and $\\mu$ and make it perpendicular to both directions.",
+  "answer": "(a) See solution. (b) $6$ (c) $P(3, 1, 1)$, $Q(7, -3, 3)$",
+  "solution": "**(a)** The directions $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$ and $\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$ are not multiples of each other, so the lines are not parallel.\nEquating: $x$: $1 + \\lambda = 6 + \\mu$; $y$: $-1 + \\lambda = -5 + 2\\mu$. Subtracting: $2 = 11 - \\mu$, so $\\mu = 9$, $\\lambda = 14$.\n$z$: $l_1$ gives $1$; $l_2$ gives $1 + 2(9) = 19$. Since $1 \\ne 19$ the lines do not meet. Not parallel and not intersecting: skew.\n\n**(b)** Common perpendicular direction:\n$$\\mathbf{n} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} \\times \\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} (1)(2) - (0)(2) \\\\ (0)(1) - (1)(2) \\\\ (1)(2) - (1)(1) \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ -2 \\\\ 1 \\end{pmatrix}, \\quad |\\mathbf{n}| = 3$$\nA vector joining the lines: $\\mathbf{a}_2 - \\mathbf{a}_1 = \\begin{pmatrix} 5 \\\\ -4 \\\\ 0 \\end{pmatrix}$.\n$$d = \\frac{|(\\mathbf{a}_2 - \\mathbf{a}_1) \\cdot \\mathbf{n}|}{|\\mathbf{n}|} = \\frac{|10 + 8 + 0|}{3} = 6$$\n\n**(c)** $P = (1 + \\lambda, -1 + \\lambda, 1)$, $Q = (6 + \\mu, -5 + 2\\mu, 1 + 2\\mu)$, so\n$$\\overrightarrow{PQ} = \\begin{pmatrix} 5 + \\mu - \\lambda \\\\ -4 + 2\\mu - \\lambda \\\\ 2\\mu \\end{pmatrix}$$\nPerpendicular to $\\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$: $(5 + \\mu - \\lambda) + (-4 + 2\\mu - \\lambda) = 0 \\Rightarrow 3\\mu - 2\\lambda = -1$\nPerpendicular to $\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$: $(5 + \\mu - \\lambda) + 2(-4 + 2\\mu - \\lambda) + 4\\mu = 0 \\Rightarrow 9\\mu - 3\\lambda = 3$\nFrom the second, $\\lambda = 3\\mu - 1$; substituting, $3\\mu - 6\\mu + 2 = -1$, so $\\mu = 1$ and $\\lambda = 2$.\n$$P(3, 1, 1), \\quad Q(7, -3, 3)$$\nCheck: $\\overrightarrow{PQ} = \\begin{pmatrix} 4 \\\\ -4 \\\\ 2 \\end{pmatrix} = 2\\mathbf{n}$ and $|\\overrightarrow{PQ}| = \\sqrt{16 + 16 + 4} = 6$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q15",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A geologist models a coal seam as the plane $\\Pi$: $3x + 4y + 12z = -290$, with coordinates in metres, $z$ measured vertically upwards and the ground surface as $z = 0$.\n\nA straight borehole is drilled from the point $S(20, 10, 0)$ on the surface in the direction $\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$.\n\n(a) Find the coordinates of the point where the borehole reaches the seam, and the length of borehole needed.\n\n(b) Find the acute angle between the borehole and the seam.\n\n(c) Find the shortest distance from $S$ to the seam. Explain why this is less than your borehole length in (a).\n\n(d) Find the angle at which the seam is inclined to the horizontal.\n\nGive angles to 1 decimal place.",
+  "hint": "(a) Substitute $\\mathbf{r} = \\begin{pmatrix} 20 \\\\ 10 \\\\ 0 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}$ into $\\Pi$. (b) The angle with a plane uses $\\sin$, not $\\cos$. (c) Point–plane distance: remember to divide by $|\\mathbf{n}|$.",
+  "answer": "(a) $(50, 70, -60)$; 90 m (b) $19.5^\\circ$ (c) 30 m; the perpendicular is the shortest route, and the borehole is not perpendicular to the seam (d) $22.6^\\circ$",
+  "solution": "**(a)** $\\mathbf{r} = (20 + \\lambda, 10 + 2\\lambda, -2\\lambda)$. Substituting into $\\Pi$:\n$$3(20 + \\lambda) + 4(10 + 2\\lambda) + 12(-2\\lambda) = -290 \\Rightarrow 100 - 13\\lambda = -290 \\Rightarrow \\lambda = 30$$\nPoint: $(50, 70, -60)$, i.e. 60 m below the surface. Check: $150 + 280 - 720 = -290$ ✓\nLength $= 30 \\times \\left|\\begin{pmatrix} 1 \\\\ 2 \\\\ -2 \\end{pmatrix}\\right| = 30 \\times 3 = 90$ m.\n\n**(b)** $\\mathbf{b} \\cdot \\mathbf{n} = 3 + 8 - 24 = -13$, $|\\mathbf{b}| = 3$, $|\\mathbf{n}| = \\sqrt{9 + 16 + 144} = 13$.\n$$\\sin\\theta = \\frac{|-13|}{3 \\times 13} = \\frac{1}{3} \\Rightarrow \\theta = 19.5^\\circ$$\n(Using $\\cos$ would give $70.5^\\circ$, the angle with the normal.)\n\n**(c)**\n$$\\frac{|3(20) + 4(10) + 12(0) - (-290)|}{13} = \\frac{390}{13} = 30 \\text{ m}$$\nThe shortest distance is along the normal. The borehole meets the seam at only $19.5^\\circ$, so it travels further: indeed $90\\sin 19.5^\\circ = 90 \\times \\frac{1}{3} = 30$ ✓\n\n**(d)** Angle between the seam and the horizontal = angle between normals $\\mathbf{n}$ and $\\mathbf{k}$:\n$$\\cos\\phi = \\frac{12}{13} \\Rightarrow \\phi = 22.6^\\circ$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q16",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The line $l$ has equation $\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 2 \\\\ 1 \\\\ -2 \\end{pmatrix}$ and $P$ is the point $(4, 3, 2)$. The point $Q$ on $l$ has parameter $\\lambda$.\n\n(a) Show that $PQ^2 = 9\\lambda^2 - 18\\lambda + 18$.\n\n(b) Use calculus to find the minimum value of $PQ$, and the coordinates of $Q$ at which it occurs.\n\n(c) Verify that, at this point, $\\overrightarrow{PQ}$ is perpendicular to $l$, and explain why this must be so.",
+  "hint": "(a) Write $\\overrightarrow{PQ} = \\mathbf{q} - \\mathbf{p}$ in terms of $\\lambda$ and find its magnitude squared. (b) Minimising $PQ^2$ also minimises $PQ$.",
+  "answer": "(a) Shown (see solution). (b) Minimum $PQ = 3$ at $\\lambda = 1$, $Q(3, 1, 0)$ (c) $\\overrightarrow{PQ} = \\begin{pmatrix} -1 \\\\ -2 \\\\ -2 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ -2 \\\\ -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\\\ -2 \\end{pmatrix} = 0$",
+  "solution": "**(a)** $Q = (1 + 2\\lambda, \\lambda, 2 - 2\\lambda)$, so\n$$\\overrightarrow{PQ} = \\begin{pmatrix} 2\\lambda - 3 \\\\ \\lambda - 3 \\\\ -2\\lambda \\end{pmatrix}$$\n$$PQ^2 = (2\\lambda - 3)^2 + (\\lambda - 3)^2 + 4\\lambda^2 = (4\\lambda^2 - 12\\lambda + 9) + (\\lambda^2 - 6\\lambda + 9) + 4\\lambda^2 = 9\\lambda^2 - 18\\lambda + 18$$\n\n**(b)** Let $f(\\lambda) = 9\\lambda^2 - 18\\lambda + 18$. Since $PQ \\ge 0$, $PQ$ is smallest when $f$ is smallest.\n$$f'(\\lambda) = 18\\lambda - 18 = 0 \\Rightarrow \\lambda = 1$$\n$f''(\\lambda) = 18 > 0$, so this is a minimum. $f(1) = 9 - 18 + 18 = 9$, so the minimum distance is $PQ = 3$, at $Q(3, 1, 0)$.\n(Completing the square agrees: $f(\\lambda) = 9(\\lambda - 1)^2 + 9$.)\n\n**(c)** At $\\lambda = 1$: $\\overrightarrow{PQ} = \\begin{pmatrix} -1 \\\\ -2 \\\\ -2 \\end{pmatrix}$ and\n$$\\begin{pmatrix} -1 \\\\ -2 \\\\ -2 \\end{pmatrix} \\cdot \\begin{pmatrix} 2 \\\\ 1 \\\\ -2 \\end{pmatrix} = -2 - 2 + 4 = 0$$\nso $PQ \\perp l$. This must happen: if $PQ$ were not perpendicular to $l$, moving $Q$ slightly along $l$ towards the foot of the perpendicular would shorten $PQ$ (Pythagoras), so the shortest distance from a point to a line is always along the perpendicular.",
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "pure-quadratic-functions-discriminant"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q17",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The planes $\\Pi_1$, $\\Pi_2$ and $\\Pi_3$ have equations\n$$\\begin{aligned} x + 2y - z &= 3 \\\\ 2x - y + z &= 4 \\\\ x - 3y + kz &= c \\end{aligned}$$\nwhere $k$ and $c$ are constants.\n\n(a) Find the value of $k$ for which the three planes do **not** meet at a single point.\n\n(b) For this value of $k$:\n(i) find the value of $c$ for which the three planes meet in a common line, and find a vector equation of that line;\n(ii) describe the geometrical arrangement of the planes for any other value of $c$, justifying your answer.\n\n(c) Given instead that $k = 3$ and $c = 2$, use an inverse matrix to find the point of intersection of the three planes.",
+  "hint": "(a) Set the determinant of the coefficient matrix equal to zero. (b) Look for a combination $\\alpha\\Pi_1 + \\beta\\Pi_2$ whose left-hand side matches $\\Pi_3$. The line of $\\Pi_1 \\cap \\Pi_2$ has direction $\\mathbf{n}_1 \\times \\mathbf{n}_2$.",
+  "answer": "(a) $k = 2$ (b)(i) $c = 1$; $\\mathbf{r} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix} + t\\begin{pmatrix} 1 \\\\ -3 \\\\ -5 \\end{pmatrix}$ (ii) For $c \\ne 1$ the planes form a triangular prism: each pair meets in a line, the three lines are parallel, and there is no common point. (c) $(2, 1, 1)$",
+  "solution": "**(a)** Let $\\mathbf{M} = \\begin{pmatrix} 1 & 2 & -1 \\\\ 2 & -1 & 1 \\\\ 1 & -3 & k \\end{pmatrix}$.\n$$\\det\\mathbf{M} = 1(-k + 3) - 2(2k - 1) + (-1)(-6 + 1) = 3 - k - 4k + 2 + 5 = 10 - 5k$$\nThere is a unique point of intersection exactly when $\\det\\mathbf{M} \\ne 0$, so the planes do not meet at a single point when $k = 2$.\n\n**(b)(i)** With $k = 2$, notice that $\\Pi_2 - \\Pi_1$ has left-hand side $(2 - 1)x + (-1 - 2)y + (1 + 1)z = x - 3y + 2z$, matching $\\Pi_3$. Any point on both $\\Pi_1$ and $\\Pi_2$ satisfies $x - 3y + 2z = 4 - 3 = 1$. So if $c = 1$, every point of the line $\\Pi_1 \\cap \\Pi_2$ is also on $\\Pi_3$: the planes form a **sheaf** meeting in a common line.\n\nDirection: $\\mathbf{n}_1 \\times \\mathbf{n}_2 = \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix} \\times \\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix} = \\begin{pmatrix} (2)(1) - (-1)(-1) \\\\ (-1)(2) - (1)(1) \\\\ (1)(-1) - (2)(2) \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ -3 \\\\ -5 \\end{pmatrix}$\nPoint: $(2, 1, 1)$ satisfies $\\Pi_1$ ($2 + 2 - 1 = 3$), $\\Pi_2$ ($4 - 1 + 1 = 4$) and $\\Pi_3$ ($2 - 3 + 2 = 1$).\n$$\\mathbf{r} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix} + t\\begin{pmatrix} 1 \\\\ -3 \\\\ -5 \\end{pmatrix}$$\n\n**(ii)** If $c \\ne 1$, any point on $\\Pi_1$ and $\\Pi_2$ has $x - 3y + 2z = 1 \\ne c$, so no point lies on all three planes: the system is inconsistent. No two normals $\\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix}, \\begin{pmatrix} 2 \\\\ -1 \\\\ 1 \\end{pmatrix}, \\begin{pmatrix} 1 \\\\ -3 \\\\ 2 \\end{pmatrix}$ are parallel, so no two planes are parallel and each pair meets in a line. All three lines are perpendicular to all three normals (the normals are coplanar since $\\det\\mathbf{M} = 0$), so they are parallel: the planes form a **triangular prism**.\n\n**(c)** With $k = 3$, $\\det\\mathbf{M} = -5$ and\n$$\\mathbf{M}^{-1} = \\frac{1}{-5}\\begin{pmatrix} 0 & -3 & 1 \\\\ -5 & 4 & -3 \\\\ -5 & 5 & -5 \\end{pmatrix} = \\begin{pmatrix} 0 & \\frac{3}{5} & -\\frac{1}{5} \\\\ 1 & -\\frac{4}{5} & \\frac{3}{5} \\\\ 1 & -1 & 1 \\end{pmatrix}$$\n$$\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\mathbf{M}^{-1}\\begin{pmatrix} 3 \\\\ 4 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 0 + \\frac{12}{5} - \\frac{2}{5} \\\\ 3 - \\frac{16}{5} + \\frac{6}{5} \\\\ 3 - 4 + 2 \\end{pmatrix} = \\begin{pmatrix} 2 \\\\ 1 \\\\ 1 \\end{pmatrix}$$\nThe planes meet at $(2, 1, 1)$. Check $\\Pi_3$: $2 - 3 + 3 = 2$ ✓",
+  "linkedTopicIds": [
+   "fur-determinants-inverses",
+   "fur-matrices-arithmetic"
+  ]
+ },
+ {
+  "id": "fur-vectors-lines-planes-q18",
+  "topicId": "fur-vectors-lines-planes",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The plane $\\Pi$ has equation $x + 2y + 2z = 9$ and the line $l$ has equation\n$$\\mathbf{r} = \\begin{pmatrix} 0 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 0 \\\\ 4 \\end{pmatrix}$$\nThe point $A(0, 1, -1)$ lies on $l$.\n\n(a) Find the coordinates of the point $X$ where $l$ meets $\\Pi$.\n\n(b) Find the coordinates of $A'$, the reflection of $A$ in $\\Pi$.\n\n(c) Hence find a vector equation of the line $l'$, the reflection of $l$ in $\\Pi$.\n\n(d) Show that $l$ and $l'$ make the same angle with $\\Pi$, and find this angle to 1 decimal place.",
+  "hint": "(b) Travel from $A$ along the normal: $\\mathbf{r} = \\mathbf{a} + t\\mathbf{n}$. Find $t$ at the foot of the perpendicular, then go the same distance again. (c) The reflected line passes through $X$ (which is on the mirror) and $A'$.",
+  "answer": "(a) $X(1, 1, 3)$ (b) $A'(2, 5, 3)$ (c) $\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 3 \\end{pmatrix} + \\mu\\begin{pmatrix} 1 \\\\ 4 \\\\ 0 \\end{pmatrix}$ (d) For both, $\\sin\\theta = \\frac{9}{3\\sqrt{17}} = \\frac{3}{\\sqrt{17}}$, so $\\theta = 46.7^\\circ$.",
+  "solution": "**(a)** Substitute $(\\lambda, 1, -1 + 4\\lambda)$ into $\\Pi$:\n$$\\lambda + 2 + 2(-1 + 4\\lambda) = 9 \\Rightarrow 9\\lambda = 9 \\Rightarrow \\lambda = 1$$\n$X = (1, 1, 3)$. Check: $1 + 2 + 6 = 9$ ✓\n\n**(b)** Perpendicular from $A$: $\\mathbf{r} = \\begin{pmatrix} 0 \\\\ 1 \\\\ -1 \\end{pmatrix} + t\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$. In $\\Pi$:\n$$t + 2(1 + 2t) + 2(-1 + 2t) = 9 \\Rightarrow 9t = 9 \\Rightarrow t = 1$$\nThe foot is $F(1, 3, 1)$ at $t = 1$, so the reflection is at $t = 2$:\n$$A' = (0 + 2, 1 + 4, -1 + 4) = (2, 5, 3)$$\n\n**(c)** $X$ lies on the mirror, so it is fixed by the reflection; $l'$ passes through $X$ and $A'$.\n$$\\overrightarrow{XA'} = \\begin{pmatrix} 1 \\\\ 4 \\\\ 0 \\end{pmatrix}, \\quad l': \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 3 \\end{pmatrix} + \\mu\\begin{pmatrix} 1 \\\\ 4 \\\\ 0 \\end{pmatrix}$$\n\n**(d)** $l$: $\\mathbf{b} \\cdot \\mathbf{n} = 1 + 0 + 8 = 9$, $|\\mathbf{b}| = \\sqrt{17}$. $\\quad l'$: $\\mathbf{b}' \\cdot \\mathbf{n} = 1 + 8 + 0 = 9$, $|\\mathbf{b}'| = \\sqrt{17}$. $\\quad |\\mathbf{n}| = 3$.\nFor both lines\n$$\\sin\\theta = \\frac{9}{3\\sqrt{17}} = \\frac{3}{\\sqrt{17}} \\Rightarrow \\theta = 46.7^\\circ$$\nas expected for a mirror image (the angle of incidence equals the angle of reflection).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
