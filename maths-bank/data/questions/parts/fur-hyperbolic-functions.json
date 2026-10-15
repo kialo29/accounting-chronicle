@@ -1,0 +1,277 @@
+[
+ {
+  "id": "fur-hyperbolic-functions-q01",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sinh x = \\dfrac{3}{4}$, giving your answer as an exact logarithm.",
+  "hint": "Either use $\\operatorname{arsinh} x = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$, or write $\\sinh x$ in terms of $e^x$ and solve a quadratic in $e^x$.",
+  "answer": "$x = \\ln 2$",
+  "solution": "$$x = \\operatorname{arsinh}\\frac{3}{4} = \\ln\\left(\\frac{3}{4} + \\sqrt{\\frac{9}{16} + 1}\\right) = \\ln\\left(\\frac{3}{4} + \\frac{5}{4}\\right) = \\ln 2$$\n\nCheck: $\\sinh(\\ln 2) = \\dfrac{2 - \\frac{1}{2}}{2} = \\dfrac{3}{4}$ ✓\n\nSince $\\sinh$ is one-to-one (always increasing), this is the only solution.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q02",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\cosh x = \\dfrac{3}{4}$.",
+  "hint": "What is the smallest value that $\\cosh x$ can take?",
+  "answer": "No real solutions, since $\\cosh x \\ge 1$ for all real $x$.",
+  "solution": "**What changed:** $\\sinh$ has become $\\cosh$; the right-hand side is the same.\n\n$\\cosh x = \\frac{e^x + e^{-x}}{2} \\ge 1$ for all real $x$ (by AM–GM, $e^x + e^{-x} \\ge 2\\sqrt{e^x e^{-x}} = 2$; the graph has minimum point $(0, 1)$).\n\nSince $\\frac{3}{4} < 1$, the equation has **no real solutions**. ($\\operatorname{arcosh}\\frac{3}{4}$ is not defined.)\n\nAlgebraic check: $e^x + e^{-x} = \\frac{3}{2} \\Rightarrow 2e^{2x} - 3e^x + 2 = 0$, discriminant $9 - 16 < 0$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q03",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\cosh x = \\dfrac{5}{4}$, giving your answers as exact logarithms.",
+  "hint": "$\\cosh$ is an even function, so expect two answers.",
+  "answer": "$x = \\pm\\ln 2$",
+  "solution": "**What changed:** the right-hand side is now $\\frac{5}{4} \\ge 1$, so solutions exist.\n\n$$\\operatorname{arcosh}\\frac{5}{4} = \\ln\\left(\\frac{5}{4} + \\sqrt{\\frac{25}{16} - 1}\\right) = \\ln\\left(\\frac{5}{4} + \\frac{3}{4}\\right) = \\ln 2$$\n\nBut $\\operatorname{arcosh}$ only gives the non-negative solution. Since $\\cosh$ is even, $\\cosh(-x) = \\cosh x$, so\n$$x = \\pm\\ln 2$$\n\nCheck: $\\cosh(\\ln 2) = \\frac{2 + \\frac{1}{2}}{2} = \\frac{5}{4}$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q04",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\cosh 2x = \\dfrac{5}{4}$, giving your answers as exact logarithms.",
+  "hint": "Let $u = 2x$ and use the previous result.",
+  "answer": "$x = \\pm\\dfrac{1}{2}\\ln 2$ $\\left(= \\pm\\ln\\sqrt{2}\\right)$",
+  "solution": "**What changed:** the argument is now $2x$ instead of $x$.\n\nFrom $\\cosh u = \\frac{5}{4}$: $u = \\pm\\ln 2$. So $2x = \\pm\\ln 2$ and\n$$x = \\pm\\frac{1}{2}\\ln 2 = \\pm\\ln\\sqrt{2}$$\n\nEffect of the change: the solutions are halved, just as replacing $x$ by $2x$ squashes the graph horizontally by a factor of 2.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q05",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Using the definitions in terms of exponentials, find the exact values of\n$$\\text{(a) } \\sinh(\\ln 3) \\qquad \\text{(b) } \\cosh(\\ln 3) \\qquad \\text{(c) } \\tanh(\\ln 3)$$",
+  "hint": "$e^{\\ln 3} = 3$ and $e^{-\\ln 3} = \\frac{1}{3}$.",
+  "answer": "(a) $\\dfrac{4}{3}$ (b) $\\dfrac{5}{3}$ (c) $\\dfrac{4}{5}$",
+  "solution": "$e^{\\ln 3} = 3$ and $e^{-\\ln 3} = \\frac{1}{3}$.\n\n**(a)** $\\sinh(\\ln 3) = \\dfrac{3 - \\frac{1}{3}}{2} = \\dfrac{8/3}{2} = \\dfrac{4}{3}$\n\n**(b)** $\\cosh(\\ln 3) = \\dfrac{3 + \\frac{1}{3}}{2} = \\dfrac{10/3}{2} = \\dfrac{5}{3}$\n\n**(c)** $\\tanh(\\ln 3) = \\dfrac{\\sinh(\\ln 3)}{\\cosh(\\ln 3)} = \\dfrac{4/3}{5/3} = \\dfrac{4}{5}$\n\nCheck: $\\cosh^2 - \\sinh^2 = \\frac{25}{9} - \\frac{16}{9} = 1$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q06",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Differentiate with respect to $x$:\n$$\\text{(a) } \\cosh 3x \\qquad \\text{(b) } x^2\\sinh x \\qquad \\text{(c) } \\ln(\\cosh x) \\qquad \\text{(d) } \\operatorname{arsinh} 2x$$",
+  "hint": "$\\frac{d}{dx}\\sinh x = \\cosh x$ and $\\frac{d}{dx}\\cosh x = \\sinh x$ – no minus signs. Use the chain and product rules as usual.",
+  "answer": "(a) $3\\sinh 3x$ (b) $2x\\sinh x + x^2\\cosh x$ (c) $\\tanh x$ (d) $\\dfrac{2}{\\sqrt{4x^2 + 1}}$",
+  "solution": "**(a)** Chain rule: $\\frac{d}{dx}\\cosh 3x = 3\\sinh 3x$. (Not $-3\\sinh 3x$: from the definition, $\\frac{d}{dx}\\frac{e^{3x} + e^{-3x}}{2} = \\frac{3e^{3x} - 3e^{-3x}}{2} = 3\\sinh 3x$.)\n\n**(b)** Product rule: $2x\\sinh x + x^2\\cosh x$.\n\n**(c)** Chain rule: $\\dfrac{1}{\\cosh x} \\times \\sinh x = \\tanh x$.\n\n**(d)** $\\frac{d}{du}\\operatorname{arsinh} u = \\frac{1}{\\sqrt{u^2 + 1}}$ with $u = 2x$:\n$$\\frac{2}{\\sqrt{(2x)^2 + 1}} = \\frac{2}{\\sqrt{4x^2 + 1}}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q07",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find\n$$\\text{(a) } \\int \\sinh 2x \\, dx \\qquad \\text{(b) } \\int_0^{\\ln 2} \\cosh x \\, dx \\qquad \\text{(c) } \\int \\frac{1}{\\sqrt{x^2 + 16}} \\, dx \\qquad \\text{(d) } \\int_2^4 \\frac{1}{\\sqrt{x^2 - 4}} \\, dx$$\ngiving the answers to (b) and (d) in exact form.",
+  "hint": "For (c) and (d) use $\\int \\frac{dx}{\\sqrt{x^2 + a^2}} = \\operatorname{arsinh}\\frac{x}{a} + c$ and $\\int \\frac{dx}{\\sqrt{x^2 - a^2}} = \\operatorname{arcosh}\\frac{x}{a} + c$ $(x > a)$.",
+  "answer": "(a) $\\frac{1}{2}\\cosh 2x + c$ (b) $\\frac{3}{4}$ (c) $\\operatorname{arsinh}\\frac{x}{4} + c$ (d) $\\ln\\left(2 + \\sqrt{3}\\right)$",
+  "solution": "**(a)** $\\int \\sinh 2x \\, dx = \\frac{1}{2}\\cosh 2x + c$ (check: differentiating gives $\\sinh 2x$, with a plus sign).\n\n**(b)** $\\left[\\sinh x\\right]_0^{\\ln 2} = \\sinh(\\ln 2) - 0 = \\dfrac{2 - \\frac{1}{2}}{2} = \\dfrac{3}{4}$\n\n**(c)** $a = 4$: $\\operatorname{arsinh}\\dfrac{x}{4} + c$ $\\left(\\text{equivalently } \\ln\\left(x + \\sqrt{x^2 + 16}\\right) + c'\\right)$.\n\n**(d)** $a = 2$: $$\\left[\\operatorname{arcosh}\\frac{x}{2}\\right]_2^4 = \\operatorname{arcosh} 2 - \\operatorname{arcosh} 1 = \\ln\\left(2 + \\sqrt{3}\\right) - \\ln 1 = \\ln\\left(2 + \\sqrt{3}\\right)$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q08",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 2,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><line x1=\"16\" y1=\"145.6\" x2=\"304\" y2=\"145.6\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M304,145.6 L297.6,148.4 L297.6,142.9 z\" fill=\"currentColor\"/><line x1=\"154.7\" y1=\"264\" x2=\"154.7\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M154.7,16 L157.4,22.4 L151.9,22.4 z\" fill=\"currentColor\"/><text x=\"302\" y=\"161.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"162.7\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><text x=\"149.7\" y=\"160.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"48\" y1=\"148.1\" x2=\"48\" y2=\"143.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"48\" y=\"161.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"101.3\" y1=\"148.1\" x2=\"101.3\" y2=\"143.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"101.3\" y=\"161.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"208\" y1=\"148.1\" x2=\"208\" y2=\"143.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"208\" y=\"161.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"261.3\" y1=\"148.1\" x2=\"261.3\" y2=\"143.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"261.3\" y=\"161.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"151.8\" y1=\"202\" x2=\"157.5\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"148.7\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"151.8\" y1=\"89.3\" x2=\"157.5\" y2=\"89.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"148.7\" y=\"93.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"151.8\" y1=\"32.9\" x2=\"157.5\" y2=\"32.9\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"148.7\" y=\"36.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><path d=\"M31.3,16 L34.7,16 L38,18.5 L41.3,26 L44.7,33 L48,39.6 L51.3,45.8 L54.7,51.6 L58,57 L61.3,62.1 L64.7,66.9 L68,71.3 L71.3,75.5 L74.7,79.3 L78,83 L81.3,86.3 L84.7,89.5 L88,92.4 L91.3,95.1 L94.7,97.7 L98,100 L101.3,102.1 L104.7,104.1 L108,106 L111.3,107.6 L114.7,109.1 L118,110.5 L121.3,111.8 L124.7,112.9 L128,113.9 L131.3,114.7 L134.7,115.4 L138,116.1 L141.3,116.6 L144.7,117 L148,117.2 L151.3,117.4 L154.7,117.5 L158,117.4 L161.3,117.2 L164.7,117 L168,116.6 L171.3,116.1 L174.7,115.4 L178,114.7 L181.3,113.9 L184.7,112.9 L188,111.8 L191.3,110.5 L194.7,109.1 L198,107.6 L201.3,106 L204.7,104.1 L208,102.1 L211.3,100 L214.7,97.7 L218,95.1 L221.3,92.4 L224.7,89.5 L228,86.3 L231.3,83 L234.7,79.3 L238,75.5 L241.3,71.3 L244.7,66.9 L248,62.1 L251.3,57 L254.7,51.6 L258,45.8 L261.3,39.6 L264.7,33 L268,26 L271.3,18.5 L274.7,16 L278,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M36.3,264 L39.5,264 L42.7,259 L45.9,252.2 L49.1,245.7 L52.3,239.7 L55.5,234 L58.7,228.6 L61.9,223.4 L65.1,218.6 L68.3,214.1 L71.5,209.7 L74.7,205.6 L77.9,201.8 L81.1,198.1 L84.3,194.6 L87.5,191.3 L90.7,188.2 L93.9,185.2 L97.1,182.3 L100.3,179.6 L103.5,177 L106.7,174.6 L109.9,172.2 L113.1,169.9 L116.3,167.7 L119.5,165.6 L122.7,163.6 L125.9,161.6 L129.1,159.7 L132.3,157.8 L135.5,156 L138.7,154.2 L141.9,152.5 L145.1,150.7 L148.3,149 L151.5,147.3 L154.7,145.6 L157.9,143.9 L161.1,142.2 L164.3,140.5 L167.5,138.8 L170.7,137.1 L173.9,135.3 L177.1,133.4 L180.3,131.6 L183.5,129.7 L186.7,127.7 L189.9,125.7 L193.1,123.5 L196.3,121.4 L199.5,119.1 L202.7,116.7 L205.9,114.2 L209.1,111.6 L212.3,108.9 L215.5,106.1 L218.7,103.1 L221.9,100 L225.1,96.7 L228.3,93.2 L231.5,89.5 L234.7,85.6 L237.9,81.5 L241.1,77.2 L244.3,72.7 L247.5,67.8 L250.7,62.7 L253.9,57.3 L257.1,51.6 L260.3,45.5 L263.5,39.1 L266.7,32.3 L269.9,25.1 L273.1,17.4 L276.3,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M16,144.6 L19.6,144.5 L23.1,144.4 L26.7,144.4 L30.3,144.3 L33.8,144.2 L37.4,144.1 L41,144 L44.5,143.8 L48.1,143.7 L51.7,143.6 L55.2,143.5 L58.8,143.3 L62.4,143.1 L65.9,143 L69.5,142.8 L73.1,142.6 L76.6,142.4 L80.2,142.1 L83.8,141.9 L87.3,141.6 L90.9,141.4 L94.5,141.1 L98,140.8 L101.6,140.4 L105.2,140.1 L108.7,139.7 L112.3,139.3 L115.9,138.8 L119.4,138.4 L123,137.9 L126.6,137.3 L130.1,136.7 L133.7,136.1 L137.3,135.5 L140.8,134.8 L144.4,134 L148,133.2 L151.5,132.3 L155.1,131.4 L158.7,130.4 L162.2,129.4 L165.8,128.3 L169.4,127.1 L172.9,125.8 L176.5,124.4 L180.1,122.9 L183.6,121.4 L187.2,119.7 L190.8,117.9 L194.3,116 L197.9,113.9 L201.5,111.7 L205,109.4 L208.6,106.9 L212.2,104.2 L215.7,101.4 L219.3,98.3 L222.9,95 L226.4,91.5 L230,87.8 L233.6,83.8 L237.1,79.5 L240.7,74.9 L244.3,70 L247.8,64.8 L251.4,59.2 L255,53.2 L258.5,46.8 L262.1,40 L265.7,32.7 L269.2,24.9 L272.8,16.5 L276.4,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><text x=\"69.3\" y=\"31.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = cosh x</text><text x=\"234\" y=\"173.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = sinh x</text><text x=\"268\" y=\"29.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = ½eˣ</text></svg>",
+  "question": "The diagram shows the graphs of $y = \\cosh x$ and $y = \\sinh x$, together with the dashed curve $y = \\frac{1}{2}e^x$.\n\nBen says: \"For large $x$ the graphs of $\\cosh x$ and $\\sinh x$ get closer and closer, so they must cross eventually.\"\n\n(a) Show that $\\cosh x - \\sinh x = e^{-x}$, and hence explain whether Ben is right.\n\n(b) Explain why both graphs approach $y = \\frac{1}{2}e^x$ as $x \\to \\infty$, and describe the behaviour of each graph as $x \\to -\\infty$.\n\n(c) State the range of $\\cosh x$ and the range of $\\sinh x$.",
+  "hint": "Subtract the exponential definitions. Can $e^{-x}$ ever be zero?",
+  "answer": "(a) $\\cosh x - \\sinh x = e^{-x} > 0$ for all $x$, so the graphs never meet: Ben is wrong. (b) Both equal $\\frac{1}{2}e^x \\pm \\frac{1}{2}e^{-x}$ and $\\frac{1}{2}e^{-x} \\to 0$; as $x \\to -\\infty$, $\\cosh x \\approx \\frac{1}{2}e^{-x} \\to \\infty$ and $\\sinh x \\approx -\\frac{1}{2}e^{-x} \\to -\\infty$. (c) $\\cosh x \\ge 1$; $\\sinh x$ takes all real values.",
+  "solution": "**(a)**\n$$\\cosh x - \\sinh x = \\frac{e^x + e^{-x}}{2} - \\frac{e^x - e^{-x}}{2} = e^{-x}$$\n$e^{-x} > 0$ for every real $x$, so $\\cosh x > \\sinh x$ always and the graphs **never** intersect. The gap $e^{-x}$ tends to 0 as $x \\to \\infty$ – the graphs get arbitrarily close (asymptotic to each other) without meeting. Ben is wrong: \"getting closer\" does not mean \"eventually crossing\".\n\n**(b)** $\\cosh x = \\frac{1}{2}e^x + \\frac{1}{2}e^{-x}$ and $\\sinh x = \\frac{1}{2}e^x - \\frac{1}{2}e^{-x}$. As $x \\to \\infty$, $\\frac{1}{2}e^{-x} \\to 0$, so both approach $\\frac{1}{2}e^x$ (cosh from above, sinh from below).\n\nAs $x \\to -\\infty$, $\\frac{1}{2}e^x \\to 0$, so $\\cosh x \\approx \\frac{1}{2}e^{-x} \\to +\\infty$ (even function, mirror image) while $\\sinh x \\approx -\\frac{1}{2}e^{-x} \\to -\\infty$ (odd function, rotational symmetry about $O$).\n\n**(c)** Range of $\\cosh x$: $\\cosh x \\ge 1$ (minimum point $(0, 1)$). Range of $\\sinh x$: all real numbers.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q09",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Prove, using the exponential definitions, that $\\cosh 2x = 1 + 2\\sinh^2 x$.\n\n(b) Hence solve\n$$\\cosh 2x - 5\\sinh x = 4$$\ngiving your answers as exact logarithms.",
+  "hint": "(a) Start from the right-hand side and expand $(e^x - e^{-x})^2$. (b) Your equation becomes a quadratic in $\\sinh x$.",
+  "answer": "(a) Proof. (b) $x = \\ln\\left(3 + \\sqrt{10}\\right)$ or $x = \\ln\\left(\\dfrac{\\sqrt{5} - 1}{2}\\right)$",
+  "solution": "**(a)**\n$$1 + 2\\sinh^2 x = 1 + 2 \\times \\frac{(e^x - e^{-x})^2}{4} = 1 + \\frac{e^{2x} - 2 + e^{-2x}}{2} = \\frac{e^{2x} + e^{-2x}}{2} = \\cosh 2x \\quad\\blacksquare$$\n(Compare $\\cos 2x = 1 - 2\\sin^2 x$: the sign of the $\\sin^2$ term changes, as Osborn's rule predicts.)\n\n**(b)** Substitute: $1 + 2\\sinh^2 x - 5\\sinh x = 4$, so\n$$2\\sinh^2 x - 5\\sinh x - 3 = 0 \\Rightarrow (2\\sinh x + 1)(\\sinh x - 3) = 0$$\n\n$\\sinh x = 3$: $x = \\operatorname{arsinh} 3 = \\ln\\left(3 + \\sqrt{10}\\right)$\n\n$\\sinh x = -\\frac{1}{2}$: $x = \\ln\\left(-\\frac{1}{2} + \\sqrt{\\frac{1}{4} + 1}\\right) = \\ln\\left(\\frac{\\sqrt{5} - 1}{2}\\right)$\n\nBoth are valid because $\\sinh$ takes every real value exactly once (unlike $\\cosh$, there is nothing to reject).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q10",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Amir is solving $3\\cosh^2 x + 11\\sinh x = 7$. His working begins:\n\n\"Using $\\cosh^2 x = 1 - \\sinh^2 x$:\n$$3(1 - \\sinh^2 x) + 11\\sinh x = 7 \\Rightarrow 3\\sinh^2 x - 11\\sinh x + 4 = 0 \\Rightarrow \\sinh x = \\frac{11 \\pm \\sqrt{73}}{6}\\text{''}$$\n\n(a) Identify and explain Amir's error.\n\n(b) Solve the equation correctly, giving your answers as exact logarithms.",
+  "hint": "Which identity links $\\cosh^2 x$ and $\\sinh^2 x$? Test it with $x = \\ln 2$, where $\\cosh x = \\frac{5}{4}$ and $\\sinh x = \\frac{3}{4}$.",
+  "answer": "(a) He used the trig identity unchanged; the correct identity is $\\cosh^2 x = 1 + \\sinh^2 x$. (b) $x = \\ln\\left(\\dfrac{1 + \\sqrt{10}}{3}\\right)$ or $x = \\ln\\left(\\sqrt{17} - 4\\right)$",
+  "solution": "**(a)** The identity is wrong. He has copied $\\cos^2 x = 1 - \\sin^2 x$ from trigonometry. For hyperbolic functions $\\cosh^2 x - \\sinh^2 x = 1$, so $\\cosh^2 x = 1 + \\sinh^2 x$ (Osborn's rule: $\\sin^2$ is a product of two sines, so its sign changes). Check with $x = \\ln 2$: $1 - \\sinh^2 x = 1 - \\frac{9}{16} = \\frac{7}{16} \\ne \\frac{25}{16} = \\cosh^2 x$.\n\n**(b)** $3(1 + \\sinh^2 x) + 11\\sinh x = 7$\n$$3\\sinh^2 x + 11\\sinh x - 4 = 0 \\Rightarrow (3\\sinh x - 1)(\\sinh x + 4) = 0$$\n\n$\\sinh x = \\frac{1}{3}$: $x = \\ln\\left(\\frac{1}{3} + \\sqrt{\\frac{1}{9} + 1}\\right) = \\ln\\left(\\frac{1 + \\sqrt{10}}{3}\\right)$\n\n$\\sinh x = -4$: $x = \\ln\\left(-4 + \\sqrt{17}\\right) = \\ln\\left(\\sqrt{17} - 4\\right)$\n\nCheck (numerically): $x \\approx 0.3275$ and $x \\approx -2.0947$ both give $3\\cosh^2 x + 11\\sinh x = 7$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q11",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is asked to find $\\operatorname{arsinh}\\frac{3}{4}$ exactly. She writes:\n\n\"Let $y = \\operatorname{arsinh}\\frac{3}{4}$, so $\\sinh y = \\frac{3}{4}$, i.e. $\\dfrac{e^y - e^{-y}}{2} = \\dfrac{3}{4}$.\n\nMultiplying by $4e^y$: $2e^{2y} - 3e^y - 2 = 0$, so $(2e^y + 1)(e^y - 2) = 0$ and $e^y = 2$ or $e^y = -\\frac{1}{2}$.\n\nSo $y = \\ln 2$ or $y = \\ln\\frac{1}{2} = -\\ln 2$. There are two answers.\"\n\nIdentify the error in Chloe's working, explain why it is wrong, and state the correct value. Show that one of her answers does not satisfy $\\sinh y = \\frac{3}{4}$.",
+  "hint": "What sign must $e^y$ have? Is $\\ln\\left(-\\frac{1}{2}\\right)$ the same as $\\ln\\frac{1}{2}$?",
+  "answer": "$e^y = -\\frac{1}{2}$ is impossible since $e^y > 0$ (and $\\ln\\left(-\\frac{1}{2}\\right) \\ne \\ln\\frac{1}{2}$). $\\operatorname{arsinh}\\frac{3}{4} = \\ln 2$ only; $\\sinh(-\\ln 2) = -\\frac{3}{4}$.",
+  "solution": "**Error:** the final line. $e^y = -\\frac{1}{2}$ has no real solution because $e^y > 0$ for every real $y$, so that root must be **rejected**. Chloe has also quietly turned $\\ln\\left(-\\frac{1}{2}\\right)$ into $\\ln\\frac{1}{2}$, which is not allowed.\n\nIn general $e^y = x \\pm \\sqrt{x^2 + 1}$, and $x - \\sqrt{x^2 + 1} < 0$ always, which is why $\\operatorname{arsinh} x = \\ln\\left(x + \\sqrt{x^2 + 1}\\right)$ has only the plus sign. $\\sinh$ is one-to-one, so $\\operatorname{arsinh}$ gives exactly one value.\n\n**Correct:** $\\operatorname{arsinh}\\frac{3}{4} = \\ln 2$.\n\n**Check of her second answer:**\n$$\\sinh(-\\ln 2) = \\frac{e^{-\\ln 2} - e^{\\ln 2}}{2} = \\frac{\\frac{1}{2} - 2}{2} = -\\frac{3}{4} \\ne \\frac{3}{4}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q12",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The curve $C$ has equation $y = 5\\cosh x + 3\\sinh x$. Jamal tries to find the stationary point of $C$:\n\n\"$\\dfrac{dy}{dx} = -5\\sinh x + 3\\cosh x = 0 \\Rightarrow \\tanh x = \\dfrac{3}{5} \\Rightarrow x = \\ln 2$, so the stationary point is $\\left(\\ln 2, \\dfrac{17}{2}\\right)$.\"\n\n(a) Find and explain Jamal's error.\n\n(b) Find the correct coordinates of the stationary point, and determine its nature.",
+  "hint": "Differentiate $\\cosh x = \\frac{e^x + e^{-x}}{2}$ directly from the definition.",
+  "answer": "(a) $\\frac{d}{dx}\\cosh x = \\sinh x$, not $-\\sinh x$. (b) $\\left(-\\ln 2, 4\\right)$, a minimum.",
+  "solution": "**(a)** Jamal wrote $\\frac{d}{dx}(5\\cosh x) = -5\\sinh x$, carrying over the minus sign from $\\frac{d}{dx}\\cos x = -\\sin x$. In fact\n$$\\frac{d}{dx}\\cosh x = \\frac{d}{dx}\\frac{e^x + e^{-x}}{2} = \\frac{e^x - e^{-x}}{2} = \\sinh x$$\n\n**(b)**\n$$\\frac{dy}{dx} = 5\\sinh x + 3\\cosh x = 0 \\Rightarrow \\tanh x = -\\frac{3}{5}$$\n$$x = \\operatorname{artanh}\\left(-\\frac{3}{5}\\right) = \\frac{1}{2}\\ln\\frac{1 - \\frac{3}{5}}{1 + \\frac{3}{5}} = \\frac{1}{2}\\ln\\frac{1}{4} = -\\ln 2$$\n\nAt $x = -\\ln 2$: $\\cosh x = \\frac{5}{4}$, $\\sinh x = -\\frac{3}{4}$, so $y = \\frac{25}{4} - \\frac{9}{4} = 4$.\n\n$\\frac{d^2y}{dx^2} = 5\\cosh x + 3\\sinh x = y = 4 > 0$, so $(-\\ln 2, 4)$ is a **minimum**.\n\nCheck via exponentials: $y = 4e^x + e^{-x}$, and at $e^x = \\frac{1}{2}$, $y = 2 + 2 = 4$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q13",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": false,
+  "question": "In this question you must show detailed reasoning.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Starting from the definition of $\\tanh x$ in terms of exponentials, prove that\n$$\\operatorname{artanh} x = \\frac{1}{2}\\ln\\left(\\frac{1 + x}{1 - x}\\right), \\quad -1 < x < 1$$",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that $\\dfrac{d}{dx}\\left(\\operatorname{artanh} x\\right) = \\dfrac{1}{1 - x^2}$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact value of $\\displaystyle\\int_0^{1/2} \\frac{1}{1 - x^2} \\, dx$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Let $y = \\operatorname{artanh} x$, write $x = \\frac{e^y - e^{-y}}{e^y + e^{-y}}$ and multiply top and bottom by $e^y$. (b) Write $\\frac{1}{2}\\ln\\frac{1 + x}{1 - x} = \\frac{1}{2}\\ln(1 + x) - \\frac{1}{2}\\ln(1 - x)$.",
+  "answer": "(a) Proof (b) Shown (c) $\\frac{1}{2}\\ln 3$",
+  "solution": "**(a)** Let $y = \\operatorname{artanh} x$, so\n$$x = \\tanh y = \\frac{e^y - e^{-y}}{e^y + e^{-y}} = \\frac{e^{2y} - 1}{e^{2y} + 1}$$ **M1**\n\n$x e^{2y} + x = e^{2y} - 1 \\Rightarrow e^{2y}(1 - x) = 1 + x$ **M1**\n\n$$e^{2y} = \\frac{1 + x}{1 - x}$$ **A1**\n\nFor $-1 < x < 1$ the right-hand side is positive, so the logarithm exists and gives a single value:\n$$y = \\frac{1}{2}\\ln\\left(\\frac{1 + x}{1 - x}\\right)$$ **A1** (cso)\n\n**(b)** $\\operatorname{artanh} x = \\frac{1}{2}\\ln(1 + x) - \\frac{1}{2}\\ln(1 - x)$ **M1**\n\n$$\\frac{d}{dx}\\operatorname{artanh} x = \\frac{1}{2(1 + x)} + \\frac{1}{2(1 - x)}$$ **A1**\n$$= \\frac{(1 - x) + (1 + x)}{2(1 - x^2)} = \\frac{1}{1 - x^2}$$ **A1** (cso)\n\n**(c)**\n$$\\int_0^{1/2} \\frac{dx}{1 - x^2} = \\left[\\operatorname{artanh} x\\right]_0^{1/2}$$ **M1**\n$$= \\frac{1}{2}\\ln\\left(\\frac{3/2}{1/2}\\right) - 0 = \\frac{1}{2}\\ln 3$$ **A1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-hyperbolic-functions-q14",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 230\" width=\"330\" height=\"230\"><line x1=\"16\" y1=\"197.5\" x2=\"314\" y2=\"197.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40.8\" y1=\"197.5\" x2=\"40.8\" y2=\"44.7\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"289.2\" y1=\"197.5\" x2=\"289.2\" y2=\"44.7\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M40.8,44.7 L45,49.1 L49.1,53.4 L53.2,57.4 L57.4,61.4 L61.5,65.1 L65.7,68.7 L69.8,72.1 L73.9,75.4 L78.1,78.5 L82.2,81.4 L86.4,84.2 L90.5,86.8 L94.6,89.3 L98.8,91.7 L102.9,93.8 L107.1,95.9 L111.2,97.8 L115.3,99.5 L119.5,101.1 L123.6,102.6 L127.8,103.9 L131.9,105.1 L136,106.1 L140.2,107 L144.3,107.8 L148.4,108.4 L152.6,108.9 L156.7,109.2 L160.9,109.4 L165,109.5 L169.1,109.4 L173.3,109.2 L177.4,108.9 L181.6,108.4 L185.7,107.8 L189.8,107 L194,106.1 L198.1,105.1 L202.3,103.9 L206.4,102.6 L210.5,101.1 L214.7,99.5 L218.8,97.8 L222.9,95.9 L227.1,93.8 L231.2,91.7 L235.4,89.3 L239.5,86.8 L243.6,84.2 L247.8,81.4 L251.9,78.5 L256.1,75.4 L260.2,72.1 L264.3,68.7 L268.5,65.1 L272.6,61.4 L276.8,57.4 L280.9,53.4 L285,49.1 L289.2,44.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><line x1=\"165\" y1=\"197.5\" x2=\"165\" y2=\"109.5\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><text x=\"171\" y=\"153.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">8 m</text><line x1=\"40.8\" y1=\"207.4\" x2=\"289.2\" y2=\"207.4\" stroke=\"currentColor\" stroke-width=\"0.8\"/><text x=\"165\" y=\"203.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30 m</text><text x=\"40.8\" y=\"36.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">pole</text><text x=\"289.2\" y=\"36.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">pole</text></svg>",
+  "question": "A power cable hangs between two poles 30 m apart on level ground. Taking the $x$-axis along the ground and the $y$-axis through the lowest point of the cable, the cable is modelled by the catenary\n$$y = 20\\cosh\\left(\\frac{x}{20}\\right) - 12, \\quad -15 \\le x \\le 15$$\nwhere $x$ and $y$ are in metres. The diagram is not drawn to scale.\n\n(a) Find the height of the cable at the poles, and the sag (the vertical drop from the top of a pole to the lowest point), to 3 significant figures.\n\n(b) A lorry 10 m tall must pass under the cable. Find the width of the road, centred on $x = 0$, over which the cable is at least 10 m above the ground. Give your answer to 3 significant figures.\n\n(c) The length of a curve $y = f(x)$ from $x = a$ to $x = b$ is $\\displaystyle\\int_a^b \\sqrt{1 + \\left(\\frac{dy}{dx}\\right)^2} \\, dx$. Find the length of the cable to 3 significant figures.",
+  "hint": "(b) Solve $20\\cosh\\left(\\frac{x}{20}\\right) - 12 = 10$ using $\\operatorname{arcosh}$. (c) Use $1 + \\sinh^2 u = \\cosh^2 u$.",
+  "answer": "(a) 13.9 m; sag 5.89 m (b) 17.7 m (c) 32.9 m",
+  "solution": "**(a)** At $x = \\pm 15$: $y = 20\\cosh 0.75 - 12 = 20 \\times 1.29468\\ldots - 12 = 13.9$ m.\n\nLowest point $x = 0$: $y = 20 - 12 = 8$ m. Sag $= 20\\cosh 0.75 - 20 = 5.89$ m.\n\n**(b)** $20\\cosh\\left(\\frac{x}{20}\\right) - 12 = 10 \\Rightarrow \\cosh\\left(\\frac{x}{20}\\right) = 1.1$\n$$\\frac{x}{20} = \\pm\\operatorname{arcosh} 1.1 = \\pm\\ln\\left(1.1 + \\sqrt{0.21}\\right) = \\pm 0.44357\\ldots$$\nSo $x = \\pm 8.871\\ldots$ and the cable is at least 10 m high for $|x| \\le 8.87$: a width of $2 \\times 8.871 = 17.7$ m.\n\n**(c)** $\\frac{dy}{dx} = \\sinh\\left(\\frac{x}{20}\\right)$, so $1 + \\left(\\frac{dy}{dx}\\right)^2 = 1 + \\sinh^2\\left(\\frac{x}{20}\\right) = \\cosh^2\\left(\\frac{x}{20}\\right)$:\n$$L = \\int_{-15}^{15} \\cosh\\left(\\frac{x}{20}\\right) dx = \\left[20\\sinh\\left(\\frac{x}{20}\\right)\\right]_{-15}^{15} = 40\\sinh 0.75 = 32.9 \\text{ m}$$\n\nThe identity $\\cosh^2 - \\sinh^2 = 1$ is exactly what makes the catenary's length so easy to find. The cable is only about 2.9 m longer than the 30 m gap.",
+  "linkedTopicIds": [
+   "calc-arc-length"
+  ]
+ },
+ {
+  "id": "fur-hyperbolic-functions-q15",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 4,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 230\" width=\"320\" height=\"230\"><line x1=\"16\" y1=\"188.6\" x2=\"304\" y2=\"188.6\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M304,188.6 L297.6,191.3 L297.6,185.9 z\" fill=\"currentColor\"/><line x1=\"37.3\" y1=\"214\" x2=\"37.3\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M37.3,16 L40.1,22.4 L34.6,22.4 z\" fill=\"currentColor\"/><text x=\"302\" y=\"204.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">t</text><text x=\"45.3\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">v</text><text x=\"32.3\" y=\"203.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"90.7\" y1=\"190.6\" x2=\"90.7\" y2=\"186.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"90.7\" y=\"204.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"144\" y1=\"190.6\" x2=\"144\" y2=\"186.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"144\" y=\"204.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"197.3\" y1=\"190.6\" x2=\"197.3\" y2=\"186.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"197.3\" y=\"204.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">15</text><line x1=\"250.7\" y1=\"190.6\" x2=\"250.7\" y2=\"186.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"250.7\" y=\"204.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"34.5\" y1=\"137.8\" x2=\"40.2\" y2=\"137.8\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"31.3\" y=\"141.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20</text><line x1=\"34.5\" y1=\"87.1\" x2=\"40.2\" y2=\"87.1\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"31.3\" y=\"91.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">40</text><line x1=\"34.5\" y1=\"49\" x2=\"40.2\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"31.3\" y=\"53\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">55</text><line x1=\"37.3\" y1=\"49\" x2=\"293.3\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M37.3,188.6 L41.6,178.7 L45.9,168.8 L50.1,159.2 L54.4,149.9 L58.7,140.9 L62.9,132.3 L67.2,124.2 L71.5,116.6 L75.7,109.6 L80,103.1 L84.3,97.2 L88.5,91.7 L92.8,86.8 L97.1,82.4 L101.3,78.4 L105.6,74.9 L109.9,71.7 L114.1,68.9 L118.4,66.4 L122.7,64.3 L126.9,62.3 L131.2,60.6 L135.5,59.1 L139.7,57.8 L144,56.7 L148.3,55.7 L152.5,54.8 L156.8,54.1 L161.1,53.4 L165.3,52.8 L169.6,52.3 L173.9,51.9 L178.1,51.5 L182.4,51.2 L186.7,50.9 L190.9,50.6 L195.2,50.4 L199.5,50.2 L203.7,50.1 L208,49.9 L212.3,49.8 L216.5,49.7 L220.8,49.6 L225.1,49.5 L229.3,49.5 L233.6,49.4 L237.9,49.3 L242.1,49.3 L246.4,49.3 L250.7,49.2 L254.9,49.2 L259.2,49.2 L263.5,49.1 L267.7,49.1 L272,49.1 L276.3,49.1 L280.5,49.1 L284.8,49.1 L289.1,49.1 L293.3,49.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+  "question": "A skydiver jumps from a stationary balloon. Her speed $v\\ \\text{m s}^{-1}$ after $t$ seconds is modelled by\n$$v = 55\\tanh\\left(\\frac{9.8t}{55}\\right)$$\nThe diagram shows the graph of $v$ against $t$.\n\n(a) State the terminal speed predicted by the model, and explain how it can be seen from the equation.\n\n(b) Find the time taken to reach a speed of $50\\ \\text{m s}^{-1}$, to 3 significant figures.\n\n(c) Show that her acceleration $a$ satisfies $a = 9.8\\left(1 - \\dfrac{v^2}{55^2}\\right)$.\n\n(d) Find the distance she falls in the first 10 seconds, to 3 significant figures.",
+  "hint": "(b) Use $\\operatorname{artanh} x = \\frac{1}{2}\\ln\\frac{1 + x}{1 - x}$. (c) $\\frac{d}{dt}\\tanh(kt) = k\\operatorname{sech}^2(kt)$ and $\\operatorname{sech}^2 = 1 - \\tanh^2$. (d) Integrate $v$; $\\int \\tanh u \\, du = \\ln\\cosh u + c$.",
+  "answer": "(a) $55\\ \\text{m s}^{-1}$ (b) 8.54 s (c) Shown (d) 345 m",
+  "solution": "Let $k = \\frac{9.8}{55}$, so $v = 55\\tanh kt$.\n\n**(a)** As $t \\to \\infty$, $\\tanh kt \\to 1$, so $v \\to 55\\ \\text{m s}^{-1}$. Since $\\tanh$ is always less than 1, she approaches but never quite reaches $55\\ \\text{m s}^{-1}$ (the dashed asymptote).\n\n**(b)** $\\tanh kt = \\frac{50}{55} = \\frac{10}{11}$:\n$$kt = \\frac{1}{2}\\ln\\frac{1 + \\frac{10}{11}}{1 - \\frac{10}{11}} = \\frac{1}{2}\\ln 21 = 1.5223\\ldots$$\n$$t = \\frac{1.5223}{9.8/55} = 8.54 \\text{ s}$$\n\n**(c)**\n$$a = \\frac{dv}{dt} = 55k\\operatorname{sech}^2 kt = 9.8\\left(1 - \\tanh^2 kt\\right) = 9.8\\left(1 - \\frac{v^2}{55^2}\\right)$$\n(using $\\operatorname{sech}^2 u = 1 - \\tanh^2 u$, which follows from dividing $\\cosh^2 u - \\sinh^2 u = 1$ by $\\cosh^2 u$). At $t = 0$ the acceleration is $g = 9.8$, and it falls to 0 as $v \\to 55$ – air resistance balancing her weight.\n\n**(d)**\n$$s = \\int_0^{10} 55\\tanh kt \\, dt = \\frac{55}{k}\\left[\\ln\\cosh kt\\right]_0^{10} = \\frac{55^2}{9.8}\\ln\\cosh\\left(\\frac{98}{55}\\right)$$\n$$= 308.67 \\times \\ln(3.0587\\ldots) = 345 \\text{ m (3 s.f.)}$$\n\nSense check: her speed at 10 s is about $52\\ \\text{m s}^{-1}$, and 345 m is less than $10 \\times 52 = 520$ m, as it should be since she started from rest.",
+  "linkedTopicIds": [
+   "mech-variable-acceleration"
+  ]
+ },
+ {
+  "id": "fur-hyperbolic-functions-q16",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Use the substitution $x = 2\\sinh u$ to show that\n$$\\int_0^2 \\sqrt{x^2 + 4} \\, dx = 2\\sqrt{2} + 2\\ln\\left(1 + \\sqrt{2}\\right)$$",
+  "hint": "$dx = 2\\cosh u \\, du$ and $\\sqrt{4\\sinh^2 u + 4} = 2\\cosh u$. Then use $\\cosh^2 u = \\frac{1}{2}(1 + \\cosh 2u)$. Change the limits: $x = 2$ gives $\\sinh u = 1$.",
+  "answer": "Shown: the integral equals $2\\sqrt{2} + 2\\ln\\left(1 + \\sqrt{2}\\right) \\approx 4.59$",
+  "solution": "$x = 2\\sinh u \\Rightarrow dx = 2\\cosh u \\, du$, and\n$$\\sqrt{x^2 + 4} = \\sqrt{4\\sinh^2 u + 4} = 2\\sqrt{\\sinh^2 u + 1} = 2\\cosh u$$\n(using $\\cosh^2 u - \\sinh^2 u = 1$ and $\\cosh u > 0$).\n\nLimits: $x = 0 \\Rightarrow u = 0$; $x = 2 \\Rightarrow \\sinh u = 1 \\Rightarrow u = \\operatorname{arsinh} 1 = \\ln\\left(1 + \\sqrt{2}\\right)$.\n\n$$\\int_0^2 \\sqrt{x^2 + 4} \\, dx = \\int_0^{\\operatorname{arsinh} 1} 4\\cosh^2 u \\, du = \\int_0^{\\operatorname{arsinh} 1} 2(1 + \\cosh 2u) \\, du = \\left[2u + \\sinh 2u\\right]_0^{\\operatorname{arsinh} 1}$$\n\nUse $\\sinh 2u = 2\\sinh u\\cosh u$. At the upper limit $\\sinh u = 1$ and $\\cosh u = \\sqrt{1 + 1} = \\sqrt{2}$, so $\\sinh 2u = 2\\sqrt{2}$:\n$$= 2\\ln\\left(1 + \\sqrt{2}\\right) + 2\\sqrt{2} - 0 \\approx 4.59$$\n\n(Sense check: $\\sqrt{x^2 + 4}$ runs from 2 to $2\\sqrt{2} \\approx 2.83$ on an interval of width 2, so the integral should be between 4 and 5.66 ✓)",
+  "linkedTopicIds": [
+   "calc-integration-substitution"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-hyperbolic-functions-q17",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Using $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$, show that for real $x$\n$$\\cos(ix) = \\cosh x \\quad\\text{and}\\quad \\sin(ix) = i\\sinh x$$\n\n(b) By substituting $\\theta = ix$ into $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$, deduce that $\\cosh 3x = 4\\cosh^3 x - 3\\cosh x$. Use part (a) to explain why Osborn's rule changes the sign of a term containing a product of two sines.\n\n(c) Hence solve $\\cosh 3x = \\dfrac{65}{16}$, giving your answers as exact logarithms.",
+  "hint": "(a) From $e^{i\\theta}$ and $e^{-i\\theta}$, $\\cos\\theta = \\frac{e^{i\\theta} + e^{-i\\theta}}{2}$. Put $\\theta = ix$. (c) Let $c = \\cosh x$; try $c = \\frac{5}{4}$ in the cubic.",
+  "answer": "(a) Shown (b) Shown; $\\sin^2(ix) = i^2\\sinh^2 x = -\\sinh^2 x$ (c) $x = \\pm\\ln 2$",
+  "solution": "**(a)** Adding and subtracting $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$ and $e^{-i\\theta} = \\cos\\theta - i\\sin\\theta$:\n$$\\cos\\theta = \\frac{e^{i\\theta} + e^{-i\\theta}}{2}, \\qquad \\sin\\theta = \\frac{e^{i\\theta} - e^{-i\\theta}}{2i}$$\nPut $\\theta = ix$, so $i\\theta = -x$:\n$$\\cos(ix) = \\frac{e^{-x} + e^{x}}{2} = \\cosh x, \\qquad \\sin(ix) = \\frac{e^{-x} - e^{x}}{2i} = \\frac{-2\\sinh x}{2i} = \\frac{-\\sinh x}{i} = i\\sinh x$$\n(since $\\frac{1}{i} = -i$).\n\n**(b)** With $\\theta = ix$: $\\cos 3\\theta = \\cos(i \\cdot 3x) = \\cosh 3x$ and $\\cos\\theta = \\cosh x$, so\n$$\\cosh 3x = 4\\cosh^3 x - 3\\cosh x$$\n\nEach $\\cos$ becomes $\\cosh$ unchanged, but each $\\sin$ becomes $i\\sinh$. A product of two sines therefore becomes $i^2\\sinh\\sinh = -\\sinh\\sinh$: that is exactly the sign change in Osborn's rule (e.g. $\\cos^2 + \\sin^2 = 1$ becomes $\\cosh^2 - \\sinh^2 = 1$).\n\n**(c)** Let $c = \\cosh x$: $4c^3 - 3c = \\frac{65}{16} \\Rightarrow 64c^3 - 48c - 65 = 0$.\n\n$c = \\frac{5}{4}$: $64 \\times \\frac{125}{64} - 60 - 65 = 0$ ✓. Factorising:\n$$(4c - 5)(16c^2 + 20c + 13) = 0$$\nThe quadratic has discriminant $400 - 832 < 0$, so $c = \\frac{5}{4}$ is the only real root (and it satisfies $c \\ge 1$).\n\n$\\cosh x = \\frac{5}{4} \\Rightarrow x = \\pm\\operatorname{arcosh}\\frac{5}{4} = \\pm\\ln\\left(\\frac{5}{4} + \\frac{3}{4}\\right) = \\pm\\ln 2$.\n\nCheck: $\\cosh(3\\ln 2) = \\cosh(\\ln 8) = \\frac{8 + \\frac{1}{8}}{2} = \\frac{65}{16}$ ✓",
+  "linkedTopicIds": [
+   "fur-complex-numbers",
+   "fur-de-moivre-roots-unity"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-hyperbolic-functions-q18",
+  "topicId": "fur-hyperbolic-functions",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "(a) Show that $13\\cosh x + 5\\sinh x$ can be written in the form $R\\cosh(x + \\alpha)$, where $R > 0$, and find the exact values of $R$ and $\\alpha$.\n\n(b) Hence, or otherwise, solve $13\\cosh x + 5\\sinh x = 15$, giving exact answers.\n\n(c) Find the set of values of $k$ for which the equation $13\\cosh x + 5\\sinh x = k$ has (i) no real solutions (ii) exactly one real solution.\n\n(d) Explain why $5\\cosh x + 13\\sinh x$ cannot be written in the form $R\\cosh(x + \\alpha)$ with $R > 0$, and state how many solutions $5\\cosh x + 13\\sinh x = k$ has for each real $k$.",
+  "hint": "Expand $R\\cosh(x + \\alpha) = R\\cosh x\\cosh\\alpha + R\\sinh x\\sinh\\alpha$ and compare coefficients; you will need $\\cosh^2\\alpha - \\sinh^2\\alpha = 1$. For (d), think about what happens to $R\\cosh\\alpha$ and $R\\sinh\\alpha$.",
+  "answer": "(a) $R = 12$, $\\alpha = \\ln\\frac{3}{2}$ (b) $x = \\ln\\frac{4}{3}$ or $x = -\\ln 3$ (c)(i) $k < 12$ (ii) $k = 12$ (d) It would need $\\cosh\\alpha < \\sinh\\alpha$, impossible; the expression is $9e^x - 4e^{-x}$, strictly increasing from $-\\infty$ to $\\infty$, so exactly one solution for every $k$.",
+  "solution": "**(a)** $R\\cosh(x + \\alpha) = R\\cosh\\alpha\\cosh x + R\\sinh\\alpha\\sinh x$. Compare:\n$$R\\cosh\\alpha = 13, \\qquad R\\sinh\\alpha = 5$$\nThen $R^2(\\cosh^2\\alpha - \\sinh^2\\alpha) = 169 - 25 = 144$, so $R = 12$ (note the **minus** sign, by Osborn's rule – unlike $R = \\sqrt{a^2 + b^2}$ in trigonometry).\n\n$\\tanh\\alpha = \\frac{5}{13}$, so $\\alpha = \\frac{1}{2}\\ln\\frac{1 + \\frac{5}{13}}{1 - \\frac{5}{13}} = \\frac{1}{2}\\ln\\frac{18}{8} = \\frac{1}{2}\\ln\\frac{9}{4} = \\ln\\frac{3}{2}$.\n\nCheck: $12\\cosh\\left(x + \\ln\\frac{3}{2}\\right) = 6\\left(\\frac{3}{2}e^x + \\frac{2}{3}e^{-x}\\right) = 9e^x + 4e^{-x}$, and $13\\cosh x + 5\\sinh x = 9e^x + 4e^{-x}$ ✓\n\n**(b)** $12\\cosh\\left(x + \\ln\\frac{3}{2}\\right) = 15 \\Rightarrow \\cosh\\left(x + \\ln\\frac{3}{2}\\right) = \\frac{5}{4} \\Rightarrow x + \\ln\\frac{3}{2} = \\pm\\ln 2$\n$$x = \\ln 2 - \\ln\\tfrac{3}{2} = \\ln\\tfrac{4}{3} \\quad\\text{or}\\quad x = -\\ln 2 - \\ln\\tfrac{3}{2} = -\\ln 3$$\nCheck $x = -\\ln 3$: $9 \\times \\frac{1}{3} + 4 \\times 3 = 15$ ✓\n\n**(c)** $12\\cosh(x + \\alpha) \\ge 12$, with equality only at $x = -\\alpha$, and every value above 12 is taken twice (cosh is even about its minimum).\n(i) No real solutions: $k < 12$. (ii) Exactly one: $k = 12$ (at $x = -\\ln\\frac{3}{2}$). (For $k > 12$ there are two.)\n\n**(d)** We would need $R\\cosh\\alpha = 5$ and $R\\sinh\\alpha = 13$ with $R > 0$, so $\\sinh\\alpha > \\cosh\\alpha$; but $\\cosh\\alpha - \\sinh\\alpha = e^{-\\alpha} > 0$ always. Contradiction.\n\nInstead $5\\cosh x + 13\\sinh x = 9e^x - 4e^{-x}$, whose derivative $9e^x + 4e^{-x} > 0$: it is strictly increasing, tending to $-\\infty$ and $+\\infty$. So $5\\cosh x + 13\\sinh x = k$ has **exactly one** real solution for every real $k$ (it behaves like a multiple of $\\sinh$, not $\\cosh$).",
+  "linkedTopicIds": [
+   "pure-trig-harmonic-form"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m2"
+  ]
+ }
+]

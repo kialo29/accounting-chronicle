@@ -1,0 +1,265 @@
+[
+ {
+  "id": "mech-vertical-motion-q01",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A stone is dropped from rest from a point 19.6 m above the ground. Find the time it takes to reach the ground and its speed as it hits the ground.",
+  "hint": "Take **down** as positive: $u = 0$, $a = 9.8$, $s = 19.6$.",
+  "answer": "2 s; $19.6\\text{ m s}^{-1}$",
+  "solution": "Take down as positive: $u = 0$, $a = 9.8$, $s = 19.6$.\n$$s = ut + \\tfrac{1}{2}at^2 \\Rightarrow 19.6 = 4.9t^2 \\Rightarrow t^2 = 4 \\Rightarrow t = 2\\text{ s}$$\n$$v = u + at = 0 + 9.8 \\times 2 = 19.6\\text{ m s}^{-1}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q02",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A stone is dropped from rest from a point 44.1 m above the ground. Find the time it takes to reach the ground and its speed as it hits the ground.",
+  "hint": "Same method as before, with a different height.",
+  "answer": "3 s; $29.4\\text{ m s}^{-1}$",
+  "solution": "**What changed:** only the height, from 19.6 m to 44.1 m.\n\nDown positive: $u = 0$, $a = 9.8$, $s = 44.1$.\n$$44.1 = 4.9t^2 \\Rightarrow t^2 = 9 \\Rightarrow t = 3\\text{ s}$$\n$$v = 9.8 \\times 3 = 29.4\\text{ m s}^{-1}$$\nNote: multiplying the height by $\\frac{44.1}{19.6} = 2.25$ multiplies the time by only $\\sqrt{2.25} = 1.5$, because $s \\propto t^2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q03",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A stone is **thrown vertically downwards** with speed $4.9\\text{ m s}^{-1}$ from a point 44.1 m above the ground. Find the time it takes to reach the ground and its speed as it hits the ground. Give your answers to 3 significant figures.",
+  "hint": "Down positive again, but now $u = 4.9$. You will need the quadratic formula.",
+  "answer": "2.54 s; $29.8\\text{ m s}^{-1}$",
+  "solution": "**What changed:** the initial velocity is now $4.9\\text{ m s}^{-1}$ downwards instead of 0.\n\nDown positive: $u = 4.9$, $a = 9.8$, $s = 44.1$.\n$$44.1 = 4.9t + 4.9t^2 \\Rightarrow t^2 + t - 9 = 0$$\n$$t = \\frac{-1 + \\sqrt{1 + 36}}{2} = \\frac{-1 + \\sqrt{37}}{2} = 2.54\\text{ s (3 s.f.)}$$\n(the negative root is rejected).\n\nSpeed: $v^2 = u^2 + 2as = 4.9^2 + 2(9.8)(44.1) = 24.01 + 864.36 = 888.37$, so $v = 29.8\\text{ m s}^{-1}$ (3 s.f.).\n\nThe stone arrives sooner and slightly faster than in the previous question.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q04",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A stone is **thrown vertically upwards** with speed $4.9\\text{ m s}^{-1}$ from a point 44.1 m above the ground. Find the time it takes to reach the ground and its speed as it hits the ground. Give your answers to 3 significant figures.",
+  "hint": "Now take **up** as positive. Where is the ground relative to the point of projection? That gives the sign of $s$.",
+  "answer": "3.54 s; $29.8\\text{ m s}^{-1}$",
+  "solution": "**What changed:** the stone is now thrown **up** instead of down.\n\nUp positive: $u = 4.9$, $a = -9.8$. The ground is 44.1 m **below** the point of projection, so $s = -44.1$.\n$$-44.1 = 4.9t - 4.9t^2 \\Rightarrow t^2 - t - 9 = 0$$\n$$t = \\frac{1 + \\sqrt{37}}{2} = 3.54\\text{ s (3 s.f.)}$$\n\n$v^2 = 4.9^2 + 2(-9.8)(-44.1) = 888.37$, so the speed is $29.8\\text{ m s}^{-1}$ (3 s.f.).\n\nCompare with the previous question: the stone takes exactly 1 s longer (the time to go up and come back down to its launch point, $\\frac{2 \\times 4.9}{9.8} = 1$ s), but it lands at the **same speed**, because when it passes its launch point on the way down it is moving at $4.9\\text{ m s}^{-1}$ downwards, exactly as in the previous question.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q05",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A ball is projected vertically upwards from ground level with speed $14.7\\text{ m s}^{-1}$.\n\n(a) Find the greatest height reached by the ball.\n\n(b) Find the time taken to reach the greatest height.\n\n(c) Find the total time for which the ball is in the air.",
+  "hint": "At the greatest height the velocity is zero. Take up as positive, so $a = -9.8$.",
+  "answer": "(a) 11.0 m (3 s.f.) (b) 1.5 s (c) 3 s",
+  "solution": "Up positive: $u = 14.7$, $a = -9.8$.\n\n(a) At the top, $v = 0$:\n$$0 = 14.7^2 + 2(-9.8)s \\Rightarrow s = \\frac{216.09}{19.6} = 11.025 \\approx 11.0\\text{ m}$$\n\n(b)\n$$0 = 14.7 - 9.8t \\Rightarrow t = 1.5\\text{ s}$$\n\n(c) It returns to ground level when $s = 0$:\n$$0 = 14.7t - 4.9t^2 = 4.9t(3 - t) \\Rightarrow t = 0 \\text{ or } t = 3$$\nSo it is in the air for 3 s, twice the time to the top, by symmetry.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q06",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A ball is projected vertically upwards with speed $24.5\\text{ m s}^{-1}$ from a point O.\n\n(a) Find the times at which the ball is 19.6 m above O.\n\n(b) Hence find the length of time for which the ball is more than 19.6 m above O.",
+  "hint": "Set $s = 19.6$ in $s = ut + \\frac{1}{2}at^2$ with up positive. Dividing by 4.9 makes the quadratic friendly.",
+  "answer": "(a) $t = 1$ s and $t = 4$ s (b) 3 s",
+  "solution": "Up positive: $u = 24.5$, $a = -9.8$, $s = 19.6$.\n$$19.6 = 24.5t - 4.9t^2 \\Rightarrow 4.9t^2 - 24.5t + 19.6 = 0 \\Rightarrow t^2 - 5t + 4 = 0$$\n$$(t - 1)(t - 4) = 0 \\Rightarrow t = 1 \\text{ or } t = 4$$\n\n(a) It is 19.6 m above O at $t = 1$ s (going up) and $t = 4$ s (coming down).\n\n(b) Between these times it is above that level: $4 - 1 = 3$ s.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q07",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A ball is thrown vertically upwards with speed $21\\text{ m s}^{-1}$. Mia finds its greatest height above the point of projection:\n\nLine 1: Take upwards as positive. $u = 21$, $v = 0$, $a = 9.8$\nLine 2: $v^2 = u^2 + 2as \\Rightarrow 0 = 441 + 19.6s$\nLine 3: $s = -22.5$\nLine 4: Greatest height $= 22.5$ m\n\n(a) Identify Mia's error and explain it.\n\n(b) Write out the correct working.",
+  "hint": "Mia chose up as positive. Which way does gravity act?",
+  "answer": "(a) Line 1: with up positive, the acceleration due to gravity (downwards) is $a = -9.8$. Her negative height should have warned her; she just ignored the sign. (b) $0 = 441 - 19.6s \\Rightarrow s = 22.5$ m",
+  "solution": "(a) The error is in **Line 1**. Having chosen up as positive, every quantity pointing down must be negative. Gravity acts downwards, so $a = -9.8$, not $+9.8$. Her answer in Line 3 says the greatest height is **below** the point of projection, which is impossible for a ball thrown upwards; in Line 4 she simply dropped the minus sign.\n\n(b) Up positive: $u = 21$, $v = 0$, $a = -9.8$.\n$$0 = 21^2 + 2(-9.8)s \\Rightarrow 19.6s = 441 \\Rightarrow s = 22.5\\text{ m}$$\nThe final answer happens to match, but only because two mistakes cancelled; the working as written is wrong and would fail in any question that needs the sign (such as finding a time).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q08",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A stone is thrown vertically upwards with speed $9.8\\text{ m s}^{-1}$ from the edge of a cliff 39.2 m above the sea. It misses the cliff on the way down and falls into the sea, as shown in the diagram. Dev tries to find the time taken for the stone to reach the sea.\n\nLine 1: Up positive: $u = 9.8$, $a = -9.8$, $s = 39.2$\nLine 2: $39.2 = 9.8t - 4.9t^2$\nLine 3: $t^2 - 2t + 8 = 0$\nLine 4: The discriminant is $4 - 32 < 0$, so there is no solution.\n\n(a) Identify Dev's error and explain what his \"no solution\" actually means.\n\n(b) Find the correct time taken for the stone to reach the sea.\n\n(c) Find the speed of the stone as it enters the sea.",
+  "hint": "Displacement is measured from the point of projection. Is the sea above or below the cliff top?",
+  "answer": "(a) Line 1: the sea is 39.2 m **below** the point of projection, so $s = -39.2$. His equation asks when the stone is 39.2 m **above** the cliff top, which never happens (its greatest height is only 4.9 m above the cliff). (b) 4 s (c) $29.4\\text{ m s}^{-1}$",
+  "solution": "(a) **Line 1** is wrong: $s$ is the displacement from the point of projection. With up positive, the sea is 39.2 m below the cliff top, so $s = -39.2$.\n\nDev's equation finds when the stone is 39.2 m **above** the cliff top. The stone only rises $\\frac{9.8^2}{2 \\times 9.8} = 4.9$ m, so it never gets that high, which is why his quadratic has no real roots.\n\n(b) $s = -39.2$:\n$$-39.2 = 9.8t - 4.9t^2 \\Rightarrow 4.9t^2 - 9.8t - 39.2 = 0 \\Rightarrow t^2 - 2t - 8 = 0$$\n$$(t - 4)(t + 2) = 0 \\Rightarrow t = 4\\text{ s}\\ (t > 0)$$\n\n(c) $v = u + at = 9.8 - 9.8 \\times 4 = -29.4$, so the stone enters the sea at $29.4\\text{ m s}^{-1}$ (moving downwards).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><path d=\"M10,60 L140,60 L140,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"140\" y1=\"70\" x2=\"130\" y2=\"78\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"88\" x2=\"130\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"106\" x2=\"130\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"124\" x2=\"130\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"142\" x2=\"130\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"160\" x2=\"130\" y2=\"168\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"178\" x2=\"130\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"196\" x2=\"130\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"214\" x2=\"130\" y2=\"222\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"140\" y1=\"232\" x2=\"130\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"10\" y1=\"240\" x2=\"330\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M160,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M184,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M208,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M232,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M256,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M280,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M304,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M328,248 q6,-5 12,0 q6,5 12,0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"150\" cy=\"55\" r=\"4\" fill=\"currentColor\"/><line x1=\"150\" y1=\"46\" x2=\"150\" y2=\"17\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M150,10 L153.2,17 L146.8,17 z\" fill=\"currentColor\"/><text x=\"158\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">9.8 m s⁻¹</text><line x1=\"162\" y1=\"64\" x2=\"162\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M162,236 l-3.3,-6 l6.6,0 z\" fill=\"currentColor\"/><line x1=\"60\" y1=\"64\" x2=\"60\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M60,64 l-3.3,6 l6.6,0 z\" fill=\"currentColor\"/><path d=\"M60,236 l-3.3,-6 l6.6,0 z\" fill=\"currentColor\"/><text x=\"66\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">39.2 m</text><text x=\"250\" y=\"230\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">sea</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q09",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A ball is thrown vertically upwards with speed $14\\text{ m s}^{-1}$.\n\nEllie says: \"At the top of its flight the ball is not moving, so its acceleration there is zero.\"\n\n(a) Find the velocity of the ball 0.5 s before it reaches its highest point and 0.5 s after.\n\n(b) Use your answers to explain why Ellie is wrong.\n\n(c) Explain what would happen to the ball if its acceleration really were zero at the top.",
+  "hint": "Find the time to the top first. Acceleration is the **rate of change** of velocity, not the velocity itself.",
+  "answer": "(a) $4.9\\text{ m s}^{-1}$ upwards; $4.9\\text{ m s}^{-1}$ downwards (b) The velocity changes by $9.8\\text{ m s}^{-1}$ (downwards) in 1 s right through the top, so the acceleration there is $9.8\\text{ m s}^{-2}$ downwards. Zero velocity does not mean zero acceleration: gravity still acts. (c) It would stay at rest at the top (in mid-air) instead of falling.",
+  "solution": "Up positive: $u = 14$, $a = -9.8$. Time to the top: $0 = 14 - 9.8t \\Rightarrow t = \\frac{10}{7} \\approx 1.43$ s.\n\n(a) Since $v = 14 - 9.8t$, the velocity changes by $9.8 \\times 0.5 = 4.9$ every half second. So 0.5 s before the top $v = +4.9\\text{ m s}^{-1}$ (upwards), and 0.5 s after the top $v = -4.9\\text{ m s}^{-1}$ (downwards).\n\n(b) Over that 1 s interval, which contains the top, the velocity changes from $+4.9$ to $-4.9$:\n$$\\text{acceleration} = \\frac{-4.9 - 4.9}{1} = -9.8\\text{ m s}^{-2}$$\nAcceleration is the **rate of change of velocity**. At the top the velocity is momentarily zero, but it is still changing (from upwards to downwards). The only force on the ball is its weight, which does not switch off at the top, so the acceleration is $9.8\\text{ m s}^{-2}$ downwards throughout the flight.\n\n(c) If the acceleration were zero at the top, the velocity would stay at its value there, which is zero. The ball would hover at the top and never come down.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q10",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Two balls, P of mass 5 kg and Q of mass 0.5 kg, are dropped at the same time from rest from a point 20 m above the ground.\n\nSam says: \"P is ten times heavier, so its acceleration is $a = mg = 5 \\times 9.8 = 49\\text{ m s}^{-2}$, and it will hit the ground much sooner than Q.\"\n\n(a) Explain the error in Sam's reasoning, using Newton's second law.\n\n(b) Find the time each ball takes to reach the ground, to 3 significant figures.\n\n(c) A table tennis ball and a steel ball bearing of the same size are dropped together from 20 m. Explain why the model used in (b) works well for one of them but not the other.",
+  "hint": "$mg$ is a force (the weight). Use $F = ma$ with $F = mg$.",
+  "answer": "(a) $mg$ is the weight (a force in N), not the acceleration. $F = ma$ gives $mg = ma$, so $a = g = 9.8\\text{ m s}^{-2}$ for both balls. (b) Both 2.02 s (c) Air resistance is negligible compared with the steel ball's weight, but not with the light table tennis ball's weight, so the table tennis ball takes noticeably longer.",
+  "solution": "(a) $mg = 5 \\times 9.8 = 49$ is the **weight** of P, a force of 49 N, not its acceleration. Ignoring air resistance, the only force on P is its weight, so by Newton's second law\n$$F = ma \\Rightarrow mg = ma \\Rightarrow a = g = 9.8\\text{ m s}^{-2}$$\nThe mass cancels. P has 10 times the weight of Q, but also 10 times the mass to accelerate, so both have the same acceleration $g$.\n\n(b) Down positive: $u = 0$, $a = 9.8$, $s = 20$:\n$$20 = 4.9t^2 \\Rightarrow t = \\sqrt{\\frac{20}{4.9}} = 2.02\\text{ s (3 s.f.)}$$\nfor **both** balls: they land together.\n\n(c) The model ignores air resistance. For the steel ball bearing, air resistance is tiny compared with its weight, so it falls almost exactly as predicted. For the very light table tennis ball, air resistance soon becomes comparable to its small weight, so its acceleration drops well below $g$ and it lands noticeably later.",
+  "linkedTopicIds": [
+   "mech-forces-newtons-laws"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q11",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A diver jumps from a 10 m diving platform. She leaves the platform moving vertically upwards with speed $3\\text{ m s}^{-1}$. She is modelled as a particle that starts 10 m above the water and moves vertically, and air resistance is ignored.\n\n(a) Find her greatest height above the water.\n\n(b) Find the time from leaving the platform until she reaches the water.\n\n(c) Find her speed as she enters the water.\n\n(d) In reality, her centre of mass starts about 1 m above the platform. State, with a reason, how this would change your answer to (b).\n\nGive your answers to 3 significant figures.",
+  "hint": "Take up as positive with the origin at the platform. The water is 10 m **below** the starting point.",
+  "answer": "(a) 10.5 m (b) 1.77 s (c) $14.3\\text{ m s}^{-1}$ (d) The time would be longer, as she would have further to fall (about 11 m instead of 10 m).",
+  "solution": "Up positive: $u = 3$, $a = -9.8$.\n\n(a) At the top $v = 0$: $0 = 9 - 19.6s \\Rightarrow s = 0.459$ m. Greatest height above the water $= 10 + 0.459 = 10.5$ m (3 s.f.).\n\n(b) The water is 10 m below the starting point, so $s = -10$:\n$$-10 = 3t - 4.9t^2 \\Rightarrow 4.9t^2 - 3t - 10 = 0$$\n$$t = \\frac{3 + \\sqrt{9 + 196}}{9.8} = \\frac{3 + 14.318}{9.8} = 1.77\\text{ s (3 s.f.)}$$\n\n(c) $v^2 = u^2 + 2as = 9 + 2(-9.8)(-10) = 205$, so the speed is $\\sqrt{205} = 14.3\\text{ m s}^{-1}$ (3 s.f.).\n\n(d) Her centre of mass would start about 11 m above the water, so the displacement to the water would be about $-11$ m instead of $-10$ m. She falls further, so the time would be **longer** (about 1.84 s).",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q12",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 11,
+  "question": "A ball is thrown vertically upwards with speed $8.4\\text{ m s}^{-1}$ from a point A, which is 1.6 m above horizontal ground. The ball is modelled as a particle moving freely under gravity.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the greatest height above the ground reached by the ball.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the time taken for the ball to reach the ground. Give your answer to 3 significant figures.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Find the length of time for which the ball is more than 4 m above the ground. Give your answer to 2 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "State one limitation of the model that could affect your answers.",
+    "marks": 1
+   }
+  ],
+  "hint": "Take up as positive from A. The ground is at $s = -1.6$; 4 m above the ground is $s = 2.4$.",
+  "answer": "(a) 5.2 m (b) 1.89 s (c) 0.99 s (d) e.g. air resistance is ignored; the ball is not a particle (its size is ignored); wind or spin ignored.",
+  "solution": "Up positive from A: $u = 8.4$, $a = -9.8$.\n\n(a) $0 = 8.4^2 + 2(-9.8)s$ M1 (use of $v = 0$ at the top with correct signs)\n$$s = \\frac{70.56}{19.6} = 3.6\\text{ m}$$ A1\nHeight above ground $= 3.6 + 1.6 = 5.2$ m A1\n\n(b) $s = -1.6$: $-1.6 = 8.4t - 4.9t^2$ M1 (correct sign of $s$) A1 (correct equation)\n$$4.9t^2 - 8.4t - 1.6 = 0 \\Rightarrow t = \\frac{8.4 + \\sqrt{8.4^2 + 4(4.9)(1.6)}}{9.8} = \\frac{8.4 + \\sqrt{101.92}}{9.8}$$ M1 (solving the quadratic)\n$$t = 1.89\\text{ s (3 s.f.)}$$ A1\n\n(c) 4 m above the ground is 2.4 m above A: $2.4 = 8.4t - 4.9t^2$ M1\n$$4.9t^2 - 8.4t + 2.4 = 0 \\Rightarrow t = \\frac{8.4 \\pm \\sqrt{23.52}}{9.8} \\Rightarrow t = 0.362 \\text{ or } 1.352$$ M1 (both roots)\nTime above 4 m $= 1.352 - 0.362 = 0.99$ s (2 s.f.) A1\n\n(d) Any one valid limitation, e.g. air resistance is ignored; the ball is treated as a particle so its size is ignored; spin/wind is ignored; $g$ is taken as exactly 9.8. B1\n\nTotal: 11 marks",
+  "misconceptionIds": [
+   "m3",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-vertical-motion-q13",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Ball A is held at the top of a vertical tower, 40 m above the ground. At the instant A is released from rest, ball B is projected vertically upwards with speed $20\\text{ m s}^{-1}$ from the ground directly below A, as shown.\n\n(a) Show that the balls collide 2 s after they are set in motion.\n\n(b) Find the height above the ground at which they collide.\n\n(c) Determine whether B is moving upwards or downwards at the moment of collision, and find the speed of each ball at this moment.",
+  "hint": "Measure A's displacement downwards and B's upwards. When they collide, the two distances add up to 40 m.",
+  "answer": "(a) Shown (b) 20.4 m (c) B is still moving upwards, at $0.4\\text{ m s}^{-1}$; A is moving down at $19.6\\text{ m s}^{-1}$",
+  "solution": "(a) In time $t$, A falls $\\frac{1}{2}(9.8)t^2 = 4.9t^2$ (down positive for A), and B rises $20t - 4.9t^2$ (up positive for B). They collide when the distances add to 40 m:\n$$4.9t^2 + 20t - 4.9t^2 = 40 \\Rightarrow 20t = 40 \\Rightarrow t = 2\\text{ s}$$\nThe $4.9t^2$ terms cancel: both balls have the same acceleration, so relative to each other they move at a constant $20\\text{ m s}^{-1}$.\n\n(b) B's height $= 20(2) - 4.9(2^2) = 40 - 19.6 = 20.4$ m. (Check: A has fallen $4.9 \\times 4 = 19.6$ m, so it is at $40 - 19.6 = 20.4$ m ✓.)\n\n(c) B: $v = 20 - 9.8 \\times 2 = 0.4\\text{ m s}^{-1}$, positive, so B is still moving **upwards** (just before its highest point, which it would reach at $t = 2.04$ s).\n\nA: $v = 9.8 \\times 2 = 19.6\\text{ m s}^{-1}$ downwards.",
+  "linkedTopicIds": [
+   "mech-suvat"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><line x1=\"10\" y1=\"240\" x2=\"330\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"240\" x2=\"12\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"36\" y1=\"240\" x2=\"28\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"52\" y1=\"240\" x2=\"44\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"68\" y1=\"240\" x2=\"60\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"84\" y1=\"240\" x2=\"76\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"100\" y1=\"240\" x2=\"92\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"116\" y1=\"240\" x2=\"108\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"132\" y1=\"240\" x2=\"124\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"148\" y1=\"240\" x2=\"140\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164\" y1=\"240\" x2=\"156\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"240\" x2=\"172\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"196\" y1=\"240\" x2=\"188\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"212\" y1=\"240\" x2=\"204\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"228\" y1=\"240\" x2=\"220\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"244\" y1=\"240\" x2=\"236\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"260\" y1=\"240\" x2=\"252\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"276\" y1=\"240\" x2=\"268\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"292\" y1=\"240\" x2=\"284\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"308\" y1=\"240\" x2=\"300\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"324\" y1=\"240\" x2=\"316\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M110,240 L110,50 L160,50 L160,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"172\" cy=\"44\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"184\" y=\"48\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A (dropped)</text><circle cx=\"172\" cy=\"234\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"172\" y1=\"224\" x2=\"172\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M172,180 L175.2,187 L168.8,187 z\" fill=\"currentColor\"/><text x=\"184\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B, 20 m s⁻¹</text><line x1=\"80\" y1=\"50\" x2=\"80\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M80,50 l-3.3,6 l6.6,0 z\" fill=\"currentColor\"/><path d=\"M80,240 l-3.3,-6 l6.6,0 z\" fill=\"currentColor\"/><text x=\"74\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">40 m</text></svg>"
+ },
+ {
+  "id": "mech-vertical-motion-q14",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "To estimate the depth of a well, Priya drops a stone from rest at the top of the well and hears the splash 3.0 s later. The speed of sound in air is $340\\text{ m s}^{-1}$.\n\n(a) Ignoring the time taken for the sound to travel, estimate the depth of the well.\n\n(b) Taking into account the time for the sound to travel back up the well, find the depth of the well to 3 significant figures.\n\n(c) Explain why your answer to (a) is an overestimate, and state one other assumption that has been made.",
+  "hint": "Let the stone take $t$ seconds to fall. The sound takes $3 - t$ seconds to come back up the same distance.",
+  "answer": "(a) 44.1 m (b) 40.7 m (c) Part of the 3 s was used by the sound travelling up, so the stone actually fell for less than 3 s. Other assumptions: e.g. air resistance on the stone is ignored; Priya's reaction time is ignored.",
+  "solution": "(a) If the stone falls for the full 3 s: $d = \\frac{1}{2}(9.8)(3^2) = 44.1$ m.\n\n(b) Let the stone fall for $t$ s. Then the depth is $d = 4.9t^2$, and the sound takes $3 - t$ s to travel up at $340\\text{ m s}^{-1}$: $d = 340(3 - t)$.\n$$4.9t^2 = 340(3 - t) \\Rightarrow 4.9t^2 + 340t - 1020 = 0$$\n$$t = \\frac{-340 + \\sqrt{340^2 + 4(4.9)(1020)}}{9.8} = \\frac{-340 + \\sqrt{135\\,592}}{9.8} = 2.880\\text{ s}$$\n(the negative root is rejected).\n$$d = 4.9 \\times 2.880^2 = 40.7\\text{ m (3 s.f.)}$$\n(Check: the sound takes $\\frac{40.7}{340} = 0.12$ s, and $2.88 + 0.12 = 3.0$ ✓.)\n\n(c) In (a) the stone is assumed to fall for all 3 s, but about 0.12 s of that is the sound travelling up, so the stone falls for less time and the true depth is smaller.\n\nOther assumptions: air resistance on the stone is ignored (which would make it fall more slowly); Priya's reaction time in starting and stopping the timing is ignored; the stone is dropped exactly from rest.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q15",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A ball is dropped from rest from a height of 2.5 m above a horizontal floor. It rebounds vertically with a speed equal to $\\frac{3}{4}$ of its speed just before impact. Assume that the ball is in contact with the floor for a negligible time.\n\n(a) Find the speed of the ball just before it first hits the floor, and the time taken.\n\n(b) Find the greatest height reached after the first bounce.\n\n(c) Taking upwards as positive, sketch the velocity–time graph of the ball from the moment it is released until it hits the floor for the second time. Label the values of $v$ and $t$ at the key points.\n\n(d) Explain why the two sloping parts of your graph are parallel, and how the area under the graph can be used to check your answer to (b).",
+  "hint": "Up positive: the ball's velocity is negative while it falls. At the bounce the velocity jumps from negative to positive.",
+  "answer": "(a) $7\\text{ m s}^{-1}$; $\\frac{5}{7} \\approx 0.714$ s (b) 1.41 m (3 s.f.) (c) Line from $(0, 0)$ to $(0.714, -7)$; vertical jump to $(0.714, 5.25)$; line down to $(1.79, -5.25)$, crossing the axis at $t = 1.25$ (d) Both have gradient $-9.8$ (the acceleration is $g$ downwards throughout); the triangle above the axis between $t = 0.714$ and $t = 1.25$ has area $1.41$, the rebound height.",
+  "solution": "(a) Down positive for the fall: $u = 0$, $a = 9.8$, $s = 2.5$:\n$$v^2 = 2(9.8)(2.5) = 49 \\Rightarrow v = 7\\text{ m s}^{-1}$$\n$$t = \\frac{7}{9.8} = \\frac{5}{7} = 0.714\\text{ s (3 s.f.)}$$\n\n(b) Rebound speed $= \\frac{3}{4} \\times 7 = 5.25\\text{ m s}^{-1}$. Up positive: $0 = 5.25^2 - 19.6s$:\n$$s = \\frac{27.5625}{19.6} = 1.40625 \\approx 1.41\\text{ m}$$\n\n(c) With up positive:\n• $0 \\le t \\le 0.714$: straight line from $(0, 0)$ down to $(0.714, -7)$.\n• At $t = 0.714$ the velocity jumps vertically to $+5.25$.\n• Then a straight line from $(0.714, 5.25)$ down through $v = 0$ at $t = 0.714 + \\frac{5.25}{9.8} = 1.25$ s, to $(1.79, -5.25)$, since by symmetry it returns to the floor after a further $\\frac{2 \\times 5.25}{9.8} = 1.07$ s and lands at the speed it left with.\n\n(d) The gradient of a $v$–$t$ graph is the acceleration. In the air the only force is gravity, so the acceleration is $-9.8\\text{ m s}^{-2}$ in both stages: the lines have the same gradient and are parallel.\n\nThe area between the graph and the $t$-axis from $t = 0.714$ to $t = 1.25$ (above the axis) is the upward displacement after the bounce:\n$$\\tfrac{1}{2} \\times 0.5357 \\times 5.25 = 1.406\\text{ m}$$\nwhich agrees with (b). Similarly the first triangle has area $\\frac{1}{2} \\times 0.714 \\times 7 = 2.5$ m, the drop height.",
+  "linkedTopicIds": [
+   "mech-kinematics-graphs"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q16",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A ball is projected vertically upwards with speed $u\\text{ m s}^{-1}$ from a point O. It passes a point P, 12 m above O, twice: once on the way up and once on the way down. The time between these two moments is exactly 2 s.\n\n(a) Show that the times at which the ball is at P satisfy $4.9t^2 - ut + 12 = 0$.\n\n(b) By considering the difference between the roots of this equation, find the value of $u$.\n\n(c) Find the greatest height of the ball above O, and the times at which it passes P.\n\n(d) Show that, in general, a ball projected upwards with speed $u$ is above a height $h$ for a time $\\dfrac{2}{g}\\sqrt{u^2 - 2gh}$, and explain what happens when $u^2 = 2gh$.",
+  "hint": "The roots of $at^2 + bt + c = 0$ are $\\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$, so they differ by $\\frac{\\sqrt{b^2 - 4ac}}{a}$.",
+  "answer": "(a) Shown (b) $u = 18.2$ (c) 16.9 m; $t = \\frac{6}{7} \\approx 0.857$ s and $t = \\frac{20}{7} \\approx 2.86$ s (d) Shown; when $u^2 = 2gh$ the time is 0: $h$ is exactly the greatest height, so the ball just touches that level at the top.",
+  "solution": "(a) Up positive: $a = -9.8$, $s = 12$:\n$$12 = ut - 4.9t^2 \\Rightarrow 4.9t^2 - ut + 12 = 0$$\n\n(b) The roots are $t = \\dfrac{u \\pm \\sqrt{u^2 - 4(4.9)(12)}}{9.8}$, so their difference is\n$$\\frac{2\\sqrt{u^2 - 235.2}}{9.8} = 2 \\Rightarrow \\sqrt{u^2 - 235.2} = 9.8$$\n$$u^2 = 235.2 + 96.04 = 331.24 \\Rightarrow u = 18.2\\ (u > 0)$$\n\n(c) Greatest height: $\\dfrac{u^2}{2g} = \\dfrac{331.24}{19.6} = 16.9$ m (which is above 12 m, as it must be).\n\nTimes at P: $t = \\dfrac{18.2 \\pm 9.8}{9.8}$, so $t = \\frac{8.4}{9.8} = \\frac{6}{7} \\approx 0.857$ s and $t = \\frac{28}{9.8} = \\frac{20}{7} \\approx 2.86$ s. They differ by 2 s ✓ and are symmetric about the time of greatest height, $\\frac{18.2}{9.8} = 1.857$ s.\n\n(d) In general, $h = ut - \\frac{1}{2}gt^2 \\Rightarrow \\frac{1}{2}gt^2 - ut + h = 0$. The difference of the roots is\n$$\\frac{\\sqrt{u^2 - 4 \\cdot \\frac{1}{2}g \\cdot h}}{\\frac{1}{2}g} = \\frac{2}{g}\\sqrt{u^2 - 2gh}$$\nwhich is the time spent above height $h$. Check with (b): $\\frac{2}{9.8}\\sqrt{331.24 - 235.2} = \\frac{2}{9.8} \\times 9.8 = 2$ ✓.\n\nWhen $u^2 = 2gh$ the discriminant is zero: there is a repeated root and the time above $h$ is 0. Then $h = \\frac{u^2}{2g}$ is exactly the greatest height; the ball just reaches that level at the top of its flight.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "pure-quadratic-functions-discriminant"
+  ]
+ },
+ {
+  "id": "mech-vertical-motion-q17",
+  "topicId": "mech-vertical-motion",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A firework rocket is launched vertically upwards from rest at ground level. While its engine burns, for the first 5 s, it has a constant upward acceleration of $4.2\\text{ m s}^{-2}$. After the engine stops, the rocket moves freely under gravity until it hits the ground. Air resistance is ignored.\n\n(a) Find the speed and the height of the rocket when the engine stops.\n\n(b) Find the greatest height reached by the rocket.\n\n(c) Find the total time from launch until the rocket hits the ground, to 3 significant figures.\n\n(d) Tom says: \"As soon as the engine stops, the rocket stops accelerating and so it moves at constant speed until it reaches its highest point.\" Explain why Tom is wrong.",
+  "hint": "Treat it as separate stages. When the engine stops the rocket is still moving up at the speed from stage 1, but its acceleration becomes $9.8\\text{ m s}^{-2}$ downwards.",
+  "answer": "(a) $21\\text{ m s}^{-1}$; 52.5 m (b) 75 m (c) 11.1 s (d) After the engine stops, gravity still acts, so the rocket has acceleration $9.8\\text{ m s}^{-2}$ downwards; it slows down steadily, stops momentarily at 75 m and falls back.",
+  "solution": "**Stage 1 (engine on):** up positive, $u = 0$, $a = 4.2$, $t = 5$.\n\n(a)\n$$v = 0 + 4.2 \\times 5 = 21\\text{ m s}^{-1} \\qquad s_1 = \\tfrac{1}{2}(4.2)(5^2) = 52.5\\text{ m}$$\n\n**Stage 2 (free motion):** $u = 21$ (the final velocity of stage 1, not 0), $a = -9.8$.\n\n(b) At the top $v = 0$:\n$$0 = 21^2 - 19.6s_2 \\Rightarrow s_2 = \\frac{441}{19.6} = 22.5\\text{ m}$$\nGreatest height $= 52.5 + 22.5 = 75$ m.\n\n(c) Time from engine stopping to the top: $\\dfrac{21}{9.8} = 2.143$ s.\n\nFrom the top (at rest, 75 m up) to the ground, down positive:\n$$75 = 4.9t^2 \\Rightarrow t = \\sqrt{\\frac{75}{4.9}} = 3.912\\text{ s}$$\nTotal time $= 5 + 2.143 + 3.912 = 11.055 \\approx 11.1$ s (3 s.f.).\n\n(Alternatively, in stage 2 solve $-52.5 = 21t - 4.9t^2$ to get $t = 6.055$ s.)\n\n(d) When the engine stops, the thrust disappears but the rocket's weight does not. The resultant force is the weight, so the acceleration is $9.8\\text{ m s}^{-2}$ downwards. The rocket keeps moving up but slows down at $9.8\\text{ m s}^{-2}$, is momentarily at rest at 75 m, then accelerates back down. Constant speed would require zero resultant force.",
+  "linkedTopicIds": [
+   "mech-suvat"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
