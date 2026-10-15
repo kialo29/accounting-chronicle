@@ -18,6 +18,7 @@
 - [Ch15] Collar release lasted 4 min 9 sec, saved 23 lives (Vorne's count). Cut Five buried; crews now in Cut Four. Tess's scanner: cracked ice-density sounder + leak-detector coil, hidden in a heat-pack sleeve under a loose panel behind the tool-shed rack. Krasso's left leg injured, not broken. Merrick held ~15 months; to leave 'in a few days' on the next Judiciary hull, Coruscant-ward.
 - [Ch16] Narkis raid: 6 staff killed incl. Sgt Holt; young guard Dannick survived; Vorne shot through right shoulder, alive; Krasso alive, left behind. Bane's crew: Aqualish Vosh, second crewman Krinn. Bane holds the ONLY collar control (inner coat pocket); Vorne's office terminal destroyed — collar must be cut off physically.
 - [Ch17] Major Teva Rusk (Judiciary Special Recovery): forties, close-cropped black hair, pale scar through left brow into eyelid; 8-person team in unmarked grey armor; carries a sealed spare collar case; works independently. Fives's signal: fake Guard power-cell fault ping (retired fault class), counts missed 12-hr check-ins, signed '5554' (last digit flipped = hurt); Rex sent the acknowledgment code.
+- [Ch18] Juko: old Weequay mechanic, jeweler's loupe over right eye, welding apron, black-stained fingers. Ahsoka: raw ring around her neck, small burn under left jaw. Tess has a broken finger (Ahsoka gripped her frostbitten hand in the seizure). Borrowed saber: brushed-steel hilt, worn black ridged grip, dented emitter shroud, filed-off mark near pommel, blue blade, peaceful crystal, heavier than hers; she uses it reverse grip.
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -37,6 +38,7 @@
 - [Ch15] Ahsoka nearly escaped during the release and told no one. Tarkin is using the incident to defend the collar program to the Senate. Tess quietly weighing what Ahsoka is worth.
 - [Ch16] Merrick Tal taken on a separate hauler toward Dooku (unresolved). Tess pocketed something she called a 'power cell' (seed for her betrayal). Dooku expects Ahsoka to 'reconsider'. Tarkin pushing to expand the collar program.
 - [Ch17] Anakin hasn't told Padmé about the hunt details. Luminara senses something wrong in Barriss. Windu authorized lethal force in the field.
+- [Ch18] Hondo kept the opened collar to sell. Tess asked about the off-world comm dish on the north tower; Ahsoka misreads Tess's worry as fear.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -54,4 +56,5 @@
 - [Ch15] ~Day 118. Tarkin's cruiser has left. Three ships hold low on the moon's far side, outside the dome's sensor range.
 - [Ch16] Ahsoka (collared) + Tess at pod crash site: red-walled canyon near a geyser on Florrum. Bane said he'd return 'in a day or two'. Holonet: Ahsoka believed to have joined Dooku.
 - [Ch17] 501st (Anakin, Obi-Wan, Rex) + Luminara + Barriss ship out on the Resolute at dawn, starting at Narkis.
+- [Ch18] Force restored to Ahsoka. Ventress has arrived at Hondo's base, sabreless.
 
