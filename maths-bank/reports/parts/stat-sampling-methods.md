@@ -3,3 +3,6 @@ Checked 18 questions: 17 ok, 1 fixed, 0 clarified. Topic details: fixed (misconc
 | Question | Result | Note |
 |---|---|---|
 | stat-sampling-methods-q17 | fixed | (d) suggested a coprime systematic interval "such as 21", but $21 \times 99 = 2079 > 2000$ so 100 bolts cannot be sampled; changed to 19 (last bolt at most 1900, gives 12 or 13 defective out of 100) and added this to the solution |
+
+### Scope coverage
+All 7 scope items covered.

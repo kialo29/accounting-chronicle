@@ -10,3 +10,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 - geo-sine-cosine-rules-q12 — drawing is accurate (all sides and angles check against the answers) — removed the "not drawn accurately" note
 - geo-sine-cosine-rules-q15 — drawing is accurate (62°, 48°, width 34.9 m to scale) — removed the note
 - geo-sine-cosine-rules-q17 — circumcircle, diameter BD and right angle at C are accurate — removed the note
+
+### Scope coverage
+All 5 scope items covered.

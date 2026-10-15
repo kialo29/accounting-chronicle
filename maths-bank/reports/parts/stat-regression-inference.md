@@ -8,3 +8,6 @@ Checked 18 questions: 17 ok, 1 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
 q10 plots show random scatter / curve / fan as described; q13 residuals recovered from SVG sum to 0, give s ≈ 26.5 and SE(b) ≈ 0.479, matching the computer output.
+
+### Scope coverage
+All 3 scope items covered.

@@ -9,3 +9,6 @@ All 15 question diagrams and the worked-example pie chart rendered and checked; 
 stat-charts-diagrams-q14 — pie chart marked 'not drawn accurately' was in fact drawn exactly, so the Dog sector measured 120° (the answer) — moved the Dog/Fish boundary so Dog is drawn about 108° and Fish 72°, and moved those two labels; Cat 78° and None 102° unchanged.
 stat-charts-diagrams-q16 — pie chart marked 'not drawn accurately' was drawn exactly (Comedy measured 72°, which gives x = 36) — redrew the boundaries at about 80°/55°/105°/120° and moved the four labels to suit.
 Bar, dual, composite, line and pictogram values and all other pie angles checked from SVG coordinates (q07, q08, q09, q11, q13, q15, q06, q12, q17, worked example 1).
+
+### Scope coverage
+All 5 scope items covered.

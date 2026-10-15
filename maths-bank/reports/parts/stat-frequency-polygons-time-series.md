@@ -9,3 +9,6 @@ Checked 17 questions: 15 ok, 0 fixed, 2 clarified. Topic details: ok
 ### Diagram audit
 10 diagrams checked: 10 ok, 0 fixed.
 All plotted points checked from SVG coordinates (zoo months, quarterly sales, temperatures, class midpoints and frequencies, both Class A/B polygons in q15).
+
+### Scope coverage
+All 3 scope items covered.

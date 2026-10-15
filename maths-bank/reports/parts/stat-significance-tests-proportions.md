@@ -8,3 +8,6 @@ Checked 17 questions: 16 ok, 0 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
 q02 shaded tails start at 0.45 and 0.55 (±2 SE); q13 c at 0.6667 and the shading under the p = 0.7 curve to the right of c.
+
+### Scope coverage
+All 4 scope items covered.

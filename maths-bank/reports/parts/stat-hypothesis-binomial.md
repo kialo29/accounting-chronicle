@@ -7,3 +7,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
 q06 bar heights match B(25, 0.2) probabilities; the critical region is not shaded (no give-away).
+
+### Scope coverage
+All 4 scope items covered.

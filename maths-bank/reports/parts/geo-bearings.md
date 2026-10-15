@@ -9,3 +9,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 - geo-bearings-q06 — the 25° angle is accurate — removed the note
 - geo-bearings-q13 — bearing 040° is accurate — removed the "not drawn accurately" note
 - geo-bearings-q16 — the triangle is accurate (PL = 8, bearings 040° and 300°, PB = 4.06) — removed the note. (q09 keeps its note because θ is general)
+
+### Scope coverage
+All 3 scope items covered.

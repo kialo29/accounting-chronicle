@@ -9,3 +9,6 @@ Checked 17 questions: 15 ok, 0 fixed, 2 clarified. Topic details: ok
 ### Diagram audit
 4 diagrams checked: 4 ok, 0 fixed.
 Five-number summaries checked from SVG coordinates: q05 210/245/260/290/350, q06 5/15/20/25/55, worked example 3/8/14/18/21 with cross at 40; q10 blank grid has the right scale.
+
+### Scope coverage
+All 8 scope items covered. Key idea extended (data/topics-fixes/stat-quartiles-box-plots.json) to mention: data cleaning.

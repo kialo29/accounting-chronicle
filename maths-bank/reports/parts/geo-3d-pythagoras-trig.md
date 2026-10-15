@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 9 diagrams checked: 8 ok, 1 fixed.
 - geo-3d-pythagoras-trig worked example 1 — the blue diagonal AG ran through the label "F" — moved F inside the right face, next to the vertex (data/topics-fixes/geo-3d-pythagoras-trig.json). The "not drawn to scale" notes on the oblique 3D cuboid/pyramid drawings are kept, since an oblique projection cannot show every edge to scale
+
+### Scope coverage
+All 3 scope items covered.

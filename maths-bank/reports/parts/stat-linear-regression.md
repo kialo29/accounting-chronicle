@@ -9,3 +9,6 @@ Checked 17 questions: 15 ok, 2 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 3 diagrams checked: 3 ok, 0 fixed.
 q09 residuals recomputed from the stated line (5.06, −0.71, −4.48, −4.25, −1.02, 5.21) and match the plot; q10 points match the table; q14 residuals recomputed from the least-squares fit (+0.57, +0.10, −0.20, −0.63, +0.17) and match the plot.
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/stat-linear-regression.json) to mention: transforming data to achieve linearity (log and power).

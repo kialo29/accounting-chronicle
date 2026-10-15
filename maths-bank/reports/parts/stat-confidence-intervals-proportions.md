@@ -10,3 +10,6 @@ Checked 18 questions: 15 ok, 0 fixed, 3 clarified. Topic details: ok
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
 q15: interval widths match ±1.96√(p̂(1−p̂)/200); exactly the two highlighted intervals (samples 5 and 14) miss p = 0.6.
+
+### Scope coverage
+All 4 scope items covered.

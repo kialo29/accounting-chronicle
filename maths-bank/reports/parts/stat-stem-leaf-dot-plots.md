@@ -7,3 +7,6 @@ All 5 diagrams (dot plots q07, q08, q13; histograms q09, q15) rendered and read;
 ### Diagram audit
 5 diagrams checked: 5 ok, 0 fixed.
 Dot counts (q07, q08, q13) and histogram bar heights (q09: 3, 8, 11, 6, 2; q15: 5, 12, 10, 9, 4) checked from SVG coordinates.
+
+### Scope coverage
+All 3 scope items covered.
