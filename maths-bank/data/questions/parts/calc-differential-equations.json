@@ -1,0 +1,341 @@
+[
+ {
+  "id": "calc-differential-equations-q01",
+  "topicId": "calc-differential-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve the differential equation\n$$\\frac{dy}{dx} = 3y$$\ngiven that $y = 2$ when $x = 0$.",
+  "hint": "Divide both sides by $y$ and integrate: $\\int \\frac{1}{y}\\,dy = \\int 3\\,dx$.",
+  "answer": "$y = 2e^{3x}$",
+  "solution": "Separate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int 3\\,dx$$\n\nIntegrate, with one constant:\n$$\\ln|y| = 3x + c$$\n\nExponentiate:\n$$y = e^{3x + c} = Ae^{3x}, \\quad A = \\pm e^{c}$$\n\nUse $y = 2$ when $x = 0$: $2 = Ae^{0} = A$. So\n$$y = 2e^{3x}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q02",
+  "topicId": "calc-differential-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve the differential equation\n$$\\frac{dy}{dx} = -3y$$\ngiven that $y = 2$ when $x = 0$.",
+  "hint": "Separate exactly as for $\\frac{dy}{dx} = 3y$; keep track of the minus sign.",
+  "answer": "$y = 2e^{-3x}$",
+  "solution": "**What changed:** the constant $3$ became $-3$, so the solution should decay instead of grow.\n\n$$\\int \\frac{1}{y}\\,dy = \\int -3\\,dx \\quad\\Rightarrow\\quad \\ln|y| = -3x + c \\quad\\Rightarrow\\quad y = Ae^{-3x}$$\n\nWhen $x = 0$, $y = 2$: $A = 2$. So\n$$y = 2e^{-3x}$$\n\nThe sign of the constant in $\\frac{dy}{dx} = ky$ decides growth ($k > 0$) or decay ($k < 0$).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q03",
+  "topicId": "calc-differential-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve the differential equation\n$$\\frac{dy}{dx} = -3xy$$\ngiven that $y = 2$ when $x = 0$.",
+  "hint": "Now the $x$-side is $\\int -3x\\,dx$ rather than $\\int -3\\,dx$.",
+  "answer": "$y = 2e^{-\\frac{3}{2}x^2}$",
+  "solution": "**What changed:** a factor of $x$ appeared on the right, so only the $x$-integral changes.\n\n$$\\int \\frac{1}{y}\\,dy = \\int -3x\\,dx$$\n\n$$\\ln|y| = -\\frac{3}{2}x^2 + c \\quad\\Rightarrow\\quad y = Ae^{-\\frac{3}{2}x^2}$$\n\nWhen $x = 0$, $y = 2$: $2 = Ae^0$, so $A = 2$ and\n$$y = 2e^{-\\frac{3}{2}x^2}$$\n\n(The graph is now a bell shape rather than a simple decay curve.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q04",
+  "topicId": "calc-differential-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve the differential equation\n$$\\frac{dy}{dx} = -3xy^2$$\ngiven that $y = 2$ when $x = 0$. Give $y$ in terms of $x$.",
+  "hint": "Divide by $y^2$, not $y$: $\\int y^{-2}\\,dy = \\int -3x\\,dx$. There is no logarithm this time.",
+  "answer": "$y = \\dfrac{2}{3x^2 + 1}$",
+  "solution": "**What changed:** $y$ became $y^2$, so the $y$-integral is a power, not a logarithm, and there is no exponential in the answer.\n\n$$\\int y^{-2}\\,dy = \\int -3x\\,dx$$\n\n$$-\\frac{1}{y} = -\\frac{3}{2}x^2 + c$$\n\nWhen $x = 0$, $y = 2$: $-\\frac{1}{2} = c$. So\n$$-\\frac{1}{y} = -\\frac{3}{2}x^2 - \\frac{1}{2} \\quad\\Rightarrow\\quad \\frac{1}{y} = \\frac{3x^2 + 1}{2}$$\n\n$$y = \\frac{2}{3x^2 + 1}$$\n\nCheck: when $x = 0$, $y = \\frac{2}{1} = 2$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q05",
+  "topicId": "calc-differential-equations",
+  "difficulty": 1,
+  "type": "reasoning",
+  "question": "Jo says that $y = e^{2x} + 5$ is a solution of the differential equation\n$$\\frac{dy}{dx} = 2y$$\nbecause '$\\ln y = 2x + c$ gives $y = e^{2x} + c$, and here $c = 5$'.\n\nIs Jo correct? Justify your answer by substituting her function into the differential equation, and give the correct general solution.",
+  "hint": "Work out $\\frac{dy}{dx}$ for Jo's function and compare it with $2y$. What is $e^{2x + c}$ in terms of $e^{2x}$ and $e^c$?",
+  "answer": "No: for $y = e^{2x} + 5$, $\\frac{dy}{dx} = 2e^{2x}$ but $2y = 2e^{2x} + 10$. The general solution is $y = Ae^{2x}$.",
+  "solution": "Substitute Jo's function:\n$$y = e^{2x} + 5 \\quad\\Rightarrow\\quad \\frac{dy}{dx} = 2e^{2x}$$\n$$2y = 2e^{2x} + 10$$\n\nThese are not equal (they differ by 10 for every $x$), so Jo is **not** correct.\n\nHer error is in the exponentiating step. From $\\ln|y| = 2x + c$:\n$$|y| = e^{2x + c} = e^{2x} \\times e^{c}$$\nso the constant **multiplies**, it does not add. Writing $A = \\pm e^c$:\n$$y = Ae^{2x}$$\n\nCheck: $\\frac{dy}{dx} = 2Ae^{2x} = 2y$. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q06",
+  "topicId": "calc-differential-equations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to solve $\\dfrac{dy}{dx} = y\\cos x$, given that $y = 4$ when $x = 0$. His working is shown below.\n\n**Line 1:** $\\displaystyle\\int \\frac{1}{y}\\,dy = \\int \\cos x\\,dx$\n\n**Line 2:** $\\ln y = \\sin x + c$\n\n**Line 3:** $y = e^{\\sin x} + c$\n\n**Line 4:** $4 = e^{0} + c$, so $c = 3$\n\n**Line 5:** $y = e^{\\sin x} + 3$\n\nIdentify the line containing Ben's error, explain the mistake, and find the correct solution.",
+  "hint": "Write $e^{\\sin x + c}$ using a law of indices.",
+  "answer": "Line 3 is wrong: $e^{\\sin x + c} = e^c e^{\\sin x}$, so the constant multiplies. Correct solution $y = 4e^{\\sin x}$.",
+  "solution": "Lines 1 and 2 are correct.\n\n**Line 3 is wrong.** Exponentiating $\\ln y = \\sin x + c$ gives\n$$y = e^{\\sin x + c} = e^{\\sin x} \\times e^{c}$$\nBen has added the constant after exponentiating, as if $e^{\\sin x + c}$ were $e^{\\sin x} + c$. The constant should multiply. Let $A = e^c$:\n$$y = Ae^{\\sin x}$$\n\nNow use $y = 4$ when $x = 0$:\n$$4 = Ae^{0} = A$$\n\n$$y = 4e^{\\sin x}$$\n\nCheck: $\\frac{dy}{dx} = 4\\cos x\\, e^{\\sin x} = y\\cos x$. ✓ Ben's answer fails this check: $\\frac{d}{dx}\\left(e^{\\sin x} + 3\\right) = \\cos x\\, e^{\\sin x}$, but $y\\cos x = \\cos x\\, e^{\\sin x} + 3\\cos x$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q07",
+  "topicId": "calc-differential-equations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ella is asked to find the particular solution of $\\dfrac{dy}{dx} = 6x^2 y$ for which $y = 5$ when $x = 0$. Her working is shown below.\n\n**Line 1:** $\\displaystyle y = \\int 6x^2 y\\,dx$\n\n**Line 2:** $y = 2x^3 y + c$\n\n**Line 3:** $5 = 0 + c$, so $c = 5$\n\n**Line 4:** $y = 2x^3 y + 5$, so $y = \\dfrac{5}{1 - 2x^3}$\n\nIdentify Ella's error, explain why it is wrong, and find the correct particular solution.",
+  "hint": "Can $y$ be taken outside an integral with respect to $x$? Try separating the variables first.",
+  "answer": "Line 2: she treated $y$ as a constant when integrating with respect to $x$. Correct solution $y = 5e^{2x^3}$.",
+  "solution": "**Line 2 is wrong.** Ella integrated $6x^2 y$ with respect to $x$ as though $y$ were a constant. But $y$ is a function of $x$, so $\\int 6x^2 y\\,dx$ cannot be found this way. (Her answer fails the check: for $y = \\frac{5}{1 - 2x^3}$, $\\frac{dy}{dx} = \\frac{30x^2}{(1 - 2x^3)^2}$, which is not $6x^2 y = \\frac{30x^2}{1 - 2x^3}$.)\n\nCorrect method: separate the variables first, putting all the $y$ terms with $dy$:\n$$\\int \\frac{1}{y}\\,dy = \\int 6x^2\\,dx$$\n\n$$\\ln|y| = 2x^3 + c \\quad\\Rightarrow\\quad y = Ae^{2x^3}$$\n\nWhen $x = 0$, $y = 5$: $A = 5$.\n$$y = 5e^{2x^3}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differential-equations-q08",
+  "topicId": "calc-differential-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "After an injection, the mass of a drug in a patient's bloodstream decreases at a rate proportional to the mass present. Initially there is 200 mg of the drug, and 4 hours later there is 150 mg.\n\nLet $M$ mg be the mass of the drug $t$ hours after the injection.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down a differential equation connecting $M$ and $t$, defining any constant you use."
+   },
+   {
+    "label": "b",
+    "prompt": "Solve your differential equation to find $M$ in terms of $t$."
+   },
+   {
+    "label": "c",
+    "prompt": "A further dose is needed when the mass falls to 50 mg. Find how long after the injection this happens, giving your answer to the nearest tenth of an hour."
+   }
+  ],
+  "hint": "'Decreases' means $\\frac{dM}{dt}$ is negative. Use the two given facts to find the two constants.",
+  "answer": "(a) $\\dfrac{dM}{dt} = -kM$, where $k > 0$ is a constant (b) $M = 200e^{-kt}$ with $k = \\frac{1}{4}\\ln\\frac{4}{3}$, i.e. $M = 200\\left(\\frac{3}{4}\\right)^{t/4}$ (c) 19.3 hours",
+  "solution": "(a) The rate of change is proportional to $M$, and $M$ is **decreasing**, so the derivative must be negative:\n$$\\frac{dM}{dt} = -kM, \\quad k > 0$$\n(Writing $\\frac{dM}{dt} = kM$ with $k > 0$ would model growth.)\n\n(b) Separate and integrate:\n$$\\int \\frac{1}{M}\\,dM = \\int -k\\,dt \\quad\\Rightarrow\\quad \\ln M = -kt + c \\quad\\Rightarrow\\quad M = Ae^{-kt}$$\n\nAt $t = 0$, $M = 200$: $A = 200$.\n\nAt $t = 4$, $M = 150$:\n$$150 = 200e^{-4k} \\quad\\Rightarrow\\quad e^{-4k} = \\frac{3}{4} \\quad\\Rightarrow\\quad k = \\frac{1}{4}\\ln\\frac{4}{3} \\approx 0.0719$$\n\n$$M = 200e^{-kt}, \\quad k = \\tfrac{1}{4}\\ln\\tfrac{4}{3} \\qquad \\left(\\text{equivalently } M = 200\\left(\\tfrac{3}{4}\\right)^{t/4}\\right)$$\n\n(c) Set $M = 50$:\n$$50 = 200e^{-kt} \\quad\\Rightarrow\\quad e^{-kt} = \\frac{1}{4} \\quad\\Rightarrow\\quad t = \\frac{\\ln 4}{k} = \\frac{4\\ln 4}{\\ln\\frac{4}{3}} \\approx 19.27$$\n\nThe further dose is needed after about **19.3 hours**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q09",
+  "topicId": "calc-differential-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A population of deer on an island is modelled by the logistic differential equation\n$$\\frac{dP}{dt} = 0.4P\\left(1 - \\frac{P}{500}\\right)$$\nwhere $P$ is the number of deer $t$ years after the start of a study, and $P = 100$ when $t = 0$. The graph of the solution is shown.\n\nSam says: 'The population is growing fastest when it gets close to 500, because that is when there are most deer to breed.'",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Is Sam correct? Justify your answer, stating the value of $P$ at which the population grows fastest."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the maximum rate of growth of the population."
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\displaystyle\\lim_{t \\to \\infty} P$. Explain how the differential equation shows that, if instead there were 700 deer at $t = 0$, the population would decrease."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 230\" width=\"320\" height=\"230\"><line x1=\"44\" y1=\"190\" x2=\"304\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"44\" y1=\"190\" x2=\"44\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"53.6\" y1=\"190\" x2=\"53.6\" y2=\"194\" stroke=\"currentColor\"/><text x=\"53.6\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"101.8\" y1=\"190\" x2=\"101.8\" y2=\"194\" stroke=\"currentColor\"/><text x=\"101.8\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"149.9\" y1=\"190\" x2=\"149.9\" y2=\"194\" stroke=\"currentColor\"/><text x=\"149.9\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"198.1\" y1=\"190\" x2=\"198.1\" y2=\"194\" stroke=\"currentColor\"/><text x=\"198.1\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">15</text><line x1=\"246.2\" y1=\"190\" x2=\"246.2\" y2=\"194\" stroke=\"currentColor\"/><text x=\"246.2\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"294.4\" y1=\"190\" x2=\"294.4\" y2=\"194\" stroke=\"currentColor\"/><text x=\"294.4\" y=\"206\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">25</text><line x1=\"40\" y1=\"179\" x2=\"44\" y2=\"179\" stroke=\"currentColor\"/><text x=\"38\" y=\"183\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"40\" y1=\"151.5\" x2=\"44\" y2=\"151.5\" stroke=\"currentColor\"/><text x=\"38\" y=\"155.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">100</text><line x1=\"40\" y1=\"124\" x2=\"44\" y2=\"124\" stroke=\"currentColor\"/><text x=\"38\" y=\"128\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">200</text><line x1=\"40\" y1=\"96.5\" x2=\"44\" y2=\"96.5\" stroke=\"currentColor\"/><text x=\"38\" y=\"100.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">300</text><line x1=\"40\" y1=\"69\" x2=\"44\" y2=\"69\" stroke=\"currentColor\"/><text x=\"38\" y=\"73\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">400</text><line x1=\"40\" y1=\"41.5\" x2=\"44\" y2=\"41.5\" stroke=\"currentColor\"/><text x=\"38\" y=\"45.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">500</text><text x=\"174\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">t (years)</text><text x=\"13\" y=\"102\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 13 102)\">P</text><path d=\"M44,41.5 L304,41.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><path d=\"M53.6,151.5 L54.3,150.9 L54.9,150.3 L55.5,149.7 L56.1,149.1 L56.8,148.5 L57.4,147.9 L58,147.3 L58.6,146.6 L59.3,146 L59.9,145.3 L60.5,144.7 L61.1,144 L61.8,143.3 L62.4,142.6 L63,141.9 L63.6,141.2 L64.3,140.5 L64.9,139.8 L65.5,139 L66.1,138.3 L66.8,137.5 L67.4,136.8 L68,136 L68.7,135.3 L69.3,134.5 L69.9,133.7 L70.5,132.9 L71.2,132.1 L71.8,131.3 L72.4,130.5 L73,129.7 L73.7,128.8 L74.3,128 L74.9,127.2 L75.5,126.3 L76.2,125.5 L76.8,124.6 L77.4,123.8 L78,122.9 L78.7,122 L79.3,121.2 L79.9,120.3 L80.5,119.4 L81.2,118.5 L81.8,117.7 L82.4,116.8 L83,115.9 L83.7,115 L84.3,114.1 L84.9,113.2 L85.6,112.3 L86.2,111.4 L86.8,110.5 L87.4,109.6 L88.1,108.7 L88.7,107.9 L89.3,107 L89.9,106.1 L90.6,105.2 L91.2,104.3 L91.8,103.4 L92.4,102.5 L93.1,101.6 L93.7,100.8 L94.3,99.9 L94.9,99 L95.6,98.1 L96.2,97.3 L96.8,96.4 L97.4,95.6 L98.1,94.7 L98.7,93.9 L99.3,93 L99.9,92.2 L100.6,91.4 L101.2,90.5 L101.8,89.7 L102.5,88.9 L103.1,88.1 L103.7,87.3 L104.3,86.5 L105,85.7 L105.6,85 L106.2,84.2 L106.8,83.4 L107.5,82.7 L108.1,81.9 L108.7,81.2 L109.3,80.5 L110,79.7 L110.6,79 L111.2,78.3 L111.8,77.6 L112.5,76.9 L113.1,76.3 L113.7,75.6 L114.3,74.9 L115,74.3 L115.6,73.6 L116.2,73 L116.8,72.4 L117.5,71.7 L118.1,71.1 L118.7,70.5 L119.4,69.9 L120,69.4 L120.6,68.8 L121.2,68.2 L121.9,67.7 L122.5,67.1 L123.1,66.6 L123.7,66.1 L124.4,65.5 L125,65 L125.6,64.5 L126.2,64 L126.9,63.5 L127.5,63.1 L128.1,62.6 L128.7,62.1 L129.4,61.7 L130,61.2 L130.6,60.8 L131.2,60.4 L131.9,60 L132.5,59.6 L133.1,59.1 L133.7,58.8 L134.4,58.4 L135,58 L135.6,57.6 L136.3,57.2 L136.9,56.9 L137.5,56.5 L138.1,56.2 L138.8,55.8 L139.4,55.5 L140,55.2 L140.6,54.9 L141.3,54.6 L141.9,54.3 L142.5,54 L143.1,53.7 L143.8,53.4 L144.4,53.1 L145,52.8 L145.6,52.6 L146.3,52.3 L146.9,52 L147.5,51.8 L148.1,51.6 L148.8,51.3 L149.4,51.1 L150,50.9 L150.6,50.6 L151.3,50.4 L151.9,50.2 L152.5,50 L153.2,49.8 L153.8,49.6 L154.4,49.4 L155,49.2 L155.7,49 L156.3,48.8 L156.9,48.6 L157.5,48.5 L158.2,48.3 L158.8,48.1 L159.4,48 L160,47.8 L160.7,47.7 L161.3,47.5 L161.9,47.4 L162.5,47.2 L163.2,47.1 L163.8,46.9 L164.4,46.8 L165,46.7 L165.7,46.5 L166.3,46.4 L166.9,46.3 L167.5,46.2 L168.2,46.1 L168.8,46 L169.4,45.8 L170.1,45.7 L170.7,45.6 L171.3,45.5 L171.9,45.4 L172.6,45.3 L173.2,45.2 L173.8,45.1 L174.4,45 L175.1,45 L175.7,44.9 L176.3,44.8 L176.9,44.7 L177.6,44.6 L178.2,44.5 L178.8,44.5 L179.4,44.4 L180.1,44.3 L180.7,44.3 L181.3,44.2 L181.9,44.1 L182.6,44 L183.2,44 L183.8,43.9 L184.4,43.9 L185.1,43.8 L185.7,43.7 L186.3,43.7 L187,43.6 L187.6,43.6 L188.2,43.5 L188.8,43.5 L189.5,43.4 L190.1,43.4 L190.7,43.3 L191.3,43.3 L192,43.2 L192.6,43.2 L193.2,43.1 L193.8,43.1 L194.5,43.1 L195.1,43 L195.7,43 L196.3,42.9 L197,42.9 L197.6,42.9 L198.2,42.8 L198.8,42.8 L199.5,42.8 L200.1,42.7 L200.7,42.7 L201.3,42.7 L202,42.6 L202.6,42.6 L203.2,42.6 L203.9,42.6 L204.5,42.5 L205.1,42.5 L205.7,42.5 L206.4,42.5 L207,42.4 L207.6,42.4 L208.2,42.4 L208.9,42.4 L209.5,42.3 L210.1,42.3 L210.7,42.3 L211.4,42.3 L212,42.3 L212.6,42.2 L213.2,42.2 L213.9,42.2 L214.5,42.2 L215.1,42.2 L215.7,42.2 L216.4,42.1 L217,42.1 L217.6,42.1 L218.2,42.1 L218.9,42.1 L219.5,42.1 L220.1,42 L220.8,42 L221.4,42 L222,42 L222.6,42 L223.3,42 L223.9,42 L224.5,42 L225.1,41.9 L225.8,41.9 L226.4,41.9 L227,41.9 L227.6,41.9 L228.3,41.9 L228.9,41.9 L229.5,41.9 L230.1,41.9 L230.8,41.8 L231.4,41.8 L232,41.8 L232.6,41.8 L233.3,41.8 L233.9,41.8 L234.5,41.8 L235.1,41.8 L235.8,41.8 L236.4,41.8 L237,41.8 L237.7,41.8 L238.3,41.8 L238.9,41.7 L239.5,41.7 L240.2,41.7 L240.8,41.7 L241.4,41.7 L242,41.7 L242.7,41.7 L243.3,41.7 L243.9,41.7 L244.5,41.7 L245.2,41.7 L245.8,41.7 L246.4,41.7 L247,41.7 L247.7,41.7 L248.3,41.7 L248.9,41.7 L249.5,41.7 L250.2,41.7 L250.8,41.7 L251.4,41.6 L252,41.6 L252.7,41.6 L253.3,41.6 L253.9,41.6 L254.6,41.6 L255.2,41.6 L255.8,41.6 L256.4,41.6 L257.1,41.6 L257.7,41.6 L258.3,41.6 L258.9,41.6 L259.6,41.6 L260.2,41.6 L260.8,41.6 L261.4,41.6 L262.1,41.6 L262.7,41.6 L263.3,41.6 L263.9,41.6 L264.6,41.6 L265.2,41.6 L265.8,41.6 L266.4,41.6 L267.1,41.6 L267.7,41.6 L268.3,41.6 L268.9,41.6 L269.6,41.6 L270.2,41.6 L270.8,41.6 L271.5,41.6 L272.1,41.6 L272.7,41.6 L273.3,41.6 L274,41.6 L274.6,41.6 L275.2,41.6 L275.8,41.6 L276.5,41.6 L277.1,41.6 L277.7,41.5 L278.3,41.5 L279,41.5 L279.6,41.5 L280.2,41.5 L280.8,41.5 L281.5,41.5 L282.1,41.5 L282.7,41.5 L283.3,41.5 L284,41.5 L284.6,41.5 L285.2,41.5 L285.8,41.5 L286.5,41.5 L287.1,41.5 L287.7,41.5 L288.4,41.5 L289,41.5 L289.6,41.5 L290.2,41.5 L290.9,41.5 L291.5,41.5 L292.1,41.5 L292.7,41.5 L293.4,41.5 L294,41.5 L294.6,41.5 L295.2,41.5 L295.9,41.5 L296.5,41.5 L297.1,41.5 L297.7,41.5 L298.4,41.5 L299,41.5 L299.6,41.5 L300.2,41.5 L300.9,41.5 L301.5,41.5 L302.1,41.5 L302.7,41.5 L303.4,41.5 L304,41.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+  "hint": "Treat $\\frac{dP}{dt}$ as a quadratic function of $P$. Where is the vertex of a parabola with roots $0$ and $500$?",
+  "answer": "(a) No; it grows fastest when $P = 250$ (b) 50 deer per year (c) $500$; if $P > 500$ then $1 - \\frac{P}{500} < 0$, so $\\frac{dP}{dt} < 0$",
+  "solution": "(a) The growth rate, as a function of $P$, is\n$$\\frac{dP}{dt} = 0.4P - \\frac{0.4}{500}P^2$$\nThis is a quadratic in $P$ with negative $P^2$ coefficient and roots $P = 0$ and $P = 500$. Its maximum is midway between the roots, at $P = 250$.\n\nSo Sam is **not** correct. Near $P = 500$ the factor $1 - \\frac{P}{500}$ is close to $0$ (competition for food), so the growth rate is close to $0$ there. The population grows fastest at $P = 250$, half the carrying capacity, which is where the graph is steepest (its point of inflection).\n\n(b) At $P = 250$:\n$$\\frac{dP}{dt} = 0.4 \\times 250 \\times \\left(1 - \\frac{250}{500}\\right) = 0.4 \\times 250 \\times 0.5 = 50$$\nThe maximum growth rate is **50 deer per year**.\n\n(c) Starting from $P = 100$, with $0 < P < 500$, $\\frac{dP}{dt} > 0$ and $P$ increases towards the carrying capacity: $\\displaystyle\\lim_{t\\to\\infty} P = 500$.\n\nIf $P = 700$, then $1 - \\frac{700}{500} = -0.4 < 0$, so $\\frac{dP}{dt} = 0.4 \\times 700 \\times (-0.4) = -112 < 0$: the population decreases (towards 500).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-graphs"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q10",
+  "topicId": "calc-differential-equations",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "Find the solution of the differential equation\n$$\\frac{dy}{dx} = 2x\\cos^2 y, \\qquad -\\frac{\\pi}{2} < y < \\frac{\\pi}{2}$$\nfor which $y = \\frac{\\pi}{4}$ when $x = 0$. Give $y$ explicitly in terms of $x$, and state the limit of $y$ as $x \\to \\infty$.",
+  "hint": "Dividing by $\\cos^2 y$ gives $\\sec^2 y$. What do you differentiate to get $\\sec^2 y$?",
+  "answer": "$y = \\arctan(x^2 + 1)$; $y \\to \\frac{\\pi}{2}$ as $x \\to \\infty$",
+  "solution": "Separate the variables. Dividing by $\\cos^2 y$ gives $\\sec^2 y$:\n$$\\int \\sec^2 y\\,dy = \\int 2x\\,dx$$\n\nSince $\\frac{d}{dy}(\\tan y) = \\sec^2 y$:\n$$\\tan y = x^2 + c$$\n\nWhen $x = 0$, $y = \\frac{\\pi}{4}$: $\\tan\\frac{\\pi}{4} = 1 = c$. So\n$$\\tan y = x^2 + 1$$\n\nBecause $-\\frac{\\pi}{2} < y < \\frac{\\pi}{2}$, we can take the principal value of the inverse tangent:\n$$y = \\arctan\\left(x^2 + 1\\right)$$\n\nAs $x \\to \\infty$, $x^2 + 1 \\to \\infty$, so $y \\to \\frac{\\pi}{2}$ (but never reaches it). This fits the differential equation: as $y \\to \\frac{\\pi}{2}$, $\\cos^2 y \\to 0$, so the gradient flattens out.",
+  "linkedTopicIds": [
+   "pure-trig-reciprocal-inverse"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q11",
+  "topicId": "calc-differential-equations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Water drains from a tank through a hole in its base. The depth of water, $h$ cm, $t$ minutes after the hole is opened satisfies\n$$\\frac{dh}{dt} = -k\\sqrt{h}$$\nwhere $k$ is a positive constant. Initially the depth is 144 cm, and after 10 minutes it is 100 cm.\n\nFind the depth after 30 minutes, and the time it takes for the tank to empty.",
+  "hint": "$\\int h^{-\\frac{1}{2}}\\,dh = 2\\sqrt{h}$. You have two unknowns (the constant of integration and $k$) and two pieces of information.",
+  "answer": "36 cm after 30 minutes; the tank is empty after 60 minutes",
+  "solution": "Separate the variables:\n$$\\int h^{-\\frac{1}{2}}\\,dh = \\int -k\\,dt \\quad\\Rightarrow\\quad 2\\sqrt{h} = -kt + c$$\n\nAt $t = 0$, $h = 144$: $2 \\times 12 = c$, so $c = 24$:\n$$2\\sqrt{h} = 24 - kt$$\n\nAt $t = 10$, $h = 100$: $2 \\times 10 = 24 - 10k$, so $k = 0.4$:\n$$2\\sqrt{h} = 24 - 0.4t \\quad\\Rightarrow\\quad \\sqrt{h} = 12 - 0.2t$$\n\nAfter 30 minutes: $\\sqrt{h} = 12 - 6 = 6$, so $h = 36$ cm.\n\nEmpty when $h = 0$: $12 - 0.2t = 0$, so $t = 60$ minutes.\n\n(Note: the formula $h = (12 - 0.2t)^2$ only applies for $0 \\le t \\le 60$; after that the tank stays empty, rather than the depth increasing again as the formula would suggest. Also notice the drainage is not exponential: the tank empties in finite time.)",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q12",
+  "topicId": "calc-differential-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 11,
+  "question": "The number of fish in a lake, $P$ thousand, $t$ years after the start of a breeding programme is modelled by\n$$\\frac{dP}{dt} = \\frac{P(8 - P)}{16}, \\qquad 0 < P < 8$$\nAt the start of the programme there are 2000 fish in the lake.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Express $\\dfrac{16}{P(8 - P)}$ in partial fractions.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that $P = \\dfrac{8}{1 + 3e^{-\\frac{1}{2}t}}$.",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact time at which the model predicts there will be 6000 fish in the lake.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "State the long-term number of fish predicted by the model, and give one criticism of the model.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (b), separate to get $\\int \\frac{16}{P(8 - P)}\\,dP = \\int 1\\,dt$, combine the logarithms, and use $P = 2$ at $t = 0$ before rearranging.",
+  "answer": "(a) $\\dfrac{2}{P} + \\dfrac{2}{8 - P}$ (b) shown (c) $t = 4\\ln 3$ years ($\\approx 4.39$ years) (d) 8000 fish; e.g. the carrying capacity is assumed constant (no allowance for fishing, disease or changes in food supply)",
+  "solution": "(a) $\\dfrac{16}{P(8 - P)} \\equiv \\dfrac{A}{P} + \\dfrac{B}{8 - P}$, so $16 \\equiv A(8 - P) + BP$.\n\n$P = 0$: $16 = 8A$, $A = 2$. $P = 8$: $16 = 8B$, $B = 2$. **M1**\n$$\\frac{16}{P(8 - P)} = \\frac{2}{P} + \\frac{2}{8 - P} \\quad \\textbf{A1}$$\n\n(b) Separate the variables:\n$$\\int \\frac{16}{P(8 - P)}\\,dP = \\int 1\\,dt \\quad \\textbf{B1}$$\n\n$$2\\ln P - 2\\ln(8 - P) = t + c \\quad \\textbf{M1 A1}$$\n(note the minus sign from the chain rule on $\\ln(8 - P)$).\n\nAt $t = 0$, $P = 2$: $2\\ln 2 - 2\\ln 6 = c$, so $c = 2\\ln\\frac{1}{3}$. **M1**\n\n$$2\\ln\\frac{P}{8 - P} = t + 2\\ln\\frac{1}{3} \\quad\\Rightarrow\\quad \\ln\\frac{3P}{8 - P} = \\frac{t}{2} \\quad\\Rightarrow\\quad \\frac{3P}{8 - P} = e^{\\frac{1}{2}t}$$\n\n$$3P = 8e^{\\frac{1}{2}t} - Pe^{\\frac{1}{2}t} \\quad\\Rightarrow\\quad P\\left(3 + e^{\\frac{1}{2}t}\\right) = 8e^{\\frac{1}{2}t}$$\n\nDivide top and bottom by $e^{\\frac{1}{2}t}$:\n$$P = \\frac{8}{1 + 3e^{-\\frac{1}{2}t}} \\quad \\textbf{A1 (cso)}$$\n\n(c) $P = 6$: $\\dfrac{3 \\times 6}{8 - 6} = 9 = e^{\\frac{1}{2}t}$ **M1**, so $t = 2\\ln 9 = 4\\ln 3$ years. **A1**\n\n(d) As $t \\to \\infty$, $e^{-\\frac{1}{2}t} \\to 0$, so $P \\to 8$: **8000 fish**. **B1**\n\nCriticism, e.g.: the model assumes a fixed carrying capacity and takes no account of fishing, disease or seasonal changes in food; it also treats $P$ as continuous. **B1**",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-integration-partial-fractions",
+   "pure-partial-fractions"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q13",
+  "topicId": "calc-differential-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Find the particular solution of the differential equation\n$$\\frac{dy}{dx} = xy\\cos x, \\qquad y > 0$$\nfor which $y = 2$ when $x = 0$. Hence find the exact value of $y$ when $x = \\frac{\\pi}{2}$.",
+  "hint": "After separating, the $x$-integral $\\int x\\cos x\\,dx$ needs integration by parts.",
+  "answer": "$y = 2e^{x\\sin x + \\cos x - 1}$; when $x = \\frac{\\pi}{2}$, $y = 2e^{\\frac{\\pi}{2} - 1}$",
+  "solution": "Separate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int x\\cos x\\,dx$$\n\nIntegrate by parts with $u = x$, $\\frac{dv}{dx} = \\cos x$, so $\\frac{du}{dx} = 1$, $v = \\sin x$:\n$$\\int x\\cos x\\,dx = x\\sin x - \\int \\sin x\\,dx = x\\sin x + \\cos x$$\n\nSo\n$$\\ln y = x\\sin x + \\cos x + c$$\n\nWhen $x = 0$, $y = 2$: $\\ln 2 = 0 + 1 + c$, so $c = \\ln 2 - 1$.\n$$\\ln y = x\\sin x + \\cos x - 1 + \\ln 2$$\n\n$$y = e^{\\ln 2}\\, e^{x\\sin x + \\cos x - 1} = 2e^{x\\sin x + \\cos x - 1}$$\n\nWhen $x = \\frac{\\pi}{2}$: $x\\sin x = \\frac{\\pi}{2}$ and $\\cos x = 0$, so\n$$y = 2e^{\\frac{\\pi}{2} - 1} \\approx 3.43$$",
+  "linkedTopicIds": [
+   "calc-integration-by-parts"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q14",
+  "topicId": "calc-differential-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A motorboat is travelling at $20\\ \\text{m s}^{-1}$ when its engine is switched off. After this, its velocity $v\\ \\text{m s}^{-1}$ at time $t$ seconds satisfies\n$$\\frac{dv}{dt} = -0.01v^2$$\nbecause of water resistance.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $v = \\dfrac{100}{t + 5}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the time taken for the speed to fall to $5\\ \\text{m s}^{-1}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the distance travelled in this time, giving your answer to 3 significant figures."
+   }
+  ],
+  "hint": "Separate: $\\int v^{-2}\\,dv = \\int -0.01\\,dt$. For (c), distance is $\\int v\\,dt$.",
+  "answer": "(a) shown (b) 15 s (c) $100\\ln 4 \\approx 139$ m",
+  "solution": "(a) Separate the variables:\n$$\\int v^{-2}\\,dv = \\int -0.01\\,dt \\quad\\Rightarrow\\quad -\\frac{1}{v} = -0.01t + c$$\n\nAt $t = 0$, $v = 20$: $c = -\\frac{1}{20}$. So\n$$\\frac{1}{v} = 0.01t + \\frac{1}{20} = \\frac{t + 5}{100} \\quad\\Rightarrow\\quad v = \\frac{100}{t + 5}$$\n\n(b) $v = 5$: $\\dfrac{100}{t + 5} = 5$, so $t + 5 = 20$ and $t = 15$ s.\n\n(c) Displacement is the integral of velocity:\n$$s = \\int_0^{15} \\frac{100}{t + 5}\\,dt = \\Big[100\\ln(t + 5)\\Big]_0^{15} = 100\\ln 20 - 100\\ln 5 = 100\\ln 4$$\n\n$$s \\approx 138.6 \\approx 139 \\text{ m}$$\n\n(The velocity is always positive, so distance equals displacement.)",
+  "linkedTopicIds": [
+   "mech-variable-acceleration"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q15",
+  "topicId": "calc-differential-equations",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Priya opens a savings account with £5000. The account pays interest at 4% per year, compounded continuously, and she also pays money in continuously at a rate of £1200 per year. The amount in the account, £$A$, after $t$ years is modelled by\n$$\\frac{dA}{dt} = 0.04A + 1200$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve the differential equation to show that $A = 35\\,000e^{0.04t} - 30\\,000$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the amount in the account after 10 years, to the nearest penny."
+   },
+   {
+    "label": "c",
+    "prompt": "How much of this amount is interest?"
+   }
+  ],
+  "hint": "Separate: $\\int \\frac{1}{0.04A + 1200}\\,dA = \\int 1\\,dt$. Remember the factor $\\frac{1}{0.04}$ when you integrate.",
+  "answer": "(a) shown (b) £22 213.86 (c) £5213.86",
+  "solution": "(a) Separate the variables:\n$$\\int \\frac{1}{0.04A + 1200}\\,dA = \\int 1\\,dt$$\n\n$$\\frac{1}{0.04}\\ln(0.04A + 1200) = t + c \\quad\\Rightarrow\\quad \\ln(0.04A + 1200) = 0.04t + c'$$\n\n$$0.04A + 1200 = Be^{0.04t}$$\n\nAt $t = 0$, $A = 5000$: $200 + 1200 = B$, so $B = 1400$.\n$$0.04A = 1400e^{0.04t} - 1200 \\quad\\Rightarrow\\quad A = 35\\,000e^{0.04t} - 30\\,000$$\n\n(b) $A(10) = 35\\,000e^{0.4} - 30\\,000 = 52\\,213.86\\ldots - 30\\,000 = $ **£22 213.86**\n\n(c) Total paid in: $5000 + 10 \\times 1200 = £17\\,000$. Interest $= 22\\,213.86 - 17\\,000 = $ **£5213.86**.",
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q16",
+  "topicId": "calc-differential-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A curve $C$ lies in the first quadrant ($x > 0$, $y > 0$). At every point $P(x, y)$ on $C$, the tangent to $C$ meets the $x$-axis at $T$, and $N$ is the point $(x, 0)$ directly below $P$. For every such point, the $x$-coordinate of $T$ is $\\frac{2}{3}$ of the $x$-coordinate of $P$.\n\nThe curve passes through the point $(2, 4)$. Form a differential equation for $C$, and hence find its equation.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><line x1=\"16\" y1=\"220.4\" x2=\"284\" y2=\"220.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"45.6\" y1=\"246\" x2=\"45.6\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,220.4 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M45.6,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"213.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"52.6\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"39.6\" y=\"234.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M45.6,220.4 L46.1,220.4 L46.6,220.4 L47.1,220.4 L47.6,220.4 L48.1,220.4 L48.6,220.4 L49.2,220.4 L49.7,220.4 L50.2,220.4 L50.7,220.4 L51.2,220.4 L51.7,220.4 L52.2,220.4 L52.7,220.4 L53.3,220.4 L53.8,220.4 L54.3,220.4 L54.8,220.4 L55.3,220.4 L55.8,220.4 L56.3,220.4 L56.8,220.4 L57.3,220.4 L57.9,220.4 L58.4,220.4 L58.9,220.4 L59.4,220.4 L59.9,220.4 L60.4,220.4 L60.9,220.4 L61.4,220.4 L61.9,220.3 L62.5,220.3 L63,220.3 L63.5,220.3 L64,220.3 L64.5,220.3 L65,220.3 L65.5,220.3 L66,220.2 L66.5,220.2 L67.1,220.2 L67.6,220.2 L68.1,220.2 L68.6,220.2 L69.1,220.1 L69.6,220.1 L70.1,220.1 L70.6,220.1 L71.1,220.1 L71.7,220 L72.2,220 L72.7,220 L73.2,219.9 L73.7,219.9 L74.2,219.9 L74.7,219.9 L75.2,219.8 L75.7,219.8 L76.3,219.8 L76.8,219.7 L77.3,219.7 L77.8,219.7 L78.3,219.6 L78.8,219.6 L79.3,219.5 L79.8,219.5 L80.4,219.5 L80.9,219.4 L81.4,219.4 L81.9,219.3 L82.4,219.3 L82.9,219.2 L83.4,219.2 L83.9,219.1 L84.4,219.1 L85,219 L85.5,219 L86,218.9 L86.5,218.8 L87,218.8 L87.5,218.7 L88,218.6 L88.5,218.6 L89,218.5 L89.6,218.4 L90.1,218.4 L90.6,218.3 L91.1,218.2 L91.6,218.2 L92.1,218.1 L92.6,218 L93.1,217.9 L93.6,217.8 L94.2,217.7 L94.7,217.7 L95.2,217.6 L95.7,217.5 L96.2,217.4 L96.7,217.3 L97.2,217.2 L97.7,217.1 L98.2,217 L98.8,216.9 L99.3,216.8 L99.8,216.7 L100.3,216.6 L100.8,216.5 L101.3,216.4 L101.8,216.3 L102.3,216.1 L102.8,216 L103.4,215.9 L103.9,215.8 L104.4,215.7 L104.9,215.5 L105.4,215.4 L105.9,215.3 L106.4,215.1 L106.9,215 L107.5,214.9 L108,214.7 L108.5,214.6 L109,214.5 L109.5,214.3 L110,214.2 L110.5,214 L111,213.9 L111.5,213.7 L112.1,213.5 L112.6,213.4 L113.1,213.2 L113.6,213 L114.1,212.9 L114.6,212.7 L115.1,212.5 L115.6,212.4 L116.1,212.2 L116.7,212 L117.2,211.8 L117.7,211.6 L118.2,211.4 L118.7,211.3 L119.2,211.1 L119.7,210.9 L120.2,210.7 L120.7,210.5 L121.3,210.3 L121.8,210 L122.3,209.8 L122.8,209.6 L123.3,209.4 L123.8,209.2 L124.3,209 L124.8,208.7 L125.3,208.5 L125.9,208.3 L126.4,208 L126.9,207.8 L127.4,207.6 L127.9,207.3 L128.4,207.1 L128.9,206.8 L129.4,206.6 L129.9,206.3 L130.5,206.1 L131,205.8 L131.5,205.5 L132,205.3 L132.5,205 L133,204.7 L133.5,204.4 L134,204.2 L134.6,203.9 L135.1,203.6 L135.6,203.3 L136.1,203 L136.6,202.7 L137.1,202.4 L137.6,202.1 L138.1,201.8 L138.6,201.5 L139.2,201.2 L139.7,200.9 L140.2,200.5 L140.7,200.2 L141.2,199.9 L141.7,199.6 L142.2,199.2 L142.7,198.9 L143.2,198.5 L143.8,198.2 L144.3,197.8 L144.8,197.5 L145.3,197.1 L145.8,196.8 L146.3,196.4 L146.8,196 L147.3,195.7 L147.8,195.3 L148.4,194.9 L148.9,194.5 L149.4,194.1 L149.9,193.8 L150.4,193.4 L150.9,193 L151.4,192.6 L151.9,192.2 L152.4,191.7 L153,191.3 L153.5,190.9 L154,190.5 L154.5,190.1 L155,189.6 L155.5,189.2 L156,188.8 L156.5,188.3 L157,187.9 L157.6,187.4 L158.1,187 L158.6,186.5 L159.1,186 L159.6,185.6 L160.1,185.1 L160.6,184.6 L161.1,184.2 L161.7,183.7 L162.2,183.2 L162.7,182.7 L163.2,182.2 L163.7,181.7 L164.2,181.2 L164.7,180.7 L165.2,180.2 L165.7,179.6 L166.3,179.1 L166.8,178.6 L167.3,178.1 L167.8,177.5 L168.3,177 L168.8,176.4 L169.3,175.9 L169.8,175.3 L170.3,174.8 L170.9,174.2 L171.4,173.6 L171.9,173.1 L172.4,172.5 L172.9,171.9 L173.4,171.3 L173.9,170.7 L174.4,170.1 L174.9,169.5 L175.5,168.9 L176,168.3 L176.5,167.7 L177,167.1 L177.5,166.5 L178,165.8 L178.5,165.2 L179,164.5 L179.5,163.9 L180.1,163.3 L180.6,162.6 L181.1,161.9 L181.6,161.3 L182.1,160.6 L182.6,159.9 L183.1,159.2 L183.6,158.6 L184.1,157.9 L184.7,157.2 L185.2,156.5 L185.7,155.8 L186.2,155.1 L186.7,154.3 L187.2,153.6 L187.7,152.9 L188.2,152.2 L188.8,151.4 L189.3,150.7 L189.8,149.9 L190.3,149.2 L190.8,148.4 L191.3,147.7 L191.8,146.9 L192.3,146.1 L192.8,145.3 L193.4,144.6 L193.9,143.8 L194.4,143 L194.9,142.2 L195.4,141.4 L195.9,140.5 L196.4,139.7 L196.9,138.9 L197.4,138.1 L198,137.2 L198.5,136.4 L199,135.6 L199.5,134.7 L200,133.8 L200.5,133 L201,132.1 L201.5,131.2 L202,130.4 L202.6,129.5 L203.1,128.6 L203.6,127.7 L204.1,126.8 L204.6,125.9 L205.1,125 L205.6,124 L206.1,123.1 L206.6,122.2 L207.2,121.2 L207.7,120.3 L208.2,119.3 L208.7,118.4 L209.2,117.4 L209.7,116.5 L210.2,115.5 L210.7,114.5 L211.2,113.5 L211.8,112.5 L212.3,111.5 L212.8,110.5 L213.3,109.5 L213.8,108.5 L214.3,107.5 L214.8,106.4 L215.3,105.4 L215.9,104.3 L216.4,103.3 L216.9,102.2 L217.4,101.2 L217.9,100.1 L218.4,99 L218.9,98 L219.4,96.9 L219.9,95.8 L220.5,94.7 L221,93.6 L221.5,92.5 L222,91.3 L222.5,90.2 L223,89.1 L223.5,87.9 L224,86.8 L224.5,85.6 L225.1,84.5 L225.6,83.3 L226.1,82.2 L226.6,81 L227.1,79.8 L227.6,78.6 L228.1,77.4 L228.6,76.2 L229.1,75 L229.7,73.8 L230.2,72.5 L230.7,71.3 L231.2,70.1 L231.7,68.8 L232.2,67.6 L232.7,66.3 L233.2,65 L233.7,63.8 L234.3,62.5 L234.8,61.2 L235.3,59.9 L235.8,58.6 L236.3,57.3 L236.8,56 L237.3,54.6 L237.8,53.3 L238.3,52 L238.9,50.6 L239.4,49.3 L239.9,47.9 L240.4,46.6 L240.9,45.2 L241.4,43.8 L241.9,42.4 L242.4,41 L243,39.6 L243.5,38.2 L244,36.8 L244.5,35.4 L245,33.9 L245.5,32.5 L246,31.1 L246.5,29.6 L247,28.1 L247.6,26.7 L248.1,25.2 L248.6,23.7 L249.1,22.2 L249.6,20.7 L250.1,19.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M147,243.2 L255.2,25.1\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.6\"/><path d=\"M214.6,220.4 L214.6,106.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><circle cx=\"214.6\" cy=\"106.9\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"158.3\" cy=\"220.4\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"214.6\" cy=\"220.4\" r=\"3.2\" fill=\"currentColor\"/><text x=\"206.6\" y=\"104.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">P(x, y)</text><text x=\"154.3\" y=\"237.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">T</text><text x=\"218.6\" y=\"237.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">N</text><text x=\"238.1\" y=\"23.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text></svg>",
+  "hint": "Write the tangent at $P$ as $Y - y = \\frac{dy}{dx}(X - x)$ and put $Y = 0$ to find the $x$-coordinate of $T$. Equivalently, the gradient of the tangent is $\\frac{PN}{TN}$.",
+  "answer": "$\\dfrac{dy}{dx} = \\dfrac{3y}{x}$; $y = \\dfrac{1}{2}x^3$",
+  "solution": "Let the gradient at $P(x, y)$ be $\\frac{dy}{dx}$. The tangent is\n$$Y - y = \\frac{dy}{dx}(X - x)$$\nAt $T$, $Y = 0$:\n$$X = x - \\frac{y}{\\frac{dy}{dx}}$$\n\nWe are told this equals $\\frac{2}{3}x$:\n$$x - \\frac{y}{\\frac{dy}{dx}} = \\frac{2}{3}x \\quad\\Rightarrow\\quad \\frac{y}{\\frac{dy}{dx}} = \\frac{1}{3}x \\quad\\Rightarrow\\quad \\frac{dy}{dx} = \\frac{3y}{x}$$\n\n(Geometrically: $TN = \\frac{1}{3}x$ and $PN = y$, so the gradient is $\\frac{y}{x/3}$.)\n\nSeparate the variables:\n$$\\int \\frac{1}{y}\\,dy = \\int \\frac{3}{x}\\,dx \\quad\\Rightarrow\\quad \\ln y = 3\\ln x + c \\quad\\Rightarrow\\quad y = Ax^3$$\n\nThrough $(2, 4)$: $4 = 8A$, so $A = \\frac{1}{2}$.\n$$y = \\frac{1}{2}x^3$$\n\nCheck at $(2, 4)$: $\\frac{dy}{dx} = \\frac{3}{2}x^2 = 6$, tangent $y = 6x - 8$ meets the $x$-axis at $x = \\frac{4}{3} = \\frac{2}{3} \\times 2$. ✓",
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-differential-equations-q17",
+  "topicId": "calc-differential-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A population of rare birds is modelled by a logistic differential equation\n$$\\frac{dP}{dt} = kP\\left(1 - \\frac{P}{L}\\right)$$\nwhere $t$ is in years and $k$ and $L$ are positive constants. Observations show that the population is growing at 30 birds per year when $P = 200$, and at 40 birds per year when $P = 400$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the values of $k$ and $L$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the largest possible rate of growth of this population, according to the model."
+   },
+   {
+    "label": "c",
+    "prompt": "Given that $P = 100$ when $t = 0$, the solution is $P = \\dfrac{L}{1 + 7e^{-kt}}$. Find the time at which the population is growing fastest, giving your answer to 3 significant figures."
+   }
+  ],
+  "hint": "Write down two equations and divide one by the other to eliminate $k$. The growth is fastest at half the carrying capacity.",
+  "answer": "(a) $k = 0.2$, $L = 800$ (b) 40 birds per year (c) $t = 5\\ln 7 \\approx 9.73$ years",
+  "solution": "(a) Substituting the two observations:\n$$30 = 200k\\left(1 - \\frac{200}{L}\\right), \\qquad 40 = 400k\\left(1 - \\frac{400}{L}\\right)$$\n\nDivide the second by the first:\n$$\\frac{4}{3} = \\frac{2\\left(1 - \\frac{400}{L}\\right)}{1 - \\frac{200}{L}} \\quad\\Rightarrow\\quad \\frac{4}{3} - \\frac{800}{3L} = 2 - \\frac{800}{L}$$\n\n$$\\frac{800}{L} - \\frac{800}{3L} = \\frac{2}{3} \\quad\\Rightarrow\\quad \\frac{1600}{3L} = \\frac{2}{3} \\quad\\Rightarrow\\quad L = 800$$\n\nThen $30 = 200k \\times \\frac{3}{4} = 150k$, so $k = 0.2$.\n\n(b) $\\frac{dP}{dt}$ is a quadratic in $P$ with roots $0$ and $800$, so it is greatest at $P = 400$, where $\\frac{dP}{dt} = 40$ (as observed). Largest growth rate: **40 birds per year**.\n\n(c) Check the given solution: at $t = 0$, $P = \\frac{800}{1 + 7} = 100$. ✓ Fastest growth when $P = 400$:\n$$\\frac{800}{1 + 7e^{-0.2t}} = 400 \\quad\\Rightarrow\\quad 1 + 7e^{-0.2t} = 2 \\quad\\Rightarrow\\quad e^{-0.2t} = \\frac{1}{7}$$\n\n$$t = \\frac{\\ln 7}{0.2} = 5\\ln 7 \\approx 9.73 \\text{ years}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ }
+]
