@@ -1,0 +1,304 @@
+[
+ {
+  "id": "alg-quadratic-formula-q01",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The equation $3x^2 - x - 7 = 0$ is to be solved using the quadratic formula.\n\n(a) Write down the values of $a$, $b$ and $c$.\n\n(b) Work out the value of $b^2 - 4ac$.\n\n(c) How many real solutions does the equation have?",
+  "hint": "Compare with $ax^2 + bx + c = 0$ and include the signs: the $x$ term is $-1x$.",
+  "answer": "(a) $a = 3$, $b = -1$, $c = -7$ (b) $85$ (c) two",
+  "solution": "**(a)** Compare $3x^2 - x - 7 = 0$ with $ax^2 + bx + c = 0$, keeping the signs:\n$$a = 3, \\quad b = -1, \\quad c = -7$$\n\n**(b)** Use brackets when substituting negatives:\n$$b^2 - 4ac = (-1)^2 - 4(3)(-7) = 1 + 84 = 85$$\n\n**(c)** $b^2 - 4ac = 85 > 0$, so $\\sqrt{85}$ is a real number and the $\\pm$ gives two different values: **two** real solutions.",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q02",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 + 5x + 3 = 0$, giving your answers to 2 decimal places.",
+  "hint": "$a = 1$, $b = 5$, $c = 3$. Work out $b^2 - 4ac$ first.",
+  "answer": "$x = -0.70$ or $x = -4.30$",
+  "solution": "$a = 1$, $b = 5$, $c = 3$.\n$$b^2 - 4ac = 5^2 - 4(1)(3) = 25 - 12 = 13$$\n$$x = \\frac{-5 \\pm \\sqrt{13}}{2}$$\n\n$\\sqrt{13} = 3.6055\\ldots$\n$$x = \\frac{-5 + 3.6055\\ldots}{2} = -0.6972\\ldots \\qquad x = \\frac{-5 - 3.6055\\ldots}{2} = -4.3027\\ldots$$\n\n**Answer:** $x = -0.70$ or $x = -4.30$ (2 d.p.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q03",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 - 5x + 3 = 0$, giving your answers to 2 decimal places.",
+  "hint": "Now $b = -5$. What is $(-5)^2$?",
+  "answer": "$x = 4.30$ or $x = 0.70$",
+  "solution": "$a = 1$, $b = -5$, $c = 3$.\n$$b^2 - 4ac = (-5)^2 - 4(1)(3) = 25 - 12 = 13$$\n$$x = \\frac{-(-5) \\pm \\sqrt{13}}{2} = \\frac{5 \\pm \\sqrt{13}}{2}$$\n$$x = \\frac{5 + 3.6055\\ldots}{2} = 4.3027\\ldots \\qquad x = \\frac{5 - 3.6055\\ldots}{2} = 0.6972\\ldots$$\n\n**Answer:** $x = 4.30$ or $x = 0.70$\n\n**What changed:** only the sign of $b$. The discriminant is unchanged because $(-5)^2 = 5^2 = 25$ (not $-25$), and $-b$ changed sign, so both solutions changed sign.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q04",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 - 5x - 3 = 0$, giving your answers to 2 decimal places.",
+  "hint": "Now $c = -3$. Be careful with $-4ac$ when $c$ is negative.",
+  "answer": "$x = 5.54$ or $x = -0.54$",
+  "solution": "$a = 1$, $b = -5$, $c = -3$.\n$$b^2 - 4ac = (-5)^2 - 4(1)(-3) = 25 + 12 = 37$$\n$$x = \\frac{5 \\pm \\sqrt{37}}{2}$$\n\n$\\sqrt{37} = 6.0827\\ldots$\n$$x = \\frac{5 + 6.0827\\ldots}{2} = 5.5413\\ldots \\qquad x = \\frac{5 - 6.0827\\ldots}{2} = -0.5413\\ldots$$\n\n**Answer:** $x = 5.54$ or $x = -0.54$\n\n**What changed:** only the sign of $c$. Now $-4ac = +12$, so the discriminant **increased** from 13 to 37, and the solutions now have opposite signs.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q05",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $2x^2 - 5x - 3 = 0$, giving your answers to 2 decimal places if necessary.",
+  "hint": "Now $a = 2$, so the denominator is $2a = 4$, and $-4ac$ changes too.",
+  "answer": "$x = 3$ or $x = -0.5$",
+  "solution": "$a = 2$, $b = -5$, $c = -3$.\n$$b^2 - 4ac = 25 - 4(2)(-3) = 25 + 24 = 49$$\n$$x = \\frac{5 \\pm \\sqrt{49}}{2 \\times 2} = \\frac{5 \\pm 7}{4}$$\n$$x = \\frac{12}{4} = 3 \\qquad x = \\frac{-2}{4} = -0.5$$\n\n**Answer:** $x = 3$ or $x = -\\frac{1}{2}$ (exact)\n\n**What changed:** only $a$, from 1 to 2. Both $4ac$ and $2a$ changed. This time the discriminant is a perfect square (49), so the answers are exact. That is a sign the quadratic factorises: $2x^2 - 5x - 3 = (2x + 1)(x - 3)$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q06",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $x^2 - 4x - 1 = 0$. Give your answers in the form $p \\pm \\sqrt{q}$, where $p$ and $q$ are integers.",
+  "hint": "Use the formula, then simplify the surd: $\\sqrt{20} = \\sqrt{4 \\times 5}$.",
+  "answer": "$x = 2 \\pm \\sqrt{5}$",
+  "solution": "$a = 1$, $b = -4$, $c = -1$.\n$$b^2 - 4ac = (-4)^2 - 4(1)(-1) = 16 + 4 = 20$$\n$$x = \\frac{4 \\pm \\sqrt{20}}{2}$$\n\nSimplify the surd: $\\sqrt{20} = \\sqrt{4}\\sqrt{5} = 2\\sqrt{5}$.\n$$x = \\frac{4 \\pm 2\\sqrt{5}}{2} = 2 \\pm \\sqrt{5}$$\n\n(Both terms of the numerator are divided by 2.)\n\n**Answer:** $x = 2 + \\sqrt{5}$ or $x = 2 - \\sqrt{5}$",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q07",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben solves $2x^2 + 7x + 2 = 0$, giving his answers to 2 decimal places. His working is shown below.\n\n$a = 2$, $b = 7$, $c = 2$\n\n$b^2 - 4ac = 49 - 16 = 33$\n\n$x = -7 \\pm \\dfrac{\\sqrt{33}}{4}$\n\n$x = -5.56$ or $x = -8.44$\n\nIdentify Ben's mistake, explain it, and find the correct solutions.",
+  "hint": "Substitute $x = -5.56$ back into $2x^2 + 7x + 2$. Is it close to 0? Look at which part of the formula is divided by $2a$.",
+  "answer": "Ben divided only $\\sqrt{33}$ by 4 instead of the whole of $-7 \\pm \\sqrt{33}$. Correct: $x = -0.31$ or $x = -3.19$.",
+  "solution": "**The mistake:** the third line. The formula is\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\nwhere the fraction line goes under the **whole** numerator $-b \\pm \\sqrt{b^2 - 4ac}$. Ben only divided the square root by $2a = 4$.\n\nHis answers fail a check: with $x = -5.56$, $2(-5.56)^2 + 7(-5.56) + 2 = 61.8 - 38.9 + 2 \\approx 24.9 \\ne 0$.\n\n**Correct working:** (his $a$, $b$, $c$ and discriminant are right)\n$$x = \\frac{-7 \\pm \\sqrt{33}}{4}$$\n\n$\\sqrt{33} = 5.7445\\ldots$\n$$x = \\frac{-7 + 5.7445\\ldots}{4} = -0.3138\\ldots \\qquad x = \\frac{-7 - 5.7445\\ldots}{4} = -3.1861\\ldots$$\n\nOn a calculator, put the numerator in brackets: $(-7 + \\sqrt{33}) \\div 4$.\n\n**Answer:** $x = -0.31$ or $x = -3.19$ (2 d.p.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q08",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Solve $x^2 + 3x = 7$, giving your answers correct to 3 significant figures.",
+  "hint": "The formula only applies to an equation of the form $ax^2 + bx + c = 0$.",
+  "answer": "$x = 1.54$ or $x = -4.54$",
+  "solution": "Rearrange to $= 0$ first:\n$$x^2 + 3x - 7 = 0$$\nso $a = 1$, $b = 3$, $c = -7$ (not $c = 7$).\n$$b^2 - 4ac = 9 - 4(1)(-7) = 9 + 28 = 37$$\n$$x = \\frac{-3 \\pm \\sqrt{37}}{2}$$\n$$x = \\frac{-3 + 6.0827\\ldots}{2} = 1.5413\\ldots \\qquad x = \\frac{-3 - 6.0827\\ldots}{2} = -4.5413\\ldots$$\n\n**Answer:** $x = 1.54$ or $x = -4.54$ (3 s.f.)\n\n(Using $c = 7$ by mistake gives $9 - 28 = -19$ and the false conclusion \"no solutions\".)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "num-rounding"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q09",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is asked to solve $x^2 - 8x + 13 = 0$, giving exact answers. Her working is shown below.\n\n$a = 1$, $b = -8$, $c = 13$\n\n$b^2 - 4ac = -8^2 - 4(1)(13) = -64 - 52 = -116$\n\n\"The discriminant is negative, so there are no real solutions.\"\n\nIdentify Chloe's mistake, explain it, and solve the equation correctly.",
+  "hint": "What is $(-8) \\times (-8)$? Can $b^2$ ever be negative?",
+  "answer": "She squared $-8$ as $-64$; $(-8)^2 = 64$. The discriminant is 12 and $x = 4 \\pm \\sqrt{3}$.",
+  "solution": "**The mistake:** in the second line Chloe wrote $-8^2 = -64$. She has squared 8 and then put the minus sign in front, but $b = -8$ means $b^2 = (-8)^2 = (-8) \\times (-8) = +64$. The square of any non-zero number is positive, so $b^2$ is never negative.\n\n**Correct working:**\n$$b^2 - 4ac = (-8)^2 - 4(1)(13) = 64 - 52 = 12$$\n\nThe discriminant is positive, so there are two real solutions:\n$$x = \\frac{-(-8) \\pm \\sqrt{12}}{2(1)} = \\frac{8 \\pm 2\\sqrt{3}}{2} = 4 \\pm \\sqrt{3}$$\n(using $\\sqrt{12} = \\sqrt{4}\\sqrt{3} = 2\\sqrt{3}$).\n\n**Answer:** $x = 4 + \\sqrt{3}$ or $x = 4 - \\sqrt{3}$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q10",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Jay is solving $3x^2 + 2x - 5 = 0$. He writes:\n\n\"$a = 3$, $b = 2$, $c = 5$, so $b^2 - 4ac = 4 - 60 = -56$. This is negative, so the equation has no real solutions.\"\n\nIs Jay correct? Justify your answer.",
+  "hint": "Check his value of $c$. You could also substitute $x = 1$ into the equation.",
+  "answer": "No. $c = -5$, so $b^2 - 4ac = 4 + 60 = 64 > 0$; there are two real solutions, $x = 1$ and $x = -\\frac{5}{3}$.",
+  "solution": "Jay is **not** correct. The equation is $3x^2 + 2x - 5 = 0$, so $c = -5$, not $5$: the coefficients include their signs.\n$$b^2 - 4ac = 2^2 - 4(3)(-5) = 4 + 60 = 64$$\n\nThis is positive, so there are two real solutions:\n$$x = \\frac{-2 \\pm \\sqrt{64}}{6} = \\frac{-2 \\pm 8}{6}$$\n$$x = \\frac{6}{6} = 1 \\qquad x = \\frac{-10}{6} = -\\frac{5}{3}$$\n\nA quick convincing check: $x = 1$ gives $3 + 2 - 5 = 0$, so the equation certainly has a real solution and Jay's conclusion must be wrong.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-formula-q11",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "For each equation, choose the most efficient method (factorising, square roots or the quadratic formula), explain your choice, and solve it. Give exact answers.\n\n(a) $x^2 - 11x + 28 = 0$\n\n(b) $(x - 3)^2 = 10$\n\n(c) $x^2 + 6x - 3 = 0$",
+  "hint": "Does it factorise easily? Is the $x$ only inside a squared bracket? If neither, use the formula.",
+  "answer": "(a) factorise: $x = 4$ or $x = 7$ (b) square roots: $x = 3 \\pm \\sqrt{10}$ (c) formula: $x = -3 \\pm 2\\sqrt{3}$",
+  "solution": "**(a)** $4 \\times 7 = 28$ and $4 + 7 = 11$, so it factorises easily:\n$$(x - 4)(x - 7) = 0 \\Rightarrow x = 4 \\text{ or } x = 7$$\n\n**(b)** The $x$ appears only inside the squared bracket, so square root both sides (no need to expand):\n$$x - 3 = \\pm\\sqrt{10} \\Rightarrow x = 3 \\pm \\sqrt{10}$$\n\n**(c)** No pair of integers multiplies to $-3$ and adds to $6$, so it does not factorise; use the formula with $a = 1$, $b = 6$, $c = -3$:\n$$b^2 - 4ac = 36 + 12 = 48, \\qquad \\sqrt{48} = \\sqrt{16}\\sqrt{3} = 4\\sqrt{3}$$\n$$x = \\frac{-6 \\pm 4\\sqrt{3}}{2} = -3 \\pm 2\\sqrt{3}$$\n\n(Completing the square, $(x + 3)^2 = 12$, is equally efficient here and gives the same answer.)",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q12",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 4,
+  "question": "Here is an equation.\n$$x(2x - 3) = 4$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the equation can be written as $2x^2 - 3x - 4 = 0$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Solve $2x^2 - 3x - 4 = 0$. Give your answers correct to 3 significant figures. You must show your working.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Expand the bracket and make one side zero. (b) $a = 2$, $b = -3$, $c = -4$.",
+  "answer": "(a) $2x^2 - 3x = 4 \\Rightarrow 2x^2 - 3x - 4 = 0$ (b) $x = 2.35$ or $x = -0.851$",
+  "solution": "**(a)** Expand: $2x^2 - 3x = 4$. Subtract 4 from both sides: $2x^2 - 3x - 4 = 0$. B1 (must show the expansion).\n\n**(b)** $a = 2$, $b = -3$, $c = -4$:\n$$x = \\frac{-(-3) \\pm \\sqrt{(-3)^2 - 4(2)(-4)}}{2(2)}$$\nM1 for correct substitution into the formula (condone one sign error in the substitution if the formula is quoted correctly).\n\n$$x = \\frac{3 \\pm \\sqrt{41}}{4}$$\nM1 for $\\sqrt{41}$ (or $9 + 32$) and the correct division by 4.\n\n$$x = \\frac{3 + 6.4031\\ldots}{4} = 2.3507\\ldots \\qquad x = \\frac{3 - 6.4031\\ldots}{4} = -0.8507\\ldots$$\n\nA1 for $x = 2.35$ **and** $x = -0.851$ (3 s.f.).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "num-rounding"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q13",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 200\" width=\"330\" height=\"200\"><path d=\"M60,20 h228 v168 h-228 Z M84,44 v120 h180 v-120 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" fill-rule=\"evenodd\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"84\" y=\"44\" width=\"180\" height=\"120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"174.0\" y=\"100.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">photo</text><text x=\"174.0\" y=\"154\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30 cm</text><text x=\"256\" y=\"122.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20 cm</text><path d=\"M60,104.0 L84,104.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M60,99.0 L60,109.0 M84,99.0 L84,109.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"52\" y=\"109.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x cm</text><path d=\"M214.0,20 L214.0,44\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M209.0,20 L219.0,20 M209.0,44 L219.0,44\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"224.0\" y=\"37\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">x cm</text></svg>",
+  "question": "A photo measuring 30 cm by 20 cm is mounted on a rectangular card so that there is a border of width $x$ cm all the way round it. The total area of the card is 1000 $\\text{cm}^2$.\n\n(a) Show that $x^2 + 25x - 100 = 0$.\n\n(b) Find the width of the border. Give your answer in centimetres to 3 significant figures.\n\nThe diagram is not drawn to scale.",
+  "hint": "The card measures $(30 + 2x)$ cm by $(20 + 2x)$ cm, because there is a border on **both** sides.",
+  "answer": "(a) $(30 + 2x)(20 + 2x) = 1000 \\Rightarrow 4x^2 + 100x - 400 = 0 \\Rightarrow x^2 + 25x - 100 = 0$ (b) 3.51 cm",
+  "solution": "**(a)** The card is $(30 + 2x)$ cm long and $(20 + 2x)$ cm wide:\n$$(30 + 2x)(20 + 2x) = 1000$$\n$$600 + 60x + 40x + 4x^2 = 1000$$\n$$4x^2 + 100x - 400 = 0$$\nDivide by 4:\n$$x^2 + 25x - 100 = 0$$\n\n**(b)** $a = 1$, $b = 25$, $c = -100$:\n$$b^2 - 4ac = 625 + 400 = 1025$$\n$$x = \\frac{-25 \\pm \\sqrt{1025}}{2}$$\n$$x = \\frac{-25 + 32.0156\\ldots}{2} = 3.5078\\ldots \\quad \\text{or} \\quad x = \\frac{-25 - 32.0156\\ldots}{2} = -28.5\\ldots$$\n\nA width cannot be negative, so the border is **3.51 cm** wide (3 s.f.).\n\nCheck: $(30 + 7.0156)(20 + 7.0156) = 37.0156 \\times 27.0156 \\approx 1000$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q14",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A stone is thrown vertically upwards at 8 $\\text{m s}^{-1}$ from the top of a cliff. The top of the cliff is 25 m above the sea. The stone is modelled as a particle moving freely under gravity, with $g = 9.8 \\text{ m s}^{-2}$.\n\nUsing $s = ut + \\frac{1}{2}at^2$, find the time taken for the stone to hit the sea. Give your answer to 3 significant figures.",
+  "hint": "Take upwards as positive. When the stone hits the sea its displacement from the top of the cliff is $s = -25$, and $a = -9.8$.",
+  "answer": "$3.22$ s",
+  "solution": "Take upwards as positive: $u = 8$, $a = -9.8$, and the stone hits the sea when $s = -25$.\n$$-25 = 8t - 4.9t^2$$\n\nRearrange to $= 0$:\n$$4.9t^2 - 8t - 25 = 0$$\n\nQuadratic formula with $a = 4.9$, $b = -8$, $c = -25$:\n$$b^2 - 4ac = 64 + 490 = 554$$\n$$t = \\frac{8 \\pm \\sqrt{554}}{9.8}$$\n$$t = \\frac{8 + 23.537\\ldots}{9.8} = 3.218\\ldots \\quad \\text{or} \\quad t = \\frac{8 - 23.537\\ldots}{9.8} = -1.585\\ldots$$\n\nTime cannot be negative (the stone is thrown at $t = 0$), so $t =$ **3.22 s** (3 s.f.).",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "mech-suvat",
+   "mech-vertical-motion"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q15",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 172\" width=\"300\" height=\"172\"><path d=\"M70,137 L70,30 L255,137 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M70,125 L82,125 L82,137\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"62\" y=\"88.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x cm</text><text x=\"162.5\" y=\"159\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(x + 3) cm</text><text x=\"174.5\" y=\"75.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2x cm</text></svg>",
+  "question": "The diagram shows a right-angled triangle with sides $x$ cm, $(x + 3)$ cm and $2x$ cm. The diagram is not drawn to scale.\n\n(a) Show that $2x^2 - 6x - 9 = 0$.\n\n(b) Find the exact value of $x$, giving your answer in the form $\\dfrac{a + b\\sqrt{3}}{c}$, where $a$, $b$ and $c$ are integers.\n\n(c) Hence show that the perimeter of the triangle is $(9 + 6\\sqrt{3})$ cm.",
+  "hint": "The hypotenuse is $2x$. After using the formula, simplify $\\sqrt{108}$ by finding its largest square factor.",
+  "answer": "(a) $x^2 + (x + 3)^2 = (2x)^2 \\Rightarrow 2x^2 - 6x - 9 = 0$ (b) $x = \\frac{3 + 3\\sqrt{3}}{2}$ (c) perimeter $= 4x + 3 = 9 + 6\\sqrt{3}$",
+  "solution": "**(a)** The hypotenuse is $2x$. By Pythagoras' theorem:\n$$x^2 + (x + 3)^2 = (2x)^2$$\n$$x^2 + x^2 + 6x + 9 = 4x^2$$\n$$0 = 2x^2 - 6x - 9$$\n\n**(b)** $a = 2$, $b = -6$, $c = -9$:\n$$b^2 - 4ac = 36 + 72 = 108 = 36 \\times 3, \\qquad \\sqrt{108} = 6\\sqrt{3}$$\n$$x = \\frac{6 \\pm 6\\sqrt{3}}{4} = \\frac{3 \\pm 3\\sqrt{3}}{2}$$\n\n$\\frac{3 - 3\\sqrt{3}}{2} \\approx -1.10$ is negative, so it cannot be a length. Hence\n$$x = \\frac{3 + 3\\sqrt{3}}{2} \\;(\\approx 4.10)$$\n\n**(c)** Perimeter $= x + (x + 3) + 2x = 4x + 3$:\n$$4 \\times \\frac{3 + 3\\sqrt{3}}{2} + 3 = 2(3 + 3\\sqrt{3}) + 3 = 9 + 6\\sqrt{3} \\text{ cm}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q16",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 6,
+  "question": "In this question you must show detailed reasoning. Solutions relying entirely on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve the equation $x^2 - 2\\sqrt{3}\\,x - 9 = 0$, giving your answers in the form $k\\sqrt{3}$, where $k$ is an integer.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve the equation $y - 2\\sqrt{3}\\sqrt{y} - 9 = 0$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Here $b = -2\\sqrt{3}$, so $b^2 = 12$. (b) Let $x = \\sqrt{y}$. Remember $\\sqrt{y}$ cannot be negative.",
+  "answer": "(a) $x = 3\\sqrt{3}$ or $x = -\\sqrt{3}$ (b) $y = 27$",
+  "solution": "**(a)** $a = 1$, $b = -2\\sqrt{3}$, $c = -9$.\n$$b^2 - 4ac = (-2\\sqrt{3})^2 - 4(1)(-9) = 12 + 36 = 48$$\nM1 for a correct discriminant (or correct substitution into the formula).\n\n$$\\sqrt{48} = \\sqrt{16}\\sqrt{3} = 4\\sqrt{3}$$\nB1 for simplifying $\\sqrt{48}$.\n\n$$x = \\frac{2\\sqrt{3} \\pm 4\\sqrt{3}}{2}$$\nM1 for applying the formula with the whole numerator over $2a$.\n\n$$x = \\frac{6\\sqrt{3}}{2} = 3\\sqrt{3} \\quad \\text{or} \\quad x = \\frac{-2\\sqrt{3}}{2} = -\\sqrt{3}$$\nA1 for both answers.\n\n**(b)** With $x = \\sqrt{y}$ the equation is $x^2 - 2\\sqrt{3}\\,x - 9 = 0$, so $\\sqrt{y} = 3\\sqrt{3}$ or $\\sqrt{y} = -\\sqrt{3}$. M1 for making the link.\n\n$\\sqrt{y} \\ge 0$, so reject $\\sqrt{y} = -\\sqrt{3}$. Then $y = (3\\sqrt{3})^2 = 9 \\times 3 = 27$. A1 ($y = 27$ only; A0 if a second value is given).",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q17",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "The roots of $ax^2 + bx + c = 0$ (where $b^2 - 4ac \\ge 0$) are $\\alpha$ and $\\beta$.\n\n(a) Use the quadratic formula to prove that $\\alpha + \\beta = -\\dfrac{b}{a}$ and $\\alpha\\beta = \\dfrac{c}{a}$.\n\n(b) Hence, **without solving the equation**, find the value of $\\alpha^2 + \\beta^2$ for the equation $2x^2 - 6x - 9 = 0$.",
+  "hint": "Write $D = b^2 - 4ac$, so the roots are $\\frac{-b + \\sqrt{D}}{2a}$ and $\\frac{-b - \\sqrt{D}}{2a}$. For (b), expand $(\\alpha + \\beta)^2$.",
+  "answer": "(a) Proof (see solution) (b) $\\alpha^2 + \\beta^2 = 18$",
+  "solution": "**(a)** Let $D = b^2 - 4ac$. By the formula, the roots are\n$$\\alpha = \\frac{-b + \\sqrt{D}}{2a}, \\qquad \\beta = \\frac{-b - \\sqrt{D}}{2a}$$\n\nSum: the surds cancel.\n$$\\alpha + \\beta = \\frac{-b + \\sqrt{D} - b - \\sqrt{D}}{2a} = \\frac{-2b}{2a} = -\\frac{b}{a}$$\n\nProduct: use the difference of two squares in the numerator.\n$$\\alpha\\beta = \\frac{(-b + \\sqrt{D})(-b - \\sqrt{D})}{4a^2} = \\frac{b^2 - D}{4a^2} = \\frac{b^2 - (b^2 - 4ac)}{4a^2} = \\frac{4ac}{4a^2} = \\frac{c}{a}$$\n\n**(b)** For $2x^2 - 6x - 9 = 0$: $\\alpha + \\beta = -\\frac{-6}{2} = 3$ and $\\alpha\\beta = \\frac{-9}{2}$.\n\nSince $(\\alpha + \\beta)^2 = \\alpha^2 + 2\\alpha\\beta + \\beta^2$,\n$$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta = 9 - 2\\left(-\\tfrac{9}{2}\\right) = 9 + 9 = 18$$\n\n(Check: the roots are $\\frac{3 \\pm 3\\sqrt{3}}{2} \\approx 4.098$ and $-1.098$; $4.098^2 + 1.098^2 \\approx 16.79 + 1.21 = 18.0$ ✓)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ]
+ },
+ {
+  "id": "alg-quadratic-formula-q18",
+  "topicId": "alg-quadratic-formula",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A rectangle has width 1 unit and length $x$ units, where $x > 1$. When a 1 by 1 square is cut off one end, the rectangle that is left is **similar** to the original rectangle.\n\n(a) Show that $x^2 - x - 1 = 0$, and hence find the exact value of $x$.\n\n(b) Show that $\\dfrac{1}{x} = x - 1$, and hence write $\\dfrac{1}{x}$ in the form $\\dfrac{p + \\sqrt{q}}{r}$, where $p$, $q$ and $r$ are integers.",
+  "hint": "The rectangle left over measures 1 by $(x - 1)$. Similar rectangles have the same ratio of long side to short side.",
+  "answer": "(a) $x = \\frac{1 + \\sqrt{5}}{2}$ (b) $\\frac{1}{x} = \\frac{-1 + \\sqrt{5}}{2}$",
+  "solution": "**(a)** After removing the square, the remaining rectangle measures 1 (long side) by $x - 1$ (short side), since $x - 1 < 1$ here. Similar rectangles have the same ratio of long side to short side:\n$$\\frac{x}{1} = \\frac{1}{x - 1}$$\n$$x(x - 1) = 1 \\;\\Rightarrow\\; x^2 - x - 1 = 0$$\n\nQuadratic formula, $a = 1$, $b = -1$, $c = -1$:\n$$x = \\frac{1 \\pm \\sqrt{1 + 4}}{2} = \\frac{1 \\pm \\sqrt{5}}{2}$$\n\n$x > 1$, so $x = \\dfrac{1 + \\sqrt{5}}{2} \\approx 1.618$ (the **golden ratio**). The other root, $\\frac{1 - \\sqrt{5}}{2} \\approx -0.618$, is rejected. (And $x - 1 \\approx 0.618 < 1$, consistent with the assumption above.)\n\n**(b)** From $x^2 - x - 1 = 0$: $x^2 - x = 1$, so $x(x - 1) = 1$. Dividing by $x$ (allowed since $x \\ne 0$):\n$$\\frac{1}{x} = x - 1 = \\frac{1 + \\sqrt{5}}{2} - 1 = \\frac{-1 + \\sqrt{5}}{2}$$\n\n(So $p = -1$, $q = 5$, $r = 2$; check: $\\frac{1 + \\sqrt{5}}{2} \\times \\frac{-1 + \\sqrt{5}}{2} = \\frac{5 - 1}{4} = 1$ ✓)",
+  "linkedTopicIds": [
+   "geo-similarity",
+   "num-surds"
+  ]
+ }
+]

@@ -1,0 +1,279 @@
+[
+ {
+  "id": "calc-improper-integrals-q01",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\int_1^\\infty \\frac{1}{x^3}\\,dx$, showing the limiting process.",
+  "hint": "Replace $\\infty$ by $t$, integrate from $1$ to $t$, then let $t \\to \\infty$.",
+  "answer": "$\\dfrac{1}{2}$",
+  "solution": "$$\\int_1^\\infty x^{-3}\\,dx = \\lim_{t\\to\\infty}\\int_1^t x^{-3}\\,dx = \\lim_{t\\to\\infty}\\left[-\\frac{1}{2x^2}\\right]_1^t = \\lim_{t\\to\\infty}\\left(-\\frac{1}{2t^2} + \\frac{1}{2}\\right)$$\n\nAs $t \\to \\infty$, $\\frac{1}{2t^2} \\to 0$, so the integral **converges** to $\\frac{1}{2}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q02",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\int_1^\\infty \\frac{1}{x^2}\\,dx$, showing the limiting process.",
+  "hint": "Same method as for $\\frac{1}{x^3}$: integrate from $1$ to $t$ first.",
+  "answer": "$1$",
+  "solution": "**What changed:** the power dropped from $3$ to $2$, so the function decays more slowly and the area is larger.\n\n$$\\int_1^\\infty x^{-2}\\,dx = \\lim_{t\\to\\infty}\\left[-\\frac{1}{x}\\right]_1^t = \\lim_{t\\to\\infty}\\left(1 - \\frac{1}{t}\\right) = 1$$\n\nThe integral **converges** to $1$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q03",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Determine whether $\\displaystyle\\int_1^\\infty \\frac{1}{x}\\,dx$ converges or diverges. If it converges, find its value.",
+  "hint": "The antiderivative is now a logarithm. What happens to $\\ln t$ as $t \\to \\infty$?",
+  "answer": "Diverges",
+  "solution": "**What changed:** the power dropped to $1$, and the antiderivative becomes $\\ln x$ instead of a power.\n\n$$\\int_1^\\infty \\frac{1}{x}\\,dx = \\lim_{t\\to\\infty}\\Big[\\ln x\\Big]_1^t = \\lim_{t\\to\\infty} \\ln t$$\n\n$\\ln t \\to \\infty$ as $t \\to \\infty$, so the integral **diverges**.\n\nNote that $\\frac{1}{x} \\to 0$ as $x \\to \\infty$, yet the area is infinite: a function tending to $0$ is not enough for convergence. It must decay fast enough, and $\\frac{1}{x}$ is exactly the borderline case that fails.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q04",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Determine whether $\\displaystyle\\int_1^\\infty \\frac{1}{\\sqrt{x}}\\,dx$ converges or diverges. If it converges, find its value.",
+  "hint": "Write $\\frac{1}{\\sqrt{x}} = x^{-\\frac{1}{2}}$ and integrate from $1$ to $t$.",
+  "answer": "Diverges",
+  "solution": "**What changed:** the power dropped below $1$, to $\\frac{1}{2}$.\n\n$$\\int_1^\\infty x^{-\\frac{1}{2}}\\,dx = \\lim_{t\\to\\infty}\\Big[2\\sqrt{x}\\Big]_1^t = \\lim_{t\\to\\infty}\\left(2\\sqrt{t} - 2\\right) = \\infty$$\n\nThe integral **diverges**.\n\nSummary of this sequence: $\\int_1^\\infty \\frac{1}{x^p}\\,dx$ gave $\\frac{1}{2}$ for $p = 3$, $1$ for $p = 2$, and diverged for $p = 1$ and $p = \\frac{1}{2}$. In general it converges exactly when $p > 1$ (to $\\frac{1}{p - 1}$).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q05",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Explain why $\\displaystyle\\int_0^8 \\frac{1}{\\sqrt[3]{x}}\\,dx$ is an improper integral, and evaluate it.",
+  "hint": "Where is $x^{-\\frac{1}{3}}$ undefined? Replace that limit by $t$ and let $t \\to 0^+$.",
+  "answer": "The integrand is unbounded as $x \\to 0^+$; the integral converges to $6$",
+  "solution": "The limits are finite, but $x^{-\\frac{1}{3}} \\to \\infty$ as $x \\to 0^+$: the integrand is unbounded at the lower limit, so the integral is improper.\n\n$$\\int_0^8 x^{-\\frac{1}{3}}\\,dx = \\lim_{t\\to 0^+}\\left[\\frac{3}{2}x^{\\frac{2}{3}}\\right]_t^8 = \\lim_{t\\to 0^+}\\left(\\frac{3}{2} \\times 4 - \\frac{3}{2}t^{\\frac{2}{3}}\\right) = 6$$\n\nIt **converges** to $6$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q06",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Evaluate each integral, showing the limiting process.\n\n(a) $\\displaystyle\\int_0^\\infty e^{-3x}\\,dx$\n\n(b) $\\displaystyle\\int_{-\\infty}^{0} e^{2x}\\,dx$",
+  "hint": "In (b) the infinite limit is at the bottom: integrate from $t$ to $0$ and let $t \\to -\\infty$.",
+  "answer": "(a) $\\dfrac{1}{3}$ (b) $\\dfrac{1}{2}$",
+  "solution": "(a)\n$$\\int_0^\\infty e^{-3x}\\,dx = \\lim_{t\\to\\infty}\\left[-\\frac{1}{3}e^{-3x}\\right]_0^t = \\lim_{t\\to\\infty}\\left(\\frac{1}{3} - \\frac{1}{3}e^{-3t}\\right) = \\frac{1}{3}$$\nsince $e^{-3t} \\to 0$.\n\n(b)\n$$\\int_{-\\infty}^{0} e^{2x}\\,dx = \\lim_{t\\to -\\infty}\\left[\\frac{1}{2}e^{2x}\\right]_t^0 = \\lim_{t\\to -\\infty}\\left(\\frac{1}{2} - \\frac{1}{2}e^{2t}\\right) = \\frac{1}{2}$$\nsince $e^{2t} \\to 0$ as $t \\to -\\infty$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q07",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Mia evaluates $\\displaystyle\\int_0^3 \\frac{1}{(x - 1)^2}\\,dx$. Her working is shown below. The graph of $y = \\dfrac{1}{(x - 1)^2}$ is also shown.\n\n**Line 1:** $\\displaystyle\\int_0^3 \\frac{1}{(x - 1)^2}\\,dx = \\left[-\\frac{1}{x - 1}\\right]_0^3$\n\n**Line 2:** $\\displaystyle= -\\frac{1}{2} - \\left(-\\frac{1}{-1}\\right) = -\\frac{1}{2} - 1 = -\\frac{3}{2}$\n\nExplain why Mia's answer cannot be right, identify her error, and determine the correct conclusion.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 250\" width=\"280\" height=\"250\"><line x1=\"16\" y1=\"217.1\" x2=\"264\" y2=\"217.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"50.6\" y1=\"236\" x2=\"50.6\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M264,217.1 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M50.6,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"264\" y=\"210.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"57.6\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"108.2\" y1=\"214.1\" x2=\"108.2\" y2=\"220.1\" stroke=\"currentColor\"/><text x=\"108.2\" y=\"232.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"165.8\" y1=\"214.1\" x2=\"165.8\" y2=\"220.1\" stroke=\"currentColor\"/><text x=\"165.8\" y=\"232.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"223.4\" y1=\"214.1\" x2=\"223.4\" y2=\"220.1\" stroke=\"currentColor\"/><text x=\"223.4\" y=\"232.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"47.6\" y1=\"185.7\" x2=\"53.6\" y2=\"185.7\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"189.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"47.6\" y1=\"154.3\" x2=\"53.6\" y2=\"154.3\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"158.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"47.6\" y1=\"122.9\" x2=\"53.6\" y2=\"122.9\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"126.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"47.6\" y1=\"91.4\" x2=\"53.6\" y2=\"91.4\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"95.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"47.6\" y1=\"60\" x2=\"53.6\" y2=\"60\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"64\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"47.6\" y1=\"28.6\" x2=\"53.6\" y2=\"28.6\" stroke=\"currentColor\"/><text x=\"44.6\" y=\"32.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"44.6\" y=\"231.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M108.2,207.7 L108.2,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><path d=\"M21.8,203.2 L22,203.1 L22.3,203 L22.6,202.9 L22.9,202.8 L23.2,202.7 L23.5,202.6 L23.8,202.5 L24.1,202.4 L24.3,202.3 L24.6,202.2 L24.9,202.1 L25.2,202 L25.5,201.9 L25.8,201.8 L26.1,201.7 L26.4,201.6 L26.6,201.5 L26.9,201.3 L27.2,201.2 L27.5,201.1 L27.8,201 L28.1,200.9 L28.4,200.8 L28.7,200.6 L28.9,200.5 L29.2,200.4 L29.5,200.3 L29.8,200.2 L30.1,200 L30.4,199.9 L30.7,199.8 L31,199.7 L31.2,199.5 L31.5,199.4 L31.8,199.3 L32.1,199.1 L32.4,199 L32.7,198.8 L33,198.7 L33.2,198.6 L33.5,198.4 L33.8,198.3 L34.1,198.1 L34.4,198 L34.7,197.8 L35,197.7 L35.3,197.5 L35.5,197.4 L35.8,197.2 L36.1,197.1 L36.4,196.9 L36.7,196.7 L37,196.6 L37.3,196.4 L37.6,196.2 L37.8,196.1 L38.1,195.9 L38.4,195.7 L38.7,195.5 L39,195.4 L39.3,195.2 L39.6,195 L39.9,194.8 L40.1,194.6 L40.4,194.4 L40.7,194.2 L41,194 L41.3,193.8 L41.6,193.6 L41.9,193.4 L42.1,193.2 L42.4,193 L42.7,192.8 L43,192.6 L43.3,192.4 L43.6,192.1 L43.9,191.9 L44.2,191.7 L44.4,191.5 L44.7,191.2 L45,191 L45.3,190.8 L45.6,190.5 L45.9,190.3 L46.2,190 L46.5,189.8 L46.7,189.5 L47,189.2 L47.3,189 L47.6,188.7 L47.9,188.4 L48.2,188.2 L48.5,187.9 L48.8,187.6 L49,187.3 L49.3,187 L49.6,186.7 L49.9,186.4 L50.2,186.1 L50.5,185.8 L50.8,185.5 L51,185.2 L51.3,184.9 L51.6,184.5 L51.9,184.2 L52.2,183.9 L52.5,183.5 L52.8,183.2 L53.1,182.8 L53.3,182.5 L53.6,182.1 L53.9,181.7 L54.2,181.3 L54.5,181 L54.8,180.6 L55.1,180.2 L55.4,179.8 L55.6,179.4 L55.9,178.9 L56.2,178.5 L56.5,178.1 L56.8,177.6 L57.1,177.2 L57.4,176.7 L57.7,176.3 L57.9,175.8 L58.2,175.3 L58.5,174.9 L58.8,174.4 L59.1,173.9 L59.4,173.4 L59.7,172.8 L60,172.3 L60.2,171.8 L60.5,171.2 L60.8,170.7 L61.1,170.1 L61.4,169.5 L61.7,168.9 L62,168.3 L62.2,167.7 L62.5,167.1 L62.8,166.4 L63.1,165.8 L63.4,165.1 L63.7,164.5 L64,163.8 L64.3,163.1 L64.5,162.4 L64.8,161.6 L65.1,160.9 L65.4,160.1 L65.7,159.4 L66,158.6 L66.3,157.8 L66.6,157 L66.8,156.1 L67.1,155.3 L67.4,154.4 L67.7,153.5 L68,152.6 L68.3,151.6 L68.6,150.7 L68.9,149.7 L69.1,148.7 L69.4,147.7 L69.7,146.7 L70,145.6 L70.3,144.5 L70.6,143.4 L70.9,142.3 L71.1,141.1 L71.4,139.9 L71.7,138.7 L72,137.4 L72.3,136.2 L72.6,134.8 L72.9,133.5 L73.2,132.1 L73.4,130.7 L73.7,129.3 L74,127.8 L74.3,126.3 L74.6,124.7 L74.9,123.1 L75.2,121.5 L75.5,119.8 L75.7,118 L76,116.3 L76.3,114.4 L76.6,112.6 L76.9,110.6 L77.2,108.6 L77.5,106.6 L77.8,104.5 L78,102.4 L78.3,100.1 L78.6,97.9 L78.9,95.5 L79.2,93.1 L79.5,90.6 L79.8,88 L80.1,85.4 L80.3,82.6 L80.6,79.8 L80.9,76.9 L81.2,73.9 L81.5,70.8 L81.8,67.6 L82.1,64.3 L82.3,60.9 L82.6,57.4 L82.9,53.7 L83.2,50 L83.5,46 L83.8,42 L84.1,37.8 L84.4,33.4 L84.6,28.9 L84.9,24.3 L85.2,19.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M131,16.6 L131.5,24.8 L132,32.5 L132.4,39.7 L132.9,46.5 L133.4,52.9 L133.9,59 L134.4,64.7 L134.8,70.2 L135.3,75.3 L135.8,80.2 L136.3,84.8 L136.8,89.2 L137.2,93.4 L137.7,97.4 L138.2,101.2 L138.7,104.8 L139.1,108.3 L139.6,111.6 L140.1,114.7 L140.6,117.7 L141.1,120.6 L141.5,123.3 L142,126 L142.5,128.5 L143,130.9 L143.5,133.3 L143.9,135.5 L144.4,137.6 L144.9,139.7 L145.4,141.7 L145.9,143.6 L146.3,145.4 L146.8,147.2 L147.3,148.9 L147.8,150.5 L148.3,152.1 L148.7,153.7 L149.2,155.1 L149.7,156.6 L150.2,157.9 L150.6,159.3 L151.1,160.5 L151.6,161.8 L152.1,163 L152.6,164.2 L153,165.3 L153.5,166.4 L154,167.4 L154.5,168.5 L155,169.4 L155.4,170.4 L155.9,171.3 L156.4,172.2 L156.9,173.1 L157.4,174 L157.8,174.8 L158.3,175.6 L158.8,176.4 L159.3,177.2 L159.8,177.9 L160.2,178.6 L160.7,179.3 L161.2,180 L161.7,180.7 L162.1,181.3 L162.6,181.9 L163.1,182.5 L163.6,183.1 L164.1,183.7 L164.5,184.3 L165,184.8 L165.5,185.4 L166,185.9 L166.5,186.4 L166.9,186.9 L167.4,187.4 L167.9,187.9 L168.4,188.3 L168.9,188.8 L169.3,189.2 L169.8,189.7 L170.3,190.1 L170.8,190.5 L171.3,190.9 L171.7,191.3 L172.2,191.7 L172.7,192.1 L173.2,192.4 L173.6,192.8 L174.1,193.1 L174.6,193.5 L175.1,193.8 L175.6,194.2 L176,194.5 L176.5,194.8 L177,195.1 L177.5,195.4 L178,195.7 L178.4,196 L178.9,196.3 L179.4,196.6 L179.9,196.8 L180.4,197.1 L180.8,197.4 L181.3,197.6 L181.8,197.9 L182.3,198.1 L182.8,198.4 L183.2,198.6 L183.7,198.8 L184.2,199.1 L184.7,199.3 L185.2,199.5 L185.6,199.7 L186.1,200 L186.6,200.2 L187.1,200.4 L187.5,200.6 L188,200.8 L188.5,201 L189,201.2 L189.5,201.3 L189.9,201.5 L190.4,201.7 L190.9,201.9 L191.4,202.1 L191.9,202.2 L192.3,202.4 L192.8,202.6 L193.3,202.7 L193.8,202.9 L194.3,203.1 L194.7,203.2 L195.2,203.4 L195.7,203.5 L196.2,203.7 L196.7,203.8 L197.1,204 L197.6,204.1 L198.1,204.2 L198.6,204.4 L199,204.5 L199.5,204.6 L200,204.8 L200.5,204.9 L201,205 L201.4,205.1 L201.9,205.3 L202.4,205.4 L202.9,205.5 L203.4,205.6 L203.8,205.7 L204.3,205.9 L204.8,206 L205.3,206.1 L205.8,206.2 L206.2,206.3 L206.7,206.4 L207.2,206.5 L207.7,206.6 L208.2,206.7 L208.6,206.8 L209.1,206.9 L209.6,207 L210.1,207.1 L210.5,207.2 L211,207.3 L211.5,207.4 L212,207.5 L212.5,207.5 L212.9,207.6 L213.4,207.7 L213.9,207.8 L214.4,207.9 L214.9,208 L215.3,208.1 L215.8,208.1 L216.3,208.2 L216.8,208.3 L217.3,208.4 L217.7,208.4 L218.2,208.5 L218.7,208.6 L219.2,208.7 L219.7,208.7 L220.1,208.8 L220.6,208.9 L221.1,209 L221.6,209 L222,209.1 L222.5,209.2 L223,209.2 L223.5,209.3 L224,209.4 L224.4,209.4 L224.9,209.5 L225.4,209.5 L225.9,209.6 L226.4,209.7 L226.8,209.7 L227.3,209.8 L227.8,209.8 L228.3,209.9 L228.8,210 L229.2,210 L229.7,210.1 L230.2,210.1 L230.7,210.2 L231.2,210.2 L231.6,210.3 L232.1,210.3 L232.6,210.4 L233.1,210.5 L233.5,210.5 L234,210.6 L234.5,210.6 L235,210.7 L235.5,210.7 L235.9,210.7 L236.4,210.8 L236.9,210.8 L237.4,210.9 L237.9,210.9 L238.3,211 L238.8,211 L239.3,211.1 L239.8,211.1 L240.3,211.2 L240.7,211.2 L241.2,211.2 L241.7,211.3 L242.2,211.3 L242.7,211.4 L243.1,211.4 L243.6,211.5 L244.1,211.5 L244.6,211.5 L245.1,211.6 L245.5,211.6 L246,211.6 L246.5,211.7 L247,211.7 L247.4,211.8 L247.9,211.8 L248.4,211.8 L248.9,211.9 L249.4,211.9 L249.8,211.9 L250.3,212 L250.8,212 L251.3,212 L251.8,212.1 L252.2,212.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"181.3\" y=\"181.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = 1/(x − 1)²</text></svg>",
+  "hint": "Is the integrand ever negative? Look at what happens at $x = 1$.",
+  "answer": "The integrand is positive, so a negative answer is impossible. She integrated through the vertical asymptote at $x = 1$. Splitting at $x = 1$, $\\int_1^3 \\frac{1}{(x - 1)^2}\\,dx$ diverges, so the integral diverges.",
+  "solution": "$\\frac{1}{(x - 1)^2} > 0$ for every $x \\ne 1$, so the integral cannot be negative: $-\\frac{3}{2}$ must be wrong.\n\n**The error is in Line 1.** The integrand is unbounded at $x = 1$, which lies **inside** the interval $[0, 3]$ (the vertical asymptote on the graph). The Fundamental Theorem of Calculus only applies to a continuous integrand, so Mia cannot simply substitute the end points. The integral is improper and must be split at $x = 1$:\n$$\\int_0^3 \\frac{1}{(x - 1)^2}\\,dx = \\int_0^1 \\frac{1}{(x - 1)^2}\\,dx + \\int_1^3 \\frac{1}{(x - 1)^2}\\,dx$$\n\nSecond piece:\n$$\\int_1^3 \\frac{1}{(x - 1)^2}\\,dx = \\lim_{t\\to 1^+}\\left[-\\frac{1}{x - 1}\\right]_t^3 = \\lim_{t\\to 1^+}\\left(-\\frac{1}{2} + \\frac{1}{t - 1}\\right) = \\infty$$\n\nOne piece diverges, so the whole integral **diverges**. (The first piece diverges too, but one is enough.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q08",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Jess is asked whether $\\displaystyle\\int_{-\\infty}^{\\infty} \\frac{x}{1 + x^2}\\,dx$ converges. Her working is shown below.\n\n**Line 1:** $\\displaystyle\\int_{-\\infty}^{\\infty} \\frac{x}{1 + x^2}\\,dx = \\lim_{t\\to\\infty}\\int_{-t}^{t} \\frac{x}{1 + x^2}\\,dx$\n\n**Line 2:** $\\displaystyle= \\lim_{t\\to\\infty}\\left[\\frac{1}{2}\\ln\\left(1 + x^2\\right)\\right]_{-t}^{t}$\n\n**Line 3:** $\\displaystyle= \\lim_{t\\to\\infty}\\left(\\frac{1}{2}\\ln\\left(1 + t^2\\right) - \\frac{1}{2}\\ln\\left(1 + t^2\\right)\\right) = 0$\n\n**Line 4:** So the integral converges to $0$.\n\nIdentify Jess's error, explain it, and give the correct conclusion.",
+  "hint": "A doubly infinite integral must be split at a point, with each end handled by its own, independent limit.",
+  "answer": "Line 1: she used one symmetric limit. Split at $0$: $\\int_0^\\infty \\frac{x}{1 + x^2}\\,dx = \\lim_{t\\to\\infty}\\frac{1}{2}\\ln(1 + t^2) = \\infty$, so the integral diverges.",
+  "solution": "Line 2 is a correct antiderivative, but **Line 1 is wrong.** By definition,\n$$\\int_{-\\infty}^{\\infty} f(x)\\,dx = \\int_{-\\infty}^{0} f(x)\\,dx + \\int_{0}^{\\infty} f(x)\\,dx$$\nand it converges only if **both** pieces converge, each with its own limit. Using the same $t$ at both ends forces the two infinite areas to cancel, which is $\\infty - \\infty$, not $0$.\n\nCheck one piece:\n$$\\int_0^\\infty \\frac{x}{1 + x^2}\\,dx = \\lim_{t\\to\\infty}\\left[\\frac{1}{2}\\ln\\left(1 + x^2\\right)\\right]_0^t = \\lim_{t\\to\\infty}\\frac{1}{2}\\ln\\left(1 + t^2\\right) = \\infty$$\n\nThis piece diverges, so $\\int_{-\\infty}^{\\infty} \\frac{x}{1 + x^2}\\,dx$ **diverges**. (The integrand is odd, which is why Jess's symmetric limit gave $0$; but, for example, $\\lim_{t\\to\\infty}\\int_{-t}^{2t}$ would give $\\frac{1}{2}\\ln 4 = \\ln 2$, so her method depends on how the limits are taken.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q09",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Kai says: 'I know $\\displaystyle\\int_1^\\infty \\frac{1}{x^2}\\,dx$ converges, so $\\displaystyle\\int_0^1 \\frac{1}{x^2}\\,dx$ must converge too.'\n\n(a) Show that Kai is wrong.\n\n(b) Show that $\\displaystyle\\int_0^1 \\frac{1}{\\sqrt{x}}\\,dx$ converges, even though $\\displaystyle\\int_1^\\infty \\frac{1}{\\sqrt{x}}\\,dx$ diverges.\n\n(c) Explain why the condition for convergence of $\\displaystyle\\int \\frac{1}{x^p}\\,dx$ is reversed near $0$ compared with near $\\infty$.",
+  "hint": "Near $\\infty$ you need the function to become small quickly. Near $0$, what happens to $x^{-2}$ compared with $x^{-\\frac{1}{2}}$ when $x$ is small, e.g. $x = 0.01$?",
+  "answer": "(a) $\\int_0^1 x^{-2}\\,dx = \\lim_{t\\to 0^+}\\left(\\frac{1}{t} - 1\\right) = \\infty$, diverges (b) $\\lim_{t\\to 0^+}\\left(2 - 2\\sqrt{t}\\right) = 2$ (c) near $0$ larger powers make $\\frac{1}{x^p}$ blow up faster, so convergence needs $p < 1$; near $\\infty$ larger powers make it decay faster, so convergence needs $p > 1$",
+  "solution": "(a)\n$$\\int_0^1 x^{-2}\\,dx = \\lim_{t\\to 0^+}\\left[-\\frac{1}{x}\\right]_t^1 = \\lim_{t\\to 0^+}\\left(-1 + \\frac{1}{t}\\right) = \\infty$$\nIt **diverges**, so Kai is wrong.\n\n(b)\n$$\\int_0^1 x^{-\\frac{1}{2}}\\,dx = \\lim_{t\\to 0^+}\\Big[2\\sqrt{x}\\Big]_t^1 = \\lim_{t\\to 0^+}\\left(2 - 2\\sqrt{t}\\right) = 2$$\nIt **converges** to $2$, whereas $\\int_1^\\infty x^{-\\frac{1}{2}}\\,dx = \\lim_{t\\to\\infty}\\left(2\\sqrt{t} - 2\\right) = \\infty$.\n\n(c) Near $\\infty$ the question is how quickly $\\frac{1}{x^p}$ **decays**: a bigger power decays faster ($\\frac{1}{x^2}$ beats $\\frac{1}{x}$), so we need $p > 1$.\n\nNear $0$ the question is how quickly $\\frac{1}{x^p}$ **blows up**: a bigger power blows up faster (at $x = 0.01$, $\\frac{1}{x^2} = 10\\,000$ but $\\frac{1}{\\sqrt{x}} = 10$), so we need a **small** power, $p < 1$.\n\nThe behaviour of $\\frac{1}{x^p}$ near $0$ and near $\\infty$ are opposite, so the conditions are opposite. In the antiderivative $\\frac{x^{1 - p}}{1 - p}$: as $x \\to \\infty$ it stays finite only if $1 - p < 0$; as $x \\to 0^+$ it stays finite only if $1 - p > 0$. For $p = 1$ ($\\ln x$) both diverge.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q10",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Use integration by parts to show that $\\displaystyle\\int \\ln x\\,dx = x\\ln x - x + c$.\n\n(b) Given that $t\\ln t \\to 0$ as $t \\to 0^+$, evaluate $\\displaystyle\\int_0^1 \\ln x\\,dx$.\n\n(c) Explain why your answer to (b) is negative.",
+  "hint": "Write $\\ln x$ as $1 \\times \\ln x$ and take $u = \\ln x$. Then replace the lower limit $0$ by $t$, because $\\ln x$ is not defined at $0$.",
+  "answer": "(a) shown (b) $-1$ (c) $\\ln x < 0$ for $0 < x < 1$, so the region lies below the $x$-axis",
+  "solution": "(a) Let $u = \\ln x$ and $\\frac{dv}{dx} = 1$, so $\\frac{du}{dx} = \\frac{1}{x}$ and $v = x$:\n$$\\int \\ln x\\,dx = x\\ln x - \\int x \\times \\frac{1}{x}\\,dx = x\\ln x - x + c$$\n\n(b) $\\ln x \\to -\\infty$ as $x \\to 0^+$, so the integral is improper at $0$:\n$$\\int_0^1 \\ln x\\,dx = \\lim_{t\\to 0^+}\\Big[x\\ln x - x\\Big]_t^1 = \\lim_{t\\to 0^+}\\Big[(0 - 1) - (t\\ln t - t)\\Big]$$\n\nAs $t \\to 0^+$, $t\\ln t \\to 0$ and $t \\to 0$, so the integral **converges** to $-1$.\n\n(c) For $0 < x < 1$, $\\ln x < 0$, so the (infinitely tall) region between the curve and the $x$-axis lies **below** the axis. Its area is finite, equal to $1$, and the integral counts it as negative.",
+  "linkedTopicIds": [
+   "calc-integration-by-parts"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q11",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "After a tanker is damaged, oil leaks into the sea at a rate of\n$$r(t) = 600e^{-0.25t} \\text{ litres per hour}$$\nwhere $t$ is the time in hours after the damage.\n\n(a) Find how much oil leaks in the first 8 hours, to the nearest litre.\n\n(b) If the leak is never stopped, find the total amount of oil that will leak according to this model.\n\n(c) How long does it take for 90% of this total to leak? Give your answer to 3 significant figures.",
+  "hint": "Total amount $= \\int r(t)\\,dt$. For (b) the upper limit is $\\infty$.",
+  "answer": "(a) 2075 litres (b) 2400 litres (c) 9.21 hours",
+  "solution": "(a)\n$$\\int_0^8 600e^{-0.25t}\\,dt = \\Big[-2400e^{-0.25t}\\Big]_0^8 = 2400\\left(1 - e^{-2}\\right) \\approx 2075 \\text{ litres}$$\n\n(b)\n$$\\int_0^\\infty 600e^{-0.25t}\\,dt = \\lim_{T\\to\\infty} 2400\\left(1 - e^{-0.25T}\\right) = 2400 \\text{ litres}$$\nThe improper integral converges: although the leak never stops completely, the total is finite.\n\n(c) Leaked by time $T$: $2400\\left(1 - e^{-0.25T}\\right) = 0.9 \\times 2400$\n$$e^{-0.25T} = 0.1 \\quad\\Rightarrow\\quad T = 4\\ln 10 \\approx 9.21 \\text{ hours}$$",
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q12",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 8,
+  "question": "In this question you must show detailed reasoning. Solutions relying entirely on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Express $\\dfrac{2}{x(x + 2)}$ in partial fractions.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that $\\displaystyle\\int_1^\\infty \\frac{2}{x(x + 2)}\\,dx = \\ln 3$. You must show the limiting process clearly.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "A student writes $\\displaystyle\\int_1^\\infty \\frac{2}{x(x + 2)}\\,dx = \\int_1^\\infty \\frac{1}{x}\\,dx - \\int_1^\\infty \\frac{1}{x + 2}\\,dx$. Explain why this step is not valid.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (b), combine the two logarithms into a single logarithm **before** letting $t \\to \\infty$. What is $\\lim_{t\\to\\infty}\\frac{t}{t + 2}$?",
+  "answer": "(a) $\\dfrac{1}{x} - \\dfrac{1}{x + 2}$ (b) shown (c) each of the two integrals diverges, so the right-hand side is $\\infty - \\infty$, which is undefined",
+  "solution": "(a) $\\frac{2}{x(x + 2)} \\equiv \\frac{A}{x} + \\frac{B}{x + 2}$, so $2 \\equiv A(x + 2) + Bx$. **M1**\n\n$x = 0$: $A = 1$. $x = -2$: $B = -1$.\n$$\\frac{2}{x(x + 2)} = \\frac{1}{x} - \\frac{1}{x + 2} \\quad \\textbf{A1}$$\n\n(b)\n$$\\int_1^t \\left(\\frac{1}{x} - \\frac{1}{x + 2}\\right)dx = \\Big[\\ln x - \\ln(x + 2)\\Big]_1^t \\quad \\textbf{M1}$$\n\n$$= \\left[\\ln\\frac{x}{x + 2}\\right]_1^t = \\ln\\frac{t}{t + 2} - \\ln\\frac{1}{3} \\quad \\textbf{A1}$$\n\nAs $t \\to \\infty$, $\\frac{t}{t + 2} = \\frac{1}{1 + \\frac{2}{t}} \\to 1$, so $\\ln\\frac{t}{t + 2} \\to \\ln 1 = 0$. **M1**\n$$\\int_1^\\infty \\frac{2}{x(x + 2)}\\,dx = 0 - \\ln\\frac{1}{3} = \\ln 3 \\quad \\textbf{A1 (cso)}$$\n\n(c) $\\int_1^\\infty \\frac{1}{x}\\,dx = \\lim_{t\\to\\infty}\\ln t = \\infty$, and similarly $\\int_1^\\infty \\frac{1}{x + 2}\\,dx$ diverges. **B1**\n\nSo the student's right-hand side is $\\infty - \\infty$, which has no meaning: an integral can only be split into a sum or difference of integrals that each converge. The logs must be combined inside the limit, as in (b). **B1**",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-integration-partial-fractions",
+   "pure-partial-fractions"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q13",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Use the substitution $u = \\ln x$ to show that $\\displaystyle\\int_2^\\infty \\frac{1}{x(\\ln x)^2}\\,dx$ converges, and find its exact value.\n\n(b) Show that $\\displaystyle\\int_2^\\infty \\frac{1}{x\\ln x}\\,dx$ diverges.\n\n(c) Both integrands tend to $0$ as $x \\to \\infty$. What does this question show?",
+  "hint": "With $u = \\ln x$, $du = \\frac{1}{x}\\,dx$. The limits become $u = \\ln 2$ and $u \\to \\infty$, and the integrals turn into $p$-type integrals in $u$.",
+  "answer": "(a) $\\dfrac{1}{\\ln 2}$ (b) it equals $\\lim_{t\\to\\infty}\\left(\\ln(\\ln t) - \\ln(\\ln 2)\\right) = \\infty$ (c) an integrand tending to $0$ does not guarantee convergence",
+  "solution": "Let $u = \\ln x$, so $\\frac{du}{dx} = \\frac{1}{x}$, i.e. $\\frac{1}{x}\\,dx = du$. When $x = 2$, $u = \\ln 2$; as $x \\to \\infty$, $u \\to \\infty$.\n\n(a)\n$$\\int_2^\\infty \\frac{1}{x(\\ln x)^2}\\,dx = \\int_{\\ln 2}^\\infty \\frac{1}{u^2}\\,du = \\lim_{s\\to\\infty}\\left[-\\frac{1}{u}\\right]_{\\ln 2}^{s} = \\lim_{s\\to\\infty}\\left(\\frac{1}{\\ln 2} - \\frac{1}{s}\\right) = \\frac{1}{\\ln 2}$$\nIt converges to $\\frac{1}{\\ln 2} \\approx 1.443$.\n\n(b)\n$$\\int_2^\\infty \\frac{1}{x\\ln x}\\,dx = \\int_{\\ln 2}^\\infty \\frac{1}{u}\\,du = \\lim_{s\\to\\infty}\\Big(\\ln s - \\ln(\\ln 2)\\Big) = \\infty$$\nIt **diverges** (extremely slowly: in terms of $x$, the integral up to $t$ is $\\ln(\\ln t) - \\ln(\\ln 2)$).\n\n(c) Both $\\frac{1}{x(\\ln x)^2}$ and $\\frac{1}{x\\ln x}$ tend to $0$ as $x \\to \\infty$, yet one integral converges and the other diverges. So 'the integrand tends to $0$' is **not** enough for convergence; what matters is how fast it tends to $0$. Here the extra factor of $\\ln x$ is just enough to make the difference.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "calc-integration-substitution"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q14",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The region $R$ is bounded by the curve $y = \\dfrac{1}{x}$, the line $x = 1$ and the $x$-axis, and extends infinitely far to the right, as shown.\n\n(a) Show that $R$ has infinite area.\n\n(b) $R$ is rotated through $2\\pi$ radians about the $x$-axis to form an infinitely long horn. Show that the horn has finite volume, and find it.\n\n(c) Lily says: 'That's impossible. If the horn holds a finite amount of paint, I could fill it and so paint the region $R$, which has infinite area.' Comment on Lily's argument.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 190\" width=\"330\" height=\"190\"><path d=\"M72,150.7 L72,66.5 L74.7,71.8 L77.3,76.4 L79.9,80.5 L82.6,84.2 L85.2,87.5 L87.9,90.5 L90.5,93.2 L93.2,95.7 L95.8,98 L98.5,100.1 L101.2,102 L103.8,103.8 L106.4,105.5 L109.1,107 L111.7,108.5 L114.4,109.9 L117,111.1 L119.7,112.3 L122.3,113.5 L125,114.5 L127.6,115.5 L130.3,116.5 L132.9,117.4 L135.6,118.2 L138.2,119 L140.9,119.8 L143.5,120.5 L146.2,121.2 L148.8,121.9 L151.5,122.5 L154.1,123.2 L156.8,123.7 L159.4,124.3 L162.1,124.8 L164.8,125.4 L167.4,125.9 L170,126.3 L172.7,126.8 L175.3,127.2 L178,127.7 L180.6,128.1 L183.3,128.5 L185.9,128.9 L188.6,129.2 L191.2,129.6 L193.9,129.9 L196.5,130.3 L199.2,130.6 L201.8,130.9 L204.5,131.2 L207.2,131.5 L209.8,131.8 L212.4,132.1 L215.1,132.3 L217.7,132.6 L220.4,132.9 L223,133.1 L225.7,133.3 L228.3,133.6 L231,133.8 L233.7,134 L236.3,134.2 L238.9,134.5 L241.6,134.7 L244.2,134.9 L246.9,135.1 L249.5,135.3 L252.2,135.4 L254.8,135.6 L257.5,135.8 L260.1,136 L262.8,136.1 L265.4,136.3 L268.1,136.5 L270.8,136.6 L273.4,136.8 L276,136.9 L278.7,137.1 L281.3,137.2 L284,137.4 L284,150.7 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"16\" y1=\"150.7\" x2=\"314\" y2=\"150.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"32\" y1=\"176\" x2=\"32\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M314,150.7 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M32,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"314\" y=\"143.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"39\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"72\" y1=\"147.7\" x2=\"72\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"72\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"112\" y1=\"147.7\" x2=\"112\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"112\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"152\" y1=\"147.7\" x2=\"152\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"152\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"192\" y1=\"147.7\" x2=\"192\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"192\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"232\" y1=\"147.7\" x2=\"232\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"232\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"272\" y1=\"147.7\" x2=\"272\" y2=\"153.7\" stroke=\"currentColor\"/><text x=\"272\" y=\"165.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"29\" y1=\"66.5\" x2=\"35\" y2=\"66.5\" stroke=\"currentColor\"/><text x=\"26\" y=\"70.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"26\" y=\"164.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M57.6,19.2 L58.7,24.7 L59.9,29.8 L61,34.6 L62.1,38.9 L63.3,43 L64.4,46.7 L65.5,50.3 L66.7,53.5 L67.8,56.6 L68.9,59.5 L70.1,62.2 L71.2,64.8 L72.3,67.2 L73.4,69.5 L74.6,71.6 L75.7,73.7 L76.8,75.6 L78,77.5 L79.1,79.2 L80.2,80.9 L81.4,82.5 L82.5,84 L83.6,85.5 L84.8,86.9 L85.9,88.2 L87,89.5 L88.2,90.8 L89.3,91.9 L90.4,93.1 L91.6,94.2 L92.7,95.2 L93.8,96.3 L95,97.2 L96.1,98.2 L97.2,99.1 L98.4,100 L99.5,100.8 L100.6,101.6 L101.7,102.4 L102.9,103.2 L104,104 L105.1,104.7 L106.3,105.4 L107.4,106.1 L108.5,106.7 L109.7,107.4 L110.8,108 L111.9,108.6 L113.1,109.2 L114.2,109.8 L115.3,110.3 L116.5,110.9 L117.6,111.4 L118.7,111.9 L119.9,112.4 L121,112.9 L122.1,113.4 L123.3,113.8 L124.4,114.3 L125.5,114.7 L126.7,115.1 L127.8,115.6 L128.9,116 L130,116.4 L131.2,116.8 L132.3,117.2 L133.4,117.5 L134.6,117.9 L135.7,118.3 L136.8,118.6 L138,119 L139.1,119.3 L140.2,119.6 L141.4,119.9 L142.5,120.3 L143.6,120.6 L144.8,120.9 L145.9,121.2 L147,121.5 L148.2,121.7 L149.3,122 L150.4,122.3 L151.6,122.6 L152.7,122.8 L153.8,123.1 L155,123.3 L156.1,123.6 L157.2,123.8 L158.3,124.1 L159.5,124.3 L160.6,124.5 L161.7,124.8 L162.9,125 L164,125.2 L165.1,125.4 L166.3,125.7 L167.4,125.9 L168.5,126.1 L169.7,126.3 L170.8,126.5 L171.9,126.7 L173.1,126.9 L174.2,127 L175.3,127.2 L176.5,127.4 L177.6,127.6 L178.7,127.8 L179.9,128 L181,128.1 L182.1,128.3 L183.3,128.5 L184.4,128.6 L185.5,128.8 L186.6,129 L187.8,129.1 L188.9,129.3 L190,129.4 L191.2,129.6 L192.3,129.7 L193.4,129.9 L194.6,130 L195.7,130.2 L196.8,130.3 L198,130.4 L199.1,130.6 L200.2,130.7 L201.4,130.8 L202.5,131 L203.6,131.1 L204.8,131.2 L205.9,131.4 L207,131.5 L208.2,131.6 L209.3,131.7 L210.4,131.9 L211.6,132 L212.7,132.1 L213.8,132.2 L214.9,132.3 L216.1,132.4 L217.2,132.6 L218.3,132.7 L219.5,132.8 L220.6,132.9 L221.7,133 L222.9,133.1 L224,133.2 L225.1,133.3 L226.3,133.4 L227.4,133.5 L228.5,133.6 L229.7,133.7 L230.8,133.8 L231.9,133.9 L233.1,134 L234.2,134.1 L235.3,134.2 L236.5,134.3 L237.6,134.4 L238.7,134.4 L239.9,134.5 L241,134.6 L242.1,134.7 L243.2,134.8 L244.4,134.9 L245.5,135 L246.6,135 L247.8,135.1 L248.9,135.2 L250,135.3 L251.2,135.4 L252.3,135.4 L253.4,135.5 L254.6,135.6 L255.7,135.7 L256.8,135.8 L258,135.8 L259.1,135.9 L260.2,136 L261.4,136.1 L262.5,136.1 L263.6,136.2 L264.8,136.3 L265.9,136.3 L267,136.4 L268.2,136.5 L269.3,136.5 L270.4,136.6 L271.5,136.7 L272.7,136.7 L273.8,136.8 L274.9,136.9 L276.1,136.9 L277.2,137 L278.3,137.1 L279.5,137.1 L280.6,137.2 L281.7,137.2 L282.9,137.3 L284,137.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M72,150.7 L72,66.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"118\" y=\"104.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = 1/x</text></svg>",
+  "hint": "Area is $\\int_1^\\infty y\\,dx$; volume is $\\pi\\int_1^\\infty y^2\\,dx$. Squaring $\\frac{1}{x}$ changes which side of $p = 1$ you are on.",
+  "answer": "(a) $\\int_1^\\infty \\frac{1}{x}\\,dx = \\lim_{t\\to\\infty}\\ln t = \\infty$ (b) $V = \\pi$ (c) the paradox mixes two-dimensional area with three-dimensional volume; the mathematics is consistent",
+  "solution": "(a)\n$$\\text{Area} = \\int_1^\\infty \\frac{1}{x}\\,dx = \\lim_{t\\to\\infty}\\Big[\\ln x\\Big]_1^t = \\lim_{t\\to\\infty}\\ln t = \\infty$$\nThe area is infinite, even though $\\frac{1}{x} \\to 0$.\n\n(b)\n$$V = \\pi\\int_1^\\infty \\frac{1}{x^2}\\,dx = \\pi\\lim_{t\\to\\infty}\\left[-\\frac{1}{x}\\right]_1^t = \\pi\\lim_{t\\to\\infty}\\left(1 - \\frac{1}{t}\\right) = \\pi$$\nThe volume is finite: $\\pi$ cubic units. Squaring the radius turns $\\frac{1}{x}$ ($p = 1$, divergent) into $\\frac{1}{x^2}$ ($p = 2$, convergent).\n\n(c) There is no contradiction in the calculations. Lily's argument treats paint as having a fixed minimum thickness. Painting an infinite area with a layer of fixed thickness would indeed need infinite paint. But inside the horn, far along it the radius $\\frac{1}{x}$ becomes smaller than any fixed thickness, so the paint 'layer' across the region $R$ becomes thinner and thinner. Mathematically, area (2D) and volume (3D) are different measures, and a set can have infinite area while a solid built from it has finite volume.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "calc-volumes-revolution"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q15",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Determine whether $\\displaystyle\\int_0^3 \\frac{1}{(x - 1)^{\\frac{2}{3}}}\\,dx$ converges. If it does, find its exact value.\n\n(Take $(x - 1)^{\\frac{2}{3}} = \\left(\\sqrt[3]{x - 1}\\right)^2$, which is defined and positive for all $x \\ne 1$.)",
+  "hint": "Where is the integrand undefined? Split the integral there and handle each piece with its own limit. An antiderivative is $3\\sqrt[3]{x - 1}$.",
+  "answer": "Converges to $3 + 3\\sqrt[3]{2}$",
+  "solution": "The integrand is unbounded at $x = 1$, which is **inside** $[0, 3]$, so split there:\n$$\\int_0^3 = \\int_0^1 + \\int_1^3$$\n\nAn antiderivative of $(x - 1)^{-\\frac{2}{3}}$ is $3(x - 1)^{\\frac{1}{3}} = 3\\sqrt[3]{x - 1}$ (cube roots of negative numbers are fine).\n\nLeft piece:\n$$\\int_0^1 (x - 1)^{-\\frac{2}{3}}\\,dx = \\lim_{t\\to 1^-}\\Big[3\\sqrt[3]{x - 1}\\Big]_0^t = \\lim_{t\\to 1^-}\\left(3\\sqrt[3]{t - 1} - 3\\sqrt[3]{-1}\\right) = 0 + 3 = 3$$\n\nRight piece:\n$$\\int_1^3 (x - 1)^{-\\frac{2}{3}}\\,dx = \\lim_{t\\to 1^+}\\Big[3\\sqrt[3]{x - 1}\\Big]_t^3 = 3\\sqrt[3]{2} - 0 = 3\\sqrt[3]{2}$$\n\nBoth pieces converge, so the integral **converges**:\n$$\\int_0^3 \\frac{1}{(x - 1)^{\\frac{2}{3}}}\\,dx = 3 + 3\\sqrt[3]{2} \\approx 6.78$$\n\n(This is consistent with the benchmark: near the bad point the integrand behaves like $\\frac{1}{|x - 1|^p}$ with $p = \\frac{2}{3} < 1$. Here, integrating straight through happens to give the right number, but only because both pieces were shown to converge; compare $\\frac{1}{(x - 1)^2}$, where the same shortcut gives a nonsense answer.)",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-improper-integrals-q16",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "For integers $n \\ge 0$, let $\\displaystyle I_n = \\int_0^\\infty x^n e^{-x}\\,dx$. You may assume that $t^n e^{-t} \\to 0$ as $t \\to \\infty$ for every $n \\ge 0$.\n\n(a) Show that $I_0 = 1$.\n\n(b) Use integration by parts to show that $I_n = nI_{n-1}$ for $n \\ge 1$.\n\n(c) Prove by induction that $I_n = n!$ for all integers $n \\ge 0$, and hence evaluate $\\displaystyle\\int_0^\\infty x^5 e^{-x}\\,dx$.",
+  "hint": "For (b), take $u = x^n$ and $\\frac{dv}{dx} = e^{-x}$ on $[0, t]$, then let $t \\to \\infty$. The boundary term vanishes at both ends.",
+  "answer": "(a) $\\lim_{t\\to\\infty}\\left(1 - e^{-t}\\right) = 1$ (b) shown (c) proof by induction; $\\int_0^\\infty x^5e^{-x}\\,dx = 120$",
+  "solution": "(a)\n$$I_0 = \\int_0^\\infty e^{-x}\\,dx = \\lim_{t\\to\\infty}\\Big[-e^{-x}\\Big]_0^t = \\lim_{t\\to\\infty}\\left(1 - e^{-t}\\right) = 1$$\n\n(b) For $n \\ge 1$, on $[0, t]$ with $u = x^n$, $\\frac{dv}{dx} = e^{-x}$, so $\\frac{du}{dx} = nx^{n-1}$, $v = -e^{-x}$:\n$$\\int_0^t x^n e^{-x}\\,dx = \\Big[-x^n e^{-x}\\Big]_0^t + n\\int_0^t x^{n-1}e^{-x}\\,dx = -t^n e^{-t} + n\\int_0^t x^{n-1}e^{-x}\\,dx$$\n(the boundary term at $0$ is $0$ because $n \\ge 1$). Let $t \\to \\infty$: $t^n e^{-t} \\to 0$, so\n$$I_n = nI_{n-1}$$\n(This also shows $I_n$ converges whenever $I_{n-1}$ does.)\n\n(c) **Base case** $n = 0$: $I_0 = 1 = 0!$ ✓\n\n**Inductive step:** assume $I_k = k!$ for some integer $k \\ge 0$. Then by (b),\n$$I_{k+1} = (k + 1)I_k = (k + 1) \\times k! = (k + 1)!$$\nso the result holds for $n = k + 1$.\n\n**Conclusion:** the result is true for $n = 0$, and if it is true for $n = k$ then it is true for $n = k + 1$. So by induction $I_n = n!$ for all integers $n \\ge 0$.\n\nHence $\\int_0^\\infty x^5e^{-x}\\,dx = I_5 = 5! = 120$.",
+  "linkedTopicIds": [
+   "fur-proof-by-induction",
+   "calc-integration-by-parts"
+  ]
+ },
+ {
+  "id": "calc-improper-integrals-q17",
+  "topicId": "calc-improper-integrals",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "The lifetime $X$ years of an electronic component is modelled by the probability density function\n$$f(x) = \\frac{k}{(1 + x)^3}, \\qquad x \\ge 0$$\nwhere $k$ is a constant. For this to be a valid model, $\\displaystyle\\int_0^\\infty f(x)\\,dx = 1$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $k$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that a component lasts more than 3 years, $\\displaystyle P(X > 3) = \\int_3^\\infty f(x)\\,dx$."
+   },
+   {
+    "label": "c",
+    "prompt": "The mean lifetime is $\\displaystyle\\int_0^\\infty x f(x)\\,dx$. Use the substitution $u = 1 + x$ to show that the mean lifetime is 1 year."
+   },
+   {
+    "label": "d",
+    "prompt": "Show that $\\displaystyle\\int_0^\\infty x^2 f(x)\\,dx$ diverges, and explain what this suggests about the spread of lifetimes."
+   }
+  ],
+  "hint": "$\\int (1 + x)^{-3}\\,dx = -\\frac{1}{2}(1 + x)^{-2}$. With $u = 1 + x$, write $x = u - 1$ and split the fraction into powers of $u$.",
+  "answer": "(a) $k = 2$ (b) $\\dfrac{1}{16}$ (c) shown (d) the integrand behaves like $\\frac{2}{u}$ for large $u$, giving a $\\ln$ term that tends to infinity; the variance is infinite, so occasional components last very much longer than average",
+  "solution": "(a)\n$$\\int_0^\\infty \\frac{k}{(1 + x)^3}\\,dx = \\lim_{t\\to\\infty}\\left[-\\frac{k}{2(1 + x)^2}\\right]_0^t = \\lim_{t\\to\\infty}\\left(\\frac{k}{2} - \\frac{k}{2(1 + t)^2}\\right) = \\frac{k}{2}$$\nSetting this equal to $1$ gives $k = 2$.\n\n(b)\n$$P(X > 3) = \\lim_{t\\to\\infty}\\left[-\\frac{1}{(1 + x)^2}\\right]_3^t = \\frac{1}{4^2} = \\frac{1}{16}$$\n\n(c) With $u = 1 + x$, $du = dx$, $x = u - 1$; limits $u = 1$ to $u \\to \\infty$:\n$$\\int_0^\\infty \\frac{2x}{(1 + x)^3}\\,dx = \\int_1^\\infty \\frac{2(u - 1)}{u^3}\\,du = \\int_1^\\infty \\left(2u^{-2} - 2u^{-3}\\right)du$$\n$$= \\lim_{t\\to\\infty}\\left[-\\frac{2}{u} + \\frac{1}{u^2}\\right]_1^t = 0 - (-2 + 1) = 1$$\nBoth pieces converge ($p = 2$ and $p = 3$), so splitting is valid. Mean lifetime: **1 year**.\n\n(d)\n$$\\int_0^\\infty \\frac{2x^2}{(1 + x)^3}\\,dx = \\int_1^\\infty \\frac{2(u - 1)^2}{u^3}\\,du = \\int_1^\\infty \\left(\\frac{2}{u} - \\frac{4}{u^2} + \\frac{2}{u^3}\\right)du$$\nOn $[1, t]$ this equals $2\\ln t + \\frac{4}{t} - \\frac{1}{t^2} - 3$, which tends to $\\infty$ as $t \\to \\infty$ because of the $2\\ln t$ term. So it **diverges**.\n\nHence $E\\left(X^2\\right)$, and therefore the variance, is infinite. Although the mean is only 1 year, the density decays slowly enough that very long lifetimes are not rare enough for the spread to be finite: a few components will last far longer than average.",
+  "linkedTopicIds": [
+   "calc-integration-substitution"
+  ]
+ }
+]
