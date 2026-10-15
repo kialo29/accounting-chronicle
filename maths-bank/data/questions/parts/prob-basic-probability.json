@@ -1,0 +1,282 @@
+[
+ {
+  "id": "prob-basic-probability-q01",
+  "topicId": "prob-basic-probability",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The probability scale below has five points marked A, B, C, D and E.\n\nWrite down the letter that shows the probability of each event.\n\n(a) A fair coin lands on heads.\n\n(b) A fair six-sided dice shows a number less than 7.\n\n(c) A fair six-sided dice shows a 5.\n\n(d) A counter taken at random from a bag of 3 red counters and 1 blue counter is red.\n\n(e) A fair six-sided dice shows a 7.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 100\" width=\"360\" height=\"100\"><line x1=\"30\" y1=\"62\" x2=\"330\" y2=\"62\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"55\" x2=\"30\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"30\" y=\"88\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"180\" y1=\"55\" x2=\"180\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"180\" y=\"88\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">½</text><line x1=\"330\" y1=\"55\" x2=\"330\" y2=\"69\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"330\" y=\"88\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"105\" y1=\"58\" x2=\"105\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"255\" y1=\"58\" x2=\"255\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"30\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"bold\">A</text><line x1=\"30\" y1=\"30\" x2=\"30\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 26 46 L 30 53 L 34 46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"80\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"bold\">B</text><line x1=\"80\" y1=\"30\" x2=\"80\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 76 46 L 80 53 L 84 46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"bold\">C</text><line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 176 46 L 180 53 L 184 46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"255\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"bold\">D</text><line x1=\"255\" y1=\"30\" x2=\"255\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 251 46 L 255 53 L 259 46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"330\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-weight=\"bold\">E</text><line x1=\"330\" y1=\"30\" x2=\"330\" y2=\"52\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 326 46 L 330 53 L 334 46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/></svg>",
+  "hint": "Decide first whether each event is impossible, certain, or somewhere in between. Then work out the probability as a fraction and place it on the scale.",
+  "answer": "(a) C (b) E (c) B (d) D (e) A",
+  "solution": "On the scale, A is at $0$, B is at $\\frac{1}{6}$, C is at $\\frac{1}{2}$, D is at $\\frac{3}{4}$ and E is at $1$.\n\n(a) Heads is one of two equally likely outcomes, so $P(\\text{heads}) = \\frac{1}{2}$ (evens): **C**.\n\n(b) Every number on a dice (1 to 6) is less than 7, so this is **certain**, probability $1$: **E**.\n\n(c) A 5 is one of six equally likely outcomes: $P(5) = \\frac{1}{6}$, a little way above $0$: **B**.\n\n(d) 3 of the 4 counters are red: $P(\\text{red}) = \\frac{3}{4}$: **D**.\n\n(e) A dice has no 7, so this is **impossible**, probability $0$: **A**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q02",
+  "topicId": "prob-basic-probability",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bag contains 3 red counters and 7 blue counters. A counter is taken from the bag at random.\n\nFind the probability that the counter is red.",
+  "hint": "Each counter is equally likely to be picked. How many counters are there altogether?",
+  "answer": "$P(\\text{red}) = \\dfrac{3}{10}$",
+  "solution": "There are $3 + 7 = 10$ counters, each equally likely to be taken.\n\n3 of them are red, so\n$$P(\\text{red}) = \\frac{\\text{number of red counters}}{\\text{total number of counters}} = \\frac{3}{10}$$\n\n(This can also be written as $0.3$ or $30\\%$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q03",
+  "topicId": "prob-basic-probability",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bag contains 3 red counters, 7 blue counters and 2 green counters. A counter is taken from the bag at random.\n\nFind the probability that the counter is red. Give your answer as a fraction in its simplest form.",
+  "hint": "The number of red counters has not changed, but has the total?",
+  "answer": "$P(\\text{red}) = \\dfrac{1}{4}$",
+  "solution": "**What changed:** 2 green counters have been added, so the total has gone up.\n\nTotal: $3 + 7 + 2 = 12$ counters.\n$$P(\\text{red}) = \\frac{3}{12} = \\frac{1}{4}$$\n\nThe number of red counters is the same as before, but there are more counters altogether, so the probability of red has gone **down**, from $\\frac{3}{10}$ to $\\frac{1}{4}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q04",
+  "topicId": "prob-basic-probability",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bag contains 3 red counters, 7 blue counters and 2 green counters. A counter is taken from the bag at random.\n\nFind the probability that the counter is **not** red. Give your answer as a fraction in its simplest form.",
+  "hint": "Use your answer to the previous question: either count the counters that are not red, or use $P(\\text{not } A) = 1 - P(A)$.",
+  "answer": "$P(\\text{not red}) = \\dfrac{3}{4}$",
+  "solution": "**What changed:** the bag is the same, but now we want the opposite event.\n\nFrom before, $P(\\text{red}) = \\frac{3}{12} = \\frac{1}{4}$. A counter is either red or not red, so\n$$P(\\text{not red}) = 1 - \\frac{1}{4} = \\frac{3}{4}$$\n\nCheck by counting: the counters that are not red are the 7 blue and 2 green, so $\\frac{9}{12} = \\frac{3}{4}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q05",
+  "topicId": "prob-basic-probability",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bag contains 3 red counters, 2 green counters and some blue counters. A counter is taken from the bag at random.\n\nThe probability that the counter is red is $\\dfrac{1}{4}$.\n\nHow many blue counters are in the bag?",
+  "hint": "If 3 counters make up $\\frac{1}{4}$ of the bag, how many counters are there altogether?",
+  "answer": "7 blue counters",
+  "solution": "**What changed:** now the probability is given and the number of blue counters is the unknown, so we work backwards.\n\nThe 3 red counters are $\\frac{1}{4}$ of all the counters, so the total is\n$$3 \\times 4 = 12 \\text{ counters}$$\n\nBlue counters $= 12 - 3 - 2 = 7$.\n\nCheck: $P(\\text{red}) = \\frac{3}{3 + 2 + 7} = \\frac{3}{12} = \\frac{1}{4}$ ✓ (this is the bag from the earlier question).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q06",
+  "topicId": "prob-basic-probability",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The fair spinner shown is divided into 8 equal sections. Each section is labelled R (red) or B (blue).\n\nSam says, \"The spinner can only land on red or blue, so the probability that it lands on red is $\\frac{1}{2}$.\"\n\nIs Sam correct? Explain your answer.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"360\" height=\"210\"><path d=\"M 180 105 L 180 20 A 85 85 0 0 1 240.1 44.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 240.1 44.9 A 85 85 0 0 1 265 105 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 265 105 A 85 85 0 0 1 240.1 165.1 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 240.1 165.1 A 85 85 0 0 1 180 190 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 180 190 A 85 85 0 0 1 119.9 165.1 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 119.9 165.1 A 85 85 0 0 1 95 105 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 95 105 A 85 85 0 0 1 119.9 44.9 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 180 105 L 119.9 44.9 A 85 85 0 0 1 180 20 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"199.5\" y=\"63.1\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"227.1\" y=\"90.7\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"227.1\" y=\"129.8\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"199.5\" y=\"157.4\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"160.5\" y=\"157.4\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"132.9\" y=\"129.8\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"132.9\" y=\"90.7\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"160.5\" y=\"63.1\" font-size=\"15\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><circle cx=\"180\" cy=\"105\" r=\"3\" fill=\"currentColor\"/></svg>",
+  "hint": "Are \"red\" and \"blue\" equally likely? Count the equal sections.",
+  "answer": "No. The 8 equal sections are the equally likely outcomes and 5 are red, so $P(\\text{red}) = \\dfrac{5}{8}$, not $\\dfrac{1}{2}$.",
+  "solution": "Sam is **not** correct.\n\nThere are two *colours*, but the colours are not equally likely: red covers more of the spinner than blue. The equally likely outcomes are the 8 equal **sections**.\n\nCounting sections: 5 are labelled R and 3 are labelled B. So\n$$P(\\text{red}) = \\frac{5}{8}, \\qquad P(\\text{blue}) = \\frac{3}{8}$$\n\nCheck: $\\frac{5}{8} + \\frac{3}{8} = 1$ ✓\n\nThe probability would only be $\\frac{1}{2}$ if red and blue each had 4 of the 8 sections.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q07",
+  "topicId": "prob-basic-probability",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A fair coin is flipped 5 times. It lands on heads every time.\n\nElla says, \"The next flip is more likely to be tails, because the results have to even out.\"\n\nJamal says, \"The next flip is more likely to be heads, because the coin is on a winning streak.\"\n\n(a) Who is correct? Explain your answer.\n\n(b) Write down the probability that the 6th flip is tails.",
+  "hint": "Does the coin know what happened on the previous flips? What makes a coin \"fair\"?",
+  "answer": "(a) Neither of them. The coin is fair and has no memory, so each flip is independent of the previous ones and heads and tails are still equally likely. (b) $\\dfrac{1}{2}$",
+  "solution": "(a) **Neither** Ella nor Jamal is correct.\n\nThe coin is fair, so on *every* flip there are two equally likely outcomes, heads and tails. The coin has no memory of what it did before: earlier flips cannot change the physical coin or the way the next flip lands. So the 6th flip is exactly like the first one.\n\nElla's idea that results \"even out\" is the gambler's fallacy. Over a very large number of flips the *proportion* of heads gets close to $\\frac{1}{2}$, but that happens because the early run is swamped by many later flips, not because tails start to become more likely.\n\nJamal's \"streak\" idea is also wrong for the same reason: there is no mechanism that makes heads more likely now.\n\n(b) $$P(\\text{tails}) = \\frac{1}{2}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q08",
+  "topicId": "prob-basic-probability",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A jar contains 4 strawberry sweets, 6 orange sweets and 2 lemon sweets. Priya takes a sweet at random.\n\nPriya's working to find the probability that the sweet is strawberry is shown below.\n\nLine 1: There are 4 strawberry sweets and $6 + 2 = 8$ other sweets.\n\nLine 2: So $P(\\text{strawberry}) = \\dfrac{4}{8} = \\dfrac{1}{2}$.\n\n(a) Identify the mistake in Priya's working and explain why it is wrong.\n\n(b) Work out the correct probability.",
+  "hint": "What should the denominator of a probability count?",
+  "answer": "(a) She divided by the number of sweets that are **not** strawberry (8) instead of the **total** number of sweets (12). (b) $P(\\text{strawberry}) = \\dfrac{4}{12} = \\dfrac{1}{3}$",
+  "solution": "(a) The mistake is in Line 2: Priya used **8** as the denominator. 8 is the number of sweets that are *not* strawberry. Comparing 4 strawberry with 8 others gives the odds ($4 : 8$), not the probability.\n\nA probability compares the number of successful outcomes with the **total** number of equally likely outcomes, which must include the strawberry sweets themselves.\n\n(b) Total number of sweets: $4 + 6 + 2 = 12$.\n$$P(\\text{strawberry}) = \\frac{4}{12} = \\frac{1}{3}$$\n\nSense check: strawberry sweets are only one third of the jar, so $\\frac{1}{2}$ was too big.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q09",
+  "topicId": "prob-basic-probability",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A biased spinner can land on red, blue or green. The table shows two of the probabilities.\n\n| Colour | Red | Blue | Green |\n|---|---|---|---|\n| Probability | $0.2$ | $0.35$ | |\n\nTom's working to find the probability that the spinner lands on green is shown below.\n\nLine 1: $0.2 + 0.35 = 0.55$\n\nLine 2: $P(\\text{green}) = 100 - 0.55 = 99.45$\n\n(a) Which line contains the mistake? Explain the mistake.\n\n(b) How could Tom have known his answer must be wrong?\n\n(c) Find the correct probability that the spinner lands on green.",
+  "hint": "The probabilities are written as decimals. What do all the probabilities add up to?",
+  "answer": "(a) Line 2: he subtracted from 100 instead of 1. The probabilities are decimals, so they add up to 1 (100 only works with percentages). (b) A probability can never be greater than 1. (c) $P(\\text{green}) = 0.45$",
+  "solution": "(a) Line 1 is correct. **Line 2** is wrong: Tom subtracted from $100$. The probabilities are written as **decimals**, and as decimals the probabilities of all the outcomes add up to $1$. Subtracting from $100$ would only be right if everything were written as percentages ($100\\%$).\n\n(b) $99.45$ is greater than $1$, and no probability can be greater than $1$ (certain). This is an immediate signal that something has gone wrong.\n\n(c) $$P(\\text{green}) = 1 - 0.55 = 0.45$$\n\nCheck: $0.2 + 0.35 + 0.45 = 1$ ✓\n\n(In percentages: $20\\% + 35\\% = 55\\%$ and $100\\% - 55\\% = 45\\%$, which is the same answer.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q10",
+  "topicId": "prob-basic-probability",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A box contains 30 chocolates. Each chocolate is milk, dark or white.\n\nA chocolate is taken from the box at random.\n\nThe probability that it is milk is $\\dfrac{2}{5}$. The probability that it is dark is $\\dfrac{1}{3}$.\n\nHow many white chocolates are in the box?",
+  "hint": "Either find how many milk and dark chocolates there are, or find $P(\\text{white})$ first using the fact that the probabilities add up to 1.",
+  "answer": "8 white chocolates",
+  "solution": "**Method 1: count the other chocolates.**\n\nMilk: $\\frac{2}{5} \\times 30 = 12$ chocolates.\n\nDark: $\\frac{1}{3} \\times 30 = 10$ chocolates.\n\nWhite: $30 - 12 - 10 = 8$ chocolates.\n\n**Method 2: use the probabilities.**\n\nThe three probabilities add up to 1:\n$$P(\\text{white}) = 1 - \\frac{2}{5} - \\frac{1}{3} = \\frac{15}{15} - \\frac{6}{15} - \\frac{5}{15} = \\frac{4}{15}$$\n\nNumber of white chocolates: $\\frac{4}{15} \\times 30 = 8$.\n\nBoth methods give **8 white chocolates**.",
+  "linkedTopicIds": [
+   "num-fractions-multiply-divide"
+  ]
+ },
+ {
+  "id": "prob-basic-probability-q11",
+  "topicId": "prob-basic-probability",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A bag contains only red, blue and green beads.\n\nA bead is taken at random. The probability that it is red is $0.25$ and the probability that it is blue is $0.4$.\n\nThere are 21 green beads in the bag.\n\nHow many red beads and how many blue beads are in the bag?",
+  "hint": "First find the probability that a bead is green. The 21 green beads are that fraction of the whole bag.",
+  "answer": "15 red beads and 24 blue beads (60 beads altogether)",
+  "solution": "The probabilities add up to $1$:\n$$P(\\text{green}) = 1 - 0.25 - 0.4 = 0.35$$\n\nSo the 21 green beads are $0.35$ of all the beads:\n$$\\text{total} = 21 \\div 0.35 = 60 \\text{ beads}$$\n\n(Or: $0.35 = 35\\%$; $35\\%$ is 21, so $5\\%$ is 3 and $100\\%$ is 60.)\n\nRed: $0.25 \\times 60 = 15$ beads.\n\nBlue: $0.4 \\times 60 = 24$ beads.\n\nCheck: $15 + 24 + 21 = 60$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q12",
+  "topicId": "prob-basic-probability",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "Mia has a biased four-sided spinner. The sides are numbered 1, 2, 3 and 4.\n\nThe table shows the probability that the spinner lands on each of the numbers 1, 2 and 4.\n\n| Number | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| Probability | $0.3$ | $0.15$ | $x$ | $0.25$ |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the value of $x$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the probability that the spinner does **not** land on 1.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Mia says, \"Half of the numbers on the spinner are even, so the probability that the spinner lands on an even number is $0.5$.\"\n\nIs Mia correct? You must give a reason for your answer.",
+    "marks": 2
+   }
+  ],
+  "hint": "All four probabilities must add up to 1. For (c), add the probabilities of the even numbers.",
+  "answer": "(a) $x = 0.3$ (b) $0.7$ (c) No: $P(\\text{even}) = 0.15 + 0.25 = 0.4$, not $0.5$. The spinner is biased, so the numbers are not equally likely.",
+  "solution": "(a) The probabilities add up to 1:\n$$0.3 + 0.15 + x + 0.25 = 1$$\n$$0.7 + x = 1$$ **M1**\n$$x = 0.3$$ **A1**\n\n(b) $$P(\\text{not } 1) = 1 - 0.3 = 0.7$$ **B1**\n\n(c) No, Mia is not correct. **B1** (for \"no\" with a supporting calculation or reason)\n\nThe even numbers are 2 and 4:\n$$P(\\text{even}) = 0.15 + 0.25 = 0.4$$ **B1**\n\nMia's reasoning only works when all the outcomes are equally likely. This spinner is biased, so counting numbers is not enough; the probabilities must be added.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q13",
+  "topicId": "prob-basic-probability",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 7,
+  "question": "There are 40 counters in a bag. Each counter is red, yellow or green.\n\nA counter is taken from the bag at random. The probability that it is red is $0.3$.\n\nThe number of yellow counters is 3 times the number of green counters.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the number of red counters in the bag.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the probability that a counter taken at random is green.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Some extra red counters are now put into the bag. No other counters are added.\n\nThe probability of taking a red counter is now $\\dfrac{1}{2}$.\n\nWork out how many extra red counters were put into the bag.",
+    "marks": 3
+   }
+  ],
+  "hint": "(b) If there are $g$ green counters, there are $3g$ yellow ones. (c) For red to have probability $\\frac{1}{2}$ there must be as many red counters as all the others put together.",
+  "answer": "(a) 12 (b) $\\dfrac{7}{40}$ (c) 16",
+  "solution": "(a) $0.3 \\times 40 = 12$ red counters. **B1**\n\n(b) Yellow and green together: $40 - 12 = 28$ counters. **M1**\n\nYellow : green $= 3 : 1$, so there are $3 + 1 = 4$ parts and green is 1 part:\n$$28 \\div 4 = 7 \\text{ green counters}$$ **M1**\n$$P(\\text{green}) = \\frac{7}{40}$$ **A1**\n\n(c) The 28 yellow and green counters do not change. **M1** (recognising non-red total is fixed)\n\nFor $P(\\text{red}) = \\frac{1}{2}$, half the counters must be red, so the number of red counters must equal the number of other counters: 28 red counters. **M1**\n\nExtra red counters: $28 - 12 = 16$. **A1**\n\nCheck: $\\frac{28}{28 + 28} = \\frac{1}{2}$ ✓\n\n(Alternatively, with $n$ extra red counters: $\\frac{12 + n}{40 + n} = \\frac{1}{2}$, so $24 + 2n = 40 + n$ and $n = 16$.)",
+  "linkedTopicIds": [
+   "rat-ratio-sharing"
+  ]
+ },
+ {
+  "id": "prob-basic-probability-q14",
+  "topicId": "prob-basic-probability",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A school sells 400 raffle tickets for a prize hamper. Jo buys 5 tickets. One ticket is drawn at random to win the hamper.\n\n(a) Find the probability that Jo wins the hamper. Give your answer as a fraction in its simplest form.\n\n(b) Write your answer to (a) as a percentage.\n\n(c) Find the probability that Jo does **not** win the hamper. Give your answer as a percentage.",
+  "hint": "Each of the 400 tickets is equally likely to be drawn, and 5 of them are Jo's.",
+  "answer": "(a) $\\dfrac{1}{80}$ (b) $1.25\\%$ (c) $98.75\\%$",
+  "solution": "(a) There are 400 equally likely tickets and 5 belong to Jo:\n$$P(\\text{Jo wins}) = \\frac{5}{400} = \\frac{1}{80}$$\n\n(b) $\\frac{1}{80} = 1 \\div 80 = 0.0125 = 1.25\\%$\n\n(c) Working in percentages, subtract from $100\\%$:\n$$P(\\text{Jo does not win}) = 100\\% - 1.25\\% = 98.75\\%$$\n\n(As a fraction: $1 - \\frac{1}{80} = \\frac{79}{80}$, and $\\frac{79}{80} = 0.9875 = 98.75\\%$ ✓.) Be careful to subtract from $100\\%$ only when working in percentages; in fractions or decimals subtract from $1$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "num-fdp-conversions"
+  ]
+ },
+ {
+  "id": "prob-basic-probability-q15",
+  "topicId": "prob-basic-probability",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "An ordinary pack of 52 playing cards has four suits: hearts and diamonds (red), clubs and spades (black). Each suit has 13 cards: an ace, the numbers 2 to 10, and three picture cards (jack, queen, king).\n\nA card is chosen at random from a well-shuffled pack.\n\nFind, as fractions in their simplest form, the probability that the card is\n\n(a) a king\n\n(b) a red picture card\n\n(c) **not** a club\n\n(d) red **or** a king (or both).",
+  "hint": "Count the cards that fit each description, out of 52. In (d), be careful not to count the red kings twice.",
+  "answer": "(a) $\\dfrac{1}{13}$ (b) $\\dfrac{3}{26}$ (c) $\\dfrac{3}{4}$ (d) $\\dfrac{7}{13}$",
+  "solution": "All 52 cards are equally likely.\n\n(a) There are 4 kings (one per suit):\n$$P(\\text{king}) = \\frac{4}{52} = \\frac{1}{13}$$\n\n(b) Each red suit has 3 picture cards, so there are $2 \\times 3 = 6$ red picture cards:\n$$P(\\text{red picture card}) = \\frac{6}{52} = \\frac{3}{26}$$\n\n(c) There are 13 clubs, so $P(\\text{club}) = \\frac{13}{52} = \\frac{1}{4}$ and\n$$P(\\text{not a club}) = 1 - \\frac{1}{4} = \\frac{3}{4}$$\n\n(d) There are 26 red cards. The kings that are *not* already counted are the 2 black kings (the 2 red kings are already among the 26 red cards). So $26 + 2 = 28$ cards fit:\n$$P(\\text{red or king}) = \\frac{28}{52} = \\frac{7}{13}$$\n\n(A common slip is $26 + 4 = 30$, which counts the king of hearts and the king of diamonds twice.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-basic-probability-q16",
+  "topicId": "prob-basic-probability",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A bag contains only red, blue and green counters.\n\nThere are $x$ red counters, $2x + 3$ blue counters and $3x - 1$ green counters.\n\nA counter is taken at random. The probability that it is blue is $\\dfrac{3}{8}$.\n\nWork out the probability that the counter is red.",
+  "hint": "Write an expression for the total number of counters. Then $P(\\text{blue}) = \\dfrac{\\text{blue}}{\\text{total}}$ gives an equation in $x$.",
+  "answer": "$P(\\text{red}) = \\dfrac{9}{56}$",
+  "solution": "Total number of counters:\n$$x + (2x + 3) + (3x - 1) = 6x + 2$$\n\nSo\n$$\\frac{2x + 3}{6x + 2} = \\frac{3}{8}$$\n\nMultiply both sides by $8(6x + 2)$:\n$$8(2x + 3) = 3(6x + 2)$$\n$$16x + 24 = 18x + 6$$\n$$18 = 2x$$\n$$x = 9$$\n\nSo there are 9 red, $2(9) + 3 = 21$ blue and $3(9) - 1 = 26$ green counters: 56 altogether.\n\nCheck: $P(\\text{blue}) = \\frac{21}{56} = \\frac{3}{8}$ ✓\n$$P(\\text{red}) = \\frac{9}{56}$$",
+  "linkedTopicIds": [
+   "alg-forming-equations",
+   "alg-linear-equations"
+  ]
+ },
+ {
+  "id": "prob-basic-probability-q17",
+  "topicId": "prob-basic-probability",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Bag A contains red and blue counters in the ratio $2 : 3$.\n\nBag B contains red and blue counters in the ratio $1 : 4$. Bag B has twice as many counters as bag A.\n\nAll the counters from both bags are tipped into an empty box, and one counter is taken from the box at random.\n\n(a) Find the probability that the counter is red.\n\n(b) Leah says, \"$P(\\text{red})$ from bag A is $\\frac{2}{5}$ and from bag B is $\\frac{1}{5}$. The mean of these is $\\frac{3}{10}$, so the answer to (a) is $\\frac{3}{10}$.\"\n\nExplain why Leah is wrong.\n\n(c) Explain why your answer to (a) does not depend on how many counters are in bag A.",
+  "hint": "Suppose bag A has $5k$ counters (or pick a convenient number such as 5 or 10). How many counters, and how many red counters, does bag B have?",
+  "answer": "(a) $\\dfrac{4}{15}$ (b) Bag B has twice as many counters, so its proportion should count twice as much; a simple mean of the probabilities gives the bags equal weight. (c) If bag A has $5k$ counters, red $= 4k$ out of $15k$, and $k$ cancels.",
+  "solution": "(a) Bag A is split in the ratio $2 : 3$, i.e. 5 parts, so let bag A have $5k$ counters: $2k$ red and $3k$ blue.\n\nBag B has twice as many: $10k$ counters, split $1 : 4$ (5 parts of $2k$), so $2k$ red and $8k$ blue.\n\nIn the box: red $= 2k + 2k = 4k$, total $= 5k + 10k = 15k$.\n$$P(\\text{red}) = \\frac{4k}{15k} = \\frac{4}{15}$$\n\n(For example, with 10 counters in A: 4 red; 20 in B: 4 red; so $\\frac{8}{30} = \\frac{4}{15}$.)\n\n(b) Taking the mean of $\\frac{2}{5}$ and $\\frac{1}{5}$ treats the two bags as if they were the same size. Bag B has twice as many counters, so bag B's lower proportion of red must carry twice the weight. That pulls the answer below $\\frac{3}{10}$: $\\frac{4}{15} \\approx 0.267 < 0.3$. Leah should add the counts, not average the probabilities.\n\n(c) Whatever the size of bag A ($5k$), the numbers of red counters and of all counters are both multiples of $k$ ($4k$ and $15k$), so $k$ cancels and the probability is always $\\frac{4}{15}$. Only the *ratio* of the bag sizes matters, and that is fixed at $1 : 2$.",
+  "linkedTopicIds": [
+   "rat-ratio-sharing",
+   "rat-ratio-fractions-combining"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "prob-basic-probability-q18",
+  "topicId": "prob-basic-probability",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A bag contains only red, blue and green beads. A bead is taken at random.\n\n* The probability that it is red is $0.35$.\n* A blue bead is twice as likely to be taken as a green bead.\n\n(a) Find the smallest possible number of beads in the bag.\n\n(b) The bag actually contains between 100 and 150 beads. How many blue beads are in the bag?",
+  "hint": "Find $P(\\text{green})$ and $P(\\text{blue})$ as fractions. The number of beads of each colour must be a whole number.",
+  "answer": "(a) 60 (b) 52 blue beads",
+  "solution": "Blue and green share the rest of the probability: $1 - 0.35 = 0.65$.\n\nBlue is twice as likely as green, so split $0.65$ in the ratio $2 : 1$ (3 parts):\n$$P(\\text{green}) = \\frac{0.65}{3} = \\frac{13}{60}, \\qquad P(\\text{blue}) = \\frac{26}{60}$$\nand\n$$P(\\text{red}) = 0.35 = \\frac{21}{60}$$\n\n(a) If the bag has $N$ beads, then $\\frac{21}{60}N$, $\\frac{26}{60}N$ and $\\frac{13}{60}N$ must all be whole numbers. Since 13 has no common factor with 60, $\\frac{13N}{60}$ is only a whole number when $N$ is a multiple of 60. With $N = 60$ the bag has 21 red, 26 blue and 13 green beads, all whole numbers. So the smallest possible number of beads is **60**.\n\n(b) $N$ must be a multiple of 60 between 100 and 150, so $N = 120$.\n\nBlue beads: $\\frac{26}{60} \\times 120 = 52$.\n\nCheck: 120 beads = 42 red + 52 blue + 26 green; $\\frac{42}{120} = 0.35$ ✓ and $52 = 2 \\times 26$ ✓",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ]
+ }
+]
