@@ -1,0 +1,4 @@
+{
+ "id": "geo-area-triangle-sine",
+ "keyIdea": "For any triangle with two sides $a$ and $b$ and the **included angle** $C$ (the angle between them):\n$$\\text{Area} = \\frac{1}{2}ab\\sin C$$\n\nIt reduces to $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$ because $b\\sin C$ is the perpendicular height.\n\n* **Reverse problems:** rearrange to $\\sin C = \\dfrac{2 \\times \\text{Area}}{ab}$. Since $\\sin C = \\sin(180^\\circ - C)$, there may be an acute and an obtuse answer.\n* **Segment of a circle** (radius $r$, angle $\\theta$ at the centre):\n$$\\text{segment} = \\text{sector} - \\text{triangle} = \\frac{\\theta}{360}\\pi r^2 - \\frac{1}{2}r^2\\sin\\theta$$\n(in radians: $\\frac{1}{2}r^2(\\theta - \\sin\\theta)$).\n* If the included angle is not given, find it first with the cosine rule (SSS) or sine rule.\n* **Heron's formula** (three sides known): with semi-perimeter $s = \\frac{1}{2}(a + b + c)$, $\\text{Area} = \\sqrt{s(s - a)(s - b)(s - c)}$."
+}
