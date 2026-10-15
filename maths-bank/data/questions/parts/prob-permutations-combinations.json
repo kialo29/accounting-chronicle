@@ -1,0 +1,253 @@
+[
+ {
+  "id": "prob-permutations-combinations-q01",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "How many different arrangements are there of all the letters of the word **STARE**?",
+  "hint": "There are 5 choices for the first letter, then 4 for the second, and so on.",
+  "answer": "$120$",
+  "solution": "All 5 letters are different. There are 5 choices for the first position, 4 for the second, 3 for the third, 2 for the fourth and 1 for the last:\n$$5! = 5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q02",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "How many different arrangements are there of all the letters of the word **START**?",
+  "hint": "Compare with STARE. One letter now appears twice: does swapping the two T's make a new arrangement?",
+  "answer": "$60$",
+  "solution": "**What changed:** STARE had 5 different letters; START has the letter T **twice**.\n\nIf the two T's were different (say $\\text{T}_1$ and $\\text{T}_2$) there would be $5! = 120$ arrangements. But each word appears twice in that list, e.g. $\\text{ST}_1\\text{AR}\\text{T}_2$ and $\\text{ST}_2\\text{AR}\\text{T}_1$ both give START. So divide by the $2!$ ways of arranging the T's:\n$$\\frac{5!}{2!} = \\frac{120}{2} = 60$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q03",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "How many different arrangements are there of all the letters of the word **STATS**?",
+  "hint": "Two letters are now repeated. Divide by the factorial of each repeat.",
+  "answer": "$30$",
+  "solution": "**What changed:** START had one repeated letter; STATS has **two** repeated pairs: S twice and T twice (and one A).\n\n$$\\frac{5!}{2!\\,2!} = \\frac{120}{4} = 30$$\n\nEach extra repeat divides the count again: $120 \\to 60 \\to 30$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q04",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Without using the $n!$, ${}^nP_r$ or ${}^nC_r$ buttons on a calculator, work out\n\n(a) $6!$\n(b) $\\dfrac{9!}{7!}$\n(c) ${}^7P_3$\n(d) ${}^7C_3$\n\nand explain why your answer to (d) is smaller than your answer to (c).",
+  "hint": "In (b), most of the factors cancel. ${}^nP_r = \\dfrac{n!}{(n-r)!}$ and ${}^nC_r = \\dfrac{n!}{r!\\,(n-r)!}$.",
+  "answer": "(a) $720$ (b) $72$ (c) $210$ (d) $35$; each selection of 3 can be ordered in $3! = 6$ ways, so ${}^7C_3 = 210 \\div 6$.",
+  "solution": "(a) $6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720$\n\n(b) $\\dfrac{9!}{7!} = \\dfrac{9 \\times 8 \\times 7!}{7!} = 9 \\times 8 = 72$\n\n(c) ${}^7P_3 = \\dfrac{7!}{4!} = 7 \\times 6 \\times 5 = 210$ (choose and **arrange** 3 of 7).\n\n(d) ${}^7C_3 = \\dfrac{7!}{3!\\,4!} = \\dfrac{210}{6} = 35$ (choose 3 of 7, order ignored).\n\n${}^7P_3$ counts ordered lists, so the same three items, e.g. A, B, C, are counted $3! = 6$ times (ABC, ACB, BAC, BCA, CAB, CBA). ${}^7C_3$ counts each group once, so it is $6$ times smaller.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q05",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "(a) State the value of $0!$.\n(b) Work out $\\dbinom{8}{0}$ and $\\dbinom{8}{8}$, and explain what each one counts.\n(c) Work out $\\dbinom{8}{3}$ and $\\dbinom{8}{5}$. What do you notice?",
+  "hint": "Use $\\binom{n}{r} = \\dfrac{n!}{r!\\,(n-r)!}$. How many ways are there to choose nobody? Everybody?",
+  "answer": "(a) $1$ (b) both equal $1$ (c) both equal $56$; choosing 3 to include is the same as choosing 5 to leave out.",
+  "solution": "(a) $0! = 1$ by definition: there is exactly one way to arrange no objects. (It is **not** $0$.)\n\n(b)\n$$\\binom{8}{0} = \\frac{8!}{0!\\,8!} = \\frac{8!}{1 \\times 8!} = 1$$\nThere is one way to choose nothing from 8 items.\n$$\\binom{8}{8} = \\frac{8!}{8!\\,0!} = 1$$\nThere is one way to choose all 8 items. If we used $0! = 0$, these would involve dividing by zero, which is why $0! = 1$ is the sensible definition.\n\n(c)\n$$\\binom{8}{3} = \\frac{8 \\times 7 \\times 6}{3 \\times 2 \\times 1} = 56, \\qquad \\binom{8}{5} = \\frac{8!}{5!\\,3!} = 56$$\nThey are equal: choosing 3 items to take is the same as choosing the 5 items to leave behind.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q06",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Seven different books, including a dictionary and an atlas, are placed in a row on a shelf.\n\n(a) In how many ways can they be arranged if the dictionary must be at one of the two ends?\n(b) In how many ways can they be arranged if the dictionary and the atlas must be at the two ends?",
+  "hint": "Place the restricted books first, then arrange the rest freely.",
+  "answer": "(a) $1440$ (b) $240$",
+  "solution": "(a) The dictionary can go at the left end or the right end: 2 ways. The other 6 books fill the remaining 6 places in $6!$ ways.\n$$2 \\times 6! = 2 \\times 720 = 1440$$\n\n(b) The dictionary and atlas fill the two ends: dictionary left and atlas right, or the other way round, so $2! = 2$ ways. The other 5 books go in the middle in $5!$ ways.\n$$2 \\times 5! = 2 \\times 120 = 240$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q07",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Seven people, including three siblings Ana, Ben and Cal, stand in a line for a photo. The three siblings must stand next to each other.\n\nLeo's working is shown below.\n\n\"Treat Ana, Ben and Cal as one block. Then there are 5 items to arrange: the block and the other 4 people.\n\nNumber of arrangements $= 5! = 120$.\"\n\nIdentify Leo's error, explain it, and find the correct number of arrangements.",
+  "hint": "Is the block \"Ana–Ben–Cal\" the only possible order inside the block?",
+  "answer": "Leo forgot that the siblings can be arranged within the block in $3! = 6$ ways. Correct answer: $5! \\times 3! = 720$.",
+  "solution": "Leo's first step (making a block, giving 5 items and $5!$ arrangements of the items) is correct.\n\n**Error:** he has treated the block as if the siblings always stand in the same order. Inside the block they can stand in $3! = 6$ orders (ABC, ACB, BAC, BCA, CAB, CBA), and each gives a different photo.\n\n**Correct working:**\n$$5! \\times 3! = 120 \\times 6 = 720$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q08",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A pizza takeaway offers 10 different toppings, including mushroom and olive. A \"random special\" uses 3 different toppings chosen at random.\n\nElla works out the probability that the random special includes both mushroom and olive. Her working is shown below.\n\nTotal number of ways to choose 3 toppings: ${}^{10}P_3 = 720$\n\nWays that include mushroom and olive: the third topping is one of the other 8, so $8$ ways.\n\nProbability $= \\dfrac{8}{720} = \\dfrac{1}{90}$\n\nIdentify Ella's error, explain it, and find the correct probability.",
+  "hint": "Is a pizza with mushroom, olive and ham different from one with ham, olive and mushroom? Make sure the top and bottom of your fraction count the same kind of thing.",
+  "answer": "Ella counted ordered selections (permutations) for the total but unordered selections for the favourable outcomes. The order of toppings does not matter: total $= {}^{10}C_3 = 120$, so $P = \\dfrac{8}{120} = \\dfrac{1}{15}$.",
+  "solution": "**Error:** the first line. The order in which toppings are chosen does not change the pizza, so the total should use **combinations**, not permutations. ${}^{10}P_3 = 720$ counts each set of 3 toppings $3! = 6$ times. Her favourable count (8) counts each set once, so the fraction mixes two different kinds of count.\n\n**Correct working:**\n$$\\text{Total} = {}^{10}C_3 = \\frac{10 \\times 9 \\times 8}{3!} = 120$$\n$$\\text{Favourable} = \\binom{2}{2} \\times \\binom{8}{1} = 8$$\n$$P = \\frac{8}{120} = \\frac{1}{15}$$\n\n(Alternatively, she could count ordered selections on top as well: $8 \\times 3! = 48$ ordered selections, and $\\frac{48}{720} = \\frac{1}{15}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q09",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Use the formula ${}^nC_r = \\dfrac{n!}{r!\\,(n-r)!}$ to prove that ${}^nC_r = {}^nC_{n-r}$.\n(b) Give a counting argument that explains the same result without algebra, using the example of choosing a team of 4 from a class of 30.\n(c) Hence write down the value of ${}^{30}C_{26}$ given that ${}^{30}C_4 = 27\\,405$.",
+  "hint": "In (a), replace $r$ by $n - r$ in the formula and simplify $n - (n-r)$. In (b), think about the people who are **not** chosen.",
+  "answer": "(a) ${}^nC_{n-r} = \\dfrac{n!}{(n-r)!\\,r!} = {}^nC_r$ (b) each team of 4 chosen corresponds to exactly one group of 26 left out (c) $27\\,405$",
+  "solution": "(a)\n$${}^nC_{n-r} = \\frac{n!}{(n-r)!\\,\\big(n - (n-r)\\big)!} = \\frac{n!}{(n-r)!\\,r!}$$\nMultiplication is commutative, so this is the same as $\\frac{n!}{r!\\,(n-r)!} = {}^nC_r$. $\\blacksquare$\n\n(b) Every time we choose 4 people to be in the team, we automatically choose the 26 people who are **not** in it, and every group of 26 left out gives exactly one team of 4. This pairs up the selections one-to-one, so the number of ways to choose 4 is the same as the number of ways to choose 26:\n$${}^{30}C_4 = {}^{30}C_{26}$$\n\n(c) ${}^{30}C_{26} = {}^{30}C_4 = 27\\,405$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q10",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A box contains 12 chocolates: 5 milk, 4 dark and 3 white. Ruby takes 3 chocolates at random without looking.\n\nFind, as fractions in their simplest form, the probability that\n\n(a) she takes one of each type,\n(b) all three are the same type,\n(c) at least one is dark.",
+  "hint": "Count selections with combinations: the total is $\\binom{12}{3}$. \"At least one\" is easiest via the complement.",
+  "answer": "(a) $\\dfrac{3}{11}$ (b) $\\dfrac{3}{44}$ (c) $\\dfrac{41}{55}$",
+  "solution": "Order does not matter, so count with combinations.\n$$\\text{Total} = \\binom{12}{3} = 220$$\n\n(a) One milk, one dark, one white:\n$$\\binom{5}{1}\\binom{4}{1}\\binom{3}{1} = 5 \\times 4 \\times 3 = 60, \\qquad P = \\frac{60}{220} = \\frac{3}{11}$$\n\n(b) All milk, all dark or all white:\n$$\\binom{5}{3} + \\binom{4}{3} + \\binom{3}{3} = 10 + 4 + 1 = 15, \\qquad P = \\frac{15}{220} = \\frac{3}{44}$$\n\n(c) No dark means all 3 come from the 8 non-dark chocolates:\n$$P(\\text{no dark}) = \\frac{\\binom{8}{3}}{220} = \\frac{56}{220} = \\frac{14}{55}$$\n$$P(\\text{at least one dark}) = 1 - \\frac{14}{55} = \\frac{41}{55}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q11",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In a lottery game called \"Lucky 5\", a player chooses 5 different numbers from 1 to 40. Five winning numbers are then drawn at random.\n\n(a) How many different sets of 5 numbers can be chosen?\n(b) Find the probability that a player matches all 5 winning numbers. Give your answer in the form $\\frac{1}{n}$.\n(c) Find the probability that a player matches **exactly 3** of the winning numbers. Give your answer to 3 significant figures.",
+  "hint": "For (c), the player's 5 numbers must include 3 of the 5 winning numbers **and** 2 of the 35 losing numbers.",
+  "answer": "(a) $658\\,008$ (b) $\\dfrac{1}{658\\,008}$ (c) $0.00904$",
+  "solution": "(a) The order of the numbers does not matter:\n$$\\binom{40}{5} = \\frac{40 \\times 39 \\times 38 \\times 37 \\times 36}{5!} = 658\\,008$$\n\n(b) Only one set matches all five:\n$$P = \\frac{1}{658\\,008}$$\n\n(c) Choose 3 of the 5 winning numbers and 2 of the 35 non-winning numbers:\n$$\\binom{5}{3} \\times \\binom{35}{2} = 10 \\times 595 = 5950$$\n$$P = \\frac{5950}{658\\,008} = 0.009042\\ldots \\approx 0.00904$$\n(about 1 chance in 111).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q12",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A football squad has 16 players, of whom 2 are goalkeepers. The manager picks a starting team of 11 players, which must contain **exactly one** goalkeeper.\n\n(a) How many different starting teams are possible?\n(b) Once the team is picked, a captain and a vice-captain are chosen from the 11 players. In how many ways can this be done?\n(c) How many ways are there to pick the team and then choose its captain and vice-captain?",
+  "hint": "In (a) the team is a group (order does not matter): choose the goalkeeper and the 10 outfield players separately. In (b) the two roles are different, so order matters.",
+  "answer": "(a) $2002$ (b) $110$ (c) $220\\,220$",
+  "solution": "(a) Choose 1 of the 2 goalkeepers and 10 of the 14 outfield players. A team is the same however it is listed, so use combinations:\n$$\\binom{2}{1} \\times \\binom{14}{10} = 2 \\times 1001 = 2002$$\n\n(b) Captain and vice-captain are different jobs, so order matters: Smith as captain with Jones as vice is different from the reverse.\n$${}^{11}P_2 = 11 \\times 10 = 110$$\n\n(c) Each of the 2002 teams can have its captain and vice chosen in 110 ways:\n$$2002 \\times 110 = 220\\,220$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q13",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": true,
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 364 68\" width=\"364\" height=\"68\"><rect x=\"10\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"28\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">C</text><rect x=\"54\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"72\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">A</text><rect x=\"98\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"116\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">L</text><rect x=\"142\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"160\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">C</text><rect x=\"186\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"204\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">U</text><rect x=\"230\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"248\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">L</text><rect x=\"274\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"292\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">U</text><rect x=\"318\" y=\"10\" width=\"36\" height=\"48\" rx=\"4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"336\" y=\"39\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-weight=\"bold\">S</text></svg>",
+  "question": "The eight letter tiles shown spell the word CALCULUS. The tiles are arranged in a row.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that there are 5040 different arrangements of the eight tiles.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the number of arrangements in which the two C's are next to each other.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "One arrangement is chosen at random. Find the probability that the two C's are **not** next to each other.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the probability that, in an arrangement chosen at random, the three vowels A, U, U are all next to each other.",
+    "marks": 3
+   }
+  ],
+  "hint": "CALCULUS has two C's, two L's and two U's. For \"next to each other\", glue the letters into one block, and remember to count the orders inside the block (identical letters inside a block give fewer orders).",
+  "answer": "(a) $\\dfrac{8!}{2!\\,2!\\,2!} = 5040$ (b) $1260$ (c) $\\dfrac{3}{4}$ (d) $\\dfrac{3}{28}$",
+  "solution": "**(a)** 8 tiles, with C, L and U each appearing twice:\n$$\\frac{8!}{2!\\,2!\\,2!}$$ M1\n$$= \\frac{40\\,320}{8} = 5040$$ A1 (cso)\n\n**(b)** Glue CC into one block: 7 items (CC, A, L, L, U, U, S) with L and U each repeated. The two C's are identical, so there is only 1 order inside the block.\n$$\\frac{7!}{2!\\,2!}$$ M1\n$$= 1260$$ A1\n\n**(c)**\n$$P(\\text{C's together}) = \\frac{1260}{5040} = \\frac{1}{4}$$ M1\n$$P(\\text{not together}) = 1 - \\frac{1}{4} = \\frac{3}{4}$$ A1\n\n**(d)** Glue A, U, U into one block. Inside the block the letters can be ordered in $\\frac{3!}{2!} = 3$ ways (AUU, UAU, UUA). B1\n\nThe 6 items C, C, L, L, S and the block can be arranged in\n$$\\frac{6!}{2!\\,2!} = 180 \\text{ ways}$$ M1\n\n$$P = \\frac{180 \\times 3}{5040} = \\frac{540}{5040} = \\frac{3}{28}$$ A1",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q14",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Five men and three women sit in a row of eight chairs.\n\n(a) In how many ways can they sit if no two women sit next to each other?\n(b) The eight people sit down at random. Find the probability that no two women sit next to each other.",
+  "hint": "Seat the men first. The women must then go into different gaps: between two men or at either end. How many gaps are there?",
+  "answer": "(a) $14\\,400$ (b) $\\dfrac{5}{14}$",
+  "solution": "(a) First arrange the 5 men: $5! = 120$ ways.\n\nThis creates 6 gaps where a woman could sit (shown by $\\wedge$):\n$$\\wedge\\, M \\,\\wedge\\, M \\,\\wedge\\, M \\,\\wedge\\, M \\,\\wedge\\, M \\,\\wedge$$\n\nPutting each woman in a **different** gap guarantees no two women are adjacent. The 3 different women are placed in 3 of the 6 gaps, and order matters (which woman goes where):\n$${}^6P_3 = 6 \\times 5 \\times 4 = 120$$\n\n$$\\text{Total} = 5! \\times {}^6P_3 = 120 \\times 120 = 14\\,400$$\n\n(b) With no restriction there are $8! = 40\\,320$ arrangements, all equally likely.\n$$P = \\frac{14\\,400}{40\\,320} = \\frac{5}{14}$$\n\n(Note: \"total minus all three women together\" would be wrong here, as it would still include arrangements where exactly two women are adjacent.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-permutations-combinations-q15",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "(a) At a meeting, every person shook hands exactly once with every other person. There were 45 handshakes altogether. Form and solve an equation to find how many people were at the meeting.\n\n(b) A chess club has $m$ members. The number of ways to choose a chair and a secretary (two different people) is 28 more than the number of ways to choose a two-person committee. Find $m$.",
+  "hint": "A handshake is an unordered pair: $\\binom{n}{2} = \\frac{n(n-1)}{2}$. In (b), compare ${}^mP_2$ and ${}^mC_2$.",
+  "answer": "(a) $10$ people (b) $m = 8$",
+  "solution": "(a) Each handshake is a choice of 2 people, with order irrelevant:\n$$\\binom{n}{2} = \\frac{n(n-1)}{2} = 45$$\n$$n^2 - n - 90 = 0$$\n$$(n - 10)(n + 9) = 0$$\n$n = 10$ or $n = -9$. A number of people cannot be negative, so there were **10** people.\n\n(b) Chair and secretary are different roles, so order matters: ${}^mP_2 = m(m-1)$. A committee is unordered: ${}^mC_2 = \\frac{m(m-1)}{2}$.\n$$m(m-1) - \\frac{m(m-1)}{2} = 28 \\;\\Rightarrow\\; \\frac{m(m-1)}{2} = 28$$\n$$m^2 - m - 56 = 0$$\n$$(m - 8)(m + 7) = 0$$\n$m = 8$ (rejecting $m = -7$).\n\nCheck: ${}^8P_2 = 56$ and ${}^8C_2 = 28$, and $56 - 28 = 28$ ✓"
+ },
+ {
+  "id": "prob-permutations-combinations-q16",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-binomial-expansion",
+   "alg-algebraic-fractions"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "(a) Prove algebraically that, for integers $1 \\le r \\le n$,\n$$\\binom{n}{r-1} + \\binom{n}{r} = \\binom{n+1}{r}$$\n(b) Give a counting argument for the same result by considering how to choose $r$ people from a group of $n + 1$ people, one of whom is called Zara.\n(c) Explain how this result relates to Pascal's triangle and the binomial expansion of $(1 + x)^{n+1}$, and use it to find $\\binom{11}{5}$ given that $\\binom{10}{4} = 210$ and $\\binom{10}{5} = 252$.\n(d) Check that the result holds when $r = n$, explaining any factorial that appears.",
+  "hint": "In (a) write both fractions over the common denominator $r!\\,(n - r + 1)!$, using $r! = r\\,(r-1)!$ and $(n-r+1)! = (n-r+1)\\,(n-r)!$. In (b), split the choices into those that include Zara and those that don't.",
+  "answer": "(a) proof (b) choices containing Zara: $\\binom{n}{r-1}$; not containing Zara: $\\binom{n}{r}$ (c) each entry of Pascal's triangle is the sum of the two above it, and row $n + 1$ gives the coefficients of $(1+x)^{n+1}$; $\\binom{11}{5} = 462$ (d) $\\binom{n}{n-1} + \\binom{n}{n} = n + 1 = \\binom{n+1}{n}$, using $0! = 1$.",
+  "solution": "(a)\n$$\\binom{n}{r-1} + \\binom{n}{r} = \\frac{n!}{(r-1)!\\,(n-r+1)!} + \\frac{n!}{r!\\,(n-r)!}$$\n\nCommon denominator $r!\\,(n-r+1)!$: multiply the first fraction top and bottom by $r$, the second by $(n - r + 1)$:\n$$= \\frac{n!\\,r + n!\\,(n - r + 1)}{r!\\,(n-r+1)!} = \\frac{n!\\,(n + 1)}{r!\\,(n+1-r)!} = \\frac{(n+1)!}{r!\\,\\big((n+1) - r\\big)!} = \\binom{n+1}{r}$$ $\\blacksquare$\n\n(b) $\\binom{n+1}{r}$ counts all groups of $r$ chosen from the $n + 1$ people. Split them into two types that do not overlap:\n* groups **containing Zara**: choose the other $r - 1$ members from the remaining $n$ people, $\\binom{n}{r-1}$ ways;\n* groups **not containing Zara**: choose all $r$ from the other $n$ people, $\\binom{n}{r}$ ways.\n\nEvery group is exactly one type, so $\\binom{n}{r-1} + \\binom{n}{r} = \\binom{n+1}{r}$.\n\n(c) Row $n$ of Pascal's triangle lists $\\binom{n}{0}, \\binom{n}{1}, \\dots, \\binom{n}{n}$, the coefficients in the expansion of $(1+x)^n$. The identity says each entry in the next row is the sum of the two entries above it, which is how the triangle is built, and is why multiplying $(1+x)^n$ by $(1+x)$ gives the coefficients of $(1+x)^{n+1}$: the coefficient of $x^r$ collects $\\binom{n}{r}$ (times 1) and $\\binom{n}{r-1}$ (times $x$).\n$$\\binom{11}{5} = \\binom{10}{4} + \\binom{10}{5} = 210 + 252 = 462$$\n\n(d) With $r = n$:\n$$\\binom{n}{n-1} + \\binom{n}{n} = \\frac{n!}{(n-1)!\\,1!} + \\frac{n!}{n!\\,0!} = n + 1$$\nsince $0! = 1$ (not $0$, which would make $\\binom{n}{n}$ undefined). And $\\binom{n+1}{n} = \\frac{(n+1)!}{n!\\,1!} = n + 1$ ✓"
+ },
+ {
+  "id": "prob-permutations-combinations-q17",
+  "topicId": "prob-permutations-combinations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A teacher has 10 identical merit stickers to give out to 4 students: Amir, Bea, Cole and Dev. A student may receive no stickers.\n\n(a) Explain why each way of sharing out the stickers corresponds to exactly one arrangement in a row of 10 identical stars ★ and 3 identical bars |. For example, the row ★★|★★★★★||★★★ represents Amir 2, Bea 5, Cole 0, Dev 3.\n(b) Hence find the number of ways of sharing out the stickers.\n(c) Find the number of ways if every student must receive at least one sticker.\n(d) One of the possible ways from part (b) is chosen at random, with each equally likely. Find the probability that every student receives at least one sticker.",
+  "hint": "The bars split the row into 4 sections, one for each student. Count arrangements of 13 symbols where 10 are identical and 3 are identical. For (c), give each student one sticker first.",
+  "answer": "(a) the 3 bars cut the row into 4 groups, read left to right as Amir, Bea, Cole, Dev (b) $286$ (c) $84$ (d) $\\dfrac{42}{143}$",
+  "solution": "(a) Reading from left to right, the stars before the first bar are Amir's, those between the first and second bars are Bea's, between the second and third are Cole's, and after the third bar are Dev's. Any sharing gives exactly one such row (write Amir's stars, a bar, Bea's stars, a bar, and so on), and any row of 10 stars and 3 bars gives exactly one sharing. So the two sets are in one-to-one correspondence.\n\n(b) Arrange 13 symbols, of which 10 are identical stars and 3 are identical bars. Divide by the repeats:\n$$\\frac{13!}{10!\\,3!} = \\binom{13}{3} = 286$$\n(Using $13!$ alone would count rows that look identical many times over.)\n\n(c) Give each student 1 sticker first. That leaves 6 stickers to share among 4 students with no restriction: 6 stars and 3 bars.\n$$\\frac{9!}{6!\\,3!} = \\binom{9}{3} = 84$$\n\n(d)\n$$P = \\frac{84}{286} = \\frac{42}{143}$$",
+  "linkedTopicIds": []
+ }
+]
