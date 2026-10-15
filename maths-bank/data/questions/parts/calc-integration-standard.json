@@ -1,0 +1,289 @@
+[
+ {
+  "id": "calc-integration-standard-q01",
+  "topicId": "calc-integration-standard",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Find $\\displaystyle\\int e^{3x}\\,dx$.",
+  "hint": "Differentiating $e^{3x}$ gives $3e^{3x}$. What must you multiply $e^{3x}$ by so that its derivative is exactly $e^{3x}$?",
+  "answer": "$\\frac{1}{3}e^{3x} + c$",
+  "solution": "Use $\\int f(ax + b)\\,dx = \\frac{1}{a}F(ax + b) + c$ with $a = 3$:\n$$\\int e^{3x}\\,dx = \\frac{1}{3}e^{3x} + c$$\n\nCheck: $\\frac{d}{dx}\\left(\\frac{1}{3}e^{3x}\\right) = \\frac{1}{3}\\times 3e^{3x} = e^{3x}$ ✓. (Multiplying by 3 instead, $3e^{3x}$, would differentiate to $9e^{3x}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q02",
+  "topicId": "calc-integration-standard",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Find $\\displaystyle\\int e^{-3x}\\,dx$.",
+  "hint": "The coefficient of $x$ is now $-3$. Divide by it.",
+  "answer": "$-\\frac{1}{3}e^{-3x} + c$",
+  "solution": "**What changed:** the coefficient of $x$ became $-3$, so we divide by $-3$:\n$$\\int e^{-3x}\\,dx = -\\frac{1}{3}e^{-3x} + c$$\n\nCheck: $\\frac{d}{dx}\\left(-\\frac{1}{3}e^{-3x}\\right) = -\\frac{1}{3}\\times(-3)e^{-3x} = e^{-3x}$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q03",
+  "topicId": "calc-integration-standard",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Find $\\displaystyle\\int 6e^{-3x}\\,dx$, and hence find the exact value of $\\displaystyle\\int_0^1 6e^{-3x}\\,dx$.",
+  "hint": "A constant multiple stays outside: $6\\times$ your previous answer.",
+  "answer": "$-2e^{-3x} + c$; $2 - 2e^{-3}$",
+  "solution": "**What changed:** a factor of $6$ in front. Constants come straight through:\n$$\\int 6e^{-3x}\\,dx = 6\\times\\left(-\\frac{1}{3}e^{-3x}\\right) + c = -2e^{-3x} + c$$\n\nDefinite integral:\n$$\\int_0^1 6e^{-3x}\\,dx = \\Big[-2e^{-3x}\\Big]_0^1 = -2e^{-3} - \\left(-2e^{0}\\right) = 2 - 2e^{-3} \\approx 1.90$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q04",
+  "topicId": "calc-integration-standard",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Find $\\displaystyle\\int \\left(\\cos x - 4\\sin x + \\sec^2 x + \\frac{2}{x}\\right)dx$.",
+  "hint": "Which functions differentiate to $\\cos x$, $\\sin x$, $\\sec^2 x$ and $\\frac{1}{x}$? Be careful with the sign for $\\sin x$.",
+  "answer": "$\\sin x + 4\\cos x + \\tan x + 2\\ln|x| + c$",
+  "solution": "Integrate term by term:\n\n$\\int \\cos x\\,dx = \\sin x$\n\n$\\int -4\\sin x\\,dx = -4(-\\cos x) = 4\\cos x$ (since $\\frac{d}{dx}\\cos x = -\\sin x$)\n\n$\\int \\sec^2 x\\,dx = \\tan x$\n\n$\\int \\frac{2}{x}\\,dx = 2\\ln|x|$\n\n$$\\int \\left(\\cos x - 4\\sin x + \\sec^2 x + \\frac{2}{x}\\right)dx = \\sin x + 4\\cos x + \\tan x + 2\\ln|x| + c$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q05",
+  "topicId": "calc-integration-standard",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Find $\\displaystyle\\int \\left(\\frac{3}{2x - 1} + \\sec^2 4x - \\sin\\frac{x}{2}\\right)dx$.",
+  "hint": "Each term is $f(ax + b)$. Divide by $a$: here $a = 2$, $4$ and $\\frac{1}{2}$.",
+  "answer": "$\\frac{3}{2}\\ln|2x - 1| + \\frac{1}{4}\\tan 4x + 2\\cos\\frac{x}{2} + c$",
+  "solution": "Divide by the coefficient of $x$ in each term:\n$$\\int \\frac{3}{2x - 1}\\,dx = 3\\times\\frac{1}{2}\\ln|2x - 1| = \\frac{3}{2}\\ln|2x - 1|$$\n\n$$\\int \\sec^2 4x\\,dx = \\frac{1}{4}\\tan 4x$$\n\n$$\\int -\\sin\\frac{x}{2}\\,dx = -\\left(\\frac{1}{\\frac{1}{2}}\\right)\\left(-\\cos\\frac{x}{2}\\right) = 2\\cos\\frac{x}{2}$$\n\n(Dividing by $\\frac{1}{2}$ means multiplying by 2.) So the answer is\n$$\\frac{3}{2}\\ln|2x - 1| + \\frac{1}{4}\\tan 4x + 2\\cos\\frac{x}{2} + c$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q06",
+  "topicId": "calc-integration-standard",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Hannah is asked to find the area under the curve $y = \\sin x$ between $x = 0$ and $x = \\frac{\\pi}{3}$. Her working is shown below.\n\n$\\displaystyle\\int_0^{\\frac{\\pi}{3}}\\sin x\\,dx = \\Big[\\cos x\\Big]_0^{\\frac{\\pi}{3}} = \\cos\\frac{\\pi}{3} - \\cos 0 = \\frac{1}{2} - 1 = -\\frac{1}{2}$\n\n\"The area is negative, so the curve must be below the axis.\"\n\n(a) Find and explain Hannah's mistake.\n(b) Find the correct area.",
+  "hint": "Differentiate Hannah's $\\cos x$. Do you get $\\sin x$?",
+  "answer": "(a) $\\int \\sin x\\,dx = -\\cos x + c$, not $\\cos x$; she has the sign wrong. (b) $\\frac{1}{2}$",
+  "solution": "**(a)** The error is $\\int \\sin x\\,dx = \\cos x$. Since $\\frac{d}{dx}(\\cos x) = -\\sin x$, the correct antiderivative is $-\\cos x$. The negative answer should have been a warning: $\\sin x > 0$ for $0 < x \\le \\frac{\\pi}{3}$, so the curve is above the axis and the area must be positive.\n\n**(b)**\n$$\\int_0^{\\frac{\\pi}{3}}\\sin x\\,dx = \\Big[-\\cos x\\Big]_0^{\\frac{\\pi}{3}} = -\\frac{1}{2} - (-1) = \\frac{1}{2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q07",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Liam is asked to find the exact value of $\\displaystyle\\int_1^2 \\frac{1}{x^2}\\,dx$. His working is shown below.\n\n\"The integral of 1 over something is ln of that something.\"\n\n$\\displaystyle\\int_1^2 \\frac{1}{x^2}\\,dx = \\Big[\\ln\\left(x^2\\right)\\Big]_1^2 = \\ln 4 - \\ln 1 = \\ln 4$\n\n(a) Explain the error in Liam's method. Show by differentiation that his antiderivative is wrong.\n(b) Find the correct value.",
+  "hint": "Differentiate $\\ln\\left(x^2\\right)$ using the chain rule. Then rewrite $\\frac{1}{x^2}$ as a power of $x$.",
+  "answer": "(a) $\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)|$ needs the numerator to be the derivative of the denominator; $\\frac{d}{dx}\\ln\\left(x^2\\right) = \\frac{2}{x}$, not $\\frac{1}{x^2}$. (b) $\\frac{1}{2}$",
+  "solution": "**(a)** The rule \"1 over something gives ln\" only works when the numerator is the derivative of the denominator: $\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)| + c$. Here the derivative of $x^2$ is $2x$, which is not the numerator.\n\nCheck: $\\frac{d}{dx}\\ln\\left(x^2\\right) = \\frac{2x}{x^2} = \\frac{2}{x} \\ne \\frac{1}{x^2}$.\n\n**(b)** $\\frac{1}{x^2} = x^{-2}$ is a power of $x$, so use the power rule:\n$$\\int_1^2 x^{-2}\\,dx = \\left[-x^{-1}\\right]_1^2 = \\left(-\\frac{1}{2}\\right) - (-1) = \\frac{1}{2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q08",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-trig-compound-angles"
+  ],
+  "question": "Chloe is asked to find $\\displaystyle\\int_0^{\\pi}\\sin^2 x\\,dx$. Her working is shown below.\n\n$\\displaystyle\\int_0^{\\pi}\\sin^2 x\\,dx = \\left[\\frac{\\sin^3 x}{3}\\right]_0^{\\pi} = \\frac{0}{3} - \\frac{0}{3} = 0$\n\n(a) Explain why Chloe's answer cannot be right, without doing any integration.\n(b) Explain the error in her method.\n(c) Find the correct value.",
+  "hint": "Can $\\sin^2 x$ ever be negative? For (c), use $\\cos 2x = 1 - 2\\sin^2 x$.",
+  "answer": "(a) $\\sin^2 x \\ge 0$ and is positive on $(0, \\pi)$, so the integral must be positive. (b) The power rule only applies to powers of $x$; $\\frac{d}{dx}\\left(\\frac{\\sin^3 x}{3}\\right) = \\sin^2 x\\cos x$. (c) $\\frac{\\pi}{2}$",
+  "solution": "**(a)** $\\sin^2 x \\ge 0$ for all $x$, and it is positive on $(0, \\pi)$, so the area under it is positive. An answer of $0$ is impossible.\n\n**(b)** Chloe treated $\\sin^2 x$ like $x^2$ and used the power rule. But the power rule $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}$ is for powers of $x$ itself. By the chain rule,\n$$\\frac{d}{dx}\\left(\\frac{\\sin^3 x}{3}\\right) = \\sin^2 x\\cos x$$\nwhich is not $\\sin^2 x$: there is an extra factor $\\cos x$.\n\n**(c)** Use the identity $\\sin^2 x = \\frac{1}{2}(1 - \\cos 2x)$:\n$$\\int_0^{\\pi}\\frac{1}{2}(1 - \\cos 2x)\\,dx = \\frac{1}{2}\\left[x - \\frac{1}{2}\\sin 2x\\right]_0^{\\pi} = \\frac{1}{2}(\\pi - 0) - 0 = \\frac{\\pi}{2}$$"
+ },
+ {
+  "id": "calc-integration-standard-q09",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Find\n(a) $\\displaystyle\\int \\frac{3x^2}{x^3 + 1}\\,dx$\n(b) $\\displaystyle\\int \\frac{x}{x^2 + 4}\\,dx$\n(c) $\\displaystyle\\int \\frac{e^x}{e^x + 3}\\,dx$\n(d) $\\displaystyle\\int \\tan x\\,dx$",
+  "hint": "Look for $\\frac{f'(x)}{f(x)}$. If the numerator is only a constant multiple of $f'(x)$, adjust the constant. For (d), write $\\tan x = \\frac{\\sin x}{\\cos x}$.",
+  "answer": "(a) $\\ln\\left|x^3 + 1\\right| + c$ (b) $\\frac{1}{2}\\ln\\left(x^2 + 4\\right) + c$ (c) $\\ln\\left(e^x + 3\\right) + c$ (d) $-\\ln|\\cos x| + c = \\ln|\\sec x| + c$",
+  "solution": "Each is of the form $\\int \\frac{f'(x)}{f(x)}\\,dx = \\ln|f(x)| + c$ (possibly after adjusting a constant).\n\n**(a)** $\\frac{d}{dx}\\left(x^3 + 1\\right) = 3x^2$, exactly the numerator: $\\ln\\left|x^3 + 1\\right| + c$.\n\n**(b)** $\\frac{d}{dx}\\left(x^2 + 4\\right) = 2x$; the numerator is $x = \\frac{1}{2}(2x)$:\n$$\\int \\frac{x}{x^2 + 4}\\,dx = \\frac{1}{2}\\int \\frac{2x}{x^2 + 4}\\,dx = \\frac{1}{2}\\ln\\left(x^2 + 4\\right) + c$$\n(no modulus needed, since $x^2 + 4 > 0$).\n\n**(c)** $\\frac{d}{dx}\\left(e^x + 3\\right) = e^x$: $\\ln\\left(e^x + 3\\right) + c$.\n\n**(d)** $\\tan x = \\frac{\\sin x}{\\cos x}$ and $\\frac{d}{dx}(\\cos x) = -\\sin x$, so\n$$\\int \\tan x\\,dx = -\\int \\frac{-\\sin x}{\\cos x}\\,dx = -\\ln|\\cos x| + c = \\ln|\\sec x| + c$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q10",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Two students find $\\displaystyle\\int \\frac{1}{2x}\\,dx$ for $x > 0$.\n\nSam writes: $\\displaystyle\\int \\frac{1}{2x}\\,dx = \\frac{1}{2}\\ln(2x) + c$, using the rule for $f(ax + b)$.\n\nPriya writes: $\\displaystyle\\int \\frac{1}{2x}\\,dx = \\frac{1}{2}\\int \\frac{1}{x}\\,dx = \\frac{1}{2}\\ln x + c$.\n\nSam says Priya must be wrong because their answers are different. Who is correct? Justify your answer fully.",
+  "hint": "Differentiate both answers. Then use a law of logarithms on $\\ln(2x)$.",
+  "answer": "Both are correct: $\\frac{1}{2}\\ln(2x) = \\frac{1}{2}\\ln x + \\frac{1}{2}\\ln 2$, so the answers differ only by a constant, which is absorbed into $c$.",
+  "solution": "Differentiate each answer:\n$$\\frac{d}{dx}\\left(\\frac{1}{2}\\ln(2x)\\right) = \\frac{1}{2}\\cdot\\frac{2}{2x} = \\frac{1}{2x}, \\qquad \\frac{d}{dx}\\left(\\frac{1}{2}\\ln x\\right) = \\frac{1}{2x}$$\n\nBoth have derivative $\\frac{1}{2x}$, so both are antiderivatives.\n\nThey look different because, by the laws of logarithms,\n$$\\frac{1}{2}\\ln(2x) = \\frac{1}{2}\\left(\\ln 2 + \\ln x\\right) = \\frac{1}{2}\\ln x + \\frac{1}{2}\\ln 2$$\n\nSo Sam's answer is Priya's answer plus the constant $\\frac{1}{2}\\ln 2$. Antiderivatives are only defined up to an arbitrary constant, so both families are the same: Sam's $c$ equals Priya's $c$ minus $\\frac{1}{2}\\ln 2$. Sam is wrong to say Priya is wrong. (Note that both students correctly **divided** by 2; neither multiplied.)"
+ },
+ {
+  "id": "calc-integration-standard-q11",
+  "topicId": "calc-integration-standard",
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "calc-improper-integrals"
+  ],
+  "question": "Ali writes:\n$$\\int_{-1}^{2}\\frac{1}{x}\\,dx = \\Big[\\ln|x|\\Big]_{-1}^{2} = \\ln 2 - \\ln 1 = \\ln 2$$\n\nExplain why Ali's working is invalid, and say what can be concluded about this integral.",
+  "hint": "What happens to $\\frac{1}{x}$ at a point inside the interval $[-1, 2]$? What does the Fundamental Theorem of Calculus require of the integrand?",
+  "answer": "$\\frac{1}{x}$ is undefined at $x = 0$, which lies in $[-1, 2]$; it is not continuous there, so $F(b) - F(a)$ cannot be used. The integral is improper, and it diverges (the area near $x = 0$ is infinite), so it has no value.",
+  "solution": "Evaluating $\\int_a^b f(x)\\,dx = F(b) - F(a)$ requires $f$ to be continuous on the whole of $[a, b]$. Here $f(x) = \\frac{1}{x}$ is undefined at $x = 0$, which lies inside $[-1, 2]$, and $|f(x)| \\to \\infty$ as $x \\to 0$. So Ali cannot simply substitute the limits; $\\ln|x|$ is not an antiderivative on an interval containing $0$.\n\nThe integral is improper. Look at one piece, for example:\n$$\\int_{t}^{2}\\frac{1}{x}\\,dx = \\ln 2 - \\ln t \\to \\infty \\quad \\text{as } t \\to 0^{+}$$\n\nThe area between the curve and the axis just to the right of $x = 0$ is infinite (and just to the left it is infinite below the axis). So the integral diverges: it does not have a value, and certainly not $\\ln 2$.\n\n(Ali's method is fine when the interval avoids $0$, e.g. $\\int_{-3}^{-1}\\frac{1}{x}\\,dx = \\ln 1 - \\ln 3 = -\\ln 3$.)"
+ },
+ {
+  "id": "calc-integration-standard-q12",
+  "topicId": "calc-integration-standard",
+  "difficulty": 4,
+  "type": "exam-style",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "question": "In this question you must show all stages of your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\int\\left(4e^{2x} - \\frac{3}{x} + 6\\cos 3x\\right)dx$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact value of $\\displaystyle\\int_1^3\\left(2 + \\frac{4}{2x - 1}\\right)dx$, giving your answer in the form $a + \\ln b$, where $a$ and $b$ are integers.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "(i) Show that $8\\sin^2 x\\cos^2 x \\equiv 1 - \\cos 4x$.\n(ii) Hence find the exact value of $\\displaystyle\\int_0^{\\frac{\\pi}{8}} 8\\sin^2 x\\cos^2 x\\,dx$.",
+    "marks": 4
+   }
+  ],
+  "marks": 10,
+  "calculator": false,
+  "hint": "(b) $\\int \\frac{4}{2x - 1}\\,dx = 2\\ln|2x - 1|$. (c) $2\\sin x\\cos x = \\sin 2x$, then use $\\cos 2A = 1 - 2\\sin^2 A$ with $A = 2x$.",
+  "answer": "(a) $2e^{2x} - 3\\ln|x| + 2\\sin 3x + c$ (b) $4 + \\ln 25$ (c)(i) Shown (ii) $\\frac{\\pi}{8} - \\frac{1}{4}$",
+  "solution": "**(a)**\n$$\\int\\left(4e^{2x} - \\frac{3}{x} + 6\\cos 3x\\right)dx = 2e^{2x} - 3\\ln|x| + 2\\sin 3x + c$$\n\n**M1** for $ke^{2x}$ or $k\\sin 3x$ from dividing by the coefficient of $x$; **A1** for two terms correct; **A1** for all correct including $+ c$.\n\n**(b)**\n$$\\int_1^3\\left(2 + \\frac{4}{2x - 1}\\right)dx = \\Big[2x + 2\\ln|2x - 1|\\Big]_1^3$$ **M1** ($k\\ln|2x - 1|$) **A1** (correct)\n$$= (6 + 2\\ln 5) - (2 + 2\\ln 1) = 4 + 2\\ln 5 = 4 + \\ln 25$$ **A1**\n\n**(c)(i)**\n$$8\\sin^2 x\\cos^2 x = 2\\left(2\\sin x\\cos x\\right)^2 = 2\\sin^2 2x$$ **M1** (uses $\\sin 2x = 2\\sin x\\cos x$)\n\nUsing $\\cos 4x = 1 - 2\\sin^2 2x$, $2\\sin^2 2x = 1 - \\cos 4x$. **A1** (cso)\n\n**(ii)**\n$$\\int_0^{\\frac{\\pi}{8}}\\left(1 - \\cos 4x\\right)dx = \\left[x - \\frac{1}{4}\\sin 4x\\right]_0^{\\frac{\\pi}{8}}$$ **M1**\n$$= \\frac{\\pi}{8} - \\frac{1}{4}\\sin\\frac{\\pi}{2} - 0 = \\frac{\\pi}{8} - \\frac{1}{4}$$ **A1**"
+ },
+ {
+  "id": "calc-integration-standard-q13",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Find the exact value of the positive constant $k$ in each case.\n\n(a) $\\displaystyle\\int_0^{k} e^{2x}\\,dx = 12$\n(b) $\\displaystyle\\int_0^{k}\\cos 2x\\,dx = \\frac{1}{4}$, where $0 < k < \\frac{\\pi}{4}$\n(c) $\\displaystyle\\int_1^{k}\\frac{3}{3x - 2}\\,dx = \\ln 7$, where $k > 1$",
+  "hint": "Integrate first, so that each equation involves $k$ only. Then solve using logarithms or inverse trig.",
+  "answer": "(a) $k = \\ln 5$ (b) $k = \\frac{\\pi}{12}$ (c) $k = 3$",
+  "solution": "**(a)**\n$$\\int_0^{k} e^{2x}\\,dx = \\left[\\frac{1}{2}e^{2x}\\right]_0^{k} = \\frac{1}{2}\\left(e^{2k} - 1\\right) = 12$$\nSo $e^{2k} = 25$, $2k = \\ln 25$, $k = \\frac{1}{2}\\ln 25 = \\ln 5$.\n\n**(b)**\n$$\\int_0^{k}\\cos 2x\\,dx = \\left[\\frac{1}{2}\\sin 2x\\right]_0^{k} = \\frac{1}{2}\\sin 2k = \\frac{1}{4}$$\nSo $\\sin 2k = \\frac{1}{2}$. With $0 < 2k < \\frac{\\pi}{2}$, $2k = \\frac{\\pi}{6}$, so $k = \\frac{\\pi}{12}$.\n\n**(c)** The numerator $3$ is the derivative of $3x - 2$:\n$$\\int_1^{k}\\frac{3}{3x - 2}\\,dx = \\Big[\\ln|3x - 2|\\Big]_1^{k} = \\ln(3k - 2) - \\ln 1 = \\ln(3k - 2)$$\nSo $\\ln(3k - 2) = \\ln 7$, giving $3k - 2 = 7$ and $k = 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-standard-q14",
+  "topicId": "calc-integration-standard",
+  "difficulty": 4,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "pure-exponential-modelling"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "After a tablet is swallowed, a drug is absorbed into the bloodstream at a rate modelled by\n$$R(t) = 40e^{-0.5t} \\text{ mg per hour}$$\nwhere $t$ is the time in hours after the tablet is taken.\n\n(a) Find the exact amount of the drug absorbed in the first 4 hours, and give it to 3 significant figures.\n(b) Show that, according to the model, the total amount absorbed can never exceed 80 mg.\n(c) Find how long it takes for 60 mg to be absorbed. Give your answer in hours and minutes, to the nearest minute.",
+  "hint": "Amount absorbed from $0$ to $T$ is $\\int_0^T 40e^{-0.5t}\\,dt$. Dividing by $-0.5$ is the same as multiplying by $-2$.",
+  "answer": "(a) $80\\left(1 - e^{-2}\\right) \\approx 69.2$ mg (b) Amount by time $T$ is $80\\left(1 - e^{-0.5T}\\right) < 80$ (c) $4\\ln 2 \\approx 2.77$ hours, i.e. 2 hours 46 minutes",
+  "solution": "Amount absorbed by time $T$:\n$$A(T) = \\int_0^T 40e^{-0.5t}\\,dt = \\left[\\frac{40}{-0.5}e^{-0.5t}\\right]_0^T = \\Big[-80e^{-0.5t}\\Big]_0^T = 80\\left(1 - e^{-0.5T}\\right)$$\n\n**(a)** $A(4) = 80\\left(1 - e^{-2}\\right) = 69.17\\ldots \\approx 69.2$ mg.\n\n**(b)** $e^{-0.5T} > 0$ for all $T$, so $A(T) = 80 - 80e^{-0.5T} < 80$. (As $T \\to \\infty$, $A(T) \\to 80$, so 80 mg is the limit: the whole dose.)\n\n**(c)** $80\\left(1 - e^{-0.5T}\\right) = 60 \\implies e^{-0.5T} = \\frac{1}{4} \\implies -0.5T = \\ln\\frac{1}{4} = -\\ln 4$\n$$T = 2\\ln 4 = 4\\ln 2 \\approx 2.773 \\text{ hours}$$\n\n$0.773\\times 60 \\approx 46$ minutes, so about 2 hours 46 minutes."
+ },
+ {
+  "id": "calc-integration-standard-q15",
+  "topicId": "calc-integration-standard",
+  "difficulty": 3,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "calc-definite-integrals-area"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The depth of water in a harbour is modelled by\n$$d(t) = 5 + 2\\cos\\left(\\frac{\\pi t}{6}\\right) \\text{ metres}$$\nwhere $t$ is the time in hours after high tide.\n\n(a) Find the exact mean depth of water during the first 4 hours after high tide, and give it to 3 significant figures.\n(b) Find the mean depth over a complete 12-hour tidal cycle, and explain the answer using the shape of the graph.",
+  "hint": "Mean value $= \\frac{1}{b - a}\\int_a^b d(t)\\,dt$. Remember to divide by $\\frac{\\pi}{6}$ when integrating $\\cos\\left(\\frac{\\pi t}{6}\\right)$.",
+  "answer": "(a) $5 + \\frac{3\\sqrt{3}}{2\\pi} \\approx 5.83$ m (b) $5$ m: over a full period the cosine term integrates to zero.",
+  "solution": "$$\\int 2\\cos\\left(\\frac{\\pi t}{6}\\right)dt = 2\\times\\frac{6}{\\pi}\\sin\\left(\\frac{\\pi t}{6}\\right) = \\frac{12}{\\pi}\\sin\\left(\\frac{\\pi t}{6}\\right)$$\n\n**(a)**\n$$\\int_0^4 d(t)\\,dt = \\left[5t + \\frac{12}{\\pi}\\sin\\left(\\frac{\\pi t}{6}\\right)\\right]_0^4 = 20 + \\frac{12}{\\pi}\\sin\\frac{2\\pi}{3} = 20 + \\frac{12}{\\pi}\\cdot\\frac{\\sqrt{3}}{2} = 20 + \\frac{6\\sqrt{3}}{\\pi}$$\n\nMean depth $= \\frac{1}{4}\\left(20 + \\frac{6\\sqrt{3}}{\\pi}\\right) = 5 + \\frac{3\\sqrt{3}}{2\\pi} \\approx 5.83$ m.\n\n**(b)**\n$$\\frac{1}{12}\\int_0^{12} d(t)\\,dt = \\frac{1}{12}\\left[5t + \\frac{12}{\\pi}\\sin\\left(\\frac{\\pi t}{6}\\right)\\right]_0^{12} = \\frac{1}{12}\\left(60 + \\frac{12}{\\pi}\\sin 2\\pi\\right) = 5 \\text{ m}$$\n\nOver one full period the cosine wave is above its centre line for as long as it is below, by symmetric amounts, so the $2\\cos$ term contributes zero net area. The mean is the centre line, $5$ m. In the first 4 hours the depth is mostly above 5 m (the tide has only just started going out), so that mean is higher."
+ },
+ {
+  "id": "calc-integration-standard-q16",
+  "topicId": "calc-integration-standard",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles"
+  ],
+  "question": "(a) Show that $1 + \\cos x \\equiv 2\\cos^2\\left(\\frac{x}{2}\\right)$.\n(b) Hence find $\\displaystyle\\int \\frac{1}{1 + \\cos x}\\,dx$.\n(c) Find the exact value of $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\frac{1 - \\cos x}{1 + \\cos x}\\,dx$.",
+  "hint": "(a) Use $\\cos 2A = 2\\cos^2 A - 1$ with $A = \\frac{x}{2}$. (b) $\\frac{1}{\\cos^2\\theta} = \\sec^2\\theta$. (c) Write $1 - \\cos x = 2 - (1 + \\cos x)$.",
+  "answer": "(a) Shown (b) $\\tan\\left(\\frac{x}{2}\\right) + c$ (c) $2 - \\frac{\\pi}{2}$",
+  "solution": "**(a)** With $A = \\frac{x}{2}$ in $\\cos 2A = 2\\cos^2 A - 1$:\n$$\\cos x = 2\\cos^2\\left(\\frac{x}{2}\\right) - 1 \\implies 1 + \\cos x = 2\\cos^2\\left(\\frac{x}{2}\\right)$$\n\n**(b)**\n$$\\int \\frac{1}{1 + \\cos x}\\,dx = \\int \\frac{1}{2}\\sec^2\\left(\\frac{x}{2}\\right)dx = \\frac{1}{2}\\cdot\\frac{1}{\\frac{1}{2}}\\tan\\left(\\frac{x}{2}\\right) + c = \\tan\\left(\\frac{x}{2}\\right) + c$$\n\n(Divide by the coefficient $\\frac{1}{2}$, i.e. multiply by 2. Check: $\\frac{d}{dx}\\tan\\frac{x}{2} = \\frac{1}{2}\\sec^2\\frac{x}{2} = \\frac{1}{1 + \\cos x}$ ✓.)\n\n**(c)** $\\frac{1 - \\cos x}{1 + \\cos x} = \\frac{2 - (1 + \\cos x)}{1 + \\cos x} = \\frac{2}{1 + \\cos x} - 1$, so\n$$\\int_0^{\\frac{\\pi}{2}}\\left(\\frac{2}{1 + \\cos x} - 1\\right)dx = \\left[2\\tan\\left(\\frac{x}{2}\\right) - x\\right]_0^{\\frac{\\pi}{2}} = 2\\tan\\frac{\\pi}{4} - \\frac{\\pi}{2} - 0 = 2 - \\frac{\\pi}{2}$$"
+ },
+ {
+  "id": "calc-integration-standard-q17",
+  "topicId": "calc-integration-standard",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 230\" width=\"320\" height=\"230\"><path d=\"M105.9,60 L107.1,58.8 L108.4,57.7 L109.6,56.6 L110.9,55.5 L112.2,54.5 L113.4,53.5 L114.7,52.5 L116,51.6 L117.2,50.7 L118.5,49.9 L119.8,49.1 L121,48.3 L122.3,47.6 L123.5,46.9 L124.8,46.3 L126.1,45.6 L127.3,45.1 L128.6,44.6 L129.9,44.1 L131.1,43.6 L132.4,43.3 L133.7,42.9 L134.9,42.6 L136.2,42.3 L137.5,42.1 L138.7,41.9 L140,41.7 L141.2,41.6 L142.5,41.6 L143.8,41.6 L145,41.6 L146.3,41.6 L147.6,41.7 L148.8,41.9 L150.1,42.1 L151.4,42.3 L152.6,42.6 L153.9,42.9 L155.2,43.3 L156.4,43.6 L157.7,44.1 L158.9,44.6 L160.2,45.1 L161.5,45.6 L162.7,46.3 L164,46.9 L165.3,47.6 L166.5,48.3 L167.8,49.1 L169.1,49.9 L170.3,50.7 L171.6,51.6 L172.9,52.5 L174.1,53.5 L175.4,54.5 L176.6,55.5 L177.9,56.6 L179.2,57.7 L180.4,58.8 L181.7,60 L183,61.2 L184.2,62.5 L185.5,63.8 L186.8,65.1 L188,66.5 L189.3,67.9 L190.6,69.3 L191.8,70.8 L193.1,72.3 L194.3,73.8 L195.6,75.4 L196.9,76.9 L198.1,78.6 L199.4,80.2 L200.7,81.9 L201.9,83.6 L203.2,85.4 L204.5,87.1 L205.7,88.9 L207,90.8 L208.3,92.6 L209.5,94.5 L210.8,96.4 L212,98.3 L213.3,100.3 L214.6,102.3 L215.8,104.3 L217.1,106.3 L218.4,108.4 L219.6,110.4 L220.9,112.5 L222.2,114.7 L223.4,116.8 L224.7,118.9 L225.9,121.1 L227.2,123.3 L228.5,125.5 L229.7,127.7 L231,130 L232.3,132.2 L233.5,134.5 L234.8,136.8 L236.1,139.1 L237.3,141.4 L238.6,143.7 L239.9,146 L241.1,148.3 L242.4,150.7 L243.6,153 L244.9,155.4 L246.2,157.8 L247.4,160.2 L248.7,162.5 L250,164.9 L251.2,167.3 L252.5,169.7 L253.8,172.1 L255,174.5 L256.3,176.9 L257.6,179.3 L257.6,179.3 L256.3,178.1 L255,176.9 L253.8,175.7 L252.5,174.5 L251.2,173.3 L250,172.1 L248.7,170.9 L247.4,169.7 L246.2,168.5 L244.9,167.3 L243.6,166.1 L242.4,164.9 L241.1,163.7 L239.9,162.5 L238.6,161.3 L237.3,160.2 L236.1,159 L234.8,157.8 L233.5,156.6 L232.3,155.4 L231,154.2 L229.7,153 L228.5,151.9 L227.2,150.7 L225.9,149.5 L224.7,148.3 L223.4,147.2 L222.2,146 L220.9,144.8 L219.6,143.7 L218.4,142.5 L217.1,141.4 L215.8,140.2 L214.6,139.1 L213.3,137.9 L212,136.8 L210.8,135.6 L209.5,134.5 L208.3,133.3 L207,132.2 L205.7,131.1 L204.5,130 L203.2,128.8 L201.9,127.7 L200.7,126.6 L199.4,125.5 L198.1,124.4 L196.9,123.3 L195.6,122.2 L194.3,121.1 L193.1,120 L191.8,118.9 L190.6,117.9 L189.3,116.8 L188,115.7 L186.8,114.7 L185.5,113.6 L184.2,112.5 L183,111.5 L181.7,110.4 L180.4,109.4 L179.2,108.4 L177.9,107.3 L176.6,106.3 L175.4,105.3 L174.1,104.3 L172.9,103.3 L171.6,102.3 L170.3,101.3 L169.1,100.3 L167.8,99.3 L166.5,98.3 L165.3,97.4 L164,96.4 L162.7,95.5 L161.5,94.5 L160.2,93.6 L158.9,92.6 L157.7,91.7 L156.4,90.8 L155.2,89.9 L153.9,88.9 L152.6,88 L151.4,87.1 L150.1,86.3 L148.8,85.4 L147.6,84.5 L146.3,83.6 L145,82.8 L143.8,81.9 L142.5,81.1 L141.2,80.2 L140,79.4 L138.7,78.6 L137.5,77.8 L136.2,76.9 L134.9,76.1 L133.7,75.4 L132.4,74.6 L131.1,73.8 L129.9,73 L128.6,72.3 L127.3,71.5 L126.1,70.8 L124.8,70 L123.5,69.3 L122.3,68.6 L121,67.9 L119.8,67.2 L118.5,66.5 L117.2,65.8 L116,65.1 L114.7,64.4 L113.4,63.8 L112.2,63.1 L110.9,62.5 L109.6,61.9 L108.4,61.2 L107.1,60.6 L105.9,60 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"30\" y1=\"179.3\" x2=\"304\" y2=\"179.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"200\" x2=\"30\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,179.3 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M30,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"304\" y=\"172.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"37\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"27\" y1=\"41.6\" x2=\"33\" y2=\"41.6\" stroke=\"currentColor\"/><text x=\"24\" y=\"45.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"24\" y=\"193.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"105.9\" y1=\"176.3\" x2=\"105.9\" y2=\"182.3\" stroke=\"currentColor\"/><text x=\"105.9\" y=\"196.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/6</text><line x1=\"143.8\" y1=\"176.3\" x2=\"143.8\" y2=\"182.3\" stroke=\"currentColor\"/><text x=\"143.8\" y=\"196.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/4</text><line x1=\"257.6\" y1=\"176.3\" x2=\"257.6\" y2=\"182.3\" stroke=\"currentColor\"/><text x=\"257.6\" y=\"196.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/2</text><path d=\"M30,179.3 L30.8,177.9 L31.5,176.4 L32.3,175 L33,173.6 L33.8,172.1 L34.6,170.7 L35.3,169.2 L36.1,167.8 L36.8,166.4 L37.6,164.9 L38.3,163.5 L39.1,162.1 L39.9,160.6 L40.6,159.2 L41.4,157.8 L42.1,156.4 L42.9,154.9 L43.7,153.5 L44.4,152.1 L45.2,150.7 L45.9,149.3 L46.7,147.9 L47.4,146.5 L48.2,145.1 L49,143.7 L49.7,142.3 L50.5,140.9 L51.2,139.5 L52,138.1 L52.8,136.8 L53.5,135.4 L54.3,134 L55,132.7 L55.8,131.3 L56.5,130 L57.3,128.6 L58.1,127.3 L58.8,125.9 L59.6,124.6 L60.3,123.3 L61.1,122 L61.9,120.7 L62.6,119.4 L63.4,118.1 L64.1,116.8 L64.9,115.5 L65.7,114.2 L66.4,113 L67.2,111.7 L67.9,110.4 L68.7,109.2 L69.4,108 L70.2,106.7 L71,105.5 L71.7,104.3 L72.5,103.1 L73.2,101.9 L74,100.7 L74.8,99.5 L75.5,98.3 L76.3,97.2 L77,96 L77.8,94.9 L78.5,93.8 L79.3,92.6 L80.1,91.5 L80.8,90.4 L81.6,89.3 L82.3,88.2 L83.1,87.1 L83.9,86.1 L84.6,85 L85.4,84 L86.1,82.9 L86.9,81.9 L87.6,80.9 L88.4,79.9 L89.2,78.9 L89.9,77.9 L90.7,76.9 L91.4,76 L92.2,75 L93,74.1 L93.7,73.2 L94.5,72.3 L95.2,71.4 L96,70.5 L96.7,69.6 L97.5,68.7 L98.3,67.9 L99,67 L99.8,66.2 L100.5,65.4 L101.3,64.6 L102.1,63.8 L102.8,63 L103.6,62.2 L104.3,61.5 L105.1,60.7 L105.9,60 L106.6,59.3 L107.4,58.6 L108.1,57.9 L108.9,57.2 L109.6,56.6 L110.4,55.9 L111.2,55.3 L111.9,54.7 L112.7,54.1 L113.4,53.5 L114.2,52.9 L115,52.3 L115.7,51.8 L116.5,51.2 L117.2,50.7 L118,50.2 L118.7,49.7 L119.5,49.2 L120.3,48.8 L121,48.3 L121.8,47.9 L122.5,47.4 L123.3,47 L124.1,46.6 L124.8,46.3 L125.6,45.9 L126.3,45.5 L127.1,45.2 L127.8,44.9 L128.6,44.6 L129.4,44.3 L130.1,44 L130.9,43.7 L131.6,43.5 L132.4,43.3 L133.2,43 L133.9,42.8 L134.7,42.6 L135.4,42.5 L136.2,42.3 L137,42.2 L137.7,42 L138.5,41.9 L139.2,41.8 L140,41.7 L140.7,41.7 L141.5,41.6 L142.3,41.6 L143,41.6 L143.8,41.6 L144.5,41.6 L145.3,41.6 L146.1,41.6 L146.8,41.7 L147.6,41.7 L148.3,41.8 L149.1,41.9 L149.8,42 L150.6,42.2 L151.4,42.3 L152.1,42.5 L152.9,42.6 L153.6,42.8 L154.4,43 L155.2,43.3 L155.9,43.5 L156.7,43.7 L157.4,44 L158.2,44.3 L158.9,44.6 L159.7,44.9 L160.5,45.2 L161.2,45.5 L162,45.9 L162.7,46.3 L163.5,46.6 L164.3,47 L165,47.4 L165.8,47.9 L166.5,48.3 L167.3,48.8 L168,49.2 L168.8,49.7 L169.6,50.2 L170.3,50.7 L171.1,51.2 L171.8,51.8 L172.6,52.3 L173.4,52.9 L174.1,53.5 L174.9,54.1 L175.6,54.7 L176.4,55.3 L177.2,55.9 L177.9,56.6 L178.7,57.2 L179.4,57.9 L180.2,58.6 L180.9,59.3 L181.7,60 L182.5,60.7 L183.2,61.5 L184,62.2 L184.7,63 L185.5,63.8 L186.3,64.6 L187,65.4 L187.8,66.2 L188.5,67 L189.3,67.9 L190,68.7 L190.8,69.6 L191.6,70.5 L192.3,71.4 L193.1,72.3 L193.8,73.2 L194.6,74.1 L195.4,75 L196.1,76 L196.9,76.9 L197.6,77.9 L198.4,78.9 L199.1,79.9 L199.9,80.9 L200.7,81.9 L201.4,82.9 L202.2,84 L202.9,85 L203.7,86.1 L204.5,87.1 L205.2,88.2 L206,89.3 L206.7,90.4 L207.5,91.5 L208.3,92.6 L209,93.8 L209.8,94.9 L210.5,96 L211.3,97.2 L212,98.3 L212.8,99.5 L213.6,100.7 L214.3,101.9 L215.1,103.1 L215.8,104.3 L216.6,105.5 L217.4,106.7 L218.1,108 L218.9,109.2 L219.6,110.4 L220.4,111.7 L221.1,113 L221.9,114.2 L222.7,115.5 L223.4,116.8 L224.2,118.1 L224.9,119.4 L225.7,120.7 L226.5,122 L227.2,123.3 L228,124.6 L228.7,125.9 L229.5,127.3 L230.2,128.6 L231,130 L231.8,131.3 L232.5,132.7 L233.3,134 L234,135.4 L234.8,136.8 L235.6,138.1 L236.3,139.5 L237.1,140.9 L237.8,142.3 L238.6,143.7 L239.3,145.1 L240.1,146.5 L240.9,147.9 L241.6,149.3 L242.4,150.7 L243.1,152.1 L243.9,153.5 L244.7,154.9 L245.4,156.4 L246.2,157.8 L246.9,159.2 L247.7,160.6 L248.5,162.1 L249.2,163.5 L250,164.9 L250.7,166.4 L251.5,167.8 L252.2,169.2 L253,170.7 L253.8,172.1 L254.5,173.6 L255.3,175 L256,176.4 L256.8,177.9 L257.6,179.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M30,41.6 L30.8,41.6 L31.5,41.6 L32.3,41.6 L33,41.6 L33.8,41.6 L34.6,41.6 L35.3,41.6 L36.1,41.7 L36.8,41.7 L37.6,41.7 L38.3,41.8 L39.1,41.8 L39.9,41.9 L40.6,41.9 L41.4,42 L42.1,42 L42.9,42.1 L43.7,42.2 L44.4,42.2 L45.2,42.3 L45.9,42.4 L46.7,42.5 L47.4,42.6 L48.2,42.6 L49,42.7 L49.7,42.8 L50.5,42.9 L51.2,43 L52,43.1 L52.8,43.3 L53.5,43.4 L54.3,43.5 L55,43.6 L55.8,43.7 L56.5,43.9 L57.3,44 L58.1,44.1 L58.8,44.3 L59.6,44.4 L60.3,44.6 L61.1,44.7 L61.9,44.9 L62.6,45 L63.4,45.2 L64.1,45.4 L64.9,45.5 L65.7,45.7 L66.4,45.9 L67.2,46.1 L67.9,46.3 L68.7,46.4 L69.4,46.6 L70.2,46.8 L71,47 L71.7,47.2 L72.5,47.4 L73.2,47.6 L74,47.9 L74.8,48.1 L75.5,48.3 L76.3,48.5 L77,48.8 L77.8,49 L78.5,49.2 L79.3,49.5 L80.1,49.7 L80.8,49.9 L81.6,50.2 L82.3,50.4 L83.1,50.7 L83.9,51 L84.6,51.2 L85.4,51.5 L86.1,51.8 L86.9,52 L87.6,52.3 L88.4,52.6 L89.2,52.9 L89.9,53.2 L90.7,53.5 L91.4,53.8 L92.2,54.1 L93,54.4 L93.7,54.7 L94.5,55 L95.2,55.3 L96,55.6 L96.7,55.9 L97.5,56.2 L98.3,56.6 L99,56.9 L99.8,57.2 L100.5,57.6 L101.3,57.9 L102.1,58.3 L102.8,58.6 L103.6,58.9 L104.3,59.3 L105.1,59.7 L105.9,60 L106.6,60.4 L107.4,60.7 L108.1,61.1 L108.9,61.5 L109.6,61.9 L110.4,62.2 L111.2,62.6 L111.9,63 L112.7,63.4 L113.4,63.8 L114.2,64.2 L115,64.6 L115.7,65 L116.5,65.4 L117.2,65.8 L118,66.2 L118.7,66.6 L119.5,67 L120.3,67.4 L121,67.9 L121.8,68.3 L122.5,68.7 L123.3,69.2 L124.1,69.6 L124.8,70 L125.6,70.5 L126.3,70.9 L127.1,71.4 L127.8,71.8 L128.6,72.3 L129.4,72.7 L130.1,73.2 L130.9,73.6 L131.6,74.1 L132.4,74.6 L133.2,75 L133.9,75.5 L134.7,76 L135.4,76.5 L136.2,76.9 L137,77.4 L137.7,77.9 L138.5,78.4 L139.2,78.9 L140,79.4 L140.7,79.9 L141.5,80.4 L142.3,80.9 L143,81.4 L143.8,81.9 L144.5,82.4 L145.3,82.9 L146.1,83.5 L146.8,84 L147.6,84.5 L148.3,85 L149.1,85.5 L149.8,86.1 L150.6,86.6 L151.4,87.1 L152.1,87.7 L152.9,88.2 L153.6,88.8 L154.4,89.3 L155.2,89.9 L155.9,90.4 L156.7,91 L157.4,91.5 L158.2,92.1 L158.9,92.6 L159.7,93.2 L160.5,93.8 L161.2,94.3 L162,94.9 L162.7,95.5 L163.5,96 L164.3,96.6 L165,97.2 L165.8,97.8 L166.5,98.3 L167.3,98.9 L168,99.5 L168.8,100.1 L169.6,100.7 L170.3,101.3 L171.1,101.9 L171.8,102.5 L172.6,103.1 L173.4,103.7 L174.1,104.3 L174.9,104.9 L175.6,105.5 L176.4,106.1 L177.2,106.7 L177.9,107.3 L178.7,108 L179.4,108.6 L180.2,109.2 L180.9,109.8 L181.7,110.4 L182.5,111.1 L183.2,111.7 L184,112.3 L184.7,113 L185.5,113.6 L186.3,114.2 L187,114.9 L187.8,115.5 L188.5,116.1 L189.3,116.8 L190,117.4 L190.8,118.1 L191.6,118.7 L192.3,119.4 L193.1,120 L193.8,120.7 L194.6,121.3 L195.4,122 L196.1,122.6 L196.9,123.3 L197.6,124 L198.4,124.6 L199.1,125.3 L199.9,125.9 L200.7,126.6 L201.4,127.3 L202.2,127.9 L202.9,128.6 L203.7,129.3 L204.5,130 L205.2,130.6 L206,131.3 L206.7,132 L207.5,132.7 L208.3,133.3 L209,134 L209.8,134.7 L210.5,135.4 L211.3,136.1 L212,136.8 L212.8,137.4 L213.6,138.1 L214.3,138.8 L215.1,139.5 L215.8,140.2 L216.6,140.9 L217.4,141.6 L218.1,142.3 L218.9,143 L219.6,143.7 L220.4,144.4 L221.1,145.1 L221.9,145.8 L222.7,146.5 L223.4,147.2 L224.2,147.9 L224.9,148.6 L225.7,149.3 L226.5,150 L227.2,150.7 L228,151.4 L228.7,152.1 L229.5,152.8 L230.2,153.5 L231,154.2 L231.8,154.9 L232.5,155.6 L233.3,156.4 L234,157.1 L234.8,157.8 L235.6,158.5 L236.3,159.2 L237.1,159.9 L237.8,160.6 L238.6,161.3 L239.3,162.1 L240.1,162.8 L240.9,163.5 L241.6,164.2 L242.4,164.9 L243.1,165.6 L243.9,166.4 L244.7,167.1 L245.4,167.8 L246.2,168.5 L246.9,169.2 L247.7,170 L248.5,170.7 L249.2,171.4 L250,172.1 L250.7,172.8 L251.5,173.6 L252.2,174.3 L253,175 L253.8,175.7 L254.5,176.4 L255.3,177.2 L256,177.9 L256.8,178.6 L257.6,179.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"129.8\" y=\"36\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = sin 2x</text><text x=\"51.4\" y=\"67.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = cos x</text><text x=\"174.9\" y=\"85.6\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text></svg>",
+  "linkedTopicIds": [
+   "pure-trig-identities-equations",
+   "calc-definite-integrals-area"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The diagram shows the curves $y = \\sin 2x$ (solid) and $y = \\cos x$ (dashed) for $0 \\le x \\le \\frac{\\pi}{2}$. The shaded region $R$ is bounded by the two curves between two of their points of intersection.\n\n(a) Find the $x$-coordinates of the points where the curves meet for $0 \\le x \\le \\frac{\\pi}{2}$.\n(b) Find the exact area of $R$.",
+  "hint": "Write $\\sin 2x = 2\\sin x\\cos x$ and factorise $2\\sin x\\cos x - \\cos x = 0$. Then integrate (upper curve $-$ lower curve).",
+  "answer": "(a) $x = \\frac{\\pi}{6}$ and $x = \\frac{\\pi}{2}$ (b) $\\frac{1}{4}$",
+  "solution": "**(a)** $\\sin 2x = \\cos x \\implies 2\\sin x\\cos x - \\cos x = 0 \\implies \\cos x\\,(2\\sin x - 1) = 0$.\n\nSo $\\cos x = 0$, giving $x = \\frac{\\pi}{2}$, or $\\sin x = \\frac{1}{2}$, giving $x = \\frac{\\pi}{6}$ (in the interval). (Do not divide by $\\cos x$: that would lose $x = \\frac{\\pi}{2}$.)\n\n**(b)** For $\\frac{\\pi}{6} < x < \\frac{\\pi}{2}$, $\\sin 2x > \\cos x$ (e.g. at $x = \\frac{\\pi}{3}$: $\\frac{\\sqrt{3}}{2} > \\frac{1}{2}$), so\n$$\\text{Area} = \\int_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}}\\left(\\sin 2x - \\cos x\\right)dx = \\left[-\\frac{1}{2}\\cos 2x - \\sin x\\right]_{\\frac{\\pi}{6}}^{\\frac{\\pi}{2}}$$\n\nAt $\\frac{\\pi}{2}$: $-\\frac{1}{2}\\cos\\pi - \\sin\\frac{\\pi}{2} = \\frac{1}{2} - 1 = -\\frac{1}{2}$.\n\nAt $\\frac{\\pi}{6}$: $-\\frac{1}{2}\\cos\\frac{\\pi}{3} - \\sin\\frac{\\pi}{6} = -\\frac{1}{4} - \\frac{1}{2} = -\\frac{3}{4}$.\n\n$$\\text{Area} = -\\frac{1}{2} - \\left(-\\frac{3}{4}\\right) = \\frac{1}{4}$$"
+ },
+ {
+  "id": "calc-integration-standard-q18",
+  "topicId": "calc-integration-standard",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Find the exact value of\n$$\\int_0^{\\ln 3}\\frac{1}{1 + e^x}\\,dx$$\ngiving your answer in the form $\\ln k$.",
+  "hint": "$\\frac{1}{1 + e^x}$ is not of the form $\\frac{f'(x)}{f(x)}$ as it stands. Either write $\\frac{1}{1 + e^x} = 1 - \\frac{e^x}{1 + e^x}$, or multiply top and bottom by $e^{-x}$.",
+  "answer": "$\\ln\\frac{3}{2}$",
+  "solution": "The derivative of $1 + e^x$ is $e^x$, not $1$, so $\\ln\\left(1 + e^x\\right)$ is **not** an antiderivative. Rearrange so that a numerator matches its denominator's derivative:\n$$\\frac{1}{1 + e^x} = \\frac{(1 + e^x) - e^x}{1 + e^x} = 1 - \\frac{e^x}{1 + e^x}$$\n\nNow $\\int \\frac{e^x}{1 + e^x}\\,dx = \\ln\\left(1 + e^x\\right) + c$, so\n$$\\int_0^{\\ln 3}\\frac{1}{1 + e^x}\\,dx = \\Big[x - \\ln\\left(1 + e^x\\right)\\Big]_0^{\\ln 3}$$\n$$= \\left(\\ln 3 - \\ln 4\\right) - \\left(0 - \\ln 2\\right) = \\ln 3 - \\ln 4 + \\ln 2 = \\ln\\frac{3\\times 2}{4} = \\ln\\frac{3}{2}$$\n\n(Alternative: $\\frac{1}{1 + e^x} = \\frac{e^{-x}}{e^{-x} + 1}$, and the numerator is $-1\\times$ the derivative of the denominator, giving $\\Big[-\\ln\\left(1 + e^{-x}\\right)\\Big]_0^{\\ln 3} = -\\ln\\frac{4}{3} + \\ln 2 = \\ln\\frac{3}{2}$.)"
+ }
+]

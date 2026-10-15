@@ -1,0 +1,282 @@
+[
+ {
+  "id": "alg-quadratic-equations-factorising-q01",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve $(x - 4)(x + 7) = 0$.",
+  "hint": "If two numbers multiply to give 0, at least one of them must be 0. Set each bracket equal to 0.",
+  "answer": "$x = 4$ or $x = -7$",
+  "solution": "The product of the two brackets is zero, so one of the brackets must be zero (zero product property).\n\n$$x - 4 = 0 \\;\\Rightarrow\\; x = 4$$\n$$x + 7 = 0 \\;\\Rightarrow\\; x = -7$$\n\nNotice each solution has the **opposite** sign to the number in its bracket.\n\nCheck: $(4 - 4)(4 + 7) = 0 \\times 11 = 0$ ✓ and $(-7 - 4)(-7 + 7) = -11 \\times 0 = 0$ ✓\n\n**Answer:** $x = 4$ or $x = -7$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q02",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 + 7x + 12 = 0$.",
+  "hint": "Find two numbers that multiply to $12$ and add to $7$.",
+  "answer": "$x = -3$ or $x = -4$",
+  "solution": "Two numbers that multiply to $12$ and add to $7$: $3$ and $4$.\n$$x^2 + 7x + 12 = (x + 3)(x + 4) = 0$$\n\nSo $x + 3 = 0$ or $x + 4 = 0$:\n$$x = -3 \\quad \\text{or} \\quad x = -4$$\n\nCheck: $(-3)^2 + 7(-3) + 12 = 9 - 21 + 12 = 0$ ✓\n\n**Answer:** $x = -3$ or $x = -4$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q03",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 - 7x + 12 = 0$.",
+  "hint": "Now you need two numbers that multiply to $+12$ but add to $-7$.",
+  "answer": "$x = 3$ or $x = 4$",
+  "solution": "Two numbers that multiply to $+12$ and add to $-7$: $-3$ and $-4$.\n$$x^2 - 7x + 12 = (x - 3)(x - 4) = 0$$\n\nSo $x - 3 = 0$ or $x - 4 = 0$:\n$$x = 3 \\quad \\text{or} \\quad x = 4$$\n\n**What changed:** only the sign of the $x$ term changed (from $+7x$ to $-7x$). Both solutions changed sign: $-3, -4$ became $3, 4$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q04",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $x^2 - 7x = -12$.",
+  "hint": "The zero product property only works when one side is 0. Rearrange first.",
+  "answer": "$x = 3$ or $x = 4$",
+  "solution": "First make one side zero by adding 12 to both sides:\n$$x^2 - 7x + 12 = 0$$\n\nThis is the same equation as before:\n$$(x - 3)(x - 4) = 0 \\;\\Rightarrow\\; x = 3 \\text{ or } x = 4$$\n\n**What changed:** the $+12$ was moved to the other side. That does not change the solutions, but you must move it back before factorising. Writing $x(x - 7) = -12$ and setting $x = -12$ or $x - 7 = -12$ would be wrong: a product equal to $-12$ tells you nothing about either factor.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q05",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $2x^2 - 14x + 24 = 0$.",
+  "hint": "Every term has a common factor. Take it out first.",
+  "answer": "$x = 3$ or $x = 4$",
+  "solution": "Take out the common factor 2:\n$$2(x^2 - 7x + 12) = 0$$\n\nDivide both sides by 2 (allowed, because $2 \\ne 0$):\n$$x^2 - 7x + 12 = 0 \\;\\Rightarrow\\; (x - 3)(x - 4) = 0$$\n$$x = 3 \\quad \\text{or} \\quad x = 4$$\n\n**What changed:** every coefficient was doubled. Multiplying a whole equation by a non-zero number does not change its solutions.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q06",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $5x^2 = 80$.",
+  "hint": "There is no $x$ term, so get $x^2$ on its own and then square root. How many numbers square to give the result?",
+  "answer": "$x = 4$ or $x = -4$ (i.e. $x = \\pm 4$)",
+  "solution": "Divide both sides by 5:\n$$x^2 = 16$$\n\nSquare root both sides, remembering both signs:\n$$x = \\pm\\sqrt{16} = \\pm 4$$\n\nBoth work: $5 \\times 4^2 = 80$ and $5 \\times (-4)^2 = 5 \\times 16 = 80$.\n\n**Answer:** $x = 4$ or $x = -4$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q07",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A stone is dropped from the top of a cliff that is 80 m above the sea. After $t$ seconds its height above the sea, $h$ metres, is modelled by\n$$h = 80 - 5t^2$$\n(a) Find how long it takes the stone to reach the sea.\n\n(b) Solving the equation in part (a) gives two values of $t$. Explain why only one of them is a sensible answer.",
+  "hint": "The stone reaches the sea when $h = 0$. Solve $80 - 5t^2 = 0$ using square roots.",
+  "answer": "(a) 4 seconds (b) The equation gives $t = \\pm 4$; $t = -4$ would be 4 seconds **before** the stone was dropped, so it is rejected.",
+  "solution": "**(a)** The stone reaches the sea when $h = 0$:\n$$80 - 5t^2 = 0 \\;\\Rightarrow\\; 5t^2 = 80 \\;\\Rightarrow\\; t^2 = 16 \\;\\Rightarrow\\; t = \\pm 4$$\n\nSo the stone reaches the sea after **4 seconds**.\n\n**(b)** Mathematically both $t = 4$ and $t = -4$ satisfy $t^2 = 16$, so you should write both down when solving. But $t$ is the time **after** the stone is dropped, so it cannot be negative here. $t = -4$ does not fit the context and is rejected.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-substitution-formulae"
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q08",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Leo is asked to solve $x^2 = 6x$. His working is shown below.\n\n$$x^2 = 6x$$\n$$\\frac{x^2}{x} = \\frac{6x}{x}$$\n$$x = 6$$\n\nLeo's answer is incomplete. Identify the mistake, explain why it is a problem, and solve the equation correctly.",
+  "hint": "Substitute $x = 0$ into $x^2 = 6x$. What happens? What did Leo do that is not allowed when $x = 0$?",
+  "answer": "Leo divided both sides by $x$, which is not allowed if $x = 0$, so he lost a solution. Correct answer: $x = 0$ or $x = 6$.",
+  "solution": "**The mistake:** the second line, where Leo divides both sides by $x$.\n\n**Why it is a problem:** you cannot divide by zero, so dividing by $x$ is only valid if $x \\ne 0$. By doing it, Leo silently assumed $x \\ne 0$ and threw away the solution $x = 0$. (Check: $0^2 = 0$ and $6 \\times 0 = 0$, so $x = 0$ works.)\n\n**Correct method:** rearrange so one side is zero and factorise:\n$$x^2 - 6x = 0$$\n$$x(x - 6) = 0$$\n$$x = 0 \\quad \\text{or} \\quad x - 6 = 0 \\Rightarrow x = 6$$\n\n**Answer:** $x = 0$ or $x = 6$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q09",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Solve $3x^2 + 5x - 2 = 0$.",
+  "hint": "Work out $ac = 3 \\times (-2)$. Find two numbers with that product that add to $5$, then split the middle term.",
+  "answer": "$x = \\frac{1}{3}$ or $x = -2$",
+  "solution": "$ac = 3 \\times (-2) = -6$. Two numbers with product $-6$ and sum $5$: $6$ and $-1$.\n\nSplit the middle term and factorise in pairs:\n$$3x^2 + 6x - x - 2 = 0$$\n$$3x(x + 2) - 1(x + 2) = 0$$\n$$(3x - 1)(x + 2) = 0$$\n\nSo\n$$3x - 1 = 0 \\Rightarrow x = \\tfrac{1}{3} \\qquad x + 2 = 0 \\Rightarrow x = -2$$\n\nCheck $x = \\frac{1}{3}$: $3 \\times \\frac{1}{9} + \\frac{5}{3} - 2 = \\frac{1}{3} + \\frac{5}{3} - 2 = 0$ ✓\n\n**Answer:** $x = \\frac{1}{3}$ or $x = -2$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q10",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Amara is asked to solve $x(x + 3) = 10$. Her working is shown below.\n\n$$x(x + 3) = 10$$\n$$x = 10 \\quad \\text{or} \\quad x + 3 = 10$$\n$$x = 10 \\quad \\text{or} \\quad x = 7$$\n\nIdentify Amara's mistake, explain why her method does not work, and solve the equation correctly.",
+  "hint": "Check her answers: is $10 \\times 13$ equal to $10$? Which number must be on the right-hand side for this method to work?",
+  "answer": "She used the zero product idea when the product equals 10, not 0. Correct answer: $x = 2$ or $x = -5$.",
+  "solution": "**The mistake:** the second line. Amara set each factor equal to 10.\n\n**Why it doesn't work:** if $p \\times q = 0$ then $p$ or $q$ must be 0, because 0 is the only number that \"absorbs\" multiplication. But two numbers can multiply to 10 in infinitely many ways ($2 \\times 5$, $4 \\times 2.5$, …), so knowing $x(x+3) = 10$ tells you nothing directly about either factor. Her answers fail the check: $10 \\times 13 = 130 \\ne 10$.\n\n**Correct method:** expand and rearrange so one side is zero:\n$$x^2 + 3x = 10$$\n$$x^2 + 3x - 10 = 0$$\n$$(x + 5)(x - 2) = 0$$\n$$x = -5 \\quad \\text{or} \\quad x = 2$$\n\nCheck: $2 \\times 5 = 10$ ✓ and $-5 \\times (-2) = 10$ ✓\n\n**Answer:** $x = 2$ or $x = -5$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q11",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Here are three equations.\n\n**A:** $x^2 = 9$ **B:** $x^2 = -9$ **C:** $(x - 5)^2 = 0$\n\nJack says: \"Every quadratic equation has exactly two solutions, so each of these has two solutions.\"\n\nExplain how many real solutions each equation has, and use your answer to say whether Jack is correct.",
+  "hint": "Think about which numbers square to give 9, to give $-9$, and to give 0.",
+  "answer": "A has two solutions ($x = \\pm 3$); B has no real solutions (a square cannot be negative); C has one (repeated) solution, $x = 5$. Jack is wrong.",
+  "solution": "**A:** $3^2 = 9$ and $(-3)^2 = 9$, so $x = 3$ or $x = -3$: **two** solutions.\n\n**B:** the square of any real number is positive or zero, so $x^2 \\ge 0$ for every real $x$. It can never equal $-9$: **no** real solutions.\n\n**C:** a square equals 0 only when the number being squared is 0, so $x - 5 = 0$ and $x = 5$. There is only **one** solution. (If you factorise, $(x - 5)(x - 5) = 0$ gives $x = 5$ twice: a *repeated* root.)\n\nSo a quadratic equation can have 2, 1 or 0 real solutions. **Jack is not correct**: equations B and C are counter-examples.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q12",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\"><rect x=\"50\" y=\"30\" width=\"200\" height=\"125\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"150\" y=\"98\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Area = 40 m²</text><text x=\"150\" y=\"177\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(x + 3) m</text><text x=\"42\" y=\"97\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x m</text></svg>",
+  "question": "A rectangular vegetable bed is 3 m longer than it is wide. Its area is 40 $\\text{m}^2$. The width is $x$ m.\n\n(a) Show that $x^2 + 3x - 40 = 0$.\n\n(b) Solve the equation to find the length and width of the bed.\n\nThe diagram is not drawn to scale.",
+  "hint": "Area of a rectangle = length × width. Make one side zero before factorising.",
+  "answer": "(a) $x(x + 3) = 40 \\Rightarrow x^2 + 3x - 40 = 0$ (b) width 5 m, length 8 m",
+  "solution": "**(a)** Area = length × width:\n$$x(x + 3) = 40$$\n$$x^2 + 3x = 40$$\n$$x^2 + 3x - 40 = 0$$\n\n**(b)** Two numbers with product $-40$ and sum $3$: $8$ and $-5$.\n$$(x + 8)(x - 5) = 0$$\n$$x = -8 \\quad \\text{or} \\quad x = 5$$\n\nA width cannot be negative, so reject $x = -8$. The width is **5 m** and the length is $5 + 3 =$ **8 m**.\n\nCheck: $5 \\times 8 = 40$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q13",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Factorise $x^2 - 2x - 15$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve $x^2 - 2x - 15 = 0$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Solve $(2x - 1)^2 = 9$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Two numbers that multiply to $-15$ and add to $-2$. (c) Square root both sides first, remembering $\\pm$.",
+  "answer": "(a) $(x - 5)(x + 3)$ (b) $x = 5$ or $x = -3$ (c) $x = 2$ or $x = -1$",
+  "solution": "**(a)** Numbers with product $-15$ and sum $-2$: $-5$ and $3$.\n$$x^2 - 2x - 15 = (x - 5)(x + 3)$$\nM1 for $(x \\pm 5)(x \\pm 3)$; A1 for the correct factorisation.\n\n**(b)** $(x - 5)(x + 3) = 0 \\Rightarrow x = 5$ or $x = -3$. B1 (ft from their factors).\n\n**(c)** Square root both sides, keeping both signs:\n$$2x - 1 = \\pm 3$$\nM1 for $2x - 1 = 3$ **and** $2x - 1 = -3$ (or for expanding to $4x^2 - 4x - 8 = 0$).\n\n$$2x - 1 = 3 \\Rightarrow x = 2 \\qquad 2x - 1 = -3 \\Rightarrow x = -1$$\nA1 for both values. (Giving only $x = 2$ scores M0 A0.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q14",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 210\" width=\"330\" height=\"210\"><path d=\"M70,170 L70,80 L286,170 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M70,158 L82,158 L82,170\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"62\" y=\"130.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x cm</text><text x=\"178.0\" y=\"192\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(x + 7) cm</text><text x=\"192.0\" y=\"115.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">(x + 8) cm</text></svg>",
+  "question": "The diagram shows a right-angled triangle. The lengths of its sides, in centimetres, are $x$, $x + 7$ and $x + 8$. The diagram is not drawn to scale.\n\n(a) Show that $x^2 - 2x - 15 = 0$.\n\n(b) Find the area of the triangle.",
+  "hint": "Use Pythagoras' theorem: the hypotenuse is the longest side. Expand each square carefully: $(x + 7)^2 \\ne x^2 + 49$.",
+  "answer": "(a) $x^2 + (x+7)^2 = (x+8)^2 \\Rightarrow x^2 - 2x - 15 = 0$ (b) 30 $\\text{cm}^2$",
+  "solution": "**(a)** The hypotenuse is the longest side, $x + 8$. By Pythagoras' theorem:\n$$x^2 + (x + 7)^2 = (x + 8)^2$$\n$$x^2 + x^2 + 14x + 49 = x^2 + 16x + 64$$\n$$2x^2 + 14x + 49 - x^2 - 16x - 64 = 0$$\n$$x^2 - 2x - 15 = 0$$\n\n**(b)** Factorise:\n$$(x - 5)(x + 3) = 0 \\;\\Rightarrow\\; x = 5 \\text{ or } x = -3$$\n\nA length must be positive, so $x = 5$. The sides are 5 cm, 12 cm and 13 cm (check: $25 + 144 = 169 = 13^2$ ✓).\n\nThe two shorter sides are perpendicular, so\n$$\\text{Area} = \\tfrac{1}{2} \\times 5 \\times 12 = 30 \\text{ cm}^2$$",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q15",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The $n$th term of a sequence is $n^2 + 3n$.\n\n(a) Show that 108 is a term of the sequence and find its position.\n\n(b) Kai says that 60 is also a term of the sequence. Show that Kai is wrong.",
+  "hint": "Set $n^2 + 3n$ equal to the number and solve. Remember $n$ must be a positive whole number.",
+  "answer": "(a) 108 is the 9th term. (b) $n^2 + 3n = 60$ has no positive whole-number solution (the 6th term is 54 and the 7th term is 70), so 60 is not a term.",
+  "solution": "**(a)** Solve $n^2 + 3n = 108$. Rearrange so one side is zero:\n$$n^2 + 3n - 108 = 0$$\n\nNumbers with product $-108$ and sum $3$: $12$ and $-9$.\n$$(n + 12)(n - 9) = 0 \\;\\Rightarrow\\; n = -12 \\text{ or } n = 9$$\n\n$n$ is a position, so it must be a positive integer: $n = 9$. Check: $81 + 27 = 108$ ✓. So 108 is the **9th term**.\n\n**(b)** If 60 were a term, $n^2 + 3n - 60 = 0$ would have a positive whole-number solution, i.e. $n(n + 3) = 60$ with $n$ a positive integer. The terms increase as $n$ increases:\n$$6^2 + 3(6) = 54 \\qquad 7^2 + 3(7) = 70$$\n\n60 lies strictly between the 6th and 7th terms, and there is no whole number between 6 and 7, so 60 is **not** a term. (Equivalently, no pair of factors of $-60$ adds to 3, so the quadratic does not factorise over the integers.)",
+  "linkedTopicIds": [
+   "alg-sequences-quadratic-geometric"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q16",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The product of two consecutive odd numbers is 143.\n\nFind all possible pairs of numbers.",
+  "hint": "If the smaller number is $n$, the next odd number is $n + 2$. Write an equation and solve it. Check whether negative numbers can work too.",
+  "answer": "11 and 13, or $-13$ and $-11$",
+  "solution": "Let the smaller odd number be $n$; the next odd number is $n + 2$.\n$$n(n + 2) = 143$$\n$$n^2 + 2n - 143 = 0$$\n\nNumbers with product $-143$ and sum $2$: $143 = 11 \\times 13$, so use $13$ and $-11$.\n$$(n + 13)(n - 11) = 0 \\;\\Rightarrow\\; n = -13 \\text{ or } n = 11$$\n\n- $n = 11$: the numbers are **11 and 13**. Check: $11 \\times 13 = 143$ ✓\n- $n = -13$: the numbers are **$-13$ and $-11$**. Check: $(-13)(-11) = 143$ ✓\n\nBoth are pairs of consecutive odd numbers, so there are two possible pairs. (Setting $n = 143$ or $n + 2 = 143$ would be wrong: the product is 143, not 0.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q17",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The equation $x^2 + bx + 36 = 0$, where $b$ is an integer, has two **different** solutions, both of which are **positive integers**.\n\nFind all the possible values of $b$.",
+  "hint": "If the solutions are $p$ and $q$, the equation can be written $(x - p)(x - q) = 0$. Expand this and compare with $x^2 + bx + 36$.",
+  "answer": "$b = -37, -20, -15$ or $-13$",
+  "solution": "If the solutions are the positive integers $p$ and $q$, the quadratic factorises as\n$$(x - p)(x - q) = x^2 - (p + q)x + pq$$\n\nComparing with $x^2 + bx + 36$:\n$$pq = 36 \\qquad b = -(p + q)$$\n\nPairs of different positive integers with product 36 (taking $p < q$):\n\n| $p$ | $q$ | $p + q$ | $b$ |\n|---|---|---|---|\n| 1 | 36 | 37 | $-37$ |\n| 2 | 18 | 20 | $-20$ |\n| 3 | 12 | 15 | $-15$ |\n| 4 | 9 | 13 | $-13$ |\n\n$6 \\times 6 = 36$ is excluded because the solutions must be different.\n\nCheck one: $b = -13$ gives $x^2 - 13x + 36 = (x - 4)(x - 9) = 0$, so $x = 4$ or $x = 9$ ✓\n\n**Answer:** $b = -37$, $-20$, $-15$ or $-13$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ]
+ },
+ {
+  "id": "alg-quadratic-equations-factorising-q18",
+  "topicId": "alg-quadratic-equations-factorising",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find all the real solutions of\n$$(x^2 - 3x)^2 - 2(x^2 - 3x) - 8 = 0$$",
+  "hint": "Let $u = x^2 - 3x$. The equation becomes a quadratic in $u$. Solve that first, then solve for $x$.",
+  "answer": "$x = -1, 1, 2$ or $4$",
+  "solution": "Let $u = x^2 - 3x$. The equation becomes\n$$u^2 - 2u - 8 = 0$$\n$$(u - 4)(u + 2) = 0 \\;\\Rightarrow\\; u = 4 \\text{ or } u = -2$$\n\n**Case $u = 4$:**\n$$x^2 - 3x = 4 \\Rightarrow x^2 - 3x - 4 = 0 \\Rightarrow (x - 4)(x + 1) = 0 \\Rightarrow x = 4 \\text{ or } x = -1$$\n\n**Case $u = -2$:**\n$$x^2 - 3x = -2 \\Rightarrow x^2 - 3x + 2 = 0 \\Rightarrow (x - 1)(x - 2) = 0 \\Rightarrow x = 1 \\text{ or } x = 2$$\n\nNote that in each case we rearranged to $= 0$ before factorising.\n\nCheck $x = -1$: $x^2 - 3x = 1 + 3 = 4$, and $16 - 8 - 8 = 0$ ✓. Check $x = 2$: $x^2 - 3x = -2$, and $4 + 4 - 8 = 0$ ✓\n\n**Answer:** $x = -1$, $1$, $2$ or $4$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ }
+]
