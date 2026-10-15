@@ -1,0 +1,294 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The table shows a set of data.\n\n| Value, $x$ | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 4 | 7 | 5 | 3 | 1 |\n\nWork out the mean.",
+  "hint": "Add an $fx$ row: multiply each value by its frequency. Then divide the total of $fx$ by the total frequency.",
+  "answer": "Mean $= 1.5$",
+  "solution": "Multiply each value by its frequency:\n$$0 \\times 4 = 0, \\quad 1 \\times 7 = 7, \\quad 2 \\times 5 = 10, \\quad 3 \\times 3 = 9, \\quad 4 \\times 1 = 4$$\n\nTotals:\n$$\\sum fx = 0 + 7 + 10 + 9 + 4 = 30, \\qquad \\sum f = 4 + 7 + 5 + 3 + 1 = 20$$\n\n$$\\text{mean} = \\frac{\\sum fx}{\\sum f} = \\frac{30}{20} = 1.5$$\n\nCheck: the mean lies between the smallest and largest values (0 and 4). Dividing by the 5 columns instead of the 20 values would give $6$, which is impossible.",
+  "id": "stat-averages-frequency-tables-q01",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The table is the same as in the previous question, except that the frequency of the value 4 has changed from 1 to 6.\n\n| Value, $x$ | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 4 | 7 | 5 | 3 | 6 |\n\nWork out the mean.",
+  "hint": "Both totals change: $\\sum fx$ gains five more 4s and $\\sum f$ gains 5.",
+  "answer": "Mean $= 2$",
+  "solution": "**What changed:** five extra values of 4 were added.\n\n$$\\sum fx = 0 + 7 + 10 + 9 + 24 = 50, \\qquad \\sum f = 4 + 7 + 5 + 3 + 6 = 25$$\n\n$$\\text{mean} = \\frac{50}{25} = 2$$\n\n**Effect:** adding several large values pulled the mean up from 1.5 to 2.",
+  "id": "stat-averages-frequency-tables-q02",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Now every value in the previous table is increased by 1, and the frequencies stay the same.\n\n| Value, $x$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 4 | 7 | 5 | 3 | 6 |\n\nWork out the mean.",
+  "hint": "Work out the new $fx$ row. Then compare your answer with the previous mean of 2.",
+  "answer": "Mean $= 3$",
+  "solution": "$$\\sum fx = 1(4) + 2(7) + 3(5) + 4(3) + 5(6) = 4 + 14 + 15 + 12 + 30 = 75$$\n$$\\sum f = 25$$\n$$\\text{mean} = \\frac{75}{25} = 3$$\n\n**What changed:** each of the 25 values went up by 1, so $\\sum fx$ went up by $25 \\times 1 = 25$ (from 50 to 75) while $\\sum f$ stayed 25. The mean therefore went up by exactly 1, from 2 to 3.",
+  "id": "stat-averages-frequency-tables-q03",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Finally, every frequency in the previous table is doubled.\n\n| Value, $x$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 8 | 14 | 10 | 6 | 12 |\n\nWork out the mean. What do you notice?",
+  "hint": "Doubling the frequencies doubles both $\\sum fx$ and $\\sum f$.",
+  "answer": "Mean $= 3$ (unchanged)",
+  "solution": "$$\\sum fx = 1(8) + 2(14) + 3(10) + 4(6) + 5(12) = 8 + 28 + 30 + 24 + 60 = 150$$\n$$\\sum f = 8 + 14 + 10 + 6 + 12 = 50$$\n$$\\text{mean} = \\frac{150}{50} = 3$$\n\n**What changed:** both the top and the bottom of the fraction doubled ($\\frac{75}{25}$ became $\\frac{150}{50}$), so the mean is unchanged. The mean depends on the **proportions** of each value, not on how many values there are in total.",
+  "id": "stat-averages-frequency-tables-q04",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The shoe sizes of 25 students are shown in the table.\n\n| Shoe size | 4 | 5 | 6 | 7 | 8 |\n|---|---|---|---|---|---|\n| Frequency | 3 | 9 | 6 | 5 | 2 |\n\n(a) Write down the mode.\n\n(b) Find the median.",
+  "hint": "The mode is a shoe size, not a frequency. For the median, find the position $\\frac{n+1}{2}$ and use running totals.",
+  "answer": "(a) Mode $=$ size 5 (b) Median $=$ size 6",
+  "solution": "(a) The highest frequency is 9, which belongs to size 5. The mode is the **value**, so the mode is **size 5** (not 9).\n\n(b) There are $n = 25$ students, so the median is the $\\frac{25+1}{2} = 13$th value.\n\nRunning totals: size 4 covers the 1st–3rd values, size 5 covers the 4th–12th values ($3 + 9 = 12$), size 6 covers the 13th–18th values ($12 + 6 = 18$).\n\nThe 13th value is a size 6, so the **median is size 6**.",
+  "id": "stat-averages-frequency-tables-q05",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The heights, $h$ cm, of 40 seedlings are recorded.\n\n| Height, $h$ (cm) | $0 < h \\le 10$ | $10 < h \\le 20$ | $20 < h \\le 30$ | $30 < h \\le 40$ |\n|---|---|---|---|---|\n| Frequency | 5 | 11 | 16 | 8 |\n\n(a) Write down the modal class.\n\n(b) Work out an estimate for the mean height.\n\n(c) Explain why your answer to part (b) is only an estimate.",
+  "hint": "Use the midpoint of each class as its value, e.g. 5 for $0 < h \\le 10$.",
+  "answer": "(a) $20 < h \\le 30$ (b) $21.75$ cm (c) The actual heights are not known; each class is represented by its midpoint.",
+  "solution": "(a) The highest frequency is 16, so the modal class is $20 < h \\le 30$.\n\n(b) Midpoints: $5, 15, 25, 35$.\n\n| Class | Midpoint $x$ | $f$ | $fx$ |\n|---|---|---|---|\n| $0 < h \\le 10$ | 5 | 5 | 25 |\n| $10 < h \\le 20$ | 15 | 11 | 165 |\n| $20 < h \\le 30$ | 25 | 16 | 400 |\n| $30 < h \\le 40$ | 35 | 8 | 280 |\n| Total | | 40 | 870 |\n\n$$\\text{estimated mean} = \\frac{870}{40} = 21.75 \\text{ cm}$$\n\n(c) We do not know the exact heights inside each class. Using the midpoint assumes the values in each class balance out around its centre, which may not be true. (Using the upper boundaries 10, 20, 30, 40 instead would wrongly push every value up and give 26.75 cm.)",
+  "id": "stat-averages-frequency-tables-q06",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "30 students were asked how many siblings they have.\n\n| Number of siblings | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency | 6 | 10 | 8 | 4 | 2 |\n\nCallum's working for the mean is shown below.\n\nLine 1: $fx$ values are $0,\\ 10,\\ 16,\\ 12,\\ 8$\n\nLine 2: Total $= 46$\n\nLine 3: Mean $= 46 \\div 5 = 9.2$ siblings\n\nIdentify Callum's mistake, explain why it is wrong, and work out the correct mean, giving your answer to 2 decimal places.",
+  "hint": "How many students were asked? Is 9.2 siblings a sensible mean for this table?",
+  "answer": "He divided by 5 (the number of columns) instead of 30 (the number of students). Mean $= \\frac{46}{30} = 1.53$ siblings (2 d.p.)",
+  "solution": "Callum's $fx$ values and $\\sum fx = 46$ are correct. The error is Line 3: he divided by **5**, the number of different values (columns) in the table.\n\nThe mean is the total number of siblings shared between **all the students**, and there are\n$$\\sum f = 6 + 10 + 8 + 4 + 2 = 30 \\text{ students}$$\n\n$$\\text{mean} = \\frac{46}{30} = 1.533\\ldots = 1.53 \\text{ siblings (2 d.p.)}$$\n\nSense check: no student has more than 4 siblings, so a mean of 9.2 is impossible. The mean must lie between 0 and 4.",
+  "id": "stat-averages-frequency-tables-q07",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The table shows the time, $t$ minutes, that 40 students spent on homework one evening.\n\n| Time, $t$ (min) | $0 < t \\le 20$ | $20 < t \\le 40$ | $40 < t \\le 60$ | $60 < t \\le 80$ |\n|---|---|---|---|---|\n| Frequency | 7 | 12 | 15 | 6 |\n\nAisha's working for an estimate of the mean is shown.\n\n$20 \\times 7 = 140$\n\n$40 \\times 12 = 480$\n\n$60 \\times 15 = 900$\n\n$80 \\times 6 = 480$\n\nTotal $= 2000$, so estimated mean $= 2000 \\div 40 = 50$ minutes\n\nExplain the mistake Aisha has made, and work out a correct estimate of the mean.",
+  "hint": "Which single value best represents all the times in the class $0 < t \\le 20$?",
+  "answer": "She used the upper class boundaries instead of the midpoints. Estimated mean $= 40$ minutes.",
+  "solution": "Aisha has multiplied each frequency by the **upper boundary** of its class (20, 40, 60, 80). That assumes every student in a class took the longest possible time, so every value is overestimated.\n\nThe best single value to represent each class is its **midpoint**: $10, 30, 50, 70$.\n\n$$\\sum fx = 10(7) + 30(12) + 50(15) + 70(6) = 70 + 360 + 750 + 420 = 1600$$\n\n$$\\text{estimated mean} = \\frac{1600}{40} = 40 \\text{ minutes}$$\n\nNotice Aisha's answer is exactly 10 minutes too big: half a class width added to every one of the 40 values.",
+  "id": "stat-averages-frequency-tables-q08",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "question": "A council counts the number of people in each of 50 cars passing a school.\n\n| Number of people | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Number of cars | 23 | 15 | 7 | 4 | 1 |\n\n(a) Ben says, \"The mode is 23 and the mean is $\\frac{23 + 15 + 7 + 4 + 1}{5} = 10$ people per car.\" Explain what Ben has done wrong in each statement.\n\n(b) Without working out $\\sum fx$, explain why the mean number of people per car must be less than 2.\n\n(c) Work out the mean to check your answer to part (b).",
+  "hint": "For (b), imagine every car having 2 people. Which cars are below 2 and which are above, and by how much in total?",
+  "answer": "(a) 23 is a frequency; the mode is 1 person. He averaged the frequencies, not the data; the mean must lie between 1 and 5. (b) The 23 one-person cars are 23 below 2 in total; the cars with 3, 4 or 5 people are only $7 + 8 + 3 = 18$ above, so the mean is below 2. (c) Mean $= 1.9$ people",
+  "solution": "(a) **Mode:** 23 is the highest *frequency*, i.e. the number of cars. The mode is the *value* with that frequency: **1 person**.\n\n**Mean:** Ben found the mean of the frequency column. $\\frac{50}{5} = 10$ just says there are 50 cars and 5 columns. No car carries more than 5 people, so a mean of 10 is impossible. He needs $\\frac{\\sum fx}{\\sum f}$.\n\n(b) Compare every car with 2 people:\n* the 23 cars with 1 person are each 1 below 2: total shortfall $23$;\n* cars with 3 people: $7 \\times 1 = 7$ above; with 4: $4 \\times 2 = 8$ above; with 5: $1 \\times 3 = 3$ above. Total excess $= 18$.\n\nThe shortfall (23) is bigger than the excess (18), so the values balance at a point below 2: the mean is less than 2.\n\n(c) $\\sum fx = 23 + 30 + 21 + 16 + 5 = 95$ and $\\sum f = 50$, so mean $= \\frac{95}{50} = 1.9$ people. This is $2 - \\frac{23 - 18}{50} = 2 - 0.1$, which matches part (b).",
+  "id": "stat-averages-frequency-tables-q09",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A gym records the length, $t$ minutes, of 80 workouts.\n\n| Length, $t$ (min) | $0 < t \\le 30$ | $30 < t \\le 45$ | $45 < t \\le 60$ | $60 < t \\le 90$ |\n|---|---|---|---|---|\n| Frequency | 9 | 22 | 31 | 18 |\n\n(a) Work out an estimate for the mean length of a workout. Give your answer to 3 significant figures.\n\n(b) Which class contains the median?\n\n(c) An advert says, \"The typical workout at our gym lasts more than 45 minutes.\" Does the data support this? Give a reason.",
+  "hint": "The classes are not all the same width, so work out each midpoint carefully (e.g. the midpoint of $30 < t \\le 45$ is 37.5).",
+  "answer": "(a) $49.2$ minutes (3 s.f.) (b) $45 < t \\le 60$ (c) Yes: the estimated mean (49.2 min) is over 45 and the median is in the $45 < t \\le 60$ class.",
+  "solution": "(a) Midpoints: $15,\\ 37.5,\\ 52.5,\\ 75$.\n\n$$\\sum fx = 9(15) + 22(37.5) + 31(52.5) + 18(75) = 135 + 825 + 1627.5 + 1350 = 3937.5$$\n\n$$\\text{estimated mean} = \\frac{3937.5}{80} = 49.21875 \\approx 49.2 \\text{ minutes (3 s.f.)}$$\n\n(b) $n = 80$, so the median is about the $40.5$th value. Running totals: $9,\\ 31,\\ 62,\\ 80$. The 40th and 41st values are both after the 31st and up to the 62nd, so the median is in $45 < t \\le 60$.\n\n(c) Yes. Both the estimated mean (about 49 minutes) and the median (somewhere between 45 and 60 minutes) are above 45 minutes. However, the mean is only an estimate, and 31 of the 80 workouts (39%) were 45 minutes or less, so \"typical\" is a fair but not overwhelming claim.",
+  "id": "stat-averages-frequency-tables-q10",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The table shows the number of books read last month by some members of a book club. One frequency is missing.\n\n| Number of books | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| Frequency | 6 | $k$ | 9 | 5 |\n\nThe mean number of books read is 2.5.\n\nWork out the value of $k$.",
+  "hint": "Write $\\sum fx$ and $\\sum f$ in terms of $k$. Then the mean condition gives an equation.",
+  "answer": "$k = 6$",
+  "solution": "$$\\sum fx = 1(6) + 2k + 3(9) + 4(5) = 53 + 2k$$\n$$\\sum f = 6 + k + 9 + 5 = 20 + k$$\n\nThe mean is 2.5, so\n$$\\frac{53 + 2k}{20 + k} = 2.5$$\n\nMultiply both sides by $20 + k$:\n$$53 + 2k = 50 + 2.5k$$\n$$3 = 0.5k$$\n$$k = 6$$\n\nCheck: $\\sum fx = 53 + 12 = 65$, $\\sum f = 26$, and $\\frac{65}{26} = 2.5$ ✓\n\n(A common slip is to divide by 4, the number of columns: $\\frac{53 + 2k}{4} = 2.5$ gives a negative $k$, which is impossible.)",
+  "id": "stat-averages-frequency-tables-q11",
+  "topicId": "stat-averages-frequency-tables"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The table shows the number of goals scored by a hockey team in each match of a season. The frequency for 2 goals has been smudged and is shown as $a$.\n\n| Goals | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency | 3 | 9 | $a$ | 5 | 2 |\n\nYou are told that the only mode is 1 goal and that the median is 2 goals.\n\nFind all the possible values of $a$.",
+  "hint": "The mode condition gives an upper limit on $a$. For the median, write the total as $19 + a$ and think about which position(s) the middle value occupies compared with the running total 12.",
+  "answer": "$a = 6,\\ 7$ or $8$",
+  "solution": "**Mode.** The only mode is 1 goal, so the frequency of 1 (which is 9) must be bigger than every other frequency: $a < 9$, so $a \\le 8$.\n\n**Median.** There are $n = 19 + a$ matches. Running totals: 0 goals covers the first 3 values, 1 goal covers up to the 12th value, 2 goals covers the 13th to the $(12 + a)$th value.\n\nFor the median to be 2, the middle value(s) must come after the 12th value. (They can never go beyond the 2s: only 7 values are bigger than 2, so with $a \\ge 1$ fewer than half the values are above 2.)\n\n* If $n$ is odd, the median is the $\\frac{n+1}{2} = \\frac{20 + a}{2}$th value. We need $\\frac{20 + a}{2} \\ge 13$, so $a \\ge 6$.\n* If $n$ is even, the median is the mean of the $\\frac{n}{2}$th and $(\\frac{n}{2}+1)$th values. Both must be 2 (if the first were 1, the median would be 1.5), so $\\frac{19 + a}{2} \\ge 13$, so $a \\ge 7$.\n\nTesting the boundary cases:\n* $a = 5$: $n = 24$, the 12th value is 1 and the 13th is 2, so the median is 1.5 ✗\n* $a = 6$: $n = 25$, the 13th value is 2 ✓\n* $a = 7$: $n = 26$, the 13th and 14th values are 2 ✓\n* $a = 8$: $n = 27$, the 14th value is 2 ✓\n\nWith $a \\le 8$ from the mode condition, the possible values are $a = 6, 7, 8$.\n\n(Note $a = 9$ is ruled out: 1 and 2 would both be modes.)",
+  "id": "stat-averages-frequency-tables-q12",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 6,
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "question": "The table gives information about the distances, $d$ km, that 50 employees travel to work.\n\n| Distance, $d$ (km) | Frequency |\n|---|---|\n| $0 < d \\le 5$ | 12 |\n| $5 < d \\le 10$ | 17 |\n| $10 < d \\le 15$ | 9 |\n| $15 < d \\le 20$ | 8 |\n| $20 < d \\le 25$ | 4 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the modal class.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the class interval that contains the median.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Work out an estimate for the mean distance. You must show your working.",
+    "marks": 4
+   }
+  ],
+  "hint": "For (c), add a midpoint column and an $fx$ column to the table.",
+  "answer": "(a) $5 < d \\le 10$ (b) $5 < d \\le 10$ (c) $10$ km",
+  "solution": "(a) Highest frequency 17: modal class $5 < d \\le 10$. **B1** (the class, not the frequency 17)\n\n(b) $n = 50$, so the median is the $25.5$th value. Running totals: $12,\\ 29, \\ldots$ The 25th and 26th values lie in $5 < d \\le 10$. **B1**\n\n(c) Midpoints: $2.5,\\ 7.5,\\ 12.5,\\ 17.5,\\ 22.5$ **M1** (for at least 4 correct midpoints)\n\n$fx$: $12 \\times 2.5 = 30$, $17 \\times 7.5 = 127.5$, $9 \\times 12.5 = 112.5$, $8 \\times 17.5 = 140$, $4 \\times 22.5 = 90$ **M1** (for $f \\times$ midpoint, consistently)\n\n$$\\sum fx = 30 + 127.5 + 112.5 + 140 + 90 = 500$$\n$$\\text{estimated mean} = \\frac{500}{50} \\quad \\textbf{M1} \\text{ (dep. on previous M1, dividing by } \\textstyle\\sum f = 50\\text{)}$$\n$$= 10 \\text{ km} \\quad \\textbf{A1}$$\n\nCommon errors: using upper boundaries gives $\\frac{625}{50} = 12.5$ (M0); dividing by 5 gives 100 (M1 M1 M0 A0).",
+  "id": "stat-averages-frequency-tables-q13",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 8,
+  "question": "The masses, $m$ grams, of 60 apples from an orchard are summarised below.\n\n| Mass, $m$ (g) | Frequency |\n|---|---|\n| $100 \\le m < 120$ | 6 |\n| $120 \\le m < 130$ | 14 |\n| $130 \\le m < 140$ | 21 |\n| $140 \\le m < 150$ | 13 |\n| $150 \\le m < 180$ | 6 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use linear interpolation to estimate the median mass.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Use linear interpolation to estimate the interquartile range.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Estimate the mean mass.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Using your answers to parts (a) and (c), describe the skewness of the distribution.",
+    "marks": 1
+   }
+  ],
+  "hint": "Use $\\frac{n}{2} = 30$, $\\frac{n}{4} = 15$ and $\\frac{3n}{4} = 45$ as the positions, and find which class each falls in from the cumulative frequencies.",
+  "answer": "(a) $134.8$ g (b) $16.6$ g (c) $135.3$ g (d) Mean $>$ median, so slight positive skew.",
+  "solution": "Cumulative frequencies at the upper class boundaries: $120 \\to 6$, $130 \\to 20$, $140 \\to 41$, $150 \\to 54$, $180 \\to 60$.\n\n(a) $\\frac{n}{2} = 30$, which lies in $130 \\le m < 140$ (cf 20 to 41).\n$$Q_2 = 130 + \\frac{30 - 20}{21} \\times 10 \\quad \\textbf{M1}$$\n$$= 134.76\\ldots \\approx 134.8 \\text{ g} \\quad \\textbf{A1}$$\n\n(b) $Q_1$: $\\frac{n}{4} = 15$, in $120 \\le m < 130$ (cf 6 to 20):\n$$Q_1 = 120 + \\frac{15 - 6}{14} \\times 10 = 126.43\\ldots \\quad \\textbf{M1}$$\n$Q_3$: $\\frac{3n}{4} = 45$, in $140 \\le m < 150$ (cf 41 to 54):\n$$Q_3 = 140 + \\frac{45 - 41}{13} \\times 10 = 143.08\\ldots \\quad \\textbf{M1}$$\n$$\\text{IQR} = 143.08 - 126.43 = 16.6 \\text{ g (3 s.f.)} \\quad \\textbf{A1}$$\n\n(c) Midpoints $110, 125, 135, 145, 165$:\n$$\\sum fx = 6(110) + 14(125) + 21(135) + 13(145) + 6(165) = 660 + 1750 + 2835 + 1885 + 990 = 8120 \\quad \\textbf{M1}$$\n$$\\bar{x} = \\frac{8120}{60} = 135.33\\ldots \\approx 135.3 \\text{ g} \\quad \\textbf{A1}$$\n\n(d) Mean ($135.3$) $>$ median ($134.8$), so the distribution has (slight) **positive skew**. **B1 ft**\n\n(The quartiles are almost equally spaced about the median, $Q_2 - Q_1 \\approx Q_3 - Q_2 \\approx 8.3$ g, so the skew is only slight; it comes from the long upper class $150 \\le m < 180$ pulling the mean up.)",
+  "id": "stat-averages-frequency-tables-q14",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A café sells hot drinks at three prices. One morning it sells:\n\n| Price | £1.80 | £2.50 | £3.20 |\n|---|---|---|---|\n| Number sold | 40 | 65 | 35 |\n\n(a) Work out the total amount of money taken for these drinks.\n\n(b) Work out the mean price of a drink sold. Give your answer to the nearest penny.\n\n(c) Find the median price.",
+  "hint": "Each price is a value and the number sold is its frequency, so the total takings is $\\sum fx$.",
+  "answer": "(a) £346.50 (b) £2.48 (c) £2.50",
+  "solution": "(a) Total takings $= \\sum fx$:\n$$1.80 \\times 40 + 2.50 \\times 65 + 3.20 \\times 35 = 72 + 162.50 + 112 = £346.50$$\n\n(b) Number of drinks $= 40 + 65 + 35 = 140$.\n$$\\text{mean} = \\frac{346.50}{140} = 2.475 = £2.48 \\text{ (nearest penny)}$$\n\n(Dividing by 3, the number of prices, would give £115.50, which is clearly not a drink price.)\n\n(c) The median is between the 70th and 71st drinks. Running totals: 40 drinks at £1.80, then up to $40 + 65 = 105$ at £2.50. Both the 70th and 71st are £2.50, so the median price is **£2.50**.",
+  "id": "stat-averages-frequency-tables-q15",
+  "topicId": "stat-averages-frequency-tables",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "num-error-intervals"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "40 teenagers were asked how many hours, $h$, they spent on their phone yesterday.\n\n| Hours, $h$ | $0 < h \\le 2$ | $2 < h \\le 4$ | $4 < h \\le 6$ | $6 < h \\le 8$ |\n|---|---|---|---|---|\n| Frequency | 6 | 15 | 13 | 6 |\n\n(a) Work out an estimate for the mean.\n\n(b) Ella says, \"The actual mean could be as high as 5 hours.\" By considering the largest possible value in each class, show that Ella is wrong.\n\n(c) Find the interval within which the actual mean must lie.",
+  "hint": "For (b), what is the greatest possible total number of hours if everybody in each class is at the top of their class?",
+  "answer": "(a) $3.95$ hours (b) The largest possible mean is $\\frac{198}{40} = 4.95$ hours, which is less than 5. (c) $2.95 < \\text{mean} \\le 4.95$ hours",
+  "solution": "(a) Midpoints $1, 3, 5, 7$:\n$$\\sum fx = 6 + 45 + 65 + 42 = 158, \\qquad \\text{estimated mean} = \\frac{158}{40} = 3.95 \\text{ hours}$$\n\n(b) The greatest possible total occurs when every teenager is at the **upper** boundary of their class:\n$$6(2) + 15(4) + 13(6) + 6(8) = 12 + 60 + 78 + 48 = 198$$\nThe greatest possible mean is $\\frac{198}{40} = 4.95$ hours, which is less than 5. So the mean cannot be 5 hours: Ella is wrong.\n\n(c) The smallest total would use the lower boundaries:\n$$6(0) + 15(2) + 13(4) + 6(6) = 0 + 30 + 52 + 36 = 118, \\qquad \\frac{118}{40} = 2.95$$\nThe lower boundaries themselves are not included ($0 < h$, $2 < h$, …), so the mean is strictly greater than 2.95:\n$$2.95 < \\text{actual mean} \\le 4.95 \\text{ hours}$$\n\nThe midpoint estimate, 3.95, sits exactly in the middle of this interval: each class is width 2, so the true mean is within 1 hour of the estimate.",
+  "id": "stat-averages-frequency-tables-q16",
+  "topicId": "stat-averages-frequency-tables"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-linear-equations",
+   "alg-forming-equations"
+  ],
+  "question": "The table shows the times, $t$ seconds, taken by some volunteers to complete a reaction test. One frequency is unknown.\n\n| Time, $t$ (s) | $10 < t \\le 20$ | $20 < t \\le 30$ | $30 < t \\le 40$ | $40 < t \\le 50$ |\n|---|---|---|---|---|\n| Frequency | 8 | $x$ | 15 | 7 |\n\nUsing linear interpolation with position $\\frac{n}{2}$, an estimate of the median is 31 seconds.\n\n(a) Find the value of $x$.\n\n(b) Hence work out an estimate of the mean time, giving your answer to 3 significant figures.",
+  "hint": "The median estimate 31 is in the class $30 < t \\le 40$, so use $L = 30$, $F = 8 + x$, $f = 15$, $w = 10$ with position $\\frac{30 + x}{2}$.",
+  "answer": "(a) $x = 11$ (b) $30.1$ seconds",
+  "solution": "(a) Total frequency $n = 30 + x$, so the median position is $\\frac{n}{2} = 15 + \\frac{x}{2}$.\n\nSince the estimate 31 lies in $30 < t \\le 40$, the interpolation was done in that class: $L = 30$, $F = 8 + x$ (frequency before the class), $f = 15$, $w = 10$.\n$$30 + \\frac{\\left(15 + \\frac{x}{2}\\right) - (8 + x)}{15} \\times 10 = 31$$\n$$\\frac{7 - \\frac{x}{2}}{15} \\times 10 = 1$$\n$$7 - \\frac{x}{2} = 1.5$$\n$$x = 11$$\n\nCheck: $n = 41$, $\\frac{n}{2} = 20.5$; cumulative frequencies $8, 19, 34, 41$, so the 20.5th value is indeed in $30 < t \\le 40$, and $30 + \\frac{20.5 - 19}{15} \\times 10 = 31$ ✓\n\n(b) Midpoints $15, 25, 35, 45$:\n$$\\sum fx = 8(15) + 11(25) + 15(35) + 7(45) = 120 + 275 + 525 + 315 = 1235$$\n$$\\text{estimated mean} = \\frac{1235}{41} = 30.12\\ldots \\approx 30.1 \\text{ s (3 s.f.)}$$",
+  "id": "stat-averages-frequency-tables-q17",
+  "topicId": "stat-averages-frequency-tables"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A spinner is spun 20 times and the scores are recorded. Two frequencies are unknown.\n\n| Score | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Frequency | 3 | $a$ | 7 | $b$ | 2 |\n\nThe mean score is exactly 3.\n\n(a) Find the values of $a$ and $b$.\n\n(b) Show that the median and the mode are also both equal to 3.",
+  "hint": "Use the total frequency to write one equation and $\\sum fx = 3 \\times 20$ to write another. Solve them simultaneously.",
+  "answer": "(a) $a = 3$, $b = 5$ (b) Median: 10th and 11th scores are both 3; mode: 3 has the highest frequency (7).",
+  "solution": "(a) Total frequency:\n$$3 + a + 7 + b + 2 = 20 \\implies a + b = 8 \\quad (1)$$\n\nMean $= 3$ means $\\sum fx = 3 \\times 20 = 60$:\n$$1(3) + 2a + 3(7) + 4b + 5(2) = 60$$\n$$34 + 2a + 4b = 60 \\implies a + 2b = 13 \\quad (2)$$\n\n$(2) - (1)$: $b = 5$, then $a = 3$.\n\nCheck: $\\sum fx = 3 + 6 + 21 + 20 + 10 = 60$ ✓\n\n(b) **Median:** $n = 20$, so the median is the mean of the 10th and 11th scores. Running totals: score 1 up to the 3rd, score 2 up to the 6th, score 3 up to the 13th. The 10th and 11th scores are both 3, so the median is 3.\n\n**Mode:** frequencies are $3, 3, 7, 5, 2$. The largest is 7, for the score 3, so the mode is 3 (the score, not the frequency 7).\n\nSo mean $=$ median $=$ mode $= 3$.",
+  "id": "stat-averages-frequency-tables-q18",
+  "topicId": "stat-averages-frequency-tables"
+ }
+]
