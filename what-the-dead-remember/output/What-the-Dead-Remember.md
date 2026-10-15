@@ -2155,7 +2155,7 @@ He had been that someone. There had been a season after the Temple fell when the
 
 His hands knew it. That was what frightened him. He had not decided; he had only sat down with the Soresu commentaries open and let his hands do what they had done before, and they had gone, in the way a man's feet go to a door in a house he grew up in, down past the public index to the catalogue layer, and through the catalogue layer by a gap the droids had left when the Temple was young, and into a maintenance account that had the plain, unguarded name of a librarian dead nine hundred years. It took four minutes. It made no sound. The screen above his chin went on showing the Soresu commentaries to anyone who walked past, and beneath them, in a window the size of his palm, the general query log of the Jedi Archives opened to him like a hand.
 
-He looked at his own hands on the surface, narrow and knuckly and a boy's. Anyone watching would see a fifteen-year-old frowning at a text. The competence was forty years old and had been learned in a building full of the dead, and it was in a child's fingers, and the fingers were not even cold.
+He looked at his own hands on the surface, narrow and knuckly and a boy's. Anyone watching would see a fifteen-year-old frowning at a text. The competence was thirty-five years old and had been learned in a building full of the dead, and it was in a child's fingers, and the fingers were not even cold.
 
 *The stacks dark and the red light coming through the high windows, and a woman with white hair standing in the aisle with her blade lit, and her voice, not frightened, telling him he was not permitted.*
 
@@ -2600,7 +2600,7 @@ Qui-Gon's boy.
 
 He turned the phrase over; he had used it without deciding to. He had never seen the child. He knew what everyone knew: that Qui-Gon had found a slave on Tatooine and brought him to the Council like a man bringing a sacred relic down from a mountain, and the Council had refused him, and then Qui-Gon had died, and the Council had taken the boy anyway because the dead are harder to refuse. He knew Kenobi had him. He had met Kenobi four times in his life and thought him exactly what Qui-Gon would have made of a clever, anxious, obedient young man: a good Jedi, which was to say a wasted one. And he had read the Council's own phrase for the boy in the minutes that someone had seen fit to leak to the Institute: *the chosen one*, with no capitals, as if it were an embarrassment, which to them it was.
 
-He had never gone to see him. It had been a decision, taken once, and not revisited: the boy was the Master's, and the Master's things were not touched, and in any case he had not wanted to stand in front of a child and see Qui-Gon's judgement looking back at him out of a stranger's face. He had told Sidious the truth. He had told it in the voice he had used on the Council for forty years, and he had felt the Master weigh it even through a projector.
+He had never gone to see him. It had been a decision, taken once, and not revisited: the boy was the Master's, and the Master's things were not touched, and in any case he had not wanted to stand in front of a child and see Qui-Gon's judgement looking back at him out of a stranger's face. He had told Sidious the truth. He had told it in the voice he had used on the Council for decades, and he had felt the Master weigh it even through a projector.
 
 Almost believed. He was seventy-six years old and had been almost believed by two institutions now.
 
@@ -2936,7 +2936,7 @@ He told her Endor.
 
 She had never heard the word. It was a moon, he said, green, forested, with a Death Star over it, and that was a word she did know and did not want to; a second one, he said. He told it as flatly as she had told hers, as if they had agreed on the register. An Emperor in a throne room. A boy, twenty-three, blond, with a green blade. Luke. His son. He said the name as if it had cost him something to keep it in his mouth so long. The boy had refused to kill him. The Emperor had put lightning into the boy and the boy had screamed, and he had stood and watched, and then he had not. He had picked the old man up and thrown him down a shaft. He had died on the floor of a hangar with his son's hands on the mask, with the mask off, with air on his face for the first time in twenty-three years, and the last thing he had seen was the boy's face, and the boy's face had been like Padmé's.
 
-"And then I woke up in a bunk in the Temple," he said, "with two hands. Twenty-two days ago. That's where I'm from."
+"And then I woke up in a bunk in the Temple," he said, "with two hands. A month ago, near enough. That's where I'm from."
 
 She listened to it to the end. Then she said, "No."
 
@@ -3134,7 +3134,7 @@ Towards the end of the night he said, "We'll need a bond. A thin one. If we're g
 
 They sat. He had moved back to the far wall when she had stopped shaking, without being asked; she had let him go and not said anything, and he had understood that too. The saber lay where it had been all night. She had not touched it and neither had he.
 
-There was a thing she wanted to say and she turned it over for an hour and did not. It was the name. He had given her hers and she had not given him his, and she knew what it would do to his face, and she was not ready to be the person who did that; the thing at the top of the stairs still stood in the ice behind her eyes with its red blade, and she still did not know what had got into a bunk in the Temple twenty-two days ago with two hands. She knew that it had known Fives's last words. She knew that it had let her cry. She knew that it had not insisted.
+There was a thing she wanted to say and she turned it over for an hour and did not. It was the name. He had given her hers and she had not given him his, and she knew what it would do to his face, and she was not ready to be the person who did that; the thing at the top of the stairs still stood in the ice behind her eyes with its red blade, and she still did not know what had got into a bunk in the Temple a month ago with two hands. She knew that it had known Fives's last words. She knew that it had let her cry. She knew that it had not insisted.
 
 She had been sure, for sixteen years, that Anakin Skywalker was gone for good. She was less sure than she had been at sunset. That was all. It was a long way from the thing she could see he wanted, and she would not pretend it was nearer.
 
@@ -4571,7 +4571,7 @@ Obi-Wan folded the second tunic. He did it properly, sleeves in, the way he had 
 
 "The logs."
 
-A pause the length of a breath. Then Obi-Wan set the tunic in the case and sat down across the table from the cold tea and looked at him, and his face was the face Anakin had known for forty years: courteous, attentive, giving nothing away and not pretending otherwise.
+A pause the length of a breath. Then Obi-Wan set the tunic in the case and sat down across the table from the cold tea and looked at him, and his face was the face Anakin had known for thirty-six years: courteous, attentive, giving nothing away and not pretending otherwise.
 
 "Sit down, my friend. It is not a short story, and you have taken to looming."
 
@@ -5435,7 +5435,7 @@ He had never heard it before. In two lives he had heard Obi-Wan deflect, evade, 
 
 "My own. A comm I keep for the purpose, which I will surrender to the Council if it wishes to see it. I told him where I was and what I expected to happen, and I told him to take whatever ship he could get and to come, and that I would answer for the ship. He told the Temple Guard and Knight Thane that Master Plo had sent him; I used Master Plo's name on the channel without his leave, and I shall answer to Master Plo for it. He did as he was told. It is a thing he does more often than his reputation suggests." The ghost of the eyebrow. "I was shot before he arrived. I have a fairly clear memory of the floor, and a less clear one of the boy, and I am told I owe him my life. The Mandalorian was the Pykes' observer, there as a courtesy to their client, and he left when the odds turned. The surveyors are alive because my Padawan freed them and told them to take the Pyke ship, which was sensible. If the Council has an objection to the order I gave, the objection is to me."
 
-"A Padawan on a comm order from a wounded master," said Windu, "does not, in my experience, clear forty droids."
+"A Padawan on a comm order from a wounded master," said Windu, "does not, in my experience, clear a garrison of droids."
 
 "Then your experience of my Padawan is incomplete, Master Windu," said Obi-Wan, "which I would say is the general condition. The droids were old. Their codes were a decade stale, their targeting was poor, and he had the Force with him and a good deal of adolescent outrage. I have seen him do worse to a training remote."
 
