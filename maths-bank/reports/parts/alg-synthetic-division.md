@@ -7,3 +7,6 @@ All quotients/remainders, factorizations, Descartes' sign counts and RRT lists v
 
 ### Diagram audit
 1 diagram checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered. Key idea extended (data/topics-fixes/alg-synthetic-division.json) to mention: Rational Root Theorem, Descartes' rule of signs.

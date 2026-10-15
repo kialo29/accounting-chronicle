@@ -6,3 +6,6 @@ All answers re-derived and matched (q05 90°, q07 52 m², q09 10 and 38, q11 132
 ### Diagram audit
 3 diagrams checked: 2 ok, 1 fixed.
 - alg-forming-equations-q07 — label "(x − 1) m" ran to the left edge of the viewBox — shifted the drawing 10 px right
+
+### Scope coverage
+All 5 scope items covered.

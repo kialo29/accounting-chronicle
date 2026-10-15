@@ -5,3 +5,6 @@ All answers matched the blind solve (incl. q08 $b = -2$, q12 lawn 12 m by 16 m, 
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

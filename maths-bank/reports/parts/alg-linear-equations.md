@@ -5,3 +5,6 @@ All solutions verified with sympy (incl. q13 $(a-3)x = 3b-4$ case analysis, q15 
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered.

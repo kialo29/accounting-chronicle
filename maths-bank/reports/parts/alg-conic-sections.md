@@ -7,3 +7,6 @@ All vertices, foci, directrices, standard forms and asymptotes re-derived. q05 e
 
 ### Diagram audit
 3 diagrams checked: 3 ok, 0 fixed.
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/alg-conic-sections.json) to mention: parabola from focus and directrix (equidistance definition).

@@ -268,5 +268,45 @@
   "misconceptionIds": [
    "m1"
   ]
+ },
+ {
+  "id": "alg-rational-functions-q18",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 10,
+  "question": "Let $$f(x) = \\frac{x^2 - 4}{x^2 - 2x - 3}$$ In this question you will graph $f$ by hand. Show your work.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the $x$-intercepts and the $y$-intercept of the graph of $f$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write equations for all the vertical asymptotes and the horizontal asymptote of the graph of $f$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Make a sign chart for $f(x)$ using the zeros and the vertical asymptotes. Hence describe the behavior of $f(x)$ on each side of each vertical asymptote.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the point where the graph crosses its horizontal asymptote. Then sketch the graph of $f$, labeling the intercepts and the asymptotes.",
+    "marks": 3
+   }
+  ],
+  "hint": "Factor the numerator and the denominator first. On each interval between the critical values, every factor keeps the same sign, so test one value of $x$ in each interval.",
+  "answer": "(a) $x$-intercepts $(-2, 0)$ and $(2, 0)$; $y$-intercept $\\left(0, \\frac{4}{3}\\right)$ (b) $x = -1$, $x = 3$; $y = 1$ (c) $f(x) > 0$ for $x < -2$, $-1 < x < 2$ and $x > 3$; $f(x) < 0$ for $-2 < x < -1$ and $2 < x < 3$. As $x \\to -1^-$, $f(x) \\to -\\infty$; as $x \\to -1^+$, $f(x) \\to +\\infty$; as $x \\to 3^-$, $f(x) \\to -\\infty$; as $x \\to 3^+$, $f(x) \\to +\\infty$ (d) $\\left(\\frac{1}{2}, 1\\right)$; three branches: the left branch starts just below $y = 1$ and falls through $(-2, 0)$ to $-\\infty$ at $x = -1$; the middle branch falls from $+\\infty$ through $\\left(0, \\frac{4}{3}\\right)$, $\\left(\\frac{1}{2}, 1\\right)$ and $(2, 0)$ to $-\\infty$ at $x = 3$; the right branch falls from $+\\infty$ toward $y = 1$ from above",
+  "solution": "Factor:\n$$f(x) = \\frac{(x - 2)(x + 2)}{(x - 3)(x + 1)}$$\nNo factor cancels, so there are no holes.\n\n**(a)** $x$-intercepts where the numerator is zero: $x = 2$ and $x = -2$, giving $(2, 0)$ and $(-2, 0)$. **B1**\n\n$y$-intercept: $f(0) = \\dfrac{-4}{-3} = \\dfrac{4}{3}$, giving $\\left(0, \\frac{4}{3}\\right)$. **B1**\n\n**(b)** The denominator is zero at $x = 3$ and $x = -1$ (and the numerator is not), so the vertical asymptotes are $x = -1$ and $x = 3$. **B1**\n\nThe degrees are equal, so the horizontal asymptote is the ratio of leading coefficients: $y = \\frac{1}{1} = 1$. **B1**\n\n**(c)** Critical values in order: $-2, -1, 2, 3$. Test one value in each interval:\n\n| Interval | Test $x$ | $x + 2$ | $x + 1$ | $x - 2$ | $x - 3$ | $f(x)$ |\n|---|---|---|---|---|---|---|\n| $x < -2$ | $-3$ | $-$ | $-$ | $-$ | $-$ | $+$ |\n| $-2 < x < -1$ | $-1.5$ | $+$ | $-$ | $-$ | $-$ | $-$ |\n| $-1 < x < 2$ | $0$ | $+$ | $+$ | $-$ | $-$ | $+$ |\n| $2 < x < 3$ | $2.5$ | $+$ | $+$ | $+$ | $-$ | $-$ |\n| $x > 3$ | $4$ | $+$ | $+$ | $+$ | $+$ | $+$ |\n\n**M1 A1** (e.g. $f(-1.5) = -\\frac{7}{9}$, $f(2.5) = -\\frac{9}{7}$.)\n\nNear a vertical asymptote $|f(x)|$ becomes very large, and the sign chart gives the direction: $f$ is negative just left of $x = -1$ and positive just right, so $f(x) \\to -\\infty$ as $x \\to -1^-$ and $f(x) \\to +\\infty$ as $x \\to -1^+$. Similarly $f(x) \\to -\\infty$ as $x \\to 3^-$ and $f(x) \\to +\\infty$ as $x \\to 3^+$. **B1**\n\n**(d)** Set $f(x) = 1$:\n$$x^2 - 4 = x^2 - 2x - 3 \\;\\Rightarrow\\; 2x = 1 \\;\\Rightarrow\\; x = \\tfrac{1}{2}$$\nso the graph crosses $y = 1$ at $\\left(\\frac{1}{2}, 1\\right)$. (A horizontal asymptote describes end behavior only, so crossing it is allowed.) **B1**\n\nFor the end behavior, $f(x) - 1 = \\dfrac{2x - 1}{(x - 3)(x + 1)}$. For large negative $x$ this is negative, so the left end approaches $y = 1$ from **below**; for large positive $x$ it is positive, so the right end approaches $y = 1$ from **above**.\n\nSketch (draw $x = -1$, $x = 3$ and $y = 1$ as dashed lines): **M1** for three branches consistent with the sign chart and asymptotes, **A1** for all intercepts and the crossing point correct.\n* Left branch ($x < -1$): starts just below $y = 1$ on the far left, falls through $(-2, 0)$ and goes down to $-\\infty$ next to $x = -1$.\n* Middle branch ($-1 < x < 3$): comes down from $+\\infty$ next to $x = -1$, through $\\left(0, \\frac{4}{3}\\right)$, crosses the asymptote at $\\left(\\frac{1}{2}, 1\\right)$, passes through $(2, 0)$ and falls to $-\\infty$ next to $x = 3$.\n* Right branch ($x > 3$): comes down from $+\\infty$ next to $x = 3$ (e.g. $f(4) = \\frac{12}{5}$) and levels off toward $y = 1$ from above.",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
  }
 ]

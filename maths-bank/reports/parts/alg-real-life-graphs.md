@@ -5,3 +5,6 @@ All answers matched the blind solve (incl. q01 €36 / £40, q02 €240 / £325,
 
 ### Diagram audit
 8 diagrams checked: 8 ok, 0 fixed.
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/alg-real-life-graphs.json) to mention: dependent vs independent variables; linking a table, a graph and an equation.

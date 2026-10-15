@@ -7,3 +7,6 @@ All answers matched the blind solve (incl. q12 max $x + 2y = 11$ at $(5, 3)$, q1
 5 diagrams checked: 3 ok, 2 fixed.
 - alg-inequality-regions-q01 — every x-axis label was drawn 7 px left of its tick/grid line (so "3" sat between 2 and 3, and "2" looked left of the boundary) — labels re-centred on their ticks; "2" placed just left of the boundary line x = 2
 - alg-inequality-regions-example1 — origin label O was crossed by y = 2x, the dashed line y = 1 ran through the y-axis label 1, and the label 5 was crowded by x + y = 5 — O moved below-right of the origin, y = 1 drawn from the y-axis, y-axis labels moved 4 px left (topics-fixes)
+
+### Scope coverage
+All 3 scope items covered.

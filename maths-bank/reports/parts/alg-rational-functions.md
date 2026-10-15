@@ -7,3 +7,6 @@ All holes, asymptotes, intercepts, inverse (q15), range by discriminant (q16) an
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+Added alg-rational-functions-q18 for: graphing rational functions (sign chart, behavior at asymptotes, sketch). The other 3 scope items were already covered.

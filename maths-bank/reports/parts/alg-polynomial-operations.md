@@ -5,3 +5,6 @@ All answers independently re-derived (sympy) and matched: sums/differences/produ
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 8 scope items covered. Key idea extended (data/topics-fixes/alg-polynomial-operations.json) to mention: factoring by grouping, sum/difference of cubes, quadratic-form factoring, proving polynomial identities.

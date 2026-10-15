@@ -11,3 +11,6 @@ All 4 diagrams (q03 parabola with lines, q05 circle and line, q12 ball path and 
 - alg-simultaneous-nonlinear-q03 — y-axis labels 6 and −6 were crossed by y = −x + 6 and y = −x − 6 — nudged clear
 - alg-simultaneous-nonlinear-q05 — x-axis label −2 was crossed by y = x + 1 — moved left, clear of the line
 - alg-simultaneous-nonlinear-q14 — drawn on a labelled grid, so A(3, 6) and B(−2, 1) asked for in (a) could be read off — removed the grid and numeric scale (still to scale, axes, O, A, B, C and line label kept)
+
+### Scope coverage
+All 2 scope items covered.

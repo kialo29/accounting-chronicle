@@ -6,3 +6,6 @@ All answers matched the blind solve (incl. q05 $x + 2y - 1 = 0$, q07 $4x - y = -
 ### Diagram audit
 2 diagrams checked: 1 ok, 1 fixed.
 - alg-equation-of-a-line-q13 — l₁ and l₂ labels touched their lines — labels moved 8 px clear of the lines
+
+### Scope coverage
+All 4 scope items covered.

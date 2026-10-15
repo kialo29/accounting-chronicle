@@ -6,3 +6,6 @@ All answers independently re-derived (blind solve) and matched; q11 diagram rend
 ### Diagram audit
 1 diagrams checked: 0 ok, 1 fixed.
 - alg-composite-inverse-functions-q11 — unequal axis scales (36.9 vs 34.4 px per unit) so y = x was not at 45°, which matters for a reflection-in-y = x question — redrawn with equal scales (same curve, points and labels)
+
+### Scope coverage
+All 8 scope items covered. Key idea extended (data/topics-fixes/alg-composite-inverse-functions.json) to mention: sum, difference, product and quotient of functions and their domains.

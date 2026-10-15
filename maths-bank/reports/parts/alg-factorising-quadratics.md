@@ -5,3 +5,6 @@ All factorisations verified with sympy; q12 $b = \pm 7, \pm 8, \pm 13$; q13 1200
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

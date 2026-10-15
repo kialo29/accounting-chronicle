@@ -5,3 +5,6 @@ All answers matched the blind solve (incl. q09 Ravi's value 85.8, q11 $x = \frac
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 1 scope items covered.

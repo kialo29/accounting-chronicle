@@ -8,3 +8,6 @@ All 10 diagrams rendered and checked against the text: tangent lines and graph c
 
 ### Diagram audit
 10 diagrams checked: 10 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered.

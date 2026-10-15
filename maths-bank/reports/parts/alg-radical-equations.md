@@ -8,3 +8,6 @@ All answers independently re-derived (sympy/numeric checks for q13 skid formula,
 ### Diagram audit
 2 diagrams checked: 1 ok, 1 fixed.
 alg-radical-equations-q15 — the dashed line y = g(x) ran through the y-axis tick label −2 — moved that label to the right of the axis.
+
+### Scope coverage
+All 6 scope items covered. Key idea extended (data/topics-fixes/alg-radical-equations.json) to mention: graphing square-root and cube-root functions (domain, range, transformations).

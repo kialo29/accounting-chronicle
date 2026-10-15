@@ -5,3 +5,6 @@ All answers matched the blind solve (incl. q13 tariffs $151 \le m \le 224$, q15 
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered.

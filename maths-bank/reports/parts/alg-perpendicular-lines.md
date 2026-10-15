@@ -6,3 +6,6 @@ All answers matched the blind solve (incl. q09 $3x + 2y - 20 = 0$, q12 $(2, 4)$,
 ### Diagram audit
 4 diagrams checked: 3 ok, 1 fixed.
 - alg-perpendicular-lines-q15 — "1 km grid" drawn with unequal x/y scales (18.4 vs 16.1 px per km), so perpendicular directions were distorted — redrawn with equal scales (16 px per km), same data
+
+### Scope coverage
+All 2 scope items covered.
