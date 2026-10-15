@@ -1,0 +1,323 @@
+[
+ {
+  "id": "alg-functions-basics-q01",
+  "topicId": "alg-functions-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Here is a function machine.\n\n(a) Work out the output when the input is 5.\n(b) Work out the output when the input is $-2$.\n(c) The output is 29. Work out the input.\n(d) Write the function in the form $f(x) = \\ldots$",
+  "hint": "For (c), run the machine backwards: start with 29 and do the inverse operations in reverse order.",
+  "answer": "(a) 13 (b) $-15$ (c) 9 (d) $f(x) = 4x - 7$",
+  "solution": "**(a)** $5 \\times 4 = 20$, then $20 - 7 = 13$.\n\n**(b)** $-2 \\times 4 = -8$, then $-8 - 7 = -15$.\n\n**(c)** Reverse the machine: undo the last operation first.\n$$29 \\xrightarrow{+7} 36 \\xrightarrow{\\div 4} 9$$\nInput $= 9$. **Check:** $9 \\times 4 - 7 = 36 - 7 = 29$ ✓.\n\n**(d)** Input $x$: multiply by 4 to get $4x$, then subtract 7: $f(x) = 4x - 7$.",
+  "linkedTopicIds": [],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 70\" width=\"360\" height=\"70\"><text x=\"30\" y=\"40\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Input</text><line x1=\"56\" y1=\"35\" x2=\"90.4\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M96,35 L89,31.9 L89,38.1 Z\" fill=\"currentColor\"/><rect x=\"98\" y=\"15\" width=\"64\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" rx=\"3\"/><text x=\"130\" y=\"40\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">× 4</text><line x1=\"162\" y1=\"35\" x2=\"196.4\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M202,35 L195,31.9 L195,38.1 Z\" fill=\"currentColor\"/><rect x=\"204\" y=\"15\" width=\"64\" height=\"40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" rx=\"3\"/><text x=\"236\" y=\"40\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">− 7</text><line x1=\"268\" y1=\"35\" x2=\"294.4\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M300,35 L293,31.9 L293,38.1 Z\" fill=\"currentColor\"/><text x=\"328\" y=\"40\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Output</text></svg>"
+ },
+ {
+  "id": "alg-functions-basics-q02",
+  "topicId": "alg-functions-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$f(x) = 2x^2 - 3$. Find $f(3)$.",
+  "hint": "Replace $x$ with 3: square first, then multiply by 2, then subtract 3.",
+  "answer": "$f(3) = 15$",
+  "solution": "Substitute $x = 3$:\n$$f(3) = 2(3)^2 - 3 = 2 \\times 9 - 3 = 18 - 3 = 15$$",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-functions-basics-q03",
+  "topicId": "alg-functions-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$f(x) = 2x^2 - 3$. Find $f(-3)$.",
+  "hint": "Put $-3$ in brackets before squaring: $(-3)^2$.",
+  "answer": "$f(-3) = 15$",
+  "solution": "**What changed:** the input is now negative.\n\nReplace $x$ with $(-3)$, **in brackets**:\n$$f(-3) = 2(-3)^2 - 3 = 2 \\times 9 - 3 = 15$$\n\n$(-3)^2 = 9$, not $-9$: writing $-3^2$ without brackets would square only the 3 and give the wrong answer $-21$.\n\nNotice $f(-3) = f(3) = 15$: two different inputs can give the same output. That is allowed for a function.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-functions-basics-q04",
+  "topicId": "alg-functions-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$f(x) = 2x^2 - 3$. Solve $f(x) = 15$.",
+  "hint": "This time 15 is the **output**. Set $2x^2 - 3 = 15$ and solve for $x$.",
+  "answer": "$x = 3$ or $x = -3$",
+  "solution": "**What changed:** the unknown is now the **input**. We are told the output is 15 and must find $x$. (This is not the same as finding $f(15)$, which would be $2(225) - 3 = 447$.)\n$$2x^2 - 3 = 15$$\n$$2x^2 = 18$$\n$$x^2 = 9$$\n$$x = 3 \\text{ or } x = -3$$\n\nThis matches the previous two questions: $f(3) = 15$ and $f(-3) = 15$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-functions-basics-q05",
+  "topicId": "alg-functions-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$f(x) = 5 - 2x$ and $g(x) = x^2 + 1$.\n\nFind, simplifying where possible,\n(a) $f(-4)$\n(b) $f(a + 1)$\n(c) $g(2a)$\n(d) $g(a - 1)$",
+  "hint": "Replace **every** $x$ with the new input, in brackets, then simplify.",
+  "answer": "(a) 13 (b) $3 - 2a$ (c) $4a^2 + 1$ (d) $a^2 - 2a + 2$",
+  "solution": "**(a)** $f(-4) = 5 - 2(-4) = 5 + 8 = 13$\n\n**(b)** $f(a + 1) = 5 - 2(a + 1) = 5 - 2a - 2 = 3 - 2a$\n\n**(c)** $g(2a) = (2a)^2 + 1 = 4a^2 + 1$ (the bracket squares the 2 as well: not $2a^2 + 1$)\n\n**(d)** $g(a - 1) = (a - 1)^2 + 1 = a^2 - 2a + 1 + 1 = a^2 - 2a + 2$",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q06",
+  "topicId": "alg-functions-basics",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Mappings A and B are shown.\n\n(a) Mo says, \"A is not a function, because 1 and 2 both go to 3.\" Is Mo correct? Explain.\n(b) Is B a function? Explain.\n(c) Is the set of ordered pairs $\\{(-1, 1), (0, 0), (1, 1), (2, 4)\\}$ a function? Explain, and suggest a rule $f(x)$ that fits it.",
+  "hint": "A function needs each **input** to have exactly one output. Look at the arrows leaving each input.",
+  "answer": "(a) No, Mo is wrong: A is a function. Each input has exactly one output; two inputs sharing an output (many-to-one) is allowed. (b) No: the input 2 has two outputs, 4 and 5. (c) Yes: each input $-1, 0, 1, 2$ appears once; $f(x) = x^2$.",
+  "solution": "A relation is a **function** if every input is matched to **exactly one** output.\n\n**(a)** In A, 1 → 3, 2 → 3 and 3 → 7. Each input has one arrow leaving it, so **A is a function**. It does not matter that 1 and 2 share the output 3: that is a *many-to-one* function (like $x^2$, where $2$ and $-2$ both give 4). Mo is checking the wrong thing.\n\n**(b)** In B, the input 2 has **two** arrows, to 4 and to 5. So B is **not** a function: we would not know what output 2 gives.\n\n**(c)** The inputs (first coordinates) are $-1, 0, 1, 2$, each appearing once, so it **is** a function, even though $-1$ and $1$ share the output 1. Each output is the square of the input: $f(x) = x^2$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 210\" width=\"360\" height=\"210\"><text x=\"12\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><ellipse cx=\"44\" cy=\"107\" rx=\"22\" ry=\"75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><ellipse cx=\"134\" cy=\"107\" rx=\"22\" ry=\"75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><text x=\"44\" y=\"74.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"44\" y=\"112\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"44\" y=\"149.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"134\" y=\"87\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"134\" y=\"137\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"55\" y1=\"69.5\" x2=\"115.4\" y2=\"76.4\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M121,77 L114.4,73.1 L113.7,79.3 Z\" fill=\"currentColor\"/><line x1=\"55\" y1=\"107\" x2=\"115.6\" y2=\"88.6\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M121,87 L113.4,86 L115.2,92 Z\" fill=\"currentColor\"/><line x1=\"55\" y1=\"144.5\" x2=\"115.5\" y2=\"133\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M121,132 L113.5,130.2 L114.7,136.4 Z\" fill=\"currentColor\"/><text x=\"44\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">input</text><text x=\"134\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">output</text><text x=\"194\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B</text><ellipse cx=\"226\" cy=\"107\" rx=\"22\" ry=\"75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><ellipse cx=\"316\" cy=\"107\" rx=\"22\" ry=\"75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><text x=\"226\" y=\"74.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"226\" y=\"112\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"226\" y=\"149.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"316\" y=\"67\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"316\" y=\"97\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"316\" y=\"127\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><text x=\"316\" y=\"157\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"237\" y1=\"69.5\" x2=\"297.4\" y2=\"62.6\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M303,62 L295.7,59.7 L296.4,65.9 Z\" fill=\"currentColor\"/><line x1=\"237\" y1=\"107\" x2=\"297.5\" y2=\"93.2\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M303,92 L295.5,90.5 L296.9,96.6 Z\" fill=\"currentColor\"/><line x1=\"237\" y1=\"107\" x2=\"297.5\" y2=\"120.8\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M303,122 L296.9,117.4 L295.5,123.5 Z\" fill=\"currentColor\"/><line x1=\"237\" y1=\"144.5\" x2=\"297.4\" y2=\"151.4\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M303,152 L296.4,148.1 L295.7,154.3 Z\" fill=\"currentColor\"/><text x=\"226\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">input</text><text x=\"316\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">output</text><line x1=\"180\" y1=\"6\" x2=\"180\" y2=\"204\" stroke=\"currentColor\" stroke-opacity=\"0.3\"/></svg>"
+ },
+ {
+  "id": "alg-functions-basics-q07",
+  "topicId": "alg-functions-basics",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "$g(x) = x^2 - 4x$. Ella's working to find $g(-3)$ is shown below.\n\n$$g(-3) = -3^2 - 4 \\times -3$$\n$$= -9 + 12$$\n$$= 3$$\n\n(a) Identify Ella's mistake and explain why it is wrong.\n(b) Find the correct value of $g(-3)$.",
+  "hint": "What is $-3^2$ according to the order of operations? What did Ella mean to square?",
+  "answer": "(a) She wrote $-3^2$ without brackets, which equals $-9$; the input $-3$ must be squared as a whole: $(-3)^2 = 9$. (b) $g(-3) = 21$",
+  "solution": "**(a)** The mistake is in the first line. Ella substituted $-3$ **without brackets**. By the order of operations, $-3^2$ means $-(3^2) = -9$: only the 3 is squared. But the input is the whole number $-3$, so we need $(-3)^2 = (-3) \\times (-3) = 9$.\n\nThe second term, $-4 \\times (-3) = +12$, is correct.\n\n**(b)**\n$$g(-3) = (-3)^2 - 4(-3) = 9 + 12 = 21$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q08",
+  "topicId": "alg-functions-basics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$h(x) = \\sqrt{2x - 6}$. Ben is asked for the domain of $h$. He writes:\n\n\"You can't take the square root of a negative number, so $x$ can't be negative. The domain is $x \\ge 0$.\"\n\n(a) Show that $x = 1$ is in Ben's domain but $h(1)$ is not a real number.\n(b) Explain Ben's mistake.\n(c) Find the correct domain and the range of $h$.",
+  "hint": "The restriction applies to the expression **under** the square root sign, not to $x$ itself.",
+  "answer": "(a) $h(1) = \\sqrt{2 - 6} = \\sqrt{-4}$, not real. (b) He applied the condition to $x$ instead of to $2x - 6$. (c) Domain $x \\ge 3$; range $h(x) \\ge 0$",
+  "solution": "**(a)** $x = 1 \\ge 0$, so it is in Ben's domain. But $h(1) = \\sqrt{2(1) - 6} = \\sqrt{-4}$, which is not a real number.\n\n**(b)** It is the expression **under** the root, $2x - 6$, that must not be negative, not $x$. Ben has applied the rule to the wrong thing.\n\n**(c)**\n$$2x - 6 \\ge 0 \\Rightarrow 2x \\ge 6 \\Rightarrow x \\ge 3$$\n**Domain:** $x \\ge 3$.\n\nAt $x = 3$, $h(3) = \\sqrt{0} = 0$, and as $x$ increases, $h(x)$ takes every non-negative value (e.g. $h(5) = 2$, $h(21) = 6$). A square root is never negative.\n**Range:** $h(x) \\ge 0$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q09",
+  "topicId": "alg-functions-basics",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Graphs A, B and C are shown. A is $y = x^2 - 2$, B is the circle $x^2 + y^2 = 4$ and C is the curve $x = y^2 - 1$.\n\nSam says, \"A is not a function, because the horizontal line $y = 2$ crosses it twice.\"\n\n(a) Explain why Sam's reasoning is wrong.\n(b) For each graph, decide whether it shows $y$ as a function of $x$. Justify each answer.",
+  "hint": "Use the **vertical** line test: does any vertical line meet the graph more than once? Try $x = 0$ on each graph.",
+  "answer": "(a) The test uses vertical lines, not horizontal ones; a horizontal line meeting twice just means two inputs share an output, which is allowed. (b) A: function (every vertical line meets it once). B: not a function (e.g. $x = 0$ meets it at $y = 2$ and $y = -2$). C: not a function (e.g. $x = 0$ meets it at $y = 1$ and $y = -1$).",
+  "solution": "**Vertical line test:** a graph shows $y$ as a function of $x$ if every vertical line meets it **at most once** (each input $x$ has only one output $y$).\n\n**(a)** A horizontal line $y = 2$ meeting A twice means two **inputs** ($x = 2$ and $x = -2$) give the same output, 2. That is allowed for a function (many-to-one). Sam has used a horizontal line instead of a vertical one.\n\n**(b)**\n* **A** ($y = x^2 - 2$): each $x$ gives one value of $y$, and every vertical line meets the parabola exactly once. **Function.**\n* **B** (circle): the line $x = 0$ meets it at $(0, 2)$ and $(0, -2)$, so the input 0 has two outputs. **Not a function.**\n* **C** ($x = y^2 - 1$): the line $x = 0$ meets it where $y^2 = 1$, at $(0, 1)$ and $(0, -1)$. **Not a function** of $x$.",
+  "linkedTopicIds": [
+   "alg-circle-equations"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 356 162\" width=\"356\" height=\"162\"><g><line x1=\"8\" y1=\"154\" x2=\"8\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"24\" y1=\"154\" x2=\"24\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"154\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"56\" y1=\"154\" x2=\"56\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"154\" x2=\"72\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"88\" y1=\"154\" x2=\"88\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"104\" y1=\"154\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"154\" x2=\"104\" y2=\"154\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"138\" x2=\"104\" y2=\"138\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"122\" x2=\"104\" y2=\"122\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"106\" x2=\"104\" y2=\"106\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"90\" x2=\"104\" y2=\"90\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"74\" x2=\"104\" y2=\"74\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"58\" x2=\"104\" y2=\"58\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"42\" x2=\"104\" y2=\"42\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"26\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"4\" y1=\"106\" x2=\"111\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"56\" y1=\"158\" x2=\"56\" y2=\"19\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M112,106 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M56,18 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"110\" y=\"98\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"64\" y=\"27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"88\" y1=\"103\" x2=\"88\" y2=\"109\" stroke=\"currentColor\"/><text x=\"88\" y=\"121\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"53\" y1=\"74\" x2=\"59\" y2=\"74\" stroke=\"currentColor\"/><text x=\"52\" y=\"78\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><path d=\"M13.7,26 L19,52.4 L24.3,75.1 L29.6,94.3 L34.8,110 L40.1,122.2 L45.4,131 L48,134 L50.7,136.2 L53.4,137.6 L56,138 L58.6,137.6 L61.3,136.2 L64,134 L66.6,131 L71.9,122.2 L77.2,110 L82.4,94.3 L87.7,75.1 L93,52.4 L98.3,26\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"4\" y=\"14\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text></g><g transform=\"translate(120,0)\"><line x1=\"8\" y1=\"154\" x2=\"8\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"24\" y1=\"154\" x2=\"24\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"154\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"56\" y1=\"154\" x2=\"56\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"154\" x2=\"72\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"88\" y1=\"154\" x2=\"88\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"104\" y1=\"154\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"154\" x2=\"104\" y2=\"154\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"138\" x2=\"104\" y2=\"138\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"122\" x2=\"104\" y2=\"122\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"106\" x2=\"104\" y2=\"106\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"90\" x2=\"104\" y2=\"90\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"74\" x2=\"104\" y2=\"74\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"58\" x2=\"104\" y2=\"58\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"42\" x2=\"104\" y2=\"42\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"26\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"4\" y1=\"106\" x2=\"111\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"56\" y1=\"158\" x2=\"56\" y2=\"19\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M112,106 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M56,18 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"110\" y=\"98\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"64\" y=\"27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"88\" y1=\"103\" x2=\"88\" y2=\"109\" stroke=\"currentColor\"/><text x=\"88\" y=\"121\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"53\" y1=\"74\" x2=\"59\" y2=\"74\" stroke=\"currentColor\"/><text x=\"52\" y=\"78\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><path d=\"M24,106 L24.6,99.8 L26.4,93.8 L29.4,88.2 L33.4,83.4 L38.2,79.4 L43.7,76.4 L49.8,74.6 L56,74 L62.2,74.6 L68.3,76.4 L73.8,79.4 L78.6,83.4 L82.6,88.2 L85.6,93.8 L87.4,99.8 L88,106\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M24,106 L24.6,112.2 L26.4,118.2 L29.4,123.8 L33.4,128.6 L38.2,132.6 L43.7,135.6 L49.8,137.4 L56,138 L62.2,137.4 L68.3,135.6 L73.8,132.6 L78.6,128.6 L82.6,123.8 L85.6,118.2 L87.4,112.2 L88,106\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"4\" y=\"14\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B</text></g><g transform=\"translate(240,0)\"><line x1=\"8\" y1=\"154\" x2=\"8\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"24\" y1=\"154\" x2=\"24\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"40\" y1=\"154\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"56\" y1=\"154\" x2=\"56\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"154\" x2=\"72\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"88\" y1=\"154\" x2=\"88\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"104\" y1=\"154\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"154\" x2=\"104\" y2=\"154\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"138\" x2=\"104\" y2=\"138\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"122\" x2=\"104\" y2=\"122\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"106\" x2=\"104\" y2=\"106\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"90\" x2=\"104\" y2=\"90\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"74\" x2=\"104\" y2=\"74\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"58\" x2=\"104\" y2=\"58\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"42\" x2=\"104\" y2=\"42\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"8\" y1=\"26\" x2=\"104\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"4\" y1=\"106\" x2=\"111\" y2=\"106\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"158\" x2=\"40\" y2=\"19\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M112,106 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M40,18 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"110\" y=\"98\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"48\" y=\"27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"72\" y1=\"103\" x2=\"72\" y2=\"109\" stroke=\"currentColor\"/><text x=\"72\" y=\"121\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"37\" y1=\"74\" x2=\"43\" y2=\"74\" stroke=\"currentColor\"/><text x=\"36\" y=\"78\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><path d=\"M24,106 L25,102 L28,98 L33,94 L40,90 L49,86 L60,82 L73,78 L88,74\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M24,106 L25,110 L28,114 L33,118 L40,122 L49,126 L60,130 L73,134 L88,138\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"4\" y=\"14\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">C</text></g></svg>"
+ },
+ {
+  "id": "alg-functions-basics-q10",
+  "topicId": "alg-functions-basics",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "State the domain and range of each function.\n\n(a) $f(x) = \\frac{1}{x - 3}$\n(b) $g(x) = \\sqrt{x + 4}$\n(c) $h(x) = x^2 + 2$\n(d) $k(x) = 2x + 1$, with domain $-1 \\le x \\le 3$ (state the range only)",
+  "hint": "Domain: which inputs are not allowed (division by zero, square root of a negative)? Range: which outputs can actually occur?",
+  "answer": "(a) Domain $x \\ne 3$; range $f(x) \\ne 0$ (b) Domain $x \\ge -4$; range $g(x) \\ge 0$ (c) Domain all real $x$; range $h(x) \\ge 2$ (d) $-1 \\le k(x) \\le 7$",
+  "solution": "**(a)** Division by zero is impossible, so $x - 3 \\ne 0$: **domain** $x \\ne 3$. A fraction with numerator 1 can never equal 0, but it can take any other value: **range** $f(x) \\ne 0$.\n\n**(b)** The expression under the root must be non-negative: $x + 4 \\ge 0$, so **domain** $x \\ge -4$. A square root is never negative and starts at $g(-4) = 0$: **range** $g(x) \\ge 0$.\n\n**(c)** Any $x$ can be squared: **domain** all real numbers. $x^2 \\ge 0$, so $x^2 + 2 \\ge 2$, with $h(0) = 2$: **range** $h(x) \\ge 2$.\n\n**(d)** $k$ is increasing (a straight line with positive gradient), so the smallest and largest outputs are at the ends of the domain: $k(-1) = -1$ and $k(3) = 7$.\n**Range:** $-1 \\le k(x) \\le 7$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q11",
+  "topicId": "alg-functions-basics",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "$f(x) = 4x - 3$ and $g(x) = x^2 + 1$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $f(5)$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find $g(-3)$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Solve $f(x) = g(2)$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Show that the equation $f(x) = g(x)$ has exactly one solution.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "calculator": false,
+  "hint": "In (c), work out the number $g(2)$ first; then it is a linear equation. In (d), form a quadratic equal to zero and factorise.",
+  "answer": "(a) 17 (b) 10 (c) $x = 2$ (d) $x^2 - 4x + 4 = 0 \\Rightarrow (x - 2)^2 = 0$, so the only solution is $x = 2$.",
+  "solution": "**(a)** $f(5) = 4(5) - 3 = 17$ **B1**\n\n**(b)** $g(-3) = (-3)^2 + 1 = 10$ **B1**\n\n**(c)** $g(2) = 2^2 + 1 = 5$ **M1**\n$$4x - 3 = 5 \\Rightarrow 4x = 8 \\Rightarrow x = 2$$ **A1**\n\n**(d)** $x^2 + 1 = 4x - 3$\n$$x^2 - 4x + 4 = 0$$ **M1** (rearranging to a quadratic $= 0$)\n$$(x - 2)^2 = 0$$\nBoth factors are the same, so the only solution is $x = 2$. Hence exactly one solution. **A1**\n\n(Graphically, the line $y = 4x - 3$ is a tangent to the curve $y = x^2 + 1$ at $(2, 5)$.)",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q12",
+  "topicId": "alg-functions-basics",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The function $f$ is defined by\n$$f(x) = 2x^2 - 8x + 5, \\quad x \\in \\mathbb{R}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Express $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$ and $c$ are constants to be found.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "State the range of $f$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "The function $g$ is defined by $g(x) = 2x^2 - 8x + 5$, $0 \\le x \\le 5$. Find the range of $g$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Show that $f(1) = f(3)$ and explain what this tells you about the mapping $f$.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "hint": "Take out the factor 2 from the $x^2$ and $x$ terms before completing the square. For (c), check the minimum point and both ends of the domain.",
+  "answer": "(a) $2(x - 2)^2 - 3$ ($a = 2$, $b = -2$, $c = -3$) (b) $f(x) \\ge -3$ (c) $-3 \\le g(x) \\le 15$ (d) $f(1) = f(3) = -1$: $f$ is many-to-one (it is still a function, but not one-to-one).",
+  "solution": "**(a)**\n$$2x^2 - 8x + 5 = 2(x^2 - 4x) + 5$$ **M1**\n$$= 2\\left[(x - 2)^2 - 4\\right] + 5 = 2(x - 2)^2 - 8 + 5$$ **M1**\n$$= 2(x - 2)^2 - 3$$ **A1**\nSo $a = 2$, $b = -2$, $c = -3$.\n\n**(b)** $(x - 2)^2 \\ge 0$, so $f(x) \\ge -3$, with equality at $x = 2$. Range: $f(x) \\ge -3$. **B1**\n\n**(c)** The minimum point $x = 2$ is inside $0 \\le x \\le 5$, so the least value is $g(2) = -3$.\nThe greatest value is at the end further from 2: $g(0) = 5$, $g(5) = 50 - 40 + 5 = 15$. **M1** (considering the vertex and both end points)\nRange: $-3 \\le g(x) \\le 15$. **A1**\n\n**(d)** $f(1) = 2 - 8 + 5 = -1$ and $f(3) = 18 - 24 + 5 = -1$, so $f(1) = f(3)$. Two different inputs give the same output, so $f$ is a **many-to-one** function (symmetrical about $x = 2$); it is not one-to-one. **B1**",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q13",
+  "topicId": "alg-functions-basics",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A taxi company charges a fixed fee of £2.80 plus £1.60 per kilometre. The cost, in pounds, of a journey of $m$ kilometres is\n$$C(m) = 2.80 + 1.60m$$\n\n(a) Find $C(5)$ and explain what it means.\n(b) Solve $C(m) = 18.80$ and explain what your answer means.\n(c) State a sensible domain for $C$ and the corresponding range.\n(d) Explain why $C(m) = 2$ has no sensible solution.",
+  "hint": "In (a) the input is 5; in (b) the output is 18.80. Distances cannot be negative.",
+  "answer": "(a) $C(5) = 10.80$: a 5 km journey costs £10.80. (b) $m = 10$: a fare of £18.80 is for a 10 km journey. (c) Domain $m \\ge 0$; range $C(m) \\ge 2.80$ (d) Every journey costs at least the £2.80 fixed fee; solving gives $m = -0.5$, a negative distance.",
+  "solution": "**(a)** $C(5) = 2.80 + 1.60 \\times 5 = 2.80 + 8.00 = 10.80$. A 5 km journey costs **£10.80**.\n\n**(b)** Now the output is known:\n$$2.80 + 1.60m = 18.80 \\Rightarrow 1.60m = 16 \\Rightarrow m = 10$$\nA journey costing £18.80 is **10 km** long.\n\n**(c)** Distance cannot be negative, so the domain is $m \\ge 0$. The smallest fare is $C(0) = 2.80$ and the cost increases with $m$, so the range is $C(m) \\ge 2.80$.\n\n**(d)** $2.80 + 1.60m = 2 \\Rightarrow m = -0.5$, which is a negative distance, outside the domain. In context: £2 is less than the fixed fee, so no journey can cost £2.",
+  "linkedTopicIds": [
+   "alg-straight-line-graphs"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q14",
+  "topicId": "alg-functions-basics",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "This function machine converts a temperature in degrees Celsius, $C$, to degrees Fahrenheit, $F$:\n\n$$C \\;\\longrightarrow\\; \\boxed{\\times 1.8} \\;\\longrightarrow\\; \\boxed{+32} \\;\\longrightarrow\\; F$$\n\n(a) A summer day in Seville reaches 35 °C. Convert this to °F.\n(b) A recipe says to chill a dessert at 41 °F. By reversing the function machine, convert this to °C.\n(c) Write the conversion as a function $F(C)$, and find the one temperature that has the same value in both scales.",
+  "hint": "For (b), start at 41 and undo the operations in reverse order. For (c), solve $F(C) = C$.",
+  "answer": "(a) 95 °F (b) 5 °C (c) $F(C) = 1.8C + 32$; $-40$ (that is, $-40$ °C $= -40$ °F)",
+  "solution": "**(a)** $35 \\times 1.8 = 63$, then $63 + 32 = 95$. So 35 °C $=$ **95 °F**.\n\n**(b)** Reverse machine: undo $+32$ first, then undo $\\times 1.8$.\n$$41 \\xrightarrow{-32} 9 \\xrightarrow{\\div 1.8} 5$$\nSo 41 °F $=$ **5 °C** (a typical fridge temperature). **Check:** $5 \\times 1.8 + 32 = 9 + 32 = 41$ ✓.\n\n**(c)** $F(C) = 1.8C + 32$. The same value in both scales means the output equals the input:\n$$1.8C + 32 = C \\Rightarrow 0.8C = -32 \\Rightarrow C = -40$$\n**Check:** $1.8(-40) + 32 = -72 + 32 = -40$ ✓. So $-40$ °C $= -40$ °F.",
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q15",
+  "topicId": "alg-functions-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The function $f$ is defined on the positive integers by\n$$f(n) = n^2 + n + 41$$\n\n(a) Find $f(1)$, $f(2)$ and $f(3)$, and show that each is a prime number.\n(b) Eve says, \"$f(n)$ is prime for every positive integer $n$.\" Show that $f(40)$ is a square number, and hence that Eve is wrong.\n(c) Without a calculator, show that $f(41)$ is also not prime.",
+  "hint": "For (b), try writing $f(40) = 40^2 + 40 + 41$ as $40^2 + 2 \\times 40 + 1$. For (c), notice that every term of $41^2 + 41 + 41$ has a common factor.",
+  "answer": "(a) $f(1) = 43$, $f(2) = 47$, $f(3) = 53$, all prime (b) $f(40) = 1681 = 41^2$, which is not prime, so $n = 40$ is a counter-example. (c) $f(41) = 41(41 + 1 + 1) = 41 \\times 43$",
+  "solution": "**(a)**\n* $f(1) = 1 + 1 + 41 = 43$\n* $f(2) = 4 + 2 + 41 = 47$\n* $f(3) = 9 + 3 + 41 = 53$\n\nEach is prime: none is divisible by 2, 3, 5 or 7 (it is enough to test primes up to $\\sqrt{53} < 8$).\n\n**(b)**\n$$f(40) = 40^2 + 40 + 41 = 40^2 + 2(40) + 1 = (40 + 1)^2 = 41^2 = 1681$$\nSince $1681 = 41 \\times 41$, it has a factor other than 1 and itself, so it is **not prime**. One counter-example is enough to disprove Eve's claim.\n\n**(c)** Every term has a factor 41:\n$$f(41) = 41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 \\times 43$$\nSo $f(41)$ is not prime either.\n\nEvaluating $f$ for many inputs gives a striking pattern (it is prime for $n = 0$ to $39$), but a pattern is not a proof: a single input whose output is not prime breaks the claim.",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes",
+   "pure-proof"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q16",
+  "topicId": "alg-functions-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$f(x) = x^2 - 2x$.\n\nThe points $A$ and $B$ lie on the curve $y = f(x)$, with $x$-coordinates $-1$ and $4$ respectively.\n\n(a) Find the coordinates of $A$ and $B$.\n(b) Find the exact length of $AB$, giving your answer as a simplified surd.\n(c) Find the coordinates of $M$, the midpoint of $AB$.\n(d) Does $M$ lie on the curve $y = f(x)$? Explain.",
+  "hint": "The $y$-coordinate of a point on $y = f(x)$ is $f$ of its $x$-coordinate. Use brackets when substituting $-1$.",
+  "answer": "(a) $A(-1, 3)$, $B(4, 8)$ (b) $5\\sqrt{2}$ (c) $M\\left(\\frac{3}{2}, \\frac{11}{2}\\right)$ (d) No: $f\\left(\\frac{3}{2}\\right) = -\\frac{3}{4} \\ne \\frac{11}{2}$ ($M$ is above the curve).",
+  "solution": "**(a)**\n$$f(-1) = (-1)^2 - 2(-1) = 1 + 2 = 3 \\Rightarrow A(-1, 3)$$\n$$f(4) = 16 - 8 = 8 \\Rightarrow B(4, 8)$$\n\n**(b)**\n$$AB = \\sqrt{(4 - (-1))^2 + (8 - 3)^2} = \\sqrt{25 + 25} = \\sqrt{50} = \\sqrt{25 \\times 2} = 5\\sqrt{2}$$\n\n**(c)**\n$$M = \\left(\\frac{-1 + 4}{2}, \\frac{3 + 8}{2}\\right) = \\left(\\frac{3}{2}, \\frac{11}{2}\\right)$$\n\n**(d)** On the curve, at $x = \\frac{3}{2}$:\n$$f\\left(\\frac{3}{2}\\right) = \\frac{9}{4} - 3 = -\\frac{3}{4}$$\nThis is not $\\frac{11}{2}$, so $M$ is **not** on the curve. (It lies above it: a chord of a $\\cup$-shaped curve lies above the curve between its end points.)",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance",
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q17",
+  "topicId": "alg-functions-basics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The function $f$ is defined by\n$$f(x) = \\frac{x + 3}{x - 1}, \\quad x \\ne 1$$\n\n(a) Explain why $x = 1$ must be excluded from the domain.\n(b) Show that there is no value of $x$ for which $f(x) = 1$.\n(c) By rearranging $y = \\frac{x + 3}{x - 1}$ to make $x$ the subject, find the range of $f$.\n(d) Solve $f(x) = x$.",
+  "hint": "For (c), multiply by $(x - 1)$, collect the $x$ terms on one side and factorise. Which value of $y$ makes your expression for $x$ impossible?",
+  "answer": "(a) It makes the denominator zero. (b) $x + 3 = x - 1$ gives $3 = -1$, a contradiction. (c) $x = \\frac{y + 3}{y - 1}$, which exists for every $y \\ne 1$: range is all real numbers except 1, i.e. $f(x) \\ne 1$. (d) $x = 3$ or $x = -1$",
+  "solution": "**(a)** At $x = 1$ the denominator is $1 - 1 = 0$, and division by zero is undefined.\n\n**(b)** Suppose $\\frac{x + 3}{x - 1} = 1$. Then $x + 3 = x - 1$, so $3 = -1$, which is impossible. So 1 is never an output.\n\n**(c)**\n$$y = \\frac{x + 3}{x - 1} \\Rightarrow y(x - 1) = x + 3 \\Rightarrow xy - y = x + 3$$\n$$xy - x = y + 3 \\Rightarrow x(y - 1) = y + 3 \\Rightarrow x = \\frac{y + 3}{y - 1}$$\n\nFor any $y \\ne 1$ this gives an input $x$, and that $x$ is never 1 (by (b), with the roles swapped: $\\frac{y + 3}{y - 1} = 1$ is impossible). So every real number except 1 is an output.\n\n**Range:** $f(x) \\in \\mathbb{R}$, $f(x) \\ne 1$.\n\n**(d)**\n$$\\frac{x + 3}{x - 1} = x \\Rightarrow x + 3 = x^2 - x \\Rightarrow x^2 - 2x - 3 = 0 \\Rightarrow (x - 3)(x + 1) = 0$$\n$x = 3$ or $x = -1$ (neither is the excluded value 1).\n\n**Check:** $f(3) = \\frac{6}{2} = 3$ ✓; $f(-1) = \\frac{2}{-2} = -1$ ✓.",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions",
+   "alg-rearranging-formulae"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-functions-basics-q18",
+  "topicId": "alg-functions-basics",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "The function $f$ is defined by\n$$f(x) = \\sqrt{6 - x} + \\sqrt{x - 2}$$\nfor all real $x$ for which both square roots are defined.\n\n(a) Find the domain of $f$.\n(b) Work out $f(2)$, $f(4)$ and $f(6)$.\n(c) Show that $\\big(f(x)\\big)^2 = 4 + 2\\sqrt{4 - (x - 4)^2}$.\n(d) Hence find the range of $f$, giving exact values.",
+  "hint": "For (a), **both** expressions under the roots must be non-negative. For (c), expand $(\\sqrt{p} + \\sqrt{q})^2 = p + q + 2\\sqrt{pq}$ and complete the square inside the root.",
+  "answer": "(a) $2 \\le x \\le 6$ (b) $f(2) = 2$, $f(4) = 2\\sqrt{2}$, $f(6) = 2$ (c) Shown (d) $2 \\le f(x) \\le 2\\sqrt{2}$",
+  "solution": "**(a)** We need $6 - x \\ge 0$ **and** $x - 2 \\ge 0$, i.e. $x \\le 6$ and $x \\ge 2$. (The conditions apply to the expressions under the roots, not to $x$ itself.)\n**Domain:** $2 \\le x \\le 6$.\n\n**(b)** $f(2) = \\sqrt{4} + 0 = 2$; $f(4) = \\sqrt{2} + \\sqrt{2} = 2\\sqrt{2}$; $f(6) = 0 + \\sqrt{4} = 2$.\n\n**(c)**\n$$\\big(f(x)\\big)^2 = (6 - x) + (x - 2) + 2\\sqrt{(6 - x)(x - 2)} = 4 + 2\\sqrt{(6 - x)(x - 2)}$$\nExpand and complete the square:\n$$(6 - x)(x - 2) = -x^2 + 8x - 12 = -\\left[(x - 4)^2 - 16\\right] - 12 = 4 - (x - 4)^2$$\nSo $\\big(f(x)\\big)^2 = 4 + 2\\sqrt{4 - (x - 4)^2}$. $\\blacksquare$\n\n**(d)** On the domain, $0 \\le (x - 4)^2 \\le 4$, so $0 \\le 4 - (x - 4)^2 \\le 4$ and the square root lies between 0 and 2.\n\nHence $4 \\le \\big(f(x)\\big)^2 \\le 4 + 2 \\times 2 = 8$. Since $f(x) \\ge 0$ (a sum of square roots),\n$$2 \\le f(x) \\le \\sqrt{8} = 2\\sqrt{2}$$\nThe minimum 2 occurs at $x = 2$ and $x = 6$, the maximum $2\\sqrt{2}$ at $x = 4$ (matching (b)), and by continuity every value in between is taken.\n\n**Range:** $2 \\le f(x) \\le 2\\sqrt{2}$.",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ }
+]
