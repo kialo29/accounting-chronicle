@@ -91,3 +91,12 @@
 - [Ch28] Ahsoka free; believes Anakin. Anakin grateful to Palpatine; Obi-Wan won't look at him.
 - [Ch29] Ahsoka free, not a Jedi, leaving Coruscant with Fives on a scrap hauler from Berth Nine.
 
+
+## Review-pass corrections (authoritative over earlier entries)
+- Timeline at Narkis: Anakin's visit day 53; Barriss's healer visit day 92; collar recalibrated ~day 93; Bane's contract (Ch14, ~day 95) says "three weeks"; mine collapse/collar release ~day 114; raid ~day 118 (release was four days before the raid). Healer circuit: four weeks outbound.
+- Palpatine knew of Barriss BEFORE the trial (auxiliary maintenance camera, upper service passage — Ch05 coda); the gallery frame only gave him her face. Detention-corridor cameras for the troopers' deaths were reported "non-functional" (relay fault) and accepted by Palpatine at trial (Ch04).
+- Dooku supplied Bane with Narkis schematics and the collar spec (Senate funding-debate exhibits + contractor pages). Ahsoka timed the coupling pull to drop at Florrum deliberately (Ch16).
+- Barriss followed Anakin down from the Temple to find Ventress (Ch01). Barriss never went back to Pesk; thought his death was luck (Ch28) — the cleaner is the Chancellor's (implied).
+- Tup's line is "It was the order" (never the canon catchphrase). Ahsoka's posting to Cut Three came in her first week via a transfer order with an untraceable off-world authorization code (Ch27); Ahsoka carries Padmé's datacard with that code (Ch29) — sequel hook.
+- Fives returned to Coruscant via borrowed transponder code / Undercroft berth (Ch24); Rex gave Fives his dented helmet wrapped in a shirt at Berth Nine (Ch20). Ahsoka recaptured holding a stolen Guard baton, not her sabers.
+- Barriss's cell is three doors from Ahsoka's old one; cell doors are force fields whose power record runs on a separate circuit (never opened); one junction guard; Anakin two floors above. The killer used a route the logs never recorded (Ch30).
