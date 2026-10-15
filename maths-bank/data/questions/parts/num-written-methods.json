@@ -1,0 +1,266 @@
+[
+ {
+  "id": "num-written-methods-q01",
+  "topicId": "num-written-methods",
+  "difficulty": 1,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A theatre has 3500 seats. It sold 3486 tickets for Friday's show and 2757 tickets for Saturday's show.\n\n(a) How many tickets did it sell altogether for the two shows?\n\n(b) How many seats were **not** sold over the two nights?",
+  "hint": "Use column addition for (a), lining up ones under ones. For (b), the total number of seats over two nights is $2 \\times 3500$.",
+  "answer": "(a) $6243$ tickets (b) $757$ seats",
+  "solution": "(a) Column addition, working from the right:\n$$\\begin{array}{r} 3486 \\\\ +\\ 2757 \\\\ \\hline 6243 \\end{array}$$\n\nOnes: $6 + 7 = 13$, write 3 carry 1. Tens: $8 + 5 + 1 = 14$, write 4 carry 1. Hundreds: $4 + 7 + 1 = 12$, write 2 carry 1. Thousands: $3 + 2 + 1 = 6$.\n\n**6243 tickets.**\n\n(b) Seats over two nights: $2 \\times 3500 = 7000$.\n$$\\begin{array}{r} 7000 \\\\ -\\ 6243 \\\\ \\hline 757 \\end{array}$$\n\nThe top number has zeros, so exchange across them: $7000 = 6000 + 900 + 90 + 10$. Then ones $10 - 3 = 7$, tens $9 - 4 = 5$, hundreds $9 - 2 = 7$, thousands $6 - 6 = 0$.\n\n**757 seats** were not sold. Check: $6243 + 757 = 7000$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q02",
+  "topicId": "num-written-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out $745 - 312$.",
+  "hint": "Line up the ones, tens and hundreds, then subtract column by column starting from the right.",
+  "answer": "$433$",
+  "solution": "$$\\begin{array}{r} 745 \\\\ -\\ 312 \\\\ \\hline 433 \\end{array}$$\n\nOnes: $5 - 2 = 3$. Tens: $4 - 1 = 3$. Hundreds: $7 - 3 = 4$.\n\nCheck with the inverse: $433 + 312 = 745$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q03",
+  "topicId": "num-written-methods",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Work out $745 - 318$.",
+  "hint": "In the ones column, 5 is smaller than 8. Exchange one ten for ten ones.",
+  "answer": "$427$",
+  "solution": "**What changed:** the ones digit of the number being subtracted is now 8, which is bigger than the 5 above it, so we must exchange.\n\nOnes: $5 - 8$ is not possible, so exchange 1 ten from the tens column: the 4 tens become 3 tens and the 5 ones become 15 ones. $15 - 8 = 7$.\n\nTens: $3 - 1 = 2$. Hundreds: $7 - 3 = 4$.\n$$745 - 318 = 427$$\n\n(Taking the smaller digit from the larger, $8 - 5 = 3$, would wrongly give $433$.) Check: $427 + 318 = 745$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q04",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Work out $705 - 318$.",
+  "hint": "There are no tens to exchange from, so exchange from the hundreds first.",
+  "answer": "$387$",
+  "solution": "**What changed:** the tens digit of the top number is now 0, so there is nothing to exchange from directly.\n\nOnes: $5 - 8$ is not possible. The tens column is empty, so exchange 1 hundred for 10 tens first ($7$ hundreds $\\to 6$ hundreds, $0$ tens $\\to 10$ tens), then exchange 1 ten for 10 ones ($10$ tens $\\to 9$ tens, $5$ ones $\\to 15$ ones).\n\nOnes: $15 - 8 = 7$. Tens: $9 - 1 = 8$. Hundreds: $6 - 3 = 3$.\n$$705 - 318 = 387$$\n\nCheck: $387 + 318 = 705$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q05",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Work out $705 - 38$.",
+  "hint": "38 has no hundreds digit. Write the 8 under the 5 and the 3 under the 0.",
+  "answer": "$667$",
+  "solution": "**What changed:** the number being subtracted now has only two digits, so take care to line it up by place value – ones under ones, tens under tens.\n$$\\begin{array}{r} 705 \\\\ -\\ \\ 38 \\\\ \\hline 667 \\end{array}$$\n\nExchange exactly as before: $705 = 600 + 90 + 15$.\n\nOnes: $15 - 8 = 7$. Tens: $9 - 3 = 6$. Hundreds: $6 - 0 = 6$.\n$$705 - 38 = 667$$\n\nCheck: $667 + 38 = 705$ ✓ (Lining the 3 up under the 7 would wrongly subtract 380.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q06",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "(a) Use short multiplication to work out $4067 \\times 8$.\n\n(b) Use long multiplication to work out $384 \\times 47$.",
+  "hint": "In (b), multiply by 7 and then by 40 (not 4), and add the two rows.",
+  "answer": "(a) $32\\,536$ (b) $18\\,048$",
+  "solution": "(a) Multiply each digit by 8, from the right, carrying as you go:\n\nOnes: $7 \\times 8 = 56$, write 6 carry 5. Tens: $6 \\times 8 + 5 = 53$, write 3 carry 5. Hundreds: $0 \\times 8 + 5 = 5$, write 5. Thousands: $4 \\times 8 = 32$, write 32.\n$$4067 \\times 8 = 32\\,536$$\n\n(b) The 4 in 47 is 4 **tens**, so the second row is $384 \\times 40$ – put a placeholder 0 in the ones column first.\n$$\\begin{array}{r} 384 \\\\ \\times\\ \\ 47 \\\\ \\hline 2688 \\\\ 15360 \\\\ \\hline 18048 \\end{array}$$\n\n$384 \\times 7 = 2688$ and $384 \\times 40 = 15\\,360$, so $384 \\times 47 = 2688 + 15\\,360 = 18\\,048$.\n\nEstimate: $400 \\times 50 = 20\\,000$, so $18\\,048$ is sensible.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q07",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use short division to work out\n\n(a) $7254 \\div 6$\n\n(b) $5629 \\div 8$. Give your answer (i) with a remainder (ii) as a mixed number (iii) as a decimal.",
+  "hint": "Divide each digit from the left, carrying any remainder into the next column. For (b)(iii) put a decimal point and zeros after 5629 and keep dividing.",
+  "answer": "(a) $1209$ (b)(i) $703$ r $5$ (ii) $703\\frac{5}{8}$ (iii) $703.625$",
+  "solution": "(a) $7 \\div 6 = 1$ r 1, carry 1 to make 12. $12 \\div 6 = 2$ r 0. $5 \\div 6 = 0$ r 5, carry 5 to make 54. $54 \\div 6 = 9$.\n$$7254 \\div 6 = 1209$$\nNote the 0 in the tens place: 6 does not go into 5, so write 0 and carry the 5. Check: $1209 \\times 6 = 7254$ ✓\n\n(b) $5 \\div 8 = 0$ r 5, carry to make 56. $56 \\div 8 = 7$. $2 \\div 8 = 0$ r 2, carry to make 29. $29 \\div 8 = 3$ r 5.\n\n(i) $5629 \\div 8 = 703$ remainder $5$.\n\n(ii) The remainder 5 out of 8 is $\\frac{5}{8}$, so $703\\frac{5}{8}$.\n\n(iii) Continue dividing: $5629.000 \\div 8$. Carry the 5 to make 50 tenths: $50 \\div 8 = 6$ r 2; 20 hundredths: $20 \\div 8 = 2$ r 4; 40 thousandths: $40 \\div 8 = 5$.\n$$5629 \\div 8 = 703.625$$\n\nCheck: $703 \\times 8 + 5 = 5624 + 5 = 5629$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q08",
+  "topicId": "num-written-methods",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "(a) Use long division to work out $9867 \\div 23$.\n\n(b) Hence write down $9880 \\div 23$, giving your answer with a remainder.",
+  "hint": "Write out the first few multiples of 23 before you start: $23, 46, 69, 92, 115, \\dots$",
+  "answer": "(a) $429$ (b) $429$ r $13$",
+  "solution": "(a) Useful multiples: $23 \\times 2 = 46$, $23 \\times 4 = 92$, $23 \\times 9 = 207$.\n\n23 does not go into 9, so look at 98: $23 \\times 4 = 92$. Write 4; $98 - 92 = 6$.\n\nBring down 6 to make 66: $23 \\times 2 = 46$. Write 2; $66 - 46 = 20$.\n\nBring down 7 to make 207: $23 \\times 9 = 207$. Write 9; $207 - 207 = 0$.\n$$9867 \\div 23 = 429$$\n\nCheck with the inverse: $429 \\times 23 = 429 \\times 20 + 429 \\times 3 = 8580 + 1287 = 9867$ ✓\n\n(b) $9880 = 9867 + 13$, and $13 < 23$, so 23 still goes in 429 times with 13 left over:\n$$9880 \\div 23 = 429 \\text{ remainder } 13$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q09",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Ravi works out $6002 - 1475$. His working is shown below.\n$$\\begin{array}{r} 6002 \\\\ -\\ 1475 \\\\ \\hline 5473 \\end{array}$$\n\nHe says: \"Ones: $5 - 2 = 3$. Tens: $7 - 0 = 7$. Hundreds: $4 - 0 = 4$. Thousands: $6 - 1 = 5$.\"\n\nExplain Ravi's mistake and find the correct answer. Show how to check your answer.",
+  "hint": "In each column you must take the **bottom** digit away from the **top** digit. What should you do when the top digit is smaller?",
+  "answer": "Ravi took the smaller digit from the larger in each column instead of exchanging. Correct answer: $4527$ (check: $4527 + 1475 = 6002$).",
+  "solution": "Ravi's mistake is in the ones, tens and hundreds columns. In each one the top digit is smaller than the bottom digit, so he swapped them round and took the smaller from the larger. Subtraction is not commutative: in the ones column the question is $2 - 5$, not $5 - 2$. When the top digit is too small you must **exchange** from the next column.\n\nHere the tens and hundreds are both 0, so exchange from the thousands:\n$$6002 = 5000 + 900 + 90 + 12$$\n\nOnes: $12 - 5 = 7$. Tens: $9 - 7 = 2$. Hundreds: $9 - 4 = 5$. Thousands: $5 - 1 = 4$.\n$$6002 - 1475 = 4527$$\n\n**Check with the inverse:** $4527 + 1475 = 6002$ ✓. (Ravi's answer fails: $5473 + 1475 = 6948$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q10",
+  "topicId": "num-written-methods",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Grace uses long multiplication to work out $528 \\times 34$. Her working is shown below.\n$$\\begin{array}{r} 528 \\\\ \\times\\ \\ 34 \\\\ \\hline 2112 \\\\ 1584 \\\\ \\hline 3696 \\end{array}$$\n\n(a) Use an estimate to show that Grace's answer cannot be right.\n\n(b) Identify her mistake and work out the correct answer.",
+  "hint": "Round both numbers to 1 significant figure for the estimate. What is the 3 in 34 really worth?",
+  "answer": "(a) $500 \\times 30 = 15\\,000$, so $3696$ is far too small. (b) The second row should be $528 \\times 30 = 15\\,840$ (she forgot the placeholder zero). Correct answer: $17\\,952$",
+  "solution": "(a) $528 \\times 34 \\approx 500 \\times 30 = 15\\,000$. Grace's answer, $3696$, is about 4 times too small, so it must be wrong.\n\n(b) The first row, $528 \\times 4 = 2112$, is correct.\n\nThe mistake is in the **second row**. The 3 in 34 is 3 **tens**, so this row should be $528 \\times 30$, not $528 \\times 3$. Grace forgot the placeholder zero in the ones column:\n$$528 \\times 30 = 15\\,840$$\n\nCorrect working:\n$$\\begin{array}{r} 528 \\\\ \\times\\ \\ 34 \\\\ \\hline 2112 \\\\ 15840 \\\\ \\hline 17952 \\end{array}$$\n\n$$528 \\times 34 = 17\\,952$$\nwhich is close to the estimate of $15\\,000$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q11",
+  "topicId": "num-written-methods",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Mo is asked to work out $1286 + 54$. His working is shown below.\n$$\\begin{array}{ccccc} & 1 & 2 & 8 & 6 \\\\ + & 5 & 4 & & \\\\ \\hline & 6 & 6 & 8 & 6 \\end{array}$$\n\nExplain what Mo has done wrong and work out the correct answer.",
+  "hint": "Which column should the 4 in 54 be in?",
+  "answer": "Mo lined the numbers up on the left, so he added 5400 instead of 54. Correct answer: $1340$",
+  "solution": "Mo has lined the numbers up from the **left** instead of by place value. By putting the 5 under the thousands and the 4 under the hundreds, he has actually worked out $1286 + 5400 = 6686$.\n\nThe 4 in 54 is 4 **ones** and must go under the 6 ones; the 5 is 5 **tens** and goes under the 8 tens:\n$$\\begin{array}{r} 1286 \\\\ +\\ \\ \\ 54 \\\\ \\hline 1340 \\end{array}$$\n\nOnes: $6 + 4 = 10$, write 0 carry 1. Tens: $8 + 5 + 1 = 14$, write 4 carry 1. Hundreds: $2 + 1 = 3$. Thousands: $1$.\n\n$$1286 + 54 = 1340$$\n\nSense check: adding about 50 to about 1300 cannot give more than 6000.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q12",
+  "topicId": "num-written-methods",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "(a) A school is taking 412 students to a science museum. Each minibus can carry 15 students. How many minibuses does the school need?\n\n(b) A farm collects 1000 eggs. The eggs are packed into boxes of 12. How many **full** boxes can be packed?\n\n(c) Explain why you rounded in different directions in (a) and (b).",
+  "hint": "Divide, find the remainder, then ask: what does the remainder mean in this situation?",
+  "answer": "(a) 28 minibuses (b) 83 full boxes (c) In (a) every student must have a seat, so round up; in (b) only complete boxes count, so round down.",
+  "solution": "(a) $412 \\div 15$: $15 \\times 27 = 405$ and $15 \\times 28 = 420$.\n$$412 \\div 15 = 27 \\text{ remainder } 7$$\n27 minibuses would leave 7 students behind, so the school needs **28 minibuses**. (An answer of \"27.47 minibuses\" makes no sense – you cannot hire part of a minibus.)\n\n(b) $1000 \\div 12$: $12 \\times 83 = 996$ and $12 \\times 84 = 1008$.\n$$1000 \\div 12 = 83 \\text{ remainder } 4$$\nThe 4 leftover eggs cannot fill a box, so **83 full boxes**.\n\n(c) In (a) the remainder represents people who still need transport, so an extra minibus is needed: round **up**. In (b) the remainder represents eggs that are not enough to make another full box, so they do not count: round **down**. The context, not the size of the remainder, decides the direction.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q13",
+  "topicId": "num-written-methods",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "You must show your working. Do not use a calculator.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out $276 \\times 43$",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Use your answer to part (a) to write down the value of $11\\,868 \\div 43$",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Ben has £500. He buys as many concert tickets as he can. Each ticket costs £18.\n\nWork out how many tickets Ben buys and how much money he has left.",
+    "marks": 3
+   }
+  ],
+  "hint": "For (c), divide 500 by 18 and interpret the remainder.",
+  "answer": "(a) $11\\,868$ (b) $276$ (c) 27 tickets, £14 left",
+  "solution": "(a) $276 \\times 40 = 11\\,040$ and $276 \\times 3 = 828$\n\nComplete method with place value correct, e.g. $11\\,040 + 828$ or a fully correct grid **M1**\n$$276 \\times 43 = 11\\,868 \\quad \\textbf{A1}$$\n\n(b) Division is the inverse of multiplication: $276 \\times 43 = 11\\,868$ so $11\\,868 \\div 43 = 276$ **B1**\n\n(c) $500 \\div 18$: $18 \\times 20 = 360$, $500 - 360 = 140$; $18 \\times 7 = 126$, $140 - 126 = 14$. **M1** for a correct method to divide 500 by 18 (or repeated subtraction / building up multiples of 18)\n\n$500 \\div 18 = 27$ remainder $14$\n\nBen buys **27 tickets** **A1** (he cannot buy part of a ticket, so round down)\n\nHe has **£14** left ($500 - 27 \\times 18 = 500 - 486 = 14$) **A1**\n\nTotal: 6 marks",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q14",
+  "topicId": "num-written-methods",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "You are given that\n$$47 \\times 36 = 1692$$\n\nUse this fact to write down the answers to the following. Explain how you got each one.\n\n(a) $1692 \\div 36$\n\n(b) $48 \\times 36$\n\n(c) $47 \\times 35$\n\n(d) $47 \\times 72$\n\n(e) $1692 \\div 94$",
+  "hint": "Think about inverse operations and about how the answer changes when one of the numbers changes: $48 \\times 36$ is one more lot of 36 than $47 \\times 36$.",
+  "answer": "(a) $47$ (b) $1728$ (c) $1645$ (d) $3384$ (e) $18$",
+  "solution": "(a) Division undoes multiplication: $47 \\times 36 = 1692$, so $1692 \\div 36 = 47$.\n\n(b) $48 \\times 36$ is 48 lots of 36, which is one more lot of 36 than $47 \\times 36$:\n$$48 \\times 36 = 1692 + 36 = 1728$$\n\n(c) $47 \\times 35$ is 35 lots of 47, which is one lot of 47 fewer than $47 \\times 36$:\n$$47 \\times 35 = 1692 - 47 = 1645$$\n\n(d) $72 = 2 \\times 36$, so the answer is doubled:\n$$47 \\times 72 = 2 \\times 1692 = 3384$$\n\n(e) $94 = 2 \\times 47$. Since $1692 \\div 47 = 36$, dividing by twice as much gives half the answer:\n$$1692 \\div 94 = 36 \\div 2 = 18$$\n\nCheck: $18 \\times 94 = 18 \\times 100 - 18 \\times 6 = 1800 - 108 = 1692$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q15",
+  "topicId": "num-written-methods",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Each box stands for a missing digit. Find the missing digits in each calculation. Explain your reasoning.\n\n(a)\n$$\\begin{array}{r} 4\\,\\square\\,7\\,\\square \\\\ -\\ \\square\\,8\\,\\square\\,6 \\\\ \\hline 1\\,9\\,3\\,8 \\end{array}$$\n\n(b)\n$$\\square 3 \\times 7 = 4 \\square 1$$",
+  "hint": "(a) Start in the ones column: what digit minus 6 ends in 8? You will need to exchange. (b) Start with $3 \\times 7$ and carry.",
+  "answer": "(a) $4774 - 2836 = 1938$ (b) $63 \\times 7 = 441$",
+  "solution": "(a) Work from the right.\n\n**Ones:** $\\square - 6$ must end in 8. No digit minus 6 equals 8, so there was an exchange: $(\\square + 10) - 6 = 8$, giving $\\square = 4$. One ten was exchanged, so the tens digit 7 becomes 6.\n\n**Tens:** $6 - \\square = 3$, so $\\square = 3$. No exchange needed.\n\n**Hundreds:** $\\square - 8 = 9$ is impossible without exchanging, so $(\\square + 10) - 8 = 9$, giving $\\square = 7$. The thousands digit 4 becomes 3.\n\n**Thousands:** $3 - \\square = 1$, so $\\square = 2$.\n$$4774 - 2836 = 1938$$\nCheck: $1938 + 2836 = 4774$ ✓\n\n(b) **Ones:** $3 \\times 7 = 21$. Write 1 (matches the answer) and carry 2.\n\n**Tens:** $\\square \\times 7 + 2$ must be a two-digit number starting with 4, i.e. between 40 and 49. So $\\square \\times 7$ is between 38 and 47, which means $\\square \\times 7 = 42$, $\\square = 6$. Then $42 + 2 = 44$.\n$$63 \\times 7 = 441$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-written-methods-q16",
+  "topicId": "num-written-methods",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A rectangular sports field measures 144 m by 72 m.\n\n(a) Work out the area of the field.\n\n(b) A fence is put around the whole edge of the field. There is a fence post at each corner, and the posts are placed every 8 m along the edges. How many posts are needed?\n\n(c) One box of grass seed covers $350\\ \\text{m}^2$. How many boxes are needed to seed the whole field?\n\nDo not use a calculator. Show your working.",
+  "hint": "Area of a rectangle $=$ length $\\times$ width. For the fence, work out the perimeter first and think about whether the first and last posts are the same post. Think carefully about what the remainder means in (c).",
+  "answer": "(a) $10\\,368\\ \\text{m}^2$ (b) 54 posts (c) 30 boxes",
+  "solution": "(a) Area $= 144 \\times 72$.\n\n$144 \\times 70 = 10\\,080$ and $144 \\times 2 = 288$.\n$$144 \\times 72 = 10\\,080 + 288 = 10\\,368\\ \\text{m}^2$$\n\n(b) Perimeter $= 2 \\times (144 + 72) = 2 \\times 216 = 432$ m.\n\nBoth sides are multiples of 8 ($144 = 18 \\times 8$ and $72 = 9 \\times 8$), so the posts land exactly on the corners. The fence is a closed loop: walking all the way round, the last gap ends at the very first post. So the number of posts equals the number of 8 m gaps:\n$$432 \\div 8 = 54 \\text{ posts}$$\n(Adding 1, as you would for a straight fence, would count the starting post twice.)\n\n(c) $10\\,368 \\div 350$: $350 \\times 30 = 10\\,500$, which is too big; $350 \\times 29 = 10\\,150$.\n$$10\\,368 - 10\\,150 = 218$$\nSo $10\\,368 \\div 350 = 29$ remainder $218$. 29 boxes would leave $218\\ \\text{m}^2$ unseeded, so round **up**: **30 boxes**."
+ },
+ {
+  "id": "num-written-methods-q17",
+  "topicId": "num-written-methods",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-hcf-lcm"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A PE teacher tries to split the students in Year 7 into equal teams.\n\nWhen she makes teams of 2, 3, 4, 5 or 6 there is always exactly **one** student left over. When she makes teams of 7 there is nobody left over.\n\n(a) What is the smallest possible number of students in Year 7?\n\n(b) The school has fewer than 1000 students in Year 7. Find the other possible number of students.",
+  "hint": "If one student sat out, the rest could be split exactly into teams of 2, 3, 4, 5 and 6. What is the lowest common multiple of 2, 3, 4, 5 and 6?",
+  "answer": "(a) 301 (b) 721",
+  "solution": "(a) If one student sits out, the number left, $n - 1$, divides exactly by 2, 3, 4, 5 and 6, so $n - 1$ is a common multiple of them.\n\n$\\text{LCM}(2, 3, 4, 5, 6)$: $4 = 2^2$, $6 = 2 \\times 3$, so $\\text{LCM} = 2^2 \\times 3 \\times 5 = 60$.\n\nSo $n - 1$ is a multiple of 60, and $n$ is one of\n$$61,\\ 121,\\ 181,\\ 241,\\ 301,\\ 361,\\ \\dots$$\n\nNow test each for division by 7 (short division):\n\n| $n$ | $n \\div 7$ |\n|---|---|\n| 61 | 8 r 5 |\n| 121 | 17 r 2 |\n| 181 | 25 r 6 |\n| 241 | 34 r 3 |\n| 301 | 43 r 0 ✓ |\n\nThe smallest number is **301** ($7 \\times 43 = 301$).\n\n(b) Going up by 60 each time adds $60 = 8 \\times 7 + 4$, so the remainder on division by 7 goes up by 4 each step (wrapping round past 7). Starting from remainder 0 at 301, the remainders are $0, 4, 1, 5, 2, 6, 3, 0, \\dots$ – it returns to 0 after **7** steps, i.e. after $7 \\times 60 = 420$.\n\nNext possibility: $301 + 420 = 721$. Check: $721 \\div 7 = 103$ ✓, and $721 - 1 = 720 = 12 \\times 60$ ✓. The one after is $1141$, which is too big.\n\nSo the other possible number is **721**."
+ },
+ {
+  "id": "num-written-methods-q18",
+  "topicId": "num-written-methods",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Here are five digit cards:\n$$\\boxed{2} \\quad \\boxed{4} \\quad \\boxed{6} \\quad \\boxed{7} \\quad \\boxed{9}$$\n\nUse each card once to make a 3-digit number and a 2-digit number:\n$$\\square\\,\\square\\,\\square \\times \\square\\,\\square$$\n\n(a) Find the largest possible product. Use long multiplication to work it out.\n\n(b) Explain why the digit 2 should go in the ones column of the 3-digit number.",
+  "hint": "The biggest digits must go in the places with the biggest value. The leading digits are worth hundreds and tens – try both ways round and compare.",
+  "answer": "(a) $762 \\times 94 = 71\\,628$ (b) A digit in the ones place of the 3-digit number is multiplied only by the 2-digit number (about 90), whereas a digit in the ones place of the 2-digit number multiplies the whole 3-digit number (about 700), so the smallest digit belongs where its effect is smallest.",
+  "solution": "(a) The leading digits (hundreds of the 3-digit number, tens of the 2-digit number) have the biggest effect, so they should be 9 and 7. The next places should get 6 and 4, and 2 goes last (see part (b)).\n\nCompare the four arrangements this leaves:\n\n| Calculation | Product |\n|---|---|\n| $762 \\times 94$ | $71\\,628$ |\n| $742 \\times 96$ | $71\\,232$ |\n| $962 \\times 74$ | $71\\,188$ |\n| $942 \\times 76$ | $71\\,592$ |\n\nFor example, $762 \\times 94$: $762 \\times 90 = 68\\,580$ and $762 \\times 4 = 3048$, so\n$$762 \\times 94 = 68\\,580 + 3048 = 71\\,628$$\n\nThe largest product is $762 \\times 94 = 71\\,628$.\n\n(Interesting point: $9$ goes in the **2-digit** number. The tens digit of the 2-digit number multiplies the whole 3-digit number, so it is worth more than it looks.)\n\n(b) If the 2 is in the ones place of the 3-digit number it contributes $2 \\times (\\text{2-digit number}) \\approx 2 \\times 94 = 188$. If instead the 2 were in the ones place of the 2-digit number, it would contribute $2 \\times (\\text{3-digit number}) \\approx 2 \\times 760 = 1520$, and a larger digit would be pushed into a place multiplied by only about 90. The smallest digit should sit where it is multiplied by the smallest amount, and that is the ones place of the 3-digit number, which is multiplied only by the 2-digit number.\n\nCheck by swapping: $764 \\times 92 = 70\\,288$, which is smaller than $71\\,628$ ✓",
+  "linkedTopicIds": []
+ }
+]

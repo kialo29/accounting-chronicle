@@ -12,6 +12,8 @@ format rules; your fixes must follow them). SCRATCH = /tmp/claude-0/-home-user-a
    Solve every question yourself (use Python – sympy, numpy, scipy are installed – for any calculation, statistic,
    critical value or diagram coordinate) and write your answers to `SCRATCH/check/<topicId>.md` BEFORE opening the
    answers. Read SVG diagrams by their coordinates and labels to make sure they match the text.
+   **Look at every diagram**: `node scripts/render-diagrams.mjs <topicId> SCRATCH/png/<topicId>` renders each SVG
+   to PNG; open each PNG with the Read tool and check it is accurate, legible and matches the text.
 3. **Compare.** Now open `data/questions/parts/<topicId>.json` and compare each question's `answer` and `solution`
    with yours. For each question decide:
    * `ok` – your answer matches and the solution is correct and complete.

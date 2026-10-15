@@ -1,0 +1,269 @@
+[
+ {
+  "id": "num-error-intervals-q01",
+  "topicId": "num-error-intervals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A number $x$ is $70$ when rounded to the nearest $10$.\n\nWrite down the error interval for $x$.",
+  "hint": "The unit is $10$. How far either side of $70$ can $x$ be and still round to $70$?",
+  "answer": "$65 \\le x < 75$",
+  "solution": "The accuracy is \"nearest $10$\", so the unit is $10$ and half a unit is $5$.\n\nLower bound: $70 - 5 = 65$. ($65$ rounds up to $70$, so it is included: $\\le$.)\n\nUpper bound: $70 + 5 = 75$. ($75$ would round to $80$, so it is not included: $<$.)\n\n$$65 \\le x < 75$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q02",
+  "topicId": "num-error-intervals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A number $x$ is $7$ when rounded to the nearest whole number.\n\nWrite down the error interval for $x$.",
+  "hint": "The unit is now $1$, so half a unit is $0.5$.",
+  "answer": "$6.5 \\le x < 7.5$",
+  "solution": "**What changed:** everything is ten times smaller than in the previous question: $70 \\to 7$ and the unit $10 \\to 1$.\n\nHalf a unit is $0.5$.\n$$7 - 0.5 = 6.5, \\qquad 7 + 0.5 = 7.5$$\n\n$$6.5 \\le x < 7.5$$\n\nThe error interval is also ten times smaller: $65 \\to 6.5$ and $75 \\to 7.5$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q03",
+  "topicId": "num-error-intervals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A number $x$ is $0.7$ when rounded to $1$ decimal place.\n\nWrite down the error interval for $x$.",
+  "hint": "Rounding to 1 decimal place means the unit is $0.1$. What is half of $0.1$?",
+  "answer": "$0.65 \\le x < 0.75$",
+  "solution": "**What changed:** ten times smaller again. The unit is now $0.1$, so half a unit is $0.05$.\n$$0.7 - 0.05 = 0.65, \\qquad 0.7 + 0.05 = 0.75$$\n\n$$0.65 \\le x < 0.75$$\n\nCheck: $0.65$ rounds up to $0.7$ ✓; $0.6$ itself would be outside, which is right because $0.6$ rounds to $0.6$. Going a whole unit either side ($0.6 \\le x < 0.8$) would wrongly include numbers like $0.62$, which round to $0.6$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q04",
+  "topicId": "num-error-intervals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A number $x$ is $0.07$ when rounded to $2$ decimal places.\n\nWrite down the error interval for $x$.",
+  "hint": "The unit is $0.01$. Half of it is $0.005$.",
+  "answer": "$0.065 \\le x < 0.075$",
+  "solution": "**What changed:** ten times smaller again; the unit is $0.01$, half a unit is $0.005$.\n$$0.07 - 0.005 = 0.065, \\qquad 0.07 + 0.005 = 0.075$$\n\n$$0.065 \\le x < 0.075$$\n\nPattern across the sequence: $65 \\le x < 75$, $6.5 \\le x < 7.5$, $0.65 \\le x < 0.75$, $0.065 \\le x < 0.075$. Each time the rounded value and the unit are divided by $10$, so the bounds are too.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q05",
+  "topicId": "num-error-intervals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The mass of a lorry is $m$ kg. Rounded to $2$ significant figures, $m = 5300$.\n\nWrite down the error interval for $m$.",
+  "hint": "First work out what place value the second significant figure of $5300$ is in. That tells you the unit.",
+  "answer": "$5250 \\le m < 5350$",
+  "solution": "In $5300$ the significant figures are $5$ (thousands) and $3$ (hundreds). So 2 s.f. here means \"to the nearest $100$\".\n\nUnit $= 100$, half a unit $= 50$:\n$$5300 - 50 = 5250, \\qquad 5300 + 50 = 5350$$\n\n$$5250 \\le m < 5350$$\n\nA common mistake is to use the last digit written (thinking the unit is $1$) and give $5299.5 \\le m < 5300.5$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q06",
+  "topicId": "num-error-intervals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A number $y$ is truncated to $1$ decimal place. The result is $3.8$.\n\nWrite down the error interval for $y$.",
+  "hint": "Truncating chops digits off without rounding. Which numbers become $3.8$ when you chop off everything after the first decimal place?",
+  "answer": "$3.8 \\le y < 3.9$",
+  "solution": "Truncating to 1 d.p. means deleting every digit after the tenths. Numbers such as $3.8$, $3.81$, $3.856$, $3.8999$ all truncate to $3.8$.\n\n$y$ cannot be less than $3.8$ (e.g. $3.79 \\to 3.7$), and it must be less than $3.9$ (since $3.9 \\to 3.9$).\n\n$$3.8 \\le y < 3.9$$\n\nUnlike rounding, the interval does **not** go below $3.8$: it extends a whole unit ($0.1$) upwards.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q07",
+  "topicId": "num-error-intervals",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "A parcel has a mass of $2.4$ kg, correct to the nearest $0.1$ kg. Its mass is $w$ kg.\n\n(a) Write down the least possible mass of the parcel.\n\n(b) Write down the error interval for $w$.",
+  "hint": "Half of $0.1$ kg is $0.05$ kg.",
+  "answer": "(a) $2.35$ kg (b) $2.35 \\le w < 2.45$",
+  "solution": "The unit is $0.1$ kg, so the mass could be up to half a unit, $0.05$ kg, either side of $2.4$ kg.\n\n(a) Least possible mass: $2.4 - 0.05 = 2.35$ kg.\n\n(b) Greatest: $2.4 + 0.05 = 2.45$ kg, but a mass of exactly $2.45$ kg would round to $2.5$ kg, so it is not included.\n$$2.35 \\le w < 2.45$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q08",
+  "topicId": "num-error-intervals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The length $x$ cm of a leaf is $8.6$ cm, correct to $1$ decimal place. Chloe writes the error interval like this:\n\nHalf of $0.1$ is $0.05$.\n\n$8.6 - 0.05 = 8.55$ and $8.6 + 0.05 = 8.65$\n\n$$8.55 \\le x \\le 8.65$$\n\nIdentify Chloe's mistake, explain why it is wrong, and write the correct error interval.",
+  "hint": "What would $8.65$ round to, correct to 1 decimal place?",
+  "answer": "She used $\\le$ at the upper end. $8.65$ rounds to $8.7$, so it is excluded: $8.55 \\le x < 8.65$.",
+  "solution": "Chloe's bounds $8.55$ and $8.65$ are correct. Her mistake is in the last line: she used $\\le$ at **both** ends.\n\n**Why it is wrong:** $8.65$ rounded to 1 d.p. is $8.7$, not $8.6$, so the leaf cannot have length exactly $8.65$ cm. The upper bound must be **excluded**. The lower bound $8.55$ rounds up to $8.6$, so it is included.\n\n**Correct error interval:**\n$$8.55 \\le x < 8.65$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q09",
+  "topicId": "num-error-intervals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ryan is told: \"A number $n$ is truncated to $2$ decimal places. The result is $4.27$.\" He writes:\n\n\"Half of $0.01$ is $0.005$, so $4.265 \\le n < 4.275$.\"\n\nIdentify Ryan's mistake, explain it, and write the correct error interval.",
+  "hint": "Ryan has treated truncation like rounding. Would $4.266$ truncate to $4.27$?",
+  "answer": "He treated truncation as rounding. Truncation never increases a number, so $n$ cannot be below $4.27$: $4.27 \\le n < 4.28$.",
+  "solution": "**Mistake:** Ryan has used the method for **rounding** (half a unit either side).\n\n**Why it is wrong:** truncating only chops digits off, it never rounds up. For example $4.266$ truncated to 2 d.p. is $4.26$, not $4.27$, so values below $4.27$ are impossible. On the other hand $4.279$ truncates to $4.27$, so values up to (but not including) $4.28$ are possible.\n\n**Correct error interval:**\n$$4.27 \\le n < 4.28$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q10",
+  "topicId": "num-error-intervals",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A sprinter's time is recorded as $12.3$ seconds, correct to $1$ decimal place.\n\nErin says: \"The actual time could have been $12.22$ seconds, because that is within $0.1$ of $12.3$.\"\n\n(a) Is Erin correct? Explain your answer.\n\n(b) Could the actual time have been $12.25$ seconds? Could it have been $12.35$ seconds? Give reasons.\n\n(c) Write down the error interval for the time $t$ seconds.",
+  "hint": "Round $12.22$ to 1 decimal place. What do you get?",
+  "answer": "(a) No: $12.22$ rounds to $12.2$, not $12.3$. (b) $12.25$: yes (it rounds up to $12.3$); $12.35$: no (it rounds to $12.4$). (c) $12.25 \\le t < 12.35$",
+  "solution": "(a) Erin is **not** correct. $12.2|2$ rounded to 1 d.p. is $12.2$, because the next digit is $2$. A time of $12.22$ s would have been recorded as $12.2$ s. Erin has gone a whole unit ($0.1$) below $12.3$, but the time can only be up to **half** a unit ($0.05$) away.\n\n(b) $12.25$: the digit after the tenths is $5$, so it rounds **up** to $12.3$. Yes, it is possible (it is the lower bound).\n\n$12.35$: this rounds up to $12.4$, so it is not possible.\n\n(c) Half a unit is $0.05$:\n$$12.25 \\le t < 12.35$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q11",
+  "topicId": "num-error-intervals",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 4,
+  "question": "Answer both parts. Use inequality notation.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "The length of a running track is $L$ metres. $L = 400$, correct to $1$ significant figure.\n\nWrite down the error interval for $L$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hamid truncates the number $y$ to $1$ decimal place. The result is $6.2$.\n\nWrite down the error interval for $y$.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (a), $400$ to 1 s.f. means to the nearest $100$. In (b), truncation never rounds up.",
+  "answer": "(a) $350 \\le L < 450$ (b) $6.2 \\le y < 6.3$",
+  "solution": "(a) 1 s.f. here means to the nearest $100$, so half a unit is $50$:\n$$350 \\le L < 450$$\n**B2** for fully correct. (**B1** for $350$ and $450$ seen, e.g. written as $350 \\le L \\le 450$ or $350 < L < 450$.)\n\n(b) Truncation chops off digits, so $y$ is at least $6.2$ and less than $6.3$:\n$$6.2 \\le y < 6.3$$\n**B2** for fully correct. (**B1** for one end correct with the correct inequality sign, e.g. $6.2 \\le y$. **B0** for the rounding interval $6.15 \\le y < 6.25$.)",
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q12",
+  "topicId": "num-error-intervals",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A bottle of water is labelled as containing $500$ ml, correct to the nearest $10$ ml. The actual volume is $V$ ml.\n\n(a) Write down the error interval for $V$.\n\n(b) A quality-control check measures one bottle as containing $494$ ml. Does this bottle meet the label? Explain.\n\n(c) Explain why $505$ ml is not included in the error interval.",
+  "hint": "The unit is $10$ ml, so half a unit is $5$ ml.",
+  "answer": "(a) $495 \\le V < 505$ (b) No; $494 < 495$ (it would round to $490$ ml). (c) $505$ ml rounds to $510$ ml, not $500$ ml.",
+  "solution": "(a) Unit $10$ ml, half a unit $5$ ml:\n$$495 \\le V < 505$$\n\n(b) $494$ is less than the lower bound $495$. To the nearest $10$ ml, $494$ ml is $490$ ml, so the bottle does **not** meet the label.\n\n(c) To the nearest $10$ ml, $505$ rounds **up** to $510$. Any volume of $505$ ml or more would be labelled $510$ ml, so the upper bound is excluded and we write $< 505$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q13",
+  "topicId": "num-error-intervals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The number line shows the error interval for a number $x$. The filled circle shows a value that is included; the open circle shows a value that is not included.\n\n(a) Write the error interval as an inequality.\n\n(b) $x$ has been rounded. Write down the rounded value of $x$ and the degree of accuracy used.\n\n(c) Explain why this interval could **not** have come from truncating $x$ to some number of decimal places.",
+  "hint": "The rounded value is the midpoint of the interval. The width of the interval is one whole unit.",
+  "answer": "(a) $4.25 \\le x < 4.35$ (b) $4.3$, correct to $1$ decimal place (c) A truncation interval starts at the truncated value; an interval of width $0.1$ would come from truncating to 1 d.p., so it would start at a 1 d.p. number such as $4.2$ or $4.3$, not at $4.25$.",
+  "solution": "(a) Filled circle at $4.25$ (included, $\\le$), open circle at $4.35$ (excluded, $<$):\n$$4.25 \\le x < 4.35$$\n\n(b) The rounded value is the midpoint: $\\dfrac{4.25 + 4.35}{2} = 4.3$.\n\nThe width is $4.35 - 4.25 = 0.1$, which is one unit, so half a unit is $0.05$ and the unit is $0.1$. So $x = 4.3$, correct to **1 decimal place**.\n\n(c) When a number is truncated, the error interval is \"truncated value $\\le x <$ truncated value $+$ one unit\".\n* An interval of width $0.1$ would come from truncating to 1 d.p., so it would have to start at a number with 1 decimal place, such as $4.2$ or $4.3$. It cannot start at $4.25$.\n* If $x$ were truncated to 2 d.p. to give $4.25$, the interval would be $4.25 \\le x < 4.26$, width $0.01$, not $0.1$.\n\nSo the interval shown can only come from rounding.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 90\" width=\"340\" height=\"90\"><line x1=\"30\" y1=\"50\" x2=\"310\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"44\" x2=\"30\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"30\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4.2</text><line x1=\"100\" y1=\"44\" x2=\"100\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"100\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4.25</text><line x1=\"170\" y1=\"44\" x2=\"170\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"170\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4.3</text><line x1=\"240\" y1=\"44\" x2=\"240\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"240\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4.35</text><line x1=\"310\" y1=\"44\" x2=\"310\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"310\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4.4</text><line x1=\"100\" y1=\"30\" x2=\"240\" y2=\"30\" stroke=\"#3b82f6\" stroke-width=\"3\"/><circle cx=\"100\" cy=\"30\" r=\"5\" fill=\"#3b82f6\" stroke=\"#3b82f6\" stroke-width=\"2\"/><circle cx=\"240\" cy=\"30\" r=\"5\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/></svg>"
+ },
+ {
+  "id": "num-error-intervals-q14",
+  "topicId": "num-error-intervals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A number $x$ is $2.6$, correct to $1$ decimal place.\n\n(a) Write down the error interval for $x$.\n\n(b) Find the error interval for $3x + 1$.\n\n(c) Find the error interval for $5 - 2x$.",
+  "hint": "Apply the same operations to every part of the inequality. Be careful in (c): what happens to an inequality when you multiply by a negative number?",
+  "answer": "(a) $2.55 \\le x < 2.65$ (b) $8.65 \\le 3x + 1 < 8.95$ (c) $-0.3 < 5 - 2x \\le -0.1$",
+  "solution": "(a) Half a unit is $0.05$:\n$$2.55 \\le x < 2.65$$\n\n(b) Multiply every part by $3$ (positive, so the signs stay the same):\n$$7.65 \\le 3x < 7.95$$\nAdd $1$:\n$$8.65 \\le 3x + 1 < 8.95$$\n\n(c) Multiply every part by $-2$. Multiplying by a negative number **reverses** the inequalities:\n$$-5.1 \\ge -2x > -5.3$$\ni.e. $-5.3 < -2x \\le -5.1$. Add $5$:\n$$-0.3 < 5 - 2x \\le -0.1$$\n\nNotice that the included end ($\\le$) is now at the **top**: the smallest $x$, $2.55$, gives the largest value of $5 - 2x$.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-error-intervals-q15",
+  "topicId": "num-error-intervals",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A positive number $n$ is rounded to $2$ significant figures. The result is $0.47$.\n\nThe same number $n$ is truncated to $2$ decimal places. The result is $0.46$.\n\nFind the error interval for $n$.",
+  "hint": "Write down the error interval for each statement separately, then find the values that satisfy both.",
+  "answer": "$0.465 \\le n < 0.47$",
+  "solution": "**Rounding:** $0.47$ to 2 s.f. means to the nearest $0.01$; half a unit is $0.005$:\n$$0.465 \\le n < 0.475$$\n\n**Truncation:** $0.46$ to 2 d.p. means $n$ is at least $0.46$ and less than $0.47$:\n$$0.46 \\le n < 0.47$$\n\n**Both together:** $n$ must be at least $0.465$ (the larger lower bound) and less than $0.47$ (the smaller upper bound):\n$$0.465 \\le n < 0.47$$\n\nCheck: $n = 0.468$ rounds to $0.47$ ✓ and truncates to $0.46$ ✓. $n = 0.471$ truncates to $0.47$ ✗; $n = 0.463$ rounds to $0.46$ ✗.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q16",
+  "topicId": "num-error-intervals",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$N$ is a positive number.\n\n* Rounded to $2$ significant figures, $N = 550$.\n* Rounded to $1$ significant figure, $N = 600$.\n\n(a) Write down the error interval for $N$.\n\n(b) Given also that $N$ is a whole number, list all the possible values of $N$.",
+  "hint": "Find each error interval separately. Which part of the 2 s.f. interval rounds to $600$ (not $500$) to 1 s.f.?",
+  "answer": "(a) $550 \\le N < 555$ (b) $550, 551, 552, 553, 554$",
+  "solution": "**2 s.f.:** $550$ to 2 s.f. means to the nearest $10$, so half a unit is $5$:\n$$545 \\le N < 555$$\n\n**1 s.f.:** $600$ to 1 s.f. means to the nearest $100$, so half a unit is $50$:\n$$550 \\le N < 650$$\n\n(a) Both must be true, so take the larger lower bound and the smaller upper bound:\n$$550 \\le N < 555$$\n(Numbers from $545$ to just below $550$ round to $500$ to 1 s.f., so they are excluded.)\n\n(b) The whole numbers in this interval are $550, 551, 552, 553, 554$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q17",
+  "topicId": "num-error-intervals",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A number $x$ is $1.00$, correct to $3$ significant figures.\n\nOllie writes: \"To 3 s.f. the unit is $0.01$, so half a unit is $0.005$, and the error interval is $0.995 \\le x < 1.005$.\"\n\n(a) Round $0.997$ to $3$ significant figures. What does this tell you about Ollie's answer?\n\n(b) Find the correct error interval for $x$, explaining your reasoning carefully.",
+  "hint": "For numbers just below $1$, the first significant figure is in the tenths column, so the size of a unit at 3 s.f. changes.",
+  "answer": "(a) $0.997$; it does not round to $1.00$, so Ollie's interval is too big at the bottom. (b) $0.9995 \\le x < 1.005$",
+  "solution": "(a) $0.997$ has 3 significant figures already ($9$, $9$, $7$), so to 3 s.f. it is $0.997$, **not** $1.00$. But $0.997$ is inside Ollie's interval, so his interval must be wrong.\n\n(b) The unit for 3 s.f. depends on the size of the number.\n\n**For $x \\ge 1$:** the significant figures are units, tenths, hundredths, so the unit is $0.01$. Numbers from $1$ up to (but not including) $1.005$ round to $1.00$.\n\n**For $x < 1$:** the first significant figure is in the tenths, so 3 s.f. means 3 d.p. and the unit is $0.001$. Such a number rounds to $1.000 = 1.00$ only if it is at least $0.9995$ (e.g. $0.9995 \\to 1.00$, but $0.9994 \\to 0.999$).\n\nPutting these together:\n$$0.9995 \\le x < 1.005$$\n\nThe interval is **not symmetrical** about $1.00$: the rounded value sits at a change in the place value of the first significant figure, so \"half a unit\" is different on each side.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-error-intervals-q18",
+  "topicId": "num-error-intervals",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A whole number $n$ is chosen at random from the numbers $1$ to $200$ inclusive. Each number is equally likely.\n\n(a) Find the probability that $n$ rounded to $1$ significant figure is $100$.\n\n(b) Find the probability that $n$ truncated to $1$ significant figure is $100$.\n\nGive your answers as fractions in their simplest form.",
+  "hint": "Be careful with numbers just below $100$: what is $97$ rounded to 1 s.f.?",
+  "answer": "(a) $\\frac{11}{40}$ (b) $\\frac{1}{2}$",
+  "solution": "(a) **Numbers $100$ or more:** for 3-digit numbers, 1 s.f. means the nearest $100$, so $100$ to $149$ round to $100$ (and $150$ rounds to $200$).\n\n**Numbers below $100$:** for 2-digit numbers, 1 s.f. means the nearest $10$. $95, 96, 97, 98, 99$ round up to $100$; $94$ rounds to $90$.\n\nSo the error interval for whole numbers is $95 \\le n \\le 149$, which contains\n$$149 - 95 + 1 = 55 \\text{ numbers}$$\n\n$$P = \\frac{55}{200} = \\frac{11}{40}$$\n\n(b) Truncating to 1 s.f. keeps the first digit and replaces the rest with zeros. This gives $100$ exactly for $100, 101, \\ldots, 199$ ($100$ numbers). Numbers such as $97$ truncate to $90$, so none below $100$ count.\n\n$$P = \\frac{100}{200} = \\frac{1}{2}$$",
+  "linkedTopicIds": [
+   "prob-basic-probability"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ }
+]

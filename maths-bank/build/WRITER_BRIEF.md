@@ -17,6 +17,8 @@ the Learn With Kian question bank. ROOT = /home/user/accounting-chronicle/maths-
    match. Use Python (sympy, numpy and scipy are installed) to verify every numerical/algebraic answer, statistical
    value (scipy.stats for normal/binomial/t/chi-square probabilities and critical values) and every diagram coordinate.
    Fix anything wrong.
+   **Look at every diagram**: `node scripts/render-diagrams.mjs <topicId> SCRATCH/png/<topicId>` renders each SVG
+   to PNG; open each PNG with the Read tool and check it is accurate, legible and matches the text.
 
 ## What good looks like (beyond the validator)
 * Cover every sub-skill in the topic's `scope` at least once, including items marked as US or GCSE extensions.

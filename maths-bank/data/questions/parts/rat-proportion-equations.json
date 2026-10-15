@@ -1,0 +1,389 @@
+[
+ {
+  "id": "rat-proportion-equations-q01",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$y$ is directly proportional to $x^2$. When $x = 4$, $y = 48$.\n\nFind $y$ when $x = 8$.",
+  "hint": "Write $y = kx^2$ and substitute $x = 4$, $y = 48$ to find $k$.",
+  "answer": "$y = 192$",
+  "solution": "$y = kx^2$. Substitute $x = 4$, $y = 48$:\n$$48 = k \\times 4^2 = 16k \\quad\\Rightarrow\\quad k = 3$$\n$$y = 3x^2$$\n\nWhen $x = 8$:\n$$y = 3 \\times 8^2 = 3 \\times 64 = 192$$\n\nCheck by scaling: $x$ doubled, so $y$ is multiplied by $2^2 = 4$: $48 \\times 4 = 192$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q02",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$y$ is directly proportional to $x^3$. When $x = 4$, $y = 48$.\n\nFind $y$ when $x = 8$.",
+  "hint": "This time $y = kx^3$. What is $4^3$?",
+  "answer": "$y = 384$",
+  "solution": "**What changed:** the power is now 3 instead of 2.\n\n$y = kx^3$. Substitute $x = 4$, $y = 48$:\n$$48 = k \\times 4^3 = 64k \\quad\\Rightarrow\\quad k = \\frac{48}{64} = 0.75$$\n$$y = 0.75x^3$$\n\nWhen $x = 8$:\n$$y = 0.75 \\times 8^3 = 0.75 \\times 512 = 384$$\n\nCheck by scaling: doubling $x$ multiplies $y$ by $2^3 = 8$: $48 \\times 8 = 384$ ✓ (With $x^2$ it was $\\times 4$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q03",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$y$ is inversely proportional to $x^2$. When $x = 4$, $y = 48$.\n\nFind $y$ when $x = 8$.",
+  "hint": "Write $y = \\frac{k}{x^2}$. To find $k$, multiply $y$ by $x^2$.",
+  "answer": "$y = 12$",
+  "solution": "**What changed:** *directly* has become *inversely*, so $x^2$ is now in the denominator.\n\n$y = \\frac{k}{x^2}$. Substitute $x = 4$, $y = 48$:\n$$48 = \\frac{k}{16} \\quad\\Rightarrow\\quad k = 48 \\times 16 = 768$$\n$$y = \\frac{768}{x^2}$$\n\nWhen $x = 8$:\n$$y = \\frac{768}{64} = 12$$\n\nCheck: doubling $x$ now **divides** $y$ by $2^2 = 4$: $48 \\div 4 = 12$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q04",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$y$ is inversely proportional to $x^2$. When $x = 4$, $y = 48$.\n\nFind the positive value of $x$ when $y = 3$.",
+  "hint": "Find the formula first, then substitute $y = 3$ and rearrange for $x^2$.",
+  "answer": "$x = 16$",
+  "solution": "**What changed:** now $y$ is given and $x$ is the unknown.\n\nAs before, $k = 48 \\times 4^2 = 768$, so $y = \\frac{768}{x^2}$.\n\nSubstitute $y = 3$:\n$$3 = \\frac{768}{x^2} \\quad\\Rightarrow\\quad x^2 = \\frac{768}{3} = 256 \\quad\\Rightarrow\\quad x = 16$$\n(taking the positive root).\n\nCheck: $y$ was divided by 16, so $x^2$ was multiplied by 16 and $x$ by 4: $4 \\times 4 = 16$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-proportion-equations-q05",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Write each statement as a formula, using $k$ for the constant of proportionality.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$P$ is directly proportional to the cube of $t$."
+   },
+   {
+    "label": "b",
+    "prompt": "$F$ is inversely proportional to the square of $d$."
+   },
+   {
+    "label": "c",
+    "prompt": "$T$ is directly proportional to the square root of $L$."
+   },
+   {
+    "label": "d",
+    "prompt": "$z$ varies jointly as $x$ and $y$ (US wording)."
+   }
+  ],
+  "hint": "\"Directly proportional\" means multiply by $k$; \"inversely proportional\" means $k$ divided by the quantity. \"Jointly\" means proportional to the product.",
+  "answer": "(a) $P = kt^3$ (b) $F = \\frac{k}{d^2}$ (c) $T = k\\sqrt{L}$ (d) $z = kxy$",
+  "solution": "(a) $P \\propto t^3$, so\n$$P = kt^3$$\n\n(b) $F \\propto \\frac{1}{d^2}$, so\n$$F = \\frac{k}{d^2}$$\n\n(c) $T \\propto \\sqrt{L}$, so\n$$T = k\\sqrt{L}$$\n\n(d) \"Varies jointly as $x$ and $y$\" means $z$ is directly proportional to the product $xy$:\n$$z = kxy$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-proportion-equations-q06",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "$y$ is directly proportional to $x^2$. When $x = 5$, $y = 50$.\n\nKai is asked to find $y$ when $x = 2$. His working is shown below.\n\n$k = \\frac{50}{5} = 10$\nSo $y = 10x^2$\nWhen $x = 2$, $y = 10 \\times 2^2 = 40$\n\nIdentify Kai's error, explain why it is wrong, and find the correct value of $y$.",
+  "hint": "Check Kai's formula with $x = 5$. Does it give 50?",
+  "answer": "Kai divided by $x$ instead of $x^2$; $k = 2$, $y = 2x^2$, so $y = 8$.",
+  "solution": "**Error:** the first line. Kai found $k$ by dividing $y$ by $x$, ignoring the power. For $y = kx^2$, $k = \\frac{y}{x^2}$.\n\nHis formula fails the check: $10 \\times 5^2 = 250$, not 50.\n\n**Correct working:**\n$$50 = k \\times 5^2 = 25k \\quad\\Rightarrow\\quad k = 2$$\n$$y = 2x^2$$\nCheck: $2 \\times 25 = 50$ ✓\n\nWhen $x = 2$:\n$$y = 2 \\times 2^2 = 8$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q07",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$F$ is inversely proportional to the square of $d$. When $d = 2$, $F = 12$.\n\nMaya is asked to find $F$ when $d = 4$. Her working is shown below.\n\n$F = \\frac{k}{d^2}$\n$12 = \\frac{k}{4}$, so $k = \\frac{12}{4} = 3$\n$F = \\frac{3}{d^2}$\nWhen $d = 4$, $F = \\frac{3}{16}$\n\nIdentify Maya's error, explain why it is wrong, and find the correct value of $F$.",
+  "hint": "To undo \"divide by 4\" you need to multiply by 4.",
+  "answer": "Maya divided by 4 instead of multiplying; $k = 48$, so $F = 3$.",
+  "solution": "**Error:** the second line. From $12 = \\frac{k}{4}$, Maya divided 12 by 4. To make $k$ the subject you must **multiply** both sides by 4. For inverse proportion, $k = F \\times d^2$.\n\nHer formula fails the check: $\\frac{3}{2^2} = 0.75$, not 12.\n\n**Correct working:**\n$$12 = \\frac{k}{4} \\quad\\Rightarrow\\quad k = 12 \\times 4 = 48$$\n$$F = \\frac{48}{d^2}$$\n\nWhen $d = 4$:\n$$F = \\frac{48}{16} = 3$$\n\nSense check: $d$ doubled, so $F$ is divided by $2^2 = 4$: $12 \\div 4 = 3$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q08",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$y$ is directly proportional to $x^3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Leon says, \"If $x$ is doubled, then $y$ is multiplied by 6.\" Is Leon correct? Explain your answer."
+   },
+   {
+    "label": "b",
+    "prompt": "What happens to $y$ when $x$ is halved?"
+   },
+   {
+    "label": "c",
+    "prompt": "A different quantity $w$ is inversely proportional to $\\sqrt{x}$. What happens to $w$ when $x$ is multiplied by 9?"
+   }
+  ],
+  "hint": "Replace $x$ by $2x$ in $y = kx^3$ and simplify.",
+  "answer": "(a) No: $y$ is multiplied by $2^3 = 8$ (b) $y$ is divided by 8 (c) $w$ is divided by 3",
+  "solution": "Let $y = kx^3$.\n\n(a) Replace $x$ by $2x$:\n$$k(2x)^3 = 2^3 \\times kx^3 = 8y$$\nSo $y$ is multiplied by **8**, not 6. Leon is not correct: he multiplied the scale factor by the power ($2 \\times 3 = 6$) instead of raising it to the power ($2^3 = 8$).\n\n(b) Replace $x$ by $\\frac{1}{2}x$:\n$$k\\left(\\tfrac{1}{2}x\\right)^3 = \\tfrac{1}{8}kx^3$$\nSo $y$ is **divided by 8**.\n\n(c) $w = \\frac{c}{\\sqrt{x}}$ for some constant $c$. Replace $x$ by $9x$:\n$$\\frac{c}{\\sqrt{9x}} = \\frac{c}{3\\sqrt{x}} = \\frac{1}{3}w$$\nSo $w$ is **divided by 3**.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q09",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Joint and combined variation.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$z$ varies jointly as $x$ and $y$. When $x = 3$ and $y = 4$, $z = 60$. Find $z$ when $x = 5$ and $y = 7$."
+   },
+   {
+    "label": "b",
+    "prompt": "$w$ varies directly as $x$ and inversely as the square of $y$. When $x = 8$ and $y = 2$, $w = 6$. Find $w$ when $x = 12$ and $y = 3$."
+   }
+  ],
+  "hint": "(a) $z = kxy$. (b) $w = \\frac{kx}{y^2}$. Find $k$ from the given values each time.",
+  "answer": "(a) $z = 175$ (b) $w = 4$",
+  "solution": "(a) $z = kxy$:\n$$60 = k \\times 3 \\times 4 = 12k \\quad\\Rightarrow\\quad k = 5$$\n$$z = 5xy = 5 \\times 5 \\times 7 = 175$$\n\n(b) $w = \\frac{kx}{y^2}$:\n$$6 = \\frac{k \\times 8}{2^2} = 2k \\quad\\Rightarrow\\quad k = 3$$\n$$w = \\frac{3x}{y^2} = \\frac{3 \\times 12}{3^2} = \\frac{36}{9} = 4$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q10",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The braking distance $d$ metres of a car is directly proportional to the square of its speed $v$ mph.\n\nAt 30 mph the braking distance is 14 m.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the braking distance at 70 mph. Give your answer to 3 significant figures."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the speed at which the braking distance is 50 m. Give your answer to 3 significant figures."
+   }
+  ],
+  "hint": "Write $d = kv^2$ and use $v = 30$, $d = 14$ to find $k$ (keep it as a fraction).",
+  "answer": "(a) 76.2 m (b) 56.7 mph",
+  "solution": "$d = kv^2$:\n$$14 = k \\times 30^2 = 900k \\quad\\Rightarrow\\quad k = \\frac{14}{900} = \\frac{7}{450}$$\n\n(a)\n$$d = \\frac{7}{450} \\times 70^2 = \\frac{7 \\times 4900}{450} = 76.22\\ldots \\approx 76.2 \\text{ m}$$\n(Scaling check: $\\left(\\frac{70}{30}\\right)^2 \\times 14 = \\frac{49}{9} \\times 14 = 76.2$ ✓ — more than double the speed gives more than 5 times the distance.)\n\n(b)\n$$50 = \\frac{7}{450}v^2 \\quad\\Rightarrow\\quad v^2 = \\frac{50 \\times 450}{7} = 3214.28\\ldots$$\n$$v = \\sqrt{3214.28\\ldots} = 56.69\\ldots \\approx 56.7 \\text{ mph}$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q11",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The time, $T$ seconds, for one swing of a pendulum is directly proportional to the square root of its length, $L$ cm.\n\nWhen $L = 64$, $T = 1.6$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find a formula for $T$ in terms of $L$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the length of a pendulum for which $T = 2.5$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "The length of a pendulum is multiplied by 4.\nDescribe the effect on the time for one swing.",
+    "marks": 1
+   }
+  ],
+  "marks": 6,
+  "calculator": true,
+  "hint": "Start with $T = k\\sqrt{L}$. In (b), rearrange to make $\\sqrt{L}$ the subject first.",
+  "answer": "(a) $T = 0.2\\sqrt{L}$ (b) 156.25 cm (c) The time doubles",
+  "solution": "(a) $T = k\\sqrt{L}$ **M1**\n\n$1.6 = k\\sqrt{64} = 8k$ **M1**\n\n$k = 0.2$, so $T = 0.2\\sqrt{L}$ **A1**\n\n(b) $2.5 = 0.2\\sqrt{L} \\Rightarrow \\sqrt{L} = 12.5$ **M1**\n\n$L = 12.5^2 = 156.25$ cm **A1**\n\n(c) $0.2\\sqrt{4L} = 0.2 \\times 2\\sqrt{L} = 2T$, so the time is **doubled** (multiplied by $\\sqrt{4} = 2$). **B1**",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q12",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The intensity of light, $I$ lux, from a lamp is inversely proportional to the square of the distance, $d$ metres, from the lamp.\n\nAt a distance of 2 m the intensity is 45 lux.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the intensity at a distance of 3 m."
+   },
+   {
+    "label": "b",
+    "prompt": "How far from the lamp is the intensity 5 lux?"
+   }
+  ],
+  "hint": "$I = \\frac{k}{d^2}$, so $k = I \\times d^2$.",
+  "answer": "(a) 20 lux (b) 6 m",
+  "solution": "$I = \\frac{k}{d^2}$:\n$$45 = \\frac{k}{2^2} \\quad\\Rightarrow\\quad k = 45 \\times 4 = 180$$\n$$I = \\frac{180}{d^2}$$\n\n(a)\n$$I = \\frac{180}{3^2} = \\frac{180}{9} = 20 \\text{ lux}$$\n\n(b)\n$$5 = \\frac{180}{d^2} \\quad\\Rightarrow\\quad d^2 = 36 \\quad\\Rightarrow\\quad d = 6 \\text{ m}$$\n\n(Check: intensity divided by 9 from 45 to 5, so the distance is multiplied by $\\sqrt{9} = 3$: $2 \\times 3 = 6$ ✓)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q13",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The power $P$ produced by a wind turbine is directly proportional to the cube of the wind speed $v$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "The wind speed increases by $10\\%$. Zoe says, \"So the power increases by $3 \\times 10\\% = 30\\%$.\" Is Zoe correct? Show your working."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the percentage increase in the wind speed that would double the power. Give your answer to 1 decimal place."
+   }
+  ],
+  "hint": "An increase of $10\\%$ means $v$ is multiplied by $1.1$. Substitute $1.1v$ into $P = kv^3$.",
+  "answer": "(a) No: $P$ is multiplied by $1.1^3 = 1.331$, an increase of $33.1\\%$ (b) $26.0\\%$",
+  "solution": "$P = kv^3$.\n\n(a) The new speed is $1.1v$, so the new power is\n$$k(1.1v)^3 = 1.1^3 \\times kv^3 = 1.331P$$\nThe power increases by $33.1\\%$, not $30\\%$. Zoe is **not** correct: percentage changes compound (multiply), so you must cube the multiplier, not multiply the percentage by 3.\n\n(b) We need the multiplier $m$ for $v$ with\n$$m^3 = 2 \\quad\\Rightarrow\\quad m = \\sqrt[3]{2} = 1.2599\\ldots$$\nSo the wind speed must increase by $25.99\\ldots\\% \\approx 26.0\\%$.",
+  "linkedTopicIds": [
+   "rat-percentage-change"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q14",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$y$ is directly proportional to $x^n$, where $n$ is a positive integer. The table shows some values.\n\n| $x$ | 2 | 4 | 8 |\n|---|---|---|---|\n| $y$ | 3 | 24 | 192 |\n\nFind $n$ and the constant of proportionality, and hence find $y$ when $x = 6$.",
+  "hint": "When $x$ doubles, by what is $y$ multiplied? Which power of 2 is that?",
+  "answer": "$n = 3$, $k = \\frac{3}{8}$, $y = 81$",
+  "solution": "From $x = 2$ to $x = 4$, $x$ is multiplied by 2 and $y$ is multiplied by $\\frac{24}{3} = 8$.\nFrom $x = 4$ to $x = 8$, $x$ is multiplied by 2 and $y$ by $\\frac{192}{24} = 8$ again.\n\nIf $y = kx^n$, doubling $x$ multiplies $y$ by $2^n$, so\n$$2^n = 8 \\quad\\Rightarrow\\quad n = 3$$\n\nFind $k$ from $(2, 3)$:\n$$3 = k \\times 2^3 = 8k \\quad\\Rightarrow\\quad k = \\frac{3}{8}$$\nCheck with $(8, 192)$: $\\frac{3}{8} \\times 512 = 192$ ✓\n\nWhen $x = 6$:\n$$y = \\frac{3}{8} \\times 6^3 = \\frac{3 \\times 216}{8} = 81$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q15",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The gravitational force $F$ newtons on a satellite is inversely proportional to the square of its distance $d$ metres from the centre of the Earth.\n\nWhen $d = 6.4 \\times 10^6$, $F = 4.5 \\times 10^3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $F$ when $d = 4.2 \\times 10^7$. Give your answer in standard form to 3 significant figures."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $d$ when $F = 1.125 \\times 10^3$, giving your answer in standard form."
+   }
+  ],
+  "hint": "Use $F = \\frac{k}{d^2}$, so $k = Fd^2$. Keep the powers of 10 together using index laws.",
+  "answer": "(a) $1.04 \\times 10^2$ N (b) $1.28 \\times 10^7$ m",
+  "solution": "$F = \\frac{k}{d^2}$, so\n$$k = Fd^2 = (4.5 \\times 10^3) \\times (6.4 \\times 10^6)^2 = 4.5 \\times 10^3 \\times 40.96 \\times 10^{12} = 1.8432 \\times 10^{17}$$\n\n(a)\n$$F = \\frac{1.8432 \\times 10^{17}}{(4.2 \\times 10^7)^2} = \\frac{1.8432 \\times 10^{17}}{1.764 \\times 10^{15}} = 104.49\\ldots$$\n$$F \\approx 1.04 \\times 10^2 \\text{ N}$$\n\n(Scaling check: $d$ is multiplied by $\\frac{42}{6.4} = 6.5625$, so $F$ is divided by $6.5625^2 \\approx 43.07$; $4500 \\div 43.07 \\approx 104.5$ ✓)\n\n(b) $1.125 \\times 10^3 = \\frac{4.5 \\times 10^3}{4}$: the force is divided by 4, so $d^2$ is multiplied by 4 and $d$ by 2:\n$$d = 2 \\times 6.4 \\times 10^6 = 12.8 \\times 10^6 = 1.28 \\times 10^7 \\text{ m}$$\n\n(Directly: $d^2 = \\frac{1.8432 \\times 10^{17}}{1.125 \\times 10^3} = 1.6384 \\times 10^{14}$, so $d = 1.28 \\times 10^7$.)",
+  "linkedTopicIds": [
+   "num-standard-form",
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q16",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Two quantities satisfy $y = kx^n$, where $k$ and $n$ are constants.\n\nWhen $\\log_{10} y$ is plotted against $\\log_{10} x$, the result is a straight line passing through the points $(1, 2)$ and $(3, 5)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\log_{10} y = n\\log_{10} x + \\log_{10} k$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact values of $n$ and $k$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact value of $y$ when $x = 100$."
+   }
+  ],
+  "hint": "Take $\\log_{10}$ of both sides of $y = kx^n$. The gradient of the line is $n$.",
+  "answer": "(a) Take logs and use the laws of logarithms (b) $n = \\frac{3}{2}$, $k = \\sqrt{10}$ (c) $y = 1000\\sqrt{10}$",
+  "solution": "(a) Taking $\\log_{10}$ of $y = kx^n$:\n$$\\log_{10} y = \\log_{10} k + \\log_{10} x^n = n\\log_{10} x + \\log_{10} k$$\nThis is a straight line $Y = nX + c$ with $Y = \\log_{10} y$, $X = \\log_{10} x$, gradient $n$ and intercept $c = \\log_{10} k$.\n\n(b) Gradient:\n$$n = \\frac{5 - 2}{3 - 1} = \\frac{3}{2}$$\n\nUsing $(1, 2)$:\n$$2 = \\frac{3}{2}(1) + \\log_{10} k \\quad\\Rightarrow\\quad \\log_{10} k = \\frac{1}{2} \\quad\\Rightarrow\\quad k = 10^{1/2} = \\sqrt{10}$$\n\nSo $y = \\sqrt{10}\\,x^{3/2}$, i.e. $y \\propto x^{3/2}$.\n\n(c)\n$$y = \\sqrt{10} \\times 100^{3/2} = \\sqrt{10} \\times 1000 = 1000\\sqrt{10}$$\n(Check: $\\log_{10} x = 2$ gives $\\log_{10} y = \\frac{3}{2}(2) + \\frac{1}{2} = 3.5$, and $10^{3.5} = 1000\\sqrt{10}$ ✓)",
+  "linkedTopicIds": [
+   "pure-exponential-modelling",
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q17",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$z$ is directly proportional to $x^2$ and inversely proportional to $\\sqrt{y}$.\n\n$x$ is increased by $20\\%$ and $y$ is decreased by $36\\%$.\n\nFind the percentage change in $z$.",
+  "hint": "Write $z = \\frac{kx^2}{\\sqrt{y}}$ and replace $x$ by $1.2x$ and $y$ by $0.64y$.",
+  "answer": "$z$ increases by $80\\%$",
+  "solution": "$$z = \\frac{kx^2}{\\sqrt{y}}$$\n\nThe new values are $1.2x$ and $0.64y$ (a $36\\%$ decrease leaves $64\\%$). The new value of $z$ is\n$$\\frac{k(1.2x)^2}{\\sqrt{0.64y}} = \\frac{1.44kx^2}{0.8\\sqrt{y}} = \\frac{1.44}{0.8} \\times \\frac{kx^2}{\\sqrt{y}} = 1.8z$$\n\nSo $z$ is multiplied by $1.8$: an **increase of $80\\%$**.\n\n(Common wrong answers: \"$2 \\times 20\\% + \\frac{1}{2} \\times 36\\% = 58\\%$\" adds scaled percentages instead of multiplying multipliers.)",
+  "linkedTopicIds": [
+   "rat-percentage-change"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "rat-proportion-equations-q18",
+  "topicId": "rat-proportion-equations",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$p$ is directly proportional to $q^2$, and $q$ is inversely proportional to $r^3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that $p$ is inversely proportional to $r^6$."
+   },
+   {
+    "label": "b",
+    "prompt": "When $r = 1$, $p = 2$. Find the positive value of $r$ when $p = \\frac{1}{32}$."
+   }
+  ],
+  "hint": "Write $p = aq^2$ and $q = \\frac{b}{r^3}$ with two different constants, then substitute.",
+  "answer": "(a) $p = \\frac{ab^2}{r^6}$ with $ab^2$ constant (b) $r = 2$",
+  "solution": "(a) Let $p = aq^2$ and $q = \\frac{b}{r^3}$, where $a$ and $b$ are constants. Substitute:\n$$p = a\\left(\\frac{b}{r^3}\\right)^2 = \\frac{ab^2}{r^6}$$\n$ab^2$ is a constant (call it $k$), so $p = \\frac{k}{r^6}$: $p$ is inversely proportional to $r^6$. $\\blacksquare$\n\n(Note $(r^3)^2 = r^6$, not $r^5$ or $r^9$.)\n\n(b) $p = \\frac{k}{r^6}$ with $p = 2$ when $r = 1$:\n$$2 = \\frac{k}{1} \\quad\\Rightarrow\\quad k = 2, \\qquad p = \\frac{2}{r^6}$$\n\nWhen $p = \\frac{1}{32}$:\n$$\\frac{1}{32} = \\frac{2}{r^6} \\quad\\Rightarrow\\quad r^6 = 64 \\quad\\Rightarrow\\quad r = 2$$\n(positive root, since $2^6 = 64$).",
+  "linkedTopicIds": [
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

@@ -1,0 +1,299 @@
+[
+ {
+  "id": "alg-sequences-quadratic-geometric-q01",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For each sequence, say whether it is **arithmetic**, **geometric**, **square numbers**, **triangular numbers** or **Fibonacci-type**, and write down the next term.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$3, 6, 12, 24, \\ldots$"
+   },
+   {
+    "label": "b",
+    "prompt": "$1, 4, 9, 16, \\ldots$"
+   },
+   {
+    "label": "c",
+    "prompt": "$2, 3, 5, 8, 13, \\ldots$"
+   },
+   {
+    "label": "d",
+    "prompt": "$1, 3, 6, 10, \\ldots$"
+   },
+   {
+    "label": "e",
+    "prompt": "$5, 9, 13, 17, \\ldots$"
+   }
+  ],
+  "hint": "Look at the differences between terms, the ratios between terms, and whether each term is the sum of the two before it.",
+  "answer": "(a) Geometric, 48 (b) Square numbers, 25 (c) Fibonacci-type, 21 (d) Triangular numbers, 15 (e) Arithmetic, 21",
+  "solution": "(a) Each term is double the previous one (common ratio 2): **geometric**. Next term $24 \\times 2 = 48$.\n\n(b) $1^2, 2^2, 3^2, 4^2$: **square numbers**. Next term $5^2 = 25$.\n\n(c) Each term is the sum of the two before ($2 + 3 = 5$, $3 + 5 = 8$, $5 + 8 = 13$): **Fibonacci-type**. Next term $8 + 13 = 21$.\n\n(d) Differences $2, 3, 4$ increase by 1 each time: **triangular numbers**. Next term $10 + 5 = 15$.\n\n(e) Constant difference 4: **arithmetic**. Next term $17 + 4 = 21$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q02",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the quadratic sequence $2, 5, 10, 17, 26, \\ldots$",
+  "hint": "Find the first and second differences. Compare the sequence with the square numbers $1, 4, 9, 16, 25$.",
+  "answer": "$n^2 + 1$",
+  "solution": "First differences: $3, 5, 7, 9$. Second differences: $2, 2, 2$.\n\nSecond difference $= 2a = 2$, so $a = 1$: the $n$th term starts $n^2$.\n\nSubtract $n^2$ from each term: $2 - 1, 5 - 4, 10 - 9, 17 - 16, 26 - 25 = 1, 1, 1, 1, 1$.\n\n$$n\\text{th term} = n^2 + 1$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q03",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the quadratic sequence $3, 9, 19, 33, 51, \\ldots$",
+  "hint": "The second difference is $2a$, not $a$.",
+  "answer": "$2n^2 + 1$",
+  "solution": "**What changed:** compared with $n^2 + 1$, only the coefficient of $n^2$ has changed, so the second difference changes.\n\nFirst differences: $6, 10, 14, 18$. Second differences: $4, 4, 4$.\n\n$2a = 4$, so $a = 2$ (not 4): the $n$th term starts $2n^2$.\n\n| $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| term | 3 | 9 | 19 | 33 | 51 |\n| $2n^2$ | 2 | 8 | 18 | 32 | 50 |\n| term $- 2n^2$ | 1 | 1 | 1 | 1 | 1 |\n\n$$n\\text{th term} = 2n^2 + 1$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q04",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the quadratic sequence $6, 15, 28, 45, 66, \\ldots$",
+  "hint": "Find $a$ from the second difference, subtract $an^2$, and then find the $n$th term of the linear sequence left over.",
+  "answer": "$2n^2 + 3n + 1$",
+  "solution": "**What changed:** the second difference is still 4 (so still $2n^2$), but now there is also a linear term in $n$.\n\nFirst differences: $9, 13, 17, 21$. Second differences: $4, 4, 4$, so $a = 2$.\n\n| $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| term | 6 | 15 | 28 | 45 | 66 |\n| $2n^2$ | 2 | 8 | 18 | 32 | 50 |\n| term $- 2n^2$ | 4 | 7 | 10 | 13 | 16 |\n\nThe remainder $4, 7, 10, 13, 16$ has difference 3 and zeroth term 1, so it is $3n + 1$.\n\n$$n\\text{th term} = 2n^2 + 3n + 1$$\n\nCheck: $n = 5$: $50 + 15 + 1 = 66$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q05",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the quadratic sequence $0, 3, 10, 21, 36, \\ldots$",
+  "hint": "After subtracting $2n^2$, the remaining linear sequence goes down.",
+  "answer": "$2n^2 - 3n + 1$",
+  "solution": "**What changed:** the linear part now has a negative coefficient, $-3n$ instead of $+3n$. The second difference is unchanged.\n\nFirst differences: $3, 7, 11, 15$. Second differences: $4, 4, 4$, so $a = 2$.\n\n| $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| term | 0 | 3 | 10 | 21 | 36 |\n| $2n^2$ | 2 | 8 | 18 | 32 | 50 |\n| term $- 2n^2$ | $-2$ | $-5$ | $-8$ | $-11$ | $-14$ |\n\nThe remainder has difference $-3$ and zeroth term $-2 - (-3) = 1$, so it is $-3n + 1$.\n\n$$n\\text{th term} = 2n^2 - 3n + 1$$\n\nCheck: $n = 4$: $32 - 12 + 1 = 21$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q06",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Find the common ratio of each geometric sequence and write down its next two terms.\n\n(i) $3, 6, 12, 24, \\ldots$\n\n(ii) $80, 40, 20, 10, \\ldots$\n\n(b) Write down an expression for the $n$th term of the sequence in (a)(i), and use it to find the 10th term.",
+  "hint": "Common ratio $=$ term $\\div$ previous term. The first term has been multiplied by the ratio zero times.",
+  "answer": "(a)(i) $r = 2$; 48, 96 (ii) $r = \\frac{1}{2}$; 5, 2.5 (b) $3 \\times 2^{n-1}$; 1536",
+  "solution": "(a)(i) $6 \\div 3 = 2$, so $r = 2$. Next terms: $48, 96$.\n\n(ii) $40 \\div 80 = \\frac{1}{2}$, so $r = \\frac{1}{2}$ (each term is halved). Next terms: $5, 2.5$.\n\n(b) First term $a = 3$, ratio $r = 2$:\n$$n\\text{th term} = 3 \\times 2^{n - 1}$$\n\nCheck: $n = 1$ gives $3 \\times 2^0 = 3$ ✓.\n\n10th term: $3 \\times 2^9 = 3 \\times 512 = 1536$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q07",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Rory is asked to find the $n$th term of $3, 10, 21, 36, 55, \\ldots$ His working is shown below.\n\nFirst differences: $7, 11, 15, 19$\nSecond differences: $4, 4, 4$\nSo the $n$th term starts $4n^2$.\nWhen $n = 1$, $4n^2 = 4$, and the first term is 3, so subtract 1.\n$n$th term $= 4n^2 - 1$\n\nIdentify Rory's mistakes and find the correct $n$th term.",
+  "hint": "What is the second difference of $n^2$ itself? Then test Rory's answer with $n = 2$.",
+  "answer": "The coefficient of $n^2$ is half the second difference, so it is $2n^2$, not $4n^2$; he also only checked $n = 1$. Correct $n$th term: $2n^2 + n$.",
+  "solution": "**Mistake 1:** Rory used the second difference (4) as the coefficient of $n^2$. The sequence $n^2$ ($1, 4, 9, 16, \\ldots$) has second difference 2, so $an^2$ has second difference $2a$. Here $2a = 4$ gives $a = 2$.\n\n**Mistake 2:** he only checked $n = 1$. His formula gives $4(2)^2 - 1 = 15$ for the 2nd term, not 10.\n\n**Correct working:**\n\n| $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| term | 3 | 10 | 21 | 36 | 55 |\n| $2n^2$ | 2 | 8 | 18 | 32 | 50 |\n| term $- 2n^2$ | 1 | 2 | 3 | 4 | 5 |\n\nThe remainder is $n$, so\n$$n\\text{th term} = 2n^2 + n$$\n\nCheck: $n = 4$: $32 + 4 = 36$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q08",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Aisha is asked for the $n$th term of the geometric sequence $5, 15, 45, 135, \\ldots$\n\nShe writes: \"First term 5, common ratio 3, so the $n$th term is $5 \\times 3^{n-1} = 15^{n - 1}$.\"\n\n(a) Explain what Aisha has done wrong.\n\n(b) Find the correct 6th term of the sequence.",
+  "hint": "Which comes first in $5 \\times 3^{n-1}$: the power or the multiplication? Test $15^{n-1}$ with $n = 1$.",
+  "answer": "(a) She combined $5 \\times 3^{n-1}$ into $15^{n-1}$, but the power applies only to the 3; $5 \\times 3^{n-1}$ is already the correct, simplest form. (b) 1215",
+  "solution": "(a) $5 \\times 3^{n - 1}$ is correct, but it cannot be simplified to $15^{n - 1}$. The index applies only to the 3, and powers are worked out before multiplying. Testing:\n\n• $n = 1$: $5 \\times 3^0 = 5$ ✓ but $15^0 = 1$ ✗\n• $n = 3$: $5 \\times 3^2 = 45$ ✓ but $15^2 = 225$ ✗\n\n(b)\n$$6\\text{th term} = 5 \\times 3^5 = 5 \\times 243 = 1215$$\n\n(Check by continuing: $135 \\times 3 = 405$, $405 \\times 3 = 1215$ ✓.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q09",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Dev knows that the triangular numbers are $1, 3, 6, 10, 15, \\ldots$\n\nHe says: \"The $n$th triangular number is $n(n + 1)$, so the 20th triangular number is $20 \\times 21 = 420$.\"\n\n(a) Show that Dev's formula is wrong.\n\n(b) Write down the correct formula and find the 20th triangular number.\n\n(c) Is 120 a triangular number? Show how you decide.",
+  "hint": "Substitute $n = 1, 2, 3$ into Dev's formula and compare with $1, 3, 6$.",
+  "answer": "(a) $n(n + 1)$ gives $2, 6, 12, \\ldots$, double the triangular numbers. (b) $\\frac{n(n + 1)}{2}$; 210 (c) Yes: $\\frac{15 \\times 16}{2} = 120$, the 15th triangular number.",
+  "solution": "(a) Dev's formula gives $1 \\times 2 = 2$, $2 \\times 3 = 6$, $3 \\times 4 = 12$, which are **double** the triangular numbers $1, 3, 6$.\n\n(b) Halving fixes it:\n$$T_n = \\frac{n(n + 1)}{2}$$\n\n$$T_{20} = \\frac{20 \\times 21}{2} = 210$$\n\n(Why halve? $n(n + 1)$ counts the dots in an $n$ by $n + 1$ rectangle, and two copies of the triangle pattern fit together to make that rectangle.)\n\n(c) Need $\\frac{n(n + 1)}{2} = 120$, i.e. $n(n + 1) = 240$. Since $15 \\times 16 = 240$, $n = 15$ is a whole number, so 120 **is** a triangular number (the 15th).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q10",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Hannah is asked to find the 8th term of the geometric sequence $4, 12, 36, 108, \\ldots$ Her working is shown below.\n\n$r = 12 \\div 4 = 3$\n$n$th term $= 4 \\times 3^n$\n8th term $= 4 \\times 3^8 = 26\\,244$\n\nFind Hannah's error and work out the correct 8th term.",
+  "hint": "Test Hannah's $n$th term with $n = 1$.",
+  "answer": "The power should be $n - 1$, not $n$: $n$th term $4 \\times 3^{n - 1}$; 8th term $= 4 \\times 3^7 = 8748$.",
+  "solution": "The error is in the second line. With power $n$, the first term would be $4 \\times 3^1 = 12$, but the first term is 4.\n\nThe first term has had the ratio applied **zero** times, the second term once, and so on, so the $n$th term has had it applied $n - 1$ times:\n$$n\\text{th term} = 4 \\times 3^{n - 1}$$\n\n8th term:\n$$4 \\times 3^7 = 4 \\times 2187 = 8748$$\n\n(Hannah's answer is 3 times too big: she found the 9th term.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q11",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "A Fibonacci-type sequence starts $a, b, \\ldots$ and each term after the second is the sum of the two terms before it.\n\nThe 3rd term is 11 and the 6th term is 47.\n\nFind $a$ and $b$, and write down the first six terms.",
+  "hint": "Write the first six terms in terms of $a$ and $b$: $a, b, a + b, a + 2b, \\ldots$ Then form two equations.",
+  "answer": "$a = 4$, $b = 7$; the sequence is $4, 7, 11, 18, 29, 47$.",
+  "solution": "Terms in terms of $a$ and $b$:\n\n| term | 1st | 2nd | 3rd | 4th | 5th | 6th |\n|---|---|---|---|---|---|---|\n| value | $a$ | $b$ | $a + b$ | $a + 2b$ | $2a + 3b$ | $3a + 5b$ |\n\nSo\n$$a + b = 11 \\qquad (1)$$\n$$3a + 5b = 47 \\qquad (2)$$\n\n$3 \\times (1)$: $3a + 3b = 33$. Subtract from (2): $2b = 14$, so $b = 7$ and $a = 4$.\n\nSequence: $4, 7, 11, 18, 29, 47$ ✓ (the 3rd term is 11 and the 6th is 47).",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q12",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "Here are the first five terms of a quadratic sequence.\n\n$$7, \\quad 12, \\quad 21, \\quad 34, \\quad 51$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find an expression, in terms of $n$, for the $n$th term of the sequence.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Which term of the sequence is equal to 331? You must show your working.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Halve the second difference to get the coefficient of $n^2$. (b) Set your $n$th term equal to 331 and solve the quadratic equation.",
+  "answer": "(a) $2n^2 - n + 6$ (b) The 13th term",
+  "solution": "**(a)** First differences: $5, 9, 13, 17$; second differences: $4, 4, 4$, so the $n$th term starts $2n^2$. **M1**\n\nTerm $- 2n^2$: $7 - 2 = 5$, $12 - 8 = 4$, $21 - 18 = 3$, $34 - 32 = 2$, $51 - 50 = 1$. This is $-n + 6$. **M1** for subtracting $2n^2$ and finding the linear sequence\n\n$$n\\text{th term} = 2n^2 - n + 6$$\n**A1**\n\n**(b)**\n$$2n^2 - n + 6 = 331 \\;\\Rightarrow\\; 2n^2 - n - 325 = 0$$\n**M1** ft their (a)\n\n$$(n - 13)(2n + 25) = 0$$\n**M1** for a correct method to solve (factorising or formula)\n\n$n = 13$ or $n = -12.5$. $n$ must be a positive integer, so 331 is the **13th term**. **A1**\n\n(Check: $2(169) - 13 + 6 = 331$ ✓.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q13",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A ball is dropped from a height of 3 m. After each bounce it rises to 60% of the height it fell from. So after the 1st bounce it rises to 1.8 m.\n\n(a) Find the height the ball reaches after the 2nd and 3rd bounces.\n\n(b) Write an expression for the height, in metres, reached after the $n$th bounce.\n\n(c) After which bounce does the ball first fail to reach a height of 10 cm?",
+  "hint": "The heights form a geometric sequence with ratio 0.6. For (c), use your calculator to try values of $n$.",
+  "answer": "(a) 1.08 m and 0.648 m (b) $1.8 \\times 0.6^{n - 1}$ (equivalently $3 \\times 0.6^n$) (c) The 7th bounce",
+  "solution": "(a) 2nd bounce: $1.8 \\times 0.6 = 1.08$ m. 3rd bounce: $1.08 \\times 0.6 = 0.648$ m.\n\n(b) Geometric with first term 1.8 and ratio 0.6:\n$$h_n = 1.8 \\times 0.6^{n - 1} \\text{ m}$$\n(This equals $3 \\times 0.6^n$, since $1.8 = 3 \\times 0.6$.)\n\n(c) 10 cm $= 0.1$ m. Try values:\n\n| $n$ | 5 | 6 | 7 |\n|---|---|---|---|\n| $h_n$ (m) | 0.233… | 0.140 | 0.0840 |\n\nAfter the 6th bounce it still reaches 14.0 cm; after the **7th bounce** it reaches only about 8.4 cm, so this is the first time it fails to reach 10 cm.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q14",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Sequence A is $100, 150, 200, 250, \\ldots$ (arithmetic).\nSequence B is $2, 6, 18, 54, \\ldots$ (geometric).\n\n(a) Find the $n$th term of each sequence.\n\n(b) Find the first term number at which the term of B is bigger than the term of A.\n\n(c) In US Algebra 1, a geometric sequence is described as an **exponential function** of $n$. Write the $n$th term of B in the form $f(n) = k \\times b^n$, and explain why B grows exponentially while A grows linearly.\n\n(d) Explain why any geometric sequence with positive first term and common ratio greater than 1 will eventually overtake any arithmetic sequence.",
+  "hint": "Compare how each sequence changes from one term to the next: by adding a fixed amount, or by multiplying by a fixed factor.",
+  "answer": "(a) A: $50n + 50$; B: $2 \\times 3^{n-1}$ (b) $n = 6$ (A: 350, B: 486) (c) $f(n) = \\frac{2}{3} \\times 3^n$; B multiplies by 3 each step (constant ratio) while A adds 50 (constant difference). (d) The amount B increases by keeps growing (it is multiplied by the ratio each step), so eventually it exceeds the fixed difference of A and B catches up and overtakes.",
+  "solution": "(a) A: $d = 50$, zeroth term 50, so $50n + 50$.\n\nB: first term 2, ratio 3, so $2 \\times 3^{n - 1}$.\n\n(b)\n\n| $n$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| A | 100 | 150 | 200 | 250 | 300 | 350 |\n| B | 2 | 6 | 18 | 54 | 162 | 486 |\n\nB first exceeds A at $n = 6$.\n\n(c) $2 \\times 3^{n - 1} = 2 \\times 3^n \\times 3^{-1} = \\frac{2}{3} \\times 3^n$, so $f(n) = \\frac{2}{3} \\times 3^n$ with domain $n = 1, 2, 3, \\ldots$\n\nB has a **constant ratio** (each term is 3 times the previous), which is the defining property of exponential growth. A has a **constant difference** (add 50 each time), which is linear growth.\n\n(d) In B the increase from one term to the next is $(r - 1) \\times$ (current term). Each step multiplies the current term by $r > 1$, so these increases themselves grow without limit. In A the increase is always the same fixed amount $d$. Once B's step-increase exceeds $d$, B gains on A at every step, and because its gains keep growing it must eventually overtake A.",
+  "linkedTopicIds": [
+   "alg-linear-exponential-models"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q15",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The first three terms of a geometric sequence are $\\sqrt{2}, \\; 2, \\; 2\\sqrt{2}, \\ldots$\n\n(a) Find the common ratio.\n\n(b) Show that the 9th term is $16\\sqrt{2}$.\n\n(c) Which term of the sequence is equal to 64?\n\nGive exact answers throughout.",
+  "hint": "Divide the 2nd term by the 1st. Remember that $\\sqrt{2} \\times \\sqrt{2} = 2$, so $(\\sqrt{2})^2 = 2$.",
+  "answer": "(a) $\\sqrt{2}$ (b) $(\\sqrt{2})^9 = 2^4\\sqrt{2} = 16\\sqrt{2}$ (c) The 12th term",
+  "solution": "(a) $r = \\dfrac{2}{\\sqrt{2}} = \\dfrac{2\\sqrt{2}}{2} = \\sqrt{2}$. (Check: $2 \\times \\sqrt{2} = 2\\sqrt{2}$ ✓.)\n\n(b) $n$th term $= \\sqrt{2} \\times (\\sqrt{2})^{n - 1} = (\\sqrt{2})^n$.\n$$9\\text{th term} = (\\sqrt{2})^9 = (\\sqrt{2})^8 \\times \\sqrt{2} = 2^4 \\times \\sqrt{2} = 16\\sqrt{2}$$\n\n(c) $(\\sqrt{2})^n = 64 = 2^6$. Since $(\\sqrt{2})^2 = 2$, we have $2^6 = (\\sqrt{2})^{12}$, so $n = 12$.\n\n64 is the **12th term**.",
+  "linkedTopicIds": [
+   "num-surds",
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q16",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "At a meeting, every person shakes hands exactly once with every other person.\n\n| People | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|\n| Handshakes | 1 | 3 | 6 | 10 |\n\n(a) Explain why the numbers of handshakes are triangular numbers, and find a formula for the number of handshakes when there are $n$ people.\n\n(b) At a conference, there were 190 handshakes. How many people were there?\n\n(c) Explain why it is impossible for there to be exactly 100 handshakes.",
+  "hint": "When a new person arrives, how many new handshakes are there? For (b), form a quadratic equation.",
+  "answer": "(a) The $k$th person to arrive shakes hands with the $k - 1$ already there, so the totals are $1 + 2 + 3 + \\cdots$; handshakes $= \\frac{n(n - 1)}{2}$ (b) 20 people (c) $n(n - 1) = 200$ has no whole-number solution ($14 \\times 13 = 182$, $15 \\times 14 = 210$).",
+  "solution": "(a) When the 2nd person arrives there is 1 handshake; the 3rd person adds 2 more; the 4th adds 3; and so on. So the totals are $1$, $1 + 2$, $1 + 2 + 3$, …, which are the triangular numbers.\n\nWith $n$ people, the total is the $(n - 1)$th triangular number:\n$$\\frac{(n - 1)n}{2} = \\frac{n(n - 1)}{2}$$\n(Equivalently: each of $n$ people shakes $n - 1$ hands, and each handshake is counted twice.)\n\n(b)\n$$\\frac{n(n - 1)}{2} = 190 \\;\\Rightarrow\\; n^2 - n - 380 = 0 \\;\\Rightarrow\\; (n - 20)(n + 19) = 0$$\n\n$n$ is positive, so $n = 20$ people.\n\n(c) We would need $n(n - 1) = 200$. But $14 \\times 13 = 182$ and $15 \\times 14 = 210$, and $n(n - 1)$ increases with $n$, so no whole number $n$ works. Exactly 100 handshakes is impossible.",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q17",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A quadratic sequence has a constant second difference of 6. Its 2nd term is 0 and its 4th term is 18.\n\n(a) Find the $n$th term of the sequence.\n\n(b) Prove that every term of the sequence is a multiple of 6.",
+  "hint": "(a) The $n$th term is $3n^2 + bn + c$. Substitute $n = 2$ and $n = 4$. (b) Factorise your answer to (a) fully.",
+  "answer": "(a) $3n^2 - 9n + 6$ (b) $3n^2 - 9n + 6 = 3(n - 1)(n - 2)$; $(n - 1)(n - 2)$ is a product of two consecutive integers, so it is even, and $3 \\times \\text{even}$ is a multiple of 6.",
+  "solution": "(a) Second difference $6 = 2a$, so $a = 3$ and the $n$th term is $3n^2 + bn + c$.\n\n$n = 2$: $12 + 2b + c = 0 \\quad (1)$\n\n$n = 4$: $48 + 4b + c = 18 \\quad (2)$\n\n$(2) - (1)$: $36 + 2b = 18$, so $b = -9$. Then $c = -12 + 18 = 6$.\n\n$$n\\text{th term} = 3n^2 - 9n + 6$$\n\nCheck: the sequence is $0, 0, 6, 18, 36, \\ldots$ with first differences $0, 6, 12, 18$ and second differences $6$ ✓.\n\n(b)\n$$3n^2 - 9n + 6 = 3(n^2 - 3n + 2) = 3(n - 1)(n - 2)$$\n\n$n - 2$ and $n - 1$ are consecutive integers, so one of them is even and their product is $2k$ for some integer $k$. Hence\n$$3(n - 1)(n - 2) = 3 \\times 2k = 6k$$\nwhich is a multiple of 6 for every $n$.",
+  "linkedTopicIds": [
+   "alg-algebraic-proof",
+   "alg-factorising-quadratics"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-sequences-quadratic-geometric-q18",
+  "topicId": "alg-sequences-quadratic-geometric",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A sequence of positive numbers $1, r, r^2, r^3, \\ldots$ is geometric. It is also Fibonacci-type: every term after the second is the sum of the two terms before it.\n\n(a) Show that $r^2 = r + 1$, and hence find the exact value of $r$.\n\n(b) Show that if $r^2 = r + 1$, then the Fibonacci rule $r^{k+1} = r^k + r^{k-1}$ holds for **every** later term too.\n\n(c) Show that $r^3 = 2 + \\sqrt{5}$.",
+  "hint": "(a) Apply the Fibonacci rule to the first three terms and solve the quadratic with the formula. (b) Multiply both sides of $r^2 = r + 1$ by a power of $r$. (c) $r^3 = r \\times r^2$.",
+  "answer": "(a) $r = \\dfrac{1 + \\sqrt{5}}{2}$ (b) Multiply $r^2 = r + 1$ by $r^{k-1}$ (c) $r^3 = r^2 + r = 2r + 1 = 2 + \\sqrt{5}$",
+  "solution": "(a) The 3rd term is the sum of the first two: $r^2 = 1 + r$, i.e. $r^2 - r - 1 = 0$.\n\nBy the quadratic formula:\n$$r = \\frac{1 \\pm \\sqrt{1 + 4}}{2} = \\frac{1 \\pm \\sqrt{5}}{2}$$\n\nThe terms are positive, so $r > 0$ and\n$$r = \\frac{1 + \\sqrt{5}}{2} \\approx 1.618$$\n(the **golden ratio**).\n\n(b) Multiply both sides of $r^2 = r + 1$ by $r^{k - 1}$:\n$$r^{k + 1} = r^k + r^{k - 1}$$\nSo each term $r^{k+1}$ is the sum of the two before it, for every $k \\ge 1$.\n\n(c) Using $r^2 = r + 1$ twice:\n$$r^3 = r \\times r^2 = r(r + 1) = r^2 + r = (r + 1) + r = 2r + 1$$\n$$= 2 \\times \\frac{1 + \\sqrt{5}}{2} + 1 = 1 + \\sqrt{5} + 1 = 2 + \\sqrt{5}$$",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "num-surds"
+  ]
+ }
+]
