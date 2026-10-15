@@ -1,0 +1,249 @@
+[
+ {
+  "id": "geo-polygon-angles-q01",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out the size of each **exterior** angle of a regular hexagon.",
+  "hint": "The exterior angles of any polygon add up to $360^\\circ$. In a regular polygon they are all equal.",
+  "answer": "$60^\\circ$",
+  "solution": "The exterior angles of a polygon add up to $360^\\circ$. A regular hexagon has 6 equal exterior angles:\n$$\\text{exterior angle} = \\frac{360^\\circ}{6} = 60^\\circ$$\n\n(Picture walking round the hexagon: at each corner you turn through the exterior angle, and after 6 turns you have turned through one full turn, $360^\\circ$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q02",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Work out the size of each **interior** angle of a regular hexagon.",
+  "hint": "Find the exterior angle first. At each vertex, interior angle $+$ exterior angle $= 180^\\circ$.",
+  "answer": "$120^\\circ$",
+  "solution": "**What changed:** we now want the interior angle, not the exterior angle. $\\frac{360^\\circ}{6}$ gives the **exterior** angle, not the interior one.\n\n$$\\text{exterior angle} = \\frac{360^\\circ}{6} = 60^\\circ$$\n\nThe interior and exterior angles at a vertex lie on a straight line:\n$$\\text{interior angle} = 180^\\circ - 60^\\circ = 120^\\circ$$\n\nCheck with the angle sum: $(6 - 2) \\times 180^\\circ = 720^\\circ$ and $720^\\circ \\div 6 = 120^\\circ$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q03",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out the size of each interior angle of a regular 12-sided polygon (a regular dodecagon).",
+  "hint": "Same method as for the hexagon: exterior angle first, then subtract from $180^\\circ$.",
+  "answer": "$150^\\circ$",
+  "solution": "**What changed:** the number of sides went from 6 to 12.\n\n$$\\text{exterior angle} = \\frac{360^\\circ}{12} = 30^\\circ$$\n\n$$\\text{interior angle} = 180^\\circ - 30^\\circ = 150^\\circ$$\n\nDoubling the number of sides halves the exterior angle (from $60^\\circ$ to $30^\\circ$), so the interior angle gets bigger (from $120^\\circ$ to $150^\\circ$). The more sides, the closer each interior angle gets to $180^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q04",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Each interior angle of a regular polygon is $150^\\circ$.\n\nHow many sides does the polygon have?",
+  "hint": "Work backwards: find the exterior angle, then divide it into $360^\\circ$.",
+  "answer": "12 sides",
+  "solution": "**What changed:** this is the previous question in reverse – we know the angle and want $n$.\n\nInterior $+$ exterior $= 180^\\circ$:\n$$\\text{exterior angle} = 180^\\circ - 150^\\circ = 30^\\circ$$\n\nThe exterior angles add up to $360^\\circ$ and are all equal:\n$$n = \\frac{360^\\circ}{30^\\circ} = 12$$\n\nNote: dividing $360^\\circ$ by the **interior** angle ($360 \\div 150 = 2.4$) is a common mistake – it does not even give a whole number. Always divide by the **exterior** angle.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q05",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\"><polygon points=\"150,20 67.9,59.5 47.6,148.4 104.4,219.6 195.6,219.6 252.4,148.4 232.1,59.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"150\" y1=\"20\" x2=\"47.6\" y2=\"148.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"104.4\" y2=\"219.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"195.6\" y2=\"219.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"20\" x2=\"252.4\" y2=\"148.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"88.5\" y=\"81\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"100.7\" y=\"134.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"150\" y=\"158.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"199.3\" y=\"134.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"211.5\" y=\"81\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text></svg>",
+  "question": "The diagram shows a heptagon (7 sides) split into triangles by drawing diagonals from one vertex.\n\n(a) How many triangles are there?\n\n(b) Work out the sum of the interior angles of a heptagon.\n\n(c) Work out the sum of the interior angles of a polygon with 20 sides.",
+  "hint": "The angles of the triangles together make up exactly the interior angles of the heptagon. Each triangle has angles adding up to $180^\\circ$.",
+  "answer": "(a) 5 (b) $900^\\circ$ (c) $3240^\\circ$",
+  "solution": "(a) From one vertex you can draw diagonals to every vertex except itself and its two neighbours, giving $7 - 2 = 5$ triangles.\n\n(b) The angles of the 5 triangles fill the interior angles of the heptagon exactly, so\n$$\\text{angle sum} = 5 \\times 180^\\circ = 900^\\circ$$\n\n(c) In general an $n$-sided polygon splits into $n - 2$ triangles, so its angle sum is $(n - 2) \\times 180^\\circ$:\n$$(20 - 2) \\times 180^\\circ = 18 \\times 180^\\circ = 3240^\\circ$$\n\n(Using $n$ triangles instead of $n - 2$ is a common error: $20 \\times 180^\\circ = 3600^\\circ$ is wrong.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q06",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><polygon points=\"74.1,198.2 209,210 265.9,128.7 203.8,40 74.1,100.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M74.1 178.2 A20 20 0 0 1 94 199.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"105.1\" y=\"174.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">95°</text><path d=\"M189 208.3 A20 20 0 0 1 220.4 193.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"191.2\" y=\"176.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">120°</text><path d=\"M254.4 145.1 A20 20 0 0 1 254.4 112.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"223.9\" y=\"133.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">110°</text><path d=\"M215.2 56.4 A20 20 0 0 1 185.6 48.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"192.9\" y=\"85.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">100°</text><path d=\"M92.2 92 A20 20 0 0 1 74.1 120.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"109.5\" y=\"128\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">x</text></svg>",
+  "question": "The diagram shows a pentagon. It is not a regular pentagon.\n\nWork out the size of angle $x$.",
+  "hint": "Find the sum of the interior angles of any pentagon first. Is it fair to divide by 5 here?",
+  "answer": "$x = 115^\\circ$",
+  "solution": "Sum of the interior angles of a pentagon:\n$$(5 - 2) \\times 180^\\circ = 540^\\circ$$\n\nThe pentagon is **not** regular, so its angles are not all equal – we cannot just divide $540^\\circ$ by 5. Instead subtract the four known angles:\n$$x = 540^\\circ - (95^\\circ + 120^\\circ + 110^\\circ + 100^\\circ) = 540^\\circ - 425^\\circ = 115^\\circ$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q07",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 240\" width=\"280\" height=\"240\"><polygon points=\"240,120 190,33.4 90,33.4 40,120 90,206.6 190,206.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"140\" y1=\"120\" x2=\"240\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"120\" x2=\"190\" y2=\"33.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"120\" x2=\"90\" y2=\"33.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"120\" x2=\"40\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"120\" x2=\"90\" y2=\"206.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"140\" y1=\"120\" x2=\"190\" y2=\"206.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"140\" cy=\"120\" r=\"3\" fill=\"currentColor\"/></svg>",
+  "question": "Leo wants the sum of the interior angles of a hexagon. He splits it into triangles from the centre, as shown, and writes:\n\n\"There are 6 triangles. Each triangle has angles adding up to $180^\\circ$.\n\nSum of the interior angles $= 6 \\times 180^\\circ = 1080^\\circ$\"\n\nExplain Leo's mistake and work out the correct angle sum.",
+  "hint": "Do all the angles of Leo's 6 triangles lie in the corners of the hexagon? Look at the centre.",
+  "answer": "Leo has included the angles at the centre, which are not interior angles of the hexagon. They make $360^\\circ$, so the sum is $1080^\\circ - 360^\\circ = 720^\\circ$.",
+  "solution": "Leo's triangles are correct, but not all of their angles are interior angles of the hexagon. Each triangle has one angle at the **centre**, and these six angles go round a point, adding up to $360^\\circ$. They are not at the corners of the hexagon, so they must be taken away:\n$$6 \\times 180^\\circ - 360^\\circ = 1080^\\circ - 360^\\circ = 720^\\circ$$\n\n**Standard method:** drawing diagonals from one vertex splits a hexagon into $6 - 2 = 4$ triangles, all of whose angles are at the corners:\n$$(6 - 2) \\times 180^\\circ = 720^\\circ$$\n\nCheck: a regular hexagon has interior angles of $120^\\circ$, and $6 \\times 120^\\circ = 720^\\circ$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q08",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><polygon points=\"140.6,194.4 229,210 246.4,145 225.1,65.6 154.9,40 93.6,113\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M130.6 177.1 A20 20 0 0 1 160.3 197.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.7\" y=\"165\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">130°</text><path d=\"M209.3 206.5 A20 20 0 0 1 234.2 190.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"206.4\" y=\"179.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">95°</text><path d=\"M241.2 164.3 A20 20 0 0 1 241.2 125.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"204.4\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">150°</text><path d=\"M230.3 84.9 A20 20 0 0 1 206.3 58.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"194.1\" y=\"98.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">125°</text><path d=\"M173.6 46.8 A20 20 0 0 1 142 55.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"165.7\" y=\"85.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">110°</text><path d=\"M106.5 97.7 A20 20 0 0 1 103.6 130.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"135.4\" y=\"121.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">x</text></svg>",
+  "question": "The diagram shows a hexagon. Five of its interior angles are given.\n\nMia is asked to find angle $x$. She writes:\n\n\"Angle sum $= (6 - 2) \\times 180^\\circ = 720^\\circ$\n\n$x = 720^\\circ \\div 6 = 120^\\circ$\"\n\n(a) Explain Mia's mistake.\n\n(b) Work out the correct value of $x$.",
+  "hint": "Mia's first line is correct. Would dividing by 6 work if the angles are not all the same size?",
+  "answer": "(a) Dividing by 6 only works for a regular hexagon, where all the angles are equal; this hexagon is irregular. (b) $x = 110^\\circ$",
+  "solution": "(a) Mia's first line is correct. Her mistake is in the second line: $720^\\circ \\div 6$ gives the size of each angle only when all six angles are **equal**, i.e. for a **regular** hexagon. The diagram shows angles of $95^\\circ$, $150^\\circ$, … so this hexagon is irregular. She has ignored the five angles she was given.\n\n(b) Subtract the five known angles from the angle sum:\n$$130^\\circ + 95^\\circ + 150^\\circ + 125^\\circ + 110^\\circ = 610^\\circ$$\n\n$$x = 720^\\circ - 610^\\circ = 110^\\circ$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q09",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "(a) Is it possible for a regular polygon to have an interior angle of $130^\\circ$? Explain your answer.\n\n(b) Is it possible for a regular polygon to have an interior angle of $162^\\circ$? If so, how many sides does it have?\n\n(c) Explain why no regular polygon can have an interior angle of $60^\\circ$ or less, apart from the equilateral triangle with exactly $60^\\circ$.",
+  "hint": "For each interior angle, find the exterior angle. The number of sides is $360^\\circ \\div$ exterior angle, and it must be a whole number of at least 3.",
+  "answer": "(a) No: the exterior angle would be $50^\\circ$, and $360 \\div 50 = 7.2$ is not a whole number. (b) Yes: exterior angle $18^\\circ$, $360 \\div 18 = 20$ sides. (c) Interior $\\le 60^\\circ$ means exterior $\\ge 120^\\circ$, so $n = 360 \\div \\text{exterior} \\le 3$; a polygon needs at least 3 sides, so only $n = 3$ (interior exactly $60^\\circ$) works.",
+  "solution": "In a regular polygon, $n = \\dfrac{360^\\circ}{\\text{exterior angle}}$, and $n$ must be a whole number (at least 3).\n\n(a) Exterior angle $= 180^\\circ - 130^\\circ = 50^\\circ$.\n$$n = \\frac{360}{50} = 7.2$$\n\nA polygon cannot have 7.2 sides, so **no** regular polygon has an interior angle of $130^\\circ$. (A regular heptagon's angle is about $128.6^\\circ$ and a regular octagon's is $135^\\circ$; $130^\\circ$ falls between them.)\n\n(b) Exterior angle $= 180^\\circ - 162^\\circ = 18^\\circ$.\n$$n = \\frac{360}{18} = 20$$\n\nThis is a whole number, so **yes**: a regular 20-sided polygon (icosagon).\n\n(c) If the interior angle is $60^\\circ$ or less, the exterior angle is $180^\\circ - 60^\\circ = 120^\\circ$ or more. Then\n$$n = \\frac{360}{\\text{exterior}} \\le \\frac{360}{120} = 3$$\n\nA polygon must have at least 3 sides, so the only possibility is $n = 3$, with exterior angle exactly $120^\\circ$ and interior angle exactly $60^\\circ$ – the equilateral triangle.\n\n(Dividing $360^\\circ$ by the interior angle, e.g. $360 \\div 130$, is a common error and gives meaningless answers.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q10",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\" width=\"320\" height=\"300\"><polygon points=\"120,175 202,175 227.3,97 161,48.8 94.7,97\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"120,175 202,175 202,257 120,257\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"94.7\" y1=\"97\" x2=\"120\" y2=\"257\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M120 246 L131 246 L131 257\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M202 246 L191 246 L191 257\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M131 175 L131 186 L120 186\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M191 175 L191 186 L202 186\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"132\" y=\"168\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"214\" y=\"170\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"241.3\" y=\"102\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><text x=\"161\" y=\"39.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text><text x=\"80.7\" y=\"102\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">E</text><text x=\"214\" y=\"274\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">F</text><text x=\"108\" y=\"274\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">G</text><path d=\"M113.8 156 A20 20 0 0 0 120 195\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg>",
+  "marks": 6,
+  "question": "$ABCDE$ is a regular pentagon. $ABFG$ is a square.\n\n$E$ and $G$ are joined with a straight line.\n\nThe diagram is not drawn accurately.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that each interior angle of a regular pentagon is $108^\\circ$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the size of angle $EAG$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the size of angle $AGE$. Give reasons for your working.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (b), the angles around point $A$ add up to $360^\\circ$. For (c), compare the lengths $AE$ and $AG$ with $AB$.",
+  "answer": "(a) Exterior angle $= 360^\\circ \\div 5 = 72^\\circ$, interior $= 180^\\circ - 72^\\circ = 108^\\circ$ (b) $162^\\circ$ (c) $9^\\circ$",
+  "solution": "(a) Exterior angle $= 360^\\circ \\div 5 = 72^\\circ$ **M1**\n\nInterior angle $= 180^\\circ - 72^\\circ = 108^\\circ$ **A1** (shown)\n\n(Alternative: $(5 - 2) \\times 180^\\circ = 540^\\circ$ **M1**, $540^\\circ \\div 5 = 108^\\circ$ **A1**.)\n\n(b) Angles around point $A$: angle $EAB = 108^\\circ$ (pentagon) and angle $BAG = 90^\\circ$ (square).\n$$\\angle EAG = 360^\\circ - 108^\\circ - 90^\\circ \\quad \\textbf{M1}$$\n$$\\angle EAG = 162^\\circ \\quad \\textbf{A1}$$\n\n(c) $AE = AB$ (sides of a regular pentagon) and $AG = AB$ (sides of a square), so $AE = AG$ and triangle $AEG$ is isosceles. **B1** (for identifying isosceles with reason)\n\nBase angles of an isosceles triangle are equal and angles in a triangle add up to $180^\\circ$:\n$$\\angle AGE = \\frac{180^\\circ - 162^\\circ}{2} = 9^\\circ \\quad \\textbf{B1}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q11",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Floor tiles must fit together around each point with no gaps and no overlaps.\n\n(a) Explain why regular hexagonal tiles (like a honeycomb) fit together around a point, but regular pentagonal tiles do not.\n\n(b) Many kitchen floors use a pattern of regular octagons and squares. At each point, two octagons and one square meet. Show that these fit together with no gap.",
+  "hint": "Find the interior angle of each regular polygon. The angles meeting at a point must add up to exactly $360^\\circ$.",
+  "answer": "(a) Hexagon interior angle $= 120^\\circ$, and $3 \\times 120^\\circ = 360^\\circ$ exactly. Pentagon interior angle $= 108^\\circ$, and $360 \\div 108 = 3.33\\ldots$ is not a whole number (3 pentagons leave a $36^\\circ$ gap, 4 overlap). (b) Octagon interior angle $= 135^\\circ$; $135^\\circ + 135^\\circ + 90^\\circ = 360^\\circ$.",
+  "solution": "Angles around a point add up to $360^\\circ$, so the interior angles of the tiles meeting at a point must total exactly $360^\\circ$.\n\n(a) **Regular hexagon:** exterior angle $= 360^\\circ \\div 6 = 60^\\circ$, interior $= 120^\\circ$.\n$$3 \\times 120^\\circ = 360^\\circ$$\n\nso exactly three hexagons fit around each point.\n\n**Regular pentagon:** exterior angle $= 360^\\circ \\div 5 = 72^\\circ$, interior $= 108^\\circ$.\n$$3 \\times 108^\\circ = 324^\\circ \\quad (\\text{a } 36^\\circ \\text{ gap}), \\qquad 4 \\times 108^\\circ = 432^\\circ \\quad (\\text{overlap})$$\n\n$360^\\circ$ is not a whole-number multiple of $108^\\circ$, so regular pentagons cannot fit around a point.\n\n(b) **Regular octagon:** exterior angle $= 360^\\circ \\div 8 = 45^\\circ$, interior $= 135^\\circ$. **Square:** $90^\\circ$.\n$$135^\\circ + 135^\\circ + 90^\\circ = 360^\\circ$$\n\nso two octagons and a square fit exactly around each point.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q12",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Each interior angle of a regular polygon is 4 times the size of each exterior angle.\n\n(a) How many sides does the polygon have?\n\n(b) Work out the sum of its interior angles.",
+  "hint": "Let the exterior angle be $e$. Then the interior angle is $4e$. What do the interior and exterior angles at a vertex add up to?",
+  "answer": "(a) 10 sides (b) $1440^\\circ$",
+  "solution": "(a) Let each exterior angle be $e$, so each interior angle is $4e$. At each vertex they lie on a straight line:\n$$4e + e = 180^\\circ \\quad\\Rightarrow\\quad 5e = 180^\\circ \\quad\\Rightarrow\\quad e = 36^\\circ$$\n\nThe exterior angles add up to $360^\\circ$:\n$$n = \\frac{360^\\circ}{36^\\circ} = 10$$\n\nThe polygon is a regular decagon. Check: interior $= 144^\\circ = 4 \\times 36^\\circ$ ✓.\n\n(b)\n$$(10 - 2) \\times 180^\\circ = 1440^\\circ$$\n\n(Check: $10 \\times 144^\\circ = 1440^\\circ$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q13",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 4,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><polygon points=\"265.5,92.2 197.8,24.5 102.2,24.5 34.5,92.2 34.5,187.8 102.2,255.5 197.8,255.5 265.5,187.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><polygon points=\"237.8,103.6 186.4,52.2 113.6,52.2 62.2,103.6 62.2,176.4 113.6,227.8 186.4,227.8 237.8,176.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><line x1=\"265.5\" y1=\"92.2\" x2=\"237.8\" y2=\"103.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"197.8\" y1=\"24.5\" x2=\"186.4\" y2=\"52.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"102.2\" y1=\"24.5\" x2=\"113.6\" y2=\"52.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"34.5\" y1=\"92.2\" x2=\"62.2\" y2=\"103.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"34.5\" y1=\"187.8\" x2=\"62.2\" y2=\"176.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"102.2\" y1=\"255.5\" x2=\"113.6\" y2=\"227.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"197.8\" y1=\"255.5\" x2=\"186.4\" y2=\"227.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"265.5\" y1=\"187.8\" x2=\"237.8\" y2=\"176.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"102.2,255.5 197.8,255.5 186.4,227.8 113.6,227.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linejoin=\"round\"/><path d=\"M189.4 235.2 A22 22 0 0 0 175.8 255.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"167.9\" y=\"240.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">θ</text></svg>",
+  "question": "A carpenter makes a frame in the shape of a regular octagon from 8 identical pieces of wood. One piece is shaded in the diagram.\n\nEach end of each piece is cut at an angle $\\theta$ to its outer edge, so that neighbouring pieces meet along a straight joint that cuts the corner angle exactly in half.\n\n(a) Work out the angle $\\theta$.\n\n(b) The carpenter's saw can be set to any angle between the cut and the edge of the wood from $45^\\circ$ to $90^\\circ$. Which regular polygons with more than 4 sides can be made in this way with a cut of exactly a whole number of degrees? Give the number of sides of each.",
+  "hint": "Find the interior angle of a regular octagon. The joint splits it into two equal parts. For (b), $\\theta$ is half of the interior angle.",
+  "answer": "(a) $\\theta = 67.5^\\circ$ (b) The cut is half the interior angle, $\\theta = 90^\\circ - \\frac{180^\\circ}{n}$. This is a whole number when $n$ is a factor of 180 (with $n \\ge 5$): $n = 5, 6, 9, 10, 12, 15, 18, 20, 30, 36, 45, 60, 90, 180$.",
+  "solution": "(a) Regular octagon: exterior angle $= \\frac{360^\\circ}{8} = 45^\\circ$, so interior angle $= 180^\\circ - 45^\\circ = 135^\\circ$.\n\n(Not $360^\\circ \\div 8 = 45^\\circ$: that is the exterior angle.)\n\nThe joint cuts the $135^\\circ$ corner exactly in half, so each piece's end makes\n$$\\theta = 135^\\circ \\div 2 = 67.5^\\circ$$\n\nwith its outer edge.\n\n(b) For a regular $n$-gon, interior angle $= 180^\\circ - \\frac{360^\\circ}{n}$, so\n$$\\theta = \\frac{1}{2}\\left(180^\\circ - \\frac{360^\\circ}{n}\\right) = 90^\\circ - \\frac{180^\\circ}{n}$$\n\nFor $n \\ge 5$, $\\frac{180}{n} \\le 36$, so $\\theta$ lies between $54^\\circ$ and $90^\\circ$, within the saw's range. $\\theta$ is a whole number of degrees exactly when $\\frac{180}{n}$ is a whole number, i.e. when $n$ is a factor of 180.\n\nFactors of $180 = 2^2 \\times 3^2 \\times 5$ that are at least 5:\n$$n = 5, 6, 9, 10, 12, 15, 18, 20, 30, 36, 45, 60, 90, 180$$\n\n(The octagon is not on the list, which is why its cut, $67.5^\\circ$, needs half-degree accuracy.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q14",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-sequences-linear",
+   "alg-linear-inequalities"
+  ],
+  "question": "(a) The interior angles of a hexagon form an arithmetic sequence with common difference $10^\\circ$. Work out the size of the largest angle.\n\n(b) The interior angles of a pentagon form an arithmetic sequence with common difference $d^\\circ$, where $d$ is a positive whole number. The pentagon is convex, so every angle is less than $180^\\circ$.\n\nFind the largest possible value of $d$, and write down the angles of the pentagon for this value.",
+  "hint": "Write the angles as $a, a + d, a + 2d, \\ldots$ and use the angle sum to form an equation. For (b), write the largest angle in terms of $d$ only.",
+  "answer": "(a) $145^\\circ$ (b) $d = 35$; angles $38^\\circ, 73^\\circ, 108^\\circ, 143^\\circ, 178^\\circ$",
+  "solution": "(a) Hexagon angle sum $= (6 - 2) \\times 180^\\circ = 720^\\circ$. Let the smallest angle be $a$; the angles are $a, a + 10, a + 20, a + 30, a + 40, a + 50$:\n$$6a + 150 = 720 \\quad\\Rightarrow\\quad 6a = 570 \\quad\\Rightarrow\\quad a = 95$$\n\nLargest angle $= 95^\\circ + 50^\\circ = 145^\\circ$. (Angles: $95, 105, 115, 125, 135, 145$; sum $720$ ✓.)\n\n(b) Pentagon angle sum $= 540^\\circ$. The angles are $a, a + d, a + 2d, a + 3d, a + 4d$:\n$$5a + 10d = 540 \\quad\\Rightarrow\\quad a + 2d = 108 \\quad\\Rightarrow\\quad a = 108 - 2d$$\n\n(The middle angle is always $108^\\circ$.) The largest angle is\n$$a + 4d = 108 + 2d$$\n\nConvex means $108 + 2d < 180$, so $2d < 72$, i.e. $d < 36$. The largest whole number is $d = 35$.\n\nCheck the smallest angle is positive: $a = 108 - 70 = 38 > 0$ ✓.\n\nAngles: $38^\\circ, 73^\\circ, 108^\\circ, 143^\\circ, 178^\\circ$ (sum $540^\\circ$ ✓)."
+ },
+ {
+  "id": "geo-polygon-angles-q15",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Regular polygons are placed together so that they meet at a point with no gaps and no overlaps.\n\n(a) Two regular pentagons and one other regular polygon $P$ meet at a point. How many sides does $P$ have?\n\n(b) Show that one regular pentagon and two identical regular polygons can **not** meet at a point in this way.",
+  "hint": "Work out what angle is left over for the remaining polygon(s), then use the exterior angle to find the number of sides.",
+  "answer": "(a) 10 sides (a regular decagon) (b) Each of the two polygons would need an interior angle of $126^\\circ$, so an exterior angle of $54^\\circ$; $360 \\div 54 = 6.67$ is not a whole number, so no such regular polygon exists.",
+  "solution": "Each interior angle of a regular pentagon is $180^\\circ - \\frac{360^\\circ}{5} = 108^\\circ$. Angles around a point add up to $360^\\circ$.\n\n(a) The angle left for $P$ is\n$$360^\\circ - 2 \\times 108^\\circ = 144^\\circ$$\n\nExterior angle of $P$: $180^\\circ - 144^\\circ = 36^\\circ$, so\n$$n = \\frac{360^\\circ}{36^\\circ} = 10$$\n\n$P$ is a regular decagon.\n\n(b) The two identical polygons share\n$$360^\\circ - 108^\\circ = 252^\\circ$$\n\nso each would have interior angle $126^\\circ$ and exterior angle $180^\\circ - 126^\\circ = 54^\\circ$. Then\n$$n = \\frac{360}{54} = 6\\tfrac{2}{3}$$\n\nwhich is not a whole number. No regular polygon has an interior angle of $126^\\circ$, so this arrangement is impossible.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-polygon-angles-q16",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "alg-algebraic-fractions"
+  ],
+  "question": "Regular polygon $A$ has $n$ sides. Regular polygon $B$ has 5 more sides than $A$.\n\nEach exterior angle of $A$ is $6^\\circ$ larger than each exterior angle of $B$.\n\n(a) Show that $n^2 + 5n - 300 = 0$.\n\n(b) Hence find the number of sides of each polygon, and the size of an interior angle of each.",
+  "hint": "Write each exterior angle as a fraction of $360$. Their difference is 6. Multiply through by both denominators.",
+  "answer": "(a) $\\frac{360}{n} - \\frac{360}{n + 5} = 6$ leads to $1800 = 6n(n + 5)$, i.e. $n^2 + 5n - 300 = 0$. (b) $A$ has 15 sides (interior angle $156^\\circ$); $B$ has 20 sides (interior angle $162^\\circ$).",
+  "solution": "(a) Exterior angle of $A = \\dfrac{360}{n}$; exterior angle of $B = \\dfrac{360}{n + 5}$.\n$$\\frac{360}{n} - \\frac{360}{n + 5} = 6$$\n\nMultiply both sides by $n(n + 5)$:\n$$360(n + 5) - 360n = 6n(n + 5)$$\n\n$$1800 = 6n^2 + 30n$$\n\nDivide by 6 and rearrange:\n$$n^2 + 5n - 300 = 0 \\quad \\text{as required.}$$\n\n(b) Factorise:\n$$(n + 20)(n - 15) = 0 \\quad\\Rightarrow\\quad n = 15 \\text{ or } n = -20$$\n\nThe number of sides must be positive, so $n = 15$. Polygon $A$ has 15 sides and polygon $B$ has 20 sides.\n\nExterior angles: $A$: $360 \\div 15 = 24^\\circ$; $B$: $360 \\div 20 = 18^\\circ$ (difference $6^\\circ$ ✓).\n\nInterior angles: $A$: $180^\\circ - 24^\\circ = 156^\\circ$; $B$: $180^\\circ - 18^\\circ = 162^\\circ$."
+ },
+ {
+  "id": "geo-polygon-angles-q17",
+  "topicId": "geo-polygon-angles",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><line x1=\"15.4\" y1=\"180.8\" x2=\"100\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100\" y1=\"150\" x2=\"250\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"150\" x2=\"334.6\" y2=\"180.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100\" y1=\"150\" x2=\"175\" y2=\"122.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"250\" y1=\"150\" x2=\"175\" y2=\"122.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><path d=\"M150.6 131.6 A26 26 0 0 0 199.4 131.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"175\" y=\"171.7\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">140°</text><text x=\"5.4\" y=\"193.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"94\" y=\"175\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"256\" y=\"175\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><text x=\"346.6\" y=\"191.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text><text x=\"175\" y=\"111.7\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">X</text></svg>",
+  "question": "$A$, $B$, $C$ and $D$ are four consecutive vertices of a regular polygon. The sides $AB$ and $DC$ are extended to meet at $X$, and angle $BXC = 140^\\circ$. The diagram shows part of the polygon.\n\n(a) How many sides does the polygon have?\n\n(b) Work out the sum of the interior angles of the polygon.\n\n(c) Explain why angle $BXC$ could never be $125^\\circ$ in a diagram like this.",
+  "hint": "Look at triangle $BXC$. The angles at $B$ and $C$ are on straight lines with interior angles of the polygon – what kind of angles are they?",
+  "answer": "(a) 18 sides (b) $2880^\\circ$ (c) It would need exterior angles of $27.5^\\circ$, and $360 \\div 27.5$ is not a whole number.",
+  "solution": "(a) At $B$, angle $XBC$ is on a straight line ($ABX$) with the interior angle $ABC$, so angle $XBC$ is an **exterior angle** $e$ of the polygon. Similarly angle $XCB = e$.\n\nTriangle $BXC$ is therefore isosceles, and angles in a triangle add up to $180^\\circ$:\n$$140^\\circ + 2e = 180^\\circ \\quad\\Rightarrow\\quad e = 20^\\circ$$\n\n$$n = \\frac{360^\\circ}{20^\\circ} = 18$$\n\n(b)\n$$(18 - 2) \\times 180^\\circ = 16 \\times 180^\\circ = 2880^\\circ$$\n\n(c) If angle $BXC = 125^\\circ$, then $2e = 55^\\circ$, so $e = 27.5^\\circ$, and\n$$n = \\frac{360}{27.5} = 13.09\\ldots$$\n\nwhich is not a whole number. So no regular polygon gives $125^\\circ$. (In general angle $BXC = 180^\\circ - \\frac{720^\\circ}{n}$, which only takes particular values.)",
+  "linkedTopicIds": []
+ }
+]
