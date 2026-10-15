@@ -57,3 +57,8 @@
 - Facts established: Windu granted "ten days"; sling off a week; Shmi keeps Anakin's initialled Temple hydrospanner ("You'll want it back. So you'll come"); far north-row vaporator sensors wired to dome alarm; Owen told the fault was the compressor (it was a salted brine sensor); spent line: "Ani. My goodness, you've grown."
 - Open threads: Anakin knows the Tusken band's range this season and did not go; Obi-Wan told him the ridge years "four nights after the roof"; Shmi saw that something is wrong and asked nothing.
 - Current state: pre-dawn by the speeder outside the Lars homestead, Anakin and Obi-Wan standing in the cold, house unwoken; due in Mos Eisley by midday.
+
+### After Ch 32
+- Facts established: Council finding filed (Pykes "in their own interest"; hunter to Judicial; Verrane closed; courier order on file in Obi-Wan's words); Dooku's Serenno invitation ("bring the boy") declined in writing, copied to Jocasta Nu, papers asked for via the Archives; Plo asked what the hunter recorded and accepted "me, falling"; Windu told Obi-Wan "I think you are not telling me"; Obi-Wan: "He frightens me too. That's why I'm staying."
+- Open threads: Sifo-Dyas petition to be lodged (Ord Mantell docket → Rishi Maze → Kamino) with no plan for the chips once found; Obi-Wan to answer Padmé himself and offer committee evidence as the Jedi channel; Dooku expected to write again and come to Coruscant; Anakin's "no objection" given in his performing voice, Ahsoka noticed.
+- Current state: afternoon, Council tower walkway; Windu has gone in to session after a single nod; Obi-Wan alone at the rail; the three's four-point plan agreed on the waterfall ledge.
