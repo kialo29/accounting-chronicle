@@ -8,3 +8,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 3 diagrams checked: 1 ok, 2 fixed.
 - calc-tangents-normals-q14 — label B sat on the normal line — moved it below-left of B
 - calc-tangents-normals-q15 — label B touched the tangent line — moved it down
+
+### Scope coverage
+All 2 scope items covered.

@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 3 diagrams checked: 2 ok, 1 fixed.
 - calc-parametric-vector-differentiation-q10 — origin label O was almost on the lower branch through O — moved it right, and removed an empty <text> element
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (topics-fixes) to mention: integrating vector-valued functions, displacement and total distance as the integral of speed.

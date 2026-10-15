@@ -5,3 +5,6 @@ All answers matched an independent blind solve (diagrams for q01 and q18 checked
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

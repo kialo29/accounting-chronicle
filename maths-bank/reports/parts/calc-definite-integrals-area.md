@@ -6,3 +6,6 @@ All answers agreed with an independent blind solve. The diagrams in q07, q12 and
 ### Diagram audit
 3 diagrams checked: 2 ok, 1 fixed.
 - calc-definite-integrals-area-q12 — label A touched the curve C — moved it to the left of point A
+
+### Scope coverage
+All 6 scope items covered. Key idea extended (topics-fixes) to mention: area between curves integrating with respect to y.

@@ -8,3 +8,6 @@ Checked 18 questions: 18 ok, 0 fixed, 0 clarified. Topic details: ok
 3 diagrams checked: 1 ok, 2 fixed.
 - calc-concavity-inflection-q06 — x-tick labels −3 and 3 sat above the axis, with '3' running into the 'x' axis label — moved both below their ticks
 - calc-concavity-inflection-q09 — y-tick label −2 was crossed by the dashed line A — moved it to the right of the y-axis
+
+### Scope coverage
+All 4 scope items covered.

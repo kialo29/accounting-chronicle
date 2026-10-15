@@ -10,3 +10,6 @@ Checked 18 questions: 16 ok, 2 fixed, 0 clarified. Topic details: ok
 - calc-ftc-accumulation-q08 — x-tick label 3 was crossed by the graph of f — moved it left of the tick
 - calc-ftc-accumulation-q09 — x-tick label 7 was touched by the final segment — moved it right of the tick
 - calc-ftc-accumulation-q11 — the y scale (37.7 px/unit) did not match the x scale (32.4 px/unit), so the semicircle of radius 2 was drawn as a tall half-ellipse — rescaled y to 32.4 px/unit (grid, ticks, labels and curve)
+
+### Scope coverage
+All 4 scope items covered.

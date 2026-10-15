@@ -5,3 +5,6 @@ Diagrams: q07 ($y = 1/(x - 1)^2$ with an asymptote at $x = 1$) and q14 ($y = 1/x
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered.

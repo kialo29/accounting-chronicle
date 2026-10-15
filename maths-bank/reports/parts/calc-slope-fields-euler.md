@@ -5,3 +5,6 @@ Diagrams: in the q06 ($y - 1$), q10 ($\frac{1}{2}y(3 - y)$) and q16 ($x - y$) sl
 
 ### Diagram audit
 4 diagrams checked: 4 ok, 0 fixed.
+
+### Scope coverage
+All 2 scope items covered.

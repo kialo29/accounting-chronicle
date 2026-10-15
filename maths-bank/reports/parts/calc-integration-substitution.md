@@ -6,3 +6,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered. Key idea extended (topics-fixes) to mention: rewriting integrands by long division and completing the square (arctan forms).

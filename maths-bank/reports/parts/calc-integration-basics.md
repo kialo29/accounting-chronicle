@@ -5,3 +5,6 @@ All answers agreed with an independent blind solve. The q06 diagram (y = x² + 3
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

@@ -9,3 +9,6 @@ Diagrams: q09 (logistic curve; checked $P(5) \approx 324$ against the plotted pa
 ### Diagram audit
 2 diagrams checked: 1 ok, 1 fixed.
 - calc-differential-equations-q09 — axes were offset from the origin, so the t-axis sat at P ≈ −40 and P = 0 was drawn above it — moved the axes to meet at (0, 0), removed the duplicate 0 label and moved the ticks and labels to match
+
+### Scope coverage
+All 4 scope items covered.

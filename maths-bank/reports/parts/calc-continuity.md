@@ -6,3 +6,6 @@ All answers matched an independent blind solve (q01 diagram checked by coordinat
 ### Diagram audit
 1 diagrams checked: 0 ok, 1 fixed.
 - calc-continuity-q01 — x-tick label 3 was cut through by the dashed asymptote x = 3 — moved it left of the asymptote
+
+### Scope coverage
+All 4 scope items covered.

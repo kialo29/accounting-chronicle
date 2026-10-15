@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 1 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 1 diagrams checked: 0 ok, 1 fixed.
 - calc-inverse-function-derivatives-q18 — the θ arc ended about 1° off the sight lines (it was computed for lines to x = 290, not to the painting face at x = 282) — recomputed the arc endpoints
+
+### Scope coverage
+All 5 scope items covered.

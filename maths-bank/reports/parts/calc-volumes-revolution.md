@@ -6,3 +6,6 @@ Diagrams: q09, q13, q14, q15 and q17 were checked against their coordinates (cur
 ### Diagram audit
 5 diagrams checked: 4 ok, 1 fixed.
 - calc-volumes-revolution-q17 — label 'y = a' sat on the sphere outline, away from the line it names — moved it beside the line y = a
+
+### Scope coverage
+All 2 scope items covered.

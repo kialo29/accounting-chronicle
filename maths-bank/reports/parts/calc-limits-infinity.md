@@ -8,3 +8,6 @@ Checked 18 questions: 16 ok, 2 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 1 diagrams checked: 0 ok, 1 fixed.
 - calc-limits-infinity-q11 — y-tick label 2 was struck through by the dashed asymptote y = 2 — moved the label above the line
+
+### Scope coverage
+All 4 scope items covered.

@@ -5,3 +5,6 @@ All answers agreed with an independent blind solve. Six diagrams (q07, q08, q10,
 
 ### Diagram audit
 6 diagrams checked: 6 ok, 0 fixed.
+
+### Scope coverage
+All 2 scope items covered.
