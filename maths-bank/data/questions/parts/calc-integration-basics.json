@@ -1,0 +1,257 @@
+[
+ {
+  "id": "calc-integration-basics-q01",
+  "topicId": "calc-integration-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\int x^4\\,dx$.",
+  "hint": "Add one to the power, then divide by the **new** power.",
+  "answer": "$\\frac{x^5}{5} + c$",
+  "solution": "Add one to the power: $4 + 1 = 5$. Divide by the new power, $5$:\n$$\\int x^4\\,dx = \\frac{x^5}{5} + c$$\n\nCheck by differentiating: $\\frac{d}{dx}\\left(\\frac{x^5}{5}\\right) = \\frac{5x^4}{5} = x^4$ ✓. (Dividing by the old power, $\\frac{x^5}{4}$, would differentiate to $\\frac{5}{4}x^4$, which is wrong.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q02",
+  "topicId": "calc-integration-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\int 3x^4\\,dx$.",
+  "hint": "A constant multiple stays in front.",
+  "answer": "$\\frac{3x^5}{5} + c$",
+  "solution": "**What changed:** a coefficient of $3$ has appeared. It simply multiplies the previous answer:\n$$\\int 3x^4\\,dx = 3\\times\\frac{x^5}{5} + c = \\frac{3x^5}{5} + c$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q03",
+  "topicId": "calc-integration-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\int 3x^{-4}\\,dx$.",
+  "hint": "Add one to $-4$ carefully. The new power is negative.",
+  "answer": "$-x^{-3} + c$, i.e. $-\\frac{1}{x^3} + c$",
+  "solution": "**What changed:** the power is now $-4$ instead of $4$.\n\nAdd one: $-4 + 1 = -3$. Divide by the new power, $-3$:\n$$\\int 3x^{-4}\\,dx = \\frac{3x^{-3}}{-3} + c = -x^{-3} + c = -\\frac{1}{x^3} + c$$\n\nCheck: $\\frac{d}{dx}\\left(-x^{-3}\\right) = 3x^{-4}$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q04",
+  "topicId": "calc-integration-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\int \\frac{3}{x^4}\\,dx$.",
+  "hint": "Write the fraction as a power of $x$ before integrating.",
+  "answer": "$-\\frac{1}{x^3} + c$",
+  "solution": "**What changed:** only the notation. $\\frac{3}{x^4} = 3x^{-4}$, so this is the previous question in disguise:\n$$\\int \\frac{3}{x^4}\\,dx = \\int 3x^{-4}\\,dx = \\frac{3x^{-3}}{-3} + c = -\\frac{1}{x^3} + c$$\n\nYou cannot integrate \"the bottom\" of the fraction: $\\frac{3}{x^5/5} = \\frac{15}{x^5}$ is not an integral of $\\frac{3}{x^4}$ (it differentiates to $-\\frac{75}{x^6}$).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q05",
+  "topicId": "calc-integration-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\int \\frac{3}{\\sqrt{x}}\\,dx$.",
+  "hint": "$\\sqrt{x} = x^{\\frac{1}{2}}$, so $\\frac{1}{\\sqrt{x}} = x^{-\\frac{1}{2}}$.",
+  "answer": "$6\\sqrt{x} + c$",
+  "solution": "**What changed:** the denominator is now a root, so the power is a fraction.\n\n$\\frac{3}{\\sqrt{x}} = 3x^{-\\frac{1}{2}}$. Add one: $-\\frac{1}{2} + 1 = \\frac{1}{2}$. Divide by $\\frac{1}{2}$ (i.e. multiply by $2$):\n$$\\int 3x^{-\\frac{1}{2}}\\,dx = \\frac{3x^{\\frac{1}{2}}}{\\frac{1}{2}} + c = 6x^{\\frac{1}{2}} + c = 6\\sqrt{x} + c$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q06",
+  "topicId": "calc-integration-basics",
+  "difficulty": 1,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><line x1=\"20\" y1=\"220\" x2=\"320\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"160\" y1=\"20\" x2=\"160\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"312\" y=\"214\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"168\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><polyline points=\"47.4,33 50.2,39 53.1,44.8 55.9,50.5 58.7,56 61.5,61.4 64.3,66.6 67.1,71.6 69.9,76.6 72.8,81.3 75.6,85.9 78.4,90.4 81.2,94.7 84,98.9 86.8,102.9 89.6,106.7 92.5,110.4 95.3,114 98.1,117.4 100.9,120.6 103.7,123.8 106.5,126.7 109.3,129.5 112.2,132.1 115,134.6 117.8,137 120.6,139.2 123.4,141.2 126.2,143.1 129,144.8 131.9,146.4 134.7,147.9 137.5,149.2 140.3,150.3 143.1,151.3 145.9,152.1 148.7,152.8 151.6,153.3 154.4,153.7 157.2,153.9 160,154 162.8,153.9 165.6,153.7 168.4,153.3 171.3,152.8 174.1,152.1 176.9,151.3 179.7,150.3 182.5,149.2 185.3,147.9 188.1,146.4 191,144.8 193.8,143.1 196.6,141.2 199.4,139.2 202.2,137 205,134.6 207.8,132.1 210.7,129.5 213.5,126.7 216.3,123.7 219.1,120.6 221.9,117.4 224.7,114 227.5,110.4 230.4,106.7 233.2,102.9 236,98.9 238.8,94.7 241.6,90.4 244.4,85.9 247.2,81.3 250.1,76.6 252.9,71.6 255.7,66.6 258.5,61.4 261.3,56 264.1,50.5 266.9,44.8 269.8,39 272.6,33\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"30.4,59.6 33.6,67.5 36.9,75.3 40.1,82.8 43.4,90.1 46.6,97.2 49.8,104.1 53.1,110.8 56.3,117.4 59.6,123.7 62.8,129.8 66,135.7 69.3,141.4 72.5,146.9 75.8,152.2 79,157.4 82.2,162.3 85.5,167 88.7,171.5 92,175.8 95.2,179.9 98.4,183.8 101.7,187.5 104.9,191 108.2,194.3 111.4,197.4 114.6,200.4 117.9,203.1 121.1,205.6 124.4,207.9 127.6,210 130.8,211.9 134.1,213.6 137.3,215.1 140.6,216.4 143.8,217.5 147,218.4 150.3,219.1 153.5,219.6 156.8,219.9 160,220 163.2,219.9 166.5,219.6 169.7,219.1 173,218.4 176.2,217.5 179.4,216.4 182.7,215.1 185.9,213.6 189.2,211.9 192.4,210 195.6,207.9 198.9,205.6 202.1,203.1 205.4,200.4 208.6,197.4 211.8,194.3 215.1,191 218.3,187.5 221.6,183.8 224.8,179.9 228,175.8 231.3,171.5 234.5,167 237.8,162.3 241,157.4 244.2,152.2 247.5,146.9 250.7,141.4 254,135.7 257.2,129.8 260.4,123.7 263.7,117.4 266.9,110.8 270.2,104.1 273.4,97.2 276.6,90.1 279.9,82.8 283.1,75.3 286.4,67.5 289.6,59.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"30.4,103.6 33.6,111.5 36.9,119.3 40.1,126.8 43.4,134.1 46.6,141.2 49.8,148.1 53.1,154.8 56.3,161.4 59.6,167.7 62.8,173.8 66,179.7 69.3,185.4 72.5,190.9 75.8,196.2 79,201.4 82.2,206.3 85.5,211 88.7,215.5 92,219.8 95.2,223.9 98.4,227.8 101.7,231.5 104.9,235 108.2,238.3 111.4,241.4 114.6,244.4 117.9,247.1 121.1,249.6 124.4,251.9 127.6,254 130.8,255.9 134.1,257.6 137.3,259.1 140.6,260.4 143.8,261.5 147,262.4 150.3,263.1 153.5,263.6 156.8,263.9 160,264 163.2,263.9 166.5,263.6 169.7,263.1 173,262.4 176.2,261.5 179.4,260.4 182.7,259.1 185.9,257.6 189.2,255.9 192.4,254 195.6,251.9 198.9,249.6 202.1,247.1 205.4,244.4 208.6,241.4 211.8,238.3 215.1,235 218.3,231.5 221.6,227.8 224.8,223.9 228,219.8 231.3,215.5 234.5,211 237.8,206.3 241,201.4 244.2,196.2 247.5,190.9 250.7,185.4 254,179.7 257.2,173.8 260.4,167.7 263.7,161.4 266.9,154.8 270.2,148.1 273.4,141.2 276.6,134.1 279.9,126.8 283.1,119.3 286.4,111.5 289.6,103.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"271.6\" y=\"51.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = x² + 3</text><text x=\"295.6\" y=\"63.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = x²</text><text x=\"295.6\" y=\"107.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = x² − 2</text><text x=\"154\" y=\"236\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text></svg>",
+  "question": "Three students are asked to find $\\displaystyle\\int 2x\\,dx$.\n\n- Amir writes $x^2$.\n- Bella writes $x^2 + 7$.\n- Chloe writes $x^2 + c$.\n\nWho is correct? Explain your answer, referring to the graphs shown.",
+  "hint": "Differentiate each answer. What do the curves in the diagram have in common?",
+  "answer": "Chloe is correct. Amir's and Bella's functions each have derivative $2x$, but they are just two of infinitely many antiderivatives; the full indefinite integral is $x^2 + c$.",
+  "solution": "Differentiate each answer: $\\frac{d}{dx}(x^2) = 2x$, $\\frac{d}{dx}(x^2 + 7) = 2x$ and $\\frac{d}{dx}(x^2 + c) = 2x$. So all three are functions whose derivative is $2x$.\n\nBut differentiating removes any constant, so **every** function $x^2 + c$ has derivative $2x$. The graphs show $y = x^2 - 2$, $y = x^2$ and $y = x^2 + 3$: they are vertical translations of each other, and at each value of $x$ they have the same gradient $2x$.\n\nThe indefinite integral must describe the whole family, so the correct answer is **Chloe's**:\n$$\\int 2x\\,dx = x^2 + c$$\nAmir and Bella have each picked one member of the family; to choose a particular curve you need extra information, such as a point it passes through.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q07",
+  "topicId": "calc-integration-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Given that $f'(x) = 6x^2 - 4x + 1$ and $f(1) = 5$, find $f(x)$.",
+  "hint": "Integrate term by term, including $+c$, then substitute $x = 1$ and $f(1) = 5$.",
+  "answer": "$f(x) = 2x^3 - 2x^2 + x + 4$",
+  "solution": "Integrate term by term:\n$$f(x) = \\frac{6x^3}{3} - \\frac{4x^2}{2} + x + c = 2x^3 - 2x^2 + x + c$$\n\nUse $f(1) = 5$:\n$$2 - 2 + 1 + c = 5 \\Rightarrow c = 4$$\n\nSo $f(x) = 2x^3 - 2x^2 + x + 4$.\n\nWithout the $+c$ we would get $f(1) = 1$, which contradicts the information given.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q08",
+  "topicId": "calc-integration-basics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kai is asked to find $\\displaystyle\\int \\frac{4}{x^3}\\,dx$. His working is shown below.\n\n$$\\int \\frac{4}{x^3}\\,dx = \\frac{4}{\\frac{x^4}{4}} + c = \\frac{16}{x^4} + c$$\n\n(a) Explain the error in Kai's method.\n\n(b) Find the correct answer, and show how differentiating can be used to check it.",
+  "hint": "Write $\\frac{4}{x^3}$ as $4x^{-3}$ first.",
+  "answer": "(a) He integrated the denominator; a fraction must be rewritten as a negative power first. (b) $-\\frac{2}{x^2} + c$; $\\frac{d}{dx}\\left(-2x^{-2}\\right) = 4x^{-3}$ ✓",
+  "solution": "**(a)** Kai has integrated the denominator $x^3$ to $\\frac{x^4}{4}$ and left it underneath. There is no rule that allows this. Checking by differentiation shows it is wrong: $\\frac{d}{dx}\\left(16x^{-4}\\right) = -64x^{-5}$, not $4x^{-3}$.\n\n**(b)** Rewrite as a power of $x$, then use the power rule:\n$$\\int 4x^{-3}\\,dx = \\frac{4x^{-2}}{-2} + c = -2x^{-2} + c = -\\frac{2}{x^2} + c$$\n\n**Check:** $\\frac{d}{dx}\\left(-2x^{-2}\\right) = (-2)(-2)x^{-3} = 4x^{-3} = \\frac{4}{x^3}$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q09",
+  "topicId": "calc-integration-basics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leah is asked to find $\\displaystyle\\int (x + 2)(x - 3)\\,dx$. Her working is shown below.\n\n$$\\int (x + 2)(x - 3)\\,dx = \\left(\\frac{x^2}{2} + 2x\\right)\\left(\\frac{x^2}{2} - 3x\\right) + c$$\n\nIdentify Leah's mistake, explain why it is wrong, and find the correct answer.",
+  "hint": "Differentiate Leah's answer: do you get back to $(x + 2)(x - 3)$? What should you do with the brackets first?",
+  "answer": "She integrated each bracket separately and multiplied; there is no product rule for integrating. Correct: $\\frac{x^3}{3} - \\frac{x^2}{2} - 6x + c$.",
+  "solution": "Leah has integrated each factor separately and multiplied the results. The integral of a product is **not** the product of the integrals.\n\nHer answer is a polynomial of degree 4, so its derivative has degree 3, but $(x + 2)(x - 3)$ has degree 2: it cannot be right.\n\n**Correct method:** expand first.\n$$(x + 2)(x - 3) = x^2 - 3x + 2x - 6 = x^2 - x - 6$$\n$$\\int (x^2 - x - 6)\\,dx = \\frac{x^3}{3} - \\frac{x^2}{2} - 6x + c$$\n\nCheck: $\\frac{d}{dx}\\left(\\frac{x^3}{3} - \\frac{x^2}{2} - 6x\\right) = x^2 - x - 6$ ✓",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q10",
+  "topicId": "calc-integration-basics",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A bakery estimates that, when it makes $x$ loaves of bread in a day, the cost of making one more loaf is\n$$\\frac{dC}{dx} = 0.8 - 0.004x \\quad\\text{pounds}, \\qquad 0 \\le x \\le 150$$\nwhere $C$ is the total daily cost in pounds. The bakery's fixed daily costs (when $x = 0$) are £45.\n\n(a) Find an expression for $C$ in terms of $x$.\n\n(b) Find the total cost of making 100 loaves in a day.",
+  "hint": "Integrate $\\frac{dC}{dx}$; the fixed costs tell you the value of the constant.",
+  "answer": "(a) $C = 0.8x - 0.002x^2 + 45$ (b) £105",
+  "solution": "**(a)** Integrate:\n$$C = 0.8x - \\frac{0.004x^2}{2} + c = 0.8x - 0.002x^2 + c$$\nWhen $x = 0$, $C = 45$, so $c = 45$:\n$$C = 0.8x - 0.002x^2 + 45$$\n\n**(b)** $C(100) = 80 - 0.002(10\\,000) + 45 = 80 - 20 + 45 = 105$.\n\nThe total cost is £105.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q11",
+  "topicId": "calc-integration-basics",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A sunflower seedling is $10\\text{ cm}$ tall when it is planted. Its height, $h\\text{ cm}$, $t$ weeks after planting is modelled by\n$$\\frac{dh}{dt} = 8t - \\frac{1}{2}t^2, \\qquad 0 \\le t \\le 16$$\n\n(a) Find $h$ in terms of $t$.\n\n(b) Find the height of the sunflower predicted by the model after 16 weeks. Give your answer in metres to 3 significant figures.\n\n(c) Explain why the model should not be used for $t > 16$.",
+  "hint": "Integrate and use $h = 10$ when $t = 0$. For (c), look at the sign of $\\frac{dh}{dt}$ when $t > 16$.",
+  "answer": "(a) $h = 4t^2 - \\frac{1}{6}t^3 + 10$ (b) $3.51\\text{ m}$ (c) For $t > 16$, $\\frac{dh}{dt} < 0$, so the model predicts the sunflower shrinks, which is unrealistic.",
+  "solution": "**(a)** Integrate term by term:\n$$h = \\frac{8t^2}{2} - \\frac{t^3}{6} + c = 4t^2 - \\frac{1}{6}t^3 + c$$\nWhen $t = 0$, $h = 10$, so $c = 10$:\n$$h = 4t^2 - \\frac{1}{6}t^3 + 10$$\n\n**(b)** $h(16) = 4(256) - \\frac{4096}{6} + 10 = 1024 - 682.67 + 10 = 351.33\\ldots\\text{ cm}$, so the height is about $3.51\\text{ m}$.\n\n**(c)** $\\frac{dh}{dt} = \\frac{1}{2}t(16 - t)$, which is $0$ at $t = 16$ and **negative** for $t > 16$. The model would predict the sunflower getting shorter, which does not happen; growth simply stops. So the model is only valid for $0 \\le t \\le 16$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-basics-q12",
+  "topicId": "calc-integration-basics",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "question": "A curve has equation $y = f(x)$, $x > 0$, where\n$$f'(x) = \\frac{(2x - 3)^2}{\\sqrt{x}}$$\nThe point $P(4, 10)$ lies on the curve.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f'(x)$ can be written in the form $Ax^{\\frac{3}{2}} + Bx^{\\frac{1}{2}} + Cx^{-\\frac{1}{2}}$, where $A$, $B$ and $C$ are integers to be found.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find $f(x)$, giving each term in its simplest form.",
+    "marks": 5
+   }
+  ],
+  "marks": 8,
+  "hint": "Expand the bracket, then divide each term by $x^{\\frac{1}{2}}$. Integrate each power separately and use $P$ to find the constant.",
+  "answer": "(a) $f'(x) = 4x^{\\frac{3}{2}} - 12x^{\\frac{1}{2}} + 9x^{-\\frac{1}{2}}$, so $A = 4$, $B = -12$, $C = 9$ (b) $f(x) = \\frac{8}{5}x^{\\frac{5}{2}} - 8x^{\\frac{3}{2}} + 18x^{\\frac{1}{2}} - \\frac{66}{5}$",
+  "solution": "**(a)** $(2x - 3)^2 = 4x^2 - 12x + 9$ **M1** (expands the bracket)\n\nDivide each term by $x^{\\frac{1}{2}}$: **M1**\n$$f'(x) = 4x^{\\frac{3}{2}} - 12x^{\\frac{1}{2}} + 9x^{-\\frac{1}{2}}$$\nso $A = 4$, $B = -12$, $C = 9$. **A1**\n\n**(b)** Integrate (raise each power by one, divide by the new power): **M1**\n$$f(x) = \\frac{4x^{\\frac{5}{2}}}{\\frac{5}{2}} - \\frac{12x^{\\frac{3}{2}}}{\\frac{3}{2}} + \\frac{9x^{\\frac{1}{2}}}{\\frac{1}{2}} + c = \\frac{8}{5}x^{\\frac{5}{2}} - 8x^{\\frac{3}{2}} + 18x^{\\frac{1}{2}} + c$$\n**A1** (two terms correct) **A1** (all three correct)\n\nSubstitute $x = 4$, $y = 10$, using $4^{\\frac{1}{2}} = 2$, $4^{\\frac{3}{2}} = 8$, $4^{\\frac{5}{2}} = 32$: **M1**\n$$10 = \\frac{8}{5}(32) - 8(8) + 18(2) + c = \\frac{256}{5} - 64 + 36 + c = \\frac{116}{5} + c$$\n$$c = 10 - \\frac{116}{5} = -\\frac{66}{5}$$\n\n$$f(x) = \\frac{8}{5}x^{\\frac{5}{2}} - 8x^{\\frac{3}{2}} + 18x^{\\frac{1}{2}} - \\frac{66}{5} \\quad \\textbf{A1}$$",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q13",
+  "topicId": "calc-integration-basics",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A curve has gradient function\n$$\\frac{dy}{dx} = 3x^2 + kx$$\nwhere $k$ is a constant. The curve has a stationary point where $x = 2$, and it passes through the point $(1, 4)$.\n\nFind the equation of the curve, and find the coordinates and nature of both of its stationary points.",
+  "hint": "At a stationary point $\\frac{dy}{dx} = 0$: use this to find $k$ before integrating.",
+  "answer": "$y = x^3 - 3x^2 + 6$; maximum at $(0, 6)$, minimum at $(2, 2)$",
+  "solution": "**Find $k$.** At $x = 2$, $\\frac{dy}{dx} = 0$: $12 + 2k = 0$, so $k = -6$ and $\\frac{dy}{dx} = 3x^2 - 6x$.\n\n**Integrate:** $y = x^3 - 3x^2 + c$.\n\nThrough $(1, 4)$: $1 - 3 + c = 4$, so $c = 6$. The curve is\n$$y = x^3 - 3x^2 + 6$$\n\n**Stationary points:** $3x^2 - 6x = 3x(x - 2) = 0$, so $x = 0$ or $x = 2$.\n- $x = 0$: $y = 6$\n- $x = 2$: $y = 8 - 12 + 6 = 2$\n\n**Nature:** $\\frac{d^2y}{dx^2} = 6x - 6$.\n- At $x = 0$: $-6 < 0$, so $(0, 6)$ is a maximum.\n- At $x = 2$: $6 > 0$, so $(2, 2)$ is a minimum.",
+  "linkedTopicIds": [
+   "calc-stationary-points"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q14",
+  "topicId": "calc-integration-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A particle moves along a straight line. At time $t$ seconds its velocity is\n$$v = 6t^2 - 18t + 12\\ \\text{m s}^{-1}, \\qquad t \\ge 0$$\nWhen $t = 0$ the particle is $5\\text{ m}$ from a fixed point $O$ on the line, on the positive side.\n\n(a) Find an expression for the displacement, $s\\text{ m}$, of the particle from $O$ at time $t$.\n\n(b) Find the times at which the particle is instantaneously at rest, and its displacement from $O$ at each of these times.\n\n(c) Find the total distance travelled by the particle in the first 3 seconds.",
+  "hint": "$s = \\int v\\,dt$. For (c), the particle changes direction when $v = 0$: find the distance for each stage separately.",
+  "answer": "(a) $s = 2t^3 - 9t^2 + 12t + 5$ (b) $t = 1$, $s = 10\\text{ m}$; $t = 2$, $s = 9\\text{ m}$ (c) $11\\text{ m}$",
+  "solution": "**(a)** $s = \\int (6t^2 - 18t + 12)\\,dt = 2t^3 - 9t^2 + 12t + c$. When $t = 0$, $s = 5$, so $c = 5$:\n$$s = 2t^3 - 9t^2 + 12t + 5$$\n\n**(b)** At rest when $v = 0$: $6(t^2 - 3t + 2) = 6(t - 1)(t - 2) = 0$, so $t = 1$ or $t = 2$.\n- $t = 1$: $s = 2 - 9 + 12 + 5 = 10\\text{ m}$\n- $t = 2$: $s = 16 - 36 + 24 + 5 = 9\\text{ m}$\n\n**(c)** Also $s(0) = 5$ and $s(3) = 54 - 81 + 36 + 5 = 14$.\n\nThe particle moves $5 \\to 10$ (forwards $5\\text{ m}$), then $10 \\to 9$ (back $1\\text{ m}$), then $9 \\to 14$ (forwards $5\\text{ m}$).\n\nTotal distance $= 5 + 1 + 5 = 11\\text{ m}$. (The displacement changes by only $9\\text{ m}$, because the particle turns round twice.)",
+  "linkedTopicIds": [
+   "mech-variable-acceleration",
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q15",
+  "topicId": "calc-integration-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A curve has gradient function $\\frac{dy}{dx} = 3x^2 - 12$.\n\n(a) Find the general equation of the curve.\n\n(b) Find the two possible equations of the curve given that it touches the $x$-axis (i.e. the $x$-axis is a tangent to the curve).\n\n(c) For each curve in (b), find the coordinates of the other point(s) where it meets the $x$-axis.",
+  "hint": "Where a curve touches the $x$-axis, both $y = 0$ and $\\frac{dy}{dx} = 0$.",
+  "answer": "(a) $y = x^3 - 12x + c$ (b) $y = x^3 - 12x + 16$ or $y = x^3 - 12x - 16$ (c) $(-4, 0)$ for the first curve; $(4, 0)$ for the second",
+  "solution": "**(a)** $y = x^3 - 12x + c$.\n\n**(b)** A curve touching the $x$-axis has a stationary point on the axis. $3x^2 - 12 = 0 \\Rightarrow x = \\pm2$.\n- $x = 2$: $y = 8 - 24 + c = c - 16 = 0 \\Rightarrow c = 16$.\n- $x = -2$: $y = -8 + 24 + c = c + 16 = 0 \\Rightarrow c = -16$.\n\nSo $y = x^3 - 12x + 16$ or $y = x^3 - 12x - 16$.\n\n**(c)** For $y = x^3 - 12x + 16$, $x = 2$ is a repeated root, so $(x - 2)^2 = x^2 - 4x + 4$ is a factor:\n$$x^3 - 12x + 16 = (x - 2)^2(x + 4)$$\nThe other intersection is $(-4, 0)$.\n\nFor $y = x^3 - 12x - 16$, $x = -2$ is a repeated root:\n$$x^3 - 12x - 16 = (x + 2)^2(x - 4)$$\nThe other intersection is $(4, 0)$.",
+  "linkedTopicIds": [
+   "calc-stationary-points",
+   "pure-polynomials-factor-theorem"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q16",
+  "topicId": "calc-integration-basics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A curve $y = f(x)$ has gradient function $f'(x) = 3x^2 - 6x + 2$.\n\nThe line $y = 2x + 1$ is a tangent to the curve.\n\nFind all possible equations of the curve.",
+  "hint": "The tangent has gradient 2. Where on the curve can the gradient be 2? At such a point, the curve and the line must also meet.",
+  "answer": "$y = x^3 - 3x^2 + 2x + 1$ or $y = x^3 - 3x^2 + 2x + 5$",
+  "solution": "Integrating, $f(x) = x^3 - 3x^2 + 2x + c$ for some constant $c$.\n\n**Where can the tangent touch?** The line has gradient $2$, so at the point of contact\n$$3x^2 - 6x + 2 = 2 \\Rightarrow 3x(x - 2) = 0 \\Rightarrow x = 0 \\text{ or } x = 2$$\n\nAt the point of contact the curve and line must also have the same $y$-value.\n\n- **Contact at $x = 0$:** line gives $y = 1$; curve gives $f(0) = c$. So $c = 1$.\n- **Contact at $x = 2$:** line gives $y = 5$; curve gives $f(2) = 8 - 12 + 4 + c = c$. So $c = 5$.\n\nHence the curve is\n$$y = x^3 - 3x^2 + 2x + 1 \\quad\\text{or}\\quad y = x^3 - 3x^2 + 2x + 5$$\n\nBoth work: each is tangent to $y = 2x + 1$ at one point (at $(0, 1)$ and $(2, 5)$ respectively). A single point would not have been enough; the condition \"tangent\" gives two possible members of the family $x^3 - 3x^2 + 2x + c$.",
+  "linkedTopicIds": [
+   "calc-tangents-normals",
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "calc-integration-basics-q17",
+  "topicId": "calc-integration-basics",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Ella and Finn are asked to find $\\displaystyle\\int (ax + b)^2\\,dx$, where $a \\ne 0$ and $b$ are constants.\n\nElla writes $\\dfrac{(ax + b)^3}{3a} + c$. Finn expands first and writes $\\dfrac{a^2x^3}{3} + abx^2 + b^2x + k$.\n\n(a) Show that both answers are correct, even though they look different, and find $k$ in terms of $a$, $b$ and $c$.\n\n(b) Ella then claims that $\\displaystyle\\int (ax^2 + b)^2\\,dx = \\frac{(ax^2 + b)^3}{3a} + c$ \"by the same method\". Is she correct? Justify your answer, and find the integral correctly.",
+  "hint": "Check each answer by differentiating (use the chain rule for Ella's). For (a), expand Ella's answer and compare constant terms.",
+  "answer": "(a) Both differentiate to $(ax + b)^2$; expanding Ella's answer gives Finn's with $k = c + \\frac{b^3}{3a}$. (b) No: differentiating gives $2x(ax^2 + b)^2$, not $(ax^2 + b)^2$. Correct: $\\frac{a^2x^5}{5} + \\frac{2abx^3}{3} + b^2x + c$.",
+  "solution": "**(a)** Differentiate Ella's answer using the chain rule:\n$$\\frac{d}{dx}\\left[\\frac{(ax + b)^3}{3a}\\right] = \\frac{3(ax + b)^2\\cdot a}{3a} = (ax + b)^2 \\checkmark$$\nDifferentiate Finn's: $a^2x^2 + 2abx + b^2 = (ax + b)^2$ ✓.\n\nBoth are correct, so they must differ only by a constant. Expanding Ella's:\n$$\\frac{(ax + b)^3}{3a} = \\frac{a^3x^3 + 3a^2bx^2 + 3ab^2x + b^3}{3a} = \\frac{a^2x^3}{3} + abx^2 + b^2x + \\frac{b^3}{3a}$$\nSo Ella's answer is $\\frac{a^2x^3}{3} + abx^2 + b^2x + \\frac{b^3}{3a} + c$, which matches Finn's with\n$$k = c + \\frac{b^3}{3a}$$\nThe arbitrary constant \"absorbs\" the extra $\\frac{b^3}{3a}$.\n\n**(b)** Ella is **not** correct. Differentiating her answer:\n$$\\frac{d}{dx}\\left[\\frac{(ax^2 + b)^3}{3a}\\right] = \\frac{3(ax^2 + b)^2\\cdot 2ax}{3a} = 2x(ax^2 + b)^2 \\ne (ax^2 + b)^2$$\nHer method only works when the inside of the bracket is linear, because then the chain-rule factor is the constant $a$, which the division by $a$ cancels. Here the chain-rule factor is $2ax$, which is not constant.\n\nCorrectly, expand and integrate term by term:\n$$\\int (a^2x^4 + 2abx^2 + b^2)\\,dx = \\frac{a^2x^5}{5} + \\frac{2abx^3}{3} + b^2x + c$$",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]
