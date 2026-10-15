@@ -1,0 +1,282 @@
+[
+ {
+  "id": "pure-trig-identities-equations-q01",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sin x = \\frac{1}{2}$ for $0° \\le x < 360°$.",
+  "hint": "Find the principal value, then use the symmetry of the sine graph: $\\sin(180° - \\alpha) = \\sin\\alpha$.",
+  "answer": "$x = 30°, 150°$",
+  "solution": "Principal value: $\\sin^{-1}\\frac{1}{2} = 30°$.\n\nSine is positive in the 1st and 2nd quadrants, so the second solution is $180° - 30° = 150°$.\n\n$x = 30°$ or $x = 150°$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q02",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\sin x = -\\frac{1}{2}$ for $0° \\le x < 360°$.",
+  "hint": "The principal value is now negative. Which quadrants have $\\sin$ negative?",
+  "answer": "$x = 210°, 330°$",
+  "solution": "What changed: the right-hand side is now negative.\n\nPrincipal value: $\\sin^{-1}\\left(-\\frac{1}{2}\\right) = -30°$, which is outside the interval.\n\nSine is negative in the 3rd and 4th quadrants, with reference angle $30°$:\n$$x = 180° + 30° = 210°, \\qquad x = 360° - 30° = 330°$$\n\n(Equivalently: $-30° + 360° = 330°$ and $180° - (-30°) = 210°$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q03",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\cos x = -\\frac{1}{2}$ for $0° \\le x < 360°$.",
+  "hint": "For cosine the second solution is $360° - \\alpha$, not $180° - \\alpha$.",
+  "answer": "$x = 120°, 240°$",
+  "solution": "What changed: sine has become cosine.\n\nPrincipal value: $\\cos^{-1}\\left(-\\frac{1}{2}\\right) = 120°$.\n\nThe cosine graph is symmetrical about $x = 180°$, so the second solution is $360° - 120° = 240°$.\n\n$x = 120°$ or $x = 240°$ (cosine is negative in the 2nd and 3rd quadrants ✓).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q04",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\cos 2x = -\\frac{1}{2}$ for $0° \\le x < 360°$.",
+  "hint": "If $0° \\le x < 360°$, what interval does $2x$ lie in? Solve for $2x$ in that interval first, then halve.",
+  "answer": "$x = 60°, 120°, 240°, 300°$",
+  "solution": "What changed: the angle is now $2x$, so the interval for the angle doubles:\n$$0° \\le 2x < 720°$$\n\nFrom the previous question, $\\cos\\theta = -\\frac{1}{2}$ for $\\theta = 120°, 240°$, and adding $360°$: $480°, 600°$.\n$$2x = 120°, 240°, 480°, 600°$$\n$$x = 60°, 120°, 240°, 300°$$\n\nDoubling the angle doubled the number of solutions: the graph of $\\cos 2x$ has two full cycles in the interval.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q05",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve each equation for $0° \\le x < 360°$, giving your answers to 1 decimal place.\n\n(a) $\\sin x = 0.4$\n\n(b) $\\tan x = -2$",
+  "hint": "Your calculator gives one value. Sine: the other is $180° - \\alpha$. Tangent repeats every $180°$.",
+  "answer": "(a) $x = 23.6°, 156.4°$ (b) $x = 116.6°, 296.6°$",
+  "solution": "(a) $\\sin^{-1}0.4 = 23.578° \\approx 23.6°$.\n\nSecond solution: $180° - 23.578° = 156.4°$.\n\n$x = 23.6°, 156.4°$\n\n(b) $\\tan^{-1}(-2) = -63.435°$, outside the interval.\n\nTan has period $180°$, so add $180°$ and $360°$:\n$$x = -63.435° + 180° = 116.6°, \\qquad x = -63.435° + 360° = 296.6°$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q06",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Given that $\\sin\\theta = \\frac{3}{5}$ and that $\\theta$ is obtuse, find the exact values of $\\cos\\theta$ and $\\tan\\theta$.",
+  "hint": "Use $\\sin^2\\theta + \\cos^2\\theta = 1$. Then decide the sign of $\\cos\\theta$ for an obtuse angle.",
+  "answer": "$\\cos\\theta = -\\frac{4}{5}$, $\\tan\\theta = -\\frac{3}{4}$",
+  "solution": "$$\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{9}{25} = \\frac{16}{25}$$\n$$\\cos\\theta = \\pm\\frac{4}{5}$$\n\n$\\theta$ is obtuse ($90° < \\theta < 180°$, 2nd quadrant), so $\\cos\\theta < 0$: $\\cos\\theta = -\\frac{4}{5}$.\n$$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{3/5}{-4/5} = -\\frac{3}{4}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q07",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $2\\cos\\theta = \\sqrt{3}$ for $-\\pi \\le \\theta \\le \\pi$, giving your answers as exact multiples of $\\pi$.",
+  "hint": "The interval is symmetric about 0, and cosine is an even function: $\\cos(-\\theta) = \\cos\\theta$.",
+  "answer": "$\\theta = -\\frac{\\pi}{6}, \\frac{\\pi}{6}$",
+  "solution": "$$\\cos\\theta = \\frac{\\sqrt{3}}{2}$$\n\nPrincipal value: $\\cos^{-1}\\frac{\\sqrt{3}}{2} = \\frac{\\pi}{6}$.\n\nThe other solution in one cycle is $2\\pi - \\frac{\\pi}{6} = \\frac{11\\pi}{6}$, which is outside $[-\\pi, \\pi]$; subtracting $2\\pi$ gives $-\\frac{\\pi}{6}$, which is inside.\n\n$\\theta = -\\frac{\\pi}{6}$ or $\\theta = \\frac{\\pi}{6}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q08",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to solve $\\sin x\\tan x = \\sin x$ for $0° \\le x \\le 360°$. His working is shown below.\n\nLine 1: $\\sin x\\tan x = \\sin x$\n\nLine 2: Divide both sides by $\\sin x$: $\\tan x = 1$\n\nLine 3: $x = 45°$ or $x = 45° + 180° = 225°$\n\nIdentify the error in Ben's working, explain why it matters, and give the complete solution.",
+  "hint": "What if $\\sin x = 0$? Bring everything to one side and factorise instead.",
+  "answer": "Line 2: dividing by $\\sin x$ loses the solutions of $\\sin x = 0$. Complete solution: $x = 0°, 45°, 180°, 225°, 360°$.",
+  "solution": "**Error in Line 2.** Dividing by $\\sin x$ is only allowed when $\\sin x \\ne 0$, so Ben has thrown away every solution with $\\sin x = 0$.\n\nCorrect method: rearrange and factorise.\n$$\\sin x\\tan x - \\sin x = 0$$\n$$\\sin x(\\tan x - 1) = 0$$\n\n$\\sin x = 0$: $x = 0°, 180°, 360°$ (at these values $\\cos x = \\pm 1 \\ne 0$, so $\\tan x$ is defined).\n\n$\\tan x = 1$: $x = 45°, 225°$.\n\nComplete solution: $x = 0°, 45°, 180°, 225°, 360°$.\n\n(Check $x = 180°$: $\\sin 180° \\tan 180° = 0 = \\sin 180°$ ✓.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q09",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Aisha is asked to solve $4\\cos^2 x - 3 = 0$ for $0° \\le x < 360°$. Her working is shown below.\n\nLine 1: $4\\cos^2 x = 3$\n\nLine 2: $\\cos^2 x = \\frac{3}{4}$\n\nLine 3: $\\cos x = \\frac{\\sqrt{3}}{2}$\n\nLine 4: $x = 30°$ or $x = 360° - 30° = 330°$\n\nIdentify Aisha's mistake, explain it, and give the correct solutions.",
+  "hint": "If $c^2 = \\frac{3}{4}$, what are the possible values of $c$?",
+  "answer": "Line 3: she missed $\\cos x = -\\frac{\\sqrt{3}}{2}$. Correct solutions: $x = 30°, 150°, 210°, 330°$.",
+  "solution": "**Error in Line 3.** Square-rooting gives two values:\n$$\\cos^2 x = \\frac{3}{4} \\Rightarrow \\cos x = \\pm\\frac{\\sqrt{3}}{2}$$\n\n$\\cos x = \\frac{\\sqrt{3}}{2}$: $x = 30°, 330°$ (Aisha's answers, correct as far as they go).\n\n$\\cos x = -\\frac{\\sqrt{3}}{2}$: principal value $150°$, and $360° - 150° = 210°$.\n\nCorrect solutions: $x = 30°, 150°, 210°, 330°$.\n\n(Check $x = 150°$: $4 \\times \\left(-\\frac{\\sqrt{3}}{2}\\right)^2 - 3 = 4 \\times \\frac{3}{4} - 3 = 0$ ✓.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q10",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Without solving it, explain why the equation $\\sin 3x = 0.2$ has exactly 6 solutions in the interval $0° \\le x < 360°$.\n\n(b) Solve the equation, giving your answers to 1 decimal place.\n\n(c) Leo says \"the solutions of $\\sin 3x = 0.2$ are just the solutions of $\\sin x = 0.2$ divided by 3.\" Explain why Leo's method would only find some of the solutions.",
+  "hint": "How many cycles does $y = \\sin 3x$ complete for $0° \\le x < 360°$? How many times does a full sine cycle cross the line $y = 0.2$?",
+  "answer": "(a) $\\sin 3x$ has period $120°$, so 3 full cycles, each crossing $y = 0.2$ twice. (b) $x = 3.8°, 56.2°, 123.8°, 176.2°, 243.8°, 296.2°$ (c) He would only find the 2 solutions with $3x < 360°$.",
+  "solution": "(a) $y = \\sin 3x$ has period $\\frac{360°}{3} = 120°$, so it completes 3 full cycles for $0° \\le x < 360°$. In each full cycle the sine curve rises from 0 to 1, falls to $-1$ and returns to 0, crossing the horizontal line $y = 0.2$ (which lies strictly between $-1$ and $1$) exactly twice. So there are $3 \\times 2 = 6$ solutions.\n\n(b) Let $u = 3x$, with $0° \\le u < 1080°$.\n\n$\\sin^{-1}0.2 = 11.537°$; second value $180° - 11.537° = 168.463°$. Add $360°$ and $720°$:\n$$u = 11.537°, 168.463°, 371.537°, 528.463°, 731.537°, 888.463°$$\n\nDivide by 3:\n$$x = 3.8°, 56.2°, 123.8°, 176.2°, 243.8°, 296.2°$$\n\n(c) Solving $\\sin x = 0.2$ for $0° \\le x < 360°$ gives $u$-values only in $0° \\le u < 360°$ (namely $11.5°$, $168.5°$), so dividing by 3 gives just $x = 3.8°, 56.2°$. The other four solutions come from $u$ between $360°$ and $1080°$, which Leo never looks at. The interval must be extended to $0° \\le 3x < 1080°$ **before** dividing.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q11",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Prove the following identities.\n\n(a) $\\dfrac{1 - \\cos^2\\theta}{\\sin\\theta\\cos\\theta} \\equiv \\tan\\theta$\n\n(b) $\\tan\\theta + \\dfrac{1}{\\tan\\theta} \\equiv \\dfrac{1}{\\sin\\theta\\cos\\theta}$",
+  "hint": "(a) Replace $1 - \\cos^2\\theta$ using $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$. (b) Write $\\tan\\theta$ as $\\frac{\\sin\\theta}{\\cos\\theta}$ and combine over a common denominator.",
+  "answer": "(a) $\\text{LHS} = \\frac{\\sin^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$ (b) $\\text{LHS} = \\frac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta\\cos\\theta}$",
+  "solution": "(a) Start from the left-hand side. Since $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$, we have $1 - \\cos^2\\theta \\equiv \\sin^2\\theta$:\n$$\\text{LHS} = \\frac{\\sin^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta = \\text{RHS} \\quad \\blacksquare$$\n\n(b)\n$$\\text{LHS} = \\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta\\cos\\theta} = \\text{RHS} \\quad \\blacksquare$$\n\n(Both identities hold for every $\\theta$ where all the expressions are defined, i.e. $\\sin\\theta \\ne 0$ and $\\cos\\theta \\ne 0$. We worked on one side only; we did not \"do the same to both sides\", which would assume what we are trying to prove.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q12",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "In this question you must show all stages of your working. Solutions relying entirely on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the equation\n$$6\\cos^2 x + \\sin x = 5$$\ncan be written as\n$$6\\sin^2 x - \\sin x - 1 = 0$$",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve, for $0° \\le x < 360°$,\n$$6\\cos^2 x + \\sin x = 5$$\ngiving your answers to 1 decimal place where appropriate.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Hence find all the solutions of\n$$6\\cos^2\\left(\\tfrac{1}{2}\\theta\\right) + \\sin\\left(\\tfrac{1}{2}\\theta\\right) = 5$$\nfor $0° \\le \\theta < 720°$, to 1 decimal place where appropriate.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "calculator": true,
+  "hint": "Replace $\\cos^2 x$ by $1 - \\sin^2 x$ and factorise the quadratic in $\\sin x$. In (c), let $x = \\frac{1}{2}\\theta$ and find the interval for $x$.",
+  "answer": "(a) shown (b) $x = 30°, 150°, 199.5°, 340.5°$ (c) $\\theta = 60°, 300°, 398.9°, 681.1°$",
+  "solution": "(a) Use $\\cos^2 x = 1 - \\sin^2 x$: **M1**\n$$6(1 - \\sin^2 x) + \\sin x = 5$$\n$$6 - 6\\sin^2 x + \\sin x - 5 = 0 \\Rightarrow 6\\sin^2 x - \\sin x - 1 = 0 \\quad \\text{**A1** (given answer, all steps shown)}$$\n\n(b) Factorise: $(2\\sin x - 1)(3\\sin x + 1) = 0$ **M1**\n\n$\\sin x = \\frac{1}{2}$ or $\\sin x = -\\frac{1}{3}$ **A1**\n\n$\\sin x = \\frac{1}{2}$: $x = 30°, 150°$ **A1**\n\n$\\sin x = -\\frac{1}{3}$: principal value $-19.47°$; solutions in range $180° + 19.47° = 199.5°$ and $360° - 19.47° = 340.5°$ **A1**\n\n$x = 30°, 150°, 199.5°, 340.5°$\n\n(c) Let $x = \\frac{1}{2}\\theta$. Then $0° \\le x < 360°$, exactly the interval in (b). **M1**\n\n$\\theta = 2x$: $\\theta = 60°, 300°, 398.9°, 681.1°$ **A1**\n\n(Note $2 \\times 199.47° = 398.94°$ and $2 \\times 340.53° = 681.06°$: double the unrounded values.)",
+  "misconceptionIds": [
+   "m3",
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "pure-trig-identities-equations-q13",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Prove that $\\cos^4\\theta - \\sin^4\\theta \\equiv 1 - 2\\sin^2\\theta$.\n\n(b) Hence solve $\\cos^4\\theta - \\sin^4\\theta = \\frac{1}{2}$ for $0 \\le \\theta < 2\\pi$, giving your answers as exact multiples of $\\pi$.",
+  "hint": "$\\cos^4\\theta - \\sin^4\\theta$ is a difference of two squares. After (a), the equation in (b) gives $\\sin^2\\theta = $ a number: don't forget both square roots.",
+  "answer": "(a) proof (b) $\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$",
+  "solution": "(a) Difference of two squares:\n$$\\cos^4\\theta - \\sin^4\\theta = (\\cos^2\\theta - \\sin^2\\theta)(\\cos^2\\theta + \\sin^2\\theta)$$\n$$= (\\cos^2\\theta - \\sin^2\\theta) \\times 1$$\n$$= (1 - \\sin^2\\theta) - \\sin^2\\theta = 1 - 2\\sin^2\\theta \\quad \\blacksquare$$\n\n(b) Using (a):\n$$1 - 2\\sin^2\\theta = \\frac{1}{2} \\Rightarrow \\sin^2\\theta = \\frac{1}{4} \\Rightarrow \\sin\\theta = \\pm\\frac{1}{2}$$\n\n$\\sin\\theta = \\frac{1}{2}$: $\\theta = \\frac{\\pi}{6}, \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$.\n\n$\\sin\\theta = -\\frac{1}{2}$: $\\theta = \\pi + \\frac{\\pi}{6} = \\frac{7\\pi}{6}, 2\\pi - \\frac{\\pi}{6} = \\frac{11\\pi}{6}$.\n\n$\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-expand-factorise-single"
+  ]
+ },
+ {
+  "id": "pure-trig-identities-equations-q14",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The voltage of the UK mains electricity supply can be modelled by\n$$V = 325\\sin(100\\pi t)$$\nwhere $V$ is in volts and $t$ is the time in seconds (the angle is in radians).\n\n(a) State the peak voltage and find the time taken for one complete cycle.\n\n(b) Find the first two positive times at which the voltage is 200 V. Give your answers in milliseconds to 3 significant figures.",
+  "hint": "Period $= \\frac{2\\pi}{100\\pi}$. For (b), solve $\\sin u = \\frac{200}{325}$ for $u = 100\\pi t$, using both $\\alpha$ and $\\pi - \\alpha$.",
+  "answer": "(a) 325 V; 0.02 s (20 ms, i.e. 50 cycles per second) (b) $t = 2.11$ ms and $t = 7.89$ ms",
+  "solution": "(a) Peak voltage $= 325$ V (the amplitude).\n\nPeriod $= \\frac{2\\pi}{100\\pi} = \\frac{1}{50} = 0.02$ s (so 50 cycles per second, the UK mains frequency of 50 Hz).\n\n(b) $325\\sin(100\\pi t) = 200 \\Rightarrow \\sin(100\\pi t) = \\frac{200}{325} = 0.61538\\ldots$\n\nLet $u = 100\\pi t$ (radians, $u > 0$). Principal value $u = \\sin^{-1}0.61538 = 0.66287$; second value $u = \\pi - 0.66287 = 2.47872$.\n$$t = \\frac{0.66287}{100\\pi} = 0.002110 \\text{ s} = 2.11 \\text{ ms}$$\n$$t = \\frac{2.47872}{100\\pi} = 0.007890 \\text{ s} = 7.89 \\text{ ms}$$\n\n(Check: the two times are symmetric about the peak at $t = 5$ ms, a quarter of a cycle: $5 - 2.11 = 2.89 = 7.89 - 5$ ✓. The calculator must be in radian mode.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q15",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "When polarised light passes through a polarising filter, the intensity $I$ of the light that gets through is given by Malus's law\n$$I = I_0\\cos^2\\theta$$\nwhere $I_0$ is the intensity of the incoming light and $\\theta$ is the angle between the direction of polarisation and the filter's axis.\n\nA photographer rotates a filter through a full turn, $0° \\le \\theta < 360°$.\n\n(a) Find all the angles at which exactly a quarter of the light intensity gets through.\n\n(b) Find all the angles, to 1 decimal place, at which 90% of the intensity gets through.",
+  "hint": "Set $\\frac{I}{I_0}$ equal to the fraction, solve for $\\cos^2\\theta$, then remember $\\cos\\theta$ can be positive or negative.",
+  "answer": "(a) $\\theta = 60°, 120°, 240°, 300°$ (b) $\\theta = 18.4°, 161.6°, 198.4°, 341.6°$",
+  "solution": "(a) $I_0\\cos^2\\theta = \\frac{1}{4}I_0 \\Rightarrow \\cos^2\\theta = \\frac{1}{4} \\Rightarrow \\cos\\theta = \\pm\\frac{1}{2}$\n\n$\\cos\\theta = \\frac{1}{2}$: $\\theta = 60°, 300°$.\n\n$\\cos\\theta = -\\frac{1}{2}$: $\\theta = 120°, 240°$.\n\n$\\theta = 60°, 120°, 240°, 300°$.\n\n(b) $\\cos^2\\theta = 0.9 \\Rightarrow \\cos\\theta = \\pm\\sqrt{0.9} = \\pm 0.94868$\n\n$\\cos\\theta = 0.94868$: $\\cos^{-1}0.94868 = 18.43°$, so $\\theta = 18.4°, 360° - 18.43° = 341.6°$.\n\n$\\cos\\theta = -0.94868$: $\\cos^{-1}(-0.94868) = 161.57°$, so $\\theta = 161.6°, 360° - 161.57° = 198.4°$.\n\n$\\theta = 18.4°, 161.6°, 198.4°, 341.6°$.\n\n(Physically, turning the filter through $180°$ gives the same result, which is why the solutions come in pairs $180°$ apart.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q16",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A curve has parametric equations\n$$x = 3 + 2\\cos t, \\qquad y = 1 + 2\\sin t, \\qquad 0 \\le t < 2\\pi$$\n\n(a) Use a trigonometric identity to show that the curve is a circle, and state its centre and radius.\n\n(b) Find the values of $t$ at which the curve meets the line $y = 2$, and hence find the exact coordinates of these points.\n\n(c) Verify that your points in (b) satisfy the Cartesian equation of the circle.",
+  "hint": "Make $\\cos t$ and $\\sin t$ the subjects, then use $\\sin^2 t + \\cos^2 t \\equiv 1$ to eliminate $t$.",
+  "answer": "(a) $(x - 3)^2 + (y - 1)^2 = 4$: centre $(3, 1)$, radius 2 (b) $t = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$; points $(3 + \\sqrt{3}, 2)$ and $(3 - \\sqrt{3}, 2)$ (c) $(\\pm\\sqrt{3})^2 + 1^2 = 4$ ✓",
+  "solution": "(a) $\\cos t = \\frac{x - 3}{2}$ and $\\sin t = \\frac{y - 1}{2}$. Since $\\cos^2 t + \\sin^2 t \\equiv 1$:\n$$\\frac{(x - 3)^2}{4} + \\frac{(y - 1)^2}{4} = 1 \\Rightarrow (x - 3)^2 + (y - 1)^2 = 4$$\nA circle with centre $(3, 1)$ and radius 2. (As $t$ runs over $[0, 2\\pi)$ the whole circle is traced once.)\n\n(b) $1 + 2\\sin t = 2 \\Rightarrow \\sin t = \\frac{1}{2} \\Rightarrow t = \\frac{\\pi}{6}$ or $t = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$.\n\n$t = \\frac{\\pi}{6}$: $x = 3 + 2\\cos\\frac{\\pi}{6} = 3 + \\sqrt{3}$, giving $(3 + \\sqrt{3}, 2)$.\n\n$t = \\frac{5\\pi}{6}$: $x = 3 + 2\\cos\\frac{5\\pi}{6} = 3 - \\sqrt{3}$, giving $(3 - \\sqrt{3}, 2)$.\n\n(c) $(x - 3)^2 + (y - 1)^2 = (\\pm\\sqrt{3})^2 + 1^2 = 3 + 1 = 4$ ✓",
+  "linkedTopicIds": [
+   "pure-parametric-equations",
+   "alg-circle-equations"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-trig-identities-equations-q17",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Solve\n$$\\sin^4\\theta + \\cos^4\\theta = \\frac{5}{8}$$\nfor $0 \\le \\theta < 2\\pi$, giving your answers as exact multiples of $\\pi$.",
+  "hint": "Square the identity $\\sin^2\\theta + \\cos^2\\theta = 1$ to express $\\sin^4\\theta + \\cos^4\\theta$ in terms of $\\sin^2\\theta\\cos^2\\theta$. Then let $s = \\sin^2\\theta$.",
+  "answer": "$\\theta = \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}, \\frac{11\\pi}{6}$",
+  "solution": "Square $\\sin^2\\theta + \\cos^2\\theta = 1$:\n$$\\sin^4\\theta + 2\\sin^2\\theta\\cos^2\\theta + \\cos^4\\theta = 1$$\n$$\\sin^4\\theta + \\cos^4\\theta = 1 - 2\\sin^2\\theta\\cos^2\\theta$$\n\nSo the equation becomes\n$$1 - 2\\sin^2\\theta\\cos^2\\theta = \\frac{5}{8} \\Rightarrow \\sin^2\\theta\\cos^2\\theta = \\frac{3}{16}$$\n\nLet $s = \\sin^2\\theta$, so $\\cos^2\\theta = 1 - s$:\n$$s(1 - s) = \\frac{3}{16} \\Rightarrow 16s^2 - 16s + 3 = 0 \\Rightarrow (4s - 1)(4s - 3) = 0$$\n$$s = \\frac{1}{4} \\text{ or } s = \\frac{3}{4}$$\n\nBoth lie in $[0, 1]$, so both are valid. Taking **both** square roots:\n\n$\\sin\\theta = \\pm\\frac{1}{2}$: $\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$\n\n$\\sin\\theta = \\pm\\frac{\\sqrt{3}}{2}$: $\\theta = \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}$\n\nEight solutions:\n$$\\theta = \\frac{\\pi}{6}, \\frac{\\pi}{3}, \\frac{2\\pi}{3}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{4\\pi}{3}, \\frac{5\\pi}{3}, \\frac{11\\pi}{6}$$\n\n(Check $\\theta = \\frac{\\pi}{6}$: $\\frac{1}{16} + \\frac{9}{16} = \\frac{10}{16} = \\frac{5}{8}$ ✓.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-identities-equations-q18",
+  "topicId": "pure-trig-identities-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider the equation\n$$2\\cos^2 x + 3\\sin x = k, \\qquad 0° \\le x < 360°$$\nwhere $k$ is a constant.\n\n(a) Show that the equation can be written as $2s^2 - 3s + (k - 2) = 0$, where $s = \\sin x$.\n\n(b) By completing the square, or otherwise, find the set of values of $k$ for which the equation has at least one solution.\n\n(c) Find the value of $k$ for which the equation has exactly three solutions, and state them.\n\n(d) How many solutions are there when $k = 3.1$? Justify your answer.",
+  "hint": "Think of $k$ as a function of $s$: $k = 2 + 3s - 2s^2$, where $s$ can only take values in $[-1, 1]$. Then think about how many $x$-values give each value of $s$.",
+  "answer": "(a) shown (b) $-3 \\le k \\le \\frac{25}{8}$ (c) $k = 3$: $x = 30°, 90°, 150°$ (d) 4 solutions",
+  "solution": "(a) $2(1 - \\sin^2 x) + 3\\sin x = k \\Rightarrow 2 - 2s^2 + 3s - k = 0 \\Rightarrow 2s^2 - 3s + (k - 2) = 0$.\n\n(b) Rearranging, $k = g(s) = 2 + 3s - 2s^2$, and we need some $s$ with $-1 \\le s \\le 1$. Complete the square:\n$$g(s) = 2 - 2\\left(s^2 - \\frac{3}{2}s\\right) = 2 - 2\\left(s - \\frac{3}{4}\\right)^2 + \\frac{9}{8} = \\frac{25}{8} - 2\\left(s - \\frac{3}{4}\\right)^2$$\n\n$g$ is an $\\cap$-shaped parabola with maximum $\\frac{25}{8}$ at $s = \\frac{3}{4}$ (inside $[-1, 1]$). On $[-1, 1]$ its least value is at the end further from $\\frac{3}{4}$: $g(-1) = 2 - 3 - 2 = -3$. (Also $g(1) = 3$.)\n\nSo the equation has a solution exactly when $-3 \\le k \\le \\frac{25}{8}$.\n\n(c) Each value of $s$ with $-1 < s < 1$, $s \\ne 0$ gives 2 values of $x$ in $[0°, 360°)$; $s = 1$ gives only $x = 90°$, and $s = -1$ gives only $x = 270°$; $s = 0$ gives two ($0°$ and $180°$).\n\nTo get an odd number (three) we need $s = 1$ or $s = -1$ to be a root.\n* $s = 1$: $k = g(1) = 3$. Then $2s^2 - 3s + 1 = 0 \\Rightarrow (2s - 1)(s - 1) = 0$, so $s = 1$ or $s = \\frac{1}{2}$: $x = 90°$ and $x = 30°, 150°$. **Three solutions.**\n* $s = -1$: $k = -3$, then $2s^2 - 3s - 5 = 0 \\Rightarrow (2s - 5)(s + 1) = 0$; $s = \\frac{5}{2}$ is impossible, so only $x = 270°$: one solution.\n\nSo $k = 3$, with solutions $x = 30°, 90°, 150°$.\n\n(d) $k = 3.1$: $2s^2 - 3s + 1.1 = 0 \\Rightarrow s = \\frac{3 \\pm \\sqrt{9 - 8.8}}{4} = \\frac{3 \\pm \\sqrt{0.2}}{4}$, i.e. $s = 0.862$ or $s = 0.638$.\n\nBoth are strictly between 0 and 1, and each gives two values of $x$ (one in each of the 1st and 2nd quadrants). So there are **4 solutions**.",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "pure-quadratic-functions-discriminant"
+  ]
+ }
+]
