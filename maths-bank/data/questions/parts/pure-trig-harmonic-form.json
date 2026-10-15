@@ -1,0 +1,267 @@
+[
+ {
+  "id": "pure-trig-harmonic-form-q01",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $8\\cos x + 15\\sin x$ in the form $R\\cos(x - \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Give $\\alpha$ to 2 decimal places.",
+  "hint": "Expand $R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$ and match coefficients of $\\cos x$ and $\\sin x$.",
+  "answer": "$8\\cos x + 15\\sin x = 17\\cos(x - 61.93°)$",
+  "solution": "$$R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$$\n\nCompare coefficients:\n$$\\cos x: \\ R\\cos\\alpha = 8, \\qquad \\sin x: \\ R\\sin\\alpha = 15$$\n\nSquare and add ($\\cos^2\\alpha + \\sin^2\\alpha = 1$):\n$$R^2 = 8^2 + 15^2 = 289 \\Rightarrow R = 17$$\n\nDivide:\n$$\\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{15}{8} \\Rightarrow \\alpha = 61.93°$$\n\nSo $8\\cos x + 15\\sin x = 17\\cos(x - 61.93°)$.\n\nCheck at $x = 0$: $17\\cos(-61.93°) = 17 \\times 0.4706 = 8.0$ ✓ (the original is $8\\cos 0 + 15\\sin 0 = 8$).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q02",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $15\\cos x + 8\\sin x$ in the form $R\\cos(x - \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Give $\\alpha$ to 2 decimal places.",
+  "hint": "Same method as before. Which coefficient pairs with $\\sin\\alpha$?",
+  "answer": "$15\\cos x + 8\\sin x = 17\\cos(x - 28.07°)$",
+  "solution": "**What changed:** the coefficients of $\\cos x$ and $\\sin x$ have swapped.\n\n$R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$, so\n$$R\\cos\\alpha = 15, \\qquad R\\sin\\alpha = 8$$\n$$R = \\sqrt{15^2 + 8^2} = 17 \\quad \\text{(unchanged)}$$\n$$\\tan\\alpha = \\frac{8}{15} \\Rightarrow \\alpha = 28.07°$$\n\nSo $15\\cos x + 8\\sin x = 17\\cos(x - 28.07°)$.\n\n**Effect of the change:** $R$ is the same, but $\\tan\\alpha$ is inverted, so the new $\\alpha$ is $90° - 61.93° = 28.07°$. This is why it matters which way up the fraction goes: the $\\sin x$ coefficient (matched with $R\\sin\\alpha$) goes on top.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q03",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $15\\cos x - 8\\sin x$ in the form $R\\cos(x + \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Give $\\alpha$ to 2 decimal places.",
+  "hint": "Expand $R\\cos(x + \\alpha)$ carefully: there is a minus sign in front of the $\\sin x$ term.",
+  "answer": "$15\\cos x - 8\\sin x = 17\\cos(x + 28.07°)$",
+  "solution": "**What changed:** the $\\sin x$ term is now negative, so the form is $R\\cos(x + \\alpha)$.\n\nExpand the target form first:\n$$R\\cos(x + \\alpha) = R\\cos x\\cos\\alpha - R\\sin x\\sin\\alpha$$\n\nCompare coefficients:\n$$\\cos x: \\ R\\cos\\alpha = 15, \\qquad \\sin x: \\ -R\\sin\\alpha = -8 \\Rightarrow R\\sin\\alpha = 8$$\n$$R = 17, \\qquad \\tan\\alpha = \\frac{8}{15} \\Rightarrow \\alpha = 28.07°$$\n\nSo $15\\cos x - 8\\sin x = 17\\cos(x + 28.07°)$.\n\n**Effect of the change:** the minus sign is absorbed by the form $\\cos(x + \\alpha)$, so $\\alpha$ stays positive and is the same as before. Matching $R\\sin\\alpha = -8$ without expanding would give a (wrong) negative $\\alpha$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q04",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $15\\cos x + 8\\sin x$ in the form $R\\sin(x + \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Give $\\alpha$ to 2 decimal places.",
+  "hint": "Expand $R\\sin(x + \\alpha) = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$. Now the $\\cos x$ coefficient pairs with $\\sin\\alpha$.",
+  "answer": "$15\\cos x + 8\\sin x = 17\\sin(x + 61.93°)$",
+  "solution": "**What changed:** the same expression as two questions ago, but now the target form uses **sine**.\n$$R\\sin(x + \\alpha) = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$$\n\nCompare coefficients:\n$$\\sin x: \\ R\\cos\\alpha = 8, \\qquad \\cos x: \\ R\\sin\\alpha = 15$$\n$$R = 17, \\qquad \\tan\\alpha = \\frac{15}{8} \\Rightarrow \\alpha = 61.93°$$\n\nSo $15\\cos x + 8\\sin x = 17\\sin(x + 61.93°)$.\n\n**Effect of the change:** the same wave written with sine instead of cosine gives the complementary angle: $17\\cos(x - 28.07°) = 17\\sin(x - 28.07° + 90°) = 17\\sin(x + 61.93°)$ ✓. Always expand the form you are given rather than reusing a remembered \"$\\tan\\alpha = \\frac{b}{a}$\".",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q05",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For $f(x) = 7\\cos(x - 25°) + 3$, $0° \\le x < 360°$:\n\n(a) write down the maximum value of $f(x)$ and the value of $x$ at which it occurs;\n(b) write down the minimum value of $f(x)$ and the value of $x$ at which it occurs.",
+  "hint": "The cosine part varies between $-1$ and $1$. When is $\\cos(x - 25°) = 1$? When is it $-1$?",
+  "answer": "(a) Maximum $10$ at $x = 25°$ (b) Minimum $-4$ at $x = 205°$",
+  "solution": "$-1 \\le \\cos(x - 25°) \\le 1$, so $-7 + 3 \\le f(x) \\le 7 + 3$.\n\n**(a)** Maximum $= 7 + 3 = 10$, when $\\cos(x - 25°) = 1$, i.e. $x - 25° = 0°$, so $x = 25°$.\n\n**(b)** Minimum $= -7 + 3 = -4$, when $\\cos(x - 25°) = -1$, i.e. $x - 25° = 180°$, so $x = 205°$.\n\n(The maximum and minimum are always half a period, $180°$, apart.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q06",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to write $6\\cos x + 8\\sin x$ in the form $R\\cos(x - \\alpha)$, with $R > 0$ and $0° < \\alpha < 90°$, and then state its maximum value. His working is shown below.\n\nLine 1: $R\\cos\\alpha = 6$, $R\\sin\\alpha = 8$\nLine 2: $R = 6 + 8 = 14$\nLine 3: $\\tan\\alpha = \\frac{8}{6}$, so $\\alpha = 53.13°$\nLine 4: $6\\cos x + 8\\sin x = 14\\cos(x - 53.13°)$, so the maximum value is 14.\n\n(a) Identify Ben's error and explain why it is wrong.\n(b) Write down the correct form and the correct maximum value.",
+  "hint": "Square $R\\cos\\alpha$ and $R\\sin\\alpha$ and add. Also, can $6\\cos x + 8\\sin x$ ever really reach 14?",
+  "answer": "(a) Line 2: $R = \\sqrt{6^2 + 8^2}$, not $6 + 8$. (b) $10\\cos(x - 53.13°)$; maximum $10$.",
+  "solution": "**(a)** Line 2 is wrong. Ben added the coefficients. $R$ comes from\n$$(R\\cos\\alpha)^2 + (R\\sin\\alpha)^2 = R^2(\\cos^2\\alpha + \\sin^2\\alpha) = R^2$$\nso $R^2 = 6^2 + 8^2 = 100$ and $R = 10$. (Geometrically, $R$ is the hypotenuse of a right-angled triangle with legs 6 and 8, not their sum.)\n\nTo reach 14, $\\cos x$ and $\\sin x$ would both have to equal 1 at the same time, which never happens.\n\n**(b)** Lines 1 and 3 are correct, so\n$$6\\cos x + 8\\sin x = 10\\cos(x - 53.13°)$$\nThe maximum value is $10$ (when $x = 53.13°$).\n\nCheck at $x = 53.13°$: $6 \\times 0.6 + 8 \\times 0.8 = 3.6 + 6.4 = 10$ ✓.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q07",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Aisha is asked to express $7\\cos x + 24\\sin x$ in the form $R\\cos(x - \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Her working is shown below.\n\nLine 1: $R\\cos(x - \\alpha) = R\\cos x\\cos\\alpha + R\\sin x\\sin\\alpha$\nLine 2: $R\\cos\\alpha = 7$, $R\\sin\\alpha = 24$\nLine 3: $R = \\sqrt{7^2 + 24^2} = 25$\nLine 4: $\\tan\\alpha = \\frac{7}{24}$, so $\\alpha = 16.26°$\nLine 5: $7\\cos x + 24\\sin x = 25\\cos(x - 16.26°)$\n\n(a) Show that Aisha's answer is wrong by substituting $x = 0$.\n(b) Find and explain her error, and give the correct answer.",
+  "hint": "(b) Divide $R\\sin\\alpha$ by $R\\cos\\alpha$. Which one is on top?",
+  "answer": "(a) At $x = 0$: $25\\cos(-16.26°) = 24 \\ne 7$. (b) Line 4: $\\tan\\alpha = \\frac{24}{7}$, so $7\\cos x + 24\\sin x = 25\\cos(x - 73.74°)$.",
+  "solution": "**(a)** At $x = 0$ the original expression is $7\\cos 0 + 24\\sin 0 = 7$.\n\nAisha's answer gives $25\\cos(-16.26°) = 25 \\times 0.96 = 24$. These are not equal, so her answer is wrong.\n\n**(b)** Lines 1-3 are correct. The error is in Line 4: she has the fraction upside down.\n$$\\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha} = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{24}{7}$$\n$$\\alpha = 73.74°$$\n\nCorrect answer:\n$$7\\cos x + 24\\sin x = 25\\cos(x - 73.74°)$$\n\nCheck at $x = 0$: $25\\cos(-73.74°) = 25 \\times 0.28 = 7$ ✓.\n\n(Her $\\alpha = 16.26°$ is the complement $90° - 73.74°$; it would be correct for $24\\cos x + 7\\sin x$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q08",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Hamza is solving $\\sqrt{3}\\cos x + \\sin x = 1$ for $0° \\le x < 360°$. His working is shown below.\n\nLine 1: $\\sqrt{3}\\cos x + \\sin x = 2\\cos(x - 30°)$\nLine 2: $2\\cos(x - 30°) = 1 \\Rightarrow \\cos(x - 30°) = \\frac{1}{2}$\nLine 3: $x - 30° = 60°$ or $x - 30° = -60°$\nLine 4: $x = 90°$ or $x = -30°$. But $-30°$ is not in the interval, so $x = 90°$ only.\n\n(a) Show that $x = 330°$ is also a solution of the original equation.\n(b) Explain Hamza's error and write out a correct solution.",
+  "hint": "If $0° \\le x < 360°$, what interval does $x - 30°$ lie in? List the angles in that interval whose cosine is $\\frac{1}{2}$.",
+  "answer": "(a) $\\sqrt{3} \\times \\frac{\\sqrt{3}}{2} + \\left(-\\frac{1}{2}\\right) = 1$ ✓ (b) He did not adjust the interval for $x - 30°$; the solutions are $x = 90°$ and $x = 330°$.",
+  "solution": "**(a)** $\\cos 330° = \\frac{\\sqrt{3}}{2}$ and $\\sin 330° = -\\frac{1}{2}$, so\n$$\\sqrt{3}\\cos 330° + \\sin 330° = \\frac{3}{2} - \\frac{1}{2} = 1 \\ ✓$$\n\n**(b)** Lines 1 and 2 are correct ($R = \\sqrt{3 + 1} = 2$, $\\tan\\alpha = \\frac{1}{\\sqrt{3}}$, $\\alpha = 30°$). The error is in Lines 3-4: Hamza found values of $x - 30°$ without first working out which interval $x - 30°$ lies in. Rejecting $-60°$ was fine, but he never looked for the other value of $x - 30°$ that **is** in range.\n\nCorrect solution: $0° \\le x < 360° \\Rightarrow -30° \\le x - 30° < 330°$.\n\nAngles in this interval with cosine $\\frac{1}{2}$: $60°$ and $360° - 60° = 300°$. ($-60°$ is outside the interval.)\n$$x - 30° = 60° \\Rightarrow x = 90°$$\n$$x - 30° = 300° \\Rightarrow x = 330°$$\n\nSo $x = 90°$ or $x = 330°$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q09",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "(a) Express $3\\sin x + 2\\cos x$ in the form $R\\sin(x + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\frac{\\pi}{2}$. Give $R$ exactly and $\\alpha$ to 4 decimal places.\n\n(b) Hence solve $3\\sin x + 2\\cos x = 1$ for $0 \\le x < 2\\pi$, giving your answers to 2 decimal places.",
+  "hint": "(b) Work out the interval for $x + \\alpha$ first. Is the calculator's value of $\\sin^{-1}\\frac{1}{\\sqrt{13}}$ inside it?",
+  "answer": "(a) $\\sqrt{13}\\sin(x + 0.5880)$ (b) $x = 2.27, 5.98$",
+  "solution": "**(a)** $R\\sin(x + \\alpha) = R\\sin x\\cos\\alpha + R\\cos x\\sin\\alpha$, so\n$$R\\cos\\alpha = 3, \\qquad R\\sin\\alpha = 2$$\n$$R = \\sqrt{9 + 4} = \\sqrt{13}, \\qquad \\tan\\alpha = \\frac{2}{3} \\Rightarrow \\alpha = 0.5880$$\n\n**(b)**\n$$\\sqrt{13}\\sin(x + 0.5880) = 1 \\Rightarrow \\sin(x + 0.5880) = \\frac{1}{\\sqrt{13}}$$\n\nInterval: $0 \\le x < 2\\pi \\Rightarrow 0.5880 \\le x + 0.5880 < 6.8712$.\n\nPrincipal value: $\\sin^{-1}\\frac{1}{\\sqrt{13}} = 0.2810$. This is **below** $0.5880$, so it is not in the interval. The values that are in the interval:\n$$x + 0.5880 = \\pi - 0.2810 = 2.8606$$\n$$x + 0.5880 = 2\\pi + 0.2810 = 6.5642$$\n\nSo $x = 2.2726\\ldots$ or $x = 5.9762\\ldots$:\n$$x = 2.27, \\ 5.98 \\text{ (2 d.p.)}$$\n\n(Check $x = 2.27$: $3\\sin 2.27 + 2\\cos 2.27 = 2.298 - 1.290 = 1.008 \\approx 1$ ✓, the small error coming from rounding $x$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q10",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 10,
+  "question": "$$f(\\theta) = 6\\cos\\theta - 2.5\\sin\\theta$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Express $f(\\theta)$ in the form $R\\cos(\\theta + \\alpha)$, where $R > 0$ and $0° < \\alpha < 90°$. Give the exact value of $R$ and the value of $\\alpha$ to 2 decimal places.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the maximum value of\n$$g(\\theta) = \\frac{20}{15 + 6\\cos\\theta - 2.5\\sin\\theta}$$\nand the value of $\\theta$, in the interval $0° \\le \\theta < 360°$, at which it occurs.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Solve, for $0° \\le \\theta < 360°$, the equation $f(\\theta) = 3$, giving your answers to 1 decimal place.",
+    "marks": 4
+   }
+  ],
+  "hint": "(a) Expand $R\\cos(\\theta + \\alpha)$ first. (b) A fraction with a positive numerator is largest when its denominator is smallest. (c) Adjust the interval for $\\theta + \\alpha$.",
+  "answer": "(a) $f(\\theta) = 6.5\\cos(\\theta + 22.62°)$ (b) Maximum $\\frac{40}{17}$ at $\\theta = 157.4°$ (c) $\\theta = 39.9°, 274.9°$",
+  "solution": "**(a)** $R\\cos(\\theta + \\alpha) = R\\cos\\theta\\cos\\alpha - R\\sin\\theta\\sin\\alpha$, so $R\\cos\\alpha = 6$ and $R\\sin\\alpha = 2.5$.\n\n$R = \\sqrt{6^2 + 2.5^2} = \\sqrt{42.25} = 6.5$ B1\n\n$\\tan\\alpha = \\frac{2.5}{6}$ M1 $\\Rightarrow \\alpha = 22.62°$ A1\n$$f(\\theta) = 6.5\\cos(\\theta + 22.62°)$$\n\n**(b)** $g(\\theta) = \\dfrac{20}{15 + 6.5\\cos(\\theta + 22.62°)}$\n\nThe denominator is positive and least when $\\cos(\\theta + 22.62°) = -1$: minimum denominator $= 15 - 6.5 = 8.5$. M1\n$$\\text{max } g = \\frac{20}{8.5} = \\frac{40}{17} \\ (\\approx 2.35) \\quad \\text{A1}$$\n$\\theta + 22.62° = 180° \\Rightarrow \\theta = 157.4°$ A1\n\n**(c)** $6.5\\cos(\\theta + 22.62°) = 3 \\Rightarrow \\cos(\\theta + 22.62°) = \\frac{3}{6.5} = 0.4615\\ldots$ M1\n\nInterval: $22.62° \\le \\theta + 22.62° < 382.62°$.\n\n$\\cos^{-1}(0.4615\\ldots) = 62.51°$ M1\n\n$\\theta + 22.62° = 62.51°$ or $360° - 62.51° = 297.49°$ dM1 (second value in the adjusted interval)\n$$\\theta = 39.9°, \\ 274.9° \\quad \\text{A1}$$",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q11",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In a circuit, two alternating voltages (in volts) are added:\n$$V_1 = 120\\sin(100\\pi t), \\qquad V_2 = 50\\cos(100\\pi t)$$\nwhere $t$ is the time in seconds.\n\n(a) Show that the total voltage $V = V_1 + V_2$ can be written as $V = 130\\sin(100\\pi t + \\alpha)$ and find $\\alpha$, in radians to 4 decimal places, with $0 < \\alpha < \\frac{\\pi}{2}$.\n(b) An engineer says the peak voltage is $170$ V. Explain why the engineer is wrong and state the correct peak voltage.\n(c) Find the first time $t > 0$ at which $V$ reaches its peak, giving your answer in milliseconds to 3 significant figures.",
+  "hint": "(a) Expand $R\\sin(\\omega t + \\alpha)$ with $\\omega = 100\\pi$. (b) Do $V_1$ and $V_2$ reach their peaks at the same moment? (c) Peak when the angle equals $\\frac{\\pi}{2}$.",
+  "answer": "(a) $\\alpha = 0.3948$ (b) The two peaks happen at different times; the peak is $130$ V. (c) $t = 3.74$ ms",
+  "solution": "**(a)** Let $\\omega = 100\\pi$.\n$$R\\sin(\\omega t + \\alpha) = R\\sin\\omega t\\cos\\alpha + R\\cos\\omega t\\sin\\alpha$$\n\nCompare with $120\\sin\\omega t + 50\\cos\\omega t$:\n$$R\\cos\\alpha = 120, \\qquad R\\sin\\alpha = 50$$\n$$R = \\sqrt{120^2 + 50^2} = \\sqrt{16900} = 130, \\qquad \\tan\\alpha = \\frac{50}{120} \\Rightarrow \\alpha = 0.3948$$\n\nSo $V = 130\\sin(100\\pi t + 0.3948)$.\n\n**(b)** $170 = 120 + 50$ would need $\\sin(100\\pi t) = 1$ and $\\cos(100\\pi t) = 1$ at the same instant, which is impossible (the two voltages are a quarter of a cycle out of step). The amplitudes combine like the sides of a right-angled triangle, so the peak is $R = 130$ V.\n\n**(c)** Peak when $100\\pi t + 0.3948 = \\frac{\\pi}{2}$:\n$$t = \\frac{\\frac{\\pi}{2} - 0.3948}{100\\pi} = \\frac{1.1760}{314.16} = 0.003743 \\text{ s} = 3.74 \\text{ ms (3 s.f.)}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q12",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The depth of water, $D$ metres, at the entrance to a harbour is modelled by\n$$D = 6 + 1.5\\cos(30t)° + 2\\sin(30t)°$$\nwhere $t$ is the number of hours after midnight, $0 \\le t \\le 12$.\n\n(a) Write $D$ in the form $6 + R\\cos(30t - \\alpha)°$, where $R > 0$ and $0 < \\alpha < 90$.\n(b) Find the maximum depth of water and the time at which it occurs, to the nearest minute.\n(c) A fishing boat needs a depth of at least 7 m to pass through the entrance. Find the latest time after midnight at which it can leave harbour before the depth first drops below 7 m, to the nearest minute.\n(d) For how long in each 12-hour cycle can the boat pass through the entrance? Give your answer in hours and minutes.",
+  "hint": "(a) $R\\cos\\alpha = 1.5$, $R\\sin\\alpha = 2$. (c) Solve $\\cos(30t - \\alpha) = 0.4$; the depth is falling after the high tide. (d) $\\cos\\theta \\ge 0.4$ on an interval of $\\theta$ symmetric about the maximum.",
+  "answer": "(a) $D = 6 + 2.5\\cos(30t - 53.13)°$ (b) $8.5$ m at 01:46 (c) 03:59 (d) 4 hours 26 minutes",
+  "solution": "**(a)** $R\\cos(30t - \\alpha) = R\\cos 30t\\cos\\alpha + R\\sin 30t\\sin\\alpha$, so $R\\cos\\alpha = 1.5$ and $R\\sin\\alpha = 2$.\n$$R = \\sqrt{1.5^2 + 2^2} = 2.5, \\qquad \\tan\\alpha = \\frac{2}{1.5} \\Rightarrow \\alpha = 53.13$$\n$$D = 6 + 2.5\\cos(30t - 53.13)°$$\n\n**(b)** Maximum depth $= 6 + 2.5 = 8.5$ m, when $30t - 53.13 = 0$:\n$$t = \\frac{53.13}{30} = 1.771 \\text{ h} = 1 \\text{ h } 46 \\text{ min}$$\nHigh tide is at 01:46.\n\n**(c)** $6 + 2.5\\cos(30t - 53.13)° = 7 \\Rightarrow \\cos(30t - 53.13)° = 0.4$\n$$\\cos^{-1}(0.4) = 66.42°$$\n\nAt midnight $D = 7.5$ m, the depth rises to the high tide and then falls; it first drops to 7 m just after the high tide, when\n$$30t - 53.13 = 66.42 \\Rightarrow t = \\frac{119.55}{30} = 3.985 \\text{ h} = 3 \\text{ h } 59 \\text{ min}$$\nThe boat must leave by 03:59.\n\n**(d)** $D \\ge 7$ whenever $-66.42 \\le 30t - 53.13 \\le 66.42$ (plus multiples of 360). That is an angle range of $2 \\times 66.42 = 132.84°$ per $360°$ cycle, so a time of\n$$\\frac{132.84}{30} = 4.428 \\text{ h} \\approx 4 \\text{ hours } 26 \\text{ minutes}$$\n\n(In $0 \\le t \\le 12$ this is $0 \\le t \\le 3.985$ together with $11.557 \\le t \\le 12$, which also totals $4.43$ h.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q13",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-trig-graphs",
+   "alg-graph-transformations"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><line x1=\"36\" y1=\"220\" x2=\"36\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"73.8\" y1=\"220\" x2=\"73.8\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"111.5\" y1=\"220\" x2=\"111.5\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"149.2\" y1=\"220\" x2=\"149.2\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"187\" y1=\"220\" x2=\"187\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"224.8\" y1=\"220\" x2=\"224.8\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"262.5\" y1=\"220\" x2=\"262.5\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"300.2\" y1=\"220\" x2=\"300.2\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"338\" y1=\"220\" x2=\"338\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"220\" x2=\"338\" y2=\"220\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"186.3\" x2=\"338\" y2=\"186.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"152.7\" x2=\"338\" y2=\"152.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"119\" x2=\"338\" y2=\"119\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"85.3\" x2=\"338\" y2=\"85.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"51.7\" x2=\"338\" y2=\"51.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"18\" x2=\"338\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"119\" x2=\"344\" y2=\"119\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"36\" y1=\"220\" x2=\"36\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M344,119 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M36,12 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"73.8\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/4</text><text x=\"111.5\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/2</text><text x=\"149.2\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3π/4</text><text x=\"187\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π</text><text x=\"224.8\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5π/4</text><text x=\"262.5\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3π/2</text><text x=\"300.2\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7π/4</text><text x=\"338\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2π</text><text x=\"30\" y=\"224.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1.5</text><text x=\"30\" y=\"190.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><text x=\"30\" y=\"157.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−0.5</text><text x=\"30\" y=\"89.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.5</text><text x=\"30\" y=\"56.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"30\" y=\"22.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1.5</text><text x=\"342\" y=\"111\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"44\" y=\"22\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"36,51.7 37.3,53.5 38.5,55.3 39.8,57.2 41,59.1 42.3,61 43.5,63 44.8,65.1 46.1,67.1 47.3,69.2 48.6,71.4 49.8,73.6 51.1,75.8 52.4,78 53.6,80.3 54.9,82.6 56.1,84.9 57.4,87.2 58.6,89.6 59.9,92 61.2,94.4 62.4,96.8 63.7,99.2 64.9,101.6 66.2,104.1 67.5,106.6 68.7,109 70,111.5 71.2,114 72.5,116.5 73.8,119 75,121.5 76.3,124 77.5,126.5 78.8,129 80,131.4 81.3,133.9 82.6,136.4 83.8,138.8 85.1,141.2 86.3,143.6 87.6,146 88.8,148.4 90.1,150.8 91.4,153.1 92.6,155.4 93.9,157.7 95.1,160 96.4,162.2 97.7,164.4 98.9,166.6 100.2,168.8 101.4,170.9 102.7,172.9 104,175 105.2,177 106.5,178.9 107.7,180.8 109,182.7 110.2,184.5 111.5,186.3 112.8,188.1 114,189.8 115.3,191.4 116.5,193 117.8,194.5 119.1,196 120.3,197.5 121.6,198.9 122.8,200.2 124.1,201.5 125.3,202.7 126.6,203.8 127.9,204.9 129.1,206 130.4,207 131.6,207.9 132.9,208.8 134.2,209.6 135.4,210.3 136.7,211 137.9,211.6 139.2,212.1 140.4,212.6 141.7,213.1 143,213.4 144.2,213.7 145.5,213.9 146.7,214.1 148,214.2 149.2,214.2 150.5,214.2 151.8,214.1 153,213.9 154.3,213.7 155.5,213.4 156.8,213.1 158.1,212.6 159.3,212.1 160.6,211.6 161.8,211 163.1,210.3 164.3,209.6 165.6,208.8 166.9,207.9 168.1,207 169.4,206 170.6,204.9 171.9,203.8 173.2,202.7 174.4,201.5 175.7,200.2 176.9,198.9 178.2,197.5 179.4,196 180.7,194.5 182,193 183.2,191.4 184.5,189.8 185.7,188.1 187,186.3 188.3,184.5 189.5,182.7 190.8,180.8 192,178.9 193.3,177 194.6,175 195.8,172.9 197.1,170.9 198.3,168.8 199.6,166.6 200.8,164.4 202.1,162.2 203.4,160 204.6,157.7 205.9,155.4 207.1,153.1 208.4,150.8 209.6,148.4 210.9,146 212.2,143.6 213.4,141.2 214.7,138.8 215.9,136.4 217.2,133.9 218.5,131.4 219.7,129 221,126.5 222.2,124 223.5,121.5 224.8,119 226,116.5 227.3,114 228.5,111.5 229.8,109 231,106.6 232.3,104.1 233.6,101.6 234.8,99.2 236.1,96.8 237.3,94.4 238.6,92 239.9,89.6 241.1,87.2 242.4,84.9 243.6,82.6 244.9,80.3 246.1,78 247.4,75.8 248.7,73.6 249.9,71.4 251.2,69.2 252.4,67.1 253.7,65.1 254.9,63 256.2,61 257.5,59.1 258.7,57.2 260,55.3 261.2,53.5 262.5,51.7 263.8,49.9 265,48.2 266.3,46.6 267.5,45 268.8,43.5 270.1,42 271.3,40.5 272.6,39.1 273.8,37.8 275.1,36.5 276.3,35.3 277.6,34.2 278.9,33.1 280.1,32 281.4,31 282.6,30.1 283.9,29.2 285.1,28.4 286.4,27.7 287.7,27 288.9,26.4 290.2,25.9 291.4,25.4 292.7,24.9 294,24.6 295.2,24.3 296.5,24.1 297.7,23.9 299,23.8 300.2,23.8 301.5,23.8 302.8,23.9 304,24.1 305.3,24.3 306.5,24.6 307.8,24.9 309.1,25.4 310.3,25.9 311.6,26.4 312.8,27 314.1,27.7 315.4,28.4 316.6,29.2 317.9,30.1 319.1,31 320.4,32 321.6,33.1 322.9,34.2 324.2,35.3 325.4,36.5 326.7,37.8 327.9,39.1 329.2,40.5 330.4,42 331.7,43.5 333,45 334.2,46.6 335.5,48.2 336.7,49.9 338,51.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"36\" cy=\"51.7\" r=\"3\" fill=\"currentColor\"/><circle cx=\"300.2\" cy=\"23.8\" r=\"3\" fill=\"currentColor\"/><text x=\"294.2\" y=\"15.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">(7π/4, √2)</text><text x=\"43\" y=\"44.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">(0, 1)</text></svg>",
+  "question": "The diagram shows the graph of $y = a\\cos x + b\\sin x$ for $0 \\le x \\le 2\\pi$, where $a$ and $b$ are constants. The curve passes through $(0, 1)$ and its only maximum point in this interval is $\\left(\\frac{7\\pi}{4}, \\sqrt{2}\\right)$.\n\n(a) Find $a$ and $b$, explaining your reasoning.\n(b) Write $y$ in the form $R\\cos(x + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\frac{\\pi}{2}$.\n(c) Hence describe a sequence of two geometrical transformations that maps the graph of $y = \\cos x$ onto this curve.\n(d) Find the exact $x$-coordinates of the points where the curve crosses the $x$-axis.",
+  "hint": "(a) Put $x = 0$ to get $a$. The maximum value is $R = \\sqrt{a^2 + b^2}$. Two values of $b$ fit, but only one puts the maximum at $\\frac{7\\pi}{4}$. (c) $\\cos(x + \\alpha)$ is a horizontal translation.",
+  "answer": "(a) $a = 1$, $b = -1$ (b) $y = \\sqrt{2}\\cos\\left(x + \\frac{\\pi}{4}\\right)$ (c) Translation by $\\begin{pmatrix} -\\frac{\\pi}{4} \\\\ 0 \\end{pmatrix}$, then a stretch parallel to the $y$-axis, scale factor $\\sqrt{2}$ (in either order). (d) $x = \\frac{\\pi}{4}, \\frac{5\\pi}{4}$",
+  "solution": "**(a)** At $x = 0$: $y = a\\cos 0 + b\\sin 0 = a$, so $a = 1$.\n\nThe maximum of $a\\cos x + b\\sin x$ is $R = \\sqrt{a^2 + b^2}$, so $\\sqrt{1 + b^2} = \\sqrt{2}$, giving $b = 1$ or $b = -1$.\n\nIf $b = 1$: $\\cos x + \\sin x = \\sqrt{2}\\cos\\left(x - \\frac{\\pi}{4}\\right)$, whose maximum in $[0, 2\\pi]$ is at $x = \\frac{\\pi}{4}$, not $\\frac{7\\pi}{4}$. ✗\n\nIf $b = -1$: check $x = \\frac{7\\pi}{4}$: $\\cos\\frac{7\\pi}{4} - \\sin\\frac{7\\pi}{4} = \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\sqrt{2}$ ✓.\n\nSo $a = 1$, $b = -1$, and $y = \\cos x - \\sin x$.\n\n**(b)** $R\\cos(x + \\alpha) = R\\cos x\\cos\\alpha - R\\sin x\\sin\\alpha$: $R\\cos\\alpha = 1$, $R\\sin\\alpha = 1$.\n$$R = \\sqrt{2}, \\quad \\tan\\alpha = 1 \\Rightarrow \\alpha = \\frac{\\pi}{4}, \\qquad y = \\sqrt{2}\\cos\\left(x + \\frac{\\pi}{4}\\right)$$\n\n**(c)** $y = \\cos x \\ \\to\\ y = \\cos\\left(x + \\frac{\\pi}{4}\\right)$: translation by $\\begin{pmatrix} -\\frac{\\pi}{4} \\\\ 0 \\end{pmatrix}$ (left by $\\frac{\\pi}{4}$).\n\nThen $\\to\\ y = \\sqrt{2}\\cos\\left(x + \\frac{\\pi}{4}\\right)$: stretch parallel to the $y$-axis, scale factor $\\sqrt{2}$.\n\n(These two transformations can be done in either order.)\n\n**(d)** $\\cos\\left(x + \\frac{\\pi}{4}\\right) = 0$ with $\\frac{\\pi}{4} \\le x + \\frac{\\pi}{4} \\le \\frac{9\\pi}{4}$:\n$$x + \\frac{\\pi}{4} = \\frac{\\pi}{2}, \\ \\frac{3\\pi}{2} \\Rightarrow x = \\frac{\\pi}{4}, \\ \\frac{5\\pi}{4}$$\n\nThese agree with the graph, which crosses the $x$-axis on the gridlines at $\\frac{\\pi}{4}$ and $\\frac{5\\pi}{4}$ ✓."
+ },
+ {
+  "id": "pure-trig-harmonic-form-q14",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient",
+   "mech-variable-acceleration"
+  ],
+  "question": "A particle moves along a straight line. Its displacement from a fixed point $O$ at time $t$ seconds is\n$$s = 5\\sin 2t + 12\\cos 2t \\text{ metres}, \\qquad t \\ge 0$$\n\n(a) Find the greatest distance of the particle from $O$.\n(b) Find an expression for the velocity $v$ m/s at time $t$, and write it in the form $R\\cos(2t + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\frac{\\pi}{2}$.\n(c) Hence find the maximum speed of the particle and the first time $t > 0$ at which it occurs, to 3 significant figures.",
+  "hint": "(a) Write $s$ as a single sine or cosine; the amplitude is the greatest distance. (b) Differentiate using the chain rule: $\\frac{d}{dt}\\sin 2t = 2\\cos 2t$. (c) Speed is $|v|$, so look for $\\cos(2t + \\alpha) = \\pm 1$.",
+  "answer": "(a) $13$ m (b) $v = 10\\cos 2t - 24\\sin 2t = 26\\cos(2t + 1.176)$ (c) Maximum speed $26$ m/s, first at $t = 0.983$ s",
+  "solution": "**(a)** $s = 5\\sin 2t + 12\\cos 2t = 13\\sin(2t + \\beta)$ for some angle $\\beta$, since $\\sqrt{5^2 + 12^2} = 13$. The sine part varies between $-1$ and $1$, so the greatest distance from $O$ is $13$ m.\n\n**(b)** Differentiate (chain rule):\n$$v = \\frac{ds}{dt} = 10\\cos 2t - 24\\sin 2t$$\n\n$R\\cos(2t + \\alpha) = R\\cos 2t\\cos\\alpha - R\\sin 2t\\sin\\alpha$, so $R\\cos\\alpha = 10$ and $R\\sin\\alpha = 24$.\n$$R = \\sqrt{100 + 576} = 26, \\qquad \\tan\\alpha = \\frac{24}{10} \\Rightarrow \\alpha = 1.176$$\n$$v = 26\\cos(2t + 1.176)$$\n\n**(c)** Speed $= |v| = 26\\left|\\cos(2t + 1.176)\\right|$, which has maximum value $26$ m/s when $\\cos(2t + 1.176) = \\pm 1$, i.e. $2t + 1.176 = k\\pi$.\n\nFor $t > 0$ we need $2t + 1.176 > 1.176$, so the first value is $2t + 1.176 = \\pi$:\n$$t = \\frac{\\pi - 1.1760}{2} = 0.983 \\text{ s (3 s.f.)}$$\n\n(At this moment $v = -26$ m/s: the particle is moving towards $O$ at top speed, as it passes through $s = 0$.)"
+ },
+ {
+  "id": "pure-trig-harmonic-form-q15",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Sam says: \"The maximum value of $2\\cos x + 3\\sin x$ is $5$, because the biggest value of $\\cos x$ is 1 and the biggest value of $\\sin x$ is 1.\" Explain why Sam is wrong, and find the correct maximum.\n(b) Explain why the equation $2\\cos x + 3\\sin x = 4$ has no solutions.\n(c) Find the largest integer $k$ for which $2\\cos x + 3\\sin x = k$ has at least one solution.",
+  "hint": "Write $2\\cos x + 3\\sin x$ as a single wave $R\\cos(x - \\alpha)$. What values can a single cosine wave of amplitude $R$ take?",
+  "answer": "(a) $\\cos x$ and $\\sin x$ are never both 1 at once; the maximum is $\\sqrt{13} \\approx 3.61$. (b) $4 > \\sqrt{13}$, so it would need $\\cos(x - \\alpha) > 1$. (c) $k = 3$",
+  "solution": "Write $2\\cos x + 3\\sin x = R\\cos(x - \\alpha)$ with $R\\cos\\alpha = 2$, $R\\sin\\alpha = 3$:\n$$R = \\sqrt{2^2 + 3^2} = \\sqrt{13} \\approx 3.606, \\qquad \\tan\\alpha = \\frac{3}{2} \\Rightarrow \\alpha = 56.31°$$\n\n**(a)** Sam's argument needs $\\cos x = 1$ and $\\sin x = 1$ at the same value of $x$. But $\\cos x = 1$ only when $\\sin x = 0$ (e.g. $x = 0°$), so the two maxima never happen together. Adding the coefficients is not how amplitudes combine. The true maximum is\n$$\\sqrt{13}\\cos(x - 56.31°) \\le \\sqrt{13} \\approx 3.61,$$\nreached at $x = 56.31°$.\n\n**(b)** $\\sqrt{13}\\cos(x - \\alpha) = 4$ would need $\\cos(x - \\alpha) = \\frac{4}{\\sqrt{13}} \\approx 1.109$, which is greater than 1. A cosine can never exceed 1, so there are no solutions.\n\n**(c)** $2\\cos x + 3\\sin x$ takes every value from $-\\sqrt{13}$ to $\\sqrt{13}$, i.e. from about $-3.606$ to $3.606$. The largest integer in this range is $k = 3$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q16",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find the set of values of the constant $k$ for which the equation\n$$3\\cos x + 4\\sin x = k$$\nhas **exactly two** solutions in the interval $0° \\le x \\le 180°$.",
+  "hint": "Write the left-hand side as $5\\cos(x - \\alpha)$ and sketch it for $0° \\le x \\le 180°$. Find its value at each end of the interval and at its maximum; then think about horizontal lines $y = k$.",
+  "answer": "$3 \\le k < 5$",
+  "solution": "$3\\cos x + 4\\sin x = R\\cos(x - \\alpha)$ with $R\\cos\\alpha = 3$, $R\\sin\\alpha = 4$:\n$$R = 5, \\qquad \\tan\\alpha = \\frac{4}{3} \\Rightarrow \\alpha = 53.13°$$\n\nSo we need the number of intersections of $y = 5\\cos(x - 53.13°)$ with the line $y = k$ for $0° \\le x \\le 180°$, i.e. for $-53.13° \\le x - 53.13° \\le 126.87°$.\n\nKey values of $y = 5\\cos(x - 53.13°)$:\n\nAt $x = 0°$: $y = 5\\cos(-53.13°) = 3$ (also $3\\cos 0 + 4\\sin 0 = 3$ ✓).\n\nAt $x = 53.13°$: $y = 5$ (maximum).\n\nAt $x = 180°$: $y = 5\\cos 126.87° = -3$ (also $3\\cos 180° + 4\\sin 180° = -3$ ✓).\n\nSo the curve **rises** from $3$ to $5$, then **falls** from $5$ to $-3$.\n\nCounting intersections with $y = k$:\n\n$k > 5$: none. $k = 5$: one (the maximum).\n\n$3 \\le k < 5$: one on the rising part (for $k = 3$ this is the endpoint $x = 0°$) and one on the falling part: **two**.\n\n$-3 \\le k < 3$: only on the falling part: one. $k < -3$: none.\n\nHence exactly two solutions when $3 \\le k < 5$.\n\n(Check $k = 3$: $3\\cos x + 4\\sin x = 3$ gives $\\cos(x - 53.13°) = 0.6$, so $x - 53.13° = \\pm 53.13°$, i.e. $x = 0°$ or $x = 106.26°$: two solutions, both in range ✓.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-trig-harmonic-form-q17",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles"
+  ],
+  "question": "Prove that, for all real $x$,\n$$3 - 2\\sqrt{2} \\le \\cos^2 x + 4\\sin x\\cos x + 5\\sin^2 x \\le 3 + 2\\sqrt{2}$$\nand find the values of $x$ in the interval $0° \\le x < 180°$ at which the upper bound is reached.",
+  "hint": "Use double angle formulae to replace $\\cos^2 x$, $\\sin^2 x$ and $\\sin x\\cos x$ by expressions in $\\cos 2x$ and $\\sin 2x$. Then use the harmonic form on the $2x$ terms.",
+  "answer": "The expression equals $3 + 2\\sqrt{2}\\sin(2x - 45°)$, which lies between $3 - 2\\sqrt{2}$ and $3 + 2\\sqrt{2}$; the upper bound is reached at $x = 67.5°$.",
+  "solution": "Use $\\cos^2 x = \\frac{1}{2}(1 + \\cos 2x)$, $\\sin^2 x = \\frac{1}{2}(1 - \\cos 2x)$ and $2\\sin x\\cos x = \\sin 2x$:\n$$\\cos^2 x + 4\\sin x\\cos x + 5\\sin^2 x = \\frac{1 + \\cos 2x}{2} + 2\\sin 2x + \\frac{5(1 - \\cos 2x)}{2}$$\n$$= 3 + 2\\sin 2x - 2\\cos 2x$$\n\nNow write $2\\sin 2x - 2\\cos 2x = R\\sin(2x - \\alpha) = R\\sin 2x\\cos\\alpha - R\\cos 2x\\sin\\alpha$:\n$$R\\cos\\alpha = 2, \\quad R\\sin\\alpha = 2 \\Rightarrow R = \\sqrt{8} = 2\\sqrt{2}, \\quad \\alpha = 45°$$\n\nSo, for all $x$,\n$$\\cos^2 x + 4\\sin x\\cos x + 5\\sin^2 x \\equiv 3 + 2\\sqrt{2}\\sin(2x - 45°)$$\n\nSince $-1 \\le \\sin(2x - 45°) \\le 1$ for every $x$,\n$$3 - 2\\sqrt{2} \\le \\cos^2 x + 4\\sin x\\cos x + 5\\sin^2 x \\le 3 + 2\\sqrt{2} \\qquad \\blacksquare$$\n\nThe upper bound is reached when $\\sin(2x - 45°) = 1$. For $0° \\le x < 180°$, $-45° \\le 2x - 45° < 315°$, so $2x - 45° = 90°$ and $x = 67.5°$.\n\n(Check: at $x = 67.5°$, $\\cos^2 x = 0.1464$, $4\\sin x\\cos x = 1.4142$, $5\\sin^2 x = 4.2678$; total $5.828 = 3 + 2\\sqrt{2}$ ✓. Both bounds are attained, so they are the best possible.)"
+ },
+ {
+  "id": "pure-trig-harmonic-form-q18",
+  "topicId": "pure-trig-harmonic-form",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "question": "Solve the equation\n$$\\cos x + \\sin x = \\sin x\\cos x$$\nfor $0° \\le x < 360°$, giving your answers to 1 decimal place.",
+  "hint": "Let $t = \\cos x + \\sin x$. Square $t$ to express $\\sin x\\cos x$ in terms of $t$. What range of values can $t$ take?",
+  "answer": "$x = 152.0°$ or $x = 298.0°$",
+  "solution": "Let $t = \\cos x + \\sin x$. Then\n$$t^2 = \\cos^2 x + 2\\sin x\\cos x + \\sin^2 x = 1 + 2\\sin x\\cos x \\Rightarrow \\sin x\\cos x = \\frac{t^2 - 1}{2}$$\n\nThe equation becomes\n$$t = \\frac{t^2 - 1}{2} \\Rightarrow t^2 - 2t - 1 = 0 \\Rightarrow t = \\frac{2 \\pm \\sqrt{8}}{2} = 1 \\pm \\sqrt{2}$$\n\n**Range of $t$:** in harmonic form $t = \\cos x + \\sin x = \\sqrt{2}\\cos(x - 45°)$, so $-\\sqrt{2} \\le t \\le \\sqrt{2}$.\n\n$1 + \\sqrt{2} \\approx 2.414 > \\sqrt{2}$: impossible.\n\n$1 - \\sqrt{2} \\approx -0.414$: valid.\n\nSo\n$$\\sqrt{2}\\cos(x - 45°) = 1 - \\sqrt{2} \\Rightarrow \\cos(x - 45°) = \\frac{1 - \\sqrt{2}}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2} - 1 = -0.29289\\ldots$$\n\nInterval: $-45° \\le x - 45° < 315°$. $\\cos^{-1}(-0.29289) = 107.03°$; the other angle with this cosine is $-107.03°$ (out of range) or $360° - 107.03° = 252.97°$ (in range).\n$$x - 45° = 107.03° \\Rightarrow x = 152.0°$$\n$$x - 45° = 252.97° \\Rightarrow x = 298.0°$$\n\nCheck $x = 152.0°$: $\\cos x + \\sin x = -0.8829 + 0.4695 = -0.413$ and $\\sin x\\cos x = -0.415$ ✓ (equal up to rounding)."
+ }
+]
