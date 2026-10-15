@@ -246,7 +246,11 @@ ol.path .needs { font-size: 0.8rem; color: var(--ink-soft); }
   .side { order: -1; }
 }
 @media (max-width: 560px) {
-  nav.tabs { margin-left: 0; width: 100%; }
+  .masthead { position: static; }
+  .masthead .wrap { gap: 8px 12px; }
+  nav.tabs { margin-left: 0; order: 3; width: 100%; }
+  nav.tabs button { padding: 6px 10px; }
+  .theme-btn { margin-left: auto; padding: 4px 10px; }
   .sheet { padding: 18px 14px; }
   .parts li { grid-template-columns: 1.8em minmax(0, 1fr); }
   .parts .pm { grid-column: 2; }
@@ -295,7 +299,7 @@ ol.path .needs { font-size: 0.8rem; color: var(--ink-soft); }
       <h1>Every topic from Year 7 to Further Maths, and Grade 6 to AP</h1>
       <p>One merged bank for UK KS3, GCSE, A-level and Further Maths and US Common Core 6–8, Algebra 1, Geometry, Algebra 2, Precalculus, AP Calculus and AP Statistics. Search, filter, open a topic, or build a printable worksheet.</p>
       <div class="searchbar">
-        <input type="search" id="q" placeholder="Search topics and questions, e.g. completing the square, chi-square, bearings" aria-label="Search">
+        <input type="search" id="q" placeholder="Search, e.g. completing the square" aria-label="Search">
         <button type="button" class="btn filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filters">Filters</button>
       </div>
       <div class="stats" id="stats"></div>
