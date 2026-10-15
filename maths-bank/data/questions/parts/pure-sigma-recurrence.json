@@ -1,0 +1,288 @@
+[
+ {
+  "id": "pure-sigma-recurrence-q01",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write out the terms of\n$$\\sum_{r=1}^{5}(2r + 1)$$\nand find its value.",
+  "hint": "Substitute $r = 1, 2, 3, 4, 5$ in turn into $2r + 1$, then add.",
+  "answer": "$3 + 5 + 7 + 9 + 11 = 35$",
+  "solution": "$r = 1$: $3$; $r = 2$: $5$; $r = 3$: $7$; $r = 4$: $9$; $r = 5$: $11$\n$$\\sum_{r=1}^{5}(2r + 1) = 3 + 5 + 7 + 9 + 11 = 35$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q02",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write out the terms of\n$$\\sum_{r=1}^{5}(2r - 1)$$\nand find its value.",
+  "hint": "Only the constant has changed from $+1$ to $-1$. How many times does that constant appear in the sum?",
+  "answer": "$1 + 3 + 5 + 7 + 9 = 25$",
+  "solution": "**What changed:** $+1$ became $-1$.\n$$\\sum_{r=1}^{5}(2r - 1) = 1 + 3 + 5 + 7 + 9 = 25$$\n\nEach of the 5 terms is 2 smaller than before, so the total drops by $5 \\times 2 = 10$ (from 35 to 25), not just by 2. The constant is included once **per term**.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q03",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write out the terms of\n$$\\sum_{r=3}^{7}(2r - 1)$$\nand find its value. How many terms are there?",
+  "hint": "Now $r$ starts at 3. List every value of $r$ from 3 to 7 inclusive.",
+  "answer": "$5 + 7 + 9 + 11 + 13 = 45$; 5 terms",
+  "solution": "**What changed:** the lower limit is now $r = 3$ (and the upper limit $r = 7$).\n\n$r = 3, 4, 5, 6, 7$: that is $7 - 3 + 1 = 5$ terms.\n$$\\sum_{r=3}^{7}(2r - 1) = 5 + 7 + 9 + 11 + 13 = 45$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q04",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of\n$$\\sum_{r=3}^{30}(2r - 1)$$",
+  "hint": "The upper limit is now too big to write everything out. The terms form an arithmetic series: find the first term, last term and number of terms.",
+  "answer": "$896$",
+  "solution": "**What changed:** the upper limit rose from 7 to 30, so we use a formula instead of listing.\n\nFirst term ($r = 3$): $5$. Last term ($r = 30$): $59$. Number of terms: $30 - 3 + 1 = 28$.\n$$\\sum_{r=3}^{30}(2r - 1) = \\frac{28}{2}(5 + 59) = 14 \\times 64 = 896$$\n\nCheck: $\\sum_{r=1}^{30}(2r - 1) - \\sum_{r=1}^{2}(2r - 1) = 30^2 - 4 = 896$ ✓ (the sum of the first $n$ odd numbers is $n^2$).",
+  "linkedTopicIds": [
+   "pure-arithmetic-series"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q05",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A sequence is defined by\n$$u_{n+1} = 3u_n - 1, \\quad u_1 = 4$$\nFind $u_2$, $u_3$ and $u_4$.",
+  "hint": "$u_n$ is the **value** of the previous term, not its position. Start with $u_2 = 3u_1 - 1$.",
+  "answer": "$u_2 = 11$, $u_3 = 32$, $u_4 = 95$",
+  "solution": "Put $n = 1$: $u_2 = 3u_1 - 1 = 3(4) - 1 = 11$\n\nPut $n = 2$: $u_3 = 3u_2 - 1 = 3(11) - 1 = 32$\n\nPut $n = 3$: $u_4 = 3u_3 - 1 = 3(32) - 1 = 95$\n\n(A common slip is $u_2 = 3(1) - 1$, using the position $n = 1$ instead of the value $u_1 = 4$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q06",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Write the series\n$$4 + 7 + 10 + 13 + \\cdots + 61$$\nusing sigma notation.\n\n(b) Hence evaluate it.",
+  "hint": "Find a formula for the $r$th term ($3r + \\ldots$), then find which value of $r$ gives 61.",
+  "answer": "(a) $\\displaystyle\\sum_{r=1}^{20}(3r + 1)$ (b) $650$",
+  "solution": "(a) The terms go up by 3, and $r = 1$ gives 4, so the $r$th term is $3r + 1$.\n\nLast term: $3r + 1 = 61 \\Rightarrow r = 20$.\n$$4 + 7 + \\cdots + 61 = \\sum_{r=1}^{20}(3r + 1)$$\n\n(Other correct forms exist, e.g. $\\sum_{r=0}^{19}(3r + 4)$.)\n\n(b) 20 terms from 4 to 61:\n$$\\frac{20}{2}(4 + 61) = 10 \\times 65 = 650$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q07",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "For each sequence, write down the first four terms and state whether it is increasing, decreasing, periodic or none of these. For any periodic sequence, state its order.\n\n(a) $u_n = 5 - \\dfrac{4}{n}$\n\n(b) $u_{n+1} = \\frac{1}{2}u_n$, $u_1 = 64$\n\n(c) $u_n = (-1)^n$\n\n(d) $u_n = \\cos\\left(\\dfrac{n\\pi}{2}\\right)$\n\n(e) $u_{n+1} = -2u_n$, $u_1 = 1$",
+  "hint": "Increasing means each term is bigger than the one before, for all $n$. Periodic means the terms repeat in a cycle.",
+  "answer": "(a) $1, 3, \\frac{11}{3}, 4$: increasing (b) $64, 32, 16, 8$: decreasing (c) $-1, 1, -1, 1$: periodic, order 2 (d) $0, -1, 0, 1$: periodic, order 4 (e) $1, -2, 4, -8$: none of these",
+  "solution": "(a) $u_1 = 1$, $u_2 = 3$, $u_3 = \\frac{11}{3}$, $u_4 = 4$. As $n$ increases, $\\frac{4}{n}$ decreases, so $5 - \\frac{4}{n}$ increases: **increasing** (approaching 5).\n\n(b) $64, 32, 16, 8$. Each term is half the previous, and the terms are positive: **decreasing** (approaching 0).\n\n(c) $-1, 1, -1, 1$: $u_{n+2} = u_n$, so **periodic with order 2**.\n\n(d) $\\cos\\frac{\\pi}{2} = 0$, $\\cos\\pi = -1$, $\\cos\\frac{3\\pi}{2} = 0$, $\\cos 2\\pi = 1$, and then the values repeat since cosine has period $2\\pi$: **periodic with order 4**.\n\n(e) $1, -2, 4, -8$: the terms alternate in sign and grow in size. It goes up and down, so it is neither increasing nor decreasing, and it never repeats: **none of these**.",
+  "linkedTopicIds": [
+   "pure-trig-graphs"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q08",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ethan evaluates $\\displaystyle\\sum_{r=1}^{20}(3r + 4)$. His working is shown.\n\n$$\\sum_{r=1}^{20}(3r + 4) = 3\\sum_{r=1}^{20} r + 4$$\n$$= 3 \\times \\frac{20 \\times 21}{2} + 4$$\n$$= 3 \\times 210 + 4 = 634$$\n\nFind Ethan's error, explain it, and find the correct value.",
+  "hint": "Write out the first two or three terms: $7 + 10 + 13 + \\cdots$. How many 4s are there in the whole sum?",
+  "answer": "He added the 4 only once; it appears in all 20 terms, so $\\sum 4 = 80$. Correct value: $710$.",
+  "solution": "**Error:** the first line. The sum is $(3 \\times 1 + 4) + (3 \\times 2 + 4) + \\cdots + (3 \\times 20 + 4)$, so the 4 appears in **each** of the 20 terms:\n$$\\sum_{r=1}^{20} 4 = 4 \\times 20 = 80, \\text{ not } 4$$\n\nCorrect working:\n$$\\sum_{r=1}^{20}(3r + 4) = 3\\sum_{r=1}^{20} r + \\sum_{r=1}^{20} 4 = 3 \\times 210 + 80 = 710$$\n\nCheck as an arithmetic series: first term 7, last term 64, 20 terms: $10 \\times 71 = 710$ ✓",
+  "linkedTopicIds": [
+   "pure-arithmetic-series"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q09",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A sequence is defined by\n$$u_{n+1} = \\frac{1 + u_n}{1 - u_n}, \\quad u_1 = 2$$\n\nZara shows correctly that $u_2 = -3$, $u_3 = -\\frac{1}{2}$, $u_4 = \\frac{1}{3}$ and $u_5 = 2$, so the sequence is periodic with order 4 and each cycle sums to $2 - 3 - \\frac{1}{2} + \\frac{1}{3} = -\\frac{7}{6}$.\n\nShe then writes:\n\n$$50 \\div 4 = 12.5 \\text{ cycles, so } \\sum_{r=1}^{50} u_r = 12.5 \\times \\left(-\\frac{7}{6}\\right) = -14.58$$\n\nExplain what is wrong with Zara's method and find the correct value of $\\displaystyle\\sum_{r=1}^{50} u_r$.",
+  "hint": "How many **complete** cycles fit into 50 terms? Which terms are left over, and what are their values?",
+  "answer": "Half a cycle does not have half the cycle's sum. $50 = 12 \\times 4 + 2$: $12 \\times \\left(-\\frac{7}{6}\\right) + u_1 + u_2 = -14 + 2 - 3 = -15$",
+  "solution": "**Error:** \"12.5 cycles\". A half cycle is the terms $u_1, u_2$ (that is, $2$ and $-3$), whose sum $-1$ is not half of $-\\frac{7}{6}$. The terms within a cycle are not equal, so you cannot share the cycle's sum out evenly.\n\nCorrect method: count complete cycles and leftover terms.\n$$50 = 12 \\times 4 + 2$$\n\nTerms 1 to 48 are 12 complete cycles:\n$$12 \\times \\left(-\\frac{7}{6}\\right) = -14$$\n\nTerms 49 and 50 are the first two of a new cycle: $u_{49} = u_1 = 2$ and $u_{50} = u_2 = -3$.\n$$\\sum_{r=1}^{50} u_r = -14 + 2 + (-3) = -15$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q10",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 8,
+  "question": "A sequence $u_1, u_2, u_3, \\ldots$ is defined by\n$$u_{n+1} = ku_n - 4, \\quad u_1 = 3$$\nwhere $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $u_3 = 3k^2 - 4k - 4$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $\\displaystyle\\sum_{r=1}^{3} u_r = 9$, show that $3k^2 - k - 14 = 0$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Given also that the sequence is not constant, find the value of $k$ and the value of $u_4$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "State, with a reason, whether the sequence is increasing, decreasing or neither.",
+    "marks": 1
+   }
+  ],
+  "hint": "Find $u_2$ in terms of $k$ first, then use it to find $u_3$. In (c), check what the sequence looks like for each root.",
+  "answer": "(a) shown (b) shown (c) $k = -2$, $u_4 = -36$ (d) neither: the terms $3, -10, 16, -36$ alternate in sign",
+  "solution": "(a) $u_2 = 3k - 4$ **B1**\n$$u_3 = k(3k - 4) - 4 = 3k^2 - 4k - 4$$\n**B1** (shown)\n\n(b)\n$$3 + (3k - 4) + (3k^2 - 4k - 4) = 9$$\n**M1**\n$$3k^2 - k - 5 = 9 \\Rightarrow 3k^2 - k - 14 = 0$$\n**A1** (shown)\n\n(c) $(3k - 7)(k + 2) = 0 \\Rightarrow k = \\frac{7}{3}$ or $k = -2$ **M1**\n\nIf $k = \\frac{7}{3}$: $u_2 = 7 - 4 = 3 = u_1$, so every term is 3 and the sequence is constant. Rejected. **A1**\n\nSo $k = -2$: $u_2 = -10$, $u_3 = 16$ (check: $3 - 10 + 16 = 9$ ✓), and\n$$u_4 = -2(16) - 4 = -36$$\n**A1**\n\n(d) Neither: $u_2 < u_1$ but $u_3 > u_2$, as the terms alternate in sign ($3, -10, 16, -36, \\ldots$). **B1**",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q11",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A sequence is defined by\n$$u_n = \\frac{2n + 1}{n + 3}, \\quad n \\ge 1$$\n\n(a) Show that $u_{n+1} - u_n = \\dfrac{5}{(n + 3)(n + 4)}$.\n\n(b) Hence prove that the sequence is increasing.\n\n(c) Prove that every term of the sequence is less than 2.",
+  "hint": "Write $u_{n+1} = \\dfrac{2n + 3}{n + 4}$ and subtract using a common denominator.",
+  "answer": "(a) shown (b) $u_{n+1} - u_n > 0$ for all $n \\ge 1$ (c) $2 - u_n = \\frac{5}{n + 3} > 0$",
+  "solution": "(a) $u_{n+1} = \\dfrac{2(n + 1) + 1}{(n + 1) + 3} = \\dfrac{2n + 3}{n + 4}$\n$$u_{n+1} - u_n = \\frac{(2n + 3)(n + 3) - (2n + 1)(n + 4)}{(n + 4)(n + 3)}$$\n$$= \\frac{(2n^2 + 9n + 9) - (2n^2 + 9n + 4)}{(n + 3)(n + 4)} = \\frac{5}{(n + 3)(n + 4)}$$\n\n(b) For $n \\ge 1$, both $n + 3$ and $n + 4$ are positive, so $u_{n+1} - u_n > 0$. Hence $u_{n+1} > u_n$ for all $n$: the sequence is increasing.\n\n(c)\n$$2 - u_n = \\frac{2(n + 3) - (2n + 1)}{n + 3} = \\frac{5}{n + 3} > 0$$\n\nso $u_n < 2$ for every $n$. (The terms $\\frac{3}{4}, 1, \\frac{7}{6}, \\ldots$ increase towards 2 but never reach it.)",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q12",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A sequence is defined by\n$$u_{n+2} = u_{n+1} - u_n, \\quad u_1 = a, \\quad u_2 = b$$\n\n(a) Find $u_3, u_4, \\ldots, u_8$ in terms of $a$ and $b$.\n\n(b) Hence prove that, whatever the values of $a$ and $b$, the sequence is periodic, and state its order (assuming $a$ and $b$ are not both zero).\n\n(c) Given that $u_1 = 3$ and $u_2 = 5$, find $\\displaystyle\\sum_{r=1}^{100} u_r$.",
+  "hint": "Each term is the previous term minus the one before that. Keep going until you see $a$ and then $b$ again.",
+  "answer": "(a) $b - a, -a, -b, a - b, a, b$ (b) $u_7 = u_1$ and $u_8 = u_2$, so periodic with order 6 (c) $7$",
+  "solution": "(a)\n$u_3 = b - a$\n\n$u_4 = (b - a) - b = -a$\n\n$u_5 = -a - (b - a) = -b$\n\n$u_6 = -b - (-a) = a - b$\n\n$u_7 = (a - b) - (-b) = a$\n\n$u_8 = a - (a - b) = b$\n\n(b) Each term depends only on the two terms before it. Since $u_7 = u_1$ and $u_8 = u_2$, the sequence from $u_7$ onwards repeats exactly the sequence from $u_1$, so $u_{n+6} = u_n$ for all $n$.\n\nThe order is 6. It cannot be smaller: order 1, 2 or 3 would need $b = a$, $b - a = a$ or $-a = a$ together with matching later terms, which forces $a = b = 0$. (For example, order 3 would need $u_4 = u_1$, so $-a = a$, $a = 0$, and $u_5 = u_2$ gives $-b = b$, $b = 0$.)\n\n(c) One cycle sums to\n$$a + b + (b - a) + (-a) + (-b) + (a - b) = 0$$\n\n$100 = 16 \\times 6 + 4$, so the 16 complete cycles contribute 0, leaving $u_{97}$ to $u_{100}$, which equal $u_1$ to $u_4$:\n$$\\sum_{r=1}^{100} u_r = u_1 + u_2 + u_3 + u_4 = 3 + 5 + 2 + (-3) = 7$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q13",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A sequence is defined by\n$$u_{n+1} = pu_n + q, \\quad u_1 = 2$$\nwhere $p$ and $q$ are constants. The sequence is periodic with order 2, and\n$$\\sum_{r=1}^{40} u_r = 100$$\n\nFind the values of $p$ and $q$.",
+  "hint": "Order 2 means $u_3 = u_1$ but $u_2 \\ne u_1$. Write $u_3$ in terms of $p$ and $q$ and factorise.",
+  "answer": "$p = -1$, $q = 5$",
+  "solution": "$u_2 = 2p + q$ and $u_3 = p(2p + q) + q = 2p^2 + pq + q$.\n\nOrder 2 requires $u_3 = u_1 = 2$:\n$$2p^2 + pq + q - 2 = 0$$\n\nThis factorises:\n$$(p + 1)(2p + q - 2) = 0$$\n\n(check: $(p + 1)(2p + q - 2) = 2p^2 + pq - 2p + 2p + q - 2$ ✓).\n\nIf $2p + q - 2 = 0$ then $u_2 = 2p + q = 2 = u_1$, so the sequence is constant (order 1), not order 2. So $p = -1$, and the sequence is $2, q - 2, 2, q - 2, \\ldots$ with $q \\ne 4$.\n\n40 terms make 20 complete cycles:\n$$20\\big(2 + (q - 2)\\big) = 20q = 100 \\Rightarrow q = 5$$\n\nCheck: $u_{n+1} = -u_n + 5$ gives $2, 3, 2, 3, \\ldots$; the sum of 40 terms is $20 \\times 5 = 100$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q14",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A patient takes a 200 mg dose of a medicine every 6 hours. By the time of each new dose, 30% of the medicine in the body from before is still present. Let $D_n$ be the amount (in mg) in the body immediately after the $n$th dose, so $D_1 = 200$.\n\n(a) Explain why $D_{n+1} = 0.3D_n + 200$.\n\n(b) Find $D_2$, $D_3$ and $D_4$.\n\n(c) Describe how the sequence behaves, and find the value it approaches in the long term.\n\n(d) The medicine is unsafe if more than 300 mg is in the body at any time. Is this dosing regime safe? Explain.",
+  "hint": "In the long term, $D_{n+1}$ and $D_n$ both approach the same limit $L$, so $L = 0.3L + 200$.",
+  "answer": "(a) 30% of $D_n$ remains, then 200 mg is added (b) $260$, $278$, $283.4$ mg (c) increasing, approaching $\\frac{2000}{7} \\approx 285.7$ mg (d) safe: the amount never exceeds $285.7$ mg $< 300$ mg",
+  "solution": "(a) Just before dose $n + 1$, 30% of the $D_n$ mg remains, which is $0.3D_n$. The new dose adds 200 mg, so $D_{n+1} = 0.3D_n + 200$.\n\n(b) $D_2 = 0.3(200) + 200 = 260$ mg\n\n$D_3 = 0.3(260) + 200 = 278$ mg\n\n$D_4 = 0.3(278) + 200 = 283.4$ mg\n\n(c) The sequence is increasing, but the increases ($60, 18, 5.4, \\ldots$) shrink, each being $0.3$ of the one before. It approaches a limit $L$ with\n$$L = 0.3L + 200 \\Rightarrow 0.7L = 200 \\Rightarrow L = \\frac{2000}{7} \\approx 285.7 \\text{ mg}$$\n\n(d) Since the sequence is increasing towards $285.7$ mg, every $D_n$ is below $285.7$ mg (and the amount only falls between doses). This is less than 300 mg, so according to the model the regime is safe.",
+  "linkedTopicIds": [
+   "rat-percentage-change"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q15",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A new cinema expects to sell $1200 - 40r$ tickets in week $r$ after it opens.\n\n(a) Write the total number of tickets expected to be sold in the first 20 weeks using sigma notation, and evaluate it.\n\n(b) Tickets cost £9 each. Find the expected ticket income over the first 20 weeks.\n\n(c) In which week are weekly sales first expected to fall below 500?",
+  "hint": "Split the sum: $\\sum 1200 - 40\\sum r$. Remember the 1200 is counted once for every week.",
+  "answer": "(a) $\\displaystyle\\sum_{r=1}^{20}(1200 - 40r) = 15\\,600$ tickets (b) £140 400 (c) week 18",
+  "solution": "(a)\n$$\\sum_{r=1}^{20}(1200 - 40r) = \\sum_{r=1}^{20} 1200 - 40\\sum_{r=1}^{20} r = 20 \\times 1200 - 40 \\times 210 = 24\\,000 - 8400 = 15\\,600$$\n\n(The 1200 is in each of the 20 terms, so it contributes $24\\,000$.)\n\nCheck: arithmetic with first term $1160$, last term $400$: $\\frac{20}{2}(1160 + 400) = 15\\,600$ ✓\n\n(b) $15\\,600 \\times £9 = £140\\,400$\n\n(c) $1200 - 40r < 500 \\Rightarrow 40r > 700 \\Rightarrow r > 17.5$, so the first week is week 18 ($1200 - 720 = 480$ tickets).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-sigma-recurrence-q16",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 280\" width=\"290\" height=\"280\"><line x1=\"90.4\" y1=\"250\" x2=\"90.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"144.8\" y1=\"250\" x2=\"144.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"199.3\" y1=\"250\" x2=\"199.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"253.7\" y1=\"250\" x2=\"253.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"195.6\" x2=\"270\" y2=\"195.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"141.2\" x2=\"270\" y2=\"141.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"86.7\" x2=\"270\" y2=\"86.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"32.3\" x2=\"270\" y2=\"32.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"36\" y1=\"250\" x2=\"276\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"36\" y1=\"250\" x2=\"36\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M276,250 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M36,10 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"90.4\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"144.8\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"199.3\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"253.7\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"30\" y=\"200.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"30\" y=\"145.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"30\" y=\"91.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"30\" y=\"36.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"274\" y=\"242\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"44\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"36,250 147.6,138.4 259.1,26.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"36,116.7 37.9,116.3 39.7,115.9 41.6,115.6 43.4,115.2 45.3,114.8 47.2,114.4 49,114.1 50.9,113.7 52.7,113.3 54.6,113 56.5,112.6 58.3,112.2 60.2,111.9 62,111.5 63.9,111.1 65.7,110.8 67.6,110.4 69.5,110 71.3,109.7 73.2,109.3 75,109 76.9,108.6 78.8,108.2 80.6,107.9 82.5,107.5 84.3,107.2 86.2,106.8 88.1,106.5 89.9,106.1 91.8,105.8 93.6,105.4 95.5,105.1 97.4,104.7 99.2,104.4 101.1,104 102.9,103.7 104.8,103.3 106.7,103 108.5,102.6 110.4,102.3 112.2,102 114.1,101.6 115.9,101.3 117.8,100.9 119.7,100.6 121.5,100.3 123.4,99.9 125.2,99.6 127.1,99.2 129,98.9 130.8,98.6 132.7,98.2 134.5,97.9 136.4,97.6 138.3,97.2 140.1,96.9 142,96.6 143.8,96.3 145.7,95.9 147.6,95.6 149.4,95.3 151.3,94.9 153.1,94.6 155,94.3 156.9,94 158.7,93.6 160.6,93.3 162.4,93 164.3,92.7 166.2,92.4 168,92 169.9,91.7 171.7,91.4 173.6,91.1 175.4,90.8 177.3,90.4 179.2,90.1 181,89.8 182.9,89.5 184.7,89.2 186.6,88.9 188.5,88.6 190.3,88.2 192.2,87.9 194,87.6 195.9,87.3 197.8,87 199.6,86.7 201.5,86.4 203.3,86.1 205.2,85.8 207.1,85.4 208.9,85.1 210.8,84.8 212.6,84.5 214.5,84.2 216.4,83.9 218.2,83.6 220.1,83.3 221.9,83 223.8,82.7 225.6,82.4 227.5,82.1 229.4,81.8 231.2,81.5 233.1,81.2 234.9,80.9 236.8,80.6 238.7,80.3 240.5,80 242.4,79.7 244.2,79.4 246.1,79.1 248,78.8 249.8,78.5 251.7,78.2 253.5,77.9 255.4,77.6 257.3,77.3 259.1,77.1\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/><polyline points=\"90.4,250 90.4,106 180,106 180,90 196,90 196,87.3 198.7,87.3 198.7,86.8 199.2,86.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"4 3\"/><circle cx=\"90.4\" cy=\"250\" r=\"3\" fill=\"currentColor\"/><text x=\"96.9\" y=\"240.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">u₁</text><text x=\"183.2\" y=\"240.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">u₂</text><text x=\"261.8\" y=\"62.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = √(x + 6)</text><text x=\"229.2\" y=\"35\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x</text><polyline points=\"180,106 180,250\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"2 3\"/></svg>",
+  "question": "A sequence is defined by\n$$u_{n+1} = \\sqrt{u_n + 6}, \\quad u_1 = 1$$\n\nThe diagram shows the graphs of $y = \\sqrt{x + 6}$ and $y = x$, with a staircase diagram starting at $u_1 = 1$.\n\n(a) Find $u_2$, $u_3$ and $u_4$, giving your answers to 4 decimal places.\n\n(b) Given that the sequence converges to a limit $L$, find $L$, justifying your choice of root.\n\n(c) Prove that if $0 < u_n < 3$ then $u_n < u_{n+1} < 3$. Hence explain why the sequence is increasing.",
+  "hint": "For (b), the limit satisfies $L = \\sqrt{L + 6}$. For (c), compare $u_{n+1}^2 = u_n + 6$ with $u_n^2$ and with $9$.",
+  "answer": "(a) $u_2 = 2.6458$, $u_3 = 2.9404$, $u_4 = 2.9900$ (b) $L = 3$ (the root $-2$ is rejected since every term is positive) (c) shown",
+  "solution": "(a) $u_2 = \\sqrt{7} = 2.6458$\n\n$u_3 = \\sqrt{8.6458} = 2.9404$\n\n$u_4 = \\sqrt{8.9404} = 2.9900$ (4 d.p.)\n\n(b) $L = \\sqrt{L + 6} \\Rightarrow L^2 = L + 6 \\Rightarrow L^2 - L - 6 = 0 \\Rightarrow (L - 3)(L + 2) = 0$\n\nEvery term is a positive square root, so $L \\ge 0$. Hence $L = 3$ (reject $-2$). On the diagram this is where $y = \\sqrt{x + 6}$ meets $y = x$.\n\n(c) Suppose $0 < u_n < 3$.\n\n**Below 3:** $u_{n+1}^2 = u_n + 6 < 3 + 6 = 9$, and $u_{n+1} > 0$, so $u_{n+1} < 3$.\n\n**Bigger than $u_n$:**\n$$u_{n+1}^2 - u_n^2 = u_n + 6 - u_n^2 = -(u_n - 3)(u_n + 2)$$\n\nWith $0 < u_n < 3$: $u_n - 3 < 0$ and $u_n + 2 > 0$, so this is positive. Since both are positive, $u_{n+1}^2 > u_n^2$ gives $u_{n+1} > u_n$.\n\n**Hence:** $u_1 = 1$ lies in $(0, 3)$, so $u_2$ is in $(u_1, 3)$, then $u_3$ is in $(u_2, 3)$, and so on: every term lies in $(0, 3)$ and each is bigger than the last. The sequence is increasing (and bounded above by 3), which is the staircase climbing towards the intersection point on the diagram.",
+  "linkedTopicIds": [
+   "alg-iteration",
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q17",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that\n$$\\sum_{r=1}^{n}\\log_{10}\\left(\\frac{r + 1}{r}\\right) = \\log_{10}(n + 1)$$\n\n(b) Hence find the smallest integer $n$ for which\n$$\\sum_{r=1}^{n}\\log_{2}\\left(1 + \\frac{1}{r}\\right) > 10$$\n\n(c) Show that $\\displaystyle\\sum_{r=1}^{n}\\ln\\left(3^r\\right) = \\frac{n(n + 1)}{2}\\ln 3$, and hence find the exact value of $n$ for which this sum equals $\\ln\\left(3^{210}\\right)$.",
+  "hint": "Use $\\log a + \\log b = \\log ab$: write out the sum of logs as the log of a product and look for cancelling.",
+  "answer": "(a) shown (telescoping product) (b) $n = 1024$ (c) $n = 20$",
+  "solution": "(a) Using $\\log a + \\log b = \\log(ab)$:\n$$\\sum_{r=1}^{n}\\log_{10}\\frac{r + 1}{r} = \\log_{10}\\left(\\frac{2}{1} \\times \\frac{3}{2} \\times \\frac{4}{3} \\times \\cdots \\times \\frac{n + 1}{n}\\right)$$\n\nEvery numerator cancels with the next denominator, leaving $\\frac{n + 1}{1}$:\n$$= \\log_{10}(n + 1)$$\n\n(b) $1 + \\frac{1}{r} = \\frac{r + 1}{r}$, and the same argument works in any base:\n$$\\sum_{r=1}^{n}\\log_2\\left(1 + \\frac{1}{r}\\right) = \\log_2(n + 1)$$\n$$\\log_2(n + 1) > 10 \\Rightarrow n + 1 > 2^{10} = 1024 \\Rightarrow n > 1023$$\n\nSmallest integer: $n = 1024$.\n\n(c) $\\ln(3^r) = r\\ln 3$, so\n$$\\sum_{r=1}^{n} r\\ln 3 = \\ln 3\\sum_{r=1}^{n} r = \\frac{n(n + 1)}{2}\\ln 3$$\n\nSetting this equal to $\\ln(3^{210}) = 210\\ln 3$:\n$$\\frac{n(n + 1)}{2} = 210 \\Rightarrow n^2 + n - 420 = 0 \\Rightarrow (n - 20)(n + 21) = 0$$\n\n$n$ is a positive integer, so $n = 20$.",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "pure-sigma-recurrence-q18",
+  "topicId": "pure-sigma-recurrence",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A sequence is defined by\n$$u_{n+1} = \\frac{u_n + \\sqrt{3}}{1 - \\sqrt{3}\\,u_n}, \\quad u_1 = 1$$\n\n(a) By writing $u_n = \\tan\\theta_n$, show that $u_{n+1} = \\tan\\left(\\theta_n + \\dfrac{\\pi}{3}\\right)$.\n\n(b) Hence explain why the sequence is periodic, and state its order.\n\n(c) Find the exact values of $u_2$ and $u_3$, and hence find $\\displaystyle\\sum_{r=1}^{100} u_r$.",
+  "hint": "Compare the recurrence with $\\tan(A + B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$, using $\\tan\\frac{\\pi}{3} = \\sqrt{3}$. Adding $\\frac{\\pi}{3}$ three times adds $\\pi$.",
+  "answer": "(a) shown (b) $\\theta_{n+3} = \\theta_n + \\pi$ and $\\tan$ has period $\\pi$, so $u_{n+3} = u_n$: order 3 (c) $u_2 = -2 - \\sqrt{3}$, $u_3 = \\sqrt{3} - 2$; sum $= -98$",
+  "solution": "(a) With $u_n = \\tan\\theta_n$ and $\\sqrt{3} = \\tan\\frac{\\pi}{3}$:\n$$u_{n+1} = \\frac{\\tan\\theta_n + \\tan\\frac{\\pi}{3}}{1 - \\tan\\theta_n\\tan\\frac{\\pi}{3}} = \\tan\\left(\\theta_n + \\frac{\\pi}{3}\\right)$$\n\n(b) So we can take $\\theta_{n+1} = \\theta_n + \\frac{\\pi}{3}$, giving $\\theta_{n+3} = \\theta_n + \\pi$. Since $\\tan$ has period $\\pi$, $u_{n+3} = \\tan(\\theta_n + \\pi) = \\tan\\theta_n = u_n$. The order is 3 (not 1, since $u_2 \\ne u_1$ below).\n\n(c) $u_1 = 1 = \\tan\\frac{\\pi}{4}$.\n\n$u_2 = \\tan\\left(\\frac{\\pi}{4} + \\frac{\\pi}{3}\\right) = \\dfrac{1 + \\sqrt{3}}{1 - \\sqrt{3}} = \\dfrac{(1 + \\sqrt{3})^2}{(1 - \\sqrt{3})(1 + \\sqrt{3})} = \\dfrac{4 + 2\\sqrt{3}}{-2} = -2 - \\sqrt{3}$\n\n$u_3 = \\dfrac{(-2 - \\sqrt{3}) + \\sqrt{3}}{1 - \\sqrt{3}(-2 - \\sqrt{3})} = \\dfrac{-2}{1 + 2\\sqrt{3} + 3} = \\dfrac{-2}{4 + 2\\sqrt{3}} = \\dfrac{-1}{2 + \\sqrt{3}} = \\dfrac{-(2 - \\sqrt{3})}{4 - 3} = \\sqrt{3} - 2$\n\n(Check: $u_4 = \\dfrac{\\sqrt{3} - 2 + \\sqrt{3}}{1 - \\sqrt{3}(\\sqrt{3} - 2)} = \\dfrac{2\\sqrt{3} - 2}{2\\sqrt{3} - 2} = 1 = u_1$ ✓)\n\nOne cycle sums to $1 + (-2 - \\sqrt{3}) + (\\sqrt{3} - 2) = -3$.\n\n$100 = 33 \\times 3 + 1$, so\n$$\\sum_{r=1}^{100} u_r = 33 \\times (-3) + u_{100} = -99 + u_1 = -99 + 1 = -98$$",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]
