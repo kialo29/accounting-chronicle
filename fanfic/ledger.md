@@ -25,6 +25,7 @@
 - [Ch22] Ahsoka, Ventress, Fives left Florrum on Hondo's unregistered ore scow (one engine running hot, 'a loan'), jumping Core-ward toward the Corellian Run. Anakin was off his transponder 38 minutes. Ventress escaped Obi-Wan by dumping a crusher hopper of ore on him. Bunkhouse at Number Nine left stripped (burn mark, bacta smell).
 - [Ch23] Ahsoka's message: text on Barriss's old civilian comlink private channel (the one Ahsoka used during her flight); short-range, so Ahsoka is already on Coruscant; no time given. Barriss leaves the same night — the third night after the Resolute returned to Coruscant. C-31 panel left cut open.
 - [Ch24] Recorder = Fives's own helmet (dent over the brow), sealed timestamped tamper-evident recording; Rex had smuggled it in his kit bag to Berth Nine. Padmé has a bacta-patched burn on her right hand. Signals on old Naboo comlinks: two clicks = sent, three = in position. Threepio at the Naboo embassy; household staff on leave.
+- [Ch25] Barriss confessed (recorded on Fives's helmet): bought nano-droids from Pesk; was in the upper service passage when Letta died; fourth candle was for Jackar. Ahsoka: shallow saber burn on left forearm; Barriss: kick-bruised knee. One red hilt at the foot of the loading ramp, the other in water at the base of the fallen crane hook; bone-white mask face-up on a beam by the west door; Ahsoka holds Barriss's blue saber on her belt.
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -51,6 +52,7 @@
 - [Ch22] Anakin broke his promise to Palpatine to bring her in. Rusk reported the Core-ward jump to Tarkin and the Chancellor's office. Anakin suspects only that the culprit is someone Ahsoka loves.
 - [Ch23] Luminara knows Barriss lied ('I'll be in my quarters. If that changes.'). Palpatine's implied order: no second trial.
 - [Ch24] Anakin smelled bacta, linked it to the Florrum bunkhouse, knows Padmé lied, and is heading down to the lower levels.
+- [Ch25] Barriss let slip 'he' re: blackmailer (Chancellor not named). Ventress has stepped out of position but hasn't taken her sabers.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -75,4 +77,5 @@
 - [Ch22] Anakin and Obi-Wan share the lie ('she lost me in the vents'). Barriss and Luminara are aboard the Resolute at Florrum.
 - [Ch23] Barriss, hooded, wears her own blue saber; satchel holds the surgical drape around both red sabers with the bone-white mask on top; heading to the warehouse in the rain.
 - [Ch24] Warehouse plan: Ahsoka waits on the floor; Ventress guards the south loading doors; Fives in the north crane gantry recording; Padmé arrives alone after second hour (cloaked, small blaster, public lift/transit) and climbs the service stair to join Fives.
+- [Ch25] Barriss on her knees, disarmed. Anakin on the west stair.
 
