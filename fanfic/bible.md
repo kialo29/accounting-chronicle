@@ -103,3 +103,4 @@ Book One arc: Ahsoka goes from condemned prisoner to free woman who clears her o
 - Fox (CC-1010): Commander of the Coruscant Guard. Rex: Captain, 501st. Living 501st: Fives, Jesse, Kix, Tup (until Ch12–13). Hardcase died on Umbara; Echo presumed dead at the Citadel.
 - Force-dampening collars are NOT canon; in our AU they are a new Republic Judiciary device introduced for Force-sensitive prisoners (Ahsoka may be one of the first to wear one long-term).
 - Never write "Level 1313" as the warehouse location; say "the lower levels" / "the old munitions district".
+- Togruta Padawans wear a beaded chain hanging from the montral/headdress, NOT a braid. Never write 'braid' for Ahsoka.
