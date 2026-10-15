@@ -269,7 +269,7 @@
   "type": "problem-solving",
   "question": "The acceleration of a car is given by\n$$a = \\frac{v - u}{t}$$\nwhere $u$ m/s is the starting speed, $v$ m/s is the final speed and $t$ s is the time taken.\n\n$u = 12.6$ and $v = 31.4$, both correct to $1$ decimal place. $t = 4.5$, correct to the nearest $0.5$ seconds.\n\nWork out the value of $a$ to a suitable degree of accuracy. Give a reason for your answer.",
   "hint": "Be careful with $t$: if the unit is $0.5$ s, what is half a unit? Then think about which bounds make $v - u$ big and $t$ small.",
-  "answer": "$a = 4\\ \\text{m/s}^2$ (1 s.f.); the bounds $3.94\\ldots$ and $4.45\\ldots$ both round to $4$ to 1 s.f.",
+  "answer": "$a = 4\\ \\text{m/s}^2$ (1 s.f.); the bounds $3.936\\ldots$ and $4.447\\ldots$ both round to $4$ to 1 s.f.",
   "solution": "**Bounds:**\n* $u$: $12.55 \\le u < 12.65$\n* $v$: $31.35 \\le v < 31.45$\n* $t$ is to the nearest $0.5$ s, so half a unit is $0.25$ s: $4.25 \\le t < 4.75$\n\n**Upper bound of $a$:** make $v - u$ as big as possible (largest $v$, smallest $u$) and divide by the smallest $t$:\n$$a_{\\max} = \\frac{31.45 - 12.55}{4.25} = \\frac{18.9}{4.25} = 4.447\\ldots$$\n\n**Lower bound of $a$:** smallest $v$, largest $u$, largest $t$:\n$$a_{\\min} = \\frac{31.35 - 12.65}{4.75} = \\frac{18.7}{4.75} = 3.936\\ldots$$\n\n**Suitable accuracy:** to 2 s.f. the bounds are $4.4$ and $3.9$, which disagree; to 1 s.f. they are $4$ and $4$, which agree.\n\n$$a = 4\\ \\text{m/s}^2 \\text{ (1 s.f.)}$$",
   "linkedTopicIds": [
    "alg-substitution-formulae"
