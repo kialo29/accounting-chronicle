@@ -22,6 +22,7 @@ and US Grades 6–8 → AP Calculus/Statistics. Everything lives in `maths-bank/
 * Line breaks: `\n` (a real newline in the string). Use `\n\n` between solution steps. `**bold**` is allowed.
 * Tables: markdown pipe tables (header row, then `|---|---|`, then rows; same number of cells per row).
   Cells may contain `$...$`. Alternatively `$$\begin{array}{c|c} ... \end{array}$$`.
+* Quoted student working (spot-the-mistake): start each line with `> ` to show it as an indented block.
 * No raw HTML in text fields (it is escaped). Diagrams go in the `diagram` field.
 * KaTeX supports: `\frac \dfrac \sqrt \times \div \pm \le \ge \ne \approx \pi \theta \degree` (or `^\circ`),
   `\text{}`, `\mathrm{}`, `\overrightarrow{AB}`, `\vec{a}`, `\mathbf{a}`, `\binom{n}{r}`, `\sum \int \lim`,

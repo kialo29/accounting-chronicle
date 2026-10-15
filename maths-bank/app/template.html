@@ -163,6 +163,8 @@ label.check { display: flex; gap: 8px; align-items: center; cursor: pointer; fon
 .md th, .md td { border: 1px solid var(--rule); padding: 4px 10px; text-align: center; }
 .md th { background: var(--accent-soft); }
 .md .tablewrap { overflow-x: auto; max-width: 100%; }
+.md blockquote { margin: 6px 0 10px; padding: 8px 12px; border-left: 3px solid var(--rule); background: var(--paper); border-radius: 0 var(--radius) var(--radius) 0; overflow-x: auto; }
+.sheet .md blockquote { background: #f6f7f9; border-left-color: #ccc; }
 .katex-display { overflow-x: auto; overflow-y: hidden; padding: 2px 0; }
 .more { display: flex; justify-content: center; margin-top: 16px; }
 
@@ -480,7 +482,7 @@ function rich(s) {
     if (t.t === 'text') text += t.v;
     else { maths.push(t); text += '' + (maths.length - 1) + ''; }
   });
-  var lines = text.split('\n'), html = '', para = [], table = [];
+  var lines = text.split('\n'), html = '', para = [], table = [], quote = [];
   function inline(l) { return esc(l).replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>'); }
   function flushPara() { if (para.length) { html += '<p>' + para.map(inline).join('<br>') + '</p>'; para = []; } }
   function cells(l) { return l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|'); }
@@ -496,13 +498,16 @@ function rich(s) {
     html += h + '</table></div>';
     table = [];
   }
+  function flushQuote() { if (quote.length) { html += '<blockquote>' + quote.map(inline).join('<br>') + '</blockquote>'; quote = []; } }
   lines.forEach(function (l) {
+    if (/^>( |$)/.test(l)) { flushPara(); flushTable(); quote.push(l.replace(/^> ?/, '')); return; }
+    flushQuote();
     if (/^\s*\|.*\|\s*$/.test(l)) { flushPara(); table.push(l); return; }
     flushTable();
     if (!l.trim()) { flushPara(); return; }
     para.push(l);
   });
-  flushPara(); flushTable();
+  flushPara(); flushTable(); flushQuote();
   return html.replace(/(\d+)/g, function (_, n) { var m = maths[+n]; return tex(m.v, m.t === 'display'); });
 }
 function plain(s) { return String(s || '').replace(/\\[a-zA-Z]+/g, ' ').replace(/[${}^_\\]/g, ' ').toLowerCase(); }

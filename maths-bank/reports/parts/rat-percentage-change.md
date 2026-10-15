@@ -5,3 +5,6 @@ All answers independently re-derived and matched (e.g. q15 overall multiplier 1.
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

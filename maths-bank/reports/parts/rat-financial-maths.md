@@ -5,3 +5,6 @@ All answers independently re-derived and matched (e.g. q09 £257.01; q11 \$130.6
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 8 scope items covered.

@@ -9,3 +9,6 @@ q16 pie-chart sector angles checked from the SVG coordinates (126°, 90°, 54°,
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered.

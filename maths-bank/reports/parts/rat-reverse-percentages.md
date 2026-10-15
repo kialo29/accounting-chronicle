@@ -5,3 +5,6 @@ All answers independently re-derived and matched (e.g. q13 $330 \div 1.1 = 300$;
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 1 scope items covered.

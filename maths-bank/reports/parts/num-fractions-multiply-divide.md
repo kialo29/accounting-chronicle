@@ -5,3 +5,6 @@ All answers matched an independent blind solve (q16 max 10/3 and min 3/10 confir
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered. Key idea extended to mention one quantity as a fraction of another (including results greater than 1).
