@@ -1,0 +1,310 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim B(6, 0.2)$. Find $P(X = 2)$.",
+  "hint": "Use $P(X = r) = \\binom{n}{r} p^r (1-p)^{n-r}$ with $n = 6$, $p = 0.2$ and $r = 2$.",
+  "answer": "$P(X = 2) = 0.24576$",
+  "solution": "Here $n = 6$, $p = 0.2$, so $1 - p = 0.8$. Two successes means four failures.\n$$P(X = 2) = \\binom{6}{2}(0.2)^2(0.8)^4$$\n\n$$= 15 \\times 0.04 \\times 0.4096 = 0.24576$$\n\nThe $\\binom{6}{2} = 15$ counts the 15 different positions the two successes can take among the six trials.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-binomial-q01",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim B(6, 0.2)$. Find $P(X = 4)$.",
+  "hint": "Same distribution as before, but now four successes and two failures.",
+  "answer": "$P(X = 4) = 0.01536$",
+  "solution": "**What changed:** the number of successes $r$ went from 2 to 4.\n\n$$P(X = 4) = \\binom{6}{4}(0.2)^4(0.8)^2$$\n\n$$= 15 \\times 0.0016 \\times 0.64 = 0.01536$$\n\nNote $\\binom{6}{4} = \\binom{6}{2} = 15$, but the probability is much smaller: with $p = 0.2$, four successes out of six is unlikely.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-binomial-q02",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim B(6, 0.8)$. Find $P(X = 4)$.",
+  "hint": "Now $p = 0.8$, so the probability of failure is $0.2$.",
+  "answer": "$P(X = 4) = 0.24576$",
+  "solution": "**What changed:** $p$ went from $0.2$ to $0.8$ (so $1 - p$ is now $0.2$).\n\n$$P(X = 4) = \\binom{6}{4}(0.8)^4(0.2)^2 = 15 \\times 0.4096 \\times 0.04 = 0.24576$$\n\nThis is the same as $P(X = 2)$ for $B(6, 0.2)$. Four successes with $p = 0.8$ is the same event as two failures with failure probability $0.2$. Swapping $p$ and $1 - p$ reflects the distribution: $P(X = r)$ for $B(n, p)$ equals $P(X = n - r)$ for $B(n, 1 - p)$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-binomial-q03",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim B(6, 0.8)$. Find $P(X \\ge 4)$.",
+  "hint": "$X \\ge 4$ means $X = 4$, $5$ or $6$. Find each and add.",
+  "answer": "$P(X \\ge 4) = 0.90112$",
+  "solution": "**What changed:** \"$= 4$\" became \"$\\ge 4$\", so 4 itself and every value above it are included.\n\n$$P(X = 4) = 15(0.8)^4(0.2)^2 = 0.24576$$\n\n$$P(X = 5) = \\binom{6}{5}(0.8)^5(0.2) = 6 \\times 0.32768 \\times 0.2 = 0.393216$$\n\n$$P(X = 6) = (0.8)^6 = 0.262144$$\n\n$$P(X \\ge 4) = 0.24576 + 0.393216 + 0.262144 = 0.90112$$\n\n(Equivalently $1 - P(X \\le 3)$: the complement of \"4 or more\" is \"3 or fewer\", not \"4 or fewer\".)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-binomial-q04",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the mean, the variance and the standard deviation of each random variable. Give the standard deviations to 3 significant figures.\n\n(a) $X \\sim B(50, 0.3)$\n\n(b) $Y \\sim B(200, 0.05)$",
+  "hint": "Mean $= np$ and variance $= np(1-p)$. The standard deviation is not the same as the variance.",
+  "answer": "(a) mean $15$, variance $10.5$, SD $3.24$ (b) mean $10$, variance $9.5$, SD $3.08$",
+  "solution": "(a)\n$$\\mu = np = 50 \\times 0.3 = 15$$\n$$\\text{Var}(X) = np(1-p) = 50 \\times 0.3 \\times 0.7 = 10.5$$\n$$\\sigma = \\sqrt{10.5} = 3.24 \\text{ (3 s.f.)}$$\n\n(b)\n$$\\mu = 200 \\times 0.05 = 10$$\n$$\\text{Var}(Y) = 200 \\times 0.05 \\times 0.95 = 9.5$$\n$$\\sigma = \\sqrt{9.5} = 3.08 \\text{ (3 s.f.)}$$\n\nA common slip is to stop at $np(1-p)$ and call it the standard deviation. That is the variance; the standard deviation is its square root, measured in the same units as $X$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "prob-binomial-q05",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "For each situation, decide whether the random variable can be modelled by a binomial distribution. If it can, state the values of $n$ and $p$. If it cannot, explain which condition fails.\n\n(a) A fair six-sided dice is rolled 10 times. $A$ is the number of sixes.\n\n(b) A fair six-sided dice is rolled until a six appears. $B$ is the number of rolls needed.\n\n(c) A bag contains 10 counters, 4 of which are red. Three counters are taken out one at a time **without replacement**. $C$ is the number of red counters taken.\n\n(d) A school has 1200 students, of whom $40\\%$ walk to school. Five students are chosen at random. $D$ is the number of them who walk to school.",
+  "hint": "Check the four conditions each time: fixed number of trials, two outcomes, constant $p$, independent trials.",
+  "answer": "(a) Yes, $A \\sim B(10, \\tfrac{1}{6})$ (b) No: there is no fixed number of trials (c) No: without replacement from 10 counters, $p$ changes and trials are not independent (d) Yes (approximately), $D \\sim B(5, 0.4)$, since 5 is far less than $10\\%$ of 1200",
+  "solution": "(a) Fixed $n = 10$ rolls; each roll is \"six\" or \"not six\"; $p = \\frac{1}{6}$ every time; rolls are independent. **Binomial**: $A \\sim B(10, \\frac{1}{6})$.\n\n(b) **Not binomial.** The number of trials is not fixed: we keep rolling until the first six, and $B$ counts trials, not successes. (This is a geometric situation.)\n\n(c) **Not binomial.** The probability of red is $\\frac{4}{10}$ for the first counter, but for the second it is $\\frac{3}{9}$ or $\\frac{4}{9}$ depending on the first. So $p$ is not constant and the draws are not independent. Using $B(3, 0.4)$ here would be wrong.\n\n(d) Strictly the choices are without replacement too, but 5 students is a tiny fraction of 1200 (well under $10\\%$), so removing a few hardly changes $p$. The trials are approximately independent with $p = 0.4$: **approximately binomial**, $D \\sim B(5, 0.4)$.\n\nThe difference between (c) and (d) is the size of the population compared with the sample.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-binomial-q06",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$X \\sim B(25, 0.35)$. Use your calculator to find, to 4 decimal places,\n\n(a) $P(X \\le 6)$\n\n(b) $P(X < 6)$\n\n(c) $P(X \\ge 10)$\n\n(d) $P(5 \\le X < 12)$",
+  "hint": "A calculator's cumulative function gives $P(X \\le r)$. Rewrite each inequality in that form first, e.g. $X < 6$ is the same as $X \\le 5$ for whole numbers.",
+  "answer": "(a) $0.1734$ (b) $0.0826$ (c) $0.3697$ (d) $0.8425$",
+  "solution": "$X$ only takes whole-number values, so rewrite each event as a \"$\\le$\" statement.\n\n(a) $P(X \\le 6) = 0.1734$\n\n(b) $X < 6$ means $X \\le 5$:\n$$P(X < 6) = P(X \\le 5) = 0.0826$$\n\n(c) $X \\ge 10$ is the complement of $X \\le 9$ (the list splits as $0, 1, \\dots, 9 \\mid 10, 11, \\dots$):\n$$P(X \\ge 10) = 1 - P(X \\le 9) = 1 - 0.6303 = 0.3697$$\n\n(d) $5 \\le X < 12$ means $X = 5, 6, \\dots, 11$. Take everything up to 11 and remove everything up to 4:\n$$P(5 \\le X \\le 11) = P(X \\le 11) - P(X \\le 4) = 0.8746 - 0.0320 = 0.8425$$\n(using unrounded calculator values).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-binomial-q07",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The bar charts $P$, $Q$ and $R$ show the probability distributions of\n$$B(10, 0.2), \\qquad B(10, 0.5), \\qquad B(10, 0.8)$$\nin some order. The horizontal axis of each chart shows the number of successes, $0$ to $10$; all three charts use the same vertical scale.\n\n(a) Match each chart to its distribution, explaining your reasoning.\n\n(b) Which distribution has the largest standard deviation? Use the charts to explain why, then confirm by calculation.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><text x=\"14\" y=\"48\" font-size=\"14\" font-family=\"sans-serif\" font-weight=\"bold\" fill=\"currentColor\">P</text><line x1=\"44\" y1=\"80\" x2=\"346\" y2=\"80\" stroke=\"currentColor\"/><text x=\"59\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0</text><rect x=\"77\" y=\"77.9\" width=\"18\" height=\"2.1\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"86\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><rect x=\"104\" y=\"70.4\" width=\"18\" height=\"9.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"113\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><rect x=\"131\" y=\"54.4\" width=\"18\" height=\"25.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"140\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"158\" y=\"35.1\" width=\"18\" height=\"44.9\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"167\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"185\" y=\"26.2\" width=\"18\" height=\"53.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"194\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"212\" y=\"35.1\" width=\"18\" height=\"44.9\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"221\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"239\" y=\"54.4\" width=\"18\" height=\"25.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"248\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">7</text><rect x=\"266\" y=\"70.4\" width=\"18\" height=\"9.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"275\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"293\" y=\"77.9\" width=\"18\" height=\"2.1\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"302\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"329\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"14\" y=\"146\" font-size=\"14\" font-family=\"sans-serif\" font-weight=\"bold\" fill=\"currentColor\">Q</text><line x1=\"44\" y1=\"178\" x2=\"346\" y2=\"178\" stroke=\"currentColor\"/><text x=\"59\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0</text><text x=\"86\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"113\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"140\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"158\" y=\"176.8\" width=\"18\" height=\"1.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"167\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"185\" y=\"172.2\" width=\"18\" height=\"5.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"194\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"212\" y=\"158.7\" width=\"18\" height=\"19.3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"221\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6</text><rect x=\"239\" y=\"134.0\" width=\"18\" height=\"44.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"248\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">7</text><rect x=\"266\" y=\"111.9\" width=\"18\" height=\"66.1\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"275\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8</text><rect x=\"293\" y=\"119.3\" width=\"18\" height=\"58.7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"302\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">9</text><rect x=\"320\" y=\"154.5\" width=\"18\" height=\"23.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"329\" y=\"193\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10</text><text x=\"14\" y=\"244\" font-size=\"14\" font-family=\"sans-serif\" font-weight=\"bold\" fill=\"currentColor\">R</text><line x1=\"44\" y1=\"276\" x2=\"346\" y2=\"276\" stroke=\"currentColor\"/><rect x=\"50\" y=\"252.5\" width=\"18\" height=\"23.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"59\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0</text><rect x=\"77\" y=\"217.3\" width=\"18\" height=\"58.7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"86\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><rect x=\"104\" y=\"209.9\" width=\"18\" height=\"66.1\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"113\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><rect x=\"131\" y=\"232.0\" width=\"18\" height=\"44.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"140\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><rect x=\"158\" y=\"256.7\" width=\"18\" height=\"19.3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"167\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><rect x=\"185\" y=\"270.2\" width=\"18\" height=\"5.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"194\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><rect x=\"212\" y=\"274.8\" width=\"18\" height=\"1.2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"221\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6</text><text x=\"248\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">7</text><text x=\"275\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8</text><text x=\"302\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">9</text><text x=\"329\" y=\"291\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10</text></svg>",
+  "hint": "Where should the tallest bar be for each distribution? Use the mean $np$.",
+  "answer": "(a) $P$ is $B(10, 0.5)$, $Q$ is $B(10, 0.8)$, $R$ is $B(10, 0.2)$ (b) $B(10, 0.5)$, SD $= \\sqrt{2.5} \\approx 1.58$ (compared with $\\sqrt{1.6} \\approx 1.26$ for the others)",
+  "solution": "(a) The means are $10 \\times 0.2 = 2$, $10 \\times 0.5 = 5$ and $10 \\times 0.8 = 8$, and each distribution is centred near its mean.\n\n* $P$ is symmetric and peaks at 5: $B(10, 0.5)$.\n* $Q$ peaks at 8 and has its tail to the left: $B(10, 0.8)$.\n* $R$ peaks at 2 and has its tail to the right: $B(10, 0.2)$.\n\n$Q$ and $R$ are mirror images, because $B(10, 0.8)$ counting successes is $B(10, 0.2)$ counting failures.\n\n(b) Chart $P$ is the most spread out: its bars are shorter and cover more values. $Q$ and $R$ are bunched near one end.\n\n$$B(10, 0.5): \\; \\sigma = \\sqrt{10 \\times 0.5 \\times 0.5} = \\sqrt{2.5} \\approx 1.58$$\n$$B(10, 0.2) \\text{ and } B(10, 0.8): \\; \\sigma = \\sqrt{10 \\times 0.2 \\times 0.8} = \\sqrt{1.6} \\approx 1.26$$\n\nSo $B(10, 0.5)$ has the largest standard deviation. In general $p(1-p)$ is largest when $p = 0.5$.",
+  "misconceptionIds": [],
+  "id": "prob-binomial-q08",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A spinner lands on blue with probability $0.25$. It is spun 20 times. Priya is asked to find the probability that it lands on blue at least 5 times. Her working is shown below.\n\n> $X \\sim B(20, 0.25)$\n>\n> $P(X \\ge 5) = 1 - P(X \\le 5)$\n>\n> $= 1 - 0.6172$\n>\n> $= 0.3828$\n\nIdentify Priya's error, explain why it is wrong, and find the correct probability to 4 decimal places.",
+  "hint": "Write out the possible values $0, 1, 2, \\dots$ and draw a line between the values that are \"at least 5\" and the ones that are not.",
+  "answer": "Her complement is wrong: $P(X \\ge 5) = 1 - P(X \\le 4) = 0.5852$",
+  "solution": "Her first line is right; the error is in the second line, $P(X \\ge 5) = 1 - P(X \\le 5)$.\n\n\"At least 5\" **includes** 5. Split the values:\n$$0, 1, 2, 3, 4 \\;\\Big|\\; 5, 6, 7, \\dots, 20$$\nThe complement of $X \\ge 5$ is $X \\le 4$. By subtracting $P(X \\le 5)$, Priya has removed $X = 5$ as well, so she actually found $P(X \\ge 6)$.\n\nCorrect working:\n$$P(X \\ge 5) = 1 - P(X \\le 4) = 1 - 0.4148 = 0.5852 \\text{ (4 d.p.)}$$\n\nCheck: the mean is $20 \\times 0.25 = 5$, so getting 5 or more should be a little over one half, which $0.5852$ is.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-binomial-q09",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "At a café, $40\\%$ of customers order a hot drink, independently of each other. Tom wants the probability that exactly 3 of the next 8 customers order a hot drink. His working is shown below.\n\n> Let $X$ be the number who order a hot drink, $X \\sim B(8, 0.4)$.\n>\n> $P(X = 3) = (0.4)^3 (0.6)^5$\n>\n> $= 0.064 \\times 0.07776$\n>\n> $= 0.00498$ (3 s.f.)\n\n(a) Explain why Tom's answer should make him suspicious.\n\n(b) Identify his error and find the correct probability to 3 significant figures.",
+  "hint": "Tom's expression is the probability of one particular sequence, e.g. hot, hot, hot, not, not, not, not, not. How many such sequences are there?",
+  "answer": "(a) The mean is $3.2$, so 3 is close to the most likely value; a probability of about $0.005$ is far too small. (b) He left out $\\binom{8}{3} = 56$; $P(X = 3) = 0.279$",
+  "solution": "(a) The expected number of hot-drink orders is $8 \\times 0.4 = 3.2$, so exactly 3 should be one of the **most** likely outcomes. A probability of $0.005$ (about 1 in 200) cannot be right.\n\n(b) The error is on the second line: Tom has left out the coefficient $\\binom{8}{3}$.\n\n$(0.4)^3(0.6)^5$ is the probability of **one particular order**, such as HHHNNNNN. The 3 hot drinks could be any 3 of the 8 customers, and there are $\\binom{8}{3} = 56$ different orders, each with the same probability.\n\n$$P(X = 3) = \\binom{8}{3}(0.4)^3(0.6)^5 = 56 \\times 0.064 \\times 0.07776 = 0.27869\\ldots$$\n$$P(X = 3) = 0.279 \\text{ (3 s.f.)}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-binomial-q10",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A seed company states that $85\\%$ of its sunflower seeds germinate. Marcus plants a packet of 40 seeds. Let $X$ be the number of seeds that germinate.\n\n(a) State a suitable distribution for $X$, and give one assumption you need to make.\n\n(b) Find the probability that exactly 35 seeds germinate.\n\n(c) Find the probability that more than 35 seeds germinate.\n\n(d) Find the mean and standard deviation of $X$.\n\nGive probabilities to 4 decimal places and the standard deviation to 3 significant figures.",
+  "hint": "For (c), \"more than 35\" starts at 36. What is its complement in the form $X \\le r$?",
+  "answer": "(a) $X \\sim B(40, 0.85)$, assuming seeds germinate independently with the same probability (b) $0.1692$ (c) $0.2633$ (d) mean $34$ seeds, SD $2.26$ seeds",
+  "solution": "(a) $X \\sim B(40, 0.85)$. Assumptions: each seed germinates **independently** of the others, and every seed has the **same** probability $0.85$ of germinating. (In a real garden this may fail: seeds planted in the same tray share the same soil, water and temperature.)\n\n(b)\n$$P(X = 35) = \\binom{40}{35}(0.85)^{35}(0.15)^5 = 0.1692 \\text{ (4 d.p.)}$$\n\n(c) \"More than 35\" means $X \\ge 36$, whose complement is $X \\le 35$:\n$$P(X > 35) = 1 - P(X \\le 35) = 1 - 0.7367 = 0.2633 \\text{ (4 d.p.)}$$\n\n(d)\n$$\\mu = np = 40 \\times 0.85 = 34 \\text{ seeds}$$\n$$\\sigma = \\sqrt{np(1-p)} = \\sqrt{40 \\times 0.85 \\times 0.15} = \\sqrt{5.1} = 2.26 \\text{ seeds (3 s.f.)}$$\n(Note $5.1$ is the variance, not the standard deviation.)",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "id": "prob-binomial-q11",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "In a large city, $62\\%$ of adults say that they recycle all of their plastic waste. A random sample of 15 adults from the city is selected. Let $X$ be the number of adults in the sample who say they recycle all of their plastic waste.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why $X$ can be modelled by a binomial distribution. Address each of the conditions in context.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that at least 12 adults in the sample say they recycle all of their plastic waste. Show the work that leads to your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Calculate the mean and standard deviation of $X$, and interpret the mean in context.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "calculator": true,
+  "hint": "Remember the 10% condition when sampling without replacement. For (b), \"at least 12\" is $X \\ge 12$.",
+  "answer": "(a) Fixed $n = 15$; each adult does or does not recycle; constant $p = 0.62$; independence holds approximately since 15 is less than $10\\%$ of the city's adults (b) $0.1187$ (c) $\\mu = 9.3$, $\\sigma \\approx 1.88$; in many random samples of 15 adults, the average number who recycle all their plastic would be about $9.3$",
+  "solution": "(a) Binary: each adult either says they recycle all their plastic or does not. Independent: the sample is random and 15 is far less than $10\\%$ of the adults in a large city, so sampling without replacement hardly affects independence. Number: fixed $n = 15$. Same probability: $p = 0.62$ for each randomly chosen adult. **2 pts** for all four conditions with the $10\\%$ condition (1 pt if the $10\\%$ condition is missing).\n\n(b) $X \\sim B(15, 0.62)$.\n$$P(X \\ge 12) = 1 - P(X \\le 11) = 1 - 0.8813 = 0.1187$$\n**1 pt** for correct distribution and the complement $1 - P(X \\le 11)$ (or $\\sum_{k=12}^{15}$); **1 pt** for $0.1187$.\n\n(c)\n$$\\mu_X = np = 15 \\times 0.62 = 9.3, \\qquad \\sigma_X = \\sqrt{15 \\times 0.62 \\times 0.38} = \\sqrt{3.534} \\approx 1.88$$\n**1 pt** for both values (the variance $3.534$ given as $\\sigma$ earns no credit).\n\nInterpretation: if we took many random samples of 15 adults from this city, the number who say they recycle all their plastic would average about $9.3$ per sample. **1 pt**",
+  "misconceptionIds": [
+   "m1",
+   "m3",
+   "m4"
+  ],
+  "id": "prob-binomial-q12",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "A machine produces electronic components. Each component, independently, has a probability of $0.04$ of being faulty. The components are packed in boxes of 30.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Give a suitable model for the number of faulty components in a box, and state two assumptions needed for this model to be valid.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that a randomly chosen box contains exactly 2 faulty components.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the probability that a randomly chosen box contains more than 3 faulty components.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "The boxes are delivered in crates of 12. Find the probability that a crate contains at least one box with more than 3 faulty components.",
+    "marks": 3
+   }
+  ],
+  "marks": 9,
+  "calculator": true,
+  "hint": "For (d), a box is now a \"trial\", and a \"success\" is a box with more than 3 faulty components. Use your answer to (c) as the new $p$.",
+  "answer": "(a) $X \\sim B(30, 0.04)$; components are faulty independently, with constant probability $0.04$ (b) $0.2219$ (c) $0.0306$ (d) $0.311$",
+  "solution": "(a) $X \\sim B(30, 0.04)$ **B1**. Assumptions: whether one component is faulty is independent of any other; the probability of a fault is the same ($0.04$) for every component. **B1**\n\n(b)\n$$P(X = 2) = \\binom{30}{2}(0.04)^2(0.96)^{28}$$ **M1**\n$$= 435 \\times 0.0016 \\times 0.31886\\ldots = 0.2219 \\text{ (4 d.p.)}$$ **A1**\n\n(c)\n$$P(X > 3) = 1 - P(X \\le 3)$$ **M1**\n$$= 1 - 0.96941 = 0.0306 \\text{ (3 s.f.)}$$ **A1**\n\n(d) Let $Y$ be the number of boxes in a crate with more than 3 faulty components. Then $Y \\sim B(12, 0.030593\\ldots)$. **M1** (ft from (c))\n$$P(Y \\ge 1) = 1 - P(Y = 0) = 1 - (1 - 0.030593)^{12}$$ **M1**\n$$= 1 - 0.68877 = 0.311 \\text{ (3 s.f.)}$$ **A1**",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-binomial-q13",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A spinner lands on red with probability $p$, where $p < 0.5$. When the spinner is spun twice, the probability that it lands on red exactly once is $0.42$.\n\n(a) Show that $p^2 - p + 0.21 = 0$.\n\n(b) Hence find the value of $p$.\n\n(c) The spinner is spun 10 times. Find the probability that it lands on red at least 3 times, giving your answer to 4 decimal places.",
+  "hint": "The number of reds in two spins is $B(2, p)$. Exactly one red can happen in two orders.",
+  "answer": "(a) $2p(1-p) = 0.42$ rearranges to $p^2 - p + 0.21 = 0$ (b) $p = 0.3$ (c) $0.6172$",
+  "solution": "(a) Let $X \\sim B(2, p)$ be the number of reds in two spins.\n$$P(X = 1) = \\binom{2}{1}p(1-p) = 2p - 2p^2$$\nSo $2p - 2p^2 = 0.42$. Divide by $-2$ and rearrange:\n$$p^2 - p + 0.21 = 0$$\n\n(b) Factorise: we need two numbers with product $0.21$ and sum $-1$, namely $-0.3$ and $-0.7$.\n$$(p - 0.3)(p - 0.7) = 0 \\quad\\Rightarrow\\quad p = 0.3 \\text{ or } p = 0.7$$\nBoth satisfy the equation (by symmetry, swapping red and not-red gives the same probability of exactly one red), but $p < 0.5$, so $p = 0.3$.\n\n(c) $Y \\sim B(10, 0.3)$.\n$$P(Y \\ge 3) = 1 - P(Y \\le 2) = 1 - 0.3828 = 0.6172 \\text{ (4 d.p.)}$$",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "id": "prob-binomial-q14",
+  "topicId": "prob-binomial"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "On a production line, $8\\%$ of items are faulty, independently of each other. An inspector tests items chosen at random.\n\nFind the smallest number of items, $n$, that must be tested so that the probability of finding **at least one** faulty item is greater than $0.99$.",
+  "hint": "If $X \\sim B(n, 0.08)$, then $P(X \\ge 1) = 1 - P(X = 0)$. Write down $P(X = 0)$ in terms of $n$, then use logarithms.",
+  "answer": "$n = 56$",
+  "solution": "Let $X \\sim B(n, 0.08)$ be the number of faulty items found.\n\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - 0.92^n$$\n\nWe need\n$$1 - 0.92^n > 0.99 \\quad\\Longleftrightarrow\\quad 0.92^n < 0.01$$\n\nTake logarithms of both sides:\n$$n \\ln 0.92 < \\ln 0.01$$\nBecause $\\ln 0.92 < 0$, dividing by it **reverses** the inequality:\n$$n > \\frac{\\ln 0.01}{\\ln 0.92} = 55.23\\ldots$$\n\nSo the smallest whole number is $n = 56$.\n\nCheck: $0.92^{55} = 0.0102 > 0.01$ (not enough), $0.92^{56} = 0.0094 < 0.01$ (enough).",
+  "linkedTopicIds": [
+   "pure-exponentials-logs",
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [],
+  "id": "prob-binomial-q15",
+  "topicId": "prob-binomial"
+ },
+ {
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "An airline flies a plane with 180 seats. From past records, each passenger with a ticket fails to turn up with probability $0.05$, independently of other passengers. To avoid empty seats, the airline sells 186 tickets for a flight.\n\n(a) Suggest one reason why the independence assumption might not hold in reality.\n\n(b) Find the probability that more passengers turn up than there are seats.\n\n(c) The airline wants the probability that more passengers turn up than there are seats to be less than $5\\%$. Find the greatest number of tickets it can sell.\n\nGive probabilities to 4 decimal places.",
+  "hint": "Let $X$ be the number of passengers who **turn up**: each passenger turns up with probability $0.95$. The flight is overbooked if $X \\ge 181$.",
+  "answer": "(a) e.g. families or groups travel together, so they all turn up or all miss the flight (b) $0.0929$ (c) 185 tickets",
+  "solution": "(a) Passengers often travel in groups (families, business colleagues), so if one does not turn up the others probably will not either. A delayed train or bad weather can also stop many passengers at once. Either way, the passengers' outcomes are not independent.\n\n(b) Let $X$ be the number who turn up: $X \\sim B(186, 0.95)$. The plane is overbooked if $X \\ge 181$:\n$$P(X \\ge 181) = 1 - P(X \\le 180) = 1 - 0.9071 = 0.0929$$\n\n(c) This is above $5\\%$, so the airline must sell fewer tickets. With $t$ tickets, $X \\sim B(t, 0.95)$ and we need $P(X \\ge 181) < 0.05$.\n\n$t = 185$: $P(X \\ge 181) = 1 - P(X \\le 180) = 1 - 0.9567 = 0.0433 < 0.05$ ✓\n\n$t = 186$: $0.0929 > 0.05$ ✗\n\nAs $t$ increases the overbooking probability increases, so the greatest number of tickets is **185**.\n\n(Selling 185 instead of 186 roughly halves the risk of overbooking: the tail probability is very sensitive near the edge of the distribution, since the mean $0.95 \\times 185 = 175.75$ is close to 180.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-binomial-q16",
+  "topicId": "prob-binomial",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$X \\sim B(n, p)$ with $0 < p < 1$.\n\n(a) Prove that, for $r = 0, 1, \\dots, n - 1$,\n$$\\frac{P(X = r + 1)}{P(X = r)} = \\frac{(n - r)\\,p}{(r + 1)(1 - p)}$$\n\n(b) Hence show that $P(X = r + 1) > P(X = r)$ if and only if $r < np - (1 - p)$.\n\n(c) Hence find the most likely value (the mode) of $X \\sim B(20, 0.37)$.",
+  "hint": "Write both probabilities using factorials: $\\binom{n}{r} = \\dfrac{n!}{r!\\,(n-r)!}$. Most factors cancel.",
+  "answer": "(a) Proof (b) Proof (c) The mode is 7",
+  "solution": "(a)\n$$\\frac{P(X = r + 1)}{P(X = r)} = \\frac{\\dfrac{n!}{(r+1)!\\,(n-r-1)!}\\,p^{r+1}(1-p)^{n-r-1}}{\\dfrac{n!}{r!\\,(n-r)!}\\,p^{r}(1-p)^{n-r}}$$\n\nUsing $(r+1)! = (r+1)\\,r!$ and $(n-r)! = (n-r)\\,(n-r-1)!$:\n$$= \\frac{r!\\,(n-r)!}{(r+1)!\\,(n-r-1)!} \\times \\frac{p}{1-p} = \\frac{n - r}{r + 1} \\times \\frac{p}{1-p}$$\nas required.\n\n(b) All quantities are positive, so the ratio exceeds 1 exactly when\n$$(n - r)p > (r + 1)(1 - p)$$\n$$np - rp > r - rp + 1 - p$$\n$$np - (1 - p) > r$$\nSo $P(X = r + 1) > P(X = r)$ if and only if $r < np - (1 - p)$.\n\n(c) $np - (1 - p) = 20 \\times 0.37 - 0.63 = 6.77$.\n\nFor $r = 0, 1, \\dots, 6$ we have $r < 6.77$, so each probability is bigger than the one before: $P(X = 0) < P(X = 1) < \\dots < P(X = 7)$.\n\nFor $r \\ge 7$, $r > 6.77$, so $P(X = 8) < P(X = 7)$ and the probabilities keep decreasing.\n\nSo the mode is $X = 7$. (Check: $P(X = 6) = 0.1543$, $P(X = 7) = 0.1812$, $P(X = 8) = 0.1730$.)",
+  "linkedTopicIds": [
+   "prob-permutations-combinations",
+   "pure-proof"
+  ],
+  "misconceptionIds": [],
+  "id": "prob-binomial-q17",
+  "topicId": "prob-binomial"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Ayesha and Ben play a series of tennis matches. Ayesha wins each match with probability $0.6$, independently. The overall winner is the first to win a majority of the matches in the series.\n\n(a) Find the probability that Ayesha wins a \"best of 3\" series (first to win 2 matches).\n\n(b) Explain why the probability that Ayesha wins a \"best of 5\" series is equal to $P(X \\ge 3)$, where $X \\sim B(5, 0.6)$, even though the series stops as soon as someone has won 3 matches.\n\n(c) Find the probability that Ayesha wins a \"best of 5\" series, and a \"best of 7\" series.\n\n(d) Ben, the weaker player, may choose the length of the series. What should he choose, and why?",
+  "hint": "Imagine that all the matches are always played, even after the series has been decided. Does this change who wins the series?",
+  "answer": "(a) $0.648$ (b) If all 5 matches were played, Ayesha wins the series exactly when she wins at least 3 of them (c) $0.68256$; $0.710$ (3 s.f.) (d) Best of 3 (the shortest), because longer series favour the stronger player",
+  "solution": "(b) first, as it gives the method. Suppose the remaining matches were always played out, even after someone reached 3 wins. Playing extra matches cannot change who reached 3 wins first, and the player who reaches 3 wins first is exactly the player with at least 3 of the 5 wins (there are no draws, and both cannot have 3). So\n$$P(\\text{Ayesha wins best of 5}) = P(X \\ge 3), \\quad X \\sim B(5, 0.6)$$\n\n(a) By the same argument, with $Y \\sim B(3, 0.6)$:\n$$P(Y \\ge 2) = \\binom{3}{2}(0.6)^2(0.4) + (0.6)^3 = 0.432 + 0.216 = 0.648$$\n\n(c) Best of 5:\n$$P(X \\ge 3) = 10(0.6)^3(0.4)^2 + 5(0.6)^4(0.4) + (0.6)^5 = 0.3456 + 0.2592 + 0.07776 = 0.68256$$\nCheck directly: winning 3–0 $= 0.216$; 3–1 $= \\binom{3}{2}(0.6)^3(0.4) = 0.2592$; 3–2 $= \\binom{4}{2}(0.6)^3(0.4)^2 = 0.20736$; total $0.68256$ ✓.\n\nBest of 7, with $W \\sim B(7, 0.6)$:\n$$P(W \\ge 4) = 1 - P(W \\le 3) = 1 - 0.289792 = 0.710208 \\approx 0.710$$\n\n(d) Ayesha's chance rises from $0.648$ to $0.683$ to $0.710$ as the series gets longer. With more matches, the proportion of matches she wins is more likely to be close to $0.6$, which is above $\\frac{1}{2}$; luck has less influence. Ben should choose the **shortest** series, best of 3 (or a single match, where Ayesha's chance is only $0.6$, if that is allowed).",
+  "linkedTopicIds": [
+   "prob-tree-diagrams"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-binomial-q18",
+  "topicId": "prob-binomial"
+ }
+]
