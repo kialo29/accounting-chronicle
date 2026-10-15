@@ -1,0 +1,273 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $\\dfrac{3x + 7}{(x + 1)(x + 3)}$ in partial fractions.",
+  "hint": "Write it as $\\dfrac{A}{x + 1} + \\dfrac{B}{x + 3}$, multiply through by $(x + 1)(x + 3)$, then substitute $x = -1$ and $x = -3$.",
+  "answer": "$\\dfrac{2}{x + 1} + \\dfrac{1}{x + 3}$",
+  "solution": "Let\n$$\\frac{3x + 7}{(x + 1)(x + 3)} \\equiv \\frac{A}{x + 1} + \\frac{B}{x + 3}$$\n\nMultiply both sides by $(x + 1)(x + 3)$:\n$$3x + 7 \\equiv A(x + 3) + B(x + 1)$$\n\n$x = -1$ (makes $x + 1 = 0$, removing $B$): $4 = 2A \\Rightarrow A = 2$\n\n$x = -3$ (makes $x + 3 = 0$, removing $A$): $-2 = -2B \\Rightarrow B = 1$\n\n$$\\frac{3x + 7}{(x + 1)(x + 3)} \\equiv \\frac{2}{x + 1} + \\frac{1}{x + 3}$$\n\nCheck: $2(x + 3) + 1(x + 1) = 3x + 7$ ✓",
+  "id": "pure-partial-fractions-q01",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $\\dfrac{3x - 7}{(x + 1)(x + 3)}$ in partial fractions.",
+  "hint": "The denominator is the same as before, so use the same form and the same substitutions; only the left-hand side values change.",
+  "answer": "$-\\dfrac{5}{x + 1} + \\dfrac{8}{x + 3}$",
+  "solution": "**What changed:** only the sign of the constant in the numerator ($+7 \\to -7$). The method is identical, but the constants change – and one becomes negative.\n\n$$3x - 7 \\equiv A(x + 3) + B(x + 1)$$\n\n$x = -1$: $-10 = 2A \\Rightarrow A = -5$\n\n$x = -3$: $-16 = -2B \\Rightarrow B = 8$\n\n$$\\frac{3x - 7}{(x + 1)(x + 3)} \\equiv -\\frac{5}{x + 1} + \\frac{8}{x + 3}$$\n\nCheck: $-5(x + 3) + 8(x + 1) = 3x - 7$ ✓",
+  "id": "pure-partial-fractions-q02",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Express $\\dfrac{3x + 7}{(x + 1)(x - 3)}$ in partial fractions.",
+  "hint": "Which value of $x$ makes $x - 3$ equal to zero? Be careful with the sign.",
+  "answer": "$-\\dfrac{1}{x + 1} + \\dfrac{4}{x - 3}$",
+  "solution": "**What changed:** compared with the first question, the factor $(x + 3)$ has become $(x - 3)$. So the substitution that removes $A$ is now $x = 3$, not $x = -3$.\n\n$$3x + 7 \\equiv A(x - 3) + B(x + 1)$$\n\n$x = -1$: $4 = -4A \\Rightarrow A = -1$\n\n$x = 3$: $16 = 4B \\Rightarrow B = 4$\n\n$$\\frac{3x + 7}{(x + 1)(x - 3)} \\equiv -\\frac{1}{x + 1} + \\frac{4}{x - 3}$$\n\nCheck at $x = 0$: LHS $= \\frac{7}{-3}$; RHS $= -1 - \\frac{4}{3} = -\\frac{7}{3}$ ✓",
+  "id": "pure-partial-fractions-q03",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $\\dfrac{3x + 7}{x^2 - 2x - 3}$ in partial fractions.",
+  "hint": "Factorise the denominator first. Have you seen this denominator before?",
+  "answer": "$-\\dfrac{1}{x + 1} + \\dfrac{4}{x - 3}$",
+  "solution": "**What changed:** the denominator is given expanded. Factorising it is now the first step:\n$$x^2 - 2x - 3 = (x + 1)(x - 3)$$\n\nSo this is exactly the fraction from the previous question, and the answer is the same:\n$$3x + 7 \\equiv A(x - 3) + B(x + 1)$$\n\n$x = -1$: $4 = -4A \\Rightarrow A = -1$; $\\quad x = 3$: $16 = 4B \\Rightarrow B = 4$\n\n$$\\frac{3x + 7}{x^2 - 2x - 3} \\equiv -\\frac{1}{x + 1} + \\frac{4}{x - 3}$$",
+  "id": "pure-partial-fractions-q04",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Express $\\dfrac{x^2 - 3x + 14}{(x + 3)(x - 1)^2}$ in partial fractions.",
+  "hint": "The repeated factor $(x - 1)^2$ needs two terms: $\\dfrac{B}{x - 1}$ and $\\dfrac{C}{(x - 1)^2}$. After substituting $x = -3$ and $x = 1$, compare coefficients of $x^2$.",
+  "answer": "$\\dfrac{2}{x + 3} - \\dfrac{1}{x - 1} + \\dfrac{3}{(x - 1)^2}$",
+  "solution": "Three unknowns are needed for a cubic denominator:\n$$\\frac{x^2 - 3x + 14}{(x + 3)(x - 1)^2} \\equiv \\frac{A}{x + 3} + \\frac{B}{x - 1} + \\frac{C}{(x - 1)^2}$$\n\nMultiply by $(x + 3)(x - 1)^2$:\n$$x^2 - 3x + 14 \\equiv A(x - 1)^2 + B(x + 3)(x - 1) + C(x + 3)$$\n\n$x = -3$: $9 + 9 + 14 = 32 = 16A \\Rightarrow A = 2$\n\n$x = 1$: $1 - 3 + 14 = 12 = 4C \\Rightarrow C = 3$\n\nCompare coefficients of $x^2$: $1 = A + B \\Rightarrow B = -1$\n\n$$\\frac{x^2 - 3x + 14}{(x + 3)(x - 1)^2} \\equiv \\frac{2}{x + 3} - \\frac{1}{x - 1} + \\frac{3}{(x - 1)^2}$$\n\nCheck at $x = 0$: LHS $= \\frac{14}{3}$; RHS $= \\frac{2}{3} + 1 + 3 = \\frac{14}{3}$ ✓",
+  "id": "pure-partial-fractions-q05",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 152\" width=\"300\" height=\"152\"><line x1=\"34\" y1=\"75\" x2=\"80\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"220\" y1=\"75\" x2=\"266\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"35\" x2=\"80\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"220\" y1=\"35\" x2=\"220\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"35\" x2=\"120\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"35\" x2=\"220\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.6\"/><rect x=\"120\" y=\"26\" width=\"60\" height=\"18\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"80\" y1=\"115\" x2=\"120\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"180\" y1=\"115\" x2=\"220\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.6\"/><rect x=\"120\" y=\"106\" width=\"60\" height=\"18\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"80\" cy=\"75\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"220\" cy=\"75\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"30\" cy=\"75\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><text x=\"22\" y=\"80\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">A</text><circle cx=\"270\" cy=\"75\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><text x=\"278\" y=\"80\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">B</text><text x=\"150\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">R₁</text><text x=\"150\" y=\"144\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">R₂</text></svg>",
+  "question": "Two wire-wound resistors are connected in parallel between $A$ and $B$, as shown. At temperature $T$ °C the total conductance (the reciprocal of the total resistance) of the pair is\n$$G = \\frac{20T + 5000}{(T + 200)(T + 300)} \\text{ siemens}$$\n\nFor resistors in parallel, $G = \\dfrac{1}{R_1} + \\dfrac{1}{R_2}$.\n\n(a) Express $G$ in partial fractions.\n\n(b) Hence find expressions for $R_1$ and $R_2$ in terms of $T$, given that $R_1 < R_2$.\n\n(c) Find the resistance of each resistor at 25 °C.",
+  "hint": "Write $G \\equiv \\dfrac{A}{T + 200} + \\dfrac{B}{T + 300}$. Each partial fraction is the conductance $\\dfrac{1}{R}$ of one resistor.",
+  "answer": "(a) $G = \\dfrac{10}{T + 200} + \\dfrac{10}{T + 300}$\n(b) $R_1 = \\dfrac{T + 200}{10} = 20 + 0.1T$ ohms, $R_2 = \\dfrac{T + 300}{10} = 30 + 0.1T$ ohms\n(c) $R_1 = 22.5\\ \\Omega$, $R_2 = 32.5\\ \\Omega$",
+  "solution": "**(a)**\n$$20T + 5000 \\equiv A(T + 300) + B(T + 200)$$\n\n$T = -200$: $1000 = 100A \\Rightarrow A = 10$\n\n$T = -300$: $-1000 = -100B \\Rightarrow B = 10$\n\n$$G = \\frac{10}{T + 200} + \\frac{10}{T + 300}$$\n\n**(b)** Matching with $G = \\frac{1}{R_1} + \\frac{1}{R_2}$, each partial fraction is the conductance of one resistor:\n$$R_1 = \\frac{T + 200}{10} = 20 + 0.1T, \\qquad R_2 = \\frac{T + 300}{10} = 30 + 0.1T \\text{ ohms}$$\n($R_1 < R_2$ for every $T$, as required.) Each resistance increases by $0.1\\ \\Omega$ per °C, which is typical behaviour for a metal wire.\n\n**(c)** At $T = 25$: $R_1 = 20 + 2.5 = 22.5\\ \\Omega$ and $R_2 = 30 + 2.5 = 32.5\\ \\Omega$.\n\nCheck: $G = \\frac{1}{22.5} + \\frac{1}{32.5} = 0.07521\\ldots$ and $\\frac{20(25) + 5000}{225 \\times 325} = \\frac{5500}{73125} = 0.07521\\ldots$ ✓",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ],
+  "id": "pure-partial-fractions-q06",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Kai is asked to express $\\dfrac{7x - 4}{(x - 2)(2x + 1)}$ in partial fractions. His working is shown below.\n\n$7x - 4 \\equiv A(2x + 1) + B(x - 2)$\n\n$x = 2$: $\\ 10 = 5A$, so $A = 2$\n\n$x = -1$: $\\ -11 = -3B$, so $B = \\frac{11}{3}$\n\nAnswer: $\\dfrac{2}{x - 2} + \\dfrac{11}{3(2x + 1)}$\n\nIdentify Kai's error, explain why it is wrong, and find the correct answer.",
+  "hint": "When Kai substitutes $x = -1$, is the $A(2x + 1)$ term really zero?",
+  "answer": "Kai used $x = -1$ to remove the $A$ term, but $2x + 1 = 0$ when $x = -\\frac{1}{2}$. Correct answer: $\\dfrac{2}{x - 2} + \\dfrac{3}{2x + 1}$",
+  "solution": "**Error:** the line \"$x = -1$\". Kai wanted to make the $A$ term vanish, but at $x = -1$, $2x + 1 = -1 \\ne 0$, so the term $A(2x + 1) = -A$ is still there. He has wrongly dropped it. The value that makes $2x + 1 = 0$ is $x = -\\frac{1}{2}$.\n\n**Correct working:**\n\n$x = 2$: $10 = 5A \\Rightarrow A = 2$ (this part was right)\n\n$x = -\\frac{1}{2}$: $-\\frac{7}{2} - 4 = B\\left(-\\frac{1}{2} - 2\\right) \\Rightarrow -\\frac{15}{2} = -\\frac{5}{2}B \\Rightarrow B = 3$\n\n$$\\frac{7x - 4}{(x - 2)(2x + 1)} \\equiv \\frac{2}{x - 2} + \\frac{3}{2x + 1}$$\n\nCheck: $2(2x + 1) + 3(x - 2) = 7x - 4$ ✓\n\n(Kai's $x = -1$ line could be rescued by keeping the $A$ term: $-11 = -A - 3B = -2 - 3B$, which also gives $B = 3$. Any value of $x$ works in an identity, as long as every term is kept.)",
+  "id": "pure-partial-fractions-q07",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Mia is asked to express $\\dfrac{x^2 - 6x + 34}{(x + 2)(x - 3)^2}$ in partial fractions. Her working is shown below.\n\n$\\dfrac{x^2 - 6x + 34}{(x + 2)(x - 3)^2} \\equiv \\dfrac{A}{x + 2} + \\dfrac{B}{(x - 3)^2}$\n\n$x^2 - 6x + 34 \\equiv A(x - 3)^2 + B(x + 2)$\n\n$x = -2$: $\\ 50 = 25A$, so $A = 2$\n\n$x = 3$: $\\ 25 = 5B$, so $B = 5$\n\nAnswer: $\\dfrac{2}{x + 2} + \\dfrac{5}{(x - 3)^2}$\n\n(a) Show that Mia's answer is wrong by substituting $x = 0$.\n\n(b) Explain her mistake and find the correct partial fractions.",
+  "hint": "Compare the coefficients of $x^2$ on each side of Mia's identity. How many terms does a repeated factor need?",
+  "answer": "(a) At $x = 0$ the fraction is $\\frac{17}{9}$ but Mia's answer gives $\\frac{14}{9}$.\n(b) The repeated factor needs a $\\dfrac{B}{x - 3}$ term as well as $\\dfrac{C}{(x - 3)^2}$. Correct: $\\dfrac{2}{x + 2} - \\dfrac{1}{x - 3} + \\dfrac{5}{(x - 3)^2}$",
+  "solution": "**(a)** At $x = 0$: the fraction is $\\frac{34}{2 \\times 9} = \\frac{17}{9}$, but Mia's answer is $\\frac{2}{2} + \\frac{5}{9} = \\frac{14}{9}$. Not equal, so her answer is wrong.\n\n**(b)** **Error: the first line.** The repeated factor $(x - 3)^2$ needs **two** partial fractions, $\\frac{B}{x - 3}$ and $\\frac{C}{(x - 3)^2}$. With only two unknowns for a cubic denominator, her identity cannot hold: comparing $x^2$ coefficients in her identity gives $1 = A$, but she found $A = 2$. The contradiction shows the form is wrong.\n\n**Correct working:**\n$$\\frac{x^2 - 6x + 34}{(x + 2)(x - 3)^2} \\equiv \\frac{A}{x + 2} + \\frac{B}{x - 3} + \\frac{C}{(x - 3)^2}$$\n$$x^2 - 6x + 34 \\equiv A(x - 3)^2 + B(x + 2)(x - 3) + C(x + 2)$$\n\n$x = -2$: $50 = 25A \\Rightarrow A = 2$\n\n$x = 3$: $25 = 5C \\Rightarrow C = 5$\n\n$x^2$ coefficients: $1 = A + B \\Rightarrow B = -1$\n\n$$\\frac{x^2 - 6x + 34}{(x + 2)(x - 3)^2} \\equiv \\frac{2}{x + 2} - \\frac{1}{x - 3} + \\frac{5}{(x - 3)^2}$$\n\nCheck at $x = 0$: $1 + \\frac{1}{3} + \\frac{5}{9} = \\frac{17}{9}$ ✓",
+  "id": "pure-partial-fractions-q08",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Noah is asked to express $\\dfrac{x^2 + 3}{(x + 1)(x - 3)}$ in partial fractions. His working is shown below.\n\n$\\dfrac{x^2 + 3}{(x + 1)(x - 3)} \\equiv \\dfrac{A}{x + 1} + \\dfrac{B}{x - 3}$\n\n$x^2 + 3 \\equiv A(x - 3) + B(x + 1)$\n\n$x = -1$: $\\ 4 = -4A$, so $A = -1$\n\n$x = 3$: $\\ 12 = 4B$, so $B = 3$\n\nAnswer: $-\\dfrac{1}{x + 1} + \\dfrac{3}{x - 3}$\n\nExplain what is wrong with Noah's method and give the correct answer.",
+  "hint": "Compare the degrees of the numerator and the denominator. Could $A(x - 3) + B(x + 1)$ ever produce an $x^2$ term?",
+  "answer": "The fraction is improper (numerator and denominator both have degree 2), so Noah should divide first. Correct: $1 - \\dfrac{1}{x + 1} + \\dfrac{3}{x - 3}$",
+  "solution": "**Error: the first line.** The numerator $x^2 + 3$ and denominator $(x + 1)(x - 3) = x^2 - 2x - 3$ both have degree 2, so the fraction is **improper**. Partial fractions with constant numerators only work for a proper fraction. In Noah's identity, the right-hand side $A(x - 3) + B(x + 1)$ is linear and can never equal $x^2 + 3$.\n\n**Divide first:**\n$$x^2 + 3 = 1 \\times (x^2 - 2x - 3) + (2x + 6)$$\nso\n$$\\frac{x^2 + 3}{(x + 1)(x - 3)} \\equiv 1 + \\frac{2x + 6}{(x + 1)(x - 3)}$$\n\nNow split the proper part: $2x + 6 \\equiv A(x - 3) + B(x + 1)$.\n\n$x = -1$: $4 = -4A \\Rightarrow A = -1$; $\\quad x = 3$: $12 = 4B \\Rightarrow B = 3$\n\n$$\\frac{x^2 + 3}{(x + 1)(x - 3)} \\equiv 1 - \\frac{1}{x + 1} + \\frac{3}{x - 3}$$\n\n(Noah's constants happen to be right, but he has lost the whole-number part 1. Check at $x = 0$: LHS $= \\frac{3}{-3} = -1$; correct answer $1 - 1 - 1 = -1$ ✓; Noah's answer $-1 - 1 = -2$ ✗.)",
+  "id": "pure-partial-fractions-q09",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Ben is finding $A$ and $B$ such that\n$$\\frac{4x + 5}{(x + 1)(x + 2)} \\equiv \\frac{A}{x + 1} + \\frac{B}{x + 2}$$\n\nHe says: \"After multiplying out I get $4x + 5 \\equiv A(x + 2) + B(x + 1)$. I'm not allowed to substitute $x = -1$ or $x = -2$, because the original fraction is undefined there. So I must compare coefficients instead.\"\n\n(a) Find $A$ and $B$ by comparing coefficients.\n\n(b) Explain why substituting $x = -1$ and $x = -2$ into $4x + 5 \\equiv A(x + 2) + B(x + 1)$ is valid, and confirm that it gives the same values.",
+  "hint": "The line $4x + 5 \\equiv A(x + 2) + B(x + 1)$ is an identity between two polynomials. On how many values of $x$ are you sure they agree, and what does that tell you about the polynomials?",
+  "answer": "(a) $A = 1$, $B = 3$\n(b) Both sides are linear polynomials that agree for every $x$ except possibly $-1$ and $-2$ (infinitely many values), so they are the same polynomial and agree at $x = -1$ and $x = -2$ too. Substituting gives $A = 1$, $B = 3$ again.",
+  "solution": "**(a)** $A(x + 2) + B(x + 1) = (A + B)x + (2A + B)$. Comparing with $4x + 5$:\n$$A + B = 4, \\qquad 2A + B = 5$$\nSubtracting: $A = 1$, so $B = 3$.\n\n**(b)** Ben is right that the **original** fraction is undefined at $x = -1$ and $x = -2$. But after multiplying by $(x + 1)(x + 2)$, both sides of\n$$4x + 5 \\equiv A(x + 2) + B(x + 1)$$\nare polynomials, which are defined for every $x$. The equation certainly holds for every $x$ other than $-1$ and $-2$ – infinitely many values.\n\nTheir difference, $4x + 5 - A(x + 2) - B(x + 1)$, is a polynomial of degree at most 1 with infinitely many roots. A non-zero polynomial of degree at most 1 has at most one root, so the difference is the zero polynomial: the two sides are **identical**, and so they are also equal at $x = -1$ and $x = -2$.\n\nSubstituting:\n\n$x = -1$: $1 = A(1) \\Rightarrow A = 1$\n\n$x = -2$: $-3 = B(-1) \\Rightarrow B = 3$\n\nThe same values as in (a), so\n$$\\frac{4x + 5}{(x + 1)(x + 2)} \\equiv \\frac{1}{x + 1} + \\frac{3}{x + 2}$$",
+  "linkedTopicIds": [
+   "alg-identities-equations"
+  ],
+  "id": "pure-partial-fractions-q10",
+  "topicId": "pure-partial-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "(**Further Mathematics**) Express $\\dfrac{3x^2 + 2x + 5}{(x - 1)(x^2 + 4)}$ in partial fractions.",
+  "hint": "$x^2 + 4$ does not factorise over the real numbers, so its partial fraction has a **linear** numerator: $\\dfrac{A}{x - 1} + \\dfrac{Bx + C}{x^2 + 4}$.",
+  "answer": "$\\dfrac{2}{x - 1} + \\dfrac{x + 3}{x^2 + 4}$",
+  "solution": "$x^2 + 4$ is an irreducible quadratic (its discriminant $-16 < 0$), so it takes a numerator of the form $Bx + C$:\n$$\\frac{3x^2 + 2x + 5}{(x - 1)(x^2 + 4)} \\equiv \\frac{A}{x - 1} + \\frac{Bx + C}{x^2 + 4}$$\n\nMultiply by $(x - 1)(x^2 + 4)$:\n$$3x^2 + 2x + 5 \\equiv A(x^2 + 4) + (Bx + C)(x - 1)$$\n\n$x = 1$: $10 = 5A \\Rightarrow A = 2$\n\n$x^2$ coefficients: $3 = A + B \\Rightarrow B = 1$\n\nConstant terms ($x = 0$): $5 = 4A - C \\Rightarrow C = 8 - 5 = 3$\n\n$$\\frac{3x^2 + 2x + 5}{(x - 1)(x^2 + 4)} \\equiv \\frac{2}{x - 1} + \\frac{x + 3}{x^2 + 4}$$\n\nCheck the $x$ coefficient: $-B + C = -1 + 3 = 2$ ✓",
+  "id": "pure-partial-fractions-q11",
+  "topicId": "pure-partial-fractions",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "$$f(x) = \\frac{x^3 + 2x^2 - 2x + 5}{(x - 1)(x + 2)}, \\qquad x > 1$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Given that\n$$f(x) \\equiv Ax + B + \\frac{C}{x - 1} + \\frac{D}{x + 2}$$\nfind the values of the constants $A$, $B$, $C$ and $D$.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that\n$$\\int_2^5 f(x)\\,dx = p + \\ln q$$\nwhere $p$ and $q$ are rational numbers to be found.",
+    "marks": 5
+   }
+  ],
+  "hint": "The fraction is improper, so start by dividing $x^3 + 2x^2 - 2x + 5$ by $x^2 + x - 2$. In (b), combine the logarithms using the laws of logs.",
+  "answer": "(a) $A = 1$, $B = 1$, $C = 2$, $D = -3$\n(b) $p = \\dfrac{27}{2}$, $q = \\dfrac{1024}{343}$",
+  "solution": "**(a)** $(x - 1)(x + 2) = x^2 + x - 2$. Divide:\n$$x^3 + 2x^2 - 2x + 5 = (x + 1)(x^2 + x - 2) + (-x + 7)$$\nso $A = 1$, $B = 1$. **M1 A1**\n\n(Check: $(x + 1)(x^2 + x - 2) = x^3 + 2x^2 - x - 2$, and the remainder is $-x + 7$.)\n\nThen $-x + 7 \\equiv C(x + 2) + D(x - 1)$:\n\n$x = 1$: $6 = 3C \\Rightarrow C = 2$ **M1**\n\n$x = -2$: $9 = -3D \\Rightarrow D = -3$ **A1**\n\n$$f(x) \\equiv x + 1 + \\frac{2}{x - 1} - \\frac{3}{x + 2}$$\n\n**(b)**\n$$\\int_2^5 f(x)\\,dx = \\left[\\frac{x^2}{2} + x + 2\\ln(x - 1) - 3\\ln(x + 2)\\right]_2^5 \\quad \\textbf{M1 A1ft}$$\n\n$$= \\left(\\frac{25}{2} + 5 + 2\\ln 4 - 3\\ln 7\\right) - \\left(2 + 2 + 2\\ln 1 - 3\\ln 4\\right) \\quad \\textbf{M1}$$\n\n$$= \\frac{27}{2} + 5\\ln 4 - 3\\ln 7 = \\frac{27}{2} + \\ln\\frac{4^5}{7^3} \\quad \\textbf{M1}$$\n\n$$= \\frac{27}{2} + \\ln\\frac{1024}{343} \\quad \\textbf{A1}$$\n\nSo $p = \\frac{27}{2}$ and $q = \\frac{1024}{343}$. (Numerically $\\approx 14.594$.)",
+  "linkedTopicIds": [
+   "calc-integration-partial-fractions",
+   "pure-exponentials-logs"
+  ],
+  "id": "pure-partial-fractions-q12",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(**Further Mathematics**)\n\n(a) Express $\\dfrac{x^2 + 4x + 12}{(x + 2)(x^2 + 4)}$ in partial fractions.\n\n(b) Hence find the exact value of\n$$\\int_0^2 \\frac{x^2 + 4x + 12}{(x + 2)(x^2 + 4)}\\,dx$$",
+  "hint": "Use $\\dfrac{A}{x + 2} + \\dfrac{Bx + C}{x^2 + 4}$. For the integral, recall $\\displaystyle\\int \\frac{1}{x^2 + a^2}\\,dx = \\frac{1}{a}\\arctan\\frac{x}{a} + c$.",
+  "answer": "(a) $\\dfrac{1}{x + 2} + \\dfrac{4}{x^2 + 4}$\n(b) $\\ln 2 + \\dfrac{\\pi}{2}$",
+  "solution": "**(a)**\n$$x^2 + 4x + 12 \\equiv A(x^2 + 4) + (Bx + C)(x + 2)$$\n\n$x = -2$: $4 - 8 + 12 = 8 = 8A \\Rightarrow A = 1$\n\n$x^2$ coefficients: $1 = A + B \\Rightarrow B = 0$\n\nConstant terms: $12 = 4A + 2C \\Rightarrow C = 4$\n\n$$\\frac{x^2 + 4x + 12}{(x + 2)(x^2 + 4)} \\equiv \\frac{1}{x + 2} + \\frac{4}{x^2 + 4}$$\n\n(Check the $x$ coefficient: $2B + C = 4$ ✓)\n\n**(b)** Using $\\int \\frac{1}{x^2 + 2^2}\\,dx = \\frac{1}{2}\\arctan\\frac{x}{2}$:\n$$\\int_0^2 \\left(\\frac{1}{x + 2} + \\frac{4}{x^2 + 4}\\right)dx = \\Big[\\ln(x + 2) + 2\\arctan\\frac{x}{2}\\Big]_0^2$$\n$$= (\\ln 4 + 2\\arctan 1) - (\\ln 2 + 2\\arctan 0) = \\ln 2 + 2 \\times \\frac{\\pi}{4} = \\ln 2 + \\frac{\\pi}{2}$$\n\n($\\approx 2.264$.)",
+  "linkedTopicIds": [
+   "calc-integration-partial-fractions",
+   "pure-trig-reciprocal-inverse"
+  ],
+  "id": "pure-partial-fractions-q13",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A lake is stocked with fish. The number of fish, $P$ thousand, $t$ years after stocking is modelled by\n$$\\frac{dP}{dt} = \\frac{P(5 - P)}{10}$$\nInitially there are 1000 fish.\n\n(a) Express $\\dfrac{10}{P(5 - P)}$ in partial fractions.\n\n(b) Hence show that $t = 2\\ln\\left(\\dfrac{4P}{5 - P}\\right)$.\n\n(c) Find the time it takes for the number of fish to reach 4000, giving your answer to 3 significant figures.\n\n(d) What does the model predict for the number of fish in the long term?",
+  "hint": "Separate the variables: $\\displaystyle\\int \\frac{10}{P(5 - P)}\\,dP = \\int 1\\,dt$. When $t = 0$, $P = 1$ (thousand).",
+  "answer": "(a) $\\dfrac{2}{P} + \\dfrac{2}{5 - P}$\n(b) Shown.\n(c) $8\\ln 2 \\approx 5.55$ years\n(d) The number of fish approaches 5000.",
+  "solution": "**(a)** $10 \\equiv A(5 - P) + BP$.\n\n$P = 0$: $10 = 5A \\Rightarrow A = 2$; $\\quad P = 5$: $10 = 5B \\Rightarrow B = 2$\n$$\\frac{10}{P(5 - P)} \\equiv \\frac{2}{P} + \\frac{2}{5 - P}$$\n\n**(b)** Separate the variables:\n$$\\int \\left(\\frac{2}{P} + \\frac{2}{5 - P}\\right)dP = \\int 1\\,dt$$\n$$2\\ln P - 2\\ln(5 - P) = t + c$$\n(Note the minus sign: $\\int \\frac{1}{5 - P}\\,dP = -\\ln(5 - P)$. Here $0 < P < 5$, so no modulus signs are needed.)\n\nAt $t = 0$, $P = 1$: $2\\ln 1 - 2\\ln 4 = c \\Rightarrow c = -2\\ln 4$.\n$$t = 2\\ln P - 2\\ln(5 - P) + 2\\ln 4 = 2\\ln\\left(\\frac{4P}{5 - P}\\right)$$\n\n**(c)** 4000 fish means $P = 4$:\n$$t = 2\\ln\\left(\\frac{16}{1}\\right) = 2\\ln 16 = 8\\ln 2 = 5.545\\ldots \\approx 5.55 \\text{ years}$$\n\n**(d)** Rearranging, $\\frac{4P}{5 - P} = e^{t/2}$, so $P = \\frac{5e^{t/2}}{4 + e^{t/2}} = \\frac{5}{4e^{-t/2} + 1}$. As $t \\to \\infty$, $e^{-t/2} \\to 0$ and $P \\to 5$: the population levels off at about 5000 fish (the carrying capacity of the lake).",
+  "linkedTopicIds": [
+   "calc-differential-equations"
+  ],
+  "id": "pure-partial-fractions-q14",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Express $\\dfrac{2}{r(r + 2)}$ in partial fractions.\n\n(b) Hence show that\n$$\\sum_{r=1}^{n} \\frac{2}{r(r + 2)} = \\frac{3}{2} - \\frac{2n + 3}{(n + 1)(n + 2)}$$\n\n(c) Find the smallest value of $n$ for which the sum exceeds 1.49.",
+  "hint": "Write out the first few and last few terms of $\\sum \\left(\\frac{1}{r} - \\frac{1}{r + 2}\\right)$ in a column. Which terms cancel, and which survive at each end?",
+  "answer": "(a) $\\dfrac{1}{r} - \\dfrac{1}{r + 2}$\n(b) Shown.\n(c) $n = 199$",
+  "solution": "**(a)** $2 \\equiv A(r + 2) + Br$. $r = 0$: $A = 1$; $r = -2$: $B = -1$.\n$$\\frac{2}{r(r + 2)} \\equiv \\frac{1}{r} - \\frac{1}{r + 2}$$\n\n**(b)** Write the terms out:\n$$\\begin{aligned} r = 1: &\\quad \\tfrac{1}{1} - \\tfrac{1}{3} \\\\ r = 2: &\\quad \\tfrac{1}{2} - \\tfrac{1}{4} \\\\ r = 3: &\\quad \\tfrac{1}{3} - \\tfrac{1}{5} \\\\ &\\quad \\vdots \\\\ r = n - 1: &\\quad \\tfrac{1}{n - 1} - \\tfrac{1}{n + 1} \\\\ r = n: &\\quad \\tfrac{1}{n} - \\tfrac{1}{n + 2} \\end{aligned}$$\n\nEach negative term $-\\frac{1}{k}$ cancels with the positive term two rows below it. What survives is the first two positive terms and the last two negative terms:\n$$\\sum_{r=1}^{n} \\frac{2}{r(r + 2)} = 1 + \\frac{1}{2} - \\frac{1}{n + 1} - \\frac{1}{n + 2}$$\n$$= \\frac{3}{2} - \\frac{(n + 2) + (n + 1)}{(n + 1)(n + 2)} = \\frac{3}{2} - \\frac{2n + 3}{(n + 1)(n + 2)}$$\n\n**(c)** We need $\\frac{2n + 3}{(n + 1)(n + 2)} < 0.01$, i.e. $100(2n + 3) < (n + 1)(n + 2)$:\n$$n^2 + 3n + 2 > 200n + 300 \\Rightarrow n^2 - 197n - 298 > 0$$\nThe positive root is $n = \\frac{197 + \\sqrt{197^2 + 4 \\times 298}}{2} = \\frac{197 + \\sqrt{40001}}{2} \\approx 198.5$, so the smallest integer is $n = 199$.\n\nCheck: $n = 198$: $\\frac{399}{199 \\times 200} = 0.010025\\ldots > 0.01$; $n = 199$: $\\frac{401}{200 \\times 201} = 0.009975\\ldots < 0.01$ ✓\n\n(As $n \\to \\infty$, the sum tends to $\\frac{3}{2}$.)",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence",
+   "fur-series-summation"
+  ],
+  "id": "pure-partial-fractions-q15",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$$f(x) = \\frac{4 - 5x}{(1 + x)(1 - 2x)}$$\n\n(a) Express $f(x)$ in partial fractions.\n\n(b) Hence find the series expansion of $f(x)$ in ascending powers of $x$, up to and including the term in $x^3$. Simplify each coefficient.\n\n(c) State, with a reason, the set of values of $x$ for which the expansion is valid.",
+  "hint": "After splitting, write each fraction as $(1 + x)^{-1}$ or $(1 - 2x)^{-1}$ and use the binomial expansion for negative powers. Each expansion has its own range of validity.",
+  "answer": "(a) $\\dfrac{3}{1 + x} + \\dfrac{1}{1 - 2x}$\n(b) $4 - x + 7x^2 + 5x^3$\n(c) $|x| < \\dfrac{1}{2}$",
+  "solution": "**(a)** $4 - 5x \\equiv A(1 - 2x) + B(1 + x)$.\n\n$x = -1$: $9 = 3A \\Rightarrow A = 3$\n\n$x = \\frac{1}{2}$: $\\frac{3}{2} = \\frac{3}{2}B \\Rightarrow B = 1$\n$$f(x) \\equiv \\frac{3}{1 + x} + \\frac{1}{1 - 2x}$$\n\n**(b)**\n$$3(1 + x)^{-1} = 3\\left(1 - x + x^2 - x^3 + \\cdots\\right) = 3 - 3x + 3x^2 - 3x^3 + \\cdots$$\n$$(1 - 2x)^{-1} = 1 + 2x + (2x)^2 + (2x)^3 + \\cdots = 1 + 2x + 4x^2 + 8x^3 + \\cdots$$\nAdd:\n$$f(x) = 4 - x + 7x^2 + 5x^3 + \\cdots$$\n\n**(c)** $(1 + x)^{-1}$ is valid for $|x| < 1$, and $(1 - 2x)^{-1}$ is valid for $|2x| < 1$, i.e. $|x| < \\frac{1}{2}$. Both must hold, so the expansion of $f(x)$ is valid for\n$$|x| < \\frac{1}{2}$$\n\n(Check: $f(0.1) = \\frac{3.5}{1.1 \\times 0.8} = 3.977\\ldots$ and $4 - 0.1 + 0.07 + 0.005 = 3.975$ ✓, close as expected for small $x$.)",
+  "linkedTopicIds": [
+   "pure-binomial-general"
+  ],
+  "id": "pure-partial-fractions-q16",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Let $q(x) = (x - a)(x - b)(x - c)$, where $a$, $b$ and $c$ are distinct, and let $p(x)$ be a polynomial of degree less than 3, so that\n$$\\frac{p(x)}{q(x)} \\equiv \\frac{A}{x - a} + \\frac{B}{x - b} + \\frac{C}{x - c}$$\n\n(a) Prove that $A = \\dfrac{p(a)}{q'(a)}$, where $q'$ is the derivative of $q$.\n\n(b) Use this result to express $\\dfrac{x^2 + 1}{x^3 - 7x + 6}$ in partial fractions, given that $x = 1$ is a root of $x^3 - 7x + 6 = 0$.",
+  "hint": "For (a), the usual \"substitute $x = a$\" method gives $A = \\dfrac{p(a)}{(a - b)(a - c)}$. Now differentiate $q(x) = (x - a)g(x)$ with the product rule, where $g(x) = (x - b)(x - c)$.",
+  "answer": "(a) Proof below.\n(b) $-\\dfrac{1}{2(x - 1)} + \\dfrac{1}{x - 2} + \\dfrac{1}{2(x + 3)}$",
+  "solution": "**(a)** Multiply the identity by $q(x)$:\n$$p(x) \\equiv A(x - b)(x - c) + B(x - a)(x - c) + C(x - a)(x - b)$$\nPut $x = a$: the $B$ and $C$ terms vanish, so\n$$A = \\frac{p(a)}{(a - b)(a - c)}$$\n(the denominator is non-zero because $a, b, c$ are distinct).\n\nNow write $q(x) = (x - a)g(x)$ with $g(x) = (x - b)(x - c)$. By the product rule,\n$$q'(x) = g(x) + (x - a)g'(x)$$\nso $q'(a) = g(a) + 0 = (a - b)(a - c)$. Therefore\n$$A = \\frac{p(a)}{q'(a)} \\qquad \\blacksquare$$\n(By symmetry, $B = \\frac{p(b)}{q'(b)}$ and $C = \\frac{p(c)}{q'(c)}$.)\n\n**(b)** Since $x = 1$ is a root, divide by $(x - 1)$: $x^3 - 7x + 6 = (x - 1)(x^2 + x - 6) = (x - 1)(x - 2)(x + 3)$.\n\nHere $p(x) = x^2 + 1$ and $q'(x) = 3x^2 - 7$.\n\n$x = 1$: $\\frac{p(1)}{q'(1)} = \\frac{2}{-4} = -\\frac{1}{2}$\n\n$x = 2$: $\\frac{p(2)}{q'(2)} = \\frac{5}{5} = 1$\n\n$x = -3$: $\\frac{p(-3)}{q'(-3)} = \\frac{10}{20} = \\frac{1}{2}$\n\n$$\\frac{x^2 + 1}{x^3 - 7x + 6} \\equiv -\\frac{1}{2(x - 1)} + \\frac{1}{x - 2} + \\frac{1}{2(x + 3)}$$\n\nCheck: the $x^2$ coefficients of the numerators must add to 1: $-\\frac{1}{2} + 1 + \\frac{1}{2} = 1$ ✓. At $x = 0$: LHS $= \\frac{1}{6}$; RHS $= \\frac{1}{2} - \\frac{1}{2} + \\frac{1}{6} = \\frac{1}{6}$ ✓",
+  "linkedTopicIds": [
+   "calc-differentiation-basics",
+   "pure-polynomials-factor-theorem"
+  ],
+  "id": "pure-partial-fractions-q17",
+  "topicId": "pure-partial-fractions",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The constant $k$ is such that, when\n$$f(x) = \\frac{x^2 + kx + 6}{(x - 1)(x + 2)^2}$$\nis written in partial fractions, there is **no** term with denominator $(x + 2)$.\n\n(a) Find the value of $k$ and express $f(x)$ in partial fractions.\n\n(b) Hence find the exact value of $\\displaystyle\\int_2^4 f(x)\\,dx$.",
+  "hint": "Use the full form $\\dfrac{A}{x - 1} + \\dfrac{B}{x + 2} + \\dfrac{C}{(x + 2)^2}$, find $A$ and $B$ in terms of $k$, then impose $B = 0$.",
+  "answer": "(a) $k = 2$; $f(x) = \\dfrac{1}{x - 1} - \\dfrac{2}{(x + 2)^2}$\n(b) $\\ln 3 - \\dfrac{1}{6}$",
+  "solution": "**(a)** Use the full form for a repeated factor:\n$$x^2 + kx + 6 \\equiv A(x + 2)^2 + B(x - 1)(x + 2) + C(x - 1)$$\n\n$x = 1$: $7 + k = 9A \\Rightarrow A = \\frac{7 + k}{9}$\n\n$x^2$ coefficients: $1 = A + B \\Rightarrow B = 1 - \\frac{7 + k}{9} = \\frac{2 - k}{9}$\n\nThere is no $\\frac{B}{x + 2}$ term, so $B = 0$, giving $k = 2$ and $A = 1$.\n\n$x = -2$: $4 - 2k + 6 = -3C \\Rightarrow 6 = -3C \\Rightarrow C = -2$\n$$f(x) \\equiv \\frac{1}{x - 1} - \\frac{2}{(x + 2)^2}$$\n\nCheck: $(x + 2)^2 - 2(x - 1) = x^2 + 2x + 6$ ✓\n\n**(b)** $\\int -2(x + 2)^{-2}\\,dx = 2(x + 2)^{-1}$, so\n$$\\int_2^4 f(x)\\,dx = \\left[\\ln(x - 1) + \\frac{2}{x + 2}\\right]_2^4 = \\left(\\ln 3 + \\frac{1}{3}\\right) - \\left(\\ln 1 + \\frac{1}{2}\\right) = \\ln 3 - \\frac{1}{6}$$",
+  "linkedTopicIds": [
+   "calc-integration-partial-fractions"
+  ],
+  "id": "pure-partial-fractions-q18",
+  "topicId": "pure-partial-fractions"
+ }
+]

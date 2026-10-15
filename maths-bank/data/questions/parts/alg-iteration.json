@@ -1,0 +1,295 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the iterative formula\n$$x_{n+1} = 4 + \\frac{1}{x_n}$$\nwith $x_0 = 4$ to find the values of $x_1$, $x_2$ and $x_3$. Give your answers to 4 decimal places where necessary.",
+  "hint": "Substitute $x_0 = 4$ to get $x_1$, then substitute $x_1$ (not $x_0$) to get $x_2$.",
+  "answer": "$x_1 = 4.25$, $x_2 = 4.2353$, $x_3 = 4.2361$",
+  "solution": "$x_1 = 4 + \\dfrac{1}{4} = 4.25$\n\n$x_2 = 4 + \\dfrac{1}{4.25} = 4.235294\\ldots = 4.2353$ (4 d.p.)\n\n$x_3 = 4 + \\dfrac{1}{4.235294\\ldots} = 4.236111\\ldots = 4.2361$ (4 d.p.)\n\nEach value is fed back into the formula at full calculator accuracy (use ANS). The values are settling down near $4.236$, a solution of $x = 4 + \\frac{1}{x}$, i.e. $x^2 - 4x - 1 = 0$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q01",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the iterative formula\n$$x_{n+1} = 4 + \\frac{1}{x_n}$$\nwith $x_0 = 1$ to find the values of $x_1$, $x_2$ and $x_3$. Give your answers to 4 decimal places where necessary.",
+  "hint": "Same formula as before, but a different starting value.",
+  "answer": "$x_1 = 5$, $x_2 = 4.2$, $x_3 = 4.2381$",
+  "solution": "$x_1 = 4 + \\dfrac{1}{1} = 5$\n\n$x_2 = 4 + \\dfrac{1}{5} = 4.2$\n\n$x_3 = 4 + \\dfrac{1}{4.2} = 4.238095\\ldots = 4.2381$ (4 d.p.)\n\n**What changed:** only the starting value. The first few values are different, but the sequence still homes in on the same solution, about $4.236$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q02",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the iterative formula\n$$x_{n+1} = 4 - \\frac{1}{x_n}$$\nwith $x_0 = 4$ to find the values of $x_1$, $x_2$ and $x_3$. Give your answers to 4 decimal places where necessary.",
+  "hint": "Careful with the sign: you now subtract $\\frac{1}{x_n}$.",
+  "answer": "$x_1 = 3.75$, $x_2 = 3.7333$, $x_3 = 3.7321$",
+  "solution": "$x_1 = 4 - \\dfrac{1}{4} = 3.75$\n\n$x_2 = 4 - \\dfrac{1}{3.75} = 3.733333\\ldots = 3.7333$ (4 d.p.)\n\n$x_3 = 4 - \\dfrac{1}{3.733333\\ldots} = 3.732142\\ldots = 3.7321$ (4 d.p.)\n\n**What changed:** the $+$ became $-$, so the formula now solves a different equation, $x = 4 - \\frac{1}{x}$, i.e. $x^2 - 4x + 1 = 0$. The values approach about $3.732$ instead of $4.236$, and they decrease steadily rather than going up and down.",
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q03",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the iterative formula\n$$x_{n+1} = 4 - \\frac{2}{x_n}$$\nwith $x_0 = 4$ to find the values of $x_1$, $x_2$ and $x_3$. Give your answers to 4 decimal places where necessary.",
+  "hint": "Only the numerator of the fraction has changed.",
+  "answer": "$x_1 = 3.5$, $x_2 = 3.4286$, $x_3 = 3.4167$",
+  "solution": "$x_1 = 4 - \\dfrac{2}{4} = 3.5$\n\n$x_2 = 4 - \\dfrac{2}{3.5} = 3.428571\\ldots = 3.4286$ (4 d.p.)\n\n$x_3 = 4 - \\dfrac{2}{3.428571\\ldots} = 3.416666\\ldots = 3.4167$ (4 d.p.)\n\n**What changed:** the numerator $1$ became $2$. The values now approach about $3.414$, a solution of $x^2 - 4x + 2 = 0$.",
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q04",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Show that the equation $x^3 - 5x + 1 = 0$ has a solution between $x = 2$ and $x = 3$.",
+  "hint": "Let $f(x) = x^3 - 5x + 1$ and work out $f(2)$ and $f(3)$. What do you notice about their signs?",
+  "answer": "$f(2) = -1 < 0$ and $f(3) = 13 > 0$: a change of sign, so there is a solution between 2 and 3",
+  "solution": "Let $f(x) = x^3 - 5x + 1$.\n\n$f(2) = 8 - 10 + 1 = -1$ (negative)\n\n$f(3) = 27 - 15 + 1 = 13$ (positive)\n\nThere is a **change of sign** between $x = 2$ and $x = 3$, and $f$ is continuous (its graph has no breaks), so the graph must cross the $x$-axis between them: there is a solution between 2 and 3.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q05",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Show that the equation $x^3 - 5x + 1 = 0$ can be rearranged to give $x = \\sqrt[3]{5x - 1}$.\n\n(b) Using $x_{n+1} = \\sqrt[3]{5x_n - 1}$ with $x_0 = 2$, find $x_1$, $x_2$ and $x_3$ to 4 decimal places.",
+  "hint": "Get $x^3$ on its own first. Then take the cube root of both sides.",
+  "answer": "(a) $x^3 = 5x - 1 \\Rightarrow x = \\sqrt[3]{5x - 1}$ (b) $x_1 = 2.0801$, $x_2 = 2.1105$, $x_3 = 2.1218$",
+  "solution": "**(a)** $x^3 - 5x + 1 = 0$\nAdd $5x$ and subtract 1 from both sides: $x^3 = 5x - 1$\nCube root: $x = \\sqrt[3]{5x - 1}$\n\n**(b)**\n$x_1 = \\sqrt[3]{5(2) - 1} = \\sqrt[3]{9} = 2.080083\\ldots = 2.0801$\n$x_2 = \\sqrt[3]{5(2.080083\\ldots) - 1} = 2.110485\\ldots = 2.1105$\n$x_3 = \\sqrt[3]{5(2.110485\\ldots) - 1} = 2.121800\\ldots = 2.1218$\n\nThe values are increasing slowly towards the solution (about $2.128$).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q06",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Owen is investigating the equation $x^3 - 4x + 2 = 0$. His working is shown.\n\n$f(x) = x^3 - 4x + 2$\n$f(2) = 8 - 8 + 2 = 2$\n$f(3) = 27 - 12 + 2 = 17$\n$f(2)$ and $f(3)$ are different, so there is a solution between $x = 2$ and $x = 3$.\n\n(a) Explain what is wrong with Owen's reasoning.\n(b) Find a pair of consecutive positive integers between which a solution does lie, showing clearly why.",
+  "hint": "A solution is where $f(x) = 0$. What must happen to the sign of $f(x)$ for the graph to cross the $x$-axis?",
+  "answer": "(a) Both values are positive, so there is no change of sign; this does not show a root. (b) Between 1 and 2: $f(1) = -1 < 0$, $f(2) = 2 > 0$ (also between 0 and 1: $f(0) = 2$, $f(1) = -1$)",
+  "solution": "**(a)** Owen's arithmetic is right, but his reasoning is not. A solution of $f(x) = 0$ is where the graph crosses the $x$-axis, so $f(x)$ must change from **negative to positive** (or positive to negative). $f(2) = 2$ and $f(3) = 17$ are both positive, so there is no change of sign and nothing shows that there is a solution between 2 and 3. (In fact there is none.) Values being \"different\" is not enough.\n\n**(b)** $f(1) = 1 - 4 + 2 = -1 < 0$ and $f(2) = 2 > 0$.\nThere is a change of sign, so there is a solution between $x = 1$ and $x = 2$.\n(Also $f(0) = 2 > 0$ and $f(1) = -1 < 0$, so there is another solution between 0 and 1. Either pair is acceptable.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q07",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Grace uses the iterative formula $x_{n+1} = \\sqrt[3]{12 - x_n}$ with $x_0 = 2$. Her working is shown.\n\n$x_1 = \\sqrt[3]{12 - 2} = 2.1544$\n$x_2 = \\sqrt[3]{12 - 2} = 2.1544$\n$x_3 = \\sqrt[3]{12 - 2} = 2.1544$\nThe values are the same, so the solution is $2.1544$.\n\n(a) Explain Grace's mistake.\n(b) Find the correct values of $x_2$ and $x_3$ to 4 decimal places.",
+  "hint": "To find $x_2$ you substitute $x_1$ into the formula.",
+  "answer": "(a) She substituted $x_0 = 2$ every time instead of the previous value (b) $x_2 = 2.1433$, $x_3 = 2.1441$",
+  "solution": "**(a)** Each new value must be found from the **previous** one: $x_2 = \\sqrt[3]{12 - x_1}$, $x_3 = \\sqrt[3]{12 - x_2}$. Grace kept substituting $x_0 = 2$, so of course she got the same number each time; that tells her nothing about the solution. (Using ANS on a calculator avoids this.)\n\n**(b)**\n$x_1 = \\sqrt[3]{10} = 2.154434\\ldots$\n$x_2 = \\sqrt[3]{12 - 2.154434\\ldots} = \\sqrt[3]{9.845565\\ldots} = 2.143286\\ldots = 2.1433$\n$x_3 = \\sqrt[3]{12 - 2.143286\\ldots} = 2.144095\\ldots = 2.1441$\n\n(The values oscillate and settle near $2.1440$, a solution of $x^3 + x - 12 = 0$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q08",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Hassan is asked to rearrange $x^3 - 6x + 2 = 0$ into a form suitable for iteration, then use it with $x_0 = 2$. His working is shown.\n\n$x^3 - 6x + 2 = 0$\n$x^3 = 6x + 2$\n$x = \\sqrt[3]{6x + 2}$\n$x_1 = \\sqrt[3]{6(2) + 2} = 2.4101$\n\n(a) Find the error in Hassan's working and explain it.\n(b) Write the correct iterative formula and use it to find $x_1$, $x_2$ and $x_3$ to 4 decimal places.",
+  "hint": "What happens to the $+2$ when you move it to the other side?",
+  "answer": "(a) Line 2: it should be $x^3 = 6x - 2$ (b) $x_{n+1} = \\sqrt[3]{6x_n - 2}$; $x_1 = 2.1544$, $x_2 = 2.2190$, $x_3 = 2.2450$",
+  "solution": "**(a)** The error is in the second line. Moving $-6x$ and $+2$ to the right-hand side changes **both** signs:\n$$x^3 = 6x - 2$$\nHassan changed the sign of $-6x$ but not of $+2$. His formula actually solves $x^3 - 6x - 2 = 0$, a different equation. (Check: cubing $x = \\sqrt[3]{6x + 2}$ gives $x^3 - 6x - 2 = 0$, not the original.)\n\n**(b)** $x_{n+1} = \\sqrt[3]{6x_n - 2}$\n$x_1 = \\sqrt[3]{10} = 2.154434\\ldots = 2.1544$\n$x_2 = \\sqrt[3]{6(2.154434\\ldots) - 2} = 2.219023\\ldots = 2.2190$\n$x_3 = \\sqrt[3]{6(2.219023\\ldots) - 2} = 2.244952\\ldots = 2.2450$\n\n(Hassan's sequence would have approached about $2.60$, which is not a solution of the original equation: $2.6^3 - 6(2.6) + 2 \\approx 3.98 \\ne 0$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q09",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Kai uses the iterative formula $x_{n+1} = \\sqrt[3]{4 + 3x_n}$ with $x_0 = 2$ to find a solution of $x^3 - 3x - 4 = 0$.\n\nTo save time he rounds each value to 2 decimal places before using it again:\n$x_1 = 2.15$, $x_2 = 2.19$, $x_3 = 2.19$\n\nHe says: \"Two values in a row are the same, so the solution is $2.19$ to 2 decimal places.\"\n\n(a) Repeat the iteration keeping full calculator accuracy, writing down $x_1$ to $x_5$ to 4 decimal places.\n(b) By considering a suitable interval, find the solution correct to 2 decimal places, and explain whether Kai is correct.",
+  "hint": "For (b), work out the sign of $f(x) = x^3 - 3x - 4$ at the bounds $2.195$ and $2.205$.",
+  "answer": "(a) $2.1544$, $2.1872$, $2.1940$, $2.1955$, $2.1957$ (b) $f(2.195) < 0$ and $f(2.205) > 0$, so the solution is $2.20$ (2 d.p.); Kai is wrong",
+  "solution": "**(a)** Using ANS each time:\n$x_1 = \\sqrt[3]{10} = 2.1544$\n$x_2 = \\sqrt[3]{4 + 3(2.154434\\ldots)} = 2.1872$\n$x_3 = 2.1940$, $x_4 = 2.1955$, $x_5 = 2.1957$\nThe values are still increasing and are heading past $2.195$.\n\n**(b)** Let $f(x) = x^3 - 3x - 4$.\n$f(2.195) = 10.5756\\ldots - 6.585 - 4 = -0.0094\\ldots < 0$\n$f(2.205) = 10.7206\\ldots - 6.615 - 4 = 0.1058\\ldots > 0$\nThere is a change of sign, so the solution lies between $2.195$ and $2.205$, and therefore it is $2.20$ to 2 d.p.\n\nKai is **not** correct. By rounding each value before substituting, he threw away accuracy: rounding $2.1949\\ldots$ down to $2.19$ fed a smaller value back in, and the sequence got stuck at $2.19$. Two matching rounded values do not prove anything; keep full accuracy and confirm with a change of sign.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q10",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "This question is about the equation $x^3 + 3x - 7 = 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the equation $x^3 + 3x - 7 = 0$ has a solution between $x = 1$ and $x = 2$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $x^3 + 3x - 7 = 0$ can be rearranged to give $x = \\sqrt[3]{7 - 3x}$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Starting with $x_0 = 1$, use the iteration formula $x_{n+1} = \\sqrt[3]{7 - 3x_n}$ three times to find an estimate for the solution of $x^3 + 3x - 7 = 0$. Give your answer to 3 decimal places.",
+    "marks": 3
+   }
+  ],
+  "marks": 6,
+  "hint": "(a) Substitute $x = 1$ and $x = 2$ and look at the signs. (c) Use ANS so you never round in between.",
+  "answer": "(a) $f(1) = -3$, $f(2) = 7$: change of sign (b) $x^3 = 7 - 3x$ (c) $x_3 = 1.454$",
+  "solution": "**(a)** $f(1) = 1 + 3 - 7 = -3$ and $f(2) = 8 + 6 - 7 = 7$ **M1**\nThere is a change of sign (and $f$ is continuous), so there is a solution between 1 and 2. **A1**\n\n**(b)** $x^3 = 7 - 3x \\Rightarrow x = \\sqrt[3]{7 - 3x}$ **B1**\n\n**(c)** $x_1 = \\sqrt[3]{7 - 3} = \\sqrt[3]{4} = 1.587401\\ldots$ **M1**\n$x_2 = \\sqrt[3]{7 - 3(1.587401\\ldots)} = 1.307997\\ldots$ **M1** (for continuing correctly to $x_2$)\n$x_3 = \\sqrt[3]{7 - 3(1.307997\\ldots)} = 1.454328\\ldots$\n$x_3 = 1.454$ (3 d.p.) **A1**\n\n(The values oscillate about the solution, which is $1.406$ to 3 d.p.; rounding each value before reusing it may lose the A1.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q11",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "This question is about the equation $x^3 - 2x^2 - 5 = 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $x^3 - 2x^2 - 5 = 0$ can be rearranged to give $x = 2 + \\dfrac{5}{x^2}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Using $x_{n+1} = 2 + \\dfrac{5}{x_n^2}$ with $x_0 = 2.5$, find the values of $x_1$, $x_2$ and $x_3$. Give your answers to 4 decimal places.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Continuing the iteration gives $x_8 = 2.6897$ and $x_9 = 2.6912$, to 4 decimal places. By substituting suitable values into $x^3 - 2x^2 - 5$, show that the solution is $2.69$ correct to 2 decimal places.",
+    "marks": 3
+   }
+  ],
+  "marks": 8,
+  "hint": "(a) Write $x^3 = 2x^2 + 5$ and divide every term by $x^2$. (c) The bounds for $2.69$ to 2 d.p. are $2.685$ and $2.695$.",
+  "answer": "(a) shown (b) $x_1 = 2.8$, $x_2 = 2.6378$, $x_3 = 2.7186$ (c) $f(2.685) < 0$, $f(2.695) > 0$, so the root is $2.69$ (2 d.p.)",
+  "solution": "**(a)** $x^3 - 2x^2 - 5 = 0 \\Rightarrow x^3 = 2x^2 + 5$ **M1**\nDivide every term by $x^2$ ($x \\ne 0$): $x = 2 + \\dfrac{5}{x^2}$ **A1**\n\n**(b)** $x_1 = 2 + \\dfrac{5}{2.5^2} = 2 + 0.8 = 2.8$ **M1**\n$x_2 = 2 + \\dfrac{5}{2.8^2} = 2.637755\\ldots = 2.6378$ **A1**\n$x_3 = 2 + \\dfrac{5}{2.637755\\ldots^2} = 2.718622\\ldots = 2.7186$ **A1**\n\n**(c)** Let $f(x) = x^3 - 2x^2 - 5$. Use the bounds of $2.69$ to 2 d.p. **M1**\n$f(2.685) = 19.3566\\ldots - 14.4184\\ldots - 5 = -0.0617\\ldots < 0$\n$f(2.695) = 19.5739\\ldots - 14.5260\\ldots - 5 = 0.0478\\ldots > 0$ **A1**\nThere is a change of sign, so the solution lies between $2.685$ and $2.695$; therefore it is $2.69$ correct to 2 d.p. **A1**\n\n(Note: $x_8$ and $x_9$ both rounding to $2.69$ suggests the answer, but only the sign change proves it.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-iteration-q12",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A water tank is a cuboid with a square base of side $x$ metres. Its height is 2 metres more than the side of the base. The tank holds exactly $50 \\text{ m}^3$.\n\n(a) Show that $x^3 + 2x^2 - 50 = 0$.\n(b) Show that this can be rearranged to $x = \\sqrt{\\dfrac{50}{x + 2}}$.\n(c) Use the iterative formula $x_{n+1} = \\sqrt{\\dfrac{50}{x_n + 2}}$ with $x_0 = 3$ to find the side of the base, correct to the nearest centimetre. Justify that your answer is correct to this accuracy.",
+  "hint": "Volume $=$ base area $\\times$ height $= x^2(x + 2)$. To the nearest centimetre means to 2 decimal places of a metre.",
+  "answer": "(a), (b) shown (c) $x = 3.12$ m (to the nearest cm), justified by $f(3.115) < 0 < f(3.125)$",
+  "solution": "**(a)** Volume $= x^2(x + 2) = x^3 + 2x^2 = 50$, so $x^3 + 2x^2 - 50 = 0$.\n\n**(b)** $x^2(x + 2) = 50 \\Rightarrow x^2 = \\dfrac{50}{x + 2} \\Rightarrow x = \\sqrt{\\dfrac{50}{x + 2}}$ (positive root, since $x$ is a length).\n\n**(c)**\n$x_1 = \\sqrt{50 \\div 5} = \\sqrt{10} = 3.162277\\ldots$\n$x_2 = 3.112177\\ldots$\n$x_3 = 3.127389\\ldots$\n$x_4 = 3.122747\\ldots$\n$x_5 = 3.124162\\ldots$\n$x_6 = 3.123731\\ldots$\nThe values oscillate and settle at about $3.124$, which suggests $3.12$ m to 2 d.p.\n\nCheck with $f(x) = x^3 + 2x^2 - 50$ at the bounds:\n$f(3.115) = 30.2255\\ldots + 19.4064\\ldots - 50 = -0.368\\ldots < 0$\n$f(3.125) = 30.5175\\ldots + 19.5312\\ldots - 50 = 0.0488\\ldots > 0$\nThe change of sign shows that the solution is between $3.115$ and $3.125$.\n\nThe side of the base is **3.12 m** (312 cm) to the nearest centimetre.",
+  "linkedTopicIds": [
+   "geo-volume-prisms"
+  ],
+  "id": "alg-iteration-q13",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A hemispherical bowl has radius 10 cm. When water is poured in to a depth of $h$ cm, the volume of water, in $\\text{cm}^3$, is\n$$V = \\frac{\\pi h^2 (30 - h)}{3}$$\nAmira pours $500 \\text{ cm}^3$ of water into the bowl.\n\n(a) Show that $h = \\sqrt{\\dfrac{1500}{\\pi(30 - h)}}$.\n(b) Use an iterative formula based on (a), starting with $h_0 = 4$, to find the depth of the water correct to 2 decimal places. Show that your answer has this accuracy.",
+  "hint": "Multiply both sides of $500 = \\frac{\\pi h^2(30 - h)}{3}$ by 3, then make $h^2$ the subject.",
+  "answer": "(a) shown (b) $h = 4.31$ cm (2 d.p.)",
+  "solution": "**(a)** $500 = \\dfrac{\\pi h^2 (30 - h)}{3} \\Rightarrow 1500 = \\pi h^2 (30 - h) \\Rightarrow h^2 = \\dfrac{1500}{\\pi(30 - h)}$\nTaking the positive square root (a depth is positive): $h = \\sqrt{\\dfrac{1500}{\\pi(30 - h)}}$\n\n**(b)** $h_{n+1} = \\sqrt{\\dfrac{1500}{\\pi(30 - h_n)}}$, $h_0 = 4$:\n$h_1 = 4.285328\\ldots$\n$h_2 = 4.309037\\ldots$\n$h_3 = 4.311025\\ldots$\n$h_4 = 4.311191\\ldots$\nThe values settle at $4.3112\\ldots$, suggesting $4.31$ cm.\n\nCheck: let $g(h) = \\dfrac{\\pi h^2(30 - h)}{3} - 500$.\n$g(4.305) = -1.32 < 0$ and $g(4.315) = 0.81 > 0$ (to 2 d.p.).\nThe change of sign means the exact depth is between $4.305$ and $4.315$, so $h = 4.31$ cm to 2 d.p.",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres"
+  ],
+  "id": "alg-iteration-q14",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The equation $x^2 - 5x + 3 = 0$ has a solution near $x = 4$. Three students rearrange it in different ways:\n\nA: $x = \\dfrac{x^2 + 3}{5}$ B: $x = 5 - \\dfrac{3}{x}$ C: $x = \\sqrt{5x - 3}$\n\n(a) Show that each rearrangement is correct.\n(b) For each one, use the corresponding iterative formula with $x_0 = 4$ to find $x_1$, $x_2$, $x_3$, $x_4$ (to 4 d.p.).\n(c) Which formulae appear to be useful for finding the solution near 4? Which works fastest? Check your answer using the quadratic formula.",
+  "hint": "Start each one from $x^2 = 5x - 3$. Keep full accuracy throughout; watch whether the values settle down or drift away.",
+  "answer": "(b) A: $3.8, 3.488, 3.0332, 2.4401$ (moving away); B: $4.25, 4.2941, 4.3014, 4.3025$; C: $4.1231, 4.1971, 4.2409, 4.2667$ (c) B and C converge to the root near 4.30, B fastest; A does not; exact root $\\frac{5 + \\sqrt{13}}{2} = 4.3028$",
+  "solution": "**(a)** All start from $x^2 = 5x - 3$ (equivalently $x^2 + 3 = 5x$).\nA: divide $x^2 + 3 = 5x$ by 5: $x = \\dfrac{x^2 + 3}{5}$.\nB: divide $x^2 = 5x - 3$ by $x$: $x = 5 - \\dfrac{3}{x}$.\nC: square root of $x^2 = 5x - 3$: $x = \\sqrt{5x - 3}$ (taking the positive root, as the solution is near 4).\n\n**(b)**\nA: $x_1 = \\frac{19}{5} = 3.8$, $x_2 = 3.488$, $x_3 = 3.0332$, $x_4 = 2.4401$\nB: $x_1 = 4.25$, $x_2 = 4.2941$, $x_3 = 4.3014$, $x_4 = 4.3025$\nC: $x_1 = \\sqrt{17} = 4.1231$, $x_2 = 4.1971$, $x_3 = 4.2409$, $x_4 = 4.2667$\n\n**(c)** A's values move further and further away from 4 (they actually drift towards the other solution, about $0.697$), so A is no use here. B and C both approach the same value; B settles much faster (its values change by less each time).\nQuadratic formula: $x = \\dfrac{5 \\pm \\sqrt{25 - 12}}{2} = \\dfrac{5 \\pm \\sqrt{13}}{2}$, so the solution near 4 is $\\dfrac{5 + \\sqrt{13}}{2} = 4.3028$ (4 d.p.), agreeing with B and C.\n\nSo a correct rearrangement does not guarantee a useful iteration: you have to check that the values converge.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "alg-iteration-q15",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider the iterative formula $x_{n+1} = 1 + \\dfrac{1}{x_n}$ with $x_0 = 1$.\n\n(a) Find $x_1$, $x_2$, $x_3$, $x_4$ and $x_5$, giving each as an exact fraction. What do you notice about the numerators and denominators?\n(b) The values converge to a limit $L$. Explain why $L$ satisfies $L^2 - L - 1 = 0$, and hence find the exact value of $L$.\n(c) How many iterations are needed before $x_n$ first agrees with $L$ to 3 decimal places?",
+  "hint": "If the values settle down to $L$, then both $x_n$ and $x_{n+1}$ are approximately $L$, so $L = 1 + \\frac{1}{L}$.",
+  "answer": "(a) $2, \\frac{3}{2}, \\frac{5}{3}, \\frac{8}{5}, \\frac{13}{8}$: ratios of consecutive Fibonacci numbers (b) $L = \\dfrac{1 + \\sqrt{5}}{2}$ (c) 8 iterations: $x_8 = \\frac{55}{34} = 1.6176\\ldots$ is the first to round to $1.618$",
+  "solution": "**(a)**\n$x_1 = 1 + 1 = 2$\n$x_2 = 1 + \\frac{1}{2} = \\frac{3}{2}$\n$x_3 = 1 + \\frac{2}{3} = \\frac{5}{3}$\n$x_4 = 1 + \\frac{3}{5} = \\frac{8}{5}$\n$x_5 = 1 + \\frac{5}{8} = \\frac{13}{8}$\nThe numerators and denominators are consecutive terms of the Fibonacci sequence $1, 1, 2, 3, 5, 8, 13, \\ldots$ (each term is the sum of the two before). In general if $x_n = \\frac{b}{a}$ then $x_{n+1} = 1 + \\frac{a}{b} = \\frac{a + b}{b}$, which is the next Fibonacci ratio.\n\n**(b)** If $x_n \\to L$ then $x_{n+1} \\to L$ too, so $L = 1 + \\frac{1}{L}$. Multiply by $L$: $L^2 = L + 1$, i.e. $L^2 - L - 1 = 0$.\n$$L = \\frac{1 \\pm \\sqrt{1 + 4}}{2} = \\frac{1 \\pm \\sqrt{5}}{2}$$\nAll the iterates are positive, so $L = \\dfrac{1 + \\sqrt{5}}{2} = 1.6180\\ldots$ (the golden ratio).\n\n**(c)** $L = 1.618$ to 3 d.p.\n$x_5 = \\frac{13}{8} = 1.625$, $x_6 = \\frac{21}{13} = 1.6154$, $x_7 = \\frac{34}{21} = 1.6190$, $x_8 = \\frac{55}{34} = 1.6176$, $x_9 = \\frac{89}{55} = 1.6182$.\nRounded to 3 d.p. these are $1.625, 1.615, 1.619, 1.618, 1.618$. The first to agree with $L$ is $x_8$, so 8 iterations are needed.",
+  "linkedTopicIds": [
+   "alg-sequences-quadratic-geometric",
+   "num-surds",
+   "alg-quadratic-formula"
+  ],
+  "id": "alg-iteration-q16",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A solid metal sphere of radius 3 cm is melted down and recast, with no metal wasted, as a solid cylinder. The height of the cylinder is 4 cm more than its radius $r$ cm.\n\nThe volume of a sphere of radius $R$ is $\\frac{4}{3}\\pi R^3$.\n\n(a) Show that $r^3 + 4r^2 - 36 = 0$.\n(b) Show that the equation has a solution between $r = 2$ and $r = 3$.\n(c) Show that the equation can be written as $r = \\dfrac{6}{\\sqrt{r + 4}}$.\n(d) Use an iterative formula based on (c), with $r_0 = 2$, to find the radius of the cylinder correct to 2 decimal places. You must justify the accuracy of your answer.",
+  "hint": "Volume of sphere $= 36\\pi$. Volume of cylinder $= \\pi r^2 h$ with $h = r + 4$. For (c), factorise $r^3 + 4r^2$ as $r^2(r + 4)$.",
+  "answer": "(a), (b), (c) shown (d) $r = 2.38$ cm (2 d.p.)",
+  "solution": "**(a)** Sphere: $\\frac{4}{3}\\pi(3^3) = 36\\pi$. Cylinder: $\\pi r^2(r + 4)$.\n$$\\pi r^2(r + 4) = 36\\pi \\Rightarrow r^3 + 4r^2 = 36 \\Rightarrow r^3 + 4r^2 - 36 = 0$$\n\n**(b)** $f(r) = r^3 + 4r^2 - 36$: $f(2) = 8 + 16 - 36 = -12 < 0$ and $f(3) = 27 + 36 - 36 = 27 > 0$. Change of sign, so there is a solution between 2 and 3.\n\n**(c)** $r^2(r + 4) = 36 \\Rightarrow r^2 = \\dfrac{36}{r + 4} \\Rightarrow r = \\dfrac{6}{\\sqrt{r + 4}}$ (positive root, since $r > 0$).\n\n**(d)** $r_{n+1} = \\dfrac{6}{\\sqrt{r_n + 4}}$, $r_0 = 2$:\n$r_1 = \\frac{6}{\\sqrt{6}} = 2.449489\\ldots$\n$r_2 = 2.362591\\ldots$\n$r_3 = 2.378670\\ldots$\n$r_4 = 2.375670\\ldots$\n$r_5 = 2.376229\\ldots$\nThe values oscillate and settle near $2.376$, suggesting $2.38$.\nCheck the bounds: $f(2.375) = 13.3965\\ldots + 22.5625 - 36 = -0.0410\\ldots < 0$ and $f(2.385) = 13.5665\\ldots + 22.7529 - 36 = 0.3194\\ldots > 0$.\nThe change of sign shows the solution lies between $2.375$ and $2.385$, so $r = 2.38$ cm to 2 d.p.",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres",
+   "geo-volume-prisms"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "alg-iteration-q17",
+  "topicId": "alg-iteration"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "An ancient method for finding square roots uses the iterative formula\n$$x_{n+1} = \\frac{x_n^2 + 20}{2x_n}$$\n\n(a) Show that if the iteration converges to a limit $L$, then $L^2 = 20$.\n(b) Starting with $x_0 = 4$, find $x_1$, $x_2$ and $x_3$, giving $x_3$ to 6 decimal places. Compare $x_3$ with $\\sqrt{20}$.\n(c) Show that $x_{n+1} - \\sqrt{20} = \\dfrac{(x_n - \\sqrt{20})^2}{2x_n}$, and explain what this tells you about the iterates when $x_0 > 0$.",
+  "hint": "For (a), replace both $x_n$ and $x_{n+1}$ by $L$. For (c), put $\\frac{x_n^2 + 20}{2x_n} - \\sqrt{20}$ over a common denominator.",
+  "answer": "(a) $2L^2 = L^2 + 20$ (b) $x_1 = 4.5$, $x_2 = 4.472222$, $x_3 = 4.472136$, equal to $\\sqrt{20}$ to 6 d.p. (c) the right side is $\\ge 0$, so every iterate after $x_0$ is at least $\\sqrt{20}$, and the error is roughly squared each step",
+  "solution": "**(a)** If $x_n \\to L$ then $x_{n+1} \\to L$, so $L = \\dfrac{L^2 + 20}{2L}$. Multiply by $2L$: $2L^2 = L^2 + 20$, so $L^2 = 20$.\n\n**(b)**\n$x_1 = \\dfrac{16 + 20}{8} = 4.5$\n$x_2 = \\dfrac{4.5^2 + 20}{9} = \\dfrac{40.25}{9} = 4.472222\\ldots$\n$x_3 = \\dfrac{4.472222\\ldots^2 + 20}{2 \\times 4.472222\\ldots} = 4.472135\\ldots = 4.472136$ (6 d.p.)\n$\\sqrt{20} = 4.472135\\ldots$, so $x_3$ already agrees to 6 d.p. after only three steps.\n\n**(c)**\n$$x_{n+1} - \\sqrt{20} = \\frac{x_n^2 + 20}{2x_n} - \\frac{2\\sqrt{20}\\,x_n}{2x_n} = \\frac{x_n^2 - 2\\sqrt{20}\\,x_n + 20}{2x_n} = \\frac{(x_n - \\sqrt{20})^2}{2x_n}$$\nsince $(\\sqrt{20})^2 = 20$.\nIf $x_n > 0$, the right-hand side is $\\ge 0$, so $x_{n+1} \\ge \\sqrt{20}$: from $x_1$ onwards every iterate is at least $\\sqrt{20}$ (and positive, so the argument repeats).\nAlso the error $x_{n+1} - \\sqrt{20}$ is proportional to the **square** of the previous error: an error of about $0.03$ becomes about $\\frac{0.03^2}{9} \\approx 0.0001$. The number of correct decimal places roughly doubles each step, which is why the method is so fast.",
+  "linkedTopicIds": [
+   "num-surds",
+   "alg-expand-double-triple"
+  ],
+  "id": "alg-iteration-q18",
+  "topicId": "alg-iteration"
+ }
+]
