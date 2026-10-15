@@ -157,12 +157,27 @@ def main():
     tts = build_tts(chapters)
     with open(os.path.join(OUT, "What-the-Dead-Remember-TTS.txt"), "w", encoding="utf-8") as fh:
         fh.write(tts)
+    # per-chapter TTS files
+    tts_dir = os.path.join(OUT, "tts-chapters")
+    os.makedirs(tts_dir, exist_ok=True)
+    for num, path in chapters:
+        cnum, title, body = read_chapter(path)
+        n = cnum or num
+        safe = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-")
+        parts = []
+        if n in PARTS:
+            parts.append(f"{PARTS[n].replace(':', '.')}\n\n\n")
+        parts.append(f"Chapter {NUM_WORDS.get(n, str(n))}. {title}.\n\n\n{to_tts(body)}\n")
+        if n == max(c for c, _ in chapters):
+            parts.append("\n\nThe end.\n")
+        with open(os.path.join(tts_dir, f"{n:02d}-{safe}.txt"), "w", encoding="utf-8") as fh:
+            fh.write("".join(parts))
     # pandoc conversions
     md = os.path.join(OUT, "What-the-Dead-Remember.md")
     meta = ["--metadata", f"title={TITLE}", "--metadata", "lang=en-GB", "--toc", "--toc-depth=2"]
     subprocess.run(["pandoc", md, "-o", os.path.join(OUT, "What-the-Dead-Remember.docx")] + meta, check=True)
     subprocess.run(["pandoc", md, "-o", os.path.join(OUT, "What-the-Dead-Remember.epub")] + meta
-                   + ["--epub-chapter-level=2"], check=True)
+                   + ["--split-level=2"], check=True)
     total = sum(len(read_chapter(p)[2].split()) for _, p in chapters)
     print(f"chapters: {len(chapters)}  words: {total}")
     for n, p in chapters:
