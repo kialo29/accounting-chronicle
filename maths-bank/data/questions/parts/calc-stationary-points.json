@@ -1,0 +1,380 @@
+[
+ {
+  "id": "calc-stationary-points-q01",
+  "topicId": "calc-stationary-points",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of the stationary points on the curve $y = x^3 - 12x$, and determine the nature of each one.",
+  "hint": "Solve $\\frac{dy}{dx} = 0$, then substitute each $x$-value into $y$ and into $\\frac{d^2y}{dx^2}$.",
+  "answer": "$(-2, 16)$ maximum; $(2, -16)$ minimum",
+  "solution": "$$\\frac{dy}{dx} = 3x^2 - 12 = 3(x - 2)(x + 2)$$\n$\\frac{dy}{dx} = 0$ when $x = 2$ or $x = -2$.\n\n$x = 2$: $y = 8 - 24 = -16$. $\\quad x = -2$: $y = -8 + 24 = 16$.\n\n$$\\frac{d^2y}{dx^2} = 6x$$\nAt $x = 2$: $12 > 0$, so $(2, -16)$ is a **minimum**.\n\nAt $x = -2$: $-12 < 0$, so $(-2, 16)$ is a **maximum**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q02",
+  "topicId": "calc-stationary-points",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of the stationary points on the curve $y = x^3 - 12x + 5$, and determine the nature of each one.",
+  "hint": "Compare with $y = x^3 - 12x$. Does adding a constant change $\\frac{dy}{dx}$?",
+  "answer": "$(-2, 21)$ maximum; $(2, -11)$ minimum",
+  "solution": "**What changed:** a constant $+5$ has been added.\n\n$\\frac{dy}{dx} = 3x^2 - 12$ is unchanged (the constant differentiates to $0$), so the stationary points are still at $x = \\pm2$ and $\\frac{d^2y}{dx^2} = 6x$ gives the same natures.\n\n$x = 2$: $y = 8 - 24 + 5 = -11$, minimum ($\\frac{d^2y}{dx^2} = 12 > 0$).\n\n$x = -2$: $y = -8 + 24 + 5 = 21$, maximum ($\\frac{d^2y}{dx^2} = -12 < 0$).\n\nThe whole curve is translated up by 5, so each $y$-coordinate goes up by 5.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q03",
+  "topicId": "calc-stationary-points",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of the stationary points on the curve $y = x^3 - 3x + 5$, and determine the nature of each one.",
+  "hint": "Solve $3x^2 - 3 = 0$.",
+  "answer": "$(-1, 7)$ maximum; $(1, 3)$ minimum",
+  "solution": "**What changed:** the coefficient of $x$ is now $-3$ instead of $-12$.\n\n$$\\frac{dy}{dx} = 3x^2 - 3 = 3(x - 1)(x + 1) = 0 \\;\\Rightarrow\\; x = \\pm1$$\n\n$x = 1$: $y = 1 - 3 + 5 = 3$. $\\quad x = -1$: $y = -1 + 3 + 5 = 7$.\n\n$\\frac{d^2y}{dx^2} = 6x$: at $x = 1$ it is $6 > 0$ (minimum); at $x = -1$ it is $-6 < 0$ (maximum).\n\nSo $(1, 3)$ is a minimum and $(-1, 7)$ is a maximum. A smaller coefficient brings the turning points closer to the $y$-axis and makes them less extreme.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q04",
+  "topicId": "calc-stationary-points",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of any stationary points on the curve $y = x^3 + 3x + 5$.",
+  "hint": "Try to solve $\\frac{dy}{dx} = 0$. What do you notice about the sign of $\\frac{dy}{dx}$?",
+  "answer": "There are no stationary points: $\\dfrac{dy}{dx} = 3x^2 + 3 > 0$ for all $x$ (the curve is increasing everywhere).",
+  "solution": "**What changed:** the sign of the $x$ term: $+3x$ instead of $-3x$.\n\n$$\\frac{dy}{dx} = 3x^2 + 3$$\n\nSetting $3x^2 + 3 = 0$ gives $x^2 = -1$, which has no real solutions.\n\nIn fact $3x^2 \\ge 0$, so $\\frac{dy}{dx} \\ge 3 > 0$ for every $x$. The curve is **increasing for all $x$** and has **no stationary points**.\n\nChanging one sign removed both turning points.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q05",
+  "topicId": "calc-stationary-points",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to find and classify the stationary points of $y = x^3 - 3x^2 - 9x + 1$. His working is shown below.\n\n$$\\frac{dy}{dx} = 3x^2 - 6x - 9 = 3(x - 3)(x + 1)$$\n\nStationary points at $x = 3$, $y = -26$ and at $x = -1$, $y = 6$.\n\n$$\\frac{d^2y}{dx^2} = 6x - 6$$\n\nAt $x = 3$: $\\dfrac{d^2y}{dx^2} = 12 > 0$, so $(3, -26)$ is a maximum.\n\nAt $x = -1$: $\\dfrac{d^2y}{dx^2} = -12 < 0$, so $(-1, 6)$ is a minimum.\n\nIdentify Ben's error, explain why it is wrong, and write down the correct conclusions.",
+  "hint": "If $\\frac{d^2y}{dx^2} > 0$, the gradient is increasing. Does the gradient go from $+$ to $-$ or from $-$ to $+$?",
+  "answer": "Ben has reversed the second-derivative test. $(3, -26)$ is a minimum and $(-1, 6)$ is a maximum.",
+  "solution": "Ben's derivative, stationary points and second-derivative values are all correct.\n\n**Error:** he has the test the wrong way round. $\\frac{d^2y}{dx^2} > 0$ means the gradient is **increasing** as you pass through the point: it goes from negative to $0$ to positive, which is a valley shape – a **minimum**. $\\frac{d^2y}{dx^2} < 0$ gives a **maximum**.\n\n(A quick sanity check: $(3, -26)$ is lower than $(-1, 6)$, which fits a cubic with positive $x^3$ coefficient having its maximum on the left and minimum on the right.)\n\n**Correct conclusions:**\n- $(3, -26)$: $\\frac{d^2y}{dx^2} = 12 > 0$, **minimum**\n- $(-1, 6)$: $\\frac{d^2y}{dx^2} = -12 < 0$, **maximum**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q06",
+  "topicId": "calc-stationary-points",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Olivia is asked to find and classify all the stationary points of $y = 3x^4 - 8x^3 + 2$. Her working is shown below.\n\n$$\\frac{dy}{dx} = 12x^3 - 24x^2 = 0$$\n$$12x^3 = 24x^2$$\n$$x = 2$$\n\nWhen $x = 2$, $y = 48 - 64 + 2 = -14$. $\\quad \\dfrac{d^2y}{dx^2} = 36x^2 - 48x = 48 > 0$\n\nSo the only stationary point is $(2, -14)$, which is a minimum.\n\nIdentify Olivia's error and find and classify **all** the stationary points.",
+  "hint": "What did Olivia divide both sides by to get from $12x^3 = 24x^2$ to $x = 2$? Is that allowed for every $x$? Try factorising instead.",
+  "answer": "She divided by $12x^2$, losing the solution $x = 0$. Stationary points: $(2, -14)$ minimum and $(0, 2)$ stationary point of inflection.",
+  "solution": "**Error:** going from $12x^3 = 24x^2$ to $x = 2$ means dividing by $12x^2$, which is only allowed if $x \\ne 0$. The solution $x = 0$ has been lost.\n\n**Correct:** factorise.\n$$12x^3 - 24x^2 = 12x^2(x - 2) = 0 \\;\\Rightarrow\\; x = 0 \\text{ or } x = 2$$\n\n$x = 2$: $y = -14$, $\\frac{d^2y}{dx^2} = 144 - 96 = 48 > 0$, so $(2, -14)$ is a **minimum** (Olivia was right about this one).\n\n$x = 0$: $y = 2$, and $\\frac{d^2y}{dx^2} = 0$, so the second-derivative test is **inconclusive**. Check the sign of $\\frac{dy}{dx} = 12x^2(x - 2)$:\n- $x = -1$: $12(1)(-3) = -36 < 0$\n- $x = 1$: $12(1)(-1) = -12 < 0$\n\nThe gradient is negative on both sides – no sign change – so $(0, 2)$ is a **stationary point of inflection**.",
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q07",
+  "topicId": "calc-stationary-points",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The graph of $f(x) = x^2 - 2x - 8$ is shown.\n\nChloe says: \"$f(x) > 0$ when $x > 4$, so $f$ is increasing for $x > 4$.\"\n\nExplain what is wrong with Chloe's reasoning, and find the set of values of $x$ for which $f$ is increasing.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><line x1=\"16\" y1=\"264\" x2=\"16\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"44.5\" y1=\"264\" x2=\"44.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"73\" y1=\"264\" x2=\"73\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"101.4\" y1=\"264\" x2=\"101.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"129.9\" y1=\"264\" x2=\"129.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"158.4\" y1=\"264\" x2=\"158.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"186.9\" y1=\"264\" x2=\"186.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"215.3\" y1=\"264\" x2=\"215.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"243.8\" y1=\"264\" x2=\"243.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"272.3\" y1=\"264\" x2=\"272.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"264\" x2=\"278\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"250.9\" x2=\"278\" y2=\"250.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"237.9\" x2=\"278\" y2=\"237.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"224.8\" x2=\"278\" y2=\"224.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"211.8\" x2=\"278\" y2=\"211.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"198.7\" x2=\"278\" y2=\"198.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"185.7\" x2=\"278\" y2=\"185.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"172.6\" x2=\"278\" y2=\"172.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"159.6\" x2=\"278\" y2=\"159.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"146.5\" x2=\"278\" y2=\"146.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"133.5\" x2=\"278\" y2=\"133.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"120.4\" x2=\"278\" y2=\"120.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"107.4\" x2=\"278\" y2=\"107.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"94.3\" x2=\"278\" y2=\"94.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"81.3\" x2=\"278\" y2=\"81.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"68.2\" x2=\"278\" y2=\"68.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"55.2\" x2=\"278\" y2=\"55.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"42.1\" x2=\"278\" y2=\"42.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"29.1\" x2=\"278\" y2=\"29.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"16\" x2=\"278\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"126.9\" x2=\"284\" y2=\"126.9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"118.5\" y1=\"264\" x2=\"118.5\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,126.9 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M118.5,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"119.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"125.5\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"61.6\" y1=\"123.9\" x2=\"61.6\" y2=\"129.9\" stroke=\"currentColor\"/><text x=\"61.6\" y=\"141.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"175.5\" y1=\"123.9\" x2=\"175.5\" y2=\"129.9\" stroke=\"currentColor\"/><text x=\"175.5\" y=\"141.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"232.4\" y1=\"123.9\" x2=\"232.4\" y2=\"129.9\" stroke=\"currentColor\"/><text x=\"232.4\" y=\"141.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"115.5\" y1=\"231.4\" x2=\"121.5\" y2=\"231.4\" stroke=\"currentColor\"/><text x=\"112.5\" y=\"235.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−8</text><line x1=\"115.5\" y1=\"179.2\" x2=\"121.5\" y2=\"179.2\" stroke=\"currentColor\"/><text x=\"112.5\" y=\"183.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"115.5\" y1=\"74.7\" x2=\"121.5\" y2=\"74.7\" stroke=\"currentColor\"/><text x=\"112.5\" y=\"78.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"112.5\" y=\"140.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M28.2,17.3 L28.8,19.7 L29.4,22 L30.1,24.3 L30.7,26.6 L31.3,28.9 L31.9,31.2 L32.5,33.4 L33.1,35.7 L33.7,37.9 L34.3,40.1 L35,42.4 L35.6,44.6 L36.2,46.8 L36.8,48.9 L37.4,51.1 L38,53.3 L38.6,55.4 L39.2,57.5 L39.9,59.6 L40.5,61.7 L41.1,63.8 L41.7,65.9 L42.3,68 L42.9,70.1 L43.5,72.1 L44.1,74.1 L44.7,76.2 L45.4,78.2 L46,80.2 L46.6,82.1 L47.2,84.1 L47.8,86.1 L48.4,88 L49,90 L49.6,91.9 L50.3,93.8 L50.9,95.7 L51.5,97.6 L52.1,99.5 L52.7,101.3 L53.3,103.2 L53.9,105 L54.5,106.8 L55.2,108.7 L55.8,110.5 L56.4,112.3 L57,114 L57.6,115.8 L58.2,117.6 L58.8,119.3 L59.4,121 L60.1,122.8 L60.7,124.5 L61.3,126.2 L61.9,127.8 L62.5,129.5 L63.1,131.2 L63.7,132.8 L64.3,134.5 L65,136.1 L65.6,137.7 L66.2,139.3 L66.8,140.9 L67.4,142.5 L68,144 L68.6,145.6 L69.2,147.1 L69.9,148.6 L70.5,150.1 L71.1,151.6 L71.7,153.1 L72.3,154.6 L72.9,156.1 L73.5,157.5 L74.1,159 L74.8,160.4 L75.4,161.8 L76,163.2 L76.6,164.6 L77.2,166 L77.8,167.4 L78.4,168.7 L79,170.1 L79.6,171.4 L80.3,172.7 L80.9,174 L81.5,175.3 L82.1,176.6 L82.7,177.9 L83.3,179.2 L83.9,180.4 L84.5,181.6 L85.2,182.9 L85.8,184.1 L86.4,185.3 L87,186.5 L87.6,187.7 L88.2,188.8 L88.8,190 L89.4,191.1 L90.1,192.2 L90.7,193.4 L91.3,194.5 L91.9,195.5 L92.5,196.6 L93.1,197.7 L93.7,198.8 L94.3,199.8 L95,200.8 L95.6,201.8 L96.2,202.9 L96.8,203.9 L97.4,204.8 L98,205.8 L98.6,206.8 L99.2,207.7 L99.9,208.6 L100.5,209.6 L101.1,210.5 L101.7,211.4 L102.3,212.3 L102.9,213.1 L103.5,214 L104.1,214.9 L104.8,215.7 L105.4,216.5 L106,217.3 L106.6,218.1 L107.2,218.9 L107.8,219.7 L108.4,220.5 L109,221.2 L109.7,222 L110.3,222.7 L110.9,223.4 L111.5,224.1 L112.1,224.8 L112.7,225.5 L113.3,226.2 L113.9,226.8 L114.5,227.5 L115.2,228.1 L115.8,228.7 L116.4,229.3 L117,229.9 L117.6,230.5 L118.2,231.1 L118.8,231.7 L119.4,232.2 L120.1,232.7 L120.7,233.3 L121.3,233.8 L121.9,234.3 L122.5,234.8 L123.1,235.2 L123.7,235.7 L124.3,236.2 L125,236.6 L125.6,237 L126.2,237.4 L126.8,237.9 L127.4,238.2 L128,238.6 L128.6,239 L129.2,239.3 L129.9,239.7 L130.5,240 L131.1,240.3 L131.7,240.7 L132.3,240.9 L132.9,241.2 L133.5,241.5 L134.1,241.8 L134.8,242 L135.4,242.2 L136,242.5 L136.6,242.7 L137.2,242.9 L137.8,243.1 L138.4,243.2 L139,243.4 L139.7,243.6 L140.3,243.7 L140.9,243.8 L141.5,243.9 L142.1,244 L142.7,244.1 L143.3,244.2 L143.9,244.3 L144.6,244.3 L145.2,244.4 L145.8,244.4 L146.4,244.4 L147,244.4 L147.6,244.4 L148.2,244.4 L148.8,244.4 L149.4,244.3 L150.1,244.3 L150.7,244.2 L151.3,244.1 L151.9,244 L152.5,243.9 L153.1,243.8 L153.7,243.7 L154.3,243.6 L155,243.4 L155.6,243.2 L156.2,243.1 L156.8,242.9 L157.4,242.7 L158,242.5 L158.6,242.2 L159.2,242 L159.9,241.8 L160.5,241.5 L161.1,241.2 L161.7,240.9 L162.3,240.7 L162.9,240.3 L163.5,240 L164.1,239.7 L164.8,239.3 L165.4,239 L166,238.6 L166.6,238.2 L167.2,237.9 L167.8,237.4 L168.4,237 L169,236.6 L169.7,236.2 L170.3,235.7 L170.9,235.2 L171.5,234.8 L172.1,234.3 L172.7,233.8 L173.3,233.3 L173.9,232.7 L174.6,232.2 L175.2,231.7 L175.8,231.1 L176.4,230.5 L177,229.9 L177.6,229.3 L178.2,228.7 L178.8,228.1 L179.5,227.5 L180.1,226.8 L180.7,226.2 L181.3,225.5 L181.9,224.8 L182.5,224.1 L183.1,223.4 L183.7,222.7 L184.3,222 L185,221.2 L185.6,220.5 L186.2,219.7 L186.8,218.9 L187.4,218.1 L188,217.3 L188.6,216.5 L189.2,215.7 L189.9,214.9 L190.5,214 L191.1,213.1 L191.7,212.3 L192.3,211.4 L192.9,210.5 L193.5,209.6 L194.1,208.6 L194.8,207.7 L195.4,206.8 L196,205.8 L196.6,204.8 L197.2,203.9 L197.8,202.9 L198.4,201.8 L199,200.8 L199.7,199.8 L200.3,198.8 L200.9,197.7 L201.5,196.6 L202.1,195.5 L202.7,194.5 L203.3,193.4 L203.9,192.2 L204.6,191.1 L205.2,190 L205.8,188.8 L206.4,187.7 L207,186.5 L207.6,185.3 L208.2,184.1 L208.8,182.9 L209.5,181.6 L210.1,180.4 L210.7,179.2 L211.3,177.9 L211.9,176.6 L212.5,175.3 L213.1,174 L213.7,172.7 L214.4,171.4 L215,170.1 L215.6,168.7 L216.2,167.4 L216.8,166 L217.4,164.6 L218,163.2 L218.6,161.8 L219.2,160.4 L219.9,159 L220.5,157.5 L221.1,156.1 L221.7,154.6 L222.3,153.1 L222.9,151.6 L223.5,150.1 L224.1,148.6 L224.8,147.1 L225.4,145.6 L226,144 L226.6,142.5 L227.2,140.9 L227.8,139.3 L228.4,137.7 L229,136.1 L229.7,134.5 L230.3,132.8 L230.9,131.2 L231.5,129.5 L232.1,127.8 L232.7,126.2 L233.3,124.5 L233.9,122.8 L234.6,121 L235.2,119.3 L235.8,117.6 L236.4,115.8 L237,114 L237.6,112.3 L238.2,110.5 L238.8,108.7 L239.5,106.8 L240.1,105 L240.7,103.2 L241.3,101.3 L241.9,99.5 L242.5,97.6 L243.1,95.7 L243.7,93.8 L244.4,91.9 L245,90 L245.6,88 L246.2,86.1 L246.8,84.1 L247.4,82.1 L248,80.2 L248.6,78.2 L249.3,76.2 L249.9,74.1 L250.5,72.1 L251.1,70.1 L251.7,68 L252.3,65.9 L252.9,63.8 L253.5,61.7 L254.1,59.6 L254.8,57.5 L255.4,55.4 L256,53.3 L256.6,51.1 L257.2,48.9 L257.8,46.8 L258.4,44.6 L259,42.4 L259.7,40.1 L260.3,37.9 L260.9,35.7 L261.5,33.4 L262.1,31.2 L262.7,28.9 L263.3,26.6 L263.9,24.3 L264.6,22 L265.2,19.7 L265.8,17.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"250.1\" y=\"41.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x² − 2x − 8</text></svg>",
+  "hint": "Increasing is about whether the graph is going up as $x$ increases, not whether it is above the $x$-axis. Which function tells you that?",
+  "answer": "Chloe has found where $f(x)$ is positive, not where it is increasing. $f'(x) = 2x - 2 > 0$, so $f$ is increasing for $x > 1$.",
+  "solution": "Chloe has confused **positive** with **increasing**. $f(x) > 0$ tells you the graph is above the $x$-axis; it says nothing about whether the graph is going up or down.\n\nFor example, $f(x) > 0$ for $x < -2$ as well, but the graph is clearly going **down** there.\n\n$f$ is increasing where its **derivative** is positive:\n$$f'(x) = 2x - 2 > 0 \\;\\Rightarrow\\; x > 1$$\n\nSo $f$ is increasing for $x > 1$ (from the minimum point $(1, -9)$ onwards), even though $f(x)$ is negative for $1 < x < 4$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q08",
+  "topicId": "calc-stationary-points",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam is asked to find and classify the stationary point of $y = (x - 1)^4 + 3$. He writes:\n\n\"$\\dfrac{dy}{dx} = 4(x - 1)^3 = 0$ when $x = 1$, so the stationary point is $(1, 3)$.\n\n$\\dfrac{d^2y}{dx^2} = 12(x - 1)^2$, which is $0$ when $x = 1$, so $(1, 3)$ is a point of inflection.\"\n\nIs Sam correct? Justify your answer fully.",
+  "hint": "What does $\\frac{d^2y}{dx^2} = 0$ actually tell you? Look at the sign of $\\frac{dy}{dx}$ just either side of $x = 1$.",
+  "answer": "No. $\\frac{d^2y}{dx^2} = 0$ only means the test is inconclusive. $\\frac{dy}{dx}$ changes from negative to positive at $x = 1$, so $(1, 3)$ is a minimum.",
+  "solution": "Sam's stationary point $(1, 3)$ is correct, but his classification is **not**.\n\n$\\frac{d^2y}{dx^2} = 0$ does **not** mean a point of inflection; it means the second-derivative test is **inconclusive**, so another method is needed.\n\n**Sign of $\\frac{dy}{dx} = 4(x - 1)^3$ either side of $x = 1$:**\n- $x = 0$: $4(-1)^3 = -4 < 0$\n- $x = 2$: $4(1)^3 = 4 > 0$\n\nThe gradient changes from negative to positive, so $(1, 3)$ is a **minimum**.\n\nThis also makes sense directly: $(x - 1)^4 \\ge 0$ for all $x$, so $y \\ge 3$ everywhere, with $y = 3$ only at $x = 1$ – the lowest point of the curve.\n\n(Compare $y = (x - 1)^3 + 3$, where $\\frac{dy}{dx} = 3(x-1)^2$ does **not** change sign: that one really is a stationary point of inflection. Both have second derivative $0$ at $x = 1$, which is why the test cannot tell them apart.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q09",
+  "topicId": "calc-stationary-points",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$$g(x) = x^3 + 6x^2 + 15x - 4$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that $g$ is an increasing function for all real $x$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence explain why the equation $g(x) = 0$ has exactly one real solution."
+   }
+  ],
+  "hint": "Find $g'(x)$ and complete the square to show it is always positive.",
+  "answer": "(a) $g'(x) = 3(x + 2)^2 + 3 \\ge 3 > 0$ for all $x$ (b) $g$ is increasing, so it crosses the $x$-axis at most once; as a cubic it takes both negative and positive values, so exactly once",
+  "solution": "**(a)**\n$$g'(x) = 3x^2 + 12x + 15 = 3(x^2 + 4x + 5)$$\nComplete the square: $x^2 + 4x + 5 = (x + 2)^2 + 1$, so\n$$g'(x) = 3(x + 2)^2 + 3$$\nSince $(x + 2)^2 \\ge 0$ for all $x$, $g'(x) \\ge 3 > 0$ for all $x$. Therefore $g$ is increasing for all real $x$. $\\blacksquare$\n\n**(b)** Because $g$ is increasing, it can take the value $0$ **at most once**: if $a < b$ then $g(a) < g(b)$, so two different inputs never give the same output.\n\nIt does take the value $0$ at least once: e.g. $g(0) = -4 < 0$ and $g(1) = 1 + 6 + 15 - 4 = 18 > 0$, and $g$ is a continuous (polynomial) function, so its graph must cross the $x$-axis between $0$ and $1$.\n\nHence $g(x) = 0$ has exactly one real solution (and it lies between $0$ and $1$).",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-stationary-points-q10",
+  "topicId": "calc-stationary-points",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A footballer kicks a ball from the ground. The path of the ball is modelled by\n$$y = 0.8x - 0.02x^2$$\nwhere $y$ m is the height of the ball when it has travelled $x$ m horizontally.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use calculus to find the maximum height of the ball and the horizontal distance at which it occurs."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\dfrac{dy}{dx}$ when $x = 25$ and explain what this tells you about the ball."
+   }
+  ],
+  "hint": "At the highest point the path is momentarily horizontal, so $\\frac{dy}{dx} = 0$.",
+  "answer": "(a) Maximum height 8 m, at $x = 20$ m (b) $-0.2$: negative, so the ball is descending",
+  "solution": "**(a)**\n$$\\frac{dy}{dx} = 0.8 - 0.04x = 0 \\;\\Rightarrow\\; x = 20$$\n$y = 0.8(20) - 0.02(400) = 16 - 8 = 8$\n\n$\\frac{d^2y}{dx^2} = -0.04 < 0$, so this is a maximum: the ball reaches a maximum height of **8 m** after travelling **20 m** horizontally.\n\n**(b)**\n$$\\frac{dy}{dx} = 0.8 - 0.04(25) = -0.2$$\nThe gradient of the path is negative, so the height is decreasing as $x$ increases: at 25 m the ball has passed its highest point and is coming down.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q11",
+  "topicId": "calc-stationary-points",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "On a summer day the temperature, $T$ °C, at a weather station $t$ hours after midnight is modelled by\n$$T = -0.02t^3 + 0.6t^2 - 4.5t + 20, \\qquad 0 \\le t \\le 20$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the times at which $\\dfrac{dT}{dt} = 0$, and the temperatures at these times."
+   },
+   {
+    "label": "b",
+    "prompt": "Use the second derivative to determine the nature of each of these stationary points."
+   },
+   {
+    "label": "c",
+    "prompt": "Between which times of day is the temperature rising, according to the model?"
+   }
+  ],
+  "hint": "$\\frac{dT}{dt} = -0.06t^2 + 1.2t - 4.5$. Divide by $-0.06$ to get a quadratic with integer coefficients.",
+  "answer": "(a) $t = 5$ (5 am), $T = 10$ °C; $t = 15$ (3 pm), $T = 20$ °C (b) $t = 5$ minimum, $t = 15$ maximum (c) between 5 am and 3 pm",
+  "solution": "**(a)**\n$$\\frac{dT}{dt} = -0.06t^2 + 1.2t - 4.5 = 0$$\nDivide by $-0.06$: $t^2 - 20t + 75 = 0 \\Rightarrow (t - 5)(t - 15) = 0$, so $t = 5$ or $t = 15$.\n\n$t = 5$: $T = -2.5 + 15 - 22.5 + 20 = 10$ °C (at 5 am).\n\n$t = 15$: $T = -67.5 + 135 - 67.5 + 20 = 20$ °C (at 3 pm).\n\n**(b)** $\\dfrac{d^2T}{dt^2} = -0.12t + 1.2$\n\n$t = 5$: $0.6 > 0$, so a **minimum** (the coldest point, just before dawn).\n\n$t = 15$: $-0.6 < 0$, so a **maximum** (the warmest point, mid-afternoon).\n\n**(c)** $T$ is rising where $\\frac{dT}{dt} > 0$, i.e. $-0.06(t - 5)(t - 15) > 0$, which holds for $5 < t < 15$: between **5 am and 3 pm**.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q12",
+  "topicId": "calc-stationary-points",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 8,
+  "question": "The diagram shows a sketch of the curve with equation\n$$y = 2x + \\frac{8}{x^2}, \\qquad x > 0$$\nThe curve has a stationary point $P$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dy}{dx}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the coordinates of $P$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\dfrac{d^2y}{dx^2}$ and hence determine the nature of $P$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Write down the set of values of $x$ for which $y$ is decreasing.",
+    "marks": 1
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><line x1=\"16\" y1=\"232.5\" x2=\"284\" y2=\"232.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"31.4\" y1=\"244\" x2=\"31.4\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,232.5 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M31.4,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"225.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"38.4\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"25.4\" y=\"246.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M61.2,17.1 L61.6,21.3 L61.9,25.4 L62.3,29.3 L62.6,33.1 L63,36.8 L63.3,40.3 L63.7,43.7 L64,47 L64.4,50.1 L64.7,53.2 L65.1,56.2 L65.4,59 L65.8,61.8 L66.2,64.4 L66.5,67 L66.9,69.5 L67.2,71.9 L67.6,74.3 L67.9,76.5 L68.3,78.7 L68.6,80.8 L69,82.9 L69.3,84.9 L69.7,86.8 L70,88.7 L70.4,90.5 L70.7,92.2 L71.1,93.9 L71.5,95.6 L71.8,97.2 L72.2,98.7 L72.5,100.2 L72.9,101.7 L73.2,103.1 L73.6,104.4 L73.9,105.8 L74.3,107.1 L74.6,108.3 L75,109.5 L75.3,110.7 L75.7,111.9 L76,113 L76.4,114.1 L76.7,115.1 L77.1,116.1 L77.5,117.1 L77.8,118.1 L78.2,119 L78.5,119.9 L78.9,120.8 L79.2,121.7 L79.6,122.5 L79.9,123.3 L80.3,124.1 L80.6,124.8 L81,125.6 L81.3,126.3 L81.7,127 L82,127.7 L82.4,128.3 L82.8,129 L83.1,129.6 L83.5,130.2 L83.8,130.8 L84.2,131.4 L84.5,131.9 L84.9,132.4 L85.2,133 L85.6,133.5 L85.9,134 L86.3,134.4 L86.6,134.9 L87,135.3 L87.3,135.8 L87.7,136.2 L88,136.6 L88.4,137 L88.8,137.4 L89.1,137.8 L89.5,138.1 L89.8,138.5 L90.2,138.8 L90.5,139.1 L90.9,139.4 L91.2,139.8 L91.6,140 L91.9,140.3 L92.3,140.6 L92.6,140.9 L93,141.1 L93.3,141.4 L93.7,141.6 L94.1,141.9 L94.4,142.1 L94.8,142.3 L95.1,142.5 L95.5,142.7 L95.8,142.9 L96.2,143.1 L96.5,143.3 L96.9,143.4 L97.2,143.6 L97.6,143.8 L97.9,143.9 L98.3,144 L98.6,144.2 L99,144.3 L99.4,144.4 L99.7,144.6 L100.1,144.7 L100.4,144.8 L100.8,144.9 L101.1,145 L101.5,145.1 L101.8,145.1 L102.2,145.2 L102.5,145.3 L102.9,145.4 L103.2,145.4 L103.6,145.5 L103.9,145.5 L104.3,145.6 L104.6,145.6 L105,145.7 L105.4,145.7 L105.7,145.8 L106.1,145.8 L106.4,145.8 L106.8,145.8 L107.1,145.8 L107.5,145.9 L107.8,145.9 L108.2,145.9 L108.5,145.9 L108.9,145.9 L109.2,145.9 L109.6,145.9 L109.9,145.8 L110.3,145.8 L110.7,145.8 L111,145.8 L111.4,145.8 L111.7,145.7 L112.1,145.7 L112.4,145.7 L112.8,145.6 L113.1,145.6 L113.5,145.5 L113.8,145.5 L114.2,145.4 L114.5,145.4 L114.9,145.3 L115.2,145.3 L115.6,145.2 L116,145.2 L116.3,145.1 L116.7,145 L117,144.9 L117.4,144.9 L117.7,144.8 L118.1,144.7 L118.4,144.6 L118.8,144.6 L119.1,144.5 L119.5,144.4 L119.8,144.3 L120.2,144.2 L120.5,144.1 L120.9,144 L121.2,143.9 L121.6,143.8 L122,143.7 L122.3,143.6 L122.7,143.5 L123,143.4 L123.4,143.3 L123.7,143.2 L124.1,143.1 L124.4,143 L124.8,142.9 L125.1,142.7 L125.5,142.6 L125.8,142.5 L126.2,142.4 L126.5,142.3 L126.9,142.1 L127.3,142 L127.6,141.9 L128,141.8 L128.3,141.6 L128.7,141.5 L129,141.4 L129.4,141.2 L129.7,141.1 L130.1,140.9 L130.4,140.8 L130.8,140.7 L131.1,140.5 L131.5,140.4 L131.8,140.2 L132.2,140.1 L132.6,139.9 L132.9,139.8 L133.3,139.6 L133.6,139.5 L134,139.3 L134.3,139.2 L134.7,139 L135,138.9 L135.4,138.7 L135.7,138.6 L136.1,138.4 L136.4,138.2 L136.8,138.1 L137.1,137.9 L137.5,137.8 L137.8,137.6 L138.2,137.4 L138.6,137.3 L138.9,137.1 L139.3,136.9 L139.6,136.8 L140,136.6 L140.3,136.4 L140.7,136.3 L141,136.1 L141.4,135.9 L141.7,135.7 L142.1,135.6 L142.4,135.4 L142.8,135.2 L143.1,135 L143.5,134.9 L143.9,134.7 L144.2,134.5 L144.6,134.3 L144.9,134.1 L145.3,134 L145.6,133.8 L146,133.6 L146.3,133.4 L146.7,133.2 L147,133 L147.4,132.8 L147.7,132.7 L148.1,132.5 L148.4,132.3 L148.8,132.1 L149.2,131.9 L149.5,131.7 L149.9,131.5 L150.2,131.3 L150.6,131.1 L150.9,130.9 L151.3,130.7 L151.6,130.6 L152,130.4 L152.3,130.2 L152.7,130 L153,129.8 L153.4,129.6 L153.7,129.4 L154.1,129.2 L154.4,129 L154.8,128.8 L155.2,128.6 L155.5,128.4 L155.9,128.2 L156.2,128 L156.6,127.8 L156.9,127.6 L157.3,127.4 L157.6,127.2 L158,127 L158.3,126.7 L158.7,126.5 L159,126.3 L159.4,126.1 L159.7,125.9 L160.1,125.7 L160.5,125.5 L160.8,125.3 L161.2,125.1 L161.5,124.9 L161.9,124.7 L162.2,124.5 L162.6,124.2 L162.9,124 L163.3,123.8 L163.6,123.6 L164,123.4 L164.3,123.2 L164.7,123 L165,122.8 L165.4,122.5 L165.8,122.3 L166.1,122.1 L166.5,121.9 L166.8,121.7 L167.2,121.5 L167.5,121.3 L167.9,121 L168.2,120.8 L168.6,120.6 L168.9,120.4 L169.3,120.2 L169.6,119.9 L170,119.7 L170.3,119.5 L170.7,119.3 L171,119.1 L171.4,118.8 L171.8,118.6 L172.1,118.4 L172.5,118.2 L172.8,118 L173.2,117.7 L173.5,117.5 L173.9,117.3 L174.2,117.1 L174.6,116.9 L174.9,116.6 L175.3,116.4 L175.6,116.2 L176,116 L176.3,115.7 L176.7,115.5 L177.1,115.3 L177.4,115.1 L177.8,114.8 L178.1,114.6 L178.5,114.4 L178.8,114.2 L179.2,113.9 L179.5,113.7 L179.9,113.5 L180.2,113.2 L180.6,113 L180.9,112.8 L181.3,112.6 L181.6,112.3 L182,112.1 L182.4,111.9 L182.7,111.6 L183.1,111.4 L183.4,111.2 L183.8,111 L184.1,110.7 L184.5,110.5 L184.8,110.3 L185.2,110 L185.5,109.8 L185.9,109.6 L186.2,109.3 L186.6,109.1 L186.9,108.9 L187.3,108.6 L187.6,108.4 L188,108.2 L188.4,107.9 L188.7,107.7 L189.1,107.5 L189.4,107.2 L189.8,107 L190.1,106.8 L190.5,106.5 L190.8,106.3 L191.2,106.1 L191.5,105.8 L191.9,105.6 L192.2,105.4 L192.6,105.1 L192.9,104.9 L193.3,104.7 L193.7,104.4 L194,104.2 L194.4,103.9 L194.7,103.7 L195.1,103.5 L195.4,103.2 L195.8,103 L196.1,102.8 L196.5,102.5 L196.8,102.3 L197.2,102 L197.5,101.8 L197.9,101.6 L198.2,101.3 L198.6,101.1 L199,100.9 L199.3,100.6 L199.7,100.4 L200,100.1 L200.4,99.9 L200.7,99.7 L201.1,99.4 L201.4,99.2 L201.8,98.9 L202.1,98.7 L202.5,98.5 L202.8,98.2 L203.2,98 L203.5,97.7 L203.9,97.5 L204.2,97.3 L204.6,97 L205,96.8 L205.3,96.5 L205.7,96.3 L206,96 L206.4,95.8 L206.7,95.6 L207.1,95.3 L207.4,95.1 L207.8,94.8 L208.1,94.6 L208.5,94.4 L208.8,94.1 L209.2,93.9 L209.5,93.6 L209.9,93.4 L210.3,93.1 L210.6,92.9 L211,92.6 L211.3,92.4 L211.7,92.2 L212,91.9 L212.4,91.7 L212.7,91.4 L213.1,91.2 L213.4,90.9 L213.8,90.7 L214.1,90.5 L214.5,90.2 L214.8,90 L215.2,89.7 L215.6,89.5 L215.9,89.2 L216.3,89 L216.6,88.7 L217,88.5 L217.3,88.2 L217.7,88 L218,87.8 L218.4,87.5 L218.7,87.3 L219.1,87 L219.4,86.8 L219.8,86.5 L220.1,86.3 L220.5,86 L220.8,85.8 L221.2,85.5 L221.6,85.3 L221.9,85 L222.3,84.8 L222.6,84.5 L223,84.3 L223.3,84.1 L223.7,83.8 L224,83.6 L224.4,83.3 L224.7,83.1 L225.1,82.8 L225.4,82.6 L225.8,82.3 L226.1,82.1 L226.5,81.8 L226.9,81.6 L227.2,81.3 L227.6,81.1 L227.9,80.8 L228.3,80.6 L228.6,80.3 L229,80.1 L229.3,79.8 L229.7,79.6 L230,79.3 L230.4,79.1 L230.7,78.8 L231.1,78.6 L231.4,78.3 L231.8,78.1 L232.1,77.8 L232.5,77.6 L232.9,77.3 L233.2,77.1 L233.6,76.8 L233.9,76.6 L234.3,76.3 L234.6,76.1 L235,75.8 L235.3,75.6 L235.7,75.3 L236,75.1 L236.4,74.8 L236.7,74.6 L237.1,74.3 L237.4,74.1 L237.8,73.8 L238.2,73.6 L238.5,73.3 L238.9,73.1 L239.2,72.8 L239.6,72.6 L239.9,72.3 L240.3,72.1 L240.6,71.8 L241,71.6 L241.3,71.3 L241.7,71.1 L242,70.8 L242.4,70.6 L242.7,70.3 L243.1,70.1 L243.5,69.8 L243.8,69.6 L244.2,69.3 L244.5,69.1 L244.9,68.8 L245.2,68.6 L245.6,68.3 L245.9,68 L246.3,67.8 L246.6,67.5 L247,67.3 L247.3,67 L247.7,66.8 L248,66.5 L248.4,66.3 L248.7,66 L249.1,65.8 L249.5,65.5 L249.8,65.3 L250.2,65 L250.5,64.8 L250.9,64.5 L251.2,64.3 L251.6,64 L251.9,63.8 L252.3,63.5 L252.6,63.2 L253,63 L253.3,62.7 L253.7,62.5 L254,62.2 L254.4,62 L254.8,61.7 L255.1,61.5 L255.5,61.2 L255.8,61 L256.2,60.7 L256.5,60.5 L256.9,60.2 L257.2,59.9 L257.6,59.7 L257.9,59.4 L258.3,59.2 L258.6,58.9 L259,58.7 L259.3,58.4 L259.7,58.2 L260.1,57.9 L260.4,57.7 L260.8,57.4 L261.1,57.1 L261.5,56.9 L261.8,56.6 L262.2,56.4 L262.5,56.1 L262.9,55.9 L263.2,55.6 L263.6,55.4 L263.9,55.1 L264.3,54.9 L264.6,54.6 L265,54.3 L265.3,54.1 L265.7,53.8 L266.1,53.6 L266.4,53.3 L266.8,53.1 L267.1,52.8 L267.5,52.6 L267.8,52.3 L268.2,52 L268.5,51.8 L268.9,51.5 L269.2,51.3 L269.6,51 L269.9,50.8 L270.3,50.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"108.5\" cy=\"145.9\" r=\"3.2\" fill=\"currentColor\"/><text x=\"108.5\" y=\"165.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text></svg>",
+  "hint": "Write $\\frac{8}{x^2} = 8x^{-2}$. At $P$, $\\frac{dy}{dx} = 0$ leads to $x^3 = 8$.",
+  "answer": "(a) $\\dfrac{dy}{dx} = 2 - 16x^{-3}$ (b) $P(2, 6)$ (c) $\\dfrac{d^2y}{dx^2} = 48x^{-4}$, which is $3 > 0$ at $x = 2$, so $P$ is a minimum (d) $0 < x < 2$",
+  "solution": "**(a)** $y = 2x + 8x^{-2}$\n$$\\frac{dy}{dx} = 2 - 16x^{-3}$$\n**M1** for $x^{-2} \\to x^{-3}$, **A1** correct.\n\n**(b)** $2 - \\dfrac{16}{x^3} = 0 \\Rightarrow x^3 = 8 \\Rightarrow x = 2$ **M1 A1**\n\n$y = 4 + \\dfrac{8}{4} = 6$, so $P(2, 6)$. **A1**\n\n**(c)**\n$$\\frac{d^2y}{dx^2} = 48x^{-4}$$\nAt $x = 2$: $\\dfrac{48}{16} = 3 > 0$ **M1** (finding $\\frac{d^2y}{dx^2}$ and substituting $x = 2$)\n\nso $P$ is a **minimum**. **A1** (correct conclusion from correct working)\n\n**(d)** For $0 < x < 2$, $x^3 < 8$ so $\\frac{16}{x^3} > 2$ and $\\frac{dy}{dx} < 0$:\n$$0 < x < 2$$ **B1** (accept $0 < x \\le 2$)",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q13",
+  "topicId": "calc-stationary-points",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 8,
+  "question": "Let $f$ be the function defined by $f(x) = x^{\\frac23}(x - 5)$ for all real numbers $x$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f'(x) = \\dfrac{5(x - 2)}{3\\sqrt[3]{x}}$ for $x \\ne 0$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find all critical points of $f$. Explain why $x = 0$ is a critical point.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the $x$-coordinate of each relative maximum and each relative minimum of $f$. Justify your answers.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the open interval on which $f$ is decreasing.",
+    "marks": 1
+   }
+  ],
+  "hint": "Expand first: $f(x) = x^{\\frac53} - 5x^{\\frac23}$. A critical point is where $f'(x) = 0$ **or** where $f'(x)$ does not exist. Use a sign chart for $f'$.",
+  "answer": "(a) shown (b) $x = 0$ ($f'$ undefined) and $x = 2$ ($f' = 0$) (c) relative maximum at $x = 0$; relative minimum at $x = 2$ (d) $(0, 2)$",
+  "solution": "**(a)** $f(x) = x^{\\frac53} - 5x^{\\frac23}$\n$$f'(x) = \\tfrac53x^{\\frac23} - \\tfrac{10}{3}x^{-\\frac13} = \\frac{5x^{\\frac23} \\cdot x^{\\frac13} - 10}{3x^{\\frac13}} = \\frac{5x - 10}{3\\sqrt[3]{x}} = \\frac{5(x - 2)}{3\\sqrt[3]{x}}$$\n1 pt: correct derivative of both terms. 1 pt: algebra to reach the given form.\n\n**(b)** $f'(x) = 0$ when $x = 2$. $f'(x)$ is undefined at $x = 0$ (division by $\\sqrt[3]{0} = 0$), while $f(0) = 0$ is defined, so $x = 0$ is also a critical point.\n\n1 pt: $x = 2$. 1 pt: $x = 0$ with reason.\n\n**(c)** Sign chart for $f'(x) = \\dfrac{5(x - 2)}{3\\sqrt[3]{x}}$:\n\n| interval | $x < 0$ | $0 < x < 2$ | $x > 2$ |\n|---|---|---|---|\n| $x - 2$ | $-$ | $-$ | $+$ |\n| $\\sqrt[3]{x}$ | $-$ | $+$ | $+$ |\n| $f'(x)$ | $+$ | $-$ | $+$ |\n\n$f$ has a **relative maximum at $x = 0$** because $f'$ changes from positive to negative there.\n\n$f$ has a **relative minimum at $x = 2$** because $f'$ changes from negative to positive there.\n\n1 pt: sign analysis. 1 pt: relative max at $x = 0$ with justification. 1 pt: relative min at $x = 2$ with justification.\n\n(The relative maximum at $x = 0$ is a sharp point, or cusp: the graph has a vertical tangent there, which is why $f'$ does not exist. The minimum value is $f(2) = -3\\sqrt[3]{4}$.)\n\n**(d)** $f'(x) < 0$ on $0 < x < 2$, so $f$ is decreasing on $(0, 2)$. 1 pt",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q14",
+  "topicId": "calc-stationary-points",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The curve $C$ has equation $y = x^3 + kx^2 + 3x$, where $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the set of values of $k$ for which $C$ has two distinct stationary points."
+   },
+   {
+    "label": "b",
+    "prompt": "In the case $k = 3$, find the coordinates of the stationary point of $C$ and determine its nature."
+   }
+  ],
+  "hint": "Stationary points are the roots of the quadratic $\\frac{dy}{dx} = 0$. When does a quadratic have two distinct real roots?",
+  "answer": "(a) $k < -3$ or $k > 3$ (b) $(-1, -1)$, a stationary point of inflection",
+  "solution": "**(a)**\n$$\\frac{dy}{dx} = 3x^2 + 2kx + 3$$\nTwo distinct stationary points means $3x^2 + 2kx + 3 = 0$ has two distinct real roots, so the discriminant is positive:\n$$(2k)^2 - 4(3)(3) > 0 \\;\\Rightarrow\\; 4k^2 > 36 \\;\\Rightarrow\\; k^2 > 9$$\n$$k < -3 \\quad \\text{or} \\quad k > 3$$\n\n**(b)** $k = 3$: $\\dfrac{dy}{dx} = 3x^2 + 6x + 3 = 3(x + 1)^2$ (discriminant $0$, a repeated root).\n\nStationary point at $x = -1$: $y = -1 + 3 - 3 = -1$, so $(-1, -1)$.\n\n$\\frac{d^2y}{dx^2} = 6x + 6 = 0$ at $x = -1$, so the second-derivative test is inconclusive. But $\\frac{dy}{dx} = 3(x + 1)^2 \\ge 0$ on both sides: no sign change. Hence $(-1, -1)$ is a **stationary point of inflection**.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-stationary-points-q15",
+  "topicId": "calc-stationary-points",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Find the coordinates of all the stationary points on the curve $y = (x^2 - 1)^3$ and determine the nature of each.",
+  "hint": "Expand the bracket, differentiate, then factorise $\\frac{dy}{dx}$ fully – look for a perfect square. Do not divide through by anything.",
+  "answer": "$(0, -1)$ minimum; $(1, 0)$ and $(-1, 0)$ stationary points of inflection",
+  "solution": "Expand: $(x^2 - 1)^3 = x^6 - 3x^4 + 3x^2 - 1$.\n\n$$\\frac{dy}{dx} = 6x^5 - 12x^3 + 6x = 6x(x^4 - 2x^2 + 1) = 6x(x^2 - 1)^2$$\n\nSo $\\frac{dy}{dx} = 0$ when $x = 0$, $x = 1$ or $x = -1$ (factorising, not dividing, keeps all three).\n\n$y$-values: $x = 0$: $y = -1$; $x = \\pm1$: $y = 0$.\n\n**Nature** – since $(x^2 - 1)^2 \\ge 0$, the sign of $\\frac{dy}{dx}$ is the sign of $6x$ (except at $x = \\pm1$, where it is $0$):\n- $x = 0$: $\\frac{dy}{dx}$ goes from negative to positive, so $(0, -1)$ is a **minimum**.\n- $x = 1$: $\\frac{dy}{dx} > 0$ on both sides (e.g. at $0.9$ and $1.1$), no sign change: **stationary point of inflection**.\n- $x = -1$: $\\frac{dy}{dx} < 0$ on both sides, no sign change: **stationary point of inflection**.\n\n(Check: $\\frac{d^2y}{dx^2} = 30x^4 - 36x^2 + 6$ is $6 > 0$ at $x = 0$, confirming the minimum, but is $0$ at $x = \\pm1$, so the second-derivative test could not have classified those two points.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q16",
+  "topicId": "calc-stationary-points",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider the cubic equation $x^3 - 3px + q = 0$, where $p$ and $q$ are real constants. Let $f(x) = x^3 - 3px + q$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why, if $p \\le 0$, the equation has exactly one real root."
+   },
+   {
+    "label": "b",
+    "prompt": "Given $p > 0$, find the coordinates of the stationary points of $y = f(x)$ in terms of $p$ and $q$, and state which is the maximum."
+   },
+   {
+    "label": "c",
+    "prompt": "Hence prove that, for $p > 0$, the equation has three distinct real roots if and only if $q^2 < 4p^3$."
+   },
+   {
+    "label": "d",
+    "prompt": "Find how many integer values of $q$ make $x^3 - 12x + q = 0$ have three distinct real roots."
+   }
+  ],
+  "hint": "A cubic with a positive $x^3$ term crosses the $x$-axis three times exactly when its local maximum is above the axis and its local minimum is below it.",
+  "answer": "(a) $f'(x) = 3x^2 - 3p \\ge 0$, so $f$ is increasing and crosses the axis exactly once (b) maximum $\\left(-\\sqrt p, q + 2p\\sqrt p\\right)$, minimum $\\left(\\sqrt p, q - 2p\\sqrt p\\right)$ (c) proof (d) $31$",
+  "solution": "**(a)** $f'(x) = 3x^2 - 3p$. If $p \\le 0$ then $f'(x) \\ge 0$, with equality at most at the single point $x = 0$, so $f$ is increasing for all $x$ and can cross the $x$-axis at most once. Since $f(x) \\to -\\infty$ as $x \\to -\\infty$ and $f(x) \\to +\\infty$ as $x \\to +\\infty$, it crosses exactly once.\n\n**(b)** $f'(x) = 3(x^2 - p) = 0 \\Rightarrow x = \\pm\\sqrt p$.\n\n$f(-\\sqrt p) = -p\\sqrt p + 3p\\sqrt p + q = q + 2p\\sqrt p$\n\n$f(\\sqrt p) = p\\sqrt p - 3p\\sqrt p + q = q - 2p\\sqrt p$\n\n$f''(x) = 6x$: negative at $x = -\\sqrt p$ (**maximum** at $(-\\sqrt p, q + 2p\\sqrt p)$), positive at $x = \\sqrt p$ (**minimum** at $(\\sqrt p, q - 2p\\sqrt p)$).\n\n**(c)** $f$ increases up to $x = -\\sqrt p$, decreases between $-\\sqrt p$ and $\\sqrt p$, then increases. On each of these three pieces it can cross the $x$-axis at most once. It crosses on all three pieces (three distinct roots) exactly when the maximum value is positive and the minimum value is negative (if either is $0$, two roots merge into a repeated root):\n$$q + 2p\\sqrt p > 0 \\quad \\text{and} \\quad q - 2p\\sqrt p < 0$$\n$$\\iff -2p^{\\frac32} < q < 2p^{\\frac32} \\iff |q| < 2p^{\\frac32} \\iff q^2 < 4p^3 \\qquad \\blacksquare$$\n\n**(d)** $x^3 - 12x + q$ has $3p = 12$, so $p = 4$ and $4p^3 = 256$. We need $q^2 < 256$, i.e. $-16 < q < 16$, giving the integers $-15, -14, \\ldots, 15$: **31** values.",
+  "linkedTopicIds": [
+   "pure-curve-sketching",
+   "alg-quadratic-inequalities"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "calc-stationary-points-q17",
+  "topicId": "calc-stationary-points",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$$f(x) = x^4 + px^2$$\nwhere $p$ is a real constant. Determine, in terms of $p$, the number of stationary points of $y = f(x)$, and the coordinates and nature of each. Consider all possible cases for $p$.",
+  "hint": "Factorise $f'(x) = 4x^3 + 2px$; do not divide by $x$. The cases are $p > 0$, $p = 0$ and $p < 0$. Watch out for $f''(0) = 0$ when $p = 0$.",
+  "answer": "$p > 0$: one stationary point, $(0, 0)$, a minimum. $p = 0$: one stationary point, $(0, 0)$, a minimum. $p < 0$: three stationary points: $(0, 0)$ a maximum and $\\left(\\pm\\sqrt{-\\frac p2}, -\\frac{p^2}{4}\\right)$ two minima.",
+  "solution": "$$f'(x) = 4x^3 + 2px = 2x(2x^2 + p), \\qquad f''(x) = 12x^2 + 2p$$\n\n$x = 0$ is always a stationary point (with $f(0) = 0$). Other stationary points satisfy $x^2 = -\\frac{p}{2}$.\n\n**Case $p > 0$:** $x^2 = -\\frac p2 < 0$ has no solutions, so there is one stationary point, $(0, 0)$. $f''(0) = 2p > 0$: **minimum**.\n\n**Case $p = 0$:** $f(x) = x^4$ and $f'(x) = 4x^3$, so again only $(0, 0)$. Here $f''(0) = 0$, which is **inconclusive** (it does not mean an inflection). $f'(x) = 4x^3$ changes from negative to positive at $0$, so $(0, 0)$ is a **minimum**.\n\n**Case $p < 0$:** $x^2 = -\\frac p2 > 0$ gives two more points, $x = \\pm\\sqrt{-\\frac p2}$, so there are **three** stationary points.\n- $x = 0$: $f''(0) = 2p < 0$, **maximum** at $(0, 0)$.\n- $x = \\pm\\sqrt{-\\frac p2}$: $f'' = 12\\left(-\\frac p2\\right) + 2p = -4p > 0$, **minima**. Their $y$-coordinate is\n$$\\left(-\\tfrac p2\\right)^2 + p\\left(-\\tfrac p2\\right) = \\tfrac{p^2}{4} - \\tfrac{p^2}{2} = -\\tfrac{p^2}{4}$$\ngiving $\\left(\\pm\\sqrt{-\\frac p2}, -\\frac{p^2}{4}\\right)$.\n\nSo the graph changes from a single \"U\" ($p \\ge 0$) to a \"W\" shape ($p < 0$) as $p$ passes through $0$.",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-stationary-points-q18",
+  "topicId": "calc-stationary-points",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A cubic curve $y = f(x)$ has a maximum point at $(-1, 7)$ and a minimum point at $(3, -25)$.\n\nFind $f(x)$.",
+  "hint": "Let $f(x) = ax^3 + bx^2 + cx + d$. The quadratic $f'(x)$ has roots $-1$ and $3$, so $f'(x) = 3a(x + 1)(x - 3)$. Compare coefficients to write $b$ and $c$ in terms of $a$.",
+  "answer": "$f(x) = x^3 - 3x^2 - 9x + 2$",
+  "solution": "Let $f(x) = ax^3 + bx^2 + cx + d$, so $f'(x) = 3ax^2 + 2bx + c$.\n\n$f'$ is a quadratic with roots $x = -1$ and $x = 3$, and leading coefficient $3a$, so\n$$3ax^2 + 2bx + c = 3a(x + 1)(x - 3) = 3ax^2 - 6ax - 9a$$\nComparing coefficients: $2b = -6a \\Rightarrow b = -3a$, and $c = -9a$. So\n$$f(x) = a(x^3 - 3x^2 - 9x) + d$$\n\nUse the two points:\n\n$f(-1) = a(-1 - 3 + 9) + d = 5a + d = 7$\n\n$f(3) = a(27 - 27 - 27) + d = -27a + d = -25$\n\nSubtract: $32a = 32$, so $a = 1$ and $d = 2$:\n$$f(x) = x^3 - 3x^2 - 9x + 2$$\n\n**Check the natures:** $f''(x) = 6x - 6$; $f''(-1) = -12 < 0$ (maximum ✓) and $f''(3) = 12 > 0$ (minimum ✓). (If $a$ had come out negative, the natures would have been the wrong way round and no such cubic would exist.)",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

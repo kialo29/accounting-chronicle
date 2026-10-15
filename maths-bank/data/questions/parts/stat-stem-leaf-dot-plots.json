@@ -1,0 +1,272 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The stem-and-leaf diagram shows 11 values.\n\n$$\\begin{array}{r|l} 1 & 2\\ \\ 5\\ \\ 8 \\\\ 2 & 0\\ \\ 3\\ \\ 3\\ \\ 7 \\\\ 3 & 1\\ \\ 4\\ \\ 6 \\\\ 4 & 2 \\end{array}$$\n\nKey: $1 \\mid 2$ means 12\n\nFind the median and the range.",
+  "hint": "The leaves are already in order. Count along to the $\\frac{11+1}{2}$th leaf.",
+  "answer": "Median $= 23$, range $= 30$",
+  "solution": "Written out in order, the values are\n$$12,\\ 15,\\ 18,\\ 20,\\ 23,\\ 23,\\ 27,\\ 31,\\ 34,\\ 36,\\ 42$$\n\n**Median:** $n = 11$, so the median is the $\\frac{11+1}{2} = 6$th value. The first row has 3 leaves, so the 6th value is the 3rd leaf of the second row: **23**.\n\n**Range:** largest $-$ smallest $= 42 - 12 = 30$.",
+  "id": "stat-stem-leaf-dot-plots-q01",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "One more value, 35, is added to the data. The new diagram is shown.\n\n$$\\begin{array}{r|l} 1 & 2\\ \\ 5\\ \\ 8 \\\\ 2 & 0\\ \\ 3\\ \\ 3\\ \\ 7 \\\\ 3 & 1\\ \\ 4\\ \\ 5\\ \\ 6 \\\\ 4 & 2 \\end{array}$$\n\nKey: $1 \\mid 2$ means 12\n\nFind the median and the range.",
+  "hint": "There are now 12 values, an even number. The median is halfway between two values.",
+  "answer": "Median $= 25$, range $= 30$",
+  "solution": "**What changed:** one extra value (35), so $n = 12$ is even.\n\nValues in order:\n$$12,\\ 15,\\ 18,\\ 20,\\ 23,\\ 23,\\ 27,\\ 31,\\ 34,\\ 35,\\ 36,\\ 42$$\n\n**Median:** the $\\frac{12+1}{2} = 6.5$th value, halfway between the 6th (23) and 7th (27):\n$$\\frac{23 + 27}{2} = 25$$\n\n**Range:** $42 - 12 = 30$ (unchanged, because 35 is neither the smallest nor the largest value).",
+  "id": "stat-stem-leaf-dot-plots-q02",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The diagram is the same as in the previous question, but now the key is different.\n\n$$\\begin{array}{r|l} 1 & 2\\ \\ 5\\ \\ 8 \\\\ 2 & 0\\ \\ 3\\ \\ 3\\ \\ 7 \\\\ 3 & 1\\ \\ 4\\ \\ 5\\ \\ 6 \\\\ 4 & 2 \\end{array}$$\n\nKey: $1 \\mid 2$ means 1.2 cm\n\nFind the median and the range.",
+  "hint": "The positions of the median and the extreme values have not changed. Only what each stem and leaf is worth has changed.",
+  "answer": "Median $= 2.5$ cm, range $= 3.0$ cm",
+  "solution": "**What changed:** only the key. The stem is now the units digit and the leaf is the tenths digit, so every value is $\\frac{1}{10}$ of what it was.\n\nValues: $1.2,\\ 1.5,\\ 1.8,\\ 2.0,\\ 2.3,\\ 2.3,\\ 2.7,\\ 3.1,\\ 3.4,\\ 3.5,\\ 3.6,\\ 4.2$ cm\n\n**Median:** $\\frac{2.3 + 2.7}{2} = 2.5$ cm\n\n**Range:** $4.2 - 1.2 = 3.0$ cm\n\nBoth answers are $\\frac{1}{10}$ of the previous ones. Always read the key before reading any value.",
+  "id": "stat-stem-leaf-dot-plots-q03",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "This time the largest value, 4.2 cm, is replaced by 7.2 cm. Stems with no leaves are kept in the diagram.\n\n$$\\begin{array}{r|l} 1 & 2\\ \\ 5\\ \\ 8 \\\\ 2 & 0\\ \\ 3\\ \\ 3\\ \\ 7 \\\\ 3 & 1\\ \\ 4\\ \\ 5\\ \\ 6 \\\\ 4 &  \\\\ 5 &  \\\\ 6 &  \\\\ 7 & 2 \\end{array}$$\n\nKey: $1 \\mid 2$ means 1.2 cm\n\nFind the median and the range.",
+  "hint": "Count only the leaves. Do the empty rows add any values?",
+  "answer": "Median $= 2.5$ cm, range $= 6.0$ cm",
+  "solution": "**What changed:** the largest value moved from 4.2 to 7.2, so the stems 4, 5 and 6 are now empty.\n\nEmpty stems contain **no** data values: they are only there to keep the scale even and show the gap. There are still 12 leaves:\n$$1.2,\\ 1.5,\\ 1.8,\\ 2.0,\\ 2.3,\\ 2.3,\\ 2.7,\\ 3.1,\\ 3.4,\\ 3.5,\\ 3.6,\\ 7.2$$\n\n**Median:** still the mean of the 6th and 7th values: $\\frac{2.3 + 2.7}{2} = 2.5$ cm (unchanged).\n\n**Range:** $7.2 - 1.2 = 6.0$ cm (doubled).\n\nChanging an extreme value affects the range but not the median. Counting the empty stems 4, 5, 6 as values would wrongly give $n = 15$ and a median of 3.1.",
+  "id": "stat-stem-leaf-dot-plots-q04",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The ages of 15 people at a gym class are:\n$$34,\\ 27,\\ 45,\\ 19,\\ 32,\\ 38,\\ 27,\\ 51,\\ 42,\\ 36,\\ 29,\\ 33,\\ 27,\\ 40,\\ 48$$\n\n(a) Draw an ordered stem-and-leaf diagram to show these ages. Include a key.\n\n(b) Find the median age and the modal age.",
+  "hint": "Use the tens digits 1 to 5 as stems. Put each units digit in its row, then rewrite each row with the leaves in increasing order.",
+  "answer": "(a) $1 \\mid 9$; $2 \\mid 7\\ 7\\ 7\\ 9$; $3 \\mid 2\\ 3\\ 4\\ 6\\ 8$; $4 \\mid 0\\ 2\\ 5\\ 8$; $5 \\mid 1$; Key: $1 \\mid 9$ means 19 (b) Median $= 34$, mode $= 27$",
+  "solution": "(a) Stems are the tens digits 1, 2, 3, 4, 5. First place each leaf in the order the data are given (unordered):\n$$\\begin{array}{r|l} 1 & 9 \\\\ 2 & 7\\ \\ 7\\ \\ 9\\ \\ 7 \\\\ 3 & 4\\ \\ 2\\ \\ 8\\ \\ 6\\ \\ 3 \\\\ 4 & 5\\ \\ 2\\ \\ 0\\ \\ 8 \\\\ 5 & 1 \\end{array}$$\n\nThen put the leaves in each row in order:\n$$\\begin{array}{r|l} 1 & 9 \\\\ 2 & 7\\ \\ 7\\ \\ 7\\ \\ 9 \\\\ 3 & 2\\ \\ 3\\ \\ 4\\ \\ 6\\ \\ 8 \\\\ 4 & 0\\ \\ 2\\ \\ 5\\ \\ 8 \\\\ 5 & 1 \\end{array}$$\n\nKey: $1 \\mid 9$ means 19 years. Check: $1 + 4 + 5 + 4 + 1 = 15$ leaves ✓\n\n(b) **Median:** the $\\frac{15+1}{2} = 8$th value. The first two rows hold 5 values, so the 8th is the 3rd leaf of the third row: **34**.\n\n(Counting to the 8th leaf in the *unordered* diagram would give 38, which is wrong; the diagram must be ordered first.)\n\n**Mode:** 27 appears three times, so the modal age is **27**.",
+  "id": "stat-stem-leaf-dot-plots-q05",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The back-to-back stem-and-leaf diagram shows the scores of 12 boys and 12 girls in a test marked out of 50.\n\n$$\\begin{array}{r|c|l} \\text{Boys} & & \\text{Girls} \\\\ \\hline 8\\ \\ 5\\ \\ 2 & 1 & 4\\ \\ 9 \\\\ 9\\ \\ 6\\ \\ 6\\ \\ 3\\ \\ 0 & 2 & 1\\ \\ 2\\ \\ 5\\ \\ 8 \\\\ 7\\ \\ 4\\ \\ 1 & 3 & 0\\ \\ 3\\ \\ 3\\ \\ 6\\ \\ 9 \\\\ 5 & 4 & 2 \\end{array}$$\n\nKey: $2 \\mid 1 \\mid$ means 12 for the boys; $\\mid 1 \\mid 4$ means 14 for the girls\n\nFind the median and the range of the **boys'** values.",
+  "hint": "On the left the leaves are read outwards from the stem: the leaf nearest the stem is the smallest in that row.",
+  "answer": "Median $= 26$, range $= 33$",
+  "solution": "Read the boys' side outwards from the stem (right to left). Each leaf is still the units digit:\n$$12,\\ 15,\\ 18,\\ 20,\\ 23,\\ 26,\\ 26,\\ 29,\\ 31,\\ 34,\\ 37,\\ 45$$\n\n(So the \"2\" next to stem 1 is 12, not 21.)\n\n**Median:** $n = 12$, so the median is halfway between the 6th and 7th values: $\\frac{26 + 26}{2} = 26$.\n\n**Range:** $45 - 12 = 33$.\n\n(For comparison, the girls' median is 29 and their range is 28.)",
+  "id": "stat-stem-leaf-dot-plots-q06",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 150\" width=\"360\" height=\"150\"><line x1=\"15\" y1=\"102\" x2=\"345\" y2=\"102\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"102\" x2=\"25\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"25\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"76.7\" y1=\"102\" x2=\"76.7\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"76.7\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"128.3\" y1=\"102\" x2=\"128.3\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"128.3\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"180\" y1=\"102\" x2=\"180\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"231.7\" y1=\"102\" x2=\"231.7\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"231.7\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"283.3\" y1=\"102\" x2=\"283.3\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"283.3\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"335\" y1=\"102\" x2=\"335\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"335\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><circle cx=\"25\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"25\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"25\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"76.7\" cy=\"33\" r=\"5\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"128.3\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"231.7\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"231.7\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"335\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><text x=\"180\" y=\"144\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Number of goals in a match</text></svg>",
+  "question": "The dot plot shows the number of goals scored in each of 20 football matches. Each dot represents one match.\n\n(a) In how many matches were exactly 2 goals scored?\n\n(b) Write down the mode.\n\n(c) Work out the range.",
+  "hint": "Count the dots in each column. The mode is the value with the tallest column.",
+  "answer": "(a) 5 (b) 1 goal (c) 6 goals",
+  "solution": "(a) The column above 2 has **5** dots, so 5 matches had exactly 2 goals.\n\n(b) The tallest column is above 1 (6 dots), so the mode is **1 goal**.\n\n(c) The smallest value is 0 and the largest is 6 (one match), so the range is $6 - 0 = 6$ goals.\n\nNotice the gap at 5: no match had exactly 5 goals, and the single 6-goal match stands apart from the rest.",
+  "id": "stat-stem-leaf-dot-plots-q07",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 162\" width=\"360\" height=\"162\"><line x1=\"15\" y1=\"114\" x2=\"345\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"114\" x2=\"25\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"25\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"87\" y1=\"114\" x2=\"87\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"87\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"149\" y1=\"114\" x2=\"149\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"149\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"211\" y1=\"114\" x2=\"211\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"211\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"273\" y1=\"114\" x2=\"273\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"273\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"335\" y1=\"114\" x2=\"335\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"335\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><circle cx=\"25\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"33\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"335\" cy=\"105\" r=\"5\" fill=\"currentColor\"/><circle cx=\"335\" cy=\"93\" r=\"5\" fill=\"currentColor\"/><circle cx=\"335\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><text x=\"180\" y=\"156\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Number of books read</text></svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The dot plot shows the number of books read last month by 19 students.\n\nRhys writes: \"The tallest stack of dots is above 1, so the median number of books is 1.\"\n\nExplain Rhys's mistake and find the correct median.",
+  "hint": "What does the tallest stack tell you? To find the median, count dots from the left.",
+  "answer": "The tallest stack gives the mode, not the median. Median $= 3$ books",
+  "solution": "The tallest stack shows the most common value, which is the **mode** (1 book). The median is the **middle** value when the data are in order, which has nothing to do with which stack is tallest.\n\nThere are 19 dots, so the median is the $\\frac{19+1}{2} = 10$th value. Counting from the left:\n* 0 books: 1 dot (1st)\n* 1 book: 7 dots (2nd to 8th)\n* 2 books: 1 dot (9th)\n* 3 books: 3 dots (10th to 12th)\n\nThe 10th value is 3, so the **median is 3 books**.",
+  "id": "stat-stem-leaf-dot-plots-q08",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"360\" height=\"240\"><line x1=\"50\" y1=\"196\" x2=\"346\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"196\" x2=\"50\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"46\" y1=\"196\" x2=\"50\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"46\" y1=\"165.7\" x2=\"50\" y2=\"165.7\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"165.7\" x2=\"342\" y2=\"165.7\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"169.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"46\" y1=\"135.3\" x2=\"50\" y2=\"135.3\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"135.3\" x2=\"342\" y2=\"135.3\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"139.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"46\" y1=\"105\" x2=\"50\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"105\" x2=\"342\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"109\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"46\" y1=\"74.7\" x2=\"50\" y2=\"74.7\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"74.7\" x2=\"342\" y2=\"74.7\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"78.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"46\" y1=\"44.3\" x2=\"50\" y2=\"44.3\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"44.3\" x2=\"342\" y2=\"44.3\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"48.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"46\" y1=\"14\" x2=\"50\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"14\" x2=\"342\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">12</text><text x=\"13\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 13 105)\">Frequency</text><rect x=\"58\" y=\"150.5\" width=\"56.8\" height=\"45.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"114.8\" y=\"74.7\" width=\"56.8\" height=\"121.3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"171.6\" y=\"29.2\" width=\"56.8\" height=\"166.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"228.4\" y=\"105\" width=\"56.8\" height=\"91\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"285.2\" y=\"165.7\" width=\"56.8\" height=\"30.3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"196\" x2=\"58\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"58\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"114.8\" y1=\"196\" x2=\"114.8\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"114.8\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">25</text><line x1=\"171.6\" y1=\"196\" x2=\"171.6\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"171.6\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><line x1=\"228.4\" y1=\"196\" x2=\"228.4\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"228.4\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">35</text><line x1=\"285.2\" y1=\"196\" x2=\"285.2\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"285.2\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40</text><line x1=\"342\" y1=\"196\" x2=\"342\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"342\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">45</text><text x=\"200\" y=\"234\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Time, t (minutes)</text></svg>",
+  "question": "The histogram shows the times, $t$ minutes, taken by some runners to complete a 5 km run. The class $20 \\le t < 25$ includes times from 20 minutes up to, but not including, 25 minutes, and so on.\n\n(a) How many runners took the run?\n\n(b) How many runners took at least 30 minutes but less than 35 minutes?\n\n(c) What fraction of the runners finished in less than 30 minutes?\n\n(d) Explain why there are no gaps between the bars.",
+  "hint": "Read the height of each bar on the frequency axis. All the classes have the same width.",
+  "answer": "(a) 30 (b) 11 (c) $\\frac{11}{30}$ (d) Time is continuous, so the classes join with no gaps.",
+  "solution": "Frequencies from the bar heights: $20 \\le t < 25$: 3, $25 \\le t < 30$: 8, $30 \\le t < 35$: 11, $35 \\le t < 40$: 6, $40 \\le t < 45$: 2.\n\n(a) $3 + 8 + 11 + 6 + 2 = 30$ runners.\n\n(b) The bar for $30 \\le t < 35$ has height **11**.\n\n(c) Less than 30 minutes: $3 + 8 = 11$ runners, so the fraction is $\\frac{11}{30}$.\n\n(d) Time is **continuous** data: every time from 20 to 45 minutes belongs to exactly one class, and each class starts where the previous one ends. So the bars touch. (Gaps are used in bar charts for separate categories.)",
+  "id": "stat-stem-leaf-dot-plots-q09",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The back-to-back stem-and-leaf diagram shows the scores of two teams in a quiz.\n\n$$\\begin{array}{r|c|l} \\text{Team A} & & \\text{Team B} \\\\ \\hline 9\\ \\ 7\\ \\ 4 & 1 & 5\\ \\ 8 \\\\ 8\\ \\ 6\\ \\ 2 & 2 & 3\\ \\ 4\\ \\ 9 \\\\ 5\\ \\ 1\\ \\ 0 & 3 & 2\\ \\ 6\\ \\ 6\\ \\ 7 \\\\ 3 & 4 & 1\\ \\ 5 \\end{array}$$\n\nKey: $4 \\mid 1 \\mid$ means 14 for Team A; $\\mid 1 \\mid 5$ means 15 for Team B\n\nGrace's working for the median of Team A is shown.\n\nLine 1: Team A scores: $19, 17, 14, 28, 26, 22, 35, 31, 30, 43$\n\nLine 2: There are 10 scores, so the median is halfway between the 5th and 6th.\n\nLine 3: Median $= \\frac{26 + 22}{2} = 24$\n\nIdentify Grace's mistake, explain it, and find the correct median for Team A.",
+  "hint": "On the left-hand side, which leaf in each row is the smallest value?",
+  "answer": "She read the left-hand leaves from left to right, so her list is not in order. Correct median $= 27$",
+  "solution": "The mistake is in **Line 1**. Grace read the Team A leaves from left to right, as you would on the right-hand side. On the left of a back-to-back diagram the leaves are written outwards from the stem, so the **smallest** value in each row is the leaf **closest to the stem**. Her list is not in order, so the 5th and 6th values in it are not the middle values.\n\nReading outwards from the stem gives the scores in order:\n$$14,\\ 17,\\ 19,\\ 22,\\ 26,\\ 28,\\ 30,\\ 31,\\ 35,\\ 43$$\n\nLine 2 is correct: with 10 scores, the median is halfway between the 5th and 6th values:\n$$\\text{median} = \\frac{26 + 28}{2} = 27$$",
+  "id": "stat-stem-leaf-dot-plots-q10",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "question": "Two classes sat the same test. Their percentage marks are shown below.\n\n$$\\begin{array}{r|c|l} \\text{Class X} & & \\text{Class Y} \\\\ \\hline  & 3 & 7 \\\\ 8\\ \\ 5 & 4 & 2\\ \\ 9 \\\\ 9\\ \\ 7\\ \\ 3\\ \\ 2 & 5 & 0\\ \\ 4\\ \\ 8 \\\\ 8\\ \\ 6\\ \\ 4\\ \\ 4\\ \\ 1 & 6 & 2\\ \\ 5\\ \\ 7\\ \\ 9 \\\\ 3\\ \\ 0 & 7 & 1\\ \\ 6\\ \\ 8 \\\\  & 8 & 4 \\end{array}$$\n\nKey: $5 \\mid 4 \\mid$ means 45% for Class X; $\\mid 3 \\mid 7$ means 37% for Class Y\n\nMr Patel says, \"Class X did better on average, and their marks were more consistent.\"\n\nUse the median and the range of each class to decide whether Mr Patel is right. Explain your answer.",
+  "hint": "Count the leaves on each side first. The rows for stems 3 and 8 have no Class X leaves, so they contain no Class X marks.",
+  "answer": "Class X: median 61%, range 28%. Class Y: median 63.5%, range 47%. He is only half right: Class Y did better on average (higher median), but Class X was more consistent (smaller range).",
+  "solution": "**Class X** (read outwards from the stem; stems 3 and 8 have no Class X leaves, so they add nothing):\n$$45,\\ 48,\\ 52,\\ 53,\\ 57,\\ 59,\\ 61,\\ 64,\\ 64,\\ 66,\\ 68,\\ 70,\\ 73$$\n$n = 13$, median $=$ 7th value $= 61\\%$, range $= 73 - 45 = 28\\%$.\n\n**Class Y**:\n$$37,\\ 42,\\ 49,\\ 50,\\ 54,\\ 58,\\ 62,\\ 65,\\ 67,\\ 69,\\ 71,\\ 76,\\ 78,\\ 84$$\n$n = 14$, median $= \\frac{62 + 65}{2} = 63.5\\%$, range $= 84 - 37 = 47\\%$.\n\n**Comparison:**\n* Average: Class Y's median (63.5%) is higher than Class X's (61%), so on average **Class Y** did better. Mr Patel is wrong about this.\n* Consistency: Class X's range (28%) is much smaller than Class Y's (47%), so **Class X's** marks were more consistent. He is right about this.\n\nSo Mr Patel is only partly correct.",
+  "id": "stat-stem-leaf-dot-plots-q11",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Here are the resting pulse rates, in beats per minute, of 15 people.\n$$72,\\ 85,\\ 64,\\ 91,\\ 78,\\ 69,\\ 73,\\ 88,\\ 62,\\ 75,\\ 80,\\ 77,\\ 66,\\ 84,\\ 73$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show this information in an ordered stem-and-leaf diagram.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the median pulse rate.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the range of the pulse rates.",
+    "marks": 1
+   }
+  ],
+  "hint": "Use stems 6, 7, 8 and 9. Do not forget the key.",
+  "answer": "(a) $6 \\mid 2\\ 4\\ 6\\ 9$; $7 \\mid 2\\ 3\\ 3\\ 5\\ 7\\ 8$; $8 \\mid 0\\ 4\\ 5\\ 8$; $9 \\mid 1$; Key: $6 \\mid 2$ means 62 beats per minute (b) 75 beats per minute (c) 29 beats per minute",
+  "solution": "(a)\n$$\\begin{array}{r|l} 6 & 2\\ \\ 4\\ \\ 6\\ \\ 9 \\\\ 7 & 2\\ \\ 3\\ \\ 3\\ \\ 5\\ \\ 7\\ \\ 8 \\\\ 8 & 0\\ \\ 4\\ \\ 5\\ \\ 8 \\\\ 9 & 1 \\end{array}$$\n\nKey: $6 \\mid 2$ means 62 beats per minute\n\n**B2** for a fully correct ordered diagram (**B1** for a correct unordered diagram, or ordered with one error); **B1** for a correct key.\n\n(b) $n = 15$, so the median is the 8th value. Rows: 4 leaves, then the 4th leaf of the second row: **75** beats per minute. **B1** (ft from an ordered diagram)\n\n(c) $91 - 62 = 29$ beats per minute. **B1**",
+  "id": "stat-stem-leaf-dot-plots-q12",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 138\" width=\"360\" height=\"138\"><line x1=\"15\" y1=\"90\" x2=\"345\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"25\" y1=\"90\" x2=\"25\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"25\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"87\" y1=\"90\" x2=\"87\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"87\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"149\" y1=\"90\" x2=\"149\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"149\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"211\" y1=\"90\" x2=\"211\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"211\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"273\" y1=\"90\" x2=\"273\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"273\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"335\" y1=\"90\" x2=\"335\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"335\" y=\"111\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><circle cx=\"25\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"25\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"87\" cy=\"33\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"149\" cy=\"33\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"57\" r=\"5\" fill=\"currentColor\"/><circle cx=\"211\" cy=\"45\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><circle cx=\"273\" cy=\"69\" r=\"5\" fill=\"currentColor\"/><circle cx=\"335\" cy=\"81\" r=\"5\" fill=\"currentColor\"/><text x=\"180\" y=\"132\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Number of goals in a match</text></svg>",
+  "linkedTopicIds": [
+   "stat-averages-range"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A team played 20 matches. The dot plot shows the number of goals the team scored in 19 of these matches; the dot for one match is missing.\n\nThe mean number of goals for all 20 matches is 2.2.\n\n(a) How many goals were scored in the missing match?\n\n(b) Find the median number of goals for all 20 matches.",
+  "hint": "Find the total number of goals for all 20 matches from the mean, and the total shown on the dot plot.",
+  "answer": "(a) 4 goals (b) 2 goals",
+  "solution": "(a) Total for all 20 matches $= 20 \\times 2.2 = 44$ goals.\n\nTotal shown on the dot plot:\n$$0(2) + 1(5) + 2(5) + 3(4) + 4(2) + 5(1) = 0 + 5 + 10 + 12 + 8 + 5 = 40$$\n\nMissing match: $44 - 40 = 4$ goals.\n\n(b) With the extra dot, the counts are 0: 2, 1: 5, 2: 5, 3: 4, 4: 3, 5: 1 ($n = 20$).\n\nThe median is halfway between the 10th and 11th values. Counting from the left: 0s are the 1st–2nd, 1s the 3rd–7th, 2s the 8th–12th. The 10th and 11th values are both 2, so the **median is 2 goals**.\n\n(The two tallest columns, at 1 and 2, are the modes; the median has to be found by counting.)",
+  "id": "stat-stem-leaf-dot-plots-q13",
+  "topicId": "stat-stem-leaf-dot-plots"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The ordered stem-and-leaf diagram shows the times, in seconds, that 11 students took to solve a puzzle. Two leaves are unknown and are shown as $a$ and $b$.\n\n$$\\begin{array}{r|l} 2 & 1\\ \\ 4\\ \\ 7 \\\\ 3 & 0\\ \\ 2\\ \\ a\\ \\ 8 \\\\ 4 & 3\\ \\ 5 \\\\ 5 & 2\\ \\ b \\end{array}$$\n\nKey: $2 \\mid 1$ means 21 seconds\n\nThe median time is 36 seconds and the range is 34 seconds.\n\n(a) Find the values of $a$ and $b$.\n\n(b) Work out the mean time, giving your answer to 1 decimal place.",
+  "hint": "Which leaf is the median? Which value is the largest?",
+  "answer": "(a) $a = 6$, $b = 5$ (b) $36.6$ seconds",
+  "solution": "(a) $n = 11$, so the median is the $\\frac{11+1}{2} = 6$th value. The first row has 3 leaves, so the 6th value is the 3rd leaf of the second row, which is $3a$, i.e. $30 + a$.\n$$30 + a = 36 \\implies a = 6$$\nThis fits the ordering $2 \\le a \\le 8$ ✓\n\nThe smallest value is 21 and the largest is $5b$, i.e. $50 + b$ (the diagram is ordered, so it is the last leaf).\n$$(50 + b) - 21 = 34 \\implies b = 5$$\nThis fits the ordering $b \\ge 2$ ✓\n\n(b) Values: $21, 24, 27, 30, 32, 36, 38, 43, 45, 52, 55$.\n$$\\text{sum} = 403, \\qquad \\text{mean} = \\frac{403}{11} = 36.636\\ldots \\approx 36.6 \\text{ seconds}$$",
+  "id": "stat-stem-leaf-dot-plots-q14",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"360\" height=\"240\"><line x1=\"50\" y1=\"196\" x2=\"346\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50\" y1=\"196\" x2=\"50\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"46\" y1=\"196\" x2=\"50\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43\" y=\"200\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"46\" y1=\"170\" x2=\"50\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"170\" x2=\"342\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"174\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"46\" y1=\"144\" x2=\"50\" y2=\"144\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"144\" x2=\"342\" y2=\"144\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"148\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"46\" y1=\"118\" x2=\"50\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"118\" x2=\"342\" y2=\"118\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"122\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"46\" y1=\"92\" x2=\"50\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"92\" x2=\"342\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"96\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"46\" y1=\"66\" x2=\"50\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"66\" x2=\"342\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"70\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"46\" y1=\"40\" x2=\"50\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"40\" x2=\"342\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"44\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">12</text><line x1=\"46\" y1=\"14\" x2=\"50\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"14\" x2=\"342\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1\" stroke-opacity=\"0.25\"/><text x=\"43\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">14</text><text x=\"13\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 13 105)\">Frequency</text><rect x=\"58\" y=\"131\" width=\"56.8\" height=\"65\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"114.8\" y=\"40\" width=\"56.8\" height=\"156\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"171.6\" y=\"66\" width=\"56.8\" height=\"130\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"228.4\" y=\"79\" width=\"56.8\" height=\"117\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"285.2\" y=\"144\" width=\"56.8\" height=\"52\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"58\" y1=\"196\" x2=\"58\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"58\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"114.8\" y1=\"196\" x2=\"114.8\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"114.8\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"171.6\" y1=\"196\" x2=\"171.6\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"171.6\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"228.4\" y1=\"196\" x2=\"228.4\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"228.4\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"285.2\" y1=\"196\" x2=\"285.2\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"285.2\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"342\" y1=\"196\" x2=\"342\" y2=\"201\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"342\" y=\"215\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><text x=\"200\" y=\"234\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Mass, m (kg)</text></svg>",
+  "question": "The histogram shows the masses, $m$ kg, of 40 parcels. Each class includes its lower boundary but not its upper boundary, e.g. $2 \\le m < 4$.\n\n(a) Ben says, \"The range of the masses is 10 kg.\" Explain why Ben cannot be sure of this, and find the smallest and largest values the range could take.\n\n(b) Find the class that contains the median mass.\n\n(c) Explain why it would be possible to find the exact median if the same data were shown on a stem-and-leaf diagram instead.",
+  "hint": "A histogram only tells you how many values are in each class, not the values themselves. Where could the lightest and heaviest parcels be?",
+  "answer": "(a) The exact masses are unknown; the range is more than 6 kg and less than 10 kg. (b) $4 \\le m < 6$ (c) A stem-and-leaf diagram keeps every individual value, so the middle values can be read off.",
+  "solution": "Frequencies from the bars: $0 \\le m < 2$: 5, $2 \\le m < 4$: 12, $4 \\le m < 6$: 10, $6 \\le m < 8$: 9, $8 \\le m < 10$: 4.\n\n(a) The histogram shows only how many parcels are in each class, not their exact masses. The lightest parcel is somewhere in $0 \\le m < 2$ and the heaviest is somewhere in $8 \\le m < 10$.\n* Largest possible range: heaviest just under 10, lightest 0, so the range is just under $10 - 0 = 10$ kg.\n* Smallest possible range: heaviest 8, lightest just under 2, so the range is just over $8 - 2 = 6$ kg.\n\nSo $6 < \\text{range} < 10$ kg. Ben's 10 kg is not possible: he has used the class boundaries, not data values.\n\n(b) $n = 40$, so the median is halfway between the 20th and 21st values. Running totals: $5,\\ 17,\\ 27, \\ldots$ The 20th and 21st values are both in $4 \\le m < 6$.\n\n(c) A stem-and-leaf diagram shows every individual value (e.g. $4 \\mid 7$ for 4.7 kg), so you can count to the 20th and 21st values exactly. A histogram groups the data, so the individual values are lost.",
+  "id": "stat-stem-leaf-dot-plots-q15",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "stat-quartiles-box-plots"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The stem-and-leaf diagram shows the battery life, in hours, of 15 phones.\n\n$$\\begin{array}{r|l} 1 & 4\\ \\ 7\\ \\ 9 \\\\ 2 & 0\\ \\ 2\\ \\ 5\\ \\ 5\\ \\ 8 \\\\ 3 & 1\\ \\ 3\\ \\ 6\\ \\ 9 \\\\ 4 & 2\\ \\ 4 \\\\ 5 &  \\\\ 6 & 3 \\end{array}$$\n\nKey: $1 \\mid 4$ means 14 hours\n\n(a) Find the median, the lower quartile and the upper quartile.\n\n(b) Work out the interquartile range.\n\n(c) Write down the five values you would need to draw a box plot of this data.\n\n(d) Explain why the interquartile range is a better measure of spread than the range for this data.",
+  "hint": "With 15 values, the lower quartile is the $\\frac{15+1}{4} = 4$th value and the upper quartile is the $\\frac{3(15+1)}{4} = 12$th value.",
+  "answer": "(a) Median 28, LQ 20, UQ 39 hours (b) 19 hours (c) Min 14, LQ 20, median 28, UQ 39, max 63 (d) The range is affected by the extreme value 63; the IQR uses only the middle half of the data.",
+  "solution": "Values in order (stem 5 has no leaves, so it contributes nothing):\n$$14,\\ 17,\\ 19,\\ 20,\\ 22,\\ 25,\\ 25,\\ 28,\\ 31,\\ 33,\\ 36,\\ 39,\\ 42,\\ 44,\\ 63$$\n$n = 15$ ✓ (count leaves only: $3 + 5 + 4 + 2 + 0 + 1$).\n\n(a) Median: $\\frac{15+1}{2} = 8$th value $= 28$ hours.\n\nLower quartile: $\\frac{15+1}{4} = 4$th value $= 20$ hours.\n\nUpper quartile: $\\frac{3(15+1)}{4} = 12$th value $= 39$ hours.\n\n(b) $\\text{IQR} = 39 - 20 = 19$ hours.\n\n(c) Minimum 14, lower quartile 20, median 28, upper quartile 39, maximum 63 (hours).\n\n(d) The range, $63 - 14 = 49$ hours, is heavily affected by one unusually long-lasting phone (63 hours, well separated from the rest by the empty stem 5). The IQR measures the spread of the middle 50% of the phones, so it is not affected by that extreme value.",
+  "id": "stat-stem-leaf-dot-plots-q16",
+  "topicId": "stat-stem-leaf-dot-plots"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "stat-averages-range",
+   "alg-linear-equations"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The back-to-back stem-and-leaf diagram shows the times, in minutes, that two groups of people took to complete a puzzle. One leaf for Group A is unknown and is shown as $x$. The diagram is ordered.\n\n$$\\begin{array}{r|c|l} \\text{Group A} & & \\text{Group B} \\\\ \\hline 6\\ \\ 3 & 1 & 2\\ \\ 8 \\\\ x\\ \\ 5\\ \\ 1 & 2 & 4\\ \\ 6\\ \\ 6\\ \\ 9 \\\\ 4\\ \\ 0 & 3 & 3\\ \\ 5 \\\\ 2 & 4 & 0 \\end{array}$$\n\nKey: $3 \\mid 1 \\mid$ means 13 minutes for Group A; $\\mid 1 \\mid 2$ means 12 minutes for Group B\n\nThe **mean** time for Group A is equal to the **median** time for Group B.\n\n(a) Explain why $x$ must be at least 5.\n\n(b) Find the value of $x$.\n\n(c) Compare the two groups' times.",
+  "hint": "On the left, leaves get larger as you move away from the stem. For (b), write the mean of Group A in terms of $x$.",
+  "answer": "(a) $x$ is the furthest leaf from the stem in its row, so it is the largest: $x \\ge 5$. (b) $x = 7$ (c) Same average (A's median 26, B's median 26); Group A's times are slightly more spread out (range 29 against 28).",
+  "solution": "(a) On the left of a back-to-back diagram, leaves are read outwards from the stem, so in an ordered diagram they increase moving away from the stem. In row 2 the leaves read outwards are $1, 5, x$, so $x$ is the largest: $x \\ge 5$ (and $x \\le 9$ as it is a digit).\n\n(b) Group B in order: $12, 18, 24, 26, 26, 29, 33, 35, 40$. $n = 9$, so the median is the 5th value: **26**.\n\nGroup A: $13, 16, 21, 25, (20 + x), 30, 34, 42$ — 8 values.\n$$\\text{sum} = 13 + 16 + 21 + 25 + 20 + x + 30 + 34 + 42 = 201 + x$$\n$$\\frac{201 + x}{8} = 26$$\n$$201 + x = 208 \\implies x = 7$$\n$x = 7$ satisfies $5 \\le x \\le 9$ ✓ (so the unknown value is 27 minutes).\n\n(c) Group A: $13, 16, 21, 25, 27, 30, 34, 42$; median $\\frac{25 + 27}{2} = 26$, range $42 - 13 = 29$.\n\nGroup B: median 26, range $40 - 12 = 28$.\n\nThe groups have the same median (26 minutes), so on average they were equally quick. Their ranges are almost the same (29 and 28 minutes), so their times were similarly spread; Group A's are very slightly more variable.",
+  "id": "stat-stem-leaf-dot-plots-q17",
+  "topicId": "stat-stem-leaf-dot-plots"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A dot plot shows 9 whole-number values. You are told:\n\n* the smallest value is 1 and the range is 6\n* the only mode is 2\n* the median is 3\n* the mean is 4\n\nFind all nine values and describe the dot plot. Explain why there is only one possibility.",
+  "hint": "Write the values in order as $a_1 \\le a_2 \\le \\ldots \\le a_9$. You know $a_1$, $a_5$, $a_9$ and the total. How many 2s are needed for 2 to be the only mode?",
+  "answer": "$1, 2, 2, 2, 3, 6, 6, 7, 7$: one dot at 1, three at 2, one at 3, two at 6, two at 7 (none at 4 or 5)",
+  "solution": "Write the values in order: $a_1 \\le a_2 \\le \\cdots \\le a_9$.\n\n* Smallest value 1 and range 6: $a_1 = 1$, $a_9 = 7$.\n* Median 3: $a_5 = 3$.\n* Mean 4: the total is $9 \\times 4 = 36$.\n\n**How many 2s?** Only $a_2, a_3, a_4$ can be 2 (they lie between 1 and 3). For 2 to be the mode it needs at least 2 dots.\n* If there were exactly two 2s, the third of $a_2, a_3, a_4$ would be 1 or 3, making a second 1 or a second 3, which ties with 2 for the mode. ✗\n* So $a_2 = a_3 = a_4 = 2$ (three dots at 2), and every other value can appear at most twice.\n\n**The top three values.**\n$$a_6 + a_7 + a_8 = 36 - (1 + 2 + 2 + 2 + 3 + 7) = 19$$\nwith $3 \\le a_6 \\le a_7 \\le a_8 \\le 7$.\n\n* Without a 7 the sum is at most $6 + 6 + 6 = 18$, so $a_8 = 7$.\n* If $a_7$ were also 7, then $a_6 = 5$ and there would be three 7s (with $a_9$), tying with the three 2s ✗.\n* So $a_7 \\le 6$ and $a_6 + a_7 = 12$, which forces $a_6 = a_7 = 6$ (two 6s is allowed).\n\nSo the values are\n$$1,\\ 2,\\ 2,\\ 2,\\ 3,\\ 6,\\ 6,\\ 7,\\ 7$$\n\nCheck: range $7 - 1 = 6$ ✓, only mode 2 ✓, median (5th) $= 3$ ✓, mean $= \\frac{36}{9} = 4$ ✓.\n\n**Dot plot:** a number line from 1 to 7 with 1 dot above 1, 3 above 2, 1 above 3, none above 4 or 5, 2 above 6 and 2 above 7. Notice that the tallest stack (2) is the mode, while the median, 3, is found by counting to the 5th dot.",
+  "id": "stat-stem-leaf-dot-plots-q18",
+  "topicId": "stat-stem-leaf-dot-plots",
+  "linkedTopicIds": []
+ }
+]
