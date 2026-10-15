@@ -15,6 +15,7 @@
 - [Ch12] Ringo Vinda hub rotates every 6 minutes; Tiplar shot point-blank during sun-glare. Kamino's no-scan order logged 1403, Rex's report cleared 1412 (order preceded report). Tiplee asked Rex 'Did he hate her?' Rex's offline record: cracked cadet datapad, network chip destroyed — lists roster order, collar, Tup's headaches, Pesk, Kamino order. Fives's helmet dent never repaired.
 - [Ch13] Fives's burst to Rex: hidden in routine medical data to the Resolute's medbay, check-in cipher; contains scans, embryo records, chip images and a 40-second video; Rex has played the video 11 times but needs Kix to read the medical files. AZI-3 being wiped. The Chancellor kept Fives's removed chip. Fives took a Coruscant Guard comlink when he escaped. Fives: left shoulder shot; fell down an abandoned refinery's drainage shaft two blocks from Ahsoka's warehouse.
 - [Ch14] Bane's contract (Dooku, secret from Sidious; relay via unused Hutt-space beacons): take Ahsoka alive and unharmed, collar ON (and the warden's control if possible), take Merrick Tal as cover; half paid upfront; Bane estimates 'nine days'. Palpatine has a yellow bruise on the back of one hand. Fox and Anakin both omitted Rex's arm-knock from reports. A Holonet-covered Senate hearing on the Force collars has occurred.
+- [Ch15] Collar release lasted 4 min 9 sec, saved 23 lives (Vorne's count). Cut Five buried; crews now in Cut Four. Tess's scanner: cracked ice-density sounder + leak-detector coil, hidden in a heat-pack sleeve under a loose panel behind the tool-shed rack. Krasso's left leg injured, not broken. Merrick held ~15 months; to leave 'in a few days' on the next Judiciary hull, Coruscant-ward.
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -31,6 +32,7 @@
 - [Ch12] Tup's shuttle under 'medical quarantine'; Rex can't reach Fives; asked him to check in every 12 hours.
 - [Ch13] Fives officially dead, body unrecoverable; Rex saw the fall and was ordered back from the edge. Readers don't yet know Fives survived (reveal: Ch17 end via coded signal / Ch20 meeting).
 - [Ch14] Obi-Wan privately asked Anakin what he isn't saying. Anakin hasn't told Padmé about Rex's arm-knock or the Soresu turn. Palpatine making 'quiet inquiries' about Narkis.
+- [Ch15] Ahsoka nearly escaped during the release and told no one. Tarkin is using the incident to defend the collar program to the Senate. Tess quietly weighing what Ahsoka is worth.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -45,4 +47,5 @@
 - [Ch11] ~Day 92 at Narkis. Ahsoka healed (shin, shoulder).
 - [Ch12] Tup sedated, head shaved, unscanned, en route to Kamino with Fives (escort approved by Anakin).
 - [Ch14] Anakin intends to request a second Narkis permit. Bane has the contract; raid ~9 days out.
+- [Ch15] ~Day 118. Tarkin's cruiser has left. Three ships hold low on the moon's far side, outside the dome's sensor range.
 
