@@ -1,0 +1,270 @@
+[
+ {
+  "id": "stat-quartiles-box-plots-q01",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The numbers of goals scored by a netball team in 7 matches, in order, are\n$$4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 18,\\ 20$$\nFind the median, the lower quartile, the upper quartile and the interquartile range.",
+  "hint": "The median is the middle (4th) value. Then find the middle of the three values below it and the middle of the three values above it.",
+  "answer": "Median $= 12$, $Q_1 = 7$, $Q_3 = 18$, $\\text{IQR} = 11$",
+  "solution": "There are 7 values, already in order, so the median is the 4th value: **12**.\n\nLower half (values below the median): $4, 7, 9$, so $Q_1 = 7$.\n\nUpper half (values above the median): $15, 18, 20$, so $Q_3 = 18$.\n\n$$\\text{IQR} = Q_3 - Q_1 = 18 - 7 = 11$$",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q02",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The numbers of goals scored by a netball team in 7 matches are\n$$18,\\ 4,\\ 12,\\ 20,\\ 7,\\ 15,\\ 9$$\nFind the median, the lower quartile, the upper quartile and the interquartile range.",
+  "hint": "Put the values in order first.",
+  "answer": "Median $= 12$, $Q_1 = 7$, $Q_3 = 18$, $\\text{IQR} = 11$",
+  "solution": "**What changed:** the same 7 values, but not in order. Quartiles are positions in the *ordered* list, so order them first:\n$$4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 18,\\ 20$$\n\nMedian $=$ 4th value $= 12$. Lower half $4, 7, 9$ gives $Q_1 = 7$; upper half $15, 18, 20$ gives $Q_3 = 18$.\n\n$\\text{IQR} = 18 - 7 = 11$, exactly as before. (Taking the 2nd value of the unordered list, 4, as $Q_1$ would be wrong.)",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q03",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The numbers of goals scored by a netball team in 7 matches are\n$$18,\\ 4,\\ 12,\\ 50,\\ 7,\\ 15,\\ 9$$\nFind the median, the interquartile range and the range.",
+  "hint": "Order the values. Which of the three measures uses the largest value?",
+  "answer": "Median $= 12$, $\\text{IQR} = 11$, range $= 46$",
+  "solution": "**What changed:** the largest value 20 has become 50.\n\nOrdered: $4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 18,\\ 50$\n\nMedian $= 12$, $Q_1 = 7$, $Q_3 = 18$, so $\\text{IQR} = 18 - 7 = 11$ (unchanged).\n\nRange $= 50 - 4 = 46$ (it was $20 - 4 = 16$).\n\nThe IQR only uses the middle 50% of the data, so one extreme value does not affect it; the range uses the extreme values, so it changes a lot.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q04",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The numbers of goals scored by a netball team in 8 matches are\n$$18,\\ 4,\\ 12,\\ 50,\\ 7,\\ 15,\\ 9,\\ 22$$\nFind the median, the lower quartile, the upper quartile and the interquartile range. Use the method of finding the median of each half of the ordered data.",
+  "hint": "With 8 values the median is halfway between the 4th and 5th values. Each half then has 4 values.",
+  "answer": "Median $= 13.5$, $Q_1 = 8$, $Q_3 = 20$, $\\text{IQR} = 12$",
+  "solution": "**What changed:** an eighth value, 22, has been added, so $n$ is now even.\n\nOrdered: $4,\\ 7,\\ 9,\\ 12,\\ 15,\\ 18,\\ 22,\\ 50$\n\nMedian: halfway between the 4th and 5th values, $\\frac{12 + 15}{2} = 13.5$.\n\nLower half $4, 7, 9, 12$: $Q_1 = \\frac{7 + 9}{2} = 8$.\n\nUpper half $15, 18, 22, 50$: $Q_3 = \\frac{18 + 22}{2} = 20$.\n\n$$\\text{IQR} = 20 - 8 = 12$$\n\nWith an even number of values, the median and quartiles can fall between data values.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q05",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The box plot shows the reaction times, in milliseconds (ms), of the students in a class.\n\n(a) Write down the median.\n(b) Work out the interquartile range.\n(c) Work out the range.\n(d) What percentage of the students had a reaction time of more than 245 ms?",
+  "hint": "Read the five key values: the ends of the whiskers, the ends of the box and the line inside the box.",
+  "answer": "(a) 260 ms (b) 45 ms (c) 140 ms (d) 75%",
+  "solution": "Reading the box plot: minimum 210, $Q_1 = 245$, median 260, $Q_3 = 290$, maximum 350.\n\n(a) The line inside the box: median $= 260$ ms.\n\n(b) $\\text{IQR} = Q_3 - Q_1 = 290 - 245 = 45$ ms.\n\n(c) Range $= 350 - 210 = 140$ ms.\n\n(d) 245 ms is the lower quartile. 25% of the data lie below $Q_1$, so **75%** of the students took more than 245 ms.",
+  "linkedTopicIds": [],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 150\" width=\"360\" height=\"150\"><line x1=\"30\" y1=\"105\" x2=\"336\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"105\" x2=\"30\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"30\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">200</text><line x1=\"48.8\" y1=\"105\" x2=\"48.8\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"67.5\" y1=\"105\" x2=\"67.5\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"67.5\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">220</text><line x1=\"86.2\" y1=\"105\" x2=\"86.2\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"105\" y1=\"105\" x2=\"105\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"105\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">240</text><line x1=\"123.8\" y1=\"105\" x2=\"123.8\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"142.5\" y1=\"105\" x2=\"142.5\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"142.5\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">260</text><line x1=\"161.2\" y1=\"105\" x2=\"161.2\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"105\" x2=\"180\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"180\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">280</text><line x1=\"198.8\" y1=\"105\" x2=\"198.8\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"217.5\" y1=\"105\" x2=\"217.5\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"217.5\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">300</text><line x1=\"236.2\" y1=\"105\" x2=\"236.2\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"255\" y1=\"105\" x2=\"255\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"255\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">320</text><line x1=\"273.8\" y1=\"105\" x2=\"273.8\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"292.5\" y1=\"105\" x2=\"292.5\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"292.5\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">340</text><line x1=\"311.2\" y1=\"105\" x2=\"311.2\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"330\" y1=\"105\" x2=\"330\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">360</text><text x=\"180\" y=\"143\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Reaction time (ms)</text><line x1=\"48.8\" y1=\"55\" x2=\"114.4\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"48.8\" y1=\"45\" x2=\"48.8\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"114.4\" y=\"37\" width=\"84.4\" height=\"36\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"142.5\" y1=\"37\" x2=\"142.5\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"198.8\" y1=\"55\" x2=\"311.2\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"311.2\" y1=\"45\" x2=\"311.2\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg>"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q06",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The box plot shows the commute times of the employees at a company.\n\nEllie says: \"The right-hand whisker is by far the longest part of the box plot, so more employees have commute times between 25 and 55 minutes than in any other section.\"\n\n(a) Is Ellie correct? Explain your answer.\n(b) What percentage of the employees have a commute time of more than 25 minutes?\n(c) What does the long right-hand whisker tell you about the commute times?",
+  "hint": "How much of the data does each of the four sections of a box plot contain?",
+  "answer": "(a) No: each of the four sections contains about 25% of the employees. (b) 25% (c) The longest 25% of commute times are very spread out (from 25 to 55 minutes).",
+  "solution": "(a) **No.** A box plot splits the data into quarters: minimum to $Q_1$, $Q_1$ to median, median to $Q_3$, $Q_3$ to maximum. Each section contains about 25% of the employees, however long it is drawn. The section from 25 to 55 minutes contains the same number of employees as each of the other sections.\n\n(b) $Q_3 = 25$ minutes, so about **25%** of employees take more than 25 minutes.\n\n(c) Length shows **spread**, not quantity. The top quarter of commute times is spread over 30 minutes (25 to 55), whereas the middle half is packed into just 10 minutes (15 to 25). The distribution is positively skewed: a few employees have much longer commutes than the rest.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 150\" width=\"360\" height=\"150\"><line x1=\"30\" y1=\"105\" x2=\"336\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"105\" x2=\"30\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"30\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"55\" y1=\"105\" x2=\"55\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"80\" y1=\"105\" x2=\"80\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"80\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"105\" y1=\"105\" x2=\"105\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"130\" y1=\"105\" x2=\"130\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"130\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"155\" y1=\"105\" x2=\"155\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"105\" x2=\"180\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"180\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><line x1=\"205\" y1=\"105\" x2=\"205\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"230\" y1=\"105\" x2=\"230\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"230\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40</text><line x1=\"255\" y1=\"105\" x2=\"255\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"280\" y1=\"105\" x2=\"280\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"280\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">50</text><line x1=\"305\" y1=\"105\" x2=\"305\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"330\" y1=\"105\" x2=\"330\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">60</text><text x=\"180\" y=\"143\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Commute time (minutes)</text><line x1=\"55\" y1=\"55\" x2=\"105\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"55\" y1=\"45\" x2=\"55\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"105\" y=\"37\" width=\"50\" height=\"36\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"130\" y1=\"37\" x2=\"130\" y2=\"73\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"155\" y1=\"55\" x2=\"305\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"305\" y1=\"45\" x2=\"305\" y2=\"65\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg>"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q07",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "The prices of the houses sold in a village last year are summarised below (in £ thousands).\n\n| Minimum | Lower quartile | Median | Upper quartile | Maximum |\n|---|---|---|---|---|\n| 95 | 205 | 240 | 265 | 410 |\n\nAn outlier is a value more than $1.5 \\times \\text{IQR}$ below the lower quartile or above the upper quartile.\n\nDecide whether the cheapest house and the most expensive house are outliers. Show your working.",
+  "hint": "Work out the IQR, then the two fences: $Q_1 - 1.5 \\times \\text{IQR}$ and $Q_3 + 1.5 \\times \\text{IQR}$.",
+  "answer": "Fences are £115 000 and £355 000, so both the cheapest (£95 000) and the most expensive (£410 000) houses are outliers.",
+  "solution": "$$\\text{IQR} = 265 - 205 = 60, \\qquad 1.5 \\times 60 = 90$$\n\nLower fence: $205 - 90 = 115$. Upper fence: $265 + 90 = 355$.\n\nCheapest house: $95 < 115$, so it **is** an outlier.\n\nMost expensive house: $410 > 355$, so it **is** an outlier.\n\nNote that the fences are measured from the quartiles, not from the median and not from zero.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-quartiles-box-plots-q08",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The heights, in cm, of 15 sunflowers are, in order,\n$$31,\\ 35,\\ 38,\\ 40,\\ 42,\\ 45,\\ 47,\\ 48,\\ 50,\\ 53,\\ 55,\\ 58,\\ 60,\\ 66,\\ 72$$\nTom's working to find the interquartile range is shown below.\n\nLower quartile $= \\frac{15 + 1}{4} = 4$\n\nUpper quartile $= \\frac{3(15 + 1)}{4} = 12$\n\n$\\text{IQR} = 12 - 4 = 8$ cm\n\nIdentify Tom's error, explain why it is wrong and find the correct IQR.",
+  "hint": "What does the number $\\frac{n+1}{4}$ tell you: a value, or where to find a value?",
+  "answer": "Tom gave the positions (4th and 12th) instead of the values. $Q_1 = 40$, $Q_3 = 58$, $\\text{IQR} = 18$ cm.",
+  "solution": "**Error:** $\\frac{15+1}{4} = 4$ and $\\frac{3(15+1)}{4} = 12$ are the **positions** of the quartiles in the ordered list, not the quartiles themselves. Tom has subtracted positions, so his \"IQR\" of 8 is not a height at all.\n\n**Correct working:**\n\n$Q_1$ is the 4th value: $Q_1 = 40$ cm.\n\n$Q_3$ is the 12th value: $Q_3 = 58$ cm.\n\n$$\\text{IQR} = 58 - 40 = 18 \\text{ cm}$$\n\n(Check with the halves method: the median is the 8th value, 48; the lower half $31, \\dots, 47$ has middle value 40 and the upper half $50, \\dots, 72$ has middle value 58.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-quartiles-box-plots-q09",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The times taken by a bus to complete its route have lower quartile 20 minutes, median 25 minutes and upper quartile 30 minutes. The longest time was 42 minutes.\n\nAisha's working to decide whether 42 minutes is an outlier is shown below.\n\n$\\text{IQR} = 30 - 20 = 10$\n\n$1.5 \\times \\text{IQR} = 15$\n\n$25 + 15 = 40$\n\n$42 > 40$, so 42 minutes is an outlier.\n\nIdentify Aisha's error, explain it, and give the correct conclusion.",
+  "hint": "The upper fence should be measured from which value?",
+  "answer": "She added $1.5 \\times \\text{IQR}$ to the median instead of the upper quartile. The upper fence is $30 + 15 = 45$; $42 < 45$, so 42 minutes is **not** an outlier.",
+  "solution": "The first two lines are correct: $\\text{IQR} = 10$ and $1.5 \\times \\text{IQR} = 15$.\n\n**Error (line 3):** Aisha measured $1.5 \\times \\text{IQR}$ from the **median** (25). The outlier rule measures from the **quartiles**: a value is an outlier if it is more than $1.5 \\times \\text{IQR}$ above $Q_3$.\n\n**Correct working:**\n$$\\text{upper fence} = Q_3 + 1.5 \\times \\text{IQR} = 30 + 15 = 45$$\n\nSince $42 < 45$, the time of 42 minutes is **not** an outlier. It is unusually long, but not extreme enough to be classed as an outlier by this rule.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-quartiles-box-plots-q10",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "The times, in minutes, that 15 students spent on their homework one evening are shown in order.\n$$12,\\ 18,\\ 20,\\ 21,\\ 24,\\ 25,\\ 27,\\ 28,\\ 30,\\ 31,\\ 33,\\ 35,\\ 36,\\ 40,\\ 64$$\nAn outlier is a value that is more than $1.5 \\times$ the interquartile range above the upper quartile or below the lower quartile.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the median and the interquartile range.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Show that 64 minutes is an outlier.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "On the grid, draw a box plot for these data. Show the outlier with a cross.",
+    "marks": 2
+   }
+  ],
+  "marks": 7,
+  "calculator": false,
+  "hint": "There are 15 values: the median is the 8th value and the quartiles are the 4th and 12th values. In part (c), think carefully about where the upper whisker should end.",
+  "answer": "(a) Median $= 28$ minutes, $\\text{IQR} = 14$ minutes (b) Upper fence $= 35 + 21 = 56$ and $64 > 56$ (c) Box from 21 to 35 with median line at 28; lower whisker to 12; upper whisker to 40; cross at 64.",
+  "solution": "(a) Median $=$ 8th value $= 28$ minutes **B1**\n\n$Q_1 =$ 4th value $= 21$, $Q_3 =$ 12th value $= 35$ **M1**\n\n$\\text{IQR} = 35 - 21 = 14$ minutes **A1**\n\n(b) $Q_3 + 1.5 \\times \\text{IQR} = 35 + 1.5 \\times 14 = 35 + 21$ **M1**\n\n$= 56$, and $64 > 56$, so 64 is an outlier. **A1**\n\n(Lower fence $21 - 21 = 0$; no value is below 0.)\n\n(c) Box from 21 to 35 with a line at the median, 28. **B1**\n\nLower whisker from 21 to 12. The upper whisker ends at **40**, the largest value that is not an outlier, and 64 is plotted as a separate cross. **B1**\n\nA common error is to draw the upper whisker all the way to 64; this hides the fact that 64 is an outlier and makes the top quarter look far more spread out than it is. Another error is to leave 64 off the diagram completely: it is a real data value and must still be shown.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 150\" width=\"360\" height=\"150\"><path d=\"M30 105V20M35 105V20M40 105V20M45 105V20M50 105V20M55 105V20M60 105V20M65 105V20M70 105V20M75 105V20M80 105V20M85 105V20M90 105V20M95 105V20M100 105V20M105 105V20M110 105V20M115 105V20M120 105V20M125 105V20M130 105V20M135 105V20M140 105V20M145 105V20M150 105V20M155 105V20M160 105V20M165 105V20M170 105V20M175 105V20M180 105V20M185 105V20M190 105V20M195 105V20M200 105V20M205 105V20M210 105V20M215 105V20M220 105V20M225 105V20M230 105V20M235 105V20M240 105V20M245 105V20M250 105V20M255 105V20M260 105V20M265 105V20M270 105V20M275 105V20M280 105V20M285 105V20M290 105V20M295 105V20M300 105V20M305 105V20M310 105V20M315 105V20M320 105V20M325 105V20M330 105V20\" fill=\"none\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.8\"/><line x1=\"30\" y1=\"105\" x2=\"336\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"105\" x2=\"30\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"30\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"55\" y1=\"105\" x2=\"55\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"80\" y1=\"105\" x2=\"80\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"80\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"105\" y1=\"105\" x2=\"105\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"130\" y1=\"105\" x2=\"130\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"130\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><line x1=\"155\" y1=\"105\" x2=\"155\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"180\" y1=\"105\" x2=\"180\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"180\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40</text><line x1=\"205\" y1=\"105\" x2=\"205\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"230\" y1=\"105\" x2=\"230\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"230\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">50</text><line x1=\"255\" y1=\"105\" x2=\"255\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"280\" y1=\"105\" x2=\"280\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"280\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">60</text><line x1=\"305\" y1=\"105\" x2=\"305\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"330\" y1=\"105\" x2=\"330\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"330\" y=\"124\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">70</text><text x=\"180\" y=\"143\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Homework time (minutes)</text></svg>"
+ },
+ {
+  "id": "stat-quartiles-box-plots-q11",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A PE teacher types the heights, in cm, of 13 Year 10 students into a spreadsheet. The entries are:\n$$158,\\ 162,\\ 171,\\ 1.65,\\ 149,\\ 168,\\ \\text{(blank)},\\ 175,\\ 160,\\ 155,\\ 166,\\ 230,\\ 152$$\n(a) Three of the entries need cleaning before the data can be analysed. For each one, say what you would do and why.\n(b) Using the cleaned data, find the five-number summary.\n(c) Use the $1.5 \\times \\text{IQR}$ rule to check that the cleaned data contain no outliers.",
+  "hint": "Look for an entry recorded in different units, a missing value and an impossible value.",
+  "answer": "(a) 1.65: in metres, change to 165 cm; blank: missing value, leave it out; 230: impossible for a Year 10 student, a recording error, remove it. (b) 149, 155, 162, 168, 175 (cm) (c) Fences 135.5 cm and 187.5 cm; all values lie between them.",
+  "solution": "(a)\n* **1.65** has been typed in metres. It should be converted to **165 cm** (keep it, correctly).\n* **(blank)** is a missing value. It cannot be guessed, so leave it out of the analysis.\n* **230 cm** (2.3 m) is not a realistic height for a Year 10 student: it is almost certainly a typing error (perhaps for 130 or 163). As the true value is unknown, **remove** it.\n\n(b) That leaves 11 values. In order:\n$$149,\\ 152,\\ 155,\\ 158,\\ 160,\\ 162,\\ 165,\\ 166,\\ 168,\\ 171,\\ 175$$\nMedian $=$ 6th value $= 162$. Lower half $149, 152, 155, 158, 160$: $Q_1 = 155$. Upper half $165, 166, 168, 171, 175$: $Q_3 = 168$.\n\nFive-number summary: **149, 155, 162, 168, 175** (cm).\n\n(c) $\\text{IQR} = 168 - 155 = 13$, and $1.5 \\times 13 = 19.5$.\n\nFences: $155 - 19.5 = 135.5$ cm and $168 + 19.5 = 187.5$ cm.\n\nThe smallest value, 149, and the largest, 175, are both inside the fences, so there are no outliers.\n\nNote that cleaning is about errors, not about removing values we don't like: a genuine outlier is still real data.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-quartiles-box-plots-q12",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Seven different whole numbers have\n* smallest value 3,\n* lower quartile 5,\n* median 9,\n* upper quartile 14,\n* range 15,\n* mean 10.\n\nFind the seven numbers. Explain why there is only one possible answer.",
+  "hint": "With 7 ordered values, which positions are the quartiles and the median? That fixes five of the numbers. Use the mean to find the sum of the other two.",
+  "answer": "$3,\\ 5,\\ 8,\\ 9,\\ 13,\\ 14,\\ 18$",
+  "solution": "Call the ordered values $a_1 < a_2 < \\dots < a_7$.\n\nFor 7 values: median $= a_4$, $Q_1 = a_2$ (middle of $a_1, a_2, a_3$), $Q_3 = a_6$ (middle of $a_5, a_6, a_7$).\n\nSo $a_1 = 3$, $a_2 = 5$, $a_4 = 9$, $a_6 = 14$ and $a_7 = 3 + 15 = 18$.\n\nThe mean is 10, so the total is $7 \\times 10 = 70$:\n$$3 + 5 + a_3 + 9 + a_5 + 14 + 18 = 70 \\implies a_3 + a_5 = 21$$\n\nThe numbers are different whole numbers, so $5 < a_3 < 9$ gives $a_3 \\in \\{6, 7, 8\\}$, and $9 < a_5 < 14$ gives $a_5 \\in \\{10, 11, 12, 13\\}$.\n\nThe largest possible sum is $8 + 13 = 21$, so the only possibility is $a_3 = 8$, $a_5 = 13$.\n\nThe numbers are $3, 5, 8, 9, 13, 14, 18$. (Check: mean $= 70 \\div 7 = 10$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-quartiles-box-plots-q13",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Here are 11 values, where $k > 28$:\n$$12,\\ 15,\\ 17,\\ 18,\\ 20,\\ 21,\\ 23,\\ 25,\\ 26,\\ 28,\\ k$$\n(a) Find the lower quartile, upper quartile and IQR. Explain why your answers do not depend on $k$.\n(b) Find, as an inequality, the values of $k$ for which $k$ is an outlier, using the $1.5 \\times \\text{IQR}$ rule.\n(c) The mean of the 11 values is 23. Is $k$ an outlier?",
+  "hint": "Since $k > 28$, $k$ is the largest value. Which positions give the quartiles?",
+  "answer": "(a) $Q_1 = 17$, $Q_3 = 26$, $\\text{IQR} = 9$ (b) $k > 39.5$ (c) $k = 48$, which is an outlier.",
+  "solution": "(a) As $k > 28$, $k$ is the 11th value in order. The median is the 6th value (21), $Q_1$ is the middle of the lower five values, the 3rd value: $Q_1 = 17$; $Q_3$ is the 9th value: $Q_3 = 26$.\n$$\\text{IQR} = 26 - 17 = 9$$\nThese positions are fixed whatever the value of $k$ (as long as $k > 28$), because $k$ is the maximum and the quartiles never use the maximum.\n\n(b) $k$ is an outlier when\n$$k > Q_3 + 1.5 \\times \\text{IQR} = 26 + 13.5 = 39.5$$\nso $k > 39.5$ (for whole numbers, $k \\ge 40$).\n\n(c) Total of all 11 values $= 11 \\times 23 = 253$. The other ten values add up to $205$, so\n$$k = 253 - 205 = 48$$\nSince $48 > 39.5$, **yes**, $k$ is an outlier.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities",
+   "stat-averages-range"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-quartiles-box-plots-q14",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The daily maximum temperatures in a town in May have lower quartile $14^\\circ\\text{C}$ and upper quartile $20^\\circ\\text{C}$. On one day the maximum was $32^\\circ\\text{C}$.\n\n(a) Show that $32^\\circ\\text{C}$ is an outlier.\n\nThe temperatures are converted to degrees Fahrenheit using $F = 1.8C + 32$.\n\n(b) Jo says: \"The IQR in Fahrenheit is $1.8 \\times 6 + 32 = 42.8^\\circ\\text{F}$.\" Explain why Jo is wrong and find the correct IQR in $^\\circ\\text{F}$.\n(c) Is the hottest day still an outlier after the conversion? Explain why this would happen for any data set converted this way.",
+  "hint": "Convert both quartiles to Fahrenheit and subtract. What happens to the $+32$?",
+  "answer": "(a) Upper fence $= 20 + 9 = 29 < 32$ (b) The $+32$ cancels when subtracting; $\\text{IQR} = 1.8 \\times 6 = 10.8^\\circ\\text{F}$ (c) Yes: $89.6 > 68 + 16.2 = 84.2$; every distance from the quartiles is multiplied by 1.8, so a value beyond a fence stays beyond it.",
+  "solution": "(a) $\\text{IQR} = 20 - 14 = 6$. Upper fence $= 20 + 1.5 \\times 6 = 29^\\circ\\text{C}$. Since $32 > 29$, it is an outlier.\n\n(b) Convert each quartile:\n$$Q_1 = 1.8 \\times 14 + 32 = 57.2^\\circ\\text{F}, \\qquad Q_3 = 1.8 \\times 20 + 32 = 68^\\circ\\text{F}$$\n$$\\text{IQR} = 68 - 57.2 = 10.8^\\circ\\text{F}$$\nIn general $(1.8Q_3 + 32) - (1.8Q_1 + 32) = 1.8(Q_3 - Q_1)$: adding 32 shifts every value by the same amount, which does not change any distance between values. Only the multiplication by 1.8 affects the IQR. Jo should not have added 32.\n\n(c) Hottest day: $1.8 \\times 32 + 32 = 89.6^\\circ\\text{F}$. New upper fence $= 68 + 1.5 \\times 10.8 = 84.2^\\circ\\text{F}$. Since $89.6 > 84.2$, it is still an outlier.\n\nIn general, the conversion keeps the order of the data, so the quartiles convert to the new quartiles, and every distance (including $x - Q_3$ and $1.5 \\times \\text{IQR}$) is multiplied by the same positive number, 1.8. So $x - Q_3 > 1.5 \\times \\text{IQR}$ is true after conversion exactly when it was true before.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-quartiles-box-plots-q15",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "A biologist weighs a sample of 40 hens' eggs. The masses, $x$ grams, are summarised by\n$$Q_1 = 52, \\quad Q_2 = 57, \\quad Q_3 = 61, \\quad \\sum x = 2290$$\nThe three lightest eggs weighed 38 g, 45 g and 47 g, and the three heaviest weighed 70 g, 72 g and 95 g.\n\nAn outlier is defined as a value more than $1.5 \\times (Q_3 - Q_1)$ below $Q_1$ or above $Q_3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the limits beyond which values are outliers.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence identify any outliers.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "The biologist finds that the 95 g reading was a recording error and removes it. Find the mean of the remaining 39 masses.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Explain why the 38 g egg should not be removed, even though it is an outlier.",
+    "marks": 1
+   },
+   {
+    "label": "e",
+    "prompt": "Explain why removing the 95 g reading has more effect on the mean than on the median.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "calculator": true,
+  "hint": "Find the IQR first, then $1.5 \\times \\text{IQR}$ below $Q_1$ and above $Q_3$. For the new mean, adjust $\\sum x$ and $n$.",
+  "answer": "(a) 38.5 g and 74.5 g (b) 38 g and 95 g (c) 56.3 g (3 s.f.) (d) It is a plausible mass for a small egg, so it is genuine data, not an error. (e) The mean uses the size of every value, so a very large value pulls it up; the median depends only on the middle position, which moves by at most half a place.",
+  "solution": "(a) $\\text{IQR} = 61 - 52 = 9$; $1.5 \\times 9 = 13.5$ **M1**\n\nLower limit $52 - 13.5 = 38.5$ g, upper limit $61 + 13.5 = 74.5$ g **A1**\n\n(b) $38 < 38.5$ and $95 > 74.5$: the outliers are **38 g and 95 g** (45 g and 72 g are inside the limits). **B1**\n\n(c) $\\bar{x} = \\frac{2290 - 95}{39} = \\frac{2195}{39}$ **M1**\n\n$= 56.28\\ldots \\approx 56.3$ g **A1**\n\n(d) 38 g is a realistic mass for a small egg, so it is (probably) a genuine observation; outliers should only be removed if they are errors or are not part of the population being studied. **B1**\n\n(e) The mean is calculated from the actual values, so one value of 95 g pulls it up noticeably (from 57.25 g to 56.3 g when removed); the median depends only on the middle position of the ordered data, which moves by only half a place, so it changes by at most the gap between neighbouring middle values. **B1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-quartiles-box-plots-q16",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A data set has 11 values. Outliers are defined using the $1.5 \\times \\text{IQR}$ rule, with the quartiles found as the medians of the lower five and upper five values.\n\n(a) Prove that at most 4 of the 11 values can be outliers.\n(b) Give an example of a data set of 11 values with exactly 4 outliers, showing that they are outliers.\n(c) Generalise: what is the greatest possible number of outliers in a data set of $4k + 3$ values (with $k$ a positive integer)? Justify your answer.",
+  "hint": "Which positions in the ordered list hold $Q_1$ and $Q_3$? Can a value between the quartiles ever be beyond a fence?",
+  "answer": "(a) Only the 1st, 2nd, 10th and 11th values can be outliers. (b) e.g. $1, 2, 20, 21, 22, 23, 24, 25, 26, 50, 60$ (fences 11 and 35). (c) $2k$",
+  "solution": "(a) Order the values $x_1 \\le x_2 \\le \\dots \\le x_{11}$. The median is $x_6$; the lower five are $x_1, \\dots, x_5$, so $Q_1 = x_3$; similarly $Q_3 = x_9$.\n\nSince $\\text{IQR} \\ge 0$:\n$$Q_1 - 1.5 \\times \\text{IQR} \\le Q_1 \\quad \\text{and} \\quad Q_3 + 1.5 \\times \\text{IQR} \\ge Q_3$$\nEvery value $x_3, x_4, \\dots, x_9$ satisfies $Q_1 \\le x_i \\le Q_3$, so it lies between the two fences and **cannot** be an outlier. That leaves only $x_1, x_2, x_{10}, x_{11}$, so at most 4 values are outliers.\n\n(b) Example: $1,\\ 2,\\ 20,\\ 21,\\ 22,\\ 23,\\ 24,\\ 25,\\ 26,\\ 50,\\ 60$.\n\n$Q_1 = 20$, $Q_3 = 26$, $\\text{IQR} = 6$, $1.5 \\times 6 = 9$. Fences: $20 - 9 = 11$ and $26 + 9 = 35$.\n\n$1 < 11$, $2 < 11$, $50 > 35$, $60 > 35$: exactly 4 outliers.\n\n(c) For $n = 4k + 3$ values the median is $x_{2k+2}$, the lower half has $2k + 1$ values so $Q_1 = x_{k+1}$, and similarly $Q_3 = x_{3k+3}$. As in (a), $x_{k+1}, \\dots, x_{3k+3}$ cannot be outliers, leaving $k$ values at each end: at most $2k$ outliers.\n\nThis can be achieved: make $x_{k+1}, \\dots, x_{3k+3}$ lie close together and the $k$ values at each end far away (as in (b), where $k = 2$). So the greatest number is $2k$, just under half the data.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-quartiles-box-plots-q17",
+  "topicId": "stat-quartiles-box-plots",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The heights of adult men in a country are modelled by $H \\sim N(170, 8^2)$, in cm.\n\n(a) Find the lower and upper quartiles of $H$, giving your answers to 1 decimal place.\n(b) Find the values of $H$ beyond which a man would be classed as an outlier by the $1.5 \\times \\text{IQR}$ rule.\n(c) Find the proportion of men who would be classed as outliers.\n(d) Show that this proportion is the same for every normal distribution, whatever its mean and standard deviation.",
+  "hint": "$Q_3$ satisfies $P(H < Q_3) = 0.75$, so $Q_3 = \\mu + z\\sigma$ where $\\Phi(z) = 0.75$. Work in terms of $z$ for part (d).",
+  "answer": "(a) $Q_1 = 164.6$ cm, $Q_3 = 175.4$ cm (b) below 148.4 cm or above 191.6 cm (c) 0.0070 (about 0.7%) (d) The fences are always at $\\mu \\pm 2.698\\sigma$.",
+  "solution": "(a) $\\Phi(z) = 0.75$ gives $z = 0.6745$ (4 d.p.).\n$$Q_3 = 170 + 0.6745 \\times 8 = 175.396 \\approx 175.4 \\text{ cm}, \\qquad Q_1 = 170 - 0.6745 \\times 8 = 164.604 \\approx 164.6 \\text{ cm}$$\n\n(b) $\\text{IQR} = 175.396 - 164.604 = 10.792$; $1.5 \\times \\text{IQR} = 16.188$.\n\nUpper fence $= 175.396 + 16.188 = 191.58 \\approx 191.6$ cm; lower fence $= 164.604 - 16.188 = 148.42 \\approx 148.4$ cm.\n\n(c) Upper fence in standard units: $\\frac{191.584 - 170}{8} = 2.698$.\n$$P(\\text{outlier}) = P(Z > 2.698) + P(Z < -2.698) = 2 \\times 0.003488 = 0.00698 \\approx 0.0070$$\nAbout 0.7% of men (roughly 1 in 143).\n\n(d) For $X \\sim N(\\mu, \\sigma^2)$: $Q_1 = \\mu - 0.6745\\sigma$, $Q_3 = \\mu + 0.6745\\sigma$, so $\\text{IQR} = 1.349\\sigma$.\n\nUpper fence $= \\mu + 0.6745\\sigma + 1.5 \\times 1.349\\sigma = \\mu + 2.698\\sigma$, and the lower fence is $\\mu - 2.698\\sigma$.\n\nSo $P(\\text{outlier}) = 2P(Z > 2.698) \\approx 0.0070$ for every $\\mu$ and $\\sigma$: the rule picks out about 0.7% of any normal population.",
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ }
+]
