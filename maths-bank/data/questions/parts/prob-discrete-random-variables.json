@@ -1,0 +1,256 @@
+[
+ {
+  "id": "prob-discrete-random-variables-q01",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The discrete random variable $X$ has the probability distribution shown.\n\n| $x$ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| $P(X = x)$ | $0.15$ | $0.4$ | $k$ | $0.25$ |\n\n(a) Find the value of $k$.\n(b) Find $P(X \\ge 1)$.\n(c) Find $P(X < 2)$.",
+  "hint": "The probabilities in a probability distribution add up to 1.",
+  "answer": "(a) $k = 0.2$ (b) $0.85$ (c) $0.55$",
+  "solution": "(a) The probabilities sum to 1:\n$$0.15 + 0.4 + k + 0.25 = 1 \\;\\Rightarrow\\; 0.8 + k = 1 \\;\\Rightarrow\\; k = 0.2$$\n\n(b)\n$$P(X \\ge 1) = 1 - P(X = 0) = 1 - 0.15 = 0.85$$\n\n(c) $X < 2$ means $X = 0$ or $X = 1$ (note: **not** including 2):\n$$P(X < 2) = 0.15 + 0.4 = 0.55$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q02",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The discrete random variable $X$ has the probability distribution shown.\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $P(X = x)$ | $0.1$ | $0.3$ | $0.4$ | $0.2$ |\n\nFind $E(X)$.",
+  "hint": "Multiply each value by its probability, then add.",
+  "answer": "$E(X) = 2.7$",
+  "solution": "$$E(X) = \\sum x\\,P(X = x)$$\n$$= 1(0.1) + 2(0.3) + 3(0.4) + 4(0.2) = 0.1 + 0.6 + 1.2 + 0.8 = 2.7$$\n\n(The simple average of the values, $\\frac{1 + 2 + 3 + 4}{4} = 2.5$, is wrong because the values are not equally likely: 3 and 4 are more likely than 1, which pulls the mean up.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q03",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The discrete random variable $Y$ has the probability distribution shown.\n\n| $y$ | 11 | 12 | 13 | 14 |\n|---|---|---|---|---|\n| $P(Y = y)$ | $0.1$ | $0.3$ | $0.4$ | $0.2$ |\n\nFind $E(Y)$.",
+  "hint": "Compare with the previous table. What has happened to every value?",
+  "answer": "$E(Y) = 12.7$",
+  "solution": "**What changed:** the probabilities are the same as for $X$ (values 1 to 4, mean $2.7$), but every value has been increased by 10.\n\n$$E(Y) = 11(0.1) + 12(0.3) + 13(0.4) + 14(0.2) = 1.1 + 3.6 + 5.2 + 2.8 = 12.7$$\n\nAdding 10 to every value adds 10 to the mean: $2.7 + 10 = 12.7$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q04",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The discrete random variable $W$ has the probability distribution shown.\n\n| $w$ | 2 | 4 | 6 | 8 |\n|---|---|---|---|---|\n| $P(W = w)$ | $0.1$ | $0.3$ | $0.4$ | $0.2$ |\n\nFind $E(W)$.",
+  "hint": "The probabilities are the same as in the first table, which had values 1, 2, 3, 4 and mean $2.7$. How are these values related to those?",
+  "answer": "$E(W) = 5.4$",
+  "solution": "**What changed:** same probabilities as the first table, but every value is **doubled** ($1, 2, 3, 4 \\to 2, 4, 6, 8$).\n\n$$E(W) = 2(0.1) + 4(0.3) + 6(0.4) + 8(0.2) = 0.2 + 1.2 + 2.4 + 1.6 = 5.4$$\n\nDoubling every value doubles the mean: $2 \\times 2.7 = 5.4$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q05",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The discrete random variable $V$ has the probability distribution shown.\n\n| $v$ | 2 | 4 | 6 | 8 |\n|---|---|---|---|---|\n| $P(V = v)$ | $0.2$ | $0.4$ | $0.3$ | $0.1$ |\n\nFind $E(V)$.",
+  "hint": "The values are the same as in the previous table, but the probabilities have been reversed.",
+  "answer": "$E(V) = 4.6$",
+  "solution": "**What changed:** the values are the same as for $W$, but the probabilities are listed in reverse order, so more of the probability now sits on the smaller values.\n\n$$E(V) = 2(0.2) + 4(0.4) + 6(0.3) + 8(0.1) = 0.4 + 1.6 + 1.8 + 0.8 = 4.6$$\n\nThe mean has dropped from $5.4$ to $4.6$: moving probability towards the small values pulls the mean down, even though the list of values is unchanged.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q06",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "question": "The discrete random variable $X$ has the probability distribution shown.\n\n| $x$ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| $P(X = x)$ | $0.1$ | $0.3$ | $0.4$ | $0.2$ |\n\nFind (a) $E(X)$, (b) $E(X^2)$, (c) $\\operatorname{Var}(X)$, (d) the standard deviation of $X$.",
+  "hint": "For $E(X^2)$ square each **value**, multiply by its probability and add. Then $\\operatorname{Var}(X) = E(X^2) - [E(X)]^2$.",
+  "answer": "(a) $1.7$ (b) $3.7$ (c) $0.81$ (d) $0.9$",
+  "solution": "(a)\n$$E(X) = 0(0.1) + 1(0.3) + 2(0.4) + 3(0.2) = 0 + 0.3 + 0.8 + 0.6 = 1.7$$\n\n(b) Square the values only, not the probabilities:\n$$E(X^2) = 0^2(0.1) + 1^2(0.3) + 2^2(0.4) + 3^2(0.2) = 0 + 0.3 + 1.6 + 1.8 = 3.7$$\n\n(c)\n$$\\operatorname{Var}(X) = E(X^2) - [E(X)]^2 = 3.7 - 1.7^2 = 3.7 - 2.89 = 0.81$$\n\n(d)\n$$\\sigma = \\sqrt{0.81} = 0.9$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q07",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The discrete random variable $X$ has the probability distribution shown.\n\n| $x$ | 2 | 3 | 5 |\n|---|---|---|---|\n| $P(X = x)$ | $0.5$ | $0.3$ | $0.2$ |\n\nRavi is asked to find $\\operatorname{Var}(X)$. His working is shown below.\n\n$E(X) = 2(0.5) + 3(0.3) + 5(0.2) = 2.9$\n\n$E(X^2) = 4(0.5) + 9(0.3) + 25(0.2) = 9.7$\n\n$\\operatorname{Var}(X) = E(X^2) - E(X) = 9.7 - 2.9 = 6.8$\n\nIdentify Ravi's error, explain why it is wrong, and find the correct variance.",
+  "hint": "Check the formula used in the last line. Think about the units: if $X$ were in metres, what would the units of $E(X^2)$ be?",
+  "answer": "Ravi forgot to square $E(X)$. $\\operatorname{Var}(X) = 9.7 - 2.9^2 = 1.29$.",
+  "solution": "His $E(X) = 2.9$ and $E(X^2) = 9.7$ are both correct.\n\n**Error:** the last line. The formula is\n$$\\operatorname{Var}(X) = E(X^2) - [E(X)]^2$$\nRavi subtracted $E(X)$ instead of its **square**. This cannot be right: $E(X^2)$ is measured in squared units, so we must subtract a squared quantity. (His answer $6.8$ is also far too big: the values only run from 2 to 5.)\n\n**Correct working:**\n$$\\operatorname{Var}(X) = 9.7 - 2.9^2 = 9.7 - 8.41 = 1.29$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q08",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The discrete random variable $X$ has the probability distribution shown.\n\n| $x$ | $-1$ | 0 | 2 |\n|---|---|---|---|\n| $P(X = x)$ | $0.3$ | $0.2$ | $0.5$ |\n\nChloe is asked to find the standard deviation of $X$. Her working is shown below.\n\n$E(X) = (-1)(0.3) + 0(0.2) + 2(0.5) = 0.7$\n\n$E(X^2) = (-0.3)^2 + 0^2 + 1^2 = 1.09$\n\n$\\operatorname{Var}(X) = 1.09 - 0.7^2 = 0.6$\n\n$\\sigma = \\sqrt{0.6} = 0.775$\n\nIdentify Chloe's error, explain it, and find the correct standard deviation to 3 significant figures.",
+  "hint": "Look at what Chloe has squared in the second line. In $E(X^2) = \\sum x^2\\,P(X = x)$, which quantity is squared?",
+  "answer": "Chloe squared the products $x\\,P(X = x)$, so she squared the probabilities too. $E(X^2) = 2.3$, $\\operatorname{Var}(X) = 1.81$, $\\sigma \\approx 1.35$.",
+  "solution": "Her first line, $E(X) = 0.7$, is correct.\n\n**Error:** the second line. Chloe worked out $\\sum \\big(x\\,P(X = x)\\big)^2$, which squares the probabilities as well as the values. In $E(X^2)$ only the **value** is squared; it is then weighted by its (unsquared) probability.\n\n**Correct working:**\n$$E(X^2) = (-1)^2(0.3) + 0^2(0.2) + 2^2(0.5) = 0.3 + 0 + 2 = 2.3$$\n$$\\operatorname{Var}(X) = 2.3 - 0.7^2 = 2.3 - 0.49 = 1.81$$\n$$\\sigma = \\sqrt{1.81} = 1.345\\ldots \\approx 1.35$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q09",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"300\" height=\"250\"><circle cx=\"150\" cy=\"125\" r=\"95\" fill=\"#3b82f6\" fill-opacity=\"0.12\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"150\" y1=\"125\" x2=\"150.0\" y2=\"30.0\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"208.9\" y=\"130\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><line x1=\"150\" y1=\"125\" x2=\"150.0\" y2=\"220.0\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"108.4\" y=\"171.6\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">2</text><line x1=\"150\" y1=\"125\" x2=\"55.0\" y2=\"125.0\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"99\" y=\"100.5\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5</text><line x1=\"150\" y1=\"125\" x2=\"102.5\" y2=\"42.7\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"131.6\" y=\"61.2\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">10</text><circle cx=\"150\" cy=\"125\" r=\"4\" fill=\"currentColor\"/></svg>",
+  "question": "A spinner is divided into four sectors with angles $180^\\circ$, $90^\\circ$, $60^\\circ$ and $30^\\circ$, scoring 1, 2, 5 and 10 points respectively, as shown. $X$ is the score on one spin.\n\nAmir says: \"The expected score is $\\dfrac{1 + 2 + 5 + 10}{4} = 4.5$.\"\n\n(a) Explain why Amir is wrong.\n(b) Find the correct value of $E(X)$.\n(c) Describe how the spinner would have to be changed for Amir's method to give the right answer.",
+  "hint": "The probability of each score is its angle divided by $360^\\circ$.",
+  "answer": "(a) He has treated the four scores as equally likely, but they are not. (b) $E(X) = \\frac{8}{3} \\approx 2.67$ (c) the four sectors would need equal angles ($90^\\circ$ each).",
+  "solution": "(a) Amir's average gives each score the same weight, as though each were equally likely. But the 1 sector is half the spinner and the 10 sector is only a twelfth, so 1 comes up far more often than 10.\n\n(b) Probabilities from the angles:\n\n| $x$ | 1 | 2 | 5 | 10 |\n|---|---|---|---|---|\n| $P(X = x)$ | $\\frac{180}{360} = \\frac{1}{2}$ | $\\frac{90}{360} = \\frac{1}{4}$ | $\\frac{60}{360} = \\frac{1}{6}$ | $\\frac{30}{360} = \\frac{1}{12}$ |\n\n$$E(X) = 1 \\times \\tfrac{1}{2} + 2 \\times \\tfrac{1}{4} + 5 \\times \\tfrac{1}{6} + 10 \\times \\tfrac{1}{12} = \\tfrac{1}{2} + \\tfrac{1}{2} + \\tfrac{5}{6} + \\tfrac{5}{6} = \\tfrac{8}{3} \\approx 2.67$$\n\n(c) A simple average equals $\\sum x\\,P(X = x)$ only when every value has the same probability, so each sector would need an angle of $90^\\circ$. Then $E(X) = \\frac{1}{4}(1 + 2 + 5 + 10) = 4.5$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q10",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "At a school fair, a game costs £1 to play. The player tosses three fair coins.\n\n* Three heads wins £5.\n* Exactly two heads wins £1.\n* Otherwise the player wins nothing.\n\n(a) Let $W$ be the amount won, in pounds. Find $E(W)$.\n(b) Jess says: \"The expected winnings are more than zero, so on average players make a profit.\" Is Jess correct? Explain.\n(c) The organisers want to make an average profit of 20p per game. Keeping the prizes the same, what should they charge?\n(d) Instead, they keep the price at £1 and the £1 prize, but change the £5 prize. What should the top prize be so that the organisers still make 20p per game on average?",
+  "hint": "List the 8 equally likely outcomes, or use $\\binom{3}{2}$ for the number of ways to get exactly two heads. The player's **gain** is the winnings minus the £1 cost.",
+  "answer": "(a) $E(W) = £1$ (b) No: expected gain $= 1 - 1 = 0$, so on average players neither gain nor lose; the game is fair. (c) £1.20 (d) £3.40",
+  "solution": "(a) With three fair coins there are 8 equally likely outcomes. Three heads: 1 outcome; exactly two heads: 3 outcomes (HHT, HTH, THH).\n\n| $w$ | 5 | 1 | 0 |\n|---|---|---|---|\n| $P(W = w)$ | $\\frac{1}{8}$ | $\\frac{3}{8}$ | $\\frac{4}{8}$ |\n\n$$E(W) = 5 \\times \\tfrac{1}{8} + 1 \\times \\tfrac{3}{8} + 0 \\times \\tfrac{4}{8} = \\tfrac{8}{8} = 1$$\n\n(b) Jess is **not** correct: she has forgotten the cost of playing. The player pays £1 each time, so\n$$\\text{expected gain} = E(W) - 1 = 1 - 1 = 0$$\nOn average players break even. The game is **fair**.\n\n(c) The organisers' expected profit per game is (price) $-\\,E(W)$:\n$$\\text{price} - 1 = 0.20 \\;\\Rightarrow\\; \\text{price} = £1.20$$\n\n(d) Let the top prize be £$x$. We need $E(W) = 1 - 0.20 = 0.80$:\n$$\\tfrac{x}{8} + \\tfrac{3}{8} = 0.8 \\;\\Rightarrow\\; x + 3 = 6.4 \\;\\Rightarrow\\; x = 3.4$$\nThe top prize should be **£3.40**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q11",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": true,
+  "linkedTopicIds": [
+   "prob-tree-diagrams"
+  ],
+  "question": "A bag contains 3 red counters and 5 blue counters. Two counters are taken from the bag at random, without replacement.\n\nThe random variable $X$ is the number of red counters taken.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $P(X = 1) = \\dfrac{15}{28}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability distribution of $X$, giving your probabilities as fractions.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find $E(X)$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find $\\operatorname{Var}(X)$, giving your answer as a fraction in its simplest form.",
+    "marks": 3
+   }
+  ],
+  "hint": "For exactly one red, the order could be red then blue, or blue then red.",
+  "answer": "(a) shown (b) $P(X = 0) = \\frac{10}{28} = \\frac{5}{14}$, $P(X = 1) = \\frac{15}{28}$, $P(X = 2) = \\frac{3}{28}$ (c) $\\frac{3}{4}$ (d) $\\frac{45}{112}$",
+  "solution": "**(a)**\n$$P(X = 1) = P(RB) + P(BR) = \\frac{3}{8} \\times \\frac{5}{7} + \\frac{5}{8} \\times \\frac{3}{7}$$ M1\n$$= \\frac{15}{56} + \\frac{15}{56} = \\frac{30}{56} = \\frac{15}{28}$$ A1 (cso)\n\n**(b)**\n$$P(X = 0) = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{10}{28}, \\qquad P(X = 2) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56} = \\frac{3}{28}$$ M1\n\n| $x$ | 0 | 1 | 2 |\n|---|---|---|---|\n| $P(X = x)$ | $\\frac{10}{28}$ | $\\frac{15}{28}$ | $\\frac{3}{28}$ |\n\nA1 (check: $\\frac{10 + 15 + 3}{28} = 1$)\n\n**(c)**\n$$E(X) = 0 \\times \\frac{10}{28} + 1 \\times \\frac{15}{28} + 2 \\times \\frac{3}{28}$$ M1\n$$= \\frac{21}{28} = \\frac{3}{4}$$ A1\n\n**(d)**\n$$E(X^2) = 0^2 \\times \\frac{10}{28} + 1^2 \\times \\frac{15}{28} + 2^2 \\times \\frac{3}{28} = \\frac{27}{28}$$ M1\n$$\\operatorname{Var}(X) = \\frac{27}{28} - \\left(\\frac{3}{4}\\right)^2$$ M1\n$$= \\frac{108}{112} - \\frac{63}{112} = \\frac{45}{112}$$ A1"
+ },
+ {
+  "id": "prob-discrete-random-variables-q12",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The discrete random variable $X$ has the probability distribution shown, where $a$ and $b$ are constants.\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $P(X = x)$ | $a$ | $0.3$ | $b$ | $0.2$ |\n\nGiven that $E(X) = 2.6$,\n\n(a) find the values of $a$ and $b$,\n(b) find $\\operatorname{Var}(X)$.",
+  "hint": "Write one equation from \"probabilities sum to 1\" and another from $E(X) = 2.6$, then solve simultaneously.",
+  "answer": "(a) $a = 0.15$, $b = 0.35$ (b) $\\operatorname{Var}(X) = 0.94$",
+  "solution": "(a) Probabilities sum to 1:\n$$a + 0.3 + b + 0.2 = 1 \\;\\Rightarrow\\; a + b = 0.5 \\quad (1)$$\n\nExpected value:\n$$1a + 2(0.3) + 3b + 4(0.2) = 2.6 \\;\\Rightarrow\\; a + 3b + 1.4 = 2.6 \\;\\Rightarrow\\; a + 3b = 1.2 \\quad (2)$$\n\n$(2) - (1)$: $2b = 0.7$, so $b = 0.35$, and then $a = 0.5 - 0.35 = 0.15$.\n\n(b)\n$$E(X^2) = 1(0.15) + 4(0.3) + 9(0.35) + 16(0.2) = 0.15 + 1.2 + 3.15 + 3.2 = 7.7$$\n$$\\operatorname{Var}(X) = 7.7 - 2.6^2 = 7.7 - 6.76 = 0.94$$"
+ },
+ {
+  "id": "prob-discrete-random-variables-q13",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "prob-sample-spaces"
+  ],
+  "question": "Two fair six-sided dice are rolled. The random variable $X$ is the **larger** of the two scores (if the scores are equal, $X$ is that score).\n\n(a) Explain why $P(X \\le x) = \\dfrac{x^2}{36}$ for $x = 1, 2, \\dots, 6$.\n(b) Hence show that $P(X = x) = \\dfrac{2x - 1}{36}$ for $x = 1, 2, \\dots, 6$.\n(c) Find $E(X)$, giving your answer as an exact fraction.\n(d) Find the most likely value of $X$ and explain why.",
+  "hint": "$X \\le x$ means **both** dice show $x$ or less. Then $P(X = x) = P(X \\le x) - P(X \\le x - 1)$.",
+  "answer": "(a) both dice must be at most $x$: $\\frac{x}{6} \\times \\frac{x}{6}$ (b) $\\frac{x^2 - (x-1)^2}{36} = \\frac{2x - 1}{36}$ (c) $E(X) = \\frac{161}{36}$ (d) $6$, since $\\frac{2x-1}{36}$ increases with $x$ ($P(X = 6) = \\frac{11}{36}$).",
+  "solution": "(a) The larger score is at most $x$ exactly when **both** dice show at most $x$. Each dice shows at most $x$ with probability $\\frac{x}{6}$, and the dice are independent, so\n$$P(X \\le x) = \\frac{x}{6} \\times \\frac{x}{6} = \\frac{x^2}{36}$$\n\n(b)\n$$P(X = x) = P(X \\le x) - P(X \\le x - 1) = \\frac{x^2 - (x-1)^2}{36} = \\frac{x^2 - (x^2 - 2x + 1)}{36} = \\frac{2x - 1}{36}$$\n(This also works for $x = 1$, since $P(X \\le 0) = 0$.)\n\n| $x$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| $P(X = x)$ | $\\frac{1}{36}$ | $\\frac{3}{36}$ | $\\frac{5}{36}$ | $\\frac{7}{36}$ | $\\frac{9}{36}$ | $\\frac{11}{36}$ |\n\nCheck: $1 + 3 + 5 + 7 + 9 + 11 = 36$ ✓\n\n(c)\n$$E(X) = \\frac{1(1) + 2(3) + 3(5) + 4(7) + 5(9) + 6(11)}{36} = \\frac{1 + 6 + 15 + 28 + 45 + 66}{36} = \\frac{161}{36} \\approx 4.47$$\n\n(d) $\\frac{2x - 1}{36}$ increases as $x$ increases, so the most likely value is $X = 6$, with probability $\\frac{11}{36}$. Intuitively, there are more ways for the larger score to be big: 11 of the 36 outcomes contain at least one 6."
+ },
+ {
+  "id": "prob-discrete-random-variables-q14",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "An insurance company sells one-year phone insurance. From past records, for each policy:\n\n* the probability of a claim for a stolen phone, paid at £500, is $0.02$;\n* the probability of a claim for a cracked screen, paid at £120, is $0.1$;\n* otherwise there is no claim.\n\nAssume at most one claim is made per policy. Let $X$ be the amount paid out on a policy, in pounds.\n\n(a) Find $E(X)$.\n(b) Find the standard deviation of $X$, giving your answer to 3 significant figures.\n(c) The company charges £35 for each policy. Find the expected profit per policy, and the expected total profit from 4000 policies.\n(d) Comment on what the size of the standard deviation compared with the mean tells the company.",
+  "hint": "Write out the probability distribution first: don't forget $P(X = 0)$. Then use $\\operatorname{Var}(X) = E(X^2) - [E(X)]^2$.",
+  "answer": "(a) £22 (b) £77.2 (c) £13 per policy; £52 000 from 4000 policies (d) the payout on a single policy is very variable (SD much larger than the mean), so the company relies on selling many policies for the average to be reliable.",
+  "solution": "| $x$ | 500 | 120 | 0 |\n|---|---|---|---|\n| $P(X = x)$ | $0.02$ | $0.1$ | $0.88$ |\n\n(a)\n$$E(X) = 500(0.02) + 120(0.1) + 0(0.88) = 10 + 12 = 22$$\nExpected payout £22.\n\n(b)\n$$E(X^2) = 500^2(0.02) + 120^2(0.1) = 5000 + 1440 = 6440$$\n$$\\operatorname{Var}(X) = 6440 - 22^2 = 6440 - 484 = 5956$$\n$$\\sigma = \\sqrt{5956} = 77.17\\ldots \\approx 77.2$$\nThe standard deviation is about £77.2.\n\n(c) Expected profit per policy $= 35 - 22 = £13$.\n\nOver 4000 policies: $4000 \\times 13 = £52\\,000$.\n\n(d) The standard deviation (about £77) is more than three times the mean (£22): on a single policy the payout is usually £0 but occasionally £500, so one policy is very unpredictable. The company can only rely on the £13 average profit because it sells thousands of policies, and over many policies the average payout settles close to £22.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q15",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-geometric-series"
+  ],
+  "question": "The discrete random variable $X$ can take any value $0, 1, 2, 3, \\dots$, with probability function\n$$P(X = x) = k\\left(\\frac{2}{3}\\right)^x, \\qquad x = 0, 1, 2, \\dots$$\nwhere $k$ is a constant.\n\n(a) Show that $k = \\frac{1}{3}$.\n(b) Find $P(X \\ge 3)$.\n(c) Find the probability that $X$ is an even number.",
+  "hint": "The probabilities form an infinite geometric series. Use $S_\\infty = \\dfrac{a}{1 - r}$ with a suitable first term and common ratio.",
+  "answer": "(a) shown (b) $\\dfrac{8}{27}$ (c) $\\dfrac{3}{5}$",
+  "solution": "(a) The probabilities sum to 1:\n$$\\sum_{x=0}^{\\infty} k\\left(\\tfrac{2}{3}\\right)^x = k\\left(1 + \\tfrac{2}{3} + \\tfrac{4}{9} + \\dots\\right) = k \\times \\frac{1}{1 - \\frac{2}{3}} = 3k$$\n$3k = 1$, so $k = \\frac{1}{3}$.\n\n(b) Either sum the tail, a geometric series with first term $\\frac{1}{3}\\left(\\frac{2}{3}\\right)^3$ and ratio $\\frac{2}{3}$:\n$$P(X \\ge 3) = \\frac{\\frac{1}{3}\\left(\\frac{2}{3}\\right)^3}{1 - \\frac{2}{3}} = \\left(\\tfrac{2}{3}\\right)^3 = \\frac{8}{27}$$\nor use the complement: $P(X \\le 2) = \\frac{1}{3}\\left(1 + \\frac{2}{3} + \\frac{4}{9}\\right) = \\frac{1}{3} \\times \\frac{19}{9} = \\frac{19}{27}$, and $1 - \\frac{19}{27} = \\frac{8}{27}$ ✓\n\n(c) Even values $x = 0, 2, 4, \\dots$ give a geometric series with first term $\\frac{1}{3}$ and common ratio $\\left(\\frac{2}{3}\\right)^2 = \\frac{4}{9}$:\n$$P(X \\text{ even}) = \\frac{\\frac{1}{3}}{1 - \\frac{4}{9}} = \\frac{1}{3} \\times \\frac{9}{5} = \\frac{3}{5}$$"
+ },
+ {
+  "id": "prob-discrete-random-variables-q16",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Ella plays a coin game. She flips a fair coin until she gets a head, but she is allowed at most 4 flips.\n\n* If her first head comes on flip number $n$ (where $n = 1, 2, 3$ or $4$), she wins $£2^n$.\n* If all 4 flips are tails, she wins nothing.\n\nLet $W$ be the amount she wins, in pounds.\n\n(a) Find the probability distribution of $W$.\n(b) Find $E(W)$, and hence the price that would make the game fair.\n(c) Find the standard deviation of $W$, to 3 significant figures.\n(d) Without doing a full calculation, find the fair price if Ella were allowed up to 10 flips instead of 4. Explain your reasoning.",
+  "hint": "The first head comes on flip $n$ when the first $n - 1$ flips are tails and flip $n$ is a head: probability $\\left(\\frac{1}{2}\\right)^n$.",
+  "answer": "(a) $P(W = 2) = \\frac{1}{2}$, $P(W = 4) = \\frac{1}{4}$, $P(W = 8) = \\frac{1}{8}$, $P(W = 16) = \\frac{1}{16}$, $P(W = 0) = \\frac{1}{16}$ (b) $E(W) = £4$, so a fair price is £4 (c) $£3.74$ (d) £10: each possible flip contributes £1 to the expected winnings.",
+  "solution": "(a) First head on flip $n$: $n - 1$ tails then a head, probability $\\left(\\frac{1}{2}\\right)^n$. All four tails: $\\left(\\frac{1}{2}\\right)^4 = \\frac{1}{16}$.\n\n| $w$ | 0 | 2 | 4 | 8 | 16 |\n|---|---|---|---|---|---|\n| $P(W = w)$ | $\\frac{1}{16}$ | $\\frac{1}{2}$ | $\\frac{1}{4}$ | $\\frac{1}{8}$ | $\\frac{1}{16}$ |\n\nCheck: $\\frac{1 + 8 + 4 + 2 + 1}{16} = 1$ ✓\n\n(b)\n$$E(W) = 2 \\times \\tfrac{1}{2} + 4 \\times \\tfrac{1}{4} + 8 \\times \\tfrac{1}{8} + 16 \\times \\tfrac{1}{16} + 0 = 1 + 1 + 1 + 1 = 4$$\nThe game is fair when the expected **gain** (winnings minus price) is 0, so the fair price is **£4**.\n\n(c)\n$$E(W^2) = 4 \\times \\tfrac{1}{2} + 16 \\times \\tfrac{1}{4} + 64 \\times \\tfrac{1}{8} + 256 \\times \\tfrac{1}{16} = 2 + 4 + 8 + 16 = 30$$\n$$\\operatorname{Var}(W) = 30 - 4^2 = 14, \\qquad \\sigma = \\sqrt{14} \\approx £3.74$$\n\n(d) Each term in $E(W)$ is $2^n \\times \\left(\\frac{1}{2}\\right)^n = 1$, so every allowed flip adds exactly £1 to the expected winnings. With up to 10 flips, $E(W) = 10 \\times £1 = £10$, so the fair price would be **£10**. (Surprisingly, the more flips allowed, the more the game is worth, without limit.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-discrete-random-variables-q17",
+  "topicId": "prob-discrete-random-variables",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The variance of a discrete random variable $X$ with mean $\\mu$ is defined as\n$$\\operatorname{Var}(X) = E\\big[(X - \\mu)^2\\big] = \\sum (x - \\mu)^2\\,P(X = x)$$\n\n(a) Prove that $\\operatorname{Var}(X) = E(X^2) - \\mu^2$.\n(b) Explain why it follows that $E(X^2) \\ge [E(X)]^2$ for every discrete random variable.\n(c) The random variable $Y$ takes only the values 0, 1 and 2, and $E(Y) = 1$. Prove that $\\operatorname{Var}(Y) \\le 1$, and state the distribution of $Y$ for which $\\operatorname{Var}(Y) = 1$.",
+  "hint": "Expand $(x - \\mu)^2$, split the sum into three sums, and use $\\sum x\\,P(X = x) = \\mu$ and $\\sum P(X = x) = 1$. In (c), let $P(Y = 0) = a$, $P(Y = 1) = b$, $P(Y = 2) = c$.",
+  "answer": "(a) proof (b) a variance is a sum of non-negative terms, so $0 \\le E(X^2) - [E(X)]^2$ (c) $\\operatorname{Var}(Y) = 2\\,P(Y = 2) \\le 1$; equality when $P(Y = 0) = P(Y = 2) = \\frac{1}{2}$, $P(Y = 1) = 0$.",
+  "solution": "(a) Write $p_x = P(X = x)$. Expanding,\n$$\\sum (x - \\mu)^2 p_x = \\sum x^2 p_x - 2\\mu \\sum x\\,p_x + \\mu^2 \\sum p_x$$\nNow $\\sum x^2 p_x = E(X^2)$, $\\sum x\\,p_x = \\mu$ and $\\sum p_x = 1$, so\n$$\\operatorname{Var}(X) = E(X^2) - 2\\mu \\cdot \\mu + \\mu^2 = E(X^2) - \\mu^2$$ $\\blacksquare$\n\n(b) In the definition, each term $(x - \\mu)^2 P(X = x)$ is a square times a probability, so it is $\\ge 0$. Hence $\\operatorname{Var}(X) \\ge 0$, and by (a)\n$$E(X^2) - [E(X)]^2 \\ge 0 \\;\\Rightarrow\\; E(X^2) \\ge [E(X)]^2$$\n(This is also why getting a negative variance always signals an arithmetic error.)\n\n(c) Let $P(Y = 0) = a$, $P(Y = 1) = b$, $P(Y = 2) = c$. Then\n$$a + b + c = 1, \\qquad b + 2c = 1$$\nSubtracting gives $a - c = 0$, so $a = c$ and $b = 1 - 2c$.\n\n$$E(Y^2) = 0 + b + 4c = (1 - 2c) + 4c = 1 + 2c$$\n$$\\operatorname{Var}(Y) = E(Y^2) - 1^2 = 2c$$\n\nSince $b = 1 - 2c \\ge 0$, we have $c \\le \\frac{1}{2}$, so $\\operatorname{Var}(Y) = 2c \\le 1$. $\\blacksquare$\n\nEquality holds when $c = \\frac{1}{2}$: $P(Y = 0) = P(Y = 2) = \\frac{1}{2}$ and $P(Y = 1) = 0$. This makes sense: the spread is greatest when all the probability is as far from the mean as possible."
+ }
+]
