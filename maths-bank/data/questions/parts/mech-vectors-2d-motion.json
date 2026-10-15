@@ -1,0 +1,278 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves with constant acceleration $(\\mathbf{i} - \\mathbf{j})\\text{ m s}^{-2}$. Its initial velocity is $(3\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-1}$.\n\nFind its velocity after 4 seconds.",
+  "hint": "Use $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$, working with the $\\mathbf{i}$ and $\\mathbf{j}$ components separately.",
+  "answer": "$(7\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-1}$",
+  "solution": "$$\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t = (3\\mathbf{i} + 2\\mathbf{j}) + 4(\\mathbf{i} - \\mathbf{j})$$\n$$= (3 + 4)\\mathbf{i} + (2 - 4)\\mathbf{j} = (7\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-1}$$",
+  "misconceptionIds": [],
+  "id": "mech-vectors-2d-motion-q01",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle has initial velocity $(3\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-1}$ and constant acceleration $(-\\mathbf{i} - \\mathbf{j})\\text{ m s}^{-2}$.\n\nFind its velocity after 4 seconds.",
+  "hint": "Only the sign of the $\\mathbf{i}$-component of the acceleration has changed from the previous question.",
+  "answer": "$(-\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-1}$",
+  "solution": "**What changed:** the $\\mathbf{i}$-component of $\\mathbf{a}$ is now $-1$ instead of $+1$.\n$$\\mathbf{v} = (3\\mathbf{i} + 2\\mathbf{j}) + 4(-\\mathbf{i} - \\mathbf{j}) = (3 - 4)\\mathbf{i} + (2 - 4)\\mathbf{j} = (-\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-1}$$\nOnly the $\\mathbf{i}$-component of the answer changes ($7 \\to -1$): each component is worked out independently. The particle is now moving west-south-west instead of east-south-east.",
+  "misconceptionIds": [],
+  "id": "mech-vectors-2d-motion-q02",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle starts **at the origin** with velocity $(3\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-1}$ and moves with constant acceleration $(-\\mathbf{i} - \\mathbf{j})\\text{ m s}^{-2}$.\n\nFind its position vector after 4 seconds.",
+  "hint": "Use $\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ with $\\mathbf{r}_0 = \\mathbf{0}$.",
+  "answer": "$4\\mathbf{i}$ m",
+  "solution": "**What changed:** same motion as before, but now we want the position rather than the velocity.\n$$\\mathbf{r} = \\mathbf{u}t + \\tfrac{1}{2}\\mathbf{a}t^2 = 4(3\\mathbf{i} + 2\\mathbf{j}) + \\tfrac{1}{2}(16)(-\\mathbf{i} - \\mathbf{j})$$\n$$= (12 - 8)\\mathbf{i} + (8 - 8)\\mathbf{j} = 4\\mathbf{i}\\text{ m}$$\nSo after 4 s the particle is 4 m due east of the origin.",
+  "misconceptionIds": [],
+  "id": "mech-vectors-2d-motion-q03",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle starts at the point with position vector $(2\\mathbf{i} - 5\\mathbf{j})$ m, with velocity $(3\\mathbf{i} + 2\\mathbf{j})\\text{ m s}^{-1}$, and moves with constant acceleration $(-\\mathbf{i} - \\mathbf{j})\\text{ m s}^{-2}$.\n\nFind its position vector after 4 seconds, and its distance from the origin then.",
+  "hint": "The displacement is the same as in the previous question. The position vector is the starting position plus the displacement.",
+  "answer": "$(6\\mathbf{i} - 5\\mathbf{j})$ m; $\\sqrt{61} \\approx 7.81$ m",
+  "solution": "**What changed:** the particle starts at $(2\\mathbf{i} - 5\\mathbf{j})$ instead of at the origin.\n\nThe displacement in 4 s is unchanged: $\\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2 = 4\\mathbf{i}$. So\n$$\\mathbf{r} = \\mathbf{r}_0 + \\mathbf{u}t + \\tfrac{1}{2}\\mathbf{a}t^2 = (2\\mathbf{i} - 5\\mathbf{j}) + 4\\mathbf{i} = (6\\mathbf{i} - 5\\mathbf{j})\\text{ m}$$\nDistance from O: $|\\mathbf{r}| = \\sqrt{6^2 + 5^2} = \\sqrt{61} \\approx 7.81$ m.\n\n(Leaving out $\\mathbf{r}_0$ would give $4\\mathbf{i}$: that is where the particle has moved **by**, not where it **is**.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-vectors-2d-motion-q04",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A boat has velocity $(5\\mathbf{i} - 12\\mathbf{j})\\text{ km h}^{-1}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are unit vectors due east and due north respectively.\n\nFind (a) the speed of the boat, (b) the bearing on which it is moving.",
+  "hint": "Speed is the magnitude of the velocity. For the bearing, sketch the vector: 5 east and 12 south.",
+  "answer": "(a) $13\\text{ km h}^{-1}$ (b) $157^\\circ$ (to the nearest degree)",
+  "solution": "(a) $\\text{speed} = |\\mathbf{v}| = \\sqrt{5^2 + (-12)^2} = \\sqrt{169} = 13\\text{ km h}^{-1}$ (not $5 + 12 = 17$).\n\n(b) The boat moves 5 east for every 12 south, so it heads south-east-ish, closer to south. The angle east of due south is\n$$\\tan^{-1}\\left(\\frac{5}{12}\\right) = 22.6^\\circ$$\nBearings are measured clockwise from north, so the bearing is $180^\\circ - 22.6^\\circ = 157.4^\\circ \\approx 157^\\circ$.",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "id": "mech-vectors-2d-motion-q05",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A drone flies with constant velocity $(-6\\mathbf{i} + 8\\mathbf{j})\\text{ m s}^{-1}$, where $\\mathbf{i}$ and $\\mathbf{j}$ are unit vectors due east and due north. Find the bearing on which it is flying.\n\nZara's working is shown below.\n\n> $\\tan^{-1}\\left(\\dfrac{8}{6}\\right) = 53.1^\\circ$, so the bearing is $053.1^\\circ$.\n\nExplain Zara's error and find the correct bearing.",
+  "hint": "Sketch the vector: which way is $-6\\mathbf{i}$? Where is $53.1^\\circ$ measured from, and where is a bearing measured from?",
+  "answer": "She measured the angle from the $\\mathbf{i}$-direction (and ignored the sign); the correct bearing is $323.1^\\circ$ (1 d.p.).",
+  "solution": "Zara has made two errors:\n\n* $\\tan^{-1}\\frac{8}{6}$ gives the angle between the velocity and the **east–west** line, but a bearing is measured **clockwise from north**.\n* She ignored the minus sign: $-6\\mathbf{i}$ means 6 west, so the drone flies north-**west**, not north-east.\n\n**Correct:** sketch 6 west and 8 north. The angle west of north is\n$$\\tan^{-1}\\left(\\frac{6}{8}\\right) = 36.9^\\circ$$\nMeasured clockwise from north, the bearing is\n$$360^\\circ - 36.9^\\circ = 323.1^\\circ$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "mech-vectors-2d-motion-q06",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A particle of mass 2 kg is acted on by two forces, $\\mathbf{F}_1 = (3\\mathbf{i} - \\mathbf{j})$ N and $\\mathbf{F}_2 = (5\\mathbf{i} + 7\\mathbf{j})$ N, and no others. It starts from rest.\n\n(a) Find the acceleration of the particle and its magnitude.\n\n(b) Find the speed of the particle after 3 seconds.",
+  "hint": "Add the forces to get the resultant, then use $\\mathbf{F} = m\\mathbf{a}$.",
+  "answer": "(a) $(4\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{-2}$; $5\\text{ m s}^{-2}$ (b) $15\\text{ m s}^{-1}$",
+  "solution": "(a) Resultant: $\\mathbf{F} = (3 + 5)\\mathbf{i} + (-1 + 7)\\mathbf{j} = (8\\mathbf{i} + 6\\mathbf{j})$ N.\n$$\\mathbf{a} = \\frac{\\mathbf{F}}{m} = \\frac{1}{2}(8\\mathbf{i} + 6\\mathbf{j}) = (4\\mathbf{i} + 3\\mathbf{j})\\text{ m s}^{-2}$$\n$$|\\mathbf{a}| = \\sqrt{4^2 + 3^2} = 5\\text{ m s}^{-2}$$\n(The magnitude is found by Pythagoras: it is **not** $4 + 3 = 7$.)\n\n(b) From rest: $\\mathbf{v} = \\mathbf{a}t = 3(4\\mathbf{i} + 3\\mathbf{j}) = (12\\mathbf{i} + 9\\mathbf{j})\\text{ m s}^{-1}$, so the speed is $\\sqrt{144 + 81} = 15\\text{ m s}^{-1}$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "mech-vectors-2d-motion-q07",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle moves so that its velocity at time $t$ seconds is\n$$\\mathbf{v} = (2t - 6)\\mathbf{i} + (t^2 - 1)\\mathbf{j}\\text{ m s}^{-1}, \\quad t \\ge 0$$\nFind the time when the particle is moving parallel to $\\mathbf{j}$, and its speed at that time.\n\nHassan's working is shown below.\n\n> Parallel to $\\mathbf{j}$, so the $\\mathbf{j}$-component is zero: $t^2 - 1 = 0$, so $t = 1$.\n>\n> $\\mathbf{v} = -4\\mathbf{i}$, so the speed is $4\\text{ m s}^{-1}$.\n\nIdentify Hassan's error, explain why it is wrong, and find the correct answer.",
+  "hint": "A vector parallel to $\\mathbf{j}$ looks like $k\\mathbf{j}$. Which component is zero? Look at Hassan's own answer: is $-4\\mathbf{i}$ parallel to $\\mathbf{j}$?",
+  "answer": "He set the wrong component to zero. Correct: $t = 3$, $\\mathbf{v} = 8\\mathbf{j}$, speed $8\\text{ m s}^{-1}$.",
+  "solution": "Hassan set the $\\mathbf{j}$-component to zero. A velocity parallel to $\\mathbf{j}$ has the form $k\\mathbf{j}$, i.e. its **$\\mathbf{i}$-component** is zero. His own answer, $\\mathbf{v} = -4\\mathbf{i}$, is parallel to $\\mathbf{i}$, which shows the error.\n\n**Correct:** set the $\\mathbf{i}$-component to zero:\n$$2t - 6 = 0 \\quad\\Rightarrow\\quad t = 3$$\nThen $\\mathbf{v} = 0\\mathbf{i} + (9 - 1)\\mathbf{j} = 8\\mathbf{j}$, which is non-zero, so the particle is indeed moving parallel to $\\mathbf{j}$ (due north if $\\mathbf{j}$ is north).\n\nSpeed $= 8\\text{ m s}^{-1}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "mech-vectors-2d-motion-q08",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "A particle P moves in a plane so that at time $t$ seconds its position vector is\n$$\\mathbf{r} = (2t^3 - 3t^2)\\mathbf{i} + (4t - t^2)\\mathbf{j}\\text{ m}$$\n(a) Find the velocity and acceleration of P in terms of $t$.\n\n(b) Find the time when P is moving parallel to $\\mathbf{i}$, and its speed at that time.\n\n(c) Find the magnitude of the acceleration of P at that time.",
+  "hint": "Differentiate each component separately with respect to $t$. Parallel to $\\mathbf{i}$ means the $\\mathbf{j}$-component of the velocity is zero (and the $\\mathbf{i}$-component is not).",
+  "answer": "(a) $\\mathbf{v} = (6t^2 - 6t)\\mathbf{i} + (4 - 2t)\\mathbf{j}$, $\\mathbf{a} = (12t - 6)\\mathbf{i} - 2\\mathbf{j}$ (b) $t = 2$, speed $12\\text{ m s}^{-1}$ (c) $\\sqrt{328} = 2\\sqrt{82} \\approx 18.1\\text{ m s}^{-2}$",
+  "solution": "(a) $$\\mathbf{v} = \\frac{d\\mathbf{r}}{dt} = (6t^2 - 6t)\\mathbf{i} + (4 - 2t)\\mathbf{j}\\text{ m s}^{-1}$$\n$$\\mathbf{a} = \\frac{d\\mathbf{v}}{dt} = (12t - 6)\\mathbf{i} - 2\\mathbf{j}\\text{ m s}^{-2}$$\n\n(b) Parallel to $\\mathbf{i}$: $4 - 2t = 0 \\Rightarrow t = 2$.\n\nThen $\\mathbf{v} = (24 - 12)\\mathbf{i} = 12\\mathbf{i}$, which is non-zero, so P is moving parallel to $\\mathbf{i}$ with speed $12\\text{ m s}^{-1}$.\n\n(c) At $t = 2$: $\\mathbf{a} = 18\\mathbf{i} - 2\\mathbf{j}$, so\n$$|\\mathbf{a}| = \\sqrt{18^2 + 2^2} = \\sqrt{328} = 2\\sqrt{82} \\approx 18.1\\text{ m s}^{-2}$$",
+  "misconceptionIds": [],
+  "id": "mech-vectors-2d-motion-q09",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "A particle moves so that its acceleration at time $t$ seconds is\n$$\\mathbf{a} = (6t\\,\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$$\nWhen $t = 0$, the particle is at the point with position vector $(\\mathbf{i} + 2\\mathbf{j})$ m and has velocity $(2\\mathbf{i} + 5\\mathbf{j})\\text{ m s}^{-1}$.\n\nFind the velocity and the position vector of the particle when $t = 3$.",
+  "hint": "Integrate component by component. Each integration gives a **vector** constant, found from the conditions at $t = 0$.",
+  "answer": "$\\mathbf{v} = (29\\mathbf{i} - \\mathbf{j})\\text{ m s}^{-1}$; $\\mathbf{r} = (34\\mathbf{i} + 8\\mathbf{j})$ m",
+  "solution": "**Velocity:**\n$$\\mathbf{v} = \\int (6t\\,\\mathbf{i} - 2\\mathbf{j})\\,dt = 3t^2\\,\\mathbf{i} - 2t\\,\\mathbf{j} + \\mathbf{c}$$\nAt $t = 0$, $\\mathbf{v} = 2\\mathbf{i} + 5\\mathbf{j}$, so $\\mathbf{c} = 2\\mathbf{i} + 5\\mathbf{j}$:\n$$\\mathbf{v} = (3t^2 + 2)\\mathbf{i} + (5 - 2t)\\mathbf{j}$$\nAt $t = 3$: $\\mathbf{v} = 29\\mathbf{i} - \\mathbf{j}\\text{ m s}^{-1}$.\n\n**Position:**\n$$\\mathbf{r} = \\int \\mathbf{v}\\,dt = (t^3 + 2t)\\mathbf{i} + (5t - t^2)\\mathbf{j} + \\mathbf{d}$$\nAt $t = 0$, $\\mathbf{r} = \\mathbf{i} + 2\\mathbf{j}$, so $\\mathbf{d} = \\mathbf{i} + 2\\mathbf{j}$:\n$$\\mathbf{r} = (t^3 + 2t + 1)\\mathbf{i} + (5t - t^2 + 2)\\mathbf{j}$$\nAt $t = 3$: $\\mathbf{r} = (27 + 6 + 1)\\mathbf{i} + (15 - 9 + 2)\\mathbf{j} = (34\\mathbf{i} + 8\\mathbf{j})$ m.\n\n(The acceleration is not constant, so the suvat formulae cannot be used here.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-vectors-2d-motion-q10",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In this question $\\mathbf{i}$ and $\\mathbf{j}$ are unit vectors due east and due north, and distances are in kilometres. A lighthouse L is at the point with position vector $(20\\mathbf{i} + 5\\mathbf{j})$ km relative to a harbour O. At noon a ship S is at $(2\\mathbf{i} + 3\\mathbf{j})$ km and is moving with constant velocity $(6\\mathbf{i} + 8\\mathbf{j})\\text{ km h}^{-1}$.\n\n(a) Find the speed of the ship and the bearing on which it is sailing.\n\n(b) Find the distance between the ship and the lighthouse at 2:30 pm.\n\n(c) Find the time at which the ship is due north of the lighthouse, and how far north of it the ship is then.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" width=\"300\" height=\"270\"><line x1=\"40\" y1=\"250\" x2=\"262\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"270,250 261,254.5 261,245.5\" fill=\"currentColor\"/><line x1=\"40\" y1=\"250\" x2=\"40\" y2=\"28\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"40,20 44.5,29 35.5,29\" fill=\"currentColor\"/><text x=\"272\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x (east)</text><text x=\"46\" y=\"30\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y (north)</text><text x=\"34\" y=\"266\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"56\" y1=\"226\" x2=\"224\" y2=\"2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"56\" y1=\"226\" x2=\"82.4\" y2=\"190.8\" stroke=\"#3b82f6\" stroke-width=\"1.8\"/><polygon points=\"87.2,184.4 85.4,194.3 78.2,188.9\" fill=\"#3b82f6\"/><circle cx=\"56\" cy=\"226\" r=\"3.5\" fill=\"currentColor\"/><text x=\"64\" y=\"240\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">S (noon)</text><polygon points=\"200,203 194,215 206,215\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"210\" y=\"215\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">L</text></svg>",
+  "hint": "Write the ship's position vector $t$ hours after noon as $\\mathbf{r} = (2 + 6t)\\mathbf{i} + (3 + 8t)\\mathbf{j}$. \"Due north of L\" means the same $\\mathbf{i}$-component as L.",
+  "answer": "(a) $10\\text{ km h}^{-1}$ on a bearing of $036.9^\\circ$ (b) $18.2$ km (3 s.f.) (c) 3 pm; 22 km north of L",
+  "solution": "$t$ hours after noon: $\\mathbf{r} = (2\\mathbf{i} + 3\\mathbf{j}) + t(6\\mathbf{i} + 8\\mathbf{j}) = (2 + 6t)\\mathbf{i} + (3 + 8t)\\mathbf{j}$.\n\n(a) Speed $= \\sqrt{6^2 + 8^2} = 10\\text{ km h}^{-1}$.\n\nThe ship goes 6 east for every 8 north. The angle east of north is $\\tan^{-1}\\frac{6}{8} = 36.9^\\circ$, so the bearing is $036.9^\\circ$. (Note: $\\tan^{-1}\\frac{8}{6} = 53.1^\\circ$ is the angle from east, not the bearing.)\n\n(b) At 2:30 pm, $t = 2.5$: $\\mathbf{r} = 17\\mathbf{i} + 23\\mathbf{j}$.\n$$\\overrightarrow{LS} = (17 - 20)\\mathbf{i} + (23 - 5)\\mathbf{j} = -3\\mathbf{i} + 18\\mathbf{j}$$\n$$|\\overrightarrow{LS}| = \\sqrt{9 + 324} = \\sqrt{333} = 18.2\\text{ km (3 s.f.)}$$\n\n(c) Due north of L when the $\\mathbf{i}$-components are equal: $2 + 6t = 20 \\Rightarrow t = 3$, i.e. at **3 pm**.\n\nThen $\\mathbf{r} = 20\\mathbf{i} + 27\\mathbf{j}$, which is $27 - 5 = 22$ km north of L.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "mech-vectors-2d-motion-q11",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Two particles A and B move in a horizontal plane. At time $t = 0$, A is at the point with position vector $(2\\mathbf{i} + 10\\mathbf{j})$ m and B is at $(14\\mathbf{i} + 2\\mathbf{j})$ m.\n\nA moves with constant velocity $(4\\mathbf{i} + \\mathbf{j})\\text{ m s}^{-1}$. B starts from rest and moves with constant acceleration $\\mathbf{a}\\text{ m s}^{-2}$.\n\nThe particles collide when $t = 4$.\n\n(a) Find the position vector of the point where they collide.\n\n(b) Find $\\mathbf{a}$.\n\n(c) Find the speed of B at the moment of collision.",
+  "hint": "Colliding means the position vectors are equal at the **same** time. Find A's position at $t = 4$ first.",
+  "answer": "(a) $(18\\mathbf{i} + 14\\mathbf{j})$ m (b) $\\mathbf{a} = (0.5\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$ (c) $2\\sqrt{10} \\approx 6.32\\text{ m s}^{-1}$",
+  "solution": "(a) A has constant velocity, so at $t = 4$:\n$$\\mathbf{r}_A = (2\\mathbf{i} + 10\\mathbf{j}) + 4(4\\mathbf{i} + \\mathbf{j}) = (18\\mathbf{i} + 14\\mathbf{j})\\text{ m}$$\nThey collide, so B is also at $(18\\mathbf{i} + 14\\mathbf{j})$ when $t = 4$.\n\n(b) B starts from rest: $\\mathbf{r}_B = (14\\mathbf{i} + 2\\mathbf{j}) + \\frac{1}{2}\\mathbf{a}t^2$. At $t = 4$:\n$$(14\\mathbf{i} + 2\\mathbf{j}) + 8\\mathbf{a} = 18\\mathbf{i} + 14\\mathbf{j} \\quad\\Rightarrow\\quad 8\\mathbf{a} = 4\\mathbf{i} + 12\\mathbf{j}$$\n$$\\mathbf{a} = (0.5\\mathbf{i} + 1.5\\mathbf{j})\\text{ m s}^{-2}$$\n\n(c) $\\mathbf{v}_B = \\mathbf{a}t = 4(0.5\\mathbf{i} + 1.5\\mathbf{j}) = 2\\mathbf{i} + 6\\mathbf{j}$, so the speed is $\\sqrt{4 + 36} = \\sqrt{40} = 2\\sqrt{10} \\approx 6.32\\text{ m s}^{-1}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-vectors-2d-motion-q12",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": true,
+  "question": "A particle P of mass 0.4 kg moves in a horizontal plane. At time $t$ seconds, $t \\ge 0$, the velocity of P is\n$$\\mathbf{v} = \\left[(t^2 - 5t + 6)\\mathbf{i} + (6 - 2t)\\mathbf{j}\\right]\\text{ m s}^{-1}$$\nWhen $t = 0$, P is at the point with position vector $(-2\\mathbf{i} + \\mathbf{j})$ m.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that P is instantaneously at rest when $t = 3$, and at no other time.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the magnitude of the resultant force acting on P when $t = 1$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the position vector of P when $t = 3$.",
+    "marks": 4
+   }
+  ],
+  "hint": "At rest means **both** components of $\\mathbf{v}$ are zero at the same time. For (b) differentiate; for (c) integrate and use the initial position to find the constant vector.",
+  "answer": "(a) shown (b) $0.4\\sqrt{13} \\approx 1.44$ N (c) $(2.5\\mathbf{i} + 10\\mathbf{j})$ m",
+  "solution": "(a) $\\mathbf{j}$-component zero: $6 - 2t = 0 \\Rightarrow t = 3$ only.\n\n$\\mathbf{i}$-component at $t = 3$: $9 - 15 + 6 = 0$. **M1**\n\nBoth components are zero only when $t = 3$ (the $\\mathbf{i}$-component is also zero at $t = 2$, but then $\\mathbf{v} = 2\\mathbf{j} \\ne \\mathbf{0}$), so P is at rest at $t = 3$ only. **A1**\n\n(b) $\\mathbf{a} = \\dfrac{d\\mathbf{v}}{dt} = (2t - 5)\\mathbf{i} - 2\\mathbf{j}$ **M1**\n\nAt $t = 1$: $\\mathbf{a} = -3\\mathbf{i} - 2\\mathbf{j}$, so $\\mathbf{F} = 0.4(-3\\mathbf{i} - 2\\mathbf{j}) = (-1.2\\mathbf{i} - 0.8\\mathbf{j})$ N **M1**\n\n$|\\mathbf{F}| = \\sqrt{1.44 + 0.64} = \\sqrt{2.08} = 0.4\\sqrt{13} \\approx 1.44$ N **A1**\n\n(c) $\\mathbf{r} = \\displaystyle\\int \\mathbf{v}\\,dt = \\left(\\tfrac{1}{3}t^3 - \\tfrac{5}{2}t^2 + 6t\\right)\\mathbf{i} + (6t - t^2)\\mathbf{j} + \\mathbf{c}$ **M1 A1**\n\nAt $t = 0$: $\\mathbf{c} = -2\\mathbf{i} + \\mathbf{j}$. **M1**\n\nAt $t = 3$: $\\mathbf{r} = (9 - 22.5 + 18 - 2)\\mathbf{i} + (18 - 9 + 1)\\mathbf{j} = (2.5\\mathbf{i} + 10\\mathbf{j})$ m **A1**",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-vectors-2d-motion-q13",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-derivatives-exp-log-trig",
+   "pure-vectors"
+  ],
+  "question": "A particle of mass 0.5 kg moves so that its position vector at time $t$ seconds is\n$$\\mathbf{r} = 3\\cos 2t\\,\\mathbf{i} + 3\\sin 2t\\,\\mathbf{j}\\text{ m}$$\n(a) Show that the particle moves on a circle, centre O, and state its radius.\n\n(b) Show that the particle moves with constant speed, and find that speed.\n\n(c) Show that the acceleration is $-4\\mathbf{r}$, and hence describe the direction of the resultant force and find its magnitude.\n\n(d) Show that the velocity is always perpendicular to the position vector.",
+  "hint": "Use $\\cos^2 + \\sin^2 = 1$ for the magnitudes. Differentiate $\\cos 2t$ and $\\sin 2t$ with the chain rule. Perpendicular vectors have scalar product 0.",
+  "answer": "(a) $|\\mathbf{r}| = 3$, radius 3 m (b) $6\\text{ m s}^{-1}$ (c) towards O, magnitude 6 N (d) $\\mathbf{v} \\cdot \\mathbf{r} = 0$",
+  "solution": "(a) $|\\mathbf{r}|^2 = 9\\cos^2 2t + 9\\sin^2 2t = 9$, so $|\\mathbf{r}| = 3$ for all $t$: the particle is always 3 m from O, so it moves on a circle, centre O, radius 3 m.\n\n(b) $$\\mathbf{v} = \\frac{d\\mathbf{r}}{dt} = -6\\sin 2t\\,\\mathbf{i} + 6\\cos 2t\\,\\mathbf{j}$$\n$|\\mathbf{v}|^2 = 36\\sin^2 2t + 36\\cos^2 2t = 36$, so the speed is constantly $6\\text{ m s}^{-1}$.\n\n(c) $$\\mathbf{a} = \\frac{d\\mathbf{v}}{dt} = -12\\cos 2t\\,\\mathbf{i} - 12\\sin 2t\\,\\mathbf{j} = -4(3\\cos 2t\\,\\mathbf{i} + 3\\sin 2t\\,\\mathbf{j}) = -4\\mathbf{r}$$\nSo $\\mathbf{a}$ points in the opposite direction to $\\mathbf{r}$, i.e. **towards the centre O**, with $|\\mathbf{a}| = 4 \\times 3 = 12\\text{ m s}^{-2}$.\n\n$\\mathbf{F} = m\\mathbf{a}$, so the resultant force acts towards O with magnitude $0.5 \\times 12 = 6$ N.\n\n(d) $$\\mathbf{v} \\cdot \\mathbf{r} = (-6\\sin 2t)(3\\cos 2t) + (6\\cos 2t)(3\\sin 2t) = 0$$\nso $\\mathbf{v}$ is perpendicular to $\\mathbf{r}$: the velocity is along the tangent to the circle. Even though the speed is constant, the velocity is changing direction, so there is an acceleration.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "mech-vectors-2d-motion-q14",
+  "topicId": "mech-vectors-2d-motion"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities",
+   "calc-optimisation"
+  ],
+  "question": "In this question distances are in kilometres and time $t$ is in hours after 9 am. Two boats move with constant velocities:\n$$\\mathbf{r}_A = (2\\mathbf{i} + 10\\mathbf{j}) + t(4\\mathbf{i} + \\mathbf{j}), \\qquad \\mathbf{r}_B = (14\\mathbf{i} + 2\\mathbf{j}) + t(\\mathbf{i} + 2\\mathbf{j})$$\n(a) Show that the distance $d$ km between the boats at time $t$ satisfies $d^2 = 10t^2 - 88t + 208$.\n\n(b) Find the least distance between the boats and the time at which it occurs.\n\n(c) In fog, the crews can see each other only when the boats are within 4 km of each other. Find the length of time for which they can see each other.",
+  "hint": "Find $\\overrightarrow{AB} = \\mathbf{r}_B - \\mathbf{r}_A$ in terms of $t$, then $d^2 = |\\overrightarrow{AB}|^2$. Minimise the quadratic (complete the square or differentiate), and solve $d^2 \\le 16$.",
+  "answer": "(a) shown (b) $\\sqrt{14.4} \\approx 3.79$ km at 1:24 pm ($t = 4.4$) (c) 48 minutes (from 1 pm to 1:48 pm)",
+  "solution": "(a) $$\\overrightarrow{AB} = \\mathbf{r}_B - \\mathbf{r}_A = (12 - 3t)\\mathbf{i} + (-8 + t)\\mathbf{j}$$\n$$d^2 = (12 - 3t)^2 + (t - 8)^2 = 144 - 72t + 9t^2 + t^2 - 16t + 64 = 10t^2 - 88t + 208$$\n\n(b) Completing the square:\n$$d^2 = 10(t^2 - 8.8t) + 208 = 10(t - 4.4)^2 - 193.6 + 208 = 10(t - 4.4)^2 + 14.4$$\n(or $\\frac{d}{dt}(d^2) = 20t - 88 = 0 \\Rightarrow t = 4.4$). So $d^2$ is least, $14.4$, when $t = 4.4$:\n$$d_{\\min} = \\sqrt{14.4} = 3.79\\text{ km (3 s.f.)}$$\n$t = 4.4$ h $= 4$ h 24 min after 9 am, i.e. at **1:24 pm**.\n\n(c) Need $d \\le 4$, i.e. $d^2 \\le 16$:\n$$10t^2 - 88t + 208 \\le 16 \\;\\Rightarrow\\; 10t^2 - 88t + 192 \\le 0 \\;\\Rightarrow\\; 5t^2 - 44t + 96 \\le 0 \\;\\Rightarrow\\; (t - 4)(5t - 24) \\le 0$$\nSo $4 \\le t \\le 4.8$: from 1 pm to 1:48 pm, a period of $0.8$ h $= 48$ minutes.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "mech-vectors-2d-motion-q15",
+  "topicId": "mech-vectors-2d-motion"
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-vectors",
+   "mech-projectiles"
+  ],
+  "question": "A particle moves with constant acceleration $\\mathbf{a}$ ($\\mathbf{a} \\ne \\mathbf{0}$) and initial velocity $\\mathbf{u}$.\n\n(a) Prove that, if the speed has a minimum value at some time $t > 0$, then at that instant the velocity is perpendicular to the acceleration.\n\n(b) Given $\\mathbf{u} = (6\\mathbf{i} + 8\\mathbf{j})\\text{ m s}^{-1}$ and $\\mathbf{a} = (-\\mathbf{i} - 3\\mathbf{j})\\text{ m s}^{-2}$, find the minimum speed and the time at which it occurs.\n\n(c) Explain how the result of part (a) relates to a projectile at its greatest height.",
+  "hint": "Write $|\\mathbf{v}|^2 = \\mathbf{v} \\cdot \\mathbf{v}$ with $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$, expand it as a quadratic in $t$, and differentiate.",
+  "answer": "(a) proof (b) $\\sqrt{10} \\approx 3.16\\text{ m s}^{-1}$ at $t = 3$ s (c) gravity is vertical, so at the top the velocity is horizontal (perpendicular to $\\mathbf{g}$) and the speed is least.",
+  "solution": "(a) $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t$, so\n$$S(t) = |\\mathbf{v}|^2 = (\\mathbf{u} + \\mathbf{a}t) \\cdot (\\mathbf{u} + \\mathbf{a}t) = |\\mathbf{u}|^2 + 2(\\mathbf{u} \\cdot \\mathbf{a})t + |\\mathbf{a}|^2t^2$$\nThe speed is least when $S$ is least (speed $\\ge 0$, and squaring is increasing for non-negative numbers). $S$ is a quadratic in $t$ with positive leading coefficient $|\\mathbf{a}|^2$, so its minimum is where\n$$S'(t) = 2(\\mathbf{u} \\cdot \\mathbf{a}) + 2|\\mathbf{a}|^2t = 2(\\mathbf{u} + \\mathbf{a}t) \\cdot \\mathbf{a} = 2\\,\\mathbf{v} \\cdot \\mathbf{a} = 0$$\nSo at the minimum, $\\mathbf{v} \\cdot \\mathbf{a} = 0$: the velocity is perpendicular to the acceleration (or $\\mathbf{v} = \\mathbf{0}$, a zero speed, which is the special case where the particle stops). $\\blacksquare$\n\n(b) $\\mathbf{v} = (6 - t)\\mathbf{i} + (8 - 3t)\\mathbf{j}$.\n$$\\mathbf{v} \\cdot \\mathbf{a} = -(6 - t) - 3(8 - 3t) = 10t - 30 = 0 \\quad\\Rightarrow\\quad t = 3$$\n$\\mathbf{v}(3) = 3\\mathbf{i} - \\mathbf{j}$, so the minimum speed is $\\sqrt{9 + 1} = \\sqrt{10} \\approx 3.16\\text{ m s}^{-1}$.\n\nCheck: $|\\mathbf{v}|^2 = (6 - t)^2 + (8 - 3t)^2 = 10t^2 - 60t + 100 = 10(t - 3)^2 + 10 \\ge 10$ ✓\n\n(c) For a projectile, $\\mathbf{a} = -g\\mathbf{j}$ is vertical. The velocity is perpendicular to it when it is horizontal, i.e. at the greatest height. So the speed is least at the top, where it equals the (constant) horizontal component $U\\cos\\theta$, and not zero.",
+  "misconceptionIds": [],
+  "id": "mech-vectors-2d-motion-q16",
+  "topicId": "mech-vectors-2d-motion"
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A remote-controlled model boat sets off from rest at a jetty O on a large pond. Unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ point due east and due north. For the first 20 seconds the boat has constant acceleration $(0.3\\mathbf{i} + 0.4\\mathbf{j})\\text{ m s}^{-2}$. It then moves with constant velocity.\n\n(a) Find the velocity of the boat after 20 seconds, and its speed.\n\n(b) Find the distance of the boat from O 30 seconds after it sets off.\n\n(c) Find the bearing of the boat from O at that time.",
+  "hint": "Treat the journey in two stages. In the second stage the acceleration is zero, so $\\mathbf{r} = \\mathbf{r}_{20} + \\mathbf{v}_{20}(t - 20)$.",
+  "answer": "(a) $(6\\mathbf{i} + 8\\mathbf{j})\\text{ m s}^{-1}$, $10\\text{ m s}^{-1}$ (b) $200$ m (c) $036.9^\\circ$",
+  "solution": "(a) $\\mathbf{v} = \\mathbf{a}t = 20(0.3\\mathbf{i} + 0.4\\mathbf{j}) = (6\\mathbf{i} + 8\\mathbf{j})\\text{ m s}^{-1}$; speed $= \\sqrt{36 + 64} = 10\\text{ m s}^{-1}$.\n\n(b) **Stage 1** (from rest at O): $\\mathbf{r}_{20} = \\frac{1}{2}\\mathbf{a}(20)^2 = 200(0.3\\mathbf{i} + 0.4\\mathbf{j}) = 60\\mathbf{i} + 80\\mathbf{j}$.\n\n**Stage 2** (constant velocity for 10 s): $\\mathbf{r}_{30} = (60\\mathbf{i} + 80\\mathbf{j}) + 10(6\\mathbf{i} + 8\\mathbf{j}) = 120\\mathbf{i} + 160\\mathbf{j}$.\n\nDistance from O: $\\sqrt{120^2 + 160^2} = \\sqrt{40\\,000} = 200$ m.\n\n(c) The boat is 120 m east and 160 m north of O. The angle east of north is $\\tan^{-1}\\frac{120}{160} = 36.9^\\circ$, so its bearing from O is $036.9^\\circ$ (not $053.1^\\circ$, which is the angle measured from east).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "mech-vectors-2d-motion-q17",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A particle P starts at the origin O and moves with constant acceleration. Unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ point due east and due north. When $t = 2$ s, P is at $(6\\mathbf{i} + 4\\mathbf{j})$ m, and when $t = 4$ s, P is at $20\\mathbf{i}$ m.\n\n(a) Find the initial velocity $\\mathbf{u}$ and the acceleration $\\mathbf{a}$ of P.\n\n(b) Find the time at which P is moving due east, and its speed at that time.\n\n(c) Find the bearing on which P is moving when $t = 3$.",
+  "hint": "Write $\\mathbf{r} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$ at $t = 2$ and $t = 4$: two vector equations in the two unknown vectors $\\mathbf{u}$ and $\\mathbf{a}$.",
+  "answer": "(a) $\\mathbf{u} = (\\mathbf{i} + 4\\mathbf{j})\\text{ m s}^{-1}$, $\\mathbf{a} = (2\\mathbf{i} - 2\\mathbf{j})\\text{ m s}^{-2}$ (b) $t = 2$ s, $5\\text{ m s}^{-1}$ (c) $106^\\circ$ (3 s.f.)",
+  "solution": "(a) $\\mathbf{r} = \\mathbf{u}t + \\frac{1}{2}\\mathbf{a}t^2$.\n\n$t = 2$: $2\\mathbf{u} + 2\\mathbf{a} = 6\\mathbf{i} + 4\\mathbf{j}$, so $\\mathbf{u} + \\mathbf{a} = 3\\mathbf{i} + 2\\mathbf{j}$ ... (1)\n\n$t = 4$: $4\\mathbf{u} + 8\\mathbf{a} = 20\\mathbf{i}$, so $\\mathbf{u} + 2\\mathbf{a} = 5\\mathbf{i}$ ... (2)\n\n(2) $-$ (1): $\\mathbf{a} = 2\\mathbf{i} - 2\\mathbf{j}$; then $\\mathbf{u} = (3\\mathbf{i} + 2\\mathbf{j}) - (2\\mathbf{i} - 2\\mathbf{j}) = \\mathbf{i} + 4\\mathbf{j}$.\n\n(b) $\\mathbf{v} = \\mathbf{u} + \\mathbf{a}t = (1 + 2t)\\mathbf{i} + (4 - 2t)\\mathbf{j}$.\n\nDue east: $\\mathbf{j}$-component zero and $\\mathbf{i}$-component positive: $4 - 2t = 0 \\Rightarrow t = 2$, giving $\\mathbf{v} = 5\\mathbf{i}$. Speed $5\\text{ m s}^{-1}$.\n\n(c) $t = 3$: $\\mathbf{v} = 7\\mathbf{i} - 2\\mathbf{j}$ (7 east, 2 south). The angle south of east is $\\tan^{-1}\\frac{2}{7} = 15.9^\\circ$, so the bearing is $90^\\circ + 15.9^\\circ = 105.9^\\circ \\approx 106^\\circ$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "mech-vectors-2d-motion-q18",
+  "topicId": "mech-vectors-2d-motion",
+  "linkedTopicIds": []
+ }
+]

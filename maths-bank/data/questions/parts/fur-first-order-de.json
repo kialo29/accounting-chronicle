@@ -1,0 +1,270 @@
+[
+ {
+  "id": "fur-first-order-de-q01",
+  "topicId": "fur-first-order-de",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} + 2y = 6$$",
+  "hint": "Here $P(x) = 2$, so the integrating factor is $e^{\\int 2\\,dx}$.",
+  "answer": "$y = 3 + ce^{-2x}$",
+  "solution": "Already in standard form with $P(x) = 2$, $Q(x) = 6$.\n\nIntegrating factor: $I = e^{\\int 2\\,dx} = e^{2x}$.\n\nMultiply **every** term by $e^{2x}$:\n$$e^{2x}\\frac{dy}{dx} + 2e^{2x}y = 6e^{2x} \\quad\\Rightarrow\\quad \\frac{d}{dx}\\left(ye^{2x}\\right) = 6e^{2x}$$\n\nIntegrate (constant now): $ye^{2x} = 3e^{2x} + c$\n\nDivide everything by $e^{2x}$:\n$$y = 3 + ce^{-2x}$$",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q02",
+  "topicId": "fur-first-order-de",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} - 2y = 6$$",
+  "hint": "Now $P(x) = -2$. Watch the sign in the integrating factor.",
+  "answer": "$y = -3 + ce^{2x}$",
+  "solution": "**What changed:** the sign of the $y$ term, so $P(x) = -2$.\n\n$I = e^{\\int -2\\,dx} = e^{-2x}$.\n\n$$\\frac{d}{dx}\\left(ye^{-2x}\\right) = 6e^{-2x} \\Rightarrow ye^{-2x} = -3e^{-2x} + c$$\n$$y = -3 + ce^{2x}$$\n\n**Effect:** the exponential term now grows instead of decaying, so solutions move away from the constant solution $y = -3$ rather than settling towards $y = 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q03",
+  "topicId": "fur-first-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} + 2y = 6e^{x}$$",
+  "hint": "The integrating factor depends only on $P(x)$, so it is the same as for $\\frac{dy}{dx} + 2y = 6$.",
+  "answer": "$y = 2e^{x} + ce^{-2x}$",
+  "solution": "**What changed (from $\\frac{dy}{dx} + 2y = 6$):** only the right-hand side $Q(x)$. The integrating factor $e^{2x}$ is unchanged.\n\n$$\\frac{d}{dx}\\left(ye^{2x}\\right) = 6e^{x} \\times e^{2x} = 6e^{3x}$$\n$$ye^{2x} = 2e^{3x} + c \\Rightarrow y = 2e^{x} + ce^{-2x}$$\n\nCheck: $y' + 2y = 2e^x - 2ce^{-2x} + 4e^x + 2ce^{-2x} = 6e^x$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q04",
+  "topicId": "fur-first-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} + 2y = 6e^{-2x}$$",
+  "hint": "Same integrating factor again. What is $e^{-2x} \\times e^{2x}$?",
+  "answer": "$y = (6x + c)e^{-2x}$",
+  "solution": "**What changed:** the exponent on the right is now $-2x$, exactly cancelling the integrating factor.\n\n$$\\frac{d}{dx}\\left(ye^{2x}\\right) = 6e^{-2x} \\times e^{2x} = 6$$\n$$ye^{2x} = 6x + c \\Rightarrow y = (6x + c)e^{-2x}$$\n\n**Effect:** instead of a multiple of $e^{-2x}$ in the particular part, we get $6xe^{-2x}$. A trial of $\\lambda e^{-2x}$ would have failed here, because $e^{-2x}$ already solves $\\frac{dy}{dx} + 2y = 0$ – the integrating factor handles this automatically.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q05",
+  "topicId": "fur-first-order-de",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find, in its simplest form, an integrating factor for each differential equation.\n$$\\text{(a) } \\frac{dy}{dx} + 3x^2y = x^2 \\qquad \\text{(b) } \\frac{dy}{dx} + \\frac{y}{x} = x^3,\\; x > 0$$\n$$\\text{(c) } \\frac{dy}{dx} - \\frac{2y}{x} = 1,\\; x > 0 \\qquad \\text{(d) } \\frac{dy}{dx} + y\\tan x = 1,\\; 0 < x < \\tfrac{\\pi}{2}$$",
+  "hint": "Find $\\int P(x)\\,dx$, then simplify $e^{\\int P\\,dx}$ using $e^{\\ln u} = u$ and $k\\ln x = \\ln x^k$.",
+  "answer": "(a) $e^{x^3}$ (b) $x$ (c) $\\dfrac{1}{x^2}$ (d) $\\sec x$",
+  "solution": "**(a)** $\\int 3x^2\\,dx = x^3$, so $I = e^{x^3}$.\n\n**(b)** $\\int \\frac{1}{x}\\,dx = \\ln x$, so $I = e^{\\ln x} = x$.\n\n**(c)** $\\int -\\frac{2}{x}\\,dx = -2\\ln x = \\ln x^{-2}$, so $I = e^{\\ln x^{-2}} = x^{-2} = \\dfrac{1}{x^2}$. (Not $-2x$ or $e^{-2}x$: move the coefficient inside the logarithm first.)\n\n**(d)** $\\int \\tan x\\,dx = -\\ln\\cos x = \\ln\\sec x$ (since $\\cos x > 0$), so $I = e^{\\ln\\sec x} = \\sec x$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q06",
+  "topicId": "fur-first-order-de",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the particular solution of\n$$x\\frac{dy}{dx} - 2y = x^4, \\quad x > 0$$\ngiven that $y = 3$ when $x = 1$.",
+  "hint": "Divide by $x$ first to get standard form. Then $I = e^{-2\\ln x}$.",
+  "answer": "$y = \\dfrac{x^4 + 5x^2}{2}$",
+  "solution": "Standard form: $\\dfrac{dy}{dx} - \\dfrac{2}{x}y = x^3$\n\n$I = e^{\\int -\\frac{2}{x}dx} = e^{-2\\ln x} = x^{-2}$\n\n$$\\frac{d}{dx}\\left(\\frac{y}{x^2}\\right) = x^{-2} \\times x^3 = x$$\n$$\\frac{y}{x^2} = \\frac{x^2}{2} + c \\Rightarrow y = \\frac{x^4}{2} + cx^2$$\n\n$x = 1$, $y = 3$: $\\frac{1}{2} + c = 3 \\Rightarrow c = \\frac{5}{2}$.\n$$y = \\frac{x^4 + 5x^2}{2}$$\n\nCheck: $x\\frac{dy}{dx} - 2y = x(2x^3 + 5x) - (x^4 + 5x^2) = x^4$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q07",
+  "topicId": "fur-first-order-de",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Mia is solving $x\\dfrac{dy}{dx} + 3y = x^2$, $x > 0$. Her working begins:\n\n\"$P = 3$, so the integrating factor is $e^{3x}$. Then $\\dfrac{d}{dx}\\left(ye^{3x}\\right) = x^2e^{3x}$ …\"\n\n(a) Explain Mia's mistake, and show that her next line is false by expanding $\\frac{d}{dx}\\left(ye^{3x}\\right)$.\n\n(b) Find the correct general solution.",
+  "hint": "What must the coefficient of $\\frac{dy}{dx}$ be before you read off $P(x)$?",
+  "answer": "(a) She did not divide by $x$ first; $P(x) = \\frac{3}{x}$, not 3. (b) $y = \\dfrac{x^2}{5} + \\dfrac{c}{x^3}$",
+  "solution": "**(a)** The integrating factor formula needs standard form $\\frac{dy}{dx} + P(x)y = Q(x)$, with coefficient 1 on $\\frac{dy}{dx}$. Mia read $P$ from the original equation, where the coefficient is $x$.\n\nHer claim fails: $\\frac{d}{dx}\\left(ye^{3x}\\right) = e^{3x}\\frac{dy}{dx} + 3e^{3x}y$, but multiplying her equation by $e^{3x}$ gives $xe^{3x}\\frac{dy}{dx} + 3e^{3x}y$ on the left – not the same.\n\n**(b)** Divide by $x$: $\\frac{dy}{dx} + \\frac{3}{x}y = x$.\n\n$I = e^{3\\ln x} = x^3$\n\n$$\\frac{d}{dx}\\left(x^3y\\right) = x^3 \\times x = x^4 \\Rightarrow x^3y = \\frac{x^5}{5} + c$$\n$$y = \\frac{x^2}{5} + \\frac{c}{x^3}$$\n\nCheck: $x\\left(\\frac{2x}{5} - \\frac{3c}{x^4}\\right) + 3\\left(\\frac{x^2}{5} + \\frac{c}{x^3}\\right) = x^2$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q08",
+  "topicId": "fur-first-order-de",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Consider $\\dfrac{dy}{dx} + P(x)y = Q(x)$ and let $I(x) = e^{\\int P(x)\\,dx}$.\n\n(a) Prove that $\\dfrac{d}{dx}\\left(I y\\right) = I\\left(\\dfrac{dy}{dx} + Py\\right)$, and hence explain why $Iy = \\displaystyle\\int IQ\\,dx + c$.\n\n(b) Leah says you should include a constant when finding the integrating factor, writing $I = e^{\\int P\\,dx + k}$. Explain why this makes no difference to the final general solution.",
+  "hint": "(a) Use the product rule and the chain rule: $\\frac{dI}{dx} = P(x)e^{\\int P\\,dx}$. (b) $e^{\\int P\\,dx + k} = e^k \\times e^{\\int P\\,dx}$.",
+  "answer": "(a) $\\frac{dI}{dx} = PI$, so $\\frac{d}{dx}(Iy) = I\\frac{dy}{dx} + PIy$. (b) The constant only multiplies $I$ by $A = e^k$, which cancels when the equation is divided through; the general solution is unchanged.",
+  "solution": "**(a)** By the chain rule, $\\dfrac{dI}{dx} = \\dfrac{d}{dx}\\left(\\int P\\,dx\\right) \\times e^{\\int P\\,dx} = P(x)I$.\n\nBy the product rule:\n$$\\frac{d}{dx}(Iy) = I\\frac{dy}{dx} + \\frac{dI}{dx}y = I\\frac{dy}{dx} + PIy = I\\left(\\frac{dy}{dx} + Py\\right) \\quad\\blacksquare$$\n\nSo multiplying the whole equation by $I$ gives $\\frac{d}{dx}(Iy) = IQ$. Integrating both sides with respect to $x$: $Iy = \\int IQ\\,dx + c$.\n\n**(b)** With the constant, $I' = e^{\\int P\\,dx + k} = A\\,I$, where $A = e^k$ is a non-zero constant. Then\n$$AIy = \\int AIQ\\,dx + c = A\\int IQ\\,dx + c \\Rightarrow y = \\frac{1}{I}\\int IQ\\,dx + \\frac{c}{AI}$$\nSince $c$ is arbitrary, so is $\\frac{c}{A}$: the family of solutions is identical. The extra constant is pointless, which is why it is left out.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q09",
+  "topicId": "fur-first-order-de",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Owen solves $\\dfrac{dy}{dx} + y\\tan x = \\cos x$, $-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$, with $y = 2$ when $x = 0$.\n\n\"Integrating factor: $e^{\\int \\tan x\\,dx} = e^{\\ln\\sec x} = \\sec x$.\n\n$\\dfrac{d}{dx}\\left(y\\sec x\\right) = \\cos x\\sec x = 1$, so $y\\sec x = x$.\n\nSo $y = x\\cos x + c$. When $x = 0$, $y = 2$, so $c = 2$ and $y = x\\cos x + 2$.\"\n\n(a) Show that Owen's answer does not satisfy the differential equation.\n\n(b) Identify his error and find the correct particular solution.",
+  "hint": "When should the constant of integration appear: before or after dividing by $\\sec x$?",
+  "answer": "(a) Substituting gives $\\cos x + 2\\tan x \\ne \\cos x$. (b) He added $c$ after dividing by $\\sec x$; correct: $y = (x + 2)\\cos x$",
+  "solution": "**(a)** $y = x\\cos x + 2 \\Rightarrow \\frac{dy}{dx} = \\cos x - x\\sin x$.\n$$\\frac{dy}{dx} + y\\tan x = \\cos x - x\\sin x + x\\sin x + 2\\tan x = \\cos x + 2\\tan x \\ne \\cos x$$\n\n**(b)** The constant must be added **when integrating**: $y\\sec x = x + c$. Then the whole right-hand side is divided by $\\sec x$ (multiplied by $\\cos x$):\n$$y = (x + c)\\cos x$$\nOwen's version, $x\\cos x + c$, is not divided by $\\sec x$ in the constant term.\n\n$x = 0$, $y = 2$: $c = 2$.\n$$y = (x + 2)\\cos x$$\n\nCheck: $\\frac{dy}{dx} = \\cos x - (x + 2)\\sin x$, and $\\frac{dy}{dx} + y\\tan x = \\cos x - (x + 2)\\sin x + (x + 2)\\sin x = \\cos x$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q10",
+  "topicId": "fur-first-order-de",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara solves $\\dfrac{dy}{dx} + 3y = e^{x}$ as follows.\n\n\"Integrating factor $e^{3x}$.\n$$\\frac{d}{dx}\\left(ye^{3x}\\right) = e^{x} \\Rightarrow ye^{3x} = e^{x} + c \\Rightarrow y = e^{-2x} + ce^{-3x}\\text{''}$$\n\nFind Zara's error, explain it, and give the correct general solution. Verify your answer by substitution.",
+  "hint": "Multiply every term of the equation by $e^{3x}$, including the right-hand side.",
+  "answer": "She multiplied only the left-hand side by $e^{3x}$. Correct: $y = \\frac{1}{4}e^{x} + ce^{-3x}$",
+  "solution": "**Error:** the line $\\frac{d}{dx}\\left(ye^{3x}\\right) = e^x$. The integrating factor has turned the left-hand side into $\\frac{d}{dx}\\left(ye^{3x}\\right)$ only because the **left** was multiplied by $e^{3x}$; the right-hand side must be multiplied by $e^{3x}$ too, otherwise the equation is no longer balanced.\n\n**Correct:**\n$$\\frac{d}{dx}\\left(ye^{3x}\\right) = e^{x} \\times e^{3x} = e^{4x} \\Rightarrow ye^{3x} = \\frac{1}{4}e^{4x} + c$$\n$$y = \\frac{1}{4}e^{x} + ce^{-3x}$$\n\n**Verify:** $\\frac{dy}{dx} + 3y = \\frac{1}{4}e^x - 3ce^{-3x} + \\frac{3}{4}e^x + 3ce^{-3x} = e^x$ ✓\n\n(Zara's answer gives $\\frac{dy}{dx} + 3y = -2e^{-2x} + 3e^{-2x} = e^{-2x}$, the wrong right-hand side.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q11",
+  "topicId": "fur-first-order-de",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "(a) Solve\n$$\\frac{dy}{dx} + y\\tan x = \\sin 2x, \\quad 0 \\le x < \\frac{\\pi}{2}$$\ngiven that $y = 1$ when $x = 0$.\n\n(b) Find the greatest value of $y$ for $0 \\le x < \\frac{\\pi}{2}$.",
+  "hint": "The integrating factor is $\\sec x$. Write $\\sin 2x\\sec x$ in a simpler form. For (b), treat $y$ as a quadratic in $\\cos x$.",
+  "answer": "(a) $y = 3\\cos x - 2\\cos^2 x$ (b) $\\dfrac{9}{8}$ (when $\\cos x = \\frac{3}{4}$)",
+  "solution": "**(a)** $I = e^{\\int \\tan x\\,dx} = e^{\\ln\\sec x} = \\sec x$ (valid as $\\cos x > 0$).\n\n$$\\frac{d}{dx}\\left(y\\sec x\\right) = \\sin 2x\\sec x = \\frac{2\\sin x\\cos x}{\\cos x} = 2\\sin x$$\n$$y\\sec x = -2\\cos x + c \\Rightarrow y = -2\\cos^2 x + c\\cos x$$\n\n$x = 0$, $y = 1$: $-2 + c = 1 \\Rightarrow c = 3$.\n$$y = 3\\cos x - 2\\cos^2 x$$\n\n**(b)** Let $u = \\cos x$, which takes values in $(0, 1]$ on this interval. $y = 3u - 2u^2 = -2\\left(u - \\frac{3}{4}\\right)^2 + \\frac{9}{8}$.\n\n$u = \\frac{3}{4}$ is in $(0, 1]$, so the greatest value is $y = \\dfrac{9}{8}$, at $x = \\cos^{-1}\\frac{3}{4} \\approx 0.723$.",
+  "linkedTopicIds": [
+   "pure-trig-identities-equations"
+  ]
+ },
+ {
+  "id": "fur-first-order-de-q12",
+  "topicId": "fur-first-order-de",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A cup of tea at $90\\,^\\circ\\text{C}$ is placed in a cold room at $15\\,^\\circ\\text{C}$ just as the heating comes on, so that the room temperature after $t$ minutes is $(15 + 0.2t)\\,^\\circ\\text{C}$. The temperature $\\theta\\,^\\circ\\text{C}$ of the tea is modelled by\n$$\\frac{d\\theta}{dt} = -0.1\\left(\\theta - (15 + 0.2t)\\right), \\quad 0 \\le t \\le 60$$\n\n(a) Show that $\\theta = 13 + 0.2t + 77e^{-0.1t}$.\n\n(b) Find, to the nearest 0.1 minutes, when the tea has cooled to $50\\,^\\circ\\text{C}$.\n\n(c) Find the lowest temperature of the tea in the first hour, and interpret the long-term behaviour of the model.",
+  "hint": "Rearrange to $\\frac{d\\theta}{dt} + 0.1\\theta = 1.5 + 0.02t$; the integrating factor is $e^{0.1t}$. You will need integration by parts for $\\int te^{0.1t}\\,dt$. For (b) use a numerical method or calculator solver.",
+  "answer": "(a) Shown (b) $t \\approx 7.8$ minutes (c) $22.3\\,^\\circ\\text{C}$ at $t = 10\\ln 38.5 \\approx 36.5$ min; eventually the tea stays about $2\\,^\\circ\\text{C}$ below the (rising) room temperature.",
+  "solution": "**(a)** $\\frac{d\\theta}{dt} + 0.1\\theta = 1.5 + 0.02t$, $I = e^{0.1t}$:\n$$\\frac{d}{dt}\\left(\\theta e^{0.1t}\\right) = (1.5 + 0.02t)e^{0.1t}$$\n\nBy parts, $\\int te^{0.1t}\\,dt = 10te^{0.1t} - 100e^{0.1t}$, so\n$$\\theta e^{0.1t} = 15e^{0.1t} + 0.02\\left(10te^{0.1t} - 100e^{0.1t}\\right) + c = (13 + 0.2t)e^{0.1t} + c$$\n$$\\theta = 13 + 0.2t + ce^{-0.1t}$$\n$t = 0$, $\\theta = 90$: $13 + c = 90 \\Rightarrow c = 77$, giving $\\theta = 13 + 0.2t + 77e^{-0.1t}$ ✓\n\n**(b)** Solve $13 + 0.2t + 77e^{-0.1t} = 50$. Let $g(t) = 0.2t + 77e^{-0.1t} - 37$. A calculator solver (or Newton–Raphson from $t = 8$) gives $t = 7.757\\ldots$. Confirm with a sign change: $g(7.75) = 0.024 > 0$ and $g(7.85) = -0.30 < 0$, so the root rounds to 7.8. The tea reaches $50\\,^\\circ\\text{C}$ after about **7.8 minutes**.\n\n**(c)** $\\frac{d\\theta}{dt} = 0.2 - 7.7e^{-0.1t} = 0 \\Rightarrow e^{0.1t} = 38.5 \\Rightarrow t = 10\\ln 38.5 \\approx 36.5$ min.\n$$\\theta_{\\min} = 13 + 0.2(36.5) + 77 \\times \\frac{1}{38.5} = 13 + 7.30 + 2 = 22.3\\,^\\circ\\text{C}$$\n(a minimum, since $\\frac{d^2\\theta}{dt^2} = 0.77e^{-0.1t} > 0$).\n\nAs $t$ increases, $77e^{-0.1t} \\to 0$ and $\\theta \\approx 13 + 0.2t = (15 + 0.2t) - 2$: the tea warms up again with the room, but lags about $2\\,^\\circ\\text{C}$ behind it. (The model is only meant for the first hour – the room will not keep heating forever.)",
+  "linkedTopicIds": [
+   "calc-integration-by-parts"
+  ]
+ },
+ {
+  "id": "fur-first-order-de-q13",
+  "topicId": "fur-first-order-de",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 11,
+  "calculator": true,
+  "question": "A tank initially contains 200 litres of pure water. Salt solution with a concentration of 0.05 kg per litre flows into the tank at 4 litres per minute. The solution in the tank is kept well mixed and flows out at 6 litres per minute. At time $t$ minutes the tank contains $x$ kg of salt.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that, for $0 \\le t < 100$,\n$$\\frac{dx}{dt} + \\frac{3x}{100 - t} = 0.2$$",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that $x = 0.1(100 - t) - 10^{-5}(100 - t)^3$.",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Find the greatest mass of salt in the tank, giving your answer in kg to 3 significant figures.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Volume at time $t$ is $200 + 4t - 6t$. Salt leaves at (concentration) $\\times$ 6. (b) $\\int \\frac{3}{100 - t}\\,dt = -3\\ln(100 - t)$.",
+  "answer": "(a) Shown (b) Shown (c) 3.85 kg (exactly $\\frac{20\\sqrt{3}}{9}$ kg, at $t \\approx 42.3$ minutes)",
+  "solution": "**(a)** Volume at time $t$: $200 + 4t - 6t = 200 - 2t$ litres **B1**\n\nSalt in: $0.05 \\times 4 = 0.2$ kg per minute. Salt out: $\\dfrac{x}{200 - 2t} \\times 6 = \\dfrac{3x}{100 - t}$ kg per minute **M1**\n\n$$\\frac{dx}{dt} = 0.2 - \\frac{3x}{100 - t} \\Rightarrow \\frac{dx}{dt} + \\frac{3x}{100 - t} = 0.2$$ **A1** (cso)\n\n**(b)** $I = e^{\\int \\frac{3}{100 - t}dt} = e^{-3\\ln(100 - t)} = (100 - t)^{-3}$ **M1 A1**\n\n$$\\frac{d}{dt}\\left(x(100 - t)^{-3}\\right) = 0.2(100 - t)^{-3}$$ **M1**\n$$x(100 - t)^{-3} = 0.1(100 - t)^{-2} + c$$ **A1**\n\n$t = 0$, $x = 0$: $0 = 0.1 \\times 10^{-4} + c \\Rightarrow c = -10^{-5}$. Multiply by $(100 - t)^3$:\n$$x = 0.1(100 - t) - 10^{-5}(100 - t)^3$$ **A1** (cso)\n\n**(c)** $\\dfrac{dx}{dt} = -0.1 + 3 \\times 10^{-5}(100 - t)^2 = 0$ **M1**\n\n$(100 - t)^2 = \\frac{10^4}{3} \\Rightarrow 100 - t = \\frac{100}{\\sqrt{3}} = 57.735\\ldots$, so $t = 42.3$ minutes **A1**\n\n$$x = 5.7735 - 10^{-5} \\times 192\\,450 = 3.85 \\text{ kg (3 s.f.)}$$ **A1**\n\n(Exactly: $x = \\frac{10}{\\sqrt{3}} - \\frac{10}{3\\sqrt{3}} = \\frac{20}{3\\sqrt{3}} = \\frac{20\\sqrt{3}}{9}$. It is a maximum because $x = 0$ at both $t = 0$ and $t = 100$, and $x > 0$ in between.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q14",
+  "topicId": "fur-first-order-de",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A patient is given a drug through a drip whose rate is gradually reduced. The amount $x$ mg of the drug in the bloodstream $t$ hours after the drip starts is modelled by\n$$\\frac{dx}{dt} = 20e^{-0.1t} - 0.3x, \\quad x = 0 \\text{ when } t = 0$$\n\n(a) Interpret each term on the right-hand side of the differential equation.\n\n(b) Solve the differential equation.\n\n(c) Find the exact time at which the amount of drug is greatest, and the greatest amount to the nearest 0.1 mg.",
+  "hint": "Rewrite as $\\frac{dx}{dt} + 0.3x = 20e^{-0.1t}$; the integrating factor is $e^{0.3t}$.",
+  "answer": "(a) $20e^{-0.1t}$: drip input rate (mg per hour), decaying; $0.3x$: removal by the body at a rate proportional to the amount present. (b) $x = 100\\left(e^{-0.1t} - e^{-0.3t}\\right)$ (c) $t = 5\\ln 3 \\approx 5.49$ hours; $38.5$ mg",
+  "solution": "**(a)** $20e^{-0.1t}$ is the rate (mg per hour) at which the drip delivers the drug: 20 mg/h at the start, decreasing exponentially. $-0.3x$ is the rate at which the body removes the drug, proportional to the amount present (30% per hour).\n\n**(b)** $\\frac{dx}{dt} + 0.3x = 20e^{-0.1t}$, $I = e^{0.3t}$:\n$$\\frac{d}{dt}\\left(xe^{0.3t}\\right) = 20e^{0.2t} \\Rightarrow xe^{0.3t} = 100e^{0.2t} + c$$\n$t = 0$, $x = 0$: $c = -100$.\n$$x = 100\\left(e^{-0.1t} - e^{-0.3t}\\right)$$\n\n**(c)** $\\dfrac{dx}{dt} = 100\\left(-0.1e^{-0.1t} + 0.3e^{-0.3t}\\right) = 0 \\Rightarrow e^{0.2t} = 3 \\Rightarrow t = 5\\ln 3 \\approx 5.49$ hours.\n\nThen $e^{-0.1t} = 3^{-1/2}$ and $e^{-0.3t} = 3^{-3/2}$:\n$$x = 100\\left(\\frac{1}{\\sqrt{3}} - \\frac{1}{3\\sqrt{3}}\\right) = \\frac{200}{3\\sqrt{3}} \\approx 38.5 \\text{ mg}$$\nThis is a maximum: $x$ rises from 0, and $x \\to 0$ as $t \\to \\infty$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-first-order-de-q15",
+  "topicId": "fur-first-order-de",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Express $\\dfrac{2}{x^2 - 1}$ in partial fractions.\n\n(b) Hence find the particular solution of\n$$\\frac{dy}{dx} + \\frac{2y}{x^2 - 1} = \\frac{x + 1}{x - 1}, \\quad x > 1$$\nfor which $y = 9$ when $x = 2$. Give $y$ as a single fraction.\n\n(c) Find the least value of $y$ for $x > 1$.",
+  "hint": "(b) $\\int \\frac{2}{x^2 - 1}\\,dx = \\ln(x - 1) - \\ln(x + 1)$, so the integrating factor is a simple fraction. (c) Substitute $u = x - 1$.",
+  "answer": "(a) $\\dfrac{1}{x - 1} - \\dfrac{1}{x + 1}$ (b) $y = \\dfrac{(x + 1)^2}{x - 1}$ (c) 8 (at $x = 3$)",
+  "solution": "**(a)** $\\dfrac{2}{(x - 1)(x + 1)} = \\dfrac{A}{x - 1} + \\dfrac{B}{x + 1} \\Rightarrow 2 = A(x + 1) + B(x - 1)$. $x = 1$: $A = 1$; $x = -1$: $B = -1$.\n$$\\frac{2}{x^2 - 1} = \\frac{1}{x - 1} - \\frac{1}{x + 1}$$\n\n**(b)** For $x > 1$: $\\int P\\,dx = \\ln(x - 1) - \\ln(x + 1) = \\ln\\dfrac{x - 1}{x + 1}$, so\n$$I = \\frac{x - 1}{x + 1}$$\nMultiply through:\n$$\\frac{d}{dx}\\left(\\frac{x - 1}{x + 1}y\\right) = \\frac{x - 1}{x + 1} \\times \\frac{x + 1}{x - 1} = 1 \\Rightarrow \\frac{x - 1}{x + 1}y = x + c$$\n$$y = \\frac{(x + c)(x + 1)}{x - 1}$$\n$x = 2$, $y = 9$: $3(2 + c) = 9 \\Rightarrow c = 1$.\n$$y = \\frac{(x + 1)^2}{x - 1}$$\n\n**(c)** Let $u = x - 1 > 0$: $y = \\dfrac{(u + 2)^2}{u} = u + 4 + \\dfrac{4}{u}$.\n\nBy AM–GM (or calculus: $\\frac{dy}{du} = 1 - \\frac{4}{u^2} = 0 \\Rightarrow u = 2$), $u + \\frac{4}{u} \\ge 2\\sqrt{4} = 4$, with equality at $u = 2$. So the least value is $y = 8$, at $x = 3$.",
+  "linkedTopicIds": [
+   "pure-partial-fractions"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-first-order-de-q16",
+  "topicId": "fur-first-order-de",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Find the particular solution of\n$$x\\frac{dy}{dx} - y = x^3e^{x}, \\quad x > 0$$\ngiven that $y = 2$ when $x = 1$.",
+  "hint": "Standard form first. You should find $I = \\frac{1}{x}$, and then you need $\\int xe^{x}\\,dx$ by parts.",
+  "answer": "$y = x(x - 1)e^{x} + 2x$",
+  "solution": "Standard form: $\\dfrac{dy}{dx} - \\dfrac{1}{x}y = x^2e^{x}$\n\n$I = e^{-\\ln x} = \\dfrac{1}{x}$ (not $-x$: $e^{-\\ln x} = e^{\\ln x^{-1}} = x^{-1}$).\n\n$$\\frac{d}{dx}\\left(\\frac{y}{x}\\right) = \\frac{1}{x} \\times x^2e^{x} = xe^{x}$$\n\nBy parts with $u = x$, $\\frac{dv}{dx} = e^x$: $\\int xe^x\\,dx = xe^x - \\int e^x\\,dx = (x - 1)e^x + c$.\n$$\\frac{y}{x} = (x - 1)e^{x} + c \\Rightarrow y = x(x - 1)e^{x} + cx$$\n\n$x = 1$, $y = 2$: $0 + c = 2$.\n$$y = x(x - 1)e^{x} + 2x$$\n\nCheck: $y' = (x^2 + x - 1)e^x + 2$, so $xy' - y = (x^3 + x^2 - x)e^x + 2x - (x^2 - x)e^x - 2x = x^3e^x$ ✓",
+  "linkedTopicIds": [
+   "calc-integration-by-parts"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-first-order-de-q17",
+  "topicId": "fur-first-order-de",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\"><line x1=\"16\" y1=\"145.8\" x2=\"324\" y2=\"145.8\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M324,145.8 L317.6,148.5 L317.6,143.1 z\" fill=\"currentColor\"/><line x1=\"33.4\" y1=\"204\" x2=\"33.4\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.1\"/><path d=\"M33.4,16 L36.1,22.4 L30.6,22.4 z\" fill=\"currentColor\"/><text x=\"322\" y=\"161.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">t</text><text x=\"41.4\" y=\"26\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><text x=\"28.4\" y=\"160.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"101.5\" y1=\"148.9\" x2=\"101.5\" y2=\"142.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"101.5\" y=\"161.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π</text><line x1=\"169.6\" y1=\"148.9\" x2=\"169.6\" y2=\"142.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"169.6\" y=\"161.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2π</text><line x1=\"237.8\" y1=\"148.9\" x2=\"237.8\" y2=\"142.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"237.8\" y=\"161.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3π</text><line x1=\"305.9\" y1=\"148.9\" x2=\"305.9\" y2=\"142.7\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"305.9\" y=\"161.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4π</text><line x1=\"30.1\" y1=\"101\" x2=\"36.6\" y2=\"101\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.4\" y=\"105\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"30.1\" y1=\"56.3\" x2=\"36.6\" y2=\"56.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.4\" y=\"60.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"30.1\" y1=\"190.6\" x2=\"36.6\" y2=\"190.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"27.4\" y=\"194.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><path d=\"M33.4,33.9 L35.7,45.3 L38.1,55 L40.5,63.2 L42.9,70 L45.3,75.7 L47.7,80.4 L50.1,84.1 L52.4,87.1 L54.8,89.5 L57.2,91.3 L59.6,92.7 L62,93.8 L64.4,94.7 L66.8,95.3 L69.1,95.9 L71.5,96.5 L73.9,97.1 L76.3,97.8 L78.7,98.7 L81.1,99.7 L83.5,100.9 L85.8,102.3 L88.2,103.9 L90.6,105.8 L93,108 L95.4,110.4 L97.8,113 L100.2,115.9 L102.5,119 L104.9,122.3 L107.3,125.7 L109.7,129.3 L112.1,133 L114.5,136.7 L116.9,140.5 L119.2,144.3 L121.6,148 L124,151.7 L126.4,155.2 L128.8,158.6 L131.2,161.8 L133.6,164.7 L135.9,167.4 L138.3,169.8 L140.7,171.9 L143.1,173.6 L145.5,175 L147.9,176 L150.3,176.7 L152.6,176.9 L155,176.8 L157.4,176.2 L159.8,175.3 L162.2,174.1 L164.6,172.4 L167,170.5 L169.3,168.2 L171.7,165.7 L174.1,162.9 L176.5,159.9 L178.9,156.8 L181.3,153.5 L183.7,150.1 L186.1,146.6 L188.4,143.1 L190.8,139.7 L193.2,136.3 L195.6,133.1 L198,130 L200.4,127.1 L202.8,124.4 L205.1,122 L207.5,119.8 L209.9,118 L212.3,116.5 L214.7,115.4 L217.1,114.6 L219.5,114.2 L221.8,114.2 L224.2,114.5 L226.6,115.3 L229,116.4 L231.4,117.9 L233.8,119.7 L236.2,121.8 L238.5,124.2 L240.9,126.9 L243.3,129.8 L245.7,132.9 L248.1,136.1 L250.5,139.5 L252.9,143 L255.2,146.4 L257.6,149.9 L260,153.3 L262.4,156.7 L264.8,159.9 L267.2,162.9 L269.6,165.7 L271.9,168.3 L274.3,170.6 L276.7,172.6 L279.1,174.3 L281.5,175.6 L283.9,176.6 L286.3,177.2 L288.6,177.5 L291,177.3 L293.4,176.8 L295.8,175.9 L298.2,174.6 L300.6,173 L303,171 L305.3,168.8 L307.7,166.2 L310.1,163.5 L312.5,160.5 L314.9,157.3 L317.3,154 L319.7,150.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M33.4,101 L35.7,105.4 L38.1,108.9 L40.5,111.5 L42.9,113.3 L45.3,114.5 L47.7,115.1 L50.1,115.2 L52.4,115 L54.8,114.4 L57.2,113.7 L59.6,112.7 L62,111.7 L64.4,110.7 L66.8,109.7 L69.1,108.8 L71.5,108.1 L73.9,107.5 L76.3,107.1 L78.7,107 L81.1,107.1 L83.5,107.5 L85.8,108.3 L88.2,109.3 L90.6,110.6 L93,112.3 L95.4,114.2 L97.8,116.5 L100.2,119 L102.5,121.8 L104.9,124.8 L107.3,127.9 L109.7,131.3 L112.1,134.8 L114.5,138.3 L116.9,141.9 L119.2,145.6 L121.6,149.2 L124,152.7 L126.4,156.1 L128.8,159.4 L131.2,162.5 L133.6,165.4 L135.9,168 L138.3,170.3 L140.7,172.4 L143.1,174 L145.5,175.4 L147.9,176.4 L150.3,177 L152.6,177.2 L155,177 L157.4,176.5 L159.8,175.5 L162.2,174.2 L164.6,172.6 L167,170.6 L169.3,168.4 L171.7,165.8 L174.1,163 L176.5,160 L178.9,156.8 L181.3,153.5 L183.7,150.1 L186.1,146.7 L188.4,143.2 L190.8,139.7 L193.2,136.4 L195.6,133.1 L198,130 L200.4,127.1 L202.8,124.4 L205.1,122 L207.5,119.8 L209.9,118 L212.3,116.5 L214.7,115.4 L217.1,114.6 L219.5,114.2 L221.8,114.2 L224.2,114.6 L226.6,115.3 L229,116.4 L231.4,117.9 L233.8,119.7 L236.2,121.8 L238.5,124.2 L240.9,126.9 L243.3,129.8 L245.7,132.9 L248.1,136.1 L250.5,139.5 L252.9,143 L255.2,146.4 L257.6,149.9 L260,153.3 L262.4,156.7 L264.8,159.9 L267.2,162.9 L269.6,165.7 L271.9,168.3 L274.3,170.6 L276.7,172.6 L279.1,174.3 L281.5,175.6 L283.9,176.6 L286.3,177.2 L288.6,177.5 L291,177.3 L293.4,176.8 L295.8,175.9 L298.2,174.6 L300.6,173 L303,171 L305.3,168.8 L307.7,166.2 L310.1,163.5 L312.5,160.5 L314.9,157.3 L317.3,154 L319.7,150.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M33.4,190.6 L35.7,185.6 L38.1,180.7 L40.5,175.8 L42.9,170.9 L45.3,166.1 L47.7,161.3 L50.1,156.7 L52.4,152.1 L54.8,147.7 L57.2,143.5 L59.6,139.4 L62,135.7 L64.4,132.1 L66.8,128.9 L69.1,126 L71.5,123.5 L73.9,121.3 L76.3,119.5 L78.7,118 L81.1,117 L83.5,116.4 L85.8,116.2 L88.2,116.4 L90.6,117 L93,118 L95.4,119.4 L97.8,121.1 L100.2,123.1 L102.5,125.5 L104.9,128.1 L107.3,130.9 L109.7,133.9 L112.1,137.1 L114.5,140.5 L116.9,143.9 L119.2,147.3 L121.6,150.7 L124,154.1 L126.4,157.4 L128.8,160.5 L131.2,163.5 L133.6,166.3 L135.9,168.8 L138.3,171 L140.7,173 L143.1,174.6 L145.5,175.9 L147.9,176.8 L150.3,177.4 L152.6,177.6 L155,177.3 L157.4,176.8 L159.8,175.8 L162.2,174.5 L164.6,172.8 L167,170.8 L169.3,168.5 L171.7,166 L174.1,163.2 L176.5,160.1 L178.9,156.9 L181.3,153.6 L183.7,150.2 L186.1,146.7 L188.4,143.3 L190.8,139.8 L193.2,136.4 L195.6,133.2 L198,130.1 L200.4,127.1 L202.8,124.4 L205.1,122 L207.5,119.9 L209.9,118 L212.3,116.5 L214.7,115.4 L217.1,114.6 L219.5,114.2 L221.8,114.2 L224.2,114.6 L226.6,115.3 L229,116.4 L231.4,117.9 L233.8,119.7 L236.2,121.8 L238.5,124.2 L240.9,126.9 L243.3,129.8 L245.7,132.9 L248.1,136.1 L250.5,139.5 L252.9,143 L255.2,146.4 L257.6,149.9 L260,153.3 L262.4,156.7 L264.8,159.9 L267.2,162.9 L269.6,165.7 L271.9,168.3 L274.3,170.6 L276.7,172.6 L279.1,174.3 L281.5,175.6 L283.9,176.6 L286.3,177.2 L288.6,177.5 L291,177.3 L293.4,176.8 L295.8,175.9 L298.2,174.6 L300.6,173 L303,171 L305.3,168.8 L307.7,166.2 L310.1,163.5 L312.5,160.5 L314.9,157.3 L317.3,154 L319.7,150.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><path d=\"M33.4,168.2 L35.7,165.6 L38.1,162.8 L40.5,159.7 L42.9,156.5 L45.3,153.2 L47.7,149.8 L50.1,146.3 L52.4,142.8 L54.8,139.4 L57.2,136 L59.6,132.8 L62,129.7 L64.4,126.8 L66.8,124.1 L69.1,121.7 L71.5,119.6 L73.9,117.8 L76.3,116.4 L78.7,115.3 L81.1,114.5 L83.5,114.2 L85.8,114.2 L88.2,114.6 L90.6,115.4 L93,116.6 L95.4,118.1 L97.8,119.9 L100.2,122.1 L102.5,124.5 L104.9,127.2 L107.3,130.2 L109.7,133.3 L112.1,136.5 L114.5,139.9 L116.9,143.4 L119.2,146.9 L121.6,150.3 L124,153.7 L126.4,157 L128.8,160.2 L131.2,163.2 L133.6,166 L135.9,168.6 L138.3,170.9 L140.7,172.8 L143.1,174.5 L145.5,175.8 L147.9,176.7 L150.3,177.3 L152.6,177.5 L155,177.3 L157.4,176.7 L159.8,175.7 L162.2,174.4 L164.6,172.8 L167,170.8 L169.3,168.5 L171.7,165.9 L174.1,163.1 L176.5,160.1 L178.9,156.9 L181.3,153.6 L183.7,150.2 L186.1,146.7 L188.4,143.2 L190.8,139.8 L193.2,136.4 L195.6,133.2 L198,130 L200.4,127.1 L202.8,124.4 L205.1,122 L207.5,119.9 L209.9,118 L212.3,116.5 L214.7,115.4 L217.1,114.6 L219.5,114.2 L221.8,114.2 L224.2,114.6 L226.6,115.3 L229,116.4 L231.4,117.9 L233.8,119.7 L236.2,121.8 L238.5,124.2 L240.9,126.9 L243.3,129.8 L245.7,132.9 L248.1,136.1 L250.5,139.5 L252.9,143 L255.2,146.4 L257.6,149.9 L260,153.3 L262.4,156.7 L264.8,159.9 L267.2,162.9 L269.6,165.7 L271.9,168.3 L274.3,170.6 L276.7,172.6 L279.1,174.3 L281.5,175.6 L283.9,176.6 L286.3,177.2 L288.6,177.5 L291,177.3 L293.4,176.8 L295.8,175.9 L298.2,174.6 L300.6,173 L303,171 L305.3,168.8 L307.7,166.2 L310.1,163.5 L312.5,160.5 L314.9,157.3 L317.3,154 L319.7,150.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/></svg>",
+  "question": "(a) Find the general solution of\n$$\\frac{dy}{dt} + y = \\sin t$$\n\n(b) The diagram shows several solution curves. One of them (drawn thicker) is periodic. Find its equation, and show that it can be written as $R\\sin(t - \\alpha)$, stating the exact values of $R$ and $\\alpha$.\n\n(c) Explain why every solution curve approaches the periodic one as $t \\to \\infty$, and find the particular solution with $y = 1$ when $t = 0$.",
+  "hint": "(a) You need $\\int e^{t}\\sin t\\,dt$: integrate by parts twice and solve for the integral. (b) The periodic solution has no $e^{-t}$ term.",
+  "answer": "(a) $y = \\frac{1}{2}(\\sin t - \\cos t) + ce^{-t}$ (b) $y = \\frac{1}{2}(\\sin t - \\cos t) = \\frac{1}{\\sqrt{2}}\\sin\\left(t - \\frac{\\pi}{4}\\right)$; $R = \\frac{\\sqrt{2}}{2}$, $\\alpha = \\frac{\\pi}{4}$ (c) $ce^{-t} \\to 0$; $y = \\frac{1}{2}(\\sin t - \\cos t) + \\frac{3}{2}e^{-t}$",
+  "solution": "**(a)** $I = e^{t}$: $\\dfrac{d}{dt}\\left(ye^{t}\\right) = e^{t}\\sin t$.\n\nLet $J = \\int e^t\\sin t\\,dt$. By parts twice:\n$$J = e^t\\sin t - \\int e^t\\cos t\\,dt = e^t\\sin t - \\left(e^t\\cos t + \\int e^t\\sin t\\,dt\\right) = e^t(\\sin t - \\cos t) - J$$\nSo $J = \\frac{1}{2}e^t(\\sin t - \\cos t) + c$, and\n$$y = \\tfrac{1}{2}(\\sin t - \\cos t) + ce^{-t}$$\n\n**(b)** The term $ce^{-t}$ is not periodic, so the periodic solution has $c = 0$: $y = \\frac{1}{2}(\\sin t - \\cos t)$.\n\n$R\\sin(t - \\alpha) = R\\cos\\alpha\\sin t - R\\sin\\alpha\\cos t$, so $R\\cos\\alpha = \\frac{1}{2}$, $R\\sin\\alpha = \\frac{1}{2}$:\n$$R = \\sqrt{\\tfrac{1}{4} + \\tfrac{1}{4}} = \\frac{1}{\\sqrt{2}} = \\frac{\\sqrt{2}}{2}, \\qquad \\tan\\alpha = 1 \\Rightarrow \\alpha = \\frac{\\pi}{4}$$\nSo $y = \\frac{\\sqrt{2}}{2}\\sin\\left(t - \\frac{\\pi}{4}\\right)$: the response has a smaller amplitude than the input $\\sin t$ and lags behind it by $\\frac{\\pi}{4}$.\n\n**(c)** Every solution differs from the periodic one by $ce^{-t}$, and $e^{-t} \\to 0$ as $t \\to \\infty$, so all curves converge onto it, whatever the starting value (as the diagram shows).\n\n$y(0) = 1$: $\\frac{1}{2}(0 - 1) + c = 1 \\Rightarrow c = \\frac{3}{2}$.\n$$y = \\tfrac{1}{2}(\\sin t - \\cos t) + \\tfrac{3}{2}e^{-t}$$",
+  "linkedTopicIds": [
+   "pure-trig-harmonic-form",
+   "calc-integration-by-parts"
+  ]
+ },
+ {
+  "id": "fur-first-order-de-q18",
+  "topicId": "fur-first-order-de",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Sam says: \"The differential equation $\\dfrac{dy}{dx} = x + y$ cannot be solved exactly, because you can't separate the variables.\"\n\nIs Sam correct? Justify your answer, and find the solution with $y = 0$ when $x = 0$ if one exists.",
+  "hint": "Move the $y$ term to the left-hand side. Is the equation linear in $y$?",
+  "answer": "No. It is linear: $\\frac{dy}{dx} - y = x$, solved with integrating factor $e^{-x}$. $y = e^{x} - x - 1$",
+  "solution": "Sam is **not** correct. Although the variables cannot be separated, the equation is first-order **linear** in $y$:\n$$\\frac{dy}{dx} - y = x$$\nso an integrating factor works: $I = e^{\\int -1\\,dx} = e^{-x}$.\n\n$$\\frac{d}{dx}\\left(ye^{-x}\\right) = xe^{-x}$$\nBy parts: $\\int xe^{-x}\\,dx = -xe^{-x} - e^{-x} + c$. So\n$$ye^{-x} = -xe^{-x} - e^{-x} + c \\Rightarrow y = -x - 1 + ce^{x}$$\n\n$y(0) = 0$: $-1 + c = 0 \\Rightarrow c = 1$.\n$$y = e^{x} - x - 1$$\n\nCheck: $\\frac{dy}{dx} = e^x - 1 = x + (e^x - x - 1) = x + y$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ }
+]
