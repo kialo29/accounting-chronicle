@@ -1,0 +1,283 @@
+[
+ {
+  "id": "num-bounds-calculations-q01",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$a = 12$ and $b = 7$, both correct to the nearest whole number.\n\nWork out the upper bound of $a + b$.",
+  "hint": "Find the upper bound of $a$ and of $b$ first. To make a sum as big as possible, make both parts as big as possible.",
+  "answer": "$20$",
+  "solution": "Bounds (half a unit is $0.5$):\n$$11.5 \\le a < 12.5, \\qquad 6.5 \\le b < 7.5$$\n\nThe largest sum uses the largest $a$ and the largest $b$:\n$$\\text{UB of } a + b = 12.5 + 7.5 = 20$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q02",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$a = 12$ and $b = 7$, both correct to the nearest whole number.\n\nWork out the upper bound of $a - b$.",
+  "hint": "To make a difference as big as possible, start big and take away as **little** as possible.",
+  "answer": "$6$",
+  "solution": "**What changed:** subtraction instead of addition.\n\nBounds: $11.5 \\le a < 12.5$ and $6.5 \\le b < 7.5$.\n\nTo make $a - b$ as large as possible, take the **largest** $a$ and subtract the **smallest** $b$:\n$$\\text{UB of } a - b = 12.5 - 6.5 = 6$$\n\nUsing $12.5 - 7.5 = 5$ would be wrong: subtracting the bigger $b$ makes the answer smaller.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q03",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$a = 12$ and $b = 7$, both correct to the nearest whole number.\n\nWork out the upper bound of $a \\times b$.",
+  "hint": "For a product of positive numbers, which bounds make it as big as possible?",
+  "answer": "$93.75$",
+  "solution": "**What changed:** multiplication. Like addition, both values push the same way.\n\n$$\\text{UB of } ab = 12.5 \\times 7.5 = 93.75$$\n\n(The lower bound would be $11.5 \\times 6.5 = 74.75$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q04",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$a = 12$ and $b = 7$, both correct to the nearest whole number.\n\nWork out the upper bound of $a \\div b$. Give your answer to $3$ significant figures.",
+  "hint": "Dividing by a smaller number gives a bigger answer.",
+  "answer": "$1.92$ (3 s.f.)",
+  "solution": "**What changed:** division. Like subtraction, the second number pushes the **opposite** way.\n\nTo make $a \\div b$ as large as possible, divide the **largest** $a$ by the **smallest** $b$:\n$$\\text{UB of } \\frac{a}{b} = \\frac{12.5}{6.5} = 1.923\\ldots = 1.92 \\text{ (3 s.f.)}$$\n\nUsing $12.5 \\div 7.5 = 1.67$ would be wrong: dividing by the upper bound of $b$ makes the answer smaller.\n\nSummary of the sequence: for $+$ and $\\times$ use UB with UB; for $-$ and $\\div$ use UB with **LB**.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q05",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A square has side length $6.4$ cm, correct to $1$ decimal place.\n\nWork out the lower bound of the perimeter of the square.",
+  "hint": "Find the lower bound of the side length first.",
+  "answer": "$25.4$ cm",
+  "solution": "Half of $0.1$ is $0.05$, so the lower bound of the side is $6.4 - 0.05 = 6.35$ cm.\n\n$$\\text{LB of perimeter} = 4 \\times 6.35 = 25.4 \\text{ cm}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q06",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A bag contains $20$ apples. Each apple has a mass of $150$ g, correct to the nearest $10$ g.\n\n(a) Work out the lower bound and the upper bound of the total mass of the apples.\n\n(b) The bag is labelled \"At least 2.8 kg\". Is the label definitely correct? Explain.",
+  "hint": "Each apple's mass is between $145$ g and $155$ g.",
+  "answer": "(a) LB $2900$ g, UB $3100$ g (b) Yes: the least possible total is $2900$ g $= 2.9$ kg, which is more than $2.8$ kg.",
+  "solution": "(a) Each apple: $145 \\le m < 155$ (half of $10$ g is $5$ g).\n\nLower bound of total: $20 \\times 145 = 2900$ g\n\nUpper bound of total: $20 \\times 155 = 3100$ g\n\n(b) Even in the worst case the bag holds $2900$ g $= 2.9$ kg, which is more than $2.8$ kg, so the label is definitely correct.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q07",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A cyclist travels $150$ m, correct to the nearest metre, in $18.4$ seconds, correct to $1$ decimal place. Dev works out the upper bound of the cyclist's average speed:\n\nDistance: $149.5 \\le d < 150.5$\n\nTime: $18.35 \\le t < 18.45$\n\nUpper bound of speed $= \\dfrac{150.5}{18.45} = 8.157\\ldots$ m/s\n\nIdentify Dev's mistake, explain it, and find the correct upper bound to $3$ significant figures.",
+  "hint": "Speed $=$ distance $\\div$ time. Does dividing by a bigger time give a bigger or smaller speed?",
+  "answer": "He divided by the upper bound of the time. UB of speed $= 150.5 \\div 18.35 = 8.20$ m/s (3 s.f.).",
+  "solution": "Dev's bounds for $d$ and $t$ are correct. His mistake is in the last line: he divided the upper bound of the distance by the **upper** bound of the time.\n\n**Why it is wrong:** dividing by a bigger number gives a smaller answer. To make the speed as large as possible, the cyclist must go the greatest distance in the **shortest** time.\n\n**Correct working:**\n$$\\text{UB of speed} = \\frac{\\text{UB of } d}{\\text{LB of } t} = \\frac{150.5}{18.35} = 8.2016\\ldots = 8.20 \\text{ m/s (3 s.f.)}$$",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-bounds-calculations-q08",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A plank is $2.4$ m long, correct to $1$ decimal place. A piece of length $0.85$ m, correct to $2$ decimal places, is cut off. Grace works out the lower bound of the length of plank that is left:\n\nPlank: $2.35 \\le P < 2.45$\n\nPiece: $0.845 \\le c < 0.855$\n\nLower bound of what is left $= 2.35 - 0.845 = 1.505$ m\n\nIdentify Grace's mistake, explain it, and give the correct lower bound.",
+  "hint": "To leave as little as possible, how long should the piece that is cut off be?",
+  "answer": "She subtracted the lower bound of the piece. LB left $= 2.35 - 0.855 = 1.495$ m.",
+  "solution": "Grace's bounds are correct, but she used **lower bound minus lower bound** for a difference.\n\n**Why it is wrong:** the least amount is left when the plank is as short as possible **and** the piece cut off is as long as possible. Subtracting a smaller piece leaves more, not less.\n\n**Correct working:**\n$$\\text{LB of } P - c = \\text{LB}_P - \\text{UB}_c = 2.35 - 0.855 = 1.495 \\text{ m}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q09",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A square tile has side length $7$ cm, correct to the nearest centimetre. Sam works out the upper bound of the area of the tile:\n\n\"The side length is less than $7.5$, so the biggest it can be is $7.49$ cm.\n\nUpper bound of area $= 7.49^2 = 56.1001\\ \\text{cm}^2$.\"\n\nIdentify Sam's mistake and give the correct upper bound of the area.",
+  "hint": "Which value do we use for the upper bound in a calculation, even though it is not included in the error interval?",
+  "answer": "He used $7.49$ instead of the upper bound $7.5$. Correct UB of area $= 7.5^2 = 56.25\\ \\text{cm}^2$.",
+  "solution": "**Mistake:** Sam used $7.49$ cm as the upper bound of the side.\n\n**Explanation:** the error interval is $6.5 \\le s < 7.5$. The side can be $7.49$, $7.499$, $7.4999$, … , getting as close to $7.5$ as we like, so there is no \"biggest value below $7.5$\". The upper bound is defined to be the limit $7.5$ itself. The strict sign $<$ only matters when writing the error interval, not when calculating bounds. (Using $7.49$ also gives a value that the area could actually exceed, e.g. with $s = 7.495$.)\n\n**Correct working:**\n$$\\text{UB of area} = 7.5^2 = 56.25\\ \\text{cm}^2$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q10",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 5,
+  "question": "A car travels a distance of $86.4$ km, correct to $1$ decimal place. The journey takes $1.25$ hours, correct to $2$ decimal places.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the upper bound of the time taken.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the lower bound of the average speed of the car. Give your answer to $4$ significant figures.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "By considering bounds, work out the average speed of the car to a suitable degree of accuracy. You must show all your working and give a reason for your final answer.",
+    "marks": 2
+   }
+  ],
+  "hint": "Speed $=$ distance $\\div$ time. For the lower bound, use the smallest distance and the largest time.",
+  "answer": "(a) $1.255$ hours (b) $68.80$ km/h (c) $69$ km/h (2 s.f.), since the LB ($68.80\\ldots$) and UB ($69.43\\ldots$) both round to $69$ to 2 s.f. but not to the same value to 3 s.f.",
+  "solution": "Bounds: $86.35 \\le d < 86.45$ and $1.245 \\le t < 1.255$.\n\n(a) Upper bound of time $= 1.255$ hours **B1**\n\n(b) Lower bound of speed $= \\dfrac{\\text{LB of } d}{\\text{UB of } t} = \\dfrac{86.35}{1.255}$ **M1**\n\n$= 68.804\\ldots = 68.80$ km/h (4 s.f.) **A1**\n\n(c) Upper bound of speed $= \\dfrac{86.45}{1.245} = 69.437\\ldots$ km/h **M1** (for UB calculated correctly)\n\nTo 3 s.f.: LB $= 68.8$, UB $= 69.4$, which are different.\n\nTo 2 s.f.: LB $= 69$, UB $= 69$, which agree.\n\nSpeed $= 69$ km/h, because both bounds round to $69$ to 2 s.f. **A1** (correct answer with reason)",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "num-bounds-calculations-q11",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A goods lift has a safety limit of $1000$ kg. A worker wants to load $12$ boxes, each with a mass of $83$ kg, correct to the nearest kilogram.\n\n(a) Show that the total mass **could** be more than the safety limit.\n\n(b) What is the greatest number of these boxes that can be loaded so that the limit is definitely not exceeded?",
+  "hint": "Use the upper bound of each box's mass to find the worst case.",
+  "answer": "(a) UB of total $= 12 \\times 83.5 = 1002$ kg $> 1000$ kg. (b) $11$ boxes",
+  "solution": "Each box: $82.5 \\le m < 83.5$ kg.\n\n(a) Worst case, every box at its upper bound:\n$$12 \\times 83.5 = 1002 \\text{ kg}$$\nThis is more than $1000$ kg, so the total **could** exceed the limit (even though $12 \\times 83 = 996$ kg is below it).\n\n(b) We need (number of boxes) $\\times 83.5 \\le 1000$:\n$$1000 \\div 83.5 = 11.97\\ldots$$\nSo at most $11$ boxes. Check: $11 \\times 83.5 = 918.5$ kg $\\le 1000$ ✓, while $12$ boxes could reach $1002$ kg ✗.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q12",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A bookshelf is $90$ cm long, correct to the nearest centimetre. Each book on it is $3.2$ cm thick, correct to $1$ decimal place.\n\n(a) Work out the greatest number of books that will **definitely** fit on the shelf.\n\n(b) Is it possible that one more book than your answer to (a) would also fit? Explain.",
+  "hint": "For the \"definitely fits\" case, imagine the shortest possible shelf and the thickest possible books.",
+  "answer": "(a) $27$ books (b) Yes, it is possible (e.g. if the shelf is $90$ cm and books are $3.2$ cm, $28 \\times 3.2 = 89.6$ cm fits), but not certain.",
+  "solution": "Shelf: $89.5 \\le L < 90.5$. Book: $3.15 \\le w < 3.25$.\n\n(a) For the number to be guaranteed, take the **worst case**: the shortest shelf and the thickest books.\n$$\\frac{\\text{LB of } L}{\\text{UB of } w} = \\frac{89.5}{3.25} = 27.53\\ldots$$\nYou can't have part of a book, so round **down**: $27$ books will definitely fit. Check: $27 \\times 3.25 = 87.75 \\le 89.5$ ✓, but $28 \\times 3.25 = 91 > 89.5$.\n\n(b) Yes, $28$ books might fit. For example, if the shelf is exactly $90$ cm and every book is exactly $3.2$ cm thick, $28 \\times 3.2 = 89.6$ cm, which fits. (In the best case, $90.5 \\div 3.15 = 28.7$, so up to $28$ could fit.) But it is not guaranteed, because $28$ books of thickness up to $3.25$ cm could need up to $91$ cm.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q13",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The diagram shows a right-angled triangle. The hypotenuse is $13.2$ cm and one of the shorter sides is $8.6$ cm, both correct to $1$ decimal place. The other side is $x$ cm.\n\n(a) Work out the lower bound of $x$. Give your answer to $3$ significant figures.\n\n(b) Work out the upper bound of $x$, and hence state the value of $x$ to a suitable degree of accuracy. Give a reason for your answer.\n\nThe diagram is not drawn to scale.",
+  "hint": "By Pythagoras, $x = \\sqrt{h^2 - a^2}$. To make $x$ small, make $h$ small and take away as much as possible.",
+  "answer": "(a) $9.90$ cm (b) UB $= 10.1$ cm (3 s.f.); $x = 10$ cm (1 s.f.), since both bounds round to $10$ to 1 s.f. but to $9.9$ and $10$ to 2 s.f.",
+  "solution": "Bounds: $13.15 \\le h < 13.25$ and $8.55 \\le a < 8.65$.\n\nBy Pythagoras, $x^2 = h^2 - a^2$, so $x = \\sqrt{h^2 - a^2}$. This is a **difference**, so the bounds of $a$ are used the opposite way round.\n\n(a) Lower bound: smallest $h$, largest $a$:\n$$x_{\\min} = \\sqrt{13.15^2 - 8.65^2} = \\sqrt{172.9225 - 74.8225} = \\sqrt{98.1} = 9.9045\\ldots = 9.90 \\text{ cm (3 s.f.)}$$\n\n(b) Upper bound: largest $h$, smallest $a$:\n$$x_{\\max} = \\sqrt{13.25^2 - 8.55^2} = \\sqrt{175.5625 - 73.1025} = \\sqrt{102.46} = 10.122\\ldots \\text{ cm}$$\n\nTo 2 s.f.: $9.9$ and $10$, which disagree. To 1 s.f.: $10$ and $10$, which agree.\n\nSo $x = 10$ cm (1 s.f.), because the upper and lower bounds only agree when rounded to 1 significant figure.",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 215\" width=\"260\" height=\"215\"><polygon points=\"60,31.5 189.0,180 60,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"60,170 70,170 70,180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"124\" y=\"200\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8.6 cm</text><text x=\"52\" y=\"110\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x cm</text><text x=\"136\" y=\"102\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">13.2 cm</text></svg>"
+ },
+ {
+  "id": "num-bounds-calculations-q14",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A ramp rises $4.7$ m vertically over a horizontal distance of $12.3$ m. Both measurements are correct to $1$ decimal place. The ramp makes an angle $\\theta$ with the horizontal, as shown.\n\nWork out the upper bound of $\\theta$. Give your answer correct to $2$ decimal places.\n\nThe diagram is not drawn to scale.",
+  "hint": "$\\tan\\theta = \\dfrac{\\text{opposite}}{\\text{adjacent}}$. A larger value of $\\tan\\theta$ gives a larger acute angle.",
+  "answer": "$21.19^\\circ$",
+  "solution": "Bounds: $4.65 \\le \\text{opp} < 4.75$ and $12.25 \\le \\text{adj} < 12.35$.\n\n$$\\tan\\theta = \\frac{\\text{opp}}{\\text{adj}}$$\n\nFor acute angles, a bigger $\\tan\\theta$ means a bigger $\\theta$, so we need the **upper bound of a quotient**: largest opposite $\\div$ smallest adjacent.\n$$\\tan\\theta_{\\max} = \\frac{4.75}{12.25} = 0.387755\\ldots$$\n$$\\theta_{\\max} = \\tan^{-1}(0.387755\\ldots) = 21.194\\ldots^\\circ = 21.19^\\circ \\text{ (2 d.p.)}$$\n\n(For comparison, using the measured values gives $\\tan^{-1}\\frac{4.7}{12.3} = 20.91^\\circ$, and the lower bound is $\\tan^{-1}\\frac{4.65}{12.35} = 20.63^\\circ$.)",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" width=\"340\" height=\"200\"><polygon points=\"40,170 310.6,170 310.6,66.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"300.6,170 300.6,160 310.6,160\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 80 170 A 40 40 0 0 0 77.4 155.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"88\" y=\"164\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">θ</text><text x=\"175\" y=\"190\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12.3 m</text><text x=\"317\" y=\"122\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">4.7 m</text></svg>"
+ },
+ {
+  "id": "num-bounds-calculations-q15",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A rectangle measures $12.6$ cm by $3.4$ cm, both correct to $1$ decimal place.\n\nAli says: \"The area is $12.6 \\times 3.4 = 42.84$, so the area is $42.8\\ \\text{cm}^2$ to $3$ significant figures.\"\n\nIs Ali's answer given to a suitable degree of accuracy? Use upper and lower bounds to justify your answer, and state the area to a suitable degree of accuracy.",
+  "hint": "Work out the lower and upper bounds of the area. To how many significant figures do they agree?",
+  "answer": "No. LB $= 42.0425$, UB $= 43.6425$; they only agree to 1 s.f., so the area is $40\\ \\text{cm}^2$ (1 s.f.).",
+  "solution": "Bounds: $12.55 \\le l < 12.65$ and $3.35 \\le w < 3.45$.\n\nLower bound of area $= 12.55 \\times 3.35 = 42.0425\\ \\text{cm}^2$\n\nUpper bound of area $= 12.65 \\times 3.45 = 43.6425\\ \\text{cm}^2$\n\nCompare the bounds when rounded:\n\n* 3 s.f.: $42.0$ and $43.6$, which disagree.\n* 2 s.f.: $42$ and $44$, which disagree.\n* 1 s.f.: $40$ and $40$, which agree.\n\nSo the true area could be anything from about $42.0$ to $43.6\\ \\text{cm}^2$. Ali's \"$42.8$\" claims accuracy to the nearest $0.1\\ \\text{cm}^2$, which the measurements cannot support. He has not checked that the bounds agree.\n\nThe area, to a suitable degree of accuracy, is $40\\ \\text{cm}^2$ (1 s.f.).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-bounds-calculations-q16",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$x = 5$ and $y = 5$, both correct to the nearest whole number. Jon wants the upper bound of\n$$R = \\frac{x}{x + y}$$\n\nHe writes: \"For the biggest $R$, use the biggest numerator and the smallest denominator: $\\dfrac{5.5}{4.5 + 4.5} = 0.611\\ldots$\"\n\n(a) Explain why Jon's method is not valid.\n\n(b) Find the correct upper bound and lower bound of $R$, justifying your choice of values.",
+  "hint": "Jon has used two different values for the same $x$. Try rewriting $R$ so that $x$ appears only once, for example by dividing the top and bottom by $x$.",
+  "answer": "(a) He uses $x = 5.5$ on top and $x = 4.5$ underneath at the same time, which is impossible. (b) UB $= \\frac{5.5}{10} = 0.55$, LB $= \\frac{4.5}{10} = 0.45$",
+  "solution": "(a) $x$ appears in both the numerator and the denominator. Jon has used $x = 5.5$ in the numerator but $x = 4.5$ in the denominator. A single quantity $x$ cannot take two values at once, so $0.611\\ldots$ is not an achievable value of $R$. The simple rules for bounds only work when each quantity appears once.\n\n(b) Divide the numerator and denominator by $x$:\n$$R = \\frac{x}{x + y} = \\frac{1}{1 + \\dfrac{y}{x}}$$\n\nNow $x$ and $y$ each appear once. $R$ is biggest when $\\frac{y}{x}$ is smallest, i.e. smallest $y$ and largest $x$:\n$$\\text{UB of } R = \\frac{1}{1 + \\frac{4.5}{5.5}} = \\frac{5.5}{5.5 + 4.5} = \\frac{5.5}{10} = 0.55$$\n\n$R$ is smallest when $\\frac{y}{x}$ is largest, i.e. largest $y$ and smallest $x$:\n$$\\text{LB of } R = \\frac{4.5}{4.5 + 5.5} = \\frac{4.5}{10} = 0.45$$\n\nSo $0.45 \\le R \\le 0.55$ (approached at the ends). Jon's value $0.611$ lies outside this range.",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-bounds-calculations-q17",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A cylinder has volume $450\\ \\text{cm}^3$, correct to $2$ significant figures. Its radius is $4.2$ cm, correct to $1$ decimal place.\n\nWork out the height of the cylinder to a suitable degree of accuracy. You must show your working and give a reason for your answer.",
+  "hint": "Rearrange $V = \\pi r^2 h$ to make $h$ the subject. Then decide which bounds of $V$ and $r$ make $h$ as large, and as small, as possible.",
+  "answer": "$8$ cm (1 s.f.), since the bounds $7.84\\ldots$ cm and $8.40\\ldots$ cm agree only to 1 s.f.",
+  "solution": "**Bounds:** $450$ to 2 s.f. means to the nearest $10$: $445 \\le V < 455$. Radius: $4.15 \\le r < 4.25$.\n\n**Formula:** $V = \\pi r^2 h$, so\n$$h = \\frac{V}{\\pi r^2}$$\n\n**Upper bound of $h$:** largest $V$, smallest $r$:\n$$h_{\\max} = \\frac{455}{\\pi \\times 4.15^2} = 8.409\\ldots \\text{ cm}$$\n\n**Lower bound of $h$:** smallest $V$, largest $r$:\n$$h_{\\min} = \\frac{445}{\\pi \\times 4.25^2} = 7.842\\ldots \\text{ cm}$$\n\n**Suitable accuracy:**\n* 2 s.f.: $8.4$ and $7.8$, which disagree.\n* 1 s.f.: $8$ and $8$, which agree.\n\nHeight $= 8$ cm (1 s.f.), because the upper and lower bounds both round to $8$ to 1 s.f. but not to the same value to 2 s.f.",
+  "linkedTopicIds": [
+   "geo-volume-prisms",
+   "alg-rearranging-formulae"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "num-bounds-calculations-q18",
+  "topicId": "num-bounds-calculations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The acceleration of a car is given by\n$$a = \\frac{v - u}{t}$$\nwhere $u$ m/s is the starting speed, $v$ m/s is the final speed and $t$ s is the time taken.\n\n$u = 12.6$ and $v = 31.4$, both correct to $1$ decimal place. $t = 4.5$, correct to the nearest $0.5$ seconds.\n\nWork out the value of $a$ to a suitable degree of accuracy. Give a reason for your answer.",
+  "hint": "Be careful with $t$: if the unit is $0.5$ s, what is half a unit? Then think about which bounds make $v - u$ big and $t$ small.",
+  "answer": "$a = 4\\ \\text{m/s}^2$ (1 s.f.); the bounds $3.94\\ldots$ and $4.45\\ldots$ both round to $4$ to 1 s.f.",
+  "solution": "**Bounds:**\n* $u$: $12.55 \\le u < 12.65$\n* $v$: $31.35 \\le v < 31.45$\n* $t$ is to the nearest $0.5$ s, so half a unit is $0.25$ s: $4.25 \\le t < 4.75$\n\n**Upper bound of $a$:** make $v - u$ as big as possible (largest $v$, smallest $u$) and divide by the smallest $t$:\n$$a_{\\max} = \\frac{31.45 - 12.55}{4.25} = \\frac{18.9}{4.25} = 4.447\\ldots$$\n\n**Lower bound of $a$:** smallest $v$, largest $u$, largest $t$:\n$$a_{\\min} = \\frac{31.35 - 12.65}{4.75} = \\frac{18.7}{4.75} = 3.936\\ldots$$\n\n**Suitable accuracy:** to 2 s.f. the bounds are $4.4$ and $3.9$, which disagree; to 1 s.f. they are $4$ and $4$, which agree.\n\n$$a = 4\\ \\text{m/s}^2 \\text{ (1 s.f.)}$$",
+  "linkedTopicIds": [
+   "alg-substitution-formulae"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m1",
+   "m4"
+  ]
+ }
+]

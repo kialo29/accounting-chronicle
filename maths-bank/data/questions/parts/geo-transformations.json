@@ -1,0 +1,270 @@
+[
+ {
+  "id": "geo-transformations-q01",
+  "topicId": "geo-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangle $A$ has vertices $(1, 1)$, $(3, 1)$ and $(1, 4)$.\n\nTranslate triangle $A$ by the vector $\\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}$. Write down the coordinates of the vertices of the image.",
+  "hint": "The top number moves each point right (positive) or left (negative); the bottom number moves it up or down.",
+  "answer": "$(5, 3)$, $(7, 3)$, $(5, 6)$",
+  "solution": "$\\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}$ means 4 right and 2 up, so add 4 to every $x$-coordinate and 2 to every $y$-coordinate:\n$$(1, 1) \\to (5, 3), \\qquad (3, 1) \\to (7, 3), \\qquad (1, 4) \\to (5, 6)$$\n\nThe image is congruent to $A$ and faces the same way.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q02",
+  "topicId": "geo-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangle $A$ has vertices $(1, 1)$, $(3, 1)$ and $(1, 4)$.\n\nTranslate triangle $A$ by the vector $\\begin{pmatrix} -4 \\\\ 2 \\end{pmatrix}$. Write down the coordinates of the vertices of the image.",
+  "hint": "What does the negative top number tell you about the direction of the horizontal move?",
+  "answer": "$(-3, 3)$, $(-1, 3)$, $(-3, 6)$",
+  "solution": "$\\begin{pmatrix} -4 \\\\ 2 \\end{pmatrix}$ means 4 **left** and 2 up: subtract 4 from each $x$-coordinate, add 2 to each $y$-coordinate.\n$$(1, 1) \\to (-3, 3), \\qquad (3, 1) \\to (-1, 3), \\qquad (1, 4) \\to (-3, 6)$$\n\n**What changed:** only the sign of the top number. The image is now 8 units to the left of the previous answer (from $+4$ to $-4$), at the same height.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q03",
+  "topicId": "geo-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Triangle $A$ has vertices $(1, 1)$, $(3, 1)$ and $(1, 4)$.\n\nTranslate triangle $A$ by the vector $\\begin{pmatrix} -4 \\\\ -2 \\end{pmatrix}$. Write down the coordinates of the vertices of the image.",
+  "hint": "Now both numbers are negative. Which directions do they mean?",
+  "answer": "$(-3, -1)$, $(-1, -1)$, $(-3, 2)$",
+  "solution": "$\\begin{pmatrix} -4 \\\\ -2 \\end{pmatrix}$ means 4 left and 2 **down**:\n$$(1, 1) \\to (-3, -1), \\qquad (3, 1) \\to (-1, -1), \\qquad (1, 4) \\to (-3, 2)$$\n\n**What changed:** only the sign of the bottom number, compared with $\\begin{pmatrix} -4 \\\\ 2 \\end{pmatrix}$. The image is 4 units lower than before (from 2 up to 2 down).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q04",
+  "topicId": "geo-transformations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Triangle $T$ is drawn on the grid.\n\nReflect triangle $T$ in the line $x = 2$. Write down the coordinates of the vertices of the image.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"30\" y1=\"258\" x2=\"30\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"64\" y1=\"258\" x2=\"64\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"98\" y1=\"258\" x2=\"98\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"132\" y1=\"258\" x2=\"132\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"166\" y1=\"258\" x2=\"166\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"200\" y1=\"258\" x2=\"200\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"234\" y1=\"258\" x2=\"234\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"268\" y1=\"258\" x2=\"268\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"302\" y1=\"258\" x2=\"302\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"258\" x2=\"302\" y2=\"258\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"224\" x2=\"302\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"190\" x2=\"302\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"156\" x2=\"302\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"122\" x2=\"302\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"88\" x2=\"302\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"54\" x2=\"302\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"30\" y1=\"20\" x2=\"302\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"98\" y1=\"258\" x2=\"98\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"224\" x2=\"302\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"30\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−2</text><text x=\"64\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"132\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"166\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"200\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"234\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"268\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"302\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"93\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"93\" y=\"195\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"93\" y=\"161\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"93\" y=\"127\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"93\" y=\"93\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"93\" y=\"59\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"93\" y=\"25\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">6</text><text x=\"93\" y=\"238\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"298\" y=\"218\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"104\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"200,190 268,190 268,122\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"251.3\" y=\"174.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">T</text></svg>",
+  "hint": "First decide whether $x = 2$ is a vertical or horizontal line: it contains points such as $(2, 0)$ and $(2, 5)$.",
+  "answer": "$(1, 1)$, $(-1, 1)$, $(-1, 3)$",
+  "solution": "The vertices of $T$ are $(3, 1)$, $(5, 1)$ and $(5, 3)$.\n\nThe line $x = 2$ is the set of points with $x$-coordinate 2, so it is a **vertical** line through $(2, 0)$.\n\nEach image point is the same distance from the mirror line on the other side, at the same height:\n* $(3, 1)$ is 1 unit right of the line $\\to$ 1 unit left: $(1, 1)$\n* $(5, 1)$ is 3 units right $\\to$ 3 units left: $(-1, 1)$\n* $(5, 3)$ is 3 units right $\\to$ 3 units left: $(-1, 3)$\n\n(In general a reflection in $x = 2$ sends $(x, y)$ to $(4 - x, y)$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q05",
+  "topicId": "geo-transformations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Triangle $A$ is drawn on the grid. The point $C$ is $(1, 0)$.\n\nRotate triangle $A$ by $90^\\circ$ clockwise about centre $C$. Write down the coordinates of the vertices of the image.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"40\" y1=\"253\" x2=\"40\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"74\" y1=\"253\" x2=\"74\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"108\" y1=\"253\" x2=\"108\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"142\" y1=\"253\" x2=\"142\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"176\" y1=\"253\" x2=\"176\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"210\" y1=\"253\" x2=\"210\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"244\" y1=\"253\" x2=\"244\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"278\" y1=\"253\" x2=\"278\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"312\" y1=\"253\" x2=\"312\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"253\" x2=\"312\" y2=\"253\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"219\" x2=\"312\" y2=\"219\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"185\" x2=\"312\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"151\" x2=\"312\" y2=\"151\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"117\" x2=\"312\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"83\" x2=\"312\" y2=\"83\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"49\" x2=\"312\" y2=\"49\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"15\" x2=\"312\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"74\" y1=\"253\" x2=\"74\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"117\" x2=\"312\" y2=\"117\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"108\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"142\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"176\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"210\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"244\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"278\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"312\" y=\"130\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"69\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−4</text><text x=\"69\" y=\"224\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−3</text><text x=\"69\" y=\"190\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−2</text><text x=\"69\" y=\"156\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"69\" y=\"88\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"69\" y=\"54\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"69\" y=\"20\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"69\" y=\"131\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"308\" y=\"111\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"80\" y=\"27\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"142,83 210,83 210,49\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"191.3\" y=\"80.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><circle cx=\"108\" cy=\"117\" r=\"3.5\" fill=\"currentColor\"/><text x=\"102\" y=\"110\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">C</text></svg>",
+  "hint": "Work with each vertex's position relative to $C$. A $90^\\circ$ clockwise turn sends a displacement of \"$a$ right, $b$ up\" to \"$b$ right, $a$ down\". Tracing paper helps.",
+  "answer": "$(2, -1)$, $(2, -3)$, $(3, -3)$",
+  "solution": "The vertices of $A$ are $(2, 1)$, $(4, 1)$ and $(4, 2)$. Write each as a displacement from $C(1, 0)$:\n$$(2, 1): \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}, \\qquad (4, 1): \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}, \\qquad (4, 2): \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$$\n\nA $90^\\circ$ clockwise rotation sends $\\begin{pmatrix} a \\\\ b \\end{pmatrix}$ to $\\begin{pmatrix} b \\\\ -a \\end{pmatrix}$:\n$$\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} \\to \\begin{pmatrix} 1 \\\\ -1 \\end{pmatrix}, \\qquad \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix} \\to \\begin{pmatrix} 1 \\\\ -3 \\end{pmatrix}, \\qquad \\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix} \\to \\begin{pmatrix} 2 \\\\ -3 \\end{pmatrix}$$\n\nAdd these back on to $C(1, 0)$:\n$$(2, -1), \\qquad (2, -3), \\qquad (3, -3)$$\n\nCheck: the side from $(2, 1)$ to $(4, 1)$ pointed right; after a quarter turn clockwise it points down, from $(2, -1)$ to $(2, -3)$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q06",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Triangle $S$ has vertices $(2, 2)$, $(4, 2)$ and $(2, 3)$.\n\nEnlarge triangle $S$ by scale factor $-2$, centre $(1, 1)$. (In the US an enlargement is called a dilation.) Write down the coordinates of the vertices of the image.",
+  "hint": "Find the vector from the centre to each vertex, multiply it by $-2$, then add the result to the centre.",
+  "answer": "$(-1, -1)$, $(-5, -1)$, $(-1, -3)$",
+  "solution": "Vectors from the centre $(1, 1)$:\n$$(2, 2): \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}, \\qquad (4, 2): \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}, \\qquad (2, 3): \\begin{pmatrix} 1 \\\\ 2 \\end{pmatrix}$$\n\nMultiply by $-2$ (twice as far, on the **opposite** side of the centre):\n$$\\begin{pmatrix} -2 \\\\ -2 \\end{pmatrix}, \\qquad \\begin{pmatrix} -6 \\\\ -2 \\end{pmatrix}, \\qquad \\begin{pmatrix} -2 \\\\ -4 \\end{pmatrix}$$\n\nAdd to the centre $(1, 1)$:\n$$(-1, -1), \\qquad (-5, -1), \\qquad (-1, -3)$$\n\nThe image has sides twice as long and is upside down relative to $S$ (as if also rotated $180^\\circ$ about the centre).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q07",
+  "topicId": "geo-transformations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A warehouse robot moves on a floor marked with a coordinate grid (units in metres). It starts at $(2, 3)$ and makes three moves:\n* 4 m right and 1 m down,\n* 6 m left and 2 m up,\n* 3 m right and 5 m up.\n\n(a) Write each move as a column vector.\n(b) Find the robot's final position.\n(c) Write down the single column vector that takes the robot straight back to its starting point.",
+  "hint": "Top number: right is positive, left is negative. Bottom number: up is positive, down is negative. Vectors can be added component by component.",
+  "answer": "(a) $\\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}$, $\\begin{pmatrix} -6 \\\\ 2 \\end{pmatrix}$, $\\begin{pmatrix} 3 \\\\ 5 \\end{pmatrix}$ (b) $(3, 9)$ (c) $\\begin{pmatrix} -1 \\\\ -6 \\end{pmatrix}$",
+  "solution": "(a) Horizontal component on top, vertical underneath:\n$$\\begin{pmatrix} 4 \\\\ -1 \\end{pmatrix}, \\qquad \\begin{pmatrix} -6 \\\\ 2 \\end{pmatrix}, \\qquad \\begin{pmatrix} 3 \\\\ 5 \\end{pmatrix}$$\n\n(b) Total movement:\n$$\\begin{pmatrix} 4 - 6 + 3 \\\\ -1 + 2 + 5 \\end{pmatrix} = \\begin{pmatrix} 1 \\\\ 6 \\end{pmatrix}$$\nFinal position: $(2 + 1, 3 + 6) = (3, 9)$.\n\n(c) To return, reverse the total movement: $\\begin{pmatrix} -1 \\\\ -6 \\end{pmatrix}$ (1 m left, 6 m down).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q08",
+  "topicId": "geo-transformations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Sam is asked to reflect the point $P(4, 3)$ in the line $y = 1$. His working is shown below.\n\n\"The line $y = 1$ goes through $x = 1$, so it is a vertical line. $P$ is 3 units to the right of the line, so its image is 3 units to the left. The image is $(-2, 3)$.\"\n\nIdentify Sam's mistake, explain it, and find the correct image of $P$.",
+  "hint": "Write down three points on the line $y = 1$. What do they have in common?",
+  "answer": "Sam drew $x = 1$ (vertical) instead of $y = 1$ (horizontal). Correct image: $(4, -1)$.",
+  "solution": "**Mistake:** $y = 1$ is the set of points whose **$y$-coordinate** is 1, e.g. $(0, 1)$, $(4, 1)$, $(-3, 1)$. These lie on a **horizontal** line. Sam has used the vertical line $x = 1$.\n\n**Correct working:** $P(4, 3)$ is $3 - 1 = 2$ units **above** the line $y = 1$. Its image is 2 units below the line, directly underneath:\n$$y = 1 - 2 = -1$$\n\nThe $x$-coordinate does not change, so the image is $(4, -1)$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q09",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to enlarge the triangle with vertices $(3, 2)$, $(5, 2)$ and $(3, 4)$ by scale factor 2, centre $(2, 1)$. Her working is shown below.\n\n\"Scale factor 2, so I double each coordinate:\n$(3, 2) \\to (6, 4)$, $(5, 2) \\to (10, 4)$, $(3, 4) \\to (6, 8)$.\"\n\n(a) Explain the mistake in Priya's method.\n(b) Find the correct coordinates of the vertices of the image.",
+  "hint": "Doubling the coordinates doubles each point's distance from $(0, 0)$. Which point should the distances be measured from?",
+  "answer": "(a) Doubling the coordinates is an enlargement with centre $(0, 0)$; she must double the distances from the centre $(2, 1)$. (b) $(4, 3)$, $(8, 3)$, $(4, 7)$",
+  "solution": "(a) Multiplying the coordinates by 2 multiplies each point's displacement **from the origin** by 2, so Priya has done an enlargement with centre $(0, 0)$. The centre here is $(2, 1)$, so it is the displacement from $(2, 1)$ that must be doubled. (Her triangle is the right size but in the wrong place.)\n\n(b) Vectors from the centre $(2, 1)$:\n$$(3, 2): \\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix}, \\qquad (5, 2): \\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix}, \\qquad (3, 4): \\begin{pmatrix} 1 \\\\ 3 \\end{pmatrix}$$\n\nDouble them: $\\begin{pmatrix} 2 \\\\ 2 \\end{pmatrix}$, $\\begin{pmatrix} 6 \\\\ 2 \\end{pmatrix}$, $\\begin{pmatrix} 2 \\\\ 6 \\end{pmatrix}$, and add to $(2, 1)$:\n$$(4, 3), \\qquad (8, 3), \\qquad (4, 7)$$\n\nCheck: the side from $(3, 2)$ to $(5, 2)$ has length 2; its image from $(4, 3)$ to $(8, 3)$ has length 4. ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q10",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Triangles $A$ and $B$ are drawn on the grid. Jack is asked to describe fully the single transformation that maps triangle $A$ onto triangle $B$.\n\nJack writes: \"Rotation of $90^\\circ$.\"\n\n(a) Explain why Jack's answer would not get full marks.\n(b) Describe fully the single transformation that maps $A$ onto $B$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"40\" y1=\"248\" x2=\"40\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"78\" y1=\"248\" x2=\"78\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"116\" y1=\"248\" x2=\"116\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"154\" y1=\"248\" x2=\"154\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"192\" y1=\"248\" x2=\"192\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"230\" y1=\"248\" x2=\"230\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"268\" y1=\"248\" x2=\"268\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"306\" y1=\"248\" x2=\"306\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"344\" y1=\"248\" x2=\"344\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"248\" x2=\"344\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"210\" x2=\"344\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"172\" x2=\"344\" y2=\"172\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"134\" x2=\"344\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"96\" x2=\"344\" y2=\"96\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"58\" x2=\"344\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"40\" y1=\"20\" x2=\"344\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"78\" y1=\"248\" x2=\"78\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"210\" x2=\"344\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"40\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"116\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"154\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"192\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"230\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"268\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"306\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"344\" y=\"223\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"73\" y=\"253\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"73\" y=\"177\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"73\" y=\"139\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"73\" y=\"101\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"73\" y=\"63\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"73\" y=\"25\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"73\" y=\"224\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"340\" y=\"204\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"84\" y=\"32\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"192,172 268,172 268,134\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><polygon points=\"116,172 116,96 78,96\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"246.7\" y=\"168.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"99.3\" y=\"126.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "hint": "A rotation is described by three things. Try a quarter turn in each direction about different grid points; the centre is the same distance from a vertex and its image.",
+  "answer": "(a) He has not given the direction or the centre of the rotation. (b) Rotation $90^\\circ$ anticlockwise about $(2, 0)$.",
+  "solution": "(a) A rotation needs **three** details: the angle, the direction (clockwise or anticlockwise) and the centre. Jack gives only the angle, so his description could fit many different rotations.\n\n(b) $A$ has vertices $(3, 1)$, $(5, 1)$, $(5, 2)$; $B$ has vertices $(1, 1)$, $(1, 3)$, $(0, 3)$.\n\nThe side of $A$ from $(3, 1)$ to $(5, 1)$ points right; the matching side of $B$, from $(1, 1)$ to $(1, 3)$, points up. Right $\\to$ up is a quarter turn **anticlockwise**.\n\nA $90^\\circ$ anticlockwise rotation about $(a, b)$ sends the displacement $\\begin{pmatrix} p \\\\ q \\end{pmatrix}$ to $\\begin{pmatrix} -q \\\\ p \\end{pmatrix}$. Testing centre $(2, 0)$:\n* $(3, 1)$: displacement $\\begin{pmatrix} 1 \\\\ 1 \\end{pmatrix} \\to \\begin{pmatrix} -1 \\\\ 1 \\end{pmatrix}$, giving $(1, 1)$ ✓\n* $(5, 1)$: $\\begin{pmatrix} 3 \\\\ 1 \\end{pmatrix} \\to \\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$, giving $(1, 3)$ ✓\n* $(5, 2)$: $\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix} \\to \\begin{pmatrix} -2 \\\\ 3 \\end{pmatrix}$, giving $(0, 3)$ ✓\n\n**Rotation, $90^\\circ$ anticlockwise, centre $(2, 0)$.**",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q11",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Triangle $T$ has vertices $(1, 1)$, $(3, 3)$ and $(4, 1)$. Ella says, \"When you reflect a shape, every point of the shape moves.\"\n\n(a) Reflect $T$ in the line $y = x$. Use your answer to explain whether Ella is correct.\n(b) Describe all the points that are invariant (do not move) under a reflection in $y = x$.\n(c) Which points are invariant under a rotation of $90^\\circ$ clockwise about $(2, 1)$? Explain your answer.",
+  "hint": "Reflecting in $y = x$ swaps the coordinates. A point that is invariant maps onto itself.",
+  "answer": "(a) Image $(1, 1)$, $(3, 3)$, $(1, 4)$; Ella is wrong, $(1, 1)$ and $(3, 3)$ do not move. (b) Every point on the line $y = x$. (c) Only the centre $(2, 1)$.",
+  "solution": "(a) Reflection in $y = x$ swaps the coordinates: $(x, y) \\to (y, x)$.\n$$(1, 1) \\to (1, 1), \\qquad (3, 3) \\to (3, 3), \\qquad (4, 1) \\to (1, 4)$$\nTwo vertices map to themselves, so not every point moves. Ella is **wrong**: points lying on the mirror line stay where they are.\n\n(b) $(x, y)$ is invariant when $(y, x) = (x, y)$, i.e. when $x = y$. So the invariant points are exactly the points on the mirror line $y = x$.\n\n(c) Only the centre $(2, 1)$. Every other point is a non-zero distance from the centre, and a $90^\\circ$ turn moves it to a different position the same distance away (round a circle centred on $(2, 1)$). The centre is the only point at distance zero, so it is the only point that stays fixed.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q12",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Lily says, \"An enlargement with a negative scale factor turns the shape upside down, so it can never be the same as a rotation.\"\n\n(a) Show that an enlargement with scale factor $-1$, centre $(0, 0)$, has exactly the same effect on every point as a rotation of $180^\\circ$ about $(0, 0)$.\n(b) Triangle $K$ is enlarged by scale factor $-3$. State what happens to (i) the angles of the triangle, (ii) its side lengths, (iii) its area. Explain why the image is similar to $K$ but not congruent to it.",
+  "hint": "For (a), find the image of a general point $(x, y)$ under each transformation. For (b), lengths are multiplied by the size of the scale factor.",
+  "answer": "(a) Both send $(x, y)$ to $(-x, -y)$, so Lily is wrong. (b)(i) unchanged (ii) multiplied by 3 (iii) multiplied by 9; same shape, different size.",
+  "solution": "(a) Enlargement, scale factor $-1$, centre $O$: the position vector $\\begin{pmatrix} x \\\\ y \\end{pmatrix}$ is multiplied by $-1$, so $(x, y) \\to (-x, -y)$.\n\nRotation of $180^\\circ$ about $O$: each point moves to the other end of a straight line through $O$, the same distance away, so $(x, y) \\to (-x, -y)$.\n\nBoth transformations send every point to the same image, so they are the same transformation. Lily is **wrong**: \"upside down\" is exactly what a half turn does.\n\n(b) (i) Angles are **unchanged**: an enlargement keeps the shape.\n(ii) Every length is multiplied by $|-3| = 3$.\n(iii) Area is multiplied by $3^2 = 9$ (each dimension of every small square inside the shape is tripled).\n\nEqual angles with all sides in the same ratio means the image is **similar** to $K$. It is not congruent because the sides are three times as long. Reflections, rotations and translations preserve lengths (congruent images); enlargements with scale factor other than $\\pm 1$ do not.",
+  "linkedTopicIds": [
+   "geo-similarity"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-transformations-q13",
+  "topicId": "geo-transformations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In a shadow-puppet show, a small lamp shines on a cardboard puppet held upright between the lamp and a screen. The puppet and screen are parallel. The puppet is 20 cm from the lamp and the screen is 150 cm from the lamp. The puppet is 12 cm tall.\n\n(a) Explain why the shadow is an enlargement of the puppet, and state the centre and scale factor.\n(b) Work out the height of the shadow.\n(c) The puppeteer wants the shadow to be 60 cm tall. How far from the lamp should the puppet be held?",
+  "hint": "Light travels in straight lines from the lamp, through the edge of the puppet, to the screen. Compare distances from the lamp.",
+  "answer": "(a) Centre = the lamp, scale factor $7.5$ (b) 90 cm (c) 30 cm from the lamp",
+  "solution": "(a) Every ray of light starts at the lamp and passes through a point on the edge of the puppet to the corresponding point of the shadow. So each shadow point lies on the line from the lamp through the puppet point, and its distance from the lamp is $\\frac{150}{20}$ times as far. That is an enlargement with **centre the lamp** and scale factor\n$$k = \\frac{150}{20} = 7.5$$\n\n(b) $12 \\times 7.5 = 90$ cm.\n\n(c) The scale factor needed is $\\frac{60}{12} = 5$. The screen is 150 cm from the lamp, so the puppet must be $\\frac{150}{5} = 30$ cm from the lamp.",
+  "linkedTopicIds": [
+   "geo-similarity"
+  ]
+ },
+ {
+  "id": "geo-transformations-q14",
+  "topicId": "geo-transformations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "question": "Shapes $P$ and $R$ are drawn on the coordinate grid.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"20\" y1=\"255\" x2=\"20\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"50\" y1=\"255\" x2=\"50\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"80\" y1=\"255\" x2=\"80\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"110\" y1=\"255\" x2=\"110\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"140\" y1=\"255\" x2=\"140\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"170\" y1=\"255\" x2=\"170\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"200\" y1=\"255\" x2=\"200\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"230\" y1=\"255\" x2=\"230\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"260\" y1=\"255\" x2=\"260\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"290\" y1=\"255\" x2=\"290\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"320\" y1=\"255\" x2=\"320\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"255\" x2=\"320\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"225\" x2=\"320\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"195\" x2=\"320\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"165\" x2=\"320\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"135\" x2=\"320\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"105\" x2=\"320\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"75\" x2=\"320\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"45\" x2=\"320\" y2=\"45\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"20\" y1=\"15\" x2=\"320\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"110\" y1=\"255\" x2=\"110\" y2=\"15\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"195\" x2=\"320\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"20\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−3</text><text x=\"50\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−2</text><text x=\"80\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"140\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"170\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"200\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"230\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"260\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"290\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"320\" y=\"208\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"105\" y=\"260\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−2</text><text x=\"105\" y=\"230\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"105\" y=\"170\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"105\" y=\"140\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"105\" y=\"110\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"105\" y=\"80\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"105\" y=\"50\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"105\" y=\"20\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">6</text><text x=\"105\" y=\"209\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"316\" y=\"189\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"116\" y=\"27\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"170,135 290,135 290,75\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><polygon points=\"110,165 170,165 170,135\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"256\" y=\"122\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"153\" y=\"146\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Shape $P$ is reflected in the line $y = x$. Write down the coordinates of the vertices of the image.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Describe fully the single transformation that maps shape $P$ onto shape $R$.",
+    "marks": 3
+   }
+  ],
+  "marks": 5,
+  "hint": "For (b), $R$ is smaller than $P$ and faces the same way. Draw straight lines through corresponding vertices of $P$ and $R$ and extend them until they meet.",
+  "answer": "(a) $(2, 2)$, $(2, 6)$, $(4, 6)$ (b) Enlargement, scale factor $\\frac{1}{2}$, centre $(-2, 0)$",
+  "solution": "(a) $P$ has vertices $(2, 2)$, $(6, 2)$, $(6, 4)$. Reflection in $y = x$ swaps the coordinates:\n$$(2, 2), \\qquad (2, 6), \\qquad (4, 6)$$\nB2 for all three correct (B1 for two correct).\n\n(b) $R$ has vertices $(0, 1)$, $(2, 1)$, $(2, 2)$. Same shape, smaller, same orientation, so it is an enlargement. (B1)\n\nThe side from $(2, 2)$ to $(6, 2)$ (length 4) corresponds to the side from $(0, 1)$ to $(2, 1)$ (length 2), so the scale factor is $\\frac{2}{4} = \\frac{1}{2}$. (B1)\n\nCentre: draw straight lines through corresponding vertices, $(6, 4)$ with $(2, 2)$, $(2, 2)$ with $(0, 1)$, and $(6, 2)$ with $(2, 1)$. Extended to the left, they all meet at $(-2, 0)$.\n\nCheck: $(6, 4)$ is $\\begin{pmatrix} 8 \\\\ 4 \\end{pmatrix}$ from $(-2, 0)$; halving gives $\\begin{pmatrix} 4 \\\\ 2 \\end{pmatrix}$, i.e. $(2, 2)$ ✓.\n\n**Enlargement, scale factor $\\frac{1}{2}$, centre $(-2, 0)$.** (B1 for the centre)\n\nNote: giving two transformations, such as \"enlargement then translation\", scores no marks for (b).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q15",
+  "topicId": "geo-transformations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A shape $S$ is reflected in the line $x = 1$ to give $S'$. Then $S'$ is reflected in the line $x = 4$ to give $S''$.\n\n(a) Describe fully the single transformation that maps $S$ onto $S''$. Prove that your answer works for every point.\n(b) Does the order of the reflections matter? Justify your answer.",
+  "hint": "Find a formula for the image of a general point $(x, y)$ after a reflection in $x = a$. Then apply the two reflections one after the other.",
+  "answer": "(a) Translation by $\\begin{pmatrix} 6 \\\\ 0 \\end{pmatrix}$ (b) Yes: the other order gives a translation by $\\begin{pmatrix} -6 \\\\ 0 \\end{pmatrix}$.",
+  "solution": "(a) A point $(x, y)$ is $x - a$ to the right of the vertical line $x = a$, so its reflection is $x - a$ to the left: $(x, y) \\to (2a - x, y)$.\n\nReflect in $x = 1$:\n$$(x, y) \\to (2 - x, y)$$\nThen reflect in $x = 4$:\n$$(2 - x, y) \\to (8 - (2 - x), y) = (x + 6, y)$$\n\nEvery point moves 6 units right and 0 units up, for every $(x, y)$. So $S \\to S''$ is a **translation by $\\begin{pmatrix} 6 \\\\ 0 \\end{pmatrix}$**. (The distance moved is twice the distance between the parallel mirrors.)\n\n(b) Reflecting in $x = 4$ first and then in $x = 1$:\n$$(x, y) \\to (8 - x, y) \\to (2 - (8 - x), y) = (x - 6, y)$$\nThis is a translation by $\\begin{pmatrix} -6 \\\\ 0 \\end{pmatrix}$, so the order **does** matter.\n\nA combination of two reflections is not itself a reflection: the single transformation must be named on its own, not as \"reflection then reflection\".",
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q16",
+  "topicId": "geo-transformations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The point $A(1, 7)$ is reflected in a straight line $L$. The image is $A'(7, 3)$.\n\nFind the equation of the line $L$. Give your answer in the form $ay = bx + c$, where $a$, $b$ and $c$ are integers.",
+  "hint": "The mirror line is the perpendicular bisector of $AA'$: it passes through the midpoint of $AA'$ and is perpendicular to $AA'$.",
+  "answer": "$2y = 3x - 2$",
+  "solution": "Every point and its image are the same perpendicular distance from the mirror line, so $L$ is the **perpendicular bisector** of $AA'$.\n\nMidpoint of $AA'$:\n$$\\left(\\frac{1 + 7}{2}, \\frac{7 + 3}{2}\\right) = (4, 5)$$\n\nGradient of $AA'$:\n$$\\frac{3 - 7}{7 - 1} = \\frac{-4}{6} = -\\frac{2}{3}$$\n\nPerpendicular gradient (negative reciprocal): $\\frac{3}{2}$.\n\nLine through $(4, 5)$ with gradient $\\frac{3}{2}$:\n$$y - 5 = \\tfrac{3}{2}(x - 4) \\quad\\Rightarrow\\quad 2y - 10 = 3x - 12 \\quad\\Rightarrow\\quad 2y = 3x - 2$$\n\nCheck: $A$ and $A'$ should be equally far from the line. Distance$^2$ from $(4, 5)$: $3^2 + 2^2 = 13$ for both, and $AA'$ is perpendicular to $L$. ✓",
+  "linkedTopicIds": [
+   "alg-perpendicular-lines",
+   "alg-coordinates-midpoint-distance"
+  ]
+ },
+ {
+  "id": "geo-transformations-q17",
+  "topicId": "geo-transformations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Transformation $R_1$ is a rotation of $90^\\circ$ clockwise about $(0, 0)$. Transformation $R_2$ is a rotation of $90^\\circ$ clockwise about $(2, 0)$.\n\nTriangle $T$ is mapped by $R_1$ and then the image is mapped by $R_2$.\n\n(a) Show that the combined transformation sends any point $(x, y)$ to $(2 - x, 2 - y)$.\n(b) Hence describe fully the single transformation equivalent to $R_1$ followed by $R_2$, and state its invariant point.\n(c) $T$ has vertices $(3, 1)$, $(5, 1)$ and $(5, 2)$. Find the vertices of its final image.",
+  "hint": "A $90^\\circ$ clockwise rotation about $(a, b)$ sends a displacement $\\begin{pmatrix} p \\\\ q \\end{pmatrix}$ from the centre to $\\begin{pmatrix} q \\\\ -p \\end{pmatrix}$. For (b), which point is the midpoint of $(x, y)$ and its image for every point?",
+  "answer": "(a) Shown (b) Rotation $180^\\circ$ about $(1, 1)$; invariant point $(1, 1)$ (c) $(-1, 1)$, $(-3, 1)$, $(-3, 0)$",
+  "solution": "(a) $R_1$: displacement from $(0, 0)$ is $\\begin{pmatrix} x \\\\ y \\end{pmatrix} \\to \\begin{pmatrix} y \\\\ -x \\end{pmatrix}$, so $(x, y) \\to (y, -x)$.\n\n$R_2$ about $(2, 0)$: a point $(u, v)$ has displacement $\\begin{pmatrix} u - 2 \\\\ v \\end{pmatrix}$, which becomes $\\begin{pmatrix} v \\\\ -(u - 2) \\end{pmatrix}$, so $(u, v) \\to (2 + v, 2 - u)$.\n\nApply $R_2$ to $(u, v) = (y, -x)$:\n$$(y, -x) \\to (2 + (-x), 2 - y) = (2 - x, 2 - y)$$\n\n(b) For every point, the midpoint of $(x, y)$ and $(2 - x, 2 - y)$ is\n$$\\left(\\frac{x + 2 - x}{2}, \\frac{y + 2 - y}{2}\\right) = (1, 1)$$\nso each point is sent to the opposite side of $(1, 1)$, the same distance away. That is a **rotation of $180^\\circ$ about $(1, 1)$** (two quarter turns make a half turn, but about a new centre).\n\nInvariant point: $(x, y) = (2 - x, 2 - y)$ gives $x = 1$, $y = 1$, so $(1, 1)$ only.\n\n(c) $(3, 1) \\to (-1, 1)$, $\\quad (5, 1) \\to (-3, 1)$, $\\quad (5, 2) \\to (-3, 0)$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-transformations-q18",
+  "topicId": "geo-transformations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$O$ is the origin and $C$ is the point $(4, 0)$, with position vector $\\mathbf{c} = \\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$.\n\n$E_1$ is an enlargement with scale factor 2, centre $O$. $E_2$ is an enlargement with scale factor $\\frac{1}{2}$, centre $C$.\n\n(a) A point has position vector $\\mathbf{p}$. Show that $E_1$ followed by $E_2$ maps it to the point with position vector $\\mathbf{p} + \\frac{1}{2}\\mathbf{c}$.\n(b) Hence describe fully the single transformation equivalent to $E_1$ followed by $E_2$.\n(c) Find the single transformation equivalent to $E_2$ followed by $E_1$. Is it the same?",
+  "hint": "An enlargement with scale factor $k$ and centre with position vector $\\mathbf{c}$ sends $\\mathbf{p}$ to $\\mathbf{c} + k(\\mathbf{p} - \\mathbf{c})$.",
+  "answer": "(a) Shown (b) Translation by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$ (c) Translation by $\\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$; not the same.",
+  "solution": "An enlargement with scale factor $k$, centre with position vector $\\mathbf{c}$, multiplies the vector **from the centre** by $k$: $\\mathbf{p} \\to \\mathbf{c} + k(\\mathbf{p} - \\mathbf{c})$.\n\n(a) $E_1$ (centre $O$, scale factor 2): $\\mathbf{p} \\to 2\\mathbf{p}$.\n\n$E_2$ (centre $C$, scale factor $\\frac{1}{2}$):\n$$2\\mathbf{p} \\to \\mathbf{c} + \\tfrac{1}{2}(2\\mathbf{p} - \\mathbf{c}) = \\mathbf{c} + \\mathbf{p} - \\tfrac{1}{2}\\mathbf{c} = \\mathbf{p} + \\tfrac{1}{2}\\mathbf{c}$$\n\n(b) Every point is moved by the same vector $\\frac{1}{2}\\mathbf{c} = \\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$. So the combination is a **translation by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$**. This makes sense: the scale factors multiply to $2 \\times \\frac{1}{2} = 1$, so the size is unchanged.\n\n(c) $E_2$ first: $\\mathbf{p} \\to \\mathbf{c} + \\frac{1}{2}(\\mathbf{p} - \\mathbf{c}) = \\frac{1}{2}\\mathbf{p} + \\frac{1}{2}\\mathbf{c}$.\n\nThen $E_1$: $\\to 2\\left(\\frac{1}{2}\\mathbf{p} + \\frac{1}{2}\\mathbf{c}\\right) = \\mathbf{p} + \\mathbf{c}$.\n\nThis is a translation by $\\mathbf{c} = \\begin{pmatrix} 4 \\\\ 0 \\end{pmatrix}$, which is **not** the same: the order of transformations matters.",
+  "linkedTopicIds": [
+   "geo-vectors"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ }
+]

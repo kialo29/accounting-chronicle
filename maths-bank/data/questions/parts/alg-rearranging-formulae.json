@@ -1,0 +1,246 @@
+[
+ {
+  "id": "alg-rearranging-formulae-q01",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Make $x$ the subject of $y = x + 7$.",
+  "hint": "What has been done to $x$? Do the opposite to both sides.",
+  "answer": "$x = y - 7$",
+  "solution": "7 has been added to $x$. Undo this by subtracting 7 from both sides:\n$$y - 7 = x$$\n\nWrite the subject on the left:\n$$x = y - 7$$\n\nCheck: if $x = 2$ then $y = 9$, and $9 - 7 = 2$ ✓.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-rearranging-formulae-q02",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Make $x$ the subject of $y = 3x + 7$.",
+  "hint": "To get $y$ from $x$: multiply by 3, then add 7. Undo these in **reverse** order.",
+  "answer": "$x = \\dfrac{y - 7}{3}$",
+  "solution": "**What changed:** $x$ is now multiplied by 3.\n\nBuilding $y$ from $x$: first $\\times 3$, then $+7$. Undo in reverse order: first $-7$, then $\\div 3$.\n\nSubtract 7 from both sides:\n$$y - 7 = 3x$$\n\nDivide the **whole** of each side by 3:\n$$x = \\frac{y - 7}{3}$$\n\n(Not $\\frac{y}{3} - 7$: that would undo the operations in the wrong order.)\n\nCheck: $x = 1$ gives $y = 10$, and $\\frac{10 - 7}{3} = 1$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-rearranging-formulae-q03",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Make $x$ the subject of $y = 3x - 7$.",
+  "hint": "Compared with $y = 3x + 7$, only the sign of the 7 has changed. How does that change the first step?",
+  "answer": "$x = \\dfrac{y + 7}{3}$",
+  "solution": "**What changed:** $+7$ has become $-7$.\n\nAdd 7 to both sides (instead of subtracting):\n$$y + 7 = 3x$$\n\nDivide both sides by 3:\n$$x = \\frac{y + 7}{3}$$\n\nThe effect of the change is just that the sign in the numerator flips.\n\nCheck: $x = 4$ gives $y = 5$, and $\\frac{5 + 7}{3} = 4$ ✓.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-rearranging-formulae-q04",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Make $x$ the subject of $y = 7 - 3x$.",
+  "hint": "Now the $x$ term is being **subtracted**. One tidy approach is to add $3x$ to both sides first so that the $x$ term is positive.",
+  "answer": "$x = \\dfrac{7 - y}{3}$",
+  "solution": "**What changed:** the $x$ term is now subtracted from 7, so its coefficient is $-3$.\n\nAdd $3x$ to both sides:\n$$y + 3x = 7$$\n\nSubtract $y$ from both sides:\n$$3x = 7 - y$$\n\nDivide by 3:\n$$x = \\frac{7 - y}{3}$$\n\n(Dividing by $-3$ directly gives $x = \\frac{y - 7}{-3}$, which is the same thing.)\n\nCheck: $x = 2$ gives $y = 1$, and $\\frac{7 - 1}{3} = 2$ ✓.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-rearranging-formulae-q05",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A taxi company uses the formula\n$$C = 3.5 + 1.8d$$\nto work out the fare, $C$ pounds, for a journey of $d$ kilometres.\n\n(a) Make $d$ the subject of the formula.\n\n(b) Mia's fare was £21.50. How long was her journey?",
+  "hint": "Undo the $+3.5$ first, then the $\\times 1.8$.",
+  "answer": "(a) $d = \\dfrac{C - 3.5}{1.8}$ (b) 10 km",
+  "solution": "(a) Subtract 3.5 from both sides:\n$$C - 3.5 = 1.8d$$\n\nDivide both sides by 1.8:\n$$d = \\frac{C - 3.5}{1.8}$$\n\n(b) Substitute $C = 21.5$:\n$$d = \\frac{21.5 - 3.5}{1.8} = \\frac{18}{1.8} = 10$$\n\nHer journey was 10 km.\n\nCheck: $3.5 + 1.8 \\times 10 = 3.5 + 18 = 21.5$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rearranging-formulae-q06",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The perimeter of a rectangle is $P = 2l + 2w$. Jay and Kiran both make $l$ the subject.\n\nJay writes $l = \\dfrac{P}{2} - 2w$.\n\nKiran writes $l = \\dfrac{P - 2w}{2}$.\n\nWho is correct? Explain the other student's mistake, and show that the correct answer can also be written as $l = \\dfrac{P}{2} - w$.",
+  "hint": "Test both formulae with a real rectangle, e.g. $l = 5$, $w = 3$. Which one gives back $l = 5$?",
+  "answer": "Kiran is correct. Jay divided only $P$ by 2, not the whole of $P - 2w$. $\\dfrac{P - 2w}{2} = \\dfrac{P}{2} - \\dfrac{2w}{2} = \\dfrac{P}{2} - w$.",
+  "solution": "Correct rearrangement: subtract $2w$ from both sides,\n$$P - 2w = 2l$$\nthen divide the **whole** of the left side by 2:\n$$l = \\frac{P - 2w}{2}$$\n\nSo **Kiran** is correct.\n\n**Jay's mistake:** he divided $P$ by 2 but left $2w$ undivided. When you divide a side by 2, every term on that side must be divided by 2.\n\nNumerical check with $l = 5$, $w = 3$, so $P = 16$:\n* Kiran: $\\frac{16 - 6}{2} = 5$ ✓\n* Jay: $\\frac{16}{2} - 6 = 2$ ✗\n\n**Simplified form:** splitting the fraction,\n$$\\frac{P - 2w}{2} = \\frac{P}{2} - \\frac{2w}{2} = \\frac{P}{2} - w$$\n(half the perimeter is one length plus one width).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q07",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "The kinetic energy of an object is given by $E = \\frac{1}{2}mv^2$.\n\nMake $v$ the subject of the formula, where $v > 0$.",
+  "hint": "Get $v^2$ on its own first. What undoes squaring?",
+  "answer": "$v = \\sqrt{\\dfrac{2E}{m}}$",
+  "solution": "Multiply both sides by 2:\n$$2E = mv^2$$\n\nDivide both sides by $m$:\n$$v^2 = \\frac{2E}{m}$$\n\nSquare-root both sides. Since $v > 0$ we only need the positive root:\n$$v = \\sqrt{\\frac{2E}{m}}$$\n\nCheck: $m = 2$, $v = 3$ gives $E = \\frac{1}{2}(2)(9) = 9$, and $\\sqrt{\\frac{18}{2}} = 3$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rearranging-formulae-q08",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Hannah is asked to make $a$ the subject of Pythagoras' theorem, $c^2 = a^2 + b^2$, where $a$, $b$ and $c$ are lengths. Her working is\n\n$$\\begin{aligned} a^2 &= c^2 - b^2 \\\\ a &= c - b \\end{aligned}$$\n\n(a) Explain the mistake in Hannah's working.\n\n(b) Write down the correct formula, and use a right-angled triangle with sides 3, 4 and 5 to show that Hannah's formula is wrong.",
+  "hint": "Is $\\sqrt{25 - 16}$ the same as $\\sqrt{25} - \\sqrt{16}$?",
+  "answer": "(a) She square-rooted each term separately; the square root of a difference is not the difference of the square roots. (b) $a = \\sqrt{c^2 - b^2}$. With $c = 5$, $b = 4$: $\\sqrt{25 - 16} = 3$ ✓, but $5 - 4 = 1$ ✗.",
+  "solution": "(a) The first line is correct (subtract $b^2$ from both sides).\n\nThe mistake is in the second line. To undo the square on $a$, Hannah must square-root the **whole** of the right-hand side, $c^2 - b^2$. Instead she square-rooted each term separately. In general\n$$\\sqrt{c^2 - b^2} \\ne c - b$$\n\n(b) Correct formula (positive root, since $a$ is a length):\n$$a = \\sqrt{c^2 - b^2}$$\n\nFor the 3, 4, 5 triangle, $c = 5$ (hypotenuse), $b = 4$, $a = 3$:\n* Correct formula: $\\sqrt{5^2 - 4^2} = \\sqrt{25 - 16} = \\sqrt{9} = 3$ ✓\n* Hannah's formula: $5 - 4 = 1 \\ne 3$ ✗",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q09",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The formula $F = \\dfrac{9C}{5} + 32$ converts a temperature of $C$ degrees Celsius into $F$ degrees Fahrenheit.\n\nRavi makes $C$ the subject and writes\n$$C = \\frac{5F}{9} - 32$$\n\n(a) Show that Ravi's formula gives the wrong answer for the boiling point of water ($F = 212$).\n\n(b) Explain his mistake and find the correct formula.",
+  "hint": "To get $F$ from $C$ you multiply by $\\frac{9}{5}$ and **then** add 32. Which operation must be undone first?",
+  "answer": "(a) Ravi's formula gives about $85.8$, not 100. (b) He undid the operations in the wrong order: $C = \\dfrac{5(F - 32)}{9}$.",
+  "solution": "(a) Water boils at 100 °C, which is 212 °F. Ravi's formula gives\n$$\\frac{5 \\times 212}{9} - 32 = 117.8 - 32 = 85.8 \\quad (\\text{1 d.p.})$$\nwhich is not 100, so his formula is wrong.\n\n(b) Building $F$ from $C$: first multiply by $\\frac{9}{5}$, **then** add 32. To reverse this we must undo the **last** step first: subtract 32 **before** multiplying by $\\frac{5}{9}$. Ravi multiplied by $\\frac{5}{9}$ first and subtracted 32 last.\n\nCorrect working: subtract 32 from both sides:\n$$F - 32 = \\frac{9C}{5}$$\n\nMultiply both sides by 5 and divide by 9:\n$$C = \\frac{5(F - 32)}{9}$$\n\nCheck: $F = 212$ gives $\\frac{5 \\times 180}{9} = 100$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q10",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Make $x$ the subject of\n$$3x + a = bx + 5$$\n(In the US this is called solving a *literal equation* for $x$.)",
+  "hint": "$x$ appears twice. Get both $x$ terms on the same side, then factorise $x$ out.",
+  "answer": "$x = \\dfrac{5 - a}{3 - b}$ (equivalently $\\dfrac{a - 5}{b - 3}$)",
+  "solution": "Collect the $x$ terms on the left and everything else on the right. Subtract $bx$ and subtract $a$ from both sides:\n$$3x - bx = 5 - a$$\n\nFactorise out $x$:\n$$x(3 - b) = 5 - a$$\n\nDivide by $(3 - b)$:\n$$x = \\frac{5 - a}{3 - b}$$\n\n(Multiplying the top and bottom by $-1$ gives the equivalent form $\\frac{a - 5}{b - 3}$.)\n\nCheck with $a = 1$, $b = 2$: the formula gives $x = \\frac{4}{1} = 4$; original: $3(4) + 1 = 13$ and $2(4) + 5 = 13$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q11",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 4,
+  "type": "spot-the-mistake",
+  "question": "Leah is asked to make $x$ the subject of\n$$y = \\frac{x + 2}{x - 3}.$$\nHer working is shown.\n\n$$\\begin{aligned} y(x - 3) &= x + 2 \\\\ xy - 3y &= x + 2 \\\\ xy &= x + 2 + 3y \\\\ x &= \\frac{x + 2 + 3y}{y} \\end{aligned}$$\n\nExplain why Leah's answer is not a correct rearrangement, and complete the rearrangement correctly.",
+  "hint": "Look at the final line: has $x$ really been made the subject? Gather **all** the $x$ terms on one side and factorise.",
+  "answer": "Her final answer still has $x$ on the right-hand side, so $x$ is not the subject. Correct: $x = \\dfrac{3y + 2}{y - 1}$.",
+  "solution": "The first three lines are correct. But in the last line $x$ still appears on the **right-hand side**, so the formula does not let you work out $x$ from $y$: $x$ has not been made the subject.\n\nWhen the subject appears twice, collect **all** the terms containing $x$ on one side and factorise.\n\nFrom $xy - 3y = x + 2$, subtract $x$ from both sides and add $3y$:\n$$xy - x = 3y + 2$$\n\nFactorise:\n$$x(y - 1) = 3y + 2$$\n\nDivide by $(y - 1)$:\n$$x = \\frac{3y + 2}{y - 1}$$\n\nCheck: $x = 4$ gives $y = \\frac{6}{1} = 6$, and $\\frac{3(6) + 2}{6 - 1} = \\frac{20}{5} = 4$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q12",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The volume of a cone is $V = \\frac{1}{3}\\pi r^2 h$.\n\nSam makes $h$ the subject and gets $h = \\dfrac{3V}{\\pi r^2}$.\n\nKate makes $h$ the subject and gets $h = \\dfrac{V}{3\\pi r^2}$.\n\nWho is correct? Explain how you know, and check using a cone with $r = 3$ and $h = 4$.",
+  "hint": "What is the first step to clear the fraction $\\frac{1}{3}$: multiplying or dividing by 3?",
+  "answer": "Sam is correct: multiplying both sides by 3 gives $3V = \\pi r^2 h$, so $h = \\dfrac{3V}{\\pi r^2}$. With $r = 3$, $h = 4$: $V = 12\\pi$, Sam's formula gives 4, Kate's gives $\\frac{4}{9}$.",
+  "solution": "$h$ is being multiplied by $\\frac{1}{3}$, i.e. **divided** by 3. To undo dividing by 3 we must **multiply** by 3:\n$$3V = \\pi r^2 h$$\n\nThen divide both sides by $\\pi r^2$:\n$$h = \\frac{3V}{\\pi r^2}$$\n\nSo **Sam** is correct. Kate divided by 3 instead of multiplying, which is doing the same operation again rather than its inverse.\n\nCheck with $r = 3$, $h = 4$:\n$$V = \\frac{1}{3}\\pi(3^2)(4) = 12\\pi$$\n* Sam: $\\dfrac{3 \\times 12\\pi}{\\pi \\times 9} = \\dfrac{36\\pi}{9\\pi} = 4$ ✓\n* Kate: $\\dfrac{12\\pi}{3\\pi \\times 9} = \\dfrac{12}{27} = \\dfrac{4}{9}$ ✗",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rearranging-formulae-q13",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The time, $T$ seconds, for one complete swing of a pendulum of length $L$ metres is\n$$T = 2\\pi\\sqrt{\\frac{L}{g}}$$\nwhere $g = 9.81\\ \\text{m/s}^2$.\n\n(a) Make $L$ the subject of the formula.\n\n(b) A clockmaker wants a pendulum that takes exactly 2 seconds for one complete swing. Find the length needed, giving your answer in centimetres to 3 significant figures.\n\n(c) The clockmaker wants to double the time of a swing. What must happen to the length of the pendulum? Use your formula from (a) to explain.",
+  "hint": "Divide by $2\\pi$ first, then square both sides to remove the square root.",
+  "answer": "(a) $L = \\dfrac{gT^2}{4\\pi^2}$ (b) 99.4 cm (c) The length must be multiplied by 4.",
+  "solution": "(a) Divide both sides by $2\\pi$:\n$$\\frac{T}{2\\pi} = \\sqrt{\\frac{L}{g}}$$\n\nSquare both sides (squaring undoes the square root):\n$$\\frac{T^2}{4\\pi^2} = \\frac{L}{g}$$\n\nMultiply both sides by $g$:\n$$L = \\frac{gT^2}{4\\pi^2}$$\n\n(b) Substitute $T = 2$, $g = 9.81$:\n$$L = \\frac{9.81 \\times 4}{4\\pi^2} = \\frac{9.81}{\\pi^2} = 0.99397\\ldots\\ \\text{m}$$\n\n$L \\approx 99.4$ cm (3 s.f.).\n\n(c) $L$ is proportional to $T^2$. If $T$ is replaced by $2T$:\n$$\\frac{g(2T)^2}{4\\pi^2} = 4 \\times \\frac{gT^2}{4\\pi^2}$$\nso the pendulum must be **4 times as long** (about 3.98 m for a 4-second swing).",
+  "linkedTopicIds": [
+   "rat-proportion-equations"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q14",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "The volume of a sphere is $V = \\frac{4}{3}\\pi r^3$. Make $r$ the subject of the formula.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Make $a$ the subject of $3(a - 2b) = ab + 7$.",
+    "marks": 4
+   }
+  ],
+  "marks": 6,
+  "calculator": false,
+  "hint": "In (a), clear the fraction and isolate $r^3$ before taking a cube root. In (b), expand, collect the $a$ terms on one side and factorise.",
+  "answer": "(a) $r = \\sqrt[3]{\\dfrac{3V}{4\\pi}}$ (b) $a = \\dfrac{6b + 7}{3 - b}$",
+  "solution": "(a) Multiply by 3 and divide by $4\\pi$:\n$$r^3 = \\frac{3V}{4\\pi}$$ **M1**\n\nCube root:\n$$r = \\sqrt[3]{\\frac{3V}{4\\pi}}$$ **A1**\n\n(b) Expand the bracket:\n$$3a - 6b = ab + 7$$ **M1**\n\nCollect the $a$ terms on one side:\n$$3a - ab = 6b + 7$$ **M1**\n\nFactorise:\n$$a(3 - b) = 6b + 7$$ **M1**\n\n$$a = \\frac{6b + 7}{3 - b}$$ **A1** (accept $\\frac{-6b - 7}{b - 3}$ or equivalent)\n\nCheck: $b = 1$ gives $a = \\frac{13}{2}$; original: $3(6.5 - 2) = 13.5$ and $6.5 + 7 = 13.5$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q15",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A cone has base radius $r$ cm, perpendicular height $h$ cm and slant height $l$ cm. Its curved surface area is $S = \\pi r l$.\n\n(a) Show that $S = \\pi r\\sqrt{r^2 + h^2}$.\n\n(b) Make $h$ the subject of this formula.\n\n(c) A cone has curved surface area $60\\pi\\ \\text{cm}^2$ and radius 6 cm. Use your formula to find its exact height.",
+  "hint": "The radius, height and slant height form a right-angled triangle. For (b), get the square root on its own, then square both sides.",
+  "answer": "(a) $l = \\sqrt{r^2 + h^2}$ by Pythagoras (b) $h = \\sqrt{\\dfrac{S^2}{\\pi^2 r^2} - r^2}$ (c) 8 cm",
+  "solution": "(a) The perpendicular height, the base radius and the slant height form a right-angled triangle with the slant height as the hypotenuse. By Pythagoras, $l^2 = r^2 + h^2$, so $l = \\sqrt{r^2 + h^2}$ and\n$$S = \\pi r\\sqrt{r^2 + h^2}$$\n\n(b) Divide both sides by $\\pi r$:\n$$\\frac{S}{\\pi r} = \\sqrt{r^2 + h^2}$$\n\nSquare both sides (the **whole** of each side):\n$$\\frac{S^2}{\\pi^2 r^2} = r^2 + h^2$$\n\nSubtract $r^2$:\n$$h^2 = \\frac{S^2}{\\pi^2 r^2} - r^2$$\n\nSquare-root (positive, as $h$ is a length):\n$$h = \\sqrt{\\frac{S^2}{\\pi^2 r^2} - r^2}$$\n\n(Do not \"simplify\" this to $\\frac{S}{\\pi r} - r$: the square root of a difference is not the difference of the square roots.)\n\n(c) $\\dfrac{S}{\\pi r} = \\dfrac{60\\pi}{6\\pi} = 10$, so\n$$h = \\sqrt{10^2 - 6^2} = \\sqrt{64} = 8\\ \\text{cm}$$\n\n(The slant height is 10 cm, giving a 6, 8, 10 right-angled triangle.)",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "geo-pyramids-cones-spheres"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"320\" height=\"270\"><path d=\"M 70 225 A 90 22 0 0 0 250 225\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M 70 225 A 90 22 0 0 1 250 225\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"70\" y1=\"225\" x2=\"160\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"225\" x2=\"160\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"160\" y1=\"35\" x2=\"160\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"160\" y1=\"225\" x2=\"250\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"160,213 172,213 172,225\" fill=\"none\" stroke=\"currentColor\"/><circle cx=\"160\" cy=\"225\" r=\"2.5\" fill=\"currentColor\"/><text x=\"150\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">h</text><text x=\"205\" y=\"242\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">r</text><text x=\"219\" y=\"128\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">l</text></svg>"
+ },
+ {
+  "id": "alg-rearranging-formulae-q16",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Write $x^2 + 6x$ in the form $(x + p)^2 + q$.\n\n(b) Hence make $x$ the subject of $y = x^2 + 6x$, given that $x \\ge -3$.\n\n(c) Explain why the condition $x \\ge -3$ is needed for there to be a single formula for $x$.",
+  "hint": "The subject appears twice (in $x^2$ and in $6x$), and you cannot factorise it out to leave a single $x$. Completing the square writes the right-hand side with only **one** $x$ in it.",
+  "answer": "(a) $(x + 3)^2 - 9$ (b) $x = -3 + \\sqrt{y + 9}$ (c) Each $y > -9$ comes from two values of $x$, $-3 \\pm \\sqrt{y + 9}$; the condition picks the one with $x \\ge -3$.",
+  "solution": "(a) Half of 6 is 3:\n$$x^2 + 6x = (x + 3)^2 - 9$$\n(since $(x + 3)^2 = x^2 + 6x + 9$).\n\n(b) Now $x$ appears only once:\n$$y = (x + 3)^2 - 9$$\n\nAdd 9:\n$$y + 9 = (x + 3)^2$$\n\nSquare-root:\n$$x + 3 = \\pm\\sqrt{y + 9}$$\n\nSince $x \\ge -3$, $x + 3 \\ge 0$, so take the non-negative root:\n$$x = -3 + \\sqrt{y + 9}$$\n\nCheck: $x = 2$ gives $y = 4 + 12 = 16$, and $-3 + \\sqrt{25} = 2$ ✓.\n\n(c) Without the condition, both $x = -3 + \\sqrt{y + 9}$ and $x = -3 - \\sqrt{y + 9}$ give the same $y$ (e.g. $x = 2$ and $x = -8$ both give $y = 16$). The graph $y = x^2 + 6x$ is a parabola symmetrical about $x = -3$, so each $y$-value above the minimum $-9$ comes from two $x$-values. Restricting to $x \\ge -3$ (one half of the parabola) makes the answer unique.",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "alg-quadratic-graphs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-rearranging-formulae-q17",
+  "topicId": "alg-rearranging-formulae",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$a$ is a positive constant and $x > a$. A formula is given by\n$$y = \\sqrt{\\frac{x + a}{x - a}}.$$\n\n(a) Make $x$ the subject of the formula.\n\n(b) Explain why $y > 1$ for every value of $x > a$, and how this fits with your answer to (a).\n\n(c) Find $x$ when $a = 4$ and $y = 3$.",
+  "hint": "Square both sides to remove the root, clear the fraction, then gather the $x$ terms and factorise.",
+  "answer": "(a) $x = \\dfrac{a(y^2 + 1)}{y^2 - 1}$ (b) $x + a > x - a > 0$, so the fraction is greater than 1; this means $y^2 - 1 > 0$, so the denominator in (a) is never zero. (c) $x = 5$",
+  "solution": "(a) Square both sides:\n$$y^2 = \\frac{x + a}{x - a}$$\n\nMultiply both sides by $(x - a)$:\n$$y^2(x - a) = x + a$$\n\nExpand:\n$$xy^2 - ay^2 = x + a$$\n\nCollect the $x$ terms on the left:\n$$xy^2 - x = ay^2 + a$$\n\nFactorise both sides:\n$$x(y^2 - 1) = a(y^2 + 1)$$\n\n$$x = \\frac{a(y^2 + 1)}{y^2 - 1}$$\n\n(b) Since $x > a > 0$, the denominator $x - a$ is positive, and $x + a$ is larger than $x - a$ by $2a > 0$. A positive number divided by a smaller positive number is greater than 1, so $\\frac{x + a}{x - a} > 1$, and therefore $y > 1$.\n\nThis means $y^2 - 1 > 0$, so the division in (a) is always valid (never by zero), and $x$ comes out positive, consistent with $x > a$. In fact $x - a = \\frac{a(y^2 + 1) - a(y^2 - 1)}{y^2 - 1} = \\frac{2a}{y^2 - 1} > 0$ ✓.\n\n(c)\n$$x = \\frac{4(9 + 1)}{9 - 1} = \\frac{40}{8} = 5$$\n\nCheck: $\\sqrt{\\frac{5 + 4}{5 - 4}} = \\sqrt{9} = 3$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]
