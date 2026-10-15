@@ -1,0 +1,283 @@
+[
+ {
+  "id": "num-recurring-decimals-q01",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use algebra to write $0.\\dot{6}$ as a fraction in its simplest form.",
+  "hint": "Let $x = 0.666\\ldots$ and work out $10x$. Then subtract.",
+  "answer": "$\\dfrac{2}{3}$",
+  "solution": "Let $x = 0.666\\ldots$\n\nOne digit repeats, so multiply by 10:\n$$10x = 6.666\\ldots$$\n\nSubtract so the recurring tails cancel:\n$$10x - x = 6.666\\ldots - 0.666\\ldots \\Rightarrow 9x = 6$$\n$$x = \\frac{6}{9} = \\frac{2}{3}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q02",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use algebra to write $0.\\dot{3}\\dot{6}$ as a fraction in its simplest form.",
+  "hint": "The repeating block now has two digits. Which power of 10 shifts the decimal by one whole block?",
+  "answer": "$\\dfrac{4}{11}$",
+  "solution": "**What changed:** the repeating block is now two digits long (36), so multiply by $10^2 = 100$ instead of 10.\n\nLet $x = 0.363636\\ldots$\n$$100x = 36.363636\\ldots$$\n$$100x - x = 36 \\Rightarrow 99x = 36$$\n$$x = \\frac{36}{99} = \\frac{4}{11}$$ (dividing top and bottom by 9)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q03",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "question": "Use algebra to write $0.3\\dot{6}$ as a fraction in its simplest form.",
+  "hint": "Only the 6 recurs. Find two multiples of $x$ whose digits after the decimal point are identical.",
+  "answer": "$\\dfrac{11}{30}$",
+  "solution": "**What changed:** the dot has moved, so only the 6 recurs: $0.3\\dot{6} = 0.36666\\ldots$ (not $0.3636\\ldots$). The 3 is a non-recurring digit.\n\nLet $x = 0.36666\\ldots$\n$$10x = 3.6666\\ldots$$\n$$100x = 36.6666\\ldots$$\n\nBoth have the tail $0.666\\ldots$, so subtract:\n$$100x - 10x = 36.666\\ldots - 3.666\\ldots \\Rightarrow 90x = 33$$\n$$x = \\frac{33}{90} = \\frac{11}{30}$$\n\nThe answer is not $\\frac{36}{99}$; that is $0.\\dot{3}\\dot{6}$ from the previous question.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q04",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use algebra to write $2.3\\dot{6}$ as a fraction in its simplest form.",
+  "hint": "The same method works with a whole-number part, or you can deal with the 2 separately.",
+  "answer": "$\\dfrac{71}{30}$ (or $2\\dfrac{11}{30}$)",
+  "solution": "**What changed:** a whole-number part of 2 has been added.\n\nLet $x = 2.36666\\ldots$\n$$100x = 236.666\\ldots, \\qquad 10x = 23.666\\ldots$$\n$$90x = 236.666\\ldots - 23.666\\ldots = 213$$\n$$x = \\frac{213}{90} = \\frac{71}{30}$$\n\nCheck with the previous question: $2.3\\dot{6} = 2 + 0.3\\dot{6} = 2 + \\frac{11}{30} = \\frac{71}{30}$ ✓. Adding a whole number just adds it to the fraction.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q05",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Dot notation shows which digits repeat.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write out the first eight decimal places of $0.1\\dot{2}$, of $0.\\dot{1}\\dot{2}$ and of $0.\\dot{1}2\\dot{3}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Write $0.5181818\\ldots$ using dot notation."
+   }
+  ],
+  "hint": "The dots sit over the first and last digits of the repeating block. A single dot means only that one digit repeats.",
+  "answer": "(a) $0.12222222\\ldots$, $0.12121212\\ldots$, $0.12312312\\ldots$ (b) $0.5\\dot{1}\\dot{8}$",
+  "solution": "**(a)**\n\n$0.1\\dot{2}$: only the 2 repeats, so $0.12222222\\ldots$\n\n$0.\\dot{1}\\dot{2}$: the block 12 repeats, so $0.12121212\\ldots$\n\n$0.\\dot{1}2\\dot{3}$: the dots mark the start and end of the block 123, so $0.12312312\\ldots$\n\n**(b)** The 5 appears once; then the block 18 repeats. Put dots over the first and last digits of the block: $0.5\\dot{1}\\dot{8}$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q06",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use algebra to write $0.\\dot{2}1\\dot{6}$ as a fraction in its simplest form.",
+  "hint": "The repeating block has three digits, so multiply by 1000.",
+  "answer": "$\\dfrac{8}{37}$",
+  "solution": "Let $x = 0.216216216\\ldots$ The block 216 has three digits, so multiply by $10^3 = 1000$:\n$$1000x = 216.216216\\ldots$$\n$$1000x - x = 216 \\Rightarrow 999x = 216$$\n$$x = \\frac{216}{999}$$\n\nSimplify: $216 = 27 \\times 8$ and $999 = 27 \\times 37$, so $x = \\dfrac{8}{37}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q07",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Ben is asked to write $0.\\dot{1}\\dot{8}$ as a fraction. His working is shown below.\n\nLine 1: Let $x = 0.181818\\ldots$\n\nLine 2: $10x = 1.818181\\ldots$\n\nLine 3: $10x - x = 1.818181\\ldots - 0.181818\\ldots$\n\nLine 4: $9x = 1.636363\\ldots \\approx 1.64$\n\nLine 5: $x = \\dfrac{1.64}{9} = \\dfrac{41}{225}$\n\nFind Ben's mistake, explain why it is wrong, and give the correct fraction in its simplest form.",
+  "hint": "After subtracting, the recurring part should disappear completely. Why didn't it?",
+  "answer": "Line 2: he should multiply by 100 (the block has 2 digits). Correct answer $\\dfrac{2}{11}$.",
+  "solution": "**The mistake is in Line 2.** The repeating block (18) has **two** digits, so Ben needed to multiply by $10^2 = 100$. Multiplying by 10 moves the digits along by only one place, so the tails of $10x = 1.8181\\ldots$ and $x = 0.1818\\ldots$ do not line up and the subtraction in Line 4 still leaves a recurring decimal. Rounding it to 1.64 then gives an answer that is not exact.\n\n**Correct working:**\n$$x = 0.181818\\ldots$$\n$$100x = 18.181818\\ldots$$\n$$100x - x = 18 \\Rightarrow 99x = 18$$\n$$x = \\frac{18}{99} = \\frac{2}{11}$$\n\nCheck: $2 \\div 11 = 0.181818\\ldots$ ✓ whereas $\\frac{41}{225} = 0.18222\\ldots$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q08",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Chloe writes:\n\n\"$0.2\\dot{7}$ has the digits 2 and 7 after the point, so $0.2\\dot{7} = \\dfrac{27}{99} = \\dfrac{3}{11}$.\"\n\nExplain Chloe's mistake and use an algebraic method to find the correct fraction.",
+  "hint": "Write out $0.2\\dot{7}$ to several decimal places. Is the 2 part of the repeating block?",
+  "answer": "Only the 7 recurs, so the \"over 99\" shortcut does not apply ($\\frac{27}{99} = 0.\\dot{2}\\dot{7}$). Correct: $0.2\\dot{7} = \\dfrac{5}{18}$.",
+  "solution": "**The mistake:** the \"put the digits over 99\" shortcut only works when the whole two-digit block repeats from the decimal point. In $0.2\\dot{7} = 0.27777\\ldots$ only the 7 recurs; the 2 does not. In fact $\\frac{27}{99} = \\frac{3}{11} = 0.272727\\ldots = 0.\\dot{2}\\dot{7}$, a different number.\n\n**Correct method:** let $x = 0.27777\\ldots$\n$$10x = 2.7777\\ldots$$\n$$100x = 27.7777\\ldots$$\n\nSubtract (the tails match):\n$$100x - 10x = 27.777\\ldots - 2.777\\ldots \\Rightarrow 90x = 25$$\n$$x = \\frac{25}{90} = \\frac{5}{18}$$\n\nCheck: $5 \\div 18 = 0.2777\\ldots$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q09",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Dev says, \"$0.\\dot{4}\\dot{5} = \\dfrac{45}{100} = \\dfrac{9}{20}$.\"\n\nIs Dev correct? Justify your answer.",
+  "hint": "Convert $\\frac{9}{20}$ to a decimal. Does it recur?",
+  "answer": "No. $\\frac{9}{20} = 0.45$ exactly; $0.\\dot{4}\\dot{5} = \\dfrac{45}{99} = \\dfrac{5}{11}$.",
+  "solution": "**Dev is not correct.**\n\n$\\frac{45}{100} = 0.45$, which **terminates**. But $0.\\dot{4}\\dot{5} = 0.454545\\ldots$ goes on repeating, so it is bigger than 0.45.\n\nAlgebraic method: let $x = 0.454545\\ldots$\n$$100x = 45.454545\\ldots$$\n$$99x = 45$$\n$$x = \\frac{45}{99} = \\frac{5}{11}$$\n\nA two-digit repeating block goes over 99, not 100.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q10",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Jay says, \"$0.\\dot{9}$ is just less than 1. It can never actually equal 1.\"\n\nProve algebraically that $0.\\dot{9} = 1$, and give one other argument that would convince Jay.",
+  "hint": "Use exactly the same method as for any recurring decimal: let $x = 0.999\\ldots$",
+  "answer": "$10x - x = 9.999\\ldots - 0.999\\ldots$, so $9x = 9$ and $x = 1$. Also $3 \\times 0.\\dot{3} = 3 \\times \\frac{1}{3} = 1$.",
+  "solution": "**Algebraic proof.** Let $x = 0.999\\ldots$\n$$10x = 9.999\\ldots$$\n$$10x - x = 9.999\\ldots - 0.999\\ldots \\Rightarrow 9x = 9 \\Rightarrow x = 1$$\n\nSo $0.\\dot{9} = 1$.\n\n**Another argument.** $\\frac{1}{3} = 0.333\\ldots$, and multiplying both sides by 3 gives $1 = 0.999\\ldots$\n\n(Or: if $0.\\dot{9}$ were less than 1, there would be a number between them, such as their average. But no decimal can fit between $0.999\\ldots$ and 1, because $0.999\\ldots$ never stops having 9s. Two different numbers always have numbers between them, so they must be equal.)\n\nJay is wrong: $0.\\dot{9}$ and 1 are two ways of writing the same number.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q11",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "You must show all your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove algebraically that $0.2\\dot{4}\\dot{5} = \\dfrac{27}{110}$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence, or otherwise, write $0.2\\dot{4}\\dot{5} + 0.\\dot{5}\\dot{4}$ as a fraction in its simplest form.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (a), the 2 does not recur and the block 45 does. Use $1000x$ and $10x$.",
+  "answer": "(a) $990x = 243$, so $x = \\dfrac{243}{990} = \\dfrac{27}{110}$ (b) $\\dfrac{87}{110}$",
+  "solution": "**(a)** Let $x = 0.2454545\\ldots$\n$$1000x = 245.454545\\ldots$$\n$$10x = 2.454545\\ldots$$ **M1** (two recurring decimals with the same tail, shown with enough digits)\n\n$$1000x - 10x = 245.4545\\ldots - 2.4545\\ldots \\Rightarrow 990x = 243$$ **M1**\n\n$$x = \\frac{243}{990} = \\frac{27}{110}$$ **A1** (dividing by the HCF 9) as required\n\n**(b)** $0.\\dot{5}\\dot{4}$: let $y = 0.5454\\ldots$, then $100y = 54.5454\\ldots$, so $99y = 54$ and $y = \\frac{54}{99} = \\frac{6}{11}$ **B1**\n\n$$\\frac{27}{110} + \\frac{6}{11} = \\frac{27}{110} + \\frac{60}{110} = \\frac{87}{110}$$ **A1**\n\n(Check: $0.24545\\ldots + 0.54545\\ldots = 0.790909\\ldots$ and $87 \\div 110 = 0.790909\\ldots$ ✓)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q12",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A stopwatch app shows a runner's lap time as 1.4666666... minutes, which is $1.4\\dot{6}$ minutes.\n\nUse an algebraic method to write $1.4\\dot{6}$ as a fraction in its simplest form. Hence write the lap time in minutes and seconds.",
+  "hint": "Only the 6 recurs. Then multiply the fraction of a minute by 60 to get seconds.",
+  "answer": "$\\dfrac{22}{15}$ minutes $= 1$ minute 28 seconds",
+  "solution": "Let $x = 1.4666\\ldots$\n$$100x = 146.666\\ldots, \\qquad 10x = 14.666\\ldots$$\n$$90x = 146.666\\ldots - 14.666\\ldots = 132$$\n$$x = \\frac{132}{90} = \\frac{22}{15}$$\n\nIn seconds: $\\frac{22}{15} \\times 60 = 88$ seconds $= 1$ minute 28 seconds.\n\n(Using 1.47 minutes would give 88.2 s; the exact fraction shows the time is exactly 88 s.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q13",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A group of friends split a restaurant bill equally. The calculator shows that each person should pay 13.83333333 pounds, that is, £$13.8\\dot{3}$.\n\nThere were fewer than 10 friends and the total bill was a whole number of pounds.\n\nUse an algebraic method to write $13.8\\dot{3}$ as a fraction, and hence find the number of friends and the total bill.",
+  "hint": "Write $13.8\\dot{3}$ as a fraction $\\frac{a}{b}$ in its simplest form. What must the number of friends be a multiple of?",
+  "answer": "$13.8\\dot{3} = \\dfrac{83}{6}$; 6 friends and a bill of £83",
+  "solution": "Let $x = 13.8333\\ldots$\n$$100x = 1383.333\\ldots, \\qquad 10x = 138.333\\ldots$$\n$$90x = 1245 \\Rightarrow x = \\frac{1245}{90} = \\frac{83}{6}$$\n\nIf there are $n$ friends, the bill is $n \\times \\frac{83}{6}$ pounds. Since 83 and 6 have no common factor, this is a whole number only when $n$ is a multiple of 6.\n\nWith fewer than 10 friends, $n = 6$, and the bill is $6 \\times \\frac{83}{6} = £83$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-recurring-decimals-q14",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "num-fractions-multiply-divide"
+  ],
+  "question": "Without using a calculator, work out $0.\\dot{4} \\times 0.\\dot{6}$.\n\nGive your answer as a recurring decimal using dot notation.",
+  "hint": "Convert each recurring decimal to a fraction first, multiply, then convert back by division.",
+  "answer": "$0.\\dot{2}9\\dot{6}$",
+  "solution": "Convert each decimal to a fraction:\n\n$x = 0.444\\ldots \\Rightarrow 10x - x = 4 \\Rightarrow x = \\frac{4}{9}$\n\n$y = 0.666\\ldots \\Rightarrow 10y - y = 6 \\Rightarrow y = \\frac{6}{9} = \\frac{2}{3}$\n\nMultiply:\n$$\\frac{4}{9} \\times \\frac{2}{3} = \\frac{8}{27}$$\n\nConvert back by short division, $8 \\div 27$:\n$80 = 2 \\times 27 + 26$, $260 = 9 \\times 27 + 17$, $170 = 6 \\times 27 + 8$, and the remainder 8 is where we started, so the digits 296 repeat.\n$$\\frac{8}{27} = 0.296296\\ldots = 0.\\dot{2}9\\dot{6}$$\n\n(Multiplying the decimals digit by digit is impossible because they never end; fractions make it exact.)"
+ },
+ {
+  "id": "num-recurring-decimals-q15",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "num-hcf-lcm"
+  ],
+  "question": "$n$ is a positive integer. Both $n \\times 0.2\\dot{7}$ and $n \\times 0.\\dot{2}1\\dot{6}$ are whole numbers.\n\nFind the smallest possible value of $n$.",
+  "hint": "Write each decimal as a fraction in its simplest form. What must $n$ be divisible by?",
+  "answer": "$n = 666$",
+  "solution": "**Convert to fractions.**\n\n$x = 0.2777\\ldots$: $100x - 10x = 27.77\\ldots - 2.77\\ldots = 25$, so $90x = 25$ and $x = \\frac{25}{90} = \\frac{5}{18}$.\n\n$y = 0.216216\\ldots$: $1000y - y = 216$, so $y = \\frac{216}{999} = \\frac{8}{37}$.\n\n**Conditions on $n$.**\n\n$n \\times \\frac{5}{18}$ is whole. Since 5 and 18 share no factor, 18 must divide $n$.\n\n$n \\times \\frac{8}{37}$ is whole. Since 8 and 37 share no factor, 37 must divide $n$.\n\nSo $n$ is a common multiple of 18 and 37. As 37 is prime and does not divide 18, the LCM is $18 \\times 37 = 666$.\n\nCheck: $666 \\times \\frac{5}{18} = 185$ and $666 \\times \\frac{8}{37} = 144$, both whole."
+ },
+ {
+  "id": "num-recurring-decimals-q16",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ],
+  "question": "$a$ and $b$ are digits from 0 to 9, and $0.\\dot{a}\\dot{b}$ means $0.ababab\\ldots$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that $0.\\dot{a}\\dot{b} = \\dfrac{10a + b}{99}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove that $0.\\dot{a}\\dot{b} + 0.\\dot{b}\\dot{a} = \\dfrac{a + b}{9}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Work out $0.\\dot{4}\\dot{7} + 0.\\dot{7}\\dot{4}$, giving your answer as a recurring decimal, and find every pair of different digits $a$, $b$ with $a < b$ for which $0.\\dot{a}\\dot{b} + 0.\\dot{b}\\dot{a} = 1$."
+   }
+  ],
+  "hint": "The two-digit number with digits $a$ then $b$ has value $10a + b$. Use $100x - x$.",
+  "answer": "(a) $99x = 10a + b$ (b) $\\dfrac{11(a + b)}{99} = \\dfrac{a + b}{9}$ (c) $1.\\dot{2}$; $(0, 9), (1, 8), (2, 7), (3, 6), (4, 5)$",
+  "solution": "**(a)** Let $x = 0.ababab\\ldots$ The repeating block \"$ab$\" has two digits and represents the number $10a + b$.\n$$100x = (10a + b).ababab\\ldots$$\n$$100x - x = 10a + b \\Rightarrow x = \\frac{10a + b}{99}$$\n\n**(b)** By (a) with the digits swapped, $0.\\dot{b}\\dot{a} = \\dfrac{10b + a}{99}$.\n$$0.\\dot{a}\\dot{b} + 0.\\dot{b}\\dot{a} = \\frac{10a + b + 10b + a}{99} = \\frac{11a + 11b}{99} = \\frac{11(a + b)}{99} = \\frac{a + b}{9}$$\n\n**(c)** With $a = 4$, $b = 7$: $\\dfrac{4 + 7}{9} = \\dfrac{11}{9} = 1\\dfrac{2}{9} = 1.\\dot{2}$\n\n(Check: $0.4747\\ldots + 0.7474\\ldots = 1.2222\\ldots$ ✓)\n\nThe sum is 1 exactly when $\\frac{a + b}{9} = 1$, i.e. $a + b = 9$. With $a < b$: $(0, 9), (1, 8), (2, 7), (3, 6), (4, 5)$.\n\n(For example $0.\\dot{2}\\dot{7} + 0.\\dot{7}\\dot{2} = 0.2727\\ldots + 0.7272\\ldots = 0.9999\\ldots = 1$.)"
+ },
+ {
+  "id": "num-recurring-decimals-q17",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-basic-probability"
+  ],
+  "question": "A bag contains only red, blue and green counters. A counter is taken at random.\n\n$P(\\text{red}) = 0.\\dot{2}\\dot{7}$ and $P(\\text{blue}) = 0.\\dot{4}\\dot{5}$.\n\nThere are between 20 and 30 counters in the bag. How many green counters are there?",
+  "hint": "Convert both probabilities to fractions. What does that tell you about the total number of counters?",
+  "answer": "6 green counters",
+  "solution": "**Convert to fractions.**\n\n$0.\\dot{2}\\dot{7}$: $100x - x = 27$, so $x = \\frac{27}{99} = \\frac{3}{11}$\n\n$0.\\dot{4}\\dot{5}$: $100y - y = 45$, so $y = \\frac{45}{99} = \\frac{5}{11}$\n\n**Green.** Probabilities sum to 1:\n$$P(\\text{green}) = 1 - \\frac{3}{11} - \\frac{5}{11} = \\frac{3}{11}$$\n\n**Total.** The number of counters of each colour must be a whole number, so the total must be a multiple of 11. The only multiple of 11 between 20 and 30 is 22.\n\nGreen counters $= \\frac{3}{11} \\times 22 = 6$ (with 6 red and 10 blue)."
+ },
+ {
+  "id": "num-recurring-decimals-q18",
+  "topicId": "num-recurring-decimals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-geometric-series",
+   "alg-sequences-quadratic-geometric"
+  ],
+  "question": "The recurring decimal $0.\\dot{1}\\dot{2}$ can be written as the infinite geometric series\n$$0.\\dot{1}\\dot{2} = \\frac{12}{100} + \\frac{12}{100^2} + \\frac{12}{100^3} + \\cdots$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the first term $a$ and the common ratio $r$ of the series."
+   },
+   {
+    "label": "b",
+    "prompt": "Use the formula $S_\\infty = \\dfrac{a}{1 - r}$ to show that $0.\\dot{1}\\dot{2} = \\dfrac{4}{33}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Use the same approach to write $0.3\\dot{1}\\dot{2}$ as a fraction in its simplest form."
+   }
+  ],
+  "hint": "Each term is $\\frac{1}{100}$ of the one before. In (c), write $0.3\\dot{1}\\dot{2} = 0.3 + \\frac{1}{10} \\times 0.\\dot{1}\\dot{2}$.",
+  "answer": "(a) $a = \\dfrac{12}{100}$, $r = \\dfrac{1}{100}$ (b) $S_\\infty = \\dfrac{12}{99} = \\dfrac{4}{33}$ (c) $\\dfrac{103}{330}$",
+  "solution": "**(a)** $a = \\dfrac{12}{100} = 0.12$, and each term is the previous one divided by 100, so $r = \\dfrac{1}{100}$.\n\n**(b)** Since $|r| < 1$ the series converges:\n$$S_\\infty = \\frac{\\frac{12}{100}}{1 - \\frac{1}{100}} = \\frac{\\frac{12}{100}}{\\frac{99}{100}} = \\frac{12}{99} = \\frac{4}{33}$$\n\nThis matches the algebraic method ($100x - x = 12$).\n\n**(c)** $0.3\\dot{1}\\dot{2} = 0.3121212\\ldots = 0.3 + 0.0121212\\ldots = \\dfrac{3}{10} + \\dfrac{1}{10} \\times \\dfrac{4}{33}$\n$$= \\frac{3}{10} + \\frac{4}{330} = \\frac{99}{330} + \\frac{4}{330} = \\frac{103}{330}$$\n\n(Check with algebra: $1000x - 10x = 312.1212\\ldots - 3.1212\\ldots = 309$, so $x = \\frac{309}{990} = \\frac{103}{330}$ ✓)"
+ }
+]

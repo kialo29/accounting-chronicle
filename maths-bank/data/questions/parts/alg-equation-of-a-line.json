@@ -1,0 +1,299 @@
+[
+ {
+  "id": "alg-equation-of-a-line-q01",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A straight line has gradient 3 and crosses the $y$-axis at $(0, -2)$. Write down its equation.",
+  "hint": "Use $y = mx + c$: which letter is the gradient and which is the $y$-intercept?",
+  "answer": "$y = 3x - 2$",
+  "solution": "In $y = mx + c$, $m$ is the gradient and $c$ is the $y$-intercept.\n\nHere $m = 3$ and $c = -2$, so\n$$y = 3x - 2$$\n\nCheck: when $x = 0$, $y = -2$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q02",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the equation of the line with gradient 2 that passes through $(3, 11)$.",
+  "hint": "Write $y = 2x + c$, then substitute $x = 3$ and $y = 11$.",
+  "answer": "$y = 2x + 5$",
+  "solution": "The line is $y = 2x + c$. The point $(3, 11)$ has $x = 3$, $y = 11$:\n$$11 = 2(3) + c = 6 + c \\;\\Rightarrow\\; c = 5$$\n$$y = 2x + 5$$\n\nCheck: $2(3) + 5 = 11$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q03",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the equation of the line with gradient 2 that passes through $(3, -1)$.",
+  "hint": "Same method as before: substitute $x = 3$ and $y = -1$ into $y = 2x + c$.",
+  "answer": "$y = 2x - 7$",
+  "solution": "$y = 2x + c$ with $x = 3$, $y = -1$:\n$$-1 = 6 + c \\;\\Rightarrow\\; c = -7$$\n$$y = 2x - 7$$\n\nCheck: $2(3) - 7 = -1$ ✓\n\n**What changed:** the $y$-coordinate went from 11 to $-1$, down by 12, so the parallel line is 12 units lower: $c$ went from 5 to $-7$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q04",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the equation of the line with gradient $-2$ that passes through $(3, -1)$.",
+  "hint": "Substitute into $y = -2x + c$. Take care with $-2 \\times 3$.",
+  "answer": "$y = -2x + 5$",
+  "solution": "$y = -2x + c$ with $x = 3$, $y = -1$:\n$$-1 = -2(3) + c = -6 + c \\;\\Rightarrow\\; c = 5$$\n$$y = -2x + 5$$\n\nCheck: $-2(3) + 5 = -1$ ✓\n\n**What changed:** only the sign of the gradient. The line now slopes downwards through the same point, so it meets the $y$-axis higher up.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q05",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the equation of the line with gradient $-\\frac{1}{2}$ that passes through $(3, -1)$. Give your answer in the form $ax + by + c = 0$, where $a$, $b$ and $c$ are integers.",
+  "hint": "Use $y - y_1 = m(x - x_1)$, then multiply through by 2 to clear the fraction.",
+  "answer": "$x + 2y - 1 = 0$",
+  "solution": "Point-slope form with $(x_1, y_1) = (3, -1)$:\n$$y - (-1) = -\\frac{1}{2}(x - 3)$$\n$$y + 1 = -\\frac{1}{2}(x - 3)$$\n\nMultiply both sides by 2:\n$$2y + 2 = -x + 3$$\n\nCollect everything on one side:\n$$x + 2y - 1 = 0$$\n\n(In the form $y = mx + c$ this is $y = -\\frac{1}{2}x + \\frac{1}{2}$.)\n\nCheck $(3, -1)$: $3 - 2 - 1 = 0$ ✓\n\n**What changed:** the gradient became a fraction, so we clear denominators to get integer coefficients.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q06",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the equation of the line through $(-1, 7)$ and $(3, -5)$.",
+  "hint": "Find the gradient first, subtracting in the same order on the top and the bottom.",
+  "answer": "$y = -3x + 4$",
+  "solution": "Gradient:\n$$m = \\frac{-5 - 7}{3 - (-1)} = \\frac{-12}{4} = -3$$\n\nSo $y = -3x + c$. Substitute $(-1, 7)$:\n$$7 = -3(-1) + c = 3 + c \\;\\Rightarrow\\; c = 4$$\n$$y = -3x + 4$$\n\nCheck with the other point $(3, -5)$: $-3(3) + 4 = -5$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q07",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A line has gradient 4 and passes through $(-2, 5)$.\n\n(a) Write its equation in point-slope form $y - y_1 = m(x - x_1)$.\n\n(b) Rearrange it into the form $Ax + By = C$, where $A$, $B$ and $C$ are integers and $A > 0$. (This is called standard form in the US.)",
+  "hint": "$x_1 = -2$, so $x - x_1 = x - (-2)$.",
+  "answer": "(a) $y - 5 = 4(x + 2)$ (b) $4x - y = -13$",
+  "solution": "(a) With $m = 4$, $x_1 = -2$, $y_1 = 5$:\n$$y - 5 = 4(x - (-2)) = 4(x + 2)$$\n\n(b) Expand: $y - 5 = 4x + 8$, so $y = 4x + 13$.\n\nMove the $x$-term to the left: $-4x + y = 13$. Multiply by $-1$ so that $A > 0$:\n$$4x - y = -13$$\n\nCheck $(-2, 5)$: $4(-2) - 5 = -13$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q08",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is finding the equation of the line with gradient 3 that passes through $(2, 5)$. His working is shown below.\n\n$y = 3x + c$\n\n$2 = 3(5) + c$\n\n$2 = 15 + c$\n\n$c = -13$, so $y = 3x - 13$\n\nIdentify Ben's mistake, explain it, and find the correct equation.",
+  "hint": "In the coordinates $(2, 5)$, which number is $x$ and which is $y$?",
+  "answer": "He substituted $x = 5$ and $y = 2$ (the wrong way round). Correct: $y = 3x - 1$.",
+  "solution": "The mistake is in the second line: Ben has put the $y$-coordinate in place of $x$ and the $x$-coordinate in place of $y$. In $(2, 5)$ the first number is $x = 2$ and the second is $y = 5$.\n\nCorrect working:\n$$5 = 3(2) + c = 6 + c \\;\\Rightarrow\\; c = -1$$\n$$y = 3x - 1$$\n\nCheck: $3(2) - 1 = 5$ ✓. Ben could have caught his error by checking: on $y = 3x - 13$, $x = 2$ gives $y = -7$, not 5.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q09",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is finding the equation of the line with gradient $-2$ that passes through $(-4, 3)$. Her working is shown below.\n\n$y - 3 = -2(x - 4)$\n\n$y - 3 = -2x + 8$\n\n$y = -2x + 11$\n\nIdentify Chloe's mistake, explain it, and find the correct equation.",
+  "hint": "What is $x_1$? Substitute it carefully into $x - x_1$.",
+  "answer": "She used $x - 4$ instead of $x - (-4) = x + 4$. Correct: $y = -2x - 5$.",
+  "solution": "The mistake is in the first line. In $y - y_1 = m(x - x_1)$ we have $x_1 = -4$, so\n$$x - x_1 = x - (-4) = x + 4$$\nChloe wrote $x - 4$, which is the line through $(4, 3)$ instead.\n\nCorrect working:\n$$y - 3 = -2(x + 4)$$\n$$y - 3 = -2x - 8$$\n$$y = -2x - 5$$\n\nCheck $(-4, 3)$: $-2(-4) - 5 = 8 - 5 = 3$ ✓. (On Chloe's line, $x = -4$ gives $y = 19$, so her point is not on it.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q10",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Leo says that the line through $(-2, -3)$ and $(4, 9)$ has gradient $-2$.\n\n(a) Without doing a full calculation, explain how you can tell that Leo must be wrong.\n\n(b) Find the correct equation of the line.",
+  "hint": "As $x$ increases from $-2$ to $4$, what happens to $y$?",
+  "answer": "(a) As $x$ increases $y$ also increases, so the gradient must be positive. (b) $y = 2x + 1$",
+  "solution": "(a) Going from $(-2, -3)$ to $(4, 9)$, $x$ **increases** and $y$ **increases**, so the line goes up from left to right and its gradient must be positive. Leo has probably subtracted in different orders, e.g. $\\frac{9 - (-3)}{-2 - 4} = \\frac{12}{-6} = -2$.\n\n(b) Subtract in the same order on top and bottom:\n$$m = \\frac{9 - (-3)}{4 - (-2)} = \\frac{12}{6} = 2$$\n\n$y = 2x + c$ through $(-2, -3)$:\n$$-3 = -4 + c \\;\\Rightarrow\\; c = 1$$\n$$y = 2x + 1$$\n\nCheck $(4, 9)$: $8 + 1 = 9$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q11",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Mia says: \"The line $y = 3x + 2$ is parallel to $3x - 6y = 2$ because they both have a $3x$ in them.\"\n\n(a) Explain why Mia is wrong.\n\n(b) Which of these lines are parallel to $3x - 6y = 2$? Show how you decide.\n\n**A** $y = 3x + 2$ **B** $y = \\frac{1}{2}x - 4$ **C** $6y = 3x + 5$ **D** $x - 2y = 9$ **E** $2y = -x + 1$",
+  "hint": "Parallel lines have equal gradients. Rearrange every equation into the form $y = mx + c$ first.",
+  "answer": "(a) $3x - 6y = 2$ has gradient $\\frac{1}{2}$, not 3. (b) B, C and D",
+  "solution": "(a) You cannot read the gradient from the coefficient of $x$ unless the equation is $y = mx + c$. Rearranging:\n$$-6y = -3x + 2 \\;\\Rightarrow\\; y = \\frac{1}{2}x - \\frac{1}{3}$$\nso the gradient is $\\frac{1}{2}$. $y = 3x + 2$ has gradient 3, so it is not parallel.\n\n(b) Gradients:\n* **A**: $3$\n* **B**: $\\frac{1}{2}$\n* **C**: $y = \\frac{1}{2}x + \\frac{5}{6}$, gradient $\\frac{1}{2}$\n* **D**: $-2y = -x + 9 \\Rightarrow y = \\frac{1}{2}x - \\frac{9}{2}$, gradient $\\frac{1}{2}$\n* **E**: $y = -\\frac{1}{2}x + \\frac{1}{2}$, gradient $-\\frac{1}{2}$\n\nLines B, C and D have gradient $\\frac{1}{2}$, so they are parallel to $3x - 6y = 2$. (E has the right size of gradient but the wrong sign.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q12",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "The diagram shows the points $A(-1, 4)$, $B(5, 1)$ and $C(2, 6)$.\n\nThe diagram is not drawn accurately.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><line x1=\"20\" y1=\"236.4\" x2=\"282\" y2=\"236.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"96.8\" y1=\"264\" x2=\"96.8\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M282,236.4 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M96.8,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"282\" y=\"229.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"103.8\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"90.8\" y=\"250.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M71.2,126.2 L224.8,208.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"71.2\" cy=\"126.2\" r=\"3.2\" fill=\"currentColor\"/><text x=\"65.2\" y=\"118.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A(−1, 4)</text><circle cx=\"224.8\" cy=\"208.9\" r=\"3.2\" fill=\"currentColor\"/><text x=\"228.8\" y=\"198.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B(5, 1)</text><circle cx=\"148\" cy=\"71.1\" r=\"3.2\" fill=\"currentColor\"/><text x=\"154\" y=\"63.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">C(2, 6)</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the gradient of the line $AB$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the equation of the line that passes through $C$ and is parallel to $AB$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "The line in part (b) crosses the $x$-axis at $P$. Find the coordinates of $P$.",
+    "marks": 1
+   }
+  ],
+  "hint": "Parallel lines have the same gradient. A point on the $x$-axis has $y = 0$.",
+  "answer": "(a) $-\\frac{1}{2}$ (b) $y = -\\frac{1}{2}x + 7$ (c) $P(14, 0)$",
+  "solution": "(a) $$m_{AB} = \\frac{1 - 4}{5 - (-1)} = \\frac{-3}{6} = -\\frac{1}{2}$$\nM1 for a correct difference quotient, A1 for $-\\frac{1}{2}$.\n\n(b) Parallel, so gradient $-\\frac{1}{2}$: $y = -\\frac{1}{2}x + c$. Substitute $C(2, 6)$:\n$$6 = -1 + c \\;\\Rightarrow\\; c = 7$$\nM1 for substituting $(2, 6)$ into $y = -\\frac{1}{2}x + c$ (ft their gradient).\n$$y = -\\frac{1}{2}x + 7$$\nA1 (or equivalent, e.g. $x + 2y = 14$).\n\n(c) Put $y = 0$: $\\frac{1}{2}x = 7$, so $x = 14$. $P$ is $(14, 0)$. B1 ft their line.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q13",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "The line $l_1$ passes through the points $A(3, -2)$ and $B(-1, 4)$.\n\nThe line $l_2$ is parallel to $l_1$ and passes through the point $(5, 1)$.\n\nThe diagram is a sketch.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"20\" y1=\"212.1\" x2=\"282\" y2=\"212.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"106.9\" y1=\"274\" x2=\"106.9\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M282,212.1 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M106.9,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"282\" y=\"205.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"113.9\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"100.9\" y=\"226.1\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M20,49 L195.5,274\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M90.8,16 L276,253.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"179.4\" cy=\"253.4\" r=\"3.2\" fill=\"currentColor\"/><text x=\"185.4\" y=\"257.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A(3, −2)</text><circle cx=\"82.8\" cy=\"129.5\" r=\"3.2\" fill=\"currentColor\"/><text x=\"75.8\" y=\"133.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B(−1, 4)</text><text x=\"134.7\" y=\"192.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">l₁</text><text x=\"219.2\" y=\"176.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">l₂</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find an equation for $l_1$, giving your answer in the form $ax + by + c = 0$, where $a$, $b$ and $c$ are integers.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Find an equation for $l_2$ in the same form.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "The lines $l_1$ and $l_2$ cut the coordinate axes in the first quadrant to form a quadrilateral, bounded by $l_1$, $l_2$, the positive $x$-axis and the positive $y$-axis. Find the exact area of this quadrilateral.",
+    "marks": 3
+   }
+  ],
+  "hint": "For (c), the quadrilateral is a large right-angled triangle (under $l_2$) with a smaller one (under $l_1$) removed.",
+  "answer": "(a) $3x + 2y - 5 = 0$ (b) $3x + 2y - 17 = 0$ (c) $22$",
+  "solution": "(a) $$m = \\frac{4 - (-2)}{-1 - 3} = \\frac{6}{-4} = -\\frac{3}{2}$$ M1 A1\n\nUsing $A(3, -2)$: $y + 2 = -\\frac{3}{2}(x - 3)$ M1\n\n$2y + 4 = -3x + 9$, so\n$$3x + 2y - 5 = 0$$ A1\n\nCheck $B$: $-3 + 8 - 5 = 0$ ✓\n\n(b) Parallel lines differ only in the constant: $3x + 2y + k = 0$. Through $(5, 1)$: $15 + 2 + k = 0$, $k = -17$. M1\n$$3x + 2y - 17 = 0$$ A1\n\n(c) Intercepts. $l_1$: $\\left(\\frac{5}{3}, 0\\right)$ and $\\left(0, \\frac{5}{2}\\right)$. $l_2$: $\\left(\\frac{17}{3}, 0\\right)$ and $\\left(0, \\frac{17}{2}\\right)$. B1\n\nArea $=$ triangle under $l_2$ $-$ triangle under $l_1$: M1\n$$\\frac{1}{2} \\cdot \\frac{17}{3} \\cdot \\frac{17}{2} - \\frac{1}{2} \\cdot \\frac{5}{3} \\cdot \\frac{5}{2} = \\frac{289}{12} - \\frac{25}{12} = \\frac{264}{12} = 22$$ A1",
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-equation-of-a-line-q14",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A candle burns down at a constant rate. Two hours after it was lit it is 18 cm tall, and five hours after it was lit it is 12 cm tall.\n\n(a) Find an equation for the height $h$ cm of the candle $t$ hours after it was lit.\n\n(b) How tall was the candle when it was lit?\n\n(c) After how many hours will the candle have burnt down completely?",
+  "hint": "The two facts give two points $(t, h)$ on a straight line: $(2, 18)$ and $(5, 12)$.",
+  "answer": "(a) $h = 22 - 2t$ (b) 22 cm (c) 11 hours",
+  "solution": "(a) The points $(2, 18)$ and $(5, 12)$ lie on the line.\n$$m = \\frac{12 - 18}{5 - 2} = \\frac{-6}{3} = -2$$\nThe candle loses 2 cm each hour.\n\n$h = -2t + c$ through $(2, 18)$: $18 = -4 + c$, so $c = 22$.\n$$h = 22 - 2t$$\n\nCheck $(5, 12)$: $22 - 10 = 12$ ✓\n\n(b) When $t = 0$, $h = 22$ cm.\n\n(c) $h = 0$: $22 - 2t = 0$, so $t = 11$ hours.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-equation-of-a-line-q15",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "In a science lesson, masses are hung from spring A and its length is measured. The length increases at a constant rate.\n\n| Mass (g) | 150 | 400 |\n|---|---|---|\n| Length (cm) | 23.5 | 31 |\n\n(a) Find an equation for the length $L$ cm of spring A when a mass of $m$ grams is hung from it.\n\n(b) Explain what the gradient and the intercept of your equation mean in this context.\n\n(c) Spring B satisfies $L = 0.05m + 15$. Find the mass for which both springs have the same length, and state that length.",
+  "hint": "Treat the table as two points $(m, L)$. For (c), set the two expressions for $L$ equal.",
+  "answer": "(a) $L = 0.03m + 19$ (b) gradient: the spring stretches 0.03 cm for each gram; intercept: its natural (unstretched) length is 19 cm (c) 200 g, length 25 cm",
+  "solution": "(a) Points $(150, 23.5)$ and $(400, 31)$:\n$$\\text{gradient} = \\frac{31 - 23.5}{400 - 150} = \\frac{7.5}{250} = 0.03$$\n\n$L = 0.03m + c$ through $(150, 23.5)$: $23.5 = 4.5 + c$, so $c = 19$.\n$$L = 0.03m + 19$$\n\nCheck $(400, 31)$: $12 + 19 = 31$ ✓\n\n(b) Gradient $0.03$ cm per gram: each extra gram stretches the spring by 0.03 cm (3 cm per 100 g).\n\nIntercept 19 cm: the length when $m = 0$, i.e. the natural length of the spring with nothing hanging on it.\n\n(c) $$0.03m + 19 = 0.05m + 15$$\n$$4 = 0.02m \\;\\Rightarrow\\; m = 200$$\n\nLength: $0.03(200) + 19 = 25$ cm (check: $0.05(200) + 15 = 25$ ✓).\n\nBoth springs are 25 cm long when 200 g is hung from them.",
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-equation-of-a-line-q16",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$ABCD$ is a parallelogram. $A$ is $(-2, 1)$, $B$ is $(4, 3)$ and $C$ is $(6, 7)$.\n\n(a) Find the equation of the line $CD$.\n\n(b) Find the equation of the line $AD$.\n\n(c) Hence find the coordinates of $D$.",
+  "hint": "In a parallelogram, opposite sides are parallel: $CD \\parallel AB$ and $AD \\parallel BC$. $D$ is where the lines $CD$ and $AD$ meet.",
+  "answer": "(a) $y = \\frac{1}{3}x + 5$ (b) $y = 2x + 5$ (c) $D(0, 5)$",
+  "solution": "(a) $CD$ is parallel to $AB$. Gradient of $AB$: $\\frac{3 - 1}{4 - (-2)} = \\frac{2}{6} = \\frac{1}{3}$.\n\nLine through $C(6, 7)$: $7 = \\frac{1}{3}(6) + c = 2 + c$, so $c = 5$.\n$$CD: \\; y = \\frac{1}{3}x + 5$$\n\n(b) $AD$ is parallel to $BC$. Gradient of $BC$: $\\frac{7 - 3}{6 - 4} = 2$.\n\nLine through $A(-2, 1)$: $1 = -4 + c$, so $c = 5$.\n$$AD: \\; y = 2x + 5$$\n\n(c) $D$ lies on both lines (simultaneous equations):\n$$\\frac{1}{3}x + 5 = 2x + 5 \\;\\Rightarrow\\; \\frac{5}{3}x = 0 \\;\\Rightarrow\\; x = 0, \\; y = 5$$\n\n$D$ is $(0, 5)$.\n\nCheck using the fact that the diagonals of a parallelogram bisect each other: midpoint of $AC = (2, 4)$, midpoint of $BD = \\left(\\frac{4 + 0}{2}, \\frac{3 + 5}{2}\\right) = (2, 4)$ ✓",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear",
+   "geo-shape-properties"
+  ]
+ },
+ {
+  "id": "alg-equation-of-a-line-q17",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A straight line with gradient $m$ passes through the point $(2, 3)$.\n\n(a) Show that the $x$-coordinates of any points where the line meets the curve $y = x^2$ satisfy\n$$x^2 - mx + 2m - 3 = 0$$\n\n(b) Find the two values of $m$ for which the line is a tangent to the curve $y = x^2$, and give the equation of each tangent.",
+  "hint": "A tangent meets the curve at exactly one point, so the quadratic in (a) has a repeated root: discriminant $= 0$.",
+  "answer": "(b) $m = 2$: $y = 2x - 1$; $m = 6$: $y = 6x - 9$",
+  "solution": "(a) Point-slope form through $(2, 3)$: $y - 3 = m(x - 2)$, so $y = mx - 2m + 3$.\n\nAt an intersection with $y = x^2$:\n$$x^2 = mx - 2m + 3 \\;\\Rightarrow\\; x^2 - mx + 2m - 3 = 0$$ as required.\n\n(b) For a tangent there is exactly one point of contact, so the discriminant is zero:\n$$b^2 - 4ac = (-m)^2 - 4(1)(2m - 3) = m^2 - 8m + 12 = 0$$\n$$(m - 2)(m - 6) = 0 \\;\\Rightarrow\\; m = 2 \\text{ or } m = 6$$\n\n* $m = 2$: $y = 2x - 4 + 3 = 2x - 1$. Check: $x^2 - 2x + 1 = (x - 1)^2 = 0$, touching at $(1, 1)$ ✓\n* $m = 6$: $y = 6x - 12 + 3 = 6x - 9$. Check: $x^2 - 6x + 9 = (x - 3)^2 = 0$, touching at $(3, 9)$ ✓",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant",
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-equation-of-a-line-q18",
+  "topicId": "alg-equation-of-a-line",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A straight line passes through the point $(4, 3)$ and meets both coordinate axes. The distance from the origin to the point where it meets the $x$-axis is equal to the distance from the origin to the point where it meets the $y$-axis.\n\nFind **all** the possible equations of the line, giving each in the form $ax + by + c = 0$.",
+  "hint": "If the intercepts are $(a, 0)$ and $(0, b)$, then the condition is $|a| = |b|$. Consider $b = a$, $b = -a$, and the special case where both are 0.",
+  "answer": "$x + y - 7 = 0$, $x - y - 1 = 0$ and $3x - 4y = 0$",
+  "solution": "Let the line meet the axes at $(a, 0)$ and $(0, b)$. We need $|a| = |b|$.\n\n**Case 1: $a = b = 0$.** The line passes through the origin and $(4, 3)$: gradient $\\frac{3}{4}$, so $y = \\frac{3}{4}x$, i.e. $3x - 4y = 0$. Both distances are 0, so this line satisfies the condition.\n\n**Case 2: $b = a \\ne 0$.** The gradient is $\\frac{b - 0}{0 - a} = -1$. Through $(4, 3)$: $y - 3 = -(x - 4)$, so $x + y - 7 = 0$. Intercepts $(7, 0)$ and $(0, 7)$ ✓\n\n**Case 3: $b = -a \\ne 0$.** The gradient is $\\frac{-a - 0}{0 - a} = 1$. Through $(4, 3)$: $y - 3 = x - 4$, so $x - y - 1 = 0$. Intercepts $(1, 0)$ and $(0, -1)$: both distances are 1 ✓\n\n(Horizontal and vertical lines through $(4, 3)$ meet only one axis, so they do not qualify.)\n\nThere are three lines: $x + y - 7 = 0$, $x - y - 1 = 0$ and $3x - 4y = 0$.",
+  "linkedTopicIds": []
+ }
+]
