@@ -1,0 +1,310 @@
+[
+ {
+  "id": "alg-circle-equations-q01",
+  "topicId": "alg-circle-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "Write down the coordinates of the centre and the radius of the circle\n$$(x - 3)^2 + (y - 5)^2 = 36$$",
+  "hint": "Compare with $(x - a)^2 + (y - b)^2 = r^2$, which has centre $(a, b)$ and radius $r$.",
+  "answer": "Centre $(3, 5)$, radius $6$",
+  "solution": "The general form is $(x - a)^2 + (y - b)^2 = r^2$, with centre $(a, b)$ and radius $r$.\n\nHere $a = 3$ and $b = 5$, so the centre is $(3, 5)$.\n\nThe right-hand side is $r^2 = 36$, so $r = \\sqrt{36} = 6$.\n\nCheck: the centre is the point that makes both brackets zero: $x = 3$ and $y = 5$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q02",
+  "topicId": "alg-circle-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Write down the coordinates of the centre and the radius of the circle\n$$(x + 3)^2 + (y - 5)^2 = 36$$",
+  "hint": "Write $x + 3$ as $x - (\\text{something})$.",
+  "answer": "Centre $(-3, 5)$, radius $6$",
+  "solution": "**What changed from the previous question:** the $x$-bracket is now $x + 3$ instead of $x - 3$.\n\nWrite $x + 3 = x - (-3)$, so $a = -3$. The $y$-bracket is unchanged, so $b = 5$.\n\nCentre $(-3, 5)$. The centre has moved from $(3, 5)$ to $(-3, 5)$: the sign inside the bracket is the **opposite** of the coordinate.\n\nThe right-hand side is still $36$, so the radius is still $\\sqrt{36} = 6$.\n\nCheck: $x = -3$ makes $(x + 3)$ zero.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q03",
+  "topicId": "alg-circle-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Write down the coordinates of the centre and the radius of the circle\n$$(x + 3)^2 + (y - 5)^2 = 20$$\nGive the radius as a surd in its simplest form.",
+  "hint": "The right-hand side is $r^2$, not $r$.",
+  "answer": "Centre $(-3, 5)$, radius $2\\sqrt{5}$",
+  "solution": "**What changed:** only the right-hand side, from $36$ to $20$. The brackets are the same, so the centre is still $(-3, 5)$.\n\nThe right-hand side is $r^2$:\n$$r^2 = 20 \\Rightarrow r = \\sqrt{20} = \\sqrt{4 \\times 5} = 2\\sqrt{5}$$\n\n(The radius is **not** $20$: that is $r^2$.) So $r = 2\\sqrt{5} \\approx 4.47$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q04",
+  "topicId": "alg-circle-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Write down the coordinates of the centre and the radius of the circle\n$$(x + 3)^2 + y^2 = 20$$",
+  "hint": "$y^2$ is the same as $(y - 0)^2$.",
+  "answer": "Centre $(-3, 0)$, radius $2\\sqrt{5}$",
+  "solution": "**What changed:** the $y$-bracket $(y - 5)^2$ has become $y^2$.\n\n$y^2 = (y - 0)^2$, so $b = 0$. The $x$-bracket is unchanged, so $a = -3$.\n\nCentre $(-3, 0)$, which lies on the $x$-axis.\n\nThe right-hand side is still $20$, so $r = \\sqrt{20} = 2\\sqrt{5}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q05",
+  "topicId": "alg-circle-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Write down the equation of\n**(a)** the circle with centre $(0, 0)$ and radius $7$,\n**(b)** the circle with centre $(2, -4)$ and radius $3$.",
+  "hint": "Use $(x - a)^2 + (y - b)^2 = r^2$ and remember to square the radius.",
+  "answer": "(a) $x^2 + y^2 = 49$ (b) $(x - 2)^2 + (y + 4)^2 = 9$",
+  "solution": "**(a)** Centre the origin: $x^2 + y^2 = r^2$ with $r = 7$:\n$$x^2 + y^2 = 49$$\n\n**(b)** $a = 2$, $b = -4$, $r = 3$:\n$$(x - 2)^2 + (y - (-4))^2 = 3^2 \\Rightarrow (x - 2)^2 + (y + 4)^2 = 9$$\n\nCheck: the centre $(2, -4)$ makes both brackets zero, and the right-hand side is $3^2$, not $3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q06",
+  "topicId": "alg-circle-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The circle $C$ has equation\n$$x^2 + y^2 - 10x + 6y + 9 = 0$$\nBy completing the square, find the centre and the radius of $C$.",
+  "hint": "Group the $x$ terms and the $y$ terms: $x^2 - 10x = (x - 5)^2 - 25$.",
+  "answer": "Centre $(5, -3)$, radius $5$",
+  "solution": "Complete the square for $x$ and for $y$:\n$$x^2 - 10x = (x - 5)^2 - 25 \\qquad y^2 + 6y = (y + 3)^2 - 9$$\n\nSubstitute into the equation:\n$$(x - 5)^2 - 25 + (y + 3)^2 - 9 + 9 = 0$$\n$$(x - 5)^2 + (y + 3)^2 = 25$$\n\nCentre $(5, -3)$, radius $\\sqrt{25} = 5$.\n\nCheck by expanding: $(x - 5)^2 + (y + 3)^2 - 25 = x^2 - 10x + 25 + y^2 + 6y + 9 - 25 = x^2 + y^2 - 10x + 6y + 9$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q07",
+  "topicId": "alg-circle-equations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Priya is finding the centre and radius of the circle $x^2 + y^2 + 8x - 4y - 5 = 0$. Her working is shown below.\n\n$$x^2 + 8x + y^2 - 4y = 5$$\n$$(x + 4)^2 + (y - 2)^2 = 5$$\n$$\\text{Centre } (-4, 2), \\quad \\text{radius } \\sqrt{5}$$\n\nIdentify the mistake in Priya's working, explain why it is wrong, and give the correct radius.",
+  "hint": "Expand $(x + 4)^2$. Is it the same as $x^2 + 8x$?",
+  "answer": "The second line is wrong: she did not balance the $16$ and $4$ added by completing the square. Correct equation $(x + 4)^2 + (y - 2)^2 = 25$; centre $(-4, 2)$, radius $5$.",
+  "solution": "Priya's first line is correct, and her centre is correct.\n\n**The mistake is in the second line.** $(x + 4)^2 = x^2 + 8x + 16$ and $(y - 2)^2 = y^2 - 4y + 4$, so writing the brackets adds an extra $16 + 4 = 20$ to the left-hand side. She has not added $20$ to the right-hand side to balance it.\n\nCorrect working:\n$$x^2 + 8x = (x + 4)^2 - 16 \\qquad y^2 - 4y = (y - 2)^2 - 4$$\n$$(x + 4)^2 - 16 + (y - 2)^2 - 4 = 5$$\n$$(x + 4)^2 + (y - 2)^2 = 25$$\n\nCentre $(-4, 2)$, radius $\\sqrt{25} = 5$.\n\nCheck: the point $(1, 2)$ is $5$ units to the right of the centre, and $1 + 4 + 0 - 8 - 5 = 0$, so it lies on the original circle. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q08",
+  "topicId": "alg-circle-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The point $P(4, 2)$ lies on the circle $(x - 1)^2 + (y + 2)^2 = 25$. Tom finds the equation of the tangent to the circle at $P$.\n\nCentre $C(1, -2)$.\nGradient of $CP = \\dfrac{2 - (-2)}{4 - 1} = \\dfrac{4}{3}$\nGradient of tangent $= -\\dfrac{4}{3}$\n$y - 2 = -\\dfrac{4}{3}(x - 4) \\Rightarrow 3y - 6 = -4x + 16 \\Rightarrow 4x + 3y = 22$\n\nFind Tom's mistake, explain it, and find the correct equation of the tangent in the form $ax + by = c$.",
+  "hint": "How are the gradients of perpendicular lines related? Check whether $\\frac{4}{3} \\times \\left(-\\frac{4}{3}\\right) = -1$.",
+  "answer": "Tom changed only the sign of the radius gradient; the tangent gradient is $-\\frac{3}{4}$. Correct tangent: $3x + 4y = 20$",
+  "solution": "Tom's centre and the gradient of the radius $CP$ ($\\frac{4}{3}$) are correct.\n\n**The mistake is in line 3.** The tangent is perpendicular to the radius, so its gradient is the **negative reciprocal** of $\\frac{4}{3}$, not just the negative. Check: $\\frac{4}{3} \\times \\left(-\\frac{4}{3}\\right) = -\\frac{16}{9} \\ne -1$, so Tom's line is not perpendicular to $CP$.\n\nCorrect gradient: $-\\frac{3}{4}$ (since $\\frac{4}{3} \\times -\\frac{3}{4} = -1$).\n\n$$y - 2 = -\\frac{3}{4}(x - 4)$$\nMultiply by 4: $4y - 8 = -3x + 12$, so\n$$3x + 4y = 20$$\n\nCheck: $P(4, 2)$ gives $12 + 8 = 20$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q09",
+  "topicId": "alg-circle-equations",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A circle has equation $(x - 2)^2 + (y + 1)^2 = 13$.\n\nFor each point, decide whether it lies **inside**, **on** or **outside** the circle. Explain how you know.\n\n$A(4, 2)$, $B(0, 0)$, $C(-1, 3)$",
+  "hint": "Substitute each point into the left-hand side. This gives the **square** of its distance from the centre; compare it with $13$.",
+  "answer": "$A$ on (value $13$), $B$ inside (value $5 < 13$), $C$ outside (value $25 > 13$)",
+  "solution": "The left-hand side $(x - 2)^2 + (y + 1)^2$ is the square of the distance from $(x, y)$ to the centre $(2, -1)$ (by Pythagoras). The radius squared is $13$.\n\n* $A(4, 2)$: $(2)^2 + (3)^2 = 4 + 9 = 13$. Equal to $r^2$, so $A$ is **on** the circle.\n* $B(0, 0)$: $(-2)^2 + (1)^2 = 4 + 1 = 5$. Less than $13$, so $B$ is closer to the centre than the radius: **inside**.\n* $C(-1, 3)$: $(-3)^2 + (4)^2 = 9 + 16 = 25$. Greater than $13$: **outside** (it is $5$ units from the centre, but the radius is only $\\sqrt{13} \\approx 3.61$).\n\nNote: you compare with $13$ ($= r^2$), or compare distances with $\\sqrt{13}$; comparing a squared distance with $\\sqrt{13}$ would be wrong.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q10",
+  "topicId": "alg-circle-equations",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The diagram shows the circle $x^2 + y^2 = 20$ with centre $O$.\nThe point $P(2, 4)$ lies on the circle. The tangent to the circle at $P$ meets the $x$-axis at $Q$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 353 256\" width=\"353\" height=\"256\"><line x1=\"14\" y1=\"137.5\" x2=\"345\" y2=\"137.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M345,137.5 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"118.5\" y1=\"242\" x2=\"118.5\" y2=\"6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M118.5,6 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"345\" y=\"130.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"125.5\" y=\"15\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"112.5\" y=\"151.5\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><circle cx=\"118.5\" cy=\"137.5\" r=\"84.97\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"71\" y1=\"18.75\" x2=\"337\" y2=\"151.75\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"156.5\" cy=\"61.5\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"308.5\" cy=\"137.5\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"118.5\" y1=\"137.5\" x2=\"156.5\" y2=\"61.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"160.5\" y=\"53.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">P(2, 4)</text><text x=\"304.5\" y=\"153.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">Q</text><text x=\"44.1\" y=\"219.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x² + y² = 20</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $P$ lies on the circle.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the equation of the tangent at $P$. Give your answer in the form $y = mx + c$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the area of triangle $OPQ$.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "hint": "The tangent at $P$ is perpendicular to the radius $OP$.",
+  "answer": "(a) $2^2 + 4^2 = 20$ (b) $y = -\\frac{1}{2}x + 5$ (c) $20$ square units",
+  "solution": "**(a)** $2^2 + 4^2 = 4 + 16 = 20$, so $P$ satisfies the equation and lies on the circle. **B1**\n\n**(b)** Gradient of $OP = \\dfrac{4 - 0}{2 - 0} = 2$ **M1**\n\nThe tangent is perpendicular to $OP$, so its gradient is $-\\dfrac{1}{2}$ **M1**\n\n$y - 4 = -\\dfrac{1}{2}(x - 2) \\Rightarrow y = -\\dfrac{1}{2}x + 1 + 4$\n$$y = -\\frac{1}{2}x + 5 \\quad \\textbf{A1}$$\n\n**(c)** At $Q$, $y = 0$: $0 = -\\frac{1}{2}x + 5 \\Rightarrow x = 10$, so $Q(10, 0)$. **M1** (ft their tangent)\n\nTriangle $OPQ$ has base $OQ = 10$ along the $x$-axis and perpendicular height $4$ (the $y$-coordinate of $P$):\n$$\\text{Area} = \\frac{1}{2} \\times 10 \\times 4 = 20 \\quad \\textbf{A1}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q11",
+  "topicId": "alg-circle-equations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [],
+  "question": "A circle passes through the points $A(-2, 2)$, $B(6, 2)$ and $C(6, 6)$.\n\nFind the equation of the circle.",
+  "hint": "The perpendicular bisector of any chord passes through the centre. $AB$ is horizontal and $BC$ is vertical, so their perpendicular bisectors are easy to write down.",
+  "answer": "$(x - 2)^2 + (y - 4)^2 = 20$",
+  "solution": "**Method 1: perpendicular bisectors of chords.**\n\n$AB$ runs from $x = -2$ to $x = 6$ along $y = 2$. Its perpendicular bisector is the vertical line through its midpoint: $x = 2$.\n\n$BC$ runs from $y = 2$ to $y = 6$ along $x = 6$. Its perpendicular bisector is the horizontal line $y = 4$.\n\nThe centre lies on both, so the centre is $(2, 4)$.\n\nRadius$^2$ = distance$^2$ from $(2, 4)$ to $A(-2, 2)$: $(4)^2 + (2)^2 = 20$.\n$$(x - 2)^2 + (y - 4)^2 = 20$$\n\n**Method 2 (check):** $AB$ is horizontal and $BC$ is vertical, so angle $ABC = 90°$. The angle in a semicircle is $90°$, so $AC$ is a diameter. Midpoint of $AC = \\left(\\frac{-2 + 6}{2}, \\frac{2 + 6}{2}\\right) = (2, 4)$ ✓, and $AC = \\sqrt{8^2 + 4^2} = \\sqrt{80}$, so $r^2 = \\frac{80}{4} = 20$ ✓.\n\nCheck $C(6, 6)$: $16 + 4 = 20$ ✓."
+ },
+ {
+  "id": "alg-circle-equations-q12",
+  "topicId": "alg-circle-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant",
+   "alg-simultaneous-nonlinear"
+  ],
+  "misconceptionIds": [],
+  "question": "The line $y = x + k$, where $k$ is a constant, is a tangent to the circle $x^2 + y^2 = 8$.\n\nFind the two possible values of $k$, and for each one find the coordinates of the point where the line touches the circle.",
+  "hint": "Substitute $y = x + k$ into the circle. A tangent meets the circle exactly once, so the resulting quadratic has a repeated root: $b^2 - 4ac = 0$.",
+  "answer": "$k = 4$, touching at $(-2, 2)$; $k = -4$, touching at $(2, -2)$",
+  "solution": "Substitute $y = x + k$:\n$$x^2 + (x + k)^2 = 8 \\Rightarrow 2x^2 + 2kx + k^2 - 8 = 0$$\n\nA tangent meets the circle at exactly one point, so this quadratic has one repeated root: discriminant $= 0$.\n$$(2k)^2 - 4(2)(k^2 - 8) = 0$$\n$$4k^2 - 8k^2 + 64 = 0 \\Rightarrow 4k^2 = 64 \\Rightarrow k = \\pm 4$$\n\n**$k = 4$:** $2x^2 + 8x + 8 = 0 \\Rightarrow 2(x + 2)^2 = 0 \\Rightarrow x = -2$, $y = -2 + 4 = 2$. Point $(-2, 2)$.\n\n**$k = -4$:** $2x^2 - 8x + 8 = 0 \\Rightarrow 2(x - 2)^2 = 0 \\Rightarrow x = 2$, $y = 2 - 4 = -2$. Point $(2, -2)$.\n\nCheck: $(-2)^2 + 2^2 = 8$ ✓. Also, the radius to $(-2, 2)$ has gradient $-1$, perpendicular to the line's gradient $1$ ✓."
+ },
+ {
+  "id": "alg-circle-equations-q13",
+  "topicId": "alg-circle-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear",
+   "num-surds",
+   "alg-perpendicular-lines"
+  ],
+  "misconceptionIds": [],
+  "question": "The circle $(x - 1)^2 + (y - 2)^2 = 25$ has centre $C$. The line $y = x + 2$ cuts the circle at the points $A$ and $B$.\n\n**(a)** Find the coordinates of $A$ and $B$.\n**(b)** Show that the length of the chord $AB$ is $7\\sqrt{2}$.\n**(c)** $M$ is the midpoint of $AB$. Show that $CM$ is perpendicular to $AB$.",
+  "hint": "Substitute $y = x + 2$ into the circle equation to get a quadratic in $x$.",
+  "answer": "(a) $(-3, -1)$ and $(4, 6)$ (b) $AB = \\sqrt{98} = 7\\sqrt{2}$ (c) $M\\left(\\frac{1}{2}, \\frac{5}{2}\\right)$; gradient $CM = -1$, gradient $AB = 1$, product $-1$",
+  "solution": "**(a)** Substitute $y = x + 2$, so $y - 2 = x$:\n$$(x - 1)^2 + x^2 = 25 \\Rightarrow 2x^2 - 2x + 1 - 25 = 0 \\Rightarrow x^2 - x - 12 = 0$$\n$$(x - 4)(x + 3) = 0 \\Rightarrow x = 4 \\text{ or } x = -3$$\n$x = 4 \\Rightarrow y = 6$; $x = -3 \\Rightarrow y = -1$. So $A(-3, -1)$ and $B(4, 6)$.\n\n**(b)** $AB = \\sqrt{(4 - (-3))^2 + (6 - (-1))^2} = \\sqrt{49 + 49} = \\sqrt{98} = \\sqrt{49 \\times 2} = 7\\sqrt{2}$.\n\n**(c)** $M = \\left(\\frac{-3 + 4}{2}, \\frac{-1 + 6}{2}\\right) = \\left(\\frac{1}{2}, \\frac{5}{2}\\right)$.\n\n$C = (1, 2)$. Gradient of $CM = \\dfrac{\\frac{5}{2} - 2}{\\frac{1}{2} - 1} = \\dfrac{\\frac{1}{2}}{-\\frac{1}{2}} = -1$.\n\nGradient of $AB = 1$ (the line $y = x + 2$). Product $= 1 \\times (-1) = -1$, so $CM \\perp AB$, as expected: the line from the centre to the midpoint of a chord is the perpendicular bisector of the chord."
+ },
+ {
+  "id": "alg-circle-equations-q14",
+  "topicId": "alg-circle-equations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m2"
+  ],
+  "question": "Circle $C_1$ has equation $x^2 + y^2 = 4$.\nCircle $C_2$ has equation $x^2 + y^2 - 12x - 16y + 36 = 0$.\n\nSam says: \"These two circles cross each other at two points.\"\n\nShow that Sam is wrong: prove that the circles **touch** at exactly one point, and find the coordinates of that point.",
+  "hint": "Find the centre and radius of $C_2$ by completing the square. Then compare the distance between the centres with the sum of the radii.",
+  "answer": "$C_2$: centre $(6, 8)$, radius $8$. Distance between centres $= 10 = 2 + 8$, so they touch externally at $\\left(\\frac{6}{5}, \\frac{8}{5}\\right)$.",
+  "solution": "$C_1$: centre $O(0, 0)$, radius $\\sqrt{4} = 2$.\n\n$C_2$: complete the square.\n$$(x - 6)^2 - 36 + (y - 8)^2 - 64 + 36 = 0 \\Rightarrow (x - 6)^2 + (y - 8)^2 = 64$$\nCentre $D(6, 8)$, radius $8$.\n\nDistance between centres: $OD = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10$.\n\nSum of radii: $2 + 8 = 10$.\n\nTwo circles cross at two points only when the distance between the centres is **less than** the sum of the radii (and more than the difference). Here the distance **equals** the sum, so the circles meet at exactly one point, on the line $OD$: they touch externally. Sam is wrong.\n\nThe point of contact is $2$ units from $O$ along $OD$, i.e. $\\frac{2}{10}$ of the way from $O$ to $D$:\n$$\\frac{1}{5}(6, 8) = \\left(\\frac{6}{5}, \\frac{8}{5}\\right)$$\n\nCheck on $C_2$: $\\left(\\frac{6}{5} - 6\\right)^2 + \\left(\\frac{8}{5} - 8\\right)^2 = \\frac{576}{25} + \\frac{1024}{25} = \\frac{1600}{25} = 64$ ✓."
+ },
+ {
+  "id": "alg-circle-equations-q15",
+  "topicId": "alg-circle-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "question": "The circle $C$ has equation\n$$x^2 + y^2 - 4x + 2y - 20 = 0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of the centre of $C$ and the radius of $C$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "The point $P(5, 3)$ lies on $C$. Find an equation of the tangent to $C$ at $P$, giving your answer in the form $ax + by = c$, where $a$, $b$ and $c$ are integers.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "The tangent to $C$ at the point $Q(-1, 3)$ has equation $3x - 4y + 15 = 0$. The tangents at $P$ and $Q$ meet at $T$. Find the coordinates of $T$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Hence find the area of the quadrilateral with vertices at the centre of $C$, $P$, $T$ and $Q$.",
+    "marks": 2
+   }
+  ],
+  "marks": 12,
+  "hint": "Complete the square in $x$ and $y$. For (d), the radius meets each tangent at a right angle.",
+  "answer": "(a) Centre $(2, -1)$, radius $5$ (b) $3x + 4y = 27$ (c) $T\\left(2, \\frac{21}{4}\\right)$ (d) $\\frac{75}{4}$",
+  "solution": "**(a)** $(x - 2)^2 - 4 + (y + 1)^2 - 1 - 20 = 0$ **M1**\n$$(x - 2)^2 + (y + 1)^2 = 25$$\nCentre $(2, -1)$ **A1**, radius $5$ **A1**\n\n**(b)** Gradient of radius from $(2, -1)$ to $P(5, 3)$: $\\dfrac{3 - (-1)}{5 - 2} = \\dfrac{4}{3}$ **M1**\n\nTangent gradient $= -\\dfrac{3}{4}$ (negative reciprocal) **M1**\n\n$y - 3 = -\\dfrac{3}{4}(x - 5)$ **M1** $\\Rightarrow 4y - 12 = -3x + 15$\n$$3x + 4y = 27 \\quad \\textbf{A1}$$\n\n**(c)** Solve $3x + 4y = 27$ and $3x - 4y = -15$ simultaneously. **M1**\nAdding: $6x = 12 \\Rightarrow x = 2$. **A1** Then $4y = 27 - 6 = 21 \\Rightarrow y = \\frac{21}{4}$.\n$$T\\left(2, \\frac{21}{4}\\right) \\quad \\textbf{A1}$$\n\n**(d)** Let $A = (2, -1)$ be the centre. Angles $APT$ and $AQT$ are $90°$ (tangent ⟂ radius), so the quadrilateral $APTQ$ is two congruent right-angled triangles $APT$ and $AQT$.\n\n$AT = \\frac{21}{4} - (-1) = \\frac{25}{4}$ (vertical line $x = 2$), so $PT = \\sqrt{\\left(\\frac{25}{4}\\right)^2 - 5^2} = \\sqrt{\\frac{625 - 400}{16}} = \\frac{15}{4}$ **M1**\n$$\\text{Area} = 2 \\times \\frac{1}{2} \\times 5 \\times \\frac{15}{4} = \\frac{75}{4} \\quad \\textbf{A1}$$\n(Alternatively, kite with diagonals $AT = \\frac{25}{4}$ and $PQ = 6$: area $= \\frac{1}{2} \\times \\frac{25}{4} \\times 6 = \\frac{75}{4}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q16",
+  "topicId": "alg-circle-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [],
+  "question": "A circle touches both the $x$-axis and the $y$-axis and passes through the point $(2, 1)$.\n\nFind the equations of the two circles that satisfy these conditions.",
+  "hint": "If a circle with radius $r$ touches both axes and lies in the first quadrant, where must its centre be?",
+  "answer": "$(x - 1)^2 + (y - 1)^2 = 1$ and $(x - 5)^2 + (y - 5)^2 = 25$",
+  "solution": "A circle that touches both axes cannot cross either axis, so it lies entirely within one quadrant. It passes through $(2, 1)$, so it lies in the first quadrant.\n\nTouching the $x$-axis means the centre is $r$ above it; touching the $y$-axis means the centre is $r$ to the right of it. So the centre is $(r, r)$ and the equation is\n$$(x - r)^2 + (y - r)^2 = r^2$$\n\nSubstitute $(2, 1)$:\n$$(2 - r)^2 + (1 - r)^2 = r^2$$\n$$4 - 4r + r^2 + 1 - 2r + r^2 = r^2$$\n$$r^2 - 6r + 5 = 0 \\Rightarrow (r - 1)(r - 5) = 0$$\nSo $r = 1$ or $r = 5$.\n\n$$(x - 1)^2 + (y - 1)^2 = 1 \\qquad (x - 5)^2 + (y - 5)^2 = 25$$\n\nCheck: $(2 - 1)^2 + (1 - 1)^2 = 1$ ✓; $(2 - 5)^2 + (1 - 5)^2 = 9 + 16 = 25$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-circle-equations-q17",
+  "topicId": "alg-circle-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear",
+   "rat-speed-distance-time"
+  ],
+  "misconceptionIds": [],
+  "question": "A phone mast is at $M(4, 3)$ on a map grid, where units are kilometres. Its signal reaches all points within 5 km of the mast. A straight road follows the line $y = x - 6$.\n\n**(a)** Write down the equation of the boundary of the region with signal.\n**(b)** Find the coordinates of the two points where the road enters and leaves the signal region.\n**(c)** A car drives along the road at a constant 60 km/h. For how long does it have signal? Give your answer to the nearest second.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 319 294\" width=\"319\" height=\"294\"><line x1=\"30\" y1=\"268\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"51\" y1=\"268\" x2=\"51\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"72\" y1=\"268\" x2=\"72\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"93\" y1=\"268\" x2=\"93\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"114\" y1=\"268\" x2=\"114\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"135\" y1=\"268\" x2=\"135\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"156\" y1=\"268\" x2=\"156\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"177\" y1=\"268\" x2=\"177\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"198\" y1=\"268\" x2=\"198\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"219\" y1=\"268\" x2=\"219\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"240\" y1=\"268\" x2=\"240\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"261\" y1=\"268\" x2=\"261\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"282\" y1=\"268\" x2=\"282\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"303\" y1=\"268\" x2=\"303\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"268\" x2=\"303\" y2=\"268\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"247\" x2=\"303\" y2=\"247\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"226\" x2=\"303\" y2=\"226\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"205\" x2=\"303\" y2=\"205\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"184\" x2=\"303\" y2=\"184\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"163\" x2=\"303\" y2=\"163\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"142\" x2=\"303\" y2=\"142\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"121\" x2=\"303\" y2=\"121\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"100\" x2=\"303\" y2=\"100\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"79\" x2=\"303\" y2=\"79\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"58\" x2=\"303\" y2=\"58\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"37\" x2=\"303\" y2=\"37\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"303\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"205\" x2=\"311\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M311,205 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"72\" y1=\"268\" x2=\"72\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M72,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"311\" y=\"198\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x (km)</text><text x=\"79\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y (km)</text><line x1=\"30\" y1=\"202\" x2=\"30\" y2=\"208\" stroke=\"currentColor\"/><text x=\"30\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"114\" y1=\"202\" x2=\"114\" y2=\"208\" stroke=\"currentColor\"/><text x=\"114\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"156\" y1=\"202\" x2=\"156\" y2=\"208\" stroke=\"currentColor\"/><text x=\"156\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"198\" y1=\"202\" x2=\"198\" y2=\"208\" stroke=\"currentColor\"/><text x=\"198\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"240\" y1=\"202\" x2=\"240\" y2=\"208\" stroke=\"currentColor\"/><text x=\"240\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"282\" y1=\"202\" x2=\"282\" y2=\"208\" stroke=\"currentColor\"/><text x=\"282\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"69\" y1=\"247\" x2=\"75\" y2=\"247\" stroke=\"currentColor\"/><text x=\"66\" y=\"251\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"69\" y1=\"163\" x2=\"75\" y2=\"163\" stroke=\"currentColor\"/><text x=\"66\" y=\"167\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"69\" y1=\"121\" x2=\"75\" y2=\"121\" stroke=\"currentColor\"/><text x=\"66\" y=\"125\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"69\" y1=\"79\" x2=\"75\" y2=\"79\" stroke=\"currentColor\"/><text x=\"66\" y=\"83\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"69\" y1=\"37\" x2=\"75\" y2=\"37\" stroke=\"currentColor\"/><text x=\"66\" y=\"41\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><text x=\"66\" y=\"219\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><circle cx=\"156\" cy=\"142\" r=\"105\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"135\" y1=\"268\" x2=\"303\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"156\" cy=\"142\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><text x=\"161\" y=\"137\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">M</text><text x=\"299\" y=\"92\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">road</text></svg>",
+  "hint": "Substitute $y = x - 6$ into the circle equation from (a).",
+  "answer": "(a) $(x - 4)^2 + (y - 3)^2 = 25$ (b) $(4, -2)$ and $(9, 3)$ (c) $5\\sqrt{2} \\approx 7.07$ km, so 7 minutes 4 seconds",
+  "solution": "**(a)** Centre $(4, 3)$, radius $5$:\n$$(x - 4)^2 + (y - 3)^2 = 25$$\n\n**(b)** Substitute $y = x - 6$, so $y - 3 = x - 9$:\n$$(x - 4)^2 + (x - 9)^2 = 25$$\n$$x^2 - 8x + 16 + x^2 - 18x + 81 = 25 \\Rightarrow 2x^2 - 26x + 72 = 0 \\Rightarrow x^2 - 13x + 36 = 0$$\n$$(x - 4)(x - 9) = 0 \\Rightarrow x = 4 \\text{ or } 9$$\nPoints $(4, -2)$ and $(9, 3)$.\n\n**(c)** Length of road with signal (the chord):\n$$\\sqrt{(9 - 4)^2 + (3 - (-2))^2} = \\sqrt{50} = 5\\sqrt{2} \\approx 7.071 \\text{ km}$$\n\nTime $= \\dfrac{\\text{distance}}{\\text{speed}} = \\dfrac{7.071}{60}$ h $= 0.11785$ h $= 7.071$ minutes $\\approx 7$ min $4$ s ($0.071 \\times 60 \\approx 4.3$ s)."
+ },
+ {
+  "id": "alg-circle-equations-q18",
+  "topicId": "alg-circle-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant",
+   "geo-circle-theorems",
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The point $T(7, 1)$ lies outside the circle $x^2 + y^2 = 25$, which has centre $O$. Two tangents are drawn from $T$, touching the circle at $A$ and $B$.\n\n**(a)** Show that the length of each tangent from $T$ is $5$.\n**(b)** By writing a tangent as $y - 1 = m(x - 7)$, show that $12m^2 - 7m - 12 = 0$, and hence find the gradients of the two tangents.\n**(c)** Find the coordinates of $A$ and $B$, and prove that $OATB$ is a square.",
+  "hint": "(a) Triangle $OAT$ has a right angle at $A$. (b) Substitute into the circle and set the discriminant to zero.",
+  "answer": "(a) $TA = \\sqrt{50 - 25} = 5$ (b) $m = \\frac{4}{3}$ or $m = -\\frac{3}{4}$ (c) $A(4, -3)$ and $B(3, 4)$ (or the other way round); all four sides are $5$ and the tangents are perpendicular, so $OATB$ is a square",
+  "solution": "**(a)** $OT^2 = 7^2 + 1^2 = 50$. The tangent is perpendicular to the radius, so triangle $OAT$ has a right angle at $A$ with $OA = 5$:\n$$TA^2 = OT^2 - OA^2 = 50 - 25 = 25 \\Rightarrow TA = 5$$\nBy symmetry $TB = 5$ as well.\n\n**(b)** Substitute $y = mx - 7m + 1$ into $x^2 + y^2 = 25$:\n$$(1 + m^2)x^2 + 2m(1 - 7m)x + (1 - 7m)^2 - 25 = 0$$\nFor a tangent, the discriminant is zero:\n$$4m^2(1 - 7m)^2 - 4(1 + m^2)\\left[(1 - 7m)^2 - 25\\right] = 0$$\nDivide by 4 and expand the second product: the $m^2(1 - 7m)^2$ terms cancel, leaving\n$$-(1 - 7m)^2 + 25 + 25m^2 = 0 \\Rightarrow 25 + 25m^2 = 1 - 14m + 49m^2$$\n$$24m^2 - 14m - 24 = 0 \\Rightarrow 12m^2 - 7m - 12 = 0$$\n$$(3m - 4)(4m + 3) = 0 \\Rightarrow m = \\frac{4}{3} \\text{ or } m = -\\frac{3}{4}$$\n\n**(c)** $m = \\frac{4}{3}$: line $4x - 3y = 25$. The point of contact is where the radius (perpendicular, gradient $-\\frac{3}{4}$, so the line $y = -\\frac{3}{4}x$) meets it: $4x + \\frac{9}{4}x = 25 \\Rightarrow x = 4$, $y = -3$. So $A(4, -3)$.\n\n$m = -\\frac{3}{4}$: line $3x + 4y = 25$; radius $y = \\frac{4}{3}x$: $3x + \\frac{16}{3}x = 25 \\Rightarrow x = 3$, $y = 4$. So $B(3, 4)$.\n\nCheck: $16 + 9 = 25$ and $9 + 16 = 25$ ✓.\n\n**Square:** $OA = OB = 5$ (radii) and $TA = TB = 5$ (part (a)), so all four sides are equal: $OATB$ is a rhombus. The product of the tangent gradients is $\\frac{4}{3} \\times \\left(-\\frac{3}{4}\\right) = -1$, so angle $ATB = 90°$. A rhombus with a right angle is a square."
+ }
+]
