@@ -15,3 +15,9 @@
 - Replace any remaining "good soldiers follow orders" (canon catchphrase) in chapters with original wording ("it was the order") — ch20:135, ch21:125; also reword the FFN summary in front_matter/README.
 - ch09:189 Ring Five vs Ring Four — check.
 - Ledger: Bane said "three weeks"; collar recalibration ~day 93; collapse ~day 114; raid ~day 118.
+## Pending for ch21-25 (after that reviewer finishes)
+- ch21:57 Ventress's bruise "from the platform" -> "from the warehouse" (Ahsoka never saw Dovrin).
+- ch21:125 "good soldiers follow orders" -> original wording ("It was the order.").
+- ch22 "kilometre" x2 -> "kilometer".
+- ch24: add arrival mechanics — scow abandoned at a Corellian Run fuel dump; came in on a freighter (e.g., Gatch's Gravel Saint return run) through Berth Nine; Rusk still watching orbital lanes.
+- ch24:31 "two months ago" -> about a month (verify what it refers to).
