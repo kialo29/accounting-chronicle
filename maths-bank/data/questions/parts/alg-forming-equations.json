@@ -1,0 +1,276 @@
+[
+ {
+  "id": "alg-forming-equations-q01",
+  "topicId": "alg-forming-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "I think of a number, multiply it by 3 and then add 6. The answer is 27.\n\nForm an equation and solve it to find my number.",
+  "hint": "Let the number be $n$. Write the steps in order as an expression in $n$, and set it equal to 27.",
+  "answer": "$3n + 6 = 27$, so the number is 7.",
+  "solution": "Let the number be $n$.\n\nMultiply by 3: $3n$. Then add 6: $3n + 6$.\n$$3n + 6 = 27$$\n$$3n = 21$$\n$$n = 7$$\n\nCheck: $7 \\times 3 = 21$, $21 + 6 = 27$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q02",
+  "topicId": "alg-forming-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "I think of a number, **add 6 and then** multiply by 3. The answer is 27.\n\nForm an equation and solve it to find my number.",
+  "hint": "This time the adding happens first. How do you show that the whole of $n + 6$ is multiplied by 3?",
+  "answer": "$3(n + 6) = 27$, so the number is 3.",
+  "solution": "**What changed:** the order of the operations. Adding 6 now happens before multiplying, so the whole of $n + 6$ is multiplied by 3, which needs a bracket.\n$$3(n + 6) = 27$$\nDivide both sides by 3:\n$$n + 6 = 9$$\n$$n = 3$$\n\nCheck: $3 + 6 = 9$, $9 \\times 3 = 27$. ✓\n\n**Effect:** the 6 is now also multiplied by 3, so the number is smaller (3 instead of 7).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q03",
+  "topicId": "alg-forming-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "I think of a number, **subtract** 6 and then multiply by 3. The answer is 27.\n\nForm an equation and solve it to find my number.",
+  "hint": "Same structure as before, but with $n - 6$ in the bracket.",
+  "answer": "$3(n - 6) = 27$, so the number is 15.",
+  "solution": "**What changed:** add 6 became subtract 6.\n$$3(n - 6) = 27$$\n$$n - 6 = 9$$\n$$n = 15$$\n\nCheck: $15 - 6 = 9$, $9 \\times 3 = 27$. ✓\n\n**Effect:** the number is now $9 + 6 = 15$ instead of $9 - 6 = 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q04",
+  "topicId": "alg-forming-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "I think of a number, multiply it by 3 and then subtract 6. The answer is 10 more than the number I first thought of.\n\nForm an equation and solve it to find my number.",
+  "hint": "Now the right-hand side is not a fixed number: \"10 more than my number\" is $n + 10$. Collect the $n$ terms on one side.",
+  "answer": "$3n - 6 = n + 10$, so the number is 8.",
+  "solution": "**What changed:** the answer is now described in terms of the number itself, so the unknown appears on both sides.\n$$3n - 6 = n + 10$$\nSubtract $n$ from both sides:\n$$2n - 6 = 10$$\nAdd 6:\n$$2n = 16$$\n$$n = 8$$\n\nCheck: $3 \\times 8 - 6 = 18$ and $8 + 10 = 18$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q05",
+  "topicId": "alg-forming-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$APB$ is a straight line. Three angles at $P$ are shown, in degrees. The diagram is not drawn to scale.\n\nFind the size of the largest of the three angles.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" width=\"340\" height=\"200\"><line x1=\"20\" y1=\"170\" x2=\"320\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"170\" x2=\"247.1\" y2=\"78.1\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"170\" x2=\"138.9\" y2=\"54.1\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"232\" y=\"148\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">(x + 20)°</text><text x=\"185\" y=\"86\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(2x − 5)°</text><text x=\"107\" y=\"133\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">(3x + 15)°</text><text x=\"170\" y=\"190\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text><text x=\"30\" y=\"190\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"310\" y=\"190\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text></svg>",
+  "hint": "Angles on a straight line add up to $180^\\circ$. Once you have found $x$, substitute it back: the question asks for an angle, not $x$.",
+  "answer": "$90^\\circ$",
+  "solution": "Angles on a straight line sum to $180^\\circ$:\n$$(x + 20) + (2x - 5) + (3x + 15) = 180$$\n$$6x + 30 = 180$$\n$$6x = 150$$\n$$x = 25$$\n\nNow find each angle:\n* $x + 20 = 45^\\circ$\n* $2x - 5 = 45^\\circ$\n* $3x + 15 = 90^\\circ$\n\nCheck: $45 + 45 + 90 = 180$. ✓\n\nThe largest angle is $90^\\circ$. (Not $25^\\circ$: that is the value of $x$, not an angle in the diagram.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q06",
+  "topicId": "alg-forming-equations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A sweet shop sold 150 lollies and toffees in total on Saturday. It sold 4 times as many lollies as toffees.\n\nRavi uses $l$ for the number of lollies and $t$ for the number of toffees. His working is shown below.\n\n$$4l = t$$\n$$l + t = 150$$\n$$l + 4l = 150$$\n$$5l = 150, \\quad l = 30$$\n\"The shop sold 30 lollies.\"\n\nFind Ravi's mistake, explain it and work out the correct number of lollies.",
+  "hint": "Ravi's answer says there were 30 lollies and 120 toffees. Does that fit \"4 times as many lollies as toffees\"? Test the statement with simple numbers.",
+  "answer": "The first line should be $l = 4t$. Then $5t = 150$, $t = 30$, so 120 lollies.",
+  "solution": "**Mistake:** the first line, $4l = t$. This says the number of toffees is 4 times the number of lollies, which is the wrong way round.\n\nTest with numbers: if there were 40 lollies and 10 toffees, there would be 4 times as many lollies as toffees, and $40 = 4 \\times 10$, i.e. $l = 4t$. To make the groups equal you multiply the **smaller** group (toffees) by 4.\n\nRavi's answer (30 lollies, 120 toffees) gives more toffees than lollies, which contradicts the question.\n\n**Correct working:**\n$$l = 4t$$\n$$4t + t = 150$$\n$$5t = 150 \\quad\\Rightarrow\\quad t = 30$$\n$$l = 4 \\times 30 = 120$$\n\nThe shop sold **120 lollies** (and 30 toffees). Check: $120 + 30 = 150$ ✓ and $120 = 4 \\times 30$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q07",
+  "topicId": "alg-forming-equations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A rectangular vegetable plot is $(2x + 3)$ m long and $(x - 1)$ m wide. Jo uses exactly 34 m of edging to go all the way round the plot.\n\nFind the area of the vegetable plot.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 170\" width=\"300\" height=\"170\"><rect x=\"60\" y=\"40\" width=\"190\" height=\"90\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"155\" y=\"30\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(2x + 3) m</text><text x=\"52\" y=\"90\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">(x − 1) m</text></svg>",
+  "hint": "The edging goes round the perimeter: add all four sides. Form an equation, solve it for $x$, then find the length and width.",
+  "answer": "$52 \\text{ m}^2$",
+  "solution": "Perimeter $= 2(2x + 3) + 2(x - 1) = 4x + 6 + 2x - 2 = 6x + 4$.\n$$6x + 4 = 34$$\n$$6x = 30$$\n$$x = 5$$\n\nLength $= 2(5) + 3 = 13$ m, width $= 5 - 1 = 4$ m.\n\nCheck: $2(13 + 4) = 34$ m. ✓\n\nArea $= 13 \\times 4 = 52 \\text{ m}^2$.\n\n(The question asks for the area, so $x = 5$ is not the final answer.)",
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q08",
+  "topicId": "alg-forming-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The sum of three consecutive odd numbers is 147. Grace tries to find the numbers. Her working is shown below.\n\n\"Let the numbers be $n$, $n + 1$ and $n + 2$.\"\n$$n + (n + 1) + (n + 2) = 147$$\n$$3n + 3 = 147$$\n$$n = 48$$\n\"The numbers are 48, 49 and 50.\"\n\n(a) Explain what is wrong with Grace's method.\n\n(b) Find the three odd numbers.",
+  "hint": "List three consecutive odd numbers, e.g. 7, 9, 11. What is the difference between each one and the next?",
+  "answer": "(a) Consecutive odd numbers differ by 2, so they should be $n$, $n + 2$, $n + 4$; her numbers are not all odd. (b) 47, 49, 51",
+  "solution": "(a) Grace has written three consecutive **integers**. Consecutive odd numbers (like 7, 9, 11) go up in steps of 2, so they should be $n$, $n + 2$, $n + 4$. Her answer contains 48 and 50, which are even, so it cannot be right.\n\n(b)\n$$n + (n + 2) + (n + 4) = 147$$\n$$3n + 6 = 147$$\n$$3n = 141$$\n$$n = 47$$\n\nThe numbers are **47, 49 and 51**.\n\nCheck: $47 + 49 + 51 = 147$ ✓, and all three are odd.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q09",
+  "topicId": "alg-forming-equations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A mother is 28 years older than her daughter. In 4 years' time, the mother will be 3 times as old as her daughter.\n\nHow old is each of them now?",
+  "hint": "Let the daughter's age now be $d$. Write both ages in 4 years' time: **both** people get 4 years older. Then \"3 times as old\" needs a bracket.",
+  "answer": "Daughter 10 years old, mother 38 years old.",
+  "solution": "Let the daughter be $d$ years old now. The mother is $d + 28$.\n\nIn 4 years: daughter $d + 4$, mother $d + 28 + 4 = d + 32$.\n\nThe mother will be 3 times as old as the daughter, so the **whole** future age of the daughter is multiplied by 3:\n$$d + 32 = 3(d + 4)$$\n$$d + 32 = 3d + 12$$\n$$20 = 2d$$\n$$d = 10$$\n\nThe daughter is **10** and the mother is **38**.\n\nCheck: in 4 years they will be 14 and 42, and $42 = 3 \\times 14$ ✓. The age gap is $38 - 10 = 28$ ✓.\n\n(Writing $d + 32 = 3d + 4$ would forget that the 4 years is part of what gets tripled.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q10",
+  "topicId": "alg-forming-equations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Two gyms charge as follows.\n\n| Gym | Joining fee | Monthly fee |\n|---|---|---|\n| FitZone | £25 | £18 |\n| PowerHouse | none | £23 |\n\nAfter how many months will the total amount paid be the same at both gyms?",
+  "hint": "Let $m$ be the number of months. Write the total cost at each gym in terms of $m$ and set them equal.",
+  "answer": "5 months",
+  "solution": "Let $m$ be the number of months.\n\nFitZone total: $25 + 18m$ pounds. PowerHouse total: $23m$ pounds.\n$$25 + 18m = 23m$$\nSubtract $18m$ from both sides:\n$$25 = 5m$$\n$$m = 5$$\n\nAfter **5 months** the totals are the same.\n\nCheck: FitZone $25 + 90 = £115$; PowerHouse $23 \\times 5 = £115$. ✓\n\n(After that, FitZone is cheaper, because its monthly fee is lower.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q11",
+  "topicId": "alg-forming-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A school sells tickets for its summer show. Adult tickets cost £12 and child tickets cost £7. Three times as many child tickets as adult tickets were sold. The total money taken was £1089.\n\nHow many tickets were sold altogether?",
+  "hint": "Let $a$ be the number of adult tickets. Is the number of child tickets $3a$ or $\\frac{a}{3}$? Test with small numbers.",
+  "answer": "132 tickets (33 adult, 99 child)",
+  "solution": "Let $a$ be the number of adult tickets. There are three times as many child tickets, so there are $3a$ child tickets (e.g. 10 adults would mean 30 children).\n\nMoney taken:\n$$12a + 7(3a) = 1089$$\n$$12a + 21a = 1089$$\n$$33a = 1089$$\n$$a = 33$$\n\nAdult tickets: 33. Child tickets: $3 \\times 33 = 99$.\n\nCheck: $12 \\times 33 + 7 \\times 99 = 396 + 693 = 1089$. ✓\n\nTotal tickets $= 33 + 99 = 132$.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-forming-equations-q12",
+  "topicId": "alg-forming-equations",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "The interior angles of a pentagon are\n$$x^\\circ, \\quad 2x^\\circ, \\quad (2x + 10)^\\circ, \\quad (3x - 20)^\\circ \\quad \\text{and} \\quad 110^\\circ$$\n\n(a) Find the value of $x$.\n\n(b) Find the size of the largest exterior angle of the pentagon.",
+  "hint": "The interior angles of an $n$-sided polygon add up to $(n - 2) \\times 180^\\circ$. Exterior angle $= 180^\\circ -$ interior angle, so the largest exterior angle is next to the smallest interior angle.",
+  "answer": "(a) $x = 55$ (b) $125^\\circ$",
+  "solution": "(a) Sum of interior angles of a pentagon $= (5 - 2) \\times 180 = 540^\\circ$.\n$$x + 2x + (2x + 10) + (3x - 20) + 110 = 540$$\n$$8x + 100 = 540$$\n$$8x = 440$$\n$$x = 55$$\n\n(b) The interior angles are $55^\\circ$, $110^\\circ$, $120^\\circ$, $145^\\circ$ and $110^\\circ$ (check: total $540^\\circ$ ✓).\n\nThe largest exterior angle is at the smallest interior angle, $55^\\circ$:\n$$180 - 55 = 125^\\circ$$\n\nCheck: the exterior angles $125 + 70 + 60 + 35 + 70 = 360^\\circ$. ✓",
+  "linkedTopicIds": [
+   "geo-polygon-angles"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q13",
+  "topicId": "alg-forming-equations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A square has sides of length $(x + 4)$ cm. A rectangle has length $(x + 10)$ cm and width $(x + 1)$ cm. The square and the rectangle have the same area.\n\nWork out how much longer the perimeter of the rectangle is than the perimeter of the square.",
+  "hint": "Form an equation by setting the two areas equal. Expand both sides: the $x^2$ terms cancel, leaving a linear equation.",
+  "answer": "6 cm",
+  "solution": "Areas are equal:\n$$(x + 4)^2 = (x + 10)(x + 1)$$\nExpand both sides:\n$$x^2 + 8x + 16 = x^2 + 11x + 10$$\nSubtract $x^2$ from both sides (so the equation is linear):\n$$8x + 16 = 11x + 10$$\n$$6 = 3x$$\n$$x = 2$$\n\nSquare: side 6 cm, area $36 \\text{ cm}^2$, perimeter $24$ cm.\nRectangle: 12 cm by 3 cm, area $36 \\text{ cm}^2$ ✓, perimeter $2(12 + 3) = 30$ cm.\n\nThe rectangle's perimeter is $30 - 24 = 6$ cm longer.",
+  "linkedTopicIds": [
+   "alg-expand-double-triple",
+   "geo-perimeter-area"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q14",
+  "topicId": "alg-forming-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": false,
+  "question": "$ABC$ is a triangle. $ACD$ is a straight line.\n\nAngle $BAC = (x + 15)^\\circ$, angle $ABC = 2x^\\circ$ and angle $BCD = (5x - 33)^\\circ$.\n\nThe diagram is not drawn accurately.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\"><line x1=\"40\" y1=\"210\" x2=\"320\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"40,210 227.98,57.78 220,210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"118\" y=\"198\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(x + 15)°</text><text x=\"210\" y=\"97\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2x°</text><text x=\"236\" y=\"194\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">(5x − 33)°</text><text x=\"34\" y=\"228\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"220\" y=\"228\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><text x=\"320\" y=\"228\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text><text x=\"234\" y=\"48\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $x = 24$. Give a reason for each stage of your working.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the size of angle $ACB$.",
+    "marks": 2
+   }
+  ],
+  "hint": "The exterior angle of a triangle equals the sum of the two interior opposite angles. (Or: angles in a triangle add to $180^\\circ$ and angles on a straight line add to $180^\\circ$.)",
+  "answer": "(a) shown (b) $93^\\circ$",
+  "solution": "(a) The exterior angle of a triangle is equal to the sum of the interior opposite angles:\n$$5x - 33 = (x + 15) + 2x$$ M1 (forming a correct equation)\n$$5x - 33 = 3x + 15$$\n$$2x = 48$$ M1 (correct method to isolate $x$)\n$$x = 24$$ A1 with reason: \"exterior angle of a triangle equals the sum of the interior opposite angles\"\n\n(Alternative: angle $ACB = 180 - (5x - 33) = 213 - 5x$ (angles on a straight line), then $(x + 15) + 2x + (213 - 5x) = 180$ (angles in a triangle), so $228 - 2x = 180$, $x = 24$.)\n\n(b) Angle $BCD = 5(24) - 33 = 87^\\circ$. M1\nAngles on a straight line add up to $180^\\circ$, so angle $ACB = 180 - 87 = 93^\\circ$. A1\n\nCheck: angle $BAC = 39^\\circ$, angle $ABC = 48^\\circ$, and $39 + 48 + 93 = 180$. ✓",
+  "linkedTopicIds": [
+   "geo-angle-facts"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q15",
+  "topicId": "alg-forming-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Ella says, \"The sum of any three consecutive integers is always a multiple of 3.\" Is Ella correct? Prove your answer using algebra.\n\n(b) Prove that the sum of any four consecutive integers is never a multiple of 4.",
+  "hint": "Write the integers as $n$, $n + 1$, $n + 2$, … and simplify the sum. Then try to write it as $3 \\times (\\ldots)$ or $4 \\times (\\ldots) + $ something.",
+  "answer": "(a) Yes: $n + (n + 1) + (n + 2) = 3(n + 1)$. (b) $4n + 6 = 4(n + 1) + 2$, which always leaves remainder 2 when divided by 4.",
+  "solution": "(a) Let the integers be $n$, $n + 1$, $n + 2$, where $n$ is an integer.\n$$n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1)$$\n$n + 1$ is an integer, so the sum is a multiple of 3. **Ella is correct.** (In fact the sum is 3 times the middle number.)\n\n(b) Let the integers be $n$, $n + 1$, $n + 2$, $n + 3$.\n$$n + (n + 1) + (n + 2) + (n + 3) = 4n + 6 = 4(n + 1) + 2$$\n$4(n + 1)$ is a multiple of 4, so the sum is always 2 more than a multiple of 4. It leaves a remainder of 2 when divided by 4, so it is never a multiple of 4. $\\blacksquare$\n\nExample: $5 + 6 + 7 + 8 = 26 = 4 \\times 6 + 2$.",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q16",
+  "topicId": "alg-forming-equations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The ratio of Ana's age to Ben's age is $5 : 3$.\n\nIn 8 years' time, the ratio of Ana's age to Ben's age will be $3 : 2$.\n\nWork out Ana's age now.",
+  "hint": "Write the ages now as $5k$ and $3k$. In 8 years, **both** ages increase by 8. A ratio $p : q = 3 : 2$ means $2p = 3q$.",
+  "answer": "40 years old",
+  "solution": "Let Ana's age be $5k$ and Ben's age be $3k$.\n\nIn 8 years: Ana $5k + 8$, Ben $3k + 8$ (both get 8 years older).\n$$\\frac{5k + 8}{3k + 8} = \\frac{3}{2}$$\nCross-multiply:\n$$2(5k + 8) = 3(3k + 8)$$\n$$10k + 16 = 9k + 24$$\n$$k = 8$$\n\nAna is $5 \\times 8 = 40$ and Ben is $3 \\times 8 = 24$.\n\nCheck: in 8 years they will be 48 and 32, and $48 : 32 = 3 : 2$. ✓\n\nAna is **40 years old**.",
+  "linkedTopicIds": [
+   "rat-ratio-sharing"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q17",
+  "topicId": "alg-forming-equations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The minute hand of a clock turns through $360^\\circ$ every 60 minutes, and the hour hand turns through $30^\\circ$ every 60 minutes.\n\nAt 4 o'clock the hour hand is at $120^\\circ$ (measured clockwise from 12) and the minute hand is at $0^\\circ$.\n\nAt what time, between 4 o'clock and 5 o'clock, are the two hands exactly on top of each other? Give your answer to the nearest second.",
+  "hint": "Work out how many degrees each hand turns per minute. Let $m$ be the number of minutes after 4 o'clock and write the position of each hand in terms of $m$.",
+  "answer": "$21\\frac{9}{11}$ minutes past 4, i.e. about 4:21:49",
+  "solution": "Rates: minute hand $\\frac{360}{60} = 6^\\circ$ per minute; hour hand $\\frac{30}{60} = 0.5^\\circ$ per minute.\n\nLet $m$ be the number of minutes after 4 o'clock.\n* Minute hand position: $6m$ degrees.\n* Hour hand position: $120 + 0.5m$ degrees.\n\nThe hands coincide when the positions are equal:\n$$6m = 120 + 0.5m$$\n$$5.5m = 120$$\n$$m = \\frac{120}{5.5} = \\frac{240}{11} = 21\\frac{9}{11}$$\n\n$\\frac{9}{11}$ of a minute $= \\frac{9}{11} \\times 60 = 49.09\\ldots$ seconds.\n\nThe hands coincide at about **4:21:49** (21 minutes 49 seconds past 4).\n\nCheck: minute hand $6 \\times \\frac{240}{11} = \\frac{1440}{11} \\approx 130.9^\\circ$; hour hand $120 + \\frac{120}{11} = \\frac{1440}{11} \\approx 130.9^\\circ$. ✓ This is before 5 o'clock, as required.",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ]
+ },
+ {
+  "id": "alg-forming-equations-q18",
+  "topicId": "alg-forming-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A bag contains only red and blue counters. The probability of picking a red counter is $\\frac{2}{7}$.\n\nSix more red counters are added to the bag. The probability of picking a red counter is now $\\frac{3}{8}$.\n\nHow many blue counters are in the bag?",
+  "hint": "Let there be $r$ red and $b$ blue counters. The first probability gives a link between $r$ and $b$, so you can write $b$ in terms of $r$. Then form an equation from the second probability.",
+  "answer": "30 blue counters",
+  "solution": "Let there be $r$ red and $b$ blue counters at the start.\n\n$$\\frac{r}{r + b} = \\frac{2}{7} \\quad\\Rightarrow\\quad 7r = 2r + 2b \\quad\\Rightarrow\\quad 5r = 2b \\quad\\Rightarrow\\quad b = \\frac{5r}{2}$$\n\nAfter adding 6 red counters there are $r + 6$ red counters and $r + b + 6$ counters in total:\n$$\\frac{r + 6}{r + b + 6} = \\frac{3}{8}$$\n$$8(r + 6) = 3(r + b + 6)$$\n$$8r + 48 = 3r + 3b + 18$$\n$$5r + 30 = 3b$$\n\nSubstitute $b = \\frac{5r}{2}$:\n$$5r + 30 = \\frac{15r}{2}$$\nMultiply every term by 2:\n$$10r + 60 = 15r \\quad\\Rightarrow\\quad r = 12$$\n$$b = \\frac{5 \\times 12}{2} = 30$$\n\nThere are **30 blue counters**.\n\nCheck: $\\frac{12}{42} = \\frac{2}{7}$ ✓ and $\\frac{18}{48} = \\frac{3}{8}$ ✓.",
+  "linkedTopicIds": [
+   "prob-basic-probability"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

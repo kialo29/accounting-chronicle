@@ -1,0 +1,289 @@
+[
+ {
+  "id": "geo-3d-pythagoras-trig-q01",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cuboid measures 3 cm by 4 cm by 12 cm.\n\nWork out the length of the space diagonal (the longest straight line from one corner to the opposite corner, passing through the inside of the cuboid).",
+  "hint": "For a cuboid $a \\times b \\times c$ the space diagonal is $d = \\sqrt{a^2 + b^2 + c^2}$. Square each dimension first.",
+  "answer": "13 cm",
+  "solution": "Base diagonal (Pythagoras in the 3 by 4 base):\n$$\\sqrt{3^2 + 4^2} = \\sqrt{25} = 5 \\text{ cm}$$\n\nThe space diagonal is the hypotenuse of a vertical right-angled triangle with legs 5 cm and 12 cm:\n$$d = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13 \\text{ cm}$$\n\nIn one step: $d = \\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$ cm.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q02",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cuboid has a base measuring 3 cm by 4 cm. Its space diagonal is 13 cm long.\n\nWork out the height of the cuboid.",
+  "hint": "Use $d^2 = a^2 + b^2 + c^2$ with $d = 13$, and solve for the missing dimension.",
+  "answer": "12 cm",
+  "solution": "What changed from the previous question: the space diagonal is now given and the height is unknown, so we rearrange instead of substituting.\n\n$$13^2 = 3^2 + 4^2 + h^2$$\n\n$$169 = 25 + h^2$$\n\n$$h^2 = 144 \\quad\\Rightarrow\\quad h = 12 \\text{ cm}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q03",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cuboid measures 3 cm by 4 cm by 10 cm.\n\nWork out the length of its space diagonal. Give your answer\n**(a)** as a surd in its simplest form,\n**(b)** to 3 significant figures.",
+  "hint": "Same method as before: $\\sqrt{a^2+b^2+c^2}$. Then look for a square factor of the number under the root.",
+  "answer": "(a) $5\\sqrt{5}$ cm (b) 11.2 cm",
+  "solution": "What changed: the height is 10 cm instead of 12 cm, so the answer is no longer a whole number.\n\n$$d = \\sqrt{3^2 + 4^2 + 10^2} = \\sqrt{9 + 16 + 100} = \\sqrt{125}$$\n\n**(a)** $\\sqrt{125} = \\sqrt{25 \\times 5} = 5\\sqrt{5}$ cm\n\n**(b)** $5\\sqrt{5} = 11.180\\ldots \\approx 11.2$ cm",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q04",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A cube has edges of length 10 cm.\n\nFind the exact length of a space diagonal of the cube.",
+  "hint": "A cube is a cuboid with all three dimensions equal.",
+  "answer": "$10\\sqrt{3}$ cm (about 17.3 cm)",
+  "solution": "What changed: all three dimensions are now equal, so the three squares are identical.\n\n$$d = \\sqrt{10^2 + 10^2 + 10^2} = \\sqrt{300} = \\sqrt{100 \\times 3} = 10\\sqrt{3} \\text{ cm}$$\n\nIn general a cube of edge $s$ has space diagonal $\\sqrt{3s^2} = s\\sqrt{3}$.\n\n$10\\sqrt{3} \\approx 17.3$ cm.",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q05",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The diagram shows a cuboid $ABCDEFGH$ with $AB = 12$ cm, $BC = 5$ cm and $CG = 7$ cm. (Not drawn to scale.)\n\n**(a)** Work out the length $AC$.\n**(b)** Work out the size of the angle between the diagonal $AG$ and the base $ABCD$. Give your answer to 1 decimal place.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"40\" y1=\"225\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"225\" x2=\"267.6\" y2=\"180.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"267.6\" y1=\"180.7\" x2=\"267.6\" y2=\"82.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"267.6\" y1=\"82.7\" x2=\"87.6\" y2=\"82.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"87.6\" y1=\"82.7\" x2=\"40\" y2=\"127\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"127\" x2=\"40\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"127\" x2=\"220\" y2=\"127\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"127\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"127\" x2=\"267.6\" y2=\"82.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"225\" x2=\"87.6\" y2=\"180.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"87.6\" y1=\"180.7\" x2=\"267.6\" y2=\"180.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"87.6\" y1=\"180.7\" x2=\"87.6\" y2=\"82.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"28\" y=\"239\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"224\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"275.6\" y=\"190.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"79.6\" y=\"174.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"26\" y=\"127\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"216\" y=\"121\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"275.6\" y=\"78.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text><text x=\"79.6\" y=\"74.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><line x1=\"40\" y1=\"225\" x2=\"267.6\" y2=\"82.7\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"40\" y1=\"225\" x2=\"267.6\" y2=\"180.7\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"130\" y=\"245\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12 cm</text><text x=\"253.8\" y=\"214.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">5 cm</text><text x=\"275.6\" y=\"136.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">7 cm</text></svg>",
+  "hint": "$G$ is directly above $C$, so triangle $ACG$ has a right angle at $C$. The angle you want is at $A$, the point where $AG$ meets the base.",
+  "answer": "(a) 13 cm (b) $28.3^\\circ$",
+  "solution": "**(a)** Triangle $ABC$ lies in the base with a right angle at $B$:\n$$AC = \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13 \\text{ cm}$$\n\n**(b)** $G$ is vertically above $C$, so the projection of $AG$ onto the base is $AC$. The required angle is $\\angle GAC$, in triangle $ACG$ (right angle at $C$):\n$$\\tan \\angle GAC = \\frac{\\text{opp}}{\\text{adj}} = \\frac{CG}{AC} = \\frac{7}{13}$$\n\n$$\\angle GAC = \\tan^{-1}\\left(\\frac{7}{13}\\right) = 28.30\\ldots^\\circ \\approx 28.3^\\circ$$\n\n(The angle at $G$, $61.7^\\circ$, is the angle between $AG$ and the vertical edge $CG$, not the angle with the base.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q06",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "Ellie wants to pack a folded camera tripod that is 97 cm long into a cardboard box. The inside of the box measures 80 cm by 50 cm by 30 cm.\n\nWill the tripod fit in the box if it is placed along the space diagonal? Show your working.",
+  "hint": "The longest straight object that fits is the length of the space diagonal $\\sqrt{a^2+b^2+c^2}$.",
+  "answer": "Yes. The space diagonal is about 99.0 cm, which is longer than 97 cm.",
+  "solution": "$$d = \\sqrt{80^2 + 50^2 + 30^2} = \\sqrt{6400 + 2500 + 900} = \\sqrt{9800} = 98.99\\ldots \\text{ cm}$$\n\n$98.99\\ldots \\text{ cm} > 97 \\text{ cm}$, so the tripod will fit (just) along the space diagonal.\n\nNote that it would not fit along the longest edge (80 cm) or even the diagonal of the base, $\\sqrt{80^2 + 50^2} = 94.3$ cm.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q07",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a cuboid with $AB = 12$ cm, $BC = 9$ cm and $CG = 8$ cm. (Not drawn to scale.)\n\nLeo is asked to find the length of the diagonal $AG$. His working is shown below.\n\n$$AG = \\sqrt{12^2 + 9^2} = \\sqrt{144 + 81} = \\sqrt{225} = 15 \\text{ cm}$$\n\nIdentify Leo's mistake, explain it, and find the correct length of $AG$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"40\" y1=\"225\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"225\" x2=\"292.4\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"292.4\" y1=\"157.5\" x2=\"292.4\" y2=\"53.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"292.4\" y1=\"53.5\" x2=\"112.4\" y2=\"53.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"112.4\" y1=\"53.5\" x2=\"40\" y2=\"121\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"121\" x2=\"40\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"121\" x2=\"220\" y2=\"121\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"121\" x2=\"220\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"121\" x2=\"292.4\" y2=\"53.5\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"225\" x2=\"112.4\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"112.4\" y1=\"157.5\" x2=\"292.4\" y2=\"157.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"112.4\" y1=\"157.5\" x2=\"112.4\" y2=\"53.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"28\" y=\"239\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"224\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"300.4\" y=\"167.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"104.4\" y=\"151.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"26\" y=\"121\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"216\" y=\"115\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"300.4\" y=\"49.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text><text x=\"104.4\" y=\"45.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><line x1=\"40\" y1=\"225\" x2=\"292.4\" y2=\"53.5\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"130\" y=\"245\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12 cm</text><text x=\"266.2\" y=\"203.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">9 cm</text><text x=\"300.4\" y=\"110.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">8 cm</text></svg>",
+  "hint": "Which line has Leo actually found? Does it go from the bottom of the cuboid to the top?",
+  "answer": "Leo has found $AC$, the base diagonal, using only two dimensions. $AG = 17$ cm.",
+  "solution": "**Mistake:** Leo used only the two base dimensions. $\\sqrt{12^2 + 9^2} = 15$ is the length of the **base diagonal** $AC$, which lies flat on the bottom face. $AG$ also rises 8 cm, so the height must be included.\n\n**Correction:** This is stage one. Stage two uses triangle $ACG$, which has a right angle at $C$:\n$$AG = \\sqrt{AC^2 + CG^2} = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17 \\text{ cm}$$\n\nEquivalently $AG = \\sqrt{12^2 + 9^2 + 8^2} = \\sqrt{289} = 17$ cm.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q08",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a cuboid with $AB = 15$ cm, $BC = 8$ cm and $CG = 6$ cm. (Not drawn to scale.)\n\nPriya is asked to find the angle between the diagonal $AG$ and the base $ABCD$. Her working is shown below.\n\n$$\\tan\\theta = \\frac{6}{15} = 0.4$$\n$$\\theta = \\tan^{-1}(0.4) = 21.8^\\circ$$\n\n**(a)** Explain the mistake Priya has made.\n**(b)** Find the correct angle, to 1 decimal place.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"30\" y1=\"215\" x2=\"225\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225\" y1=\"215\" x2=\"295.2\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"295.2\" y1=\"149.6\" x2=\"295.2\" y2=\"65.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"295.2\" y1=\"65.6\" x2=\"100.2\" y2=\"65.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100.2\" y1=\"65.6\" x2=\"30\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"131\" x2=\"30\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"131\" x2=\"225\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225\" y1=\"131\" x2=\"225\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"225\" y1=\"131\" x2=\"295.2\" y2=\"65.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"215\" x2=\"100.2\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"100.2\" y1=\"149.6\" x2=\"295.2\" y2=\"149.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"100.2\" y1=\"149.6\" x2=\"100.2\" y2=\"65.6\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"18\" y=\"229\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"229\" y=\"231\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"303.2\" y=\"159.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"92.2\" y=\"143.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"16\" y=\"131\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"221\" y=\"125\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"303.2\" y=\"61.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text><text x=\"92.2\" y=\"57.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><line x1=\"30\" y1=\"215\" x2=\"295.2\" y2=\"65.6\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"127.5\" y=\"235\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">15 cm</text><text x=\"270.1\" y=\"194.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">8 cm</text><text x=\"303.2\" y=\"112.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">6 cm</text></svg>",
+  "hint": "Where is the point on the base that is directly below $G$? The angle with a plane is measured to the line's projection on that plane.",
+  "answer": "(a) She used the edge $AB$ instead of the projection $AC$ of $AG$ onto the base. (b) $19.4^\\circ$",
+  "solution": "**(a)** The angle between a line and a plane is measured between the line and its **projection** onto the plane. $G$ is directly above $C$, so the projection of $AG$ is $AC$, not the edge $AB$. Priya's triangle (with sides 6 and 15) is not a real right-angled triangle in the cuboid, because $G$ is not above $B$.\n\n**(b)** Base diagonal:\n$$AC = \\sqrt{15^2 + 8^2} = \\sqrt{289} = 17 \\text{ cm}$$\n\nIn triangle $ACG$ (right angle at $C$):\n$$\\tan \\angle GAC = \\frac{6}{17}$$\n\n$$\\angle GAC = \\tan^{-1}\\left(\\frac{6}{17}\\right) = 19.44\\ldots^\\circ \\approx 19.4^\\circ$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q09",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a pyramid $ABCDE$ with a square base of side 8 cm. The apex $E$ is vertically above $M$, the centre of the base. Each sloping edge is 9 cm long. (Not drawn to scale.)\n\nOmar works out the height $EM$ like this:\n\n$$\\text{half the base} = 8 \\div 2 = 4$$\n$$EM = \\sqrt{9^2 - 4^2} = \\sqrt{65} \\text{ cm}$$\n\nIdentify Omar's mistake and find the correct height of the pyramid.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 275\" width=\"340\" height=\"275\"><line x1=\"60\" y1=\"250\" x2=\"236\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"236\" y1=\"250\" x2=\"341.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"200.8\" y1=\"59.9\" x2=\"60\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"200.8\" y1=\"59.9\" x2=\"236\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"200.8\" y1=\"59.9\" x2=\"341.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"250\" x2=\"165.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"165.6\" y1=\"177.7\" x2=\"341.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"200.8\" y1=\"59.9\" x2=\"165.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"200.8\" y1=\"59.9\" x2=\"200.8\" y2=\"213.9\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"60\" y1=\"250\" x2=\"341.6\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"200.8\" cy=\"213.9\" r=\"2.5\" fill=\"currentColor\"/><text x=\"208.8\" y=\"227.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">M</text><polyline points=\"200.8,205.9 208.6,203.9 208.6,211.9\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"48\" y=\"264\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"246\" y=\"264\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"351.6\" y=\"183.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"155.6\" y=\"173.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"200.8\" y=\"49.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"148\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 cm</text><text x=\"228.4\" y=\"154.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">9 cm</text></svg>",
+  "hint": "The sloping edge $EC$ goes down to a corner. How far is the corner $C$ from the centre $M$?",
+  "answer": "He used half the side (4 cm) instead of half the diagonal, $MC = 4\\sqrt{2}$ cm. Height $EM = 7$ cm.",
+  "solution": "**Mistake:** The right-angled triangle containing the sloping edge $EC$ is $EMC$, with the right angle at $M$. Its horizontal leg is $MC$, the distance from the centre to a **corner**, which is half the diagonal, not half the side. (Half the side, 4 cm, is the distance from $M$ to the midpoint of an edge, which would give the slant height of a face, not this.)\n\n**Correction:**\n$$AC = \\sqrt{8^2 + 8^2} = \\sqrt{128} = 8\\sqrt{2}, \\qquad MC = 4\\sqrt{2} \\text{ cm}$$\n\n$$EM^2 = EC^2 - MC^2 = 81 - (4\\sqrt{2})^2 = 81 - 32 = 49$$\n\n$$EM = 7 \\text{ cm}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q10",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Mia says: \"The angle between a space diagonal of a cube and its base is the same, whatever the size of the cube.\"\n\n**(a)** Show that Mia is correct, and find the angle to 1 decimal place.\n**(b)** Jack gets $54.7^\\circ$ for this angle. Explain what Jack has found.",
+  "hint": "Call the edge length $s$. Find the base diagonal in terms of $s$, then use tan in the vertical triangle.",
+  "answer": "(a) $\\tan\\theta = \\dfrac{s}{s\\sqrt{2}} = \\dfrac{1}{\\sqrt{2}}$ for every cube, so $\\theta = 35.3^\\circ$. (b) Jack found the angle between the diagonal and the vertical edge (the other acute angle of the triangle).",
+  "solution": "**(a)** Let the cube have edge $s$, with base $ABCD$ and $G$ above $C$.\n\nBase diagonal: $AC = \\sqrt{s^2 + s^2} = s\\sqrt{2}$.\n\nThe projection of $AG$ on the base is $AC$, and $CG = s$, with a right angle at $C$:\n$$\\tan\\theta = \\frac{CG}{AC} = \\frac{s}{s\\sqrt{2}} = \\frac{1}{\\sqrt{2}}$$\n\nThe $s$ cancels, so $\\tan\\theta$, and therefore $\\theta$, does not depend on the size of the cube. Mia is correct.\n$$\\theta = \\tan^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right) = 35.26\\ldots^\\circ \\approx 35.3^\\circ$$\n\n**(b)** $90^\\circ - 35.3^\\circ = 54.7^\\circ$, and $\\tan^{-1}(\\sqrt{2}) = 54.7^\\circ$. Jack has calculated the angle at $G$ (using $\\tan = \\frac{AC}{CG}$), which is the angle between the diagonal and the vertical edge $CG$. The angle with the base must be at $A$, where the diagonal meets the base.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q11",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A cuboid has length $a$, width $b$ and height $c$, and space diagonal $d$.\n\n**(a)** Prove that $d^2 = a^2 + b^2 + c^2$.\n**(b)** Hence prove that $d < a + b + c$.",
+  "hint": "(a) Use Pythagoras twice: once in the base, once in a vertical triangle. (b) Compare $d^2$ with $(a+b+c)^2$ after expanding.",
+  "answer": "(a) Base diagonal$^2 = a^2 + b^2$, then $d^2 = (a^2 + b^2) + c^2$. (b) $(a+b+c)^2 = d^2 + 2(ab+bc+ca) > d^2$, and both are positive, so $d < a+b+c$.",
+  "solution": "**(a)** Label the cuboid $ABCDEFGH$ with $AB = a$, $BC = b$, $CG = c$.\n\nTriangle $ABC$ lies in the base and has a right angle at $B$, so\n$$AC^2 = a^2 + b^2$$\n\n$CG$ is vertical, so it is perpendicular to every line in the base, including $AC$. Triangle $ACG$ therefore has a right angle at $C$:\n$$d^2 = AG^2 = AC^2 + CG^2 = a^2 + b^2 + c^2$$\n\n**(b)** Expand:\n$$(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca = d^2 + 2(ab + bc + ca)$$\n\nSince $a, b, c > 0$, $2(ab + bc + ca) > 0$, so $(a + b + c)^2 > d^2$.\n\nBoth $d$ and $a + b + c$ are positive, so taking square roots keeps the inequality:\n$$d < a + b + c$$\n\n(Geometrically: walking along three edges from $A$ to $G$ is longer than going straight there.)",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q12",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": true,
+  "question": "The diagram shows a pyramid $ABCDE$ with a rectangular base. $AB = 12$ cm and $BC = 9$ cm. The apex $E$ is vertically above $M$, the centre of the base, and $EM = 10$ cm. (Not drawn to scale.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 270\" width=\"340\" height=\"270\"><line x1=\"50\" y1=\"245\" x2=\"254\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"254\" y1=\"245\" x2=\"358\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"204\" y1=\"59.4\" x2=\"50\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"204\" y1=\"59.4\" x2=\"254\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"204\" y1=\"59.4\" x2=\"358\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50\" y1=\"245\" x2=\"154\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"154\" y1=\"173.9\" x2=\"358\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"204\" y1=\"59.4\" x2=\"154\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"204\" y1=\"59.4\" x2=\"204\" y2=\"209.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"50\" y1=\"245\" x2=\"358\" y2=\"173.9\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"204\" cy=\"209.4\" r=\"2.5\" fill=\"currentColor\"/><text x=\"212\" y=\"223.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">M</text><polyline points=\"204,201.4 211.8,199.6 211.8,207.6\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"204\" y1=\"59.4\" x2=\"50\" y2=\"245\" stroke=\"#3b82f6\" stroke-width=\"2\"/><text x=\"38\" y=\"259\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"264\" y=\"259\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"368\" y=\"179.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"144\" y=\"169.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"204\" y=\"49.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"152\" y=\"265\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12 cm</text><text x=\"318\" y=\"219.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">9 cm</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $AC = 15$ cm.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the length of the sloping edge $EA$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the size of the angle between $EA$ and the base $ABCD$. Give your answer to 1 decimal place.",
+    "marks": 2
+   }
+  ],
+  "hint": "$M$ is the midpoint of the diagonal $AC$, so $AM$ is half of $AC$. Triangle $EMA$ has its right angle at $M$.",
+  "answer": "(a) $AC = \\sqrt{12^2 + 9^2} = \\sqrt{225} = 15$ cm (b) 12.5 cm (c) $53.1^\\circ$",
+  "solution": "**(a)** $AC^2 = 12^2 + 9^2 = 144 + 81$ M1\n\n$AC = \\sqrt{225} = 15$ cm A1 (shown)\n\n**(b)** $M$ is the midpoint of $AC$, so $AM = 7.5$ cm. Triangle $EMA$ has a right angle at $M$:\n$$EA^2 = 7.5^2 + 10^2 = 56.25 + 100 \\quad \\text{M1 (uses half the diagonal)}$$\n\n$$EA = \\sqrt{156.25} = 12.5 \\text{ cm} \\quad \\text{A1}$$\n\n**(c)** The projection of $EA$ on the base is $MA$, so the angle is $\\angle EAM$:\n$$\\tan \\angle EAM = \\frac{10}{7.5} \\quad \\text{M1}$$\n\n$$\\angle EAM = 53.13\\ldots^\\circ \\approx 53.1^\\circ \\quad \\text{A1}$$\n\n(Accept $\\sin^{-1}\\left(\\frac{10}{12.5}\\right)$ or $\\cos^{-1}\\left(\\frac{7.5}{12.5}\\right)$. Using the full diagonal 15 or half a side scores M0.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q13",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": true,
+  "question": "The diagram shows a cuboid $ABCDEFGH$. $AB = 10$ cm, $BC = 6$ cm and $CG = 8$ cm. $M$ is the midpoint of $GH$. (Not drawn to scale.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"40\" y1=\"235\" x2=\"220\" y2=\"235\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"235\" x2=\"281.5\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"281.5\" y1=\"177.7\" x2=\"281.5\" y2=\"57.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"281.5\" y1=\"57.7\" x2=\"101.5\" y2=\"57.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"101.5\" y1=\"57.7\" x2=\"40\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"115\" x2=\"40\" y2=\"235\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"115\" x2=\"220\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"115\" x2=\"220\" y2=\"235\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"220\" y1=\"115\" x2=\"281.5\" y2=\"57.7\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"235\" x2=\"101.5\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"101.5\" y1=\"177.7\" x2=\"281.5\" y2=\"177.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"101.5\" y1=\"177.7\" x2=\"101.5\" y2=\"57.7\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"28\" y=\"249\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"224\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"289.5\" y=\"187.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"93.5\" y=\"171.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"26\" y=\"115\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"216\" y=\"109\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"289.5\" y=\"53.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text><text x=\"93.5\" y=\"49.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><text x=\"130\" y=\"255\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10 cm</text><text x=\"260.7\" y=\"218.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">6 cm</text><text x=\"289.5\" y=\"122.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">8 cm</text><line x1=\"40\" y1=\"235\" x2=\"191.5\" y2=\"57.7\" stroke=\"#3b82f6\" stroke-width=\"2\"/><circle cx=\"191.5\" cy=\"57.7\" r=\"3\" fill=\"currentColor\"/><text x=\"191.5\" y=\"49.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">M</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the length of $AM$. Give your answer to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the size of the angle between $AM$ and the plane $ABCD$. Give your answer to 1 decimal place.",
+    "marks": 3
+   }
+  ],
+  "hint": "Let $N$ be the point on $DC$ directly below $M$. Then $AN$ is the projection of $AM$ onto the base, and $MN = 8$ cm.",
+  "answer": "(a) 11.2 cm (b) $45.7^\\circ$",
+  "solution": "Let $N$ be the midpoint of $DC$, which is directly below $M$. Then $MN = 8$ cm, $DN = 5$ cm and $AD = 6$ cm.\n\n**(a)** Triangle $ADN$ (right angle at $D$):\n$$AN^2 = 6^2 + 5^2 = 61 \\quad \\text{M1}$$\n\nTriangle $ANM$ (right angle at $N$):\n$$AM^2 = 61 + 8^2 = 125 \\quad \\text{M1}$$\n\n$$AM = \\sqrt{125} = 11.18\\ldots \\approx 11.2 \\text{ cm} \\quad \\text{A1}$$\n\n**(b)** The projection of $AM$ on $ABCD$ is $AN$, so the angle is $\\angle MAN$:\n$$\\tan \\angle MAN = \\frac{8}{\\sqrt{61}} \\quad \\text{M1 M1 (correct triangle, correct ratio)}$$\n\n$$\\angle MAN = \\tan^{-1}(1.0243\\ldots) = 45.68\\ldots^\\circ \\approx 45.7^\\circ \\quad \\text{A1}$$\n\n(Common errors: using $AD = 6$ as the adjacent side gives $53.1^\\circ$; finding the angle at $M$ gives $44.3^\\circ$.)",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q14",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A square-based pyramid has base edges of 10 cm. Its apex is vertically above the centre of the base. Each sloping edge makes an angle of $50^\\circ$ with the base.\n\nFind the angle between the base and the line joining the apex to the midpoint of one of the base edges. Give your answer to 1 decimal place.",
+  "hint": "First use the sloping edge and the half-diagonal to find the height. Then use a different right-angled triangle whose horizontal side runs from the centre to the midpoint of an edge.",
+  "answer": "$59.3^\\circ$",
+  "solution": "Let the base be $ABCD$ with centre $M$ and apex $E$; let $N$ be the midpoint of $BC$.\n\n**Step 1: the height.** The projection of edge $EC$ on the base is $MC$, half the diagonal:\n$$MC = \\frac{1}{2}\\sqrt{10^2 + 10^2} = 5\\sqrt{2} \\text{ cm}$$\n\nIn triangle $EMC$ (right angle at $M$), the angle at $C$ is $50^\\circ$:\n$$EM = 5\\sqrt{2}\\tan 50^\\circ = 8.426\\ldots \\text{ cm}$$\n\n**Step 2: the new angle.** $MN$ is half a side, 5 cm, and triangle $EMN$ has a right angle at $M$:\n$$\\tan \\angle ENM = \\frac{EM}{MN} = \\frac{8.426\\ldots}{5} = 1.685\\ldots$$\n\n$$\\angle ENM = 59.31\\ldots^\\circ \\approx 59.3^\\circ$$\n\nThis is steeper than $50^\\circ$ because $N$ is closer to the centre than a corner is, while the height is the same.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q15",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A cube has a space diagonal of length 6 cm.\n\nFind the exact volume of the cube. Give your answer in the form $k\\sqrt{3}$ $\\text{cm}^3$, where $k$ is an integer.",
+  "hint": "A cube of edge $s$ has space diagonal $s\\sqrt{3}$. Solve for $s$, rationalise, then cube it.",
+  "answer": "$24\\sqrt{3}$ $\\text{cm}^3$",
+  "solution": "Let the edge be $s$. The space diagonal is $\\sqrt{s^2 + s^2 + s^2} = s\\sqrt{3}$, so\n$$s\\sqrt{3} = 6 \\quad\\Rightarrow\\quad s = \\frac{6}{\\sqrt{3}} = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3} \\text{ cm}$$\n\nVolume:\n$$V = s^3 = (2\\sqrt{3})^3 = 2^3 \\times (\\sqrt{3})^3 = 8 \\times 3\\sqrt{3} = 24\\sqrt{3} \\text{ cm}^3$$\n\n(Check: $24\\sqrt{3} \\approx 41.6$, and $s \\approx 3.46$ gives $s^3 \\approx 41.6$.)",
+  "linkedTopicIds": [
+   "num-surds",
+   "geo-volume-prisms"
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q16",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Two space diagonals of a cube cross at the centre of the cube.\n\nShow that the acute angle $\\theta$ between them satisfies $\\cos\\theta = \\dfrac{1}{3}$, and hence find $\\theta$ to 1 decimal place.",
+  "hint": "Take a cube of edge 2 and the diagonals $AG$ and $BH$, meeting at $O$. Triangle $OAB$ has two sides equal to half a space diagonal and the third side an edge. Use the cosine rule.",
+  "answer": "$\\cos\\theta = \\dfrac{1}{3}$, $\\theta = 70.5^\\circ$",
+  "solution": "Use a cube $ABCDEFGH$ of edge 2 (the angle does not depend on size). The space diagonals $AG$ and $BH$ both pass through the centre $O$ and bisect each other.\n\nSpace diagonal $= \\sqrt{2^2 + 2^2 + 2^2} = \\sqrt{12} = 2\\sqrt{3}$, so $OA = OB = \\sqrt{3}$.\n\n$A$ and $B$ are joined by an edge, so $AB = 2$.\n\nCosine rule in triangle $OAB$:\n$$\\cos\\angle AOB = \\frac{OA^2 + OB^2 - AB^2}{2 \\times OA \\times OB} = \\frac{3 + 3 - 4}{2 \\times \\sqrt{3} \\times \\sqrt{3}} = \\frac{2}{6} = \\frac{1}{3}$$\n\nThis is positive, so $\\angle AOB$ is acute and it is the required $\\theta$. (The other angle where the diagonals cross is $180^\\circ - \\theta$, which has cosine $-\\frac{1}{3}$.)\n\n$$\\theta = \\cos^{-1}\\left(\\frac{1}{3}\\right) = 70.52\\ldots^\\circ \\approx 70.5^\\circ$$",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules"
+  ]
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q17",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A rectangular sports field $ABCD$ measures 80 m by 60 m and is horizontal. A vertical floodlight mast $DT$ stands at corner $D$. From corner $B$, the angle of elevation of the top of the mast, $T$, is $12^\\circ$. (Not drawn to scale.)\n\nWork out the height of the mast. Give your answer to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" width=\"300\" height=\"270\"><polygon points=\"30,250 238,250 317.2,195.8 109.2,195.8\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"109.2\" y1=\"195.8\" x2=\"109.2\" y2=\"115.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"238\" y1=\"250\" x2=\"109.2\" y2=\"115.8\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"238\" y1=\"250\" x2=\"109.2\" y2=\"195.8\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><polyline points=\"109.2,186.8 118.2,186.8 118.2,195.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"20\" y=\"264\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"246\" y=\"264\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"327.2\" y=\"199.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"97.2\" y=\"199.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"99.2\" y=\"117.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">T</text><text x=\"134\" y=\"270\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">80 m</text><text x=\"291.6\" y=\"232.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">60 m</text><path d=\"M206.7 236.8 A34 34 0 0 1 214.5 225.5\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"195.1\" y=\"225.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12°</text></svg>",
+  "hint": "The angle of elevation is measured from the horizontal line $BD$ across the field, not along an edge of the field.",
+  "answer": "21.3 m",
+  "solution": "$B$ and $D$ are opposite corners, so the horizontal distance from $B$ to the foot of the mast is the diagonal:\n$$BD = \\sqrt{80^2 + 60^2} = \\sqrt{10000} = 100 \\text{ m}$$\n\nTriangle $BDT$ is vertical with a right angle at $D$, and the angle of elevation at $B$ is $12^\\circ$:\n$$\\tan 12^\\circ = \\frac{DT}{100}$$\n\n$$DT = 100\\tan 12^\\circ = 21.25\\ldots \\approx 21.3 \\text{ m}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-pythagoras-trig-q18",
+  "topicId": "geo-3d-pythagoras-trig",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The diagram shows a closed box in the shape of a cuboid measuring 5 cm by 4 cm by 3 cm. (Not drawn to scale.)\n\nAn ant at corner $A$ wants to reach the opposite corner $G$. It must walk on the outside surface of the box.\n\n**(a)** Find the length of the shortest possible route, to 3 significant figures.\n**(b)** How much shorter would the trip be if the ant could tunnel straight through the box from $A$ to $G$?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><line x1=\"40\" y1=\"220\" x2=\"210\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"210\" y1=\"220\" x2=\"286.1\" y2=\"149.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"286.1\" y1=\"149.1\" x2=\"286.1\" y2=\"59.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"286.1\" y1=\"59.1\" x2=\"116.1\" y2=\"59.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"116.1\" y1=\"59.1\" x2=\"40\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"130\" x2=\"40\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"130\" x2=\"210\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"210\" y1=\"130\" x2=\"210\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"210\" y1=\"130\" x2=\"286.1\" y2=\"59.1\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"220\" x2=\"116.1\" y2=\"149.1\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"116.1\" y1=\"149.1\" x2=\"286.1\" y2=\"149.1\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"116.1\" y1=\"149.1\" x2=\"116.1\" y2=\"59.1\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"28\" y=\"234\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"214\" y=\"236\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"294.1\" y=\"159.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"108.1\" y=\"143.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"26\" y=\"130\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"206\" y=\"124\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"294.1\" y=\"55.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text><text x=\"108.1\" y=\"51.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">H</text><text x=\"125\" y=\"240\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">5 cm</text><text x=\"258\" y=\"196.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">4 cm</text><text x=\"294.1\" y=\"109.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">3 cm</text></svg>",
+  "hint": "Unfold (net) the two faces the ant crosses into one flat rectangle; the shortest path is then a straight line. There are three essentially different pairs of faces to try.",
+  "answer": "(a) $\\sqrt{74} \\approx 8.60$ cm (b) about 1.53 cm shorter (straight line $\\sqrt{50} \\approx 7.07$ cm)",
+  "solution": "**(a)** The ant crosses two adjacent faces and goes over one edge. Unfolding those two faces into a flat rectangle, the straight path is the hypotenuse of a right-angled triangle whose legs are (sum of two dimensions) and (the third dimension). The three options:\n\n| Faces unfolded | Legs | Path length |\n|---|---|---|\n| over an edge of length 3 | $5 + 4 = 9$ and $3$ | $\\sqrt{81 + 9} = \\sqrt{90} = 9.49$ |\n| over an edge of length 4 | $5 + 3 = 8$ and $4$ | $\\sqrt{64 + 16} = \\sqrt{80} = 8.94$ |\n| over an edge of length 5 | $4 + 3 = 7$ and $5$ | $\\sqrt{49 + 25} = \\sqrt{74} = 8.60$ |\n\nThe shortest route is $\\sqrt{74} = 8.602\\ldots \\approx 8.60$ cm. (It crosses the edge of length 5, the longest dimension, keeping the two shorter dimensions together.)\n\n**(b)** Straight through the box, the space diagonal is\n$$AG = \\sqrt{5^2 + 4^2 + 3^2} = \\sqrt{50} = 7.071\\ldots \\text{ cm}$$\n\nDifference: $8.602\\ldots - 7.071\\ldots = 1.531\\ldots \\approx 1.53$ cm shorter.",
+  "linkedTopicIds": [
+   "geo-3d-shapes-nets"
+  ]
+ }
+]
