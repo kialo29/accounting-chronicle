@@ -67,8 +67,7 @@
   "difficulty": 2,
   "type": "spot-the-mistake",
   "misconceptionIds": [
-   "m4",
-   "m1"
+   "m4"
   ],
   "question": "Leo is solving $3^{x + 2} + 3^x = 50$. His working is shown below.\n\nLine 1: $\\ln(3^{x+2}) + \\ln(3^x) = \\ln 50$\n\nLine 2: $(x + 2)\\ln 3 + x\\ln 3 = \\ln 50$\n\nLine 3: $2x\\ln 3 = \\ln 50 - 2\\ln 3$\n\nLine 4: $x = \\dfrac{\\ln 50 - 2\\ln 3}{2\\ln 3} = 0.780$ (3 s.f.)\n\n(a) Identify the line containing Leo's error and explain the mistake.\n\n(b) Solve the equation correctly, giving your answer to 3 significant figures.",
   "hint": "Is $\\ln(A + B)$ the same as $\\ln A + \\ln B$? Try writing $3^{x+2}$ as $9 \\times 3^x$.",
@@ -190,7 +189,7 @@
    },
    {
     "label": "c",
-    "prompt": "Saturn has a mean distance from the Sun of 9.537 AU. Use your model to estimate the orbital period of Saturn, giving your answer to 3 significant figures.",
+    "prompt": "Saturn has a mean distance from the Sun of 9.537 AU. Use your values of $a$ and $n$ from part (b) to estimate the orbital period of Saturn, giving your answer to 3 significant figures.",
     "marks": 2
    },
    {
@@ -202,7 +201,7 @@
   "marks": 10,
   "hint": "Find $\\log_{10} r$ and $\\log_{10} T$ for Mercury and Jupiter: these are two points on the line. The gradient is $n$ itself; the intercept is $\\log_{10} a$.",
   "answer": "(a) $\\log_{10} T = n\\log_{10} r + \\log_{10} a$: gradient $n$, intercept $\\log_{10} a$\n(b) $n = 1.5$, $a = 1.0$\n(c) 29.5 years\n(d) Model gives $0.723^{1.5} = 0.615$ years, matching the data, so the model is suitable.",
-  "solution": "**(a)** $\\log_{10} T = \\log_{10}(ar^n) = \\log_{10} a + n\\log_{10} r$ **M1**\n\nThis is of the form $Y = mX + c$ with $Y = \\log_{10} T$, $X = \\log_{10} r$: a straight line with gradient $n$ and intercept $\\log_{10} a$. **A1**\n\n**(b)** Points $(\\log_{10} r, \\log_{10} T)$ to 3 d.p.:\nMercury $(-0.412, -0.618)$, Jupiter $(0.716, 1.074)$ **M1**\n\n$$n = \\frac{1.074 - (-0.618)}{0.716 - (-0.412)} = \\frac{1.692}{1.128} = 1.500\\ldots$$\n$n = 1.5$ (2 s.f.) **M1 A1**\n\nIntercept: $\\log_{10} a = -0.618 - 1.5 \\times (-0.412) = -0.618 + 0.618 = 0.000$ (to 3 d.p.)\n\n$a = 10^{0.000} = 1.0$ (2 s.f.) **A1**\n\n(Note: the gradient gives $n$ directly, because the horizontal axis is $\\log_{10} r$; it is the intercept that must be \"un-logged\".)\n\n**(c)** $T = 1.0 \\times 9.537^{1.5}$ **M1**\n$= 29.45\\ldots = 29.5$ years (3 s.f.) **A1**\n\n**(d)** Model for Venus: $T = 0.723^{1.5} = 0.6147\\ldots \\approx 0.615$ years **M1**\n\nThis agrees with the observed period of 0.615 years, so the model fits well (a point not used to find the constants fits the line), supporting the model. **A1**\n\n(This is Kepler's third law: $T^2 = r^3$ when $T$ is in years and $r$ in AU.)",
+  "solution": "**(a)** $\\log_{10} T = \\log_{10}(ar^n) = \\log_{10} a + n\\log_{10} r$ **M1**\n\nThis is of the form $Y = mX + c$ with $Y = \\log_{10} T$, $X = \\log_{10} r$: a straight line with gradient $n$ and intercept $\\log_{10} a$. **A1**\n\n**(b)** Points $(\\log_{10} r, \\log_{10} T)$ to 3 d.p.:\nMercury $(-0.412, -0.618)$, Jupiter $(0.716, 1.074)$ **M1**\n\n$$n = \\frac{1.074 - (-0.618)}{0.716 - (-0.412)} = \\frac{1.692}{1.128} = 1.500\\ldots$$\n$n = 1.5$ (2 s.f.) **M1 A1**\n\nIntercept: $\\log_{10} a = -0.618 - 1.5 \\times (-0.412) = -0.618 + 0.618 = 0.000$ (to 3 d.p.)\n\n$a = 10^{0.000} = 1.0$ (2 s.f.) **A1**\n\n(Note: the gradient gives $n$ directly, because the horizontal axis is $\\log_{10} r$; it is the intercept that must be \"un-logged\".)\n\n**(c)** $T = 1.0 \\times 9.537^{1.5}$ **M1**\n$= 29.45\\ldots = 29.5$ years (3 s.f.) **A1**\n\n(Using the unrounded constants instead gives $29.4$ years; the question asks for the values from (b), so $29.5$.)\n\n**(d)** Model for Venus: $T = 0.723^{1.5} = 0.6147\\ldots \\approx 0.615$ years **M1**\n\nThis agrees with the observed period of 0.615 years, so the model fits well (a point not used to find the constants fits the line), supporting the model. **A1**\n\n(This is Kepler's third law: $T^2 = r^3$ when $T$ is in years and $r$ in AU.)",
   "linkedTopicIds": []
  },
  {
