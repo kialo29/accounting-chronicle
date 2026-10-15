@@ -52,3 +52,8 @@
 - Dawn on the eastern roof, twelfth into thirteenth day: Anakin, Ahsoka and Obi-Wan (sling, cloak) on the parapet; convor between Anakin and Ahsoka; nobody speaking; Anakin ate two mouthfuls.
 - All three know one another's histories. Council holds Obi-Wan's lie; Yoda the shaped truth; Sidious the wall, the shaft-second, Jango's recording, Kenobi's withheld letter.
 - Pending: Windu's report, Padmé's reply, Sidious's next move.
+
+### After Ch 31
+- Facts established: Windu granted "ten days"; sling off a week; Shmi keeps Anakin's initialled Temple hydrospanner ("You'll want it back. So you'll come"); far north-row vaporator sensors wired to dome alarm; Owen told the fault was the compressor (it was a salted brine sensor); spent line: "Ani. My goodness, you've grown."
+- Open threads: Anakin knows the Tusken band's range this season and did not go; Obi-Wan told him the ridge years "four nights after the roof"; Shmi saw that something is wrong and asked nothing.
+- Current state: pre-dawn by the speeder outside the Lars homestead, Anakin and Obi-Wan standing in the cold, house unwoken; due in Mos Eisley by midday.
