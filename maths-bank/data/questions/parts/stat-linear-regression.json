@@ -1,0 +1,299 @@
+[
+ {
+  "id": "stat-linear-regression-q01",
+  "topicId": "stat-linear-regression",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A courier firm uses the regression line\n$$\\hat{y} = 4.2 + 1.5x$$\nto predict the time, $y$ minutes, that a delivery takes from the distance driven, $x$ km.\n\nA delivery of 6 km took 14.0 minutes.\n\n(a) Find the predicted time for this delivery.\n\n(b) Find the residual for this delivery and state whether the point lies above or below the regression line.",
+  "hint": "Substitute $x = 6$ into the line. Residual $=$ observed $-$ predicted.",
+  "answer": "(a) 13.2 minutes (b) $0.8$ minutes; above the line",
+  "solution": "(a) $\\hat{y} = 4.2 + 1.5 \\times 6 = 4.2 + 9 = 13.2$ minutes\n\n(b) Residual $= y - \\hat{y} = 14.0 - 13.2 = 0.8$ minutes\n\nThe residual is positive, so the point lies **above** the line: the delivery took 0.8 minutes longer than predicted.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q02",
+  "topicId": "stat-linear-regression",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A courier firm uses the regression line\n$$\\hat{y} = 4.2 + 1.5x$$\nto predict the time, $y$ minutes, that a delivery takes from the distance driven, $x$ km.\n\nAnother delivery of 6 km took 12.5 minutes. Find the residual for this delivery and interpret its sign.",
+  "hint": "The predicted value is the same as before because $x$ has not changed. Only the observed value has changed.",
+  "answer": "$-0.7$ minutes; the point is below the line (the delivery was 0.7 minutes quicker than predicted).",
+  "solution": "**What changed:** only the observed time (from 14.0 to 12.5). The predicted time for 6 km is still 13.2 minutes.\n\nResidual $= y - \\hat{y} = 12.5 - 13.2 = -0.7$ minutes\n\nThe residual is negative, so the point lies **below** the regression line: this delivery took 0.7 minutes less than the model predicted (the model over-predicted).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q03",
+  "topicId": "stat-linear-regression",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A courier firm uses the regression line\n$$\\hat{y} = 4.2 + 1.5x$$\nto predict the time, $y$ minutes, that a delivery takes from the distance driven, $x$ km.\n\nA third delivery of 6 km took 13.2 minutes. Find the residual and explain what it tells you about this point.",
+  "hint": "Compare the observed time with the predicted time for 6 km.",
+  "answer": "Residual $= 0$; the point lies exactly on the regression line.",
+  "solution": "**What changed:** the observed time is now 13.2 minutes, equal to the prediction.\n\nResidual $= 13.2 - 13.2 = 0$\n\nA residual of zero means the point lies exactly **on** the regression line: the model predicted this delivery time perfectly.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q04",
+  "topicId": "stat-linear-regression",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A courier firm uses the regression line\n$$\\hat{y} = 4.2 + 1.5x$$\nto predict the time, $y$ minutes, that a delivery takes from the distance driven, $x$ km.\n\nA fourth delivery of 6 km has a residual of $-1.3$ minutes. How long did this delivery take?",
+  "hint": "Rearrange residual $= y - \\hat{y}$ to make $y$ the subject.",
+  "answer": "11.9 minutes",
+  "solution": "**What changed:** now the residual is given and the observed value is the unknown.\n\n$$y - \\hat{y} = -1.3 \\Rightarrow y = \\hat{y} - 1.3 = 13.2 - 1.3 = 11.9 \\text{ minutes}$$\n\nA negative residual means the actual time is **less** than predicted, which matches $11.9 < 13.2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q05",
+  "topicId": "stat-linear-regression",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A firm recorded the number of years of experience, $x$, and the annual salary, $y$ (in thousands of pounds), of 10 of its employees.\n$$n = 10,\\quad \\sum x = 50,\\quad \\sum y = 420,\\quad \\sum x^2 = 330,\\quad \\sum xy = 2260,\\quad \\sum y^2 = 18400$$\n\n(a) Find the equation of the regression line of $y$ on $x$.\n\n(b) Interpret the gradient and the intercept in context.\n\n(c) Calculate the product moment correlation coefficient, $r$, and the value of $r^2$. Interpret $r^2$ in context.",
+  "hint": "Find $S_{xx} = \\sum x^2 - \\frac{(\\sum x)^2}{n}$ and $S_{xy} = \\sum xy - \\frac{\\sum x \\sum y}{n}$, then $b = \\frac{S_{xy}}{S_{xx}}$ and $a = \\bar{y} - b\\bar{x}$.",
+  "answer": "(a) $\\hat{y} = 32 + 2x$ (b) Each extra year of experience is associated with an increase of £2000 in predicted salary; a new employee with no experience has a predicted salary of £32 000. (c) $r = 0.649$, $r^2 = 0.421$: about $42\\%$ of the variation in salary is explained by the linear relationship with experience.",
+  "solution": "(a) $S_{xx} = 330 - \\frac{50^2}{10} = 330 - 250 = 80$\n\n$S_{xy} = 2260 - \\frac{50 \\times 420}{10} = 2260 - 2100 = 160$\n\n$b = \\frac{160}{80} = 2$; $\\bar{x} = 5$, $\\bar{y} = 42$, so $a = 42 - 2 \\times 5 = 32$.\n$$\\hat{y} = 32 + 2x$$\n\n(b) Gradient: each additional year of experience is associated with an increase of $2$ thousand pounds (£2000) in the **predicted** salary.\n\nIntercept: an employee with no experience ($x = 0$) has a predicted salary of £32 000. This is a sensible starting salary, provided the data include employees with very little experience.\n\n(c) $S_{yy} = 18400 - \\frac{420^2}{10} = 18400 - 17640 = 760$\n$$r = \\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}} = \\frac{160}{\\sqrt{80 \\times 760}} = 0.649 \\text{ (3 s.f.)}$$\n$r^2 = 0.421$ (3 s.f.). About $42\\%$ of the variation in salary is explained by the linear relationship with years of experience; the other $58\\%$ is due to other factors (role, qualifications, etc.). Note it is $r^2$, not $r$, that gives this proportion.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q06",
+  "topicId": "stat-linear-regression",
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A survey of used cars of one model on a selling website gave these statistics for the age, $x$ years, and the price, $y$ (in thousands of pounds):\n$$\\bar{x} = 6,\\quad s_x = 2.5,\\quad \\bar{y} = 9.4,\\quad s_y = 3.0,\\quad r = -0.85$$\nThe ages of the cars ranged from 2 to 11 years.\n\n(a) Use $b = r\\frac{s_y}{s_x}$ to find the equation of the least-squares regression line of $y$ on $x$.\n\n(b) Interpret the gradient in context.\n\n(c) Interpret the intercept, and comment on whether it is reliable.\n\n(d) What percentage of the variation in price is explained by the linear relationship with age?",
+  "hint": "The line passes through $(\\bar{x}, \\bar{y})$, so $a = \\bar{y} - b\\bar{x}$.",
+  "answer": "(a) $\\hat{y} = 15.52 - 1.02x$ (b) Each extra year of age is associated with a fall of £1020 in predicted price. (c) Predicted price of a new (0-year-old) car is £15 520, but $x = 0$ is outside the data (2–11 years), so it is unreliable. (d) $72.25\\%$",
+  "solution": "(a) $b = -0.85 \\times \\frac{3.0}{2.5} = -1.02$\n\n$a = 9.4 - (-1.02)(6) = 9.4 + 6.12 = 15.52$\n$$\\hat{y} = 15.52 - 1.02x$$\n\n(b) For each additional year of age, the **predicted** price falls by $1.02$ thousand pounds, i.e. £1020.\n\n(c) The intercept means a car aged 0 years (new) has a predicted price of £15 520. However, the data only cover cars aged 2 to 11 years, so this is extrapolation; new cars often lose value fastest in the first two years, so the true pattern near $x = 0$ may be different.\n\n(d) $r^2 = (-0.85)^2 = 0.7225$, so $72.25\\%$ (about $72\\%$) of the variation in price is explained by the linear relationship with age. (Not $85\\%$: the proportion is $r^2$, not $r$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q07",
+  "topicId": "stat-linear-regression",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "For a sample of tomato plants, the regression line of height, $y$ cm, on the number of days since planting, $x$, is\n$$\\hat{y} = 2.8 + 0.45x$$\nOne plant was 13.1 cm tall after 20 days. Kai's working is shown below.\n\nPredicted height $= 2.8 + 0.45 \\times 20 = 11.8$ cm\nResidual $= 11.8 - 13.1 = -1.3$ cm\nThe residual is negative, so this plant is shorter than the model predicts.\n\n(a) Identify Kai's mistake.\n\n(b) Write down the correct residual and a correct interpretation.",
+  "hint": "Which way round is a residual defined? Compare the actual height with the predicted height directly.",
+  "answer": "(a) He calculated predicted $-$ observed; a residual is observed $-$ predicted. (b) $+1.3$ cm: the plant is 1.3 cm taller than predicted (the point lies above the line).",
+  "solution": "(a) Kai's predicted value, 11.8 cm, is correct. His error is in the second line: he worked out **predicted $-$ observed**. A residual is defined as\n$$\\text{residual} = \\text{observed} - \\text{predicted} = y - \\hat{y}$$\n\n(b) Residual $= 13.1 - 11.8 = 1.3$ cm.\n\nThe residual is positive: the plant is 1.3 cm **taller** than the model predicts, so its point lies above the regression line (the model under-predicts for this plant). Kai's sign error reversed his conclusion; a quick check ($13.1 > 11.8$) shows the plant is taller than predicted.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q08",
+  "topicId": "stat-linear-regression",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A study of 40 towns found a negative linear relationship between the average number of hours of sunshine per year, $x$, and the number of prescriptions for vitamin D per 1000 people, $y$. The correlation coefficient was $r = -0.9$.\n\nSam writes:\n\nSince $r = -0.9$, $90\\%$ of the variation in vitamin D prescriptions is explained by the linear relationship with hours of sunshine.\n\n(a) Explain Sam's mistake and correct his statement.\n\n(b) In a second study the computer output gives $r^2 = 0.36$ and a regression line with a negative gradient. Find $r$.",
+  "hint": "Which quantity measures the proportion of variation explained: $r$ or $r^2$? For (b), think about the sign of $r$.",
+  "answer": "(a) The proportion explained is $r^2 = 0.81$, so $81\\%$ (not $90\\%$). (b) $r = -0.6$",
+  "solution": "(a) Sam has used $r$ as the proportion of variation explained. It is $r^2$ (the coefficient of determination) that measures this:\n$$r^2 = (-0.9)^2 = 0.81$$\nCorrect statement: \"$81\\%$ of the variation in vitamin D prescriptions is explained by the linear relationship with hours of sunshine.\"\n\n(b) $r = \\pm\\sqrt{0.36} = \\pm 0.6$. The correlation has the same sign as the gradient of the regression line, which is negative, so $r = -0.6$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q09",
+  "topicId": "stat-linear-regression",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 250\" width=\"330\" height=\"250\"><line x1=\"60.0\" y1=\"115.0\" x2=\"320.0\" y2=\"115.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"60.0\" y1=\"205.0\" x2=\"60.0\" y2=\"20.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"56.0\" y1=\"205.0\" x2=\"60.0\" y2=\"205.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"209.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−6</text><line x1=\"56.0\" y1=\"175.0\" x2=\"60.0\" y2=\"175.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"179.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"56.0\" y1=\"145.0\" x2=\"60.0\" y2=\"145.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"149.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"56.0\" y1=\"115.0\" x2=\"60.0\" y2=\"115.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"119.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"56.0\" y1=\"85.0\" x2=\"60.0\" y2=\"85.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"89.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"56.0\" y1=\"55.0\" x2=\"60.0\" y2=\"55.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"59.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"56.0\" y1=\"25.0\" x2=\"60.0\" y2=\"25.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"53.0\" y=\"29.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"100.0\" y1=\"111.0\" x2=\"100.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"100.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"140.0\" y1=\"111.0\" x2=\"140.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"140.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><line x1=\"180.0\" y1=\"111.0\" x2=\"180.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40</text><line x1=\"220.0\" y1=\"111.0\" x2=\"220.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"220.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">50</text><line x1=\"260.0\" y1=\"111.0\" x2=\"260.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"260.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">60</text><line x1=\"300.0\" y1=\"111.0\" x2=\"300.0\" y2=\"119.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"300.0\" y=\"223.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">70</text><circle cx=\"100.0\" cy=\"38.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"140.0\" cy=\"125.1\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"180.0\" cy=\"181.7\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"220.0\" cy=\"178.3\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"260.0\" cy=\"129.9\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"300.0\" cy=\"36.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"190.0\" y=\"241.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Speed (mph)</text><text x=\"18.0\" y=\"115.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 18 115.0)\">Residual (m)</text></svg>",
+  "question": "The table shows typical stopping distances, $d$ metres, for a car at speed $v$ mph.\n\n| $v$ (mph) | 20 | 30 | 40 | 50 | 60 | 70 |\n|---|---|---|---|---|---|---|\n| $d$ (m) | 12 | 23 | 36 | 53 | 73 | 96 |\n\nThe least-squares regression line is $\\hat{d} = -26.6 + 1.677v$ and $r = 0.991$. The residual plot is shown.\n\nAhmed says, \"$r = 0.991$ is very close to 1, so a linear model is clearly appropriate for these data.\"\n\n(a) Use the regression line to find the residual for $v = 70$, and check it against the plot.\n\n(b) Is Ahmed correct? Justify your answer using the residual plot.\n\n(c) Explain what the pattern means for predictions at 45 mph and at 70 mph.",
+  "hint": "A residual plot should show random scatter about zero if a linear model is appropriate. Look at the signs of the residuals from left to right.",
+  "answer": "(a) $96 - 90.79 = 5.2$ m (matches the plot) (b) No: the residuals form a clear U-shaped curve (positive, negative, positive), so the relationship is curved and a non-linear model would be better despite the high $r$. (c) The line over-predicts in the middle (around 45 mph) and under-predicts at the ends, e.g. at 70 mph, so predictions are biased.",
+  "solution": "(a) $\\hat{d} = -26.6 + 1.677 \\times 70 = 90.79$ m. Residual $= 96 - 90.79 = 5.21 \\approx 5.2$ m, which matches the right-most point on the residual plot.\n\n(b) Ahmed is **not** correct. $r$ only measures how closely the points cluster about a straight line; it does not show whether a straight line is the right shape. The residual plot shows a clear pattern: positive residuals at 20 mph, negative residuals from 30 to 60 mph, then positive again at 70 mph, a U-shape. This curved pattern means the data bend upwards (stopping distance grows faster than linearly with speed), so a non-linear (e.g. quadratic) model would be more appropriate.\n\n(c) Around 40–50 mph the residuals are negative, so the line **over-predicts** stopping distance there (e.g. at 45 mph the prediction will be too large). At the extremes, e.g. 70 mph, the line **under-predicts**, which is the dangerous direction for a road-safety estimate. The errors are systematic, not random.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q10",
+  "topicId": "stat-linear-regression",
+  "difficulty": 4,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 265\" width=\"340\" height=\"265\"><line x1=\"50.0\" y1=\"225.0\" x2=\"330.0\" y2=\"225.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50.0\" y1=\"225.0\" x2=\"50.0\" y2=\"15.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50.0\" y1=\"225.0\" x2=\"50.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"78.0\" y1=\"225.0\" x2=\"78.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"106.0\" y1=\"225.0\" x2=\"106.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"106.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"134.0\" y1=\"225.0\" x2=\"134.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"162.0\" y1=\"225.0\" x2=\"162.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"162.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"190.0\" y1=\"225.0\" x2=\"190.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"218.0\" y1=\"225.0\" x2=\"218.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"218.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"246.0\" y1=\"225.0\" x2=\"246.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"274.0\" y1=\"225.0\" x2=\"274.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"274.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">16</text><line x1=\"302.0\" y1=\"225.0\" x2=\"302.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"330.0\" y1=\"225.0\" x2=\"330.0\" y2=\"229.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"330.0\" y=\"242.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"46.0\" y1=\"225.0\" x2=\"50.0\" y2=\"225.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"229.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"46.0\" y1=\"184.0\" x2=\"50.0\" y2=\"184.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"188.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"46.0\" y1=\"143.0\" x2=\"50.0\" y2=\"143.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"147.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"46.0\" y1=\"102.0\" x2=\"50.0\" y2=\"102.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"106.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">15</text><line x1=\"46.0\" y1=\"61.0\" x2=\"50.0\" y2=\"61.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"65.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20</text><line x1=\"46.0\" y1=\"20.0\" x2=\"50.0\" y2=\"20.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"43.0\" y=\"24.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">25</text><circle cx=\"78.0\" cy=\"184.0\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"92.0\" cy=\"159.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"106.0\" cy=\"159.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"120.0\" cy=\"134.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"134.0\" cy=\"126.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"148.0\" cy=\"102.0\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"302.0\" cy=\"61.0\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"190.0\" y=\"258.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Hours of revision, x</text><text x=\"16.0\" y=\"122.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 16 122.5)\">Mark, y</text></svg>",
+  "question": "Seven students recorded the number of hours they spent revising, $x$, and their mark out of 25 in a test, $y$.\n\n| $x$ | 2 | 3 | 4 | 5 | 6 | 7 | 18 |\n|---|---|---|---|---|---|---|---|\n| $y$ | 5 | 8 | 8 | 11 | 12 | 15 | 20 |\n\n(a) Use your calculator to find the equation of the regression line of $y$ on $x$ for all seven students, giving the coefficients to 3 significant figures.\n\n(b) Find the regression line when the student who revised for 18 hours is removed.\n\n(c) Explain why the point $(18, 20)$ is described as an influential point.\n\n(d) Using the line from (b), predict the mark for a student who revises for 18 hours, and comment on your answer.",
+  "hint": "Compare the two gradients. A point is influential if removing it changes the line noticeably; extreme $x$-values have most leverage.",
+  "answer": "(a) $\\hat{y} = 5.73 + 0.864x$ (b) $\\hat{y} = 1.48 + 1.86x$ (c) It has an $x$-value far from the others, and removing it more than doubles the gradient (0.864 to 1.86). (d) About 34.9, which is impossible (maximum 25): the linear pattern cannot continue, so the line from (b) must not be extrapolated that far.",
+  "solution": "(a) With all 7 points (calculator): $a = 5.729\\ldots$, $b = 0.8643\\ldots$, so\n$$\\hat{y} = 5.73 + 0.864x \\quad (r = 0.926)$$\n\n(b) Without $(18, 20)$: $a = 1.476\\ldots$, $b = 1.857\\ldots$, so\n$$\\hat{y} = 1.48 + 1.86x \\quad (r = 0.980)$$\n\n(c) The point $(18, 20)$ has an $x$-value far larger than all the others (the rest lie between 2 and 7), so it has a large effect on the gradient. Removing it changes the gradient from $0.864$ to $1.86$, more than doubling it, and changes the intercept a lot too. A point whose removal markedly changes the regression line is **influential**.\n\n(d) $\\hat{y} = 1.48 + 1.86 \\times 18 \\approx 34.9$ marks (using unrounded coefficients). This is impossible, since the test is out of 25. The six-point line describes students who revised 2–7 hours; beyond that, marks must level off (there is a ceiling of 25), so extrapolating to 18 hours is unreliable. The point $(18, 20)$ is a genuine observation that suggests the relationship is not linear over a wide range, so it should not simply be deleted.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q11",
+  "topicId": "stat-linear-regression",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 11,
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "question": "A kiosk owner records the maximum daily temperature, $x$ °C, and the number of ice creams sold, $y$, on 10 summer days. The temperatures ranged from 15 °C to 28 °C.\n$$\\sum x = 210,\\quad \\sum y = 1340,\\quad \\sum x^2 = 4594,\\quad \\sum xy = 29\\,244,\\quad \\sum y^2 = 187\\,360$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $S_{xx} = 184$ and find $S_{xy}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the equation of the regression line of $y$ on $x$, in the form $y = a + bx$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Give an interpretation of the value of $b$ in context.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Estimate the number of ice creams sold on a day with a maximum temperature of 24 °C, and explain why it would be unwise to use the line to estimate sales on a day with a maximum temperature of 5 °C.",
+    "marks": 2
+   },
+   {
+    "label": "e",
+    "prompt": "Calculate the product moment correlation coefficient and interpret $r^2$ in context.",
+    "marks": 2
+   },
+   {
+    "label": "f",
+    "prompt": "On one of the days the maximum temperature was 25 °C and 142 ice creams were sold. Find the residual for this day and state what it tells you.",
+    "marks": 2
+   }
+  ],
+  "hint": "$S_{xx} = \\sum x^2 - \\frac{(\\sum x)^2}{n}$; the line passes through $(\\bar{x}, \\bar{y})$.",
+  "answer": "(a) $S_{xx} = 184$, $S_{xy} = 1104$ (b) $y = 8 + 6x$ (c) Each 1 °C rise in maximum temperature is associated with 6 more ice creams sold (predicted). (d) 152; 5 °C is outside the data range (15–28 °C), so it would be extrapolation. (e) $r = 0.922$; $r^2 = 0.85$, so $85\\%$ of the variation in sales is explained by the linear relationship with temperature. (f) $-16$: 16 fewer ice creams were sold than the model predicted.",
+  "solution": "(a) $S_{xx} = 4594 - \\frac{210^2}{10} = 4594 - 4410 = 184$ B1 (shown)\n\n$S_{xy} = 29244 - \\frac{210 \\times 1340}{10} = 29244 - 28140 = 1104$ B1\n\n(b) $b = \\frac{1104}{184} = 6$ M1\n\n$\\bar{x} = 21$, $\\bar{y} = 134$, $a = 134 - 6 \\times 21 = 8$, so $y = 8 + 6x$ A1\n\n(c) For each 1 °C increase in maximum temperature, the number of ice creams sold is predicted to increase by 6. B1\n\n(d) $y = 8 + 6 \\times 24 = 152$ ice creams B1\n\n5 °C lies well outside the range of the data (15–28 °C), so this would be extrapolation; the linear relationship may not hold at such low temperatures (the line predicts 38, but sales could be close to zero). B1\n\n(e) $S_{yy} = 187360 - \\frac{1340^2}{10} = 187360 - 179560 = 7800$\n\n$r = \\frac{1104}{\\sqrt{184 \\times 7800}} = 0.922$ (3 s.f.) M1 A1\n\n$r^2 = 0.850$: about $85\\%$ of the variation in ice cream sales is explained by the linear relationship with maximum temperature.\n\n(f) Predicted: $8 + 6 \\times 25 = 158$. Residual $= 142 - 158 = -16$ M1 A1\n\nThe negative residual means 16 fewer ice creams were sold than the model predicted; the point lies below the line (perhaps that day was wet or windy). (Note: residual = observed $-$ predicted, not $158 - 142$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q12",
+  "topicId": "stat-linear-regression",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A health visitor records the heights of a group of children aged between 2 and 10 years. The regression line of height, $h$ cm, on age, $t$ years, is\n$$\\hat{h} = 80 + 6t$$\n\n(a) Estimate the height of a child aged 6.5 years.\n\n(b) A parent uses the line to predict that their child will be 260 cm tall at age 30. Show how the parent obtained 260 cm and explain why the prediction is unreliable.\n\n(c) Interpret the intercept of the line, and explain why it should not be used to estimate the length of a newborn baby.",
+  "hint": "Which ages were in the data? Using the line outside that range is extrapolation.",
+  "answer": "(a) 119 cm (b) $80 + 6 \\times 30 = 260$; 30 years is far outside the data (2–10 years) and people stop growing in their late teens, so the linear pattern does not continue. (c) Predicted height at age 0 is 80 cm, but age 0 is outside the data; newborns are about 50 cm, so the intercept has no reliable meaning.",
+  "solution": "(a) $\\hat{h} = 80 + 6 \\times 6.5 = 80 + 39 = 119$ cm. This is interpolation (6.5 is within 2–10 years), so it is reasonably reliable.\n\n(b) $\\hat{h} = 80 + 6 \\times 30 = 80 + 180 = 260$ cm.\n\nThis is **extrapolation**: the data only cover ages 2 to 10. Children's growth slows and stops in the late teens, so the linear trend of 6 cm per year does not continue to age 30. A height of 260 cm is absurd.\n\n(c) The intercept, 80, is the predicted height (in cm) at age 0. But age 0 is outside the range of the data, so it is also extrapolation; growth is much faster in the first two years of life, so the line is not valid there. (A typical newborn is about 50 cm long, far from 80 cm.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q13",
+  "topicId": "stat-linear-regression",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-exponential-modelling",
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The number of bacteria, $N$, in a culture was counted every hour for 10 hours, starting at $t = 0$. A scatter graph of $N$ against $t$ was clearly curved, but a graph of $\\log_{10} N$ against $t$ was close to a straight line, with random scatter in its residual plot. The regression line of $\\log_{10} N$ on $t$ is\n$$\\log_{10} N = 2.31 + 0.152t$$\n\n(a) Show that this corresponds to a model of the form $N = ab^t$, giving the values of $a$ and $b$ to 3 significant figures.\n\n(b) Interpret the value of $b$ in context.\n\n(c) Estimate the number of bacteria after 6 hours, to 3 significant figures.\n\n(d) Use the model to estimate the time at which the count reaches 10 000, and comment on the reliability of this estimate.",
+  "hint": "Raise 10 to the power of both sides: $N = 10^{2.31} \\times (10^{0.152})^t$.",
+  "answer": "(a) $a = 204$, $b = 1.42$ (b) The count is multiplied by about 1.42 each hour (a $42\\%$ increase per hour). (c) 1670 (d) $t \\approx 11.1$ hours; unreliable, because it is outside the data range (0–10 hours) and growth may slow as nutrients run out.",
+  "solution": "(a) $N = 10^{2.31 + 0.152t} = 10^{2.31} \\times \\left(10^{0.152}\\right)^t$\n\n$a = 10^{2.31} = 204$ (3 s.f.), $b = 10^{0.152} = 1.42$ (3 s.f.), so $N = 204 \\times 1.42^t$.\n\n(b) Each hour the number of bacteria is multiplied by about 1.42, i.e. it grows by about $42\\%$ per hour. ($a = 204$ is the predicted initial count.)\n\n(c) $\\log_{10} N = 2.31 + 0.152 \\times 6 = 3.222$, so $N = 10^{3.222} = 1667.2\\ldots \\approx 1670$ bacteria.\n\n(d) $\\log_{10} 10000 = 4$, so $4 = 2.31 + 0.152t \\Rightarrow t = \\frac{1.69}{0.152} = 11.1$ hours (3 s.f.).\n\nThis lies outside the data range (0 to 10 hours), so it is extrapolation. In a real culture, growth slows when food or space runs out, so the exponential model may over-estimate the count; the estimate should be treated with caution."
+ },
+ {
+  "id": "stat-linear-regression-q14",
+  "topicId": "stat-linear-regression",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-exponential-modelling",
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 245\" width=\"340\" height=\"245\"><line x1=\"62.0\" y1=\"112.5\" x2=\"325.0\" y2=\"112.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"62.0\" y1=\"200.0\" x2=\"62.0\" y2=\"20.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"58.0\" y1=\"200.0\" x2=\"62.0\" y2=\"200.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"55.0\" y=\"204.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−0.8</text><line x1=\"58.0\" y1=\"156.2\" x2=\"62.0\" y2=\"156.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"55.0\" y=\"160.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−0.4</text><line x1=\"58.0\" y1=\"112.5\" x2=\"62.0\" y2=\"112.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"55.0\" y=\"117.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"58.0\" y1=\"68.7\" x2=\"62.0\" y2=\"68.7\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"55.0\" y=\"73.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.4</text><line x1=\"58.0\" y1=\"25.0\" x2=\"62.0\" y2=\"25.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"55.0\" y=\"29.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.8</text><line x1=\"109.0\" y1=\"108.5\" x2=\"109.0\" y2=\"116.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"109.0\" y=\"218.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"155.9\" y1=\"108.5\" x2=\"155.9\" y2=\"116.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"155.9\" y=\"218.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"202.9\" y1=\"108.5\" x2=\"202.9\" y2=\"116.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"202.9\" y=\"218.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"249.9\" y1=\"108.5\" x2=\"249.9\" y2=\"116.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"249.9\" y=\"218.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"296.8\" y1=\"108.5\" x2=\"296.8\" y2=\"116.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"296.8\" y=\"218.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><circle cx=\"80.2\" cy=\"50.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"96.0\" cy=\"101.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"109.0\" cy=\"134.9\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"133.6\" cy=\"181.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"306.4\" cy=\"94.1\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"193.5\" y=\"236.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Distance from Sun, d (AU)</text><text x=\"18.0\" y=\"112.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 18 112.5)\">Residual (years)</text></svg>",
+  "question": "The table shows the mean distance from the Sun, $d$ (in astronomical units, AU), and the orbital period, $T$ (in years), of five planets.\n\n| Planet | Mercury | Venus | Earth | Mars | Jupiter |\n|---|---|---|---|---|---|\n| $d$ (AU) | 0.387 | 0.723 | 1 | 1.524 | 5.203 |\n| $T$ (years) | 0.241 | 0.615 | 1 | 1.881 | 11.86 |\n\nA student fits a regression line of $T$ on $d$ and gets $r = 0.996$. The residual plot for this linear model is shown.\n\n(a) Explain why the student should not use the linear model, despite $r = 0.996$.\n\n(b) Show that if $T = kd^n$, then $\\log_{10} T$ is a linear function of $\\log_{10} d$.\n\n(c) Use your calculator to find the regression line of $\\log_{10} T$ on $\\log_{10} d$, and hence find $k$ and $n$ to 2 decimal places.\n\n(d) Use your model, with $k$ and $n$ rounded to 2 decimal places, to predict the orbital period of Saturn, whose mean distance from the Sun is 9.537 AU. Give your answer to 3 significant figures.",
+  "hint": "Take logs of $T = kd^n$ and use the laws of logarithms. For (a), look at the pattern of signs in the residual plot.",
+  "answer": "(a) The residuals show a curved pattern (positive, negative, then positive again), so the relationship is not linear. (b) $\\log_{10} T = \\log_{10} k + n \\log_{10} d$ (c) $\\log_{10} T = 0.000 + 1.499 \\log_{10} d$; $k = 1.00$, $n = 1.50$ (d) 29.5 years",
+  "solution": "(a) The residuals are $+0.57$, $+0.10$, $-0.20$, $-0.63$, then $+0.17$ for Jupiter: positive at both ends and negative in the middle. This systematic curved pattern shows that a straight line is the wrong shape for the data, however close $r$ is to 1. ($r$ is high mainly because Jupiter's point is so far from the others.)\n\n(b) Taking logs of $T = kd^n$:\n$$\\log_{10} T = \\log_{10} k + \\log_{10} d^n = \\log_{10} k + n\\log_{10} d$$\nThis has the form $Y = c + nX$ with $Y = \\log_{10} T$, $X = \\log_{10} d$ and $c = \\log_{10} k$, a straight line with gradient $n$.\n\n(c) Values of $X = \\log_{10} d$: $-0.4123, -0.1409, 0, 0.1830, 0.7163$.\nValues of $Y = \\log_{10} T$: $-0.6180, -0.2111, 0, 0.2744, 1.0741$.\n\nCalculator: $Y = 0.0000908 + 1.4994X$ (with $r = 1.0000$ to 4 d.p., and residuals all less than $0.0002$ in size, with no pattern).\n\n$n = 1.50$ and $k = 10^{0.0000908} = 1.00$ (2 d.p.), so $T = d^{1.5}$, i.e. $T^2 = d^3$ (Kepler's third law).\n\n(d) $T = 1.00 \\times 9.537^{1.50} = 29.45\\ldots \\approx 29.5$ years.\n\n(This is an extrapolation beyond $d = 5.203$, which is usually risky; here it works well (Saturn's actual period is about 29.5 years) because the power law has a physical basis.)"
+ },
+ {
+  "id": "stat-linear-regression-q15",
+  "topicId": "stat-linear-regression",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "For a set of bivariate data, the regression line of $y$ on $x$ is\n$$y = 2 + 0.5x$$\nand the regression line of $x$ on $y$ (used for predicting $x$ from $y$) is\n$$x = -1 + 1.6y$$\n\n(a) Find the mean values $\\bar{x}$ and $\\bar{y}$.\n\n(b) Given that the gradient of the regression line of $y$ on $x$ is $r\\frac{s_y}{s_x}$ and the gradient of the regression line of $x$ on $y$ is $r\\frac{s_x}{s_y}$, find the value of $r$, to 3 decimal places.\n\n(c) Explain why it is impossible for a data set to have regression lines $y = 2 + 0.5x$ and $x = 3 + 2.5y$.",
+  "hint": "Both regression lines pass through $(\\bar{x}, \\bar{y})$. Multiply the two gradients together.",
+  "answer": "(a) $\\bar{x} = 11$, $\\bar{y} = 7.5$ (b) $r = 0.894$ (c) The product of the gradients would be $0.5 \\times 2.5 = 1.25 = r^2 > 1$, which is impossible since $-1 \\le r \\le 1$.",
+  "solution": "(a) Both regression lines pass through $(\\bar{x}, \\bar{y})$, so solve simultaneously. Substitute $y = 2 + 0.5x$ into $x = -1 + 1.6y$:\n$$x = -1 + 1.6(2 + 0.5x) = 2.2 + 0.8x \\Rightarrow 0.2x = 2.2 \\Rightarrow x = 11$$\nThen $y = 2 + 0.5 \\times 11 = 7.5$. So $\\bar{x} = 11$, $\\bar{y} = 7.5$.\n\n(b) Multiply the gradients:\n$$r\\frac{s_y}{s_x} \\times r\\frac{s_x}{s_y} = r^2 \\Rightarrow r^2 = 0.5 \\times 1.6 = 0.8$$\nBoth gradients are positive, so $r$ is positive: $r = \\sqrt{0.8} = 0.894$ (3 d.p.).\n\n(c) For these lines the product of the gradients would be $0.5 \\times 2.5 = 1.25$, which would mean $r^2 = 1.25$. But $-1 \\le r \\le 1$, so $r^2 \\le 1$. Hence no data set can have both of these regression lines.\n\n(The product of gradients equals 1 only when $r = \\pm 1$, when the two lines coincide.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-linear-regression-q16",
+  "topicId": "stat-linear-regression",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-optimisation",
+   "calc-differentiation-basics"
+  ],
+  "question": "In an experiment, loads of $x$ newtons are hung from a spring and the extension, $e$ mm, is measured.\n\n| $x$ (N) | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| $e$ (mm) | 2.1 | 3.9 | 6.2 | 7.8 | 10.1 |\n\nPhysics suggests the model $e = bx$, a line through the origin.\n\n(a) The sum of squared residuals for this model is $S(b) = \\sum (e - bx)^2$. Use calculus to show that $S(b)$ is minimised when\n$$b = \\frac{\\sum xe}{\\sum x^2}$$\nand justify that this gives a minimum.\n\n(b) Find $b$ for these data, to 3 decimal places.\n\n(c) Use the model to estimate the extension for a load of 3.5 N, and explain why this estimate is reasonably reliable.",
+  "hint": "Treat $S$ as a function of $b$ only; the data values are constants. Differentiate each term $(e - bx)^2$ with respect to $b$ using the chain rule, or expand first.",
+  "answer": "(a) $S'(b) = -2\\sum x(e - bx) = 0 \\Rightarrow b = \\frac{\\sum xe}{\\sum x^2}$; $S''(b) = 2\\sum x^2 > 0$, so minimum. (b) $b = \\frac{110.2}{55} = 2.004$ (c) 7.0 mm; 3.5 N is within the data range (interpolation) and the points lie very close to the line.",
+  "solution": "(a) Expand: $S(b) = \\sum (e^2 - 2bxe + b^2x^2) = \\sum e^2 - 2b\\sum xe + b^2\\sum x^2$.\n\nDifferentiate with respect to $b$ (the sums are constants):\n$$S'(b) = -2\\sum xe + 2b\\sum x^2$$\nSetting $S'(b) = 0$: $b\\sum x^2 = \\sum xe \\Rightarrow b = \\dfrac{\\sum xe}{\\sum x^2}$.\n\n$S''(b) = 2\\sum x^2 > 0$ (the $x$-values are not all zero), so this stationary point is a minimum.\n\n(b) $\\sum xe = 1(2.1) + 2(3.9) + 3(6.2) + 4(7.8) + 5(10.1) = 2.1 + 7.8 + 18.6 + 31.2 + 50.5 = 110.2$\n\n$\\sum x^2 = 1 + 4 + 9 + 16 + 25 = 55$\n\n$b = \\frac{110.2}{55} = 2.0036\\ldots = 2.004$ (3 d.p.), so $e = 2.004x$.\n\n(c) $e = 2.004 \\times 3.5 = 7.01 \\approx 7.0$ mm.\n\nThis is interpolation (3.5 N lies between 1 N and 5 N), and the data fit the line very closely (e.g. at $x = 3$ the model gives $6.01$ mm against $6.2$ mm observed), so the estimate is reasonably reliable. (The model could fail for much larger loads, beyond the spring's elastic limit.)"
+ },
+ {
+  "id": "stat-linear-regression-q17",
+  "topicId": "stat-linear-regression",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "A teacher measured the arm span, $x$ cm, and height, $y$ cm, of a random sample of 30 students. Computer output for the least-squares regression of height on arm span is shown.\n\n| Predictor | Coef | SE Coef |\n|---|---|---|\n| Constant | 18.6 | 6.42 |\n| Arm span | 0.89 | 0.08 |\n\n$s = 3.1$, R-sq $= 81.0\\%$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write the equation of the least-squares regression line. Define any variables you use.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Interpret the slope of the regression line in context.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "One student has an arm span of 165 cm and a height of 169 cm. Calculate and interpret the residual for this student.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the value of the correlation coefficient $r$, and interpret the value of R-sq in context.",
+    "marks": 2
+   }
+  ],
+  "hint": "The \"Coef\" column gives the intercept (Constant) and the slope (Arm span). R-sq is $r^2$.",
+  "answer": "(a) $\\hat{y} = 18.6 + 0.89x$, $y$ = predicted height (cm), $x$ = arm span (cm) (b) For each extra 1 cm of arm span, predicted height increases by 0.89 cm. (c) $169 - 165.45 = 3.55$ cm: the student is 3.55 cm taller than predicted. (d) $r = 0.9$; $81\\%$ of the variation in height is explained by the linear relationship with arm span.",
+  "solution": "(a) $\\widehat{\\text{height}} = 18.6 + 0.89 \\times \\text{arm span}$, i.e. $\\hat{y} = 18.6 + 0.89x$ where $\\hat{y}$ is the predicted height in cm and $x$ is the arm span in cm. 1 pt (must use a \"hat\" or say \"predicted\", and define variables)\n\n(b) For each additional 1 cm of arm span, the **predicted** height increases by 0.89 cm. 1 pt (context and \"predicted\")\n\n(c) $\\hat{y} = 18.6 + 0.89 \\times 165 = 165.45$ cm 1 pt\n\nResidual $= y - \\hat{y} = 169 - 165.45 = 3.55$ cm. The student is 3.55 cm taller than the model predicts from their arm span. 1 pt (correct sign and interpretation)\n\n(d) $r = +\\sqrt{0.81} = 0.9$, positive because the slope is positive. 1 pt\n\nR-sq: $81\\%$ of the variation in students' heights is explained by the linear relationship with arm span. 1 pt\n\n(Also: $s = 3.1$ means actual heights typically differ from the predicted heights by about 3.1 cm.)",
+  "linkedTopicIds": []
+ }
+]

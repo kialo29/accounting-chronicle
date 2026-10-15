@@ -1,0 +1,271 @@
+[
+ {
+  "id": "prob-combining-random-variables-q01",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random variable $X$ has mean $\\mu_X = 50$ and standard deviation $\\sigma_X = 8$.\n\nFind the mean and standard deviation of $Y = X + 20$.",
+  "hint": "Adding 20 moves every value up by 20. Does that change how spread out the values are?",
+  "answer": "$\\mu_Y = 70$, $\\sigma_Y = 8$",
+  "solution": "Adding a constant shifts every value, and so the center, by 20:\n$$\\mu_Y = \\mu_X + 20 = 50 + 20 = 70$$\n\nThe distances between values are unchanged, so the spread is unchanged:\n$$\\sigma_Y = \\sigma_X = 8$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q02",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A random variable $X$ has mean $\\mu_X = 50$ and standard deviation $\\sigma_X = 8$.\n\nFind the mean and standard deviation of $Y = 3X$.",
+  "hint": "Multiplying by 3 stretches every value, and every distance between values, by a factor of 3.",
+  "answer": "$\\mu_Y = 150$, $\\sigma_Y = 24$",
+  "solution": "**What changed:** instead of adding 20, we now multiply by 3.\n\nMultiplying scales the center:\n$$\\mu_Y = 3\\mu_X = 3(50) = 150$$\n\nIt also scales every gap between values, so it scales the spread:\n$$\\sigma_Y = 3\\sigma_X = 3(8) = 24$$\n(The variance is multiplied by $3^2 = 9$: $\\sigma_Y^2 = 9 \\times 64 = 576$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q03",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A random variable $X$ has mean $\\mu_X = 50$ and standard deviation $\\sigma_X = 8$.\n\nFind the mean and standard deviation of $Y = 3X + 20$.",
+  "hint": "Combine the two previous results. Which parts of $3X + 20$ affect the spread?",
+  "answer": "$\\mu_Y = 170$, $\\sigma_Y = 24$",
+  "solution": "**What changed:** both operations at once, multiply by 3 **then** add 20.\n\n$$\\mu_Y = 3\\mu_X + 20 = 3(50) + 20 = 170$$\n\nOnly the multiplication affects the spread; the $+20$ does not:\n$$\\sigma_Y = 3\\sigma_X = 24 \\quad (\\text{not } 3(8) + 20 = 44)$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q04",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A random variable $X$ has mean $\\mu_X = 50$ and standard deviation $\\sigma_X = 8$.\n\nFind the mean, standard deviation and variance of $Y = 20 - 3X$.",
+  "hint": "Write $Y = 20 + (-3)X$. Can a standard deviation be negative?",
+  "answer": "$\\mu_Y = -130$, $\\sigma_Y = 24$, $\\sigma_Y^2 = 576$",
+  "solution": "**What changed:** the multiplier is now $-3$ instead of $3$.\n\n$$\\mu_Y = 20 - 3\\mu_X = 20 - 150 = -130$$\n\nMultiplying by $-3$ flips the distribution over and stretches it by 3. Flipping does not change the spread, so\n$$\\sigma_Y = |-3|\\,\\sigma_X = 3(8) = 24, \\qquad \\sigma_Y^2 = (-3)^2\\sigma_X^2 = 9(64) = 576$$\n\nThe standard deviation is the same as for $3X + 20$; only the mean has changed.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q05",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "$X$ and $Y$ are independent random variables with $\\mu_X = 10$, $\\sigma_X = 3$, $\\mu_Y = 15$ and $\\sigma_Y = 4$.\n\nFind the mean and standard deviation of\n(a) $X + Y$\n(b) $Y - X$",
+  "hint": "Means add or subtract as you would expect. For independent variables, **variances** always add, for sums and for differences.",
+  "answer": "(a) $\\mu = 25$, $\\sigma = 5$ (b) $\\mu = 5$, $\\sigma = 5$",
+  "solution": "(a)\n$$\\mu_{X+Y} = 10 + 15 = 25$$\n$$\\sigma_{X+Y}^2 = 3^2 + 4^2 = 25 \\;\\Rightarrow\\; \\sigma_{X+Y} = 5$$\n(Not $3 + 4 = 7$: standard deviations do not add.)\n\n(b)\n$$\\mu_{Y-X} = 15 - 10 = 5$$\n$$\\sigma_{Y-X}^2 = 4^2 + 3^2 = 25 \\;\\Rightarrow\\; \\sigma_{Y-X} = 5$$\nThe variances still **add**: subtracting a random quantity adds its uncertainty, it doesn't remove it.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q06",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The weight of cereal put into a box by a filling machine has mean 16 oz and standard deviation 0.3 oz. The weight of an empty box has mean 2 oz and standard deviation 0.4 oz. The two weights are independent.\n\nMarcus finds the mean and standard deviation of the total weight of a filled box. His work is shown.\n\nMean $= 16 + 2 = 18$ oz\n\nStandard deviation $= 0.3 + 0.4 = 0.7$ oz\n\nIdentify Marcus's error, explain it, and find the correct standard deviation.",
+  "hint": "Which quantities add when two independent random variables are added: the standard deviations or the variances?",
+  "answer": "Marcus added the standard deviations. Variances add: $\\sigma = \\sqrt{0.3^2 + 0.4^2} = 0.5$ oz. (His mean of 18 oz is correct.)",
+  "solution": "The mean is correct: $\\mu_T = 16 + 2 = 18$ oz.\n\n**Error:** the second line. For independent random variables the **variances** add, not the standard deviations. Adding standard deviations assumes that whenever one weight is high the other is high too, which would be true only if they were perfectly linked. Because they are independent, a heavy fill is often paired with a light box, and some of the variation cancels out.\n\n**Correct work:**\n$$\\sigma_T^2 = 0.3^2 + 0.4^2 = 0.09 + 0.16 = 0.25$$\n$$\\sigma_T = \\sqrt{0.25} = 0.5 \\text{ oz}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q07",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "question": "Ana's 100-meter times are approximately normal with mean 12.4 seconds and standard deviation 0.25 seconds. Bella's times are approximately normal with mean 12.6 seconds and standard deviation 0.20 seconds. Their times in a race are independent.\n\nTyler wants the probability that Bella beats Ana (has the shorter time). His work is shown.\n\nLet $D = A - B$. $\\mu_D = 12.4 - 12.6 = -0.2$\n\n$\\sigma_D^2 = 0.25^2 - 0.20^2 = 0.0225$, so $\\sigma_D = 0.15$\n\n$P(D > 0) = P\\left(z > \\dfrac{0.2}{0.15}\\right) = P(z > 1.33) \\approx 0.091$\n\n(a) Identify Tyler's error and explain why it is wrong.\n(b) Find the correct probability that Bella beats Ana.",
+  "hint": "Should the uncertainty in a difference be smaller or larger than the uncertainty in each time on its own?",
+  "answer": "(a) Tyler subtracted the variances; for a difference of independent random variables the variances add. (b) $\\sigma_D = \\sqrt{0.1025} \\approx 0.320$ s, $P(D > 0) \\approx 0.266$.",
+  "solution": "(a) **Error:** the second line. Tyler subtracted the variances because $D$ is a difference. But both times vary, and each adds its own uncertainty to $D$, so the variances **add**:\n$$\\sigma_D^2 = \\sigma_A^2 + \\sigma_B^2$$\nTyler's $\\sigma_D = 0.15$ s is even smaller than $\\sigma_B = 0.20$ s, which cannot be right: $D$ can't be less variable than one of its parts.\n\n(b) $\\mu_D = -0.2$ s (correct), and\n$$\\sigma_D = \\sqrt{0.25^2 + 0.20^2} = \\sqrt{0.0625 + 0.04} = \\sqrt{0.1025} \\approx 0.3202 \\text{ s}$$\n\n$D$ is a difference of independent normal random variables, so $D$ is normal. Bella wins when $B < A$, i.e. $D > 0$:\n$$P(D > 0) = P\\left(z > \\frac{0 - (-0.2)}{0.3202}\\right) = P(z > 0.625) \\approx 0.266$$\n\nBella beats Ana in about 26.6% of races, much more often than Tyler's 9.1% suggested."
+ },
+ {
+  "id": "prob-combining-random-variables-q08",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "In a European city, the daily high temperature $C$ in July has mean $20^\\circ\\text{C}$ and standard deviation $4^\\circ\\text{C}$. Temperatures are converted to Fahrenheit using $F = 1.8C + 32$.\n\nJordan converts the summary statistics. His work is shown.\n\nMean: $\\mu_F = 1.8(20) + 32 = 68^\\circ\\text{F}$\n\nStandard deviation: $\\sigma_F = 1.8(4) + 32 = 39.2^\\circ\\text{F}$\n\nIdentify Jordan's error, explain it, and give the correct standard deviation in $^\\circ\\text{F}$.",
+  "hint": "If every temperature in July went up by 32 degrees, would the temperatures be any more spread out?",
+  "answer": "Jordan added 32 to the standard deviation. Adding a constant does not change spread: $\\sigma_F = 1.8 \\times 4 = 7.2^\\circ\\text{F}$. (His mean of $68^\\circ\\text{F}$ is correct.)",
+  "solution": "The mean is correct: $\\mu_F = 1.8(20) + 32 = 68^\\circ\\text{F}$.\n\n**Error:** the second line. Adding 32 shifts every temperature up by the same amount, so the distances between temperatures, and so the spread, are unchanged. Only the multiplication by 1.8 changes the spread.\n\n**Correct work:**\n$$\\sigma_F = |1.8|\\,\\sigma_C = 1.8 \\times 4 = 7.2^\\circ\\text{F}$$\n\nSense check: a typical day is within about one standard deviation of the mean, i.e. $16$ to $24^\\circ\\text{C}$, which is about $61$ to $75^\\circ\\text{F}$, a spread of about $7^\\circ\\text{F}$ each side, not $39^\\circ\\text{F}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q09",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Let $X$ be the result of rolling a fair six-sided die once. Then $\\mu_X = 3.5$ and $\\sigma_X^2 = \\dfrac{35}{12}$.\n\nTwo games are offered:\n* **Game A:** roll the die once and double the result: score $2X$.\n* **Game B:** roll the die twice and add the results: score $X_1 + X_2$.\n\n(a) Show that both games have the same mean score.\n(b) Find the standard deviation of the score in each game, to 3 decimal places.\n(c) Explain why the two standard deviations are different.\n(d) Find the probability of scoring 12 in each game, and explain how this is consistent with your answer to (b).",
+  "hint": "$2X$ is a linear transformation of one roll. $X_1 + X_2$ is a sum of two independent rolls, so add variances.",
+  "answer": "(a) both $7$ (b) Game A: $3.416$; Game B: $2.415$ (c) In Game B the two rolls are independent, so a high roll is often balanced by a low one; in Game A one roll's deviation is doubled. (d) Game A: $\\frac{1}{6}$; Game B: $\\frac{1}{36}$; extreme scores are more likely in Game A, which has the larger spread.",
+  "solution": "(a) Game A: $\\mu_{2X} = 2(3.5) = 7$. Game B: $\\mu_{X_1 + X_2} = 3.5 + 3.5 = 7$. The same.\n\n(b) Game A (linear transformation):\n$$\\sigma_{2X} = 2\\sigma_X = 2\\sqrt{\\tfrac{35}{12}} \\approx 3.416$$\n\nGame B (independent rolls, variances add):\n$$\\sigma_{X_1 + X_2} = \\sqrt{\\tfrac{35}{12} + \\tfrac{35}{12}} = \\sqrt{\\tfrac{35}{6}} \\approx 2.415$$\n\n(c) In Game A, a single roll decides everything: if it is far from 3.5, the doubled score is twice as far from 7. In Game B, the two rolls are independent, so a high first roll is often paired with an ordinary or low second roll and they partly cancel. That is why $\\sigma_{X_1 + X_2} = \\sqrt{2}\\,\\sigma_X$ is smaller than $\\sigma_{2X} = 2\\sigma_X$.\n\n(d) Game A: 12 needs one roll of 6, $P = \\frac{1}{6}$.\nGame B: 12 needs 6 **and** 6, $P = \\frac{1}{6} \\times \\frac{1}{6} = \\frac{1}{36}$.\n\nThe extreme score 12 is six times as likely in Game A, which matches Game A having the larger standard deviation.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q10",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 4,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "question": "The weights of adults using an office elevator are approximately normally distributed with mean 180 lb and standard deviation 30 lb. A sign in the elevator says \"Maximum load 2000 lb or 10 persons\".\n\nTen adults, chosen at random, get into the elevator. Assume their weights are independent.\n\n(a) Find the mean and standard deviation of the total weight $T$ of the 10 adults.\n(b) Find the probability that the total weight exceeds 2000 lb.\n(c) Kayla calculated the standard deviation of $T$ as $10 \\times 30 = 300$ lb. Explain her mistake, and what probability she would have got in (b).",
+  "hint": "$T = X_1 + X_2 + \\dots + X_{10}$, a sum of 10 independent weights, not $10X$.",
+  "answer": "(a) $\\mu_T = 1800$ lb, $\\sigma_T = 30\\sqrt{10} \\approx 94.87$ lb (b) $\\approx 0.0175$ (c) She treated the total as $10X$ (one weight multiplied by 10) instead of 10 independent weights; she would get $P(z > 0.67) \\approx 0.252$.",
+  "solution": "(a) $T = X_1 + X_2 + \\dots + X_{10}$, where the $X_i$ are independent.\n$$\\mu_T = 10 \\times 180 = 1800 \\text{ lb}$$\n$$\\sigma_T^2 = 10 \\times 30^2 = 9000 \\;\\Rightarrow\\; \\sigma_T = \\sqrt{9000} = 30\\sqrt{10} \\approx 94.87 \\text{ lb}$$\n\n(b) A sum of independent normal random variables is normal, so $T$ is approximately normal.\n$$P(T > 2000) = P\\left(z > \\frac{2000 - 1800}{94.87}\\right) = P(z > 2.108) \\approx 0.0175$$\nAbout 1.75% of random groups of ten would exceed the limit.\n\n(c) $10 \\times 30$ is the standard deviation of $10X$: one person's weight multiplied by 10, as if all ten people had exactly the same weight. Ten **different** people's weights vary independently, so heavier and lighter people partly balance out and the variances add instead: $\\sigma_T = \\sqrt{10} \\times 30$.\n\nWith $\\sigma = 300$: $P\\left(z > \\frac{200}{300}\\right) = P(z > 0.667) \\approx 0.252$, which greatly overstates the risk."
+ },
+ {
+  "id": "prob-combining-random-variables-q11",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": true,
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "question": "A self-serve soda machine at a movie theater dispenses an amount of soda $X$ that is approximately normally distributed with mean 16.2 fluid ounces (fl oz) and standard deviation 0.3 fl oz. The capacity $Y$ of the theater's cups is approximately normally distributed with mean 16.8 fl oz and standard deviation 0.2 fl oz. The amount dispensed and the cup used are independent.\n\nA cup overflows if the amount dispensed is greater than the capacity of the cup.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Let $D = Y - X$. Find the mean and standard deviation of $D$. Show your work.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that a randomly selected cup overflows. Show the work that leads to your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "A customer fills two cups. Assuming the two amounts dispensed are independent, find the probability that the total amount of soda dispensed is less than 32 fl oz. Explain why the standard deviation of the total is **not** $2 \\times 0.3$ fl oz.",
+    "marks": 3
+   }
+  ],
+  "hint": "For a difference of independent random variables, the means subtract but the variances add. Overflow means $D < 0$.",
+  "answer": "(a) $\\mu_D = 0.6$ fl oz, $\\sigma_D = \\sqrt{0.13} \\approx 0.361$ fl oz (b) $P(D < 0) \\approx 0.048$ (c) $\\mu = 32.4$, $\\sigma = \\sqrt{0.18} \\approx 0.424$ fl oz, $P \\approx 0.173$; the two amounts are independent observations, not one amount doubled, so variances add: $\\sigma = \\sqrt{2}(0.3)$.",
+  "solution": "**(a)**\n$$\\mu_D = \\mu_Y - \\mu_X = 16.8 - 16.2 = 0.6 \\text{ fl oz}$$ (1 pt)\n$$\\sigma_D = \\sqrt{\\sigma_Y^2 + \\sigma_X^2} = \\sqrt{0.2^2 + 0.3^2} = \\sqrt{0.13} \\approx 0.361 \\text{ fl oz}$$ (1 pt: variances added, not subtracted)\n\n**(b)** $D$ is a difference of independent normal random variables, so $D$ is normal with mean 0.6 and SD 0.361. The cup overflows when $X > Y$, i.e. $D < 0$:\n$$P(D < 0) = P\\left(z < \\frac{0 - 0.6}{0.361}\\right) = P(z < -1.664)$$ (1 pt: correct normal model and boundary)\n$$\\approx 0.048$$ (1 pt)\n\n**(c)** Let $S = X_1 + X_2$, with $X_1$, $X_2$ independent.\n$$\\mu_S = 16.2 + 16.2 = 32.4 \\text{ fl oz}, \\qquad \\sigma_S = \\sqrt{0.3^2 + 0.3^2} = \\sqrt{0.18} \\approx 0.424 \\text{ fl oz}$$ (1 pt)\n\n$S$ is normal, so\n$$P(S < 32) = P\\left(z < \\frac{32 - 32.4}{0.424}\\right) = P(z < -0.943) \\approx 0.173$$ (1 pt)\n\nThe SD of $2X$ would be $2(0.3) = 0.6$, but that models one amount dispensed and then exactly copied. The two fills are independent, so a large first fill is often paired with a smaller second fill; their variances add, giving $\\sqrt{2}(0.3) \\approx 0.424 < 0.6$. (1 pt)"
+ },
+ {
+  "id": "prob-combining-random-variables-q12",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "prob-discrete-random-variables"
+  ],
+  "question": "The number of cars $X$ that a salesperson sells on a weekday has the probability distribution below.\n\n| $x$ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| $P(X = x)$ | $0.3$ | $0.4$ | $0.2$ | $0.1$ |\n\nThe salesperson is paid \\$80 per day plus a commission of \\$500 per car sold.\n\n(a) Find the mean and standard deviation of $X$.\n(b) Find the mean and standard deviation of the salesperson's daily pay.\n(c) Assuming sales on different days are independent, find the mean and standard deviation of the total pay for a 5-day week.",
+  "hint": "Daily pay is $Y = 80 + 500X$, a linear transformation. Weekly pay is the sum of 5 independent days, $Y_1 + \\dots + Y_5$, not $5Y$.",
+  "answer": "(a) $\\mu_X = 1.1$, $\\sigma_X \\approx 0.943$ (b) $\\mu_Y = \\$630$, $\\sigma_Y \\approx \\$471.70$ (c) mean $\\$3150$, standard deviation $\\approx \\$1054.75$",
+  "solution": "(a)\n$$\\mu_X = 0(0.3) + 1(0.4) + 2(0.2) + 3(0.1) = 1.1 \\text{ cars}$$\n$$\\sigma_X^2 = (0 - 1.1)^2(0.3) + (1 - 1.1)^2(0.4) + (2 - 1.1)^2(0.2) + (3 - 1.1)^2(0.1)$$\n$$= 0.363 + 0.004 + 0.162 + 0.361 = 0.89, \\qquad \\sigma_X = \\sqrt{0.89} \\approx 0.943 \\text{ cars}$$\n\n(b) $Y = 80 + 500X$:\n$$\\mu_Y = 80 + 500(1.1) = \\$630$$\n$$\\sigma_Y = 500\\sigma_X = 500\\sqrt{0.89} \\approx \\$471.70$$\n(The \\$80 base pay shifts the mean but does not affect the spread.)\n\n(c) $W = Y_1 + Y_2 + Y_3 + Y_4 + Y_5$, independent days:\n$$\\mu_W = 5(630) = \\$3150$$\n$$\\sigma_W = \\sqrt{5\\sigma_Y^2} = \\sqrt{5}\\,(471.70) \\approx \\$1054.75$$\n(Using $5\\sigma_Y \\approx \\$2358.50$ would wrongly treat the week as one day's pay multiplied by 5.)"
+ },
+ {
+  "id": "prob-combining-random-variables-q13",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "stat-sampling-distributions"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The lifetime of a brand of AA battery in a game controller has mean $\\mu = 40$ hours and standard deviation $\\sigma = 6$ hours. A sample of $n$ batteries is chosen at random, with lifetimes $X_1, X_2, \\dots, X_n$ (independent), and the sample mean is\n$$\\bar{x} = \\frac{X_1 + X_2 + \\dots + X_n}{n}$$\n\n(a) For $n = 4$, use the rules for combining random variables to find the mean and standard deviation of the sum $X_1 + X_2 + X_3 + X_4$, and hence of $\\bar{x}$.\n(b) Show that, in general, $\\mu_{\\bar{x}} = \\mu$ and $\\sigma_{\\bar{x}} = \\dfrac{\\sigma}{\\sqrt{n}}$.\n(c) How many batteries must be sampled for the standard deviation of $\\bar{x}$ to be at most 1 hour?",
+  "hint": "First add the $n$ independent lifetimes (variances add), then divide by $n$, which is a linear transformation with $b = \\frac{1}{n}$.",
+  "answer": "(a) sum: mean 160 h, SD 12 h; $\\bar{x}$: mean 40 h, SD 3 h (b) $\\mu_{\\bar{x}} = \\frac{n\\mu}{n} = \\mu$, $\\sigma_{\\bar{x}} = \\frac{\\sqrt{n}\\,\\sigma}{n} = \\frac{\\sigma}{\\sqrt{n}}$ (c) $n \\ge 36$",
+  "solution": "(a) Sum $S = X_1 + X_2 + X_3 + X_4$:\n$$\\mu_S = 4(40) = 160 \\text{ h}, \\qquad \\sigma_S = \\sqrt{4 \\times 6^2} = \\sqrt{144} = 12 \\text{ h}$$\n\n$\\bar{x} = \\frac{1}{4}S$, a linear transformation:\n$$\\mu_{\\bar{x}} = \\tfrac{1}{4}(160) = 40 \\text{ h}, \\qquad \\sigma_{\\bar{x}} = \\tfrac{1}{4}(12) = 3 \\text{ h}$$\n\n(b) For the sum of $n$ independent lifetimes:\n$$\\mu_S = n\\mu, \\qquad \\sigma_S^2 = n\\sigma^2 \\;\\Rightarrow\\; \\sigma_S = \\sqrt{n}\\,\\sigma$$\n(not $n\\sigma$, since the $X_i$ are independent observations, not one lifetime multiplied by $n$).\n\nDividing by $n$:\n$$\\mu_{\\bar{x}} = \\frac{n\\mu}{n} = \\mu, \\qquad \\sigma_{\\bar{x}} = \\frac{\\sqrt{n}\\,\\sigma}{n} = \\frac{\\sigma}{\\sqrt{n}}$$\n\n(c)\n$$\\frac{6}{\\sqrt{n}} \\le 1 \\;\\Rightarrow\\; \\sqrt{n} \\ge 6 \\;\\Rightarrow\\; n \\ge 36$$\nAt least **36** batteries."
+ },
+ {
+  "id": "prob-combining-random-variables-q14",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A basketball player makes each free throw with probability $p$, independently of other throws. For a single throw, let $I = 1$ if the throw is made and $I = 0$ if it is missed.\n\n(a) Show that $\\mu_I = p$ and $\\sigma_I^2 = p(1 - p)$.\n(b) The player takes $n$ free throws. Explain why the number made, $X$, can be written as $X = I_1 + I_2 + \\dots + I_n$, and hence derive the formulas for the mean and standard deviation of a binomial random variable.\n(c) A player with $p = 0.8$ takes 50 free throws in practice. Find the mean and standard deviation of the number made.\n(d) A student claims: \"Since $X = I_1 + \\dots + I_n$, we have $X = nI$, so $\\sigma_X = n\\sqrt{p(1-p)}$.\" Explain why this is wrong.",
+  "hint": "In (a), $I$ takes only the values 0 and 1, and $I^2 = I$. In (b), each $I_k$ records one throw, and the throws are independent.",
+  "answer": "(a) $\\mu_I = 0(1-p) + 1(p) = p$; $\\sigma_I^2 = (0 - p)^2(1 - p) + (1 - p)^2 p = p(1-p)$ (b) $\\mu_X = np$, $\\sigma_X = \\sqrt{np(1-p)}$ (c) $\\mu = 40$, $\\sigma = \\sqrt{8} \\approx 2.83$ (d) $nI$ would mean all $n$ throws have the same outcome; the throws are independent, so variances add, giving $\\sqrt{n}$ not $n$.",
+  "solution": "(a) The distribution of $I$:\n\n| $i$ | 0 | 1 |\n|---|---|---|\n| $P(I = i)$ | $1 - p$ | $p$ |\n\n$$\\mu_I = 0(1 - p) + 1(p) = p$$\n$$\\sigma_I^2 = (0 - p)^2(1 - p) + (1 - p)^2 p = p(1 - p)\\,[p + (1 - p)] = p(1 - p)$$\n\n(b) Each $I_k$ is 1 if throw $k$ is made and 0 if not, so adding them counts the throws made: $X = I_1 + \\dots + I_n$. The throws are independent, so the $I_k$ are independent with the same distribution:\n$$\\mu_X = \\mu_{I_1} + \\dots + \\mu_{I_n} = np$$\n$$\\sigma_X^2 = \\sigma_{I_1}^2 + \\dots + \\sigma_{I_n}^2 = np(1 - p) \\;\\Rightarrow\\; \\sigma_X = \\sqrt{np(1 - p)}$$\n\n(c)\n$$\\mu_X = 50(0.8) = 40 \\text{ throws}, \\qquad \\sigma_X = \\sqrt{50(0.8)(0.2)} = \\sqrt{8} \\approx 2.83 \\text{ throws}$$\n\n(d) $nI$ means one throw's result multiplied by $n$: either all $n$ throws are made or all are missed. That is not what happens; each throw is a separate, independent trial. Variances of independent random variables add, so the SD grows like $\\sqrt{n}$:\n$$\\sigma_X = \\sqrt{n}\\,\\sqrt{p(1-p)}, \\quad \\text{not} \\quad n\\sqrt{p(1-p)}$$\nFor $n = 50$, $p = 0.8$, the student's formula would give $50(0.4) = 20$, far too big for a count that is mostly between 35 and 45."
+ },
+ {
+  "id": "prob-combining-random-variables-q15",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "$X$ and $Y$ are independent random variables. It is known that\n$$\\sigma_{X+Y} = 10 \\quad \\text{and} \\quad \\sigma_{X - 2Y} = 14$$\n\n(a) Find $\\sigma_X$ and $\\sigma_Y$, giving exact answers.\n(b) Without further calculation, state $\\sigma_{X - Y}$, and explain your answer.\n(c) Find $\\sigma_{3X - 2Y + 5}$, giving your answer to 2 decimal places.",
+  "hint": "Work with variances: $\\sigma_{X - 2Y}^2 = \\sigma_X^2 + (-2)^2\\sigma_Y^2$. Let $a = \\sigma_X^2$ and $b = \\sigma_Y^2$.",
+  "answer": "(a) $\\sigma_X = \\sqrt{68} = 2\\sqrt{17} \\approx 8.25$, $\\sigma_Y = \\sqrt{32} = 4\\sqrt{2} \\approx 5.66$ (b) $\\sigma_{X-Y} = 10$, since $\\sigma_{X-Y}^2 = \\sigma_X^2 + \\sigma_Y^2 = \\sigma_{X+Y}^2$ (c) $\\sqrt{740} \\approx 27.20$",
+  "solution": "Let $a = \\sigma_X^2$ and $b = \\sigma_Y^2$.\n\n(a) Since $X$ and $Y$ are independent, variances add (with squared coefficients):\n$$\\sigma_{X+Y}^2 = a + b = 100 \\quad (1)$$\n$$\\sigma_{X-2Y}^2 = a + (-2)^2 b = a + 4b = 196 \\quad (2)$$\n\n$(2) - (1)$: $3b = 96$, so $b = 32$, and $a = 100 - 32 = 68$.\n$$\\sigma_X = \\sqrt{68} = 2\\sqrt{17} \\approx 8.25, \\qquad \\sigma_Y = \\sqrt{32} = 4\\sqrt{2} \\approx 5.66$$\n\n(b) $\\sigma_{X-Y}^2 = a + (-1)^2 b = a + b = 100$, so $\\sigma_{X-Y} = 10$, the same as $\\sigma_{X+Y}$. For independent variables, a sum and a difference always have the same spread, because the sign of the coefficient is lost when it is squared.\n\n(c) The $+5$ does not affect the spread:\n$$\\sigma_{3X-2Y+5}^2 = 3^2 a + (-2)^2 b = 9(68) + 4(32) = 612 + 128 = 740$$\n$$\\sigma_{3X-2Y+5} = \\sqrt{740} \\approx 27.20$$"
+ },
+ {
+  "id": "prob-combining-random-variables-q16",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A rideshare driver drives $M$ miles per day, where $M$ has mean 120 miles and standard deviation 25 miles. The driver earns \\$1.50 per mile and pays a fixed \\$20 per day to rent the car, so the daily profit is\n$$G = 1.5M - 20 \\text{ dollars}$$\n\nFind the mean and standard deviation of the daily profit, and explain why the \\$20 rental fee affects only one of them.",
+  "hint": "$G = a + bM$ with $a = -20$ and $b = 1.5$.",
+  "answer": "Mean \\$160, standard deviation \\$37.50. The fixed \\$20 lowers every day's profit by the same amount, which shifts the center but leaves the spread unchanged.",
+  "solution": "Mean:\n$$\\mu_G = 1.5\\mu_M - 20 = 1.5(120) - 20 = 180 - 20 = \\$160$$\n\nStandard deviation:\n$$\\sigma_G = |1.5|\\,\\sigma_M = 1.5(25) = \\$37.50$$\n\nThe \\$20 fee is the same every day, so it moves every profit down by \\$20. That shifts the mean down by \\$20, but the profits are just as spread out as before, so the standard deviation is unaffected. (Writing $1.5(25) - 20 = 17.50$ would wrongly apply the shift to the spread.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-combining-random-variables-q17",
+  "topicId": "prob-combining-random-variables",
+  "difficulty": 4,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A fair six-sided die is rolled. Let $X$ be the number on the top face and $Y$ the number on the bottom face. On a standard die, opposite faces add to 7, so $Y = 7 - X$. Both $X$ and $Y$ have variance $\\frac{35}{12}$.\n\n(a) Riley says: \"Variances add, so $\\sigma_{X+Y}^2 = \\frac{35}{12} + \\frac{35}{12} = \\frac{35}{6}$.\" Find the actual value of $\\sigma_{X+Y}^2$ and explain why Riley's method fails.\n(b) Find $\\sigma_{X-Y}^2$ and compare it with Riley's method.\n(c) Explain what this example shows about when the rule \"variances add\" may be used.",
+  "hint": "What is $X + Y$ on every roll? Write $X - Y$ as a linear transformation of $X$.",
+  "answer": "(a) $X + Y = 7$ always, so $\\sigma_{X+Y}^2 = 0$; Riley's rule needs $X$ and $Y$ to be independent, but $Y$ is completely determined by $X$. (b) $X - Y = 2X - 7$, so $\\sigma_{X-Y}^2 = 4 \\times \\frac{35}{12} = \\frac{35}{3}$, twice Riley's value. (c) Variances add only for independent random variables.",
+  "solution": "(a) On every roll, $X + Y = 7$. A constant has no spread, so\n$$\\sigma_{X+Y}^2 = 0 \\ne \\tfrac{35}{6}$$\nRiley's rule assumes $X$ and $Y$ are **independent**. Here they are completely dependent: knowing $X$ tells you $Y$ exactly. When $X$ is high, $Y$ is low by exactly the same amount, so their deviations cancel completely.\n\n(b) $X - Y = X - (7 - X) = 2X - 7$, a linear transformation of $X$:\n$$\\sigma_{X-Y}^2 = 2^2\\sigma_X^2 = 4 \\times \\tfrac{35}{12} = \\tfrac{35}{3}$$\nThis is **twice** the $\\frac{35}{6}$ that \"variances add\" would predict, because the deviations of $X$ and $-Y$ always point the same way and reinforce each other.\n\n(c) The rule $\\sigma_{X \\pm Y}^2 = \\sigma_X^2 + \\sigma_Y^2$ only works when $X$ and $Y$ are independent. If they are linked, the true variance can be smaller (as in (a)) or larger (as in (b)). Before adding variances, always check that independence is reasonable in context.",
+  "linkedTopicIds": []
+ }
+]

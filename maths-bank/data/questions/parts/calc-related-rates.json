@@ -1,0 +1,290 @@
+[
+ {
+  "id": "calc-related-rates-q01",
+  "topicId": "calc-related-rates",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The radius of a circle is increasing at $0.5\\text{ cm s}^{-1}$.\n\nThe area of the circle is $A\\text{ cm}^2$, where $A = \\pi r^2$.\n\nFind the rate at which the area is increasing when $r = 4$. Give your answer as an exact multiple of $\\pi$.",
+  "hint": "Use the chain rule: $\\frac{dA}{dt} = \\frac{dA}{dr}\\times\\frac{dr}{dt}$.",
+  "answer": "$\\frac{dA}{dt} = 4\\pi\\text{ cm}^2\\text{ s}^{-1}$",
+  "solution": "We know $\\frac{dr}{dt} = 0.5$ and want $\\frac{dA}{dt}$.\n\n$A = \\pi r^2$, so $\\frac{dA}{dr} = 2\\pi r$.\n\nChain rule:\n$$\\frac{dA}{dt} = \\frac{dA}{dr}\\times\\frac{dr}{dt} = 2\\pi r \\times 0.5 = \\pi r$$\n\nWhen $r = 4$:\n$$\\frac{dA}{dt} = 4\\pi\\text{ cm}^2\\text{ s}^{-1}\\ (\\approx 12.6\\text{ cm}^2\\text{ s}^{-1})$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q02",
+  "topicId": "calc-related-rates",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The area of a circle is increasing at $6\\text{ cm}^2\\text{ s}^{-1}$.\n\nUsing $A = \\pi r^2$, find the rate at which the radius is increasing when $r = 4$. Give your answer exactly and to 3 significant figures.",
+  "hint": "Write the chain rule so the derivatives match: $\\frac{dA}{dt} = \\frac{dA}{dr}\\times\\frac{dr}{dt}$, then make $\\frac{dr}{dt}$ the subject.",
+  "answer": "$\\frac{dr}{dt} = \\frac{3}{4\\pi} \\approx 0.239\\text{ cm s}^{-1}$",
+  "solution": "**What changed from the last question:** now the rate of the area is given and the rate of the radius is unknown, so we divide instead of multiply.\n\n$\\frac{dA}{dr} = 2\\pi r$, and $\\frac{dA}{dt} = \\frac{dA}{dr}\\times\\frac{dr}{dt}$, so\n$$\\frac{dr}{dt} = \\frac{dA}{dt}\\div\\frac{dA}{dr} = \\frac{6}{2\\pi r}$$\n\nWhen $r = 4$:\n$$\\frac{dr}{dt} = \\frac{6}{8\\pi} = \\frac{3}{4\\pi} \\approx 0.239\\text{ cm s}^{-1}$$\n\nSense check: multiplying $6 \\times 8\\pi$ instead would give about $151\\text{ cm s}^{-1}$, which is absurd for a circle of radius 4 cm.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q03",
+  "topicId": "calc-related-rates",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The area of a circle is **decreasing** at $6\\text{ cm}^2\\text{ s}^{-1}$.\n\nUsing $A = \\pi r^2$, find $\\frac{dr}{dt}$ when $r = 4$, and describe what is happening to the radius.",
+  "hint": "A decreasing quantity has a negative rate of change. What is $\\frac{dA}{dt}$?",
+  "answer": "$\\frac{dr}{dt} = -\\frac{3}{4\\pi} \\approx -0.239\\text{ cm s}^{-1}$; the radius is decreasing at about $0.239\\text{ cm s}^{-1}$.",
+  "solution": "**What changed:** the area is now decreasing, so $\\frac{dA}{dt} = -6$ (not $+6$).\n\n$$\\frac{dr}{dt} = \\frac{dA}{dt}\\div\\frac{dA}{dr} = \\frac{-6}{2\\pi r}$$\n\nWhen $r = 4$:\n$$\\frac{dr}{dt} = \\frac{-6}{8\\pi} = -\\frac{3}{4\\pi} \\approx -0.239\\text{ cm s}^{-1}$$\n\nThe sign has flipped and nothing else has changed: the radius is **decreasing** at $\\frac{3}{4\\pi} \\approx 0.239\\text{ cm s}^{-1}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q04",
+  "topicId": "calc-related-rates",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The area of a circle is decreasing at $6\\text{ cm}^2\\text{ s}^{-1}$.\n\nUsing $A = \\pi r^2$, find $\\frac{dr}{dt}$ at the instant when the **area** is $36\\pi\\text{ cm}^2$.",
+  "hint": "First use the area to find the radius at that instant.",
+  "answer": "$\\frac{dr}{dt} = -\\frac{1}{2\\pi} \\approx -0.159\\text{ cm s}^{-1}$",
+  "solution": "**What changed:** the instant is described by the area, not the radius, so we need an extra step.\n\n$\\pi r^2 = 36\\pi \\Rightarrow r^2 = 36 \\Rightarrow r = 6$ (a radius is positive).\n\nAs before, $\\frac{dA}{dt} = -6$ and $\\frac{dA}{dr} = 2\\pi r$, so\n$$\\frac{dr}{dt} = \\frac{-6}{2\\pi r} = \\frac{-6}{12\\pi} = -\\frac{1}{2\\pi} \\approx -0.159\\text{ cm s}^{-1}$$\n\nThe radius is decreasing at about $0.159\\text{ cm s}^{-1}$: more slowly than when $r = 4$, because a bigger circle loses the same area by shrinking its radius less.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q05",
+  "topicId": "calc-related-rates",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The variables $x$ and $y$ both depend on time $t$ and are related by $y = x^3 + 2x$.\n\nGiven that $\\frac{dx}{dt} = 3$, find the value of $\\frac{dy}{dt}$ when $x = 2$.",
+  "hint": "$\\frac{dy}{dt} = \\frac{dy}{dx}\\times\\frac{dx}{dt}$.",
+  "answer": "$\\frac{dy}{dt} = 42$",
+  "solution": "$\\frac{dy}{dx} = 3x^2 + 2$.\n\nChain rule:\n$$\\frac{dy}{dt} = \\frac{dy}{dx}\\times\\frac{dx}{dt} = (3x^2 + 2)\\times 3$$\n\nWhen $x = 2$:\n$$\\frac{dy}{dt} = (12 + 2)\\times 3 = 42$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q06",
+  "topicId": "calc-related-rates",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "An ice cube is melting. It stays in the shape of a cube, and its volume decreases at a constant rate of $1.5\\text{ cm}^3$ per minute.\n\n(a) Find the rate at which the edge length is changing when the edge length is $2.5\\text{ cm}$.\n\n(b) Find the rate at which the surface area is changing at the same instant.",
+  "hint": "Let the edge be $x\\text{ cm}$, so $V = x^3$ and $S = 6x^2$. Is $\\frac{dV}{dt}$ positive or negative?",
+  "answer": "(a) $\\frac{dx}{dt} = -0.08\\text{ cm min}^{-1}$ (edge decreasing at $0.08\\text{ cm}$ per minute) (b) $\\frac{dS}{dt} = -2.4\\text{ cm}^2\\text{ min}^{-1}$ (surface area decreasing at $2.4\\text{ cm}^2$ per minute)",
+  "solution": "Let the edge be $x\\text{ cm}$ at time $t$ minutes. The volume is decreasing, so $\\frac{dV}{dt} = -1.5$.\n\n**(a)** $V = x^3$, so $\\frac{dV}{dx} = 3x^2$. Then\n$$\\frac{dx}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dx} = \\frac{-1.5}{3x^2}$$\nWhen $x = 2.5$: $\\frac{dx}{dt} = \\frac{-1.5}{18.75} = -0.08\\text{ cm min}^{-1}$.\n\nThe edge is decreasing at $0.08\\text{ cm}$ per minute.\n\n**(b)** $S = 6x^2$, so $\\frac{dS}{dx} = 12x$ and\n$$\\frac{dS}{dt} = \\frac{dS}{dx}\\times\\frac{dx}{dt} = 12(2.5)(-0.08) = -2.4\\text{ cm}^2\\text{ min}^{-1}$$\n\nThe surface area is decreasing at $2.4\\text{ cm}^2$ per minute.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q07",
+  "topicId": "calc-related-rates",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 285\" width=\"300\" height=\"285\"><line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"40\" y1=\"250\" x2=\"280\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"90\" x2=\"190\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/><polyline points=\"80,250 80,240 70,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"152\" y=\"162\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2.5 m</text><text x=\"130\" y=\"272\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x m</text><text x=\"60\" y=\"175\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y m</text><text x=\"60\" y=\"45\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">wall</text><text x=\"250\" y=\"242\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">ground</text></svg>",
+  "question": "A ladder of length $2.5\\text{ m}$ leans against a vertical wall on horizontal ground. The foot of the ladder slides away from the wall at $0.2\\text{ m s}^{-1}$. The foot is $x\\text{ m}$ from the wall and the top is $y\\text{ m}$ above the ground.\n\nOllie is asked how fast the top of the ladder is moving when the foot is $1.5\\text{ m}$ from the wall. His working is shown below.\n\n$$x^2 + y^2 = 6.25$$\n$$\\text{When } x = 1.5:\\quad 2.25 + y^2 = 6.25$$\n$$\\text{Differentiate with respect to } t:\\quad 0 + 2y\\frac{dy}{dt} = 0$$\n$$\\text{So } \\frac{dy}{dt} = 0\\text{: at that instant the top is not moving.}$$\n\nIdentify Ollie's error, explain why it is wrong, and find the correct answer.",
+  "hint": "Is $x$ really a constant? When should the value $x = 1.5$ be substituted?",
+  "answer": "Ollie substituted $x = 1.5$ before differentiating, treating $x$ as a constant. Correctly, $\\frac{dy}{dt} = -0.15$: the top is sliding down the wall at $0.15\\text{ m s}^{-1}$.",
+  "solution": "**The error** is in the second line: Ollie substitutes $x = 1.5$ **before** differentiating. $x$ is only $1.5$ at one instant; it is changing (at $0.2\\text{ m s}^{-1}$), so $\\frac{d}{dt}(x^2)$ is not $0$. Substituting first turns a variable into a constant and throws away the information about how fast it changes.\n\n**Correct method.** Differentiate $x^2 + y^2 = 6.25$ with respect to $t$ first:\n$$2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 0$$\n\nNow substitute. When $x = 1.5$: $y = \\sqrt{6.25 - 2.25} = 2$, and $\\frac{dx}{dt} = 0.2$:\n$$2(1.5)(0.2) + 2(2)\\frac{dy}{dt} = 0 \\Rightarrow 0.6 + 4\\frac{dy}{dt} = 0 \\Rightarrow \\frac{dy}{dt} = -0.15$$\n\nThe top of the ladder is sliding **down** the wall at $0.15\\text{ m s}^{-1}$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q08",
+  "topicId": "calc-related-rates",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 290\" width=\"330\" height=\"290\"><polygon points=\"127.2,131.7 212.8,131.7 170,260\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"96.7\" y1=\"40\" x2=\"170\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"243.3\" y1=\"40\" x2=\"170\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M 96.7 40 A 73.3 10 0 0 0 243.3 40 A 73.3 10 0 0 0 96.7 40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"127.2\" y1=\"131.7\" x2=\"212.8\" y2=\"131.7\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"170\" y1=\"40\" x2=\"243.3\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"206.7\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4 cm</text><line x1=\"170\" y1=\"131.7\" x2=\"212.8\" y2=\"131.7\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"191.4\" y=\"125.7\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">r</text><line x1=\"273.3\" y1=\"40\" x2=\"273.3\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"278.3\" y1=\"40\" x2=\"268.3\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"278.3\" y1=\"260\" x2=\"268.3\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"281.3\" y=\"155\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">12 cm</text><line x1=\"76.7\" y1=\"131.7\" x2=\"76.7\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"81.7\" y1=\"131.7\" x2=\"71.7\" y2=\"131.7\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"81.7\" y1=\"260\" x2=\"71.7\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"68.7\" y=\"200.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">h</text><line x1=\"71.7\" y1=\"131.7\" x2=\"127.2\" y2=\"131.7\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"2 3\"/></svg>",
+  "question": "A container is an inverted right circular cone with base radius $4\\text{ cm}$ and height $12\\text{ cm}$, vertex at the bottom. Water is poured in at $5\\text{ cm}^3\\text{ s}^{-1}$. When the water is $h\\text{ cm}$ deep, the surface of the water is a circle of radius $r\\text{ cm}$.\n\nGrace wants the rate at which the depth is rising when $h = 6$. Her working is shown below.\n\n$$V = \\tfrac{1}{3}\\pi r^2 h = \\tfrac{1}{3}\\pi(4)^2 h = \\tfrac{16}{3}\\pi h$$\n$$\\frac{dV}{dh} = \\tfrac{16}{3}\\pi$$\n$$\\frac{dh}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dh} = 5\\div\\tfrac{16}{3}\\pi = \\frac{15}{16\\pi} \\approx 0.298\\text{ cm s}^{-1}$$\n\n(a) Explain the mistake in Grace's working.\n\n(b) Find the correct rate at which the depth is rising when $h = 6$.",
+  "hint": "Does the radius of the water surface stay at 4 cm as the water rises? Use similar triangles to link $r$ and $h$.",
+  "answer": "(a) She used $r = 4$ (the radius of the top of the cone) as a constant; the radius of the water surface changes with $h$, with $r = \\frac{h}{3}$. (b) $\\frac{dh}{dt} = \\frac{5}{4\\pi} \\approx 0.398\\text{ cm s}^{-1}$",
+  "solution": "**(a)** Grace has treated the radius as the constant $4$. But $4\\text{ cm}$ is the radius of the top of the cone; the radius of the water surface depends on the depth and grows as the water rises. Her formula would be the volume of a cylinder-like shape, not of the water.\n\n**(b)** By similar triangles (water cone and whole cone):\n$$\\frac{r}{h} = \\frac{4}{12}\\quad\\Rightarrow\\quad r = \\frac{h}{3}$$\n\nSo the volume of water is\n$$V = \\frac{1}{3}\\pi\\left(\\frac{h}{3}\\right)^2 h = \\frac{\\pi h^3}{27}, \\qquad \\frac{dV}{dh} = \\frac{\\pi h^2}{9}$$\n\nWhen $h = 6$: $\\frac{dV}{dh} = \\frac{36\\pi}{9} = 4\\pi$. With $\\frac{dV}{dt} = 5$:\n$$\\frac{dh}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dh} = \\frac{5}{4\\pi} \\approx 0.398\\text{ cm s}^{-1}$$\n\nGrace's answer is too small because she pretended the water was always as wide as the top of the cone.",
+  "linkedTopicIds": [
+   "geo-similarity",
+   "geo-pyramids-cones-spheres"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q09",
+  "topicId": "calc-related-rates",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Air is pumped into a spherical balloon so that its volume increases at a constant rate of $100\\text{ cm}^3\\text{ s}^{-1}$.\n\n(a) Show that $\\frac{dr}{dt} = \\frac{25}{\\pi r^2}$, where $r\\text{ cm}$ is the radius.\n\n(b) Explain why the radius grows more and more slowly even though air goes in at a constant rate.\n\n(c) Sam says \"$\\frac{dr}{dt} = \\frac{dV}{dt}\\times\\frac{dV}{dr}$\". Use units to explain why Sam must be wrong.",
+  "hint": "$V = \\frac{4}{3}\\pi r^3$. For (c), what units would $\\frac{dV}{dt}\\times\\frac{dV}{dr}$ have?",
+  "answer": "(a) $\\frac{dr}{dt} = \\frac{100}{4\\pi r^2} = \\frac{25}{\\pi r^2}$ (b) $\\frac{dr}{dt}$ is inversely proportional to $r^2$ (the surface area $4\\pi r^2$ grows), so it decreases as $r$ increases. (c) Sam's product has units $\\text{cm}^5\\text{ s}^{-1}$, not $\\text{cm s}^{-1}$; correctly, $\\frac{dr}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dr}$.",
+  "solution": "**(a)** $V = \\frac{4}{3}\\pi r^3$, so $\\frac{dV}{dr} = 4\\pi r^2$. By the chain rule $\\frac{dV}{dt} = \\frac{dV}{dr}\\times\\frac{dr}{dt}$, so\n$$\\frac{dr}{dt} = \\frac{100}{4\\pi r^2} = \\frac{25}{\\pi r^2}$$\n\n**(b)** $\\frac{dr}{dt}$ is inversely proportional to $r^2$. As $r$ increases, $\\frac{25}{\\pi r^2}$ decreases, e.g. $\\frac{1}{\\pi} \\approx 0.318\\text{ cm s}^{-1}$ when $r = 5$ but $\\frac{1}{4\\pi} \\approx 0.0796\\text{ cm s}^{-1}$ when $r = 10$. Geometrically, the extra $100\\text{ cm}^3$ each second is spread as a thin shell over the surface area $4\\pi r^2$, which keeps growing, so the shell gets thinner.\n\n**(c)** $\\frac{dV}{dt}$ is in $\\text{cm}^3\\text{ s}^{-1}$ and $\\frac{dV}{dr}$ is in $\\text{cm}^3$ per cm $= \\text{cm}^2$. Their product is in $\\text{cm}^5\\text{ s}^{-1}$, which cannot be a rate of change of a length. Dividing gives $\\frac{\\text{cm}^3\\text{ s}^{-1}}{\\text{cm}^2} = \\text{cm s}^{-1}$, as required: $\\frac{dr}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dr}$.\n\n(Sam's formula would give $100\\times 4\\pi(5)^2 \\approx 31\\,400$ \"cm per second\" when $r = 5$: absurd.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q10",
+  "topicId": "calc-related-rates",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 290\" width=\"320\" height=\"290\"><line x1=\"20\" y1=\"250\" x2=\"300\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50\" y1=\"70\" x2=\"50\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"50\" cy=\"66\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"170\" y1=\"178\" x2=\"170\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/><line x1=\"50\" y1=\"70\" x2=\"250\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"170\" y1=\"250\" x2=\"250\" y2=\"250\" stroke=\"#3b82f6\" stroke-width=\"5\"/><polyline points=\"60,250 60,240 50,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"180,250 180,240 170,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"42\" y=\"160\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4.5 m</text><text x=\"162\" y=\"219\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1.8 m</text><line x1=\"50\" y1=\"268\" x2=\"170\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"263\" x2=\"50\" y2=\"273\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"263\" x2=\"170\" y2=\"273\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"110\" y=\"286\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><line x1=\"170\" y1=\"268\" x2=\"250\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"263\" x2=\"170\" y2=\"273\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"250\" y1=\"263\" x2=\"250\" y2=\"273\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"210\" y=\"286\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">s</text><text x=\"60\" y=\"62\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">lamp</text></svg>",
+  "question": "A street lamp is at the top of a vertical post $4.5\\text{ m}$ high. A woman of height $1.8\\text{ m}$ walks in a straight line directly away from the post at a constant $1.2\\text{ m s}^{-1}$. When she is $x\\text{ m}$ from the post, her shadow has length $s\\text{ m}$.\n\n(a) Use similar triangles to show that $s = \\frac{2}{3}x$.\n\n(b) Find the rate at which her shadow is lengthening.\n\n(c) Find the speed of the tip of her shadow, and explain why neither answer depends on how far she is from the post.",
+  "hint": "The big triangle (post, ground to tip of shadow) and the small triangle (woman, her shadow) are similar. The tip of the shadow is $x + s$ from the post.",
+  "answer": "(a) $\\frac{s}{1.8} = \\frac{x + s}{4.5} \\Rightarrow s = \\frac{2}{3}x$ (b) $0.8\\text{ m s}^{-1}$ (c) $2\\text{ m s}^{-1}$; $s$ is a constant multiple of $x$, so all the rates are constant multiples of $\\frac{dx}{dt}$.",
+  "solution": "**(a)** The triangle formed by the woman and her shadow is similar to the triangle formed by the post and the ground from the post to the tip of the shadow:\n$$\\frac{s}{1.8} = \\frac{x + s}{4.5}$$\n$$4.5s = 1.8x + 1.8s \\Rightarrow 2.7s = 1.8x \\Rightarrow s = \\frac{2}{3}x$$\n\n**(b)** $\\frac{dx}{dt} = 1.2$, so\n$$\\frac{ds}{dt} = \\frac{2}{3}\\frac{dx}{dt} = \\frac{2}{3}(1.2) = 0.8\\text{ m s}^{-1}$$\n\n**(c)** The tip is at distance $p = x + s = \\frac{5}{3}x$ from the post, so\n$$\\frac{dp}{dt} = \\frac{5}{3}(1.2) = 2\\text{ m s}^{-1}$$\n\nBecause $s$ and $p$ are fixed multiples of $x$ (the relationship is linear), their rates are the same fixed multiples of $\\frac{dx}{dt}$; there is no $x$ left in the derivative, so the rates are the same wherever she is.",
+  "linkedTopicIds": [
+   "geo-similarity"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q11",
+  "topicId": "calc-related-rates",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><polygon points=\"108,98 252,98 180,170\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><polyline points=\"60,50 180,170 300,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"50\" x2=\"300\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><line x1=\"108\" y1=\"98\" x2=\"252\" y2=\"98\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"32\" x2=\"300\" y2=\"32\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"60\" y1=\"27\" x2=\"60\" y2=\"37\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"300\" y1=\"27\" x2=\"300\" y2=\"37\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180\" y=\"24\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1 m</text><line x1=\"320\" y1=\"50\" x2=\"320\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"325\" y1=\"50\" x2=\"315\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"325\" y1=\"170\" x2=\"315\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"328\" y=\"115\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">0.5 m</text><line x1=\"180\" y1=\"98\" x2=\"180\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"3 3\"/><text x=\"188\" y=\"146\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">h</text><text x=\"180\" y=\"92\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">water surface</text></svg>",
+  "question": "A water trough is a prism of length $3\\text{ m}$. Its cross-section is an isosceles triangle, vertex downwards, with width $1\\text{ m}$ across the top and depth $0.5\\text{ m}$, as shown.\n\nThe trough is leaking, and water is lost at a constant rate of 12 litres per minute. Find the rate at which the depth of the water is changing at the instant when the depth is $20\\text{ cm}$, and the rate at which the width of the water surface is changing at that instant.\n\n($1\\text{ m}^3 = 1000$ litres.)",
+  "hint": "Let the depth be $h\\text{ m}$. By similar triangles, how wide is the water surface? Then write the volume of water in terms of $h$ only. Watch the sign and the units.",
+  "answer": "The depth is decreasing at $0.01\\text{ m}$ per minute ($1\\text{ cm}$ per minute); the width is decreasing at $0.02\\text{ m}$ per minute ($2\\text{ cm}$ per minute).",
+  "solution": "Let the water depth be $h\\text{ m}$ and the surface width $w\\text{ m}$ at time $t$ minutes.\n\n**Link $w$ and $h$.** The water's cross-section is similar to the full cross-section, so $\\frac{w}{h} = \\frac{1}{0.5}$, i.e. $w = 2h$.\n\n**Volume.** Cross-sectional area $= \\frac{1}{2}wh = \\frac{1}{2}(2h)h = h^2$, so\n$$V = 3h^2\\ \\text{m}^3, \\qquad \\frac{dV}{dh} = 6h$$\n\n**Rate.** 12 litres $= 0.012\\text{ m}^3$, and the volume is decreasing, so $\\frac{dV}{dt} = -0.012\\ \\text{m}^3\\text{ min}^{-1}$.\n\nWhen $h = 0.2$: $\\frac{dV}{dh} = 1.2$, so\n$$\\frac{dh}{dt} = \\frac{dV}{dt}\\div\\frac{dV}{dh} = \\frac{-0.012}{1.2} = -0.01\\text{ m min}^{-1}$$\n\nThe depth is **decreasing** at $1\\text{ cm}$ per minute.\n\n**Width.** $w = 2h$, so $\\frac{dw}{dt} = 2\\frac{dh}{dt} = -0.02\\text{ m min}^{-1}$: the width is decreasing at $2\\text{ cm}$ per minute.",
+  "linkedTopicIds": [
+   "geo-similarity",
+   "geo-volume-prisms"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q12",
+  "topicId": "calc-related-rates",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "A spherical snowball melts so that its volume, $V\\text{ cm}^3$, decreases at a rate proportional to its surface area, $S\\text{ cm}^2$. The radius of the snowball at time $t$ hours is $r\\text{ cm}$.\n\nWhen $r = 6$, the volume is decreasing at a rate of $57.6\\pi\\text{ cm}^3$ per hour.\n\n[You may use $V = \\frac{4}{3}\\pi r^3$ and $S = 4\\pi r^2$.]",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\frac{dr}{dt} = -0.4$",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Given that the radius is $6\\text{ cm}$ when $t = 0$, find how long the snowball takes to melt completely, assuming the model continues to hold.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the rate at which the surface area is decreasing when $r = 3$. Give your answer to 3 significant figures.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "hint": "Write $\\frac{dV}{dt} = -kS$ and use the given information to find $k$. Then use $\\frac{dV}{dt} = \\frac{dV}{dr}\\times\\frac{dr}{dt}$.",
+  "answer": "(a) $\\frac{dV}{dt} = -0.4S$, so $4\\pi r^2\\frac{dr}{dt} = -0.4(4\\pi r^2)$, giving $\\frac{dr}{dt} = -0.4$ (b) $15$ hours (c) $9.6\\pi \\approx 30.2\\text{ cm}^2$ per hour",
+  "solution": "**(a)** $\\frac{dV}{dt} = -kS = -4k\\pi r^2$ for some constant $k > 0$. **B1**\n\nWhen $r = 6$: $-57.6\\pi = -4k\\pi(36) = -144k\\pi$, so $k = 0.4$. **M1 A1**\n\nChain rule: $\\frac{dV}{dt} = \\frac{dV}{dr}\\times\\frac{dr}{dt} = 4\\pi r^2\\frac{dr}{dt}$. Equating:\n$$4\\pi r^2\\frac{dr}{dt} = -0.4\\times 4\\pi r^2 \\Rightarrow \\frac{dr}{dt} = -0.4 \\quad\\text{(shown)}\\quad \\textbf{A1}$$\n\n**(b)** The radius decreases at a constant $0.4\\text{ cm}$ per hour, so $r = 6 - 0.4t$. **M1**\n\n$r = 0$ when $t = \\frac{6}{0.4} = 15$ hours. **A1**\n\n**(c)** $\\frac{dS}{dt} = \\frac{dS}{dr}\\times\\frac{dr}{dt} = 8\\pi r\\times(-0.4)$ **M1**\n\nWhen $r = 3$: $\\frac{dS}{dt} = -9.6\\pi \\approx -30.2$, so the surface area is decreasing at $30.2\\text{ cm}^2$ per hour. **A1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-related-rates-q13",
+  "topicId": "calc-related-rates",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 275\" width=\"340\" height=\"275\"><line x1=\"20\" y1=\"230\" x2=\"300\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"300\" y1=\"40\" x2=\"300\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/><circle cx=\"294\" cy=\"80\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"70,218 110,218 102,230 76,230\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"100\" y1=\"230\" x2=\"294\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"290,230 290,220 300,220\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"308\" y=\"160\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">3 m</text><line x1=\"100\" y1=\"252\" x2=\"300\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"100\" y1=\"247\" x2=\"100\" y2=\"257\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"300\" y1=\"247\" x2=\"300\" y2=\"257\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"200\" y=\"270\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"190\" y=\"145\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">L</text><text x=\"142\" y=\"224\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">θ</text><text x=\"308\" y=\"55\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">dock</text></svg>",
+  "question": "A boat is pulled towards a vertical dock wall by a rope attached to its bow. The rope passes over a pulley on the dock $3\\text{ m}$ above the level of the bow. The rope is pulled in at a constant rate of $0.5\\text{ m s}^{-1}$. At time $t$ seconds the horizontal distance from the bow to the dock is $x\\text{ m}$, the length of rope from bow to pulley is $L\\text{ m}$, and the rope makes an angle $\\theta$ radians with the horizontal.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the rate at which the boat is approaching the dock when $x = 4$. Indicate units of measure.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the rate of change of $\\theta$ at the instant when $x = 4$. Show the work that leads to your answer.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Is the boat speeding up or slowing down as it approaches the dock? Justify your answer.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "hint": "Pythagoras links $x$ and $L$; $\\tan\\theta = \\frac{3}{x}$ links $\\theta$ and $x$. The rope is getting shorter, so $\\frac{dL}{dt} < 0$.",
+  "answer": "(a) $\\frac{dx}{dt} = -0.625\\text{ m s}^{-1}$: the boat approaches at $0.625\\text{ m s}^{-1}$ (b) $\\frac{d\\theta}{dt} = 0.075\\text{ rad s}^{-1}$ (c) Speeding up: its speed $0.5\\sqrt{1 + \\frac{9}{x^2}}$ increases as $x$ decreases.",
+  "solution": "(AP-style scoring.)\n\n**(a)** $x^2 + 3^2 = L^2$, so $2x\\frac{dx}{dt} = 2L\\frac{dL}{dt}$. **1 pt** (implicit differentiation)\n\nWhen $x = 4$, $L = 5$, and $\\frac{dL}{dt} = -0.5$ (rope shortening):\n$$\\frac{dx}{dt} = \\frac{L}{x}\\frac{dL}{dt} = \\frac{5}{4}(-0.5) = -0.625 \\quad \\textbf{1 pt}$$\nThe boat approaches the dock at $0.625\\text{ m s}^{-1}$. **1 pt** (answer with units)\n\n**(b)** $\\tan\\theta = \\frac{3}{x}$, so $\\sec^2\\theta\\,\\frac{d\\theta}{dt} = -\\frac{3}{x^2}\\frac{dx}{dt}$. **1 pt**\n\nWhen $x = 4$: $\\sec^2\\theta = 1 + \\tan^2\\theta = 1 + \\frac{9}{16} = \\frac{25}{16}$. **1 pt**\n$$\\frac{25}{16}\\frac{d\\theta}{dt} = -\\frac{3}{16}(-0.625) \\Rightarrow \\frac{d\\theta}{dt} = \\frac{3(0.625)}{25} = 0.075\\text{ rad s}^{-1} \\quad \\textbf{1 pt}$$\n(The angle increases as the boat gets closer, as expected.)\n\n**(c)** In general $\\frac{dx}{dt} = \\frac{L}{x}(-0.5) = -0.5\\frac{\\sqrt{x^2 + 9}}{x}$, so the speed is $0.5\\sqrt{1 + \\frac{9}{x^2}}$. **1 pt**\n\nAs $x$ decreases, $\\frac{9}{x^2}$ increases, so the speed increases: the boat is **speeding up** even though the rope is pulled in at a constant rate. **1 pt**",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "calc-implicit-differentiation"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q14",
+  "topicId": "calc-related-rates",
+  "difficulty": 3,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 285\" width=\"320\" height=\"285\"><line x1=\"20\" y1=\"250\" x2=\"300\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"250\" y1=\"100\" x2=\"250\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"50\" y1=\"250\" x2=\"250\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"250\" cy=\"86\" r=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"246\" y1=\"100\" x2=\"254\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"240,250 240,240 250,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"50\" cy=\"250\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"42\" y=\"255\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"96\" y=\"242\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">θ</text><line x1=\"50\" y1=\"266\" x2=\"250\" y2=\"266\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"261\" x2=\"50\" y2=\"271\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"250\" y1=\"261\" x2=\"250\" y2=\"271\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"150\" y=\"284\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40 m</text><text x=\"260\" y=\"180\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">h m</text></svg>",
+  "question": "A hot-air balloon rises vertically from a point on level ground at a constant $3\\text{ m s}^{-1}$. An observer $O$ stands on the ground $40\\text{ m}$ from the launch point. When the balloon is $h\\text{ m}$ high, the angle of elevation of the balloon from $O$ is $\\theta$ radians.\n\n(a) Find the rate at which $\\theta$ is increasing at the instant when $h = 30$.\n\n(b) Find the rate at which the distance from $O$ to the balloon is increasing at the same instant.",
+  "hint": "$\\tan\\theta = \\frac{h}{40}$. Differentiate both sides with respect to $t$, remembering $\\frac{d}{d\\theta}(\\tan\\theta) = \\sec^2\\theta$.",
+  "answer": "(a) $\\frac{d\\theta}{dt} = 0.048\\text{ rad s}^{-1}$ (b) $1.8\\text{ m s}^{-1}$",
+  "solution": "**(a)** Right-angled trigonometry gives $\\tan\\theta = \\frac{h}{40}$. Differentiate with respect to $t$ (chain rule on the left):\n$$\\sec^2\\theta\\,\\frac{d\\theta}{dt} = \\frac{1}{40}\\frac{dh}{dt}$$\n\nWhen $h = 30$: the distance from $O$ to the balloon is $\\sqrt{40^2 + 30^2} = 50$, so $\\cos\\theta = \\frac{40}{50} = 0.8$ and $\\sec^2\\theta = \\frac{1}{0.64}$.\n$$\\frac{d\\theta}{dt} = \\frac{3}{40}\\cos^2\\theta = \\frac{3}{40}\\times 0.64 = 0.048\\text{ rad s}^{-1}$$\n\n**(b)** Let $D$ be the distance from $O$ to the balloon: $D^2 = 1600 + h^2$, so $2D\\frac{dD}{dt} = 2h\\frac{dh}{dt}$.\n\nWhen $h = 30$, $D = 50$:\n$$\\frac{dD}{dt} = \\frac{30}{50}\\times 3 = 1.8\\text{ m s}^{-1}$$",
+  "linkedTopicIds": [
+   "geo-trig-right-angled",
+   "calc-derivatives-exp-log-trig",
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q15",
+  "topicId": "calc-related-rates",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "After a spill, oil spreads on calm water as a circular slick. The radius, $r$ metres, $t$ hours after the spill is modelled by\n$$r = 10\\left(1 - e^{-0.2t}\\right)$$\n\n(a) Show that the area of the slick, $A\\text{ m}^2$, is increasing at a rate\n$$\\frac{dA}{dt} = 40\\pi e^{-0.2t}\\left(1 - e^{-0.2t}\\right)$$\n\n(b) Find the exact value of $\\frac{dA}{dt}$ when $t = 5$.\n\n(c) Prove that the area is increasing fastest when $t = 5\\ln 2$, and find this greatest rate.",
+  "hint": "$\\frac{dA}{dt} = \\frac{dA}{dr}\\times\\frac{dr}{dt}$. For (c), substitute $u = e^{-0.2t}$ to see $\\frac{dA}{dt}$ as a quadratic in $u$.",
+  "answer": "(a) $\\frac{dA}{dt} = 2\\pi r\\times 2e^{-0.2t} = 40\\pi e^{-0.2t}(1 - e^{-0.2t})$ (b) $\\frac{40\\pi(e - 1)}{e^2} \\approx 29.2\\text{ m}^2$ per hour (c) maximum when $e^{-0.2t} = \\frac{1}{2}$, i.e. $t = 5\\ln 2$; greatest rate $10\\pi \\approx 31.4\\text{ m}^2$ per hour",
+  "solution": "**(a)** $A = \\pi r^2$, so $\\frac{dA}{dr} = 2\\pi r$. Also $\\frac{dr}{dt} = 10\\times 0.2e^{-0.2t} = 2e^{-0.2t}$. Chain rule:\n$$\\frac{dA}{dt} = 2\\pi r\\times 2e^{-0.2t} = 2\\pi\\cdot 10\\left(1 - e^{-0.2t}\\right)\\cdot 2e^{-0.2t} = 40\\pi e^{-0.2t}\\left(1 - e^{-0.2t}\\right)$$\n\n**(b)** At $t = 5$, $e^{-0.2t} = e^{-1}$:\n$$\\frac{dA}{dt} = 40\\pi e^{-1}\\left(1 - e^{-1}\\right) = \\frac{40\\pi(e - 1)}{e^2} \\approx 29.2\\text{ m}^2\\text{ h}^{-1}$$\n\n**(c)** Let $u = e^{-0.2t}$, which decreases from $1$ towards $0$ as $t$ increases from $0$. Then\n$$\\frac{dA}{dt} = 40\\pi u(1 - u) = 40\\pi\\left(\\tfrac{1}{4} - \\left(u - \\tfrac{1}{2}\\right)^2\\right)$$\nby completing the square. This is greatest when $u = \\frac{1}{2}$, and every value $0 < u \\le 1$ occurs exactly once, so the maximum rate occurs when\n$$e^{-0.2t} = \\tfrac{1}{2} \\Rightarrow -0.2t = -\\ln 2 \\Rightarrow t = 5\\ln 2 \\approx 3.47\\text{ hours}$$\n\nThe greatest rate is $40\\pi\\times\\frac{1}{4} = 10\\pi \\approx 31.4\\text{ m}^2$ per hour.\n\n(Early on the rate is small because the slick is small; later it is small because the radius has almost stopped growing.)",
+  "linkedTopicIds": [
+   "calc-derivatives-exp-log-trig",
+   "pure-exponential-modelling",
+   "alg-completing-the-square"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q16",
+  "topicId": "calc-related-rates",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Water drains through a small hole at the vertex of an inverted cone into a cylindrical tank directly below it. The cone has radius $6\\text{ cm}$ and height $12\\text{ cm}$; the cylinder has radius $5\\text{ cm}$. All the water leaving the cone goes into the cylinder.\n\nAt the instant when the water in the cone is $8\\text{ cm}$ deep, the water level in the cylinder is rising at $0.32\\text{ cm s}^{-1}$.\n\n(a) Find the rate at which the depth of water in the cone is changing at that instant.\n\n(b) Suppose instead that water leaves the cone at a constant rate equal to its rate at that instant. Find the depth of water in the cone when the depth is falling at $2\\text{ cm s}^{-1}$.",
+  "hint": "First find the rate of flow, $\\frac{dV}{dt}$, from the cylinder. In the cone, use similar triangles to write the radius of the water surface in terms of the depth.",
+  "answer": "(a) $-0.5\\text{ cm s}^{-1}$ (the depth is falling at $0.5\\text{ cm s}^{-1}$) (b) $4\\text{ cm}$",
+  "solution": "**Flow rate from the cylinder.** If the cylinder's water level is $H$, its volume is $25\\pi H$, so water enters at\n$$\\frac{d}{dt}(25\\pi H) = 25\\pi\\times 0.32 = 8\\pi\\text{ cm}^3\\text{ s}^{-1}$$\n\nSo the cone is **losing** water at $8\\pi\\text{ cm}^3\\text{ s}^{-1}$: $\\frac{dV}{dt} = -8\\pi$ for the cone.\n\n**Cone volume in terms of depth.** By similar triangles the water surface has radius $r = \\frac{6}{12}h = \\frac{h}{2}$ (not the fixed $6\\text{ cm}$), so\n$$V = \\frac{1}{3}\\pi\\left(\\frac{h}{2}\\right)^2 h = \\frac{\\pi h^3}{12}, \\qquad \\frac{dV}{dh} = \\frac{\\pi h^2}{4}$$\n\n**(a)** At $h = 8$: $\\frac{dV}{dh} = 16\\pi$, so\n$$\\frac{dh}{dt} = \\frac{-8\\pi}{16\\pi} = -0.5\\text{ cm s}^{-1}$$\nThe depth in the cone is falling at $0.5\\text{ cm s}^{-1}$.\n\n**(b)** With $\\frac{dV}{dt} = -8\\pi$ throughout, $\\frac{dh}{dt} = \\frac{-8\\pi}{\\pi h^2/4} = -\\frac{32}{h^2}$.\n\nSet $-\\frac{32}{h^2} = -2$: $h^2 = 16$, so $h = 4\\text{ cm}$.\n\n(The level falls faster as the cone empties, because the water surface gets smaller.)",
+  "linkedTopicIds": [
+   "geo-similarity",
+   "geo-volume-prisms"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-related-rates-q17",
+  "topicId": "calc-related-rates",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A ladder of length $5\\text{ m}$ rests against a vertical wall on horizontal ground. The foot slides away from the wall at a constant $0.3\\text{ m s}^{-1}$. The foot is $x\\text{ m}$ from the wall and the top is $y\\text{ m}$ high. The wall, the ground and the ladder form a triangle of area $A\\text{ m}^2$.\n\n(a) Show that $\\frac{dA}{dt} = \\frac{0.15\\left(y^2 - x^2\\right)}{y}$.\n\n(b) Find $\\frac{dA}{dt}$ when $x = 4$, and interpret its sign.\n\n(c) Prove that the area is greatest when $x = \\frac{5}{\\sqrt{2}}$, and state the greatest area.\n\n(d) Explain what the model predicts for the speed of the top of the ladder as $y \\to 0$, and why the model must break down.",
+  "hint": "$A = \\frac{1}{2}xy$: use the product rule with respect to $t$, and get $\\frac{dy}{dt}$ from $x^2 + y^2 = 25$.",
+  "answer": "(a) $\\frac{dA}{dt} = \\frac{1}{2}\\left(y\\frac{dx}{dt} + x\\frac{dy}{dt}\\right)$ with $\\frac{dy}{dt} = -\\frac{0.3x}{y}$ (b) $-0.35\\text{ m}^2\\text{ s}^{-1}$: the area is decreasing (c) $\\frac{dA}{dt} > 0$ while $x < y$ and $< 0$ while $x > y$, so the maximum is at $x = y = \\frac{5}{\\sqrt{2}}$; greatest area $6.25\\text{ m}^2$ (d) the speed $\\frac{0.3x}{y} \\to \\infty$, which is impossible; in reality the top leaves the wall.",
+  "solution": "**(a)** $A = \\frac{1}{2}xy$. By the product rule (both $x$ and $y$ depend on $t$):\n$$\\frac{dA}{dt} = \\frac{1}{2}\\left(y\\frac{dx}{dt} + x\\frac{dy}{dt}\\right)$$\nFrom $x^2 + y^2 = 25$: $2x\\frac{dx}{dt} + 2y\\frac{dy}{dt} = 0$, so $\\frac{dy}{dt} = -\\frac{x}{y}\\frac{dx}{dt} = -\\frac{0.3x}{y}$. Hence\n$$\\frac{dA}{dt} = \\frac{1}{2}\\left(0.3y - \\frac{0.3x^2}{y}\\right) = \\frac{0.15\\left(y^2 - x^2\\right)}{y}$$\n\n**(b)** When $x = 4$, $y = 3$: $\\frac{dA}{dt} = \\frac{0.15(9 - 16)}{3} = -0.35\\text{ m}^2\\text{ s}^{-1}$. It is negative, so the area is **decreasing** at that instant.\n\n**(c)** Since $y > 0$, the sign of $\\frac{dA}{dt}$ is the sign of $y^2 - x^2$. As $x$ increases, $y$ decreases, so:\n- while $x < y$, $\\frac{dA}{dt} > 0$ (area increasing);\n- while $x > y$, $\\frac{dA}{dt} < 0$ (area decreasing).\n\nSo $A$ is greatest when $x = y$. Then $2x^2 = 25$, $x = \\frac{5}{\\sqrt{2}} \\approx 3.54\\text{ m}$, and $A = \\frac{1}{2}x^2 = \\frac{25}{4} = 6.25\\text{ m}^2$.\n\n**(d)** The top moves at speed $\\left|\\frac{dy}{dt}\\right| = \\frac{0.3x}{y}$. As $y \\to 0$, $x \\to 5$, so the speed $\\to \\infty$. A real ladder cannot move infinitely fast: the assumption that the top stays in contact with the wall must fail, and in practice the top leaves the wall before it reaches the ground.",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient",
+   "geo-pythagoras"
+  ]
+ }
+]

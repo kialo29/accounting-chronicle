@@ -1,0 +1,323 @@
+[
+ {
+  "id": "calc-continuity-q01",
+  "topicId": "calc-continuity",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The graph of $y = f(x)$ for $-4 \\le x \\le 5$ is shown. Open circles are not on the graph; the dashed line $x = 3$ is a vertical asymptote.\n\nThe function $f$ is not continuous at $x = -2$, at $x = 1$ and at $x = 3$. For each of these values, state the type of discontinuity (removable, jump or infinite).",
+  "hint": "Removable: the graph has a hole – both sides head for the same point. Jump: the two sides head for different heights. Infinite: the graph shoots off to $\\pm\\infty$.",
+  "answer": "$x = -2$: removable; $x = 1$: jump; $x = 3$: infinite.",
+  "solution": "**$x = -2$: removable.** Both sides of the graph approach the open circle at $(-2, 2)$, so $\\lim_{x \\to -2} f(x) = 2$ exists, but $f(-2) = 4$ (the filled dot). Condition 3 ($\\lim = f(a)$) fails. Redefining $f(-2) = 2$ would remove the discontinuity.\n\n**$x = 1$: jump.** From the left the graph approaches $3.5$ (and $f(1) = 3.5$); from the right it approaches $0.5$. The one-sided limits exist but are different, so $\\lim_{x \\to 1} f(x)$ does not exist (condition 2 fails).\n\n**$x = 3$: infinite.** As $x \\to 3^-$, $f(x) \\to +\\infty$ and as $x \\to 3^+$, $f(x) \\to -\\infty$: there is a vertical asymptote. $f(3)$ is not defined (condition 1 fails) and the limit does not exist.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"340\" height=\"280\"><line x1=\"35.6\" y1=\"262\" x2=\"35.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"65.1\" y1=\"262\" x2=\"65.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"94.5\" y1=\"262\" x2=\"94.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"123.9\" y1=\"262\" x2=\"123.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"153.3\" y1=\"262\" x2=\"153.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"182.7\" y1=\"262\" x2=\"182.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"212.1\" y1=\"262\" x2=\"212.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"241.5\" y1=\"262\" x2=\"241.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"270.9\" y1=\"262\" x2=\"270.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"300.4\" y1=\"262\" x2=\"300.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"256.9\" x2=\"318\" y2=\"256.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"231.2\" x2=\"318\" y2=\"231.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"205.6\" x2=\"318\" y2=\"205.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"180\" x2=\"318\" y2=\"180\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"154.4\" x2=\"318\" y2=\"154.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"128.8\" x2=\"318\" y2=\"128.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"103.1\" x2=\"318\" y2=\"103.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"77.5\" x2=\"318\" y2=\"77.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"51.9\" x2=\"318\" y2=\"51.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"26.3\" x2=\"318\" y2=\"26.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"180\" x2=\"324\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"153.3\" y1=\"262\" x2=\"153.3\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M324,180 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M153.3,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"324\" y=\"173\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"160.3\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"35.6\" y1=\"177\" x2=\"35.6\" y2=\"183\" stroke=\"currentColor\"/><text x=\"35.6\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"65.1\" y1=\"177\" x2=\"65.1\" y2=\"183\" stroke=\"currentColor\"/><text x=\"65.1\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"94.5\" y1=\"177\" x2=\"94.5\" y2=\"183\" stroke=\"currentColor\"/><text x=\"94.5\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"123.9\" y1=\"177\" x2=\"123.9\" y2=\"183\" stroke=\"currentColor\"/><text x=\"123.9\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"182.7\" y1=\"177\" x2=\"182.7\" y2=\"183\" stroke=\"currentColor\"/><text x=\"182.7\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"212.1\" y1=\"177\" x2=\"212.1\" y2=\"183\" stroke=\"currentColor\"/><text x=\"212.1\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"241.5\" y1=\"177\" x2=\"241.5\" y2=\"183\" stroke=\"currentColor\"/><text x=\"241.5\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"270.9\" y1=\"177\" x2=\"270.9\" y2=\"183\" stroke=\"currentColor\"/><text x=\"270.9\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"300.4\" y1=\"177\" x2=\"300.4\" y2=\"183\" stroke=\"currentColor\"/><text x=\"300.4\" y=\"195\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"150.3\" y1=\"256.9\" x2=\"156.3\" y2=\"256.9\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"260.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"150.3\" y1=\"231.2\" x2=\"156.3\" y2=\"231.2\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"235.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"150.3\" y1=\"205.6\" x2=\"156.3\" y2=\"205.6\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"209.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"150.3\" y1=\"154.4\" x2=\"156.3\" y2=\"154.4\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"158.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"150.3\" y1=\"128.8\" x2=\"156.3\" y2=\"128.8\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"132.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"150.3\" y1=\"103.1\" x2=\"156.3\" y2=\"103.1\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"107.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"150.3\" y1=\"77.5\" x2=\"156.3\" y2=\"77.5\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"81.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"150.3\" y1=\"51.9\" x2=\"156.3\" y2=\"51.9\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"55.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"150.3\" y1=\"26.3\" x2=\"156.3\" y2=\"26.3\" stroke=\"currentColor\"/><text x=\"147.3\" y=\"30.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"147.3\" y=\"194\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M35.6,154.4 L65.1,141.6 L90.8,130.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M98.1,127.2 L138.6,109.5 L182.7,90.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"94.5\" cy=\"128.8\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"94.5\" cy=\"77.5\" r=\"4\" fill=\"currentColor\"/><circle cx=\"35.6\" cy=\"154.4\" r=\"4\" fill=\"currentColor\"/><circle cx=\"182.7\" cy=\"90.3\" r=\"4\" fill=\"currentColor\"/><path d=\"M186.6,166.3 L186.6,166.3 L187,166.2 L187.4,166.1 L187.8,166 L188.2,165.9 L188.6,165.8 L189,165.7 L189.4,165.6 L189.8,165.4 L190.2,165.3 L190.5,165.2 L190.9,165.1 L191.3,165 L191.7,164.9 L192.1,164.7 L192.5,164.6 L192.9,164.5 L193.3,164.4 L193.7,164.2 L194.1,164.1 L194.5,164 L194.9,163.9 L195.2,163.7 L195.6,163.6 L196,163.4 L196.4,163.3 L196.8,163.1 L197.2,163 L197.6,162.8 L198,162.7 L198.4,162.5 L198.8,162.4 L199.2,162.2 L199.6,162 L200,161.9 L200.3,161.7 L200.7,161.5 L201.1,161.3 L201.5,161.2 L201.9,161 L202.3,160.8 L202.7,160.6 L203.1,160.4 L203.5,160.2 L203.9,160 L204.3,159.8 L204.7,159.6 L205,159.3 L205.4,159.1 L205.8,158.9 L206.2,158.7 L206.6,158.4 L207,158.2 L207.4,157.9 L207.8,157.7 L208.2,157.4 L208.6,157.1 L209,156.9 L209.4,156.6 L209.8,156.3 L210.1,156 L210.5,155.7 L210.9,155.4 L211.3,155.1 L211.7,154.7 L212.1,154.4 L212.5,154 L212.9,153.7 L213.3,153.3 L213.7,152.9 L214.1,152.6 L214.5,152.2 L214.8,151.8 L215.2,151.3 L215.6,150.9 L216,150.5 L216.4,150 L216.8,149.5 L217.2,149 L217.6,148.5 L218,148 L218.4,147.5 L218.8,146.9 L219.2,146.3 L219.6,145.7 L219.9,145.1 L220.3,144.4 L220.7,143.8 L221.1,143.1 L221.5,142.4 L221.9,141.6 L222.3,140.8 L222.7,140 L223.1,139.2 L223.5,138.3 L223.9,137.3 L224.3,136.4 L224.6,135.4 L225,134.3 L225.4,133.2 L225.8,132 L226.2,130.8 L226.6,129.5 L227,128.1 L227.4,126.7 L227.8,125.2 L228.2,123.6 L228.6,121.9 L229,120.1 L229.3,118.1 L229.7,116.1 L230.1,113.9 L230.5,111.5 L230.9,109 L231.3,106.3 L231.7,103.3 L232.1,100.1 L232.5,96.7 L232.9,92.9 L233.3,88.8 L233.7,84.2 L234.1,79.2 L234.4,73.6 L234.8,67.4 L235.2,60.4 L235.6,52.4 L236,43.4 L236.4,32.9 L236.8,20.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"182.7\" cy=\"167.2\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><path d=\"M247.4,256.3 L247.8,248.4 L248.2,241.4 L248.6,235.1 L249,229.6 L249.4,224.5 L249.8,220 L250.2,215.9 L250.6,212.1 L251,208.6 L251.4,205.4 L251.7,202.5 L252.1,199.8 L252.5,197.2 L252.9,194.9 L253.3,192.7 L253.7,190.6 L254.1,188.7 L254.5,186.9 L254.9,185.2 L255.3,183.6 L255.7,182.1 L256.1,180.6 L256.5,179.3 L256.8,178 L257.2,176.7 L257.6,175.6 L258,174.5 L258.4,173.4 L258.8,172.4 L259.2,171.4 L259.6,170.5 L260,169.6 L260.4,168.7 L260.8,167.9 L261.2,167.1 L261.5,166.4 L261.9,165.7 L262.3,165 L262.7,164.3 L263.1,163.7 L263.5,163 L263.9,162.4 L264.3,161.9 L264.7,161.3 L265.1,160.8 L265.5,160.2 L265.9,159.7 L266.3,159.2 L266.6,158.8 L267,158.3 L267.4,157.9 L267.8,157.4 L268.2,157 L268.6,156.6 L269,156.2 L269.4,155.8 L269.8,155.4 L270.2,155.1 L270.6,154.7 L271,154.4 L271.3,154 L271.7,153.7 L272.1,153.4 L272.5,153.1 L272.9,152.8 L273.3,152.5 L273.7,152.2 L274.1,151.9 L274.5,151.6 L274.9,151.4 L275.3,151.1 L275.7,150.8 L276.1,150.6 L276.4,150.3 L276.8,150.1 L277.2,149.9 L277.6,149.6 L278,149.4 L278.4,149.2 L278.8,149 L279.2,148.8 L279.6,148.6 L280,148.4 L280.4,148.2 L280.8,148 L281.1,147.8 L281.5,147.6 L281.9,147.4 L282.3,147.2 L282.7,147 L283.1,146.9 L283.5,146.7 L283.9,146.5 L284.3,146.4 L284.7,146.2 L285.1,146.1 L285.5,145.9 L285.9,145.8 L286.2,145.6 L286.6,145.5 L287,145.3 L287.4,145.2 L287.8,145 L288.2,144.9 L288.6,144.8 L289,144.6 L289.4,144.5 L289.8,144.4 L290.2,144.2 L290.6,144.1 L290.9,144 L291.3,143.9 L291.7,143.8 L292.1,143.6 L292.5,143.5 L292.9,143.4 L293.3,143.3 L293.7,143.2 L294.1,143.1 L294.5,143 L294.9,142.9 L295.3,142.8 L295.6,142.7 L296,142.6 L296.4,142.5 L296.8,142.4 L297.2,142.3 L297.6,142.2 L298,142.1 L298.4,142 L298.8,141.9 L299.2,141.8 L299.6,141.7 L300,141.6 L300.4,141.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"300.4\" cy=\"141.6\" r=\"4\" fill=\"currentColor\"/><path d=\"M241.5,262 L241.5,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q02",
+  "topicId": "calc-continuity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $k$ that makes $f$ continuous at $x = 2$, where\n$$f(x) = \\begin{cases} kx + 1, & x < 2 \\\\ 3x + 1, & x \\ge 2 \\end{cases}$$",
+  "hint": "Find the left-hand limit and the right-hand limit at $x = 2$ and set them equal.",
+  "answer": "$k = 3$",
+  "solution": "Left-hand limit: $\\displaystyle\\lim_{x \\to 2^-} (kx + 1) = 2k + 1$.\n\nRight-hand limit and value: $\\displaystyle\\lim_{x \\to 2^+} (3x + 1) = 7 = f(2)$.\n\nFor continuity:\n$$2k + 1 = 7 \\quad\\Rightarrow\\quad k = 3$$\n\nCheck: both pieces give 7 at $x = 2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q03",
+  "topicId": "calc-continuity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $k$ that makes $f$ continuous at $x = 2$, where\n$$f(x) = \\begin{cases} kx + 1, & x < 2 \\\\ 3x + k, & x \\ge 2 \\end{cases}$$",
+  "hint": "Same method: left-hand limit = right-hand limit. This time $k$ appears on both sides.",
+  "answer": "$k = 5$",
+  "solution": "Left-hand limit: $2k + 1$. Right-hand limit and $f(2)$: $6 + k$.\n\n$$2k + 1 = 6 + k \\quad\\Rightarrow\\quad k = 5$$\n\nCheck: $2(5) + 1 = 11$ and $6 + 5 = 11$, so $f(2) = 11$ and both one-sided limits are 11.\n\n**What changed:** the constant 1 in the right-hand piece became $k$, so $k$ now appears in both pieces and we collect it on one side.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q04",
+  "topicId": "calc-continuity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $k$ that makes $f$ continuous at $x = 2$, where\n$$f(x) = \\begin{cases} kx + 1, & x < 2 \\\\ 3x + 3k, & x \\ge 2 \\end{cases}$$",
+  "hint": "Set $\\lim_{x \\to 2^-} f(x) = \\lim_{x \\to 2^+} f(x)$. Watch the signs when you collect the $k$ terms.",
+  "answer": "$k = -5$",
+  "solution": "Left-hand limit: $2k + 1$. Right-hand limit and $f(2)$: $6 + 3k$.\n\n$$2k + 1 = 6 + 3k \\quad\\Rightarrow\\quad -5 = k$$\n\nCheck: $2(-5) + 1 = -9$ and $6 + 3(-5) = -9$ ✓\n\n**What changed:** the right-hand piece now contains $3k$ instead of $k$. The coefficient of $k$ is now larger on the right, so the solution becomes negative.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q05",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find all values of $k$ that make $f$ continuous at $x = 2$, where\n$$f(x) = \\begin{cases} k^2x + 1, & x < 2 \\\\ 3x + 3k, & x \\ge 2 \\end{cases}$$",
+  "hint": "Setting the one-sided limits equal now gives a quadratic equation in $k$.",
+  "answer": "$k = -1$ or $k = \\dfrac{5}{2}$",
+  "solution": "Left-hand limit: $2k^2 + 1$. Right-hand limit and $f(2)$: $6 + 3k$.\n\n$$2k^2 + 1 = 6 + 3k \\quad\\Rightarrow\\quad 2k^2 - 3k - 5 = 0$$\n$$(2k - 5)(k + 1) = 0 \\quad\\Rightarrow\\quad k = \\frac{5}{2} \\text{ or } k = -1$$\n\nCheck $k = -1$: $2(1) + 1 = 3$ and $6 - 3 = 3$ ✓\n\nCheck $k = \\frac{5}{2}$: $2\\left(\\frac{25}{4}\\right) + 1 = \\frac{27}{2}$ and $6 + \\frac{15}{2} = \\frac{27}{2}$ ✓\n\n**What changed:** $k$ became $k^2$ in the left piece, so the condition is quadratic and there are two values of $k$ that work.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q06",
+  "topicId": "calc-continuity",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Show that the equation $x^3 + x - 5 = 0$ has a solution between $x = 1$ and $x = 2$.",
+  "hint": "Let $f(x) = x^3 + x - 5$. Work out $f(1)$ and $f(2)$, and remember to say why the Intermediate Value Theorem can be used.",
+  "answer": "$f(1) = -3 < 0$ and $f(2) = 5 > 0$; $f$ is continuous, so by the IVT there is a root in $(1, 2)$.",
+  "solution": "Let $f(x) = x^3 + x - 5$.\n\n$f(1) = 1 + 1 - 5 = -3$\n\n$f(2) = 8 + 2 - 5 = 5$\n\n$f$ is a polynomial, so it is continuous on $[1, 2]$. Since $f(1) < 0 < f(2)$, the value 0 lies between $f(1)$ and $f(2)$.\n\nBy the Intermediate Value Theorem there is at least one $c$ in $(1, 2)$ with $f(c) = 0$, which is a solution of $x^3 + x - 5 = 0$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q07",
+  "topicId": "calc-continuity",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Aisha is asked whether $f$ is continuous at $x = 3$, where\n$$f(x) = \\begin{cases} \\dfrac{x^2 + x - 12}{x - 3}, & x \\ne 3 \\\\ 6, & x = 3 \\end{cases}$$\n\nHer answer is: \"$f(3) = 6$, so $f(3)$ is defined. Therefore $f$ is continuous at $x = 3$.\"\n\nExplain what is wrong with Aisha's answer and decide whether $f$ is continuous at $x = 3$.",
+  "hint": "Being defined is only the first of three conditions. Work out $\\lim_{x \\to 3} f(x)$ by factoring.",
+  "answer": "Aisha only checked condition 1. $\\lim_{x \\to 3} f(x) = 7 \\ne 6 = f(3)$, so $f$ is not continuous at $x = 3$ (removable discontinuity).",
+  "solution": "**Error:** Aisha has checked only the first condition ($f(3)$ is defined). Continuity needs all three:\n1. $f(3)$ is defined;\n2. $\\lim_{x \\to 3} f(x)$ exists;\n3. $\\lim_{x \\to 3} f(x) = f(3)$.\n\n**Correct working.** For $x \\ne 3$:\n$$\\frac{x^2 + x - 12}{x - 3} = \\frac{(x - 3)(x + 4)}{x - 3} = x + 4$$\nso\n$$\\lim_{x \\to 3} f(x) = 3 + 4 = 7$$\n\nConditions 1 and 2 hold, but $\\lim_{x \\to 3} f(x) = 7 \\ne 6 = f(3)$, so condition 3 fails.\n\n$f$ is **not** continuous at $x = 3$. It has a removable discontinuity; redefining $f(3) = 7$ would make it continuous.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q08",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Diego is describing the discontinuities of\n$$h(x) = \\frac{x^2 - x - 6}{x^2 - 9}$$\n\nHe writes: \"The denominator is zero when $x = 3$ and when $x = -3$, so $h$ has infinite discontinuities (vertical asymptotes) at $x = 3$ and $x = -3$.\"\n\nIdentify Diego's error and describe the discontinuities correctly.",
+  "hint": "Factor the numerator and the denominator. What happens to the numerator at each of $x = 3$ and $x = -3$?",
+  "answer": "Diego did not check the numerator. $x = 3$ is a removable discontinuity (hole at $\\left(3, \\frac{5}{6}\\right)$); $x = -3$ is an infinite discontinuity (vertical asymptote).",
+  "solution": "**Error:** Diego assumed that every zero of the denominator gives a vertical asymptote. A vertical asymptote needs the denominator $\\to 0$ while the numerator does **not**.\n\nFactor:\n$$h(x) = \\frac{(x - 3)(x + 2)}{(x - 3)(x + 3)}$$\n\n**At $x = 3$:** the factor $(x - 3)$ cancels, so for $x \\ne 3$, $h(x) = \\dfrac{x + 2}{x + 3}$ and\n$$\\lim_{x \\to 3} h(x) = \\frac{5}{6}$$\nThe limit exists but $h(3)$ is undefined: a **removable** discontinuity, a hole at $\\left(3, \\frac{5}{6}\\right)$.\n\n**At $x = -3$:** the numerator of $\\frac{x + 2}{x + 3}$ tends to $-1 \\ne 0$ while the denominator tends to 0, so $h(x) \\to \\pm\\infty$ ($+\\infty$ from the left, $-\\infty$ from the right): an **infinite** discontinuity, with vertical asymptote $x = -3$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-rational-functions"
+  ]
+ },
+ {
+  "id": "calc-continuity-q09",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Noah's working is shown below ($x$ in radians).\n\n\"Let $f(x) = \\tan x$. Then $f\\left(\\frac{\\pi}{4}\\right) = 1$ and $f\\left(\\frac{3\\pi}{4}\\right) = -1$. Since 0 is between $-1$ and 1, the Intermediate Value Theorem tells us that $\\tan c = 0$ for some $c$ in $\\left(\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right)$.\"\n\nIdentify the error in Noah's reasoning and explain whether his conclusion is true.",
+  "hint": "What must be true about $f$ on the interval before you can use the IVT? Think about the graph of $y = \\tan x$ near $x = \\frac{\\pi}{2}$.",
+  "answer": "The IVT needs $f$ continuous on $\\left[\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right]$, but $\\tan x$ is undefined at $x = \\frac{\\pi}{2}$ (infinite discontinuity). The conclusion is false: $\\tan x \\ne 0$ anywhere in that interval.",
+  "solution": "**Error:** Noah did not check the hypothesis of the IVT. The theorem only applies if $f$ is continuous on the **whole** closed interval $\\left[\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right]$.\n\n$\\tan x = \\frac{\\sin x}{\\cos x}$ and $\\cos\\frac{\\pi}{2} = 0$, so $\\tan x$ is undefined at $x = \\frac{\\pi}{2}$, which is inside the interval. As $x \\to \\frac{\\pi}{2}^-$, $\\tan x \\to +\\infty$ and as $x \\to \\frac{\\pi}{2}^+$, $\\tan x \\to -\\infty$: an infinite discontinuity. The graph jumps from $+\\infty$ to $-\\infty$ without passing through 0.\n\n**Is the conclusion true?** No. $\\tan x = 0$ only when $\\sin x = 0$, i.e. $x = 0, \\pm\\pi, \\pm 2\\pi, \\ldots$, and none of these lie in $\\left(\\frac{\\pi}{4}, \\frac{3\\pi}{4}\\right)$.\n\nSo the sign change came from the asymptote, not from a root.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "pure-trig-graphs"
+  ]
+ },
+ {
+  "id": "calc-continuity-q10",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $f(x) = 9x^2 - 9x + 2$.\n\nMia says: \"$f(0) = 2$ and $f(1) = 2$ are both positive, so by the Intermediate Value Theorem the equation $f(x) = 0$ has no solutions in $[0, 1]$.\"\n\n(a) Explain why Mia's reasoning is not valid.\n\n(b) By evaluating $f\\left(\\frac{1}{2}\\right)$, use the Intermediate Value Theorem to show that $f(x) = 0$ has at least two solutions in $[0, 1]$.",
+  "hint": "The IVT says: sign change $\\Rightarrow$ root. Does it say anything when there is **no** sign change?",
+  "answer": "(a) The IVT guarantees a root when there is a sign change, but no sign change does not rule out roots (there could be an even number). (b) $f\\left(\\frac{1}{2}\\right) = -\\frac{1}{4} < 0$, so there are sign changes on $\\left[0, \\frac{1}{2}\\right]$ and $\\left[\\frac{1}{2}, 1\\right]$; the roots are $x = \\frac{1}{3}$ and $x = \\frac{2}{3}$.",
+  "solution": "(a) The IVT is a one-way statement: **if** $f$ is continuous and $f(a)$, $f(b)$ have opposite signs, **then** there is a root between $a$ and $b$. It says nothing when $f(a)$ and $f(b)$ have the same sign: the graph could dip below the axis and come back up, crossing it an even number of times. So Mia cannot conclude there are no roots.\n\n(b) $f\\left(\\frac{1}{2}\\right) = \\frac{9}{4} - \\frac{9}{2} + 2 = -\\frac{1}{4}$.\n\n$f$ is a polynomial, so it is continuous everywhere.\n\nOn $\\left[0, \\frac{1}{2}\\right]$: $f(0) = 2 > 0 > -\\frac{1}{4} = f\\left(\\frac{1}{2}\\right)$, so by the IVT there is a root in $\\left(0, \\frac{1}{2}\\right)$.\n\nOn $\\left[\\frac{1}{2}, 1\\right]$: $f\\left(\\frac{1}{2}\\right) < 0 < 2 = f(1)$, so by the IVT there is a root in $\\left(\\frac{1}{2}, 1\\right)$.\n\nThese intervals do not overlap, so there are at least two solutions. (Indeed $9x^2 - 9x + 2 = (3x - 1)(3x - 2)$, with roots $\\frac{1}{3}$ and $\\frac{2}{3}$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q11",
+  "topicId": "calc-continuity",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Let $f$ be a function that is continuous on $[0, 1]$ with $0 \\le f(x) \\le 1$ for every $x$ in $[0, 1]$.\n\n(a) Prove that there is at least one number $c$ in $[0, 1]$ with $f(c) = c$.\n\n(b) Give an example of a function $g$ defined on $[0, 1]$, with $0 \\le g(x) \\le 1$, that is **not** continuous and for which $g(c) = c$ has no solution. Explain why your example works.",
+  "hint": "Consider the new function $d(x) = f(x) - x$. What can you say about the signs of $d(0)$ and $d(1)$?",
+  "answer": "(a) Apply the IVT to $d(x) = f(x) - x$: $d(0) \\ge 0 \\ge d(1)$. (b) For example $g(x) = 1$ for $0 \\le x \\le \\frac{1}{2}$ and $g(x) = 0$ for $\\frac{1}{2} < x \\le 1$.",
+  "solution": "(a) Define $d(x) = f(x) - x$ on $[0, 1]$. It is the difference of two continuous functions, so $d$ is continuous on $[0, 1]$.\n\n$d(0) = f(0) - 0 = f(0) \\ge 0$, because $f(0) \\ge 0$.\n\n$d(1) = f(1) - 1 \\le 0$, because $f(1) \\le 1$.\n\nIf $d(0) = 0$ then $c = 0$ works; if $d(1) = 0$ then $c = 1$ works.\n\nOtherwise $d(0) > 0 > d(1)$, so 0 lies between $d(0)$ and $d(1)$. By the Intermediate Value Theorem there is $c$ in $(0, 1)$ with $d(c) = 0$, i.e. $f(c) = c$.\n\nIn every case there is $c$ in $[0, 1]$ with $f(c) = c$. $\\blacksquare$\n\n(Geometrically: the graph of $f$ must cross the line $y = x$ somewhere in the unit square.)\n\n(b) Let\n$$g(x) = \\begin{cases} 1, & 0 \\le x \\le \\frac{1}{2} \\\\ 0, & \\frac{1}{2} < x \\le 1 \\end{cases}$$\nIts values lie in $[0, 1]$.\n\nFor $0 \\le x \\le \\frac{1}{2}$: $g(x) = 1 \\ne x$ since $x \\le \\frac{1}{2}$.\n\nFor $\\frac{1}{2} < x \\le 1$: $g(x) = 0 \\ne x$ since $x > 0$.\n\nSo $g(c) = c$ has no solution. This does not contradict (a) because $g$ has a jump discontinuity at $x = \\frac{1}{2}$, so the continuity hypothesis (and hence the IVT) fails.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "pure-proof"
+  ]
+ },
+ {
+  "id": "calc-continuity-q12",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "An engineer models the profile of a section of roller-coaster track by\n$$h(x) = \\begin{cases} 0.02x^2, & 0 \\le x \\le 50 \\\\ ax + b, & 50 < x \\le 100 \\end{cases}$$\nwhere $h(x)$ is the height of the track, in feet, at a horizontal distance of $x$ feet from the start. The track must have no breaks, and it must be 30 feet high at $x = 100$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the values of $a$ and $b$."
+   },
+   {
+    "label": "b",
+    "prompt": "Use the Intermediate Value Theorem to explain why the track is exactly 45 feet high at least twice for $0 \\le x \\le 100$."
+   }
+  ],
+  "hint": "\"No breaks\" means $h$ is continuous at $x = 50$. That gives one equation; $h(100) = 30$ gives another.",
+  "answer": "(a) $a = -0.4$, $b = 70$ (b) $h$ is continuous with $h(0) = 0 < 45 < 50 = h(50)$ and $h(50) = 50 > 45 > 30 = h(100)$, so $h = 45$ at least once in each of $(0, 50)$ and $(50, 100)$.",
+  "solution": "(a) At $x = 50$ the left piece gives $0.02(50)^2 = 50$, so $h(50) = 50$ and $\\displaystyle\\lim_{x \\to 50^-} h(x) = 50$.\n\nContinuity at $x = 50$ requires $\\displaystyle\\lim_{x \\to 50^+}(ax + b) = 50$:\n$$50a + b = 50$$\n\nThe height at $x = 100$ is 30:\n$$100a + b = 30$$\n\nSubtracting: $50a = -20$, so $a = -0.4$ and $b = 50 - 50(-0.4) = 70$.\n\n(b) With these values $h$ is continuous on $[0, 100]$ (each piece is a polynomial and the pieces join at $x = 50$).\n\nOn $[0, 50]$: $h(0) = 0$ and $h(50) = 50$. Since $0 < 45 < 50$, the IVT gives some $x$ in $(0, 50)$ with $h(x) = 45$.\n\nOn $[50, 100]$: $h(50) = 50$ and $h(100) = 30$. Since $30 < 45 < 50$, the IVT gives some $x$ in $(50, 100)$ with $h(x) = 45$.\n\nThese two intervals share only $x = 50$, where $h = 50 \\ne 45$, so the two points are different: the track is 45 feet high at least twice. (In fact at $x = 15\\sqrt{10} \\approx 47.4$ ft and $x = 62.5$ ft.)",
+  "linkedTopicIds": [
+   "alg-piecewise-functions"
+  ]
+ },
+ {
+  "id": "calc-continuity-q13",
+  "topicId": "calc-continuity",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The temperature in a city, $T(t)$ degrees Fahrenheit, is recorded $t$ hours after 6 a.m. on one day. $T$ is a continuous function. Selected values are shown in the table.\n\n| $t$ (hours) | 0 | 2 | 5 | 8 | 10 |\n|---|---|---|---|---|---|\n| $T(t)$ (°F) | 48 | 62 | 57 | 71 | 66 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why there must be a time between 6 a.m. and 8 a.m. when the temperature is exactly 60°F."
+   },
+   {
+    "label": "b",
+    "prompt": "What is the least number of times during $0 \\le t \\le 10$ that the temperature must equal 60°F? Justify your answer."
+   },
+   {
+    "label": "c",
+    "prompt": "Must there be a time during $0 \\le t \\le 10$ when the temperature is exactly 75°F? Explain."
+   }
+  ],
+  "hint": "Use the IVT on each interval between consecutive table values. Check whether 60 lies between the two temperatures on each interval.",
+  "answer": "(a) $T$ is continuous and $48 < 60 < 62$, so by the IVT $T(c) = 60$ for some $c$ in $(0, 2)$. (b) At least 3 times. (c) No – the table does not guarantee it.",
+  "solution": "(a) $T$ is continuous on $[0, 2]$ and $T(0) = 48 < 60 < 62 = T(2)$. By the Intermediate Value Theorem there is a $c$ in $(0, 2)$ with $T(c) = 60$, i.e. a time between 6 a.m. and 8 a.m. when it is exactly 60°F.\n\n(b) Apply the IVT on each interval between table values ($T$ is continuous on each):\n\n$[0, 2]$: $48 \\to 62$, and 60 is between them ✓\n\n$[2, 5]$: $62 \\to 57$, and 60 is between them ✓\n\n$[5, 8]$: $57 \\to 71$, and 60 is between them ✓\n\n$[8, 10]$: $71 \\to 66$, 60 is **not** between them.\n\nThe open intervals $(0, 2)$, $(2, 5)$, $(5, 8)$ do not overlap, and $T \\ne 60$ at the table times, so the three values of $t$ are different. The temperature must equal 60°F **at least 3 times**. (It could happen more often – the IVT gives a minimum, not an exact count.)\n\n(c) No. The largest value in the table is 71°F, and 75 is not between any pair of recorded values, so the IVT does not guarantee it. The temperature **might** reach 75°F between readings, but it does not have to.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-continuity-q14",
+  "topicId": "calc-continuity",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Find the values of the constants $a$ and $b$ that make $f$ continuous for all real $x$, where\n$$f(x) = \\begin{cases} ax + b, & x < 1 \\\\ x^2 + 2, & 1 \\le x \\le 3 \\\\ bx + a, & x > 3 \\end{cases}$$",
+  "hint": "There are two boundaries, $x = 1$ and $x = 3$. Each gives an equation in $a$ and $b$.",
+  "answer": "$a = -1$, $b = 4$",
+  "solution": "Each piece is a polynomial, so $f$ is continuous everywhere except possibly at $x = 1$ and $x = 3$.\n\n**At $x = 1$:** $\\displaystyle\\lim_{x \\to 1^-} (ax + b) = a + b$ and $f(1) = 1 + 2 = 3$ (also the right-hand limit). So\n$$a + b = 3 \\qquad (1)$$\n\n**At $x = 3$:** $f(3) = 9 + 2 = 11$ (also the left-hand limit) and $\\displaystyle\\lim_{x \\to 3^+} (bx + a) = 3b + a$. So\n$$3b + a = 11 \\qquad (2)$$\n\n$(2) - (1)$: $2b = 8$, so $b = 4$ and $a = -1$.\n\nCheck: $f(x) = -x + 4$ for $x < 1$ gives 3 at $x = 1$ ✓; $f(x) = 4x - 1$ for $x > 3$ gives 11 at $x = 3$ ✓",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "calc-continuity-q15",
+  "topicId": "calc-continuity",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Let\n$$g(x) = \\frac{x^2 + c}{x^2 - 5x + 6}$$\nwhere $c$ is a constant.\n\nFind every value of $c$ for which $g$ has a removable discontinuity. For each value, give the coordinates of the hole and describe the other discontinuity of $g$.",
+  "hint": "$x^2 - 5x + 6 = (x - 2)(x - 3)$. A removable discontinuity needs the numerator to be 0 at the same $x$ as the denominator.",
+  "answer": "$c = -4$: hole at $(2, -4)$, vertical asymptote (infinite discontinuity) at $x = 3$. $c = -9$: hole at $(3, 6)$, vertical asymptote at $x = 2$.",
+  "solution": "The denominator is $(x - 2)(x - 3)$, which is 0 at $x = 2$ and $x = 3$. A discontinuity at one of these is removable only if the limit exists there, which needs the numerator to be 0 there too (otherwise we get $\\frac{k}{0}$, $k \\ne 0$: an infinite discontinuity).\n\n**Numerator zero at $x = 2$:** $4 + c = 0$, so $c = -4$.\n$$g(x) = \\frac{(x - 2)(x + 2)}{(x - 2)(x - 3)} = \\frac{x + 2}{x - 3} \\quad (x \\ne 2)$$\n$\\lim_{x \\to 2} g(x) = \\frac{4}{-1} = -4$, so there is a hole at $(2, -4)$. At $x = 3$ the numerator of $\\frac{x + 2}{x - 3}$ is $5 \\ne 0$, so there is an infinite discontinuity (vertical asymptote $x = 3$).\n\n**Numerator zero at $x = 3$:** $9 + c = 0$, so $c = -9$.\n$$g(x) = \\frac{(x - 3)(x + 3)}{(x - 2)(x - 3)} = \\frac{x + 3}{x - 2} \\quad (x \\ne 3)$$\n$\\lim_{x \\to 3} g(x) = \\frac{6}{1} = 6$, so there is a hole at $(3, 6)$. At $x = 2$ the numerator is $5 \\ne 0$: vertical asymptote $x = 2$.\n\nFor any other $c$ both discontinuities are infinite.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-rational-functions"
+  ]
+ },
+ {
+  "id": "calc-continuity-q16",
+  "topicId": "calc-continuity",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $f(x) = \\cos x - x$, where $x$ is in radians.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the equation $\\cos x = x$ has a solution in the interval $\\left(0, \\frac{\\pi}{2}\\right)$."
+   },
+   {
+    "label": "b",
+    "prompt": "By evaluating $f$ at two suitable values, show that this solution is $0.74$ correct to 2 decimal places."
+   }
+  ],
+  "hint": "For (b), a number rounds to $0.74$ if it lies between $0.735$ and $0.745$. Look for a sign change of $f$ across that interval.",
+  "answer": "(a) $f(0) = 1 > 0$, $f\\left(\\frac{\\pi}{2}\\right) = -\\frac{\\pi}{2} < 0$, $f$ continuous, so a root exists by the IVT. (b) $f(0.735) \\approx 0.0068 > 0$ and $f(0.745) \\approx -0.0099 < 0$, so the root lies in $(0.735, 0.745)$ and is $0.74$ to 2 d.p.",
+  "solution": "(a) $\\cos x$ and $x$ are continuous everywhere, so $f$ is continuous on $\\left[0, \\frac{\\pi}{2}\\right]$.\n\n$f(0) = \\cos 0 - 0 = 1 > 0$\n\n$f\\left(\\frac{\\pi}{2}\\right) = 0 - \\frac{\\pi}{2} \\approx -1.571 < 0$\n\nSince 0 lies between $f(0)$ and $f\\left(\\frac{\\pi}{2}\\right)$, by the IVT there is $c$ in $\\left(0, \\frac{\\pi}{2}\\right)$ with $f(c) = 0$, i.e. $\\cos c = c$.\n\n(b) Use the bounds for rounding to $0.74$:\n\n$f(0.735) = \\cos(0.735) - 0.735 \\approx 0.74183 - 0.735 = 0.0068 > 0$\n\n$f(0.745) = \\cos(0.745) - 0.745 \\approx 0.73509 - 0.745 = -0.0099 < 0$\n\n$f$ is continuous on $[0.735, 0.745]$ and changes sign, so by the IVT the root lies in $(0.735, 0.745)$. Every number in that interval rounds to $0.74$, so the solution is $x = 0.74$ to 2 decimal places. (In fact $c \\approx 0.7391$.)",
+  "linkedTopicIds": [
+   "pure-numerical-methods",
+   "pure-trig-graphs"
+  ]
+ },
+ {
+  "id": "calc-continuity-q17",
+  "topicId": "calc-continuity",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $p(x) = a_n x^n + a_{n-1}x^{n-1} + \\cdots + a_1 x + a_0$ be a polynomial of **odd** degree $n$ with $a_n > 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to \\infty} p(x)$ and $\\displaystyle\\lim_{x \\to -\\infty} p(x)$, explaining your reasoning."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove that $p(x) = 0$ has at least one real solution."
+   },
+   {
+    "label": "c",
+    "prompt": "Explain why the same argument does not work for polynomials of even degree, giving an example."
+   }
+  ],
+  "hint": "Factor out $x^n$: $p(x) = x^n\\left(a_n + \\frac{a_{n-1}}{x} + \\cdots + \\frac{a_0}{x^n}\\right)$. What is the sign of $x^n$ for large negative $x$ when $n$ is odd?",
+  "answer": "(a) $+\\infty$ and $-\\infty$ (b) There are $A < B$ with $p(A) < 0 < p(B)$; $p$ is continuous, so the IVT gives a root in $(A, B)$. (c) For even $n$ both limits are $+\\infty$, so there need be no sign change; e.g. $x^2 + 1 > 0$ has no real root.",
+  "solution": "(a) For $x \\ne 0$:\n$$p(x) = x^n\\left(a_n + \\frac{a_{n-1}}{x} + \\cdots + \\frac{a_1}{x^{n-1}} + \\frac{a_0}{x^n}\\right)$$\n\nAs $x \\to \\pm\\infty$, every term $\\frac{a_k}{x^{n-k}} \\to 0$, so the bracket $\\to a_n > 0$.\n\nAs $x \\to \\infty$, $x^n \\to +\\infty$, so $\\displaystyle\\lim_{x \\to \\infty} p(x) = +\\infty$.\n\nAs $x \\to -\\infty$, because $n$ is odd, $x^n \\to -\\infty$ (a negative number to an odd power is negative), so $\\displaystyle\\lim_{x \\to -\\infty} p(x) = -\\infty$.\n\n(b) Since $p(x) \\to +\\infty$ as $x \\to \\infty$, there is a number $B$ with $p(B) > 0$. Since $p(x) \\to -\\infty$ as $x \\to -\\infty$, there is a number $A < B$ with $p(A) < 0$.\n\n$p$ is a polynomial, so it is continuous on $[A, B]$, and $p(A) < 0 < p(B)$. By the Intermediate Value Theorem there is $c$ in $(A, B)$ with $p(c) = 0$. So every odd-degree polynomial (with $a_n > 0$; if $a_n < 0$ apply this to $-p$) has at least one real zero. $\\blacksquare$\n\n(c) If $n$ is even, $x^n \\to +\\infty$ as $x \\to -\\infty$ too, so both limits are $+\\infty$ (when $a_n > 0$). There is no guaranteed sign change, so the IVT cannot be applied. For example $p(x) = x^2 + 1 \\ge 1$ for all $x$, so it has no real zeros.",
+  "linkedTopicIds": [
+   "calc-limits-infinity",
+   "pure-proof"
+  ]
+ },
+ {
+  "id": "calc-continuity-q18",
+  "topicId": "calc-continuity",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "Let $g$ be the function defined by\n$$g(x) = \\begin{cases} \\dfrac{x^2 + x - 6}{x - 2}, & x < 2 \\\\ k, & x = 2 \\\\ x^2 - 4x + 9, & x > 2 \\end{cases}$$\nwhere $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 2^-} g(x)$ and $\\displaystyle\\lim_{x \\to 2^+} g(x)$. Show the work that leads to your answers.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "For what value of $k$ is $g$ continuous at $x = 2$? Justify your answer using the definition of continuity.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Suppose $k = 1$. What type of discontinuity does $g$ have at $x = 2$? Give a reason for your answer.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Using the value of $k$ found in part (b), explain why there must be a value $c$, with $2 < c < 4$, such that $g(c) = 7$.",
+    "marks": 2
+   }
+  ],
+  "marks": 7,
+  "calculator": false,
+  "hint": "For (a), factor the numerator before letting $x \\to 2$. For (d), check that the conditions of the Intermediate Value Theorem hold on $[2, 4]$.",
+  "answer": "(a) Both equal $5$. (b) $k = 5$ (c) Removable: the limit exists ($5$) but $g(2) = 1 \\ne 5$. (d) $g$ is continuous on $[2, 4]$ and $g(2) = 5 < 7 < 9 = g(4)$, so by the IVT $g(c) = 7$ for some $c$ in $(2, 4)$.",
+  "solution": "(a) For $x < 2$:\n$$\\frac{x^2 + x - 6}{x - 2} = \\frac{(x - 2)(x + 3)}{x - 2} = x + 3$$\nso $\\displaystyle\\lim_{x \\to 2^-} g(x) = \\lim_{x \\to 2^-}(x + 3) = 5$. (1 pt)\n\n$\\displaystyle\\lim_{x \\to 2^+} g(x) = \\lim_{x \\to 2^+}(x^2 - 4x + 9) = 4 - 8 + 9 = 5$ (1 pt)\n\n(b) Since both one-sided limits equal 5, $\\displaystyle\\lim_{x \\to 2} g(x) = 5$. (1 pt)\n\n$g$ is continuous at $x = 2$ when $g(2)$ is defined and $\\displaystyle\\lim_{x \\to 2} g(x) = g(2)$, so $k = 5$. (1 pt: answer with justification)\n\n(c) With $k = 1$, $\\displaystyle\\lim_{x \\to 2} g(x) = 5$ exists but $g(2) = 1 \\ne 5$, so the discontinuity is **removable**. (1 pt)\n\n(d) With $k = 5$, $g$ is continuous at $x = 2$, and for $x > 2$ it is a polynomial, so $g$ is continuous on $[2, 4]$. (1 pt)\n\n$g(2) = 5$ and $g(4) = 16 - 16 + 9 = 9$. Since $5 < 7 < 9$, by the Intermediate Value Theorem there is a value $c$ with $2 < c < 4$ such that $g(c) = 7$. (1 pt)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ }
+]
