@@ -1,0 +1,274 @@
+[
+ {
+  "id": "alg-synthetic-division-q01",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use synthetic division to divide $x^3 + 2x^2 - 5x - 6$ by $x - 2$. State the quotient and the remainder.",
+  "hint": "Dividing by $x - 2$ means $c = 2$. Bring down the first coefficient, multiply by 2, add to the next coefficient, and repeat.",
+  "answer": "Quotient $x^2 + 4x + 3$, remainder $0$",
+  "solution": "$c = 2$; coefficients $1, 2, -5, -6$.\n$$\\begin{array}{r|rrrr} 2 & 1 & 2 & -5 & -6 \\\\ & & 2 & 8 & 6 \\\\ \\hline & 1 & 4 & 3 & 0 \\end{array}$$\n\nBring down 1. $1 \\times 2 = 2$, $2 + 2 = 4$. $4 \\times 2 = 8$, $-5 + 8 = 3$. $3 \\times 2 = 6$, $-6 + 6 = 0$.\n\nThe bottom row $1, 4, 3$ gives a quotient one degree lower than the dividend: $x^2 + 4x + 3$. The last entry is the remainder, $0$, so $x - 2$ is a factor:\n$$x^3 + 2x^2 - 5x - 6 = (x - 2)(x^2 + 4x + 3)$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q02",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use synthetic division to divide $x^3 + 2x^2 - 5x - 6$ by $x + 2$. State the quotient and the remainder.",
+  "hint": "Write $x + 2$ as $x - c$. What is $c$?",
+  "answer": "Quotient $x^2 - 5$, remainder $4$",
+  "solution": "**What changed:** the divisor is now $x + 2$ instead of $x - 2$. Since $x + 2 = x - (-2)$, use $c = -2$.\n$$\\begin{array}{r|rrrr} -2 & 1 & 2 & -5 & -6 \\\\ & & -2 & 0 & 10 \\\\ \\hline & 1 & 0 & -5 & 4 \\end{array}$$\n\nBring down 1. $1 \\times (-2) = -2$, $2 + (-2) = 0$. $0 \\times (-2) = 0$, $-5 + 0 = -5$. $-5 \\times (-2) = 10$, $-6 + 10 = 4$.\n\nQuotient $x^2 + 0x - 5 = x^2 - 5$, remainder $4$:\n$$x^3 + 2x^2 - 5x - 6 = (x + 2)(x^2 - 5) + 4$$\n\nChanging the sign of $c$ changed every product in the middle row, and $x + 2$ is **not** a factor.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q03",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use synthetic division to divide $x^3 - 5x - 6$ by $x + 2$. State the quotient and the remainder.",
+  "hint": "There is no $x^2$ term. Every power needs a column.",
+  "answer": "Quotient $x^2 - 2x - 1$, remainder $-4$",
+  "solution": "**What changed:** the $2x^2$ term has gone from the dividend, so we must write a **zero placeholder**: $x^3 + 0x^2 - 5x - 6$. Coefficients $1, 0, -5, -6$ and $c = -2$.\n$$\\begin{array}{r|rrrr} -2 & 1 & 0 & -5 & -6 \\\\ & & -2 & 4 & 2 \\\\ \\hline & 1 & -2 & -1 & -4 \\end{array}$$\n\nQuotient $x^2 - 2x - 1$, remainder $-4$.\n\nCheck with the Remainder Theorem: $p(-2) = -8 + 10 - 6 = -4$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q04",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use synthetic division to divide $2x^3 - 5x - 6$ by $x + 2$. State the quotient and the remainder.",
+  "hint": "The method is the same; only the first coefficient has changed. Remember the zero placeholder.",
+  "answer": "Quotient $2x^2 - 4x + 3$, remainder $-12$",
+  "solution": "**What changed:** the leading coefficient is now 2. Coefficients $2, 0, -5, -6$ and $c = -2$.\n$$\\begin{array}{r|rrrr} -2 & 2 & 0 & -5 & -6 \\\\ & & -4 & 8 & -6 \\\\ \\hline & 2 & -4 & 3 & -12 \\end{array}$$\n\nBring down 2. $2 \\times (-2) = -4$, $0 + (-4) = -4$. $-4 \\times (-2) = 8$, $-5 + 8 = 3$. $3 \\times (-2) = -6$, $-6 + (-6) = -12$.\n\nQuotient $2x^2 - 4x + 3$ (the leading coefficient carries straight down), remainder $-12$.\n\nCheck: $p(-2) = 2(-8) + 10 - 6 = -12$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q05",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Let $p(x) = x^4 - 3x^3 + 2x - 5$.\n\n(a) Use synthetic division to find $p(3)$.\n\n(b) Verify your answer by substituting $x = 3$ directly.\n\n(c) Write $p(x)$ in the form $(x - 3)q(x) + r$.",
+  "hint": "By the Remainder Theorem, $p(3)$ is the remainder when $p(x)$ is divided by $x - 3$. Don't forget the $x^2$ term is missing.",
+  "answer": "(a) $p(3) = 1$ (b) $81 - 81 + 6 - 5 = 1$ (c) $p(x) = (x - 3)(x^3 + 2) + 1$",
+  "solution": "**(a)** Coefficients $1, -3, 0, 2, -5$ (zero for $x^2$), $c = 3$:\n$$\\begin{array}{r|rrrrr} 3 & 1 & -3 & 0 & 2 & -5 \\\\ & & 3 & 0 & 0 & 6 \\\\ \\hline & 1 & 0 & 0 & 2 & 1 \\end{array}$$\n\nThe remainder is $1$, so by the Remainder Theorem $p(3) = 1$.\n\n**(b)** $p(3) = 3^4 - 3(3^3) + 2(3) - 5 = 81 - 81 + 6 - 5 = 1$. ✓\n\n**(c)** The bottom row $1, 0, 0, 2$ is the quotient $x^3 + 0x^2 + 0x + 2 = x^3 + 2$:\n$$p(x) = (x - 3)(x^3 + 2) + 1$$",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q06",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Given that $x = 3$ is a zero of $p(x) = x^3 - 2x^2 - 5x + 6$, use synthetic division to factor $p(x)$ completely and find all of its zeros.",
+  "hint": "Divide by $x - 3$; the remainder should be 0. Then factor the quadratic quotient.",
+  "answer": "$p(x) = (x - 3)(x + 2)(x - 1)$; zeros $x = 3$, $x = -2$, $x = 1$",
+  "solution": "Divide by $x - 3$ ($c = 3$):\n$$\\begin{array}{r|rrrr} 3 & 1 & -2 & -5 & 6 \\\\ & & 3 & 3 & -6 \\\\ \\hline & 1 & 1 & -2 & 0 \\end{array}$$\n\nRemainder $0$ confirms $x - 3$ is a factor. The quotient is $x^2 + x - 2$:\n$$p(x) = (x - 3)(x^2 + x - 2) = (x - 3)(x + 2)(x - 1)$$\n\n**Zeros:** $x = 3$, $x = -2$, $x = 1$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q07",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "An engineer models part of a roller coaster track by\n$$h(x) = x^3 - x^2 - 8x + 6, \\quad 0 \\le x \\le 4$$\nwhere $h$ is the height of the track above the ground in feet and $x$ is the horizontal distance from the start of the section in tens of feet. Where $h(x) < 0$ the track runs through a tunnel below ground.\n\n(a) Show that the track is at ground level when $x = 3$.\n\n(b) Find the exact values of $x$ where the track is at ground level.\n\n(c) Find the horizontal length of the tunnel, to the nearest foot.",
+  "hint": "Use synthetic division by $x - 3$ to get a quadratic quotient, then use the quadratic formula. Remember $x$ is in tens of feet.",
+  "answer": "(a) $h(3) = 0$ (remainder 0) (b) $x = 3$ and $x = -1 + \\sqrt{3}$ (the root $-1 - \\sqrt{3}$ is outside the domain) (c) about 23 feet",
+  "solution": "**(a)** Divide by $x - 3$:\n$$\\begin{array}{r|rrrr} 3 & 1 & -1 & -8 & 6 \\\\ & & 3 & 6 & -6 \\\\ \\hline & 1 & 2 & -2 & 0 \\end{array}$$\n\nThe remainder is $0$, so $h(3) = 0$: the track is at ground level at $x = 3$.\n\n**(b)** $h(x) = (x - 3)(x^2 + 2x - 2)$. Solve $x^2 + 2x - 2 = 0$:\n$$x = \\frac{-2 \\pm \\sqrt{4 + 8}}{2} = \\frac{-2 \\pm 2\\sqrt{3}}{2} = -1 \\pm \\sqrt{3}$$\nOnly $-1 + \\sqrt{3} \\approx 0.732$ is in $0 \\le x \\le 4$. So the track is at ground level at $x = -1 + \\sqrt{3}$ and $x = 3$.\n\n**(c)** $h(0) = 6 > 0$ and, for example, $h(2) = 8 - 4 - 16 + 6 = -6 < 0$, so the track is underground between the two ground-level points. The tunnel's horizontal length is\n$$3 - (-1 + \\sqrt{3}) = 4 - \\sqrt{3} \\approx 2.268 \\text{ tens of feet} \\approx 23 \\text{ feet}$$",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "alg-synthetic-division-q08",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Marcus is dividing $2x^3 + 3x^2 - 8x + 5$ by $x + 3$. His work is shown below.\n$$\\begin{array}{r|rrrr} 3 & 2 & 3 & -8 & 5 \\\\ & & 6 & 27 & 57 \\\\ \\hline & 2 & 9 & 19 & 62 \\end{array}$$\n\nMarcus writes: \"The quotient is $2x^2 + 9x + 19$ and the remainder is $62$.\"\n\nFind Marcus's error, explain it, and give the correct quotient and remainder.",
+  "hint": "Synthetic division divides by $x - c$. Write $x + 3$ in that form.",
+  "answer": "He used $c = 3$ instead of $c = -3$. Correct: quotient $2x^2 - 3x + 1$, remainder $2$.",
+  "solution": "**Error:** Marcus put $3$ in the box. Synthetic division divides by $x - c$, and $x + 3 = x - (-3)$, so $c = -3$. (Equivalently, $c$ is the solution of $x + 3 = 0$.) His work actually divides by $x - 3$.\n\n**Correct work:**\n$$\\begin{array}{r|rrrr} -3 & 2 & 3 & -8 & 5 \\\\ & & -6 & 9 & -3 \\\\ \\hline & 2 & -3 & 1 & 2 \\end{array}$$\n\nQuotient $2x^2 - 3x + 1$, remainder $2$.\n\n**Check** with the Remainder Theorem: $p(-3) = 2(-27) + 3(9) - 8(-3) + 5 = -54 + 27 + 24 + 5 = 2$. ✓\n\n(Marcus's remainder 62 is $p(3)$, the value at the wrong input.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q09",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Elena is dividing $p(x) = x^4 - 3x^2 + 4x - 8$ by $x - 2$. Her work is shown below.\n$$\\begin{array}{r|rrrr} 2 & 1 & -3 & 4 & -8 \\\\ & & 2 & -2 & 4 \\\\ \\hline & 1 & -1 & 2 & -4 \\end{array}$$\n\nElena writes: \"$p(x) \\div (x - 2)$ gives quotient $x^2 - x + 2$ and remainder $-4$.\"\n\n(a) Find Elena's error and explain why it gives the wrong answer.\n\n(b) Give the correct quotient and remainder, and check the remainder using the Remainder Theorem.",
+  "hint": "How many coefficients should a degree-4 polynomial have?",
+  "answer": "(a) She left out the zero placeholder for the missing $x^3$ term. (b) Quotient $x^3 + 2x^2 + x + 6$, remainder $4$; $p(2) = 16 - 12 + 8 - 8 = 4$.",
+  "solution": "**(a)** $p(x)$ has no $x^3$ term, but synthetic division needs a column for **every** power from $x^4$ down to the constant. Elena used only $1, -3, 4, -8$, so her columns treat $p$ as $x^3 - 3x^2 + 4x - 8$: every coefficient has slid one place to the left (into the wrong power).\n\n**(b)** Write $p(x) = x^4 + 0x^3 - 3x^2 + 4x - 8$, coefficients $1, 0, -3, 4, -8$, $c = 2$:\n$$\\begin{array}{r|rrrrr} 2 & 1 & 0 & -3 & 4 & -8 \\\\ & & 2 & 4 & 2 & 12 \\\\ \\hline & 1 & 2 & 1 & 6 & 4 \\end{array}$$\n\nQuotient $x^3 + 2x^2 + x + 6$ (degree 3, one less than 4), remainder $4$.\n\n**Check:** $p(2) = 16 - 3(4) + 4(2) - 8 = 16 - 12 + 8 - 8 = 4$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q10",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kenji wants to know whether $x - 1$ is a factor of $p(x) = x^3 + 4x^2 - 2x - 5$. His work is shown below.\n$$\\begin{array}{r|rrrr} 1 & 1 & 4 & -2 & -5 \\\\ & & 1 & 3 & -5 \\\\ \\hline & 1 & 3 & -5 & 0 \\end{array}$$\n\nKenji writes: \"The remainder is $0$, so $x - 1$ is a factor of $p(x)$.\"\n\nFind Kenji's error, explain it, and decide correctly whether $x - 1$ is a factor.",
+  "hint": "Look at how each bottom-row entry was obtained from the numbers above it. Should the columns be added or subtracted?",
+  "answer": "He subtracted in each column instead of adding. Correctly, the bottom row is $1, 5, 3 \\mid -2$: remainder $-2$, so $x - 1$ is **not** a factor (quotient $x^2 + 5x + 3$).",
+  "solution": "**Error:** Kenji **subtracted** each column (as in long division): $4 - 1 = 3$, $-2 - 3 = -5$, $-5 - (-5) = 0$. In synthetic division you **add** each column. The subtraction of long division is already built in, because we multiply by $c$ rather than by $-c$.\n\n**Correct work:**\n$$\\begin{array}{r|rrrr} 1 & 1 & 4 & -2 & -5 \\\\ & & 1 & 5 & 3 \\\\ \\hline & 1 & 5 & 3 & -2 \\end{array}$$\n\nThe remainder is $-2$, not $0$, so $x - 1$ is **not** a factor. (Quotient $x^2 + 5x + 3$.)\n\n**Check:** $p(1) = 1 + 4 - 2 - 5 = -2 \\ne 0$. ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q11",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Ava divides a polynomial $p(x)$ by $x - 2$ using synthetic division and gets this bottom row:\n$$\\begin{array}{rrr|r} 3 & -1 & 4 & -2 \\end{array}$$\n\nAva says: \"So $p(x) \\div (x - 2) = 3x^3 - x^2 + 4x - 2$.\"\n\n(a) Explain what is wrong with Ava's statement.\n\n(b) Write $p(x)$ in the form $(x - 2)q(x) + r$, and hence find $p(x)$ in expanded form.",
+  "hint": "Dividing by a linear factor lowers the degree by one, and the last number in the bottom row is not part of the quotient.",
+  "answer": "(a) The last entry, $-2$, is the remainder, and the quotient has degree one less: $3x^2 - x + 4$. (b) $p(x) = (x - 2)(3x^2 - x + 4) - 2 = 3x^3 - 7x^2 + 6x - 10$",
+  "solution": "**(a)** Ava has read the whole bottom row as the quotient, giving it the same degree as the dividend. The last number in the bottom row, $-2$, is the **remainder**. The other three numbers are the coefficients of the quotient, which is one degree **lower** than $p(x)$. Since there are 4 numbers in total, $p(x)$ had 4 coefficients (degree 3), so the quotient has degree 2:\n$$q(x) = 3x^2 - x + 4, \\quad r = -2$$\n\n**(b)**\n$$p(x) = (x - 2)(3x^2 - x + 4) - 2$$\n$$= 3x^3 - x^2 + 4x - 6x^2 + 2x - 8 - 2 = 3x^3 - 7x^2 + 6x - 10$$\n\n**Check** by dividing $3x^3 - 7x^2 + 6x - 10$ by $x - 2$:\n$$\\begin{array}{r|rrrr} 2 & 3 & -7 & 6 & -10 \\\\ & & 6 & -2 & 8 \\\\ \\hline & 3 & -1 & 4 & -2 \\end{array}$$\n✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q12",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Let $p(x) = 2x^3 - 3x^2 - 11x + 6$.\n\n(a) Use the Rational Root Theorem to list all the possible rational zeros of $p$.\n\n(b) Find one zero by testing your list, then use synthetic division to find all the zeros of $p$.",
+  "hint": "Possible rational zeros are $\\pm\\frac{\\text{factor of } 6}{\\text{factor of } 2}$. Try small integers first.",
+  "answer": "(a) $\\pm 1, \\pm 2, \\pm 3, \\pm 6, \\pm\\frac{1}{2}, \\pm\\frac{3}{2}$ (b) $x = 3$, $x = \\frac{1}{2}$, $x = -2$",
+  "solution": "**(a)** Rational Root Theorem: any rational zero $\\frac{p}{q}$ (in lowest terms) has $p$ dividing the constant term 6 and $q$ dividing the leading coefficient 2.\n\nFactors of 6: $\\pm 1, \\pm 2, \\pm 3, \\pm 6$. Factors of 2: $\\pm 1, \\pm 2$.\n\nPossible rational zeros: $\\pm 1, \\pm 2, \\pm 3, \\pm 6, \\pm\\frac{1}{2}, \\pm\\frac{3}{2}$.\n\n**(b)** Testing: $p(1) = 2 - 3 - 11 + 6 = -6$, $p(-1) = -2 - 3 + 11 + 6 = 12$, $p(2) = 16 - 12 - 22 + 6 = -12$, $p(3) = 54 - 27 - 33 + 6 = 0$. ✓\n\nDivide by $x - 3$:\n$$\\begin{array}{r|rrrr} 3 & 2 & -3 & -11 & 6 \\\\ & & 6 & 9 & -6 \\\\ \\hline & 2 & 3 & -2 & 0 \\end{array}$$\n\n$$p(x) = (x - 3)(2x^2 + 3x - 2) = (x - 3)(2x - 1)(x + 2)$$\n\n**Zeros:** $x = 3$, $x = \\frac{1}{2}$, $x = -2$ (all on the list from part (a)).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q13",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $p(x) = x^5 - 3x^4 + 2x^2 - x - 4$.\n\n(a) Use Descartes' Rule of Signs to find the possible numbers of positive real zeros and negative real zeros of $p$.\n\n(b) Make a table of all the possible combinations of positive, negative and nonreal zeros.\n\n(c) Explain why $p$ must have at least one positive real zero.",
+  "hint": "Count sign changes in the coefficients of $p(x)$ (skip missing terms). For negative zeros, count sign changes in $p(-x)$. The number of zeros is the count of changes, or less than that by an even number. Nonreal zeros come in conjugate pairs.",
+  "answer": "(a) Positive: 3 or 1; negative: 2 or 0. (b) (positive, negative, nonreal) = $(3, 2, 0)$, $(3, 0, 2)$, $(1, 2, 2)$, $(1, 0, 4)$ (c) Every row has at least 1 positive zero (the count of positive zeros is odd).",
+  "solution": "**(a)** Signs of the coefficients of $p(x)$: $+1, -3, +2, -1, -4$, i.e. $+ \\; - \\; + \\; - \\; -$.\n\nSign changes: $+ \\to -$, $- \\to +$, $+ \\to -$: **3** changes. So there are 3 or 1 positive real zeros.\n\n$p(-x) = -x^5 - 3x^4 + 2x^2 + x - 4$, signs $- \\; - \\; + \\; + \\; -$.\n\nSign changes: $- \\to +$, $+ \\to -$: **2** changes. So there are 2 or 0 negative real zeros.\n\n**(b)** The degree is 5, so there are 5 zeros counted with multiplicity, and $0$ is not a zero since $p(0) = -4$.\n\n| positive | negative | nonreal |\n|---|---|---|\n| 3 | 2 | 0 |\n| 3 | 0 | 2 |\n| 1 | 2 | 2 |\n| 1 | 0 | 4 |\n\n**(c)** The number of positive zeros is 3 or 1, never 0, so there is always at least one. (Also, $p(0) = -4 < 0$ and $p(x) \\to \\infty$ as $x \\to \\infty$, so the graph must cross the positive $x$-axis.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q14",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": false,
+  "question": "Let $p(x) = 2x^4 + x^3 - 8x^2 - x + 6$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use the Rational Root Theorem to list the possible rational zeros of $p(x)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Use synthetic division to show that $x - 1$ is a factor of $p(x)$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Hence find all the zeros of $p(x)$. Show the work that leads to your answer.",
+    "marks": 4
+   },
+   {
+    "label": "d",
+    "prompt": "Show that your answer to part (c) is consistent with Descartes' Rule of Signs.",
+    "marks": 1
+   }
+  ],
+  "hint": "After dividing by $x - 1$ you get a cubic. Test another value from your list on the cubic.",
+  "answer": "(a) $\\pm 1, \\pm 2, \\pm 3, \\pm 6, \\pm\\frac{1}{2}, \\pm\\frac{3}{2}$ (b) Remainder $0$ (c) $x = 1, -1, \\frac{3}{2}, -2$ (d) 2 sign changes in $p(x)$ (2 or 0 positive zeros) and 2 in $p(-x)$ (2 or 0 negative zeros); we found 2 of each.",
+  "solution": "**(a)** Factors of 6 over factors of 2:\n$$\\pm 1, \\pm 2, \\pm 3, \\pm 6, \\pm\\tfrac{1}{2}, \\pm\\tfrac{3}{2}$$\n**B2** (B1 for at least the integer values correct)\n\n**(b)**\n$$\\begin{array}{r|rrrrr} 1 & 2 & 1 & -8 & -1 & 6 \\\\ & & 2 & 3 & -5 & -6 \\\\ \\hline & 2 & 3 & -5 & -6 & 0 \\end{array}$$\n**M1** (correct synthetic division with $c = 1$) The remainder is $0$, so $x - 1$ is a factor. **A1**\n\n**(c)** The quotient is $2x^3 + 3x^2 - 5x - 6$. Test $x = -1$: $-2 + 3 + 5 - 6 = 0$. **M1**\n$$\\begin{array}{r|rrrr} -1 & 2 & 3 & -5 & -6 \\\\ & & -2 & -1 & 6 \\\\ \\hline & 2 & 1 & -6 & 0 \\end{array}$$\n**M1** So $p(x) = (x - 1)(x + 1)(2x^2 + x - 6)$.\n\n$$2x^2 + x - 6 = (2x - 3)(x + 2) \\quad \\textbf{M1}$$\n\nZeros: $x = 1$, $x = -1$, $x = \\frac{3}{2}$, $x = -2$. **A1**\n\n**(d)** Signs of $p(x)$: $+ \\; + \\; - \\; - \\; +$, 2 changes, so 2 or 0 positive zeros. $p(-x) = 2x^4 - x^3 - 8x^2 + x + 6$: $+ \\; - \\; - \\; + \\; +$, 2 changes, so 2 or 0 negative zeros. We found exactly 2 positive ($1, \\frac{3}{2}$) and 2 negative ($-1, -2$), which is consistent. **B1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-synthetic-division-q15",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "An open-top box is made from a 10 in by 16 in sheet of cardboard by cutting an $x$ in by $x$ in square from each corner and folding up the sides, as shown.\n\n(a) Show that the volume of the box is $V(x) = 4x^3 - 52x^2 + 160x$ cubic inches.\n\n(b) A box with a volume of 120 cubic inches is needed. Show that $x = 3$ works, and use synthetic division to find **all** the possible values of $x$. Give non-integer values in exact form and to the nearest hundredth of an inch.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 186\" width=\"320\" height=\"186\"><rect x=\"40\" y=\"22\" width=\"240\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><rect x=\"40\" y=\"22\" width=\"30\" height=\"30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><rect x=\"250\" y=\"22\" width=\"30\" height=\"30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><rect x=\"40\" y=\"142\" width=\"30\" height=\"30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><rect x=\"250\" y=\"142\" width=\"30\" height=\"30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"52\" x2=\"250\" y2=\"52\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"70\" y1=\"142\" x2=\"250\" y2=\"142\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"70\" y1=\"52\" x2=\"70\" y2=\"142\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><line x1=\"250\" y1=\"52\" x2=\"250\" y2=\"142\" stroke=\"currentColor\" stroke-dasharray=\"5 4\"/><text x=\"160.0\" y=\"15\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">16 in</text><text x=\"34\" y=\"101.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10 in</text><text x=\"55.0\" y=\"15\" font-size=\"13\" font-style=\"italic\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"286\" y=\"41.0\" font-size=\"13\" font-style=\"italic\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"160.0\" y=\"101.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">base of box</text></svg>",
+  "hint": "The base measures $(16 - 2x)$ by $(10 - 2x)$ and the height is $x$. For (b), simplify $V(x) = 120$ to a cubic equal to 0 first. Which values of $x$ make sense for the cardboard?",
+  "answer": "(a) $V = x(16 - 2x)(10 - 2x) = 4x^3 - 52x^2 + 160x$ (b) $x = 3$ in or $x = 5 - \\sqrt{15} \\approx 1.13$ in ($x = 5 + \\sqrt{15}$ is impossible because $x < 5$)",
+  "solution": "**(a)** After cutting and folding, the box has length $16 - 2x$, width $10 - 2x$ and height $x$:\n$$V = x(16 - 2x)(10 - 2x) = x(160 - 52x + 4x^2) = 4x^3 - 52x^2 + 160x$$\n\n**(b)** Set $V = 120$:\n$$4x^3 - 52x^2 + 160x - 120 = 0 \\Rightarrow x^3 - 13x^2 + 40x - 30 = 0$$\n\nDivide by $x - 3$:\n$$\\begin{array}{r|rrrr} 3 & 1 & -13 & 40 & -30 \\\\ & & 3 & -30 & 30 \\\\ \\hline & 1 & -10 & 10 & 0 \\end{array}$$\n\nThe remainder is $0$, so $x = 3$ works (check: $3 \\times 10 \\times 4 = 120$). The quotient gives\n$$x^2 - 10x + 10 = 0 \\Rightarrow x = \\frac{10 \\pm \\sqrt{100 - 40}}{2} = 5 \\pm \\sqrt{15}$$\n\nThe width $10 - 2x$ must be positive, so $0 < x < 5$. $5 + \\sqrt{15} \\approx 8.87$ is impossible.\n\nSo $x = 3$ in or $x = 5 - \\sqrt{15} \\approx 1.13$ in. (Check: $1.127 \\times 13.746 \\times 7.746 \\approx 120$.)",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "geo-volume-prisms"
+  ]
+ },
+ {
+  "id": "alg-synthetic-division-q16",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $p(x) = x^3 + ax^2 + bx - 6$, where $a$ and $b$ are constants.\n\nWhen $p(x)$ is divided by $x - 1$ the remainder is $-6$, and $x + 2$ is a factor of $p(x)$.\n\n(a) Find $a$ and $b$.\n\n(b) Find all the zeros of $p(x)$, giving irrational zeros in simplest radical form.",
+  "hint": "Use the Remainder Theorem twice: $p(1) = -6$ and $p(-2) = 0$. That gives a system of two linear equations in $a$ and $b$.",
+  "answer": "(a) $a = 2$, $b = -3$ (b) $x = -2$, $x = \\sqrt{3}$, $x = -\\sqrt{3}$",
+  "solution": "**(a)** By the Remainder Theorem:\n\n$p(1) = 1 + a + b - 6 = -6 \\Rightarrow a + b = -1$\n\n$p(-2) = -8 + 4a - 2b - 6 = 0 \\Rightarrow 4a - 2b = 14 \\Rightarrow 2a - b = 7$\n\nAdd the two equations: $3a = 6$, so $a = 2$, and then $b = -1 - 2 = -3$.\n\n**(b)** $p(x) = x^3 + 2x^2 - 3x - 6$. Divide by $x + 2$ ($c = -2$):\n$$\\begin{array}{r|rrrr} -2 & 1 & 2 & -3 & -6 \\\\ & & -2 & 0 & 6 \\\\ \\hline & 1 & 0 & -3 & 0 \\end{array}$$\n\nQuotient $x^2 + 0x - 3 = x^2 - 3$, so\n$$p(x) = (x + 2)(x^2 - 3) = (x + 2)(x - \\sqrt{3})(x + \\sqrt{3})$$\n\n**Zeros:** $x = -2$, $x = \\sqrt{3}$, $x = -\\sqrt{3}$.",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear",
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-synthetic-division-q17",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Let $x = \\sqrt{2} + \\sqrt{3}$. Show that $x$ is a zero of $p(x) = x^4 - 10x^2 + 1$.\n\n(b) Use the Rational Root Theorem to prove that $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+  "hint": "For (a), square $x$, isolate the radical term, and square again. For (b), list the only possible rational zeros of $p$ and test them.",
+  "answer": "(a) $x^2 = 5 + 2\\sqrt{6}$, so $(x^2 - 5)^2 = 24$, i.e. $x^4 - 10x^2 + 1 = 0$. (b) The only possible rational zeros are $\\pm 1$, and $p(\\pm 1) = -8 \\ne 0$; so $p$ has no rational zeros, and its zero $\\sqrt{2} + \\sqrt{3}$ is irrational.",
+  "solution": "**(a)** $x = \\sqrt{2} + \\sqrt{3}$, so\n$$x^2 = 2 + 2\\sqrt{6} + 3 = 5 + 2\\sqrt{6}$$\n$$x^2 - 5 = 2\\sqrt{6}$$\nSquare again:\n$$x^4 - 10x^2 + 25 = 24 \\Rightarrow x^4 - 10x^2 + 1 = 0$$\nSo $p(\\sqrt{2} + \\sqrt{3}) = 0$.\n\n**(b)** $p(x) = x^4 - 10x^2 + 1$ has integer coefficients, leading coefficient 1 and constant term 1. By the Rational Root Theorem, any rational zero $\\frac{p}{q}$ has $p \\mid 1$ and $q \\mid 1$, so the only candidates are $\\pm 1$.\n\n$p(1) = 1 - 10 + 1 = -8 \\ne 0$ and $p(-1) = 1 - 10 + 1 = -8 \\ne 0$.\n\nSo $p$ has **no** rational zeros. But $\\sqrt{2} + \\sqrt{3}$ is a zero of $p$ (part (a)), so it cannot be rational. Hence $\\sqrt{2} + \\sqrt{3}$ is irrational. $\\blacksquare$",
+  "linkedTopicIds": [
+   "num-rational-irrational",
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-synthetic-division-q18",
+  "topicId": "alg-synthetic-division",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Prove that the equation $x^5 + x^3 + 2x - 7 = 0$ has exactly one real solution, and that this solution is an irrational number between 1 and 2.",
+  "hint": "Use Descartes' Rule of Signs on $p(x)$ and $p(-x)$ to count positive and negative zeros. Then use the Rational Root Theorem to rule out a rational zero, and evaluate $p(1)$ and $p(2)$ (synthetic division is quick).",
+  "answer": "Descartes: exactly 1 positive zero and no negative zeros, and $p(0) = -7 \\ne 0$, so exactly one real solution. The only possible rational zeros are $\\pm 1, \\pm 7$, and none works, so it is irrational. $p(1) = -3 < 0 < 37 = p(2)$, so it lies between 1 and 2.",
+  "solution": "Let $p(x) = x^5 + x^3 + 2x - 7$.\n\n**Exactly one real solution.** The signs of $p(x)$ are $+ \\; + \\; + \\; -$: exactly **1** sign change, so (since $1 - 2 < 0$) there is **exactly one** positive real zero.\n\n$p(-x) = -x^5 - x^3 - 2x - 7$ has signs $- \\; - \\; - \\; -$: no sign changes, so there are **no** negative real zeros. Also $p(0) = -7 \\ne 0$.\n\nSo $p$ has exactly one real zero, and it is positive.\n\n**It is irrational.** By the Rational Root Theorem, the only possible rational zeros are $\\pm 1, \\pm 7$. Negative values are ruled out already. $p(1) = 1 + 1 + 2 - 7 = -3 \\ne 0$ and $p(7) = 16807 + 343 + 14 - 7 = 17157 \\ne 0$. So the real zero is not rational.\n\n**It is between 1 and 2.** $p(1) = -3 < 0$ and $p(2) = 32 + 8 + 4 - 7 = 37 > 0$. A polynomial is continuous, so it crosses zero between $x = 1$ and $x = 2$, and that crossing must be the only real zero. $\\blacksquare$\n\n(Numerically the solution is about $1.22$.)",
+  "linkedTopicIds": [
+   "num-rational-irrational",
+   "calc-continuity"
+  ]
+ }
+]
