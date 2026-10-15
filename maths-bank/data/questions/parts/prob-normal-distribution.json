@@ -1,0 +1,319 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim N(50, 16)$. Find $P(X < 56)$, giving your answer to 4 decimal places.",
+  "hint": "The 16 is the variance, so $\\sigma = 4$. Standardise with $z = \\dfrac{x - \\mu}{\\sigma}$.",
+  "answer": "$P(X < 56) = 0.9332$",
+  "solution": "$\\mu = 50$ and $\\sigma^2 = 16$, so $\\sigma = 4$.\n$$z = \\frac{56 - 50}{4} = 1.5$$\n$$P(X < 56) = P(Z < 1.5) = 0.9332 \\text{ (4 d.p.)}$$\n\nSense check: 56 is above the mean, so the probability of being below it should be more than $0.5$. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-normal-distribution-q01",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim N(50, 16)$. Find $P(X > 56)$, giving your answer to 4 decimal places.",
+  "hint": "Sketch the curve and shade the region. Is it a large or a small area?",
+  "answer": "$P(X > 56) = 0.0668$",
+  "solution": "**What changed:** \"$<$\" became \"$>$\", so we now want the area to the **right** of 56.\n\nAs before, $z = \\dfrac{56 - 50}{4} = 1.5$.\n$$P(X > 56) = P(Z > 1.5) = 1 - P(Z < 1.5) = 1 - 0.9332 = 0.0668$$\n\nThe shaded region is a small tail, so the answer must be less than $0.5$. The two answers add to 1.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-normal-distribution-q02",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim N(50, 16)$. Find $P(X > 44)$, giving your answer to 4 decimal places.",
+  "hint": "This time the value is below the mean, so $z$ is negative.",
+  "answer": "$P(X > 44) = 0.9332$",
+  "solution": "**What changed:** the value moved from 56 (above the mean) to 44 (below the mean).\n$$z = \\frac{44 - 50}{4} = -1.5$$\n$$P(X > 44) = P(Z > -1.5) = 1 - P(Z < -1.5) = 1 - 0.0668 = 0.9332$$\n\nBy symmetry, 44 and 56 are both $1.5$ standard deviations from the mean, so $P(X > 44) = P(X < 56)$. The region now includes the whole right half of the curve, so the answer is more than $0.5$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-normal-distribution-q03",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$X \\sim N(50, 36)$. Find $P(X > 44)$, giving your answer to 4 decimal places.",
+  "hint": "Only the variance has changed. What is $\\sigma$ now?",
+  "answer": "$P(X > 44) = 0.8413$",
+  "solution": "**What changed:** the variance went from 16 to 36, so $\\sigma$ went from 4 to 6.\n$$z = \\frac{44 - 50}{6} = -1$$\n$$P(X > 44) = P(Z > -1) = 0.8413 \\text{ (4 d.p.)}$$\n\nThe distribution is more spread out, so 44 is now only 1 standard deviation below the mean rather than $1.5$: more of the distribution lies below 44 and the probability of exceeding it drops from $0.9332$ to $0.8413$.\n\n(Dividing by the variance, $\\frac{-6}{36}$, would be the classic error.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-normal-distribution-q04",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The masses of eggs from a farm are normally distributed with mean 60 g and standard deviation 5 g. Use the empirical rule (68–95–99.7) to estimate the percentage of eggs with mass\n\n(a) between 55 g and 65 g\n\n(b) between 50 g and 70 g\n\n(c) more than 70 g\n\n(d) less than 45 g\n\n(e) The farm collects 1200 eggs a day. Estimate how many have a mass between 60 g and 65 g.",
+  "hint": "Work out how many standard deviations each value is from 60. Use symmetry for one-sided regions.",
+  "answer": "(a) $68\\%$ (b) $95\\%$ (c) $2.5\\%$ (d) $0.15\\%$ (e) about 408 eggs",
+  "solution": "$\\mu = 60$, $\\sigma = 5$.\n\n(a) 55 to 65 is $\\mu \\pm 1\\sigma$: about $68\\%$.\n\n(b) 50 to 70 is $\\mu \\pm 2\\sigma$: about $95\\%$.\n\n(c) Outside $\\mu \\pm 2\\sigma$ is $100\\% - 95\\% = 5\\%$, split equally between the two tails by symmetry. More than 70 g: $\\frac{5\\%}{2} = 2.5\\%$.\n\n(d) 45 is $\\mu - 3\\sigma$. Outside $\\mu \\pm 3\\sigma$ is $0.3\\%$, so below 45 g: $\\frac{0.3\\%}{2} = 0.15\\%$.\n\n(e) 60 to 65 is half of the $\\mu \\pm 1\\sigma$ region: $\\frac{68\\%}{2} = 34\\%$.\n$$0.34 \\times 1200 = 408 \\text{ eggs (approximately)}$$",
+  "misconceptionIds": [],
+  "id": "prob-normal-distribution-q05",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The diagram shows the curve of the probability density function of $X \\sim N(\\mu, \\sigma^2)$. The points $P$ and $Q$ are the points of inflection of the curve, and they lie directly above $x = 12$ and $x = 18$.\n\n(a) Write down the values of $\\mu$ and $\\sigma$, explaining your reasoning.\n\n(b) Use the empirical rule to estimate $P(X > 18)$.\n\n(c) Explain why $P(X \\le 15) = P(X < 15) = 0.5$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"360\" height=\"200\"><polyline points=\"20.0,159.5 22.0,159.4 24.0,159.3 26.0,159.2 28.0,159.1 30.0,159.0 32.0,158.9 34.0,158.7 36.0,158.6 38.0,158.4 40.0,158.2 42.0,157.9 44.0,157.7 46.0,157.4 48.0,157.0 50.0,156.7 52.0,156.3 54.0,155.9 56.0,155.4 58.0,154.9 60.0,154.3 62.0,153.7 64.0,153.0 66.0,152.3 68.0,151.5 70.0,150.6 72.0,149.7 74.0,148.7 76.0,147.6 78.0,146.4 80.0,145.2 82.0,143.8 84.0,142.4 86.0,140.9 88.0,139.3 90.0,137.6 92.0,135.8 94.0,133.9 96.0,131.9 98.0,129.8 100.0,127.6 102.0,125.3 104.0,122.9 106.0,120.4 108.0,117.8 110.0,115.1 112.0,112.3 114.0,109.5 116.0,106.6 118.0,103.6 120.0,100.5 122.0,97.4 124.0,94.2 126.0,91.0 128.0,87.7 130.0,84.4 132.0,81.2 134.0,77.9 136.0,74.6 138.0,71.3 140.0,68.1 142.0,65.0 144.0,61.9 146.0,58.8 148.0,55.9 150.0,53.1 152.0,50.3 154.0,47.7 156.0,45.3 158.0,43.0 160.0,40.8 162.0,38.8 164.0,37.0 166.0,35.4 168.0,34.0 170.0,32.8 172.0,31.8 174.0,31.0 176.0,30.5 178.0,30.1 180.0,30.0 182.0,30.1 184.0,30.5 186.0,31.0 188.0,31.8 190.0,32.8 192.0,34.0 194.0,35.4 196.0,37.0 198.0,38.8 200.0,40.8 202.0,43.0 204.0,45.3 206.0,47.7 208.0,50.3 210.0,53.1 212.0,55.9 214.0,58.8 216.0,61.9 218.0,65.0 220.0,68.1 222.0,71.3 224.0,74.6 226.0,77.9 228.0,81.2 230.0,84.4 232.0,87.7 234.0,91.0 236.0,94.2 238.0,97.4 240.0,100.5 242.0,103.6 244.0,106.6 246.0,109.5 248.0,112.3 250.0,115.1 252.0,117.8 254.0,120.4 256.0,122.9 258.0,125.3 260.0,127.6 262.0,129.8 264.0,131.9 266.0,133.9 268.0,135.8 270.0,137.6 272.0,139.3 274.0,140.9 276.0,142.4 278.0,143.8 280.0,145.2 282.0,146.4 284.0,147.6 286.0,148.7 288.0,149.7 290.0,150.6 292.0,151.5 294.0,152.3 296.0,153.0 298.0,153.7 300.0,154.3 302.0,154.9 304.0,155.4 306.0,155.9 308.0,156.3 310.0,156.7 312.0,157.0 314.0,157.4 316.0,157.7 318.0,157.9 320.0,158.2 322.0,158.4 324.0,158.6 326.0,158.7 328.0,158.9 330.0,159.0 332.0,159.1 334.0,159.2 336.0,159.3 338.0,159.4 340.0,159.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"15\" y1=\"160\" x2=\"345\" y2=\"160\" stroke=\"currentColor\"/><line x1=\"132.0\" y1=\"160\" x2=\"132.0\" y2=\"165\" stroke=\"currentColor\"/><text x=\"132.0\" y=\"180\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"228.0\" y1=\"160\" x2=\"228.0\" y2=\"165\" stroke=\"currentColor\"/><text x=\"228.0\" y=\"180\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">18</text><line x1=\"132.0\" y1=\"81.2\" x2=\"132.0\" y2=\"160\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><circle cx=\"132.0\" cy=\"81.2\" r=\"3.5\" fill=\"currentColor\"/><text x=\"124.0\" y=\"77.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">P</text><line x1=\"228.0\" y1=\"81.2\" x2=\"228.0\" y2=\"160\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><circle cx=\"228.0\" cy=\"81.2\" r=\"3.5\" fill=\"currentColor\"/><text x=\"236.0\" y=\"77.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">Q</text><text x=\"342\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text></svg>",
+  "hint": "Where are the points of inflection of a normal curve, in terms of $\\mu$ and $\\sigma$?",
+  "answer": "(a) $\\mu = 15$, $\\sigma = 3$ (b) about $0.16$ (c) The curve is symmetric about $\\mu = 15$, and $P(X = 15) = 0$ for a continuous distribution",
+  "solution": "(a) A normal curve is symmetric about $\\mu$, so $\\mu$ is halfway between the points of inflection:\n$$\\mu = \\frac{12 + 18}{2} = 15$$\nThe points of inflection are at $\\mu \\pm \\sigma$, so $\\sigma = 18 - 15 = 3$.\n\n(b) About $68\\%$ of values lie between 12 and 18 (within $1\\sigma$ of the mean). The remaining $32\\%$ splits equally between the tails, so\n$$P(X > 18) \\approx \\frac{0.32}{2} = 0.16$$\n(The calculator value is $0.1587$.)\n\n(c) The curve is symmetric about $x = 15$, so exactly half of the area lies to the left of 15: $P(X < 15) = 0.5$. For a continuous random variable the probability of any single exact value is zero (a line has no area), so $P(X = 15) = 0$ and including or excluding 15 makes no difference: $P(X \\le 15) = P(X < 15) = 0.5$.",
+  "misconceptionIds": [],
+  "id": "prob-normal-distribution-q06",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "In a year-group test, the maths marks had mean 60 and standard deviation 8, and the English marks had mean 55 and standard deviation 5. Leo scored 72 in maths and 65 in English.\n\n(a) Calculate Leo's $z$-score for each subject.\n\n(b) In which subject did Leo do better compared with the rest of his year group? Explain.\n\n(c) Assuming the maths marks are normally distributed, estimate the percentage of students who scored more than Leo in maths.",
+  "hint": "A $z$-score measures how many standard deviations a value is above or below the mean.",
+  "answer": "(a) Maths $z = 1.5$, English $z = 2$ (b) English: his mark is 2 standard deviations above the mean, compared with $1.5$ in maths (c) about $6.7\\%$",
+  "solution": "(a)\n$$z_{\\text{maths}} = \\frac{72 - 60}{8} = 1.5, \\qquad z_{\\text{English}} = \\frac{65 - 55}{5} = 2$$\n\n(b) His maths mark is higher in raw terms (72 > 65) and also further above the mean (12 marks compared with 10). But English marks are less spread out, so 10 marks above the mean is **more** unusual there. His English mark is 2 standard deviations above the mean, compared with $1.5$ in maths, so he did better in **English** relative to his year group.\n\n(c)\n$$P(Z > 1.5) = 1 - 0.9332 = 0.0668$$\nAbout $6.7\\%$ of students scored more than 72 in maths.",
+  "linkedTopicIds": [
+   "stat-standard-deviation"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-normal-distribution-q07",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$X \\sim N(80, 12^2)$. Find, to 2 decimal places, the value of\n\n(a) $a$ such that $P(X < a) = 0.95$\n\n(b) $b$ such that $P(X > b) = 0.2$\n\n(c) $c$ such that $P(X < c) = 0.1$",
+  "hint": "Find the $z$-value from the inverse normal function first, then use $x = \\mu + z\\sigma$. Decide whether each value is above or below the mean before you start.",
+  "answer": "(a) $a = 99.74$ (b) $b = 90.10$ (c) $c = 64.62$",
+  "solution": "$\\mu = 80$, $\\sigma = 12$.\n\n(a) $P(Z < z) = 0.95$ gives $z = 1.6449$.\n$$a = 80 + 1.6449 \\times 12 = 99.74$$\n\n(b) $P(X > b) = 0.2$ means $P(X < b) = 0.8$, so $z = 0.8416$ (positive: only $20\\%$ lies above $b$, so $b$ is above the mean).\n$$b = 80 + 0.8416 \\times 12 = 90.10$$\n\n(c) Only $10\\%$ lies below $c$, so $c$ is **below** the mean and $z$ is negative: $P(Z < z) = 0.1$ gives $z = -1.2816$.\n$$c = 80 - 1.2816 \\times 12 = 64.62$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q08",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The lengths, $L$ cm, of bolts made by a machine are modelled by $L \\sim N(25, 2.25)$. Ellie is asked to find the probability that a randomly chosen bolt is longer than 28 cm. Her working is shown below.\n\nLine 1: $z = \\dfrac{28 - 25}{2.25} = 1.333$\n\nLine 2: $P(L > 28) = P(Z > 1.333)$\n\nLine 3: $= 1 - 0.9088 = 0.0912$\n\nIdentify Ellie's error, explain why it is wrong, and find the correct probability to 4 decimal places.",
+  "hint": "In the notation $N(\\mu, \\sigma^2)$, what does the second number represent?",
+  "answer": "She divided by the variance $2.25$ instead of the standard deviation $1.5$; $P(L > 28) = 0.0228$",
+  "solution": "The error is in Line 1. In $N(25, 2.25)$ the second number is the **variance** $\\sigma^2$, not the standard deviation. Standardising needs $\\sigma = \\sqrt{2.25} = 1.5$.\n\n(Dividing by the variance gives the wrong answer here because $2.25 > 1.5$ makes $z$ too small; if the variance were less than 1 it would make $z$ too big.)\n\nCorrect working:\n$$z = \\frac{28 - 25}{1.5} = 2$$\n$$P(L > 28) = P(Z > 2) = 1 - 0.97725 = 0.0228 \\text{ (4 d.p.)}$$\n\nLines 2 and 3 used the right method (taking the right-hand tail), just with the wrong $z$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "prob-normal-distribution-q09",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The times taken by runners to complete a 10 km fun run are modelled by $T \\sim N(42, 5^2)$, in minutes. The fastest $15\\%$ of runners receive a medal. Omar is asked to find the time a runner must beat to receive a medal. His working is shown below.\n\nLine 1: $P(T < t) = 0.15$\n\nLine 2: $z = 1.0364$\n\nLine 3: $t = 42 + 1.0364 \\times 5 = 47.18$ minutes\n\nIdentify Omar's error, explain why it is wrong, and find the correct time to the nearest second.",
+  "hint": "Is a time that only $15\\%$ of runners beat above or below the mean time?",
+  "answer": "Line 2 has the wrong sign: $z = -1.0364$, so $t = 36.82$ minutes, i.e. 36 minutes 49 seconds",
+  "solution": "Line 1 is correct: the fastest runners have the **smallest** times, so the medal time $t$ has $15\\%$ of runners below it.\n\nThe error is in Line 2. Only $15\\%$ of the area lies to the left of $t$, so $t$ is **below** the mean and its $z$-value must be negative. Omar's answer of $47.18$ minutes is slower than the average runner, which cannot be right for the fastest $15\\%$. ($z = 1.0364$ has $15\\%$ of the area to its **right**.)\n\nCorrect working:\n$$P(Z < z) = 0.15 \\;\\Rightarrow\\; z = -1.0364$$\n$$t = 42 - 1.0364 \\times 5 = 36.818 \\text{ minutes}$$\n$0.818 \\times 60 \\approx 49$ seconds, so runners must finish in under **36 minutes 49 seconds**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q10",
+  "topicId": "prob-normal-distribution",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$X \\sim B(60, 0.45)$. Sophie is asked to use a normal approximation to estimate $P(X < 30)$. Her working is shown below.\n\nLine 1: $\\mu = 60 \\times 0.45 = 27$, $\\sigma^2 = 60 \\times 0.45 \\times 0.55 = 14.85$\n\nLine 2: $Y \\sim N(27, 14.85)$\n\nLine 3: $P(X < 30) \\approx P(Y < 30.5)$\n\nLine 4: $= P\\left(Z < \\dfrac{30.5 - 27}{\\sqrt{14.85}}\\right) = P(Z < 0.9082) = 0.8181$\n\n(a) Identify Sophie's error and explain why it is wrong.\n\n(b) Find the correct estimate to 4 decimal places.",
+  "hint": "$X < 30$ means $X \\le 29$. On a bar chart of the binomial distribution, which bars are included, and where does the last one end?",
+  "answer": "(a) Line 3: $X < 30$ does not include 30, so the continuity correction should be $P(Y < 29.5)$ (b) $0.7417$",
+  "solution": "(a) Lines 1 and 2 are correct. The error is in Line 3. Each integer $k$ is represented by the interval from $k - 0.5$ to $k + 0.5$. $X < 30$ means $X = 0, 1, \\dots, 29$, so the last bar included is the one for 29, which ends at $29.5$. Sophie used $30.5$, which also includes the bar for $X = 30$, so she actually estimated $P(X \\le 30)$.\n\n(b)\n$$P(X < 30) = P(X \\le 29) \\approx P(Y < 29.5)$$\n$$z = \\frac{29.5 - 27}{\\sqrt{14.85}} = 0.6487$$\n$$P(Z < 0.6487) = 0.7417 \\text{ (4 d.p.)}$$\n\n(The exact binomial value is $0.7424$, so the approximation is good.)",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "prob-normal-distribution-q11",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Bags of flour are labelled \"1 kg\". The mass of flour in a bag is normally distributed with mean 1010 g and standard deviation $\\sigma$ g. $2\\%$ of bags contain less than 1000 g.\n\n(a) Find the value of $\\sigma$, giving your answer to 3 significant figures.\n\n(b) The manufacturer wants to reduce the proportion of bags containing less than 1000 g to $0.5\\%$, without changing $\\sigma$. Find the new mean mass needed, to the nearest 0.1 g.",
+  "hint": "Find the $z$-value that has $2\\%$ of the area below it. Is it positive or negative? Then form an equation $\\dfrac{1000 - 1010}{\\sigma} = z$.",
+  "answer": "(a) $\\sigma = 4.87$ (b) $1012.5$ g",
+  "solution": "(a) $P(M < 1000) = 0.02$. The inverse normal gives $P(Z < z) = 0.02 \\Rightarrow z = -2.0537$ (negative, since 1000 is below the mean).\n$$\\frac{1000 - 1010}{\\sigma} = -2.0537$$\n$$\\sigma = \\frac{-10}{-2.0537} = 4.869\\ldots = 4.87 \\text{ (3 s.f.)}$$\n\n(b) Now $P(M < 1000) = 0.005$, so $z = -2.5758$.\n$$\\frac{1000 - \\mu}{4.869} = -2.5758$$\n$$\\mu = 1000 + 2.5758 \\times 4.869 = 1012.54\\ldots$$\nNew mean $= 1012.5$ g (nearest 0.1 g).\n\nSo the manufacturer needs to put about $2.5$ g more flour in every bag on average to cut the underweight rate from $2\\%$ to $0.5\\%$.",
+  "linkedTopicIds": [
+   "alg-rearranging-formulae"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q12",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The random variable $X \\sim N(\\mu, \\sigma^2)$. Given that $P(X < 20) = 0.1$ and $P(X > 35) = 0.05$, as shown in the diagram, find the values of $\\mu$ and $\\sigma$, giving your answers to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"360\" height=\"200\"><polygon points=\"20.0,160.0 20.0,159.8 21.7,159.8 23.4,159.7 25.2,159.7 26.9,159.7 28.6,159.6 30.3,159.6 32.0,159.5 33.7,159.4 35.5,159.3 37.2,159.3 38.9,159.2 40.6,159.0 42.3,158.9 44.0,158.8 45.8,158.6 47.5,158.5 49.2,158.3 50.9,158.1 52.6,157.9 54.3,157.6 56.1,157.3 57.8,157.0 59.5,156.7 61.2,156.3 62.9,156.0 64.7,155.5 66.4,155.1 68.1,154.5 69.8,154.0 71.5,153.4 73.2,152.7 75.0,152.0 76.7,151.3 78.4,150.5 80.1,149.6 81.8,148.7 83.5,147.7 85.3,146.6 87.0,145.5 88.7,144.2 90.4,143.0 92.1,141.6 93.8,140.1 95.6,138.6 97.3,137.0 99.0,135.3 100.7,133.5 102.4,131.7 104.2,129.7 105.9,127.7 107.6,125.5 109.3,123.3 111.0,121.0 112.7,118.6 114.5,116.2 116.2,113.6 117.9,111.0 119.6,108.4 121.3,105.6 123.0,102.8 123.0,160.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><polygon points=\"253.1,160.0 253.1,126.4 254.6,128.2 256.0,129.9 257.4,131.5 258.9,133.1 260.3,134.6 261.8,136.1 263.2,137.5 264.7,138.8 266.1,140.1 267.6,141.4 269.0,142.5 270.5,143.6 271.9,144.7 273.4,145.7 274.8,146.7 276.3,147.6 277.7,148.4 279.2,149.2 280.6,150.0 282.1,150.7 283.5,151.4 285.0,152.0 286.4,152.6 287.9,153.2 289.3,153.7 290.8,154.2 292.2,154.6 293.7,155.1 295.1,155.5 296.6,155.8 298.0,156.2 299.4,156.5 300.9,156.8 302.3,157.1 303.8,157.3 305.2,157.5 306.7,157.8 308.1,158.0 309.6,158.1 311.0,158.3 312.5,158.5 313.9,158.6 315.4,158.7 316.8,158.9 318.3,159.0 319.7,159.1 321.2,159.2 322.6,159.2 324.1,159.3 325.5,159.4 327.0,159.5 328.4,159.5 329.9,159.6 331.3,159.6 332.8,159.6 334.2,159.7 335.7,159.7 337.1,159.7 338.6,159.8 340.0,159.8 340.0,160.0\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><polyline points=\"20.0,159.8 22.0,159.8 24.0,159.7 26.0,159.7 28.0,159.6 30.0,159.6 32.0,159.5 34.0,159.4 36.0,159.3 38.0,159.2 40.0,159.1 42.0,159.0 44.0,158.8 46.0,158.6 48.0,158.4 50.0,158.2 52.0,157.9 54.0,157.7 56.0,157.3 58.0,157.0 60.0,156.6 62.0,156.2 64.0,155.7 66.0,155.2 68.0,154.6 70.0,153.9 72.0,153.2 74.0,152.4 76.0,151.6 78.0,150.7 80.0,149.7 82.0,148.6 84.0,147.4 86.0,146.1 88.0,144.7 90.0,143.3 92.0,141.7 94.0,140.0 96.0,138.2 98.0,136.3 100.0,134.3 102.0,132.1 104.0,129.9 106.0,127.5 108.0,125.0 110.0,122.4 112.0,119.7 114.0,116.8 116.0,113.9 118.0,110.9 120.0,107.7 122.0,104.5 124.0,101.2 126.0,97.9 128.0,94.4 130.0,91.0 132.0,87.4 134.0,83.9 136.0,80.4 138.0,76.8 140.0,73.3 142.0,69.8 144.0,66.4 146.0,63.0 148.0,59.7 150.0,56.5 152.0,53.4 154.0,50.4 156.0,47.6 158.0,45.0 160.0,42.5 162.0,40.2 164.0,38.2 166.0,36.3 168.0,34.7 170.0,33.2 172.0,32.1 174.0,31.2 176.0,30.5 178.0,30.1 180.0,30.0 182.0,30.1 184.0,30.5 186.0,31.2 188.0,32.1 190.0,33.2 192.0,34.7 194.0,36.3 196.0,38.2 198.0,40.2 200.0,42.5 202.0,45.0 204.0,47.6 206.0,50.4 208.0,53.4 210.0,56.5 212.0,59.7 214.0,63.0 216.0,66.4 218.0,69.8 220.0,73.3 222.0,76.8 224.0,80.4 226.0,83.9 228.0,87.4 230.0,91.0 232.0,94.4 234.0,97.9 236.0,101.2 238.0,104.5 240.0,107.7 242.0,110.9 244.0,113.9 246.0,116.8 248.0,119.7 250.0,122.4 252.0,125.0 254.0,127.5 256.0,129.9 258.0,132.1 260.0,134.3 262.0,136.3 264.0,138.2 266.0,140.0 268.0,141.7 270.0,143.3 272.0,144.7 274.0,146.1 276.0,147.4 278.0,148.6 280.0,149.7 282.0,150.7 284.0,151.6 286.0,152.4 288.0,153.2 290.0,153.9 292.0,154.6 294.0,155.2 296.0,155.7 298.0,156.2 300.0,156.6 302.0,157.0 304.0,157.3 306.0,157.7 308.0,157.9 310.0,158.2 312.0,158.4 314.0,158.6 316.0,158.8 318.0,159.0 320.0,159.1 322.0,159.2 324.0,159.3 326.0,159.4 328.0,159.5 330.0,159.6 332.0,159.6 334.0,159.7 336.0,159.7 338.0,159.8 340.0,159.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"15\" y1=\"160\" x2=\"345\" y2=\"160\" stroke=\"currentColor\"/><line x1=\"123.0\" y1=\"160\" x2=\"123.0\" y2=\"165\" stroke=\"currentColor\"/><text x=\"123.0\" y=\"180\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"253.1\" y1=\"160\" x2=\"253.1\" y2=\"165\" stroke=\"currentColor\"/><text x=\"253.1\" y=\"180\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">35</text><text x=\"98.8\" y=\"125.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.1</text><text x=\"275.6\" y=\"137.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.05</text><text x=\"342\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text></svg>",
+  "hint": "Find the $z$-value for each tail and form two equations of the form $x = \\mu + z\\sigma$. Watch the sign of each $z$.",
+  "answer": "$\\mu = 26.6$, $\\sigma = 5.13$ (3 s.f.)",
+  "solution": "Lower tail: $P(X < 20) = 0.1$, so $P(Z < z) = 0.1$ gives $z = -1.2816$ (negative, as 20 is below the mean).\n$$\\frac{20 - \\mu}{\\sigma} = -1.2816 \\quad\\Rightarrow\\quad \\mu - 1.2816\\sigma = 20 \\qquad (1)$$\n\nUpper tail: $P(X > 35) = 0.05$, so $P(Z < z) = 0.95$ gives $z = 1.6449$.\n$$\\frac{35 - \\mu}{\\sigma} = 1.6449 \\quad\\Rightarrow\\quad \\mu + 1.6449\\sigma = 35 \\qquad (2)$$\n\nSubtract (1) from (2):\n$$2.9264\\sigma = 15 \\quad\\Rightarrow\\quad \\sigma = 5.1257\\ldots$$\n\nSubstitute into (1):\n$$\\mu = 20 + 1.2816 \\times 5.1257 = 26.569\\ldots$$\n\nSo $\\mu = 26.6$ and $\\sigma = 5.13$ (3 s.f.).\n\nCheck: 20 is $1.28$ standard deviations below $26.57$ and 35 is $1.64$ standard deviations above it, consistent with the smaller tail on the right.",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q13",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "A garden centre sells packs of 150 tulip bulbs. Each bulb, independently, has a probability of $0.3$ of producing a red flower. The random variable $X$ is the number of bulbs in a pack that produce red flowers.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why a normal distribution can be used to approximate the distribution of $X$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Using a suitable normal approximation, estimate $P(X \\le 40)$.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Using the same approximation, estimate the probability that between 40 and 50 bulbs inclusive produce red flowers.",
+    "marks": 3
+   }
+  ],
+  "marks": 8,
+  "calculator": true,
+  "hint": "Use $N(np,\\, np(1-p))$, and remember the continuity correction: an integer $k$ covers the interval from $k - 0.5$ to $k + 0.5$.",
+  "answer": "(a) $n$ is large and $np = 45$, $n(1-p) = 105$ are both large, so the distribution is approximately symmetric (b) $0.2113$ (c) $0.6729$",
+  "solution": "(a) $X \\sim B(150, 0.3)$: $n = 150$ is large and $p$ is not too close to 0 or 1 ($np = 45$ and $n(1-p) = 105$ are both large), so the distribution is approximately symmetric and bell-shaped. **B1**\n\n(b) $\\mu = np = 45$, $\\sigma^2 = np(1-p) = 150 \\times 0.3 \\times 0.7 = 31.5$, so $Y \\sim N(45, 31.5)$. **M1**\n\nContinuity correction: $P(X \\le 40) \\approx P(Y < 40.5)$ **M1**\n$$z = \\frac{40.5 - 45}{\\sqrt{31.5}} = -0.8018$$ **M1** (standardising with $\\sqrt{31.5}$)\n$$P(Z < -0.8018) = 0.2113 \\text{ (4 d.p.)}$$ **A1**\n\n(c) $P(40 \\le X \\le 50) \\approx P(39.5 < Y < 50.5)$ **M1** (both corrections)\n$$= P\\left(\\frac{39.5 - 45}{\\sqrt{31.5}} < Z < \\frac{50.5 - 45}{\\sqrt{31.5}}\\right) = P(-0.9800 < Z < 0.9800)$$ **M1**\n$$= 0.6729 \\text{ (4 d.p.)}$$ **A1**\n\n(For reference, the exact binomial values are $0.2126$ and $0.6730$.)",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "id": "prob-normal-distribution-q14",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The times, $T$ seconds, taken by members of an athletics club to run 400 m are modelled by $T \\sim N(62, 2.5^2)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $P(T < 60)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find $P(58 < T < 65)$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "A club member is chosen at random. Given that this member takes more than 60 seconds, find the probability that they take more than 65 seconds.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "The fastest $10\\%$ of members are selected for the county team. Find the time a member must beat to be selected.",
+    "marks": 2
+   }
+  ],
+  "marks": 9,
+  "calculator": true,
+  "hint": "For (c), use $P(A \\mid B) = \\dfrac{P(A \\cap B)}{P(B)}$; if $T > 65$, then $T > 60$ automatically. For (d), which tail are the fastest runners in?",
+  "answer": "(a) $0.2119$ (b) $0.8301$ (c) $0.1460$ (d) $58.8$ seconds",
+  "solution": "(a)\n$$P(T < 60) = P\\left(Z < \\frac{60 - 62}{2.5}\\right) = P(Z < -0.8)$$ **M1**\n$$= 0.2119 \\text{ (4 d.p.)}$$ **A1**\n\n(b)\n$$P(58 < T < 65) = P(-1.6 < Z < 1.2)$$ **M1**\n$$= 0.88493 - 0.05480 = 0.8301 \\text{ (4 d.p.)}$$ **A1**\n\n(c)\n$$P(T > 65 \\mid T > 60) = \\frac{P(T > 65)}{P(T > 60)}$$ **M1**\n$$P(T > 65) = P(Z > 1.2) = 0.11507, \\qquad P(T > 60) = 1 - 0.21186 = 0.78814$$ **M1**\n$$\\frac{0.11507}{0.78814} = 0.1460 \\text{ (4 d.p.)}$$ **A1**\n\n(d) Fastest means the **smallest** times, so $P(T < t) = 0.1$, giving $z = -1.2816$. **M1** (negative $z$)\n$$t = 62 - 1.2816 \\times 2.5 = 58.80 \\text{ seconds}$$ **A1**",
+  "linkedTopicIds": [
+   "prob-conditional"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q15",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Kirsty's journey time to work, $T$ minutes, is modelled by $T \\sim N(45, 4^2)$, independently each day. She is late if her journey takes more than 50 minutes.\n\n(a) Show that the probability that she is late on a given day is $0.1056$ to 4 decimal places.\n\n(b) Find the probability that she is late on at least 3 of the 20 working days in a month.\n\n(c) She works 250 days in a year. Use a suitable normal approximation to estimate the probability that she is late on more than 30 days in the year.",
+  "hint": "Once you know the probability of being late on one day, the number of late days is binomial. For (c), approximate that binomial distribution by a normal distribution, with a continuity correction.",
+  "answer": "(a) $P(T > 50) = P(Z > 1.25) = 0.1056$ (b) $0.3554$ (c) $0.2002$",
+  "solution": "(a)\n$$P(T > 50) = P\\left(Z > \\frac{50 - 45}{4}\\right) = P(Z > 1.25) = 1 - 0.89435 = 0.1056 \\text{ (4 d.p.)}$$\n\n(b) Let $L$ be the number of late days in 20. Days are independent with the same probability, so $L \\sim B(20, 0.1056)$.\n$$P(L \\ge 3) = 1 - P(L \\le 2) = 1 - 0.6446 = 0.3554 \\text{ (4 d.p.)}$$\n(using $p = 0.105650\\ldots$ unrounded).\n\n(c) Let $Y$ be the number of late days in 250: $Y \\sim B(250, 0.10565)$.\n$$\\mu = 250 \\times 0.10565 = 26.41, \\qquad \\sigma^2 = 26.41 \\times 0.89435 = 23.62$$\n$n$ is large and $np \\approx 26$, $n(1-p) \\approx 224$ are both large, so approximate by $W \\sim N(26.41, 23.62)$.\n\n\"More than 30\" means $Y \\ge 31$, so with a continuity correction:\n$$P(Y > 30) \\approx P(W > 30.5) = P\\left(Z > \\frac{30.5 - 26.41}{\\sqrt{23.62}}\\right) = P(Z > 0.8410) = 0.2002$$\n\n(The exact binomial value is $0.1978$.)",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "prob-normal-distribution-q16",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$X \\sim N(\\mu, \\sigma^2)$ and $Z \\sim N(0, 1)$.\n\n(a) Show that for any $k > 0$, $P(\\mu - k\\sigma < X < \\mu + k\\sigma) = 2P(Z < k) - 1$, and so does not depend on $\\mu$ or $\\sigma$. Use this to check the empirical rule for $k = 1, 2, 3$.\n\n(b) Show that the interquartile range of $X$ is approximately $1.349\\sigma$.\n\n(c) A common rule labels a value as an outlier if it is more than $1.5 \\times$ IQR below the lower quartile or above the upper quartile. Find the proportion of values from a normal distribution that this rule labels as outliers. Comment on what this means for a sample of 1000 values from a normal population.",
+  "hint": "Standardise the endpoints $\\mu \\pm k\\sigma$. For (b), the upper quartile has $P(Z < z) = 0.75$.",
+  "answer": "(a) $0.6827$, $0.9545$, $0.9973$ (b) $Q_3 - Q_1 = 2 \\times 0.6745\\sigma = 1.349\\sigma$ (c) about $0.70\\%$; we would expect about 7 \"outliers\" in 1000 values even though nothing unusual has happened",
+  "solution": "(a) Standardising, $\\mu \\pm k\\sigma$ become $z = \\pm k$:\n$$P(\\mu - k\\sigma < X < \\mu + k\\sigma) = P(-k < Z < k) = P(Z < k) - P(Z < -k)$$\nBy symmetry $P(Z < -k) = 1 - P(Z < k)$, so this equals $2P(Z < k) - 1$, which involves only $k$.\n\n$k = 1$: $2(0.84134) - 1 = 0.6827 \\approx 68\\%$; $\\;k = 2$: $2(0.97725) - 1 = 0.9545 \\approx 95\\%$; $\\;k = 3$: $2(0.99865) - 1 = 0.9973 \\approx 99.7\\%$. This confirms the empirical rule for **every** normal distribution.\n\n(b) The upper quartile has $P(Z < z) = 0.75$, so $z = 0.6745$ and $Q_3 = \\mu + 0.6745\\sigma$. By symmetry $Q_1 = \\mu - 0.6745\\sigma$.\n$$\\text{IQR} = Q_3 - Q_1 = 1.349\\sigma$$\n\n(c) Upper fence:\n$$Q_3 + 1.5 \\times \\text{IQR} = \\mu + 0.6745\\sigma + 1.5 \\times 1.349\\sigma = \\mu + 2.698\\sigma$$\nand the lower fence is $\\mu - 2.698\\sigma$ by symmetry.\n$$P(\\text{outlier}) = 2P(Z > 2.698) = 2 \\times 0.00349 = 0.0070$$\nAbout $0.70\\%$ of values are labelled outliers. In a sample of 1000 values from a perfectly normal population we would expect about 7 values flagged, so a few \"outliers\" in a large data set are not, on their own, evidence of errors or of a non-normal population.",
+  "linkedTopicIds": [
+   "stat-quartiles-box-plots"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-normal-distribution-q17",
+  "topicId": "prob-normal-distribution"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A coffee machine fills cups that hold 250 ml. The volume of coffee dispensed is normally distributed with mean $\\mu$ ml and standard deviation 8 ml. The café wants both of the following:\n\n* fewer than $1\\%$ of cups overflow (volume more than 250 ml);\n* at least $95\\%$ of cups contain at least 220 ml.\n\n(a) Show that no value of $\\mu$ satisfies both conditions.\n\n(b) An engineer can make the machine more consistent by reducing the standard deviation. Find the largest standard deviation for which both conditions can be met, and the corresponding value of $\\mu$. Give your answers to 3 significant figures.",
+  "hint": "Turn each condition into an inequality for $\\mu$: one gives an upper bound, the other a lower bound. When do the bounds overlap?",
+  "answer": "(a) Overflow needs $\\mu < 231.4$ ml but the 220 ml condition needs $\\mu \\ge 233.2$ ml, which is impossible (b) $\\sigma = 7.55$ ml, $\\mu = 232$ ml (3 s.f.; $232.4$ ml)",
+  "solution": "Let $V \\sim N(\\mu, \\sigma^2)$, with $\\sigma = 8$ at first.\n\n(a) **Overflow:** $P(V > 250) < 0.01$. The value with $1\\%$ above it has $z = 2.3263$, so 250 must be more than $2.3263$ standard deviations above the mean:\n$$\\frac{250 - \\mu}{8} > 2.3263 \\quad\\Rightarrow\\quad \\mu < 250 - 18.61 = 231.39$$\n\n**Minimum fill:** $P(V \\ge 220) \\ge 0.95$, i.e. $P(V < 220) \\le 0.05$. The value with $5\\%$ below it has $z = -1.6449$:\n$$\\frac{220 - \\mu}{8} \\le -1.6449 \\quad\\Rightarrow\\quad \\mu \\ge 220 + 13.16 = 233.16$$\n\nWe need $\\mu < 231.39$ and $\\mu \\ge 233.16$ at the same time, which is impossible. The gap between 220 and 250 (30 ml) is less than the $(2.3263 + 1.6449) \\times 8 = 31.77$ ml the two tails need.\n\n(b) With standard deviation $\\sigma$, the conditions are\n$$\\mu < 250 - 2.3263\\sigma \\quad\\text{and}\\quad \\mu \\ge 220 + 1.6449\\sigma$$\nThese can both hold only if $220 + 1.6449\\sigma \\le 250 - 2.3263\\sigma$ (with equality as the boundary case):\n$$3.9712\\sigma \\le 30 \\quad\\Rightarrow\\quad \\sigma \\le 7.554$$\nThe largest standard deviation is $\\sigma \\approx 7.55$ ml. Then\n$$\\mu = 220 + 1.6449 \\times 7.554 = 232.43 \\approx 232 \\text{ ml}$$\n(Check: $250 - 2.3263 \\times 7.554 = 232.43$ ✓. Strictly, at exactly $\\sigma = 7.554$ the overflow probability equals $1\\%$, so the engineer needs $\\sigma$ just below this.)",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "prob-normal-distribution-q18",
+  "topicId": "prob-normal-distribution"
+ }
+]

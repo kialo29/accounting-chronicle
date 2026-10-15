@@ -1,0 +1,351 @@
+[
+ {
+  "id": "calc-limits-q01",
+  "topicId": "calc-limits",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The graph of $y = f(x)$ is shown. There is an open circle at $(1, 2)$ and a filled dot at $(1, 4)$.\n\nUse the graph to find:",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$\\displaystyle\\lim_{x \\to 1} f(x)$"
+   },
+   {
+    "label": "b",
+    "prompt": "$f(1)$"
+   },
+   {
+    "label": "c",
+    "prompt": "$\\displaystyle\\lim_{x \\to 4} f(x)$"
+   }
+  ],
+  "hint": "For a limit, trace the curve toward $x = 1$ from both sides and see what height it heads for. The filled dot tells you the value of the function itself.",
+  "answer": "(a) $2$ (b) $4$ (c) $5$",
+  "solution": "(a) As $x$ gets close to 1 from the left and from the right, the curve heads toward the open circle at height 2. The limit describes this approach, so\n$$\\lim_{x \\to 1} f(x) = 2$$\n\n(b) The filled dot shows the actual value of the function at $x = 1$:\n$$f(1) = 4$$\n\nThe limit and the function value are different, and that is allowed: the limit ignores what happens **at** $x = 1$.\n\n(c) Near $x = 4$ the curve is unbroken and heads toward height 5 from both sides, so\n$$\\lim_{x \\to 4} f(x) = 5$$\n(Here the limit does equal $f(4) = 5$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 270\" width=\"300\" height=\"270\"><line x1=\"22\" y1=\"252\" x2=\"22\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"64.7\" y1=\"252\" x2=\"64.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"107.3\" y1=\"252\" x2=\"107.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"150\" y1=\"252\" x2=\"150\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"192.7\" y1=\"252\" x2=\"192.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"235.3\" y1=\"252\" x2=\"235.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"278\" y1=\"252\" x2=\"278\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"232.3\" x2=\"278\" y2=\"232.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"199.6\" x2=\"278\" y2=\"199.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"166.8\" x2=\"278\" y2=\"166.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"134\" x2=\"278\" y2=\"134\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"101.2\" x2=\"278\" y2=\"101.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"68.4\" x2=\"278\" y2=\"68.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"35.7\" x2=\"278\" y2=\"35.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"22\" y1=\"232.3\" x2=\"284\" y2=\"232.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"64.7\" y1=\"252\" x2=\"64.7\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,232.3 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M64.7,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"225.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"71.7\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"107.3\" y1=\"229.3\" x2=\"107.3\" y2=\"235.3\" stroke=\"currentColor\"/><text x=\"107.3\" y=\"247.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"150\" y1=\"229.3\" x2=\"150\" y2=\"235.3\" stroke=\"currentColor\"/><text x=\"150\" y=\"247.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"192.7\" y1=\"229.3\" x2=\"192.7\" y2=\"235.3\" stroke=\"currentColor\"/><text x=\"192.7\" y=\"247.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"235.3\" y1=\"229.3\" x2=\"235.3\" y2=\"235.3\" stroke=\"currentColor\"/><text x=\"235.3\" y=\"247.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"61.7\" y1=\"199.6\" x2=\"67.7\" y2=\"199.6\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"203.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"61.7\" y1=\"166.8\" x2=\"67.7\" y2=\"166.8\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"170.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"61.7\" y1=\"134\" x2=\"67.7\" y2=\"134\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"138\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"61.7\" y1=\"101.2\" x2=\"67.7\" y2=\"101.2\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"105.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"61.7\" y1=\"68.4\" x2=\"67.7\" y2=\"68.4\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"72.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"61.7\" y1=\"35.7\" x2=\"67.7\" y2=\"35.7\" stroke=\"currentColor\"/><text x=\"58.7\" y=\"39.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"58.7\" y=\"246.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M56.1,40.9 L56.3,41.3 L56.4,41.8 L56.5,42.2 L56.6,42.6 L56.8,43.1 L56.9,43.5 L57,43.9 L57.2,44.4 L57.3,44.8 L57.4,45.2 L57.5,45.6 L57.7,46.1 L57.8,46.5 L57.9,46.9 L58.1,47.3 L58.2,47.8 L58.3,48.2 L58.4,48.6 L58.6,49 L58.7,49.4 L58.8,49.9 L58.9,50.3 L59.1,50.7 L59.2,51.1 L59.3,51.5 L59.5,52 L59.6,52.4 L59.7,52.8 L59.8,53.2 L60,53.6 L60.1,54 L60.2,54.5 L60.4,54.9 L60.5,55.3 L60.6,55.7 L60.7,56.1 L60.9,56.5 L61,56.9 L61.1,57.3 L61.3,57.7 L61.4,58.2 L61.5,58.6 L61.6,59 L61.8,59.4 L61.9,59.8 L62,60.2 L62.1,60.6 L62.3,61 L62.4,61.4 L62.5,61.8 L62.7,62.2 L62.8,62.6 L62.9,63 L63,63.4 L63.2,63.8 L63.3,64.2 L63.4,64.6 L63.6,65 L63.7,65.4 L63.8,65.8 L63.9,66.2 L64.1,66.6 L64.2,67 L64.3,67.4 L64.5,67.8 L64.6,68.2 L64.7,68.6 L64.8,69 L65,69.4 L65.1,69.8 L65.2,70.1 L65.3,70.5 L65.5,70.9 L65.6,71.3 L65.7,71.7 L65.9,72.1 L66,72.5 L66.1,72.9 L66.2,73.3 L66.4,73.6 L66.5,74 L66.6,74.4 L66.8,74.8 L66.9,75.2 L67,75.6 L67.1,75.9 L67.3,76.3 L67.4,76.7 L67.5,77.1 L67.7,77.5 L67.8,77.8 L67.9,78.2 L68,78.6 L68.2,79 L68.3,79.4 L68.4,79.7 L68.5,80.1 L68.7,80.5 L68.8,80.9 L68.9,81.2 L69.1,81.6 L69.2,82 L69.3,82.3 L69.4,82.7 L69.6,83.1 L69.7,83.5 L69.8,83.8 L70,84.2 L70.1,84.6 L70.2,84.9 L70.3,85.3 L70.5,85.7 L70.6,86 L70.7,86.4 L70.9,86.8 L71,87.1 L71.1,87.5 L71.2,87.9 L71.4,88.2 L71.5,88.6 L71.6,88.9 L71.7,89.3 L71.9,89.7 L72,90 L72.1,90.4 L72.3,90.7 L72.4,91.1 L72.5,91.5 L72.6,91.8 L72.8,92.2 L72.9,92.5 L73,92.9 L73.2,93.2 L73.3,93.6 L73.4,93.9 L73.5,94.3 L73.7,94.6 L73.8,95 L73.9,95.4 L74.1,95.7 L74.2,96.1 L74.3,96.4 L74.4,96.7 L74.6,97.1 L74.7,97.4 L74.8,97.8 L74.9,98.1 L75.1,98.5 L75.2,98.8 L75.3,99.2 L75.5,99.5 L75.6,99.9 L75.7,100.2 L75.8,100.5 L76,100.9 L76.1,101.2 L76.2,101.6 L76.4,101.9 L76.5,102.2 L76.6,102.6 L76.7,102.9 L76.9,103.3 L77,103.6 L77.1,103.9 L77.3,104.3 L77.4,104.6 L77.5,104.9 L77.6,105.3 L77.8,105.6 L77.9,105.9 L78,106.3 L78.1,106.6 L78.3,106.9 L78.4,107.3 L78.5,107.6 L78.7,107.9 L78.8,108.3 L78.9,108.6 L79,108.9 L79.2,109.2 L79.3,109.6 L79.4,109.9 L79.6,110.2 L79.7,110.5 L79.8,110.9 L79.9,111.2 L80.1,111.5 L80.2,111.8 L80.3,112.1 L80.5,112.5 L80.6,112.8 L80.7,113.1 L80.8,113.4 L81,113.7 L81.1,114.1 L81.2,114.4 L81.3,114.7 L81.5,115 L81.6,115.3 L81.7,115.6 L81.9,116 L82,116.3 L82.1,116.6 L82.2,116.9 L82.4,117.2 L82.5,117.5 L82.6,117.8 L82.8,118.1 L82.9,118.5 L83,118.8 L83.1,119.1 L83.3,119.4 L83.4,119.7 L83.5,120 L83.7,120.3 L83.8,120.6 L83.9,120.9 L84,121.2 L84.2,121.5 L84.3,121.8 L84.4,122.1 L84.5,122.4 L84.7,122.7 L84.8,123 L84.9,123.3 L85.1,123.6 L85.2,123.9 L85.3,124.2 L85.4,124.5 L85.6,124.8 L85.7,125.1 L85.8,125.4 L86,125.7 L86.1,126 L86.2,126.3 L86.3,126.6 L86.5,126.9 L86.6,127.2 L86.7,127.5 L86.9,127.8 L87,128 L87.1,128.3 L87.2,128.6 L87.4,128.9 L87.5,129.2 L87.6,129.5 L87.7,129.8 L87.9,130.1 L88,130.4 L88.1,130.6 L88.3,130.9 L88.4,131.2 L88.5,131.5 L88.6,131.8 L88.8,132.1 L88.9,132.3 L89,132.6 L89.2,132.9 L89.3,133.2 L89.4,133.5 L89.5,133.7 L89.7,134 L89.8,134.3 L89.9,134.6 L90.1,134.9 L90.2,135.1 L90.3,135.4 L90.4,135.7 L90.6,136 L90.7,136.2 L90.8,136.5 L90.9,136.8 L91.1,137 L91.2,137.3 L91.3,137.6 L91.5,137.9 L91.6,138.1 L91.7,138.4 L91.8,138.7 L92,138.9 L92.1,139.2 L92.2,139.5 L92.4,139.7 L92.5,140 L92.6,140.3 L92.7,140.5 L92.9,140.8 L93,141.1 L93.1,141.3 L93.3,141.6 L93.4,141.8 L93.5,142.1 L93.6,142.4 L93.8,142.6 L93.9,142.9 L94,143.1 L94.1,143.4 L94.3,143.6 L94.4,143.9 L94.5,144.2 L94.7,144.4 L94.8,144.7 L94.9,144.9 L95,145.2 L95.2,145.4 L95.3,145.7 L95.4,145.9 L95.6,146.2 L95.7,146.4 L95.8,146.7 L95.9,146.9 L96.1,147.2 L96.2,147.4 L96.3,147.7 L96.5,147.9 L96.6,148.2 L96.7,148.4 L96.8,148.7 L97,148.9 L97.1,149.2 L97.2,149.4 L97.3,149.6 L97.5,149.9 L97.6,150.1 L97.7,150.4 L97.9,150.6 L98,150.8 L98.1,151.1 L98.2,151.3 L98.4,151.6 L98.5,151.8 L98.6,152 L98.8,152.3 L98.9,152.5 L99,152.7 L99.1,153 L99.3,153.2 L99.4,153.5 L99.5,153.7 L99.7,153.9 L99.8,154.1 L99.9,154.4 L100,154.6 L100.2,154.8 L100.3,155.1 L100.4,155.3 L100.5,155.5 L100.7,155.8 L100.8,156 L100.9,156.2 L101.1,156.4 L101.2,156.7 L101.3,156.9 L101.4,157.1 L101.6,157.3 L101.7,157.6 L101.8,157.8 L102,158 L102.1,158.2 L102.2,158.4 L102.3,158.7 L102.5,158.9 L102.6,159.1 L102.7,159.3 L102.9,159.5 L103,159.8 L103.1,160 L103.2,160.2 L103.4,160.4 L103.5,160.6 L103.6,160.8 L103.7,161 L103.9,161.3 L104,161.5 L104.1,161.7 L104.3,161.9 L104.4,162.1 L104.5,162.3 L104.6,162.5 L104.8,162.7 L104.9,162.9 L105,163.1 L105.2,163.3 L105.2,163.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M109.6,170.1 L109.7,170.3 L110.1,170.8 L110.4,171.3 L110.7,171.8 L111.1,172.3 L111.4,172.8 L111.8,173.2 L112.1,173.7 L112.5,174.2 L112.8,174.6 L113.1,175.1 L113.5,175.5 L113.8,176 L114.2,176.4 L114.5,176.9 L114.8,177.3 L115.2,177.7 L115.5,178.2 L115.9,178.6 L116.2,179 L116.5,179.4 L116.9,179.8 L117.2,180.2 L117.6,180.6 L117.9,181 L118.3,181.4 L118.6,181.8 L118.9,182.2 L119.3,182.6 L119.6,182.9 L120,183.3 L120.3,183.7 L120.6,184 L121,184.4 L121.3,184.8 L121.7,185.1 L122,185.5 L122.4,185.8 L122.7,186.1 L123,186.5 L123.4,186.8 L123.7,187.1 L124.1,187.4 L124.4,187.8 L124.7,188.1 L125.1,188.4 L125.4,188.7 L125.8,189 L126.1,189.3 L126.4,189.6 L126.8,189.9 L127.1,190.1 L127.5,190.4 L127.8,190.7 L128.2,191 L128.5,191.2 L128.8,191.5 L129.2,191.7 L129.5,192 L129.9,192.3 L130.2,192.5 L130.5,192.7 L130.9,193 L131.2,193.2 L131.6,193.4 L131.9,193.7 L132.3,193.9 L132.6,194.1 L132.9,194.3 L133.3,194.5 L133.6,194.7 L134,194.9 L134.3,195.1 L134.6,195.3 L135,195.5 L135.3,195.7 L135.7,195.9 L136,196 L136.3,196.2 L136.7,196.4 L137,196.5 L137.4,196.7 L137.7,196.8 L138.1,197 L138.4,197.1 L138.7,197.3 L139.1,197.4 L139.4,197.5 L139.8,197.7 L140.1,197.8 L140.4,197.9 L140.8,198 L141.1,198.1 L141.5,198.2 L141.8,198.3 L142.1,198.4 L142.5,198.5 L142.8,198.6 L143.2,198.7 L143.5,198.8 L143.9,198.9 L144.2,198.9 L144.5,199 L144.9,199.1 L145.2,199.1 L145.6,199.2 L145.9,199.3 L146.2,199.3 L146.6,199.3 L146.9,199.4 L147.3,199.4 L147.6,199.5 L148,199.5 L148.3,199.5 L148.6,199.5 L149,199.5 L149.3,199.5 L149.7,199.6 L150,199.6 L150.3,199.6 L150.7,199.5 L151,199.5 L151.4,199.5 L151.7,199.5 L152,199.5 L152.4,199.5 L152.7,199.4 L153.1,199.4 L153.4,199.3 L153.8,199.3 L154.1,199.3 L154.4,199.2 L154.8,199.1 L155.1,199.1 L155.5,199 L155.8,198.9 L156.1,198.9 L156.5,198.8 L156.8,198.7 L157.2,198.6 L157.5,198.5 L157.9,198.4 L158.2,198.3 L158.5,198.2 L158.9,198.1 L159.2,198 L159.6,197.9 L159.9,197.8 L160.2,197.7 L160.6,197.5 L160.9,197.4 L161.3,197.3 L161.6,197.1 L161.9,197 L162.3,196.8 L162.6,196.7 L163,196.5 L163.3,196.4 L163.7,196.2 L164,196 L164.3,195.9 L164.7,195.7 L165,195.5 L165.4,195.3 L165.7,195.1 L166,194.9 L166.4,194.7 L166.7,194.5 L167.1,194.3 L167.4,194.1 L167.7,193.9 L168.1,193.7 L168.4,193.4 L168.8,193.2 L169.1,193 L169.5,192.7 L169.8,192.5 L170.1,192.3 L170.5,192 L170.8,191.7 L171.2,191.5 L171.5,191.2 L171.8,191 L172.2,190.7 L172.5,190.4 L172.9,190.1 L173.2,189.9 L173.6,189.6 L173.9,189.3 L174.2,189 L174.6,188.7 L174.9,188.4 L175.3,188.1 L175.6,187.8 L175.9,187.4 L176.3,187.1 L176.6,186.8 L177,186.5 L177.3,186.1 L177.6,185.8 L178,185.5 L178.3,185.1 L178.7,184.8 L179,184.4 L179.4,184 L179.7,183.7 L180,183.3 L180.4,182.9 L180.7,182.6 L181.1,182.2 L181.4,181.8 L181.7,181.4 L182.1,181 L182.4,180.6 L182.8,180.2 L183.1,179.8 L183.5,179.4 L183.8,179 L184.1,178.6 L184.5,178.2 L184.8,177.7 L185.2,177.3 L185.5,176.9 L185.8,176.4 L186.2,176 L186.5,175.5 L186.9,175.1 L187.2,174.6 L187.5,174.2 L187.9,173.7 L188.2,173.2 L188.6,172.8 L188.9,172.3 L189.3,171.8 L189.6,171.3 L189.9,170.8 L190.3,170.3 L190.6,169.8 L191,169.3 L191.3,168.8 L191.6,168.3 L192,167.8 L192.3,167.3 L192.7,166.8 L193,166.3 L193.3,165.7 L193.7,165.2 L194,164.6 L194.4,164.1 L194.7,163.6 L195.1,163 L195.4,162.4 L195.7,161.9 L196.1,161.3 L196.4,160.8 L196.8,160.2 L197.1,159.6 L197.4,159 L197.8,158.4 L198.1,157.8 L198.5,157.3 L198.8,156.7 L199.2,156.1 L199.5,155.4 L199.8,154.8 L200.2,154.2 L200.5,153.6 L200.9,153 L201.2,152.4 L201.5,151.7 L201.9,151.1 L202.2,150.4 L202.6,149.8 L202.9,149.2 L203.2,148.5 L203.6,147.8 L203.9,147.2 L204.3,146.5 L204.6,145.9 L205,145.2 L205.3,144.5 L205.6,143.8 L206,143.1 L206.3,142.4 L206.7,141.7 L207,141.1 L207.3,140.3 L207.7,139.6 L208,138.9 L208.4,138.2 L208.7,137.5 L209.1,136.8 L209.4,136 L209.7,135.3 L210.1,134.6 L210.4,133.8 L210.8,133.1 L211.1,132.3 L211.4,131.6 L211.8,130.8 L212.1,130.1 L212.5,129.3 L212.8,128.5 L213.1,127.8 L213.5,127 L213.8,126.2 L214.2,125.4 L214.5,124.6 L214.9,123.8 L215.2,123 L215.5,122.2 L215.9,121.4 L216.2,120.6 L216.6,119.8 L216.9,119 L217.2,118.1 L217.6,117.3 L217.9,116.5 L218.3,115.6 L218.6,114.8 L218.9,114 L219.3,113.1 L219.6,112.3 L220,111.4 L220.3,110.5 L220.7,109.7 L221,108.8 L221.3,107.9 L221.7,107 L222,106.2 L222.4,105.3 L222.7,104.4 L223,103.5 L223.4,102.6 L223.7,101.7 L224.1,100.8 L224.4,99.9 L224.8,98.9 L225.1,98 L225.4,97.1 L225.8,96.2 L226.1,95.2 L226.5,94.3 L226.8,93.4 L227.1,92.4 L227.5,91.5 L227.8,90.5 L228.2,89.5 L228.5,88.6 L228.8,87.6 L229.2,86.6 L229.5,85.7 L229.9,84.7 L230.2,83.7 L230.6,82.7 L230.9,81.7 L231.2,80.7 L231.6,79.7 L231.9,78.7 L232.3,77.7 L232.6,76.7 L232.9,75.7 L233.3,74.7 L233.6,73.6 L234,72.6 L234.3,71.6 L234.7,70.5 L235,69.5 L235.3,68.4 L235.7,67.4 L236,66.3 L236.4,65.3 L236.7,64.2 L237,63.1 L237.4,62.1 L237.7,61 L238.1,59.9 L238.4,58.8 L238.7,57.7 L239.1,56.7 L239.4,55.6 L239.8,54.5 L240.1,53.3 L240.5,52.2 L240.8,51.1 L241.1,50 L241.5,48.9 L241.8,47.8 L242.2,46.6 L242.5,45.5 L242.8,44.4 L243.2,43.2 L243.5,42.1 L243.9,40.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"107.3\" cy=\"166.8\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"107.3\" cy=\"101.2\" r=\"4\" fill=\"currentColor\"/><text x=\"235.9\" y=\"42.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = f(x)</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q02",
+  "topicId": "calc-limits",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The table shows values of $f(x) = \\dfrac{2^x - 1}{x}$, rounded to 5 decimal places.\n\n| $x$ | $-0.1$ | $-0.01$ | $-0.001$ | $0.001$ | $0.01$ | $0.1$ |\n|---|---|---|---|---|---|---|\n| $f(x)$ | $0.66967$ | $0.69075$ | $0.69291$ | $0.69339$ | $0.69556$ | $0.71773$ |\n\n(a) Explain why you cannot find $\\displaystyle\\lim_{x \\to 0} f(x)$ by substituting $x = 0$.\n\n(b) Use the table to estimate $\\displaystyle\\lim_{x \\to 0} f(x)$ to 2 decimal places.",
+  "hint": "Look at the values just to the left of 0 and just to the right of 0. What number are both sides closing in on?",
+  "answer": "(a) $f(0) = \\frac{0}{0}$ is undefined. (b) $\\lim_{x \\to 0} f(x) \\approx 0.69$",
+  "solution": "(a) Substituting gives $\\dfrac{2^0 - 1}{0} = \\dfrac{0}{0}$, which is undefined (an indeterminate form), so $f(0)$ does not exist. A limit does not need $f(0)$ – it only needs the values **near** 0.\n\n(b) From the left: $0.66967,\\ 0.69075,\\ 0.69291$ (increasing).\n\nFrom the right: $0.71773,\\ 0.69556,\\ 0.69339$ (decreasing).\n\nBoth sides close in on the same number, trapped between $0.69291$ and $0.69339$, so\n$$\\lim_{x \\to 0} \\frac{2^x - 1}{x} \\approx 0.69$$\n\n(The exact value is $\\ln 2 = 0.6931\\ldots$)",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q03",
+  "topicId": "calc-limits",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\lim_{x \\to 3} \\frac{x^2 - 9}{x - 3}$.",
+  "hint": "Substituting gives $\\frac{0}{0}$. Factor the numerator.",
+  "answer": "$6$",
+  "solution": "Direct substitution gives $\\dfrac{9 - 9}{3 - 3} = \\dfrac{0}{0}$: indeterminate, so simplify first.\n\nFactor the numerator as a difference of squares:\n$$\\frac{x^2 - 9}{x - 3} = \\frac{(x - 3)(x + 3)}{x - 3} = x + 3 \\quad (x \\ne 3)$$\n\nNow substitute:\n$$\\lim_{x \\to 3} (x + 3) = 6$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q04",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\lim_{x \\to 3} \\frac{x^2 - 9}{x + 3}$.",
+  "hint": "Always try direct substitution first. Does it give $\\frac{0}{0}$ this time?",
+  "answer": "$0$",
+  "solution": "Try direct substitution:\n$$\\frac{3^2 - 9}{3 + 3} = \\frac{0}{6} = 0$$\n\nThe denominator is not zero, so the function is continuous at $x = 3$ and substitution is valid:\n$$\\lim_{x \\to 3} \\frac{x^2 - 9}{x + 3} = 0$$\n\n**What changed:** the denominator changed from $x - 3$ to $x + 3$. It is no longer $0$ at $x = 3$, so there is no indeterminate form – and $\\frac{0}{6}$ really is $0$ (unlike $\\frac{0}{0}$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q05",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\lim_{x \\to -3} \\frac{x^2 - 9}{x + 3}$.",
+  "hint": "Substitute $x = -3$. If you get $\\frac{0}{0}$, factor.",
+  "answer": "$-6$",
+  "solution": "Direct substitution gives $\\dfrac{9 - 9}{-3 + 3} = \\dfrac{0}{0}$, so simplify:\n$$\\frac{x^2 - 9}{x + 3} = \\frac{(x - 3)(x + 3)}{x + 3} = x - 3 \\quad (x \\ne -3)$$\n\n$$\\lim_{x \\to -3} (x - 3) = -6$$\n\n**What changed:** $x$ now approaches $-3$ instead of $3$. The denominator $x + 3$ is zero there, so we are back to $\\frac{0}{0}$ and the common factor $(x + 3)$ cancels.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q06",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\lim_{x \\to -3} \\frac{x^2 + 9}{x + 3}$, or explain why it does not exist.",
+  "hint": "Substitute: what is the numerator, and what is the denominator? Then look at the sign of $x + 3$ on each side of $-3$.",
+  "answer": "The limit does not exist: $\\lim_{x \\to -3^-} = -\\infty$ and $\\lim_{x \\to -3^+} = +\\infty$.",
+  "solution": "Substitution gives $\\dfrac{9 + 9}{0} = \\dfrac{18}{0}$: a nonzero number over zero. This is **not** indeterminate – it signals that the function blows up.\n\nNumerator $\\to 18 > 0$.\n\nFrom the left ($x = -3.01$): $x + 3 = -0.01 < 0$, so $\\dfrac{x^2 + 9}{x + 3} \\to -\\infty$.\n\nFrom the right ($x = -2.99$): $x + 3 = 0.01 > 0$, so $\\dfrac{x^2 + 9}{x + 3} \\to +\\infty$.\n\nThe one-sided limits are different (and infinite), so $\\displaystyle\\lim_{x \\to -3} \\frac{x^2 + 9}{x + 3}$ does not exist. There is a vertical asymptote at $x = -3$.\n\n**What changed:** the numerator changed from $x^2 - 9$ to $x^2 + 9$, which is not zero at $x = -3$. So there is no common factor to cancel: $\\frac{k}{0}$ with $k \\ne 0$ instead of $\\frac{0}{0}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q07",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Evaluate $\\displaystyle\\lim_{x \\to 0} \\frac{\\sqrt{x + 9} - 3}{x}$.",
+  "hint": "Multiply the numerator and denominator by the conjugate $\\sqrt{x + 9} + 3$.",
+  "answer": "$\\dfrac{1}{6}$",
+  "solution": "Direct substitution gives $\\dfrac{3 - 3}{0} = \\dfrac{0}{0}$, so rationalize the numerator:\n$$\\frac{\\sqrt{x + 9} - 3}{x} \\cdot \\frac{\\sqrt{x + 9} + 3}{\\sqrt{x + 9} + 3} = \\frac{(x + 9) - 9}{x\\left(\\sqrt{x + 9} + 3\\right)} = \\frac{x}{x\\left(\\sqrt{x + 9} + 3\\right)}$$\n\nFor $x \\ne 0$, cancel $x$:\n$$= \\frac{1}{\\sqrt{x + 9} + 3}$$\n\nSubstitute $x = 0$:\n$$\\lim_{x \\to 0} \\frac{1}{\\sqrt{x + 9} + 3} = \\frac{1}{3 + 3} = \\frac{1}{6}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q08",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Leah's working is shown below.\n\n$$\\lim_{x \\to -2} \\frac{x^2 + 5x + 6}{x^2 - 4} = \\frac{4 - 10 + 6}{4 - 4} = \\frac{0}{0} = 0$$\n\nIdentify Leah's error, explain why it is wrong, and find the correct value of the limit.",
+  "hint": "What does $\\frac{0}{0}$ actually tell you? Try factoring both the numerator and the denominator.",
+  "answer": "Leah wrongly treats $\\frac{0}{0}$ as $0$; the limit is $-\\dfrac{1}{4}$.",
+  "solution": "**Error:** the last step, $\\dfrac{0}{0} = 0$.\n\n$\\frac{0}{0}$ is an **indeterminate form**: it does not equal 0 (or 1, or anything). It tells you that $(x + 2)$ is a factor of both the numerator and the denominator, so you must simplify and then substitute again.\n\n**Correct working:**\n$$\\frac{x^2 + 5x + 6}{x^2 - 4} = \\frac{(x + 2)(x + 3)}{(x + 2)(x - 2)} = \\frac{x + 3}{x - 2} \\quad (x \\ne -2)$$\n\n$$\\lim_{x \\to -2} \\frac{x + 3}{x - 2} = \\frac{-2 + 3}{-2 - 2} = -\\frac{1}{4}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q09",
+  "topicId": "calc-limits",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Marcus's working is shown below.\n\n$$\\lim_{x \\to 1} \\frac{x^3 - 1}{x^2 - 1} = \\lim_{x \\to 1}\\left(\\frac{x^3}{x^2} - \\frac{1}{1}\\right) = \\lim_{x \\to 1} (x - 1) = 0$$\n\nIdentify Marcus's error, explain it, and find the correct value of the limit.",
+  "hint": "Can you split a fraction like $\\frac{a - b}{c - d}$ into $\\frac{a}{c} - \\frac{b}{d}$? Factor $x^3 - 1$ as a difference of cubes.",
+  "answer": "Marcus cancels terms instead of factors; the limit is $\\dfrac{3}{2}$.",
+  "solution": "**Error:** the first step. Marcus has \"cancelled\" term by term, writing $\\dfrac{x^3 - 1}{x^2 - 1} = \\dfrac{x^3}{x^2} - \\dfrac{1}{1}$.\n\nThis is not valid: only common **factors** of the whole numerator and the whole denominator can cancel. (Test it: at $x = 2$, $\\frac{8 - 1}{4 - 1} = \\frac{7}{3}$, but $\\frac{8}{4} - 1 = 1$.)\n\n**Correct working:** both parts are $0$ at $x = 1$, so $(x - 1)$ is a common factor. Use the difference of cubes and the difference of squares:\n$$\\frac{x^3 - 1}{x^2 - 1} = \\frac{(x - 1)(x^2 + x + 1)}{(x - 1)(x + 1)} = \\frac{x^2 + x + 1}{x + 1} \\quad (x \\ne 1)$$\n\n$$\\lim_{x \\to 1} \\frac{x^2 + x + 1}{x + 1} = \\frac{1 + 1 + 1}{1 + 1} = \\frac{3}{2}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q10",
+  "topicId": "calc-limits",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam wants to find $\\displaystyle\\lim_{x \\to 2} \\frac{x^2 - 2x}{|x - 2|}$. He works out the value of the function at $x = 2.1$ and $x = 2.01$, gets $2.1$ and $2.01$, and says:\n\n\"The values are getting closer to 2, so the limit is 2.\"\n\nIs Sam correct? Justify your answer.",
+  "hint": "Sam has only looked at one side of 2. What is $|x - 2|$ when $x < 2$?",
+  "answer": "No. $\\lim_{x \\to 2^+} = 2$ but $\\lim_{x \\to 2^-} = -2$, so the limit does not exist.",
+  "solution": "Sam is not correct: he has only checked values to the **right** of 2.\n\nWrite the numerator as $x(x - 2)$.\n\n**For $x > 2$:** $|x - 2| = x - 2$, so\n$$\\frac{x(x - 2)}{x - 2} = x \\quad\\Rightarrow\\quad \\lim_{x \\to 2^+} \\frac{x^2 - 2x}{|x - 2|} = 2$$\n\n**For $x < 2$:** $|x - 2| = -(x - 2)$, so\n$$\\frac{x(x - 2)}{-(x - 2)} = -x \\quad\\Rightarrow\\quad \\lim_{x \\to 2^-} \\frac{x^2 - 2x}{|x - 2|} = -2$$\n\n(Check: at $x = 1.9$ the value is $\\frac{3.61 - 3.8}{0.1} = -1.9$.)\n\nThe two one-sided limits are not equal, so the two-sided limit $\\displaystyle\\lim_{x \\to 2} \\frac{x^2 - 2x}{|x - 2|}$ **does not exist**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q11",
+  "topicId": "calc-limits",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Jordan makes two claims about a function $f$.\n\n**Claim 1:** \"If $f(3)$ is undefined, then $\\displaystyle\\lim_{x \\to 3} f(x)$ cannot exist.\"\n\n**Claim 2:** \"If $\\displaystyle\\lim_{x \\to 3} f(x) = 7$, then $f(3) = 7$.\"\n\nShow that both claims are false by giving a counterexample to each.",
+  "hint": "A limit only depends on values **near** $x = 3$, not at $x = 3$. Think about a function with a hole, or a function whose value at 3 has been redefined.",
+  "answer": "Both are false. For example, $f(x) = \\frac{x^2 - 9}{x - 3}$ has $f(3)$ undefined but limit $6$; and $g(x) = x + 4$ for $x \\ne 3$, $g(3) = 0$ has limit $7$ but $g(3) = 0$. (Other counterexamples are possible.)",
+  "solution": "The key fact: $\\lim_{x \\to 3} f(x)$ depends only on the values of $f(x)$ for $x$ **close to but not equal to** 3.\n\n**Claim 1 is false.** Take $f(x) = \\dfrac{x^2 - 9}{x - 3}$. Then $f(3) = \\frac{0}{0}$ is undefined, but for $x \\ne 3$, $f(x) = x + 3$, so\n$$\\lim_{x \\to 3} f(x) = 6$$\nThe limit exists even though $f(3)$ does not (the graph is a line with a hole at $(3, 6)$).\n\n**Claim 2 is false.** Take\n$$g(x) = \\begin{cases} x + 4, & x \\ne 3 \\\\ 0, & x = 3 \\end{cases}$$\nFor $x$ near 3 (but not 3), $g(x) = x + 4 \\to 7$, so $\\lim_{x \\to 3} g(x) = 7$, but $g(3) = 0 \\ne 7$.\n\nThe limit equals the function value only when the function is **continuous** at that point.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q12",
+  "topicId": "calc-limits",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A parking garage charges \\$4 for up to 1 hour, \\$7 for more than 1 hour and up to 2 hours, and \\$10 for more than 2 hours and up to 3 hours. Let $C(t)$ be the charge, in dollars, for parking $t$ hours, $0 < t \\le 3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $C(2)$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\displaystyle\\lim_{t \\to 2^-} C(t)$ and $\\displaystyle\\lim_{t \\to 2^+} C(t)$."
+   },
+   {
+    "label": "c",
+    "prompt": "Does $\\displaystyle\\lim_{t \\to 2} C(t)$ exist? Explain."
+   },
+   {
+    "label": "d",
+    "prompt": "Find $\\displaystyle\\lim_{t \\to 1.5} C(t)$."
+   }
+  ],
+  "hint": "Sketch the step function. Parking for exactly 2 hours falls in the \"more than 1 and up to 2 hours\" band. For one-sided limits look at times just below and just above 2 hours.",
+  "answer": "(a) \\$7 (b) \\$7 and \\$10 (c) No – the one-sided limits are different. (d) \\$7",
+  "solution": "As a piecewise function:\n$$C(t) = \\begin{cases} 4, & 0 < t \\le 1 \\\\ 7, & 1 < t \\le 2 \\\\ 10, & 2 < t \\le 3 \\end{cases}$$\n\n(a) $t = 2$ is in the band $1 < t \\le 2$, so $C(2) = 7$: \\$7.\n\n(b) For $t$ just below 2 (e.g. 1 h 59 min) the charge is \\$7, so $\\displaystyle\\lim_{t \\to 2^-} C(t) = 7$.\n\nFor $t$ just above 2 (e.g. 2 h 1 min) the charge is \\$10, so $\\displaystyle\\lim_{t \\to 2^+} C(t) = 10$.\n\n(c) No. The left-hand limit (7) and the right-hand limit (10) are different, so the two-sided limit does not exist – even though $C(2) = 7$ is defined. The graph has a jump at $t = 2$.\n\n(d) For all $t$ near 1.5 (between 1 and 2) the charge is constantly \\$7, so both one-sided limits are 7 and\n$$\\lim_{t \\to 1.5} C(t) = 7$$",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-piecewise-functions"
+  ]
+ },
+ {
+  "id": "calc-limits-q13",
+  "topicId": "calc-limits",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A ball is thrown straight up. Its height after $t$ seconds is $s(t) = 64t - 16t^2$ feet.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the average velocity of the ball between $t = 1$ and $t = 1 + h$ is $32 - 16h$ feet per second."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the average velocity for $h = 0.1$, $h = 0.01$ and $h = 0.001$."
+   },
+   {
+    "label": "c",
+    "prompt": "Use a limit to find the instantaneous velocity of the ball at $t = 1$. Include units."
+   }
+  ],
+  "hint": "Average velocity $= \\dfrac{\\text{change in height}}{\\text{change in time}} = \\dfrac{s(1 + h) - s(1)}{h}$.",
+  "answer": "(a) Shown (b) 30.4, 31.84, 31.984 ft/s (c) 32 ft/s (upward)",
+  "solution": "(a) $s(1) = 64 - 16 = 48$.\n$$s(1 + h) = 64(1 + h) - 16(1 + h)^2 = 64 + 64h - 16 - 32h - 16h^2 = 48 + 32h - 16h^2$$\n\nAverage velocity:\n$$\\frac{s(1 + h) - s(1)}{h} = \\frac{32h - 16h^2}{h} = 32 - 16h \\quad (h \\ne 0)$$\n\n(b) $h = 0.1$: $32 - 1.6 = 30.4$ ft/s\n\n$h = 0.01$: $32 - 0.16 = 31.84$ ft/s\n\n$h = 0.001$: $32 - 0.016 = 31.984$ ft/s\n\n(c) The instantaneous velocity is the limit of the average velocity as the time interval shrinks to zero:\n$$\\lim_{h \\to 0} (32 - 16h) = 32$$\n\nAt $t = 1$ the ball is rising at **32 feet per second**. Note that we could not put $h = 0$ into $\\frac{s(1 + h) - s(1)}{h}$ directly – that gives $\\frac{0}{0}$ – which is why we simplify first.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q14",
+  "topicId": "calc-limits",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The constant $a$ is chosen so that $\\displaystyle\\lim_{x \\to 2} \\frac{x^2 + ax - 6}{x - 2}$ exists (as a finite number).\n\nFind $a$ and the value of the limit, and explain why the limit does not exist for any other value of $a$.",
+  "hint": "The denominator $\\to 0$. What must the numerator do as $x \\to 2$ for the limit to have a chance of being finite?",
+  "answer": "$a = 1$, and the limit is $5$.",
+  "solution": "As $x \\to 2$, the denominator $x - 2 \\to 0$.\n\nIf the numerator tended to a **nonzero** number $k$, we would have $\\frac{k}{0}$: the function would grow without bound (with opposite signs on each side), so the limit would not exist.\n\nSo the numerator must also tend to 0:\n$$2^2 + 2a - 6 = 0 \\quad\\Rightarrow\\quad 2a = 2 \\quad\\Rightarrow\\quad a = 1$$\n\nWith $a = 1$:\n$$\\frac{x^2 + x - 6}{x - 2} = \\frac{(x - 2)(x + 3)}{x - 2} = x + 3 \\quad (x \\ne 2)$$\n$$\\lim_{x \\to 2} (x + 3) = 5$$\n\nFor any $a \\ne 1$ the numerator tends to $2a - 2 \\ne 0$ while the denominator tends to 0, so the one-sided limits are $\\pm\\infty$ and the limit does not exist.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-q15",
+  "topicId": "calc-limits",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find the exact value of\n$$\\lim_{x \\to 0} \\frac{\\sqrt{1 + x} - \\sqrt[3]{1 + x}}{x}$$",
+  "hint": "Subtract and add 1 in the numerator to split it into two limits. For the cube-root part, let $u = \\sqrt[3]{1 + x}$ and use $u^3 - 1 = (u - 1)(u^2 + u + 1)$.",
+  "answer": "$\\dfrac{1}{6}$",
+  "solution": "Direct substitution gives $\\frac{1 - 1}{0} = \\frac{0}{0}$. Split the numerator by subtracting and adding 1:\n$$\\frac{\\sqrt{1 + x} - \\sqrt[3]{1 + x}}{x} = \\frac{\\sqrt{1 + x} - 1}{x} - \\frac{\\sqrt[3]{1 + x} - 1}{x}$$\n\n**Square-root part.** Multiply by the conjugate:\n$$\\frac{\\sqrt{1 + x} - 1}{x} \\cdot \\frac{\\sqrt{1 + x} + 1}{\\sqrt{1 + x} + 1} = \\frac{x}{x\\left(\\sqrt{1 + x} + 1\\right)} = \\frac{1}{\\sqrt{1 + x} + 1} \\to \\frac{1}{2}$$\n\n**Cube-root part.** Let $u = \\sqrt[3]{1 + x}$, so $u^3 = 1 + x$ and $x = u^3 - 1 = (u - 1)(u^2 + u + 1)$. Then\n$$\\frac{\\sqrt[3]{1 + x} - 1}{x} = \\frac{u - 1}{(u - 1)(u^2 + u + 1)} = \\frac{1}{u^2 + u + 1}$$\nAs $x \\to 0$, $u \\to 1$, so this tends to $\\frac{1}{3}$.\n\nBoth limits exist, so the limit of the difference is the difference of the limits:\n$$\\lim_{x \\to 0} \\frac{\\sqrt{1 + x} - \\sqrt[3]{1 + x}}{x} = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "calc-limits-q16",
+  "topicId": "calc-limits",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Evaluate\n$$\\lim_{x \\to 2} \\frac{x^3 - 3x^2 + 4}{x^3 - 2x^2 - 4x + 8}$$",
+  "hint": "Both cubics are 0 at $x = 2$, so $(x - 2)$ is a factor of each. Use synthetic division (or grouping) to factor them completely – the factor $(x - 2)$ may appear more than once.",
+  "answer": "$\\dfrac{3}{4}$",
+  "solution": "Substituting $x = 2$: numerator $8 - 12 + 4 = 0$, denominator $8 - 8 - 8 + 8 = 0$. So $\\frac{0}{0}$, and $(x - 2)$ is a factor of both.\n\n**Numerator:** synthetic division of $x^3 - 3x^2 + 0x + 4$ by $x - 2$:\n$$\\begin{array}{r|rrrr} 2 & 1 & -3 & 0 & 4 \\\\ & & 2 & -2 & -4 \\\\ \\hline & 1 & -1 & -2 & 0 \\end{array}$$\nSo $x^3 - 3x^2 + 4 = (x - 2)(x^2 - x - 2) = (x - 2)(x - 2)(x + 1) = (x - 2)^2(x + 1)$.\n\n**Denominator:** by grouping,\n$$x^3 - 2x^2 - 4x + 8 = x^2(x - 2) - 4(x - 2) = (x - 2)(x^2 - 4) = (x - 2)^2(x + 2)$$\n\nFor $x \\ne 2$:\n$$\\frac{(x - 2)^2(x + 1)}{(x - 2)^2(x + 2)} = \\frac{x + 1}{x + 2}$$\n\n$$\\lim_{x \\to 2} \\frac{x + 1}{x + 2} = \\frac{3}{4}$$\n\n(If you cancel only one factor of $(x - 2)$, you get $\\frac{0}{0}$ again – a sign that another common factor remains.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "alg-synthetic-division",
+   "pure-polynomials-factor-theorem"
+  ]
+ },
+ {
+  "id": "calc-limits-q17",
+  "topicId": "calc-limits",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $n$ be a positive integer.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "By considering the sum of the geometric series $1 + x + x^2 + \\cdots + x^{n-1}$, show that $\\displaystyle\\lim_{x \\to 1} \\frac{x^n - 1}{x - 1} = n$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find $\\displaystyle\\lim_{x \\to 1} \\frac{x^{12} - 1}{x^4 - 1}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 1} \\frac{x + x^2 + x^3 + \\cdots + x^{n} - n}{x - 1}$ in terms of $n$."
+   }
+  ],
+  "hint": "For $x \\ne 1$, $1 + x + \\cdots + x^{n-1} = \\dfrac{x^n - 1}{x - 1}$. For (b), divide the top and bottom by $x - 1$. For (c), write $-n$ as $-1 - 1 - \\cdots - 1$ and pair each $-1$ with a power of $x$.",
+  "answer": "(a) Shown (b) $3$ (c) $\\dfrac{n(n + 1)}{2}$",
+  "solution": "(a) The geometric series has first term 1, ratio $x$ and $n$ terms, so for $x \\ne 1$:\n$$1 + x + x^2 + \\cdots + x^{n-1} = \\frac{x^n - 1}{x - 1}$$\n\nSo the fraction (which gives $\\frac{0}{0}$ at $x = 1$) equals a polynomial for $x \\ne 1$, and\n$$\\lim_{x \\to 1} \\frac{x^n - 1}{x - 1} = \\lim_{x \\to 1}\\left(1 + x + \\cdots + x^{n-1}\\right) = \\underbrace{1 + 1 + \\cdots + 1}_{n \\text{ terms}} = n$$\n\n(b) Divide the numerator and denominator by $x - 1$ (valid for $x \\ne 1$):\n$$\\frac{x^{12} - 1}{x^4 - 1} = \\frac{\\;\\frac{x^{12} - 1}{x - 1}\\;}{\\;\\frac{x^4 - 1}{x - 1}\\;} \\to \\frac{12}{4} = 3$$\nusing (a) with $n = 12$ and $n = 4$ (the denominator limit, 4, is not 0, so the quotient law applies).\n\n(c) Write $-n$ as $n$ lots of $-1$:\n$$\\frac{x + x^2 + \\cdots + x^n - n}{x - 1} = \\frac{x - 1}{x - 1} + \\frac{x^2 - 1}{x - 1} + \\cdots + \\frac{x^n - 1}{x - 1}$$\n\nBy (a), the $k$th fraction tends to $k$, so the limit is\n$$1 + 2 + 3 + \\cdots + n = \\frac{n(n + 1)}{2}$$\n(the sum of an arithmetic series).",
+  "linkedTopicIds": [
+   "pure-geometric-series",
+   "pure-arithmetic-series"
+  ]
+ },
+ {
+  "id": "calc-limits-q18",
+  "topicId": "calc-limits",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The graph of the function $f$ on $-2 \\le x \\le 6$ consists of three line segments and the isolated point $(1, 1)$, as shown. Open circles show points that are **not** on the graph.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 1} f(x)$ and $f(1)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 3^-} f(x)$ and $\\displaystyle\\lim_{x \\to 3^+} f(x)$. Does $\\displaystyle\\lim_{x \\to 3} f(x)$ exist? Justify your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 4} \\frac{f(x) - 2}{x - 4}$. Show the work that leads to your answer.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 0} f\\left(3 - x^2\\right)$. Justify your answer.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "calculator": false,
+  "hint": "Read the limits from the segments the graph approaches, not from the dots. For (c), find the equation of the segment through $x = 4$. For (d), think about whether $3 - x^2$ is a bit less than or a bit more than 3 when $x$ is near 0.",
+  "answer": "(a) $\\lim_{x \\to 1} f(x) = 3$, $f(1) = 1$ (b) $3$ and $1$; the limit does not exist because the one-sided limits differ. (c) $1$ (d) $3$",
+  "solution": "(a) From both sides the graph approaches the open circle at height 3:\n$$\\lim_{x \\to 1} f(x) = 3 \\quad \\text{(1 pt)}$$\nThe filled point gives $f(1) = 1$ (1 pt). The limit is not equal to $f(1)$.\n\n(b) From the left the horizontal segment gives $\\displaystyle\\lim_{x \\to 3^-} f(x) = 3$; from the right the rising segment approaches the open circle, $\\displaystyle\\lim_{x \\to 3^+} f(x) = 1$. (1 pt)\n\n$\\displaystyle\\lim_{x \\to 3} f(x)$ does not exist because $\\displaystyle\\lim_{x \\to 3^-} f(x) \\ne \\lim_{x \\to 3^+} f(x)$. (1 pt: answer with reason)\n\n(c) For $3 < x \\le 6$ the segment joins $(3, 1)$ to $(6, 4)$: slope $\\frac{4 - 1}{6 - 3} = 1$, so $f(x) = x - 2$. (1 pt)\n\nFor $x$ near 4 ($x \\ne 4$):\n$$\\frac{f(x) - 2}{x - 4} = \\frac{(x - 2) - 2}{x - 4} = \\frac{x - 4}{x - 4} = 1$$\nso $\\displaystyle\\lim_{x \\to 4} \\frac{f(x) - 2}{x - 4} = 1$. (1 pt)\n\n(d) As $x \\to 0$ with $x \\ne 0$, $x^2 > 0$, so $u = 3 - x^2$ approaches 3 **from the left** (for example $x = 0.1$ gives $u = 2.99$). (1 pt)\n\nFor $1 < u < 3$, $f(u) = 3$, so\n$$\\lim_{x \\to 0} f\\left(3 - x^2\\right) = \\lim_{u \\to 3^-} f(u) = 3 \\quad \\text{(1 pt)}$$\n\nNote this limit exists even though $\\displaystyle\\lim_{x \\to 3} f(x)$ does not, because the input only approaches 3 from one side.",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\"><line x1=\"37.6\" y1=\"222\" x2=\"37.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"70.2\" y1=\"222\" x2=\"70.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"102.8\" y1=\"222\" x2=\"102.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"135.4\" y1=\"222\" x2=\"135.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"168\" y1=\"222\" x2=\"168\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"200.6\" y1=\"222\" x2=\"200.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"233.2\" y1=\"222\" x2=\"233.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"265.8\" y1=\"222\" x2=\"265.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"298.4\" y1=\"222\" x2=\"298.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"215.6\" x2=\"318\" y2=\"215.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"183.4\" x2=\"318\" y2=\"183.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"151.2\" x2=\"318\" y2=\"151.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"119\" x2=\"318\" y2=\"119\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"86.8\" x2=\"318\" y2=\"86.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"54.6\" x2=\"318\" y2=\"54.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"22.4\" x2=\"318\" y2=\"22.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"183.4\" x2=\"324\" y2=\"183.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"102.8\" y1=\"222\" x2=\"102.8\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M324,183.4 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M102.8,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"324\" y=\"176.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"109.8\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"37.6\" y1=\"180.4\" x2=\"37.6\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"37.6\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"70.2\" y1=\"180.4\" x2=\"70.2\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"70.2\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"135.4\" y1=\"180.4\" x2=\"135.4\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"135.4\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"168\" y1=\"180.4\" x2=\"168\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"168\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"200.6\" y1=\"180.4\" x2=\"200.6\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"200.6\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"233.2\" y1=\"180.4\" x2=\"233.2\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"233.2\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"265.8\" y1=\"180.4\" x2=\"265.8\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"265.8\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"298.4\" y1=\"180.4\" x2=\"298.4\" y2=\"186.4\" stroke=\"currentColor\"/><text x=\"298.4\" y=\"198.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"99.8\" y1=\"215.6\" x2=\"105.8\" y2=\"215.6\" stroke=\"currentColor\"/><text x=\"96.8\" y=\"219.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"99.8\" y1=\"151.2\" x2=\"105.8\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"96.8\" y=\"155.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"99.8\" y1=\"119\" x2=\"105.8\" y2=\"119\" stroke=\"currentColor\"/><text x=\"96.8\" y=\"123\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"99.8\" y1=\"86.8\" x2=\"105.8\" y2=\"86.8\" stroke=\"currentColor\"/><text x=\"96.8\" y=\"90.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"99.8\" y1=\"54.6\" x2=\"105.8\" y2=\"54.6\" stroke=\"currentColor\"/><text x=\"96.8\" y=\"58.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"96.8\" y=\"197.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M37.6,183.4 L132.5,89.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"37.6\" cy=\"183.4\" r=\"4\" fill=\"currentColor\"/><circle cx=\"135.4\" cy=\"86.8\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"135.4\" cy=\"151.2\" r=\"4\" fill=\"currentColor\"/><path d=\"M139.4,86.8 L200.6,86.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"200.6\" cy=\"86.8\" r=\"4\" fill=\"currentColor\"/><path d=\"M203.5,148.4 L298.4,54.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"200.6\" cy=\"151.2\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"298.4\" cy=\"54.6\" r=\"4\" fill=\"currentColor\"/><text x=\"266.3\" y=\"74.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = f(x)</text></svg>",
+  "linkedTopicIds": []
+ }
+]
