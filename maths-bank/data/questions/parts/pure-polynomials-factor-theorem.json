@@ -1,0 +1,298 @@
+[
+ {
+  "id": "pure-polynomials-factor-theorem-q01",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 - 4x^2 + x + 6$\n\nUse the factor theorem to show that $(x - 2)$ is a factor of $f(x)$.",
+  "hint": "$(x - a)$ is a factor if $f(a) = 0$. What value of $x$ makes $x - 2 = 0$?",
+  "answer": "$f(2) = 8 - 16 + 2 + 6 = 0$, so $(x - 2)$ is a factor.",
+  "solution": "By the factor theorem, $(x - 2)$ is a factor of $f(x)$ if and only if $f(2) = 0$.\n\n$$f(2) = 2^3 - 4(2)^2 + 2 + 6 = 8 - 16 + 2 + 6 = 0$$\n\n$f(2) = 0$, so $(x - 2)$ is a factor of $f(x)$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q02",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 - 4x^2 + x + 6$\n\nDetermine whether $(x + 2)$ is a factor of $f(x)$. If it is not, state the remainder when $f(x)$ is divided by $(x + 2)$.",
+  "hint": "Only the sign in the bracket has changed. Which value of $x$ makes $x + 2 = 0$?",
+  "answer": "$f(-2) = -20 \\ne 0$, so $(x + 2)$ is not a factor; the remainder is $-20$.",
+  "solution": "**What changed:** the bracket is $(x + 2)$ instead of $(x - 2)$, so we evaluate $f(-2)$, not $f(2)$.\n\n$x + 2 = 0 \\Rightarrow x = -2$:\n$$f(-2) = (-2)^3 - 4(-2)^2 + (-2) + 6 = -8 - 16 - 2 + 6 = -20$$\n\n$f(-2) \\ne 0$, so $(x + 2)$ is **not** a factor. By the remainder theorem, the remainder on dividing by $(x + 2)$ is $f(-2) = -20$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q03",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 - 4x^2 + x + 6$\n\nFind the remainder when $f(x)$ is divided by $(x - 4)$.",
+  "hint": "Remainder theorem: dividing by $(x - a)$ leaves remainder $f(a)$.",
+  "answer": "$10$",
+  "solution": "**What changed:** the number in the bracket, now 4.\n\nRemainder $= f(4)$:\n$$f(4) = 64 - 4(16) + 4 + 6 = 64 - 64 + 4 + 6 = 10$$\n\nThe remainder is **10**. (So $f(x) = (x - 4) \\times (\\text{a quadratic}) + 10$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q04",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$f(x) = x^3 - 4x^2 + x + 6$\n\nFind the remainder when $f(x)$ is divided by $(2x - 1)$.",
+  "hint": "Solve $2x - 1 = 0$ to find which value to substitute. It is not 1 or 2.",
+  "answer": "$\\dfrac{45}{8}$",
+  "solution": "**What changed:** the coefficient of $x$ in the bracket is now 2.\n\n$2x - 1 = 0 \\Rightarrow x = \\frac{1}{2}$, so the remainder is $f\\left(\\frac{1}{2}\\right)$:\n$$f\\left(\\tfrac{1}{2}\\right) = \\frac{1}{8} - 4 \\times \\frac{1}{4} + \\frac{1}{2} + 6 = \\frac{1}{8} - 1 + \\frac{1}{2} + 6 = \\frac{45}{8}$$\n\nThe remainder is $\\dfrac{45}{8}$ $(= 5.625)$.\n\n(Evaluating $f(1) = 4$ or $f(2) = 0$ would be wrong: the value to use is the one that makes the **bracket** zero.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q05",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Use algebraic division to divide $x^3 - 13x - 12$ by $(x + 1)$.\n\n(b) Hence factorise $x^3 - 13x - 12$ completely.",
+  "hint": "There is no $x^2$ term, so write the cubic as $x^3 + 0x^2 - 13x - 12$ before dividing.",
+  "answer": "(a) $x^3 - 13x - 12 = (x + 1)(x^2 - x - 12)$, remainder 0 (b) $(x + 1)(x - 4)(x + 3)$",
+  "solution": "**(a)** Write in a placeholder for the missing term: $x^3 + 0x^2 - 13x - 12$.\n\n$x^3 \\div x = x^2$; $x^2(x + 1) = x^3 + x^2$; subtract: $(x^3 + 0x^2) - (x^3 + x^2) = -x^2$. Bring down $-13x$: $-x^2 - 13x$.\n\n$-x^2 \\div x = -x$; $-x(x + 1) = -x^2 - x$; subtract: $-12x$. Bring down $-12$: $-12x - 12$.\n\n$-12x \\div x = -12$; $-12(x + 1) = -12x - 12$; subtract: $0$.\n\nSo\n$$x^3 - 13x - 12 = (x + 1)(x^2 - x - 12)$$\nwith remainder 0.\n\n**(b)** The quadratic factor also factorises: $x^2 - x - 12 = (x - 4)(x + 3)$. So\n$$x^3 - 13x - 12 = (x + 1)(x - 4)(x + 3)$$\n\nCheck: $f(4) = 64 - 52 - 12 = 0$ ✓",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q06",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "(a) Use long division to find the quotient and remainder when $2x^3 + 3x^2 - 4$ is divided by $(x + 2)$.\n\n(b) Write $2x^3 + 3x^2 - 4$ in the form $(x + 2)Q(x) + R$.\n\n(c) Use the remainder theorem to check your remainder.",
+  "hint": "Include $0x$ for the missing $x$ term: $2x^3 + 3x^2 + 0x - 4$.",
+  "answer": "(a) Quotient $2x^2 - x + 2$, remainder $-8$ (b) $2x^3 + 3x^2 - 4 = (x + 2)(2x^2 - x + 2) - 8$ (c) $f(-2) = -16 + 12 - 4 = -8$ ✓",
+  "solution": "**(a)** Write $2x^3 + 3x^2 + 0x - 4$.\n\n$2x^3 \\div x = 2x^2$; $2x^2(x + 2) = 2x^3 + 4x^2$; subtract: $-x^2$. Bring down $0x$: $-x^2 + 0x$.\n\n$-x^2 \\div x = -x$; $-x(x + 2) = -x^2 - 2x$; subtract: $2x$. Bring down $-4$: $2x - 4$.\n\n$2x \\div x = 2$; $2(x + 2) = 2x + 4$; subtract: $-8$.\n\nQuotient $2x^2 - x + 2$, remainder $-8$.\n\n**(b)**\n$$2x^3 + 3x^2 - 4 = (x + 2)(2x^2 - x + 2) - 8$$\n\n**(c)** Let $f(x) = 2x^3 + 3x^2 - 4$. The remainder on dividing by $(x + 2)$ is\n$$f(-2) = 2(-8) + 3(4) - 4 = -16 + 12 - 4 = -8 \\text{ ✓}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q07",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leo is asked to use algebraic division to show that $(x - 2)$ is a factor of $f(x) = x^3 - 19x + 30$. His working is shown below.\n\nStep 1: $x^3 \\div x = x^2$, and $x^2(x - 2) = x^3 - 2x^2$.\nStep 2: Subtract from $x^3 - 19x$: $(x^3 - 19x) - (x^3 - 2x^2) = -17x$.\nStep 3: Bring down $+30$ to get $-17x + 30$. $-17x \\div x = -17$, and $-17(x - 2) = -17x + 34$.\nStep 4: Subtract: $(-17x + 30) - (-17x + 34) = -4$.\n\n\"The remainder is $-4$, so $(x - 2)$ is not a factor.\"\n\n(a) Explain how you can tell, without dividing, that Leo's conclusion is wrong.\n\n(b) Identify the step containing Leo's error and explain the mistake.\n\n(c) Carry out the division correctly and hence factorise $f(x)$ fully.",
+  "hint": "Work out $f(2)$. Then look at Step 2: are $-19x$ and $-2x^2$ like terms?",
+  "answer": "(a) $f(2) = 8 - 38 + 30 = 0$, so $(x - 2)$ is a factor. (b) Step 2: he combined $-19x$ with $+2x^2$ as if they were like terms, because there was no $0x^2$ placeholder. (c) $f(x) = (x - 2)(x^2 + 2x - 15) = (x - 2)(x + 5)(x - 3)$",
+  "solution": "**(a)** By the factor theorem, $f(2) = 8 - 38 + 30 = 0$, so $(x - 2)$ **is** a factor and the remainder must be 0.\n\n**(b)** The error is in **Step 2**. $f(x)$ has no $x^2$ term, so it should be written $x^3 + 0x^2 - 19x + 30$. Subtracting $x^3 - 2x^2$ gives\n$$(x^3 + 0x^2) - (x^3 - 2x^2) = 2x^2$$\nLeo instead subtracted $-2x^2$ from $-19x$, treating $x^2$ and $x$ terms as like terms, so all his later columns are misaligned.\n\n**(c)** $x^3 + 0x^2 - 19x + 30$ divided by $(x - 2)$:\n\n$x^3 \\div x = x^2$; $x^2(x - 2) = x^3 - 2x^2$; subtract: $2x^2$. Bring down $-19x$: $2x^2 - 19x$.\n\n$2x^2 \\div x = 2x$; $2x(x - 2) = 2x^2 - 4x$; subtract: $-15x$. Bring down $+30$: $-15x + 30$.\n\n$-15x \\div x = -15$; $-15(x - 2) = -15x + 30$; subtract: $0$ ✓\n\nSo $f(x) = (x - 2)(x^2 + 2x - 15)$, and $x^2 + 2x - 15 = (x + 5)(x - 3)$:\n$$f(x) = (x - 2)(x + 5)(x - 3)$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q08",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to show that $(3x - 2)$ is a factor of $f(x) = 3x^3 - 2x^2 - 12x + 8$.\n\nPriya writes:\n$$f(2) = 3(8) - 2(4) - 12(2) + 8 = 24 - 8 - 24 + 8 = 0$$\n\"So $(3x - 2)$ is a factor.\"\n\n(a) Explain what Priya has actually shown.\n\n(b) Show correctly that $(3x - 2)$ is a factor of $f(x)$.\n\n(c) Hence factorise $f(x)$ fully.",
+  "hint": "Which value of $x$ makes $3x - 2 = 0$? And what does $f(2) = 0$ tell you about a different bracket?",
+  "answer": "(a) $f(2) = 0$ shows that $(x - 2)$ is a factor, not $(3x - 2)$. (b) $f\\left(\\frac{2}{3}\\right) = \\frac{8}{9} - \\frac{8}{9} - 8 + 8 = 0$. (c) $f(x) = (3x - 2)(x - 2)(x + 2)$",
+  "solution": "**(a)** $f(2) = 0$ means $x = 2$ is a root, so $(x - 2)$ is a factor. It says nothing directly about $(3x - 2)$: Priya used the number in the bracket instead of the root of the bracket.\n\n**(b)** $3x - 2 = 0 \\Rightarrow x = \\frac{2}{3}$:\n$$f\\left(\\tfrac{2}{3}\\right) = 3 \\times \\frac{8}{27} - 2 \\times \\frac{4}{9} - 12 \\times \\frac{2}{3} + 8 = \\frac{8}{9} - \\frac{8}{9} - 8 + 8 = 0$$\nso $(3x - 2)$ is a factor.\n\n**(c)** Grouping (or dividing by $(3x - 2)$):\n$$f(x) = x^2(3x - 2) - 4(3x - 2) = (3x - 2)(x^2 - 4) = (3x - 2)(x - 2)(x + 2)$$\n\n(Priya's $f(2) = 0$ is consistent with this: $(x - 2)$ is indeed one of the factors.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q09",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "$f(x) = x^3 + 4x^2 + x - 6$\n\nJamal works out $f(-3) = 0$. He says: \"So $(x - 3)$ is a factor of $f(x)$.\"\n\n(a) Is Jamal correct? Explain your answer.\n\n(b) Factorise $f(x)$ fully.",
+  "hint": "If $f(a) = 0$, the factor is the bracket that equals zero when $x = a$.",
+  "answer": "(a) No. $f(-3) = 0$ means $(x + 3)$ is a factor; in fact $f(3) = 60 \\ne 0$, so $(x - 3)$ is not. (b) $f(x) = (x + 3)(x - 1)(x + 2)$",
+  "solution": "**(a)** Jamal is **not** correct. $(x - a)$ is a factor when $f(a) = 0$. With $a = -3$ the factor is\n$$(x - (-3)) = (x + 3)$$\n\nChecking his claim directly: $f(3) = 27 + 36 + 3 - 6 = 60 \\ne 0$, so $(x - 3)$ is not a factor.\n\n**(b)** Divide by $(x + 3)$ (or compare coefficients):\n$$x^3 + 4x^2 + x - 6 = (x + 3)(x^2 + x - 2)$$\n(check: $(x + 3)(x^2 + x - 2) = x^3 + x^2 - 2x + 3x^2 + 3x - 6 = x^3 + 4x^2 + x - 6$ ✓)\n\n$x^2 + x - 2 = (x - 1)(x + 2)$, so\n$$f(x) = (x + 3)(x - 1)(x + 2)$$",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q10",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "$f(x) = x^3 + bx^2 + cx + d$, where $b$, $c$ and $d$ are integers.\n\n(a) Prove that if $n$ is an integer with $f(n) = 0$, then $d$ is a multiple of $n$.\n\n(b) Hence show that $g(x) = x^3 + x^2 + x + 3$ has no factor of the form $(x - n)$ where $n$ is an integer.",
+  "hint": "(a) Write out $f(n) = 0$ and make $d$ the subject. (b) By part (a), which integers are the only candidates for $n$?",
+  "answer": "(a) $f(n) = 0 \\Rightarrow d = -n(n^2 + bn + c)$, and $n^2 + bn + c$ is an integer, so $d$ is a multiple of $n$. (b) Any integer root must divide 3, so $n \\in \\{\\pm 1, \\pm 3\\}$; but $g(1) = 6$, $g(-1) = 2$, $g(3) = 42$, $g(-3) = -18$, none zero.",
+  "solution": "**(a)** Suppose $n$ is an integer with $f(n) = 0$:\n$$n^3 + bn^2 + cn + d = 0 \\Rightarrow d = -n^3 - bn^2 - cn = n(-n^2 - bn - c)$$\n\n$b$, $c$ and $n$ are integers, so $-n^2 - bn - c$ is an integer. Hence $d$ is a multiple of $n$. $\\blacksquare$\n\n**(b)** For $g$, $d = 3$. If $(x - n)$ were a factor with $n$ an integer, then $g(n) = 0$, so by (a) 3 is a multiple of $n$: $n$ is one of $1, -1, 3, -3$.\n\nTest them all (proof by exhaustion):\n$$g(1) = 1 + 1 + 1 + 3 = 6$$\n$$g(-1) = -1 + 1 - 1 + 3 = 2$$\n$$g(3) = 27 + 9 + 3 + 3 = 42$$\n$$g(-3) = -27 + 9 - 3 + 3 = -18$$\n\nNone is zero, so $g(x)$ has no factor $(x - n)$ with $n$ an integer. $\\blacksquare$\n\n(This is why, when factorising a cubic with leading coefficient 1, you only need to try factors of the constant term.)",
+  "linkedTopicIds": [
+   "pure-proof"
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q11",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 9,
+  "question": "$f(x) = 2x^3 + ax^2 + bx - 6$, where $a$ and $b$ are constants.\n\nGiven that $(x + 2)$ is a factor of $f(x)$, and that when $f(x)$ is divided by $(x - 2)$ the remainder is 12,",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "find the value of $a$ and the value of $b$.",
+    "marks": 5
+   },
+   {
+    "label": "b",
+    "prompt": "Hence factorise $f(x)$ completely.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Write down the solutions of $f(x) = 0$.",
+    "marks": 1
+   }
+  ],
+  "hint": "Factor theorem: $f(-2) = 0$. Remainder theorem: $f(2) = 12$. Solve the two equations simultaneously.",
+  "answer": "(a) $a = 3$, $b = -5$ (b) $f(x) = (x + 2)(x + 1)(2x - 3)$ (c) $x = -2, -1, \\frac{3}{2}$",
+  "solution": "**(a)** $f(-2) = 0$: M1\n$$2(-8) + 4a - 2b - 6 = 0 \\Rightarrow 4a - 2b = 22 \\Rightarrow 2a - b = 11$$ A1\n\n$f(2) = 12$: M1\n$$16 + 4a + 2b - 6 = 12 \\Rightarrow 4a + 2b = 2 \\Rightarrow 2a + b = 1$$ A1\n\nAdding: $4a = 12$, so $a = 3$ and $b = 1 - 6 = -5$. A1\n\n**(b)** $f(x) = 2x^3 + 3x^2 - 5x - 6$. Divide by $(x + 2)$: M1\n$$f(x) = (x + 2)(2x^2 - x - 3)$$ A1\n$$= (x + 2)(x + 1)(2x - 3)$$ A1\n\n(Check: $(x + 2)(2x^2 - x - 3) = 2x^3 - x^2 - 3x + 4x^2 - 2x - 6 = 2x^3 + 3x^2 - 5x - 6$ ✓)\n\n**(c)** $x = -2$, $x = -1$, $x = \\frac{3}{2}$ B1",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q12",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "question": "$f(x) = 2x^3 - 7x^2 + 7x - 2$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use the factor theorem to show that $(2x - 1)$ is a factor of $f(x)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Factorise $f(x)$ completely.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence solve the equation $2(8^y) - 7(4^y) + 7(2^y) - 2 = 0$.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Evaluate $f\\left(\\frac{1}{2}\\right)$. (c) $8^y = (2^y)^3$ and $4^y = (2^y)^2$, so the equation is $f(2^y) = 0$.",
+  "answer": "(a) $f\\left(\\frac{1}{2}\\right) = 0$ (b) $(2x - 1)(x - 1)(x - 2)$ (c) $y = -1, 0, 1$",
+  "solution": "**(a)**\n$$f\\left(\\tfrac{1}{2}\\right) = 2 \\times \\frac{1}{8} - 7 \\times \\frac{1}{4} + 7 \\times \\frac{1}{2} - 2 = \\frac{1}{4} - \\frac{7}{4} + \\frac{7}{2} - 2 = 0$$\nM1 (attempting $f\\left(\\frac{1}{2}\\right)$)\n\n$f\\left(\\frac{1}{2}\\right) = 0$, so $(2x - 1)$ is a factor. A1\n\n**(b)** Divide by $(2x - 1)$ or compare coefficients in $f(x) \\equiv (2x - 1)(px^2 + qx + r)$: $p = 1$, $r = 2$, and the $x^2$ coefficient gives $2q - 1 = -7$, so $q = -3$. M1\n$$f(x) = (2x - 1)(x^2 - 3x + 2)$$ A1\n$$= (2x - 1)(x - 1)(x - 2)$$ A1\n\n**(c)** Let $x = 2^y$. Then $8^y = (2^3)^y = (2^y)^3 = x^3$ and $4^y = x^2$, so the equation is $f(x) = 0$. M1\n\n$x = \\frac{1}{2}$, $1$ or $2$, i.e. $2^y = 2^{-1}, 2^0, 2^1$ M1\n\n$$y = -1, \\quad y = 0, \\quad y = 1$$ A1",
+  "linkedTopicIds": [
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q13",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A small gift box is a cuboid. Its width is $x$ cm, its depth is $(x + 1)$ cm and its length is $(x + 4)$ cm. Its volume is $84\\ \\text{cm}^3$.\n\n(a) Show that $x^3 + 5x^2 + 4x - 84 = 0$.\n\n(b) Show that $x = 3$ is a solution of this equation.\n\n(c) Show that there are no other real solutions, and write down the dimensions of the box.",
+  "hint": "(a) Volume = width × depth × length. (c) Divide by $(x - 3)$ and look at the discriminant of the quadratic factor.",
+  "answer": "(a) $x(x + 1)(x + 4) = x^3 + 5x^2 + 4x = 84$ (b) $27 + 45 + 12 - 84 = 0$ (c) $(x - 3)(x^2 + 8x + 28)$; the quadratic has discriminant $-48 < 0$. The box is 3 cm by 4 cm by 7 cm.",
+  "solution": "**(a)**\n$$x(x + 1)(x + 4) = x(x^2 + 5x + 4) = x^3 + 5x^2 + 4x$$\nSetting this equal to 84: $x^3 + 5x^2 + 4x - 84 = 0$.\n\n**(b)** Let $f(x) = x^3 + 5x^2 + 4x - 84$:\n$$f(3) = 27 + 45 + 12 - 84 = 0$$\nso $x = 3$ is a solution (and $(x - 3)$ is a factor).\n\n**(c)** Dividing by $(x - 3)$:\n$$x^3 + 5x^2 + 4x - 84 = (x - 3)(x^2 + 8x + 28)$$\n(check: $x^3 + 8x^2 + 28x - 3x^2 - 24x - 84$ ✓)\n\nFor $x^2 + 8x + 28$: $b^2 - 4ac = 64 - 112 = -48 < 0$, so it has no real roots.\n\nThe only real solution is $x = 3$, and the box measures **3 cm by 4 cm by 7 cm** (volume $3 \\times 4 \\times 7 = 84\\ \\text{cm}^3$ ✓).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q14",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "An open box is made from a rectangular sheet of card 20 cm by 12 cm. A square of side $x$ cm is cut from each corner and the sides are folded up.\n\n(a) Show that the volume of the box, $V\\ \\text{cm}^3$, is $V = 4x^3 - 64x^2 + 240x$.\n\n(b) Explain why $0 < x < 6$.\n\n(c) The volume of the box is $256\\ \\text{cm}^3$. Find all the possible values of $x$, giving exact answers.",
+  "hint": "The base is $(20 - 2x)$ by $(12 - 2x)$. For (c), divide the cubic by 4 and look for a small integer root.",
+  "answer": "(a) $V = x(20 - 2x)(12 - 2x)$ (b) the width $12 - 2x$ must be positive (and $x > 0$) (c) $x = 2$ or $x = 7 - \\sqrt{17}$ $(\\approx 2.88)$",
+  "solution": "**(a)** After cutting and folding, the base is $(20 - 2x)$ by $(12 - 2x)$ and the height is $x$:\n$$V = x(20 - 2x)(12 - 2x) = x(240 - 64x + 4x^2) = 4x^3 - 64x^2 + 240x$$\n\n**(b)** $x$ is a length, so $x > 0$; the base width $12 - 2x$ must be positive, so $x < 6$.\n\n**(c)**\n$$4x^3 - 64x^2 + 240x = 256 \\Rightarrow x^3 - 16x^2 + 60x - 64 = 0$$\n\nTry factors of 64: $f(2) = 8 - 64 + 120 - 64 = 0$, so $(x - 2)$ is a factor.\n\nDividing:\n$$x^3 - 16x^2 + 60x - 64 = (x - 2)(x^2 - 14x + 32)$$\n\nSolve $x^2 - 14x + 32 = 0$:\n$$x = \\frac{14 \\pm \\sqrt{196 - 128}}{2} = \\frac{14 \\pm \\sqrt{68}}{2} = 7 \\pm \\sqrt{17}$$\n\n$7 + \\sqrt{17} \\approx 11.1$, which is not less than 6, so reject it. $7 - \\sqrt{17} \\approx 2.88$ is valid.\n\nPossible values: $x = 2$ or $x = 7 - \\sqrt{17}$.\n\nCheck $x = 2$: base $16 \\times 8$, height 2, volume 256 ✓",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q15",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "The diagram shows the curve $y = x^3 - 2x^2$ and the line $y = 5x - 6$. They meet at the points $A$, $B$ and $C$.\n\n(a) Show that the $x$-coordinates of $A$, $B$ and $C$ satisfy $x^3 - 2x^2 - 5x + 6 = 0$.\n\n(b) Find the coordinates of $A$, $B$ and $C$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 290\" width=\"320\" height=\"290\"><line x1=\"30.0\" y1=\"278.0\" x2=\"30.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"69.14\" y1=\"278.0\" x2=\"69.14\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"108.29\" y1=\"278.0\" x2=\"108.29\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"147.43\" y1=\"278.0\" x2=\"147.43\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"186.57\" y1=\"278.0\" x2=\"186.57\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"225.71\" y1=\"278.0\" x2=\"225.71\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"264.86\" y1=\"278.0\" x2=\"264.86\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"304.0\" y1=\"278.0\" x2=\"304.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"278.0\" x2=\"304.0\" y2=\"278.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"245.0\" x2=\"304.0\" y2=\"245.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"212.0\" x2=\"304.0\" y2=\"212.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"179.0\" x2=\"304.0\" y2=\"179.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"146.0\" x2=\"304.0\" y2=\"146.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"113.0\" x2=\"304.0\" y2=\"113.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"80.0\" x2=\"304.0\" y2=\"80.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"47.0\" x2=\"304.0\" y2=\"47.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"14.0\" x2=\"304.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"113.0\" x2=\"310.0\" y2=\"113.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"147.43\" y1=\"278.0\" x2=\"147.43\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 310.0 113.0 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 147.43 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"312.0\" y=\"117.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"153.43\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"30.0\" y1=\"110.0\" x2=\"30.0\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"30.0\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−3</text><line x1=\"69.14\" y1=\"110.0\" x2=\"69.14\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"69.14\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−2</text><line x1=\"108.29\" y1=\"110.0\" x2=\"108.29\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"108.29\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−1</text><line x1=\"186.57\" y1=\"110.0\" x2=\"186.57\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"186.57\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"225.71\" y1=\"110.0\" x2=\"225.71\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"225.71\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"264.86\" y1=\"110.0\" x2=\"264.86\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"264.86\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"304.0\" y1=\"110.0\" x2=\"304.0\" y2=\"116.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"304.0\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"144.43\" y1=\"278.0\" x2=\"150.43\" y2=\"278.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"144.43\" y1=\"245.0\" x2=\"150.43\" y2=\"245.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"142.43\" y=\"249.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−16</text><line x1=\"144.43\" y1=\"212.0\" x2=\"150.43\" y2=\"212.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"144.43\" y1=\"179.0\" x2=\"150.43\" y2=\"179.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"142.43\" y=\"183.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−8</text><line x1=\"144.43\" y1=\"146.0\" x2=\"150.43\" y2=\"146.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"144.43\" y1=\"80.0\" x2=\"150.43\" y2=\"80.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"144.43\" y1=\"47.0\" x2=\"150.43\" y2=\"47.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"142.43\" y=\"51.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"144.43\" y1=\"14.0\" x2=\"150.43\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"142.43\" y=\"128.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M60.8 278.0L62.5 274.8L64.2 266.7L66.0 258.9L67.7 251.3L69.4 244.0L71.1 236.9L72.8 230.1L74.5 223.5L76.2 217.2L78.0 211.1L79.7 205.3L81.4 199.6L83.1 194.2L84.8 189.0L86.5 184.1L88.2 179.3L89.9 174.7L91.7 170.4L93.4 166.2L95.1 162.3L96.8 158.5L98.5 154.9L100.2 151.5L101.9 148.3L103.6 145.2L105.3 142.3L107.1 139.6L108.8 137.0L110.5 134.6L112.2 132.4L113.9 130.3L115.6 128.3L117.3 126.5L119.0 124.8L120.8 123.3L122.5 121.8L124.2 120.5L125.9 119.4L127.6 118.3L129.3 117.3L131.0 116.5L132.8 115.8L134.5 115.1L136.2 114.6L137.9 114.1L139.6 113.7L141.3 113.4L143.0 113.2L144.7 113.1L146.4 113.0L148.2 113.0L149.9 113.1L151.6 113.2L153.3 113.3L155.0 113.6L156.7 113.8L158.4 114.1L160.2 114.5L161.9 114.8L163.6 115.2L165.3 115.7L167.0 116.1L168.7 116.5L170.4 117.0L172.1 117.5L173.8 118.0L175.6 118.5L177.3 118.9L179.0 119.4L180.7 119.8L182.4 120.3L184.1 120.7L185.8 121.1L187.6 121.5L189.3 121.8L191.0 122.1L192.7 122.3L194.4 122.5L196.1 122.7L197.8 122.7L199.5 122.8L201.2 122.8L203.0 122.7L204.7 122.5L206.4 122.2L208.1 121.9L209.8 121.5L211.5 121.0L213.2 120.4L214.9 119.8L216.7 119.0L218.4 118.1L220.1 117.1L221.8 116.0L223.5 114.8L225.2 113.4L226.9 111.9L228.7 110.3L230.4 108.6L232.1 106.7L233.8 104.7L235.5 102.6L237.2 100.2L238.9 97.8L240.6 95.2L242.3 92.4L244.1 89.4L245.8 86.3L247.5 83.0L249.2 79.5L250.9 75.9L252.6 72.0L254.3 68.0L256.1 63.8L257.8 59.3L259.5 54.7L261.2 49.9L262.9 44.8L264.6 39.5L266.3 34.0L268.0 28.3L269.8 22.4L271.5 16.2L273.2 14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><path d=\"M36.9 278.0L38.6 277.2L40.3 275.4L42.0 273.6L43.7 271.8L45.4 270.0L47.1 268.2L48.8 266.4L50.5 264.6L52.3 262.8L54.0 261.0L55.7 259.2L57.4 257.4L59.1 255.6L60.8 253.8L62.5 252.0L64.2 250.2L66.0 248.3L67.7 246.6L69.4 244.7L71.1 242.9L72.8 241.1L74.5 239.3L76.2 237.5L78.0 235.7L79.7 233.9L81.4 232.1L83.1 230.3L84.8 228.5L86.5 226.7L88.2 224.9L89.9 223.1L91.7 221.3L93.4 219.5L95.1 217.7L96.8 215.9L98.5 214.1L100.2 212.3L101.9 210.4L103.6 208.7L105.3 206.8L107.1 205.0L108.8 203.2L110.5 201.4L112.2 199.6L113.9 197.8L115.6 196.0L117.3 194.2L119.0 192.4L120.8 190.6L122.5 188.8L124.2 187.0L125.9 185.2L127.6 183.4L129.3 181.6L131.0 179.8L132.8 178.0L134.5 176.2L136.2 174.4L137.9 172.6L139.6 170.8L141.3 168.9L143.0 167.1L144.7 165.3L146.4 163.5L148.2 161.7L149.9 159.9L151.6 158.1L153.3 156.3L155.0 154.5L156.7 152.7L158.4 150.9L160.2 149.1L161.9 147.3L163.6 145.5L165.3 143.7L167.0 141.9L168.7 140.1L170.4 138.3L172.1 136.5L173.8 134.7L175.6 132.8L177.3 131.1L179.0 129.2L180.7 127.4L182.4 125.6L184.1 123.8L185.8 122.0L187.6 120.2L189.3 118.4L191.0 116.6L192.7 114.8L194.4 113.0L196.1 111.2L197.8 109.4L199.5 107.6L201.2 105.8L203.0 104.0L204.7 102.2L206.4 100.4L208.1 98.6L209.8 96.8L211.5 95.0L213.2 93.2L214.9 91.3L216.7 89.5L218.4 87.7L220.1 85.9L221.8 84.1L223.5 82.3L225.2 80.5L226.9 78.7L228.7 76.9L230.4 75.1L232.1 73.3L233.8 71.5L235.5 69.7L237.2 67.9L238.9 66.1L240.6 64.3L242.3 62.5L244.1 60.7L245.8 58.9L247.5 57.0L249.2 55.2L250.9 53.5L252.6 51.6L254.3 49.8L256.1 48.0L257.8 46.2L259.5 44.4L261.2 42.6L262.9 40.8L264.6 39.0L266.3 37.2L268.0 35.4L269.8 33.6L271.5 31.8L273.2 30.0L274.9 28.2L276.6 26.4L278.3 24.6L280.0 22.8L281.7 21.0L283.4 19.2L285.2 17.4L286.9 15.6L288.6 14.0\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><circle cx=\"69.14\" cy=\"245.0\" r=\"2.8\" fill=\"currentColor\"/><text x=\"77.14\" y=\"249.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">A</text><circle cx=\"186.57\" cy=\"121.25\" r=\"2.8\" fill=\"currentColor\"/><text x=\"184.57\" y=\"137.25\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">B</text><circle cx=\"264.86\" cy=\"38.75\" r=\"2.8\" fill=\"currentColor\"/><text x=\"256.86\" y=\"36.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">C</text><text x=\"289.13\" y=\"26.38\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\" font-style=\"italic\">y = x³ − 2x²</text><text x=\"233.54\" y=\"125.38\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\" font-style=\"italic\">y = 5x − 6</text></svg>",
+  "hint": "(b) Try small integer values of $x$ (factors of 6) to find one root, then divide.",
+  "answer": "(a) $x^3 - 2x^2 = 5x - 6 \\Rightarrow x^3 - 2x^2 - 5x + 6 = 0$ (b) $A(-2, -16)$, $B(1, -1)$, $C(3, 9)$",
+  "solution": "**(a)** At the intersections the $y$-values are equal:\n$$x^3 - 2x^2 = 5x - 6 \\Rightarrow x^3 - 2x^2 - 5x + 6 = 0$$\n\n**(b)** Let $f(x) = x^3 - 2x^2 - 5x + 6$. $f(1) = 1 - 2 - 5 + 6 = 0$, so $(x - 1)$ is a factor.\n\nDivide:\n$$f(x) = (x - 1)(x^2 - x - 6) = (x - 1)(x - 3)(x + 2)$$\n\nSo $x = -2$, $1$ or $3$. Use the line to find $y$:\n\n$x = -2$: $y = -16$; $x = 1$: $y = -1$; $x = 3$: $y = 9$.\n\nMatching the diagram (left to right): $A(-2, -16)$, $B(1, -1)$, $C(3, 9)$.\n\n(Check on the curve: $(-2)^3 - 2(4) = -16$ ✓, $1 - 2 = -1$ ✓, $27 - 18 = 9$ ✓)",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear",
+   "pure-curve-sketching"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q16",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$f(x) = x^3 - 3x^2 + (k + 2)x - k$, where $k$ is a real constant.\n\n(a) Show that $(x - 1)$ is a factor of $f(x)$ for every value of $k$.\n\n(b) Find the quadratic $Q(x)$ such that $f(x) = (x - 1)Q(x)$.\n\n(c) Find the set of values of $k$ for which the equation $f(x) = 0$ has three distinct real roots.\n\n(d) Describe the roots of $f(x) = 0$ when $k = 1$, and state how many distinct real roots there are when $k > 1$.",
+  "hint": "(c) You need $Q(x) = 0$ to have two distinct real roots, **and** neither of them may equal 1.",
+  "answer": "(a) $f(1) = 1 - 3 + k + 2 - k = 0$ (b) $Q(x) = x^2 - 2x + k$ (c) $k < 1$ (d) $k = 1$: $f(x) = (x - 1)^3$, a triple root $x = 1$; $k > 1$: one real root.",
+  "solution": "**(a)**\n$$f(1) = 1 - 3 + (k + 2) - k = 0$$\nfor every $k$, so $(x - 1)$ is always a factor.\n\n**(b)** Compare coefficients in $f(x) \\equiv (x - 1)(x^2 + px + q)$:\n* constant: $-q = -k \\Rightarrow q = k$\n* $x^2$: $p - 1 = -3 \\Rightarrow p = -2$\n\nCheck $x$: $q - p = k + 2$ ✓. So $Q(x) = x^2 - 2x + k$.\n\n**(c)** $f(x) = 0 \\iff x = 1$ or $x^2 - 2x + k = 0$.\n\nThree distinct roots need:\n1. $Q(x) = 0$ to have two distinct real roots: $(-2)^2 - 4k > 0 \\Rightarrow k < 1$;\n2. neither root of $Q$ to equal 1: $Q(1) = k - 1 \\ne 0 \\Rightarrow k \\ne 1$ (already guaranteed by $k < 1$).\n\nSo $k < 1$.\n\n**(d)** $k = 1$: $Q(x) = x^2 - 2x + 1 = (x - 1)^2$, so $f(x) = (x - 1)^3$: the only root is $x = 1$, a **triple** root.\n\n$k > 1$: $Q(x) = 0$ has negative discriminant, so the only real root is $x = 1$: **one** real root.\n\n(Example: $k = 0$ gives $x(x - 1)(x - 2)$, roots $0, 1, 2$ ✓.)",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q17",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "When the polynomial $f(x)$ is divided by $(x - 1)$ the remainder is 3. When $f(x)$ is divided by $(x + 2)$ the remainder is $-6$.\n\nFind the remainder when $f(x)$ is divided by $x^2 + x - 2$.",
+  "hint": "$x^2 + x - 2 = (x - 1)(x + 2)$. When you divide by a quadratic the remainder has the form $ax + b$. Write $f(x) = (x - 1)(x + 2)Q(x) + ax + b$ and substitute well-chosen values of $x$.",
+  "answer": "$3x$",
+  "solution": "Dividing by a quadratic leaves a remainder of degree at most 1, so\n$$f(x) = (x^2 + x - 2)Q(x) + ax + b = (x - 1)(x + 2)Q(x) + ax + b$$\nfor some polynomial $Q(x)$ and constants $a$, $b$.\n\nBy the remainder theorem, $f(1) = 3$ and $f(-2) = -6$.\n\n$x = 1$: the first term is zero, so $a + b = 3$.\n\n$x = -2$: the first term is zero, so $-2a + b = -6$.\n\nSubtracting: $3a = 9$, so $a = 3$ and $b = 0$.\n\nThe remainder is $3x$.\n\nCheck with an example: $f(x) = (x^2 + x - 2)x + 3x = x^3 + x^2 + x$ gives $f(1) = 3$ ✓ and $f(-2) = -8 + 4 - 2 = -6$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-polynomials-factor-theorem-q18",
+  "topicId": "pure-polynomials-factor-theorem",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$f(x) = x^4 + ax^3 - 3x^2 + bx + 6$, where $a$ and $b$ are constants.\n\nGiven that $(x - 1)$ and $(x + 2)$ are both factors of $f(x)$, find $a$ and $b$, and hence factorise $f(x)$ completely.",
+  "hint": "Use $f(1) = 0$ and $f(-2) = 0$ to find $a$ and $b$. Then $(x - 1)(x + 2) = x^2 + x - 2$ is a factor, so divide by it (or compare coefficients).",
+  "answer": "$a = 3$, $b = -7$; $f(x) = (x - 1)^2(x + 2)(x + 3)$",
+  "solution": "$f(1) = 0$:\n$$1 + a - 3 + b + 6 = 0 \\Rightarrow a + b = -4$$\n\n$f(-2) = 0$:\n$$16 - 8a - 12 - 2b + 6 = 0 \\Rightarrow 8a + 2b = 10 \\Rightarrow 4a + b = 5$$\n\nSubtracting: $3a = 9$, so $a = 3$ and $b = -7$.\n\n$f(x) = x^4 + 3x^3 - 3x^2 - 7x + 6$, and $(x - 1)(x + 2) = x^2 + x - 2$ is a factor.\n\nCompare coefficients in $f(x) \\equiv (x^2 + x - 2)(x^2 + px + q)$:\n* constant: $-2q = 6 \\Rightarrow q = -3$\n* $x^3$: $p + 1 = 3 \\Rightarrow p = 2$\n\nCheck $x^2$: $q + p - 2 = -3 + 2 - 2 = -3$ ✓; $x$: $q - 2p = -3 - 4 = -7$ ✓.\n\nSo $f(x) = (x^2 + x - 2)(x^2 + 2x - 3)$, and $x^2 + 2x - 3 = (x - 1)(x + 3)$:\n$$f(x) = (x - 1)(x + 2)(x - 1)(x + 3) = (x - 1)^2(x + 2)(x + 3)$$\n\nNote the **repeated** factor $(x - 1)$: stopping at $(x^2 + x - 2)(x^2 + 2x - 3)$ would not be fully factorised.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ }
+]
