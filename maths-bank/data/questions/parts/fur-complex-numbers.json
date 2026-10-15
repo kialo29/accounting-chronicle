@@ -147,8 +147,8 @@
   "type": "reasoning",
   "question": "Sam writes:\n\n$$\\sqrt{-4} \\times \\sqrt{-9} = \\sqrt{(-4) \\times (-9)} = \\sqrt{36} = 6$$\n\nIs Sam correct? Justify your answer, and explain which rule Sam has used that does not hold here.",
   "hint": "Write $\\sqrt{-4}$ and $\\sqrt{-9}$ in terms of $i$ first, then multiply.",
-  "answer": "No. $\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$. The rule $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$ only holds when $a, b \\ge 0$.",
-  "solution": "Write each root in terms of $i$:\n$$\\sqrt{-4} = 2i, \\qquad \\sqrt{-9} = 3i$$\n\nSo\n$$\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$$\n\nSam's answer $6$ is wrong.\n\nSam used $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$. This rule is proved for $a, b \\ge 0$ (both sides are non-negative and square to $ab$). When $a$ and $b$ are both negative, $\\sqrt{a}\\sqrt{b}$ is a product of two imaginary numbers, which is negative, so it cannot equal the non-negative number $\\sqrt{ab}$.\n\nThe safe approach: always rewrite $\\sqrt{-k}$ as $i\\sqrt{k}$ **before** doing any other algebra.",
+  "answer": "No. $\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$. The rule $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$ is only valid when $a$ and $b$ are not both negative (it is proved for $a, b \\ge 0$).",
+  "solution": "Write each root in terms of $i$:\n$$\\sqrt{-4} = 2i, \\qquad \\sqrt{-9} = 3i$$\n\nSo\n$$\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$$\n\nSam's answer $6$ is wrong.\n\nSam used $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$. This rule is proved for $a, b \\ge 0$ (both sides are non-negative and square to $ab$). When $a$ and $b$ are both negative, $\\sqrt{a}\\sqrt{b}$ is a product of two imaginary numbers, which is negative, so it cannot equal the non-negative number $\\sqrt{ab}$. (If only one of them is negative the rule still works, e.g. $\\sqrt{-4} \\times \\sqrt{9} = 2i \\times 3 = 6i = \\sqrt{-36}$; it is the case where both are negative that fails.)\n\nThe safe approach: always rewrite $\\sqrt{-k}$ as $i\\sqrt{k}$ **before** doing any other algebra.",
   "misconceptionIds": [
    "m1"
   ],

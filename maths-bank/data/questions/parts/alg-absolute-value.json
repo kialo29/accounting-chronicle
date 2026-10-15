@@ -1,0 +1,281 @@
+[
+ {
+  "id": "alg-absolute-value-q01",
+  "topicId": "alg-absolute-value",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "Solve $|x - 4| = 9$.",
+  "hint": "The expression inside the absolute value bars is either $9$ or $-9$.",
+  "answer": "$x = 13$ or $x = -5$",
+  "solution": "$|x - 4| = 9$ means $x - 4$ is $9$ units from $0$, so\n$$x - 4 = 9 \\quad \\text{or} \\quad x - 4 = -9$$\n$$x = 13 \\quad \\text{or} \\quad x = -5$$\n\nCheck: $|13 - 4| = 9$ ✓ and $|-5 - 4| = |-9| = 9$ ✓.\n\nOn a number line, $|x - 4|$ is the distance from $x$ to $4$: the two numbers $9$ units from $4$ are $13$ and $-5$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q02",
+  "topicId": "alg-absolute-value",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "Solve $|x + 4| = 9$.",
+  "hint": "Split into two equations: $x + 4 = 9$ or $x + 4 = -9$.",
+  "answer": "$x = 5$ or $x = -13$",
+  "solution": "**What changed:** $x - 4$ became $x + 4$.\n\n$$x + 4 = 9 \\quad \\text{or} \\quad x + 4 = -9$$\n$$x = 5 \\quad \\text{or} \\quad x = -13$$\n\nCheck: $|5 + 4| = 9$ ✓, $|-13 + 4| = |-9| = 9$ ✓.\n\nEffect of the change: $|x + 4| = |x - (-4)|$ is the distance from $-4$, so the solutions are $9$ units either side of $-4$ instead of $4$. Both solutions moved $8$ to the left.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q03",
+  "topicId": "alg-absolute-value",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "Solve $|2x + 4| = 9$.",
+  "hint": "Split into two linear equations, then solve each one.",
+  "answer": "$x = \\frac{5}{2}$ or $x = -\\frac{13}{2}$",
+  "solution": "**What changed:** the coefficient of $x$ is now $2$.\n\n$$2x + 4 = 9 \\quad \\text{or} \\quad 2x + 4 = -9$$\n$$2x = 5 \\quad \\text{or} \\quad 2x = -13$$\n$$x = \\frac{5}{2} \\quad \\text{or} \\quad x = -\\frac{13}{2}$$\n\nCheck: $\\left|2\\left(\\frac{5}{2}\\right) + 4\\right| = |9| = 9$ ✓ and $\\left|2\\left(-\\frac{13}{2}\\right) + 4\\right| = |-9| = 9$ ✓.\n\nEffect of the change: each solution of the previous question has been halved, since $2x$ now plays the role $x$ played before.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q04",
+  "topicId": "alg-absolute-value",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Solve $|2x + 4| + 3 = 9$.",
+  "hint": "Get the absolute value on its own before you split into two cases.",
+  "answer": "$x = 1$ or $x = -5$",
+  "solution": "**What changed:** a $+3$ has been added outside the absolute value.\n\nIsolate the absolute value first:\n$$|2x + 4| = 6$$\n\nNow split:\n$$2x + 4 = 6 \\quad \\text{or} \\quad 2x + 4 = -6$$\n$$x = 1 \\quad \\text{or} \\quad x = -5$$\n\nCheck: $|6| + 3 = 9$ ✓ and $|-6| + 3 = 9$ ✓.\n\n(If you split first, writing $2x + 4 + 3 = -9$, you would get $x = -8$, and $|2(-8) + 4| + 3 = 12 + 3 = 15 \\ne 9$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q05",
+  "topicId": "alg-absolute-value",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Solve $|2x + 4| + 12 = 9$.",
+  "hint": "Isolate the absolute value. What do you notice about the right-hand side?",
+  "answer": "No solution",
+  "solution": "**What changed:** the constant outside is now $+12$ instead of $+3$.\n\nIsolate the absolute value:\n$$|2x + 4| = 9 - 12 = -3$$\n\nAn absolute value is a distance, so it is never negative. $|2x + 4|$ can never equal $-3$.\n\n**There is no solution.**\n\n(Splitting anyway gives $2x + 4 = -3$ or $2x + 4 = 3$, i.e. $x = -3.5$ or $x = -0.5$; but $|2(-0.5) + 4| + 12 = 3 + 12 = 15 \\ne 9$, so neither works.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q06",
+  "topicId": "alg-absolute-value",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [],
+  "question": "**(a)** Evaluate:\n(i) $|-8|$ (ii) $|3 - 10|$ (iii) $-|-5|$ (iv) $|-2| \\times |4 - 7|$\n\n**(b)** Solve $|x| = 6$.",
+  "hint": "$|a|$ is the distance of $a$ from $0$. Work out what is inside the bars first.",
+  "answer": "(a) (i) $8$ (ii) $7$ (iii) $-5$ (iv) $6$ (b) $x = 6$ or $x = -6$",
+  "solution": "**(a)**\n(i) $-8$ is $8$ units from $0$: $|-8| = 8$.\n(ii) $|3 - 10| = |-7| = 7$.\n(iii) $|-5| = 5$, and the negative sign is **outside** the bars: $-|-5| = -5$.\n(iv) $|-2| \\times |4 - 7| = 2 \\times |-3| = 2 \\times 3 = 6$.\n\n**(b)** The numbers $6$ units from $0$ are $6$ and $-6$: $x = 6$ or $x = -6$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q07",
+  "topicId": "alg-absolute-value",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "**(a)** Solve $|x - 3| < 5$ and describe its graph on a number line.\n**(b)** Solve $|x - 3| > 5$ and describe its graph on a number line.\n**(c)** Explain why one answer uses \"and\" and the other uses \"or\".",
+  "hint": "$|x - 3|$ is the distance from $x$ to $3$. Which numbers are less than 5 units from 3? Which are more than 5 units away?",
+  "answer": "(a) $-2 < x < 8$ (b) $x < -2$ or $x > 8$ (c) less than: between the two boundary points (and); greater than: outside them (or)",
+  "solution": "**(a)** \"Less than\" gives a compound \"and\" inequality:\n$$-5 < x - 3 < 5 \\Rightarrow -2 < x < 8$$\nNumber line: open circles at $-2$ and $8$, with the segment between them shaded.\n\n**(b)** \"Greater than\" gives an \"or\":\n$$x - 3 < -5 \\quad \\text{or} \\quad x - 3 > 5 \\Rightarrow x < -2 \\quad \\text{or} \\quad x > 8$$\nNumber line: open circles at $-2$ and $8$, shaded to the left of $-2$ and to the right of $8$.\n\n**(c)** $|x - 3|$ is the distance from $x$ to $3$. In (a), $x$ must be within $5$ of $3$: it must be greater than $-2$ **and** less than $8$ at the same time, a single interval. In (b), $x$ must be more than $5$ away, which can happen on either side of $3$: below $-2$ **or** above $8$. No number can be both less than $-2$ and greater than $8$, so (b) cannot be written as an \"and\" inequality.\n\nCheck: $x = 0$ gives $|{-3}| = 3$: it satisfies (a) but not (b) ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q08",
+  "topicId": "alg-absolute-value",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Marcus solves $|2x - 1| > 7$. His working and his number-line graph are shown.\n\n$$-7 < 2x - 1 < 7$$\n$$-6 < 2x < 8$$\n$$-3 < x < 4$$\n\nIdentify Marcus's mistake, explain why it is wrong, and give the correct solution and a description of the correct graph.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 62\" width=\"340\" height=\"62\"><line x1=\"10\" y1=\"26\" x2=\"330\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M334,26 l-7,-4 l0,8 z\" fill=\"currentColor\"/><path d=\"M6,26 l7,-4 l0,8 z\" fill=\"currentColor\"/><line x1=\"20\" y1=\"21\" x2=\"20\" y2=\"31\" stroke=\"currentColor\"/><text x=\"20\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−5</text><line x1=\"47.27\" y1=\"21\" x2=\"47.27\" y2=\"31\" stroke=\"currentColor\"/><text x=\"47.27\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"74.55\" y1=\"21\" x2=\"74.55\" y2=\"31\" stroke=\"currentColor\"/><text x=\"74.55\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"101.82\" y1=\"21\" x2=\"101.82\" y2=\"31\" stroke=\"currentColor\"/><text x=\"101.82\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"129.09\" y1=\"21\" x2=\"129.09\" y2=\"31\" stroke=\"currentColor\"/><text x=\"129.09\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"156.36\" y1=\"21\" x2=\"156.36\" y2=\"31\" stroke=\"currentColor\"/><text x=\"156.36\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"183.64\" y1=\"21\" x2=\"183.64\" y2=\"31\" stroke=\"currentColor\"/><text x=\"183.64\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"210.91\" y1=\"21\" x2=\"210.91\" y2=\"31\" stroke=\"currentColor\"/><text x=\"210.91\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"238.18\" y1=\"21\" x2=\"238.18\" y2=\"31\" stroke=\"currentColor\"/><text x=\"238.18\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"265.45\" y1=\"21\" x2=\"265.45\" y2=\"31\" stroke=\"currentColor\"/><text x=\"265.45\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"292.73\" y1=\"21\" x2=\"292.73\" y2=\"31\" stroke=\"currentColor\"/><text x=\"292.73\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"320\" y1=\"21\" x2=\"320\" y2=\"31\" stroke=\"currentColor\"/><text x=\"320\" y=\"48\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"79.55\" y1=\"26\" x2=\"260.45\" y2=\"26\" stroke=\"#3b82f6\" stroke-width=\"4\"/><circle cx=\"74.55\" cy=\"26\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"265.45\" cy=\"26\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+  "hint": "Test a value from Marcus's answer, such as $x = 0$, in the original inequality.",
+  "answer": "His first line treats \"$> 7$\" like \"$< 7$\". Correct: $x < -3$ or $x > 4$, with open circles at $-3$ and $4$, shaded outwards (left of $-3$ and right of $4$).",
+  "solution": "**The mistake is in the first line.** Marcus has written a compound \"and\" inequality, which is the correct method for $|2x - 1| < 7$, not for $|2x - 1| > 7$.\n\nCheck his answer with $x = 0$: $|2(0) - 1| = 1$, which is **not** greater than $7$. So his solution set is wrong.\n\n$|2x - 1| > 7$ means $2x - 1$ is more than $7$ units from $0$, on either side:\n$$2x - 1 < -7 \\quad \\text{or} \\quad 2x - 1 > 7$$\n$$2x < -6 \\quad \\text{or} \\quad 2x > 8$$\n$$x < -3 \\quad \\text{or} \\quad x > 4$$\n\nGraph: open circles at $-3$ and $4$ (the boundary values are not included, since $> $ is strict), with the shading going **outwards**: to the left from $-3$ and to the right from $4$.\n\nCheck: $x = 5$ gives $|9| = 9 > 7$ ✓; $x = -4$ gives $|-9| = 9 > 7$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q09",
+  "topicId": "alg-absolute-value",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Aisha solves $-2|x - 1| + 5 = -3$. Her working is shown below.\n\n$$-2(x - 1) + 5 = -3 \\quad \\text{or} \\quad -2(x - 1) + 5 = 3$$\n$$-2x + 7 = -3 \\quad \\text{or} \\quad -2x + 7 = 3$$\n$$x = 5 \\quad \\text{or} \\quad x = 2$$\n\nFind the error in Aisha's working, explain it, and solve the equation correctly.",
+  "hint": "Check $x = 2$ in the original equation. What should be done before splitting into two cases?",
+  "answer": "She split into cases before isolating $|x - 1|$. Correct: $|x - 1| = 4$, so $x = 5$ or $x = -3$.",
+  "solution": "**The error is in the first line.** Aisha split into two cases while the absolute value still had $-2$ multiplying it and $+5$ added to it. The \"$\\pm$\" rule only applies once the absolute value is alone on one side: $|u| = c \\Rightarrow u = \\pm c$.\n\nCheck her $x = 2$: $-2|2 - 1| + 5 = -2 + 5 = 3 \\ne -3$. ✗\n\nCorrect working, isolating first:\n$$-2|x - 1| + 5 = -3$$\n$$-2|x - 1| = -8$$\n$$|x - 1| = 4$$\n$$x - 1 = 4 \\quad \\text{or} \\quad x - 1 = -4$$\n$$x = 5 \\quad \\text{or} \\quad x = -3$$\n\nCheck: $x = 5$: $-2(4) + 5 = -3$ ✓. $x = -3$: $-2|-4| + 5 = -8 + 5 = -3$ ✓.\n\n(Aisha's $x = 5$ was right only by luck.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q10",
+  "topicId": "alg-absolute-value",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Jordan says: \"The graph of $y = |x + 3| - 2$ is a V shape with its vertex at $(3, -2)$.\"\n\n**(a)** Is Jordan correct? Justify your answer.\n**(b)** Find the $x$-intercepts of the graph.",
+  "hint": "The vertex is where the expression inside the absolute value equals zero.",
+  "answer": "(a) No: the vertex is $(-3, -2)$, because $x + 3 = 0$ when $x = -3$. (b) $x = -5$ and $x = -1$",
+  "solution": "**(a)** Jordan is not correct. Compare with $y = a|x - h| + k$, which has vertex $(h, k)$:\n$$y = |x - (-3)| - 2 \\Rightarrow h = -3, \\ k = -2$$\nThe vertex is $(-3, -2)$: the graph of $y = |x|$ is shifted **left** 3 and down 2.\n\nCheck: at $x = 3$ (Jordan's vertex) $y = |6| - 2 = 4$, which is not the lowest point, but at $x = -3$, $y = |0| - 2 = -2$, the minimum value.\n\n**(b)** Set $y = 0$: $|x + 3| = 2 \\Rightarrow x + 3 = 2$ or $x + 3 = -2$, so $x = -1$ or $x = -5$.\n\n(These are $2$ units either side of the vertex, since the slopes are $\\pm 1$ and the vertex is $2$ units below the $x$-axis.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q11",
+  "topicId": "alg-absolute-value",
+  "difficulty": 3,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The graph shows a function of the form $y = a|x - h| + k$.\n\nWrite down the equation of the graph.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 286 292\" width=\"286\" height=\"292\"><line x1=\"30\" y1=\"266\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"60\" y1=\"266\" x2=\"60\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"90\" y1=\"266\" x2=\"90\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"120\" y1=\"266\" x2=\"120\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"150\" y1=\"266\" x2=\"150\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"266\" x2=\"180\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"210\" y1=\"266\" x2=\"210\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"240\" y1=\"266\" x2=\"240\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"270\" y1=\"266\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"266\" x2=\"270\" y2=\"266\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"241\" x2=\"270\" y2=\"241\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"216\" x2=\"270\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"191\" x2=\"270\" y2=\"191\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"166\" x2=\"270\" y2=\"166\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"270\" y2=\"141\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"116\" x2=\"270\" y2=\"116\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"91\" x2=\"270\" y2=\"91\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"66\" x2=\"270\" y2=\"66\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"41\" x2=\"270\" y2=\"41\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"278\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M278,141 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"120\" y1=\"266\" x2=\"120\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M120,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"278\" y=\"134\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"127\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"30\" y1=\"138\" x2=\"30\" y2=\"144\" stroke=\"currentColor\"/><text x=\"30\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"60\" y1=\"138\" x2=\"60\" y2=\"144\" stroke=\"currentColor\"/><text x=\"60\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"90\" y1=\"138\" x2=\"90\" y2=\"144\" stroke=\"currentColor\"/><text x=\"90\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"150\" y1=\"138\" x2=\"150\" y2=\"144\" stroke=\"currentColor\"/><text x=\"150\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"180\" y1=\"138\" x2=\"180\" y2=\"144\" stroke=\"currentColor\"/><text x=\"180\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"210\" y1=\"138\" x2=\"210\" y2=\"144\" stroke=\"currentColor\"/><text x=\"210\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"240\" y1=\"138\" x2=\"240\" y2=\"144\" stroke=\"currentColor\"/><text x=\"240\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"270\" y1=\"138\" x2=\"270\" y2=\"144\" stroke=\"currentColor\"/><text x=\"270\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"117\" y1=\"266\" x2=\"123\" y2=\"266\" stroke=\"currentColor\"/><text x=\"114\" y=\"270\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−5</text><line x1=\"117\" y1=\"241\" x2=\"123\" y2=\"241\" stroke=\"currentColor\"/><text x=\"114\" y=\"245\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"117\" y1=\"216\" x2=\"123\" y2=\"216\" stroke=\"currentColor\"/><text x=\"114\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"117\" y1=\"191\" x2=\"123\" y2=\"191\" stroke=\"currentColor\"/><text x=\"114\" y=\"195\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"117\" y1=\"166\" x2=\"123\" y2=\"166\" stroke=\"currentColor\"/><text x=\"114\" y=\"170\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"117\" y1=\"116\" x2=\"123\" y2=\"116\" stroke=\"currentColor\"/><text x=\"114\" y=\"120\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"117\" y1=\"91\" x2=\"123\" y2=\"91\" stroke=\"currentColor\"/><text x=\"114\" y=\"95\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"117\" y1=\"66\" x2=\"123\" y2=\"66\" stroke=\"currentColor\"/><text x=\"114\" y=\"70\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"117\" y1=\"41\" x2=\"123\" y2=\"41\" stroke=\"currentColor\"/><text x=\"114\" y=\"45\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"117\" y1=\"16\" x2=\"123\" y2=\"16\" stroke=\"currentColor\"/><text x=\"114\" y=\"20\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"30\" y1=\"241\" x2=\"150\" y2=\"41\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"150\" y1=\"41\" x2=\"270\" y2=\"241\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"141\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"120\" cy=\"91\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"41\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"180\" cy=\"91\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"210\" cy=\"141\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg>",
+  "hint": "Read off the vertex to find $h$ and $k$. Then find the slope of the right-hand branch to find $a$.",
+  "answer": "$y = -2|x - 1| + 4$",
+  "solution": "**Vertex:** the highest point is $(1, 4)$, so $h = 1$ and $k = 4$.\n\n**Value of $a$:** the graph opens downward, so $a < 0$. On the right-hand branch, from $(1, 4)$ to $(2, 2)$, $y$ falls by $2$ when $x$ increases by $1$: slope $-2$. So $a = -2$.\n\n$$y = -2|x - 1| + 4$$\n\nCheck with another point: $x = -1$ gives $y = -2|-2| + 4 = -4 + 4 = 0$, and the graph does pass through $(-1, 0)$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q12",
+  "topicId": "alg-absolute-value",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A college basketball must be inflated to between $7.5$ and $8.5$ pounds per square inch (psi), inclusive.\n\n**(a)** Write an absolute value inequality for the acceptable pressures $p$ psi.\n**(b)** Five balls have pressures $7.4$, $8.0$, $8.5$, $8.6$ and $7.55$ psi. Which balls are acceptable?\n**(c)** Write and solve an absolute value inequality for the pressures that are **not** acceptable.",
+  "hint": "Find the midpoint of the acceptable range and how far each end is from it.",
+  "answer": "(a) $|p - 8| \\le 0.5$ (b) $8.0$, $8.5$ and $7.55$ psi (c) $|p - 8| > 0.5$: $p < 7.5$ or $p > 8.5$",
+  "solution": "**(a)** The middle of the range is $\\frac{7.5 + 8.5}{2} = 8$ psi, and each end is $0.5$ psi from $8$. The pressure must be within $0.5$ psi of $8$ (inclusive):\n$$|p - 8| \\le 0.5$$\nCheck: this means $-0.5 \\le p - 8 \\le 0.5$, i.e. $7.5 \\le p \\le 8.5$ ✓.\n\n**(b)**\n* $7.4$: $|7.4 - 8| = 0.6 > 0.5$ ✗\n* $8.0$: $0 \\le 0.5$ ✓\n* $8.5$: $0.5 \\le 0.5$ ✓ (the endpoint is included)\n* $8.6$: $0.6 > 0.5$ ✗\n* $7.55$: $0.45 \\le 0.5$ ✓\n\nAcceptable: $8.0$, $8.5$ and $7.55$ psi.\n\n**(c)** Not acceptable means more than $0.5$ psi from $8$:\n$$|p - 8| > 0.5 \\Rightarrow p - 8 < -0.5 \\ \\text{or} \\ p - 8 > 0.5 \\Rightarrow p < 7.5 \\ \\text{or} \\ p > 8.5$$\nThis is an \"or\" inequality, because the bad pressures are on both sides of the acceptable range.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q13",
+  "topicId": "alg-absolute-value",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "question": "The function $f$ is defined by $f(x) = |x - 2| - 3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of the vertex of the graph of $y = f(x)$, and the coordinates of all the points where the graph crosses the axes.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Solve $f(x) \\le 1$. Write your answer as a compound inequality.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Solve $-3|x + 1| + 2 \\ge -7$. Show your work.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Explain why the equation $f(x) = -4$ has no solution.",
+    "marks": 1
+   }
+  ],
+  "marks": 8,
+  "hint": "For (c), isolate the absolute value. Dividing an inequality by a negative number reverses it.",
+  "answer": "(a) Vertex $(2, -3)$; $x$-intercepts $(-1, 0)$ and $(5, 0)$; $y$-intercept $(0, -1)$ (b) $-2 \\le x \\le 6$ (c) $-4 \\le x \\le 2$ (d) $|x - 2| = -1$ is impossible; the minimum value of $f$ is $-3$",
+  "solution": "**(a)** $y = |x - 2| - 3$ has $h = 2$, $k = -3$: vertex $(2, -3)$. **1 pt**\n\n$x$-intercepts: $|x - 2| = 3 \\Rightarrow x = 5$ or $x = -1$: $(5, 0)$ and $(-1, 0)$. **1 pt**\n\n$y$-intercept: $f(0) = |-2| - 3 = -1$: $(0, -1)$. **1 pt**\n\n**(b)** $|x - 2| - 3 \\le 1 \\Rightarrow |x - 2| \\le 4$ **1 pt**\n$$-4 \\le x - 2 \\le 4 \\Rightarrow -2 \\le x \\le 6 \\quad \\textbf{1 pt}$$\n\n**(c)** $-3|x + 1| \\ge -9$. Divide by $-3$ and **reverse** the inequality: $|x + 1| \\le 3$ **1 pt**\n$$-3 \\le x + 1 \\le 3 \\Rightarrow -4 \\le x \\le 2 \\quad \\textbf{1 pt}$$\nCheck: $x = 0$: $-3(1) + 2 = -1 \\ge -7$ ✓; $x = 3$: $-3(4) + 2 = -10 < -7$, so $3$ is correctly excluded.\n\n**(d)** $f(x) = -4$ means $|x - 2| = -1$, but an absolute value can never be negative. (Equivalently, the lowest point of the graph is the vertex at $y = -3$, so the graph never reaches $y = -4$.) **1 pt**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q14",
+  "topicId": "alg-absolute-value",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "misconceptionIds": [],
+  "question": "Solve $|x - 1| = |2x + 4|$.",
+  "hint": "If two numbers have the same absolute value, they are either equal or opposites.",
+  "answer": "$x = -5$ or $x = -1$",
+  "solution": "$|A| = |B|$ means $A = B$ or $A = -B$.\n\n**Case 1:** $x - 1 = 2x + 4 \\Rightarrow -5 = x$.\n\n**Case 2:** $x - 1 = -(2x + 4) = -2x - 4 \\Rightarrow 3x = -3 \\Rightarrow x = -1$.\n\nCheck:\n* $x = -5$: $|-6| = 6$ and $|-10 + 4| = |-6| = 6$ ✓\n* $x = -1$: $|-2| = 2$ and $|-2 + 4| = 2$ ✓\n\nSo $x = -5$ or $x = -1$.\n\n(Alternative: square both sides, $(x - 1)^2 = (2x + 4)^2 \\Rightarrow 3x^2 + 18x + 15 = 0 \\Rightarrow x^2 + 6x + 5 = 0 \\Rightarrow (x + 5)(x + 1) = 0$, the same answers.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q15",
+  "topicId": "alg-absolute-value",
+  "difficulty": 4,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Devon solves $|x - 3| = 2x$ like this:\n\n$$x - 3 = 2x \\quad \\text{or} \\quad x - 3 = -2x$$\n$$x = -3 \\quad \\text{or} \\quad x = 1$$\n\n**(a)** Show that only one of Devon's values is actually a solution.\n**(b)** Explain why the method produced an extra (extraneous) value, and why this cannot happen for an equation like $|x - 3| = 7$.",
+  "hint": "Substitute each value back. What sign must the right-hand side, $2x$, have?",
+  "answer": "(a) $x = 1$ works ($|-2| = 2$); $x = -3$ fails ($|-6| = 6 \\ne -6$) (b) The right side $2x$ must be $\\ge 0$, but $x = -3$ makes it negative; with a constant $7 > 0$ the right side is never negative, so both cases always give genuine solutions.",
+  "solution": "**(a)**\n* $x = 1$: left $|1 - 3| = 2$, right $2(1) = 2$ ✓\n* $x = -3$: left $|-3 - 3| = 6$, right $2(-3) = -6$ ✗\n\nSo the only solution is $x = 1$.\n\n**(b)** An absolute value is never negative, so the equation $|x - 3| = 2x$ can only be true when $2x \\ge 0$, i.e. $x \\ge 0$. Splitting into \"$= 2x$ or $= -2x$\" ignores this condition. $x = -3$ solves $x - 3 = 2x$, but at $x = -3$ the right-hand side is $-6$, a negative \"distance\", so it is **extraneous** and must be rejected.\n\nFor $|x - 3| = 7$ the right-hand side is the constant $7$, which is positive whatever $x$ is, so both cases ($x - 3 = 7$ or $x - 3 = -7$) always give real solutions. When the right-hand side contains $x$ (or is negative), you must check every answer.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-absolute-value-q16",
+  "topicId": "alg-absolute-value",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-perimeter-area",
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The graphs of\n$$y = 2|x - 1| - 2 \\qquad \\text{and} \\qquad y = -|x - 1| + 4$$\nenclose a region $R$.\n\n**(a)** Find the coordinates of the vertices of $R$.\n**(b)** Find the area of $R$.",
+  "hint": "Both graphs have their vertex on the line $x = 1$. Find where they intersect by setting $u = |x - 1|$.",
+  "answer": "(a) $(1, -2)$, $(3, 2)$, $(1, 4)$, $(-1, 2)$ (b) $12$ square units",
+  "solution": "**(a)** The first graph is a V opening up with vertex $(1, -2)$; the second opens down with vertex $(1, 4)$.\n\nIntersections: let $u = |x - 1|$.\n$$2u - 2 = -u + 4 \\Rightarrow 3u = 6 \\Rightarrow u = 2$$\nSo $|x - 1| = 2 \\Rightarrow x = 3$ or $x = -1$, and $y = 2(2) - 2 = 2$.\n\nVertices of $R$: $(1, -2)$, $(3, 2)$, $(1, 4)$, $(-1, 2)$.\n\n**(b)** $R$ is a kite (two pairs of equal adjacent sides, $\\sqrt{20}$ and $\\sqrt{8}$). Its diagonals are:\n* vertical, from $(1, -2)$ to $(1, 4)$: length $6$\n* horizontal, from $(-1, 2)$ to $(3, 2)$: length $4$\n\nThe diagonals are perpendicular, so\n$$\\text{Area} = \\frac{1}{2} \\times 6 \\times 4 = 12 \\text{ square units}$$\n\n(Check: split along the horizontal diagonal into two triangles with base $4$ and heights $4$ and $2$: $\\frac{1}{2}(4)(4) + \\frac{1}{2}(4)(2) = 8 + 4 = 12$ ✓.)"
+ },
+ {
+  "id": "alg-absolute-value-q17",
+  "topicId": "alg-absolute-value",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-negative-numbers",
+   "alg-piecewise-functions"
+  ],
+  "misconceptionIds": [],
+  "question": "**(a)** Using the idea that $|x - a|$ is the distance between $x$ and $a$ on a number line, explain why the smallest possible value of $|x - 2| + |x + 3|$ is $5$.\n\n**(b)** Solve $|x - 2| + |x + 3| = 9$.\n\n**(c)** Describe the full solution set of $|x - 2| + |x + 3| = 5$.",
+  "hint": "$|x - 2| + |x + 3|$ is the distance from $x$ to $2$ plus the distance from $x$ to $-3$. What happens when $x$ is between $-3$ and $2$?",
+  "answer": "(a) The points $-3$ and $2$ are 5 apart; the total distance is $5$ when $x$ is between them and more than $5$ otherwise (b) $x = -5$ or $x = 4$ (c) every $x$ with $-3 \\le x \\le 2$",
+  "solution": "**(a)** $|x - 2| + |x + 3|$ is (distance from $x$ to $2$) + (distance from $x$ to $-3$). The points $-3$ and $2$ are $5$ units apart.\n* If $-3 \\le x \\le 2$, $x$ is between them, and the two distances add up to exactly $5$.\n* If $x$ is outside, say $x > 2$, the total is $5$ plus twice the distance beyond $2$, which is more than $5$. Similarly for $x < -3$.\n\nSo the minimum value is $5$.\n\n**(b)** Since $9 > 5$, $x$ is outside $[-3, 2]$.\n\n$x > 2$: $(x - 2) + (x + 3) = 9 \\Rightarrow 2x + 1 = 9 \\Rightarrow x = 4$ ✓ ($4 > 2$).\n\n$x < -3$: $-(x - 2) - (x + 3) = 9 \\Rightarrow -2x - 1 = 9 \\Rightarrow x = -5$ ✓ ($-5 < -3$).\n\nCheck: $|2| + |7| = 9$ ✓; $|-7| + |-2| = 9$ ✓. (The answers are each $2$ units beyond the ends, because $5 + 2 \\times 2 = 9$.)\n\n**(c)** From (a), the sum equals $5$ for **every** $x$ between $-3$ and $2$ inclusive: the solution set is $-3 \\le x \\le 2$, infinitely many solutions.\n\n(As a piecewise function: $|x - 2| + |x + 3| = -2x - 1$ for $x < -3$, $5$ for $-3 \\le x \\le 2$, and $2x + 1$ for $x > 2$, so its graph has a flat bottom.)"
+ },
+ {
+  "id": "alg-absolute-value-q18",
+  "topicId": "alg-absolute-value",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The graph of $y = \\big||x - 1| - 3\\big|$ is shown.\n\n**(a)** Solve $\\big||x - 1| - 3\\big| = 2$.\n**(b)** The equation $\\big||x - 1| - 3\\big| = c$ is solved for different constants $c$. State the number of solutions when (i) $c < 0$ (ii) $c = 0$ (iii) $0 < c < 3$ (iv) $c = 3$ (v) $c > 3$. Explain your answers.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 346 192\" width=\"346\" height=\"192\"><line x1=\"30\" y1=\"166\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"55\" y1=\"166\" x2=\"55\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"80\" y1=\"166\" x2=\"80\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"105\" y1=\"166\" x2=\"105\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"130\" y1=\"166\" x2=\"130\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"155\" y1=\"166\" x2=\"155\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"166\" x2=\"180\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"205\" y1=\"166\" x2=\"205\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"230\" y1=\"166\" x2=\"230\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"255\" y1=\"166\" x2=\"255\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"280\" y1=\"166\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"305\" y1=\"166\" x2=\"305\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"330\" y1=\"166\" x2=\"330\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"166\" x2=\"330\" y2=\"166\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"330\" y2=\"141\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"116\" x2=\"330\" y2=\"116\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"91\" x2=\"330\" y2=\"91\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"66\" x2=\"330\" y2=\"66\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"41\" x2=\"330\" y2=\"41\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"330\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"338\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M338,141 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"155\" y1=\"166\" x2=\"155\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M155,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"338\" y=\"134\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"162\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"30\" y1=\"138\" x2=\"30\" y2=\"144\" stroke=\"currentColor\"/><text x=\"30\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−5</text><line x1=\"55\" y1=\"138\" x2=\"55\" y2=\"144\" stroke=\"currentColor\"/><text x=\"55\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"80\" y1=\"138\" x2=\"80\" y2=\"144\" stroke=\"currentColor\"/><text x=\"80\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"105\" y1=\"138\" x2=\"105\" y2=\"144\" stroke=\"currentColor\"/><text x=\"105\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"130\" y1=\"138\" x2=\"130\" y2=\"144\" stroke=\"currentColor\"/><text x=\"130\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"180\" y1=\"138\" x2=\"180\" y2=\"144\" stroke=\"currentColor\"/><text x=\"180\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"205\" y1=\"138\" x2=\"205\" y2=\"144\" stroke=\"currentColor\"/><text x=\"205\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"230\" y1=\"138\" x2=\"230\" y2=\"144\" stroke=\"currentColor\"/><text x=\"230\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"255\" y1=\"138\" x2=\"255\" y2=\"144\" stroke=\"currentColor\"/><text x=\"255\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"280\" y1=\"138\" x2=\"280\" y2=\"144\" stroke=\"currentColor\"/><text x=\"280\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"305\" y1=\"138\" x2=\"305\" y2=\"144\" stroke=\"currentColor\"/><text x=\"305\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"330\" y1=\"138\" x2=\"330\" y2=\"144\" stroke=\"currentColor\"/><text x=\"330\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"152\" y1=\"166\" x2=\"158\" y2=\"166\" stroke=\"currentColor\"/><text x=\"149\" y=\"170\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"152\" y1=\"116\" x2=\"158\" y2=\"116\" stroke=\"currentColor\"/><text x=\"149\" y=\"120\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"152\" y1=\"91\" x2=\"158\" y2=\"91\" stroke=\"currentColor\"/><text x=\"149\" y=\"95\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"152\" y1=\"66\" x2=\"158\" y2=\"66\" stroke=\"currentColor\"/><text x=\"149\" y=\"70\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"152\" y1=\"41\" x2=\"158\" y2=\"41\" stroke=\"currentColor\"/><text x=\"149\" y=\"45\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"152\" y1=\"16\" x2=\"158\" y2=\"16\" stroke=\"currentColor\"/><text x=\"149\" y=\"20\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"30\" y1=\"66\" x2=\"105\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"105\" y1=\"141\" x2=\"180\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"180\" y1=\"66\" x2=\"255\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"255\" y1=\"141\" x2=\"330\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"326\" y=\"56\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = ||x − 1| − 3|</text></svg>",
+  "hint": "Peel off one absolute value at a time: first $|x - 1| - 3 = \\pm 2$. For (b), imagine a horizontal line $y = c$ moving up the graph.",
+  "answer": "(a) $x = -4, 0, 2, 6$ (b) (i) $0$ (ii) $2$ (iii) $4$ (iv) $3$ (v) $2$",
+  "solution": "**(a)** Outer absolute value first:\n$$|x - 1| - 3 = 2 \\quad \\text{or} \\quad |x - 1| - 3 = -2$$\n$$|x - 1| = 5 \\quad \\text{or} \\quad |x - 1| = 1$$\n$$x = 6, -4 \\quad \\text{or} \\quad x = 2, 0$$\nFour solutions: $x = -4, 0, 2, 6$. Check $x = 0$: $\\big||-1| - 3\\big| = |1 - 3| = 2$ ✓.\n\n**(b)** Count the intersections of the W-shaped graph with the horizontal line $y = c$. The graph has zeros at $x = -2$ and $x = 4$ (where $|x - 1| = 3$) and a peak at $(1, 3)$.\n\n(i) $c < 0$: **0** solutions: an absolute value can't be negative, and the graph lies on or above the $x$-axis.\n(ii) $c = 0$: **2** solutions, $x = -2$ and $x = 4$ (the line touches the two bottom points).\n(iii) $0 < c < 3$: **4** solutions: the line cuts all four arms of the W, as in (a).\n(iv) $c = 3$: **3** solutions: $|x - 1| - 3 = \\pm 3$ gives $|x - 1| = 6$ ($x = 7$ or $-5$) or $|x - 1| = 0$ ($x = 1$, the peak).\n(v) $c > 3$: **2** solutions: $|x - 1| = 3 - c < 0$ is impossible, leaving only $|x - 1| = 3 + c$, which gives $2$ values.",
+  "linkedTopicIds": []
+ }
+]
