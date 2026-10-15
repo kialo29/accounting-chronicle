@@ -4,7 +4,7 @@
 
 A Star Wars: The Clone Wars alternate-universe fanfiction.
 
-**Summary:** AU from "The Wrong Jedi." Anakin never catches the bomber. Ahsoka is convicted, sentenced to death, then "mercifully" given life in a frozen Republic prison. Anakin sinks deeper into the Chancellor's debt, a guilty friend keeps a terrible secret, and a clone learns why good soldiers follow orders. Book One of a series.
+**Summary:** AU from "The Wrong Jedi." Anakin never catches the bomber. Ahsoka is convicted, sentenced to death, then "mercifully" given life in a frozen Republic prison. Anakin sinks deeper into the Chancellor's debt, a guilty friend keeps a terrible secret, and a clone discovers what his orders were always for. Book One of a series.
 
 **Content note:** Dark themes (imprisonment, betrayal, despair, deaths of named characters, choking). Violence without graphic gore. No romance beyond canon Anakin/Padmé.
 

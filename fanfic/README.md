@@ -11,7 +11,7 @@ Star Wars: The Clone Wars AU fanfiction. 30 chapters (29 + epilogue), three part
 
 ## FanFiction.net posting
 - **Title:** The Wrong Verdict
-- **Summary (320/384 chars):** AU from "The Wrong Jedi." Anakin never catches the bomber. Ahsoka is convicted, sentenced to death, then "mercifully" given life in a frozen Republic prison. Anakin sinks deeper into the Chancellor's debt, a guilty friend keeps a terrible secret, and a clone learns why good soldiers follow orders. Book One of a series.
+- **Summary (320/384 chars):** AU from "The Wrong Jedi." Anakin never catches the bomber. Ahsoka is convicted, sentenced to death, then "mercifully" given life in a frozen Republic prison. Anakin sinks deeper into the Chancellor's debt, a guilty friend keeps a terrible secret, and a clone discovers what his orders were always for. Book One of a series.
 - **Category:** Star Wars · **Rating:** T (dark themes, non-graphic violence; M if you prefer extra caution) · **Genre:** Angst/Drama · **Characters:** Ahsoka T., Anakin Skywalker, Barriss O., Rex
 - Post the front matter's disclaimer as an author's note on Chapter 1.
 
