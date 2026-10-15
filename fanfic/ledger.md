@@ -21,6 +21,7 @@
 - [Ch18] Juko: old Weequay mechanic, jeweler's loupe over right eye, welding apron, black-stained fingers. Ahsoka: raw ring around her neck, small burn under left jaw. Tess has a broken finger (Ahsoka gripped her frostbitten hand in the seizure). Borrowed saber: brushed-steel hilt, worn black ridged grip, dented emitter shroud, filed-off mark near pommel, blue blade, peaceful crystal, heavier than hers; she uses it reverse grip.
 - [Ch19] Tess's 'power cell' = Bane's cargo homing tag linked through the north dish; Bane paid her half by credit chit + promised clean ID. Bane: one side of face blistered, hat tip cut off; Justifier's port engine damaged; Hondo's north dish destroyed. Ahsoka's signal: 501st 'officer cut off' code from Christophsis (taught by Rex), sent via Hondo's short-range array. Pesk asked Ventress 2,000 credits for his stall-cam recording.
 - [Ch20] Fives travels on scrap hauler Gravel Saint from Berth Nine (captain Gatch, old Weequay, ruined left ear), via Ord Torvin and a Lanteeb-lane fuel dump, ~2 days; cost most of Rex's 3-year stipend. Fives: thin, feverish, infected left shoulder, left arm bound, a '5' inked at his temple; carries Rex's medkit (6 fever shots, bacta, binding) and the Guard comlink with new battery; officially 'deceased, recovery not attempted'. Rex's reply (public relay, old 501st band): 'Hold position. Go to ground. Contact arriving two days. Friendly.' Fives's recognition line: 'Rex says her sense of direction is still terrible.'
+- [Ch21] Outpost 'Number Nine' (Hondo: 'the first eight exploded'). Fives's '5' is at his RIGHT temple. Rex's medkit lid tape: 'ONE EVERY TWELVE HOURS. DON'T BE A HERO.'; 3 fever shots used, 3 remain.
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -43,6 +44,7 @@
 - [Ch18] Hondo kept the opened collar to sell. Tess asked about the off-world comm dish on the north tower; Ahsoka misreads Tess's worry as fear.
 - [Ch19] Bane still holds the collar control; vows to 'bring the collar to fit the key'. Ventress suspects Ahsoka's friend = the green-handed buyer (doesn't know the name). ORCHESTRATOR CONTINUITY DECISION: the plan to leave Florrum is changed in Ch20/21 — Rex's reply tells them to HOLD for a contact (Fives) arriving in ~2 days; Ahsoka and Ventress move from Hondo's base to an abandoned mining outpost in the Florrum canyons. Anakin finds them on Florrum in Ch22 via (a) Tarkin's intercept of the north-dish beacon traffic and (b) feeling Ahsoka in the Force again now the collar is off.
 - [Ch20] Anakin felt Ahsoka in the Force ~0200, collar off, no location yet. Rex hasn't involved Kix or removed his chip.
+- [Ch21] Only Ventress knows Ahsoka has named Barriss (Fives was asleep). Ahsoka believes the fourth candle is for Letta or Jackar. Ventress senses her sabers 'down, under a great deal of stone' beneath the Temple.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -63,4 +65,5 @@
 - [Ch18] Force restored to Ahsoka. Ventress has arrived at Hondo's base, sabreless.
 - [Ch19] Tess: non-lethal side wound, staying at Hondo's. Ventress has one hidden knife, no sabers. Ahsoka has the borrowed blue saber.
 - [Ch20] Resolute bound for Narkis. Rex keeps the code on his cracked datapad; Anakin knows nothing of Fives or the chip.
+- [Ch21] Dawn: Anakin and Ahsoka felt each other in the Force; he is very close to Number Nine.
 
