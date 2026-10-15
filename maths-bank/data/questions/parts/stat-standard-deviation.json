@@ -1,0 +1,305 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the variance and the standard deviation of\n$$2,\\ 4,\\ 6,\\ 8,\\ 10$$\nGive the standard deviation to 3 significant figures.",
+  "hint": "Use $\\sigma^2 = \\dfrac{\\sum x^2}{n} - \\bar{x}^2$. Square each value first, then add.",
+  "answer": "Variance $= 8$, standard deviation $= \\sqrt{8} \\approx 2.83$",
+  "solution": "$\\sum x = 30$, $n = 5$, so $\\bar{x} = 6$.\n\n$\\sum x^2 = 4 + 16 + 36 + 64 + 100 = 220$\n\n$$\\sigma^2 = \\frac{220}{5} - 6^2 = 44 - 36 = 8$$\n$$\\sigma = \\sqrt{8} = 2.83 \\text{ (3 s.f.)}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "stat-standard-deviation-q01",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the variance and the standard deviation of\n$$12,\\ 14,\\ 16,\\ 18,\\ 20$$\nGive the standard deviation to 3 significant figures.",
+  "hint": "Compare with $2, 4, 6, 8, 10$. How have the values changed? Does that change how spread out they are?",
+  "answer": "Variance $= 8$, standard deviation $= \\sqrt{8} \\approx 2.83$",
+  "solution": "**What changed:** every value from the previous question has had **10 added**.\n\n$\\sum x = 80$, so $\\bar{x} = 16$. $\\sum x^2 = 144 + 196 + 256 + 324 + 400 = 1320$.\n$$\\sigma^2 = \\frac{1320}{5} - 16^2 = 264 - 256 = 8, \\qquad \\sigma = \\sqrt{8} = 2.83 \\text{ (3 s.f.)}$$\n\nThe mean went up by 10, but the variance and standard deviation are **unchanged**: adding a constant shifts the data without changing its spread. (Every deviation $x - \\bar{x}$ is still $-4, -2, 0, 2, 4$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "stat-standard-deviation-q02",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the variance and the standard deviation of\n$$6,\\ 12,\\ 18,\\ 24,\\ 30$$\nGive the standard deviation to 3 significant figures.",
+  "hint": "These are the values $2, 4, 6, 8, 10$ multiplied by a constant. What happens to each deviation from the mean?",
+  "answer": "Variance $= 72$, standard deviation $= \\sqrt{72} = 6\\sqrt{2} \\approx 8.49$",
+  "solution": "**What changed:** compared with $2, 4, 6, 8, 10$, every value has been **multiplied by 3** (rather than having a constant added).\n\n$\\sum x = 90$, so $\\bar{x} = 18$. $\\sum x^2 = 36 + 144 + 324 + 576 + 900 = 1980$.\n$$\\sigma^2 = \\frac{1980}{5} - 18^2 = 396 - 324 = 72, \\qquad \\sigma = \\sqrt{72} = 8.49 \\text{ (3 s.f.)}$$\n\nEach deviation is multiplied by 3, so the standard deviation is multiplied by 3 ($3 \\times 2.83 = 8.49$) and the variance by $3^2 = 9$ ($9 \\times 8 = 72$).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "stat-standard-deviation-q03",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the variance and the standard deviation of\n$$2,\\ 4,\\ 6,\\ 8,\\ 10,\\ 6$$\nGive the standard deviation to 3 significant figures.",
+  "hint": "This is $2, 4, 6, 8, 10$ with one extra value. Is the extra value far from the mean or at the mean?",
+  "answer": "Variance $= \\frac{20}{3} \\approx 6.67$, standard deviation $\\approx 2.58$",
+  "solution": "**What changed:** compared with $2, 4, 6, 8, 10$, one extra value, 6, has been added. It is equal to the mean.\n\n$\\sum x = 36$, $n = 6$, so $\\bar{x} = 6$ (unchanged). $\\sum x^2 = 220 + 36 = 256$.\n$$\\sigma^2 = \\frac{256}{6} - 6^2 = 42.67 - 36 = \\frac{20}{3} = 6.67 \\text{ (3 s.f.)}, \\qquad \\sigma = \\sqrt{\\tfrac{20}{3}} = 2.58 \\text{ (3 s.f.)}$$\n\nThe sum of squared deviations is still 40, but it is now shared over 6 values instead of 5, so the standard deviation **decreases** from 2.83 to 2.58. A value at the mean makes the data more concentrated about the mean.",
+  "id": "stat-standard-deviation-q04",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For a set of 10 values,\n$$\\sum x = 50, \\qquad \\sum x^2 = 290$$\nFind the mean, the variance and the standard deviation.",
+  "hint": "$\\bar{x} = \\dfrac{\\sum x}{n}$ and $\\sigma^2 = \\dfrac{\\sum x^2}{n} - \\bar{x}^2$.",
+  "answer": "Mean $= 5$, variance $= 4$, standard deviation $= 2$",
+  "solution": "$$\\bar{x} = \\frac{50}{10} = 5$$\n$$\\sigma^2 = \\frac{290}{10} - 5^2 = 29 - 25 = 4$$\n$$\\sigma = \\sqrt{4} = 2$$\n\nAlternatively, $S_{xx} = \\sum x^2 - \\frac{(\\sum x)^2}{n} = 290 - \\frac{2500}{10} = 40$, and $\\sigma^2 = \\frac{S_{xx}}{n} = \\frac{40}{10} = 4$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "stat-standard-deviation-q05",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "The table shows the number of goals, $x$, scored by a football team in each of its 24 league matches.\n\n| Goals, $x$ | 0 | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|---|\n| Frequency, $f$ | 5 | 8 | 6 | 3 | 2 |\n\nCalculate the mean and the standard deviation of the number of goals per match. Give your answers to 3 significant figures.",
+  "hint": "Add columns for $fx$ and $fx^2$. Then $\\sigma^2 = \\dfrac{\\sum fx^2}{\\sum f} - \\bar{x}^2$.",
+  "answer": "Mean $= 1.54$ goals, standard deviation $= 1.19$ goals (3 s.f.)",
+  "solution": "| $x$ | $f$ | $fx$ | $fx^2$ |\n|---|---|---|---|\n| 0 | 5 | 0 | 0 |\n| 1 | 8 | 8 | 8 |\n| 2 | 6 | 12 | 24 |\n| 3 | 3 | 9 | 27 |\n| 4 | 2 | 8 | 32 |\n| Total | 24 | 37 | 91 |\n\n$$\\bar{x} = \\frac{37}{24} = 1.5416\\ldots = 1.54 \\text{ goals (3 s.f.)}$$\n$$\\sigma^2 = \\frac{91}{24} - \\left(\\frac{37}{24}\\right)^2 = 3.7916\\ldots - 2.3767\\ldots = 1.4149\\ldots$$\n$$\\sigma = \\sqrt{1.4149\\ldots} = 1.19 \\text{ goals (3 s.f.)}$$\n\nThe team typically scores about 1.5 goals a match, and the number of goals typically differs from this by about 1.2.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "stat-standard-deviation-q06",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Tom is asked to find the standard deviation of\n$$3,\\ 5,\\ 6,\\ 9,\\ 12$$\nHis working is shown below.\n\n\"$\\sum x = 35$, so $\\bar{x} = 7$.\n\n$\\sigma^2 = \\dfrac{\\sum x^2}{n} - \\bar{x}^2 = \\dfrac{35^2}{5} - 7^2 = 245 - 49 = 196$\n\n$\\sigma = \\sqrt{196} = 14$\"\n\n(a) Identify Tom's mistake and find the correct standard deviation to 3 significant figures.\n\n(b) Explain how Tom could have noticed that his answer was unreasonable.",
+  "hint": "What is the difference between $\\sum x^2$ and $\\left(\\sum x\\right)^2$?",
+  "answer": "(a) Tom used $\\left(\\sum x\\right)^2 = 35^2$ instead of $\\sum x^2 = 295$. Correct: $\\sigma^2 = 59 - 49 = 10$, $\\sigma = \\sqrt{10} \\approx 3.16$. (b) The range is only 9, so a standard deviation of 14 (larger than the range) is impossible.",
+  "solution": "(a) Tom's mean is correct. His error is in the variance: he wrote $\\frac{35^2}{5}$, which uses $\\left(\\sum x\\right)^2$, the **square of the total**. The formula needs $\\sum x^2$, the **total of the squares**: square each value first, then add.\n$$\\sum x^2 = 9 + 25 + 36 + 81 + 144 = 295$$\n$$\\sigma^2 = \\frac{295}{5} - 7^2 = 59 - 49 = 10, \\qquad \\sigma = \\sqrt{10} = 3.16 \\text{ (3 s.f.)}$$\n\n(b) The values range from 3 to 12, so the range is 9 and no value is more than 9 from the mean. The standard deviation, a typical distance from the mean, cannot be 14.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "stat-standard-deviation-q07",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A survey recorded the number of people, $x$, in each of 20 cars passing a checkpoint.\n\n| $x$ | 1 | 2 | 3 | 4 |\n|---|---|---|---|---|\n| $f$ | 4 | 6 | 7 | 3 |\n\nAled's working for the standard deviation is shown below.\n\n\"$\\sum fx = 4 + 12 + 21 + 12 = 49$, so $\\bar{x} = \\dfrac{49}{20} = 2.45$.\n\n$\\sum (fx)^2 = 4^2 + 12^2 + 21^2 + 12^2 = 16 + 144 + 441 + 144 = 745$\n\n$\\sigma^2 = \\dfrac{745}{20} - 2.45^2 = 37.25 - 6.0025 = 31.2475$, so $\\sigma = 5.59$.\"\n\nIdentify Aled's mistake and find the correct standard deviation to 3 significant figures.",
+  "hint": "Only the value $x$ should be squared, not the frequency. Each car with 3 people contributes $3^2$.",
+  "answer": "Aled squared $fx$ instead of multiplying $f$ by $x^2$. $\\sum fx^2 = 139$, $\\sigma^2 = 6.95 - 6.0025 = 0.9475$, $\\sigma \\approx 0.973$.",
+  "solution": "Aled's mean is correct. His mistake is computing $\\sum (fx)^2$ instead of $\\sum fx^2$.\n\n$fx^2$ means $f \\times x^2$: for example the 7 cars with 3 people each contribute $3^2 = 9$, giving $7 \\times 9 = 63$, not $(7 \\times 3)^2 = 441$. Squaring $fx$ squares the frequency as well.\n\n**Correct working:**\n\n| $x$ | $f$ | $fx$ | $fx^2$ |\n|---|---|---|---|\n| 1 | 4 | 4 | 4 |\n| 2 | 6 | 12 | 24 |\n| 3 | 7 | 21 | 63 |\n| 4 | 3 | 12 | 48 |\n| Total | 20 | 49 | 139 |\n\n$$\\sigma^2 = \\frac{139}{20} - 2.45^2 = 6.95 - 6.0025 = 0.9475$$\n$$\\sigma = \\sqrt{0.9475} = 0.973 \\text{ people (3 s.f.)}$$\n\nSense check: all the values lie between 1 and 4, so a standard deviation of 5.59 was impossible.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "stat-standard-deviation-q08",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The lengths, $x$ cm, of 40 cables were coded using\n$$y = \\frac{x - 200}{10}$$\nThe coded data have mean $\\bar{y} = 1.4$ and standard deviation $\\sigma_y = 2.3$.\n\nKirsty's working to find the mean and standard deviation of $x$ is shown below.\n\n\"$x = 10y + 200$\n\n$\\bar{x} = 10(1.4) + 200 = 214$ cm\n\n$\\sigma_x = 10(2.3) + 200 = 223$ cm\"\n\nIdentify Kirsty's mistake, explain why it is wrong, and find the correct standard deviation of $x$.",
+  "hint": "Which part of the coding moves the data, and which part stretches it? Which one affects spread?",
+  "answer": "Kirsty added 200 to the standard deviation. Adding a constant does not change spread, so only the scale factor applies: $\\sigma_x = 10 \\times 2.3 = 23$ cm. (Her mean, 214 cm, is correct.)",
+  "solution": "Kirsty's rearrangement $x = 10y + 200$ and her mean $\\bar{x} = 214$ cm are correct.\n\nHer mistake is applying the whole coding to the standard deviation. The \"$+200$\" **shifts every value by the same amount**: it moves the mean but leaves every distance from the mean unchanged, so it has **no effect on the spread**. Only the multiplication by 10 stretches the distances.\n$$\\sigma_x = 10 \\sigma_y = 10 \\times 2.3 = 23 \\text{ cm}$$\n\n(Her answer of 223 cm would mean the cables typically differ from the mean by more than the mean itself, which is absurd.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "stat-standard-deviation-q09",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Two machines cut metal rods. For a sample of rods from each machine:\n\n* Machine A: the **variance** of the lengths is $2.25\\ \\text{mm}^2$.\n* Machine B: the **standard deviation** of the lengths is $1.8$ mm.\n\nPriya says, \"Machine A is less consistent, because $2.25$ is bigger than $1.8$.\"\n\nIs Priya correct? Explain your answer.",
+  "hint": "Are the two numbers measuring the same thing? Convert one so that you compare like with like.",
+  "answer": "No. 2.25 is a variance (in mm²) and 1.8 is a standard deviation (in mm). Machine A's standard deviation is $\\sqrt{2.25} = 1.5$ mm, which is less than 1.8 mm, so Machine A is **more** consistent.",
+  "solution": "Priya is **not** correct: she is comparing a variance with a standard deviation.\n\nThe variance is the mean of the **squared** deviations, measured in $\\text{mm}^2$; the standard deviation is its square root, measured in mm. To compare, convert Machine A's variance:\n$$\\sigma_A = \\sqrt{2.25} = 1.5 \\text{ mm}$$\n\nNow compare like with like: $\\sigma_A = 1.5$ mm $< \\sigma_B = 1.8$ mm.\n\nSo Machine A's lengths are **less** spread out: Machine A is the **more** consistent machine. (Equivalently, Machine B's variance is $1.8^2 = 3.24\\ \\text{mm}^2 > 2.25\\ \\text{mm}^2$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "stat-standard-deviation-q10",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A quality-control inspector takes a random sample of 5 bags of crisps from a production line. The masses, in grams, are\n$$25.4,\\ 24.8,\\ 25.6,\\ 25.0,\\ 25.2$$\n\n(a) Calculate the mean mass and $\\sigma$, the standard deviation of these 5 masses (dividing by $n$).\n\n(b) In US and AP Statistics work, the **sample** standard deviation $s = \\sqrt{\\dfrac{\\sum (x - \\bar{x})^2}{n - 1}}$ is used to estimate the variability of the whole production line. Calculate $s$.\n\nGive your standard deviations to 3 significant figures.",
+  "hint": "Work out each deviation $x - \\bar{x}$, square it and add. Then divide by $n$ for $\\sigma$, or by $n - 1$ for $s$, before taking the square root.",
+  "answer": "(a) Mean $= 25.2$ g, $\\sigma = \\sqrt{0.08} \\approx 0.283$ g (b) $s = \\sqrt{0.1} \\approx 0.316$ g",
+  "solution": "(a) $\\sum x = 126$, so $\\bar{x} = \\frac{126}{5} = 25.2$ g.\n\n| $x$ | 25.4 | 24.8 | 25.6 | 25.0 | 25.2 |\n|---|---|---|---|---|---|\n| $x - \\bar{x}$ | 0.2 | $-0.4$ | 0.4 | $-0.2$ | 0 |\n| $(x - \\bar{x})^2$ | 0.04 | 0.16 | 0.16 | 0.04 | 0 |\n\n$\\sum (x - \\bar{x})^2 = 0.4$\n$$\\sigma = \\sqrt{\\frac{0.4}{5}} = \\sqrt{0.08} = 0.283 \\text{ g (3 s.f.)}$$\n\n(b)\n$$s = \\sqrt{\\frac{0.4}{5 - 1}} = \\sqrt{0.1} = 0.316 \\text{ g (3 s.f.)}$$\n\n$s$ is slightly larger than $\\sigma$. Dividing by $n - 1$ corrects for the fact that a sample's values tend to be closer to their own mean than to the true mean of the whole production line.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "stat-standard-deviation-q11",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 8,
+  "question": "The daily maximum temperature, $t$ °C, at a weather station was recorded on 30 days in June. The data were coded using\n$$y = \\frac{t - 15}{2}$$\ngiving\n$$\\sum y = 24, \\qquad \\sum y^2 = 156$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the mean and the standard deviation of $y$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the mean and the standard deviation of $t$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "On a 31st day the maximum temperature was $16.6$ °C. State, giving a reason, the effect of including this day on the mean and on the standard deviation.",
+    "marks": 2
+   }
+  ],
+  "hint": "Find $\\bar{y}$ and $\\sigma_y$ first. Then use $t = 2y + 15$: the $+15$ affects only the mean.",
+  "answer": "(a) $\\bar{y} = 0.8$, $\\sigma_y = 2.14$ (3 s.f.) (b) $\\bar{t} = 16.6$ °C, $\\sigma_t = 4.27$ °C (3 s.f.) (c) The mean stays the same, because the new value equals the mean; the standard deviation decreases, because the sum of squared deviations is unchanged but it is divided by a larger $n$.",
+  "solution": "(a) $\\bar{y} = \\dfrac{24}{30} = 0.8$ **B1**\n\n$\\sigma_y^2 = \\dfrac{156}{30} - 0.8^2 = 5.2 - 0.64 = 4.56$ **M1**\n\n$\\sigma_y = \\sqrt{4.56} = 2.135\\ldots = 2.14$ (3 s.f.) **A1**\n\n(b) $t = 2y + 15$.\n\n$\\bar{t} = 2(0.8) + 15 = 16.6$ °C **M1 A1**\n\n$\\sigma_t = 2 \\times 2.135\\ldots = 4.27$ °C (3 s.f.) **B1** (the $+15$ does not affect the spread)\n\n(c) The **mean is unchanged** (16.6 °C), because the new value is equal to the mean. **B1**\n\nThe **standard deviation decreases**: the new value adds 0 to $\\sum (t - \\bar{t})^2$, but this sum is now divided by 31 instead of 30. **B1**\n\n(Check: new $\\sigma_t = \\sqrt{\\frac{30 \\times 4.27^2}{31}} \\approx 4.20$ °C.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "stat-standard-deviation-q12",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Sophie recorded the time, $x$ minutes, of her cycle commute on 20 days.\n$$\\sum x = 520, \\qquad \\sum x^2 = 14\\,140$$\n\n(a) Find the mean and standard deviation of her times.\n\n(b) One of the times was 41 minutes, on a day when the road was closed. An outlier is defined as a value more than 2 standard deviations from the mean. Show that 41 minutes is an outlier.\n\n(c) Sophie removes the 41-minute time. Find the new mean and standard deviation of the remaining 19 times.\n\n(d) Explain why the standard deviation changed much more than the mean.",
+  "hint": "For (c), subtract 41 from $\\sum x$ and $41^2$ from $\\sum x^2$, and use $n = 19$.",
+  "answer": "(a) Mean 26 minutes, SD $\\sqrt{31} \\approx 5.57$ minutes (b) $26 + 2(5.57) = 37.1 < 41$, so 41 is an outlier. (c) Mean $\\approx 25.2$ minutes, SD $\\approx 4.49$ minutes (d) The SD squares each deviation, so the large deviation of 41 (15 minutes from the mean) has a much bigger effect on it than on the mean.",
+  "solution": "(a) $\\bar{x} = \\frac{520}{20} = 26$ minutes.\n$$\\sigma^2 = \\frac{14\\,140}{20} - 26^2 = 707 - 676 = 31, \\qquad \\sigma = \\sqrt{31} = 5.57 \\text{ minutes (3 s.f.)}$$\n\n(b) $\\bar{x} + 2\\sigma = 26 + 2(5.567\\ldots) = 37.1$ minutes. Since $41 > 37.1$, the time of 41 minutes is more than 2 standard deviations above the mean, so it is an outlier.\n\n(c) New totals: $\\sum x = 520 - 41 = 479$ and $\\sum x^2 = 14\\,140 - 41^2 = 14\\,140 - 1681 = 12\\,459$, with $n = 19$.\n$$\\bar{x} = \\frac{479}{19} = 25.21\\ldots = 25.2 \\text{ minutes (3 s.f.)}$$\n$$\\sigma^2 = \\frac{12\\,459}{19} - \\left(\\frac{479}{19}\\right)^2 = 655.73\\ldots - 635.57\\ldots = 20.16\\ldots$$\n$$\\sigma = 4.49 \\text{ minutes (3 s.f.)}$$\n\n(d) The mean fell by under 1 minute but the standard deviation fell by about 1.1 minutes, around 20%. The mean uses the deviations themselves: removing one value 15 minutes from the mean shifts it by only about $\\frac{15}{19}$ of a minute. The variance uses **squared** deviations: the outlier contributed $15^2 = 225$ to the total of squared deviations ($20 \\times 31 = 620$), more than a third of it. So one extreme value has a big influence on the standard deviation.",
+  "id": "stat-standard-deviation-q13",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Two classes sat the same test.\n\n* Class A: 10 students, mean mark 12, standard deviation 2.\n* Class B: 15 students, mean mark 17, standard deviation 3.\n\nFind the mean and the standard deviation of the marks of all 25 students combined. Give the standard deviation as an exact value and to 3 significant figures.",
+  "hint": "For each class, recover $\\sum x$ from the mean and $\\sum x^2$ from $\\sigma^2 = \\frac{\\sum x^2}{n} - \\bar{x}^2$. Then combine the totals.",
+  "answer": "Mean $= 15$, standard deviation $= \\sqrt{13} \\approx 3.61$",
+  "solution": "**Class A:** $\\sum x = 10 \\times 12 = 120$.\n\nFrom $2^2 = \\frac{\\sum x^2}{10} - 12^2$: $\\sum x^2 = 10(4 + 144) = 1480$.\n\n**Class B:** $\\sum x = 15 \\times 17 = 255$.\n\nFrom $3^2 = \\frac{\\sum x^2}{15} - 17^2$: $\\sum x^2 = 15(9 + 289) = 4470$.\n\n**Combined:** $n = 25$, $\\sum x = 375$, $\\sum x^2 = 5950$.\n$$\\bar{x} = \\frac{375}{25} = 15$$\n$$\\sigma^2 = \\frac{5950}{25} - 15^2 = 238 - 225 = 13, \\qquad \\sigma = \\sqrt{13} = 3.61 \\text{ (3 s.f.)}$$\n\nNote that the combined standard deviation is larger than either class's, because the two class means are 5 marks apart: the combined data are spread around both centres.",
+  "id": "stat-standard-deviation-q14",
+  "topicId": "stat-standard-deviation",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 9,
+  "question": "The masses, $m$ grams, of 50 eggs from a farm are summarised below.\n\n| Mass, $m$ (g) | $50 \\le m < 55$ | $55 \\le m < 60$ | $60 \\le m < 65$ | $65 \\le m < 70$ | $70 \\le m < 75$ |\n|---|---|---|---|---|---|\n| Frequency | 6 | 14 | 18 | 9 | 3 |\n\nThe midpoints, $x$, of the classes are coded using $y = \\dfrac{x - 62.5}{5}$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\sum fy = -11$ and find $\\sum fy^2$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence estimate the mean and the standard deviation of the masses of the eggs.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Explain why your answers to (b) are estimates.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Eggs from a second farm have mean mass 63.0 g and standard deviation 3.1 g. Compare the masses of the eggs from the two farms.",
+    "marks": 2
+   }
+  ],
+  "hint": "The midpoints are $52.5, 57.5, \\ldots, 72.5$, which code to $-2, -1, 0, 1, 2$.",
+  "answer": "(a) $\\sum fy^2 = 59$ (b) Mean $\\approx 61.4$ g, SD $\\approx 5.32$ g (c) The data are grouped, so the midpoints are used instead of the actual masses. (d) The second farm's eggs are heavier on average (63.0 g vs 61.4 g) and more consistent in mass (SD 3.1 g vs 5.32 g).",
+  "solution": "(a) Midpoints $52.5, 57.5, 62.5, 67.5, 72.5$ code to $y = -2, -1, 0, 1, 2$.\n\n$\\sum fy = 6(-2) + 14(-1) + 18(0) + 9(1) + 3(2) = -12 - 14 + 0 + 9 + 6 = -11$ **B1**\n\n$\\sum fy^2 = 6(4) + 14(1) + 0 + 9(1) + 3(4) = 24 + 14 + 9 + 12 = 59$ **B1**\n\n(b) $\\bar{y} = \\frac{-11}{50} = -0.22$, so $\\bar{x} = 62.5 + 5(-0.22) = 61.4$ g **M1 A1**\n\n$\\sigma_y^2 = \\frac{59}{50} - (-0.22)^2 = 1.18 - 0.0484 = 1.1316$, so $\\sigma_y = 1.0637\\ldots$ **M1**\n\n$\\sigma_x = 5 \\times 1.0637\\ldots = 5.32$ g (3 s.f.) **A1**\n\n(c) The exact masses are not known: every egg in a class is assumed to have the midpoint mass. **B1**\n\n(d) On average, eggs from the second farm are heavier (mean 63.0 g compared with 61.4 g). **B1**\n\nThe second farm's eggs are more consistent in mass, as their standard deviation is smaller (3.1 g compared with 5.32 g). **B1**",
+  "linkedTopicIds": [
+   "stat-averages-frequency-tables",
+   "stat-comparing-distributions"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "id": "stat-standard-deviation-q15",
+  "topicId": "stat-standard-deviation"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "For data $x_1, x_2, \\ldots, x_n$ with mean $\\bar{x}$:\n\n(a) Prove that\n$$\\sum_{i=1}^{n} (x_i - \\bar{x})^2 = \\sum_{i=1}^{n} x_i^2 - n\\bar{x}^2$$\nand hence that the two formulae $\\dfrac{\\sum (x - \\bar{x})^2}{n}$ and $\\dfrac{\\sum x^2}{n} - \\bar{x}^2$ for the variance agree.\n\n(b) The data are coded using $y_i = \\dfrac{x_i - a}{b}$, where $a$ and $b > 0$ are constants. Prove that $\\bar{y} = \\dfrac{\\bar{x} - a}{b}$ and $\\sigma_y = \\dfrac{\\sigma_x}{b}$.",
+  "hint": "Expand $(x_i - \\bar{x})^2$ and split the sum into three sums. Remember that $\\bar{x}$ is a constant and $\\sum x_i = n\\bar{x}$.",
+  "answer": "(a) Proof: expanding gives $\\sum x_i^2 - 2\\bar{x}\\sum x_i + n\\bar{x}^2 = \\sum x_i^2 - n\\bar{x}^2$; dividing by $n$ gives the result. (b) Proof: $y_i - \\bar{y} = \\frac{x_i - \\bar{x}}{b}$, so $\\sigma_y^2 = \\frac{\\sigma_x^2}{b^2}$ (see solution).",
+  "solution": "(a) Expand the bracket:\n$$\\sum (x_i - \\bar{x})^2 = \\sum \\left(x_i^2 - 2\\bar{x}x_i + \\bar{x}^2\\right) = \\sum x_i^2 - 2\\bar{x}\\sum x_i + \\sum \\bar{x}^2$$\nSince $\\bar{x}$ is a constant, $\\sum_{i=1}^n \\bar{x}^2 = n\\bar{x}^2$, and since $\\bar{x} = \\frac{\\sum x_i}{n}$, $\\sum x_i = n\\bar{x}$. So\n$$\\sum (x_i - \\bar{x})^2 = \\sum x_i^2 - 2\\bar{x}(n\\bar{x}) + n\\bar{x}^2 = \\sum x_i^2 - n\\bar{x}^2$$\nDividing by $n$:\n$$\\frac{\\sum (x - \\bar{x})^2}{n} = \\frac{\\sum x^2}{n} - \\bar{x}^2 \\quad \\blacksquare$$\n\n(b) **Mean:**\n$$\\bar{y} = \\frac{1}{n}\\sum \\frac{x_i - a}{b} = \\frac{1}{b}\\left(\\frac{\\sum x_i}{n} - \\frac{na}{n}\\right) = \\frac{\\bar{x} - a}{b}$$\n\n**Standard deviation:** each deviation is\n$$y_i - \\bar{y} = \\frac{x_i - a}{b} - \\frac{\\bar{x} - a}{b} = \\frac{x_i - \\bar{x}}{b}$$\nThe constant $a$ has cancelled: shifting the data does not change the deviations. So\n$$\\sigma_y^2 = \\frac{1}{n}\\sum (y_i - \\bar{y})^2 = \\frac{1}{b^2} \\cdot \\frac{1}{n}\\sum (x_i - \\bar{x})^2 = \\frac{\\sigma_x^2}{b^2}$$\nTaking the positive square root (with $b > 0$): $\\sigma_y = \\dfrac{\\sigma_x}{b}$. $\\blacksquare$",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence",
+   "alg-algebraic-proof"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "id": "stat-standard-deviation-q16",
+  "topicId": "stat-standard-deviation"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Using the standard results $\\displaystyle\\sum_{r=1}^{n} r = \\frac{n(n+1)}{2}$ and $\\displaystyle\\sum_{r=1}^{n} r^2 = \\frac{n(n+1)(2n+1)}{6}$, show that the standard deviation of the integers $1, 2, 3, \\ldots, n$ is\n$$\\sqrt{\\frac{n^2 - 1}{12}}$$\n\n(b) Hence find the standard deviation of the score on a fair six-sided dice (treating the six equally likely scores as the data set).\n\n(c) Hence find the standard deviation of $10, 20, 30, \\ldots, 100$.\n\nGive your answers to (b) and (c) to 3 significant figures.",
+  "hint": "Find $\\bar{x} = \\frac{n+1}{2}$ and $\\frac{\\sum x^2}{n}$, then subtract and factorise out $\\frac{n+1}{12}$.",
+  "answer": "(a) Shown: $\\sigma^2 = \\frac{(n+1)(2n+1)}{6} - \\frac{(n+1)^2}{4} = \\frac{n^2 - 1}{12}$. (b) $\\sqrt{\\frac{35}{12}} \\approx 1.71$ (c) $10\\sqrt{\\frac{99}{12}} \\approx 28.7$",
+  "solution": "(a) Mean:\n$$\\bar{x} = \\frac{1}{n} \\cdot \\frac{n(n+1)}{2} = \\frac{n+1}{2}$$\nVariance:\n$$\\sigma^2 = \\frac{1}{n} \\cdot \\frac{n(n+1)(2n+1)}{6} - \\left(\\frac{n+1}{2}\\right)^2 = \\frac{(n+1)(2n+1)}{6} - \\frac{(n+1)^2}{4}$$\n$$= \\frac{(n+1)\\left[2(2n+1) - 3(n+1)\\right]}{12} = \\frac{(n+1)(n-1)}{12} = \\frac{n^2 - 1}{12}$$\nSo $\\sigma = \\sqrt{\\dfrac{n^2 - 1}{12}}$. $\\blacksquare$\n\n(b) $n = 6$:\n$$\\sigma = \\sqrt{\\frac{35}{12}} = 1.71 \\text{ (3 s.f.)}$$\n\n(c) $10, 20, \\ldots, 100$ is $10 \\times (1, 2, \\ldots, 10)$. Multiplying every value by 10 multiplies the standard deviation by 10:\n$$\\sigma = 10\\sqrt{\\frac{10^2 - 1}{12}} = 10\\sqrt{\\frac{99}{12}} = 10\\sqrt{8.25} = 28.7 \\text{ (3 s.f.)}$$",
+  "linkedTopicIds": [
+   "fur-series-summation",
+   "pure-sigma-recurrence"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "stat-standard-deviation-q17",
+  "topicId": "stat-standard-deviation"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Four numbers are $3,\\ 7,\\ a,\\ b$, where $a < b$. Their mean is 6 and their standard deviation is $\\sqrt{5}$.\n\nFind $a$ and $b$.",
+  "hint": "Use the mean to find $a + b$, and the variance to find $a^2 + b^2$. Then solve the two equations simultaneously.",
+  "answer": "$a = 5$, $b = 9$",
+  "solution": "**Mean:** $\\dfrac{3 + 7 + a + b}{4} = 6$, so $a + b = 24 - 10 = 14$.\n\n**Variance:** $\\dfrac{\\sum x^2}{4} - 6^2 = 5$, so $\\sum x^2 = 4(41) = 164$:\n$$9 + 49 + a^2 + b^2 = 164 \\;\\Rightarrow\\; a^2 + b^2 = 106$$\n\n**Solve:** substitute $b = 14 - a$:\n$$a^2 + (14 - a)^2 = 106 \\;\\Rightarrow\\; 2a^2 - 28a + 196 = 106 \\;\\Rightarrow\\; a^2 - 14a + 45 = 0$$\n$$(a - 5)(a - 9) = 0$$\nSo $a = 5, b = 9$ or $a = 9, b = 5$. Since $a < b$: $a = 5$, $b = 9$.\n\n**Check:** $3, 5, 7, 9$ has mean 6 and deviations $-3, -1, 1, 3$, so $\\sigma^2 = \\frac{9 + 1 + 1 + 9}{4} = 5$ ✓.",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "stat-standard-deviation-q18",
+  "topicId": "stat-standard-deviation"
+ }
+]
