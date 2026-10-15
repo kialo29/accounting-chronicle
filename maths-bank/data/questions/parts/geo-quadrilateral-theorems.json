@@ -1,0 +1,271 @@
+[
+ {
+  "id": "geo-quadrilateral-theorems-q01",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 245\" width=\"360\" height=\"245\"><polygon points=\"54,210 306,210 230,70 90,70\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"72\" y1=\"140\" x2=\"268\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><polyline points=\"174,214.2 180,210 174,205.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"154,74.2 160,70 154,65.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><circle cx=\"72\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><circle cx=\"268\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"180\" y=\"232\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">18 in.</text><text x=\"160\" y=\"60\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10 in.</text><text x=\"180\" y=\"133\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">midsegment</text></svg>",
+  "question": "A trapezoid has bases of length 10 in. and 18 in. Find the length of its midsegment.",
+  "hint": "The midsegment of a trapezoid is the average of the two bases.",
+  "answer": "14 in.",
+  "solution": "Trapezoid Midsegment Theorem:\n$$\\text{midsegment} = \\frac{1}{2}(b_1 + b_2) = \\frac{1}{2}(10 + 18) = \\frac{1}{2}(28) = 14 \\text{ in.}$$\n\nCheck: 14 lies between the two bases, 10 and 18, as it must.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q02",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The midsegment of a trapezoid is 14 in. long. One base is 10 in. long. Find the length of the other base.",
+  "hint": "Write $14 = \\frac{1}{2}(10 + b)$ and solve for $b$.",
+  "answer": "18 in.",
+  "solution": "$$14 = \\frac{1}{2}(10 + b)$$\n\nMultiply both sides by 2:\n$$28 = 10 + b \\quad\\Rightarrow\\quad b = 18 \\text{ in.}$$\n\n**What changed:** the unknown moved from the midsegment to a base, so we undo the \"halve\" (double) and then subtract. A common error is $b = 14 - 10 = 4$ or $b = 14 + 10 = 24$; neither gives an average of 14. Check: $\\frac{1}{2}(10 + 18) = 14$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q03",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A trapezoid has bases of length 10 and $3x$, and its midsegment has length 14. Find $x$.",
+  "hint": "Set up $\\frac{1}{2}(10 + 3x) = 14$.",
+  "answer": "$x = 6$",
+  "solution": "$$\\frac{1}{2}(10 + 3x) = 14$$\n$$10 + 3x = 28$$\n$$3x = 18 \\quad\\Rightarrow\\quad x = 6$$\n\n**What changed:** the unknown base is now an expression, $3x$. The equation is the same as in the previous question; one extra step finds $x$ from $3x = 18$. The bases are 10 and 18.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q04",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A trapezoid has bases of length 10 and $3x$, and its midsegment has length $x + 8$. Find $x$, the length of the midsegment and the length of the longer base.",
+  "hint": "Same equation as before, but the midsegment is now an expression too: $\\frac{1}{2}(10 + 3x) = x + 8$. Clear the fraction first.",
+  "answer": "$x = 6$; midsegment 14; longer base 18",
+  "solution": "$$\\frac{1}{2}(10 + 3x) = x + 8$$\n\nMultiply both sides by 2:\n$$10 + 3x = 2x + 16$$\n$$x = 6$$\n\nMidsegment $= 6 + 8 = 14$; bases 10 and $3(6) = 18$. Check: $\\frac{1}{2}(10 + 18) = 14$.\n\n**What changed:** the midsegment became an expression in $x$, so $x$ now appears on both sides. Multiplying by 2 must double **every** term on the right ($2x + 16$, not $2x + 8$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q05",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "For each property, list **every** shape from this list for which the property is always true:\n\nparallelogram, rectangle, rhombus, square, kite, isosceles trapezoid\n\n(a) The diagonals bisect each other.\n\n(b) The diagonals are congruent.\n\n(c) The diagonals are perpendicular.\n\n(d) A diagonal bisects the two angles at its endpoints.",
+  "hint": "Start with the general parallelogram: what is true for it is true for rectangles, rhombuses and squares too. Then ask what extra facts the special shapes add.",
+  "answer": "(a) parallelogram, rectangle, rhombus, square (b) rectangle, square, isosceles trapezoid (c) rhombus, square, kite (d) rhombus, square, kite",
+  "solution": "(a) **Parallelogram, rectangle, rhombus, square.** Every parallelogram has diagonals that bisect each other, and the other three are special parallelograms.\n\n(b) **Rectangle, square, isosceles trapezoid.** A general parallelogram does **not** have congruent diagonals (one is longer than the other unless it is a rectangle), and neither does a general rhombus.\n\n(c) **Rhombus, square, kite.** A rectangle that is not a square does **not** have perpendicular diagonals.\n\n(d) **Rhombus, square, kite.** In a rhombus and a square both diagonals bisect the vertex angles. In a kite, the diagonal joining the vertices between the pairs of congruent sides bisects those two angles. In a non-square rectangle the diagonal splits each $90^\\circ$ angle into two unequal parts.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q06",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><polygon points=\"52.8,140 180,60.5 307.2,140 180,219.5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"52.8\" y1=\"140\" x2=\"307.2\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"60.5\" x2=\"180\" y2=\"219.5\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M86.7 118.8 A40 40 0 0 1 92.8 140\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"108.5\" y=\"129\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">32°</text><text x=\"40.8\" y=\"145\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"180\" y=\"51.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"319.2\" y=\"145\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"180\" y=\"240.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"190\" y=\"159\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text></svg>",
+  "question": "$ABCD$ is a rhombus. Its diagonals intersect at $E$, and $m\\angle BAC = 32^\\circ$.\n\nFind\n(a) $m\\angle AEB$\n(b) $m\\angle ABD$\n(c) $m\\angle BAD$\n(d) $m\\angle ABC$",
+  "hint": "The diagonals of a rhombus are perpendicular and bisect the vertex angles.",
+  "answer": "(a) $90^\\circ$ (b) $58^\\circ$ (c) $64^\\circ$ (d) $116^\\circ$",
+  "solution": "(a) The diagonals of a rhombus are perpendicular: $m\\angle AEB = 90^\\circ$.\n\n(b) In $\\triangle ABE$: $m\\angle ABE = 180^\\circ - 90^\\circ - 32^\\circ = 58^\\circ$, and $\\angle ABD$ is the same angle, so $m\\angle ABD = 58^\\circ$.\n\n(c) Diagonal $\\overline{AC}$ bisects $\\angle BAD$: $m\\angle BAD = 2 \\times 32^\\circ = 64^\\circ$.\n\n(d) A rhombus is a parallelogram, so consecutive angles are supplementary: $m\\angle ABC = 180^\\circ - 64^\\circ = 116^\\circ$.\n\nCheck: $\\overline{BD}$ bisects $\\angle ABC$, and $2 \\times 58^\\circ = 116^\\circ$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q07",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><polygon points=\"50,240 310,240 310,58 50,58\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"50\" y1=\"240\" x2=\"310\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"240\" x2=\"50\" y2=\"58\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"60,240 60,230 50,230\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"310,230 300,230 300,240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"300,58 300,68 310,68\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"50,68 60,68 60,58\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M87.7 213.6 A46 46 0 0 1 96 240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"112.9\" y=\"225.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">35°</text><text x=\"38\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"322\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"322\" y=\"57\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"38\" y=\"57\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"180\" y=\"136\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text></svg>",
+  "question": "$ABCD$ is a rectangle with diagonals intersecting at $E$.\n\n(a) $AC = 5x - 3$ and $BE = x + 6$. Find $x$ and $AC$.\n\n(b) $m\\angle BAC = 35^\\circ$. Find $m\\angle ABD$, $m\\angle AEB$ and $m\\angle CAD$.",
+  "hint": "A rectangle's diagonals are congruent **and** bisect each other, so $AC = BD = 2 \\cdot BE$. For (b), what kind of triangle is $\\triangle AEB$?",
+  "answer": "(a) $x = 5$, $AC = 22$ (b) $m\\angle ABD = 35^\\circ$, $m\\angle AEB = 110^\\circ$, $m\\angle CAD = 55^\\circ$",
+  "solution": "**(a)** The diagonals bisect each other, so $BD = 2 \\cdot BE$; they are congruent, so $AC = BD$:\n$$5x - 3 = 2(x + 6) = 2x + 12 \\quad\\Rightarrow\\quad 3x = 15 \\quad\\Rightarrow\\quad x = 5$$\n$AC = 5(5) - 3 = 22$ (and $BE = 11$, half of 22 ✓).\n\n**(b)** $EA = \\frac{1}{2}AC$ and $EB = \\frac{1}{2}BD$, and $AC = BD$, so $EA = EB$: $\\triangle AEB$ is isosceles. Its base angles are congruent:\n$$m\\angle ABD = m\\angle ABE = m\\angle BAE = 35^\\circ$$\n$$m\\angle AEB = 180^\\circ - 35^\\circ - 35^\\circ = 110^\\circ$$\n$\\angle DAB$ is a right angle, so $m\\angle CAD = 90^\\circ - 35^\\circ = 55^\\circ$.\n\nNote that the diagonal does **not** bisect the right angle ($35^\\circ \\ne 55^\\circ$): that only happens in a square.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q08",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><polygon points=\"30,220 100,70 330,70 260,220\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"30\" y1=\"220\" x2=\"330\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"70\" x2=\"260\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"145\" r=\"2.5\" fill=\"currentColor\"/><polyline points=\"66.3,152.2 65,145 58.7,148.7\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"296.3,152.2 295,145 288.7,148.7\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"209,74.2 215,70 209,65.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"215,74.2 221,70 215,65.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"139,224.2 145,220 139,215.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"145,224.2 151,220 145,215.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"18\" y=\"231\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"90\" y=\"63\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"342\" y=\"65\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"272\" y=\"231\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">S</text><text x=\"180\" y=\"130\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">T</text></svg>",
+  "question": "$PQRS$ is a parallelogram whose diagonals intersect at $T$. $PT = 2x + 1$, $TR = 4x - 9$ and $QS = 5x + 2$. Find $x$ and the length of each diagonal.\n\nLeo's working:\n\n$PR = QS$ because the diagonals of a parallelogram are congruent.\n$$(2x + 1) + (4x - 9) = 5x + 2$$\n$$6x - 8 = 5x + 2$$\n$$x = 10$$\nSo $PR = QS = 52$.\n\nIdentify Leo's error, explain it, and find the correct answers.",
+  "hint": "Which diagonal property holds for **every** parallelogram? Check Leo's answer: with $x = 10$, are $PT$ and $TR$ equal?",
+  "answer": "Leo assumed the diagonals are congruent, which is true only for rectangles. Correct: $PT = TR$ gives $x = 5$, so $PR = 22$ and $QS = 27$.",
+  "solution": "**Error:** the first line. The diagonals of a general parallelogram are **not** congruent; that is a property of rectangles. What is true for every parallelogram is that the diagonals **bisect each other**.\n\nLeo's answer fails the check: with $x = 10$, $PT = 21$ but $TR = 31$, so $T$ would not be the midpoint of $\\overline{PR}$.\n\n**Correct method:** $T$ is the midpoint of $\\overline{PR}$, so $PT = TR$:\n$$2x + 1 = 4x - 9 \\quad\\Rightarrow\\quad 10 = 2x \\quad\\Rightarrow\\quad x = 5$$\n\n$PT = TR = 11$, so $PR = 22$. $QS = 5(5) + 2 = 27$.\n\nThe diagonals have different lengths (22 and 27), which is consistent with the diagram: $PQRS$ is not a rectangle.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q09",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><polygon points=\"40,220 320,220 250,80 110,80\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><polyline points=\"174,224.2 180,220 174,215.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"174,84.2 180,80 174,75.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"69.6\" y1=\"147.3\" x2=\"80.4\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"279.6\" y1=\"152.7\" x2=\"290.4\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"28\" y=\"231\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"332\" y=\"231\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"260\" y=\"73\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"100\" y=\"73\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text></svg>",
+  "question": "Ellie writes this proof.\n\n**Given:** $\\overline{AB} \\parallel \\overline{DC}$ and $\\overline{AD} \\cong \\overline{BC}$\n**Prove:** $ABCD$ is a parallelogram.\n\n| Statements | Reasons |\n|---|---|\n| 1. $\\overline{AB} \\parallel \\overline{DC}$, $\\overline{AD} \\cong \\overline{BC}$ | Given |\n| 2. $ABCD$ is a parallelogram | If one pair of opposite sides is parallel and the other pair is congruent, the quadrilateral is a parallelogram. |\n\n(a) Explain why Ellie's reason in step 2 is not a valid theorem. Use the diagram in your answer.\n\n(b) Change **one** of the given facts so that the statement can be proved, and name the theorem that would then be used.",
+  "hint": "Does the quadrilateral in the diagram satisfy both given facts? Is it a parallelogram?",
+  "answer": "(a) The isosceles trapezoid shown has $\\overline{AB} \\parallel \\overline{DC}$ and $\\overline{AD} \\cong \\overline{BC}$ but is not a parallelogram, so the \"theorem\" is false. (b) E.g. replace $\\overline{AD} \\cong \\overline{BC}$ with $\\overline{AB} \\cong \\overline{DC}$: one pair of opposite sides both parallel and congruent gives a parallelogram.",
+  "solution": "**(a)** The diagram shows an isosceles trapezoid: $\\overline{AB} \\parallel \\overline{DC}$ and the legs $\\overline{AD}$ and $\\overline{BC}$ are congruent. Both given facts are true, yet $\\overline{AD}$ and $\\overline{BC}$ are not parallel (they lean towards each other), so it is **not** a parallelogram. One counterexample is enough to show the \"theorem\" is false. The mistake is mixing two **different** pairs of sides: the parallel pair and the congruent pair must be the **same** pair.\n\n**(b)** Any one of these works:\n* Replace $\\overline{AD} \\cong \\overline{BC}$ by $\\overline{AB} \\cong \\overline{DC}$: \"If one pair of opposite sides of a quadrilateral is both parallel and congruent, then it is a parallelogram.\"\n* Replace $\\overline{AD} \\cong \\overline{BC}$ by $\\overline{AD} \\parallel \\overline{BC}$: both pairs of opposite sides parallel is the definition of a parallelogram.\n* Replace $\\overline{AB} \\parallel \\overline{DC}$ by $\\overline{AB} \\cong \\overline{DC}$: \"If both pairs of opposite sides are congruent, then the quadrilateral is a parallelogram.\" ",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q10",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 4,
+  "type": "synoptic",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 275\" width=\"360\" height=\"275\"><polygon points=\"52,240 308,240 308,48 52,48\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"52\" y1=\"240\" x2=\"308\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"62,240 62,230 52,230\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"308,230 298,230 298,240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"298,48 298,58 308,58\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"52,58 62,58 62,48\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"40\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"320\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"320\" y=\"47\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"40\" y=\"47\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"180\" y=\"262\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 in.</text><text x=\"318\" y=\"148\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\">6 in.</text></svg>",
+  "question": "Rectangle $ABCD$ has $AB = 8$ in. and $BC = 6$ in. Sam says: \"The diagonal $\\overline{AC}$ bisects the right angle at $A$, so $m\\angle CAB = 45^\\circ$.\"\n\n(a) Use trigonometry to find $m\\angle CAB$ to the nearest tenth of a degree, and so show Sam is wrong.\n\n(b) The diagonals intersect at $E$. Find the measure of the acute angle between the diagonals, to the nearest tenth of a degree.\n\n(c) For which rectangles would Sam's statement be true? Explain.",
+  "hint": "In right triangle $ABC$, $\\overline{BC}$ is opposite $\\angle CAB$ and $\\overline{AB}$ is adjacent. For (b), $\\triangle AEB$ is isosceles because a rectangle's diagonals are congruent and bisect each other.",
+  "answer": "(a) $m\\angle CAB \\approx 36.9^\\circ$, not $45^\\circ$ (b) $73.7^\\circ$ (c) Only squares ($AB = BC$).",
+  "solution": "**(a)** In right $\\triangle ABC$ (right angle at $B$):\n$$\\tan(\\angle CAB) = \\frac{BC}{AB} = \\frac{6}{8} \\quad\\Rightarrow\\quad m\\angle CAB = \\tan^{-1}(0.75) \\approx 36.9^\\circ$$\nThis is not $45^\\circ$, so the diagonal does not bisect $\\angle DAB$ (the other part is $m\\angle CAD \\approx 53.1^\\circ$). Bisecting the vertex angles is a rhombus property, not a rectangle property.\n\n**(b)** The diagonals of a rectangle are congruent and bisect each other, so $EA = EB$ and $\\triangle AEB$ is isosceles with base angles $m\\angle EAB = m\\angle EBA \\approx 36.87^\\circ$:\n$$m\\angle AEB = 180^\\circ - 2(36.87^\\circ) \\approx 106.3^\\circ$$\nThe acute angle between the diagonals is its supplement: $180^\\circ - 106.26^\\circ \\approx 73.7^\\circ$ (equivalently $2 \\times 36.87^\\circ$).\n\n**(c)** $m\\angle CAB = 45^\\circ$ exactly when $\\tan(\\angle CAB) = \\frac{BC}{AB} = 1$, i.e. $BC = AB$. So Sam is right only when the rectangle is a **square** (a rectangle that is also a rhombus).",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q11",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "For quadrilateral $ABCD$, decide whether each set of information is enough to prove that $ABCD$ is a parallelogram. Justify each answer by naming a theorem or describing a counterexample.\n\n(a) $\\angle A \\cong \\angle C$ and $\\angle B \\cong \\angle D$\n\n(b) The diagonals $\\overline{AC}$ and $\\overline{BD}$ bisect each other.\n\n(c) $\\overline{AB} \\parallel \\overline{DC}$ and $\\overline{AD} \\cong \\overline{BC}$\n\n(d) $\\overline{AB} \\parallel \\overline{DC}$ and $\\overline{AB} \\cong \\overline{DC}$\n\n(e) $\\overline{AC} \\perp \\overline{BD}$\n\n(f) $\\angle A$ and $\\angle B$ are supplementary, and $\\angle B$ and $\\angle C$ are supplementary.",
+  "hint": "Recall the converses of the parallelogram theorems. For the \"no\" cases, think of an isosceles trapezoid or a kite.",
+  "answer": "(a) Yes (b) Yes (c) No (isosceles trapezoid) (d) Yes (e) No (kite) (f) Yes",
+  "solution": "(a) **Yes.** Converse of the Opposite Angles Theorem: if both pairs of opposite angles are congruent, the quadrilateral is a parallelogram.\n\n(b) **Yes.** Converse of the Diagonals Theorem: if the diagonals bisect each other, it is a parallelogram.\n\n(c) **No.** An isosceles trapezoid has one pair of parallel sides and the **other** pair congruent, but it is not a parallelogram.\n\n(d) **Yes.** One pair of opposite sides that is both parallel and congruent (the same pair) proves a parallelogram.\n\n(e) **No.** A kite has perpendicular diagonals but is not a parallelogram (only one diagonal is bisected).\n\n(f) **Yes.** $\\angle A$ and $\\angle B$ are same-side interior angles for lines $\\overleftrightarrow{AD}$ and $\\overleftrightarrow{BC}$ with transversal $\\overleftrightarrow{AB}$; supplementary means $\\overline{AD} \\parallel \\overline{BC}$. Similarly $\\angle B$ and $\\angle C$ supplementary gives $\\overline{AB} \\parallel \\overline{DC}$. Both pairs of opposite sides are parallel, which is the definition of a parallelogram.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q12",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 245\" width=\"360\" height=\"245\"><polygon points=\"90,140 144,77.6 270,140 216,202.4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"90\" y1=\"140\" x2=\"270\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"144\" y1=\"77.6\" x2=\"216\" y2=\"202.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"140\" r=\"2.5\" fill=\"currentColor\"/><text x=\"78\" y=\"145\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"138\" y=\"68.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"282\" y=\"145\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"222\" y=\"221.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"180\" y=\"161\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"135\" y=\"131\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">x + y</text><text x=\"225\" y=\"159\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">10</text><text x=\"136\" y=\"113.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2x − y</text><text x=\"214\" y=\"176.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">8</text></svg>",
+  "question": "The diagonals of quadrilateral $ABCD$ intersect at $E$, with $AE = x + y$, $EC = 10$, $BE = 2x - y$ and $ED = 8$.\n\n(a) Find the values of $x$ and $y$ for which $ABCD$ must be a parallelogram. Justify your method.\n\n(b) With these values, is $ABCD$ a rectangle? Explain.",
+  "hint": "A quadrilateral whose diagonals bisect each other is a parallelogram. That gives two equations in $x$ and $y$; solve them simultaneously.",
+  "answer": "(a) $x = 6$, $y = 4$ (b) No: $AC = 20$ and $BD = 16$, so the diagonals are not congruent.",
+  "solution": "**(a)** If the diagonals bisect each other, $ABCD$ is a parallelogram (converse of the parallelogram diagonals theorem). So we need $AE = EC$ and $BE = ED$:\n$$x + y = 10$$\n$$2x - y = 8$$\n\nAdd the equations: $3x = 18$, so $x = 6$. Then $y = 10 - 6 = 4$.\n\nCheck: $AE = 6 + 4 = 10 = EC$ ✓ and $BE = 12 - 4 = 8 = ED$ ✓.\n\n**(b)** $AC = 10 + 10 = 20$ and $BD = 8 + 8 = 16$. A parallelogram is a rectangle exactly when its diagonals are congruent. Since $20 \\ne 16$, $ABCD$ is **not** a rectangle.",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q13",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 4,
+  "type": "exam-style",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><polygon points=\"40,230 320,230 290.5,62.6 69.5,62.6\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"40\" y1=\"230\" x2=\"290.5\" y2=\"62.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"320\" y1=\"230\" x2=\"69.5\" y2=\"62.6\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"174,234.2 180,230 174,225.8\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"174,66.8 180,62.6 174,58.4\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"48.9\" y1=\"145.2\" x2=\"60.7\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"299.3\" y1=\"147.3\" x2=\"311.1\" y2=\"145.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"28\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"332\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"300.5\" y=\"55.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"59.5\" y=\"55.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text></svg>",
+  "marks": 9,
+  "question": "$ABCD$ is an isosceles trapezoid with $\\overline{AB} \\parallel \\overline{DC}$ and $\\overline{AD} \\cong \\overline{BC}$.",
+  "parts": [
+   {
+    "label": "a",
+    "marks": 4,
+    "prompt": "Complete the proof that the diagonals are congruent.\n\n| Statements | Reasons |\n|---|---|\n| 1. $ABCD$ is an isosceles trapezoid with $\\overline{AD} \\cong \\overline{BC}$ | Given |\n| 2. $\\angle DAB \\cong \\angle CBA$ | (i) |\n| 3. $\\overline{AB} \\cong \\overline{BA}$ | (ii) |\n| 4. $\\triangle DAB \\cong \\triangle CBA$ | (iii) |\n| 5. (iv) | CPCTC |"
+   },
+   {
+    "label": "b",
+    "marks": 3,
+    "prompt": "$m\\angle DAB = (4x + 12)^\\circ$ and $m\\angle ADC = (6x - 2)^\\circ$. Find $x$ and $m\\angle BCD$."
+   },
+   {
+    "label": "c",
+    "marks": 2,
+    "prompt": "$AC = 3y - 4$ and $BD = y + 10$. Find $AC$."
+   }
+  ],
+  "hint": "For (b), $\\angle DAB$ and $\\angle ADC$ are same-side interior angles between the parallel bases. For (c), use the result of part (a).",
+  "answer": "(a) (i) Base angles of an isosceles trapezoid are congruent (ii) Reflexive Property of Congruence (iii) SAS (iv) $\\overline{DB} \\cong \\overline{CA}$ (b) $x = 17$; $m\\angle BCD = 100^\\circ$ (c) $AC = 17$",
+  "solution": "**(a)**\n* (i) Base angles of an isosceles trapezoid are congruent. **B1**\n* (ii) Reflexive Property of Congruence. **B1**\n* (iii) SAS ($\\overline{AD} \\cong \\overline{BC}$, $\\angle DAB \\cong \\angle CBA$, $\\overline{AB} \\cong \\overline{BA}$; the angle is between the two sides). **B1**\n* (iv) $\\overline{DB} \\cong \\overline{CA}$, i.e. the diagonals are congruent. **B1**\n\n**(b)** $\\overline{AB} \\parallel \\overline{DC}$, so $\\angle DAB$ and $\\angle ADC$ are same-side interior angles and are supplementary:\n$$(4x + 12) + (6x - 2) = 180 \\qquad \\textbf{M1}$$\n$$10x + 10 = 180 \\quad\\Rightarrow\\quad x = 17 \\qquad \\textbf{A1}$$\n\n$m\\angle ADC = 6(17) - 2 = 100^\\circ$. Upper base angles of an isosceles trapezoid are congruent, so $m\\angle BCD = m\\angle ADC = 100^\\circ$. **A1**\n(Check: $m\\angle DAB = 80^\\circ$ and $80^\\circ + 100^\\circ = 180^\\circ$.)\n\n**(c)** By part (a), $AC = BD$:\n$$3y - 4 = y + 10 \\quad\\Rightarrow\\quad 2y = 14 \\quad\\Rightarrow\\quad y = 7 \\qquad \\textbf{M1}$$\n$AC = 3(7) - 4 = 17$. **A1**",
+  "linkedTopicIds": [
+   "geo-two-column-proofs",
+   "geo-parallel-lines-angles"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q14",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><polygon points=\"50,230 310,230 310,60 50,60\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"50\" y1=\"230\" x2=\"310\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"310\" y1=\"230\" x2=\"50\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"109.6\" y1=\"183.8\" x2=\"116.2\" y2=\"193.9\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"113.8\" y1=\"181.1\" x2=\"120.4\" y2=\"191.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"243.8\" y1=\"193.9\" x2=\"250.4\" y2=\"183.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"239.6\" y1=\"191.2\" x2=\"246.2\" y2=\"181.1\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"38\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"322\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"322\" y=\"59\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"38\" y=\"59\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text></svg>",
+  "question": "**Given:** $ABCD$ is a parallelogram and $\\overline{AC} \\cong \\overline{BD}$.\n**Prove:** $ABCD$ is a rectangle.\n\nWrite a two-column proof. You may not assume any angle is a right angle from the diagram.",
+  "hint": "Compare $\\triangle DAB$ and $\\triangle CBA$: they share $\\overline{AB}$. Once you know $\\angle DAB \\cong \\angle CBA$, remember that consecutive angles of a parallelogram are supplementary.",
+  "answer": "$\\triangle DAB \\cong \\triangle CBA$ by SSS, so $\\angle DAB \\cong \\angle CBA$ (CPCTC); these are also supplementary, so each is $90^\\circ$; a parallelogram with a right angle is a rectangle.",
+  "solution": "| Statements | Reasons |\n|---|---|\n| 1. $ABCD$ is a parallelogram; $\\overline{AC} \\cong \\overline{BD}$ | Given |\n| 2. $\\overline{AD} \\cong \\overline{BC}$ | Opposite sides of a parallelogram are congruent |\n| 3. $\\overline{AB} \\cong \\overline{BA}$ | Reflexive Property of Congruence |\n| 4. $\\triangle DAB \\cong \\triangle CBA$ | SSS ($\\overline{DA} \\cong \\overline{CB}$, $\\overline{AB} \\cong \\overline{BA}$, $\\overline{DB} \\cong \\overline{CA}$) |\n| 5. $\\angle DAB \\cong \\angle CBA$ | CPCTC |\n| 6. $m\\angle DAB + m\\angle CBA = 180^\\circ$ | Consecutive angles of a parallelogram are supplementary |\n| 7. $2\\,m\\angle DAB = 180^\\circ$ | Substitution Property of Equality |\n| 8. $m\\angle DAB = 90^\\circ$ | Division Property of Equality |\n| 9. $ABCD$ is a rectangle | A parallelogram with one right angle is a rectangle (opposite angles congruent and consecutive angles supplementary make all four angles $90^\\circ$) |\n\n**Key idea:** the two angles at the ends of $\\overline{AB}$ are both congruent (from the triangles) and supplementary (from the parallel sides). The only way to be equal and add to $180^\\circ$ is to be $90^\\circ$ each.\n\nThis is the converse of \"the diagonals of a rectangle are congruent\", so for parallelograms: congruent diagonals $\\Leftrightarrow$ rectangle.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q15",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 2,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 275\" width=\"360\" height=\"275\"><polygon points=\"180,30 240,110 180,254 120,110\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"254\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"120\" y1=\"110\" x2=\"240\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"189,110 189,119 180,119\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"186\" y=\"75\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">20 in.</text><text x=\"186\" y=\"190\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">36 in.</text><text x=\"150\" y=\"127\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">15 in.</text><text x=\"212\" y=\"127\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">15 in.</text></svg>",
+  "question": "A toy kite is made from two wooden spars that cross at right angles. The vertical spar is 56 in. long and the cross spar is 30 in. long. The cross spar is attached 20 in. from the top, at its own midpoint, as shown.\n\n(a) Find the lengths of the four edges of the kite.\n\n(b) Ribbon is sewn around all four edges. How much ribbon is needed?\n\n(c) How much fabric covers the kite (ignore any overlap)?",
+  "hint": "The spars are the kite's diagonals. Each edge is the hypotenuse of a right triangle with legs along the spars. For the area of a kite, use half the product of the diagonals.",
+  "answer": "(a) 25 in., 25 in., 39 in., 39 in. (b) 128 in. (c) 840 sq in.",
+  "solution": "The diagonals of a kite are perpendicular and the longer one bisects the shorter, so each half of the cross spar is 15 in. The vertical spar splits into 20 in. (top) and $56 - 20 = 36$ in. (bottom).\n\n**(a)** Upper edges:\n$$\\sqrt{15^2 + 20^2} = \\sqrt{225 + 400} = \\sqrt{625} = 25 \\text{ in.}$$\nLower edges:\n$$\\sqrt{15^2 + 36^2} = \\sqrt{225 + 1296} = \\sqrt{1521} = 39 \\text{ in.}$$\nSo the edges are 25, 25, 39 and 39 in.: two pairs of congruent consecutive sides, as in every kite.\n\n**(b)** $2(25 + 39) = 128$ in. of ribbon (10 ft 8 in.).\n\n**(c)** Area of a kite $= \\frac{1}{2}d_1 d_2 = \\frac{1}{2}(56)(30) = 840 \\text{ in.}^2$",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q16",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A carpenter is building a door frame that should be a 36 in. by 80 in. rectangle.\n\n(a) She measures the four sides and finds that the opposite sides are 36 in. and 80 in. Explain why this proves the frame is a parallelogram, but not that it is a rectangle.\n\n(b) She then measures both diagonals and finds they are equal. Explain why the frame must now be a rectangle.\n\n(c) What should each diagonal measure, to the nearest $\\frac{1}{8}$ in.?",
+  "hint": "(a) A frame with hinged corners can be pushed into a slanted shape without changing its side lengths. (b) Which special parallelogram has congruent diagonals?",
+  "answer": "(a) Both pairs of opposite sides congruent proves a parallelogram, but a slanted parallelogram has the same side lengths. (b) A parallelogram with congruent diagonals is a rectangle. (c) $87\\frac{3}{4}$ in.",
+  "solution": "**(a)** If both pairs of opposite sides of a quadrilateral are congruent, it is a parallelogram (converse of the Opposite Sides Theorem). But side lengths alone do not fix the angles: the frame could be \"racked\" into a slanted parallelogram with the same 36 in. and 80 in. sides, so it need not be a rectangle.\n\n**(b)** A parallelogram whose diagonals are congruent is a rectangle. (In a slanted parallelogram one diagonal is longer than the other, so equal diagonals rule out any slant.) This is why carpenters \"check for square\" by comparing diagonals.\n\n**(c)** In a rectangle, a diagonal is the hypotenuse of a right triangle with legs 36 in. and 80 in.:\n$$d = \\sqrt{36^2 + 80^2} = \\sqrt{1296 + 6400} = \\sqrt{7696} \\approx 87.727 \\text{ in.}$$\nEighths near this: $87.625$ ($87\\frac{5}{8}$) and $87.75$ ($87\\frac{3}{4}$). $87.727$ is closer to $87.75$, so each diagonal should be about $87\\frac{3}{4}$ in.",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q17",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 5,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><polygon points=\"40,200 150,40 320,110 250,265\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><polygon points=\"95,120 235,75 285,187.5 145,232.5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><line x1=\"40\" y1=\"200\" x2=\"320\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"95\" cy=\"120\" r=\"3\" fill=\"currentColor\"/><circle cx=\"235\" cy=\"75\" r=\"3\" fill=\"currentColor\"/><circle cx=\"285\" cy=\"187.5\" r=\"3\" fill=\"currentColor\"/><circle cx=\"145\" cy=\"232.5\" r=\"3\" fill=\"currentColor\"/><text x=\"28\" y=\"207\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"150\" y=\"31\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"332\" y=\"115\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"254\" y=\"286\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"81\" y=\"119\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"241\" y=\"66\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"299\" y=\"196.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"131\" y=\"243.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">S</text></svg>",
+  "question": "$ABCD$ is any quadrilateral. $P$, $Q$, $R$ and $S$ are the midpoints of $\\overline{AB}$, $\\overline{BC}$, $\\overline{CD}$ and $\\overline{DA}$.\n\n(a) Prove that $PQRS$ is a parallelogram. (Hint: draw diagonal $\\overline{AC}$ and use the Triangle Midsegment Theorem.)\n\n(b) Show that the perimeter of $PQRS$ equals $AC + BD$.\n\n(c) What must be true of the diagonals of $ABCD$ for $PQRS$ to be (i) a rhombus, (ii) a rectangle? Explain.",
+  "hint": "In $\\triangle ABC$, $\\overline{PQ}$ joins the midpoints of two sides. In $\\triangle ADC$, $\\overline{SR}$ does the same. What do both segments have in common with $\\overline{AC}$?",
+  "answer": "(a) $\\overline{PQ}$ and $\\overline{SR}$ are both parallel to $\\overline{AC}$ and equal to $\\frac{1}{2}AC$, so one pair of opposite sides is parallel and congruent. (b) $PQ + RS = AC$ and $QR + SP = BD$. (c) (i) $AC = BD$ (ii) $\\overline{AC} \\perp \\overline{BD}$",
+  "solution": "**(a)** In $\\triangle ABC$, $P$ and $Q$ are midpoints of $\\overline{AB}$ and $\\overline{BC}$, so by the Triangle Midsegment Theorem\n$$\\overline{PQ} \\parallel \\overline{AC} \\quad\\text{and}\\quad PQ = \\tfrac{1}{2}AC.$$\nIn $\\triangle ADC$, $S$ and $R$ are midpoints of $\\overline{AD}$ and $\\overline{DC}$, so\n$$\\overline{SR} \\parallel \\overline{AC} \\quad\\text{and}\\quad SR = \\tfrac{1}{2}AC.$$\nTwo lines parallel to the same line are parallel, so $\\overline{PQ} \\parallel \\overline{SR}$; and $PQ = SR$ (Transitive Property). One pair of opposite sides of $PQRS$ is both parallel and congruent, so $PQRS$ is a parallelogram.\n\n**(b)** Using diagonal $\\overline{BD}$ in the same way (triangles $ABD$ and $CBD$): $PS = QR = \\frac{1}{2}BD$. Perimeter\n$$PQ + QR + RS + SP = \\tfrac{1}{2}AC + \\tfrac{1}{2}BD + \\tfrac{1}{2}AC + \\tfrac{1}{2}BD = AC + BD.$$\n\n**(c)** (i) A parallelogram is a rhombus when two consecutive sides are congruent: $PQ = QR \\Leftrightarrow \\frac{1}{2}AC = \\frac{1}{2}BD \\Leftrightarrow AC = BD$. So the diagonals of $ABCD$ must be **congruent** (e.g. $ABCD$ is a rectangle or an isosceles trapezoid).\n\n(ii) A parallelogram is a rectangle when two consecutive sides are perpendicular. $\\overline{PQ} \\parallel \\overline{AC}$ and $\\overline{QR} \\parallel \\overline{BD}$, so $\\overline{PQ} \\perp \\overline{QR} \\Leftrightarrow \\overline{AC} \\perp \\overline{BD}$. So the diagonals of $ABCD$ must be **perpendicular** (e.g. $ABCD$ is a rhombus or a kite).",
+  "linkedTopicIds": [
+   "geo-triangle-centers"
+  ]
+ },
+ {
+  "id": "geo-quadrilateral-theorems-q18",
+  "topicId": "geo-quadrilateral-theorems",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"360\" height=\"265\"><polygon points=\"30,230 270,230 342,105.3 102,105.3\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"30\" y1=\"230\" x2=\"246\" y2=\"105.3\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"270\" y1=\"230\" x2=\"198\" y2=\"105.3\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"210\" cy=\"126.1\" r=\"3\" fill=\"currentColor\"/><circle cx=\"246\" cy=\"105.3\" r=\"3\" fill=\"currentColor\"/><circle cx=\"198\" cy=\"105.3\" r=\"3\" fill=\"currentColor\"/><text x=\"18\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"282\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"354\" y=\"104.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"90\" y=\"104.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"246\" y=\"95.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"198\" y=\"95.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"210\" y=\"149.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"150\" y=\"252\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10</text><text x=\"52\" y=\"172.6\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text></svg>",
+  "question": "In parallelogram $ABCD$, $AB = 10$ and $AD = 6$. The bisector of $\\angle DAB$ meets $\\overline{DC}$ at $E$, and the bisector of $\\angle ABC$ meets $\\overline{DC}$ at $F$. The two bisectors intersect at $P$.\n\n(a) Prove that $\\triangle ADE$ is isosceles, and hence find $DE$ and $EC$.\n\n(b) Prove that $m\\angle APB = 90^\\circ$.\n\n(c) Find $EF$.",
+  "hint": "(a) $\\overline{AB} \\parallel \\overline{DC}$, so $\\angle DEA$ is congruent to an angle at $A$ (alternate interior angles). (b) Consecutive angles of a parallelogram add to $180^\\circ$, so their halves add to $90^\\circ$.",
+  "answer": "(a) $\\angle DEA \\cong \\angle EAB \\cong \\angle DAE$, so $DE = AD = 6$ and $EC = 4$. (b) $m\\angle PAB + m\\angle PBA = \\frac{1}{2}(180^\\circ) = 90^\\circ$, so $m\\angle APB = 90^\\circ$. (c) $EF = 2$",
+  "solution": "**(a)** $\\overline{AE}$ bisects $\\angle DAB$, so $\\angle DAE \\cong \\angle EAB$. Since $\\overline{AB} \\parallel \\overline{DC}$, $\\angle DEA \\cong \\angle EAB$ (alternate interior angles, transversal $\\overline{AE}$). By the Transitive Property, $\\angle DAE \\cong \\angle DEA$. Two angles of $\\triangle ADE$ are congruent, so the sides opposite them are congruent (Converse of the Base Angles Theorem): $DE = AD = 6$. $\\triangle ADE$ is isosceles.\n\n$DC = AB = 10$ (opposite sides of a parallelogram), so $EC = 10 - 6 = 4$.\n\n**(b)** Consecutive angles of a parallelogram are supplementary: $m\\angle DAB + m\\angle ABC = 180^\\circ$. The bisectors halve them:\n$$m\\angle PAB + m\\angle PBA = \\tfrac{1}{2}m\\angle DAB + \\tfrac{1}{2}m\\angle ABC = \\tfrac{1}{2}(180^\\circ) = 90^\\circ$$\nIn $\\triangle APB$: $m\\angle APB = 180^\\circ - 90^\\circ = 90^\\circ$.\n\n**(c)** By the same argument as (a) in $\\triangle BCF$: $\\angle CFB \\cong \\angle FBA \\cong \\angle CBF$, so $CF = BC = 6$. Then $DF = 10 - 6 = 4$.\n\nOn $\\overline{DC}$ (length 10): $D$ to $F$ is 4 and $D$ to $E$ is 6, so $F$ lies between $D$ and $E$ and\n$$EF = DE - DF = 6 - 4 = 2.$$\n(Since $DE + CF = 12 > 10$, the two segments overlap, which is why the bisectors cross inside the parallelogram.)",
+  "linkedTopicIds": [
+   "geo-congruence"
+  ]
+ }
+]
