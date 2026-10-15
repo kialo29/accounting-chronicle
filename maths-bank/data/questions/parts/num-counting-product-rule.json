@@ -1,0 +1,328 @@
+[
+ {
+  "id": "num-counting-product-rule-q01",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "An ice-cream van sells ice cream in a **cone** or a **tub**. There are three flavours: **vanilla**, **chocolate** and **strawberry**. Each customer chooses one container and one flavour.\n\nList all the possible choices in a systematic way. How many are there?",
+  "hint": "Fix the container first (cone), list every flavour with it, then do the same for tub.",
+  "answer": "6 choices: cone–vanilla, cone–chocolate, cone–strawberry, tub–vanilla, tub–chocolate, tub–strawberry",
+  "solution": "Fix the first choice and run through every option for the second:\n\nCone: cone–vanilla, cone–chocolate, cone–strawberry\n\nTub: tub–vanilla, tub–chocolate, tub–strawberry\n\nThere are **6** choices.\n\nCheck with the product rule: 2 containers, and 3 flavours for each, gives $2 \\times 3 = 6$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q02",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A café offers 3 starters and 5 main courses. A meal is one starter and one main course.\n\nHow many different meals are possible?",
+  "hint": "For each starter, how many different mains could go with it?",
+  "answer": "15 meals",
+  "solution": "Each of the 3 starters can be paired with each of the 5 mains, so there are 5 meals for every starter:\n$$3 \\times 5 = 15 \\text{ meals}$$\n\n(Adding, $3 + 5 = 8$, would count the dishes, not the meals.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q03",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The café now also offers 2 desserts. A meal is one starter, one main course and one dessert.\n\nHow many different meals are possible? (There are still 3 starters and 5 main courses.)",
+  "hint": "Each of the meals from before can now be finished with either dessert.",
+  "answer": "30 meals",
+  "solution": "**What changed:** a third choice (dessert) has been added.\n\nThe product rule extends to any number of choices:\n$$3 \\times 5 \\times 2 = 30 \\text{ meals}$$\n\nAdding a stage with 2 options doubles the number of meals (15 becomes 30).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q04",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The café changes its menu so that the dessert is **optional**: a customer has a starter and a main, and then either one of the 2 desserts or no dessert.\n\nHow many different meals are possible now? (There are still 3 starters and 5 main courses.)",
+  "hint": "How many options are there now at the dessert stage?",
+  "answer": "45 meals",
+  "solution": "**What changed:** \"no dessert\" is now an extra option at the dessert stage, so there are $2 + 1 = 3$ dessert options.\n$$3 \\times 5 \\times 3 = 45 \\text{ meals}$$\n\n(Check: 30 meals with a dessert, plus $3 \\times 5 = 15$ without, gives $30 + 15 = 45$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q05",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The café keeps 5 main courses and the optional dessert (one of 2 desserts, or none). It wants to add more starters so that customers can choose from **at least 100** different meals.\n\nWhat is the smallest number of starters it needs?",
+  "hint": "Let the number of starters be $s$. Write an expression for the number of meals and solve the inequality.",
+  "answer": "7 starters",
+  "solution": "**What changed:** the number of starters is now the unknown.\n\nWith $s$ starters, the number of meals is $s \\times 5 \\times 3 = 15s$.\n\nWe need $15s \\ge 100$, so $s \\ge \\dfrac{100}{15} = 6.67$\n\n$s$ must be a whole number, so the smallest is $s = 7$, giving $15 \\times 7 = 105$ meals. (6 starters would give only 90.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q06",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "A bike lock has 4 dials. Each dial shows a digit from 0 to 9.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "How many different codes are possible?"
+   },
+   {
+    "label": "b",
+    "prompt": "A different lock only allows codes in which all 4 digits are different. How many codes are possible for this lock?"
+   },
+   {
+    "label": "c",
+    "prompt": "What fraction of the codes for the first lock have all 4 digits different? Give your answer in its simplest form."
+   }
+  ],
+  "hint": "In (a), digits can repeat (for example 3333), so every dial has the same number of options.",
+  "answer": "(a) $10\\,000$ (b) $5040$ (c) $\\dfrac{63}{125}$",
+  "solution": "**(a)** Repeats are allowed, so each dial has 10 options:\n$$10 \\times 10 \\times 10 \\times 10 = 10^4 = 10\\,000$$\n\n**(b)** No repeats, so the number of options goes down by one each time:\n$$10 \\times 9 \\times 8 \\times 7 = 5040$$\n\n**(c)** $\\dfrac{5040}{10\\,000} = \\dfrac{63}{125}$ (about half of all codes).\n\nUsing $10 \\times 9 \\times 8 \\times 7$ for part (a) would be wrong: a lock code may repeat digits, so options are only removed when repeats are not allowed.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q07",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Olivia has 4 shirts, 3 pairs of trousers and 2 pairs of shoes. An outfit is one shirt, one pair of trousers and one pair of shoes.\n\nOlivia's working is shown below.\n\n\"I have $4 + 3 + 2 = 9$ items to choose from, so there are 9 different outfits.\"\n\nExplain Olivia's mistake and work out the correct number of outfits.",
+  "hint": "How many different outfits use the first shirt? Is it just one?",
+  "answer": "She added instead of multiplying; there are $4 \\times 3 \\times 2 = 24$ outfits.",
+  "solution": "**The mistake:** Olivia added the numbers of options. That counts the **items of clothing**, not the outfits. Each shirt can go with each pair of trousers, and each of those combinations with each pair of shoes.\n\nFor one shirt there are already $3 \\times 2 = 6$ outfits (3 trousers, each with 2 shoes), and there are 4 shirts.\n\n**Product rule:**\n$$4 \\times 3 \\times 2 = 24 \\text{ outfits}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q08",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Kai is asked: \"How many **even** 3-digit numbers can be made from the digits 2, 3, 4, 5 and 7 if no digit can be used more than once?\"\n\nHis working is shown below.\n\nFirst digit: 5 choices. Second digit: 4 choices. Last digit: must be even, so 2 choices (2 or 4).\n\n$5 \\times 4 \\times 2 = 40$\n\nExplain Kai's mistake and find the correct answer.",
+  "hint": "If Kai's first two digits are 2 and 4, how many choices are left for the last digit?",
+  "answer": "He applied the restriction last; the even digits may already have been used. Correct: $2 \\times 4 \\times 3 = 24$.",
+  "solution": "**The mistake:** Kai filled the positions in order and applied the \"even\" restriction last. By then, one or both of the even digits may already have been used: for example, after choosing 2 and 4 for the first two digits there are **no** even digits left, and after 2 and 3 there is only one. So \"2 choices\" for the last digit is not always true.\n\n**Correct method:** fill the restricted position first.\n\nLast digit (even): 2 or 4, so **2** choices.\n\nFirst digit: any of the 4 digits left, so **4** choices.\n\nMiddle digit: **3** choices.\n$$2 \\times 4 \\times 3 = 24$$\n\n(Check: 12 numbers end in 2 and 12 end in 4.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q09",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Jess is asked how many 4-digit numbers do **not** contain the digit 7. Her working is shown below.\n\n\"Each digit can be anything from 0 to 9 except 7, so there are 9 choices for each digit. $9 \\times 9 \\times 9 \\times 9 = 6561$.\"\n\nExplain Jess's mistake and find the correct answer.",
+  "hint": "Is 0352 a 4-digit number?",
+  "answer": "She allowed 0 as the first digit; the correct count is $8 \\times 9 \\times 9 \\times 9 = 5832$.",
+  "solution": "**The mistake:** Jess allowed the first digit to be 0. A number such as 0352 is really the 3-digit number 352, so it is not a 4-digit number.\n\n**Correct method:** the first digit can be 1, 2, 3, 4, 5, 6, 8 or 9: **8** choices (not 0 and not 7).\n\nEach of the other three digits can be 0–9 except 7: **9** choices each.\n$$8 \\times 9 \\times 9 \\times 9 = 5832$$\n\n(Jess's 6561 also counts the $9 \\times 9 \\times 9 = 729$ strings beginning with 0, and $6561 - 729 = 5832$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q10",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Sam says, \"There are more 3-letter codes using the letters A to Z than there are 4-digit PIN codes using the digits 0 to 9.\" Letters and digits may be repeated.\n\nIs Sam correct? Show your working. Would your answer change if the letters in the code had to be different?",
+  "hint": "Use the product rule for each: 26 choices per letter, 10 choices per digit.",
+  "answer": "Yes: $26^3 = 17\\,576 > 10^4 = 10\\,000$. Still yes without repeats: $26 \\times 25 \\times 24 = 15\\,600$.",
+  "solution": "**Letter codes:** $26 \\times 26 \\times 26 = 17\\,576$\n\n**PIN codes:** $10 \\times 10 \\times 10 \\times 10 = 10\\,000$\n\n$17\\,576 > 10\\,000$, so **Sam is correct**, even though the code is shorter: having many more options at each position (26 rather than 10) outweighs having one fewer position.\n\n**With different letters:** $26 \\times 25 \\times 24 = 15\\,600$, which is still more than $10\\,000$, so the answer does not change.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q11",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Six people, A, B, C, D, E and F, meet. Each person shakes hands once with every other person.\n\nZac says, \"Each of the 6 people shakes 5 hands, so there are $6 \\times 5 = 30$ handshakes.\"\n\nExplain why Zac is wrong. Use a systematic list to find the correct number of handshakes.",
+  "hint": "Is \"A shakes hands with B\" a different handshake from \"B shakes hands with A\"?",
+  "answer": "Zac counts every handshake twice; there are $30 \\div 2 = 15$ handshakes.",
+  "solution": "**Why Zac is wrong:** in a handshake between A and B, A shakes B's hand **and** B shakes A's hand. Zac's $6 \\times 5$ counts this one handshake twice, once from each person's point of view. So every handshake has been counted twice.\n\n**Systematic list:** fix the first person and pair them only with people later in the alphabet, so nothing is repeated.\n\nA: AB, AC, AD, AE, AF (5)\n\nB: BC, BD, BE, BF (4)\n\nC: CD, CE, CF (3)\n\nD: DE, DF (2)\n\nE: EF (1)\n\nTotal: $5 + 4 + 3 + 2 + 1 = 15$ handshakes, which is $\\dfrac{6 \\times 5}{2} = 15$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q12",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Rosa has five cards, numbered 1, 2, 3, 4 and 5, as shown.\n\nShe uses the cards to make numbers. Each card can be used only once in a number.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 80\" width=\"300\" height=\"80\"><rect x=\"22\" y=\"10\" width=\"42\" height=\"58\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"43\" y=\"45\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><rect x=\"76\" y=\"10\" width=\"42\" height=\"58\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"97\" y=\"45\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">2</text><rect x=\"130\" y=\"10\" width=\"42\" height=\"58\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"151\" y=\"45\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">3</text><rect x=\"184\" y=\"10\" width=\"42\" height=\"58\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"205\" y=\"45\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">4</text><rect x=\"238\" y=\"10\" width=\"42\" height=\"58\" rx=\"5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"259\" y=\"45\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">5</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Rosa makes 2-digit numbers using two of the cards. List all the 2-digit numbers she can make that are greater than 40.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out how many different 3-digit numbers Rosa can make.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Work out how many of these 3-digit numbers are odd **and** less than 400. You must show your working.",
+    "marks": 3
+   }
+  ],
+  "hint": "In (c), the first digit can only be 1, 2 or 3, and the last digit must be odd. Split into cases depending on whether the first digit is odd.",
+  "answer": "(a) 41, 42, 43, 45, 51, 52, 53, 54 (b) 60 (c) 21",
+  "solution": "**(a)** First digit 4 or 5, then any other card:\n\n41, 42, 43, 45, 51, 52, 53, 54 **B2** (all 8 and no extras; B1 for at least 6 correct with at most one wrong)\n\n**(b)** $5 \\times 4 \\times 3 = 60$ **B1**\n\n**(c)** Two restrictions: first digit 1, 2 or 3 (less than 400) and last digit 1, 3 or 5 (odd). These overlap, so split into cases. **M1**\n\nCase 1: first digit odd (1 or 3), 2 ways. The last digit must be one of the 2 odd digits left (2 ways), and the middle digit can be any of the remaining 3 cards: $2 \\times 2 \\times 3 = 12$\n\nCase 2: first digit 2, 1 way. Last digit: 1, 3 or 5 (3 ways). Middle: 3 ways: $1 \\times 3 \\times 3 = 9$ **M1**\n\nTotal $= 12 + 9 = 21$ **A1**\n\n(Simply doing $3 \\times 3 \\times 3 = 27$ is wrong: when the first digit is 1 or 3 it uses up one of the odd digits.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q13",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A coffee shop lets customers choose:\n\n| Choice | Options |\n|---|---|\n| Size | small, medium, large |\n| Drink | 6 different drinks |\n| Milk | whole, semi-skimmed, oat, soya |\n| Extra shot | yes, no |\n\nEvery drink has one choice from each row.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "How many different orders are possible?"
+   },
+   {
+    "label": "b",
+    "prompt": "Erin orders a different combination every working day, 5 days a week. In which week will she have tried every possible order?"
+   }
+  ],
+  "hint": "Multiply the number of options in each row.",
+  "answer": "(a) 144 (b) week 29",
+  "solution": "**(a)** Product rule:\n$$3 \\times 6 \\times 4 \\times 2 = 144 \\text{ orders}$$\n\n**(b)** $144 \\div 5 = 28.8$\n\nAfter 28 weeks she has tried $28 \\times 5 = 140$ orders, so she needs 4 more days. She tries the last order on the 4th day of **week 29**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q14",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Five friends, Amy, Ben, Cal, Dev and Eli, sit in a row of 5 seats at the cinema.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "How many different seating arrangements are there altogether?"
+   },
+   {
+    "label": "b",
+    "prompt": "Amy and Ben want to sit next to each other. How many arrangements are there in which they do?"
+   },
+   {
+    "label": "c",
+    "prompt": "How many arrangements are there in which Amy and Ben are **not** next to each other?"
+   }
+  ],
+  "hint": "For (b), glue Amy and Ben together and treat them as one \"block\". Then remember the block can be AB or BA.",
+  "answer": "(a) 120 (b) 48 (c) 72",
+  "solution": "**(a)** $5 \\times 4 \\times 3 \\times 2 \\times 1 = 120$\n\n**(b)** Treat Amy and Ben as one block. There are now 4 \"units\" to arrange (the block, Cal, Dev, Eli):\n$$4 \\times 3 \\times 2 \\times 1 = 24$$\n\nInside the block they can sit as Amy–Ben or Ben–Amy: 2 ways.\n$$24 \\times 2 = 48$$\n\n**(c)** Every arrangement either has them together or not:\n$$120 - 48 = 72$$\n\n(Check another way: the pair of seats Amy and Ben use can be any 2 of the 5 seats, $5 \\times 4 = 20$ ordered ways, of which $4 \\times 2 = 8$ are next to each other; so $\\frac{8}{20} = \\frac{2}{5}$ of arrangements have them together, and $\\frac{2}{5} \\times 120 = 48$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q15",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "question": "How many **even** 4-digit numbers have four different digits?",
+  "hint": "Fill the last digit first. Whether the last digit is 0 changes the number of choices for the first digit, so split into two cases.",
+  "answer": "2296",
+  "solution": "Two restrictions: the last digit must be even (0, 2, 4, 6, 8) and the first digit cannot be 0. They interact through the digit 0, so split into cases.\n\n**Case 1: last digit is 0.**\n\nLast: 1 way. First: any of 1–9, so 9 ways. Then 8 and 7 ways for the middle digits.\n$$1 \\times 9 \\times 8 \\times 7 = 504$$\n\n**Case 2: last digit is 2, 4, 6 or 8.**\n\nLast: 4 ways. First: not 0 and not the digit just used, so 8 ways. Second: any of the 8 digits left (0 is now allowed). Third: 7 ways.\n$$4 \\times 8 \\times 8 \\times 7 = 1792$$\n\n**Total:** $504 + 1792 = 2296$\n\n(A common error is $9 \\times 8 \\times 7 \\times 5 = 2520$: filling in order and then claiming 5 even digits remain for the last place.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-counting-product-rule-q16",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-basic-probability"
+  ],
+  "question": "A padlock has a 3-digit code. Each digit can be any digit from 0 to 9, and digits may be repeated.\n\nThe code is set at random.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the probability that all three digits of the code are different."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the probability that at least two of the digits are the same."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the probability that the code is greater than 899 and all three digits are different."
+   }
+  ],
+  "hint": "Count the total number of codes, then the number of codes with the property you want.",
+  "answer": "(a) $\\dfrac{18}{25}$ (0.72) (b) $\\dfrac{7}{25}$ (0.28) (c) $\\dfrac{9}{125}$ (0.072)",
+  "solution": "**Total codes:** $10 \\times 10 \\times 10 = 1000$, all equally likely.\n\n**(a)** All different: $10 \\times 9 \\times 8 = 720$ codes.\n$$P = \\frac{720}{1000} = \\frac{18}{25} = 0.72$$\n\n**(b)** \"At least two the same\" is the complement of \"all different\":\n$$P = 1 - 0.72 = 0.28 = \\frac{7}{25}$$\n\n**(c)** Greater than 899 means the first digit is 9 (1 way). Then the second digit is anything except 9 (9 ways) and the third is anything except the two used (8 ways): $1 \\times 9 \\times 8 = 72$ codes.\n$$P = \\frac{72}{1000} = \\frac{9}{125} = 0.072$$"
+ },
+ {
+  "id": "num-counting-product-rule-q17",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-standard-form"
+  ],
+  "question": "A website requires passwords that are exactly 8 characters long. Each character is a lowercase letter (a–z) or a digit (0–9). The first character must be a letter. Characters may be repeated.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the number of possible passwords. Give your answer in standard form correct to 3 significant figures."
+   },
+   {
+    "label": "b",
+    "prompt": "A computer can test $1 \\times 10^9$ passwords per second. Work out how long it would take to test every possible password. Give your answer in minutes, to the nearest minute."
+   },
+   {
+    "label": "c",
+    "prompt": "The website changes the rule so that passwords must be 10 characters long, with the same conditions. By what factor does the number of possible passwords increase?"
+   }
+  ],
+  "hint": "The first character has 26 options; each of the other 7 has $26 + 10 = 36$.",
+  "answer": "(a) $2.04 \\times 10^{12}$ (b) 34 minutes (c) $36^2 = 1296$",
+  "solution": "**(a)** First character: 26 options. Each of the other 7: $26 + 10 = 36$ options.\n$$26 \\times 36^7 = 26 \\times 78\\,364\\,164\\,096 = 2\\,037\\,468\\,266\\,496 \\approx 2.04 \\times 10^{12}$$\n\n**(b)** Time $= \\dfrac{2.037\\ldots \\times 10^{12}}{1 \\times 10^9} = 2037.5$ seconds (using the unrounded value)\n$$2037.5 \\div 60 = 33.96 \\approx 34 \\text{ minutes}$$\n\n**(c)** New total $= 26 \\times 36^9$. Dividing by the old total:\n$$\\frac{26 \\times 36^9}{26 \\times 36^7} = 36^2 = 1296$$\nThe number of passwords is 1296 times bigger (it would take about 30 days to test them all at the same rate)."
+ },
+ {
+  "id": "num-counting-product-rule-q18",
+  "topicId": "num-counting-product-rule",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ],
+  "question": "$720 = 2^4 \\times 3^2 \\times 5$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use the product rule to explain why 720 has exactly 30 factors."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the smallest positive integer that has exactly 12 factors. Justify that it is the smallest."
+   }
+  ],
+  "hint": "Every factor of 720 has the form $2^a \\times 3^b \\times 5^c$. How many choices are there for each of $a$, $b$ and $c$?",
+  "answer": "(a) $5 \\times 3 \\times 2 = 30$ (b) 60",
+  "solution": "**(a)** Every factor of 720 is $2^a \\times 3^b \\times 5^c$, where\n\n$a$ is 0, 1, 2, 3 or 4: **5** choices\n\n$b$ is 0, 1 or 2: **3** choices\n\n$c$ is 0 or 1: **2** choices\n\nDifferent choices give different factors (prime factorisation is unique), and every choice gives a factor. By the product rule there are $5 \\times 3 \\times 2 = 30$ factors.\n\n**(b)** By the same reasoning, $p^a q^b r^c \\cdots$ has $(a + 1)(b + 1)(c + 1)\\cdots$ factors. We need this product to be 12:\n\n$12$: $2^{11} = 2048$\n\n$6 \\times 2$: $2^5 \\times 3 = 96$\n\n$4 \\times 3$: $2^3 \\times 3^2 = 72$\n\n$3 \\times 2 \\times 2$: $2^2 \\times 3 \\times 5 = 60$\n\nIn each case the smallest number comes from giving the largest power to the smallest prime. The smallest of these is **60**.\n\nCheck: the factors of 60 are 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60, which is 12 factors ✓"
+ }
+]

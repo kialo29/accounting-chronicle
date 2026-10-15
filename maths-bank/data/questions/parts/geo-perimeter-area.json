@@ -1,0 +1,286 @@
+[
+ {
+  "id": "geo-perimeter-area-q01",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the area of the rectangle.",
+  "hint": "Area of a rectangle $=$ length $\\times$ width.",
+  "answer": "$40\\text{ cm}^2$",
+  "solution": "$$A = lw = 8 \\times 5 = 40\\text{ cm}^2$$\nArea is measured in square units, so the answer is in $\\text{cm}^2$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"320\" height=\"180\">\n<polygon points=\"40,150 216,150 216,40 40,40\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polyline points=\"50,150 50,140 40,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"128\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8 cm</text>\n<text x=\"222\" y=\"100\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n</svg>",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q02",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The diagram shows a parallelogram. Its base is 8 cm, its sloping sides are 6 cm and its perpendicular height is 5 cm.\n\nFind the area of the parallelogram.",
+  "hint": "Use the height that is at right angles to the base, not the sloping side.",
+  "answer": "$40\\text{ cm}^2$",
+  "solution": "**What changed:** the rectangle has been \"pushed over\" into a parallelogram with the same base and the same perpendicular height.\n$$A = bh = 8 \\times 5 = 40\\text{ cm}^2$$\nThe area has not changed: cutting the triangle off one end and moving it to the other end turns the parallelogram back into the 8 by 5 rectangle. The sloping side (6 cm) is not used – $8 \\times 6 = 48$ would be wrong.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 180\" width=\"330\" height=\"180\">\n<polygon points=\"30,150 206,150 278.97,40 102.97,40\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"102.97\" y1=\"40\" x2=\"102.97\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<polyline points=\"112.97,150 112.97,140 102.97,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"128\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8 cm</text>\n<text x=\"58.48\" y=\"100\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6 cm</text>\n<text x=\"108.97\" y=\"100\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n</svg>",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q03",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the area of the triangle.",
+  "hint": "A triangle is half of a rectangle with the same base and height.",
+  "answer": "$20\\text{ cm}^2$",
+  "solution": "**What changed:** the shape is now a triangle with the same base (8 cm) and perpendicular height (5 cm).\n$$A = \\tfrac{1}{2}bh = \\tfrac{1}{2} \\times 8 \\times 5 = 20\\text{ cm}^2$$\nThis is exactly half of the $40\\text{ cm}^2$ rectangle, because two copies of the triangle make a parallelogram with base 8 cm and height 5 cm.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 180\" width=\"320\" height=\"180\">\n<polygon points=\"40,150 216,150 161,40\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"161\" y1=\"40\" x2=\"161\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<polyline points=\"151,150 151,140 161,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"128\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8 cm</text>\n<text x=\"167\" y=\"100\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n</svg>",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q04",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The diagram shows a trapezium. Find its area.",
+  "hint": "Add the parallel sides, halve, then multiply by the perpendicular height.",
+  "answer": "$50\\text{ cm}^2$",
+  "solution": "**What changed:** the top is now a side of 8 cm parallel to a base of 12 cm, with the same height 5 cm.\n$$A = \\tfrac{1}{2}(a + b)h = \\tfrac{1}{2}(8 + 12) \\times 5 = \\tfrac{1}{2} \\times 20 \\times 5 = 50\\text{ cm}^2$$\nCheck: it is a rectangle $8 \\times 5 = 40$ plus two triangles each with base 2 cm and height 5 cm: $40 + 2 \\times \\tfrac{1}{2} \\times 2 \\times 5 = 50\\text{ cm}^2$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 180\" width=\"330\" height=\"180\">\n<polygon points=\"30,150 294,150 250,40 74,40\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"74\" y1=\"40\" x2=\"74\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<polyline points=\"84,150 84,140 74,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"162\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12 cm</text>\n<text x=\"162\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8 cm</text>\n<text x=\"80\" y=\"100\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n</svg>",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q05",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) A rectangle is 7.5 cm long and 4 cm wide. Find its perimeter and its area.\n\n(b) A square has an area of $36\\text{ cm}^2$. Find its perimeter.",
+  "hint": "Perimeter is the distance all the way round; area is the space inside. For (b), what length times itself gives 36?",
+  "answer": "(a) Perimeter 23 cm, area $30\\text{ cm}^2$ (b) 24 cm",
+  "solution": "(a) Perimeter: $7.5 + 4 + 7.5 + 4 = 23$ cm.\nArea: $7.5 \\times 4 = 30\\text{ cm}^2$.\n\n(b) Side length: $\\sqrt{36} = 6$ cm. Perimeter: $4 \\times 6 = 24$ cm.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q06",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The diagram shows a shape made from rectangles. All the corners are right angles. The diagram is not drawn to scale.\n\n(a) Find the perimeter of the shape.\n\n(b) Find the area of the shape.",
+  "hint": "First work out the two unlabelled lengths. Opposite sides of the shape must add up to the same total.",
+  "answer": "(a) 42 cm (b) $73\\text{ cm}^2$",
+  "solution": "**Missing lengths.**\nHorizontal: the bottom is 12 cm and the top is 5 cm, so the step is $12 - 5 = 7$ cm.\nVertical: the left side is 9 cm and the right side is 4 cm, so the step is $9 - 4 = 5$ cm.\n\n(a) Go all the way round – six sides:\n$$12 + 4 + 7 + 5 + 5 + 9 = 42\\text{ cm}$$\n\n(b) Split with a vertical line: a 5 by 9 rectangle on the left and a 7 by 4 rectangle on the right.\n$$5 \\times 9 + 7 \\times 4 = 45 + 28 = 73\\text{ cm}^2$$\nCheck (big rectangle minus missing corner): $12 \\times 9 - 7 \\times 5 = 108 - 35 = 73\\text{ cm}^2$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" width=\"330\" height=\"240\">\n<polygon points=\"50,210 290,210 290,130 150,130 150,30 50,30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"170\" y=\"230\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12 cm</text>\n<text x=\"44\" y=\"125\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">9 cm</text>\n<text x=\"100\" y=\"22\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5 cm</text>\n<text x=\"296\" y=\"175\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4 cm</text>\n<text x=\"10\" y=\"232\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Not drawn to scale</text>\n</svg>",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q07",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Work backwards to find each missing length.\n\n(a) A triangle has area $42\\text{ cm}^2$ and base 12 cm. Find its perpendicular height.\n\n(b) A parallelogram has area $54\\text{ cm}^2$ and perpendicular height 4.5 cm. Find the length of its base.\n\n(c) A trapezium has parallel sides of 9 cm and 15 cm and area $84\\text{ cm}^2$. Find the perpendicular distance between the parallel sides.\n\n(d) A square has perimeter 26 cm. Find its area.",
+  "hint": "Write the area formula, substitute what you know, then solve for the unknown.",
+  "answer": "(a) 7 cm (b) 12 cm (c) 7 cm (d) $42.25\\text{ cm}^2$",
+  "solution": "(a) $\\tfrac{1}{2} \\times 12 \\times h = 42 \\Rightarrow 6h = 42 \\Rightarrow h = 7$ cm.\n\n(b) $b \\times 4.5 = 54 \\Rightarrow b = 54 \\div 4.5 = 12$ cm.\n\n(c) $\\tfrac{1}{2}(9 + 15) \\times h = 84 \\Rightarrow 12h = 84 \\Rightarrow h = 7$ cm.\n\n(d) Side $= 26 \\div 4 = 6.5$ cm, so area $= 6.5^2 = 42.25\\text{ cm}^2$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q08",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ollie is asked for the area and the perimeter of this parallelogram. The diagram is not drawn to scale. His working is shown.\n\nArea $= 9 \\times 5 = 45\\text{ cm}^2$\n\nPerimeter $= 9 + 5 + 9 + 5 = 28$ cm\n\nOne of his answers is wrong. Identify the mistake, explain it, and correct it.",
+  "hint": "Which of the lengths 5 cm and 4 cm is at right angles to the base?",
+  "answer": "The area is wrong: he used the sloping side (5 cm) instead of the perpendicular height (4 cm). Area $= 9 \\times 4 = 36\\text{ cm}^2$. The perimeter, 28 cm, is correct.",
+  "solution": "**The area is wrong.** The formula $A = bh$ needs the **perpendicular** height – the distance at right angles to the base. Ollie used the sloping side, 5 cm.\n\nCorrect area:\n$$A = 9 \\times 4 = 36\\text{ cm}^2$$\n\nThe sloping side is longer than the height (it is the hypotenuse of the small right-angled triangle), so using it always gives too big an answer.\n\n**The perimeter is correct.** Perimeter is the distance round the edge, so it *does* use the sloping sides: $9 + 5 + 9 + 5 = 28$ cm. The 4 cm height is not part of the edge.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 170\" width=\"340\" height=\"170\">\n<polygon points=\"40,130 238,130 304,42 106,42\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"106\" y1=\"42\" x2=\"106\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<polyline points=\"116,130 116,120 106,120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"149\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9 cm</text>\n<text x=\"65\" y=\"91\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5 cm</text>\n<text x=\"112\" y=\"91\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4 cm</text>\n</svg>",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q09",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows the end wall of a house: a rectangle with an isosceles triangle on top. The diagram is not drawn to scale.\n\nHannah works out the area of the end wall.\n\nRectangle: $10 \\times 6 = 60\\text{ m}^2$\n\nTriangle: $10 \\times 4 = 40\\text{ m}^2$\n\nTotal: $60 + 40 = 100\\text{ m}^2$\n\nFind Hannah's mistake, explain why it is wrong, and work out the correct area.",
+  "hint": "Compare the triangle with the rectangle that just fits around it.",
+  "answer": "She forgot the $\\frac{1}{2}$ in the triangle area: the triangle is $\\frac{1}{2} \\times 10 \\times 4 = 20\\text{ m}^2$, so the total is $80\\text{ m}^2$.",
+  "solution": "The rectangle is correct: $10 \\times 6 = 60\\text{ m}^2$.\n\n**The mistake is the triangle.** $10 \\times 4 = 40$ is the area of the rectangle 10 m wide and 4 m high that surrounds the roof triangle. The triangle fills exactly half of that rectangle (the dashed height splits it into two right-angled triangles, each half of a smaller rectangle), so\n$$A = \\tfrac{1}{2} \\times 10 \\times 4 = 20\\text{ m}^2$$\n\nCorrect total:\n$$60 + 20 = 80\\text{ m}^2$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\">\n<polygon points=\"80,220 260,220 260,112 170,40 80,112\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"80\" y1=\"112\" x2=\"260\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"170\" y1=\"40\" x2=\"170\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<polyline points=\"180,112 180,102 170,102\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polyline points=\"90,220 90,210 80,210\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"170\" y=\"240\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 m</text>\n<text x=\"266\" y=\"171\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6 m</text>\n<text x=\"176\" y=\"81\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4 m</text>\n</svg>",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q10",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows a shape made from a rectangle with a rectangular slot cut out of the top. All corners are right angles and the slot is the same distance from each side. The diagram is not drawn to scale.\n\nKwame says: \"Perimeter $= 10 + 8 + 3 + 4 + 5 = 30$ cm.\"\n\n(a) Explain Kwame's mistake.\n\n(b) Find the correct perimeter.\n\n(c) Find the area of the shape.",
+  "hint": "Trace round the edge with your finger, starting at the bottom left corner, and count the sides. How many are there?",
+  "answer": "(a) He has only added the labelled sides; the shape has 8 sides. (b) 46 cm (c) $60\\text{ cm}^2$",
+  "solution": "(a) Kwame has only added the five **labelled** lengths. The shape has **eight** sides, and the perimeter must include every one of them.\n\n(b) Missing lengths:\n* right side $= 8$ cm (same as the left side),\n* top right piece $= 10 - 3 - 4 = 3$ cm,\n* right side of the slot $= 5$ cm (same depth as the left side of the slot).\n\nGoing round from the bottom left corner:\n$$10 + 8 + 3 + 5 + 4 + 5 + 3 + 8 = 46\\text{ cm}$$\n\n(c) Big rectangle minus the slot:\n$$10 \\times 8 - 4 \\times 5 = 80 - 20 = 60\\text{ cm}^2$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" width=\"330\" height=\"240\">\n<polygon points=\"70,210 270,210 270,50 210,50 210,150 130,150 130,50 70,50\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"170\" y=\"230\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 cm</text>\n<text x=\"64\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8 cm</text>\n<text x=\"100\" y=\"42\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3 cm</text>\n<text x=\"170\" y=\"142\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4 cm</text>\n<text x=\"136\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n<text x=\"10\" y=\"232\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Not drawn to scale</text>\n</svg>",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q11",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Amir says: \"All rectangles with an area of $24\\text{ cm}^2$ have the same perimeter.\"\n\n(a) Show that Amir is wrong.\n\n(b) Of the rectangles with area $24\\text{ cm}^2$ and whole-number side lengths, which has the smallest perimeter?\n\n(c) Is it possible to have a rectangle with area $24\\text{ cm}^2$ and a perimeter less than your answer to (b)? Explain.",
+  "hint": "List the whole-number pairs that multiply to 24 and find the perimeter of each rectangle.",
+  "answer": "(a) e.g. $1 \\times 24$ has perimeter 50 cm but $4 \\times 6$ has perimeter 20 cm. (b) $4\\text{ cm} \\times 6\\text{ cm}$, perimeter 20 cm (c) Yes: a square of side $\\sqrt{24} \\approx 4.90$ cm has perimeter about 19.6 cm.",
+  "solution": "(a)\n\n| Rectangle | Area | Perimeter |\n|---|---|---|\n| $1 \\times 24$ | $24\\text{ cm}^2$ | $50$ cm |\n| $2 \\times 12$ | $24\\text{ cm}^2$ | $28$ cm |\n| $3 \\times 8$ | $24\\text{ cm}^2$ | $22$ cm |\n| $4 \\times 6$ | $24\\text{ cm}^2$ | $20$ cm |\n\nThese all have the same area but different perimeters, so Amir is wrong. Area measures the space inside; perimeter measures the length of the boundary – they are different quantities.\n\n(b) The $4 \\times 6$ rectangle, with perimeter 20 cm.\n\n(c) Yes. The perimeter gets smaller as the rectangle gets closer to a square. If side lengths need not be whole numbers, a square with area 24 has side $\\sqrt{24} = 4.898\\ldots$ cm and perimeter\n$$4 \\times 4.898\\ldots = 19.59\\ldots \\approx 19.6\\text{ cm} < 20\\text{ cm}$$",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-perimeter-area-q12",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Sam is painting one wall of his bedroom. The wall is 4.2 m wide and 2.4 m high. It has a door 0.8 m wide and 2.0 m high, and a window 1.5 m wide and 1.2 m high, which are not painted.\n\nHe needs two coats of paint. One litre of paint covers $12\\text{ m}^2$ (one coat).\n\nPaint is sold in 1 litre tins for £9.75 and 2.5 litre tins for £17.99.\n\nWhat is the cheapest way for Sam to buy enough paint? Show your working.",
+  "hint": "Find the area to be painted (wall minus door minus window), double it for two coats, then work out the litres needed.",
+  "answer": "He needs about 1.11 litres, so the cheapest option is one 2.5 litre tin for £17.99 (two 1 litre tins cost £19.50).",
+  "solution": "Wall: $4.2 \\times 2.4 = 10.08\\text{ m}^2$\n\nDoor: $0.8 \\times 2.0 = 1.6\\text{ m}^2$; window: $1.5 \\times 1.2 = 1.8\\text{ m}^2$\n\nArea to paint: $10.08 - 1.6 - 1.8 = 6.68\\text{ m}^2$\n\nTwo coats: $2 \\times 6.68 = 13.36\\text{ m}^2$\n\nPaint needed: $13.36 \\div 12 = 1.113\\ldots$ litres – just more than 1 litre.\n\nOptions:\n* two 1 litre tins: $2 \\times 9.75 = £19.50$\n* one 2.5 litre tin: $£17.99$\n\nThe cheapest way is **one 2.5 litre tin for £17.99**.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q13",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A farmer's field is a trapezium, as shown. The diagram is not drawn to scale.\n\n(a) The field is to be fenced all the way round. Fencing is sold in 25 m rolls costing £42.50 each. Work out the cost of the fencing.\n\n(b) Grass seed is sown at 35 g per $\\text{m}^2$ and is sold in 20 kg bags. How many bags are needed?",
+  "hint": "For (a) you need the perimeter; for (b) the area. Which length is the perpendicular height?",
+  "answer": "(a) Perimeter 314 m, 13 rolls, £552.50 (b) Area $5000\\text{ m}^2$, 175 kg of seed, 9 bags",
+  "solution": "(a) Perimeter:\n$$120 + 64 + 80 + 50 = 314\\text{ m}$$\nRolls: $314 \\div 25 = 12.56$, so 13 rolls are needed (12 would only give 300 m).\n$$13 \\times £42.50 = £552.50$$\n\n(b) The parallel sides are 120 m and 80 m and the perpendicular distance between them is the 50 m side (it meets both at right angles). The sloping 64 m side is not used.\n$$A = \\tfrac{1}{2}(120 + 80) \\times 50 = 100 \\times 50 = 5000\\text{ m}^2$$\nSeed: $5000 \\times 35 = 175\\,000\\text{ g} = 175$ kg.\n\nBags: $175 \\div 20 = 8.75$, so **9 bags**.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\">\n<polygon points=\"50,180 290,180 210,80 50,80\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polyline points=\"60,180 60,170 50,170\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polyline points=\"60,80 60,90 50,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"170\" y=\"200\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">120 m</text>\n<text x=\"130\" y=\"72\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">80 m</text>\n<text x=\"44\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">50 m</text>\n<text x=\"258\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">64 m</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-perimeter-area-q14",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": false,
+  "question": "The diagram shows a shape $ABCD$. The diagram is not drawn to scale.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the area of the shape.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "A square has the same perimeter as the shape. Which has the greater area, the square or the shape? You must show your working.",
+    "marks": 3
+   }
+  ],
+  "hint": "The shape is a trapezium (or a rectangle plus a triangle). The 13 cm side is used for the perimeter only.",
+  "answer": "(a) $102\\text{ cm}^2$ (b) The square: perimeter 42 cm gives side 10.5 cm and area $110.25\\text{ cm}^2 > 102\\text{ cm}^2$",
+  "solution": "(a) The 11 cm and 6 cm sides are parallel (both perpendicular to the 12 cm base), so the shape is a trapezium with height 12 cm.\n$$A = \\tfrac{1}{2}(11 + 6) \\times 12 \\quad \\textbf{M1}\\textbf{ M1}$$\n$$= \\tfrac{1}{2} \\times 17 \\times 12 = 102\\text{ cm}^2 \\quad \\textbf{A1}$$\n(Alternative M1 M1: rectangle $12 \\times 6 = 72$ plus triangle $\\tfrac{1}{2} \\times 12 \\times 5 = 30$.)\n\n(b) Perimeter of shape: $12 + 6 + 13 + 11 = 42$ cm. **B1**\n\nSide of square: $42 \\div 4 = 10.5$ cm, area $= 10.5^2 = 110.25\\text{ cm}^2$. **M1**\n\n$110.25 > 102$, so the **square** has the greater area (by $8.25\\text{ cm}^2$). **A1**",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 260\" width=\"320\" height=\"260\">\n<polygon points=\"70,225 274,225 274,123 70,38\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polyline points=\"80,225 80,215 70,215\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polyline points=\"264,225 264,215 274,215\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"172\" y=\"245\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12 cm</text>\n<text x=\"64\" y=\"136.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">11 cm</text>\n<text x=\"280\" y=\"179\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6 cm</text>\n<text x=\"178\" y=\"74.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">13 cm</text>\n<text x=\"10\" y=\"252\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Not drawn to scale</text>\n</svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q15",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Triangle $ABC$ has vertices $A(1, 1)$, $B(7, 3)$ and $C(3, 6)$.\n\nNone of its sides is horizontal or vertical. Find the area of the triangle.",
+  "hint": "Draw the smallest rectangle, with horizontal and vertical sides, that surrounds the triangle. Subtract the three right-angled triangles in its corners.",
+  "answer": "$13$ square units",
+  "solution": "**Surrounding rectangle.** The $x$-coordinates run from 1 to 7 and the $y$-coordinates from 1 to 6, so the rectangle is $6 \\times 5$:\n$$6 \\times 5 = 30$$\n\n**Corner triangles** (each is right-angled, with horizontal and vertical legs):\n* between $A$ and $B$: legs $7 - 1 = 6$ and $3 - 1 = 2$, area $\\tfrac{1}{2} \\times 6 \\times 2 = 6$\n* between $B$ and $C$: legs $7 - 3 = 4$ and $6 - 3 = 3$, area $\\tfrac{1}{2} \\times 4 \\times 3 = 6$\n* between $C$ and $A$: legs $3 - 1 = 2$ and $6 - 1 = 5$, area $\\tfrac{1}{2} \\times 2 \\times 5 = 5$\n\n**Area of triangle $ABC$:**\n$$30 - (6 + 6 + 5) = 30 - 17 = 13 \\text{ square units}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 285\" width=\"330\" height=\"285\">\n<line x1=\"40\" y1=\"250\" x2=\"40\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"70\" y1=\"250\" x2=\"70\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"100\" y1=\"250\" x2=\"100\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"130\" y1=\"250\" x2=\"130\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"160\" y1=\"250\" x2=\"160\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"190\" y1=\"250\" x2=\"190\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"220\" y1=\"250\" x2=\"220\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"250\" y1=\"250\" x2=\"250\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"280\" y1=\"250\" x2=\"280\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"250\" x2=\"280\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"220\" x2=\"280\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"190\" x2=\"280\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"160\" x2=\"280\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"130\" x2=\"280\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"100\" x2=\"280\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"70\" x2=\"280\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"40\" x2=\"280\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"0.5\"/>\n<line x1=\"40\" y1=\"250\" x2=\"289\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"40\" y1=\"250\" x2=\"40\" y2=\"31\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"70,220 250,160 130,70\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"70\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text>\n<text x=\"100\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text>\n<text x=\"130\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text>\n<text x=\"160\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text>\n<text x=\"190\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text>\n<text x=\"220\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text>\n<text x=\"250\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text>\n<text x=\"280\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text>\n<text x=\"34\" y=\"225\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text>\n<text x=\"34\" y=\"195\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text>\n<text x=\"34\" y=\"165\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text>\n<text x=\"34\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text>\n<text x=\"34\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text>\n<text x=\"34\" y=\"75\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text>\n<text x=\"34\" y=\"45\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text>\n<text x=\"34\" y=\"266\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text>\n<text x=\"293\" y=\"255\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text>\n<text x=\"46\" y=\"35\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text>\n<text x=\"66\" y=\"238\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A</text>\n<text x=\"258\" y=\"165\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text>\n<text x=\"130\" y=\"62\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text>\n</svg>",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-perimeter-area-q16",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "An isosceles trapezium has parallel sides of length $x$ cm and $(2x + 3)$ cm. The perpendicular distance between the parallel sides is 8 cm, and the area is $108\\text{ cm}^2$.\n\n(a) Form and solve an equation to find $x$.\n\n(b) Find the perimeter of the trapezium, correct to 1 decimal place.",
+  "hint": "Substitute into $A = \\frac{1}{2}(a + b)h$. For (b), each sloping side is the hypotenuse of a right-angled triangle of height 8 cm.",
+  "answer": "(a) $x = 8$ (b) 46.4 cm",
+  "solution": "(a)\n$$\\tfrac{1}{2}\\big(x + (2x + 3)\\big) \\times 8 = 108$$\n$$4(3x + 3) = 108$$\n$$3x + 3 = 27 \\;\\Rightarrow\\; x = 8$$\nSo the parallel sides are 8 cm and 19 cm.\n\n(b) The longer side overhangs the shorter one by $19 - 8 = 11$ cm, shared equally: $5.5$ cm at each end. Each sloping side is the hypotenuse of a right-angled triangle with legs 5.5 cm and 8 cm:\n$$s = \\sqrt{5.5^2 + 8^2} = \\sqrt{94.25} = 9.708\\ldots\\text{ cm}$$\n$$P = 8 + 19 + 2 \\times 9.708\\ldots = 46.416\\ldots \\approx 46.4\\text{ cm}$$",
+  "linkedTopicIds": [
+   "alg-forming-equations",
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-perimeter-area-q17",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "$ABCD$ is a rectangle with $AB = 14$ cm and $BC = 9$ cm. $P$ is a point inside the rectangle. Triangles $PAB$ and $PCD$ are shaded.\n\n(a) Prove that, wherever $P$ is inside the rectangle, the total shaded area is half the area of the rectangle.\n\n(b) Hence find the total unshaded area.",
+  "hint": "Let the perpendicular distance from $P$ to $AB$ be $h$. What is the perpendicular distance from $P$ to $DC$?",
+  "answer": "(a) Proof: the heights of the two triangles add up to 9 cm, so the areas add to $\\frac{1}{2} \\times 14 \\times 9$. (b) $63\\text{ cm}^2$",
+  "solution": "(a) Let the perpendicular distance from $P$ to $AB$ be $h$ cm. Since $AB$ and $DC$ are parallel and 9 cm apart, the perpendicular distance from $P$ to $DC$ is $(9 - h)$ cm.\n\nBoth triangles have a base of length 14 cm ($AB = DC = 14$), so\n$$\\text{area } PAB + \\text{area } PCD = \\tfrac{1}{2} \\times 14 \\times h + \\tfrac{1}{2} \\times 14 \\times (9 - h)$$\n$$= \\tfrac{1}{2} \\times 14 \\times (h + 9 - h) = \\tfrac{1}{2} \\times 14 \\times 9 = 63\\text{ cm}^2$$\n\nThis does not depend on $h$ (or on how far $P$ is from the sides $AD$ and $BC$, since triangle areas depend only on base and perpendicular height). The rectangle has area $14 \\times 9 = 126\\text{ cm}^2$, so the shaded area is always half of it. $\\blacksquare$\n\n(b) Unshaded area $= 126 - 63 = 63\\text{ cm}^2$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\">\n<polygon points=\"40,220 320,220 220,150\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polygon points=\"320,40 40,40 220,150\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polygon points=\"40,220 320,220 320,40 40,40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"220\" cy=\"150\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"226\" y=\"168\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text>\n<text x=\"26\" y=\"236\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text>\n<text x=\"324\" y=\"236\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text>\n<text x=\"324\" y=\"36\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text>\n<text x=\"26\" y=\"36\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text>\n</svg>",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-perimeter-area-q18",
+  "topicId": "geo-perimeter-area",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A rectangle is divided into four smaller rectangles by one horizontal and one vertical line. The areas of three of them are shown. The diagram is not drawn to scale.\n\n(a) Find the area of the fourth rectangle.\n\n(b) The top left rectangle is 4 cm wide. Find the perimeter of the large rectangle.",
+  "hint": "Rectangles in the same row have the same height, so their areas are in the ratio of their widths.",
+  "answer": "(a) $45\\text{ cm}^2$ (b) 41 cm",
+  "solution": "(a) Let the left and right widths be $a$ and $b$, and the top and bottom heights be $c$ and $d$. Then\n$$ac = 12, \\qquad bc = 18, \\qquad ad = 30$$\nThe top row has height $c$, so $\\dfrac{b}{a} = \\dfrac{bc}{ac} = \\dfrac{18}{12} = 1.5$: the right column is 1.5 times as wide as the left.\n\nThe bottom row has the same widths, so its right rectangle is 1.5 times the area of its left one:\n$$bd = 1.5 \\times 30 = 45\\text{ cm}^2$$\n(Equivalently $bd = \\dfrac{bc \\times ad}{ac} = \\dfrac{18 \\times 30}{12} = 45$.)\n\n(b) $a = 4$, so $c = 12 \\div 4 = 3$, $b = 18 \\div 3 = 6$ and $d = 30 \\div 4 = 7.5$.\n\nThe large rectangle is $(4 + 6) = 10$ cm wide and $(3 + 7.5) = 10.5$ cm tall:\n$$P = 2(10 + 10.5) = 41\\text{ cm}$$\nCheck: $10 \\times 10.5 = 105 = 12 + 18 + 30 + 45$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"320\" height=\"270\">\n<polygon points=\"60,240 260,240 260,30 60,30\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"140\" y1=\"240\" x2=\"140\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"60\" y1=\"90\" x2=\"260\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"100\" y=\"65\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12 cm²</text>\n<text x=\"200\" y=\"65\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">18 cm²</text>\n<text x=\"100\" y=\"170\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30 cm²</text>\n<text x=\"200\" y=\"170\" font-size=\"16\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">?</text>\n<text x=\"10\" y=\"262\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Not drawn to scale</text>\n</svg>",
+  "linkedTopicIds": [
+   "rat-ratio-basics"
+  ],
+  "misconceptionIds": []
+ }
+]
