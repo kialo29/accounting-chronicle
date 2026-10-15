@@ -1,0 +1,320 @@
+[
+ {
+  "id": "alg-coordinates-midpoint-distance-q01",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The grid shows six points.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 290\" width=\"310\" height=\"290\"><line x1=\"25\" y1=\"270\" x2=\"25\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"50\" y1=\"270\" x2=\"50\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"75\" y1=\"270\" x2=\"75\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"100\" y1=\"270\" x2=\"100\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"125\" y1=\"270\" x2=\"125\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"150\" y1=\"270\" x2=\"150\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"175\" y1=\"270\" x2=\"175\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"200\" y1=\"270\" x2=\"200\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"225\" y1=\"270\" x2=\"225\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"250\" y1=\"270\" x2=\"250\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"275\" y1=\"270\" x2=\"275\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"270\" x2=\"275\" y2=\"270\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"245\" x2=\"275\" y2=\"245\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"220\" x2=\"275\" y2=\"220\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"195\" x2=\"275\" y2=\"195\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"170\" x2=\"275\" y2=\"170\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"145\" x2=\"275\" y2=\"145\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"120\" x2=\"275\" y2=\"120\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"95\" x2=\"275\" y2=\"95\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"70\" x2=\"275\" y2=\"70\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"45\" x2=\"275\" y2=\"45\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"20\" x2=\"275\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"25\" y1=\"145\" x2=\"285\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"270\" x2=\"150\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"288\" y=\"149\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"155\" y=\"14\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">y</text><text x=\"25\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−5</text><text x=\"50\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><text x=\"75\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><text x=\"100\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><text x=\"125\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><text x=\"175\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"200\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"225\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"250\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"275\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><text x=\"145\" y=\"274\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−5</text><text x=\"145\" y=\"249\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><text x=\"145\" y=\"224\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><text x=\"145\" y=\"199\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><text x=\"145\" y=\"174\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><text x=\"145\" y=\"124\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"145\" y=\"99\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"145\" y=\"74\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"145\" y=\"49\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"145\" y=\"24\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"145\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><circle cx=\"225\" cy=\"95\" r=\"3.5\" fill=\"currentColor\"/><text x=\"232\" y=\"89\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><circle cx=\"50\" cy=\"120\" r=\"3.5\" fill=\"currentColor\"/><text x=\"36\" y=\"114\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><circle cx=\"225\" cy=\"195\" r=\"3.5\" fill=\"currentColor\"/><text x=\"232\" y=\"209\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><circle cx=\"100\" cy=\"245\" r=\"3.5\" fill=\"currentColor\"/><text x=\"86\" y=\"259\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">D</text><circle cx=\"150\" cy=\"70\" r=\"3.5\" fill=\"currentColor\"/><text x=\"157\" y=\"64\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">E</text><circle cx=\"75\" cy=\"145\" r=\"3.5\" fill=\"currentColor\"/><text x=\"69\" y=\"137\" font-size=\"14\" font-weight=\"bold\" font-family=\"sans-serif\" fill=\"currentColor\">F</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the coordinates of each of the points $A$ to $F$."
+   },
+   {
+    "label": "b",
+    "prompt": "Which of the points lie in the 3rd quadrant (where both coordinates are negative)?"
+   },
+   {
+    "label": "c",
+    "prompt": "Jack says, \"$C$ is at $(-2, 3)$.\" Explain the mistake Jack has made."
+   }
+  ],
+  "hint": "Coordinates are $(x, y)$: go across first (right is positive), then up or down (up is positive).",
+  "answer": "(a) $A(3, 2)$, $B(-4, 1)$, $C(3, -2)$, $D(-2, -4)$, $E(0, 3)$, $F(-3, 0)$ (b) $D$ only (c) He wrote the coordinates the wrong way round ($y$ first); $C$ is 3 right and 2 down, so $C$ is $(3, -2)$.",
+  "solution": "(a) Read across first, then up or down:\n\n$A(3, 2)$, $B(-4, 1)$, $C(3, -2)$, $D(-2, -4)$, $E(0, 3)$, $F(-3, 0)$.\n\n$E$ lies on the $y$-axis (its $x$-coordinate is 0) and $F$ lies on the $x$-axis (its $y$-coordinate is 0).\n\n(b) Both coordinates negative: only $D(-2, -4)$. ($E$ and $F$ lie on axes, so they are not in any quadrant.)\n\n(c) Jack has written the coordinates the wrong way round: he has put the vertical movement ($y = -2$) first and the horizontal movement ($x = 3$) second. The $x$-coordinate (across) always comes first. $C$ is 3 to the **right** and 2 **down**, so $C$ is $(3, -2)$. The point $(-2, 3)$ is 2 left and 3 up, which is a different point.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q02",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the midpoint of the line segment joining $(2, 4)$ and $(8, 10)$.",
+  "hint": "Add the $x$-coordinates and halve; then do the same for the $y$-coordinates.",
+  "answer": "$(5, 7)$",
+  "solution": "$$\\left(\\frac{2 + 8}{2}, \\frac{4 + 10}{2}\\right) = \\left(\\frac{10}{2}, \\frac{14}{2}\\right) = (5, 7)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q03",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the midpoint of the line segment joining $(2, 4)$ and $(8, -10)$.",
+  "hint": "Adding a negative number is the same as subtracting.",
+  "answer": "$(5, -3)$",
+  "solution": "**What changed:** the second $y$-coordinate is now $-10$ instead of $10$. The $x$-coordinate of the midpoint is unchanged.\n$$\\left(\\frac{2 + 8}{2}, \\frac{4 + (-10)}{2}\\right) = \\left(5, \\frac{-6}{2}\\right) = (5, -3)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q04",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the midpoint of the line segment joining $(-2, 4)$ and $(8, -10)$.",
+  "hint": "Only one coordinate has changed from the previous question. Which part of the answer will change?",
+  "answer": "$(3, -3)$",
+  "solution": "**What changed:** the first $x$-coordinate is now $-2$ instead of $2$, so only the $x$-coordinate of the midpoint changes (it moves 2 to the left, half of the change of 4).\n$$\\left(\\frac{-2 + 8}{2}, \\frac{4 + (-10)}{2}\\right) = \\left(\\frac{6}{2}, \\frac{-6}{2}\\right) = (3, -3)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q05",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the midpoint of the line segment joining $(-2, 4)$ and $(7, -10)$.",
+  "hint": "The midpoint does not have to have whole-number coordinates.",
+  "answer": "$(2.5, -3)$",
+  "solution": "**What changed:** the second $x$-coordinate is now 7, so the sum of the $x$-coordinates is odd and the midpoint has a half.\n$$\\left(\\frac{-2 + 7}{2}, \\frac{4 + (-10)}{2}\\right) = \\left(\\frac{5}{2}, -3\\right) = (2.5, -3)$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q06",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the length of the line segment joining each pair of points.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$(2, -1)$ and $(10, 14)$"
+   },
+   {
+    "label": "b",
+    "prompt": "$(-3, 2)$ and $(1, -4)$. Give your answer as a surd in its simplest form, and also correct to 3 significant figures."
+   }
+  ],
+  "hint": "Find the change in $x$ and the change in $y$. These are the two shorter sides of a right-angled triangle; use Pythagoras.",
+  "answer": "(a) 17 (b) $2\\sqrt{13} \\approx 7.21$",
+  "solution": "(a) Change in $x$: $10 - 2 = 8$. Change in $y$: $14 - (-1) = 15$.\n$$\\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17$$\n\n(b) Change in $x$: $1 - (-3) = 4$. Change in $y$: $-4 - 2 = -6$.\n$$\\sqrt{4^2 + (-6)^2} = \\sqrt{16 + 36} = \\sqrt{52} = \\sqrt{4 \\times 13} = 2\\sqrt{13}$$\n\n$2\\sqrt{13} = 7.2111\\ldots \\approx 7.21$ (3 s.f.).\n\n(Squaring makes the negative change positive, so the order of the points does not matter.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q07",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Mia is asked to find the distance between $P(-4, 1)$ and $Q(8, 6)$. Her working is shown below.\n\nAcross: $8 - (-4) = 12$\nUp: $6 - 1 = 5$\nDistance $= 12 + 5 = 17$\n\nExplain Mia's mistake and find the correct distance.",
+  "hint": "Sketch the right-angled triangle with $PQ$ as one side. Which side is $PQ$?",
+  "answer": "She added the horizontal and vertical changes; $PQ$ is the hypotenuse, so use Pythagoras: $PQ = \\sqrt{12^2 + 5^2} = 13$.",
+  "solution": "Mia's changes (12 across and 5 up) are correct, but adding them gives the distance travelled going across and then up, not the straight-line distance.\n\nThe horizontal and vertical changes are the two shorter sides of a right-angled triangle, and $PQ$ is the **hypotenuse**. By Pythagoras:\n$$PQ = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$$\n\n(The straight line must be shorter than going round two sides: $13 < 17$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q08",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Sam is asked to find the midpoint of $A(-6, 3)$ and $B(2, 9)$. His working is shown below.\n\n$x$: $\\dfrac{2 - (-6)}{2} = \\dfrac{8}{2} = 4$\n$y$: $\\dfrac{9 - 3}{2} = \\dfrac{6}{2} = 3$\nMidpoint $= (4, 3)$\n\n(a) Explain the mistake Sam has made.\n\n(b) Find the correct midpoint.\n\n(c) Show how you could check that your answer is sensible.",
+  "hint": "The midpoint is the average of the coordinates. Is $(4, 3)$ even between $A$ and $B$?",
+  "answer": "(a) He subtracted the coordinates; that gives half the change, not a position. He should add then halve. (b) $(-2, 6)$ (c) From $A$ to the midpoint is $+4$ across and $+3$ up, and the same step again reaches $B$.",
+  "solution": "(a) Sam subtracted the coordinates. Half the difference tells you **how far** it is from one end to the middle (4 across and 3 up), not **where** the middle is. The midpoint is the average, so add then halve.\n\n(b)\n$$\\left(\\frac{-6 + 2}{2}, \\frac{3 + 9}{2}\\right) = \\left(\\frac{-4}{2}, \\frac{12}{2}\\right) = (-2, 6)$$\n\n(c) From $A(-6, 3)$ to $(-2, 6)$ is $+4$ across and $+3$ up. Repeating that step from $(-2, 6)$ gives $(2, 9)$, which is $B$ ✓. Sam's point $(4, 3)$ has $x = 4$, which is not between $-6$ and $2$, so it cannot be the midpoint.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q09",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$M(1, -2)$ is the midpoint of the line segment $AB$. $A$ is the point $(-5, 3)$.\n\nZoe is asked to find the coordinates of $B$. Her working is shown below.\n\n$B = \\left(\\dfrac{-5 + 1}{2}, \\dfrac{3 + (-2)}{2}\\right) = (-2, 0.5)$\n\nExplain Zoe's mistake and find the correct coordinates of $B$.",
+  "hint": "Work out the step from $A$ to $M$. $B$ is the same step again beyond $M$.",
+  "answer": "She found the midpoint of $A$ and $M$, which lies between them, instead of going beyond $M$. Correct: $B = (7, -7)$.",
+  "solution": "Zoe has used the midpoint formula on $A$ and $M$. That gives the point halfway between $A$ and $M$ (a quarter of the way along $AB$), not the other end of the segment.\n\n**Correct method.** $M$ is halfway, so $B$ is as far beyond $M$ as $A$ is before it.\n\nStep from $A$ to $M$: $x$ changes by $1 - (-5) = +6$; $y$ changes by $-2 - 3 = -5$.\n\nRepeat the step from $M$:\n$$B = (1 + 6, -2 - 5) = (7, -7)$$\n\nCheck: $\\left(\\dfrac{-5 + 7}{2}, \\dfrac{3 + (-7)}{2}\\right) = (1, -2) = M$ ✓.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q10",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The diagram shows triangle $ABC$ with vertices $A(1, 1)$, $B(5, 4)$ and $C(2, 8)$.\n\nProve that triangle $ABC$ is both isosceles and right-angled.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 290\" width=\"310\" height=\"290\"><line x1=\"40\" y1=\"260\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"66\" y1=\"260\" x2=\"66\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"92\" y1=\"260\" x2=\"92\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"118\" y1=\"260\" x2=\"118\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"144\" y1=\"260\" x2=\"144\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"170\" y1=\"260\" x2=\"170\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"196\" y1=\"260\" x2=\"196\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"222\" y1=\"260\" x2=\"222\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"248\" y1=\"260\" x2=\"248\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"274\" y1=\"260\" x2=\"274\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"260\" x2=\"274\" y2=\"260\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"234\" x2=\"274\" y2=\"234\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"208\" x2=\"274\" y2=\"208\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"182\" x2=\"274\" y2=\"182\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"156\" x2=\"274\" y2=\"156\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"130\" x2=\"274\" y2=\"130\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"104\" x2=\"274\" y2=\"104\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"78\" x2=\"274\" y2=\"78\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"52\" x2=\"274\" y2=\"52\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"26\" x2=\"274\" y2=\"26\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"260\" x2=\"284\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"260\" x2=\"40\" y2=\"16\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"287\" y=\"264\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">x</text><text x=\"45\" y=\"20\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">y</text><text x=\"66\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"92\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"118\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"144\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"170\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><text x=\"196\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><text x=\"222\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><text x=\"248\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><text x=\"274\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><text x=\"35\" y=\"238\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"35\" y=\"212\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"35\" y=\"186\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"35\" y=\"160\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"35\" y=\"134\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"35\" y=\"108\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"35\" y=\"82\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><text x=\"35\" y=\"56\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><text x=\"35\" y=\"30\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">9</text><text x=\"35\" y=\"275\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><polygon points=\"66,234 170,156 92,52\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"66\" cy=\"234\" r=\"3\" fill=\"currentColor\"/><text x=\"58\" y=\"250\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">A(1, 1)</text><circle cx=\"170\" cy=\"156\" r=\"3\" fill=\"currentColor\"/><text x=\"178\" y=\"160\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">B(5, 4)</text><circle cx=\"92\" cy=\"52\" r=\"3\" fill=\"currentColor\"/><text x=\"100\" y=\"48\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">C(2, 8)</text></svg>",
+  "hint": "Find the lengths of all three sides using the distance formula. For the right angle, use the converse of Pythagoras' theorem.",
+  "answer": "$AB = 5$, $BC = 5$, $AC = \\sqrt{50}$. $AB = BC$, so it is isosceles; $AB^2 + BC^2 = 50 = AC^2$, so the angle at $B$ is a right angle.",
+  "solution": "Lengths:\n$$AB = \\sqrt{(5 - 1)^2 + (4 - 1)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$$\n$$BC = \\sqrt{(2 - 5)^2 + (8 - 4)^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$$\n$$AC = \\sqrt{(2 - 1)^2 + (8 - 1)^2} = \\sqrt{1 + 49} = \\sqrt{50}$$\n\n**Isosceles:** $AB = BC = 5$, so two sides are equal.\n\n**Right-angled:** $AB^2 + BC^2 = 25 + 25 = 50 = AC^2$. By the converse of Pythagoras' theorem, the angle opposite $AC$, which is angle $ABC$, is $90^\\circ$.\n\nSo triangle $ABC$ is a right-angled isosceles triangle.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q11",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "$A$ is the point $(-3, 7)$ and $B$ is the point $(9, 2)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of the midpoint of $AB$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the length of $AB$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "$B$ is the midpoint of the line segment $AC$. Find the coordinates of $C$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(b) Use Pythagoras with the horizontal and vertical changes. (c) Step from $A$ to $B$, then take the same step again.",
+  "answer": "(a) $(3, 4.5)$ (b) 13 (c) $(21, -3)$",
+  "solution": "**(a)** $\\left(\\dfrac{-3 + 9}{2}, \\dfrac{7 + 2}{2}\\right)$ **M1** for adding and halving either coordinate\n\n$= (3, 4.5)$ **A1**\n\n**(b)** Changes: $9 - (-3) = 12$ and $2 - 7 = -5$.\n$$AB = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169}$$\n**M1** for $12^2 + 5^2$ (or $(-5)^2$) seen\n\n$AB = 13$ **A1**\n\n**(c)** From $A$ to $B$: $+12$ across, $-5$ up. **M1** for a correct method, e.g. $2 \\times 9 - (-3)$ or $B$ + (step from $A$ to $B$)\n\n$C = (9 + 12, 2 - 5) = (21, -3)$ **A1**",
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q12",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "On an orienteering map, positions are given as coordinates. 1 unit on the map represents 50 metres on the ground.\n\nCheckpoint $P$ is at $(-3, 5)$ and checkpoint $Q$ is at $(6, -7)$.\n\n(a) Work out the straight-line distance between $P$ and $Q$, in metres.\n\n(b) A water station is placed halfway between $P$ and $Q$. Write down its coordinates.\n\n(c) A runner goes from $P$ to $Q$ by running due east and then due south. How much further is this than the straight-line distance?",
+  "hint": "Work in map units first, then convert using the scale. For (c), the route east-then-south is the sum of the two changes.",
+  "answer": "(a) 750 m (b) $(1.5, -1)$ (c) 300 m further",
+  "solution": "(a) Changes: $6 - (-3) = 9$ units east, $-7 - 5 = -12$ units (12 units south).\n$$PQ = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15 \\text{ units}$$\n\n$15 \\times 50 = 750$ m.\n\n(b) $\\left(\\dfrac{-3 + 6}{2}, \\dfrac{5 + (-7)}{2}\\right) = (1.5, -1)$.\n\n(c) East then south: $9 + 12 = 21$ units $= 21 \\times 50 = 1050$ m.\n\nExtra distance: $1050 - 750 = 300$ m.\n\n(This shows why the straight-line distance is **not** the sum of the changes.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "rat-scale-drawings-maps"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q13",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A football analyst uses coordinates in metres, with the origin at a corner flag. The centre of the goal the attacking team is shooting at is at $G(0, 34)$.\n\nPlayer $A$ is at $(24, 16)$ and player $B$ is at $(12, 41)$.\n\n(a) $A$ passes the ball straight to $B$. Work out the length of the pass. Give your answer to 1 decimal place.\n\n(b) How much closer to $G$ is player $B$ than player $A$? Give your answer to 1 decimal place.\n\n(c) A defender wants to stand exactly halfway between $A$ and $B$ to block the pass. Where should the defender stand?",
+  "hint": "Use the distance formula for each length. Work out both distances from $G$ before subtracting.",
+  "answer": "(a) 27.7 m (b) 16.1 m (c) $(18, 28.5)$",
+  "solution": "(a) Changes from $A$ to $B$: $12 - 24 = -12$, $41 - 16 = 25$.\n$$AB = \\sqrt{(-12)^2 + 25^2} = \\sqrt{144 + 625} = \\sqrt{769} = 27.73\\ldots \\approx 27.7 \\text{ m}$$\n\n(b)\n$$AG = \\sqrt{24^2 + (16 - 34)^2} = \\sqrt{576 + 324} = \\sqrt{900} = 30 \\text{ m}$$\n$$BG = \\sqrt{12^2 + (41 - 34)^2} = \\sqrt{144 + 49} = \\sqrt{193} = 13.89\\ldots \\text{ m}$$\n\nDifference: $30 - 13.89\\ldots = 16.10\\ldots \\approx 16.1$ m. (Round only at the end.)\n\n(c) Midpoint: $\\left(\\dfrac{24 + 12}{2}, \\dfrac{16 + 41}{2}\\right) = (18, 28.5)$.",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q14",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A circle has centre $C(2, -1)$. The point $P(5, 3)$ lies on the circle.\n\n(a) Find the radius of the circle.\n\n(b) $PQ$ is a diameter of the circle. Find the coordinates of $Q$.\n\n(c) Show that the point $R(-1, 3)$ also lies on the circle.\n\n(d) Write down the equation of the circle.",
+  "hint": "The radius is the distance $CP$. The centre is the midpoint of any diameter.",
+  "answer": "(a) 5 (b) $Q(-1, -5)$ (c) $CR = \\sqrt{9 + 16} = 5$, equal to the radius (d) $(x - 2)^2 + (y + 1)^2 = 25$",
+  "solution": "(a)\n$$CP = \\sqrt{(5 - 2)^2 + (3 - (-1))^2} = \\sqrt{9 + 16} = 5$$\n\n(b) $C$ is the midpoint of $PQ$. From $P$ to $C$: $x$ changes by $-3$, $y$ changes by $-4$. Repeat from $C$:\n$$Q = (2 - 3, -1 - 4) = (-1, -5)$$\n\nCheck: midpoint of $P$ and $Q$ is $\\left(\\dfrac{5 - 1}{2}, \\dfrac{3 - 5}{2}\\right) = (2, -1)$ ✓.\n\n(c)\n$$CR = \\sqrt{(-1 - 2)^2 + (3 - (-1))^2} = \\sqrt{9 + 16} = 5$$\n$CR$ equals the radius, so $R$ lies on the circle.\n\n(d) A point $(x, y)$ is on the circle when its distance from $(2, -1)$ is 5:\n$$(x - 2)^2 + (y + 1)^2 = 25$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-circle-equations"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q15",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$A$ is the point $(k, 3)$ and $B$ is the point $(2, -1)$. The length of $AB$ is 5 units.\n\n(a) Find the two possible values of $k$.\n\n(b) Explain, with reference to a sketch, why there are two possible positions for $A$.",
+  "hint": "Use the distance formula to form an equation in $k$, then square both sides.",
+  "answer": "(a) $k = 5$ or $k = -1$ (b) Points on the line $y = 3$ that are 5 units from $B$ are where a circle of radius 5 centred at $B$ crosses that line; it crosses it twice, once on each side of $x = 2$.",
+  "solution": "(a)\n$$\\sqrt{(k - 2)^2 + (3 - (-1))^2} = 5$$\n\nSquare both sides:\n$$(k - 2)^2 + 16 = 25 \\;\\Rightarrow\\; (k - 2)^2 = 9 \\;\\Rightarrow\\; k - 2 = \\pm 3$$\n\nSo $k = 5$ or $k = -1$.\n\nCheck: from $(5, 3)$ the changes are 3 and 4, giving $\\sqrt{25} = 5$ ✓; from $(-1, 3)$ they are $-3$ and $4$, also giving 5 ✓.\n\n(b) $A$ must lie on the horizontal line $y = 3$, which is 4 units above $B$. All points 5 units from $B$ form a circle of radius 5 centred at $B$. That circle crosses the line $y = 3$ at two points, symmetrically placed 3 units either side of $x = 2$ (a 3–4–5 triangle each side). So there are two positions for $A$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q16",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Kate says, \"For any numbers $a$ and $b$, the distance from the point $(a, b)$ to the point $(b, a)$ is $\\sqrt{2} \\times$ the difference between $a$ and $b$.\"\n\n(a) Is Kate correct? Prove your answer.\n\n(b) Hence find, as a surd, the exact distance from $(7, -2)$ to $(-2, 7)$.",
+  "hint": "Apply the distance formula to $(a, b)$ and $(b, a)$. Note that $(a - b)^2 = (b - a)^2$.",
+  "answer": "(a) Yes: $\\sqrt{(b - a)^2 + (a - b)^2} = \\sqrt{2(a - b)^2} = \\sqrt{2} \\times |a - b|$, where $|a - b|$ is the positive difference. (b) $9\\sqrt{2}$",
+  "solution": "(a) Changes: in $x$, $b - a$; in $y$, $a - b$. Since $(b - a)^2 = (a - b)^2$:\n$$\\text{distance} = \\sqrt{(b - a)^2 + (a - b)^2} = \\sqrt{2(a - b)^2} = \\sqrt{2} \\times \\sqrt{(a - b)^2}$$\n\n$\\sqrt{(a - b)^2}$ is the positive difference between $a$ and $b$ (for example $\\sqrt{(-3)^2} = 3$). So Kate is correct, provided \"the difference\" means the positive difference.\n\n(b) $a = 7$, $b = -2$: the difference is $7 - (-2) = 9$, so the distance is $9\\sqrt{2}$.\n\nCheck directly: $\\sqrt{(-9)^2 + 9^2} = \\sqrt{162} = \\sqrt{81 \\times 2} = 9\\sqrt{2}$ ✓.",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q17",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Three of the four vertices of a parallelogram are $(-2, 1)$, $(4, 3)$ and $(7, 8)$.\n\nFind **all** the possible coordinates of the fourth vertex.",
+  "hint": "The diagonals of a parallelogram bisect each other, so they share a midpoint. Any of the three given points could be opposite the missing vertex.",
+  "answer": "$(1, 6)$, $(-5, -4)$ or $(13, 10)$",
+  "solution": "Call the points $P(-2, 1)$, $Q(4, 3)$, $R(7, 8)$, and the missing vertex $S(x, y)$.\n\nThe diagonals of a parallelogram bisect each other, so the two diagonals have the **same midpoint**. The missing vertex $S$ is opposite one of $P$, $Q$ or $R$; the other two given points form the other diagonal.\n\n**$S$ opposite $Q$** (diagonals $PR$ and $QS$): midpoint of $PR$ is $\\left(\\dfrac{5}{2}, \\dfrac{9}{2}\\right)$.\n$$\\frac{4 + x}{2} = \\frac{5}{2},\\; \\frac{3 + y}{2} = \\frac{9}{2} \\;\\Rightarrow\\; S = (1, 6)$$\n\n**$S$ opposite $R$** (diagonals $PQ$ and $RS$): midpoint of $PQ$ is $(1, 2)$.\n$$\\frac{7 + x}{2} = 1,\\; \\frac{8 + y}{2} = 2 \\;\\Rightarrow\\; S = (-5, -4)$$\n\n**$S$ opposite $P$** (diagonals $QR$ and $PS$): midpoint of $QR$ is $\\left(\\dfrac{11}{2}, \\dfrac{11}{2}\\right)$.\n$$\\frac{-2 + x}{2} = \\frac{11}{2},\\; \\frac{1 + y}{2} = \\frac{11}{2} \\;\\Rightarrow\\; S = (13, 10)$$\n\nThe fourth vertex is $(1, 6)$, $(-5, -4)$ or $(13, 10)$.\n\n(Check one with vectors: for $PQRS$ with $S(1, 6)$, $P \\to Q$ is $+6, +2$ and $S \\to R$ is $+6, +2$ ✓, so $PQ$ and $SR$ are equal and parallel.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "geo-shape-properties"
+  ]
+ },
+ {
+  "id": "alg-coordinates-midpoint-distance-q18",
+  "topicId": "alg-coordinates-midpoint-distance",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$A$ is the point $(1, 4)$ and $B$ is the point $(7, 2)$.\n\nThe point $P$ lies on the line $y = x$ and is the same distance from $A$ as it is from $B$.\n\n(a) Find the coordinates of $P$.\n\n(b) Find the exact distance $PA$, giving your answer as a simplified surd.",
+  "hint": "Let $P$ be $(t, t)$. Write $PA^2 = PB^2$ using the distance formula; the $t^2$ terms will cancel.",
+  "answer": "(a) $P(4.5, 4.5)$ (b) $PA = \\sqrt{12.5} = \\dfrac{5\\sqrt{2}}{2}$",
+  "solution": "(a) Any point on $y = x$ can be written $P(t, t)$.\n\n$PA = PB$, so $PA^2 = PB^2$:\n$$(t - 1)^2 + (t - 4)^2 = (t - 7)^2 + (t - 2)^2$$\n\nExpand:\n$$t^2 - 2t + 1 + t^2 - 8t + 16 = t^2 - 14t + 49 + t^2 - 4t + 4$$\n$$2t^2 - 10t + 17 = 2t^2 - 18t + 53$$\n$$8t = 36 \\;\\Rightarrow\\; t = 4.5$$\n\nSo $P = (4.5, 4.5)$.\n\n(b)\n$$PA^2 = 3.5^2 + 0.5^2 = 12.25 + 0.25 = 12.5$$\n$$PA = \\sqrt{12.5} = \\sqrt{\\frac{25}{2}} = \\frac{5}{\\sqrt{2}} = \\frac{5\\sqrt{2}}{2}$$\n\nCheck: $PB^2 = (4.5 - 7)^2 + (4.5 - 2)^2 = 6.25 + 6.25 = 12.5$ ✓.\n\n($P$ is where the perpendicular bisector of $AB$ meets the line $y = x$.)",
+  "linkedTopicIds": [
+   "alg-linear-equations",
+   "alg-expand-double-triple",
+   "num-surds"
+  ]
+ }
+]

@@ -1,0 +1,282 @@
+[
+ {
+  "id": "geo-3d-shapes-nets-q01",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A square-based pyramid has a square base and four triangular faces that meet at a point (the apex).\n\nWrite down the number of (a) faces, (b) edges, (c) vertices of a square-based pyramid.",
+  "hint": "Count the base edges first, then the edges going up to the apex. Do the same for the vertices.",
+  "answer": "(a) 5 faces (b) 8 edges (c) 5 vertices",
+  "solution": "(a) Faces: 1 square base $+$ 4 triangles $= 5$.\n\n(b) Edges: 4 round the base $+$ 4 running up to the apex $= 8$.\n\n(c) Vertices: 4 corners of the base $+$ 1 apex $= 5$.\n\nCheck with Euler's formula: $F + V - E = 5 + 5 - 8 = 2$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q02",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A hexagonal-based pyramid has a hexagon as its base and six triangular faces that meet at the apex.\n\nWrite down the number of (a) faces, (b) edges, (c) vertices of a hexagonal-based pyramid.",
+  "hint": "Same method as for the square-based pyramid, but the base now has 6 sides.",
+  "answer": "(a) 7 faces (b) 12 edges (c) 7 vertices",
+  "solution": "**What changed:** the base went from a square (4 sides) to a hexagon (6 sides).\n\n(a) Faces: 1 hexagon $+$ 6 triangles $= 7$.\n\n(b) Edges: 6 round the base $+$ 6 up to the apex $= 12$.\n\n(c) Vertices: 6 base corners $+$ 1 apex $= 7$.\n\nEach extra side on the base adds 1 face, 2 edges and 1 vertex. Check: $F + V - E = 7 + 7 - 12 = 2$ ✓",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q03",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A hexagonal prism has two hexagonal ends joined by rectangles.\n\nWrite down the number of (a) faces, (b) edges, (c) vertices of a hexagonal prism, and check your answers with Euler's formula $F + V - E = 2$.",
+  "hint": "There are now **two** hexagons instead of one hexagon and an apex. How many rectangles join them?",
+  "answer": "(a) 8 faces (b) 18 edges (c) 12 vertices; $8 + 12 - 18 = 2$",
+  "solution": "**What changed:** same hexagonal base, but a prism instead of a pyramid, so the apex is replaced by a second hexagon.\n\n(a) Faces: 2 hexagons $+$ 6 rectangles $= 8$.\n\n(b) Edges: 6 on each hexagon $= 12$, plus 6 edges joining the two ends $= 18$.\n\n(c) Vertices: 6 on each hexagon $= 12$.\n\nEuler: $F + V - E = 8 + 12 - 18 = 2$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q04",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A prism has a cross-section that is a polygon with $n$ sides.\n\n(a) Write expressions in terms of $n$ for the number of faces, edges and vertices of the prism.\n\n(b) Show that your expressions satisfy Euler's formula $F + V - E = 2$.\n\n(c) Can a prism have exactly 25 edges? Explain your answer.",
+  "hint": "Generalise the hexagonal prism: replace 6 by $n$. For (c), what must the number of edges of a prism be a multiple of?",
+  "answer": "(a) $F = n + 2$, $E = 3n$, $V = 2n$ (b) $(n + 2) + 2n - 3n = 2$ (c) No: $3n = 25$ has no whole-number solution.",
+  "solution": "**What changed:** the 6-sided cross-section is replaced by a general $n$-sided one.\n\n(a) Faces: 2 ends $+$ $n$ rectangles, so $F = n + 2$.\nEdges: $n$ on each end ($2n$) $+$ $n$ joining edges, so $E = 3n$.\nVertices: $n$ on each end, so $V = 2n$.\n\n(Check with $n = 6$: $F = 8$, $E = 18$, $V = 12$ as before.)\n\n(b)\n$$F + V - E = (n + 2) + 2n - 3n = 2$$\nfor every value of $n$. ✓\n\n(c) The number of edges of a prism is $3n$, always a multiple of 3. Since $25 \\div 3 = 8.33\\ldots$ is not a whole number, no prism has exactly 25 edges.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q05",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 190\" width=\"300\" height=\"190\"><polygon points=\"60,170 240,170 240,80 60,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"60,80 240,80 281.4,45.3 101.4,45.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"240,170 281.4,135.3 281.4,45.3 240,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/></svg>",
+  "question": "Leo looks at this drawing of a cuboid. He writes:\n\n\"I can see 3 faces, 9 edges and 7 vertices, so a cuboid has 3 faces, 9 edges and 7 vertices.\"\n\nExplain Leo's mistake and give the correct numbers of faces, edges and vertices of a cuboid.",
+  "hint": "Imagine picking the cuboid up and turning it round. Is there anything at the back or underneath?",
+  "answer": "Leo only counted what is visible in the drawing. A cuboid has 6 faces, 12 edges and 8 vertices.",
+  "solution": "**Mistake:** Leo has counted only the faces, edges and vertices that can be seen in the drawing. The back, bottom and left-hand faces, three edges, and the back-bottom-left corner are hidden but still exist.\n\nCorrect counts:\n* Faces: top, bottom, front, back, left, right $= 6$\n* Edges: 4 round the top, 4 round the bottom, 4 vertical $= 12$\n* Vertices: 4 on top, 4 on the bottom $= 8$\n\nCheck with Euler: $F + V - E = 6 + 8 - 12 = 2$ ✓ (Leo's numbers give $3 + 7 - 9 = 1$, which also signals an error.)\n\nDrawing the hidden edges as dashed lines helps you count them.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q06",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 2,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 110\" width=\"350\" height=\"110\"><rect x=\"10\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"10\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"32\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"54\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"76\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"76\" y=\"74\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"54\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><rect x=\"120\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"142\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"164\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"186\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"142\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"164\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><rect x=\"230\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"252\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"274\" y=\"30\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"274\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"296\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"318\" y=\"52\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"285\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">C</text></svg>",
+  "question": "Each arrangement A, B and C is made from six identical squares.\n\nWhich of them are nets of a cube? Explain your answers.",
+  "hint": "Imagine folding each one. In a row of four squares, the four squares wrap round to make a loop; where must the other two squares go?",
+  "answer": "A and C are nets of a cube; B is not (its two top squares would both fold onto the same face, leaving the opposite face open).",
+  "solution": "**A:** the row of four squares folds round into a loop (four side faces). The square above the left end folds over to make the top, and the square below the right end folds under to make the bottom. Every face is covered exactly once, so **A is a net**. (The two end squares can be attached to any square of the row, as long as one is on each side.)\n\n**B:** the row of four again makes the loop. Both remaining squares are attached **above** the row, so both fold up to the **top** face: they overlap, and nothing covers the bottom. **B is not a net.**\n\n**C:** number the top row 1, 2, 3 and the bottom row 4, 5, 6 (square 4 is under square 3). In a straight row of three squares, the two end squares fold to opposite faces, so 1 is opposite 3 and 4 is opposite 6. That leaves 2 and 5, which are opposite each other. Three different pairs of opposite faces means six different faces, so **C is a net**.\n\nSix squares is necessary but not sufficient: each square must fold to a different face of the cube.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q07",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 200\" width=\"350\" height=\"200\"><polygon points=\"30,150 200,150 219.5,58.8 49.5,58.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"200,150 239.1,117.2 219.5,58.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"150\" x2=\"69.1\" y2=\"117.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"69.1\" y1=\"117.2\" x2=\"49.5\" y2=\"58.8\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"69.1\" y1=\"117.2\" x2=\"239.1\" y2=\"117.2\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"115\" y1=\"182\" x2=\"115\" y2=\"158\" stroke=\"currentColor\" stroke-width=\"1.3\"/><polyline points=\"111,164 115,156 119,164\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"137\" y=\"180\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Front</text><polygon points=\"230,130 310,130 270,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"270\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Kofi's plan</text></svg>",
+  "question": "The diagram shows a triangular prism lying on one of its rectangular faces. Kofi is asked to draw the **plan** of the prism. He draws the triangle shown.\n\nExplain Kofi's mistake and describe the correct plan.",
+  "hint": "The plan is the view looking straight down from above. What would you see from directly over the top of the prism?",
+  "answer": "Kofi drew the side elevation (the view from the side). The plan, looking down from above, is a rectangle with a line along the middle showing the top ridge.",
+  "solution": "**Mistake:** the triangle is what you see when you look at the **end** of the prism from the side, so Kofi has drawn the **side elevation**, not the plan.\n\nThe **plan** is the view from directly above. Looking down, you see the two sloping rectangular faces side by side, meeting along the top ridge. So the plan is:\n* a rectangle, the length of the prism by the width of its base,\n* with a straight line along the middle (parallel to the long sides) where the two sloping faces meet at the ridge.\n\nFor completeness: the **front elevation** (looking in the direction of the arrow) is a rectangle the length of the prism and the height of the triangle, and the **side elevation** is the triangle Kofi drew.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q08",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><polygon points=\"95,225 121,210 121,180 95,195\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"95,195 121,180 69,150 43,165\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"69\" y1=\"180\" x2=\"95\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"95,225 43,195 43,165 95,195\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"69\" y1=\"210\" x2=\"69\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"121,210 147,195 147,135 121,150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"121\" y1=\"180\" x2=\"147\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"121,150 147,135 95,105 69,120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"95\" y1=\"135\" x2=\"121\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"121,180 69,150 69,120 121,150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"95\" y1=\"165\" x2=\"95\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"147,195 172.9,180 172.9,90 147,105\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"147\" y1=\"165\" x2=\"172.9\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"147\" y1=\"135\" x2=\"172.9\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"147,105 172.9,90 121,60 95,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"121\" y1=\"90\" x2=\"147\" y2=\"75\" stroke=\"currentColor\" stroke-width=\"1\"/><polygon points=\"147,135 95,105 95,75 147,105\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"121\" y1=\"120\" x2=\"121\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"152\" y1=\"232.5\" x2=\"138\" y2=\"210.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"168\" y=\"246.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Front</text></svg>",
+  "question": "The isometric drawing shows a solid made from identical centimetre cubes. It forms three steps, and is two cubes deep.\n\n(a) How many cubes are used to make the solid?\n\n(b) Describe (i) the plan, (ii) the front elevation (looking in the direction of the arrow), (iii) the side elevation viewed from the right-hand end (the tallest end).",
+  "hint": "Count the cubes in each step, front to back. For each view, imagine looking straight at the solid from that direction; you see a flat 2D shape.",
+  "answer": "(a) 12 cubes. (b)(i) Plan: a $3\\text{ cm}$ by $2\\text{ cm}$ rectangle, split by two lines into three $1\\text{ cm}$ by $2\\text{ cm}$ strips (one for each step). (ii) Front elevation: a staircase shape $3\\text{ cm}$ wide with steps $1\\text{ cm}$, $2\\text{ cm}$ and $3\\text{ cm}$ high. (iii) Side elevation: a rectangle $2\\text{ cm}$ wide and $3\\text{ cm}$ tall.",
+  "solution": "(a) The steps are 1, 2 and 3 cubes high and each is 2 cubes deep:\n$$2 \\times (1 + 2 + 3) = 2 \\times 6 = 12 \\text{ cubes}$$\n\n(b)(i) **Plan** (from above): you see the tops of all three steps, $3\\text{ cm}$ across and $2\\text{ cm}$ deep, so a $3\\text{ cm}$ by $2\\text{ cm}$ rectangle. The tops are at different heights, so there is an edge (a line) where each step meets the next: two lines divide the rectangle into three $1\\text{ cm}$ by $2\\text{ cm}$ strips.\n\n(ii) **Front elevation**: the steps are 1, 2 and 3 cm high from left to right, so you see a staircase shape $3\\text{ cm}$ wide and $3\\text{ cm}$ tall, with an area of $1 + 2 + 3 = 6$ squares.\n\n(iii) **Side elevation** from the tallest end: you see the end of the $3\\text{ cm}$-high step, which is $2\\text{ cm}$ deep, so a rectangle $2\\text{ cm}$ wide and $3\\text{ cm}$ tall. The lower steps are hidden behind it.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q09",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Describe the shape of the cross-section when:\n\n(a) a cone is sliced parallel to its circular base,\n\n(b) a cone is sliced vertically, straight down through its apex and the centre of its base,\n\n(c) a triangular prism is sliced parallel to its triangular end,\n\n(d) a sphere is sliced anywhere by a flat cut.",
+  "hint": "Picture cutting each solid with a knife, then looking straight at the flat cut face.",
+  "answer": "(a) a circle (smaller than the base) (b) an isosceles triangle (c) a triangle identical to the end (d) a circle",
+  "solution": "(a) Every horizontal slice of a cone is a **circle**; the closer to the apex, the smaller the circle.\n\n(b) The cut runs from the apex down to both ends of a diameter of the base: an **isosceles triangle** whose base is the diameter and whose height is the height of the cone.\n\n(c) A prism has the same cross-section all the way along, so a slice parallel to the end is a **triangle identical (congruent) to the triangular end**.\n\n(d) Any flat slice of a sphere is a **circle**. It is largest (a \"great circle\") when the cut goes through the centre.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q10",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Each 2D shape below is rotated through $360^\\circ$ about the given line. Name the solid formed and give its key measurements.\n\n(a) A rectangle $4\\text{ cm}$ by $6\\text{ cm}$, rotated about one of its $6\\text{ cm}$ sides.\n\n(b) A right-angled triangle with shorter sides $5\\text{ cm}$ and $12\\text{ cm}$, rotated about the $12\\text{ cm}$ side.\n\n(c) A semicircle of diameter $10\\text{ cm}$, rotated about its diameter.\n\n(d) The rectangle from (a), rotated about a line parallel to its $6\\text{ cm}$ sides but $2\\text{ cm}$ away from the rectangle (outside it).",
+  "hint": "The side lying on the axis stays still; every other point traces out a circle around the axis. Its distance from the axis is the radius of that circle.",
+  "answer": "(a) Cylinder, radius $4\\text{ cm}$, height $6\\text{ cm}$. (b) Cone, base radius $5\\text{ cm}$, height $12\\text{ cm}$ (slant height $13\\text{ cm}$). (c) Sphere, radius $5\\text{ cm}$. (d) A hollow cylinder (tube), inner radius $2\\text{ cm}$, outer radius $6\\text{ cm}$, height $6\\text{ cm}$.",
+  "solution": "(a) The $6\\text{ cm}$ side on the axis becomes the central axis; the opposite side, $4\\text{ cm}$ away, sweeps out a curved surface. A **cylinder** with radius $4\\text{ cm}$ and height $6\\text{ cm}$.\n\n(b) The $12\\text{ cm}$ side is the axis (the height). The $5\\text{ cm}$ side sweeps out a circular base, and the hypotenuse sweeps out the sloping surface. A **cone** with base radius $5\\text{ cm}$, height $12\\text{ cm}$ and slant height $\\sqrt{5^2 + 12^2} = 13\\text{ cm}$.\n\n(c) Every point on the semicircle is $5\\text{ cm}$ from the centre, so it sweeps out a **sphere** of radius $5\\text{ cm}$.\n\n(d) Now the rectangle does not touch the axis. Its nearer side is $2\\text{ cm}$ from the axis and its far side is $2 + 4 = 6\\text{ cm}$ away, so it sweeps out a **cylinder of radius $6\\text{ cm}$ with a cylindrical hole of radius $2\\text{ cm}$** through the middle (a tube or thick pipe), height $6\\text{ cm}$.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q11",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A solid cube is cut by a single flat (plane) cut. For each shape below, decide whether it can be the cross-section. Explain your reasoning.\n\n(a) a square, (b) a rectangle that is not a square, (c) an equilateral triangle, (d) a regular hexagon, (e) a heptagon (7 sides).",
+  "hint": "Each side of the cross-section lies on a different face of the cube. How many faces does a cube have? Try slicing near a corner, and slicing through the middle at an angle.",
+  "answer": "(a) Yes (b) Yes (c) Yes (d) Yes (e) No: each side lies on a different face and a cube has only 6 faces, so at most 6 sides.",
+  "solution": "(a) **Yes.** Any cut parallel to a face gives a square identical to that face.\n\n(b) **Yes.** Cut through one edge of the top face and the opposite edge of the bottom face (a diagonal cut through the middle of the cube). For a cube of side $a$ this gives a rectangle $a$ by $a\\sqrt{2}$, since its long sides are diagonals of square faces.\n\n(c) **Yes.** Slice off a corner by cutting through three points the same distance from that corner along its three edges. The three sides of the triangle are diagonals of identical squares, so they are equal: an equilateral triangle.\n\n(d) **Yes.** Cut through the midpoints of six edges, avoiding the two opposite corners (a cut at right angles to a long diagonal through the centre of the cube). Each side joins the midpoints of two adjacent edges of a face, so all six sides are equal ($\\frac{a\\sqrt{2}}{2}$), giving a regular hexagon.\n\n(e) **No.** Each side of the cross-section is where the cut meets one face of the cube, and a flat cut can meet a flat face in at most one straight line. A cube has only 6 faces, so a cross-section has at most 6 sides; a heptagon is impossible.\n\nSo a cube can have triangle, quadrilateral, pentagon and hexagon cross-sections, not only squares and rectangles.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q12",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 4,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><polygon points=\"220,200 137.6,152.7 70,50\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"0\"/><polygon points=\"70,200 220,200 220,50 70,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"70,50 220,50 287.6,2.7 137.6,2.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"220,200 287.6,152.7 287.6,2.7 220,50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"70\" y1=\"200\" x2=\"137.6\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"137.6\" y1=\"152.7\" x2=\"287.6\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"137.6\" y1=\"152.7\" x2=\"137.6\" y2=\"2.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"220\" y1=\"200\" x2=\"137.6\" y2=\"152.7\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"137.6\" y1=\"152.7\" x2=\"70\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"220\" y1=\"200\" x2=\"70\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"60\" y=\"214\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"226\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><text x=\"299.6\" y=\"158.7\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">C</text><text x=\"125.6\" y=\"148.7\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">D</text><text x=\"58\" y=\"50\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">E</text><text x=\"224\" y=\"44\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">F</text><text x=\"297.6\" y=\"-3.3\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">G</text><text x=\"131.6\" y=\"-5.3\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">H</text><text x=\"145\" y=\"218\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6 cm</text></svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ],
+  "question": "The diagram shows a cube $ABCDEFGH$ with edges of length $6\\text{ cm}$. The cube is cut by a flat cut through the vertices $B$, $D$ and $E$.\n\nBen says:\n\n\"Every face of a cube is a square, so a flat slice through a cube always gives a square or a rectangle. The cross-section $BDE$ must be a rectangle.\"\n\n(a) Explain what is wrong with Ben's reasoning.\n\n(b) Show that the cross-section is an equilateral triangle, and work out its perimeter. Give your answer as a surd and to 1 decimal place.",
+  "hint": "How many vertices does the cut pass through? Each side $BD$, $DE$, $EB$ is a diagonal of a $6\\text{ cm}$ square face.",
+  "answer": "(a) The cut meets only three faces, so the cross-section has only three sides; slices of a cube are not always squares or rectangles. (b) Each side is $6\\sqrt{2}\\text{ cm}$, so it is equilateral; perimeter $18\\sqrt{2} \\approx 25.5\\text{ cm}$.",
+  "solution": "(a) Ben assumes that because the faces are squares, every slice is a square or rectangle. That is only guaranteed for cuts parallel to a face (or through parallel edges). The cut through $B$, $D$ and $E$ meets just three faces (the bottom $ABCD$, the front $ABFE$ and the left face $ADHE$), so the cross-section has three straight sides: it is a **triangle**.\n\n(b) Each side of triangle $BDE$ is a diagonal of a square face of side $6\\text{ cm}$:\n* $BD$ is a diagonal of the bottom face $ABCD$,\n* $DE$ is a diagonal of the face $ADHE$,\n* $EB$ is a diagonal of the front face $ABFE$.\n\nBy Pythagoras, each diagonal is\n$$\\sqrt{6^2 + 6^2} = \\sqrt{72} = 6\\sqrt{2}\\text{ cm}$$\n\nAll three sides are equal, so triangle $BDE$ is **equilateral**.\n\nPerimeter:\n$$3 \\times 6\\sqrt{2} = 18\\sqrt{2} = 25.45\\ldots \\approx 25.5\\text{ cm}$$",
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-3d-shapes-nets-q13",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 125\" width=\"320\" height=\"125\"><rect x=\"40\" y=\"20\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"86\" y=\"20\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"132\" y=\"20\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"132\" y=\"66\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"178\" y=\"66\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"224\" y=\"66\" width=\"46\" height=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"63\" y=\"48\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><text x=\"109\" y=\"48\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><text x=\"155\" y=\"94\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><text x=\"155\" y=\"48\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">P</text><text x=\"201\" y=\"94\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Q</text><text x=\"247\" y=\"94\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">R</text></svg>",
+  "question": "On an ordinary dice, the numbers on opposite faces always add up to 7.\n\nThe diagram shows a net of a dice. Three faces are numbered. Work out which numbers must go on the faces labelled $P$, $Q$ and $R$. Explain how you know.",
+  "hint": "In a straight row of three squares in a net, the first and third squares end up opposite each other. Work out which face is opposite each numbered face.",
+  "answer": "$P = 6$, $Q = 5$, $R = 4$",
+  "solution": "Fold the net in your head.\n\n* The top row is a line of three squares: $1$, $2$, $P$. When the outer two fold up, $1$ and $P$ end up **opposite** each other. So $P = 7 - 1 = 6$.\n* The bottom row is a line of three squares: $3$, $Q$, $R$. In the same way $3$ and $R$ are opposite, so $R = 7 - 3 = 4$.\n* A cube has three pairs of opposite faces. Two pairs are $1 \\& P$ and $3 \\& R$, so the two faces left over, $2$ and $Q$, must be the third pair. So $Q = 7 - 2 = 5$.\n\nCheck: the numbers $1, 2, 3, 4, 5, 6$ are each used once, and the opposite pairs are $1 \\& 6$, $2 \\& 5$, $3 \\& 4$, each summing to 7. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q14",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-forming-equations",
+   "alg-linear-equations"
+  ],
+  "question": "A polyhedron has 18 edges. It has 4 more vertices than faces.\n\n(a) Use Euler's formula $F + V - E = 2$ to form and solve an equation to find the number of faces and the number of vertices.\n\n(b) Name a polyhedron that fits this description.",
+  "hint": "Let the number of faces be $F$. Then the number of vertices is $F + 4$. Substitute into Euler's formula.",
+  "answer": "(a) $F = 8$, $V = 12$ (b) A hexagonal prism",
+  "solution": "(a) Let the number of faces be $F$. Then $V = F + 4$ and $E = 18$:\n$$F + (F + 4) - 18 = 2$$\n$$2F - 14 = 2$$\n$$2F = 16 \\;\\Rightarrow\\; F = 8$$\n$$V = 8 + 4 = 12$$\n\n(b) A hexagonal prism has $2 + 6 = 8$ faces, $2 \\times 6 = 12$ vertices and $3 \\times 6 = 18$ edges. ✓\n\n(Another possible answer is a truncated tetrahedron, which also has 8 faces, 12 vertices and 18 edges.)",
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q15",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 3,
+  "type": "exam-style",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 215\" width=\"300\" height=\"215\"><rect x=\"106\" y=\"26\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"82\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"82\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"162\" y=\"82\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"218\" y=\"82\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"106\" y=\"138\" width=\"56\" height=\"56\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"97\" y=\"22\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"171\" y=\"22\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><text x=\"170\" y=\"77\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">C</text><text x=\"218\" y=\"76\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">D</text><text x=\"283\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">E</text><text x=\"283\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">F</text><text x=\"218\" y=\"154\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">G</text><text x=\"170\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">H</text><text x=\"171\" y=\"208\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">I</text><text x=\"97\" y=\"208\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">J</text><text x=\"97\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">K</text><text x=\"41\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">L</text><text x=\"41\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">M</text><text x=\"97\" y=\"77\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">N</text></svg>",
+  "marks": 4,
+  "calculator": false,
+  "question": "The diagram shows a net of a cube. The points on the edge of the net are labelled $A$ to $N$.\n\nThe net is folded to make the cube.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the number of edges of a cube.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Which **two** other points meet point $A$?",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Which edge of the net is joined to edge $AB$?",
+    "marks": 1
+   }
+  ],
+  "hint": "Fold the square containing $A$ up to be the top of the cube. Which squares fold up to meet its edges?",
+  "answer": "(a) 12 (b) $E$ and $M$ (c) $ED$ (or $DE$)",
+  "solution": "(a) 12 **B1**\n\n(b) The middle row of four squares wraps round into a loop of four side faces, so its left-hand edge $ML$ is joined to its right-hand edge $EF$: point $M$ meets point $E$.\n\nThe top square $ABCN$ folds over (about $NC$) to become the top of the cube. Its edge $NA$ lies along the top edge $NM$ of the left-hand square, so $A$ meets $M$.\n\nSo $A$, $M$ and $E$ all meet at one vertex. $E$ **B1** $M$ **B1**\n(B1 only for one correct point with no incorrect extra.)\n\n(c) The square $CDGH$'s neighbour, square $DEFG$, is opposite square $NCHK$ in the loop, so it becomes the back face. The far edge $AB$ of the lid lies along its top edge, with $A$ on $E$ and $B$ on $D$. Edge $AB$ is joined to edge $ED$. **B1**",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q16",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A traditional football is stitched together from 12 black pentagons and 20 white hexagons. Each seam (edge) joins exactly two patches, and exactly three patches meet at each corner (vertex).\n\n(a) How many seams does the football have?\n\n(b) How many vertices does it have?\n\n(c) Show that your answers fit Euler's formula $F + V - E = 2$.",
+  "hint": "Count all the sides of all the patches. Each seam has been counted twice (once from each patch on either side). Use a similar idea for the vertices.",
+  "answer": "(a) 90 seams (b) 60 vertices (c) $32 + 60 - 90 = 2$",
+  "solution": "Total number of patch sides:\n$$12 \\times 5 + 20 \\times 6 = 60 + 120 = 180$$\n\n(a) Each seam is shared by two patches, so it has been counted twice:\n$$E = 180 \\div 2 = 90 \\text{ seams}$$\n\n(b) Total number of patch corners is also 180. Each vertex is shared by three patches, so it has been counted three times:\n$$V = 180 \\div 3 = 60 \\text{ vertices}$$\n\n(c) Faces: $F = 12 + 20 = 32$.\n$$F + V - E = 32 + 60 - 90 = 2 \\checkmark$$\n\n(This solid is called a truncated icosahedron.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q17",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 160\" width=\"330\" height=\"160\"><rect x=\"20\" y=\"50\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"20\" y=\"74\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"50\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"44\" y=\"74\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"68\" y=\"50\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"68\" y=\"74\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"56\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Plan</text><text x=\"56\" y=\"116\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">front</text><rect x=\"130\" y=\"106\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"82\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"130\" y=\"58\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"154\" y=\"106\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"178\" y=\"106\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"178\" y=\"82\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"166\" y=\"44\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Front elevation</text><rect x=\"255\" y=\"106\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"255\" y=\"82\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"279\" y=\"106\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"279\" y=\"82\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><rect x=\"279\" y=\"58\" width=\"24\" height=\"24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"279\" y=\"44\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Side elevation</text><text x=\"279\" y=\"148\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">(from the right)</text></svg>",
+  "question": "A solid is made from identical cubes standing on a flat table. Its plan, front elevation and side elevation (viewed from the right) are shown. The front of the solid is at the bottom of the plan.\n\n(a) Work out the **largest** number of cubes the solid could contain.\n\n(b) Work out the **smallest** number of cubes the solid could contain. Show an arrangement that uses this number.",
+  "hint": "Write a number (the height of the stack) in each of the 6 squares of the plan. Each column of the front elevation tells you the tallest stack in that left-right position; each column of the side elevation tells you the tallest stack in that row (front or back).",
+  "answer": "(a) 11 (b) 9, for example front row $1, 1, 2$ and back row $3, 1, 1$ (left to right).",
+  "solution": "Label the stacks by row (front/back) and position (left, middle, right).\n\n* Plan: every one of the 6 positions has at least one cube.\n* Front elevation: the tallest stacks in the left, middle and right positions are $3$, $1$ and $2$.\n* Side elevation from the right: the front row is on the left of this view, so the tallest stack in the front row is $2$ and in the back row is $3$.\n\n(a) Each stack can be no taller than **both** limits that apply to it:\n\n| | left | middle | right |\n|---|---|---|---|\n| back row (max 3) | $\\min(3,3) = 3$ | $\\min(1,3) = 1$ | $\\min(2,3) = 2$ |\n| front row (max 2) | $\\min(3,2) = 2$ | $\\min(1,2) = 1$ | $\\min(2,2) = 2$ |\n\nAll views are still correct with these heights, so the largest number is $3 + 1 + 2 + 2 + 1 + 2 = 11$.\n\n(b) Each of the 6 stacks needs at least 1 cube. Then:\n* The left position needs a stack of 3; the front row allows only 2, so it must be the **back-left** stack (2 extra cubes). This also gives the back row its height of 3.\n* The right position needs a stack of 2 and the front row needs a stack of 2. One stack of 2 at **front-right** does both (1 extra cube).\n\nSmallest total $= 6 + 2 + 1 = 9$:\n\n| | left | middle | right |\n|---|---|---|---|\n| back row | 3 | 1 | 1 |\n| front row | 1 | 1 | 2 |\n\nCheck: front elevation maxima $3, 1, 2$ ✓; side elevation maxima front $2$, back $3$ ✓; all 6 plan squares filled ✓.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-3d-shapes-nets-q18",
+  "topicId": "geo-3d-shapes-nets",
+  "difficulty": 5,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 185\" width=\"340\" height=\"185\"><polygon points=\"40,150 290,150 200,30\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"15\" y1=\"150\" x2=\"315\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><polyline points=\"192,36 198,44 206,38\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"106\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4 cm</text><text x=\"263\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3 cm</text><text x=\"165\" y=\"170\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5 cm</text><text x=\"316\" y=\"140\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">axis</text></svg>",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres",
+   "geo-pythagoras"
+  ],
+  "question": "A right-angled triangle has sides $3\\text{ cm}$, $4\\text{ cm}$ and $5\\text{ cm}$. It is rotated through $360^\\circ$ about its hypotenuse.\n\n(a) Describe the solid that is formed.\n\n(b) Find the radius of the circle traced out by the right-angled vertex.\n\n(c) Find the exact volume of the solid. (Volume of a cone $= \\frac{1}{3}\\pi r^2 h$.)",
+  "hint": "The right-angled vertex is furthest from the axis. Its distance from the hypotenuse is the height of the triangle when the hypotenuse is the base: use two different ways to write the triangle's area.",
+  "answer": "(a) Two cones joined base to base (a double cone). (b) $2.4\\text{ cm}$ (c) $\\frac{48\\pi}{5}\\text{ cm}^3$ ($= 9.6\\pi \\approx 30.2\\text{ cm}^3$)",
+  "solution": "(a) Drop a perpendicular from the right-angled vertex to the hypotenuse. Each of the two smaller right-angled triangles on either side of it sweeps out a cone. The solid is **two cones joined at their circular bases**, pointing in opposite directions along the axis.\n\n(b) The shared base circle is traced by the right-angled vertex, so its radius $r$ is the perpendicular distance from that vertex to the hypotenuse. Area of the triangle two ways:\n$$\\frac{1}{2} \\times 3 \\times 4 = \\frac{1}{2} \\times 5 \\times r$$\n$$6 = 2.5r \\;\\Rightarrow\\; r = 2.4\\text{ cm}$$\n\n(c) The two cones have the same radius $2.4\\text{ cm}$ and heights $h_1$ and $h_2$ with $h_1 + h_2 = 5$ (the hypotenuse). (By Pythagoras, $h_1 = \\sqrt{4^2 - 2.4^2} = 3.2$ and $h_2 = \\sqrt{3^2 - 2.4^2} = 1.8$.)\n$$V = \\frac{1}{3}\\pi r^2 h_1 + \\frac{1}{3}\\pi r^2 h_2 = \\frac{1}{3}\\pi r^2 (h_1 + h_2) = \\frac{1}{3}\\pi \\times 2.4^2 \\times 5$$\n$$V = \\frac{1}{3} \\times 5.76 \\times 5 \\times \\pi = 9.6\\pi = \\frac{48\\pi}{5}\\text{ cm}^3 \\approx 30.2\\text{ cm}^3$$",
+  "misconceptionIds": []
+ }
+]
