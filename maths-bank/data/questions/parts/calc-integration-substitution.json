@@ -1,0 +1,265 @@
+[
+ {
+  "id": "calc-integration-substitution-q01",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the substitution $u = x^2 + 1$ to find\n$$\\int 2x\\left(x^2 + 1\\right)^3\\,dx$$",
+  "hint": "Find $\\frac{du}{dx}$. What does $2x\\,dx$ become in terms of $du$?",
+  "answer": "$\\dfrac{\\left(x^2 + 1\\right)^4}{4} + c$",
+  "solution": "$u = x^2 + 1 \\Rightarrow \\frac{du}{dx} = 2x$, so $2x\\,dx = du$.\n\nThe integral becomes\n$$\\int u^3\\,du = \\frac{u^4}{4} + c$$\n\nSubstitute back:\n$$\\int 2x\\left(x^2 + 1\\right)^3\\,dx = \\frac{\\left(x^2 + 1\\right)^4}{4} + c$$\n\nCheck by the chain rule: $\\frac{d}{dx}\\left[\\frac{(x^2 + 1)^4}{4}\\right] = \\frac{4(x^2 + 1)^3\\cdot 2x}{4} = 2x(x^2 + 1)^3$ ✓",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q02",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the substitution $u = x^2 + 1$ to find\n$$\\int x\\left(x^2 + 1\\right)^3\\,dx$$",
+  "hint": "This time the integrand has $x$, not $2x$. From $du = 2x\\,dx$, what is $x\\,dx$?",
+  "answer": "$\\dfrac{\\left(x^2 + 1\\right)^4}{8} + c$",
+  "solution": "**What changed:** the factor in front is $x$ instead of $2x$ – exactly half of the previous integrand, so the answer should be half of the previous answer.\n\n$u = x^2 + 1 \\Rightarrow du = 2x\\,dx$, so $x\\,dx = \\frac{1}{2}\\,du$.\n$$\\int x\\left(x^2 + 1\\right)^3\\,dx = \\frac{1}{2}\\int u^3\\,du = \\frac{1}{2}\\times\\frac{u^4}{4} + c = \\frac{\\left(x^2 + 1\\right)^4}{8} + c$$\n\nA common slip is to write $dx = du$ and get $\\frac{(x^2 + 1)^4}{4}$: differentiating that gives $2x(x^2 + 1)^3$, twice too big.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q03",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the substitution $u = x^2 + 1$ to find the exact value of\n$$\\int_0^1 x\\left(x^2 + 1\\right)^3\\,dx$$",
+  "hint": "Convert the limits: what is $u$ when $x = 0$ and when $x = 1$?",
+  "answer": "$\\dfrac{15}{8}$",
+  "solution": "**What changed:** the same integrand as before, but now with limits, so the limits must be changed to $u$-values.\n\n$x\\,dx = \\frac{1}{2}\\,du$. Limits: $x = 0 \\Rightarrow u = 1$; $\\ x = 1 \\Rightarrow u = 2$.\n$$\\int_0^1 x\\left(x^2 + 1\\right)^3\\,dx = \\frac{1}{2}\\int_1^2 u^3\\,du = \\frac{1}{2}\\left[\\frac{u^4}{4}\\right]_1^2 = \\frac{1}{8}\\left(16 - 1\\right) = \\frac{15}{8}$$\n\nThere is no need to substitute back – the $u$-limits do the job. (Using the $x$-limits $0$ and $1$ in $\\frac{u^4}{8}$ would wrongly give $\\frac{1}{8}$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q04",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the substitution $u = x^2 + 1$ to find the exact value of\n$$\\int_0^1 \\frac{x}{\\left(x^2 + 1\\right)^3}\\,dx$$",
+  "hint": "Write the integrand as $x\\left(x^2 + 1\\right)^{-3}$. The limits are the same as before.",
+  "answer": "$\\dfrac{3}{16}$",
+  "solution": "**What changed:** the power $3$ became $-3$; the substitution and the new limits ($1$ and $2$) are unchanged.\n\n$$\\int_0^1 x\\left(x^2 + 1\\right)^{-3}\\,dx = \\frac{1}{2}\\int_1^2 u^{-3}\\,du = \\frac{1}{2}\\left[\\frac{u^{-2}}{-2}\\right]_1^2 = \\frac{1}{2}\\left[-\\frac{1}{2u^2}\\right]_1^2$$\n\n$$= \\frac{1}{2}\\left(-\\frac{1}{8} + \\frac{1}{2}\\right) = \\frac{1}{2}\\times\\frac{3}{8} = \\frac{3}{16}$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q05",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Use the substitution $u = \\sin x$ to find\n$$\\int \\cos x\\,\\sin^4 x\\,dx$$",
+  "hint": "$\\frac{du}{dx} = \\cos x$, so $\\cos x\\,dx$ can be replaced by $du$.",
+  "answer": "$\\dfrac{\\sin^5 x}{5} + c$",
+  "solution": "$u = \\sin x \\Rightarrow \\frac{du}{dx} = \\cos x$, so $\\cos x\\,dx = du$.\n$$\\int \\cos x\\,\\sin^4 x\\,dx = \\int u^4\\,du = \\frac{u^5}{5} + c = \\frac{\\sin^5 x}{5} + c$$\n\nCheck: $\\frac{d}{dx}\\left[\\frac{\\sin^5 x}{5}\\right] = \\sin^4 x\\cos x$ ✓",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q06",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "By first dividing $x^2 + 3$ by $x + 1$, find\n$$\\int \\frac{x^2 + 3}{x + 1}\\,dx$$",
+  "hint": "Write $x^2 + 3 = (x + 1)(\\ldots) + r$ for a linear quotient and a constant remainder $r$.",
+  "answer": "$\\dfrac{x^2}{2} - x + 4\\ln|x + 1| + c$",
+  "solution": "Divide: $x^2 + 3 = (x + 1)(x - 1) + 4$, so\n$$\\frac{x^2 + 3}{x + 1} = x - 1 + \\frac{4}{x + 1}$$\n\nIntegrate term by term:\n$$\\int \\left(x - 1 + \\frac{4}{x + 1}\\right)dx = \\frac{x^2}{2} - x + 4\\ln|x + 1| + c$$\n\n**Alternative (substitution):** with $u = x + 1$, $x^2 + 3 = (u - 1)^2 + 3 = u^2 - 2u + 4$ and $dx = du$:\n$$\\int \\frac{u^2 - 2u + 4}{u}\\,du = \\frac{u^2}{2} - 2u + 4\\ln|u| + c$$\nwhich expands to $\\frac{x^2}{2} - x - \\frac{3}{2} + 4\\ln|x + 1| + c$ – the same answer, since $-\\frac{3}{2}$ is absorbed into the constant.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q07",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Consider the three integrals\n$$\\text{A: } \\int x\\sqrt{x^2 + 1}\\,dx \\qquad \\text{B: } \\int \\sqrt{x^2 + 1}\\,dx \\qquad \\text{C: } \\int x^3\\sqrt{x^2 + 1}\\,dx$$\nFor each one, decide whether the substitution $u = x^2 + 1$ turns it into an integral of powers of $u$ only. Explain your reasoning, and find the integrals for which it does.",
+  "hint": "After the substitution, $dx = \\frac{du}{2x}$. Is there an $x$ left over, and if so can it be written neatly in terms of $u$?",
+  "answer": "A and C work; B does not. A: $\\dfrac{1}{3}\\left(x^2 + 1\\right)^{\\frac{3}{2}} + c$. C: $\\dfrac{1}{5}\\left(x^2 + 1\\right)^{\\frac{5}{2}} - \\dfrac{1}{3}\\left(x^2 + 1\\right)^{\\frac{3}{2}} + c$.",
+  "solution": "With $u = x^2 + 1$, $dx = \\frac{du}{2x}$.\n\n**A:** $\\int x\\,u^{\\frac{1}{2}}\\,\\frac{du}{2x} = \\frac{1}{2}\\int u^{\\frac{1}{2}}\\,du$. The $x$ cancels completely, so this works:\n$$\\frac{1}{2}\\times\\frac{2}{3}u^{\\frac{3}{2}} + c = \\frac{1}{3}\\left(x^2 + 1\\right)^{\\frac{3}{2}} + c$$\n\n**B:** $\\int u^{\\frac{1}{2}}\\,\\frac{du}{2x}$ leaves $\\frac{1}{x}$, and $x = \\sqrt{u - 1}$, giving $\\int \\frac{\\sqrt{u}}{2\\sqrt{u - 1}}\\,du$ – not a sum of powers of $u$. This substitution does not help (the $x$ must not be treated as a constant).\n\n**C:** $\\int x^3 u^{\\frac{1}{2}}\\,\\frac{du}{2x} = \\frac{1}{2}\\int x^2 u^{\\frac{1}{2}}\\,du$. The leftover $x^2$ can be written as $u - 1$:\n$$\\frac{1}{2}\\int (u - 1)u^{\\frac{1}{2}}\\,du = \\frac{1}{2}\\int \\left(u^{\\frac{3}{2}} - u^{\\frac{1}{2}}\\right)du = \\frac{1}{2}\\left(\\frac{2}{5}u^{\\frac{5}{2}} - \\frac{2}{3}u^{\\frac{3}{2}}\\right) + c$$\n$$= \\frac{1}{5}\\left(x^2 + 1\\right)^{\\frac{5}{2}} - \\frac{1}{3}\\left(x^2 + 1\\right)^{\\frac{3}{2}} + c$$\n\nThe key test: after substituting, every $x$ must either cancel or be rewritten in terms of $u$. An **odd** power of $x$ in front leaves an even power of $x$, which is a polynomial in $u$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q08",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya uses the substitution $u = x - 1$ to evaluate $\\displaystyle\\int_2^5 \\frac{x}{\\sqrt{x - 1}}\\,dx$. Her working is shown below.\n\nLine 1: $x = u + 1$ and $dx = du$\n\nLine 2: $\\displaystyle\\int \\frac{u + 1}{u^{\\frac{1}{2}}}\\,du = \\int \\left(u^{\\frac{1}{2}} + u^{-\\frac{1}{2}}\\right)du$\n\nLine 3: $= \\left[\\frac{2}{3}u^{\\frac{3}{2}} + 2u^{\\frac{1}{2}}\\right]_2^5$\n\nLine 4: $= \\left(\\frac{10\\sqrt{5}}{3} + 2\\sqrt{5}\\right) - \\left(\\frac{4\\sqrt{2}}{3} + 2\\sqrt{2}\\right) = \\frac{16\\sqrt{5} - 10\\sqrt{2}}{3}$\n\nIdentify Priya's error, explain why it is wrong, and find the correct value of the integral.",
+  "hint": "Line 3 is written in terms of $u$. What are the limits in terms of $u$?",
+  "answer": "The error is in Line 3: she used the $x$-limits $2$ and $5$ in a $u$-expression. The $u$-limits are $1$ and $4$; the correct value is $\\dfrac{20}{3}$.",
+  "solution": "Lines 1 and 2 are correct. **Line 3 is wrong:** the antiderivative is in terms of $u$, but the limits $2$ and $5$ are $x$-values. Since $u = x - 1$:\n$$x = 2 \\Rightarrow u = 1, \\qquad x = 5 \\Rightarrow u = 4$$\n\nCorrected:\n$$\\left[\\frac{2}{3}u^{\\frac{3}{2}} + 2u^{\\frac{1}{2}}\\right]_1^4 = \\left(\\frac{2}{3}\\times 8 + 2\\times 2\\right) - \\left(\\frac{2}{3} + 2\\right) = \\frac{28}{3} - \\frac{8}{3} = \\frac{20}{3}$$\n\nSanity check: the integrand increases from $2$ at $x = 2$ to $2.5$ at $x = 5$, so a single trapezium gives roughly $\\frac{3}{2}(2 + 2.5) = 6.75$ – close to $\\frac{20}{3} \\approx 6.67$, but not to Priya's $\\approx 7.21$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q09",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Tom is asked to find $\\displaystyle\\int x\\sqrt{x + 3}\\,dx$ using the substitution $u = x + 3$. His working is shown below.\n\nLine 1: $\\dfrac{du}{dx} = 1$, so $dx = du$\n\nLine 2: $\\displaystyle\\int x\\sqrt{x + 3}\\,dx = \\int x\\,u^{\\frac{1}{2}}\\,du$\n\nLine 3: $= x\\times\\frac{2}{3}u^{\\frac{3}{2}} + c$\n\nLine 4: $= \\frac{2}{3}x\\left(x + 3\\right)^{\\frac{3}{2}} + c$\n\nIdentify the error in Tom's working, explain why it is wrong, and find the correct answer.",
+  "hint": "When you integrate with respect to $u$, can $x$ be treated as a constant? Use $u = x + 3$ to write $x$ in terms of $u$.",
+  "answer": "The error is in Line 3: Tom treats $x$ as a constant. With $x = u - 3$ the answer is $\\dfrac{2}{5}\\left(x + 3\\right)^{\\frac{5}{2}} - 2\\left(x + 3\\right)^{\\frac{3}{2}} + c$.",
+  "solution": "Line 2 still contains an $x$, and in **Line 3** Tom integrates as if $x$ were a constant. But $x$ changes as $u$ changes ($x = u - 3$), so it cannot be taken outside a $du$ integral. (Differentiating his answer with the product rule gives an extra term, so it is clearly wrong.)\n\nCorrect working: $x = u - 3$, $dx = du$:\n$$\\int (u - 3)u^{\\frac{1}{2}}\\,du = \\int \\left(u^{\\frac{3}{2}} - 3u^{\\frac{1}{2}}\\right)du = \\frac{2}{5}u^{\\frac{5}{2}} - 2u^{\\frac{3}{2}} + c$$\n\n$$= \\frac{2}{5}\\left(x + 3\\right)^{\\frac{5}{2}} - 2\\left(x + 3\\right)^{\\frac{3}{2}} + c$$\n\nCheck: $\\frac{d}{dx}$ gives $(x + 3)^{\\frac{3}{2}} - 3(x + 3)^{\\frac{1}{2}} = (x + 3)^{\\frac{1}{2}}(x + 3 - 3) = x\\sqrt{x + 3}$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q10",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam evaluates $\\displaystyle\\int_1^2 2x\\,e^{x^2}\\,dx$ using the substitution $u = x^2$. He writes:\n\n\"$du = 2x\\,dx$. When $x = 1$, $u = 1$ and when $x = 2$, $u = 4$. So the integral is $\\displaystyle\\int_1^4 e^u\\,du = \\Big[e^u\\Big]_1^4$. Putting $u = x^2$ back in, this is $\\Big[e^{x^2}\\Big]_1^4 = e^{16} - e$.\"\n\n(a) Explain what Sam has done wrong.\n\n(b) Find the correct value of the integral, and show that two different correct methods give the same answer.",
+  "hint": "Ask yourself: are the numbers $1$ and $4$ values of $x$ or of $u$? Which variable is the expression $e^{x^2}$ written in?",
+  "answer": "(a) He changed the limits to $u$-values **and** substituted back to $x$, so he put the $u$-limits into an expression in $x$. (b) $e^4 - e$.",
+  "solution": "**(a)** Changing the limits and substituting back are two alternative routes – Sam has done both. The limits $1$ and $4$ are values of $u$, but $e^{x^2}$ is a function of $x$, so putting $x = 4$ into it is meaningless here ($x = 4$ is outside the original interval).\n\n**(b) Method 1 – stay in $u$:**\n$$\\int_1^4 e^u\\,du = \\Big[e^u\\Big]_1^4 = e^4 - e$$\n\n**Method 2 – substitute back and use the original $x$-limits:**\n$$\\int 2x\\,e^{x^2}\\,dx = e^{x^2} + c, \\qquad \\Big[e^{x^2}\\Big]_1^2 = e^4 - e$$\n\nBoth give $e^4 - e \\approx 51.88$. Sam's answer $e^{16} - e$ is about $8.9$ million, far too large for an integrand that is at most $4e^4 \\approx 218$ on an interval of width 1.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q11",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Water flows into an empty tank. The rate of flow, $R$ litres per minute, $t$ minutes after the tap is turned on, is modelled by\n$$R = 30t\\,e^{-0.02t^2}, \\qquad t \\ge 0$$\n\n(a) Use the substitution $u = 0.02t^2$ to find the volume of water that flows into the tank in the first 5 minutes. Give your answer to the nearest litre.\n\n(b) Show that, according to the model, the total volume of water that ever flows into the tank can never exceed 750 litres.",
+  "hint": "Volume = $\\int_0^5 R\\,dt$. With $u = 0.02t^2$, $du = 0.04t\\,dt$, so $t\\,dt = 25\\,du$.",
+  "answer": "(a) $750\\left(1 - e^{-0.5}\\right) \\approx 295$ litres. (b) Volume after $T$ minutes is $750\\left(1 - e^{-0.02T^2}\\right) < 750$ for every $T$.",
+  "solution": "**(a)** $u = 0.02t^2 \\Rightarrow du = 0.04t\\,dt \\Rightarrow t\\,dt = 25\\,du$.\n\nLimits: $t = 0 \\Rightarrow u = 0$; $\\ t = 5 \\Rightarrow u = 0.02\\times 25 = 0.5$.\n$$V = \\int_0^5 30t\\,e^{-0.02t^2}\\,dt = 30\\times 25\\int_0^{0.5} e^{-u}\\,du = 750\\Big[-e^{-u}\\Big]_0^{0.5} = 750\\left(1 - e^{-0.5}\\right)$$\n\n$$V = 295.10\\ldots \\approx 295 \\text{ litres}$$\n\n**(b)** In the same way, the volume in the first $T$ minutes is\n$$750\\Big[-e^{-u}\\Big]_0^{0.02T^2} = 750\\left(1 - e^{-0.02T^2}\\right)$$\n\nSince $e^{-0.02T^2} > 0$ for every $T$, this is always less than 750 litres (it approaches 750 as $T \\to \\infty$). So the total can never exceed 750 litres.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q12",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Find the exact value of\n$$\\int_{-2}^{1} \\frac{2x + 7}{x^2 + 4x + 13}\\,dx$$",
+  "hint": "Split the numerator as $(2x + 4) + 3$. One part is (derivative of the denominator)/(denominator); for the other, complete the square and try $x + 2 = 3\\tan\\theta$.",
+  "answer": "$\\ln 2 + \\dfrac{\\pi}{4}$",
+  "solution": "The derivative of $x^2 + 4x + 13$ is $2x + 4$, so write $2x + 7 = (2x + 4) + 3$:\n$$\\int_{-2}^{1} \\frac{2x + 4}{x^2 + 4x + 13}\\,dx + \\int_{-2}^{1} \\frac{3}{x^2 + 4x + 13}\\,dx$$\n\n**First part** (substitution $u = x^2 + 4x + 13$ gives $\\int \\frac{du}{u}$):\n$$\\Big[\\ln\\left(x^2 + 4x + 13\\right)\\Big]_{-2}^{1} = \\ln 18 - \\ln 9 = \\ln 2$$\n\n**Second part:** complete the square, $x^2 + 4x + 13 = (x + 2)^2 + 9$. Let $x + 2 = 3\\tan\\theta$, so $dx = 3\\sec^2\\theta\\,d\\theta$ and $(x + 2)^2 + 9 = 9\\tan^2\\theta + 9 = 9\\sec^2\\theta$.\n\nLimits: $x = -2 \\Rightarrow \\tan\\theta = 0 \\Rightarrow \\theta = 0$; $\\ x = 1 \\Rightarrow \\tan\\theta = 1 \\Rightarrow \\theta = \\frac{\\pi}{4}$.\n$$\\int_0^{\\frac{\\pi}{4}} \\frac{3\\times 3\\sec^2\\theta}{9\\sec^2\\theta}\\,d\\theta = \\int_0^{\\frac{\\pi}{4}} 1\\,d\\theta = \\frac{\\pi}{4}$$\n\n(Equivalently, $\\int \\frac{3}{(x + 2)^2 + 9}\\,dx = \\arctan\\frac{x + 2}{3} + c$.)\n\nTotal: $\\ln 2 + \\frac{\\pi}{4}$.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q13",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 7,
+  "question": "The diagram shows part of the curve $C$ with equation $y = \\dfrac{1}{x + \\sqrt{x}}$, $x > 0$. The shaded region $R$ is bounded by $C$, the $x$-axis and the lines $x = 1$ and $x = 4$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><path d=\"M97.5,200.0 L97.5,131.5 L99.7,133.4 L101.8,135.2 L104.0,136.8 L106.1,138.4 L108.3,139.9 L110.4,141.3 L112.6,142.6 L114.8,143.9 L116.9,145.1 L119.1,146.3 L121.2,147.4 L123.4,148.4 L125.5,149.4 L127.7,150.4 L129.8,151.3 L132.0,152.2 L134.2,153.1 L136.3,153.9 L138.5,154.7 L140.6,155.4 L142.8,156.2 L144.9,156.9 L147.1,157.6 L149.2,158.2 L151.4,158.9 L153.6,159.5 L155.7,160.1 L157.9,160.7 L160.0,161.2 L162.2,161.8 L164.3,162.3 L166.5,162.8 L168.7,163.3 L170.8,163.8 L173.0,164.3 L175.1,164.7 L177.3,165.2 L179.4,165.6 L181.6,166.0 L183.8,166.4 L185.9,166.9 L188.1,167.2 L190.2,167.6 L192.4,168.0 L194.5,168.4 L196.7,168.7 L198.8,169.1 L201.0,169.4 L203.2,169.7 L205.3,170.0 L207.5,170.4 L209.6,170.7 L211.8,171.0 L213.9,171.3 L216.1,171.5 L218.2,171.8 L220.4,172.1 L222.6,172.4 L224.7,172.6 L226.9,172.9 L229.0,173.2 L231.2,173.4 L233.3,173.6 L235.5,173.9 L237.7,174.1 L239.8,174.4 L242.0,174.6 L244.1,174.8 L246.3,175.0 L248.4,175.2 L250.6,175.4 L252.8,175.7 L254.9,175.9 L257.1,176.1 L259.2,176.2 L261.4,176.4 L263.5,176.6 L265.7,176.8 L267.8,177.0 L270.0,177.2 L270.0,200.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M60.7,57.4 L62.7,66.3 L64.8,74.0 L66.8,80.8 L68.8,86.8 L70.9,92.1 L72.9,96.9 L74.9,101.3 L77.0,105.2 L79.0,108.8 L81.0,112.1 L83.0,115.2 L85.1,118.0 L87.1,120.6 L89.1,123.0 L91.2,125.3 L93.2,127.4 L95.2,129.5 L97.3,131.3 L99.3,133.1 L101.3,134.8 L103.4,136.4 L105.4,137.9 L107.4,139.3 L109.5,140.7 L111.5,141.9 L113.5,143.2 L115.6,144.3 L117.6,145.5 L119.6,146.5 L121.7,147.6 L123.7,148.6 L125.7,149.5 L127.7,150.4 L129.8,151.3 L131.8,152.1 L133.8,152.9 L135.9,153.7 L137.9,154.5 L139.9,155.2 L142.0,155.9 L144.0,156.6 L146.0,157.2 L148.1,157.9 L150.1,158.5 L152.1,159.1 L154.2,159.7 L156.2,160.2 L158.2,160.8 L160.3,161.3 L162.3,161.8 L164.3,162.3 L166.3,162.8 L168.4,163.3 L170.4,163.7 L172.4,164.2 L174.5,164.6 L176.5,165.0 L178.5,165.4 L180.6,165.8 L182.6,166.2 L184.6,166.6 L186.7,167.0 L188.7,167.4 L190.7,167.7 L192.8,168.1 L194.8,168.4 L196.8,168.7 L198.9,169.1 L200.9,169.4 L202.9,169.7 L204.9,170.0 L207.0,170.3 L209.0,170.6 L211.0,170.9 L213.1,171.1 L215.1,171.4 L217.1,171.7 L219.2,171.9 L221.2,172.2 L223.2,172.5 L225.3,172.7 L227.3,173.0 L229.3,173.2 L231.4,173.4 L233.4,173.7 L235.4,173.9 L237.5,174.1 L239.5,174.3 L241.5,174.5 L243.5,174.7 L245.6,175.0 L247.6,175.2 L249.6,175.4 L251.7,175.5 L253.7,175.7 L255.7,175.9 L257.8,176.1 L259.8,176.3 L261.8,176.5 L263.9,176.7 L265.9,176.8 L267.9,177.0 L270.0,177.2 L272.0,177.3 L274.0,177.5 L276.1,177.7 L278.1,177.8 L280.1,178.0 L282.2,178.1 L284.2,178.3 L286.2,178.4 L288.2,178.6 L290.3,178.7 L292.3,178.9 L294.3,179.0 L296.4,179.2 L298.4,179.3 L300.4,179.4 L302.5,179.6 L304.5,179.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"32\" y1=\"200.0\" x2=\"324\" y2=\"200.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M324,200.0 l-7,-4 v8 z\" fill=\"currentColor\"/><line x1=\"40.0\" y1=\"208\" x2=\"40.0\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M40.0,14 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"324.0\" y=\"218.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">x</text><text x=\"30.0\" y=\"18.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">y</text><text x=\"32.0\" y=\"216.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><line x1=\"97.5\" y1=\"200.0\" x2=\"97.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><line x1=\"270.0\" y1=\"200.0\" x2=\"270.0\" y2=\"177.2\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 3\"/><text x=\"97.5\" y=\"216.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"270.0\" y=\"216.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"172.2\" y=\"182.2\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">R</text><text x=\"169.6\" y=\"152.1\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">C</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use the substitution $u = \\sqrt{x}$ to show that the area of $R$ is given by\n$$\\int_1^2 \\frac{2}{u + 1}\\,du$$",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the exact area of $R$, giving your answer in the form $\\ln k$, where $k$ is a rational number to be found.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) From $x = u^2$, find $\\frac{dx}{du}$. Factorise $u^2 + u$. (b) $\\int \\frac{2}{u + 1}\\,du = 2\\ln|u + 1|$.",
+  "answer": "(a) Shown. (b) $\\ln\\dfrac{9}{4}$",
+  "solution": "**(a)** $u = \\sqrt{x} \\Rightarrow x = u^2 \\Rightarrow dx = 2u\\,du$ — **B1**\n\nArea $= \\displaystyle\\int_1^4 \\frac{1}{x + \\sqrt{x}}\\,dx = \\int \\frac{1}{u^2 + u}\\times 2u\\,du$ — **M1** (complete substitution, including $dx$)\n\n$= \\displaystyle\\int \\frac{2u}{u(u + 1)}\\,du = \\int \\frac{2}{u + 1}\\,du$ — **M1** (factorises and cancels $u$)\n\nLimits: $x = 1 \\Rightarrow u = 1$, $x = 4 \\Rightarrow u = 2$, so area $= \\displaystyle\\int_1^2 \\frac{2}{u + 1}\\,du$ — **A1** (cso, limits correctly changed)\n\n**(b)** $\\displaystyle\\int_1^2 \\frac{2}{u + 1}\\,du = \\Big[2\\ln(u + 1)\\Big]_1^2$ — **M1**\n\n$= 2\\ln 3 - 2\\ln 2$ — **M1** (correct use of the $u$-limits)\n\n$= \\ln 9 - \\ln 4 = \\ln\\dfrac{9}{4}$ — **A1**\n\n(Note: substituting back to $2\\ln(\\sqrt{x} + 1)$ and using the limits $1$ and $4$ is equally valid; using $1$ and $4$ in $2\\ln(u + 1)$ scores M1 M0 A0.)",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q14",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Use the substitution $x = \\sin\\theta$ to show that\n$$\\int_0^{\\frac{1}{2}} \\frac{x^2}{\\sqrt{1 - x^2}}\\,dx = \\frac{\\pi}{12} - \\frac{\\sqrt{3}}{8}$$",
+  "hint": "$dx = \\cos\\theta\\,d\\theta$ and $\\sqrt{1 - \\sin^2\\theta} = \\cos\\theta$ for $0 \\le \\theta \\le \\frac{\\pi}{6}$. To integrate $\\sin^2\\theta$, use a double angle formula for $\\cos 2\\theta$.",
+  "answer": "Shown: the integral equals $\\dfrac{\\pi}{12} - \\dfrac{\\sqrt{3}}{8}$.",
+  "solution": "$x = \\sin\\theta \\Rightarrow dx = \\cos\\theta\\,d\\theta$.\n\nLimits: $x = 0 \\Rightarrow \\theta = 0$; $\\ x = \\frac{1}{2} \\Rightarrow \\theta = \\frac{\\pi}{6}$. On $0 \\le \\theta \\le \\frac{\\pi}{6}$, $\\cos\\theta > 0$, so $\\sqrt{1 - \\sin^2\\theta} = \\cos\\theta$.\n$$\\int_0^{\\frac{\\pi}{6}} \\frac{\\sin^2\\theta}{\\cos\\theta}\\cos\\theta\\,d\\theta = \\int_0^{\\frac{\\pi}{6}} \\sin^2\\theta\\,d\\theta$$\n\nFrom $\\cos 2\\theta = 1 - 2\\sin^2\\theta$: $\\sin^2\\theta = \\frac{1}{2}(1 - \\cos 2\\theta)$.\n$$\\int_0^{\\frac{\\pi}{6}} \\frac{1}{2}(1 - \\cos 2\\theta)\\,d\\theta = \\left[\\frac{\\theta}{2} - \\frac{\\sin 2\\theta}{4}\\right]_0^{\\frac{\\pi}{6}} = \\frac{\\pi}{12} - \\frac{1}{4}\\sin\\frac{\\pi}{3} = \\frac{\\pi}{12} - \\frac{1}{4}\\times\\frac{\\sqrt{3}}{2}$$\n\n$$= \\frac{\\pi}{12} - \\frac{\\sqrt{3}}{8}$$ as required.",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "geo-trig-exact-values"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-integration-substitution-q15",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Use the substitution $u = e^x$ to find the exact value of\n$$\\int_0^{\\ln 3} \\frac{e^x}{\\left(e^x + 1\\right)\\left(e^x + 3\\right)}\\,dx$$\ngiving your answer in the form $a\\ln b$, where $a$ and $b$ are rational.",
+  "hint": "$du = e^x\\,dx$, and the new limits are $u = 1$ and $u = 3$. Then split $\\frac{1}{(u + 1)(u + 3)}$ into partial fractions.",
+  "answer": "$\\dfrac{1}{2}\\ln\\dfrac{4}{3}$",
+  "solution": "$u = e^x \\Rightarrow du = e^x\\,dx$. Limits: $x = 0 \\Rightarrow u = 1$; $\\ x = \\ln 3 \\Rightarrow u = 3$.\n$$\\int_1^3 \\frac{1}{(u + 1)(u + 3)}\\,du$$\n\nPartial fractions: $\\frac{1}{(u + 1)(u + 3)} = \\frac{A}{u + 1} + \\frac{B}{u + 3}$, so $1 = A(u + 3) + B(u + 1)$.\n\n$u = -1$: $A = \\frac{1}{2}$. $\\quad u = -3$: $B = -\\frac{1}{2}$.\n$$\\frac{1}{2}\\int_1^3 \\left(\\frac{1}{u + 1} - \\frac{1}{u + 3}\\right)du = \\frac{1}{2}\\Big[\\ln(u + 1) - \\ln(u + 3)\\Big]_1^3$$\n\n$$= \\frac{1}{2}\\left[(\\ln 4 - \\ln 6) - (\\ln 2 - \\ln 4)\\right] = \\frac{1}{2}\\ln\\frac{4\\times 4}{6\\times 2} = \\frac{1}{2}\\ln\\frac{4}{3}$$",
+  "linkedTopicIds": [
+   "pure-partial-fractions",
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q16",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "(a) By using the substitution $u = \\pi - x$, prove that for any continuous function $f$,\n$$\\int_0^{\\pi} x\\,f(\\sin x)\\,dx = \\frac{\\pi}{2}\\int_0^{\\pi} f(\\sin x)\\,dx$$\n\n(b) Hence find the exact value of\n$$\\int_0^{\\pi} \\frac{x\\sin x}{1 + \\cos^2 x}\\,dx$$",
+  "hint": "(a) Call the left-hand side $I$. After substituting, $\\sin(\\pi - u) = \\sin u$; you should get $I = \\pi\\int_0^{\\pi} f(\\sin u)\\,du - I$. (b) Write $\\cos^2 x = 1 - \\sin^2 x$ so the integrand is $x f(\\sin x)$, then use $u = \\cos x$.",
+  "answer": "(a) Proof (see solution). (b) $\\dfrac{\\pi^2}{4}$",
+  "solution": "**(a)** Let $I = \\int_0^{\\pi} x\\,f(\\sin x)\\,dx$ and put $u = \\pi - x$, so $x = \\pi - u$, $dx = -du$. Limits: $x = 0 \\Rightarrow u = \\pi$; $x = \\pi \\Rightarrow u = 0$.\n$$I = \\int_{\\pi}^{0} (\\pi - u)f\\big(\\sin(\\pi - u)\\big)(-du) = \\int_0^{\\pi} (\\pi - u)f(\\sin u)\\,du$$\nsince $\\sin(\\pi - u) = \\sin u$. Splitting,\n$$I = \\pi\\int_0^{\\pi} f(\\sin u)\\,du - \\int_0^{\\pi} u\\,f(\\sin u)\\,du = \\pi\\int_0^{\\pi} f(\\sin u)\\,du - I$$\n(the last integral is $I$ again, as the letter used for the variable does not matter). So $2I = \\pi\\int_0^{\\pi} f(\\sin x)\\,dx$, which gives the result.\n\n**(b)** $\\frac{\\sin x}{1 + \\cos^2 x} = \\frac{\\sin x}{2 - \\sin^2 x}$ is a function of $\\sin x$, so by (a)\n$$\\int_0^{\\pi} \\frac{x\\sin x}{1 + \\cos^2 x}\\,dx = \\frac{\\pi}{2}\\int_0^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x}\\,dx$$\n\nNow let $v = \\cos x$, $dv = -\\sin x\\,dx$; limits $x = 0 \\Rightarrow v = 1$, $x = \\pi \\Rightarrow v = -1$:\n$$\\int_0^{\\pi} \\frac{\\sin x}{1 + \\cos^2 x}\\,dx = \\int_1^{-1} \\frac{-dv}{1 + v^2} = \\int_{-1}^{1} \\frac{dv}{1 + v^2} = \\Big[\\arctan v\\Big]_{-1}^{1} = \\frac{\\pi}{4} - \\left(-\\frac{\\pi}{4}\\right) = \\frac{\\pi}{2}$$\n\n(Or substitute $v = \\tan\\phi$, $dv = \\sec^2\\phi\\,d\\phi$, giving $\\int_{-\\pi/4}^{\\pi/4} d\\phi = \\frac{\\pi}{2}$.)\n\nHence the integral is $\\frac{\\pi}{2}\\times\\frac{\\pi}{2} = \\frac{\\pi^2}{4}$.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q17",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A straight wire of length $2L$ metres carries a current of $I$ amps. At a point $P$ a perpendicular distance $d$ metres from the midpoint of the wire, the magnetic field strength $B$ (in teslas) is given by\n$$B = \\frac{\\mu_0 I d}{4\\pi}\\int_{-L}^{L} \\frac{dx}{\\left(x^2 + d^2\\right)^{\\frac{3}{2}}}$$\nwhere $\\mu_0 = 4\\pi\\times 10^{-7}$ is a constant.\n\n(a) Use the substitution $x = d\\tan\\theta$ to show that\n$$\\int_{-L}^{L} \\frac{dx}{\\left(x^2 + d^2\\right)^{\\frac{3}{2}}} = \\frac{2L}{d^2\\sqrt{L^2 + d^2}}$$\n\n(b) A wire of length 1 m carries a current of 5 A. Find $B$ at a point 2 cm from the midpoint of the wire, giving your answer to 3 significant figures.\n\n(c) Physicists often model a long wire as infinitely long, using $B = \\dfrac{\\mu_0 I}{2\\pi d}$. Show that this is the limit of your expression for $B$ as $L \\to \\infty$, and find the percentage error in using it for the wire in (b).",
+  "hint": "(a) $x^2 + d^2 = d^2\\sec^2\\theta$ and $dx = d\\sec^2\\theta\\,d\\theta$; the integrand simplifies to a multiple of $\\cos\\theta$. Find $\\sin\\theta$ at $x = L$ from a right-angled triangle. (b) Here $L = 0.5$ and $d = 0.02$.",
+  "answer": "(a) Shown. (b) $B \\approx 5.00\\times 10^{-5}$ T (more precisely $4.996\\times 10^{-5}$ T). (c) $B = \\dfrac{\\mu_0 I}{2\\pi d}\\cdot\\dfrac{L}{\\sqrt{L^2 + d^2}} \\to \\dfrac{\\mu_0 I}{2\\pi d}$; the infinite-wire value $5\\times 10^{-5}$ T is about $0.08\\%$ too large.",
+  "solution": "**(a)** $x = d\\tan\\theta \\Rightarrow dx = d\\sec^2\\theta\\,d\\theta$, and $x^2 + d^2 = d^2(\\tan^2\\theta + 1) = d^2\\sec^2\\theta$, so $\\left(x^2 + d^2\\right)^{\\frac{3}{2}} = d^3\\sec^3\\theta$.\n$$\\int \\frac{d\\sec^2\\theta}{d^3\\sec^3\\theta}\\,d\\theta = \\frac{1}{d^2}\\int \\cos\\theta\\,d\\theta = \\frac{\\sin\\theta}{d^2}$$\n\nLimits: $x = \\pm L \\Rightarrow \\tan\\theta = \\pm\\frac{L}{d}$, i.e. $\\theta = \\pm\\alpha$ where $\\tan\\alpha = \\frac{L}{d}$. A right-angled triangle with opposite $L$ and adjacent $d$ has hypotenuse $\\sqrt{L^2 + d^2}$, so $\\sin\\alpha = \\frac{L}{\\sqrt{L^2 + d^2}}$.\n$$\\frac{1}{d^2}\\Big[\\sin\\theta\\Big]_{-\\alpha}^{\\alpha} = \\frac{2\\sin\\alpha}{d^2} = \\frac{2L}{d^2\\sqrt{L^2 + d^2}}$$\n\n**(b)** $B = \\frac{\\mu_0 I d}{4\\pi}\\cdot\\frac{2L}{d^2\\sqrt{L^2 + d^2}} = \\frac{\\mu_0 I L}{2\\pi d\\sqrt{L^2 + d^2}}$. With $L = 0.5$, $d = 0.02$, $I = 5$:\n$$B = \\frac{4\\pi\\times 10^{-7}\\times 5\\times 0.5}{2\\pi\\times 0.02\\times\\sqrt{0.25 + 0.0004}} = \\frac{5\\times 10^{-7}}{0.02\\times 0.50040\\ldots} = 4.996\\times 10^{-5} \\approx 5.00\\times 10^{-5}\\text{ T}$$\n\n**(c)** $B = \\frac{\\mu_0 I}{2\\pi d}\\cdot\\frac{L}{\\sqrt{L^2 + d^2}} = \\frac{\\mu_0 I}{2\\pi d}\\cdot\\frac{1}{\\sqrt{1 + d^2/L^2}}$, and $\\frac{d^2}{L^2} \\to 0$ as $L \\to \\infty$, so $B \\to \\frac{\\mu_0 I}{2\\pi d}$.\n\nFor the wire in (b), $\\frac{\\mu_0 I}{2\\pi d} = \\frac{2\\times 10^{-7}\\times 5}{0.02} = 5\\times 10^{-5}$ T. Percentage error:\n$$\\frac{5\\times 10^{-5} - 4.996\\times 10^{-5}}{4.996\\times 10^{-5}}\\times 100\\% = \\left(\\sqrt{1.0016} - 1\\right)\\times 100\\% \\approx 0.08\\%$$\nso treating the wire as infinite is an excellent approximation when $P$ is this close to it.",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-integration-substitution-q18",
+  "topicId": "calc-integration-substitution",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $t = \\tan\\dfrac{x}{2}$.\n\n(a) Show that $\\cos x = \\dfrac{1 - t^2}{1 + t^2}$ and $\\dfrac{dx}{dt} = \\dfrac{2}{1 + t^2}$.\n\n(b) Hence show that\n$$\\int_0^{\\frac{\\pi}{2}} \\frac{1}{2 + \\cos x}\\,dx = \\frac{\\pi\\sqrt{3}}{9}$$",
+  "hint": "(a) Use $\\cos x = \\cos^2\\frac{x}{2} - \\sin^2\\frac{x}{2}$ and divide top and bottom by $\\cos^2\\frac{x}{2}$. Differentiate $t = \\tan\\frac{x}{2}$ and use $\\sec^2 = 1 + \\tan^2$. (b) The integrand becomes $\\frac{2}{t^2 + 3}$; then substitute $t = \\sqrt{3}\\tan\\phi$.",
+  "answer": "(a) Shown. (b) Shown: the integral equals $\\dfrac{\\pi\\sqrt{3}}{9} = \\dfrac{\\pi}{3\\sqrt{3}}$.",
+  "solution": "**(a)** Using the double angle formula and dividing by $\\cos^2\\frac{x}{2} + \\sin^2\\frac{x}{2} = 1$:\n$$\\cos x = \\frac{\\cos^2\\frac{x}{2} - \\sin^2\\frac{x}{2}}{\\cos^2\\frac{x}{2} + \\sin^2\\frac{x}{2}} = \\frac{1 - \\tan^2\\frac{x}{2}}{1 + \\tan^2\\frac{x}{2}} = \\frac{1 - t^2}{1 + t^2}$$\n(dividing top and bottom by $\\cos^2\\frac{x}{2}$).\n\n$\\frac{dt}{dx} = \\frac{1}{2}\\sec^2\\frac{x}{2} = \\frac{1}{2}\\left(1 + t^2\\right)$, so $\\frac{dx}{dt} = \\frac{2}{1 + t^2}$.\n\n**(b)** Limits: $x = 0 \\Rightarrow t = 0$; $\\ x = \\frac{\\pi}{2} \\Rightarrow t = \\tan\\frac{\\pi}{4} = 1$.\n$$2 + \\cos x = \\frac{2(1 + t^2) + 1 - t^2}{1 + t^2} = \\frac{t^2 + 3}{1 + t^2}$$\n\n$$\\int_0^{\\frac{\\pi}{2}} \\frac{dx}{2 + \\cos x} = \\int_0^1 \\frac{1 + t^2}{t^2 + 3}\\cdot\\frac{2}{1 + t^2}\\,dt = \\int_0^1 \\frac{2}{t^2 + 3}\\,dt$$\n\nNow $t = \\sqrt{3}\\tan\\phi$, $dt = \\sqrt{3}\\sec^2\\phi\\,d\\phi$, $t^2 + 3 = 3\\sec^2\\phi$; limits $\\phi = 0$ to $\\phi = \\frac{\\pi}{6}$ (since $\\tan\\phi = \\frac{1}{\\sqrt{3}}$):\n$$\\int_0^{\\frac{\\pi}{6}} \\frac{2\\sqrt{3}\\sec^2\\phi}{3\\sec^2\\phi}\\,d\\phi = \\frac{2\\sqrt{3}}{3}\\times\\frac{\\pi}{6} = \\frac{\\pi\\sqrt{3}}{9}$$\nas required.",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "pure-trig-reciprocal-inverse"
+  ],
+  "misconceptionIds": []
+ }
+]

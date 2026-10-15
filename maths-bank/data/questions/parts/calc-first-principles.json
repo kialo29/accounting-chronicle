@@ -1,0 +1,314 @@
+[
+ {
+  "id": "calc-first-principles-q01",
+  "topicId": "calc-first-principles",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The diagram shows part of the curve $y = x^2$ and the chord joining $P(3, 9)$ to $Q(4, 16)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the gradient of the chord $PQ$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the gradient of the chord from $P$ to the point on the curve with $x$-coordinate $3.1$, and then $3.01$."
+   },
+   {
+    "label": "c",
+    "prompt": "Show that the gradient of the chord from $P$ to the point with $x$-coordinate $3 + h$ is $6 + h$."
+   },
+   {
+    "label": "d",
+    "prompt": "Hence write down the gradient of the tangent to the curve at $P$."
+   }
+  ],
+  "hint": "Gradient of a chord $= \\dfrac{\\text{change in } y}{\\text{change in } x}$. For (c), the second point is $\\left(3 + h, (3 + h)^2\\right)$.",
+  "answer": "(a) $7$ (b) $6.1$ and $6.01$ (c) Shown (d) $6$",
+  "solution": "(a) $\\dfrac{16 - 9}{4 - 3} = 7$\n\n(b) At $x = 3.1$, $y = 9.61$: gradient $= \\dfrac{9.61 - 9}{0.1} = 6.1$.\n\nAt $x = 3.01$, $y = 9.0601$: gradient $= \\dfrac{0.0601}{0.01} = 6.01$.\n\n(c) The point is $\\left(3 + h, (3 + h)^2\\right) = \\left(3 + h, 9 + 6h + h^2\\right)$, so\n$$\\text{gradient} = \\frac{(9 + 6h + h^2) - 9}{(3 + h) - 3} = \\frac{6h + h^2}{h} = 6 + h$$\n\n(d) As $h \\to 0$ the second point slides along the curve towards $P$ and the chord becomes the tangent at $P$. Its gradient tends to\n$$\\lim_{h \\to 0}(6 + h) = 6$$\nwhich fits the pattern $7,\\ 6.1,\\ 6.01,\\ \\ldots$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 280\" width=\"280\" height=\"280\"><line x1=\"20\" y1=\"245.2\" x2=\"264\" y2=\"245.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"66.1\" y1=\"262\" x2=\"66.1\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M264,245.2 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M66.1,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"264\" y=\"238.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"73.1\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"104.5\" y1=\"242.2\" x2=\"104.5\" y2=\"248.2\" stroke=\"currentColor\"/><text x=\"104.5\" y=\"260.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"142.8\" y1=\"242.2\" x2=\"142.8\" y2=\"248.2\" stroke=\"currentColor\"/><text x=\"142.8\" y=\"260.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"181.2\" y1=\"242.2\" x2=\"181.2\" y2=\"248.2\" stroke=\"currentColor\"/><text x=\"181.2\" y=\"260.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"219.6\" y1=\"242.2\" x2=\"219.6\" y2=\"248.2\" stroke=\"currentColor\"/><text x=\"219.6\" y=\"260.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"63.1\" y1=\"189.3\" x2=\"69.1\" y2=\"189.3\" stroke=\"currentColor\"/><text x=\"60.1\" y=\"193.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"63.1\" y1=\"133.4\" x2=\"69.1\" y2=\"133.4\" stroke=\"currentColor\"/><text x=\"60.1\" y=\"137.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"63.1\" y1=\"77.5\" x2=\"69.1\" y2=\"77.5\" stroke=\"currentColor\"/><text x=\"60.1\" y=\"81.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">15</text><text x=\"60.1\" y=\"259.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M23.8,231.7 L25.6,232.8 L27.4,233.9 L29.2,234.9 L30.9,235.9 L32.7,236.8 L34.5,237.7 L36.3,238.5 L38,239.3 L39.8,240 L41.6,240.7 L43.4,241.3 L45.1,241.9 L46.9,242.4 L48.7,242.9 L50.5,243.4 L52.2,243.8 L54,244.1 L55.8,244.4 L57.6,244.7 L59.3,244.9 L61.1,245 L62.9,245.2 L64.7,245.2 L66.4,245.2 L68.2,245.2 L70,245.1 L71.8,245 L73.6,244.8 L75.3,244.6 L77.1,244.3 L78.9,244 L80.7,243.6 L82.4,243.2 L84.2,242.7 L86,242.2 L87.8,241.7 L89.5,241 L91.3,240.4 L93.1,239.7 L94.9,238.9 L96.6,238.1 L98.4,237.3 L100.2,236.4 L102,235.5 L103.7,234.5 L105.5,233.4 L107.3,232.3 L109.1,231.2 L110.8,230 L112.6,228.8 L114.4,227.5 L116.2,226.2 L117.9,224.8 L119.7,223.4 L121.5,221.9 L123.3,220.4 L125,218.8 L126.8,217.2 L128.6,215.6 L130.4,213.9 L132.1,212.1 L133.9,210.3 L135.7,208.4 L137.5,206.5 L139.2,204.6 L141,202.6 L142.8,200.6 L144.6,198.5 L146.3,196.3 L148.1,194.1 L149.9,191.9 L151.7,189.6 L153.4,187.3 L155.2,184.9 L157,182.5 L158.8,180 L160.5,177.5 L162.3,174.9 L164.1,172.3 L165.9,169.6 L167.6,166.9 L169.4,164.2 L171.2,161.4 L173,158.5 L174.7,155.6 L176.5,152.6 L178.3,149.6 L180.1,146.6 L181.8,143.5 L183.6,140.4 L185.4,137.2 L187.2,133.9 L189,130.6 L190.7,127.3 L192.5,123.9 L194.3,120.5 L196.1,117 L197.8,113.5 L199.6,109.9 L201.4,106.3 L203.2,102.6 L204.9,98.9 L206.7,95.1 L208.5,91.3 L210.3,87.5 L212,83.5 L213.8,79.6 L215.6,75.6 L217.4,71.5 L219.1,67.4 L220.9,63.3 L222.7,59.1 L224.5,54.8 L226.2,50.6 L228,46.2 L229.8,41.8 L231.6,37.4 L233.3,32.9 L235.1,28.4 L236.9,23.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><path d=\"M150.5,207.2 L238.8,27.2\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><circle cx=\"181.2\" cy=\"144.6\" r=\"4\" fill=\"currentColor\"/><circle cx=\"219.6\" cy=\"66.3\" r=\"4\" fill=\"currentColor\"/><text x=\"189.2\" y=\"156.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">P(3, 9)</text><text x=\"211.6\" y=\"64.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">Q(4, 16)</text><text x=\"226.9\" y=\"27.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x²</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q02",
+  "topicId": "calc-first-principles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove, from first principles, that the derivative of $f(x) = 4x^2$ is $8x$.",
+  "hint": "Start from $f'(x) = \\lim_{h \\to 0}\\dfrac{f(x + h) - f(x)}{h}$ and expand $4(x + h)^2$.",
+  "answer": "$f'(x) = 8x$ (proof)",
+  "solution": "$$f(x + h) = 4(x + h)^2 = 4x^2 + 8xh + 4h^2$$\n\n$$f(x + h) - f(x) = 8xh + 4h^2$$\n\n$$\\frac{f(x + h) - f(x)}{h} = \\frac{8xh + 4h^2}{h} = 8x + 4h \\quad (h \\ne 0)$$\n\n$$f'(x) = \\lim_{h \\to 0}(8x + 4h) = 8x$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q03",
+  "topicId": "calc-first-principles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove, from first principles, that the derivative of $f(x) = 4x^2 + 3x$ is $8x + 3$.",
+  "hint": "Same method as for $4x^2$. Expand $f(x + h)$ fully, including the $3(x + h)$ term.",
+  "answer": "$f'(x) = 8x + 3$ (proof)",
+  "solution": "$$f(x + h) = 4(x + h)^2 + 3(x + h) = 4x^2 + 8xh + 4h^2 + 3x + 3h$$\n\nSubtract $f(x) = 4x^2 + 3x$:\n$$f(x + h) - f(x) = 8xh + 4h^2 + 3h$$\n\n$$\\frac{f(x + h) - f(x)}{h} = 8x + 4h + 3 \\quad (h \\ne 0)$$\n\n$$f'(x) = \\lim_{h \\to 0}(8x + 4h + 3) = 8x + 3$$\n\n**What changed:** the extra term $3x$ contributes $3h$ to $f(x + h) - f(x)$, which becomes $3$ after dividing by $h$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q04",
+  "topicId": "calc-first-principles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove, from first principles, that the derivative of $f(x) = 4x^2 + 3x - 7$ is $8x + 3$.",
+  "hint": "When you subtract $f(x)$, put it in brackets: $-\\left(4x^2 + 3x - 7\\right)$. What happens to the $-7$?",
+  "answer": "$f'(x) = 8x + 3$ (proof)",
+  "solution": "$$f(x + h) = 4x^2 + 8xh + 4h^2 + 3x + 3h - 7$$\n\n$$f(x + h) - f(x) = \\left(4x^2 + 8xh + 4h^2 + 3x + 3h - 7\\right) - \\left(4x^2 + 3x - 7\\right) = 8xh + 4h^2 + 3h$$\n\nEvery remaining term contains $h$ (a good check that the subtraction is right).\n\n$$\\frac{f(x + h) - f(x)}{h} = 8x + 4h + 3 \\to 8x + 3 \\text{ as } h \\to 0$$\n\n**What changed:** adding the constant $-7$ makes no difference to the derivative: it appears in both $f(x + h)$ and $f(x)$, so it cancels. A vertical shift does not change any gradient.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q05",
+  "topicId": "calc-first-principles",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove, from first principles, that the derivative of $f(x) = 4x^3 + 3x - 7$ is $12x^2 + 3$.",
+  "hint": "$(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$.",
+  "answer": "$f'(x) = 12x^2 + 3$ (proof)",
+  "solution": "Using $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:\n$$f(x + h) = 4x^3 + 12x^2h + 12xh^2 + 4h^3 + 3x + 3h - 7$$\n\n$$f(x + h) - f(x) = 12x^2h + 12xh^2 + 4h^3 + 3h$$\n\n$$\\frac{f(x + h) - f(x)}{h} = 12x^2 + 12xh + 4h^2 + 3 \\quad (h \\ne 0)$$\n\n$$f'(x) = \\lim_{h \\to 0}\\left(12x^2 + 12xh + 4h^2 + 3\\right) = 12x^2 + 3$$\n\n**What changed:** the power 2 became 3. Now there are more terms in the expansion, but every term with $h^2$ or $h^3$ still vanishes in the limit; only the term $12x^2h$ (linear in $h$) survives, giving $12x^2$.",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q06",
+  "topicId": "calc-first-principles",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Prove, from first principles, that the derivative of $f(x) = \\dfrac{1}{x}$, $x \\ne 0$, is $-\\dfrac{1}{x^2}$.",
+  "hint": "Write $\\dfrac{1}{x + h} - \\dfrac{1}{x}$ as a single fraction before dividing by $h$.",
+  "answer": "$f'(x) = -\\dfrac{1}{x^2}$ (proof)",
+  "solution": "$$f(x + h) - f(x) = \\frac{1}{x + h} - \\frac{1}{x} = \\frac{x - (x + h)}{x(x + h)} = \\frac{-h}{x(x + h)}$$\n\nDivide by $h$ ($h \\ne 0$):\n$$\\frac{f(x + h) - f(x)}{h} = \\frac{-1}{x(x + h)}$$\n\nLet $h \\to 0$:\n$$f'(x) = \\lim_{h \\to 0}\\frac{-1}{x(x + h)} = -\\frac{1}{x^2}$$",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q07",
+  "topicId": "calc-first-principles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Oliver is asked to differentiate $f(x) = 5x^2$ from first principles. His working is:\n\n$$\\frac{f(x + h) - f(x)}{h} = \\frac{5(x^2 + h^2) - 5x^2}{h} = \\frac{5h^2}{h} = 5h$$\n\n\"As $h \\to 0$, $5h \\to 0$, so the derivative of $5x^2$ is $0$.\"\n\nIdentify Oliver's error and give a correct proof.",
+  "hint": "Is $(x + h)^2$ equal to $x^2 + h^2$? Try $x = 1$, $h = 1$.",
+  "answer": "Oliver wrote $(x + h)^2 = x^2 + h^2$, missing the $2xh$ term. The correct derivative is $10x$.",
+  "solution": "**Error:** the first step uses $(x + h)^2 = x^2 + h^2$. This is false (e.g. $x = h = 1$: $(1 + 1)^2 = 4$, but $1^2 + 1^2 = 2$). The middle term $2xh$ has been lost – and it is exactly the term that produces the derivative. (A derivative of 0 would mean the curve is flat everywhere, which is clearly wrong for $y = 5x^2$.)\n\n**Correct proof:**\n$$f(x + h) = 5(x + h)^2 = 5\\left(x^2 + 2xh + h^2\\right) = 5x^2 + 10xh + 5h^2$$\n\n$$\\frac{f(x + h) - f(x)}{h} = \\frac{10xh + 5h^2}{h} = 10x + 5h \\quad (h \\ne 0)$$\n\n$$f'(x) = \\lim_{h \\to 0}(10x + 5h) = 10x$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q08",
+  "topicId": "calc-first-principles",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara is differentiating $f(x) = 2x^2 - 7x$ from first principles. Her working is:\n\n$$\\begin{aligned} f(x + h) - f(x) &= 2(x + h)^2 - 7(x + h) - 2x^2 - 7x \\\\ &= 2x^2 + 4xh + 2h^2 - 7x - 7h - 2x^2 - 7x \\\\ &= 4xh + 2h^2 - 7h - 14x \\end{aligned}$$\n\n\"Dividing by $h$ gives $4x + 2h - 7 - \\frac{14x}{h}$, and $\\frac{14x}{h}$ has no limit as $h \\to 0$, so $f$ cannot be differentiated.\"\n\nIdentify Zara's error and find $f'(x)$ correctly.",
+  "hint": "Look at how Zara subtracted $f(x) = 2x^2 - 7x$. After a correct subtraction, should there be any term without an $h$?",
+  "answer": "Zara subtracted $2x^2 - 7x$ without brackets, so $-(-7x)$ became $-7x$. Correctly, $f(x + h) - f(x) = 4xh + 2h^2 - 7h$ and $f'(x) = 4x - 7$.",
+  "solution": "**Error:** the first line. Zara wrote $-2x^2 - 7x$ instead of $-\\left(2x^2 - 7x\\right) = -2x^2 + 7x$: she did not subtract **all** of $f(x)$. This leaves a stray $-14x$ term with no factor of $h$, which is what makes her quotient blow up.\n\nA useful check: after subtracting $f(x)$ correctly, **every** term should contain $h$ (because $f(x + h) - f(x) \\to 0$ as $h \\to 0$).\n\n**Correct working:**\n$$f(x + h) - f(x) = \\left(2x^2 + 4xh + 2h^2 - 7x - 7h\\right) - \\left(2x^2 - 7x\\right) = 4xh + 2h^2 - 7h$$\n\n$$\\frac{f(x + h) - f(x)}{h} = 4x + 2h - 7 \\quad (h \\ne 0)$$\n\n$$f'(x) = \\lim_{h \\to 0}(4x + 2h - 7) = 4x - 7$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q09",
+  "topicId": "calc-first-principles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Harry is finding the derivative of $f(x) = x^2 + 5x$ from first principles. His working is:\n\n$$f'(x) = \\lim_{h \\to 0}\\frac{2xh + h^2 + 5h}{h}$$\n\n\"Putting $h = 0$ gives $\\dfrac{0}{0}$, so the gradient is $0$.\"\n\nIdentify Harry's error and complete the proof correctly.",
+  "hint": "Can you put $h = 0$ straight away? What do all the terms of the numerator have in common?",
+  "answer": "Harry let $h \\to 0$ before cancelling the factor $h$; $\\frac{0}{0}$ is indeterminate, not $0$. Correctly, $f'(x) = 2x + 5$.",
+  "solution": "**Error:** substituting $h = 0$ before simplifying. $\\frac{0}{0}$ is not 0: it is indeterminate, and in a first-principles proof it **always** appears if you substitute too early, because both $f(x + h) - f(x)$ and $h$ tend to 0. The whole point of the method is to cancel the factor $h$ first.\n\n(Harry's expression for the numerator is correct: $(x + h)^2 + 5(x + h) - x^2 - 5x = 2xh + h^2 + 5h$.)\n\n**Correct completion:** every term of the numerator has a factor $h$, so for $h \\ne 0$\n$$\\frac{2xh + h^2 + 5h}{h} = 2x + h + 5$$\n\nNow let $h \\to 0$:\n$$f'(x) = \\lim_{h \\to 0}(2x + h + 5) = 2x + 5$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-first-principles-q10",
+  "topicId": "calc-first-principles",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Show that $f(x) = |x - 3|$ is continuous at $x = 3$ but is not differentiable at $x = 3$.\n\n(b) Show that $g(x) = x|x|$ **is** differentiable at $x = 0$, and find $g'(0)$.",
+  "hint": "Use $\\lim_{h \\to 0}\\dfrac{f(3 + h) - f(3)}{h}$ and consider $h > 0$ and $h < 0$ separately. For (b), simplify $\\dfrac{g(0 + h) - g(0)}{h}$.",
+  "answer": "(a) $\\lim_{x \\to 3} f(x) = 0 = f(3)$, but the difference quotient tends to $1$ as $h \\to 0^+$ and $-1$ as $h \\to 0^-$, so $f'(3)$ does not exist. (b) $\\frac{g(h) - g(0)}{h} = |h| \\to 0$, so $g'(0) = 0$.",
+  "solution": "(a) **Continuity:** $f(3) = 0$, and as $x \\to 3$, $|x - 3| \\to 0$. So $\\lim_{x \\to 3} f(x) = f(3)$ and $f$ is continuous at 3 (the graph has no gap).\n\n**Differentiability:**\n$$\\frac{f(3 + h) - f(3)}{h} = \\frac{|h| - 0}{h} = \\frac{|h|}{h}$$\n\nFor $h > 0$ this is $\\frac{h}{h} = 1$; for $h < 0$ it is $\\frac{-h}{h} = -1$.\n\nSo the limit as $h \\to 0^+$ is $1$ and as $h \\to 0^-$ is $-1$. These differ, so $\\lim_{h \\to 0}\\frac{f(3 + h) - f(3)}{h}$ does not exist and $f$ is **not** differentiable at $x = 3$. The graph has a corner (a \"V\") at $(3, 0)$: the gradient jumps from $-1$ to $1$. Continuous does not imply differentiable.\n\n(b) $g(0) = 0$, so\n$$\\frac{g(0 + h) - g(0)}{h} = \\frac{h|h|}{h} = |h| \\quad (h \\ne 0)$$\n\nAs $h \\to 0$ from either side, $|h| \\to 0$. The limit exists, so $g$ is differentiable at 0 with\n$$g'(0) = 0$$\n\n(The graph of $g$ is $y = x^2$ for $x \\ge 0$ and $y = -x^2$ for $x < 0$; both halves are flat at the origin, so there is no corner.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-modulus"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q11",
+  "topicId": "calc-first-principles",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The function $f$ is defined by\n$$f(x) = \\begin{cases} x^2, & x \\le 1 \\\\ ax + b, & x > 1 \\end{cases}$$\nwhere $a$ and $b$ are constants.\n\nBy considering the limits from first principles as $h \\to 0^-$ and $h \\to 0^+$, find the values of $a$ and $b$ for which $f$ is differentiable at $x = 1$.",
+  "hint": "$f(1) = 1$. Find $\\lim_{h \\to 0^-}\\dfrac{f(1 + h) - f(1)}{h}$ using $x^2$, and $\\lim_{h \\to 0^+}\\dfrac{f(1 + h) - f(1)}{h}$ using $ax + b$. What must be true for the second limit to be finite?",
+  "answer": "$a = 2$, $b = -1$",
+  "solution": "$f(1) = 1^2 = 1$.\n\n**From the left** ($h < 0$, so $1 + h \\le 1$):\n$$\\frac{f(1 + h) - f(1)}{h} = \\frac{(1 + h)^2 - 1}{h} = \\frac{2h + h^2}{h} = 2 + h \\to 2$$\n\n**From the right** ($h > 0$):\n$$\\frac{f(1 + h) - f(1)}{h} = \\frac{a(1 + h) + b - 1}{h} = \\frac{(a + b - 1) + ah}{h} = \\frac{a + b - 1}{h} + a$$\n\nIf $a + b - 1 \\ne 0$, the term $\\frac{a + b - 1}{h}$ tends to $\\pm\\infty$ and the limit does not exist. So we need\n$$a + b = 1$$\n(this is exactly the condition for $f$ to be continuous at $x = 1$ – differentiable functions must be continuous). Then the right-hand limit is $a$.\n\nFor differentiability the two one-sided limits must be equal:\n$$a = 2, \\qquad b = 1 - a = -1$$\n\nSo $f(x) = 2x - 1$ for $x > 1$: the tangent line to $y = x^2$ at $(1, 1)$, which joins the curve smoothly.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-piecewise-functions"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q12",
+  "topicId": "calc-first-principles",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "(a) Prove, from first principles, that the derivative of $f(x) = \\sqrt{x}$ is $\\dfrac{1}{2\\sqrt{x}}$ for $x > 0$.\n\n(b) By considering $\\dfrac{f(0 + h) - f(0)}{h}$ for $h > 0$, explain what happens to the gradient of $y = \\sqrt{x}$ at the origin.",
+  "hint": "Multiply the numerator and denominator of $\\dfrac{\\sqrt{x + h} - \\sqrt{x}}{h}$ by $\\sqrt{x + h} + \\sqrt{x}$.",
+  "answer": "(a) $f'(x) = \\dfrac{1}{2\\sqrt{x}}$ (proof) (b) $\\dfrac{\\sqrt{h}}{h} = \\dfrac{1}{\\sqrt{h}} \\to \\infty$: the tangent at the origin is vertical, so $f$ is not differentiable at $x = 0$.",
+  "solution": "(a) Substituting $h = 0$ in $\\dfrac{\\sqrt{x + h} - \\sqrt{x}}{h}$ gives $\\frac{0}{0}$, and there is no obvious factor of $h$, so rationalise the numerator:\n$$\\frac{\\sqrt{x + h} - \\sqrt{x}}{h} \\cdot \\frac{\\sqrt{x + h} + \\sqrt{x}}{\\sqrt{x + h} + \\sqrt{x}} = \\frac{(x + h) - x}{h\\left(\\sqrt{x + h} + \\sqrt{x}\\right)} = \\frac{1}{\\sqrt{x + h} + \\sqrt{x}}$$\n\nLet $h \\to 0$ (with $x > 0$):\n$$f'(x) = \\lim_{h \\to 0}\\frac{1}{\\sqrt{x + h} + \\sqrt{x}} = \\frac{1}{2\\sqrt{x}}$$\n\n(b) For $h > 0$:\n$$\\frac{f(h) - f(0)}{h} = \\frac{\\sqrt{h}}{h} = \\frac{1}{\\sqrt{h}}$$\nAs $h \\to 0^+$, this grows without bound. The chords from the origin get steeper and steeper, so the tangent at the origin is vertical (the $y$-axis). The limit is not a finite number, so $\\sqrt{x}$ is **not** differentiable at $x = 0$, even though it is continuous there.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q13",
+  "topicId": "calc-first-principles",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "In this question $x$ is measured in radians.\n\nYou may assume that, as $h \\to 0$, $\\dfrac{\\sin h}{h} \\to 1$ and $\\dfrac{\\cos h - 1}{h} \\to 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\cos(x + h) - \\cos x = \\cos x(\\cos h - 1) - \\sin x \\sin h$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove, from first principles, that the derivative of $\\cos x$ is $-\\sin x$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the gradient of the curve $y = \\cos x$ at the point where $x = \\dfrac{5\\pi}{6}$.",
+    "marks": 1
+   }
+  ],
+  "marks": 6,
+  "calculator": false,
+  "hint": "Use the compound-angle formula $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$. For (b), divide by $h$ and group the terms so that the given limits appear.",
+  "answer": "(a) Shown (b) Proof (c) $-\\dfrac{1}{2}$",
+  "solution": "(a) $\\cos(x + h) = \\cos x\\cos h - \\sin x\\sin h$ M1\n\nSo\n$$\\cos(x + h) - \\cos x = \\cos x\\cos h - \\cos x - \\sin x\\sin h = \\cos x(\\cos h - 1) - \\sin x\\sin h \\quad \\text{A1 (cso)}$$\n\n(b) Let $f(x) = \\cos x$. Then\n$$\\frac{f(x + h) - f(x)}{h} = \\cos x\\left(\\frac{\\cos h - 1}{h}\\right) - \\sin x\\left(\\frac{\\sin h}{h}\\right) \\quad \\text{M1}$$\n\nAs $h \\to 0$, $\\frac{\\cos h - 1}{h} \\to 0$ and $\\frac{\\sin h}{h} \\to 1$ M1, so\n$$f'(x) = \\lim_{h \\to 0}\\left[\\cos x\\left(\\frac{\\cos h - 1}{h}\\right) - \\sin x\\left(\\frac{\\sin h}{h}\\right)\\right] = \\cos x \\times 0 - \\sin x \\times 1 = -\\sin x \\quad \\text{A1 (cso)}$$\n\n(Notes: the limit must be shown being taken, with $\\lim_{h \\to 0}$ written or \"as $h \\to 0$\"; the final A1 requires a fully correct argument with no errors.)\n\n(c) Gradient $= -\\sin\\frac{5\\pi}{6} = -\\frac{1}{2}$ B1",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q14",
+  "topicId": "calc-first-principles",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $n$ be a positive integer.\n\n(a) Use the binomial expansion to show that\n$$(x + h)^n - x^n = nx^{n-1}h + \\binom{n}{2}x^{n-2}h^2 + \\cdots + h^n$$\n\n(b) Hence prove, from first principles, that the derivative of $x^n$ is $nx^{n-1}$.\n\n(c) Use the same method to explain why the derivative of $kx^n$, where $k$ is a constant, is $knx^{n-1}$.",
+  "hint": "$(x + h)^n = \\binom{n}{0}x^n + \\binom{n}{1}x^{n-1}h + \\binom{n}{2}x^{n-2}h^2 + \\cdots + \\binom{n}{n}h^n$. After dividing by $h$, which terms still contain $h$?",
+  "answer": "(a) Shown (b) $\\frac{d}{dx}\\left(x^n\\right) = nx^{n-1}$ (proof) (c) The factor $k$ multiplies every term and survives the limit.",
+  "solution": "(a) By the binomial theorem,\n$$(x + h)^n = x^n + \\binom{n}{1}x^{n-1}h + \\binom{n}{2}x^{n-2}h^2 + \\cdots + \\binom{n}{n}h^n$$\nSince $\\binom{n}{1} = n$ and $\\binom{n}{n} = 1$, subtracting $x^n$ gives\n$$(x + h)^n - x^n = nx^{n-1}h + \\binom{n}{2}x^{n-2}h^2 + \\cdots + h^n$$\n\n(b) Every term on the right has a factor of $h$, so for $h \\ne 0$:\n$$\\frac{(x + h)^n - x^n}{h} = nx^{n-1} + \\binom{n}{2}x^{n-2}h + \\cdots + h^{n-1}$$\n\nEvery term after the first contains at least one factor of $h$, so it tends to 0 as $h \\to 0$ (there are only finitely many terms). Hence\n$$\\frac{d}{dx}\\left(x^n\\right) = \\lim_{h \\to 0}\\frac{(x + h)^n - x^n}{h} = nx^{n-1}$$\n\n(c) For $g(x) = kx^n$:\n$$\\frac{g(x + h) - g(x)}{h} = k \\cdot \\frac{(x + h)^n - x^n}{h} \\to k \\cdot nx^{n-1}$$\nThe constant $k$ is a common factor of every term, so it is unaffected by the limit. For example, the derivative of $4x^3$ is $12x^2$.",
+  "linkedTopicIds": [
+   "pure-binomial-expansion"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q15",
+  "topicId": "calc-first-principles",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) For small $\\theta$ in radians, $\\sin\\theta \\approx \\theta$ and $\\cos\\theta \\approx 1 - \\dfrac{\\theta^2}{2}$. Use these approximations to explain why $\\dfrac{\\sin h}{h} \\to 1$ and $\\dfrac{\\cos h - 1}{h} \\to 0$ as $h \\to 0$.\n\n(b) Let $f(x) = \\sin x^\\circ$, the sine of $x$ **degrees**. Prove, from first principles, that\n$$f'(x) = \\frac{\\pi}{180}\\cos x^\\circ$$",
+  "hint": "For (b), expand $\\sin(x + h)^\\circ$ with the compound-angle formula. Then remember that $h^\\circ = \\frac{\\pi h}{180}$ radians: let $k = \\frac{\\pi h}{180}$ so that you can use the limits from (a).",
+  "answer": "(a) $\\frac{\\sin h}{h} \\approx \\frac{h}{h} = 1$ and $\\frac{\\cos h - 1}{h} \\approx -\\frac{h}{2} \\to 0$. (b) Proof: $f'(x) = \\frac{\\pi}{180}\\cos x^\\circ$.",
+  "solution": "(a) For small $h$ (radians):\n$$\\frac{\\sin h}{h} \\approx \\frac{h}{h} = 1$$\nand the approximation gets better as $h \\to 0$, so $\\frac{\\sin h}{h} \\to 1$.\n$$\\frac{\\cos h - 1}{h} \\approx \\frac{\\left(1 - \\frac{h^2}{2}\\right) - 1}{h} = -\\frac{h}{2} \\to 0$$\n\n(b) Using $\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B$:\n$$\\frac{f(x + h) - f(x)}{h} = \\frac{\\sin x^\\circ\\cos h^\\circ + \\cos x^\\circ\\sin h^\\circ - \\sin x^\\circ}{h} = \\sin x^\\circ\\left(\\frac{\\cos h^\\circ - 1}{h}\\right) + \\cos x^\\circ\\left(\\frac{\\sin h^\\circ}{h}\\right)$$\n\nThe limits in (a) are for angles in **radians**. An angle of $h^\\circ$ is $k = \\frac{\\pi h}{180}$ radians, so $h = \\frac{180k}{\\pi}$, and $k \\to 0$ as $h \\to 0$:\n$$\\frac{\\sin h^\\circ}{h} = \\frac{\\sin k}{\\frac{180k}{\\pi}} = \\frac{\\pi}{180}\\cdot\\frac{\\sin k}{k} \\to \\frac{\\pi}{180} \\times 1 = \\frac{\\pi}{180}$$\n$$\\frac{\\cos h^\\circ - 1}{h} = \\frac{\\pi}{180}\\cdot\\frac{\\cos k - 1}{k} \\to \\frac{\\pi}{180} \\times 0 = 0$$\n\nTherefore\n$$f'(x) = \\lim_{h \\to 0}\\left[\\sin x^\\circ\\left(\\frac{\\cos h^\\circ - 1}{h}\\right) + \\cos x^\\circ\\left(\\frac{\\sin h^\\circ}{h}\\right)\\right] = \\frac{\\pi}{180}\\cos x^\\circ$$\n\nThis is why calculus uses radians: only then is the derivative of $\\sin x$ exactly $\\cos x$, with no extra factor.",
+  "linkedTopicIds": [
+   "pure-radians-unit-circle",
+   "pure-trig-compound-angles"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q16",
+  "topicId": "calc-first-principles",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "The functions $f$ and $g$ are defined by\n$$f(x) = \\begin{cases} x^2\\sin\\left(\\frac{1}{x}\\right), & x \\ne 0 \\\\ 0, & x = 0 \\end{cases} \\qquad g(x) = \\begin{cases} x\\sin\\left(\\frac{1}{x}\\right), & x \\ne 0 \\\\ 0, & x = 0 \\end{cases}$$\n\n(a) Prove, from first principles, that $f$ is differentiable at $x = 0$, and find $f'(0)$.\n\n(b) Given that $g$ is continuous at $x = 0$, prove that $g$ is **not** differentiable at $x = 0$.",
+  "hint": "Write down $\\dfrac{f(0 + h) - f(0)}{h}$ and simplify. Then use $-1 \\le \\sin\\left(\\frac{1}{h}\\right) \\le 1$ and the squeeze theorem.",
+  "answer": "(a) $\\frac{f(h) - f(0)}{h} = h\\sin\\left(\\frac{1}{h}\\right) \\to 0$ by the squeeze theorem, so $f'(0) = 0$. (b) $\\frac{g(h) - g(0)}{h} = \\sin\\left(\\frac{1}{h}\\right)$, which has no limit as $h \\to 0$.",
+  "solution": "(a) $f(0) = 0$, so for $h \\ne 0$:\n$$\\frac{f(0 + h) - f(0)}{h} = \\frac{h^2\\sin\\left(\\frac{1}{h}\\right)}{h} = h\\sin\\left(\\frac{1}{h}\\right)$$\n\nSince $\\left|\\sin\\left(\\frac{1}{h}\\right)\\right| \\le 1$,\n$$-|h| \\le h\\sin\\left(\\frac{1}{h}\\right) \\le |h|$$\nand both bounds tend to 0 as $h \\to 0$. By the squeeze theorem\n$$f'(0) = \\lim_{h \\to 0} h\\sin\\left(\\frac{1}{h}\\right) = 0$$\nSo $f$ is differentiable at 0 with $f'(0) = 0$, even though $f$ oscillates infinitely often near 0.\n\n(b) $g(0) = 0$, so for $h \\ne 0$:\n$$\\frac{g(0 + h) - g(0)}{h} = \\frac{h\\sin\\left(\\frac{1}{h}\\right)}{h} = \\sin\\left(\\frac{1}{h}\\right)$$\n\nAs $h \\to 0$, $\\frac{1}{h}$ runs through every large value, so $\\sin\\left(\\frac{1}{h}\\right)$ keeps taking every value between $-1$ and $1$. For example, at $h = \\frac{1}{2n\\pi + \\frac{\\pi}{2}}$ it equals 1 and at $h = \\frac{1}{2n\\pi + \\frac{3\\pi}{2}}$ it equals $-1$, for every positive integer $n$, and these values of $h$ get arbitrarily close to 0. So the difference quotient does not approach any single number and $g$ is **not** differentiable at 0.\n\nSo $g$ is continuous but not differentiable at 0: the extra factor of $x$ in $f$ is what makes the difference.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-limits-infinity"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q17",
+  "topicId": "calc-first-principles",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A stone is dropped from the top of a cliff. After $t$ seconds it has fallen a distance $s = 4.9t^2$ metres.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the average speed of the stone between $t = 2$ and $t = 2 + h$ is $(19.6 + 4.9h)\\ \\text{m s}^{-1}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the speed of the stone at the instant $t = 2$."
+   }
+  ],
+  "hint": "Average speed $= \\dfrac{\\text{distance fallen}}{\\text{time taken}} = \\dfrac{s(2 + h) - s(2)}{h}$. This is the gradient of a chord of the distance–time graph.",
+  "answer": "(a) Shown (b) $19.6\\ \\text{m s}^{-1}$",
+  "solution": "(a) $s(2) = 4.9 \\times 4 = 19.6$ m.\n\n$s(2 + h) = 4.9(2 + h)^2 = 4.9(4 + 4h + h^2) = 19.6 + 19.6h + 4.9h^2$ m.\n\nAverage speed:\n$$\\frac{s(2 + h) - s(2)}{h} = \\frac{19.6h + 4.9h^2}{h} = 19.6 + 4.9h\\ \\text{m s}^{-1}$$\n\n(b) The instantaneous speed is the limit of the average speed as the time interval shrinks to zero – the gradient of the tangent to the distance–time graph at $t = 2$:\n$$\\lim_{h \\to 0}(19.6 + 4.9h) = 19.6\\ \\text{m s}^{-1}$$",
+  "linkedTopicIds": [
+   "alg-real-life-graphs"
+  ]
+ },
+ {
+  "id": "calc-first-principles-q18",
+  "topicId": "calc-first-principles",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A spherical balloon is being inflated. When its radius is $r$ cm its volume is $V = \\frac{4}{3}\\pi r^3\\ \\text{cm}^3$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove, from first principles, that $\\dfrac{dV}{dr} = 4\\pi r^2$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the value of $\\dfrac{dV}{dr}$ when $r = 10$ and interpret it in context."
+   },
+   {
+    "label": "c",
+    "prompt": "Use your answer to (b) to estimate the increase in volume when the radius increases from 10 cm to 10.1 cm. Compare it with the exact increase, giving both to 1 decimal place."
+   }
+  ],
+  "hint": "Expand $\\frac{4}{3}\\pi(r + h)^3$, subtract $\\frac{4}{3}\\pi r^3$, divide by $h$ and let $h \\to 0$.",
+  "answer": "(a) Proof (b) $400\\pi \\approx 1256.6\\ \\text{cm}^3$ per cm (c) Estimate $\\approx 125.7\\ \\text{cm}^3$; exact $\\approx 126.9\\ \\text{cm}^3$",
+  "solution": "(a)\n$$V(r + h) - V(r) = \\frac{4}{3}\\pi\\left[(r + h)^3 - r^3\\right] = \\frac{4}{3}\\pi\\left(3r^2h + 3rh^2 + h^3\\right)$$\n\n$$\\frac{V(r + h) - V(r)}{h} = \\frac{4}{3}\\pi\\left(3r^2 + 3rh + h^2\\right) \\quad (h \\ne 0)$$\n\n$$\\frac{dV}{dr} = \\lim_{h \\to 0}\\frac{4}{3}\\pi\\left(3r^2 + 3rh + h^2\\right) = \\frac{4}{3}\\pi \\times 3r^2 = 4\\pi r^2$$\n\n(Notice that this is the surface area of the sphere: a thin extra layer of thickness $h$ adds about (surface area) $\\times\\, h$ to the volume.)\n\n(b) At $r = 10$: $\\dfrac{dV}{dr} = 4\\pi \\times 100 = 400\\pi \\approx 1256.6$.\n\nWhen the radius is 10 cm, the volume is increasing at a rate of about $1256.6\\ \\text{cm}^3$ per centimetre increase in radius.\n\n(c) Estimate: $\\delta V \\approx \\dfrac{dV}{dr} \\times \\delta r = 400\\pi \\times 0.1 = 40\\pi \\approx 125.7\\ \\text{cm}^3$.\n\nExact: $\\frac{4}{3}\\pi\\left(10.1^3 - 10^3\\right) = \\frac{4}{3}\\pi \\times 30.301 \\approx 126.9\\ \\text{cm}^3$.\n\nThe estimate is close (about 1% too small) because $0.1$ is small, so the chord gradient is close to the tangent gradient.",
+  "linkedTopicIds": []
+ }
+]

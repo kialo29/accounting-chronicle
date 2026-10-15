@@ -1,0 +1,300 @@
+[
+ {
+  "id": "calc-trapezium-rule-q01",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the trapezium rule with 2 strips to estimate $\\displaystyle\\int_0^2 \\left(x^2 + 1\\right)dx$.",
+  "hint": "Strip width $h = \\frac{2 - 0}{2}$. You need the values of $y$ at $x = 0, 1, 2$.",
+  "answer": "$5$",
+  "solution": "$h = \\frac{2 - 0}{2} = 1$, so the ordinates are at $x = 0, 1, 2$:\n$$y_0 = 1, \\quad y_1 = 2, \\quad y_2 = 5$$\n\n$$\\int_0^2 \\left(x^2 + 1\\right)dx \\approx \\frac{1}{2}\\Big[y_0 + y_2 + 2y_1\\Big] = \\frac{1}{2}\\big[1 + 5 + 2(2)\\big] = 5$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q02",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Use the trapezium rule with 4 strips to estimate $\\displaystyle\\int_0^2 \\left(x^2 + 1\\right)dx$.",
+  "hint": "4 strips means $h = \\frac{2}{4}$, and there are 5 ordinates.",
+  "answer": "$4.75$",
+  "solution": "**What changed:** the number of strips doubled from 2 to 4, so $h$ halves.\n\n$h = \\frac{2 - 0}{4} = 0.5$ (divide by the number of **strips**, not the 5 ordinates). Ordinates at $x = 0, 0.5, 1, 1.5, 2$:\n$$y_0 = 1, \\quad y_1 = 1.25, \\quad y_2 = 2, \\quad y_3 = 3.25, \\quad y_4 = 5$$\n\n$$\\int_0^2 \\left(x^2 + 1\\right)dx \\approx \\frac{0.5}{2}\\Big[1 + 5 + 2(1.25 + 2 + 3.25)\\Big] = 0.25\\times 19 = 4.75$$\n\nThe exact value is $\\frac{8}{3} + 2 = \\frac{14}{3} \\approx 4.667$. The estimate improved from $5$ to $4.75$. Both are too big because $y = x^2 + 1$ is concave up.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q03",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the trapezium rule with 4 strips to estimate $\\displaystyle\\int_1^3 \\left(x^2 + 1\\right)dx$. Compare your answer with the exact value.",
+  "hint": "The interval still has length 2, so $h$ is the same as before; only the $x$-values change.",
+  "answer": "$10.75$; exact value $\\frac{32}{3} \\approx 10.67$",
+  "solution": "**What changed:** the interval moved from $[0, 2]$ to $[1, 3]$. Its length is still 2, so $h = 0.5$ again.\n\nOrdinates at $x = 1, 1.5, 2, 2.5, 3$:\n$$y_0 = 2, \\quad y_1 = 3.25, \\quad y_2 = 5, \\quad y_3 = 7.25, \\quad y_4 = 10$$\n\n$$\\int_1^3 \\left(x^2 + 1\\right)dx \\approx 0.25\\Big[2 + 10 + 2(3.25 + 5 + 7.25)\\Big] = 0.25\\times 43 = 10.75$$\n\nExact:\n$$\\left[\\frac{x^3}{3} + x\\right]_1^3 = (9 + 3) - \\left(\\frac{1}{3} + 1\\right) = \\frac{32}{3} \\approx 10.67$$\n\nThe error is $10.75 - \\frac{32}{3} = \\frac{1}{12}$, exactly the same as on $[0, 2]$ ($4.75 - \\frac{14}{3} = \\frac{1}{12}$). For a quadratic the error depends only on the strip width, the length of the interval and the coefficient of $x^2$, not on where the interval is.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q04",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Some values of a function $y = f(x)$ are given in the table.\n\n| $x$ | 0 | 1 | 2 |\n|---|---|---|---|\n| $y$ | 3 | 5 | 9 |\n\nUse the trapezium rule with all the values in the table to estimate $\\displaystyle\\int_0^2 f(x)\\,dx$.",
+  "hint": "There are 2 strips of width 1. You could find the area of each trapezium separately and add.",
+  "answer": "$11$",
+  "solution": "Two trapezia of width $h = 1$:\n$$\\frac{3 + 5}{2}\\times 1 = 4, \\qquad \\frac{5 + 9}{2}\\times 1 = 7$$\n\nTotal $\\approx 4 + 7 = 11$.\n\nUsing the formula gives the same thing: $\\frac{1}{2}\\big[3 + 9 + 2(5)\\big] = 11$. The middle value $5$ is doubled because it is a side of **both** trapezia.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q05",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The table shows some values of $y = \\ln\\left(1 + x^2\\right)$, given to 4 decimal places.\n\n| $x$ | 0 | 0.5 | 1 | 1.5 | 2 |\n|---|---|---|---|---|---|\n| $y$ | 0 | | 0.6931 | | 1.6094 |\n\n(a) Complete the table, giving values to 4 decimal places.\n(b) Use the trapezium rule with all the values in the table to estimate $\\displaystyle\\int_0^2 \\ln\\left(1 + x^2\\right)dx$, giving your answer to 3 decimal places.",
+  "hint": "Count the strips (not the ordinates) to find $h$. Make sure your calculator is in the right mode and use the natural logarithm.",
+  "answer": "(a) $0.2231$, $1.1787$ (b) $1.450$",
+  "solution": "**(a)** $x = 0.5$: $\\ln 1.25 = 0.2231$. $x = 1.5$: $\\ln 3.25 = 1.1787$.\n\n**(b)** 5 ordinates means 4 strips, so $h = 0.5$.\n$$\\int_0^2 \\ln\\left(1 + x^2\\right)dx \\approx \\frac{0.5}{2}\\Big[0 + 1.6094 + 2(0.2231 + 0.6931 + 1.1787)\\Big]$$\n$$= 0.25\\big[1.6094 + 4.1898\\big] = 0.25\\times 5.7992 = 1.4498 \\approx 1.450 \\text{ (3 d.p.)}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q06",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 220\" width=\"330\" height=\"220\"><path d=\"M30,190 L30,190 L92.8,90.4 L92.8,190 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M92.8,190 L92.8,90.4 L155.7,49.2 L155.7,190 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M155.7,190 L155.7,49.2 L218.5,90.4 L218.5,190 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M218.5,190 L218.5,90.4 L281.3,190 L281.3,190 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"30\" y1=\"190\" x2=\"316\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"190\" x2=\"30\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M316,190 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M30,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"316\" y=\"183\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"37\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"27\" y1=\"49.2\" x2=\"33\" y2=\"49.2\" stroke=\"currentColor\"/><text x=\"24\" y=\"53.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"24\" y=\"204\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"92.8\" y1=\"187\" x2=\"92.8\" y2=\"193\" stroke=\"currentColor\"/><text x=\"92.8\" y=\"207\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/4</text><line x1=\"155.7\" y1=\"187\" x2=\"155.7\" y2=\"193\" stroke=\"currentColor\"/><text x=\"155.7\" y=\"207\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π/2</text><line x1=\"218.5\" y1=\"187\" x2=\"218.5\" y2=\"193\" stroke=\"currentColor\"/><text x=\"218.5\" y=\"207\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3π/4</text><line x1=\"281.3\" y1=\"187\" x2=\"281.3\" y2=\"193\" stroke=\"currentColor\"/><text x=\"281.3\" y=\"207\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">π</text><path d=\"M30,190 L30.8,188.5 L31.7,187.1 L32.5,185.6 L33.4,184.1 L34.2,182.6 L35,181.2 L35.9,179.7 L36.7,178.2 L37.5,176.7 L38.4,175.3 L39.2,173.8 L40.1,172.4 L40.9,170.9 L41.7,169.4 L42.6,168 L43.4,166.5 L44.2,165.1 L45.1,163.6 L45.9,162.2 L46.8,160.7 L47.6,159.3 L48.4,157.8 L49.3,156.4 L50.1,155 L50.9,153.6 L51.8,152.1 L52.6,150.7 L53.5,149.3 L54.3,147.9 L55.1,146.5 L56,145.1 L56.8,143.7 L57.6,142.3 L58.5,140.9 L59.3,139.5 L60.2,138.2 L61,136.8 L61.8,135.4 L62.7,134.1 L63.5,132.7 L64.3,131.4 L65.2,130.1 L66,128.7 L66.9,127.4 L67.7,126.1 L68.5,124.8 L69.4,123.5 L70.2,122.2 L71.1,120.9 L71.9,119.6 L72.7,118.3 L73.6,117.1 L74.4,115.8 L75.2,114.6 L76.1,113.3 L76.9,112.1 L77.8,110.9 L78.6,109.6 L79.4,108.4 L80.3,107.2 L81.1,106.1 L81.9,104.9 L82.8,103.7 L83.6,102.5 L84.5,101.4 L85.3,100.3 L86.1,99.1 L87,98 L87.8,96.9 L88.6,95.8 L89.5,94.7 L90.3,93.6 L91.2,92.5 L92,91.5 L92.8,90.4 L93.7,89.4 L94.5,88.4 L95.3,87.4 L96.2,86.4 L97,85.4 L97.9,84.4 L98.7,83.4 L99.5,82.5 L100.4,81.5 L101.2,80.6 L102,79.7 L102.9,78.7 L103.7,77.8 L104.6,77 L105.4,76.1 L106.2,75.2 L107.1,74.4 L107.9,73.5 L108.7,72.7 L109.6,71.9 L110.4,71.1 L111.3,70.3 L112.1,69.6 L112.9,68.8 L113.8,68.1 L114.6,67.3 L115.5,66.6 L116.3,65.9 L117.1,65.2 L118,64.5 L118.8,63.9 L119.6,63.2 L120.5,62.6 L121.3,62 L122.2,61.4 L123,60.8 L123.8,60.2 L124.7,59.6 L125.5,59.1 L126.3,58.6 L127.2,58 L128,57.5 L128.9,57 L129.7,56.6 L130.5,56.1 L131.4,55.6 L132.2,55.2 L133,54.8 L133.9,54.4 L134.7,54 L135.6,53.6 L136.4,53.3 L137.2,52.9 L138.1,52.6 L138.9,52.3 L139.7,52 L140.6,51.7 L141.4,51.4 L142.3,51.2 L143.1,50.9 L143.9,50.7 L144.8,50.5 L145.6,50.3 L146.4,50.1 L147.3,50 L148.1,49.8 L149,49.7 L149.8,49.6 L150.6,49.5 L151.5,49.4 L152.3,49.3 L153.2,49.3 L154,49.2 L154.8,49.2 L155.7,49.2 L156.5,49.2 L157.3,49.2 L158.2,49.3 L159,49.3 L159.9,49.4 L160.7,49.5 L161.5,49.6 L162.4,49.7 L163.2,49.8 L164,50 L164.9,50.1 L165.7,50.3 L166.6,50.5 L167.4,50.7 L168.2,50.9 L169.1,51.2 L169.9,51.4 L170.7,51.7 L171.6,52 L172.4,52.3 L173.3,52.6 L174.1,52.9 L174.9,53.3 L175.8,53.6 L176.6,54 L177.4,54.4 L178.3,54.8 L179.1,55.2 L180,55.6 L180.8,56.1 L181.6,56.6 L182.5,57 L183.3,57.5 L184.1,58 L185,58.6 L185.8,59.1 L186.7,59.6 L187.5,60.2 L188.3,60.8 L189.2,61.4 L190,62 L190.8,62.6 L191.7,63.2 L192.5,63.9 L193.4,64.5 L194.2,65.2 L195,65.9 L195.9,66.6 L196.7,67.3 L197.6,68.1 L198.4,68.8 L199.2,69.6 L200.1,70.3 L200.9,71.1 L201.7,71.9 L202.6,72.7 L203.4,73.5 L204.3,74.4 L205.1,75.2 L205.9,76.1 L206.8,77 L207.6,77.8 L208.4,78.7 L209.3,79.7 L210.1,80.6 L211,81.5 L211.8,82.5 L212.6,83.4 L213.5,84.4 L214.3,85.4 L215.1,86.4 L216,87.4 L216.8,88.4 L217.7,89.4 L218.5,90.4 L219.3,91.5 L220.2,92.5 L221,93.6 L221.8,94.7 L222.7,95.8 L223.5,96.9 L224.4,98 L225.2,99.1 L226,100.3 L226.9,101.4 L227.7,102.5 L228.5,103.7 L229.4,104.9 L230.2,106.1 L231.1,107.2 L231.9,108.4 L232.7,109.6 L233.6,110.9 L234.4,112.1 L235.3,113.3 L236.1,114.6 L236.9,115.8 L237.8,117.1 L238.6,118.3 L239.4,119.6 L240.3,120.9 L241.1,122.2 L242,123.5 L242.8,124.8 L243.6,126.1 L244.5,127.4 L245.3,128.7 L246.1,130.1 L247,131.4 L247.8,132.7 L248.7,134.1 L249.5,135.4 L250.3,136.8 L251.2,138.2 L252,139.5 L252.8,140.9 L253.7,142.3 L254.5,143.7 L255.4,145.1 L256.2,146.5 L257,147.9 L257.9,149.3 L258.7,150.7 L259.5,152.1 L260.4,153.6 L261.2,155 L262.1,156.4 L262.9,157.8 L263.7,159.3 L264.6,160.7 L265.4,162.2 L266.2,163.6 L267.1,165.1 L267.9,166.5 L268.8,168 L269.6,169.4 L270.4,170.9 L271.3,172.4 L272.1,173.8 L272.9,175.3 L273.8,176.7 L274.6,178.2 L275.5,179.7 L276.3,181.2 L277.1,182.6 L278,184.1 L278.8,185.6 L279.7,187.1 L280.5,188.5 L281.3,190\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"234\" y=\"49.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = sin x</text></svg>",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The diagram shows the curve $y = \\sin x$ for $0 \\le x \\le \\pi$, with the 4 trapezia used by the trapezium rule with 4 strips.\n\n(a) Show that the trapezium rule with 4 strips gives $\\displaystyle\\int_0^{\\pi}\\sin x\\,dx \\approx \\frac{\\pi}{4}\\left(1 + \\sqrt{2}\\right)$.\n(b) Without evaluating the integral, explain whether this is an overestimate or an underestimate. Refer to the second derivative in your answer.\n(c) Find the exact value of the integral and the percentage error of the estimate.",
+  "hint": "$h = \\frac{\\pi}{4}$. For (b), find $\\frac{d^2y}{dx^2}$ and decide whether the chords lie above or below the curve.",
+  "answer": "(a) Shown (b) Underestimate: $\\frac{d^2y}{dx^2} = -\\sin x \\le 0$, so the curve is concave down and each chord lies below it. (c) $2$; about $5.2\\%$ too small",
+  "solution": "**(a)** $h = \\frac{\\pi}{4}$; ordinates $\\sin 0 = 0$, $\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}$, $\\sin\\frac{\\pi}{2} = 1$, $\\sin\\frac{3\\pi}{4} = \\frac{\\sqrt{2}}{2}$, $\\sin\\pi = 0$.\n$$\\frac{\\pi}{8}\\left[0 + 0 + 2\\left(\\frac{\\sqrt{2}}{2} + 1 + \\frac{\\sqrt{2}}{2}\\right)\\right] = \\frac{\\pi}{8}\\cdot 2\\left(1 + \\sqrt{2}\\right) = \\frac{\\pi}{4}\\left(1 + \\sqrt{2}\\right) \\approx 1.896$$\n\n**(b)** $\\frac{dy}{dx} = \\cos x$ and $\\frac{d^2y}{dx^2} = -\\sin x$, which is $\\le 0$ on $[0, \\pi]$ (negative inside the interval). So the curve is concave down: it bulges **above** each chord. The top edge of each trapezium is a chord, so each trapezium misses a sliver of area under the arc (visible in the diagram). The rule therefore gives an **underestimate**.\n\n**(c)** $\\int_0^{\\pi}\\sin x\\,dx = \\Big[-\\cos x\\Big]_0^{\\pi} = 1 + 1 = 2$.\n\nPercentage error: $\\frac{2 - 1.8961}{2}\\times 100 \\approx 5.2\\%$ (too small, as predicted).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q07",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Oliver uses the trapezium rule with 4 strips to estimate $\\displaystyle\\int_0^2 \\frac{1}{1 + x^2}\\,dx$. The first line of his working is shown below.\n\n\"With 4 strips there are 5 values of $y$, so $h = \\frac{2}{5} = 0.4$ and I use $x = 0, 0.4, 0.8, 1.2, 1.6$.\"\n\n(a) Explain Oliver's mistake.\n(b) Carry out the calculation correctly, giving your answer to 3 decimal places.",
+  "hint": "Where does Oliver's last $x$-value end up compared with the upper limit 2?",
+  "answer": "(a) $h$ is the interval length divided by the number of strips: $h = \\frac{2}{4} = 0.5$. His values stop at $1.6$, not at $2$. (b) $1.104$",
+  "solution": "**(a)** $h = \\frac{b - a}{n}$ where $n$ is the number of **strips** (trapezia), not the number of ordinates. There is always one more ordinate than strips. With $h = 0.4$ and 4 strips Oliver only covers $[0, 1.6]$; his $x$-values never reach $x = 2$.\n\n**(b)** $h = \\frac{2}{4} = 0.5$; ordinates at $x = 0, 0.5, 1, 1.5, 2$:\n$$y = 1, \\quad 0.8, \\quad 0.5, \\quad \\frac{1}{3.25} = 0.307\\,69, \\quad 0.2$$\n\n$$\\int_0^2 \\frac{1}{1 + x^2}\\,dx \\approx \\frac{0.5}{2}\\Big[1 + 0.2 + 2(0.8 + 0.5 + 0.307\\,69)\\Big] = 0.25\\times 4.415\\,38 = 1.104 \\text{ (3 d.p.)}$$\n\n(The exact value is $\\arctan 2 \\approx 1.107$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q08",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Ruth uses the trapezium rule with 4 strips to estimate $\\displaystyle\\int_1^3 \\ln x\\,dx$. Her working is shown below.\n\n$h = \\frac{3 - 1}{4} = 0.5$\n\n$y$-values: $0$, $0.4055$, $0.6931$, $0.9163$, $1.0986$\n\nEstimate $= \\frac{0.5}{2}\\left[0 + 0.4055 + 0.6931 + 0.9163 + 1.0986\\right] = 0.25\\times 3.1135 = 0.778$\n\nThe exact value is $3\\ln 3 - 2 \\approx 1.296$.\n\n(a) Identify Ruth's error and explain why it is wrong.\n(b) Find the correct estimate to 3 decimal places.\n(c) Explain why even the correct estimate is less than the exact value.",
+  "hint": "How many trapezia is each middle ordinate a side of?",
+  "answer": "(a) She did not double the three middle ordinates. (b) $1.282$ (c) $\\ln x$ is concave down ($\\frac{d^2y}{dx^2} = -\\frac{1}{x^2} < 0$), so the trapezium rule underestimates.",
+  "solution": "**(a)** Ruth's $h$ and $y$-values are correct. The error is in the bracket: the interior ordinates $0.4055$, $0.6931$, $0.9163$ should each be **doubled**. Each one is the right side of one trapezium and the left side of the next, so it appears in two trapezium areas. Her answer ($0.778$) is far too small, which is a warning sign: it is not even close to $1.296$.\n\n**(b)**\n$$\\frac{0.5}{2}\\Big[0 + 1.0986 + 2(0.4055 + 0.6931 + 0.9163)\\Big] = 0.25\\big[1.0986 + 4.0298\\big] = 0.25\\times 5.1284 = 1.282 \\text{ (3 d.p.)}$$\n\n**(c)** $\\frac{d}{dx}\\ln x = \\frac{1}{x}$ and $\\frac{d^2}{dx^2}\\ln x = -\\frac{1}{x^2} < 0$, so the curve is concave down. Each chord lies below the curve, so the trapezia leave out some area: an underestimate ($1.282 < 1.296$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q09",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Kofi uses the trapezium rule with 2 strips to estimate $\\displaystyle\\int_0^1 e^x\\,dx$. His working is shown below.\n\n$h = 0.5$, so estimate $= \\frac{0.5}{2}\\left[e^0 + e^1 + 2e^{0.5}\\right] = 1.7539$ (4 d.p.)\n\n\"The graph of $y = e^x$ bends upwards (it is concave up), so the trapezia sit underneath the curve. So $1.7539$ is an underestimate.\"\n\n(a) Kofi's calculation is correct. Explain the error in his conclusion.\n(b) Find the exact value of the integral and use it to confirm your answer to (a).",
+  "hint": "Sketch a curve that bends upwards and draw a chord between two points on it. Is the chord above or below the curve?",
+  "answer": "(a) For a concave up curve the chords lie **above** the curve, so the trapezium rule overestimates. (b) $e - 1 \\approx 1.7183 < 1.7539$, so the estimate is too large.",
+  "solution": "**(a)** $\\frac{d^2}{dx^2}e^x = e^x > 0$, so the curve is concave up, as Kofi says. But a curve that bends upwards **sags below** every chord joining two of its points. The top edge of each trapezium is such a chord, so each trapezium contains the area under the curve plus an extra sliver. The trapezium rule therefore gives an **overestimate**. Kofi has the rule the wrong way round.\n\n**(b)**\n$$\\int_0^1 e^x\\,dx = \\Big[e^x\\Big]_0^1 = e - 1 \\approx 1.7183$$\n\n$1.7539 > 1.7183$, confirming the estimate is too large (by about $0.036$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q10",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 210\" width=\"340\" height=\"210\"><line x1=\"9.2\" y1=\"40\" x2=\"331.8\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M20,40 L63,96 L127.5,144 L213.5,164 L278,112 L321,40 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M20,40 L63,96 L127.5,144 L213.5,164 L278,112 L321,40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"20\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"63\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"63\" y1=\"40\" x2=\"63\" y2=\"96\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"67\" y=\"73\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">1.4</text><text x=\"127.5\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"127.5\" y1=\"40\" x2=\"127.5\" y2=\"144\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"131.5\" y=\"97\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2.6</text><text x=\"213.5\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><line x1=\"213.5\" y1=\"40\" x2=\"213.5\" y2=\"164\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"217.5\" y=\"107\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">3.1</text><text x=\"278\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"278\" y1=\"40\" x2=\"278\" y2=\"112\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"282\" y=\"81\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">1.8</text><text x=\"321\" y=\"32\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">14</text><text x=\"170.5\" y=\"14\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">distance from bank (m)</text><text x=\"170.5\" y=\"200\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">depths in metres (not to scale)</text></svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "An environmental scientist measures the depth of a river at several points across it, as shown in the table and in the diagram of the cross-section (not to scale).\n\n| Distance from bank (m) | 0 | 2 | 5 | 9 | 12 | 14 |\n|---|---|---|---|---|---|---|\n| Depth (m) | 0 | 1.4 | 2.6 | 3.1 | 1.8 | 0 |\n\n(a) Use the trapezium rule with the intervals in the table to estimate the cross-sectional area of the river.\n(b) The water flows through this cross-section at an average speed of 0.8 m/s. Estimate the volume of water passing per second, and per hour.",
+  "hint": "The gaps between the measurements are 2, 3, 4, 3 and 2 m, so you cannot use a single strip width. Find each trapezium separately.",
+  "answer": "(a) $27.95\\ \\text{m}^2$ (about $28\\ \\text{m}^2$) (b) about $22.4\\ \\text{m}^3$ per second; about $80\\,500\\ \\text{m}^3$ per hour",
+  "solution": "**(a)** The intervals are unequal (widths $2, 3, 4, 3, 2$ m), so the equal-strip formula cannot be used. Add the trapezia one at a time, $\\frac{1}{2}(\\text{depth}_1 + \\text{depth}_2)\\times\\text{width}$:\n$$\\frac{0 + 1.4}{2}(2) = 1.4, \\quad \\frac{1.4 + 2.6}{2}(3) = 6.0, \\quad \\frac{2.6 + 3.1}{2}(4) = 11.4,$$\n$$\\frac{3.1 + 1.8}{2}(3) = 7.35, \\quad \\frac{1.8 + 0}{2}(2) = 1.8$$\n\nArea $\\approx 1.4 + 6.0 + 11.4 + 7.35 + 1.8 = 27.95\\ \\text{m}^2$.\n\n**(b)** Each second, a \"slab\" of water $0.8$ m long passes:\n$$27.95\\times 0.8 = 22.36 \\approx 22.4\\ \\text{m}^3 \\text{ per second}$$\n\nPer hour: $22.36\\times 3600 = 80\\,496 \\approx 80\\,500\\ \\text{m}^3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q11",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A garden pond is 24 m long. Its width is measured every 4 m along its length:\n\n| Distance along pond (m) | 0 | 4 | 8 | 12 | 16 | 20 | 24 |\n|---|---|---|---|---|---|---|---|\n| Width (m) | 0 | 5.2 | 7.8 | 8.6 | 7.4 | 4.9 | 0 |\n\n(a) Use the trapezium rule to estimate the surface area of the pond.\n(b) The pond has an average depth of 1.2 m. Estimate the volume of water in the pond, in litres. ($1\\ \\text{m}^3 = 1000$ litres.)",
+  "hint": "There are 6 strips, each 4 m wide. The end widths are both 0.",
+  "answer": "(a) $135.6\\ \\text{m}^2$ (b) about $163\\,000$ litres",
+  "solution": "**(a)** $h = 4$ m, ends $y_0 = y_6 = 0$, and the middle ordinates sum to\n$$5.2 + 7.8 + 8.6 + 7.4 + 4.9 = 33.9$$\n\n$$\\text{Area} \\approx \\frac{4}{2}\\Big[0 + 0 + 2(33.9)\\Big] = 2\\times 67.8 = 135.6\\ \\text{m}^2$$\n\n**(b)** Volume $\\approx 135.6\\times 1.2 = 162.72\\ \\text{m}^3 = 162\\,720$ litres, so about $163\\,000$ litres.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q12",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "exam-style",
+  "linkedTopicIds": [
+   "calc-definite-integrals-area",
+   "calc-ftc-accumulation"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m3"
+  ],
+  "question": "Rainwater flows into a storage tank at a rate modelled by $R(t)$ litres per hour, where $t$ is measured in hours and $0 \\le t \\le 10$. $R$ is a twice-differentiable function. Selected values of $R(t)$ are shown in the table.\n\n| $t$ (hours) | 0 | 2 | 3 | 7 | 10 |\n|---|---|---|---|---|---|\n| $R(t)$ (litres per hour) | 120 | 150 | 168 | 140 | 96 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use a trapezoidal sum with the four subintervals indicated by the table to approximate $\\displaystyle\\int_0^{10} R(t)\\,dt$. Show the work that leads to your answer and indicate units of measure.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Use your answer to part (a) to approximate the average rate at which rainwater flows into the tank over $0 \\le t \\le 10$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "It is known that $R''(t) < 0$ for $0 < t < 10$. Is your approximation in part (a) an overestimate or an underestimate? Give a reason for your answer.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "At time $t = 0$ the tank contains 500 litres of water. Using your answer to part (a), approximate the amount of water in the tank at $t = 10$.",
+    "marks": 1
+   }
+  ],
+  "marks": 5,
+  "calculator": true,
+  "hint": "The subintervals have widths 2, 1, 4 and 3 hours, so each trapezium needs its own width.",
+  "answer": "(a) $1399$ litres (b) $139.9$ litres per hour (c) Underestimate, since $R$ is concave down (d) $1899$ litres",
+  "solution": "**(a)** The widths are $2, 1, 4, 3$ hours (unequal), so add trapezia separately:\n$$\\int_0^{10} R(t)\\,dt \\approx 2\\cdot\\frac{120 + 150}{2} + 1\\cdot\\frac{150 + 168}{2} + 4\\cdot\\frac{168 + 140}{2} + 3\\cdot\\frac{140 + 96}{2}$$ **1 pt** (trapezoidal sum)\n$$= 270 + 159 + 616 + 354 = 1399 \\text{ litres}$$ **1 pt** (answer with units)\n\n(Using a single width, e.g. $\\frac{10}{4} = 2.5$, would be wrong here because the intervals are unequal.)\n\n**(b)** Average rate $= \\frac{1}{10 - 0}\\int_0^{10} R(t)\\,dt \\approx \\frac{1399}{10} = 139.9$ litres per hour. **1 pt**\n\n**(c)** $R''(t) < 0$, so the graph of $R$ is concave down. The graph lies above each chord, so each trapezium lies below the graph: the approximation is an **underestimate**. **1 pt** (answer with reason)\n\n**(d)** Amount $= 500 + \\int_0^{10} R(t)\\,dt \\approx 500 + 1399 = 1899$ litres. **1 pt**"
+ },
+ {
+  "id": "calc-trapezium-rule-q13",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 4,
+  "type": "exam-style",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The table shows corresponding values of $x$ and $y$ for $y = \\sqrt{4 + x^2}$, with values of $y$ given to 4 decimal places where appropriate.\n\n| $x$ | 0 | 0.5 | 1 | 1.5 | 2 |\n|---|---|---|---|---|---|\n| $y$ | 2 | | 2.2361 | | 2.8284 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Complete the table, giving values of $y$ to 4 decimal places.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Use the trapezium rule, with all the values of $y$ in the completed table, to find an estimate for $\\displaystyle\\int_0^2 \\sqrt{4 + x^2}\\,dx$, giving your answer to 3 decimal places.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Using your answer to part (b), find an estimate for $\\displaystyle\\int_0^2 \\left(3 + 2\\sqrt{4 + x^2}\\right)dx$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Show that $\\dfrac{d^2y}{dx^2} = \\dfrac{4}{\\left(4 + x^2\\right)^{\\frac{3}{2}}}$. Hence state, with a reason, whether your answer to part (b) is an overestimate or an underestimate.",
+    "marks": 3
+   }
+  ],
+  "marks": 9,
+  "calculator": true,
+  "hint": "In (c), the trapezium rule is linear: integrate the constant 3 exactly and double your estimate from (b). In (d), differentiate $\\left(4 + x^2\\right)^{\\frac{1}{2}}$ with the chain rule, then use the quotient (or product) rule.",
+  "answer": "(a) $2.0616$, $2.5000$ (b) $4.606$ (c) $15.212$ (d) Shown; $\\frac{d^2y}{dx^2} > 0$ so the curve is concave up and the estimate is an overestimate.",
+  "solution": "**(a)** $x = 0.5$: $\\sqrt{4.25} = 2.0616$; $x = 1.5$: $\\sqrt{6.25} = 2.5000$. **B1**\n\n**(b)** $h = 0.5$ **B1**\n$$\\int_0^2 \\sqrt{4 + x^2}\\,dx \\approx \\frac{0.5}{2}\\Big[2 + 2.8284 + 2(2.0616 + 2.2361 + 2.5000)\\Big]$$ **M1** (correct structure of bracket)\n$$= 0.25\\times 18.4238 = 4.606 \\text{ (3 d.p.)}$$ **A1**\n\n**(c)**\n$$\\int_0^2 \\left(3 + 2\\sqrt{4 + x^2}\\right)dx = \\int_0^2 3\\,dx + 2\\int_0^2 \\sqrt{4 + x^2}\\,dx \\approx 6 + 2(4.606)$$ **M1**\n$$= 15.212$$ **A1 ft**\n\n**(d)** $y = \\left(4 + x^2\\right)^{\\frac{1}{2}}$, so by the chain rule\n$$\\frac{dy}{dx} = \\frac{1}{2}\\left(4 + x^2\\right)^{-\\frac{1}{2}}(2x) = \\frac{x}{\\sqrt{4 + x^2}}$$ **M1**\n\nQuotient rule:\n$$\\frac{d^2y}{dx^2} = \\frac{\\sqrt{4 + x^2} - x\\cdot\\frac{x}{\\sqrt{4 + x^2}}}{4 + x^2} = \\frac{\\left(4 + x^2\\right) - x^2}{\\left(4 + x^2\\right)^{\\frac{3}{2}}} = \\frac{4}{\\left(4 + x^2\\right)^{\\frac{3}{2}}}$$ **A1** (cso)\n\nThis is positive for all $x$, so the curve is concave up (convex) on $[0, 2]$; the chords lie above the curve and the trapezium rule gives an **overestimate**. **B1**\n\n(For interest, the exact value is $2\\sqrt{2} + 2\\ln\\left(1 + \\sqrt{2}\\right) \\approx 4.591$.)"
+ },
+ {
+  "id": "calc-trapezium-rule-q14",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "For a certain function $f$, the trapezium rule with 2 strips gives\n$$\\int_0^4 f(x)\\,dx \\approx 18$$\nIt is also known that $f(1) = 2.5$ and $f(3) = 4.5$.\n\n(a) Without knowing $f(0)$, $f(2)$ or $f(4)$, find the estimate given by the trapezium rule with 4 strips.\n(b) Given also that $f''(x) > 0$ for $0 < x < 4$, what can you deduce about $\\displaystyle\\int_0^4 f(x)\\,dx$? Explain your reasoning.",
+  "hint": "Write both estimates in terms of $f(0), f(1), \\dots, f(4)$. Can you find the 4-strip estimate as half the 2-strip estimate plus something?",
+  "answer": "(a) $16$ (b) $\\int_0^4 f(x)\\,dx < 16$ (both estimates are overestimates, and $16$ is the better one).",
+  "solution": "**(a)** 2 strips: $h = 2$, so\n$$T_2 = \\frac{2}{2}\\Big[f(0) + f(4) + 2f(2)\\Big] = f(0) + f(4) + 2f(2) = 18$$\n\n4 strips: $h = 1$, so\n$$T_4 = \\frac{1}{2}\\Big[f(0) + f(4) + 2f(1) + 2f(2) + 2f(3)\\Big]$$\n$$= \\frac{1}{2}\\Big[f(0) + f(4) + 2f(2)\\Big] + f(1) + f(3)$$\n$$= \\frac{1}{2}(18) + 2.5 + 4.5 = 16$$\n\n(Halving the strip width keeps the old ordinates, with half the weight, and adds the new midpoints.)\n\n**(b)** $f'' > 0$ means $f$ is concave up, so every chord lies above the curve and each trapezium rule estimate is an **overestimate**. Hence\n$$\\int_0^4 f(x)\\,dx < 16$$\n\n(and also $< 18$, but $16$ is the tighter bound).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-trapezium-rule-q15",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "calc-riemann-sums"
+  ],
+  "question": "Let $f(x) = \\frac{1}{x}$ on $[1, 2]$, so that $\\displaystyle\\int_1^2 \\frac{1}{x}\\,dx = \\ln 2$.\n\n(a) Explain why, for a curve that is concave up, the trapezium rule gives an overestimate and the midpoint rule gives an underestimate. (For the midpoint rule, consider the tangent at the midpoint of each strip.)\n(b) Using 2 strips for each rule, prove that\n$$\\frac{24}{35} < \\ln 2 < \\frac{17}{24}$$",
+  "hint": "A midpoint rectangle has the same area as the trapezium whose top is the tangent at the midpoint (the tangent tilts about the midpoint, adding as much area on one side as it removes on the other).",
+  "answer": "(a) Chords of a concave up curve lie above it; tangents lie below it, and each midpoint rectangle has the same area as a tangent trapezium. (b) $M_2 = \\frac{24}{35}$, $T_2 = \\frac{17}{24}$, and $f''(x) = \\frac{2}{x^3} > 0$, so $M_2 < \\ln 2 < T_2$.",
+  "solution": "**(a)** On a concave up curve, the chord joining the ends of a strip lies **above** the curve, so each trapezium contains the area under the curve on that strip plus a bit more: overestimate.\n\nFor the midpoint rule, draw the tangent at the midpoint of a strip. The trapezium under this tangent has the same area as the midpoint rectangle, because the tangent passes through the top centre of the rectangle and the triangle it adds on one side matches the triangle it removes on the other. A concave up curve lies **above** its tangents, so this trapezium (and hence the rectangle) lies under the curve: underestimate.\n\n**(b)** $f'(x) = -\\frac{1}{x^2}$ and $f''(x) = \\frac{2}{x^3} > 0$ on $[1, 2]$, so $f$ is concave up and part (a) applies.\n\nTrapezium rule, $h = 0.5$, ordinates at $1, 1.5, 2$:\n$$T_2 = \\frac{0.5}{2}\\left[1 + \\frac{1}{2} + 2\\times\\frac{2}{3}\\right] = \\frac{1}{4}\\cdot\\frac{17}{6} = \\frac{17}{24}$$\n\nMidpoint rule, midpoints $1.25$ and $1.75$:\n$$M_2 = 0.5\\left(\\frac{1}{1.25} + \\frac{1}{1.75}\\right) = 0.5\\left(\\frac{4}{5} + \\frac{4}{7}\\right) = 0.5\\times\\frac{48}{35} = \\frac{24}{35}$$\n\nHence\n$$\\frac{24}{35} < \\ln 2 < \\frac{17}{24}$$\n\n(Check: $0.6857 < 0.6931 < 0.7083$.)"
+ },
+ {
+  "id": "calc-trapezium-rule-q16",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-inverse-function-derivatives",
+   "calc-concavity-inflection"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Let $f(x) = \\dfrac{4}{1 + x^2}$.\n\n(a) Show that $\\displaystyle\\int_0^1 f(x)\\,dx = \\pi$.\n(b) Use the trapezium rule with 4 strips to estimate $\\displaystyle\\int_0^1 f(x)\\,dx$, giving your answer to 4 decimal places, and find the percentage error in this estimate of $\\pi$.\n(c) Show that $f''(x) = \\dfrac{8\\left(3x^2 - 1\\right)}{\\left(1 + x^2\\right)^3}$.\n(d) Explain why the sign of $f''$ alone cannot be used to predict whether the estimate in (b) is too large or too small.",
+  "hint": "(a) $\\frac{d}{dx}\\arctan x = \\frac{1}{1 + x^2}$. (c) Write $f(x) = 4\\left(1 + x^2\\right)^{-1}$; differentiate twice using the chain and quotient rules. (d) Where does $f''$ change sign?",
+  "answer": "(a) Shown (b) $3.1312$; about $0.33\\%$ too small (c) Shown (d) $f''$ changes sign at $x = \\frac{1}{\\sqrt{3}} \\approx 0.577$, inside $[0, 1]$: the curve is concave down on part of the interval (underestimates there) and concave up on the rest (overestimates there), so the errors partly cancel.",
+  "solution": "**(a)**\n$$\\int_0^1 \\frac{4}{1 + x^2}\\,dx = 4\\Big[\\arctan x\\Big]_0^1 = 4\\left(\\frac{\\pi}{4} - 0\\right) = \\pi$$\n\n**(b)** $h = 0.25$; ordinates at $x = 0, 0.25, 0.5, 0.75, 1$:\n$$4, \\quad \\frac{64}{17} = 3.764\\,71, \\quad 3.2, \\quad 2.56, \\quad 2$$\n\n$$T_4 = \\frac{0.25}{2}\\Big[4 + 2 + 2(3.764\\,71 + 3.2 + 2.56)\\Big] = 0.125\\times 25.049\\,41 = 3.1312 \\text{ (4 d.p.)}$$\n\nPercentage error: $\\frac{\\pi - 3.131\\,18}{\\pi}\\times 100 \\approx 0.33\\%$ (too small).\n\n**(c)** $f(x) = 4\\left(1 + x^2\\right)^{-1}$, so $f'(x) = -4\\left(1 + x^2\\right)^{-2}(2x) = \\frac{-8x}{\\left(1 + x^2\\right)^2}$.\n\nQuotient rule:\n$$f''(x) = \\frac{-8\\left(1 + x^2\\right)^2 + 8x\\cdot 2\\left(1 + x^2\\right)(2x)}{\\left(1 + x^2\\right)^4} = \\frac{-8\\left(1 + x^2\\right) + 32x^2}{\\left(1 + x^2\\right)^3} = \\frac{8\\left(3x^2 - 1\\right)}{\\left(1 + x^2\\right)^3}$$\n\n**(d)** $f''(x) = 0$ when $x = \\frac{1}{\\sqrt{3}} \\approx 0.577$, which lies inside $[0, 1]$; this is a point of inflection.\n\nFor $0 \\le x < \\frac{1}{\\sqrt{3}}$, $f'' < 0$: concave down, so the trapezia there underestimate. For $\\frac{1}{\\sqrt{3}} < x \\le 1$, $f'' > 0$: concave up, so the trapezia there overestimate. The overall error is the sum of errors of opposite signs, so the concavity test gives no conclusion. Only the comparison with $\\pi$ shows that here the underestimate wins."
+ },
+ {
+  "id": "calc-trapezium-rule-q17",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "Let $a > 0$, and let $T_n$ be the trapezium rule estimate of $\\displaystyle\\int_0^a x^2\\,dx$ using $n$ strips.\n\n(a) Show that\n$$T_n = \\frac{a^3}{3} + \\frac{a^3}{6n^2}$$\nYou may use $\\displaystyle\\sum_{i=1}^{m} i^2 = \\frac{1}{6}m(m + 1)(2m + 1)$.\n(b) Explain how the sign of the error term is consistent with the shape of the curve.\n(c) For $a = 3$, find the smallest number of strips for which the error is less than $0.001$.\n(d) What happens to the error when the number of strips is doubled?",
+  "hint": "$h = \\frac{a}{n}$ and the ordinates are $(ih)^2$ for $i = 0, 1, \\dots, n$. The interior ordinates run from $i = 1$ to $i = n - 1$.",
+  "answer": "(a) Shown (b) The error $\\frac{a^3}{6n^2} > 0$: an overestimate, as expected since $y = x^2$ is concave up. (c) $n = 68$ (d) It is divided by 4.",
+  "solution": "**(a)** $h = \\frac{a}{n}$, ordinates $y_i = (ih)^2$. The ends are $y_0 = 0$ and $y_n = a^2$; the interior ordinates are $i = 1, \\dots, n - 1$, each doubled:\n$$T_n = \\frac{h}{2}\\left[0 + a^2 + 2\\sum_{i=1}^{n-1}(ih)^2\\right] = \\frac{ha^2}{2} + h^3\\sum_{i=1}^{n-1} i^2$$\n\nUsing the formula with $m = n - 1$:\n$$\\sum_{i=1}^{n-1} i^2 = \\frac{1}{6}(n - 1)n(2n - 1)$$\n\nso, with $h = \\frac{a}{n}$,\n$$T_n = \\frac{a^3}{2n} + \\frac{a^3}{n^3}\\cdot\\frac{(n - 1)n(2n - 1)}{6} = \\frac{a^3}{6n^2}\\Big[3n + (n - 1)(2n - 1)\\Big] = \\frac{a^3}{6n^2}\\left(2n^2 + 1\\right)$$\n$$= \\frac{a^3}{3} + \\frac{a^3}{6n^2}$$\n\n**(b)** The exact value is $\\int_0^a x^2\\,dx = \\frac{a^3}{3}$, so the error is $T_n - \\frac{a^3}{3} = \\frac{a^3}{6n^2} > 0$: always an overestimate. This matches the shape: $\\frac{d^2}{dx^2}\\left(x^2\\right) = 2 > 0$, so the curve is concave up and every chord lies above it.\n\n**(c)** With $a = 3$: $\\frac{27}{6n^2} < 0.001 \\iff n^2 > 4500 \\iff n > 67.08\\ldots$, so the smallest number of strips is $68$.\n\n**(d)** The error is proportional to $\\frac{1}{n^2}$; doubling $n$ divides it by $2^2 = 4$."
+ },
+ {
+  "id": "calc-trapezium-rule-q18",
+  "topicId": "calc-trapezium-rule",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Values of a function $f$ are given in the table, where $k$ is a constant.\n\n| $x$ | 0 | 2 | 4 | 6 |\n|---|---|---|---|---|\n| $f(x)$ | 4 | $k$ | $2k$ | 10 |\n\nThe trapezium rule with all the values in the table gives $\\displaystyle\\int_0^6 f(x)\\,dx \\approx 50$.\n\n(a) Find $k$.\n(b) Hence, without carrying out the trapezium rule again, estimate\n(i) $\\displaystyle\\int_0^6 \\big(f(x) + 3\\big)\\,dx$\n(ii) $\\displaystyle\\int_0^6 \\big(2f(x) - x\\big)\\,dx$",
+  "hint": "(a) $h = 2$. (b) The integral of a sum is the sum of the integrals; integrate $3$ and $x$ exactly.",
+  "answer": "(a) $k = 6$ (b)(i) $68$ (ii) $82$",
+  "solution": "**(a)** 3 strips, $h = 2$:\n$$\\frac{2}{2}\\Big[4 + 10 + 2(k + 2k)\\Big] = 14 + 6k = 50 \\implies k = 6$$\n\n**(b)(i)**\n$$\\int_0^6 \\big(f(x) + 3\\big)\\,dx = \\int_0^6 f(x)\\,dx + \\int_0^6 3\\,dx \\approx 50 + 18 = 68$$\n\n**(ii)**\n$$\\int_0^6 \\big(2f(x) - x\\big)\\,dx = 2\\int_0^6 f(x)\\,dx - \\left[\\frac{x^2}{2}\\right]_0^6 \\approx 2(50) - 18 = 82$$\n\n(Applying the trapezium rule directly to $f(x) + 3$ or $2f(x) - x$ gives the same answers, because the rule is exact for straight lines and treats sums and multiples the same way the integral does.)",
+  "linkedTopicIds": []
+ }
+]
