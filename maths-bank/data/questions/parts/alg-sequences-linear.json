@@ -1,0 +1,334 @@
+[
+ {
+  "id": "alg-sequences-linear-q01",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For each sequence, write down the term-to-term rule and the next two terms.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$3, 7, 11, 15, \\ldots$"
+   },
+   {
+    "label": "b",
+    "prompt": "$40, 34, 28, 22, \\ldots$"
+   },
+   {
+    "label": "c",
+    "prompt": "A different sequence starts at 2. Its term-to-term rule is \"multiply by 3, then subtract 1\". Write down the first four terms."
+   }
+  ],
+  "hint": "Find what you do to each term to get the next one. Check that the same rule works all the way along.",
+  "answer": "(a) Add 4; 19, 23 (b) Subtract 6; 16, 10 (c) 2, 5, 14, 41",
+  "solution": "(a) $7 - 3 = 4$, $11 - 7 = 4$, $15 - 11 = 4$. Rule: **add 4**. Next terms: $15 + 4 = 19$, $19 + 4 = 23$.\n\n(b) $34 - 40 = -6$ each time. Rule: **subtract 6**. Next terms: $22 - 6 = 16$, $16 - 6 = 10$.\n\n(c) $2 \\times 3 - 1 = 5$, then $5 \\times 3 - 1 = 14$, then $14 \\times 3 - 1 = 41$.\n\nFirst four terms: 2, 5, 14, 41. (This one is not arithmetic: the differences $3, 9, 27$ are not constant.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q02",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the sequence $5, 8, 11, 14, \\ldots$",
+  "hint": "The common difference tells you the number in front of $n$. Then work out the zeroth term (the term before the first).",
+  "answer": "$3n + 2$",
+  "solution": "Common difference: $d = 3$, so the $n$th term starts $3n$.\n\nZeroth term: $5 - 3 = 2$.\n\n$$n\\text{th term} = 3n + 2$$\n\nCheck: $n = 1$ gives $3 + 2 = 5$ ✓, $n = 4$ gives $12 + 2 = 14$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q03",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the sequence $8, 11, 14, 17, \\ldots$",
+  "hint": "Compare with $5, 8, 11, 14, \\ldots$ What has stayed the same, and what has changed?",
+  "answer": "$3n + 5$",
+  "solution": "**What changed:** compared with $5, 8, 11, 14, \\ldots$ (nth term $3n + 2$), every term is 3 bigger. The difference is unchanged, so only the constant changes.\n\n$d = 3$, so the $n$th term starts $3n$. Zeroth term: $8 - 3 = 5$.\n\n$$n\\text{th term} = 3n + 5$$\n\nCheck: $n = 1$ gives $8$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q04",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the sequence $-1, 2, 5, 8, \\ldots$",
+  "hint": "The difference is still 3. The zeroth term is the term before $-1$.",
+  "answer": "$3n - 4$",
+  "solution": "**What changed:** the sequence now starts at a negative number. The difference is still $+3$, so the $n$th term still starts $3n$.\n\nZeroth term: $-1 - 3 = -4$.\n\n$$n\\text{th term} = 3n - 4$$\n\nCheck: $n = 1$ gives $3 - 4 = -1$ ✓, $n = 3$ gives $9 - 4 = 5$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q05",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the $n$th term of the sequence $8, 5, 2, -1, \\ldots$",
+  "hint": "These are the same numbers as $-1, 2, 5, 8$ in reverse order. Is the difference positive or negative now?",
+  "answer": "$11 - 3n$",
+  "solution": "**What changed:** the order is reversed, so the terms now go **down** by 3. The common difference is $d = -3$, so the $n$th term contains $-3n$.\n\nZeroth term: $8 - (-3) = 11$.\n\n$$n\\text{th term} = 11 - 3n \\quad (\\text{or } -3n + 11)$$\n\nCheck: $n = 1$ gives $11 - 3 = 8$ ✓, $n = 4$ gives $11 - 12 = -1$ ✓.\n\n(A common slip is $3n + 11$, which gives $14$ for $n = 1$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q06",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben and Chloe are asked to find the $n$th term of $6, 11, 16, 21, \\ldots$\n\nBen writes: \"The terms go up by 5, so the $n$th term is $n + 5$.\"\n\nChloe writes: \"The difference is 5 and the first term is 6, so the $n$th term is $5n + 6$.\"\n\nExplain what each student has done wrong, and find the correct $n$th term.",
+  "hint": "Test each expression with $n = 1$. Which number goes in front of $n$, and which number is the constant?",
+  "answer": "Ben used the difference as the constant; Chloe used the first term instead of the zeroth term. Correct: $5n + 1$.",
+  "solution": "**Ben's error:** \"add 5 each time\" means the coefficient of $n$ is 5, not that you add 5 to $n$. His expression $n + 5$ gives $6, 7, 8, \\ldots$, which go up by 1.\n\n**Chloe's error:** she has the correct $5n$, but she added the **first** term. $5n$ already gives 5 when $n = 1$, so adding 6 gives $11$, not 6.\n\n**Correct method:** $d = 5$, so start with $5n$. Zeroth term: $6 - 5 = 1$.\n$$n\\text{th term} = 5n + 1$$\n\nCheck: $n = 1$ gives $6$ ✓, $n = 4$ gives $21$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q07",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "problem-solving",
+  "question": "Here are the first three patterns in a sequence made from matchsticks.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 110\" width=\"330\" height=\"110\"><line x1=\"30\" y1=\"22\" x2=\"30\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"22\" x2=\"62\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"33\" y1=\"22\" x2=\"59\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"33\" y1=\"54\" x2=\"59\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"46.0\" y=\"84\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Pattern 1</text><line x1=\"108\" y1=\"22\" x2=\"108\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"140\" y1=\"22\" x2=\"140\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"22\" x2=\"172\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"22\" x2=\"137\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"111\" y1=\"54\" x2=\"137\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"143\" y1=\"22\" x2=\"169\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"143\" y1=\"54\" x2=\"169\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"140.0\" y=\"84\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Pattern 2</text><line x1=\"218\" y1=\"22\" x2=\"218\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"250\" y1=\"22\" x2=\"250\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"282\" y1=\"22\" x2=\"282\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"314\" y1=\"22\" x2=\"314\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"22\" x2=\"247\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"221\" y1=\"54\" x2=\"247\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"253\" y1=\"22\" x2=\"279\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"253\" y1=\"54\" x2=\"279\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"22\" x2=\"311\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><line x1=\"285\" y1=\"54\" x2=\"311\" y2=\"54\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"/><text x=\"266.0\" y=\"84\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Pattern 3</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find an expression for the number of matchsticks in Pattern $n$."
+   },
+   {
+    "label": "b",
+    "prompt": "How many matchsticks are in Pattern 40?"
+   },
+   {
+    "label": "c",
+    "prompt": "Lucy has 200 matchsticks. What is the largest pattern in this sequence she can make, and how many matchsticks will she have left over?"
+   }
+  ],
+  "hint": "Count the matchsticks in each pattern. How many extra matchsticks are needed for each new square?",
+  "answer": "(a) $3n + 1$ (b) 121 (c) Pattern 66, with 1 matchstick left over",
+  "solution": "(a) Counting: Pattern 1 has 4, Pattern 2 has 7, Pattern 3 has 10.\n\nEach new square needs 3 more matchsticks, so $d = 3$. Zeroth term: $4 - 3 = 1$.\n$$\\text{matchsticks} = 3n + 1$$\n(Think of it as 1 starting stick, then 3 more for each square.)\n\n(b) $3 \\times 40 + 1 = 121$ matchsticks.\n\n(c) We need $3n + 1 \\le 200$:\n$$3n \\le 199 \\;\\Rightarrow\\; n \\le 66.33\\ldots$$\n\nThe pattern number must be a whole number, so the largest is Pattern 66, which uses $3 \\times 66 + 1 = 199$ matchsticks.\n\nLeft over: $200 - 199 = 1$ matchstick. (Pattern 67 would need 202.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q08",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "In the US, a sequence is often treated as a **function** whose domain is the positive integers. The graph shows the first five terms of an arithmetic sequence, plotted as points $(n, a_n)$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 256\" width=\"340\" height=\"256\"><line x1=\"48\" y1=\"240\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"244\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−6</text><line x1=\"48\" y1=\"218\" x2=\"300\" y2=\"218\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"222\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"48\" y1=\"196\" x2=\"300\" y2=\"196\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"200\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><text x=\"40\" y=\"178\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"48\" y1=\"152\" x2=\"300\" y2=\"152\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"156\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"48\" y1=\"130\" x2=\"300\" y2=\"130\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"134\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"48\" y1=\"108\" x2=\"300\" y2=\"108\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"112\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"48\" y1=\"86\" x2=\"300\" y2=\"86\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"90\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"48\" y1=\"64\" x2=\"300\" y2=\"64\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"68\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"48\" y1=\"42\" x2=\"300\" y2=\"42\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"46\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">12</text><line x1=\"48\" y1=\"20\" x2=\"300\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"40\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">14</text><line x1=\"90\" y1=\"240\" x2=\"90\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"90\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"132\" y1=\"240\" x2=\"132\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"132\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"174\" y1=\"240\" x2=\"174\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"174\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"216\" y1=\"240\" x2=\"216\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"216\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"258\" y1=\"240\" x2=\"258\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"258\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"300\" y1=\"240\" x2=\"300\" y2=\"20\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"1\"/><text x=\"300\" y=\"191\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"48\" y1=\"174\" x2=\"312\" y2=\"174\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"48\" y1=\"240\" x2=\"48\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"316\" y=\"178\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">n</text><text x=\"56\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">aₙ</text><circle cx=\"90\" cy=\"42\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"132\" cy=\"86\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"174\" cy=\"130\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"216\" cy=\"174\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"currentColor\" stroke-width=\"1\"/><circle cx=\"258\" cy=\"218\" r=\"4.5\" fill=\"#3b82f6\" stroke=\"currentColor\" stroke-width=\"1\"/></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down $a_1$ and the common difference $d$."
+   },
+   {
+    "label": "b",
+    "prompt": "Use $a_n = a_1 + (n - 1)d$ to write an explicit formula for $a_n$, and simplify it."
+   },
+   {
+    "label": "c",
+    "prompt": "Write a recursive formula for the sequence."
+   },
+   {
+    "label": "d",
+    "prompt": "Find $a_{20}$."
+   },
+   {
+    "label": "e",
+    "prompt": "Explain why the points should **not** be joined with a straight line."
+   }
+  ],
+  "hint": "Read the height of each point. A recursive formula gives the first term and how to get $a_n$ from $a_{n-1}$.",
+  "answer": "(a) $a_1 = 12$, $d = -4$ (b) $a_n = 12 + (n - 1)(-4) = 16 - 4n$ (c) $a_1 = 12$, $a_n = a_{n-1} - 4$ for $n \\ge 2$ (d) $a_{20} = -64$ (e) The domain is the positive integers only, so there are no terms between the points (e.g. there is no term number 2.5).",
+  "solution": "(a) The points are $(1, 12)$, $(2, 8)$, $(3, 4)$, $(4, 0)$, $(5, -4)$. So $a_1 = 12$ and each term is 4 less than the one before: $d = -4$.\n\n(b)\n$$a_n = 12 + (n - 1)(-4) = 12 - 4n + 4 = 16 - 4n$$\n\nThis matches the UK method: $d = -4$, zeroth term $12 + 4 = 16$, so $n$th term $16 - 4n$.\n\n(c) Recursive form: $a_1 = 12$, and $a_n = a_{n-1} - 4$ for $n \\ge 2$.\n\n(d) $a_{20} = 16 - 4(20) = 16 - 80 = -64$.\n\n(e) $n$ is a term number, so it can only be $1, 2, 3, \\ldots$ The graph of a sequence is a set of separate points. The points do lie on the line $y = 16 - 4x$, but points on that line between them (such as $x = 2.5$) are not terms of the sequence.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-functions-basics"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q09",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leila is asked whether 150 is a term of the sequence with $n$th term $6n + 5$. Her working is shown below.\n\n$6n + 5 = 150$\n$6n = 145$\n$n = 24.166\\ldots \\approx 24$\nSo 150 is the 24th term.\n\nFind Leila's mistake and give the correct conclusion.",
+  "hint": "Can a term be in position 24.166…? Work out the 24th and 25th terms.",
+  "answer": "She rounded $n = 24.166\\ldots$ to 24, but $n$ must be a whole number, so 150 is **not** a term (the 24th term is 149 and the 25th is 155).",
+  "solution": "Leila's algebra is correct up to $n = 24.166\\ldots$. Her mistake is in the last two lines: she **rounded** $n$.\n\nThe position of a term must be a positive whole number. Since $6n = 145$ has no whole-number solution, 150 is **not** a term of the sequence.\n\nCheck the terms either side:\n$$24\\text{th term} = 6(24) + 5 = 149, \\qquad 25\\text{th term} = 6(25) + 5 = 155$$\n\n150 lies between them, so it is skipped.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q10",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "The $n$th term of a sequence is $3n + 4$.\n\nJosh writes: \"The 5th term is $3 \\times 5 + 4 = 19$. The 20th term is 4 times further along, so the 20th term is $4 \\times 19 = 76$.\"\n\n(a) Explain why Josh's method does not work.\n\n(b) Find the correct 20th term.",
+  "hint": "Is the sequence $3n + 4$ proportional to $n$? Substitute $n = 20$ directly.",
+  "answer": "(a) Multiplying the 5th term by 4 also multiplies the constant $+4$ by 4; the sequence is not proportional to $n$. (b) 64",
+  "solution": "(a) Multiplying the 5th term by 4 gives $4(3 \\times 5 + 4) = 3 \\times 20 + 16$. The $3n$ part is scaled correctly, but the constant 4 has also been multiplied by 4, becoming 16. A term is only proportional to its position when the constant is zero (e.g. $3n$).\n\n(b) Substitute $n = 20$ directly:\n$$3(20) + 4 = 60 + 4 = 64$$\n\n(Josh's answer is $76 - 64 = 12$ too big: the extra $3 \\times 4$ from scaling the constant.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q11",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The $n$th term of a sequence is $6n - 2$.\n\n(a) Without solving an equation, explain why 125 cannot be a term of this sequence.\n\n(b) Is 268 a term of the sequence? Show how you decide.",
+  "hint": "(a) Factorise $6n - 2$. What kind of number is every term? (b) Set the $n$th term equal to 268.",
+  "answer": "(a) $6n - 2 = 2(3n - 1)$, so every term is even, but 125 is odd. (b) Yes: $6n - 2 = 268$ gives $n = 45$, so 268 is the 45th term.",
+  "solution": "(a) $6n - 2 = 2(3n - 1)$, which is $2 \\times (\\text{an integer})$, so **every** term is even. (The sequence is $4, 10, 16, 22, \\ldots$, all even.) 125 is odd, so it cannot be a term.\n\n(b) Solve\n$$6n - 2 = 268 \\;\\Rightarrow\\; 6n = 270 \\;\\Rightarrow\\; n = 45$$\n\n$n = 45$ is a positive whole number, so 268 **is** a term: the 45th term.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q12",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A tomato plant is 14 cm tall when it is planted in a greenhouse. It then grows 2.5 cm each week.\n\n(a) Write an expression for the height of the plant, in cm, at the end of week $n$.\n\n(b) Find the height at the end of week 12.\n\n(c) In which week does the plant first become taller than 1 metre?",
+  "hint": "Convert 1 metre to cm. Set up an inequality and remember the week number must be a whole number.",
+  "answer": "(a) $2.5n + 14$ (b) 44 cm (c) Week 35",
+  "solution": "(a) The height starts at 14 cm (the zeroth term, before any growth) and increases by 2.5 cm each week:\n$$\\text{height} = 2.5n + 14 \\text{ cm}$$\n\n(b) $2.5 \\times 12 + 14 = 30 + 14 = 44$ cm.\n\n(c) 1 metre = 100 cm. We need\n$$2.5n + 14 > 100 \\;\\Rightarrow\\; 2.5n > 86 \\;\\Rightarrow\\; n > 34.4$$\n\nThe first whole number greater than 34.4 is 35.\n\nCheck: end of week 34: $2.5 \\times 34 + 14 = 99$ cm; end of week 35: $101.5$ cm ✓. So the plant first exceeds 1 metre in **week 35**.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q13",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "Here are the first four terms of an arithmetic sequence.\n\n$$4, \\quad 9, \\quad 14, \\quad 19$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the next term of the sequence.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find an expression, in terms of $n$, for the $n$th term of the sequence.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Is 100 a term of the sequence? You must show how you get your answer.",
+    "marks": 2
+   }
+  ],
+  "hint": "The difference gives the coefficient of $n$. For (c), form and solve an equation.",
+  "answer": "(a) 24 (b) $5n - 1$ (c) No: $5n - 1 = 100$ gives $n = 20.2$, not a whole number (the 20th term is 99 and the 21st is 104).",
+  "solution": "**(a)** $19 + 5 = 24$ **B1**\n\n**(b)** Difference 5, so $5n$; zeroth term $4 - 5 = -1$.\n$$5n - 1$$\n**M1** for $5n + k$ with $k \\ne -1$, or for $5n$ seen. **A1** for $5n - 1$\n\n**(c)**\n$$5n - 1 = 100 \\;\\Rightarrow\\; 5n = 101 \\;\\Rightarrow\\; n = 20.2$$\n**M1** for forming and starting to solve $5n - 1 = 100$ (ft their $n$th term), or for finding the 20th and 21st terms (99 and 104)\n\nNo, because $n$ is not a whole number. **A1** for \"No\" with a correct reason",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-sequences-linear-q14",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "In a theatre, Row 1 has 22 seats. Each row has 3 more seats than the row in front of it.\n\n(a) Find an expression for the number of seats in Row $n$.\n\n(b) The back row has 79 seats. How many rows are there?\n\n(c) The manager says, \"One of our rows has exactly 50 seats.\" Is the manager correct? Give a reason.\n\n(d) A second theatre has 40 seats in Row 1, and each row has 2 more seats than the row in front. Which is the first row number at which the first theatre has more seats in that row than the second theatre?",
+  "hint": "For (d), write the $n$th term for the second theatre and form an inequality.",
+  "answer": "(a) $3n + 19$ (b) 20 rows (c) No: $3n + 19 = 50$ gives $n = 10\\frac{1}{3}$, not a whole number. (d) Row 20",
+  "solution": "(a) $d = 3$, zeroth term $22 - 3 = 19$, so Row $n$ has $3n + 19$ seats.\n\n(b) $3n + 19 = 79 \\Rightarrow 3n = 60 \\Rightarrow n = 20$. There are 20 rows.\n\n(c) $3n + 19 = 50 \\Rightarrow 3n = 31 \\Rightarrow n = 10\\frac{1}{3}$. This is not a whole number, so no row has exactly 50 seats (Row 10 has 49 and Row 11 has 52). The manager is wrong.\n\n(d) Second theatre: $d = 2$, zeroth term $40 - 2 = 38$, so Row $n$ has $2n + 38$ seats.\n\nWe need\n$$3n + 19 > 2n + 38 \\;\\Rightarrow\\; n > 19$$\n\nSo the first row is **Row 20** (first theatre 79 seats, second theatre 78). At Row 19 they are equal, with 76 each. Row 20 is also the back row of the first theatre.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q15",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The 5th term of an arithmetic sequence is 23 and the 12th term is 58.\n\n(a) Find the $n$th term of the sequence.\n\n(b) Find the first term of the sequence that is greater than 1000.",
+  "hint": "Let the first term be $a$ and the common difference $d$. Then the 5th term is $a + 4d$. Form two equations and solve them simultaneously.",
+  "answer": "(a) $5n - 2$ (b) 1003 (the 201st term)",
+  "solution": "(a) Using $u_n = a + (n - 1)d$:\n$$a + 4d = 23 \\qquad (1)$$\n$$a + 11d = 58 \\qquad (2)$$\n\nSubtract (1) from (2): $7d = 35$, so $d = 5$. Then $a = 23 - 20 = 3$.\n\n$n$th term: $5n + (3 - 5) = 5n - 2$.\n\nCheck: 5th term $25 - 2 = 23$ ✓, 12th term $60 - 2 = 58$ ✓.\n\n(Alternatively: from the 5th to the 12th term is 7 steps, and $58 - 23 = 35$, so $d = 35 \\div 7 = 5$.)\n\n(b) Need $5n - 2 > 1000$:\n$$5n > 1002 \\;\\Rightarrow\\; n > 200.4$$\n\nSo $n = 201$, giving $5(201) - 2 = 1003$. (The 200th term is 998.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-simultaneous-linear",
+   "alg-linear-inequalities"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q16",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The five interior angles of a pentagon form an arithmetic sequence. The smallest angle is $84^\\circ$.\n\nFind the size of each of the other four angles.",
+  "hint": "What do the interior angles of a pentagon add up to? Write the angles as $84, 84 + d, 84 + 2d, \\ldots$",
+  "answer": "$96^\\circ$, $108^\\circ$, $120^\\circ$, $132^\\circ$",
+  "solution": "Interior angles of a pentagon sum to $(5 - 2) \\times 180^\\circ = 540^\\circ$.\n\nLet the common difference be $d$. The angles are $84$, $84 + d$, $84 + 2d$, $84 + 3d$, $84 + 4d$.\n\nSum:\n$$5 \\times 84 + 10d = 540 \\;\\Rightarrow\\; 420 + 10d = 540 \\;\\Rightarrow\\; d = 12$$\n\nThe angles are $84^\\circ$, $96^\\circ$, $108^\\circ$, $120^\\circ$, $132^\\circ$.\n\nCheck: $84 + 96 + 108 + 120 + 132 = 540$ ✓. All are less than $180^\\circ$, so this is a valid (convex) pentagon.",
+  "linkedTopicIds": [
+   "geo-polygon-angles",
+   "alg-linear-equations"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q17",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Sequence A is $5, 12, 19, 26, \\ldots$ and sequence B is $3, 8, 13, 18, \\ldots$\n\nSome numbers appear in both sequences.\n\n(a) Find the three smallest numbers that appear in both sequences.\n\n(b) Find an expression for the $n$th number that appears in both sequences.\n\n(c) How many numbers less than 1000 appear in both sequences?",
+  "hint": "Find the $n$th term of each sequence. Adding 2 to every term may make the pattern clearer.",
+  "answer": "(a) 33, 68, 103 (b) $35n - 2$ (c) 28",
+  "solution": "Sequence A: $d = 7$, $n$th term $7n - 2$. Sequence B: $d = 5$, $n$th term $5n - 2$.\n\nSo a number $N$ is in A when $N + 2$ is a positive multiple of 7, and in B when $N + 2$ is a positive multiple of 5.\n\n$N$ is in both exactly when $N + 2$ is a multiple of both 7 and 5, i.e. a multiple of $\\text{LCM}(7, 5) = 35$.\n\n(a) $N + 2 = 35, 70, 105$ gives $N = 33, 68, 103$.\n\nCheck 33: $7 \\times 5 - 2 = 33$ ✓ and $5 \\times 7 - 2 = 33$ ✓.\n\n(b) $N + 2 = 35n$, so the $n$th common number is $35n - 2$. (Its common difference is 35, the LCM of the two differences.)\n\n(c) $35n - 2 < 1000 \\Rightarrow 35n < 1002 \\Rightarrow n < 28.6$, so $n = 1, 2, \\ldots, 28$. The 28th is $35 \\times 28 - 2 = 978$ and the 29th is $1013$.\n\nThere are **28** such numbers.",
+  "linkedTopicIds": [
+   "num-hcf-lcm"
+  ]
+ },
+ {
+  "id": "alg-sequences-linear-q18",
+  "topicId": "alg-sequences-linear",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "An arithmetic sequence has first term 5. Its common difference is a whole number.\n\n13 and 41 are both terms of the sequence, but 27 is not.\n\nFind the $n$th term of the sequence. Explain your reasoning fully.",
+  "hint": "If 13 is a term, how many common differences fit into $13 - 5$? Do the same for 41 and 27.",
+  "answer": "$4n + 1$",
+  "solution": "Let the common difference be $d$. The terms are $5, 5 + d, 5 + 2d, \\ldots$\n\nIf $d \\le 0$, no term is bigger than 5, so 13 could not be a term. Hence $d$ is a positive whole number.\n\n• 13 is a term, so $13 - 5 = 8$ is a whole-number multiple of $d$: $d$ is a factor of 8, i.e. $d \\in \\{1, 2, 4, 8\\}$.\n• 41 is a term, so $d$ is a factor of $41 - 5 = 36$: $d \\in \\{1, 2, 3, 4, 6, 9, 12, 18, 36\\}$.\n\nCommon factors of 8 and 36: $d \\in \\{1, 2, 4\\}$.\n\n• 27 is **not** a term, so $d$ is **not** a factor of $27 - 5 = 22$. This rules out $d = 1$ and $d = 2$.\n\nSo $d = 4$. Zeroth term $5 - 4 = 1$, giving\n$$n\\text{th term} = 4n + 1$$\n\nCheck: $13$ is the 3rd term, $41$ is the 10th term, and $4n + 1 = 27$ gives $n = 6.5$, so 27 is not a term ✓.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ]
+ }
+]

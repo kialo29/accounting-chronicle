@@ -1,0 +1,306 @@
+[
+ {
+  "id": "num-index-laws-q01",
+  "topicId": "num-index-laws",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $5^4 \\times 5^3$ as a single power of 5.",
+  "hint": "Write each power out as repeated multiplication and count how many 5s there are altogether.",
+  "answer": "$5^7$",
+  "solution": "$5^4 = 5 \\times 5 \\times 5 \\times 5$ and $5^3 = 5 \\times 5 \\times 5$.\n\nMultiplying them gives $4 + 3 = 7$ fives multiplied together:\n$$5^4 \\times 5^3 = 5^{4+3} = 5^7$$\n\nWhen you multiply powers of the same base, **add** the indices (not $5^{12}$ – that would be multiplying the indices).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q02",
+  "topicId": "num-index-laws",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $5^4 \\div 5^3$ as a single power of 5. Then write down its value.",
+  "hint": "Dividing powers of the same base: what happens to the indices?",
+  "answer": "$5^1 = 5$",
+  "solution": "What changed from the last question: the $\\times$ became $\\div$.\n\n$$\\frac{5^4}{5^3} = \\frac{5 \\times 5 \\times 5 \\times 5}{5 \\times 5 \\times 5} = 5$$\n\nThree of the fives cancel, leaving one. Using the law: subtract the indices,\n$$5^4 \\div 5^3 = 5^{4-3} = 5^1 = 5$$\n\nSo dividing undoes multiplying: subtracting the indices undoes adding them.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q03",
+  "topicId": "num-index-laws",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $5^3 \\div 5^3$ as a single power of 5. Then write down its value.",
+  "hint": "Use the division law, then think about what any number divided by itself equals.",
+  "answer": "$5^0 = 1$",
+  "solution": "What changed from the last question: the first index is now 3, the same as the second.\n\nUsing the division law: $5^3 \\div 5^3 = 5^{3-3} = 5^0$.\n\nBut $5^3 \\div 5^3 = 125 \\div 125 = 1$ (any non-zero number divided by itself is 1).\n\nSo\n$$5^0 = 1$$\nNot 0, and not 5: any non-zero number to the power 0 is 1.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q04",
+  "topicId": "num-index-laws",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Simplify fully.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$(x^4)^3$"
+   },
+   {
+    "label": "b",
+    "prompt": "$3x^4 \\times 5x^2$"
+   },
+   {
+    "label": "c",
+    "prompt": "$\\dfrac{20a^9}{4a^3}$"
+   },
+   {
+    "label": "d",
+    "prompt": "$7y^0$ (where $y \\ne 0$)"
+   }
+  ],
+  "hint": "Deal with the numbers and the powers separately. A power of a power means the index is used several times over.",
+  "answer": "(a) $x^{12}$ (b) $15x^6$ (c) $5a^6$ (d) $7$",
+  "solution": "(a) $(x^4)^3 = x^4 \\times x^4 \\times x^4 = x^{4+4+4} = x^{12}$ (power of a power: multiply the indices, $4 \\times 3 = 12$).\n\n(b) Multiply the numbers: $3 \\times 5 = 15$. Add the indices: $x^4 \\times x^2 = x^6$. So $3x^4 \\times 5x^2 = 15x^6$.\n\n(c) Divide the numbers: $20 \\div 4 = 5$. Subtract the indices: $a^9 \\div a^3 = a^6$. So $\\dfrac{20a^9}{4a^3} = 5a^6$.\n\n(d) Only the $y$ is raised to the power 0: $y^0 = 1$, so $7y^0 = 7 \\times 1 = 7$.",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q05",
+  "topicId": "num-index-laws",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Simplify\n\n(a) $(2y^3)^4$\n\n(b) $(-3p^2q)^3$",
+  "hint": "The power outside the bracket applies to **every** factor inside it, including the number and its sign.",
+  "answer": "(a) $16y^{12}$ (b) $-27p^6q^3$",
+  "solution": "(a) $(2y^3)^4 = 2^4 \\times (y^3)^4 = 16 \\times y^{12} = 16y^{12}$\n\n(Not $2y^{12}$ – the 2 is inside the bracket so it is raised to the power 4 as well.)\n\n(b) Every factor is cubed:\n$$(-3)^3 = -27, \\qquad (p^2)^3 = p^6, \\qquad q^3$$\nso $(-3p^2q)^3 = -27p^6q^3$. An odd power of a negative number is negative.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q06",
+  "topicId": "num-index-laws",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Three students are asked to simplify $2^3 \\times 2^4$.\n\n* Ali writes $2^{12}$.\n* Bea writes $4^7$.\n* Cal writes $2^7$.\n\nWho is correct? Explain the mistake each of the other two students has made, and use the values of the numbers to convince someone who is not sure.",
+  "hint": "Work out $2^3 \\times 2^4$ as an ordinary number ($8 \\times 16$) and compare it with each answer.",
+  "answer": "Cal is correct: $2^3 \\times 2^4 = 2^7 = 128$. Ali multiplied the indices; Bea multiplied the bases as well as adding the indices.",
+  "solution": "Work out the true value: $2^3 \\times 2^4 = 8 \\times 16 = 128$.\n\n* Cal: $2^7 = 128$. Correct. Writing it out, $(2 \\times 2 \\times 2) \\times (2 \\times 2 \\times 2 \\times 2)$ is seven 2s multiplied together, so the indices **add**.\n* Ali: $2^{12} = 4096$, far too big. Ali multiplied the indices ($3 \\times 4$). Multiplying indices is only right for a power of a power, such as $(2^3)^4 = 2^{12}$.\n* Bea: $4^7 = 16\\,384$, also far too big. Bea added the indices correctly but also multiplied the bases ($2 \\times 2 = 4$). The base stays the same: we are still multiplying 2s together.\n\nSo $2^3 \\times 2^4 = 2^7$.",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q07",
+  "topicId": "num-index-laws",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Priya's working to simplify $(3x^2)^3 \\times 2x$ is shown below.\n\n$$\\begin{aligned} (3x^2)^3 \\times 2x &= 3x^6 \\times 2x \\\\ &= 6x^7 \\end{aligned}$$\n\nFind the mistake in Priya's working, explain why it is wrong, and write down the correct answer.",
+  "hint": "Check the first line. What should happen to the 3 inside the bracket?",
+  "answer": "The first line is wrong: $(3x^2)^3 = 27x^6$, not $3x^6$. Correct answer: $54x^7$.",
+  "solution": "**The error is in the first line.** Priya cubed the $x^2$ but not the 3. The power outside a bracket applies to every factor inside:\n$$(3x^2)^3 = 3x^2 \\times 3x^2 \\times 3x^2 = 3^3 \\times x^6 = 27x^6$$\n\n**Corrected working:**\n$$(3x^2)^3 \\times 2x = 27x^6 \\times 2x = 54x^{7}$$\n\n(Her second step, adding the indices $6 + 1 = 7$, was done correctly – remember $x = x^1$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q08",
+  "topicId": "num-index-laws",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A single bacterium is placed in a dish. Every 20 minutes each bacterium splits into 2.\n\n(a) Show that after 6 hours there are $2^{18}$ bacteria.\n\n(b) How many times as many bacteria are there after 8 hours as after 6 hours? Give your answer as a power of 2 and as an ordinary number.",
+  "hint": "How many 20-minute periods are there in 6 hours? Each one multiplies the number of bacteria by 2.",
+  "answer": "(a) 18 doublings, so $2^{18}$ (b) $2^{24} \\div 2^{18} = 2^6 = 64$ times as many",
+  "solution": "(a) There are 3 periods of 20 minutes in each hour, so $6 \\times 3 = 18$ periods in 6 hours. Each period multiplies the number by 2, so after 6 hours there are\n$$1 \\times \\underbrace{2 \\times 2 \\times \\dots \\times 2}_{18} = 2^{18} \\text{ bacteria } (= 262\\,144)$$\n\n(b) After 8 hours there have been $8 \\times 3 = 24$ doublings, so $2^{24}$ bacteria.\n$$\\frac{2^{24}}{2^{18}} = 2^{24-18} = 2^6 = 64$$\nThere are 64 times as many bacteria. (Check: the extra 2 hours is 6 more doublings.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q09",
+  "topicId": "num-index-laws",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Tom simplifies $\\dfrac{6a^5 \\times 2a^3}{4a^2}$. His working is shown.\n\n$$\\begin{aligned} \\frac{6a^5 \\times 2a^3}{4a^2} &= \\frac{12a^{15}}{4a^2} \\\\ &= 3a^{13} \\end{aligned}$$\n\n(a) Explain the mistake Tom has made.\n\n(b) Work out the correct answer.",
+  "hint": "Write $a^5 \\times a^3$ out in full. How many $a$s are multiplied together?",
+  "answer": "(a) He multiplied the indices: $a^5 \\times a^3 = a^8$, not $a^{15}$. (b) $3a^6$",
+  "solution": "(a) In the first line Tom wrote $a^5 \\times a^3 = a^{15}$. He **multiplied** the indices. When multiplying powers of the same base you **add** them:\n$$a^5 \\times a^3 = (aaaaa)(aaa) = a^8$$\n(Multiplying indices is for a power of a power, like $(a^5)^3 = a^{15}$.)\n\n(b) Numerator: $6 \\times 2 = 12$ and $a^5 \\times a^3 = a^8$, so $12a^8$.\n\nDivide: $12 \\div 4 = 3$ and $a^8 \\div a^2 = a^{6}$:\n$$\\frac{6a^5 \\times 2a^3}{4a^2} = \\frac{12a^8}{4a^2} = 3a^6$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q10",
+  "topicId": "num-index-laws",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Find the value of $n$ such that\n$$4^5 \\times 8^2 = 2^n$$",
+  "hint": "The bases are different. Can you write 4 and 8 as powers of 2?",
+  "answer": "$n = 16$",
+  "solution": "The index laws only work for the same base, so write everything as a power of 2:\n$$4 = 2^2, \\qquad 8 = 2^3$$\n\nThen\n$$4^5 = (2^2)^5 = 2^{10}, \\qquad 8^2 = (2^3)^2 = 2^6$$\n\nSo\n$$4^5 \\times 8^2 = 2^{10} \\times 2^6 = 2^{16}$$\nand $n = 16$.\n\nCheck: $4^5 \\times 8^2 = 1024 \\times 64 = 65\\,536 = 2^{16}$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q11",
+  "topicId": "num-index-laws",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Computer memory is measured in bytes, and sizes are often powers of 2.\n\nA memory card can store $2^{35}$ bytes. Each photo taken by a camera uses $2^{22}$ bytes.\n\n(a) How many photos can the memory card hold? Give your answer as a power of 2 and as an ordinary number.\n\n(b) A video clip uses $2^{30}$ bytes. How many photos take up the same space as one video clip?",
+  "hint": "Number of photos = total space ÷ space per photo. Use the division law.",
+  "answer": "(a) $2^{13} = 8192$ photos (b) $2^8 = 256$ photos",
+  "solution": "(a) Number of photos $= 2^{35} \\div 2^{22} = 2^{35-22} = 2^{13}$.\n\n$2^{10} = 1024$, so $2^{13} = 1024 \\times 8 = 8192$ photos.\n\n(b) $2^{30} \\div 2^{22} = 2^{8} = 256$, so one video clip takes the same space as 256 photos.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q12",
+  "topicId": "num-index-laws",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-volume-prisms"
+  ],
+  "question": "A toy shop packs wooden building blocks into a crate.\n\nThe crate is a cube with edges of length $2^6$ cm. Each block is a cube with edges of length $2^2$ cm.\n\n(a) Write the volume of the crate, in $\\text{cm}^3$, as a power of 2.\n\n(b) Work out the greatest number of blocks that fit in the crate. Give your answer as a power of 2 and as an ordinary number.",
+  "hint": "Volume of a cube $= (\\text{edge})^3$. Then compare the volume of the crate with the volume of one block – or count how many blocks fit along one edge.",
+  "answer": "(a) $2^{18}\\ \\text{cm}^3$ (b) $2^{12} = 4096$ blocks",
+  "solution": "(a) Volume of a cube $=$ edge$^3$:\n$$(2^6)^3 = 2^{6 \\times 3} = 2^{18}\\ \\text{cm}^3$$\n\n(b) Volume of one block $= (2^2)^3 = 2^6\\ \\text{cm}^3$.\n\nBecause $2^2$ divides $2^6$ exactly, the blocks fill the crate with no gaps: $2^6 \\div 2^2 = 2^4 = 16$ blocks fit along each edge.\n\nNumber of blocks $= 2^{18} \\div 2^6 = 2^{12}$ (or $16^3 = (2^4)^3 = 2^{12}$).\n\n$2^{12} = 4096$ blocks.\n\n(Check: the crate is 64 cm, the blocks are 4 cm, and $16 \\times 16 \\times 16 = 4096$.)"
+ },
+ {
+  "id": "num-index-laws-q13",
+  "topicId": "num-index-laws",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": false,
+  "question": "Answer all parts. You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Simplify $m^5 \\times m^4$",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Simplify $(3n^4)^2$",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the value of $\\dfrac{6^7 \\times 6^0}{6^5}$",
+    "marks": 2
+   }
+  ],
+  "hint": "In (c), $6^0$ is a number you know. Simplify to a single power of 6 before working out its value.",
+  "answer": "(a) $m^9$ (b) $9n^8$ (c) $36$",
+  "solution": "(a) $m^{5+4} = m^9$ **B1**\n\n(b) $3^2 = 9$ **B1**; $(n^4)^2 = n^8$ **B1**\n\nAnswer: $9n^8$ (B1 for either part correct in an otherwise wrong answer such as $3n^8$ or $9n^6$.)\n\n(c) $6^0 = 1$, so the expression is $\\dfrac{6^7}{6^5} = 6^{7-5} = 6^2$ **M1** (for correct use of index laws to reach $6^2$, or $6^7 \\div 6^5$)\n\n$6^2 = 36$ **A1**",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q14",
+  "topicId": "num-index-laws",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Without using a calculator, decide which is larger: $8^{20}$ or $16^{14}$.\n\nExplain your reasoning fully, and say how many times larger it is.",
+  "hint": "Both 8 and 16 are powers of the same number.",
+  "answer": "$8^{20} = 2^{60}$ and $16^{14} = 2^{56}$, so $8^{20}$ is larger, by a factor of $2^4 = 16$.",
+  "solution": "You cannot compare $8^{20}$ and $16^{14}$ directly: one has the bigger base, the other the bigger index. Write both with the same base, 2:\n$$8^{20} = (2^3)^{20} = 2^{60}$$\n$$16^{14} = (2^4)^{14} = 2^{56}$$\n\nNow the base is the same, and a bigger index means a bigger number (since $2 > 1$), so $2^{60} > 2^{56}$.\n\n$$\\frac{8^{20}}{16^{14}} = \\frac{2^{60}}{2^{56}} = 2^4 = 16$$\n\nSo $8^{20}$ is larger, and it is 16 times as large as $16^{14}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q15",
+  "topicId": "num-index-laws",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": false,
+  "question": "$y = 2^a$ and $z = 2^b$.\n\nWrite each of the following in terms of $y$ and/or $z$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$2^{a+b}$",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "$8^a$",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "$2^{2a-b}$",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "$4^{a+1}$",
+    "marks": 2
+   }
+  ],
+  "hint": "Read the index laws backwards: $2^{a+b} = 2^a \\times 2^b$, and $2^{2a} = (2^a)^2$.",
+  "answer": "(a) $yz$ (b) $y^3$ (c) $\\dfrac{y^2}{z}$ (d) $4y^2$",
+  "solution": "(a) $2^{a+b} = 2^a \\times 2^b = yz$ **B1**\n\n(b) $8^a = (2^3)^a = (2^a)^3 = y^3$ **B1**\n\n(c) $2^{2a-b} = \\dfrac{2^{2a}}{2^b}$ **M1**\n\n$= \\dfrac{(2^a)^2}{2^b} = \\dfrac{y^2}{z}$ **A1**\n\n(d) $4^{a+1} = 4^a \\times 4^1$, and $4^a = (2^2)^a = (2^a)^2 = y^2$ **M1**\n\nSo $4^{a+1} = 4y^2$ **A1**\n\n(Alternative for (d): $4^{a+1} = 2^{2a+2} = 2^{2a} \\times 2^2 = 4y^2$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q16",
+  "topicId": "num-index-laws",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "question": "Find the values of $x$ and $y$ such that\n$$2^x \\times 4^y = 2^{11} \\qquad \\text{and} \\qquad 5^x \\div 5^y = 25$$",
+  "hint": "Write each equation as a single power on each side with the same base, then compare indices. You will get two linear equations.",
+  "answer": "$x = 5$, $y = 3$",
+  "solution": "**First equation.** $4^y = (2^2)^y = 2^{2y}$, so\n$$2^x \\times 2^{2y} = 2^{x+2y} = 2^{11} \\quad\\Rightarrow\\quad x + 2y = 11 \\quad (1)$$\n\n**Second equation.** $5^x \\div 5^y = 5^{x-y}$ and $25 = 5^2$, so\n$$x - y = 2 \\quad (2)$$\n\n**Solve simultaneously.** $(1) - (2)$: $3y = 9$, so $y = 3$. Then $x = 2 + 3 = 5$.\n\n**Check:** $2^5 \\times 4^3 = 32 \\times 64 = 2048 = 2^{11}$ ✓ and $5^5 \\div 5^3 = 5^2 = 25$ ✓"
+ },
+ {
+  "id": "num-index-laws-q17",
+  "topicId": "num-index-laws",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find the positive integer $n$ for which\n$$\\frac{4^{n+1} \\times 27^{n}}{6^{2n}} = 108$$",
+  "hint": "Write every number in terms of its prime factors 2 and 3. Remember $6^{2n} = 2^{2n} \\times 3^{2n}$.",
+  "answer": "$n = 3$",
+  "solution": "Write everything in prime-factor form:\n$$4^{n+1} = (2^2)^{n+1} = 2^{2n+2}, \\qquad 27^n = (3^3)^n = 3^{3n}, \\qquad 6^{2n} = (2 \\times 3)^{2n} = 2^{2n} \\times 3^{2n}$$\n\nCollect powers of 2 and powers of 3 separately:\n$$\\frac{2^{2n+2} \\times 3^{3n}}{2^{2n} \\times 3^{2n}} = 2^{(2n+2)-2n} \\times 3^{3n-2n} = 2^2 \\times 3^n = 4 \\times 3^n$$\n\nSo $4 \\times 3^n = 108$, giving $3^n = 27 = 3^3$, so $n = 3$.\n\n**Check:** $\\dfrac{4^4 \\times 27^3}{6^6} = \\dfrac{256 \\times 19\\,683}{46\\,656} = 108$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-index-laws-q18",
+  "topicId": "num-index-laws",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ],
+  "question": "In this question $n$ is a positive integer.\n\n(a) Show that $2^{n+3} - 2^n = 7 \\times 2^n$.\n\n(b) Prove that $3^{n+2} + 3^n$ is always a multiple of 10.\n\n(c) Find the smallest value of $n$ for which $3^{n+2} + 3^n$ is a multiple of 270.",
+  "hint": "Use $2^{n+3} = 2^n \\times 2^3$, then factorise out the common factor $2^n$. Do the same with $3^n$ in part (b).",
+  "answer": "(a) $2^{n+3} - 2^n = 2^n(8 - 1) = 7 \\times 2^n$ (b) $3^{n+2} + 3^n = 10 \\times 3^n$, a multiple of 10 (c) $n = 3$",
+  "solution": "(a) By the multiplication law read backwards, $2^{n+3} = 2^n \\times 2^3 = 8 \\times 2^n$. So\n$$2^{n+3} - 2^n = 8 \\times 2^n - 1 \\times 2^n = (8 - 1) \\times 2^n = 7 \\times 2^n$$\n\n(b) Similarly $3^{n+2} = 9 \\times 3^n$, so\n$$3^{n+2} + 3^n = 9 \\times 3^n + 3^n = 10 \\times 3^n$$\nSince $n$ is a positive integer, $3^n$ is an integer, so $10 \\times 3^n$ is a multiple of 10 for every $n$. $\\blacksquare$\n\n(c) We need $10 \\times 3^n$ to be a multiple of $270 = 10 \\times 27 = 10 \\times 3^3$. So $3^n$ must be a multiple of $3^3$, which first happens when $n = 3$.\n\nCheck: $3^5 + 3^3 = 243 + 27 = 270$ ✓ (and for $n = 2$: $81 + 9 = 90$, not a multiple of 270)."
+ }
+]

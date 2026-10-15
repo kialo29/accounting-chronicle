@@ -1,0 +1,365 @@
+[
+ {
+  "id": "num-surds-q01",
+  "topicId": "num-surds",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $\\sqrt{12}$.",
+  "hint": "Look for a square number that is a factor of 12.",
+  "answer": "$2\\sqrt{3}$",
+  "solution": "The largest square factor of 12 is 4, since $12 = 4 \\times 3$.\n$$\\sqrt{12} = \\sqrt{4 \\times 3} = \\sqrt{4} \\times \\sqrt{3} = 2\\sqrt{3}$$\n\n3 has no square factor other than 1, so $2\\sqrt{3}$ is fully simplified.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q02",
+  "topicId": "num-surds",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Simplify $\\sqrt{48}$.",
+  "hint": "Find the **largest** square number that divides into 48.",
+  "answer": "$4\\sqrt{3}$",
+  "solution": "**What changed:** the number under the root is now $48 = 4 \\times 12$, four times as big as before.\n\nThe square factors of 48 are 4 and 16. Use the largest, 16:\n$$\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$$\n\nUsing 4 instead gives $\\sqrt{48} = 2\\sqrt{12}$, which is not fully simplified because 12 still has the square factor 4.\n\nNotice $\\sqrt{48} = \\sqrt{4} \\times \\sqrt{12} = 2 \\times 2\\sqrt{3}$: multiplying the number under the root by 4 doubles the surd.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q03",
+  "topicId": "num-surds",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $5\\sqrt{48}$.",
+  "hint": "Simplify $\\sqrt{48}$ first, then multiply by 5.",
+  "answer": "$20\\sqrt{3}$",
+  "solution": "**What changed:** there is now a coefficient of 5 in front of the root.\n\n$$\\sqrt{48} = 4\\sqrt{3}$$\n$$5\\sqrt{48} = 5 \\times 4\\sqrt{3} = 20\\sqrt{3}$$\n\nThe coefficient simply multiplies the number already outside the root.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q04",
+  "topicId": "num-surds",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $5\\sqrt{48} - \\sqrt{12}$.",
+  "hint": "Write both terms as multiples of the same surd.",
+  "answer": "$18\\sqrt{3}$",
+  "solution": "**What changed:** $\\sqrt{12}$ is now subtracted.\n\nFrom the previous questions: $5\\sqrt{48} = 20\\sqrt{3}$ and $\\sqrt{12} = 2\\sqrt{3}$.\n\nThese are like surds (both multiples of $\\sqrt{3}$), so they can be collected:\n$$20\\sqrt{3} - 2\\sqrt{3} = 18\\sqrt{3}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q05",
+  "topicId": "num-surds",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Simplify each expression.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$\\sqrt{3} \\times \\sqrt{15}$"
+   },
+   {
+    "label": "b",
+    "prompt": "$6\\sqrt{10} \\div 3\\sqrt{2}$"
+   },
+   {
+    "label": "c",
+    "prompt": "$\\sqrt{7} \\times \\sqrt{7}$"
+   }
+  ],
+  "hint": "Multiply (or divide) the whole numbers together and the roots together: $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$.",
+  "answer": "(a) $3\\sqrt{5}$ (b) $2\\sqrt{5}$ (c) $7$",
+  "solution": "**(a)** $\\sqrt{3} \\times \\sqrt{15} = \\sqrt{45} = \\sqrt{9 \\times 5} = 3\\sqrt{5}$\n\n**(b)** Divide numbers by numbers and roots by roots:\n$$\\frac{6\\sqrt{10}}{3\\sqrt{2}} = \\frac{6}{3} \\times \\sqrt{\\frac{10}{2}} = 2\\sqrt{5}$$\n\n**(c)** $\\sqrt{7} \\times \\sqrt{7} = \\sqrt{49} = 7$. In general $\\sqrt{a} \\times \\sqrt{a} = a$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q06",
+  "topicId": "num-surds",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Rationalise the denominator and simplify fully.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$\\dfrac{10}{\\sqrt{5}}$"
+   },
+   {
+    "label": "b",
+    "prompt": "$\\dfrac{3}{2\\sqrt{6}}$"
+   },
+   {
+    "label": "c",
+    "prompt": "$\\dfrac{\\sqrt{2} + 1}{\\sqrt{2}}$"
+   }
+  ],
+  "hint": "Multiply the numerator and the denominator by the surd in the denominator.",
+  "answer": "(a) $2\\sqrt{5}$ (b) $\\dfrac{\\sqrt{6}}{4}$ (c) $\\dfrac{2 + \\sqrt{2}}{2}$ (or $1 + \\dfrac{\\sqrt{2}}{2}$)",
+  "solution": "**(a)**\n$$\\frac{10}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{10\\sqrt{5}}{5} = 2\\sqrt{5}$$\n\n**(b)** Only the surd part of $2\\sqrt{6}$ needs removing, so multiply by $\\frac{\\sqrt{6}}{\\sqrt{6}}$:\n$$\\frac{3}{2\\sqrt{6}} \\times \\frac{\\sqrt{6}}{\\sqrt{6}} = \\frac{3\\sqrt{6}}{2 \\times 6} = \\frac{3\\sqrt{6}}{12} = \\frac{\\sqrt{6}}{4}$$\n\n**(c)** Multiply the **whole** numerator by $\\sqrt{2}$:\n$$\\frac{(\\sqrt{2} + 1)\\sqrt{2}}{\\sqrt{2}\\sqrt{2}} = \\frac{2 + \\sqrt{2}}{2}$$\nwhich can also be written $1 + \\dfrac{\\sqrt{2}}{2}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q07",
+  "topicId": "num-surds",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Sam and Ella are asked to work out $(2\\sqrt{5})^2$.\n\nSam says the answer is 20. Ella says the answer is 10.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Who is correct? Explain why."
+   },
+   {
+    "label": "b",
+    "prompt": "Work out $(5\\sqrt{2})^2$ and $\\left(\\dfrac{\\sqrt{12}}{2}\\right)^2$."
+   }
+  ],
+  "hint": "Write $(2\\sqrt{5})^2$ as $2\\sqrt{5} \\times 2\\sqrt{5}$.",
+  "answer": "(a) Sam is correct: $(2\\sqrt{5})^2 = 4 \\times 5 = 20$ (b) $50$ and $3$",
+  "solution": "**(a)** Squaring means multiplying the whole term by itself:\n$$(2\\sqrt{5})^2 = 2\\sqrt{5} \\times 2\\sqrt{5} = (2 \\times 2) \\times (\\sqrt{5} \\times \\sqrt{5}) = 4 \\times 5 = 20$$\n\n**Sam is correct.** Ella has squared the $\\sqrt{5}$ to get 5 but has not squared the 2: she worked out $2 \\times 5$ instead of $2^2 \\times 5$.\n\n**(b)** $(5\\sqrt{2})^2 = 5^2 \\times (\\sqrt{2})^2 = 25 \\times 2 = 50$\n\n$\\left(\\dfrac{\\sqrt{12}}{2}\\right)^2 = \\dfrac{(\\sqrt{12})^2}{2^2} = \\dfrac{12}{4} = 3$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q08",
+  "topicId": "num-surds",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "question": "The rectangle shown has sides of length $\\sqrt{18}$ cm and $\\sqrt{8}$ cm.\n\nTom is asked for the exact perimeter and area. His working is shown below.\n\nPerimeter $= 2(\\sqrt{18} + \\sqrt{8}) = 2\\sqrt{26}$ cm\n\nArea $= \\sqrt{18} \\times \\sqrt{8} = \\sqrt{144} = 12\\ \\text{cm}^2$\n\nOne of Tom's answers is wrong. Identify the error, explain it, and give the correct answer in its simplest form.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 150\" width=\"260\" height=\"150\"><rect x=\"70\" y=\"30\" width=\"148.5\" height=\"99.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"144.2\" y=\"22\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">√18 cm</text><text x=\"62\" y=\"83.5\" text-anchor=\"end\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">√8 cm</text></svg>",
+  "hint": "Test Tom's rule with square numbers: is $\\sqrt{9} + \\sqrt{16}$ equal to $\\sqrt{25}$?",
+  "answer": "The perimeter is wrong: $\\sqrt{18} + \\sqrt{8} \\ne \\sqrt{26}$. Correct perimeter $= 10\\sqrt{2}$ cm. (The area, $12\\ \\text{cm}^2$, is correct.)",
+  "solution": "**The error** is in the perimeter: Tom wrote $\\sqrt{18} + \\sqrt{8} = \\sqrt{26}$. Roots cannot be added by adding the numbers underneath. For example $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$, but $\\sqrt{25} = 5$.\n\n(His area is fine, because multiplying roots **is** allowed: $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$.)\n\n**Correct method:** simplify each surd so they become like surds.\n$$\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}, \\qquad \\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}$$\n\n$$\\text{Perimeter} = 2(3\\sqrt{2} + 2\\sqrt{2}) = 2 \\times 5\\sqrt{2} = 10\\sqrt{2}\\ \\text{cm}$$\n\nCheck: $10\\sqrt{2} \\approx 14.1$, while $2\\sqrt{26} \\approx 10.2$, so Tom's answer was far too small."
+ },
+ {
+  "id": "num-surds-q09",
+  "topicId": "num-surds",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Leo is asked to simplify fully $\\sqrt{288} - \\sqrt{32}$. His working is shown below.\n\nLine 1: $\\sqrt{288} = \\sqrt{4 \\times 72} = 2\\sqrt{72}$\n\nLine 2: $\\sqrt{32} = \\sqrt{16 \\times 2} = 4\\sqrt{2}$\n\nLine 3: $2\\sqrt{72} - 4\\sqrt{2}$ cannot be simplified any further because they are not like surds.\n\nIdentify Leo's error, explain why it is wrong, and simplify the expression correctly.",
+  "hint": "Does 72 still have a square factor?",
+  "answer": "Line 1: $2\\sqrt{72}$ is not fully simplified; $\\sqrt{288} = 12\\sqrt{2}$, so $\\sqrt{288} - \\sqrt{32} = 8\\sqrt{2}$.",
+  "solution": "**The error is in Line 1.** Leo took out the square factor 4, but this is not the **largest** square factor of 288. Because 72 still contains a square factor ($72 = 36 \\times 2$), $2\\sqrt{72}$ is not in simplest form, and so Leo does not see that the two terms are like surds.\n\n**Correct working:** the largest square factor of 288 is 144.\n$$\\sqrt{288} = \\sqrt{144 \\times 2} = 12\\sqrt{2}$$\n(Leo's version agrees once finished: $2\\sqrt{72} = 2 \\times 6\\sqrt{2} = 12\\sqrt{2}$.)\n\n$$\\sqrt{32} = 4\\sqrt{2}$$\n\n$$\\sqrt{288} - \\sqrt{32} = 12\\sqrt{2} - 4\\sqrt{2} = 8\\sqrt{2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q10",
+  "topicId": "num-surds",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Aisha is asked to rationalise the denominator of $\\dfrac{4}{3 + \\sqrt{5}}$. Her working is shown below.\n\n$$\\frac{4}{3 + \\sqrt{5}} \\times \\frac{3 + \\sqrt{5}}{3 + \\sqrt{5}} = \\frac{12 + 4\\sqrt{5}}{9 + 6\\sqrt{5} + 5} = \\frac{12 + 4\\sqrt{5}}{14 + 6\\sqrt{5}}$$\n\nExplain what Aisha has done wrong, and rationalise the denominator correctly, giving your answer in the form $a + b\\sqrt{5}$.",
+  "hint": "What do you multiply $3 + \\sqrt{5}$ by to get an answer with no surd? Think about the difference of two squares.",
+  "answer": "She multiplied by the denominator itself instead of its conjugate $3 - \\sqrt{5}$; the correct answer is $3 - \\sqrt{5}$.",
+  "solution": "**The error:** Aisha multiplied top and bottom by $3 + \\sqrt{5}$, the denominator itself. Squaring $3 + \\sqrt{5}$ produces a cross term $6\\sqrt{5}$, so her denominator $14 + 6\\sqrt{5}$ still contains a surd and nothing has been rationalised.\n\n**Correct method:** multiply by the **conjugate** $3 - \\sqrt{5}$ (change the sign between the terms). The denominator becomes a difference of two squares:\n$$(3 + \\sqrt{5})(3 - \\sqrt{5}) = 9 - 5 = 4$$\n\nNumerator: $4(3 - \\sqrt{5}) = 12 - 4\\sqrt{5}$\n\n$$\\frac{4}{3 + \\sqrt{5}} = \\frac{12 - 4\\sqrt{5}}{4} = 3 - \\sqrt{5}$$\n\nCheck: $3 - \\sqrt{5} \\approx 0.764$ and $4 \\div (3 + 2.236) \\approx 0.764$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q11",
+  "topicId": "num-surds",
+  "difficulty": 3,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "question": "A square patio has an area of $72\\ \\text{m}^2$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the exact length of one side of the patio, giving your answer as a surd in its simplest form."
+   },
+   {
+    "label": "b",
+    "prompt": "A straight path runs along one diagonal of the patio. Show that the path is exactly 12 m long."
+   },
+   {
+    "label": "c",
+    "prompt": "Edging is to be fixed around the whole perimeter. It is sold in 1 m lengths costing £8.50 each. Work out the cost of the edging needed."
+   }
+  ],
+  "hint": "The side is $\\sqrt{72}$ m. For the diagonal, use Pythagoras with two equal sides.",
+  "answer": "(a) $6\\sqrt{2}$ m (b) $\\sqrt{72 + 72} = \\sqrt{144} = 12$ m (c) 34 lengths, £289",
+  "solution": "**(a)** Side $= \\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}$ m\n\n**(b)** By Pythagoras, diagonal$^2 = (6\\sqrt{2})^2 + (6\\sqrt{2})^2 = 72 + 72 = 144$, so the diagonal is $\\sqrt{144} = 12$ m exactly.\n\n(Equivalently, diagonal $= 6\\sqrt{2} \\times \\sqrt{2} = 6 \\times 2 = 12$ m.)\n\n**(c)** Perimeter $= 4 \\times 6\\sqrt{2} = 24\\sqrt{2} \\approx 33.94$ m\n\n33 lengths would only cover 33 m, so 34 lengths are needed.\n\nCost $= 34 \\times £8.50 = £289$"
+ },
+ {
+  "id": "num-surds-q12",
+  "topicId": "num-surds",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "geo-perimeter-area"
+  ],
+  "question": "Triangle $ABC$ has a right angle at $B$. $AB = (\\sqrt{5} - 1)$ cm and $BC = (\\sqrt{5} + 1)$ cm.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the exact length of $AC$, giving your answer as a surd in its simplest form."
+   },
+   {
+    "label": "b",
+    "prompt": "Show that the area of the triangle is a whole number of square centimetres."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 45 310 120\" width=\"310\" height=\"120\"><polygon points=\"110.0,68.2 110,130 271.8,130\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M110,120 L120,120 L120,130\" fill=\"none\" stroke=\"currentColor\"/><text x=\"104.0\" y=\"64.2\" text-anchor=\"end\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><text x=\"104\" y=\"144\" text-anchor=\"end\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">B</text><text x=\"277.8\" y=\"144\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">C</text><text x=\"102\" y=\"103.1\" text-anchor=\"end\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(√5 − 1) cm</text><text x=\"190.9\" y=\"150\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(√5 + 1) cm</text><text x=\"195.9\" y=\"86.0\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">h</text></svg>",
+  "hint": "Expand $(\\sqrt{5} - 1)^2$ and $(\\sqrt{5} + 1)^2$ separately, then add. For the area, look for a difference of two squares.",
+  "answer": "(a) $AC = 2\\sqrt{3}$ cm (b) Area $= 2\\ \\text{cm}^2$",
+  "solution": "**(a)** By Pythagoras, $AC^2 = AB^2 + BC^2$.\n$$(\\sqrt{5} - 1)^2 = 5 - 2\\sqrt{5} + 1 = 6 - 2\\sqrt{5}$$\n$$(\\sqrt{5} + 1)^2 = 5 + 2\\sqrt{5} + 1 = 6 + 2\\sqrt{5}$$\n$$AC^2 = (6 - 2\\sqrt{5}) + (6 + 2\\sqrt{5}) = 12$$\n$$AC = \\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}\\ \\text{cm}$$\n\n**(b)** Area $= \\frac{1}{2} \\times AB \\times BC = \\frac{1}{2}(\\sqrt{5} - 1)(\\sqrt{5} + 1)$\n\nThe brackets are a difference of two squares: $(\\sqrt{5} - 1)(\\sqrt{5} + 1) = 5 - 1 = 4$.\n\n$$\\text{Area} = \\frac{1}{2} \\times 4 = 2\\ \\text{cm}^2$$ which is a whole number."
+ },
+ {
+  "id": "num-surds-q13",
+  "topicId": "num-surds",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "alg-completing-the-square",
+   "geo-pythagoras"
+  ],
+  "question": "A rectangle has width $x$ cm and length $(x + 2)$ cm. Its area is $10\\ \\text{cm}^2$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $x^2 + 2x - 10 = 0$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact value of $x$, giving your answer in the form $\\sqrt{a} - b$."
+   },
+   {
+    "label": "c",
+    "prompt": "Show that the perimeter of the rectangle is $4\\sqrt{11}$ cm."
+   },
+   {
+    "label": "d",
+    "prompt": "Find the exact length of a diagonal of the rectangle, giving your answer as a surd in its simplest form."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 145\" width=\"260\" height=\"145\"><rect x=\"60\" y=\"30\" width=\"172.7\" height=\"92.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"146.3\" y=\"22\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(x + 2) cm</text><text x=\"52\" y=\"80.3\" text-anchor=\"end\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">x cm</text><text x=\"146.3\" y=\"80.3\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Area = 10 cm²</text></svg>",
+  "hint": "Complete the square or use the quadratic formula, and reject the negative solution because $x$ is a length.",
+  "answer": "(b) $x = \\sqrt{11} - 1$ (c) $4\\sqrt{11}$ cm (d) $2\\sqrt{6}$ cm",
+  "solution": "**(a)** Area $= x(x + 2) = 10$, so $x^2 + 2x = 10$ and $x^2 + 2x - 10 = 0$.\n\n**(b)** Complete the square:\n$$(x + 1)^2 - 1 - 10 = 0 \\Rightarrow (x + 1)^2 = 11 \\Rightarrow x = -1 \\pm \\sqrt{11}$$\n\n$x$ is a length so it must be positive: $x = \\sqrt{11} - 1$ (about 2.32). The other solution, $-1 - \\sqrt{11}$, is negative.\n\n**(c)** Length $= x + 2 = \\sqrt{11} + 1$.\n$$\\text{Perimeter} = 2\\big[(\\sqrt{11} - 1) + (\\sqrt{11} + 1)\\big] = 2 \\times 2\\sqrt{11} = 4\\sqrt{11}\\ \\text{cm}$$\n\n**(d)** By Pythagoras, diagonal$^2 = (\\sqrt{11} - 1)^2 + (\\sqrt{11} + 1)^2$\n$$= (12 - 2\\sqrt{11}) + (12 + 2\\sqrt{11}) = 24$$\n$$\\text{Diagonal} = \\sqrt{24} = \\sqrt{4 \\times 6} = 2\\sqrt{6}\\ \\text{cm}$$"
+ },
+ {
+  "id": "num-surds-q14",
+  "topicId": "num-surds",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write $\\sqrt{75}$ in the form $k\\sqrt{3}$, where $k$ is an integer.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $(5 + \\sqrt{3})(5 - \\sqrt{3}) = 22$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Hence, or otherwise, write $\\dfrac{44}{5 + \\sqrt{3}}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (c), multiply the top and bottom by $5 - \\sqrt{3}$ and use your answer to (b).",
+  "answer": "(a) $5\\sqrt{3}$ (b) $25 - 3 = 22$ (c) $10 - 2\\sqrt{3}$",
+  "solution": "**(a)** $\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$ **B1**\n\n**(b)** Expand all four terms:\n$$(5 + \\sqrt{3})(5 - \\sqrt{3}) = 25 - 5\\sqrt{3} + 5\\sqrt{3} - 3$$ **M1** (four terms, at least three correct)\n$$= 25 - 3 = 22$$ **A1** (the surd terms cancel)\n\n**(c)** Multiply numerator and denominator by $5 - \\sqrt{3}$:\n$$\\frac{44}{5 + \\sqrt{3}} \\times \\frac{5 - \\sqrt{3}}{5 - \\sqrt{3}} = \\frac{44(5 - \\sqrt{3})}{22}$$ **M1**\n$$= 2(5 - \\sqrt{3}) = 10 - 2\\sqrt{3}$$ **A1** ($a = 10$, $b = -2$)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q15",
+  "topicId": "num-surds",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ],
+  "question": "In this question you must show detailed reasoning. Solutions relying on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve the equation $x\\sqrt{8} - 6 = x\\sqrt{2}$, giving your answer in the form $k\\sqrt{2}$, where $k$ is an integer.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Express $\\dfrac{3 - \\sqrt{8}}{1 + \\sqrt{2}}$ in the form $a + b\\sqrt{2}$, where $a$ and $b$ are integers.",
+    "marks": 3
+   }
+  ],
+  "hint": "In (a), write $\\sqrt{8}$ as $2\\sqrt{2}$ and collect the $x$ terms. In (b), multiply by the conjugate of $1 + \\sqrt{2}$.",
+  "answer": "(a) $x = 3\\sqrt{2}$ (b) $-7 + 5\\sqrt{2}$ ($a = -7$, $b = 5$)",
+  "solution": "**(a)** $\\sqrt{8} = 2\\sqrt{2}$, so the equation is $2\\sqrt{2}x - 6 = \\sqrt{2}x$.\n\nCollect the $x$ terms: $2\\sqrt{2}x - \\sqrt{2}x = 6 \\Rightarrow \\sqrt{2}x = 6$ **M1**\n\n$$x = \\frac{6}{\\sqrt{2}} = \\frac{6\\sqrt{2}}{2}$$ **M1** (rationalising)\n$$x = 3\\sqrt{2}$$ **A1**\n\n**(b)** Multiply numerator and denominator by $1 - \\sqrt{2}$: **M1**\n\nDenominator: $(1 + \\sqrt{2})(1 - \\sqrt{2}) = 1 - 2 = -1$\n\nNumerator, with $\\sqrt{8} = 2\\sqrt{2}$:\n$$(3 - 2\\sqrt{2})(1 - \\sqrt{2}) = 3 - 3\\sqrt{2} - 2\\sqrt{2} + 4 = 7 - 5\\sqrt{2}$$ **M1** (expansion with $2\\sqrt{2} \\times \\sqrt{2} = 4$)\n\n$$\\frac{7 - 5\\sqrt{2}}{-1} = -7 + 5\\sqrt{2}$$ **A1**\n\nSo $a = -7$ and $b = 5$. (Check: $-7 + 5 \\times 1.414 \\approx 0.071$ and $(3 - 2.828) \\div 2.414 \\approx 0.071$.)"
+ },
+ {
+  "id": "num-surds-q16",
+  "topicId": "num-surds",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ],
+  "question": "A rectangle has area $(14 + 4\\sqrt{3})\\ \\text{cm}^2$ and width $(2 + \\sqrt{3})$ cm.\n\nFind the perimeter of the rectangle, giving your answer in the form $p + q\\sqrt{3}$, where $p$ and $q$ are integers.",
+  "hint": "Length = area ÷ width. Rationalise using the conjugate $2 - \\sqrt{3}$.",
+  "answer": "$36 - 10\\sqrt{3}$ cm",
+  "solution": "**Step 1: the length.**\n$$\\text{Length} = \\frac{14 + 4\\sqrt{3}}{2 + \\sqrt{3}} \\times \\frac{2 - \\sqrt{3}}{2 - \\sqrt{3}}$$\n\nDenominator: $(2 + \\sqrt{3})(2 - \\sqrt{3}) = 4 - 3 = 1$\n\nNumerator: $(14 + 4\\sqrt{3})(2 - \\sqrt{3}) = 28 - 14\\sqrt{3} + 8\\sqrt{3} - 12 = 16 - 6\\sqrt{3}$\n\nSo the length is $16 - 6\\sqrt{3}$ cm (about 5.6 cm, positive as it must be).\n\nCheck: $(2 + \\sqrt{3})(16 - 6\\sqrt{3}) = 32 - 12\\sqrt{3} + 16\\sqrt{3} - 18 = 14 + 4\\sqrt{3}$ ✓\n\n**Step 2: the perimeter.**\n$$2\\big[(2 + \\sqrt{3}) + (16 - 6\\sqrt{3})\\big] = 2(18 - 5\\sqrt{3}) = 36 - 10\\sqrt{3}\\ \\text{cm}$$"
+ },
+ {
+  "id": "num-surds-q17",
+  "topicId": "num-surds",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Given that $\\sqrt{11 + 6\\sqrt{2}} = p + q\\sqrt{2}$, where $p$ and $q$ are positive integers:",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "find $p$ and $q$"
+   },
+   {
+    "label": "b",
+    "prompt": "hence simplify $\\sqrt{11 + 6\\sqrt{2}} - \\sqrt{11 - 6\\sqrt{2}}$."
+   }
+  ],
+  "hint": "Square both sides and compare the rational parts and the $\\sqrt{2}$ parts.",
+  "answer": "(a) $p = 3$, $q = 1$ (b) $2\\sqrt{2}$",
+  "solution": "**(a)** Square both sides:\n$$11 + 6\\sqrt{2} = (p + q\\sqrt{2})^2 = p^2 + 2q^2 + 2pq\\sqrt{2}$$\n\nSince $p$ and $q$ are integers, compare the rational parts and the $\\sqrt{2}$ parts:\n$$p^2 + 2q^2 = 11, \\qquad 2pq = 6 \\Rightarrow pq = 3$$\n\nWith positive integers, $pq = 3$ gives $(p, q) = (1, 3)$ or $(3, 1)$.\n$(1, 3)$: $1 + 18 = 19 \\ne 11$. $(3, 1)$: $9 + 2 = 11$ ✓\n\nSo $p = 3$, $q = 1$: $\\sqrt{11 + 6\\sqrt{2}} = 3 + \\sqrt{2}$.\n\n**(b)** In the same way $(3 - \\sqrt{2})^2 = 9 - 6\\sqrt{2} + 2 = 11 - 6\\sqrt{2}$, and $3 - \\sqrt{2} > 0$, so $\\sqrt{11 - 6\\sqrt{2}} = 3 - \\sqrt{2}$.\n$$\\sqrt{11 + 6\\sqrt{2}} - \\sqrt{11 - 6\\sqrt{2}} = (3 + \\sqrt{2}) - (3 - \\sqrt{2}) = 2\\sqrt{2}$$\n\nNote: you cannot \"split\" the root as $\\sqrt{11} + \\sqrt{6\\sqrt{2}}$; roots do not distribute over addition.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-surds-q18",
+  "topicId": "num-surds",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ],
+  "question": "Prove that\n$$\\frac{1}{1 + \\sqrt{2}} + \\frac{1}{\\sqrt{2} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{4}} + \\cdots + \\frac{1}{\\sqrt{99} + \\sqrt{100}} = 9$$",
+  "hint": "Rationalise a general term $\\dfrac{1}{\\sqrt{n} + \\sqrt{n + 1}}$. What is the denominator after multiplying by the conjugate?",
+  "answer": "Each term equals $\\sqrt{n + 1} - \\sqrt{n}$, so the sum telescopes to $\\sqrt{100} - \\sqrt{1} = 10 - 1 = 9$.",
+  "solution": "Consider a general term, for $n = 1, 2, \\ldots, 99$:\n$$\\frac{1}{\\sqrt{n} + \\sqrt{n + 1}} \\times \\frac{\\sqrt{n + 1} - \\sqrt{n}}{\\sqrt{n + 1} - \\sqrt{n}} = \\frac{\\sqrt{n + 1} - \\sqrt{n}}{(n + 1) - n} = \\sqrt{n + 1} - \\sqrt{n}$$\n\nSo the sum is\n$$(\\sqrt{2} - \\sqrt{1}) + (\\sqrt{3} - \\sqrt{2}) + (\\sqrt{4} - \\sqrt{3}) + \\cdots + (\\sqrt{100} - \\sqrt{99})$$\n\nEvery surd except the first and last appears once with a plus sign and once with a minus sign, so they cancel (the sum \"telescopes\"):\n$$= \\sqrt{100} - \\sqrt{1} = 10 - 1 = 9$$ as required."
+ }
+]

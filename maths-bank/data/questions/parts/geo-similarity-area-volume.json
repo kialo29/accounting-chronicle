@@ -1,0 +1,310 @@
+[
+ {
+  "id": "geo-similarity-area-volume-q01",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Two shapes are mathematically similar. A length of 2 cm on the smaller shape corresponds to a length of 6 cm on the larger shape.\n\nThe area of the smaller shape is $5 \\text{ cm}^2$. Work out the area of the larger shape.",
+  "hint": "Find the length scale factor first. Area is two-dimensional, so the area scale factor is the length scale factor squared.",
+  "answer": "$45 \\text{ cm}^2$",
+  "solution": "Length scale factor:\n$$k = \\frac{6}{2} = 3$$\n\nArea is a 2D measurement, so the area scale factor is\n$$k^2 = 3^2 = 9$$\n\n$$\\text{Area} = 5 \\times 9 = 45 \\text{ cm}^2$$\n\n(Not $5 \\times 3 = 15$: every length is tripled in **both** directions, so the area is multiplied by $3 \\times 3$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q02",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Two solids are mathematically similar. A length of 2 cm on the smaller solid corresponds to a length of 6 cm on the larger solid.\n\nThe **volume** of the smaller solid is $5 \\text{ cm}^3$. Work out the volume of the larger solid.",
+  "hint": "Same lengths as before, but now the measurement is three-dimensional. Which power of the length scale factor do you need?",
+  "answer": "$135 \\text{ cm}^3$",
+  "solution": "**What changed:** the lengths are the same as in the previous question, but we now want a volume instead of an area.\n\nLength scale factor:\n$$k = \\frac{6}{2} = 3$$\n\nVolume is 3D, so the volume scale factor is\n$$k^3 = 3^3 = 27$$\n\n$$\\text{Volume} = 5 \\times 27 = 135 \\text{ cm}^3$$\n\nChanging from area to volume changed the multiplier from $3^2 = 9$ to $3^3 = 27$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q03",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Two solids are mathematically similar. A length of 2 cm on the smaller solid corresponds to a length of 6 cm on the larger solid.\n\nThe volume of the **larger** solid is $270 \\text{ cm}^3$. Work out the volume of the smaller solid.",
+  "hint": "The volume scale factor from small to large is the same as before. You are now going from large to small, so do you multiply or divide?",
+  "answer": "$10 \\text{ cm}^3$",
+  "solution": "**What changed:** we now know the larger volume and want the smaller one, so we go *against* the scale factor.\n\nLength scale factor (small to large): $k = \\dfrac{6}{2} = 3$, so the volume scale factor is $k^3 = 27$.\n\nGoing from large to small, divide:\n$$\\text{Volume} = 270 \\div 27 = 10 \\text{ cm}^3$$\n\nCheck: $10 \\times 27 = 270$ ✓. The smaller solid must have the smaller volume.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q04",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Two solids are mathematically similar. A length of 2 cm on the smaller solid corresponds to a length of 5 cm on the larger solid.\n\nThe volume of the smaller solid is $16 \\text{ cm}^3$. Work out the volume of the larger solid.",
+  "hint": "The length scale factor is no longer a whole number. Cube it carefully (or write it as a fraction).",
+  "answer": "$250 \\text{ cm}^3$",
+  "solution": "**What changed:** the larger length is now 5 cm, so the scale factor is not a whole number.\n\nLength scale factor:\n$$k = \\frac{5}{2} = 2.5$$\n\nVolume scale factor:\n$$k^3 = 2.5^3 = 15.625 \\quad \\left(\\text{or } \\frac{125}{8}\\right)$$\n\n$$\\text{Volume} = 16 \\times 15.625 = 250 \\text{ cm}^3$$\n\nUsing fractions: $16 \\times \\dfrac{125}{8} = 2 \\times 125 = 250$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q05",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A metre is 100 centimetres, so changing from metres to centimetres is like an enlargement with length scale factor 100.\n\nUse this idea to convert:",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "$3.5 \\text{ m}^2$ into $\\text{cm}^2$"
+   },
+   {
+    "label": "b",
+    "prompt": "$0.8 \\text{ m}^3$ into $\\text{cm}^3$"
+   },
+   {
+    "label": "c",
+    "prompt": "$4500 \\text{ mm}^2$ into $\\text{cm}^2$"
+   }
+  ],
+  "hint": "Area units scale by the length factor squared, volume units by the length factor cubed. There are 10 mm in 1 cm.",
+  "answer": "(a) $35\\,000 \\text{ cm}^2$ (b) $800\\,000 \\text{ cm}^3$ (c) $45 \\text{ cm}^2$",
+  "solution": "**(a)** Length factor 100, so area factor $100^2 = 10\\,000$:\n$$3.5 \\text{ m}^2 = 3.5 \\times 10\\,000 = 35\\,000 \\text{ cm}^2$$\n\n**(b)** Volume factor $100^3 = 1\\,000\\,000$:\n$$0.8 \\text{ m}^3 = 0.8 \\times 1\\,000\\,000 = 800\\,000 \\text{ cm}^3$$\n\n**(c)** $1 \\text{ cm} = 10 \\text{ mm}$, so $1 \\text{ cm}^2 = 10^2 = 100 \\text{ mm}^2$. Going from the smaller unit to the larger unit, divide:\n$$4500 \\text{ mm}^2 = 4500 \\div 100 = 45 \\text{ cm}^2$$\n\nA common error is to use the length factor, e.g. $3.5 \\text{ m}^2 = 350 \\text{ cm}^2$. Picture a $1 \\text{ m}$ by $1 \\text{ m}$ square: it is $100 \\text{ cm}$ by $100 \\text{ cm}$, which is $10\\,000 \\text{ cm}^2$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q06",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 1,
+  "type": "reasoning",
+  "question": "Tom says:\n\n\"If you double every length of a shape, its area doubles. If you double every edge of a cube, its volume doubles.\"\n\nUse a square of side 3 cm and a cube of edge 3 cm to show that Tom is wrong. State what actually happens to the area and to the volume.",
+  "hint": "Work out the area of a 3 cm square and a 6 cm square, then the volume of a 3 cm cube and a 6 cm cube.",
+  "answer": "Tom is wrong: the area is multiplied by 4 ($9 \\to 36 \\text{ cm}^2$) and the volume by 8 ($27 \\to 216 \\text{ cm}^3$).",
+  "solution": "**Square:** side 3 cm has area $3 \\times 3 = 9 \\text{ cm}^2$. Side 6 cm has area $6 \\times 6 = 36 \\text{ cm}^2$.\n$$36 \\div 9 = 4$$\nThe area is multiplied by 4, not 2.\n\n**Cube:** edge 3 cm has volume $3^3 = 27 \\text{ cm}^3$. Edge 6 cm has volume $6^3 = 216 \\text{ cm}^3$.\n$$216 \\div 27 = 8$$\nThe volume is multiplied by 8, not 2.\n\n**Why:** the length is doubled in every direction. Area uses two directions, so it is multiplied by $2 \\times 2 = 2^2 = 4$. Volume uses three directions, so it is multiplied by $2 \\times 2 \\times 2 = 2^3 = 8$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q07",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Two jugs are mathematically similar. The smaller jug is 15 cm tall and holds 540 ml. The larger jug is 25 cm tall.\n\nElla's working to find the capacity of the larger jug is shown below.\n\n$$k = \\frac{25}{15} = \\frac{5}{3}$$\n\n$$\\text{Capacity} = 540 \\times \\frac{5}{3} = 900 \\text{ ml}$$\n\nIdentify Ella's mistake, explain why it is wrong, and find the correct capacity.",
+  "hint": "Is capacity a length, an area or a volume?",
+  "answer": "Ella used the length scale factor for a capacity. The correct capacity is $2500$ ml.",
+  "solution": "Ella's scale factor $k = \\dfrac{5}{3}$ is correct, but it is a **length** scale factor. Her second line multiplies a capacity by $k$.\n\nCapacity is a volume, so it scales by $k^3$:\n$$k^3 = \\left(\\frac{5}{3}\\right)^3 = \\frac{125}{27}$$\n\n$$\\text{Capacity} = 540 \\times \\frac{125}{27} = 20 \\times 125 = 2500 \\text{ ml}$$\n\nSense check: the larger jug is about $1.7$ times as tall, but also $1.7$ times as wide and $1.7$ times as deep, so it holds about $1.7^3 \\approx 4.6$ times as much: $540 \\times 4.6 \\approx 2500$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q08",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Two solids are mathematically similar. Their surface areas are $45 \\text{ cm}^2$ and $125 \\text{ cm}^2$. The volume of the smaller solid is $81 \\text{ cm}^3$.\n\nKwame's working to find the volume of the larger solid is shown below.\n\n$$\\text{scale factor} = \\frac{125}{45} = \\frac{25}{9}$$\n\n$$\\text{Volume} = 81 \\times \\frac{25}{9} = 225 \\text{ cm}^3$$\n\nIdentify Kwame's error, explain it, and find the correct volume.",
+  "hint": "The ratio of the surface areas is the **area** scale factor. Get back to the length scale factor before you do anything with volumes.",
+  "answer": "Kwame used the area scale factor as the volume scale factor. The correct volume is $375 \\text{ cm}^3$.",
+  "solution": "Kwame's first line is right, but $\\dfrac{25}{9}$ is the **area** scale factor $k^2$. He then used it as if it were the volume scale factor. Area and volume factors are different powers of $k$, so you must go back to lengths first.\n\nLength scale factor:\n$$k^2 = \\frac{25}{9} \\Rightarrow k = \\sqrt{\\frac{25}{9}} = \\frac{5}{3}$$\n\nVolume scale factor:\n$$k^3 = \\left(\\frac{5}{3}\\right)^3 = \\frac{125}{27}$$\n\n$$\\text{Volume} = 81 \\times \\frac{125}{27} = 3 \\times 125 = 375 \\text{ cm}^3$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q09",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Two bronze statues are mathematically similar. The smaller statue is 30 cm tall and has a mass of 2.4 kg. The larger statue is 90 cm tall.\n\nSam says: \"The heights are in the ratio $1 : 3$, so the larger statue has mass $2.4 \\times 3^2 = 21.6$ kg.\"\n\nIs Sam correct? Justify your answer.",
+  "hint": "Both statues are solid bronze. What is mass proportional to: length, area or volume?",
+  "answer": "No. Mass is proportional to volume, so the mass is multiplied by $3^3 = 27$: the larger statue has mass $64.8$ kg.",
+  "solution": "Sam is **not** correct.\n\nBoth statues are made of the same material, so mass $=$ density $\\times$ volume, and the density is the same. Therefore mass scales in the same way as **volume**, not area.\n\nLength scale factor: $k = \\dfrac{90}{30} = 3$.\n\nVolume (and mass) scale factor: $k^3 = 27$.\n\n$$\\text{Mass} = 2.4 \\times 27 = 64.8 \\text{ kg}$$\n\nSam's factor $3^2 = 9$ would be right for a surface quantity, such as the amount of polish needed to cover the statue, but not for mass.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q10",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A shop sells paint in two tins that are mathematically similar.\n\n* The small tin is 12 cm tall, holds 1 litre and costs £8.50.\n* The large tin is 18 cm tall and costs £24.\n\nWhich tin is better value for money? You must show your working.",
+  "hint": "Find how much paint the large tin holds using the volume scale factor, then compare the cost per litre.",
+  "answer": "The large tin is better value: it holds $3.375$ litres, about £7.11 per litre, compared with £8.50 per litre for the small tin.",
+  "solution": "Length scale factor:\n$$k = \\frac{18}{12} = 1.5$$\n\nCapacity is a volume, so use $k^3$:\n$$k^3 = 1.5^3 = 3.375$$\n\nThe large tin holds $1 \\times 3.375 = 3.375$ litres.\n\nCost per litre:\n* small tin: £8.50 per litre\n* large tin: $24 \\div 3.375 = 7.111\\ldots$, about £7.11 per litre\n\nThe large tin is cheaper per litre, so it is better value.\n\n(Alternative: $3.375$ litres in small tins would cost $3.375 \\times 8.50 = £28.69$, more than £24.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q11",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 6,
+  "question": "Cylinder A and cylinder B are mathematically similar.\n\nThe surface area of cylinder A is $72 \\text{ cm}^2$. The surface area of cylinder B is $162 \\text{ cm}^2$. The volume of cylinder B is $405 \\text{ cm}^3$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><ellipse cx=\"90\" cy=\"90\" rx=\"30\" ry=\"8.4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M60 90 L60 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M120 90 L120 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M60 170 A30 8.4 0 0 0 120 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M60 170 A30 8.4 0 0 1 120 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"90\" y=\"120\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text><ellipse cx=\"220\" cy=\"50\" rx=\"45\" ry=\"12.6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M175 50 L175 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M265 50 L265 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M175 170 A45 12.6 0 0 0 265 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M175 170 A45 12.6 0 0 1 265 170\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"220\" y=\"100\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the volume of cylinder A.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "The height of cylinder A is 8 cm. Work out the height of cylinder B.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Both cylinders are made of the same metal. Cylinder A has a mass of 960 g. Work out the mass of cylinder B.",
+    "marks": 2
+   }
+  ],
+  "hint": "Turn the ratio of surface areas into a length scale factor first.",
+  "answer": "(a) $120 \\text{ cm}^3$ (b) 12 cm (c) 3240 g",
+  "solution": "**(a)** Area scale factor (A to B):\n$$k^2 = \\frac{162}{72} = 2.25 \\quad \\text{M1}$$\n\n$$k = \\sqrt{2.25} = 1.5, \\quad k^3 = 1.5^3 = 3.375 \\quad \\text{M1}$$\n\nB is the larger cylinder, so divide:\n$$V_A = 405 \\div 3.375 = 120 \\text{ cm}^3 \\quad \\text{A1}$$\n\n**(b)** Heights use the length scale factor:\n$$8 \\times 1.5 = 12 \\text{ cm} \\quad \\text{B1}$$\n\n**(c)** Same metal, so mass scales like volume:\n$$960 \\times 3.375 \\quad \\text{M1}$$\n$$= 3240 \\text{ g} \\quad \\text{A1}$$\n\n(Alternative for (c): density $= 960 \\div 120 = 8 \\text{ g/cm}^3$, and $8 \\times 405 = 3240$ g.)",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q12",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A glass is in the shape of a cone with its vertex at the bottom. The glass is 15 cm deep and holds 360 ml when full.\n\nWater is poured into the glass to a depth of 10 cm, as shown.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\"><path d=\"M120 110 L180 250 L240 110 Z\" stroke=\"currentColor\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke-width=\"0\"/><ellipse cx=\"180\" cy=\"110\" rx=\"60\" ry=\"9.6\" stroke=\"currentColor\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke-width=\"1.5\"/><ellipse cx=\"180\" cy=\"40\" rx=\"90\" ry=\"14.4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M90 40 L180 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M270 40 L180 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M60 40 L60 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M54 40 L66 40\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M54 250 L66 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><text x=\"36\" y=\"145\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">15 cm</text><path d=\"M300 110 L300 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M294 110 L306 110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M294 250 L306 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><text x=\"326\" y=\"180\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">10 cm</text><path d=\"M240 110 L300 110\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M180 250 L300 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/><path d=\"M180 250 L60 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the volume of water in the glass, to the nearest millilitre."
+   },
+   {
+    "label": "b",
+    "prompt": "Water is now poured out until the glass is exactly half full by volume. Find the depth of the water, to 3 significant figures."
+   }
+  ],
+  "hint": "The water forms a smaller cone that is similar to the whole glass. Compare depths to get the length scale factor.",
+  "answer": "(a) 107 ml (b) 11.9 cm",
+  "solution": "The water occupies a cone that is mathematically similar to the full glass (same vertex, same slant).\n\n**(a)** Length scale factor (glass to water):\n$$k = \\frac{10}{15} = \\frac{2}{3}$$\n\nVolume scale factor:\n$$k^3 = \\frac{8}{27}$$\n\n$$\\text{Water} = 360 \\times \\frac{8}{27} = 106.66\\ldots \\approx 107 \\text{ ml}$$\n\n**(b)** Now work backwards. Half full means the volume scale factor is $\\dfrac{1}{2}$:\n$$k^3 = \\frac{1}{2} \\Rightarrow k = \\sqrt[3]{0.5} = 0.7937\\ldots$$\n\n$$\\text{Depth} = 15 \\times 0.7937\\ldots = 11.905\\ldots \\approx 11.9 \\text{ cm}$$\n\nNotice that a glass that is half full by volume is filled to about $79\\%$ of its depth: the wide top holds most of the water. A depth of 7.5 cm would only be $\\left(\\frac{1}{2}\\right)^3 = \\frac{1}{8}$ full.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q13",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "rat-ratio-sharing"
+  ],
+  "question": "Two solids are mathematically similar. Their surface areas are in the ratio $4 : 9$.\n\nThe total volume of the two solids is $1120 \\text{ cm}^3$.\n\nWork out the volume of each solid.",
+  "hint": "Turn the area ratio into a length ratio, then a volume ratio. Then share 1120 in that ratio.",
+  "answer": "$256 \\text{ cm}^3$ and $864 \\text{ cm}^3$",
+  "solution": "Area ratio $4 : 9$, so the length ratio is\n$$\\sqrt{4} : \\sqrt{9} = 2 : 3$$\n\nVolume ratio:\n$$2^3 : 3^3 = 8 : 27$$\n\nShare $1120 \\text{ cm}^3$ in the ratio $8 : 27$. Total parts $= 35$, so one part is\n$$1120 \\div 35 = 32 \\text{ cm}^3$$\n\n$$\\text{Smaller} = 8 \\times 32 = 256 \\text{ cm}^3, \\qquad \\text{Larger} = 27 \\times 32 = 864 \\text{ cm}^3$$\n\nCheck: $256 + 864 = 1120$ ✓.",
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-similarity-area-volume-q14",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ],
+  "question": "Two mathematically similar vases have volumes $250 \\text{ cm}^3$ and $686 \\text{ cm}^3$. The smaller vase has a surface area of $80 \\text{ cm}^2$.\n\n(a) Show that the area scale factor is $\\left(\\dfrac{343}{125}\\right)^{\\frac{2}{3}}$.\n\n(b) Without a calculator, work out the surface area of the larger vase.",
+  "hint": "Volume factor $= k^3$ and area factor $= k^2$, so area factor $= (\\text{volume factor})^{2/3}$. For a fractional index, take the root first, then the power.",
+  "answer": "(a) Shown. (b) $156.8 \\text{ cm}^2$",
+  "solution": "**(a)** Volume scale factor:\n$$k^3 = \\frac{686}{250} = \\frac{343}{125}$$\n\nSo $k = \\left(\\dfrac{343}{125}\\right)^{\\frac{1}{3}}$, and the area scale factor is\n$$k^2 = \\left(\\left(\\frac{343}{125}\\right)^{\\frac{1}{3}}\\right)^2 = \\left(\\frac{343}{125}\\right)^{\\frac{2}{3}}$$\n\n**(b)** Take the cube root first: $343 = 7^3$ and $125 = 5^3$, so\n$$\\left(\\frac{343}{125}\\right)^{\\frac{1}{3}} = \\frac{7}{5}, \\qquad \\left(\\frac{343}{125}\\right)^{\\frac{2}{3}} = \\left(\\frac{7}{5}\\right)^2 = \\frac{49}{25}$$\n\n$$\\text{Surface area} = 80 \\times \\frac{49}{25} = \\frac{3920}{25} = 156.8 \\text{ cm}^2$$\n\nNote: using the volume factor $\\frac{343}{125}$ directly on the area (giving $219.52 \\text{ cm}^2$) is a common error.",
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-similarity-area-volume-q15",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A solid has surface area $A$ and volume $V$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that if two solids are mathematically similar, then $\\dfrac{A^3}{V^2}$ has the same value for both solids."
+   },
+   {
+    "label": "b",
+    "prompt": "A cube has edge 5 cm. A solid that is mathematically similar to the cube has volume $1000 \\text{ cm}^3$. Use part (a) to find its surface area."
+   },
+   {
+    "label": "c",
+    "prompt": "Lena claims that a solid with surface area $96 \\text{ cm}^2$ and volume $60 \\text{ cm}^3$ is mathematically similar to the cube in part (b). Is she correct? Justify your answer."
+   }
+  ],
+  "hint": "If the length scale factor is $k$, write the second solid's area and volume in terms of $A$, $V$ and $k$. Then form $\\frac{A^3}{V^2}$ and watch the powers of $k$.",
+  "answer": "(a) Proof: $\\dfrac{(k^2A)^3}{(k^3V)^2} = \\dfrac{k^6A^3}{k^6V^2} = \\dfrac{A^3}{V^2}$. (b) $600 \\text{ cm}^2$ (c) No: $\\dfrac{96^3}{60^2} = 245.76$ but for the cube $\\dfrac{150^3}{125^2} = 216$.",
+  "solution": "**(a)** Let the second solid be an enlargement of the first with length scale factor $k$. Then its surface area is $k^2A$ and its volume is $k^3V$.\n$$\\frac{(k^2A)^3}{(k^3V)^2} = \\frac{k^6A^3}{k^6V^2} = \\frac{A^3}{V^2}$$\nThe powers of $k$ cancel, so the value is the same for both solids. $\\blacksquare$\n\n**(b)** For the cube: $A = 6 \\times 5^2 = 150 \\text{ cm}^2$, $V = 5^3 = 125 \\text{ cm}^3$, so\n$$\\frac{A^3}{V^2} = \\frac{150^3}{125^2} = \\frac{3\\,375\\,000}{15\\,625} = 216$$\n\nFor the similar solid:\n$$\\frac{A^3}{1000^2} = 216 \\Rightarrow A^3 = 216\\,000\\,000 \\Rightarrow A = 600 \\text{ cm}^2$$\n\n(Check with scale factors: $k^3 = 1000 \\div 125 = 8$, so $k = 2$ and $A = 150 \\times 4 = 600$ ✓.)\n\n**(c)** For Lena's solid:\n$$\\frac{96^3}{60^2} = \\frac{884\\,736}{3600} = 245.76 \\ne 216$$\n\nBy part (a), similar solids must give equal values, so Lena's solid **cannot** be similar to the cube. She is wrong.\n\n(Note: equal values would not *prove* two solids similar, because solids of different shapes can share the same value. The test can only rule similarity out.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-similarity-area-volume-q16",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 5,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "rat-density-pressure"
+  ],
+  "question": "A film designer wants a giant that is mathematically similar to a real person.\n\nThe person is 1.8 m tall, has a weight of 800 newtons and stands on feet with a total area of $400 \\text{ cm}^2$ in contact with the ground. The giant is to be 5.4 m tall.\n\n(a) Work out the pressure under the person's feet, in $\\text{N/m}^2$.\n\n(b) Work out the pressure under the giant's feet, in $\\text{N/m}^2$.\n\n(c) Use your answers to explain why a real giant of this shape would struggle to stand.",
+  "hint": "Weight scales like mass (volume), but the area of the feet scales like area. Convert $\\text{cm}^2$ to $\\text{m}^2$ carefully: $1 \\text{ m}^2 = 10\\,000 \\text{ cm}^2$. Pressure $=$ force $\\div$ area.",
+  "answer": "(a) $20\\,000 \\text{ N/m}^2$ (b) $60\\,000 \\text{ N/m}^2$ (c) The pressure is 3 times as great, because weight scales by $k^3 = 27$ but foot area only by $k^2 = 9$.",
+  "solution": "**(a)** Convert the area: $1 \\text{ m}^2 = 100^2 = 10\\,000 \\text{ cm}^2$, so\n$$400 \\text{ cm}^2 = 400 \\div 10\\,000 = 0.04 \\text{ m}^2$$\n\n$$\\text{Pressure} = \\frac{800}{0.04} = 20\\,000 \\text{ N/m}^2$$\n\n**(b)** Length scale factor $k = \\dfrac{5.4}{1.8} = 3$.\n\nWeight is proportional to mass, which scales like volume (same material): $800 \\times 3^3 = 800 \\times 27 = 21\\,600$ N.\n\nFoot area scales like area: $0.04 \\times 3^2 = 0.36 \\text{ m}^2$.\n\n$$\\text{Pressure} = \\frac{21\\,600}{0.36} = 60\\,000 \\text{ N/m}^2$$\n\n**(c)** The pressure is $60\\,000 \\div 20\\,000 = 3$ times as large. In general it is multiplied by $\\dfrac{k^3}{k^2} = k$: weight grows with the cube of the scale factor but the supporting area only with the square. The giant's feet (and, by the same argument, its bones' cross-sections) would carry 3 times the stress of a human's, so it would struggle to support itself. This is why large animals such as elephants have proportionally much thicker legs.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-similarity-area-volume-q17",
+  "topicId": "geo-similarity-area-volume",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A solid cone of height 30 cm is cut by two planes parallel to its base.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><path d=\"M80 250 L180 30\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><path d=\"M280 250 L180 30\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><ellipse cx=\"180\" cy=\"250\" rx=\"100\" ry=\"18\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><ellipse cx=\"180\" cy=\"103.3\" rx=\"33.3\" ry=\"6\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><ellipse cx=\"180\" cy=\"176.7\" rx=\"66.7\" ry=\"12\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><text x=\"180\" y=\"84.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text><text x=\"180\" y=\"146\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">Q</text><text x=\"180\" y=\"219.3\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><path d=\"M310 30 L310 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M304 30 L316 30\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><path d=\"M304 250 L316 250\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\"/><text x=\"336\" y=\"140\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">30 cm</text><path d=\"M180 30 L310 30\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1\" stroke-dasharray=\"5 4\"/></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "The cuts are made 10 cm and 20 cm from the vertex, splitting the cone into a small cone P and two frustums Q and R, as shown. Find the ratio of volumes $P : Q : R$ in its simplest form."
+   },
+   {
+    "label": "b",
+    "prompt": "Instead, the cuts are to be placed so that the three pieces have **equal** volumes. How far from the vertex should each cut be made? Give your answers to 3 significant figures."
+   }
+  ],
+  "hint": "Each cut creates a cone, measured from the vertex, that is similar to the whole cone. Work with the volumes of these cones, then subtract to get the frustums.",
+  "answer": "(a) $1 : 7 : 19$ (b) 20.8 cm and 26.2 cm from the vertex",
+  "solution": "Let the volume of the whole cone be $V$. Every cone measured from the vertex is similar to the whole cone.\n\n**(a)** The cone above the first cut has height 10 cm, so $k = \\frac{1}{3}$ and its volume is $\\frac{1}{27}V$.\n\nThe cone above the second cut has height 20 cm, so $k = \\frac{2}{3}$ and its volume is $\\frac{8}{27}V$.\n\n$$P = \\frac{1}{27}V, \\quad Q = \\frac{8}{27}V - \\frac{1}{27}V = \\frac{7}{27}V, \\quad R = V - \\frac{8}{27}V = \\frac{19}{27}V$$\n\n$$P : Q : R = 1 : 7 : 19$$\n\nSo equal heights give very unequal volumes: the bottom third of the cone holds over $70\\%$ of it.\n\n**(b)** For equal volumes, the cone above the first cut must have volume $\\frac{1}{3}V$ and the cone above the second cut $\\frac{2}{3}V$.\n\nFirst cut: $k^3 = \\frac{1}{3} \\Rightarrow k = \\sqrt[3]{\\frac{1}{3}} = 0.6933\\ldots$\n$$\\text{distance} = 30 \\times 0.6933\\ldots = 20.80\\ldots \\approx 20.8 \\text{ cm}$$\n\nSecond cut: $k^3 = \\frac{2}{3} \\Rightarrow k = \\sqrt[3]{\\frac{2}{3}} = 0.8736\\ldots$\n$$\\text{distance} = 30 \\times 0.8736\\ldots = 26.20\\ldots \\approx 26.2 \\text{ cm}$$\n\nCheck: $\\left(\\frac{20.8}{30}\\right)^3 \\approx 0.333$ and $\\left(\\frac{26.2}{30}\\right)^3 \\approx 0.666$ ✓.",
+  "linkedTopicIds": []
+ }
+]

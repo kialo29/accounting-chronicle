@@ -1,0 +1,288 @@
+[
+ {
+  "id": "num-negative-fractional-indices-q01",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $8^{\\frac{1}{3}}$.",
+  "hint": "A power of $\\frac{1}{3}$ means a cube root.",
+  "answer": "$2$",
+  "solution": "$8^{\\frac{1}{3}} = \\sqrt[3]{8}$.\n\nSince $2 \\times 2 \\times 2 = 8$,\n$$8^{\\frac{1}{3}} = 2$$\n\nWhy a cube root? By the index laws $8^{\\frac13} \\times 8^{\\frac13} \\times 8^{\\frac13} = 8^{1} = 8$, so $8^{\\frac13}$ is the number that multiplies by itself three times to give 8. (It is **not** $8 \\div 3$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q02",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $8^{\\frac{2}{3}}$.",
+  "hint": "The denominator 3 tells you which root to take; the numerator 2 tells you which power.",
+  "answer": "$4$",
+  "solution": "What changed: the numerator of the index went from 1 to 2, so we now square the cube root.\n\n$$8^{\\frac{2}{3}} = \\left(8^{\\frac{1}{3}}\\right)^2 = \\left(\\sqrt[3]{8}\\right)^2 = 2^2 = 4$$\n\nDenominator = root, numerator = power. Taking the root first keeps the numbers small.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q03",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $8^{-\\frac{2}{3}}$.",
+  "hint": "A negative index means 'one over'. Deal with the minus sign first.",
+  "answer": "$\\dfrac{1}{4}$",
+  "solution": "What changed: the index is now negative. A negative index means take the reciprocal – it does **not** make the answer negative.\n\n$$8^{-\\frac{2}{3}} = \\frac{1}{8^{\\frac{2}{3}}} = \\frac{1}{4}$$\n\n(using $8^{\\frac{2}{3}} = 4$ from the previous question).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q04",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $\\left(\\dfrac{1}{8}\\right)^{-\\frac{2}{3}}$.",
+  "hint": "The minus sign tells you to flip the **base**, $\\frac{1}{8}$, not the index.",
+  "answer": "$4$",
+  "solution": "What changed: the base is now $\\frac{1}{8}$ instead of 8.\n\nThe negative index flips the base: the reciprocal of $\\frac{1}{8}$ is $8$.\n$$\\left(\\frac{1}{8}\\right)^{-\\frac{2}{3}} = 8^{\\frac{2}{3}} = \\left(\\sqrt[3]{8}\\right)^2 = 2^2 = 4$$\n\nNotice that flipping the base and changing the sign of the index cancel each other out: $\\left(\\frac{1}{8}\\right)^{-\\frac{2}{3}} = 8^{\\frac{2}{3}}$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q05",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the value of each of these. Give fractions in their simplest form.\n\n(a) $5^{-2}$\n\n(b) $10^{-1}$\n\n(c) $\\left(\\dfrac{3}{4}\\right)^{-1}$\n\n(d) $7^0$",
+  "hint": "$a^{-n} = \\dfrac{1}{a^n}$. A power of $-1$ just gives the reciprocal.",
+  "answer": "(a) $\\dfrac{1}{25}$ (b) $\\dfrac{1}{10}$ (or 0.1) (c) $\\dfrac{4}{3}$ (d) $1$",
+  "solution": "(a) $5^{-2} = \\dfrac{1}{5^2} = \\dfrac{1}{25}$ – positive, not $-25$.\n\n(b) $10^{-1} = \\dfrac{1}{10} = 0.1$\n\n(c) The reciprocal of $\\dfrac{3}{4}$ is $\\dfrac{4}{3}$, so $\\left(\\dfrac{3}{4}\\right)^{-1} = \\dfrac{4}{3}$.\n\n(d) Any non-zero number to the power 0 is 1: $7^0 = 1$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q06",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Rational exponents and radicals (roots) are two ways of writing the same thing.\n\n(a) Write $\\sqrt[5]{x^3}$ in the form $x^p$.\n\n(b) Write $x^{\\frac{4}{3}}$ using a root sign.\n\n(c) Write $\\dfrac{1}{\\sqrt{x}}$ in the form $x^p$.\n\n(d) Write $\\dfrac{1}{\\sqrt[3]{x^2}}$ in the form $x^p$.",
+  "hint": "$\\sqrt[n]{x^m} = x^{\\frac{m}{n}}$: the root goes in the denominator of the index. 'One over' gives a negative index.",
+  "answer": "(a) $x^{\\frac{3}{5}}$ (b) $\\sqrt[3]{x^4}$ or $\\left(\\sqrt[3]{x}\\right)^4$ (c) $x^{-\\frac{1}{2}}$ (d) $x^{-\\frac{2}{3}}$",
+  "solution": "(a) Fifth root → denominator 5; power 3 → numerator 3: $\\sqrt[5]{x^3} = x^{\\frac{3}{5}}$.\n\n(b) Denominator 3 → cube root; numerator 4 → fourth power:\n$$x^{\\frac{4}{3}} = \\sqrt[3]{x^4} = \\left(\\sqrt[3]{x}\\right)^4$$\n\n(c) $\\sqrt{x} = x^{\\frac{1}{2}}$, and 'one over' makes the index negative: $\\dfrac{1}{\\sqrt{x}} = x^{-\\frac{1}{2}}$.\n\n(d) $\\sqrt[3]{x^2} = x^{\\frac{2}{3}}$, so $\\dfrac{1}{\\sqrt[3]{x^2}} = x^{-\\frac{2}{3}}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q07",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Kai says:\n\n'$64^{\\frac{1}{2}} = 32$, because a half of 64 is 32.'\n\nIs Kai correct? Use the index laws to explain your answer.",
+  "hint": "Work out $64^{\\frac12} \\times 64^{\\frac12}$ using the law for multiplying powers. What must $64^{\\frac12}$ be?",
+  "answer": "No. $64^{\\frac{1}{2}} = \\sqrt{64} = 8$, because $64^{\\frac12} \\times 64^{\\frac12} = 64^1 = 64$. Kai has divided by 2 instead of taking the square root.",
+  "solution": "Kai is **not** correct. He has treated the index $\\frac{1}{2}$ as 'multiply by $\\frac12$'.\n\nUsing the multiplication law (add the indices):\n$$64^{\\frac{1}{2}} \\times 64^{\\frac{1}{2}} = 64^{\\frac{1}{2} + \\frac{1}{2}} = 64^1 = 64$$\n\nSo $64^{\\frac12}$ is a number which, multiplied by itself, gives 64. That is the square root:\n$$64^{\\frac{1}{2}} = \\sqrt{64} = 8$$\n\nKai's answer fails this test: $32 \\times 32 = 1024$, not 64.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q08",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Chloe is asked to find the value of $\\left(\\dfrac{4}{9}\\right)^{-\\frac{1}{2}}$. Her working is shown.\n\n$$\\begin{aligned} \\left(\\frac{4}{9}\\right)^{-\\frac{1}{2}} &= \\left(\\frac{4}{9}\\right)^{2} \\\\ &= \\frac{16}{81} \\end{aligned}$$\n\nExplain Chloe's mistake and find the correct value.",
+  "hint": "What does the minus sign in an index tell you to take the reciprocal of?",
+  "answer": "Chloe flipped the index instead of the base. Correct value: $\\dfrac{3}{2}$",
+  "solution": "**Error in the first line.** Chloe took the reciprocal of the **index** ($-\\frac12 \\to 2$). A negative index means take the reciprocal of the **base**; the $\\frac{1}{2}$ still means square root.\n\n**Correct working:**\n$$\\left(\\frac{4}{9}\\right)^{-\\frac{1}{2}} = \\left(\\frac{9}{4}\\right)^{\\frac{1}{2}} = \\sqrt{\\frac{9}{4}} = \\frac{3}{2}$$\n\nSense check: a square root of a number less than 1 is bigger than the number, and the reciprocal of a number less than 1 is bigger than 1, so the answer should be bigger than 1. $\\frac{16}{81}$ is not.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q09",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Marcus finds the value of $64^{\\frac{2}{3}}$ like this.\n\n$$\\begin{aligned} 64^{\\frac{2}{3}} &= \\sqrt{64^3} \\\\ &= \\sqrt{262\\,144} \\\\ &= 512 \\end{aligned}$$\n\n(a) Identify Marcus's mistake.\n\n(b) Find the correct value of $64^{\\frac{2}{3}}$ without a calculator.",
+  "hint": "Which part of the fraction $\\frac{2}{3}$ tells you the root, and which tells you the power?",
+  "answer": "(a) He swapped the root and the power: he square-rooted the cube instead of squaring the cube root. (b) $16$",
+  "solution": "(a) In the first line Marcus wrote $64^{\\frac23} = \\sqrt{64^3}$. That is $64^{\\frac{3}{2}}$: he used the numerator as the root and the denominator as the power. In $a^{\\frac{m}{n}}$ the **denominator** $n$ is the root and the **numerator** $m$ is the power.\n\n(b)\n$$64^{\\frac{2}{3}} = \\left(\\sqrt[3]{64}\\right)^2 = 4^2 = 16$$\nsince $4^3 = 64$.\n\n(Marcus's 512 is actually the value of $64^{\\frac32} = 8^3$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q10",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked for the exact value of $\\left(\\dfrac{27}{8}\\right)^{-\\frac{2}{3}}$. His working is below.\n\n$$\\begin{aligned} \\left(\\frac{27}{8}\\right)^{-\\frac{2}{3}} &= -\\left(\\frac{27}{8}\\right)^{\\frac{2}{3}} \\\\ &= -\\left(\\frac{3}{2}\\right)^{2} \\\\ &= -\\frac{9}{4} \\end{aligned}$$\n\nFind Ben's error, explain it, and give the correct answer.",
+  "hint": "Can a positive number raised to any power ever give a negative answer?",
+  "answer": "Ben treated the negative index as making the answer negative. Correct value: $\\dfrac{4}{9}$",
+  "solution": "**Error in the first line.** Ben moved the minus sign out in front, as if a negative index makes the answer negative. A negative index means **reciprocal**: $a^{-n} = \\dfrac{1}{a^n}$. A positive base to any power is positive.\n\nHis root and power steps were fine; he just needed to flip instead of negate.\n\n**Correct working:**\n$$\\left(\\frac{27}{8}\\right)^{-\\frac{2}{3}} = \\left(\\frac{8}{27}\\right)^{\\frac{2}{3}} = \\left(\\sqrt[3]{\\frac{8}{27}}\\right)^{2} = \\left(\\frac{2}{3}\\right)^{2} = \\frac{4}{9}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q11",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Simplify fully, giving answers without negative indices.\n\n(a) $(27x^6)^{-\\frac{2}{3}}$\n\n(b) $\\left(\\dfrac{16a^8}{b^4}\\right)^{\\frac{3}{4}}$\n\n(c) $\\dfrac{6x^{\\frac{3}{2}} \\times 2x^{-1}}{4x^{\\frac{1}{2}}}$",
+  "hint": "Apply the index to every factor in the bracket. For the numbers, root first then power. For the letters, multiply the indices.",
+  "answer": "(a) $\\dfrac{1}{9x^4}$ (b) $\\dfrac{8a^6}{b^3}$ (c) $3$",
+  "solution": "(a) Numbers: $27^{-\\frac23} = \\dfrac{1}{27^{\\frac23}} = \\dfrac{1}{(\\sqrt[3]{27})^2} = \\dfrac{1}{9}$.\n\nLetters: $(x^6)^{-\\frac23} = x^{6 \\times (-\\frac23)} = x^{-4} = \\dfrac{1}{x^4}$.\n\nSo $(27x^6)^{-\\frac{2}{3}} = \\dfrac{1}{9x^4}$.\n\n(b) $16^{\\frac34} = (\\sqrt[4]{16})^3 = 2^3 = 8$; $(a^8)^{\\frac34} = a^6$; $(b^4)^{\\frac34} = b^3$.\n\nSo $\\left(\\dfrac{16a^8}{b^4}\\right)^{\\frac{3}{4}} = \\dfrac{8a^6}{b^3}$.\n\n(c) Numbers: $\\dfrac{6 \\times 2}{4} = 3$. Indices: $\\frac32 + (-1) - \\frac12 = 0$, so the $x$ part is $x^0 = 1$.\n\nSo the expression equals $3$ (for $x > 0$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q12",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": false,
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the value of $49^{\\frac{1}{2}}$",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the value of $125^{-\\frac{2}{3}}$",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "$\\sqrt{8} \\times 2^k = 32$. Find the value of $k$.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (c), write $\\sqrt{8}$ and 32 as powers of 2.",
+  "answer": "(a) $7$ (b) $\\dfrac{1}{25}$ (c) $k = \\dfrac{7}{2}$",
+  "solution": "(a) $49^{\\frac12} = \\sqrt{49} = 7$ **B1**\n\n(b) $125^{-\\frac23} = \\dfrac{1}{125^{\\frac23}}$ and $125^{\\frac23} = (\\sqrt[3]{125})^2 = 5^2 = 25$ **M1** (for the reciprocal or for 25 seen)\n\n$= \\dfrac{1}{25}$ **A1**\n\n(c) $\\sqrt{8} = (2^3)^{\\frac12} = 2^{\\frac32}$ and $32 = 2^5$, so $2^{\\frac32 + k} = 2^5$ **M1**\n\n$k = 5 - \\dfrac32 = \\dfrac{7}{2}$ **A1** (accept 3.5)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q13",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Biologists use Kleiber's law to estimate the energy an animal needs each day. For an animal of mass $M$ kg, the daily energy needed, $P$ kilocalories, is approximately\n$$P = 70M^{\\frac{3}{4}}$$\n\n(a) Without a calculator, find $P$ for a dog of mass 16 kg.\n\n(b) A sheep has mass 81 kg. Find $P$ for the sheep.\n\n(c) The sheep is about 5 times as heavy as the dog. How many times as much energy does it need per day? Comment on your answer.",
+  "hint": "$M^{\\frac34}$: take the fourth root first, then cube.",
+  "answer": "(a) 560 kcal (b) 1890 kcal (c) $\\dfrac{27}{8} = 3.375$ times as much – less than 5 times, so bigger animals need less energy per kg.",
+  "solution": "(a) $16^{\\frac34} = (\\sqrt[4]{16})^3 = 2^3 = 8$, so $P = 70 \\times 8 = 560$ kilocalories per day.\n\n(b) $81^{\\frac34} = (\\sqrt[4]{81})^3 = 3^3 = 27$, so $P = 70 \\times 27 = 1890$ kilocalories per day.\n\n(c) $\\dfrac{1890}{560} = \\dfrac{27}{8} = 3.375$.\n\n(Equivalently $\\left(\\frac{81}{16}\\right)^{\\frac34} = \\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8}$.)\n\nThe sheep is $\\frac{81}{16} \\approx 5$ times as heavy but needs only about 3.4 times as much energy, because the power $\\frac34$ is less than 1. Per kilogram of body mass, larger animals need less energy.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q14",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Solve the equation\n$$\\frac{27^{x}}{9^{2x-1}} = \\sqrt{3} \\times 81^{x}$$",
+  "hint": "Write every term as a power of 3, simplify each side to a single power of 3, then equate the indices.",
+  "answer": "$x = \\dfrac{3}{10}$",
+  "solution": "Write everything as a power of 3: $27 = 3^3$, $9 = 3^2$, $81 = 3^4$, $\\sqrt{3} = 3^{\\frac12}$.\n\nLeft-hand side:\n$$\\frac{3^{3x}}{3^{2(2x-1)}} = \\frac{3^{3x}}{3^{4x-2}} = 3^{3x - (4x-2)} = 3^{2-x}$$\n\nRight-hand side:\n$$3^{\\frac12} \\times 3^{4x} = 3^{4x + \\frac12}$$\n\nEquate the indices:\n$$2 - x = 4x + \\frac12 \\quad\\Rightarrow\\quad \\frac32 = 5x \\quad\\Rightarrow\\quad x = \\frac{3}{10}$$\n\n**Check** ($x = 0.3$): LHS $= 3^{1.7}$, RHS $= 3^{0.5 + 1.2} = 3^{1.7}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q15",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "linkedTopicIds": [
+   "calc-differentiation-basics"
+  ],
+  "question": "$$y = \\frac{6x^3 - 4\\sqrt{x}}{2x^2}, \\qquad x > 0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write $y$ in the form $ax^p + bx^q$, where $a$, $b$, $p$ and $q$ are constants to be found.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x}$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact value of the gradient of the curve at the point where $x = 4$.",
+    "marks": 2
+   }
+  ],
+  "hint": "Split the fraction into two terms and write $\\sqrt{x}$ as $x^{\\frac12}$ before using the division law.",
+  "answer": "(a) $y = 3x - 2x^{-\\frac{3}{2}}$ (b) $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3 + 3x^{-\\frac{5}{2}}$ (c) $\\dfrac{99}{32}$",
+  "solution": "(a) $\\sqrt{x} = x^{\\frac12}$ **B1**\n\nSplit: $y = \\dfrac{6x^3}{2x^2} - \\dfrac{4x^{\\frac12}}{2x^2}$ **M1**\n\n$= 3x - 2x^{\\frac12 - 2} = 3x - 2x^{-\\frac32}$ **A1**\n\nSo $a = 3$, $p = 1$, $b = -2$, $q = -\\frac32$.\n\n(b) $\\dfrac{\\mathrm{d}y}{\\mathrm{d}x} = 3 - 2 \\times \\left(-\\dfrac32\\right)x^{-\\frac52}$ **M1** (one index reduced by 1)\n\n$= 3 + 3x^{-\\frac{5}{2}}$ **A1**\n\n(c) $4^{-\\frac52} = \\dfrac{1}{(\\sqrt{4})^5} = \\dfrac{1}{32}$ **M1**\n\nGradient $= 3 + \\dfrac{3}{32} = \\dfrac{99}{32}$ **A1**",
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-negative-fractional-indices-q16",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Kepler's third law says that for a planet orbiting the Sun,\n$$T = a^{\\frac{3}{2}}$$\nwhere $T$ is the time for one orbit in Earth years and $a$ is the average distance from the Sun in astronomical units (AU). Earth has $a = 1$ and $T = 1$.\n\n(a) Jupiter's average distance from the Sun is 5.20 AU. Work out how long Jupiter takes to orbit the Sun. Give your answer to 3 significant figures.\n\n(b) Mars takes 1.88 Earth years to orbit the Sun. Rearrange the formula to make $a$ the subject, and find Mars's average distance from the Sun to 3 significant figures.",
+  "hint": "For (b), raise both sides to the power that 'undoes' $\\frac{3}{2}$: what do you multiply $\\frac32$ by to get 1?",
+  "answer": "(a) 11.9 years (b) $a = T^{\\frac{2}{3}}$, so $a \\approx 1.52$ AU",
+  "solution": "(a) $T = 5.20^{\\frac32} = \\sqrt{5.20^3} = \\sqrt{140.608} = 11.857\\ldots$\n\nJupiter takes about **11.9 Earth years**.\n\n(b) Raise both sides to the power $\\frac{2}{3}$, since $\\left(a^{\\frac32}\\right)^{\\frac23} = a^{\\frac32 \\times \\frac23} = a^1$:\n$$a = T^{\\frac{2}{3}}$$\n\n$a = 1.88^{\\frac23} = \\left(\\sqrt[3]{1.88}\\right)^2 = (1.2337\\ldots)^2 = 1.522\\ldots$\n\nMars is about **1.52 AU** from the Sun.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-negative-fractional-indices-q17",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "Solve\n$$3x^{\\frac{1}{2}} - 7 + 2x^{-\\frac{1}{2}} = 0$$",
+  "hint": "Multiply every term by $x^{\\frac12}$ to clear the negative index. What does $x^{-\\frac12} \\times x^{\\frac12}$ equal?",
+  "answer": "$x = 4$ or $x = \\dfrac{1}{9}$",
+  "solution": "The equation only makes sense for $x > 0$. Multiply every term by $x^{\\frac12}$:\n$$3x^{\\frac12} \\times x^{\\frac12} - 7x^{\\frac12} + 2x^{-\\frac12} \\times x^{\\frac12} = 0$$\n$$3x - 7x^{\\frac12} + 2 = 0$$\n(using $x^{\\frac12} \\times x^{\\frac12} = x^1$ and $x^{-\\frac12} \\times x^{\\frac12} = x^0 = 1$).\n\nLet $u = x^{\\frac12}$, so $x = u^2$:\n$$3u^2 - 7u + 2 = 0 \\quad\\Rightarrow\\quad (3u - 1)(u - 2) = 0$$\n$$u = \\frac{1}{3} \\quad \\text{or} \\quad u = 2$$\n\nBoth are positive, so both are valid values of $\\sqrt{x}$:\n$$x = \\left(\\tfrac13\\right)^2 = \\frac{1}{9} \\qquad \\text{or} \\qquad x = 2^2 = 4$$\n\n**Check** $x = \\frac19$: $x^{\\frac12} = \\frac13$ and $x^{-\\frac12} = 3$, so $3 \\times \\frac13 - 7 + 2 \\times 3 = 1 - 7 + 6 = 0$ ✓\n\n**Check** $x = 4$: $3 \\times 2 - 7 + 2 \\times \\frac12 = 6 - 7 + 1 = 0$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "num-negative-fractional-indices-q18",
+  "topicId": "num-negative-fractional-indices",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "question": "A positive number $x$ satisfies\n$$x^{\\frac{1}{2}} + x^{-\\frac{1}{2}} = 3$$\n\nWithout finding $x$, find the value of\n\n(a) $x + x^{-1}$\n\n(b) $x^{\\frac{3}{2}} + x^{-\\frac{3}{2}}$",
+  "hint": "Square both sides of the given equation. What is $x^{\\frac12} \\times x^{-\\frac12}$? For (b), try cubing.",
+  "answer": "(a) $7$ (b) $18$",
+  "solution": "Let $s = x^{\\frac12} + x^{-\\frac12} = 3$. Note that $x^{\\frac12} \\times x^{-\\frac12} = x^0 = 1$.\n\n(a) Square:\n$$s^2 = \\left(x^{\\frac12}\\right)^2 + 2x^{\\frac12}x^{-\\frac12} + \\left(x^{-\\frac12}\\right)^2 = x + 2 + x^{-1}$$\nSo $9 = x + x^{-1} + 2$, giving $x + x^{-1} = 7$.\n\n(b) Cube, using $(p + q)^3 = p^3 + 3p^2q + 3pq^2 + q^3$ with $p = x^{\\frac12}$, $q = x^{-\\frac12}$:\n$$p^3 = x^{\\frac32}, \\quad 3p^2q = 3x^{1 - \\frac12} = 3x^{\\frac12}, \\quad 3pq^2 = 3x^{\\frac12 - 1} = 3x^{-\\frac12}, \\quad q^3 = x^{-\\frac32}$$\nSo\n$$s^3 = x^{\\frac32} + x^{-\\frac32} + 3\\left(x^{\\frac12} + x^{-\\frac12}\\right) = x^{\\frac32} + x^{-\\frac32} + 3s$$\n$$27 = x^{\\frac32} + x^{-\\frac32} + 9 \\quad\\Rightarrow\\quad x^{\\frac32} + x^{-\\frac32} = 18$$\n\n(Alternatively: $x^{\\frac32} + x^{-\\frac32} = \\left(x^{\\frac12} + x^{-\\frac12}\\right)\\left(x - 1 + x^{-1}\\right) = 3 \\times (7 - 1) = 18$.)"
+ }
+]

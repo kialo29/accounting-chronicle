@@ -1,0 +1,295 @@
+[
+ {
+  "id": "geo-arcs-sectors-q01",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius $6\\text{ cm}$ and angle $90^\\circ$ at the centre.\n\nFind the arc length of the sector. Give your answer in terms of $\\pi$.",
+  "hint": "A $90^\\circ$ sector is $\\frac{90}{360}$ of the whole circle. What fraction of the circumference $2\\pi r$ is that?",
+  "answer": "$3\\pi\\text{ cm}$",
+  "solution": "Fraction of the circle:\n$$\\frac{90}{360} = \\frac{1}{4}$$\n\nCircumference of the whole circle:\n$$2\\pi r = 2 \\times \\pi \\times 6 = 12\\pi\\text{ cm}$$\n\nArc length:\n$$\\frac{1}{4} \\times 12\\pi = 3\\pi\\text{ cm}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q02",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius $6\\text{ cm}$ and angle $120^\\circ$ at the centre.\n\nFind the arc length of the sector. Give your answer in terms of $\\pi$.",
+  "hint": "Same radius as before, but now the sector is $\\frac{120}{360}$ of the circle. Simplify that fraction first.",
+  "answer": "$4\\pi\\text{ cm}$",
+  "solution": "**What changed:** only the angle, from $90^\\circ$ to $120^\\circ$.\n\nFraction of the circle:\n$$\\frac{120}{360} = \\frac{1}{3}$$\n\nThe circumference is still $2 \\times \\pi \\times 6 = 12\\pi\\text{ cm}$, so\n$$\\text{arc length} = \\frac{1}{3} \\times 12\\pi = 4\\pi\\text{ cm}$$\n\nThe angle grew by a factor of $\\frac{120}{90} = \\frac{4}{3}$, and so did the arc: $3\\pi \\times \\frac{4}{3} = 4\\pi$. Arc length is proportional to the angle.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q03",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius $6\\text{ cm}$ and angle $120^\\circ$ at the centre.\n\nFind the **area** of the sector. Give your answer in terms of $\\pi$.",
+  "hint": "Same sector as the last question, but now you want a fraction of the circle's **area** $\\pi r^2$, not its circumference.",
+  "answer": "$12\\pi\\text{ cm}^2$",
+  "solution": "**What changed:** same sector, but we now want area instead of arc length, so we take a fraction of $\\pi r^2$ instead of $2\\pi r$.\n\nFraction of the circle: $\\dfrac{120}{360} = \\dfrac{1}{3}$.\n\nArea of the whole circle:\n$$\\pi r^2 = \\pi \\times 6^2 = 36\\pi\\text{ cm}^2$$\n\nSector area:\n$$\\frac{1}{3} \\times 36\\pi = 12\\pi\\text{ cm}^2$$\n\nCheck the units: area uses $r^2$, so the answer is in $\\text{cm}^2$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q04",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius $6\\text{ cm}$ and area $15\\pi\\text{ cm}^2$.\n\nFind the angle of the sector.",
+  "hint": "Write $\\frac{\\theta}{360} \\times \\pi \\times 6^2 = 15\\pi$ and solve for $\\theta$.",
+  "answer": "$150^\\circ$",
+  "solution": "**What changed:** the radius is still $6\\text{ cm}$, but now the area is given and the angle is the unknown (a reverse problem).\n\n$$\\frac{\\theta}{360} \\times \\pi \\times 6^2 = 15\\pi$$\n$$\\frac{\\theta}{360} \\times 36\\pi = 15\\pi$$\n\nDivide both sides by $36\\pi$:\n$$\\frac{\\theta}{360} = \\frac{15}{36} = \\frac{5}{12}$$\n\nMultiply by 360:\n$$\\theta = \\frac{5}{12} \\times 360 = 150^\\circ$$\n\nSense-check: $15\\pi$ is a bit less than half of the full circle's $36\\pi$, and $150^\\circ$ is a bit less than $180^\\circ$. ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q05",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A sector has radius $10\\text{ cm}$ and angle $72^\\circ$.\n\nWork out the perimeter of the sector. Give your answer to 1 decimal place.",
+  "hint": "The perimeter is the distance all the way round: the curved arc **and** the two straight edges.",
+  "answer": "$32.6\\text{ cm}$",
+  "solution": "Arc length:\n$$\\frac{72}{360} \\times 2 \\times \\pi \\times 10 = \\frac{1}{5} \\times 20\\pi = 4\\pi = 12.566\\ldots\\text{ cm}$$\n\nThe two straight edges are both radii: $10 + 10 = 20\\text{ cm}$.\n\nPerimeter:\n$$4\\pi + 20 = 32.566\\ldots = 32.6\\text{ cm (1 d.p.)}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q06",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 180\" width=\"300\" height=\"180\"><path d=\"M 150 150 L 270 150 A 120 120 0 0 0 65.1 65.1 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"150\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 172 150 A 22 22 0 0 0 134.4 134.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"165.3\" y=\"118\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">135°</text><text x=\"216\" y=\"141\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">8 cm</text><text x=\"144\" y=\"168\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text></svg>",
+  "question": "The diagram shows a sector of a circle with centre $O$, radius $8\\text{ cm}$ and angle $135^\\circ$.\n\nPriya is asked to find the perimeter of the sector. Her working is shown below.\n\n$$\\text{Perimeter} = \\frac{135}{360} \\times 2 \\times \\pi \\times 8 = 6\\pi = 18.8\\text{ cm}$$\n\nIdentify Priya's mistake, explain why it is wrong, and work out the correct perimeter to 1 decimal place.",
+  "hint": "Trace round the edge of the shaded shape with your finger. How many pieces does the boundary have?",
+  "answer": "Priya found only the arc length and forgot the two radii. Correct perimeter $= 6\\pi + 16 = 34.8\\text{ cm}$ (1 d.p.).",
+  "solution": "Priya's arc length is correct: $\\frac{135}{360} \\times 16\\pi = 6\\pi = 18.849\\ldots\\text{ cm}$.\n\n**Mistake:** she has given the arc length as the perimeter. The perimeter of a sector is the whole boundary: the curved arc **plus the two straight radii**.\n\nCorrect working:\n$$\\text{Perimeter} = 6\\pi + 8 + 8 = 6\\pi + 16 = 18.849\\ldots + 16 = 34.849\\ldots$$\n\nPerimeter $= 34.8\\text{ cm}$ (1 d.p.).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q07",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A sector has radius $12\\text{ cm}$ and angle $150^\\circ$. Tom works out the arc length like this:\n\n$$\\text{Arc length} = \\frac{150}{360} \\times \\pi \\times 12 = \\frac{5}{12} \\times 12\\pi = 5\\pi\\text{ cm}$$\n\nIdentify Tom's mistake, explain why it is wrong, and give the correct arc length in terms of $\\pi$.",
+  "hint": "What is the formula for the circumference of the whole circle in terms of the radius?",
+  "answer": "Tom used $\\pi r$ instead of the circumference $2\\pi r$. Correct arc length $= 10\\pi\\text{ cm}$.",
+  "solution": "**Mistake:** an arc is a fraction of the **circumference**, which is $2\\pi r$ (or $\\pi d$). Tom used $\\pi r$, which is only half the circumference, so his answer is half what it should be.\n\nCorrect working:\n$$\\text{Arc length} = \\frac{150}{360} \\times 2 \\times \\pi \\times 12 = \\frac{5}{12} \\times 24\\pi = 10\\pi\\text{ cm}$$\n\n(Check: the full circumference is $24\\pi \\approx 75\\text{ cm}$; $150^\\circ$ is a bit less than half the circle, and $10\\pi \\approx 31\\text{ cm}$ is a bit less than half of $75$. ✓)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q08",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A sector of a circle of radius $10\\text{ cm}$ has arc length $7\\pi\\text{ cm}$. Amir is asked to find the angle of the sector.\n\n$$\\frac{\\theta}{360} \\times 2 \\times \\pi \\times 10 = 7\\pi$$\n$$\\frac{\\theta}{360} \\times 20\\pi = 7\\pi$$\n$$\\theta = \\frac{20 \\times 360}{7} = 1028.6^\\circ$$\n\n(a) Explain how Amir could tell, without redoing the calculation, that his answer must be wrong.\n\n(b) Identify his mistake and find the correct angle.",
+  "hint": "What is the largest possible angle for a sector? To undo \"$\\times 20\\pi$\", what do you divide by?",
+  "answer": "(a) A sector angle must be less than $360^\\circ$ (and $7\\pi$ is less than the full circumference $20\\pi$). (b) He inverted the fraction; $\\theta = \\frac{7 \\times 360}{20} = 126^\\circ$.",
+  "solution": "(a) A sector is part of a circle, so its angle must be between $0^\\circ$ and $360^\\circ$. Also, the arc $7\\pi$ is less than the full circumference $20\\pi$, so the angle must be less than $360^\\circ$. An answer of $1028.6^\\circ$ is impossible.\n\n(b) **Mistake:** in the last line Amir turned the fraction upside down. From\n$$\\frac{\\theta}{360} \\times 20\\pi = 7\\pi$$\ndivide both sides by $20\\pi$:\n$$\\frac{\\theta}{360} = \\frac{7\\pi}{20\\pi} = \\frac{7}{20}$$\nthen multiply by 360:\n$$\\theta = \\frac{7 \\times 360}{20} = 126^\\circ$$\n\nCheck: $\\frac{126}{360} \\times 20\\pi = 0.35 \\times 20\\pi = 7\\pi$. ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q09",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 3,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\"><circle cx=\"150\" cy=\"120\" r=\"95\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 150 120 L 239.3 87.5 A 95 95 0 0 0 190.1 33.9 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"120\" x2=\"239.3\" y2=\"87.5\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"150\" y1=\"120\" x2=\"190.1\" y2=\"33.9\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"150\" cy=\"120\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 168.8 113.2 A 20 20 0 0 0 158.5 101.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180.5\" y=\"100.7\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">45°</text><text x=\"142\" y=\"138\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text><text x=\"207.6\" y=\"118.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4 cm</text><text x=\"107.9\" y=\"155.4\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">major sector</text></svg>",
+  "question": "A circle with centre $O$ has radius $4\\text{ cm}$. Two radii divide it into a minor sector with angle $45^\\circ$ (shaded) and a major sector.\n\n(a) Show that the area of the major sector is 7 times the area of the minor sector.\n\n(b) Is the arc length of the major sector also 7 times the arc length of the minor sector? Explain.\n\n(c) Is the perimeter of the major sector 7 times the perimeter of the minor sector? Justify your answer.",
+  "hint": "The major sector's angle is not $45^\\circ$. Both arc length and sector area are proportional to the angle, but what about the radii in the perimeter?",
+  "answer": "(a) Major area $= 14\\pi = 7 \\times 2\\pi$. (b) Yes: $7\\pi = 7 \\times \\pi$ (both proportional to the angle, and $315 = 7 \\times 45$). (c) No: perimeters are $\\pi + 8$ and $7\\pi + 8$, and $7(\\pi + 8) = 7\\pi + 56 \\ne 7\\pi + 8$.",
+  "solution": "The major sector's angle is $360^\\circ - 45^\\circ = 315^\\circ$, and $315 = 7 \\times 45$.\n\n(a) Minor sector area:\n$$\\frac{45}{360} \\times \\pi \\times 4^2 = \\frac{1}{8} \\times 16\\pi = 2\\pi\\text{ cm}^2$$\nMajor sector area:\n$$\\frac{315}{360} \\times 16\\pi = \\frac{7}{8} \\times 16\\pi = 14\\pi\\text{ cm}^2 = 7 \\times 2\\pi$$\nso the major sector's area is 7 times the minor sector's.\n\n(b) Yes. Minor arc $= \\frac{1}{8} \\times 8\\pi = \\pi$; major arc $= \\frac{7}{8} \\times 8\\pi = 7\\pi$. Arc length is (angle $\\div 360$) $\\times$ the same circumference, so it is proportional to the angle, just like the area.\n\n(c) No. Each perimeter also includes two radii, which are the same $8\\text{ cm}$ for both sectors:\n$$\\text{minor: } \\pi + 8 \\approx 11.1\\text{ cm}, \\qquad \\text{major: } 7\\pi + 8 \\approx 30.0\\text{ cm}$$\nBut $7 \\times (\\pi + 8) = 7\\pi + 56 \\approx 78.0\\text{ cm}$, which is not $7\\pi + 8$. The fixed $2r$ part does not scale with the angle.",
+  "misconceptionIds": [
+   "m3",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q10",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam says:\n\n\"If I double the radius of a sector but keep the angle the same, its area doubles and its arc length doubles.\"\n\nIs Sam correct? Justify your answer using the formulas for arc length and sector area.",
+  "hint": "Replace $r$ by $2r$ in both formulas and compare with the originals.",
+  "answer": "Sam is only half right: the arc length doubles, but the area is multiplied by 4.",
+  "solution": "Let the angle be $\\theta$ and the original radius be $r$.\n\n**Arc length.** Original: $\\dfrac{\\theta}{360} \\times 2\\pi r$. New:\n$$\\frac{\\theta}{360} \\times 2\\pi (2r) = 2 \\times \\left(\\frac{\\theta}{360} \\times 2\\pi r\\right)$$\nso the arc length **does** double (it depends on $r$ to the power 1).\n\n**Area.** Original: $\\dfrac{\\theta}{360} \\times \\pi r^2$. New:\n$$\\frac{\\theta}{360} \\times \\pi (2r)^2 = \\frac{\\theta}{360} \\times 4\\pi r^2 = 4 \\times \\left(\\frac{\\theta}{360} \\times \\pi r^2\\right)$$\nso the area is multiplied by $2^2 = 4$, not 2.\n\nExample: radius $3$, angle $90^\\circ$ gives area $\\frac{9\\pi}{4}$; radius $6$ gives $9\\pi$, which is 4 times as big.\n\nSam is wrong about the area: lengths scale by 2, areas by $2^2 = 4$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q11",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The minute hand of a kitchen clock is $7\\text{ cm}$ long. While Jess bakes a cake, the tip of the minute hand travels $22\\text{ cm}$.\n\nHow many minutes does the cake take to bake? Give your answer to the nearest minute.",
+  "hint": "The minute hand turns $360^\\circ$ in 60 minutes. First find the angle it turned through using the arc length formula.",
+  "answer": "30 minutes",
+  "solution": "The tip moves along an arc of radius $7\\text{ cm}$. Let the angle turned be $\\theta$:\n$$\\frac{\\theta}{360} \\times 2 \\times \\pi \\times 7 = 22$$\n$$\\frac{\\theta}{360} = \\frac{22}{14\\pi} = 0.50020\\ldots$$\n$$\\theta = 180.07\\ldots^\\circ$$\n\nThe minute hand turns $360^\\circ$ in 60 minutes, i.e. $6^\\circ$ per minute:\n$$180.07\\ldots \\div 6 = 30.01\\ldots\\text{ minutes}$$\n\nThe cake takes **30 minutes** (to the nearest minute).\n\n(Equivalently: $22\\text{ cm}$ is $\\frac{22}{14\\pi} \\approx 0.5$ of the full circumference $14\\pi \\approx 44\\text{ cm}$, so half an hour.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q12",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 225\" width=\"260\" height=\"225\"><path d=\"M 70 190 L 230 190 A 160 160 0 0 0 111.4 35.5 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"70\" cy=\"190\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 92 190 A 22 22 0 0 0 75.7 168.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"101.7\" y=\"170.6\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">75°</text><text x=\"158\" y=\"181\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">12 cm</text><text x=\"60\" y=\"206\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text><text x=\"240\" y=\"195\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"113.4\" y=\"29.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text></svg>",
+  "marks": 5,
+  "question": "The diagram shows a sector $OAB$ of a circle with centre $O$. The radius is $12\\text{ cm}$ and angle $AOB = 75^\\circ$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the area of the sector. Give your answer correct to 3 significant figures.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the perimeter of the sector. Give your answer correct to 1 decimal place.",
+    "marks": 3
+   }
+  ],
+  "hint": "Area uses $\\pi r^2$; perimeter is the arc (from $2\\pi r$) plus $OA$ plus $OB$.",
+  "answer": "(a) $94.2\\text{ cm}^2$ (b) $39.7\\text{ cm}$",
+  "solution": "(a) $\\dfrac{75}{360} \\times \\pi \\times 12^2$ **M1**\n$$= \\frac{5}{24} \\times 144\\pi = 30\\pi = 94.247\\ldots$$\n$= 94.2\\text{ cm}^2$ **A1**\n\n(b) Arc $AB = \\dfrac{75}{360} \\times 2 \\times \\pi \\times 12$ **M1**\n$$= \\frac{5}{24} \\times 24\\pi = 5\\pi = 15.707\\ldots\\text{ cm}$$\nPerimeter $= 15.707\\ldots + 12 + 12$ **M1** (adding two radii to their arc)\n$= 39.707\\ldots = 39.7\\text{ cm}$ **A1**",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q13",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 4,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 235\" width=\"350\" height=\"235\"><path d=\"M 214.3 187.5 L 319.2 114.1 A 176 176 0 0 0 30.8 114.1 L 135.7 187.5 A 48 48 0 0 1 214.3 187.5 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"175\" y1=\"215\" x2=\"214.3\" y2=\"187.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"175\" y1=\"215\" x2=\"135.7\" y2=\"187.5\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><circle cx=\"175\" cy=\"215\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 188.1 205.8 A 16 16 0 0 0 161.9 205.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"175\" y=\"189\" font-size=\"12\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">110°</text><text x=\"207\" y=\"231\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">pivot</text><text x=\"216.7\" y=\"209.2\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">15 cm</text><line x1=\"167\" y1=\"226.5\" x2=\"22.8\" y2=\"125.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"169.3\" y1=\"223.2\" x2=\"164.7\" y2=\"229.7\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"25.1\" y1=\"122.2\" x2=\"20.5\" y2=\"128.8\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"79.7\" y=\"194.1\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">55 cm</text><text x=\"292.7\" y=\"154.8\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">blade</text></svg>",
+  "question": "A car's rear windscreen wiper is attached to a pivot. The rubber blade starts $15\\text{ cm}$ from the pivot and its tip is $55\\text{ cm}$ from the pivot. The wiper turns through an angle of $110^\\circ$.\n\nWork out the area of windscreen that the blade wipes. Give your answer to 3 significant figures.",
+  "hint": "The wiped region is a large sector with a small sector removed. Both have the same angle.",
+  "answer": "$2690\\text{ cm}^2$ (3 s.f.)",
+  "solution": "The blade sweeps the region between two arcs with the same centre (the pivot): a sector of radius $55\\text{ cm}$ with a sector of radius $15\\text{ cm}$ removed, both with angle $110^\\circ$.\n\nLarge sector:\n$$\\frac{110}{360} \\times \\pi \\times 55^2 = \\frac{110}{360} \\times 3025\\pi$$\nSmall sector:\n$$\\frac{110}{360} \\times \\pi \\times 15^2 = \\frac{110}{360} \\times 225\\pi$$\n\nWiped area:\n$$\\frac{110}{360} \\times \\pi \\times (3025 - 225) = \\frac{110}{360} \\times 2800\\pi = 855.55\\ldots \\times \\pi = 2687.8\\ldots\\text{ cm}^2$$\n\nSo the blade wipes about $2690\\text{ cm}^2$ (3 s.f.).\n\nNote: using the blade length, $\\frac{110}{360} \\times \\pi \\times 40^2 \\approx 1536\\text{ cm}^2$, is wrong: that is a sector centred at the pivot with radius $40\\text{ cm}$, which is not the shape the blade sweeps.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q14",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A sector has angle $72^\\circ$ and perimeter $50\\text{ cm}$.\n\n(a) Find the radius of the sector, correct to 3 significant figures.\n\n(b) Find the area of the sector, correct to 3 significant figures.",
+  "hint": "Write the perimeter as $r + r + \\frac{72}{360} \\times 2\\pi r$. Every term contains $r$, so factorise.",
+  "answer": "(a) $15.4\\text{ cm}$ (b) $148\\text{ cm}^2$",
+  "solution": "(a) Perimeter $=$ arc $+ 2r$:\n$$\\frac{72}{360} \\times 2\\pi r + 2r = 50$$\n$$\\frac{2\\pi r}{5} + 2r = 50$$\nFactorise:\n$$r\\left(\\frac{2\\pi}{5} + 2\\right) = 50$$\n$$r = \\frac{50}{2 + \\frac{2\\pi}{5}} = \\frac{50}{3.2566\\ldots} = 15.353\\ldots$$\n$r = 15.4\\text{ cm}$ (3 s.f.)\n\n(b) Using the unrounded radius:\n$$\\text{Area} = \\frac{72}{360} \\times \\pi \\times 15.353\\ldots^2 = \\frac{1}{5} \\times \\pi \\times 235.72\\ldots = 148.10\\ldots$$\nArea $= 148\\text{ cm}^2$ (3 s.f.)\n\n(Using the rounded $15.4$ would give $149\\text{ cm}^2$, so keep the full value in your calculator.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q15",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 170\" width=\"310\" height=\"170\"><path d=\"M 175 140 L 285 140 A 110 110 0 0 0 97.2 62.2 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"175\" cy=\"140\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 197 140 A 22 22 0 0 0 159.4 124.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"190.3\" y=\"108\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">θ</text><text x=\"235.5\" y=\"131\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">12 cm</text><text x=\"171\" y=\"158\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text><text x=\"295\" y=\"145\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"89.2\" y=\"56.2\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text></svg>",
+  "marks": 4,
+  "question": "The diagram shows a sector $OAB$ of a circle with centre $O$ and radius $12\\text{ cm}$. The area of the sector is $54\\pi\\text{ cm}^2$.\n\nThe diagram is not drawn to scale.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that angle $\\theta = 135^\\circ$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the perimeter of the sector. Give your answer in the form $a\\pi + b$, where $a$ and $b$ are integers.",
+    "marks": 2
+   }
+  ],
+  "hint": "Set up $\\frac{\\theta}{360} \\times \\pi \\times 12^2 = 54\\pi$. For (b), use $\\theta = 135^\\circ$ in the arc length formula and remember both radii.",
+  "answer": "(a) $\\frac{\\theta}{360} \\times 144\\pi = 54\\pi \\Rightarrow \\theta = 135^\\circ$ (b) $9\\pi + 24\\text{ cm}$",
+  "solution": "(a) $\\dfrac{\\theta}{360} \\times \\pi \\times 12^2 = 54\\pi$ **M1**\n$$\\frac{\\theta}{360} \\times 144\\pi = 54\\pi \\;\\Rightarrow\\; \\frac{\\theta}{360} = \\frac{54}{144} = \\frac{3}{8}$$\n$$\\theta = \\frac{3}{8} \\times 360 = 135^\\circ$$\n**A1** (correct working leading to the given answer)\n\n(b) Arc $= \\dfrac{135}{360} \\times 2 \\times \\pi \\times 12 = \\dfrac{3}{8} \\times 24\\pi = 9\\pi$ **M1**\n\nPerimeter $= 9\\pi + 12 + 12 = 9\\pi + 24\\text{ cm}$ **A1** ($a = 9$, $b = 24$)",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q16",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 225\" width=\"260\" height=\"225\"><path d=\"M 240 200 A 180 180 0 0 0 150 44.1 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"200\" x2=\"240\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"200\" x2=\"150\" y2=\"44.1\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"240\" y1=\"200\" x2=\"150\" y2=\"44.1\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M 240 200 A 180 180 0 0 0 150 44.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"60\" cy=\"200\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 82 200 A 22 22 0 0 0 71 180.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"94.9\" y=\"186\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">60°</text><text x=\"50\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text><text x=\"250\" y=\"205\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"152\" y=\"38.1\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><text x=\"159\" y=\"218\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10 cm</text></svg>",
+  "linkedTopicIds": [
+   "geo-area-triangle-sine",
+   "geo-trig-exact-values"
+  ],
+  "question": "The diagram shows a sector $OAB$ of a circle with centre $O$, radius $10\\text{ cm}$ and angle $AOB = 60^\\circ$. The chord $AB$ is drawn, and the region between the chord and the arc (a segment) is shaded.\n\nFind the exact area of the shaded segment. Give your answer in the form $\\frac{a\\pi}{3} - b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "hint": "Segment $=$ sector $-$ triangle $OAB$. Use $\\text{Area} = \\frac{1}{2}ab\\sin C$ for the triangle, with the exact value of $\\sin 60^\\circ$.",
+  "answer": "$\\dfrac{50\\pi}{3} - 25\\sqrt{3}\\text{ cm}^2$ (about $9.06\\text{ cm}^2$)",
+  "solution": "Sector area:\n$$\\frac{60}{360} \\times \\pi \\times 10^2 = \\frac{100\\pi}{6} = \\frac{50\\pi}{3}\\text{ cm}^2$$\n\nTriangle $OAB$ has two sides of $10\\text{ cm}$ with $60^\\circ$ between them:\n$$\\frac{1}{2} \\times 10 \\times 10 \\times \\sin 60^\\circ = 50 \\times \\frac{\\sqrt{3}}{2} = 25\\sqrt{3}\\text{ cm}^2$$\n\nSegment $=$ sector $-$ triangle:\n$$\\frac{50\\pi}{3} - 25\\sqrt{3}\\text{ cm}^2$$\n\nSo $a = 50$, $b = 25$. As a decimal: $52.36\\ldots - 43.30\\ldots = 9.06\\text{ cm}^2$ (3 s.f.).",
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-arcs-sectors-q17",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "alg-rearranging-formulae"
+  ],
+  "question": "A sector has radius $r\\text{ cm}$ and perimeter $40\\text{ cm}$.\n\n(a) Show that the arc length of the sector is $(40 - 2r)\\text{ cm}$, and use $\\text{sector area} = \\frac{1}{2} \\times r \\times \\text{arc length}$ to show that its area $A\\text{ cm}^2$ is given by $A = 20r - r^2$.\n\n(b) Prove that the formula $\\text{sector area} = \\frac{1}{2} \\times r \\times \\text{arc length}$ is true for any sector.\n\n(c) By completing the square, find the maximum possible area of the sector and the angle of the sector that gives it, to the nearest degree.",
+  "hint": "For (b), write both the area and the arc length in terms of $\\frac{\\theta}{360}$ and compare. For (c), write $20r - r^2 = -(r - 10)^2 + \\ldots$",
+  "answer": "(a) Shown. (b) Proof: $\\frac{\\theta}{360}\\pi r^2 = \\frac{1}{2} r \\times \\frac{\\theta}{360} 2\\pi r$. (c) Maximum area $100\\text{ cm}^2$ when $r = 10$, angle $\\frac{360}{\\pi} \\approx 115^\\circ$.",
+  "solution": "(a) Perimeter $=$ arc $+ 2r = 40$, so arc length $= 40 - 2r$.\n$$A = \\frac{1}{2} \\times r \\times (40 - 2r) = 20r - r^2$$\n\n(b) For a sector of angle $\\theta$:\n$$\\frac{1}{2} \\times r \\times \\text{arc} = \\frac{1}{2} \\times r \\times \\frac{\\theta}{360} \\times 2\\pi r = \\frac{\\theta}{360} \\times \\pi r^2$$\nwhich is exactly the sector area formula, so the result holds for every sector.\n\n(c) Complete the square:\n$$A = 20r - r^2 = -(r^2 - 20r) = -\\left[(r - 10)^2 - 100\\right] = 100 - (r - 10)^2$$\nSince $(r - 10)^2 \\ge 0$, $A \\le 100$, with equality when $r = 10$.\n\nMaximum area $= 100\\text{ cm}^2$, when $r = 10\\text{ cm}$ and the arc length is $40 - 20 = 20\\text{ cm}$.\n\nAngle: $\\dfrac{\\theta}{360} \\times 2\\pi \\times 10 = 20$, so\n$$\\theta = \\frac{20 \\times 360}{20\\pi} = \\frac{360}{\\pi} = 114.59\\ldots \\approx 115^\\circ$$\n\nCheck it is a genuine sector: $0^\\circ < 115^\\circ < 360^\\circ$, and the arc ($20\\text{ cm}$) is shorter than the circumference ($20\\pi\\text{ cm}$). ✓",
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-arcs-sectors-q18",
+  "topicId": "geo-arcs-sectors",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 290\" width=\"320\" height=\"290\"><path d=\"M 260 230 A 200 200 0 0 0 160 56.8 A 200 200 0 0 0 60 230 A 200 200 0 0 0 260 230 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"60,230 260,230 160,56.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><circle cx=\"60\" cy=\"230\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"260\" cy=\"230\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"160\" cy=\"56.8\" r=\"2.5\" fill=\"currentColor\"/><text x=\"48\" y=\"234\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">P</text><text x=\"272\" y=\"234\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">Q</text><text x=\"160\" y=\"46.8\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">R</text><text x=\"160\" y=\"222\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">10 cm</text></svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras"
+  ],
+  "question": "$PQR$ is an equilateral triangle with sides of length $10\\text{ cm}$. The shape in the diagram (a **Reuleaux triangle**) is made by drawing three arcs: arc $QR$ with centre $P$, arc $RP$ with centre $Q$ and arc $PQ$ with centre $R$.\n\n(a) Show that the perimeter of the shape is exactly the same as the circumference of a circle of diameter $10\\text{ cm}$.\n\n(b) Find the exact area of the shape.\n\n(c) Which has the larger area: the Reuleaux triangle or the circle of diameter $10\\text{ cm}$? Show your working.",
+  "hint": "Each arc is a $60^\\circ$ arc of radius $10\\text{ cm}$. For the area, think of the triangle plus three segments, or three sectors which overlap on the triangle. The height of the triangle comes from Pythagoras.",
+  "answer": "(a) $3 \\times \\frac{10\\pi}{3} = 10\\pi = \\pi \\times 10$ (b) $(50\\pi - 50\\sqrt{3})\\text{ cm}^2 \\approx 70.5\\text{ cm}^2$ (c) The circle ($25\\pi \\approx 78.5\\text{ cm}^2$).",
+  "solution": "Each angle of an equilateral triangle is $60^\\circ$, so each arc is a $60^\\circ$ arc of a circle of radius $10\\text{ cm}$.\n\n(a) One arc:\n$$\\frac{60}{360} \\times 2\\pi \\times 10 = \\frac{20\\pi}{6} = \\frac{10\\pi}{3}\\text{ cm}$$\nPerimeter $= 3 \\times \\dfrac{10\\pi}{3} = 10\\pi\\text{ cm}$. A circle of diameter $10\\text{ cm}$ has circumference $\\pi d = 10\\pi\\text{ cm}$. They are equal.\n\n(b) Height of the triangle by Pythagoras (half the base is 5):\n$$h = \\sqrt{10^2 - 5^2} = \\sqrt{75} = 5\\sqrt{3}$$\nTriangle area $= \\frac{1}{2} \\times 10 \\times 5\\sqrt{3} = 25\\sqrt{3}$.\n\nEach $60^\\circ$ sector has area $\\frac{60}{360} \\times \\pi \\times 10^2 = \\frac{50\\pi}{3}$.\n\nEach sector = triangle + one segment, so one segment $= \\frac{50\\pi}{3} - 25\\sqrt{3}$.\n\nShape $=$ triangle $+ 3$ segments:\n$$25\\sqrt{3} + 3\\left(\\frac{50\\pi}{3} - 25\\sqrt{3}\\right) = 50\\pi - 50\\sqrt{3}\\text{ cm}^2 \\approx 70.5\\text{ cm}^2$$\n\n(c) Circle of diameter 10: area $= \\pi \\times 5^2 = 25\\pi \\approx 78.5\\text{ cm}^2$.\n\n$78.5 > 70.5$, so the circle has the larger area, even though the perimeters are equal.",
+  "misconceptionIds": []
+ }
+]

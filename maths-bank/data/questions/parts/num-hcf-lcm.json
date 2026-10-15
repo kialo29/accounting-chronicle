@@ -1,0 +1,284 @@
+[
+ {
+  "id": "num-hcf-lcm-q01",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) By listing factors, find the highest common factor (HCF) of 12 and 18.\n(b) By listing multiples, find the lowest common multiple (LCM) of 4 and 6.",
+  "hint": "HCF: the biggest number in **both** factor lists. LCM: the first number in **both** times tables.",
+  "answer": "(a) $6$ (b) $12$",
+  "solution": "(a) Factors of 12: $1, 2, 3, 4, 6, 12$\nFactors of 18: $1, 2, 3, 6, 9, 18$\nCommon factors: $1, 2, 3, 6$. The highest is **6**.\n\n(b) Multiples of 4: $4, 8, 12, 16, 20, 24, \\ldots$\nMultiples of 6: $6, 12, 18, 24, \\ldots$\nCommon multiples: $12, 24, \\ldots$ The lowest is **12**.\n\nNotice the HCF is no bigger than the smaller number, while the LCM is at least as big as the larger number. The LCM is not $4 \\times 6 = 24$.",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q02",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 1,
+  "type": "spot-the-mistake",
+  "question": "Ali is asked for the highest common factor of 8 and 20. He writes:\n\n\"8, 16, 24, 32, **40** and 20, **40**. So the HCF of 8 and 20 is 40.\"\n\nWhat has Ali done wrong? Find the correct HCF of 8 and 20.",
+  "hint": "Can a factor of 8 be bigger than 8?",
+  "answer": "He has listed multiples and found the LCM (40), not the HCF. The HCF of 8 and 20 is $4$.",
+  "solution": "**Mistake:** Ali has listed **multiples** of 8 and 20, so he has found the lowest common **multiple**, 40. The question asks for the highest common **factor**.\n\nA factor of 8 cannot be bigger than 8, so 40 cannot be the HCF.\n\n**Correct:**\nFactors of 8: $1, 2, 4, 8$\nFactors of 20: $1, 2, 4, 5, 10, 20$\nCommon factors: $1, 2, 4$, so the **HCF is 4**. (And Ali's 40 is the LCM.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q03",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$A = 2^3 \\times 3$ and $B = 2^2 \\times 3^2$.\n\nFind, in index form and as ordinary numbers, (a) the HCF of $A$ and $B$, (b) the LCM of $A$ and $B$.",
+  "hint": "HCF: lowest power of each prime that is in **both**. LCM: highest power of every prime that appears.",
+  "answer": "(a) $2^2 \\times 3 = 12$ (b) $2^3 \\times 3^2 = 72$",
+  "solution": "(a) Both contain 2 and 3. Lowest powers: $2^2$ (from $B$) and $3^1$ (from $A$):\n$$\\text{HCF} = 2^2 \\times 3 = 12$$\n\n(b) Highest powers: $2^3$ (from $A$) and $3^2$ (from $B$):\n$$\\text{LCM} = 2^3 \\times 3^2 = 72$$\n\nCheck: $A = 24$, $B = 36$; $12 \\times 72 = 864 = 24 \\times 36$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q04",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$A = 2^3 \\times 3$ and $B = 2^2 \\times 3^2 \\times 5$.\n\nFind, in index form and as ordinary numbers, (a) the HCF of $A$ and $B$, (b) the LCM of $A$ and $B$.",
+  "hint": "Is 5 a factor of both numbers?",
+  "answer": "(a) $2^2 \\times 3 = 12$ (b) $2^3 \\times 3^2 \\times 5 = 360$",
+  "solution": "**What changed:** $B$ now has an extra factor 5, which is **not** in $A$.\n\n(a) 5 is not shared, so it cannot be in the HCF. The HCF is unchanged:\n$$\\text{HCF} = 2^2 \\times 3 = 12$$\n\n(b) The LCM must contain every prime, so it gains the 5:\n$$\\text{LCM} = 2^3 \\times 3^2 \\times 5 = 360$$\n\nEffect: a prime in only one number changes the LCM but not the HCF.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q05",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$A = 2^3 \\times 3 \\times 5$ and $B = 2^2 \\times 3^2 \\times 5$.\n\nFind, in index form and as ordinary numbers, (a) the HCF of $A$ and $B$, (b) the LCM of $A$ and $B$.",
+  "hint": "Now 5 is in both numbers.",
+  "answer": "(a) $2^2 \\times 3 \\times 5 = 60$ (b) $2^3 \\times 3^2 \\times 5 = 360$",
+  "solution": "**What changed:** $A$ now also has a factor 5, so 5 is **shared**.\n\n(a) Lowest power of each shared prime: $2^2$, $3^1$, $5^1$:\n$$\\text{HCF} = 2^2 \\times 3 \\times 5 = 60$$\n\n(b) Highest power of every prime: $2^3$, $3^2$, $5^1$:\n$$\\text{LCM} = 2^3 \\times 3^2 \\times 5 = 360$$\n\nEffect: making 5 shared multiplied the HCF by 5 but left the LCM the same (the 5 was already in it).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q06",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$A = 2^3 \\times 3 \\times 5$ and $B = 2^4 \\times 3^2 \\times 5$.\n\nFind, in index form and as ordinary numbers, (a) the HCF of $A$ and $B$, (b) the LCM of $A$ and $B$.",
+  "hint": "Compare the powers of 2 again: which number now has the lower one?",
+  "answer": "(a) $2^3 \\times 3 \\times 5 = 120$ (b) $2^4 \\times 3^2 \\times 5 = 720$",
+  "solution": "**What changed:** the power of 2 in $B$ went from $2^2$ to $2^4$, so now $A$ has the **lower** power of 2.\n\n(a) Lowest powers: $2^3$ (from $A$), $3^1$ (from $A$), $5^1$:\n$$\\text{HCF} = 2^3 \\times 3 \\times 5 = 120$$\nNotice the HCF equals $A$ itself: every prime power in $A$ is also in $B$, so $A$ is a factor of $B$.\n\n(b) Highest powers: $2^4$, $3^2$, $5$:\n$$\\text{LCM} = 2^4 \\times 3^2 \\times 5 = 720 = B$$\n\nWhen one number is a factor of the other, the HCF is the smaller number and the LCM is the larger.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q07",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$90 = 2 \\times 3^2 \\times 5$ and $120 = 2^3 \\times 3 \\times 5$.\n\n(a) Copy and complete the Venn diagram to show the prime factors of 90 and 120.\n(b) Use your diagram to find the HCF of 90 and 120.\n(c) Use your diagram to find the LCM of 90 and 120.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" width=\"340\" height=\"200\"><circle cx=\"130\" cy=\"110\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"210\" cy=\"110\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"62\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">90</text><text x=\"278\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">120</text></svg>",
+  "hint": "Pair up the primes the two numbers share and put each shared pair **once** in the overlap.",
+  "answer": "(a) Overlap: $2, 3, 5$; 90 only: $3$; 120 only: $2, 2$ (b) $30$ (c) $360$",
+  "solution": "(a) List the primes: $90 = 2 \\times 3 \\times 3 \\times 5$ and $120 = 2 \\times 2 \\times 2 \\times 3 \\times 5$.\n\nShared: one 2, one 3, one 5. These go in the **overlap**, once each.\nLeft over in 90: one 3, which goes in the 90-only region.\nLeft over in 120: two 2s, which go in the 120-only region.\n\n| Region | Primes |\n|---|---|\n| 90 only | $3$ |\n| Overlap | $2, 3, 5$ |\n| 120 only | $2, 2$ |\n\n(Check: left circle $3 \\times 2 \\times 3 \\times 5 = 90$ ✓; right circle $2 \\times 3 \\times 5 \\times 2 \\times 2 = 120$ ✓.)\n\n(b) HCF = product of the overlap $= 2 \\times 3 \\times 5 = 30$\n\n(c) LCM = product of everything in the diagram $= 3 \\times 2 \\times 3 \\times 5 \\times 2 \\times 2 = 360$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q08",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Oscar wants the LCM of 12 and 18. He writes $12 = 2 \\times 2 \\times 3$ and $18 = 2 \\times 3 \\times 3$, and draws the Venn diagram shown.\n\nHe says: \"The LCM is everything in the diagram multiplied together: $2 \\times 2 \\times 3 \\times 2 \\times 3 \\times 2 \\times 3 \\times 3 = 1296$.\"\n\nExplain Oscar's mistake and find the correct LCM.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 200\" width=\"340\" height=\"200\"><circle cx=\"130\" cy=\"110\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"210\" cy=\"110\" r=\"80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"62\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><text x=\"278\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">18</text><text x=\"90\" y=\"93\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"90\" y=\"115\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"90\" y=\"137\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"170\" y=\"104\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"170\" y=\"126\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"250\" y=\"93\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"250\" y=\"115\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"250\" y=\"137\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text></svg>",
+  "hint": "Multiply the numbers in the left circle only. Do you get 12?",
+  "answer": "He put the shared factors 2 and 3 in the outer regions as well as the overlap, so they are counted twice. Correct LCM $= 36$.",
+  "solution": "**Mistake:** the shared primes (one 2 and one 3) should appear **only** in the overlap. Oscar has also left them in the outer regions, so his left circle multiplies to $2 \\times 2 \\times 3 \\times 2 \\times 3 = 144$, not 12. The shared factors are counted twice.\n\n**Correct diagram:**\n* 12 only: $2$\n* Overlap: $2, 3$\n* 18 only: $3$\n\n(Left circle: $2 \\times 2 \\times 3 = 12$ ✓; right circle: $2 \\times 3 \\times 3 = 18$ ✓.)\n\n$$\\text{LCM} = 2 \\times 2 \\times 3 \\times 3 = 36$$\n\nCheck: multiples of 18 are 18, 36, …, and 36 is the first that 12 divides.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q09",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Freya is asked for the HCF of $2^4 \\times 3 \\times 7$ and $2^2 \\times 3^3$. She writes:\n\n\"The HCF is $2^4 \\times 3^3 = 16 \\times 27 = 432$.\"\n\n(a) Without finding the correct answer, explain how you can tell Freya's answer must be wrong.\n(b) Explain her error and find the correct HCF.",
+  "hint": "Work out the two numbers. Can a common factor be bigger than either of them?",
+  "answer": "(a) The numbers are 336 and 108; a common factor cannot be bigger than 108, but 432 is. (b) She used the highest powers (that is the LCM method). HCF $= 2^2 \\times 3 = 12$.",
+  "solution": "(a) The numbers are $2^4 \\times 3 \\times 7 = 336$ and $2^2 \\times 3^3 = 108$. A factor of 108 cannot be bigger than 108, so 432 cannot be a common factor.\n\n(b) Freya took the **highest** power of each shared prime. The HCF must divide **both** numbers, so you can only use as many of each prime as **both** numbers have: the **lowest** power.\n\n* 2: lowest power is $2^2$\n* 3: lowest power is $3^1$\n* 7: only in the first number, so not shared\n\n$$\\text{HCF} = 2^2 \\times 3 = 12$$\n\n(For comparison, the LCM would use the highest powers of every prime: $2^4 \\times 3^3 \\times 7 = 3024$.)",
+  "misconceptionIds": [
+   "m3",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q10",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "Burgers are sold in packs of 6. Buns are sold in packs of 8. Kim wants to buy exactly the same number of burgers and buns, with none left over.\n\nWhat is the smallest number of each pack she can buy?",
+  "hint": "The number of burgers is a multiple of 6 and the number of buns is a multiple of 8.",
+  "answer": "4 packs of burgers and 3 packs of buns (24 of each)",
+  "solution": "The total number of burgers must be a multiple of 6, and the total number of buns a multiple of 8. We need the **lowest common multiple** of 6 and 8.\n\nMultiples of 6: $6, 12, 18, 24, 30, \\ldots$\nMultiples of 8: $8, 16, 24, \\ldots$\n\n$\\text{LCM} = 24$ (not $6 \\times 8 = 48$, which also works but is not the smallest).\n\nBurger packs: $24 \\div 6 = 4$. Bun packs: $24 \\div 8 = 3$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q11",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A florist has 48 roses and 72 tulips. She wants to make identical bunches using all the flowers, with no flowers left over.\n\n(a) What is the greatest number of bunches she can make?\n(b) How many roses and how many tulips are in each bunch?",
+  "hint": "The number of bunches must divide 48 **and** divide 72.",
+  "answer": "(a) 24 bunches (b) 2 roses and 3 tulips",
+  "solution": "(a) The number of bunches must be a factor of 48 and a factor of 72, and we want the greatest: the **HCF**.\n\n$48 = 2^4 \\times 3$, $72 = 2^3 \\times 3^2$\n\n$$\\text{HCF} = 2^3 \\times 3 = 24$$\n\nSo the greatest number of bunches is **24**.\n\n(b) Roses per bunch: $48 \\div 24 = 2$. Tulips per bunch: $72 \\div 24 = 3$.\n\n(The LCM, 144, would not make sense here: she cannot make 144 bunches from 48 roses.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q12",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Tom says: \"To find the LCM of two numbers, just multiply them together.\"\n\n(a) Give an example to show that Tom is not always correct.\n(b) Give an example where Tom's method does give the LCM.\n(c) Using prime factors, explain when Tom's method works and why.",
+  "hint": "Think about what the two numbers have in common. What happens to shared prime factors when you multiply the numbers?",
+  "answer": "(a) e.g. $12 \\times 18 = 216$ but $\\text{LCM}(12, 18) = 36$. (b) e.g. $\\text{LCM}(4, 9) = 36 = 4 \\times 9$. (c) It works exactly when the HCF is 1 (no shared prime factors); otherwise the shared primes are counted twice and product $= \\text{HCF} \\times \\text{LCM}$.",
+  "solution": "(a) $12 \\times 18 = 216$, but the LCM of 12 and 18 is 36 (36 is a multiple of both and smaller). So Tom is not always right.\n\n(b) $4 = 2^2$ and $9 = 3^2$ share no prime factors. Their LCM is $2^2 \\times 3^2 = 36 = 4 \\times 9$, so Tom's method works here.\n\n(c) In a Venn diagram of the prime factors, the LCM is the product of every region, each prime written once. Multiplying the two numbers multiplies the left circle by the right circle, so the **overlap is counted twice**:\n$$a \\times b = \\text{HCF} \\times \\text{LCM}$$\nTom's method gives the LCM only when the overlap is empty, i.e. when $\\text{HCF} = 1$ (the numbers have no common factor except 1). Otherwise his product is too big by a factor of the HCF: $216 \\div 6 = 36$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q13",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Two positive whole numbers have an HCF of 6 and an LCM of 72.\n\nFind **all** possible pairs of numbers. Explain how you know you have found them all.",
+  "hint": "Both numbers are multiples of 6: write them as $6m$ and $6n$. What must be true about $m$ and $n$?",
+  "answer": "$6$ and $72$, or $18$ and $24$",
+  "solution": "Both numbers are multiples of the HCF, so write them as $6m$ and $6n$ with $m \\le n$. Since 6 is the **highest** common factor, $m$ and $n$ have no common factor other than 1.\n\nThen $\\text{LCM} = 6mn$, so\n$$6mn = 72 \\implies mn = 12$$\n\nPairs with $mn = 12$: $(1, 12)$, $(2, 6)$, $(3, 4)$.\n* $(2, 6)$ share a factor 2, so reject (the HCF would be 12).\n* $(1, 12)$ gives $6$ and $72$.\n* $(3, 4)$ gives $18$ and $24$.\n\nCheck: $\\text{HCF}(18, 24) = 6$, $\\text{LCM}(18, 24) = 72$ ✓; $\\text{HCF}(6, 72) = 6$, $\\text{LCM}(6, 72) = 72$ ✓.\n\nAnswer: **6 and 72**, or **18 and 24**.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q14",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "$84 = 2^2 \\times 3 \\times 7$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write 126 as a product of its prime factors.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the highest common factor (HCF) of 84 and 126.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Find the lowest common multiple (LCM) of 84 and 126.",
+    "marks": 2
+   }
+  ],
+  "hint": "Start (a) by dividing 126 by 2. For (b) and (c), compare the powers of each prime.",
+  "answer": "(a) $2 \\times 3^2 \\times 7$ (b) $42$ (c) $252$",
+  "solution": "(a) $126 = 2 \\times 63 = 2 \\times 3 \\times 21 = 2 \\times 3 \\times 3 \\times 7$ **M1** (correct method, e.g. factor tree with at most one error)\n$$126 = 2 \\times 3^2 \\times 7$$ **A1**\n\n(b) Lowest powers of shared primes: $2 \\times 3 \\times 7 = 42$ **B1 ft**\n\n(c) Highest powers of every prime: $2^2 \\times 3^2 \\times 7$ **M1** (or $84 \\times 126 \\div 42$, or a correct Venn diagram)\n$$= 4 \\times 9 \\times 7 = 252$$ **A1**\n\nCheck: $42 \\times 252 = 10584 = 84 \\times 126$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q15",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A rectangular floor measures 3.6 m by 2.7 m. It is to be covered with identical square tiles, with no gaps and no cutting.\n\n(a) Find the side length, in centimetres, of the largest square tile that can be used.\n(b) How many of these tiles are needed?\n(c) The tiles cost £4.85 each. Work out the total cost.",
+  "hint": "Convert to centimetres first. The tile side must divide both lengths exactly.",
+  "answer": "(a) 90 cm (b) 12 tiles (c) £58.20",
+  "solution": "(a) In centimetres the floor is 360 cm by 270 cm. The tile side must be a factor of both 360 and 270, and we want the largest, so we need the HCF.\n\n$360 = 2^3 \\times 3^2 \\times 5$, $270 = 2 \\times 3^3 \\times 5$\n\n$$\\text{HCF} = 2 \\times 3^2 \\times 5 = 90$$\n\nThe largest tile is **90 cm** by 90 cm.\n\n(b) Along the length: $360 \\div 90 = 4$ tiles. Along the width: $270 \\div 90 = 3$ tiles.\nNumber of tiles $= 4 \\times 3 = 12$.\n\n(Check by area: $\\dfrac{360 \\times 270}{90 \\times 90} = \\dfrac{97200}{8100} = 12$ ✓)\n\n(c) $12 \\times £4.85 = £58.20$",
+  "linkedTopicIds": [
+   "geo-units-measures",
+   "geo-perimeter-area"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-hcf-lcm-q16",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Find the HCF of $12a^2b$ and $18ab^3$.\n(b) Find the LCM of $12a^2b$ and $18ab^3$.\n(c) Hence factorise fully $12a^2b + 18ab^3$.",
+  "hint": "Treat each letter like a prime factor: $a^2b = a \\times a \\times b$. Use the lowest power for the HCF and the highest for the LCM.",
+  "answer": "(a) $6ab$ (b) $36a^2b^3$ (c) $6ab(2a + 3b^2)$",
+  "solution": "Write each term as a product of primes and letters:\n$$12a^2b = 2^2 \\times 3 \\times a^2 \\times b, \\qquad 18ab^3 = 2 \\times 3^2 \\times a \\times b^3$$\n\n(a) Lowest power of each shared factor: $2^1$, $3^1$, $a^1$, $b^1$:\n$$\\text{HCF} = 6ab$$\n\n(b) Highest power of every factor: $2^2$, $3^2$, $a^2$, $b^3$:\n$$\\text{LCM} = 36a^2b^3$$\n\n(c) Factorising fully means taking out the HCF:\n$$12a^2b + 18ab^3 = 6ab(2a + 3b^2)$$\nCheck: $6ab \\times 2a = 12a^2b$ ✓ and $6ab \\times 3b^2 = 18ab^3$ ✓. The bracket $2a + 3b^2$ has no common factor left, so this is fully factorised.",
+  "linkedTopicIds": [
+   "alg-expand-factorise-single",
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-hcf-lcm-q17",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$x$ and $y$ are positive whole numbers with $x < y$.\n\n* The HCF of $x$ and $y$ is 12.\n* The LCM of $x$ and $y$ is 360.\n* $x + y = 156$.\n\nFind $x$ and $y$.",
+  "hint": "Write $x = 12m$ and $y = 12n$, where $m$ and $n$ have no common factor. Then use the LCM and the sum.",
+  "answer": "$x = 36$, $y = 120$",
+  "solution": "Since 12 is the HCF, $x = 12m$ and $y = 12n$ where $m < n$ and $m$, $n$ have no common factor except 1.\n\nLCM: $12mn = 360$, so $mn = 30$.\n\nSum: $12m + 12n = 156$, so $m + n = 13$.\n\nPairs with $mn = 30$: $(1, 30)$, $(2, 15)$, $(3, 10)$, $(5, 6)$. Sums: 31, 17, **13**, 11.\n\nSo $m = 3$, $n = 10$ (and 3 and 10 have no common factor ✓).\n\n$$x = 36, \\qquad y = 120$$\n\nCheck: $36 = 2^2 \\times 3^2$, $120 = 2^3 \\times 3 \\times 5$; HCF $= 2^2 \\times 3 = 12$ ✓, LCM $= 2^3 \\times 3^2 \\times 5 = 360$ ✓, $36 + 120 = 156$ ✓.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-hcf-lcm-q18",
+  "topicId": "num-hcf-lcm",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Sequence $P$ has $n$th term $4n + 3$. Sequence $Q$ has $n$th term $6n + 1$.\n\n(a) Write down the first five terms of each sequence.\n(b) Some numbers appear in both sequences. Explain why the gap between consecutive common numbers is the LCM of 4 and 6.\n(c) Find an expression for the $k$th number that appears in both sequences.\n(d) How many numbers less than 500 appear in both sequences?",
+  "hint": "Once you have one common number, the next one must be reached by adding a multiple of 4 (to stay in $P$) that is also a multiple of 6 (to stay in $Q$).",
+  "answer": "(a) $P$: $7, 11, 15, 19, 23$; $Q$: $7, 13, 19, 25, 31$ (b) From a common term you must add a common multiple of 4 and 6 to stay in both; the smallest is $\\text{LCM}(4, 6) = 12$. (c) $12k - 5$ (d) $42$",
+  "solution": "(a) $P$: $7, 11, 15, 19, 23$. $Q$: $7, 13, 19, 25, 31$.\n\n(b) $P$ goes up in 4s and $Q$ goes up in 6s. Starting from a number in both, the next number in both must be a multiple of 4 further on (to stay in $P$) and a multiple of 6 further on (to stay in $Q$). So the gap is a common multiple of 4 and 6, and the **smallest** such gap is $\\text{LCM}(4, 6) = 12$.\n\n(c) The first common number is 7 and they go up in 12s: $7, 19, 31, 43, \\ldots$\n$$k\\text{th common number} = 12k - 5$$\n(Check: $k = 1$ gives 7, $k = 2$ gives 19 ✓.)\n\n(d) Need $12k - 5 < 500$, so $12k < 505$, $k < 42.08\\ldots$\n\nSo $k = 1, 2, \\ldots, 42$: **42** numbers. (The largest is $12 \\times 42 - 5 = 499$.)",
+  "linkedTopicIds": [
+   "alg-sequences-linear",
+   "alg-linear-inequalities"
+  ]
+ }
+]

@@ -1,0 +1,286 @@
+[
+ {
+  "id": "num-order-of-operations-q01",
+  "topicId": "num-order-of-operations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out $4 + 6 \\times 2$.",
+  "hint": "Which comes first in BIDMAS: the addition or the multiplication?",
+  "answer": "$16$",
+  "solution": "There are no brackets or indices, so multiplication comes before addition:\n$$6 \\times 2 = 12$$\n\nThen the addition:\n$$4 + 12 = 16$$\n\n(Working left to right, $4 + 6 = 10$ then $10 \\times 2 = 20$, is wrong: the $\\times$ has priority over the $+$.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q02",
+  "topicId": "num-order-of-operations",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out $(4 + 6) \\times 2$.",
+  "hint": "Brackets are worked out first.",
+  "answer": "$20$",
+  "solution": "**What changed:** brackets have been put round $4 + 6$.\n\nBrackets first:\n$$4 + 6 = 10$$\n\nThen multiply:\n$$10 \\times 2 = 20$$\n\nCompare with $4 + 6 \\times 2 = 16$: the brackets force the addition to happen first, so the answer changes.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q03",
+  "topicId": "num-order-of-operations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out $(4 + 6^2) \\times 2$.",
+  "hint": "Inside the bracket there is still an order to follow: the index comes before the addition.",
+  "answer": "$80$",
+  "solution": "**What changed:** the 6 inside the bracket is now squared.\n\nInside the brackets, indices come before addition:\n$$6^2 = 36, \\qquad 4 + 36 = 40$$\n\nThen multiply:\n$$40 \\times 2 = 80$$\n\nThe index belongs only to the 6, not to the whole bracket.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q04",
+  "topicId": "num-order-of-operations",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Work out $(4 + 6)^2 \\times 2$.",
+  "hint": "This time the index is outside the bracket. What does it apply to?",
+  "answer": "$200$",
+  "solution": "**What changed:** the index has moved from the 6 to the whole bracket.\n\nBrackets first:\n$$4 + 6 = 10$$\n\nThen the index:\n$$10^2 = 100$$\n\nThen multiply:\n$$100 \\times 2 = 200$$\n\nMoving the index from $6^2$ to $(4 + 6)^2$ changes the answer from 80 to 200, because now the whole bracket is squared.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q05",
+  "topicId": "num-order-of-operations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Work out\n(a) $24 \\div 4 \\times 2$\n(b) $20 - 8 + 5$",
+  "hint": "Division and multiplication have equal priority, so work from left to right. The same goes for addition and subtraction.",
+  "answer": "(a) $12$ (b) $17$",
+  "solution": "(a) $\\div$ and $\\times$ have **equal** priority, so work left to right:\n$$24 \\div 4 = 6, \\qquad 6 \\times 2 = 12$$\n\n(Doing the $\\times$ first, $24 \\div 8 = 3$, is wrong.)\n\n(b) $-$ and $+$ have **equal** priority, so work left to right:\n$$20 - 8 = 12, \\qquad 12 + 5 = 17$$\n\n(Doing the $+$ first, $20 - 13 = 7$, is wrong.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q06",
+  "topicId": "num-order-of-operations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Work out\n(a) $2 \\times 5^2$\n(b) $-4^2 + 20$\n(c) $(-4)^2 + 20$",
+  "hint": "An index applies only to the number (or bracket) directly in front of it.",
+  "answer": "(a) $50$ (b) $4$ (c) $36$",
+  "solution": "(a) Indices before multiplication: $5^2 = 25$, then $2 \\times 25 = 50$. (Not $10^2 = 100$.)\n\n(b) The square applies only to the 4, and the minus sign is applied afterwards:\n$$-4^2 = -(4^2) = -16, \\qquad -16 + 20 = 4$$\n\n(c) Now the bracket is squared, so the negative is squared too:\n$$(-4)^2 = (-4) \\times (-4) = 16, \\qquad 16 + 20 = 36$$\n\nThe brackets in (c) change the answer from 4 to 36.",
+  "linkedTopicIds": [
+   "num-negative-numbers"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q07",
+  "topicId": "num-order-of-operations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya's working for $30 - 12 \\div 4 \\times 2 + 1$ is shown below.\n\nLine 1: $4 \\times 2 = 8$, so the calculation becomes $30 - 12 \\div 8 + 1$\nLine 2: $12 \\div 8 = 1.5$, so it becomes $30 - 1.5 + 1$\nLine 3: $30 - 1.5 + 1 = 29.5$\n\nPriya's answer is wrong. Identify the error, explain why it is an error, and work out the correct answer.",
+  "hint": "In BIDMAS, does M really come before D?",
+  "answer": "The error is in Line 1: she multiplied before dividing. Correct answer: $25$",
+  "solution": "**Error:** Line 1. Priya has done $4 \\times 2$ before $12 \\div 4$, as if multiplication always comes before division.\n\n**Why it is wrong:** division and multiplication have **equal** priority. When both appear, work from left to right. Here the $\\div$ comes first.\n\n**Correct working:**\n$$12 \\div 4 = 3$$\n$$3 \\times 2 = 6$$\n$$30 - 6 + 1$$\n\nSubtraction and addition also have equal priority, so left to right:\n$$30 - 6 = 24, \\qquad 24 + 1 = 25$$\n\n**Answer:** $25$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q08",
+  "topicId": "num-order-of-operations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ellie works out $50 - 2 \\times 3^2$ like this:\n\nLine 1: $50 - 2 \\times 3^2 = 50 - 6^2$\nLine 2: $= 50 - 36$\nLine 3: $= 14$\n\nFind Ellie's mistake, explain it, and give the correct answer.",
+  "hint": "Which number does the index 2 belong to?",
+  "answer": "Line 1 is wrong: she multiplied $2 \\times 3$ before squaring. Correct answer: $32$",
+  "solution": "**Error:** Line 1. Ellie has worked out $2 \\times 3 = 6$ and then squared the 6.\n\n**Why it is wrong:** the index belongs only to the 3. Indices are done **before** multiplication, so $3^2$ must be worked out first. To square $2 \\times 3$ you would need brackets: $(2 \\times 3)^2$.\n\n**Correct working:**\n$$3^2 = 9$$\n$$2 \\times 9 = 18$$\n$$50 - 18 = 32$$\n\n**Answer:** $32$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q09",
+  "topicId": "num-order-of-operations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Here is a calculation: $5 + 3 \\times 4 - 1$\n\n(a) Without any brackets, what is its value?\n(b) Insert **one** pair of brackets so that the value is $31$.\n(c) Insert **one** pair of brackets so that the value is $14$.\n(d) Insert **two** pairs of brackets so that the value is $24$.",
+  "hint": "Brackets make a part of the calculation happen first. Try putting brackets round an addition or subtraction that would otherwise be done last.",
+  "answer": "(a) $16$ (b) $(5 + 3) \\times 4 - 1 = 31$ (c) $5 + 3 \\times (4 - 1) = 14$ (d) $(5 + 3) \\times (4 - 1) = 24$",
+  "solution": "(a) Multiplication first: $3 \\times 4 = 12$, then $5 + 12 - 1 = 16$.\n\n(b) To make the answer bigger, make the addition happen before the multiplication:\n$$(5 + 3) \\times 4 - 1 = 8 \\times 4 - 1 = 32 - 1 = 31$$\n\n(c) To get 14, the multiplication must use a smaller number. Bracket the subtraction:\n$$5 + 3 \\times (4 - 1) = 5 + 3 \\times 3 = 5 + 9 = 14$$\n\n(d) Combine both ideas:\n$$(5 + 3) \\times (4 - 1) = 8 \\times 3 = 24$$\n\n(Bracketing $3 \\times 4$ or the whole expression changes nothing, as the multiplication is already done first.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q10",
+  "topicId": "num-order-of-operations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam uses PEMDAS and Zara uses BIDMAS.\n\nSam says: \"In PEMDAS, M comes before D, so $48 \\div 4 \\times 2 = 48 \\div 8 = 6$.\"\nZara says: \"In BIDMAS, D comes before M, so $48 \\div 4 \\times 2 = 12 \\times 2 = 24$.\"\n\n(a) Who has the correct value? Explain the rule that decides it.\n(b) Zara now says, \"So BIDMAS is right and PEMDAS is wrong.\" Is she correct? Use the calculation $48 \\times 4 \\div 2$ to help explain your answer.",
+  "hint": "Multiplication and division have the same priority. What do you do when two operations have the same priority?",
+  "answer": "(a) Zara: $24$. Division and multiplication have equal priority, so they are done left to right. (b) No. Both are just memory aids; the rule is left to right for $\\times$ and $\\div$, e.g. $48 \\times 4 \\div 2 = 192 \\div 2 = 96$, with the $\\times$ done first because it is on the left.",
+  "solution": "(a) Multiplication and division have **equal** priority. When they appear together, you work from **left to right**. In $48 \\div 4 \\times 2$ the division is on the left, so:\n$$48 \\div 4 = 12, \\qquad 12 \\times 2 = 24$$\nZara's value, 24, is correct. Sam is wrong because he has treated M as more important than D just because it comes first in the word.\n\n(b) Zara's reason is not right either. BIDMAS and PEMDAS describe the **same** rules; neither D nor M \"comes first\". The order of the letters is just to make a word you can remember.\n\nIn $48 \\times 4 \\div 2$ the multiplication is on the left, so it is done first:\n$$48 \\times 4 = 192, \\qquad 192 \\div 2 = 96$$\nThe correct rule is \"work left to right\", not \"D before M\" or \"M before D\".",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q11",
+  "topicId": "num-order-of-operations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Ravi thinks that, because A comes before S in BIDMAS, addition should always be done before subtraction.\n\n(a) Show that if Ravi does the addition first in $a - b + c$, his answer is $2c$ less than the correct value.\n(b) For which values of $c$ does Ravi still get the correct answer?\n(c) Explain why doing **subtraction** before addition in $a + b - c$ always gives the correct value.",
+  "hint": "Doing the addition first in $a - b + c$ means working out $a - (b + c)$. Compare this with the correct left-to-right value $(a - b) + c$.",
+  "answer": "(a) Correct value $a - b + c$; Ravi's value $a - (b + c) = a - b - c$; difference $= 2c$. (b) Only when $c = 0$. (c) $a + (b - c) = a + b - c$, which equals the left-to-right value $(a + b) - c$.",
+  "solution": "(a) The correct value works left to right:\n$$(a - b) + c = a - b + c$$\n\nRavi adds first, so he works out\n$$a - (b + c) = a - b - c$$\n\nDifference:\n$$(a - b + c) - (a - b - c) = 2c$$\n\nSo Ravi's answer is $2c$ less than the correct value.\n\n(b) Ravi's answer is correct only when $2c = 0$, i.e. $c = 0$. (For example, $10 - 4 + 3 = 9$, but Ravi gets $10 - 7 = 3$, which is $2 \\times 3 = 6$ too small.)\n\n(c) Doing the subtraction first in $a + b - c$ gives\n$$a + (b - c) = a + b - c$$\nwhich is exactly the left-to-right value $(a + b) - c$. Adding then subtracting, or subtracting then adding, give the same result here because the minus sign stays attached to $c$. The problem only arises when a minus sign is in front of a bracket that should not be there, as in Ravi's $a - (b + c)$.",
+  "linkedTopicIds": [
+   "alg-expand-factorise-single"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q12",
+  "topicId": "num-order-of-operations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Four friends buy 3 coffees at £2.80 each and 2 cakes at £3.30 each. They split the bill equally.\n\n(a) Write a single calculation, using brackets where needed, for the amount each friend pays.\n(b) Work out how much each friend pays.\n(c) Jo types 3 × 2.80 + 2 × 3.30 ÷ 4 into her calculator. What does her calculator show, and why is it not the amount each friend pays?",
+  "hint": "The whole bill must be divided by 4, not just part of it.",
+  "answer": "(a) $(3 \\times 2.80 + 2 \\times 3.30) \\div 4$ (b) £3.75 (c) $10.05$; the calculator divides only $2 \\times 3.30$ by 4, because division is done before addition.",
+  "solution": "(a) The total bill is $3 \\times 2.80 + 2 \\times 3.30$, and the **whole** total is shared between 4, so it needs brackets:\n$$(3 \\times 2.80 + 2 \\times 3.30) \\div 4 \\quad \\text{or} \\quad \\frac{3 \\times 2.80 + 2 \\times 3.30}{4}$$\n\n(b) Inside the bracket, multiply first:\n$$3 \\times 2.80 = 8.40, \\qquad 2 \\times 3.30 = 6.60$$\n$$8.40 + 6.60 = 15.00$$\n$$15.00 \\div 4 = 3.75$$\nEach friend pays **£3.75**.\n\n(c) A calculator follows BIDMAS. Without brackets it works out\n$$3 \\times 2.80 = 8.4, \\qquad 2 \\times 3.30 \\div 4 = 6.6 \\div 4 = 1.65$$\n$$8.4 + 1.65 = 10.05$$\nOnly the cakes have been shared. Jo needed brackets round the whole total (the hidden brackets of a fraction bar).",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-order-of-operations-q13",
+  "topicId": "num-order-of-operations",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A temperature $F$ in degrees Fahrenheit is converted to degrees Celsius $C$ using\n$$C = \\frac{5(F - 32)}{9}$$\n\n(a) Normal body temperature is $98.6^\\circ\\text{F}$. Convert this to $^\\circ\\text{C}$.\n(b) Ben types 5 × 98.6 − 32 ÷ 9 into his calculator. Explain why he gets the wrong answer, and write down the key presses he should have used.\n(c) A recipe says to bake at $356^\\circ\\text{F}$. Convert this to $^\\circ\\text{C}$.\n(d) Show that $-40^\\circ\\text{F}$ is the same as $-40^\\circ\\text{C}$.",
+  "hint": "The fraction bar groups the whole numerator. Also, the bracket $F - 32$ must be worked out before multiplying by 5.",
+  "answer": "(a) $37^\\circ\\text{C}$ (b) His calculator works out $5 \\times 98.6$ and $32 \\div 9$ separately, giving about $489.4$; he should type (5 × (98.6 − 32)) ÷ 9. (c) $180^\\circ\\text{C}$ (d) $\\dfrac{5(-40 - 32)}{9} = \\dfrac{5 \\times (-72)}{9} = -40$",
+  "solution": "(a) Bracket first, then multiply, then divide (the fraction bar groups the whole top):\n$$98.6 - 32 = 66.6$$\n$$5 \\times 66.6 = 333$$\n$$333 \\div 9 = 37$$\nSo $98.6^\\circ\\text{F} = 37^\\circ\\text{C}$.\n\n(b) Without brackets the calculator follows BIDMAS: it works out $5 \\times 98.6 = 493$ and $32 \\div 9 = 3.5555\\ldots$ and then subtracts, giving $489.444\\ldots$ It has not subtracted 32 from 98.6 first, and it has divided only the 32 by 9.\n\nCorrect key presses: ( 5 × ( 98.6 − 32 ) ) ÷ 9, or use the fraction key with $5(98.6 - 32)$ on top and $9$ on the bottom.\n\n(c) $356 - 32 = 324$, $5 \\times 324 = 1620$, $1620 \\div 9 = 180$, so $180^\\circ\\text{C}$.\n\n(d)\n$$C = \\frac{5(-40 - 32)}{9} = \\frac{5 \\times (-72)}{9} = \\frac{-360}{9} = -40$$\nSo $-40^\\circ\\text{F} = -40^\\circ\\text{C}$.",
+  "linkedTopicIds": [
+   "alg-substitution-formulae"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q14",
+  "topicId": "num-order-of-operations",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 6,
+  "question": "Answer all parts. You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out $3 + 4 \\times 5$",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Work out $\\dfrac{6^2 - 4}{2^3}$",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Use your calculator to work out\n$$\\frac{\\sqrt{12.25} + 2.7^2}{4.8 - 1.3 \\times 2}$$\nWrite down all the figures on your calculator display.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Write your answer to part (c) correct to 3 significant figures.",
+    "marks": 1
+   }
+  ],
+  "hint": "In (b) and (c) the fraction bar groups the top and the bottom: work each out separately, then divide.",
+  "answer": "(a) $23$ (b) $4$ (c) $4.904545455$ (d) $4.90$",
+  "solution": "(a) $4 \\times 5 = 20$, $3 + 20 = 23$ **B1**\n\n(b) Numerator: $6^2 - 4 = 36 - 4 = 32$; denominator: $2^3 = 8$ **M1** (either correct)\n$$\\frac{32}{8} = 4$$ **A1**\n\n(c) Numerator: $\\sqrt{12.25} = 3.5$ and $2.7^2 = 7.29$, so $3.5 + 7.29 = 10.79$\nDenominator: $1.3 \\times 2 = 2.6$, so $4.8 - 2.6 = 2.2$ **M1** (10.79 or 2.2 seen)\n$$\\frac{10.79}{2.2} = 4.904545455$$ **A1**\n\nOn the calculator: (√12.25 + 2.7²) ÷ (4.8 − 1.3 × 2).\n\n(d) $4.90$ **B1 ft** from (c) (the zero is needed to show 3 significant figures)",
+  "linkedTopicIds": [
+   "num-rounding"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q15",
+  "topicId": "num-order-of-operations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Given that $a = -2$ and $b = 4$, work out the value of\n$$3a^2 - (b - a)^2 \\div b$$",
+  "hint": "Substitute with brackets round the negative number: $3 \\times (-2)^2$. Then follow BIDMAS carefully.",
+  "answer": "$3$",
+  "solution": "Substitute, keeping the negative number in brackets:\n$$3 \\times (-2)^2 - (4 - (-2))^2 \\div 4$$\n\nBrackets: $4 - (-2) = 6$\n$$3 \\times (-2)^2 - 6^2 \\div 4$$\n\nIndices: $(-2)^2 = 4$ and $6^2 = 36$\n$$3 \\times 4 - 36 \\div 4$$\n\nMultiplication and division: $3 \\times 4 = 12$ and $36 \\div 4 = 9$\n$$12 - 9 = 3$$\n\nCommon errors: writing $3a^2$ as $(3a)^2 = 36$, or $-2^2 = -4$.",
+  "linkedTopicIds": [
+   "alg-substitution-formulae",
+   "num-negative-numbers"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q16",
+  "topicId": "num-order-of-operations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Here is a calculation:\n$$2 \\times 3 + 4 \\times 5 - 6$$\n\nYou may insert **exactly one** pair of brackets. The brackets must contain at least two of the numbers.\n\n(a) Find the largest value you can make.\n(b) Find the smallest value you can make.\n(c) How many **different** values can be made in total? List them.",
+  "hint": "Work systematically: list every possible starting number and every possible ending number for the brackets. There are 10 placements to check.",
+  "answer": "(a) $64$ from $2 \\times (3 + 4) \\times 5 - 6$ (b) $2$ from $2 \\times 3 + 4 \\times (5 - 6)$ (c) 6 values: $2, 20, 34, 40, 44, 64$",
+  "solution": "Without brackets: $6 + 20 - 6 = 20$.\n\nLabel the numbers 2, 3, 4, 5, 6. The bracket can start at any number and end at any later number: $4 + 3 + 2 + 1 = 10$ placements.\n\n| Brackets | Working | Value |\n|---|---|---|\n| $(2 \\times 3) + 4 \\times 5 - 6$ | $6 + 20 - 6$ | $20$ |\n| $(2 \\times 3 + 4) \\times 5 - 6$ | $10 \\times 5 - 6$ | $44$ |\n| $(2 \\times 3 + 4 \\times 5) - 6$ | $26 - 6$ | $20$ |\n| $(2 \\times 3 + 4 \\times 5 - 6)$ | $26 - 6$ | $20$ |\n| $2 \\times (3 + 4) \\times 5 - 6$ | $2 \\times 7 \\times 5 - 6$ | $64$ |\n| $2 \\times (3 + 4 \\times 5) - 6$ | $2 \\times 23 - 6$ | $40$ |\n| $2 \\times (3 + 4 \\times 5 - 6)$ | $2 \\times 17$ | $34$ |\n| $2 \\times 3 + (4 \\times 5) - 6$ | $6 + 20 - 6$ | $20$ |\n| $2 \\times 3 + (4 \\times 5 - 6)$ | $6 + 14$ | $20$ |\n| $2 \\times 3 + 4 \\times (5 - 6)$ | $6 + 4 \\times (-1)$ | $2$ |\n\n(a) Largest: $64$, by bracketing $3 + 4$ so that the sum is multiplied by both 2 and 5.\n\n(b) Smallest: $2$, by bracketing $5 - 6 = -1$ so that the 4 is multiplied by a negative.\n\n(c) Many placements leave the value at 20 (they bracket something that is done first anyway, or the bracket only covers operations of equal priority). The different values are\n$$2, \\ 20, \\ 34, \\ 40, \\ 44, \\ 64$$\nso **6** different values.",
+  "linkedTopicIds": [
+   "num-negative-numbers"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-order-of-operations-q17",
+  "topicId": "num-order-of-operations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider\n$$x = 1 + \\cfrac{1}{1 + \\cfrac{1}{1 + \\cfrac{1}{2}}}$$\n\n(a) Find the exact value of $x$ as a fraction.\n(b) Kai types 1 + 1 ÷ 1 + 1 ÷ 1 + 1 ÷ 2 into his calculator. What answer does he get? Explain why it is wrong.\n(c) Write down a key sequence, using brackets, that would give the correct value.\n(d) The next expression in the pattern is $1 + \\cfrac{1}{x}$. Find its exact value and describe the pattern in the numerators and denominators.",
+  "hint": "Each fraction bar groups everything below it. Start from the innermost fraction, $1 + \\frac{1}{2}$, and work outwards.",
+  "answer": "(a) $x = \\dfrac{8}{5}$ (b) $3.5$; without brackets the calculator divides 1 by 1 each time, instead of dividing 1 by the whole expression underneath. (c) 1 + 1 ÷ (1 + 1 ÷ (1 + 1 ÷ 2)) (d) $\\dfrac{13}{8}$; the numerators and denominators are consecutive Fibonacci numbers ($\\frac{3}{2}, \\frac{5}{3}, \\frac{8}{5}, \\frac{13}{8}$).",
+  "solution": "(a) A fraction bar groups everything underneath it, so work from the inside out.\n\nInnermost: $1 + \\dfrac{1}{2} = \\dfrac{3}{2}$\n\nNext: $1 + \\dfrac{1}{3/2} = 1 + \\dfrac{2}{3} = \\dfrac{5}{3}$\n\nOuter: $x = 1 + \\dfrac{1}{5/3} = 1 + \\dfrac{3}{5} = \\dfrac{8}{5}$\n\n(b) The calculator follows BIDMAS, so it does each division first:\n$$1 + (1 \\div 1) + (1 \\div 1) + (1 \\div 2) = 1 + 1 + 1 + 0.5 = 3.5$$\nThis is wrong because each fraction bar means \"divide 1 by **everything** below the bar\", and Kai has not typed the hidden brackets.\n\n(c) 1 + 1 ÷ (1 + 1 ÷ (1 + 1 ÷ 2)), which gives $1.6 = \\frac{8}{5}$.\n\n(d)\n$$1 + \\frac{1}{8/5} = 1 + \\frac{5}{8} = \\frac{13}{8}$$\nThe values are $\\frac{3}{2}, \\frac{5}{3}, \\frac{8}{5}, \\frac{13}{8}$. Each new denominator is the previous numerator, and each new numerator is the sum of the previous numerator and denominator: $2, 3, 5, 8, 13$ are consecutive Fibonacci numbers.",
+  "linkedTopicIds": [
+   "num-fractions-add-subtract",
+   "num-fractions-multiply-divide",
+   "alg-sequences-quadratic-geometric"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ }
+]

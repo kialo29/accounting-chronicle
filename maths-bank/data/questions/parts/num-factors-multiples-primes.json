@@ -1,0 +1,282 @@
+[
+ {
+  "id": "num-factors-multiples-primes-q01",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) List all the factors of 24.\n(b) Write down the first five multiples of 7.",
+  "hint": "Factors go **into** a number: find them in pairs that multiply to 24. Multiples come from the times table.",
+  "answer": "(a) $1, 2, 3, 4, 6, 8, 12, 24$ (b) $7, 14, 21, 28, 35$",
+  "solution": "(a) Find factor pairs, starting from 1:\n$$1 \\times 24, \\quad 2 \\times 12, \\quad 3 \\times 8, \\quad 4 \\times 6$$\n5 does not divide 24, and the next number, 6, is already in a pair, so stop.\n\nFactors of 24: $1, 2, 3, 4, 6, 8, 12, 24$. (None is bigger than 24.)\n\n(b) Multiples of 7 are in the 7 times table:\n$$7, 14, 21, 28, 35$$\n(These are all 7 or bigger.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q02",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Here is a list of numbers:\n$$1, \\quad 2, \\quad 9, \\quad 11, \\quad 15, \\quad 17, \\quad 21, \\quad 23$$\nWrite down all the prime numbers in the list.",
+  "hint": "A prime number has exactly two factors: 1 and itself.",
+  "answer": "$2, 11, 17, 23$",
+  "solution": "Check each number:\n\n* 1 has only **one** factor, so it is **not** prime.\n* 2 has factors 1 and 2: prime (the only even prime).\n* $9 = 3 \\times 3$: not prime.\n* 11: factors 1 and 11 only: prime.\n* $15 = 3 \\times 5$: not prime.\n* 17: factors 1 and 17 only: prime.\n* $21 = 3 \\times 7$: not prime.\n* 23: factors 1 and 23 only: prime.\n\nPrimes: $2, 11, 17, 23$. Note that 9, 15 and 21 are odd but not prime.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q03",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $72$ as a product of its prime factors. Give your answer in index form.",
+  "hint": "Split 72 into any factor pair, e.g. $8 \\times 9$, and keep splitting until every branch ends in a prime.",
+  "answer": "$72 = 2^3 \\times 3^2$",
+  "solution": "Factor tree: $72 = 8 \\times 9$\n\n$8 = 2 \\times 4 = 2 \\times 2 \\times 2$\n\n$9 = 3 \\times 3$ (9 is not prime, so it must be split too)\n\n$$72 = 2 \\times 2 \\times 2 \\times 3 \\times 3 = 2^3 \\times 3^2$$\n\nCheck: $8 \\times 9 = 72$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q04",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $144$ as a product of its prime factors. Give your answer in index form.",
+  "hint": "$144 = 2 \\times 72$. How does that change your answer for 72?",
+  "answer": "$144 = 2^4 \\times 3^2$",
+  "solution": "**What changed:** $144 = 2 \\times 72$, so there is one extra factor of 2.\n\nSince $72 = 2^3 \\times 3^2$:\n$$144 = 2 \\times 2^3 \\times 3^2 = 2^4 \\times 3^2$$\n\nThe power of 2 goes up by one; the power of 3 is unchanged.\n\nCheck: $16 \\times 9 = 144$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q05",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $720$ as a product of its prime factors. Give your answer in index form.",
+  "hint": "$720 = 144 \\times 5$.",
+  "answer": "$720 = 2^4 \\times 3^2 \\times 5$",
+  "solution": "**What changed:** $720 = 5 \\times 144$, so a new prime, 5, appears.\n\n$$720 = 2^4 \\times 3^2 \\times 5$$\n\nA new prime appears with index 1 (we write $5$, not $5^1$).\n\nCheck: $16 \\times 9 \\times 5 = 144 \\times 5 = 720$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q06",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 3,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $7200$ as a product of its prime factors. Give your answer in index form.",
+  "hint": "$7200 = 720 \\times 10$, and 10 is not prime.",
+  "answer": "$7200 = 2^5 \\times 3^2 \\times 5^2$",
+  "solution": "**What changed:** $7200 = 720 \\times 10$, and $10 = 2 \\times 5$ is **not** prime, so it adds one 2 **and** one 5.\n\n$$7200 = 2^4 \\times 3^2 \\times 5 \\times 2 \\times 5 = 2^5 \\times 3^2 \\times 5^2$$\n\nWriting $2^4 \\times 3^2 \\times 5 \\times 10$ would be wrong: every factor must be prime.\n\nCheck: $32 \\times 9 \\times 25 = 288 \\times 25 = 7200$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q07",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Jack draws this factor tree for 180. The numbers he has circled are where he stopped.\n\nHe writes: $180 = 2^2 \\times 5 \\times 9$\n\nJack's answer is wrong. Explain the mistake and write 180 as a product of prime factors in index form.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 240\" width=\"350\" height=\"240\"><line x1=\"170\" y1=\"36\" x2=\"100\" y2=\"77\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"170\" y1=\"36\" x2=\"240\" y2=\"77\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"240\" y1=\"101\" x2=\"180\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"240\" y1=\"101\" x2=\"290\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"166\" x2=\"250\" y2=\"207\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"290\" y1=\"166\" x2=\"325\" y2=\"207\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"170\" y=\"30\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">180</text><circle cx=\"100\" cy=\"90\" r=\"14\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"100\" y=\"95\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"240\" y=\"95\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">90</text><circle cx=\"180\" cy=\"155\" r=\"14\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180\" y=\"160\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><text x=\"290\" y=\"160\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><circle cx=\"250\" cy=\"220\" r=\"14\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"250\" y=\"225\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><circle cx=\"325\" cy=\"220\" r=\"14\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"325\" y=\"225\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text></svg>",
+  "hint": "Is every circled number prime?",
+  "answer": "He stopped at 9, which is not prime ($9 = 3 \\times 3$). $180 = 2^2 \\times 3^2 \\times 5$",
+  "solution": "**Mistake:** Jack stopped the branch at 9 and circled it, but 9 is **not** prime: $9 = 3 \\times 3$. A product of **prime** factors can only contain primes.\n\n**Correct:** split the 9 into $3 \\times 3$. The ends of the branches are then $2, 3, 3, 2, 5$:\n$$180 = 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^2 \\times 3^2 \\times 5$$\n\nCheck: $4 \\times 9 \\times 5 = 180$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q08",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 1,
+  "type": "spot-the-mistake",
+  "question": "Amira writes:\n\n\"The prime numbers between 0 and 20 are $1, 2, 3, 5, 7, 11, 13, 17, 19$. So there are 9 of them.\"\n\nFind Amira's mistake, explain why it is a mistake, and correct her statement.",
+  "hint": "How many factors does a prime number have? How many factors does 1 have?",
+  "answer": "1 is not prime. The primes are $2, 3, 5, 7, 11, 13, 17, 19$: there are 8.",
+  "solution": "**Mistake:** Amira has included 1.\n\n**Why:** a prime number has **exactly two** different factors, 1 and itself. The number 1 has only **one** factor (1), so it is not prime. (It is also not composite: it is a special case.)\n\nThe rest of her list is correct: 2, 3, 5, 7, 11, 13, 17 and 19 each have exactly two factors, and every other number up to 20 can be split (e.g. $9 = 3 \\times 3$, $15 = 3 \\times 5$).\n\n**Corrected:** the primes between 0 and 20 are $2, 3, 5, 7, 11, 13, 17, 19$: there are **8** of them.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q09",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A PE teacher has 36 pupils. She wants to arrange them in equal rows for a photo, with no pupils left over. Each row must have at least 3 pupils and at most 10 pupils.\n\nList all the possible numbers of pupils in a row, and say how many rows there would be for each.",
+  "hint": "The number in each row must be a factor of 36.",
+  "answer": "3 per row (12 rows), 4 per row (9 rows), 6 per row (6 rows), 9 per row (4 rows)",
+  "solution": "The number in each row must divide 36 exactly, so it is a factor of 36.\n\nFactor pairs of 36:\n$$1 \\times 36, \\quad 2 \\times 18, \\quad 3 \\times 12, \\quad 4 \\times 9, \\quad 6 \\times 6$$\nFactors: $1, 2, 3, 4, 6, 9, 12, 18, 36$\n\nThose from 3 to 10: $3, 4, 6, 9$.\n\n| Pupils per row | Rows |\n|---|---|\n| 3 | 12 |\n| 4 | 9 |\n| 6 | 6 |\n| 9 | 4 |",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q10",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In the Gregorian calendar, a year is a leap year if it is divisible by 4, **except** that a year ending in 00 is a leap year only if it is divisible by 400.\n\n(a) Explain how you can tell whether a year is divisible by 4 by looking only at its last two digits.\n(b) Which of these years are leap years? $2026, \\ 2032, \\ 2100, \\ 2000, \\ 2058, \\ 2400$\n(c) Explain why a year that is divisible by 400 is always divisible by 4.",
+  "hint": "Any number of hundreds is divisible by 4, because $100 = 4 \\times 25$.",
+  "answer": "(a) $100$ is a multiple of 4, so only the last two digits decide. (b) $2032, 2000, 2400$ (c) $400 = 4 \\times 100$, so a multiple of 400 is a multiple of 4.",
+  "solution": "(a) Any year can be split into hundreds plus its last two digits, e.g. $2032 = 2000 + 32$. Since $100 = 4 \\times 25$, every multiple of 100 is divisible by 4. So the year is divisible by 4 exactly when its last two digits are.\n\n(b)\n* 2026: $26 \\div 4 = 6.5$, not divisible by 4: **not** a leap year.\n* 2032: $32 = 4 \\times 8$: **leap year**.\n* 2100: ends in 00, and $2100 \\div 400 = 5.25$: **not** a leap year.\n* 2000: ends in 00, and $2000 = 400 \\times 5$: **leap year**.\n* 2058: $58 \\div 4 = 14.5$: **not** a leap year.\n* 2400: $2400 = 400 \\times 6$: **leap year**.\n\nLeap years: **2032, 2000, 2400**.\n\n(c) $400 = 4 \\times 100$. If a year is $400k$ for a whole number $k$, then it equals $4 \\times 100k$, which is a multiple of 4.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q11",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Leo says: \"Every odd number between 50 and 60, apart from 55, is prime, because they are not in the 2 or 5 times tables.\"\n\nIs Leo correct? Justify your answer.",
+  "hint": "Test each odd number for divisibility by 3 (digit sum) and by 7.",
+  "answer": "No. $51 = 3 \\times 17$ and $57 = 3 \\times 19$ are not prime; only $53$ and $59$ are prime.",
+  "solution": "The odd numbers between 50 and 60, apart from 55, are $51, 53, 57, 59$.\n\nNot being divisible by 2 or 5 is not enough: other primes (3, 7, …) must also be checked. Since $\\sqrt{60} < 8$, it is enough to test 2, 3, 5 and 7.\n\n* 51: digit sum $5 + 1 = 6$, divisible by 3. $51 = 3 \\times 17$: **not prime**.\n* 53: not divisible by 2, 3 (digit sum 8), 5 or 7: **prime**.\n* 57: digit sum 12, divisible by 3. $57 = 3 \\times 19$: **not prime**.\n* 59: not divisible by 2, 3 (digit sum 14), 5 or 7: **prime**.\n\nLeo is **not** correct: 51 and 57 are odd but not prime.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q12",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "(a) Without dividing, decide which of $2, 3, 4, 5, 6, 9, 10$ are factors of $7128$. Give a reason for each.\n(b) Mo says: \"If a number is divisible by 2 and by 4, then it must be divisible by 8.\" Give a counter-example to show Mo is wrong.",
+  "hint": "Use the divisibility tests: last digit, digit sum, last two digits.",
+  "answer": "(a) $2, 3, 4, 6, 9$ are factors; $5$ and $10$ are not. (b) e.g. $12$ is divisible by 2 and 4 but not by 8.",
+  "solution": "(a)\n* **2:** last digit 8 is even: yes.\n* **3:** digit sum $7 + 1 + 2 + 8 = 18$, divisible by 3: yes.\n* **4:** last two digits 28, and $28 = 4 \\times 7$: yes.\n* **5:** does not end in 0 or 5: no.\n* **6:** divisible by both 2 and 3: yes.\n* **9:** digit sum 18 is divisible by 9: yes.\n* **10:** does not end in 0: no.\n\n(b) $12$ is divisible by 2 and by 4, but $12 \\div 8 = 1.5$, so it is not divisible by 8. (Being divisible by 4 already guarantees divisibility by 2, so the two facts together only tell you it has $2^2$ as a factor, not $2^3$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q13",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "I am thinking of a number.\n* It is between 50 and 100.\n* It is a multiple of 6.\n* It is a factor of 336.\n\nWhat is my number? Show how you know there is only one answer.",
+  "hint": "Write 336 as a product of prime factors, then list its factors between 50 and 100.",
+  "answer": "$84$",
+  "solution": "Prime factorise 336:\n$$336 = 2 \\times 168 = 2^2 \\times 84 = 2^3 \\times 42 = 2^4 \\times 21 = 2^4 \\times 3 \\times 7$$\n\nFactor pairs of 336: $1 \\times 336$, $2 \\times 168$, $3 \\times 112$, $4 \\times 84$, $6 \\times 56$, $7 \\times 48$, $8 \\times 42$, $12 \\times 28$, $14 \\times 24$, $16 \\times 21$.\n\nFactors between 50 and 100: $56$ and $84$.\n\nMultiple of 6? $56 = 2^3 \\times 7$ has no factor 3, so no. $84 = 6 \\times 14$, yes.\n\nThe number is **84**, and it is the only one.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q14",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write 600 as a product of its prime factors. Give your answer in index form.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write down a factor of 600 that is between 20 and 30.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Hence, or otherwise, write 1200 as a product of its prime factors in index form.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "$N = 2^3 \\times 3^2 \\times 7$\n\nIs $N$ a multiple of 12? Is $N$ a multiple of 27? Give reasons for your answers.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (d), write 12 and 27 as products of primes and compare with $N$.",
+  "answer": "(a) $2^3 \\times 3 \\times 5^2$ (b) $24$ or $25$ (c) $2^4 \\times 3 \\times 5^2$ (d) Yes, a multiple of 12 (since $12 = 2^2 \\times 3$ divides $N$); not a multiple of 27 (since $27 = 3^3$ but $N$ has only $3^2$).",
+  "solution": "(a) $600 = 6 \\times 100 = 2 \\times 3 \\times 2^2 \\times 5^2$ **M1** (a correct method, e.g. a full factor tree or repeated division with at most one error)\n$$600 = 2^3 \\times 3 \\times 5^2$$ **A1**\n\n(b) $24$ (since $600 = 24 \\times 25$) or $25$ **B1**\n\n(c) $1200 = 2 \\times 600 = 2^4 \\times 3 \\times 5^2$ **B1 ft** from (a)\n\n(d) $12 = 2^2 \\times 3$. $N$ contains $2^3$ (which includes $2^2$) and $3^2$ (which includes 3), so $N = 12 \\times (2 \\times 3 \\times 7)$ is a multiple of 12. **B1**\n\n$27 = 3^3$, but $N$ contains only $3^2$, so 27 does not divide $N$; $N$ is **not** a multiple of 27. **B1**",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-factors-multiples-primes-q15",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Explain why, to check whether a whole number $n$ is prime, you only need to test whether it is divisible by the primes up to $\\sqrt{n}$.\n(b) Hence decide whether $221$ is prime and whether $223$ is prime. Show your tests.",
+  "hint": "Factors come in pairs $a \\times b = n$. Can both $a$ and $b$ be bigger than $\\sqrt{n}$?",
+  "answer": "(a) If $n = a \\times b$ with $1 < a \\le b$, then $a \\le \\sqrt{n}$, and any prime factor of $a$ is also at most $\\sqrt{n}$. (b) $221 = 13 \\times 17$ is not prime; $223$ is prime.",
+  "solution": "(a) Suppose $n$ is not prime, so $n = a \\times b$ with $1 < a \\le b < n$.\n\nIf both $a$ and $b$ were bigger than $\\sqrt{n}$, then $a \\times b > \\sqrt{n} \\times \\sqrt{n} = n$, which is impossible. So the smaller factor satisfies $a \\le \\sqrt{n}$.\n\nThen any prime factor $p$ of $a$ also divides $n$, and $p \\le a \\le \\sqrt{n}$. So if $n$ has no prime factor up to $\\sqrt{n}$, it has no factors other than 1 and itself: it is prime.\n\n(b) $14^2 = 196$ and $15^2 = 225$, so $\\sqrt{221}$ and $\\sqrt{223}$ are both between 14 and 15. Test the primes $2, 3, 5, 7, 11, 13$.\n\n**221:** odd; digit sum 5 (not divisible by 3); does not end in 0 or 5; $221 \\div 7 = 31.57\\ldots$; $221 \\div 11 = 20.09\\ldots$; $221 \\div 13 = 17$. So $221 = 13 \\times 17$ is **not prime**.\n\n**223:** odd; digit sum 7; does not end in 0 or 5; $223 = 7 \\times 31 + 6$; $223 = 11 \\times 20 + 3$; $223 = 13 \\times 17 + 2$. No prime up to 13 divides 223, so **223 is prime**.",
+  "linkedTopicIds": [
+   "num-powers-roots"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-factors-multiples-primes-q16",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Write 540 as a product of its prime factors in index form.\n(b) Find the smallest positive whole number $k$ such that $540k$ is a cube number.\n(c) Write down the cube root of $540k$.",
+  "hint": "In a cube number written as a product of primes, every index is a multiple of 3.",
+  "answer": "(a) $540 = 2^2 \\times 3^3 \\times 5$ (b) $k = 50$ (c) $30$",
+  "solution": "(a) $540 = 54 \\times 10 = 2 \\times 27 \\times 2 \\times 5 = 2^2 \\times 3^3 \\times 5$\n\n(b) A number is a cube exactly when every prime in its factorisation has an index that is a multiple of 3 (then the number is $(\\ldots)^3$).\n\n* $2^2$ needs one more 2 to make $2^3$.\n* $3^3$ is already fine.\n* $5^1$ needs two more 5s to make $5^3$.\n\nSo the smallest $k = 2 \\times 5^2 = 50$, giving\n$$540 \\times 50 = 27000 = 2^3 \\times 3^3 \\times 5^3$$\n\n(c) $\\sqrt[3]{2^3 \\times 3^3 \\times 5^3} = 2 \\times 3 \\times 5 = 30$. Check: $30^3 = 27000$ ✓",
+  "linkedTopicIds": [
+   "num-powers-roots",
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "num-factors-multiples-primes-q17",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The number $12$ has exactly 6 factors: $1, 2, 3, 4, 6, 12$.\n\n(a) Write $72$ as a product of prime factors and use it to explain why $72$ has exactly 12 factors.\n(b) Find the smallest positive whole number that has exactly 12 factors. Justify that it is the smallest.",
+  "hint": "A factor of $2^a \\times 3^b$ has the form $2^i \\times 3^j$, with $i$ chosen from $0, \\ldots, a$ and $j$ from $0, \\ldots, b$. How many choices is that?",
+  "answer": "(a) $72 = 2^3 \\times 3^2$; factors are $2^i 3^j$ with 4 choices for $i$ and 3 for $j$: $4 \\times 3 = 12$. (b) $60$",
+  "solution": "(a) $72 = 2^3 \\times 3^2$. Every factor of 72 is made from the same primes with indices no bigger: $2^i \\times 3^j$ where $i \\in \\{0, 1, 2, 3\\}$ (4 choices) and $j \\in \\{0, 1, 2\\}$ (3 choices). Different choices give different numbers (prime factorisation is unique), so there are $4 \\times 3 = 12$ factors.\n\n(b) In general, $p^a \\times q^b \\times r^c \\times \\ldots$ has $(a + 1)(b + 1)(c + 1)\\cdots$ factors. We need this product to be 12:\n$$12 = 12, \\qquad 6 \\times 2, \\qquad 4 \\times 3, \\qquad 3 \\times 2 \\times 2$$\n\nFor each pattern, give the biggest index to the smallest prime:\n\n| Pattern | Smallest number |\n|---|---|\n| $p^{11}$ | $2^{11} = 2048$ |\n| $p^5 q$ | $2^5 \\times 3 = 96$ |\n| $p^3 q^2$ | $2^3 \\times 3^2 = 72$ |\n| $p^2 q r$ | $2^2 \\times 3 \\times 5 = 60$ |\n\nEvery number with exactly 12 factors fits one of these patterns, and each pattern's smallest value is listed. The smallest overall is **60**.\n\nCheck: factors of 60 are $1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60$, which is 12 ✓",
+  "linkedTopicIds": [
+   "num-counting-product-rule"
+  ]
+ },
+ {
+  "id": "num-factors-multiples-primes-q18",
+  "topicId": "num-factors-multiples-primes",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$p$ is a prime number greater than 3.\n\n(a) Explain why $p$ is odd and is not a multiple of 3.\n(b) By writing $p^2 - 1 = (p - 1)(p + 1)$, prove that $p^2 - 1$ is always divisible by 24.\n(c) Check your result for $p = 5$, $p = 7$ and $p = 11$.",
+  "hint": "$p - 1$, $p$, $p + 1$ are three consecutive integers, so one of them is a multiple of 3. Also, $p - 1$ and $p + 1$ are consecutive even numbers, so one of them is a multiple of 4.",
+  "answer": "(a) If $p$ were even it would have factor 2; if a multiple of 3 it would have factor 3; either way $p$ would not be prime (as $p > 3$). (b) $(p - 1)(p + 1)$ contains a factor 3, one factor 2 and a factor 4, so a factor $3 \\times 8 = 24$. (c) $24, 48, 120$, all multiples of 24.",
+  "solution": "(a) If $p$ were even, then 2 would be a factor of $p$ with $2 \\ne p$, so $p$ would not be prime. If $p$ were a multiple of 3, then 3 would be a factor with $3 \\ne p$ (since $p > 3$), so again $p$ would not be prime. Hence $p$ is odd and not a multiple of 3.\n\n(b) $p^2 - 1 = (p - 1)(p + 1)$ (difference of two squares).\n\n**Factor 3:** $p - 1$, $p$, $p + 1$ are three consecutive integers, so exactly one is a multiple of 3. It is not $p$, so 3 divides $p - 1$ or $p + 1$, and therefore 3 divides $(p - 1)(p + 1)$.\n\n**Factor 8:** $p$ is odd, so $p - 1$ and $p + 1$ are both even. They are consecutive even numbers, so one of them is a multiple of 4. Their product therefore contains $2 \\times 4 = 8$ as a factor.\n\nSince 3 and 8 have no common factor, $(p - 1)(p + 1)$ is divisible by $3 \\times 8 = 24$. $\\blacksquare$\n\n(c) $p = 5$: $25 - 1 = 24 = 24 \\times 1$ ✓\n$p = 7$: $49 - 1 = 48 = 24 \\times 2$ ✓\n$p = 11$: $121 - 1 = 120 = 24 \\times 5$ ✓",
+  "linkedTopicIds": [
+   "alg-algebraic-proof",
+   "alg-factorising-quadratics"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]

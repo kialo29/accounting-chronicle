@@ -1,0 +1,260 @@
+[
+ {
+  "id": "num-estimation-q01",
+  "topicId": "num-estimation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "By rounding each number to $1$ significant figure, estimate the value of $38.6 \\times 5.2$.",
+  "hint": "$38.6$ to 1 s.f. is a multiple of $10$. What is $5.2$ to 1 s.f.?",
+  "answer": "$40 \\times 5 = 200$",
+  "solution": "Round each number to 1 significant figure:\n$$38.6 \\approx 40, \\qquad 5.2 \\approx 5$$\n\nThen\n$$38.6 \\times 5.2 \\approx 40 \\times 5 = 200$$\n\n(The exact value is $200.72$, so the estimate is very close.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q02",
+  "topicId": "num-estimation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "By rounding each number to $1$ significant figure, estimate the value of $38.6 \\times 0.52$.",
+  "hint": "The first significant figure of $0.52$ is the $5$ in the tenths column.",
+  "answer": "$40 \\times 0.5 = 20$",
+  "solution": "**What changed:** $5.2$ has become $0.52$, which is ten times smaller.\n\n$$38.6 \\approx 40, \\qquad 0.52 \\approx 0.5$$\n\n$$38.6 \\times 0.52 \\approx 40 \\times 0.5 = 20$$\n\nMultiplying by $0.5$ is the same as halving. The answer is ten times smaller than before, as you would expect.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q03",
+  "topicId": "num-estimation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "By rounding each number to $1$ significant figure, estimate the value of $38.6 \\div 0.52$.",
+  "hint": "How many halves are there in $40$?",
+  "answer": "$40 \\div 0.5 = 80$",
+  "solution": "**What changed:** the multiplication has become a division.\n\n$$38.6 \\div 0.52 \\approx 40 \\div 0.5$$\n\nDividing by $0.5$ asks \"how many halves are in $40$?\" There are two halves in every whole, so\n$$40 \\div 0.5 = 80$$\n\nDividing by a number less than $1$ makes the answer **bigger**. Halving to get $20$ would be the answer to $40 \\times 0.5$, not $40 \\div 0.5$. (Exact value: $74.23\\ldots$)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q04",
+  "topicId": "num-estimation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "By rounding each number to $1$ significant figure, estimate the value of $386 \\div 0.52$.",
+  "hint": "Round $386$ to 1 s.f. first. Then think about how many halves there are.",
+  "answer": "$400 \\div 0.5 = 800$",
+  "solution": "**What changed:** $38.6$ has become $386$, ten times bigger.\n\n$$386 \\approx 400, \\qquad 0.52 \\approx 0.5$$\n\n$$386 \\div 0.52 \\approx 400 \\div 0.5 = 800$$\n\nTen times the dividend gives ten times the answer ($80 \\to 800$). (Exact value: $742.3\\ldots$)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q05",
+  "topicId": "num-estimation",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "Amira buys four items in a shop:\n\n| Item | Price |\n|---|---|\n| Pasta | £2.89 |\n| Washing powder | £6.15 |\n| Bread | £1.99 |\n| Cheese | £3.75 |\n\n(a) Round each price to the nearest pound and estimate the total cost.\n\n(b) Amira has a £20 note. Will she have enough money? Explain how your estimate tells you.",
+  "hint": "Round each price to the nearest whole pound, then add.",
+  "answer": "(a) $3 + 6 + 2 + 4 = £15$ (b) Yes; the total is about £15, well under £20.",
+  "solution": "(a) Rounding to the nearest pound: $£2.89 \\approx £3$, $£6.15 \\approx £6$, $£1.99 \\approx £2$, $£3.75 \\approx £4$.\n\n$$3 + 6 + 2 + 4 = 15$$\nEstimated total: about £15.\n\n(b) Yes. The estimate is £15, and each price was changed by less than 50p, so the real total is within £2 of £15. That is still well under £20. (The exact total is £14.78.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q06",
+  "topicId": "num-estimation",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Estimate the value of $\\sqrt{24.7 \\times 3.9}$.\n\nShow the values you use.",
+  "hint": "Rounding $24.7$ to 1 s.f. gives $20$, and $20 \\times 4 = 80$, which is not a square number. Is there a friendlier value close to $24.7$?",
+  "answer": "$\\sqrt{25 \\times 4} = \\sqrt{100} = 10$",
+  "solution": "Rounding strictly to 1 s.f. gives $\\sqrt{20 \\times 4} = \\sqrt{80}$, which is awkward to find without a calculator.\n\nA better choice is a nearby value that makes the square root easy: $24.7 \\approx 25$ and $3.9 \\approx 4$.\n\n$$\\sqrt{24.7 \\times 3.9} \\approx \\sqrt{25 \\times 4} = \\sqrt{100} = 10$$\n\n(The exact value is $9.81\\ldots$, so $10$ is a good estimate.)",
+  "linkedTopicIds": [
+   "num-powers-roots"
+  ]
+ },
+ {
+  "id": "num-estimation-q07",
+  "topicId": "num-estimation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Josh is asked to estimate the value of $\\dfrac{21.3 \\times 4.92}{0.487}$. His working is shown below.\n\n$$\\frac{21.3 \\times 4.92}{0.487} \\approx \\frac{20 \\times 5}{1} = 100$$\n\nIdentify Josh's mistake, explain why it is wrong, and work out the correct estimate.",
+  "hint": "Has Josh rounded every number to 1 significant figure?",
+  "answer": "Josh rounded $0.487$ to the nearest whole number ($1$) instead of to 1 s.f. ($0.5$). Correct estimate: $\\frac{20 \\times 5}{0.5} = 200$.",
+  "solution": "**Mistake:** Josh rounded $0.487$ to $1$. That is rounding to the nearest **whole number**, not to 1 significant figure.\n\n**Why it matters:** the first significant figure of $0.487$ is the $4$ in the tenths column, so to 1 s.f. it is $0.5$. Changing $0.487$ to $1$ more than doubles the divisor, which roughly halves the answer.\n\n**Correct estimate:**\n$$\\frac{21.3 \\times 4.92}{0.487} \\approx \\frac{20 \\times 5}{0.5} = \\frac{100}{0.5} = 200$$\n\n(The exact value is $215.2\\ldots$, so $200$ is a sensible estimate; $100$ is not.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q08",
+  "topicId": "num-estimation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to **estimate** the value of $\\dfrac{19.6 \\times 51.3}{0.38}$. He writes:\n\n\"On my calculator, $\\dfrac{19.6 \\times 51.3}{0.38} = 2646$, so my estimate is $2600$.\"\n\nExplain what is wrong with Ben's method and give a correct estimate.",
+  "hint": "An estimate is supposed to be done in your head. Which numbers should be rounded, the inputs or the answer?",
+  "answer": "Ben worked out the exact answer and rounded it, which is not estimating. Round the inputs: $\\frac{20 \\times 50}{0.4} = 2500$.",
+  "solution": "**What is wrong:** Ben calculated the exact value on a calculator and then rounded the answer. That does not estimate anything. The point of an estimate is to round the **inputs** first so the calculation can be done mentally, and then used to **check** a calculator answer. If Ben had pressed a wrong key, his \"estimate\" would contain the same mistake.\n\n**Correct estimate:** round each number to 1 s.f.\n$$19.6 \\approx 20, \\quad 51.3 \\approx 50, \\quad 0.38 \\approx 0.4$$\n\n$$\\frac{20 \\times 50}{0.4} = \\frac{1000}{0.4} = 2500$$\n\n(Dividing by $0.4$: there are $2.5$ lots of $0.4$ in $1$, so $1000 \\div 0.4 = 2500$.) This agrees reasonably with the calculator value $2646$, which is good evidence that the calculator work was correct.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q09",
+  "topicId": "num-estimation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Aisha estimates $\\dfrac{83.6}{3.7}$ as follows.\n\n$$\\frac{83.6}{3.7} \\approx \\frac{80}{4} = 20$$\n\n\"This is an overestimate, because I rounded $3.7$ up to $4$.\"\n\nAisha's estimate of $20$ is correct, but her conclusion is wrong. Explain her mistake and state whether $20$ is an overestimate or an underestimate.",
+  "hint": "What happens to the answer of a division when you divide by a bigger number? And which way was $83.6$ rounded?",
+  "answer": "$20$ is an underestimate: $83.6$ was rounded down (smaller numerator) and $3.7$ was rounded up (dividing by a bigger number), and both make the answer smaller.",
+  "solution": "**Mistake:** Aisha assumes that rounding a number up always makes the estimate bigger. That is true for a number you multiply by (or the numerator), but $3.7$ is the **divisor**.\n\n* Dividing by a bigger number gives a **smaller** answer (e.g. $80 \\div 4 < 80 \\div 3.7$). So rounding $3.7$ up to $4$ makes the estimate smaller.\n* Aisha also rounded $83.6$ **down** to $80$, which also makes the estimate smaller.\n\nBoth changes pull the same way, so $20$ is an **underestimate**.\n\nCheck: $83.6 \\div 3.7 = 22.59\\ldots$, which is indeed more than $20$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q10",
+  "topicId": "num-estimation",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Estimate the value of $\\dfrac{4.6 \\times 18.3}{2.4}$.\n\n(b) Without working out the exact value, explain whether your estimate is an overestimate or an underestimate.",
+  "hint": "For each number, decide whether it was rounded up or down, and whether that makes the answer bigger or smaller.",
+  "answer": "(a) $\\frac{5 \\times 20}{2} = 50$ (b) Overestimate: $4.6$ and $18.3$ were rounded up (bigger numerator) and $2.4$ was rounded down (smaller divisor), so every rounding increases the answer.",
+  "solution": "(a) Round to 1 s.f.: $4.6 \\approx 5$, $18.3 \\approx 20$, $2.4 \\approx 2$.\n$$\\frac{4.6 \\times 18.3}{2.4} \\approx \\frac{5 \\times 20}{2} = \\frac{100}{2} = 50$$\n\n(b) Look at each rounding:\n\n* $4.6 \\to 5$: rounded **up**, in the numerator, so the estimate gets **bigger**.\n* $18.3 \\to 20$: rounded **up**, in the numerator, so **bigger**.\n* $2.4 \\to 2$: rounded **down**, in the denominator. Dividing by a smaller number gives a bigger answer, so **bigger**.\n\nAll three effects make the estimate larger than the true value, so $50$ is an **overestimate**. (The exact value is $35.075$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q11",
+  "topicId": "num-estimation",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A school buys 28 theatre tickets costing £18.75 each. Mia uses a calculator to work out the total cost and gets £52.50.\n\n(a) Use an estimate to show that Mia's answer must be wrong.\n\n(b) Suggest what Mia might have typed into her calculator by mistake, and find the correct total.",
+  "hint": "Round both numbers to 1 significant figure. How far is your estimate from £52.50?",
+  "answer": "(a) $30 \\times 20 = £600$, about ten times Mia's answer. (b) She probably typed $28 \\times 1.875$; the correct total is £525.",
+  "solution": "(a) Round to 1 s.f.: $28 \\approx 30$, $£18.75 \\approx £20$.\n$$30 \\times 20 = 600$$\nThe total should be roughly £600 (a bit less, as both numbers were rounded up). Mia's £52.50 is about a tenth of this, so it must be wrong.\n\n(b) Her answer is exactly one tenth of the true answer, which suggests a misplaced decimal point, such as typing $1.875$ instead of $18.75$: $28 \\times 1.875 = 52.5$.\n\nCorrect total: $28 \\times 18.75 = £525$, which is close to the estimate of £600.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q12",
+  "topicId": "num-estimation",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 4,
+  "question": "You must not use a calculator in this question.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out an estimate for the value of\n$$\\frac{3.86 \\times 297}{0.212}$$",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Is your answer to part (a) an overestimate or an underestimate? Give a reason for your answer.",
+    "marks": 1
+   }
+  ],
+  "hint": "Round every number to 1 significant figure. Dividing by $0.2$ is the same as multiplying by $5$.",
+  "answer": "(a) $6000$ (b) Overestimate, because $3.86$ and $297$ were rounded up and $0.212$ was rounded down.",
+  "solution": "(a) Round to 1 s.f.: $3.86 \\approx 4$, $297 \\approx 300$, $0.212 \\approx 0.2$ **M1** (at least two correct roundings)\n\n$$\\frac{4 \\times 300}{0.2} = \\frac{1200}{0.2}$$ **M1** (for $1200$, or correct method for dividing by $0.2$)\n\n$1200 \\div 0.2 = 1200 \\times 5 = 6000$ **A1**\n\n(b) Overestimate, with a reason such as: the numbers on the top were both rounded up, making the numerator bigger, and the divisor was rounded down, so dividing by a smaller number makes the answer bigger. **B1**\n\n(Exact value: $5407.6\\ldots$)",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q13",
+  "topicId": "num-estimation",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "A train travels $412$ km in $1$ hour $58$ minutes.\n\n(a) Estimate the average speed of the train in km/h.\n\n(b) Is your estimate an overestimate or an underestimate? Explain.",
+  "hint": "Speed $=$ distance $\\div$ time. What is $1$ hour $58$ minutes to the nearest hour?",
+  "answer": "(a) $400 \\div 2 = 200$ km/h (b) Underestimate: the distance was rounded down and the time (the divisor) was rounded up.",
+  "solution": "(a) Average speed $= \\dfrac{\\text{distance}}{\\text{time}}$.\n\nRound: $412 \\text{ km} \\approx 400$ km. $1$ h $58$ min is $1.97$ h (to 3 s.f.), which is about $2$ hours.\n\n$$\\text{speed} \\approx \\frac{400}{2} = 200 \\text{ km/h}$$\n\n(b) The distance $412$ was rounded **down**, so the numerator is smaller. The time was rounded **up**, and dividing by a bigger number gives a smaller answer. Both make the estimate smaller, so $200$ km/h is an **underestimate**.\n\n(Exact: $412 \\div \\frac{118}{60} = 209.5$ km/h to 1 d.p.)",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-estimation-q14",
+  "topicId": "num-estimation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The diagram shows a sphere of radius $6.2$ cm.\n\nThe volume of a sphere is $V = \\dfrac{4}{3}\\pi r^3$.\n\n(a) By using $\\pi \\approx 3$ and rounding the radius to $1$ significant figure, estimate the volume of the sphere.\n\n(b) Explain whether your answer to (a) is an overestimate or an underestimate.",
+  "hint": "With $\\pi \\approx 3$, the $\\frac{4}{3}$ and the $3$ simplify nicely. Then you need $6^3$.",
+  "answer": "(a) $\\frac{4}{3} \\times 3 \\times 6^3 = 864\\ \\text{cm}^3$ (b) Underestimate: both $\\pi$ and $6.2$ were rounded down, and every factor is multiplied.",
+  "solution": "(a) $r = 6.2 \\approx 6$ and $\\pi \\approx 3$:\n$$V \\approx \\frac{4}{3} \\times 3 \\times 6^3 = 4 \\times 216 = 864\\ \\text{cm}^3$$\n\n(b) $\\pi = 3.14159\\ldots$ was rounded **down** to $3$, and $6.2$ was rounded **down** to $6$. In the formula everything is multiplied (and $r$ is cubed, which magnifies the effect), so making these smaller makes the volume smaller. The estimate is an **underestimate**.\n\n(Exact: $\\frac{4}{3}\\pi \\times 6.2^3 = 998\\ \\text{cm}^3$ to 3 s.f., so the estimate is quite a lot too small, mainly because cubing $6$ instead of $6.2$ loses about $10\\%$.)",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 210\" width=\"340\" height=\"210\"><circle cx=\"170\" cy=\"105\" r=\"80\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><ellipse cx=\"170\" cy=\"105\" rx=\"80\" ry=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"170\" y1=\"105\" x2=\"250\" y2=\"105\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"105\" r=\"2.5\" fill=\"currentColor\"/><text x=\"210.0\" y=\"97\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6.2 cm</text></svg>"
+ },
+ {
+  "id": "num-estimation-q15",
+  "topicId": "num-estimation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Estimate the value of\n$$\\frac{(5.87 \\times 10^6) \\times (3.06 \\times 10^{-2})}{1.94 \\times 10^3}$$\n\nGive your answer as an ordinary number. Can you tell whether your estimate is too big or too small?",
+  "hint": "Round the number parts to 1 s.f. and deal with the powers of $10$ separately using the index laws.",
+  "answer": "$90$; you cannot tell, since $5.87$ and $1.94$ were rounded up (opposite effects) and $3.06$ was rounded down.",
+  "solution": "Round each number part to 1 s.f.: $5.87 \\approx 6$, $3.06 \\approx 3$, $1.94 \\approx 2$.\n\nNumber parts:\n$$\\frac{6 \\times 3}{2} = 9$$\n\nPowers of ten, using the index laws:\n$$\\frac{10^6 \\times 10^{-2}}{10^3} = 10^{6 + (-2) - 3} = 10^1$$\n\nEstimate:\n$$9 \\times 10^1 = 90$$\n\n**Over or under?** $5.87 \\to 6$ (numerator up: bigger), $3.06 \\to 3$ (numerator down: smaller), $1.94 \\to 2$ (divisor up: smaller). The effects pull in different directions, so from the rounding alone we **cannot tell**. (In fact the exact value is $92.6$ to 3 s.f., so here it is a slight underestimate.)",
+  "linkedTopicIds": [
+   "num-standard-form",
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "num-estimation-q16",
+  "topicId": "num-estimation",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Liam wants to paint the wall shown with two coats of paint. One tin of paint covers $12\\ \\text{m}^2$.\n\nLiam estimates: \"The wall is about $5 \\times 2 = 10\\ \\text{m}^2$, two coats makes $20\\ \\text{m}^2$, and a tin covers about $10\\ \\text{m}^2$, so I need $2$ tins.\"\n\n(a) Explain why Liam's estimate cannot tell him for certain that $2$ tins are enough.\n\n(b) Work out how many tins Liam actually needs.\n\n(c) Suggest a better way for Liam to estimate when the answer must not be too small.",
+  "hint": "Which of Liam's roundings made the number of tins smaller, and which made it bigger?",
+  "answer": "(a) He rounded both lengths down (which lowers the estimate) but the coverage down (which raises it), so the estimate could be too small. (b) $3$ tins ($26.46\\ \\text{m}^2 \\div 12 = 2.205$). (c) Round the lengths up (and the coverage down), so the estimate is definitely an overestimate.",
+  "solution": "(a) Liam rounded $5.4 \\to 5$ and $2.45 \\to 2$: both **down**, which makes the area (and number of tins) smaller. He rounded $12 \\to 10$, also down, but $12$ is the divisor, so that makes the number of tins **bigger**. The roundings pull in opposite directions, so he cannot know whether $2$ is too many or too few. In fact the area was rounded down by quite a lot ($2.45 \\to 2$ is nearly $20\\%$).\n\n(b) Area to paint:\n$$5.4 \\times 2.45 \\times 2 = 26.46\\ \\text{m}^2$$\nTins:\n$$26.46 \\div 12 = 2.205$$\nTwo tins only cover $24\\ \\text{m}^2$, so Liam needs **$3$ tins**.\n\n(c) When running short would be a problem, round so the estimate is definitely too big: round the wall measurements **up** (e.g. $6 \\times 2.5 \\times 2 = 30\\ \\text{m}^2$) and the tin coverage **down** ($10\\ \\text{m}^2$), giving $3$ tins. An overestimate is safe.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 190\" width=\"340\" height=\"190\"><rect x=\"45\" y=\"30\" width=\"270\" height=\"122.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"180\" y=\"174\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5.4 m</text><text x=\"37\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2.45 m</text><text x=\"180\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">wall</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-estimation-q17",
+  "topicId": "num-estimation",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Ravi wants to know whether $2.98^4$ is more than or less than $80$, without using a calculator.\n\nHe writes: \"$2.98^4 \\approx 3^4 = 81$, and $81 > 80$, so $2.98^4 > 80$.\"\n\n(a) Is $81$ an overestimate or an underestimate of $2.98^4$? Explain.\n\n(b) Explain why Ravi's conclusion does not follow from his estimate.\n\n(c) Without a calculator, show that $2.98^4 < 80$.",
+  "hint": "For (c), write $2.98 = 3 - 0.02$ and work out $2.98^2$ exactly by expanding. Then find a convenient number just above $2.98^2$.",
+  "answer": "(a) Overestimate, since $2.98$ was rounded up and then raised to a power. (b) An overestimate being above $80$ does not stop the true value being below $80$. (c) $2.98^2 = 8.8804 < 8.9$, so $2.98^4 < 8.9^2 = 79.21 < 80$.",
+  "solution": "(a) $2.98 < 3$, and raising a bigger positive number to the fourth power gives a bigger result, so $3^4 = 81$ is an **overestimate**.\n\n(b) Ravi only knows $2.98^4 < 81$. A number that is less than $81$ could be more than $80$ or less than $80$; the estimate is not accurate enough to decide. An overestimate can only prove that a value is **below** something, not above it.\n\n(c) Expand:\n$$2.98^2 = (3 - 0.02)^2 = 9 - 2 \\times 3 \\times 0.02 + 0.02^2 = 9 - 0.12 + 0.0004 = 8.8804$$\n\nSo $2.98^2 < 8.9$, and therefore\n$$2.98^4 = \\left(2.98^2\\right)^2 < 8.9^2 = 79.21 < 80$$\n\nSo in fact $2.98^4 < 80$, the opposite of Ravi's conclusion. (Calculator check: $2.98^4 = 78.86\\ldots$)",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "num-estimation-q18",
+  "topicId": "num-estimation",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Kofi says: \"If I estimate a product of two positive numbers by rounding each number to $1$ significant figure, my estimate is always within $50\\%$ of the exact answer.\"\n\n(a) Use the product $1.5 \\times 1.5$ to show that Kofi is wrong.\n\n(b) Find the largest possible value of $\\dfrac{\\text{estimate}}{\\text{exact value}}$ for a product of two positive numbers, and give an example where it is reached. Explain why it cannot be bigger.",
+  "hint": "For a single number, when is rounding to 1 s.f. the biggest **relative** increase? Compare rounding $1.5$ up to $2$ with rounding $9.5$ up to $10$.",
+  "answer": "(a) Estimate $2 \\times 2 = 4$, exact $2.25$; $4$ is about $78\\%$ more than $2.25$. (b) $\\frac{16}{9}$, reached for $1.5 \\times 1.5$ (or e.g. $15 \\times 0.15$).",
+  "solution": "(a) $1.5$ to 1 s.f. is $2$, so the estimate is $2 \\times 2 = 4$, but the exact value is $2.25$.\n$$\\frac{4 - 2.25}{2.25} = 0.777\\ldots \\approx 78\\%$$\nThe estimate is about $78\\%$ too big, so Kofi is wrong.\n\n(b) **One number first.** Write a positive number as $x = m \\times 10^k$ with $1 \\le m < 10$, and let $d$ be the first digit of $m$. Rounding to 1 s.f. only increases $x$ when $m \\ge d + 0.5$, and then it becomes $(d + 1) \\times 10^k$. The ratio is\n$$\\frac{\\text{rounded}}{x} = \\frac{d+1}{m} \\le \\frac{d+1}{d+0.5}$$\nThis is largest when $d = 1$: $\\dfrac{2}{1.5} = \\dfrac{4}{3}$. (For larger $d$ it is smaller, e.g. $d = 9$ gives $\\frac{10}{9.5}$.) So rounding to 1 s.f. can multiply a number by at most $\\frac{4}{3}$, and this happens exactly when $m = 1.5$ (e.g. $1.5$, $15$, $0.15$).\n\n**Product.** Each factor is multiplied by at most $\\frac{4}{3}$, so\n$$\\frac{\\text{estimate}}{\\text{exact}} \\le \\frac{4}{3} \\times \\frac{4}{3} = \\frac{16}{9} \\approx 1.78$$\n\nIt is reached when both numbers start $1.5$, for example $1.5 \\times 1.5$: $\\frac{4}{2.25} = \\frac{16}{9}$. So a 1 s.f. estimate of a product can be up to $78\\%$ too big, and no worse.",
+  "linkedTopicIds": []
+ }
+]

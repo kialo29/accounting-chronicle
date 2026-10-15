@@ -1,0 +1,271 @@
+[
+ {
+  "id": "num-standard-form-q01",
+  "topicId": "num-standard-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $45\\,000$ in standard form.",
+  "hint": "Standard form is $A \\times 10^n$ with $1 \\le A < 10$. Where must the decimal point go to make $A$ between 1 and 10?",
+  "answer": "$4.5 \\times 10^4$",
+  "solution": "We need $A$ between 1 and 10, so $A = 4.5$.\n\nTo get from $4.5$ to $45\\,000$ the digits move 4 places to the left (multiply by $10\\,000 = 10^4$):\n$$45\\,000 = 4.5 \\times 10^4$$\n\nCheck: $4.5 \\times 10\\,000 = 45\\,000$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q02",
+  "topicId": "num-standard-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $4\\,500\\,000$ in standard form.",
+  "hint": "Compare with $45\\,000$. How many more places do the digits move?",
+  "answer": "$4.5 \\times 10^6$",
+  "solution": "What changed: the number is 100 times bigger than $45\\,000$ (two more zeros).\n\n$A$ is still $4.5$, and the digits now move 6 places, so the power goes up by 2:\n$$4\\,500\\,000 = 4.5 \\times 10^6$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q03",
+  "topicId": "num-standard-form",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $0.0045$ in standard form.",
+  "hint": "For a number less than 1 the power of 10 is negative. Count how many places the 4 must move to reach the units column.",
+  "answer": "$4.5 \\times 10^{-3}$",
+  "solution": "What changed: the number is now less than 1, so the power will be negative.\n\n$A = 4.5$. The 4 is in the thousandths column, so it has to move **3** places to the left to reach the units column. We are dividing by $1000 = 10^3$:\n$$0.0045 = 4.5 \\times 10^{-3}$$\n\nCareful: there are only 2 zeros after the decimal point, but the power is $-3$. Count the places moved, not the zeros.\n\nCheck: $4.5 \\div 1000 = 0.0045$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q04",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $0.000\\,045$ in standard form.",
+  "hint": "Compare with $0.0045$. Is this number bigger or smaller, and by what factor?",
+  "answer": "$4.5 \\times 10^{-5}$",
+  "solution": "What changed: this number is 100 times **smaller** than $0.0045$.\n\nThe 4 is now 5 places to the right of the units column, so\n$$0.000\\,045 = 4.5 \\times 10^{-5}$$\n\nDividing by 100 made the power 2 smaller: from $-3$ to $-5$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q05",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Write $3.07 \\times 10^5$ as an ordinary number.\n\n(b) Write $8.1 \\times 10^{-3}$ as an ordinary number.\n\n(c) Shona writes $23 \\times 10^4$. Explain why this is not in standard form, and write it correctly in standard form.",
+  "hint": "Multiplying by $10^5$ moves digits 5 places left; multiplying by $10^{-3}$ is dividing by 1000. In standard form, the first number must be at least 1 and less than 10.",
+  "answer": "(a) $307\\,000$ (b) $0.0081$ (c) $23$ is not between 1 and 10; $2.3 \\times 10^5$",
+  "solution": "(a) $3.07 \\times 10^5 = 3.07 \\times 100\\,000 = 307\\,000$\n\n(b) $8.1 \\times 10^{-3} = 8.1 \\div 1000 = 0.0081$\n\n(c) In standard form $A \\times 10^n$ we need $1 \\le A < 10$, but $23 \\ge 10$.\n\n$23 = 2.3 \\times 10$, so\n$$23 \\times 10^4 = 2.3 \\times 10^1 \\times 10^4 = 2.3 \\times 10^5$$\nMaking $A$ ten times smaller means the power must go up by 1.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q06",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Work out each of these. Give your answers in standard form.\n\n(a) $(3 \\times 10^4) \\times (5 \\times 10^6)$\n\n(b) $(8 \\times 10^9) \\div (2 \\times 10^{-3})$",
+  "hint": "Deal with the numbers and the powers of 10 separately, using the index laws. Check that your final $A$ is between 1 and 10.",
+  "answer": "(a) $1.5 \\times 10^{11}$ (b) $4 \\times 10^{12}$",
+  "solution": "(a) Numbers: $3 \\times 5 = 15$. Powers: $10^4 \\times 10^6 = 10^{10}$. This gives $15 \\times 10^{10}$, but $15$ is not between 1 and 10.\n\n$15 = 1.5 \\times 10^1$, so\n$$15 \\times 10^{10} = 1.5 \\times 10^{11}$$\n\n(b) Numbers: $8 \\div 2 = 4$. Powers: $10^9 \\div 10^{-3} = 10^{9 - (-3)} = 10^{12}$.\n$$4 \\times 10^{12}$$\nHere $A = 4$ is already between 1 and 10.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q07",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Leah says:\n\n'$9.8 \\times 10^3$ is bigger than $1.2 \\times 10^5$ because $9.8$ is bigger than $1.2$.'\n\n(a) Is Leah correct? Explain your answer.\n\n(b) Write these numbers in order of size, starting with the smallest.\n$$1.2 \\times 10^5 \\qquad 9.8 \\times 10^3 \\qquad 2.06 \\times 10^5 \\qquad 9.9 \\times 10^{4}$$",
+  "hint": "Which matters more in standard form: the power of 10 or the number in front? Try writing each as an ordinary number.",
+  "answer": "(a) No: $9.8 \\times 10^3 = 9800$ but $1.2 \\times 10^5 = 120\\,000$. (b) $9.8 \\times 10^3,\\ 9.9 \\times 10^4,\\ 1.2 \\times 10^5,\\ 2.06 \\times 10^5$",
+  "solution": "(a) Leah is **not** correct. She has compared only the front numbers. The power of 10 tells you the size of the number:\n$$9.8 \\times 10^3 = 9800, \\qquad 1.2 \\times 10^5 = 120\\,000$$\nBecause $A$ is always less than 10, any number $\\times 10^5$ is bigger than any number $\\times 10^3$. Compare the powers first; only compare the $A$ values when the powers are equal.\n\n(b) Powers: $10^3$ is smallest, then $10^4$, then two numbers with $10^5$. For those two, compare $A$: $1.2 < 2.06$.\n\n**Order:** $9.8 \\times 10^3,\\ 9.9 \\times 10^4,\\ 1.2 \\times 10^5,\\ 2.06 \\times 10^5$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q08",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Oscar works out $(6 \\times 10^4) + (3 \\times 10^3)$. His working is shown.\n\n$$\\begin{aligned} (6 \\times 10^4) + (3 \\times 10^3) &= (6 + 3) \\times 10^{4+3} \\\\ &= 9 \\times 10^7 \\end{aligned}$$\n\nExplain what Oscar has done wrong and find the correct answer in standard form.",
+  "hint": "Write both numbers as ordinary numbers and add them. Does Oscar's answer look sensible?",
+  "answer": "He added the powers, which is only valid when multiplying. Correct answer: $6.3 \\times 10^4$",
+  "solution": "**The first line is wrong.** Oscar added the indices, as if he were multiplying. The index law $10^a \\times 10^b = 10^{a+b}$ is for multiplication, not addition. His answer, $90\\,000\\,000$, is far too big.\n\n**Correct method 1** (ordinary numbers):\n$$60\\,000 + 3000 = 63\\,000 = 6.3 \\times 10^4$$\n\n**Correct method 2** (same power first): $3 \\times 10^3 = 0.3 \\times 10^4$, so\n$$6 \\times 10^4 + 0.3 \\times 10^4 = 6.3 \\times 10^4$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q09",
+  "topicId": "num-standard-form",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Nadia works out $(4 \\times 10^{-3}) \\times (3 \\times 10^{-5})$ and gives her answer in standard form.\n\n$$\\begin{aligned} (4 \\times 10^{-3}) \\times (3 \\times 10^{-5}) &= 12 \\times 10^{-8} \\\\ &= 1.2 \\times 10^{-9} \\end{aligned}$$\n\n(a) Which line contains the mistake? Explain the error.\n\n(b) Write down the correct answer.",
+  "hint": "$12 = 1.2 \\times 10^{?}$. Does making the front number smaller make the power go up or down?",
+  "answer": "(a) The second line: she adjusted the power the wrong way. (b) $1.2 \\times 10^{-7}$",
+  "solution": "(a) The first line is correct: $4 \\times 3 = 12$ and $10^{-3} \\times 10^{-5} = 10^{-8}$.\n\n**The error is in the second line.** To change 12 into 1.2 we divide by 10, so to keep the value the same the power of 10 must be multiplied by 10, i.e. go **up** by 1. Nadia made it go down, from $-8$ to $-9$, which makes her answer 100 times too small.\n\n(b) $12 = 1.2 \\times 10^1$, so\n$$12 \\times 10^{-8} = 1.2 \\times 10^{1 + (-8)} = 1.2 \\times 10^{-7}$$\n\nCheck with ordinary numbers: $0.004 \\times 0.00003 = 0.000\\,000\\,12 = 1.2 \\times 10^{-7}$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q10",
+  "topicId": "num-standard-form",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Write these numbers in order of size, starting with the smallest.\n$$6.2 \\times 10^{-3} \\qquad 0.059 \\qquad 5.9 \\times 10^{-4} \\qquad 0.000\\,61 \\qquad 6.02 \\times 10^{-3}$$",
+  "hint": "Write all five numbers in standard form first. Then sort by the power of 10, and only then by the front number.",
+  "answer": "$5.9 \\times 10^{-4},\\ 0.000\\,61,\\ 6.02 \\times 10^{-3},\\ 6.2 \\times 10^{-3},\\ 0.059$",
+  "solution": "Convert the ordinary numbers:\n$$0.059 = 5.9 \\times 10^{-2}, \\qquad 0.000\\,61 = 6.1 \\times 10^{-4}$$\n\nGroup by power (for negative powers, $10^{-4}$ is smaller than $10^{-3}$, which is smaller than $10^{-2}$):\n\n* $10^{-4}$: $5.9 \\times 10^{-4}$ and $6.1 \\times 10^{-4}$, and $5.9 < 6.1$\n* $10^{-3}$: $6.02 \\times 10^{-3}$ and $6.2 \\times 10^{-3}$, and $6.02 < 6.2$\n* $10^{-2}$: $5.9 \\times 10^{-2}$\n\n**Order:** $5.9 \\times 10^{-4},\\ 0.000\\,61,\\ 6.02 \\times 10^{-3},\\ 6.2 \\times 10^{-3},\\ 0.059$\n\nNote that $5.9 \\times 10^{-4}$ and $0.059$ have the same digits but are at opposite ends of the list.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q11",
+  "topicId": "num-standard-form",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": false,
+  "question": "Answer all parts. You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write $0.000\\,307$ in standard form.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Work out $(6 \\times 10^5) \\div (1.5 \\times 10^{-2})$. Give your answer in standard form.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out $3.2 \\times 10^5 + 4.6 \\times 10^4$. Give your answer in standard form.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (c) you cannot add the powers: write both numbers with the same power of 10, or as ordinary numbers.",
+  "answer": "(a) $3.07 \\times 10^{-4}$ (b) $4 \\times 10^7$ (c) $3.66 \\times 10^5$",
+  "solution": "(a) $3.07 \\times 10^{-4}$ **B1**\n\n(b) $6 \\div 1.5 = 4$ and $10^5 \\div 10^{-2} = 10^{7}$ **M1** (either correct)\n\n$4 \\times 10^7$ **A1**\n\n(c) $320\\,000 + 46\\,000$ or $3.2 \\times 10^5 + 0.46 \\times 10^5$ **M1**\n\n$= 366\\,000 = 3.66 \\times 10^5$ **A1**",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q12",
+  "topicId": "num-standard-form",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The average distance from the Earth to the Sun is $1.5 \\times 10^8$ km. Light travels at $3 \\times 10^5$ km per second.\n\n(a) Work out how many seconds it takes light from the Sun to reach the Earth. Give your answer in standard form (also called scientific notation).\n\n(b) Write your answer to (a) in minutes and seconds.",
+  "hint": "time = distance ÷ speed. Divide the numbers and the powers of 10 separately.",
+  "answer": "(a) $5 \\times 10^2$ seconds (b) 8 minutes 20 seconds",
+  "solution": "(a) time $= \\dfrac{\\text{distance}}{\\text{speed}} = \\dfrac{1.5 \\times 10^8}{3 \\times 10^5}$\n\nNumbers: $1.5 \\div 3 = 0.5$. Powers: $10^8 \\div 10^5 = 10^3$. So the time is $0.5 \\times 10^3$ s.\n\n$0.5$ is not between 1 and 10: $0.5 \\times 10^3 = 5 \\times 10^2$ seconds.\n\n(b) $5 \\times 10^2 = 500$ seconds. $500 = 8 \\times 60 + 20$, so it takes **8 minutes 20 seconds**.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q13",
+  "topicId": "num-standard-form",
+  "difficulty": 4,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ],
+  "question": "An adult has about 5 litres of blood. Each cubic millimetre of blood contains about $5 \\times 10^6$ red blood cells.\n\n(a) $1 \\text{ litre} = 10^6\\ \\text{mm}^3$. Estimate the total number of red blood cells in the adult's body. Give your answer in standard form.\n\n(b) A red blood cell lasts about 120 days before it is replaced. Assuming cells are replaced at a steady rate, estimate how many red blood cells the body must make every second. Give your answer in standard form to 2 significant figures.",
+  "hint": "(a) Convert 5 litres into $\\text{mm}^3$ first. (b) How many seconds are there in 120 days?",
+  "answer": "(a) $2.5 \\times 10^{13}$ (b) about $2.4 \\times 10^6$ cells per second",
+  "solution": "(a) $5 \\text{ litres} = 5 \\times 10^6\\ \\text{mm}^3$.\n\nNumber of cells $= (5 \\times 10^6) \\times (5 \\times 10^6) = 25 \\times 10^{12} = 2.5 \\times 10^{13}$\n\n(b) Seconds in 120 days: $120 \\times 24 \\times 60 \\times 60 = 10\\,368\\,000 = 1.0368 \\times 10^7$ s.\n\nAll $2.5 \\times 10^{13}$ cells are replaced in that time, so the rate is\n$$\\frac{2.5 \\times 10^{13}}{1.0368 \\times 10^7} = 2.411\\ldots \\times 10^{6}$$\n\nAbout $2.4 \\times 10^6$ (2.4 million) new red blood cells every second.",
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "num-standard-form-q14",
+  "topicId": "num-standard-form",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "rat-compound-growth-decay"
+  ],
+  "question": "A sample of pond water contains $3.5 \\times 10^4$ algae cells. In warm weather the number of cells increases by 12% each day.\n\n(a) Work out the number of algae cells after 30 days. Give your answer in standard form to 3 significant figures.\n\n(b) The water turns visibly green once the sample contains more than $1 \\times 10^6$ cells. After how many whole days does this first happen?",
+  "hint": "An increase of 12% each day means multiplying by $1.12$ each day. After $n$ days the multiplier is $1.12^n$.",
+  "answer": "(a) $1.05 \\times 10^6$ cells (b) after 30 days",
+  "solution": "(a) Multiplier for a 12% increase: $1.12$. After 30 days:\n$$3.5 \\times 10^4 \\times 1.12^{30} = 3.5 \\times 10^4 \\times 29.959\\ldots = 1\\,048\\,573.\\ldots$$\n\nIn standard form to 3 s.f.: $1.05 \\times 10^6$ cells.\n\n(b) We need $3.5 \\times 10^4 \\times 1.12^n > 1 \\times 10^6$, i.e. $1.12^n > \\dfrac{10^6}{3.5 \\times 10^4} = 28.57\\ldots$\n\nTry values: $1.12^{29} = 26.75\\ldots$ (too small: $9.36 \\times 10^5$ cells), $1.12^{30} = 29.96\\ldots$ ($1.05 \\times 10^6$ cells).\n\nSo the number first exceeds $1 \\times 10^6$ after **30 days**."
+ },
+ {
+  "id": "num-standard-form-q15",
+  "topicId": "num-standard-form",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-pyramids-cones-spheres"
+  ],
+  "question": "A type of cell is modelled as a sphere of radius $5 \\times 10^{-6}$ m.\n\n(a) Work out the volume of one cell in $\\text{m}^3$. Give your answer in standard form to 3 significant figures.\n\n(b) How many of these cells would have a total volume of $1\\ \\text{cm}^3$? ($1\\ \\text{cm}^3 = 10^{-6}\\ \\text{m}^3$.) Give your answer in standard form to 2 significant figures.",
+  "hint": "Volume of a sphere $= \\frac{4}{3}\\pi r^3$. Cube both parts of $5 \\times 10^{-6}$: $(10^{-6})^3 = 10^{?}$",
+  "answer": "(a) $5.24 \\times 10^{-16}\\ \\text{m}^3$ (b) $1.9 \\times 10^9$ cells",
+  "solution": "(a) $r^3 = (5 \\times 10^{-6})^3 = 125 \\times 10^{-18} = 1.25 \\times 10^{-16}$\n\n$$V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3} \\times \\pi \\times 1.25 \\times 10^{-16} = 5.235\\ldots \\times 10^{-16}\\ \\text{m}^3$$\n\nTo 3 s.f.: $5.24 \\times 10^{-16}\\ \\text{m}^3$.\n\n(b) Number of cells $= \\dfrac{10^{-6}}{5.235\\ldots \\times 10^{-16}} = 0.1909\\ldots \\times 10^{10} = 1.909\\ldots \\times 10^{9}$\n\nAbout $1.9 \\times 10^9$ cells (nearly 2 billion)."
+ },
+ {
+  "id": "num-standard-form-q16",
+  "topicId": "num-standard-form",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$a = 4 \\times 10^n$ and $b = 5 \\times 10^{n+2}$, where $n$ is an integer.\n\nFind, in standard form in terms of $n$ where necessary,\n\n(a) $ab$\n\n(b) $a + b$\n\n(c) $\\dfrac{b}{a}$ as an ordinary number.",
+  "hint": "For (b), write $b$ as a multiple of $10^n$ so that both terms have the same power of 10.",
+  "answer": "(a) $2 \\times 10^{2n+3}$ (b) $5.04 \\times 10^{n+2}$ (c) $125$",
+  "solution": "(a) $ab = (4 \\times 5) \\times 10^{n + (n+2)} = 20 \\times 10^{2n+2}$\n\n$20 = 2 \\times 10^1$, so $ab = 2 \\times 10^{2n+3}$.\n\n(b) Adding: the powers must be the same first. $b = 5 \\times 10^{n+2} = 500 \\times 10^n$, so\n$$a + b = 4 \\times 10^n + 500 \\times 10^n = 504 \\times 10^n = 5.04 \\times 10^{n+2}$$\n(Adding the powers to get something like $9 \\times 10^{2n+2}$ would be wrong – index laws are for multiplying.)\n\n(c) $\\dfrac{b}{a} = \\dfrac{5}{4} \\times 10^{(n+2) - n} = 1.25 \\times 10^2 = 125$, whatever the value of $n$.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-standard-form-q17",
+  "topicId": "num-standard-form",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "num-index-laws"
+  ],
+  "question": "How many digits does the number $2^{20} \\times 5^{23}$ have when it is written out in full?\n\nDo not use a calculator.",
+  "hint": "$2 \\times 5 = 10$. How many pairs of a 2 and a 5 can you make?",
+  "answer": "23 digits",
+  "solution": "Pair up the 2s and 5s, because $2 \\times 5 = 10$:\n$$2^{20} \\times 5^{23} = 2^{20} \\times 5^{20} \\times 5^3 = (2 \\times 5)^{20} \\times 125 = 125 \\times 10^{20}$$\n\nIn standard form this is $1.25 \\times 10^{22}$.\n\nA number $A \\times 10^{22}$ with $1 \\le A < 10$ lies between $10^{22}$ (which is a 1 followed by 22 zeros: 23 digits) and $10^{23}$ (24 digits), so it has **23 digits**.\n\nConcretely: $125$ followed by twenty zeros has $3 + 20 = 23$ digits."
+ },
+ {
+  "id": "num-standard-form-q18",
+  "topicId": "num-standard-form",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "num-powers-roots"
+  ],
+  "question": "(a) $x = 3.6 \\times 10^{2k+1}$, where $k$ is an integer. Show that $\\sqrt{x} = 6 \\times 10^k$.\n\n(b) Explain why you cannot simply square-root the two parts of $3.6 \\times 10^{2k+1}$ separately to get an answer in standard form.\n\n(c) Hence write $\\sqrt{3.6 \\times 10^{-5}}$ in standard form.",
+  "hint": "Rewrite $3.6 \\times 10^{2k+1}$ so that the power of 10 is even. What happens to the 3.6?",
+  "answer": "(a) $x = 36 \\times 10^{2k}$, so $\\sqrt{x} = 6 \\times 10^k$ (b) $\\sqrt{10^{2k+1}} = 10^{k + \\frac12}$, which is not an integer power, and $\\sqrt{3.6}$ is not exact (c) $6 \\times 10^{-3}$",
+  "solution": "(a) Move one factor of 10 from the power into the front number:\n$$x = 3.6 \\times 10 \\times 10^{2k} = 36 \\times 10^{2k}$$\n\nNow both parts are perfect squares: $36 = 6^2$ and $10^{2k} = (10^k)^2$. So\n$$\\sqrt{x} = \\sqrt{36} \\times \\sqrt{10^{2k}} = 6 \\times 10^k$$\nand since $1 \\le 6 < 10$ and $k$ is an integer, this is in standard form.\n\n(b) Square-rooting separately gives $\\sqrt{3.6} \\times 10^{\\frac{2k+1}{2}} = 1.897\\ldots \\times 10^{k + \\frac12}$. The power $k + \\frac12$ is not an integer, so this is not standard form, and $\\sqrt{3.6}$ is not a nice number. The power of 10 must be even before you can halve it.\n\n(c) $-5 = 2k + 1$ gives $k = -3$, so\n$$\\sqrt{3.6 \\times 10^{-5}} = 6 \\times 10^{-3}$$\n\nCheck: $(6 \\times 10^{-3})^2 = 36 \\times 10^{-6} = 3.6 \\times 10^{-5}$ ✓"
+ }
+]

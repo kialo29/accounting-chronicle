@@ -90,7 +90,8 @@ a.chip:hover, button.chip:hover { border-color: var(--accent); color: var(--acce
 .chip.stage { font-family: var(--font-mono); font-size: 0.7rem; padding: 1px 7px; color: var(--ink-soft); }
 .chip.stage.us { border-style: dashed; }
 .chip.type-spot-the-mistake { color: var(--margin); border-color: var(--margin); background: var(--margin-soft); }
-.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.side .chip, .panel .chip, .linked .chip, ol.path .chip { white-space: normal; max-width: 100%; text-align: left; }
 .dots { display: inline-flex; gap: 3px; vertical-align: middle; }
 .dots i { width: 7px; height: 7px; border-radius: 50%; border: 1.5px solid var(--dc, var(--accent)); display: inline-block; }
 .dots i.on { background: var(--dc, var(--accent)); }
@@ -400,6 +401,7 @@ ol.path .needs { font-size: 0.8rem; color: var(--ink-soft); }
       <div class="path-pick">
         <input type="text" id="path-input" list="topic-list" placeholder="Target topic, e.g. Integration by parts">
         <button type="button" class="btn primary" id="path-go">Show path</button>
+        <select id="path-depth" aria-label="How far back" style="width:auto"><option value="1">Direct prerequisites only</option><option value="2">2 levels back</option><option value="3" selected>3 levels back</option><option value="99">Everything back to Year 7</option></select>
         <label class="check"><input type="checkbox" id="path-hide"> Hide known topics</label>
       </div>
       <div id="path-out"></div>
@@ -921,8 +923,17 @@ function ancestors(id) {
   }
   return seen;
 }
-function orderedPath(id) {
-  var set = ancestors(id); set.add(id);
+function depths(id) {
+  var d = new Map([[id, 0]]), queue = [id];
+  while (queue.length) {
+    var x = queue.shift();
+    (topicById.get(x).prerequisites || []).forEach(function (p) { if (topicById.has(p) && !d.has(p)) { d.set(p, d.get(x) + 1); queue.push(p); } });
+  }
+  return d;
+}
+function orderedPath(id, maxDepth) {
+  var dep = depths(id), set = new Set();
+  dep.forEach(function (v, k) { if (v <= maxDepth) set.add(k); });
   var done = new Set(), out = [];
   var remaining = Array.from(set);
   while (remaining.length) {
@@ -939,10 +950,12 @@ function renderPath() {
   var out = document.getElementById('path-out');
   if (!pathTarget) { out.innerHTML = '<div class="empty">Pick a target topic above to see the order to teach its prerequisites.</div>'; return; }
   var hide = document.getElementById('path-hide').checked;
-  var seq = orderedPath(pathTarget);
+  var maxDepth = +document.getElementById('path-depth').value;
+  var all = ancestors(pathTarget).size;
+  var seq = orderedPath(pathTarget, maxDepth);
   var shown = seq.filter(function (id) { return !(hide && known.has(id) && id !== pathTarget); });
   var t = topicById.get(pathTarget);
-  var h = '<p class="muted" style="margin:0 0 8px">' + (seq.length - 1) + ' prerequisite topic' + (seq.length === 2 ? '' : 's') + ' lead to <b>' + esc(t.title) + '</b>' +
+  var h = '<p class="muted" style="margin:0 0 8px">' + (seq.length - 1) + ' prerequisite topic' + (seq.length === 2 ? '' : 's') + ' lead to <b>' + esc(t.title) + '</b>' + (seq.length - 1 < all ? ' (' + all + ' in the full chain back to Year 7)' : '') +
     (known.size ? ' · ' + seq.filter(function (id) { return known.has(id); }).length + ' marked known' : '') + '.</p><ol class="path">';
   shown.forEach(function (id, i) {
     var x = topicById.get(id), isT = id === pathTarget;
@@ -965,6 +978,7 @@ function wirePath() {
   document.getElementById('path-go').addEventListener('click', pick);
   document.getElementById('path-input').addEventListener('change', pick);
   document.getElementById('path-hide').addEventListener('change', renderPath);
+  document.getElementById('path-depth').addEventListener('change', renderPath);
   document.getElementById('path-out').addEventListener('change', function (e) {
     var id = e.target.dataset.known; if (!id) return;
     if (e.target.checked) known.add(id); else known.delete(id);

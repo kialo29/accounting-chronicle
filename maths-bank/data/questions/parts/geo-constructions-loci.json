@@ -1,0 +1,309 @@
+[
+ {
+  "id": "geo-constructions-loci-q01",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A point $P$ moves so that it is always **exactly** 3 cm from a fixed point $O$.\n\n(a) Describe the locus of $P$.\n\n(b) Find the length of the locus. Give your answer in terms of $\\pi$.",
+  "hint": "Mark $O$ and a few points that are 3 cm away from it in different directions. What shape do they make?",
+  "answer": "(a) A circle, centre $O$, radius 3 cm. (b) $6\\pi$ cm",
+  "solution": "(a) Every point exactly 3 cm from $O$ lies on a circle centred at $O$ with radius 3 cm, and every point on that circle is 3 cm from $O$. So the locus is the **circle with centre $O$ and radius 3 cm** (draw it with compasses set to 3 cm).\n\n(b) The length of the locus is the circumference:\n$$C = 2\\pi r = 2 \\times \\pi \\times 3 = 6\\pi\\text{ cm}$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q02",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A point $P$ moves so that it is always **less than** 3 cm from a fixed point $O$.\n\n(a) Describe the region where $P$ can be.\n\n(b) Find the area of this region. Give your answer in terms of $\\pi$.",
+  "hint": "Start from the locus of points *exactly* 3 cm from $O$. Is $P$ inside or outside it?",
+  "answer": "(a) The inside of the circle with centre $O$ and radius 3 cm (the circle itself is not included, so it is drawn dashed). (b) $9\\pi\\text{ cm}^2$",
+  "solution": "**What changed from the previous question:** \"exactly 3 cm\" became \"less than 3 cm\", so the answer changes from a *line* (a locus) to a *region*.\n\n(a) Points exactly 3 cm from $O$ form the circle of radius 3 cm. Points closer than that are inside it. So $P$ can be anywhere **inside the circle, centre $O$, radius 3 cm**. Because the inequality is strict (\"less than\"), points on the circle are not included, so the boundary is usually drawn as a dashed line.\n\n(b) Area of the disc:\n$$A = \\pi r^2 = \\pi \\times 3^2 = 9\\pi\\text{ cm}^2$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q03",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$AB$ is a line segment of length 5 cm. A point $P$ moves so that it is always **exactly** 3 cm from the line segment $AB$ (that is, 3 cm from the nearest point of $AB$).\n\n(a) Describe the locus of $P$.\n\n(b) Find the total length of the locus, correct to 1 decimal place.",
+  "hint": "Think separately about points level with the segment and points beyond each end. Beyond $A$, which point of the segment is nearest?",
+  "answer": "(a) A \"stadium\" shape: two lines parallel to $AB$, each 5 cm long and 3 cm from $AB$ (one on each side), joined at each end by a semicircle of radius 3 cm centred on $A$ and on $B$. (b) $10 + 6\\pi \\approx 28.8$ cm",
+  "solution": "**What changed:** the fixed *point* has become a fixed *line segment*.\n\n(a) Alongside the segment, the nearest point of $AB$ is directly across, so the locus there is two straight lines parallel to $AB$, 3 cm away, each the same length as $AB$ (5 cm).\n\nBeyond the end $A$, the nearest point of the segment is $A$ itself, so the locus is part of a circle of radius 3 cm centred on $A$: a **semicircle**. The same happens at $B$.\n\nSo the locus is two parallel 5 cm lines joined by two semicircles: a \"stadium\". It does **not** have square corners – a rectangle would put the corner points $\\sqrt{3^2+3^2} \\approx 4.2$ cm from $A$, which is too far.\n\n(b) The two semicircles together make one full circle of radius 3 cm:\n$$\\text{length} = 5 + 5 + 2\\pi \\times 3 = 10 + 6\\pi = 28.849\\ldots \\approx 28.8\\text{ cm}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q04",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$AB$ is a line segment of length 5 cm. A point $P$ moves so that it is always **less than** 3 cm from the line segment $AB$.\n\n(a) Describe the region where $P$ can be.\n\n(b) Find the area of this region, correct to 1 decimal place.",
+  "hint": "The boundary is the locus from the previous question. Split the inside into a rectangle and two semicircles.",
+  "answer": "(a) The inside of the stadium shape: a 5 cm by 6 cm rectangle around $AB$ with a semicircle of radius 3 cm on each end (boundary not included). (b) $30 + 9\\pi \\approx 58.3\\text{ cm}^2$",
+  "solution": "**What changed:** \"exactly\" became \"less than\", so the stadium-shaped *line* becomes the *region* inside it.\n\n(a) The region is everything inside the stadium: a rectangle of length 5 cm (along $AB$) and width $3 + 3 = 6$ cm, with a semicircle of radius 3 cm on each end. The boundary is drawn dashed because it is not included.\n\n(b) Rectangle:\n$$5 \\times 6 = 30\\text{ cm}^2$$\n\nTwo semicircles make a full circle of radius 3 cm:\n$$\\pi \\times 3^2 = 9\\pi\\text{ cm}^2$$\n\nTotal:\n$$30 + 9\\pi = 58.274\\ldots \\approx 58.3\\text{ cm}^2$$\n\nNotice the effect of each change in this sequence: point $\\to$ segment adds the straight parts ($10$ cm of length, $30\\text{ cm}^2$ of area); exactly $\\to$ less than turns a length into an area.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q05",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Ama wants to construct the perpendicular bisector of a line segment $AB$ of length 8 cm, using only a ruler and compasses.\n\n(a) Write down the steps of the construction.\n\n(b) What must be true about the compass setting?\n\n(c) $X$ is a point on the perpendicular bisector with $AX = 6.5$ cm. Write down the length of $BX$.",
+  "hint": "Arcs are drawn from both $A$ and $B$. Think about why the crossing points are special.",
+  "answer": "(a) Arcs above and below $AB$ from $A$, then arcs with the same radius from $B$; join the two crossing points. (b) The same radius for every arc, and more than 4 cm (half of $AB$). (c) $BX = 6.5$ cm",
+  "solution": "(a)\n1. Open the compasses to a radius of more than half of $AB$ (for example 5 cm).\n2. With the point on $A$, draw an arc above $AB$ and an arc below $AB$.\n3. **Without changing the compasses**, put the point on $B$ and draw arcs above and below $AB$, crossing the first two arcs.\n4. Use a ruler to draw a straight line through the two crossing points. Leave all arcs visible.\n\n(b) The radius must stay **the same** for all four arcs, and it must be **more than 4 cm** (half of 8 cm), otherwise the arcs from $A$ and $B$ do not meet.\n\n(c) Every point on the perpendicular bisector is the same distance from $A$ as from $B$, so $BX = AX = 6.5$ cm.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q06",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Angle $PQR = 76^\\circ$.\n\n(a) Describe how to construct the bisector of angle $PQR$ using a ruler and compasses.\n\n(b) What size is each of the two angles formed?\n\n(c) A point $X$ on the bisector is 2.4 cm from the line $QP$. How far is $X$ from the line $QR$? Explain your answer.",
+  "hint": "The first arc is centred on the vertex $Q$. The angle bisector is a locus – of what?",
+  "answer": "(a) Arc centred on $Q$ cutting both arms; equal arcs from those two points crossing inside the angle; join $Q$ to the crossing point. (b) $38^\\circ$ each (c) 2.4 cm, because points on the angle bisector are equidistant from the two arms.",
+  "solution": "(a)\n1. With the compass point on $Q$, draw an arc cutting $QP$ at $M$ and $QR$ at $N$.\n2. Keeping the **same** radius (or any fixed radius), draw arcs centred on $M$ and on $N$ that cross inside the angle, at $X$.\n3. Draw the line from $Q$ through the crossing point. Leave the arcs visible.\n\n(b) The bisector cuts the angle in half: $76 \\div 2 = 38^\\circ$ each.\n\n(c) The angle bisector is the locus of points that are **equidistant from the two arms** of the angle. So $X$ is also **2.4 cm** from $QR$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q07",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Points $A$ and $B$ are 6 cm apart, and $M$ is the midpoint of $AB$.\n\nTom says: \"The only point that is the same distance from $A$ as from $B$ is the midpoint $M$.\"\n\n(a) Point $P$ is 4 cm from $M$, on the line through $M$ perpendicular to $AB$. Find $PA$ and $PB$.\n\n(b) Is Tom correct? Describe the full locus of points equidistant from $A$ and $B$, and explain why every point on it works.",
+  "hint": "In (a), $AMP$ is a right-angled triangle. What are its two shorter sides?",
+  "answer": "(a) $PA = PB = 5$ cm. (b) No. The locus is the whole perpendicular bisector of $AB$ (a straight line through $M$ at right angles to $AB$), not just $M$.",
+  "solution": "(a) $AM = 3$ cm and $MP = 4$ cm with a right angle at $M$, so by Pythagoras\n$$PA = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5\\text{ cm}$$\nIn the same way $PB = \\sqrt{3^2 + 4^2} = 5$ cm. So $P$ is equidistant from $A$ and $B$, but $P$ is not the midpoint.\n\n(b) **Tom is not correct.** $M$ is just one of infinitely many such points. The locus is the **perpendicular bisector of $AB$**: the line through $M$ at right angles to $AB$, extending in both directions.\n\nWhy every point works: take any point $X$ on that line. Triangles $XMA$ and $XMB$ have\n* $XM$ in common,\n* $AM = MB$ (since $M$ is the midpoint),\n* $\\angle XMA = \\angle XMB = 90^\\circ$.\n\nSo they are congruent (SAS) and $XA = XB$. Points off the line are nearer to one of $A$ or $B$, so the line is the complete locus.",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "geo-congruence"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-constructions-loci-q08",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to construct the perpendicular bisector of a line segment $AB$ of length 10 cm. Her method is shown below.\n\nStep 1: I set my compasses to 6 cm. With the point on $A$, I drew one arc above $AB$ and one arc below $AB$.\nStep 2: I set my compasses to 7 cm. With the point on $B$, I drew one arc above $AB$ and one arc below $AB$.\nStep 3: I joined the two points where the arcs crossed. This line is the perpendicular bisector of $AB$.\n\nIdentify the mistake, explain why it matters, and describe the correct method.",
+  "hint": "A point where the arcs cross is 6 cm from $A$. How far is it from $B$? What should be true of points on the perpendicular bisector?",
+  "answer": "Step 2 is wrong: she changed the compass radius. The crossing points are 6 cm from $A$ but 7 cm from $B$, so her line does not pass through the midpoint (it crosses $AB$ 4.35 cm from $A$). She must keep the same radius (more than 5 cm, e.g. 6 cm) for all four arcs.",
+  "solution": "**The error is in Step 2.** Priya changed the compass setting from 6 cm to 7 cm.\n\n**Why it matters.** Each crossing point is 6 cm from $A$ but 7 cm from $B$, so it is **not** equidistant from $A$ and $B$. Her line is still perpendicular to $AB$, but it does not bisect it. If it crosses $AB$ at $X$ with $AX = x$, and a crossing point is $h$ cm above $X$, then\n$$x^2 + h^2 = 36 \\quad\\text{and}\\quad (10 - x)^2 + h^2 = 49$$\nSubtracting: $100 - 20x = 13$, so $x = 4.35$ cm, instead of 5 cm.\n\n**Correct method.**\n1. Set the compasses to a radius **more than half of $AB$**, i.e. more than 5 cm (6 cm is fine).\n2. Draw arcs above and below $AB$ centred on $A$.\n3. **Without changing the radius**, draw arcs above and below $AB$ centred on $B$.\n4. Join the two crossing points. Every point on this line is the same distance from $A$ and $B$, so it passes through the midpoint at right angles.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q09",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$ABCD$ is a rectangle with $AB = 8$ cm and $BC = 5$ cm.\n\nJamal is asked to shade the region inside the rectangle of points that are **closer to $A$ than to $B$** and **less than 3 cm from $AB$**.\n\nHe draws the perpendicular bisector of $AB$ (line 1) and the line parallel to $AB$, 3 cm from it (line 2). His shading is shown.\n\n(a) Identify Jamal's mistake and explain how he could have avoided it.\n\n(b) Describe the correct region and find its area.",
+  "hint": "Test a point. Is a point very near $A$ closer to $A$ or to $B$? Which side of line 1 is it on?",
+  "answer": "(a) He shaded the wrong side of the perpendicular bisector: his region is closer to $B$. (b) The 4 cm by 3 cm rectangle in the corner at $A$ (left of line 1, below line 2); area $12\\text{ cm}^2$.",
+  "solution": "(a) Both lines are correct, and \"less than 3 cm from $AB$\" correctly gives the part below line 2. **The mistake is the side of line 1.** Points to the right of the perpendicular bisector are closer to $B$, not to $A$.\n\nA quick check avoids this: **test a point**. $A$ itself is obviously closer to $A$ than to $B$, so the required region is the side of the perpendicular bisector that **contains $A$**.\n\n(b) Line 1 is 4 cm from $A$ (half of 8 cm). The correct region is between $AD$ and line 1, and between $AB$ and line 2: a rectangle 4 cm by 3 cm in the corner at $A$.\n$$\\text{Area} = 4 \\times 3 = 12\\text{ cm}^2$$\n\n(Notice Jamal's wrong region also has area $12\\text{ cm}^2$ – checking the area would not have caught the error; testing a point does.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 240\" width=\"340\" height=\"240\">\n<rect x=\"160\" y=\"110\" width=\"120\" height=\"90\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/>\n<rect x=\"40\" y=\"50\" width=\"240\" height=\"150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"160\" y1=\"50\" x2=\"160\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n<line x1=\"40\" y1=\"110\" x2=\"280\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n<text x=\"26\" y=\"216\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">A</text>\n<text x=\"284\" y=\"216\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text>\n<text x=\"284\" y=\"46\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">C</text>\n<text x=\"26\" y=\"46\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">D</text>\n<text x=\"160\" y=\"220\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8 cm</text>\n<text x=\"286\" y=\"130\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n<text x=\"164\" y=\"66\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Jamal's line 1</text>\n<text x=\"46\" y=\"104\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Jamal's line 2</text>\n</svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q10",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Line $l$ and a point $P$ not on $l$ are given.\n\n(a) Describe a ruler-and-compasses construction of the line through $P$ that is parallel to $l$. Your method should include copying an angle.\n\n(b) Explain why the line you construct must be parallel to $l$.",
+  "hint": "Draw any line through $P$ that crosses $l$. Which pair of equal angles makes two lines parallel?",
+  "answer": "(a) Draw a transversal through $P$ meeting $l$ at $Q$; copy the angle between the transversal and $l$ at $Q$ to the point $P$, in the corresponding position; draw the line through $P$ along the copied arm. (b) The copied angle equals the original (congruent triangles, SSS), so corresponding angles are equal and the lines are parallel.",
+  "solution": "(a)\n1. Draw any straight line through $P$ crossing $l$ at $Q$, and extend it beyond $P$.\n2. **Copy the angle at $Q$.** With the point on $Q$, draw an arc of radius $r$ cutting $l$ at $X$ and line $QP$ at $Y$.\n3. With the **same** radius $r$ and the point on $P$, draw an arc cutting line $QP$ (beyond $P$) at $Y'$.\n4. **Copy the length $XY$:** set the compasses to the distance $XY$. With the point on $Y'$, draw an arc cutting the arc from step 3 at $X'$, on the same side of $QP$ as $X$.\n5. Draw the line through $P$ and $X'$. This is the required parallel line.\n\n(b) Triangles $QYX$ and $PY'X'$ have $QY = PY' = r$, $QX = PX' = r$ and $YX = Y'X'$, so they are congruent (SSS). Hence $\\angle X'PY' = \\angle XQY$.\n\nThese two angles are in **corresponding** positions on the transversal $QP$. Equal corresponding angles mean the lines are parallel, so line $PX'$ is parallel to $l$.\n\n(An alternative method: construct the perpendicular from $P$ to $l$, then construct a perpendicular to that line at $P$. Two lines perpendicular to the same line are parallel.)",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles",
+   "geo-congruence"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q11",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Jack is camping at $T$ and wants to walk to the straight canal by the shortest possible route. The map has a scale of 1 : 25 000. The diagram is not drawn to scale.\n\n(a) Which ruler-and-compasses construction should Jack use on the map to find the shortest route? Explain why it gives the shortest route.\n\n(b) Describe how to carry out the construction.\n\n(c) Jack measures the route on his map as 3.6 cm. How far is the real walk, in metres?",
+  "hint": "The shortest distance from a point to a line meets the line at a special angle.",
+  "answer": "(a) The perpendicular from $T$ to the canal; the shortest distance from a point to a line is along the perpendicular. (b) Arc from $T$ cutting the canal twice, then bisect that chord (equal arcs from both points, join $T$ to the crossing). (c) 900 m",
+  "solution": "(a) He needs the **perpendicular from the point $T$ to the line** (the canal). Any other route from $T$ to the canal is the hypotenuse of a right-angled triangle whose shorter side is the perpendicular, so it is longer.\n\n(b)\n1. With the compass point on $T$, draw an arc that cuts the canal at two points, $A$ and $B$.\n2. With the same (or any fixed) radius, draw arcs from $A$ and from $B$ on the **opposite** side of the canal from $T$, crossing at $X$.\n3. Draw the line from $T$ to $X$. Where it meets the canal is the nearest point; the part from $T$ to the canal is the route.\n\n(c) 1 : 25 000 means 1 cm on the map is 25 000 cm in real life.\n$$3.6 \\times 25\\,000 = 90\\,000\\text{ cm} = 900\\text{ m}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 220\" width=\"340\" height=\"220\">\n<line x1=\"20\" y1=\"190\" x2=\"330\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"3\"/>\n<text x=\"300\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">canal</text>\n<circle cx=\"170\" cy=\"50\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"180\" y=\"46\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">T (tent)</text>\n<text x=\"20\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">Not drawn to scale</text>\n</svg>",
+  "linkedTopicIds": [
+   "rat-scale-drawings-maps"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q12",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Two mobile phone masts, $A$ and $B$, are 12 km apart. Mast $A$ has a range of 8 km and mast $B$ has a range of 6 km.\n\n(a) Describe the region in which a phone receives a signal from **both** masts.\n\n(b) A phone always connects to the nearer mast. Describe the locus of points where it is equally near both masts.\n\n(c) A straight road runs from $A$ to $B$. For what length of this road can a signal be received from both masts?\n\n(d) A walker on the road is 7 km from $A$. Which mast does the phone connect to? Is it within range?",
+  "hint": "Each range is a circle. On the road $AB$, measure everything as a distance from $A$.",
+  "answer": "(a) The overlap of the circle centre $A$ radius 8 km and the circle centre $B$ radius 6 km. (b) The perpendicular bisector of $AB$. (c) 2 km (from 6 km to 8 km from $A$). (d) Mast $B$ (5 km away), which is within its 6 km range.",
+  "solution": "(a) Points within 8 km of $A$ form the disc of radius 8 km centred on $A$; points within 6 km of $B$ form the disc of radius 6 km centred on $B$. Both signals are received in the region **inside both circles** (where they overlap). The circles do overlap because $8 + 6 = 14 > 12$.\n\n(b) Points equally near $A$ and $B$ lie on the **perpendicular bisector of $AB$**: the line at right angles to $AB$ through its midpoint, 6 km from each mast. On the $A$ side of this line the phone uses $A$; on the $B$ side, $B$.\n\n(c) Measure along the road from $A$. Signal from $A$: distances 0 to 8 km. Signal from $B$: within 6 km of $B$, i.e. from $12 - 6 = 6$ km to 12 km from $A$. Both: from 6 km to 8 km, a length of\n$$8 - 6 = 2\\text{ km}$$\n\n(d) The walker is 7 km from $A$ and $12 - 7 = 5$ km from $B$. $B$ is nearer, so the phone connects to **mast $B$**, and $5 < 6$ so it is within range.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q13",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": true,
+  "question": "The diagram shows a rectangular car park $PQRS$. $PQ = 40$ m and $QR = 30$ m.\n\nA security camera at $P$ can see every point within 25 m of $P$. A second camera at $R$ can see every point within 20 m of $R$.\n\nLara makes a scale drawing of the car park using a scale of 1 cm to 5 m.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the compass setting she should use for each camera.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Is any point in the car park seen by both cameras? You must show your working.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the area of the car park that is **not** seen by either camera. Give your answer correct to 3 significant figures.",
+    "marks": 3
+   }
+  ],
+  "hint": "For (b), compare the distance $PR$ with the sum of the two ranges. For (c), each camera sees a quarter circle.",
+  "answer": "(a) 5 cm for $P$ and 4 cm for $R$ (b) No: $PR = 50$ m and $25 + 20 = 45 < 50$ (c) $395\\text{ m}^2$",
+  "solution": "(a) $25 \\div 5 = 5$ cm and $20 \\div 5 = 4$ cm. **B1** (both)\n\n(b) The diagonal $PR$:\n$$PR = \\sqrt{40^2 + 30^2} = \\sqrt{2500} = 50\\text{ m} \\quad \\textbf{M1}$$\nThe two ranges together reach only $25 + 20 = 45$ m, and $45 < 50$, so the regions do not overlap: **no point is seen by both cameras**. **A1**\n\n(c) The angle at each corner is $90^\\circ$ and each radius is shorter than both adjacent sides ($25 < 30$, $20 < 30$), so each camera sees a quarter circle inside the car park.\n$$\\tfrac{1}{4}\\pi \\times 25^2 + \\tfrac{1}{4}\\pi \\times 20^2 = \\tfrac{1025\\pi}{4} = 805.03\\ldots\\text{ m}^2 \\quad \\textbf{M1}$$\nArea of car park $= 40 \\times 30 = 1200\\text{ m}^2$.\n$$1200 - 805.03\\ldots = 394.96\\ldots \\quad \\textbf{M1}$$\n$$\\approx 395\\text{ m}^2 \\quad \\textbf{A1}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\">\n<rect x=\"50\" y=\"40\" width=\"240\" height=\"180\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"50\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/>\n<circle cx=\"290\" cy=\"40\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"34\" y=\"236\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">P</text>\n<text x=\"294\" y=\"236\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">Q</text>\n<text x=\"294\" y=\"36\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text>\n<text x=\"34\" y=\"36\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">S</text>\n<text x=\"170\" y=\"240\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40 m</text>\n<text x=\"296\" y=\"135\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">30 m</text>\n<text x=\"56\" y=\"212\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">camera</text>\n<text x=\"284\" y=\"58\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">camera</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-circles",
+   "geo-pythagoras"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q14",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "Triangle $ABC$ has $AB = 8$ cm, $AC = 7$ cm and $BC = 5$ cm. It has been constructed accurately using a ruler and compasses.\n\n$N$ is the point on $AB$ such that $CN$ is perpendicular to $AB$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Describe how to construct the perpendicular from $C$ to $AB$ using a ruler and compasses.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $AN = 5.5$ cm.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact area of triangle $ABC$. Give your answer in the form $a\\sqrt{3}\\text{ cm}^2$, where $a$ is an integer.",
+    "marks": 2
+   }
+  ],
+  "hint": "Let $AN = x$, so $NB = 8 - x$. Write $CN^2$ in two ways using Pythagoras.",
+  "answer": "(a) Arc centred on $C$ cutting $AB$ at two points; equal arcs from these two points crossing below $AB$; join $C$ to the crossing point. (b) Shown: $49 - x^2 = 25 - (8 - x)^2$ gives $x = 5.5$ (c) $10\\sqrt{3}\\text{ cm}^2$",
+  "solution": "(a) With the compass point on $C$, draw an arc cutting $AB$ at two points $X$ and $Y$. **M1**\nFrom $X$ and $Y$, draw equal arcs crossing on the other side of $AB$; join $C$ to the crossing point, with all arcs visible. **A1**\n\n(b) Let $AN = x$, so $NB = 8 - x$. Using Pythagoras in triangles $ANC$ and $BNC$:\n$$CN^2 = 7^2 - x^2 \\quad\\text{and}\\quad CN^2 = 5^2 - (8 - x)^2 \\quad \\textbf{M1}$$\n$$49 - x^2 = 25 - 64 + 16x - x^2 \\quad \\textbf{M1}$$\n$$88 = 16x \\;\\Rightarrow\\; x = 5.5\\text{ cm} \\quad \\textbf{A1}$$\n\n(c)\n$$CN^2 = 49 - 5.5^2 = 49 - 30.25 = 18.75 = \\frac{75}{4} \\;\\Rightarrow\\; CN = \\frac{\\sqrt{75}}{2} = \\frac{5\\sqrt{3}}{2} \\quad \\textbf{M1}$$\n$$\\text{Area} = \\tfrac{1}{2} \\times 8 \\times \\frac{5\\sqrt{3}}{2} = 10\\sqrt{3}\\text{ cm}^2 \\quad \\textbf{A1}$$",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "num-surds"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q15",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "For each set of conditions, decide whether it gives **no triangle**, **exactly one** triangle, or **more than one** triangle. Explain each answer, using constructions where helpful.\n\n(a) Sides of 4 cm, 5 cm and 10 cm.\n\n(b) Angles of $40^\\circ$, $60^\\circ$ and $80^\\circ$.\n\n(c) Sides of 6 cm and 8 cm with an angle of $50^\\circ$ between them.\n\n(d) Angles of $45^\\circ$ and $70^\\circ$ with a side of 7 cm between them.\n\n(e) $AB = 6$ cm, $BC = 5$ cm and $\\angle BAC = 40^\\circ$.",
+  "hint": "For (a), try drawing the 10 cm side and arcs from its ends. For (e), draw $AB$ and the $40^\\circ$ ray from $A$, then an arc of radius 5 cm centred on $B$. How many times can it cut the ray?",
+  "answer": "(a) No triangle (b) More than one (infinitely many) (c) Exactly one (d) Exactly one (e) More than one (two triangles)",
+  "solution": "(a) **No triangle.** Draw the 10 cm side; arcs of 4 cm and 5 cm from its ends cannot meet because $4 + 5 = 9 < 10$. (The two shorter sides must add up to more than the longest.)\n\n(b) **More than one.** The angles add up to $180^\\circ$, so triangles exist, but you can draw the base any length and get a different-sized triangle with the same angles (an enlargement). Three angles fix the shape, not the size.\n\n(c) **Exactly one** (SAS). Draw the 6 cm side, construct the $50^\\circ$ angle at one end, mark 8 cm along it, and join up. Every step has only one result.\n\n(d) **Exactly one** (ASA). Draw the 7 cm side and construct $45^\\circ$ and $70^\\circ$ at its ends; the two arms meet at exactly one point (since $45 + 70 < 180$).\n\n(e) **Two triangles.** Draw $AB = 6$ cm and the ray from $A$ at $40^\\circ$. $C$ must lie on this ray and on the circle of radius 5 cm centred on $B$. The perpendicular distance from $B$ to the ray is $6\\sin 40^\\circ \\approx 3.86$ cm, which is less than 5 cm, and $5 < 6 = BA$, so the arc cuts the ray at **two** points (about 1.41 cm and 7.78 cm from $A$). Both give valid triangles: two sides and a non-included angle need not fix a unique triangle.",
+  "linkedTopicIds": [
+   "geo-congruence"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q16",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A circle has centre $O$ and radius 5 cm. The diagram shows a regular hexagon $ABCDEF$ inscribed in the circle, and the triangle $ACE$ (dashed).\n\n(a) Describe how to construct the regular hexagon using only compasses and a ruler, and explain why the method works.\n\n(b) Show that the side of the equilateral triangle $ACE$ is exactly $5\\sqrt{3}$ cm.\n\n(c) Describe how to construct a square inscribed in the same circle, and find its exact side length.",
+  "hint": "In (a), consider triangle $OAB$. In (b), $OABC$ is a rhombus: its diagonals cut each other in half at right angles.",
+  "answer": "(a) Keep the compasses at 5 cm and step round the circle from any point, marking 6 points; join them. (b) Shown. (c) Draw a diameter, construct its perpendicular bisector to get a second diameter, and join the four ends; side $5\\sqrt{2}$ cm.",
+  "solution": "(a) Mark a point $A$ on the circle. With the compasses still at the radius (5 cm), put the point on $A$ and mark $B$ on the circle; then from $B$ mark $C$, and so on. You get exactly six points; join them in order.\n\n**Why:** $OA = OB = 5$ (radii) and $AB = 5$, so triangle $OAB$ is equilateral and $\\angle AOB = 60^\\circ$. Six such angles make $6 \\times 60^\\circ = 360^\\circ$, so the sixth step lands back on $A$ and all six sides are 5 cm with equal angles: a regular hexagon.\n\n(b) $OAB$ and $OBC$ are equilateral with sides 5 cm, so $OABC$ is a rhombus. Its diagonals $OB$ and $AC$ bisect each other at right angles at a point $K$, with $OK = 2.5$ cm. In right-angled triangle $OKA$:\n$$AK = \\sqrt{5^2 - 2.5^2} = \\sqrt{18.75} = \\sqrt{\\tfrac{75}{4}} = \\frac{5\\sqrt{3}}{2}$$\n$$AC = 2 \\times \\frac{5\\sqrt{3}}{2} = 5\\sqrt{3}\\text{ cm}$$\n(Joining alternate vertices $A$, $C$, $E$ gives the inscribed equilateral triangle.)\n\n(c) Draw a diameter $PR$. Construct the perpendicular bisector of $PR$ (it passes through $O$) to get a second diameter $QS$ at right angles. Join $P$, $Q$, $R$, $S$.\n\nThe diagonals are perpendicular with half-lengths 5 cm, so each side is\n$$\\sqrt{5^2 + 5^2} = \\sqrt{50} = 5\\sqrt{2}\\text{ cm}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\">\n<circle cx=\"180\" cy=\"145\" r=\"110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<polygon points=\"180,35 84.74,90 84.74,200 180,255 275.26,200 275.26,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polygon points=\"180,35 84.74,200 275.26,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/>\n<circle cx=\"180\" cy=\"145\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"186\" y=\"161\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text>\n<line x1=\"180\" y1=\"145\" x2=\"180\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<text x=\"174\" y=\"120\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5 cm</text>\n<text x=\"180\" y=\"25\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text>\n<text x=\"71.75\" y=\"87.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text>\n<text x=\"71.75\" y=\"212.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text>\n<text x=\"180\" y=\"275\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text>\n<text x=\"288.25\" y=\"212.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">E</text>\n<text x=\"288.25\" y=\"87.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">F</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "num-surds",
+   "geo-polygon-angles"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-constructions-loci-q17",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A goat is tied at $G$, one corner of a rectangular shed that measures 4 m by 3 m. The shed stands in an open field. The goat's rope is 5 m long and cannot pass through the shed.\n\nFind the exact area of grass the goat can reach, in terms of $\\pi$. Give also the area correct to 3 significant figures.",
+  "hint": "Away from the shed the rope sweeps three-quarters of a circle. What happens when the rope runs along a wall of the shed and round the next corner?",
+  "answer": "$20\\pi\\text{ m}^2 \\approx 62.8\\text{ m}^2$",
+  "solution": "**Main region.** The shed fills one quarter (a $90^\\circ$ corner) around $G$. In the other $270^\\circ$, the rope can swing freely: three-quarters of a circle of radius 5 m.\n$$\\tfrac{3}{4}\\pi \\times 5^2 = \\tfrac{75}{4}\\pi$$\n\n**Round the 4 m wall.** Pulling the rope tight along the 4 m wall leaves $5 - 4 = 1$ m beyond the far corner. It sweeps a quarter circle of radius 1 m:\n$$\\tfrac{1}{4}\\pi \\times 1^2 = \\tfrac{1}{4}\\pi$$\n\n**Round the 3 m wall.** This leaves $5 - 3 = 2$ m, sweeping a quarter circle of radius 2 m:\n$$\\tfrac{1}{4}\\pi \\times 2^2 = \\tfrac{4}{4}\\pi$$\n\nThese two small quarter circles are on different sides of the shed, so they do not overlap, and the goat cannot reach the corner opposite $G$ (it would need $4 + 3 = 7$ m of rope).\n\n**Total:**\n$$\\tfrac{75 + 1 + 4}{4}\\pi = 20\\pi\\text{ m}^2 \\approx 62.8\\text{ m}^2$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\">\n<rect x=\"150\" y=\"60\" width=\"80\" height=\"60\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<text x=\"190\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">shed</text>\n<circle cx=\"150\" cy=\"120\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"142\" y=\"114\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">G</text>\n<text x=\"190\" y=\"138\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4 m</text>\n<text x=\"236\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">3 m</text>\n<line x1=\"150\" y1=\"120\" x2=\"79.29\" y2=\"190.71\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/>\n<text x=\"98\" y=\"160\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">rope 5 m</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-circles"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-constructions-loci-q18",
+  "topicId": "geo-constructions-loci",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A ladder $TF$ of length 4 m leans against a vertical wall, with its top $T$ on the wall and its foot $F$ on horizontal ground. The wall meets the ground at $O$. $M$ is the midpoint of the ladder.\n\nThe ladder slides down until it lies flat on the ground, with $T$ always on the wall and $F$ always on the ground.\n\n(a) When the foot is 2.4 m from the wall, find the distance $OM$.\n\n(b) Prove that $OM$ is the same for every position of the ladder.\n\n(c) Describe the locus of $M$ as the ladder slides from vertical to flat, and find the length of this locus in terms of $\\pi$.",
+  "hint": "Put $O$ at the origin, with $F = (a, 0)$ and $T = (0, b)$. Write down the coordinates of $M$.",
+  "answer": "(a) $OM = 2$ m (b) Proof: $OM^2 = \\frac{a^2 + b^2}{4} = \\frac{16}{4} = 4$ (c) A quarter circle, centre $O$, radius 2 m; length $\\pi$ m",
+  "solution": "(a) Height of the top: $OT = \\sqrt{4^2 - 2.4^2} = \\sqrt{10.24} = 3.2$ m.\n\nWith $O$ as the origin, $F = (2.4, 0)$ and $T = (0, 3.2)$, so $M = (1.2, 1.6)$ and\n$$OM = \\sqrt{1.2^2 + 1.6^2} = \\sqrt{4} = 2\\text{ m}$$\n\n(b) In general let $F = (a, 0)$ and $T = (0, b)$ with $a, b \\ge 0$. Since the ladder is 4 m long, $a^2 + b^2 = 16$. The midpoint is $M = \\left(\\frac{a}{2}, \\frac{b}{2}\\right)$, so\n$$OM^2 = \\frac{a^2}{4} + \\frac{b^2}{4} = \\frac{a^2 + b^2}{4} = \\frac{16}{4} = 4$$\nHence $OM = 2$ m in every position. $\\blacksquare$\n\n(c) $M$ is always 2 m from the fixed point $O$, so it lies on a circle with centre $O$ and radius 2 m. As the ladder moves from vertical ($M = (0, 2)$) to flat ($M = (2, 0)$), $M$ moves through every point of the quarter of that circle between the wall and the ground.\n\nThe locus is a **quarter circle, centre $O$, radius 2 m**, with length\n$$\\tfrac{1}{4} \\times 2\\pi \\times 2 = \\pi\\text{ m} \\approx 3.14\\text{ m}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\">\n<line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/>\n<line x1=\"70\" y1=\"250\" x2=\"300\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/>\n<polyline points=\"80,250 80,240 70,240\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<line x1=\"70\" y1=\"90\" x2=\"190\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\"/>\n<circle cx=\"130\" cy=\"170\" r=\"4\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"138\" y=\"166\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">M</text>\n<text x=\"54\" y=\"266\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text>\n<text x=\"54\" y=\"95\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">T</text>\n<text x=\"186\" y=\"268\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">F</text>\n<text x=\"62\" y=\"50\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">wall</text>\n<text x=\"250\" y=\"268\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">floor</text>\n<text x=\"110\" y=\"128\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">4 m ladder</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": []
+ }
+]

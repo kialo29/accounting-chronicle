@@ -1,0 +1,311 @@
+[
+ {
+  "id": "alg-algebraic-proof-q01",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$n$ is an integer. Show that $6n + 12$ is a multiple of 6.",
+  "hint": "Look for a common factor of both terms and take it outside a bracket.",
+  "answer": "$6n + 12 = 6(n + 2)$, and $n + 2$ is an integer, so $6n + 12$ is a multiple of 6.",
+  "solution": "Both terms, $6n$ and $12$, have a factor of 6, so factorise:\n$$6n + 12 = 6(n + 2)$$\n\nSince $n$ is an integer, $n + 2$ is also an integer.\n\nSo $6n + 12 = 6 \\times (\\text{an integer})$, which is a multiple of 6.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q02",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$n$ is an integer. Show that $6n + 15$ is a multiple of 3.",
+  "hint": "Is 6 a factor of 15? If not, find the largest number that divides both 6 and 15.",
+  "answer": "$6n + 15 = 3(2n + 5)$, and $2n + 5$ is an integer, so $6n + 15$ is a multiple of 3.",
+  "solution": "**What changed:** the constant is now 15 instead of 12. Since 6 does not divide 15, we can no longer take out a 6; the highest common factor of 6 and 15 is 3.\n\n$$6n + 15 = 3(2n + 5)$$\n\n$n$ is an integer, so $2n + 5$ is an integer.\n\nSo $6n + 15$ is $3 \\times (\\text{an integer})$, a multiple of 3.\n\n(It is **not** always a multiple of 6: for $n = 1$ it is 21.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q03",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$n$ is an integer. Show that $6n - 15$ is a multiple of 3.",
+  "hint": "The same common factor works whether the constant is added or subtracted.",
+  "answer": "$6n - 15 = 3(2n - 5)$, and $2n - 5$ is an integer, so $6n - 15$ is a multiple of 3.",
+  "solution": "**What changed:** the $+15$ became $-15$. The common factor is still 3; only the sign inside the bracket changes.\n\n$$6n - 15 = 3(2n - 5)$$\n\n$n$ is an integer, so $2n - 5$ is an integer (it may be negative, e.g. $n = 1$ gives $-3$, and $-9 = 3 \\times (-3)$ is still a multiple of 3).\n\nSo $6n - 15$ is a multiple of 3.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q04",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$n$ is an integer. Show that $6n + 15$ is always odd.",
+  "hint": "An odd number can be written as $2 \\times (\\text{integer}) + 1$. Split 15 as $14 + 1$.",
+  "answer": "$6n + 15 = 2(3n + 7) + 1$, and $3n + 7$ is an integer, so $6n + 15$ is odd.",
+  "solution": "**What changed:** the same expression as before, but now we must prove a different property, so we aim for a different form: $2 \\times (\\text{integer}) + 1$.\n\nSplit the constant so that the even part can join $6n$:\n$$6n + 15 = 6n + 14 + 1 = 2(3n + 7) + 1$$\n\n$n$ is an integer, so $3n + 7$ is an integer, and $2(3n + 7)$ is even.\n\nAn even number plus 1 is odd, so $6n + 15$ is always odd.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q05",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$n$ is an integer. Write down an expression, in terms of $n$, that must be",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "an even number"
+   },
+   {
+    "label": "b",
+    "prompt": "an odd number"
+   },
+   {
+    "label": "c",
+    "prompt": "the next odd number after your answer to part (b)"
+   },
+   {
+    "label": "d",
+    "prompt": "Ella says \"$n + 1$ is an odd number\". Explain why Ella is wrong."
+   }
+  ],
+  "hint": "Even numbers are multiples of 2. Odd numbers are 1 more than an even number. Consecutive odd numbers are 2 apart.",
+  "answer": "(a) $2n$ (b) $2n + 1$ (c) $2n + 3$ (d) $n + 1$ is only odd when $n$ is even; e.g. $n = 3$ gives $4$, which is even.",
+  "solution": "(a) Any multiple of 2 is even, so $2n$ is always even.\n\n(b) One more than an even number is odd: $2n + 1$. (Other correct answers include $2n - 1$.)\n\n(c) Odd numbers go up in steps of 2, so the next odd number is $2n + 1 + 2 = 2n + 3$. (Not $2n + 2$, which is even.)\n\n(d) We do not know whether $n$ is odd or even, so $n + 1$ could be either. For example, $n = 3$ gives $n + 1 = 4$, which is even. To guarantee an odd number we need $2n + 1$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q06",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Zara shows her friends a number trick.\n\n\"Think of a whole number. Multiply it by 4. Add 10. Halve the result. Subtract 5. Halve again.\"\n\n\"You always end up with the number you started with!\" says Zara.\n\nUse algebra to prove that Zara is correct.",
+  "hint": "Call the starting number $n$ and write an expression after each instruction.",
+  "answer": "Starting with $n$: $4n \\to 4n + 10 \\to 2n + 5 \\to 2n \\to n$, so the result is always the starting number.",
+  "solution": "Let the starting number be $n$.\n\n• Multiply by 4: $4n$\n• Add 10: $4n + 10$\n• Halve: $\\dfrac{4n + 10}{2} = 2n + 5$\n• Subtract 5: $2n$\n• Halve again: $n$\n\nThe final expression is $n$ for **every** starting number $n$, so the answer is always the number you started with. (Trying a few numbers would only show it works for those numbers; the algebra shows it works for all of them.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q07",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Prove that the sum of any three consecutive even numbers is a multiple of 6.",
+  "hint": "Write the first even number as $2n$. Consecutive even numbers go up in 2s.",
+  "answer": "$2n + (2n + 2) + (2n + 4) = 6n + 6 = 6(n + 1)$, a multiple of 6 since $n + 1$ is an integer.",
+  "solution": "Let the three consecutive even numbers be $2n$, $2n + 2$ and $2n + 4$, where $n$ is an integer.\n\nSum:\n$$2n + (2n + 2) + (2n + 4) = 6n + 6 = 6(n + 1)$$\n\nSince $n$ is an integer, $n + 1$ is an integer, so $6(n + 1)$ is a multiple of 6.\n\nHence the sum of any three consecutive even numbers is a multiple of 6.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q08",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ollie is asked to prove that the sum of two consecutive odd numbers is always a multiple of 4. His answer is shown below.\n\n$1 + 3 = 4 = 4 \\times 1$\n$5 + 7 = 12 = 4 \\times 3$\n$13 + 15 = 28 = 4 \\times 7$\n$99 + 101 = 200 = 4 \\times 50$\nIt works every time, so the sum of two consecutive odd numbers is always a multiple of 4.\n\nExplain why Ollie's answer is not a proof, and write a correct proof.",
+  "hint": "How many pairs of consecutive odd numbers are there? Represent a general pair algebraically.",
+  "answer": "Examples only check the cases tried, not every pair. Proof: $(2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1)$, which is a multiple of 4 since $n + 1$ is an integer.",
+  "solution": "**The error:** Ollie has only checked four examples. There are infinitely many pairs of consecutive odd numbers, and examples cannot show that the statement holds for the pairs he has not tried. A proof must work for **every** pair.\n\n**Correct proof:** let the consecutive odd numbers be $2n + 1$ and $2n + 3$, where $n$ is an integer.\n$$(2n + 1) + (2n + 3) = 4n + 4 = 4(n + 1)$$\n\n$n + 1$ is an integer, so $4(n + 1)$ is a multiple of 4.\n\nHence the sum of any two consecutive odd numbers is a multiple of 4.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q09",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked: \"Prove or disprove: the sum of any two odd numbers is 2 more than a multiple of 4.\"\n\nHer working is shown below.\n\nLet the two odd numbers be $2n + 1$ and $2n + 1$.\nSum $= (2n + 1) + (2n + 1) = 4n + 2$\n$4n$ is a multiple of 4, so the sum is always 2 more than a multiple of 4. The statement is true.\n\n(a) Identify the error in Priya's working and explain why it matters.\n\n(b) Decide whether the statement is true or false, and justify your answer.",
+  "hint": "Does Priya's choice of expressions allow the two odd numbers to be different? Try two different odd numbers.",
+  "answer": "(a) She used the same letter for both numbers, so she only covered the case where the two odd numbers are equal. (b) False: e.g. $1 + 3 = 4$, which is a multiple of 4. In general $(2m + 1) + (2n + 1) = 2(m + n + 1)$, which is even but not always 2 more than a multiple of 4.",
+  "solution": "**(a) The error** is in the first line. Using $2n + 1$ for **both** numbers forces them to be the same odd number (e.g. $7$ and $7$). Her algebra is fine for that special case, but it says nothing about two different odd numbers such as $1$ and $3$.\n\n**(b)** Use different letters: let the odd numbers be $2m + 1$ and $2n + 1$, where $m$ and $n$ are integers.\n$$(2m + 1) + (2n + 1) = 2m + 2n + 2 = 2(m + n + 1)$$\n\nThis shows the sum is always **even**, but not that it is 2 more than a multiple of 4.\n\nA single counter-example disproves the statement: $1 + 3 = 4$, which is a multiple of 4, not 2 more than one.\n\nSo the statement is **false**. (It is only true when $m + n$ is even, e.g. when the two numbers are equal.)",
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q10",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kai is asked to find the largest whole number that must divide $(2n + 3)^2 - (2n - 1)^2$ for every positive integer $n$. His working is shown below.\n\n$(2n + 3)^2 - (2n - 1)^2 = 4n^2 + 12n + 9 - (4n^2 - 4n + 1)$\n$= 16n + 8$\nThis has $16n$ in it, so it is always a multiple of 16.\n\n(a) Kai's expansion is correct. Explain the mistake in his conclusion.\n\n(b) Find the correct answer, giving a reason.",
+  "hint": "For a multiple of 16, **every** term must have a factor of 16. What is the highest common factor of $16n$ and $8$?",
+  "answer": "(a) The constant 8 is not a multiple of 16, so $16n + 8$ is not a multiple of 16 (e.g. $n = 1$ gives 24). (b) 8: $16n + 8 = 8(2n + 1)$, and $2n + 1$ is odd, so no larger number always divides it.",
+  "solution": "**(a)** Kai looked only at the first term. For an expression to be a multiple of 16, **all** of its terms must share the factor 16, but the constant term 8 does not. For example, $n = 1$ gives $16 + 8 = 24$, which is not a multiple of 16.\n\n**(b)** Take out the highest common factor of $16n$ and $8$:\n$$16n + 8 = 8(2n + 1)$$\n\n$2n + 1$ is an integer, so the expression is always a multiple of 8.\n\nNo larger number works: with $n = 1$ the value is $24$ and with $n = 2$ it is $40$. The highest common factor of 24 and 40 is 8, so 8 is the largest number that always divides it.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q11",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The diagram shows a calendar page. A $2 \\times 2$ square of dates is shaded.\n\nFor the shaded square: $10 \\times 16 - 9 \\times 17 = 160 - 153 = 7$.\n\nProve that for **any** $2 \\times 2$ square of dates on a calendar like this, (top-right $\\times$ bottom-left) $-$ (top-left $\\times$ bottom-right) is always 7.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><rect x=\"65\" y=\"74\" width=\"92\" height=\"80\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"#3b82f6\" stroke-width=\"2.5\"/><text x=\"42.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Mon</text><text x=\"88.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Tue</text><text x=\"134.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Wed</text><text x=\"180.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Thu</text><text x=\"226.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Fri</text><text x=\"272.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Sat</text><text x=\"318.0\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Sun</text><line x1=\"19\" y1=\"34\" x2=\"341\" y2=\"34\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"74\" x2=\"341\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"114\" x2=\"341\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"154\" x2=\"341\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"194\" x2=\"341\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"234\" x2=\"341\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"19\" y1=\"34\" x2=\"19\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"65\" y1=\"34\" x2=\"65\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"111\" y1=\"34\" x2=\"111\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"157\" y1=\"34\" x2=\"157\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"203\" y1=\"34\" x2=\"203\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"249\" y1=\"34\" x2=\"249\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"295\" y1=\"34\" x2=\"295\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"341\" y1=\"34\" x2=\"341\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"42.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"88.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"134.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"180.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"226.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><text x=\"272.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><text x=\"318.0\" y=\"59.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><text x=\"42.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><text x=\"88.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><text x=\"134.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><text x=\"180.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">11</text><text x=\"226.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><text x=\"272.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">13</text><text x=\"318.0\" y=\"99.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">14</text><text x=\"42.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">15</text><text x=\"88.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">16</text><text x=\"134.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">17</text><text x=\"180.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">18</text><text x=\"226.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">19</text><text x=\"272.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><text x=\"318.0\" y=\"139.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">21</text><text x=\"42.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">22</text><text x=\"88.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">23</text><text x=\"134.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">24</text><text x=\"180.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">25</text><text x=\"226.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">26</text><text x=\"272.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">27</text><text x=\"318.0\" y=\"179.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">28</text><text x=\"42.0\" y=\"219.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">29</text><text x=\"88.0\" y=\"219.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><text x=\"134.0\" y=\"219.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">31</text></svg>",
+  "hint": "Call the top-left date $n$. Dates in the row below are 7 more than those directly above.",
+  "answer": "With top-left $n$: $(n + 1)(n + 7) - n(n + 8) = n^2 + 8n + 7 - n^2 - 8n = 7$ for every $n$.",
+  "solution": "Let the top-left date be $n$. Then:\n\n• top-right $= n + 1$ (the next day)\n• bottom-left $= n + 7$ (one week later)\n• bottom-right $= n + 8$\n\nCompute the difference:\n$$(n + 1)(n + 7) - n(n + 8) = (n^2 + 8n + 7) - (n^2 + 8n)$$\n$$= 7$$\n\nThe $n^2$ and $8n$ terms cancel, leaving 7 whatever the value of $n$. So the result is 7 for every $2 \\times 2$ square of dates.",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q12",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "$n$ is a positive integer.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $(3n + 2)^2 - (3n - 2)^2 = 24n$",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove that $(3n + 2)^2 - (3n - 2)^2$ is a multiple of 8 for every positive integer $n$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Tom says, \"$(3n + 2)^2 - (3n - 2)^2$ is always a multiple of 48.\" Is Tom correct? You must give a reason for your answer.",
+    "marks": 2
+   }
+  ],
+  "hint": "Expand each square as $(a + b)^2 = a^2 + 2ab + b^2$, and take care with the minus sign in front of the second bracket.",
+  "answer": "(a) $9n^2 + 12n + 4 - (9n^2 - 12n + 4) = 24n$ (b) $24n = 8 \\times 3n$ and $3n$ is an integer (c) No: e.g. $n = 1$ gives 24, which is not a multiple of 48.",
+  "solution": "**(a)**\n$$(3n + 2)^2 = 9n^2 + 12n + 4 \\qquad (3n - 2)^2 = 9n^2 - 12n + 4$$\n**M1** for both expansions (at least one fully correct)\n\n$$(9n^2 + 12n + 4) - (9n^2 - 12n + 4) = 24n$$\n**A1** for a fully correct simplification to $24n$\n\n**(b)** $24n = 8 \\times 3n$, and $3n$ is an integer, so the expression is a multiple of 8. **B1**\n\n**(c)** No. **B1** for a correct counter-example: $n = 1$ gives $24 \\times 1 = 24$, which is not a multiple of 48. **B1** for the correct conclusion with reason ($24n$ is a multiple of 48 only when $n$ is even).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q13",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam says, \"If you multiply any two consecutive integers, the answer is always even.\"\n\nIs Sam correct? Prove your answer.",
+  "hint": "Out of two consecutive integers, one must be even. Alternatively consider two cases: $n$ even ($n = 2k$) and $n$ odd ($n = 2k + 1$).",
+  "answer": "Yes. Of $n$ and $n + 1$, one is even; e.g. if $n = 2k$ then $n(n + 1) = 2k(2k + 1)$, and if $n = 2k + 1$ then $n(n + 1) = 2(2k + 1)(k + 1)$; both are even.",
+  "solution": "Sam is correct.\n\nLet the integers be $n$ and $n + 1$. Every integer is either even or odd, so consider both cases.\n\n**Case 1: $n$ is even.** Write $n = 2k$ for an integer $k$:\n$$n(n + 1) = 2k(2k + 1) = 2 \\times k(2k + 1)$$\nwhich is $2 \\times (\\text{integer})$, so even.\n\n**Case 2: $n$ is odd.** Write $n = 2k + 1$, so $n + 1 = 2k + 2 = 2(k + 1)$:\n$$n(n + 1) = (2k + 1) \\times 2(k + 1) = 2 \\times (2k + 1)(k + 1)$$\nwhich is even.\n\nIn both cases the product is even, so the product of any two consecutive integers is even.\n\n(In words: of any two consecutive integers, one of them is even, and an even number multiplied by any integer is even.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-algebraic-proof-q14",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 4,
+  "question": "This question is about the squares of odd numbers.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $(2n + 1)^2 + (2n + 3)^2 = 8n^2 + 16n + 10$",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence prove that the sum of the squares of any two consecutive odd numbers is 2 more than a multiple of 8.",
+    "marks": 2
+   }
+  ],
+  "hint": "In (b), split 10 as $8 + 2$ and factorise the part that is a multiple of 8.",
+  "answer": "(a) $4n^2 + 4n + 1 + 4n^2 + 12n + 9 = 8n^2 + 16n + 10$ (b) $8n^2 + 16n + 10 = 8(n^2 + 2n + 1) + 2$, which is 2 more than a multiple of 8.",
+  "solution": "**(a)**\n$$(2n + 1)^2 = 4n^2 + 4n + 1 \\qquad (2n + 3)^2 = 4n^2 + 12n + 9$$\n**M1** for expanding both brackets correctly (at least 3 terms correct in each)\n\n$$4n^2 + 4n + 1 + 4n^2 + 12n + 9 = 8n^2 + 16n + 10$$\n**A1** for adding to the given result\n\n**(b)** Two consecutive odd numbers can be written $2n + 1$ and $2n + 3$, where $n$ is an integer, so by (a) the sum of their squares is $8n^2 + 16n + 10$.\n\n$$8n^2 + 16n + 10 = 8n^2 + 16n + 8 + 2 = 8(n^2 + 2n + 1) + 2$$\n**M1** for writing it as $8 \\times (\\ldots) + 2$\n\n$n^2 + 2n + 1$ is an integer, so the sum is 2 more than a multiple of 8. **A1** for a complete argument with a concluding statement\n\n(Check: $3^2 + 5^2 = 34 = 32 + 2$ ✓.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q15",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A sequence has $n$th term $4n + 1$, so it begins $5, 9, 13, 17, \\ldots$\n\nProve that when any two terms of this sequence are multiplied together, the answer is always another term of the same sequence.",
+  "hint": "The two terms can be in different positions, so use different letters: $4m + 1$ and $4n + 1$. Then show the product has the form $4 \\times (\\text{positive integer}) + 1$.",
+  "answer": "$(4m + 1)(4n + 1) = 16mn + 4m + 4n + 1 = 4(4mn + m + n) + 1$, and $4mn + m + n$ is a positive integer, so the product is a term of the sequence.",
+  "solution": "Let the two terms be the $m$th and $n$th terms, $4m + 1$ and $4n + 1$, where $m$ and $n$ are positive integers. (Different letters, because the two terms need not be the same.)\n\nMultiply:\n$$(4m + 1)(4n + 1) = 16mn + 4m + 4n + 1$$\n\nTake out a factor of 4 from the first three terms:\n$$= 4(4mn + m + n) + 1$$\n\nLet $k = 4mn + m + n$. Since $m$ and $n$ are positive integers, $k$ is a positive integer, and the product equals $4k + 1$, which is the $k$th term of the sequence.\n\nHence the product of any two terms is also a term. (Check: $5 \\times 9 = 45 = 4 \\times 11 + 1$, the 11th term ✓.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-sequences-linear",
+   "alg-expand-double-triple"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q16",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Prove that $n^3 - n$ is a multiple of 6 for every integer $n$.",
+  "hint": "Factorise fully: take out $n$, then use the difference of two squares. What do you notice about the three factors?",
+  "answer": "$n^3 - n = (n - 1)n(n + 1)$, a product of three consecutive integers, which contains a multiple of 2 and a multiple of 3, so is a multiple of 6.",
+  "solution": "Factorise:\n$$n^3 - n = n(n^2 - 1) = n(n - 1)(n + 1) = (n - 1)\\,n\\,(n + 1)$$\n(using the difference of two squares $n^2 - 1 = (n - 1)(n + 1)$).\n\nSo $n^3 - n$ is the product of **three consecutive integers**.\n\n• Among any two consecutive integers, one is even, so the product has a factor of 2.\n• Among any three consecutive integers, one is a multiple of 3 (the remainders on dividing by 3 are $0, 1, 2$ in some order), so the product has a factor of 3.\n\nSince 2 and 3 are both factors and they share no common factor, $2 \\times 3 = 6$ is a factor.\n\nHence $n^3 - n$ is a multiple of 6 for every integer $n$. (Check: $n = 4$: $64 - 4 = 60 = 6 \\times 10$ ✓.)",
+  "linkedTopicIds": [
+   "alg-factorising-quadratics",
+   "num-factors-multiples-primes"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q17",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The triangular numbers are $1, 3, 6, 10, 15, \\ldots$ and the $n$th triangular number is $T_n = \\dfrac{n(n + 1)}{2}$.\n\n(a) Prove that $8T_n + 1$ is always a square number.\n\n(b) Prove that the sum of any two consecutive triangular numbers is a square number.",
+  "hint": "(a) Substitute the formula for $T_n$ and simplify; look for a perfect square $(an + b)^2$. (b) Write the next triangular number as $T_{n+1} = \\dfrac{(n + 1)(n + 2)}{2}$ and take out the common factor $(n + 1)$.",
+  "answer": "(a) $8T_n + 1 = 4n^2 + 4n + 1 = (2n + 1)^2$ (b) $T_n + T_{n+1} = \\dfrac{(n + 1)(n + n + 2)}{2} = (n + 1)^2$",
+  "solution": "**(a)**\n$$8T_n + 1 = 8 \\times \\frac{n(n + 1)}{2} + 1 = 4n(n + 1) + 1 = 4n^2 + 4n + 1$$\n\nThis factorises as a perfect square:\n$$4n^2 + 4n + 1 = (2n + 1)^2$$\n\n$2n + 1$ is an integer, so $8T_n + 1$ is always a square number. (Check: $T_3 = 6$, $8 \\times 6 + 1 = 49 = 7^2$ ✓.)\n\n**(b)** Two consecutive triangular numbers are $T_n = \\dfrac{n(n + 1)}{2}$ and $T_{n+1} = \\dfrac{(n + 1)(n + 2)}{2}$.\n$$T_n + T_{n+1} = \\frac{n(n + 1) + (n + 1)(n + 2)}{2} = \\frac{(n + 1)(n + n + 2)}{2}$$\n$$= \\frac{(n + 1) \\times 2(n + 1)}{2} = (n + 1)^2$$\n\n$n + 1$ is an integer, so the sum is a square number. (Check: $6 + 10 = 16 = 4^2$ ✓.)",
+  "linkedTopicIds": [
+   "alg-sequences-quadratic-geometric",
+   "alg-factorising-quadratics"
+  ]
+ },
+ {
+  "id": "alg-algebraic-proof-q18",
+  "topicId": "alg-algebraic-proof",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "(a) Prove that the square of any odd number is 1 more than a multiple of 8.\n\n(b) Hence prove that the difference between the squares of **any** two odd numbers is a multiple of 8.",
+  "hint": "(a) Expand $(2n + 1)^2$ and factorise the terms in $n$. Then use the fact that $n(n + 1)$ is always even. (b) The two odd numbers need not be related, so use different letters.",
+  "answer": "(a) $(2n + 1)^2 = 4n(n + 1) + 1$; $n(n + 1)$ is even, so $4n(n + 1)$ is a multiple of 8. (b) $(8a + 1) - (8b + 1) = 8(a - b)$, a multiple of 8.",
+  "solution": "**(a)** Let the odd number be $2n + 1$, where $n$ is an integer.\n$$(2n + 1)^2 = 4n^2 + 4n + 1 = 4n(n + 1) + 1$$\n\n$n$ and $n + 1$ are consecutive integers, so one of them is even and $n(n + 1) = 2k$ for some integer $k$. Then\n$$(2n + 1)^2 = 4 \\times 2k + 1 = 8k + 1$$\nwhich is 1 more than a multiple of 8.\n\n**(b)** Let the two odd numbers be $2m + 1$ and $2n + 1$, where $m$ and $n$ are integers (different letters, because the numbers are independent; they need not be consecutive).\n\nBy part (a), $(2m + 1)^2 = 8a + 1$ and $(2n + 1)^2 = 8b + 1$ for some integers $a$ and $b$. So\n$$(2m + 1)^2 - (2n + 1)^2 = (8a + 1) - (8b + 1) = 8(a - b)$$\n\n$a - b$ is an integer, so the difference is a multiple of 8. (Check: $9^2 - 3^2 = 72 = 8 \\times 9$ ✓.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ }
+]

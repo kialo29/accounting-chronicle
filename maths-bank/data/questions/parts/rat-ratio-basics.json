@@ -1,0 +1,283 @@
+[
+ {
+  "id": "rat-ratio-basics-q01",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write the ratio $12:18$ in its simplest form.",
+  "hint": "Find the highest common factor (HCF) of 12 and 18 and divide both parts by it.",
+  "answer": "$2:3$",
+  "solution": "The factors of 12 are 1, 2, 3, 4, 6, 12 and the factors of 18 are 1, 2, 3, 6, 9, 18, so the HCF is 6.\n\nDivide both parts by 6:\n$$12:18 = \\frac{12}{6}:\\frac{18}{6} = 2:3$$\n\n2 and 3 have no common factor other than 1, so $2:3$ is the simplest form.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q02",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write the ratio $18:12$ in its simplest form.",
+  "hint": "Compare this with $12:18$. What has changed, and should the order of the answer change too?",
+  "answer": "$3:2$",
+  "solution": "**What changed:** the two numbers have swapped places compared with $12:18$.\n\nThe HCF of 18 and 12 is still 6. Divide both parts by 6:\n$$18:12 = 3:2$$\n\nThe order of a ratio matters, so the simplified parts stay in the same order as the original: $3:2$, **not** $2:3$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q03",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write the ratio $1.2:1.8$ in its simplest form.",
+  "hint": "Multiply both parts by 10 first so that they are whole numbers.",
+  "answer": "$2:3$",
+  "solution": "**What changed:** compared with $12:18$, both parts have been divided by 10, so they are now decimals.\n\nMultiply both parts by 10 to clear the decimals:\n$$1.2:1.8 = 12:18$$\n\nNow divide by the HCF, 6:\n$$12:18 = 2:3$$\n\nDividing (or multiplying) both parts by the same number does not change a ratio, so the answer is the same as for $12:18$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q04",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write the ratio 1.2 m : 180 cm in its simplest form.",
+  "hint": "Write both lengths in the same unit before you simplify.",
+  "answer": "$2:3$",
+  "solution": "**What changed:** the two parts now have different units.\n\nChange metres to centimetres: $1.2 \\text{ m} = 1.2 \\times 100 = 120 \\text{ cm}$.\n$$1.2\\text{ m} : 180\\text{ cm} = 120\\text{ cm} : 180\\text{ cm} = 120:180$$\n\nThe HCF of 120 and 180 is 60:\n$$120:180 = 2:3$$\n\n(Writing $1.2:180$ and simplifying that would be wrong: the units must match before they can be dropped.)",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q05",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The diagram shows some circles and some triangles.\n\n(a) Write down the ratio of **triangles to circles**. Give your answer in its simplest form.\n\n(b) Write down the ratio of circles to the total number of shapes, in its simplest form.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 110\" width=\"360\" height=\"110\"><circle cx=\"30\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"80,18 63,48 97,48\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"130\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"280,18 263,48 297,48\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"330\" cy=\"35\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"30\" cy=\"85\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"85\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"130,68 113,98 147,98\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"85\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"85\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polygon points=\"280,68 263,98 297,98\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"330\" cy=\"85\" r=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+  "hint": "Count each type of shape. The first word in \"triangles to circles\" tells you which number goes first.",
+  "answer": "(a) $2:5$ (b) $5:7$",
+  "solution": "Count the shapes: there are 4 triangles and 10 circles, so 14 shapes altogether.\n\n(a) Triangles come first:\n$$\\text{triangles} : \\text{circles} = 4:10$$\nThe HCF is 2, so $4:10 = 2:5$.\n\n(Writing $10:4 = 5:2$ would be the ratio of circles to triangles: the wrong order.)\n\n(b) Circles : total $= 10:14$. The HCF is 2, so $10:14 = 5:7$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q06",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Sofia makes lemonade by mixing lemon juice and water. Her ratio table is shown.\n\n| Lemon juice (ml) | Water (ml) |\n|---|---|\n| 50 | 175 |\n| 200 | A |\n| B | 70 |\n| 1 | C |\n| D | 1050 |\n\n(a) Find the values of A, B, C and D.\n\n(b) Write the ratio lemon juice : water in its simplest form.",
+  "hint": "In each row, see what the known amount has been multiplied or divided by compared with the first row, and do the same to the other amount.",
+  "answer": "(a) A = 700, B = 20, C = 3.5, D = 300 (b) $2:7$",
+  "solution": "Every row must be an equivalent ratio, so whatever happens to one column happens to the other.\n\n(a) Row 2: $50 \\to 200$ is $\\times 4$, so $A = 175 \\times 4 = 700$.\n\nRow 3: $175 \\to 70$ is $\\div 2.5$, so $B = 50 \\div 2.5 = 20$.\n\nRow 4: $50 \\to 1$ is $\\div 50$, so $C = 175 \\div 50 = 3.5$.\n\nRow 5: $175 \\to 1050$ is $\\times 6$, so $D = 50 \\times 6 = 300$.\n\n(b) The HCF of 50 and 175 is 25:\n$$50:175 = 2:7$$\n\nCheck: every row of the table simplifies to $2:7$, e.g. $20:70 = 2:7$ and $300:1050 = 2:7$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q07",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Write each ratio in the form $1:n$.\n\n(a) $5:12$\n\n(b) $8:2$\n\n(c) 20 cm : 1.5 m",
+  "hint": "Divide **both** parts by the first part. $n$ does not have to be a whole number.",
+  "answer": "(a) $1:2.4$ (b) $1:0.25$ (c) $1:7.5$",
+  "solution": "To get 1 as the first part, divide both parts by the first part.\n\n(a) $$5:12 = \\frac{5}{5}:\\frac{12}{5} = 1:2.4$$\n\n(b) $$8:2 = \\frac{8}{8}:\\frac{2}{8} = 1:0.25$$\nHere $n$ is less than 1 because the second part is smaller than the first.\n\n(c) Same units first: $1.5 \\text{ m} = 150 \\text{ cm}$.\n$$20:150 = \\frac{20}{20}:\\frac{150}{20} = 1:7.5$$",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q08",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Leon is asked to write 40 cm : 2 m in its simplest form. His working is shown below.\n\n40 cm : 2 m\n$= 40:2$\n$= 20:1$\n\n(a) Identify Leon's mistake and explain why it is wrong.\n\n(b) Work out the correct answer.",
+  "hint": "Are 40 and 2 measured in the same unit?",
+  "answer": "(a) He dropped the units without converting: 2 m is 200 cm, not 2 cm. (b) $1:5$",
+  "solution": "(a) The error is in the second line, $40:2$. Leon has removed the units while the parts are in **different** units (centimetres and metres). His answer $20:1$ would mean the 40 cm length is 20 times as long as the other, but 2 m is clearly longer than 40 cm.\n\n(b) Convert to the same unit: $2 \\text{ m} = 200 \\text{ cm}$.\n$$40:200$$\nThe HCF of 40 and 200 is 40:\n$$40:200 = 1:5$$\n\nSense check: 2 m is 5 times 40 cm. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q09",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to write $16:36$ in the form $1:n$. Her working is shown below.\n\n$16:36 = \\dfrac{16}{16}:\\dfrac{16}{36}$\n$= 1:0.44$ (2 d.p.)\n\n(a) Explain the mistake Priya has made.\n\n(b) Write $16:36$ correctly in the form $1:n$.\n\n(c) Describe a quick check that would have told Priya her answer could not be right.",
+  "hint": "To make the first part 1 you divide by 16. Did Priya divide the **second** part by 16?",
+  "answer": "(a) She worked out $16 \\div 36$ for the second part instead of $36 \\div 16$. (b) $1:2.25$ (c) The second part (36) is bigger than the first (16), so $n$ must be greater than 1.",
+  "solution": "(a) The first part is correct: $16 \\div 16 = 1$. But for the second part she should also divide by 16, i.e. work out $36 \\div 16$. Instead she calculated $\\frac{16}{36}$, dividing the first part by the second.\n\n(b) Divide both parts by 16:\n$$16:36 = \\frac{16}{16}:\\frac{36}{16} = 1:2.25$$\n\n(c) In $16:36$ the second part is more than twice the first. In the form $1:n$ this must still be true, so $n$ must be more than 1 (in fact more than 2). An answer of $0.44$ says the second quantity is **smaller**, which is impossible.\n\n(Another check: $16 \\times 2.25 = 36$. ✓)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q10",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Jay is asked to simplify $24:36$. He writes:\n\n\"24 and 36 are both even, so I divide both by 2 to get $12:18$. That has whole numbers, so $12:18$ is the simplest form.\"\n\n(a) Is Jay correct? Explain your answer.\n\n(b) Explain how you can always be sure that a ratio of whole numbers is in its simplest form.",
+  "hint": "Do 12 and 18 still have a common factor?",
+  "answer": "(a) No. 12 and 18 still share the factor 6; the simplest form is $2:3$. (b) The parts have no common factor other than 1 (equivalently, divide by the HCF in one step).",
+  "solution": "(a) Jay is not correct. Dividing by 2 gives an **equivalent** ratio, but 12 and 18 still have common factors (2, 3 and 6), so it can be simplified further:\n$$12:18 = 2:3$$\n\nJay divided by a common factor (2), not the **highest** common factor. The HCF of 24 and 36 is 12, so in one step:\n$$24:36 = \\frac{24}{12}:\\frac{36}{12} = 2:3$$\n\nHaving whole numbers is not enough: whole numbers are needed, but they must also share no common factor.\n\n(b) A ratio of whole numbers is in simplest form when the only common factor of the parts is 1. You can guarantee this by dividing every part by the HCF, or by repeatedly dividing by common factors until none is left and then checking.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q11",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Maya says:\n\n\"To get an equivalent ratio you can add the same number to both parts. For example, $3:5$ is equivalent to $5:7$ because I added 2 to each part.\"\n\n(a) Show that Maya is wrong.\n\n(b) Explain why multiplying both parts by the same number always gives an equivalent ratio, but adding the same number usually does not.\n\n(c) There is one type of ratio for which adding the same positive number to both parts **does** give an equivalent ratio. What type is it? Justify your answer.",
+  "hint": "Compare the fraction $\\frac{\\text{first part}}{\\text{second part}}$ for each ratio. For (c), try ratios such as $2:2$ or $7:7$.",
+  "answer": "(a) e.g. $\\frac{3}{5} = 0.6$ but $\\frac{5}{7} \\approx 0.714$, so they are not equivalent. (b) Multiplying keeps the number of times bigger one part is than the other; adding changes it. (c) Ratios with equal parts, i.e. $1:1$.",
+  "solution": "(a) In $3:5$ the first part is $\\frac{3}{5} = 0.6$ of the second part. In $5:7$ the first part is $\\frac{5}{7} \\approx 0.714$ of the second. These are different, so the ratios are not equivalent.\n\nOr use a ratio table: the equivalent ratios of $3:5$ are $6:10$, $9:15$, $12:20, \\ldots$ and $5:7$ is not among them, because to get from 3 to 5 you multiply by $\\frac{5}{3}$, but $5 \\times \\frac{5}{3} = \\frac{25}{3} \\ne 7$.\n\n(b) A ratio compares sizes **multiplicatively**: in $3:5$ the second part is $\\frac{5}{3}$ times the first. If both parts are multiplied by $k$, the second is still $\\frac{5k}{3k} = \\frac{5}{3}$ times the first, so the comparison is unchanged.\n\nAdding the same amount changes the parts by the same **difference**, not the same **multiplier**. The difference stays 2 but the parts get bigger, so the relative difference shrinks: $\\frac{3}{5} \\to \\frac{5}{7} \\to \\frac{7}{9}$, getting closer to 1 each time.\n\n(c) Ratios where both parts are equal, i.e. $a:a$, which simplifies to $1:1$. Adding $k$ gives $(a + k):(a + k) = 1:1$ again.\n\nFor any other ratio it fails: if $a:b$ and $(a + k):(b + k)$ were equivalent then\n$$\\frac{a + k}{b + k} = \\frac{a}{b} \\;\\Rightarrow\\; b(a + k) = a(b + k) \\;\\Rightarrow\\; bk = ak \\;\\Rightarrow\\; a = b$$\nsince $k \\ne 0$. So $1:1$ is the only case.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q12",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write 750 g : 2 kg as a ratio in its simplest form.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write $\\frac{2}{3}:\\frac{1}{4}$ as a ratio of whole numbers in its simplest form.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Write $6:15$ in the form $1:n$.",
+    "marks": 1
+   }
+  ],
+  "hint": "(a) Same units first. (b) Multiply both fractions by a common denominator. (c) Divide both parts by 6.",
+  "answer": "(a) $3:8$ (b) $8:3$ (c) $1:2.5$",
+  "solution": "(a) $2 \\text{ kg} = 2000 \\text{ g}$, so the ratio is $750:2000$. **M1** (converting to the same units)\n\nThe HCF of 750 and 2000 is 250:\n$$750:2000 = 3:8$$ **A1**\n\n(b) Multiply both parts by 12 (the LCM of 3 and 4):\n$$\\frac{2}{3} \\times 12 : \\frac{1}{4} \\times 12 = 8:3$$ **M1** (multiplying both parts by a common multiple of the denominators, or writing as $\\frac{8}{12}:\\frac{3}{12}$)\n\n8 and 3 have no common factor, so the answer is $8:3$. **A1**\n\n(c) $$6:15 = \\frac{6}{6}:\\frac{15}{6} = 1:2.5$$ **B1**",
+  "linkedTopicIds": [
+   "geo-units-measures",
+   "num-fractions-equivalence"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q13",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A builder mixes concrete using 50 kg of cement, 0.1 tonnes of sand and 150 kg of gravel.\n\n(a) Write the ratio cement : sand : gravel in its simplest form.\n\n(b) The builder has 75 kg of cement left. How much sand and how much gravel does she need to make concrete in the same ratio?",
+  "hint": "1 tonne = 1000 kg. A three-part ratio is simplified by dividing **all three** parts by the same number.",
+  "answer": "(a) $1:2:3$ (b) 150 kg of sand and 225 kg of gravel",
+  "solution": "(a) Convert to kilograms: $0.1 \\text{ tonnes} = 0.1 \\times 1000 = 100 \\text{ kg}$.\n$$50:100:150$$\nThe HCF of 50, 100 and 150 is 50:\n$$50:100:150 = 1:2:3$$\n\n(b) Cement is 1 part, so 1 part = 75 kg.\n\nSand: $2 \\times 75 = 150$ kg. Gravel: $3 \\times 75 = 225$ kg.\n\nCheck: $75:150:225$ divided by 75 is $1:2:3$. ✓",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q14",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Two schools compare their staffing.\n\n* School A has 18 teachers and 315 pupils.\n* School B has 24 teachers and 408 pupils.\n\n(a) Write the ratio teachers : pupils for each school in the form $1:n$.\n\n(b) Which school has fewer pupils per teacher? Explain how the form $1:n$ helps you decide.",
+  "hint": "Divide both parts of each ratio by the number of teachers.",
+  "answer": "(a) School A $1:17.5$, School B $1:17$ (b) School B; in the form $1:n$ the values of $n$ are directly comparable (pupils per teacher).",
+  "solution": "(a) School A:\n$$18:315 = \\frac{18}{18}:\\frac{315}{18} = 1:17.5$$\n\nSchool B:\n$$24:408 = \\frac{24}{24}:\\frac{408}{24} = 1:17$$\n\n(b) School B has fewer pupils per teacher (17 compared with 17.5).\n\nThe simplest forms ($2:35$ and $1:17$) are hard to compare because the first parts are different. Writing both in the form $1:n$ makes the first part the same (one teacher), so $n$ is simply the number of pupils per teacher and the two values can be compared directly.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-ratio-basics-q15",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Two **two-digit** whole numbers are in the ratio $4:7$.\n\nThe sum of the two numbers is a multiple of 10.\n\nFind the two numbers. Show that there is only one possible answer.",
+  "hint": "Any pair in the ratio $4:7$ can be written as $4k$ and $7k$ for a whole number $k$. What is their sum?",
+  "answer": "40 and 70",
+  "solution": "Numbers in the ratio $4:7$ (with $4:7$ in simplest form) are $4k$ and $7k$ for some whole number $k$.\n\n**Two-digit condition:** $4k \\ge 10$ means $k \\ge 3$; $7k \\le 99$ means $k \\le 14$. So $3 \\le k \\le 14$.\n\n**Sum condition:** $4k + 7k = 11k$. For $11k$ to be a multiple of 10, $k$ must be a multiple of 10 (11 and 10 share no common factor).\n\nThe only multiple of 10 between 3 and 14 is $k = 10$, giving\n$$4 \\times 10 = 40 \\quad\\text{and}\\quad 7 \\times 10 = 70$$\n\nCheck: $40:70 = 4:7$ ✓, both are two-digit ✓, $40 + 70 = 110$ is a multiple of 10 ✓.",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q16",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$x$ and $y$ are positive whole numbers with $x:y = 1:2.4$.\n\n$x + y$ is a square number less than 300.\n\nFind $x$ and $y$.",
+  "hint": "First write $1:2.4$ as a ratio of whole numbers in simplest form. Then $x$ and $y$ are multiples of those numbers.",
+  "answer": "$x = 85$, $y = 204$",
+  "solution": "Clear the decimal: $1:2.4 = 10:24 = 5:12$ (dividing by the HCF, 2).\n\nSo $x = 5k$ and $y = 12k$ for some positive whole number $k$, and\n$$x + y = 17k$$\n\nWe need $17k$ to be a square number. Since 17 is prime, a square divisible by 17 must be divisible by $17^2 = 289$. The square numbers that are multiples of 17 are $289, 1156, \\ldots$, and the only one less than 300 is 289.\n\nSo $17k = 289$, giving $k = 17$:\n$$x = 5 \\times 17 = 85, \\qquad y = 12 \\times 17 = 204$$\n\nCheck: $\\frac{204}{85} = 2.4$, so $x:y = 1:2.4$ ✓, and $85 + 204 = 289 = 17^2$ ✓.",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes",
+   "num-powers-roots"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q17",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$$A = 2^3 \\times 3^2 \\times 5 \\qquad B = 2^2 \\times 3^3 \\times 7$$\n\nWrite the ratio $A:B$ in its simplest form. You do not need to work out $A$ and $B$ in full.",
+  "hint": "The HCF of $A$ and $B$ uses the lower power of each prime that appears in both.",
+  "answer": "$10:21$",
+  "solution": "The HCF takes each common prime to its **lowest** power:\n$$\\text{HCF} = 2^2 \\times 3^2 = 36$$\n(5 and 7 are not common to both.)\n\nDivide each number by the HCF:\n$$\\frac{A}{36} = \\frac{2^3 \\times 3^2 \\times 5}{2^2 \\times 3^2} = 2 \\times 5 = 10$$\n$$\\frac{B}{36} = \\frac{2^2 \\times 3^3 \\times 7}{2^2 \\times 3^2} = 3 \\times 7 = 21$$\n\nSo $A:B = 10:21$.\n\nCheck: $A = 360$ and $B = 756$, and $360 \\div 36 = 10$, $756 \\div 36 = 21$. 10 and 21 have no common factor. ✓",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes",
+   "num-hcf-lcm"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-ratio-basics-q18",
+  "topicId": "rat-ratio-basics",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A-series paper (A3, A4, A5, …) has a special property: when a sheet is cut in half across its long side, each half has the **same** ratio of short side : long side as the original sheet.\n\nA sheet has short side $W$ and long side $L$.\n\n(a) Explain why each half has short side $\\frac{L}{2}$ and long side $W$.\n\n(b) Use the property to show that $L^2 = 2W^2$.\n\n(c) Hence write the ratio short side : long side in the form $1:n$, giving $n$ exactly.\n\n(d) A sheet of A4 measures 210 mm by 297 mm. Write $210:297$ in the form $1:n$, giving $n$ to 3 decimal places, and comment on your answer.",
+  "hint": "Write the two ratios short : long as fractions and set them equal. Then cross-multiply.",
+  "answer": "(a) Cutting halves $L$, and $W$ is now the longer side since $W > \\frac{L}{2}$. (b) Shown. (c) $1:\\sqrt{2}$ (d) $1:1.414$, which agrees with $\\sqrt{2} = 1.41421\\ldots$ to 3 d.p.",
+  "solution": "(a) Cutting across the long side halves it, so each half-sheet measures $W$ by $\\frac{L}{2}$; the side $W$ is not cut. For A-series paper, halving the long side makes it shorter than $W$ (a half-sheet of A4 is a \"landscape\" A5 sheet), so the sides swap roles: short side $= \\frac{L}{2}$ and long side $= W$.\n\n(b) The ratio short : long must be the same before and after:\n$$W : L = \\frac{L}{2} : W$$\n\nAs fractions:\n$$\\frac{W}{L} = \\frac{L/2}{W}$$\n\nCross-multiply:\n$$W \\times W = L \\times \\frac{L}{2} \\;\\Rightarrow\\; W^2 = \\frac{L^2}{2} \\;\\Rightarrow\\; L^2 = 2W^2$$\n\n(c) From $L^2 = 2W^2$, $L = \\sqrt{2}\\,W$ (lengths are positive). So\n$$W:L = W:\\sqrt{2}\\,W = 1:\\sqrt{2}$$\n\n(d) $$210:297 = \\frac{210}{210}:\\frac{297}{210} = 1:1.414285\\ldots = 1:1.414 \\text{ (3 d.p.)}$$\n\nSince $\\sqrt{2} = 1.414213\\ldots$, the A4 sheet matches the ideal ratio $1:\\sqrt{2}$ to 3 decimal places. It is not exact because the real sheet's sides are rounded to the nearest millimetre.",
+  "linkedTopicIds": [
+   "num-powers-roots",
+   "alg-forming-equations"
+  ]
+ }
+]

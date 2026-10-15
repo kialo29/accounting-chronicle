@@ -77,11 +77,20 @@ for (const [label, viewport, scheme] of [['desktop-light', { width: 1300, height
   await page.evaluate(() => { location.hash = 'path-calc-integration-by-parts'; });
   await page.waitForSelector('ol.path li');
   const steps = await page.locator('ol.path li').count();
-  ok(steps > 3, `${label}: learning path for integration by parts has ${steps} steps`);
+  ok(steps > 3, `${label}: learning path for integration by parts has ${steps} steps (3 levels)`);
+  await page.selectOption('#path-depth', '99');
+  const allSteps = await page.locator('ol.path li').count();
+  ok(allSteps > steps, `${label}: full chain has ${allSteps} steps`);
+  await page.selectOption('#path-depth', '3');
   await page.screenshot({ path: path.join(OUT, `${label}-path.png`) });
 
   // worksheet
-  await page.evaluate((id) => { location.hash = 'topic-' + id; }, 'alg-quadratic-formula');
+  const wsTopic = await page.evaluate(() => {
+    const b = JSON.parse(document.getElementById('bank').textContent);
+    const c = {}; b.questions.forEach((q) => { c[q.topicId] = (c[q.topicId] || 0) + 1; });
+    return c['alg-quadratic-formula'] ? 'alg-quadratic-formula' : Object.keys(c)[0];
+  });
+  await page.evaluate((id) => { location.hash = 'topic-' + id; }, wsTopic);
   await page.waitForSelector('#tp-ws');
   await page.click('#tp-ws');
   await page.waitForSelector('#ws-sheet ol.wsq li');
@@ -92,14 +101,14 @@ for (const [label, viewport, scheme] of [['desktop-light', { width: 1300, height
   if (label === 'desktop-light') {
     await page.evaluate(() => document.body.setAttribute('data-print', 'worksheet'));
     await page.emulateMedia({ media: 'print' });
-    await page.pdf({ path: path.join(OUT, 'worksheet-print.pdf'), format: 'A4' });
-    await page.screenshot({ path: path.join(OUT, 'print-worksheet.png'), fullPage: true });
     const hiddenChrome = await page.evaluate(() => getComputedStyle(document.querySelector('.masthead')).display === 'none' && getComputedStyle(document.getElementById('ws-answers')).display === 'none');
     ok(hiddenChrome, 'print: worksheet-only print hides app chrome and answer sheet');
+    await page.screenshot({ path: path.join(OUT, 'print-worksheet.png'), fullPage: true });
+    await page.pdf({ path: path.join(OUT, 'worksheet-print.pdf'), format: 'A4' });
     await page.evaluate(() => document.body.setAttribute('data-print', 'answers'));
-    await page.pdf({ path: path.join(OUT, 'answers-print.pdf'), format: 'A4' });
     const ansOnly = await page.evaluate(() => getComputedStyle(document.getElementById('ws-sheet')).display === 'none' && getComputedStyle(document.getElementById('ws-answers')).display !== 'none');
     ok(ansOnly, 'print: answer-sheet print shows only the answers');
+    await page.pdf({ path: path.join(OUT, 'answers-print.pdf'), format: 'A4' });
     await page.emulateMedia({ media: 'screen' });
   }
   ok(errors.length === 0, `${label}: no JS errors after interaction ${errors.join(' | ')}`);

@@ -1,0 +1,268 @@
+[
+ {
+  "id": "alg-factorising-quadratics-q01",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Factorise $x^2 + 7x + 10$.",
+  "hint": "Find two numbers that multiply to $+10$ and add to $+7$.",
+  "answer": "$(x + 2)(x + 5)$",
+  "solution": "We need two numbers with product $+10$ and sum $+7$.\n\nFactor pairs of 10: $1 \\times 10$ (sum 11), $2 \\times 5$ (sum 7). ✓\n\n$$x^2 + 7x + 10 = (x + 2)(x + 5)$$\n\nCheck: $(x + 2)(x + 5) = x^2 + 5x + 2x + 10 = x^2 + 7x + 10$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q02",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Factorise $x^2 - 7x + 10$.",
+  "hint": "The product is still $+10$ but the sum is now $-7$. If the product is positive, both numbers have the same sign.",
+  "answer": "$(x - 2)(x - 5)$",
+  "solution": "**What changed:** the coefficient of $x$ changed from $+7$ to $-7$.\n\nWe need product $+10$ and sum $-7$. A positive product means the numbers have the same sign; a negative sum means both are negative: $-2$ and $-5$.\n\n$$x^2 - 7x + 10 = (x - 2)(x - 5)$$\n\n**Effect:** both signs in the brackets flipped. Check: $x^2 - 5x - 2x + 10 = x^2 - 7x + 10$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q03",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Factorise $x^2 + 3x - 10$.",
+  "hint": "The product is now $-10$, so one number is positive and one is negative. Which one must be bigger (ignoring signs) to give a sum of $+3$?",
+  "answer": "$(x + 5)(x - 2)$",
+  "solution": "**What changed:** the constant term is now $-10$ (and the sum is $+3$).\n\nA negative product means the numbers have **opposite signs**. Their sum is $+3$, so the positive number is the larger in size. Factor pairs of 10 with a difference of 3: $5$ and $2$. So the numbers are $+5$ and $-2$.\n\nCheck: $5 \\times (-2) = -10$ ✓ and $5 + (-2) = 3$ ✓.\n\n$$x^2 + 3x - 10 = (x + 5)(x - 2)$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q04",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Factorise $x^2 - 3x - 10$.",
+  "hint": "Compare with $x^2 + 3x - 10 = (x + 5)(x - 2)$. Only the sign of the $x$ term has changed.",
+  "answer": "$(x - 5)(x + 2)$",
+  "solution": "**What changed:** the coefficient of $x$ changed from $+3$ to $-3$.\n\nWe still need opposite signs (product $-10$), but now the sum is $-3$, so the **negative** number is the larger in size: $-5$ and $+2$.\n\nCheck: $(-5)(2) = -10$ ✓ and $-5 + 2 = -3$ ✓.\n\n$$x^2 - 3x - 10 = (x - 5)(x + 2)$$\n\n**Effect:** the same numbers 5 and 2 appear, but the signs swap. Writing $(x + 5)(x - 2)$ here would expand to $x^2 + 3x - 10$: this is why you should always expand to check the middle term.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q05",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "A rectangular patio has area $(x^2 + 9x + 20) \\text{ m}^2$. Its length and width are both of the form $(x + a)$ metres, where $a$ is a whole number, and the length is the longer side.\n\n(a) Factorise $x^2 + 9x + 20$ to find expressions for the length and width.\n\n(b) When $x = 3$, work out the length and width of the patio and check your answer using the area.",
+  "hint": "Two numbers that multiply to 20 and add to 9.",
+  "answer": "(a) Length $(x + 5)$ m, width $(x + 4)$ m (b) 8 m by 7 m (area $56 \\text{ m}^2$)",
+  "solution": "(a) Product 20, sum 9: the numbers are 4 and 5.\n$$x^2 + 9x + 20 = (x + 4)(x + 5)$$\nThe length is the longer side, so the length is $(x + 5)$ m and the width is $(x + 4)$ m.\n\n(b) When $x = 3$: length $= 3 + 5 = 8$ m, width $= 3 + 4 = 7$ m.\n\nCheck: $8 \\times 7 = 56$ and $3^2 + 9(3) + 20 = 9 + 27 + 20 = 56$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q06",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Tom factorises $x^2 - 2x - 24$. His working is shown below.\n\n\"I need two numbers that multiply to $-24$. $6 \\times 4 = 24$ and $6 - 4 = 2$, so the numbers are 6 and $-4$.\"\n$$x^2 - 2x - 24 = (x + 6)(x - 4)$$\n\nExplain Tom's mistake and give the correct factorisation.",
+  "hint": "Expand Tom's answer. Which term does not match?",
+  "answer": "Tom's numbers add to $+2$, not $-2$. Correct: $(x - 6)(x + 4)$.",
+  "solution": "Tom found the right pair of numbers (6 and 4) but gave them the **wrong signs**.\n\nExpanding his answer: $(x + 6)(x - 4) = x^2 - 4x + 6x - 24 = x^2 + 2x - 24$. The middle term is $+2x$, not $-2x$.\n\nThe two numbers must multiply to $-24$ **and add to $-2$**: these are $-6$ and $+4$ (check: $(-6)(4) = -24$, $-6 + 4 = -2$).\n\n$$x^2 - 2x - 24 = (x - 6)(x + 4)$$\n\nCheck: $x^2 + 4x - 6x - 24 = x^2 - 2x - 24$. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q07",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Aisha factorises $9x^2 - 16$. Her working is shown below.\n\n\"$3x \\times 3x = 9x^2$ and $(-4) \\times (-4) = 16$, so\"\n$$9x^2 - 16 = (3x - 4)^2$$\n\n(a) Explain the mistake Aisha has made.\n\n(b) Factorise $9x^2 - 16$ correctly.",
+  "hint": "Expand $(3x - 4)^2 = (3x - 4)(3x - 4)$ fully, including the middle terms. What sign does the constant term have?",
+  "answer": "(a) $(3x - 4)^2 = 9x^2 - 24x + 16$, not $9x^2 - 16$; she has treated a difference of two squares as a perfect square. (b) $(3x + 4)(3x - 4)$",
+  "solution": "(a) Expanding Aisha's answer:\n$$(3x - 4)^2 = 9x^2 - 12x - 12x + 16 = 9x^2 - 24x + 16$$\nThis has a middle term $-24x$ and a constant $+16$, so it is not equal to $9x^2 - 16$. Aisha has written a **difference** of two squares as a **square**. Since $(-4)(-4) = +16$, her brackets can never produce $-16$.\n\n(b) $9x^2 - 16 = (3x)^2 - 4^2$ is a difference of two squares, $a^2 - b^2 = (a + b)(a - b)$ with $a = 3x$, $b = 4$:\n$$9x^2 - 16 = (3x + 4)(3x - 4)$$\n\nCheck: $(3x + 4)(3x - 4) = 9x^2 - 12x + 12x - 16 = 9x^2 - 16$. The middle terms cancel, which is exactly what happens in a difference of two squares.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q08",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Factorise $3x^2 + 10x - 8$.",
+  "hint": "Work out $ac = 3 \\times (-8)$. Find two numbers with that product and sum $10$, then split the middle term.",
+  "answer": "$(3x - 2)(x + 4)$",
+  "solution": "$ac = 3 \\times (-8) = -24$. We need two numbers with product $-24$ and sum $+10$: $12$ and $-2$.\n\nSplit the middle term:\n$$3x^2 + 12x - 2x - 8$$\n\nFactorise in pairs:\n$$3x(x + 4) - 2(x + 4)$$\n\nTake out the common bracket:\n$$(3x - 2)(x + 4)$$\n\nCheck: $(3x - 2)(x + 4) = 3x^2 + 12x - 2x - 8 = 3x^2 + 10x - 8$. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q09",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ben factorises $2x^2 + 7x + 6$. His working is shown below.\n\n\"Two numbers that multiply to 6 and add to 7 are 6 and 1, so\"\n$$2x^2 + 7x + 6 = (2x + 6)(x + 1)$$\n\nExplain what Ben has done wrong and factorise $2x^2 + 7x + 6$ correctly.",
+  "hint": "Expand Ben's brackets. When the coefficient of $x^2$ is not 1, the numbers you need must multiply to $ac$, not $c$.",
+  "answer": "Ben ignored the coefficient 2 (his brackets expand to $2x^2 + 8x + 6$). Correct: $(2x + 3)(x + 2)$.",
+  "solution": "**Mistake:** Ben used the method for $x^2 + bx + c$ and ignored the 2 in front of $x^2$. Expanding his answer:\n$$(2x + 6)(x + 1) = 2x^2 + 2x + 6x + 6 = 2x^2 + 8x + 6$$\nThe middle term is wrong because the 6 in the first bracket ends up multiplied by $x$, but the 1 in the second bracket is multiplied by $2x$. (His answer also has a common factor of 2 in the first bracket, a sign something has gone wrong.)\n\n**Correct method:** $ac = 2 \\times 6 = 12$. Two numbers with product 12 and sum 7: $4$ and $3$.\n$$2x^2 + 4x + 3x + 6 = 2x(x + 2) + 3(x + 2) = (2x + 3)(x + 2)$$\n\nCheck: $(2x + 3)(x + 2) = 2x^2 + 4x + 3x + 6 = 2x^2 + 7x + 6$. ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q10",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Factorise completely.\n\n(a) $5x^2 - 20$\n\n(b) $3x^2 - 12x - 36$\n\n(c) $2x^3 - 50x$",
+  "hint": "In each part, take out the highest common factor first, then look at what is left inside the bracket.",
+  "answer": "(a) $5(x + 2)(x - 2)$ (b) $3(x - 6)(x + 2)$ (c) $2x(x + 5)(x - 5)$",
+  "solution": "(a) HCF is 5:\n$$5x^2 - 20 = 5(x^2 - 4) = 5(x + 2)(x - 2)$$\n(Writing $(5x + 10)(x - 2)$ expands correctly but is **not** fully factorised: $5x + 10$ still has a factor of 5.)\n\n(b) HCF is 3:\n$$3x^2 - 12x - 36 = 3(x^2 - 4x - 12)$$\nProduct $-12$, sum $-4$: $-6$ and $+2$.\n$$= 3(x - 6)(x + 2)$$\n\n(c) HCF is $2x$:\n$$2x^3 - 50x = 2x(x^2 - 25) = 2x(x + 5)(x - 5)$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q11",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Figure 1 shows a square of side $x$ cm with a square of side 3 cm removed from one corner. The shaded shape is cut along the dashed line into rectangles A and B. Rectangle B is rotated and placed on top of A to make the rectangle in Figure 2.\n\n(a) Write down the area of the shaded shape in Figure 1 in terms of $x$.\n\n(b) Use Figure 2 to explain why $x^2 - 9 = (x + 3)(x - 3)$.\n\n(c) Ellie says, \"In the same way, $x^2 + 9 = (x + 3)(x + 3)$.\" Explain why Ellie is wrong.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><path d=\"M30 40 L110 40 L110 80 L150 80 L150 160 L30 160 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M110 40 L150 40 L150 80\" fill=\"none\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><line x1=\"110\" y1=\"80\" x2=\"110\" y2=\"160\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"90\" y=\"178\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"20\" y=\"105\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"130\" y=\"34\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"160\" y=\"64\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">3</text><text x=\"70\" y=\"125\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"130\" y=\"125\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><rect x=\"230\" y=\"40\" width=\"80\" height=\"160\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"230\" y1=\"80\" x2=\"310\" y2=\"80\" stroke=\"currentColor\" stroke-dasharray=\"4 3\"/><text x=\"270\" y=\"65\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"270\" y=\"145\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"270\" y=\"218\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x − 3</text><text x=\"222\" y=\"125\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x + 3</text><text x=\"90\" y=\"245\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Figure 1</text><text x=\"270\" y=\"245\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Figure 2</text></svg>",
+  "hint": "Rearranging pieces does not change the total area. In Figure 2, why is the height $x + 3$?",
+  "answer": "(a) $(x^2 - 9) \\text{ cm}^2$ (b) Same area, and Figure 2 is a rectangle of width $x - 3$ and height $x + 3$, so $x^2 - 9 = (x + 3)(x - 3)$. (c) $(x + 3)^2 = x^2 + 6x + 9 \\ne x^2 + 9$; a sum of two squares does not factorise.",
+  "solution": "(a) Big square minus small square: area $= x^2 - 3^2 = (x^2 - 9) \\text{ cm}^2$.\n\n(b) Rectangle A has width $x - 3$ and height $x$. Rectangle B has width 3 and height $x - 3$; rotated, it is $x - 3$ wide and 3 tall, so it fits exactly on top of A. Figure 2 is therefore a rectangle of width $x - 3$ and height $x + 3$, with area $(x + 3)(x - 3)$.\n\nCutting and rearranging does not change area, so\n$$x^2 - 9 = (x + 3)(x - 3)$$\nThis is the difference of two squares.\n\n(c) Expanding Ellie's bracket: $(x + 3)(x + 3) = x^2 + 3x + 3x + 9 = x^2 + 6x + 9$, which has an extra $6x$. In fact $x^2 + 9$ cannot be factorised into brackets with real numbers at all: for $(x + p)(x + q)$ we would need $pq = 9$ and $p + q = 0$, so $q = -p$ and $pq = -p^2 = 9$, which is impossible because $-p^2 \\le 0$. A **sum** of two squares does not factorise.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q12",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The expression $x^2 + bx + 12$ can be factorised as $(x + p)(x + q)$, where $p$ and $q$ are integers.\n\nFind all the possible values of $b$.",
+  "hint": "Expanding $(x + p)(x + q)$ gives $x^2 + (p + q)x + pq$. List every integer pair with $pq = 12$, remembering negative pairs.",
+  "answer": "$b = \\pm 7, \\pm 8, \\pm 13$",
+  "solution": "$(x + p)(x + q) = x^2 + (p + q)x + pq$, so we need $pq = 12$ and $b = p + q$.\n\nInteger pairs with product 12:\n\n| $p$, $q$ | $b = p + q$ |\n|---|---|\n| $1, 12$ | $13$ |\n| $2, 6$ | $8$ |\n| $3, 4$ | $7$ |\n| $-1, -12$ | $-13$ |\n| $-2, -6$ | $-8$ |\n| $-3, -4$ | $-7$ |\n\n(Pairs such as $12, 1$ give the same values.)\n\nSo $b$ can be $13, 8, 7, -7, -8$ or $-13$: six values in total.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q13",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "Do not use a calculator in this question.\n\n(a) Use the difference of two squares to work out $1003^2 - 997^2$.\n\n(b) By writing $899 = 900 - 1$, show that 899 is not prime, and write 899 as a product of prime factors.",
+  "hint": "$a^2 - b^2 = (a + b)(a - b)$. For (b), $900 = 30^2$ and $1 = 1^2$.",
+  "answer": "(a) 12000 (b) $899 = 30^2 - 1^2 = 31 \\times 29$",
+  "solution": "(a)\n$$1003^2 - 997^2 = (1003 + 997)(1003 - 997) = 2000 \\times 6 = 12000$$\n\n(b)\n$$899 = 900 - 1 = 30^2 - 1^2 = (30 + 1)(30 - 1) = 31 \\times 29$$\n899 has factors other than 1 and itself, so it is not prime. Both 29 and 31 are prime (neither is divisible by 2, 3 or 5, and $6^2 > 31$), so the prime factorisation is\n$$899 = 29 \\times 31$$",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-factorising-quadratics-q14",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A rectangle has area $(6x^2 + 7x - 20) \\text{ cm}^2$. One side has length $(2x + 5)$ cm.\n\n(a) Factorise $6x^2 + 7x - 20$ and hence find an expression for the length of the other side.\n\n(b) The perimeter of the rectangle is 42 cm. Find the area of the rectangle.",
+  "hint": "For (a), one bracket must be $(2x + 5)$. For (b), write the perimeter in terms of $x$, form an equation and solve it.",
+  "answer": "(a) $(2x + 5)(3x - 4)$, so the other side is $(3x - 4)$ cm (b) $104 \\text{ cm}^2$",
+  "solution": "(a) $ac = 6 \\times (-20) = -120$. Two numbers with product $-120$ and sum $7$: $15$ and $-8$.\n$$6x^2 + 15x - 8x - 20 = 3x(2x + 5) - 4(2x + 5) = (2x + 5)(3x - 4)$$\nThe other side is $(3x - 4)$ cm.\n\n(b) Perimeter $= 2(2x + 5) + 2(3x - 4) = 4x + 10 + 6x - 8 = 10x + 2$.\n$$10x + 2 = 42 \\quad\\Rightarrow\\quad 10x = 40 \\quad\\Rightarrow\\quad x = 4$$\n\nThe sides are $2(4) + 5 = 13$ cm and $3(4) - 4 = 8$ cm (check: $2(13 + 8) = 42$ ✓).\n\nArea $= 13 \\times 8 = 104 \\text{ cm}^2$. (Check: $6(16) + 7(4) - 20 = 96 + 28 - 20 = 104$. ✓)",
+  "linkedTopicIds": [
+   "geo-perimeter-area",
+   "alg-linear-equations"
+  ]
+ },
+ {
+  "id": "alg-factorising-quadratics-q15",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "In this question you must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Factorise $x^2 + 5x - 14$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Factorise $6x^2 - 7x - 5$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Simplify fully $\\dfrac{6x^2 - 7x - 5}{4x^2 - 1}$.",
+    "marks": 3
+   }
+  ],
+  "hint": "For (c), factorise the numerator and the denominator, then cancel a common bracket. The denominator is a difference of two squares.",
+  "answer": "(a) $(x + 7)(x - 2)$ (b) $(2x + 1)(3x - 5)$ (c) $\\dfrac{3x - 5}{2x - 1}$",
+  "solution": "(a) Product $-14$, sum $+5$: $+7$ and $-2$.\n$$(x + 7)(x - 2)$$\nM1 for $(x \\pm 7)(x \\pm 2)$; A1 for correct signs.\n\n(b) $ac = -30$; two numbers with product $-30$ and sum $-7$: $-10$ and $3$.\n$$6x^2 - 10x + 3x - 5 = 2x(3x - 5) + 1(3x - 5) = (2x + 1)(3x - 5)$$\nM1 for splitting the middle term correctly or brackets giving two of the three terms; A1 cao.\n\n(c) Denominator: $4x^2 - 1 = (2x)^2 - 1^2 = (2x + 1)(2x - 1)$. B1\n\n$$\\frac{(2x + 1)(3x - 5)}{(2x + 1)(2x - 1)}$$ M1 for both numerator and denominator factorised\n\nCancel the common factor $(2x + 1)$:\n$$\\frac{3x - 5}{2x - 1}$$ A1",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-factorising-quadratics-q16",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 4,
+  "type": "fluency",
+  "question": "Factorise completely.\n\n(a) $x^4 - 81$\n\n(b) $(2x + 3)^2 - (x - 1)^2$\n\n(c) $12x^2 - 27y^2$",
+  "hint": "Each is a difference of two squares, $a^2 - b^2 = (a + b)(a - b)$, but you may need to spot $a$ and $b$ carefully, take out a common factor first, or use the rule twice.",
+  "answer": "(a) $(x^2 + 9)(x + 3)(x - 3)$ (b) $(3x + 2)(x + 4)$ (c) $3(2x + 3y)(2x - 3y)$",
+  "solution": "(a) $x^4 - 81 = (x^2)^2 - 9^2 = (x^2 + 9)(x^2 - 9)$.\n\n$x^2 - 9$ is again a difference of two squares: $(x + 3)(x - 3)$. But $x^2 + 9$ is a **sum** of squares and does not factorise.\n$$x^4 - 81 = (x^2 + 9)(x + 3)(x - 3)$$\n\n(b) Use $a = 2x + 3$, $b = x - 1$ (keep the brackets!):\n$$(a + b)(a - b) = \\big[(2x + 3) + (x - 1)\\big]\\big[(2x + 3) - (x - 1)\\big]$$\n$$= (3x + 2)(2x + 3 - x + 1) = (3x + 2)(x + 4)$$\n\n(c) Common factor 3 first:\n$$12x^2 - 27y^2 = 3(4x^2 - 9y^2) = 3(2x + 3y)(2x - 3y)$$",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-factorising-quadratics-q17",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find all pairs of positive integers $(x, y)$ such that\n$$x^2 - y^2 = 45$$",
+  "hint": "Factorise the left-hand side. Then $(x + y)$ and $(x - y)$ are a pair of positive integers whose product is 45, with $x + y$ the larger.",
+  "answer": "$(23, 22)$, $(9, 6)$, $(7, 2)$",
+  "solution": "$$x^2 - y^2 = (x + y)(x - y) = 45$$\n\nSince $x, y > 0$ we have $x + y > 0$, so $x - y > 0$ too, and $x + y > x - y$. So $(x + y, x - y)$ is a factor pair of 45 with the larger factor first:\n$$45 \\times 1, \\qquad 15 \\times 3, \\qquad 9 \\times 5$$\n\nSolve each pair: adding gives $2x$, subtracting gives $2y$.\n\n* $x + y = 45$, $x - y = 1$: $x = 23$, $y = 22$.\n* $x + y = 15$, $x - y = 3$: $x = 9$, $y = 6$.\n* $x + y = 9$, $x - y = 5$: $x = 7$, $y = 2$.\n\n(Every factor pair of 45 is odd + odd, so $x$ and $y$ always come out as integers.)\n\nCheck: $529 - 484 = 45$, $81 - 36 = 45$, $49 - 4 = 45$. ✓\n\nThe solutions are $(23, 22)$, $(9, 6)$ and $(7, 2)$.",
+  "linkedTopicIds": [
+   "num-factors-multiples-primes"
+  ]
+ },
+ {
+  "id": "alg-factorising-quadratics-q18",
+  "topicId": "alg-factorising-quadratics",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that $n^4 + 4 = (n^2 + 2)^2 - 4n^2$.\n\n(b) Hence factorise $n^4 + 4$ into two quadratic factors.\n\n(c) Prove that $n^4 + 4$ is not prime for any integer $n > 1$.",
+  "hint": "In (b), $(n^2 + 2)^2 - (2n)^2$ is a difference of two squares. In (c), show both factors are bigger than 1; it may help to write $n^2 - 2n + 2$ as $(n - 1)^2 + 1$.",
+  "answer": "(a) shown (b) $(n^2 + 2n + 2)(n^2 - 2n + 2)$ (c) both factors exceed 1 when $n > 1$, so $n^4 + 4$ is composite.",
+  "solution": "(a)\n$$(n^2 + 2)^2 - 4n^2 = n^4 + 4n^2 + 4 - 4n^2 = n^4 + 4$$ ✓\n\n(b) $4n^2 = (2n)^2$, so this is a difference of two squares with $a = n^2 + 2$ and $b = 2n$:\n$$n^4 + 4 = (n^2 + 2 + 2n)(n^2 + 2 - 2n) = (n^2 + 2n + 2)(n^2 - 2n + 2)$$\n\n(c) For an integer $n > 1$:\n* the smaller factor is $n^2 - 2n + 2 = (n - 1)^2 + 1 \\ge 1^2 + 1 = 2$, since $n - 1 \\ge 1$;\n* the larger factor is $n^2 + 2n + 2 > n^2 - 2n + 2 \\ge 2$.\n\nSo $n^4 + 4$ is the product of two integers that are both at least 2. Therefore it has a factor other than 1 and itself, so it is not prime. $\\blacksquare$\n\nExample: $n = 3$: $81 + 4 = 85 = 17 \\times 5$, and the factors are $9 + 6 + 2 = 17$, $9 - 6 + 2 = 5$. ✓\n\n(When $n = 1$ the smaller factor is 1 and $1^4 + 4 = 5$ is prime, which is why the condition $n > 1$ is needed.)",
+  "linkedTopicIds": [
+   "alg-algebraic-proof",
+   "num-factors-multiples-primes"
+  ]
+ }
+]

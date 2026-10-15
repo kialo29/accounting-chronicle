@@ -1,0 +1,261 @@
+[
+ {
+  "id": "num-rounding-q01",
+  "topicId": "num-rounding",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Round $4738$ to the nearest $10$.",
+  "hint": "$4738$ lies between two multiples of $10$. Which tens are they, and which is it closer to? Look at the units digit.",
+  "answer": "$4740$",
+  "solution": "The multiples of $10$ either side of $4738$ are $4730$ and $4740$.\n\nThe digit after the tens digit is the units digit: $473|8$. It is $8$, which is $5$ or more, so round **up**.\n\n$$4738 \\approx 4740 \\text{ (nearest 10)}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q02",
+  "topicId": "num-rounding",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Round $4738$ to the nearest $100$.\n\nThe number line shows where $4738$ lies between $4700$ and $4800$.",
+  "hint": "Is $4738$ closer to $4700$ or to $4800$? The halfway point is $4750$.",
+  "answer": "$4700$",
+  "solution": "**What changed:** the same number, but now rounded to the nearest hundred instead of the nearest ten.\n\nThe hundreds either side are $4700$ and $4800$, with halfway at $4750$.\n\nThe digit after the hundreds digit is the tens digit: $47|38$. It is $3$, which is $4$ or less, so leave the hundreds digit alone and fill the rest with zeros.\n\n$$4738 \\approx 4700 \\text{ (nearest 100)}$$\n\nNotice that $4738$ rounded **up** to the nearest $10$ but rounds **down** to the nearest $100$: it depends on the digit straight after the one you keep.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 90\" width=\"340\" height=\"90\"><line x1=\"20\" y1=\"50\" x2=\"320\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"41\" x2=\"20\" y2=\"59\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"110\" y1=\"45\" x2=\"110\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"140\" y1=\"45\" x2=\"140\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"170\" y1=\"41\" x2=\"170\" y2=\"59\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"200\" y1=\"45\" x2=\"200\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"230\" y1=\"45\" x2=\"230\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"260\" y1=\"45\" x2=\"260\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"290\" y1=\"45\" x2=\"290\" y2=\"55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"320\" y1=\"41\" x2=\"320\" y2=\"59\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"20\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4700</text><text x=\"170\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4750</text><text x=\"320\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4800</text><line x1=\"134\" y1=\"22\" x2=\"134\" y2=\"44\" stroke=\"#3b82f6\" stroke-width=\"2\"/><circle cx=\"134\" cy=\"50\" r=\"4\" fill=\"#3b82f6\"/><text x=\"134\" y=\"16\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4738</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q03",
+  "topicId": "num-rounding",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Round $4738$ to the nearest $1000$.",
+  "hint": "Look at the hundreds digit, the digit straight after the thousands digit.",
+  "answer": "$5000$",
+  "solution": "**What changed:** now rounding to the nearest thousand.\n\nThe thousands either side are $4000$ and $5000$ (halfway is $4500$).\n\nThe digit after the thousands digit is the hundreds digit: $4|738$. It is $7$, which is $5$ or more, so round up.\n\n$$4738 \\approx 5000 \\text{ (nearest 1000)}$$\n\nAcross the sequence: nearest $10$ gives $4740$ (up), nearest $100$ gives $4700$ (down), nearest $1000$ gives $5000$ (up).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q04",
+  "topicId": "num-rounding",
+  "difficulty": 1,
+  "type": "real-world",
+  "question": "A television costs £398 and a laptop costs £1249.\n\n(a) Round the price of the television to the nearest £10.\n\n(b) Round the price of the television to the nearest £100.\n\n(c) Round the price of the laptop to the nearest £100.",
+  "hint": "For (a), the units digit $8$ makes you round up, and that carries into the tens and hundreds.",
+  "answer": "(a) £400 (b) £400 (c) £1200",
+  "solution": "(a) $39|8$: the units digit is $8$, so round the tens up. $39$ tens becomes $40$ tens, so the answer is £400 (not £390).\n\n(b) $3|98$: the tens digit is $9$, so round the hundreds up: £400.\n\nBoth answers are £400 because £398 is only £2 away from £400.\n\n(c) $12|49$: the tens digit is $4$, so the hundreds digit stays as $2$: £1200.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q05",
+  "topicId": "num-rounding",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "Round $0.06372$ to $2$ significant figures.",
+  "hint": "Significant figures start at the first **non-zero** digit. Which digit is that here?",
+  "answer": "$0.064$",
+  "solution": "Leading zeros are not significant. The first significant figure is the $6$ (hundredths), the second is the $3$ (thousandths).\n\n$$0.063|72$$\n\nThe next digit is $7$, so round the $3$ up to $4$:\n$$0.06372 \\approx 0.064 \\text{ (2 s.f.)}$$\n\nA common mistake is to count the zeros and write $0.0$ or $0.06$ for 2 s.f.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q06",
+  "topicId": "num-rounding",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "Round $6.372$ to $2$ significant figures.",
+  "hint": "The first significant figure is now in the units column.",
+  "answer": "$6.4$",
+  "solution": "**What changed:** the digits are the same as $0.06372$ but the decimal point has moved two places right, so every digit is worth $100$ times as much.\n\nFirst significant figure: $6$ (units). Second: $3$ (tenths).\n\n$$6.3|72$$\n\nThe next digit is $7$, so round up:\n$$6.372 \\approx 6.4 \\text{ (2 s.f.)}$$\n\nCompare with the previous question: $0.064 \\times 100 = 6.4$. The rounding pattern moves with the number.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q07",
+  "topicId": "num-rounding",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "Round $63\\,720$ to $2$ significant figures.",
+  "hint": "Round as before, then make sure your answer is still roughly the same size as $63\\,720$.",
+  "answer": "$64\\,000$",
+  "solution": "**What changed:** the digits are the same again, but now the number is in the tens of thousands.\n\nFirst significant figure: $6$ (ten thousands). Second: $3$ (thousands).\n\n$$63|720$$\n\nThe next digit is $7$, so round the $3$ up to $4$. Then fill the remaining places with zeros so the number keeps its size:\n$$63\\,720 \\approx 64\\,000 \\text{ (2 s.f.)}$$\n\nWriting just $64$ would be wrong: $64$ is nowhere near $63\\,720$. The three zeros are place holders and must stay.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q08",
+  "topicId": "num-rounding",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Round $15.0962$ to\n\n(a) $1$ decimal place\n\n(b) $2$ decimal places\n\n(c) $3$ decimal places.",
+  "hint": "Count digits after the decimal point. In (b), the answer must show exactly two decimal places, even if one of them is zero.",
+  "answer": "(a) $15.1$ (b) $15.10$ (c) $15.096$",
+  "solution": "(a) Keep one decimal place: $15.0|962$. The next digit is $9$, so round the $0$ up to $1$: $15.1$\n\n(b) Keep two decimal places: $15.09|62$. The next digit is $6$, so round the $9$ up. $15.09 + 0.01 = 15.10$. Two decimal places must be shown, so write $15.10$ (not $15.1$).\n\n(c) Keep three decimal places: $15.096|2$. The next digit is $2$, so leave it: $15.096$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q09",
+  "topicId": "num-rounding",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Six friends share a restaurant bill of £87.40 equally. Rhys divides on his calculator and the display shows $14.56666667$.\n\n(a) How much should each friend pay? Give your answer to the nearest penny.\n\n(b) Explain why $14.56666667$ is not a sensible way to give the answer.\n\n(c) If each friend pays the amount from part (a), how much more than the bill is collected?",
+  "hint": "A penny is £0.01, so the nearest penny means $2$ decimal places.",
+  "answer": "(a) £14.57 (b) Money cannot be paid in fractions of a penny, so pounds should be given to 2 d.p. (c) 2p",
+  "solution": "(a) To the nearest penny means $2$ decimal places: $14.56|666667$. The next digit is $6$, so round up: £14.57\n\n(b) The smallest coin is 1p, which is £0.01. An amount such as £14.56666667 cannot actually be paid, so money is given to $2$ decimal places.\n\n(c) $6 \\times 14.57 = 87.42$, so £87.42 is collected. That is £0.02, or 2p, more than £87.40. (Rounding each share up has added a little to each payment.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q10",
+  "topicId": "num-rounding",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to round $7.6449$ to $1$ decimal place. Her working is shown below.\n\n$7.6449 \\to 7.645 \\to 7.65 \\to 7.7$\n\nAnswer: $7.7$\n\nIdentify Priya's mistake, explain why it is wrong, and give the correct answer.",
+  "hint": "When rounding to 1 decimal place, which single digit decides whether you round up or down?",
+  "answer": "Priya rounded in a chain from the right. Only the hundredths digit ($4$) matters, so $7.6449 = 7.6$ (1 d.p.).",
+  "solution": "**Mistake:** Priya rounded repeatedly, one digit at a time, starting from the right: $7.6449 \\to 7.645 \\to 7.65 \\to 7.7$. Each step pushed the number up, so a $9$ at the far end ended up affecting the tenths digit.\n\n**Why it is wrong:** to round to 1 d.p. you compare the number with the two possible answers, $7.6$ and $7.7$. The halfway point is $7.65$, and $7.6449 < 7.65$, so $7.6449$ is closer to $7.6$. You only look at the digit **immediately after** the one you keep:\n$$7.6|449$$\nThe next digit is $4$, so the tenths digit stays as $6$.\n\n**Correct answer:** $7.6449 = 7.6$ (1 d.p.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q11",
+  "topicId": "num-rounding",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Tom is asked to round $29.96$ to $3$ significant figures. His working is shown below.\n\n$29.9|6$, the next digit is $6$, so round up.\n\n$29.9 + 0.1 = 30$\n\nAnswer: $30$\n\nIdentify Tom's mistake, explain it, and write the correct answer.",
+  "hint": "How many significant figures does Tom's final answer show?",
+  "answer": "Tom's final answer only shows 1 significant figure; the zeros after the $3$ are significant. Correct answer: $30.0$",
+  "solution": "Tom's method is right up to the last line: $29.9|6$ rounds up to $30.0$.\n\n**Mistake:** he wrote the answer as $30$. Written like that, it looks as if the number has been rounded to $1$ or $2$ significant figures (to the nearest $10$ or nearest whole number).\n\n**Explanation:** when rounding to 3 s.f., the answer must show three significant figures. Here the $3$, the $0$ in the units column and the $0$ in the tenths column are all significant: they tell the reader the value is accurate to the nearest $0.1$.\n\n**Correct answer:**\n$$29.96 = 30.0 \\text{ (3 s.f.)}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q12",
+  "topicId": "num-rounding",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A raindrop has a mass of $0.007\\,849$ g.\n\nLeah writes the mass to $2$ significant figures as $0.0078$ g. Max writes it to $2$ decimal places as $0.01$ g.\n\n(a) Show that both Leah and Max have rounded correctly.\n\n(b) Explain why Leah's answer is more useful than Max's.\n\n(c) Max then tries to round $0.007\\,849$ to $2$ significant figures and writes $0.00$. Explain what Max has done wrong.",
+  "hint": "For (b), compare each rounded value with the true mass. For (c), where do significant figures start?",
+  "answer": "(a) $0.007|849 \\to 0.0078$ (next digit 4); $0.00|7849 \\to 0.01$ (next digit 7). (b) $0.01$ g is about $27\\%$ too big and hides the detail; $0.0078$ g is very close to the true mass. (c) He counted the leading zeros as significant; the answer should be $0.0078$.",
+  "solution": "(a) Leah: the first significant figure is the $7$ (thousandths), the second is the $8$. $0.0078|49$: the next digit is $4$, so $0.0078$ ✓.\n\nMax: two decimal places keeps the hundredths: $0.00|7849$. The next digit is $7$, so round up: $0.01$ ✓.\n\n(b) Max's value $0.01$ g is $0.002\\,151$ g away from the true mass, which is more than a quarter of the whole mass ($0.002151 \\div 0.007849 \\approx 27\\%$). Leah's value is only $0.000\\,049$ g away. For very small numbers, decimal places throw away almost all the information, whereas significant figures keep the meaningful digits whatever the size of the number. That is why scientists usually use significant figures.\n\n(c) Max has counted the zeros after the decimal point as significant figures. Leading zeros only show the place value; significant figures start at the first non-zero digit, the $7$. So $0.007\\,849 = 0.0078$ (2 s.f.).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q13",
+  "topicId": "num-rounding",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 4,
+  "question": "You may use a calculator in this question.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use your calculator to work out\n$$\\frac{\\sqrt{48.5} + 2.3^2}{6.1 - 1.75}$$\nWrite down all the figures on your calculator display.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Give your answer to part (a) correct to $3$ significant figures.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Round $0.050\\,82$ to $2$ significant figures.",
+    "marks": 1
+   }
+  ],
+  "hint": "In (a), work out the top and the bottom separately before dividing, or use brackets on your calculator.",
+  "answer": "(a) $2.817056124\\ldots$ (b) $2.82$ (c) $0.051$",
+  "solution": "(a) Numerator: $\\sqrt{48.5} = 6.964194\\ldots$ and $2.3^2 = 5.29$, so the numerator is $12.254194\\ldots$\n\nDenominator: $6.1 - 1.75 = 4.35$ **M1** (for $12.25\\ldots$ or $4.35$ seen)\n\n$$\\frac{12.254194\\ldots}{4.35} = 2.817056124\\ldots$$ **A1**\n\n(b) $2.81|7\\ldots$: the next digit is $7$, so round up: $2.82$ **B1** (ft their (a) if more than 3 s.f. shown)\n\n(c) The first significant figure is the $5$; the $0$ after it is the second. $0.050|82$: the next digit is $8$, so round up: $0.051$ **B1**",
+  "linkedTopicIds": [
+   "num-order-of-operations"
+  ]
+ },
+ {
+  "id": "num-rounding-q14",
+  "topicId": "num-rounding",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Zane is thinking of a whole number.\n\n* Rounded to the nearest $100$, his number is $3700$.\n* Rounded to the nearest $10$, his number is $3650$.\n* His number is even.\n* The digits of his number add up to $18$.\n\nFind Zane's number. Show how you know there is only one possibility.",
+  "hint": "Write down every whole number that rounds to $3650$ to the nearest $10$. Which of those also round to $3700$ to the nearest $100$?",
+  "answer": "$3654$",
+  "solution": "**Nearest 10:** whole numbers that round to $3650$ are $3645, 3646, \\ldots, 3654$ (from $3645$ upwards rounds up to $3650$; $3655$ would round to $3660$).\n\n**Nearest 100:** of these, which round to $3700$? A number rounds to $3700$ if its tens digit (after the hundreds) is $5$ or more, i.e. from $3650$ upwards. So $3645$ to $3649$ (which round to $3600$) are ruled out.\n\nThat leaves $3650, 3651, 3652, 3653, 3654$.\n\n**Even:** $3650$, $3652$, $3654$.\n\n**Digit sums:** $3+6+5+0 = 14$, $3+6+5+2 = 16$, $3+6+5+4 = 18$.\n\nOnly $3654$ works, so Zane's number is $3654$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q15",
+  "topicId": "num-rounding",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The speed of light is $299\\,792\\,458$ m/s.\n\n(a) Round this speed to $3$ significant figures.\n\n(b) Round this speed to $1$ significant figure.\n\n(c) Your answers to (a) and (b) look the same. Explain how a scientist would write the answer to (a) so that it clearly shows $3$ significant figures.\n\n(d) Round the speed to $4$ significant figures, giving your answer in standard form.",
+  "hint": "In (a) the digits $2, 9, 9$ are kept and the next digit is $7$; rounding up makes the $9$s carry.",
+  "answer": "(a) $300\\,000\\,000$ m/s (b) $300\\,000\\,000$ m/s (c) $3.00 \\times 10^8$ m/s (d) $2.998 \\times 10^8$ m/s",
+  "solution": "(a) $299|792\\,458$: the next digit is $7$, so round up. $299 + 1 = 300$, and the place-holder zeros keep the size:\n$$300\\,000\\,000 \\text{ m/s (3 s.f.)}$$\n\n(b) $2|99\\,792\\,458$: the next digit is $9$, so round up to $3$, then fill with zeros:\n$$300\\,000\\,000 \\text{ m/s (1 s.f.)}$$\n\n(c) In ordinary form you cannot tell which zeros are significant. In standard form only the significant figures are written in the number before $\\times 10^n$, so the 3 s.f. answer is\n$$3.00 \\times 10^8 \\text{ m/s}$$\nwhile the 1 s.f. answer is $3 \\times 10^8$ m/s. The two zeros in $3.00$ show the value is accurate to 3 s.f.\n\n(d) $2997|92\\,458$: the next digit is $9$, so round up to $2998$, giving $299\\,800\\,000$:\n$$2.998 \\times 10^8 \\text{ m/s}$$",
+  "linkedTopicIds": [
+   "num-standard-form"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "num-rounding-q16",
+  "topicId": "num-rounding",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Ella says:\n\n\"Rounding to $2$ significant figures always gives an answer at least as accurate as rounding to $1$ decimal place.\"\n\nIs Ella correct? Use examples to justify your answer, and describe when each method is the more accurate.",
+  "hint": "Try a number bigger than $10$, such as $347.28$, and a number smaller than $1$, such as $0.0347$.",
+  "answer": "No. For numbers $10$ or more, 1 d.p. is more accurate (e.g. $347.28$: $350$ vs $347.3$). For numbers less than $1$, 2 s.f. is more accurate. For numbers from $1$ up to $10$ the two methods give the same result.",
+  "solution": "Ella is **not** correct; it depends on the size of the number.\n\n**A counter-example:** $347.28$\n\n* 2 s.f.: $34|7.28 \\to 350$, which is $2.72$ away.\n* 1 d.p.: $347.2|8 \\to 347.3$, which is only $0.02$ away.\n\nHere 1 d.p. is far more accurate.\n\n**Where Ella's idea works:** $0.0347$\n\n* 2 s.f.: $0.034|7 \\to 0.035$\n* 1 d.p.: $0.0|347 \\to 0.0$, which loses everything.\n\n**General picture:** 2 s.f. rounds to the place value one below the first significant figure, while 1 d.p. always rounds to the nearest tenth.\n\n* For numbers from $1$ up to (but not including) $10$, the first significant figure is in the units, so 2 s.f. also means to the nearest tenth: the two methods agree (e.g. $6.372 \\to 6.4$ both ways).\n* For numbers $10$ or more, 2 s.f. rounds to the nearest $1$, $10$, $100$, …, which is coarser than 1 d.p.\n* For numbers less than $1$, 2 s.f. rounds to a smaller place value than tenths, so it is finer.\n\nSo Ella's statement is true only for numbers below $10$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q17",
+  "topicId": "num-rounding",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Kim rounds a positive number $x$ to $1$ decimal place, and then rounds her answer to the nearest whole number.\n\nLewis rounds the same number $x$ straight to the nearest whole number.\n\n(a) Show that when $x = 2.47$, Kim and Lewis get different answers.\n\n(b) Describe exactly which values of $x$ give different answers for Kim and Lewis.\n\n(c) Is it possible for Kim's final answer to be **smaller** than Lewis's? Explain your answer.",
+  "hint": "Think about where the halfway points are. Lewis's answer changes at $n + 0.5$. Which numbers below $n + 0.5$ round up to $n + 0.5$ at 1 d.p.?",
+  "answer": "(a) Kim: $2.47 \\to 2.5 \\to 3$; Lewis: $2.47 \\to 2$. (b) Exactly the numbers with $n + 0.45 \\le x < n + 0.5$ for some whole number $n$ (e.g. $0.45 \\le x < 0.5$, $1.45 \\le x < 1.5$, …). (c) No; Kim's answer is always equal to or one more than Lewis's.",
+  "solution": "(a) Kim: $2.4|7 \\to 2.5$, then $2.5 \\to 3$ (a $5$ rounds up).\n\nLewis: $2.|47 \\to 2$ (the tenths digit is $4$).\n\nDifferent answers: $3$ and $2$.\n\n(b) Let $n$ be the whole-number part of $x$.\n\n* If $x \\ge n + 0.5$, Lewis gets $n + 1$. Kim's 1 d.p. value is at least $n + 0.5$ (rounding never takes a number below a 1 d.p. value it is already above or equal to), so she also gets $n+1$. Same.\n* If $x < n + 0.45$, Kim's 1 d.p. value is at most $n + 0.4$, which rounds to $n$. Lewis also gets $n$. Same.\n* If $n + 0.45 \\le x < n + 0.5$, Kim's 1 d.p. value is exactly $n + 0.5$, which rounds up to $n + 1$, but Lewis gets $n$. **Different.**\n\nSo they disagree exactly when $n + 0.45 \\le x < n + 0.5$ for some whole number $n \\ge 0$, i.e. when the part after the decimal point is at least $0.45$ but less than $0.5$.\n\n(c) No. Rounding to 1 d.p. can only move $x$ to a value that lies on the same side of $n + 0.5$ as $x$, or onto $n + 0.5$ itself. In every case above Kim's answer is either the same as Lewis's or **one more**; she can never end up below Lewis. This \"double rounding\" error is why you should round only once, using the original digits.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "num-rounding-q18",
+  "topicId": "num-rounding",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "For how many positive whole numbers $n$ is the value of $\\dfrac{1}{n}$, rounded to $2$ significant figures, equal to $0.010$?\n\nExplain your reasoning carefully.",
+  "hint": "First decide which decimals round to $0.010$ at 2 s.f. Be careful: a number such as $0.0097$ is already written to 2 s.f. as $0.0097$, not $0.010$.",
+  "answer": "$5$ (namely $n = 96, 97, 98, 99, 100$)",
+  "solution": "**Step 1: which numbers round to $0.010$ (2 s.f.)?**\n\nAbove $0.01$, the significant figures are in the hundredths and thousandths, so numbers from $0.010$ up to (but not including) $0.0105$ round to $0.010$.\n\nBelow $0.01$ the first significant figure moves to the thousandths column. For example $0.0097$ to 2 s.f. is $0.0097$, not $0.010$. A number below $0.01$ only rounds to $0.010$ if its 2 s.f. value \"carries over\": that happens for $0.00995 \\le x < 0.01$ (e.g. $0.00996 \\to 0.0100$, which is $0.010$).\n\nSo $1/n$ rounds to $0.010$ exactly when\n$$0.00995 \\le \\frac{1}{n} < 0.0105$$\n\n**Step 2: turn this into an inequality for $n$.** Taking reciprocals reverses the inequalities (all values are positive):\n$$\\frac{1}{0.0105} < n \\le \\frac{1}{0.00995}$$\n$$95.238\\ldots < n \\le 100.502\\ldots$$\n\n**Step 3: count.** The whole numbers are $96, 97, 98, 99, 100$, so there are $5$ values.\n\n**Check:** $\\frac{1}{96} = 0.010\\,41\\ldots \\to 0.010$ ✓, $\\frac{1}{95} = 0.010\\,53\\ldots \\to 0.011$ ✗, $\\frac{1}{100} = 0.010\\,00 \\to 0.010$ ✓, $\\frac{1}{101} = 0.009\\,90\\ldots \\to 0.0099$ ✗.",
+  "linkedTopicIds": [
+   "num-fdp-conversions",
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]

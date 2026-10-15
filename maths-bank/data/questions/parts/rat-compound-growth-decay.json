@@ -1,0 +1,310 @@
+[
+ {
+  "id": "rat-compound-growth-decay-q01",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Each formula models a quantity after $t$ years. For each one, state whether it shows **growth** or **decay**, and write down the percentage change per year.\n\n(a) $V = 3000 \\times 1.06^t$\n\n(b) $N = 500 \\times 0.92^t$\n\n(c) $P = 1200 \\times 1.105^t$\n\n(d) $A = 750 \\times 0.5^t$",
+  "hint": "Look at the number being raised to the power $t$. Is it bigger or smaller than 1? How far is it from 1?",
+  "answer": "(a) growth, $6\\%$ per year (b) decay, $8\\%$ per year (c) growth, $10.5\\%$ per year (d) decay, $50\\%$ per year",
+  "solution": "In $N = N_0 \\times a^t$ the multiplier $a$ tells you everything: $a > 1$ is growth, $0 < a < 1$ is decay, and the distance of $a$ from 1 is the percentage change as a decimal.\n\n(a) $a = 1.06 = 1 + 0.06$: **growth** of $6\\%$ per year.\n\n(b) $a = 0.92 = 1 - 0.08$: **decay** of $8\\%$ per year (not $92\\%$: $92\\%$ is what remains each year).\n\n(c) $a = 1.105 = 1 + 0.105$: **growth** of $10.5\\%$ per year.\n\n(d) $a = 0.5 = 1 - 0.5$: **decay** of $50\\%$ per year (the amount halves every year).\n\nThe numbers in front (3000, 500, 1200, 750) are the starting values when $t = 0$; they do not affect the rate.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q02",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "£800 is invested at $5\\%$ per year **compound** interest. Work out the value of the investment after 2 years.",
+  "hint": "An increase of $5\\%$ means multiplying by $1.05$. Do this once for each year.",
+  "answer": "£882",
+  "solution": "An increase of $5\\%$ gives the multiplier $1 + 0.05 = 1.05$.\n\nEach year the new amount is multiplied by $1.05$:\n$$800 \\times 1.05 = 840 \\quad\\text{(after 1 year)}$$\n$$840 \\times 1.05 = 882 \\quad\\text{(after 2 years)}$$\n\nIn one step: $800 \\times 1.05^2 = 800 \\times 1.1025 = £882$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q03",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "£800 is invested at $5\\%$ per year compound interest. Work out the value of the investment after **3** years.",
+  "hint": "Same multiplier as before, but now it is applied three times.",
+  "answer": "£926.10",
+  "solution": "**What changed:** the number of years went from 2 to 3, so the power goes from 2 to 3.\n$$800 \\times 1.05^3 = 800 \\times 1.157625 = £926.10$$\n\nCheck: the value after 2 years was £882, and $882 \\times 1.05 = 926.10$. The third year earns £44.10 of interest, more than the £40 earned in the first year, because interest is now earned on interest.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q04",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bike bought for £800 **depreciates** (loses value) by $5\\%$ per year. Work out its value after 3 years.",
+  "hint": "Losing $5\\%$ leaves what percentage of the value? Turn that into a multiplier.",
+  "answer": "£685.90",
+  "solution": "**What changed:** the $5\\%$ is now a decrease instead of an increase, so the multiplier is below 1.\n\nLosing $5\\%$ leaves $95\\%$, so the multiplier is $0.95$:\n$$800 \\times 0.95^3 = 800 \\times 0.857375 = £685.90$$\n\nCompare with the previous question: £800 grew to £926.10 at $5\\%$ growth but falls to £685.90 at $5\\%$ decay. The loss (£114.10) is smaller than the gain (£126.10) because each year's $5\\%$ is taken from a smaller amount.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q05",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A bike bought for £800 depreciates by $2.5\\%$ per year. Work out its value after 3 years. Give your answer to the nearest penny.",
+  "hint": "$100\\% - 2.5\\% = 97.5\\%$. Write this as a decimal multiplier.",
+  "answer": "£741.49",
+  "solution": "**What changed:** the rate is now $2.5\\%$ instead of $5\\%$; everything else is the same.\n\nLosing $2.5\\%$ leaves $97.5\\%$, so the multiplier is $0.975$ (not $0.25$ or $0.75$):\n$$800 \\times 0.975^3 = 800 \\times 0.926859\\ldots = 741.4875$$\n\nTo the nearest penny: **£741.49**.\n\nHalving the rate does not halve the loss exactly: the loss is £58.51, a little more than half of £114.10.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q06",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "£6000 is invested for 4 years at $3\\%$ per year **compound** interest. Ollie's working to find the final value is shown below.\n\nLine 1: $3\\%$ of $6000 = 180$\n\nLine 2: interest for 4 years $= 180 \\times 4 = 720$\n\nLine 3: final value $= 6000 + 720 = £6720$\n\n(a) Identify Ollie's mistake and explain why it is wrong.\n\n(b) Work out the correct value of the investment after 4 years.",
+  "hint": "Does the interest stay at £180 every year with compound interest?",
+  "answer": "(a) Line 2: Ollie has used simple interest; with compound interest each year's interest is on the new, larger balance. (b) £6753.05",
+  "solution": "(a) Line 1 is fine for the first year, but **Line 2** assumes the interest is £180 every year. That is **simple** interest. With compound interest the interest is added to the balance, so year 2's interest is $3\\%$ of £6180, which is more than £180, and so on.\n\n(b) Multiplier for a $3\\%$ increase: $1.03$.\n$$6000 \\times 1.03^4 = 6000 \\times 1.12550881 = 6753.05286\\ldots$$\n\nFinal value: **£6753.05** (to the nearest penny), which is £33.05 more than Ollie's answer.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q07",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A laptop costs £1200. Its value falls by $20\\%$ each year. Priya works out its value after 3 years.\n\nLine 1: the multiplier for $20\\%$ is $0.2$\n\nLine 2: $1200 \\times 0.2^3 = 1200 \\times 0.008$\n\nLine 3: value after 3 years $= £9.60$\n\n(a) Explain the mistake in Priya's working.\n\n(b) Work out the correct value.",
+  "hint": "If the laptop loses $20\\%$ of its value, what percentage of its value is left?",
+  "answer": "(a) Line 1: $\\times 0.2$ finds the $20\\%$ that is lost, not what remains; the multiplier should be $0.8$. (b) £614.40",
+  "solution": "(a) The error is in **Line 1**. Multiplying by $0.2$ gives $20\\%$ of the value, which is the amount **lost**. The laptop keeps $100\\% - 20\\% = 80\\%$ of its value each year, so the multiplier is $0.8$. A sense check would have helped: a £1200 laptop would not be worth less than £10 after only 3 years when it loses just a fifth of its value each year.\n\n(b)\n$$1200 \\times 0.8^3 = 1200 \\times 0.512 = £614.40$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q08",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The population of a town is 45 000. It is expected to grow by $2\\%$ per year. Jack estimates the population in 5 years' time.\n\nLine 1: multiplier $= 1.02$\n\nLine 2: $45\\,000 \\times 1.02 \\times 5 = 229\\,500$\n\nLine 3: the population will be about 229 500\n\n(a) Which line contains Jack's mistake? Explain the error.\n\n(b) Work out a correct estimate of the population in 5 years' time. Give your answer to the nearest whole number.",
+  "hint": "The multiplier $1.02$ is applied once each year. What is the shorthand for multiplying by $1.02$ five times?",
+  "answer": "(a) Line 2: he multiplied by 5 instead of raising $1.02$ to the power 5. (b) 49 684",
+  "solution": "(a) **Line 2** is wrong. Growing by $2\\%$ for 5 years means multiplying by $1.02$ five times:\n$$1.02 \\times 1.02 \\times 1.02 \\times 1.02 \\times 1.02 = 1.02^5$$\nJack has multiplied by $1.02$ once and then by 5, which makes the population five times bigger. Sense check: $2\\%$ a year cannot make a town five times larger in 5 years.\n\n(b)\n$$45\\,000 \\times 1.02^5 = 45\\,000 \\times 1.1040808\\ldots = 49\\,683.6\\ldots$$\n\nTo the nearest whole number the population is about **49 684**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q09",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A car is worth £18 000. It loses $15\\%$ of its value every year.\n\nAmira says: \"After 7 years the car will have lost $7 \\times 15\\% = 105\\%$ of its value, so it will be worth nothing.\"\n\nIs Amira correct? Explain your answer and work out the value of the car after 7 years.",
+  "hint": "Each year the car loses $15\\%$ of what it is worth **at that time**. Is that the same amount every year?",
+  "answer": "No. The car keeps $85\\%$ of its value each year, so it never reaches zero; after 7 years it is worth £5770.39 (about $32\\%$ of the original).",
+  "solution": "Amira is **not** correct. She has added the percentages as if the car lost $15\\%$ of £18 000 (£2700) every year. In fact each year it loses $15\\%$ of its **current** value, which is getting smaller, so each year's loss is smaller than the year before.\n\nEach year the value is multiplied by $0.85$. Multiplying a positive number by $0.85$ always gives a positive answer, so the value can never reach zero (let alone go below it).\n\nAfter 7 years:\n$$18\\,000 \\times 0.85^7 = 18\\,000 \\times 0.320577\\ldots = 5770.387\\ldots$$\n\nThe car is worth about **£5770.39**, which is about $32.1\\%$ of the original price. The total loss is about $67.9\\%$, not $105\\%$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q10",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "Dev invests £4000 in an account paying $4.5\\%$ per year compound interest. He wants to use the money for a deposit of £5000.\n\nAfter how many whole years will his investment first be worth more than £5000? Show how you decide.",
+  "hint": "Write the value after $n$ years as $4000 \\times 1.045^n$ and try different values of $n$.",
+  "answer": "6 years",
+  "solution": "Value after $n$ years: $4000 \\times 1.045^n$. Try values of $n$:\n\n| $n$ | value (£) |\n|---|---|\n| 4 | $4000 \\times 1.045^4 = 4770.07$ |\n| 5 | $4000 \\times 1.045^5 = 4984.73$ |\n| 6 | $4000 \\times 1.045^6 = 5209.04$ |\n\nAfter 5 years it is £4984.73, still less than £5000. After 6 years it is £5209.04, more than £5000.\n\nSo the investment first exceeds £5000 after **6 years**.\n\n(Using simple interest, £180 a year, would wrongly suggest it takes $1000 \\div 180 \\approx 5.6$ years; the trial method with powers is the correct approach for compound interest.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q11",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 5,
+  "question": "Lucy buys a new car for £22 000.\n\nIn the first year the value of the car decreases by $20\\%$.\n\nIn each year after that, the value decreases by $12\\%$ of its value at the start of that year.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the value of the car after 3 years.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "After how many years will the car first be worth less than half of the price Lucy paid? You must show your working.",
+    "marks": 2
+   }
+  ],
+  "hint": "Use a different multiplier for the first year ($0.8$) and for each later year ($0.88$).",
+  "answer": "(a) £13 629.44 (b) 5 years",
+  "solution": "(a) First year multiplier $0.8$; later years multiplier $0.88$.\n$$22\\,000 \\times 0.8 = 17\\,600 \\quad \\text{(value after 1 year)}$$ **M1** for $22\\,000 \\times 0.8$\n\n$$17\\,600 \\times 0.88^2 \\quad \\text{(two more years)}$$ **M1** for $\\times 0.88^2$ (or $\\times 0.88 \\times 0.88$)\n\n$$= 17\\,600 \\times 0.7744 = £13\\,629.44$$ **A1**\n\n(b) Half the price is £11 000. Value after $n$ years is $17\\,600 \\times 0.88^{n-1}$:\n\nAfter 4 years: $17\\,600 \\times 0.88^3 = £11\\,993.91$ (more than £11 000)\n\nAfter 5 years: $17\\,600 \\times 0.88^4 = £10\\,554.64$ (less than £11 000) **M1** for values for 4 and 5 years compared with £11 000\n\nFirst worth less than half after **5 years**. **A1**",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q12",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Sophie invests £2500 in a savings account that pays $r\\%$ per year compound interest. After 3 years her savings are worth £2812.16. No money was added or withdrawn.\n\nFind the value of $r$.",
+  "hint": "Write $2500 \\times m^3 = 2812.16$, where $m$ is the yearly multiplier. Find $m^3$ first.",
+  "answer": "$r = 4$",
+  "solution": "Let the yearly multiplier be $m = 1 + \\dfrac{r}{100}$. Then\n$$2500 \\times m^3 = 2812.16$$\n\nDivide by 2500:\n$$m^3 = \\frac{2812.16}{2500} = 1.124864$$\n\nTake the cube root:\n$$m = \\sqrt[3]{1.124864} = 1.04$$\n\nSo the interest rate is $r = 4$, that is, $4\\%$ per year.\n\nCheck: $2500 \\times 1.04^3 = 2500 \\times 1.124864 = 2812.16$. ✓\n\n(Dividing the total growth of $12.4864\\%$ by 3 would give about $4.16\\%$, which is wrong because of the compounding.)",
+  "linkedTopicIds": [
+   "num-powers-roots"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay-q13",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The mass, $M$ grams, of a radioactive substance after $t$ days is modelled by\n$$M = a \\times b^t$$\nwhere $a$ and $b$ are constants. The graph of the model passes through the points $(0, 80)$ and $(2, 51.2)$, as shown.\n\n(a) Find the values of $a$ and $b$.\n\n(b) By what percentage does the mass decrease each day?\n\n(c) Use the model to find the mass after 5 days. Give your answer to 3 significant figures.\n\n(d) After how many whole days does the mass first fall below 10 g?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 300\" width=\"360\" height=\"300\"><line x1=\"40\" y1=\"206\" x2=\"330\" y2=\"206\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"40\" y1=\"162\" x2=\"330\" y2=\"162\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"40\" y1=\"118\" x2=\"330\" y2=\"118\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"40\" y1=\"74\" x2=\"330\" y2=\"74\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"40\" y1=\"30\" x2=\"330\" y2=\"30\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"40\" y1=\"250\" x2=\"340\" y2=\"250\" stroke=\"currentColor\"/><line x1=\"40\" y1=\"250\" x2=\"40\" y2=\"15\" stroke=\"currentColor\"/><line x1=\"40\" y1=\"250\" x2=\"40\" y2=\"255\" stroke=\"currentColor\"/><text x=\"40\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">0</text><line x1=\"88\" y1=\"250\" x2=\"88\" y2=\"255\" stroke=\"currentColor\"/><text x=\"88\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"136\" y1=\"250\" x2=\"136\" y2=\"255\" stroke=\"currentColor\"/><text x=\"136\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"184\" y1=\"250\" x2=\"184\" y2=\"255\" stroke=\"currentColor\"/><text x=\"184\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"232\" y1=\"250\" x2=\"232\" y2=\"255\" stroke=\"currentColor\"/><text x=\"232\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"280\" y1=\"250\" x2=\"280\" y2=\"255\" stroke=\"currentColor\"/><text x=\"280\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"328\" y1=\"250\" x2=\"328\" y2=\"255\" stroke=\"currentColor\"/><text x=\"328\" y=\"270\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">6</text><line x1=\"35\" y1=\"206\" x2=\"40\" y2=\"206\" stroke=\"currentColor\"/><text x=\"31\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">20</text><line x1=\"35\" y1=\"162\" x2=\"40\" y2=\"162\" stroke=\"currentColor\"/><text x=\"31\" y=\"166\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">40</text><line x1=\"35\" y1=\"118\" x2=\"40\" y2=\"118\" stroke=\"currentColor\"/><text x=\"31\" y=\"122\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">60</text><line x1=\"35\" y1=\"74\" x2=\"40\" y2=\"74\" stroke=\"currentColor\"/><text x=\"31\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">80</text><line x1=\"35\" y1=\"30\" x2=\"40\" y2=\"30\" stroke=\"currentColor\"/><text x=\"31\" y=\"34\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">100</text><text x=\"345\" y=\"254\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">t</text><text x=\"46\" y=\"16\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">M (g)</text><text x=\"190\" y=\"292\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">time, t (days)</text><polyline points=\"40.0,74.0 52.0,83.5 64.0,92.6 76.0,101.1 88.0,109.2 100.0,116.8 112.0,124.1 124.0,130.9 136.0,137.4 148.0,143.5 160.0,149.3 172.0,154.7 184.0,159.9 196.0,164.8 208.0,169.4 220.0,173.8 232.0,177.9 244.0,181.8 256.0,185.5 268.0,189.0 280.0,192.3 292.0,195.5 304.0,198.4 316.0,201.2 328.0,203.9\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\"/><circle cx=\"40\" cy=\"74\" r=\"3.5\" fill=\"currentColor\"/><text x=\"50\" y=\"68\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(0, 80)</text><circle cx=\"136\" cy=\"137.4\" r=\"3.5\" fill=\"currentColor\"/><text x=\"144\" y=\"128\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">(2, 51.2)</text></svg>",
+  "hint": "Substitute $t = 0$ first: what is $b^0$? Then substitute $t = 2$.",
+  "answer": "(a) $a = 80$, $b = 0.8$ (b) $20\\%$ (c) $26.2$ g (d) 10 days",
+  "solution": "(a) At $t = 0$: $M = a \\times b^0 = a$, so $a = 80$.\n\nAt $t = 2$: $80 \\times b^2 = 51.2$, so $b^2 = 0.64$ and $b = 0.8$ (take the positive root, since $b > 0$ for a decay model).\n\n(b) The multiplier is $0.8 = 1 - 0.2$, so the mass decreases by $20\\%$ each day.\n\n(c)\n$$M = 80 \\times 0.8^5 = 80 \\times 0.32768 = 26.2144$$\nMass after 5 days $\\approx 26.2$ g (3 s.f.).\n\n(d) Continue the powers:\n$$80 \\times 0.8^9 = 10.74 \\text{ g}, \\qquad 80 \\times 0.8^{10} = 8.59 \\text{ g}$$\nThe mass first falls below 10 g after **10 days**.\n\n(The curve never reaches the $t$-axis: like all exponential decay graphs, $M$ gets closer and closer to 0 without reaching it.)",
+  "linkedTopicIds": [
+   "alg-graph-shapes",
+   "alg-linear-exponential-models"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay-q14",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The population of a rural district is 48 000. Since the local factory closed, the population has been falling by $2.5\\%$ per year.\n\nA council report claims: \"If this trend continues, the population will drop below 40 000 within 8 years.\"\n\n(a) Assuming the trend continues, is the report correct? Show your working.\n\n(b) Give one reason why the model might not be reliable over 8 years.",
+  "hint": "Find the multiplier for a $2.5\\%$ decrease and work out the population after 7 and 8 years.",
+  "answer": "(a) Yes: after 7 years about 40 204, after 8 years about 39 199, so it first falls below 40 000 in year 8. (b) For example, the rate of decline may not stay at $2.5\\%$ (new jobs, housing, migration).",
+  "solution": "(a) A $2.5\\%$ decrease gives the multiplier $0.975$. Population after $n$ years: $48\\,000 \\times 0.975^n$.\n\nAfter 7 years: $48\\,000 \\times 0.975^7 = 40\\,204.4\\ldots \\approx 40\\,204$ (still above 40 000)\n\nAfter 8 years: $48\\,000 \\times 0.975^8 = 39\\,199.3\\ldots \\approx 39\\,199$ (below 40 000)\n\nThe population first drops below 40 000 during the 8th year, so the report is **correct** (only just).\n\nNote that the total drop over 8 years is about $18.3\\%$, not $8 \\times 2.5\\% = 20\\%$, because each year's $2.5\\%$ is taken from a smaller population.\n\n(b) Any sensible reason, e.g. the percentage fall is unlikely to stay exactly constant: new businesses could open, house prices could fall and attract new residents, or the people most likely to leave may already have gone.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "rat-compound-growth-decay-q15",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 6,
+  "question": "Kim invested some money in a bond paying $3\\%$ per year compound interest. After 4 years the bond was worth £5627.54.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out how much money Kim invested. Give your answer to the nearest pound.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Kim says, \"Over the 4 years my money increased by $12\\%$.\" Explain why Kim is wrong.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the interest Kim earned in the 4th year only.",
+    "marks": 2
+   }
+  ],
+  "hint": "Original amount $\\times 1.03^4 = 5627.54$. To undo multiplying, divide.",
+  "answer": "(a) £5000 (b) The increase is $1.03^4 - 1 \\approx 12.6\\%$, more than $12\\%$, because interest is earned on interest. (c) £163.91",
+  "solution": "(a) Let the original amount be £$P$. Then\n$$P \\times 1.03^4 = 5627.54$$ **M1** for $1.03^4$ (or $1.12550881$)\n$$P = \\frac{5627.54}{1.03^4} = \\frac{5627.54}{1.12550881} = 4999.996\\ldots$$ **M1** for dividing by $1.03^4$\n\nKim invested **£5000**. **A1**\n\n(Subtracting $12\\%$ from £5627.54 is a common error and scores M0.)\n\n(b) Over 4 years the money is multiplied by $1.03^4 = 1.1255\\ldots$, an increase of about $12.6\\%$, not $4 \\times 3\\% = 12\\%$. The interest in each year is $3\\%$ of a larger amount, so the total increase is more than $12\\%$. **B1**\n\n(c) Value at the start of the 4th year (after 3 years):\n$$5000 \\times 1.03^3 = 5463.635$$ **M1**\n\nInterest in the 4th year: $3\\%$ of this:\n$$0.03 \\times 5463.635 = 163.909\\ldots \\approx £163.91$$ **A1**\n\n(Alternative: $5627.54 - 5463.64 = £163.90$, also accepted, since the difference comes from rounding.)",
+  "linkedTopicIds": [
+   "rat-reverse-percentages"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay-q16",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Lena has £4000 to invest for a long time. She has two options.\n\n**Account A** pays $5\\%$ per year **simple** interest (the interest is paid out of the account each year and is not reinvested; count the total amount received).\n\n**Account B** pays $4\\%$ per year **compound** interest.\n\nLena says, \"Account A will always give me more money, because $5\\%$ is bigger than $4\\%$.\"\n\n(a) Write expressions for the total amount from each account after $n$ years.\n\n(b) Find the smallest whole number of years after which Account B gives more than Account A.\n\n(c) Explain, with reference to the type of growth, why Account B must eventually overtake Account A.",
+  "hint": "Account A grows by the same **amount** each year (linear). Account B grows by the same **percentage** each year (exponential). Compare the two totals for different values of $n$.",
+  "answer": "(a) A: $4000 + 200n$; B: $4000 \\times 1.04^n$ (b) 12 years (c) A grows linearly (+£200 per year) but B grows exponentially; B's yearly increase keeps growing and eventually exceeds £200, so B overtakes A.",
+  "solution": "(a) Account A: interest is $5\\%$ of £4000 $=$ £200 every year, so after $n$ years the total is\n$$A(n) = 4000 + 200n \\quad \\text{(a linear model)}$$\n\nAccount B:\n$$B(n) = 4000 \\times 1.04^n \\quad \\text{(an exponential model)}$$\n\n(b) Compare values:\n\n| $n$ | $A(n)$ (£) | $B(n)$ (£) |\n|---|---|---|\n| 10 | 6000 | 5920.98 |\n| 11 | 6200 | 6157.82 |\n| 12 | 6400 | 6404.13 |\n\nAfter 11 years A is still ahead; after 12 years B is ahead. Smallest whole number: **12 years**.\n\n(c) Account A always increases by the same amount, £200 per year: linear growth. Account B increases by $4\\%$ of its **current** value, so its yearly increase gets larger every year: £160, then £166.40, then £173.06, and so on. Once B's balance is more than £5000, $4\\%$ of it is more than £200, so B gains on A every year. An exponential with multiplier greater than 1 eventually exceeds any linear function, so Lena is wrong for long investments (she is only right for the first 11 years).",
+  "linkedTopicIds": [
+   "alg-linear-exponential-models",
+   "rat-financial-maths"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay-q17",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The price of a painting increases by $x\\%$ in one year and then decreases by $x\\%$ the following year, where $0 < x < 100$.\n\n(a) Prove that the painting always ends up worth less than its original price.\n\n(b) Find the value of $x$ for which the painting ends up worth exactly $91\\%$ of its original price.\n\n(c) Does it matter whether the increase or the decrease happens first? Explain.",
+  "hint": "Write the two multipliers as $\\left(1 + \\dfrac{x}{100}\\right)$ and $\\left(1 - \\dfrac{x}{100}\\right)$ and expand their product.",
+  "answer": "(a) Overall multiplier $1 - \\dfrac{x^2}{10\\,000} < 1$ since $x^2 > 0$. (b) $x = 30$ (c) No: multiplication is commutative, so the overall multiplier is the same.",
+  "solution": "(a) Let the original price be $P$. The overall multiplier is\n$$\\left(1 + \\frac{x}{100}\\right)\\left(1 - \\frac{x}{100}\\right)$$\n\nUsing the difference of two squares:\n$$= 1 - \\left(\\frac{x}{100}\\right)^2 = 1 - \\frac{x^2}{10\\,000}$$\n\nSince $x > 0$, $x^2 > 0$, so $\\dfrac{x^2}{10\\,000} > 0$ and the multiplier is **less than 1**. Also, since $x < 100$, the multiplier is still positive. So the final price $P\\left(1 - \\dfrac{x^2}{10\\,000}\\right)$ is always less than $P$. $\\blacksquare$\n\n(Intuitively: the decrease is $x\\%$ of a **larger** amount than the original, so it removes more than the increase added.)\n\n(b)\n$$1 - \\frac{x^2}{10\\,000} = 0.91 \\implies \\frac{x^2}{10\\,000} = 0.09 \\implies x^2 = 900 \\implies x = 30$$\n(rejecting $x = -30$). Check: $1.3 \\times 0.7 = 0.91$ ✓\n\n(c) No. The final price is $P \\times \\left(1 + \\dfrac{x}{100}\\right) \\times \\left(1 - \\dfrac{x}{100}\\right)$, and multiplication can be done in either order, so the result is the same: e.g. $0.7 \\times 1.3 = 1.3 \\times 0.7 = 0.91$.",
+  "linkedTopicIds": [
+   "alg-algebraic-proof",
+   "alg-factorising-quadratics"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "rat-compound-growth-decay-q18",
+  "topicId": "rat-compound-growth-decay",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "Sam and Tia both start saving on the same day.\n\n* Sam puts £5000 into an account paying $5\\%$ per year compound interest.\n* Tia puts £6000 into an account paying $3\\%$ per year compound interest.\n\nNeither adds nor withdraws any money.\n\n(a) At the end of which year is Sam's account first worth more than Tia's?\n\n(b) Explain why, once Sam's account is worth more, it stays worth more in every later year.",
+  "hint": "Find both values year by year, or compare $5000 \\times 1.05^n$ with $6000 \\times 1.03^n$. Can you rewrite the comparison as a single power?",
+  "answer": "(a) After 10 years (Sam £8144.47, Tia £8063.50) (b) Each year Sam's balance is multiplied by a bigger number (1.05) than Tia's (1.03), so the ratio of Sam's to Tia's balance increases every year.",
+  "solution": "(a) Sam: $5000 \\times 1.05^n$; Tia: $6000 \\times 1.03^n$.\n\nSam is ahead when\n$$5000 \\times 1.05^n > 6000 \\times 1.03^n \\iff \\left(\\frac{1.05}{1.03}\\right)^n > \\frac{6000}{5000} = 1.2$$\n\n$\\dfrac{1.05}{1.03} = 1.019417\\ldots$. Trying powers: $1.019417^9 = 1.189$ (not enough), $1.019417^{10} = 1.212$ (enough).\n\nCheck with actual balances:\n\n| year | Sam (£) | Tia (£) |\n|---|---|---|\n| 9 | 7756.64 | 7828.64 |\n| 10 | 8144.47 | 8063.50 |\n\nSam's account is first worth more at the end of **year 10**.\n\n(b) The ratio Sam $\\div$ Tia is $1.2^{-1} \\times \\left(\\dfrac{1.05}{1.03}\\right)^n$, i.e. $\\dfrac{5}{6}\\left(\\dfrac{1.05}{1.03}\\right)^n$. Since $\\dfrac{1.05}{1.03} > 1$, this ratio gets bigger every year. Once it is greater than 1 (Sam ahead) it can never fall back below 1, so Sam stays ahead for ever.",
+  "linkedTopicIds": [
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
