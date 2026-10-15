@@ -1,0 +1,281 @@
+[
+ {
+  "id": "stat-confidence-intervals-proportions-q01",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "In a random sample of 150 customers of a large online store, 60 said they had used the store's mobile app in the past month.\n\n(a) Calculate $\\hat{p}$ and its standard error.\n\n(b) Calculate the margin of error for a $95\\%$ confidence interval for the proportion of all customers who used the app in the past month.",
+  "hint": "$SE = \\sqrt{\\dfrac{\\hat{p}(1-\\hat{p})}{n}}$, and the margin of error is $z^* \\times SE$ with $z^* = 1.96$ for $95\\%$.",
+  "answer": "(a) $\\hat{p} = 0.40$, $SE = 0.04$ (b) $ME = 1.96(0.04) = 0.0784$",
+  "solution": "(a)\n$$\\hat{p} = \\frac{60}{150} = 0.40$$\n$$SE = \\sqrt{\\frac{0.40(0.60)}{150}} = \\sqrt{0.0016} = 0.04$$\n\n(b) For $95\\%$ confidence, $z^* = 1.96$:\n$$ME = z^* \\times SE = 1.96 \\times 0.04 = 0.0784$$\n\nSo the $95\\%$ interval would be $0.40 \\pm 0.0784$, i.e. from $0.3216$ to $0.4784$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q02",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In a random sample of 400 adults from a large city, 120 say they cycle to work at least once a week.\n\nConstruct a $90\\%$ confidence interval for the proportion of all adults in the city who cycle to work at least once a week. (The conditions have been checked.)",
+  "hint": "$\\hat{p} = \\frac{120}{400}$ and $z^* = 1.645$ for $90\\%$.",
+  "answer": "$(0.262, 0.338)$",
+  "solution": "$\\hat{p} = \\frac{120}{400} = 0.30$\n$$SE = \\sqrt{\\frac{0.30(0.70)}{400}} \\approx 0.02291$$\n$$ME = 1.645 \\times 0.02291 \\approx 0.0377$$\n$$0.30 \\pm 0.0377 = (0.262, 0.338)$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q03",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In a random sample of 400 adults from a large city, 120 say they cycle to work at least once a week.\n\nConstruct a $95\\%$ confidence interval for the proportion of all adults in the city who cycle to work at least once a week.",
+  "hint": "Only the confidence level has changed. Which part of the calculation does that affect?",
+  "answer": "$(0.255, 0.345)$",
+  "solution": "**What changed:** the confidence level, from $90\\%$ to $95\\%$. $\\hat{p} = 0.30$ and $SE \\approx 0.02291$ are unchanged; only $z^*$ changes, from $1.645$ to $1.96$.\n$$ME = 1.96 \\times 0.02291 \\approx 0.0449$$\n$$0.30 \\pm 0.0449 = (0.255, 0.345)$$\n\n**Effect:** the interval is **wider** than the $90\\%$ interval $(0.262, 0.338)$: to be more confident of capturing $p$, we need a bigger net.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q04",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In a random sample of 400 adults from a large city, 120 say they cycle to work at least once a week.\n\nConstruct a $99\\%$ confidence interval for the proportion of all adults in the city who cycle to work at least once a week.",
+  "hint": "Use $z^* = 2.576$.",
+  "answer": "$(0.241, 0.359)$",
+  "solution": "**What changed:** the confidence level, from $95\\%$ to $99\\%$, so $z^* = 2.576$.\n$$ME = 2.576 \\times 0.02291 \\approx 0.0590$$\n$$0.30 \\pm 0.0590 = (0.241, 0.359)$$\n\n**Effect:** the widest interval so far. Margins of error: $0.0377$ ($90\\%$), $0.0449$ ($95\\%$), $0.0590$ ($99\\%$). Higher confidence always means a wider interval for the same data.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q05",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In a random sample of 1,600 adults from a large city, 480 say they cycle to work at least once a week.\n\nConstruct a $99\\%$ confidence interval for the proportion of all adults in the city who cycle to work at least once a week.",
+  "hint": "$\\hat{p}$ is the same as before. How does multiplying $n$ by 4 change the standard error?",
+  "answer": "$(0.270, 0.330)$",
+  "solution": "**What changed:** the sample size, from 400 to 1,600 (with the same $\\hat{p} = \\frac{480}{1600} = 0.30$ and the same $99\\%$ level).\n$$SE = \\sqrt{\\frac{0.30(0.70)}{1600}} \\approx 0.01146$$\n$$ME = 2.576 \\times 0.01146 \\approx 0.0295$$\n$$0.30 \\pm 0.0295 = (0.270, 0.330)$$\n\n**Effect:** multiplying $n$ by 4 halves the standard error and the margin of error ($0.0590 \\to 0.0295$). So a larger sample gives a narrower interval **without** lowering the confidence level.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q06",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "A random sample of students at a large university was asked whether they had a part-time job. A $95\\%$ confidence interval for the proportion of all students at the university with a part-time job is $(0.42, 0.50)$.\n\nFor each statement, say whether it is a correct interpretation. Explain any that are not.\n\n**A:** There is a $95\\%$ probability that the true proportion of students with a part-time job is between $0.42$ and $0.50$.\n\n**B:** We are $95\\%$ confident that the interval from $0.42$ to $0.50$ captures the true proportion of all students at the university who have a part-time job.\n\n**C:** $95\\%$ of students at the university have between a $42\\%$ and $50\\%$ chance of having a part-time job.\n\n**D:** If we took many random samples of the same size and built a $95\\%$ interval from each, about $95\\%$ of those intervals would capture the true proportion.",
+  "hint": "The true proportion $p$ is a fixed number. What is random: $p$, or the interval?",
+  "answer": "B and D are correct. A is wrong: $p$ is fixed, so this interval either contains it or not; the $95\\%$ refers to the method. C is wrong: the interval estimates one population proportion, it says nothing about individual students.",
+  "solution": "**A is incorrect.** The true proportion $p$ is a fixed (unknown) number, and once the interval $(0.42, 0.50)$ has been calculated it either contains $p$ or it doesn't: the probability is 0 or 1, we just don't know which. The $95\\%$ describes how often the **method** works, not this particular interval.\n\n**B is correct.** This is the standard interpretation of the interval, in context.\n\n**C is incorrect.** The interval is an estimate of a single population **proportion**; it does not describe individual students or their chances.\n\n**D is correct.** This is the interpretation of the **confidence level**: $95\\%$ of intervals produced by this method, in repeated random sampling, capture $p$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q07",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A survey of a random sample of 500 voters produced the $95\\%$ confidence interval $(0.337, 0.423)$ for the proportion of voters who support a new tax.\n\n(a) Find the sample proportion $\\hat{p}$ and the margin of error.\n\n(b) How many of the 500 voters in the sample supported the tax?",
+  "hint": "The interval is $\\hat{p} \\pm ME$, so $\\hat{p}$ is in the middle and $ME$ is half the width.",
+  "answer": "(a) $\\hat{p} = 0.38$, $ME = 0.043$ (b) 190",
+  "solution": "(a) The interval is centered at $\\hat{p}$:\n$$\\hat{p} = \\frac{0.337 + 0.423}{2} = 0.38$$\nThe margin of error is half the width:\n$$ME = \\frac{0.423 - 0.337}{2} = 0.043$$\n\n(b) Number supporting $= 0.38 \\times 500 = 190$.\n\n(Check: $1.96\\sqrt{\\frac{0.38(0.62)}{500}} = 0.0425 \\approx 0.043$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q08",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A school district wants to estimate the proportion of parents who support a later school start time, to within $2.5$ percentage points with $99\\%$ confidence. There is no previous estimate. Malik's working is below.\n\n**Line 1:** Use $p^* = 0.5$ and $z^* = 2.576$.\n\n**Line 2:** $2.576\\sqrt{\\dfrac{0.5(0.5)}{n}} \\le 0.025$\n\n**Line 3:** $n \\ge \\left(\\dfrac{2.576}{0.025}\\right)^2 (0.25) = 2654.31$\n\n**Line 4:** So the district should survey $n = 2654$ parents.\n\nFind Malik's mistake, explain why it matters, and give the correct sample size.",
+  "hint": "Substitute $n = 2654$ back into the margin of error. Is it at most $0.025$?",
+  "answer": "Line 4: he rounded down. $n = 2654$ gives $ME \\approx 0.025001 > 0.025$; always round up: $n = 2655$.",
+  "solution": "Lines 1–3 are correct: with no prior estimate, $p^* = 0.5$ gives the largest (safest) value of $p^*(1-p^*)$, and $z^* = 2.576$ for $99\\%$.\n\n**The error is in Line 4.** Malik rounded $2654.31$ to the nearest whole number, which here means rounding **down**. The inequality needs $n \\ge 2654.31$, and $2654 < 2654.31$. Check:\n$$2.576\\sqrt{\\frac{0.25}{2654}} \\approx 0.025001 > 0.025$$\nso 2654 parents would give a margin of error slightly **larger** than required.\n\n**Correct answer:** always round a required sample size **up**: $n = 2655$ parents (giving $ME \\approx 0.024997 \\le 0.025$ ✓).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q09",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "In a random sample of 220 adults aged under 30, 132 said they listen to podcasts weekly. In an independent random sample of 200 adults aged 30 or over, 90 said the same. Jada constructs a $95\\%$ confidence interval for the difference in proportions (under 30 minus 30 or over). Her working:\n\n**Line 1:** $\\hat{p}_1 = \\frac{132}{220} = 0.60$, $\\hat{p}_2 = \\frac{90}{200} = 0.45$\n\n**Line 2:** $SE = \\sqrt{\\dfrac{0.60(0.40)}{220}} + \\sqrt{\\dfrac{0.45(0.55)}{200}} = 0.0330 + 0.0352 = 0.0682$\n\n**Line 3:** $0.15 \\pm 1.96(0.0682) = 0.15 \\pm 0.1337 = (0.016, 0.284)$\n\nIdentify the error, explain it, and find the correct interval.",
+  "hint": "For independent random variables, what adds: standard deviations or variances?",
+  "answer": "Line 2: she added the standard errors. The variances add, so $SE = \\sqrt{\\frac{0.60(0.40)}{220} + \\frac{0.45(0.55)}{200}} \\approx 0.0483$. Correct interval: $0.15 \\pm 0.0946 = (0.055, 0.245)$.",
+  "solution": "Line 1 is correct, and the point estimate $0.60 - 0.45 = 0.15$ is correct.\n\n**The error is in Line 2.** For independent samples, the **variances** of $\\hat{p}_1$ and $\\hat{p}_2$ add; the standard errors do not. Jada has added two square roots, which overstates the standard error (because $\\sqrt{a} + \\sqrt{b} > \\sqrt{a + b}$).\n\n**Correct working:**\n$$SE = \\sqrt{\\frac{0.60(0.40)}{220} + \\frac{0.45(0.55)}{200}} = \\sqrt{0.0010909 + 0.0012375} = \\sqrt{0.0023284} \\approx 0.0483$$\n$$0.15 \\pm 1.96(0.0483) = 0.15 \\pm 0.0946 = (0.055, 0.245)$$\n\nWe are $95\\%$ confident that the interval from $0.055$ to $0.245$ captures the true difference (under 30 minus 30 or over) in the proportions who listen to podcasts weekly. Jada's interval was about $40\\%$ too wide.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q10",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A state health department selects a random sample of 850 high school students in the state. Of these, 323 report getting at least 8 hours of sleep on school nights.\n\n(a) Construct and interpret a $95\\%$ confidence interval for the proportion of all high school students in the state who get at least 8 hours of sleep on school nights. Follow the four-step process.\n\n(b) A news article claims that \"fewer than $40\\%$ of the state's high school students get enough sleep.\" Does your interval give convincing evidence for this claim? Explain.",
+  "hint": "State the procedure, check Random, 10% and Large Counts, compute $\\hat{p} \\pm z^*SE$, and conclude in context. For (b), is $0.40$ inside your interval?",
+  "answer": "(a) $(0.347, 0.413)$. We are $95\\%$ confident that the interval from $0.347$ to $0.413$ captures the true proportion of all high school students in the state who get at least 8 hours of sleep on school nights. (b) No: $0.40$ is inside the interval, so $40\\%$ or more is still plausible.",
+  "solution": "(a) **State:** $p$ = the true proportion of all high school students in the state who get at least 8 hours of sleep on school nights. $95\\%$ confidence.\n\n**Plan:** one-sample $z$-interval for $p$.\n* Random: random sample of students ✓\n* 10%: 850 is less than $10\\%$ of all high school students in the state (more than 8,500) ✓\n* Large Counts: $323 \\ge 10$ successes and $850 - 323 = 527 \\ge 10$ failures ✓\n\n**Do:** $\\hat{p} = \\frac{323}{850} = 0.38$\n$$SE = \\sqrt{\\frac{0.38(0.62)}{850}} \\approx 0.01665, \\quad ME = 1.96(0.01665) \\approx 0.0326$$\n$$0.38 \\pm 0.0326 = (0.347, 0.413)$$\n\n**Conclude:** we are $95\\%$ confident that the interval from $0.347$ to $0.413$ captures the true proportion of all high school students in the state who get at least 8 hours of sleep on school nights.\n\n(b) No. The interval contains $0.40$ (and values slightly above it, up to $0.413$), so a true proportion of $40\\%$ or a bit more is plausible. The data do not give convincing evidence that **fewer** than $40\\%$ get enough sleep, even though $\\hat{p} = 0.38$ is below $0.40$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q11",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "A public health researcher wants to estimate the proportion of adults in a large county who smoke, with a margin of error of at most $2$ percentage points at $95\\%$ confidence. A study two years ago estimated the proportion to be about $18\\%$.\n\n(a) Find the minimum sample size using the previous estimate.\n\n(b) Find the minimum sample size if no previous estimate were used, and explain why this sample size is \"safe\" whatever the true proportion is.\n\n(c) Give one reason why the researcher might choose the larger sample size anyway.",
+  "hint": "Solve $1.96\\sqrt{\\dfrac{p^*(1-p^*)}{n}} \\le 0.02$ for $n$, then round up. For (b) use $p^* = 0.5$.",
+  "answer": "(a) $n = 1418$ (b) $n = 2401$; $p^*(1-p^*)$ is largest at $p^* = 0.5$, so this $n$ gives $ME \\le 0.02$ for any $p$. (c) The smoking rate may have changed since the old study; if it is now closer to 0.5, $n = 1418$ would give a margin of error above $0.02$.",
+  "solution": "(a) With $p^* = 0.18$:\n$$1.96\\sqrt{\\frac{0.18(0.82)}{n}} \\le 0.02 \\iff n \\ge \\frac{1.96^2(0.18)(0.82)}{0.02^2} = \\frac{0.56704}{0.0004} = 1417.55$$\nRound **up**: $n = 1418$.\n\n(b) With $p^* = 0.5$:\n$$n \\ge \\frac{1.96^2(0.25)}{0.0004} = 2401$$\nso $n = 2401$ (this one comes out exactly). The margin of error depends on $\\hat{p}(1-\\hat{p})$, which has its maximum value $0.25$ when $\\hat{p} = 0.5$. Using $0.5$ plans for the worst case, so whatever the sample proportion turns out to be, the margin of error will be at most $0.02$.\n\n(c) The previous estimate is two years old and is itself only an estimate. If the true proportion is now further from $0$ (closer to $0.5$) than $0.18$, the smaller sample would produce a margin of error above 2 percentage points. (Cost is the trade-off: 2401 surveys is about $70\\%$ more than 1418.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q12",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 7,
+  "question": "Researchers recruited 355 adult smokers who wanted to quit. They were randomly assigned to two groups. The 180 people in Group 1 received a nicotine patch plus a coaching smartphone app; the 175 people in Group 2 received the nicotine patch only. After six months, 63 people in Group 1 and 42 people in Group 2 had not smoked for at least 30 days.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Construct and interpret a $95\\%$ confidence interval for the difference in the true proportions of smokers like these who would quit with the patch plus app and with the patch only. Identify the procedure, check conditions, compute, and conclude in context.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Based on your interval, is there convincing evidence that adding the app increases the quit rate? Justify your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Explain what is meant by $95\\%$ confidence in this context.",
+    "marks": 1
+   }
+  ],
+  "hint": "Use $(\\hat{p}_1 - \\hat{p}_2) \\pm z^*\\sqrt{\\dfrac{\\hat{p}_1(1-\\hat{p}_1)}{n_1} + \\dfrac{\\hat{p}_2(1-\\hat{p}_2)}{n_2}}$. For random assignment, the \"Random\" condition is about the assignment, and the 10% condition is not needed.",
+  "answer": "(a) Two-sample $z$-interval for $p_1 - p_2$: $0.11 \\pm 0.094 = (0.016, 0.204)$. We are $95\\%$ confident that the interval from $0.016$ to $0.204$ captures the true difference in quit rates (patch plus app minus patch only). (b) Yes: every value in the interval is positive (0 is not included), so the data give convincing evidence that adding the app increases the quit rate. (c) If the experiment were repeated many times with new random assignments and a $95\\%$ interval built each time, about $95\\%$ of the intervals would capture the true difference in quit rates.",
+  "solution": "(a) **Procedure:** two-sample $z$-interval for $p_1 - p_2$, where $p_1$, $p_2$ are the true quit rates for smokers like these with the patch plus app and with the patch only. **1 pt**\n\n**Conditions:** Random: subjects were randomly assigned to treatments ✓. Large Counts: $63$, $117$, $42$, $133$ are all at least 10 ✓. (The 10% condition is not needed as there was no sampling from a population.) **1 pt**\n\n**Compute:** $\\hat{p}_1 = \\frac{63}{180} = 0.35$, $\\hat{p}_2 = \\frac{42}{175} = 0.24$.\n$$SE = \\sqrt{\\frac{0.35(0.65)}{180} + \\frac{0.24(0.76)}{175}} = \\sqrt{0.0012639 + 0.0010423} \\approx 0.0480$$\n$$0.11 \\pm 1.96(0.0480) = 0.11 \\pm 0.0941 = (0.016, 0.204) \\quad \\textbf{1 pt}$$\n\n**Conclude:** we are $95\\%$ confident that the interval from $0.016$ to $0.204$ captures the true difference in the proportions of smokers like these who would quit (patch plus app minus patch only). **1 pt**\n\n(b) Yes. All values in the interval are **positive**, so 0 (no difference) is not a plausible value. **1 pt** Because the treatments were randomly assigned, this is convincing evidence that adding the app **causes** an increase in the quit rate, by somewhere between about 1.6 and 20.4 percentage points, for smokers like these volunteers. **1 pt**\n\n(c) If we repeated this experiment many times, each time randomly assigning the subjects and constructing a $95\\%$ interval in this way, about $95\\%$ of the resulting intervals would capture the true difference $p_1 - p_2$. **1 pt** (It does **not** mean there is a $95\\%$ probability that $p_1 - p_2$ is in $(0.016, 0.204)$.)",
+  "linkedTopicIds": [
+   "stat-experimental-design"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q13",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A transit authority wants to compare support for a new bus route in two neighboring towns. In a random sample of 500 residents of Town A, 248 support the route. In an independent random sample of 400 residents of Town B, 212 support it. Each town has more than 20,000 residents.\n\n(a) Construct a $90\\%$ confidence interval for $p_A - p_B$, the difference in the proportions of all residents who support the route. Show that the conditions are met.\n\n(b) A local councilor says: \"The sample shows Town B is more supportive than Town A.\" Use your interval to comment on this claim.",
+  "hint": "Compute $\\hat{p}_A$ and $\\hat{p}_B$ first. Then check whether 0 is a plausible value for the difference.",
+  "answer": "(a) $-0.034 \\pm 0.055 = (-0.089, 0.021)$ (b) The interval contains 0, so it is plausible that support is the same in both towns; the data do not give convincing evidence that Town B is more supportive, even though $\\hat{p}_B > \\hat{p}_A$ in the samples.",
+  "solution": "(a) $\\hat{p}_A = \\frac{248}{500} = 0.496$, $\\hat{p}_B = \\frac{212}{400} = 0.53$.\n\n**Conditions:** independent random samples ✓; 10%: $500 < 2000$ and $400 < 2000$ (each town has more than 20,000 residents) ✓; Large Counts: $248, 252, 212, 188$ all $\\ge 10$ ✓.\n\nTwo-sample $z$-interval, $z^* = 1.645$:\n$$SE = \\sqrt{\\frac{0.496(0.504)}{500} + \\frac{0.53(0.47)}{400}} = \\sqrt{0.00049997 + 0.00062275} \\approx 0.03351$$\n$$(0.496 - 0.53) \\pm 1.645(0.03351) = -0.034 \\pm 0.0551 = (-0.089, 0.021)$$\n\nWe are $90\\%$ confident that the interval from $-0.089$ to $0.021$ captures the true difference (A minus B) in the proportions of residents who support the route.\n\n(b) The interval includes both negative and positive values, and in particular **0**. So \"no difference\" is a plausible value, as is Town A being slightly more supportive. The samples do show $\\hat{p}_B > \\hat{p}_A$, but a difference of $0.034$ is well within what sampling variability could produce. There is not convincing evidence that Town B is more supportive.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q14",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "From one random sample of 600 voters, in which exactly half support a ballot measure, a student computes two confidence intervals for $p$:\n$$\\text{Interval I: } (0.447, 0.553) \\qquad \\text{Interval II: } (0.466, 0.534)$$\nOne is a $90\\%$ interval and the other is a $99\\%$ interval.\n\n(a) Jamal says: \"Interval II must be the $99\\%$ interval, because it is narrower and so more precise, and a $99\\%$ interval is more accurate.\" Is Jamal correct? Explain.\n\n(b) The student also reports the interval $(0.47, 0.53)$ from the same data. Find its confidence level.\n\n(c) Explain how the student could obtain a $99\\%$ interval as narrow as Interval II.",
+  "hint": "All intervals are $0.5 \\pm z^* \\times SE$ with the same $SE$. Find $SE$, then $z^* = \\dfrac{ME}{SE}$.",
+  "answer": "(a) No: higher confidence requires a larger $z^*$, so the $99\\%$ interval is the wider one, Interval I; II is the $90\\%$ interval. (b) $z^* \\approx 1.47$, about $86\\%$ confidence. (c) Increase the sample size (to about $2.45$ times as large, $n \\approx 1470$).",
+  "solution": "(a) Jamal is **not** correct. Both intervals are $0.5 \\pm z^* SE$ with the same $SE = \\sqrt{\\frac{0.5(0.5)}{600}} \\approx 0.02041$. A $99\\%$ interval uses $z^* = 2.576$ and a $90\\%$ interval uses $z^* = 1.645$, so the $99\\%$ interval must be **wider**:\n* $1.645(0.02041) = 0.0336$: Interval II, $(0.466, 0.534)$, is the $90\\%$ interval.\n* $2.576(0.02041) = 0.0526$: Interval I, $(0.447, 0.553)$, is the $99\\%$ interval.\n\nTo be more confident of capturing $p$ we must give a wider range of plausible values. Narrower means more precise, but less confident.\n\n(b) $ME = 0.03$, so $z^* = \\frac{0.03}{0.02041} \\approx 1.470$. The confidence level is the central area under the standard normal curve between $-1.470$ and $1.470$:\n$$C = P(-1.470 < Z < 1.470) \\approx 0.858$$\ni.e. about $86\\%$.\n\n(c) Increase $n$. A $99\\%$ interval with $ME = 0.0336$ needs $2.576\\sqrt{\\frac{0.25}{n}} \\le 0.0336$, i.e. $n \\ge \\left(\\frac{2.576}{0.0336}\\right)^2(0.25) \\approx 1469.5$, so about 1470 voters. (Equivalently, $n$ must be multiplied by $\\left(\\frac{2.576}{1.645}\\right)^2 \\approx 2.45$.)",
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q15",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A teacher uses software to simulate 20 random samples of size 200 from a population in which the true proportion is $p = 0.6$, and constructs a $95\\%$ confidence interval from each sample. The intervals are shown in the diagram; 2 of them (highlighted) do not capture $p$.\n\n(a) A student says: \"The method must be faulty, because $95\\%$ of 20 is 19, so exactly 1 interval should miss.\" Let $X$ be the number of the 20 intervals that fail to capture $p$. State the distribution of $X$, and find $P(X \\ge 2)$.\n\n(b) Use your answer to comment on the student's claim.\n\n(c) Find the probability that all 20 intervals capture $p$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 290\" width=\"340\" height=\"290\"><line x1=\"40\" y1=\"250\" x2=\"324\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"40.0\" y1=\"250\" x2=\"40.0\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"40.0\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.40</text><line x1=\"111.0\" y1=\"250\" x2=\"111.0\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"111.0\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.50</text><line x1=\"182.0\" y1=\"250\" x2=\"182.0\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"182.0\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.60</text><line x1=\"253.0\" y1=\"250\" x2=\"253.0\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"253.0\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.70</text><line x1=\"324.0\" y1=\"250\" x2=\"324.0\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"324.0\" y=\"268\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0.80</text><line x1=\"182.0\" y1=\"12\" x2=\"182.0\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><text x=\"187.0\" y=\"22\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">p = 0.6</text><text x=\"182.0\" y=\"284\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">95% confidence intervals for p</text><line x1=\"122.9\" y1=\"23.3\" x2=\"219.8\" y2=\"23.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"171.3\" cy=\"23.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"104.8\" y1=\"34.7\" x2=\"202.4\" y2=\"34.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"153.6\" cy=\"34.7\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"119.2\" y1=\"46.0\" x2=\"216.4\" y2=\"46.0\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"167.8\" cy=\"46.0\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"141.1\" y1=\"57.3\" x2=\"237.1\" y2=\"57.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"189.1\" cy=\"57.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"170.6\" y1=\"68.7\" x2=\"264.4\" y2=\"68.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"217.5\" cy=\"68.7\" r=\"2.2\" fill=\"currentColor\"/><text x=\"32\" y=\"72.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"126.5\" y1=\"80.0\" x2=\"223.3\" y2=\"80.0\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"174.9\" cy=\"80.0\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"126.5\" y1=\"91.3\" x2=\"223.3\" y2=\"91.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"174.9\" cy=\"91.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"83.2\" y1=\"102.7\" x2=\"181.4\" y2=\"102.7\" stroke=\"#3b82f6\" stroke-width=\"2.6\"/><circle cx=\"132.3\" cy=\"102.7\" r=\"2.2\" fill=\"#3b82f6\"/><line x1=\"108.4\" y1=\"114.0\" x2=\"205.9\" y2=\"114.0\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"157.1\" cy=\"114.0\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"126.5\" y1=\"125.3\" x2=\"223.3\" y2=\"125.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"174.9\" cy=\"125.3\" r=\"2.2\" fill=\"currentColor\"/><text x=\"32\" y=\"129.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"181.7\" y1=\"136.7\" x2=\"274.6\" y2=\"136.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"228.2\" cy=\"136.7\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"148.4\" y1=\"148.0\" x2=\"244.0\" y2=\"148.0\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"196.2\" cy=\"148.0\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"122.9\" y1=\"159.3\" x2=\"219.8\" y2=\"159.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"171.3\" cy=\"159.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"130.1\" y1=\"170.7\" x2=\"226.8\" y2=\"170.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"178.4\" cy=\"170.7\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"155.8\" y1=\"182.0\" x2=\"250.8\" y2=\"182.0\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"203.3\" cy=\"182.0\" r=\"2.2\" fill=\"currentColor\"/><text x=\"32\" y=\"186.0\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">15</text><line x1=\"148.4\" y1=\"193.3\" x2=\"244.0\" y2=\"193.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"196.2\" cy=\"193.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"115.6\" y1=\"204.7\" x2=\"212.9\" y2=\"204.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"164.2\" cy=\"204.7\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"185.4\" y1=\"216.0\" x2=\"278.0\" y2=\"216.0\" stroke=\"#3b82f6\" stroke-width=\"2.6\"/><circle cx=\"231.7\" cy=\"216.0\" r=\"2.2\" fill=\"#3b82f6\"/><line x1=\"178.0\" y1=\"227.3\" x2=\"271.2\" y2=\"227.3\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"224.6\" cy=\"227.3\" r=\"2.2\" fill=\"currentColor\"/><line x1=\"126.5\" y1=\"238.7\" x2=\"223.3\" y2=\"238.7\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"174.9\" cy=\"238.7\" r=\"2.2\" fill=\"currentColor\"/><text x=\"32\" y=\"242.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20</text></svg>",
+  "hint": "Each independently simulated interval misses $p$ with probability $0.05$.",
+  "answer": "(a) $X \\sim B(20, 0.05)$; $P(X \\ge 2) \\approx 0.264$ (b) Two misses is quite likely (about $26\\%$ of the time), so there is no evidence the method is faulty; $95\\%$ is a long-run capture rate. (c) $0.95^{20} \\approx 0.358$",
+  "solution": "(a) Each interval is built from an independent random sample, and a $95\\%$ interval method captures $p$ with probability $0.95$, so it misses with probability $0.05$. With 20 independent intervals:\n$$X \\sim B(20, 0.05)$$\n$$P(X \\ge 2) = 1 - P(X = 0) - P(X = 1) = 1 - 0.95^{20} - 20(0.05)(0.95)^{19}$$\n$$= 1 - 0.3585 - 0.3774 = 0.264$$\n\n(b) The student is wrong. The confidence level describes the **long-run** proportion of intervals that capture $p$; in any batch of 20 the number that miss varies. $E(X) = 20(0.05) = 1$, but getting 2 or more misses happens about $26\\%$ of the time, so 2 misses is not at all unusual and gives no evidence that the method is faulty.\n\n(c)\n$$P(X = 0) = 0.95^{20} \\approx 0.358$$\nSo even with a correct method, only about $36\\%$ of batches of 20 intervals would all capture $p$.",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q16",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A market researcher must plan surveys before any data are collected.\n\n(a) By completing the square, show that $\\hat{p}(1 - \\hat{p}) \\le \\dfrac{1}{4}$ for all values of $\\hat{p}$, and state when equality holds.\n\n(b) Hence show that a one-proportion $z$-interval with critical value $z^*$ is guaranteed to have margin of error at most $E$ if\n$$n \\ge \\left(\\frac{z^*}{2E}\\right)^2$$\n\n(c) Find the smallest sample size that guarantees a margin of error of at most 3 percentage points for a $90\\%$ confidence interval for one proportion.\n\n(d) The researcher will instead compare two regions using a two-proportion $z$-interval, with the same sample size $n$ in each region. Find the smallest $n$ that guarantees a margin of error of at most 3 percentage points at $90\\%$ confidence.",
+  "hint": "$\\hat{p} - \\hat{p}^2 = -\\left(\\hat{p}^2 - \\hat{p}\\right)$. For (d), the standard error has two terms, each at most $\\dfrac{1}{4n}$.",
+  "answer": "(a) $\\hat{p}(1-\\hat{p}) = \\frac{1}{4} - \\left(\\hat{p} - \\frac{1}{2}\\right)^2 \\le \\frac{1}{4}$, with equality when $\\hat{p} = \\frac{1}{2}$. (b) shown (c) $n = 752$ (d) $n = 1504$ in each region",
+  "solution": "(a)\n$$\\hat{p}(1-\\hat{p}) = \\hat{p} - \\hat{p}^2 = -\\left(\\hat{p}^2 - \\hat{p}\\right) = -\\left[\\left(\\hat{p} - \\tfrac{1}{2}\\right)^2 - \\tfrac{1}{4}\\right] = \\tfrac{1}{4} - \\left(\\hat{p} - \\tfrac{1}{2}\\right)^2$$\nSince $\\left(\\hat{p} - \\frac{1}{2}\\right)^2 \\ge 0$, we get $\\hat{p}(1-\\hat{p}) \\le \\frac{1}{4}$, with equality exactly when $\\hat{p} = \\frac{1}{2}$.\n\n(b) Using (a),\n$$ME = z^*\\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}} \\le z^*\\sqrt{\\frac{1}{4n}} = \\frac{z^*}{2\\sqrt{n}}$$\nIf $n \\ge \\left(\\frac{z^*}{2E}\\right)^2$ then $\\sqrt{n} \\ge \\frac{z^*}{2E}$, so $\\frac{z^*}{2\\sqrt{n}} \\le E$, and hence $ME \\le E$ whatever $\\hat{p}$ turns out to be. $\\blacksquare$\n\n(c) $z^* = 1.645$, $E = 0.03$:\n$$n \\ge \\left(\\frac{1.645}{0.06}\\right)^2 = 27.4167^2 = 751.67$$\nRound **up**: $n = 752$.\n\n(d) With $n$ in each region and each $\\hat{p}_i(1-\\hat{p}_i) \\le \\frac{1}{4}$:\n$$ME = z^*\\sqrt{\\frac{\\hat{p}_1(1-\\hat{p}_1)}{n} + \\frac{\\hat{p}_2(1-\\hat{p}_2)}{n}} \\le z^*\\sqrt{\\frac{1}{4n} + \\frac{1}{4n}} = z^*\\sqrt{\\frac{1}{2n}}$$\nNeed $1.645\\sqrt{\\frac{1}{2n}} \\le 0.03 \\iff n \\ge \\frac{1}{2}\\left(\\frac{1.645}{0.03}\\right)^2 = 1503.35$.\n\nSo $n = 1504$ in **each** region (twice the one-sample requirement, because the two variances add).",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q17",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A news website reports: \"Candidate Rivera has the support of $52\\%$ of likely voters, with a margin of error of $\\pm 3.1$ percentage points at $95\\%$ confidence. Rivera has a majority!\" The poll was a random sample of likely voters.\n\n(a) Estimate the number of voters in the poll.\n\n(b) Explain whether the poll gives convincing evidence that Rivera has majority support.\n\n(c) Assuming the sample proportion stays at $52\\%$, find the smallest total sample size for which the $95\\%$ confidence interval would lie entirely above $0.5$.",
+  "hint": "Solve $1.96\\sqrt{\\dfrac{0.52(0.48)}{n}} = 0.031$ for $n$. For (c), the lower endpoint $0.52 - ME$ must be greater than $0.50$.",
+  "answer": "(a) about 1,000 voters ($n \\approx 998$) (b) No: the interval $(0.489, 0.551)$ includes $0.5$ and values below it, so a majority is not established. (c) $n = 2398$",
+  "solution": "(a)\n$$1.96\\sqrt{\\frac{0.52(0.48)}{n}} = 0.031 \\iff n = \\frac{1.96^2(0.2496)}{0.031^2} \\approx 997.8$$\nSo the poll had about 1,000 voters. (Check: with $n = 1000$, $ME = 1.96\\sqrt{\\frac{0.2496}{1000}} \\approx 0.0310$ ✓.)\n\n(b) The $95\\%$ interval is $0.52 \\pm 0.031 = (0.489, 0.551)$. It contains $0.5$ and values below $0.5$, so it is plausible that Rivera's true support is $50\\%$ or less. The poll does **not** give convincing evidence of a majority; the headline overstates the result.\n\n(c) We need $0.52 - ME > 0.50$, i.e. $ME < 0.02$:\n$$1.96\\sqrt{\\frac{0.2496}{n}} < 0.02 \\iff n > \\frac{1.96^2(0.2496)}{0.02^2} = 2397.16$$\nRound **up**: $n = 2398$, about 2.4 times the original poll. (With $n = 2397$, $ME \\approx 0.020000\\ldots$ which is just above $0.02$, so the lower endpoint would not quite clear $0.5$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-confidence-intervals-proportions-q18",
+  "topicId": "stat-confidence-intervals-proportions",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "In independent random samples of 500 customers from each of two stores, $56\\%$ of Store 1's customers and $49\\%$ of Store 2's customers rated the service as \"excellent\".\n\n(a) Construct separate $95\\%$ confidence intervals for $p_1$ and $p_2$.\n\n(b) Sofia says: \"The two intervals overlap, so there is no convincing evidence of a difference between the stores.\" Construct a $95\\%$ confidence interval for $p_1 - p_2$ and use it to show that Sofia's reasoning is flawed.\n\n(c) Explain, using the formula for the standard error of $\\hat{p}_1 - \\hat{p}_2$, why two individual intervals can overlap even though the interval for the difference does not contain 0.",
+  "hint": "Overlap happens when $\\hat{p}_1 - \\hat{p}_2 < ME_1 + ME_2$. But the margin of error for the difference uses $\\sqrt{SE_1^2 + SE_2^2}$. Compare $\\sqrt{a^2 + b^2}$ with $a + b$.",
+  "answer": "(a) $p_1$: $(0.516, 0.604)$; $p_2$: $(0.446, 0.534)$ (b) $0.07 \\pm 0.062 = (0.008, 0.132)$, which does not contain 0, so there is convincing evidence of a difference despite the overlap. (c) $ME_{\\text{diff}} = z^*\\sqrt{SE_1^2 + SE_2^2} < z^*(SE_1 + SE_2) = ME_1 + ME_2$, so a difference can exceed $ME_{\\text{diff}}$ while being less than $ME_1 + ME_2$.",
+  "solution": "(a) Store 1: $SE_1 = \\sqrt{\\frac{0.56(0.44)}{500}} \\approx 0.02220$, $ME_1 = 1.96(0.02220) \\approx 0.0435$: $(0.516, 0.604)$.\n\nStore 2: $SE_2 = \\sqrt{\\frac{0.49(0.51)}{500}} \\approx 0.02236$, $ME_2 \\approx 0.0438$: $(0.446, 0.534)$.\n\n(Conditions: random, independent samples; each store has more than 5,000 customers; successes and failures $280, 220, 245, 255$ all $\\ge 10$.) The intervals overlap between $0.516$ and $0.534$.\n\n(b)\n$$SE = \\sqrt{0.02220^2 + 0.02236^2} = \\sqrt{0.0004928 + 0.0004998} \\approx 0.03151$$\n$$0.07 \\pm 1.96(0.03151) = 0.07 \\pm 0.0618 = (0.008, 0.132)$$\nEvery value in this interval is positive, so 0 is not plausible: there **is** convincing evidence (at the $95\\%$ confidence level) that a higher proportion of Store 1's customers rate the service as excellent. Sofia's conclusion is wrong.\n\n(c) The individual intervals overlap whenever $\\hat{p}_1 - \\hat{p}_2 < ME_1 + ME_2 = z^*(SE_1 + SE_2)$, i.e. here $0.07 < 0.0873$.\n\nBut the margin of error for the difference is\n$$z^*\\sqrt{SE_1^2 + SE_2^2} < z^*(SE_1 + SE_2)$$\nbecause $(SE_1 + SE_2)^2 = SE_1^2 + SE_2^2 + 2SE_1SE_2 > SE_1^2 + SE_2^2$. Variances add, not standard errors. Here $0.0618 < 0.0873$, and the observed difference $0.07$ lies between them: big enough to be significant, but not big enough to separate the two individual intervals. Checking overlap effectively uses the wrong (too large) standard error.",
+  "linkedTopicIds": [
+   "prob-combining-random-variables"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ }
+]

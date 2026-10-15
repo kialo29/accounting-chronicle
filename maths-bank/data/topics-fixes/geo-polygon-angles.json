@@ -1,0 +1,25 @@
+{
+ "id": "geo-polygon-angles",
+ "misconceptions": [
+  {
+   "id": "m1",
+   "text": "Splits the polygon into $n$ triangles instead of $n - 2$, e.g. hexagon angle sum $= 6 \\times 180^\\circ = 1080^\\circ$.",
+   "correction": "Triangles drawn from one vertex: a hexagon gives 4 triangles, so the sum is $(6 - 2) \\times 180^\\circ = 720^\\circ$. Check with a square: $(4 - 2) \\times 180^\\circ = 360^\\circ$, which is correct."
+  },
+  {
+   "id": "m2",
+   "text": "Gives $\\frac{360^\\circ}{n}$ as the interior angle of a regular polygon, e.g. says each interior angle of a regular octagon is $360^\\circ \\div 8 = 45^\\circ$.",
+   "correction": "$\\frac{360^\\circ}{n}$ is the exterior angle. Interior $= 180^\\circ - 45^\\circ = 135^\\circ$. Each interior angle of a regular polygon with 5 or more sides is obtuse."
+  },
+  {
+   "id": "m3",
+   "text": "Finds the number of sides by dividing $360^\\circ$ by the interior angle, e.g. interior angle $140^\\circ$ gives $n = 360 \\div 140 \\approx 2.6$.",
+   "correction": "Divide $360^\\circ$ by the exterior angle: exterior $= 180^\\circ - 140^\\circ = 40^\\circ$, so $n = 360 \\div 40 = 9$."
+  },
+  {
+   "id": "m4",
+   "text": "Uses the regular-polygon method on an irregular polygon, e.g. finds a missing angle of an irregular hexagon as $720^\\circ \\div 6 = 120^\\circ$.",
+   "correction": "Only a regular polygon has equal angles. For an irregular polygon, subtract the known angles from the angle sum: missing angle $= 720^\\circ - (\\text{sum of the other five})$."
+  }
+ ]
+}

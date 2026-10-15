@@ -1,0 +1,292 @@
+[
+ {
+  "id": "calc-riemann-sums-q01",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Use a **left** Riemann sum with 4 subintervals of equal width to estimate $\\displaystyle\\int_0^4 x^2\\,dx$.",
+  "hint": "Find $\\Delta x = \\frac{4 - 0}{4}$. A left sum uses the height at the **left** end of each of the 4 subintervals, so it uses 4 heights, not 5.",
+  "answer": "$L_4 = 14$",
+  "solution": "$\\Delta x = \\frac{4 - 0}{4} = 1$, so the subintervals are $[0, 1]$, $[1, 2]$, $[2, 3]$, $[3, 4]$.\n\nThe left endpoints are $x = 0, 1, 2, 3$ (the point $x = 4$ is **not** used: 4 rectangles need only 4 heights).\n\n$$L_4 = 1\\times\\left(0^2 + 1^2 + 2^2 + 3^2\\right) = 0 + 1 + 4 + 9 = 14$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q02",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Use a **right** Riemann sum with 4 subintervals of equal width to estimate $\\displaystyle\\int_0^4 x^2\\,dx$.",
+  "hint": "Same subintervals as for the left sum. Which end of each subinterval do you use now?",
+  "answer": "$R_4 = 30$",
+  "solution": "**What changed:** only the endpoint used for each height (right instead of left).\n\n$\\Delta x = 1$ again. The right endpoints are $x = 1, 2, 3, 4$ (the point $x = 0$ is not used).\n\n$$R_4 = 1\\times\\left(1^2 + 2^2 + 3^2 + 4^2\\right) = 1 + 4 + 9 + 16 = 30$$\n\nSince $x^2$ is increasing on $[0, 4]$, each right rectangle reaches above the curve, so $30$ is an overestimate (and the left sum, $14$, an underestimate).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q03",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use a **midpoint** Riemann sum with 4 subintervals of equal width to estimate $\\displaystyle\\int_0^4 x^2\\,dx$. Compare your answer with the exact value of the integral.",
+  "hint": "The midpoints of $[0, 1]$, $[1, 2]$, … are $0.5$, $1.5$, …",
+  "answer": "$M_4 = 21$; exact value $\\frac{64}{3} \\approx 21.33$",
+  "solution": "**What changed:** the height is now taken at the middle of each subinterval.\n\nMidpoints: $x = 0.5, 1.5, 2.5, 3.5$, with $\\Delta x = 1$:\n$$M_4 = 1\\times\\left(0.25 + 2.25 + 6.25 + 12.25\\right) = 21$$\n\nExact value:\n$$\\int_0^4 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^4 = \\frac{64}{3} \\approx 21.33$$\n\nThe midpoint sum ($21$) is far closer than the left sum ($14$) or the right sum ($30$) with the same number of rectangles, because each rectangle is too low on one half of its subinterval and too high on the other, and these errors largely cancel.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q04",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 1,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><line x1=\"34\" y1=\"220\" x2=\"34\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"74.6\" y1=\"220\" x2=\"74.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"115.2\" y1=\"220\" x2=\"115.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"155.8\" y1=\"220\" x2=\"155.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"196.4\" y1=\"220\" x2=\"196.4\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"237\" y1=\"220\" x2=\"237\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"277.6\" y1=\"220\" x2=\"277.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"220\" x2=\"302\" y2=\"220\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"185.7\" x2=\"302\" y2=\"185.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"151.3\" x2=\"302\" y2=\"151.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"117\" x2=\"302\" y2=\"117\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"82.7\" x2=\"302\" y2=\"82.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"48.3\" x2=\"302\" y2=\"48.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"14\" x2=\"302\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"34\" y1=\"220\" x2=\"308\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"220\" x2=\"34\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M308,220 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M34,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"308\" y=\"213\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"41\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"74.6\" y1=\"217\" x2=\"74.6\" y2=\"223\" stroke=\"currentColor\"/><text x=\"74.6\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"115.2\" y1=\"217\" x2=\"115.2\" y2=\"223\" stroke=\"currentColor\"/><text x=\"115.2\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"155.8\" y1=\"217\" x2=\"155.8\" y2=\"223\" stroke=\"currentColor\"/><text x=\"155.8\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"196.4\" y1=\"217\" x2=\"196.4\" y2=\"223\" stroke=\"currentColor\"/><text x=\"196.4\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"237\" y1=\"217\" x2=\"237\" y2=\"223\" stroke=\"currentColor\"/><text x=\"237\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"277.6\" y1=\"217\" x2=\"277.6\" y2=\"223\" stroke=\"currentColor\"/><text x=\"277.6\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"31\" y1=\"185.7\" x2=\"37\" y2=\"185.7\" stroke=\"currentColor\"/><text x=\"28\" y=\"189.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"31\" y1=\"151.3\" x2=\"37\" y2=\"151.3\" stroke=\"currentColor\"/><text x=\"28\" y=\"155.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"31\" y1=\"117\" x2=\"37\" y2=\"117\" stroke=\"currentColor\"/><text x=\"28\" y=\"121\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"31\" y1=\"82.7\" x2=\"37\" y2=\"82.7\" stroke=\"currentColor\"/><text x=\"28\" y=\"86.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"31\" y1=\"48.3\" x2=\"37\" y2=\"48.3\" stroke=\"currentColor\"/><text x=\"28\" y=\"52.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"28\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M34,185.7 L34.9,184.2 L35.7,182.8 L36.6,181.4 L37.4,180 L38.3,178.6 L39.1,177.2 L40,175.8 L40.8,174.4 L41.7,173 L42.5,171.6 L43.4,170.3 L44.2,168.9 L45.1,167.6 L45.9,166.2 L46.8,164.9 L47.6,163.6 L48.5,162.2 L49.3,160.9 L50.2,159.6 L51.1,158.3 L51.9,157.1 L52.8,155.8 L53.6,154.5 L54.5,153.2 L55.3,152 L56.2,150.7 L57,149.5 L57.9,148.3 L58.7,147 L59.6,145.8 L60.4,144.6 L61.3,143.4 L62.1,142.2 L63,141 L63.8,139.8 L64.7,138.7 L65.6,137.5 L66.4,136.3 L67.3,135.2 L68.1,134 L69,132.9 L69.8,131.8 L70.7,130.7 L71.5,129.5 L72.4,128.4 L73.2,127.3 L74.1,126.3 L74.9,125.2 L75.8,124.1 L76.6,123 L77.5,122 L78.3,120.9 L79.2,119.9 L80,118.8 L80.9,117.8 L81.8,116.8 L82.6,115.8 L83.5,114.8 L84.3,113.8 L85.2,112.8 L86,111.8 L86.9,110.8 L87.7,109.8 L88.6,108.9 L89.4,107.9 L90.3,107 L91.1,106 L92,105.1 L92.8,104.2 L93.7,103.3 L94.5,102.4 L95.4,101.5 L96.2,100.6 L97.1,99.7 L98,98.8 L98.8,97.9 L99.7,97.1 L100.5,96.2 L101.4,95.4 L102.2,94.5 L103.1,93.7 L103.9,92.9 L104.8,92.1 L105.6,91.2 L106.5,90.4 L107.3,89.7 L108.2,88.9 L109,88.1 L109.9,87.3 L110.7,86.5 L111.6,85.8 L112.5,85 L113.3,84.3 L114.2,83.6 L115,82.8 L115.9,82.1 L116.7,81.4 L117.6,80.7 L118.4,80 L119.3,79.3 L120.1,78.6 L121,78 L121.8,77.3 L122.7,76.6 L123.5,76 L124.4,75.3 L125.2,74.7 L126.1,74.1 L126.9,73.5 L127.8,72.8 L128.7,72.2 L129.5,71.6 L130.4,71.1 L131.2,70.5 L132.1,69.9 L132.9,69.3 L133.8,68.8 L134.6,68.2 L135.5,67.7 L136.3,67.1 L137.2,66.6 L138,66.1 L138.9,65.6 L139.7,65.1 L140.6,64.6 L141.4,64.1 L142.3,63.6 L143.1,63.1 L144,62.6 L144.9,62.2 L145.7,61.7 L146.6,61.3 L147.4,60.8 L148.3,60.4 L149.1,60 L150,59.6 L150.8,59.2 L151.7,58.8 L152.5,58.4 L153.4,58 L154.2,57.6 L155.1,57.2 L155.9,56.9 L156.8,56.5 L157.6,56.2 L158.5,55.8 L159.4,55.5 L160.2,55.2 L161.1,54.8 L161.9,54.5 L162.8,54.2 L163.6,53.9 L164.5,53.6 L165.3,53.4 L166.2,53.1 L167,52.8 L167.9,52.6 L168.7,52.3 L169.6,52.1 L170.4,51.8 L171.3,51.6 L172.1,51.4 L173,51.2 L173.8,51 L174.7,50.8 L175.6,50.6 L176.4,50.4 L177.3,50.2 L178.1,50.1 L179,49.9 L179.8,49.8 L180.7,49.6 L181.5,49.5 L182.4,49.4 L183.2,49.2 L184.1,49.1 L184.9,49 L185.8,48.9 L186.6,48.8 L187.5,48.7 L188.3,48.7 L189.2,48.6 L190,48.5 L190.9,48.5 L191.8,48.4 L192.6,48.4 L193.5,48.4 L194.3,48.4 L195.2,48.3 L196,48.3 L196.9,48.3 L197.7,48.3 L198.6,48.4 L199.4,48.4 L200.3,48.4 L201.1,48.4 L202,48.5 L202.8,48.5 L203.7,48.6 L204.5,48.7 L205.4,48.8 L206.3,48.8 L207.1,48.9 L208,49 L208.8,49.1 L209.7,49.2 L210.5,49.4 L211.4,49.5 L212.2,49.6 L213.1,49.8 L213.9,49.9 L214.8,50.1 L215.6,50.3 L216.5,50.4 L217.3,50.6 L218.2,50.8 L219,51 L219.9,51.2 L220.7,51.4 L221.6,51.6 L222.5,51.9 L223.3,52.1 L224.2,52.3 L225,52.6 L225.9,52.8 L226.7,53.1 L227.6,53.4 L228.4,53.7 L229.3,54 L230.1,54.2 L231,54.5 L231.8,54.9 L232.7,55.2 L233.5,55.5 L234.4,55.8 L235.2,56.2 L236.1,56.5 L236.9,56.9 L237.8,57.2 L238.7,57.6 L239.5,58 L240.4,58.4 L241.2,58.8 L242.1,59.2 L242.9,59.6 L243.8,60 L244.6,60.4 L245.5,60.9 L246.3,61.3 L247.2,61.7 L248,62.2 L248.9,62.7 L249.7,63.1 L250.6,63.6 L251.4,64.1 L252.3,64.6 L253.2,65.1 L254,65.6 L254.9,66.1 L255.7,66.6 L256.6,67.2 L257.4,67.7 L258.3,68.2 L259.1,68.8 L260,69.4 L260.8,69.9 L261.7,70.5 L262.5,71.1 L263.4,71.7 L264.2,72.3 L265.1,72.9 L265.9,73.5 L266.8,74.1 L267.6,74.7 L268.5,75.4 L269.4,76 L270.2,76.7 L271.1,77.3 L271.9,78 L272.8,78.7 L273.6,79.4 L274.5,80 L275.3,80.7 L276.2,81.4 L277,82.2 L277.9,82.9 L278.7,83.6 L279.6,84.3 L280.4,85.1 L281.3,85.8 L282.1,86.6 L283,87.3 L283.8,88.1 L284.7,88.9 L285.6,89.7 L286.4,90.5 L287.3,91.3 L288.1,92.1 L289,92.9 L289.8,93.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"34\" cy=\"185.7\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"115.2\" cy=\"82.7\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"196.4\" cy=\"48.3\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"277.6\" cy=\"82.7\" r=\"3.2\" fill=\"currentColor\"/><text x=\"249.3\" y=\"42.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = f(x)</text></svg>",
+  "question": "The graph of $y = f(x)$ for $0 \\le x \\le 6$ is shown. The curve passes through the marked points $(0, 1)$, $(2, 4)$, $(4, 5)$ and $(6, 4)$.\n\nUsing 3 subintervals of width 2, find\n(a) the left Riemann sum,\n(b) the right Riemann sum\nfor $\\displaystyle\\int_0^6 f(x)\\,dx$.",
+  "hint": "The subintervals are $[0, 2]$, $[2, 4]$ and $[4, 6]$. Read the heights at the marked points.",
+  "answer": "(a) $20$ (b) $26$",
+  "solution": "Each rectangle has width $2$.\n\n**(a)** Left endpoints $x = 0, 2, 4$ give heights $1, 4, 5$:\n$$L_3 = 2(1 + 4 + 5) = 20$$\n\n**(b)** Right endpoints $x = 2, 4, 6$ give heights $4, 5, 4$:\n$$R_3 = 2(4 + 5 + 4) = 26$$\n\n(Here $f$ increases then decreases, so neither sum is guaranteed to be an under- or overestimate. In fact $f(x) = 1 + 2x - \\frac{x^2}{4}$ and the exact value is $24$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q05",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 2,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><path d=\"M34,220 L34,128.4 L92.3,128.4 L92.3,220 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M92.3,220 L92.3,159 L150.5,159 L150.5,220 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M150.5,220 L150.5,174.2 L208.8,174.2 L208.8,220 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M208.8,220 L208.8,183.4 L267,183.4 L267,220 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"34\" y1=\"220\" x2=\"308\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"34\" y1=\"220\" x2=\"34\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M308,220 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M34,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"308\" y=\"213\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"41\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"92.3\" y1=\"217\" x2=\"92.3\" y2=\"223\" stroke=\"currentColor\"/><text x=\"92.3\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"150.5\" y1=\"217\" x2=\"150.5\" y2=\"223\" stroke=\"currentColor\"/><text x=\"150.5\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"208.8\" y1=\"217\" x2=\"208.8\" y2=\"223\" stroke=\"currentColor\"/><text x=\"208.8\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"267\" y1=\"217\" x2=\"267\" y2=\"223\" stroke=\"currentColor\"/><text x=\"267\" y=\"235\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"31\" y1=\"174.2\" x2=\"37\" y2=\"174.2\" stroke=\"currentColor\"/><text x=\"28\" y=\"178.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"31\" y1=\"128.4\" x2=\"37\" y2=\"128.4\" stroke=\"currentColor\"/><text x=\"28\" y=\"132.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"31\" y1=\"82.7\" x2=\"37\" y2=\"82.7\" stroke=\"currentColor\"/><text x=\"28\" y=\"86.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"31\" y1=\"36.9\" x2=\"37\" y2=\"36.9\" stroke=\"currentColor\"/><text x=\"28\" y=\"40.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><text x=\"28\" y=\"234\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M34,36.9 L34.9,39.5 L35.7,42.1 L36.6,44.6 L37.4,47 L38.3,49.4 L39.1,51.7 L40,53.9 L40.8,56.1 L41.7,58.2 L42.5,60.3 L43.4,62.3 L44.3,64.3 L45.1,66.2 L46,68.1 L46.8,69.9 L47.7,71.7 L48.5,73.4 L49.4,75.1 L50.2,76.8 L51.1,78.4 L51.9,80 L52.8,81.6 L53.7,83.1 L54.5,84.6 L55.4,86 L56.2,87.4 L57.1,88.8 L57.9,90.2 L58.8,91.5 L59.6,92.8 L60.5,94.1 L61.3,95.4 L62.2,96.6 L63.1,97.8 L63.9,99 L64.8,100.2 L65.6,101.3 L66.5,102.4 L67.3,103.5 L68.2,104.6 L69,105.7 L69.9,106.7 L70.7,107.7 L71.6,108.7 L72.5,109.7 L73.3,110.7 L74.2,111.6 L75,112.5 L75.9,113.5 L76.7,114.4 L77.6,115.2 L78.4,116.1 L79.3,117 L80.1,117.8 L81,118.6 L81.9,119.5 L82.7,120.3 L83.6,121.1 L84.4,121.8 L85.3,122.6 L86.1,123.4 L87,124.1 L87.8,124.8 L88.7,125.5 L89.5,126.3 L90.4,127 L91.3,127.6 L92.1,128.3 L93,129 L93.8,129.6 L94.7,130.3 L95.5,130.9 L96.4,131.6 L97.2,132.2 L98.1,132.8 L98.9,133.4 L99.8,134 L100.7,134.6 L101.5,135.2 L102.4,135.7 L103.2,136.3 L104.1,136.9 L104.9,137.4 L105.8,138 L106.6,138.5 L107.5,139 L108.3,139.5 L109.2,140.1 L110,140.6 L110.9,141.1 L111.8,141.6 L112.6,142.1 L113.5,142.5 L114.3,143 L115.2,143.5 L116,144 L116.9,144.4 L117.7,144.9 L118.6,145.3 L119.4,145.8 L120.3,146.2 L121.2,146.6 L122,147.1 L122.9,147.5 L123.7,147.9 L124.6,148.3 L125.4,148.7 L126.3,149.1 L127.1,149.5 L128,149.9 L128.8,150.3 L129.7,150.7 L130.6,151.1 L131.4,151.5 L132.3,151.8 L133.1,152.2 L134,152.6 L134.8,152.9 L135.7,153.3 L136.5,153.7 L137.4,154 L138.2,154.4 L139.1,154.7 L140,155 L140.8,155.4 L141.7,155.7 L142.5,156 L143.4,156.4 L144.2,156.7 L145.1,157 L145.9,157.3 L146.8,157.6 L147.6,157.9 L148.5,158.2 L149.4,158.6 L150.2,158.9 L151.1,159.2 L151.9,159.4 L152.8,159.7 L153.6,160 L154.5,160.3 L155.3,160.6 L156.2,160.9 L157,161.2 L157.9,161.4 L158.8,161.7 L159.6,162 L160.5,162.2 L161.3,162.5 L162.2,162.8 L163,163 L163.9,163.3 L164.7,163.6 L165.6,163.8 L166.4,164.1 L167.3,164.3 L168.2,164.6 L169,164.8 L169.9,165 L170.7,165.3 L171.6,165.5 L172.4,165.8 L173.3,166 L174.1,166.2 L175,166.5 L175.8,166.7 L176.7,166.9 L177.6,167.1 L178.4,167.4 L179.3,167.6 L180.1,167.8 L181,168 L181.8,168.2 L182.7,168.4 L183.5,168.7 L184.4,168.9 L185.2,169.1 L186.1,169.3 L187,169.5 L187.8,169.7 L188.7,169.9 L189.5,170.1 L190.4,170.3 L191.2,170.5 L192.1,170.7 L192.9,170.9 L193.8,171.1 L194.6,171.3 L195.5,171.5 L196.4,171.6 L197.2,171.8 L198.1,172 L198.9,172.2 L199.8,172.4 L200.6,172.6 L201.5,172.7 L202.3,172.9 L203.2,173.1 L204,173.3 L204.9,173.4 L205.8,173.6 L206.6,173.8 L207.5,174 L208.3,174.1 L209.2,174.3 L210,174.5 L210.9,174.6 L211.7,174.8 L212.6,175 L213.4,175.1 L214.3,175.3 L215.2,175.4 L216,175.6 L216.9,175.8 L217.7,175.9 L218.6,176.1 L219.4,176.2 L220.3,176.4 L221.1,176.5 L222,176.7 L222.8,176.8 L223.7,177 L224.6,177.1 L225.4,177.3 L226.3,177.4 L227.1,177.6 L228,177.7 L228.8,177.8 L229.7,178 L230.5,178.1 L231.4,178.3 L232.2,178.4 L233.1,178.5 L234,178.7 L234.8,178.8 L235.7,179 L236.5,179.1 L237.4,179.2 L238.2,179.4 L239.1,179.5 L239.9,179.6 L240.8,179.7 L241.6,179.9 L242.5,180 L243.4,180.1 L244.2,180.3 L245.1,180.4 L245.9,180.5 L246.8,180.6 L247.6,180.8 L248.5,180.9 L249.3,181 L250.2,181.1 L251,181.2 L251.9,181.4 L252.8,181.5 L253.6,181.6 L254.5,181.7 L255.3,181.8 L256.2,182 L257,182.1 L257.9,182.2 L258.7,182.3 L259.6,182.4 L260.4,182.5 L261.3,182.6 L262.1,182.8 L263,182.9 L263.9,183 L264.7,183.1 L265.6,183.2 L266.4,183.3 L267.3,183.4 L268.1,183.5 L269,183.6 L269.8,183.7 L270.7,183.8 L271.5,183.9 L272.4,184 L273.3,184.1 L274.1,184.2 L275,184.3 L275.8,184.4 L276.7,184.5 L277.5,184.7 L278.4,184.8 L279.2,184.8 L280.1,184.9 L280.9,185 L281.8,185.1 L282.7,185.2 L283.5,185.3 L284.4,185.4 L285.2,185.5 L286.1,185.6 L286.9,185.7 L287.8,185.8 L288.6,185.9 L289.5,186 L290.3,186.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"86.4\" y=\"55.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = 8/(x + 1)</text></svg>",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The diagram shows the curve $y = \\frac{8}{x + 1}$ for $0 \\le x \\le 4$, with the rectangles of a right Riemann sum with 4 subintervals.\n\nSam says: \"A right Riemann sum always overestimates the area, because the rectangles use the right-hand end, which is the far end of each strip.\"\n\n(a) Calculate the right Riemann sum $R_4$ and the left Riemann sum $L_4$, giving exact answers.\n(b) Is Sam correct? Use the diagram and your answers to justify your answer.",
+  "hint": "Look at where the top of each rectangle is compared with the curve. Is the function increasing or decreasing?",
+  "answer": "(a) $R_4 = \\frac{154}{15} \\approx 10.27$, $L_4 = \\frac{50}{3} \\approx 16.67$ (b) No: the function is decreasing, so the right sum is an underestimate (the exact area is $8\\ln 5 \\approx 12.88$).",
+  "solution": "**(a)** $\\Delta x = 1$. Heights: $f(0) = 8$, $f(1) = 4$, $f(2) = \\frac{8}{3}$, $f(3) = 2$, $f(4) = \\frac{8}{5}$.\n\n$$R_4 = 4 + \\frac{8}{3} + 2 + \\frac{8}{5} = \\frac{60 + 40 + 30 + 24}{15} = \\frac{154}{15} \\approx 10.27$$\n\n$$L_4 = 8 + 4 + \\frac{8}{3} + 2 = \\frac{50}{3} \\approx 16.67$$\n\n**(b)** Sam is **not** correct. Whether a right sum over- or underestimates depends on whether $f$ is increasing or decreasing, not on the word \"right\".\n\nHere $f$ is decreasing, so on each subinterval the right endpoint gives the **lowest** value. Every rectangle in the diagram sits below the curve, so $R_4$ is an underestimate. Similarly $L_4$ is an overestimate:\n$$\\frac{154}{15} < \\int_0^4 \\frac{8}{x + 1}\\,dx < \\frac{50}{3}$$\n\n(Indeed the exact value is $8\\ln 5 \\approx 12.88$.) Sam's rule only works for increasing functions.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q06",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A cyclist sets off from rest at a junction and speeds up. Her speed $v(t)$ in m/s is increasing for $0 \\le t \\le 20$, where $t$ is the time in seconds. Selected values are shown.\n\n| $t$ (s) | 0 | 4 | 10 | 12 | 20 |\n|---|---|---|---|---|---|\n| $v(t)$ (m/s) | 2 | 5 | 7 | 8 | 10 |\n\n(a) Use a left Riemann sum with the four subintervals in the table to estimate the distance she travels in the 20 seconds.\n(b) Use a right Riemann sum with the same subintervals.\n(c) Write down an interval within which the true distance must lie, explaining your reasoning.",
+  "hint": "The subintervals have widths $4$, $6$, $2$ and $8$ seconds, so each rectangle needs its own width.",
+  "answer": "(a) $116$ m (b) $158$ m (c) $116 \\text{ m} < \\text{distance} < 158 \\text{ m}$, since $v$ is increasing",
+  "solution": "Distance $= \\int_0^{20} v(t)\\,dt$. The widths are $4 - 0 = 4$, $10 - 4 = 6$, $12 - 10 = 2$ and $20 - 12 = 8$ seconds: they are **not** equal, so each height must be multiplied by its own width.\n\n**(a)** Left sum (heights at $t = 0, 4, 10, 12$):\n$$4(2) + 6(5) + 2(7) + 8(8) = 8 + 30 + 14 + 64 = 116 \\text{ m}$$\n\n**(b)** Right sum (heights at $t = 4, 10, 12, 20$):\n$$4(5) + 6(7) + 2(8) + 8(10) = 20 + 42 + 16 + 80 = 158 \\text{ m}$$\n\n**(c)** $v$ is increasing, so the left sum is an underestimate and the right sum an overestimate. The distance lies between $116$ m and $158$ m.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q07",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "Water drains from a tank at a rate $r(t)$ litres per minute, where $r$ is decreasing for $0 \\le t \\le 12$ minutes.\n\n| $t$ (min) | 0 | 3 | 5 | 9 | 12 |\n|---|---|---|---|---|---|\n| $r(t)$ (litres/min) | 40 | 36 | 30 | 22 | 16 |\n\nPriya is asked to use a right Riemann sum with the four subintervals in the table to estimate $\\int_0^{12} r(t)\\,dt$. Her working is shown below.\n\n$\\Delta t = 3$\n$R = 3(36 + 30 + 22 + 16) = 3 \\times 104 = 312$ litres\nThis is an overestimate, because right sums are always too big.\n\n(a) Identify and explain each error in Priya's working.\n(b) Give the correct estimate and state whether it is an over- or underestimate.",
+  "hint": "Check the gaps between consecutive values of $t$. Then think about which end of each subinterval is lower when $r$ is decreasing.",
+  "answer": "(a) She used width 3 for every subinterval (the widths are 3, 2, 4, 3), and she assumed right sums always overestimate. (b) $304$ litres, an underestimate.",
+  "solution": "**(a)** Error 1: the line $\\Delta t = 3$. The table has unequal intervals: the widths are $3 - 0 = 3$, $5 - 3 = 2$, $9 - 5 = 4$ and $12 - 9 = 3$. A common factor of $3$ can only be taken out when every subinterval has width $3$.\n\nError 2: the final line. Whether a right sum over- or underestimates depends on whether the function is increasing or decreasing; it is not always too big.\n\n**(b)** Correct right sum, using each width:\n$$3(36) + 2(30) + 4(22) + 3(16) = 108 + 60 + 88 + 48 = 304 \\text{ litres}$$\n\n$r$ is decreasing, so on each subinterval the right-hand value is the **smallest** value. Each rectangle lies below the graph of $r$, so $304$ litres is an **underestimate** of the water drained.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q08",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "(a) Write $\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sqrt{1 + \\frac{3i}{n}}\\cdot\\frac{3}{n}$ as a definite integral and hence find its exact value.\n\n(b) Write $\\displaystyle\\int_0^{\\pi}\\sin x\\,dx$ as the limit of a right Riemann sum, and state the value of this limit.",
+  "hint": "Compare with $\\sum f(a + i\\,\\Delta x)\\,\\Delta x$. The number multiplying $\\frac{1}{n}$ is $b - a$, the **length** of the interval, not its end point.",
+  "answer": "(a) $\\displaystyle\\int_1^4 \\sqrt{x}\\,dx = \\frac{14}{3}$ (b) $\\displaystyle\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sin\\left(\\frac{\\pi i}{n}\\right)\\frac{\\pi}{n} = 2$",
+  "solution": "**(a)** $\\Delta x = \\frac{3}{n}$, so $b - a = 3$. The input is $1 + \\frac{3i}{n} = 1 + i\\,\\Delta x$, so $a = 1$ and $b = 1 + 3 = 4$, with $f(x) = \\sqrt{x}$.\n$$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sqrt{1 + \\frac{3i}{n}}\\cdot\\frac{3}{n} = \\int_1^4 x^{\\frac{1}{2}}\\,dx = \\left[\\frac{2}{3}x^{\\frac{3}{2}}\\right]_1^4 = \\frac{2}{3}(8 - 1) = \\frac{14}{3}$$\n\n(Equivalently $\\int_0^3\\sqrt{1 + x}\\,dx$.)\n\n**(b)** $a = 0$, $b = \\pi$, so $\\Delta x = \\frac{\\pi}{n}$ and $x_i = 0 + i\\,\\Delta x = \\frac{\\pi i}{n}$:\n$$\\int_0^{\\pi}\\sin x\\,dx = \\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\sin\\left(\\frac{\\pi i}{n}\\right)\\frac{\\pi}{n}$$\n\nand its value is $\\Big[-\\cos x\\Big]_0^{\\pi} = 1 - (-1) = 2$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q09",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Jamal is asked to evaluate\n$$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\left(2 + \\frac{3i}{n}\\right)^3\\frac{3}{n}$$\nHis working is shown below.\n\n$\\Delta x = \\frac{3}{n}$, the function is $f(x) = x^3$ and the sum starts at $x = 2$.\nSo the limit is $\\displaystyle\\int_2^3 x^3\\,dx = \\left[\\frac{x^4}{4}\\right]_2^3 = \\frac{81 - 16}{4} = \\frac{65}{4}$.\n\nFind the error in Jamal's working, explain why it is wrong, and find the correct value.",
+  "hint": "In $\\Delta x = \\frac{b - a}{n}$, what does the 3 represent?",
+  "answer": "He used the 3 in $\\Delta x = \\frac{3}{n}$ as the upper limit; it is the length $b - a$. The limit is $\\int_2^5 x^3\\,dx = \\frac{609}{4}$.",
+  "solution": "Jamal's first line is correct. The error is the upper limit $3$ in the second line.\n\n$\\Delta x = \\frac{b - a}{n}$, so $\\frac{3}{n}$ tells us that $b - a = 3$: the interval has **length** 3. It does not tell us where the interval ends. Starting at $a = 2$ gives $b = 2 + 3 = 5$. (Check: when $i = n$, the input $2 + \\frac{3n}{n} = 5$ is the right-hand end.)\n\n$$\\lim_{n\\to\\infty}\\sum_{i=1}^{n}\\left(2 + \\frac{3i}{n}\\right)^3\\frac{3}{n} = \\int_2^5 x^3\\,dx = \\left[\\frac{x^4}{4}\\right]_2^5 = \\frac{625 - 16}{4} = \\frac{609}{4}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q10",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "During a storm, the rainfall intensity $r(t)$, in mm per hour, was recorded by a weather station every hour, where $t$ is the number of hours after the storm began.\n\n| $t$ (h) | 0 | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|---|\n| $r(t)$ (mm/h) | 0 | 2.4 | 5.0 | 6.2 | 4.8 | 3.0 | 1.2 |\n\n(a) Use a midpoint Riemann sum with 3 subintervals of equal width to estimate the total rainfall, in mm, during the 6 hours.\n(b) Calculate the left and right Riemann sums with the same 3 subintervals.\n(c) Nadia says: \"The left sum must be an underestimate.\" Explain why this cannot be concluded from the information given.",
+  "hint": "Three equal subintervals of $[0, 6]$ have width 2. The midpoint of $[0, 2]$ is $t = 1$.",
+  "answer": "(a) $23.2$ mm (b) $L_3 = 19.6$ mm, $R_3 = 22$ mm (c) $r$ increases and then decreases, so it is not monotonic; the left sum is not guaranteed to be an underestimate.",
+  "solution": "Total rainfall $= \\int_0^6 r(t)\\,dt$. The subintervals are $[0, 2]$, $[2, 4]$, $[4, 6]$, each of width 2 hours.\n\n**(a)** Midpoints $t = 1, 3, 5$:\n$$M_3 = 2(2.4 + 6.2 + 3.0) = 2\\times 11.6 = 23.2 \\text{ mm}$$\n\n**(b)** Left endpoints $t = 0, 2, 4$: $L_3 = 2(0 + 5.0 + 4.8) = 19.6$ mm.\n\nRight endpoints $t = 2, 4, 6$: $R_3 = 2(5.0 + 4.8 + 1.2) = 22$ mm.\n\n**(c)** A left sum is only guaranteed to underestimate when the function is increasing. The data show $r$ increasing up to about $t = 3$ and then decreasing. On $[4, 6]$, for example, the left height $r(4) = 4.8$ is above every later value in the table, so that rectangle overestimates. The over- and underestimates on different subintervals can partly cancel, so we cannot say which way the total error goes.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q11",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "A train leaves a station at time $t = 0$. Its velocity $v(t)$, in metres per second, is a differentiable and **increasing** function for $0 \\le t \\le 60$, where $t$ is measured in seconds. Selected values of $v(t)$ are given in the table.\n\n| $t$ (s) | 0 | 10 | 25 | 40 | 60 |\n|---|---|---|---|---|---|\n| $v(t)$ (m/s) | 0 | 6 | 13 | 18 | 22 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain the meaning of $\\displaystyle\\int_0^{60} v(t)\\,dt$ in the context of the problem.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Use a left Riemann sum with the four subintervals indicated by the table to approximate $\\displaystyle\\int_0^{60} v(t)\\,dt$. Show the work that leads to your answer, using correct units.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Is the approximation in part (b) an overestimate or an underestimate of $\\displaystyle\\int_0^{60} v(t)\\,dt$? Give a reason for your answer.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Use a right Riemann sum with the same subintervals to find an upper bound for the distance travelled. Hence write down an interval that must contain $\\displaystyle\\int_0^{60} v(t)\\,dt$.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "calculator": true,
+  "hint": "The subintervals have widths 10, 15, 15 and 20 seconds. Decide over/under from the fact that $v$ is increasing.",
+  "answer": "(a) The distance, in metres, travelled by the train in the first 60 seconds. (b) $645$ m (c) Underestimate, since $v$ is increasing. (d) $965$ m; $645 \\le \\int_0^{60} v(t)\\,dt \\le 965$ (metres)",
+  "solution": "**(a)** Since $v(t) \\ge 0$, $\\int_0^{60} v(t)\\,dt$ is the total distance, in metres, that the train travels during the first 60 seconds after leaving the station. **1 pt** (meaning with units/interval)\n\n**(b)** Widths: $10$, $15$, $15$, $20$ seconds.\n$$\\int_0^{60} v(t)\\,dt \\approx 10(0) + 15(6) + 15(13) + 20(18) \\quad \\textbf{1 pt (left sum set up)}$$\n$$= 0 + 90 + 195 + 360 = 645 \\text{ metres} \\quad \\textbf{1 pt (answer with units)}$$\n\n**(c)** $v$ is increasing, so on each subinterval the left endpoint gives the smallest value of $v$; each rectangle lies below the graph. The left sum is an **underestimate**. **1 pt** (answer with reason)\n\n**(d)** Right sum:\n$$10(6) + 15(13) + 15(18) + 20(22) = 60 + 195 + 270 + 440 = 965 \\text{ metres} \\quad \\textbf{1 pt}$$\n\nAs $v$ is increasing, this is an overestimate, so\n$$645 \\le \\int_0^{60} v(t)\\,dt \\le 965 \\text{ metres} \\quad \\textbf{1 pt}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q12",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 4,
+  "type": "exam-style",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence"
+  ],
+  "question": "The region $R$ is bounded by the curve $y = x^2$, the $x$-axis and the line $x = 3$. The interval $[0, 3]$ is divided into $n$ strips of equal width, and $S_n$ is the sum of the areas of the $n$ rectangles whose heights are the values of $y$ at the right-hand end of each strip.\n\nYou may use $\\displaystyle\\sum_{i=1}^{n} i^2 = \\frac{1}{6}n(n + 1)(2n + 1)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $S_n = \\dfrac{9(n + 1)(2n + 1)}{2n^2}$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find $\\displaystyle\\lim_{n\\to\\infty} S_n$, and explain how this confirms the value of $\\displaystyle\\int_0^3 x^2\\,dx$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Explain why $S_n > 9$ for every positive integer $n$.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Find the smallest value of $n$ for which $S_n$ is within $0.1$ of the area of $R$.",
+    "marks": 3
+   }
+  ],
+  "marks": 9,
+  "calculator": true,
+  "hint": "Each strip has width $\\frac{3}{n}$ and the $i$th right-hand end is at $x = \\frac{3i}{n}$. Expand $(n + 1)(2n + 1)$ before taking the limit.",
+  "answer": "(a) Shown (b) $9$ (c) $y = x^2$ is increasing on $[0, 3]$, so each right rectangle lies above the curve. (d) $n = 136$",
+  "solution": "**(a)** Width $\\frac{3}{n}$; the $i$th right-hand end is $x_i = \\frac{3i}{n}$, so\n$$S_n = \\sum_{i=1}^{n}\\left(\\frac{3i}{n}\\right)^2\\frac{3}{n} = \\frac{27}{n^3}\\sum_{i=1}^{n} i^2 \\quad \\textbf{M1}$$\n$$= \\frac{27}{n^3}\\cdot\\frac{n(n + 1)(2n + 1)}{6} \\quad \\textbf{M1}$$\n$$= \\frac{9(n + 1)(2n + 1)}{2n^2} \\quad \\textbf{A1 (cso)}$$\n\n**(b)** $S_n = \\dfrac{9(2n^2 + 3n + 1)}{2n^2} = 9 + \\dfrac{27}{2n} + \\dfrac{9}{2n^2}$ **M1**\n\nAs $n \\to \\infty$ the last two terms tend to $0$, so $\\lim_{n\\to\\infty} S_n = 9$. **A1**\n\nThe integral is the limit of the sum, and $\\int_0^3 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_0^3 = 9$, which agrees.\n\n**(c)** $y = x^2$ is increasing on $[0, 3]$, so the height at the right-hand end of each strip is the largest height on that strip; every rectangle contains the region under the curve on its strip, so $S_n$ exceeds the area, $9$. (Algebraically, $S_n - 9 = \\frac{27}{2n} + \\frac{9}{2n^2} > 0$.) **B1**\n\n**(d)** Need $S_n - 9 < 0.1$:\n$$\\frac{27}{2n} + \\frac{9}{2n^2} < 0.1 \\quad \\textbf{M1}$$\nMultiply by $20n^2$: $270n + 90 < 2n^2$, i.e. $n^2 - 135n - 45 > 0$.\n\nThe positive root of $n^2 - 135n - 45 = 0$ is $n = \\frac{135 + \\sqrt{135^2 + 180}}{2} \\approx 135.33$ **M1**\n\nSo the smallest integer is $n = 136$. **A1**\n\n(Check: $S_{135} - 9 \\approx 0.10025$ and $S_{136} - 9 \\approx 0.09951$.)"
+ },
+ {
+  "id": "calc-riemann-sums-q13",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Let $f(x) = e^x$. For a positive integer $n$, $L_n$ and $R_n$ are the left and right Riemann sums for $\\displaystyle\\int_0^1 e^x\\,dx$ with $n$ subintervals of equal width.\n\n(a) Show that $R_n - L_n = \\dfrac{e - 1}{n}$.\n(b) Find the smallest $n$ for which $R_n - L_n < 0.01$.\n(c) Explain why, for this $n$, both $L_n$ and $R_n$ are within $0.01$ of the exact value of the integral, without calculating the integral.",
+  "hint": "Write out both sums. Most of the terms are the same; only the first height of the left sum and the last height of the right sum are different.",
+  "answer": "(a) Shown (b) $n = 172$ (c) $e^x$ is increasing, so $L_n \\le \\int_0^1 e^x\\,dx \\le R_n$; the integral is trapped in an interval of length less than $0.01$.",
+  "solution": "**(a)** With $\\Delta x = \\frac{1}{n}$ and $x_i = \\frac{i}{n}$:\n$$L_n = \\frac{1}{n}\\left[f(x_0) + f(x_1) + \\dots + f(x_{n-1})\\right], \\qquad R_n = \\frac{1}{n}\\left[f(x_1) + \\dots + f(x_{n-1}) + f(x_n)\\right]$$\n\nAll the terms $f(x_1), \\dots, f(x_{n-1})$ cancel in the difference:\n$$R_n - L_n = \\frac{1}{n}\\left[f(x_n) - f(x_0)\\right] = \\frac{1}{n}\\left(e^1 - e^0\\right) = \\frac{e - 1}{n}$$\n\n**(b)** $\\frac{e - 1}{n} < 0.01 \\iff n > 100(e - 1) \\approx 171.83$, so the smallest $n$ is $172$.\n\n**(c)** $e^x$ is increasing, so every left rectangle lies below the curve and every right rectangle above it:\n$$L_n \\le \\int_0^1 e^x\\,dx \\le R_n$$\n\nThe exact value lies between $L_n$ and $R_n$, which are less than $0.01$ apart when $n = 172$. So each of $L_{172}$ and $R_{172}$ is within $0.01$ of the integral.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q14",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-integration-standard",
+   "pure-exponentials-logs"
+  ],
+  "question": "Let\n$$S_n = \\frac{1}{n + 1} + \\frac{1}{n + 2} + \\frac{1}{n + 3} + \\dots + \\frac{1}{2n}$$\n\n(a) Show that $S_n = \\displaystyle\\sum_{i=1}^{n}\\frac{1}{1 + \\frac{i}{n}}\\cdot\\frac{1}{n}$.\n(b) Hence find the exact value of $\\displaystyle\\lim_{n\\to\\infty} S_n$.\n(c) Use the same method to find the exact value of $\\displaystyle\\lim_{n\\to\\infty}\\left(\\frac{1}{n + 1} + \\frac{1}{n + 2} + \\dots + \\frac{1}{3n}\\right)$.",
+  "hint": "Divide the top and bottom of $\\frac{1}{n + i}$ by $n$. Then recognise a right Riemann sum with $\\Delta x = \\frac{1}{n}$.",
+  "answer": "(a) Shown (b) $\\ln 2$ (c) $\\ln 3$",
+  "solution": "**(a)** The terms are $\\frac{1}{n + i}$ for $i = 1, 2, \\dots, n$, and\n$$\\frac{1}{n + i} = \\frac{1}{n\\left(1 + \\frac{i}{n}\\right)} = \\frac{1}{1 + \\frac{i}{n}}\\cdot\\frac{1}{n}$$\nso $S_n = \\sum_{i=1}^{n}\\frac{1}{1 + \\frac{i}{n}}\\cdot\\frac{1}{n}$.\n\n**(b)** This is a right Riemann sum with $\\Delta x = \\frac{1}{n}$, $x_i = \\frac{i}{n}$ on $[0, 1]$, for $f(x) = \\frac{1}{1 + x}$:\n$$\\lim_{n\\to\\infty} S_n = \\int_0^1 \\frac{1}{1 + x}\\,dx = \\Big[\\ln(1 + x)\\Big]_0^1 = \\ln 2 - \\ln 1 = \\ln 2$$\n\n**(c)** Now there are $2n$ terms, $\\frac{1}{n + i}$ for $i = 1, \\dots, 2n$:\n$$\\sum_{i=1}^{2n}\\frac{1}{1 + \\frac{i}{n}}\\cdot\\frac{1}{n}$$\n\nThis is a right Riemann sum with $\\Delta x = \\frac{1}{n}$ and $2n$ subintervals, so the interval has length $2n\\times\\frac{1}{n} = 2$: it runs over $[0, 2]$. Hence the limit is\n$$\\int_0^2 \\frac{1}{1 + x}\\,dx = \\ln 3 - \\ln 1 = \\ln 3$$"
+ },
+ {
+  "id": "calc-riemann-sums-q15",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-geometric-series"
+  ],
+  "question": "Riemann sums do not need equal widths, as long as the widest subinterval shrinks to zero.\n\nThe interval $[1, 2]$ is divided at the points $x_i = r^i$ for $i = 0, 1, 2, \\dots, n$, where $r = 2^{\\frac{1}{n}}$. (So $x_0 = 1$ and $x_n = 2$.)\n\n(a) Explain why the subintervals do not all have the same width.\n(b) For $f(x) = x$, the right Riemann sum with these subintervals is $\\displaystyle T_n = \\sum_{i=1}^{n} x_i\\,(x_i - x_{i-1})$. Show that $T_n = \\dfrac{3r}{r + 1}$.\n(c) Hence find $\\displaystyle\\lim_{n\\to\\infty} T_n$ and check your answer by integration.",
+  "hint": "Write $x_i(x_i - x_{i-1}) = r^i(r^i - r^{i-1})$ and factor out $(r - 1)$. What remains is a geometric series with common ratio $r^2$. Remember $r^n = 2$.",
+  "answer": "(a) The width $x_i - x_{i-1} = r^{i-1}(r - 1)$ grows with $i$. (b) Shown (c) $\\frac{3}{2}$, which equals $\\int_1^2 x\\,dx$",
+  "solution": "**(a)** $x_i - x_{i-1} = r^i - r^{i-1} = r^{i-1}(r - 1)$. Since $r > 1$, this increases with $i$, so the strips get wider from left to right. (The widest is $r^{n-1}(r - 1) = 2\\left(1 - \\frac{1}{r}\\right)$, which tends to $0$ as $n \\to \\infty$ because $r = 2^{\\frac{1}{n}} \\to 1$.)\n\n**(b)**\n$$T_n = \\sum_{i=1}^{n} r^i\\cdot r^{i-1}(r - 1) = (r - 1)\\sum_{i=1}^{n} r^{2i-1}$$\n\nThe sum $r + r^3 + r^5 + \\dots + r^{2n-1}$ is geometric with first term $r$, ratio $r^2$ and $n$ terms:\n$$\\sum_{i=1}^{n} r^{2i-1} = \\frac{r\\left(r^{2n} - 1\\right)}{r^2 - 1}$$\n\nSince $r^n = 2$, $r^{2n} = 4$, so\n$$T_n = (r - 1)\\cdot\\frac{3r}{(r - 1)(r + 1)} = \\frac{3r}{r + 1}$$\n\n**(c)** As $n \\to \\infty$, $r = 2^{\\frac{1}{n}} \\to 2^0 = 1$, so\n$$\\lim_{n\\to\\infty} T_n = \\frac{3\\times 1}{1 + 1} = \\frac{3}{2}$$\n\nCheck: $\\int_1^2 x\\,dx = \\left[\\frac{x^2}{2}\\right]_1^2 = 2 - \\frac{1}{2} = \\frac{3}{2}$. ✓"
+ },
+ {
+  "id": "calc-riemann-sums-q16",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "(a) Write the left Riemann sum for $\\displaystyle\\int_1^3 \\frac{1}{x}\\,dx$ with 4 subintervals of equal width using sigma notation.\n(b) Evaluate it, giving your answer as an exact fraction.\n(c) State, with a reason, whether it is an overestimate or an underestimate of the integral.",
+  "hint": "$\\Delta x = \\frac{3 - 1}{4} = 0.5$ and the left endpoints are $x_i = 1 + 0.5i$ for $i = 0, 1, 2, 3$.",
+  "answer": "(a) $\\displaystyle\\sum_{i=0}^{3}\\frac{1}{1 + 0.5i}\\times 0.5$ (equivalently $\\displaystyle\\sum_{i=0}^{3}\\frac{1}{i + 2}$) (b) $\\frac{77}{60}$ (c) Overestimate, because $\\frac{1}{x}$ is decreasing on $[1, 3]$.",
+  "solution": "**(a)** $\\Delta x = 0.5$; left endpoints $x_i = 1 + 0.5i$ for $i = 0, 1, 2, 3$:\n$$L_4 = \\sum_{i=0}^{3}\\frac{1}{1 + 0.5i}\\times 0.5 = \\sum_{i=0}^{3}\\frac{1}{2 + i}$$\n\n**(b)**\n$$L_4 = \\frac{1}{2} + \\frac{1}{3} + \\frac{1}{4} + \\frac{1}{5} = \\frac{30 + 20 + 15 + 12}{60} = \\frac{77}{60} \\approx 1.283$$\n\n**(c)** $\\frac{1}{x}$ is decreasing on $[1, 3]$, so the left endpoint of each subinterval gives the **largest** height there. Every rectangle lies above the curve, so $L_4$ is an overestimate. (The exact value is $\\ln 3 \\approx 1.099$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q17",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A function $f$ is continuous and decreasing on $[0, 8]$, with $f(0) = 10$ and $f(8) = 2$. $L_n$ and $R_n$ are the left and right Riemann sums for $\\displaystyle\\int_0^8 f(x)\\,dx$ with $n$ subintervals of equal width.\n\n(a) Prove that $L_n - R_n = \\dfrac{64}{n}$ for every positive integer $n$.\n(b) Hamza calculates $L_{16} = 50.4$. Find $R_{16}$ and hence give the tightest interval you can for $\\displaystyle\\int_0^8 f(x)\\,dx$.\n(c) Explain why $\\displaystyle\\lim_{n\\to\\infty} L_n = \\lim_{n\\to\\infty} R_n$.",
+  "hint": "Write out $L_n$ and $R_n$ term by term. Which heights appear in one sum but not the other?",
+  "answer": "(a) Proof (shown in solution) (b) $R_{16} = 46.4$; $46.4 \\le \\int_0^8 f(x)\\,dx \\le 50.4$ (c) Their difference $\\frac{64}{n} \\to 0$.",
+  "solution": "**(a)** $\\Delta x = \\frac{8}{n}$, with points $x_0 = 0, x_1, \\dots, x_n = 8$.\n$$L_n = \\Delta x\\left[f(x_0) + f(x_1) + \\dots + f(x_{n-1})\\right], \\qquad R_n = \\Delta x\\left[f(x_1) + \\dots + f(x_{n-1}) + f(x_n)\\right]$$\n\nEvery middle height appears in both sums, so they cancel:\n$$L_n - R_n = \\Delta x\\left[f(x_0) - f(x_n)\\right] = \\frac{8}{n}(10 - 2) = \\frac{64}{n}$$\n\nThis uses only the end values, so it holds for every $n$.\n\n**(b)** $R_{16} = L_{16} - \\frac{64}{16} = 50.4 - 4 = 46.4$.\n\nSince $f$ is decreasing, left sums overestimate and right sums underestimate:\n$$46.4 \\le \\int_0^8 f(x)\\,dx \\le 50.4$$\n\n**(c)** $L_n - R_n = \\frac{64}{n} \\to 0$ as $n \\to \\infty$. The integral is always trapped between $R_n$ and $L_n$, and the gap closes, so both sums tend to the same limit, which is $\\int_0^8 f(x)\\,dx$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-riemann-sums-q18",
+  "topicId": "calc-riemann-sums",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The function $f$ is increasing. Some of its values are given in the table, where $k$ is a constant.\n\n| $x$ | 0 | 1 | 3 | 4 |\n|---|---|---|---|---|\n| $f(x)$ | 2 | $k$ | 7 | 9 |\n\nUsing the three subintervals in the table, the mean of the left Riemann sum and the right Riemann sum for $\\displaystyle\\int_0^4 f(x)\\,dx$ is $20$.\n\n(a) Find the value of $k$.\n(b) Hence find the left and right Riemann sums, and check that your value of $k$ is consistent with $f$ being increasing.",
+  "hint": "The widths are $1$, $2$ and $1$. Write each sum in terms of $k$ first.",
+  "answer": "(a) $k = \\frac{8}{3}$ (b) $L = \\frac{43}{3}$, $R = \\frac{77}{3}$; $2 < \\frac{8}{3} < 7$, so consistent.",
+  "solution": "The subintervals $[0, 1]$, $[1, 3]$, $[3, 4]$ have widths $1$, $2$, $1$ (not equal).\n\nLeft sum: $L = 1(2) + 2(k) + 1(7) = 9 + 2k$\n\nRight sum: $R = 1(k) + 2(7) + 1(9) = k + 23$\n\n**(a)**\n$$\\frac{(9 + 2k) + (k + 23)}{2} = 20 \\implies 3k + 32 = 40 \\implies k = \\frac{8}{3}$$\n\n**(b)** $L = 9 + \\frac{16}{3} = \\frac{43}{3} \\approx 14.33$ and $R = \\frac{8}{3} + 23 = \\frac{77}{3} \\approx 25.67$.\n\nCheck: their mean is $\\frac{120}{6} = 20$ ✓. For $f$ to be increasing we need $2 < k < 7$, and $k = \\frac{8}{3} \\approx 2.67$ satisfies this ✓. Also $L < R$, as expected for an increasing function.",
+  "linkedTopicIds": []
+ }
+]
