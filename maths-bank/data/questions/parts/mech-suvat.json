@@ -1,0 +1,268 @@
+[
+ {
+  "id": "mech-suvat-q01",
+  "topicId": "mech-suvat",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with constant acceleration $3\\text{ m s}^{-2}$. Its initial velocity is $4\\text{ m s}^{-1}$. Find its velocity after 5 seconds.",
+  "hint": "List $s, u, v, a, t$. You know $u$, $a$ and $t$ and want $v$; which equation has no $s$?",
+  "answer": "$19\\text{ m s}^{-1}$",
+  "solution": "$u = 4$, $a = 3$, $t = 5$, $v = ?$ ($s$ not needed).\n$$v = u + at = 4 + 3 \\times 5 = 19\\text{ m s}^{-1}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q02",
+  "topicId": "mech-suvat",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with constant acceleration $3\\text{ m s}^{-2}$. Its initial velocity is $4\\text{ m s}^{-1}$. Find the time it takes for its velocity to reach $19\\text{ m s}^{-1}$.",
+  "hint": "Same equation as before, but now the unknown is $t$. Substitute, then rearrange.",
+  "answer": "5 s",
+  "solution": "**What changed:** the unknown has moved from $v$ to $t$.\n\n$u = 4$, $v = 19$, $a = 3$, $t = ?$\n$$v = u + at \\Rightarrow 19 = 4 + 3t \\Rightarrow 3t = 15 \\Rightarrow t = 5\\text{ s}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q03",
+  "topicId": "mech-suvat",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with constant acceleration. Its velocity increases from $4\\text{ m s}^{-1}$ to $19\\text{ m s}^{-1}$ in 5 seconds. Find its acceleration.",
+  "hint": "The unknown is now $a$.",
+  "answer": "$3\\text{ m s}^{-2}$",
+  "solution": "**What changed:** the unknown is now $a$.\n\n$u = 4$, $v = 19$, $t = 5$, $a = ?$\n$$19 = 4 + 5a \\Rightarrow 5a = 15 \\Rightarrow a = 3\\text{ m s}^{-2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q04",
+  "topicId": "mech-suvat",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with constant acceleration. Its velocity decreases from $19\\text{ m s}^{-1}$ to $4\\text{ m s}^{-1}$ in 5 seconds. Find its acceleration and state the deceleration.",
+  "hint": "The initial and final velocities have swapped. Which one is $u$ now?",
+  "answer": "$a = -3\\text{ m s}^{-2}$; deceleration $3\\text{ m s}^{-2}$",
+  "solution": "**What changed:** $u$ and $v$ have swapped, so the particle is slowing down.\n\n$u = 19$, $v = 4$, $t = 5$, $a = ?$\n$$4 = 19 + 5a \\Rightarrow 5a = -15 \\Rightarrow a = -3\\text{ m s}^{-2}$$\nThe negative acceleration (in the direction of motion) means a **deceleration** of $3\\text{ m s}^{-2}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q05",
+  "topicId": "mech-suvat",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A particle moves along a straight line with constant acceleration $4\\text{ m s}^{-2}$. It passes point A with speed $6\\text{ m s}^{-1}$, and point B is 8 m beyond A.\n\n(a) Find the speed of the particle at B.\n\n(b) Find the time taken to travel from A to B.",
+  "hint": "You know $u$, $a$ and $s$, and there is no $t$ in part (a). Which suvat equation has no $t$?",
+  "answer": "(a) $10\\text{ m s}^{-1}$ (b) 1 s",
+  "solution": "(a) $u = 6$, $a = 4$, $s = 8$, $v = ?$\n$$v^2 = u^2 + 2as = 36 + 2(4)(8) = 36 + 64 = 100 \\Rightarrow v = 10\\text{ m s}^{-1}$$\n(Add before square-rooting: $\\sqrt{100} = 10$, not $6 + 8$.)\n\n(b)\n$$v = u + at \\Rightarrow 10 = 6 + 4t \\Rightarrow t = 1\\text{ s}$$\nCheck with $s = \\frac{(u+v)}{2}t = \\frac{16}{2} \\times 1 = 8$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q06",
+  "topicId": "mech-suvat",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A cyclist passes a post with speed $3\\text{ m s}^{-1}$ and accelerates uniformly at $2\\text{ m s}^{-2}$. Find how long it takes the cyclist to travel 40 m from the post.",
+  "hint": "You need $t$ from $s$, $u$ and $a$. The equation is a quadratic in $t$.",
+  "answer": "5 s",
+  "solution": "$s = 40$, $u = 3$, $a = 2$, $t = ?$\n$$s = ut + \\tfrac{1}{2}at^2 \\Rightarrow 40 = 3t + t^2$$\n$$t^2 + 3t - 40 = 0 \\Rightarrow (t + 8)(t - 5) = 0$$\nTime must be positive, so $t = 5$ s.",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "mech-suvat-q07",
+  "topicId": "mech-suvat",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A car is travelling at $30\\text{ m s}^{-1}$ when the driver brakes. The car decelerates uniformly at $6\\text{ m s}^{-2}$ and comes to rest. Ana finds the braking distance:\n\nLine 1: $u = 30$, $v = 0$, $a = 6$\nLine 2: $v^2 = u^2 + 2as \\Rightarrow 0 = 900 + 12s$\nLine 3: $s = -75$\nLine 4: The braking distance is 75 m.\n\n(a) Identify Ana's error and explain it.\n\n(b) Give the correct working, and find the time taken to stop.",
+  "hint": "Take the direction of motion as positive. Is the acceleration in that direction?",
+  "answer": "(a) Line 1: a deceleration of $6\\text{ m s}^{-2}$ means $a = -6$ (the acceleration is opposite to the motion). Her negative $s$ shows the error, and she ignored the sign in Line 4. (b) $0 = 900 - 12s \\Rightarrow s = 75$ m; time 5 s",
+  "solution": "(a) The error is in **Line 1**. Taking the direction of motion as positive, a **deceleration** of $6\\text{ m s}^{-2}$ is an acceleration of $a = -6\\text{ m s}^{-2}$. With $a = +6$, Line 3 gives a negative displacement, which is impossible for a car moving forwards; Ana then just dropped the minus sign in Line 4 instead of recognising that something had gone wrong.\n\n(b) $u = 30$, $v = 0$, $a = -6$:\n$$0 = 30^2 + 2(-6)s \\Rightarrow 12s = 900 \\Rightarrow s = 75\\text{ m}$$\nTime: $v = u + at \\Rightarrow 0 = 30 - 6t \\Rightarrow t = 5$ s.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q08",
+  "topicId": "mech-suvat",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle moving with constant acceleration $3\\text{ m s}^{-2}$ passes a point O with velocity $8\\text{ m s}^{-1}$. Ben finds its velocity when it is 6 m beyond O.\n\nLine 1: $v^2 = u^2 + 2as$\nLine 2: $v = u + \\sqrt{2as}$\nLine 3: $v = 8 + \\sqrt{2 \\times 3 \\times 6} = 8 + 6 = 14\\text{ m s}^{-1}$\n\n(a) Identify the error in Ben's working and explain why it is wrong.\n\n(b) Find the correct velocity.\n\n(c) Use another suvat equation to check your answer to (b).",
+  "hint": "Is $\\sqrt{A + B}$ the same as $\\sqrt{A} + \\sqrt{B}$? Try it with $A = 9$, $B = 16$.",
+  "answer": "(a) Line 2: he square-rooted each term separately, but $\\sqrt{u^2 + 2as} \\ne u + \\sqrt{2as}$. (b) $10\\text{ m s}^{-1}$ (c) e.g. $t = \\frac{10 - 8}{3} = \\frac{2}{3}$ s and $s = \\frac{(8 + 10)}{2} \\times \\frac{2}{3} = 6$ ✓",
+  "solution": "(a) **Line 2** is wrong. Taking the square root of both sides of $v^2 = u^2 + 2as$ gives $v = \\sqrt{u^2 + 2as}$; the square root of a sum is **not** the sum of the square roots (e.g. $\\sqrt{9 + 16} = 5$ but $\\sqrt{9} + \\sqrt{16} = 7$).\n\n(b) Work out the right-hand side first:\n$$v^2 = 8^2 + 2(3)(6) = 64 + 36 = 100 \\Rightarrow v = 10\\text{ m s}^{-1}$$\n\n(c) From $v = u + at$: $10 = 8 + 3t \\Rightarrow t = \\frac{2}{3}$ s. Then\n$$s = \\frac{(u + v)}{2}t = \\frac{18}{2} \\times \\frac{2}{3} = 6\\text{ m}$$ ✓\n\nWith Ben's value $v = 14$: $t = 2$ s and $s = \\frac{22}{2} \\times 2 = 22 \\ne 6$, which confirms his answer is wrong.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q09",
+  "topicId": "mech-suvat",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A car starts from rest and accelerates uniformly at $2\\text{ m s}^{-2}$ for 6 s. It then accelerates uniformly at $0.5\\text{ m s}^{-2}$ for a further 100 m. Chloe finds the speed of the car at the end of the 100 m.\n\nLine 1: Stage 1: $v = u + at = 0 + 2 \\times 6 = 12\\text{ m s}^{-1}$\nLine 2: Stage 2: $u = 0$, $a = 0.5$, $s = 100$\nLine 3: $v^2 = 0^2 + 2(0.5)(100) = 100$\nLine 4: $v = 10\\text{ m s}^{-1}$\n\n(a) Identify Chloe's error and explain why her final answer cannot be right.\n\n(b) Find the correct speed at the end of the 100 m, to 3 significant figures.\n\n(c) Find the total time for the two stages, to 3 significant figures.",
+  "hint": "What is the car's velocity at the moment stage 2 begins?",
+  "answer": "(a) Line 2: $u = 0$ only at the very start. Stage 2 begins at $12\\text{ m s}^{-1}$, so $u = 12$. Her answer of $10\\text{ m s}^{-1}$ is slower than at the start of stage 2, although the car is still accelerating. (b) $15.6\\text{ m s}^{-1}$ (c) 13.2 s",
+  "solution": "(a) **Line 2** is wrong: Chloe has taken $u = 0$ for stage 2. The car only starts from rest at the beginning of stage 1; stage 2 begins with the final velocity of stage 1, so $u = 12\\text{ m s}^{-1}$. Her answer of $10\\text{ m s}^{-1}$ cannot be right: the car is still accelerating in stage 2, so its speed must be more than 12.\n\n(b) Stage 2: $u = 12$, $a = 0.5$, $s = 100$.\n$$v^2 = 12^2 + 2(0.5)(100) = 144 + 100 = 244 \\Rightarrow v = \\sqrt{244} = 15.6\\text{ m s}^{-1}\\text{ (3 s.f.)}$$\n\n(c) Stage 2 time: $t = \\dfrac{v - u}{a} = \\dfrac{15.620 - 12}{0.5} = 7.24$ s. Total time $= 6 + 7.24 = 13.2$ s (3 s.f.).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q10",
+  "topicId": "mech-suvat",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The velocity–time graph shows a particle moving in a straight line with constant acceleration $a$. Its velocity increases from $u$ to $v$ in time $t$, and $s$ is its displacement in this time.\n\n(a) Use the gradient of the graph to show that $v = u + at$.\n\n(b) Use the area under the graph to show that $s = \\dfrac{(u + v)}{2}t$.\n\n(c) Hence prove that $s = ut + \\frac{1}{2}at^2$ and that $v^2 = u^2 + 2as$.\n\n(d) Explain why these equations cannot be used for a car whose velocity–time graph is curved.",
+  "hint": "For (c), substitute $v = u + at$ into the result of (b) to get the first one. For the second, eliminate $t$ using $t = \\frac{v - u}{a}$.",
+  "answer": "(a) gradient $a = \\frac{v - u}{t} \\Rightarrow v = u + at$ (b) area of trapezium $= \\frac{1}{2}(u + v)t$ (c) proofs shown in the solution (d) They assume constant acceleration (a straight-line graph); for a curved graph the gradient (acceleration) changes.",
+  "solution": "(a) The graph is a straight line from $(0, u)$ to $(t, v)$. Acceleration is the gradient:\n$$a = \\frac{v - u}{t} \\Rightarrow at = v - u \\Rightarrow v = u + at$$\n\n(b) Displacement is the area under the graph, a trapezium with parallel sides $u$ and $v$ and width $t$:\n$$s = \\frac{1}{2}(u + v)t = \\frac{(u + v)}{2}t$$\n\n(c) Substitute $v = u + at$ into (b):\n$$s = \\frac{(u + u + at)}{2}t = \\frac{(2u + at)t}{2} = ut + \\tfrac{1}{2}at^2$$\n\nFrom (a), $t = \\dfrac{v - u}{a}$. Substitute into (b):\n$$s = \\frac{(u + v)}{2} \\cdot \\frac{(v - u)}{a} = \\frac{v^2 - u^2}{2a}$$\n$$\\Rightarrow 2as = v^2 - u^2 \\Rightarrow v^2 = u^2 + 2as$$\n\n(d) All the equations come from a **straight-line** $v$–$t$ graph, i.e. a constant gradient, which means constant acceleration. If the graph is curved the acceleration is changing, so neither the gradient formula nor the trapezium area formula applies (calculus is needed instead).",
+  "linkedTopicIds": [
+   "mech-kinematics-graphs",
+   "alg-rearranging-formulae"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 230\" width=\"320\" height=\"230\"><line x1=\"36\" y1=\"196\" x2=\"314\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M314,196 l-6,-3.3 l0,6.6 z\" fill=\"currentColor\"/><line x1=\"40\" y1=\"200\" x2=\"40\" y2=\"6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M40,6 l-3.3,6 l6.6,0 z\" fill=\"currentColor\"/><text x=\"312\" y=\"189\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">time</text><text x=\"47\" y=\"16\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">velocity</text><text x=\"35\" y=\"211\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"246.4\" y1=\"193\" x2=\"246.4\" y2=\"199\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"246.4\" y=\"212\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">t</text><line x1=\"37\" y1=\"142.6\" x2=\"43\" y2=\"142.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"34\" y=\"146.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">u</text><line x1=\"37\" y1=\"53.6\" x2=\"43\" y2=\"53.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"34\" y=\"57.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">v</text><path d=\"M40,196 L40,142.6 L246.4,53.6 L246.4,196 L40,196\" fill=\"#3b82f6\"  fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"246.4\" y1=\"196\" x2=\"246.4\" y2=\"53.6\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"40\" y1=\"53.6\" x2=\"246.4\" y2=\"53.6\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M40,142.6 L246.4,53.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"143.2\" y=\"160.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">area = s</text></svg>"
+ },
+ {
+  "id": "mech-suvat-q11",
+  "topicId": "mech-suvat",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A car is travelling along a straight road at $30\\text{ m s}^{-1}$ (about 67 mph) when the driver sees a fallen tree 75 m ahead. The driver's reaction time is 0.7 s, during which the car continues at $30\\text{ m s}^{-1}$. The car then brakes, decelerating uniformly at $7.5\\text{ m s}^{-2}$.\n\n(a) Find the total stopping distance, and show that the car does not stop before reaching the tree.\n\n(b) Find the speed of the car when it reaches the tree, to 3 significant figures.\n\n(c) Find, to 3 significant figures, the greatest initial speed at which the car could stop before reaching the tree, assuming the same reaction time and deceleration.",
+  "hint": "Treat it as two stages: constant speed during the reaction time, then constant deceleration with $a = -7.5$.",
+  "answer": "(a) 81 m, which is more than 75 m (b) $9.49\\text{ m s}^{-1}$ (c) $28.7\\text{ m s}^{-1}$",
+  "solution": "Take the direction of motion as positive.\n\n(a) **Thinking distance** (constant speed): $30 \\times 0.7 = 21$ m.\n\n**Braking distance:** $u = 30$, $v = 0$, $a = -7.5$:\n$$0 = 30^2 + 2(-7.5)s \\Rightarrow 15s = 900 \\Rightarrow s = 60\\text{ m}$$\nStopping distance $= 21 + 60 = 81$ m $> 75$ m, so the car hits the tree.\n\n(b) The car has $75 - 21 = 54$ m in which to brake: $u = 30$, $a = -7.5$, $s = 54$.\n$$v^2 = 900 + 2(-7.5)(54) = 900 - 810 = 90 \\Rightarrow v = \\sqrt{90} = 9.49\\text{ m s}^{-1}\\text{ (3 s.f.)}$$\n\n(c) Let the initial speed be $V$. Thinking distance $0.7V$; braking distance $\\dfrac{V^2}{2 \\times 7.5} = \\dfrac{V^2}{15}$.\n$$0.7V + \\frac{V^2}{15} = 75 \\Rightarrow V^2 + 10.5V - 1125 = 0$$\n$$V = \\frac{-10.5 + \\sqrt{10.5^2 + 4500}}{2} = \\frac{-10.5 + 67.90}{2} = 28.7\\text{ m s}^{-1}\\text{ (3 s.f.)}$$\n(the negative root is rejected). That is about 103 km/h: a small reduction in speed makes the difference.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "mech-suvat-q12",
+  "topicId": "mech-suvat",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 10,
+  "question": "A cyclist moves along a straight horizontal road. She passes point A with speed $4\\text{ m s}^{-1}$ and accelerates uniformly at $0.6\\text{ m s}^{-2}$ for 15 s until she reaches point B. She then decelerates uniformly at $0.5\\text{ m s}^{-2}$ from B until she comes to rest at point C.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that her speed at B is $13\\text{ m s}^{-1}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the distance AB.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the distance BC.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the total time taken to travel from A to C.",
+    "marks": 2
+   },
+   {
+    "label": "e",
+    "prompt": "Find the average speed of the cyclist from A to C.",
+    "marks": 2
+   }
+  ],
+  "hint": "Treat AB and BC as separate stages. The final velocity of stage AB is the initial velocity of stage BC.",
+  "answer": "(a) $v = 4 + 0.6 \\times 15 = 13$ (b) 127.5 m (c) 169 m (d) 41 s (e) $7.23\\text{ m s}^{-1}$ (3 s.f.)",
+  "solution": "(a) $u = 4$, $a = 0.6$, $t = 15$: M1 use of $v = u + at$\n$$v = 4 + 0.6 \\times 15 = 13\\text{ m s}^{-1}$$ A1 (shown)\n\n(b) $s = ut + \\frac{1}{2}at^2 = 4(15) + \\frac{1}{2}(0.6)(15^2)$ M1\n$$= 60 + 67.5 = 127.5\\text{ m}$$ A1\n(or $s = \\frac{(4 + 13)}{2} \\times 15 = 127.5$)\n\n(c) $u = 13$, $v = 0$, $a = -0.5$: $0 = 13^2 + 2(-0.5)s$ M1 (correct signs, $u = 13$)\n$$s = 169\\text{ m}$$ A1\n\n(d) BC: $0 = 13 - 0.5t \\Rightarrow t = 26$ s M1\nTotal time $= 15 + 26 = 41$ s A1\n\n(e) Average speed $= \\dfrac{\\text{total distance}}{\\text{total time}} = \\dfrac{127.5 + 169}{41}$ M1\n$$= \\frac{296.5}{41} = 7.23\\text{ m s}^{-1}\\text{ (3 s.f.)}$$ A1\n\nNote: a single suvat equation cannot be used for A to C because the acceleration changes at B.\n\nTotal: 10 marks",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q13",
+  "topicId": "mech-suvat",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A car travels along a straight road at a constant $24\\text{ m s}^{-1}$. At $t = 0$ it passes a stationary police motorcyclist. At $t = 3$ the motorcyclist sets off in pursuit, accelerating uniformly at $4\\text{ m s}^{-2}$ until reaching her maximum speed of $36\\text{ m s}^{-1}$, which she then maintains.\n\n(a) Find the time at which the motorcyclist reaches her maximum speed, and show that she has not yet caught the car at this time.\n\n(b) Find the time at which the motorcyclist draws level with the car, and the distance she has travelled by then.",
+  "hint": "Measure all times from $t = 0$. The motorcyclist's motion has two stages; find where both vehicles are at the end of her first stage.",
+  "answer": "(a) $t = 12$; she has travelled 162 m, the car 288 m (b) $t = 22.5$ s; 540 m",
+  "solution": "(a) Motorcyclist, stage 1: $u = 0$, $a = 4$, $v = 36$:\n$$36 = 0 + 4t_1 \\Rightarrow t_1 = 9\\text{ s}$$\nShe starts at $t = 3$, so reaches $36\\text{ m s}^{-1}$ at $t = 12$. Distance in stage 1:\n$$s = \\tfrac{1}{2}(4)(9^2) = 162\\text{ m}$$\nThe car has travelled $24 \\times 12 = 288$ m. $162 < 288$, so she has not yet caught it (she is 126 m behind).\n\n(b) For $t \\ge 12$:\n$$\\text{motorcyclist: } 162 + 36(t - 12) \\qquad \\text{car: } 24t$$\n$$162 + 36t - 432 = 24t \\Rightarrow 12t = 270 \\Rightarrow t = 22.5\\text{ s}$$\nDistance $= 24 \\times 22.5 = 540$ m.\n\nCheck: $162 + 36 \\times 10.5 = 162 + 378 = 540$ ✓. (Equivalently, she closes the 126 m gap at a relative speed of $36 - 24 = 12\\text{ m s}^{-1}$, taking 10.5 s.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q14",
+  "topicId": "mech-suvat",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "In a model of a 100 m race, a school sprinter starts from rest and accelerates uniformly for 5 s, then runs at a constant speed $V\\text{ m s}^{-1}$ for the rest of the race. She finishes in 12.5 s.\n\n(a) Find $V$ and the acceleration in the first 5 seconds.\n\n(b) Find the time at which she passes the 50 m mark.\n\n(c) Jo tries to find the race time using $s = ut + \\frac{1}{2}at^2$ with $s = 100$, $u = 0$ and the acceleration from (a), and gets $t = 10$ s. Explain why Jo's method is not valid.\n\n(d) Suggest one way in which the model could be refined.",
+  "hint": "Total distance $=$ distance while accelerating $+$ distance at constant speed. Use $s = \\frac{(u+v)}{2}t$ for the first stage.",
+  "answer": "(a) $V = 10$; $2\\text{ m s}^{-2}$ (b) 7.5 s (c) The acceleration is only $2\\text{ m s}^{-2}$ for the first 5 s; after that it is zero, so one suvat equation cannot cover the whole race. (d) e.g. let the acceleration decrease gradually rather than stop suddenly; include a reaction time at the start; allow her to slow down near the end.",
+  "solution": "(a) Stage 1: $u = 0$, $v = V$, $t = 5$: $s_1 = \\frac{(0 + V)}{2} \\times 5 = 2.5V$.\n\nStage 2: constant speed $V$ for $12.5 - 5 = 7.5$ s: $s_2 = 7.5V$.\n$$2.5V + 7.5V = 100 \\Rightarrow V = 10$$\nAcceleration $= \\dfrac{10 - 0}{5} = 2\\text{ m s}^{-2}$.\n\n(b) After 5 s she has run $2.5 \\times 10 = 25$ m. The next 25 m at $10\\text{ m s}^{-1}$ takes 2.5 s, so she passes 50 m at $t = 7.5$ s.\n\n(c) suvat equations only apply while the acceleration is **constant**. The acceleration is $2\\text{ m s}^{-2}$ for the first 5 s and zero afterwards, so the race must be split into two stages. Jo's equation assumes she keeps accelerating for the whole race (she would finish at $20\\text{ m s}^{-1}$, which is unrealistic).\n\n(d) Any sensible refinement, e.g. acceleration that decreases gradually rather than dropping to zero instantly; a reaction time at the start; a slight deceleration near the finish; air resistance.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-suvat-q15",
+  "topicId": "mech-suvat",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A ball is rolled up a long straight slope from a point O with speed $6\\text{ m s}^{-1}$. While on the slope it has a constant acceleration of $2\\text{ m s}^{-2}$ directed **down** the slope (whether it is moving up or down).\n\n(a) Find the times at which the ball is 5 m up the slope from O, and explain why there are two answers.\n\n(b) Find the greatest distance of the ball from O up the slope.\n\n(c) Find the displacement and the velocity of the ball 7 s after it is rolled, and interpret your answers.",
+  "hint": "Take up the slope as positive, so $a = -2$. The equation $s = ut + \\frac{1}{2}at^2$ still holds after the ball turns round, because the acceleration has not changed.",
+  "answer": "(a) $t = 1$ s and $t = 5$ s: it passes the point on the way up and again on the way down. (b) 9 m (c) $s = -7$ m, $v = -8\\text{ m s}^{-1}$: the ball is 7 m down the slope from O (it has rolled back past O), moving down the slope at $8\\text{ m s}^{-1}$.",
+  "solution": "Take up the slope as positive: $u = 6$, $a = -2$.\n\n(a) $s = 5$:\n$$5 = 6t - t^2 \\Rightarrow t^2 - 6t + 5 = 0 \\Rightarrow (t - 1)(t - 5) = 0$$\n$t = 1$ s or $t = 5$ s. The ball passes the point 5 m up the slope on its way up ($t = 1$), stops, rolls back, and passes the same point on its way down ($t = 5$). Because the acceleration is constant throughout, one equation describes both.\n\n(b) At the furthest point $v = 0$:\n$$0 = 36 + 2(-2)s \\Rightarrow s = 9\\text{ m}$$\n(This happens at $t = 3$, halfway between 1 and 5, by symmetry.)\n\n(c) $t = 7$:\n$$s = 6(7) - (7^2) = 42 - 49 = -7\\text{ m} \\qquad v = 6 - 2(7) = -8\\text{ m s}^{-1}$$\nThe negative displacement means the ball is 7 m **down** the slope from O: it has rolled back past its starting point. The negative velocity means it is moving down the slope, at a speed of $8\\text{ m s}^{-1}$.",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"340\" height=\"215\"><path d=\"M20,200 L301.9,97.4 L301.9,200 L20,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"101.5\" cy=\"160.8\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"108.6\" y=\"187.2\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><line x1=\"111.7\" y1=\"142.1\" x2=\"161.5\" y2=\"124\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M168.1,121.6 L162.6,127 L160.5,121 z\" fill=\"currentColor\"/><text x=\"174.1\" y=\"115.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">6 m s⁻¹</text><path d=\"M54,200 A34,34 0 0 0 51.9,188.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/></svg>"
+ },
+ {
+  "id": "mech-suvat-q16",
+  "topicId": "mech-suvat",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A particle moves along a straight line with constant acceleration $a\\text{ m s}^{-2}$, starting with velocity $u\\text{ m s}^{-1}$ at $t = 0$.\n\n(a) Show that the distance travelled in the $n$th second (from $t = n - 1$ to $t = n$) is $u + a\\left(n - \\frac{1}{2}\\right)$, assuming the particle does not change direction.\n\n(b) Hence show that the distances travelled in successive seconds form an arithmetic sequence, and state its common difference.\n\n(c) The particle travels 12 m in the 3rd second and 20 m in the 5th second. Find $u$ and $a$.\n\n(d) Use the sum of an arithmetic series to find the distance travelled in the first 10 seconds, and check your answer with a suvat equation.",
+  "hint": "Distance in the $n$th second $= s(n) - s(n-1)$, where $s(t) = ut + \\frac{1}{2}at^2$.",
+  "answer": "(a) Shown (b) Each term is $a$ more than the previous one: common difference $a$ (c) $u = 2$, $a = 4$ (d) 220 m",
+  "solution": "(a) $s(t) = ut + \\frac{1}{2}at^2$. Distance in the $n$th second:\n$$s(n) - s(n - 1) = un + \\tfrac{1}{2}an^2 - u(n - 1) - \\tfrac{1}{2}a(n - 1)^2$$\n$$= u + \\tfrac{1}{2}a\\big(n^2 - (n^2 - 2n + 1)\\big) = u + \\tfrac{1}{2}a(2n - 1) = u + a\\left(n - \\tfrac{1}{2}\\right)$$\n\n(b) $d_n = u + a\\left(n - \\frac{1}{2}\\right)$ is linear in $n$, and\n$$d_{n+1} - d_n = a$$\nwhich is constant, so the distances form an arithmetic sequence with common difference $a$.\n\n(c)\n$$d_3 = u + 2.5a = 12 \\qquad d_5 = u + 4.5a = 20$$\nSubtracting: $2a = 8 \\Rightarrow a = 4$; then $u = 12 - 10 = 2$.\n\n(d) First term $d_1 = u + \\frac{1}{2}a = 4$, common difference 4:\n$$S_{10} = \\frac{10}{2}\\big(2 \\times 4 + 9 \\times 4\\big) = 5 \\times 44 = 220\\text{ m}$$\nCheck: $s = ut + \\frac{1}{2}at^2 = 2(10) + \\frac{1}{2}(4)(100) = 20 + 200 = 220$ m ✓",
+  "linkedTopicIds": [
+   "pure-arithmetic-series",
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "mech-suvat-q17",
+  "topicId": "mech-suvat",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A bus is at rest at a bus stop. A cyclist is riding towards the bus stop, along the road, at a constant speed $V\\text{ m s}^{-1}$. When the cyclist is 50 m behind the bus, the bus sets off in the same direction with constant acceleration $1\\text{ m s}^{-2}$.\n\n(a) Show that the cyclist draws level with the bus at time $t$ seconds after it starts, where $t^2 - 2Vt + 100 = 0$.\n\n(b) Find the least value of $V$ for which the cyclist catches the bus, and explain the significance of this value.\n\n(c) Given that $V = 12.5$, solve the equation and interpret both solutions in context.",
+  "hint": "Measure positions from the cyclist's position when the bus starts. For (b), think about when a quadratic has real roots.",
+  "answer": "(a) Shown (b) $V = 10$: the cyclist just reaches the bus at $t = 10$ s, at the instant when the bus's speed equals hers, then falls behind. (c) $t = 5$ and $t = 20$: the cyclist overtakes the bus at 5 s; the bus, now faster, overtakes her again at 20 s.",
+  "solution": "(a) Take the cyclist's position at $t = 0$ as the origin. Cyclist: $s = Vt$. Bus: starts 50 m ahead, $u = 0$, $a = 1$: $s = 50 + \\frac{1}{2}t^2$.\nThey are level when\n$$Vt = 50 + \\tfrac{1}{2}t^2 \\Rightarrow t^2 - 2Vt + 100 = 0$$\n\n(b) The cyclist catches the bus only if this equation has a real solution, so the discriminant must be non-negative:\n$$(2V)^2 - 4(1)(100) \\ge 0 \\Rightarrow 4V^2 \\ge 400 \\Rightarrow V \\ge 10$$\n(with $V > 0$). Least value: $V = 10\\text{ m s}^{-1}$.\n\nWhen $V = 10$ there is a repeated root $t = 10$: the cyclist just draws level at $t = 10$ s, exactly when the bus's speed has reached $1 \\times 10 = 10\\text{ m s}^{-1}$, equal to hers. After that the bus is faster, so she never gets ahead.\n\n(c) $V = 12.5$: $t^2 - 25t + 100 = 0 \\Rightarrow (t - 5)(t - 20) = 0$, so $t = 5$ or $t = 20$.\n\nAt $t = 5$ the cyclist draws level with and overtakes the bus (the bus is only doing $5\\text{ m s}^{-1}$). At $t = 20$ the bus, now doing $20\\text{ m s}^{-1}$, catches and overtakes the cyclist. She is ahead of the bus for 15 s.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ]
+ }
+]
