@@ -1,0 +1,317 @@
+[
+ {
+  "id": "alg-completing-the-square-q01",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $x^2 + 8x + 20$ in the form $(x + p)^2 + q$. Hence state the coordinates of the turning point of $y = x^2 + 8x + 20$.",
+  "hint": "Halve the coefficient of $x$ to find $p$. Then $(x + p)^2$ gives you $p^2$ too many, so subtract it.",
+  "answer": "$(x + 4)^2 + 4$; turning point $(-4, 4)$",
+  "solution": "Half of 8 is 4, and $(x + 4)^2 = x^2 + 8x + 16$. This has 16 in it that we don't want, so subtract it:\n$$x^2 + 8x + 20 = (x + 4)^2 - 16 + 20 = (x + 4)^2 + 4$$\n\nCheck by expanding: $x^2 + 8x + 16 + 4 = x^2 + 8x + 20$ ✓\n\n$(x + 4)^2 \\ge 0$, and it equals 0 when $x = -4$. So the minimum value of $y$ is 4, at $x = -4$.\n\n**Turning point:** $(-4, 4)$, a minimum.",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q02",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $x^2 - 8x + 20$ in the form $(x + p)^2 + q$. Hence state the coordinates of the turning point of $y = x^2 - 8x + 20$.",
+  "hint": "Half of $-8$ is $-4$.",
+  "answer": "$(x - 4)^2 + 4$; turning point $(4, 4)$",
+  "solution": "Half of $-8$ is $-4$, and $(x - 4)^2 = x^2 - 8x + 16$:\n$$x^2 - 8x + 20 = (x - 4)^2 - 16 + 20 = (x - 4)^2 + 4$$\n\nThe bracket is zero when $x - 4 = 0$, i.e. $x = 4$, so the turning point is $(4, 4)$.\n\n**What changed:** only the sign of the $x$ term. The sign inside the bracket changed, so the turning point moved from $x = -4$ to $x = 4$ (a reflection in the $y$-axis). $q$ did not change, because $(-4)^2 = 4^2 = 16$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q03",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $x^2 - 8x + 10$ in the form $(x + p)^2 + q$. Hence state the coordinates of the turning point of $y = x^2 - 8x + 10$.",
+  "hint": "The bracket is the same as for $x^2 - 8x + 20$. What happens to $q$?",
+  "answer": "$(x - 4)^2 - 6$; turning point $(4, -6)$",
+  "solution": "$$x^2 - 8x + 10 = (x - 4)^2 - 16 + 10 = (x - 4)^2 - 6$$\n\nTurning point: $(4, -6)$.\n\n**What changed:** only the constant term, down by 10. The bracket is unchanged, $q$ went down by 10 (from 4 to $-6$), and the turning point moved straight down by 10.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q04",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Write $x^2 - 7x + 10$ in the form $(x + p)^2 + q$. Hence state the coordinates of the turning point of $y = x^2 - 7x + 10$.",
+  "hint": "Half of $-7$ is $-\\frac{7}{2}$. Work with fractions: $\\left(\\frac{7}{2}\\right)^2 = \\frac{49}{4}$.",
+  "answer": "$\\left(x - \\frac{7}{2}\\right)^2 - \\frac{9}{4}$; turning point $\\left(\\frac{7}{2}, -\\frac{9}{4}\\right)$",
+  "solution": "Half of $-7$ is $-\\frac{7}{2}$:\n$$x^2 - 7x + 10 = \\left(x - \\tfrac{7}{2}\\right)^2 - \\tfrac{49}{4} + 10 = \\left(x - \\tfrac{7}{2}\\right)^2 - \\tfrac{49}{4} + \\tfrac{40}{4} = \\left(x - \\tfrac{7}{2}\\right)^2 - \\tfrac{9}{4}$$\n\nTurning point: $\\left(\\frac{7}{2}, -\\frac{9}{4}\\right)$, i.e. $(3.5, -2.25)$.\n\n**What changed:** the $x$ coefficient became odd, so $p$ is a fraction. The method is identical: halve, square, subtract. (Writing $(x - 7)^2$ would be wrong: that expands to $x^2 - 14x + 49$.)\n\nCheck: $x^2 - 7x + 10 = (x - 2)(x - 5)$ has roots 2 and 5, and the turning point is halfway between them at $x = 3.5$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q05",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Kofi is asked to write $x^2 + 10x + 4$ in the form $(x + p)^2 + q$. His working is shown below.\n\n$$x^2 + 10x + 4 = (x + 10)^2 - 100 + 4$$\n$$= (x + 10)^2 - 96$$\n\nIdentify Kofi's mistake, explain it, and write the expression correctly.",
+  "hint": "Expand $(x + 10)^2$. How many $x$s does it give?",
+  "answer": "He used the whole coefficient 10 instead of half of it. Correct: $(x + 5)^2 - 21$.",
+  "solution": "**The mistake:** the first line. Kofi used $(x + 10)^2$, but\n$$(x + 10)^2 = x^2 + 20x + 100$$\nwhich contains $20x$, not $10x$. In $(x + p)^2 = x^2 + 2px + p^2$ the coefficient of $x$ is $2p$, so $p$ must be **half** the coefficient of $x$.\n\n**Correct working:** half of 10 is 5, and $(x + 5)^2 = x^2 + 10x + 25$:\n$$x^2 + 10x + 4 = (x + 5)^2 - 25 + 4 = (x + 5)^2 - 21$$\n\nCheck: $x^2 + 10x + 25 - 21 = x^2 + 10x + 4$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q06",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Mia is asked to find the turning point of $y = x^2 - 12x + 40$ by completing the square. Her working is shown below.\n\n$$x^2 - 12x + 40 = (x - 6)^2 + 40$$\n\"So the turning point is $(6, 40)$.\"\n\nIdentify Mia's mistake, explain it, and find the correct turning point.",
+  "hint": "Expand $(x - 6)^2 + 40$. Do you get back to $x^2 - 12x + 40$?",
+  "answer": "She did not subtract $6^2 = 36$. Correct: $(x - 6)^2 + 4$, so the turning point is $(6, 4)$.",
+  "solution": "**The mistake:** the first line. $(x - 6)^2 = x^2 - 12x + 36$, so\n$$(x - 6)^2 + 40 = x^2 - 12x + 76$$\nwhich is 36 too much. Mia forgot to subtract the square of the half.\n\n**Correct working:**\n$$x^2 - 12x + 40 = (x - 6)^2 - 36 + 40 = (x - 6)^2 + 4$$\n\nThe minimum value is 4, when $x = 6$. **Turning point: $(6, 4)$.**\n\n(Her $x$-coordinate was right; the error only affected $q$. Always check by expanding.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q07",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Solve $x^2 + 6x - 2 = 0$ by completing the square. Give your answers in exact form.",
+  "hint": "Write the left-hand side as $(x + 3)^2 + q$, then get the squared bracket on its own.",
+  "answer": "$x = -3 \\pm \\sqrt{11}$",
+  "solution": "Complete the square:\n$$x^2 + 6x - 2 = (x + 3)^2 - 9 - 2 = (x + 3)^2 - 11$$\n\nSo the equation is\n$$(x + 3)^2 - 11 = 0$$\n$$(x + 3)^2 = 11$$\n$$x + 3 = \\pm\\sqrt{11}$$\n$$x = -3 \\pm \\sqrt{11}$$\n\n**Answer:** $x = -3 + \\sqrt{11}$ or $x = -3 - \\sqrt{11}$ (approximately $0.317$ and $-6.32$).",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q08",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Write $3x^2 - 12x + 5$ in the form $a(x + p)^2 + q$. Hence write down the coordinates of the turning point of $y = 3x^2 - 12x + 5$ and state whether it is a maximum or a minimum.",
+  "hint": "Factor 3 out of the first two terms only: $3(x^2 - 4x) + 5$.",
+  "answer": "$3(x - 2)^2 - 7$; turning point $(2, -7)$, a minimum",
+  "solution": "Take 3 out of the $x^2$ and $x$ terms:\n$$3x^2 - 12x + 5 = 3(x^2 - 4x) + 5$$\n\nComplete the square inside the bracket:\n$$= 3\\left[(x - 2)^2 - 4\\right] + 5$$\n\nMultiply out the square bracket (the $-4$ is multiplied by 3 as well):\n$$= 3(x - 2)^2 - 12 + 5 = 3(x - 2)^2 - 7$$\n\nCheck: $3(x^2 - 4x + 4) - 7 = 3x^2 - 12x + 5$ ✓\n\nTurning point $(2, -7)$. Since $a = 3 > 0$, $3(x-2)^2 \\ge 0$ and the curve is $\\cup$-shaped, so it is a **minimum**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q09",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ellie is asked to find the turning point of $y = 2x^2 + 8x + 3$. Her working is shown below.\n\n$$2x^2 + 8x + 3 = 2(x^2 + 4x) + 3$$\n$$= 2(x + 2)^2 - 4 + 3$$\n$$= 2(x + 2)^2 - 1$$\n\"Turning point: $(-2, -1)$\"\n\nIdentify Ellie's mistake, explain it, and find the correct turning point.",
+  "hint": "Substitute $x = -2$ into $2x^2 + 8x + 3$. Do you get $-1$?",
+  "answer": "She did not multiply the $-4$ by 2. Correct: $2(x + 2)^2 - 5$, turning point $(-2, -5)$.",
+  "solution": "**The mistake:** the second line. Inside the bracket, $x^2 + 4x = (x + 2)^2 - 4$, so\n$$2(x^2 + 4x) + 3 = 2\\left[(x + 2)^2 - 4\\right] + 3$$\n\nThe $-4$ is inside the bracket that is multiplied by 2, so it becomes $-8$. Ellie only multiplied the $(x + 2)^2$ by 2.\n\n**Correct working:**\n$$= 2(x + 2)^2 - 8 + 3 = 2(x + 2)^2 - 5$$\n\n**Turning point: $(-2, -5)$** (a minimum, since $a = 2 > 0$).\n\nCheck: at $x = -2$, $y = 2(4) - 16 + 3 = -5$ ✓ (Ellie's value $-1$ fails this check.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q10",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Prove that $x^2 - 6x + 13 > 0$ for all real values of $x$.\n\n(b) Hence explain why the equation $x^2 - 6x + 13 = 0$ has no real solutions, and write down the minimum value of $x^2 - 6x + 13$.",
+  "hint": "Complete the square. What can you say about the sign of a squared bracket?",
+  "answer": "(a) $x^2 - 6x + 13 = (x - 3)^2 + 4 \\ge 4 > 0$ (b) The expression is never 0 (it is always at least 4); minimum value 4 (when $x = 3$).",
+  "solution": "**(a)** Complete the square:\n$$x^2 - 6x + 13 = (x - 3)^2 - 9 + 13 = (x - 3)^2 + 4$$\n\nFor every real $x$, $(x - 3)^2 \\ge 0$ (a square is never negative). Therefore\n$$(x - 3)^2 + 4 \\ge 0 + 4 = 4 > 0$$\nso $x^2 - 6x + 13 > 0$ for all real $x$. $\\blacksquare$\n\n**(b)** Since the expression is always at least 4, it can never equal 0, so $x^2 - 6x + 13 = 0$ has **no real solutions**. (Trying to solve gives $(x - 3)^2 = -4$, and no real number squares to a negative.)\n\nThe minimum value is **4**, when $(x - 3)^2 = 0$, i.e. at $x = 3$. The graph $y = x^2 - 6x + 13$ has its turning point at $(3, 4)$, above the $x$-axis.",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q11",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 5,
+  "question": "Here is an expression: $x^2 + 10x + 18$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write $x^2 + 10x + 18$ in the form $(x + a)^2 + b$, where $a$ and $b$ are integers.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence write down the coordinates of the turning point of the graph of $y = x^2 + 10x + 18$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Hence solve $x^2 + 10x + 18 = 0$. Give your answers in the form $p \\pm \\sqrt{q}$, where $p$ and $q$ are integers.",
+    "marks": 2
+   }
+  ],
+  "hint": "Half of 10 is 5. For (c), set your answer to (a) equal to 0 and isolate the square.",
+  "answer": "(a) $(x + 5)^2 - 7$ (b) $(-5, -7)$ (c) $x = -5 \\pm \\sqrt{7}$",
+  "solution": "**(a)**\n$$x^2 + 10x + 18 = (x + 5)^2 - 25 + 18 = (x + 5)^2 - 7$$\nB1 for $(x + 5)^2$; B1 for $-7$.\n\n**(b)** The bracket is zero when $x = -5$, giving $y = -7$. Turning point $(-5, -7)$. B1 ft from (a).\n\n**(c)**\n$$(x + 5)^2 - 7 = 0 \\Rightarrow (x + 5)^2 = 7 \\Rightarrow x + 5 = \\pm\\sqrt{7}$$\nM1 for isolating the square and square-rooting (with $\\pm$).\n$$x = -5 \\pm \\sqrt{7}$$\nA1.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q12",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A small business sells handmade candles. When the selling price is $\\pounds x$ per candle, the weekly profit, $\\pounds P$, is modelled by\n$$P = -5x^2 + 300x - 2500$$\n(a) Write $P$ in the form $c - a(x - b)^2$, where $a$, $b$ and $c$ are positive constants.\n\n(b) State the selling price that gives the maximum weekly profit, and the maximum profit.\n\n(c) Find the two selling prices that give a weekly profit of £1500.",
+  "hint": "Take $-5$ out of the first two terms: $-5(x^2 - 60x) - 2500$. Be careful: the subtracted square is multiplied by $-5$.",
+  "answer": "(a) $P = 2000 - 5(x - 30)^2$ (b) £30 per candle; maximum profit £2000 (c) £20 and £40",
+  "solution": "**(a)**\n$$P = -5(x^2 - 60x) - 2500$$\n$$= -5\\left[(x - 30)^2 - 900\\right] - 2500$$\n$$= -5(x - 30)^2 + 4500 - 2500$$\n$$= 2000 - 5(x - 30)^2$$\n\n**(b)** $5(x - 30)^2 \\ge 0$, so $P \\le 2000$, with equality when $x = 30$. The maximum weekly profit is **£2000**, when the price is **£30** per candle.\n\n**(c)**\n$$2000 - 5(x - 30)^2 = 1500$$\n$$5(x - 30)^2 = 500 \\Rightarrow (x - 30)^2 = 100 \\Rightarrow x - 30 = \\pm 10$$\n$$x = 20 \\text{ or } x = 40$$\n\nA price of **£20** or **£40** gives a profit of £1500 (symmetrical either side of £30).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-completing-the-square-q13",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Write $x^2 - 4x + 7$ in the form $(x + p)^2 + q$.\n\n(b) Hence describe fully the single transformation that maps the graph of $y = x^2$ onto the graph of $y = x^2 - 4x + 7$.\n\n(c) The graph of $y = x^2 - 4x + 7$ is translated by the vector $\\begin{pmatrix} -5 \\\\ 1 \\end{pmatrix}$. Find the equation of the new graph in the form $y = x^2 + bx + c$.",
+  "hint": "$y = (x - a)^2 + b$ is $y = x^2$ translated $a$ right and $b$ up. Track where the turning point goes.",
+  "answer": "(a) $(x - 2)^2 + 3$ (b) translation by $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$ (c) $y = x^2 + 6x + 13$",
+  "solution": "**(a)**\n$$x^2 - 4x + 7 = (x - 2)^2 - 4 + 7 = (x - 2)^2 + 3$$\n\n**(b)** $y = (x - 2)^2 + 3$ is $y = x^2$ moved 2 units right (replacing $x$ by $x - 2$) and 3 units up. The turning point moves from $(0, 0)$ to $(2, 3)$.\n\n**Translation by the vector $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$.**\n\n**(c)** The turning point $(2, 3)$ moves to $(2 - 5, 3 + 1) = (-3, 4)$. The shape is unchanged, so the new curve is\n$$y = (x + 3)^2 + 4 = x^2 + 6x + 9 + 4 = x^2 + 6x + 13$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q14",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 170\" width=\"320\" height=\"170\"><path d=\"M50,40 L270,40\" stroke=\"currentColor\" stroke-width=\"3\"/><path d=\"M50,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M62,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M74,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M86,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M98,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M110,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M122,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M134,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M146,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M158,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M170,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M182,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M194,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M206,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M218,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M230,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M242,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M254,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M266,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M278,40 l8,-10\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"274\" y=\"38\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">wall</text><rect x=\"70\" y=\"40\" width=\"180\" height=\"90\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M70,40 L70,130 L250,130 L250,40\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"7 3\"/><text x=\"62\" y=\"90.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x m</text><text x=\"258\" y=\"90.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">x m</text><text x=\"160.0\" y=\"152\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(60 − 2x) m</text><text x=\"160.0\" y=\"90.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">pen</text></svg>",
+  "question": "A farmer has 60 m of fencing to make a rectangular pen against a long straight wall. The wall forms one side of the pen, and the fencing forms the other three sides. The two sides perpendicular to the wall are each $x$ m long.\n\nBy completing the square, find the maximum possible area of the pen, and the dimensions that give it.\n\nThe diagram is not drawn to scale.",
+  "hint": "The side parallel to the wall is $(60 - 2x)$ m. Write the area $A$ in terms of $x$, then complete the square on $-2x^2 + 60x$.",
+  "answer": "Maximum area 450 $\\text{m}^2$, when the pen is 15 m by 30 m (the 30 m side parallel to the wall).",
+  "solution": "The side parallel to the wall uses the rest of the fencing: $60 - 2x$ m. So the area is\n$$A = x(60 - 2x) = 60x - 2x^2$$\n\nComplete the square (take out $-2$ first):\n$$A = -2(x^2 - 30x)$$\n$$= -2\\left[(x - 15)^2 - 225\\right]$$\n$$= 450 - 2(x - 15)^2$$\n\nSince $2(x - 15)^2 \\ge 0$, $A \\le 450$, with equality when $x = 15$.\n\nThen $60 - 2(15) = 30$.\n\n**Maximum area $= 450 \\text{ m}^2$**, with the two sides perpendicular to the wall 15 m long and the side parallel to the wall 30 m long.\n\nCheck: $15 + 15 + 30 = 60$ m of fencing ✓, $15 \\times 30 = 450$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "geo-perimeter-area"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q15",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><line x1=\"20\" y1=\"117.5\" x2=\"282\" y2=\"117.5\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"100\" y1=\"264\" x2=\"100\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M282,117.5 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M100,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"282\" y=\"110.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"107\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"94\" y=\"131.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M76,264 L252,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M100,117.5 L208.8,76.9\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"208.8\" cy=\"76.9\" r=\"3.2\" fill=\"currentColor\"/><text x=\"200.8\" y=\"74.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">Q(t, 2t − 5)</text><text x=\"244\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = 2x − 5</text></svg>",
+  "question": "$Q(t, 2t - 5)$ is a point on the line $y = 2x - 5$, and $O$ is the origin.\n\n(a) Show that $OQ^2 = 5t^2 - 20t + 25$.\n\n(b) By completing the square, find the coordinates of the point on the line that is closest to $O$, and the shortest distance from $O$ to the line. Give the distance as a surd.",
+  "hint": "Use the distance formula $OQ^2 = (x_Q - 0)^2 + (y_Q - 0)^2$. Making $OQ^2$ as small as possible also makes $OQ$ as small as possible.",
+  "answer": "(a) $OQ^2 = t^2 + (2t - 5)^2 = 5t^2 - 20t + 25$ (b) closest point $(2, -1)$; shortest distance $\\sqrt{5}$",
+  "solution": "**(a)**\n$$OQ^2 = t^2 + (2t - 5)^2 = t^2 + 4t^2 - 20t + 25 = 5t^2 - 20t + 25$$\n\n**(b)** Complete the square:\n$$5t^2 - 20t + 25 = 5(t^2 - 4t) + 25 = 5\\left[(t - 2)^2 - 4\\right] + 25 = 5(t - 2)^2 + 5$$\n\n$5(t - 2)^2 \\ge 0$, so $OQ^2 \\ge 5$, with the minimum when $t = 2$.\n\nWhen $t = 2$: $Q = (2, 2(2) - 5) = (2, -1)$.\n\nShortest distance $= \\sqrt{5}$ (about 2.24 units).\n\n(Check: the gradient of $OQ$ is $-\\frac{1}{2}$ and the line has gradient 2; $2 \\times -\\frac{1}{2} = -1$, so $OQ$ is perpendicular to the line, as the shortest distance should be.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance",
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q16",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "question": "$$f(x) = -2x^2 + 12x - 13$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Express $f(x)$ in the form $a(x + b)^2 + c$, where $a$, $b$ and $c$ are constants to be found.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Write down the maximum value of $f(x)$ and the value of $x$ at which it occurs.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Solve $f(x) = 0$, giving your answers in the form $p \\pm \\dfrac{\\sqrt{q}}{2}$, where $p$ and $q$ are integers.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Hence find the maximum value of $\\dfrac{1}{2x^2 - 12x + 23}$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Take $-2$ out of the first two terms. (d) Write $2x^2 - 12x + 23$ in terms of $f(x)$.",
+  "answer": "(a) $f(x) = -2(x - 3)^2 + 5$ ($a = -2$, $b = -3$, $c = 5$) (b) maximum 5 when $x = 3$ (c) $x = 3 \\pm \\frac{\\sqrt{10}}{2}$ (d) $\\frac{1}{5}$",
+  "solution": "**(a)**\n$$f(x) = -2(x^2 - 6x) - 13$$\nM1 for taking out $-2$ from the first two terms.\n$$= -2\\left[(x - 3)^2 - 9\\right] - 13$$\nM1 for completing the square inside the bracket.\n$$= -2(x - 3)^2 + 18 - 13 = -2(x - 3)^2 + 5$$\nA1: $a = -2$, $b = -3$, $c = 5$.\n\n**(b)** $-2(x - 3)^2 \\le 0$, so $f(x) \\le 5$. Maximum value **5** (B1) when $x = 3$ (B1).\n\n**(c)**\n$$-2(x - 3)^2 + 5 = 0 \\Rightarrow (x - 3)^2 = \\tfrac{5}{2}$$\nM1 for making $(x - 3)^2$ the subject and square-rooting.\n$$x - 3 = \\pm\\sqrt{\\tfrac{5}{2}} = \\pm\\frac{\\sqrt{10}}{2} \\Rightarrow x = 3 \\pm \\frac{\\sqrt{10}}{2}$$\nA1 (using $\\sqrt{\\frac{5}{2}} = \\frac{\\sqrt{5}}{\\sqrt{2}} = \\frac{\\sqrt{10}}{2}$).\n\n**(d)** $2x^2 - 12x + 23 = -f(x) + 10 = 2(x - 3)^2 + 5$. M1 for expressing the denominator in completed-square form.\n\nIts minimum value is 5 (at $x = 3$), and it is always positive, so the fraction is greatest when the denominator is smallest:\n$$\\text{maximum value} = \\frac{1}{5}$$\nA1.",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q17",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The curve $C$ has equation $y = x^2 + 2kx + 3k + 4$, where $k$ is a constant.\n\n(a) Write $x^2 + 2kx + 3k + 4$ in the form $(x + p)^2 + q$, where $p$ and $q$ are in terms of $k$, and write down the coordinates of the turning point of $C$.\n\n(b) Find the values of $k$ for which the turning point of $C$ lies on the $x$-axis.\n\n(c) As $k$ varies, find the greatest possible value of the $y$-coordinate of the turning point.\n\n(d) Show that, for every value of $k$, the turning point of $C$ lies on the curve $y = 4 - 3x - x^2$.",
+  "hint": "(a) Half of $2k$ is $k$. (c) The $y$-coordinate is a quadratic in $k$: complete the square again. (d) Let the turning point be $(X, Y)$ and eliminate $k$.",
+  "answer": "(a) $(x + k)^2 + 3k + 4 - k^2$; turning point $(-k,\\ 3k + 4 - k^2)$ (b) $k = 4$ or $k = -1$ (c) $\\frac{25}{4}$ (when $k = \\frac{3}{2}$) (d) see solution",
+  "solution": "**(a)** Half of $2k$ is $k$, and $(x + k)^2 = x^2 + 2kx + k^2$:\n$$x^2 + 2kx + 3k + 4 = (x + k)^2 - k^2 + 3k + 4$$\n\nSo $p = k$, $q = 3k + 4 - k^2$, and the turning point is $(-k,\\ 3k + 4 - k^2)$.\n\n**(b)** On the $x$-axis the $y$-coordinate is zero:\n$$3k + 4 - k^2 = 0 \\Rightarrow k^2 - 3k - 4 = 0 \\Rightarrow (k - 4)(k + 1) = 0$$\n$$k = 4 \\text{ or } k = -1$$\n\n(Check $k = 4$: $y = x^2 + 8x + 16 = (x + 4)^2$, which touches the $x$-axis at $(-4, 0)$ ✓)\n\n**(c)** Complete the square on the $y$-coordinate as a function of $k$:\n$$-k^2 + 3k + 4 = -\\left(k^2 - 3k\\right) + 4 = -\\left[\\left(k - \\tfrac{3}{2}\\right)^2 - \\tfrac{9}{4}\\right] + 4 = \\tfrac{25}{4} - \\left(k - \\tfrac{3}{2}\\right)^2$$\n\nThis is greatest when $k = \\frac{3}{2}$, so the greatest possible $y$-coordinate is $\\dfrac{25}{4}$.\n\n**(d)** Let the turning point be $(X, Y)$, so $X = -k$ and $Y = 3k + 4 - k^2$. Substitute $k = -X$:\n$$Y = 3(-X) + 4 - (-X)^2 = 4 - 3X - X^2$$\n\nSo every turning point lies on $y = 4 - 3x - x^2$. $\\blacksquare$ (Consistent with (c): this curve has maximum $y = \\frac{25}{4}$ at $x = -\\frac{3}{2}$, i.e. $k = \\frac{3}{2}$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "alg-completing-the-square-q18",
+  "topicId": "alg-completing-the-square",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Prove, by completing the square, that the solutions of $ax^2 + bx + c = 0$, where $a \\ne 0$ and $b^2 - 4ac \\ge 0$, are\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$",
+  "hint": "Divide through by $a$ first, so the coefficient of $x^2$ is 1. Then half of $\\frac{b}{a}$ is $\\frac{b}{2a}$.",
+  "answer": "Proof: $ax^2 + bx + c = 0 \\Rightarrow \\left(x + \\frac{b}{2a}\\right)^2 = \\frac{b^2 - 4ac}{4a^2} \\Rightarrow x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ (see solution).",
+  "solution": "Since $a \\ne 0$, divide every term by $a$:\n$$x^2 + \\frac{b}{a}x + \\frac{c}{a} = 0$$\n\nComplete the square: half of $\\frac{b}{a}$ is $\\frac{b}{2a}$, so\n$$\\left(x + \\frac{b}{2a}\\right)^2 - \\frac{b^2}{4a^2} + \\frac{c}{a} = 0$$\n\n(the subtracted square $\\frac{b^2}{4a^2}$ is the square of the half).\n\nIsolate the squared bracket and write the right-hand side over a common denominator $4a^2$:\n$$\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{b^2}{4a^2} - \\frac{4ac}{4a^2} = \\frac{b^2 - 4ac}{4a^2}$$\n\nSince $b^2 - 4ac \\ge 0$, we can square-root both sides, remembering $\\pm$:\n$$x + \\frac{b}{2a} = \\pm\\frac{\\sqrt{b^2 - 4ac}}{\\sqrt{4a^2}} = \\pm\\frac{\\sqrt{b^2 - 4ac}}{2a}$$\n\n(Strictly $\\sqrt{4a^2} = 2|a|$, but because of the $\\pm$ this gives the same pair of values.)\n\nSubtract $\\frac{b}{2a}$:\n$$x = -\\frac{b}{2a} \\pm \\frac{\\sqrt{b^2 - 4ac}}{2a} = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\quad \\blacksquare$$\n\nThis also shows why $b^2 - 4ac < 0$ gives no real solutions: a square cannot equal a negative number.",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "alg-algebraic-fractions"
+  ]
+ }
+]
