@@ -4,6 +4,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("admin");
   eleventyConfig.addPassthroughCopy("src/images");
+  // Budget app assets (ES modules + stylesheet)
+  eleventyConfig.addPassthroughCopy("src/budget/*.js");
+  eleventyConfig.addPassthroughCopy("src/budget/*.css");
+  eleventyConfig.ignores.add("src/budget/package.json");
   
   // Date formatting filter
   eleventyConfig.addFilter("dateFormat", function(date) {

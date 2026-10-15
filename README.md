@@ -58,6 +58,41 @@ Click **Publish** when done. The site rebuilds automatically (takes ~30 seconds)
 
 ---
 
+## 💷 Budget & Cash Flow App
+
+The site includes a personal budgeting and cash-flow forecasting tool at `/budget/`.
+It runs entirely in the browser (no server, no accounts): data is kept in the
+browser's localStorage, with JSON export/import for backups and moving between devices.
+
+**What it does**
+
+- **Budget plan**: income, expenses (fixed / variable / discretionary / irregular) and
+  transfers, each with a schedule (weekly, fortnightly, 4-weekly, monthly on a given day,
+  last working day, quarterly, yearly, one-off, custom), an optional range (min/max),
+  amount changes from a date (new job, rent increase), annual growth, and an end date.
+- **Cash-flow forecast**: day-by-day balances per account with expected, best and worst
+  cases, a safety buffer, overdraft and credit-limit warnings, monthly interest on
+  savings and debts, and a monthly cash budget (opening, receipts, payments, closing).
+- **Tracking**: record actual transactions (or import a bank CSV), link them to plan
+  items so paid items are not double counted, correct balances to match your bank,
+  and see missed items that need recording or skipping.
+- **Statements**: income statement (budget vs actual vs expected, with variances),
+  cash-flow statement, balance sheet (actual or projected, with comparison) and
+  actual-vs-plan analysis by month and category.
+- **Goals, scenarios and settings**: savings goals with projected completion dates,
+  debt payoff dates, what-if scenarios you can switch on and off, pay-cycle budgeting,
+  currency, horizon and buffer.
+
+**Files**: `src/budget/engine.js` (pure calculation engine), `app.js` (UI),
+`charts.js` (SVG charts), `storage.js` (persistence, CSV), `sample.js` (example data),
+`budget.css`, `index.njk` (page). Unit tests for the engine live in `tests/` and run with:
+
+```bash
+npm test
+```
+
+---
+
 ## 🌐 Custom Domain (Optional)
 
 To use your own domain like `accountingchronicle.co.uk`:

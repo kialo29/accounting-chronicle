@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: "Budget"
+---
+
+<link rel="stylesheet" href="/budget/budget.css">
+
+<header class="page-header budget-page-header">
+    <h1>Budget & cash flow</h1>
+    <p>Plan your income and spending, forecast your cash day by day, track what actually happens, and keep a proper income statement, cash budget and balance sheet. Your data stays in this browser.</p>
+</header>
+
+<section class="budget-section">
+    <div id="budget-app" class="budget-app">
+        <noscript><p>This tool needs JavaScript to run.</p></noscript>
+        <p class="muted">Loading your budget…</p>
+    </div>
+</section>
+
+<script type="module" src="/budget/app.js"></script>
