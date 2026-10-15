@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: fixed (keyIdea
 ### Diagram audit
 2 diagrams checked: 1 ok, 1 fixed.
 pure-trig-reciprocal-inverse-q11 — axis labels ±1 and ±π/2 at the end points gave away the coordinates of A and B asked for in (a) — removed grid, ticks and scale labels (axes, O, A, B kept)
+
+### Scope coverage
+All 5 scope items covered.

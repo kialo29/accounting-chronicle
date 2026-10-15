@@ -6,3 +6,6 @@ I solved all 18 blind, and every stored answer and solution matched. Diagrams q1
 ### Diagram audit
 3 diagrams checked: 2 ok, 1 fixed.
 pure-trig-compound-angles-q14 — axis labels used hyphens '-2', '-1' — changed to true minus signs
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/pure-trig-compound-angles.json) to mention: half-angle, power-reducing, product-to-sum and sum-to-product identities.

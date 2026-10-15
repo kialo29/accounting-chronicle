@@ -6,3 +6,6 @@ I solved all 18 blind (checked numerically with root-finding), and every stored 
 ### Diagram audit
 1 diagrams checked: 0 ok, 1 fixed.
 pure-trig-harmonic-form-q13 — curve crossed the x-axis exactly on labelled gridlines π/4 and 5π/4, giving away (d) — removed the odd-π/4 gridlines and labels (kept 0, π/2, π, 3π/2, 2π); solution's final check sentence reworded to match
+
+### Scope coverage
+All 3 scope items covered.

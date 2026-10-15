@@ -6,3 +6,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 
 ### Diagram audit
 5 diagrams checked: 5 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered.

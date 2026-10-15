@@ -11,3 +11,6 @@ All other answers matched my blind solve. Diagrams q06 (A = (1/2)^x, B = e^x, C 
 2 diagrams checked: 0 ok, 2 fixed.
 pure-exponentials-logs-q06 — x-axis label 'x' overlapped the tail of curve A; hyphen minus signs — moved 'x' past the arrowhead, used '−'
 pure-exponentials-logs-q15 — x-axis labels used hyphens '-3', '-2', '-1' — changed to true minus signs
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/pure-exponentials-logs.json) to mention: extraneous solutions and continuous compounding $A = Pe^{rt}$.

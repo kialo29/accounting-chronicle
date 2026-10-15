@@ -8,3 +8,6 @@ Checked 18 questions: 16 ok, 1 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 2 diagrams checked: 1 ok, 1 fixed.
 pure-modulus-q16 — 'y = 5' label overlapped the left branch of y = |x² − 4| — moved label to just above the line, right of the y-axis
+
+### Scope coverage
+All 2 scope items covered.

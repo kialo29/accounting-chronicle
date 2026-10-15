@@ -7,3 +7,6 @@ Checked 18 questions: 16 ok, 0 fixed, 2 clarified. Topic details: ok
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed. (q07 and q10 log-linear graphs: lines, marked points and tick positions verified numerically against the stated points.)
+
+### Scope coverage
+All 3 scope items covered.
