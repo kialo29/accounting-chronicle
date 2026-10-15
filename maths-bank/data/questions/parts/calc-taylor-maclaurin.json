@@ -1,0 +1,280 @@
+[
+ {
+  "id": "calc-taylor-maclaurin-q01",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Using the Maclaurin series for $e^x$, find the first four terms of the Maclaurin series for $e^{2x}$.",
+  "hint": "Replace every $x$ in $e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\dots$ by $(2x)$, keeping the brackets.",
+  "answer": "$1 + 2x + 2x^2 + \\frac{4}{3}x^3$",
+  "solution": "$$e^x = 1 + x + \\frac{x^2}{2!} + \\frac{x^3}{3!} + \\dots$$\n\nReplace $x$ by $(2x)$:\n$$e^{2x} = 1 + (2x) + \\frac{(2x)^2}{2} + \\frac{(2x)^3}{6} + \\dots = 1 + 2x + \\frac{4x^2}{2} + \\frac{8x^3}{6} + \\dots$$\n$$= 1 + 2x + 2x^2 + \\frac{4}{3}x^3 + \\dots$$\n\nThe brackets matter: $(2x)^2 = 4x^2$, not $2x^2$. This is valid for all $x$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q02",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Using the Maclaurin series for $e^x$, find the first four terms of the Maclaurin series for $e^{-2x}$.",
+  "hint": "Only the sign has changed from $e^{2x}$. Which powers of $(-2x)$ are negative?",
+  "answer": "$1 - 2x + 2x^2 - \\frac{4}{3}x^3$",
+  "solution": "**What changed:** $2x$ became $-2x$.\n\n$$e^{-2x} = 1 + (-2x) + \\frac{(-2x)^2}{2} + \\frac{(-2x)^3}{6} + \\dots = 1 - 2x + 2x^2 - \\frac{4}{3}x^3 + \\dots$$\n\nEven powers of $(-2x)$ are positive and odd powers are negative, so the signs now alternate; the sizes of the coefficients are unchanged.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q03",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Using the Maclaurin series for $e^x$, find the first four nonzero terms of the Maclaurin series for $e^{-2x^2}$.",
+  "hint": "Now substitute $(-2x^2)$. What happens to each power of $x$?",
+  "answer": "$1 - 2x^2 + 2x^4 - \\frac{4}{3}x^6$",
+  "solution": "**What changed:** $-2x$ became $-2x^2$.\n\n$$e^{-2x^2} = 1 + (-2x^2) + \\frac{(-2x^2)^2}{2} + \\frac{(-2x^2)^3}{6} + \\dots = 1 - 2x^2 + \\frac{4x^4}{2} - \\frac{8x^6}{6} + \\dots$$\n$$= 1 - 2x^2 + 2x^4 - \\frac{4}{3}x^6 + \\dots$$\n\nThe coefficients are the same as for $e^{-2x}$, but every power of $x$ is doubled, since $(x^2)^n = x^{2n}$. The series now has only even powers, as expected for an even function.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q04",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the first four nonzero terms of the Maclaurin series for $x e^{-2x^2}$.",
+  "hint": "Use your answer for $e^{-2x^2}$ and multiply every term by $x$.",
+  "answer": "$x - 2x^3 + 2x^5 - \\frac{4}{3}x^7$",
+  "solution": "**What changed:** the function is multiplied by $x$.\n\n$$x e^{-2x^2} = x\\left(1 - 2x^2 + 2x^4 - \\frac{4}{3}x^6 + \\dots\\right) = x - 2x^3 + 2x^5 - \\frac{4}{3}x^7 + \\dots$$\n\nMultiplying by $x$ raises every power by one; the coefficients are unchanged. The series now has only odd powers ($x e^{-2x^2}$ is an odd function).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q05",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "A function $f$ has\n$$f(0) = 3, \\quad f'(0) = -2, \\quad f''(0) = 5, \\quad f'''(0) = 12$$\nFind the Maclaurin polynomial $P_3(x)$ of degree 3 for $f$, and use it to estimate $f(0.1)$.",
+  "hint": "The coefficient of $x^n$ is $\\frac{f^{(n)}(0)}{n!}$. Don't forget to divide by $2!$ and $3!$.",
+  "answer": "$P_3(x) = 3 - 2x + \\frac{5}{2}x^2 + 2x^3$; $f(0.1) \\approx 2.827$",
+  "solution": "$$P_3(x) = f(0) + f'(0)x + \\frac{f''(0)}{2!}x^2 + \\frac{f'''(0)}{3!}x^3$$\n$$= 3 - 2x + \\frac{5}{2}x^2 + \\frac{12}{6}x^3 = 3 - 2x + \\frac{5}{2}x^2 + 2x^3$$\n\n$$f(0.1) \\approx 3 - 0.2 + \\frac{5}{2}(0.01) + 2(0.001) = 3 - 0.2 + 0.025 + 0.002 = 2.827$$\n\n(A common slip is to write $5x^2 + 12x^3$, forgetting the factorials, which would give $2.862$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q06",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "(a) Find the Taylor polynomial of degree 3 for $f(x) = \\sqrt{x}$ about $x = 4$.\n\n(b) Use it to estimate $\\sqrt{4.2}$, and compare with your calculator value.",
+  "hint": "Work out $f(4)$, $f'(4)$, $f''(4)$ and $f'''(4)$. The polynomial is in powers of $(x - 4)$, not $x$.",
+  "answer": "(a) $2 + \\frac{x - 4}{4} - \\frac{(x - 4)^2}{64} + \\frac{(x - 4)^3}{512}$ (b) $2.049\\,390\\,6$ (to 7 d.p.); calculator $2.049\\,390\\,2$, so the error is about $5 \\times 10^{-7}$",
+  "solution": "**(a)**\n$$f(x) = x^{\\frac{1}{2}} \\to f(4) = 2$$\n$$f'(x) = \\tfrac{1}{2}x^{-\\frac{1}{2}} \\to f'(4) = \\tfrac{1}{4}$$\n$$f''(x) = -\\tfrac{1}{4}x^{-\\frac{3}{2}} \\to f''(4) = -\\tfrac{1}{4}\\cdot\\tfrac{1}{8} = -\\tfrac{1}{32}$$\n$$f'''(x) = \\tfrac{3}{8}x^{-\\frac{5}{2}} \\to f'''(4) = \\tfrac{3}{8}\\cdot\\tfrac{1}{32} = \\tfrac{3}{256}$$\n\n$$P_3(x) = 2 + \\frac{1}{4}(x - 4) - \\frac{1}{32\\cdot 2!}(x - 4)^2 + \\frac{3}{256\\cdot 3!}(x - 4)^3$$\n$$= 2 + \\frac{x - 4}{4} - \\frac{(x - 4)^2}{64} + \\frac{(x - 4)^3}{512}$$\n\nNote the powers are of $(x - 4)$: the expansion is about $x = 4$, where $\\sqrt{x}$ is well behaved. ($\\sqrt{x}$ has no Maclaurin series at all, as $f'(0)$ does not exist.)\n\n**(b)** $x - 4 = 0.2$:\n$$P_3(4.2) = 2 + 0.05 - \\frac{0.04}{64} + \\frac{0.008}{512} = 2 + 0.05 - 0.000\\,625 + 0.000\\,015\\,625 = 2.049\\,390\\,625$$\nCalculator: $\\sqrt{4.2} = 2.049\\,390\\,15\\ldots$, so the error is less than $5 \\times 10^{-7}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q07",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Ethan is asked to find the first three nonzero terms of the Maclaurin series for $\\cos 3x$. He writes:\n\nLine 1: $\\cos x = 1 - \\dfrac{x^2}{2!} + \\dfrac{x^4}{4!} - \\dots$\n\nLine 2: $\\cos 3x = 1 - \\dfrac{3x^2}{2!} + \\dfrac{3x^4}{4!} - \\dots$\n\nLine 3: $\\phantom{\\cos 3x} = 1 - \\dfrac{3}{2}x^2 + \\dfrac{1}{8}x^4 - \\dots$\n\n(a) Identify and explain Ethan's error.\n\n(b) Find the correct first three nonzero terms.\n\n(c) Use the first two terms of your series to estimate $\\cos 0.3$, and compare with your calculator value.",
+  "hint": "When you replace $x$ by $3x$, what is $(3x)^2$?",
+  "answer": "(a) Line 2: he replaced $x^2$ by $3x^2$ instead of $(3x)^2 = 9x^2$ (and $x^4$ by $3x^4$ instead of $81x^4$). (b) $1 - \\frac{9}{2}x^2 + \\frac{27}{8}x^4$ (c) $\\cos 0.3 \\approx 1 - \\frac{9}{2}(0.01) = 0.955$; calculator $0.9553$",
+  "solution": "**(a)** Line 1 is correct. The error is in **Line 2**: Ethan multiplied by $3$ instead of substituting. Every $x$ must be replaced by $(3x)$, *in brackets*, so the powers apply to the $3$ as well:\n$$x^2 \\to (3x)^2 = 9x^2, \\qquad x^4 \\to (3x)^4 = 81x^4$$\n\n**(b)**\n$$\\cos 3x = 1 - \\frac{(3x)^2}{2!} + \\frac{(3x)^4}{4!} - \\dots = 1 - \\frac{9x^2}{2} + \\frac{81x^4}{24} - \\dots = 1 - \\frac{9}{2}x^2 + \\frac{27}{8}x^4 - \\dots$$\n\n**(c)** $\\cos 0.3 = \\cos(3 \\times 0.1)$, so put $x = 0.1$:\n$$1 - \\frac{9}{2}(0.01) = 1 - 0.045 = 0.955$$\nCalculator: $\\cos 0.3 = 0.955\\,34\\ldots$ The next term, $\\frac{27}{8}(0.1)^4 = 0.000\\,34$, accounts for almost all the difference.\n\n(Ethan's series would give $1 - \\frac{3}{2}(0.01) = 0.985$, which is far off.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q08",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Leo uses the Maclaurin polynomial $P_3(x) = 1 + x + \\frac{x^2}{2} + \\frac{x^3}{6}$ to estimate $e^{0.2}$, and wants a bound for the error. He writes:\n\nLine 1: $P_3(0.2) = 1 + 0.2 + 0.02 + 0.001\\,333 = 1.221\\,333$\n\nLine 2: $f'''(x) = e^x$, whose maximum on $[0, 0.2]$ is $e^{0.2} < 1.25$, so $M = 1.25$.\n\nLine 3: $|\\text{error}| \\le \\dfrac{M}{3!}(0.2)^3 = \\dfrac{1.25}{6}\\times 0.008 \\approx 0.001\\,67$\n\n(a) Identify Leo's error and explain the correct form of the Lagrange error bound.\n\n(b) Find a correct error bound and check it against the actual error.",
+  "hint": "For $P_n$, the Lagrange bound uses the $(n + 1)$th derivative, the factorial $(n + 1)!$ and the power $|x - a|^{n+1}$.",
+  "answer": "(a) For $P_3$ the bound uses $f^{(4)}$, $4!$ and $(0.2)^4$, not $f'''$, $3!$ and $(0.2)^3$. (b) $|\\text{error}| \\le \\frac{1.25}{24}(0.2)^4 \\approx 8.3 \\times 10^{-5}$; actual error $\\approx 6.9 \\times 10^{-5}$",
+  "solution": "**(a)** Line 1 is correct. The error is in **Lines 2 and 3**. For a Taylor polynomial of degree $n$ about $a$,\n$$|f(x) - P_n(x)| \\le \\frac{M}{(n + 1)!}|x - a|^{n+1}, \\quad M = \\max\\left|f^{(n+1)}\\right| \\text{ between } a \\text{ and } x$$\nThe error comes from the **first term left out**, which for $P_3$ is the $x^4$ term. So Leo needs the fourth derivative, $4!$ and $(0.2)^4$. His bound is still true, but it is about $20$ times weaker than it should be.\n\n**(b)** $f^{(4)}(x) = e^x$, which is increasing, so on $[0, 0.2]$ its maximum is $e^{0.2}$. Since $1.25^5 \\approx 3.05 > e$, we have $e^{0.2} < 1.25$; take $M = 1.25$.\n$$|\\text{error}| \\le \\frac{1.25}{4!}(0.2)^4 = \\frac{1.25}{24}\\times 0.0016 \\approx 8.3 \\times 10^{-5}$$\n\nCheck: $e^{0.2} = 1.221\\,402\\,8\\ldots$, so the actual error is $1.221\\,402\\,8 - 1.221\\,333\\,3 \\approx 6.9 \\times 10^{-5}$, which is within the bound.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q09",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 3,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-lhopital",
+   "calc-limits"
+  ],
+  "question": "Use Maclaurin series to find\n$$\\lim_{x\\to 0}\\frac{e^{x^2} - 1 - x^2}{x^2 - x\\sin x}$$",
+  "hint": "Expand $e^{x^2}$ and $\\sin x$ far enough that the numerator and denominator each have a nonzero leading term. Then divide top and bottom by the lowest power of $x$.",
+  "answer": "$3$",
+  "solution": "**Numerator:** $e^{x^2} = 1 + x^2 + \\frac{x^4}{2} + \\frac{x^6}{6} + \\dots$, so\n$$e^{x^2} - 1 - x^2 = \\frac{x^4}{2} + \\frac{x^6}{6} + \\dots$$\n\n**Denominator:** $x\\sin x = x\\left(x - \\frac{x^3}{6} + \\frac{x^5}{120} - \\dots\\right) = x^2 - \\frac{x^4}{6} + \\frac{x^6}{120} - \\dots$, so\n$$x^2 - x\\sin x = \\frac{x^4}{6} - \\frac{x^6}{120} + \\dots$$\n\nDivide top and bottom by $x^4$:\n$$\\frac{\\frac{1}{2} + \\frac{x^2}{6} + \\dots}{\\frac{1}{6} - \\frac{x^2}{120} + \\dots} \\to \\frac{\\frac{1}{2}}{\\frac{1}{6}} = 3 \\quad \\text{as } x \\to 0$$\n\n(L'Hôpital's rule would also work, but it needs four rounds of differentiation of increasingly messy expressions; the series show immediately that both top and bottom behave like multiples of $x^4$.)"
+ },
+ {
+  "id": "calc-taylor-maclaurin-q10",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A function $f$ is **even**, so $f(-x) = f(x)$ for all $x$, and $f$ has a Maclaurin series.\n\n(a) By differentiating $f(-x) = f(x)$ repeatedly, prove that $f^{(n)}(0) = 0$ for every odd $n$. Hence explain why the Maclaurin series of $f$ contains only even powers of $x$.\n\n(b) Without doing any differentiation, write down the coefficient of $x^5$ in the Maclaurin series of $\\ln(\\cos x)$, explaining your answer.\n\n(c) Mia says the Maclaurin series of $\\cos x + \\sin x$ has only even powers because $\\cos x$ does. Is she correct? Explain.",
+  "hint": "Differentiating $f(-x)$ with the chain rule gives $-f'(-x)$. What do you get after $n$ differentiations? Then put $x = 0$.",
+  "answer": "(a) $(-1)^n f^{(n)}(-x) = f^{(n)}(x)$; at $x = 0$ with $n$ odd, $-f^{(n)}(0) = f^{(n)}(0)$, so $f^{(n)}(0) = 0$ and the odd-power coefficients $\\frac{f^{(n)}(0)}{n!}$ vanish. (b) $0$, because $\\ln(\\cos x)$ is even. (c) No: $\\cos x + \\sin x$ is neither even nor odd; its series $1 + x - \\frac{x^2}{2} - \\frac{x^3}{6} + \\dots$ has both odd and even powers.",
+  "solution": "**(a)** Differentiate $f(-x) = f(x)$ using the chain rule. Each differentiation of the left side brings out a factor $-1$:\n$$-f'(-x) = f'(x), \\qquad (-1)^2 f''(-x) = f''(x), \\qquad \\dots, \\qquad (-1)^n f^{(n)}(-x) = f^{(n)}(x)$$\nPut $x = 0$: $(-1)^n f^{(n)}(0) = f^{(n)}(0)$.\n\nIf $n$ is odd, $(-1)^n = -1$, so $-f^{(n)}(0) = f^{(n)}(0)$, i.e. $2f^{(n)}(0) = 0$ and $f^{(n)}(0) = 0$.\n\nThe coefficient of $x^n$ in the Maclaurin series is $\\frac{f^{(n)}(0)}{n!}$, which is $0$ for every odd $n$. So only even powers appear. $\\blacksquare$\n\n**(b)** $\\cos(-x) = \\cos x$, so $\\ln(\\cos(-x)) = \\ln(\\cos x)$: the function is even (and defined near $0$). By (a) the coefficient of every odd power is $0$, so the coefficient of $x^5$ is $\\mathbf{0}$.\n\n**(c)** Mia is **not** correct. The result needs the *whole function* to be even. $\\cos x + \\sin x$ is not even: e.g. at $x = \\frac{\\pi}{4}$ it is $\\sqrt{2}$, but at $x = -\\frac{\\pi}{4}$ it is $0$. Adding the series:\n$$\\cos x + \\sin x = 1 + x - \\frac{x^2}{2} - \\frac{x^3}{6} + \\frac{x^4}{24} + \\dots$$\nwhich contains odd powers (from $\\sin x$, an odd function).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q11",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 270\" width=\"340\" height=\"270\"><path d=\"M35.5,68.7 L38.7,67.3 L41.9,65.9 L45.1,64.6 L48.3,63.3 L51.6,62.1 L54.9,60.9 L58.2,59.8 L61.5,58.7 L64.9,57.7 L68.2,56.8 L71.6,55.9 L75,55.1 L78.4,54.4 L81.8,53.7 L85.3,53 L88.7,52.5 L92.2,51.9 L95.6,51.5 L99.1,51.1 L102.6,50.8 L106,50.5 L109.5,50.3 L113,50.1 L116.5,50 L120,50 L123.5,50 L127,50.1 L130.5,50.3 L134,50.5 L137.4,50.8 L140.9,51.1 L144.4,51.5 L147.8,51.9 L151.3,52.5 L154.7,53 L158.2,53.7 L161.6,54.4 L165,55.1 L168.4,55.9 L171.8,56.8 L175.1,57.7 L178.5,58.7 L181.8,59.8 L185.1,60.9 L188.4,62.1 L191.7,63.3 L194.9,64.6 L198.1,65.9 L201.3,67.3 L204.5,68.7 L207.7,70.2 L210.8,71.8 L213.9,73.4 L217,75.1 L220,76.8 L223,78.6 L226,80.4 L228.9,82.3 L231.8,84.2 L234.7,86.2 L237.6,88.2 L240.4,90.3 L243.1,92.4 L245.9,94.6 L248.6,96.8 L251.2,99.1 L253.8,101.4 L256.4,103.7 L258.9,106.1 L261.4,108.6 L263.9,111.1 L266.3,113.6 L268.6,116.2 L270.9,118.8 L273.2,121.4 L275.4,124.1 L277.6,126.9 L279.7,129.6 L281.8,132.4 L283.8,135.3 L285.8,138.2 L287.7,141.1 L289.6,144 L291.4,147 L293.2,150 L294.9,153 L296.6,156.1 L298.2,159.2 L299.8,162.3 L301.3,165.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"50\" y1=\"50\" x2=\"283.1\" y2=\"50\" stroke=\"#3b82f6\" stroke-width=\"2\"/><line x1=\"120\" y1=\"250\" x2=\"120\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"120\" y1=\"250\" x2=\"243.1\" y2=\"92.4\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/><line x1=\"243.1\" y1=\"50\" x2=\"243.1\" y2=\"92.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M235.1,50 L235.1,58 L243.1,58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M120,216 L121.1,216 L122.3,216.1 L123.4,216.2 L124.5,216.3 L125.6,216.5 L126.7,216.7 L127.8,216.9 L128.9,217.2 L130,217.5 L131.1,217.9 L132.1,218.2 L133.2,218.7 L134.2,219.1 L135.2,219.6 L136.2,220.1 L137.2,220.7 L138.2,221.3 L139.1,221.9 L140,222.5 L140.9,223.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"136\" y=\"210\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">θ</text><circle cx=\"120\" cy=\"50\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"243.1\" cy=\"92.4\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"120\" cy=\"250\" r=\"3\" fill=\"currentColor\"/><text x=\"118\" y=\"42\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><text x=\"233.1\" y=\"98.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><text x=\"112\" y=\"254\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"249.1\" y=\"76.2\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">h</text><text x=\"112\" y=\"150\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">R</text><text x=\"180.6\" y=\"86.1\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">s</text><text x=\"283.1\" y=\"42\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">laser beam</text></svg>",
+  "question": "A laser beam is fired horizontally across a lake from point $A$, just above the water. The beam travels along the tangent to the Earth's surface at $A$. Model the Earth as a sphere with centre $O$ and radius $R = 6371$ km. At point $B$, a distance $s$ along the surface from $A$, the water is a height $h$ below the beam, measured at right angles to the beam, as shown. The diagram is not drawn to scale.\n\n(a) Show that $h = R\\left(1 - \\cos\\frac{s}{R}\\right)$.\n\n(b) Use a Maclaurin series to show that, for $s$ small compared with $R$, $h \\approx \\dfrac{s^2}{2R}$.\n\n(c) The lake is 5 km across. Find $h$ when $s = 5$ km, giving your answer in metres to 3 significant figures.\n\n(d) Explain why the approximation in (b) is extremely accurate here.",
+  "hint": "Angle $AOB$ in radians is $\\theta = \\frac{s}{R}$ (arc length $= R\\theta$). Find the distance of $B$ from the beam's line using the radius $OB$ and $\\cos\\theta$.",
+  "answer": "(a) $h = R - R\\cos\\theta$ with $\\theta = \\frac{s}{R}$ (b) $\\cos\\theta \\approx 1 - \\frac{\\theta^2}{2}$ gives $h \\approx \\frac{R\\theta^2}{2} = \\frac{s^2}{2R}$ (c) $1.96$ m (d) The next term, $-\\frac{R\\theta^4}{24}$, is about $10^{-7}$ m.",
+  "solution": "**(a)** Let $\\theta = \\angle AOB$. Since arc length $s = R\\theta$, $\\theta = \\frac{s}{R}$ (radians).\n\nThe beam is the tangent at $A$, so it is perpendicular to $OA$, at distance $R$ from $O$. The point $B$ is at distance $OB\\cos\\theta = R\\cos\\theta$ from $O$, measured in the direction of $OA$. So the gap between $B$ and the beam, measured parallel to $OA$ (i.e. at right angles to the beam), is\n$$h = R - R\\cos\\theta = R\\left(1 - \\cos\\frac{s}{R}\\right)$$\n\n**(b)** $\\cos\\theta = 1 - \\frac{\\theta^2}{2!} + \\frac{\\theta^4}{4!} - \\dots$, so\n$$1 - \\cos\\theta = \\frac{\\theta^2}{2} - \\frac{\\theta^4}{24} + \\dots \\approx \\frac{\\theta^2}{2} \\text{ for small } \\theta$$\n$$h \\approx R\\cdot\\frac{1}{2}\\left(\\frac{s}{R}\\right)^2 = \\frac{s^2}{2R}$$\n\n**(c)**\n$$h \\approx \\frac{5^2}{2 \\times 6371} = \\frac{25}{12\\,742} \\approx 0.001\\,962 \\text{ km} \\approx 1.96 \\text{ m}$$\nSo over a 5 km lake the water surface curves almost 2 m below a perfectly straight beam.\n\n**(d)** $\\theta = \\frac{5}{6371} \\approx 7.8 \\times 10^{-4}$. The first omitted term is $R\\frac{\\theta^4}{24} \\approx 6371 \\times \\frac{3.8 \\times 10^{-13}}{24} \\approx 1.0 \\times 10^{-10}$ km, about $10^{-7}$ m (a ten-thousandth of a millimetre): completely negligible. The series terms shrink very fast because $\\theta$ is tiny.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q12",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "It is given that $f(x) = e^{\\sin x}$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f''(x) = \\left(\\cos^2 x - \\sin x\\right)e^{\\sin x}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find $f'''(x)$, and hence show that the Maclaurin series for $f(x)$, up to and including the term in $x^3$, is $1 + x + \\frac{1}{2}x^2$.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Hence find an approximation for $\\displaystyle\\int_0^{0.2} e^{\\sin x}\\,dx$, giving your answer to 4 decimal places.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "By substituting the Maclaurin series for $\\sin x$ into the Maclaurin series for $e^u$, verify that the coefficient of $x^3$ is $0$ and find the term in $x^4$.",
+    "marks": 3
+   }
+  ],
+  "marks": 11,
+  "hint": "(a) Use the chain rule for $f'$, then the product rule. (b) Differentiate again with the product rule and evaluate everything at $x = 0$. (d) Put $u = x - \\frac{x^3}{6} + \\dots$ into $e^u = 1 + u + \\frac{u^2}{2} + \\frac{u^3}{6} + \\frac{u^4}{24} + \\dots$ and collect only the terms you need.",
+  "answer": "(a) shown (b) $f'''(x) = e^{\\sin x}\\left(\\cos^3 x - 3\\sin x\\cos x - \\cos x\\right)$, $f(0) = 1$, $f'(0) = 1$, $f''(0) = 1$, $f'''(0) = 0$ (c) $0.2213$ (d) $-\\frac{1}{8}x^4$",
+  "solution": "**(a)** $f'(x) = \\cos x\\,e^{\\sin x}$ (chain rule).\nM1: chain rule.\n\nProduct rule:\n$$f''(x) = -\\sin x\\,e^{\\sin x} + \\cos x\\cdot\\cos x\\,e^{\\sin x} = \\left(\\cos^2 x - \\sin x\\right)e^{\\sin x}$$\nA1: shown (no errors seen).\n\n**(b)** Product rule again:\n$$f'''(x) = \\left(-2\\cos x\\sin x - \\cos x\\right)e^{\\sin x} + \\left(\\cos^2 x - \\sin x\\right)\\cos x\\,e^{\\sin x}$$\n$$= e^{\\sin x}\\left(\\cos^3 x - 3\\sin x\\cos x - \\cos x\\right)$$\nM1: product rule applied to $f''$. A1: correct $f'''(x)$.\n\nAt $x = 0$: $f(0) = e^0 = 1$, $f'(0) = 1$, $f''(0) = (1 - 0)\\cdot 1 = 1$, $f'''(0) = 1\\cdot(1 - 0 - 1) = 0$.\nM1: evaluates all four at $0$.\n$$f(x) \\approx 1 + x + \\frac{1}{2!}x^2 + \\frac{0}{3!}x^3 = 1 + x + \\frac{1}{2}x^2$$\nA1: shown.\n\n**(c)**\n$$\\int_0^{0.2}\\left(1 + x + \\frac{x^2}{2}\\right)dx = \\left[x + \\frac{x^2}{2} + \\frac{x^3}{6}\\right]_0^{0.2} = 0.2 + 0.02 + 0.001\\,333 = 0.221\\,33\\ldots$$\nM1: integrates series and uses limits. A1: $0.2213$.\n\n(Calculator value: $0.221\\,32$, so the answer is correct to 4 d.p.)\n\n**(d)** Let $u = \\sin x = x - \\frac{x^3}{6} + O(x^5)$. Then\n$$u^2 = x^2 - \\frac{x^4}{3} + \\dots, \\quad u^3 = x^3 + \\dots, \\quad u^4 = x^4 + \\dots$$\nM1: substitutes and expands powers of $u$ to the required order.\n$$e^u = 1 + \\left(x - \\frac{x^3}{6}\\right) + \\frac{1}{2}\\left(x^2 - \\frac{x^4}{3}\\right) + \\frac{x^3}{6} + \\frac{x^4}{24} + \\dots$$\nCoefficient of $x^3$: $-\\frac{1}{6} + \\frac{1}{6} = 0$ ✓.\nA1: $x^3$ coefficient verified.\n\nCoefficient of $x^4$: $-\\frac{1}{6} + \\frac{1}{24} = -\\frac{4}{24} + \\frac{1}{24} = -\\frac{1}{8}$, so the term is $-\\frac{1}{8}x^4$.\nA1: $-\\frac{1}{8}x^4$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q13",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Let $f(x) = x^2 e^{x^3}$.\n\n(a) Find the first four nonzero terms of the Maclaurin series for $f(x)$.\n\n(b) Hence find the exact values of $f^{(8)}(0)$ and $f^{(9)}(0)$.\n\n(c) Find $f^{(11)}(0)$.",
+  "hint": "In a Maclaurin series the coefficient of $x^n$ equals $\\frac{f^{(n)}(0)}{n!}$. Read the coefficient off the series instead of differentiating eight times.",
+  "answer": "(a) $x^2 + x^5 + \\frac{1}{2}x^8 + \\frac{1}{6}x^{11}$ (b) $f^{(8)}(0) = 20\\,160$, $f^{(9)}(0) = 0$ (c) $f^{(11)}(0) = 6\\,652\\,800$",
+  "solution": "**(a)** $e^{x^3} = 1 + x^3 + \\frac{(x^3)^2}{2!} + \\frac{(x^3)^3}{3!} + \\dots = 1 + x^3 + \\frac{x^6}{2} + \\frac{x^9}{6} + \\dots$\n\n$$f(x) = x^2 e^{x^3} = x^2 + x^5 + \\frac{x^8}{2} + \\frac{x^{11}}{6} + \\dots$$\n\n**(b)** The Maclaurin series is unique, so the coefficient of $x^n$ must equal $\\frac{f^{(n)}(0)}{n!}$.\n\nCoefficient of $x^8$ is $\\frac{1}{2}$:\n$$\\frac{f^{(8)}(0)}{8!} = \\frac{1}{2} \\implies f^{(8)}(0) = \\frac{8!}{2} = \\frac{40\\,320}{2} = 20\\,160$$\n\nThe only powers present are $x^2, x^5, x^8, x^{11}, \\dots$ (exponents $3k + 2$). There is no $x^9$ term, so $f^{(9)}(0) = 0$.\n\n**(c)** Coefficient of $x^{11}$ is $\\frac{1}{6}$:\n$$f^{(11)}(0) = \\frac{11!}{6} = \\frac{39\\,916\\,800}{6} = 6\\,652\\,800$$\n\n(Computing $f^{(11)}(x)$ directly would be extremely laborious; the series does it in one line.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q14",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-normal-distribution"
+  ],
+  "question": "The standard normal variable $Z$ has probability density function $\\phi(z) = \\dfrac{1}{\\sqrt{2\\pi}}e^{-\\frac{z^2}{2}}$, so\n$$P(0 < Z < 0.5) = \\frac{1}{\\sqrt{2\\pi}}\\int_0^{0.5} e^{-\\frac{z^2}{2}}\\,dz$$\nThis integral cannot be found exactly using elementary functions.\n\n(a) Find the first four nonzero terms of the Maclaurin series for $e^{-\\frac{z^2}{2}}$.\n\n(b) Hence estimate $P(0 < Z < 0.5)$ to 4 decimal places.\n\n(c) Use your answer to estimate $P(Z < 0.5)$, and compare with the value from your calculator's normal distribution function.",
+  "hint": "Substitute $u = -\\frac{z^2}{2}$ into $e^u$, then integrate term by term from $0$ to $0.5$.",
+  "answer": "(a) $1 - \\frac{z^2}{2} + \\frac{z^4}{8} - \\frac{z^6}{48}$ (b) $0.1915$ (c) $0.6915$, which agrees with the calculator value $0.69146$",
+  "solution": "**(a)** Substitute $u = -\\frac{z^2}{2}$ into $e^u = 1 + u + \\frac{u^2}{2} + \\frac{u^3}{6} + \\dots$:\n$$e^{-\\frac{z^2}{2}} = 1 - \\frac{z^2}{2} + \\frac{z^4}{4\\cdot 2} - \\frac{z^6}{8\\cdot 6} + \\dots = 1 - \\frac{z^2}{2} + \\frac{z^4}{8} - \\frac{z^6}{48} + \\dots$$\n\n**(b)** Integrate term by term:\n$$\\int_0^{0.5} e^{-\\frac{z^2}{2}}\\,dz \\approx \\left[z - \\frac{z^3}{6} + \\frac{z^5}{40} - \\frac{z^7}{336}\\right]_0^{0.5}$$\n$$= 0.5 - \\frac{0.125}{6} + \\frac{0.031\\,25}{40} - \\frac{0.007\\,812\\,5}{336}$$\n$$= 0.5 - 0.020\\,833 + 0.000\\,781 - 0.000\\,023 = 0.479\\,925$$\n\n$$P(0 < Z < 0.5) \\approx \\frac{0.479\\,925}{\\sqrt{2\\pi}} = \\frac{0.479\\,925}{2.506\\,628} \\approx 0.1915$$\n\nThe terms alternate and shrink rapidly (the next term is about $5 \\times 10^{-7}$), so 4 decimal places are secure.\n\n**(c)** By symmetry, $P(Z < 0) = 0.5$, so\n$$P(Z < 0.5) \\approx 0.5 + 0.1915 = 0.6915$$\nThe calculator gives $P(Z < 0.5) = 0.691\\,46$, matching to 4 decimal places. (This is essentially how calculators and statistical tables compute normal probabilities.)"
+ },
+ {
+  "id": "calc-taylor-maclaurin-q15",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 4,
+  "type": "real-world",
+  "linkedTopicIds": [
+   "pure-binomial-general"
+  ],
+  "question": "In special relativity, the kinetic energy of a body of mass $m$ moving at speed $v$ is\n$$E_k = mc^2\\left(\\frac{1}{\\sqrt{1 - \\frac{v^2}{c^2}}} - 1\\right)$$\nwhere $c \\approx 3.00 \\times 10^8$ m s$^{-1}$ is the speed of light.\n\n(a) By expanding $\\left(1 - \\frac{v^2}{c^2}\\right)^{-\\frac{1}{2}}$ as a series in powers of $\\frac{v^2}{c^2}$, show that\n$$E_k \\approx \\frac{1}{2}mv^2 + \\frac{3mv^4}{8c^2}$$\nand state the condition on $v$ for the expansion to be valid.\n\n(b) A space probe travels at $v = 0.1c$. Find the percentage error in using the everyday formula $\\frac{1}{2}mv^2$ for its kinetic energy, to 2 significant figures.\n\n(c) Explain why the everyday formula is perfectly adequate for a car travelling at 30 m s$^{-1}$.",
+  "hint": "Use $(1 + y)^n = 1 + ny + \\frac{n(n - 1)}{2!}y^2 + \\dots$ with $y = -\\frac{v^2}{c^2}$ and $n = -\\frac{1}{2}$.",
+  "answer": "(a) $\\left(1 - \\frac{v^2}{c^2}\\right)^{-\\frac{1}{2}} = 1 + \\frac{v^2}{2c^2} + \\frac{3v^4}{8c^4} + \\dots$, valid for $|v| < c$ (b) $0.75\\%$ (c) The correction term is a fraction $\\frac{3v^2}{4c^2} = 7.5 \\times 10^{-15}$ of $\\frac{1}{2}mv^2$: utterly negligible.",
+  "solution": "**(a)** With $y = -\\frac{v^2}{c^2}$ and $n = -\\frac{1}{2}$:\n$$(1 + y)^{-\\frac{1}{2}} = 1 - \\frac{1}{2}y + \\frac{\\left(-\\frac{1}{2}\\right)\\left(-\\frac{3}{2}\\right)}{2}y^2 + \\dots = 1 - \\frac{1}{2}y + \\frac{3}{8}y^2 + \\dots$$\n$$\\left(1 - \\frac{v^2}{c^2}\\right)^{-\\frac{1}{2}} = 1 + \\frac{v^2}{2c^2} + \\frac{3v^4}{8c^4} + \\dots$$\nSubtract $1$ and multiply by $mc^2$:\n$$E_k \\approx mc^2\\left(\\frac{v^2}{2c^2} + \\frac{3v^4}{8c^4}\\right) = \\frac{1}{2}mv^2 + \\frac{3mv^4}{8c^2}$$\nThe expansion is valid for $|y| < 1$, i.e. $\\frac{v^2}{c^2} < 1$, i.e. $v < c$ (always true for a body with mass).\n\n**(b)** Work per unit $mc^2$ with $\\frac{v^2}{c^2} = 0.01$.\n\nExact: $\\frac{1}{\\sqrt{0.99}} - 1 = 0.005\\,037\\,8\\ldots$\n\nEveryday formula: $\\frac{1}{2}\\times 0.01 = 0.005$.\n\n$$\\text{Percentage error} = \\frac{0.005\\,037\\,8 - 0.005}{0.005\\,037\\,8}\\times 100\\% \\approx 0.75\\%$$\n(The everyday formula underestimates. The two-term approximation gives $0.005 + \\frac{3}{8}(0.0001) = 0.005\\,037\\,5$, much closer.)\n\n**(c)** The ratio of the correction term to $\\frac{1}{2}mv^2$ is\n$$\\frac{3mv^4/(8c^2)}{mv^2/2} = \\frac{3v^2}{4c^2} = \\frac{3 \\times 900}{4 \\times 9 \\times 10^{16}} = 7.5 \\times 10^{-15}$$\nso the error is about $7.5 \\times 10^{-13}\\%$, far smaller than any measurement could detect."
+ },
+ {
+  "id": "calc-taylor-maclaurin-q16",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 4,
+  "type": "exam-style",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "question": "The function $f$ has derivatives of all orders. It is given that\n$$f(2) = 1, \\quad f'(2) = -3, \\quad f''(2) = 4, \\quad f'''(2) = -6$$\nand that $\\left|f^{(4)}(x)\\right| \\le 15$ for all $x$ in the interval $2 \\le x \\le 2.5$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the Taylor polynomial of degree 3 for $f$ about $x = 2$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Use your answer to part (a) to estimate $f(2.4)$.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Use the Lagrange error bound to show that your estimate in part (b) differs from $f(2.4)$ by less than $0.02$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Is it possible that $f(2.4) = 0.08$? Give a reason for your answer.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "hint": "The coefficient of $(x - 2)^n$ is $\\frac{f^{(n)}(2)}{n!}$. For a degree-3 polynomial, the error bound uses the fourth derivative.",
+  "answer": "(a) $1 - 3(x - 2) + 2(x - 2)^2 - (x - 2)^3$ (b) $0.056$ (c) $|\\text{error}| \\le \\frac{15}{4!}(0.4)^4 = 0.016 < 0.02$ (d) No: $|0.08 - 0.056| = 0.024 > 0.016$",
+  "solution": "**(a)**\n$$P_3(x) = 1 - 3(x - 2) + \\frac{4}{2!}(x - 2)^2 + \\frac{-6}{3!}(x - 2)^3 = 1 - 3(x - 2) + 2(x - 2)^2 - (x - 2)^3$$\nM1: uses $\\frac{f^{(n)}(2)}{n!}$ with powers of $(x - 2)$. A1: correct polynomial.\n\n(Writing powers of $x$ instead of $(x - 2)$ would be an expansion about $0$ and scores no marks.)\n\n**(b)** $x - 2 = 0.4$:\n$$P_3(2.4) = 1 - 1.2 + 2(0.16) - 0.064 = 0.056$$\nB1: $0.056$.\n\n**(c)** The bound for $P_3$ uses the fourth derivative, with $M = 15$:\n$$|f(2.4) - P_3(2.4)| \\le \\frac{M}{4!}|2.4 - 2|^4$$\nM1: correct form of Lagrange bound ($4!$ and power $4$).\n$$= \\frac{15}{24}(0.4)^4 = 0.625 \\times 0.0256 = 0.016$$\nA1: $0.016$.\n\n$0.016 < 0.02$, as required.\nA1: conclusion.\n\n**(d)** From (c), $f(2.4)$ lies in $[0.056 - 0.016,\\ 0.056 + 0.016] = [0.040,\\ 0.072]$.\nM1: uses the bound to find the interval or the difference.\n\n$|0.08 - 0.056| = 0.024 > 0.016$, so $f(2.4) = 0.08$ is **not** possible.\nA1: correct conclusion with reason.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q17",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Let $y = \\tan x$.\n\n(a) Show that $\\dfrac{dy}{dx} = 1 + y^2$.\n\n(b) By repeatedly differentiating this equation, find the Maclaurin series for $\\tan x$ up to and including the term in $x^5$.\n\n(c) Hence find $\\displaystyle\\lim_{x\\to 0}\\frac{\\tan x - x}{x^3}$.",
+  "hint": "Differentiate $y' = 1 + y^2$ implicitly: $y'' = 2yy'$, then use the product rule again. Since $y(0) = 0$, many terms vanish when you substitute $x = 0$.",
+  "answer": "(a) $\\frac{d}{dx}\\tan x = \\sec^2 x = 1 + \\tan^2 x$ (b) $\\tan x = x + \\frac{1}{3}x^3 + \\frac{2}{15}x^5 + \\dots$ (c) $\\frac{1}{3}$",
+  "solution": "**(a)** $\\frac{dy}{dx} = \\sec^2 x = 1 + \\tan^2 x = 1 + y^2$.\n\n**(b)** Differentiate repeatedly (product rule throughout):\n$$y' = 1 + y^2$$\n$$y'' = 2yy'$$\n$$y''' = 2(y')^2 + 2yy''$$\n$$y^{(4)} = 4y'y'' + 2y'y'' + 2yy''' = 6y'y'' + 2yy'''$$\n$$y^{(5)} = 6(y'')^2 + 6y'y''' + 2y'y''' + 2yy^{(4)} = 6(y'')^2 + 8y'y''' + 2yy^{(4)}$$\n\nAt $x = 0$: $y = 0$, so\n$$y' = 1, \\quad y'' = 0, \\quad y''' = 2(1)^2 = 2, \\quad y^{(4)} = 0, \\quad y^{(5)} = 0 + 8(1)(2) + 0 = 16$$\n\n$$\\tan x = 0 + x + 0 + \\frac{2}{3!}x^3 + 0 + \\frac{16}{5!}x^5 + \\dots = x + \\frac{1}{3}x^3 + \\frac{2}{15}x^5 + \\dots$$\n\n(Consistent with $\\tan x$ being odd: only odd powers appear.)\n\n**(c)**\n$$\\frac{\\tan x - x}{x^3} = \\frac{\\frac{1}{3}x^3 + \\frac{2}{15}x^5 + \\dots}{x^3} = \\frac{1}{3} + \\frac{2}{15}x^2 + \\dots \\to \\frac{1}{3}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-taylor-maclaurin-q18",
+  "topicId": "calc-taylor-maclaurin",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "question": "The Maclaurin series for $e^x$ converges for all $x$, so\n$$e = \\sum_{k=0}^{\\infty}\\frac{1}{k!} = 1 + 1 + \\frac{1}{2!} + \\frac{1}{3!} + \\dots$$\n\n(a) Let $q$ be a positive integer and $s_q = \\displaystyle\\sum_{k=0}^{q}\\frac{1}{k!}$. By comparing the tail $e - s_q$ with a geometric series, prove that\n$$0 < e - s_q < \\frac{1}{q!\\,q}$$\n\n(b) Hence prove by contradiction that $e$ is irrational.",
+  "hint": "(a) $e - s_q = \\frac{1}{(q + 1)!}\\left(1 + \\frac{1}{q + 2} + \\frac{1}{(q + 2)(q + 3)} + \\dots\\right)$, and each fraction in the bracket is at most a power of $\\frac{1}{q + 1}$. (b) Suppose $e = \\frac{p}{q}$ and look at $q!\\,(e - s_q)$.",
+  "answer": "(a) $e - s_q < \\frac{1}{(q + 1)!}\\sum_{j \\ge 0}\\frac{1}{(q + 1)^j} = \\frac{1}{(q + 1)!}\\cdot\\frac{q + 1}{q} = \\frac{1}{q!\\,q}$ (b) If $e = \\frac{p}{q}$, then $N = q!(e - s_q)$ is an integer with $0 < N < \\frac{1}{q} \\le 1$: impossible.",
+  "solution": "**(a)** The tail is a sum of positive terms, so $e - s_q > 0$. Factor out $\\frac{1}{(q + 1)!}$:\n$$e - s_q = \\frac{1}{(q + 1)!} + \\frac{1}{(q + 2)!} + \\dots = \\frac{1}{(q + 1)!}\\left(1 + \\frac{1}{q + 2} + \\frac{1}{(q + 2)(q + 3)} + \\dots\\right)$$\nEach factor $q + 2, q + 3, \\dots$ is greater than $q + 1$, so (after the first term) each term in the bracket is **less** than the corresponding term of $1 + \\frac{1}{q + 1} + \\frac{1}{(q + 1)^2} + \\dots$. That is a geometric series with ratio $\\frac{1}{q + 1} < 1$:\n$$e - s_q < \\frac{1}{(q + 1)!}\\cdot\\frac{1}{1 - \\frac{1}{q + 1}} = \\frac{1}{(q + 1)!}\\cdot\\frac{q + 1}{q} = \\frac{1}{q!\\,q}$$\n\n**(b)** Suppose, for contradiction, that $e$ is rational: $e = \\frac{p}{q}$ with $p, q$ positive integers. Let\n$$N = q!\\,(e - s_q) = q!\\cdot\\frac{p}{q} - \\sum_{k=0}^{q}\\frac{q!}{k!}$$\n\n* $q!\\cdot\\frac{p}{q} = p\\,(q - 1)!$ is an integer.\n* For $0 \\le k \\le q$, $\\frac{q!}{k!} = (k + 1)(k + 2)\\cdots q$ is an integer.\n\nSo $N$ is an integer. But by (a),\n$$0 < N < q!\\cdot\\frac{1}{q!\\,q} = \\frac{1}{q} \\le 1$$\nThere is no integer strictly between $0$ and $1$. This contradiction shows that $e$ is **irrational**. $\\blacksquare$\n\n(The proof works because the Maclaurin series for $e$ converges so fast: the tail after the $\\frac{1}{q!}$ term is smaller than $\\frac{1}{q!\\,q}$.)"
+ }
+]

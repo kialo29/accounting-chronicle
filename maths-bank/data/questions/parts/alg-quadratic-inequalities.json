@@ -1,0 +1,296 @@
+[
+ {
+  "id": "alg-quadratic-inequalities-q01",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve $(x - 2)(x - 5) < 0$.",
+  "hint": "Find where $(x - 2)(x - 5) = 0$, then sketch the $\\cup$-shaped curve $y = (x - 2)(x - 5)$. Where is it below the $x$-axis?",
+  "answer": "$2 < x < 5$",
+  "solution": "**Critical values:** $(x - 2)(x - 5) = 0$ when $x = 2$ or $x = 5$.\n\n**Sketch:** $y = (x - 2)(x - 5)$ expands to $x^2 - 7x + 10$, a $\\cup$-shaped parabola crossing the $x$-axis at $2$ and $5$.\n\nWe want $y < 0$: the part of the curve **below** the $x$-axis, which is **between** the roots.\n$$2 < x < 5$$\n\n**Check:** $x = 3$ gives $(1)(-2) = -2 < 0$ ✓, and $x = 6$ gives $(4)(1) = 4$, not $< 0$, so values outside are correctly excluded.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-quadratic-inequalities-q02",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve $(x - 2)(x - 5) > 0$.",
+  "hint": "Same curve as $(x - 2)(x - 5) < 0$, but now you want the parts **above** the $x$-axis. How many parts are there?",
+  "answer": "$x < 2$ or $x > 5$",
+  "solution": "**What changed:** only the inequality sign, from $<$ to $>$. The critical values are still $x = 2$ and $x = 5$, and the sketch is the same $\\cup$-shaped curve.\n\nWe now want $y > 0$: the parts of the curve **above** the $x$-axis. These are to the **left** of $2$ and to the **right** of $5$:\n$$x < 2 \\quad \\text{or} \\quad x > 5$$\n\nThis is two separate pieces, so it cannot be written as one combined inequality (writing $5 < x < 2$ would be wrong: no number is both bigger than 5 and smaller than 2). In set notation: $\\{x : x < 2\\} \\cup \\{x : x > 5\\}$.\n\n**Check:** $x = 0$ gives $(-2)(-5) = 10 > 0$ ✓; $x = 3$ gives $-2$, not $> 0$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-quadratic-inequalities-q03",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $(x - 2)(x - 5) \\ge 0$.",
+  "hint": "Compare with $(x - 2)(x - 5) > 0$. What happens at the critical values themselves now?",
+  "answer": "$x \\le 2$ or $x \\ge 5$",
+  "solution": "**What changed:** $>$ became $\\ge$, so values where the expression **equals** zero are now allowed too.\n\nAt $x = 2$ and $x = 5$ the expression is $0$, and $0 \\ge 0$ is true, so the critical values are included.\n\nFrom the sketch (the same $\\cup$-shaped curve), $y \\ge 0$ on or above the $x$-axis:\n$$x \\le 2 \\quad \\text{or} \\quad x \\ge 5$$\n\nIn set notation: $\\{x : x \\le 2\\} \\cup \\{x : x \\ge 5\\}$; in interval notation: $(-\\infty, 2] \\cup [5, \\infty)$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-quadratic-inequalities-q04",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $(2 - x)(x - 5) \\ge 0$.",
+  "hint": "Expand the brackets just enough to find the coefficient of $x^2$. Is the curve $\\cup$-shaped or $\\cap$-shaped?",
+  "answer": "$2 \\le x \\le 5$",
+  "solution": "**What changed:** the first bracket is $(2 - x)$ instead of $(x - 2)$. The critical values are still $x = 2$ and $x = 5$, but the $x^2$ term is now $(-x)(x) = -x^2$.\n\nSo $y = (2 - x)(x - 5)$ is a **$\\cap$-shaped** parabola through $(2, 0)$ and $(5, 0)$.\n\nA $\\cap$-shaped curve is **above** the axis **between** its roots, so $y \\ge 0$ when\n$$2 \\le x \\le 5$$\n\n**Check:** $x = 3$: $(2 - 3)(3 - 5) = (-1)(-2) = 2 \\ge 0$ ✓. $x = 0$: $(2)(-5) = -10$, not $\\ge 0$ ✓.\n\nNotice $(2 - x)(x - 5) = -(x - 2)(x - 5)$, so $(2 - x)(x - 5) \\ge 0$ is the same as $(x - 2)(x - 5) \\le 0$, which flips the answer from the outside regions to the inside one.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-quadratic-inequalities-q05",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The graph of $y = x^2 - 2x - 3$ is shown.\n\nUse the graph to solve\n(a) $x^2 - 2x - 3 \\le 0$\n(b) $x^2 - 2x - 3 > 0$",
+  "hint": "Read off where the curve crosses the $x$-axis. For (a) you want the part of the curve on or below the axis; for (b), the parts above it.",
+  "answer": "(a) $-1 \\le x \\le 3$ (b) $x < -1$ or $x > 3$",
+  "solution": "The curve crosses the $x$-axis at $x = -1$ and $x = 3$. (Check: $(-1)^2 - 2(-1) - 3 = 0$ and $9 - 6 - 3 = 0$.)\n\n**(a)** $y \\le 0$ means on or below the $x$-axis. The curve dips below the axis between $-1$ and $3$, and touches it at the ends:\n$$-1 \\le x \\le 3$$\n\n**(b)** $y > 0$ means strictly above the axis: the two outer arms of the curve,\n$$x < -1 \\quad \\text{or} \\quad x > 3$$\nThe ends are not included because at $x = -1$ and $x = 3$, $y = 0$, which is not $> 0$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 318 290\" width=\"318\" height=\"290\"><line x1=\"14\" y1=\"280\" x2=\"14\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"46\" y1=\"280\" x2=\"46\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"78\" y1=\"280\" x2=\"78\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"110\" y1=\"280\" x2=\"110\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"142\" y1=\"280\" x2=\"142\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"174\" y1=\"280\" x2=\"174\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"206\" y1=\"280\" x2=\"206\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"238\" y1=\"280\" x2=\"238\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"270\" y1=\"280\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"302\" y1=\"280\" x2=\"302\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"280\" x2=\"302\" y2=\"280\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"258\" x2=\"302\" y2=\"258\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"236\" x2=\"302\" y2=\"236\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"214\" x2=\"302\" y2=\"214\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"192\" x2=\"302\" y2=\"192\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"170\" x2=\"302\" y2=\"170\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"148\" x2=\"302\" y2=\"148\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"126\" x2=\"302\" y2=\"126\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"104\" x2=\"302\" y2=\"104\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"82\" x2=\"302\" y2=\"82\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"60\" x2=\"302\" y2=\"60\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"38\" x2=\"302\" y2=\"38\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"16\" x2=\"302\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"10\" y1=\"170\" x2=\"309\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"110\" y1=\"284\" x2=\"110\" y2=\"9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M310,170 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M110,8 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"311\" y=\"186\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"118\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"46\" y1=\"167\" x2=\"46\" y2=\"173\" stroke=\"currentColor\"/><text x=\"43\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"78\" y1=\"167\" x2=\"78\" y2=\"173\" stroke=\"currentColor\"/><text x=\"68\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"142\" y1=\"167\" x2=\"142\" y2=\"173\" stroke=\"currentColor\"/><text x=\"142\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"174\" y1=\"167\" x2=\"174\" y2=\"173\" stroke=\"currentColor\"/><text x=\"174\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"206\" y1=\"167\" x2=\"206\" y2=\"173\" stroke=\"currentColor\"/><text x=\"214\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"238\" y1=\"167\" x2=\"238\" y2=\"173\" stroke=\"currentColor\"/><text x=\"238\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"270\" y1=\"167\" x2=\"270\" y2=\"173\" stroke=\"currentColor\"/><text x=\"270\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"107\" y1=\"258\" x2=\"113\" y2=\"258\" stroke=\"currentColor\"/><text x=\"105\" y=\"262\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"107\" y1=\"214\" x2=\"113\" y2=\"214\" stroke=\"currentColor\"/><text x=\"116\" y=\"218\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">−2</text><line x1=\"107\" y1=\"126\" x2=\"113\" y2=\"126\" stroke=\"currentColor\"/><text x=\"105\" y=\"130\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"107\" y1=\"82\" x2=\"113\" y2=\"82\" stroke=\"currentColor\"/><text x=\"105\" y=\"86\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"107\" y1=\"38\" x2=\"113\" y2=\"38\" stroke=\"currentColor\"/><text x=\"105\" y=\"42\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"105\" y=\"185\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M35.9,16 L36.1,17 L37,21.3 L38,25.6 L39,29.9 L39.9,34.1 L40.9,38.3 L41.8,42.5 L42.8,46.6 L43.8,50.7 L44.7,54.7 L45.7,58.7 L46.6,62.6 L47.6,66.5 L48.6,70.4 L49.5,74.3 L50.5,78 L51.4,81.8 L52.4,85.5 L53.4,89.2 L54.3,92.8 L55.3,96.4 L56.2,100 L57.2,103.5 L58.2,107 L59.1,110.4 L60.1,113.8 L61,117.2 L62,120.5 L63,123.8 L63.9,127 L64.9,130.2 L65.8,133.4 L66.8,136.5 L67.8,139.6 L68.7,142.6 L69.7,145.6 L70.6,148.6 L71.6,151.5 L72.6,154.4 L73.5,157.2 L74.5,160.1 L75.4,162.8 L76.4,165.5 L77.4,168.2 L78.3,170.9 L79.3,173.5 L80.2,176.1 L81.2,178.6 L82.2,181.1 L83.1,183.5 L84.1,185.9 L85,188.3 L86,190.6 L87,192.9 L87.9,195.2 L88.9,197.4 L89.8,199.5 L90.8,201.7 L91.8,203.8 L92.7,205.8 L93.7,207.8 L94.6,209.8 L95.6,211.7 L96.6,213.6 L97.5,215.5 L98.5,217.3 L99.4,219.1 L100.4,220.8 L101.4,222.5 L102.3,224.2 L103.3,225.8 L104.2,227.4 L105.2,228.9 L106.2,230.4 L107.1,231.9 L108.1,233.3 L109,234.7 L110,236 L111,237.3 L111.9,238.6 L112.9,239.8 L113.8,241 L114.8,242.1 L115.8,243.2 L116.7,244.3 L117.7,245.3 L118.6,246.3 L119.6,247.2 L120.6,248.1 L121.5,249 L122.5,249.8 L123.4,250.6 L124.4,251.3 L125.4,252.1 L126.3,252.7 L127.3,253.3 L128.2,253.9 L129.2,254.5 L130.2,255 L131.1,255.5 L132.1,255.9 L133,256.3 L134,256.6 L135,256.9 L135.9,257.2 L136.9,257.4 L137.8,257.6 L138.8,257.8 L139.8,257.9 L140.7,258 L141.7,258 L142.6,258 L143.6,257.9 L144.6,257.9 L145.5,257.7 L146.5,257.6 L147.4,257.4 L148.4,257.1 L149.4,256.8 L150.3,256.5 L151.3,256.1 L152.2,255.7 L153.2,255.3 L154.2,254.8 L155.1,254.3 L156.1,253.7 L157,253.1 L158,252.5 L159,251.8 L159.9,251.1 L160.9,250.3 L161.8,249.5 L162.8,248.7 L163.8,247.8 L164.7,246.9 L165.7,246 L166.6,245 L167.6,243.9 L168.6,242.8 L169.5,241.7 L170.5,240.6 L171.4,239.4 L172.4,238.1 L173.4,236.9 L174.3,235.6 L175.3,234.2 L176.2,232.8 L177.2,231.4 L178.2,229.9 L179.1,228.4 L180.1,226.8 L181,225.3 L182,223.6 L183,222 L183.9,220.2 L184.9,218.5 L185.8,216.7 L186.8,214.9 L187.8,213 L188.7,211.1 L189.7,209.2 L190.6,207.2 L191.6,205.1 L192.6,203.1 L193.5,201 L194.5,198.8 L195.4,196.6 L196.4,194.4 L197.4,192.2 L198.3,189.9 L199.3,187.5 L200.2,185.1 L201.2,182.7 L202.2,180.2 L203.1,177.7 L204.1,175.2 L205,172.6 L206,170 L207,167.3 L207.9,164.6 L208.9,161.9 L209.8,159.1 L210.8,156.3 L211.8,153.4 L212.7,150.5 L213.7,147.6 L214.6,144.6 L215.6,141.6 L216.6,138.6 L217.5,135.5 L218.5,132.3 L219.4,129.2 L220.4,125.9 L221.4,122.7 L222.3,119.4 L223.3,116.1 L224.2,112.7 L225.2,109.3 L226.2,105.8 L227.1,102.3 L228.1,98.8 L229,95.2 L230,91.6 L231,88 L231.9,84.3 L232.9,80.6 L233.8,76.8 L234.8,73 L235.8,69.1 L236.7,65.2 L237.7,61.3 L238.6,57.4 L239.6,53.3 L240.6,49.3 L241.5,45.2 L242.5,41.1 L243.4,36.9 L244.4,32.7 L245.4,28.5 L246.3,24.2 L247.3,19.9 L248.1,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"302\" y=\"249.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x² − 2x − 3</text></svg>"
+ },
+ {
+  "id": "alg-quadratic-inequalities-q06",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Tom is asked to solve $x^2 \\ge 25$. His working is shown below.\n\n$$x^2 \\ge 25$$\n$$x \\ge \\sqrt{25}$$\n$$x \\ge 5$$\n\n(a) Show that $x = -6$ satisfies $x^2 \\ge 25$ but is not in Tom's answer.\n(b) Explain Tom's mistake.\n(c) Write down the correct solution.",
+  "hint": "Square-rooting both sides throws away information. Rearrange to $x^2 - 25 \\ge 0$ and factorise.",
+  "answer": "(a) $(-6)^2 = 36 \\ge 25$, but $-6 \\ge 5$ is false. (b) Taking the positive square root loses the negative solutions. (c) $x \\le -5$ or $x \\ge 5$",
+  "solution": "**(a)** $(-6)^2 = 36$ and $36 \\ge 25$, so $x = -6$ satisfies the inequality. But $-6 < 5$, so it is not in Tom's answer $x \\ge 5$.\n\n**(b)** The error is in the second line. Square-rooting both sides only keeps the **positive** root. Any negative number with a large enough size (e.g. $-5$, $-6$, $-10$) also has a square of at least 25.\n\n**(c)** Correct method:\n$$x^2 - 25 \\ge 0 \\Rightarrow (x - 5)(x + 5) \\ge 0$$\nCritical values $x = -5$ and $x = 5$. The curve $y = x^2 - 25$ is $\\cup$-shaped, so it is on or above the axis outside the roots:\n$$x \\le -5 \\quad \\text{or} \\quad x \\ge 5$$\nIn set notation: $\\{x : x \\le -5\\} \\cup \\{x : x \\ge 5\\}$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q07",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $x^2 + 3x - 10 \\ge 0$.\n\nGive your answer\n(a) in set notation\n(b) in interval notation.",
+  "hint": "Factorise first: find two numbers that multiply to $-10$ and add to $3$.",
+  "answer": "(a) $\\{x : x \\le -5\\} \\cup \\{x : x \\ge 2\\}$ (b) $(-\\infty, -5] \\cup [2, \\infty)$",
+  "solution": "Factorise:\n$$x^2 + 3x - 10 = (x + 5)(x - 2)$$\nCritical values: $x = -5$ and $x = 2$.\n\nThe curve is $\\cup$-shaped, so it is on or above the $x$-axis **outside** the roots: $x \\le -5$ or $x \\ge 2$. (Check $x = 0$: $-10$, not $\\ge 0$, so the middle is correctly excluded.)\n\nThese are two separate pieces, so they are joined with a union, never written as a single combined inequality.\n\n**(a)** $\\{x : x \\le -5\\} \\cup \\{x : x \\ge 2\\}$\n\n**(b)** $(-\\infty, -5] \\cup [2, \\infty)$. Square brackets show that $-5$ and $2$ are included (because of $\\ge$); infinity always takes a round bracket.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q08",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya's working to solve $2x^2 - 5x > 12$ is shown below.\n\nLine 1: $2x^2 - 5x - 12 > 0$\nLine 2: $(2x + 3)(x - 4) > 0$\nLine 3: $2x + 3 > 0$ and $x - 4 > 0$, so $x > -\\frac{3}{2}$ and $x > 4$\nLine 4: Solution: $x > 4$\n\n(a) Which line contains Priya's mistake? Explain the error.\n(b) Find the correct solution.",
+  "hint": "Test a negative value such as $x = -2$ in the original inequality. Is it a solution? Is it in Priya's answer?",
+  "answer": "(a) Line 3: she copied the inequality sign onto each bracket as if solving an equation. (b) $x < -\\frac{3}{2}$ or $x > 4$",
+  "solution": "**(a)** Lines 1 and 2 are correct (check: $(2x + 3)(x - 4) = 2x^2 - 8x + 3x - 12 = 2x^2 - 5x - 12$).\n\nThe error is in **Line 3**. Priya has treated the inequality like the equation $(2x + 3)(x - 4) = 0$, setting each bracket \"$> 0$\". A product is positive when both factors are positive **or when both are negative**, so she has lost a whole region. The critical values $-\\frac{3}{2}$ and $4$ only tell us where the expression equals zero.\n\nTest $x = -2$: $2(4) - 5(-2) = 8 + 10 = 18 > 12$ ✓, yet $-2$ is not in her answer.\n\n**(b)** Critical values: $x = -\\frac{3}{2}$ and $x = 4$. The curve $y = 2x^2 - 5x - 12$ is $\\cup$-shaped, so $y > 0$ outside the roots:\n$$x < -\\frac{3}{2} \\quad \\text{or} \\quad x > 4$$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q09",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Write $x^2 + 4x + 7$ in the form $(x + a)^2 + b$.\n(b) Hence explain why the inequality $x^2 + 4x + 7 < 0$ has no real solutions.\n(c) Write down the solution set of $x^2 + 4x + 7 > 0$.",
+  "hint": "Halve the coefficient of $x$ to find $a$. What is the smallest value a squared term can take?",
+  "answer": "(a) $(x + 2)^2 + 3$ (b) $(x + 2)^2 \\ge 0$, so $x^2 + 4x + 7 \\ge 3 > 0$ for every real $x$; it is never negative. (c) All real numbers, $x \\in \\mathbb{R}$",
+  "solution": "**(a)**\n$$x^2 + 4x + 7 = (x + 2)^2 - 4 + 7 = (x + 2)^2 + 3$$\n\n**(b)** For any real $x$, $(x + 2)^2 \\ge 0$ (a square is never negative). Therefore\n$$x^2 + 4x + 7 = (x + 2)^2 + 3 \\ge 0 + 3 = 3$$\nThe expression is always at least $3$, so it can never be less than $0$. The inequality has no real solutions.\n\nGraphically, $y = x^2 + 4x + 7$ is a $\\cup$-shaped parabola with minimum point $(-2, 3)$, entirely above the $x$-axis. (The discriminant $4^2 - 4 \\times 7 = -12 < 0$ confirms there are no critical values.)\n\n**(c)** The curve is above the axis everywhere, so every real number works: the solution set is $\\mathbb{R}$ (all real $x$), i.e. $\\{x : x \\in \\mathbb{R}\\}$.",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q10",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve $x^2 - x - 20 < 0$",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "$n$ is an integer. Find all the values of $n$ that satisfy both\n$$n^2 - n - 20 < 0 \\quad \\text{and} \\quad 3n - 2 \\ge 1$$",
+    "marks": 2
+   }
+  ],
+  "marks": 5,
+  "calculator": false,
+  "hint": "Factorise $x^2 - x - 20$ and sketch the curve. For (b), solve the linear inequality and look for integers in both solution sets.",
+  "answer": "(a) $-4 < x < 5$ (b) $n = 1, 2, 3, 4$",
+  "solution": "**(a)** Factorise:\n$$x^2 - x - 20 = (x - 5)(x + 4)$$ **M1**\n\nCritical values $x = -4$ and $x = 5$ **A1**\n\nThe graph of $y = x^2 - x - 20$ is $\\cup$-shaped, so it is below the $x$-axis between the roots:\n$$-4 < x < 5$$ **A1**\n\n**(b)** $3n - 2 \\ge 1 \\Rightarrow 3n \\ge 3 \\Rightarrow n \\ge 1$ **M1**\n\nFrom (a), $-4 < n < 5$, so the integers are $-3, -2, \\dots, 4$. Those that also satisfy $n \\ge 1$:\n$$n = 1, 2, 3, 4$$ **A1**\n\n($n = 5$ is excluded: $25 - 5 - 20 = 0$, which is not $< 0$.)",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q11",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "Given that $f(x) = 2x^2 - x - 6$,",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "solve the inequality $f(x) > 0$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the set of values of $x$ for which both\n$$2x^2 - x - 6 > 0 \\quad \\text{and} \\quad 4x - 3 < x + 9$$\ngiving your answer in set notation.",
+    "marks": 3
+   }
+  ],
+  "marks": 6,
+  "hint": "Factorise $f(x)$ into two linear factors. For (b), draw both solution sets on one number line and find the overlap.",
+  "answer": "(a) $x < -\\frac{3}{2}$ or $x > 2$ (b) $\\left\\{x : x < -\\frac{3}{2}\\right\\} \\cup \\{x : 2 < x < 4\\}$",
+  "solution": "**(a)** $2x^2 - x - 6 = (2x + 3)(x - 2)$ **M1** (attempt to factorise or solve $f(x) = 0$)\n\nCritical values $x = -\\frac{3}{2}$, $x = 2$ **A1**\n\n$y = f(x)$ is $\\cup$-shaped, so $f(x) > 0$ outside the critical values:\n$$x < -\\frac{3}{2} \\quad \\text{or} \\quad x > 2$$ **A1**\n\n**(b)** $4x - 3 < x + 9 \\Rightarrow 3x < 12 \\Rightarrow x < 4$ **B1**\n\nCombine with (a) on a number line. The region $x < -\\frac{3}{2}$ lies entirely within $x < 4$; of the region $x > 2$, only $2 < x < 4$ also satisfies $x < 4$. **M1** (combining the two sets)\n\n$$\\left\\{x : x < -\\frac{3}{2}\\right\\} \\cup \\{x : 2 < x < 4\\}$$ **A1**\n\n(Writing $\\{x : x < -\\frac{3}{2}\\} \\cap \\{x : 2 < x < 4\\}$ would be wrong: the intersection of those sets is empty.)",
+  "linkedTopicIds": [
+   "alg-linear-inequalities",
+   "prob-venn-set-notation"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q12",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The equation $x^2 + kx + k + 3 = 0$, where $k$ is a constant, is a quadratic equation in $x$.\n\n(a) Find the set of values of $k$ for which the equation has **no** real roots.\n(b) Find the set of values of $k$ for which the equation has **two distinct** real roots.",
+  "hint": "Use the discriminant $b^2 - 4ac$ with $a = 1$, $b = k$, $c = k + 3$. This gives a quadratic inequality in $k$.",
+  "answer": "(a) $-2 < k < 6$ (b) $k < -2$ or $k > 6$",
+  "solution": "Here $a = 1$, $b = k$, $c = k + 3$, so the discriminant is\n$$b^2 - 4ac = k^2 - 4(k + 3) = k^2 - 4k - 12 = (k - 6)(k + 2)$$\n\nCritical values: $k = -2$ and $k = 6$. The graph of $y = k^2 - 4k - 12$ (against $k$) is $\\cup$-shaped.\n\n**(a)** No real roots $\\iff b^2 - 4ac < 0$:\n$$(k - 6)(k + 2) < 0 \\Rightarrow -2 < k < 6$$\n\n**(b)** Two distinct real roots $\\iff b^2 - 4ac > 0$:\n$$(k - 6)(k + 2) > 0 \\Rightarrow k < -2 \\quad \\text{or} \\quad k > 6$$\ni.e. $\\{k : k < -2\\} \\cup \\{k : k > 6\\}$. This must be written as two separate pieces.\n\n**Check:** $k = 0$ gives $x^2 + 3 = 0$, no real roots ✓. $k = 7$ gives $x^2 + 7x + 10 = (x + 2)(x + 5) = 0$, two distinct roots ✓. (At $k = -2$ or $k = 6$ the roots are equal.)",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q13",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A ball is thrown upwards from a balcony. Its height above the ground, $h$ metres, $t$ seconds after it is thrown is modelled by\n$$h = 1.5 + 20t - 5t^2$$\n\n(a) Find the values of $t$ for which the ball is more than 16.5 m above the ground.\n(b) For how long is the ball higher than 16.5 m?",
+  "hint": "Set up $1.5 + 20t - 5t^2 > 16.5$, rearrange so one side is $0$, and divide through by $5$.",
+  "answer": "(a) $1 < t < 3$ (b) 2 seconds",
+  "solution": "**(a)**\n$$1.5 + 20t - 5t^2 > 16.5$$\n$$0 > 5t^2 - 20t + 15$$\nDivide by 5 (positive, so the sign stays the same):\n$$t^2 - 4t + 3 < 0 \\Rightarrow (t - 1)(t - 3) < 0$$\nCritical values $t = 1$ and $t = 3$. The graph of $y = t^2 - 4t + 3$ is $\\cup$-shaped, so it is negative between the roots:\n$$1 < t < 3$$\n\n**(b)** From $t = 1$ to $t = 3$: $3 - 1 = 2$ seconds.\n\n**Check:** at $t = 2$, $h = 1.5 + 40 - 20 = 21.5 > 16.5$ ✓. At $t = 1$, $h = 1.5 + 20 - 5 = 16.5$ exactly (so $t = 1$ itself is excluded). Both times are before the ball lands (it lands when $h = 0$, at about $t = 4.07$), so the whole interval is valid in the model.",
+  "linkedTopicIds": [
+   "alg-forming-equations"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q14",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A small business sells phone cases at £$x$ each. Its weekly profit, £$P$, is modelled by\n$$P = -25x^2 + 800x - 4800$$\n\n(a) Find the range of selling prices for which the weekly profit is at least £1200.\n(b) For which prices does the model predict a loss ($P < 0$)?",
+  "hint": "For (a) rearrange $-25x^2 + 800x - 4800 \\ge 1200$ and divide by $-25$. Remember what dividing by a negative does to an inequality sign.",
+  "answer": "(a) $12 \\le x \\le 20$, i.e. prices from £12 to £20 inclusive (b) $0 < x < 8$ or $x > 24$ (prices below £8 or above £24)",
+  "solution": "**(a)**\n$$-25x^2 + 800x - 4800 \\ge 1200$$\n$$-25x^2 + 800x - 6000 \\ge 0$$\nDivide by $-25$, reversing the sign:\n$$x^2 - 32x + 240 \\le 0 \\Rightarrow (x - 12)(x - 20) \\le 0$$\nThe $\\cup$-shaped curve $y = (x - 12)(x - 20)$ is on or below the axis between the roots:\n$$12 \\le x \\le 20$$\nSo the price must be between £12 and £20 inclusive.\n\n**(b)**\n$$-25x^2 + 800x - 4800 < 0$$\nDivide by $-25$ and reverse the sign:\n$$x^2 - 32x + 192 > 0 \\Rightarrow (x - 8)(x - 24) > 0$$\nOutside the roots: $x < 8$ or $x > 24$. Since a price must be positive, the model predicts a loss for $0 < x < 8$ or $x > 24$.\n\n**Check:** the maximum profit is at $x = 16$ (midway between 8 and 24): $P = -6400 + 12\\,800 - 4800 = 1600$, which is at least 1200 ✓.",
+  "linkedTopicIds": [
+   "alg-forming-equations"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q15",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Solve the polynomial inequality\n$$x^3 - 3x^2 - 4x + 12 \\le 0$$\nGive your answer in interval notation.",
+  "hint": "Factorise by grouping: look at $x^3 - 3x^2$ and $-4x + 12$ separately. Then use a sign chart for the three factors.",
+  "answer": "$(-\\infty, -2] \\cup [2, 3]$",
+  "solution": "**Factorise by grouping:**\n$$x^3 - 3x^2 - 4x + 12 = x^2(x - 3) - 4(x - 3) = (x - 3)(x^2 - 4) = (x - 3)(x - 2)(x + 2)$$\n\nCritical values: $x = -2$, $2$, $3$. These split the number line into four intervals. **Sign chart** (test a value in each interval):\n\n| Interval | test $x$ | $x + 2$ | $x - 2$ | $x - 3$ | product |\n|---|---|---|---|---|---|\n| $x < -2$ | $-3$ | $-$ | $-$ | $-$ | $-$ |\n| $-2 < x < 2$ | $0$ | $+$ | $-$ | $-$ | $+$ |\n| $2 < x < 3$ | $2.5$ | $+$ | $+$ | $-$ | $-$ |\n| $x > 3$ | $4$ | $+$ | $+$ | $+$ | $+$ |\n\nWe want the product $\\le 0$: the negative intervals, plus the critical values themselves (where the product is $0$).\n$$(-\\infty, -2] \\cup [2, 3]$$\n\n**Check:** $x = 0$ gives $12 > 0$ (excluded ✓); $x = 2.5$ gives $15.625 - 18.75 - 10 + 12 = -1.125 \\le 0$ ✓. The sign alternates at each single root, matching a positive cubic that rises from bottom left to top right.",
+  "linkedTopicIds": [
+   "pure-polynomials-factor-theorem"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q16",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Kai solves the inequality\n$$\\frac{6}{x - 1} \\ge x$$\nlike this:\n\n\"Multiply both sides by $(x - 1)$: $6 \\ge x^2 - x$, so $x^2 - x - 6 \\le 0$, so $(x - 3)(x + 2) \\le 0$, so $-2 \\le x \\le 3$.\"\n\n(a) Show that $x = 0$ is in Kai's answer but does not satisfy the original inequality.\n(b) Explain why Kai's method is not valid.\n(c) Solve the inequality correctly, giving your answer in set notation.",
+  "hint": "Is $x - 1$ always positive? Instead, bring everything to one side as a single fraction, or multiply both sides by $(x - 1)^2$, which is positive. Then use a sign chart.",
+  "answer": "(a) $\\frac{6}{0 - 1} = -6$ and $-6 \\ge 0$ is false. (b) $x - 1$ can be negative (which would reverse the sign) or zero, so you cannot multiply through by it. (c) $\\{x : x \\le -2\\} \\cup \\{x : 1 < x \\le 3\\}$",
+  "solution": "**(a)** $x = 0$ lies in $-2 \\le x \\le 3$. But $\\frac{6}{0 - 1} = -6$, and $-6 \\ge 0$ is false. So Kai's answer contains values that are not solutions.\n\n**(b)** Multiplying an inequality by a quantity keeps the sign only if that quantity is **positive**. When $x < 1$, $x - 1$ is negative, so the sign should reverse; Kai did not know which case he was in. Also $x = 1$ is in his answer, but the left-hand side is undefined there.\n\n**(c)** Multiply both sides by $(x - 1)^2$, which is positive for $x \\ne 1$:\n$$6(x - 1) \\ge x(x - 1)^2$$\n$$0 \\ge (x - 1)\\left[x(x - 1) - 6\\right] = (x - 1)(x^2 - x - 6) = (x - 1)(x - 3)(x + 2)$$\n\nSo we need $(x + 2)(x - 1)(x - 3) \\le 0$ with $x \\ne 1$. Critical values $-2$, $1$, $3$:\n\n| Interval | $x + 2$ | $x - 1$ | $x - 3$ | product |\n|---|---|---|---|---|\n| $x < -2$ | $-$ | $-$ | $-$ | $-$ |\n| $-2 < x < 1$ | $+$ | $-$ | $-$ | $+$ |\n| $1 < x < 3$ | $+$ | $+$ | $-$ | $-$ |\n| $x > 3$ | $+$ | $+$ | $+$ | $+$ |\n\nThe product is $\\le 0$ for $x \\le -2$ and $1 \\le x \\le 3$, but $x = 1$ must be excluded. Hence\n$$\\{x : x \\le -2\\} \\cup \\{x : 1 < x \\le 3\\}$$\n\n**Check:** $x = -3$: $\\frac{6}{-4} = -1.5 \\ge -3$ ✓. $x = 2$: $6 \\ge 2$ ✓. $x = -1$: $-3 \\ge -1$ ✗ (correctly excluded). $x = 4$: $2 \\ge 4$ ✗ ✓.",
+  "linkedTopicIds": [
+   "alg-algebraic-fractions"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-quadratic-inequalities-q17",
+  "topicId": "alg-quadratic-inequalities",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A bag contains $n$ red counters and 5 blue counters, where $n \\ge 1$. Two counters are taken at random from the bag, without replacement.\n\nThe probability that the two counters are the same colour is greater than $\\frac{1}{2}$.\n\n(a) Show that $n^2 - 11n + 20 > 0$.\n(b) Find all the possible values of $n$.",
+  "hint": "$P(\\text{same}) = P(RR) + P(BB)$. The total number of counters is $n + 5$, and after one is removed it is $n + 4$. For (b), the critical values are not whole numbers: use the quadratic formula and think about which integers work.",
+  "answer": "(a) Shown: $\\frac{n(n - 1) + 20}{(n + 5)(n + 4)} > \\frac{1}{2}$ simplifies to $n^2 - 11n + 20 > 0$. (b) $n = 1$, $n = 2$, or any integer $n \\ge 9$",
+  "solution": "**(a)**\n$$P(RR) = \\frac{n}{n + 5} \\times \\frac{n - 1}{n + 4}, \\qquad P(BB) = \\frac{5}{n + 5} \\times \\frac{4}{n + 4}$$\n$$P(\\text{same}) = \\frac{n(n - 1) + 20}{(n + 5)(n + 4)} > \\frac{1}{2}$$\nThe denominator is positive, so multiply both sides by $2(n + 5)(n + 4)$:\n$$2n^2 - 2n + 40 > n^2 + 9n + 20$$\n$$n^2 - 11n + 20 > 0 \\quad \\text{as required.}$$\n\n**(b)** Critical values from the quadratic formula:\n$$n = \\frac{11 \\pm \\sqrt{121 - 80}}{2} = \\frac{11 \\pm \\sqrt{41}}{2} \\approx 2.30 \\text{ or } 8.70$$\nThe curve $y = n^2 - 11n + 20$ is $\\cup$-shaped, so $y > 0$ outside the roots: $n < 2.30\\ldots$ or $n > 8.70\\ldots$\n\n$n$ is a positive integer, so $n = 1$, $n = 2$, or $n \\ge 9$.\n\n**Check:** $n = 2$: $\\frac{2 + 20}{42} = \\frac{22}{42} \\approx 0.524 > 0.5$ ✓. $n = 3$: $\\frac{6 + 20}{56} \\approx 0.464$ ✗. $n = 8$: $\\frac{56 + 20}{156} \\approx 0.487$ ✗. $n = 9$: $\\frac{72 + 20}{182} \\approx 0.505$ ✓.",
+  "linkedTopicIds": [
+   "prob-tree-diagrams",
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ }
+]

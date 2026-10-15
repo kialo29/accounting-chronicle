@@ -1,0 +1,292 @@
+[
+ {
+  "id": "fur-series-summation-q01",
+  "topicId": "fur-series-summation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use the standard result for $\\sum_{r=1}^{n} r$ to show that\n$$\\sum_{r=1}^{n} (3r + 2) = \\frac{n(3n + 7)}{2}$$",
+  "hint": "Split the sum: $3\\sum r + \\sum 2$. How many 2s are being added?",
+  "answer": "$\\sum_{r=1}^{n}(3r + 2) = \\frac{3n(n + 1)}{2} + 2n = \\frac{n(3n + 7)}{2}$",
+  "solution": "Split the sum and take out the constant factor:\n$$\\sum_{r=1}^{n}(3r + 2) = 3\\sum_{r=1}^{n} r + \\sum_{r=1}^{n} 2 = 3 \\times \\frac{n(n + 1)}{2} + 2n$$\n(the constant 2 is added once for each of the $n$ terms, giving $2n$).\n\nTake out $\\frac{n}{2}$:\n$$= \\frac{n}{2}\\big[3(n + 1) + 4\\big] = \\frac{n(3n + 7)}{2}$$\n\nCheck $n = 1$: $3 + 2 = 5$ and $\\frac{1 \\times 10}{2} = 5$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q02",
+  "topicId": "fur-series-summation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Show that\n$$\\sum_{r=1}^{n} (3r - 2) = \\frac{n(3n - 1)}{2}$$",
+  "hint": "Only the sign of the constant has changed from $\\sum(3r + 2)$. What is $\\sum_{r=1}^{n} 2$?",
+  "answer": "$\\sum_{r=1}^{n}(3r - 2) = \\frac{3n(n + 1)}{2} - 2n = \\frac{n(3n - 1)}{2}$",
+  "solution": "**What changed:** the constant is now $-2$, so we subtract $2n$ instead of adding it.\n$$\\sum_{r=1}^{n}(3r - 2) = 3\\sum_{r=1}^{n} r - \\sum_{r=1}^{n} 2 = \\frac{3n(n + 1)}{2} - 2n = \\frac{n}{2}\\big[3(n + 1) - 4\\big] = \\frac{n(3n - 1)}{2}$$\n\nCheck $n = 2$: $1 + 4 = 5$ and $\\frac{2 \\times 5}{2} = 5$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q03",
+  "topicId": "fur-series-summation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Show that\n$$\\sum_{r=1}^{n} (3r^2 - 2) = \\frac{n(2n^2 + 3n - 3)}{2}$$",
+  "hint": "Now $r$ has become $r^2$, so use $\\sum r^2 = \\frac{1}{6}n(n + 1)(2n + 1)$.",
+  "answer": "$\\sum_{r=1}^{n}(3r^2 - 2) = \\frac{n(n + 1)(2n + 1)}{2} - 2n = \\frac{n(2n^2 + 3n - 3)}{2}$",
+  "solution": "**What changed:** $r$ has become $r^2$, so the $\\sum r^2$ formula replaces $\\sum r$; the constant part is unchanged.\n$$\\sum_{r=1}^{n}(3r^2 - 2) = 3 \\times \\frac{n(n + 1)(2n + 1)}{6} - 2n = \\frac{n(n + 1)(2n + 1)}{2} - 2n$$\n$$= \\frac{n}{2}\\big[(2n^2 + 3n + 1) - 4\\big] = \\frac{n(2n^2 + 3n - 3)}{2}$$\n\nCheck $n = 2$: $1 + 10 = 11$ and $\\frac{2(8 + 6 - 3)}{2} = 11$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q04",
+  "topicId": "fur-series-summation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of\n$$\\sum_{r=1}^{20} (3r^2 - 2)$$",
+  "hint": "Same general term as before, but now with a numerical upper limit. Substitute $n = 20$ into a formula you already have.",
+  "answer": "$8570$",
+  "solution": "**What changed:** the upper limit is now a number, so substitute $n = 20$ into the previous result:\n$$\\sum_{r=1}^{20}(3r^2 - 2) = \\frac{20(2 \\times 400 + 60 - 3)}{2} = 10 \\times 857 = 8570$$\n\nAlternatively: $3\\sum_{r=1}^{20} r^2 - 2 \\times 20 = 3 \\times \\frac{20 \\times 21 \\times 41}{6} - 40 = 3 \\times 2870 - 40 = 8570$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-series-summation-q05",
+  "topicId": "fur-series-summation",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Show that $\\dfrac{1}{r(r + 1)} = \\dfrac{1}{r} - \\dfrac{1}{r + 1}$.\n\n(b) Hence use the method of differences to show that $\\displaystyle\\sum_{r=1}^{n} \\frac{1}{r(r + 1)} = \\frac{n}{n + 1}$.",
+  "hint": "Write out the terms for $r = 1, 2, 3, \\ldots, n$ in rows, one under another, and look for terms that cancel.",
+  "answer": "(a) $\\frac{1}{r} - \\frac{1}{r + 1} = \\frac{(r + 1) - r}{r(r + 1)} = \\frac{1}{r(r + 1)}$ (b) Sum $= 1 - \\frac{1}{n + 1} = \\frac{n}{n + 1}$",
+  "solution": "**(a)**\n$$\\frac{1}{r} - \\frac{1}{r + 1} = \\frac{(r + 1) - r}{r(r + 1)} = \\frac{1}{r(r + 1)}$$\n\n**(b)** Write out the rows:\n$r = 1$: $\\frac{1}{1} - \\frac{1}{2}$\n$r = 2$: $\\frac{1}{2} - \\frac{1}{3}$\n$r = 3$: $\\frac{1}{3} - \\frac{1}{4}$\n$\\ldots$\n$r = n$: $\\frac{1}{n} - \\frac{1}{n + 1}$\n\nEach negative term cancels with the positive term in the next row. Only the first term of the first row and the last term of the last row survive:\n$$\\sum_{r=1}^{n} \\frac{1}{r(r + 1)} = 1 - \\frac{1}{n + 1} = \\frac{n}{n + 1}$$",
+  "linkedTopicIds": [
+   "pure-partial-fractions"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q06",
+  "topicId": "fur-series-summation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Lily is asked to find $\\displaystyle\\sum_{r=1}^{n} (2r^3 - 5)$ in terms of $n$. Her working is shown below.\n$$\\sum_{r=1}^{n}(2r^3 - 5) = 2 \\times \\frac{1}{4}n^2(n + 1)^2 - 5 = \\frac{1}{2}n^2(n + 1)^2 - 5$$\n\n(a) Explain the mistake in Lily's working.\n\n(b) Find the correct expression.\n\n(c) Lily checks her answer with $n = 1$ and finds that it works. Explain why this check did not reveal her mistake, and give a value of $n$ that does.",
+  "hint": "Write $\\sum_{r=1}^{n} 5$ out in full: $5 + 5 + \\cdots$. How many terms are there?",
+  "answer": "(a) She treated $\\sum_{r=1}^{n} 5$ as 5; it is $5n$ (one 5 for each of the $n$ terms). (b) $\\frac{1}{2}n^2(n + 1)^2 - 5n$ (c) When $n = 1$, $5n = 5$, so both formulas agree. Any $n \\ge 2$ exposes it, e.g. $n = 2$: the sum is $8$ but Lily's formula gives $13$.",
+  "solution": "**(a)** Lily's use of $\\sum r^3 = \\frac{1}{4}n^2(n + 1)^2$ is correct, but she wrote $\\sum_{r=1}^{n} 5 = 5$. The constant 5 is subtracted from **every** term, and there are $n$ terms:\n$$\\sum_{r=1}^{n} 5 = \\underbrace{5 + 5 + \\cdots + 5}_{n \\text{ terms}} = 5n$$\n\n**(b)**\n$$\\sum_{r=1}^{n}(2r^3 - 5) = \\frac{1}{2}n^2(n + 1)^2 - 5n$$\n\n**(c)** For $n = 1$ the sum is $2(1) - 5 = -3$. Lily's formula gives $\\frac{1}{2}(1)(4) - 5 = -3$ and the correct formula gives $2 - 5 = -3$. They agree because $5n = 5$ when $n = 1$, so a check at $n = 1$ **cannot** expose this error.\n\nTesting $n = 2$: the sum is $(2 - 5) + (16 - 5) = -3 + 11 = 8$. Correct formula: $\\frac{1}{2}(4)(9) - 10 = 18 - 10 = 8$ ✓. Lily's formula: $18 - 5 = 13$ ✗.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q07",
+  "topicId": "fur-series-summation",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A greengrocer stacks oranges in a square-based pyramid. Counting from the top, layer $r$ is an $r \\times r$ square of oranges. The diagram shows the first four layers viewed from above, with the number of oranges in each.\n\n(a) How many oranges are in a complete pyramid whose bottom layer is $12 \\times 12$?\n\n(b) She has 1000 oranges. What is the greatest number of complete layers she can build, and how many oranges are left over?",
+  "hint": "The total for $n$ layers is $\\sum_{r=1}^{n} r^2$. For (b), find the largest $n$ with $\\frac{1}{6}n(n + 1)(2n + 1) \\le 1000$.",
+  "answer": "(a) 650 oranges (b) 13 layers, with 181 oranges left over",
+  "solution": "Total for $n$ layers: $\\displaystyle\\sum_{r=1}^{n} r^2 = \\frac{n(n + 1)(2n + 1)}{6}$.\n\n**(a)** $n = 12$:\n$$\\frac{12 \\times 13 \\times 25}{6} = 650 \\text{ oranges}$$\n\n**(b)** Since $\\frac{n(n + 1)(2n + 1)}{6} \\approx \\frac{n^3}{3}$, try $n$ near $\\sqrt[3]{3000} \\approx 14$:\n$n = 13$: $\\frac{13 \\times 14 \\times 27}{6} = 819 \\le 1000$\n$n = 14$: $\\frac{14 \\times 15 \\times 29}{6} = 1015 > 1000$\n\nSo the greatest number of complete layers is 13, leaving $1000 - 819 = 181$ oranges.",
+  "linkedTopicIds": [],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 115\" width=\"340\" height=\"115\"><circle cx=\"30\" cy=\"33\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"30\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 1</text><text x=\"30\" y=\"106\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><circle cx=\"89\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"101\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"89\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"101\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"95\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 2</text><text x=\"95\" y=\"106\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><circle cx=\"168\" cy=\"21\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"180\" cy=\"21\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"192\" cy=\"21\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"168\" cy=\"33\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"180\" cy=\"33\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"192\" cy=\"33\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"168\" cy=\"45\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"180\" cy=\"45\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"192\" cy=\"45\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"180\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 3</text><text x=\"180\" y=\"106\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><circle cx=\"272\" cy=\"15\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"284\" cy=\"15\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"296\" cy=\"15\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"308\" cy=\"15\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"272\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"284\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"296\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"308\" cy=\"27\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"272\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"284\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"296\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"308\" cy=\"39\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"272\" cy=\"51\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"284\" cy=\"51\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"296\" cy=\"51\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"308\" cy=\"51\" r=\"6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"290\" y=\"88\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 4</text><text x=\"290\" y=\"106\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">16</text></svg>"
+ },
+ {
+  "id": "fur-series-summation-q08",
+  "topicId": "fur-series-summation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Callum is asked to find $\\displaystyle\\sum_{r=1}^{n} r^2(r - 1)$, fully factorised. He writes:\n$$\\sum_{r=1}^{n} r^2(r - 1) = \\left(\\sum_{r=1}^{n} r^2\\right)\\left(\\sum_{r=1}^{n} (r - 1)\\right) = \\frac{n(n + 1)(2n + 1)}{6} \\times \\frac{n(n - 1)}{2}$$\n\n(a) Use $n = 2$ to show that Callum's answer is wrong.\n\n(b) Explain his error and find the correct result in the form $\\frac{1}{12}n(n + 1)(n - 1)(an + b)$.",
+  "hint": "Is the sum of products the same as the product of sums? Expand $r^2(r - 1)$ first.",
+  "answer": "(a) True value $0 + 4 = 4$; Callum's formula gives $5 \\times 1 = 5$. (b) A sum cannot be split over a product; expand first: $\\sum (r^3 - r^2) = \\frac{1}{12}n(n + 1)(n - 1)(3n + 2)$.",
+  "solution": "**(a)** $n = 2$: $\\sum_{r=1}^{2} r^2(r - 1) = 1(0) + 4(1) = 4$.\nCallum's formula: $\\frac{2 \\times 3 \\times 5}{6} \\times \\frac{2 \\times 1}{2} = 5 \\times 1 = 5 \\ne 4$.\n\n**(b)** Sums split over **addition**, not multiplication: $\\sum a_rb_r \\ne \\left(\\sum a_r\\right)\\left(\\sum b_r\\right)$ (e.g. $1 \\times 0 + 4 \\times 1 \\ne (1 + 4)(0 + 1)$). Expand the general term first:\n$$r^2(r - 1) = r^3 - r^2$$\n$$\\sum_{r=1}^{n}(r^3 - r^2) = \\frac{n^2(n + 1)^2}{4} - \\frac{n(n + 1)(2n + 1)}{6} = \\frac{n(n + 1)}{12}\\big[3n(n + 1) - 2(2n + 1)\\big]$$\n$$= \\frac{n(n + 1)(3n^2 - n - 2)}{12} = \\frac{1}{12}n(n + 1)(n - 1)(3n + 2)$$\n\nCheck $n = 2$: $\\frac{1}{12} \\times 2 \\times 3 \\times 1 \\times 8 = 4$ ✓",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q09",
+  "topicId": "fur-series-summation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara is asked to evaluate $\\displaystyle\\sum_{r=21}^{40} r^2$. Her working is shown below.\n$$\\sum_{r=21}^{40} r^2 = \\sum_{r=1}^{40} r^2 - \\sum_{r=1}^{21} r^2 = \\frac{40 \\times 41 \\times 81}{6} - \\frac{21 \\times 22 \\times 43}{6} = 22\\,140 - 3311 = 18\\,829$$\n\nFind Zara's mistake, explain why it is a mistake, and give the correct value.",
+  "hint": "Which terms does $\\sum_{r=1}^{21}$ remove? Should the term $21^2$ be removed?",
+  "answer": "She subtracted the sum up to $r = 21$, which also removes $21^2$. She should subtract the sum up to $r = 20$: $22\\,140 - 2870 = 19\\,270$.",
+  "solution": "The sum required is $21^2 + 22^2 + \\cdots + 40^2$, which **includes** $21^2$.\n\n$\\sum_{r=1}^{40} r^2 - \\sum_{r=1}^{21} r^2$ removes $1^2, 2^2, \\ldots, 21^2$, so it leaves out $21^2$. Indeed $19\\,270 - 18\\,829 = 441 = 21^2$.\n\nIn general $\\sum_{r=k}^{n} f(r) = \\sum_{r=1}^{n} f(r) - \\sum_{r=1}^{k-1} f(r)$, so subtract the sum up to $r = 20$:\n$$\\sum_{r=21}^{40} r^2 = \\frac{40 \\times 41 \\times 81}{6} - \\frac{20 \\times 21 \\times 41}{6} = 22\\,140 - 2870 = 19\\,270$$\n\nSense check: there are 20 terms averaging roughly $30.5^2 \\approx 930$, giving about $18\\,600$, so $19\\,270$ is reasonable.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q10",
+  "topicId": "fur-series-summation",
+  "difficulty": 4,
+  "type": "spot-the-mistake",
+  "question": "Ben uses the method of differences to find $\\displaystyle\\sum_{r=1}^{n} \\frac{1}{(2r - 1)(2r + 3)}$. His working is shown below.\n\n$$\\frac{1}{(2r - 1)(2r + 3)} = \\frac{1}{4}\\left(\\frac{1}{2r - 1} - \\frac{1}{2r + 3}\\right)$$\n\"All the middle terms cancel, so\"\n$$\\sum_{r=1}^{n} \\frac{1}{(2r - 1)(2r + 3)} = \\frac{1}{4}\\left(1 - \\frac{1}{2n + 3}\\right) = \\frac{n + 1}{2(2n + 3)}$$\n\n(a) Ben checks his answer with $n = 1$ and it works. Show that his answer is wrong when $n = 2$.\n\n(b) Identify and explain his error.\n\n(c) Find the correct sum, giving your answer as a single fraction in factorised form.",
+  "hint": "Write out the rows for $r = 1, 2, 3$ and for $r = n - 1, n$. The fraction $\\frac{1}{2r + 3}$ in row $r$ matches $\\frac{1}{2r - 1}$ two rows later.",
+  "answer": "(a) True sum $\\frac{1}{5} + \\frac{1}{21} = \\frac{26}{105}$; Ben's formula gives $\\frac{3}{14}$. (b) Two terms survive at each end, not one: $1$ and $\\frac{1}{3}$ at the start, $-\\frac{1}{2n + 1}$ and $-\\frac{1}{2n + 3}$ at the end. (c) $\\frac{n(4n + 5)}{3(2n + 1)(2n + 3)}$",
+  "solution": "**(a)** $n = 2$: $\\frac{1}{1 \\times 5} + \\frac{1}{3 \\times 7} = \\frac{1}{5} + \\frac{1}{21} = \\frac{26}{105}$, but Ben's formula gives $\\frac{3}{2 \\times 7} = \\frac{3}{14} = \\frac{22.5}{105}$. Not equal, so Ben is wrong. (At $n = 1$ the missing terms $\\frac{1}{3} - \\frac{1}{3}$ happen to cancel, which is why his check worked.)\n\n**(b)** His partial fractions are correct. The error is assuming only one term survives at each end. Write out the rows (inside the bracket):\n$r = 1$: $\\frac{1}{1} - \\frac{1}{5}$\n$r = 2$: $\\frac{1}{3} - \\frac{1}{7}$\n$r = 3$: $\\frac{1}{5} - \\frac{1}{9}$\n$\\ldots$\n$r = n - 1$: $\\frac{1}{2n - 3} - \\frac{1}{2n + 1}$\n$r = n$: $\\frac{1}{2n - 1} - \\frac{1}{2n + 3}$\n\nEach negative term cancels with a positive term **two** rows later. So $\\frac{1}{1}$ and $\\frac{1}{3}$ survive at the start (nothing cancels them), and $-\\frac{1}{2n + 1}$ and $-\\frac{1}{2n + 3}$ survive at the end.\n\n**(c)**\n$$\\sum_{r=1}^{n} \\frac{1}{(2r - 1)(2r + 3)} = \\frac{1}{4}\\left(1 + \\frac{1}{3} - \\frac{1}{2n + 1} - \\frac{1}{2n + 3}\\right) = \\frac{1}{4}\\left(\\frac{4}{3} - \\frac{4n + 4}{(2n + 1)(2n + 3)}\\right)$$\n$$= \\frac{1}{3} - \\frac{n + 1}{(2n + 1)(2n + 3)} = \\frac{(2n + 1)(2n + 3) - 3(n + 1)}{3(2n + 1)(2n + 3)} = \\frac{4n^2 + 5n}{3(2n + 1)(2n + 3)} = \\frac{n(4n + 5)}{3(2n + 1)(2n + 3)}$$\n\nCheck $n = 2$: $\\frac{2 \\times 13}{3 \\times 5 \\times 7} = \\frac{26}{105}$ ✓",
+  "linkedTopicIds": [
+   "pure-partial-fractions"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q11",
+  "topicId": "fur-series-summation",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Show that, for all positive integers $n$,\n$$\\sum_{r=1}^{n} r^3 = \\left(\\sum_{r=1}^{n} r\\right)^2$$\n\n(b) Jack says: \"So $1^3 + 2^3 + \\cdots + n^3$ is always a perfect square, and it is always a multiple of $1 + 2 + \\cdots + n$.\" Is Jack correct? Justify your answer.\n\n(c) Priya says: \"In the same way, $\\left(\\sum_{r=1}^{n} r\\right)^2 = \\sum_{r=1}^{n} r^2$.\" Show that Priya is wrong, and explain where the difference comes from.",
+  "hint": "Compare the standard formulae for $\\sum r^3$ and $\\sum r$. For (c), expand $(1 + 2 + 3)^2$ in full.",
+  "answer": "(a) $\\sum r^3 = \\frac{1}{4}n^2(n + 1)^2 = \\left(\\frac{1}{2}n(n + 1)\\right)^2$ (b) Yes: $\\frac{1}{2}n(n + 1)$ is an integer, so $\\sum r^3$ is its square, and $\\sum r^3 \\div \\sum r = \\frac{1}{2}n(n + 1)$, an integer. (c) e.g. $n = 2$: $(1 + 2)^2 = 9$ but $1^2 + 2^2 = 5$; squaring a sum also produces cross terms $2\\sum_{i<j} ij$.",
+  "solution": "**(a)**\n$$\\sum_{r=1}^{n} r^3 = \\frac{1}{4}n^2(n + 1)^2 = \\left(\\frac{n(n + 1)}{2}\\right)^2 = \\left(\\sum_{r=1}^{n} r\\right)^2$$\n\n**(b)** Jack is correct.\n* $n(n + 1)$ is a product of consecutive integers, so it is even and $\\frac{n(n + 1)}{2}$ is an integer. Hence $\\sum r^3$ is the square of an integer.\n* $\\sum r^3 = \\left(\\sum r\\right)^2 = \\left(\\sum r\\right) \\times \\frac{n(n + 1)}{2}$, so $\\sum r^3$ is $\\sum r$ multiplied by an integer: a multiple of $\\sum r$.\n\nE.g. $n = 4$: $1 + 8 + 27 + 64 = 100 = 10^2$, and $100 = 10 \\times 10$ where $1 + 2 + 3 + 4 = 10$.\n\n**(c)** $n = 2$: $(1 + 2)^2 = 9$ but $1^2 + 2^2 = 5$, so Priya is wrong.\n\nSquaring a sum is not the same as summing the squares: $(a + b)^2 = a^2 + b^2 + 2ab$. In general\n$$\\left(\\sum_{r=1}^{n} r\\right)^2 = \\sum_{r=1}^{n} r^2 + 2\\sum_{1 \\le i < j \\le n} ij$$\nso the square of the sum is larger by twice the sum of all the products of pairs of different terms. (Part (a) is a special fact about cubes, not a general rule.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q12",
+  "topicId": "fur-series-summation",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "In this question you must show detailed reasoning.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use the standard results for $\\sum_{r=1}^{n} r$ and $\\sum_{r=1}^{n} r^2$ to show that\n$$\\sum_{r=1}^{n} (2r - 1)^2 = \\frac{n(2n - 1)(2n + 1)}{3}$$",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that $\\displaystyle\\sum_{r=n+1}^{2n} (2r - 1)^2 = \\frac{n(28n^2 - 1)}{3}$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence, or otherwise, find the value of $21^2 + 23^2 + 25^2 + \\cdots + 59^2$.",
+    "marks": 2
+   }
+  ],
+  "marks": 9,
+  "calculator": false,
+  "hint": "(a) Expand $(2r - 1)^2$ and remember $\\sum_{r=1}^{n} 1 = n$. (b) Subtract the sum up to $n$ from the sum up to $2n$. (c) Which values of $r$ give $2r - 1 = 21$ and $2r - 1 = 59$?",
+  "answer": "(a) Shown (see solution). (b) Shown (see solution). (c) $34\\,660$",
+  "solution": "**(a)** $(2r - 1)^2 = 4r^2 - 4r + 1$ **M1**\n$$\\sum_{r=1}^{n}(4r^2 - 4r + 1) = \\frac{4n(n + 1)(2n + 1)}{6} - \\frac{4n(n + 1)}{2} + n$$ **M1** (correct use of standard results, including $\\sum 1 = n$)\n$$= \\frac{n}{3}\\big[2(n + 1)(2n + 1) - 6(n + 1) + 3\\big] = \\frac{n}{3}\\big[4n^2 + 6n + 2 - 6n - 6 + 3\\big] = \\frac{n(4n^2 - 1)}{3}$$ **A1**\n$$= \\frac{n(2n - 1)(2n + 1)}{3}$$ **A1** (cso)\n\n**(b)** Let $S(n) = \\frac{n(2n - 1)(2n + 1)}{3} = \\frac{n(4n^2 - 1)}{3}$.\n$$\\sum_{r=n+1}^{2n}(2r - 1)^2 = S(2n) - S(n)$$ **M1** (the lower limit $n + 1$ means subtract $S(n)$)\n$$= \\frac{2n(16n^2 - 1)}{3} - \\frac{n(4n^2 - 1)}{3}$$ **A1**\n$$= \\frac{n(32n^2 - 2 - 4n^2 + 1)}{3} = \\frac{n(28n^2 - 1)}{3}$$ **A1** (cso)\n\n**(c)** $2r - 1 = 21 \\Rightarrow r = 11$ and $2r - 1 = 59 \\Rightarrow r = 30$, so the sum is $\\sum_{r=11}^{30}(2r - 1)^2 = S(30) - S(10)$. **M1**\n$$S(30) - S(10) = \\frac{30 \\times 59 \\times 61}{3} - \\frac{10 \\times 19 \\times 21}{3} = 35\\,990 - 1330 = 34\\,660$$ **A1**",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q13",
+  "topicId": "fur-series-summation",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A drilling company charges £$(40 + 0.06r^2)$ for drilling the $r$th metre of a borehole, because deeper rock is harder to reach.\n\n(a) Show that the total cost, in pounds, of drilling a borehole $n$ metres deep is\n$$40n + 0.01n(n + 1)(2n + 1)$$\n\n(b) Find the cost of drilling a borehole 100 metres deep.\n\n(c) A farmer has already paid for the first 100 metres. Find the extra cost of deepening the borehole to 150 metres.",
+  "hint": "(a) The charge of £40 applies to every metre. (c) The extra metres are $r = 101$ to $r = 150$. Which partial sum should be subtracted?",
+  "answer": "(a) Shown (see solution). (b) £24 301 (c) £49 875.50",
+  "solution": "**(a)**\n$$\\sum_{r=1}^{n}(40 + 0.06r^2) = 40n + 0.06 \\times \\frac{n(n + 1)(2n + 1)}{6} = 40n + 0.01n(n + 1)(2n + 1)$$\n(the fixed £40 is paid for each of the $n$ metres, giving $40n$).\n\n**(b)** Let $C(n) = 40n + 0.01n(n + 1)(2n + 1)$.\n$$C(100) = 4000 + 0.01 \\times 100 \\times 101 \\times 201 = 4000 + 20\\,301 = 24\\,301$$\nThe cost is £24 301.\n\n**(c)** Metres $101$ to $150$: $\\sum_{r=101}^{150}(40 + 0.06r^2) = C(150) - C(100)$ (subtract up to $r = 100$, not $101$).\n$$C(150) = 6000 + 0.01 \\times 150 \\times 151 \\times 301 = 6000 + 68\\,176.5 = 74\\,176.50$$\n$$C(150) - C(100) = 74\\,176.50 - 24\\,301 = 49\\,875.50$$\nThe extra cost is £49 875.50. (The last 50 metres cost about twice as much as the first 100.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q14",
+  "topicId": "fur-series-summation",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "(a) Show that $r^2(r + 1)^2 - (r - 1)^2r^2 = 4r^3$.\n\n(b) Hence use the method of differences to prove that $\\displaystyle\\sum_{r=1}^{n} r^3 = \\frac{1}{4}n^2(n + 1)^2$.\n\n(c) By finding a similar expression whose difference is a multiple of $r(r + 1)$, use the method of differences to find $\\displaystyle\\sum_{r=1}^{n} r(r + 1)$ in factorised form. Check your answer using the standard results.",
+  "hint": "(b) Let $f(r) = r^2(r + 1)^2$; then the identity is $f(r) - f(r - 1) = 4r^3$. (c) Try $g(r) = r(r + 1)(r + 2)$ and work out $g(r) - g(r - 1)$.",
+  "answer": "(a) $r^2\\big[(r + 1)^2 - (r - 1)^2\\big] = r^2 \\times 4r = 4r^3$ (b) $4\\sum r^3 = n^2(n + 1)^2 - 0$ (c) $r(r + 1)(r + 2) - (r - 1)r(r + 1) = 3r(r + 1)$, giving $\\sum_{r=1}^{n} r(r + 1) = \\frac{1}{3}n(n + 1)(n + 2)$",
+  "solution": "**(a)**\n$$r^2(r + 1)^2 - (r - 1)^2r^2 = r^2\\big[(r + 1)^2 - (r - 1)^2\\big] = r^2\\big[(r^2 + 2r + 1) - (r^2 - 2r + 1)\\big] = r^2 \\times 4r = 4r^3$$\n\n**(b)** Let $f(r) = r^2(r + 1)^2$, so $4r^3 = f(r) - f(r - 1)$. Summing from $r = 1$ to $n$:\n$r = 1$: $f(1) - f(0)$\n$r = 2$: $f(2) - f(1)$\n$\\ldots$\n$r = n$: $f(n) - f(n - 1)$\n\nEverything cancels except $f(n) - f(0)$, and $f(0) = 0$:\n$$4\\sum_{r=1}^{n} r^3 = n^2(n + 1)^2 \\Rightarrow \\sum_{r=1}^{n} r^3 = \\frac{1}{4}n^2(n + 1)^2$$\n\n**(c)** Let $g(r) = r(r + 1)(r + 2)$. Then\n$$g(r) - g(r - 1) = r(r + 1)(r + 2) - (r - 1)r(r + 1) = r(r + 1)\\big[(r + 2) - (r - 1)\\big] = 3r(r + 1)$$\nSumming, the terms telescope to $g(n) - g(0) = n(n + 1)(n + 2)$, so\n$$3\\sum_{r=1}^{n} r(r + 1) = n(n + 1)(n + 2) \\Rightarrow \\sum_{r=1}^{n} r(r + 1) = \\frac{n(n + 1)(n + 2)}{3}$$\n\n**Check:** $\\sum r^2 + \\sum r = \\frac{n(n + 1)(2n + 1)}{6} + \\frac{n(n + 1)}{2} = \\frac{n(n + 1)(2n + 4)}{6} = \\frac{n(n + 1)(n + 2)}{3}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-series-summation-q15",
+  "topicId": "fur-series-summation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Use the method of differences to show that\n$$\\sum_{r=1}^{n} \\ln\\left(1 + \\frac{2}{r}\\right) = \\ln\\left(\\frac{(n + 1)(n + 2)}{2}\\right)$$\n\n(b) Find the smallest positive integer $n$ for which $\\displaystyle\\sum_{r=1}^{n} \\ln\\left(1 + \\frac{2}{r}\\right) > 10$.",
+  "hint": "Write $1 + \\frac{2}{r} = \\frac{r + 2}{r}$ and use a law of logarithms to turn each term into a difference.",
+  "answer": "(a) Shown (see solution). (b) $n = 209$",
+  "solution": "**(a)** $\\ln\\left(1 + \\frac{2}{r}\\right) = \\ln\\left(\\frac{r + 2}{r}\\right) = \\ln(r + 2) - \\ln r$.\n\nWrite out the rows:\n$r = 1$: $\\ln 3 - \\ln 1$\n$r = 2$: $\\ln 4 - \\ln 2$\n$r = 3$: $\\ln 5 - \\ln 3$\n$\\ldots$\n$r = n - 1$: $\\ln(n + 1) - \\ln(n - 1)$\n$r = n$: $\\ln(n + 2) - \\ln n$\n\nEach $-\\ln r$ cancels with a positive term two rows earlier. Two terms survive at each end: $-\\ln 1$ and $-\\ln 2$ at the start, $\\ln(n + 1)$ and $\\ln(n + 2)$ at the end:\n$$\\sum_{r=1}^{n} \\ln\\left(1 + \\frac{2}{r}\\right) = \\ln(n + 1) + \\ln(n + 2) - \\ln 1 - \\ln 2 = \\ln\\left(\\frac{(n + 1)(n + 2)}{2}\\right)$$\n\n**(b)** Need $\\ln\\left(\\frac{(n + 1)(n + 2)}{2}\\right) > 10$, i.e. $(n + 1)(n + 2) > 2e^{10} = 44\\,052.93\\ldots$\n\nSolving $(n + 1)(n + 2) = 44\\,052.93$: $n^2 + 3n + 2 - 44\\,052.93 = 0$ gives $n = \\frac{-3 + \\sqrt{9 + 4(44\\,050.93)}}{2} \\approx 208.4$.\n\nCheck: $n = 208$: $209 \\times 210 = 43\\,890 < 44\\,052.93$ ✗; $n = 209$: $210 \\times 211 = 44\\,310 > 44\\,052.93$ ✓.\n\nThe smallest $n$ is $209$.",
+  "linkedTopicIds": [
+   "pure-exponentials-logs",
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q16",
+  "topicId": "fur-series-summation",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "$$f(r) = \\frac{1}{r(r + 1)(r + 2)}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f(r) = \\dfrac{1}{2}\\left(\\dfrac{1}{r(r + 1)} - \\dfrac{1}{(r + 1)(r + 2)}\\right)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence show that\n$$\\sum_{r=1}^{n} \\frac{1}{r(r + 1)(r + 2)} = \\frac{n(n + 3)}{4(n + 1)(n + 2)}$$",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "Find the value of $\\displaystyle\\sum_{r=1}^{\\infty} \\frac{1}{r(r + 1)(r + 2)}$, giving a reason for your answer.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "calculator": false,
+  "hint": "(b) Let $g(r) = \\frac{1}{r(r + 1)}$; then $f(r) = \\frac{1}{2}\\big(g(r) - g(r + 1)\\big)$, which telescopes with one term surviving at each end.",
+  "answer": "(a) Shown (see solution). (b) Shown (see solution). (c) $\\frac{1}{4}$",
+  "solution": "**(a)**\n$$\\frac{1}{r(r + 1)} - \\frac{1}{(r + 1)(r + 2)} = \\frac{(r + 2) - r}{r(r + 1)(r + 2)} = \\frac{2}{r(r + 1)(r + 2)}$$ **M1**\nso $\\frac{1}{2}\\left(\\frac{1}{r(r + 1)} - \\frac{1}{(r + 1)(r + 2)}\\right) = \\frac{1}{r(r + 1)(r + 2)}$ **A1**\n\n**(b)** Rows (inside the bracket):\n$r = 1$: $\\frac{1}{1 \\times 2} - \\frac{1}{2 \\times 3}$\n$r = 2$: $\\frac{1}{2 \\times 3} - \\frac{1}{3 \\times 4}$\n$\\ldots$\n$r = n$: $\\frac{1}{n(n + 1)} - \\frac{1}{(n + 1)(n + 2)}$ **M1** (at least first two and last row)\n\nConsecutive terms cancel, leaving the first and last:\n$$\\sum_{r=1}^{n} f(r) = \\frac{1}{2}\\left(\\frac{1}{2} - \\frac{1}{(n + 1)(n + 2)}\\right)$$ **A1**\n$$= \\frac{(n + 1)(n + 2) - 2}{4(n + 1)(n + 2)} = \\frac{n^2 + 3n}{4(n + 1)(n + 2)}$$ **M1**\n$$= \\frac{n(n + 3)}{4(n + 1)(n + 2)}$$ **A1** (cso)\n\n**(c)** As $n \\to \\infty$, $\\frac{1}{(n + 1)(n + 2)} \\to 0$, so the partial sums tend to $\\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4}$. **B1**",
+  "linkedTopicIds": [
+   "pure-partial-fractions"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q17",
+  "topicId": "fur-series-summation",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Prove that, for all positive integers $m$,\n$$\\sum_{r=1}^{m} (-1)^r r^2 = (-1)^m\\,\\frac{m(m + 1)}{2}$$",
+  "hint": "Deal with even $m = 2n$ first by grouping the terms in pairs: $-(2k - 1)^2 + (2k)^2$. Then get the odd case $m = 2n + 1$ by adding one more term.",
+  "answer": "Proof: for $m = 2n$, pairing gives $\\sum_{k=1}^{n}(4k - 1) = n(2n + 1) = \\frac{2n(2n + 1)}{2}$; for $m = 2n + 1$, subtracting $(2n + 1)^2$ gives $-(2n + 1)(n + 1) = -\\frac{(2n + 1)(2n + 2)}{2}$. Both match $(-1)^m\\frac{m(m + 1)}{2}$.",
+  "solution": "The signs alternate: $-1 + 4 - 9 + 16 - 25 + \\cdots$\n\n**Case 1: $m$ even, $m = 2n$.** Group the terms in pairs, $k = 1, 2, \\ldots, n$:\n$$-(2k - 1)^2 + (2k)^2 = 4k^2 - (4k^2 - 4k + 1) = 4k - 1$$\nSo\n$$\\sum_{r=1}^{2n}(-1)^r r^2 = \\sum_{k=1}^{n}(4k - 1) = 4 \\times \\frac{n(n + 1)}{2} - n = 2n^2 + n = n(2n + 1)$$\nWith $m = 2n$: $(-1)^{2n}\\frac{2n(2n + 1)}{2} = n(2n + 1)$ ✓\n\n**Case 2: $m$ odd, $m = 2n + 1$** ($n \\ge 0$). The extra term $r = 2n + 1$ has sign $(-1)^{2n+1} = -1$:\n$$\\sum_{r=1}^{2n+1}(-1)^r r^2 = n(2n + 1) - (2n + 1)^2 = (2n + 1)(n - 2n - 1) = -(2n + 1)(n + 1)$$\nWith $m = 2n + 1$: $(-1)^{2n+1}\\frac{(2n + 1)(2n + 2)}{2} = -(2n + 1)(n + 1)$ ✓ (this includes $m = 1$: $-1$.)\n\nBoth cases agree with the formula, so it holds for all positive integers $m$.\n\nCheck $m = 4$: $-1 + 4 - 9 + 16 = 10 = \\frac{4 \\times 5}{2}$ ✓; $m = 5$: $10 - 25 = -15 = -\\frac{5 \\times 6}{2}$ ✓\n\n(Notice that the size of the sum is always the triangular number $\\frac{m(m + 1)}{2} = \\sum_{r=1}^{m} r$.)",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence"
+  ]
+ },
+ {
+  "id": "fur-series-summation-q18",
+  "topicId": "fur-series-summation",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that $\\tan\\big(\\arctan(r + 1) - \\arctan r\\big) = \\dfrac{1}{r^2 + r + 1}$, and explain why this gives\n$$\\arctan\\left(\\frac{1}{r^2 + r + 1}\\right) = \\arctan(r + 1) - \\arctan r \\quad \\text{for } r \\ge 1$$\n\n(b) Hence show that $\\displaystyle\\sum_{r=1}^{n} \\arctan\\left(\\frac{1}{r^2 + r + 1}\\right) = \\arctan\\left(\\frac{n}{n + 2}\\right)$.\n\n(c) Find the exact value of $\\displaystyle\\sum_{r=1}^{\\infty} \\arctan\\left(\\frac{1}{r^2 + r + 1}\\right)$.",
+  "hint": "(a) Use $\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}$ with $A = \\arctan(r + 1)$, $B = \\arctan r$. (b) After telescoping, apply the same formula to $\\arctan(n + 1) - \\arctan 1$.",
+  "answer": "(a) Shown (see solution). (b) Shown (see solution). (c) $\\frac{\\pi}{4}$",
+  "solution": "**(a)** Let $A = \\arctan(r + 1)$ and $B = \\arctan r$, so $\\tan A = r + 1$, $\\tan B = r$.\n$$\\tan(A - B) = \\frac{(r + 1) - r}{1 + r(r + 1)} = \\frac{1}{r^2 + r + 1}$$\nFor $r \\ge 1$, both $A$ and $B$ lie in $\\left(0, \\frac{\\pi}{2}\\right)$ and $A > B$ (arctan is increasing), so $0 < A - B < \\frac{\\pi}{2}$. On this interval $\\arctan$ undoes $\\tan$, so $A - B = \\arctan\\left(\\frac{1}{r^2 + r + 1}\\right)$.\n\n**(b)** Write out the rows:\n$r = 1$: $\\arctan 2 - \\arctan 1$\n$r = 2$: $\\arctan 3 - \\arctan 2$\n$\\ldots$\n$r = n$: $\\arctan(n + 1) - \\arctan n$\n\nAll but two terms cancel:\n$$\\sum_{r=1}^{n} \\arctan\\left(\\frac{1}{r^2 + r + 1}\\right) = \\arctan(n + 1) - \\arctan 1$$\nUsing $\\tan(A - B)$ again with $\\tan A = n + 1$, $\\tan B = 1$:\n$$\\tan\\big(\\arctan(n + 1) - \\arctan 1\\big) = \\frac{(n + 1) - 1}{1 + (n + 1)} = \\frac{n}{n + 2}$$\nand the angle is again in $\\left(0, \\frac{\\pi}{2}\\right)$, so the sum is $\\arctan\\left(\\frac{n}{n + 2}\\right)$.\n\n**(c)** As $n \\to \\infty$, $\\frac{n}{n + 2} \\to 1$, so the sum tends to $\\arctan 1 = \\frac{\\pi}{4}$.\n\n(Equivalently $\\arctan(n + 1) - \\frac{\\pi}{4} \\to \\frac{\\pi}{2} - \\frac{\\pi}{4} = \\frac{\\pi}{4}$.)",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "pure-trig-reciprocal-inverse"
+  ]
+ }
+]

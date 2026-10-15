@@ -1,0 +1,282 @@
+[
+ {
+  "id": "fur-determinants-inverses-q01",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\det\\begin{pmatrix} 5 & 2 \\\\ 3 & 4 \\end{pmatrix}$.",
+  "hint": "$\\det\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$: leading diagonal product minus the other diagonal product.",
+  "answer": "$14$",
+  "solution": "$$\\det\\begin{pmatrix} 5 & 2 \\\\ 3 & 4 \\end{pmatrix} = 5(4) - 2(3) = 20 - 6 = 14$$\n\nLeading diagonal ($5$ and $4$) first, then **subtract** the other diagonal ($2$ and $3$).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q02",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\det\\begin{pmatrix} 5 & -2 \\\\ 3 & 4 \\end{pmatrix}$.\n\n(Compare with the previous question: the top-right entry has changed sign.)",
+  "hint": "Same formula, $ad - bc$. Take care subtracting a negative product.",
+  "answer": "$26$",
+  "solution": "$$\\det\\begin{pmatrix} 5 & -2 \\\\ 3 & 4 \\end{pmatrix} = 5(4) - (-2)(3) = 20 - (-6) = 26$$\n\n**What changed:** $b$ went from $2$ to $-2$, so $bc$ went from $6$ to $-6$; subtracting $-6$ adds 6, so the determinant rose from $14$ to $26$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q03",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\det\\begin{pmatrix} 5 & -2 \\\\ -3 & 4 \\end{pmatrix}$.\n\n(Compare with the previous question: the bottom-left entry has now changed sign as well.)",
+  "hint": "Work out $bc$ first, with its sign, then subtract it from $ad$.",
+  "answer": "$14$",
+  "solution": "$$\\det\\begin{pmatrix} 5 & -2 \\\\ -3 & 4 \\end{pmatrix} = 5(4) - (-2)(-3) = 20 - 6 = 14$$\n\n**What changed:** with both off-diagonal entries negative, $bc = (-2)(-3) = +6$ – the same as in the first question, so the determinant is $14$ again.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q04",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the value of $k$ for which $\\begin{pmatrix} 5 & -2 \\\\ -3 & k \\end{pmatrix}$ is singular.\n\n(Compare with the previous question: the bottom-right entry is now unknown, and the determinant is given.)",
+  "hint": "Singular means the determinant is $0$.",
+  "answer": "$k = \\dfrac{6}{5}$",
+  "solution": "Singular $\\Leftrightarrow$ determinant $= 0$:\n$$5k - (-2)(-3) = 0 \\Rightarrow 5k - 6 = 0 \\Rightarrow k = \\frac{6}{5}$$\n\n**What changed:** the unknown has moved into the matrix, so we work backwards from $\\det = 0$ to the entry. For this value of $k$ the matrix has no inverse.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q05",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$\\mathbf{M} = \\begin{pmatrix} 5 & 2 \\\\ 3 & 4 \\end{pmatrix}$.\n\n(a) Find $\\mathbf{M}^{-1}$.\n\n(b) Verify your answer by showing that $\\mathbf{M}\\mathbf{M}^{-1} = \\mathbf{I}$.",
+  "hint": "Swap the entries on the leading diagonal, change the signs of the other two, then divide by the determinant.",
+  "answer": "(a) $\\mathbf{M}^{-1} = \\dfrac{1}{14}\\begin{pmatrix} 4 & -2 \\\\ -3 & 5 \\end{pmatrix}$ (b) see solution",
+  "solution": "(a) $\\det\\mathbf{M} = 5(4) - 2(3) = 14 \\ne 0$, so the inverse exists.\n\nSwap $5$ and $4$; negate $2$ and $3$; divide by $14$:\n$$\\mathbf{M}^{-1} = \\frac{1}{14}\\begin{pmatrix} 4 & -2 \\\\ -3 & 5 \\end{pmatrix}$$\n\n(b)\n$$\\mathbf{M}\\mathbf{M}^{-1} = \\frac{1}{14}\\begin{pmatrix} 5 & 2 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 4 & -2 \\\\ -3 & 5 \\end{pmatrix} = \\frac{1}{14}\\begin{pmatrix} 20 - 6 & -10 + 10 \\\\ 12 - 12 & -6 + 20 \\end{pmatrix} = \\frac{1}{14}\\begin{pmatrix} 14 & 0 \\\\ 0 & 14 \\end{pmatrix} = \\mathbf{I}$$ ✓\n\nLeaving the $\\frac{1}{14}$ off would give $14\\mathbf{I}$, not $\\mathbf{I}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q06",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the value of\n$$\\det\\begin{pmatrix} 1 & 3 & -2 \\\\ 2 & 0 & 1 \\\\ -1 & 4 & 5 \\end{pmatrix}$$",
+  "hint": "Expand along the top row with signs $+ \\; - \\; +$, multiplying each entry by the $2 \\times 2$ determinant left when its row and column are covered.",
+  "answer": "$-53$",
+  "solution": "Expand along the top row, signs $+ \\; - \\; +$:\n$$1\\begin{vmatrix} 0 & 1 \\\\ 4 & 5 \\end{vmatrix} - 3\\begin{vmatrix} 2 & 1 \\\\ -1 & 5 \\end{vmatrix} + (-2)\\begin{vmatrix} 2 & 0 \\\\ -1 & 4 \\end{vmatrix}$$\n$$= 1(0 - 4) - 3(10 + 1) - 2(8 - 0)$$\n$$= -4 - 33 - 16 = -53$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q07",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "At a cinema, 3 adult tickets and 2 child tickets cost £41.00, and 2 adult tickets and 5 child tickets cost £50.25.\n\nLet an adult ticket cost £$a$ and a child ticket cost £$c$.\n\n(a) Write the information as a matrix equation $\\mathbf{M}\\begin{pmatrix} a \\\\ c \\end{pmatrix} = \\mathbf{b}$.\n\n(b) Use the inverse of $\\mathbf{M}$ to find the price of each ticket.",
+  "hint": "Each row of $\\mathbf{M}$ holds the numbers of adult and child tickets in one purchase.",
+  "answer": "(a) $\\begin{pmatrix} 3 & 2 \\\\ 2 & 5 \\end{pmatrix}\\begin{pmatrix} a \\\\ c \\end{pmatrix} = \\begin{pmatrix} 41.00 \\\\ 50.25 \\end{pmatrix}$ (b) adult £9.50, child £6.25",
+  "solution": "(a)\n$$\\begin{pmatrix} 3 & 2 \\\\ 2 & 5 \\end{pmatrix}\\begin{pmatrix} a \\\\ c \\end{pmatrix} = \\begin{pmatrix} 41.00 \\\\ 50.25 \\end{pmatrix}$$\n\n(b) $\\det\\mathbf{M} = 3(5) - 2(2) = 11$, so\n$$\\mathbf{M}^{-1} = \\frac{1}{11}\\begin{pmatrix} 5 & -2 \\\\ -2 & 3 \\end{pmatrix}$$\n$$\\begin{pmatrix} a \\\\ c \\end{pmatrix} = \\frac{1}{11}\\begin{pmatrix} 5 & -2 \\\\ -2 & 3 \\end{pmatrix}\\begin{pmatrix} 41.00 \\\\ 50.25 \\end{pmatrix} = \\frac{1}{11}\\begin{pmatrix} 205 - 100.5 \\\\ -82 + 150.75 \\end{pmatrix} = \\frac{1}{11}\\begin{pmatrix} 104.5 \\\\ 68.75 \\end{pmatrix} = \\begin{pmatrix} 9.50 \\\\ 6.25 \\end{pmatrix}$$\n\nAn adult ticket costs £9.50 and a child ticket £6.25.\n\nCheck: $3(9.50) + 2(6.25) = 28.50 + 12.50 = 41.00$ ✓, $2(9.50) + 5(6.25) = 19.00 + 31.25 = 50.25$ ✓",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ]
+ },
+ {
+  "id": "fur-determinants-inverses-q08",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to find the inverse of $\\mathbf{A} = \\begin{pmatrix} 7 & 3 \\\\ 4 & 2 \\end{pmatrix}$. His working is shown below.\n\nLine 1: $\\det\\mathbf{A} = 7(2) - 3(4) = 2$\n\nLine 2: $\\mathbf{A}^{-1} = \\dfrac{1}{2}\\begin{pmatrix} 2 & 3 \\\\ 4 & 7 \\end{pmatrix}$\n\nLine 3: $\\mathbf{A}^{-1} = \\begin{pmatrix} 1 & 1.5 \\\\ 2 & 3.5 \\end{pmatrix}$\n\nFind Ben's error, explain it, and give the correct inverse. Show how a check would have caught the mistake.",
+  "hint": "Multiply $\\mathbf{A}$ by Ben's answer. Do you get $\\mathbf{I}$?",
+  "answer": "Line 2: Ben swapped $a$ and $d$ but did not negate $b$ and $c$; $\\mathbf{A}^{-1} = \\dfrac{1}{2}\\begin{pmatrix} 2 & -3 \\\\ -4 & 7 \\end{pmatrix} = \\begin{pmatrix} 1 & -1.5 \\\\ -2 & 3.5 \\end{pmatrix}$",
+  "solution": "Line 1 is correct: $\\det\\mathbf{A} = 14 - 12 = 2$.\n\n**Error in Line 2.** For $\\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}^{-1}$ you swap $a$ and $d$ **and change the signs of $b$ and $c$**. Ben swapped the diagonal but left $3$ and $4$ positive.\n\n**Check that catches it:**\n$$\\mathbf{A}\\begin{pmatrix} 1 & 1.5 \\\\ 2 & 3.5 \\end{pmatrix} = \\begin{pmatrix} 7 + 6 & 10.5 + 10.5 \\\\ 4 + 4 & 6 + 7 \\end{pmatrix} = \\begin{pmatrix} 13 & 21 \\\\ 8 & 13 \\end{pmatrix} \\ne \\mathbf{I}$$\n\n**Correct inverse:**\n$$\\mathbf{A}^{-1} = \\frac{1}{2}\\begin{pmatrix} 2 & -3 \\\\ -4 & 7 \\end{pmatrix} = \\begin{pmatrix} 1 & -1.5 \\\\ -2 & 3.5 \\end{pmatrix}$$\n\nCheck: $\\begin{pmatrix} 7 & 3 \\\\ 4 & 2 \\end{pmatrix}\\begin{pmatrix} 1 & -1.5 \\\\ -2 & 3.5 \\end{pmatrix} = \\begin{pmatrix} 7 - 6 & -10.5 + 10.5 \\\\ 4 - 4 & -6 + 7 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q09",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is finding the determinant of $\\mathbf{N} = \\begin{pmatrix} 2 & -1 & 3 \\\\ 1 & 4 & 0 \\\\ -2 & 1 & 5 \\end{pmatrix}$. Her working is shown below.\n\nLine 1: $\\det\\mathbf{N} = 2\\begin{vmatrix} 4 & 0 \\\\ 1 & 5 \\end{vmatrix} + (-1)\\begin{vmatrix} 1 & 0 \\\\ -2 & 5 \\end{vmatrix} + 3\\begin{vmatrix} 1 & 4 \\\\ -2 & 1 \\end{vmatrix}$\n\nLine 2: $= 2(20) + (-1)(5) + 3(1 + 8)$\n\nLine 3: $= 40 - 5 + 27 = 62$\n\nIdentify the error, explain it, and find the correct value of $\\det\\mathbf{N}$.",
+  "hint": "What pattern of signs goes with the entries in the top row of a $3 \\times 3$ determinant?",
+  "answer": "Line 1: the middle term should be subtracted (signs $+ \\; - \\; +$); $\\det\\mathbf{N} = 72$",
+  "solution": "**Error in Line 1.** When expanding along the top row the terms carry the signs $+ \\; - \\; +$. Chloe added all three terms, so the middle term has the wrong sign. Her minors are all correct.\n\n**Corrected working:**\n$$\\det\\mathbf{N} = 2\\begin{vmatrix} 4 & 0 \\\\ 1 & 5 \\end{vmatrix} - (-1)\\begin{vmatrix} 1 & 0 \\\\ -2 & 5 \\end{vmatrix} + 3\\begin{vmatrix} 1 & 4 \\\\ -2 & 1 \\end{vmatrix}$$\n$$= 2(20) + 1(5) + 3(9) = 40 + 5 + 27 = 72$$\n\nChloe's answer is out by $2 \\times 5 = 10$, twice the middle term.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q10",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 1 & 1 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 1 & 3 \\\\ 0 & 1 \\end{pmatrix}$.\n\nDev says: \"To invert a product, invert each matrix, so $(\\mathbf{AB})^{-1} = \\mathbf{A}^{-1}\\mathbf{B}^{-1}$.\"\n\n(a) Find $(\\mathbf{AB})^{-1}$, $\\mathbf{A}^{-1}\\mathbf{B}^{-1}$ and $\\mathbf{B}^{-1}\\mathbf{A}^{-1}$ for these matrices. What do you notice?\n\n(b) Prove that, for any non-singular square matrices $\\mathbf{A}$ and $\\mathbf{B}$ of the same order, $(\\mathbf{AB})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1}$.",
+  "hint": "For (b), multiply $\\mathbf{AB}$ by $\\mathbf{B}^{-1}\\mathbf{A}^{-1}$ and use associativity to regroup the middle.",
+  "answer": "(a) $(\\mathbf{AB})^{-1} = \\mathbf{B}^{-1}\\mathbf{A}^{-1} = \\begin{pmatrix} 4 & -7 \\\\ -1 & 2 \\end{pmatrix}$, but $\\mathbf{A}^{-1}\\mathbf{B}^{-1} = \\begin{pmatrix} 1 & -4 \\\\ -1 & 5 \\end{pmatrix}$, so Dev is wrong (b) proof",
+  "solution": "(a) $\\det\\mathbf{A} = 1$ and $\\det\\mathbf{B} = 1$, so\n$$\\mathbf{A}^{-1} = \\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix}, \\quad \\mathbf{B}^{-1} = \\begin{pmatrix} 1 & -3 \\\\ 0 & 1 \\end{pmatrix}$$\n$$\\mathbf{AB} = \\begin{pmatrix} 2 & 7 \\\\ 1 & 4 \\end{pmatrix}, \\quad \\det(\\mathbf{AB}) = 8 - 7 = 1, \\quad (\\mathbf{AB})^{-1} = \\begin{pmatrix} 4 & -7 \\\\ -1 & 2 \\end{pmatrix}$$\n$$\\mathbf{A}^{-1}\\mathbf{B}^{-1} = \\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix}\\begin{pmatrix} 1 & -3 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 1 & -4 \\\\ -1 & 5 \\end{pmatrix}$$\n$$\\mathbf{B}^{-1}\\mathbf{A}^{-1} = \\begin{pmatrix} 1 & -3 \\\\ 0 & 1 \\end{pmatrix}\\begin{pmatrix} 1 & -1 \\\\ -1 & 2 \\end{pmatrix} = \\begin{pmatrix} 4 & -7 \\\\ -1 & 2 \\end{pmatrix}$$\n$(\\mathbf{AB})^{-1}$ matches $\\mathbf{B}^{-1}\\mathbf{A}^{-1}$, **not** Dev's $\\mathbf{A}^{-1}\\mathbf{B}^{-1}$: the order is reversed.\n\n(b) Using associativity:\n$$(\\mathbf{AB})(\\mathbf{B}^{-1}\\mathbf{A}^{-1}) = \\mathbf{A}(\\mathbf{B}\\mathbf{B}^{-1})\\mathbf{A}^{-1} = \\mathbf{A}\\mathbf{I}\\mathbf{A}^{-1} = \\mathbf{A}\\mathbf{A}^{-1} = \\mathbf{I}$$\nand similarly $(\\mathbf{B}^{-1}\\mathbf{A}^{-1})(\\mathbf{AB}) = \\mathbf{B}^{-1}(\\mathbf{A}^{-1}\\mathbf{A})\\mathbf{B} = \\mathbf{B}^{-1}\\mathbf{B} = \\mathbf{I}$.\n\nSo $\\mathbf{B}^{-1}\\mathbf{A}^{-1}$ is the inverse of $\\mathbf{AB}$. Dev's version fails because $\\mathbf{A}^{-1}$ and $\\mathbf{B}^{-1}$ would need to \"pass through\" each other, and matrix multiplication is not commutative. (Like shoes and socks: put on socks then shoes; to undo, remove shoes first.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q11",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$\\mathbf{M} = \\begin{pmatrix} k & 2 \\\\ -3 & k - 1 \\end{pmatrix}$, where $k$ is a real constant.\n\nProve that $\\mathbf{M}$ is non-singular for every real value of $k$.",
+  "hint": "Write $\\det\\mathbf{M}$ as a quadratic in $k$. Can it ever be zero?",
+  "answer": "$\\det\\mathbf{M} = k^2 - k + 6 = \\left(k - \\frac{1}{2}\\right)^2 + \\frac{23}{4} > 0$ for all real $k$, so $\\mathbf{M}$ is never singular",
+  "solution": "$$\\det\\mathbf{M} = k(k - 1) - 2(-3) = k^2 - k + 6$$\n\n$\\mathbf{M}$ is singular only if $k^2 - k + 6 = 0$. Completing the square:\n$$k^2 - k + 6 = \\left(k - \\tfrac{1}{2}\\right)^2 + \\tfrac{23}{4}$$\nA square is never negative, so this is at least $\\frac{23}{4} > 0$ for every real $k$.\n\n(Equivalently, the discriminant is $(-1)^2 - 4(1)(6) = -23 < 0$, so there are no real roots.)\n\nHence $\\det\\mathbf{M} \\ne 0$ for all real $k$, and $\\mathbf{M}$ is always non-singular. ∎",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q12",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A sandwich bar sells three sandwiches: chicken, falafel and cheese. The numbers sold and the takings on three days are shown.\n\n| | Chicken | Falafel | Cheese | Takings |\n|---|---|---|---|---|\n| Monday | 12 | 8 | 15 | £117.60 |\n| Tuesday | 10 | 14 | 9 | £119.00 |\n| Wednesday | 16 | 6 | 11 | £112.00 |\n\nThe prices did not change during the three days.\n\n(a) Write this information as a matrix equation $\\mathbf{N}\\mathbf{p} = \\mathbf{t}$.\n\n(b) Find $\\det\\mathbf{N}$ and explain why this tells you the prices can be found uniquely.\n\n(c) Use your calculator to find $\\mathbf{N}^{-1}$, and hence find the price of each sandwich.",
+  "hint": "$\\mathbf{p}$ is the column of the three unknown prices. A unique solution exists exactly when $\\mathbf{N}$ is non-singular.",
+  "answer": "(a) $\\begin{pmatrix} 12 & 8 & 15 \\\\ 10 & 14 & 9 \\\\ 16 & 6 & 11 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 117.60 \\\\ 119.00 \\\\ 112.00 \\end{pmatrix}$ (b) $\\det\\mathbf{N} = -988 \\ne 0$ (c) chicken £3.50, falafel £4.20, cheese £2.80",
+  "solution": "(a) Let the prices be £$x$ (chicken), £$y$ (falafel), £$z$ (cheese):\n$$\\begin{pmatrix} 12 & 8 & 15 \\\\ 10 & 14 & 9 \\\\ 16 & 6 & 11 \\end{pmatrix}\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 117.60 \\\\ 119.00 \\\\ 112.00 \\end{pmatrix}$$\n\n(b) Expanding along the top row:\n$$\\det\\mathbf{N} = 12(154 - 54) - 8(110 - 144) + 15(60 - 224)$$\n$$= 1200 + 272 - 2460 = -988$$\nSince $\\det\\mathbf{N} \\ne 0$, $\\mathbf{N}$ is non-singular, so $\\mathbf{N}^{-1}$ exists and $\\mathbf{p} = \\mathbf{N}^{-1}\\mathbf{t}$ is the one and only solution.\n\n(c) By calculator,\n$$\\mathbf{N}^{-1} = -\\frac{1}{988}\\begin{pmatrix} 100 & 2 & -138 \\\\ 34 & -108 & 42 \\\\ -164 & 56 & 88 \\end{pmatrix}$$\n$$\\mathbf{p} = \\mathbf{N}^{-1}\\begin{pmatrix} 117.60 \\\\ 119.00 \\\\ 112.00 \\end{pmatrix} = \\begin{pmatrix} 3.50 \\\\ 4.20 \\\\ 2.80 \\end{pmatrix}$$\n\nChicken £3.50, falafel £4.20, cheese £2.80.\n\nCheck Monday: $12(3.50) + 8(4.20) + 15(2.80) = 42.00 + 33.60 + 42.00 = 117.60$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q13",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The diagram shows triangle $T$ with vertices $(0, 0)$, $(3, 0)$ and $(1, 2)$.\n\n(a) $T$ is transformed by $\\mathbf{M} = \\begin{pmatrix} 2 & 1 \\\\ -1 & 3 \\end{pmatrix}$. Find the area of the image of $T$.\n\n(b) $T$ is instead transformed by $\\mathbf{N} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$. Find the area of the image and state what the sign of $\\det\\mathbf{N}$ tells you.\n\n(c) $T$ is instead transformed by $\\mathbf{K} = \\begin{pmatrix} k & 3 \\\\ 2 & k \\end{pmatrix}$, and the image has area 30. Find the possible values of $k$.",
+  "hint": "The area of the image is $|\\det|$ times the original area. In (c) remember the modulus – the determinant could be positive or negative.",
+  "answer": "(a) 21 (b) 6; $\\det\\mathbf{N} = -2 < 0$, so orientation is reversed (c) $k = 4$ or $k = -4$",
+  "solution": "Area of $T = \\frac{1}{2} \\times 3 \\times 2 = 3$ (base 3 along the $x$-axis, height 2).\n\n(a) $\\det\\mathbf{M} = 2(3) - 1(-1) = 7$, so the image has area $7 \\times 3 = 21$.\n\n(Check: the image has vertices $(0, 0)$, $(6, -3)$, $(4, 5)$, with area $\\frac{1}{2}|6(5) - (-3)(4)| = \\frac{1}{2}(42) = 21$ ✓)\n\n(b) $\\det\\mathbf{N} = 4 - 6 = -2$. Area scale factor $= |-2| = 2$, so the image has area $6$. The negative sign means the transformation reverses orientation (the image is \"flipped\" – the vertices go round in the opposite sense, as in a reflection).\n\n(c) $\\det\\mathbf{K} = k^2 - 6$. We need $|k^2 - 6| \\times 3 = 30$, so $|k^2 - 6| = 10$:\n\n* $k^2 - 6 = 10 \\Rightarrow k^2 = 16 \\Rightarrow k = \\pm 4$\n* $k^2 - 6 = -10 \\Rightarrow k^2 = -4$, no real solutions.\n\nSo $k = 4$ or $k = -4$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 264 220\" width=\"264\" height=\"220\"><line x1=\"22\" y1=\"198\" x2=\"22\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"66\" y1=\"198\" x2=\"66\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"110\" y1=\"198\" x2=\"110\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"154\" y1=\"198\" x2=\"154\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"198\" y1=\"198\" x2=\"198\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"242\" y1=\"198\" x2=\"242\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"198\" x2=\"242\" y2=\"198\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"154\" x2=\"242\" y2=\"154\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"110\" x2=\"242\" y2=\"110\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"66\" x2=\"242\" y2=\"66\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"22\" x2=\"242\" y2=\"22\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"22\" y1=\"154\" x2=\"250\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"66\" y1=\"198\" x2=\"66\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"252\" y=\"158\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">x</text><text x=\"62\" y=\"12\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">y</text><text x=\"22\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><text x=\"110\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"154\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"198\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"242\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"61\" y=\"202\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><text x=\"61\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"61\" y=\"70\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"61\" y=\"26\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"61\" y=\"169\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><polygon points=\"66,154 198,154 110,66\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"125.4\" y=\"127.6\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">T</text></svg>",
+  "linkedTopicIds": [
+   "fur-matrix-transformations"
+  ]
+ },
+ {
+  "id": "fur-determinants-inverses-q14",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 10,
+  "question": "$$\\mathbf{A} = \\begin{pmatrix} 1 & 2 & k \\\\ 3 & -1 & 2 \\\\ 2 & 1 & 1 \\end{pmatrix}$$ where $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\det\\mathbf{A} = 5k - 1$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "State the value of $k$ for which $\\mathbf{A}$ is singular.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Given that $k = 1$, find $\\mathbf{A}^{-1}$.",
+    "marks": 4
+   },
+   {
+    "label": "d",
+    "prompt": "Hence solve the simultaneous equations\n$$x + 2y + z = 3, \\quad 3x - y + 2z = 13, \\quad 2x + y + z = 6$$",
+    "marks": 3
+   }
+  ],
+  "hint": "For (c): matrix of minors, apply the sign pattern to get cofactors, transpose, then divide by the determinant.",
+  "answer": "(a) shown (b) $k = \\dfrac{1}{5}$ (c) $\\mathbf{A}^{-1} = \\dfrac{1}{4}\\begin{pmatrix} -3 & -1 & 5 \\\\ 1 & -1 & 1 \\\\ 5 & 3 & -7 \\end{pmatrix}$ (d) $x = 2$, $y = -1$, $z = 3$",
+  "solution": "(a) Expanding along the top row:\n$$\\det\\mathbf{A} = 1\\begin{vmatrix} -1 & 2 \\\\ 1 & 1 \\end{vmatrix} - 2\\begin{vmatrix} 3 & 2 \\\\ 2 & 1 \\end{vmatrix} + k\\begin{vmatrix} 3 & -1 \\\\ 2 & 1 \\end{vmatrix}$$ M1\n$$= 1(-1 - 2) - 2(3 - 4) + k(3 + 2) = -3 + 2 + 5k = 5k - 1$$ A1 (given answer, so working must be seen)\n\n(b) $5k - 1 = 0 \\Rightarrow k = \\frac{1}{5}$ B1\n\n(c) With $k = 1$, $\\det\\mathbf{A} = 4$.\n\nMatrix of minors:\n$$\\begin{pmatrix} -3 & -1 & 5 \\\\ 1 & -1 & -3 \\\\ 5 & -1 & -7 \\end{pmatrix}$$ M1 (at least six correct minors)\n\nApply signs $\\begin{pmatrix} + & - & + \\\\ - & + & - \\\\ + & - & + \\end{pmatrix}$ to get the cofactors:\n$$\\begin{pmatrix} -3 & 1 & 5 \\\\ -1 & -1 & 3 \\\\ 5 & 1 & -7 \\end{pmatrix}$$ M1\n\nTranspose and divide by $4$:\n$$\\mathbf{A}^{-1} = \\frac{1}{4}\\begin{pmatrix} -3 & -1 & 5 \\\\ 1 & -1 & 1 \\\\ 5 & 3 & -7 \\end{pmatrix}$$ M1 A1\n\n(d) The equations are $\\mathbf{A}\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\begin{pmatrix} 3 \\\\ 13 \\\\ 6 \\end{pmatrix}$ with $k = 1$. B1\n$$\\begin{pmatrix} x \\\\ y \\\\ z \\end{pmatrix} = \\frac{1}{4}\\begin{pmatrix} -3 & -1 & 5 \\\\ 1 & -1 & 1 \\\\ 5 & 3 & -7 \\end{pmatrix}\\begin{pmatrix} 3 \\\\ 13 \\\\ 6 \\end{pmatrix} = \\frac{1}{4}\\begin{pmatrix} -9 - 13 + 30 \\\\ 3 - 13 + 6 \\\\ 15 + 39 - 42 \\end{pmatrix} = \\frac{1}{4}\\begin{pmatrix} 8 \\\\ -4 \\\\ 12 \\end{pmatrix}$$ M1\n$$x = 2, \\quad y = -1, \\quad z = 3$$ A1\n\nCheck in the second equation: $6 + 1 + 6 = 13$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q15",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 5 & 3 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 4 & 1 \\\\ 3 & -2 \\end{pmatrix}$.\n\n(a) Find the matrix $\\mathbf{X}$ such that $\\mathbf{XA} = \\mathbf{B}$.\n\n(b) Find the matrix $\\mathbf{Y}$ such that $\\mathbf{AY} = \\mathbf{B}$.\n\n(c) Explain why you had to multiply by $\\mathbf{A}^{-1}$ on different sides in (a) and (b).",
+  "hint": "To remove $\\mathbf{A}$ from $\\mathbf{XA}$ you need $\\mathbf{A}\\mathbf{A}^{-1}$ – so on which side of each side of the equation must $\\mathbf{A}^{-1}$ go?",
+  "answer": "(a) $\\mathbf{X} = \\mathbf{B}\\mathbf{A}^{-1} = \\begin{pmatrix} 7 & -2 \\\\ 19 & -7 \\end{pmatrix}$ (b) $\\mathbf{Y} = \\mathbf{A}^{-1}\\mathbf{B} = \\begin{pmatrix} 9 & 5 \\\\ -14 & -9 \\end{pmatrix}$ (c) matrix multiplication is not commutative",
+  "solution": "$\\det\\mathbf{A} = 6 - 5 = 1$, so $\\mathbf{A}^{-1} = \\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}$.\n\n(a) Post-multiply both sides by $\\mathbf{A}^{-1}$:\n$$\\mathbf{XA}\\mathbf{A}^{-1} = \\mathbf{B}\\mathbf{A}^{-1} \\Rightarrow \\mathbf{X} = \\mathbf{B}\\mathbf{A}^{-1}$$\n$$\\mathbf{X} = \\begin{pmatrix} 4 & 1 \\\\ 3 & -2 \\end{pmatrix}\\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix} = \\begin{pmatrix} 12 - 5 & -4 + 2 \\\\ 9 + 10 & -3 - 4 \\end{pmatrix} = \\begin{pmatrix} 7 & -2 \\\\ 19 & -7 \\end{pmatrix}$$\nCheck: $\\mathbf{XA} = \\begin{pmatrix} 14 - 10 & 7 - 6 \\\\ 38 - 35 & 19 - 21 \\end{pmatrix} = \\begin{pmatrix} 4 & 1 \\\\ 3 & -2 \\end{pmatrix}$ ✓\n\n(b) Pre-multiply both sides by $\\mathbf{A}^{-1}$:\n$$\\mathbf{A}^{-1}\\mathbf{AY} = \\mathbf{A}^{-1}\\mathbf{B} \\Rightarrow \\mathbf{Y} = \\mathbf{A}^{-1}\\mathbf{B}$$\n$$\\mathbf{Y} = \\begin{pmatrix} 3 & -1 \\\\ -5 & 2 \\end{pmatrix}\\begin{pmatrix} 4 & 1 \\\\ 3 & -2 \\end{pmatrix} = \\begin{pmatrix} 12 - 3 & 3 + 2 \\\\ -20 + 6 & -5 - 4 \\end{pmatrix} = \\begin{pmatrix} 9 & 5 \\\\ -14 & -9 \\end{pmatrix}$$\n\n(c) $\\mathbf{A}^{-1}$ must sit directly next to $\\mathbf{A}$ to cancel it. In $\\mathbf{XA}$, $\\mathbf{A}$ is on the right, so $\\mathbf{A}^{-1}$ goes on the right of both sides; in $\\mathbf{AY}$ it goes on the left. Because $\\mathbf{BA}^{-1} \\ne \\mathbf{A}^{-1}\\mathbf{B}$ in general, \"dividing by $\\mathbf{A}$\" is ambiguous and the side matters – as (a) and (b) give different answers.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-determinants-inverses-q16",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Consider the system of equations\n$$x + 2y - z = 3, \\qquad 2x - y + 3z = 1, \\qquad 4x + 3y + z = k$$\nwhere $k$ is a constant.\n\n(a) Show that the matrix of coefficients is singular.\n\n(b) Find the value of $k$ for which the equations are consistent, and for this value find the general solution, writing it as the vector equation of a line.\n\n(c) Describe the geometrical configuration of the three planes when the equations are consistent and when they are not.",
+  "hint": "Look for a combination of the first two rows that gives the third. Then compare right-hand sides with the same combination.",
+  "answer": "(a) $\\det = 0$ (b) $k = 7$; $\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} + t\\begin{pmatrix} -1 \\\\ 1 \\\\ 1 \\end{pmatrix}$ (c) $k = 7$: a sheaf (three planes through a common line); $k \\ne 7$: a triangular prism (no common point)",
+  "solution": "(a)\n$$\\det\\begin{pmatrix} 1 & 2 & -1 \\\\ 2 & -1 & 3 \\\\ 4 & 3 & 1 \\end{pmatrix} = 1(-1 - 9) - 2(2 - 12) + (-1)(6 + 4) = -10 + 20 - 10 = 0$$\nso the matrix is singular and there is no unique solution.\n\n(b) Notice row 3 $= 2 \\times$ row 1 $+$ row 2: $2(1, 2, -1) + (2, -1, 3) = (4, 3, 1)$.\n\nApplying the same combination to the equations: $2(x + 2y - z) + (2x - y + 3z) = 2(3) + 1 = 7$. So the third equation is consistent only if $k = 7$ (then it is redundant).\n\nWith $k = 7$, let $z = t$:\n$$x + 2y = 3 + t, \\qquad 2x - y = 1 - 3t$$\nDoubling the second and adding: $5x = 5 - 5t \\Rightarrow x = 1 - t$, then $y = 2x - 1 + 3t = 1 + t$.\n$$\\mathbf{r} = \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} + t\\begin{pmatrix} -1 \\\\ 1 \\\\ 1 \\end{pmatrix}$$\nCheck in the third equation: $4(1 - t) + 3(1 + t) + t = 7$ ✓\n\n(c) The normals $(1, 2, -1)$, $(2, -1, 3)$, $(4, 3, 1)$ are pairwise non-parallel, so no two planes are parallel.\n\n* $k = 7$: the planes meet in the common line above – a **sheaf**.\n* $k \\ne 7$: each pair of planes meets in a line, but the three lines are parallel (all in direction $(-1, 1, 1)$) and do not coincide – a **triangular prism**, with no point common to all three.",
+  "linkedTopicIds": [
+   "fur-vectors-lines-planes"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-determinants-inverses-q17",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} a & b \\\\ b & c \\end{pmatrix}$ is a symmetric matrix with real entries, and $\\lambda$ is a real number.\n\n(a) Show that $\\mathbf{A} - \\lambda\\mathbf{I}$ is singular exactly when $\\lambda^2 - (a + c)\\lambda + (ac - b^2) = 0$.\n\n(b) Prove that this equation always has real roots, and that the roots are equal only when $\\mathbf{A}$ is a multiple of $\\mathbf{I}$.\n\n(c) Find the values of $\\lambda$ for which $\\begin{pmatrix} 5 & 2 \\\\ 2 & 2 \\end{pmatrix} - \\lambda\\mathbf{I}$ is singular.\n\n(d) Show that the result of (b) can fail for a matrix that is not symmetric, by considering $\\begin{pmatrix} 0 & -1 \\\\ 1 & 0 \\end{pmatrix}$.",
+  "hint": "For (b), simplify the discriminant: you should be able to write it as a sum of two squares.",
+  "answer": "(a) shown (b) discriminant $= (a - c)^2 + 4b^2 \\ge 0$, zero only if $a = c$ and $b = 0$ (c) $\\lambda = 1$ or $\\lambda = 6$ (d) $\\lambda^2 + 1 = 0$ has no real roots",
+  "solution": "(a) $\\mathbf{A} - \\lambda\\mathbf{I} = \\begin{pmatrix} a - \\lambda & b \\\\ b & c - \\lambda \\end{pmatrix}$, which is singular when its determinant is zero:\n$$(a - \\lambda)(c - \\lambda) - b^2 = 0 \\iff \\lambda^2 - (a + c)\\lambda + (ac - b^2) = 0$$\n\n(b) Discriminant:\n$$\\Delta = (a + c)^2 - 4(ac - b^2) = a^2 + 2ac + c^2 - 4ac + 4b^2 = (a - c)^2 + 4b^2$$\nThis is a sum of squares, so $\\Delta \\ge 0$ and the roots are always real.\n\n$\\Delta = 0$ requires both $(a - c)^2 = 0$ and $b^2 = 0$, i.e. $a = c$ and $b = 0$, which means $\\mathbf{A} = a\\mathbf{I}$. So the roots are equal only when $\\mathbf{A}$ is a multiple of $\\mathbf{I}$. ∎\n\n(c) $a = 5$, $b = 2$, $c = 2$: $\\lambda^2 - 7\\lambda + (10 - 4) = 0 \\Rightarrow \\lambda^2 - 7\\lambda + 6 = 0 \\Rightarrow (\\lambda - 1)(\\lambda - 6) = 0$.\n\nSo $\\lambda = 1$ or $\\lambda = 6$. (Check $\\lambda = 6$: $\\begin{pmatrix} -1 & 2 \\\\ 2 & -4 \\end{pmatrix}$ has determinant $4 - 4 = 0$ ✓)\n\n(d) $\\det\\begin{pmatrix} -\\lambda & -1 \\\\ 1 & -\\lambda \\end{pmatrix} = \\lambda^2 + 1$, which is never zero for real $\\lambda$ (discriminant $-4 < 0$). The proof in (b) used the two equal off-diagonal entries to get $+4b^2$; here they are $-1$ and $1$, giving $-4$ instead.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ]
+ },
+ {
+  "id": "fur-determinants-inverses-q18",
+  "topicId": "fur-determinants-inverses",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "You may use the result $\\det(\\mathbf{PQ}) = \\det\\mathbf{P} \\times \\det\\mathbf{Q}$ for square matrices of the same order.\n\n(a) $\\mathbf{A}$ is a square matrix with integer entries. Prove that $\\mathbf{A}^{-1}$ exists and has integer entries **if and only if** $\\det\\mathbf{A} = 1$ or $\\det\\mathbf{A} = -1$.\n\n(b) Find all integers $k$ for which $\\begin{pmatrix} k & 2 \\\\ 1 & k \\end{pmatrix}$ has an inverse with integer entries, and find the inverse in each case. What do you notice?",
+  "hint": "For \"only if\": take determinants of $\\mathbf{AA}^{-1} = \\mathbf{I}$; the determinant of an integer matrix is an integer. For \"if\": use the cofactor formula for the inverse.",
+  "answer": "(a) proof (b) $k = 1$: inverse $\\begin{pmatrix} -1 & 2 \\\\ 1 & -1 \\end{pmatrix}$; $k = -1$: inverse $\\begin{pmatrix} 1 & 2 \\\\ 1 & 1 \\end{pmatrix}$ – the two matrices are inverses of each other",
+  "solution": "(a) **Only if.** Suppose $\\mathbf{A}^{-1}$ exists and has integer entries. From $\\mathbf{AA}^{-1} = \\mathbf{I}$:\n$$\\det\\mathbf{A} \\times \\det(\\mathbf{A}^{-1}) = \\det\\mathbf{I} = 1$$\nA determinant is built from sums and products of entries, so both $\\det\\mathbf{A}$ and $\\det(\\mathbf{A}^{-1})$ are integers. Two integers with product 1 are both $1$ or both $-1$. So $\\det\\mathbf{A} = \\pm 1$.\n\n**If.** Suppose $\\det\\mathbf{A} = \\pm 1$. Then $\\mathbf{A}$ is non-singular and\n$$\\mathbf{A}^{-1} = \\frac{1}{\\det\\mathbf{A}}\\,\\mathrm{adj}\\,\\mathbf{A} = \\pm\\,\\mathrm{adj}\\,\\mathbf{A}$$\nEach entry of the adjugate (transposed cofactor matrix) is $\\pm$ a determinant of integers, so is an integer. Hence $\\mathbf{A}^{-1}$ has integer entries.\n\nBoth directions hold, which proves the \"if and only if\". ∎\n\n(b) $\\det = k^2 - 2$. We need $k^2 - 2 = \\pm 1$:\n\n* $k^2 - 2 = 1 \\Rightarrow k^2 = 3$ – no integer solution\n* $k^2 - 2 = -1 \\Rightarrow k^2 = 1 \\Rightarrow k = \\pm 1$\n\n$k = 1$: $\\det = -1$, $\\begin{pmatrix} 1 & 2 \\\\ 1 & 1 \\end{pmatrix}^{-1} = \\frac{1}{-1}\\begin{pmatrix} 1 & -2 \\\\ -1 & 1 \\end{pmatrix} = \\begin{pmatrix} -1 & 2 \\\\ 1 & -1 \\end{pmatrix}$\n\n$k = -1$: $\\det = -1$, $\\begin{pmatrix} -1 & 2 \\\\ 1 & -1 \\end{pmatrix}^{-1} = \\frac{1}{-1}\\begin{pmatrix} -1 & -2 \\\\ -1 & -1 \\end{pmatrix} = \\begin{pmatrix} 1 & 2 \\\\ 1 & 1 \\end{pmatrix}$\n\n**Notice:** the inverse for $k = 1$ is exactly the matrix for $k = -1$, and vice versa – the two matrices are inverses of each other. Check: $\\begin{pmatrix} 1 & 2 \\\\ 1 & 1 \\end{pmatrix}\\begin{pmatrix} -1 & 2 \\\\ 1 & -1 \\end{pmatrix} = \\begin{pmatrix} -1 + 2 & 2 - 2 \\\\ -1 + 1 & 2 - 1 \\end{pmatrix} = \\mathbf{I}$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ }
+]
