@@ -10,3 +10,7 @@ All proofs were checked line by line (every statement has a valid reason, congru
 
 ### Diagram audit
 14 diagrams checked (13 questions + worked example 2): 12 ok, 2 changed (q06 caption, q14 label, as above). q09, q13, q14 and q15 diagrams are to scale.
+
+### Diagram audit
+14 diagrams checked (13 questions + worked example 2): 13 ok, 1 fixed. Congruence ticks, angle arcs, parallel arrows and right-angle marks checked against every Given.
+- worked example 2 — given midpoint facts ($M$ midpoint of $\overline{AE}$ and $\overline{BD}$) were not marked on the figure, despite the key idea's tip to mark the Given first — added single ticks on $\overline{AM}$, $\overline{ME}$ and double ticks on $\overline{BM}$, $\overline{MD}$ (data/topics-fixes/geo-two-column-proofs.json).

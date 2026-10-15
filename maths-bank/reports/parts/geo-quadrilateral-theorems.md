@@ -9,3 +9,6 @@ All answers matched my blind solutions, including q05 (kite included in (c) and 
 
 ### Diagram audit
 13 diagrams checked (12 questions + worked example 1): 11 ok, 2 changed (q08 redrawn, q12 label moved). q01, q06, q07, q10, q13, q15 and q18 were already to scale.
+
+### Diagram audit
+13 diagrams checked (12 questions + worked example 1): 13 ok, 0 fixed. Parallel arrows, congruence ticks and angle sizes (32°, 35°, 80°, 60° bisector split, 4 px/in kite, 24 px/unit parallelogram) all match the text; no right-angle marks reveal answers.

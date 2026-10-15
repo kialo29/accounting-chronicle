@@ -1,0 +1,14 @@
+{
+ "id": "geo-two-column-proofs",
+ "workedExamples": [
+  {
+   "question": "Given: $3(x - 2) = 2x + 4$. Prove: $x = 10$. Write a two-column proof.",
+   "solution": "| Statements | Reasons |\n|---|---|\n| 1. $3(x - 2) = 2x + 4$ | Given |\n| 2. $3x - 6 = 2x + 4$ | Distributive Property |\n| 3. $x - 6 = 4$ | Subtraction Property of Equality (subtract $2x$) |\n| 4. $x = 10$ | Addition Property of Equality (add 6) |"
+  },
+  {
+   "question": "Segments $\\overline{AE}$ and $\\overline{BD}$ intersect at $M$. Given: $M$ is the midpoint of $\\overline{AE}$ and of $\\overline{BD}$. Prove: $\\overline{AB} \\cong \\overline{ED}$.",
+   "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><line x1=\"60\" y1=\"60\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"240\" x2=\"300\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"60\" x2=\"60\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"300\" y1=\"60\" x2=\"300\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"116.4\" y1=\"109.8\" x2=\"123.6\" y2=\"100.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"236.4\" y1=\"199.8\" x2=\"243.6\" y2=\"190.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"122.0\" y1=\"201.0\" x2=\"114.8\" y2=\"191.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"125.2\" y1=\"198.6\" x2=\"118.0\" y2=\"189.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"242.0\" y1=\"111.0\" x2=\"234.8\" y2=\"101.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"245.2\" y1=\"108.6\" x2=\"238.0\" y2=\"99.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"42\" y=\"56\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">A</text><text x=\"42\" y=\"254\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">B</text><text x=\"306\" y=\"56\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">D</text><text x=\"306\" y=\"254\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">E</text><text x=\"174\" y=\"132\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\">M</text></svg>",
+   "solution": "| Statements | Reasons |\n|---|---|\n| 1. $M$ is the midpoint of $\\overline{AE}$ and $\\overline{BD}$ | Given |\n| 2. $\\overline{AM} \\cong \\overline{EM}$, $\\overline{BM} \\cong \\overline{DM}$ | Definition of midpoint |\n| 3. $\\angle AMB \\cong \\angle EMD$ | Vertical Angles Theorem |\n| 4. $\\triangle AMB \\cong \\triangle EMD$ | SAS |\n| 5. $\\overline{AB} \\cong \\overline{ED}$ | CPCTC |\n\nThe angle in step 3 lies between the two pairs of sides in step 2, so it is the included angle and SAS applies."
+  }
+ ]
+}

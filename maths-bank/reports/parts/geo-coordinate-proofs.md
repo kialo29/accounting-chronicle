@@ -5,3 +5,13 @@ I re-solved every question independently with sympy and all stored answers match
 
 ### Diagram audit
 14 diagrams checked: 14 ok. Every plotted point matches its coordinates (grids and circle checked by pixel scale). Some tick labels in q06, q07 and q17 touch the triangle sides or the line y = x, but every one is still readable, so I left them.
+
+### Diagram audit
+13 diagrams checked: 6 ok, 7 fixed. All plotted points recomputed from grid scale and found exact. Fixes are legibility only (tick labels sat on polygon edges, so they were moved to the bottom and left edges of the grid; no point moved):
+- q06 — y-tick 2 crossed by AB, x-tick 2 crossed by AC — tick labels moved to grid frame.
+- q07 — y-ticks −2 (on AB) and 2, x-ticks −2 and 4 crossed by sides — tick labels moved to grid frame.
+- q09 — y-ticks 2 and −2 and x-ticks −1 and 5 crossed by sides; vertex label C squeezed between x-ticks 6 and 7 — tick labels moved to grid frame.
+- q12 — y-tick 4 sat on $\overline{ML}$ and −2 on $\overline{JK}$ — tick labels moved to grid frame.
+- q14 — y-tick 2 crossed by $\overline{AC}$ — tick labels moved to grid frame.
+- q16 — x-tick 3 hidden under vertex A and the A label squeezed between ticks 3 and 4 — tick labels moved to grid frame.
+- q17 — origin 0 and x-tick −1 crossed by $y = x$, y-tick 4 and x-tick 9 crossed by $\overline{AB}$ — tick labels moved to grid frame (figure scaled to 0.97 to fit the 360 px width).
