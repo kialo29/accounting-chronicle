@@ -1,0 +1,314 @@
+[
+ {
+  "id": "pure-curve-sketching-q01",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Sketch the curve $y = (x - 1)(x - 3)(x + 2)$, showing the coordinates of the points where the curve meets the coordinate axes.",
+  "hint": "Each bracket gives a root where it equals zero. Put $x = 0$ for the $y$-intercept. Multiply the $x$-terms of the brackets to find the leading term.",
+  "answer": "Positive cubic (bottom-left to top-right) crossing the $x$-axis at $(-2, 0)$, $(1, 0)$ and $(3, 0)$, and meeting the $y$-axis at $(0, 6)$.",
+  "solution": "**Roots:** $x - 1 = 0$, $x - 3 = 0$, $x + 2 = 0$ give $x = 1$, $x = 3$, $x = -2$. Each is a single root, so the curve **crosses** the axis at each.\n\n**$y$-intercept:** $x = 0$: $y = (-1)(-3)(2) = 6$, so $(0, 6)$.\n\n**End behaviour:** leading term $x \\cdot x \\cdot x = +x^3$, so the curve comes up from the bottom-left and ends at the top-right.\n\n**Shape:** from the bottom-left it crosses at $(-2, 0)$, rises through $(0, 6)$ to a maximum, comes down to cross at $(1, 0)$, reaches a minimum between 1 and 3, then rises to cross at $(3, 0)$ and continues to the top-right.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q02",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Sketch the curve $y = (x - 1)(x - 3)^2$, showing the coordinates of the points where the curve meets the coordinate axes.",
+  "hint": "Compare with $y = (x - 1)(x - 3)(x + 2)$: the bracket $(x + 2)$ has become a second $(x - 3)$. What happens at a **repeated** root?",
+  "answer": "Positive cubic crossing the $x$-axis at $(1, 0)$, touching it at $(3, 0)$ (a minimum on the axis), and meeting the $y$-axis at $(0, -9)$.",
+  "solution": "**What changed:** $(x + 2)$ became another $(x - 3)$, so $x = 3$ is now a **double** root and there is no root at $-2$.\n\n**Roots:** $x = 1$ (single: crosses) and $x = 3$ (double: **touches**).\n\n**$y$-intercept:** $y = (-1)(-3)^2 = -9$, so $(0, -9)$.\n\n**End behaviour:** leading term $+x^3$: bottom-left to top-right.\n\n**Shape:** from the bottom-left the curve rises through $(0, -9)$, crosses the axis at $(1, 0)$, reaches a maximum between $x = 1$ and $x = 3$, comes back down to **touch** the axis at $(3, 0)$ (a minimum point), then rises to the top-right.\n\nAt $x = 3$ the factor $(x - 3)^2$ is positive on both sides, so $y$ does not change sign there: the curve bounces off the axis instead of crossing.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q03",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Sketch the curve $y = (1 - x)(x - 3)^2$, showing the coordinates of the points where the curve meets the coordinate axes.",
+  "hint": "Only one bracket has changed from $y = (x - 1)(x - 3)^2$: $(x - 1)$ became $(1 - x)$. What is the leading term now?",
+  "answer": "Negative cubic (top-left to bottom-right) crossing the $x$-axis at $(1, 0)$, touching it at $(3, 0)$ (a maximum on the axis), and meeting the $y$-axis at $(0, 9)$.",
+  "solution": "**What changed:** $(x - 1)$ became $(1 - x) = -(x - 1)$, so the whole curve is reflected in the $x$-axis.\n\n**Roots:** same as before: $x = 1$ (crosses), $x = 3$ (double, touches).\n\n**$y$-intercept:** $y = (1)(-3)^2 = 9$, so $(0, 9)$.\n\n**End behaviour:** leading term $(-x)(x)(x) = -x^3$, so the curve comes down from the **top-left** and ends at the **bottom-right**.\n\n**Shape:** from the top-left it falls through $(0, 9)$, crosses at $(1, 0)$, reaches a minimum below the axis between 1 and 3, rises to **touch** the axis at $(3, 0)$ (now a maximum), then falls to the bottom-right.\n\nChecking the $y$-intercept (positive here) is a quick way to catch a hidden minus sign.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q04",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Sketch the curve $y = (1 - x)(x - 3)^3$, showing the coordinates of the points where the curve meets the coordinate axes.",
+  "hint": "The power on $(x - 3)$ has changed from 2 to 3. What does a **triple** root look like? What is the degree and the leading term now?",
+  "answer": "Negative quartic (both ends pointing down) crossing the $x$-axis at $(1, 0)$, crossing at $(3, 0)$ with a flat (stationary) point of inflection, and meeting the $y$-axis at $(0, -27)$.",
+  "solution": "**What changed:** the power on $(x - 3)$ went from 2 to 3, so $x = 3$ is a **triple** root and the curve is now a quartic.\n\n**Roots:** $x = 1$ (single: crosses) and $x = 3$ (triple: crosses, flattening out as it does so, a point of inflection on the axis).\n\n**$y$-intercept:** $y = (1)(-3)^3 = -27$, so $(0, -27)$.\n\n**End behaviour:** leading term $(-x)(x^3) = -x^4$: a negative quartic, so **both** ends go down ($y \\to -\\infty$ as $x \\to \\pm\\infty$).\n\n**Shape:** from the bottom-left the curve rises through $(0, -27)$, crosses at $(1, 0)$, reaches a maximum between 1 and 3, comes down and flattens as it crosses the axis at $(3, 0)$, then continues down to the bottom-right.\n\nSign check: for $1 < x < 3$, $(1 - x) < 0$ and $(x - 3)^3 < 0$, so $y > 0$ ✓; for $x > 3$, $y < 0$ ✓.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q05",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "On separate diagrams, sketch\n\n(a) $y = \\dfrac{4}{x}$\n\n(b) $y = -\\dfrac{4}{x}$\n\n(c) $y = \\dfrac{4}{x^2}$\n\nIn each case state the equations of the asymptotes.",
+  "hint": "Think about the sign of $y$ when $x$ is positive and when $x$ is negative. $x^2$ is never negative.",
+  "answer": "(a) Branches in the 1st and 3rd quadrants (b) branches in the 2nd and 4th quadrants (c) both branches above the $x$-axis (1st and 2nd quadrants), symmetric about the $y$-axis. In every case the asymptotes are $x = 0$ and $y = 0$.",
+  "solution": "**(a)** $y = \\frac{4}{x}$: for $x > 0$, $y > 0$; for $x < 0$, $y < 0$. Two branches, in the **1st and 3rd quadrants**, e.g. through $(1, 4)$, $(2, 2)$, $(4, 1)$ and $(-1, -4)$, $(-2, -2)$.\n\n**(b)** $y = -\\frac{4}{x}$: the reflection of (a) in the $x$-axis. Branches in the **2nd and 4th quadrants**, e.g. through $(1, -4)$ and $(-1, 4)$.\n\n**(c)** $y = \\frac{4}{x^2}$: $x^2 > 0$ for every $x \\ne 0$, so $y > 0$. Both branches lie **above** the $x$-axis (1st and 2nd quadrants), symmetric in the $y$-axis, e.g. through $(1, 4)$, $(2, 1)$, $(-1, 4)$, $(-2, 1)$.\n\n**Asymptotes (all three):** $x = 0$ (the $y$-axis), since the function is undefined there and $|y|$ grows without bound as $x \\to 0$; and $y = 0$ (the $x$-axis), since $y \\to 0$ as $x \\to \\pm\\infty$. The curves never meet the asymptotes.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q06",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "The diagram shows the curve $y = f(x)$, where $f(x)$ is a cubic.\n\nThe curve crosses the $x$-axis at $(-2, 0)$, touches the $x$-axis at $(1, 0)$ and crosses the $y$-axis at $(0, 4)$.\n\nFind $f(x)$ in factorised form.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 280\" width=\"300\" height=\"280\"><line x1=\"28.0\" y1=\"268.0\" x2=\"28.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"74.55\" y1=\"268.0\" x2=\"74.55\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"121.09\" y1=\"268.0\" x2=\"121.09\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"167.64\" y1=\"268.0\" x2=\"167.64\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"214.18\" y1=\"268.0\" x2=\"214.18\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"260.73\" y1=\"268.0\" x2=\"260.73\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"268.0\" x2=\"284.0\" y2=\"268.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"236.25\" x2=\"284.0\" y2=\"236.25\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"204.5\" x2=\"284.0\" y2=\"204.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"172.75\" x2=\"284.0\" y2=\"172.75\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"141.0\" x2=\"284.0\" y2=\"141.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"109.25\" x2=\"284.0\" y2=\"109.25\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"77.5\" x2=\"284.0\" y2=\"77.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"45.75\" x2=\"284.0\" y2=\"45.75\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"14.0\" x2=\"284.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"28.0\" y1=\"172.75\" x2=\"290.0\" y2=\"172.75\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"167.64\" y1=\"268.0\" x2=\"167.64\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 290.0 172.75 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 167.64 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"292.0\" y=\"176.75\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"173.64\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"28.0\" y1=\"169.75\" x2=\"28.0\" y2=\"175.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"28.0\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−3</text><line x1=\"74.55\" y1=\"169.75\" x2=\"74.55\" y2=\"175.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"74.55\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−2</text><line x1=\"121.09\" y1=\"169.75\" x2=\"121.09\" y2=\"175.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"121.09\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−1</text><line x1=\"214.18\" y1=\"169.75\" x2=\"214.18\" y2=\"175.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"214.18\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"260.73\" y1=\"169.75\" x2=\"260.73\" y2=\"175.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"260.73\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"164.64\" y1=\"268.0\" x2=\"170.64\" y2=\"268.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164.64\" y1=\"236.25\" x2=\"170.64\" y2=\"236.25\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.64\" y=\"240.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−4</text><line x1=\"164.64\" y1=\"204.5\" x2=\"170.64\" y2=\"204.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164.64\" y1=\"141.0\" x2=\"170.64\" y2=\"141.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164.64\" y1=\"109.25\" x2=\"170.64\" y2=\"109.25\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.64\" y=\"113.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"164.64\" y1=\"77.5\" x2=\"170.64\" y2=\"77.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"164.64\" y1=\"45.75\" x2=\"170.64\" y2=\"45.75\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.64\" y=\"50.25\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"164.64\" y1=\"14.0\" x2=\"170.64\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.64\" y=\"187.75\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M60.0 268.0L61.6 267.6L63.2 254.2L64.8 241.2L66.4 228.8L68.0 216.8L69.6 205.3L71.2 194.3L72.8 183.7L74.4 173.6L76.0 164.0L77.6 154.8L79.2 146.1L80.8 137.7L82.4 129.8L84.0 122.3L85.6 115.2L87.2 108.5L88.8 102.2L90.4 96.3L92.0 90.7L93.6 85.5L95.2 80.7L96.8 76.2L98.4 72.1L100.0 68.3L101.6 64.8L103.2 61.6L104.8 58.8L106.4 56.2L108.0 54.0L109.6 52.0L111.2 50.4L112.8 49.0L114.4 47.8L116.0 46.9L117.6 46.3L119.2 45.9L120.8 45.8L122.4 45.8L124.0 46.1L125.6 46.6L127.2 47.3L128.8 48.2L130.4 49.3L132.0 50.6L133.6 52.0L135.2 53.6L136.8 55.4L138.4 57.3L140.0 59.3L141.6 61.5L143.2 63.8L144.8 66.3L146.4 68.8L148.0 71.5L149.6 74.2L151.2 77.0L152.8 79.9L154.4 82.9L156.0 85.9L157.6 89.0L159.2 92.2L160.8 95.4L162.4 98.6L164.0 101.8L165.6 105.1L167.2 108.4L168.8 111.6L170.4 114.9L172.0 118.2L173.6 121.4L175.2 124.6L176.8 127.8L178.4 130.9L180.0 134.0L181.6 137.0L183.2 139.9L184.8 142.8L186.4 145.6L188.0 148.3L189.6 150.9L191.2 153.3L192.8 155.7L194.4 158.0L196.0 160.1L197.6 162.1L199.2 163.9L200.8 165.6L202.4 167.2L204.0 168.5L205.6 169.7L207.2 170.7L208.8 171.5L210.4 172.1L212.0 172.5L213.6 172.7L215.2 172.7L216.8 172.4L218.4 171.9L220.0 171.2L221.6 170.2L223.2 168.9L224.8 167.4L226.4 165.6L228.0 163.5L229.6 161.1L231.2 158.5L232.8 155.5L234.4 152.2L236.0 148.6L237.6 144.6L239.2 140.3L240.8 135.7L242.4 130.7L244.0 125.3L245.6 119.6L247.2 113.5L248.8 107.0L250.4 100.1L252.0 92.8L253.6 85.2L255.2 77.0L256.8 68.5L258.4 59.6L260.0 50.2L261.6 40.3L263.2 30.0L264.8 19.3L266.4 14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/><circle cx=\"74.55\" cy=\"172.75\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"214.18\" cy=\"172.75\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"167.64\" cy=\"109.25\" r=\"2.8\" fill=\"currentColor\"/></svg>",
+  "hint": "A crossing at $x = -2$ gives a single factor; touching at $x = 1$ gives a squared factor. Write $f(x) = a(\\ldots)(\\ldots)^2$ and use $(0, 4)$ to find $a$.",
+  "answer": "$f(x) = 2(x + 2)(x - 1)^2$",
+  "solution": "Crossing at $x = -2$: single factor $(x + 2)$.\n\nTouching at $x = 1$: repeated factor $(x - 1)^2$.\n\nThat already makes degree 3, so\n$$f(x) = a(x + 2)(x - 1)^2$$\nfor some constant $a$.\n\nThe curve passes through $(0, 4)$:\n$$4 = a(2)(-1)^2 = 2a \\Rightarrow a = 2$$\n\nSo $f(x) = 2(x + 2)(x - 1)^2$.\n\nCheck with the end behaviour: leading term $2x^3$, positive, matching the curve rising from bottom-left to top-right ✓. (Without $a$, $(x + 2)(x - 1)^2$ would give a $y$-intercept of 2, not 4.)",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q07",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Carys is asked to sketch $y = (x + 2)(x - 1)(x - 3)$. Her sketch is shown below.\n\n(a) Identify Carys's mistake.\n\n(b) Describe the correct sketch, giving the coordinates of the points where the curve meets the axes.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"300\" height=\"250\"><line x1=\"14.0\" y1=\"98.0\" x2=\"290.0\" y2=\"98.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"168.29\" y1=\"238.0\" x2=\"168.29\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 290.0 98.0 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 168.29 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"292.0\" y=\"102.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"174.29\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><path d=\"M25.8 238.0L27.5 234.2L29.2 222.0L30.9 210.2L32.6 198.9L34.2 188.1L35.9 177.7L37.6 167.8L39.3 158.3L41.0 149.2L42.7 140.6L44.4 132.3L46.1 124.5L47.8 117.1L49.4 110.0L51.1 103.4L52.8 97.1L54.5 91.2L56.2 85.7L57.9 80.6L59.6 75.8L61.2 71.3L62.9 67.2L64.6 63.4L66.3 59.9L68.0 56.8L69.7 54.0L71.4 51.4L73.1 49.2L74.8 47.2L76.4 45.6L78.1 44.2L79.8 43.1L81.5 42.2L83.2 41.6L84.9 41.3L86.6 41.1L88.2 41.3L89.9 41.6L91.6 42.2L93.3 43.0L95.0 44.0L96.7 45.1L98.4 46.5L100.1 48.1L101.8 49.8L103.4 51.7L105.1 53.8L106.8 56.0L108.5 58.4L110.2 60.9L111.9 63.5L113.6 66.3L115.2 69.2L116.9 72.2L118.6 75.3L120.3 78.6L122.0 81.9L123.7 85.3L125.4 88.8L127.1 92.3L128.8 95.9L130.4 99.6L132.1 103.3L133.8 107.1L135.5 110.9L137.2 114.7L138.9 118.5L140.6 122.4L142.2 126.3L143.9 130.2L145.6 134.1L147.3 137.9L149.0 141.8L150.7 145.6L152.4 149.3L154.1 153.1L155.8 156.8L157.4 160.4L159.1 164.0L160.8 167.5L162.5 170.9L164.2 174.3L165.9 177.5L167.6 180.7L169.2 183.7L170.9 186.7L172.6 189.5L174.3 192.2L176.0 194.8L177.7 197.2L179.4 199.5L181.1 201.6L182.8 203.6L184.4 205.4L186.1 207.0L187.8 208.4L189.5 209.7L191.2 210.8L192.9 211.6L194.6 212.3L196.2 212.7L197.9 212.9L199.6 212.9L201.3 212.6L203.0 212.1L204.7 211.4L206.4 210.3L208.1 209.1L209.8 207.5L211.4 205.7L213.1 203.5L214.8 201.1L216.5 198.4L218.2 195.4L219.9 192.0L221.6 188.4L223.2 184.4L224.9 180.1L226.6 175.4L228.3 170.4L230.0 165.0L231.7 159.2L233.4 153.1L235.1 146.6L236.8 139.7L238.4 132.5L240.1 124.8L241.8 116.7L243.5 108.2L245.2 99.3L246.9 90.0L248.6 80.2L250.2 70.0L251.9 59.3L253.6 48.2L255.3 36.6L257.0 24.5L258.7 14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/><circle cx=\"52.57\" cy=\"98.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"129.71\" cy=\"98.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"245.43\" cy=\"98.0\" r=\"2.8\" fill=\"currentColor\"/><text x=\"48.57\" y=\"114.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−3</text><text x=\"133.71\" y=\"114.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">−1</text><text x=\"251.43\" y=\"92.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">2</text><circle cx=\"168.29\" cy=\"182.0\" r=\"2.8\" fill=\"currentColor\"/><text x=\"174.29\" y=\"196.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">−6</text><text x=\"163.29\" y=\"113.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text></svg>",
+  "hint": "Where does $(x + 2)$ equal zero? Compare with where Carys has marked her roots. Then check her $y$-intercept.",
+  "answer": "(a) She has taken the roots with the wrong signs: $(x + 2)(x - 1)(x - 3) = 0$ gives $x = -2, 1, 3$, not $2, -1, -3$ (her $y$-intercept of $-6$ follows from the same error). (b) Positive cubic crossing the $x$-axis at $(-2, 0)$, $(1, 0)$, $(3, 0)$ and the $y$-axis at $(0, 6)$.",
+  "solution": "**(a)** Carys has marked roots at $x = -3$, $x = -1$ and $x = 2$: she has read the numbers in the brackets with the wrong sign. A root is where the bracket equals zero:\n$$x + 2 = 0 \\Rightarrow x = -2, \\quad x - 1 = 0 \\Rightarrow x = 1, \\quad x - 3 = 0 \\Rightarrow x = 3$$\n\n(Her sketch is actually the graph of $y = (x - 2)(x + 1)(x + 3)$, which is why her $y$-intercept is $-6$.)\n\n**(b)** Roots $x = -2, 1, 3$, all single, so the curve crosses at each.\n\n$y$-intercept: $(2)(-1)(-3) = 6$, so $(0, 6)$.\n\nLeading term $+x^3$: bottom-left to top-right.\n\nFrom the bottom-left the curve crosses at $(-2, 0)$, rises through $(0, 6)$ to a maximum, falls to cross at $(1, 0)$, has a minimum between 1 and 3, and rises through $(3, 0)$ to the top-right.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q08",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Dan is asked to sketch $y = (x + 1)(x - 2)^2$. He writes this description of his sketch:\n\n\"The roots are $x = -1$ and $x = 2$. The leading term is $+x^3$, so the curve goes from bottom-left to top-right. The $y$-intercept is $(0, 4)$. The curve comes up from the bottom-left, crosses the $x$-axis at $(-1, 0)$, goes up through $(0, 4)$ to a maximum, then comes down and crosses the $x$-axis at $(2, 0)$, and then goes up to the top-right.\"\n\n(a) Explain why Dan's description cannot be correct.\n\n(b) Identify Dan's error and describe the correct behaviour at $x = 2$.",
+  "hint": "If a curve crosses the axis going **downwards** at $x = 2$, it is below the axis just after $x = 2$. To get to the top-right it would have to cross again. Is there another root?",
+  "answer": "(a) After crossing downwards at $x = 2$ the curve would be below the axis, so it would have to cross again to reach the top-right, but there are no other roots. (b) $x = 2$ is a double root: the curve **touches** the axis at $(2, 0)$ (a minimum) and goes back up, without crossing.",
+  "solution": "**(a)** If the curve crossed the axis going downwards at $x = 2$, then just to the right of 2 it would be below the axis. To end at the top-right it would have to cross the axis again at some $x > 2$, giving a third root. But the only roots are $-1$ and $2$. So the description is impossible.\n\n**(b)** Dan has treated the **double** root at $x = 2$ as if it were a single root. The factor $(x - 2)^2$ is positive on both sides of $x = 2$, so near $x = 2$ the sign of $y$ is the sign of $(x + 1)$, which is positive. The curve does not change sign at $x = 2$.\n\nCorrect behaviour: the curve comes down from the maximum, **touches** the $x$-axis at $(2, 0)$, which is a minimum point, and then rises to the top-right.\n\nThe rest of Dan's description is correct: roots $-1$ (crosses) and $2$ (touches), $y$-intercept $(1)(-2)^2 = 4$, positive cubic.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q09",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Elif is asked to sketch $y = -\\dfrac{3}{x^2}$. Her sketch is shown below.\n\n(a) Explain why Elif's sketch is wrong.\n\n(b) Describe the correct sketch, including the equations of the asymptotes.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 240\" width=\"260\" height=\"240\"><line x1=\"14.0\" y1=\"122.0\" x2=\"250.0\" y2=\"122.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"129.0\" y1=\"228.0\" x2=\"129.0\" y2=\"10.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 250.0 122.0 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 129.0 10.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"252.0\" y=\"126.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"135.0\" y=\"16.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><text x=\"124.0\" y=\"137.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M14.0 102.1L14.4 102.1L14.8 102.0L15.2 101.9L15.5 101.9L15.9 101.8L16.3 101.7L16.7 101.7L17.1 101.6L17.4 101.5L17.8 101.4L18.2 101.4L18.6 101.3L19.0 101.2L19.4 101.2L19.7 101.1L20.1 101.0L20.5 100.9L20.9 100.9L21.3 100.8L21.6 100.7L22.0 100.6L22.4 100.6L22.8 100.5L23.2 100.4L23.6 100.3L23.9 100.2L24.3 100.2L24.7 100.1L25.1 100.0L25.5 99.9L25.9 99.8L26.2 99.8L26.6 99.7L27.0 99.6L27.4 99.5L27.8 99.4L28.1 99.3L28.5 99.2L28.9 99.2L29.3 99.1L29.7 99.0L30.1 98.9L30.4 98.8L30.8 98.7L31.2 98.6L31.6 98.5L32.0 98.4L32.4 98.3L32.7 98.3L33.1 98.2L33.5 98.1L33.9 98.0L34.3 97.9L34.6 97.8L35.0 97.7L35.4 97.6L35.8 97.5L36.2 97.4L36.6 97.3L36.9 97.2L37.3 97.1L37.7 97.0L38.1 96.9L38.5 96.8L38.9 96.7L39.2 96.5L39.6 96.4L40.0 96.3L40.4 96.2L40.8 96.1L41.1 96.0L41.5 95.9L41.9 95.8L42.3 95.6L42.7 95.5L43.1 95.4L43.4 95.3L43.8 95.2L44.2 95.0L44.6 94.9L45.0 94.8L45.4 94.7L45.7 94.5L46.1 94.4L46.5 94.3L46.9 94.2L47.3 94.0L47.6 93.9L48.0 93.8L48.4 93.6L48.8 93.5L49.2 93.4L49.6 93.2L49.9 93.1L50.3 93.0L50.7 92.8L51.1 92.7L51.5 92.5L51.9 92.4L52.2 92.2L52.6 92.1L53.0 91.9L53.4 91.8L53.8 91.6L54.1 91.5L54.5 91.3L54.9 91.2L55.3 91.0L55.7 90.8L56.1 90.7L56.4 90.5L56.8 90.3L57.2 90.2L57.6 90.0L58.0 89.8L58.4 89.7L58.7 89.5L59.1 89.3L59.5 89.1L59.9 88.9L60.3 88.8L60.6 88.6L61.0 88.4L61.4 88.2L61.8 88.0L62.2 87.8L62.6 87.6L62.9 87.4L63.3 87.2L63.7 87.0L64.1 86.8L64.5 86.6L64.9 86.4L65.2 86.2L65.6 85.9L66.0 85.7L66.4 85.5L66.8 85.3L67.2 85.0L67.5 84.8L67.9 84.6L68.3 84.3L68.7 84.1L69.1 83.9L69.4 83.6L69.8 83.4L70.2 83.1L70.6 82.9L71.0 82.6L71.4 82.3L71.7 82.1L72.1 81.8L72.5 81.5L72.9 81.3L73.3 81.0L73.7 80.7L74.0 80.4L74.4 80.1L74.8 79.8L75.2 79.5L75.6 79.2L75.9 78.9L76.3 78.6L76.7 78.3L77.1 78.0L77.5 77.6L77.9 77.3L78.2 77.0L78.6 76.6L79.0 76.3L79.4 75.9L79.8 75.6L80.2 75.2L80.5 74.8L80.9 74.5L81.3 74.1L81.7 73.7L82.1 73.3L82.5 72.9L82.8 72.5L83.2 72.1L83.6 71.7L84.0 71.2L84.4 70.8L84.7 70.4L85.1 69.9L85.5 69.5L85.9 69.0L86.3 68.5L86.7 68.0L87.0 67.5L87.4 67.0L87.8 66.5L88.2 66.0L88.6 65.5L89.0 64.9L89.3 64.4L89.7 63.8L90.1 63.2L90.5 62.7L90.9 62.1L91.2 61.5L91.6 60.9L92.0 60.2L92.4 59.6L92.8 58.9L93.2 58.2L93.5 57.5L93.9 56.9L94.3 56.1L94.7 55.4L95.1 54.6L95.5 53.9L95.8 53.1L96.2 52.3L96.6 51.5L97.0 50.6L97.4 49.8L97.7 48.9L98.1 48.0L98.5 47.0L98.9 46.1L99.3 45.1L99.7 44.1L100.0 43.1L100.4 42.0L100.8 41.0L101.2 39.8L101.6 38.7L102.0 37.5L102.3 36.3L102.7 35.1L103.1 33.8L103.5 32.5L103.9 31.1L104.2 29.7L104.6 28.2L105.0 26.7L105.4 25.2L105.8 23.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/><path d=\"M152.2 220.1L152.6 218.8L153.0 217.3L153.4 215.8L153.8 214.3L154.1 212.9L154.5 211.6L154.9 210.2L155.3 208.9L155.7 207.7L156.1 206.5L156.4 205.3L156.8 204.2L157.2 203.1L157.6 202.0L158.0 200.9L158.3 199.9L158.7 198.9L159.1 197.9L159.5 196.9L159.9 196.0L160.3 195.1L160.6 194.2L161.0 193.4L161.4 192.5L161.8 191.7L162.2 190.9L162.6 190.1L162.9 189.3L163.3 188.6L163.7 187.9L164.1 187.2L164.5 186.4L164.8 185.8L165.2 185.1L165.6 184.4L166.0 183.8L166.4 183.2L166.8 182.5L167.1 181.9L167.5 181.3L167.9 180.8L168.3 180.2L168.7 179.6L169.1 179.1L169.4 178.5L169.8 178.0L170.2 177.5L170.6 177.0L171.0 176.5L171.3 176.0L171.7 175.5L172.1 175.0L172.5 174.6L172.9 174.1L173.3 173.6L173.6 173.2L174.0 172.8L174.4 172.3L174.8 171.9L175.2 171.5L175.6 171.1L175.9 170.7L176.3 170.3L176.7 169.9L177.1 169.5L177.5 169.2L177.8 168.8L178.2 168.4L178.6 168.1L179.0 167.7L179.4 167.4L179.8 167.0L180.1 166.7L180.5 166.4L180.9 166.0L181.3 165.7L181.7 165.4L182.1 165.1L182.4 164.8L182.8 164.5L183.2 164.2L183.6 163.9L184.0 163.6L184.3 163.3L184.7 163.0L185.1 162.7L185.5 162.5L185.9 162.2L186.3 161.9L186.6 161.7L187.0 161.4L187.4 161.1L187.8 160.9L188.2 160.6L188.6 160.4L188.9 160.1L189.3 159.9L189.7 159.7L190.1 159.4L190.5 159.2L190.8 158.9L191.2 158.7L191.6 158.5L192.0 158.3L192.4 158.1L192.8 157.8L193.1 157.6L193.5 157.4L193.9 157.2L194.3 157.0L194.7 156.8L195.1 156.6L195.4 156.4L195.8 156.2L196.2 156.0L196.6 155.8L197.0 155.6L197.3 155.4L197.7 155.2L198.1 155.1L198.5 154.9L198.9 154.7L199.3 154.5L199.6 154.3L200.0 154.2L200.4 154.0L200.8 153.8L201.2 153.7L201.6 153.5L201.9 153.3L202.3 153.2L202.7 153.0L203.1 152.8L203.5 152.7L203.8 152.5L204.2 152.4L204.6 152.2L205.0 152.1L205.4 151.9L205.8 151.8L206.1 151.6L206.5 151.5L206.9 151.3L207.3 151.2L207.7 151.1L208.1 150.9L208.4 150.8L208.8 150.6L209.2 150.5L209.6 150.4L210.0 150.2L210.3 150.1L210.7 150.0L211.1 149.8L211.5 149.7L211.9 149.6L212.3 149.4L212.7 149.3L213.0 149.2L213.4 149.1L213.8 149.0L214.2 148.8L214.6 148.7L214.9 148.6L215.3 148.5L215.7 148.4L216.1 148.2L216.5 148.1L216.8 148.0L217.2 147.9L217.6 147.8L218.0 147.7L218.4 147.6L218.8 147.5L219.2 147.3L219.5 147.2L219.9 147.1L220.3 147.0L220.7 146.9L221.1 146.8L221.4 146.7L221.8 146.6L222.2 146.5L222.6 146.4L223.0 146.3L223.3 146.2L223.7 146.1L224.1 146.0L224.5 145.9L224.9 145.8L225.3 145.7L225.7 145.7L226.0 145.6L226.4 145.5L226.8 145.4L227.2 145.3L227.6 145.2L227.9 145.1L228.3 145.0L228.7 144.9L229.1 144.8L229.5 144.8L229.8 144.7L230.2 144.6L230.6 144.5L231.0 144.4L231.4 144.3L231.8 144.2L232.2 144.2L232.5 144.1L232.9 144.0L233.3 143.9L233.7 143.8L234.1 143.8L234.4 143.7L234.8 143.6L235.2 143.5L235.6 143.4L236.0 143.4L236.3 143.3L236.7 143.2L237.1 143.1L237.5 143.1L237.9 143.0L238.3 142.9L238.7 142.8L239.0 142.8L239.4 142.7L239.8 142.6L240.2 142.6L240.6 142.5L240.9 142.4L241.3 142.3L241.7 142.3L242.1 142.2L242.5 142.1L242.8 142.1L243.2 142.0L243.6 141.9L244.0 141.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/></svg>",
+  "hint": "Choose a negative value of $x$, say $x = -1$. What sign does $y$ have? Compare with Elif's sketch.",
+  "answer": "(a) She has drawn $y = -\\frac{3}{x}$: her left-hand branch has $y > 0$, but $x^2 > 0$ so $-\\frac{3}{x^2} < 0$ for every $x \\ne 0$. (b) Both branches below the $x$-axis (3rd and 4th quadrants), symmetric about the $y$-axis, e.g. through $(\\pm 1, -3)$; asymptotes $x = 0$ and $y = 0$.",
+  "solution": "**(a)** For any $x \\ne 0$, $x^2 > 0$, so\n$$y = -\\frac{3}{x^2} < 0$$\nThe graph is always **below** the $x$-axis. Elif's left-hand branch (for $x < 0$) is above the axis: e.g. at $x = -1$ her curve has $y = 3$, but the correct value is $y = -\\frac{3}{1} = -3$. She has drawn the graph of $y = -\\frac{3}{x}$, treating $x^2$ like $x$.\n\n**(b)** Correct sketch: two branches, both below the $x$-axis, in the 3rd and 4th quadrants. The graph is symmetric in the $y$-axis (replacing $x$ by $-x$ gives the same $y$), passing through $(1, -3)$, $(-1, -3)$, $(3, -\\frac{1}{3})$, $(-3, -\\frac{1}{3})$.\n\nAs $x \\to 0$, $y \\to -\\infty$ on both sides; as $x \\to \\pm\\infty$, $y \\to 0$ from below.\n\nAsymptotes: $x = 0$ and $y = 0$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q10",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 7,
+  "question": "$f(x) = x^3 - 4x^2 + 4x$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Factorise $f(x)$ completely.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Sketch the curve $y = f(x)$, showing the coordinates of the points where the curve meets the coordinate axes.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Using your sketch, explain why the equation $x^3 - 4x^2 + 4x = -1$ has exactly one real solution, and state whether this solution is positive or negative.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Take out the common factor $x$ first. (b) A squared factor means the curve touches the axis. (c) Draw the horizontal line $y = -1$ on your sketch.",
+  "answer": "(a) $x(x - 2)^2$ (b) Positive cubic through $(0, 0)$ (crossing) and touching the $x$-axis at $(2, 0)$. (c) The curve is below the $x$-axis only for $x < 0$, where it is increasing, so the line $y = -1$ meets it exactly once; the solution is negative.",
+  "solution": "**(a)**\n$$f(x) = x(x^2 - 4x + 4)$$ M1\n$$= x(x - 2)^2$$ A1\n\n**(b)** Shape of a positive cubic (bottom-left to top-right). B1\n\nCrosses at the origin $(0, 0)$. B1\n\nTouches the $x$-axis at $(2, 0)$, which is a minimum, with a maximum between $x = 0$ and $x = 2$. B1\n\n**(c)** Since $(x - 2)^2 \\ge 0$, $f(x) < 0$ only when $x < 0$; for $x \\ge 0$ the curve is on or above the axis. On $x < 0$ the curve rises steadily from the bottom-left up to the origin, so the horizontal line $y = -1$ meets the curve exactly once. M1\n\nSo there is exactly one real solution, and it is **negative**. A1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-curve-sketching-q11",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "question": "The curve $C_1$ has equation $y = \\dfrac{2}{x}$, $x \\ne 0$. The curve $C_2$ has equation $y = x(x - 3)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "On the same axes, sketch $C_1$ and $C_2$. Show the coordinates of any points where $C_2$ meets the coordinate axes and state the equations of the asymptotes of $C_1$.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Using your sketch, state the number of points of intersection of $C_1$ and $C_2$. Give a reason for your answer.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Show that the $x$-coordinates of the points of intersection satisfy $x^3 - 3x^2 - 2 = 0$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Show that this equation has a root between $x = 3.1$ and $x = 3.2$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) $C_2$ is a $\\cup$-shaped parabola through $(0, 0)$ and $(3, 0)$. (b) Where is $C_2$ positive, and where is $C_1$ positive? (d) Look for a change of sign.",
+  "answer": "(a) $C_1$: branches in the 1st and 3rd quadrants, asymptotes $x = 0$ and $y = 0$; $C_2$: $\\cup$-shaped parabola through $(0, 0)$ and $(3, 0)$. (b) 1 (c) $\\frac{2}{x} = x^2 - 3x \\Rightarrow x^3 - 3x^2 - 2 = 0$ (d) $f(3.1) = -1.039 < 0$, $f(3.2) = 0.048 > 0$; sign change, so a root lies between them.",
+  "solution": "**(a)** $C_1$: reciprocal graph with branches in the 1st and 3rd quadrants. B1 Asymptotes $x = 0$ and $y = 0$. B1\n\n$C_2$: $\\cup$-shaped parabola B1 meeting the axes at $(0, 0)$ and $(3, 0)$. B1\n\n**(b)** For $x < 0$: $C_1$ is below the axis but $C_2$ is above, so no intersections. For $0 < x < 3$: $C_2$ is below the axis and $C_1$ above, so none. For $x > 3$: $C_2$ rises from 0 without bound and $C_1$ decreases towards 0, so they cross exactly once.\n\n**1** point of intersection. B1\n\n**(c)**\n$$\\frac{2}{x} = x^2 - 3x$$ M1\nMultiply by $x$ ($x \\ne 0$): $2 = x^3 - 3x^2$, so $x^3 - 3x^2 - 2 = 0$. A1\n\n**(d)** Let $f(x) = x^3 - 3x^2 - 2$.\n\n$f(3.1) = 29.791 - 28.83 - 2 = -1.039$ and $f(3.2) = 32.768 - 30.72 - 2 = 0.048$ M1\n\nThere is a change of sign and $f$ is continuous, so there is a root between 3.1 and 3.2. A1",
+  "linkedTopicIds": [
+   "pure-numerical-methods"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q12",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "At a constant temperature, the pressure $P$ kPa of a fixed amount of gas in a syringe and its volume $V$ litres are related by\n$$P = \\frac{600}{V}$$\n\n(a) Sketch the graph of $P$ against $V$ for $V > 0$.\n\n(b) Find the volume when the pressure is 150 kPa.\n\n(c) State what happens to the pressure when the volume is halved.\n\n(d) Explain, in the context of the gas, why the graph never meets either axis.",
+  "hint": "This is a reciprocal graph $y = \\frac{k}{x}$ with $k > 0$; only the part with $V > 0$ makes sense.",
+  "answer": "(a) One branch of a reciprocal curve in the first quadrant, e.g. through $(6, 100)$ and $(4, 150)$, approaching both axes. (b) 4 litres (c) the pressure doubles (d) $P = 0$ would need infinite volume, and $V = 0$ would need infinite pressure; neither can happen.",
+  "solution": "**(a)** $P = \\frac{600}{V}$ for $V > 0$ is the first-quadrant branch of a reciprocal graph: as $V$ increases, $P$ decreases. Useful points: $(2, 300)$, $(4, 150)$, $(6, 100)$, $(12, 50)$. The axes are asymptotes.\n\n**(b)** $150 = \\dfrac{600}{V} \\Rightarrow V = \\dfrac{600}{150} = 4$ litres.\n\n**(c)** Replacing $V$ by $\\frac{V}{2}$: $P = \\dfrac{600}{V/2} = 2 \\times \\dfrac{600}{V}$, so the pressure **doubles**.\n\n**(d)** $PV = 600$ for every point on the graph.\n* It never meets the $V$-axis ($P = 0$) because $0 \\times V = 600$ is impossible: compressing or expanding the gas never makes the pressure zero.\n* It never meets the $P$-axis ($V = 0$) because the gas cannot be squeezed to zero volume; as $V \\to 0$ the pressure would grow without limit.",
+  "linkedTopicIds": [
+   "rat-inverse-proportion"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q13",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A school is organising a theatre trip. Coach hire costs £600 in total, and each theatre ticket costs £15. If $n$ students go, and the coach cost is shared equally, the cost per student, $£C$, is\n$$C = 15 + \\frac{600}{n}$$\n\n(a) Sketch the graph of $C$ against $n$ for $n > 0$, showing any asymptotes.\n\n(b) Interpret the horizontal asymptote in the context of the trip.\n\n(c) Find the smallest number of students needed for the cost per student to be **less than** £25.",
+  "hint": "The graph is $y = \\frac{600}{x}$ moved up by 15. For (c), solve $15 + \\frac{600}{n} < 25$, remembering that $n$ is a whole number.",
+  "answer": "(a) First-quadrant reciprocal branch shifted up 15: asymptotes $n = 0$ and $C = 15$, decreasing towards $C = 15$. (b) However many students go, each pays more than £15 (the ticket price), but the cost per student approaches £15 as the number of students gets very large. (c) 61 students",
+  "solution": "**(a)** $C = 15 + \\frac{600}{n}$ is the graph of $C = \\frac{600}{n}$ translated up by 15. For $n > 0$: a single decreasing branch, steep near $n = 0$, levelling off towards $C = 15$. Vertical asymptote $n = 0$; horizontal asymptote $C = 15$. Example points: $(20, 45)$, $(40, 30)$, $(60, 25)$.\n\n**(b)** As $n$ grows, $\\frac{600}{n} \\to 0$, so $C \\to 15$. The shared coach cost per student becomes negligible and the cost approaches the £15 ticket price, but it is always above £15 because some coach cost is always shared.\n\n**(c)**\n$$15 + \\frac{600}{n} < 25 \\Rightarrow \\frac{600}{n} < 10 \\Rightarrow n > 60$$\n(multiplying by $n > 0$ keeps the inequality the same way).\n\nWith exactly 60 students the cost is exactly £25, which is not less than £25. So at least **61 students** are needed (cost $15 + \\frac{600}{61} \\approx$ £24.84).",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q14",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Describe the transformation that maps the graph of $y = \\dfrac{1}{x}$ onto the graph of $y = \\dfrac{1}{x - 2} + 3$.\n\n(b) Sketch $y = \\dfrac{1}{x - 2} + 3$, stating the equations of the asymptotes and the coordinates of the points where the curve meets the axes.",
+  "hint": "$f(x - a) + b$ is $f(x)$ translated by $a$ to the right and $b$ up. The asymptotes move with the graph. For the $x$-intercept, solve $\\frac{1}{x - 2} + 3 = 0$.",
+  "answer": "(a) Translation by the vector $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$ (b) Asymptotes $x = 2$ and $y = 3$; meets the axes at $\\left(0, \\frac{5}{2}\\right)$ and $\\left(\\frac{5}{3}, 0\\right)$. Branches are top-right and bottom-left of the point $(2, 3)$.",
+  "solution": "**(a)** Replacing $x$ by $x - 2$ moves the graph 2 units right; adding 3 moves it 3 units up. So it is a translation by $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$.\n\n**(b)** The asymptotes $x = 0$, $y = 0$ of $y = \\frac{1}{x}$ move to\n$$x = 2 \\quad\\text{and}\\quad y = 3$$\n\nThe two branches sit top-right and bottom-left of the point $(2, 3)$ where the asymptotes cross.\n\n$y$-intercept: $x = 0$: $y = \\frac{1}{-2} + 3 = \\frac{5}{2}$, so $\\left(0, \\frac{5}{2}\\right)$.\n\n$x$-intercept: $\\dfrac{1}{x - 2} + 3 = 0 \\Rightarrow \\dfrac{1}{x - 2} = -3 \\Rightarrow x - 2 = -\\dfrac{1}{3} \\Rightarrow x = \\dfrac{5}{3}$, so $\\left(\\frac{5}{3}, 0\\right)$.\n\nBoth intercepts are on the bottom-left branch (left of $x = 2$), which comes from $y \\approx 3$ at the far left, passes through $\\left(0, \\frac{5}{2}\\right)$ and $\\left(\\frac{5}{3}, 0\\right)$, and plunges down the asymptote $x = 2$. The top-right branch comes down from $+\\infty$ near $x = 2$ and levels off towards $y = 3$.",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q15",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The line $y = kx + 2$, where $k$ is a constant, and the curve $y = \\dfrac{1}{x}$ are drawn on the same axes.\n\n(a) Show that the $x$-coordinates of any points of intersection satisfy $kx^2 + 2x - 1 = 0$.\n\n(b) Find the value of $k$ for which the line is a tangent to the curve, and the coordinates of the point of contact.\n\n(c) Find the set of values of $k$ for which the line meets the curve at two distinct points.",
+  "hint": "(b) A tangent gives a repeated root: discriminant zero. (c) Discriminant positive, but check separately what happens when $k = 0$, because then the equation is not a quadratic.",
+  "answer": "(a) $\\frac{1}{x} = kx + 2 \\Rightarrow 1 = kx^2 + 2x$ (b) $k = -1$, point $(1, 1)$ (c) $k > -1$, $k \\ne 0$",
+  "solution": "**(a)** At an intersection, $\\dfrac{1}{x} = kx + 2$. Multiply by $x$ (allowed since $x \\ne 0$ on the curve):\n$$1 = kx^2 + 2x \\Rightarrow kx^2 + 2x - 1 = 0$$\n\n**(b)** Tangent: one repeated root, so the discriminant is zero (with $k \\ne 0$):\n$$2^2 - 4(k)(-1) = 0 \\Rightarrow 4 + 4k = 0 \\Rightarrow k = -1$$\n\nThen $-x^2 + 2x - 1 = 0 \\Rightarrow (x - 1)^2 = 0 \\Rightarrow x = 1$, $y = \\frac{1}{1} = 1$. Point of contact $(1, 1)$.\n\n**(c)** For $k \\ne 0$, two distinct points need $4 + 4k > 0$, i.e. $k > -1$.\n\nBut if $k = 0$ the equation is $2x - 1 = 0$, which has only one solution $x = \\frac{1}{2}$: the horizontal line $y = 2$ meets only the first-quadrant branch, once. So $k = 0$ must be excluded.\n\n$$k > -1, \\quad k \\ne 0$$\n\n(Picture: for $k > 0$ the line meets each branch once; for $-1 < k < 0$ it cuts the first-quadrant branch twice; for $k < -1$ it misses the curve.)",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q16",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The diagram shows part of the curve $y = f(x)$, where $f(x)$ is a polynomial of degree 4.\n\nThe curve touches the $x$-axis at $(-1, 0)$, crosses it at $(2, 0)$ and $(4, 0)$, and meets the $y$-axis at $(0, -8)$.\n\n(a) Find $f(x)$ in factorised form.\n\n(b) Describe the behaviour of $y$ as $x \\to \\infty$ and as $x \\to -\\infty$.\n\n(c) Solve the inequality $f(x) > 0$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 290\" width=\"320\" height=\"290\"><line x1=\"30.0\" y1=\"278.0\" x2=\"30.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"69.14\" y1=\"278.0\" x2=\"69.14\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"108.29\" y1=\"278.0\" x2=\"108.29\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"147.43\" y1=\"278.0\" x2=\"147.43\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"186.57\" y1=\"278.0\" x2=\"186.57\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"225.71\" y1=\"278.0\" x2=\"225.71\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"264.86\" y1=\"278.0\" x2=\"264.86\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"304.0\" y1=\"278.0\" x2=\"304.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"278.0\" x2=\"304.0\" y2=\"278.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"248.67\" x2=\"304.0\" y2=\"248.67\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"219.33\" x2=\"304.0\" y2=\"219.33\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"190.0\" x2=\"304.0\" y2=\"190.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"160.67\" x2=\"304.0\" y2=\"160.67\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"131.33\" x2=\"304.0\" y2=\"131.33\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"102.0\" x2=\"304.0\" y2=\"102.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"72.67\" x2=\"304.0\" y2=\"72.67\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"43.33\" x2=\"304.0\" y2=\"43.33\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"14.0\" x2=\"304.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30.0\" y1=\"160.67\" x2=\"310.0\" y2=\"160.67\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"108.29\" y1=\"278.0\" x2=\"108.29\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 310.0 160.67 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 108.29 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"312.0\" y=\"164.67\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"114.29\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"30.0\" y1=\"157.67\" x2=\"30.0\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"30.0\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−2</text><line x1=\"69.14\" y1=\"157.67\" x2=\"69.14\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"69.14\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−1</text><line x1=\"147.43\" y1=\"157.67\" x2=\"147.43\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"147.43\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"186.57\" y1=\"157.67\" x2=\"186.57\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"186.57\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"225.71\" y1=\"157.67\" x2=\"225.71\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"225.71\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"264.86\" y1=\"157.67\" x2=\"264.86\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"264.86\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"304.0\" y1=\"157.67\" x2=\"304.0\" y2=\"163.67\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"304.0\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"105.29\" y1=\"278.0\" x2=\"111.29\" y2=\"278.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.29\" y=\"282.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−16</text><line x1=\"105.29\" y1=\"248.67\" x2=\"111.29\" y2=\"248.67\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"105.29\" y1=\"219.33\" x2=\"111.29\" y2=\"219.33\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.29\" y=\"223.83\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−8</text><line x1=\"105.29\" y1=\"190.0\" x2=\"111.29\" y2=\"190.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"105.29\" y1=\"131.33\" x2=\"111.29\" y2=\"131.33\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"105.29\" y1=\"102.0\" x2=\"111.29\" y2=\"102.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.29\" y=\"106.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">8</text><line x1=\"105.29\" y1=\"72.67\" x2=\"111.29\" y2=\"72.67\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"105.29\" y1=\"43.33\" x2=\"111.29\" y2=\"43.33\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.29\" y=\"47.83\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">16</text><line x1=\"105.29\" y1=\"14.0\" x2=\"111.29\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.29\" y=\"175.67\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M35.1 278.0L36.9 271.9L38.6 258.5L40.3 246.2L42.0 234.9L43.7 224.6L45.4 215.2L47.1 206.7L48.8 199.0L50.5 192.2L52.3 186.1L54.0 180.8L55.7 176.2L57.4 172.2L59.1 168.9L60.8 166.2L62.5 164.1L64.2 162.5L66.0 161.4L67.7 160.8L69.4 160.7L71.1 160.9L72.8 161.6L74.5 162.6L76.2 163.9L78.0 165.6L79.7 167.5L81.4 169.7L83.1 172.1L84.8 174.7L86.5 177.5L88.2 180.4L89.9 183.5L91.7 186.7L93.4 190.0L95.1 193.3L96.8 196.7L98.5 200.1L100.2 203.5L101.9 207.0L103.6 210.4L105.3 213.7L107.1 217.0L108.8 220.2L110.5 223.4L112.2 226.4L113.9 229.3L115.6 232.1L117.3 234.8L119.0 237.3L120.8 239.6L122.5 241.8L124.2 243.7L125.9 245.5L127.6 247.1L129.3 248.4L131.0 249.6L132.8 250.5L134.5 251.2L136.2 251.7L137.9 251.9L139.6 251.9L141.3 251.6L143.0 251.1L144.7 250.4L146.4 249.4L148.2 248.1L149.9 246.6L151.6 244.8L153.3 242.8L155.0 240.5L156.7 238.0L158.4 235.2L160.2 232.2L161.9 229.0L163.6 225.6L165.3 221.9L167.0 218.0L168.7 213.8L170.4 209.5L172.1 205.0L173.8 200.3L175.6 195.4L177.3 190.4L179.0 185.2L180.7 179.9L182.4 174.4L184.1 168.8L185.8 163.1L187.6 157.3L189.3 151.5L191.0 145.6L192.7 139.6L194.4 133.6L196.1 127.6L197.8 121.7L199.5 115.7L201.2 109.8L203.0 103.9L204.7 98.2L206.4 92.5L208.1 87.0L209.8 81.6L211.5 76.4L213.2 71.4L214.9 66.6L216.7 62.1L218.4 57.8L220.1 53.9L221.8 50.2L223.5 47.0L225.2 44.1L226.9 41.6L228.7 39.6L230.4 38.0L232.1 37.0L233.8 36.4L235.5 36.5L237.2 37.1L238.9 38.4L240.6 40.4L242.3 43.0L244.1 46.4L245.8 50.6L247.5 55.5L249.2 61.4L250.9 68.1L252.6 75.7L254.3 84.3L256.1 93.9L257.8 104.5L259.5 116.3L261.2 129.1L262.9 143.2L264.6 158.4L266.3 174.9L268.0 192.7L269.8 211.8L271.5 232.4L273.2 254.3L274.9 277.8L276.6 278.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\"/><circle cx=\"69.14\" cy=\"160.67\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"186.57\" cy=\"160.67\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"264.86\" cy=\"160.67\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"108.29\" cy=\"219.33\" r=\"2.8\" fill=\"currentColor\"/></svg>",
+  "hint": "Touching at $x = -1$ means a squared factor. Write $f(x) = a(x + 1)^2(x - 2)(x - 4)$ and use the $y$-intercept to find $a$. For (c), read off where the curve is above the $x$-axis.",
+  "answer": "(a) $f(x) = -(x + 1)^2(x - 2)(x - 4)$ (b) $y \\to -\\infty$ in both directions (c) $2 < x < 4$",
+  "solution": "**(a)** Touches at $x = -1$: factor $(x + 1)^2$. Crosses at 2 and 4: factors $(x - 2)$ and $(x - 4)$. That is degree 4, so\n$$f(x) = a(x + 1)^2(x - 2)(x - 4)$$\n\nAt $(0, -8)$:\n$$-8 = a(1)^2(-2)(-4) = 8a \\Rightarrow a = -1$$\n\n$$f(x) = -(x + 1)^2(x - 2)(x - 4)$$\n\n**(b)** The leading term is $-x^4$, so $y \\to -\\infty$ as $x \\to \\infty$ **and** as $x \\to -\\infty$ (both ends point down, as in the diagram).\n\n**(c)** $f(x) > 0$ where the curve is strictly above the $x$-axis. From the factorised form, $-(x + 1)^2 \\le 0$ always (and is 0 only at $x = -1$), so $f(x) > 0$ exactly when $(x - 2)(x - 4) < 0$:\n$$2 < x < 4$$\n\n($x = -1$ is not included: there $f(x) = 0$, the curve only touches the axis.)",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q17",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "(a) Show that $x(x - 3)^2 - 4 \\equiv (x - 1)^2(x - 4)$.\n\n(b) Sketch the curve $y = x(x - 3)^2$, showing where it meets the axes.\n\n(c) Use part (a) to explain why the line $y = 4$ touches the curve at $x = 1$ and meets it again at $x = 4$.\n\n(d) Hence find the set of values of $k$ for which the equation $x(x - 3)^2 = k$ has three distinct real roots.",
+  "hint": "(c) The intersections of $y = 4$ with the curve are the solutions of $x(x - 3)^2 - 4 = 0$. What does a squared factor mean for a meeting point? (d) On your sketch, move a horizontal line $y = k$ up and down. Between which heights does it cut the curve three times?",
+  "answer": "(a) Both sides expand to $x^3 - 6x^2 + 9x - 4$. (b) Positive cubic through $(0, 0)$, touching the $x$-axis at $(3, 0)$. (c) $x(x-3)^2 = 4 \\iff (x - 1)^2(x - 4) = 0$: double root at $x = 1$ (touch), single root at $x = 4$ (cross). (d) $0 < k < 4$",
+  "solution": "**(a)** LHS: $x(x^2 - 6x + 9) - 4 = x^3 - 6x^2 + 9x - 4$.\n\nRHS: $(x^2 - 2x + 1)(x - 4) = x^3 - 4x^2 - 2x^2 + 8x + x - 4 = x^3 - 6x^2 + 9x - 4$ ✓\n\n**(b)** Roots: $x = 0$ (single, crosses) and $x = 3$ (double, touches). Leading term $+x^3$. The curve rises from the bottom-left through $(0, 0)$ to a maximum, falls to touch the axis at $(3, 0)$ (a minimum), then rises to the top-right.\n\n**(c)** The line $y = 4$ meets the curve where $x(x - 3)^2 = 4$, i.e. where $(x - 1)^2(x - 4) = 0$. The **double** root $x = 1$ means the line touches the curve at $(1, 4)$; the single root $x = 4$ means it crosses at $(4, 4)$.\n\nMoreover, for $x < 4$ we have $x(x - 3)^2 - 4 = (x - 1)^2(x - 4) \\le 0$, so the curve never rises above $y = 4$ before $x = 4$. Hence $(1, 4)$ is the maximum point of the curve.\n\n**(d)** The curve has a maximum at $(1, 4)$ and a minimum at $(3, 0)$ (since $x(x - 3)^2 \\ge 0$ for $x \\ge 0$, with equality at $x = 3$).\n\nA horizontal line $y = k$ meets the curve three times exactly when it lies strictly between the minimum and maximum heights:\n* $k > 4$ or $k < 0$: one intersection;\n* $k = 4$ or $k = 0$: two (one is a touching point);\n* $0 < k < 4$: three distinct intersections.\n\nSo $0 < k < 4$.",
+  "linkedTopicIds": [
+   "alg-identities-equations",
+   "pure-polynomials-factor-theorem"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "pure-curve-sketching-q18",
+  "topicId": "pure-curve-sketching",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A quartic curve $y = f(x)$ has a positive coefficient of $x^4$. It meets the $x$-axis at exactly two points, $(a, 0)$ and $(b, 0)$ with $a < b$, and it touches (does not cross) the axis at both points.\n\n(a) Explain why $f(x) = k(x - a)^2(x - b)^2$ for some constant $k > 0$.\n\n(b) Sketch $y = (x^2 - 4)^2$, showing where it meets the axes.\n\n(c) Ravi claims: \"A quartic with a positive $x^4$ coefficient that touches the $x$-axis at $(1, 0)$ and crosses it at $(3, 0)$ must meet the axis somewhere else as well.\" Is Ravi correct? Explain your answer.",
+  "hint": "(a) Touching means an even power. Count the degrees. (c) Count the multiplicities: the total must be 4 if all roots are real. A crossing root has odd multiplicity. Think about what the curve must do far to the right and far to the left.",
+  "answer": "(a) Touching at $a$ and $b$ needs even multiplicity, so $(x - a)^2$ and $(x - b)^2$ are factors; together they have degree 4, so the remaining factor is a constant $k$, positive because the $x^4$ coefficient is positive. (b) W-shape touching the $x$-axis at $(-2, 0)$ and $(2, 0)$, meeting the $y$-axis at $(0, 16)$, never below the axis. (c) Yes: e.g. both ends go up; after crossing at $x = 3$ the curve changes sign, so to be positive at both ends it must cross again (a factor $(x - 1)^2(x - 3)$ uses degree 3, leaving one more linear factor $(x - c)$ with $c \\ne 1, 3$).",
+  "solution": "**(a)** At a point where the curve touches but does not cross the axis, $f$ does not change sign, so the root has **even** multiplicity (at least 2). Hence $(x - a)^2$ and $(x - b)^2$ are both factors of $f(x)$.\n\nTogether these have degree $2 + 2 = 4$, which is the degree of $f$. So the remaining factor is a constant:\n$$f(x) = k(x - a)^2(x - b)^2$$\nThe coefficient of $x^4$ is $k$, which is given to be positive. $\\blacksquare$\n\n**(b)** $(x^2 - 4)^2 = (x - 2)^2(x + 2)^2$: double roots at $x = \\pm 2$, so the curve touches the axis at $(-2, 0)$ and $(2, 0)$. $y$-intercept $(-4)^2 = 16$. Leading term $+x^4$: both ends up. The curve is never negative (it is a square): a W shape with minima on the axis at $x = \\pm 2$ and a maximum at $(0, 16)$.\n\n**(c)** Ravi **is** correct. The coefficient of $x^4$ is positive, so $f(x) \\to +\\infty$ as $x \\to \\pm\\infty$: the curve is above the axis at both ends.\n\nAt $x = 1$ it touches, so it does not change sign there; at $x = 3$ it crosses, so it does change sign. Going from far left (positive) to far right (positive), the curve must change sign an **even** number of times, but so far it has changed sign only once (at $x = 3$). So it must cross the axis at least once more.\n\nAlgebraically: $(x - 1)^2(x - 3)$ has degree 3, so $f(x) = k(x - 1)^2(x - 3)(x - c)$ with $c$ real; $c \\ne 3$ (otherwise $x = 3$ would be a touching point) and $c \\ne 1$ (otherwise $x = 1$ would be a triple root and the curve would cross there). So there is another root at $x = c$. For example, $f(x) = (x - 1)^2(x - 3)(x + 1)$ also meets the axis at $(-1, 0)$.",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
