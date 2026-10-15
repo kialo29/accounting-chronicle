@@ -1,0 +1,280 @@
+[
+ {
+  "id": "alg-simultaneous-linear-q01",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve the simultaneous equations\n$$5x + 3y = 26$$\n$$x + 3y = 10$$",
+  "hint": "Both equations contain $+3y$. Subtracting one equation from the other removes $y$.",
+  "answer": "$x = 4$, $y = 2$",
+  "solution": "The $y$ terms are both $+3y$: **same signs, subtract**.\n$$(5x + 3y) - (x + 3y) = 26 - 10$$\n$$4x = 16 \\;\\Rightarrow\\; x = 4$$\n\n(Adding would give $6x + 6y = 36$, which does not remove $y$.)\n\nSubstitute into $x + 3y = 10$: $4 + 3y = 10$, so $3y = 6$ and $y = 2$.\n\nCheck in the other equation: $5(4) + 3(2) = 20 + 6 = 26$ ✓\n\n$x = 4$, $y = 2$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-simultaneous-linear-q02",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Solve the simultaneous equations\n$$5x + 3y = 26$$\n$$x - 3y = -2$$",
+  "hint": "Compare the signs of the $y$ terms. Should you add or subtract?",
+  "answer": "$x = 4$, $y = 2$",
+  "solution": "**What changed:** the second equation now has $-3y$ instead of $+3y$. The signs are different, so we **add**.\n$$(5x + 3y) + (x - 3y) = 26 + (-2)$$\n$$6x = 24 \\;\\Rightarrow\\; x = 4$$\n\nSubstitute into $x - 3y = -2$: $4 - 3y = -2$, so $3y = 6$ and $y = 2$.\n\nCheck: $5(4) + 3(2) = 26$ ✓\n\n$x = 4$, $y = 2$ (the same solution as before: the second line still passes through $(4, 2)$, but now we add instead of subtract).",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-simultaneous-linear-q03",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve the simultaneous equations\n$$5x + 3y = 26$$\n$$x - y = 2$$",
+  "hint": "The $y$ coefficients are 3 and 1. Multiply the whole of the second equation by 3 first.",
+  "answer": "$x = 4$, $y = 2$",
+  "solution": "**What changed:** the second equation now has $-y$, so the $y$ coefficients no longer match. Multiply **every** term of $x - y = 2$ by 3:\n$$3x - 3y = 6$$\n\nNow the signs of the $y$ terms are different, so add:\n$$(5x + 3y) + (3x - 3y) = 26 + 6$$\n$$8x = 32 \\;\\Rightarrow\\; x = 4$$\n\nFrom $x - y = 2$: $y = 2$.\n\nCheck: $5(4) + 3(2) = 26$ ✓\n\n$x = 4$, $y = 2$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-simultaneous-linear-q04",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve the simultaneous equations\n$$5x + 3y = 26$$\n$$x + y = 6$$",
+  "hint": "Multiply the second equation by 3 so that both equations contain $3y$. Then decide: add or subtract?",
+  "answer": "$x = 4$, $y = 2$",
+  "solution": "**What changed:** the $y$ term in the second equation is now $+y$. Multiply every term by 3:\n$$3x + 3y = 18$$\n\nBoth equations now have $+3y$: same signs, so subtract:\n$$(5x + 3y) - (3x + 3y) = 26 - 18$$\n$$2x = 8 \\;\\Rightarrow\\; x = 4$$\n\nFrom $x + y = 6$: $y = 2$.\n\nCheck: $5(4) + 3(2) = 26$ ✓\n\n$x = 4$, $y = 2$. In all four questions the solution was the same point; what changed was whether to add or subtract, and whether you first had to scale an equation.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-simultaneous-linear-q05",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use substitution to solve the simultaneous equations\n$$y = 3x - 5$$\n$$2x + 3y = 29$$",
+  "hint": "Replace $y$ in the second equation with $(3x - 5)$, keeping the bracket.",
+  "answer": "$x = 4$, $y = 7$",
+  "solution": "The first equation already gives $y$ in terms of $x$. Substitute it into the second, using a bracket:\n$$2x + 3(3x - 5) = 29$$\n$$2x + 9x - 15 = 29$$\n$$11x = 44 \\;\\Rightarrow\\; x = 4$$\n\nSubstitute back into $y = 3x - 5$: $y = 12 - 5 = 7$.\n\nCheck in the other equation: $2(4) + 3(7) = 8 + 21 = 29$ ✓\n\n$x = 4$, $y = 7$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q06",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The graphs of $2x + y = 7$ and $y = x - 2$ are drawn on the grid.\n\n(a) Use the graph to solve the simultaneous equations\n$$2x + y = 7 \\qquad y = x - 2$$\n\n(b) Check your answer by substituting into both equations.",
+  "hint": "The solution is the point where the two lines cross. Read off both coordinates.",
+  "answer": "(a) $x = 3$, $y = 1$ (b) $2(3) + 1 = 7$ ✓ and $3 - 2 = 1$ ✓",
+  "solution": "(a) The solution of a pair of simultaneous equations is the point that lies on **both** lines: their intersection. The lines cross at $(3, 1)$, so $x = 3$, $y = 1$.\n\n(b) $2x + y = 2(3) + 1 = 7$ ✓\n\n$x - 2 = 3 - 2 = 1 = y$ ✓\n\nBoth equations are satisfied, so the reading is exact.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\"><line x1=\"46.43\" y1=\"14\" x2=\"46.43\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"83.29\" y1=\"14\" x2=\"83.29\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"120.14\" y1=\"14\" x2=\"120.14\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"157\" y1=\"14\" x2=\"157\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"193.86\" y1=\"14\" x2=\"193.86\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"230.71\" y1=\"14\" x2=\"230.71\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"267.57\" y1=\"14\" x2=\"267.57\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"262.18\" x2=\"286\" y2=\"262.18\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"238.55\" x2=\"286\" y2=\"238.55\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"214.91\" x2=\"286\" y2=\"214.91\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"191.27\" x2=\"286\" y2=\"191.27\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"167.64\" x2=\"286\" y2=\"167.64\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"144\" x2=\"286\" y2=\"144\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"120.36\" x2=\"286\" y2=\"120.36\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"96.73\" x2=\"286\" y2=\"96.73\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"73.09\" x2=\"286\" y2=\"73.09\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"49.45\" x2=\"286\" y2=\"49.45\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"25.82\" x2=\"286\" y2=\"25.82\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"191.27\" x2=\"286\" y2=\"191.27\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"83.29\" y1=\"274\" x2=\"83.29\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"288\" y=\"186.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"89.29\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"46.43\" y1=\"188.27\" x2=\"46.43\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"46.43\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"120.14\" y1=\"188.27\" x2=\"120.14\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"120.14\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"157\" y1=\"188.27\" x2=\"157\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"157\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"193.86\" y1=\"188.27\" x2=\"193.86\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"193.86\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"230.71\" y1=\"188.27\" x2=\"230.71\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"230.71\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"267.57\" y1=\"188.27\" x2=\"267.57\" y2=\"194.27\" stroke=\"currentColor\"/><text x=\"267.57\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"80.29\" y1=\"262.18\" x2=\"86.29\" y2=\"262.18\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"266.18\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"80.29\" y1=\"238.55\" x2=\"86.29\" y2=\"238.55\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"242.55\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"80.29\" y1=\"214.91\" x2=\"86.29\" y2=\"214.91\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"218.91\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"80.29\" y1=\"167.64\" x2=\"86.29\" y2=\"167.64\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"171.64\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"80.29\" y1=\"144\" x2=\"86.29\" y2=\"144\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"148\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"80.29\" y1=\"120.36\" x2=\"86.29\" y2=\"120.36\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"124.36\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"80.29\" y1=\"96.73\" x2=\"86.29\" y2=\"96.73\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"100.73\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"80.29\" y1=\"73.09\" x2=\"86.29\" y2=\"73.09\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"77.09\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"80.29\" y1=\"49.45\" x2=\"86.29\" y2=\"49.45\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"53.45\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"80.29\" y1=\"25.82\" x2=\"86.29\" y2=\"25.82\" stroke=\"currentColor\"/><text x=\"77.29\" y=\"29.82\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><text x=\"77.29\" y=\"206.27\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"276.79\" y1=\"274\" x2=\"74.07\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"28\" y1=\"274\" x2=\"286\" y2=\"108.55\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"88.81\" y=\"44.73\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2x + y = 7</text><text x=\"278.63\" y=\"144\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x − 2</text></svg>"
+ },
+ {
+  "id": "alg-simultaneous-linear-q07",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Olivia is solving\n$$2x + 3y = 13 \\quad (1)$$\n$$5x - y = 7 \\quad (2)$$\n\nHer working is shown.\n\n> $(2) \\times 3$: $15x - 3y = 7$\n> $(1) + (2)$: $17x = 20$\n> $x = \\dfrac{20}{17}$\n\nFind Olivia's mistake, explain it and solve the equations correctly.",
+  "hint": "Check her first line: has everything in equation (2) been multiplied by 3?",
+  "answer": "She did not multiply the right-hand side by 3: it should be $15x - 3y = 21$. Correct solution: $x = 2$, $y = 3$.",
+  "solution": "**The mistake** is in the first line. When an equation is multiplied by 3, **every** term on **both** sides must be multiplied. Olivia multiplied $5x$ and $-y$ but left the 7 unchanged. The new equation $15x - 3y = 7$ is not equivalent to (2).\n\n**Correct working:**\n\n$(2) \\times 3$: $15x - 3y = 21$\n\nSigns of $3y$ are different, so add to (1):\n$$17x = 34 \\;\\Rightarrow\\; x = 2$$\n\nSubstitute into (2): $10 - y = 7$, so $y = 3$.\n\nCheck in (1): $2(2) + 3(3) = 4 + 9 = 13$ ✓\n\n$x = 2$, $y = 3$",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q08",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Ben solves\n$$2x + 5y = 16$$\n$$3x - 5y = -1$$\nHe adds the equations to get $5x = 15$ and writes: \"The solution is 3.\"\n\n(a) Explain why Ben's answer is incomplete, and complete the solution.\n\n(b) What does the solution represent on a graph of the two equations?",
+  "hint": "How many unknowns are there? A solution must make **both** equations true.",
+  "answer": "(a) A solution must give values of both $x$ and $y$; $x = 3$ alone does not. $x = 3$, $y = 2$. (b) The point $(3, 2)$ where the two straight lines intersect.",
+  "solution": "(a) There are two unknowns, so a solution is a **pair** of values that makes both equations true at the same time. \"3\" is only the value of $x$; it is not even clear which variable it refers to.\n\nSubstitute $x = 3$ into $2x + 5y = 16$:\n$$6 + 5y = 16 \\;\\Rightarrow\\; y = 2$$\n\nCheck in the other equation: $3(3) - 5(2) = 9 - 10 = -1$ ✓\n\nThe solution is $x = 3$, $y = 2$.\n\n(b) Each equation is a straight line. The solution is the one point that lies on both lines: the **intersection point** $(3, 2)$. A single number cannot describe a point, which is another way to see that Ben's answer is incomplete.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q09",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Dan is solving\n$$5x + 4y = 22 \\quad (1)$$\n$$5x - 3y = 1 \\quad (2)$$\n\n> $(1) - (2)$: $y = 21$\n> Substitute into (1): $5x + 84 = 22$, so $5x = -62$ and $x = -12.4$\n\nFind Dan's mistake, explain it and solve the equations correctly.",
+  "hint": "Work out $4y - (-3y)$ carefully.",
+  "answer": "$4y - (-3y) = 7y$, not $y$. Correct solution: $x = 2$, $y = 3$.",
+  "solution": "**The mistake** is in the first line. Subtracting equation (2) means subtracting **every** term, including $-3y$:\n$$4y - (-3y) = 4y + 3y = 7y$$\nDan treated it as $4y - 3y = y$. Subtracting a negative is the same as adding.\n\n**Correct working:**\n\n$(1) - (2)$:\n$$7y = 22 - 1 = 21 \\;\\Rightarrow\\; y = 3$$\n\nSubstitute into (1): $5x + 12 = 22$, so $5x = 10$ and $x = 2$.\n\nCheck in (2): $5(2) - 3(3) = 10 - 9 = 1$ ✓\n\n$x = 2$, $y = 3$\n\n(A check of Dan's answer in (2) would have shown it was wrong: $5(-12.4) - 3(21) = -125 \\ne 1$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q10",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Show that the simultaneous equations\n$$2x + 3y = 7$$\n$$4x + 6y = 10$$\nhave no solution. Explain what this means for the graphs of the two equations.\n\n(b) The second equation is changed to $4x + 6y = c$. For what value of $c$ do the equations have infinitely many solutions? Explain why.",
+  "hint": "Try to eliminate $x$ by doubling the first equation. What happens? Then compare the gradients of the two lines.",
+  "answer": "(a) Doubling the first gives $4x + 6y = 14$; subtracting gives $0 = 4$, which is impossible. The lines are parallel (both gradient $-\\frac{2}{3}$) with different $y$-intercepts, so they never meet. (b) $c = 14$: the second equation is then exactly double the first, so both describe the same line.",
+  "solution": "(a) Multiply the first equation by 2:\n$$4x + 6y = 14$$\n\nSubtract the second equation:\n$$(4x + 6y) - (4x + 6y) = 14 - 10 \\;\\Rightarrow\\; 0 = 4$$\n\nBoth variables disappear and we are left with a false statement, so no pair $(x, y)$ satisfies both equations: there is **no solution**.\n\nGraphically, rearrange each to $y = mx + c$ form:\n$$y = -\\tfrac{2}{3}x + \\tfrac{7}{3} \\qquad y = -\\tfrac{2}{3}x + \\tfrac{5}{3}$$\n\nSame gradient, different $y$-intercepts: the lines are **parallel** and never intersect.\n\n(b) If $c = 14$, then $4x + 6y = 14$ is exactly $2 \\times (2x + 3y = 7)$. Elimination gives $0 = 0$, which is always true. The two equations describe the **same line**, so every point on it is a solution: infinitely many solutions.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-simultaneous-linear-q11",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve the simultaneous equations\n$$5x + 2y = 11$$\n$$3x - 4y = 17$$",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Hence write down the coordinates of the point where the lines $5x + 2y = 11$ and $3x - 4y = 17$ intersect.",
+    "marks": 1
+   }
+  ],
+  "marks": 5,
+  "calculator": false,
+  "hint": "Make the $y$ coefficients equal by multiplying the first equation by 2. Then decide whether to add or subtract.",
+  "answer": "(a) $x = 3$, $y = -2$ (b) $(3, -2)$",
+  "solution": "(a) Multiply the first equation by 2:\n$$10x + 4y = 22$$ **M1** (multiplying to make one pair of coefficients equal, all terms correct)\n\nThe signs of $4y$ are different, so add:\n$$13x = 39$$ **M1** (correct operation to eliminate a variable)\n$$x = 3$$ **A1**\n\nSubstitute into $5x + 2y = 11$: $15 + 2y = 11$, so $2y = -4$, $y = -2$ **A1**\n\nCheck: $3(3) - 4(-2) = 9 + 8 = 17$ ✓\n\n(b) $(3, -2)$ **B1** ft their (a)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q12",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "In a café, 4 coffees and 3 muffins cost £17.50. 2 coffees and 5 muffins cost £16.10.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the cost of one coffee and the cost of one muffin. You must show your working.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Amir has £20. He buys 2 coffees. Work out the greatest number of muffins he can also buy.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "calculator": false,
+  "hint": "Let a coffee cost £$c$ and a muffin £$m$. Form two equations, then make the $c$ coefficients equal.",
+  "answer": "(a) Coffee £2.80, muffin £2.10 (b) 6 muffins",
+  "solution": "(a) Let a coffee cost £$c$ and a muffin cost £$m$.\n$$4c + 3m = 17.50 \\quad (1)$$\n$$2c + 5m = 16.10 \\quad (2)$$ **B1** (both equations)\n\n$(2) \\times 2$: $4c + 10m = 32.20$\n\nSubtract (1): $7m = 14.70$ **M1**\n$$m = 2.10$$ **A1**\n\nSubstitute into (2): $2c + 10.50 = 16.10$, so $2c = 5.60$ and $c = 2.80$ **A1**\n\nCheck in (1): $4(2.80) + 3(2.10) = 11.20 + 6.30 = 17.50$ ✓\n\nA coffee costs £2.80 and a muffin costs £2.10.\n\n(b) Money left: $20 - 2 \\times 2.80 = 14.40$ **M1**\n\n$14.40 \\div 2.10 = 6.857\\ldots$, so he can buy **6** muffins. **A1** ft",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-simultaneous-linear-q13",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A taxi company charges a fixed amount plus a cost for each kilometre travelled. A 5 km journey costs £11.50 and a 12 km journey costs £22.00.\n\n(a) Work out the fixed charge and the cost per kilometre.\n\n(b) Work out the cost of a 20 km journey.",
+  "hint": "Let the fixed charge be £$f$ and the cost per km be £$r$. Write an equation for each journey.",
+  "answer": "(a) Fixed charge £4.00, £1.50 per km (b) £34.00",
+  "solution": "(a) Let the fixed charge be £$f$ and the cost per km be £$r$.\n$$f + 5r = 11.50 \\quad (1)$$\n$$f + 12r = 22.00 \\quad (2)$$\n\nBoth have $+f$, so subtract: $(2) - (1)$\n$$7r = 10.50 \\;\\Rightarrow\\; r = 1.50$$\n\nSubstitute into (1): $f + 7.50 = 11.50$, so $f = 4.00$.\n\nCheck in (2): $4 + 12(1.50) = 4 + 18 = 22$ ✓\n\nThe fixed charge is £4.00 and the cost is £1.50 per kilometre.\n\n(b) $4.00 + 20 \\times 1.50 = 4.00 + 30.00 = 34.00$, so the journey costs £34.00.\n\n(On a graph of cost against distance, £4 is the $y$-intercept and £1.50 the gradient.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q14",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The $n$th term of an arithmetic sequence is $an + b$.\n\nThe 4th term is 11. The sum of the 2nd term and the 10th term is 34.\n\n(a) Find the values of $a$ and $b$.\n\n(b) Is 100 a term of the sequence? Explain your answer.",
+  "hint": "Write the 4th, 2nd and 10th terms in terms of $a$ and $b$, e.g. the 4th term is $4a + b$.",
+  "answer": "(a) $a = 3$, $b = -1$ (b) No: $3n - 1 = 100$ gives $n = 33\\frac{2}{3}$, which is not a whole number.",
+  "solution": "(a) 4th term: $4a + b = 11 \\quad (1)$\n\n2nd term $+$ 10th term: $(2a + b) + (10a + b) = 34$, so $12a + 2b = 34$, i.e.\n$$6a + b = 17 \\quad (2)$$\n\nBoth have $+b$: subtract, $(2) - (1)$:\n$$2a = 6 \\;\\Rightarrow\\; a = 3$$\n\nFrom (1): $12 + b = 11$, so $b = -1$.\n\nCheck in (2): $18 - 1 = 17$ ✓. The sequence is $2, 5, 8, 11, \\ldots$ with $n$th term $3n - 1$.\n\n(b) Solve $3n - 1 = 100$: $3n = 101$, $n = 33\\frac{2}{3}$.\n\n$n$ must be a positive whole number, so 100 is **not** a term. (The terms either side are $3(33) - 1 = 98$ and $3(34) - 1 = 101$.)",
+  "linkedTopicIds": [
+   "alg-sequences-linear"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q15",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "In 5 years' time, Asha will be twice as old as her brother. Three years ago, she was three times as old as he was.\n\nHow old are Asha and her brother now?",
+  "hint": "Let Asha be $a$ years old and her brother $b$ years old now. Write expressions for their ages in 5 years and 3 years ago.",
+  "answer": "Asha is 27 and her brother is 11.",
+  "solution": "Let Asha be $a$ and her brother $b$ years old now.\n\nIn 5 years: $a + 5 = 2(b + 5)$, so $a = 2b + 5 \\quad (1)$\n\nThree years ago: $a - 3 = 3(b - 3)$, so $a = 3b - 6 \\quad (2)$\n\nBoth equations give $a$, so set them equal (substitution):\n$$2b + 5 = 3b - 6 \\;\\Rightarrow\\; b = 11$$\n\nFrom (1): $a = 22 + 5 = 27$.\n\nCheck: in 5 years, $32 = 2 \\times 16$ ✓. Three years ago, $24 = 3 \\times 8$ ✓.\n\nAsha is 27 and her brother is 11.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q16",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The diagram shows the lines $L_1$: $y = 2x + 1$ and $L_2$: $3x + 2y = 16$. They meet at the point $P$.\n\n(a) Find the coordinates of $P$.\n\n(b) Find the exact area of the shaded triangle, which is enclosed by $L_1$, $L_2$ and the $x$-axis.",
+  "hint": "Substitute $y = 2x + 1$ into $3x + 2y = 16$. For the area, the base lies on the $x$-axis between the two $x$-intercepts and the height is the $y$-coordinate of $P$.",
+  "answer": "(a) $P(2, 5)$ (b) $\\frac{175}{12}$ square units",
+  "solution": "(a) Substitute $y = 2x + 1$ into $L_2$:\n$$3x + 2(2x + 1) = 16 \\;\\Rightarrow\\; 7x + 2 = 16 \\;\\Rightarrow\\; x = 2$$\n$y = 2(2) + 1 = 5$. Check in $L_2$: $6 + 10 = 16$ ✓. So $P = (2, 5)$.\n\n(b) $x$-intercepts (put $y = 0$):\n\n$L_1$: $0 = 2x + 1 \\Rightarrow x = -\\frac{1}{2}$\n\n$L_2$: $3x = 16 \\Rightarrow x = \\frac{16}{3}$\n\nBase $= \\frac{16}{3} - \\left(-\\frac{1}{2}\\right) = \\frac{32}{6} + \\frac{3}{6} = \\frac{35}{6}$\n\nHeight = $y$-coordinate of $P$ = 5.\n$$\\text{Area} = \\frac{1}{2} \\times \\frac{35}{6} \\times 5 = \\frac{175}{12} \\approx 14.6 \\text{ square units}$$",
+  "linkedTopicIds": [
+   "alg-equation-of-a-line",
+   "geo-perimeter-area"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 290\" width=\"330\" height=\"290\"><line x1=\"42.4\" y1=\"14\" x2=\"42.4\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"71.2\" y1=\"14\" x2=\"71.2\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"100\" y1=\"14\" x2=\"100\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"128.8\" y1=\"14\" x2=\"128.8\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"157.6\" y1=\"14\" x2=\"157.6\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"186.4\" y1=\"14\" x2=\"186.4\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"215.2\" y1=\"14\" x2=\"215.2\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"244\" y1=\"14\" x2=\"244\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"272.8\" y1=\"14\" x2=\"272.8\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"301.6\" y1=\"14\" x2=\"301.6\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"250.11\" x2=\"316\" y2=\"250.11\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"222.33\" x2=\"316\" y2=\"222.33\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"194.56\" x2=\"316\" y2=\"194.56\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"166.78\" x2=\"316\" y2=\"166.78\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"139\" x2=\"316\" y2=\"139\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"111.22\" x2=\"316\" y2=\"111.22\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"83.44\" x2=\"316\" y2=\"83.44\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"55.67\" x2=\"316\" y2=\"55.67\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"27.89\" x2=\"316\" y2=\"27.89\" stroke=\"currentColor\" stroke-opacity=\"0.15\"/><line x1=\"28\" y1=\"222.33\" x2=\"316\" y2=\"222.33\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"264\" x2=\"100\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"318\" y=\"217.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"106\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"42.4\" y1=\"219.33\" x2=\"42.4\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"42.4\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"71.2\" y1=\"219.33\" x2=\"71.2\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"71.2\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"128.8\" y1=\"219.33\" x2=\"128.8\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"128.8\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"157.6\" y1=\"219.33\" x2=\"157.6\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"157.6\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"186.4\" y1=\"219.33\" x2=\"186.4\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"186.4\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"215.2\" y1=\"219.33\" x2=\"215.2\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"215.2\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"244\" y1=\"219.33\" x2=\"244\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"244\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"272.8\" y1=\"219.33\" x2=\"272.8\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"272.8\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"301.6\" y1=\"219.33\" x2=\"301.6\" y2=\"225.33\" stroke=\"currentColor\"/><text x=\"301.6\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"97\" y1=\"250.11\" x2=\"103\" y2=\"250.11\" stroke=\"currentColor\"/><text x=\"94\" y=\"254.11\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"97\" y1=\"194.56\" x2=\"103\" y2=\"194.56\" stroke=\"currentColor\"/><text x=\"94\" y=\"198.56\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"97\" y1=\"166.78\" x2=\"103\" y2=\"166.78\" stroke=\"currentColor\"/><text x=\"94\" y=\"170.78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"97\" y1=\"139\" x2=\"103\" y2=\"139\" stroke=\"currentColor\"/><text x=\"94\" y=\"143\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"97\" y1=\"111.22\" x2=\"103\" y2=\"111.22\" stroke=\"currentColor\"/><text x=\"94\" y=\"115.22\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"97\" y1=\"83.44\" x2=\"103\" y2=\"83.44\" stroke=\"currentColor\"/><text x=\"94\" y=\"87.44\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"97\" y1=\"55.67\" x2=\"103\" y2=\"55.67\" stroke=\"currentColor\"/><text x=\"94\" y=\"59.67\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"97\" y1=\"27.89\" x2=\"103\" y2=\"27.89\" stroke=\"currentColor\"/><text x=\"94\" y=\"31.89\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><text x=\"94\" y=\"237.33\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><polygon points=\"85.6,222.33 253.6,222.33 157.6,83.44\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"64\" y1=\"264\" x2=\"193.6\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"282.4\" y1=\"264\" x2=\"109.6\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"157.6\" cy=\"83.44\" r=\"3\" fill=\"currentColor\"/><text x=\"157.6\" y=\"70.94\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text><text x=\"74.08\" y=\"94.56\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">L₁</text><text x=\"292.96\" y=\"244.56\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">L₂</text></svg>"
+ },
+ {
+  "id": "alg-simultaneous-linear-q17",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Consider the simultaneous equations\n$$kx + 2y = 4$$\n$$8x + ky = 8$$\nwhere $k$ is a constant.\n\n(a) Show that when $k = 4$ there are infinitely many solutions, and when $k = -4$ there are no solutions.\n\n(b) For all other values of $k$, show that $x = \\dfrac{4}{k + 4}$ and find a similar expression for $y$.\n\n(c) Find the value of $k$ for which the solution has $x = 2$, and the corresponding value of $y$.",
+  "hint": "For (a), substitute each value of $k$ and compare the two equations. For (b), eliminate $y$: multiply the first equation by $k$ and the second by 2. You will need the difference of two squares.",
+  "answer": "(a) $k = 4$: second equation is twice the first (same line). $k = -4$: elimination gives $0 = 16$ (parallel lines). (b) $y = \\dfrac{8}{k + 4}$ (c) $k = -2$, $y = 4$",
+  "solution": "(a) $k = 4$: the equations are $4x + 2y = 4$ and $8x + 4y = 8$. The second is exactly $2 \\times$ the first, so they describe the same line: infinitely many solutions.\n\n$k = -4$: the equations are $-4x + 2y = 4$ and $8x - 4y = 8$. Multiply the first by 2: $-8x + 4y = 8$. Add to the second: $0 = 16$, which is impossible. The lines are parallel (both gradient 2) and distinct: no solutions.\n\n(b) Multiply the first equation by $k$ and the second by 2:\n$$k^2x + 2ky = 4k$$\n$$16x + 2ky = 16$$\n\nSubtract:\n$$(k^2 - 16)x = 4k - 16$$\n$$(k - 4)(k + 4)x = 4(k - 4)$$\n\nFor $k \\ne \\pm 4$ we can divide by $(k - 4)(k + 4)$:\n$$x = \\frac{4}{k + 4}$$\n\nThen from $kx + 2y = 4$:\n$$2y = 4 - \\frac{4k}{k + 4} = \\frac{4(k + 4) - 4k}{k + 4} = \\frac{16}{k + 4} \\;\\Rightarrow\\; y = \\frac{8}{k + 4}$$\n\n(c) $\\frac{4}{k + 4} = 2 \\Rightarrow k + 4 = 2 \\Rightarrow k = -2$, and then $y = \\frac{8}{2} = 4$.\n\nCheck: $-2(2) + 2(4) = 4$ ✓ and $8(2) + (-2)(4) = 8$ ✓",
+  "linkedTopicIds": [
+   "alg-factorising-quadratics",
+   "alg-algebraic-fractions"
+  ]
+ },
+ {
+  "id": "alg-simultaneous-linear-q18",
+  "topicId": "alg-simultaneous-linear",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A café sells tea, coffee and cake. Three orders are shown.\n\n| Order | Teas | Coffees | Cakes | Total |\n|---|---|---|---|---|\n| A | 2 | 1 | 1 | £9.20 |\n| B | 1 | 2 | 2 | £12.70 |\n| C | 3 | 2 | 1 | £13.70 |\n\n(a) Without finding the individual prices, work out the cost of one tea, one coffee and one cake together.\n\n(b) Find the price of each item.",
+  "hint": "(a) Look at orders A and B together. (b) Let the prices be £$t$, £$c$ and £$k$. Eliminate the same variable from two different pairs of equations to get two equations in two unknowns.",
+  "answer": "(a) £7.30 (b) Tea £1.90, coffee £2.60, cake £2.80",
+  "solution": "Let a tea cost £$t$, a coffee £$c$ and a cake £$k$.\n$$2t + c + k = 9.20 \\quad (A)$$\n$$t + 2c + 2k = 12.70 \\quad (B)$$\n$$3t + 2c + k = 13.70 \\quad (C)$$\n\n(a) Orders A and B together contain 3 of each item:\n$$(A) + (B): \\quad 3t + 3c + 3k = 21.90 \\;\\Rightarrow\\; t + c + k = 7.30$$\nOne of each costs £7.30.\n\n(b) Use $t + c + k = 7.30 \\quad (D)$.\n\n$(A) - (D)$: $t = 9.20 - 7.30 = 1.90$\n\nNow eliminate $t$ from the other equations. $(C) - 3(D)$:\n$$(3t + 2c + k) - (3t + 3c + 3k) = 13.70 - 21.90 \\;\\Rightarrow\\; -c - 2k = -8.20 \\;\\Rightarrow\\; c + 2k = 8.20$$\n\nFrom (D): $c + k = 7.30 - 1.90 = 5.40$.\n\nSubtract: $k = 8.20 - 5.40 = 2.80$, so $c = 5.40 - 2.80 = 2.60$.\n\nCheck in (B): $1.90 + 2(2.60) + 2(2.80) = 1.90 + 5.20 + 5.60 = 12.70$ ✓\n\nTea £1.90, coffee £2.60, cake £2.80.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ }
+]
