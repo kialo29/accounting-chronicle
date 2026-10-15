@@ -1,0 +1,246 @@
+[
+ {
+  "id": "calc-power-series-q01",
+  "topicId": "calc-power-series",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Use the geometric series $\\dfrac{1}{1 - u} = \\displaystyle\\sum_{n=0}^{\\infty} u^n$, $|u| < 1$, to write a power series for $\\dfrac{1}{1 + 3x}$. State its interval of convergence.",
+  "hint": "Write $\\frac{1}{1 + 3x}$ as $\\frac{1}{1 - (-3x)}$ and replace $u$ by $-3x$.",
+  "answer": "$\\displaystyle\\sum_{n=0}^{\\infty}(-3x)^n = 1 - 3x + 9x^2 - 27x^3 + \\dots$, for $-\\frac{1}{3} < x < \\frac{1}{3}$",
+  "solution": "$$\\frac{1}{1 + 3x} = \\frac{1}{1 - (-3x)} = \\sum_{n=0}^{\\infty}(-3x)^n = \\sum_{n=0}^{\\infty}(-1)^n 3^n x^n = 1 - 3x + 9x^2 - 27x^3 + \\dots$$\n\nThis is valid when $|u| < 1$, i.e. $|-3x| < 1$, so $|x| < \\frac{1}{3}$.\n\nAt the endpoints $x = \\pm\\frac{1}{3}$ the terms are $(\\mp 1)^n$, which do not tend to $0$, so the series diverges there. Interval of convergence: $-\\frac{1}{3} < x < \\frac{1}{3}$ (radius $R = \\frac{1}{3}$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q02",
+  "topicId": "calc-power-series",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the interval of convergence of $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^n}{3^n}$.",
+  "hint": "This is a geometric series with ratio $\\frac{x}{3}$.",
+  "answer": "$-3 < x < 3$",
+  "solution": "$\\sum \\left(\\frac{x}{3}\\right)^n$ is geometric with ratio $r = \\frac{x}{3}$. It converges when $\\left|\\frac{x}{3}\\right| < 1$, i.e. $|x| < 3$, so $R = 3$.\n\nEndpoints:\n* $x = 3$: $\\sum 1^n = 1 + 1 + 1 + \\dots$ diverges (terms do not tend to $0$).\n* $x = -3$: $\\sum (-1)^n$ diverges (terms do not tend to $0$).\n\nInterval of convergence: $-3 < x < 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q03",
+  "topicId": "calc-power-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Find the interval of convergence of $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{x^n}{n\\cdot 3^n}$.",
+  "hint": "Use the ratio test to find the radius. Then substitute each endpoint and test the resulting series separately.",
+  "answer": "$-3 \\le x < 3$",
+  "solution": "**What changed:** each term is divided by $n$.\n\nRatio test:\n$$\\left|\\frac{x^{n+1}}{(n + 1)3^{n+1}}\\cdot\\frac{n\\cdot 3^n}{x^n}\\right| = \\frac{|x|}{3}\\cdot\\frac{n}{n + 1} \\to \\frac{|x|}{3}$$\nConverges when $\\frac{|x|}{3} < 1$: $|x| < 3$, so $R = 3$ (unchanged).\n\nEndpoints (the ratio test gives $1$ here, so it cannot decide):\n* $x = 3$: $\\sum \\frac{3^n}{n\\cdot 3^n} = \\sum \\frac{1}{n}$, the harmonic series: **diverges**.\n* $x = -3$: $\\sum \\frac{(-1)^n}{n}$: converges by the alternating series test ($\\frac{1}{n}$ decreases to $0$).\n\nInterval of convergence: $-3 \\le x < 3$. Dividing by $n$ did not change the radius, but it made the series converge at one endpoint.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q04",
+  "topicId": "calc-power-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the interval of convergence of $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{x^n}{n^2\\cdot 3^n}$.",
+  "hint": "The radius will not change. Test both endpoints again: what kind of series do you get at $x = 3$?",
+  "answer": "$-3 \\le x \\le 3$",
+  "solution": "**What changed:** $n$ became $n^2$ in the denominator.\n\nRatio test: $\\frac{|x|}{3}\\cdot\\left(\\frac{n}{n + 1}\\right)^2 \\to \\frac{|x|}{3}$, so again $R = 3$.\n\nEndpoints:\n* $x = 3$: $\\sum \\frac{1}{n^2}$, a $p$-series with $p = 2 > 1$: **converges**.\n* $x = -3$: $\\sum \\frac{(-1)^n}{n^2}$: $\\sum \\left|\\frac{(-1)^n}{n^2}\\right| = \\sum \\frac{1}{n^2}$ converges, so it converges absolutely.\n\nInterval of convergence: $-3 \\le x \\le 3$. The extra power of $n$ makes the series converge at both endpoints.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q05",
+  "topicId": "calc-power-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Find the interval of convergence of $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(x - 1)^n}{n^2\\cdot 3^n}$.",
+  "hint": "Only the center has changed. Where is the series centered, and how far either side can $x$ go?",
+  "answer": "$-2 \\le x \\le 4$",
+  "solution": "**What changed:** $x$ became $x - 1$, so the series is now centered at $1$ instead of $0$.\n\nRatio test: $\\frac{|x - 1|}{3}\\cdot\\left(\\frac{n}{n + 1}\\right)^2 \\to \\frac{|x - 1|}{3} < 1$, so $|x - 1| < 3$:\n$$-3 < x - 1 < 3 \\implies -2 < x < 4$$\n\nEndpoints:\n* $x = 4$: $x - 1 = 3$, giving $\\sum \\frac{1}{n^2}$: converges.\n* $x = -2$: $x - 1 = -3$, giving $\\sum \\frac{(-1)^n}{n^2}$: converges (absolutely).\n\nInterval of convergence: $-2 \\le x \\le 4$. The radius is still $3$; the whole interval has just shifted $1$ to the right.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q06",
+  "topicId": "calc-power-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the radius of convergence of each power series.\n\n(a) $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^n}{n!}$\n\n(b) $\\displaystyle\\sum_{n=0}^{\\infty} n!\\,x^n$\n\n(c) $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{n\\,x^n}{2^n}$\n\n(d) $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^{2n}}{4^n}$",
+  "hint": "Apply the ratio test to the whole term, including the power of $x$. In (d), the power of $x$ goes up by $2$ each time.",
+  "answer": "(a) $R = \\infty$ (b) $R = 0$ (c) $R = 2$ (d) $R = 2$",
+  "solution": "**(a)** $\\left|\\frac{x^{n+1}}{(n + 1)!}\\cdot\\frac{n!}{x^n}\\right| = \\frac{|x|}{n + 1} \\to 0 < 1$ for **every** $x$. So $R = \\infty$: the series converges for all real $x$ (it is the series for $e^x$).\n\n**(b)** $\\left|\\frac{(n + 1)!\\,x^{n+1}}{n!\\,x^n}\\right| = (n + 1)|x| \\to \\infty$ for every $x \\ne 0$. The series converges only at $x = 0$: $R = 0$.\n\n**(c)** $\\left|\\frac{(n + 1)x^{n+1}}{2^{n+1}}\\cdot\\frac{2^n}{n\\,x^n}\\right| = \\frac{|x|}{2}\\cdot\\frac{n + 1}{n} \\to \\frac{|x|}{2}$. Need $\\frac{|x|}{2} < 1$: $R = 2$.\n\n**(d)** $\\left|\\frac{x^{2n+2}}{4^{n+1}}\\cdot\\frac{4^n}{x^{2n}}\\right| = \\frac{x^2}{4}$. Need $\\frac{x^2}{4} < 1$, i.e. $x^2 < 4$, i.e. $|x| < 2$: $R = 2$ (not $4$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q07",
+  "topicId": "calc-power-series",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Jordan is finding the interval of convergence of $\\displaystyle\\sum_{n=1}^{\\infty}\\frac{(x + 2)^n}{n\\cdot 5^n}$. His working is shown below.\n\nLine 1: $\\displaystyle\\lim_{n\\to\\infty}\\left|\\frac{(x + 2)^{n+1}}{(n + 1)5^{n+1}}\\cdot\\frac{n\\cdot 5^n}{(x + 2)^n}\\right| = \\frac{|x + 2|}{5}$\n\nLine 2: Converges when $|x + 2| < 5$, so the radius of convergence is $5$.\n\nLine 3: So the series converges for $-5 < x < 5$.\n\n(a) Identify Jordan's error and explain it.\n\n(b) Find the correct interval of convergence, including a check of the endpoints.",
+  "hint": "$|x + 2| < 5$ says that $x$ is within $5$ of which number?",
+  "answer": "(a) Line 3: he ignored the center; $|x + 2| < 5$ means $-5 < x + 2 < 5$, i.e. $-7 < x < 3$. (He also did not test the endpoints.) (b) $-7 \\le x < 3$",
+  "solution": "**(a)** Lines 1 and 2 are correct. The error is in **Line 3**. $|x + 2| = |x - (-2)|$ is the distance from $x$ to $-2$, so the series is centered at $x = -2$, not $0$. Jordan wrote the interval as if the center were $0$. Correctly:\n$$|x + 2| < 5 \\iff -5 < x + 2 < 5 \\iff -7 < x < 3$$\n\n**(b)** Endpoints:\n* $x = 3$: $x + 2 = 5$, so the series is $\\sum \\frac{5^n}{n\\cdot 5^n} = \\sum \\frac{1}{n}$, the harmonic series: **diverges**.\n* $x = -7$: $x + 2 = -5$, so the series is $\\sum \\frac{(-5)^n}{n\\cdot 5^n} = \\sum \\frac{(-1)^n}{n}$: converges by the alternating series test ($\\frac{1}{n} > 0$, decreasing, limit $0$).\n\nInterval of convergence: $-7 \\le x < 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q08",
+  "topicId": "calc-power-series",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The function $f$ is defined by $f(x) = \\displaystyle\\sum_{n=1}^{\\infty}\\frac{x^n}{n\\cdot 2^n}$, whose interval of convergence is $-2 \\le x < 2$.\n\nElena writes:\n\nLine 1: $f'(x) = \\displaystyle\\sum_{n=1}^{\\infty}\\frac{n\\,x^{n-1}}{n\\cdot 2^n} = \\sum_{n=1}^{\\infty}\\frac{x^{n-1}}{2^n}$\n\nLine 2: Differentiating a power series does not change its interval of convergence.\n\nLine 3: So the series for $f'(x)$ converges for $-2 \\le x < 2$.\n\n(a) Which line contains an error? Explain what is wrong with it.\n\n(b) Find the interval of convergence of the series for $f'(x)$.\n\n(c) Find a closed-form expression for $f'(x)$ on that interval.",
+  "hint": "Term-by-term differentiation keeps the radius, but what about the endpoints? Substitute $x = -2$ into the series for $f'(x)$.",
+  "answer": "(a) Line 2: only the radius is guaranteed to stay the same; endpoint behaviour can change. (b) $-2 < x < 2$ (c) $f'(x) = \\frac{1}{2 - x}$",
+  "solution": "**(a)** Line 1 is correct. **Line 2** is false as stated: differentiating (or integrating) term by term keeps the **radius** of convergence, but convergence at the endpoints can be lost or gained, so each endpoint must be retested.\n\n**(b)** Radius: still $R = 2$ (ratio $\\frac{|x|}{2}$), so it converges for $-2 < x < 2$.\n\n* $x = 2$: $\\sum \\frac{2^{n-1}}{2^n} = \\sum \\frac{1}{2}$: terms do not tend to $0$, **diverges**.\n* $x = -2$: $\\sum \\frac{(-2)^{n-1}}{2^n} = \\sum \\frac{(-1)^{n-1}}{2}$: terms alternate $\\frac{1}{2}, -\\frac{1}{2}, \\dots$ and do not tend to $0$, **diverges**.\n\nInterval of convergence for $f'$: $-2 < x < 2$. The endpoint $x = -2$ has been lost.\n\n**(c)** $\\sum_{n=1}^{\\infty}\\frac{x^{n-1}}{2^n}$ is geometric with first term $\\frac{1}{2}$ and ratio $\\frac{x}{2}$:\n$$f'(x) = \\frac{\\frac{1}{2}}{1 - \\frac{x}{2}} = \\frac{1}{2 - x}, \\quad -2 < x < 2$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q09",
+  "topicId": "calc-power-series",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Let $f(x) = \\displaystyle\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}x^n}{n^2}$. Noah estimates $f(0.5)$ using the first three terms and then bounds the error:\n\nLine 1: $f(0.5) \\approx 0.5 - \\dfrac{0.25}{4} + \\dfrac{0.125}{9} = 0.451\\,39$\n\nLine 2: The series is alternating with terms decreasing to $0$.\n\nLine 3: So $|\\text{error}| \\le \\dfrac{0.125}{9} \\approx 0.0139$, the last term used.\n\n(a) Explain what is wrong with Line 3.\n\n(b) Give the correct alternating series error bound, and state whether $0.451\\,39$ is an overestimate or an underestimate of $f(0.5)$. Justify your answer.",
+  "hint": "The alternating series error bound uses the first term you did **not** use.",
+  "answer": "(a) The bound should be the size of the first omitted term, not the last term used. (b) $|\\text{error}| \\le \\frac{(0.5)^4}{16} = 0.003\\,906\\,25$; the first omitted term is negative, so $0.451\\,39$ is an overestimate.",
+  "solution": "**(a)** Lines 1 and 2 are correct. The alternating series error bound says the error after stopping is at most the size of the **first omitted term**. Noah used the last term he included, $\\frac{(0.5)^3}{9}$. That gives a true but much weaker bound, and is not what the theorem states.\n\n**(b)** The first omitted term is the $n = 4$ term:\n$$\\frac{(-1)^5(0.5)^4}{16} = -\\frac{0.0625}{16} = -0.003\\,906\\,25$$\nSo $|\\text{error}| \\le 0.003\\,906\\,25$ (about $0.0039$, less than a third of Noah's bound).\n\nFor an alternating series with decreasing terms, the error has the same sign as the first omitted term. That term is negative, so the true value is **below** the partial sum: $0.451\\,39$ is an **overestimate**.\n\n(Check: $f(0.5) \\approx 0.448\\,41$, so the actual error is about $0.0030$, within the bound.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q10",
+  "topicId": "calc-power-series",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 250\" width=\"320\" height=\"250\"><line x1=\"24.8\" y1=\"236\" x2=\"24.8\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"68.9\" y1=\"236\" x2=\"68.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"112.9\" y1=\"236\" x2=\"112.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"157\" y1=\"236\" x2=\"157\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"201.1\" y1=\"236\" x2=\"201.1\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"245.1\" y1=\"236\" x2=\"245.1\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"289.2\" y1=\"236\" x2=\"289.2\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"236\" x2=\"298\" y2=\"236\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"208.2\" x2=\"298\" y2=\"208.2\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"180.5\" x2=\"298\" y2=\"180.5\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"152.8\" x2=\"298\" y2=\"152.8\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"125\" x2=\"298\" y2=\"125\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"97.2\" x2=\"298\" y2=\"97.2\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"69.5\" x2=\"298\" y2=\"69.5\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"41.8\" x2=\"298\" y2=\"41.8\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"14\" x2=\"298\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"125\" x2=\"304\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"157\" y1=\"236\" x2=\"157\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,125 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M157,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"304\" y=\"118\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"164\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"68.9\" y1=\"122\" x2=\"68.9\" y2=\"128\" stroke=\"currentColor\"/><text x=\"68.9\" y=\"140\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"245.1\" y1=\"122\" x2=\"245.1\" y2=\"128\" stroke=\"currentColor\"/><text x=\"245.1\" y=\"140\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"154\" y1=\"180.5\" x2=\"160\" y2=\"180.5\" stroke=\"currentColor\"/><text x=\"151\" y=\"184.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"154\" y1=\"69.5\" x2=\"160\" y2=\"69.5\" stroke=\"currentColor\"/><text x=\"151\" y=\"73.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"151\" y=\"139\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M68.9,236 L68.9,14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M245.1,236 L245.1,14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M16,181.2 L17.4,180.9 L18.8,180.7 L20.2,180.4 L21.6,180.1 L23.1,179.9 L24.5,179.6 L25.9,179.3 L27.3,179.1 L28.7,178.8 L30.1,178.5 L31.5,178.2 L32.9,177.9 L34.3,177.6 L35.7,177.3 L37.1,177 L38.6,176.7 L40,176.4 L41.4,176 L42.8,175.7 L44.2,175.4 L45.6,175 L47,174.7 L48.4,174.3 L49.8,174 L51.2,173.6 L52.7,173.3 L54.1,172.9 L55.5,172.5 L56.9,172.1 L58.3,171.7 L59.7,171.3 L61.1,170.9 L62.5,170.5 L63.9,170.1 L65.3,169.7 L66.8,169.2 L68.2,168.8 L69.6,168.4 L71,167.9 L72.4,167.5 L73.8,167 L75.2,166.5 L76.6,166 L78,165.5 L79.4,165.1 L80.9,164.5 L82.3,164 L83.7,163.5 L85.1,163 L86.5,162.4 L87.9,161.9 L89.3,161.3 L90.7,160.8 L92.1,160.2 L93.5,159.6 L95,159 L96.4,158.4 L97.8,157.8 L99.2,157.2 L100.6,156.6 L102,156 L103.4,155.3 L104.8,154.7 L106.2,154 L107.7,153.3 L109.1,152.7 L110.5,152 L111.9,151.3 L113.3,150.6 L114.7,149.8 L116.1,149.1 L117.5,148.4 L118.9,147.6 L120.3,146.9 L121.7,146.1 L123.2,145.3 L124.6,144.6 L126,143.8 L127.4,143 L128.8,142.2 L130.2,141.4 L131.6,140.6 L133,139.7 L134.4,138.9 L135.8,138.1 L137.3,137.2 L138.7,136.4 L140.1,135.5 L141.5,134.7 L142.9,133.8 L144.3,132.9 L145.7,132.1 L147.1,131.2 L148.5,130.3 L149.9,129.4 L151.4,128.5 L152.8,127.7 L154.2,126.8 L155.6,125.9 L157,125 L158.4,124.1 L159.8,123.2 L161.2,122.3 L162.6,121.5 L164,120.6 L165.5,119.7 L166.9,118.8 L168.3,117.9 L169.7,117.1 L171.1,116.2 L172.5,115.3 L173.9,114.5 L175.3,113.6 L176.7,112.8 L178.1,111.9 L179.6,111.1 L181,110.3 L182.4,109.4 L183.8,108.6 L185.2,107.8 L186.6,107 L188,106.2 L189.4,105.4 L190.8,104.7 L192.2,103.9 L193.7,103.1 L195.1,102.4 L196.5,101.6 L197.9,100.9 L199.3,100.2 L200.7,99.4 L202.1,98.7 L203.5,98 L204.9,97.3 L206.4,96.7 L207.8,96 L209.2,95.3 L210.6,94.7 L212,94 L213.4,93.4 L214.8,92.8 L216.2,92.2 L217.6,91.6 L219,91 L220.4,90.4 L221.9,89.8 L223.3,89.2 L224.7,88.7 L226.1,88.1 L227.5,87.6 L228.9,87 L230.3,86.5 L231.7,86 L233.1,85.5 L234.5,84.9 L236,84.5 L237.4,84 L238.8,83.5 L240.2,83 L241.6,82.5 L243,82.1 L244.4,81.6 L245.8,81.2 L247.2,80.8 L248.6,80.3 L250.1,79.9 L251.5,79.5 L252.9,79.1 L254.3,78.7 L255.7,78.3 L257.1,77.9 L258.5,77.5 L259.9,77.1 L261.3,76.7 L262.8,76.4 L264.2,76 L265.6,75.7 L267,75.3 L268.4,75 L269.8,74.6 L271.2,74.3 L272.6,74 L274,73.6 L275.4,73.3 L276.8,73 L278.3,72.7 L279.7,72.4 L281.1,72.1 L282.5,71.8 L283.9,71.5 L285.3,71.2 L286.7,70.9 L288.1,70.7 L289.5,70.4 L290.9,70.1 L292.4,69.9 L293.8,69.6 L295.2,69.3 L296.6,69.1 L298,68.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/><path d=\"M37.1,235.5 L37.9,232.1 L38.6,228.8 L39.3,225.7 L40,222.7 L40.7,219.9 L41.4,217.2 L42.1,214.6 L42.8,212.2 L43.5,209.8 L44.2,207.6 L44.9,205.5 L45.6,203.5 L46.3,201.6 L47,199.8 L47.7,198.1 L48.4,196.5 L49.1,194.9 L49.8,193.4 L50.5,192 L51.2,190.7 L52,189.4 L52.7,188.2 L53.4,187 L54.1,185.9 L54.8,184.9 L55.5,183.9 L56.2,182.9 L56.9,182 L57.6,181.1 L58.3,180.3 L59,179.5 L59.7,178.8 L60.4,178 L61.1,177.3 L61.8,176.7 L62.5,176 L63.2,175.4 L63.9,174.9 L64.6,174.3 L65.3,173.8 L66.1,173.2 L66.8,172.7 L67.5,172.3 L68.2,171.8 L68.9,171.3 L69.6,170.9 L70.3,170.5 L71,170.1 L71.7,169.7 L72.4,169.3 L73.1,168.9 L73.8,168.5 L74.5,168.2 L75.2,167.8 L75.9,167.5 L76.6,167.1 L77.3,166.8 L78,166.5 L78.7,166.1 L79.4,165.8 L80.2,165.5 L80.9,165.2 L81.6,164.9 L82.3,164.5 L83,164.2 L83.7,163.9 L84.4,163.6 L85.1,163.3 L85.8,163 L86.5,162.7 L87.2,162.4 L87.9,162.1 L88.6,161.8 L89.3,161.5 L90,161.2 L90.7,160.9 L91.4,160.6 L92.1,160.3 L92.8,160 L93.5,159.7 L94.3,159.4 L95,159.1 L95.7,158.8 L96.4,158.5 L97.1,158.2 L97.8,157.9 L98.5,157.6 L99.2,157.3 L99.9,156.9 L100.6,156.6 L101.3,156.3 L102,156 L102.7,155.7 L103.4,155.3 L104.1,155 L104.8,154.7 L105.5,154.3 L106.2,154 L106.9,153.7 L107.7,153.3 L108.4,153 L109.1,152.7 L109.8,152.3 L110.5,152 L111.2,151.6 L111.9,151.3 L112.6,150.9 L113.3,150.6 L114,150.2 L114.7,149.8 L115.4,149.5 L116.1,149.1 L116.8,148.7 L117.5,148.4 L118.2,148 L118.9,147.6 L119.6,147.3 L120.3,146.9 L121,146.5 L121.7,146.1 L122.5,145.7 L123.2,145.3 L123.9,145 L124.6,144.6 L125.3,144.2 L126,143.8 L126.7,143.4 L127.4,143 L128.1,142.6 L128.8,142.2 L129.5,141.8 L130.2,141.4 L130.9,141 L131.6,140.6 L132.3,140.2 L133,139.7 L133.7,139.3 L134.4,138.9 L135.1,138.5 L135.8,138.1 L136.6,137.7 L137.3,137.2 L138,136.8 L138.7,136.4 L139.4,136 L140.1,135.5 L140.8,135.1 L141.5,134.7 L142.2,134.2 L142.9,133.8 L143.6,133.4 L144.3,132.9 L145,132.5 L145.7,132.1 L146.4,131.6 L147.1,131.2 L147.8,130.8 L148.5,130.3 L149.2,129.9 L149.9,129.4 L150.7,129 L151.4,128.5 L152.1,128.1 L152.8,127.7 L153.5,127.2 L154.2,126.8 L154.9,126.3 L155.6,125.9 L156.3,125.4 L157,125 L157.7,124.6 L158.4,124.1 L159.1,123.7 L159.8,123.2 L160.5,122.8 L161.2,122.3 L161.9,121.9 L162.6,121.5 L163.3,121 L164,120.6 L164.8,120.1 L165.5,119.7 L166.2,119.2 L166.9,118.8 L167.6,118.4 L168.3,117.9 L169,117.5 L169.7,117.1 L170.4,116.6 L171.1,116.2 L171.8,115.8 L172.5,115.3 L173.2,114.9 L173.9,114.5 L174.6,114 L175.3,113.6 L176,113.2 L176.7,112.8 L177.4,112.3 L178.1,111.9 L178.9,111.5 L179.6,111.1 L180.3,110.7 L181,110.3 L181.7,109.8 L182.4,109.4 L183.1,109 L183.8,108.6 L184.5,108.2 L185.2,107.8 L185.9,107.4 L186.6,107 L187.3,106.6 L188,106.2 L188.7,105.8 L189.4,105.4 L190.1,105 L190.8,104.7 L191.5,104.3 L192.2,103.9 L193,103.5 L193.7,103.1 L194.4,102.7 L195.1,102.4 L195.8,102 L196.5,101.6 L197.2,101.3 L197.9,100.9 L198.6,100.5 L199.3,100.2 L200,99.8 L200.7,99.4 L201.4,99.1 L202.1,98.7 L202.8,98.4 L203.5,98 L204.2,97.7 L204.9,97.3 L205.6,97 L206.4,96.7 L207.1,96.3 L207.8,96 L208.5,95.7 L209.2,95.3 L209.9,95 L210.6,94.7 L211.3,94.3 L212,94 L212.7,93.7 L213.4,93.4 L214.1,93.1 L214.8,92.7 L215.5,92.4 L216.2,92.1 L216.9,91.8 L217.6,91.5 L218.3,91.2 L219,90.9 L219.7,90.6 L220.4,90.3 L221.2,90 L221.9,89.7 L222.6,89.4 L223.3,89.1 L224,88.8 L224.7,88.5 L225.4,88.2 L226.1,87.9 L226.8,87.6 L227.5,87.3 L228.2,87 L228.9,86.7 L229.6,86.4 L230.3,86.1 L231,85.8 L231.7,85.5 L232.4,85.1 L233.1,84.8 L233.8,84.5 L234.5,84.2 L235.3,83.9 L236,83.5 L236.7,83.2 L237.4,82.9 L238.1,82.5 L238.8,82.2 L239.5,81.8 L240.2,81.5 L240.9,81.1 L241.6,80.7 L242.3,80.3 L243,79.9 L243.7,79.5 L244.4,79.1 L245.1,78.7 L245.8,78.2 L246.5,77.7 L247.2,77.3 L247.9,76.8 L248.6,76.2 L249.4,75.7 L250.1,75.1 L250.8,74.6 L251.5,74 L252.2,73.3 L252.9,72.7 L253.6,72 L254.3,71.2 L255,70.5 L255.7,69.7 L256.4,68.9 L257.1,68 L257.8,67.1 L258.5,66.1 L259.2,65.1 L259.9,64.1 L260.6,63 L261.3,61.8 L262,60.6 L262.8,59.3 L263.5,58 L264.2,56.6 L264.9,55.1 L265.6,53.5 L266.3,51.9 L267,50.2 L267.7,48.4 L268.4,46.5 L269.1,44.5 L269.8,42.4 L270.5,40.2 L271.2,37.8 L271.9,35.4 L272.6,32.8 L273.3,30.1 L274,27.3 L274.7,24.3 L275.4,21.2 L276.1,17.9 L276.8,14.5\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"278.6\" y=\"22.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">P₉</text><text x=\"293.6\" y=\"90.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">arctan x</text></svg>",
+  "question": "(a) Write the power series for $\\dfrac{1}{1 + x^2}$ and show that it diverges at $x = 1$ and at $x = -1$.\n\n(b) By integrating term by term from $0$ to $x$, find the power series for $\\arctan x$.\n\n(c) Kai says: \"The series for $\\frac{1}{1 + x^2}$ diverges at $x = \\pm 1$, so the series for $\\arctan x$ must diverge there too.\" Is Kai correct? Justify your answer and state the interval of convergence of the series for $\\arctan x$.\n\nThe diagram shows $y = \\arctan x$ and the partial sum $P_9(x) = x - \\frac{x^3}{3} + \\frac{x^5}{5} - \\frac{x^7}{7} + \\frac{x^9}{9}$.\n\n(d) Explain what the diagram suggests about the series for $\\arctan x$ when $|x| > 1$.",
+  "hint": "Replace $u$ by $-x^2$ in $\\frac{1}{1 - u} = \\sum u^n$. For (c), substitute $x = 1$ and $x = -1$ into the arctan series and apply the alternating series test.",
+  "answer": "(a) $\\sum_{n=0}^{\\infty}(-1)^n x^{2n}$; at $x = \\pm 1$ the terms are $(-1)^n \\not\\to 0$. (b) $\\arctan x = \\sum_{n=0}^{\\infty}\\frac{(-1)^n x^{2n+1}}{2n + 1}$ (c) No: at $x = \\pm 1$ the series is $\\pm\\sum \\frac{(-1)^n}{2n + 1}$, which converges by the AST. Interval: $-1 \\le x \\le 1$. (d) Outside $[-1, 1]$ the partial sums move away from $\\arctan x$ (the series diverges), while inside they stay close to it.",
+  "solution": "**(a)** With $u = -x^2$:\n$$\\frac{1}{1 + x^2} = \\sum_{n=0}^{\\infty}(-x^2)^n = \\sum_{n=0}^{\\infty}(-1)^n x^{2n} = 1 - x^2 + x^4 - \\dots, \\quad |x| < 1$$\nAt $x = \\pm 1$: $x^{2n} = 1$, so the series is $1 - 1 + 1 - 1 + \\dots$, whose terms do not tend to $0$: it diverges.\n\n**(b)** $\\arctan x = \\int_0^x \\frac{dt}{1 + t^2}$, so integrating term by term (same radius, $R = 1$):\n$$\\arctan x = \\sum_{n=0}^{\\infty}\\frac{(-1)^n x^{2n+1}}{2n + 1} = x - \\frac{x^3}{3} + \\frac{x^5}{5} - \\dots$$\n(The constant is $0$ since $\\arctan 0 = 0$.)\n\n**(c)** Kai is **not** correct. Integrating keeps the radius but can change what happens at the endpoints, so they must be retested.\n* $x = 1$: $\\sum \\frac{(-1)^n}{2n + 1} = 1 - \\frac{1}{3} + \\frac{1}{5} - \\dots$. The terms $\\frac{1}{2n + 1}$ are positive, decreasing and tend to $0$, so it converges by the alternating series test.\n* $x = -1$: each term is multiplied by $(-1)^{2n+1} = -1$, giving $-\\left(1 - \\frac{1}{3} + \\frac{1}{5} - \\dots\\right)$, which also converges.\n\nInterval of convergence: $-1 \\le x \\le 1$. Integration has *gained* both endpoints.\n\n**(d)** For $-1 \\le x \\le 1$ the partial sum $P_9$ (blue) lies almost on top of $y = \\arctan x$. Just beyond $|x| = 1$ it peels away sharply. For $|x| > 1$ the terms $\\frac{|x|^{2n+1}}{2n + 1}$ grow without bound, so the partial sums oscillate ever more wildly: the series diverges, consistent with $R = 1$, even though $\\arctan x$ itself is defined for all $x$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q11",
+  "topicId": "calc-power-series",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "When highway engineers design the transition between a straight road and a curve, they use the Fresnel integral\n$$S(x) = \\int_0^x \\sin\\left(t^2\\right)dt$$\n\n(a) Use the Maclaurin series for $\\sin u$ to find the first three nonzero terms of the power series for $S(x)$.\n\n(b) Use the first two nonzero terms to approximate $S(0.8)$.\n\n(c) Use the alternating series error bound to show that your approximation is within $0.0001$ of $S(0.8)$, and state whether it is an overestimate or an underestimate.",
+  "hint": "Substitute $u = t^2$ into $\\sin u = u - \\frac{u^3}{3!} + \\frac{u^5}{5!} - \\dots$, then integrate term by term from $0$ to $x$.",
+  "answer": "(a) $\\frac{x^3}{3} - \\frac{x^7}{42} + \\frac{x^{11}}{1320}$ (b) $S(0.8) \\approx 0.16567$ (c) $|\\text{error}| \\le \\frac{(0.8)^{11}}{1320} \\approx 0.000\\,065 < 0.0001$; the first omitted term is positive, so the approximation is an underestimate.",
+  "solution": "**(a)**\n$$\\sin(t^2) = t^2 - \\frac{t^6}{3!} + \\frac{t^{10}}{5!} - \\dots = t^2 - \\frac{t^6}{6} + \\frac{t^{10}}{120} - \\dots$$\n$$S(x) = \\int_0^x\\left(t^2 - \\frac{t^6}{6} + \\frac{t^{10}}{120} - \\dots\\right)dt = \\frac{x^3}{3} - \\frac{x^7}{42} + \\frac{x^{11}}{1320} - \\dots$$\n(valid for all $x$).\n\n**(b)**\n$$S(0.8) \\approx \\frac{(0.8)^3}{3} - \\frac{(0.8)^7}{42} = \\frac{0.512}{3} - \\frac{0.209\\,715}{42} = 0.170\\,667 - 0.004\\,993 = 0.165\\,67$$\n\n**(c)** At $x = 0.8$ the series alternates and its terms decrease in size towards $0$ (each term has a higher power of $0.8$ and a larger denominator). The error is at most the first omitted term:\n$$|\\text{error}| \\le \\frac{(0.8)^{11}}{1320} = \\frac{0.085\\,899}{1320} \\approx 0.000\\,065 < 0.0001$$\nThe first omitted term is positive, so the true value is larger: the approximation is an **underestimate**. (Numerically $S(0.8) \\approx 0.165\\,74$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q12",
+  "topicId": "calc-power-series",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "**No calculator is allowed for this question.**\n\nThe function $f$ is defined by the power series\n$$f(x) = \\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}(x - 2)^n}{n\\cdot 4^n} = \\frac{x - 2}{4} - \\frac{(x - 2)^2}{2\\cdot 16} + \\frac{(x - 2)^3}{3\\cdot 64} - \\dots$$\nfor all $x$ in the interval of convergence.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the interval of convergence of the power series for $f$. Justify your answer.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the first three nonzero terms and the general term of the power series for $f'(x)$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Use the first two nonzero terms of the series for $f$ to approximate $f(3)$. Show that this approximation differs from $f(3)$ by less than $\\frac{1}{150}$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Let $g(x) = \\displaystyle\\int_2^x f(t)\\,dt$. Find the first two nonzero terms and the general term of the power series for $g(x)$.",
+    "marks": 2
+   }
+  ],
+  "marks": 9,
+  "hint": "(a) Ratio test for the radius, then test $x = 6$ and $x = -2$ separately. (c) The series at $x = 3$ alternates with decreasing terms.",
+  "answer": "(a) $-2 < x \\le 6$ (b) $\\frac{1}{4} - \\frac{x - 2}{16} + \\frac{(x - 2)^2}{64} - \\dots + \\frac{(-1)^{n+1}(x - 2)^{n-1}}{4^n} + \\dots$ (c) $\\frac{7}{32}$; error $\\le \\frac{1}{192} < \\frac{1}{150}$ (d) $\\frac{(x - 2)^2}{8} - \\frac{(x - 2)^3}{96} + \\dots + \\frac{(-1)^{n+1}(x - 2)^{n+1}}{n(n + 1)4^n} + \\dots$",
+  "solution": "**(a)**\n$$\\left|\\frac{(x - 2)^{n+1}}{(n + 1)4^{n+1}}\\cdot\\frac{n\\cdot 4^n}{(x - 2)^n}\\right| = \\frac{|x - 2|}{4}\\cdot\\frac{n}{n + 1} \\to \\frac{|x - 2|}{4}$$\n$\\frac{|x - 2|}{4} < 1 \\iff -2 < x < 6$.\n1 pt: radius / open interval from the ratio test.\n\n$x = 6$: $\\sum \\frac{(-1)^{n+1}4^n}{n\\cdot 4^n} = \\sum \\frac{(-1)^{n+1}}{n}$ converges by the alternating series test ($\\frac{1}{n}$ decreases to $0$).\n\n$x = -2$: $\\sum \\frac{(-1)^{n+1}(-4)^n}{n\\cdot 4^n} = \\sum \\frac{(-1)^{2n+1}}{n} = -\\sum\\frac{1}{n}$, which diverges (harmonic series).\n1 pt: analysis at both endpoints.\n\nInterval of convergence: $-2 < x \\le 6$.\n1 pt: answer.\n\n**(b)** Differentiate term by term:\n$$f'(x) = \\frac{1}{4} - \\frac{x - 2}{16} + \\frac{(x - 2)^2}{64} - \\dots + \\frac{(-1)^{n+1}(x - 2)^{n-1}}{4^n} + \\dots$$\n1 pt: first three terms. 1 pt: general term.\n\n**(c)** $x - 2 = 1$:\n$$f(3) \\approx \\frac{1}{4} - \\frac{1}{32} = \\frac{7}{32}$$\n1 pt: approximation.\n\n$f(3) = \\frac{1}{4} - \\frac{1}{32} + \\frac{1}{192} - \\dots$ alternates, with terms $\\frac{1}{n\\cdot 4^n}$ decreasing to $0$. So\n$$\\left|f(3) - \\frac{7}{32}\\right| \\le \\frac{1}{3\\cdot 4^3} = \\frac{1}{192} < \\frac{1}{150}$$\n1 pt: error bound using the first omitted term, with conclusion.\n\n**(d)** Integrate term by term from $2$ to $x$:\n$$g(x) = \\frac{(x - 2)^2}{2\\cdot 4} - \\frac{(x - 2)^3}{3\\cdot 2\\cdot 16} + \\dots = \\frac{(x - 2)^2}{8} - \\frac{(x - 2)^3}{96} + \\dots + \\frac{(-1)^{n+1}(x - 2)^{n+1}}{n(n + 1)4^n} + \\dots$$\n1 pt: first two terms. 1 pt: general term.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q13",
+  "topicId": "calc-power-series",
+  "difficulty": 3,
+  "type": "synoptic",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-absolute-value"
+  ],
+  "question": "Find the radius and the interval of convergence of\n$$\\sum_{n=1}^{\\infty}\\frac{(2x - 3)^n}{n\\cdot 5^n}$$",
+  "hint": "The ratio test gives $|2x - 3| < 5$. Solve this absolute value inequality, and notice that the radius is not $5$: write $|2x - 3| = 2\\left|x - \\frac{3}{2}\\right|$.",
+  "answer": "$R = \\frac{5}{2}$; interval $-1 \\le x < 4$",
+  "solution": "Ratio test:\n$$\\left|\\frac{(2x - 3)^{n+1}}{(n + 1)5^{n+1}}\\cdot\\frac{n\\cdot 5^n}{(2x - 3)^n}\\right| = \\frac{|2x - 3|}{5}\\cdot\\frac{n}{n + 1} \\to \\frac{|2x - 3|}{5}$$\n\nConverges when $|2x - 3| < 5$:\n$$-5 < 2x - 3 < 5 \\implies -2 < 2x < 8 \\implies -1 < x < 4$$\n\nSince $|2x - 3| = 2\\left|x - \\frac{3}{2}\\right|$, the condition is $\\left|x - \\frac{3}{2}\\right| < \\frac{5}{2}$: the center is $\\frac{3}{2}$ and the radius is $R = \\frac{5}{2}$ (half the length of the interval $(-1, 4)$).\n\nEndpoints:\n* $x = 4$: $2x - 3 = 5$, giving $\\sum \\frac{1}{n}$: diverges.\n* $x = -1$: $2x - 3 = -5$, giving $\\sum \\frac{(-1)^n}{n}$: converges by the alternating series test.\n\nInterval of convergence: $-1 \\le x < 4$."
+ },
+ {
+  "id": "calc-power-series-q14",
+  "topicId": "calc-power-series",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "calc-differential-equations"
+  ],
+  "question": "Let $y = \\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^{2n}}{2^n\\,n!} = 1 + \\frac{x^2}{2} + \\frac{x^4}{8} + \\frac{x^6}{48} + \\dots$\n\n(a) Show that this power series converges for all real $x$.\n\n(b) By differentiating term by term, show that $y$ satisfies the differential equation $\\dfrac{dy}{dx} = xy$ with $y(0) = 1$.\n\n(c) Solve this differential equation by separating variables, and hence identify the function $y$ in closed form.",
+  "hint": "(a) Use the ratio test; the power of $x$ rises by $2$. (b) After differentiating, re-index the sum ($m = n - 1$) and compare with $x$ times the original series.",
+  "answer": "(a) Ratio $\\frac{x^2}{2(n + 1)} \\to 0$, so $R = \\infty$ (b) $y' = \\sum_{n\\ge 1}\\frac{2n\\,x^{2n-1}}{2^n n!} = x\\sum_{m\\ge 0}\\frac{x^{2m}}{2^m m!} = xy$ (c) $y = e^{x^2/2}$",
+  "solution": "**(a)**\n$$\\left|\\frac{x^{2n+2}}{2^{n+1}(n + 1)!}\\cdot\\frac{2^n\\,n!}{x^{2n}}\\right| = \\frac{x^2}{2(n + 1)} \\to 0 < 1$$\nfor every $x$, so the series converges for all real $x$ ($R = \\infty$).\n\n**(b)** Differentiate term by term (allowed inside the radius of convergence); the $n = 0$ term is constant:\n$$\\frac{dy}{dx} = \\sum_{n=1}^{\\infty}\\frac{2n\\,x^{2n-1}}{2^n\\,n!} = \\sum_{n=1}^{\\infty}\\frac{x^{2n-1}}{2^{n-1}(n - 1)!}$$\nLet $m = n - 1$:\n$$\\frac{dy}{dx} = \\sum_{m=0}^{\\infty}\\frac{x^{2m+1}}{2^m\\,m!} = x\\sum_{m=0}^{\\infty}\\frac{x^{2m}}{2^m\\,m!} = xy$$\nAnd $y(0) = 1$ (only the $n = 0$ term survives).\n\n**(c)** Since $y(0) = 1 > 0$, separate variables:\n$$\\int\\frac{dy}{y} = \\int x\\,dx \\implies \\ln|y| = \\frac{x^2}{2} + C$$\n$y(0) = 1$ gives $C = 0$, so $y = e^{x^2/2}$.\n\nCheck: substituting $u = \\frac{x^2}{2}$ into $e^u = \\sum\\frac{u^n}{n!}$ gives $\\sum\\frac{x^{2n}}{2^n n!}$ ✓."
+ },
+ {
+  "id": "calc-power-series-q15",
+  "topicId": "calc-power-series",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "An investment pays \\$100 at the end of year 1, \\$200 at the end of year 2, \\$300 at the end of year 3, and so on forever, increasing by \\$100 each year. With an interest rate of 5% per year, the present value of a payment of \\$$P$ made at the end of year $n$ is $\\frac{P}{1.05^n}$, so the present value of the whole investment is\n$$V = \\sum_{n=1}^{\\infty}\\frac{100n}{1.05^n}$$\n\n(a) Starting from $\\displaystyle\\frac{1}{1 - x} = \\sum_{n=0}^{\\infty}x^n$ for $|x| < 1$, show that $\\displaystyle\\sum_{n=1}^{\\infty}n\\,x^n = \\frac{x}{(1 - x)^2}$ for $|x| < 1$.\n\n(b) Hence find the exact present value $V$.\n\n(c) Explain why the payments, which grow without bound, still have a finite total present value.",
+  "hint": "Differentiate both sides of the geometric series, then multiply by $x$. In (b), use $x = \\frac{1}{1.05}$.",
+  "answer": "(a) $\\frac{1}{(1 - x)^2} = \\sum_{n\\ge 1} n x^{n-1}$, then multiply by $x$ (b) \\$42,000 (c) The discount factor shrinks geometrically, which beats the linear growth of the payments; the series converges since $|x| = \\frac{1}{1.05} < 1$.",
+  "solution": "**(a)** Differentiate term by term (valid for $|x| < 1$, radius unchanged):\n$$\\frac{d}{dx}\\left(\\frac{1}{1 - x}\\right) = \\frac{1}{(1 - x)^2} = \\sum_{n=1}^{\\infty}n\\,x^{n-1}$$\nMultiply by $x$:\n$$\\sum_{n=1}^{\\infty}n\\,x^n = \\frac{x}{(1 - x)^2}, \\quad |x| < 1$$\n\n**(b)** $V = 100\\displaystyle\\sum_{n=1}^{\\infty}n\\left(\\frac{1}{1.05}\\right)^n$, with $x = \\frac{1}{1.05}$, which satisfies $|x| < 1$.\n\n$1 - x = 1 - \\frac{1}{1.05} = \\frac{0.05}{1.05}$, so\n$$\\frac{x}{(1 - x)^2} = \\frac{\\frac{1}{1.05}}{\\frac{0.0025}{1.05^2}} = \\frac{1.05}{0.0025} = 420$$\n$$V = 100 \\times 420 = \\$42{,}000$$\n\n**(c)** The $n$th payment grows only linearly ($100n$), while its discount factor $\\left(\\frac{1}{1.05}\\right)^n$ shrinks exponentially. By the ratio test, $\\frac{(n + 1)/1.05^{n+1}}{n/1.05^n} \\to \\frac{1}{1.05} < 1$, so the terms eventually shrink fast enough for the series to converge. (In practice, payments more than about 150 years away contribute almost nothing.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q16",
+  "topicId": "calc-power-series",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find the interval of convergence of\n$$\\sum_{n=0}^{\\infty}\\frac{(n!)^2}{(2n)!}x^n$$\nJustify your conclusions at the endpoints carefully.",
+  "hint": "For the radius, simplify $\\frac{((n + 1)!)^2}{(2n + 2)!}\\cdot\\frac{(2n)!}{(n!)^2}$. At the endpoints, show that $|a_n|$ is increasing, so the terms cannot tend to $0$.",
+  "answer": "$-4 < x < 4$",
+  "solution": "Let $c_n = \\frac{(n!)^2}{(2n)!}$. Then\n$$\\frac{c_{n+1}}{c_n} = \\frac{(n + 1)^2}{(2n + 2)(2n + 1)} = \\frac{n + 1}{2(2n + 1)} \\to \\frac{1}{4}$$\nBy the ratio test the series converges when $\\frac{|x|}{4} < 1$ and diverges when $\\frac{|x|}{4} > 1$, so $R = 4$.\n\n**Endpoints.** At $x = \\pm 4$ the ratio test gives $1$, so look at the size of the terms $b_n = c_n 4^n$:\n$$\\frac{b_{n+1}}{b_n} = 4\\cdot\\frac{n + 1}{2(2n + 1)} = \\frac{2n + 2}{2n + 1} > 1$$\nSo $b_n$ is strictly increasing, starting from $b_0 = 1$. Hence $b_n \\ge 1$ for all $n$ and $b_n \\not\\to 0$.\n\n* $x = 4$: the terms are $b_n \\ge 1$, so by the $n$th-term test the series **diverges**.\n* $x = -4$: the terms are $(-1)^n b_n$, whose sizes are at least $1$, so they do not tend to $0$, and the series **diverges** (the alternating series test does not apply since the terms grow).\n\nInterval of convergence: $-4 < x < 4$.\n\n(In fact $b_n \\approx \\sqrt{\\pi n}$ grows without bound, but showing $b_n \\ge 1$ is enough.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-power-series-q17",
+  "topicId": "calc-power-series",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The series for $\\arctan x$ is $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{(-1)^n x^{2n+1}}{2n + 1}$ for $-1 \\le x \\le 1$.\n\n(a) Use $x = 1$ to show that $\\pi = 4\\displaystyle\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{2n + 1}$. Using the alternating series error bound, how many terms of this series guarantee an approximation to $\\pi$ with error less than $0.001$?\n\n(b) Use $x = \\frac{1}{\\sqrt{3}}$ to show that $\\pi = 2\\sqrt{3}\\displaystyle\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n + 1)3^n}$.\n\n(c) How many terms of the series in (b) guarantee an approximation to $\\pi$ with error less than $0.001$? Comment on the comparison with (a).",
+  "hint": "If you use $N$ terms ($n = 0$ to $N - 1$), the first omitted term has $n = N$. Remember to multiply the error bound by the factor in front of the sum.",
+  "answer": "(a) $2000$ terms (b) $\\arctan\\frac{1}{\\sqrt{3}} = \\frac{\\pi}{6}$ (c) $6$ terms; the extra factor $\\frac{1}{3^n}$ makes the series converge far faster.",
+  "solution": "**(a)** $\\arctan 1 = \\frac{\\pi}{4}$, so $\\frac{\\pi}{4} = 1 - \\frac{1}{3} + \\frac{1}{5} - \\dots$, giving $\\pi = 4\\sum\\frac{(-1)^n}{2n + 1}$.\n\nThe series alternates, and $\\frac{1}{2n + 1}$ decreases to $0$. Using $N$ terms ($n = 0, \\dots, N - 1$), the error in $\\frac{\\pi}{4}$ is at most $\\frac{1}{2N + 1}$, so the error in $\\pi$ is at most $\\frac{4}{2N + 1}$.\n$$\\frac{4}{2N + 1} < 0.001 \\iff 2N + 1 > 4000 \\iff N > 1999.5$$\nSo $N = 2000$ terms are needed for the bound to guarantee this accuracy.\n\n**(b)** $\\arctan\\frac{1}{\\sqrt{3}} = \\frac{\\pi}{6}$, and $x^{2n+1} = \\left(\\frac{1}{\\sqrt{3}}\\right)^{2n+1} = \\frac{1}{\\sqrt{3}\\cdot 3^n}$. So\n$$\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n + 1)3^n} \\implies \\pi = \\frac{6}{\\sqrt{3}}\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n + 1)3^n} = 2\\sqrt{3}\\sum_{n=0}^{\\infty}\\frac{(-1)^n}{(2n + 1)3^n}$$\n\n**(c)** This series also alternates with terms decreasing to $0$. With $N$ terms, the error in $\\pi$ is at most $\\frac{2\\sqrt{3}}{(2N + 1)3^N}$:\n\n| $N$ | $4$ | $5$ | $6$ |\n|---|---|---|---|\n| $\\frac{2\\sqrt{3}}{(2N + 1)3^N}$ | $0.0048$ | $0.0013$ | $0.000\\,37$ |\n\nSo $N = 6$ terms suffice (and the bound does not guarantee it with 5). Indeed, $6$ terms give $\\pi \\approx 3.14131$.\n\nComparison: $6$ terms instead of $2000$. At $x = 1$ the terms shrink only like $\\frac{1}{n}$, but at $x = \\frac{1}{\\sqrt{3}}$ they shrink geometrically, like $\\frac{1}{3^n}$. Choosing $x$ well inside the interval of convergence makes a series converge much faster.",
+  "linkedTopicIds": []
+ }
+]
