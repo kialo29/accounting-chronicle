@@ -9,3 +9,6 @@ Checked 18 questions: 15 ok, 1 fixed, 2 clarified. Topic details: ok
 ### Diagram audit
 1 diagram checked: 0 ok, 1 fixed. All four solution curves verified against y = ½(sin t − cos t) + ce⁻ᵗ (y(0) = 2.5, 1, −1, −0.5; thick curve is the periodic one).
 - fur-first-order-de-q17 — the "4π" tick label was crossed by the curves — moved above the axis.
+
+### Scope coverage
+All 3 scope items covered.

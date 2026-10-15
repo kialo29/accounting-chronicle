@@ -5,3 +5,6 @@ All accelerations, tensions, speeds and times were re-derived independently (e.g
 
 ### Diagram audit
 9 diagrams checked: 9 ok, 0 fixed. (q13 plane gradient tan α = 3/4 and string tangency verified; q14 heights drawn equal.)
+
+### Scope coverage
+All 4 scope items covered.

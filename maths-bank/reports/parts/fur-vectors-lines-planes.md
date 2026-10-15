@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 8 scope items covered. Key idea extended to mention the vector (cross) product, normal to a plane and triangle/parallelogram area.

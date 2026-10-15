@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 7 diagrams checked: 6 ok, 1 fixed.
 - mech-forces-newtons-laws-q07 — weight arrow started at the book/table contact, off-centre, so it looked like a force on the table (the question is about which body each force acts on) — W now drawn from a marked centre of the book, "book" label moved left.
+
+### Scope coverage
+All 6 scope items covered.

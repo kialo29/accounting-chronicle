@@ -8,3 +8,6 @@ Checked 17 questions: 16 ok, 0 fixed, 1 clarified. Topic details: ok
 ### Diagram audit
 8 diagrams checked: 7 ok, 1 fixed.
 mech-friction-q13 — table-top line overshot the table edge (stub past the corner) and the "1.4 m" label ran to the right edge of the viewBox — table line now ends at the edge (x=240) and the label sits left of the dimension line.
+
+### Scope coverage
+All 3 scope items covered.

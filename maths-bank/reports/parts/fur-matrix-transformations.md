@@ -6,3 +6,6 @@ All answers independently re-derived (sympy): images of (3, 1) under the four si
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 8 scope items covered.

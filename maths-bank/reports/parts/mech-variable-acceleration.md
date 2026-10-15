@@ -5,3 +5,6 @@ All answers were independently re-derived with sympy (including the distance spl
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed. (v–t curves for q09 and both lift models in q18 verified point-by-point against the formulas.)
+
+### Scope coverage
+All 5 scope items covered.

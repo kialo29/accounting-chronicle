@@ -7,3 +7,6 @@ Checked 18 questions: 17 ok, 1 fixed, 0 clarified. Topic details: ok
 ### Diagram audit
 3 diagrams checked: 2 ok, 1 fixed. cosh, sinh, ½eˣ, catenary and tanh curves verified numerically against the formulas.
 - fur-hyperbolic-functions-q08 — origin label "O" overlapped the sinh curve — moved to the right of the y-axis.
+
+### Scope coverage
+All 7 scope items covered.

@@ -6,3 +6,6 @@ All answers independently re-derived (sympy): orders/entries, sums and scalar mu
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered.
