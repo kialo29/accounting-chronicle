@@ -1,0 +1,282 @@
+[
+ {
+  "id": "fur-matrices-arithmetic-q01",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$$\\mathbf{P} = \\begin{pmatrix} 3 & -1 & 0 \\\\ 2 & 5 & 7 \\end{pmatrix}, \\quad \\mathbf{Q} = \\begin{pmatrix} 4 \\\\ -2 \\\\ 1 \\\\ 0 \\end{pmatrix}, \\quad \\mathbf{R} = \\begin{pmatrix} 1 & 0 & -6 \\end{pmatrix}, \\quad \\mathbf{S} = \\begin{pmatrix} 9 & 2 \\\\ -3 & 8 \\end{pmatrix}$$\n\n(a) Write down the order of each matrix.\n\n(b) Write down the entry $p_{23}$ (row 2, column 3 of $\\mathbf{P}$) and the entry $p_{12}$.",
+  "hint": "Order is (number of rows) $\\times$ (number of columns) – rows first, like reading down then across.",
+  "answer": "(a) $\\mathbf{P}$: $2 \\times 3$, $\\mathbf{Q}$: $4 \\times 1$, $\\mathbf{R}$: $1 \\times 3$, $\\mathbf{S}$: $2 \\times 2$ (b) $p_{23} = 7$, $p_{12} = -1$",
+  "solution": "(a) Count rows, then columns.\n\n* $\\mathbf{P}$ has 2 rows and 3 columns: order $2 \\times 3$.\n* $\\mathbf{Q}$ has 4 rows and 1 column: order $4 \\times 1$ (a column vector).\n* $\\mathbf{R}$ has 1 row and 3 columns: order $1 \\times 3$ (a row vector).\n* $\\mathbf{S}$ has 2 rows and 2 columns: order $2 \\times 2$ (a square matrix).\n\n(b) $p_{23}$ is in row 2, column 3: row 2 is $2, 5, 7$, so $p_{23} = 7$.\n\n$p_{12}$ is in row 1, column 2: row 1 is $3, -1, 0$, so $p_{12} = -1$.\n\nNote $p_{12} \\ne p_{21}$ in general: $p_{21} = 2$. The row number always comes first.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q02",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 4 & -1 \\\\ 2 & 3 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} -2 & 5 \\\\ 0 & 1 \\end{pmatrix}$.\n\nFind\n\n(a) $\\mathbf{A} + \\mathbf{B}$\n\n(b) $3\\mathbf{A} - 2\\mathbf{B}$\n\n(c) the matrix $\\mathbf{X}$ such that $2\\mathbf{X} + \\mathbf{A} = \\mathbf{B}$.",
+  "hint": "Addition and scalar multiplication work entry by entry. For (c), rearrange exactly as you would with numbers.",
+  "answer": "(a) $\\begin{pmatrix} 2 & 4 \\\\ 2 & 4 \\end{pmatrix}$ (b) $\\begin{pmatrix} 16 & -13 \\\\ 6 & 7 \\end{pmatrix}$ (c) $\\mathbf{X} = \\begin{pmatrix} -3 & 3 \\\\ -1 & -1 \\end{pmatrix}$",
+  "solution": "(a) Add corresponding entries:\n$$\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} 4 + (-2) & -1 + 5 \\\\ 2 + 0 & 3 + 1 \\end{pmatrix} = \\begin{pmatrix} 2 & 4 \\\\ 2 & 4 \\end{pmatrix}$$\n\n(b) Multiply every entry by the scalar first:\n$$3\\mathbf{A} = \\begin{pmatrix} 12 & -3 \\\\ 6 & 9 \\end{pmatrix}, \\quad 2\\mathbf{B} = \\begin{pmatrix} -4 & 10 \\\\ 0 & 2 \\end{pmatrix}$$\n$$3\\mathbf{A} - 2\\mathbf{B} = \\begin{pmatrix} 12 - (-4) & -3 - 10 \\\\ 6 - 0 & 9 - 2 \\end{pmatrix} = \\begin{pmatrix} 16 & -13 \\\\ 6 & 7 \\end{pmatrix}$$\n\n(c) $2\\mathbf{X} = \\mathbf{B} - \\mathbf{A} = \\begin{pmatrix} -6 & 6 \\\\ -2 & -2 \\end{pmatrix}$, so\n$$\\mathbf{X} = \\frac{1}{2}\\begin{pmatrix} -6 & 6 \\\\ -2 & -2 \\end{pmatrix} = \\begin{pmatrix} -3 & 3 \\\\ -1 & -1 \\end{pmatrix}$$\n\nCheck: $2\\mathbf{X} + \\mathbf{A} = \\begin{pmatrix} -6 + 4 & 6 - 1 \\\\ -2 + 2 & -2 + 3 \\end{pmatrix} = \\begin{pmatrix} -2 & 5 \\\\ 0 & 1 \\end{pmatrix} = \\mathbf{B}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q03",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$. Find $\\mathbf{A}\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}$.",
+  "hint": "Each entry of the answer is a row of $\\mathbf{A}$ combined with the column: multiply pairs and add.",
+  "answer": "$\\begin{pmatrix} 12 \\\\ 23 \\end{pmatrix}$",
+  "solution": "Orders: $(2 \\times 2)(2 \\times 1)$ – the inner numbers match, so the answer is $2 \\times 1$.\n\nTop entry: row 1 of $\\mathbf{A}$ with the column: $2(5) + 1(2) = 12$.\n\nBottom entry: row 2 of $\\mathbf{A}$ with the column: $3(5) + 4(2) = 23$.\n$$\\mathbf{A}\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix} = \\begin{pmatrix} 12 \\\\ 23 \\end{pmatrix}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q04",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 5 & -1 \\\\ 2 & 3 \\end{pmatrix}$. Find $\\mathbf{AB}$.\n\n(Compare with the previous question: $\\mathbf{B}$ is the column $\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}$ with an extra column added.)",
+  "hint": "Row $i$ of $\\mathbf{A}$ with column $j$ of $\\mathbf{B}$ gives the entry in row $i$, column $j$. You have already done the first column.",
+  "answer": "$\\mathbf{AB} = \\begin{pmatrix} 12 & 1 \\\\ 23 & 9 \\end{pmatrix}$",
+  "solution": "Orders $(2 \\times 2)(2 \\times 2) \\to 2 \\times 2$.\n\nThe first column of $\\mathbf{B}$ is $\\begin{pmatrix} 5 \\\\ 2 \\end{pmatrix}$, so the first column of $\\mathbf{AB}$ is the answer to the previous question, $\\begin{pmatrix} 12 \\\\ 23 \\end{pmatrix}$.\n\nSecond column (using column $\\begin{pmatrix} -1 \\\\ 3 \\end{pmatrix}$):\n\n* row 1: $2(-1) + 1(3) = 1$\n* row 2: $3(-1) + 4(3) = 9$\n\n$$\\mathbf{AB} = \\begin{pmatrix} 12 & 1 \\\\ 23 & 9 \\end{pmatrix}$$\n\n**What changed:** adding a column to $\\mathbf{B}$ adds a column to the answer – each column of $\\mathbf{AB}$ is $\\mathbf{A}$ times the matching column of $\\mathbf{B}$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q05",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 5 & -1 \\\\ 2 & 3 \\end{pmatrix}$. Find $\\mathbf{BA}$ and compare it with $\\mathbf{AB} = \\begin{pmatrix} 12 & 1 \\\\ 23 & 9 \\end{pmatrix}$.",
+  "hint": "Now the rows come from $\\mathbf{B}$ and the columns from $\\mathbf{A}$.",
+  "answer": "$\\mathbf{BA} = \\begin{pmatrix} 7 & 1 \\\\ 13 & 14 \\end{pmatrix} \\ne \\mathbf{AB}$",
+  "solution": "Rows of $\\mathbf{B}$ with columns of $\\mathbf{A}$:\n$$\\mathbf{BA} = \\begin{pmatrix} 5(2) + (-1)(3) & 5(1) + (-1)(4) \\\\ 2(2) + 3(3) & 2(1) + 3(4) \\end{pmatrix} = \\begin{pmatrix} 7 & 1 \\\\ 13 & 14 \\end{pmatrix}$$\n\n**What changed:** only the order of the two matrices. The answer is completely different from $\\mathbf{AB} = \\begin{pmatrix} 12 & 1 \\\\ 23 & 9 \\end{pmatrix}$, so matrix multiplication is **not commutative**: $\\mathbf{AB} \\ne \\mathbf{BA}$ in general.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q06",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$ and $\\mathbf{I} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$. Find $\\mathbf{IA}$ and $\\mathbf{AI}$.\n\n(Compare with the previous question: $\\mathbf{B}$ has been replaced by $\\mathbf{I}$.)",
+  "hint": "Work it out entry by entry – notice what the $0$s do.",
+  "answer": "$\\mathbf{IA} = \\mathbf{AI} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix} = \\mathbf{A}$",
+  "solution": "$$\\mathbf{IA} = \\begin{pmatrix} 1(2) + 0(3) & 1(1) + 0(4) \\\\ 0(2) + 1(3) & 0(1) + 1(4) \\end{pmatrix} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$$\n$$\\mathbf{AI} = \\begin{pmatrix} 2(1) + 1(0) & 2(0) + 1(1) \\\\ 3(1) + 4(0) & 3(0) + 4(1) \\end{pmatrix} = \\begin{pmatrix} 2 & 1 \\\\ 3 & 4 \\end{pmatrix}$$\n\n**What changed:** with $\\mathbf{I}$ in place of $\\mathbf{B}$, the order no longer matters – both products give $\\mathbf{A}$ back. $\\mathbf{I}$ is the **identity matrix**: it plays the role of the number 1, and it commutes with every $2 \\times 2$ matrix.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q07",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "$\\mathbf{A}$ is a $2 \\times 3$ matrix, $\\mathbf{C}$ is a $2 \\times 2$ matrix and $\\mathbf{D}$ is a $3 \\times 1$ matrix.\n\n(a) For each of $\\mathbf{AD}$, $\\mathbf{DA}$, $\\mathbf{CA}$ and $\\mathbf{AC}$, state whether the product exists and, if it does, give its order.\n\n(b) Tom says: \"If $\\mathbf{PQ}$ exists then $\\mathbf{QP}$ must exist too.\" Use your answers to show that Tom is wrong.\n\n(c) $\\mathbf{B}$ is a $3 \\times 2$ matrix. Both $\\mathbf{AB}$ and $\\mathbf{BA}$ exist. Explain why they still cannot be equal.",
+  "hint": "Write the orders side by side, e.g. $(2 \\times 3)(3 \\times 1)$. The inner numbers must match; the outer numbers give the order of the product.",
+  "answer": "(a) $\\mathbf{AD}$: $2 \\times 1$; $\\mathbf{DA}$: does not exist; $\\mathbf{CA}$: $2 \\times 3$; $\\mathbf{AC}$: does not exist (b) e.g. $\\mathbf{AD}$ exists but $\\mathbf{DA}$ does not (c) $\\mathbf{AB}$ is $2 \\times 2$ but $\\mathbf{BA}$ is $3 \\times 3$",
+  "solution": "(a)\n\n* $\\mathbf{AD}$: $(2 \\times 3)(3 \\times 1)$ – inner 3 and 3 match, order $2 \\times 1$.\n* $\\mathbf{DA}$: $(3 \\times 1)(2 \\times 3)$ – inner 1 and 2 do not match, does not exist.\n* $\\mathbf{CA}$: $(2 \\times 2)(2 \\times 3)$ – inner 2 and 2 match, order $2 \\times 3$.\n* $\\mathbf{AC}$: $(2 \\times 3)(2 \\times 2)$ – inner 3 and 2 do not match, does not exist.\n\n(b) Take $\\mathbf{P} = \\mathbf{A}$, $\\mathbf{Q} = \\mathbf{D}$: $\\mathbf{AD}$ exists but $\\mathbf{DA}$ does not (similarly $\\mathbf{CA}$ exists but $\\mathbf{AC}$ does not). One counter-example is enough to disprove Tom's claim.\n\n(c) $\\mathbf{AB}$ is $(2 \\times 3)(3 \\times 2)$, order $2 \\times 2$; $\\mathbf{BA}$ is $(3 \\times 2)(2 \\times 3)$, order $3 \\times 3$. Matrices of different orders can never be equal, whatever their entries.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q08",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ravi is asked to find $\\begin{pmatrix} 3 & -2 \\\\ 1 & 4 \\end{pmatrix}\\begin{pmatrix} 2 & 5 \\\\ -1 & 0 \\end{pmatrix}$. His working is shown below.\n\n$$\\begin{pmatrix} 3 & -2 \\\\ 1 & 4 \\end{pmatrix}\\begin{pmatrix} 2 & 5 \\\\ -1 & 0 \\end{pmatrix} = \\begin{pmatrix} 3 \\times 2 & -2 \\times 5 \\\\ 1 \\times (-1) & 4 \\times 0 \\end{pmatrix} = \\begin{pmatrix} 6 & -10 \\\\ -1 & 0 \\end{pmatrix}$$\n\nIdentify Ravi's error, explain why it is wrong, and find the correct product.",
+  "hint": "How is the top-left entry of a matrix product meant to be found? Which numbers from the first matrix should be involved?",
+  "answer": "Ravi multiplied corresponding entries; the correct product is $\\begin{pmatrix} 8 & 15 \\\\ -2 & 5 \\end{pmatrix}$",
+  "solution": "**Error:** Ravi multiplied entries in matching positions. That is not how matrices are multiplied (only addition and subtraction work entry by entry).\n\n**Why:** each entry of a product combines a whole **row** of the first matrix with a whole **column** of the second. The top-left entry uses row 1, $(3, -2)$, and column 1, $(2, -1)$.\n\n**Correct working:**\n$$\\begin{pmatrix} 3(2) + (-2)(-1) & 3(5) + (-2)(0) \\\\ 1(2) + 4(-1) & 1(5) + 4(0) \\end{pmatrix} = \\begin{pmatrix} 6 + 2 & 15 + 0 \\\\ 2 - 4 & 5 + 0 \\end{pmatrix} = \\begin{pmatrix} 8 & 15 \\\\ -2 & 5 \\end{pmatrix}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q09",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$. Kasia is asked to determine whether $\\mathbf{A}^2 = 5\\mathbf{A} + 2\\mathbf{I}$. Her working is shown below.\n\nLine 1: $\\mathbf{A}^2 = \\begin{pmatrix} 1^2 & 2^2 \\\\ 3^2 & 4^2 \\end{pmatrix} = \\begin{pmatrix} 1 & 4 \\\\ 9 & 16 \\end{pmatrix}$\n\nLine 2: $5\\mathbf{A} + 2\\mathbf{I} = \\begin{pmatrix} 5 & 10 \\\\ 15 & 20 \\end{pmatrix} + \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix} = \\begin{pmatrix} 7 & 10 \\\\ 15 & 22 \\end{pmatrix}$\n\nLine 3: The matrices are different, so $\\mathbf{A}^2 \\ne 5\\mathbf{A} + 2\\mathbf{I}$.\n\nIdentify the line containing the error, explain the mistake, and reach the correct conclusion.",
+  "hint": "What does $\\mathbf{A}^2$ actually mean for a matrix?",
+  "answer": "Line 1 is wrong: $\\mathbf{A}^2 = \\mathbf{AA} = \\begin{pmatrix} 7 & 10 \\\\ 15 & 22 \\end{pmatrix}$, so $\\mathbf{A}^2 = 5\\mathbf{A} + 2\\mathbf{I}$ is true",
+  "solution": "**Error in Line 1.** Kasia squared each entry. For a matrix, $\\mathbf{A}^2$ means $\\mathbf{A} \\times \\mathbf{A}$ using matrix multiplication (rows times columns), not squaring the entries.\n\n**Correct Line 1:**\n$$\\mathbf{A}^2 = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}\\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix} = \\begin{pmatrix} 1 + 6 & 2 + 8 \\\\ 3 + 12 & 6 + 16 \\end{pmatrix} = \\begin{pmatrix} 7 & 10 \\\\ 15 & 22 \\end{pmatrix}$$\n\nLine 2 is correct: $5\\mathbf{A} + 2\\mathbf{I} = \\begin{pmatrix} 7 & 10 \\\\ 15 & 22 \\end{pmatrix}$.\n\n**Conclusion:** the two matrices are equal, so $\\mathbf{A}^2 = 5\\mathbf{A} + 2\\mathbf{I}$ **is** true.\n\n(This is no coincidence: for any $2 \\times 2$ matrix, $\\mathbf{A}^2 = (a + d)\\mathbf{A} - (ad - bc)\\mathbf{I}$; here $a + d = 5$ and $ad - bc = -2$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q10",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 1 & 0 \\\\ 1 & 1 \\end{pmatrix}$.\n\nAli claims that $(\\mathbf{A} + \\mathbf{B})^2 = \\mathbf{A}^2 + 2\\mathbf{AB} + \\mathbf{B}^2$ for all square matrices of the same order, \"just like with numbers\".\n\n(a) Calculate $(\\mathbf{A} + \\mathbf{B})^2$ and $\\mathbf{A}^2 + 2\\mathbf{AB} + \\mathbf{B}^2$ for these matrices.\n\n(b) Explain where Ali's reasoning breaks down, and write down the correct expansion of $(\\mathbf{A} + \\mathbf{B})^2$.\n\n(c) State a condition on $\\mathbf{A}$ and $\\mathbf{B}$ under which Ali's formula is true.",
+  "hint": "Expand $(\\mathbf{A} + \\mathbf{B})(\\mathbf{A} + \\mathbf{B})$ term by term, keeping every product in the order it appears.",
+  "answer": "(a) $(\\mathbf{A} + \\mathbf{B})^2 = \\begin{pmatrix} 5 & 4 \\\\ 4 & 5 \\end{pmatrix}$, $\\mathbf{A}^2 + 2\\mathbf{AB} + \\mathbf{B}^2 = \\begin{pmatrix} 6 & 4 \\\\ 4 & 4 \\end{pmatrix}$ (b) $(\\mathbf{A} + \\mathbf{B})^2 = \\mathbf{A}^2 + \\mathbf{AB} + \\mathbf{BA} + \\mathbf{B}^2$; Ali assumed $\\mathbf{BA} = \\mathbf{AB}$ (c) when $\\mathbf{AB} = \\mathbf{BA}$",
+  "solution": "(a) $\\mathbf{A} + \\mathbf{B} = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$, so\n$$(\\mathbf{A} + \\mathbf{B})^2 = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}\\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix} = \\begin{pmatrix} 5 & 4 \\\\ 4 & 5 \\end{pmatrix}$$\n\n$\\mathbf{A}^2 = \\begin{pmatrix} 1 & 2 \\\\ 0 & 1 \\end{pmatrix}$, $\\mathbf{B}^2 = \\begin{pmatrix} 1 & 0 \\\\ 2 & 1 \\end{pmatrix}$, $\\mathbf{AB} = \\begin{pmatrix} 2 & 1 \\\\ 1 & 1 \\end{pmatrix}$, so\n$$\\mathbf{A}^2 + 2\\mathbf{AB} + \\mathbf{B}^2 = \\begin{pmatrix} 1 + 4 + 1 & 2 + 2 + 0 \\\\ 0 + 2 + 2 & 1 + 2 + 1 \\end{pmatrix} = \\begin{pmatrix} 6 & 4 \\\\ 4 & 4 \\end{pmatrix}$$\n\nThese are different, so Ali's claim is false.\n\n(b) Expanding carefully:\n$$(\\mathbf{A} + \\mathbf{B})(\\mathbf{A} + \\mathbf{B}) = \\mathbf{A}^2 + \\mathbf{AB} + \\mathbf{BA} + \\mathbf{B}^2$$\nTo get $2\\mathbf{AB}$ Ali replaced $\\mathbf{BA}$ by $\\mathbf{AB}$, which assumes multiplication is commutative. For matrices it is not: here $\\mathbf{BA} = \\begin{pmatrix} 1 & 1 \\\\ 1 & 2 \\end{pmatrix} \\ne \\mathbf{AB}$.\n\nCheck: $\\mathbf{A}^2 + \\mathbf{AB} + \\mathbf{BA} + \\mathbf{B}^2 = \\begin{pmatrix} 1 + 2 + 1 + 1 & 2 + 1 + 1 + 0 \\\\ 0 + 1 + 1 + 2 & 1 + 1 + 2 + 1 \\end{pmatrix} = \\begin{pmatrix} 5 & 4 \\\\ 4 & 5 \\end{pmatrix}$ ✓\n\n(c) The formula holds exactly when $\\mathbf{AB} + \\mathbf{BA} = 2\\mathbf{AB}$, i.e. when $\\mathbf{AB} = \\mathbf{BA}$ (the matrices **commute**), e.g. when $\\mathbf{B} = \\mathbf{I}$ or $\\mathbf{B} = k\\mathbf{A}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q11",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "For real numbers, if $ab = 0$ then $a = 0$ or $b = 0$.\n\n$\\mathbf{A} = \\begin{pmatrix} 1 & 2 \\\\ 2 & 4 \\end{pmatrix}$ and $\\mathbf{B} = \\begin{pmatrix} 2 & -4 \\\\ -1 & 2 \\end{pmatrix}$.\n\n(a) Show that $\\mathbf{AB} = \\mathbf{0}$, the $2 \\times 2$ zero matrix. What does this tell you about the rule above for matrices?\n\n(b) Jo says: \"Since $\\mathbf{AB} = \\mathbf{0}$, it follows that $\\mathbf{BA} = \\mathbf{0}$ as well.\" Is Jo correct? Justify your answer.\n\n(c) Use $\\mathbf{A}$ and $\\mathbf{B}$ to explain why, for matrices, $\\mathbf{AX} = \\mathbf{AY}$ does **not** always imply $\\mathbf{X} = \\mathbf{Y}$.",
+  "hint": "For (c), think about $\\mathbf{AB}$ and $\\mathbf{A0}$.",
+  "answer": "(a) $\\mathbf{AB} = \\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$ although neither matrix is $\\mathbf{0}$, so the rule fails for matrices (b) No: $\\mathbf{BA} = \\begin{pmatrix} -6 & -12 \\\\ 3 & 6 \\end{pmatrix} \\ne \\mathbf{0}$ (c) $\\mathbf{AB} = \\mathbf{A0}$ but $\\mathbf{B} \\ne \\mathbf{0}$",
+  "solution": "(a)\n$$\\mathbf{AB} = \\begin{pmatrix} 1(2) + 2(-1) & 1(-4) + 2(2) \\\\ 2(2) + 4(-1) & 2(-4) + 4(2) \\end{pmatrix} = \\begin{pmatrix} 0 & 0 \\\\ 0 & 0 \\end{pmatrix}$$\nNeither $\\mathbf{A}$ nor $\\mathbf{B}$ is the zero matrix, yet their product is $\\mathbf{0}$. So the rule \"$ab = 0 \\Rightarrow a = 0$ or $b = 0$\" does **not** carry over to matrices.\n\n(b) Jo is not correct.\n$$\\mathbf{BA} = \\begin{pmatrix} 2(1) + (-4)(2) & 2(2) + (-4)(4) \\\\ -1(1) + 2(2) & -1(2) + 2(4) \\end{pmatrix} = \\begin{pmatrix} -6 & -12 \\\\ 3 & 6 \\end{pmatrix} \\ne \\mathbf{0}$$\nJo has assumed $\\mathbf{AB} = \\mathbf{BA}$, but matrix multiplication is not commutative.\n\n(c) Take $\\mathbf{X} = \\mathbf{B}$ and $\\mathbf{Y} = \\mathbf{0}$. Then $\\mathbf{AX} = \\mathbf{AB} = \\mathbf{0}$ and $\\mathbf{AY} = \\mathbf{A0} = \\mathbf{0}$, so $\\mathbf{AX} = \\mathbf{AY}$, but $\\mathbf{X} \\ne \\mathbf{Y}$. You cannot simply \"cancel\" $\\mathbf{A}$ (this is only allowed when $\\mathbf{A}$ has an inverse).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q12",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} a & 1 \\\\ 2 & b \\end{pmatrix}$, where $a$ and $b$ are constants.\n\nGiven that $\\mathbf{A}^2 = \\begin{pmatrix} 11 & 1 \\\\ 2 & 6 \\end{pmatrix}$, find the values of $a$ and $b$.",
+  "hint": "Find $\\mathbf{A}^2$ in terms of $a$ and $b$ by matrix multiplication, then compare all four entries – some give two possible values, and another entry decides between them.",
+  "answer": "$a = 3$, $b = -2$",
+  "solution": "$$\\mathbf{A}^2 = \\begin{pmatrix} a & 1 \\\\ 2 & b \\end{pmatrix}\\begin{pmatrix} a & 1 \\\\ 2 & b \\end{pmatrix} = \\begin{pmatrix} a^2 + 2 & a + b \\\\ 2a + 2b & 2 + b^2 \\end{pmatrix}$$\n\nCompare entries with $\\begin{pmatrix} 11 & 1 \\\\ 2 & 6 \\end{pmatrix}$:\n\n* top-left: $a^2 + 2 = 11 \\Rightarrow a = \\pm 3$\n* bottom-right: $b^2 + 2 = 6 \\Rightarrow b = \\pm 2$\n* top-right: $a + b = 1$ (bottom-left $2a + 2b = 2$ says the same)\n\nTest the combinations in $a + b = 1$: $3 + (-2) = 1$ ✓; $3 + 2 = 5$, $-3 + 2 = -1$, $-3 - 2 = -5$ all fail.\n\nSo $a = 3$, $b = -2$.\n\nCheck: $\\begin{pmatrix} 3 & 1 \\\\ 2 & -2 \\end{pmatrix}^2 = \\begin{pmatrix} 9 + 2 & 3 - 2 \\\\ 6 - 4 & 2 + 4 \\end{pmatrix} = \\begin{pmatrix} 11 & 1 \\\\ 2 & 6 \\end{pmatrix}$ ✓\n\n(Squaring the entries instead would wrongly give a top-right entry of $1$ for every $a$, $b$ and lose the condition $a + b = 1$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q13",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A café records the number of drinks sold over a weekend.\n\n| | Latte | Tea | Hot chocolate |\n|---|---|---|---|\n| Saturday | 46 | 18 | 25 |\n| Sunday | 52 | 23 | 31 |\n\nA latte costs £3.10, a tea £1.90 and a hot chocolate £2.80.\n\n(a) Write the sales as a $2 \\times 3$ matrix $\\mathbf{N}$ and the prices as a column matrix $\\mathbf{p}$. Calculate $\\mathbf{Np}$ and explain what it represents.\n\n(b) Explain why $\\mathbf{pN}$ cannot be calculated.\n\n(c) Calculate $\\begin{pmatrix} 1 & 1 \\end{pmatrix}\\mathbf{Np}$ and interpret it.\n\n(d) Next weekend all prices rise by 4%. Assuming the same sales, use a scalar multiple to find the new total weekend takings.",
+  "hint": "Arrange the matrices so that \"number of lattes\" is multiplied by \"price of a latte\": the columns of $\\mathbf{N}$ must match the rows of $\\mathbf{p}$.",
+  "answer": "(a) $\\mathbf{Np} = \\begin{pmatrix} 246.80 \\\\ 291.70 \\end{pmatrix}$: takings (£) on Saturday and Sunday (b) $\\mathbf{p}$ is $3 \\times 1$ and $\\mathbf{N}$ is $2 \\times 3$; $1 \\ne 2$ (c) $538.50$: total weekend takings £538.50 (d) £560.04",
+  "solution": "(a)\n$$\\mathbf{N} = \\begin{pmatrix} 46 & 18 & 25 \\\\ 52 & 23 & 31 \\end{pmatrix}, \\quad \\mathbf{p} = \\begin{pmatrix} 3.10 \\\\ 1.90 \\\\ 2.80 \\end{pmatrix}$$\n$(2 \\times 3)(3 \\times 1)$ gives a $2 \\times 1$ matrix:\n$$\\mathbf{Np} = \\begin{pmatrix} 46(3.10) + 18(1.90) + 25(2.80) \\\\ 52(3.10) + 23(1.90) + 31(2.80) \\end{pmatrix} = \\begin{pmatrix} 142.60 + 34.20 + 70.00 \\\\ 161.20 + 43.70 + 86.80 \\end{pmatrix} = \\begin{pmatrix} 246.80 \\\\ 291.70 \\end{pmatrix}$$\nThese are the café's takings in pounds: £246.80 on Saturday and £291.70 on Sunday.\n\n(b) $\\mathbf{pN}$ would be $(3 \\times 1)(2 \\times 3)$: the inner numbers 1 and 2 do not match, so the product does not exist.\n\n(c) $\\begin{pmatrix} 1 & 1 \\end{pmatrix}$ is $1 \\times 2$, so the product is $1 \\times 1$:\n$$\\begin{pmatrix} 1 & 1 \\end{pmatrix}\\begin{pmatrix} 246.80 \\\\ 291.70 \\end{pmatrix} = \\begin{pmatrix} 538.50 \\end{pmatrix}$$\nThe row of 1s adds the two days: total weekend takings £538.50.\n\n(d) New prices are $1.04\\mathbf{p}$, so new takings $= \\mathbf{N}(1.04\\mathbf{p}) = 1.04(\\mathbf{Np})$. The total is\n$$1.04 \\times 538.50 = 560.04$$\nNew total weekend takings: £560.04.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q14",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The diagram shows the direct ferry routes between four islands $A$, $B$, $C$ and $D$. Each route can be travelled in either direction.\n\nThe matrix $\\mathbf{M}$ has rows and columns in the order $A$, $B$, $C$, $D$; the entry in row $i$, column $j$ is the number of direct routes from island $i$ to island $j$.\n\n(a) Write down $\\mathbf{M}$.\n\n(b) Calculate $\\mathbf{M}^2$.\n\n(c) A \"two-leg journey\" uses exactly two ferry crossings. Explain why the entry in row $i$, column $j$ of $\\mathbf{M}^2$ counts the two-leg journeys from island $i$ to island $j$.\n\n(d) How many two-leg journeys start and finish at $C$? List them.",
+  "hint": "Row $i$ of $\\mathbf{M}$ times column $j$ of $\\mathbf{M}$ adds up (routes $i \\to k$) $\\times$ (routes $k \\to j$) over every possible middle island $k$.",
+  "answer": "(a) $\\mathbf{M} = \\begin{pmatrix} 0 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \\end{pmatrix}$ (b) $\\mathbf{M}^2 = \\begin{pmatrix} 2 & 1 & 1 & 1 \\\\ 1 & 2 & 1 & 1 \\\\ 1 & 1 & 3 & 0 \\\\ 1 & 1 & 0 & 1 \\end{pmatrix}$ (c) see solution (d) 3: $C \\to A \\to C$, $C \\to B \\to C$, $C \\to D \\to C$",
+  "solution": "(a) Routes: $A$–$B$, $A$–$C$, $B$–$C$, $C$–$D$.\n$$\\mathbf{M} = \\begin{pmatrix} 0 & 1 & 1 & 0 \\\\ 1 & 0 & 1 & 0 \\\\ 1 & 1 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \\end{pmatrix}$$\n\n(b) For example, the $(A, D)$ entry is row $A$ times column $D$: $0(0) + 1(0) + 1(1) + 0(0) = 1$. Doing every entry:\n$$\\mathbf{M}^2 = \\begin{pmatrix} 2 & 1 & 1 & 1 \\\\ 1 & 2 & 1 & 1 \\\\ 1 & 1 & 3 & 0 \\\\ 1 & 1 & 0 & 1 \\end{pmatrix}$$\n\n(c) The $(i, j)$ entry of $\\mathbf{M}^2$ is $\\sum_k m_{ik} m_{kj}$. For each middle island $k$, $m_{ik} m_{kj}$ is (ways to go $i \\to k$) $\\times$ (ways to go $k \\to j$), which is the number of two-leg journeys $i \\to k \\to j$. Adding over every possible middle island counts all two-leg journeys from $i$ to $j$.\n\n(d) The $(C, C)$ entry is 3. The journeys are $C \\to A \\to C$, $C \\to B \\to C$ and $C \\to D \\to C$.\n\n(The $(A, D)$ entry 1 is the single journey $A \\to C \\to D$; the $(C, D)$ entry is 0 because no island is joined to both $C$ and $D$.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\"><line x1=\"70.0\" y1=\"77.0\" x2=\"70.0\" y2=\"203.0\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"84.1\" y1=\"69.4\" x2=\"175.9\" y2=\"130.6\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"84.1\" y1=\"210.6\" x2=\"175.9\" y2=\"149.4\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"207.0\" y1=\"140.0\" x2=\"293.0\" y2=\"140.0\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"70\" cy=\"60\" r=\"17\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"70\" y=\"65\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><circle cx=\"70\" cy=\"220\" r=\"17\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"70\" y=\"225\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><circle cx=\"190\" cy=\"140\" r=\"17\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"190\" y=\"145\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><circle cx=\"310\" cy=\"140\" r=\"17\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"310\" y=\"145\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">D</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q15",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 9,
+  "question": "$$\\mathbf{A} = \\begin{pmatrix} 3 & k \\\\ 1 & -2 \\end{pmatrix}$$ where $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\mathbf{A}^2$ in terms of $k$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $\\mathbf{A}^2 - \\mathbf{A} = \\lambda\\mathbf{I}$, where $\\lambda$ is an expression in terms of $k$ to be found.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Given that $\\mathbf{A}^2 - \\mathbf{A} = 10\\mathbf{I}$, find the value of $k$.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Hence, for this value of $k$, show that $\\mathbf{A}^3 = p\\mathbf{A} + q\\mathbf{I}$, where $p$ and $q$ are integers to be found.",
+    "marks": 3
+   },
+   {
+    "label": "e",
+    "prompt": "Hence find $\\mathbf{A}^3$.",
+    "marks": 1
+   }
+  ],
+  "hint": "For (d), write $\\mathbf{A}^3 = \\mathbf{A}\\mathbf{A}^2$ and replace $\\mathbf{A}^2$ using part (c).",
+  "answer": "(a) $\\begin{pmatrix} 9 + k & k \\\\ 1 & k + 4 \\end{pmatrix}$ (b) $\\lambda = k + 6$ (c) $k = 4$ (d) $\\mathbf{A}^3 = 11\\mathbf{A} + 10\\mathbf{I}$ (e) $\\begin{pmatrix} 43 & 44 \\\\ 11 & -12 \\end{pmatrix}$",
+  "solution": "(a)\n$$\\mathbf{A}^2 = \\begin{pmatrix} 3 & k \\\\ 1 & -2 \\end{pmatrix}\\begin{pmatrix} 3 & k \\\\ 1 & -2 \\end{pmatrix} = \\begin{pmatrix} 9 + k & 3k - 2k \\\\ 3 - 2 & k + 4 \\end{pmatrix} = \\begin{pmatrix} 9 + k & k \\\\ 1 & k + 4 \\end{pmatrix}$$\nM1 attempt at matrix multiplication (row by column), A1 all four entries correct.\n\n(b)\n$$\\mathbf{A}^2 - \\mathbf{A} = \\begin{pmatrix} 9 + k - 3 & k - k \\\\ 1 - 1 & k + 4 + 2 \\end{pmatrix} = \\begin{pmatrix} k + 6 & 0 \\\\ 0 & k + 6 \\end{pmatrix} = (k + 6)\\mathbf{I}$$\nM1 subtracts entry by entry, A1 shows the off-diagonal entries are 0 and $\\lambda = k + 6$.\n\n(c) $k + 6 = 10 \\Rightarrow k = 4$. B1\n\n(d) From (c), $\\mathbf{A}^2 = \\mathbf{A} + 10\\mathbf{I}$. M1\n$$\\mathbf{A}^3 = \\mathbf{A}\\mathbf{A}^2 = \\mathbf{A}(\\mathbf{A} + 10\\mathbf{I}) = \\mathbf{A}^2 + 10\\mathbf{A}$$ M1 (uses $\\mathbf{AI} = \\mathbf{A}$)\n$$= (\\mathbf{A} + 10\\mathbf{I}) + 10\\mathbf{A} = 11\\mathbf{A} + 10\\mathbf{I}$$\nso $p = 11$, $q = 10$. A1\n\n(e) With $k = 4$:\n$$\\mathbf{A}^3 = 11\\begin{pmatrix} 3 & 4 \\\\ 1 & -2 \\end{pmatrix} + 10\\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix} = \\begin{pmatrix} 43 & 44 \\\\ 11 & -12 \\end{pmatrix}$$ B1\n\n(Check: $\\mathbf{A}^2 = \\begin{pmatrix} 13 & 4 \\\\ 1 & 8 \\end{pmatrix}$ and $\\mathbf{A}\\mathbf{A}^2 = \\begin{pmatrix} 39 + 4 & 12 + 32 \\\\ 13 - 2 & 4 - 16 \\end{pmatrix} = \\begin{pmatrix} 43 & 44 \\\\ 11 & -12 \\end{pmatrix}$ ✓)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-matrices-arithmetic-q16",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "For real numbers $a$ and $b$, let $\\mathbf{M}(a, b) = \\begin{pmatrix} a & -b \\\\ b & a \\end{pmatrix}$.\n\n(a) Show that $\\mathbf{M}(a, b)\\,\\mathbf{M}(c, d) = \\mathbf{M}(ac - bd, \\; ad + bc)$.\n\n(b) Explain the connection between this result and the product of the complex numbers $a + b\\mathrm{i}$ and $c + d\\mathrm{i}$. Hence explain why matrices of the form $\\mathbf{M}(a, b)$ commute with each other, even though matrix multiplication is not commutative in general.\n\n(c) Find all real $a$ and $b$ such that $\\mathbf{M}(a, b)^2 = \\begin{pmatrix} -5 & -12 \\\\ 12 & -5 \\end{pmatrix}$.",
+  "hint": "For (c), $\\begin{pmatrix} -5 & -12 \\\\ 12 & -5 \\end{pmatrix} = \\mathbf{M}(-5, 12)$, which corresponds to the complex number $-5 + 12\\mathrm{i}$. Square roots of a complex number…",
+  "answer": "(a) see solution (b) $\\mathbf{M}(a, b) \\leftrightarrow a + b\\mathrm{i}$ and products correspond; complex multiplication is commutative (c) $a = 2, b = 3$ or $a = -2, b = -3$",
+  "solution": "(a)\n$$\\begin{pmatrix} a & -b \\\\ b & a \\end{pmatrix}\\begin{pmatrix} c & -d \\\\ d & c \\end{pmatrix} = \\begin{pmatrix} ac - bd & -ad - bc \\\\ bc + ad & -bd + ac \\end{pmatrix} = \\begin{pmatrix} ac - bd & -(ad + bc) \\\\ ad + bc & ac - bd \\end{pmatrix}$$\nwhich is $\\mathbf{M}(ac - bd, \\; ad + bc)$ ✓\n\n(b) $(a + b\\mathrm{i})(c + d\\mathrm{i}) = (ac - bd) + (ad + bc)\\mathrm{i}$. So if $\\mathbf{M}(a, b)$ stands for $a + b\\mathrm{i}$, multiplying the matrices gives exactly the matrix that stands for the product of the complex numbers.\n\nSince $(c + d\\mathrm{i})(a + b\\mathrm{i}) = (ca - db) + (cb + da)\\mathrm{i}$ is the same complex number, $\\mathbf{M}(c, d)\\mathbf{M}(a, b) = \\mathbf{M}(ca - db, \\; cb + da) = \\mathbf{M}(ac - bd, \\; ad + bc) = \\mathbf{M}(a, b)\\mathbf{M}(c, d)$. Matrices of this special form inherit commutativity from the real-number multiplications in the formula – general matrices do not have this structure.\n\n(c) $\\begin{pmatrix} -5 & -12 \\\\ 12 & -5 \\end{pmatrix} = \\mathbf{M}(-5, 12)$, and by (a) $\\mathbf{M}(a, b)^2 = \\mathbf{M}(a^2 - b^2, \\; 2ab)$. So\n$$a^2 - b^2 = -5, \\qquad 2ab = 12$$\n(equivalently $(a + b\\mathrm{i})^2 = -5 + 12\\mathrm{i}$).\n\nFrom $b = \\frac{6}{a}$: $a^2 - \\frac{36}{a^2} = -5 \\Rightarrow a^4 + 5a^2 - 36 = 0 \\Rightarrow (a^2 + 9)(a^2 - 4) = 0$.\n\n$a$ is real, so $a^2 = 4$: $a = 2, b = 3$ or $a = -2, b = -3$.\n\nCheck: $\\begin{pmatrix} 2 & -3 \\\\ 3 & 2 \\end{pmatrix}^2 = \\begin{pmatrix} 4 - 9 & -6 - 6 \\\\ 6 + 6 & -9 + 4 \\end{pmatrix} = \\begin{pmatrix} -5 & -12 \\\\ 12 & -5 \\end{pmatrix}$ ✓",
+  "linkedTopicIds": [
+   "fur-complex-numbers"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-matrices-arithmetic-q17",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$\\mathbf{A} = \\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix}$.\n\n(a) Prove by induction that, for all positive integers $n$,\n$$\\mathbf{A}^n = \\begin{pmatrix} 1 + 2n & -4n \\\\ n & 1 - 2n \\end{pmatrix}$$\n\n(b) Hence find $\\mathbf{A}^{20}$.\n\n(c) Let $\\mathbf{N} = \\mathbf{A} - \\mathbf{I}$. Show that $\\mathbf{N}^2 = \\mathbf{0}$, and use this to give a second explanation of why $\\mathbf{A}^n = \\mathbf{I} + n\\mathbf{N}$.",
+  "hint": "In the inductive step write $\\mathbf{A}^{k+1} = \\mathbf{A}^k\\mathbf{A}$ and multiply out. For (c), $\\mathbf{I}$ commutes with $\\mathbf{N}$, so the binomial expansion of $(\\mathbf{I} + \\mathbf{N})^n$ is valid.",
+  "answer": "(a) proof (b) $\\mathbf{A}^{20} = \\begin{pmatrix} 41 & -80 \\\\ 20 & -39 \\end{pmatrix}$ (c) $\\mathbf{N} = \\begin{pmatrix} 2 & -4 \\\\ 1 & -2 \\end{pmatrix}$, $\\mathbf{N}^2 = \\mathbf{0}$; $(\\mathbf{I} + \\mathbf{N})^n = \\mathbf{I} + n\\mathbf{N}$",
+  "solution": "(a) **Base case** $n = 1$: $\\begin{pmatrix} 1 + 2 & -4 \\\\ 1 & 1 - 2 \\end{pmatrix} = \\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix} = \\mathbf{A}$ ✓\n\n**Assume** true for $n = k$: $\\mathbf{A}^k = \\begin{pmatrix} 1 + 2k & -4k \\\\ k & 1 - 2k \\end{pmatrix}$.\n\n**Inductive step:**\n$$\\mathbf{A}^{k+1} = \\mathbf{A}^k\\mathbf{A} = \\begin{pmatrix} 1 + 2k & -4k \\\\ k & 1 - 2k \\end{pmatrix}\\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix}$$\n$$= \\begin{pmatrix} 3 + 6k - 4k & -4 - 8k + 4k \\\\ 3k + 1 - 2k & -4k - 1 + 2k \\end{pmatrix} = \\begin{pmatrix} 3 + 2k & -4 - 4k \\\\ 1 + k & -1 - 2k \\end{pmatrix}$$\n$$= \\begin{pmatrix} 1 + 2(k + 1) & -4(k + 1) \\\\ (k + 1) & 1 - 2(k + 1) \\end{pmatrix}$$\nwhich is the formula with $n = k + 1$.\n\n**Conclusion:** the result is true for $n = 1$, and if it is true for $n = k$ it is true for $n = k + 1$. Hence by mathematical induction it is true for all positive integers $n$.\n\n(b) $n = 20$: $\\mathbf{A}^{20} = \\begin{pmatrix} 41 & -80 \\\\ 20 & -39 \\end{pmatrix}$.\n\n(Note how different this is from raising each entry to the 20th power.)\n\n(c) $\\mathbf{N} = \\begin{pmatrix} 2 & -4 \\\\ 1 & -2 \\end{pmatrix}$, and\n$$\\mathbf{N}^2 = \\begin{pmatrix} 4 - 4 & -8 + 8 \\\\ 2 - 2 & -4 + 4 \\end{pmatrix} = \\mathbf{0}$$\nBecause $\\mathbf{IN} = \\mathbf{NI}$, the binomial expansion is valid:\n$$\\mathbf{A}^n = (\\mathbf{I} + \\mathbf{N})^n = \\mathbf{I} + n\\mathbf{N} + \\binom{n}{2}\\mathbf{N}^2 + \\dots = \\mathbf{I} + n\\mathbf{N}$$\nsince every power $\\mathbf{N}^2, \\mathbf{N}^3, \\dots$ is $\\mathbf{0}$. So $\\mathbf{A}^n = \\begin{pmatrix} 1 + 2n & -4n \\\\ n & 1 - 2n \\end{pmatrix}$, agreeing with (a). (The binomial theorem would **not** be valid for two matrices that don't commute.)",
+  "linkedTopicIds": [
+   "fur-proof-by-induction"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-matrices-arithmetic-q18",
+  "topicId": "fur-matrices-arithmetic",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "For real numbers, $x^2 = 1$ has exactly two solutions. Find **all** $2 \\times 2$ real matrices $\\mathbf{A}$ such that $\\mathbf{A}^2 = \\mathbf{I}$, and give an example of one that is neither $\\mathbf{I}$ nor $-\\mathbf{I}$ and has no zero entries.",
+  "hint": "Let $\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$, multiply out $\\mathbf{A}^2$ and compare entries. Two of the equations share a factor $(a + d)$ – split into cases $a + d \\ne 0$ and $a + d = 0$.",
+  "answer": "$\\mathbf{A} = \\pm\\mathbf{I}$, or $\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & -a \\end{pmatrix}$ with $a^2 + bc = 1$ (infinitely many); e.g. $\\begin{pmatrix} 2 & 3 \\\\ -1 & -2 \\end{pmatrix}$",
+  "solution": "Let $\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$. Then\n$$\\mathbf{A}^2 = \\begin{pmatrix} a^2 + bc & ab + bd \\\\ ac + cd & bc + d^2 \\end{pmatrix} = \\begin{pmatrix} a^2 + bc & b(a + d) \\\\ c(a + d) & d^2 + bc \\end{pmatrix}$$\nWe need\n$$a^2 + bc = 1, \\quad b(a + d) = 0, \\quad c(a + d) = 0, \\quad d^2 + bc = 1$$\n\n**Case 1: $a + d \\ne 0$.** Then $b = 0$ and $c = 0$, so $a^2 = 1$ and $d^2 = 1$. With $a + d \\ne 0$ we need $a = d$, giving $\\mathbf{A} = \\mathbf{I}$ or $\\mathbf{A} = -\\mathbf{I}$.\n\n**Case 2: $a + d = 0$.** Then $d = -a$; the middle equations hold automatically, and both diagonal equations become $a^2 + bc = 1$. So\n$$\\mathbf{A} = \\begin{pmatrix} a & b \\\\ c & -a \\end{pmatrix} \\quad \\text{with } a^2 + bc = 1$$\nwhich gives infinitely many matrices.\n\n**Example:** $a = 2$ needs $bc = -3$; take $b = 3$, $c = -1$:\n$$\\begin{pmatrix} 2 & 3 \\\\ -1 & -2 \\end{pmatrix}^2 = \\begin{pmatrix} 4 - 3 & 6 - 6 \\\\ -2 + 2 & -3 + 4 \\end{pmatrix} = \\begin{pmatrix} 1 & 0 \\\\ 0 & 1 \\end{pmatrix}$$ ✓\n\nSo, unlike for numbers, the identity matrix has infinitely many square roots. (Geometrically, these include every reflection in a line through the origin, e.g. $\\begin{pmatrix} 0 & 1 \\\\ 1 & 0 \\end{pmatrix}$.)",
+  "linkedTopicIds": []
+ }
+]
