@@ -1,0 +1,256 @@
+[
+ {
+  "id": "prob-rules-formal-q01",
+  "topicId": "prob-rules-formal",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "$A$ and $B$ are mutually exclusive events with $P(A) = 0.35$ and $P(B) = 0.45$.\n\nFind\n(a) $P(A \\cap B)$\n(b) $P(A \\cup B)$\n(c) $P(A' \\cap B')$",
+  "hint": "Mutually exclusive means $A$ and $B$ cannot both happen. $A' \\cap B'$ means \"neither $A$ nor $B$\".",
+  "answer": "(a) $0$ (b) $0.8$ (c) $0.2$",
+  "solution": "(a) Mutually exclusive events cannot happen together, so\n$$P(A \\cap B) = 0$$\n\n(b) There is no overlap to subtract:\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B) = 0.35 + 0.45 - 0 = 0.8$$\n\n(c) \"Neither $A$ nor $B$\" is the complement of \"$A$ or $B$\":\n$$P(A' \\cap B') = 1 - P(A \\cup B) = 1 - 0.8 = 0.2$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q02",
+  "topicId": "prob-rules-formal",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "$P(A) = 0.5$, $P(B) = 0.4$ and $P(A \\cap B) = 0.15$.\n\nFind $P(A \\cup B)$.",
+  "hint": "Use the general addition rule: add the two probabilities, then remove the overlap.",
+  "answer": "$P(A \\cup B) = 0.75$",
+  "solution": "General addition rule:\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n\n$$P(A \\cup B) = 0.5 + 0.4 - 0.15 = 0.75$$\n\nThe overlap $A \\cap B$ is inside both $A$ and $B$, so adding $P(A) + P(B) = 0.9$ counts it twice; subtracting it once corrects this.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q03",
+  "topicId": "prob-rules-formal",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$P(A) = 0.5$, $P(B) = 0.4$ and $P(A \\cup B) = 0.75$.\n\nFind $P(A \\cap B)$.",
+  "hint": "Same rule as before, but now the unknown is the overlap. Substitute and rearrange.",
+  "answer": "$P(A \\cap B) = 0.15$",
+  "solution": "**What changed:** the same three numbers as the previous question, but now $P(A \\cup B)$ is given and the overlap is unknown.\n\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n$$0.75 = 0.5 + 0.4 - P(A \\cap B)$$\n$$P(A \\cap B) = 0.9 - 0.75 = 0.15$$\n\nInterpretation: $P(A) + P(B)$ exceeds $P(A \\cup B)$ by exactly the amount that was double-counted, which is the overlap.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q04",
+  "topicId": "prob-rules-formal",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$P(A) = 0.5$, $P(A \\cap B) = 0.15$ and $P(A \\cup B) = 0.75$.\n\nFind $P(B)$.",
+  "hint": "Substitute into the general addition rule and solve for $P(B)$.",
+  "answer": "$P(B) = 0.4$",
+  "solution": "**What changed:** the unknown has moved again, this time to $P(B)$.\n\n$$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$$\n$$0.75 = 0.5 + P(B) - 0.15$$\n$$0.75 = 0.35 + P(B)$$\n$$P(B) = 0.4$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q05",
+  "topicId": "prob-rules-formal",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$P(A) = 0.5$ and $P(B) = 0.4$. The events $A$ and $B$ are **independent**.\n\nFind $P(A \\cap B)$ and $P(A \\cup B)$.",
+  "hint": "For independent events, $P(A \\cap B) = P(A) \\times P(B)$.",
+  "answer": "$P(A \\cap B) = 0.2$, $P(A \\cup B) = 0.7$",
+  "solution": "**What changed:** $P(A)$ and $P(B)$ are as before, but instead of being told the overlap we are told the events are independent, which fixes the overlap.\n\nIndependent, so multiply:\n$$P(A \\cap B) = 0.5 \\times 0.4 = 0.2$$\n\nThen the addition rule:\n$$P(A \\cup B) = 0.5 + 0.4 - 0.2 = 0.7$$\n\nCompare with the previous questions: there $P(A \\cap B) = 0.15 \\ne 0.2$, so those events $A$ and $B$ were **not** independent.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q06",
+  "topicId": "prob-rules-formal",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Events $A$ and $B$ are mutually exclusive, with $P(A) = 0.3$ and $P(B) = 0.2$.\n\nTom says: \"$A$ and $B$ are mutually exclusive, so they don't affect each other. That means they are independent.\"\n\n(a) Is Tom correct? Justify your answer with a calculation.\n(b) Explain in words why knowing that $A$ has happened changes the probability of $B$.",
+  "hint": "Work out what $P(A \\cap B)$ is for mutually exclusive events and what it would have to be for independent events.",
+  "answer": "(a) No. Mutually exclusive gives $P(A \\cap B) = 0$, but independence would need $P(A \\cap B) = 0.3 \\times 0.2 = 0.06$. Since $0 \\ne 0.06$, $A$ and $B$ are not independent. (b) If $A$ happens, $B$ cannot, so $P(B \\mid A) = 0 \\ne 0.2 = P(B)$.",
+  "solution": "(a) Mutually exclusive means they cannot happen together:\n$$P(A \\cap B) = 0$$\n\nFor independence we would need\n$$P(A \\cap B) = P(A) \\times P(B) = 0.3 \\times 0.2 = 0.06$$\n\nSince $0 \\ne 0.06$, the events are **not** independent. Tom is wrong.\n\n(b) Before we know anything, $P(B) = 0.2$. If we are told $A$ has happened, then $B$ is impossible, so\n$$P(B \\mid A) = \\frac{P(A \\cap B)}{P(A)} = \\frac{0}{0.3} = 0$$\n\nKnowing $A$ has changed the probability of $B$ from $0.2$ to $0$, so $A$ has a very strong effect on $B$. \"Mutually exclusive\" is about events not overlapping; \"independent\" is about one event giving no information about the other. When both events have non-zero probability, mutually exclusive events are always **dependent**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q07",
+  "topicId": "prob-rules-formal",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "At a sixth-form college, a student is chosen at random. The probability that the student studies Biology is $0.45$, the probability that the student studies Chemistry is $0.35$ and the probability that the student studies both is $0.1$.\n\nPriya is asked to find the probability that the student studies neither subject. Her working is shown below.\n\n$P(B \\cup C) = 0.45 + 0.35 = 0.8$\n\n$P(\\text{neither}) = 1 - 0.8 = 0.2$\n\nIdentify Priya's error, explain why it is wrong, and find the correct probability.",
+  "hint": "Students who study both subjects are included in the $0.45$ **and** in the $0.35$.",
+  "answer": "Priya did not subtract $P(B \\cap C)$, so the students who study both were counted twice. $P(B \\cup C) = 0.7$ and $P(\\text{neither}) = 0.3$.",
+  "solution": "**Error:** the first line. Priya used $P(B \\cup C) = P(B) + P(C)$, which is only true for mutually exclusive events. Here $P(B \\cap C) = 0.1 \\ne 0$, so the students studying both subjects are counted once in $0.45$ and again in $0.35$.\n\n**Correct working:** use the general addition rule.\n$$P(B \\cup C) = P(B) + P(C) - P(B \\cap C) = 0.45 + 0.35 - 0.1 = 0.7$$\n\n$$P(\\text{neither}) = 1 - P(B \\cup C) = 1 - 0.7 = 0.3$$\n\nCheck with regions: Biology only $= 0.35$, both $= 0.1$, Chemistry only $= 0.25$, total $0.7$, leaving $0.3$ outside. ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q08",
+  "topicId": "prob-rules-formal",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><rect x=\"10\" y=\"10\" width=\"300\" height=\"180\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"125\" cy=\"105\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"195\" cy=\"105\" r=\"70\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"62\" y=\"42\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">A</text><text x=\"258\" y=\"42\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">B</text><text x=\"90\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.18</text><text x=\"160\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.12</text><text x=\"230\" y=\"110\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.28</text><text x=\"285\" y=\"180\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.42</text></svg>",
+  "question": "The Venn diagram shows the probabilities for two events $A$ and $B$.\n\nJamal is asked to decide whether $A$ and $B$ are independent. His working is shown below.\n\n$P(A) \\times P(B) = 0.18 \\times 0.28 = 0.0504$\n\n$P(A \\cap B) = 0.12$\n\n$0.0504 \\ne 0.12$, so $A$ and $B$ are not independent.\n\nIdentify Jamal's error, explain it, and give the correct conclusion.",
+  "hint": "Which regions of the diagram make up the whole of event $A$?",
+  "answer": "Jamal used only the \"$A$ only\" and \"$B$ only\" regions. Correctly, $P(A) = 0.3$ and $P(B) = 0.4$, so $P(A)P(B) = 0.12 = P(A \\cap B)$: $A$ and $B$ **are** independent.",
+  "solution": "**Error:** the first line. Jamal took $P(A) = 0.18$ and $P(B) = 0.28$, but those are the regions \"$A$ only\" and \"$B$ only\". Event $A$ is the **whole** circle, which includes the overlap.\n\n**Correct working:**\n$$P(A) = 0.18 + 0.12 = 0.3$$\n$$P(B) = 0.12 + 0.28 = 0.4$$\n$$P(A) \\times P(B) = 0.3 \\times 0.4 = 0.12$$\n\nFrom the diagram $P(A \\cap B) = 0.12$.\n\nSince $P(A \\cap B) = P(A) \\times P(B)$, the events $A$ and $B$ **are independent**.\n\n(Check: $0.18 + 0.12 + 0.28 + 0.42 = 1$ ✓)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q09",
+  "topicId": "prob-rules-formal",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A café records the orders of 400 customers one morning.\n\n* 260 customers ordered a coffee.\n* 140 customers ordered a cake.\n* 98 customers ordered both a coffee and a cake.\n\nOne of these customers is chosen at random. $C$ is the event \"ordered a coffee\" and $K$ is the event \"ordered a cake\".\n\n(a) Find $P(C \\cup K)$.\n(b) Determine, showing your working, whether $C$ and $K$ are independent.\n(c) Find $P(K \\mid C)$, giving your answer to 3 significant figures, and comment on what it tells the café owner.",
+  "hint": "Convert each count to a probability by dividing by 400. For (b), compare $P(C) \\times P(K)$ with $P(C \\cap K)$.",
+  "answer": "(a) $0.755$ (b) $P(C)P(K) = 0.2275 \\ne 0.245 = P(C \\cap K)$, so not independent. (c) $P(K \\mid C) \\approx 0.377$, which is greater than $P(K) = 0.35$: coffee buyers are more likely than average to buy cake.",
+  "solution": "$$P(C) = \\frac{260}{400} = 0.65, \\quad P(K) = \\frac{140}{400} = 0.35, \\quad P(C \\cap K) = \\frac{98}{400} = 0.245$$\n\n(a)\n$$P(C \\cup K) = 0.65 + 0.35 - 0.245 = 0.755$$\n\n(b)\n$$P(C) \\times P(K) = 0.65 \\times 0.35 = 0.2275$$\nThis is not equal to $P(C \\cap K) = 0.245$, so $C$ and $K$ are **not independent**.\n\n(c)\n$$P(K \\mid C) = \\frac{P(C \\cap K)}{P(C)} = \\frac{98}{260} = 0.3769\\ldots \\approx 0.377$$\n\nOf all customers, $35\\%$ ordered cake, but of the coffee drinkers about $37.7\\%$ did. Ordering a coffee makes a customer slightly more likely to order a cake, so the owner might offer a coffee-and-cake deal.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q10",
+  "topicId": "prob-rules-formal",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "question": "Events $A$ and $B$ have $P(A) = 0.6$ and $P(B) = 0.7$.\n\n(a) Explain why $A$ and $B$ cannot be mutually exclusive.\n(b) Find the smallest possible value and the largest possible value of $P(A \\cap B)$. Justify each.\n(c) Find $P(A \\cap B)$ if $A$ and $B$ are independent, and check that it lies in your range from (b).",
+  "hint": "Rearrange the addition rule: $P(A \\cap B) = P(A) + P(B) - P(A \\cup B)$. What is the largest $P(A \\cup B)$ can be? Can the overlap be bigger than either event?",
+  "answer": "(a) If they were mutually exclusive, $P(A \\cup B) = 0.6 + 0.7 = 1.3 > 1$, which is impossible. (b) Smallest $0.3$ (when $P(A \\cup B) = 1$), largest $0.6$ (when $A \\subseteq B$). (c) $0.42$, which lies between $0.3$ and $0.6$.",
+  "solution": "(a) If $A$ and $B$ were mutually exclusive then $P(A \\cap B) = 0$ and\n$$P(A \\cup B) = 0.6 + 0.7 = 1.3$$\nNo probability can exceed 1, so $A$ and $B$ **must** overlap: they cannot be mutually exclusive.\n\n(b) Rearranging the addition rule:\n$$P(A \\cap B) = 0.6 + 0.7 - P(A \\cup B) = 1.3 - P(A \\cup B)$$\n\n*Smallest:* $P(A \\cup B) \\le 1$, so $P(A \\cap B) \\ge 1.3 - 1 = 0.3$. This happens when $A \\cup B$ is certain (every outcome is in $A$ or $B$).\n\n*Largest:* $A \\cap B$ is part of $A$, so $P(A \\cap B) \\le P(A) = 0.6$. This happens when $A$ lies entirely inside $B$; then $P(A \\cup B) = P(B) = 0.7$ and $P(A \\cap B) = 1.3 - 0.7 = 0.6$.\n\nSo $0.3 \\le P(A \\cap B) \\le 0.6$.\n\n(c) Independent:\n$$P(A \\cap B) = 0.6 \\times 0.7 = 0.42$$\nand $0.3 \\le 0.42 \\le 0.6$ ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q11",
+  "topicId": "prob-rules-formal",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "prob-tree-diagrams",
+   "prob-conditional"
+  ],
+  "question": "On any school day the probability that it rains in the morning is $0.4$. If it rains, the probability that Kai cycles to school is $0.25$. If it does not rain, the probability that Kai cycles is $0.5$.\n\n$R$ is the event \"it rains in the morning\" and $C$ is the event \"Kai cycles to school\".\n\n(a) Find $P(R \\cap C)$ and $P(C)$.\n(b) Find $P(R \\cup C)$.\n(c) Are $R$ and $C$ independent? Give a reason.\n(d) Given that Kai cycled, find the probability that it rained that morning.",
+  "hint": "Use the multiplication rule $P(R \\cap C) = P(R) \\times P(C \\mid R)$, and the same idea for $R'$. A tree diagram may help.",
+  "answer": "(a) $P(R \\cap C) = 0.1$, $P(C) = 0.4$ (b) $0.7$ (c) No: $P(R)P(C) = 0.16 \\ne 0.1$ (equivalently $P(C \\mid R) = 0.25 \\ne 0.4 = P(C)$). (d) $0.25$",
+  "solution": "(a) Multiplication rule:\n$$P(R \\cap C) = P(R) \\times P(C \\mid R) = 0.4 \\times 0.25 = 0.1$$\n$$P(R' \\cap C) = P(R') \\times P(C \\mid R') = 0.6 \\times 0.5 = 0.3$$\n$$P(C) = 0.1 + 0.3 = 0.4$$\n\n(b)\n$$P(R \\cup C) = P(R) + P(C) - P(R \\cap C) = 0.4 + 0.4 - 0.1 = 0.7$$\n\n(c) $P(R) \\times P(C) = 0.4 \\times 0.4 = 0.16$, but $P(R \\cap C) = 0.1$. These are not equal, so $R$ and $C$ are **not independent**. In context: Kai is less likely to cycle when it rains ($0.25$) than overall ($0.4$).\n\n(d)\n$$P(R \\mid C) = \\frac{P(R \\cap C)}{P(C)} = \\frac{0.1}{0.4} = 0.25$$"
+ },
+ {
+  "id": "prob-rules-formal-q12",
+  "topicId": "prob-rules-formal",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 10,
+  "calculator": true,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 210\" width=\"340\" height=\"210\"><rect x=\"10\" y=\"10\" width=\"320\" height=\"190\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"95\" cy=\"110\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"175\" cy=\"110\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"255\" cy=\"110\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"45\" y=\"50\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">A</text><text x=\"175\" y=\"38\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">B</text><text x=\"305\" y=\"50\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">C</text><text x=\"70\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.2</text><text x=\"135\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.15</text><text x=\"175\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">p</text><text x=\"215\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">q</text><text x=\"280\" y=\"115\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">r</text><text x=\"305\" y=\"190\" text-anchor=\"middle\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">0.1</text></svg>",
+  "question": "The Venn diagram shows the probabilities associated with three events $A$, $B$ and $C$, where $p$, $q$ and $r$ are probabilities.\n\nThe events $A$ and $C$ are mutually exclusive. The events $B$ and $C$ are independent.\n\nGiven that $P(C) = 0.25$,",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "find the value of $p$,",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "show that $q = 0.15$,",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "find the value of $r$.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Determine whether or not $A$ and $B$ are independent. You must show your working.",
+    "marks": 2
+   },
+   {
+    "label": "e",
+    "prompt": "Find $P(A \\mid B \\cup C)$.",
+    "marks": 2
+   }
+  ],
+  "hint": "All the probabilities in the diagram add to 1, and $P(C) = q + r$. For (b), write $P(B \\cap C) = P(B) \\times P(C)$ with $P(B)$ in terms of $q$.",
+  "answer": "(a) $p = 0.3$ (b) shown (c) $r = 0.1$ (d) $P(A)P(B) = 0.21 \\ne 0.15 = P(A \\cap B)$, so not independent (e) $\\frac{3}{14}$",
+  "solution": "**(a)** Total probability is 1:\n$$0.2 + 0.15 + p + q + r + 0.1 = 1 \\;\\Rightarrow\\; p + q + r = 0.55$$ M1\n\n$P(C) = q + r = 0.25$, so\n$$p = 0.55 - 0.25 = 0.3$$ A1\n\n**(b)** $B$ and $C$ independent: $P(B \\cap C) = P(B) \\times P(C)$ M1\n\n$P(B) = 0.15 + 0.3 + q = 0.45 + q$, so\n$$q = 0.25(0.45 + q)$$ M1\n$$q = 0.1125 + 0.25q \\;\\Rightarrow\\; 0.75q = 0.1125 \\;\\Rightarrow\\; q = 0.15$$ A1 (cso)\n\n**(c)** $r = 0.25 - 0.15 = 0.1$ B1\n\n**(d)** $P(A) = 0.2 + 0.15 = 0.35$ and $P(B) = 0.45 + 0.15 = 0.6$.\n$$P(A) \\times P(B) = 0.35 \\times 0.6 = 0.21$$ M1\n$P(A \\cap B) = 0.15 \\ne 0.21$, so $A$ and $B$ are **not independent**. A1\n\n**(e)** $A$ and $C$ do not overlap, so $A \\cap (B \\cup C) = A \\cap B$, with probability $0.15$.\n$$P(B \\cup C) = 0.15 + 0.3 + 0.15 + 0.1 = 0.7$$ M1\n$$P(A \\mid B \\cup C) = \\frac{0.15}{0.7} = \\frac{3}{14}$$ A1",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q13",
+  "topicId": "prob-rules-formal",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "prob-venn-set-notation"
+  ],
+  "question": "The events $A$ and $B$ are independent, with\n$$P(A \\cap B') = 0.28 \\quad \\text{and} \\quad P(A' \\cap B) = 0.18$$\n\nLet $P(A \\cap B) = x$.\n\n(a) Show that $x^2 - 0.54x + 0.0504 = 0$.\n(b) Hence find the two possible values of $P(A \\cap B)$, and for each one find $P(A)$ and $P(B)$.\n(c) Show that both solutions give a valid set of probabilities.",
+  "hint": "Write $P(A)$ and $P(B)$ in terms of $x$ (draw a Venn diagram), then use $P(A \\cap B) = P(A)P(B)$.",
+  "answer": "(a) shown (b) $x = 0.12$: $P(A) = 0.4$, $P(B) = 0.3$; or $x = 0.42$: $P(A) = 0.7$, $P(B) = 0.6$ (c) the \"neither\" region is $0.42$ or $0.12$, both between 0 and 1.",
+  "solution": "(a) From a Venn diagram, $P(A) = 0.28 + x$ and $P(B) = 0.18 + x$.\n\nIndependence gives $P(A \\cap B) = P(A) \\times P(B)$:\n$$x = (0.28 + x)(0.18 + x) = 0.0504 + 0.46x + x^2$$\n$$x^2 - 0.54x + 0.0504 = 0$$\n\n(b) Quadratic formula:\n$$x = \\frac{0.54 \\pm \\sqrt{0.54^2 - 4(0.0504)}}{2} = \\frac{0.54 \\pm \\sqrt{0.2916 - 0.2016}}{2} = \\frac{0.54 \\pm 0.3}{2}$$\n$$x = 0.42 \\quad \\text{or} \\quad x = 0.12$$\n\nIf $x = 0.12$: $P(A) = 0.4$, $P(B) = 0.3$ (check: $0.4 \\times 0.3 = 0.12$ ✓).\n\nIf $x = 0.42$: $P(A) = 0.7$, $P(B) = 0.6$ (check: $0.7 \\times 0.6 = 0.42$ ✓).\n\n(c) $P(A' \\cap B') = 1 - (0.28 + 0.18 + x) = 0.54 - x$.\n\nFor $x = 0.12$: $0.42$; for $x = 0.42$: $0.12$. Every region is between 0 and 1 and the regions add to 1 in each case, so **both** solutions are valid."
+ },
+ {
+  "id": "prob-rules-formal-q14",
+  "topicId": "prob-rules-formal",
+  "difficulty": 4,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "question": "(a) Prove that if $A$ and $B$ are independent events, then $A$ and $B'$ are also independent.\n(b) Hence prove that $A'$ and $B'$ are independent.\n(c) Events $A$ and $B$ are independent with $P(A) = 0.3$ and $P(B) = 0.6$. Use (b) to find the probability that neither $A$ nor $B$ occurs, and check your answer with the addition rule.",
+  "hint": "$A$ is split into two mutually exclusive pieces: $A \\cap B$ and $A \\cap B'$. So $P(A \\cap B') = P(A) - P(A \\cap B)$.",
+  "answer": "(a) $P(A \\cap B') = P(A) - P(A)P(B) = P(A)[1 - P(B)] = P(A)P(B')$ (b) apply (a) with the roles of the events swapped (c) $0.28$",
+  "solution": "(a) $A \\cap B$ and $A \\cap B'$ are mutually exclusive and together make up $A$, so\n$$P(A \\cap B') = P(A) - P(A \\cap B)$$\n\nSince $A$ and $B$ are independent, $P(A \\cap B) = P(A)P(B)$:\n$$P(A \\cap B') = P(A) - P(A)P(B) = P(A)\\,[1 - P(B)] = P(A)\\,P(B')$$\nSo $A$ and $B'$ are independent. $\\blacksquare$\n\n(b) By (a), $A$ and $B'$ are independent. Independence is symmetric, so $B'$ and $A$ are independent. Applying the result of (a) to the pair $B'$, $A$ (with $B'$ in the role of the first event and $A$ in the role of the second) shows that $B'$ and $A'$ are independent:\n$$P(A' \\cap B') = P(A')\\,P(B')$$ $\\blacksquare$\n\n(c) By (b):\n$$P(A' \\cap B') = (1 - 0.3)(1 - 0.6) = 0.7 \\times 0.4 = 0.28$$\n\nCheck: $P(A \\cup B) = 0.3 + 0.6 - 0.3 \\times 0.6 = 0.9 - 0.18 = 0.72$, so $P(\\text{neither}) = 1 - 0.72 = 0.28$ ✓"
+ },
+ {
+  "id": "prob-rules-formal-q15",
+  "topicId": "prob-rules-formal",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A home alarm system has a motion sensor and a siren. The alarm fails to work if **either** the sensor fails **or** the siren fails (or both).\n\nOn a given night the probability that the sensor fails is $0.03$ and the probability that the siren fails is $0.05$. The two components fail independently.\n\n(a) Use the addition rule to find the probability that the alarm fails.\n(b) Check your answer by first finding the probability that the alarm works.",
+  "hint": "Independent, so $P(\\text{both fail}) = 0.03 \\times 0.05$. For (b), the alarm works only if both components work.",
+  "answer": "(a) $0.0785$ (b) $1 - 0.97 \\times 0.95 = 1 - 0.9215 = 0.0785$",
+  "solution": "Let $S$ = \"sensor fails\" and $N$ = \"siren fails\".\n\n(a) Independent, so\n$$P(S \\cap N) = 0.03 \\times 0.05 = 0.0015$$\n$$P(S \\cup N) = 0.03 + 0.05 - 0.0015 = 0.0785$$\n\n(b) The alarm works only if both components work. Since $S$ and $N$ are independent, so are $S'$ and $N'$:\n$$P(\\text{works}) = P(S' \\cap N') = 0.97 \\times 0.95 = 0.9215$$\n$$P(\\text{fails}) = 1 - 0.9215 = 0.0785 \\text{ ✓}$$\n\nNote that just adding $0.03 + 0.05 = 0.08$ would count the nights when both fail twice.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "prob-rules-formal-q16",
+  "topicId": "prob-rules-formal",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "prob-sample-spaces"
+  ],
+  "question": "Two fair six-sided dice, one red and one blue, are rolled. Define the events\n\n* $A$: the red dice shows an even number,\n* $B$: the blue dice shows an even number,\n* $C$: the total of the two scores is odd.\n\n(a) Show that each of the pairs $A$ and $B$, $A$ and $C$, $B$ and $C$ is independent.\n(b) Find $P(A \\cap B \\cap C)$ and compare it with $P(A)P(B)P(C)$.\n(c) Sara says: \"If every pair of three events is independent, then all three can be multiplied together to find the probability that they all happen.\" Comment on Sara's claim.",
+  "hint": "Only whether each score is odd or even matters, and each dice is even with probability $\\frac{1}{2}$. When is a total odd?",
+  "answer": "(a) $P(A) = P(B) = P(C) = \\frac{1}{2}$ and each pairwise intersection has probability $\\frac{1}{4} = \\frac{1}{2} \\times \\frac{1}{2}$. (b) $P(A \\cap B \\cap C) = 0 \\ne \\frac{1}{8}$ (c) Sara is wrong: these events are pairwise independent but $P(A \\cap B \\cap C) \\ne P(A)P(B)P(C)$.",
+  "solution": "Each dice shows an even number with probability $\\frac{3}{6} = \\frac{1}{2}$, independently of the other.\n\nA total is odd exactly when one score is odd and the other is even:\n$$P(C) = P(\\text{red even, blue odd}) + P(\\text{red odd, blue even}) = \\tfrac{1}{4} + \\tfrac{1}{4} = \\tfrac{1}{2}$$\n\n(a)\n* $A \\cap B$: both even. $P(A \\cap B) = \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4} = P(A)P(B)$ ✓ (the dice are independent).\n* $A \\cap C$: red even **and** total odd, i.e. red even and blue odd. $P(A \\cap C) = \\frac{1}{4} = \\frac{1}{2} \\times \\frac{1}{2} = P(A)P(C)$ ✓\n* $B \\cap C$: blue even and red odd. $P(B \\cap C) = \\frac{1}{4} = P(B)P(C)$ ✓\n\nSo each pair is independent.\n\n(b) If both dice are even the total is even, so $A \\cap B \\cap C$ is impossible:\n$$P(A \\cap B \\cap C) = 0, \\qquad P(A)P(B)P(C) = \\tfrac{1}{8}$$\nThese are not equal.\n\n(c) Sara is **wrong**. Pairwise independence does not guarantee that the three events are independent together. Here, knowing $A$ alone tells you nothing about $C$, and knowing $B$ alone tells you nothing about $C$, but knowing $A$ **and** $B$ together tells you for certain that $C$ has not happened."
+ },
+ {
+  "id": "prob-rules-formal-q17",
+  "topicId": "prob-rules-formal",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "calc-stationary-points"
+  ],
+  "question": "The events $A$ and $B$ are independent, with $P(A) = p$ and $P(B) = 2p$, where $0 < p \\le \\frac{1}{2}$.\n\n(a) Show that the probability that **exactly one** of $A$ and $B$ occurs is $3p - 4p^2$.\n(b) Find the value of $p$ for which this probability is greatest, and state the greatest value.\n(c) Hence explain why the probability that exactly one of the events occurs can never be $0.6$.",
+  "hint": "Exactly one $= P(A \\cup B) - P(A \\cap B)$. For (b), complete the square or differentiate.",
+  "answer": "(a) shown (b) $p = \\frac{3}{8}$, greatest value $\\frac{9}{16}$ (c) $\\frac{9}{16} = 0.5625 < 0.6$",
+  "solution": "(a) Independent, so $P(A \\cap B) = p \\times 2p = 2p^2$.\n\n\"Exactly one\" is the union with the overlap removed:\n$$P(\\text{exactly one}) = P(A \\cup B) - P(A \\cap B) = (p + 2p - 2p^2) - 2p^2 = 3p - 4p^2$$\n\n(b) Let $f(p) = 3p - 4p^2$. Then\n$$f'(p) = 3 - 8p = 0 \\;\\Rightarrow\\; p = \\tfrac{3}{8}$$\n$f''(p) = -8 < 0$, so this is a maximum. (Alternatively, $f(p) = \\frac{9}{16} - 4\\left(p - \\frac{3}{8}\\right)^2$.)\n\n$p = \\frac{3}{8}$ is allowed since $P(B) = \\frac{3}{4} \\le 1$.\n$$f\\left(\\tfrac{3}{8}\\right) = \\tfrac{9}{8} - 4 \\times \\tfrac{9}{64} = \\tfrac{9}{8} - \\tfrac{9}{16} = \\tfrac{9}{16}$$\n\n(c) The greatest possible value is $\\frac{9}{16} = 0.5625$, and $0.6 > 0.5625$, so the probability of exactly one event occurring can never be $0.6$."
+ }
+]
