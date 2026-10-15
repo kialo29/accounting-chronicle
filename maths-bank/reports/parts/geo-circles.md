@@ -9,3 +9,6 @@ All answers independently confirmed (e.g. q07 7.96 cm, 7.98 cm, 199 cm², q10 9.
 
 ### Diagram audit
 7 diagrams checked: 7 ok, 0 fixed.
+
+### Scope coverage
+All 6 scope items covered. Key idea extended (data/topics-fixes/geo-circles.json) to mention: parts of a circle (radius, chord, diameter, tangent, arc, sector, segment).

@@ -5,3 +5,6 @@ All answers independently re-derived (blind) and matched; Venn diagrams (q08, q1
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered.

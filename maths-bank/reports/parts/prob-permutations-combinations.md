@@ -5,3 +5,6 @@ All answers independently re-derived (blind) and matched (e.g. CALCULUS 5040 / 1
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 5 scope items covered.

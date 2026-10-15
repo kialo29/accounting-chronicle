@@ -9,3 +9,6 @@ All answers independently confirmed (e.g. q03 $10+6\pi \approx 28.8$ cm, q04 $30
 
 ### Diagram audit
 7 diagrams checked: 7 ok, 0 fixed.
+
+### Scope coverage
+All 9 scope items covered. Key idea extended (data/topics-fixes/geo-constructions-loci.json) to mention: copying a segment/angle, parallel line through a point, inscribed hexagon/triangle/square, conditions for a unique triangle.

@@ -8,3 +8,6 @@ All answers were re-derived independently. The diagram angles were computed from
 7 diagrams checked: 5 ok, 2 fixed.
 geo-polygon-angles-q05 — the triangles were numbered 1 to 5, which gives away part (a), "How many triangles are there?" — removed the numbers.
 geo-polygon-angles-q08 — the angle labels sat about 42 px from their vertices, so 110°/125° and 150°/95° were hard to tell apart — moved each label in along its angle bisector, close to its own arc.
+
+### Scope coverage
+All 4 scope items covered.

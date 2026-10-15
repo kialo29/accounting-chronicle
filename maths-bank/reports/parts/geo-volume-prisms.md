@@ -9,3 +9,6 @@ Checked 18 questions: 17 ok, 0 fixed, 1 clarified. Topic details: ok
 5 diagrams checked: 3 ok, 2 fixed.
 geo-volume-prisms-q08 — the "5 cm" label sat on the sloping side of the triangle — moved it clear of the line.
 geo-volume-prisms-q17 — "2 m" was placed beside the back sloping edge, which is the triangle's slant side, not the trough's length, and "40 cm" floated beside the slant edge with no height line — moved "2 m" to the length edge and added a dashed perpendicular depth line with a right-angle mark and the "40 cm" label.
+
+### Scope coverage
+All 5 scope items covered.

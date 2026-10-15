@@ -9,3 +9,6 @@ All answers were re-derived independently. All 17 diagrams and the worked-exampl
 geo-parallel-lines-angles-q10 — the parallel-arrow chevron on BC sat on top of vertex C and the angle-c arc — moved the chevron to the middle of BC.
 geo-parallel-lines-angles-q17 — labels P and Q were drawn on the transversal (Q overlapped the line) — moved both labels clear of the line.
 worked example 1 (data/topics-fixes/geo-parallel-lines-angles.json) — angle labels had no arcs, the Q label sat on the transversal and the transversal made 60° instead of 58° — redrew the transversal at 58°, added arcs for 58°, x and y, and moved the P and Q labels clear of the lines.
+
+### Scope coverage
+All 4 scope items covered.

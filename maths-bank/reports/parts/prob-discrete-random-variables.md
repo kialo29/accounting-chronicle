@@ -5,3 +5,6 @@ All answers independently re-derived (blind) and matched (e.g. q11 distribution 
 
 ### Diagram audit
 1 diagrams checked: 1 ok, 0 fixed.
+
+### Scope coverage
+All 4 scope items covered.

@@ -11,3 +11,6 @@ All answers independently confirmed (e.g. q06 42 cm / 73 cm², q10 46 cm / 60 cm
 ### Diagram audit
 14 diagrams checked: 13 ok, 1 fixed.
 geo-perimeter-area-q13 — the "64 m" label touched the sloping side — moved it slightly right.
+
+### Scope coverage
+All 5 scope items covered.

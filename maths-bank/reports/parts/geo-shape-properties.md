@@ -9,3 +9,6 @@ For q16 the 20 patterns with a line of symmetry and the 4 with rotational symmet
 
 ### Diagram audit
 11 diagrams checked: 11 ok, 0 fixed.
+
+### Scope coverage
+All 3 scope items covered.

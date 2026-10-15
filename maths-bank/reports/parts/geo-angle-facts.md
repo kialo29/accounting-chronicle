@@ -6,3 +6,6 @@ All answers were re-derived independently. All 12 diagrams were rendered and the
 
 ### Diagram audit
 12 diagrams checked: 12 ok, 0 fixed.
+
+### Scope coverage
+All 7 scope items covered. Key idea extended (data/topics-fixes/geo-angle-facts.json) to mention: exterior angle of a triangle = sum of interior opposite angles.

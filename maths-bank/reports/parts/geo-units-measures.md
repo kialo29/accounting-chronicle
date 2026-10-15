@@ -9,3 +9,6 @@ All answers independently confirmed (e.g. q12 788.4 litres ≈ 790 litres, q14 1
 
 ### Diagram audit
 2 diagrams checked: 2 ok, 0 fixed.
+
+### Scope coverage
+All 6 scope items covered. Key idea extended (data/topics-fixes/geo-units-measures.json) to mention: dimensional analysis with conversion factors for rates, choosing units and accuracy.
