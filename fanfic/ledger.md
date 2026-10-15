@@ -11,6 +11,7 @@
 - [Ch08] Ordaine (Outer Rim, sea-cliff batteries): Anakin burned left armpit to lower ribs. Dalo Pesk, Rodian broker, Kesh Arcade stall 41, found dead unmarked; shutter runners fresh-oiled, 7 datapads gone, cam's 4 screws laid in a row; neighboring Ugnaught saw no visitors. Appeal denied in 11 days. Narkis rule: no visitors first 90 days (Commandant's discretion).
 - [Ch09] Quota 40 blocks/crew. Tess is 61. Cut Three, terrace eleven: camera frozen 2 yrs (Vorne ordered Sgt Holt to fix it). Ahsoka's right shoulder injured. Krasso's statement admits he attacked first and owes her a debt; Ahsoka 10 days in the Well, Krasso 14 (after medical treats his hands). Merrick Tal: Commander, Third Raxus Picket, schoolteacher's son, held 11 months 22 days 'for exchange'; hears the guard channel through the floor; gets old Holonet bulletins on a datapad weekly. An unnamed Zabrak woman inmate warned Ahsoka.
 - [Ch10] Aide Dace Orrin (young human, left wrist). Healer-Master Ondra Vey (human woman, seventies, cropped grey hair, gruff). Palpatine's sealed holo: auxiliary maintenance camera in the upper service passage, Military Operations Center. Healer circuit: Coruscant Central, Kessan Point, Gallia Orbital Holding, Narkis-Nine; ~6 weeks; departs 20 days after Ch10 by Chancellery courier. Collars cause neck nerve inflammation, headaches, seizures.
+- [Ch11] Anakin's visit was day 53 (Ring One room); Vorne witnessed him Force-crush a steel cup. Barriss arrived day 92 (39 days later) by white-and-red Chancellery courier; she knows of Anakin's visit. Pell: Rodian inmate, 19, Ring Five, saved by Ahsoka. Ahsoka thinks Barriss's fourth candle is for Letta.
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -23,6 +24,7 @@
 - [Ch08] Windu's letter to Palpatine (asking him to deny Anakin's requests) unanswered; Palpatine hinted at postwar amnesty; Anakin hasn't told Padmé about Pesk.
 - [Ch09] Ahsoka now asks who knew she'd go to the warehouse — she must NOT suspect Barriss by name until Ch21; she trusts her friend and refuses to follow the thought (especially after Barriss heals her in Ch11).
 - [Ch10] Barriss is Palpatine's informant; she holds Luminara's account of the Council's fears about Anakin. Luminara's doubt deepening ('a door that has closed').
+- [Ch11] Ahsoka warned Barriss to beware a 'cleaner'. Anakin hinted someone arranged the frozen-camera terrace. CLIFFHANGER to resolve at the opening of Ch15 (next Ahsoka POV): Barriss filed a medical note on collar nerve damage; Vorne arrives at Ahsoka's cot with the collar control — she recalibrates the collar (lower dampening to prevent seizures); Ahsoka feels only a faint, unusable whisper/echo of the Force — NOT a release. The full release is Ch15's mine collapse.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -34,4 +36,5 @@
 - [Ch08] Anakin holds one supervised Narkis visit permit (2 hrs max, overruling Vorne), signed 'So she knows. —P.'
 - [Ch09] Ahsoka back in cell 4-17, right shoulder hurt, meditating without the Force.
 - [Ch10] Barriss now sleeps and her hands are steady (the calm of surrender).
+- [Ch11] ~Day 92 at Narkis. Ahsoka healed (shin, shoulder).
 
