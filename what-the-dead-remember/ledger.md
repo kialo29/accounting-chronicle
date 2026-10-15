@@ -1,91 +1,54 @@
 ## Facts established
-- Canon lines spent: "You were right about me." / "Tell your sister... you were right."; "Master Skywalker, there are too many of them. What are we going to do?"; "Changed, you are. Grown."; "Her path, her own it is."; "Found her, you did." / "Found you, she did."; "I won't leave you. Not this time." / "Then you will die."; "Anakin Skywalker was weak. I destroyed him."; "Hey, Skyguy"; "Skyguy" and "Snips" (once aloud, once in notes each); "I would rather you lied to me well than badly."; "My student's student. And his."; "If he offers you a drink, then you have had a long evening and we are going home."; "Ani? My goodness, you've grown."; "I know." / "I suppose I don't."; "The boy is not yours, and he is not mine. Someone has had him." / "Then we will find out who." / "It is how it made you." "You were right about me" silently echoed to Padmé's image (Ch 13).
-- Day 1 (26 BBY): Anakin wakes in his 15-year-old body; Sidious's death a "hole."
-- Hawkbat Clan: Anakin aids Drallig each tenday. Kessa Ruun, Ilyo, Brannick, Wix, Tam Dorreth. Clan-mother Master Imari Sen (human, grey hair, hands in sleeves). Drallig: "I didn't teach him that."
-- Ahsoka Tano, 10: saber reversed since seven; grey flimsi list, eight Togruti lines; reversed Jar'Kai one night in five; asked Plo whether a dream can be true; Caleb Dume (7, Bear) follows her; spill hers alone. Healer's note (31 BBY, age five, night terrors).
-- Gathering: "Tano seventh of seven." Crystals: Tam blue, Wix green, Ilyo blue, Brannick green, Kessa blue, Tano green. Huyang recalls Anakin's blue crystal (age ten).
-- Ilum: reveal one lived; both know the other returned. Anakin's war shield (hangar-noise / false surface / old wall), taught after Christophsis, now recognised in Ahsoka.
-- Anakin told Ahsoka the Temple in full: Drallig killed in Room of a Thousand Fountains, ~forty paces from ledge; eight children in Council chamber.
-- Exchanged: Rex alive; Grand Inquisitor = Pau'an Temple Guard, now on Council tower doors; Kanan = Caleb/Ezra/Malachor blinding; Maul on Mandalore; Death Star, Alderaan, Obi-Wan's death; Dooku executed; Luke, Leia; Kamino log; Rex's chip surgery on the Venator.
-- Thin bond made on nineteenth night after Crucible's return (day ~51); Ahsoka may cut it.
-- Dead-drop: waterproof sample box under moss, ledge behind third waterfall (east door count), Room of a Thousand Fountains; code Aurebesh shifted seven; both sign "S."
-- Yoda reported Ilum breach as "a boy afraid for a child"; "which is he?" / "He is fifteen." Plo: Tano asked Huyang "whether a crystal could choose wrong."
-- Archive: eleven letters from Anakin, nine from Shmi, over three years. Shmi names Cliegg, Owen (16), Watto's tin, the apron. Cipher keyed to first respirator unit's serial. Carnelion IV matches memory.
-- Queries, 28 BBY, terminal four: Obi-Wan's "Kamino" (forty minutes, null), then "Sifo-Dyas" four days later (eleven minutes). Kamino tagged KENOBI, O., two years old. Eight-day slice, via dead librarian's account, traced by Jocasta Nu to Padawan Skywalker.
-- Obi-Wan's night-pad: two columns (written / not written); gained "He failed the circle at the narrow end."
-- Second spill (night day 10-11): 31+ younglings shared a dream (stair, boots, gate, water, circle of chairs, blue light); centre on Anakin's level. Vokara Che: "a wall, old and scarred, as if built over years."
-- Windu: Anakin lied; Windu will report "a nightmare."
-- Palpatine found the wall, pressed nothing; knows Crucible date, Bellas bout. Sidious found it 22 days before; taught Sith shielding to Maul (unnamed) and Dooku. Temple leaks via Knight Aben Tuur, Vos-Kerrick's dining chain.
-- Audiences: tenth-day since age nine; Obi-Wan waited six years in Monument Plaza; Palpatine: "forty times." Sly Moore in outer office. One Chancellor audience since Ilum.
-- Mirren Dask: invented crush (human Padawan, Vos-Kerrick's politics class).
-- Bellas bout: three thrown; one won by instinct (blade a finger from her throat). Penances: Bellas, tenday with Bear Clan; Anakin, Drallig's stroke each morning until Crucible leaves.
-- Convor: green, owl-like, does not fly.
-- Amidala/Organa/Mothma bill: Outer Rim franchise disclosure, Rim tribunal. Speeder day (Sabo Thane's two-seater), destination unrecorded.
-- Dooku: never met Anakin; met Kenobi four times; touched Anakin's mind against orders; recognised wall as Sith-built grammar.
-- Reception (Dome Gallery): Dooku's touch went through surface to wall; Anakin's hatred flared one second; Palpatine: "two instruments strike the same note."
-- Dead-drop note: "Dooku will touch," "Palpatine will watch Dooku watch," "Don't look at her like she's already dead"; reply "Three for three."
-- Terrace: Padmé's letters, 32 BBY to "Ani Skywalker" (returned), 31 BBY to "Padawan Skywalker, care of Master Kenobi" (unanswered). "You sound like Captain Typho."
-- Arrangements: Jango hired (won't touch the Padawan, off-world 11-12 days, "the boy stays here"); Lom Pyke returned "a certain small item" (Sifo-Dyas's saber implied); survey team under Deshan Orr; Senator Caius Verrane of Tyrrhus will ask for Kenobi by name.
+- Day 1 (26 BBY): Anakin wakes at fifteen.
+- Ahsoka Tano, 10: grey flimsi list of eight Togruti lines; asked Plo if a dream can be true. Caleb Dume (7, Bear) follows her.
+- Ilum: reveal one; both know the other returned. Anakin's war shield (hangar-noise / false surface / old wall) now recognised in Ahsoka.
+- Anakin told Ahsoka the Temple: Drallig killed in the Room of a Thousand Fountains; eight children in the Council chamber.
+- Exchanged: Rex alive; Grand Inquisitor (Pau'an) on Council tower doors; Kanan blinded; Maul on Mandalore; Rex's chip surgery on the Venator.
+- Thin bond made nineteenth night after Crucible's return (day ~51); Ahsoka may cut it.
+- Dead-drop: waterproof sample box under moss, ledge behind third waterfall (east door count). Code: Aurebesh shifted seven; both sign "S."
+- Yoda: Ilum breach "a boy afraid for a child"; "which is he?" / "He is fifteen."
+- Archive: eleven letters from Anakin, nine from Shmi (Cliegg, Owen, Watto's tin, the apron). Cipher keyed to first respirator unit's serial.
+- Queries, 28 BBY: "Kamino" (forty minutes, null), "Sifo-Dyas" four days later (eleven minutes). Kamino tagged KENOBI, O.; traced by Jocasta Nu to Padawan Skywalker.
+- Obi-Wan's cover: Sifo-Dyas friend of Qui-Gon and Dooku; Ord Mantell docket toward Rishi Maze; "lost."
+- Second spill: 31+ younglings dreamt stair, gate, water, circle of chairs, blue light. Che: "a wall, old and scarred."
+- Palpatine found the wall, pressed nothing. Sidious found it 22 days before; taught Sith shielding to Maul and Dooku.
+- Obi-Wan waited six years in Monument Plaza; Palpatine: "forty times."
+- Convor: green, owl-like, does not fly; first sat within reach.
+- Dooku touched Anakin's mind against orders; recognised the wall as Sith-built grammar.
+- Dead-drop note: "Dooku will touch"; "Palpatine will watch Dooku watch"; "Don't look at her like she's already dead"; reply "Three for three."
+- Padmé's letters: 32 BBY to "Ani Skywalker" (returned); 31 BBY to "Padawan Skywalker, care of Master Kenobi" (unanswered; Obi-Wan holds it).
+- Jango hired: won't touch the Padawan; "the boy stays here." Lom Pyke returned "a certain small item" (Sifo-Dyas's saber implied). Senator Caius Verrane of Tyrrhus to ask for Kenobi by name.
+- Oba Diah: round tower room, floor drains, two-storey cargo gantry. Droids bore Trade Federation hull-codes. Pilot given six hours; courier left when they ran out.
+- Oba Diah fight: Anakin fought as Vader before Obi-Wan and Jango's recorder (Form V overhand, Force choke, droids halved, two Pykes dead or broken). Obi-Wan's saber clipped beside Anakin's.
+- Ahsoka's hangar theft: Temple Guard lie (Plo's message); Thane lie (repulsor test, "on the log already").
+- Obi-Wan: shot through left side and shoulder; fell from gantry; sealed in tank for days; weak a month after; left arm in harness sling; climbed 412 steps against healers' orders.
+- Council inquiry: Obi-Wan's lie (private comm, "the order was mine," surveyors to Eriadu, Verrane named aloud). Penalties: Anakin confined to Temple until Obi-Wan leaves tank; courier cost from Obi-Wan's stipend.
+- Plo: "I have no question." Windu: "I'd like to know which way."
+- Yoda, given shaped truth ("the boy had a vision of the end of the Order"): "the boy is not the shadow... afraid for him, you are." Will tell Council when "the while ends."
+- Ahsoka to Plo: "one day the Council will have to trust a child." Plo: "Then I will remember that you said it."
+- Three lists: Ahsoka's grey flimsi; Obi-Wan's forty-one names (begun third night, read only at night, face down by day, Anakin's name never written); Anakin's list (gained "I do not know which is worse").
+- Anakin slept nine hours unshielded, Obi-Wan holding the bond.
+- Ahsoka's theory: the Daughter's life (Mortis) carried her back; convor is the Daughter's, "perhaps not only" hers.
+- Jango paid revised price by Dooku; Fett: "That was not one." Open-handed choke is Sidious's grammar.
+- Sidious's timetable: ten years moved to this year; boy taken or broken; master removed without martyrdom; crisis, army, vote brought forward; "something under two years."
+- Verrane's Rim tariff on bulk freight, proposed at lunch with Federation liaison. Amidala's bill: tribunal clause "referred for study." Sidious knows Kenobi kept one letter back.
+- Padmé's Senate-liaison message asks after Padawan Skywalker since "the incident on Oba Diah"; committee to take evidence on Syndicate conduct.
+- Jango: "more money or a long way away"; recording reached Sidious. Windu demanded a full report ("theft" in writing).
+- Supper, 500 Republica: Obi-Wan's accompaniment refused, citing Che's notes; Palpatine shown the deepened vault, then by Anakin's choice one second of the reactor shaft.
+- Spent lines: "You were right about me"; "Master Skywalker, there are too many of them"; "Changed, you are. Grown."; "Her path, her own it is"; "Found her, you did"; "I won't leave you. Not this time"; "Hey, Skyguy"; "My student's student. And his"; "I know" / "I suppose I don't"; "Whatever you are hiding..." / "I will come back, my friend"; "I'm sorry, Anakin. For all of it"; "Stay with me, Ben"; "Anakin is gone. I am what remains"; "Master Kenobi" / "Ahsoka"; "You have grown, my boy" / "Yes, Chancellor."
+- Reserved, unspent: "I hate you!"; "You were my brother" (Ch 33); "Always in motion is the future."
 
 ## Open threads
-- Struck-bell note (below, east); convor unplaced; "who sent us" (Obi-Wan / the child / both / neither).
-- Obi-Wan: counting look; "not surprise" (day 19); unsaid hangar line "afraid of something on that ship, and it is not me"; the parry's origin; the wall; the queries (both know, neither raises).
-- Ahsoka: Plo's long look; Plo to "say a word" to Sen; dojo gallery presence (dust on rail, worn floor); Anakin's left wrist; Caleb's "going to be—"; Togruti mark beside "the Emperor."
-- Jocasta's trace, unraised; Council hunt for the shadow; Obi-Wan's seventh-hour tower visit (day 19).
-- Shmi's sealed reply (outcome unrecorded); Sidious's "third possibility"; Barriss ledger (Ch 28).
+- "Who sent us" (Obi-Wan / the child / both / neither); struck-bell note (below, east); convor unplaced.
+- Obi-Wan's unsaid "afraid of something on that ship, and it is not me"; "I did not go after you"; the queries (both know, neither raises).
+- Ahsoka's private count (Maul's offer, Inquisitors' faces) partly withheld; Plo knows and does not say.
+- Jocasta's trace, unraised; Shmi's sealed reply (unrecorded); Barriss ledger; Thane's grievance.
+- Sidious's "third possibility" (Naboo shaft) unspoken; he knows the boy built the wall and killed him once.
+- Padmé's message awaits Obi-Wan's planned reply: "excellent health, no account to share."
+- Argument: Anakin (kill Sidious now); Obi-Wan (not yet: martyr, Dooku's early speech, Federation droids); Ahsoka (chips first, Kamino, "they're six").
+- Whether unshielded sleep repeats without Obi-Wan in the chair.
 
 ## Current state
-- Night, ~twelve days after the reception. Dead-drop note under the moss: "Oba Diah. Pykes. It's a trap. Who asked for him by name?" signed S; awaiting Anakin's answer. Ahsoka awake beside Kessa, hand on chest; bond faint.
-- Oba Diah: Obi-Wan's departure imminent, request via Chancellor's office, Council unalarmed. Eleven surveyors, mineral ridge, "a tenday there and back," "routine." Ahsoka: Pykes hold hostages for clients, not fees; trip isolates Obi-Wan before an audience. Whether Anakin knows: bond too faint. Verrane's name unknown to both.
-- Obi-Wan knows Anakin read the queries; suspects aloud, names nothing. Ahsoka has read Anakin's post-reception note eleven times. Sen: "I am surprised at you."
-
-### After Ch 21
-- Facts established: Obi-Wan's cover story for the Kamino query (Sifo-Dyas as friend of Qui-Gon and Dooku; Dooku asked Qui-Gon about him in a corridor; a flimsi in Qui-Gon's treatise on the living Force; an Ord Mantell transit docket toward the Rishi Maze bearing an unknown word; "lost"); Obi-Wan never asked how Anakin got the logs; Council agreed Anakin stays at Obi-Wan's own request; hangar line spent: "Whatever you are hiding, I would still have you at my back. But not this time." / "I will come back, my friend." Malachor flash referred to without quoting the spent line. Anakin's list gained the "I do not know which is worse" entry.
-- Open threads: senator's name still unknown to Anakin and Ahsoka; Obi-Wan's case heavier than its contents (unasked); the audience falls while Obi-Wan is away; Ahsoka ignored "stay away from the hangar"; Jocasta's trace still unraised.
-- Current state: morning, day of departure; Obi-Wan on the north-bay courier bound for Oba Diah, ten days out; Anakin in the hangar with Sabo Thane; Ahsoka twenty metres away with a crew chief's permission slip; bond thin, door neither open nor shut.
-
-### After Ch 22
-- Facts established: Oba Diah tower room: round, drains in the floor, two-storey cargo gantry, narrow windows, forty-plus levels up; Lom Pyke called the Mandalorian "an observer, a courtesy to a client"; droids bore Trade Federation landing-craft hull-codes; Obi-Wan gave the pilot a six-hour limit; written undertakings signed in his full name on Syndicate flimsi; Obi-Wan noticed "something taken from the room recently" (saber unnamed); line spent: "I'm sorry, Anakin. For all of it."
-- Open threads: Jango's recording now holds Obi-Wan's fall and his silence at the gantry; the eleven in the lift, fate unseen; the Temple courier and its six-hour order; whether Obi-Wan lives; the senator from Tyrrhus (Verrane) known to Obi-Wan by name, not to Anakin or Ahsoka.
-- Current state: Obi-Wan shot through the left side and shoulder, fallen from the gantry to the floor, unconscious or near it; the bond, thin for months, pulled hard from the other end; reveal two (Ch 23) imminent.
-
-### After Ch 23
-- Facts established: Anakin fought as Vader in full before Obi-Wan's eyes and Jango's recorder (Form V overhand, Force choke on a Pyke, droids halved, two Pykes dead or broken); Ahsoka's hangar theft: Temple Guard lie (Plo's message), Thane lie (repulsor test, "on the log already", Anakin's thumb on the pad), log sliced beforehand under the crew chief's code; Temple courier gone from the pad (six hours ran out); Obi-Wan's saber recovered and clipped beside Anakin's; Orr's eleven freed, told to take the Pyke ship; Lom Pyke absent from the room; Anakin's vow ("Nobody has him... whatever I was, I am going to be it for this"); last line spent: "Stay with me, Ben."
-- Open threads: Jango's recording now holds the whole fight and his retreat, bound for Dooku/Sidious; Plo will deny the message within hours and Ahsoka will carry it; Thane robbed; Anakin absent from the Temple without leave; Obi-Wan heard "Ben" (reveal two lived in Ch 24).
-- Current state: hyperspace, courier bound for Coruscant; Obi-Wan on the deck, side and shoulder dressed, bleeding stopped, half-conscious, eyes on Anakin; Anakin kneeling with his hand on the dressing; Part Three closed.
-
-### After Ch 24
-- Facts established: reveal two lived; both now know the other returned and what each knows (Anakin: Bespin, Endor, Sidious into the shaft, mask, light; Obi-Wan: ridge, Owen/Beru, Inquisitors, Leia, cracked helmet, corridor, forty-one names on the list, Anakin not on it). Canon lines spent: "Anakin is gone. I am what remains." / "Then my friend is truly dead. Goodbye, Darth."; Mustafar six-line exchange ("You left me to burn." ... "So am I."). Referred to but unquoted: "You were right about me" (Ch 1), "I hate you!", "You were my brother" (reserved Ch 33).
-- Open threads: Obi-Wan still believes clones turned "on an order" and does not know of chips (Ch 25); "someone else at the Temple" named only as such; Jango's helmet recording acknowledged by both; Plo's forged leave must be covered; eleven surveyors loose with the story.
-- Current state: dawn, courier on Temple approach, nine minutes to the hangar; Obi-Wan against the aft bulkhead, left arm in a harness sling, dressing holding; agreed cover: truth as far as it goes, lies to match on the name, the fight, what they are, the son, and the six hours.
-
-### After Ch 25
-- Facts established: Obi-Wan's Council lie (private comm, "the order was mine", surveyors to Eriadu, Federation hull-codes given from memory, Verrane named aloud to Council); penalties: Anakin confined to Temple until Obi-Wan leaves the tank, courier cost from Obi-Wan's stipend; Plo saw the repulsor-test log entry and said "I have no question"; Windu: "I was wrong about you once this year, Skywalker. I'd like to know which way." Obi-Wan now knows: chips (Fives, Rex's surgery, Cody did not choose), Rex alive aged six on Kamino, the wall and Che's reading, Sidious's twenty-two days, Dooku's touch, Ahsoka's identity. Ahsoka and Anakin now know: Kamino/Sifo-Dyas/Pyke saber (taken from the tower room, Obi-Wan wagers to Dooku), Verrane's name. Lines spent: "Master Kenobi." / "Ahsoka."; "So we're all lying to everyone." / "Yes. Try to do it well." Obi-Wan's list laid face down, unshown (Ch 33).
-- Open threads: Ahsoka must tell Plo "something" (Obi-Wan's advice: frightened for a boy); Windu unconvinced and watching; Jango's recording with Dooku by morning; Thane's filed grievance; Anakin's cracked voice; Obi-Wan's "I did not go after you."
-- Current state: past the eleventh hour of the night, day of return; three on the ledge behind the third waterfall, lists on the stone; Obi-Wan due back in the tank by the third hour, sealed for days, weak a month after; Anakin confined to Temple; all three now know one another and what each knows.
-
-### After Ch 26
-- Facts established: Anakin slept nine hours unshielded with Obi-Wan holding the bond; no spill reached the Temple; Obi-Wan has now seen the suit, the tank window, the Inquisitor hunts, the Archives (Twi'lek Padawan on the stairs, Dooku's bust), Boba Fett naming Skywalker, Bespin and Endor from the inside. Obi-Wan 'did this before' for the boy's nightmares. No canon lines spent this chapter; "Anakin is gone. I am what remains." remains spent (Ch 24); "I hate you!" / "You were my brother" still reserved (Ch 33); "I am your father" not quoted.
-- Open threads: Obi-Wan's answer to "Can you still look at me?" unspoken (he looks; no speech after); Obi-Wan missed a night's tank return and looks ten years older, healers unaware; whether unshielded sleep can be repeated without him in the chair.
-- Current state: early morning, their quarters, the day after the first open night; Obi-Wan in the chair, hand on the blanket, sling on, grey; Anakin awake in the bed, jaw unaching, having asked in a boy's voice; Jango's recording with Dooku; Ahsoka still to tell Plo something.
-
-### After Ch 27
-- Facts established: Yoda asked directly; Obi-Wan's shaped truth ("the boy had a vision of the end of the Order; I believe it; ask me no more"); Yoda will not bring it to Council "not yet", has never lied to Council before, names the cost to both, and says "the boy is not the shadow... afraid for him, you are"; Yoda will tell Council when "the while ends" either way. Obi-Wan's list: forty-one names, begun third night with a name from the Temple security recording, read only at night, face down in drawer by day, Anakin's name never written. Dex consulted 28 BBY (Kamino: past the Rishi Maze, a season by courier); Obi-Wan chose the boy over the army. Obi-Wan still holds Padmé's 31 BBY letter and has told Anakin so. Qui-Gon silent four years running. No canon lines spent; "Snips"/"Skyguy" used in dialogue again (already spent in ledger). "Always in motion is the future" still unspent.
-- Open threads: Padmé's formal Senate-liaison message (asks after Padawan Skywalker after "the incident on Oba Diah"; committee will take evidence on Syndicate conduct); Obi-Wan's planned reply: "excellent health, no account to share"; Anakin's "Not yet." Yoda's "while" running; Windu to be looked away from. Argument unresolved: Anakin (kill Sidious now; knows 500 Republica eight nights in ten, the Works two), Obi-Wan (not yet: martyr, Dooku's speech early, Federation droids, Jedi who kill Chancellors are purged, Sidious not alone), Ahsoka (chips first, Kamino, "they're six").
-- Current state: night, ninth or tenth day after return; three on the ledge behind the third waterfall, not agreeing, not leaving; Obi-Wan two days out of the tank, sling on, climbed four hundred and twelve steps against healers' orders; Ahsoka's shoulder against his good side; Jango's recording with Dooku; Ahsoka still to tell Plo something.
-
-### After Ch 28
-- Facts established: Ahsoka told Plo the shaped truth (true dreams; "one day the Council will have to trust a child"); Plo: "Then I will remember that you said it," asked nothing, long look "no longer a question"; Ahsoka's theory, spoken aloud to Anakin only: the Daughter's life (Mortis) carried her back, the convor is the Daughter's, "perhaps not only" her; she explicitly does not know about Obi-Wan's return and says so; convor sat within reach for the first time (roof, dawn); Barriss towel returned ("Thank you, Tano"); Caleb: "When I'm big I'm going to be— I forgot." No canon lines spent; "Always in motion is the future" still unspent; "Snips"/"Skyguy" reused.
-- Open threads: Obi-Wan not yet told the Daughter theory ("He can have it tonight"); mechanism still unexplained beyond the Daughter; Plo now knows-and-does-not-say; Ahsoka's private count (Maul's offer, Inquisitors' faces, Kanan's blinding) still partly withheld from Anakin; Jango's recording with Dooku.
-- Current state: morning, ~eleventh or twelfth day after return; Anakin and Ahsoka on the ledge behind the third waterfall, his hand on her head; Obi-Wan two to three days out of the tank, sling on; the convor on the eastern roof; argument (Sidious now / chips first / not yet) still unresolved.
-
-### After Ch 29
-- Facts established: Jango paid a revised price by Dooku; Fett's message "I have fought Jedi... That was not one"; Sidious identifies the open-handed choke as his own grammar, taught to no one (neither "the one who had come before" nor Dooku); Dooku believed "nine parts in ten"; third possibility = the Naboo shaft, thought unfinished; plan moved from ten years to this year (boy taken or broken; master removed without martyrdom; crisis, Rim, Federation, army, vote all brought forward; Kaminoans to be hurried).
-- Facts established: politics: Rim tariff measure on bulk freight to be proposed by Verrane with Federation liaison's lunch; Amidala's Rim franchise bill to have tribunal clause "referred for study" and disclosure threshold narrowed; Organa/Mothma noted; Amidala moved higher on Sidious's unwritten list of nuisances, not yet targets; Sidious knows Kenobi kept one of her letters back; term arithmetic "something under two years".
-- Open threads: supper invitation to Padawan Skywalker alone, 500 Republica, evening of the twelfth, Council informed as courtesy (Windu addressed, Yoda copied); Jango now a loose end Sidious has flagged ("more money or a long way away"); Sidious's third possibility still unspoken.
-- Current state: dawn after the Works viewing; the invitation dispatched; the frozen image on the Chancellor's private desk display; Anakin, Obi-Wan and Ahsoka unaware the recording has reached Sidious.
-
-### After Ch 30
-- Facts established: Supper at 500 Republica held; Moore at the door; Windu demanded a full report ("theft" in writing); Obi-Wan's accompaniment refused citing Che's notes; Palpatine probed in full and was shown the deepened vault (Mirren Dask, Shmi's letters, Bellas, confinement, a constructed terror of the Oba Diah choke) and then, by Anakin's deliberate choice against both Obi-Wan's and Ahsoka's advice, one second of the reactor shaft; lines spoken: "You have grown, my boy." / "Yes, Chancellor."; invitation extended to "the three of us" later. No canon lines spent; "Always in motion" still unspent.
-- Open threads: Sidious now knows the boy himself built the wall and has killed him once; neither can say it; what Sidious does next; Windu's report still owed; Jurokk let them in unasked.
-- Current state: dawn on the eastern roof, the twelfth into the thirteenth; Anakin, Ahsoka and Obi-Wan (sling, cloak) on the parapet with the convor between Anakin and Ahsoka; nobody speaking; Anakin ate two mouthfuls.
+- Dawn on the eastern roof, twelfth into thirteenth day: Anakin, Ahsoka and Obi-Wan (sling, cloak) on the parapet; convor between Anakin and Ahsoka; nobody speaking; Anakin ate two mouthfuls.
+- All three know one another's histories. Council holds Obi-Wan's lie; Yoda the shaped truth; Sidious the wall, the shaft-second, Jango's recording, Kenobi's withheld letter.
+- Pending: Windu's report, Padmé's reply, Sidious's next move.
