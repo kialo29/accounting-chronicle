@@ -1,0 +1,280 @@
+[
+ {
+  "id": "stat-chi-square-q01",
+  "topicId": "stat-chi-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A carnival spinner has four equal sections colored red, blue, green and yellow. To check whether the spinner is fair, it is spun 80 times with these results.\n\n| Color | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Observed | 26 | 18 | 22 | 14 |\n\nFind the expected counts if the spinner is fair, the chi-square test statistic, the degrees of freedom and the P-value.",
+  "hint": "If the spinner is fair, each color has probability $\\frac{1}{4}$. Expected count $= n \\times p$.",
+  "answer": "Expected: 20 each; $\\chi^2 = 4.0$; $df = 3$; P-value $\\approx 0.26$",
+  "solution": "Expected count for each color: $80 \\times \\frac{1}{4} = 20$.\n\n$$\\chi^2 = \\frac{(26-20)^2}{20} + \\frac{(18-20)^2}{20} + \\frac{(22-20)^2}{20} + \\frac{(14-20)^2}{20}$$\n$$= \\frac{36 + 4 + 4 + 36}{20} = \\frac{80}{20} = 4.0$$\n\n$df = 4 - 1 = 3$, so P-value $= P(\\chi^2_3 \\ge 4.0) \\approx 0.26$.\n\n(At $\\alpha = 0.05$ we would fail to reject $H_0$: not convincing evidence that the spinner is unfair.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-chi-square-q02",
+  "topicId": "stat-chi-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A carnival spinner has four equal sections colored red, blue, green and yellow. To check whether the spinner is fair, it is spun **160** times with these results.\n\n| Color | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Observed | 52 | 36 | 44 | 28 |\n\nFind the expected counts if the spinner is fair, the chi-square test statistic, the degrees of freedom and the P-value.",
+  "hint": "Compare with the 80-spin version: every count has doubled. What happens to each $(O - E)^2$ and each $E$?",
+  "answer": "Expected: 40 each; $\\chi^2 = 8.0$; $df = 3$; P-value $\\approx 0.046$",
+  "solution": "**What changed:** the number of spins doubled (80 to 160) and every observed count doubled, so the **proportions** in each color are exactly the same as before.\n\nExpected count for each color: $160 \\times \\frac{1}{4} = 40$.\n\n$$\\chi^2 = \\frac{12^2}{40} + \\frac{(-4)^2}{40} + \\frac{4^2}{40} + \\frac{(-12)^2}{40} = \\frac{144 + 16 + 16 + 144}{40} = \\frac{320}{40} = 8.0$$\n\n$df = 3$ (unchanged), so P-value $= P(\\chi^2_3 \\ge 8.0) \\approx 0.046$.\n\n**Effect:** each $(O - E)^2$ is multiplied by 4 and each $E$ by 2, so $\\chi^2$ doubles. The same pattern in a larger sample is stronger evidence: now P-value $< 0.05$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-chi-square-q03",
+  "topicId": "stat-chi-square",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A different carnival spinner has four sections. The red section is designed to be 40% of the spinner, and blue, green and yellow are 20% each. It is spun 160 times with these results.\n\n| Color | Red | Blue | Green | Yellow |\n|---|---|---|---|---|\n| Observed | 52 | 36 | 44 | 28 |\n\nTest whether the spinner's results are consistent with its design: find the expected counts, the chi-square test statistic, the degrees of freedom and the P-value, and state a conclusion at $\\alpha = 0.05$.",
+  "hint": "The observed counts are the same as before, but the hypothesized proportions are not. Recalculate every expected count.",
+  "answer": "Expected: 64, 32, 32, 32; $\\chi^2 = 7.75$; $df = 3$; P-value $\\approx 0.051 > 0.05$: fail to reject $H_0$; not convincing evidence that the spinner differs from its design.",
+  "solution": "**What changed:** the hypothesized proportions (now $0.4, 0.2, 0.2, 0.2$); the data are the same as for the fair 160-spin spinner.\n\n$H_0$: $p_R = 0.4$, $p_B = 0.2$, $p_G = 0.2$, $p_Y = 0.2$. $H_a$: at least one proportion is different.\n\nExpected: $160(0.4) = 64$, $160(0.2) = 32$, $32$, $32$ (all at least 5).\n\n$$\\chi^2 = \\frac{(52-64)^2}{64} + \\frac{(36-32)^2}{32} + \\frac{(44-32)^2}{32} + \\frac{(28-32)^2}{32}$$\n$$= 2.25 + 0.5 + 4.5 + 0.5 = 7.75$$\n\n$df = 3$; P-value $= P(\\chi^2_3 \\ge 7.75) \\approx 0.051$.\n\n$0.051 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that the spinner's long-run proportions differ from its design.\n\n**Effect:** the same observed counts give a different $\\chi^2$ because \"expected\" depends entirely on $H_0$. The biggest contribution has moved from red to green.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-chi-square-q04",
+  "topicId": "stat-chi-square",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A random sample of 250 adults in a state were asked where they live and which pet they prefer.\n\n| | Dog | Cat | Neither | Total |\n|---|---|---|---|---|\n| Urban | 60 | 45 | 45 | 150 |\n| Rural | 55 | 20 | 25 | 100 |\n| Total | 115 | 65 | 70 | 250 |\n\n(a) Calculate the expected count for each cell if there is no association between where people live and pet preference.\n\n(b) State the degrees of freedom for a chi-square test for independence.",
+  "hint": "Expected $= \\dfrac{(\\text{row total})(\\text{column total})}{\\text{table total}}$.",
+  "answer": "(a) Urban: 69, 39, 42; Rural: 46, 26, 28 (b) $df = (2-1)(3-1) = 2$",
+  "solution": "(a) Expected $= \\frac{(\\text{row total})(\\text{column total})}{250}$:\n\n| | Dog | Cat | Neither |\n|---|---|---|---|\n| Urban | $\\frac{150 \\times 115}{250} = 69$ | $\\frac{150 \\times 65}{250} = 39$ | $\\frac{150 \\times 70}{250} = 42$ |\n| Rural | $\\frac{100 \\times 115}{250} = 46$ | $\\frac{100 \\times 65}{250} = 26$ | $\\frac{100 \\times 70}{250} = 28$ |\n\nCheck: the expected counts have the same row and column totals as the observed table (for example $69 + 39 + 42 = 150$).\n\n(b) $r = 2$ rows and $c = 3$ columns, so $df = (2-1)(3-1) = 2$. (Not $250 - 1$ and not $6 - 1$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q05",
+  "topicId": "stat-chi-square",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "For each study, state which chi-square test is appropriate (goodness of fit, homogeneity or independence). Explain your choice and state the null hypothesis in context.\n\n(a) A random sample of 500 voters in a county is classified by political party (Democrat, Republican, Independent) and by opinion on a proposed stadium (support, oppose, undecided).\n\n(b) A geneticist crosses two pea plants and records the colors of 400 offspring plants to see whether they follow the predicted ratio of 9 : 3 : 3 : 1.\n\n(c) A college takes separate random samples of 100 first-year, 100 second-year, 100 third-year and 100 fourth-year students and asks each student which of four campus dining halls they use most.",
+  "hint": "Count the samples and the categorical variables. One variable compared with a claimed distribution? Two variables from one sample? One variable compared across several samples?",
+  "answer": "(a) Independence: one sample, two categorical variables. $H_0$: there is no association between party and stadium opinion among the county's voters. (b) Goodness of fit: one sample, one variable compared with a hypothesized distribution. $H_0$: the proportions are $\\frac{9}{16}, \\frac{3}{16}, \\frac{3}{16}, \\frac{1}{16}$. (c) Homogeneity: four separate samples, one variable. $H_0$: the distribution of most-used dining hall is the same for all four years.",
+  "solution": "(a) **Independence.** There is **one** random sample, and each voter is classified by **two** categorical variables (party and opinion). $H_0$: There is no association between political party and opinion on the stadium among voters in the county.\n\n(b) **Goodness of fit.** There is one sample and **one** categorical variable (color), compared with a **specified** distribution. $H_0$: The proportions of the four colors are $\\frac{9}{16}, \\frac{3}{16}, \\frac{3}{16}, \\frac{1}{16}$, as predicted.\n\n(c) **Homogeneity.** There are **four separate** random samples (one from each year), and one categorical variable (dining hall) is compared across them. The researcher chose how many students to sample from each year, so year is not a variable that was measured on a single sample. $H_0$: The distribution of most-used dining hall is the same for first-, second-, third- and fourth-year students.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q06",
+  "topicId": "stat-chi-square",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A student wonders whether the correct answers on her teacher's 60-question multiple-choice tests are spread equally among the choices A, B, C and D. The answer key shows:\n\n| Answer | A | B | C | D |\n|---|---|---|---|---|\n| Count | 21 | 12 | 17 | 10 |\n\nNadia's calculation of the chi-square statistic is shown.\n\nLine 1: Expected count for each letter $= 60 \\times \\frac{1}{4} = 15$\n\nLine 2: $\\chi^2 = \\dfrac{(21-15)^2}{21} + \\dfrac{(12-15)^2}{12} + \\dfrac{(17-15)^2}{17} + \\dfrac{(10-15)^2}{10}$\n\nLine 3: $\\chi^2 = 1.714 + 0.75 + 0.235 + 2.5 = 5.20$\n\n(a) Identify the line containing the error and explain why it is wrong.\n\n(b) Find the correct value of $\\chi^2$, the P-value, and state the conclusion at $\\alpha = 0.05$. (Treat the 60 answers as a random sample of the teacher's answer choices.)",
+  "hint": "Look carefully at the denominators. What does each term compare the observed count with?",
+  "answer": "(a) Line 2: each term must be divided by the **expected** count (15), not the observed count. (b) $\\chi^2 = \\frac{74}{15} \\approx 4.93$, $df = 3$, P-value $\\approx 0.18 > 0.05$: fail to reject $H_0$; not convincing evidence that the answers are unequally distributed.",
+  "solution": "(a) Line 1 is correct. The error is in **Line 2**: Nadia divided each squared difference by the **observed** count. The chi-square statistic is\n$$\\chi^2 = \\sum \\frac{(O - E)^2}{E}$$\nEach term measures how far the data are from what $H_0$ predicts, relative to that prediction, so it divides by the **expected** count.\n\n(b) $$\\chi^2 = \\frac{6^2}{15} + \\frac{(-3)^2}{15} + \\frac{2^2}{15} + \\frac{(-5)^2}{15} = \\frac{36 + 9 + 4 + 25}{15} = \\frac{74}{15} \\approx 4.93$$\n\n$df = 4 - 1 = 3$; P-value $= P(\\chi^2_3 \\ge 4.93) \\approx 0.18$.\n\n$0.18 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that the teacher's correct answers are unequally distributed among A, B, C and D.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q07",
+  "topicId": "stat-chi-square",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A random sample of 120 students at a large middle school recorded their grade and how they usually get to school.\n\n| | Bike | Walk | Bus | Total |\n|---|---|---|---|---|\n| 6th grade | 3 | 20 | 27 | 50 |\n| 8th grade | 15 | 22 | 33 | 70 |\n| Total | 18 | 42 | 60 | 120 |\n\nOwen wants to test whether there is an association between grade and travel method. He writes:\n\n\"Large Counts condition: the 6th grade–Bike cell has only 3 students, which is less than 5. So the condition is not met and we cannot do a chi-square test.\"\n\n(a) Explain Owen's error.\n\n(b) Check the condition correctly, then carry out the test at $\\alpha = 0.05$.",
+  "hint": "Is the Large Counts condition about the observed counts or about the expected counts?",
+  "answer": "(a) The condition uses the **expected** counts, not the observed counts. (b) Expected: 7.5, 17.5, 25; 10.5, 24.5, 35 (all at least 5), so the condition is met. $\\chi^2 \\approx 5.52$, $df = 2$, P-value $\\approx 0.063 > 0.05$: fail to reject $H_0$; not convincing evidence of an association between grade and travel method.",
+  "solution": "(a) Owen checked an **observed** count. The Large Counts condition requires every **expected** count to be at least 5, because it is the expected counts (what $H_0$ predicts) that make the $\\chi^2$ distribution a good approximation. A small observed count is fine; in fact a cell that is far below its expectation is exactly the kind of evidence the test is looking for.\n\n(b) $H_0$: there is no association between grade and travel method for students at this school. $H_a$: there is an association.\n\nExpected counts, $\\frac{(\\text{row})(\\text{column})}{120}$:\n\n| | Bike | Walk | Bus |\n|---|---|---|---|\n| 6th | 7.5 | 17.5 | 25 |\n| 8th | 10.5 | 24.5 | 35 |\n\nAll expected counts are at least 5 ✓. Random sample ✓; 120 is less than 10% of the students at a large school ✓.\n\n$$\\chi^2 = \\frac{(3-7.5)^2}{7.5} + \\frac{(20-17.5)^2}{17.5} + \\frac{(27-25)^2}{25} + \\frac{(15-10.5)^2}{10.5} + \\frac{(22-24.5)^2}{24.5} + \\frac{(33-35)^2}{35}$$\n$$= 2.700 + 0.357 + 0.160 + 1.929 + 0.255 + 0.114 \\approx 5.52$$\n\n$df = (2-1)(3-1) = 2$; P-value $\\approx 0.063$.\n\n$0.063 > 0.05$, so fail to reject $H_0$. There is not convincing evidence of an association between grade level and travel method for students at this school.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q08",
+  "topicId": "stat-chi-square",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A media researcher took separate random samples of adults in three age groups (18–34, 35–54, 55 and over) and asked each person for their main source of news (TV, websites, social media, print). The results form a $3 \\times 4$ table with 600 people in total. All expected counts are greater than 5, and technology gives $\\chi^2 = 14.20$.\n\nGrace's conclusion is shown.\n\nLine 1: This is a chi-square test for homogeneity. $H_0$: the distribution of main news source is the same for all three age groups.\n\nLine 2: There are 12 cells, so $df = 12 - 1 = 11$.\n\nLine 3: P-value $= P(\\chi^2_{11} \\ge 14.20) = 0.22$\n\nLine 4: $0.22 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that the distribution of news source differs among the age groups.\n\n(a) Identify the line containing the first error and explain why it is wrong.\n\n(b) Find the correct P-value and the correct conclusion at $\\alpha = 0.05$.",
+  "hint": "For a two-way table, how many cell counts can you choose freely once all the row and column totals are fixed?",
+  "answer": "(a) Line 2: for a two-way table $df = (r-1)(c-1) = (3-1)(4-1) = 6$, not (number of cells) $- 1$. (b) P-value $= P(\\chi^2_6 \\ge 14.20) \\approx 0.027 < 0.05$: reject $H_0$; convincing evidence that the distribution of main news source differs among the three age groups.",
+  "solution": "(a) Line 1 is correct (separate samples from three populations: homogeneity). The error is in **Line 2**. \"Number of categories $- 1$\" is the rule for a goodness-of-fit test. In a two-way table, once the row and column totals are known, only $(r-1)(c-1)$ cells can be filled in freely; the rest are forced by the totals. So\n$$df = (3-1)(4-1) = 2 \\times 3 = 6$$\n\n(b) $$\\text{P-value} = P(\\chi^2_6 \\ge 14.20) \\approx 0.027$$\n$0.027 < 0.05$, so **reject** $H_0$. There is convincing evidence that the distribution of main news source is not the same for adults aged 18–34, 35–54, and 55 and over.\n\nThe wrong $df$ changed the conclusion: with more degrees of freedom the $\\chi^2$ distribution is centered further right (its mean equals $df$), so 14.20 looked unremarkable.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q09",
+  "topicId": "stat-chi-square",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Two researchers study whether exercise habits are related to the type of neighborhood people live in (urban, suburban, rural).\n\n* **Study 1:** A random sample of 600 adults in the state is selected. Each is asked what type of neighborhood they live in and how often they exercise (rarely, sometimes, often).\n* **Study 2:** Separate random samples of 200 urban, 200 suburban and 200 rural adults are selected. Each is asked how often they exercise.\n\nDev says: \"Both studies produce a $3 \\times 3$ table and use the same formula for $\\chi^2$, so both are chi-square tests for independence.\"\n\n(a) Is Dev correct? Explain.\n\n(b) Write the null and alternative hypotheses for each study.\n\n(c) Explain why the expected counts and $df$ are calculated in the same way in both studies.",
+  "hint": "How many samples were taken in each study? Was neighborhood type measured on the subjects, or used to choose them?",
+  "answer": "(a) No. Study 1 (one sample, two variables) is independence; Study 2 (three separate samples, one variable) is homogeneity. (b) Study 1: $H_0$: no association between neighborhood type and exercise frequency among adults in the state; $H_a$: there is an association. Study 2: $H_0$: the distribution of exercise frequency is the same for urban, suburban and rural adults; $H_a$: the distributions are not all the same. (c) In both, $H_0$ implies the exercise distribution does not depend on neighborhood, so expected $= \\frac{(\\text{row})(\\text{column})}{\\text{total}}$ and $df = (3-1)(3-1) = 4$.",
+  "solution": "(a) Dev is **not** correct. The arithmetic is identical, but the designs differ, and the design determines the test.\n\n* Study 1 takes **one** sample and records **two** categorical variables on each person: chi-square test for **independence**.\n* Study 2 takes **three separate** samples (the researchers fixed 200 from each neighborhood type) and records **one** variable: chi-square test for **homogeneity**. Neighborhood type is not a random variable here; it defines the populations.\n\n(b) **Study 1:** $H_0$: There is no association between neighborhood type and exercise frequency among adults in the state. $H_a$: There is an association.\n\n**Study 2:** $H_0$: The distribution of exercise frequency is the same for urban, suburban and rural adults in the state. $H_a$: The distributions are not all the same.\n\n(c) In both cases, $H_0$ says the exercise distribution is the same whatever the neighborhood type. Under $H_0$, the proportion of each exercise category expected in a row equals that category's overall proportion, giving\n$$E = \\frac{(\\text{row total})(\\text{column total})}{\\text{table total}}$$\nin both studies, and $df = (r-1)(c-1) = (3-1)(3-1) = 4$. The difference is in how the conclusion is worded and in the scope (populations compared versus association within one population).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q10",
+  "topicId": "stat-chi-square",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Nationally, the distribution of ABO blood types among blood donors is approximately: type O 45%, type A 40%, type B 11% and type AB 4%. A regional blood center wonders whether its donors follow the same distribution. A random sample of 300 of its donors gives:\n\n| Blood type | O | A | B | AB |\n|---|---|---|---|---|\n| Donors | 116 | 126 | 46 | 12 |\n\nCarry out an appropriate test at the $\\alpha = 0.05$ significance level.",
+  "hint": "Chi-square goodness-of-fit test: expected count $= 300 \\times$ (national proportion). Check that every expected count is at least 5.",
+  "answer": "Expected: 135, 120, 33, 12; $\\chi^2 \\approx 8.10$, $df = 3$, P-value $\\approx 0.044 < 0.05$: reject $H_0$. There is convincing evidence that the blood-type distribution of the center's donors differs from the national distribution.",
+  "solution": "**State:** $H_0$: $p_O = 0.45$, $p_A = 0.40$, $p_B = 0.11$, $p_{AB} = 0.04$ for the center's donors. $H_a$: at least one of these proportions is different. $\\alpha = 0.05$.\n\n**Plan:** chi-square goodness-of-fit test.\n* Random: random sample of donors ✓\n* 10%: 300 is less than 10% of all the center's donors ✓ (a regional center has many thousands)\n* Large Counts: expected counts $300(0.45) = 135$, $300(0.40) = 120$, $300(0.11) = 33$, $300(0.04) = 12$, all at least 5 ✓\n\n**Do:**\n$$\\chi^2 = \\frac{(116-135)^2}{135} + \\frac{(126-120)^2}{120} + \\frac{(46-33)^2}{33} + \\frac{(12-12)^2}{12}$$\n$$= 2.674 + 0.300 + 5.121 + 0 \\approx 8.10$$\n$df = 4 - 1 = 3$; P-value $= P(\\chi^2_3 \\ge 8.10) \\approx 0.044$.\n\n**Conclude:** $0.044 < 0.05$, so reject $H_0$. There is convincing evidence that the distribution of blood types among the center's donors differs from the national distribution. The largest contribution comes from type B (46 observed versus 33 expected), so the center appears to have relatively more type B donors.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q11",
+  "topicId": "stat-chi-square",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In a clinical trial, 150 volunteers with chronic back pain were randomly assigned, 50 to each group, to physical therapy, yoga classes or standard care. After 12 weeks, each volunteer's pain was classified as improved, no change or worse.\n\n| | Improved | No change | Worse | Total |\n|---|---|---|---|---|\n| Physical therapy | 28 | 16 | 6 | 50 |\n| Yoga | 25 | 19 | 6 | 50 |\n| Standard care | 15 | 25 | 10 | 50 |\n| Total | 68 | 60 | 22 | 150 |\n\n(a) Name the appropriate chi-square test and explain why.\n\n(b) Carry out the test at $\\alpha = 0.05$.\n\n(c) A newspaper reports that \"physical therapy was 87% more effective than standard care\" because $\\frac{28}{15} \\approx 1.87$. Comment on this claim in light of your test.",
+  "hint": "Three treatment groups compared on one categorical outcome. Each row has total 50, so the expected counts are the same in every row.",
+  "answer": "(a) Homogeneity: three treatment groups (from random assignment) compared on one categorical variable. (b) Expected: 22.67, 20, 7.33 in every row; $\\chi^2 \\approx 7.64$, $df = 4$, P-value $\\approx 0.11 > 0.05$: fail to reject $H_0$. Not convincing evidence that the distribution of outcomes differs among the treatments. (c) The test does not give convincing evidence of any difference, so the 87% figure could easily be due to chance variation in random assignment.",
+  "solution": "(a) **Chi-square test for homogeneity.** The volunteers were split into three separate groups by random assignment and one categorical variable (pain outcome) is compared across the treatments. This is not one sample measured on two variables.\n\n(b) $H_0$: The distribution of outcomes (improved, no change, worse) is the same for all three treatments for people like these. $H_a$: The distributions are not all the same.\n\nConditions: random assignment ✓. Expected counts: each row total is 50, so every row has\n$$\\frac{50 \\times 68}{150} = 22.67, \\quad \\frac{50 \\times 60}{150} = 20, \\quad \\frac{50 \\times 22}{150} = 7.33$$\nall at least 5 ✓.\n\n$$\\chi^2 = \\sum \\frac{(O - E)^2}{E} = \\underbrace{1.255 + 0.800 + 0.242}_{\\text{PT}} + \\underbrace{0.240 + 0.050 + 0.242}_{\\text{Yoga}} + \\underbrace{2.593 + 1.250 + 0.970}_{\\text{Standard}} \\approx 7.64$$\n\n$df = (3-1)(3-1) = 4$; P-value $= P(\\chi^2_4 \\ge 7.64) \\approx 0.11$.\n\n$0.11 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that the distribution of pain outcomes differs among physical therapy, yoga and standard care for people like these.\n\n(c) The claim is misleading. The test found no convincing evidence of any difference between treatments; differences as large as those in the table could plausibly arise just from the chance of which volunteers ended up in which group. (This does not prove the treatments are equally effective; a larger trial might detect a difference.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q12",
+  "topicId": "stat-chi-square",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 8,
+  "question": "A city's transit authority selected a random sample of 300 adult residents and recorded each person's age group and preferred way to pay for a bus ride.\n\n| | Cash | Card | Phone | Total |\n|---|---|---|---|---|\n| 18–34 | 14 | 50 | 46 | 110 |\n| 35–54 | 22 | 58 | 26 | 106 |\n| 55 and over | 30 | 44 | 10 | 84 |\n| Total | 66 | 152 | 82 | 300 |",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "State the hypotheses for a test of whether there is an association between age group and preferred payment method for adult residents of the city.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Show that the expected count for residents aged 55 and over who prefer to pay by phone is 22.96.",
+    "marks": 1
+   },
+   {
+    "label": "c",
+    "prompt": "Identify the appropriate test, check the conditions, and calculate the test statistic, degrees of freedom and P-value.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "State the conclusion at the $\\alpha = 0.01$ level in context.",
+    "marks": 1
+   },
+   {
+    "label": "e",
+    "prompt": "Identify the cell that contributes most to the chi-square statistic, and describe how the observed count for that cell compares with what would be expected if $H_0$ were true.",
+    "marks": 2
+   }
+  ],
+  "hint": "One random sample, two categorical variables. For (e), find $\\frac{(O - E)^2}{E}$ for each cell.",
+  "answer": "(a) $H_0$: no association between age group and preferred payment method among adult residents; $H_a$: there is an association. (b) $\\frac{84 \\times 82}{300} = 22.96$ (c) Chi-square test for independence; conditions met (smallest expected count 18.48); $\\chi^2 \\approx 28.6$, $df = 4$, P-value $\\approx 0.00001$. (d) Reject $H_0$: convincing evidence of an association between age group and preferred payment method. (e) 18–34 and Phone (contribution $\\approx 8.44$): 46 observed versus 30.07 expected, many more young residents prefer phone payment than expected.",
+  "solution": "(a) $H_0$: There is no association between age group and preferred payment method among adult residents of the city. $H_a$: There is an association between age group and preferred payment method. **1 pt**\n\n(b) $$E = \\frac{(\\text{row total})(\\text{column total})}{\\text{table total}} = \\frac{84 \\times 82}{300} = \\frac{6888}{300} = 22.96$$ **1 pt**\n\n(c) **Chi-square test for independence** (one sample, two categorical variables). **1 pt** (with conditions)\n\nRandom sample ✓; 300 is less than 10% of the city's adult residents ✓; expected counts:\n\n| | Cash | Card | Phone |\n|---|---|---|---|\n| 18–34 | 24.20 | 55.73 | 30.07 |\n| 35–54 | 23.32 | 53.71 | 28.97 |\n| 55+ | 18.48 | 42.56 | 22.96 |\n\nall at least 5 ✓.\n\n$$\\chi^2 = \\sum \\frac{(O-E)^2}{E} \\approx 4.30 + 0.59 + 8.44 + 0.07 + 0.34 + 0.31 + 7.18 + 0.05 + 7.32 \\approx 28.6$$ **1 pt**\n\n$df = (3-1)(3-1) = 4$; P-value $= P(\\chi^2_4 \\ge 28.6) \\approx 0.00001$. **1 pt**\n\n(d) The P-value is far less than $\\alpha = 0.01$, so reject $H_0$. There is convincing evidence of an association between age group and preferred payment method among adult residents of the city. **1 pt**\n\n(e) The largest contribution is the 18–34, Phone cell: $\\frac{(46 - 30.07)^2}{30.07} \\approx 8.44$. **1 pt**\n\nObserved (46) is much **greater** than expected (30.07): far more residents aged 18–34 prefer paying by phone than would be expected if payment preference were unrelated to age. **1 pt** (The 55+ Phone cell, with 10 observed versus 22.96 expected, contributes almost as much in the opposite direction.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3",
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q13",
+  "topicId": "stat-chi-square",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A snack company says its trail mix contains equal numbers of almonds, cashews and peanuts. A food inspector counts the nuts in a random sample of 90 nuts and finds $30 + k$ almonds, 30 cashews and $30 - k$ peanuts, where $k$ is a positive integer.\n\n(a) Show that the chi-square goodness-of-fit statistic is $\\chi^2 = \\dfrac{k^2}{15}$.\n\n(b) Find the smallest value of $k$ for which the inspector would reject the company's claim at the $\\alpha = 0.05$ level.\n\n(c) What is the largest value of $k$ for which the Large Counts condition is still met? Explain.",
+  "hint": "Under $H_0$ each expected count is 30. For (b), find the critical value of $\\chi^2$ with $df = 2$.",
+  "answer": "(a) $\\frac{k^2}{30} + 0 + \\frac{k^2}{30} = \\frac{k^2}{15}$ (b) $k = 10$ (critical value 5.991; $k = 9$ gives 5.4, $k = 10$ gives 6.67) (c) Any $k$ up to 30: the expected counts are always 30, whatever $k$ is.",
+  "solution": "(a) Under $H_0$, each type has probability $\\frac{1}{3}$, so each expected count is $90 \\times \\frac{1}{3} = 30$.\n$$\\chi^2 = \\frac{(30 + k - 30)^2}{30} + \\frac{(30 - 30)^2}{30} + \\frac{(30 - k - 30)^2}{30} = \\frac{k^2}{30} + 0 + \\frac{k^2}{30} = \\frac{k^2}{15}$$\n\n(b) $df = 3 - 1 = 2$. Reject at $\\alpha = 0.05$ when $\\chi^2$ exceeds the critical value $\\chi^{2*} = 5.991$:\n$$\\frac{k^2}{15} > 5.991 \\;\\Rightarrow\\; k^2 > 89.87 \\;\\Rightarrow\\; k > 9.48$$\nSo the smallest integer is $k = 10$.\n\nCheck: $k = 9$: $\\chi^2 = 5.4$, P-value $\\approx 0.067$ (not rejected). $k = 10$: $\\chi^2 = 6.67$, P-value $\\approx 0.036$ (rejected).\n\n(c) The Large Counts condition is about **expected** counts, which are 30 for every category whatever the value of $k$. So it holds for every possible $k$, up to the largest possible value $k = 30$ (no peanuts at all). A small observed count does not break the condition.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q14",
+  "topicId": "stat-chi-square",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "An electric utility randomly assigned 1000 customers to two groups of 500. One group received a text reminder before their bill was due; the other did not.\n\n| | Paid on time | Paid late | Total |\n|---|---|---|---|\n| Reminder | 362 | 138 | 500 |\n| No reminder | 331 | 169 | 500 |\n| Total | 693 | 307 | 1000 |\n\n(a) Carry out a chi-square test for homogeneity: find the expected counts, $\\chi^2$, $df$ and the P-value.\n\n(b) A two-proportion $z$-test of $H_0: p_1 = p_2$ on the same data gives $z = 2.125$. Show that $z^2$ equals your $\\chi^2$ statistic (to 2 decimal places), and compare the P-values.\n\n(c) The utility wants to know whether the reminder **increases** on-time payment. Explain why the two-proportion $z$-test is more appropriate than the chi-square test for this question.",
+  "hint": "Each row has 500 customers, so the expected counts are the same in both rows. For a $2 \\times 2$ table, $df = 1$.",
+  "answer": "(a) Expected: 346.5 and 153.5 in each row; $\\chi^2 \\approx 4.52$, $df = 1$, P-value $\\approx 0.034$. (b) $2.125^2 \\approx 4.52 = \\chi^2$; the chi-square P-value equals the two-sided $z$-test P-value, $2P(Z \\ge 2.125) \\approx 0.034$. (c) The chi-square test is always non-directional (it only detects a difference); the $z$-test can use the one-sided $H_a: p_1 > p_2$, giving P-value $\\approx 0.017$.",
+  "solution": "(a) Expected counts: $\\frac{500 \\times 693}{1000} = 346.5$ and $\\frac{500 \\times 307}{1000} = 153.5$ in each row (all at least 5).\n$$\\chi^2 = \\frac{15.5^2}{346.5} + \\frac{15.5^2}{153.5} + \\frac{15.5^2}{346.5} + \\frac{15.5^2}{153.5}$$\n$$= 0.6934 + 1.5651 + 0.6934 + 1.5651 \\approx 4.52$$\n(Every cell differs from its expected count by exactly 15.5, which always happens in a $2 \\times 2$ table.)\n\n$df = (2-1)(2-1) = 1$; P-value $= P(\\chi^2_1 \\ge 4.52) \\approx 0.034$.\n\n(b) $z^2 = 2.125^2 = 4.516 \\approx 4.52$, the same as $\\chi^2$. This is no coincidence: for a $2 \\times 2$ table the chi-square statistic is exactly the square of the pooled two-proportion $z$ statistic, and the $\\chi^2$ distribution with $df = 1$ is the distribution of $Z^2$. So\n$$P(\\chi^2_1 \\ge 4.52) = P(|Z| \\ge 2.125) = 2P(Z \\ge 2.125) \\approx 0.034$$\nthe two-sided $z$-test P-value.\n\n(c) Squaring removes the sign, so the chi-square test only detects whether the proportions differ in **either** direction ($H_a: p_1 \\ne p_2$). The question is directional ($H_a: p_1 > p_2$), and the $z$-test can test that: one-sided P-value $= P(Z \\ge 2.125) \\approx 0.017$. The $z$-procedure also leads naturally to a confidence interval for $p_1 - p_2$, which estimates the size of the effect.",
+  "linkedTopicIds": [
+   "stat-significance-tests-proportions"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q15",
+  "topicId": "stat-chi-square",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A psychology class tests whether students are simply guessing on a quiz of 5 true/false questions about an unfamiliar topic. If every student guesses independently, the number of correct answers $X$ for a student should follow a binomial distribution with $n = 5$ and $p = 0.5$. The results for a random sample of 120 students are:\n\n| Number correct | 0 | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|---|\n| Students | 2 | 13 | 33 | 41 | 24 | 7 |\n\n(a) Calculate the expected number of students for each number correct under the guessing model.\n\n(b) Explain why the categories must be combined before carrying out a chi-square test, and combine them suitably.\n\n(c) Carry out a goodness-of-fit test at $\\alpha = 0.05$ of whether the guessing model fits.",
+  "hint": "$P(X = x) = \\binom{5}{x}(0.5)^5$. Two of the expected counts are below 5; merge each with its neighbor, then recount the categories for $df$.",
+  "answer": "(a) 3.75, 18.75, 37.5, 37.5, 18.75, 3.75 (b) Expected counts for 0 and 5 are below 5; combine into \"0 or 1\" (22.5) and \"4 or 5\" (22.5). (c) Observed 15, 33, 41, 31; $\\chi^2 \\approx 6.58$, $df = 3$, P-value $\\approx 0.087 > 0.05$: fail to reject $H_0$. Not convincing evidence that the guessing model is wrong.",
+  "solution": "(a) With $n = 5$, $p = 0.5$: $P(X = x) = \\binom{5}{x}\\frac{1}{32}$, giving probabilities $\\frac{1}{32}, \\frac{5}{32}, \\frac{10}{32}, \\frac{10}{32}, \\frac{5}{32}, \\frac{1}{32}$.\n\nExpected counts ($120 \\times$ probability): $3.75,\\ 18.75,\\ 37.5,\\ 37.5,\\ 18.75,\\ 3.75$.\n\n(b) The Large Counts condition needs every expected count to be at least 5, but the expected counts for 0 and 5 correct are only 3.75. Combine adjacent categories:\n\n| Number correct | 0 or 1 | 2 | 3 | 4 or 5 |\n|---|---|---|---|---|\n| Observed | 15 | 33 | 41 | 31 |\n| Expected | 22.5 | 37.5 | 37.5 | 22.5 |\n\nNow all expected counts are at least 5.\n\n(c) $H_0$: the number correct follows $\\text{Binomial}(5, 0.5)$ (students are guessing). $H_a$: it does not.\n\nRandom sample ✓; 120 is less than 10% of all students ✓; expected counts at least 5 ✓.\n$$\\chi^2 = \\frac{(15 - 22.5)^2}{22.5} + \\frac{(33 - 37.5)^2}{37.5} + \\frac{(41 - 37.5)^2}{37.5} + \\frac{(31 - 22.5)^2}{22.5}$$\n$$= 2.500 + 0.540 + 0.327 + 3.211 \\approx 6.58$$\nAfter combining there are **4** categories, so $df = 4 - 1 = 3$ (not 5). P-value $= P(\\chi^2_3 \\ge 6.58) \\approx 0.087$.\n\n$0.087 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that the distribution of scores differs from what guessing would produce. (The pattern of more high scores than expected hints that some students know a little, but the evidence is not convincing.)",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q16",
+  "topicId": "stat-chi-square",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A librarian took independent random samples of 120 students from School A and 80 students from School B and asked each student how they prefer to read books: print, e-reader or phone. The segmented bar chart shows the results as percentages of each school's sample.\n\n(a) Use the chart to construct the two-way table of counts.\n\n(b) Carry out an appropriate chi-square test at $\\alpha = 0.05$.\n\n(c) Lily says, \"I'll just run the test on the percentages: $50, 20, 30$ and $30, 25, 45$. That's easier.\" Explain why this would give a wrong answer.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><line x1=\"55.0\" y1=\"30.0\" x2=\"55.0\" y2=\"230.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"50.0\" y1=\"230.0\" x2=\"55.0\" y2=\"230.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"234.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0%</text><line x1=\"50.0\" y1=\"190.0\" x2=\"55.0\" y2=\"190.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"194.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20%</text><line x1=\"50.0\" y1=\"150.0\" x2=\"55.0\" y2=\"150.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"154.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">40%</text><line x1=\"50.0\" y1=\"110.0\" x2=\"55.0\" y2=\"110.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"114.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">60%</text><line x1=\"50.0\" y1=\"70.0\" x2=\"55.0\" y2=\"70.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"74.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">80%</text><line x1=\"50.0\" y1=\"30.0\" x2=\"55.0\" y2=\"30.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"46.0\" y=\"34.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">100%</text><rect x=\"90\" y=\"130.0\" width=\"80\" height=\"100.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"177.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Print</text><text x=\"130.0\" y=\"193.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">50%</text><rect x=\"90\" y=\"90.0\" width=\"80\" height=\"40.0\" fill=\"#3b82f6\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"107.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">E-reader</text><text x=\"130.0\" y=\"123.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20%</text><rect x=\"90\" y=\"30.0\" width=\"80\" height=\"60.0\" fill=\"#3b82f6\" fill-opacity=\"0.15\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"130.0\" y=\"57.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Phone</text><text x=\"130.0\" y=\"73.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30%</text><text x=\"130.0\" y=\"250.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">School A</text><rect x=\"200\" y=\"170.0\" width=\"80\" height=\"60.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"240.0\" y=\"197.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Print</text><text x=\"240.0\" y=\"213.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30%</text><rect x=\"200\" y=\"120.0\" width=\"80\" height=\"50.0\" fill=\"#3b82f6\" fill-opacity=\"0.45\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"240.0\" y=\"142.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">E-reader</text><text x=\"240.0\" y=\"158.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">25%</text><rect x=\"200\" y=\"30.0\" width=\"80\" height=\"90.0\" fill=\"#3b82f6\" fill-opacity=\"0.15\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"240.0\" y=\"72.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Phone</text><text x=\"240.0\" y=\"88.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">45%</text><text x=\"240.0\" y=\"250.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">School B</text><text x=\"185.0\" y=\"270.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Preferred way to read</text></svg>",
+  "hint": "Multiply each percentage by the size of that school's sample. Two separate samples, one variable: which chi-square test?",
+  "answer": "(a) School A: Print 60, E-reader 24, Phone 36; School B: Print 24, E-reader 20, Phone 36. (b) Homogeneity; expected 50.4, 26.4, 43.2 and 33.6, 17.6, 28.8; $\\chi^2 \\approx 8.12$, $df = 2$, P-value $\\approx 0.017 < 0.05$: reject $H_0$; convincing evidence that the distribution of reading preference differs between the two schools. (c) $\\chi^2$ must use counts: percentages pretend each school has 100 students, which changes $\\chi^2$ (here giving about 7.2 instead of 8.12); in general it can make the evidence look much stronger or weaker than it is.",
+  "solution": "(a) School A ($n = 120$): Print $0.50 \\times 120 = 60$, E-reader $0.20 \\times 120 = 24$, Phone $0.30 \\times 120 = 36$.\nSchool B ($n = 80$): Print $0.30 \\times 80 = 24$, E-reader $0.25 \\times 80 = 20$, Phone $0.45 \\times 80 = 36$.\n\n| | Print | E-reader | Phone | Total |\n|---|---|---|---|---|\n| School A | 60 | 24 | 36 | 120 |\n| School B | 24 | 20 | 36 | 80 |\n| Total | 84 | 44 | 72 | 200 |\n\n(b) **Chi-square test for homogeneity** (two independent samples, one categorical variable).\n\n$H_0$: The distribution of reading preference is the same for students at School A and School B. $H_a$: The distributions differ.\n\nConditions: independent random samples ✓; each sample is less than 10% of its school (assumed) ✓. Expected counts:\nSchool A: $\\frac{120 \\times 84}{200} = 50.4$, $\\frac{120 \\times 44}{200} = 26.4$, $\\frac{120 \\times 72}{200} = 43.2$.\nSchool B: $33.6$, $17.6$, $28.8$. All at least 5 ✓.\n\n$$\\chi^2 = 1.829 + 0.218 + 1.200 + 2.743 + 0.327 + 1.800 \\approx 8.12$$\n\n$df = (2-1)(3-1) = 2$; P-value $= P(\\chi^2_2 \\ge 8.12) \\approx 0.017$.\n\n$0.017 < 0.05$, so reject $H_0$. There is convincing evidence that the distribution of preferred reading format differs between students at School A and School B (School B students appear more likely to prefer reading on a phone and less likely to prefer print).\n\n(c) The chi-square statistic depends on the **sizes** of the counts, not just their proportions: scaling all counts by a factor $k$ multiplies $\\chi^2$ by $k$. Using percentages treats each school as if exactly 100 students were sampled, which misstates the amount of evidence (here, using the percentages gives $\\chi^2 \\approx 7.2$ instead of $8.12$). With a sample of, say, 2000 students the percentages would be the same but the evidence far stronger. The expected counts and the Large Counts check also become meaningless.",
+  "linkedTopicIds": [
+   "stat-two-way-tables"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-chi-square-q17",
+  "topicId": "stat-chi-square",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "(a) In a chi-square test, suppose every observed count in a table is multiplied by a positive whole number $k$, with the hypothesized proportions unchanged. Prove that the value of $\\chi^2$ is multiplied by $k$, and that $df$ is unchanged.\n\n(b) Use part (a) to explain why a chi-square test must always be done on counts rather than percentages.\n\n(c) A student claims that he rolled a standard die 600 times and got exactly $99, 101, 100, 100, 98, 102$ for the faces 1 to 6. This gives $\\chi^2 = 0.10$ with $df = 5$. His teacher is suspicious. Using the fact that $P(\\chi^2_5 \\le 0.10) \\approx 0.0002$, explain why, and explain why this is not evidence **against** a fair die in the usual test.",
+  "hint": "Write each observed count as $kO_i$ and each expected count as $kE_i$. For (c), think about which tail the usual P-value uses and what a very small $\\chi^2$ means.",
+  "answer": "(a) New terms are $\\frac{(kO_i - kE_i)^2}{kE_i} = k\\frac{(O_i - E_i)^2}{E_i}$, so $\\chi^2$ is multiplied by $k$; the number of categories (rows and columns) is unchanged, so $df$ is unchanged. (b) Percentages behave like counts from a sample of 100, so $\\chi^2$ (and the P-value) would be wrong unless $n = 100$. (c) Results this close to expected would happen only about 2 times in 10,000 for a genuinely random fair die, so the data look \"too good to be true\" (possibly invented). The usual test is right-tailed: a small $\\chi^2$ means the data fit $H_0$ very well, so it gives P-value $\\approx 1$ and no evidence against fairness.",
+  "solution": "(a) Let the original observed and expected counts be $O_i$ and $E_i$. If all the counts are multiplied by $k$, the total is multiplied by $k$, so each expected count ($n \\times p_i$ for goodness of fit, or $\\frac{\\text{row} \\times \\text{column}}{\\text{total}}$ for a two-way table) becomes $kE_i$. Then\n$$\\chi^2_{\\text{new}} = \\sum \\frac{(kO_i - kE_i)^2}{kE_i} = \\sum \\frac{k^2(O_i - E_i)^2}{kE_i} = k\\sum \\frac{(O_i - E_i)^2}{E_i} = k\\chi^2$$\nThe degrees of freedom depend only on the number of categories ($\\text{categories} - 1$, or $(r-1)(c-1)$), which have not changed. $\\blacksquare$\n\n(b) A table of percentages is the table of counts rescaled to a total of 100, i.e. multiplied by $k = \\frac{100}{n}$. By (a), this multiplies $\\chi^2$ by $\\frac{100}{n}$. Unless $n = 100$, the statistic is wrong: for $n > 100$ the evidence is understated, and for $n < 100$ it is exaggerated. The same pattern of proportions is much stronger evidence in a large sample than in a small one, and only counts carry that information.\n\n(c) Each expected count is $\\frac{600}{6} = 100$, so\n$$\\chi^2 = \\frac{1 + 1 + 0 + 0 + 4 + 4}{100} = 0.10$$\nFor a truly random fair die, chance variation makes the counts wander around 100 by about $\\pm 9$ each (the SD of a $\\text{Binomial}(600, \\frac{1}{6})$ count is about 9.1), and $\\chi^2$ would typically be near its mean, $df = 5$. Getting a value as small as 0.10 happens with probability only about 0.0002. The data fit **too** well, which suggests they were not really produced by random rolling (for example, they were made up).\n\nBut the usual goodness-of-fit test is **right-tailed**: evidence against $H_0$ is a **large** $\\chi^2$ (data far from expected). Here the P-value is $P(\\chi^2_5 \\ge 0.10) \\approx 0.9998$, so there is no evidence at all that the die is unfair. The suspicion is about the honesty of the data, not about the die.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ }
+]
