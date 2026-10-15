@@ -1,0 +1,283 @@
+[
+ {
+  "id": "geo-circles-q01",
+  "topicId": "geo-circles",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The diagram shows two circles, each with centre $O$.\n\n(a) Name the straight lines labelled $P$, $Q$, $R$ and $S$ in the left circle. ($S$ touches the circle at exactly one point.)\n\n(b) Name the shaded regions labelled $X$ and $Y$ in the right circle.\n\n(c) What is the name of the curved edge of region $X$? What is the name of the whole distance round a circle?",
+  "hint": "Which lines pass through the centre? Which line only touches the circle? A region bounded by two radii is different from one bounded by a chord.",
+  "answer": "(a) $P$ diameter, $Q$ radius, $R$ chord, $S$ tangent (b) $X$ sector, $Y$ segment (c) an arc; the circumference",
+  "solution": "(a)\n* $P$ goes from the circle, through the centre, to the circle: a **diameter**.\n* $Q$ goes from the centre to the circle: a **radius**.\n* $R$ joins two points on the circle but does not pass through the centre: a **chord**.\n* $S$ touches the circle at exactly one point: a **tangent**.\n\n(b)\n* $X$ is bounded by two radii and an arc (\"a slice of pizza\"): a **sector**.\n* $Y$ is bounded by a chord and an arc: a **segment**.\n\n(c) Part of the circumference is an **arc**. The whole distance round the circle is the **circumference**.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 240\" width=\"360\" height=\"240\">\n<circle cx=\"92\" cy=\"140\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"272\" cy=\"140\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"92\" cy=\"140\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<circle cx=\"272\" cy=\"140\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<line x1=\"20\" y1=\"140\" x2=\"164\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"132\" y=\"134\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text>\n<line x1=\"92\" y1=\"140\" x2=\"50.7\" y2=\"81.02\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"55.35\" y=\"114.51\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Q</text>\n<line x1=\"45.72\" y1=\"195.16\" x2=\"147.16\" y2=\"186.28\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"96.44\" y=\"182.72\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text>\n<line x1=\"101.51\" y1=\"53.99\" x2=\"175.05\" y2=\"115.7\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"177.05\" y=\"131.7\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">S</text>\n<text x=\"86\" y=\"158\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text>\n<path d=\"M272 140 L339.66 115.37 A72 72 0 0 0 265.72 68.27 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"296.51\" y=\"107.26\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">X</text>\n<path d=\"M204.34 164.63 A72 72 0 0 0 308 202.35 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"251.48\" y=\"201.38\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Y</text>\n<text x=\"266\" y=\"158\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text>\n</svg>",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q02",
+  "topicId": "geo-circles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A circle has radius 4 cm. Find its circumference. Give your answer (a) in terms of $\\pi$, (b) correct to 1 decimal place.",
+  "hint": "$C = 2\\pi r$.",
+  "answer": "(a) $8\\pi$ cm (b) 25.1 cm",
+  "solution": "$$C = 2\\pi r = 2 \\times \\pi \\times 4 = 8\\pi\\text{ cm}$$\n$$8\\pi = 25.132\\ldots \\approx 25.1\\text{ cm}$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q03",
+  "topicId": "geo-circles",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A circle has radius 4 cm. Find its **area**. Give your answer (a) in terms of $\\pi$, (b) correct to 1 decimal place.",
+  "hint": "$A = \\pi r^2$. What is $4^2$?",
+  "answer": "(a) $16\\pi\\text{ cm}^2$ (b) $50.3\\text{ cm}^2$",
+  "solution": "**What changed:** same circle, but now the area instead of the circumference.\n$$A = \\pi r^2 = \\pi \\times 4^2 = \\pi \\times 16 = 16\\pi\\text{ cm}^2$$\n$$16\\pi = 50.265\\ldots \\approx 50.3\\text{ cm}^2$$\n\nNote $4^2 = 4 \\times 4 = 16$, not $4 \\times 2 = 8$. Squaring the radius is what gives $\\text{cm}^2$ units.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q04",
+  "topicId": "geo-circles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A circle has **diameter** 4 cm. Find its area. Give your answer (a) in terms of $\\pi$, (b) correct to 1 decimal place.",
+  "hint": "The formula uses the radius. Halve the diameter first.",
+  "answer": "(a) $4\\pi\\text{ cm}^2$ (b) $12.6\\text{ cm}^2$",
+  "solution": "**What changed:** 4 cm is now the diameter, not the radius.\n\nRadius $r = 4 \\div 2 = 2$ cm.\n$$A = \\pi r^2 = \\pi \\times 2^2 = 4\\pi\\text{ cm}^2 \\approx 12.6\\text{ cm}^2$$\n\nThis is a quarter of the previous answer ($16\\pi$): halving the radius divides the area by $2^2 = 4$. Putting the diameter into $\\pi r^2$ would wrongly give $16\\pi$ again.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q05",
+  "topicId": "geo-circles",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A **semicircle** has diameter 4 cm. Find (a) its area, in terms of $\\pi$, and (b) its perimeter, correct to 1 decimal place.",
+  "hint": "The perimeter is the curved part **and** the straight edge.",
+  "answer": "(a) $2\\pi\\text{ cm}^2$ (b) $2\\pi + 4 \\approx 10.3$ cm",
+  "solution": "**What changed:** the full circle of diameter 4 cm has become a semicircle.\n\n(a) Half of the previous area:\n$$A = \\tfrac{1}{2} \\times \\pi \\times 2^2 = 2\\pi\\text{ cm}^2$$\n\n(b) Curved part: half the circumference, $\\tfrac{1}{2} \\times \\pi \\times 4 = 2\\pi$ cm.\n\nStraight edge: the diameter, 4 cm.\n$$P = 2\\pi + 4 = 10.283\\ldots \\approx 10.3\\text{ cm}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q06",
+  "topicId": "geo-circles",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The diagram shows a quarter circle of radius 6 cm.\n\n(a) Find its area, giving your answer in terms of $\\pi$.\n\n(b) Find its perimeter, correct to 1 decimal place.",
+  "hint": "A quarter of the full circle for the area. The perimeter has a curved edge and two straight edges.",
+  "answer": "(a) $9\\pi\\text{ cm}^2$ (b) $3\\pi + 12 \\approx 21.4$ cm",
+  "solution": "(a)\n$$A = \\tfrac{1}{4}\\pi r^2 = \\tfrac{1}{4} \\times \\pi \\times 36 = 9\\pi\\text{ cm}^2$$\n\n(b) Curved edge: a quarter of the circumference,\n$$\\tfrac{1}{4} \\times 2\\pi \\times 6 = 3\\pi\\text{ cm}$$\nTwo straight edges: two radii, $6 + 6 = 12$ cm.\n$$P = 3\\pi + 12 = 21.424\\ldots \\approx 21.4\\text{ cm}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 230\" width=\"260\" height=\"230\">\n<path d=\"M60 200 L180 200 A120 120 0 0 0 60 80 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polyline points=\"70,200 70,190 60,190\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<text x=\"120\" y=\"220\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6 cm</text>\n<text x=\"54\" y=\"145\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6 cm</text>\n</svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q07",
+  "topicId": "geo-circles",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) A circle has circumference 50 cm. Find its radius, correct to 2 decimal places.\n\n(b) A circle has area $200\\text{ cm}^2$. Find its radius, correct to 2 decimal places.\n\n(c) Find the area of the circle in part (a), correct to 3 significant figures.",
+  "hint": "Rearrange: $r = \\dfrac{C}{2\\pi}$ and $r = \\sqrt{\\dfrac{A}{\\pi}}$. In (c), use the unrounded radius.",
+  "answer": "(a) 7.96 cm (b) 7.98 cm (c) $199\\text{ cm}^2$",
+  "solution": "(a)\n$$2\\pi r = 50 \\;\\Rightarrow\\; r = \\frac{50}{2\\pi} = 7.9577\\ldots \\approx 7.96\\text{ cm}$$\n\n(b)\n$$\\pi r^2 = 200 \\;\\Rightarrow\\; r^2 = \\frac{200}{\\pi} = 63.66\\ldots \\;\\Rightarrow\\; r = 7.9788\\ldots \\approx 7.98\\text{ cm}$$\n\n(c) Using $r = 7.9577\\ldots$ from the calculator memory:\n$$A = \\pi \\times 7.9577\\ldots^2 = 198.94\\ldots \\approx 199\\text{ cm}^2$$\n(So a circle with circumference 50 cm has slightly less than $200\\text{ cm}^2$ of area – consistent with (a) and (b).)",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q08",
+  "topicId": "geo-circles",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben uses his calculator to find the area of a circle of radius 6 cm.\n\n$\\pi \\times 6 = 18.849\\ldots$\n\n$18.849\\ldots^2 = 355.3$\n\nArea $= 355.3\\text{ cm}^2$\n\nIdentify Ben's mistake, explain it, and find the correct area to 1 decimal place.",
+  "hint": "In $\\pi r^2$, which part is squared?",
+  "answer": "He squared $\\pi r$ instead of just $r$ (he found $\\pi^2 r^2$). Correct area: $\\pi \\times 36 = 36\\pi \\approx 113.1\\text{ cm}^2$.",
+  "solution": "**The mistake:** Ben worked out $\\pi \\times 6$ first and then squared the result, so he calculated $(\\pi r)^2 = \\pi^2 r^2$. In $\\pi r^2$ only the **radius** is squared (powers come before multiplication).\n\n**Correct working:**\n$$r^2 = 6^2 = 36$$\n$$A = \\pi \\times 36 = 36\\pi = 113.097\\ldots \\approx 113.1\\text{ cm}^2$$\n\nCheck: Ben's answer is $\\pi$ times too big ($113.1 \\times \\pi \\approx 355.3$). A quick estimate, $3 \\times 36 \\approx 108$, would have shown 355 was far too large.",
+  "linkedTopicIds": [
+   "num-order-of-operations"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-circles-q09",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Chloe is asked for the area of a circular coaster of diameter 14 cm, in terms of $\\pi$ and to 1 decimal place. Her working is shown.\n\n$A = \\pi r^2$\n\n$A = \\pi \\times 14^2 = 196\\pi$\n\n$A = 615.8\\text{ cm}^2$\n\nIdentify Chloe's mistake, explain why her answer is four times too big, and give the correct answer.",
+  "hint": "What is the radius of a circle of diameter 14 cm?",
+  "answer": "She used the diameter (14) instead of the radius (7). Correct area: $49\\pi \\approx 153.9\\text{ cm}^2$.",
+  "solution": "**The mistake is in line 2.** The formula $A = \\pi r^2$ needs the **radius**, but Chloe substituted the diameter, 14 cm.\n\nRadius $= 14 \\div 2 = 7$ cm, so\n$$A = \\pi \\times 7^2 = 49\\pi = 153.938\\ldots \\approx 153.9\\text{ cm}^2$$\n\n**Why four times too big:** the diameter is twice the radius, and the area depends on the radius **squared**, so using the diameter multiplies the area by $2^2 = 4$. Indeed $196\\pi = 4 \\times 49\\pi$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q10",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Freya is putting plastic edging all the way round a semicircular flower bed of diameter 3.6 m. Edging is sold in 1 m strips.\n\nHer working is shown.\n\nPerimeter $= \\tfrac{1}{2} \\times \\pi \\times 3.6 = 5.65$ m\n\nSo I need 6 strips of edging.\n\nIdentify Freya's mistake, explain it, and find the correct number of strips.",
+  "hint": "Walk all the way round the flower bed. Which edge has Freya missed?",
+  "answer": "She only included the curved edge and missed the straight diameter. Perimeter $= 5.65 + 3.6 = 9.25$ m, so 10 strips.",
+  "solution": "**The mistake:** $\\tfrac{1}{2} \\times \\pi \\times 3.6$ is only the **curved** edge of the bed. The perimeter of a semicircle is the whole boundary, which also includes the straight edge – the diameter.\n\n**Correct working:**\n$$\\text{curved edge} = \\tfrac{1}{2} \\times \\pi \\times 3.6 = 5.654\\ldots\\text{ m}$$\n$$\\text{perimeter} = 5.654\\ldots + 3.6 = 9.254\\ldots\\text{ m}$$\n\nStrips: $9.25 > 9$, so she needs **10 strips** (always round up – 9 strips would leave a gap).",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 150\" width=\"260\" height=\"150\">\n<path d=\"M40 120 L220 120 A90 90 0 0 0 40 120 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"130\" cy=\"120\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"130\" y=\"140\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3.6 m</text>\n</svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q11",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Lily says: \"If you double the radius of a circle, you double its area.\"\n\n(a) Is Lily correct? Explain your answer using a circle of radius $r$.\n\n(b) What happens to the circumference when the radius is doubled?\n\n(c) Find the radius of the circle whose area (in $\\text{cm}^2$) has the same numerical value as its circumference (in cm).",
+  "hint": "Compare $\\pi r^2$ with $\\pi (2r)^2$. For (c), set $\\pi r^2 = 2\\pi r$.",
+  "answer": "(a) No: the area is multiplied by 4, since $\\pi(2r)^2 = 4\\pi r^2$. (b) It doubles: $2\\pi(2r) = 2 \\times 2\\pi r$. (c) $r = 2$ cm",
+  "solution": "(a) **No.** The original area is $\\pi r^2$. With radius $2r$:\n$$\\pi(2r)^2 = \\pi \\times 4r^2 = 4\\pi r^2$$\nso the area is multiplied by **4**, not 2. For example, radius 3 cm gives $9\\pi$, but radius 6 cm gives $36\\pi = 4 \\times 9\\pi$. Area depends on the radius *squared*.\n\n(b) $C = 2\\pi(2r) = 2 \\times (2\\pi r)$, so the circumference **doubles** – it depends on $r$ itself, not $r^2$.\n\n(c)\n$$\\pi r^2 = 2\\pi r$$\nDivide both sides by $\\pi r$ (as $r > 0$):\n$$r = 2\\text{ cm}$$\nCheck: area $= 4\\pi$ and circumference $= 4\\pi$. (Of course the units differ – the numbers match only for this particular unit of length.)",
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-circles-q12",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A bicycle wheel has a diameter of 70 cm.\n\n(a) How far does the bicycle travel during one complete turn of the wheel? Give your answer in cm, correct to 1 decimal place.\n\n(b) How many **complete** turns does the wheel make when the bicycle travels 1 km?",
+  "hint": "In one turn the bicycle moves forward one circumference. Change 1 km into centimetres.",
+  "answer": "(a) 219.9 cm (b) 454 complete turns",
+  "solution": "(a) One turn moves the bicycle one circumference:\n$$C = \\pi d = \\pi \\times 70 = 219.911\\ldots \\approx 219.9\\text{ cm}$$\n\n(b) $1\\text{ km} = 1000\\text{ m} = 100\\,000\\text{ cm}$.\n$$100\\,000 \\div 219.911\\ldots = 454.72\\ldots$$\nSo the wheel makes **454** complete turns (and is part-way through the 455th).",
+  "linkedTopicIds": [
+   "geo-units-measures"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "geo-circles-q13",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A pizza shop sells a 12-inch pizza for £9.00 and two 8-inch pizzas for £10.00. (The size is the diameter.) The pizzas are all the same thickness.\n\n(a) Which option gives more pizza?\n\n(b) Which option is better value for money? Show your working.",
+  "hint": "Compare areas, not diameters. Remember to halve each diameter.",
+  "answer": "(a) The 12-inch pizza ($36\\pi \\approx 113$ sq in, against $32\\pi \\approx 101$ sq in). (b) The 12-inch pizza: about 12.6 sq in per £1, against about 10.1 sq in per £1.",
+  "solution": "(a) 12-inch pizza: radius 6 inches.\n$$A = \\pi \\times 6^2 = 36\\pi \\approx 113.1\\text{ in}^2$$\nTwo 8-inch pizzas: radius 4 inches each.\n$$A = 2 \\times \\pi \\times 4^2 = 32\\pi \\approx 100.5\\text{ in}^2$$\nThe single 12-inch pizza has more, even though $8 + 8 = 16 > 12$: area grows with the square of the radius.\n\n(b) Area per pound:\n$$\\frac{113.1}{9.00} \\approx 12.6\\text{ in}^2\\text{ per £1} \\qquad \\frac{100.5}{10.00} \\approx 10.1\\text{ in}^2\\text{ per £1}$$\nThe **12-inch pizza** gives more pizza and costs less, so it is better value.",
+  "linkedTopicIds": [
+   "rat-unit-rates-best-buys"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-circles-q14",
+  "topicId": "geo-circles",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 5,
+  "calculator": true,
+  "question": "The diagram shows a children's play area. It is made from a rectangle, 10 m by 6 m, with a semicircle on each of the two shorter sides.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the area of the play area. Give your answer correct to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Show that the perimeter of the play area is $(20 + 6\\pi)$ m.",
+    "marks": 2
+   }
+  ],
+  "hint": "The two semicircles together make one full circle. What is its radius?",
+  "answer": "(a) $88.3\\text{ m}^2$ (b) Shown: $10 + 10 + 2 \\times \\tfrac{1}{2} \\times \\pi \\times 6$",
+  "solution": "(a) Rectangle: $10 \\times 6 = 60\\text{ m}^2$. **B1**\n\nThe two semicircles have diameter 6 m (radius 3 m) and together make a whole circle:\n$$\\pi \\times 3^2 = 9\\pi = 28.27\\ldots\\text{ m}^2 \\quad \\textbf{M1}$$\n$$60 + 28.27\\ldots = 88.27\\ldots \\approx 88.3\\text{ m}^2 \\quad \\textbf{A1}$$\n\n(b) The perimeter is the two 10 m sides plus the two curved edges (the 6 m sides are inside the shape, so are not part of the perimeter). **M1**\n$$10 + 10 + 2 \\times \\tfrac{1}{2} \\times \\pi \\times 6 = 20 + 6\\pi\\text{ m} \\quad \\textbf{A1}$$",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"360\" height=\"200\">\n<path d=\"M90 50 L290 50 A60 60 0 0 1 290 170 L90 170 A60 60 0 0 1 90 50 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<line x1=\"90\" y1=\"50\" x2=\"90\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n<line x1=\"290\" y1=\"50\" x2=\"290\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"5 4\"/>\n<text x=\"190\" y=\"42\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 m</text>\n<text x=\"96\" y=\"115\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">6 m</text>\n<polyline points=\"100,50 100,60 90,60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n</svg>",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q15",
+  "topicId": "geo-circles",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A circular pond has radius 3.5 m. A gravel path 1.2 m wide is laid all the way round the pond, as shown.\n\nThe path is to be covered with gravel at 50 kg per $\\text{m}^2$. Gravel is sold in 25 kg bags costing £4.20 each.\n\nWork out the cost of the gravel needed.",
+  "hint": "The path is the area of the large circle minus the area of the pond. What is the radius of the large circle?",
+  "answer": "Path area $9.84\\pi \\approx 30.9\\text{ m}^2$; 1546 kg of gravel; 62 bags; £260.40",
+  "solution": "Outer radius: $3.5 + 1.2 = 4.7$ m.\n\nArea of path = large circle − pond:\n$$\\pi \\times 4.7^2 - \\pi \\times 3.5^2 = \\pi(22.09 - 12.25) = 9.84\\pi = 30.913\\ldots\\text{ m}^2$$\n(Not $\\pi \\times 1.2^2$ – the path is a ring, not a circle of radius 1.2 m.)\n\nGravel: $30.913\\ldots \\times 50 = 1545.66\\ldots$ kg.\n\nBags: $1545.66\\ldots \\div 25 = 61.8\\ldots$, so **62 bags** are needed.\n\nCost: $62 \\times £4.20 = £260.40$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 270\" width=\"320\" height=\"270\">\n<path d=\"M37.2 135 A112.8 112.8 0 1 0 262.8 135 A112.8 112.8 0 1 0 37.2 135 Z M66 135 A84 84 0 1 0 234 135 A84 84 0 1 0 66 135 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" fill-rule=\"evenodd\" stroke=\"none\"/>\n<circle cx=\"150\" cy=\"135\" r=\"112.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"150\" cy=\"135\" r=\"84\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"150\" cy=\"135\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<line x1=\"150\" y1=\"135\" x2=\"234\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<line x1=\"234\" y1=\"135\" x2=\"262.8\" y2=\"135\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/>\n<text x=\"192\" y=\"129\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3.5 m</text>\n<text x=\"268.8\" y=\"140\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">1.2 m</text>\n<text x=\"150\" y=\"95\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">pond</text>\n<text x=\"150\" y=\"41.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">path</text>\n</svg>",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-circles-q16",
+  "topicId": "geo-circles",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A square is drawn inside a circle of radius 5 cm so that all four corners of the square lie on the circle. The region inside the circle but outside the square is shaded.\n\n(a) Show that the area of the square is $50\\text{ cm}^2$.\n\n(b) Find the shaded area, giving your answer in the form $a\\pi - b$.\n\n(c) What percentage of the circle is shaded? Give your answer to 1 decimal place.",
+  "hint": "The diagonals of the square are diameters of the circle. Split the square into four right-angled triangles at $O$, or use Pythagoras to find the side.",
+  "answer": "(a) Shown (side $5\\sqrt{2}$, or $4 \\times \\tfrac{1}{2} \\times 5 \\times 5$) (b) $(25\\pi - 50)\\text{ cm}^2 \\approx 28.5\\text{ cm}^2$ (c) 36.3%",
+  "solution": "(a) The diagonals of the square are diameters, so they meet at $O$ at right angles and each half-diagonal is a radius, 5 cm. The side $s$ is the hypotenuse of a right-angled triangle with legs 5 and 5:\n$$s^2 = 5^2 + 5^2 = 50$$\nArea of square $= s^2 = 50\\text{ cm}^2$. (Or: four right-angled triangles, each $\\tfrac{1}{2} \\times 5 \\times 5 = 12.5$, total 50.)\n\n(b)\n$$\\text{shaded} = \\pi \\times 5^2 - 50 = (25\\pi - 50)\\text{ cm}^2 \\approx 28.5\\text{ cm}^2$$\n\n(c)\n$$\\frac{25\\pi - 50}{25\\pi} = 1 - \\frac{2}{\\pi} = 0.36338\\ldots \\approx 36.3\\%$$\nThis percentage is the same for every circle, whatever its radius.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 280\" width=\"340\" height=\"280\">\n<path d=\"M60 140 A110 110 0 1 0 280 140 A110 110 0 1 0 60 140 Z M247.78 62.22 L92.22 62.22 L92.22 217.78 L247.78 217.78 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" fill-rule=\"evenodd\" stroke=\"none\"/>\n<circle cx=\"170\" cy=\"140\" r=\"110\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<polygon points=\"247.78,62.22 92.22,62.22 92.22,217.78 247.78,217.78\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<circle cx=\"170\" cy=\"140\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<line x1=\"170\" y1=\"140\" x2=\"247.78\" y2=\"62.22\" stroke=\"currentColor\" stroke-width=\"1.2\"/>\n<text x=\"200\" y=\"122\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\">5 cm</text>\n<text x=\"162\" y=\"158\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text>\n</svg>",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "rat-percentages-of-amounts"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-circles-q17",
+  "topicId": "geo-circles",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$AB$ is a line segment of length 12 cm. Path 1 is a semicircle on diameter $AB$. Path 2 is made of two semicircles on diameters $AC$ and $CB$, where $C$ is the midpoint of $AB$.\n\n(a) Show that paths 1 and 2 have the same length.\n\n(b) Path $n$ is made of $n$ equal semicircles whose diameters together make up $AB$. Find, in terms of $n$, (i) the length of path $n$, (ii) the total area between path $n$ and the segment $AB$.\n\n(c) As $n$ gets very large, path $n$ gets closer and closer to the segment $AB$. Explain why its length does not get closer to 12 cm.",
+  "hint": "A semicircle of diameter $d$ has curved length $\\tfrac{1}{2}\\pi d$. In (b) each diameter is $\\frac{12}{n}$ cm.",
+  "answer": "(a) Both are $6\\pi$ cm (b) (i) $6\\pi$ cm for every $n$ (ii) $\\dfrac{18\\pi}{n}\\text{ cm}^2$ (c) The length is always $6\\pi \\approx 18.8$ cm; the path just gets more and more wiggly, so being close to $AB$ does not make it short.",
+  "solution": "(a) Path 1: $\\tfrac{1}{2} \\times \\pi \\times 12 = 6\\pi$ cm.\n\nPath 2: two semicircles of diameter 6: $2 \\times \\tfrac{1}{2} \\times \\pi \\times 6 = 6\\pi$ cm. They are equal.\n\n(b)(i) Each semicircle has diameter $\\dfrac{12}{n}$, so curved length $\\tfrac{1}{2}\\pi \\times \\dfrac{12}{n} = \\dfrac{6\\pi}{n}$. There are $n$ of them:\n$$n \\times \\frac{6\\pi}{n} = 6\\pi\\text{ cm} \\quad\\text{(independent of } n\\text{)}$$\n\n(ii) Each semicircle has radius $\\dfrac{6}{n}$, so area $\\tfrac{1}{2}\\pi\\left(\\dfrac{6}{n}\\right)^2 = \\dfrac{18\\pi}{n^2}$. Total:\n$$n \\times \\frac{18\\pi}{n^2} = \\frac{18\\pi}{n}\\text{ cm}^2$$\n\n(c) As $n$ grows, the area $\\dfrac{18\\pi}{n} \\to 0$, so the path hugs $AB$ ever more tightly. But the length is $6\\pi \\approx 18.85$ cm for every $n$: it never approaches 12 cm. The path becomes a row of tiny, tightly packed bumps; each bump is still a semicircle, which is always $\\frac{\\pi}{2} \\approx 1.57$ times as long as its diameter. \"Close to a line\" in position does not mean \"close in length\".",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"360\" height=\"265\">\n<line x1=\"46\" y1=\"165\" x2=\"310\" y2=\"165\" stroke=\"currentColor\" stroke-width=\"1.5\"/>\n<path d=\"M46 165 A132 132 0 0 1 310 165\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/>\n<path d=\"M46 165 A66 66 0 0 0 178 165 A66 66 0 0 0 310 165\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/>\n<circle cx=\"46\" cy=\"165\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<circle cx=\"178\" cy=\"165\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<circle cx=\"310\" cy=\"165\" r=\"3\" fill=\"currentColor\" stroke=\"none\"/>\n<text x=\"40\" y=\"170\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A</text>\n<text x=\"316\" y=\"170\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">B</text>\n<text x=\"178\" y=\"157\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text>\n<text x=\"178\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">path 1</text>\n<text x=\"112\" y=\"249\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">path 2</text>\n</svg>",
+  "linkedTopicIds": [
+   "alg-notation-simplifying"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-circles-q18",
+  "topicId": "geo-circles",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A rope is wrapped tightly around the Earth's equator. Take the Earth to be a sphere of radius 6371 km.\n\n(a) The rope is lengthened so that it can be held 1 m above the ground all the way round the equator. How much extra rope is needed? Give your answer to the nearest centimetre.\n\n(b) Repeat part (a) for a rope wrapped around a football of radius 11 cm, lifted to 1 m above its surface all the way round.\n\n(c) Instead, exactly 1 m is added to the rope around the equator, and it is lifted evenly all the way round. How high above the ground is it? Could a cat crawl under it?",
+  "hint": "Work algebraically: the new radius is $R + 1$ (in metres). Compare $2\\pi(R + 1)$ with $2\\pi R$.",
+  "answer": "(a) $2\\pi$ m $\\approx 6.28$ m (b) also $2\\pi$ m $\\approx 6.28$ m (c) $\\dfrac{1}{2\\pi}$ m $\\approx 15.9$ cm – yes, a cat could crawl under.",
+  "solution": "(a) Let the Earth's radius be $R$ metres. The new rope is a circle of radius $R + 1$:\n$$\\text{extra} = 2\\pi(R + 1) - 2\\pi R = 2\\pi R + 2\\pi - 2\\pi R = 2\\pi\\text{ m}$$\n$$2\\pi = 6.2831\\ldots \\approx 6.28\\text{ m} \\;(628\\text{ cm})$$\nThe value of $R$ (6371 km) cancels out – it is not needed!\n\n(b) Exactly the same algebra with $R = 0.11$ m gives an extra $2\\pi \\approx 6.28$ m. The extra length depends only on the height of the lift, not on the size of the circle.\n\n(c) If the extra length is 1 m and the gap is $h$ m, then $2\\pi h = 1$:\n$$h = \\frac{1}{2\\pi} = 0.159\\ldots\\text{ m} \\approx 15.9\\text{ cm}$$\nThat is easily enough for a cat to crawl under – surprising, since 1 m is tiny compared with the 40 000 km circumference.",
+  "linkedTopicIds": [
+   "alg-expand-factorise-single"
+  ],
+  "misconceptionIds": []
+ }
+]

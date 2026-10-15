@@ -1,0 +1,295 @@
+[
+ {
+  "id": "geo-sine-cosine-rules-q01",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In triangle $ABC$, angle $A = 40^\\circ$, angle $B = 65^\\circ$ and $a = 8$ cm.\n\nFind the length of side $b$. Give your answer to 3 significant figures.",
+  "hint": "You know a side and its opposite angle ($a$ and $A$), so use $\\dfrac{b}{\\sin B} = \\dfrac{a}{\\sin A}$.",
+  "answer": "$b = 11.3$ cm",
+  "solution": "Side $a$ and angle $A$ are an opposite pair, so use the sine rule:\n$$\\frac{b}{\\sin 65^\\circ} = \\frac{8}{\\sin 40^\\circ}$$\n\n$$b = \\frac{8\\sin 65^\\circ}{\\sin 40^\\circ} = 11.279\\ldots \\approx 11.3 \\text{ cm}$$\n\nCheck: $b$ is opposite the larger angle ($65^\\circ > 40^\\circ$), so it should be longer than $a$. It is.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q02",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In triangle $ABC$, angle $A = 40^\\circ$, angle $B = 65^\\circ$ and $b = 8$ cm.\n\nFind the length of side $a$. Give your answer to 3 significant figures.",
+  "hint": "This time the known pair is $b$ and $B$. Put the unknown on top: $\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}$.",
+  "answer": "$a = 5.67$ cm",
+  "solution": "What changed: the 8 cm side is now $b$ (opposite $65^\\circ$) and we want $a$.\n$$\\frac{a}{\\sin 40^\\circ} = \\frac{8}{\\sin 65^\\circ}$$\n\n$$a = \\frac{8\\sin 40^\\circ}{\\sin 65^\\circ} = 5.673\\ldots \\approx 5.67 \\text{ cm}$$\n\nNow the answer is **shorter** than 8 cm, because $a$ is opposite the smaller angle.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q03",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "In triangle $ABC$, angle $A = 40^\\circ$, angle $C = 75^\\circ$ and $a = 8$ cm.\n\nFind the length of side $b$. Give your answer to 3 significant figures.",
+  "hint": "To use the sine rule for $b$ you need angle $B$, the angle opposite $b$. Use the angle sum first.",
+  "answer": "$b = 11.3$ cm",
+  "solution": "What changed: we are given angle $C$ instead of angle $B$, but $b$ must be paired with $B$.\n\nAngle sum: $B = 180^\\circ - 40^\\circ - 75^\\circ = 65^\\circ$.\n\n$$\\frac{b}{\\sin 65^\\circ} = \\frac{8}{\\sin 40^\\circ} \\quad\\Rightarrow\\quad b = \\frac{8\\sin 65^\\circ}{\\sin 40^\\circ} = 11.279\\ldots \\approx 11.3 \\text{ cm}$$\n\nIt is the same triangle as in the first question, just described differently.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q04",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "In triangle $ABC$, $b = 5$ cm, $c = 8$ cm and angle $A = 60^\\circ$.\n\nFind the length of side $a$.",
+  "hint": "Two sides and the angle **between** them: use $a^2 = b^2 + c^2 - 2bc\\cos A$. Recall $\\cos 60^\\circ = \\frac{1}{2}$.",
+  "answer": "$a = 7$ cm",
+  "solution": "Angle $A$ is between sides $b$ and $c$ (SAS), so use the cosine rule:\n$$a^2 = 5^2 + 8^2 - 2 \\times 5 \\times 8 \\times \\cos 60^\\circ$$\n\n$$a^2 = 25 + 64 - 80 \\times \\frac{1}{2} = 89 - 40 = 49$$\n\n$$a = 7 \\text{ cm}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q05",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "In triangle $ABC$, $b = 5$ cm, $c = 8$ cm and angle $A = 120^\\circ$.\n\nFind the length of side $a$. Give your answer to 3 significant figures.",
+  "hint": "Same formula as before. What is the sign of $\\cos 120^\\circ$?",
+  "answer": "$a = \\sqrt{129} \\approx 11.4$ cm",
+  "solution": "What changed: the angle is now obtuse, $120^\\circ$ instead of $60^\\circ$.\n\n$\\cos 120^\\circ = -\\frac{1}{2}$, so the last term is **added**:\n$$a^2 = 25 + 64 - 80 \\times \\left(-\\frac{1}{2}\\right) = 89 + 40 = 129$$\n\n$$a = \\sqrt{129} = 11.357\\ldots \\approx 11.4 \\text{ cm}$$\n\nEffect: opening the angle from $60^\\circ$ to $120^\\circ$ makes the opposite side longer than $\\sqrt{b^2 + c^2} = \\sqrt{89}$, which is what we would get at $90^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q06",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v2",
+  "question": "In triangle $ABC$, $a = 7$ cm, $b = 5$ cm and $c = 8$ cm.\n\nFind the size of angle $A$.",
+  "hint": "All three sides are known (SSS). Rearrange the cosine rule: $\\cos A = \\dfrac{b^2 + c^2 - a^2}{2bc}$.",
+  "answer": "$A = 60^\\circ$",
+  "solution": "What changed: now all three sides are given and the angle is unknown, the reverse of the first question in this set.\n$$\\cos A = \\frac{5^2 + 8^2 - 7^2}{2 \\times 5 \\times 8} = \\frac{25 + 64 - 49}{80} = \\frac{40}{80} = \\frac{1}{2}$$\n\n$$A = \\cos^{-1}\\left(\\frac{1}{2}\\right) = 60^\\circ$$\n\nThis matches the first question in the set, as it should: it is the same triangle.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q07",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "In triangle $ABC$, $b = 6$ cm, $c = 9$ cm and angle $A = 35^\\circ$. Kofi tries to find $a$. His working is shown below.\n\n$$a^2 = 6^2 + 9^2 - 2 \\times 6 \\times 9 \\cos 35^\\circ$$\n$$a^2 = (36 + 81 - 108)\\cos 35^\\circ$$\n$$a^2 = 9\\cos 35^\\circ = 7.372\\ldots$$\n$$a = 2.72 \\text{ cm}$$\n\nIdentify Kofi's error, explain it, and find the correct value of $a$ to 3 significant figures.",
+  "hint": "In $b^2 + c^2 - 2bc\\cos A$, which operation should be done before the subtraction?",
+  "answer": "He subtracted before multiplying by $\\cos 35^\\circ$ (line 2). Correct: $a^2 = 117 - 108\\cos 35^\\circ = 28.53\\ldots$, $a = 5.34$ cm.",
+  "solution": "**Error (line 2):** Kofi treated $\\cos 35^\\circ$ as multiplying the whole bracket $36 + 81 - 108$. In fact $2bc\\cos A$ is a single term: only $108$ is multiplied by $\\cos 35^\\circ$, and that product is then subtracted. (Order of operations: multiplication before subtraction.)\n\n**Correct working:**\n$$a^2 = 36 + 81 - 108\\cos 35^\\circ$$\n\n$$a^2 = 117 - 88.468\\ldots = 28.531\\ldots$$\n\n$$a = \\sqrt{28.531\\ldots} = 5.341\\ldots \\approx 5.34 \\text{ cm}$$\n\nSense check: the angle is fairly small, so $a$ should be shorter than $c = 9$ but not tiny. $2.72$ cm would be shorter than $c - b = 3$ cm, which is impossible for a triangle with sides 6 and 9.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "num-order-of-operations"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q08",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows triangle $PQR$ with $PQ = 12$ cm, angle $QPR = 50^\\circ$ and angle $PRQ = 70^\\circ$. (Not drawn to scale.)\n\nRavi finds the length $QR$ like this:\n\n$$\\frac{QR}{\\sin 70^\\circ} = \\frac{12}{\\sin 50^\\circ}$$\n$$QR = \\frac{12\\sin 70^\\circ}{\\sin 50^\\circ} = 14.7 \\text{ cm}$$\n\nExplain Ravi's mistake and find the correct length of $QR$ to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><polygon points=\"50,230 204.3,46.1 271.2,230\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><text x=\"37.4\" y=\"241.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"207.5\" y=\"37.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"283\" y=\"242.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><text x=\"110.3\" y=\"128.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">12 cm</text><path d=\"M65.4 211.6 A24 24 0 0 1 74 230\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"88.1\" y=\"217.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">50°</text><path d=\"M249.2 230 A22 22 0 0 1 263.7 209.3\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"238.4\" y=\"212.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">70°</text></svg>",
+  "hint": "Which angle is directly opposite $QR$? Which angle is directly opposite $PQ$?",
+  "answer": "He paired each side with the wrong angle: $QR$ is opposite $P = 50^\\circ$ and $PQ$ is opposite $R = 70^\\circ$. $QR = 9.78$ cm.",
+  "solution": "**Mistake:** In the sine rule each side must be divided by the sine of the angle **opposite** it.\n* $QR$ joins $Q$ and $R$, so it is opposite angle $P = 50^\\circ$.\n* $PQ = 12$ joins $P$ and $Q$, so it is opposite angle $R = 70^\\circ$.\n\nRavi swapped them, pairing each side with an angle at one of its ends.\n\n**Correct working:**\n$$\\frac{QR}{\\sin 50^\\circ} = \\frac{12}{\\sin 70^\\circ}$$\n\n$$QR = \\frac{12\\sin 50^\\circ}{\\sin 70^\\circ} = 9.782\\ldots \\approx 9.78 \\text{ cm}$$\n\nCheck: $QR$ is opposite the smaller angle, so it must be shorter than $PQ = 12$ cm. Ravi's 14.7 cm fails this check.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q09",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "In triangle $ABC$, $AB = 9$ cm, $BC = 7$ cm and angle $BAC = 42^\\circ$. Grace is asked to find **all** possible sizes of angle $ACB$. Her answer is shown below.\n\n$$\\frac{\\sin C}{9} = \\frac{\\sin 42^\\circ}{7}$$\n$$\\sin C = \\frac{9\\sin 42^\\circ}{7} = 0.8603\\ldots$$\n$$C = 59.4^\\circ$$\n\n**(a)** What has Grace missed? Explain why.\n**(b)** Write down all possible sizes of angle $ACB$, to 1 decimal place, and show that each one gives a valid triangle.",
+  "hint": "For which other angle between $0^\\circ$ and $180^\\circ$ is the sine also $0.8603\\ldots$?",
+  "answer": "(a) The obtuse solution $180^\\circ - 59.4^\\circ$. (b) $C = 59.4^\\circ$ or $C = 120.6^\\circ$; both are valid.",
+  "solution": "**(a)** Grace's sine rule set-up is correct ($AB = c$ is opposite $C$, $BC = a$ is opposite $A$). But $\\sin\\theta = \\sin(180^\\circ - \\theta)$, so the equation $\\sin C = 0.8603\\ldots$ has **two** solutions between $0^\\circ$ and $180^\\circ$. The calculator only gives the acute one. This is the ambiguous case: the given angle $A$ is opposite the **shorter** of the two given sides ($7 < 9$), so side $BC$ can swing into two positions.\n\n**(b)**\n$$C_1 = \\sin^{-1}(0.8603\\ldots) = 59.35\\ldots^\\circ \\approx 59.4^\\circ$$\n\n$$C_2 = 180^\\circ - 59.35\\ldots^\\circ = 120.64\\ldots^\\circ \\approx 120.6^\\circ$$\n\nCheck the angle sums:\n* $42^\\circ + 59.4^\\circ = 101.4^\\circ < 180^\\circ$, leaving $B = 78.6^\\circ$. Valid.\n* $42^\\circ + 120.6^\\circ = 162.6^\\circ < 180^\\circ$, leaving $B = 17.4^\\circ$. Valid.\n\nSo $C = 59.4^\\circ$ or $C = 120.6^\\circ$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q10",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A triangle has sides $a = 9$ cm, $b = 5$ cm and $c = 6$ cm. Tom uses the cosine rule and gets $\\cos A = -\\dfrac{1}{3}$. He says: \"Cosine can't be negative in a triangle, so this triangle can't exist.\"\n\n**(a)** Explain why Tom is wrong, and find angle $A$ to 1 decimal place.\n**(b)** Explain how you could tell that angle $A$ is obtuse **before** using the cosine rule.",
+  "hint": "What is the sign of $\\cos\\theta$ for $90^\\circ < \\theta < 180^\\circ$? For (b), compare $a^2$ with $b^2 + c^2$.",
+  "answer": "(a) Cosine is negative for obtuse angles, so $A$ is obtuse: $A = 109.5^\\circ$. (b) $a^2 = 81 > b^2 + c^2 = 61$, so $A > 90^\\circ$.",
+  "solution": "**(a)** First check the triangle exists: $5 + 6 = 11 > 9$, so the sides do make a triangle.\n\n$$\\cos A = \\frac{5^2 + 6^2 - 9^2}{2 \\times 5 \\times 6} = \\frac{25 + 36 - 81}{60} = \\frac{-20}{60} = -\\frac{1}{3}$$\n\nAngles in a triangle can be anywhere between $0^\\circ$ and $180^\\circ$. For $90^\\circ < A < 180^\\circ$, $\\cos A$ is negative. So a negative cosine simply tells us $A$ is obtuse:\n$$A = \\cos^{-1}\\left(-\\frac{1}{3}\\right) = 109.47\\ldots^\\circ \\approx 109.5^\\circ$$\n\n**(b)** From $\\cos A = \\dfrac{b^2 + c^2 - a^2}{2bc}$, the denominator is positive, so $\\cos A < 0$ exactly when $a^2 > b^2 + c^2$. Here $a^2 = 81$ and $b^2 + c^2 = 61$, so $a^2 > b^2 + c^2$ and $A$ is obtuse. (If $a^2 = b^2 + c^2$ it would be a right angle, by Pythagoras.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q11",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "In triangle $ABC$, angle $A = 30^\\circ$ and $AB = 10$ cm. The point $C$ lies on the ray from $A$ shown in the diagram, and $BC = a$ cm. (Not drawn to scale.)\n\n**(a)** Explain why no triangle exists if $a < 5$.\n**(b)** Find the set of values of $a$ for which there are **exactly two** possible triangles $ABC$. Justify your answer.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 250\" width=\"360\" height=\"250\"><line x1=\"30\" y1=\"220\" x2=\"203.2\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"30\" y1=\"220\" x2=\"340\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><path d=\"M330 214 L340 220 L330 226\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><text x=\"24\" y=\"238\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"207.2\" y=\"112\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"109.6\" y=\"162.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">10 cm</text><path d=\"M64.6 200 A40 40 0 0 1 70 220\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"86\" y=\"210\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">30°</text></svg>",
+  "hint": "Find the shortest distance from $B$ to the ray. Then imagine a circle of radius $a$ centred at $B$: how many times does it meet the ray?",
+  "answer": "(a) The perpendicular distance from $B$ to the ray is $10\\sin 30^\\circ = 5$ cm, so $BC$ cannot be shorter than 5. (b) $5 < a < 10$.",
+  "solution": "**(a)** Drop a perpendicular from $B$ to the ray, meeting it at $N$. In right-angled triangle $ABN$,\n$$BN = 10\\sin 30^\\circ = 5 \\text{ cm}$$\n\n$BN$ is the shortest distance from $B$ to the line, so any point $C$ on the ray has $BC \\ge 5$. If $a < 5$ there is no triangle.\n\n**(b)** Think of $C$ as a point where a circle centred at $B$ with radius $a$ meets the ray.\n* $a = 5$: the circle just touches the ray at $N$: **one** (right-angled) triangle.\n* $5 < a < 10$: the circle crosses the line at two points, at distances $AN \\pm \\sqrt{a^2 - 25}$ from $A$, where $AN = 10\\cos 30^\\circ = 5\\sqrt{3}$. Since $a < 10$, $\\sqrt{a^2 - 25} < \\sqrt{75} = 5\\sqrt{3}$, so both points are on the ray, beyond $A$: **two** triangles (one with $C$ acute, one with $C$ obtuse).\n* $a \\ge 10$: the second point is at $A$ or behind $A$, off the ray: **one** triangle.\n\nExactly two triangles when $5 < a < 10$.\n\nIn sine-rule terms: $\\sin C = \\dfrac{10\\sin 30^\\circ}{a} = \\dfrac{5}{a}$ needs $a \\ge 5$; the obtuse value $180^\\circ - C$ is valid only when $30^\\circ + (180^\\circ - C) < 180^\\circ$, i.e. $C > 30^\\circ$, which happens when $a < 10$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q12",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 6,
+  "calculator": true,
+  "question": "The diagram shows a quadrilateral $ABCD$. $AB = 8$ cm, $AD = 11$ cm, angle $BAD = 72^\\circ$, angle $CBD = 47^\\circ$ and angle $BCD = 58^\\circ$. (Not drawn accurately.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><polygon points=\"32,215 74,85.7 294.4,65.4 219,215\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"74\" y1=\"85.7\" x2=\"219\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"19.8\" y=\"226.9\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"62.8\" y=\"82.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"306.5\" y=\"63.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"228.5\" y=\"230.3\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"34\" y=\"149.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">8 cm</text><text x=\"125.5\" y=\"232\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">11 cm</text><path d=\"M38.8 194.1 A22 22 0 0 1 54 215\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"62.7\" y=\"197.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">72°</text><path d=\"M103.9 82.9 A30 30 0 0 1 96.4 105.6\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"117.7\" y=\"105.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">47°</text><path d=\"M283.6 86.8 A24 24 0 0 1 270.5 67.6\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"259.7\" y=\"94\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">58°</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Work out the length of $BD$. Give your answer to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the length of $CD$. Give your answer to 3 significant figures.",
+    "marks": 3
+   }
+  ],
+  "hint": "In triangle $ABD$ you know two sides and the angle between them. In triangle $BCD$ you then know a side and the angle opposite it.",
+  "answer": "(a) $BD = 11.4$ cm (b) $CD = 9.86$ cm",
+  "solution": "**(a)** Triangle $ABD$: two sides and the included angle, so cosine rule.\n$$BD^2 = 8^2 + 11^2 - 2 \\times 8 \\times 11 \\times \\cos 72^\\circ \\quad \\text{M1}$$\n\n$$BD^2 = 185 - 54.386\\ldots = 130.613\\ldots \\quad \\text{M1}$$\n\n$$BD = 11.428\\ldots \\approx 11.4 \\text{ cm} \\quad \\text{A1}$$\n\n**(b)** Triangle $BCD$: $BD$ is opposite the $58^\\circ$ angle at $C$, and $CD$ is opposite the $47^\\circ$ angle at $B$. Sine rule:\n$$\\frac{CD}{\\sin 47^\\circ} = \\frac{11.428\\ldots}{\\sin 58^\\circ} \\quad \\text{M1 (correct pairing) M1 (rearranged)}$$\n\n$$CD = \\frac{11.428\\ldots \\times \\sin 47^\\circ}{\\sin 58^\\circ} = 9.855\\ldots \\approx 9.86 \\text{ cm} \\quad \\text{A1}$$\n\n(Using the rounded 11.4 gives 9.83; accept 9.83 to 9.86. Follow through from (a) for the M marks.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-sine-cosine-rules-q13",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": true,
+  "question": "In triangle $ABC$, $AB = 12$ cm, $AC = 9$ cm and angle $ABC = 40^\\circ$. Let $BC = x$ cm.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $x^2 - (24\\cos 40^\\circ)x + 63 = 0$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the two possible lengths of $BC$, giving your answers to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Explain, with reference to the given information, why there are two possible triangles.",
+    "marks": 2
+   }
+  ],
+  "hint": "Use the cosine rule with the known angle $B$: the side opposite $B$ is $AC$. This gives a quadratic in $x$.",
+  "answer": "(a) Shown. (b) $BC = 4.56$ cm or $BC = 13.8$ cm. (c) The known angle $40^\\circ$ is opposite the shorter given side ($9 < 12$) and $9 > 12\\sin 40^\\circ \\approx 7.71$, so $C$ can be acute or obtuse.",
+  "solution": "**(a)** $AC$ is opposite angle $B$, so by the cosine rule\n$$9^2 = 12^2 + x^2 - 2 \\times 12 \\times x \\cos 40^\\circ \\quad \\text{M1}$$\n\n$$81 = 144 + x^2 - 24x\\cos 40^\\circ$$\n\n$$x^2 - (24\\cos 40^\\circ)x + 63 = 0 \\quad \\text{A1 (shown)}$$\n\n**(b)** $24\\cos 40^\\circ = 18.385\\ldots$ Using the quadratic formula:\n$$x = \\frac{18.385\\ldots \\pm \\sqrt{18.385\\ldots^2 - 4 \\times 63}}{2} \\quad \\text{M1}$$\n\n$$x = \\frac{18.385\\ldots \\pm 9.274\\ldots}{2} \\quad \\text{M1}$$\n\n$$x = 4.555\\ldots \\approx 4.56 \\text{ cm} \\quad \\text{or} \\quad x = 13.829\\ldots \\approx 13.8 \\text{ cm} \\quad \\text{A1}$$\n\n**(c)** The given angle $B = 40^\\circ$ is not between the two given sides, and it is opposite the **shorter** side $AC = 9$ (B1). The distance from $A$ to the line $BC$ is $12\\sin 40^\\circ = 7.71$ cm, which is less than 9, so a circle of radius 9 centred at $A$ cuts the line through $B$ in two places; and since $AB = 12 > 9$, $B$ lies outside that circle, so both points are on the same side of $B$, giving one triangle with angle $C$ acute and one with angle $C$ obtuse (B1). (Equivalently: both roots of the quadratic are positive.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q14",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A ferry leaves harbour $H$ and sails 14 km on a bearing of $060^\\circ$ to a buoy $P$. It then sails 9 km on a bearing of $170^\\circ$ to a lighthouse $L$.\n\n**(a)** Show that angle $HPL = 70^\\circ$.\n**(b)** Find the distance $HL$, to 3 significant figures.\n**(c)** Find the bearing of $L$ from $H$, to the nearest degree.",
+  "hint": "Draw a sketch with north lines at $H$ and $P$. The bearing of $H$ from $P$ is the back bearing of $060^\\circ$.",
+  "answer": "(a) Bearing of $H$ from $P$ is $240^\\circ$; $240^\\circ - 170^\\circ = 70^\\circ$. (b) 13.8 km (c) $098^\\circ$",
+  "solution": "**(a)** The bearing of $H$ from $P$ is the back bearing: $060^\\circ + 180^\\circ = 240^\\circ$. The bearing of $L$ from $P$ is $170^\\circ$. Measured at $P$, the angle between the directions to $H$ and to $L$ is\n$$240^\\circ - 170^\\circ = 70^\\circ$$\n\n**(b)** Two sides and the included angle, so cosine rule:\n$$HL^2 = 14^2 + 9^2 - 2 \\times 14 \\times 9 \\cos 70^\\circ = 277 - 86.188\\ldots = 190.811\\ldots$$\n\n$$HL = 13.813\\ldots \\approx 13.8 \\text{ km}$$\n\n**(c)** Find angle $PHL$ with the sine rule ($PL = 9$ is opposite angle $H$; it is acute because it is opposite a shorter side than $HP$):\n$$\\sin \\angle PHL = \\frac{9\\sin 70^\\circ}{13.813\\ldots} = 0.6122\\ldots \\quad\\Rightarrow\\quad \\angle PHL = 37.75\\ldots^\\circ$$\n\nTurning clockwise from north at $H$: $60^\\circ$ to $P$, then a further $37.75^\\circ$ to $L$:\n$$60^\\circ + 37.75^\\circ = 97.75^\\circ$$\n\nThe bearing of $L$ from $H$ is $098^\\circ$ (to the nearest degree).",
+  "linkedTopicIds": [
+   "geo-bearings"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q15",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Two surveyors stand at points $A$ and $B$ on a straight river bank, 50 m apart. A tree $T$ stands on the opposite bank. Angle $TAB = 62^\\circ$ and angle $TBA = 48^\\circ$. The banks are parallel. (Not drawn to scale.)\n\n**(a)** Find the distance $AT$.\n**(b)** Find the width of the river.\nGive your answers to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\"><line x1=\"15\" y1=\"240\" x2=\"345\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"15\" y1=\"65.4\" x2=\"345\" y2=\"65.4\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><polygon points=\"55,240 305,240 147.8,65.4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><text x=\"49\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"311\" y=\"258\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"147.8\" y=\"55.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">T</text><text x=\"180\" y=\"260\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">50 m</text><path d=\"M65.3 220.6 A22 22 0 0 1 77 240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"89.3\" y=\"224.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">62°</text><path d=\"M283 240 A22 22 0 0 1 290.3 223.7\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"268.5\" y=\"228.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">48°</text></svg>",
+  "hint": "Find angle $ATB$ first. $AB = 50$ is then opposite a known angle. For (b), the width is the perpendicular distance from $T$ to the bank $AB$.",
+  "answer": "(a) 39.5 m (b) 34.9 m",
+  "solution": "**(a)** Angle $ATB = 180^\\circ - 62^\\circ - 48^\\circ = 70^\\circ$.\n\n$AB = 50$ m is opposite angle $T$, and $AT$ is opposite angle $B = 48^\\circ$:\n$$\\frac{AT}{\\sin 48^\\circ} = \\frac{50}{\\sin 70^\\circ}$$\n\n$$AT = \\frac{50\\sin 48^\\circ}{\\sin 70^\\circ} = 39.54\\ldots \\approx 39.5 \\text{ m}$$\n\n**(b)** The width is the perpendicular height of $T$ above $AB$. In the right-angled triangle formed by $A$, $T$ and the foot of the perpendicular:\n$$\\text{width} = AT\\sin 62^\\circ = 39.54\\ldots \\times \\sin 62^\\circ = 34.91\\ldots \\approx 34.9 \\text{ m}$$",
+  "linkedTopicIds": [
+   "geo-trig-right-angled"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q16",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A parallelogram has sides of length 7 cm and 10 cm. Its shorter diagonal is 8 cm long.\n\nFind the length of the longer diagonal. Give your answer to 3 significant figures.",
+  "hint": "The shorter diagonal is opposite the acute angle of the parallelogram. Find $\\cos$ of that angle, then use the fact that adjacent angles of a parallelogram add to $180^\\circ$.",
+  "answer": "$\\sqrt{234} \\approx 15.3$ cm",
+  "solution": "Let the acute angle of the parallelogram be $\\theta$. The shorter diagonal is opposite $\\theta$ in a triangle with sides 7 and 10:\n$$\\cos\\theta = \\frac{7^2 + 10^2 - 8^2}{2 \\times 7 \\times 10} = \\frac{85}{140}$$\n\nThe longer diagonal is opposite the obtuse angle $180^\\circ - \\theta$, and $\\cos(180^\\circ - \\theta) = -\\cos\\theta = -\\frac{85}{140}$:\n$$d^2 = 7^2 + 10^2 - 2 \\times 7 \\times 10 \\times \\left(-\\frac{85}{140}\\right) = 149 + 85 = 234$$\n\n$$d = \\sqrt{234} = 15.29\\ldots \\approx 15.3 \\text{ cm}$$\n\n(No need to find $\\theta$ itself. This also shows the parallelogram law: $8^2 + d^2 = 2(7^2 + 10^2) = 298$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "geo-quadrilateral-theorems"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q17",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Triangle $ABC$ is inscribed in a circle with centre $O$ and radius $R$. Angle $BAC$ is acute. $BD$ is a diameter, as shown. (Not drawn to scale.)\n\n**(a)** Prove that $\\dfrac{a}{\\sin A} = 2R$, where $a = BC$.\n**(b)** A triangle has a side of 9 cm opposite an angle of $50^\\circ$. Find the radius of the circle that passes through all three of its vertices, to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 290\" width=\"360\" height=\"290\"><circle cx=\"180\" cy=\"140\" r=\"95\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><polygon points=\"155.4,48.2 102.2,194.5 257.8,194.5\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"102.2\" y1=\"194.5\" x2=\"257.8\" y2=\"85.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"257.8\" y1=\"85.5\" x2=\"257.8\" y2=\"194.5\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"180\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"182\" y=\"158\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">O</text><polyline points=\"248.8,194.5 248.8,185.5 257.8,185.5\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"151.8\" y=\"39.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"90.7\" y=\"207.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"269.3\" y=\"207.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"269.3\" y=\"82.5\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text></svg>",
+  "hint": "Which circle theorem tells you angle $BCD$? Which one relates angle $BDC$ to angle $BAC$?",
+  "answer": "(a) Angle $BCD = 90^\\circ$ and angle $BDC = A$, so $\\sin A = \\dfrac{a}{2R}$. (b) 5.87 cm",
+  "solution": "**(a)**\n* $BD$ is a diameter, so angle $BCD = 90^\\circ$ (angle in a semicircle).\n* Angles $BAC$ and $BDC$ stand on the same arc $BC$ and are on the same side of chord $BC$ (since angle $A$ is acute), so angle $BDC = A$ (angles in the same segment are equal).\n\nIn right-angled triangle $BCD$, with hypotenuse $BD = 2R$:\n$$\\sin A = \\sin \\angle BDC = \\frac{BC}{BD} = \\frac{a}{2R}$$\n\nRearranging, $\\dfrac{a}{\\sin A} = 2R$. The same argument from $B$ and $C$ gives $\\dfrac{b}{\\sin B} = \\dfrac{c}{\\sin C} = 2R$, so the common value in the sine rule is the diameter of the circumcircle.\n\n**(b)**\n$$2R = \\frac{9}{\\sin 50^\\circ} = 11.748\\ldots \\quad\\Rightarrow\\quad R = 5.874\\ldots \\approx 5.87 \\text{ cm}$$",
+  "linkedTopicIds": [
+   "geo-circle-theorems"
+  ]
+ },
+ {
+  "id": "geo-sine-cosine-rules-q18",
+  "topicId": "geo-sine-cosine-rules",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The lengths of the sides of a triangle form an arithmetic sequence with common difference 2 cm. The largest angle of the triangle is $120^\\circ$.\n\nFind the perimeter of the triangle.",
+  "hint": "Call the sides $x - 2$, $x$ and $x + 2$. Which side is opposite the $120^\\circ$ angle? Use $\\cos 120^\\circ = -\\frac{1}{2}$.",
+  "answer": "15 cm (sides 3 cm, 5 cm, 7 cm)",
+  "solution": "Let the sides be $x - 2$, $x$, $x + 2$ (with $x > 2$). The largest angle is opposite the longest side, $x + 2$. Cosine rule:\n$$(x + 2)^2 = (x - 2)^2 + x^2 - 2x(x - 2)\\cos 120^\\circ$$\n\nWith $\\cos 120^\\circ = -\\frac{1}{2}$, the last term becomes $+x(x - 2)$:\n$$x^2 + 4x + 4 = x^2 - 4x + 4 + x^2 + x^2 - 2x$$\n\n$$x^2 + 4x + 4 = 3x^2 - 6x + 4$$\n\n$$0 = 2x^2 - 10x = 2x(x - 5)$$\n\n$x = 0$ is impossible, so $x = 5$. The sides are 3 cm, 5 cm and 7 cm.\n\nCheck: $\\cos C = \\dfrac{9 + 25 - 49}{2 \\times 3 \\times 5} = \\dfrac{-15}{30} = -\\dfrac{1}{2}$, so $C = 120^\\circ$. ✓\n\nPerimeter $= 3 + 5 + 7 = 15$ cm.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-sequences-linear",
+   "alg-quadratic-equations-factorising"
+  ]
+ }
+]

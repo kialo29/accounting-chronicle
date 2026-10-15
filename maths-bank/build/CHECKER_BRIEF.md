@@ -10,7 +10,7 @@ format rules; your fixes must follow them). SCRATCH = /tmp/claude-0/-home-user-a
    Check the worked examples and misconceptions are mathematically correct.
 2. **Blind solve.** Run `node scripts/blind.mjs <topicId>`. It prints the questions WITHOUT hints/answers/solutions.
    Solve every question yourself (use Python – sympy, numpy, scipy are installed – for any calculation, statistic,
-   critical value or diagram coordinate) and write your answers to `SCRATCH/check/<topicId>.md` BEFORE opening the
+   critical value or diagram coordinate) and write your answers to `SCRATCH/check/<topicId>.md` (keep any helper scripts in `SCRATCH/check/<batch>/`; other agents share SCRATCH) BEFORE opening the
    answers. Read SVG diagrams by their coordinates and labels to make sure they match the text.
    **Look at every diagram**: `node scripts/render-diagrams.mjs <topicId> SCRATCH/png/<topicId>` renders each SVG
    to PNG; open each PNG with the Read tool and check it is accurate, legible and matches the text.
