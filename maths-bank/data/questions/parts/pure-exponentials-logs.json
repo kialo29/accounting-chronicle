@@ -1,0 +1,257 @@
+[
+ {
+  "id": "pure-exponentials-logs-q01",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\log_2 x = 5$.",
+  "hint": "$\\log_a b = c$ means $a^c = b$. Here the base is 2 and the log (the power) is 5.",
+  "answer": "$x = 32$",
+  "solution": "Rewrite the logarithm as a power. $\\log_2 x = 5$ means \"2 to the power 5 gives $x$\":\n$$x = 2^5 = 32$$\n\nCheck: $2^5 = 32$, so $\\log_2 32 = 5$ ✓.\n\n(Common slip: $x = 5^2 = 25$ raises the wrong number. The **base** is raised to the **power equal to the log**.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q02",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\log_2 x = -5$.",
+  "hint": "Same method as for $\\log_2 x = 5$. What does a negative power mean?",
+  "answer": "$x = \\frac{1}{32}$",
+  "solution": "**What changed:** the log is now $-5$ instead of $5$.\n$$x = 2^{-5} = \\frac{1}{2^5} = \\frac{1}{32}$$\n\n**Effect:** a negative log gives a number between 0 and 1 (the reciprocal of the previous answer), not a negative number. $x$ itself must always be positive.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q03",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\log_2 x = \\frac{5}{2}$, giving your answer in the form $a\\sqrt{2}$.",
+  "hint": "$x = 2^{5/2}$. Split the power as $2^2 \\times 2^{1/2}$.",
+  "answer": "$x = 4\\sqrt{2}$",
+  "solution": "**What changed:** the log is now a fraction.\n$$x = 2^{5/2} = 2^{2} \\times 2^{1/2} = 4\\sqrt{2}$$\n\nCheck: $4\\sqrt{2} \\approx 5.657$, which lies between $2^2 = 4$ and $2^3 = 8$, as it should for a log between 2 and 3 ✓.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q04",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $\\log_x\\left(4\\sqrt{2}\\right) = \\frac{5}{2}$, where $x > 0$, $x \\ne 1$.",
+  "hint": "Now the **base** is unknown. Write the statement as a power: $x^{5/2} = 4\\sqrt{2}$. Then write $4\\sqrt{2}$ as a power of 2.",
+  "answer": "$x = 2$",
+  "solution": "**What changed:** the same numbers as the last question, but now the base is the unknown.\n\n$\\log_x(4\\sqrt{2}) = \\frac{5}{2}$ means\n$$x^{5/2} = 4\\sqrt{2} = 2^2 \\times 2^{1/2} = 2^{5/2}$$\n\nSo $x = 2$. (Alternatively, raise both sides to the power $\\frac{2}{5}$: $x = (4\\sqrt{2})^{2/5} = (2^{5/2})^{2/5} = 2$.)\n\nThis is consistent with the previous question: $\\log_2(4\\sqrt{2}) = \\frac{5}{2}$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q05",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the exact value of $x$ in each case.\n\n(a) $e^x = 7$\n(b) $\\ln x = 2$\n(c) $x = e^{3\\ln 2}$\n(d) $x = \\ln\\left(\\dfrac{1}{e^2}\\right)$\n(e) $e^{2x - 1} = 5$",
+  "hint": "$\\ln$ and $e^{(\\ )}$ undo each other: $\\ln(e^k) = k$ and $e^{\\ln k} = k$. For (c) use $3\\ln 2 = \\ln 2^3$ first.",
+  "answer": "(a) $\\ln 7$ (b) $e^2$ (c) $8$ (d) $-2$ (e) $\\frac{1 + \\ln 5}{2}$",
+  "solution": "**(a)** Take $\\ln$ of both sides: $x = \\ln 7$.\n\n**(b)** Apply $e^{(\\ )}$ to both sides: $x = e^2$.\n\n**(c)** $3\\ln 2 = \\ln 2^3 = \\ln 8$, so $x = e^{\\ln 8} = 8$.\n\n**(d)** $\\frac{1}{e^2} = e^{-2}$, so $x = \\ln(e^{-2}) = -2$.\n\n**(e)** Take $\\ln$ of both sides:\n$$2x - 1 = \\ln 5 \\Rightarrow x = \\frac{1 + \\ln 5}{2}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q06",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 1,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 260\" width=\"320\" height=\"260\"><line x1=\"60.4\" y1=\"230\" x2=\"60.4\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"113.2\" y1=\"230\" x2=\"113.2\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"166\" y1=\"230\" x2=\"166\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"218.8\" y1=\"230\" x2=\"218.8\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"271.6\" y1=\"230\" x2=\"271.6\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"230\" x2=\"298\" y2=\"230\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"187.6\" x2=\"298\" y2=\"187.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"145.2\" x2=\"298\" y2=\"145.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"102.8\" x2=\"298\" y2=\"102.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"60.4\" x2=\"298\" y2=\"60.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"18\" x2=\"298\" y2=\"18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"230\" x2=\"304\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"166\" y1=\"230\" x2=\"166\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,230 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M166,12 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"60.4\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-2</text><text x=\"113.2\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-1</text><text x=\"159\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"218.8\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"271.6\" y=\"246\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"160\" y=\"192.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"160\" y=\"149.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"160\" y=\"107.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"160\" y=\"64.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"160\" y=\"22.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"302\" y=\"222\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"174\" y=\"22\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"43.5,18.3 44.8,21.8 46,25.2 47.3,28.6 48.6,32 49.9,35.2 51.1,38.5 52.4,41.6 53.7,44.8 55,47.8 56.2,50.9 57.5,53.8 58.8,56.7 60,59.6 61.3,62.4 62.6,65.2 63.9,67.9 65.1,70.6 66.4,73.3 67.7,75.9 69,78.4 70.2,80.9 71.5,83.4 72.8,85.8 74,88.2 75.3,90.6 76.6,92.9 77.9,95.1 79.1,97.4 80.4,99.6 81.7,101.7 83,103.9 84.2,105.9 85.5,108 86.8,110 88,112 89.3,114 90.6,115.9 91.9,117.8 93.1,119.6 94.4,121.5 95.7,123.3 96.9,125 98.2,126.8 99.5,128.5 100.8,130.2 102,131.8 103.3,133.4 104.6,135 105.9,136.6 107.1,138.2 108.4,139.7 109.7,141.2 110.9,142.7 112.2,144.1 113.5,145.5 114.8,146.9 116,148.3 117.3,149.7 118.6,151 119.9,152.3 121.1,153.6 122.4,154.8 123.7,156.1 124.9,157.3 126.2,158.5 127.5,159.7 128.8,160.9 130,162 131.3,163.1 132.6,164.2 133.9,165.3 135.1,166.4 136.4,167.5 137.7,168.5 138.9,169.5 140.2,170.5 141.5,171.5 142.8,172.5 144,173.4 145.3,174.4 146.6,175.3 147.8,176.2 149.1,177.1 150.4,178 151.7,178.8 152.9,179.7 154.2,180.5 155.5,181.3 156.8,182.1 158,182.9 159.3,183.7 160.6,184.5 161.8,185.2 163.1,186 164.4,186.7 165.7,187.4 166.9,188.1 168.2,188.8 169.5,189.5 170.8,190.2 172,190.8 173.3,191.5 174.6,192.1 175.8,192.7 177.1,193.4 178.4,194 179.7,194.6 180.9,195.1 182.2,195.7 183.5,196.3 184.7,196.9 186,197.4 187.3,197.9 188.6,198.5 189.8,199 191.1,199.5 192.4,200 193.7,200.5 194.9,201 196.2,201.5 197.5,202 198.7,202.4 200,202.9 201.3,203.3 202.6,203.8 203.8,204.2 205.1,204.6 206.4,205 207.7,205.5 208.9,205.9 210.2,206.3 211.5,206.7 212.7,207 214,207.4 215.3,207.8 216.6,208.2 217.8,208.5 219.1,208.9 220.4,209.2 221.7,209.6 222.9,209.9 224.2,210.2 225.5,210.6 226.7,210.9 228,211.2 229.3,211.5 230.6,211.8 231.8,212.1 233.1,212.4 234.4,212.7 235.6,213 236.9,213.3 238.2,213.6 239.5,213.8 240.7,214.1 242,214.4 243.3,214.6 244.6,214.9 245.8,215.1 247.1,215.4 248.4,215.6 249.6,215.9 250.9,216.1 252.2,216.3 253.5,216.6 254.7,216.8 256,217 257.3,217.2 258.6,217.4 259.8,217.6 261.1,217.8 262.4,218 263.6,218.2 264.9,218.4 266.2,218.6 267.5,218.8 268.7,219 270,219.2 271.3,219.4 272.6,219.5 273.8,219.7 275.1,219.9 276.4,220 277.6,220.2 278.9,220.4 280.2,220.5 281.5,220.7 282.7,220.8 284,221 285.3,221.1 286.5,221.3 287.8,221.4 289.1,221.6 290.4,221.7 291.6,221.9 292.9,222 294.2,222.1 295.5,222.3 296.7,222.4 298,222.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"34,226.5 35.1,226.4 36.2,226.4 37.3,226.3 38.3,226.2 39.4,226.1 40.5,226.1 41.6,226 42.7,225.9 43.8,225.8 44.8,225.7 45.9,225.6 47,225.5 48.1,225.5 49.2,225.4 50.3,225.3 51.4,225.2 52.4,225.1 53.5,225 54.6,224.9 55.7,224.8 56.8,224.6 57.9,224.5 59,224.4 60,224.3 61.1,224.2 62.2,224.1 63.3,223.9 64.4,223.8 65.5,223.7 66.5,223.6 67.6,223.4 68.7,223.3 69.8,223.1 70.9,223 72,222.9 73.1,222.7 74.1,222.6 75.2,222.4 76.3,222.2 77.4,222.1 78.5,221.9 79.6,221.8 80.7,221.6 81.7,221.4 82.8,221.2 83.9,221 85,220.9 86.1,220.7 87.2,220.5 88.2,220.3 89.3,220.1 90.4,219.9 91.5,219.7 92.6,219.4 93.7,219.2 94.8,219 95.8,218.8 96.9,218.5 98,218.3 99.1,218.1 100.2,217.8 101.3,217.6 102.3,217.3 103.4,217 104.5,216.8 105.6,216.5 106.7,216.2 107.8,215.9 108.9,215.6 109.9,215.3 111,215 112.1,214.7 113.2,214.4 114.3,214.1 115.4,213.7 116.5,213.4 117.5,213.1 118.6,212.7 119.7,212.4 120.8,212 121.9,211.6 123,211.2 124,210.8 125.1,210.4 126.2,210 127.3,209.6 128.4,209.2 129.5,208.8 130.6,208.3 131.6,207.9 132.7,207.4 133.8,207 134.9,206.5 136,206 137.1,205.5 138.1,205 139.2,204.5 140.3,203.9 141.4,203.4 142.5,202.8 143.6,202.3 144.7,201.7 145.7,201.1 146.8,200.5 147.9,199.9 149,199.3 150.1,198.6 151.2,198 152.3,197.3 153.3,196.6 154.4,195.9 155.5,195.2 156.6,194.5 157.7,193.8 158.8,193 159.8,192.3 160.9,191.5 162,190.7 163.1,189.9 164.2,189 165.3,188.2 166.4,187.3 167.4,186.4 168.5,185.5 169.6,184.6 170.7,183.7 171.8,182.7 172.9,181.7 174,180.7 175,179.7 176.1,178.6 177.2,177.6 178.3,176.5 179.4,175.4 180.5,174.2 181.5,173.1 182.6,171.9 183.7,170.7 184.8,169.5 185.9,168.2 187,166.9 188.1,165.6 189.1,164.3 190.2,162.9 191.3,161.5 192.4,160.1 193.5,158.7 194.6,157.2 195.6,155.7 196.7,154.1 197.8,152.5 198.9,150.9 200,149.3 201.1,147.6 202.2,145.9 203.2,144.2 204.3,142.4 205.4,140.6 206.5,138.7 207.6,136.8 208.7,134.9 209.8,132.9 210.8,130.9 211.9,128.8 213,126.7 214.1,124.6 215.2,122.4 216.3,120.2 217.3,117.9 218.4,115.5 219.5,113.2 220.6,110.7 221.7,108.3 222.8,105.7 223.9,103.2 224.9,100.5 226,97.8 227.1,95.1 228.2,92.3 229.3,89.4 230.4,86.5 231.5,83.5 232.5,80.5 233.6,77.4 234.7,74.2 235.8,71 236.9,67.7 238,64.3 239,60.9 240.1,57.4 241.2,53.8 242.3,50.1 243.4,46.4 244.5,42.6 245.6,38.7 246.6,34.7 247.7,30.7 248.8,26.5 249.9,22.3 251,18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"34,222.5 35.3,222.4 36.5,222.3 37.8,222.1 39.1,222 40.4,221.9 41.6,221.7 42.9,221.6 44.2,221.4 45.5,221.3 46.7,221.1 48,221 49.3,220.8 50.5,220.7 51.8,220.5 53.1,220.4 54.4,220.2 55.6,220 56.9,219.9 58.2,219.7 59.4,219.5 60.7,219.4 62,219.2 63.3,219 64.5,218.8 65.8,218.6 67.1,218.4 68.4,218.2 69.6,218 70.9,217.8 72.2,217.6 73.4,217.4 74.7,217.2 76,217 77.3,216.8 78.5,216.6 79.8,216.3 81.1,216.1 82.4,215.9 83.6,215.6 84.9,215.4 86.2,215.1 87.4,214.9 88.7,214.6 90,214.4 91.3,214.1 92.5,213.8 93.8,213.6 95.1,213.3 96.4,213 97.6,212.7 98.9,212.4 100.2,212.1 101.4,211.8 102.7,211.5 104,211.2 105.3,210.9 106.5,210.6 107.8,210.2 109.1,209.9 110.3,209.6 111.6,209.2 112.9,208.9 114.2,208.5 115.4,208.2 116.7,207.8 118,207.4 119.3,207 120.5,206.7 121.8,206.3 123.1,205.9 124.3,205.5 125.6,205 126.9,204.6 128.2,204.2 129.4,203.8 130.7,203.3 132,202.9 133.3,202.4 134.5,202 135.8,201.5 137.1,201 138.3,200.5 139.6,200 140.9,199.5 142.2,199 143.4,198.5 144.7,197.9 146,197.4 147.3,196.9 148.5,196.3 149.8,195.7 151.1,195.1 152.3,194.6 153.6,194 154.9,193.4 156.2,192.7 157.4,192.1 158.7,191.5 160,190.8 161.2,190.2 162.5,189.5 163.8,188.8 165.1,188.1 166.3,187.4 167.6,186.7 168.9,186 170.2,185.2 171.4,184.5 172.7,183.7 174,182.9 175.2,182.1 176.5,181.3 177.8,180.5 179.1,179.7 180.3,178.8 181.6,178 182.9,177.1 184.2,176.2 185.4,175.3 186.7,174.4 188,173.4 189.2,172.5 190.5,171.5 191.8,170.5 193.1,169.5 194.3,168.5 195.6,167.5 196.9,166.4 198.1,165.3 199.4,164.2 200.7,163.1 202,162 203.2,160.9 204.5,159.7 205.8,158.5 207.1,157.3 208.3,156.1 209.6,154.8 210.9,153.6 212.1,152.3 213.4,151 214.7,149.7 216,148.3 217.2,146.9 218.5,145.5 219.8,144.1 221.1,142.7 222.3,141.2 223.6,139.7 224.9,138.2 226.1,136.6 227.4,135 228.7,133.4 230,131.8 231.2,130.2 232.5,128.5 233.8,126.8 235.1,125 236.3,123.3 237.6,121.5 238.9,119.6 240.1,117.8 241.4,115.9 242.7,114 244,112 245.2,110 246.5,108 247.8,105.9 249,103.9 250.3,101.7 251.6,99.6 252.9,97.4 254.1,95.1 255.4,92.9 256.7,90.6 258,88.2 259.2,85.8 260.5,83.4 261.8,80.9 263,78.4 264.3,75.9 265.6,73.3 266.9,70.6 268.1,67.9 269.4,65.2 270.7,62.4 272,59.6 273.2,56.7 274.5,53.8 275.8,50.9 277,47.8 278.3,44.8 279.6,41.6 280.9,38.5 282.1,35.2 283.4,32 284.7,28.6 286,25.2 287.2,21.8 288.5,18.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"53.5\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><text x=\"241\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><text x=\"294.5\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">C</text></svg>",
+  "question": "The diagram shows the graphs of $y = 2^x$, $y = e^x$ and $y = \\left(\\frac{1}{2}\\right)^x$, labelled A, B and C in some order.\n\n(a) Match each equation to its graph, giving a reason for each.\n(b) Write down the coordinates of the point that all three graphs pass through, and explain why every graph of the form $y = a^x$ ($a > 0$) passes through it.\n(c) Write down the equation of the asymptote shared by all three graphs.",
+  "hint": "Which graph is decreasing? Of the two increasing graphs, which one is steeper for $x > 0$? Remember $e \\approx 2.718$.",
+  "answer": "(a) A: $y = \\left(\\frac{1}{2}\\right)^x$, B: $y = e^x$, C: $y = 2^x$ (b) $(0, 1)$, since $a^0 = 1$ (c) $y = 0$",
+  "solution": "**(a)** A is the only decreasing graph, so it is $y = \\left(\\frac{1}{2}\\right)^x$ (base between 0 and 1 means decay).\n\nB and C both increase. For $x > 0$ a larger base grows faster, and $e \\approx 2.718 > 2$, so the steeper curve B is $y = e^x$ and C is $y = 2^x$. (Check at $x = 1$: B is at about $2.7$, C at $2$.)\n\n**(b)** All three pass through $(0, 1)$, because $a^0 = 1$ for every positive number $a$.\n\n**(c)** As $x \\to -\\infty$ the increasing curves approach 0 (and as $x \\to +\\infty$ curve A does), but $a^x$ is never 0 or negative. The asymptote is $y = 0$ (the $x$-axis).\n\n(Note A is the reflection of C in the $y$-axis, since $\\left(\\frac{1}{2}\\right)^x = 2^{-x}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q07",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "(a) Write $2\\log 5 + \\log 12 - \\log 3$ as a single logarithm, and hence find its exact value. (Here $\\log$ means $\\log_{10}$.)\n(b) Express $\\log_a\\left(\\dfrac{x^3\\sqrt{y}}{z^2}\\right)$ in terms of $\\log_a x$, $\\log_a y$ and $\\log_a z$.\n(c) Given that $\\log_a 2 = p$ and $\\log_a 3 = q$, express $\\log_a 18$ and $\\log_a\\frac{8}{9}$ in terms of $p$ and $q$.",
+  "hint": "Use the power law first ($k\\log x = \\log x^k$), then add for multiplication and subtract for division. In (c) write $18 = 2 \\times 3^2$.",
+  "answer": "(a) $\\log 100 = 2$ (b) $3\\log_a x + \\frac{1}{2}\\log_a y - 2\\log_a z$ (c) $\\log_a 18 = p + 2q$, $\\log_a\\frac{8}{9} = 3p - 2q$",
+  "solution": "**(a)** Power law: $2\\log 5 = \\log 25$.\n$$\\log 25 + \\log 12 - \\log 3 = \\log\\frac{25 \\times 12}{3} = \\log 100 = 2$$\n(since $10^2 = 100$).\n\n**(b)**\n$$\\log_a\\left(\\frac{x^3 y^{1/2}}{z^2}\\right) = \\log_a x^3 + \\log_a y^{1/2} - \\log_a z^2 = 3\\log_a x + \\frac{1}{2}\\log_a y - 2\\log_a z$$\n\n**(c)** $18 = 2 \\times 3^2$:\n$$\\log_a 18 = \\log_a 2 + 2\\log_a 3 = p + 2q$$\n\n$\\frac{8}{9} = \\frac{2^3}{3^2}$:\n$$\\log_a\\frac{8}{9} = 3\\log_a 2 - 2\\log_a 3 = 3p - 2q$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q08",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Leo is solving $\\log_2(x + 4) = 5$. His working is shown below.\n\nLine 1: $\\log_2(x + 4) = \\log_2 x + \\log_2 4$\nLine 2: $\\log_2 x + 2 = 5$\nLine 3: $\\log_2 x = 3$\nLine 4: $x = 8$\n\n(a) Show that Leo's answer does not satisfy the equation.\n(b) Identify his mistake, explain why it is wrong, and solve the equation correctly.",
+  "hint": "Which law of logarithms involves adding two logs? Is $x + 4$ a product?",
+  "answer": "(a) $\\log_2 12 \\ne 5$ (since $2^5 = 32$). (b) Line 1: $\\log(a + b) \\ne \\log a + \\log b$. Correct answer $x = 28$.",
+  "solution": "**(a)** With $x = 8$: $\\log_2(8 + 4) = \\log_2 12$. But $2^5 = 32 \\ne 12$, so $\\log_2 12 \\ne 5$ (in fact $\\log_2 12 \\approx 3.58$).\n\n**(b)** Line 1 is wrong. The addition law is $\\log_2 x + \\log_2 4 = \\log_2(4x)$: it turns a **product** into a sum. There is no law for the log of a **sum** $x + 4$. A quick numerical check shows it fails: $\\log_2(4 + 4) = 3$, but $\\log_2 4 + \\log_2 4 = 4$.\n\nCorrect method: undo the log directly.\n$$\\log_2(x + 4) = 5 \\Rightarrow x + 4 = 2^5 = 32 \\Rightarrow x = 28$$\n\nCheck: $\\log_2 32 = 5$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q09",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara is asked to find the exact value of $\\dfrac{\\log 27}{\\log 9}$. Her working is shown below.\n\nLine 1: $\\dfrac{\\log 27}{\\log 9} = \\log\\left(\\dfrac{27}{9}\\right)$\nLine 2: $= \\log 3$\nLine 3: $\\approx 0.477$\n\n(a) Use a calculator to show that Zara's answer is wrong.\n(b) Explain her mistake and find the correct exact value.",
+  "hint": "Which expression is equal to $\\log\\frac{27}{9}$: $\\log 27 - \\log 9$ or $\\frac{\\log 27}{\\log 9}$? Try writing 27 and 9 as powers of 3.",
+  "answer": "(a) $\\frac{1.431}{0.954} = 1.5 \\ne 0.477$ (b) Line 1 confuses a quotient of logs with the log of a quotient; $\\frac{\\log 27}{\\log 9} = \\frac{3}{2}$.",
+  "solution": "**(a)** $\\log 27 = 1.4314$ and $\\log 9 = 0.9542$, so $\\frac{\\log 27}{\\log 9} = 1.5$, not $0.477$.\n\n**(b)** Line 1 is wrong. The subtraction law says $\\log 27 - \\log 9 = \\log\\frac{27}{9}$; it is about a **difference** of logs, not a **quotient** of logs. There is no law that turns $\\frac{\\log a}{\\log b}$ into a single log of the same base.\n\nA quotient of logs is a change of base: $\\dfrac{\\log 27}{\\log 9} = \\log_9 27$. Exactly:\n$$\\frac{\\log 27}{\\log 9} = \\frac{\\log 3^3}{\\log 3^2} = \\frac{3\\log 3}{2\\log 3} = \\frac{3}{2}$$\n\nCheck: $9^{3/2} = (\\sqrt{9})^3 = 27$ ✓.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q10",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Mia solves $\\log_2(x + 2) + \\log_2(x - 5) = 3$ as follows.\n\nLine 1: $\\log_2\\big((x + 2)(x - 5)\\big) = 3$\nLine 2: $(x + 2)(x - 5) = 8$\nLine 3: $x^2 - 3x - 18 = 0$\nLine 4: $(x - 6)(x + 3) = 0$, so $x = 6$ or $x = -3$.\n\n(a) Is Mia's final answer correct? Justify your answer.\n(b) Show that $x = -3$ **is** a solution of the equation in Line 1, and explain why going from the original equation to Line 1 can create an extra solution.",
+  "hint": "Substitute each value into the **original** equation. Can you take the log of a negative number?",
+  "answer": "(a) No: $x = -3$ must be rejected since $\\log_2(-1)$ and $\\log_2(-8)$ are undefined; the only solution is $x = 6$. (b) At $x = -3$, $(x + 2)(x - 5) = 8 > 0$; the law $\\log a + \\log b = \\log ab$ needs $a > 0$ and $b > 0$, but $ab > 0$ also when both are negative.",
+  "solution": "**(a)** Not quite. Check both values in the **original** equation.\n\n$x = 6$: $\\log_2 8 + \\log_2 1 = 3 + 0 = 3$ ✓\n\n$x = -3$: $\\log_2(-1) + \\log_2(-8)$, which is undefined (logs only exist for positive arguments). So $x = -3$ must be rejected.\n\nThe only solution is $x = 6$.\n\n**(b)** At $x = -3$: $(x + 2)(x - 5) = (-1)(-8) = 8$, and $\\log_2 8 = 3$, so $x = -3$ satisfies Line 1.\n\nThe law $\\log_2 a + \\log_2 b = \\log_2(ab)$ is only valid when $a > 0$ and $b > 0$. The left-hand side of the original equation needs $x + 2 > 0$ **and** $x - 5 > 0$, i.e. $x > 5$. But Line 1 only needs the product $(x + 2)(x - 5) > 0$, which is also true when both factors are negative ($x < -2$). Combining the logs has enlarged the set of allowed $x$, so it can introduce an extraneous solution. This is why every answer must be checked in the original equation.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q11",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "In this question you must not use a calculator.\n\n(a) Use the change of base formula to show that $\\log_4 9 = \\log_2 3$.\n(b) Find the exact value of\n$$\\log_2 3 \\times \\log_3 4 \\times \\log_4 5 \\times \\cdots \\times \\log_{31} 32$$\n(c) Find the exact value of $\\log_8 x$ when $\\log_2 x = 12$.",
+  "hint": "Write every log as $\\frac{\\ln(\\text{argument})}{\\ln(\\text{base})}$. In (b), look at what cancels.",
+  "answer": "(a) Shown (see solution). (b) $5$ (c) $4$",
+  "solution": "**(a)**\n$$\\log_4 9 = \\frac{\\ln 9}{\\ln 4} = \\frac{\\ln 3^2}{\\ln 2^2} = \\frac{2\\ln 3}{2\\ln 2} = \\frac{\\ln 3}{\\ln 2} = \\log_2 3$$\n\n**(b)** Change every factor to natural logs:\n$$\\frac{\\ln 3}{\\ln 2} \\times \\frac{\\ln 4}{\\ln 3} \\times \\frac{\\ln 5}{\\ln 4} \\times \\cdots \\times \\frac{\\ln 32}{\\ln 31}$$\n\nEach numerator cancels with the next denominator (the product \"telescopes\"), leaving\n$$\\frac{\\ln 32}{\\ln 2} = \\log_2 32 = 5$$\n\n**(c)**\n$$\\log_8 x = \\frac{\\log_2 x}{\\log_2 8} = \\frac{12}{3} = 4$$\n\n(Check: $x = 2^{12} = 4096 = 8^4$ ✓.)\n\nNote: $\\frac{\\ln 32}{\\ln 2}$ is **not** $\\ln 16$; a quotient of logs is a change of base, not a log of a quotient.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q12",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 8,
+  "calculator": false,
+  "question": "In this question you must show all stages of your working. Solutions relying entirely on calculator technology are not acceptable.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Solve\n$$2\\log_3(x - 1) - \\log_3(x + 5) = 1$$",
+    "marks": 5
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact value of $x$ for which $3^{x + 1} = 5^x$, giving your answer in the form $\\dfrac{\\ln a}{\\ln b}$, where $a$ and $b$ are rational numbers.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Power law, then subtraction law, then undo the log. Check your answers in the original equation. (b) Take $\\ln$ of both sides and collect the $x$ terms.",
+  "answer": "(a) $x = 7$ (b) $x = \\dfrac{\\ln 3}{\\ln\\frac{5}{3}}$",
+  "solution": "**(a)**\n$$\\log_3(x - 1)^2 - \\log_3(x + 5) = 1$$\nM1 (power law)\n$$\\log_3\\frac{(x - 1)^2}{x + 5} = 1$$\nM1 (subtraction law)\n$$\\frac{(x - 1)^2}{x + 5} = 3 \\Rightarrow x^2 - 2x + 1 = 3x + 15 \\Rightarrow x^2 - 5x - 14 = 0$$\nM1 (removes logs correctly and forms a quadratic) A1\n$$(x - 7)(x + 2) = 0 \\Rightarrow x = 7 \\text{ or } x = -2$$\n\n$x = -2$ gives $\\log_3(-3)$, which is undefined, so reject it. $x = 7$ only. A1 (rejects $-2$ with a reason)\n\n(Check: $2\\log_3 6 - \\log_3 12 = \\log_3\\frac{36}{12} = \\log_3 3 = 1$ ✓.)\n\n**(b)** Take natural logs:\n$$(x + 1)\\ln 3 = x\\ln 5$$\nM1\n$$x\\ln 3 + \\ln 3 = x\\ln 5 \\Rightarrow \\ln 3 = x(\\ln 5 - \\ln 3)$$\nM1 (collects $x$ terms and factorises)\n$$x = \\frac{\\ln 3}{\\ln 5 - \\ln 3} = \\frac{\\ln 3}{\\ln\\frac{5}{3}}$$\nA1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q13",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Priti invests £5000 in an account paying interest at 3.2% per year, **compounded continuously**, so that after $t$ years the value of the investment is\n$$A = 5000e^{0.032t}$$\n\n(a) Find the value of the investment after 6 years, to the nearest penny.\n(b) Find, to 2 decimal places, how long it takes for the investment to double, and hence state after how many complete years the value first exceeds £10 000.\n(c) A rival account pays 3.25% per year, compounded annually. Which account gives more after 6 years, and by how much?\n(d) Find the annual equivalent rate (AER) of the continuously compounded account, to 2 decimal places.",
+  "hint": "(b) Solve $5000e^{0.032t} = 10\\,000$ by taking $\\ln$ of both sides. (c) Annual compounding: $5000 \\times 1.0325^6$. (d) After one year the multiplier is $e^{0.032}$.",
+  "answer": "(a) £6058.35 (b) $21.66$ years; after 22 complete years (c) The continuous account, by about 62p (£6058.35 vs £6057.74) (d) 3.25%",
+  "solution": "**(a)**\n$$A = 5000e^{0.032 \\times 6} = 5000e^{0.192} = £6058.35$$\n\n**(b)**\n$$5000e^{0.032t} = 10\\,000 \\Rightarrow e^{0.032t} = 2 \\Rightarrow 0.032t = \\ln 2 \\Rightarrow t = \\frac{\\ln 2}{0.032} = 21.66 \\text{ years}$$\n\nAfter 21 years it has not quite doubled, so the value first exceeds £10 000 after **22** complete years.\n\n**(c)** Annual compounding: $5000 \\times 1.0325^6 = 6057.736\\ldots = £6057.74$.\n\nContinuous: £6058.35. The continuously compounded account gives more. Using the unrounded values, the difference is $6058.3526 - 6057.7363 = 0.6162\\ldots$, i.e. about 62p.\n\n**(d)** In one year the money is multiplied by $e^{0.032} = 1.032518\\ldots$, which is an increase of $3.25\\%$ (2 d.p.).\n\nSo 3.2% compounded continuously is (almost exactly) the same as 3.25% compounded annually, which is why the two accounts in (c) are so close: the continuous one is very slightly better because its AER is $3.2518\\%$, a fraction above $3.25\\%$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q14",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The loudness of a sound, $L$ decibels (dB), is given by\n$$L = 10\\log_{10}\\left(\\frac{I}{I_0}\\right)$$\nwhere $I$ is the intensity in $\\text{W/m}^2$ and $I_0 = 10^{-12}\\ \\text{W/m}^2$.\n\n(a) Find the loudness of a vacuum cleaner with intensity $10^{-5}\\ \\text{W/m}^2$.\n(b) Show that doubling the intensity of any sound increases its loudness by about 3 dB.\n(c) At a festival, one speaker produces 85 dB at the mixing desk. Intensities from identical speakers add. Jamal says two such speakers will produce 170 dB. Explain why Jamal is wrong, and find the actual loudness of two speakers.\n(d) Find the least number of identical 85 dB speakers needed to produce at least 100 dB at the mixing desk.",
+  "hint": "(b) and (c): replace $I$ by $2I$ and use $\\log(ab) = \\log a + \\log b$. (d) With $n$ speakers, $L = 85 + 10\\log_{10} n$.",
+  "answer": "(a) 70 dB (b) Increase $= 10\\log_{10} 2 \\approx 3.01$ dB (c) Loudness is the log of the total intensity, and $\\log(I + I) \\ne \\log I + \\log I$; two speakers give about 88 dB. (d) 32 speakers",
+  "solution": "**(a)**\n$$L = 10\\log_{10}\\left(\\frac{10^{-5}}{10^{-12}}\\right) = 10\\log_{10}(10^7) = 10 \\times 7 = 70 \\text{ dB}$$\n\n**(b)** New loudness:\n$$10\\log_{10}\\left(\\frac{2I}{I_0}\\right) = 10\\left[\\log_{10} 2 + \\log_{10}\\left(\\frac{I}{I_0}\\right)\\right] = 10\\log_{10} 2 + L$$\nThe increase is $10\\log_{10} 2 = 3.01 \\approx 3$ dB, whatever the original sound.\n\n**(c)** Jamal has added the decibel values, which assumes $\\log(I + I) = \\log I + \\log I$. But logs turn **products** into sums, not sums into sums. The intensities add ($I + I = 2I$), so by part (b) the loudness rises by only about 3 dB:\n$$L = 85 + 3.01 \\approx 88 \\text{ dB}$$\n(170 dB would be louder than a rocket launch.)\n\n**(d)** $n$ identical speakers give intensity $nI$, so\n$$L = 10\\log_{10}\\left(\\frac{nI}{I_0}\\right) = 85 + 10\\log_{10} n$$\n$$85 + 10\\log_{10} n \\ge 100 \\Rightarrow \\log_{10} n \\ge 1.5 \\Rightarrow n \\ge 10^{1.5} = 31.6\\ldots$$\n\nSo at least **32** speakers are needed.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-exponentials-logs-q15",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-composite-inverse-functions",
+   "alg-graph-transformations"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"34\" y1=\"262\" x2=\"34\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"83.2\" y1=\"262\" x2=\"83.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"132.4\" y1=\"262\" x2=\"132.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"181.6\" y1=\"262\" x2=\"181.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"230.8\" y1=\"262\" x2=\"230.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"280\" y1=\"262\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"262\" x2=\"280\" y2=\"262\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"231.2\" x2=\"280\" y2=\"231.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"200.5\" x2=\"280\" y2=\"200.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"169.8\" x2=\"280\" y2=\"169.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"139\" x2=\"280\" y2=\"139\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"108.2\" x2=\"280\" y2=\"108.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"77.5\" x2=\"280\" y2=\"77.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"46.8\" x2=\"280\" y2=\"46.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"16\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"34\" y1=\"139\" x2=\"286\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"181.6\" y1=\"262\" x2=\"181.6\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M286,139 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M181.6,10 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"34\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-3</text><text x=\"83.2\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-2</text><text x=\"132.4\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">-1</text><text x=\"174.6\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><text x=\"230.8\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"280\" y=\"155\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"175.6\" y=\"266.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-4</text><text x=\"175.6\" y=\"235.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-3</text><text x=\"175.6\" y=\"205\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-2</text><text x=\"175.6\" y=\"174.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">-1</text><text x=\"175.6\" y=\"112.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"175.6\" y=\"82\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"175.6\" y=\"51.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"175.6\" y=\"20.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"284\" y=\"131\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">x</tspan></text><text x=\"189.6\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">y</tspan></text><polyline points=\"34,231.2 280,231.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"6 4\"/><polyline points=\"34,231.2 35,231.2 36,231.2 36.9,231.2 37.9,231.2 38.9,231.2 39.9,231.2 40.8,231.1 41.8,231.1 42.8,231.1 43.8,231.1 44.8,231.1 45.7,231.1 46.7,231.1 47.7,231.1 48.7,231.1 49.6,231.1 50.6,231.1 51.6,231.1 52.6,231.1 53.5,231.1 54.5,231.1 55.5,231.1 56.5,231.1 57.5,231.1 58.4,231 59.4,231 60.4,231 61.4,231 62.3,231 63.3,231 64.3,231 65.3,231 66.3,231 67.2,231 68.2,230.9 69.2,230.9 70.2,230.9 71.1,230.9 72.1,230.9 73.1,230.9 74.1,230.9 75,230.8 76,230.8 77,230.8 78,230.8 79,230.8 79.9,230.8 80.9,230.7 81.9,230.7 82.9,230.7 83.8,230.7 84.8,230.6 85.8,230.6 86.8,230.6 87.8,230.6 88.7,230.5 89.7,230.5 90.7,230.5 91.7,230.5 92.6,230.4 93.6,230.4 94.6,230.4 95.6,230.3 96.6,230.3 97.5,230.2 98.5,230.2 99.5,230.2 100.5,230.1 101.4,230.1 102.4,230 103.4,230 104.4,229.9 105.3,229.9 106.3,229.8 107.3,229.7 108.3,229.7 109.3,229.6 110.2,229.6 111.2,229.5 112.2,229.4 113.2,229.3 114.1,229.3 115.1,229.2 116.1,229.1 117.1,229 118.1,228.9 119,228.8 120,228.7 121,228.6 122,228.5 122.9,228.4 123.9,228.3 124.9,228.2 125.9,228.1 126.8,227.9 127.8,227.8 128.8,227.7 129.8,227.5 130.8,227.4 131.7,227.2 132.7,227 133.7,226.9 134.7,226.7 135.6,226.5 136.6,226.3 137.6,226.1 138.6,225.9 139.6,225.7 140.5,225.5 141.5,225.2 142.5,225 143.5,224.7 144.4,224.5 145.4,224.2 146.4,223.9 147.4,223.6 148.3,223.3 149.3,223 150.3,222.6 151.3,222.3 152.3,221.9 153.2,221.5 154.2,221.1 155.2,220.7 156.2,220.3 157.1,219.9 158.1,219.4 159.1,218.9 160.1,218.4 161.1,217.9 162,217.4 163,216.8 164,216.2 165,215.6 165.9,215 166.9,214.3 167.9,213.6 168.9,212.9 169.9,212.2 170.8,211.4 171.8,210.6 172.8,209.8 173.8,208.9 174.7,208 175.7,207 176.7,206.1 177.7,205 178.6,204 179.6,202.9 180.6,201.7 181.6,200.5 182.6,199.3 183.5,198 184.5,196.6 185.5,195.2 186.5,193.8 187.4,192.3 188.4,190.7 189.4,189 190.4,187.3 191.4,185.5 192.3,183.7 193.3,181.8 194.3,179.8 195.3,177.7 196.2,175.5 197.2,173.2 198.2,170.9 199.2,168.4 200.1,165.9 201.1,163.2 202.1,160.5 203.1,157.6 204.1,154.6 205,151.5 206,148.3 207,144.9 208,141.4 208.9,137.8 209.9,134 210.9,130.1 211.9,126 212.9,121.7 213.8,117.3 214.8,112.6 215.8,107.8 216.8,102.8 217.7,97.6 218.7,92.2 219.7,86.6 220.7,80.7 221.7,74.6 222.6,68.3 223.6,61.7 224.6,54.8 225.6,47.6 226.5,40.2 227.5,32.4 228.5,24.4 229.5,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"181.6\" cy=\"200.5\" r=\"3\" fill=\"currentColor\"/><text x=\"189.6\" y=\"216.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">(0, −2)</text><text x=\"38.9\" y=\"224.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = −3</text><text x=\"233.3\" y=\"37.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = f(x)</text></svg>",
+  "question": "The function $f$ is defined by $f(x) = e^{2x} - 3$, $x \\in \\mathbb{R}$. The diagram shows the graph of $y = f(x)$, which crosses the $y$-axis at $(0, -2)$ and has asymptote $y = -3$.\n\n(a) State the range of $f$.\n(b) Find the exact coordinates of the point where the graph of $y = f(x)$ crosses the $x$-axis.\n(c) Find $f^{-1}(x)$ and state its domain.\n(d) Describe the geometrical relationship between the graphs of $y = f(x)$ and $y = f^{-1}(x)$, and hence write down the equation of the asymptote of $y = f^{-1}(x)$ and the exact coordinates of the points where it crosses the axes.",
+  "hint": "(c) Write $y = e^{2x} - 3$, swap to make $x$ the subject: add 3, take $\\ln$, divide by 2. The domain of $f^{-1}$ is the range of $f$. (d) Reflecting in $y = x$ swaps the coordinates.",
+  "answer": "(a) $f(x) > -3$ (b) $\\left(\\frac{1}{2}\\ln 3, 0\\right)$ (c) $f^{-1}(x) = \\frac{1}{2}\\ln(x + 3)$, $x > -3$ (d) Reflections of each other in $y = x$; asymptote $x = -3$; crosses axes at $(-2, 0)$ and $\\left(0, \\frac{1}{2}\\ln 3\\right)$",
+  "solution": "**(a)** $e^{2x} > 0$ for all $x$, so $e^{2x} - 3 > -3$. Range: $f(x) > -3$.\n\n**(b)** $e^{2x} - 3 = 0 \\Rightarrow e^{2x} = 3 \\Rightarrow 2x = \\ln 3 \\Rightarrow x = \\frac{1}{2}\\ln 3$. The point is $\\left(\\frac{1}{2}\\ln 3, 0\\right)$ (about $(0.55, 0)$, consistent with the diagram).\n\n**(c)** Let $y = e^{2x} - 3$:\n$$y + 3 = e^{2x} \\Rightarrow 2x = \\ln(y + 3) \\Rightarrow x = \\tfrac{1}{2}\\ln(y + 3)$$\n$$f^{-1}(x) = \\tfrac{1}{2}\\ln(x + 3), \\qquad \\text{domain } x > -3$$\n(the domain of $f^{-1}$ is the range of $f$; $\\ln$ needs a positive input, which agrees).\n\n**(d)** The graph of $y = f^{-1}(x)$ is the reflection of $y = f(x)$ in the line $y = x$, so every point $(a, b)$ on $f$ becomes $(b, a)$.\n\nThe horizontal asymptote $y = -3$ becomes the vertical asymptote $x = -3$.\n\n$(0, -2)$ becomes $(-2, 0)$: the $x$-intercept of $f^{-1}$ (check: $\\frac{1}{2}\\ln 1 = 0$ ✓).\n\n$\\left(\\frac{1}{2}\\ln 3, 0\\right)$ becomes $\\left(0, \\frac{1}{2}\\ln 3\\right)$: the $y$-intercept (check: $f^{-1}(0) = \\frac{1}{2}\\ln 3$ ✓)."
+ },
+ {
+  "id": "pure-exponentials-logs-q16",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear",
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "Solve the simultaneous equations\n$$\\log_x y + \\log_y x = \\frac{5}{2}, \\qquad xy = 27$$\nwhere $x$ and $y$ are positive and neither is equal to 1.",
+  "hint": "Use change of base to show $\\log_y x = \\dfrac{1}{\\log_x y}$. Let $u = \\log_x y$ and form a quadratic in $u$.",
+  "answer": "$x = 3, y = 9$ or $x = 9, y = 3$",
+  "solution": "By change of base, $\\log_y x = \\dfrac{\\ln x}{\\ln y} = \\dfrac{1}{\\ln y / \\ln x} = \\dfrac{1}{\\log_x y}$.\n\nLet $u = \\log_x y$ (note $u \\ne 0$ since $y \\ne 1$). The first equation becomes\n$$u + \\frac{1}{u} = \\frac{5}{2} \\Rightarrow 2u^2 - 5u + 2 = 0 \\Rightarrow (2u - 1)(u - 2) = 0$$\n$$u = 2 \\quad \\text{or} \\quad u = \\tfrac{1}{2}$$\n\n**Case $u = 2$:** $\\log_x y = 2 \\Rightarrow y = x^2$. Then $xy = x^3 = 27 \\Rightarrow x = 3$, $y = 9$.\n\n**Case $u = \\frac{1}{2}$:** $\\log_x y = \\frac{1}{2} \\Rightarrow y = x^{1/2}$, i.e. $x = y^2$. Then $xy = y^3 = 27 \\Rightarrow y = 3$, $x = 9$.\n\nCheck $(3, 9)$: $\\log_3 9 + \\log_9 3 = 2 + \\frac{1}{2} = \\frac{5}{2}$ ✓ and $3 \\times 9 = 27$ ✓. The other solution is the same by symmetry.\n\nSo $x = 3, y = 9$ or $x = 9, y = 3$."
+ },
+ {
+  "id": "pure-exponentials-logs-q17",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "Solve the equation\n$$x^{\\log_2 x} = 16x^3, \\qquad x > 0$$\ngiving your answers exactly.",
+  "hint": "Take $\\log_2$ of both sides. The power law turns the left-hand side into $(\\log_2 x)^2$. Then let $u = \\log_2 x$.",
+  "answer": "$x = 16$ or $x = \\frac{1}{2}$",
+  "solution": "Both sides are positive, so we can take $\\log_2$ of both sides:\n$$\\log_2\\left(x^{\\log_2 x}\\right) = \\log_2(16x^3)$$\n\nPower law on the left; addition and power laws on the right:\n$$(\\log_2 x)(\\log_2 x) = \\log_2 16 + 3\\log_2 x$$\n\nLet $u = \\log_2 x$:\n$$u^2 = 4 + 3u \\Rightarrow u^2 - 3u - 4 = 0 \\Rightarrow (u - 4)(u + 1) = 0$$\n$$u = 4 \\Rightarrow x = 2^4 = 16, \\qquad u = -1 \\Rightarrow x = 2^{-1} = \\tfrac{1}{2}$$\n\nBoth are positive, so both are valid. Check:\n\n$x = 16$: $16^{\\log_2 16} = 16^4 = 65\\,536$ and $16 \\times 16^3 = 16^4$ ✓\n\n$x = \\frac{1}{2}$: $\\left(\\frac{1}{2}\\right)^{-1} = 2$ and $16 \\times \\frac{1}{8} = 2$ ✓"
+ },
+ {
+  "id": "pure-exponentials-logs-q18",
+  "topicId": "pure-exponentials-logs",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "question": "(a) Prove by contradiction that $\\log_2 3$ is irrational.\n(b) Without using a calculator, prove that\n$$\\log_2 3 > \\frac{3}{2} > \\log_3 5$$",
+  "hint": "(a) Suppose $\\log_2 3 = \\frac{p}{q}$ with $p$, $q$ positive integers, and rewrite it as a statement about powers. Think odd and even. (b) $\\log_2 3 > \\frac{3}{2}$ is the same as $3 > 2^{3/2}$; square both sides.",
+  "answer": "(a) $\\log_2 3 = \\frac{p}{q} \\Rightarrow 2^p = 3^q$: even $=$ odd, a contradiction. (b) $3^2 = 9 > 8 = 2^3$ gives $\\log_2 3 > \\frac{3}{2}$; $5^2 = 25 < 27 = 3^3$ gives $\\log_3 5 < \\frac{3}{2}$.",
+  "solution": "**(a)** Assume, for contradiction, that $\\log_2 3$ is rational. Since $\\log_2 3 > 0$ (as $3 > 1$), we can write $\\log_2 3 = \\frac{p}{q}$ with $p$ and $q$ positive integers.\n\nBy the definition of a logarithm:\n$$2^{p/q} = 3 \\Rightarrow 2^p = 3^q$$\n\n$p \\ge 1$, so $2^p$ is even. But $3^q$ is a product of odd numbers, so it is odd. An even number cannot equal an odd number: contradiction. Hence $\\log_2 3$ is irrational. $\\blacksquare$\n\n**(b)** $\\log_2 x$ is an increasing function, so for positive numbers, $a > b \\iff \\log_2 a > \\log_2 b$ (and the same for $\\log_3$).\n\nLeft inequality: $3^2 = 9 > 8 = 2^3$. Take the positive square root: $3 > 2^{3/2}$. Taking $\\log_2$:\n$$\\log_2 3 > \\frac{3}{2}$$\n\nRight inequality: $5^2 = 25 < 27 = 3^3$, so $5 < 3^{3/2}$. Taking $\\log_3$:\n$$\\log_3 5 < \\frac{3}{2}$$\n\nCombining: $\\log_2 3 > \\frac{3}{2} > \\log_3 5$. $\\blacksquare$\n\n(Calculator check: $\\log_2 3 \\approx 1.585$ and $\\log_3 5 \\approx 1.465$.)"
+ }
+]
