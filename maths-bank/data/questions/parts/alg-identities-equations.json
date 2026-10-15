@@ -1,0 +1,273 @@
+[
+ {
+  "id": "alg-identities-equations-q01",
+  "topicId": "alg-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "State whether each of the following is an **expression**, an **equation**, a **formula** or an **identity**.\n\n(a) $4x - 1$\n\n(b) $4x - 1 = 11$\n\n(c) $4(x - 1) \\equiv 4x - 4$\n\n(d) $F = ma$, where $F$ is force, $m$ is mass and $a$ is acceleration",
+  "hint": "No equals sign means expression. True for only some values means equation. True for every value means identity. A rule linking different quantities is a formula.",
+  "answer": "(a) Expression (b) Equation (c) Identity (d) Formula",
+  "solution": "(a) **Expression**: there is no equals sign; it is just terms.\n\n(b) **Equation**: it is only true for one value, $4x = 12$, so $x = 3$.\n\n(c) **Identity**: expanding $4(x - 1)$ gives exactly $4x - 4$, so it is true for **every** value of $x$. The symbol $\\equiv$ shows this.\n\n(d) **Formula**: it links three different quantities (force, mass, acceleration); each letter stands for a measurable quantity.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-identities-equations-q02",
+  "topicId": "alg-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Copy each statement, replacing the box with $=$ or $\\equiv$.\n\n(a) $2(x + 5) \\;\\square\\; 2x + 10$\n\n(b) $2x + 5 \\;\\square\\; 11$\n\n(c) $x + x + x \\;\\square\\; 3x$\n\n(d) $x^2 \\;\\square\\; 9$",
+  "hint": "Use $\\equiv$ only if the two sides are equal for **every** value of $x$. Try $x = 0$ and $x = 1$.",
+  "answer": "(a) $\\equiv$ (b) $=$ (c) $\\equiv$ (d) $=$",
+  "solution": "(a) $2(x + 5)$ expands to $2x + 10$, so the sides are always equal: $\\equiv$.\n\n(b) Only true when $x = 3$ (e.g. $x = 0$ gives $5 \\ne 11$): an equation, $=$.\n\n(c) $x + x + x$ simplifies to $3x$ for every $x$: $\\equiv$.\n\n(d) Only true when $x = 3$ or $x = -3$ (e.g. $x = 1$ gives $1 \\ne 9$): an equation, $=$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q03",
+  "topicId": "alg-identities-equations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Show that $5(x + 2) - 3 \\equiv 5x + 7$.",
+  "hint": "Start with the left-hand side only. Expand the bracket, then simplify until you reach the right-hand side.",
+  "answer": "$5(x + 2) - 3 = 5x + 10 - 3 = 5x + 7$",
+  "solution": "Start with the left-hand side (the more complicated side) and work only on it:\n$$\\begin{aligned} 5(x + 2) - 3 &= 5x + 10 - 3 \\\\ &= 5x + 7 \\end{aligned}$$\n\nThis is the right-hand side, so $5(x + 2) - 3 \\equiv 5x + 7$. $\\blacksquare$\n\nNotice that we did **not** write \"$5(x + 2) - 3 = 5x + 7$\" at the start and then change both sides: that would be assuming what we were asked to show.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q04",
+  "topicId": "alg-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the value of $a$ such that $4(x + a) \\equiv 4x + 20$.",
+  "hint": "Expand the left side. Which term must match the 20?",
+  "answer": "$a = 5$",
+  "solution": "Expand:\n$$4x + 4a \\equiv 4x + 20$$\n\nThe $x$ terms already match. Compare the constant terms:\n$$4a = 20 \\;\\Rightarrow\\; a = 5$$\n\nCheck: $4(x + 5) = 4x + 20$ ✓.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-identities-equations-q05",
+  "topicId": "alg-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the value of $a$ such that $4(x - a) \\equiv 4x + 20$.",
+  "hint": "Only the sign inside the bracket has changed from the previous question. Expand carefully.",
+  "answer": "$a = -5$",
+  "solution": "**What changed:** $+a$ inside the bracket has become $-a$.\n\nExpand:\n$$4x - 4a \\equiv 4x + 20$$\n\nCompare constants:\n$$-4a = 20 \\;\\Rightarrow\\; a = -5$$\n\nCheck: $4(x - (-5)) = 4(x + 5) = 4x + 20$ ✓.\n\nEffect of the change: the value of $a$ changed sign.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-identities-equations-q06",
+  "topicId": "alg-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the value of $b$ such that $b(x + 5) \\equiv 4x + 20$.",
+  "hint": "Now the unknown is **outside** the bracket. Compare the coefficients of $x$.",
+  "answer": "$b = 4$",
+  "solution": "**What changed:** the unknown is now the multiplier outside the bracket.\n\nExpand:\n$$bx + 5b \\equiv 4x + 20$$\n\nCompare coefficients of $x$:\n$$b = 4$$\n\nCheck with the constants: $5b = 20$ ✓ (both comparisons must agree, otherwise no value of $b$ would work).",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-identities-equations-q07",
+  "topicId": "alg-identities-equations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the values of $a$ and $b$ such that $b(x + a) \\equiv 4x + 20$.",
+  "hint": "Now there are two unknowns. Compare the $x$ terms first, then use the constants.",
+  "answer": "$b = 4$, $a = 5$",
+  "solution": "**What changed:** both the multiplier and the number inside the bracket are unknown.\n\nExpand:\n$$bx + ab \\equiv 4x + 20$$\n\nCompare coefficients of $x$:\n$$b = 4$$\n\nCompare constants:\n$$ab = 20 \\;\\Rightarrow\\; 4a = 20 \\;\\Rightarrow\\; a = 5$$\n\nWith two unknowns we need **two** comparisons (the $x$ terms and the constants); each one gives one equation.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-identities-equations-q08",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Given that $a(x + 4) - 3(x - b) \\equiv 5x + 26$, Ola tries to find $a$ and $b$. Her working is shown.\n\n$$\\begin{aligned} ax + 4a - 3x - 3b &\\equiv 5x + 26 \\\\ x\\text{ terms: } a - 3 &= 5, \\text{ so } a = 8 \\\\ \\text{constants: } 4a - 3b &= 26 \\\\ 32 - 3b &= 26, \\text{ so } b = 2 \\end{aligned}$$\n\nFind Ola's mistake and work out the correct value of $b$.",
+  "hint": "Check the first line carefully: what is $-3 \\times (-b)$?",
+  "answer": "She expanded $-3(x - b)$ as $-3x - 3b$; it should be $-3x + 3b$. Correct values: $a = 8$, $b = -2$.",
+  "solution": "**The mistake** is in the first line: $-3 \\times (-b) = +3b$, not $-3b$. So\n$$-3(x - b) = -3x + 3b$$\n\n**Correct working:**\n$$ax + 4a - 3x + 3b \\equiv 5x + 26$$\n\n$x$ terms: $a - 3 = 5$, so $a = 8$ (this part was right).\n\nConstants: $4a + 3b = 26$, so $32 + 3b = 26$, $3b = -6$, $b = -2$.\n\n**Check** by substituting back:\n$$8(x + 4) - 3(x + 2) = 8x + 32 - 3x - 6 = 5x + 26 \\;✓$$\n\n(With Ola's value $b = 2$: $8(x + 4) - 3(x - 2) = 5x + 38$, which is not $5x + 26$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q09",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara is asked to solve $2(x + 3) + x = 3(x + 2)$. She writes:\n\n$$\\begin{aligned} 2x + 6 + x &= 3x + 6 \\\\ 3x + 6 &= 3x + 6 \\\\ 0 &= 0 \\end{aligned}$$\n\n\"So $x = 0$.\"\n\nWhat is wrong with Zara's conclusion? What should she have said?",
+  "hint": "Try substituting $x = 10$ into the original statement. Does it work?",
+  "answer": "$0 = 0$ is always true, so the statement is an **identity**: it is true for **every** value of $x$, not just $x = 0$.",
+  "solution": "Zara's algebra is correct, but her conclusion is not.\n\nThe final line $0 = 0$ does not contain $x$ and is **always true**. This means the two sides are equal **whatever** $x$ is: the left side simplifies to exactly the right side ($3x + 6$). So\n$$2(x + 3) + x \\equiv 3(x + 2)$$\nis an **identity**, and every value of $x$ is a solution, not just $x = 0$.\n\nCheck with $x = 10$: left side $2(13) + 10 = 36$, right side $3(12) = 36$ ✓.\n\n(If instead the working had ended with a false statement such as $0 = 5$, there would be **no** solutions.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q10",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Dev is asked to show that $3(2x - 1) - 2(x - 4) \\equiv 4x + 5$. He writes:\n\n$$\\begin{aligned} 3(2x - 1) - 2(x - 4) &= 4x + 5 \\\\ 6x - 3 - 2x + 8 &= 4x + 5 \\\\ 4x + 5 &= 4x + 5 \\\\ 0 &= 0 \\quad ✓ \\end{aligned}$$\n\nHis teacher says his method is not acceptable as a \"show that\".\n\n(a) Explain what is wrong with Dev's method.\n\n(b) Write out a correct proof.",
+  "hint": "Dev's first line assumes the very thing he was asked to show. A \"show that\" should start from **one** side.",
+  "answer": "(a) He started by assuming the identity was true and worked on both sides until he reached something true; that does not prove the original statement. (b) $3(2x - 1) - 2(x - 4) = 6x - 3 - 2x + 8 = 4x + 5$.",
+  "solution": "(a) Dev's first line **is** the statement he was asked to prove, so he has assumed it is true. Reaching a true statement such as $0 = 0$ from an assumption does not prove the assumption: false statements can also lead to true ones. For example, starting from the false statement $x = -x$ and squaring both sides gives $x^2 = x^2$, which is always true.\n\nA \"show that\" must start from **one** side only and transform it, step by step, into the other side.\n\n(b) Start with the left-hand side:\n$$\\begin{aligned} 3(2x - 1) - 2(x - 4) &= 6x - 3 - 2x + 8 \\\\ &= 4x + 5 \\end{aligned}$$\n\nwhich is the right-hand side. Hence $3(2x - 1) - 2(x - 4) \\equiv 4x + 5$. $\\blacksquare$\n\n(Note the sign: $-2 \\times (-4) = +8$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q11",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Mo says:\n\n\"$x(x + 5) = 6x$ is an identity, because when $x = 1$ both sides are equal to 6.\"\n\nIs Mo correct? Explain your answer, and find all the values of $x$ for which $x(x + 5) = 6x$ is true.",
+  "hint": "For an identity, **every** value of $x$ must work. Try another value, such as $x = 2$.",
+  "answer": "No. It fails for $x = 2$ ($14 \\ne 12$), so it is an equation, not an identity. It is true only for $x = 0$ and $x = 1$.",
+  "solution": "An identity must be true for **every** value of $x$. One value that works is not enough.\n\nTry $x = 2$: left side $2 \\times 7 = 14$, right side $6 \\times 2 = 12$. Since $14 \\ne 12$, the statement is **not** an identity; it is an **equation**. Mo is not correct.\n\nSolve it:\n$$x^2 + 5x = 6x \\;\\Rightarrow\\; x^2 - x = 0 \\;\\Rightarrow\\; x(x - 1) = 0$$\n$$x = 0 \\quad\\text{or}\\quad x = 1$$\n\nThese are the only two values that make it true.",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q12",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A rectangular lawn measures $x$ m by $(x + 4)$ m. It is surrounded by a path 1 m wide, as shown. The diagram is not drawn to scale.\n\n(a) Show that the area of the path, in $\\text{m}^2$, is $4x + 12$.\n\n(b) State whether each of these statements is an identity or an equation:\n\n (i) $(x + 2)(x + 6) - x(x + 4) \\equiv 4x + 12$\n\n (ii) $4x + 12 = 60$\n\n(c) The path has an area of $60\\ \\text{m}^2$. Find the dimensions of the lawn.",
+  "hint": "The outer rectangle is 2 m longer and 2 m wider than the lawn. Area of path = outer area $-$ lawn area.",
+  "answer": "(a) $(x + 2)(x + 6) - x(x + 4) = 4x + 12$ (b) (i) identity (ii) equation (c) 12 m by 16 m",
+  "solution": "(a) The path adds 1 m on **each** side, so the outer rectangle is $(x + 2)$ m by $(x + 6)$ m.\n$$\\begin{aligned} \\text{Area of path} &= (x + 2)(x + 6) - x(x + 4) \\\\ &= x^2 + 8x + 12 - x^2 - 4x \\\\ &= 4x + 12 \\end{aligned}$$\n\n(b) (i) **Identity**: we have just shown the two sides are equal for every value of $x$.\n\n(ii) **Equation**: it is only true for one particular value of $x$.\n\n(c) Solve $4x + 12 = 60$:\n$$4x = 48 \\;\\Rightarrow\\; x = 12$$\n\nThe lawn is 12 m by 16 m.\n\nCheck: outer rectangle $14 \\times 18 = 252$, lawn $12 \\times 16 = 192$, path $252 - 192 = 60\\ \\text{m}^2$ ✓.",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><path d=\"M 40 40 h 260 v 170 h -260 Z M 64 64 v 122 h 212 v -122 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" fill-rule=\"evenodd\" stroke=\"none\"/><rect x=\"40\" y=\"40\" width=\"260\" height=\"170\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><rect x=\"64\" y=\"64\" width=\"212\" height=\"122\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"170\" y=\"130\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">lawn</text><text x=\"170\" y=\"82\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(x + 4) m</text><text x=\"72\" y=\"130\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">x m</text><line x1=\"300\" y1=\"224\" x2=\"276\" y2=\"224\" stroke=\"currentColor\"/><line x1=\"300\" y1=\"219\" x2=\"300\" y2=\"229\" stroke=\"currentColor\"/><line x1=\"276\" y1=\"219\" x2=\"276\" y2=\"229\" stroke=\"currentColor\"/><text x=\"288\" y=\"244\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1 m</text><text x=\"170\" y=\"30\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">path</text></svg>"
+ },
+ {
+  "id": "alg-identities-equations-q13",
+  "topicId": "alg-identities-equations",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "A jacket costs £$p$. Its price is increased by 20%. Later, in a sale, the new price is reduced by 20%.\n\nJo says: \"The sale price is the same as the original price, because the 20% up and the 20% down cancel out.\"\n\n(a) Show that the sale price is $0.96p$ for every value of $p$, and hence explain whether Jo is correct.\n\n(b) Is \"sale price $\\equiv 0.96p$\" an identity or an equation? Explain.\n\n(c) The sale price of the jacket is £57.60. Find the original price.",
+  "hint": "An increase of 20% means multiplying by 1.2. A decrease of 20% means multiplying by 0.8.",
+  "answer": "(a) $0.8 \\times 1.2p = 0.96p$; Jo is wrong, the price falls by 4%. (b) An identity: true for every $p$. (c) £60",
+  "solution": "(a) Increasing by 20%: multiply by $1.2$, giving $1.2p$.\n\nDecreasing that by 20%: multiply by $0.8$:\n$$0.8 \\times 1.2p = 0.96p$$\n\nThis holds whatever $p$ is. $0.96p$ is less than $p$ (for $p > 0$), so Jo is **wrong**: the sale price is 4% lower than the original. The 20% decrease is 20% of a **larger** amount than the 20% increase was.\n\n(b) It is an **identity**: the sale price equals $0.96p$ for **every** original price $p$; it is not an equation to be solved for a particular $p$.\n\n(c) Now we have an **equation**:\n$$0.96p = 57.60 \\;\\Rightarrow\\; p = \\frac{57.60}{0.96} = 60$$\n\nThe original price was £60.\n\nCheck: $60 \\times 1.2 = 72$, then $72 \\times 0.8 = 57.60$ ✓.",
+  "linkedTopicIds": [
+   "rat-percentage-change",
+   "rat-reverse-percentages"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q14",
+  "topicId": "alg-identities-equations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "For each statement, decide whether it is an identity. If it is not, find all the values of $x$ (if any) for which it is true.\n\n(a) $(x + 1)^2 = x^2 + 1$\n\n(b) $(x + 2)(x - 2) = x^2 - 4$\n\n(c) $2(x + 3) = 2x + 3$",
+  "hint": "Expand and simplify each one. If you end with a statement that is always true, it is an identity. If you end with a statement that is never true, there are no solutions.",
+  "answer": "(a) Not an identity; true only for $x = 0$. (b) An identity. (c) Not an identity; never true (no solutions).",
+  "solution": "(a) Expand the left side: $x^2 + 2x + 1 = x^2 + 1$, so $2x = 0$, $x = 0$.\n\nIt is true only when $x = 0$ (e.g. $x = 1$ gives $4 \\ne 2$), so it is an **equation** with the single solution $x = 0$, **not** an identity. (Working only when $x = 0$ is a common trap: $(x + 1)^2 \\not\\equiv x^2 + 1$.)\n\n(b) Expand the left side:\n$$(x + 2)(x - 2) = x^2 - 2x + 2x - 4 = x^2 - 4$$\nwhich is exactly the right side for every $x$. It is an **identity**: $(x + 2)(x - 2) \\equiv x^2 - 4$.\n\n(c) Expand: $2x + 6 = 2x + 3$, so $6 = 3$, which is **never** true. It is an equation with **no** solutions (the left side is always 3 more than the right).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q15",
+  "topicId": "alg-identities-equations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $(2x + 1)^2 - (2x - 1)^2 \\equiv 8x$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $(x + a)^2 + b \\equiv x^2 - 10x + 31$, find the value of $a$ and the value of $b$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence explain why $x^2 - 10x + 31$ is positive for all values of $x$.",
+    "marks": 1
+   }
+  ],
+  "marks": 6,
+  "calculator": false,
+  "hint": "(a) Expand both brackets on the left side and simplify. (b) Expand $(x + a)^2 + b$ and compare the coefficients of $x$, then the constants.",
+  "answer": "(a) $4x^2 + 4x + 1 - (4x^2 - 4x + 1) = 8x$ (b) $a = -5$, $b = 6$ (c) $(x - 5)^2 \\ge 0$, so $x^2 - 10x + 31 = (x - 5)^2 + 6 \\ge 6 > 0$",
+  "solution": "(a) Start from the left side:\n$$(2x + 1)^2 - (2x - 1)^2 = (4x^2 + 4x + 1) - (4x^2 - 4x + 1)$$ **M1** (both expansions correct)\n\n$$= 4x^2 + 4x + 1 - 4x^2 + 4x - 1 = 8x$$ **A1** (completes the proof with no errors)\n\n(b) Expand:\n$$(x + a)^2 + b = x^2 + 2ax + a^2 + b$$ **M1**\n\nCompare coefficients of $x$: $2a = -10$, so $a = -5$. **A1**\n\nCompare constants: $a^2 + b = 31$, so $25 + b = 31$, $b = 6$. **A1**\n\n(c) $x^2 - 10x + 31 \\equiv (x - 5)^2 + 6$. A square is never negative, so $(x - 5)^2 \\ge 0$ and therefore $(x - 5)^2 + 6 \\ge 6 > 0$ for all $x$. **B1** (ft their $b$ if positive)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q16",
+  "topicId": "alg-identities-equations",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$k$ is a constant. Consider\n$$3(2x - k) + 4 = 6x + 2k + 1.$$\n\n(a) Find the value of $k$ for which this is an identity.\n\n(b) Show that when $k = 1$ there is no value of $x$ that makes it true.\n\n(c) Explain why there is no value of $k$ for which the statement has exactly one solution.",
+  "hint": "Expand and simplify. The $x$ terms will cancel; what is left is a statement about $k$ only.",
+  "answer": "(a) $k = \\frac{3}{5}$ (b) It becomes $6x + 1 = 6x + 3$, i.e. $1 = 3$, which is false. (c) The $x$ terms always cancel, leaving a statement without $x$, which is either always true or never true.",
+  "solution": "Expand the left side:\n$$6x - 3k + 4 = 6x + 2k + 1$$\n\nThe $6x$ terms match whatever $k$ is, so subtracting $6x$ leaves\n$$-3k + 4 = 2k + 1$$\n\n(a) For an identity, the constant terms must also match:\n$$-3k + 4 = 2k + 1 \\;\\Rightarrow\\; 3 = 5k \\;\\Rightarrow\\; k = \\frac{3}{5}$$\n\nCheck: with $k = \\frac{3}{5}$ both sides become $6x + \\frac{11}{5}$ ✓.\n\n(b) With $k = 1$: the left side is $6x - 3 + 4 = 6x + 1$, and the right side is $6x + 2 + 1 = 6x + 3$. Then $6x + 1 = 6x + 3$ gives $1 = 3$, which is **false** for every $x$, so there are no solutions. (The two sides always differ by 2.)\n\n(c) The coefficient of $x$ is 6 on **both** sides for every $k$, so the $x$ terms always cancel. What is left, $-3k + 4 = 2k + 1$, does not involve $x$: it is either true (when $k = \\frac{3}{5}$, giving infinitely many solutions) or false (any other $k$, giving none). It can never pin down a single value of $x$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q17",
+  "topicId": "alg-identities-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "$a$, $b$ and $c$ are constants such that\n$$(ax + b)(x + c) \\equiv 3x^2 + 10x - 8.$$\n\n(a) Write down the value of $a$.\n\n(b) Show that $c$ satisfies $3c^2 - 10c - 8 = 0$.\n\n(c) Hence find all the possible pairs of values of $b$ and $c$.",
+  "hint": "Expand the left side and compare the coefficients of $x^2$, of $x$ and the constant terms. Use two of the resulting equations to eliminate $b$.",
+  "answer": "(a) $a = 3$ (b) From $3c + b = 10$ and $bc = -8$ (c) $b = -2, c = 4$ or $b = 12, c = -\\frac{2}{3}$",
+  "solution": "Expand the left side:\n$$(ax + b)(x + c) = ax^2 + (ac + b)x + bc$$\n\n(a) Compare coefficients of $x^2$: $a = 3$.\n\n(b) Compare coefficients of $x$: $3c + b = 10$, so $b = 10 - 3c$.\n\nCompare constants: $bc = -8$.\n\nSubstitute for $b$:\n$$(10 - 3c)c = -8 \\;\\Rightarrow\\; 10c - 3c^2 = -8 \\;\\Rightarrow\\; 3c^2 - 10c - 8 = 0 \\;\\blacksquare$$\n\n(c) Factorise:\n$$(3c + 2)(c - 4) = 0 \\;\\Rightarrow\\; c = 4 \\text{ or } c = -\\frac{2}{3}$$\n\n* $c = 4$: $b = 10 - 12 = -2$, giving $(3x - 2)(x + 4)$.\n* $c = -\\frac{2}{3}$: $b = 10 + 2 = 12$, giving $(3x + 12)\\left(x - \\frac{2}{3}\\right)$.\n\nCheck both: $(3x - 2)(x + 4) = 3x^2 + 12x - 2x - 8 = 3x^2 + 10x - 8$ ✓, and $(3x + 12)\\left(x - \\frac{2}{3}\\right) = 3x^2 - 2x + 12x - 8 = 3x^2 + 10x - 8$ ✓.\n\n(The second is really the same factorisation: $3x + 12 = 3(x + 4)$ and $x - \\frac{2}{3} = \\frac{1}{3}(3x - 2)$, with the factor 3 moved between the brackets.)",
+  "linkedTopicIds": [
+   "alg-factorising-quadratics",
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-identities-equations-q18",
+  "topicId": "alg-identities-equations",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The cube numbers are $1, 8, 27, 64, 125, \\dots$ The differences between consecutive cube numbers form the sequence\n$$7, 19, 37, 61, \\dots$$\n\n(a) Find the constants $p$, $q$ and $r$ such that $(n + 1)^3 - n^3 \\equiv pn^2 + qn + r$.\n\n(b) Hence write down the $n$th term of the sequence $7, 19, 37, 61, \\dots$\n\n(c) Prove that every term of this sequence is odd.",
+  "hint": "Expand $(n + 1)^3$ as $(n + 1)(n + 1)^2$. For (c), factorise the part of your expression that does not include $r$.",
+  "answer": "(a) $p = 3$, $q = 3$, $r = 1$ (b) $3n^2 + 3n + 1$ (c) $3n^2 + 3n = 3n(n + 1)$ is even, so $3n^2 + 3n + 1$ is odd.",
+  "solution": "(a) Expand:\n$$(n + 1)^3 = (n + 1)(n^2 + 2n + 1) = n^3 + 3n^2 + 3n + 1$$\n\nSo\n$$(n + 1)^3 - n^3 = 3n^2 + 3n + 1$$\n\nComparing coefficients: $p = 3$, $q = 3$, $r = 1$.\n\n(b) The $n$th difference is between the $(n + 1)$th and $n$th cube numbers, so the $n$th term is\n$$3n^2 + 3n + 1$$\n\nCheck: $n = 1$: $3 + 3 + 1 = 7$ ✓; $n = 2$: $12 + 6 + 1 = 19$ ✓; $n = 4$: $48 + 12 + 1 = 61$ ✓.\n\n(c)\n$$3n^2 + 3n + 1 = 3n(n + 1) + 1$$\n\n$n$ and $n + 1$ are consecutive integers, so one of them is even; hence $n(n + 1)$ is even, and so is $3n(n + 1)$. An even number plus 1 is odd, so every term of the sequence is odd. $\\blacksquare$",
+  "linkedTopicIds": [
+   "alg-sequences-quadratic-geometric",
+   "alg-expand-double-triple",
+   "alg-algebraic-proof"
+  ]
+ }
+]
