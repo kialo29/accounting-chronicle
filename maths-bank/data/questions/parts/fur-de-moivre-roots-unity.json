@@ -1,0 +1,264 @@
+[
+ {
+  "id": "fur-de-moivre-roots-unity-q01",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Write $3\\left(\\cos\\dfrac{\\pi}{4} + i\\sin\\dfrac{\\pi}{4}\\right)$ in the form $re^{i\\theta}$.\n\n(b) Write $-2i$ in the form $re^{i\\theta}$, where $-\\pi < \\theta \\le \\pi$.\n\n(c) Write $4e^{2\\pi i/3}$ in the form $a + bi$, giving exact values.\n\n(d) Show that $e^{i\\pi} + 1 = 0$.",
+  "hint": "Use Euler's form $e^{i\\theta} = \\cos\\theta + i\\sin\\theta$, so $r(\\cos\\theta + i\\sin\\theta) = re^{i\\theta}$.",
+  "answer": "(a) $3e^{i\\pi/4}$ (b) $2e^{-i\\pi/2}$ (c) $-2 + 2\\sqrt{3}\\,i$ (d) shown",
+  "solution": "(a) Modulus 3, argument $\\frac{\\pi}{4}$: $3e^{i\\pi/4}$.\n\n(b) $-2i$ is on the negative imaginary axis: modulus 2, principal argument $-\\frac{\\pi}{2}$, so $-2i = 2e^{-i\\pi/2}$.\n\n(c)\n$$4e^{2\\pi i/3} = 4\\left(\\cos\\frac{2\\pi}{3} + i\\sin\\frac{2\\pi}{3}\\right) = 4\\left(-\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i\\right) = -2 + 2\\sqrt{3}\\,i$$\n\n(d) $e^{i\\pi} = \\cos\\pi + i\\sin\\pi = -1 + 0i = -1$, so $e^{i\\pi} + 1 = 0$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q02",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Use De Moivre's theorem to simplify $\\left(\\cos\\dfrac{\\pi}{12} + i\\sin\\dfrac{\\pi}{12}\\right)^6$.",
+  "hint": "$(\\cos\\theta + i\\sin\\theta)^n = \\cos n\\theta + i\\sin n\\theta$.",
+  "answer": "$i$",
+  "solution": "By De Moivre's theorem:\n$$\\left(\\cos\\frac{\\pi}{12} + i\\sin\\frac{\\pi}{12}\\right)^6 = \\cos\\frac{6\\pi}{12} + i\\sin\\frac{6\\pi}{12} = \\cos\\frac{\\pi}{2} + i\\sin\\frac{\\pi}{2} = i$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q03",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $\\left(\\cos\\dfrac{\\pi}{12} - i\\sin\\dfrac{\\pi}{12}\\right)^6$.",
+  "hint": "The bracket is not in the form $\\cos\\theta + i\\sin\\theta$ yet. Use $\\cos(-\\theta) = \\cos\\theta$ and $\\sin(-\\theta) = -\\sin\\theta$.",
+  "answer": "$-i$",
+  "solution": "**What changed:** the plus became a minus. De Moivre needs the form $\\cos\\theta + i\\sin\\theta$, so first rewrite:\n$$\\cos\\frac{\\pi}{12} - i\\sin\\frac{\\pi}{12} = \\cos\\left(-\\frac{\\pi}{12}\\right) + i\\sin\\left(-\\frac{\\pi}{12}\\right)$$\n\nThen\n$$\\left(\\cos\\left(-\\frac{\\pi}{12}\\right) + i\\sin\\left(-\\frac{\\pi}{12}\\right)\\right)^6 = \\cos\\left(-\\frac{\\pi}{2}\\right) + i\\sin\\left(-\\frac{\\pi}{2}\\right) = -i$$\n\nThe new number is the conjugate of the old one, so its power is the conjugate of $i$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q04",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $\\left[2\\left(\\cos\\dfrac{\\pi}{12} + i\\sin\\dfrac{\\pi}{12}\\right)\\right]^6$.",
+  "hint": "De Moivre for a general modulus: $[r(\\cos\\theta + i\\sin\\theta)]^n = r^n(\\cos n\\theta + i\\sin n\\theta)$.",
+  "answer": "$64i$",
+  "solution": "**What changed:** the modulus is now 2 instead of 1. The modulus is raised to the power 6; the argument is multiplied by 6 as before:\n$$2^6\\left(\\cos\\frac{\\pi}{2} + i\\sin\\frac{\\pi}{2}\\right) = 64i$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q05",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify $\\left[2\\left(\\cos\\dfrac{\\pi}{12} + i\\sin\\dfrac{\\pi}{12}\\right)\\right]^{-6}$.",
+  "hint": "De Moivre's theorem holds for negative integer powers too.",
+  "answer": "$-\\dfrac{1}{64}i$",
+  "solution": "**What changed:** the power is now $-6$. De Moivre holds for all integers $n$:\n$$2^{-6}\\left(\\cos\\left(-\\frac{\\pi}{2}\\right) + i\\sin\\left(-\\frac{\\pi}{2}\\right)\\right) = \\frac{1}{64}(-i) = -\\frac{1}{64}i$$\n\nCheck: this should be $\\frac{1}{64i}$, and $\\frac{1}{64i} = \\frac{-i}{64(-i)(i)} = \\frac{-i}{64}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q06",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use De Moivre's theorem to find $(1 + i)^{10}$ in the form $a + bi$.",
+  "hint": "Write $1 + i$ in the form $re^{i\\theta}$ first.",
+  "answer": "$32i$",
+  "solution": "$|1 + i| = \\sqrt{2}$, $\\arg(1 + i) = \\frac{\\pi}{4}$, so $1 + i = \\sqrt{2}\\,e^{i\\pi/4}$.\n\n$$(1 + i)^{10} = (\\sqrt{2})^{10} e^{10i\\pi/4} = 32e^{5\\pi i/2}$$\n\n$\\frac{5\\pi}{2} = 2\\pi + \\frac{\\pi}{2}$, so $e^{5\\pi i/2} = e^{i\\pi/2} = i$:\n$$(1 + i)^{10} = 32i$$\n\nCheck: $(1 + i)^2 = 2i$, so $(1 + i)^{10} = (2i)^5 = 32i^5 = 32i$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q07",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $z^3 = -27$, giving each root in the form $a + bi$.",
+  "hint": "Write $-27 = 27e^{i(\\pi + 2k\\pi)}$ and take $k = 0, 1, 2$. There are three roots, not one.",
+  "answer": "$z = -3$, $z = \\dfrac{3}{2} + \\dfrac{3\\sqrt{3}}{2}i$, $z = \\dfrac{3}{2} - \\dfrac{3\\sqrt{3}}{2}i$",
+  "solution": "$-27 = 27e^{i\\pi}$. Include all arguments: $z^3 = 27e^{i(\\pi + 2k\\pi)}$.\n\nTake the cube root of the modulus and divide the argument by 3:\n$$z = 3e^{i(\\pi + 2k\\pi)/3}, \\quad k = 0, 1, 2$$\n\n$k = 0$: $3e^{i\\pi/3} = 3\\left(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i\\right) = \\frac{3}{2} + \\frac{3\\sqrt{3}}{2}i$\n\n$k = 1$: $3e^{i\\pi} = -3$\n\n$k = 2$: $3e^{5i\\pi/3} = 3e^{-i\\pi/3} = \\frac{3}{2} - \\frac{3\\sqrt{3}}{2}i$\n\nThe real root $-3$ is the one you would find without complex numbers; the other two form a conjugate pair, and all three are equally spaced ($\\frac{2\\pi}{3}$ apart) on the circle $|z| = 3$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q08",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara solves $z^3 = -64i$. Her working is shown below.\n\n$-64i = 64e^{-i\\pi/2}$, so $z^3 = 64e^{i(-\\pi/2 + 2k\\pi)}$\n\n$|z| = \\dfrac{64}{3}$ and $\\arg z = -\\dfrac{\\pi}{6} + \\dfrac{2k\\pi}{3}$\n\n$k = 0, 1, 2$: $\\arg z = -\\dfrac{\\pi}{6}, \\; \\dfrac{\\pi}{2}, \\; -\\dfrac{5\\pi}{6}$\n\n$z = \\dfrac{64}{3}e^{-i\\pi/6}, \\; \\dfrac{64}{3}e^{i\\pi/2}, \\; \\dfrac{64}{3}e^{-5i\\pi/6}$\n\n(a) Identify Zara's error and explain why it is wrong.\n\n(b) Give the correct roots in the form $a + bi$.",
+  "hint": "If $z = re^{i\\theta}$ then $z^3 = r^3 e^{3i\\theta}$. What happens to the modulus when you cube?",
+  "answer": "(a) She divided the modulus by 3; it should be $\\sqrt[3]{64} = 4$ (b) $2\\sqrt{3} - 2i$, $4i$, $-2\\sqrt{3} - 2i$",
+  "solution": "(a) The error is $|z| = \\frac{64}{3}$. If $z = re^{i\\theta}$, then $z^3 = r^3e^{3i\\theta}$: the **argument** is multiplied by 3 but the **modulus** is cubed. So $r^3 = 64$, giving\n$$|z| = \\sqrt[3]{64} = 4$$\n\nZara's arguments are correct (she included $2k\\pi$ and reduced $\\frac{7\\pi}{6}$ to $-\\frac{5\\pi}{6}$).\n\nCheck: her first root has modulus $\\frac{64}{3}$, and cubing gives modulus $\\left(\\frac{64}{3}\\right)^3 \\approx 9709$, not 64.\n\n(b)\n$k = 0$: $4e^{-i\\pi/6} = 4\\left(\\frac{\\sqrt{3}}{2} - \\frac{1}{2}i\\right) = 2\\sqrt{3} - 2i$\n\n$k = 1$: $4e^{i\\pi/2} = 4i$\n\n$k = 2$: $4e^{-5i\\pi/6} = 4\\left(-\\frac{\\sqrt{3}}{2} - \\frac{1}{2}i\\right) = -2\\sqrt{3} - 2i$\n\nCheck: $(4i)^3 = 64i^3 = -64i$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q09",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kai uses De Moivre's theorem to express $\\sin 3\\theta$ in terms of $\\sin\\theta$. His working is shown below, where $c = \\cos\\theta$ and $s = \\sin\\theta$.\n\n$\\cos 3\\theta + i\\sin 3\\theta = (c + is)^3$\n\n$= c^3 + 3c^2(is) + 3c(is)^2 + (is)^3$\n\n$= c^3 + 3ic^2 s - 3cs^2 + is^3$\n\nImaginary parts: $\\sin 3\\theta = 3c^2 s + s^3 = 3(1 - s^2)s + s^3 = 3s - 2s^3$\n\n(a) Use $\\theta = \\frac{\\pi}{2}$ to show that Kai's result is wrong.\n\n(b) Find the line containing the error, explain it, and derive the correct identity.",
+  "hint": "Work out $i^2$ and $i^3$ carefully in each term of the expansion.",
+  "answer": "(a) $\\sin\\frac{3\\pi}{2} = -1$ but $3(1) - 2(1)^3 = 1$ (b) The third line: $(is)^3 = i^3s^3 = -is^3$, not $+is^3$; $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$",
+  "solution": "(a) With $\\theta = \\frac{\\pi}{2}$: $\\sin\\frac{3\\pi}{2} = -1$, but $3s - 2s^3 = 3 - 2 = 1$. So Kai's identity is false.\n\n(b) The error is in the third line, in the last term. Kai correctly used $(is)^2 = i^2s^2 = -s^2$ in the third term but wrote $(is)^3 = is^3$. In fact\n$$(is)^3 = i^3 s^3 = (i^2 \\cdot i)s^3 = -is^3$$\n\nCorrect expansion:\n$$(c + is)^3 = c^3 + 3ic^2 s - 3cs^2 - is^3$$\n\nEquating imaginary parts:\n$$\\sin 3\\theta = 3c^2 s - s^3 = 3(1 - s^2)s - s^3 = 3s - 4s^3$$\n\nSo $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$. Check with $\\theta = \\frac{\\pi}{2}$: $3 - 4 = -1$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q10",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Ben claims that, for every positive integer $n$,\n$$(\\sin\\theta + i\\cos\\theta)^n = \\sin n\\theta + i\\cos n\\theta$$\n\n(a) By taking $n = 2$ and $\\theta = \\frac{\\pi}{4}$, show that Ben's claim is false.\n\n(b) Show that $\\sin\\theta + i\\cos\\theta = \\cos\\left(\\frac{\\pi}{2} - \\theta\\right) + i\\sin\\left(\\frac{\\pi}{2} - \\theta\\right)$, and hence find a correct expression for $(\\sin\\theta + i\\cos\\theta)^n$.\n\n(c) For which positive integers $n$ is Ben's claim true for all $\\theta$? Justify your answer.",
+  "hint": "De Moivre needs the cosine as the real part and the sine as the imaginary part of the **same** angle. In (c), expand $\\cos\\left(\\frac{n\\pi}{2} - n\\theta\\right)$ with a compound angle formula.",
+  "answer": "(a) LHS $= i$, RHS $= 1$ (b) $\\cos\\left(\\frac{n\\pi}{2} - n\\theta\\right) + i\\sin\\left(\\frac{n\\pi}{2} - n\\theta\\right)$ (c) $n = 1, 5, 9, \\ldots$, i.e. $n \\equiv 1 \\pmod 4$",
+  "solution": "(a) $\\sin\\frac{\\pi}{4} + i\\cos\\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}(1 + i)$, so the left side is $\\frac{1}{2}(1 + i)^2 = \\frac{1}{2}(2i) = i$.\n\nThe right side is $\\sin\\frac{\\pi}{2} + i\\cos\\frac{\\pi}{2} = 1$. Since $i \\ne 1$, the claim is false.\n\n(b) $\\cos\\left(\\frac{\\pi}{2} - \\theta\\right) = \\sin\\theta$ and $\\sin\\left(\\frac{\\pi}{2} - \\theta\\right) = \\cos\\theta$, so the identity holds. Now the number **is** in De Moivre form, with angle $\\frac{\\pi}{2} - \\theta$:\n$$(\\sin\\theta + i\\cos\\theta)^n = \\cos\\left(\\frac{n\\pi}{2} - n\\theta\\right) + i\\sin\\left(\\frac{n\\pi}{2} - n\\theta\\right)$$\n\n(c) Using compound angles,\n$$\\cos\\left(\\frac{n\\pi}{2} - n\\theta\\right) = \\cos\\frac{n\\pi}{2}\\cos n\\theta + \\sin\\frac{n\\pi}{2}\\sin n\\theta$$\n$$\\sin\\left(\\frac{n\\pi}{2} - n\\theta\\right) = \\sin\\frac{n\\pi}{2}\\cos n\\theta - \\cos\\frac{n\\pi}{2}\\sin n\\theta$$\n\nFor these to equal $\\sin n\\theta$ and $\\cos n\\theta$ for **all** $\\theta$ we need $\\cos\\frac{n\\pi}{2} = 0$ and $\\sin\\frac{n\\pi}{2} = 1$ (compare coefficients, e.g. at $\\theta = 0$ and $\\theta = \\frac{\\pi}{2n}$). That happens exactly when $\\frac{n\\pi}{2} = \\frac{\\pi}{2} + 2m\\pi$, i.e. $n = 1 + 4m$.\n\nSo Ben's claim holds only for $n = 1, 5, 9, 13, \\ldots$ ($n \\equiv 1 \\pmod 4$). Equivalently, $\\sin\\theta + i\\cos\\theta = ie^{-i\\theta}$, so its $n$th power is $i^n e^{-in\\theta}$, and $i^n = i$ only when $n \\equiv 1 \\pmod 4$.",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q11",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $z = \\cos\\theta + i\\sin\\theta$.\n\n(a) Show that $z^n + \\dfrac{1}{z^n} = 2\\cos n\\theta$ for positive integers $n$.\n\n(b) By expanding $\\left(z + \\dfrac{1}{z}\\right)^4$, show that\n$$\\cos^4\\theta = \\frac{1}{8}\\left(\\cos 4\\theta + 4\\cos 2\\theta + 3\\right)$$\n\n(c) Hence find the exact value of $\\displaystyle\\int_0^{\\pi/2} \\cos^4\\theta \\, d\\theta$.",
+  "hint": "(a) Use De Moivre for $z^n$ and $z^{-n}$. (b) Use the binomial expansion and pair up $z^4$ with $z^{-4}$ and $z^2$ with $z^{-2}$.",
+  "answer": "(a) shown (b) shown (c) $\\dfrac{3\\pi}{16}$",
+  "solution": "(a) By De Moivre, $z^n = \\cos n\\theta + i\\sin n\\theta$ and $z^{-n} = \\cos(-n\\theta) + i\\sin(-n\\theta) = \\cos n\\theta - i\\sin n\\theta$. Adding: $z^n + z^{-n} = 2\\cos n\\theta$.\n\n(b) With $n = 1$: $z + \\frac{1}{z} = 2\\cos\\theta$, so $\\left(z + \\frac{1}{z}\\right)^4 = 16\\cos^4\\theta$.\n\nBinomial expansion:\n$$\\left(z + \\frac{1}{z}\\right)^4 = z^4 + 4z^2 + 6 + \\frac{4}{z^2} + \\frac{1}{z^4} = \\left(z^4 + \\frac{1}{z^4}\\right) + 4\\left(z^2 + \\frac{1}{z^2}\\right) + 6$$\n$$= 2\\cos 4\\theta + 8\\cos 2\\theta + 6$$\n\nSo $16\\cos^4\\theta = 2\\cos 4\\theta + 8\\cos 2\\theta + 6$, and dividing by 16:\n$$\\cos^4\\theta = \\frac{1}{8}\\left(\\cos 4\\theta + 4\\cos 2\\theta + 3\\right)$$\n\n(c)\n$$\\int_0^{\\pi/2} \\cos^4\\theta \\, d\\theta = \\frac{1}{8}\\left[\\frac{\\sin 4\\theta}{4} + 2\\sin 2\\theta + 3\\theta\\right]_0^{\\pi/2}$$\n\nAt $\\theta = \\frac{\\pi}{2}$: $\\sin 2\\pi = 0$, $\\sin\\pi = 0$, so the bracket is $\\frac{3\\pi}{2}$; at $0$ it is $0$.\n$$\\int_0^{\\pi/2} \\cos^4\\theta \\, d\\theta = \\frac{1}{8} \\times \\frac{3\\pi}{2} = \\frac{3\\pi}{16}$$",
+  "linkedTopicIds": [
+   "calc-integration-standard",
+   "pure-binomial-expansion"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q12",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 9,
+  "calculator": false,
+  "question": "In this question you must show detailed reasoning.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use De Moivre's theorem to show that\n$$\\cos 5\\theta = 16\\cos^5\\theta - 20\\cos^3\\theta + 5\\cos\\theta$$",
+    "marks": 5
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the exact value of $\\cos^2\\left(\\dfrac{\\pi}{10}\\right)$, giving your answer in the form $\\dfrac{a + \\sqrt{b}}{c}$, where $a$, $b$ and $c$ are integers.",
+    "marks": 4
+   }
+  ],
+  "hint": "(a) Expand $(c + is)^5$ binomially and take the real part, then replace $s^2$ by $1 - c^2$. (b) $\\cos\\left(5 \\times \\frac{\\pi}{10}\\right) = 0$: solve the resulting quadratic in $c^2$ and choose the right root.",
+  "answer": "(a) shown (b) $\\cos^2\\left(\\dfrac{\\pi}{10}\\right) = \\dfrac{5 + \\sqrt{5}}{8}$",
+  "solution": "(a) Let $c = \\cos\\theta$, $s = \\sin\\theta$. By De Moivre, $\\cos 5\\theta + i\\sin 5\\theta = (c + is)^5$. M1\n\nBinomial expansion, real terms only (even powers of $is$): M1\n$$\\mathrm{Re}\\,(c + is)^5 = c^5 + \\binom{5}{2}c^3(is)^2 + \\binom{5}{4}c(is)^4 = c^5 - 10c^3s^2 + 5cs^4 \\quad \\text{A1}$$\n\nSubstitute $s^2 = 1 - c^2$: M1\n$$\\cos 5\\theta = c^5 - 10c^3(1 - c^2) + 5c(1 - c^2)^2$$\n$$= c^5 - 10c^3 + 10c^5 + 5c - 10c^3 + 5c^5 = 16c^5 - 20c^3 + 5c \\quad \\text{A1 (cso)}$$\n\n(b) Let $\\theta = \\frac{\\pi}{10}$, so $\\cos 5\\theta = \\cos\\frac{\\pi}{2} = 0$: M1\n$$16c^5 - 20c^3 + 5c = 0$$\n\n$c = \\cos\\frac{\\pi}{10} \\ne 0$, so divide by $c$: $16c^4 - 20c^2 + 5 = 0$. M1\n$$c^2 = \\frac{20 \\pm \\sqrt{400 - 320}}{32} = \\frac{20 \\pm 4\\sqrt{5}}{32} = \\frac{5 \\pm \\sqrt{5}}{8} \\quad \\text{A1}$$\n\n$\\frac{\\pi}{10}$ is a small angle ($18^\\circ$), so $\\cos^2\\frac{\\pi}{10}$ is close to 1 and must be the larger root ($\\frac{5 - \\sqrt{5}}{8} \\approx 0.35$ is $\\cos^2\\frac{3\\pi}{10}$, since $\\cos\\frac{3\\pi}{2} = 0$ too):\n$$\\cos^2\\frac{\\pi}{10} = \\frac{5 + \\sqrt{5}}{8} \\quad \\text{A1}$$",
+  "linkedTopicIds": [
+   "pure-binomial-expansion"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q13",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The diagram shows a regular hexagon centred at the origin $O$. One vertex is $A$, representing $2 + 2i$, and $B$ is the next vertex anticlockwise.\n\n(a) Find the complex number represented by $B$ in the form $a + bi$, giving exact values.\n\n(b) The six vertices are the roots of an equation $z^6 = w$. Find $w$.\n\n(c) Find the exact area of the hexagon.",
+  "hint": "Rotating a point anticlockwise about $O$ by an angle $\\alpha$ multiplies it by $e^{i\\alpha}$. Every vertex has the same sixth power.",
+  "answer": "(a) $(1 - \\sqrt{3}) + (1 + \\sqrt{3})i$ (b) $w = -512i$ (c) $12\\sqrt{3}$",
+  "solution": "(a) The vertices are equally spaced around $O$, so $B$ is $A$ rotated by $\\frac{2\\pi}{6} = \\frac{\\pi}{3}$:\n$$z_B = (2 + 2i)e^{i\\pi/3} = (2 + 2i)\\left(\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i\\right) = 1 + \\sqrt{3}\\,i + i + \\sqrt{3}\\,i^2 = (1 - \\sqrt{3}) + (1 + \\sqrt{3})i$$\n\n(b) Each vertex is $(2 + 2i)e^{ik\\pi/3}$, and $\\left(e^{ik\\pi/3}\\right)^6 = e^{2k\\pi i} = 1$, so every vertex has sixth power $(2 + 2i)^6$.\n\n$2 + 2i = 2\\sqrt{2}\\,e^{i\\pi/4}$, so\n$$w = (2\\sqrt{2})^6 e^{6i\\pi/4} = 512e^{3\\pi i/2} = 512(-i) = -512i$$\n\n(c) $|OA| = 2\\sqrt{2}$, and a regular hexagon is made of 6 equilateral triangles of side $2\\sqrt{2}$:\n$$\\text{Area} = 6 \\times \\frac{\\sqrt{3}}{4}(2\\sqrt{2})^2 = 6 \\times \\frac{\\sqrt{3}}{4} \\times 8 = 12\\sqrt{3}$$",
+  "linkedTopicIds": [
+   "fur-argand-modulus-argument"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 296\" width=\"296\" height=\"296\"><line x1=\"19\" y1=\"148.2\" x2=\"277.4\" y2=\"148.2\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"148.2\" y1=\"277.4\" x2=\"148.2\" y2=\"19\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M277.4 148.2 l-7 -4 v8 z\" fill=\"currentColor\"/><path d=\"M148.2 19 l-4 7 h8 z\" fill=\"currentColor\"/><text x=\"275.4\" y=\"141.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">Re</text><text x=\"155.2\" y=\"29\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">Im</text><line x1=\"34.2\" y1=\"145.2\" x2=\"34.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"34.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"72.2\" y1=\"145.2\" x2=\"72.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"72.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"110.2\" y1=\"145.2\" x2=\"110.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"110.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"186.2\" y1=\"145.2\" x2=\"186.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"186.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"224.2\" y1=\"145.2\" x2=\"224.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"224.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"262.2\" y1=\"145.2\" x2=\"262.2\" y2=\"151.2\" stroke=\"currentColor\"/><text x=\"262.2\" y=\"164.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"143.2\" y=\"163.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M224.2 72.2 L120.4 44.4 L44.4 120.4 L72.2 224.2 L176.0 252.0 L252.0 176.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M224.2 72.2 L120.4 44.4 L44.4 120.4 L72.2 224.2 L176.0 252.0 L252.0 176.0 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"224.2\" cy=\"72.2\" r=\"3\" fill=\"currentColor\"/><text x=\"220.2\" y=\"63.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A (2 + 2i)</text><circle cx=\"120.4\" cy=\"44.4\" r=\"3\" fill=\"currentColor\"/><text x=\"112.4\" y=\"38.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><circle cx=\"44.4\" cy=\"120.4\" r=\"3\" fill=\"currentColor\"/><circle cx=\"72.2\" cy=\"224.2\" r=\"3\" fill=\"currentColor\"/><circle cx=\"176\" cy=\"252\" r=\"3\" fill=\"currentColor\"/><circle cx=\"252\" cy=\"176\" r=\"3\" fill=\"currentColor\"/></svg>"
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q14",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The UK mains supply is generated as **three-phase** electricity. At any instant the three phase voltages can be represented by the complex numbers\n$$V_1 = 230, \\qquad V_2 = 230e^{-2\\pi i/3}, \\qquad V_3 = 230e^{2\\pi i/3}$$\n(in volts), which are $230\\omega^k$ where $\\omega = e^{2\\pi i/3}$.\n\n(a) Show that $V_1 + V_2 + V_3 = 0$. (This is why a balanced three-phase load needs no current in the neutral wire.)\n\n(b) The voltage between two phase wires is $V_1 - V_2$. Find $|V_1 - V_2|$, exactly and to the nearest volt.\n\n(c) Find $\\arg(V_1 - V_2)$.",
+  "hint": "(a) Use $1 + \\omega + \\omega^2 = 0$ for the cube roots of unity, or write each voltage in the form $a + bi$.",
+  "answer": "(a) shown (b) $230\\sqrt{3} \\approx 398$ V (c) $\\dfrac{\\pi}{6}$",
+  "solution": "(a) $1$, $\\omega = e^{2\\pi i/3}$ and $\\omega^2 = e^{4\\pi i/3} = e^{-2\\pi i/3}$ are the three cube roots of unity. They are the roots of $z^3 - 1 = 0$, which has no $z^2$ term, so their sum is $0$. Hence\n$$V_1 + V_2 + V_3 = 230(1 + \\omega^2 + \\omega) = 0$$\n\nDirectly: $V_2 = 230\\left(-\\frac{1}{2} - \\frac{\\sqrt{3}}{2}i\\right)$ and $V_3 = 230\\left(-\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i\\right)$; adding $230$ gives $230(1 - \\frac{1}{2} - \\frac{1}{2}) + 0i = 0$ ✓\n\n(b)\n$$V_1 - V_2 = 230\\left(1 + \\frac{1}{2} + \\frac{\\sqrt{3}}{2}i\\right) = 230\\left(\\frac{3}{2} + \\frac{\\sqrt{3}}{2}i\\right)$$\n$$|V_1 - V_2| = 230\\sqrt{\\frac{9}{4} + \\frac{3}{4}} = 230\\sqrt{3} \\approx 398 \\text{ V}$$\n\n(This is the \"400 V\" line voltage of a three-phase supply.)\n\n(c) First quadrant: $\\arg(V_1 - V_2) = \\tan^{-1}\\dfrac{\\sqrt{3}/2}{3/2} = \\tan^{-1}\\dfrac{1}{\\sqrt{3}} = \\dfrac{\\pi}{6}$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q15",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Write down the five roots of $z^5 = 1$ in the form $e^{i\\theta}$, where $-\\pi < \\theta \\le \\pi$.\n\n(b) Explain why the sum of the five roots is zero.\n\n(c) Hence show that $\\cos\\dfrac{2\\pi}{5} + \\cos\\dfrac{4\\pi}{5} = -\\dfrac{1}{2}$.\n\n(d) Given also that $\\cos\\dfrac{2\\pi}{5}\\cos\\dfrac{4\\pi}{5} = -\\dfrac{1}{4}$, find the exact value of $\\cos\\dfrac{2\\pi}{5}$.",
+  "hint": "(b) Think about the coefficient of $z^4$ in $z^5 - 1$, or factorise $z^5 - 1 = (z - 1)(\\ldots)$. (c) Pair each root with its conjugate. (d) Form a quadratic whose roots are the two cosines.",
+  "answer": "(a) $1, e^{\\pm 2\\pi i/5}, e^{\\pm 4\\pi i/5}$ (b) the $z^4$ coefficient of $z^5 - 1$ is 0 (c) shown (d) $\\dfrac{\\sqrt{5} - 1}{4}$",
+  "solution": "(a) $z^5 = e^{2k\\pi i}$, so $z = e^{2k\\pi i/5}$, $k = 0, \\pm 1, \\pm 2$:\n$$1, \\quad e^{2\\pi i/5}, \\quad e^{-2\\pi i/5}, \\quad e^{4\\pi i/5}, \\quad e^{-4\\pi i/5}$$\n\n(b) The five roots are the roots of $z^5 + 0z^4 + \\cdots - 1 = 0$, and the sum of the roots is minus the coefficient of $z^4$, which is $0$. (Alternatively, the roots form a regular pentagon centred at $O$, so their position vectors balance.)\n\n(c) $e^{i\\theta} + e^{-i\\theta} = 2\\cos\\theta$, so the sum of the roots is\n$$1 + 2\\cos\\frac{2\\pi}{5} + 2\\cos\\frac{4\\pi}{5} = 0 \\;\\Rightarrow\\; \\cos\\frac{2\\pi}{5} + \\cos\\frac{4\\pi}{5} = -\\frac{1}{2}$$\n\n(d) The two cosines have sum $-\\frac{1}{2}$ and product $-\\frac{1}{4}$, so they are the roots of\n$$x^2 + \\frac{1}{2}x - \\frac{1}{4} = 0 \\;\\Rightarrow\\; 4x^2 + 2x - 1 = 0 \\;\\Rightarrow\\; x = \\frac{-2 \\pm \\sqrt{4 + 16}}{8} = \\frac{-1 \\pm \\sqrt{5}}{4}$$\n\n$\\frac{2\\pi}{5}$ is acute, so $\\cos\\frac{2\\pi}{5} > 0$:\n$$\\cos\\frac{2\\pi}{5} = \\frac{\\sqrt{5} - 1}{4} \\;(\\approx 0.309)$$",
+  "linkedTopicIds": [
+   "fur-roots-of-polynomials"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q16",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Solve the equation\n$$(z + 1)^4 = z^4$$\ngiving your answers in the form $a + bi$. Explain why all the solutions have the same real part.",
+  "hint": "Divide by $z^4$: $\\left(\\frac{z + 1}{z}\\right)^4 = 1$, so $\\frac{z + 1}{z}$ is a fourth root of unity. Which fourth root of unity is impossible? Note also that the equation is only a cubic.",
+  "answer": "$z = -\\dfrac{1}{2}$, $z = -\\dfrac{1}{2} + \\dfrac{1}{2}i$, $z = -\\dfrac{1}{2} - \\dfrac{1}{2}i$; all have real part $-\\dfrac{1}{2}$ because $|z + 1| = |z|$",
+  "solution": "$z = 0$ is not a solution (it gives $1 = 0$), so divide by $z^4$:\n$$\\left(\\frac{z + 1}{z}\\right)^4 = 1 \\;\\Rightarrow\\; \\frac{z + 1}{z} = \\omega, \\quad \\omega \\in \\{1, i, -1, -i\\}$$\n\n$\\frac{z + 1}{z} = 1$ would mean $z + 1 = z$, which is impossible. Otherwise $z + 1 = \\omega z$, so $z = \\dfrac{1}{\\omega - 1}$:\n\n$\\omega = -1$: $z = \\dfrac{1}{-2} = -\\dfrac{1}{2}$\n\n$\\omega = i$: $z = \\dfrac{1}{-1 + i} = \\dfrac{-1 - i}{(-1)^2 + 1^2} = -\\dfrac{1}{2} - \\dfrac{1}{2}i$\n\n$\\omega = -i$: $z = \\dfrac{1}{-1 - i} = \\dfrac{-1 + i}{2} = -\\dfrac{1}{2} + \\dfrac{1}{2}i$\n\nThere are only three solutions because expanding gives $4z^3 + 6z^2 + 4z + 1 = 0$, a cubic (the $z^4$ terms cancel).\n\n**Why the same real part:** taking moduli of $(z + 1)^4 = z^4$ gives $|z + 1|^4 = |z|^4$, so $|z + 1| = |z|$, i.e. $|z - (-1)| = |z - 0|$. Every solution is equidistant from $-1$ and $0$, so it lies on the perpendicular bisector of these points, the line $\\mathrm{Re}(z) = -\\frac{1}{2}$.",
+  "linkedTopicIds": [
+   "fur-argand-modulus-argument"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q17",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that $1 + e^{i\\theta} = 2\\cos\\left(\\dfrac{\\theta}{2}\\right)e^{i\\theta/2}$.\n\n(b) By considering the binomial expansion of $\\left(1 + e^{i\\theta}\\right)^n$, show that, for positive integers $n$,\n$$\\sum_{r=0}^{n} \\binom{n}{r}\\cos r\\theta = 2^n\\cos^n\\left(\\frac{\\theta}{2}\\right)\\cos\\left(\\frac{n\\theta}{2}\\right)$$\n\n(c) Hence evaluate $\\displaystyle\\sum_{r=0}^{6} \\binom{6}{r}\\cos\\left(\\frac{2r\\pi}{3}\\right)$.",
+  "hint": "(a) Take out a factor $e^{i\\theta/2}$ and use $e^{i\\alpha} + e^{-i\\alpha} = 2\\cos\\alpha$. (b) Expand with the binomial theorem, use De Moivre on each term, and compare real parts with (a) raised to the power $n$.",
+  "answer": "(a) shown (b) shown (c) $1$",
+  "solution": "(a)\n$$1 + e^{i\\theta} = e^{i\\theta/2}\\left(e^{-i\\theta/2} + e^{i\\theta/2}\\right) = e^{i\\theta/2} \\times 2\\cos\\frac{\\theta}{2}$$\n\n(b) Binomial expansion and De Moivre ($\\left(e^{i\\theta}\\right)^r = e^{ir\\theta} = \\cos r\\theta + i\\sin r\\theta$):\n$$\\left(1 + e^{i\\theta}\\right)^n = \\sum_{r=0}^{n}\\binom{n}{r}e^{ir\\theta} = \\sum_{r=0}^{n}\\binom{n}{r}\\cos r\\theta + i\\sum_{r=0}^{n}\\binom{n}{r}\\sin r\\theta$$\n\nUsing (a) and De Moivre:\n$$\\left(1 + e^{i\\theta}\\right)^n = 2^n\\cos^n\\left(\\frac{\\theta}{2}\\right)e^{in\\theta/2} = 2^n\\cos^n\\left(\\frac{\\theta}{2}\\right)\\left(\\cos\\frac{n\\theta}{2} + i\\sin\\frac{n\\theta}{2}\\right)$$\n\n$2^n\\cos^n\\frac{\\theta}{2}$ is real, so equating real parts:\n$$\\sum_{r=0}^{n}\\binom{n}{r}\\cos r\\theta = 2^n\\cos^n\\left(\\frac{\\theta}{2}\\right)\\cos\\left(\\frac{n\\theta}{2}\\right) \\;\\blacksquare$$\n\n(c) $n = 6$, $\\theta = \\frac{2\\pi}{3}$: $\\cos\\frac{\\theta}{2} = \\cos\\frac{\\pi}{3} = \\frac{1}{2}$ and $\\cos\\frac{6\\theta}{2} = \\cos 2\\pi = 1$.\n$$\\sum_{r=0}^{6}\\binom{6}{r}\\cos\\frac{2r\\pi}{3} = 2^6\\left(\\frac{1}{2}\\right)^6(1) = 1$$\n\nCheck directly: $1 - 3 - 7.5 + 20 - 7.5 - 3 + 1 = 1$ ✓ (using $\\cos\\frac{2r\\pi}{3} = -\\frac{1}{2}$ unless $3 \\mid r$).",
+  "linkedTopicIds": [
+   "pure-binomial-expansion"
+  ]
+ },
+ {
+  "id": "fur-de-moivre-roots-unity-q18",
+  "topicId": "fur-de-moivre-roots-unity",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Prove by induction that, for all positive integers $n$,\n$$(\\cos\\theta + i\\sin\\theta)^n = \\cos n\\theta + i\\sin n\\theta$$\n\n(b) Show that the result also holds when $n = -m$, where $m$ is a positive integer.",
+  "hint": "(a) In the inductive step, multiply $\\cos k\\theta + i\\sin k\\theta$ by $\\cos\\theta + i\\sin\\theta$ and use the compound angle formulae. (b) Start from $\\frac{1}{\\cos m\\theta + i\\sin m\\theta}$ and multiply top and bottom by the conjugate.",
+  "answer": "(a) proof by induction (b) $(\\cos\\theta + i\\sin\\theta)^{-m} = \\cos m\\theta - i\\sin m\\theta = \\cos(-m\\theta) + i\\sin(-m\\theta)$",
+  "solution": "(a) **Base case** $n = 1$: LHS $= \\cos\\theta + i\\sin\\theta =$ RHS ✓\n\n**Assumption:** suppose the result is true for $n = k$: $(\\cos\\theta + i\\sin\\theta)^k = \\cos k\\theta + i\\sin k\\theta$.\n\n**Inductive step:**\n$$(\\cos\\theta + i\\sin\\theta)^{k+1} = (\\cos k\\theta + i\\sin k\\theta)(\\cos\\theta + i\\sin\\theta)$$\n$$= (\\cos k\\theta\\cos\\theta - \\sin k\\theta\\sin\\theta) + i(\\sin k\\theta\\cos\\theta + \\cos k\\theta\\sin\\theta)$$\nusing $i^2 = -1$. By the compound angle formulae this is\n$$\\cos(k + 1)\\theta + i\\sin(k + 1)\\theta$$\nso the result is true for $n = k + 1$.\n\n**Conclusion:** the result is true for $n = 1$, and if it is true for $n = k$ then it is true for $n = k + 1$. Hence, by mathematical induction, it is true for all positive integers $n$.\n\n(b) Using (a) with the positive integer $m$:\n$$(\\cos\\theta + i\\sin\\theta)^{-m} = \\frac{1}{\\cos m\\theta + i\\sin m\\theta} = \\frac{\\cos m\\theta - i\\sin m\\theta}{\\cos^2 m\\theta + \\sin^2 m\\theta} = \\cos m\\theta - i\\sin m\\theta$$\n\nSince $\\cos(-m\\theta) = \\cos m\\theta$ and $\\sin(-m\\theta) = -\\sin m\\theta$, this equals $\\cos(-m\\theta) + i\\sin(-m\\theta) = \\cos n\\theta + i\\sin n\\theta$ ✓",
+  "linkedTopicIds": [
+   "fur-proof-by-induction",
+   "pure-trig-compound-angles"
+  ]
+ }
+]
