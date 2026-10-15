@@ -50,10 +50,10 @@
   "difficulty": 2,
   "type": "fluency",
   "variationSet": "v1",
-  "question": "Find the angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} -2 \\\\ -1 \\\\ 2 \\end{pmatrix}$$\nWhat can you say about the lines?",
+  "question": "Find the angle between the lines\n$$l_1: \\mathbf{r} = \\begin{pmatrix} 1 \\\\ 0 \\\\ 2 \\end{pmatrix} + \\lambda\\begin{pmatrix} 1 \\\\ 2 \\\\ 2 \\end{pmatrix}$$\n$$l_2: \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 1 \\\\ -1 \\end{pmatrix} + \\mu\\begin{pmatrix} -2 \\\\ -1 \\\\ 2 \\end{pmatrix}$$\nWhat does your answer tell you about the directions of $l_1$ and $l_2$?",
   "hint": "Now only the $z$-component has changed sign. Work out the scalar product before reaching for a calculator.",
-  "answer": "$90^\\circ$: the lines are perpendicular (their directions have zero scalar product), whether or not they meet.",
-  "solution": "**What changed:** the $z$-component of the second direction is now $+2$.\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = (1)(-2) + (2)(-1) + (2)(2) = -2 - 2 + 4 = 0$$\nSo $\\cos\\theta = 0$ and $\\theta = 90^\\circ$: the lines are perpendicular.\n\nNote that \"perpendicular\" here describes the directions only. To know whether the lines actually cross you would still have to solve for an intersection (they might be skew).",
+  "answer": "$90^\\circ$: the directions are perpendicular (their scalar product is zero), so the lines are perpendicular. (These particular lines do not meet, so they are perpendicular skew lines.)",
+  "solution": "**What changed:** the $z$-component of the second direction is now $+2$.\n$$\\mathbf{b}_1 \\cdot \\mathbf{b}_2 = (1)(-2) + (2)(-1) + (2)(2) = -2 - 2 + 4 = 0$$\nSo $\\cos\\theta = 0$ and $\\theta = 90^\\circ$: the lines are perpendicular.\n\nNote that \"perpendicular\" here describes the directions only. To know whether the lines actually cross you still have to solve for an intersection. Here, equating $x$ and $y$ ($1 + \\lambda = 3 - 2\\mu$, $2\\lambda = 1 - \\mu$) gives $\\lambda = 0$, $\\mu = 1$, but then $z$ gives $2 \\ne 1$, so these lines are perpendicular but skew.",
   "linkedTopicIds": [],
   "misconceptionIds": [
    "m2"

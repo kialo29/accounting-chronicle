@@ -1,0 +1,268 @@
+[
+ {
+  "id": "pure-radians-unit-circle-q01",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius 5 cm and angle 1.2 radians. Find the length of its arc.",
+  "hint": "With the angle in radians, arc length is $s = r\\theta$.",
+  "answer": "6 cm",
+  "solution": "The angle is already in radians, so use $s = r\\theta$:\n$$s = 5 \\times 1.2 = 6 \\text{ cm}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q02",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius 5 cm and angle 1.2 radians. Find the **area** of the sector.",
+  "hint": "With the angle in radians, sector area is $A = \\frac{1}{2}r^2\\theta$.",
+  "answer": "$15 \\text{ cm}^2$",
+  "solution": "Same sector as before; this time we want the area, so use $A = \\frac{1}{2}r^2\\theta$:\n$$A = \\frac{1}{2} \\times 5^2 \\times 1.2 = \\frac{1}{2} \\times 25 \\times 1.2 = 15 \\text{ cm}^2$$\n\n(What changed: arc length uses $r$, area uses $r^2$ and a factor $\\frac{1}{2}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q03",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius 5 cm and angle $72°$. Find the exact area of the sector.",
+  "hint": "The formula $A = \\frac{1}{2}r^2\\theta$ only works with $\\theta$ in radians. Convert $72°$ first, using $180° = \\pi$.",
+  "answer": "$5\\pi \\text{ cm}^2$",
+  "solution": "What changed: the angle is now given in **degrees**, so convert it before using the radian formula.\n$$72° = 72 \\times \\frac{\\pi}{180} = \\frac{2\\pi}{5}$$\n\n$$A = \\frac{1}{2} \\times 25 \\times \\frac{2\\pi}{5} = 5\\pi \\text{ cm}^2 \\ (\\approx 15.7 \\text{ cm}^2)$$\n\n(Using $\\theta = 72$ directly would give $900 \\text{ cm}^2$, far more than the whole circle's area of $25\\pi \\approx 78.5 \\text{ cm}^2$ — a clear sign the units are wrong.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q04",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A sector of a circle has radius 5 cm and area $15 \\text{ cm}^2$. Find the angle of the sector in radians.",
+  "hint": "Substitute into $A = \\frac{1}{2}r^2\\theta$ and solve for $\\theta$.",
+  "answer": "$\\theta = 1.2$ radians",
+  "solution": "What changed: the angle is now the **unknown** and the area is given.\n$$15 = \\frac{1}{2} \\times 25 \\times \\theta = 12.5\\theta$$\n$$\\theta = \\frac{15}{12.5} = 1.2 \\text{ radians}$$\n\nThis matches the sector in the earlier question, as it should.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q05",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Convert $150°$ to radians, giving your answer in terms of $\\pi$.\n\n(b) Convert $\\frac{7\\pi}{6}$ radians to degrees.\n\n(c) Convert 2.5 radians to degrees, giving your answer to 1 decimal place.\n\n(d) Convert $40°$ to radians, giving your answer to 3 significant figures.",
+  "hint": "$\\pi \\text{ rad} = 180°$. Degrees to radians: multiply by $\\frac{\\pi}{180}$. Radians to degrees: multiply by $\\frac{180}{\\pi}$.",
+  "answer": "(a) $\\frac{5\\pi}{6}$ (b) $210°$ (c) $143.2°$ (d) 0.698 rad",
+  "solution": "(a) $150 \\times \\frac{\\pi}{180} = \\frac{150\\pi}{180} = \\frac{5\\pi}{6}$\n\n(b) $\\frac{7\\pi}{6} \\times \\frac{180}{\\pi} = \\frac{7 \\times 180}{6} = 210°$ (or: $\\frac{\\pi}{6} = 30°$, so $\\frac{7\\pi}{6} = 7 \\times 30° = 210°$)\n\n(c) $2.5 \\times \\frac{180}{\\pi} = \\frac{450}{\\pi} = 143.239\\ldots \\approx 143.2°$\n\n(d) $40 \\times \\frac{\\pi}{180} = \\frac{2\\pi}{9} = 0.69813\\ldots \\approx 0.698$ rad",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q06",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Without a calculator, find the exact value of each of the following. For each, state the reference angle and the quadrant you used.\n\n(a) $\\cos\\frac{2\\pi}{3}$ (b) $\\sin\\frac{4\\pi}{3}$ (c) $\\tan\\frac{7\\pi}{4}$ (d) $\\cos\\left(-\\frac{5\\pi}{6}\\right)$",
+  "hint": "Find the acute angle each direction makes with the $x$-axis (the reference angle) for the size, then use the quadrant (CAST) for the sign.",
+  "answer": "(a) $-\\frac{1}{2}$ (b) $-\\frac{\\sqrt{3}}{2}$ (c) $-1$ (d) $-\\frac{\\sqrt{3}}{2}$",
+  "solution": "(a) $\\frac{2\\pi}{3} = \\pi - \\frac{\\pi}{3}$: 2nd quadrant, reference angle $\\frac{\\pi}{3}$. Cos is negative in the 2nd quadrant:\n$$\\cos\\frac{2\\pi}{3} = -\\cos\\frac{\\pi}{3} = -\\frac{1}{2}$$\n\n(b) $\\frac{4\\pi}{3} = \\pi + \\frac{\\pi}{3}$: 3rd quadrant, reference angle $\\frac{\\pi}{3}$. Sin is negative in the 3rd quadrant:\n$$\\sin\\frac{4\\pi}{3} = -\\sin\\frac{\\pi}{3} = -\\frac{\\sqrt{3}}{2}$$\n\n(c) $\\frac{7\\pi}{4} = 2\\pi - \\frac{\\pi}{4}$: 4th quadrant, reference angle $\\frac{\\pi}{4}$. Tan is negative in the 4th quadrant:\n$$\\tan\\frac{7\\pi}{4} = -\\tan\\frac{\\pi}{4} = -1$$\n\n(d) $-\\frac{5\\pi}{6}$ is $\\frac{5\\pi}{6}$ measured **clockwise**, ending in the 3rd quadrant, reference angle $\\pi - \\frac{5\\pi}{6} = \\frac{\\pi}{6}$. Cos is negative in the 3rd quadrant:\n$$\\cos\\left(-\\frac{5\\pi}{6}\\right) = -\\cos\\frac{\\pi}{6} = -\\frac{\\sqrt{3}}{2}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q07",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The diagram shows the unit circle, centre $O$. The point $P(-0.6, 0.8)$ lies on the circle and $OP$ makes an angle $\\theta$, measured anticlockwise, with the positive $x$-axis.\n\n(a) Write down the values of $\\cos\\theta$, $\\sin\\theta$ and $\\tan\\theta$.\n\n(b) Find $\\theta$ in radians, to 3 significant figures.\n\n(c) Without finding any more angles, write down the coordinates of the points on the unit circle at angles $\\pi - \\theta$, $\\pi + \\theta$ and $-\\theta$. Explain your reasoning.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 257\" width=\"280\" height=\"257\"><line x1=\"54.0\" y1=\"239.0\" x2=\"54.0\" y2=\"18.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"96.5\" y1=\"239.0\" x2=\"96.5\" y2=\"18.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"139.0\" y1=\"239.0\" x2=\"139.0\" y2=\"18.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"181.5\" y1=\"239.0\" x2=\"181.5\" y2=\"18.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"224.0\" y1=\"239.0\" x2=\"224.0\" y2=\"18.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"213.5\" x2=\"258.0\" y2=\"213.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"171.0\" x2=\"258.0\" y2=\"171.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"128.5\" x2=\"258.0\" y2=\"128.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"86.0\" x2=\"258.0\" y2=\"86.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"43.5\" x2=\"258.0\" y2=\"43.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"20.0\" y1=\"128.5\" x2=\"266.0\" y2=\"128.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"139.0\" y1=\"239.0\" x2=\"139.0\" y2=\"10.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 266.0 128.5 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 139.0 10.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"262.0\" y=\"122.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"145.0\" y=\"18.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"54.0\" y1=\"125.5\" x2=\"54.0\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"54.0\" y=\"143.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"96.5\" y1=\"125.5\" x2=\"96.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"181.5\" y1=\"125.5\" x2=\"181.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"224.0\" y1=\"125.5\" x2=\"224.0\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"224.0\" y=\"143.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"136.0\" y1=\"213.5\" x2=\"142.0\" y2=\"213.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"134.0\" y=\"218.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"136.0\" y1=\"171.0\" x2=\"142.0\" y2=\"171.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"136.0\" y1=\"86.0\" x2=\"142.0\" y2=\"86.0\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"136.0\" y1=\"43.5\" x2=\"142.0\" y2=\"43.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"134.0\" y=\"48.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><circle cx=\"139.0\" cy=\"128.5\" r=\"85.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"139.0\" y1=\"128.5\" x2=\"88.0\" y2=\"60.5\" stroke=\"currentColor\" stroke-width=\"1.4\"/><circle cx=\"88.0\" cy=\"60.5\" r=\"3\" fill=\"currentColor\"/><text x=\"82.0\" y=\"52.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P(−0.6, 0.8)</text><path d=\"M 159.00 128.50 A 20 20 0 0 0 127.00 112.50\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"1.6\"/><text x=\"153.0\" y=\"106.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">θ</text><text x=\"134.0\" y=\"143.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text></svg>",
+  "hint": "On the unit circle the point at angle $\\theta$ is $(\\cos\\theta, \\sin\\theta)$. For (c), think about reflections in the axes and a half-turn about $O$.",
+  "answer": "(a) $\\cos\\theta = -0.6$, $\\sin\\theta = 0.8$, $\\tan\\theta = -\\frac{4}{3}$ (b) $\\theta = 2.21$ rad (c) $\\pi - \\theta$: $(0.6, 0.8)$; $\\pi + \\theta$: $(0.6, -0.8)$; $-\\theta$: $(-0.6, -0.8)$",
+  "solution": "(a) The point at angle $\\theta$ is $(\\cos\\theta, \\sin\\theta)$, so $\\cos\\theta = -0.6$ and $\\sin\\theta = 0.8$.\n$$\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{0.8}{-0.6} = -\\frac{4}{3}$$\n\n(b) $P$ is in the 2nd quadrant. The reference angle $\\alpha$ (between $OP$ and the negative $x$-axis) satisfies $\\cos\\alpha = 0.6$, so $\\alpha = 0.9273$ rad. Then\n$$\\theta = \\pi - 0.9273 = 2.2143 \\approx 2.21 \\text{ rad}$$\n(Check: $\\cos^{-1}(-0.6) = 2.2143$ directly, since $\\cos^{-1}$ gives values between $0$ and $\\pi$.)\n\n(c) The point at angle $\\pi - \\theta$ is the reflection of $P$ in the $y$-axis (the angle is measured back from the negative $x$-axis), so it is $(0.6, 0.8)$.\n\nThe point at angle $\\pi + \\theta$ is $P$ rotated through half a turn about $O$, so both coordinates change sign: $(0.6, -0.8)$.\n\nThe point at angle $-\\theta$ is the reflection of $P$ in the $x$-axis: $(-0.6, -0.8)$.\n\nSo, for example, $\\cos(\\pi - \\theta) = -\\cos\\theta$, $\\sin(\\pi + \\theta) = -\\sin\\theta$ and $\\cos(-\\theta) = \\cos\\theta$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q08",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Jamal is asked to find the exact value of $\\cos\\frac{5\\pi}{6} - \\sin\\frac{4\\pi}{3}$. His working is shown below.\n\nLine 1: The reference angle for $\\frac{5\\pi}{6}$ is $\\frac{\\pi}{6}$, so $\\cos\\frac{5\\pi}{6} = \\frac{\\sqrt{3}}{2}$.\n\nLine 2: $\\frac{4\\pi}{3}$ is in the 3rd quadrant with reference angle $\\frac{\\pi}{3}$, so $\\sin\\frac{4\\pi}{3} = -\\frac{\\sqrt{3}}{2}$.\n\nLine 3: $\\cos\\frac{5\\pi}{6} - \\sin\\frac{4\\pi}{3} = \\frac{\\sqrt{3}}{2} - \\left(-\\frac{\\sqrt{3}}{2}\\right) = \\sqrt{3}$.\n\nIdentify the error, explain why it is wrong, and find the correct value.",
+  "hint": "Which quadrant is $\\frac{5\\pi}{6}$ in, and what is the sign of cosine there?",
+  "answer": "Line 1 is wrong: $\\frac{5\\pi}{6}$ is in the 2nd quadrant, where cosine is negative, so $\\cos\\frac{5\\pi}{6} = -\\frac{\\sqrt{3}}{2}$. The correct value is $0$.",
+  "solution": "**Error in Line 1.** Jamal found the right reference angle, $\\frac{\\pi}{6}$, but ignored the quadrant. $\\frac{5\\pi}{6} = \\pi - \\frac{\\pi}{6}$ lies in the 2nd quadrant, where the $x$-coordinate on the unit circle (cosine) is negative. So\n$$\\cos\\frac{5\\pi}{6} = -\\cos\\frac{\\pi}{6} = -\\frac{\\sqrt{3}}{2}$$\n\nLine 2 is correct.\n\nCorrected Line 3:\n$$\\cos\\frac{5\\pi}{6} - \\sin\\frac{4\\pi}{3} = -\\frac{\\sqrt{3}}{2} - \\left(-\\frac{\\sqrt{3}}{2}\\right) = 0$$\n\nThe reference angle gives the **size** of the value; the quadrant gives its **sign**.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q09",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Given that $\\theta$ is small and measured in radians, find an approximation for\n$$3\\cos\\theta - \\sin 2\\theta$$\nin the form $a + b\\theta + c\\theta^2$.\n\nHence estimate the value of the expression when $\\theta = 0.1$ and compare it with the calculator value.",
+  "hint": "Use $\\cos\\theta \\approx 1 - \\frac{\\theta^2}{2}$ and $\\sin\\theta \\approx \\theta$, replacing $\\theta$ by $2\\theta$ in the sine.",
+  "answer": "$3 - 2\\theta - \\frac{3}{2}\\theta^2$; estimate 2.785, calculator value 2.786 (3 d.p.)",
+  "solution": "For small $\\theta$: $\\cos\\theta \\approx 1 - \\frac{\\theta^2}{2}$ and $\\sin 2\\theta \\approx 2\\theta$.\n$$3\\cos\\theta - \\sin 2\\theta \\approx 3\\left(1 - \\frac{\\theta^2}{2}\\right) - 2\\theta = 3 - 2\\theta - \\frac{3}{2}\\theta^2$$\n\nSo $a = 3$, $b = -2$, $c = -\\frac{3}{2}$.\n\nAt $\\theta = 0.1$:\n$$3 - 0.2 - 1.5 \\times 0.01 = 2.785$$\n\nCalculator (radian mode): $3\\cos 0.1 - \\sin 0.2 = 2.98501 - 0.19867 = 2.78634\\ldots \\approx 2.786$.\n\nThe approximation is accurate to within about 0.0013.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q10",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ellie is asked to find the limiting value of\n$$\\frac{1 - \\cos 3\\theta}{\\theta\\sin 2\\theta}$$\nwhen $\\theta$ is small, using small-angle approximations. Her working is shown below.\n\nLine 1: $\\cos 3\\theta \\approx 1 - \\frac{3\\theta^2}{2}$\n\nLine 2: $1 - \\cos 3\\theta \\approx \\frac{3\\theta^2}{2}$\n\nLine 3: $\\theta\\sin 2\\theta \\approx \\theta \\times 2\\theta = 2\\theta^2$\n\nLine 4: $\\dfrac{1 - \\cos 3\\theta}{\\theta\\sin 2\\theta} \\approx \\dfrac{3\\theta^2/2}{2\\theta^2} = \\frac{3}{4}$\n\nFind Ellie's error, explain it and give the correct value.",
+  "hint": "In $\\cos\\theta \\approx 1 - \\frac{\\theta^2}{2}$, replace **every** $\\theta$ by $3\\theta$.",
+  "answer": "Line 1 is wrong: $\\cos 3\\theta \\approx 1 - \\frac{(3\\theta)^2}{2} = 1 - \\frac{9\\theta^2}{2}$. The correct value is $\\frac{9}{4}$.",
+  "solution": "**Error in Line 1.** Ellie substituted $3\\theta$ for $\\theta$ but did not square the 3. The whole angle $3\\theta$ must be squared:\n$$\\cos 3\\theta \\approx 1 - \\frac{(3\\theta)^2}{2} = 1 - \\frac{9\\theta^2}{2}$$\n\nCorrected working:\n$$1 - \\cos 3\\theta \\approx \\frac{9\\theta^2}{2}$$\n$$\\theta\\sin 2\\theta \\approx 2\\theta^2 \\quad \\text{(Line 3 was correct)}$$\n$$\\frac{1 - \\cos 3\\theta}{\\theta\\sin 2\\theta} \\approx \\frac{9\\theta^2/2}{2\\theta^2} = \\frac{9}{4}$$\n\nCheck numerically with $\\theta = 0.01$: $\\frac{1 - \\cos 0.03}{0.01\\sin 0.02} = \\frac{0.00044997}{0.00019999} \\approx 2.250$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q11",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam says: \"The small-angle approximation $\\sin\\theta \\approx \\theta$ tells me that $\\sin 2° \\approx 2$.\"\n\n(a) Explain why Sam is wrong, and use a small-angle approximation correctly to estimate $\\sin 2°$, giving your answer to 4 significant figures.\n\n(b) Find the percentage error in your estimate, to 2 significant figures.\n\n(c) Sam now says: \"Then in radians $\\sin 2 \\approx 2$.\" Is this valid? Justify your answer.",
+  "hint": "The approximations come from the unit circle with $\\theta$ measured in radians, and they only hold when $\\theta$ is close to 0.",
+  "answer": "(a) $\\sin 2° \\approx \\frac{\\pi}{90} = 0.03491$ (b) 0.020% (c) No: 2 radians (about $115°$) is not small; $\\sin 2 = 0.909$.",
+  "solution": "(a) The approximation $\\sin\\theta \\approx \\theta$ only holds when $\\theta$ is measured in **radians**. Since $\\sin$ of any angle is at most 1, $\\sin 2° \\approx 2$ is impossible. Convert first:\n$$2° = 2 \\times \\frac{\\pi}{180} = \\frac{\\pi}{90} = 0.034907\\ldots$$\n$$\\sin 2° \\approx 0.03491$$\n\n(b) Calculator value: $\\sin 2° = 0.0348995$.\n$$\\text{percentage error} = \\frac{0.0349066 - 0.0348995}{0.0348995} \\times 100\\% \\approx 0.020\\%$$\n\n(c) No. The approximation needs $\\theta$ to be **small** (close to 0), not just in radians. 2 radians is about $115°$, and $\\sin 2 = 0.909$, nowhere near 2. (Again, a sine value above 1 is impossible.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q12",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A car's windscreen wiper is pivoted at $O$. The rubber blade runs along the wiper arm from 10 cm to 55 cm from $O$, and the arm sweeps through an angle of $110°$. The shaded region in the diagram is the area of windscreen cleaned.\n\n(a) Find the distance travelled by the tip of the blade in one sweep, to the nearest 0.1 cm.\n\n(b) Find the area of windscreen cleaned in one sweep, to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" width=\"320\" height=\"200\"><path d=\"M 182.34 164.36 L 282.87 93.96 A 150 150 0 0 0 37.13 93.96 L 137.66 164.36 A 27.27 27.27 0 0 1 182.34 164.36 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"160\" y1=\"180\" x2=\"182.34\" y2=\"164.36\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"160\" y1=\"180\" x2=\"137.66\" y2=\"164.36\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"160\" cy=\"180\" r=\"3\" fill=\"currentColor\"/><text x=\"160.0\" y=\"196.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">pivot O</text><text x=\"160.0\" y=\"146.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">110°</text><text x=\"240.6\" y=\"141.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">blade</text></svg>",
+  "hint": "Convert $110°$ to radians. The cleaned region is a large sector of radius 55 cm with a small sector of radius 10 cm removed.",
+  "answer": "(a) 105.6 cm (b) $2810 \\text{ cm}^2$ (3 s.f.)",
+  "solution": "Convert the angle: $110° = 110 \\times \\frac{\\pi}{180} = \\frac{11\\pi}{18} = 1.9199$ rad.\n\n(a) The tip moves along an arc of radius 55 cm:\n$$s = r\\theta = 55 \\times \\frac{11\\pi}{18} = 105.59\\ldots \\approx 105.6 \\text{ cm}$$\n\n(b) Area cleaned = large sector − small sector:\n$$A = \\frac{1}{2}(55^2)\\theta - \\frac{1}{2}(10^2)\\theta = \\frac{1}{2}(3025 - 100) \\times \\frac{11\\pi}{18}$$\n$$= 1462.5 \\times 1.91986\\ldots = 2807.8\\ldots \\approx 2810 \\text{ cm}^2$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q13",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "Seen from Earth, the full Moon's disc spans an angle of about $0.52°$. The distance from Earth to the Moon is about 384 400 km.\n\nTreating the Moon's diameter as a short arc of a circle centred on the observer, use a small-angle approximation to estimate the Moon's diameter, to 3 significant figures.",
+  "hint": "Convert $0.52°$ to radians, then use arc length $= r\\theta$ (or equivalently $\\tan\\theta \\approx \\theta$).",
+  "answer": "About 3490 km",
+  "solution": "Convert to radians:\n$$0.52° = 0.52 \\times \\frac{\\pi}{180} = 0.0090757\\ldots \\text{ rad}$$\n\nThe angle is small, so the diameter $d$ is approximately the arc length of a circle of radius 384 400 km:\n$$d \\approx r\\theta = 384\\,400 \\times 0.0090757 = 3488.7\\ldots \\approx 3490 \\text{ km}$$\n\n(The accepted value is about 3475 km, so the estimate is good. Using $0.52$ instead of the radian value would give about $200\\,000$ km — the angle must be in radians.)",
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q14",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The diagram shows a sector $OAB$ of a circle with centre $O$ and radius 8 cm. The angle $AOB$ is $\\theta$ radians. The area of the sector is $40 \\text{ cm}^2$. The shaded region $R$ is bounded by the chord $AB$ and the arc $AB$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><path d=\"M 252.39 63.08 A 175 175 0 0 1 47.61 63.08 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M 150 205 L 252.39 63.08 A 175 175 0 0 0 47.61 63.08 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"252.39\" y1=\"63.08\" x2=\"47.61\" y2=\"63.08\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M 165.21 183.91 A 26 26 0 0 0 134.79 183.91\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"150.0\" y=\"173.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">θ</text><text x=\"150.0\" y=\"222.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><text x=\"262.4\" y=\"67.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><text x=\"37.6\" y=\"67.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><text x=\"215.2\" y=\"140.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">8 cm</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\theta = 1.25$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the perimeter of $R$, giving your answer in cm to 3 significant figures.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the area of $R$, giving your answer in $\\text{cm}^2$ to 3 significant figures.",
+    "marks": 3
+   }
+  ],
+  "marks": 8,
+  "calculator": true,
+  "hint": "Perimeter of $R$ = arc + chord. Find the chord using the cosine rule or by splitting the isosceles triangle in half. Area of $R$ = sector − triangle, with triangle area $\\frac{1}{2}r^2\\sin\\theta$.",
+  "answer": "(a) $\\frac{1}{2} \\times 64 \\times \\theta = 40 \\Rightarrow \\theta = 1.25$ (b) 19.4 cm (c) $9.63 \\text{ cm}^2$",
+  "solution": "(a) $\\frac{1}{2} \\times 8^2 \\times \\theta = 40$ **M1**\n$$32\\theta = 40 \\Rightarrow \\theta = 1.25 \\quad \\text{**A1** (answer given, so working must be seen)}$$\n\n(b) Arc $AB = r\\theta = 8 \\times 1.25 = 10$ cm **B1**\n\nChord $AB$: split the isosceles triangle $OAB$ into two right-angled triangles:\n$$AB = 2 \\times 8\\sin(0.625) = 9.3616 \\text{ cm} \\quad \\text{**M1**}$$\n(or cosine rule: $AB^2 = 64 + 64 - 128\\cos 1.25$)\n\nPerimeter $= 10 + 9.3616 = 19.36\\ldots \\approx 19.4$ cm **A1**\n\n(c) Triangle $OAB$: $\\frac{1}{2} \\times 8^2 \\times \\sin 1.25 = 32 \\times 0.94898 = 30.367 \\text{ cm}^2$ **M1** (calculator in radian mode)\n\nArea of $R$ = sector − triangle **M1**\n$$= 40 - 30.367 = 9.632\\ldots \\approx 9.63 \\text{ cm}^2 \\quad \\text{**A1**}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-radians-unit-circle-q15",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Given that $\\theta$ is small and measured in radians, show that\n$$3\\tan\\theta + 2\\cos 2\\theta \\approx 2 + 3\\theta - 4\\theta^2$$\n\n(b) Hence find an approximate value for the small positive solution of\n$$3\\tan\\theta + 2\\cos 2\\theta = 2.1$$\ngiving your answer to 3 decimal places.\n\n(c) Your quadratic in (b) has a second positive root. Explain why it should be rejected.",
+  "hint": "Use $\\tan\\theta \\approx \\theta$ and $\\cos 2\\theta \\approx 1 - \\frac{(2\\theta)^2}{2}$, then solve the resulting quadratic with the formula.",
+  "answer": "(a) shown (b) $\\theta \\approx 0.035$ (c) The other root, 0.715, is not small, so the approximations are not valid there.",
+  "solution": "(a) $\\tan\\theta \\approx \\theta$ and $\\cos 2\\theta \\approx 1 - \\frac{(2\\theta)^2}{2} = 1 - 2\\theta^2$, so\n$$3\\tan\\theta + 2\\cos 2\\theta \\approx 3\\theta + 2 - 4\\theta^2 = 2 + 3\\theta - 4\\theta^2$$\n\n(b) Set the approximation equal to 2.1:\n$$2 + 3\\theta - 4\\theta^2 = 2.1 \\Rightarrow 4\\theta^2 - 3\\theta + 0.1 = 0$$\n$$\\theta = \\frac{3 \\pm \\sqrt{9 - 1.6}}{8} = \\frac{3 \\pm \\sqrt{7.4}}{8}$$\n$$\\theta = 0.03496\\ldots \\ \\text{ or } \\ \\theta = 0.71504\\ldots$$\n\nThe small solution is $\\theta \\approx 0.035$ (3 d.p.).\n\n(Check: solving the original equation numerically gives $\\theta = 0.03495$, so the approximation is excellent.)\n\n(c) $\\theta = 0.715$ rad (about $41°$) is not small, so the approximations $\\tan\\theta \\approx \\theta$, $\\cos 2\\theta \\approx 1 - 2\\theta^2$ are not accurate there; it is a root of the approximate quadratic, not of the original equation. (Indeed $3\\tan 0.715 + 2\\cos 1.43 = 2.61 + 0.28 = 2.89 \\ne 2.1$.)",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-radians-unit-circle-q16",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A gardener has 20 m of edging strip to make the whole boundary (two straight edges and the curved edge) of a flower bed in the shape of a sector of a circle.\n\n(a) Show that if the radius is $r$ m, the area of the bed is $A = 10r - r^2$ square metres.\n\n(b) Find the largest possible area of the bed, and the radius and angle (in radians) of the sector that gives it.\n\n(c) Show that, whatever length of edging is used, the largest bed always has the same angle.",
+  "hint": "Perimeter $= 2r + r\\theta$. Use the perimeter to write $\\theta$ in terms of $r$, then substitute into $A = \\frac{1}{2}r^2\\theta$. Complete the square to find the maximum.",
+  "answer": "(a) shown (b) $25 \\text{ m}^2$ when $r = 5$ m and $\\theta = 2$ rad (c) For perimeter $P$ the maximum is at $r = \\frac{P}{4}$, $\\theta = 2$ rad.",
+  "solution": "(a) Perimeter: $2r + r\\theta = 20$, so $r\\theta = 20 - 2r$.\n$$A = \\frac{1}{2}r^2\\theta = \\frac{1}{2}r(r\\theta) = \\frac{1}{2}r(20 - 2r) = 10r - r^2$$\n\n(b) Complete the square:\n$$A = 25 - (r - 5)^2$$\nwhich is largest, $25 \\text{ m}^2$, when $r = 5$ m.\n\nThen $5\\theta = 20 - 10 = 10$, so $\\theta = 2$ radians (about $115°$).\n\n(c) With perimeter $P$: $r\\theta = P - 2r$, so\n$$A = \\frac{1}{2}r(P - 2r) = \\frac{P}{2}r - r^2 = \\frac{P^2}{16} - \\left(r - \\frac{P}{4}\\right)^2$$\nThe maximum is at $r = \\frac{P}{4}$, where $r\\theta = P - \\frac{P}{2} = \\frac{P}{2}$, so $\\theta = \\frac{P/2}{P/4} = 2$ radians, whatever the value of $P$.",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ]
+ },
+ {
+  "id": "pure-radians-unit-circle-q17",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The diagram shows a circle with centre $O$ and radius 1. The chord $AB$ subtends an angle $\\theta$ radians at $O$. The minor segment cut off by $AB$ (shaded) has area equal to one quarter of the area of the circle.\n\n(a) Show that $\\theta - \\sin\\theta = \\frac{\\pi}{2}$.\n\n(b) Show that this equation has a root between 2.30 and 2.32.\n\n(c) Taking $\\theta_0 = 2.3$, use the Newton–Raphson method to find $\\theta$ correct to 3 decimal places, justifying the accuracy of your answer.\n\n(d) Hence find the length of the chord $AB$ to 3 significant figures.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 250\" width=\"260\" height=\"250\"><path d=\"M 221.48 87.60 A 100 100 0 0 0 38.52 87.60 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><circle cx=\"130\" cy=\"128\" r=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"221.48\" y1=\"87.60\" x2=\"38.52\" y2=\"87.60\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"130\" y1=\"128\" x2=\"221.48\" y2=\"87.60\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"130\" y1=\"128\" x2=\"38.52\" y2=\"87.60\" stroke=\"currentColor\" stroke-width=\"1.2\"/><circle cx=\"130\" cy=\"128\" r=\"2.5\" fill=\"currentColor\"/><path d=\"M 146.47 120.73 A 18 18 0 0 0 113.53 120.73\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"130.0\" y=\"104.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">θ</text><text x=\"130.0\" y=\"146.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><text x=\"229.5\" y=\"91.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><text x=\"30.5\" y=\"91.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><text x=\"181.7\" y=\"121.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">1</text></svg>",
+  "hint": "Segment area = sector area − triangle area $= \\frac{1}{2}r^2\\theta - \\frac{1}{2}r^2\\sin\\theta$. For (c) use $f(\\theta) = \\theta - \\sin\\theta - \\frac{\\pi}{2}$ and $f'(\\theta) = 1 - \\cos\\theta$.",
+  "answer": "(a) shown (b) $f(2.30) < 0 < f(2.32)$ (c) $\\theta = 2.310$ (d) $AB = 1.83$",
+  "solution": "(a) Segment area $= \\frac{1}{2}(1)^2\\theta - \\frac{1}{2}(1)^2\\sin\\theta = \\frac{1}{2}(\\theta - \\sin\\theta)$.\n\nA quarter of the circle's area is $\\frac{\\pi}{4}$, so\n$$\\frac{1}{2}(\\theta - \\sin\\theta) = \\frac{\\pi}{4} \\Rightarrow \\theta - \\sin\\theta = \\frac{\\pi}{2}$$\n\n(b) Let $f(\\theta) = \\theta - \\sin\\theta - \\frac{\\pi}{2}$ (radians). $f(2.30) = -0.0165 < 0$ and $f(2.32) = 0.0170 > 0$. $f$ is continuous, so there is a root between 2.30 and 2.32.\n\n(c) $f'(\\theta) = 1 - \\cos\\theta$, so\n$$\\theta_{n+1} = \\theta_n - \\frac{\\theta_n - \\sin\\theta_n - \\frac{\\pi}{2}}{1 - \\cos\\theta_n}$$\n$\\theta_1 = 2.309903$, $\\theta_2 = 2.309881$, so $\\theta \\approx 2.310$ (3 d.p.).\n\nCheck: $f(2.3095) = -0.00064 < 0$ and $f(2.3105) = 0.00104 > 0$, so the root lies in $[2.3095, 2.3105)$ and rounds to 2.310.\n\n(d) Splitting isosceles triangle $OAB$ in half:\n$$AB = 2\\sin\\frac{\\theta}{2} = 2\\sin(1.15494) = 1.8295\\ldots \\approx 1.83$$",
+  "linkedTopicIds": [
+   "pure-numerical-methods"
+  ]
+ },
+ {
+  "id": "pure-radians-unit-circle-q18",
+  "topicId": "pure-radians-unit-circle",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "The diagram shows part of the unit circle, centre $O$, with $A(1, 0)$. The point $P$ is on the circle with angle $AOP = \\theta$, where $0 < \\theta < \\frac{\\pi}{2}$. The tangent to the circle at $A$ meets $OP$ extended at $T$. The sector $OAP$ is shaded.\n\n(a) By comparing the areas of triangle $OAP$, sector $OAP$ and triangle $OAT$, prove that\n$$\\sin\\theta < \\theta < \\tan\\theta$$\n\n(b) Hence show that\n$$\\cos\\theta < \\frac{\\sin\\theta}{\\theta} < 1$$\nand explain why this justifies the approximation $\\sin\\theta \\approx \\theta$ for small $\\theta$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><path d=\"M 40 225 L 230 225 A 190 190 0 0 0 179.02 95.49 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M 230 225 A 190 190 0 0 0 40 35\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"40\" y1=\"225\" x2=\"260\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40\" y1=\"225\" x2=\"40\" y2=\"23\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40\" y1=\"225\" x2=\"230.00\" y2=\"48.00\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"230\" y1=\"225\" x2=\"230.00\" y2=\"48.00\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"179.02\" y1=\"95.49\" x2=\"230\" y2=\"225\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-dasharray=\"5 3\"/><path d=\"M 221 225 L 221 216 L 230 216\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M 70.00 225.00 A 30 30 0 0 0 61.95 204.55\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"76.0\" y=\"216.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">θ</text><text x=\"34.0\" y=\"241.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"234.0\" y=\"241.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A(1, 0)</text><text x=\"171.0\" y=\"89.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">P</text><text x=\"238.0\" y=\"52.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">T</text></svg>",
+  "hint": "Triangle $OAP$ has two sides of length 1 with angle $\\theta$ between them. In triangle $OAT$ the angle at $A$ is a right angle and $OA = 1$, so $AT = \\tan\\theta$.",
+  "answer": "(a) $\\frac{1}{2}\\sin\\theta < \\frac{1}{2}\\theta < \\frac{1}{2}\\tan\\theta$ (b) Divide by $\\sin\\theta$ and take reciprocals; as $\\theta \\to 0$, $\\cos\\theta \\to 1$, so $\\frac{\\sin\\theta}{\\theta}$ is squeezed to 1.",
+  "solution": "(a) Triangle $OAP$ lies inside sector $OAP$, which lies inside triangle $OAT$, so their areas are in increasing order.\n\n* Triangle $OAP$: $\\frac{1}{2} \\times 1 \\times 1 \\times \\sin\\theta = \\frac{1}{2}\\sin\\theta$.\n* Sector $OAP$ (radius 1, angle $\\theta$ radians): $\\frac{1}{2} \\times 1^2 \\times \\theta = \\frac{1}{2}\\theta$.\n* Triangle $OAT$: the tangent is perpendicular to the radius, so angle $OAT = 90°$ and $AT = OA\\tan\\theta = \\tan\\theta$. Area $= \\frac{1}{2} \\times 1 \\times \\tan\\theta = \\frac{1}{2}\\tan\\theta$.\n\nHence $\\frac{1}{2}\\sin\\theta < \\frac{1}{2}\\theta < \\frac{1}{2}\\tan\\theta$, and multiplying by 2:\n$$\\sin\\theta < \\theta < \\tan\\theta$$\n(The containments are strict because each region contains points not in the smaller one.)\n\n(b) All three quantities are positive for $0 < \\theta < \\frac{\\pi}{2}$. Divide by $\\sin\\theta > 0$:\n$$1 < \\frac{\\theta}{\\sin\\theta} < \\frac{1}{\\cos\\theta}$$\nTaking reciprocals of positive numbers reverses the inequalities:\n$$\\cos\\theta < \\frac{\\sin\\theta}{\\theta} < 1$$\n\nAs $\\theta \\to 0$, $\\cos\\theta \\to 1$, so $\\frac{\\sin\\theta}{\\theta}$ is trapped between two quantities that both tend to 1. Hence $\\frac{\\sin\\theta}{\\theta} \\to 1$, i.e. $\\sin\\theta \\approx \\theta$ for small $\\theta$. The argument used the sector area $\\frac{1}{2}\\theta$, which is only true in radians — this is why the approximation needs radians.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ }
+]

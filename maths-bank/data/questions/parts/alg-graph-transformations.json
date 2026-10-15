@@ -1,0 +1,321 @@
+[
+ {
+  "id": "alg-graph-transformations-q01",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The point $P(3, 4)$ lies on the curve $y = f(x)$.\n\nWrite down the coordinates of the image of $P$ on the curve $y = f(x) + 2$.",
+  "hint": "The $+2$ is **outside** the function: it is added to the output, the $y$-value.",
+  "answer": "$(3, 6)$",
+  "solution": "$y = f(x) + 2$ adds 2 to every output, so the whole curve moves **up 2**: a translation by $\\begin{pmatrix} 0 \\\\ 2 \\end{pmatrix}$.\n\n$x$ stays the same, $y$ goes from 4 to $4 + 2 = 6$.\n\nImage: $(3, 6)$.",
+  "linkedTopicIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-graph-transformations-q02",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The point $P(3, 4)$ lies on the curve $y = f(x)$.\n\nWrite down the coordinates of the image of $P$ on the curve $y = f(x + 2)$.",
+  "hint": "The $+2$ is now **inside** the bracket, so it affects $x$. Which value of $x$ makes $x + 2 = 3$?",
+  "answer": "$(1, 4)$",
+  "solution": "**What changed:** the $+2$ has moved **inside** the bracket. Now it acts on $x$, and it acts the **opposite** way to how it looks.\n\nOn the new curve, the output is 4 when the input to $f$ is 3, i.e. when $x + 2 = 3$, so $x = 1$.\n\nThe curve is translated 2 units **left**, by $\\begin{pmatrix} -2 \\\\ 0 \\end{pmatrix}$. Image: $(1, 4)$.\n\n**Check:** on $y = f(x + 2)$ at $x = 1$: $y = f(3) = 4$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-graph-transformations-q03",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The point $P(3, 4)$ lies on the curve $y = f(x)$.\n\nWrite down the coordinates of the image of $P$ on the curve $y = f(x - 2)$.",
+  "hint": "Compare with $y = f(x + 2)$. Which value of $x$ makes $x - 2 = 3$?",
+  "answer": "$(5, 4)$",
+  "solution": "**What changed:** the sign inside the bracket, $+2 \\to -2$. So the translation is in the opposite direction to $y = f(x + 2)$.\n\nWe need $x - 2 = 3$, so $x = 5$. The curve moves 2 units **right**, by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$; the $y$-value is unchanged.\n\nImage: $(5, 4)$. (Check: $f(5 - 2) = f(3) = 4$ ✓.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-graph-transformations-q04",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The point $P(3, 4)$ lies on the curve $y = f(x)$.\n\nWrite down the coordinates of the image of $P$ on the curve $y = f(2x)$, and describe the transformation.",
+  "hint": "Which value of $x$ makes $2x = 3$?",
+  "answer": "$\\left(\\frac{3}{2}, 4\\right)$; a stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$",
+  "solution": "**What changed:** the operation inside the bracket, from \"$-2$\" to \"$\\times 2$\".\n\nWe need $2x = 3$, so $x = \\frac{3}{2}$. The $x$-coordinate is **divided** by 2 (not multiplied); the $y$-value stays 4.\n\nImage: $\\left(\\frac{3}{2}, 4\\right)$.\n\nTransformation: a **stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$** (the curve is squashed towards the $y$-axis).\n\n**Check:** $f\\left(2 \\times \\frac{3}{2}\\right) = f(3) = 4$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "alg-graph-transformations-q05",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The graph of $y = f(x)$ is shown. It has a turning point at $(2, -1)$.\n\nWrite down the coordinates of the turning point of each of these curves.\n(a) $y = f(x) - 4$\n(b) $y = f(x + 3)$\n(c) $y = -f(x)$\n(d) $y = f(-x)$",
+  "hint": "Outside changes affect $y$; inside changes affect $x$ (the opposite way). A minus outside flips $y$-values; a minus inside flips $x$-values.",
+  "answer": "(a) $(2, -5)$ (b) $(-1, -1)$ (c) $(2, 1)$ (d) $(-2, -1)$",
+  "solution": "Start from the turning point $(2, -1)$.\n\n**(a)** $f(x) - 4$: translation 4 units down, $y \\to y - 4$: $(2, -5)$.\n\n**(b)** $f(x + 3)$: translation 3 units **left**, $x \\to x - 3$: $(-1, -1)$.\n\n**(c)** $-f(x)$: the minus is **outside**, so every $y$-value changes sign: reflection in the **$x$-axis**. $(2, -1) \\to (2, 1)$. (The minimum becomes a maximum.)\n\n**(d)** $f(-x)$: the minus is **inside**, so $x$-values change sign: reflection in the **$y$-axis**. $(2, -1) \\to (-2, -1)$.\n\nCheck (d): at $x = -2$, $f(-(-2)) = f(2) = -1$ ✓.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 298 264\" width=\"298\" height=\"264\"><line x1=\"16\" y1=\"254\" x2=\"16\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"60\" y1=\"254\" x2=\"60\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"104\" y1=\"254\" x2=\"104\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"148\" y1=\"254\" x2=\"148\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"192\" y1=\"254\" x2=\"192\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"236\" y1=\"254\" x2=\"236\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"280\" y1=\"254\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"254\" x2=\"280\" y2=\"254\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"220\" x2=\"280\" y2=\"220\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"186\" x2=\"280\" y2=\"186\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"152\" x2=\"280\" y2=\"152\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"118\" x2=\"280\" y2=\"118\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"84\" x2=\"280\" y2=\"84\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"50\" x2=\"280\" y2=\"50\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"16\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"12\" y1=\"186\" x2=\"287\" y2=\"186\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"60\" y1=\"258\" x2=\"60\" y2=\"9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M288,186 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M60,8 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"286\" y=\"178\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"68\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"16\" y1=\"183\" x2=\"16\" y2=\"189\" stroke=\"currentColor\"/><text x=\"13\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"104\" y1=\"183\" x2=\"104\" y2=\"189\" stroke=\"currentColor\"/><text x=\"96\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"148\" y1=\"183\" x2=\"148\" y2=\"189\" stroke=\"currentColor\"/><text x=\"148\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"192\" y1=\"183\" x2=\"192\" y2=\"189\" stroke=\"currentColor\"/><text x=\"200\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"236\" y1=\"183\" x2=\"236\" y2=\"189\" stroke=\"currentColor\"/><text x=\"236\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"280\" y1=\"183\" x2=\"280\" y2=\"189\" stroke=\"currentColor\"/><text x=\"280\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"57\" y1=\"254\" x2=\"63\" y2=\"254\" stroke=\"currentColor\"/><text x=\"55\" y=\"258\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"57\" y1=\"220\" x2=\"63\" y2=\"220\" stroke=\"currentColor\"/><text x=\"66\" y=\"224\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">−1</text><line x1=\"57\" y1=\"152\" x2=\"63\" y2=\"152\" stroke=\"currentColor\"/><text x=\"55\" y=\"156\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"57\" y1=\"118\" x2=\"63\" y2=\"118\" stroke=\"currentColor\"/><text x=\"55\" y=\"122\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"57\" y1=\"84\" x2=\"63\" y2=\"84\" stroke=\"currentColor\"/><text x=\"55\" y=\"88\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"57\" y1=\"50\" x2=\"63\" y2=\"50\" stroke=\"currentColor\"/><text x=\"55\" y=\"54\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"57\" y1=\"16\" x2=\"63\" y2=\"16\" stroke=\"currentColor\"/><text x=\"55\" y=\"20\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"55\" y=\"201\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M40.2,16 L53.8,64.3 L60.4,85.4 L67.5,106.1 L74.1,124 L80.7,140.4 L87.3,155.3 L94.3,169.4 L100.9,181.1 L108,191.8 L114.6,200.4 L121.2,207.3 L127.8,212.8 L134.4,216.7 L141,219.1 L148,220 L155,219.1 L161.6,216.7 L168.2,212.8 L174.8,207.3 L181.4,200.4 L188,191.8 L194.6,181.8 L201.7,169.4 L208.3,156.2 L214.9,141.4 L221.9,124 L228.5,106.1 L235.6,85.4 L242.2,64.3 L255.8,16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"148\" cy=\"220\" r=\"3.2\" fill=\"currentColor\"/><text x=\"262.4\" y=\"73.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">y = f(x)</text></svg>"
+ },
+ {
+  "id": "alg-graph-transformations-q06",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Omar is asked to describe how the graph of $y = (x + 3)^2$ is related to the graph of $y = x^2$.\n\nHe writes:\n\n\"$y = (x + 3)^2$ is $y = x^2$ translated 3 units to the right, so its turning point is at $(3, 0)$.\"\n\n(a) Show that $(3, 0)$ is not on the curve $y = (x + 3)^2$.\n(b) Explain Omar's mistake and give the correct description and turning point.",
+  "hint": "Substitute $x = 3$ into $(x + 3)^2$. Then ask: for which $x$ is $(x + 3)^2 = 0$?",
+  "answer": "(a) At $x = 3$, $y = 36 \\ne 0$. (b) With $f(x) = x^2$, $y = f(x + 3)$, which is a translation 3 units to the **left**, vector $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$; turning point $(-3, 0)$.",
+  "solution": "**(a)** At $x = 3$: $(3 + 3)^2 = 36$, not 0, so $(3, 0)$ is not on the curve.\n\n**(b)** Omar has moved the graph the way the sign **looks**. A change **inside** the bracket acts on $x$ the **opposite** way.\n\nThe minimum of $y = x^2$ is where the bracket is zero, at $x = 0$. For $y = (x + 3)^2$ the bracket is zero when $x + 3 = 0$, i.e. $x = -3$. So everything happens 3 units **earlier** (further left).\n\n**Correct:** $y = (x + 3)^2$ is $y = x^2$ translated by $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$ (3 units left). Turning point $(-3, 0)$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q07",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "The point $(2, 3)$ lies on the curve $y = f(x)$. Zara is asked for the image of this point on the curve $y = 3f(x) - 1$.\n\nHer working:\n\n\"Subtract 1 from the $y$-coordinate: $3 - 1 = 2$. Then multiply by 3: $2 \\times 3 = 6$. So the image is $(2, 6)$.\"\n\n(a) Explain Zara's error.\n(b) Find the correct image and describe the two transformations, in a correct order.",
+  "hint": "Work out $3f(x) - 1$ at $x = 2$ using the order of operations: what happens to $f(2)$ first?",
+  "answer": "(a) She applied the operations in the wrong order: $3f(x) - 1$ means multiply the output by 3, **then** subtract 1. (b) $(2, 8)$: a stretch parallel to the $y$-axis, scale factor 3, followed by a translation by $\\begin{pmatrix} 0 \\\\ -1 \\end{pmatrix}$.",
+  "solution": "**(a)** At $x = 2$, $y = 3f(2) - 1$. By the order of operations, $f(2) = 3$ is **multiplied by 3 first**, and then 1 is subtracted. Zara did the subtraction first, which would correspond to $y = 3\\big(f(x) - 1\\big)$, a different curve.\n\n**(b)**\n$$y = 3 \\times 3 - 1 = 9 - 1 = 8$$\nThe $x$-coordinate is unchanged (nothing happens inside the bracket). Image: $(2, 8)$.\n\nTransformations, in order: a **stretch parallel to the $y$-axis, scale factor 3** ($y \\to 3y$), then a **translation** by $\\begin{pmatrix} 0 \\\\ -1 \\end{pmatrix}$ ($y \\to y - 1$): $(2, 3) \\to (2, 9) \\to (2, 8)$.\n\n(Zara's order would also be valid if the translation were $\\begin{pmatrix} 0 \\\\ -\\frac{1}{3} \\end{pmatrix}$ first, since $3\\left(f(x) - \\frac{1}{3}\\right) = 3f(x) - 1$, but not with a translation of 1.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q08",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "(a) Let $f(x) = x^2 + 2x$. The point $(1, 3)$ lies on $y = f(x)$.\n(i) Find expressions for $-f(x)$ and $f(-x)$.\n(ii) Write down the image of $(1, 3)$ on $y = -f(x)$ and on $y = f(-x)$, and name each transformation.\n\n(b) Let $g(x) = x^3 - 4x$. Show that $-g(x) = g(-x)$ for every value of $x$, and explain what this means about the graph of $y = g(x)$.",
+  "hint": "A minus outside changes the output; a minus inside changes the input. For (b), work out $g(-x)$ by replacing every $x$ with $(-x)$.",
+  "answer": "(a)(i) $-f(x) = -x^2 - 2x$; $f(-x) = x^2 - 2x$ (ii) $(1, -3)$, reflection in the $x$-axis; $(-1, 3)$, reflection in the $y$-axis. (b) $g(-x) = -x^3 + 4x = -g(x)$. Reflecting the graph in the $x$-axis gives the same curve as reflecting it in the $y$-axis; the curve has rotational symmetry of order 2 about the origin.",
+  "solution": "**(a)(i)**\n$$-f(x) = -(x^2 + 2x) = -x^2 - 2x$$\n$$f(-x) = (-x)^2 + 2(-x) = x^2 - 2x$$\nThese are different expressions, so the two curves are different.\n\n**(ii)** $y = -f(x)$: the minus is **outside**, so $y \\to -y$: reflection in the **$x$-axis**. $(1, 3) \\to (1, -3)$. Check: $-f(1) = -3$ ✓.\n\n$y = f(-x)$: the minus is **inside**, so $x \\to -x$: reflection in the **$y$-axis**. $(1, 3) \\to (-1, 3)$. Check: $f(-(-1)) = f(1) = 3$ ✓.\n\n**(b)**\n$$g(-x) = (-x)^3 - 4(-x) = -x^3 + 4x$$\n$$-g(x) = -(x^3 - 4x) = -x^3 + 4x$$\nThese are identical for every $x$, so $g(-x) = -g(x)$.\n\nSo the reflection of $y = g(x)$ in the $y$-axis is exactly the same curve as its reflection in the $x$-axis. Doing one reflection then the other returns the original curve, and two reflections in perpendicular axes make a rotation of $180°$ about the origin: the curve has **rotational symmetry of order 2 about the origin** (it is an *odd* function). For a function like $f$ in part (a), which lacks this symmetry, $-f(x)$ and $f(-x)$ really are different.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q09",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The graph shown is a translation of the parent function $y = \\sqrt{x}$. The marked points are $(-2, -1)$, $(-1, 0)$, $(2, 1)$ and $(7, 2)$.\n\n(a) Find the equation of the graph in the form $y = \\sqrt{x - h} + k$.\n(b) State the domain and range of the function.",
+  "hint": "The graph of $y = \\sqrt{x}$ starts at $(0, 0)$. Where does this graph start? That point tells you the translation vector.",
+  "answer": "(a) $y = \\sqrt{x + 2} - 1$ (so $h = -2$, $k = -1$) (b) Domain $x \\ge -2$; range $y \\ge -1$",
+  "solution": "**(a)** The parent graph $y = \\sqrt{x}$ starts at $(0, 0)$ and passes through $(1, 1)$, $(4, 2)$, $(9, 3)$.\n\nThis graph starts at $(-2, -1)$, so it has been translated by $\\begin{pmatrix} -2 \\\\ -1 \\end{pmatrix}$: 2 left and 1 down.\n\n* 2 left: replace $x$ by $x + 2$ (inside, opposite sign).\n* 1 down: subtract 1 outside.\n$$y = \\sqrt{x + 2} - 1$$\nIn the form $\\sqrt{x - h} + k$: $h = -2$, $k = -1$.\n\n**Check the other points:** $(-1, 0)$: $\\sqrt{1} - 1 = 0$ ✓; $(2, 1)$: $\\sqrt{4} - 1 = 1$ ✓; $(7, 2)$: $\\sqrt{9} - 1 = 2$ ✓. (These are the images of $(1, 1)$, $(4, 2)$, $(9, 3)$.)\n\n**(b)** We need $x + 2 \\ge 0$, so the **domain** is $x \\ge -2$. The square root is never negative, so $y \\ge 0 - 1$: the **range** is $y \\ge -1$.",
+  "linkedTopicIds": [
+   "alg-functions-basics"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 226\" width=\"340\" height=\"226\"><line x1=\"14\" y1=\"216\" x2=\"14\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"42\" y1=\"216\" x2=\"42\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"70\" y1=\"216\" x2=\"70\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"98\" y1=\"216\" x2=\"98\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"126\" y1=\"216\" x2=\"126\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"154\" y1=\"216\" x2=\"154\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"182\" y1=\"216\" x2=\"182\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"210\" y1=\"216\" x2=\"210\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"238\" y1=\"216\" x2=\"238\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"266\" y1=\"216\" x2=\"266\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"294\" y1=\"216\" x2=\"294\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"322\" y1=\"216\" x2=\"322\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"216\" x2=\"322\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"176\" x2=\"322\" y2=\"176\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"136\" x2=\"322\" y2=\"136\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"96\" x2=\"322\" y2=\"96\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"56\" x2=\"322\" y2=\"56\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"14\" y1=\"16\" x2=\"322\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.2\" stroke-width=\"0.6\"/><line x1=\"10\" y1=\"136\" x2=\"329\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"98\" y1=\"220\" x2=\"98\" y2=\"9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M330,136 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M98,8 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"328\" y=\"128\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"106\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><line x1=\"14\" y1=\"133\" x2=\"14\" y2=\"139\" stroke=\"currentColor\"/><text x=\"11\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"42\" y1=\"133\" x2=\"42\" y2=\"139\" stroke=\"currentColor\"/><text x=\"39\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"70\" y1=\"133\" x2=\"70\" y2=\"139\" stroke=\"currentColor\"/><text x=\"63\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"126\" y1=\"133\" x2=\"126\" y2=\"139\" stroke=\"currentColor\"/><text x=\"126\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"154\" y1=\"133\" x2=\"154\" y2=\"139\" stroke=\"currentColor\"/><text x=\"154\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"182\" y1=\"133\" x2=\"182\" y2=\"139\" stroke=\"currentColor\"/><text x=\"182\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"210\" y1=\"133\" x2=\"210\" y2=\"139\" stroke=\"currentColor\"/><text x=\"210\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"238\" y1=\"133\" x2=\"238\" y2=\"139\" stroke=\"currentColor\"/><text x=\"238\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"266\" y1=\"133\" x2=\"266\" y2=\"139\" stroke=\"currentColor\"/><text x=\"266\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"294\" y1=\"133\" x2=\"294\" y2=\"139\" stroke=\"currentColor\"/><text x=\"294\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"322\" y1=\"133\" x2=\"322\" y2=\"139\" stroke=\"currentColor\"/><text x=\"322\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"95\" y1=\"216\" x2=\"101\" y2=\"216\" stroke=\"currentColor\"/><text x=\"93\" y=\"220\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"95\" y1=\"176\" x2=\"101\" y2=\"176\" stroke=\"currentColor\"/><text x=\"93\" y=\"180\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"95\" y1=\"96\" x2=\"101\" y2=\"96\" stroke=\"currentColor\"/><text x=\"93\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"95\" y1=\"56\" x2=\"101\" y2=\"56\" stroke=\"currentColor\"/><text x=\"93\" y=\"60\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"95\" y1=\"16\" x2=\"101\" y2=\"16\" stroke=\"currentColor\"/><text x=\"93\" y=\"20\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"93\" y=\"151\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M42,176 L42.3,172 L43.1,168 L46.3,160.3 L51.8,152.3 L59.5,144.4 L69.3,136.5 L81.3,128.6 L95.6,120.6 L112,112.8 L130.6,104.8 L151.3,97 L174.3,89.1 L199.5,81.1 L226.8,73.2 L256.3,65.3 L288.1,57.4 L322,49.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"42\" cy=\"176\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"70\" cy=\"136\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"154\" cy=\"96\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"294\" cy=\"56\" r=\"3.2\" fill=\"currentColor\"/></svg>"
+ },
+ {
+  "id": "alg-graph-transformations-q10",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "This question is about the parent function $y = |x|$ (the absolute value, or modulus, of $x$).\n\n(a) Describe the graph of $y = |x - 3|$ as a transformation of $y = |x|$, and state its vertex.\n(b) Show that reflecting $y = |x - 3|$ in the $y$-axis gives $y = |x + 3|$.\n(c) Ravi says, \"$y = |x + 3|$ is also $y = |x - 3|$ translated 6 units to the right.\" Is Ravi correct? Justify your answer.\n(d) Explain why reflecting $y = |x|$ in the $y$-axis leaves the graph unchanged.",
+  "hint": "Reflection in the $y$-axis means replacing $x$ with $-x$. Remember that $|-a| = |a|$ for any number $a$.",
+  "answer": "(a) Translation 3 units right, vector $\\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}$; vertex $(3, 0)$. (b) $|-x - 3| = |-(x + 3)| = |x + 3|$. (c) No: the vertex moves from $(3, 0)$ to $(-3, 0)$, which is 6 units to the **left**. (d) $|-x| = |x|$, so $f(-x) = f(x)$: the graph is symmetrical about the $y$-axis.",
+  "solution": "**(a)** With $f(x) = |x|$, $y = |x - 3| = f(x - 3)$: a translation 3 units **right**, by $\\begin{pmatrix} 3 \\\\ 0 \\end{pmatrix}$. The V-shape's vertex moves from $(0, 0)$ to $(3, 0)$ (where $x - 3 = 0$).\n\n**(b)** Reflection in the $y$-axis replaces $x$ with $-x$:\n$$y = |-x - 3| = |-(x + 3)| = |x + 3|$$\nsince a number and its negative have the same absolute value.\n\n**(c)** Ravi is **not** correct. $y = |x + 3|$ has its vertex where $x + 3 = 0$, at $(-3, 0)$. Moving from $(3, 0)$ to $(-3, 0)$ is a translation of 6 units to the **left**, by $\\begin{pmatrix} -6 \\\\ 0 \\end{pmatrix}$. (Check: $|x - 3|$ translated 6 left is $|(x + 6) - 3| = |x + 3|$ ✓; 6 right would give $|x - 9|$.)\n\n**(d)** Reflecting in the $y$-axis gives $y = |-x|$, and $|-x| = |x|$ for every $x$, so the equation, and therefore the graph, is unchanged. The V-shape is symmetrical about the $y$-axis. (This is why, in (b), a reflection and a translation can give the same result.)",
+  "linkedTopicIds": [
+   "alg-absolute-value"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q11",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "You must show your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write $x^2 - 6x + 11$ in the form $(x - a)^2 + b$, where $a$ and $b$ are integers.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Describe fully the single transformation that maps the graph of $y = x^2$ onto the graph of $y = x^2 - 6x + 11$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "The graph of $y = x^2 - 6x + 11$ is reflected in the $x$-axis. Write down the coordinates of the turning point of the new graph.",
+    "marks": 1
+   }
+  ],
+  "marks": 5,
+  "calculator": false,
+  "hint": "Halve the coefficient of $x$ to start completing the square. A translation is described fully by its vector.",
+  "answer": "(a) $(x - 3)^2 + 2$ (b) Translation by vector $\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$ (c) $(3, -2)$",
+  "solution": "**(a)**\n$$x^2 - 6x + 11 = (x - 3)^2 - 9 + 11 = (x - 3)^2 + 2$$\n**M1** for $(x - 3)^2$, **A1** for $+2$.\n\n**(b)** With $f(x) = x^2$, the curve is $y = f(x - 3) + 2$: 3 right (inside the bracket, opposite sign) and 2 up.\n\n**Translation** **B1** by vector $\\begin{pmatrix} 3 \\\\ 2 \\end{pmatrix}$ **B1**.\n\n(The turning point moves from $(0, 0)$ to $(3, 2)$.)\n\n**(c)** Reflection in the $x$-axis changes the sign of every $y$-coordinate: $(3, 2) \\to (3, -2)$. **B1**",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q12",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "The figure shows a sketch of the curve with equation $y = f(x)$.\n\nThe curve passes through the origin $O$ and the point $(4, 0)$, and has a maximum point at $(2, 4)$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Sketch the curve with equation $y = f(x + 3)$. On your sketch, show the coordinates of the points where the curve meets the $x$-axis and the coordinates of the maximum point.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Sketch the curve with equation $y = 3f(x)$, showing the same features.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Sketch the curve with equation $y = f(2x)$, showing the same features.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Given that the curve with equation $y = f(x) - k$ touches the $x$-axis, state the value of the constant $k$.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "hint": "Track the three key points $(0, 0)$, $(4, 0)$ and $(2, 4)$ through each transformation. Inside changes act on $x$ (opposite way / divide); outside changes act on $y$.",
+  "answer": "(a) Meets $x$-axis at $(-3, 0)$ and $(1, 0)$; maximum $(-1, 4)$ (b) Meets $x$-axis at $(0, 0)$ and $(4, 0)$; maximum $(2, 12)$ (c) Meets $x$-axis at $(0, 0)$ and $(2, 0)$; maximum $(1, 4)$ (d) $k = 4$",
+  "solution": "Key points of $y = f(x)$: $(0, 0)$, $(4, 0)$, maximum $(2, 4)$.\n\n**(a)** $y = f(x + 3)$ is a translation by $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$: subtract 3 from each $x$-coordinate.\n$(0, 0) \\to (-3, 0)$, $(4, 0) \\to (1, 0)$ **B1**; maximum $(2, 4) \\to (-1, 4)$ **B1**. Same $\\cap$ shape.\n\n**(b)** $y = 3f(x)$ is a stretch parallel to the $y$-axis, scale factor 3: multiply each $y$-coordinate by 3.\nThe $x$-intercepts stay at $(0, 0)$ and $(4, 0)$ ($3 \\times 0 = 0$) **B1**; maximum $(2, 12)$ **B1**.\n\n**(c)** $y = f(2x)$ is a stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$: divide each $x$-coordinate by 2.\n$(0, 0) \\to (0, 0)$, $(4, 0) \\to (2, 0)$ **B1**; maximum $(2, 4) \\to (1, 4)$ **B1**.\n\n**(d)** $y = f(x) - k$ is $y = f(x)$ moved down $k$. It touches the $x$-axis when the maximum point lands on the axis: $4 - k = 0$, so $k = 4$. **B1**",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 250\" width=\"300\" height=\"250\"><line x1=\"8\" y1=\"175.7\" x2=\"285\" y2=\"175.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"64.4\" y1=\"244\" x2=\"64.4\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M286,175.7 l-7,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M64.4,10 l-3.5,7 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"167.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"72.4\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">y</text><text x=\"59.4\" y=\"190.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M46.3,234.2 L58.4,193.6 L70.9,157.5 L76.9,142.4 L83.1,127.8 L89.4,114.5 L95.6,102.7 L101.9,92.3 L107.8,83.8 L114.1,76.1 L120.3,69.9 L126.6,65 L132.5,61.7 L138.7,59.6 L145,58.9 L150.9,59.5 L157.2,61.6 L163.4,65 L169.7,69.9 L175.9,76.1 L181.9,83.3 L188.1,92.3 L194.4,102.7 L200.6,114.5 L206.9,127.8 L213.1,142.4 L219.1,157.5 L231.6,193.6 L243.7,234.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><circle cx=\"225.6\" cy=\"175.7\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"145\" cy=\"58.9\" r=\"2.6\" fill=\"currentColor\"/><text x=\"234.6\" y=\"191.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"145\" y=\"49.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">(2, 4)</text></svg>"
+ },
+ {
+  "id": "alg-graph-transformations-q13",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 3,
+  "type": "synoptic",
+  "question": "(a) Write down the coordinates of the maximum point of the graph of $y = \\sin x$ for $0° \\le x \\le 360°$.\n\nThe graph of $y = \\sin x$ is transformed to give the graph of $y = \\sin(x - 30°) + 1$.\n\n(b) Describe the transformation fully.\n(c) Find the coordinates of the maximum point and of the minimum point of $y = \\sin(x - 30°) + 1$ for $0° \\le x \\le 360°$.",
+  "hint": "Recall the shape of $y = \\sin x$: maximum value 1 and minimum value $-1$. Then track those points: inside the bracket, $-30°$ moves the graph right.",
+  "answer": "(a) $(90°, 1)$ (b) Translation by vector $\\begin{pmatrix} 30 \\\\ 1 \\end{pmatrix}$ (30° right, 1 up) (c) Maximum $(120°, 2)$; minimum $(300°, 0)$",
+  "solution": "**(a)** $\\sin x$ reaches its largest value, 1, at $x = 90°$: maximum point $(90°, 1)$.\n\n**(b)** With $f(x) = \\sin x$, the new graph is $y = f(x - 30°) + 1$:\n* $-30°$ inside the bracket: 30° to the **right**.\n* $+1$ outside: 1 **up**.\n\nA translation by $\\begin{pmatrix} 30 \\\\ 1 \\end{pmatrix}$.\n\n**(c)** Maximum: $(90°, 1) \\to (90° + 30°, 1 + 1) = (120°, 2)$.\n\nMinimum of $\\sin x$ is at $(270°, -1)$, which moves to $(300°, 0)$.\n\nBoth $120°$ and $300°$ lie in $0° \\le x \\le 360°$. **Check:** $\\sin(120° - 30°) + 1 = \\sin 90° + 1 = 2$ ✓ and $\\sin(270°) + 1 = 0$ ✓.",
+  "linkedTopicIds": [
+   "pure-trig-graphs"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q14",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Show that $2^{x + 3} = 8 \\times 2^x$.\n(b) Hence describe **two** different single transformations, each of which maps the graph of $y = 2^x$ onto the graph of $y = 2^{x + 3}$.\n(c) The graph of $y = 2^x$ is stretched parallel to the $y$-axis with scale factor $\\frac{1}{4}$. Show that the same graph can be obtained by a translation, and give the translation vector.",
+  "hint": "Use the index law $a^{m + n} = a^m \\times a^n$. For (c), write $\\frac{1}{4}$ as a power of 2.",
+  "answer": "(a) $2^{x + 3} = 2^x \\times 2^3 = 8 \\times 2^x$ (b) A translation by $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$; a stretch parallel to the $y$-axis, scale factor 8. (c) $\\frac{1}{4} \\times 2^x = 2^{-2} \\times 2^x = 2^{x - 2}$: a translation by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$.",
+  "solution": "**(a)** By the index laws:\n$$2^{x + 3} = 2^x \\times 2^3 = 8 \\times 2^x$$\n\n**(b)** With $f(x) = 2^x$:\n* $y = 2^{x + 3} = f(x + 3)$: a **translation** by $\\begin{pmatrix} -3 \\\\ 0 \\end{pmatrix}$ (3 units left).\n* $y = 8 \\times 2^x = 8f(x)$: a **stretch parallel to the $y$-axis, scale factor 8**.\n\nCheck with a point: $(0, 1)$ on $y = 2^x$. Translation: $(-3, 1)$, and $2^{-3 + 3} = 1$ ✓. Stretch: $(0, 8)$, and $2^{0 + 3} = 8$ ✓. Both points are on the same curve $y = 2^{x + 3}$, as they must be.\n\n**(c)** The stretch gives\n$$y = \\frac{1}{4} \\times 2^x = 2^{-2} \\times 2^x = 2^{x - 2}$$\nwhich is $f(x - 2)$: a **translation** by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$ (2 units right).\n\nThis works because multiplying an exponential by a constant is the same as shifting its input, which is special to exponential graphs.",
+  "linkedTopicIds": [
+   "num-index-laws",
+   "alg-graph-shapes"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q15",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Ball A is thrown straight up from ground level at time $t = 0$. Its height, in metres, after $t$ seconds is $h = f(t)$, where\n$$f(t) = 20t - 5t^2$$\n\n(a) Ball B is thrown in exactly the same way, but 2 seconds later. Explain why the height of ball B is $h = f(t - 2)$, not $f(t + 2)$, and find the time at which ball B lands.\n(b) Ball C is thrown in the same way at $t = 0$, but from a window 15 m above the ground. Write its height in terms of $f$, and find, to 3 significant figures, the time at which it lands.\n(c) A video of ball A is replayed in slow motion at half speed. At replay time $T$ seconds, the height shown is $h = f\\left(\\frac{T}{2}\\right)$. Describe the transformation of the graph of $h = f(t)$, and state the replay time at which ball A lands.",
+  "hint": "For (a), ask: when ball B has been in the air for 1 second, what is $t$? For (c), $f(\\text{input})$ is zero when the input is 0 or 4.",
+  "answer": "(a) At time $t$, ball B has been in the air for $t - 2$ seconds; it lands at $t = 6$ s. (b) $h = f(t) + 15$; lands at $t = 2 + \\sqrt{7} \\approx 4.65$ s (c) Stretch parallel to the $t$-axis, scale factor 2; lands at $T = 8$ s.",
+  "solution": "Ball A lands when $20t - 5t^2 = 0$, i.e. $5t(4 - t) = 0$, so at $t = 4$ s.\n\n**(a)** Ball B starts at $t = 2$. At time $t$ it has been in flight for $(t - 2)$ seconds, so its height is the height ball A had after $(t - 2)$ seconds: $h = f(t - 2)$. Its graph is A's graph translated 2 units **right** (later), by $\\begin{pmatrix} 2 \\\\ 0 \\end{pmatrix}$. ($f(t + 2)$ would move the graph left, i.e. 2 seconds **earlier**.)\n\nB lands when $t - 2 = 4$, so at $t = 6$ s.\n\n**(b)** C has the same motion but every height is 15 m more: $h = f(t) + 15$, a translation by $\\begin{pmatrix} 0 \\\\ 15 \\end{pmatrix}$.\n\nIt lands when $20t - 5t^2 + 15 = 0$:\n$$t^2 - 4t - 3 = 0 \\Rightarrow t = \\frac{4 \\pm \\sqrt{16 + 12}}{2} = 2 \\pm \\sqrt{7}$$\nTime must be positive: $t = 2 + \\sqrt{7} = 4.645\\ldots \\approx 4.65$ s.\n\n**(c)** $h = f\\left(\\frac{T}{2}\\right)$ is of the form $f(ax)$ with $a = \\frac{1}{2}$, so it is a **stretch parallel to the $t$-axis, scale factor 2** (everything takes twice as long on the replay; the heights are unchanged).\n\nA lands when $\\frac{T}{2} = 4$, so $T = 8$ s on the replay.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q16",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "On Monday, the temperature in a town $h$ hours after midnight was $T = f(h)$ °C. The highest temperature on Monday was 18 °C at 14:00 and the lowest was 6 °C at 05:00.\n\nOn Tuesday, the temperature was given by $T = f(h - 2) + 3$.\n\n(a) Describe, in words, how Tuesday's temperatures compare with Monday's.\n(b) Find the highest temperature on Tuesday and the time at which it occurred.\n(c) Find the lowest temperature on Tuesday and the time at which it occurred.",
+  "hint": "$f(h - 2)$: does everything happen 2 hours earlier or later? Check: when is $h - 2 = 14$?",
+  "answer": "(a) Tuesday's pattern was the same as Monday's but every temperature was 3 °C higher and everything happened 2 hours later. (b) 21 °C at 16:00 (c) 9 °C at 07:00",
+  "solution": "**(a)** $f(h - 2)$: inside the bracket, so it affects the time, the opposite way to the sign: the graph moves 2 hours to the **right**, i.e. everything happens **2 hours later**. $+3$ outside: every temperature is **3 °C higher**. Overall a translation by $\\begin{pmatrix} 2 \\\\ 3 \\end{pmatrix}$.\n\n**(b)** Monday's maximum point is $(14, 18)$. On Tuesday we need $h - 2 = 14$, so $h = 16$, and $T = 18 + 3 = 21$.\nHighest: **21 °C at 16:00**.\n\n**(c)** Monday's minimum point is $(5, 6) \\to (5 + 2, 6 + 3) = (7, 9)$.\nLowest: **9 °C at 07:00**.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q17",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The curve $y = f(x)$ has exactly one turning point, a maximum at $(3, 5)$.\n\n(a) Find the coordinates of the turning point of $y = 4 - 2f(x + 1)$, and state whether it is a maximum or a minimum.\n(b) Find the coordinates of the turning point of $y = f(2x - 6)$.\n(c) Tom says, \"$y = f(2x - 6)$ is a stretch parallel to the $x$-axis with scale factor $\\frac{1}{2}$, followed by a translation of 6 units to the right.\" Show that Tom is wrong, and correct his statement.",
+  "hint": "For (a), write $4 - 2f(x + 1)$ as $-2f(x + 1) + 4$ and apply the inside change, then the outside changes in order. For (b), solve $2x - 6 = 3$.",
+  "answer": "(a) $(2, -6)$, a minimum (b) $(4.5, 5)$ (c) Tom's order gives $(3, 5) \\to (1.5, 5) \\to (7.5, 5)$, not $(4.5, 5)$. Correct: stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$, then translate 3 units right (or translate 6 right first, then stretch with scale factor $\\frac{1}{2}$).",
+  "solution": "**(a)** $y = -2f(x + 1) + 4$.\n\n* Inside: $x + 1 = 3 \\Rightarrow x = 2$ (translation 1 left).\n* Outside, in order of operations: multiply $f$'s value by $-2$, then add 4: $5 \\to -10 \\to -6$.\n\nTurning point $(2, -6)$. Multiplying by a **negative** number reflects the curve in the $x$-axis (as well as stretching it), so the maximum becomes a **minimum**.\n\n**(b)** The turning point is where the input to $f$ is 3:\n$$2x - 6 = 3 \\Rightarrow x = 4.5$$\nThe $y$-value is unchanged: $(4.5, 5)$.\n\n**(c)** Following Tom's description: the stretch gives $(3, 5) \\to (1.5, 5)$, then 6 right gives $(7.5, 5)$. But (b) shows the turning point is at $(4.5, 5)$, so Tom is wrong.\n\nWrite $f(2x - 6) = f\\big(2(x - 3)\\big)$. Correct descriptions:\n* stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$, **then** translation 3 units right: $(3, 5) \\to (1.5, 5) \\to (4.5, 5)$ ✓; or\n* translation 6 units right, **then** the stretch: $(3, 5) \\to (9, 5) \\to (4.5, 5)$ ✓.\n\nThe stretch halves every $x$-coordinate, including the size of any translation done before it.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-graph-transformations-q18",
+  "topicId": "alg-graph-transformations",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "(a) Show that the curve $y = (2x)^2$ can be obtained from $y = x^2$ either by a stretch parallel to the $x$-axis or by a stretch parallel to the $y$-axis, and give the scale factor of each.\n(b) Prove that, for any constant $a > 0$, the stretch of $y = x^2$ parallel to the $x$-axis with scale factor $\\frac{1}{a}$ is the same as a stretch parallel to the $y$-axis, and find its scale factor in terms of $a$.\n(c) Is the same true for $y = x^3$? Is it true for $y = x^2 + 1$? Justify your answers.",
+  "hint": "Expand $(ax)^2$. For $y = x^2 + 1$, think about what each type of stretch does to the point where the curve meets the $y$-axis.",
+  "answer": "(a) $y = (2x)^2 = f(2x)$: stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$; also $= 4x^2 = 4f(x)$: stretch parallel to the $y$-axis, scale factor 4. (b) $(ax)^2 = a^2x^2$, so it is a stretch parallel to the $y$-axis with scale factor $a^2$. (c) Yes for $y = x^3$ (scale factor $a^3$). No for $y = x^2 + 1$ unless $a = 1$: a horizontal stretch keeps $(0, 1)$ fixed but a vertical stretch with scale factor $k$ sends it to $(0, k)$, forcing $k = 1$, and then $a^2x^2 + 1 = x^2 + 1$ forces $a = 1$.",
+  "solution": "**(a)** Let $f(x) = x^2$.\n* $y = (2x)^2 = f(2x)$: a stretch parallel to the $x$-axis, scale factor $\\frac{1}{2}$.\n* $y = (2x)^2 = 4x^2 = 4f(x)$: a stretch parallel to the $y$-axis, scale factor 4.\n\nBoth describe the same curve. (Check a point: $(2, 4)$ on $y = x^2$ goes to $(1, 4)$ under the first and $(2, 16)$ under the second; both lie on $y = 4x^2$.)\n\n**(b)** The stretch parallel to the $x$-axis with scale factor $\\frac{1}{a}$ gives $y = f(ax) = (ax)^2 = a^2x^2 = a^2 f(x)$.\nThis is a stretch parallel to the $y$-axis with scale factor $a^2$. $\\blacksquare$\n\n**(c)** For $g(x) = x^3$: $g(ax) = a^3x^3 = a^3 g(x)$, so yes, it equals a vertical stretch with scale factor $a^3$.\n\nFor $h(x) = x^2 + 1$: the horizontal stretch gives $h(ax) = a^2x^2 + 1$. A vertical stretch with scale factor $k$ gives $kh(x) = kx^2 + k$.\nAt $x = 0$ the first is $1$ and the second is $k$, so we would need $k = 1$. Then $a^2x^2 + 1 = x^2 + 1$ for all $x$ forces $a^2 = 1$, i.e. $a = 1$, which is no change at all.\n\nGeometrically: a stretch parallel to the $x$-axis never moves points on the $y$-axis, so $(0, 1)$ stays put; a vertical stretch with scale factor $k \\ne 1$ moves it to $(0, k)$. So for $y = x^2 + 1$ no genuine horizontal stretch equals a vertical stretch. It worked for $x^2$ and $x^3$ because $(0, 0)$ is fixed by both kinds of stretch.",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ }
+]

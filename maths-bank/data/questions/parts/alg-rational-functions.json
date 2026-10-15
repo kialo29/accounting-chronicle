@@ -1,0 +1,272 @@
+[
+ {
+  "id": "alg-rational-functions-q01",
+  "topicId": "alg-rational-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For $f(x) = \\dfrac{3}{x - 2}$, find\n\n(a) the vertical asymptote\n\n(b) the horizontal asymptote\n\n(c) any intercepts.",
+  "hint": "A vertical asymptote is where the denominator is zero (and the numerator is not). Compare the degrees of the numerator and denominator for the horizontal asymptote.",
+  "answer": "(a) $x = 2$ (b) $y = 0$ (c) $y$-intercept $\\left(0, -\\frac{3}{2}\\right)$; no $x$-intercept",
+  "solution": "**(a)** $x - 2 = 0$ when $x = 2$, and the numerator is $3 \\ne 0$ there, so the vertical asymptote is $x = 2$.\n\n**(b)** The numerator has degree 0 and the denominator has degree 1. The denominator's degree is higher, so the horizontal asymptote is $y = 0$.\n\n**(c)** $f(0) = \\frac{3}{-2} = -\\frac{3}{2}$, so the $y$-intercept is $\\left(0, -\\frac{3}{2}\\right)$. The numerator $3$ is never zero, so there is no $x$-intercept.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q02",
+  "topicId": "alg-rational-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For $f(x) = \\dfrac{3x}{x - 2}$, find\n\n(a) the vertical asymptote\n\n(b) the horizontal asymptote\n\n(c) any intercepts.",
+  "hint": "The numerator and denominator now have the same degree.",
+  "answer": "(a) $x = 2$ (b) $y = 3$ (c) $(0, 0)$ is both the $x$- and $y$-intercept",
+  "solution": "**What changed:** the numerator $3$ became $3x$, so its degree went from 0 to 1.\n\n**(a)** The denominator is zero at $x = 2$, where the numerator is $6 \\ne 0$: vertical asymptote $x = 2$ (unchanged).\n\n**(b)** The degrees are now equal (1 and 1), so the horizontal asymptote is the ratio of leading coefficients: $y = \\frac{3}{1} = 3$.\n\n**(c)** $3x = 0$ when $x = 0$, and $f(0) = 0$: the graph passes through the origin $(0, 0)$.\n\nRaising the numerator's degree to match the denominator lifted the horizontal asymptote from $y = 0$ to $y = 3$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q03",
+  "topicId": "alg-rational-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For $f(x) = \\dfrac{3x^2}{x - 2}$, find\n\n(a) the vertical asymptote\n\n(b) the horizontal or slant asymptote\n\n(c) any intercepts.",
+  "hint": "The numerator's degree is now one more than the denominator's. Divide (synthetic division with $c = 2$ works).",
+  "answer": "(a) $x = 2$ (b) No horizontal asymptote; slant asymptote $y = 3x + 6$ (c) $(0, 0)$",
+  "solution": "**What changed:** the numerator became $3x^2$, so its degree (2) is now one more than the denominator's (1).\n\n**(a)** Vertical asymptote $x = 2$ (numerator $12 \\ne 0$ there).\n\n**(b)** There is no horizontal asymptote. Divide $3x^2 + 0x + 0$ by $x - 2$:\n$$\\begin{array}{r|rrr} 2 & 3 & 0 & 0 \\\\ & & 6 & 12 \\\\ \\hline & 3 & 6 & 12 \\end{array}$$\nSo $f(x) = 3x + 6 + \\frac{12}{x - 2}$. As $x \\to \\pm\\infty$, $\\frac{12}{x - 2} \\to 0$, so the slant asymptote is $y = 3x + 6$.\n\n**(c)** $3x^2 = 0$ only at $x = 0$: the only intercept is $(0, 0)$.",
+  "linkedTopicIds": [
+   "alg-synthetic-division"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q04",
+  "topicId": "alg-rational-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For $f(x) = \\dfrac{3x^2 - 6x}{x - 2}$, find any vertical asymptotes, holes, and horizontal or slant asymptotes, and describe the graph.",
+  "hint": "Factor the numerator before doing anything else.",
+  "answer": "No vertical asymptote; hole at $(2, 6)$; no horizontal or slant asymptote. The graph is the line $y = 3x$ with an open circle at $(2, 6)$.",
+  "solution": "**What changed:** the numerator gained a $-6x$ term, and now $3x^2 - 6x = 3x(x - 2)$ shares the factor $x - 2$ with the denominator.\n$$f(x) = \\frac{3x(x - 2)}{x - 2} = 3x, \\quad x \\ne 2$$\n\n- The factor $x - 2$ cancels, so $x = 2$ gives a **hole**, not a vertical asymptote. Its $y$-value comes from the simplified function: $3(2) = 6$. Hole at $(2, 6)$.\n- No factor is left in the denominator, so there is **no vertical asymptote**.\n- The simplified function is the line $y = 3x$ itself, so there is no separate horizontal or slant asymptote.\n\nThe graph is the line $y = 3x$ with an open circle at $(2, 6)$.",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q05",
+  "topicId": "alg-rational-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Let $f(x) = \\dfrac{x^2 - x - 6}{x^2 - 9}$. Find\n\n(a) any holes\n\n(b) the vertical asymptote(s)\n\n(c) the horizontal asymptote\n\n(d) the $x$- and $y$-intercepts.",
+  "hint": "Factor the numerator and the denominator first. A factor that cancels gives a hole; use the simplified function for its $y$-value.",
+  "answer": "(a) Hole at $\\left(3, \\frac{5}{6}\\right)$ (b) $x = -3$ (c) $y = 1$ (d) $x$-intercept $(-2, 0)$, $y$-intercept $\\left(0, \\frac{2}{3}\\right)$",
+  "solution": "Factor:\n$$f(x) = \\frac{(x - 3)(x + 2)}{(x - 3)(x + 3)} = \\frac{x + 2}{x + 3}, \\quad x \\ne 3$$\n\n**(a)** $x - 3$ cancels, so there is a hole at $x = 3$. Using the simplified function: $\\frac{3 + 2}{3 + 3} = \\frac{5}{6}$. Hole at $\\left(3, \\frac{5}{6}\\right)$.\n\n**(b)** The remaining denominator factor $x + 3$ gives the vertical asymptote $x = -3$. ($x = 3$ is **not** a vertical asymptote.)\n\n**(c)** Equal degrees (2 and 2), leading coefficients 1 and 1: $y = 1$.\n\n**(d)** $x$-intercept: $x + 2 = 0 \\Rightarrow (-2, 0)$. $y$-intercept: $f(0) = \\frac{-6}{-9} = \\frac{2}{3}$, so $\\left(0, \\frac{2}{3}\\right)$.",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q06",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "problem-solving",
+  "question": "The graph of $y = \\dfrac{ax + b}{x + c}$ is shown, where $a$, $b$ and $c$ are constants. The asymptotes are shown as dashed lines. The graph passes through $(1, 0)$, $(0, -2)$ and $(-3, 4)$.\n\n(a) Find $a$, $b$ and $c$.\n\n(b) Use your equation to check that the graph passes through $(-3, 4)$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 267 300\" width=\"267\" height=\"300\"><line x1=\"30\" y1=\"274\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"48.6\" y1=\"274\" x2=\"48.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"67.1\" y1=\"274\" x2=\"67.1\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"85.7\" y1=\"274\" x2=\"85.7\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"104.3\" y1=\"274\" x2=\"104.3\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"122.9\" y1=\"274\" x2=\"122.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"141.4\" y1=\"274\" x2=\"141.4\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"160\" y1=\"274\" x2=\"160\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"178.6\" y1=\"274\" x2=\"178.6\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"197.1\" y1=\"274\" x2=\"197.1\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"215.7\" y1=\"274\" x2=\"215.7\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"234.3\" y1=\"274\" x2=\"234.3\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"252.9\" y1=\"274\" x2=\"252.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"274\" x2=\"252.9\" y2=\"274\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"255.4\" x2=\"252.9\" y2=\"255.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"236.9\" x2=\"252.9\" y2=\"236.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"218.3\" x2=\"252.9\" y2=\"218.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"199.7\" x2=\"252.9\" y2=\"199.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"181.1\" x2=\"252.9\" y2=\"181.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"162.6\" x2=\"252.9\" y2=\"162.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"144\" x2=\"252.9\" y2=\"144\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"125.4\" x2=\"252.9\" y2=\"125.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"106.9\" x2=\"252.9\" y2=\"106.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"88.3\" x2=\"252.9\" y2=\"88.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"69.7\" x2=\"252.9\" y2=\"69.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"51.1\" x2=\"252.9\" y2=\"51.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"32.6\" x2=\"252.9\" y2=\"32.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"252.9\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"162.6\" x2=\"252.9\" y2=\"162.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"160\" y1=\"274\" x2=\"160\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"159.6\" x2=\"30\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−7</text><line x1=\"48.6\" y1=\"159.6\" x2=\"48.6\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"48.6\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−6</text><line x1=\"67.1\" y1=\"159.6\" x2=\"67.1\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"67.1\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−5</text><line x1=\"85.7\" y1=\"159.6\" x2=\"85.7\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"85.7\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"104.3\" y1=\"159.6\" x2=\"104.3\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"104.3\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"122.9\" y1=\"159.6\" x2=\"122.9\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"122.9\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"141.4\" y1=\"159.6\" x2=\"141.4\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"141.4\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"178.6\" y1=\"159.6\" x2=\"178.6\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"178.6\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"197.1\" y1=\"159.6\" x2=\"197.1\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"197.1\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"215.7\" y1=\"159.6\" x2=\"215.7\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"215.7\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"234.3\" y1=\"159.6\" x2=\"234.3\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"234.3\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"252.9\" y1=\"159.6\" x2=\"252.9\" y2=\"165.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"252.9\" y=\"177.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"157\" y1=\"274\" x2=\"163\" y2=\"274\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"278\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−6</text><line x1=\"157\" y1=\"255.4\" x2=\"163\" y2=\"255.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"259.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−5</text><line x1=\"157\" y1=\"236.9\" x2=\"163\" y2=\"236.9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"240.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"157\" y1=\"218.3\" x2=\"163\" y2=\"218.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"222.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"157\" y1=\"199.7\" x2=\"163\" y2=\"199.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"203.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"157\" y1=\"181.1\" x2=\"163\" y2=\"181.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"185.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"157\" y1=\"144\" x2=\"163\" y2=\"144\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"148\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"157\" y1=\"125.4\" x2=\"163\" y2=\"125.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"129.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"157\" y1=\"106.9\" x2=\"163\" y2=\"106.9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"110.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"157\" y1=\"88.3\" x2=\"163\" y2=\"88.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"92.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"157\" y1=\"69.7\" x2=\"163\" y2=\"69.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"73.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"157\" y1=\"51.1\" x2=\"163\" y2=\"51.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"55.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"157\" y1=\"32.6\" x2=\"163\" y2=\"32.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"36.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">7</text><line x1=\"157\" y1=\"14\" x2=\"163\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"155\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><text x=\"155\" y=\"176.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"254.9\" y=\"157.6\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"166\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"141.4\" y1=\"274\" x2=\"141.4\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><line x1=\"30\" y1=\"125.4\" x2=\"252.9\" y2=\"125.4\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M30 113 L41.3 111.7 L55.1 109.5 L66.4 107.1 L76 104.4 L84.6 101.2 L91.6 97.8 L98.7 93.2 L103.7 88.9 L109.3 82.6 L113.2 76.6 L116.8 69.5 L120.3 60.3 L123.5 48.7 L125.3 40.1 L127.4 27.4 L129 14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M150.7 274 L152.4 250.8 L154.2 233.1 L156.3 218 L158.8 204.7 L162 192.3 L165.2 183.3 L169.1 175.2 L173.7 168.1 L179.7 161.4 L184.7 157.3 L192.1 152.6 L200.3 148.8 L212.5 144.8 L224.4 142 L237.1 139.8 L252.9 137.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"178.6\" cy=\"162.6\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"160\" cy=\"199.7\" r=\"3.5\" fill=\"currentColor\"/><circle cx=\"104.3\" cy=\"88.3\" r=\"3.5\" fill=\"currentColor\"/></svg>",
+  "hint": "Read the equations of the two asymptotes from the graph. The vertical asymptote tells you $c$; the horizontal asymptote tells you $a$. Then use the $x$-intercept.",
+  "answer": "(a) $a = 2$, $b = -2$, $c = 1$, so $y = \\dfrac{2x - 2}{x + 1}$ (b) $\\frac{2(-3) - 2}{-3 + 1} = \\frac{-8}{-2} = 4$ ✓",
+  "solution": "**(a)** From the graph, the vertical asymptote is $x = -1$ and the horizontal asymptote is $y = 2$.\n\n- Vertical asymptote $x = -1$: the denominator $x + c$ is zero at $x = -1$, so $c = 1$.\n- Horizontal asymptote: the degrees are equal, so $y = \\frac{a}{1} = a$. Hence $a = 2$.\n- $x$-intercept $(1, 0)$: the numerator is zero at $x = 1$, so $2(1) + b = 0$, giving $b = -2$.\n\n$$y = \\frac{2x - 2}{x + 1}$$\n\nCheck with the $y$-intercept: $\\frac{-2}{1} = -2$. ✓\n\n**(b)** At $x = -3$: $y = \\frac{-6 - 2}{-2} = \\frac{-8}{-2} = 4$. ✓",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q07",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Lucas is analyzing $f(x) = \\dfrac{x^2 + x - 2}{x^2 - 1}$. His work is shown below.\n\nLine 1: $f(x) = \\dfrac{(x + 2)(x - 1)}{(x - 1)(x + 1)}$\n\nLine 2: The factor $x - 1$ cancels, so there is a hole at $x = 1$ and a vertical asymptote at $x = -1$.\n\nLine 3: $f(1) = \\dfrac{1 + 1 - 2}{1 - 1} = \\dfrac{0}{0}$, so the hole is at $(1, 0)$.\n\nLine 4: The horizontal asymptote is $y = 1$.\n\nFind Lucas's error, explain it, and correct it.",
+  "hint": "What does $\\frac{0}{0}$ tell you? Which version of the function should you use to find the height of the hole?",
+  "answer": "Line 3 is wrong: $\\frac{0}{0}$ is undefined, not $0$. Use the simplified function $\\frac{x + 2}{x + 1}$: the hole is at $\\left(1, \\frac{3}{2}\\right)$.",
+  "solution": "**Error (Line 3):** Substituting into the **original** function gives $\\frac{0}{0}$, which is undefined; it does not mean the $y$-value is $0$. That is exactly why there is a hole.\n\n**Correction:** The hole's height is the value the graph approaches, found from the **simplified** function:\n$$f(x) = \\frac{x + 2}{x + 1}, \\quad x \\ne 1$$\n$$\\frac{1 + 2}{1 + 1} = \\frac{3}{2}$$\nSo the hole is an open circle at $\\left(1, \\frac{3}{2}\\right)$.\n\nLines 1, 2 and 4 are correct: vertical asymptote $x = -1$, horizontal asymptote $y = \\frac{1}{1} = 1$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q08",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ruby is finding the asymptotes of $f(x) = \\dfrac{6x^2 - 5x + 2}{3x^2 + 4}$. Her work is shown below.\n\nLine 1: $3x^2 + 4 > 0$ for every $x$, so there is no vertical asymptote.\n\nLine 2: For the horizontal asymptote I divide the constant terms: $y = \\dfrac{2}{4} = \\dfrac{1}{2}$.\n\nFind Ruby's error, explain it, and correct it. Support your answer by evaluating $f(100)$.",
+  "hint": "When $|x|$ is very large, which terms of the numerator and denominator matter most?",
+  "answer": "Line 2 is wrong: use the **leading** coefficients, $y = \\frac{6}{3} = 2$. ($f(100) = \\frac{59502}{30004} \\approx 1.98$.)",
+  "solution": "**Line 1 is correct:** $3x^2 \\ge 0$, so $3x^2 + 4 \\ge 4$ is never zero, and there is no vertical asymptote.\n\n**Error (Line 2):** Ruby used the constant terms. The constants matter near $x = 0$ (they give $f(0) = \\frac{1}{2}$, the $y$-intercept), but for large $|x|$ the **highest-power** terms dominate:\n$$f(x) = \\frac{6x^2 - 5x + 2}{3x^2 + 4} \\approx \\frac{6x^2}{3x^2} = 2$$\n\nEqual degrees, so the horizontal asymptote is the ratio of leading coefficients: $y = \\frac{6}{3} = 2$.\n\n**Check:**\n$$f(100) = \\frac{60000 - 500 + 2}{30000 + 4} = \\frac{59502}{30004} \\approx 1.98$$\nwhich is close to 2, not $\\frac{1}{2}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q09",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The graph of $f(x) = \\dfrac{x^2 + 2x - 3}{x^2 + 1}$ is shown, together with its horizontal asymptote $y = 1$.\n\nOmar says: \"The graph can never cross the line $y = 1$, because $y = 1$ is an asymptote.\"\n\n(a) Is Omar correct? Justify your answer algebraically.\n\n(b) Explain why the graph of a rational function can never cross a **vertical** asymptote.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><line x1=\"30\" y1=\"204\" x2=\"30\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"48.5\" y1=\"204\" x2=\"48.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"67\" y1=\"204\" x2=\"67\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"85.5\" y1=\"204\" x2=\"85.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"104\" y1=\"204\" x2=\"104\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"122.5\" y1=\"204\" x2=\"122.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"141\" y1=\"204\" x2=\"141\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"159.5\" y1=\"204\" x2=\"159.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"178\" y1=\"204\" x2=\"178\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"196.5\" y1=\"204\" x2=\"196.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"215\" y1=\"204\" x2=\"215\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"233.5\" y1=\"204\" x2=\"233.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"252\" y1=\"204\" x2=\"252\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"270.5\" y1=\"204\" x2=\"270.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"289\" y1=\"204\" x2=\"289\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"307.5\" y1=\"204\" x2=\"307.5\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"326\" y1=\"204\" x2=\"326\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"204\" x2=\"326\" y2=\"204\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"176.9\" x2=\"326\" y2=\"176.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"149.7\" x2=\"326\" y2=\"149.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"122.6\" x2=\"326\" y2=\"122.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"95.4\" x2=\"326\" y2=\"95.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"68.3\" x2=\"326\" y2=\"68.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"41.1\" x2=\"326\" y2=\"41.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"14\" x2=\"326\" y2=\"14\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"30\" y1=\"95.4\" x2=\"326\" y2=\"95.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"178\" y1=\"204\" x2=\"178\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"30\" y1=\"92.4\" x2=\"30\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"30\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−8</text><line x1=\"67\" y1=\"92.4\" x2=\"67\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"67\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−6</text><line x1=\"104\" y1=\"92.4\" x2=\"104\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"104\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"141\" y1=\"92.4\" x2=\"141\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"141\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"215\" y1=\"92.4\" x2=\"215\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"215\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"252\" y1=\"92.4\" x2=\"252\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"252\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"289\" y1=\"92.4\" x2=\"289\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"289\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"326\" y1=\"92.4\" x2=\"326\" y2=\"98.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"326\" y=\"110.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"175\" y1=\"204\" x2=\"181\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"208\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"175\" y1=\"176.9\" x2=\"181\" y2=\"176.9\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"180.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"175\" y1=\"149.7\" x2=\"181\" y2=\"149.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"153.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"175\" y1=\"122.6\" x2=\"181\" y2=\"122.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"126.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"175\" y1=\"68.3\" x2=\"181\" y2=\"68.3\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"72.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"175\" y1=\"41.1\" x2=\"181\" y2=\"41.1\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"45.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"175\" y1=\"14\" x2=\"181\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.3\"/><text x=\"173\" y=\"18\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"173\" y=\"109.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"328\" y=\"90.4\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"184\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"30\" y1=\"68.3\" x2=\"326\" y2=\"68.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><path d=\"M30 76.6 L64.8 79.7 L79.6 81.8 L93.3 84.5 L104 87.4 L114 91.1 L122.9 95.6 L128.4 99.3 L132.9 102.9 L139.2 109.4 L144 115.8 L147.7 121.8 L151.4 129 L156.2 140.4 L165 166.7 L169.1 177.7 L171.7 182.2 L173.6 183.3 L174.7 182.9 L176.2 181.2 L177.3 178.9 L179.5 171.9 L182.1 160.5 L190.9 115.6 L196.1 96.5 L198.3 90.4 L202.4 81.7 L207.2 74.8 L211.3 70.8 L216.8 67.3 L223.5 64.7 L231.3 63.1 L240.9 62.2 L265.7 61.9 L326 63.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><text x=\"33.7\" y=\"62.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = 1</text></svg>",
+  "hint": "Solve $f(x) = 1$. What does a horizontal asymptote actually describe?",
+  "answer": "(a) No. $f(x) = 1$ gives $x^2 + 2x - 3 = x^2 + 1$, so $x = 2$: the graph crosses $y = 1$ at $(2, 1)$. A horizontal asymptote describes only the end behavior. (b) At a vertical asymptote $x = a$ the function is undefined, so the graph has no point with $x = a$.",
+  "solution": "**(a)** Omar is **not** correct. Solve $f(x) = 1$:\n$$\\frac{x^2 + 2x - 3}{x^2 + 1} = 1 \\Rightarrow x^2 + 2x - 3 = x^2 + 1 \\Rightarrow 2x = 4 \\Rightarrow x = 2$$\n$f(2) = \\frac{4 + 4 - 3}{4 + 1} = \\frac{5}{5} = 1$, so the graph crosses the asymptote at $(2, 1)$.\n\nA horizontal asymptote only describes what happens as $x \\to \\pm\\infty$ (end behavior). For moderate $x$ the graph can be on either side of it. Here the graph crosses at $x = 2$, rises above $y = 1$, and then approaches $y = 1$ from above as $x \\to \\infty$.\n\n**(b)** A vertical asymptote $x = a$ occurs where the (simplified) denominator is zero, so $f(a)$ is **undefined**. The graph has no point at all on the line $x = a$, so it can never cross it; it can only approach it as $f(x) \\to \\pm\\infty$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q10",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Let $f(x) = \\dfrac{2x^2 - 3x - 1}{x - 2}$.\n\n(a) Find the vertical asymptote.\n\n(b) Find the slant asymptote.\n\n(c) Find the exact $x$-intercepts and the $y$-intercept.",
+  "hint": "Use synthetic division with $c = 2$ to write $f(x) = (\\text{linear}) + \\frac{r}{x - 2}$. Use the quadratic formula for the $x$-intercepts.",
+  "answer": "(a) $x = 2$ (b) $y = 2x + 1$ (c) $x$-intercepts $\\left(\\frac{3 + \\sqrt{17}}{4}, 0\\right)$ and $\\left(\\frac{3 - \\sqrt{17}}{4}, 0\\right)$; $y$-intercept $\\left(0, \\frac{1}{2}\\right)$",
+  "solution": "**(a)** At $x = 2$ the denominator is $0$ and the numerator is $8 - 6 - 1 = 1 \\ne 0$, so the vertical asymptote is $x = 2$.\n\n**(b)** The numerator's degree is one more than the denominator's, so divide:\n$$\\begin{array}{r|rrr} 2 & 2 & -3 & -1 \\\\ & & 4 & 2 \\\\ \\hline & 2 & 1 & 1 \\end{array}$$\n$$f(x) = 2x + 1 + \\frac{1}{x - 2}$$\nAs $x \\to \\pm\\infty$, $\\frac{1}{x - 2} \\to 0$, so the slant asymptote is $y = 2x + 1$.\n\n**(c)** $x$-intercepts: $2x^2 - 3x - 1 = 0$,\n$$x = \\frac{3 \\pm \\sqrt{9 + 8}}{4} = \\frac{3 \\pm \\sqrt{17}}{4}$$\n$y$-intercept: $f(0) = \\frac{-1}{-2} = \\frac{1}{2}$.",
+  "linkedTopicIds": [
+   "alg-synthetic-division",
+   "alg-quadratic-formula"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q11",
+  "topicId": "alg-rational-functions",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A small company makes skateboards. It has fixed costs of \\$12,000 per month, and each skateboard costs \\$35 in materials and labor. The average cost per skateboard when $x$ boards are made in a month is\n$$A(x) = \\frac{12000 + 35x}{x}$$\n\n(a) Find the average cost per board when 100 boards are made.\n\n(b) How many boards must be made for the average cost to fall to \\$50?\n\n(c) Find the horizontal asymptote of $A$ and explain what it means in this context.",
+  "hint": "For (b), set $A(x) = 50$ and multiply both sides by $x$. For (c), compare degrees.",
+  "answer": "(a) \\$155 (b) 800 boards (c) $y = 35$: as more boards are made, the average cost per board gets closer and closer to \\$35 (the cost of materials and labor), but never reaches it.",
+  "solution": "**(a)** $A(100) = \\frac{12000 + 3500}{100} = \\frac{15500}{100} = 155$, so \\$155 per board.\n\n**(b)** Solve\n$$\\frac{12000 + 35x}{x} = 50 \\Rightarrow 12000 + 35x = 50x \\Rightarrow 15x = 12000 \\Rightarrow x = 800$$\n800 boards.\n\n**(c)** Equal degrees, leading coefficients 35 and 1: the horizontal asymptote is $y = 35$.\n\nWriting $A(x) = 35 + \\frac{12000}{x}$ shows why: the fixed \\$12,000 is shared among more and more boards, so its share per board shrinks toward 0. The average cost approaches \\$35 per board (the cost of the materials and labor) but is always a little more.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q12",
+  "topicId": "alg-rational-functions",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A tank holds 20 gallons of pure water. Starting at $t = 0$, salt water containing 0.5 lb of salt per gallon is pumped in at 4 gallons per minute. Nothing flows out, and the tank can hold 120 gallons.\n\n(a) Show that the concentration of salt in the tank after $t$ minutes is\n$$C(t) = \\frac{t}{10 + 2t} \\text{ lb/gal}$$\n\n(b) Find the concentration after 5 minutes.\n\n(c) When will the concentration reach 0.4 lb/gal? Will this happen before the tank is full?\n\n(d) Find the horizontal asymptote of $C$ and explain its meaning.",
+  "hint": "Concentration = (pounds of salt) ÷ (gallons of liquid). After $t$ minutes, $4t$ gallons of salt water have been added.",
+  "answer": "(a) Salt $= 0.5(4t) = 2t$ lb, volume $= 20 + 4t$ gal, so $C = \\frac{2t}{20 + 4t} = \\frac{t}{10 + 2t}$ (b) $0.25$ lb/gal (c) at $t = 20$ minutes, when the tank holds 100 gallons, so yes (d) $C = 0.5$: the concentration approaches that of the incoming salt water (0.5 lb/gal).",
+  "solution": "**(a)** After $t$ minutes, $4t$ gallons of salt water have been added, containing $0.5 \\times 4t = 2t$ lb of salt. The volume is $20 + 4t$ gallons. So\n$$C(t) = \\frac{2t}{20 + 4t} = \\frac{t}{10 + 2t}$$\n\n**(b)** $C(5) = \\frac{5}{10 + 10} = \\frac{5}{20} = 0.25$ lb/gal.\n\n**(c)** Solve $\\frac{t}{10 + 2t} = 0.4$:\n$$t = 0.4(10 + 2t) = 4 + 0.8t \\Rightarrow 0.2t = 4 \\Rightarrow t = 20 \\text{ minutes}$$\nThe volume is then $20 + 4(20) = 100$ gallons, less than 120, so yes, it happens before the tank is full (the tank fills at $t = 25$).\n\n**(d)** Equal degrees, leading coefficients 1 and 2: the horizontal asymptote is $C = \\frac{1}{2}$. As more salt water is added, the original pure water becomes a smaller and smaller part of the mixture, so the concentration approaches 0.5 lb/gal (the concentration of the incoming salt water) without ever reaching it. (In practice the tank is full after 25 minutes, when $C = \\frac{25}{60} \\approx 0.42$ lb/gal.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q13",
+  "topicId": "alg-rational-functions",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 7,
+  "calculator": false,
+  "question": "Let $f(x) = \\dfrac{x^3 - x}{x^2 - 3x + 2}$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of the hole in the graph of $f$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write an equation for the vertical asymptote of the graph of $f$. Describe the behavior of $f(x)$ as $x$ approaches this value from the left and from the right. Give a reason for your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find an equation for the slant asymptote of the graph of $f$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find all the $x$-intercepts of the graph of $f$.",
+    "marks": 1
+   }
+  ],
+  "hint": "Factor completely: $x^3 - x = x(x - 1)(x + 1)$. After canceling, divide the simplified numerator by the denominator.",
+  "answer": "(a) $(1, -2)$ (b) $x = 2$; $f(x) \\to -\\infty$ as $x \\to 2^-$ and $f(x) \\to +\\infty$ as $x \\to 2^+$ (c) $y = x + 3$ (d) $(0, 0)$ and $(-1, 0)$",
+  "solution": "Factor:\n$$f(x) = \\frac{x(x - 1)(x + 1)}{(x - 1)(x - 2)} = \\frac{x(x + 1)}{x - 2}, \\quad x \\ne 1$$\n\n**(a)** $x - 1$ cancels, so there is a hole at $x = 1$. **M1** The simplified function gives $\\frac{1 \\times 2}{1 - 2} = -2$, so the hole is at $(1, -2)$. **A1**\n\n**(b)** Vertical asymptote $x = 2$ (the simplified denominator is zero, numerator $2 \\times 3 = 6 \\ne 0$). **B1**\n\nNear $x = 2$ the numerator is close to $6 > 0$. For $x$ slightly less than 2, $x - 2 < 0$, so $f(x) \\to -\\infty$; for $x$ slightly more than 2, $x - 2 > 0$, so $f(x) \\to +\\infty$. **B1**\n\n**(c)** Divide $x^2 + x$ by $x - 2$:\n$$\\begin{array}{r|rrr} 2 & 1 & 1 & 0 \\\\ & & 2 & 6 \\\\ \\hline & 1 & 3 & 6 \\end{array}$$\n**M1** $f(x) = x + 3 + \\frac{6}{x - 2}$ (for $x \\ne 1$), so the slant asymptote is $y = x + 3$. **A1**\n\n**(d)** The simplified numerator $x(x + 1)$ is zero at $x = 0$ and $x = -1$: intercepts $(0, 0)$ and $(-1, 0)$. ($x = 1$ is the hole, not an intercept.) **B1**",
+  "linkedTopicIds": [
+   "alg-synthetic-division"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q14",
+  "topicId": "alg-rational-functions",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Write an equation for a rational function $f$ whose graph has all of these features:\n\n- vertical asymptotes $x = -2$ and $x = 3$\n- horizontal asymptote $y = 2$\n- $x$-intercepts $(1, 0)$ and $(4, 0)$\n- a hole at $x = 0$.\n\nUse each linear factor only once. Then find the $y$-coordinate of the hole, and explain why the graph has no $y$-intercept.",
+  "hint": "Build the denominator from the vertical asymptotes and the numerator from the $x$-intercepts. A hole needs the **same** factor in both. The horizontal asymptote fixes the leading coefficient.",
+  "answer": "$f(x) = \\dfrac{2x(x - 1)(x - 4)}{x(x + 2)(x - 3)}$; hole at $\\left(0, -\\frac{4}{3}\\right)$; $f(0)$ is undefined, so there is no $y$-intercept.",
+  "solution": "- Vertical asymptotes $x = -2$, $x = 3$: the denominator contains $(x + 2)(x - 3)$.\n- $x$-intercepts at 1 and 4: the numerator contains $(x - 1)(x - 4)$.\n- Hole at $x = 0$: the factor $x$ appears in **both** numerator and denominator.\n- Numerator and denominator then both have degree 3, so the horizontal asymptote is the ratio of leading coefficients. To get $y = 2$, multiply the numerator by 2.\n\n$$f(x) = \\frac{2x(x - 1)(x - 4)}{x(x + 2)(x - 3)}$$\n\n**Hole:** use the simplified function $\\frac{2(x - 1)(x - 4)}{(x + 2)(x - 3)}$ at $x = 0$:\n$$\\frac{2(-1)(-4)}{(2)(-3)} = \\frac{8}{-6} = -\\frac{4}{3}$$\nThe hole is at $\\left(0, -\\frac{4}{3}\\right)$.\n\n**No $y$-intercept:** $x = 0$ is not in the domain of $f$ (the original denominator is zero there), so the graph has no point on the $y$-axis; the only thing there is the open circle at $\\left(0, -\\frac{4}{3}\\right)$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-rational-functions-q15",
+  "topicId": "alg-rational-functions",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $f(x) = \\dfrac{2x + 1}{x - 3}$.\n\n(a) State the vertical and horizontal asymptotes of the graph of $f$.\n\n(b) Find $f^{-1}(x)$.\n\n(c) State the asymptotes of the graph of $f^{-1}$, and explain the connection with your answer to (a) using a transformation of the graph.",
+  "hint": "For the inverse, write $y = \\frac{2x + 1}{x - 3}$, swap $x$ and $y$, and solve for $y$ (multiply out and collect the $y$ terms).",
+  "answer": "(a) $x = 3$ and $y = 2$ (b) $f^{-1}(x) = \\dfrac{3x + 1}{x - 2}$ (c) $x = 2$ and $y = 3$; the graph of $f^{-1}$ is the reflection of the graph of $f$ in $y = x$, which swaps vertical and horizontal lines.",
+  "solution": "**(a)** Vertical asymptote $x = 3$ (numerator $7 \\ne 0$ there). Equal degrees, so the horizontal asymptote is $y = \\frac{2}{1} = 2$.\n\n**(b)** Write $y = \\frac{2x + 1}{x - 3}$ and swap $x$ and $y$:\n$$x = \\frac{2y + 1}{y - 3}$$\n$$x(y - 3) = 2y + 1 \\Rightarrow xy - 3x = 2y + 1 \\Rightarrow xy - 2y = 3x + 1 \\Rightarrow y(x - 2) = 3x + 1$$\n$$f^{-1}(x) = \\frac{3x + 1}{x - 2}$$\n\n**(c)** $f^{-1}$ has vertical asymptote $x = 2$ and horizontal asymptote $y = \\frac{3}{1} = 3$.\n\nThe graph of $f^{-1}$ is the reflection of the graph of $f$ in the line $y = x$. Reflecting swaps the coordinates $(a, b) \\to (b, a)$, so the vertical line $x = 3$ becomes the horizontal line $y = 3$, and the horizontal line $y = 2$ becomes the vertical line $x = 2$. Equivalently, the domain of $f$ ($x \\ne 3$) becomes the range of $f^{-1}$, and the range of $f$ ($y \\ne 2$) becomes the domain of $f^{-1}$.",
+  "linkedTopicIds": [
+   "alg-composite-inverse-functions",
+   "alg-graph-transformations"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q16",
+  "topicId": "alg-rational-functions",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $f(x) = \\dfrac{x}{x^2 + 1}$.\n\n(a) State the horizontal asymptote of the graph of $f$, and show that the graph crosses it.\n\n(b) By writing $y = \\dfrac{x}{x^2 + 1}$ as a quadratic equation in $x$ and using the discriminant, find the range of $f$.\n\n(c) Hence state the coordinates of the highest and lowest points on the graph.",
+  "hint": "In (b), multiply both sides by $x^2 + 1$ to get $yx^2 - x + y = 0$. A value $y$ is in the range exactly when this has a real solution $x$. Treat $y = 0$ separately.",
+  "answer": "(a) $y = 0$; $f(0) = 0$, so the graph crosses it at the origin. (b) $-\\frac{1}{2} \\le f(x) \\le \\frac{1}{2}$ (c) Highest point $\\left(1, \\frac{1}{2}\\right)$, lowest point $\\left(-1, -\\frac{1}{2}\\right)$",
+  "solution": "**(a)** The denominator has higher degree (2 vs 1), so the horizontal asymptote is $y = 0$. But $f(0) = \\frac{0}{1} = 0$, so the graph passes through the origin, crossing its asymptote. (A horizontal asymptote only describes end behavior.)\n\n**(b)** $y$ is in the range when $y = \\frac{x}{x^2 + 1}$ has a real solution $x$:\n$$y(x^2 + 1) = x \\Rightarrow yx^2 - x + y = 0$$\n\n- If $y = 0$: $x = 0$ works, so $0$ is in the range.\n- If $y \\ne 0$: this is a quadratic in $x$, with real solutions exactly when the discriminant is $\\ge 0$:\n$$(-1)^2 - 4(y)(y) \\ge 0 \\Rightarrow 1 - 4y^2 \\ge 0 \\Rightarrow y^2 \\le \\frac{1}{4} \\Rightarrow -\\frac{1}{2} \\le y \\le \\frac{1}{2}$$\n\nSo the range is $-\\frac{1}{2} \\le f(x) \\le \\frac{1}{2}$.\n\n**(c)** At $y = \\frac{1}{2}$ the discriminant is $0$ and the double root is $x = \\frac{1}{2y} = 1$. At $y = -\\frac{1}{2}$, $x = -1$. Check: $f(1) = \\frac{1}{2}$, $f(-1) = -\\frac{1}{2}$.\n\nHighest point $\\left(1, \\frac{1}{2}\\right)$, lowest point $\\left(-1, -\\frac{1}{2}\\right)$.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula",
+   "alg-functions-basics"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "alg-rational-functions-q17",
+  "topicId": "alg-rational-functions",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Consider the family of functions\n$$f(x) = \\frac{x^2 + kx + 6}{x - 2}$$\nwhere $k$ is a constant.\n\n(a) Find the value of $k$ for which the graph has **no** vertical asymptote. Describe the graph for this value of $k$.\n\n(b) For all other values of $k$, show that the slant asymptote is $y = x + k + 2$.\n\n(c) Prove that, for these values of $k$, the graph never crosses its slant asymptote.\n\n(d) Explain why every graph in the family has the same $y$-intercept.",
+  "hint": "(a) The only way to avoid a vertical asymptote at $x = 2$ is for $x - 2$ to cancel. (b) Use synthetic division with $c = 2$, keeping $k$ as a letter.",
+  "answer": "(a) $k = -5$; the graph is the line $y = x - 3$ with a hole at $(2, -1)$. (b) $f(x) = x + k + 2 + \\frac{2k + 10}{x - 2}$ (c) $f(x) - (x + k + 2) = \\frac{2k + 10}{x - 2} \\ne 0$ when $k \\ne -5$ (d) $f(0) = \\frac{6}{-2} = -3$ for every $k$.",
+  "solution": "**(a)** The denominator is zero only at $x = 2$. There is no vertical asymptote only if $x - 2$ also divides the numerator, i.e. the numerator is $0$ at $x = 2$:\n$$4 + 2k + 6 = 0 \\Rightarrow k = -5$$\nThen $f(x) = \\frac{x^2 - 5x + 6}{x - 2} = \\frac{(x - 2)(x - 3)}{x - 2} = x - 3$, $x \\ne 2$. The graph is the line $y = x - 3$ with a hole at $(2, -1)$.\n\n**(b)** Synthetic division with $c = 2$:\n$$\\begin{array}{r|rrr} 2 & 1 & k & 6 \\\\ & & 2 & 2k + 4 \\\\ \\hline & 1 & k + 2 & 2k + 10 \\end{array}$$\nSo\n$$f(x) = x + (k + 2) + \\frac{2k + 10}{x - 2}$$\nWhen $k \\ne -5$ the remainder $2k + 10 \\ne 0$, and $\\frac{2k + 10}{x - 2} \\to 0$ as $x \\to \\pm\\infty$, so the slant asymptote is $y = x + k + 2$.\n\n**(c)** The graph meets the asymptote where $f(x) = x + k + 2$, i.e. where $\\frac{2k + 10}{x - 2} = 0$. A fraction is zero only when its numerator is zero, and $2k + 10 \\ne 0$. So there are no such points: the graph never crosses its slant asymptote.\n\n**(d)** $f(0) = \\frac{0 + 0 + 6}{0 - 2} = -3$ for every $k$, because $k$ multiplies $x$, which is $0$ on the $y$-axis. So every graph passes through $(0, -3)$.",
+  "linkedTopicIds": [
+   "alg-synthetic-division"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]

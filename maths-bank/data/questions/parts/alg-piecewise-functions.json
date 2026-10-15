@@ -1,0 +1,285 @@
+[
+ {
+  "id": "alg-piecewise-functions-q01",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "The function $f$ is defined by\n$$f(x) = \\begin{cases} x + 3, & x < 2 \\\\ 2x, & x \\ge 2 \\end{cases}$$\nFind $f(5)$.",
+  "hint": "Decide which interval $5$ is in, then use only that rule.",
+  "answer": "$f(5) = 10$",
+  "solution": "$5 \\ge 2$, so use the second rule, $2x$:\n$$f(5) = 2(5) = 10$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q02",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [],
+  "question": "For the same function\n$$f(x) = \\begin{cases} x + 3, & x < 2 \\\\ 2x, & x \\ge 2 \\end{cases}$$\nfind $f(-1)$.",
+  "hint": "Is $-1$ less than $2$, or greater than or equal to $2$?",
+  "answer": "$f(-1) = 2$",
+  "solution": "**What changed:** the input is now $-1$, which is in the other interval.\n\n$-1 < 2$, so use the first rule, $x + 3$:\n$$f(-1) = -1 + 3 = 2$$\n\n(Using the wrong rule would give $2(-1) = -2$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q03",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "For the same function\n$$f(x) = \\begin{cases} x + 3, & x < 2 \\\\ 2x, & x \\ge 2 \\end{cases}$$\nfind $f(2)$.",
+  "hint": "$2$ is the boundary. Which inequality does $x = 2$ satisfy: $x < 2$ or $x \\ge 2$?",
+  "answer": "$f(2) = 4$",
+  "solution": "**What changed:** the input is now the boundary value $2$.\n\n$2 < 2$ is false, but $2 \\ge 2$ is true, so use $2x$:\n$$f(2) = 2(2) = 4$$\n\n(The first rule would give $2 + 3 = 5$; that value is approached from the left but never reached, so it is an open dot on the graph at $(2, 5)$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q04",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Now the inequality signs are changed:\n$$g(x) = \\begin{cases} x + 3, & x \\le 2 \\\\ 2x, & x > 2 \\end{cases}$$\nFind $g(2)$.",
+  "hint": "Which piece now includes $x = 2$?",
+  "answer": "$g(2) = 5$",
+  "solution": "**What changed:** the rules are the same as $f$, but the boundary $x = 2$ now belongs to the **first** piece ($x \\le 2$).\n\n$2 \\le 2$ is true, so use $x + 3$:\n$$g(2) = 2 + 3 = 5$$\n\nCompare: $f(2) = 4$ but $g(2) = 5$. Moving the \"or equal to\" from one piece to the other changes the value at the boundary only; for every other input $f$ and $g$ agree. On the graph, the closed and open dots at $x = 2$ swap.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q05",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [],
+  "question": "The greatest integer function $\\lfloor x \\rfloor$ gives the greatest integer less than or equal to $x$.\n\nEvaluate:\n**(a)** $\\lfloor 4.7 \\rfloor$ **(b)** $\\lfloor 9 \\rfloor$ **(c)** $\\lfloor 0.3 \\rfloor$ **(d)** $\\lfloor 12.99 \\rfloor$",
+  "hint": "Look for the integer at or just to the left of the number on a number line.",
+  "answer": "(a) $4$ (b) $9$ (c) $0$ (d) $12$",
+  "solution": "**(a)** The integers at or below $4.7$ are $4, 3, 2, \\ldots$; the greatest is $4$.\n\n**(b)** $9$ is already an integer, and $9 \\le 9$, so $\\lfloor 9 \\rfloor = 9$.\n\n**(c)** $0 \\le 0.3 < 1$, so $\\lfloor 0.3 \\rfloor = 0$.\n\n**(d)** $12 \\le 12.99 < 13$, so $\\lfloor 12.99 \\rfloor = 12$. (It does not round to the nearest integer: $12.99$ goes **down** to $12$, not up to $13$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q06",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The function $h$ is defined by\n$$h(x) = \\begin{cases} -x, & x < 0 \\\\ x^2, & 0 \\le x \\le 3 \\\\ 9, & x > 3 \\end{cases}$$\nFind $h(-4)$, $h(0)$, $h(3)$ and $h(7)$.",
+  "hint": "For each input, check the three intervals in turn. Watch the boundary values $0$ and $3$.",
+  "answer": "$h(-4) = 4$, $h(0) = 0$, $h(3) = 9$, $h(7) = 9$",
+  "solution": "* $x = -4$: $-4 < 0$, so $h(-4) = -(-4) = 4$.\n* $x = 0$: $0 < 0$ is false; $0 \\le 0 \\le 3$ is true, so $h(0) = 0^2 = 0$.\n* $x = 3$: $0 \\le 3 \\le 3$ is true, so $h(3) = 3^2 = 9$.\n* $x = 7$: $7 > 3$, so $h(7) = 9$ (a constant piece: every input above $3$ gives $9$).\n\nNote that the middle and last pieces both give $9$ at $x = 3$, so this graph has no jump at $x = 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q07",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Diego evaluates $\\lfloor -2.4 \\rfloor + \\lfloor 3.6 \\rfloor$. His work is shown.\n\n$$\\lfloor -2.4 \\rfloor + \\lfloor 3.6 \\rfloor = -2 + 3 = 1$$\n\nIdentify Diego's error, explain why it is wrong, and find the correct value.",
+  "hint": "Draw a number line. Is $-2$ less than or equal to $-2.4$?",
+  "answer": "$\\lfloor -2.4 \\rfloor = -3$, not $-2$ (he rounded toward zero). Correct value: $-3 + 3 = 0$",
+  "solution": "$\\lfloor 3.6 \\rfloor = 3$ is correct.\n\n**The error is $\\lfloor -2.4 \\rfloor = -2$.** Diego has dropped the decimal part, which rounds toward zero. But $\\lfloor x \\rfloor$ is the greatest integer **less than or equal to** $x$. On the number line, $-2$ is to the right of $-2.4$, so $-2 > -2.4$: it is too big.\n\nThe integers less than or equal to $-2.4$ are $-3, -4, -5, \\ldots$; the greatest is $-3$. So $\\lfloor -2.4 \\rfloor = -3$.\n\n$$\\lfloor -2.4 \\rfloor + \\lfloor 3.6 \\rfloor = -3 + 3 = 0$$\n\nFor negative non-integers, the greatest integer function always moves **away** from zero.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q08",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Ravi graphs\n$$f(x) = \\begin{cases} x + 1, & x < 1 \\\\ 4 - x, & x \\ge 1 \\end{cases}$$\nHis graph is shown.\n\nDescribe the mistake in Ravi's graph, explain why it is wrong, and describe how to correct it.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 286 238\" width=\"286\" height=\"238\"><line x1=\"30\" y1=\"212\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"60\" y1=\"212\" x2=\"60\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"90\" y1=\"212\" x2=\"90\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"120\" y1=\"212\" x2=\"120\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"150\" y1=\"212\" x2=\"150\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"212\" x2=\"180\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"210\" y1=\"212\" x2=\"210\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"240\" y1=\"212\" x2=\"240\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"270\" y1=\"212\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"212\" x2=\"270\" y2=\"212\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"184\" x2=\"270\" y2=\"184\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"156\" x2=\"270\" y2=\"156\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"128\" x2=\"270\" y2=\"128\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"100\" x2=\"270\" y2=\"100\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"72\" x2=\"270\" y2=\"72\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"44\" x2=\"270\" y2=\"44\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"270\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"156\" x2=\"278\" y2=\"156\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M278,156 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"120\" y1=\"212\" x2=\"120\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M120,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"278\" y=\"149\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"127\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"30\" y1=\"153\" x2=\"30\" y2=\"159\" stroke=\"currentColor\"/><text x=\"30\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"60\" y1=\"153\" x2=\"60\" y2=\"159\" stroke=\"currentColor\"/><text x=\"60\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"90\" y1=\"153\" x2=\"90\" y2=\"159\" stroke=\"currentColor\"/><text x=\"90\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"150\" y1=\"153\" x2=\"150\" y2=\"159\" stroke=\"currentColor\"/><text x=\"150\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"180\" y1=\"153\" x2=\"180\" y2=\"159\" stroke=\"currentColor\"/><text x=\"180\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"210\" y1=\"153\" x2=\"210\" y2=\"159\" stroke=\"currentColor\"/><text x=\"210\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"240\" y1=\"153\" x2=\"240\" y2=\"159\" stroke=\"currentColor\"/><text x=\"240\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"270\" y1=\"153\" x2=\"270\" y2=\"159\" stroke=\"currentColor\"/><text x=\"270\" y=\"171\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"117\" y1=\"212\" x2=\"123\" y2=\"212\" stroke=\"currentColor\"/><text x=\"114\" y=\"216\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"117\" y1=\"184\" x2=\"123\" y2=\"184\" stroke=\"currentColor\"/><text x=\"114\" y=\"188\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"117\" y1=\"128\" x2=\"123\" y2=\"128\" stroke=\"currentColor\"/><text x=\"114\" y=\"132\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"117\" y1=\"100\" x2=\"123\" y2=\"100\" stroke=\"currentColor\"/><text x=\"114\" y=\"104\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"117\" y1=\"72\" x2=\"123\" y2=\"72\" stroke=\"currentColor\"/><text x=\"114\" y=\"76\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"117\" y1=\"44\" x2=\"123\" y2=\"44\" stroke=\"currentColor\"/><text x=\"114\" y=\"48\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"117\" y1=\"16\" x2=\"123\" y2=\"16\" stroke=\"currentColor\"/><text x=\"114\" y=\"20\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"30\" y1=\"212\" x2=\"150\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"153.29\" y1=\"75.07\" x2=\"270\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"100\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"150\" cy=\"72\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg>",
+  "hint": "Find $f(1)$. Which of the two points at $x = 1$ should be on the graph?",
+  "answer": "The dots at $x = 1$ are swapped: $(1, 2)$ should be open (since $x < 1$ excludes $1$) and $(1, 3)$ should be closed (since $x \\ge 1$ includes $1$, and $f(1) = 3$).",
+  "solution": "Both lines are drawn over the correct intervals, with the correct slopes and positions.\n\n**The mistake is the dots at $x = 1$.** Ravi has a closed dot at $(1, 2)$ and an open dot at $(1, 3)$.\n\n* The first piece, $x + 1$, is for $x < 1$. The inequality is strict, so $x = 1$ is **not** included: the end of this piece at $(1, 1 + 1) = (1, 2)$ must be an **open** dot.\n* The second piece, $4 - x$, is for $x \\ge 1$, which **includes** $x = 1$: its endpoint $(1, 4 - 1) = (1, 3)$ must be a **closed** dot.\n\nCheck: $f(1) = 4 - 1 = 3$, so the graph must contain $(1, 3)$ and not $(1, 2)$. Ravi's graph would say $f(1) = 2$.\n\nCorrect graph: open dot at $(1, 2)$, closed dot at $(1, 3)$, lines unchanged.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q09",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 3,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "The graph of a piecewise function $f$ is shown. Each piece is part of a straight line, and the graph continues in the same way beyond the edges of the grid.\n\nWrite a rule for $f(x)$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 346 242\" width=\"346\" height=\"242\"><line x1=\"30\" y1=\"216\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"55\" y1=\"216\" x2=\"55\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"80\" y1=\"216\" x2=\"80\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"105\" y1=\"216\" x2=\"105\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"130\" y1=\"216\" x2=\"130\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"155\" y1=\"216\" x2=\"155\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"216\" x2=\"180\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"205\" y1=\"216\" x2=\"205\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"230\" y1=\"216\" x2=\"230\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"255\" y1=\"216\" x2=\"255\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"280\" y1=\"216\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"305\" y1=\"216\" x2=\"305\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"330\" y1=\"216\" x2=\"330\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"216\" x2=\"330\" y2=\"216\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"191\" x2=\"330\" y2=\"191\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"166\" x2=\"330\" y2=\"166\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"330\" y2=\"141\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"116\" x2=\"330\" y2=\"116\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"91\" x2=\"330\" y2=\"91\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"66\" x2=\"330\" y2=\"66\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"41\" x2=\"330\" y2=\"41\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"330\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"141\" x2=\"338\" y2=\"141\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M338,141 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"155\" y1=\"216\" x2=\"155\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M155,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"338\" y=\"134\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"162\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><line x1=\"30\" y1=\"138\" x2=\"30\" y2=\"144\" stroke=\"currentColor\"/><text x=\"30\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−5</text><line x1=\"55\" y1=\"138\" x2=\"55\" y2=\"144\" stroke=\"currentColor\"/><text x=\"55\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"80\" y1=\"138\" x2=\"80\" y2=\"144\" stroke=\"currentColor\"/><text x=\"80\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"105\" y1=\"138\" x2=\"105\" y2=\"144\" stroke=\"currentColor\"/><text x=\"105\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"130\" y1=\"138\" x2=\"130\" y2=\"144\" stroke=\"currentColor\"/><text x=\"130\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"180\" y1=\"138\" x2=\"180\" y2=\"144\" stroke=\"currentColor\"/><text x=\"180\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"205\" y1=\"138\" x2=\"205\" y2=\"144\" stroke=\"currentColor\"/><text x=\"205\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"230\" y1=\"138\" x2=\"230\" y2=\"144\" stroke=\"currentColor\"/><text x=\"230\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"255\" y1=\"138\" x2=\"255\" y2=\"144\" stroke=\"currentColor\"/><text x=\"255\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"280\" y1=\"138\" x2=\"280\" y2=\"144\" stroke=\"currentColor\"/><text x=\"280\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"305\" y1=\"138\" x2=\"305\" y2=\"144\" stroke=\"currentColor\"/><text x=\"305\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"330\" y1=\"138\" x2=\"330\" y2=\"144\" stroke=\"currentColor\"/><text x=\"330\" y=\"156\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7</text><line x1=\"152\" y1=\"216\" x2=\"158\" y2=\"216\" stroke=\"currentColor\"/><text x=\"149\" y=\"220\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−3</text><line x1=\"152\" y1=\"191\" x2=\"158\" y2=\"191\" stroke=\"currentColor\"/><text x=\"149\" y=\"195\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"152\" y1=\"166\" x2=\"158\" y2=\"166\" stroke=\"currentColor\"/><text x=\"149\" y=\"170\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"152\" y1=\"116\" x2=\"158\" y2=\"116\" stroke=\"currentColor\"/><text x=\"149\" y=\"120\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"152\" y1=\"91\" x2=\"158\" y2=\"91\" stroke=\"currentColor\"/><text x=\"149\" y=\"95\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"152\" y1=\"66\" x2=\"158\" y2=\"66\" stroke=\"currentColor\"/><text x=\"149\" y=\"70\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"152\" y1=\"41\" x2=\"158\" y2=\"41\" stroke=\"currentColor\"/><text x=\"149\" y=\"45\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"152\" y1=\"16\" x2=\"158\" y2=\"16\" stroke=\"currentColor\"/><text x=\"149\" y=\"20\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><line x1=\"30\" y1=\"116\" x2=\"125.5\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"130\" cy=\"116\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"130\" y1=\"191\" x2=\"226.82\" y2=\"94.18\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"130\" cy=\"191\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"230\" cy=\"91\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"230\" y1=\"66\" x2=\"330\" y2=\"166\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"66\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg>",
+  "hint": "There are three pieces. For each, find the slope and $y$-intercept, then use the open and closed dots to decide where each interval starts and stops.",
+  "answer": "$f(x) = \\begin{cases} 1, & x < -1 \\\\ x - 1, & -1 \\le x < 3 \\\\ 6 - x, & x \\ge 3 \\end{cases}$",
+  "solution": "**Left piece:** horizontal at $y = 1$, ending with an **open** dot at $(-1, 1)$, so it is $f(x) = 1$ for $x < -1$.\n\n**Middle piece:** from the closed dot $(-1, -2)$ to the open dot $(3, 2)$. Slope $= \\dfrac{2 - (-2)}{3 - (-1)} = \\dfrac{4}{4} = 1$. Using $(-1, -2)$: $y = x + b \\Rightarrow -2 = -1 + b \\Rightarrow b = -1$. So $f(x) = x - 1$ for $-1 \\le x < 3$ (closed at $-1$, open at $3$).\n\n**Right piece:** starts with a closed dot at $(3, 3)$ and passes through $(6, 0)$. Slope $= \\dfrac{0 - 3}{6 - 3} = -1$; $y = -x + b \\Rightarrow 3 = -3 + b \\Rightarrow b = 6$. So $f(x) = 6 - x$ for $x \\ge 3$.\n\n$$f(x) = \\begin{cases} 1, & x < -1 \\\\ x - 1, & -1 \\le x < 3 \\\\ 6 - x, & x \\ge 3 \\end{cases}$$\n\nCheck: $f(-1) = -2$ and $f(3) = 3$ match the closed dots.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q10",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ],
+  "question": "A parking garage charges \\$4 for the first hour or part of an hour, and \\$3 for each additional hour or part of an hour. The graph shows the cost $C$ dollars of parking for $t$ hours, for $0 < t \\le 5$.\n\n**(a)** Find the cost of parking for 30 minutes, for 2.5 hours, and for exactly 3 hours.\n**(b)** Explain why the graph has a closed dot at $(3, 10)$ and an open dot at $(3, 13)$.\n**(c)** The garage has a daily maximum charge of \\$20. For which parking times does the maximum apply?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 321 258\" width=\"321\" height=\"258\"><line x1=\"30\" y1=\"232\" x2=\"30\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"80\" y1=\"232\" x2=\"80\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"130\" y1=\"232\" x2=\"130\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"180\" y1=\"232\" x2=\"180\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"230\" y1=\"232\" x2=\"230\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"280\" y1=\"232\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"232\" x2=\"305\" y2=\"232\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"220\" x2=\"305\" y2=\"220\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"208\" x2=\"305\" y2=\"208\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"196\" x2=\"305\" y2=\"196\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"184\" x2=\"305\" y2=\"184\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"172\" x2=\"305\" y2=\"172\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"160\" x2=\"305\" y2=\"160\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"148\" x2=\"305\" y2=\"148\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"136\" x2=\"305\" y2=\"136\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"124\" x2=\"305\" y2=\"124\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"112\" x2=\"305\" y2=\"112\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"100\" x2=\"305\" y2=\"100\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"88\" x2=\"305\" y2=\"88\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"76\" x2=\"305\" y2=\"76\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"64\" x2=\"305\" y2=\"64\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"52\" x2=\"305\" y2=\"52\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"40\" x2=\"305\" y2=\"40\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"28\" x2=\"305\" y2=\"28\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"16\" x2=\"305\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"30\" y1=\"232\" x2=\"313\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M313,232 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><line x1=\"30\" y1=\"232\" x2=\"30\" y2=\"8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M30,8 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"313\" y=\"225\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">t (hours)</text><text x=\"37\" y=\"17\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">C ($)</text><line x1=\"80\" y1=\"229\" x2=\"80\" y2=\"235\" stroke=\"currentColor\"/><text x=\"80\" y=\"247\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"130\" y1=\"229\" x2=\"130\" y2=\"235\" stroke=\"currentColor\"/><text x=\"130\" y=\"247\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"180\" y1=\"229\" x2=\"180\" y2=\"235\" stroke=\"currentColor\"/><text x=\"180\" y=\"247\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"230\" y1=\"229\" x2=\"230\" y2=\"235\" stroke=\"currentColor\"/><text x=\"230\" y=\"247\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"280\" y1=\"229\" x2=\"280\" y2=\"235\" stroke=\"currentColor\"/><text x=\"280\" y=\"247\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"27\" y1=\"208\" x2=\"33\" y2=\"208\" stroke=\"currentColor\"/><text x=\"24\" y=\"212\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"27\" y1=\"184\" x2=\"33\" y2=\"184\" stroke=\"currentColor\"/><text x=\"24\" y=\"188\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"27\" y1=\"160\" x2=\"33\" y2=\"160\" stroke=\"currentColor\"/><text x=\"24\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><line x1=\"27\" y1=\"136\" x2=\"33\" y2=\"136\" stroke=\"currentColor\"/><text x=\"24\" y=\"140\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">8</text><line x1=\"27\" y1=\"112\" x2=\"33\" y2=\"112\" stroke=\"currentColor\"/><text x=\"24\" y=\"116\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">10</text><line x1=\"27\" y1=\"88\" x2=\"33\" y2=\"88\" stroke=\"currentColor\"/><text x=\"24\" y=\"92\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">12</text><line x1=\"27\" y1=\"64\" x2=\"33\" y2=\"64\" stroke=\"currentColor\"/><text x=\"24\" y=\"68\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">14</text><line x1=\"27\" y1=\"40\" x2=\"33\" y2=\"40\" stroke=\"currentColor\"/><text x=\"24\" y=\"44\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">16</text><line x1=\"27\" y1=\"16\" x2=\"33\" y2=\"16\" stroke=\"currentColor\"/><text x=\"24\" y=\"20\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">18</text><text x=\"24\" y=\"246\" font-size=\"11\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"34.5\" y1=\"184\" x2=\"80\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"30\" cy=\"184\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"80\" cy=\"184\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"84.5\" y1=\"148\" x2=\"130\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"148\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"130\" cy=\"148\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"134.5\" y1=\"112\" x2=\"180\" y2=\"112\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"130\" cy=\"112\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"180\" cy=\"112\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"184.5\" y1=\"76\" x2=\"230\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"180\" cy=\"76\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"230\" cy=\"76\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"234.5\" y1=\"40\" x2=\"280\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"230\" cy=\"40\" r=\"3.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><circle cx=\"280\" cy=\"40\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\"/></svg>",
+  "hint": "A part of an hour is charged as a whole hour. Count how many hours you pay for in each case.",
+  "answer": "(a) \\$4, \\$10, \\$10 (b) exactly 3 hours is charged as 3 hours (\\$10); any time just over 3 hours is charged as 4 hours (\\$13), but $t = 3$ itself is not (c) for any time over 6 hours, i.e. $t > 6$",
+  "solution": "**(a)**\n* 30 minutes = 0.5 hours: part of the first hour, so \\$4.\n* 2.5 hours: hours charged are 1st, 2nd and part of the 3rd, so 3 hours: $\\$4 + \\$3 + \\$3 = \\$10$.\n* Exactly 3 hours: still 3 hours charged: \\$10. (On the graph: the closed dot at $t = 3$ is at $C = 10$.)\n\n**(b)** The step for $2 < t \\le 3$ includes $t = 3$ (3 full hours cost \\$10), so its right end $(3, 10)$ is a **closed** dot. The next step, $3 < t \\le 4$, costs \\$13 but does **not** include $t = 3$, so its left end $(3, 13)$ is an **open** dot. A vertical line at $t = 3$ meets the graph only once, at \\$10, as a function must.\n\n**(c)** With $n$ hours charged, the cost is $4 + 3(n - 1)$.\n* $n = 6$: $\\$4 + \\$15 = \\$19$ (under \\$20)\n* $n = 7$: $\\$4 + \\$18 = \\$22$ (over \\$20, so the cap of \\$20 applies)\n\nSeven hours are charged whenever $6 < t \\le 7$, and anything longer costs even more before the cap. So the \\$20 maximum applies for **all times over 6 hours** ($t > 6$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q11",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "An electric company charges \\$0.12 per kilowatt-hour (kWh) for the first 500 kWh used in a month, and \\$0.18 per kWh for every kWh above 500.\n\n**(a)** Write a piecewise function for the monthly charge $C(k)$, in dollars, for $k$ kWh used.\n**(b)** Find the charge for a month in which 720 kWh is used.\n**(c)** One month, a customer is charged \\$114. How many kWh did they use?",
+  "hint": "For more than 500 kWh, the charge is the cost of the first 500 kWh plus the cost of the extra $k - 500$ kWh.",
+  "answer": "(a) $C(k) = \\begin{cases} 0.12k, & 0 \\le k \\le 500 \\\\ 60 + 0.18(k - 500), & k > 500 \\end{cases}$ (b) \\$99.60 (c) 800 kWh",
+  "solution": "**(a)** Up to 500 kWh: $C = 0.12k$. The first 500 kWh cost $\\$0.12 \\times 500 = \\$60$. Above 500 kWh, each extra kWh costs \\$0.18:\n$$C(k) = \\begin{cases} 0.12k, & 0 \\le k \\le 500 \\\\ 60 + 0.18(k - 500), & k > 500 \\end{cases}$$\n(The second rule simplifies to $0.18k - 30$.)\n\n**(b)** $720 > 500$, so use the second rule:\n$$C(720) = 60 + 0.18(220) = 60 + 39.60 = 99.60$$\nCharge: \\$99.60.\n\n**(c)** The most the first piece can give is \\$60, so a \\$114 charge must come from the second piece:\n$$60 + 0.18(k - 500) = 114 \\Rightarrow 0.18(k - 500) = 54 \\Rightarrow k - 500 = 300 \\Rightarrow k = 800$$\nThe customer used 800 kWh. (Check: $800 > 500$ ✓.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q12",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "misconceptionIds": [
+   "m1",
+   "m2",
+   "m4"
+  ],
+  "question": "The function $g$ is defined by\n$$g(x) = \\begin{cases} -x + 1, & x < 1 \\\\ 2x - 3, & x \\ge 1 \\end{cases}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $g(-2)$ and $g(1)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Describe how to graph $g$, stating the coordinates of any endpoints and whether each is an open or a closed dot.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "State the range of $g$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find all values of $x$ for which $g(x) = 3$.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "hint": "For (c), find the set of $y$-values each piece produces on its own interval, then combine them.",
+  "answer": "(a) $g(-2) = 3$, $g(1) = -1$ (b) $y = -x + 1$ for $x < 1$ ending in an open dot at $(1, 0)$; $y = 2x - 3$ for $x \\ge 1$ starting at a closed dot $(1, -1)$ (c) $y \\ge -1$ (d) $x = -2$ or $x = 3$",
+  "solution": "**(a)** $-2 < 1$: $g(-2) = -(-2) + 1 = 3$. **1 pt**\n$1 \\ge 1$: $g(1) = 2(1) - 3 = -1$. **1 pt**\n\n**(b)** Left piece: the line $y = -x + 1$ (slope $-1$) drawn only for $x < 1$, ending at an **open** dot at $(1, 0)$. **1 pt**\nRight piece: the line $y = 2x - 3$ (slope $2$) drawn only for $x \\ge 1$, starting at a **closed** dot at $(1, -1)$. **1 pt**\n\n**(c)** For $x < 1$, $-x + 1 > 0$, so the left piece gives all $y > 0$.\nFor $x \\ge 1$, $2x - 3 \\ge -1$, so the right piece gives all $y \\ge -1$. **1 pt**\nTogether: the range is $y \\ge -1$ (that is, $[-1, \\infty)$). **1 pt**\n\n**(d)** Left piece: $-x + 1 = 3 \\Rightarrow x = -2$, and $-2 < 1$ ✓, so it is valid.\nRight piece: $2x - 3 = 3 \\Rightarrow x = 3$, and $3 \\ge 1$ ✓, so it is valid. **1 pt**\n$x = -2$ or $x = 3$. **1 pt**\n\n(Each solution must be checked against its own piece's interval: a value outside the interval would have to be rejected.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q13",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "linkedTopicIds": [
+   "calc-continuity"
+  ],
+  "misconceptionIds": [],
+  "question": "The function $f$ is defined by\n$$f(x) = \\begin{cases} kx + 1, & x < 2 \\\\ x^2 - k, & x \\ge 2 \\end{cases}$$\nwhere $k$ is a constant.\n\n**(a)** Find the value of $k$ for which the graph of $f$ has no jump at $x = 2$ (it can be drawn without lifting your pencil).\n**(b)** For this value of $k$, solve $f(x) = 8$.",
+  "hint": "For no jump, the value the left piece approaches at $x = 2$ must equal $f(2)$ from the right piece.",
+  "answer": "(a) $k = 1$ (b) $x = 3$",
+  "solution": "**(a)** The left piece approaches $k(2) + 1 = 2k + 1$ as $x \\to 2$. The right piece gives $f(2) = 2^2 - k = 4 - k$. For no jump these must be equal:\n$$2k + 1 = 4 - k \\Rightarrow 3k = 3 \\Rightarrow k = 1$$\n\nCheck: both pieces give $3$ at $x = 2$.\n\n**(b)** With $k = 1$: $f(x) = x + 1$ for $x < 2$ and $x^2 - 1$ for $x \\ge 2$.\n\nLeft piece: $x + 1 = 8 \\Rightarrow x = 7$, but $7 < 2$ is false, so **reject** it.\n\nRight piece: $x^2 - 1 = 8 \\Rightarrow x^2 = 9 \\Rightarrow x = 3$ or $x = -3$. Only $x = 3$ satisfies $x \\ge 2$.\n\nSo $x = 3$ is the only solution. Check: $f(3) = 9 - 1 = 8$ ✓."
+ },
+ {
+  "id": "alg-piecewise-functions-q14",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-absolute-value"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Let $p(x) = |2x - 6| + x$.\n\n**(a)** Write $p(x)$ as a piecewise function with no absolute value signs.\n**(b)** Solve $p(x) = 9$.\n**(c)** State the minimum value of $p(x)$ and the value of $x$ where it occurs.",
+  "hint": "$|2x - 6| = 2x - 6$ when $2x - 6 \\ge 0$, and $|2x - 6| = -(2x - 6)$ when $2x - 6 < 0$.",
+  "answer": "(a) $p(x) = \\begin{cases} 6 - x, & x < 3 \\\\ 3x - 6, & x \\ge 3 \\end{cases}$ (b) $x = -3$ or $x = 5$ (c) minimum $3$ at $x = 3$",
+  "solution": "**(a)** $2x - 6 \\ge 0$ when $x \\ge 3$.\n* $x \\ge 3$: $|2x - 6| = 2x - 6$, so $p(x) = 2x - 6 + x = 3x - 6$.\n* $x < 3$: $|2x - 6| = -(2x - 6) = 6 - 2x$, so $p(x) = 6 - 2x + x = 6 - x$.\n$$p(x) = \\begin{cases} 6 - x, & x < 3 \\\\ 3x - 6, & x \\ge 3 \\end{cases}$$\n\n**(b)** Solve on each piece and check the interval:\n* $6 - x = 9 \\Rightarrow x = -3$; $-3 < 3$ ✓\n* $3x - 6 = 9 \\Rightarrow x = 5$; $5 \\ge 3$ ✓\n\nCheck: $p(-3) = |-12| - 3 = 9$ ✓, $p(5) = |4| + 5 = 9$ ✓.\n\n**(c)** The left piece has slope $-1$ (decreasing) and the right piece slope $3$ (increasing), and they meet at $x = 3$ where $p(3) = 0 + 3 = 3$. So the minimum value is $3$, at $x = 3$.\n\nEach rule applies only on its own interval: for example $6 - x$ would give $1$ at $x = 5$, but $p(5) = 9$, because $x = 5$ uses the other piece."
+ },
+ {
+  "id": "alg-piecewise-functions-q15",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-real-life-graphs",
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [],
+  "question": "A cyclist's velocity $v$ meters per second, $t$ seconds after starting, is\n$$v(t) = \\begin{cases} 3t, & 0 \\le t \\le 4 \\\\ 12, & 4 < t \\le 10 \\\\ 32 - 2t, & 10 < t \\le 16 \\end{cases}$$\n\n**(a)** Sketch the graph of $v$ and describe the motion in each of the three intervals.\n**(b)** The distance traveled is the area under the velocity–time graph. Find the total distance traveled in the 16 seconds.\n**(c)** Find the exact time at which the cyclist has traveled 100 meters, and give it to the nearest hundredth of a second.",
+  "hint": "For (c), first find the distance traveled by $t = 4$ and by $t = 10$ to decide which piece you are in. In the last piece, the area is a trapezoid.",
+  "answer": "(a) speeds up steadily from 0 to 12 m/s, constant 12 m/s, slows steadily to 0 at $t = 16$ (b) 132 m (c) $t = 16 - 4\\sqrt{2} \\approx 10.34$ s",
+  "solution": "**(a)** The pieces join up: $v(4) = 12$ from both the first and second rules, and $32 - 2(10) = 12$, so the graph has no jumps.\n* $0 \\le t \\le 4$: a line from $(0, 0)$ to $(4, 12)$: speeding up steadily (acceleration $3\\ \\text{m/s}^2$).\n* $4 < t \\le 10$: horizontal at $v = 12$: constant speed.\n* $10 < t \\le 16$: a line from $(10, 12)$ down to $(16, 0)$: slowing steadily to a stop.\n\n**(b)** Areas:\n* triangle: $\\frac{1}{2}(4)(12) = 24$ m\n* rectangle: $6 \\times 12 = 72$ m\n* triangle: $\\frac{1}{2}(6)(12) = 36$ m\n\nTotal distance $= 24 + 72 + 36 = 132$ m.\n\n**(c)** By $t = 4$: 24 m. By $t = 10$: $24 + 72 = 96$ m. So 100 m is reached in the third piece, 4 m after $t = 10$.\n\nLet $s = t - 10$. Then $v = 12 - 2s$, and the area from $10$ to $10 + s$ is a trapezoid:\n$$\\frac{12 + (12 - 2s)}{2} \\times s = 12s - s^2$$\nSet this equal to 4:\n$$s^2 - 12s + 4 = 0 \\Rightarrow s = \\frac{12 \\pm \\sqrt{144 - 16}}{2} = 6 \\pm 4\\sqrt{2}$$\nWe need $0 < s \\le 6$, so $s = 6 - 4\\sqrt{2} \\approx 0.343$ (the other root, $11.66$, is outside the interval).\n\n$$t = 10 + 6 - 4\\sqrt{2} = 16 - 4\\sqrt{2} \\approx 10.34 \\text{ s}$$"
+ },
+ {
+  "id": "alg-piecewise-functions-q16",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "**(a)** Solve $\\lfloor 2x + 1 \\rfloor = 5$.\n**(b)** Solve $\\lfloor x \\rfloor + \\left\\lfloor x + \\frac{1}{2} \\right\\rfloor = 7$.\n**(c)** Find all $x$ with $\\lfloor x \\rfloor = -3$.",
+  "hint": "$\\lfloor u \\rfloor = n$ means $n \\le u < n + 1$. For (b), write $x = n + d$ where $n$ is an integer and $0 \\le d < 1$, and consider $d < \\frac{1}{2}$ and $d \\ge \\frac{1}{2}$ separately.",
+  "answer": "(a) $2 \\le x < 2.5$ (b) $3.5 \\le x < 4$ (c) $-3 \\le x < -2$",
+  "solution": "**(a)** $\\lfloor 2x + 1 \\rfloor = 5$ means $5 \\le 2x + 1 < 6$, so $4 \\le 2x < 5$:\n$$2 \\le x < 2.5$$\nCheck: $x = 2.4$ gives $\\lfloor 5.8 \\rfloor = 5$ ✓; $x = 2.5$ gives $\\lfloor 6 \\rfloor = 6$ ✗, so $2.5$ is excluded.\n\n**(b)** Write $x = n + d$, $n$ an integer, $0 \\le d < 1$. Then $\\lfloor x \\rfloor = n$.\n* If $0 \\le d < \\frac{1}{2}$: $x + \\frac{1}{2} = n + \\left(d + \\frac{1}{2}\\right)$ with $d + \\frac{1}{2} < 1$, so $\\left\\lfloor x + \\frac{1}{2} \\right\\rfloor = n$ and the sum is $2n$. But $2n = 7$ has no integer solution.\n* If $\\frac{1}{2} \\le d < 1$: $1 \\le d + \\frac{1}{2} < 1.5$, so $\\left\\lfloor x + \\frac{1}{2} \\right\\rfloor = n + 1$ and the sum is $2n + 1 = 7 \\Rightarrow n = 3$.\n\nSo $x = 3 + d$ with $\\frac{1}{2} \\le d < 1$:\n$$3.5 \\le x < 4$$\nCheck: $x = 3.7$: $3 + \\lfloor 4.2 \\rfloor = 7$ ✓; $x = 3.4$: $3 + 3 = 6$ ✗.\n\n**(c)** $\\lfloor x \\rfloor = -3$ means $-3 \\le x < -2$. (Not $-4 < x \\le -3$: for example $\\lfloor -2.5 \\rfloor = -3$, because $-3$ is the greatest integer **below** $-2.5$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q17",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 4,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Two students each write a rule using two pieces whose intervals overlap at $x = 3$:\n$$f(x) = \\begin{cases} x + 2, & x \\le 3 \\\\ 8 - x, & x \\ge 3 \\end{cases} \\qquad g(x) = \\begin{cases} x + 2, & x \\le 3 \\\\ 9 - x, & x \\ge 3 \\end{cases}$$\nDecide whether each rule defines a function. Justify your answers.",
+  "hint": "A function gives exactly one output for each input. What does each rule give at $x = 3$?",
+  "answer": "$f$ is a function (both pieces give $5$ at $x = 3$); $g$ is not (it gives both $5$ and $6$ at $x = 3$)",
+  "solution": "Every input other than $3$ is covered by exactly one piece, so the only question is what happens at $x = 3$, which is covered by **both** pieces in each rule.\n\n**$f$:** $3 + 2 = 5$ and $8 - 3 = 5$. Both pieces give the same output, so $f(3) = 5$ is well-defined. **$f$ is a function** (the overlap is harmless; the graph is two rays meeting at $(3, 5)$).\n\n**$g$:** $3 + 2 = 5$ but $9 - 3 = 6$. The input $3$ would have two outputs, $5$ and $6$. On the graph, the vertical line $x = 3$ would meet the graph at both $(3, 5)$ and $(3, 6)$, so it fails the vertical line test. **$g$ is not a function.**\n\nTo fix $g$, make the inequalities non-overlapping, e.g. $x \\le 3$ and $x > 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "alg-piecewise-functions-q18",
+  "topicId": "alg-piecewise-functions",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Lena is asked to graph\n$$h(x) = \\begin{cases} x + 3, & x < 0 \\\\ 1 - x, & x \\ge 0 \\end{cases}$$\nShe draws the whole line $y = x + 3$ and the whole line $y = 1 - x$ across the entire grid.\n\n**(a)** Explain why Lena's graph cannot be the graph of a function, using the input $x = 2$.\n**(b)** Describe the correct graph.",
+  "hint": "Which rule should be used when $x = 2$? How many points does Lena's graph have above $x = 2$?",
+  "answer": "(a) Above $x = 2$ her graph has two points, $(2, 5)$ and $(2, -1)$; only $(2, -1)$ is correct since $2 \\ge 0$ (b) the part of $y = x + 3$ for $x < 0$ only, open dot at $(0, 3)$; the part of $y = 1 - x$ for $x \\ge 0$ only, closed dot at $(0, 1)$",
+  "solution": "**(a)** At $x = 2$, Lena's graph has two points: $(2, 5)$ on $y = x + 3$ and $(2, -1)$ on $y = 1 - x$. A vertical line at $x = 2$ meets it twice, so it is not the graph of a function.\n\nThe rule $x + 3$ applies only when $x < 0$; since $2 \\ge 0$, $h(2) = 1 - 2 = -1$. The point $(2, 5)$ should not be there.\n\n**(b)** Draw each piece only on its own interval:\n* $y = x + 3$ to the **left** of the $y$-axis only, ending at an **open** dot at $(0, 3)$ (because $x < 0$ excludes $0$);\n* $y = 1 - x$ to the **right** of the $y$-axis only, starting at a **closed** dot at $(0, 1)$.\n\nNow every vertical line meets the graph exactly once.",
+  "linkedTopicIds": []
+ }
+]

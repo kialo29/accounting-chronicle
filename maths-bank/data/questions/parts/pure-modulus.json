@@ -1,0 +1,299 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $|x - 3| = 5$.",
+  "hint": "If the modulus of something is 5, the something itself is either $5$ or $-5$.",
+  "answer": "$x = 8$ or $x = -2$",
+  "solution": "$|x - 3| = 5$ means that $x - 3$ is 5 units away from 0, so\n$$x - 3 = 5 \\quad \\text{or} \\quad x - 3 = -5$$\n\n$$x = 8 \\quad \\text{or} \\quad x = -2$$\n\nAnother way to see it: $|x - 3|$ is the distance between $x$ and 3 on the number line. The two numbers exactly 5 away from 3 are $3 + 5 = 8$ and $3 - 5 = -2$.\n\nCheck: $|8 - 3| = 5$ ✓ and $|-2 - 3| = |-5| = 5$ ✓",
+  "id": "pure-modulus-q01",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Solve $|x - 3| < 5$.",
+  "hint": "$|x - 3|$ is the distance from $x$ to 3. Which numbers are less than 5 away from 3?",
+  "answer": "$-2 < x < 8$",
+  "solution": "**What changed:** the $=$ from the previous question has become $<$, so instead of two values we get a whole interval.\n\n$|x - 3| < 5$ means $x - 3$ lies strictly between $-5$ and $5$:\n$$-5 < x - 3 < 5$$\n\nAdd 3 throughout:\n$$-2 < x < 8$$\n\nOn a number line this is every number within 5 of 3 – a single interval between the two answers of $|x - 3| = 5$.\n\n(Writing \"$x < 8$ and $x < -2$\" is wrong: that would simplify to $x < -2$, which includes $x = -100$, and $|-103| = 103$ is not less than 5.)",
+  "id": "pure-modulus-q02",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Solve $|x - 3| > 5$.",
+  "hint": "Now you want the numbers whose distance from 3 is **more** than 5. Will that be one interval or two?",
+  "answer": "$x < -2$ or $x > 8$",
+  "solution": "**What changed:** $<$ has become $>$, so we now want the numbers **outside** the interval found in the previous question.\n\n$|x - 3| > 5$ means $x - 3 > 5$ or $x - 3 < -5$:\n$$x > 8 \\quad \\text{or} \\quad x < -2$$\n\nThese are two separate regions, so the answer must use \"or\". It cannot be written as one double inequality: \"$8 < x < -2$\" would need a number bigger than 8 and smaller than $-2$ at the same time.\n\nCheck $x = 10$: $|7| = 7 > 5$ ✓; $x = 0$: $|-3| = 3$, not $> 5$, so 0 is correctly excluded.",
+  "id": "pure-modulus-q03",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Solve $|2x - 3| > 5$.",
+  "hint": "Split into $2x - 3 > 5$ or $2x - 3 < -5$, then solve each linear inequality.",
+  "answer": "$x < -1$ or $x > 4$",
+  "solution": "**What changed:** the coefficient of $x$ is now 2. The first step is identical; there is just one more step (dividing by 2) at the end.\n\n$$2x - 3 > 5 \\quad \\text{or} \\quad 2x - 3 < -5$$\n\n$$2x > 8 \\quad \\text{or} \\quad 2x < -2$$\n\n$$x > 4 \\quad \\text{or} \\quad x < -1$$\n\nNotice the critical values are no longer symmetric about 3: they are symmetric about $x = \\frac{3}{2}$, where $2x - 3 = 0$.\n\nCheck $x = 5$: $|7| = 7 > 5$ ✓; $x = 0$: $|-3| = 3$, not $> 5$ ✓ (excluded).",
+  "id": "pure-modulus-q04",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"26.0\" y1=\"268.0\" x2=\"26.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"58.5\" y1=\"268.0\" x2=\"58.5\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"91.0\" y1=\"268.0\" x2=\"91.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"123.5\" y1=\"268.0\" x2=\"123.5\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"156.0\" y1=\"268.0\" x2=\"156.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"188.5\" y1=\"268.0\" x2=\"188.5\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"221.0\" y1=\"268.0\" x2=\"221.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"253.5\" y1=\"268.0\" x2=\"253.5\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"286.0\" y1=\"268.0\" x2=\"286.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"268.0\" x2=\"286.0\" y2=\"268.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"244.91\" x2=\"286.0\" y2=\"244.91\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"221.82\" x2=\"286.0\" y2=\"221.82\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"198.73\" x2=\"286.0\" y2=\"198.73\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"175.64\" x2=\"286.0\" y2=\"175.64\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"152.55\" x2=\"286.0\" y2=\"152.55\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"129.45\" x2=\"286.0\" y2=\"129.45\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"106.36\" x2=\"286.0\" y2=\"106.36\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"83.27\" x2=\"286.0\" y2=\"83.27\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"60.18\" x2=\"286.0\" y2=\"60.18\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"37.09\" x2=\"286.0\" y2=\"37.09\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"14.0\" x2=\"286.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"152.55\" x2=\"292.0\" y2=\"152.55\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"123.5\" y1=\"268.0\" x2=\"123.5\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 292.0 152.55 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 123.5 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"294.0\" y=\"156.55\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"129.5\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"26.0\" y1=\"149.55\" x2=\"26.0\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"26.0\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−3</text><line x1=\"58.5\" y1=\"149.55\" x2=\"58.5\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"58.5\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−2</text><line x1=\"91.0\" y1=\"149.55\" x2=\"91.0\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"89.0\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−1</text><line x1=\"156.0\" y1=\"149.55\" x2=\"156.0\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"156.0\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"188.5\" y1=\"149.55\" x2=\"188.5\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"188.5\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"221.0\" y1=\"149.55\" x2=\"221.0\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"223.0\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">3</text><line x1=\"253.5\" y1=\"149.55\" x2=\"253.5\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"253.5\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"286.0\" y1=\"149.55\" x2=\"286.0\" y2=\"155.55\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"286.0\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">5</text><line x1=\"120.5\" y1=\"268.0\" x2=\"126.5\" y2=\"268.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"272.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−5</text><line x1=\"120.5\" y1=\"244.91\" x2=\"126.5\" y2=\"244.91\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"249.41\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−4</text><line x1=\"120.5\" y1=\"221.82\" x2=\"126.5\" y2=\"221.82\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"128.5\" y=\"226.32\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">−3</text><line x1=\"120.5\" y1=\"198.73\" x2=\"126.5\" y2=\"198.73\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"128.5\" y=\"203.23\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">−2</text><line x1=\"120.5\" y1=\"175.64\" x2=\"126.5\" y2=\"175.64\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"128.5\" y=\"180.14\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">−1</text><line x1=\"120.5\" y1=\"129.45\" x2=\"126.5\" y2=\"129.45\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"133.95\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"120.5\" y1=\"106.36\" x2=\"126.5\" y2=\"106.36\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"110.86\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"120.5\" y1=\"83.27\" x2=\"126.5\" y2=\"83.27\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"87.77\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"120.5\" y1=\"60.18\" x2=\"126.5\" y2=\"60.18\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"64.68\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">4</text><line x1=\"120.5\" y1=\"37.09\" x2=\"126.5\" y2=\"37.09\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"41.59\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"120.5\" y1=\"14.0\" x2=\"126.5\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"118.5\" y=\"18.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">6</text><text x=\"118.5\" y=\"167.55\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M 52.0 14.0 L 53.3 14.3 L 54.6 20.1 L 55.9 25.9 L 57.2 31.5 L 58.5 37.1 L 59.8 42.6 L 61.1 48.0 L 62.4 53.4 L 63.7 58.7 L 65.0 63.9 L 66.3 69.0 L 67.6 74.1 L 68.9 79.1 L 70.2 84.0 L 71.5 88.8 L 72.8 93.6 L 74.1 98.3 L 75.4 102.9 L 76.7 107.4 L 78.0 111.9 L 79.3 116.3 L 80.6 120.6 L 81.9 124.9 L 83.2 129.1 L 84.5 133.2 L 85.8 137.2 L 87.1 141.1 L 88.4 145.0 L 89.7 148.8 L 91.0 152.6 L 92.3 156.2 L 93.6 159.8 L 94.9 163.3 L 96.2 166.7 L 97.5 170.1 L 98.8 173.4 L 100.1 176.6 L 101.4 179.7 L 102.7 182.8 L 104.0 185.8 L 105.3 188.7 L 106.6 191.6 L 107.9 194.3 L 109.2 197.0 L 110.5 199.7 L 111.8 202.2 L 113.1 204.7 L 114.4 207.1 L 115.7 209.4 L 117.0 211.7 L 118.3 213.8 L 119.6 215.9 L 120.9 218.0 L 122.2 219.9 L 123.5 221.8 L 124.8 223.6 L 126.1 225.4 L 127.4 227.0 L 128.7 228.6 L 130.0 230.1 L 131.3 231.6 L 132.6 232.9 L 133.9 234.2 L 135.2 235.4 L 136.5 236.6 L 137.8 237.7 L 139.1 238.7 L 140.4 239.6 L 141.7 240.4 L 143.0 241.2 L 144.3 241.9 L 145.6 242.5 L 146.9 243.1 L 148.2 243.6 L 149.5 244.0 L 150.8 244.3 L 152.1 244.6 L 153.4 244.8 L 154.7 244.9 L 156.0 244.9 L 157.3 244.9 L 158.6 244.8 L 159.9 244.6 L 161.2 244.3 L 162.5 244.0 L 163.8 243.6 L 165.1 243.1 L 166.4 242.5 L 167.7 241.9 L 169.0 241.2 L 170.3 240.4 L 171.6 239.6 L 172.9 238.7 L 174.2 237.7 L 175.5 236.6 L 176.8 235.4 L 178.1 234.2 L 179.4 232.9 L 180.7 231.6 L 182.0 230.1 L 183.3 228.6 L 184.6 227.0 L 185.9 225.4 L 187.2 223.6 L 188.5 221.8 L 189.8 219.9 L 191.1 218.0 L 192.4 215.9 L 193.7 213.8 L 195.0 211.7 L 196.3 209.4 L 197.6 207.1 L 198.9 204.7 L 200.2 202.2 L 201.5 199.7 L 202.8 197.0 L 204.1 194.3 L 205.4 191.6 L 206.7 188.7 L 208.0 185.8 L 209.3 182.8 L 210.6 179.7 L 211.9 176.6 L 213.2 173.4 L 214.5 170.1 L 215.8 166.7 L 217.1 163.3 L 218.4 159.8 L 219.7 156.2 L 221.0 152.6 L 222.3 148.8 L 223.6 145.0 L 224.9 141.1 L 226.2 137.2 L 227.5 133.2 L 228.8 129.1 L 230.1 124.9 L 231.4 120.6 L 232.7 116.3 L 234.0 111.9 L 235.3 107.4 L 236.6 102.9 L 237.9 98.3 L 239.2 93.6 L 240.5 88.8 L 241.8 84.0 L 243.1 79.1 L 244.4 74.1 L 245.7 69.0 L 247.0 63.9 L 248.3 58.7 L 249.6 53.4 L 250.9 48.0 L 252.2 42.6 L 253.5 37.1 L 254.8 31.5 L 256.1 25.9 L 257.4 20.1 L 258.7 14.3 L 260.0 14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><circle cx=\"156.0\" cy=\"244.91\" r=\"2.8\" fill=\"currentColor\"/><text x=\"162.0\" y=\"260.91\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">(1, −4)</text><text x=\"156.0\" y=\"83.27\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\" font-style=\"italic\">y = f(x)</text></svg>",
+  "question": "The diagram shows the curve $y = f(x)$, where $f(x) = (x + 1)(x - 3)$. The curve has a minimum point at $(1, -4)$.\n\nOn separate diagrams, sketch\n\n(a) $y = |f(x)|$\n\n(b) $y = f(|x|)$\n\nIn each case give the coordinates of any points where the graph meets the coordinate axes and of any turning points.",
+  "hint": "For (a) the **outputs** are made non-negative: reflect any part below the $x$-axis upwards. For (b) the **inputs** are replaced by $|x|$: keep the part of the curve with $x \\ge 0$ and reflect it in the $y$-axis.",
+  "answer": "(a) Meets the $x$-axis at $(-1, 0)$ and $(3, 0)$, meets the $y$-axis at $(0, 3)$, maximum at $(1, 4)$; the graph never goes below the $x$-axis.\n(b) Symmetric about the $y$-axis: meets the $x$-axis at $(-3, 0)$ and $(3, 0)$, meets the $y$-axis at $(0, -3)$ (a sharp local maximum), minima at $(-1, -4)$ and $(1, -4)$.",
+  "solution": "Key points of $y = f(x)$: roots $x = -1$ and $x = 3$; $y$-intercept $f(0) = -3$; minimum $(1, -4)$.\n\n**(a)** $y = |f(x)|$. The part of the curve between $x = -1$ and $x = 3$ is below the $x$-axis, so reflect it in the $x$-axis; everything else stays the same.\n* Roots unchanged: $(-1, 0)$ and $(3, 0)$, where the graph now has sharp \"V\" corners.\n* $y$-intercept: $|-3| = 3$, so $(0, 3)$.\n* The minimum $(1, -4)$ becomes a maximum $(1, 4)$.\n\nThe graph lies entirely on or above the $x$-axis: a \"W\"-like shape with the middle hump at $(1, 4)$.\n\n**(b)** $y = f(|x|)$. For $x \\ge 0$, $|x| = x$, so the graph is unchanged on the right of the $y$-axis. For $x < 0$, $f(|x|) = f(-x)$, which is the reflection of the right-hand part in the $y$-axis. The original left-hand part (for $x < 0$) is **discarded**.\n* Right half: $y$-intercept $(0, -3)$, minimum $(1, -4)$, root $(3, 0)$.\n* Reflected: minimum $(-1, -4)$, root $(-3, 0)$.\n* At $(0, -3)$ the two halves meet in a sharp point, which is a local maximum.\n\nThe graph still goes below the $x$-axis – $f(|x|)$ changes the input, not the output. Note that the original root $x = -1$ does **not** survive in (b): the roots of $f(|x|)$ are $x = \\pm 3$.",
+  "id": "pure-modulus-q05",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Solve $|x + 1| = 2x - 4$.",
+  "hint": "Solve $x + 1 = 2x - 4$ and $-(x + 1) = 2x - 4$, then substitute each answer into the **original** equation.",
+  "answer": "$x = 5$ only",
+  "solution": "**Case 1:** $x + 1 = 2x - 4 \\Rightarrow x = 5$.\n\nCheck: $|5 + 1| = 6$ and $2(5) - 4 = 6$ ✓\n\n**Case 2:** $-(x + 1) = 2x - 4 \\Rightarrow -x - 1 = 2x - 4 \\Rightarrow 3 = 3x \\Rightarrow x = 1$.\n\nCheck: $|1 + 1| = 2$ but $2(1) - 4 = -2$ ✗. A modulus can never equal a negative number, so reject $x = 1$.\n\n**Answer:** $x = 5$ only.\n\nGraphically, the line $y = 2x - 4$ (gradient 2) is steeper than the arms of $y = |x + 1|$ (gradients $\\pm 1$) and is below the $x$-axis when $x < 2$, so it crosses the V only once, on the right-hand arm.",
+  "id": "pure-modulus-q06",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "Sam says: \"The graphs of $y = |x^2 - 4x|$ and $y = |x|^2 - 4|x|$ are the same, because both just apply the modulus to $y = x^2 - 4x$.\"\n\n(a) Use a single value of $x$ to show that Sam is wrong.\n\n(b) Describe how each graph is obtained from the graph of $y = x^2 - 4x$.\n\n(c) Find all the values of $x$ for which $|x^2 - 4x| = |x|^2 - 4|x|$.",
+  "hint": "With $f(x) = x^2 - 4x$, one graph is $y = |f(x)|$ and the other is $y = f(|x|)$. For (c), deal with $x \\ge 0$ and $x < 0$ separately, and remember $|x|^2 = x^2$.",
+  "answer": "(a) e.g. $x = 2$: $|4 - 8| = 4$ but $4 - 8 = -4$.\n(b) $y = |x^2 - 4x|$: reflect the part below the $x$-axis (for $0 < x < 4$) in the $x$-axis. $y = |x|^2 - 4|x|$: keep the part for $x \\ge 0$ and reflect it in the $y$-axis.\n(c) $x = 0$ or $x \\ge 4$",
+  "solution": "Let $f(x) = x^2 - 4x = x(x - 4)$. Then the first graph is $y = |f(x)|$ and the second is $y = f(|x|)$.\n\n**(a)** At $x = 2$: $|f(2)| = |4 - 8| = 4$, but $f(|2|) = 4 - 8 = -4$. Different values, so the graphs are different.\n\n**(b)**\n* $y = |f(x)|$ changes the **output**: $f(x) < 0$ for $0 < x < 4$, and that section (with minimum $(2, -4)$) is reflected in the $x$-axis to give a maximum at $(2, 4)$. The graph is never below the $x$-axis.\n* $y = f(|x|)$ changes the **input**: the part with $x \\ge 0$ (roots $0$ and $4$, minimum $(2, -4)$) is kept and reflected in the $y$-axis, giving roots $-4, 0, 4$ and minima $(\\pm 2, -4)$. This graph does go below the $x$-axis.\n\n**(c)** **For $x \\ge 0$:** $f(|x|) = f(x)$, so the equation is $|f(x)| = f(x)$, which is true exactly when $f(x) \\ge 0$, i.e. $x(x - 4) \\ge 0$. With $x \\ge 0$ this gives $x = 0$ or $x \\ge 4$.\n\n**For $x < 0$:** $|x| = -x$, so $f(|x|) = x^2 + 4x$. Also $f(x) = x(x - 4) > 0$ (product of two negatives), so $|f(x)| = x^2 - 4x$. The equation becomes\n$$x^2 - 4x = x^2 + 4x \\Rightarrow 8x = 0 \\Rightarrow x = 0$$\nwhich is not $< 0$, so there are no solutions here.\n\n**Answer:** $x = 0$ or $x \\ge 4$. Sam's claim is only true on this part of the domain.",
+  "id": "pure-modulus-q07",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Leah is asked to solve $|3x - 2| = x - 6$. Her working is shown below.\n\nCase 1: $3x - 2 = x - 6 \\Rightarrow 2x = -4 \\Rightarrow x = -2$\n\nCase 2: $-(3x - 2) = x - 6 \\Rightarrow -3x + 2 = x - 6 \\Rightarrow -4x = -8 \\Rightarrow x = 2$\n\nSo $x = -2$ or $x = 2$.\n\nIdentify Leah's error, explain why it is an error, and write down the correct solution.",
+  "hint": "Substitute each of Leah's answers back into $|3x - 2| = x - 6$. What sign does the right-hand side have?",
+  "answer": "Leah did not check her answers in the original equation. Both fail (the right-hand side is negative for each), so the equation has **no solutions**.",
+  "solution": "Leah's algebra in each case is correct; the error is in the final line, where she accepts both values **without checking them** in the original equation. Splitting into cases can create values that do not satisfy the modulus equation.\n\nCheck $x = -2$: $|3(-2) - 2| = |-8| = 8$, but $x - 6 = -8$. ✗\n\nCheck $x = 2$: $|3(2) - 2| = 4$, but $x - 6 = -4$. ✗\n\nIn both cases the right-hand side is negative, and a modulus can never be negative, so both must be rejected.\n\n**Correct answer:** the equation has no solutions.\n\n**Why (graphically):** for $x < 6$ the right-hand side $x - 6$ is negative, so there can be no solution there. For $x \\ge 6$, $|3x - 2| = 3x - 2$ and $3x - 2 - (x - 6) = 2x + 4 > 0$, so the V-shaped graph $y = |3x - 2|$ always lies above the line $y = x - 6$. The graphs never meet.",
+  "id": "pure-modulus-q08",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Tom is asked to solve $|5 - 2x| = 3x$. His working is shown below.\n\nLine 1: $|5 - 2x| = 5 + 2x$\n\nLine 2: so $5 + 2x = 3x$\n\nLine 3: $x = 5$\n\nFind the error in Tom's working, explain it, and solve the equation correctly.",
+  "hint": "Is $|5 - 2x| = 5 + 2x$ true for, say, $x = 1$? The modulus acts on the **value** of $5 - 2x$, not on each sign inside it.",
+  "answer": "Line 1 is wrong: the modulus does not make every term positive. The correct solution is $x = 1$ only.",
+  "solution": "**The error is in Line 1.** Tom has treated the modulus as \"make every sign positive\". The modulus acts on the value of the whole expression:\n$$|5 - 2x| = \\begin{cases} 5 - 2x & \\text{if } x \\le \\frac{5}{2} \\\\ 2x - 5 & \\text{if } x > \\frac{5}{2} \\end{cases}$$\nIt is never equal to $5 + 2x$ except at $x = 0$. For example at $x = 1$: $|5 - 2| = 3$ but $5 + 2 = 7$. Tom's answer fails: $|5 - 10| = 5$ but $3(5) = 15$.\n\n**Correct solution.**\n\nCase 1: $5 - 2x = 3x \\Rightarrow 5 = 5x \\Rightarrow x = 1$.\n\nCheck: $|5 - 2| = 3$ and $3(1) = 3$ ✓\n\nCase 2: $-(5 - 2x) = 3x \\Rightarrow 2x - 5 = 3x \\Rightarrow x = -5$.\n\nCheck: $|5 + 10| = 15$ but $3(-5) = -15$ ✗, reject.\n\n**Answer:** $x = 1$ only.",
+  "id": "pure-modulus-q09",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 8,
+  "question": "In this question you must show detailed reasoning.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "On the same axes, sketch the graphs of $y = |x + 2|$ and $y = |2x - 5|$. Show the coordinates of the points where each graph meets the coordinate axes.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Solve the equation $|x + 2| = |2x - 5|$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence, or otherwise, find the set of values of $x$ for which $|x + 2| \\ge |2x - 5|$.",
+    "marks": 2
+   }
+  ],
+  "hint": "Each graph is a V shape with its vertex on the $x$-axis. In (b) you can square both sides because both sides are non-negative.",
+  "answer": "(a) $y = |x + 2|$: V with vertex $(-2, 0)$, meets the $y$-axis at $(0, 2)$. $y = |2x - 5|$: steeper V with vertex $\\left(\\frac{5}{2}, 0\\right)$, meets the $y$-axis at $(0, 5)$.\n(b) $x = 1$ or $x = 7$\n(c) $1 \\le x \\le 7$",
+  "solution": "**(a)** $y = |x + 2|$: V shape, vertex $(-2, 0)$, $y$-intercept $(0, 2)$, arms of gradient $\\pm 1$. **B1**\n\n$y = |2x - 5|$: V shape, vertex $\\left(\\frac{5}{2}, 0\\right)$, $y$-intercept $(0, 5)$, arms of gradient $\\pm 2$ (steeper). **B1**\n\nCorrect relative positions: the graphs cross twice, once between $x = 0$ and $x = \\frac{5}{2}$ and once to the right of $x = \\frac{5}{2}$. **B1**\n\n**(b)** Both sides are non-negative, so square:\n$$(x + 2)^2 = (2x - 5)^2 \\quad \\textbf{M1}$$\n$$x^2 + 4x + 4 = 4x^2 - 20x + 25$$\n$$3x^2 - 24x + 21 = 0 \\Rightarrow x^2 - 8x + 7 = 0 \\Rightarrow (x - 1)(x - 7) = 0 \\quad \\textbf{M1}$$\n$$x = 1 \\text{ or } x = 7 \\quad \\textbf{A1}$$\n\nCheck: $x = 1$: $|3| = 3 = |-3|$ ✓; $x = 7$: $|9| = 9 = |9|$ ✓\n\n(Alternatively solve $x + 2 = 2x - 5$ and $x + 2 = -(2x - 5)$.)\n\n**(c)** From the sketch, $y = |x + 2|$ is on or above $y = |2x - 5|$ between the two intersections. **M1** (or: $(x - 1)(x - 7) \\le 0$)\n$$1 \\le x \\le 7 \\quad \\textbf{A1}$$\n\nCheck $x = 3$: $|5| = 5 \\ge |1| = 1$ ✓; $x = 0$: $2 \\ge 5$ is false ✓",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ],
+  "id": "pure-modulus-q10",
+  "topicId": "pure-modulus",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Find the set of values of $x$ for which\n$$|x^2 - 4| < 3x$$",
+  "hint": "What must be true of $3x$ for the inequality to have any chance? Then consider separately where $x^2 - 4 \\ge 0$ and where $x^2 - 4 < 0$.",
+  "answer": "$1 < x < 4$",
+  "solution": "A modulus is never negative, so we need $3x > 0$, i.e. $x > 0$. Now split at $x = 2$, where $x^2 - 4$ changes sign.\n\n**Case $x \\ge 2$:** $|x^2 - 4| = x^2 - 4$, so\n$$x^2 - 4 < 3x \\Rightarrow x^2 - 3x - 4 < 0 \\Rightarrow (x - 4)(x + 1) < 0 \\Rightarrow -1 < x < 4$$\nCombined with $x \\ge 2$: $2 \\le x < 4$.\n\n**Case $0 < x < 2$:** $|x^2 - 4| = 4 - x^2$, so\n$$4 - x^2 < 3x \\Rightarrow x^2 + 3x - 4 > 0 \\Rightarrow (x + 4)(x - 1) > 0 \\Rightarrow x < -4 \\text{ or } x > 1$$\nCombined with $0 < x < 2$: $1 < x < 2$.\n\n**Combine:** $1 < x < 2$ together with $2 \\le x < 4$ gives\n$$1 < x < 4$$\n\nCheck: $x = 3$: $|5| = 5 < 9$ ✓. $x = 0.5$: $|-3.75| = 3.75$, not $< 1.5$ ✓ (excluded). $x = 5$: $21 < 15$ is false ✓ (excluded).\n\nGraphically: the line $y = 3x$ enters the region above the W-shaped graph $y = |x^2 - 4|$ where it crosses the reflected arch at $x = 1$, and leaves it where it crosses the original curve at $x = 4$.",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ],
+  "id": "pure-modulus-q11",
+  "topicId": "pure-modulus",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 10,
+  "question": "In this question $a$ is a positive constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "On the same axes, sketch the graphs of $y = |2x - a|$ and $y = 2a - x$. Give, in terms of $a$, the coordinates of the points where each graph meets the coordinate axes.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Solve, in terms of $a$, the equation $|2x - a| = 2a - x$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence find, in terms of $a$, the set of values of $x$ for which $|2x - a| < 2a - x$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find, in terms of $a$, the set of values of the constant $k$ for which the equation $|2x - a| = k - x$ has exactly two distinct solutions.",
+    "marks": 2
+   }
+  ],
+  "hint": "The V has its vertex where $2x - a = 0$. For (d), the line $y = k - x$ always has gradient $-1$, which is between the gradients of the two arms. Where must its vertical position be?",
+  "answer": "(a) $y = |2x - a|$: vertex $\\left(\\frac{a}{2}, 0\\right)$, $y$-intercept $(0, a)$. $y = 2a - x$: $(0, 2a)$ and $(2a, 0)$.\n(b) $x = a$ or $x = -a$\n(c) $-a < x < a$\n(d) $k > \\frac{a}{2}$",
+  "solution": "**(a)** $y = |2x - a|$: V shape with vertex on the positive $x$-axis at $\\left(\\frac{a}{2}, 0\\right)$ and $y$-intercept $(0, a)$. **B1**\n\n$y = 2a - x$: straight line with negative gradient through $(0, 2a)$ and $(2a, 0)$. **B1**\n\nThe line meets the V twice: once on each arm. **B1**\n\n**(b)** Right-hand arm: $2x - a = 2a - x \\Rightarrow 3x = 3a \\Rightarrow x = a$. **M1 A1** (both cases needed for M1)\n\nLeft-hand arm: $-(2x - a) = 2a - x \\Rightarrow -2x + a = 2a - x \\Rightarrow x = -a$. **A1**\n\nCheck: $x = a$: $|a| = a = 2a - a$ ✓. $x = -a$: $|-3a| = 3a = 2a + a$ ✓ (both valid since $a > 0$).\n\n**(c)** The V is below the line between the intersections: **M1**\n$$-a < x < a \\quad \\textbf{A1}$$\n\n**(d)** The line $y = k - x$ has gradient $-1$. The arms of the V have gradients $-2$ and $2$, so the line crosses each arm at most once, and it crosses both arms exactly when it passes **above** the vertex $\\left(\\frac{a}{2}, 0\\right)$:\n$$k - \\frac{a}{2} > 0 \\quad \\textbf{M1}$$\n$$k > \\frac{a}{2} \\quad \\textbf{A1}$$\n\n(Algebraically: the arms give $x = \\frac{a + k}{3}$ and $x = a - k$, which lie on the correct arms only if $k \\ge \\frac{a}{2}$; when $k = \\frac{a}{2}$ both equal $\\frac{a}{2}$, a single solution.)",
+  "linkedTopicIds": [
+   "alg-graph-transformations"
+  ],
+  "id": "pure-modulus-q12",
+  "topicId": "pure-modulus",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A bottling machine is set to fill cans with 330 ml of drink. A can is **rejected** if its volume, $V$ ml, satisfies $|V - 330| > 4$.\n\n(a) Write down the range of volumes that are accepted, as an inequality in $V$.\n\n(b) A new retailer will only accept cans for which $|V - 332| \\le 3$. Find the range of volumes that pass **both** the factory check and the retailer's check.\n\n(c) Write your answer to (b) in the form $|V - p| \\le q$.",
+  "hint": "Accepted means $|V - 330| \\le 4$: the volume is within 4 ml of 330 ml. Draw both ranges on a number line to see where they overlap.",
+  "answer": "(a) $326 \\le V \\le 334$\n(b) $329 \\le V \\le 334$\n(c) $|V - 331.5| \\le 2.5$",
+  "solution": "**(a)** A can is accepted when it is **not** rejected, i.e. $|V - 330| \\le 4$:\n$$-4 \\le V - 330 \\le 4 \\Rightarrow 326 \\le V \\le 334$$\n(It is a single interval because the volume must be **within** 4 ml of 330 ml.)\n\n**(b)** Retailer: $-3 \\le V - 332 \\le 3 \\Rightarrow 329 \\le V \\le 335$.\n\nBoth conditions: $V$ must be in $[326, 334]$ **and** in $[329, 335]$. The overlap is\n$$329 \\le V \\le 334$$\n\n**(c)** The midpoint of the interval is $p = \\frac{329 + 334}{2} = 331.5$ and the half-width is $q = \\frac{334 - 329}{2} = 2.5$:\n$$|V - 331.5| \\le 2.5$$\n\nSo in effect the cans must be within 2.5 ml of 331.5 ml.",
+  "id": "pure-modulus-q13",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A water company is building a pumping station on a straight pipeline route. Three farms lie along the route at 2 km, 5 km and 11 km from a junction $O$. A separate pipe will run along the route from the station to each farm. If the station is $x$ km from $O$, where $0 \\le x \\le 13$, the total length of pipe needed is\n$$D(x) = |x - 2| + |x - 5| + |x - 11| \\text{ km}$$\n\n(a) Show that for $5 \\le x \\le 11$, $D(x) = x + 4$.\n\n(b) Find the position of the station that minimises the total length of pipe, and this minimum length.\n\n(c) The budget allows at most 15 km of pipe. Find the range of possible positions for the station.",
+  "hint": "Remove the modulus signs on each interval between the critical values 2, 5 and 11, using the sign of each bracket there. $D$ is then linear on each interval.",
+  "answer": "(a) Shown.\n(b) At the middle farm, $x = 5$ (5 km from $O$), with $D = 9$ km.\n(c) $1 \\le x \\le 11$",
+  "solution": "**(a)** For $5 \\le x \\le 11$: $x - 2 \\ge 0$, $x - 5 \\ge 0$ and $x - 11 \\le 0$, so\n$$D(x) = (x - 2) + (x - 5) + (11 - x) = x + 4$$\n\n**(b)** On the other intervals:\n* $0 \\le x \\le 2$: $D = (2 - x) + (5 - x) + (11 - x) = 18 - 3x$ (decreasing)\n* $2 \\le x \\le 5$: $D = (x - 2) + (5 - x) + (11 - x) = 14 - x$ (decreasing)\n* $5 \\le x \\le 11$: $D = x + 4$ (increasing)\n* $11 \\le x \\le 13$: $D = (x - 2) + (x - 5) + (x - 11) = 3x - 18$ (increasing)\n\n$D$ decreases until $x = 5$ and increases afterwards, so the minimum is at $x = 5$:\n$$D(5) = 3 + 0 + 6 = 9 \\text{ km}$$\n\nThe station should be at the middle farm. (Moving away from it brings you closer to one farm but further from two, so the total grows.)\n\n**(c)** Solve $D(x) = 15$ on each piece:\n* $18 - 3x = 15 \\Rightarrow x = 1$ ✓ (in $[0, 2]$)\n* $14 - x = 15 \\Rightarrow x = -1$ ✗ (not in $[2, 5]$)\n* $x + 4 = 15 \\Rightarrow x = 11$ ✓ (in $[5, 11]$)\n* $3x - 18 = 15 \\Rightarrow x = 11$ (the same point)\n\nBecause $D$ decreases to 9 and then increases, $D(x) \\le 15$ between these values:\n$$1 \\le x \\le 11$$\n\nSo the station must be between 1 km and 11 km from $O$.",
+  "id": "pure-modulus-q14",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": [],
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Solve the equation $|3^x - 5| = 4$.\n\n(b) Sketch the graph of $y = |3^x - 5|$, stating the coordinates of any points where it meets the axes and the equation of its asymptote.\n\n(c) Find the set of values of the constant $k$ for which the equation $|3^x - 5| = k$ has exactly two real solutions.",
+  "hint": "In (a), $3^x - 5 = 4$ or $3^x - 5 = -4$, and $3^x$ is always positive. In (b), start from $y = 3^x - 5$, which has asymptote $y = -5$, then reflect the part below the $x$-axis.",
+  "answer": "(a) $x = 0$ or $x = 2$\n(b) Meets the $y$-axis at $(0, 4)$ and the $x$-axis at $(\\log_3 5, 0)$; asymptote $y = 5$ as $x \\to -\\infty$.\n(c) $0 < k < 5$",
+  "solution": "**(a)** $3^x - 5 = 4 \\Rightarrow 3^x = 9 \\Rightarrow x = 2$.\n\n$3^x - 5 = -4 \\Rightarrow 3^x = 1 \\Rightarrow x = 0$.\n\nBoth are valid (each gives $|{\\pm 4}| = 4$), so $x = 0$ or $x = 2$.\n\n**(b)** $y = 3^x - 5$ crosses the $x$-axis where $3^x = 5$, i.e. $x = \\log_3 5 \\approx 1.46$, has $y$-intercept $1 - 5 = -4$ and asymptote $y = -5$ as $x \\to -\\infty$.\n\nTaking the modulus reflects the part below the $x$-axis (all $x < \\log_3 5$):\n* $y$-intercept becomes $(0, 4)$;\n* the graph touches the $x$-axis at $(\\log_3 5, 0)$ with a sharp corner;\n* the asymptote becomes $y = 5$: for very negative $x$, $3^x \\to 0$ so $|3^x - 5| \\to 5$ from below;\n* for $x > \\log_3 5$ the graph is unchanged and increases without limit.\n\n**(c)** From the sketch, the left-hand branch decreases from just below 5 to 0 and never reaches 5; the right-hand branch increases from 0 to infinity.\n* $k > 5$ or $k = 5$: the line $y = k$ meets only the right-hand branch – one solution.\n* $0 < k < 5$: it meets each branch once – **two** solutions.\n* $k = 0$: one solution ($x = \\log_3 5$); $k < 0$: none.\n\nSo exactly two solutions when $0 < k < 5$.",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "id": "pure-modulus-q15",
+  "topicId": "pure-modulus",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><line x1=\"26.0\" y1=\"258.0\" x2=\"26.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"61.0\" y1=\"258.0\" x2=\"61.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"96.0\" y1=\"258.0\" x2=\"96.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"131.0\" y1=\"258.0\" x2=\"131.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"166.0\" y1=\"258.0\" x2=\"166.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"201.0\" y1=\"258.0\" x2=\"201.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"236.0\" y1=\"258.0\" x2=\"236.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"271.0\" y1=\"258.0\" x2=\"271.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"306.0\" y1=\"258.0\" x2=\"306.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"258.0\" x2=\"306.0\" y2=\"258.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"227.5\" x2=\"306.0\" y2=\"227.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"197.0\" x2=\"306.0\" y2=\"197.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"166.5\" x2=\"306.0\" y2=\"166.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"136.0\" x2=\"306.0\" y2=\"136.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"105.5\" x2=\"306.0\" y2=\"105.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"75.0\" x2=\"306.0\" y2=\"75.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"44.5\" x2=\"306.0\" y2=\"44.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"14.0\" x2=\"306.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"26.0\" y1=\"227.5\" x2=\"312.0\" y2=\"227.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"166.0\" y1=\"258.0\" x2=\"166.0\" y2=\"8.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M 312.0 227.5 l -6 -3.5 l 0 7 z\" fill=\"currentColor\"/><path d=\"M 166.0 8.0 l -3.5 6 l 7 0 z\" fill=\"currentColor\"/><text x=\"314.0\" y=\"231.5\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">x</text><text x=\"172.0\" y=\"14.0\" font-size=\"14\" font-family=\"sans-serif\" font-style=\"italic\" fill=\"currentColor\">y</text><line x1=\"26.0\" y1=\"224.5\" x2=\"26.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"26.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−4</text><line x1=\"61.0\" y1=\"224.5\" x2=\"61.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"61.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−3</text><line x1=\"96.0\" y1=\"224.5\" x2=\"96.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"96.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−2</text><line x1=\"131.0\" y1=\"224.5\" x2=\"131.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"131.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">−1</text><line x1=\"201.0\" y1=\"224.5\" x2=\"201.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"201.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">1</text><line x1=\"236.0\" y1=\"224.5\" x2=\"236.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"236.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">2</text><line x1=\"271.0\" y1=\"224.5\" x2=\"271.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"271.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">3</text><line x1=\"306.0\" y1=\"224.5\" x2=\"306.0\" y2=\"230.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"306.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">4</text><line x1=\"163.0\" y1=\"258.0\" x2=\"169.0\" y2=\"258.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"262.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">−1</text><line x1=\"163.0\" y1=\"197.0\" x2=\"169.0\" y2=\"197.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"201.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">1</text><line x1=\"163.0\" y1=\"166.5\" x2=\"169.0\" y2=\"166.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"171.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">2</text><line x1=\"163.0\" y1=\"136.0\" x2=\"169.0\" y2=\"136.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"140.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">3</text><line x1=\"163.0\" y1=\"105.5\" x2=\"169.0\" y2=\"105.5\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"163.0\" y1=\"75.0\" x2=\"169.0\" y2=\"75.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"79.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">5</text><line x1=\"163.0\" y1=\"44.5\" x2=\"169.0\" y2=\"44.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"49.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">6</text><line x1=\"163.0\" y1=\"14.0\" x2=\"169.0\" y2=\"14.0\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"161.0\" y=\"18.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">7</text><text x=\"161.0\" y=\"242.5\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\" fill=\"currentColor\">O</text><path d=\"M 61.0 75.0 L 62.8 84.1 L 64.5 93.0 L 66.2 101.8 L 68.0 110.4 L 69.8 118.8 L 71.5 127.2 L 73.2 135.3 L 75.0 143.3 L 76.8 151.2 L 78.5 158.9 L 80.2 166.4 L 82.0 173.8 L 83.8 181.1 L 85.5 188.2 L 87.2 195.1 L 89.0 201.9 L 90.8 208.5 L 92.5 215.0 L 94.2 221.3 L 96.0 227.5 L 97.8 221.5 L 99.5 215.6 L 101.2 209.9 L 103.0 204.3 L 104.8 198.9 L 106.5 193.6 L 108.2 188.5 L 110.0 183.6 L 111.8 178.8 L 113.5 174.1 L 115.2 169.6 L 117.0 165.3 L 118.8 161.1 L 120.5 157.1 L 122.2 153.2 L 124.0 149.4 L 125.8 145.8 L 127.5 142.4 L 129.2 139.1 L 131.0 136.0 L 132.8 133.0 L 134.5 130.2 L 136.2 127.5 L 138.0 125.0 L 139.8 122.7 L 141.5 120.5 L 143.2 118.4 L 145.0 116.5 L 146.8 114.7 L 148.5 113.1 L 150.2 111.7 L 152.0 110.4 L 153.8 109.2 L 155.5 108.2 L 157.2 107.4 L 159.0 106.7 L 160.8 106.2 L 162.5 105.8 L 164.2 105.6 L 166.0 105.5 L 167.8 105.6 L 169.5 105.8 L 171.2 106.2 L 173.0 106.7 L 174.8 107.4 L 176.5 108.2 L 178.2 109.2 L 180.0 110.4 L 181.8 111.7 L 183.5 113.1 L 185.2 114.7 L 187.0 116.5 L 188.8 118.4 L 190.5 120.5 L 192.2 122.7 L 194.0 125.0 L 195.8 127.5 L 197.5 130.2 L 199.2 133.0 L 201.0 136.0 L 202.8 139.1 L 204.5 142.4 L 206.2 145.8 L 208.0 149.4 L 209.8 153.2 L 211.5 157.0 L 213.2 161.1 L 215.0 165.3 L 216.8 169.6 L 218.5 174.1 L 220.2 178.8 L 222.0 183.6 L 223.8 188.5 L 225.5 193.7 L 227.2 198.9 L 229.0 204.3 L 230.8 209.9 L 232.5 215.6 L 234.2 221.5 L 236.0 227.5 L 237.8 221.3 L 239.5 215.0 L 241.2 208.5 L 243.0 201.9 L 244.8 195.1 L 246.5 188.2 L 248.2 181.1 L 250.0 173.8 L 251.8 166.4 L 253.5 158.9 L 255.2 151.2 L 257.0 143.3 L 258.8 135.3 L 260.5 127.2 L 262.2 118.8 L 264.0 110.4 L 265.8 101.8 L 267.5 93.0 L 269.2 84.1 L 271.0 75.0 L 61.0 75.0 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M 49.8 14.0 L 50.5 17.4 L 51.2 21.4 L 51.9 25.4 L 52.6 29.3 L 53.3 33.3 L 54.0 37.2 L 54.7 41.1 L 55.4 44.9 L 56.1 48.8 L 56.8 52.6 L 57.5 56.4 L 58.2 60.2 L 58.9 63.9 L 59.6 67.6 L 60.3 71.3 L 61.0 75.0 L 61.7 78.7 L 62.4 82.3 L 63.1 85.9 L 63.8 89.4 L 64.5 93.0 L 65.2 96.5 L 65.9 100.0 L 66.6 103.5 L 67.3 107.0 L 68.0 110.4 L 68.7 113.8 L 69.4 117.2 L 70.1 120.5 L 70.8 123.8 L 71.5 127.2 L 72.2 130.4 L 72.9 133.7 L 73.6 136.9 L 74.3 140.1 L 75.0 143.3 L 75.7 146.5 L 76.4 149.6 L 77.1 152.7 L 77.8 155.8 L 78.5 158.9 L 79.2 161.9 L 79.9 164.9 L 80.6 167.9 L 81.3 170.9 L 82.0 173.8 L 82.7 176.7 L 83.4 179.6 L 84.1 182.5 L 84.8 185.3 L 85.5 188.2 L 86.2 190.9 L 86.9 193.7 L 87.6 196.5 L 88.3 199.2 L 89.0 201.9 L 89.7 204.6 L 90.4 207.2 L 91.1 209.8 L 91.8 212.4 L 92.5 215.0 L 93.2 217.5 L 93.9 220.1 L 94.6 222.6 L 95.3 225.1 L 96.0 227.5 L 96.7 225.1 L 97.4 222.7 L 98.1 220.3 L 98.8 217.9 L 99.5 215.6 L 100.2 213.3 L 100.9 211.0 L 101.6 208.8 L 102.3 206.5 L 103.0 204.3 L 103.7 202.1 L 104.4 200.0 L 105.1 197.8 L 105.8 195.7 L 106.5 193.7 L 107.2 191.6 L 107.9 189.6 L 108.6 187.5 L 109.3 185.5 L 110.0 183.6 L 110.7 181.6 L 111.4 179.7 L 112.1 177.8 L 112.8 176.0 L 113.5 174.1 L 114.2 172.3 L 114.9 170.5 L 115.6 168.7 L 116.3 167.0 L 117.0 165.3 L 117.7 163.6 L 118.4 161.9 L 119.1 160.3 L 119.8 158.6 L 120.5 157.0 L 121.2 155.5 L 121.9 153.9 L 122.6 152.4 L 123.3 150.9 L 124.0 149.4 L 124.7 148.0 L 125.4 146.5 L 126.1 145.1 L 126.8 143.8 L 127.5 142.4 L 128.2 141.1 L 128.9 139.8 L 129.6 138.5 L 130.3 137.2 L 131.0 136.0 L 131.7 134.8 L 132.4 133.6 L 133.1 132.4 L 133.8 131.3 L 134.5 130.2 L 135.2 129.1 L 135.9 128.1 L 136.6 127.0 L 137.3 126.0 L 138.0 125.0 L 138.7 124.1 L 139.4 123.1 L 140.1 122.2 L 140.8 121.3 L 141.5 120.5 L 142.2 119.6 L 142.9 118.8 L 143.6 118.0 L 144.3 117.2 L 145.0 116.5 L 145.7 115.8 L 146.4 115.1 L 147.1 114.4 L 147.8 113.8 L 148.5 113.1 L 149.2 112.5 L 149.9 112.0 L 150.6 111.4 L 151.3 110.9 L 152.0 110.4 L 152.7 109.9 L 153.4 109.5 L 154.1 109.0 L 154.8 108.6 L 155.5 108.2 L 156.2 107.9 L 156.9 107.6 L 157.6 107.3 L 158.3 107.0 L 159.0 106.7 L 159.7 106.5 L 160.4 106.3 L 161.1 106.1 L 161.8 105.9 L 162.5 105.8 L 163.2 105.7 L 163.9 105.6 L 164.6 105.5 L 165.3 105.5 L 166.0 105.5 L 166.7 105.5 L 167.4 105.5 L 168.1 105.6 L 168.8 105.7 L 169.5 105.8 L 170.2 105.9 L 170.9 106.1 L 171.6 106.3 L 172.3 106.5 L 173.0 106.7 L 173.7 107.0 L 174.4 107.3 L 175.1 107.6 L 175.8 107.9 L 176.5 108.2 L 177.2 108.6 L 177.9 109.0 L 178.6 109.5 L 179.3 109.9 L 180.0 110.4 L 180.7 110.9 L 181.4 111.4 L 182.1 112.0 L 182.8 112.5 L 183.5 113.1 L 184.2 113.8 L 184.9 114.4 L 185.6 115.1 L 186.3 115.8 L 187.0 116.5 L 187.7 117.2 L 188.4 118.0 L 189.1 118.8 L 189.8 119.6 L 190.5 120.5 L 191.2 121.3 L 191.9 122.2 L 192.6 123.1 L 193.3 124.1 L 194.0 125.0 L 194.7 126.0 L 195.4 127.0 L 196.1 128.1 L 196.8 129.1 L 197.5 130.2 L 198.2 131.3 L 198.9 132.4 L 199.6 133.6 L 200.3 134.8 L 201.0 136.0 L 201.7 137.2 L 202.4 138.5 L 203.1 139.8 L 203.8 141.1 L 204.5 142.4 L 205.2 143.8 L 205.9 145.1 L 206.6 146.5 L 207.3 148.0 L 208.0 149.4 L 208.7 150.9 L 209.4 152.4 L 210.1 153.9 L 210.8 155.5 L 211.5 157.0 L 212.2 158.6 L 212.9 160.3 L 213.6 161.9 L 214.3 163.6 L 215.0 165.3 L 215.7 167.0 L 216.4 168.7 L 217.1 170.5 L 217.8 172.3 L 218.5 174.1 L 219.2 176.0 L 219.9 177.8 L 220.6 179.7 L 221.3 181.6 L 222.0 183.6 L 222.7 185.5 L 223.4 187.5 L 224.1 189.6 L 224.8 191.6 L 225.5 193.7 L 226.2 195.7 L 226.9 197.8 L 227.6 200.0 L 228.3 202.1 L 229.0 204.3 L 229.7 206.5 L 230.4 208.8 L 231.1 211.0 L 231.8 213.3 L 232.5 215.6 L 233.2 217.9 L 233.9 220.3 L 234.6 222.7 L 235.3 225.1 L 236.0 227.5 L 236.7 225.1 L 237.4 222.6 L 238.1 220.1 L 238.8 217.5 L 239.5 215.0 L 240.2 212.4 L 240.9 209.8 L 241.6 207.2 L 242.3 204.6 L 243.0 201.9 L 243.7 199.2 L 244.4 196.5 L 245.1 193.7 L 245.8 190.9 L 246.5 188.2 L 247.2 185.3 L 247.9 182.5 L 248.6 179.6 L 249.3 176.7 L 250.0 173.8 L 250.7 170.9 L 251.4 167.9 L 252.1 164.9 L 252.8 161.9 L 253.5 158.9 L 254.2 155.8 L 254.9 152.7 L 255.6 149.6 L 256.3 146.5 L 257.0 143.3 L 257.7 140.1 L 258.4 136.9 L 259.1 133.7 L 259.8 130.4 L 260.5 127.2 L 261.2 123.8 L 261.9 120.5 L 262.6 117.2 L 263.3 113.8 L 264.0 110.4 L 264.7 107.0 L 265.4 103.5 L 266.1 100.0 L 266.8 96.5 L 267.5 93.0 L 268.2 89.4 L 268.9 85.9 L 269.6 82.3 L 270.3 78.7 L 271.0 75.0 L 271.7 71.3 L 272.4 67.6 L 273.1 63.9 L 273.8 60.2 L 274.5 56.4 L 275.2 52.6 L 275.9 48.8 L 276.6 44.9 L 277.3 41.1 L 278.0 37.2 L 278.7 33.3 L 279.4 29.3 L 280.1 25.4 L 280.8 21.4 L 281.5 17.4 L 282.2 14.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"26.0\" y1=\"75.0\" x2=\"306.0\" y2=\"75.0\" stroke=\"currentColor\" stroke-width=\"1.8\"/><text x=\"27.75\" y=\"69.0\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\" font-style=\"italic\">y = 5</text><text x=\"222.0\" y=\"29.25\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\" font-style=\"italic\">y = |x² − 4|</text><text x=\"184.0\" y=\"139.05\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\" fill=\"currentColor\">R</text></svg>",
+  "question": "The diagram shows the graph of $y = |x^2 - 4|$ and the line $y = 5$. The shaded region $R$ is bounded by the graph and the line.\n\nFind the exact area of $R$.",
+  "hint": "Find where the line meets the curve. Use symmetry, and split the integral at the point where $x^2 - 4$ changes sign so that you can remove the modulus.",
+  "answer": "$\\dfrac{44}{3}$",
+  "solution": "**Intersections:** $|x^2 - 4| = 5$. Since $4 - x^2 \\le 4 < 5$, we need $x^2 - 4 = 5$, so $x = \\pm 3$.\n\n**Area:** $R$ is symmetric about the $y$-axis, so\n$$\\text{Area} = 2\\int_0^3 \\left(5 - |x^2 - 4|\\right)dx$$\n\nFor $0 \\le x \\le 2$, $|x^2 - 4| = 4 - x^2$; for $2 \\le x \\le 3$, $|x^2 - 4| = x^2 - 4$.\n$$\\int_0^2 \\left(5 - (4 - x^2)\\right)dx = \\int_0^2 (1 + x^2)\\,dx = \\left[x + \\frac{x^3}{3}\\right]_0^2 = 2 + \\frac{8}{3} = \\frac{14}{3}$$\n$$\\int_2^3 \\left(5 - (x^2 - 4)\\right)dx = \\int_2^3 (9 - x^2)\\,dx = \\left[9x - \\frac{x^3}{3}\\right]_2^3 = (27 - 9) - \\left(18 - \\frac{8}{3}\\right) = \\frac{8}{3}$$\n\n$$\\text{Area} = 2\\left(\\frac{14}{3} + \\frac{8}{3}\\right) = \\frac{44}{3}$$\n\n(Check: the rectangle $6 \\times 5 = 30$ minus the area under the curve, $2\\left(\\frac{16}{3} + \\frac{7}{3}\\right) = \\frac{46}{3}$, gives $\\frac{44}{3}$ ✓)",
+  "linkedTopicIds": [
+   "calc-definite-integrals-area"
+  ],
+  "id": "pure-modulus-q16",
+  "topicId": "pure-modulus",
+  "misconceptionIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Jo claims that $|a + b| = |a| + |b|$ for all real numbers $a$ and $b$.\n\n(a) Show by a counter-example that Jo is wrong.\n\n(b) Prove that $|a + b| \\le |a| + |b|$ for all real $a$ and $b$, and state exactly when equality holds.\n\n(c) Hence, or otherwise, solve $|x - 3| + |x + 5| = 8$.",
+  "hint": "For (b), both sides are non-negative, so compare their squares and use $ab \\le |ab|$. For (c), look for $a$ and $b$ with $|a| = |x - 3|$, $|b| = |x + 5|$ and $a + b = 8$.",
+  "answer": "(a) e.g. $a = 3$, $b = -5$: $|a + b| = 2$ but $|a| + |b| = 8$.\n(b) Proof below; equality if and only if $ab \\ge 0$.\n(c) $-5 \\le x \\le 3$",
+  "solution": "**(a)** $a = 3$, $b = -5$: $|3 + (-5)| = 2$, but $|3| + |-5| = 8$. So Jo is wrong.\n\n**(b)** Both $|a + b|$ and $|a| + |b|$ are non-negative, so it is enough to compare their squares.\n$$|a + b|^2 = (a + b)^2 = a^2 + 2ab + b^2$$\n$$(|a| + |b|)^2 = |a|^2 + 2|a||b| + |b|^2 = a^2 + 2|ab| + b^2$$\nSince $ab \\le |ab|$ for every real number $ab$,\n$$|a + b|^2 \\le (|a| + |b|)^2$$\nand taking non-negative square roots gives $|a + b| \\le |a| + |b|$. $\\blacksquare$\n\nEquality holds exactly when $ab = |ab|$, i.e. when $ab \\ge 0$: $a$ and $b$ have the same sign (or one is zero).\n\n**(c)** Let $a = 3 - x$ and $b = x + 5$. Then $|a| = |x - 3|$, $|b| = |x + 5|$ and $a + b = 8$, so the equation says\n$$|a| + |b| = 8 = |a + b|$$\nBy (b) this happens exactly when $ab \\ge 0$:\n$$(3 - x)(x + 5) \\ge 0 \\Rightarrow -5 \\le x \\le 3$$\n\nSo **every** $x$ with $-5 \\le x \\le 3$ is a solution (not just two values). Interpretation: the sum of the distances from $x$ to 3 and to $-5$ equals 8, the distance between 3 and $-5$, exactly when $x$ lies between them.\n\nCheck $x = 0$: $3 + 5 = 8$ ✓; $x = 4$: $1 + 9 = 10$ ✗.",
+  "linkedTopicIds": [
+   "pure-proof"
+  ],
+  "id": "pure-modulus-q17",
+  "topicId": "pure-modulus"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "(a) Sketch the graph of $y = \\left|x^2 - 4|x|\\right|$, giving the coordinates of its turning points and of the points where it meets the axes.\n\n(b) Solve $\\left|x^2 - 4|x|\\right| = 3$.\n\n(c) Find the values of the constant $k$ for which $\\left|x^2 - 4|x|\\right| = k$ has exactly four distinct solutions.",
+  "hint": "Build the graph in two steps from $y = x^2 - 4x$: first replace $x$ by $|x|$ (reflect the right half in the $y$-axis), then take the modulus of the result (reflect anything below the $x$-axis). Use symmetry for (b).",
+  "answer": "(a) Symmetric about the $y$-axis; meets the $x$-axis at $(-4, 0)$, $(0, 0)$, $(4, 0)$ (sharp minima); maxima at $(-2, 4)$ and $(2, 4)$; for $|x| > 4$ it rises without limit.\n(b) $x = \\pm 1$, $x = \\pm 3$, $x = \\pm(2 + \\sqrt{7})$\n(c) $k = 4$ only",
+  "solution": "**(a)** Let $f(x) = x^2 - 4x$: roots $0$ and $4$, minimum $(2, -4)$.\n\nStep 1, $y = f(|x|)$: keep $x \\ge 0$ and reflect it in the $y$-axis. Roots $-4, 0, 4$; minima $(\\pm 2, -4)$.\n\nStep 2, $y = |f(|x|)|$: reflect the parts below the $x$-axis upwards. The minima become **maxima** at $(\\pm 2, 4)$, and the graph touches the $x$-axis at $(-4, 0)$, $(0, 0)$ and $(4, 0)$ with sharp corners. For $|x| > 4$ the graph is unchanged and rises without limit. (The order matters: doing the steps the other way round gives a different graph.)\n\n**(b)** By symmetry, solve for $x \\ge 0$ and then include the negatives. For $x \\ge 0$: $|x^2 - 4x| = 3$.\n* $x^2 - 4x = 3 \\Rightarrow x^2 - 4x - 3 = 0 \\Rightarrow x = 2 \\pm \\sqrt{7}$. Only $2 + \\sqrt{7}$ is $\\ge 0$.\n* $x^2 - 4x = -3 \\Rightarrow x^2 - 4x + 3 = 0 \\Rightarrow x = 1$ or $x = 3$.\n\nSo $x = 1, 3, 2 + \\sqrt{7}$ and, by symmetry, $x = -1, -3, -(2 + \\sqrt{7})$: six solutions.\n\n**(c)** Count the intersections of $y = k$ with the graph:\n* $k < 0$: none; $k = 0$: three ($x = 0, \\pm 4$).\n* $0 < k < 4$: three on each side of the $y$-axis – six (as in (b)).\n* $k = 4$: on the right, the maximum $x = 2$ and the root of $x^2 - 4x = 4$ with $x > 4$, namely $x = 2 + 2\\sqrt{2}$; the same on the left – **four**.\n* $k > 4$: one on each side – two.\n\nSo there are exactly four solutions only when $k = 4$.",
+  "id": "pure-modulus-q18",
+  "topicId": "pure-modulus",
+  "linkedTopicIds": []
+ }
+]

@@ -1,0 +1,289 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify fully $\\dfrac{3x + 6}{x + 2}$.",
+  "hint": "Factorise the numerator first.",
+  "answer": "$3$",
+  "solution": "Factorise the numerator: $3x + 6 = 3(x + 2)$.\n$$\\frac{3(x + 2)}{x + 2} = 3$$\nThe whole bracket $(x + 2)$ is a common **factor** of the numerator and denominator, so it cancels (for $x \\ne -2$).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q01",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify fully $\\dfrac{3x + 6}{x^2 + 2x}$.",
+  "hint": "Factorise the numerator and the denominator separately.",
+  "answer": "$\\dfrac{3}{x}$",
+  "solution": "$3x + 6 = 3(x + 2)$ and $x^2 + 2x = x(x + 2)$.\n$$\\frac{3(x + 2)}{x(x + 2)} = \\frac{3}{x}$$\n\n**What changed:** only the denominator. It now has an extra factor of $x$, which stays in the answer.",
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q02",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify fully $\\dfrac{3x + 6}{x^2 + 5x + 6}$.",
+  "hint": "Factorise the quadratic: two numbers that multiply to $6$ and add to $5$.",
+  "answer": "$\\dfrac{3}{x + 3}$",
+  "solution": "$3x + 6 = 3(x + 2)$ and $x^2 + 5x + 6 = (x + 2)(x + 3)$.\n$$\\frac{3(x + 2)}{(x + 2)(x + 3)} = \\frac{3}{x + 3}$$\n\n**What changed:** the denominator is now a quadratic. Its factor $(x + 2)$ cancels, leaving $(x + 3)$. (You cannot cancel the $6$s: they are terms, not factors.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q03",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Simplify fully $\\dfrac{3x + 6}{x^2 - 4}$.",
+  "hint": "The denominator is a difference of two squares.",
+  "answer": "$\\dfrac{3}{x - 2}$",
+  "solution": "$3x + 6 = 3(x + 2)$ and $x^2 - 4 = (x - 2)(x + 2)$.\n$$\\frac{3(x + 2)}{(x - 2)(x + 2)} = \\frac{3}{x - 2}$$\n\n**What changed:** the denominator is now a difference of two squares instead of a three-term quadratic; it still contains the factor $(x + 2)$, so the method is the same.",
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q04",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Write as a single fraction in its simplest form:\n$$\\frac{x}{3} + \\frac{x + 1}{4}$$",
+  "hint": "Use the common denominator 12, just as with $\\frac{1}{3} + \\frac{1}{4}$.",
+  "answer": "$\\dfrac{7x + 3}{12}$",
+  "solution": "The lowest common denominator is $12$.\n$$\\frac{x}{3} = \\frac{4x}{12}, \\qquad \\frac{x + 1}{4} = \\frac{3(x + 1)}{12} = \\frac{3x + 3}{12}$$\n$$\\frac{4x + 3x + 3}{12} = \\frac{7x + 3}{12}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q05",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Write as a single fraction in its simplest form:\n$$\\frac{3}{x} - \\frac{2}{x - 2}$$",
+  "hint": "The common denominator is $x(x - 2)$. Put brackets round each numerator before subtracting.",
+  "answer": "$\\dfrac{x - 6}{x(x - 2)}$",
+  "solution": "Common denominator $x(x - 2)$:\n$$\\frac{3(x - 2)}{x(x - 2)} - \\frac{2x}{x(x - 2)} = \\frac{3(x - 2) - 2x}{x(x - 2)}$$\n$$= \\frac{3x - 6 - 2x}{x(x - 2)} = \\frac{x - 6}{x(x - 2)}$$\n(This could also be written $\\dfrac{x - 6}{x^2 - 2x}$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q06",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "Sam says:\n\n\"To add two fractions you add the tops and add the bottoms, so $\\dfrac{1}{x} + \\dfrac{1}{y} = \\dfrac{2}{x + y}$.\"\n\n(a) Use $x = 1$ and $y = 1$ to show that Sam is wrong.\n(b) Write $\\dfrac{1}{x} + \\dfrac{1}{y}$ correctly as a single fraction.",
+  "hint": "What is $\\frac{1}{1} + \\frac{1}{1}$? What does Sam's formula give?",
+  "answer": "(a) $\\frac{1}{1} + \\frac{1}{1} = 2$ but $\\frac{2}{1 + 1} = 1$ (b) $\\dfrac{x + y}{xy}$",
+  "solution": "**(a)** With $x = y = 1$: the left side is $1 + 1 = 2$, but Sam's right side is $\\frac{2}{2} = 1$. Since $2 \\ne 1$, his rule is wrong. (It fails even for numbers: $\\frac{1}{2} + \\frac{1}{2} = 1$, not $\\frac{2}{4}$.)\n\n**(b)** Use the common denominator $xy$:\n$$\\frac{1}{x} + \\frac{1}{y} = \\frac{y}{xy} + \\frac{x}{xy} = \\frac{x + y}{xy}$$\nCheck with $x = y = 1$: $\\frac{2}{1} = 2$ ✓",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q07",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "Simplify fully\n$$\\frac{x^2 - 4}{x^2 + 3x} \\div \\frac{x + 2}{x^2 + x - 6}$$",
+  "hint": "Multiply by the reciprocal of the second fraction, then factorise everything before cancelling.",
+  "answer": "$\\dfrac{(x - 2)^2}{x}$",
+  "solution": "Dividing by a fraction is multiplying by its reciprocal:\n$$\\frac{x^2 - 4}{x^2 + 3x} \\times \\frac{x^2 + x - 6}{x + 2}$$\n\nFactorise everything:\n$$\\frac{(x - 2)(x + 2)}{x(x + 3)} \\times \\frac{(x + 3)(x - 2)}{x + 2}$$\n\nCancel the common factors $(x + 2)$ and $(x + 3)$:\n$$\\frac{(x - 2)(x - 2)}{x} = \\frac{(x - 2)^2}{x}$$",
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q08",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Leah was asked to simplify fully $\\dfrac{x^2 + 6x + 8}{x^2 + 4x}$. Her working is shown.\n\n$\\dfrac{x^2 + 6x + 8}{x^2 + 4x}$ (cancel the $x^2$ on the top and bottom)\n$= \\dfrac{6x + 8}{4x}$\n$= \\dfrac{3x + 4}{2x}$\n\n(a) Substitute $x = 1$ into the original expression and into Leah's answer to show that she has made an error.\n(b) Explain Leah's mistake.\n(c) Simplify the expression correctly.",
+  "hint": "You may only cancel something that multiplies the **whole** numerator and the **whole** denominator.",
+  "answer": "(a) original $= \\frac{15}{5} = 3$; Leah's $= \\frac{7}{2}$ (b) she cancelled the term $x^2$, which is not a factor (c) $\\dfrac{x + 2}{x}$",
+  "solution": "**(a)** At $x = 1$: original $= \\dfrac{1 + 6 + 8}{1 + 4} = \\dfrac{15}{5} = 3$. Leah's answer $= \\dfrac{3 + 4}{2} = \\dfrac{7}{2}$. These differ, so her simplification is wrong.\n\n**(b)** In the first line Leah cancelled $x^2$ from the top and bottom, but $x^2$ is a **term** being added, not a **factor** of the whole numerator or denominator. You can only cancel common factors.\n\n**(c)** Factorise both:\n$$\\frac{x^2 + 6x + 8}{x^2 + 4x} = \\frac{(x + 2)(x + 4)}{x(x + 4)} = \\frac{x + 2}{x}$$\nCheck at $x = 1$: $\\frac{3}{1} = 3$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q09",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Marcus was asked to write $\\dfrac{4}{x - 2} - \\dfrac{3}{x + 1}$ as a single fraction in its simplest form. His working is shown.\n\n$\\dfrac{4(x + 1) - 3(x - 2)}{(x - 2)(x + 1)}$\n$= \\dfrac{4x + 4 - 3x - 6}{(x - 2)(x + 1)}$\n$= \\dfrac{x - 2}{(x - 2)(x + 1)}$\n$= \\dfrac{1}{x + 1}$\n\nFind the error in Marcus's working, explain it, and give the correct answer.",
+  "hint": "Look carefully at how he expanded $-3(x - 2)$.",
+  "answer": "Line 2: $-3(x - 2) = -3x + 6$, not $-3x - 6$. Correct answer $\\dfrac{x + 10}{(x - 2)(x + 1)}$",
+  "solution": "The first line is correct. The error is in the **second line**: Marcus expanded $-3(x - 2)$ as $-3x - 6$. The $-3$ multiplies **both** terms in the bracket, and $-3 \\times -2 = +6$:\n$$-3(x - 2) = -3x + 6$$\n(His mistake then led to a false cancellation in the later lines.)\n\nCorrect working:\n$$\\frac{4(x + 1) - 3(x - 2)}{(x - 2)(x + 1)} = \\frac{4x + 4 - 3x + 6}{(x - 2)(x + 1)} = \\frac{x + 10}{(x - 2)(x + 1)}$$\nThis does not simplify further.\n\nCheck with $x = 3$: $\\frac{4}{1} - \\frac{3}{4} = 3.25$ and $\\frac{13}{1 \\times 4} = 3.25$ ✓ (Marcus's answer gives $\\frac{1}{4}$.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q10",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Zara was asked to solve $\\dfrac{3}{x + 2} + \\dfrac{2}{x} = 1$. Her working is shown.\n\nMultiply by $x(x + 2)$:\n$3x + 2(x + 2) = 1$\n$5x + 4 = 1$\n$x = -\\dfrac{3}{5}$\n\n(a) Identify Zara's error and explain why it is wrong.\n(b) Solve the equation correctly.",
+  "hint": "When you multiply an equation by something, **every** term on **both** sides must be multiplied.",
+  "answer": "(a) She did not multiply the right-hand side $1$ by $x(x + 2)$ (b) $x = 4$ or $x = -1$",
+  "solution": "**(a)** Zara multiplied the two fractions by $x(x + 2)$ but left the right-hand side as $1$. To keep the equation balanced, **every** term on **both** sides must be multiplied, so the right side becomes $1 \\times x(x + 2) = x^2 + 2x$.\n(Check: $x = -\\frac{3}{5}$ gives $\\frac{3}{1.4} + \\frac{2}{-0.6} \\approx 2.14 - 3.33 \\ne 1$.)\n\n**(b)**\n$$3x + 2(x + 2) = x(x + 2)$$\n$$5x + 4 = x^2 + 2x$$\n$$x^2 - 3x - 4 = 0$$\n$$(x - 4)(x + 1) = 0$$\n$x = 4$ or $x = -1$. Neither makes a denominator zero, so both are valid.\nCheck $x = 4$: $\\frac{3}{6} + \\frac{2}{4} = 1$ ✓. Check $x = -1$: $\\frac{3}{1} + \\frac{2}{-1} = 1$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q11",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "In this question you must show all your working.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Simplify fully $\\dfrac{x^2 - 16}{2x^2 + 7x - 4}$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Solve $\\dfrac{2}{x + 3} + \\dfrac{1}{x - 1} = 1$. Give your answers correct to 2 decimal places.",
+    "marks": 4
+   }
+  ],
+  "marks": 7,
+  "hint": "(a) $2x^2 + 7x - 4$ factorises with a factor $(x + 4)$. (b) Multiply every term by $(x + 3)(x - 1)$ and use the quadratic formula.",
+  "answer": "(a) $\\dfrac{x - 4}{2x - 1}$ (b) $x = 2.56$ or $x = -1.56$",
+  "solution": "**(a)** $x^2 - 16 = (x - 4)(x + 4)$ **B1**\n$2x^2 + 7x - 4 = (2x - 1)(x + 4)$ **B1**\n$$\\frac{(x - 4)(x + 4)}{(2x - 1)(x + 4)} = \\frac{x - 4}{2x - 1} \\quad \\textbf{B1}$$\n\n**(b)** Multiply every term by $(x + 3)(x - 1)$:\n$$2(x - 1) + (x + 3) = (x + 3)(x - 1) \\quad \\textbf{M1}$$\n$$3x + 1 = x^2 + 2x - 3$$\n$$x^2 - x - 4 = 0 \\quad \\textbf{A1}$$\n$$x = \\frac{1 \\pm \\sqrt{1 + 16}}{2} = \\frac{1 \\pm \\sqrt{17}}{2} \\quad \\textbf{M1}$$\n$x = 2.56$ or $x = -1.56$ (2 d.p.) **A1**\n\nNeither value makes $x + 3$ or $x - 1$ zero, so both are valid.",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "id": "alg-algebraic-fractions-q12",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Elena cycles 30 km to a lake at an average speed of $v$ km/h. On the way back she is tired and her average speed is 5 km/h slower. Her total cycling time is 5 hours.\n\n(a) Show that $\\dfrac{30}{v} + \\dfrac{30}{v - 5} = 5$, and hence that $v^2 - 17v + 30 = 0$.\n(b) Find her average speed on the way to the lake, explaining why you reject one solution.",
+  "hint": "Time $=$ distance $\\div$ speed. Multiply every term by $v(v - 5)$.",
+  "answer": "(a) shown (b) $v = 15$ km/h ($v = 2$ is rejected because $v - 5$ would be negative)",
+  "solution": "**(a)** Time out $= \\dfrac{30}{v}$ hours; time back $= \\dfrac{30}{v - 5}$ hours. Total time is 5 hours, so\n$$\\frac{30}{v} + \\frac{30}{v - 5} = 5$$\nMultiply every term by $v(v - 5)$:\n$$30(v - 5) + 30v = 5v(v - 5)$$\n$$60v - 150 = 5v^2 - 25v$$\n$$5v^2 - 85v + 150 = 0$$\nDivide by 5: $v^2 - 17v + 30 = 0$ ✓\n\n**(b)** $(v - 15)(v - 2) = 0$, so $v = 15$ or $v = 2$.\nIf $v = 2$, the return speed would be $2 - 5 = -3$ km/h, which is impossible, so reject it.\nHer speed to the lake was **15 km/h** (and 10 km/h back).\nCheck: $\\frac{30}{15} + \\frac{30}{10} = 2 + 3 = 5$ hours ✓",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ],
+  "id": "alg-algebraic-fractions-q13",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "An office has two printers. Working alone, the older printer takes 6 minutes longer than the newer one to print a large report. Working together, they print the report in 4 minutes.\n\nLet the newer printer take $x$ minutes on its own.\n\n(a) Explain why $\\dfrac{1}{x} + \\dfrac{1}{x + 6} = \\dfrac{1}{4}$.\n(b) Solve the equation to find how long each printer takes on its own.",
+  "hint": "In one minute the newer printer does $\\frac{1}{x}$ of the job. What fraction do they do together in one minute?",
+  "answer": "(a) fractions of the job done per minute add up (b) newer 6 minutes, older 12 minutes",
+  "solution": "**(a)** In one minute the newer printer prints $\\frac{1}{x}$ of the report and the older printer prints $\\frac{1}{x + 6}$ of it. Together they finish in 4 minutes, so together they print $\\frac{1}{4}$ of the report each minute:\n$$\\frac{1}{x} + \\frac{1}{x + 6} = \\frac{1}{4}$$\n\n**(b)** Multiply every term by $4x(x + 6)$:\n$$4(x + 6) + 4x = x(x + 6)$$\n$$8x + 24 = x^2 + 6x$$\n$$x^2 - 2x - 24 = 0$$\n$$(x - 6)(x + 4) = 0$$\n$x = 6$ or $x = -4$. A time cannot be negative, so $x = 6$.\nThe newer printer takes **6 minutes** and the older takes **12 minutes**.\nCheck: $\\frac{1}{6} + \\frac{1}{12} = \\frac{3}{12} = \\frac{1}{4}$ ✓",
+  "linkedTopicIds": [
+   "alg-forming-equations"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "alg-algebraic-fractions-q14",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "In this question, $x$ is a real number with $x \\ne 2$ and $x \\ne -2$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{4x}{x^2 - 4} - \\dfrac{2}{x + 2}$ can be written as $\\dfrac{2}{x - 2}$, for $x \\ne \\pm 2$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve the equation $\\dfrac{4x}{x^2 - 4} - \\dfrac{2}{x + 2} = x - 3$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Explain why the equation $\\dfrac{4x}{x^2 - 4} - \\dfrac{2}{x + 2} = 0$ has no solutions.",
+    "marks": 1
+   }
+  ],
+  "marks": 7,
+  "hint": "$x^2 - 4 = (x - 2)(x + 2)$ is already a common denominator for both fractions.",
+  "answer": "(a) shown (b) $x = 1$ or $x = 4$ (c) $\\frac{2}{x - 2}$ has a constant non-zero numerator, so it is never $0$",
+  "solution": "**(a)** $x^2 - 4 = (x - 2)(x + 2)$ **B1**\n$$\\frac{4x}{(x - 2)(x + 2)} - \\frac{2(x - 2)}{(x - 2)(x + 2)} = \\frac{4x - 2x + 4}{(x - 2)(x + 2)} \\quad \\textbf{M1}$$\n$$= \\frac{2x + 4}{(x - 2)(x + 2)} = \\frac{2(x + 2)}{(x - 2)(x + 2)} = \\frac{2}{x - 2} \\quad \\textbf{A1}$$\n\n**(b)** $\\dfrac{2}{x - 2} = x - 3 \\Rightarrow 2 = (x - 3)(x - 2)$ **M1**\n$$x^2 - 5x + 6 = 2 \\Rightarrow x^2 - 5x + 4 = 0 \\Rightarrow (x - 1)(x - 4) = 0 \\quad \\textbf{M1}$$\n$x = 1$ or $x = 4$ **A1** (neither is $\\pm 2$, so both are valid)\n\n**(c)** The left-hand side equals $\\dfrac{2}{x - 2}$, a fraction whose numerator is $2 \\ne 0$, so it can never equal $0$. **B1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "alg-algebraic-fractions-q15",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that $\\dfrac{1}{n} - \\dfrac{1}{n + 1} = \\dfrac{1}{n(n + 1)}$.\n(b) Hence find the exact value of\n$$\\frac{1}{1 \\times 2} + \\frac{1}{2 \\times 3} + \\frac{1}{3 \\times 4} + \\cdots + \\frac{1}{99 \\times 100}$$\n(c) Find, in terms of $N$, a simplified expression for the sum of the first $N$ terms of this pattern, and the smallest $N$ for which the sum exceeds $0.999$.",
+  "hint": "Write each term as a difference using (a). Most of the terms then cancel in pairs.",
+  "answer": "(a) shown (b) $\\dfrac{99}{100}$ (c) $\\dfrac{N}{N + 1}$; $N = 1000$",
+  "solution": "**(a)**\n$$\\frac{1}{n} - \\frac{1}{n + 1} = \\frac{(n + 1) - n}{n(n + 1)} = \\frac{1}{n(n + 1)}$$\n\n**(b)** Rewrite each term using (a):\n$$\\left(\\frac{1}{1} - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\left(\\frac{1}{3} - \\frac{1}{4}\\right) + \\cdots + \\left(\\frac{1}{99} - \\frac{1}{100}\\right)$$\nEvery fraction from $\\frac{1}{2}$ to $\\frac{1}{99}$ appears once with $+$ and once with $-$, so they cancel. Only the first and last remain:\n$$1 - \\frac{1}{100} = \\frac{99}{100}$$\n\n**(c)** In the same way, the sum of the first $N$ terms is\n$$1 - \\frac{1}{N + 1} = \\frac{N}{N + 1}$$\n$\\dfrac{N}{N + 1} > 0.999 \\Rightarrow \\dfrac{1}{N + 1} < 0.001 \\Rightarrow N + 1 > 1000 \\Rightarrow N > 999$.\nThe smallest $N$ is $1000$. (At $N = 999$ the sum is exactly $0.999$, which does not exceed it.)",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence",
+   "pure-partial-fractions"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "alg-algebraic-fractions-q16",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Consider the equation\n$$\\frac{2}{x - 1} + \\frac{k}{x + 1} = 1$$\nwhere $k$ is a constant.\n\n(a) Show that any solution satisfies $x^2 - (k + 2)x + (k - 3) = 0$.\n(b) Show that this quadratic has two distinct real roots for every value of $k$.\n(c) Hence find the value of $k$ for which the original equation has exactly one solution, and find that solution.",
+  "hint": "For (b) use the discriminant. For (c), the original equation can lose a root of the quadratic only if that root makes a denominator zero, i.e. $x = 1$ or $x = -1$.",
+  "answer": "(a) shown (b) discriminant $= k^2 + 16 > 0$ (c) $k = 0$, solution $x = 3$",
+  "solution": "**(a)** Multiply every term by $(x - 1)(x + 1)$:\n$$2(x + 1) + k(x - 1) = (x - 1)(x + 1)$$\n$$2x + 2 + kx - k = x^2 - 1$$\n$$x^2 - (k + 2)x + (k - 3) = 0$$\n\n**(b)** Discriminant:\n$$(k + 2)^2 - 4(k - 3) = k^2 + 4k + 4 - 4k + 12 = k^2 + 16$$\nSince $k^2 \\ge 0$, this is at least $16 > 0$, so there are always two distinct real roots.\n\n**(c)** The original equation has exactly one solution only if one of the two roots is not allowed, i.e. is $x = 1$ or $x = -1$.\n$x = 1$: $1 - (k + 2) + k - 3 = -4 \\ne 0$, so $x = 1$ is never a root.\n$x = -1$: $1 + (k + 2) + k - 3 = 2k = 0 \\Rightarrow k = 0$.\nWith $k = 0$ the quadratic is $x^2 - 2x - 3 = (x - 3)(x + 1) = 0$. The root $x = -1$ is rejected (it makes $x + 1 = 0$), leaving the single solution $x = 3$.\nCheck: $\\frac{2}{3 - 1} + 0 = 1$ ✓\nSo $k = 0$, with solution $x = 3$.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "alg-algebraic-fractions-q17",
+  "topicId": "alg-algebraic-fractions"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A driver travels a distance $d$ km from town A to town B at a constant $u$ km/h, and returns along the same road at a constant $v$ km/h.\n\n(a) Show that the average speed for the whole journey is $\\dfrac{2uv}{u + v}$ km/h, and explain why it does not depend on $d$.\n(b) Prove that this average speed is never greater than $\\dfrac{u + v}{2}$, and find when the two are equal.\n(c) The driver goes from A to B at 40 km/h. How fast must she return to average 60 km/h for the round trip?",
+  "hint": "Average speed $=$ total distance $\\div$ total time. For (b), subtract one expression from the other and write the result as a single fraction.",
+  "answer": "(a) $\\dfrac{2d}{\\frac{d}{u} + \\frac{d}{v}} = \\dfrac{2uv}{u + v}$ (b) $\\dfrac{u + v}{2} - \\dfrac{2uv}{u + v} = \\dfrac{(u - v)^2}{2(u + v)} \\ge 0$; equal only when $u = v$ (c) 120 km/h",
+  "solution": "**(a)** Total distance $2d$. Total time $\\dfrac{d}{u} + \\dfrac{d}{v} = \\dfrac{dv + du}{uv} = \\dfrac{d(u + v)}{uv}$.\n$$\\text{average speed} = 2d \\div \\frac{d(u + v)}{uv} = 2d \\times \\frac{uv}{d(u + v)} = \\frac{2uv}{u + v}$$\nThe factor $d$ cancels, so the answer is independent of the distance.\n\n**(b)**\n$$\\frac{u + v}{2} - \\frac{2uv}{u + v} = \\frac{(u + v)^2 - 4uv}{2(u + v)} = \\frac{u^2 - 2uv + v^2}{2(u + v)} = \\frac{(u - v)^2}{2(u + v)}$$\nThe numerator is a square, so it is $\\ge 0$, and the denominator is positive (speeds are positive). So $\\dfrac{2uv}{u + v} \\le \\dfrac{u + v}{2}$, with equality exactly when $u = v$. $\\blacksquare$\n(The driver spends longer at the slower speed, so the slower speed has more influence on the average.)\n\n**(c)** $\\dfrac{2(40)v}{40 + v} = 60 \\Rightarrow 80v = 2400 + 60v \\Rightarrow 20v = 2400 \\Rightarrow v = 120$ km/h.\n(This is surprisingly large: averaging 60 km/h needs three times the outward speed on the way back.)",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ],
+  "id": "alg-algebraic-fractions-q18",
+  "topicId": "alg-algebraic-fractions"
+ }
+]
