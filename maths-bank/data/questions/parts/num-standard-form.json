@@ -267,5 +267,20 @@
   "hint": "Rewrite $3.6 \\times 10^{2k+1}$ so that the power of 10 is even. What happens to the 3.6?",
   "answer": "(a) $x = 36 \\times 10^{2k}$, so $\\sqrt{x} = 6 \\times 10^k$ (b) $\\sqrt{10^{2k+1}} = 10^{k + \\frac12}$, which is not an integer power, and $\\sqrt{3.6}$ is not exact (c) $6 \\times 10^{-3}$",
   "solution": "(a) Move one factor of 10 from the power into the front number:\n$$x = 3.6 \\times 10 \\times 10^{2k} = 36 \\times 10^{2k}$$\n\nNow both parts are perfect squares: $36 = 6^2$ and $10^{2k} = (10^k)^2$. So\n$$\\sqrt{x} = \\sqrt{36} \\times \\sqrt{10^{2k}} = 6 \\times 10^k$$\nand since $1 \\le 6 < 10$ and $k$ is an integer, this is in standard form.\n\n(b) Square-rooting separately gives $\\sqrt{3.6} \\times 10^{\\frac{2k+1}{2}} = 1.897\\ldots \\times 10^{k + \\frac12}$. The power $k + \\frac12$ is not an integer, so this is not standard form, and $\\sqrt{3.6}$ is not a nice number. The power of 10 must be even before you can halve it.\n\n(c) $-5 = 2k + 1$ gives $k = -3$, so\n$$\\sqrt{3.6 \\times 10^{-5}} = 6 \\times 10^{-3}$$\n\nCheck: $(6 \\times 10^{-3})^2 = 36 \\times 10^{-6} = 3.6 \\times 10^{-5}$ ✓"
+ },
+ {
+  "id": "num-standard-form-q19",
+  "topicId": "num-standard-form",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "(a) The diameter of the Earth is $1.27 \\times 10^4$ km. The diameter of the Moon is $3.47 \\times 10^3$ km.\n\nWork out how much greater the diameter of the Earth is than the diameter of the Moon. Give your answer in standard form.\n\n(b) A human hair is about $8 \\times 10^{-5}$ m wide. A strand of spider silk is about $3 \\times 10^{-6}$ m wide.\n\nHow much wider is the hair than the strand of silk? Give your answer in standard form.",
+  "hint": "You cannot subtract the powers. Either write both numbers as ordinary numbers, or rewrite one of them so both have the same power of 10, then subtract.",
+  "answer": "(a) $9.23 \\times 10^3$ km (b) $7.7 \\times 10^{-5}$ m",
+  "solution": "(a) The powers are different, so make them the same first. Write the Moon's diameter with $10^4$:\n$$3.47 \\times 10^3 = 0.347 \\times 10^4$$\n\nNow subtract the numbers in front:\n$$1.27 \\times 10^4 - 0.347 \\times 10^4 = 0.923 \\times 10^4$$\n\n$0.923$ is not between 1 and 10, so adjust:\n$$0.923 \\times 10^4 = 9.23 \\times 10^3 \\text{ km}$$\n\nCheck with ordinary numbers: $12\\,700 - 3470 = 9230 = 9.23 \\times 10^3$.\n\n(b) Write the silk's width with $10^{-5}$: $3 \\times 10^{-6} = 0.3 \\times 10^{-5}$ (moving to the larger power makes the front number 10 times smaller).\n$$8 \\times 10^{-5} - 0.3 \\times 10^{-5} = 7.7 \\times 10^{-5} \\text{ m}$$\n\nCheck: $0.000\\,08 - 0.000\\,003 = 0.000\\,077 = 7.7 \\times 10^{-5}$.\n\nNote: subtracting the powers, e.g. $(1.27 - 3.47) \\times 10^{4-3}$, is wrong. Index laws are for multiplying and dividing, not for adding and subtracting.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3",
+   "m1"
+  ]
  }
 ]
