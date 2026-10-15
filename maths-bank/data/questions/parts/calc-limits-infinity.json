@@ -1,0 +1,311 @@
+[
+ {
+  "id": "calc-limits-infinity-q01",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\lim_{x \\to \\infty} \\frac{4x^2 - 3x}{2x^2 + 5}$.",
+  "hint": "Divide every term in the numerator and denominator by $x^2$, the highest power of $x$ in the denominator.",
+  "answer": "$2$",
+  "solution": "Divide every term by $x^2$:\n$$\\frac{4x^2 - 3x}{2x^2 + 5} = \\frac{4 - \\frac{3}{x}}{2 + \\frac{5}{x^2}}$$\n\nAs $x \\to \\infty$, $\\frac{3}{x} \\to 0$ and $\\frac{5}{x^2} \\to 0$, so\n$$\\lim_{x \\to \\infty} \\frac{4x^2 - 3x}{2x^2 + 5} = \\frac{4 - 0}{2 + 0} = 2$$\n\nThe degrees are equal, so the limit is the ratio of the leading coefficients, $\\frac{4}{2}$. The graph has horizontal asymptote $y = 2$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q02",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\lim_{x \\to \\infty} \\frac{4x^2 - 3x}{2x^3 + 5}$.",
+  "hint": "The highest power in the denominator is now $x^3$. Divide every term by $x^3$.",
+  "answer": "$0$",
+  "solution": "Divide every term by $x^3$:\n$$\\frac{4x^2 - 3x}{2x^3 + 5} = \\frac{\\frac{4}{x} - \\frac{3}{x^2}}{2 + \\frac{5}{x^3}} \\to \\frac{0 - 0}{2 + 0} = 0$$\n\nSo $\\displaystyle\\lim_{x \\to \\infty} \\frac{4x^2 - 3x}{2x^3 + 5} = 0$ and the horizontal asymptote is $y = 0$.\n\n**What changed:** the denominator became $2x^3 + 5$, so the denominator now has the higher degree and grows much faster than the numerator. The answer is **not** $\\frac{4}{2}$: the ratio of leading coefficients only works when the degrees are equal.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q03",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\lim_{x \\to \\infty} \\frac{4x^4 - 3x}{2x^3 + 5}$.",
+  "hint": "Divide every term by $x^3$ again. What happens to the term that came from $4x^4$?",
+  "answer": "$+\\infty$ (the limit does not exist as a finite number; no horizontal asymptote)",
+  "solution": "Divide every term by $x^3$:\n$$\\frac{4x^4 - 3x}{2x^3 + 5} = \\frac{4x - \\frac{3}{x^2}}{2 + \\frac{5}{x^3}}$$\n\nAs $x \\to \\infty$ the denominator $\\to 2$ but the numerator $4x - \\frac{3}{x^2} \\to \\infty$. So\n$$\\lim_{x \\to \\infty} \\frac{4x^4 - 3x}{2x^3 + 5} = +\\infty$$\n\nThere is no horizontal asymptote (for large $x$ the function behaves like $\\frac{4x^4}{2x^3} = 2x$).\n\n**What changed:** the numerator became degree 4, higher than the denominator's degree 3, so the function grows without bound.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q04",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find $\\displaystyle\\lim_{x \\to -\\infty} \\frac{4x^4 - 3x}{2x^3 + 5}$.",
+  "hint": "For large $|x|$ the function behaves like $\\frac{4x^4}{2x^3} = 2x$. What does $2x$ do as $x \\to -\\infty$?",
+  "answer": "$-\\infty$",
+  "solution": "As before, dividing by $x^3$:\n$$\\frac{4x^4 - 3x}{2x^3 + 5} = \\frac{4x - \\frac{3}{x^2}}{2 + \\frac{5}{x^3}}$$\n\nAs $x \\to -\\infty$, the denominator $\\to 2$ and the numerator $4x - \\frac{3}{x^2} \\to -\\infty$. So\n$$\\lim_{x \\to -\\infty} \\frac{4x^4 - 3x}{2x^3 + 5} = -\\infty$$\n\n**What changed:** only the direction. The dominant behavior is $2x$, which is large and positive for $x \\to \\infty$ but large and negative for $x \\to -\\infty$. (Check: $x = -100$ gives about $\\frac{4 \\times 10^8}{-2 \\times 10^6} = -200$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q05",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Let $f(x) = \\dfrac{2x}{x - 3}$.\n\nFind $\\displaystyle\\lim_{x \\to 3^+} f(x)$ and $\\displaystyle\\lim_{x \\to 3^-} f(x)$, and write down the equation of the vertical asymptote of the graph of $f$.",
+  "hint": "As $x \\to 3$ the numerator tends to 6. Is $x - 3$ a small positive or a small negative number when $x$ is just above 3? Just below 3?",
+  "answer": "$\\lim_{x \\to 3^+} f(x) = +\\infty$, $\\lim_{x \\to 3^-} f(x) = -\\infty$; vertical asymptote $x = 3$",
+  "solution": "As $x \\to 3$ the numerator $2x \\to 6$ (positive) and the denominator $x - 3 \\to 0$.\n\n**From the right** ($x = 3.01$): $x - 3 = 0.01 > 0$, so $f(x) \\approx \\frac{6}{0.01} = 600$. Positive over tiny positive:\n$$\\lim_{x \\to 3^+} f(x) = +\\infty$$\n\n**From the left** ($x = 2.99$): $x - 3 = -0.01 < 0$, so $f(x) \\approx -600$. Positive over tiny negative:\n$$\\lim_{x \\to 3^-} f(x) = -\\infty$$\n\nThe graph has a vertical asymptote at $x = 3$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q06",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Let $f(x) = \\dfrac{3x^2 - 12}{x^2 - x - 2}$.\n\nFind the equations of all horizontal and vertical asymptotes of the graph of $f$, and the coordinates of any hole.",
+  "hint": "Factor the numerator and the denominator completely before deciding which zeros of the denominator are vertical asymptotes.",
+  "answer": "Horizontal asymptote $y = 3$; vertical asymptote $x = -1$; hole at $(2, 4)$.",
+  "solution": "Factor:\n$$f(x) = \\frac{3(x - 2)(x + 2)}{(x - 2)(x + 1)} = \\frac{3(x + 2)}{x + 1} \\quad (x \\ne 2)$$\n\n**Horizontal asymptote:** the degrees of the original numerator and denominator are both 2, so\n$$\\lim_{x \\to \\pm\\infty} f(x) = \\frac{3}{1} = 3$$\nThe horizontal asymptote is $y = 3$.\n\n**$x = 2$:** the factor $(x - 2)$ cancels, and $\\lim_{x \\to 2} f(x) = \\frac{3(4)}{3} = 4$, but $f(2)$ is undefined. This is a hole at $(2, 4)$, **not** a vertical asymptote.\n\n**$x = -1$:** the numerator $3(x + 2) \\to 3 \\ne 0$ while the denominator $\\to 0$, so $f(x) \\to \\pm\\infty$ ($+\\infty$ as $x \\to -1^+$, $-\\infty$ as $x \\to -1^-$). Vertical asymptote $x = -1$.",
+  "linkedTopicIds": [
+   "alg-rational-functions"
+  ]
+ },
+ {
+  "id": "calc-limits-infinity-q07",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $f(x) = \\dfrac{\\sqrt{9x^2 + 2}}{2x - 3}$.\n\nExplain why the graph of $f$ has **two different** horizontal asymptotes, and find their equations.",
+  "hint": "$\\sqrt{x^2} = |x|$. Treat $x \\to \\infty$ and $x \\to -\\infty$ separately. What are the signs of the numerator and the denominator when $x$ is large and negative?",
+  "answer": "$\\lim_{x \\to \\infty} f(x) = \\frac{3}{2}$ and $\\lim_{x \\to -\\infty} f(x) = -\\frac{3}{2}$, so the horizontal asymptotes are $y = \\frac{3}{2}$ and $y = -\\frac{3}{2}$.",
+  "solution": "Take $x^2$ out of the square root:\n$$\\sqrt{9x^2 + 2} = \\sqrt{x^2}\\sqrt{9 + \\frac{2}{x^2}} = |x|\\sqrt{9 + \\frac{2}{x^2}}$$\n\n**As $x \\to \\infty$:** $|x| = x$, so\n$$f(x) = \\frac{x\\sqrt{9 + \\frac{2}{x^2}}}{x\\left(2 - \\frac{3}{x}\\right)} = \\frac{\\sqrt{9 + \\frac{2}{x^2}}}{2 - \\frac{3}{x}} \\to \\frac{3}{2}$$\n\n**As $x \\to -\\infty$:** $|x| = -x$, so\n$$f(x) = \\frac{-x\\sqrt{9 + \\frac{2}{x^2}}}{x\\left(2 - \\frac{3}{x}\\right)} = -\\frac{\\sqrt{9 + \\frac{2}{x^2}}}{2 - \\frac{3}{x}} \\to -\\frac{3}{2}$$\n\nThe reason for two asymptotes: the numerator is a square root, so it is **always positive**, while the denominator $2x - 3$ is positive for large positive $x$ but negative for large negative $x$. So $f(x)$ is positive on the far right and negative on the far left, and the horizontal asymptotes are $y = \\frac{3}{2}$ and $y = -\\frac{3}{2}$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q08",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ethan's working is shown below.\n\n$$\\lim_{x \\to \\infty} \\frac{2x^2 + x}{6x^2 - 1} = \\frac{\\infty}{\\infty} = 1$$\n\nIdentify Ethan's error, explain why it is wrong, and find the correct limit.",
+  "hint": "Is $\\infty$ a number you can divide by itself? Try dividing every term by $x^2$.",
+  "answer": "Ethan treats $\\infty$ as a number; $\\frac{\\infty}{\\infty}$ is indeterminate. The limit is $\\dfrac{1}{3}$.",
+  "solution": "**Error:** writing $\\dfrac{\\infty}{\\infty} = 1$. $\\infty$ is not a number, so it cannot be cancelled like $\\frac{5}{5} = 1$. $\\frac{\\infty}{\\infty}$ is an **indeterminate form**: it only says that both parts grow without bound, not how fast. The numerator and denominator here grow at different rates (the denominator is about 3 times the numerator).\n\n**Correct working:** divide every term by $x^2$:\n$$\\frac{2x^2 + x}{6x^2 - 1} = \\frac{2 + \\frac{1}{x}}{6 - \\frac{1}{x^2}} \\to \\frac{2}{6} = \\frac{1}{3}$$\n\nSo $\\displaystyle\\lim_{x \\to \\infty} \\frac{2x^2 + x}{6x^2 - 1} = \\frac{1}{3}$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q09",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Grace's working is shown below.\n\n$$\\lim_{x \\to -\\infty} \\frac{5x}{\\sqrt{x^2 + 1}} = \\lim_{x \\to -\\infty} \\frac{5}{\\sqrt{1 + \\frac{1}{x^2}}} = \\frac{5}{1} = 5$$\n\n(To get the middle expression she divided the numerator and the denominator by $x$.)\n\nIdentify Grace's error and find the correct limit.",
+  "hint": "For $x < 0$, is $\\sqrt{x^2}$ equal to $x$? Check the signs: for large negative $x$, what is the sign of $5x$? Of $\\sqrt{x^2 + 1}$?",
+  "answer": "Grace used $\\sqrt{x^2} = x$, but for $x < 0$, $\\sqrt{x^2} = -x$. The limit is $-5$.",
+  "solution": "**Error:** dividing $\\sqrt{x^2 + 1}$ by $x$ to get $\\sqrt{1 + \\frac{1}{x^2}}$. That uses $x = \\sqrt{x^2}$, which is only true for $x \\ge 0$. For $x < 0$, $\\sqrt{x^2} = |x| = -x$.\n\n**Sanity check:** for large negative $x$, the numerator $5x$ is negative and the square root is positive, so the fraction must be negative. An answer of $+5$ cannot be right.\n\n**Correct working.** For $x < 0$:\n$$\\sqrt{x^2 + 1} = |x|\\sqrt{1 + \\frac{1}{x^2}} = -x\\sqrt{1 + \\frac{1}{x^2}}$$\n\n$$\\frac{5x}{\\sqrt{x^2 + 1}} = \\frac{5x}{-x\\sqrt{1 + \\frac{1}{x^2}}} = \\frac{-5}{\\sqrt{1 + \\frac{1}{x^2}}} \\to -5$$\n\nSo $\\displaystyle\\lim_{x \\to -\\infty} \\frac{5x}{\\sqrt{x^2 + 1}} = -5$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q10",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kai is asked to find $\\displaystyle\\lim_{x \\to 0} x\\sin\\left(\\frac{1}{x}\\right)$. He writes:\n\n\"As $x \\to 0$, $\\frac{1}{x} \\to \\pm\\infty$, so $\\sin\\left(\\frac{1}{x}\\right)$ keeps oscillating between $-1$ and $1$ and has no limit. Therefore $\\displaystyle\\lim_{x \\to 0} x\\sin\\left(\\frac{1}{x}\\right)$ does not exist.\"\n\nExplain the flaw in Kai's argument and find the limit.",
+  "hint": "An oscillating factor is not the end of the story if it is multiplied by something that tends to 0. Use $\\left|\\sin\\left(\\frac{1}{x}\\right)\\right| \\le 1$ and the squeeze theorem. Be careful: $x$ can be negative.",
+  "answer": "The product law needs both limits to exist, so it cannot be used – but that does not prove the limit fails to exist. By the squeeze theorem, $\\lim_{x \\to 0} x\\sin\\left(\\frac{1}{x}\\right) = 0$.",
+  "solution": "**Flaw:** Kai is right that $\\lim_{x \\to 0}\\sin\\left(\\frac{1}{x}\\right)$ does not exist, so he cannot use \"limit of a product = product of the limits\". But that only means **that method** fails; it does not prove the limit of the product fails to exist. Here the oscillations are being crushed by the factor $x \\to 0$.\n\n**Correct working.** For all $x \\ne 0$, $\\left|\\sin\\left(\\frac{1}{x}\\right)\\right| \\le 1$, so\n$$\\left|x\\sin\\left(\\frac{1}{x}\\right)\\right| \\le |x|$$\nthat is,\n$$-|x| \\le x\\sin\\left(\\frac{1}{x}\\right) \\le |x|$$\n\n(We use $|x|$, not $x$, because for negative $x$ multiplying an inequality by $x$ would reverse it.)\n\nBoth bounds tend to 0: $\\lim_{x \\to 0}(-|x|) = 0$ and $\\lim_{x \\to 0}|x| = 0$.\n\nBy the squeeze theorem,\n$$\\lim_{x \\to 0} x\\sin\\left(\\frac{1}{x}\\right) = 0$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-trig-graphs"
+  ]
+ },
+ {
+  "id": "calc-limits-infinity-q11",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The graph of $f(x) = \\dfrac{2x^2 + x}{x^2 + 1}$ is shown, together with the line $y = 2$.\n\nBen says: \"A graph can never cross its horizontal asymptote.\"\n\n(a) Show that $y = 2$ is a horizontal asymptote of the graph of $f$.\n\n(b) Is Ben correct? Justify your answer.",
+  "hint": "For (b), solve $f(x) = 2$.",
+  "answer": "(a) $\\lim_{x \\to \\pm\\infty} f(x) = 2$ (b) No: $f(x) = 2$ when $x = 2$, so the graph crosses $y = 2$ at $(2, 2)$.",
+  "solution": "(a) Divide every term by $x^2$:\n$$f(x) = \\frac{2 + \\frac{1}{x}}{1 + \\frac{1}{x^2}} \\to \\frac{2 + 0}{1 + 0} = 2 \\quad \\text{as } x \\to \\pm\\infty$$\nso $y = 2$ is a horizontal asymptote.\n\n(b) Ben is not correct. Solve $f(x) = 2$:\n$$2x^2 + x = 2(x^2 + 1) = 2x^2 + 2 \\quad\\Rightarrow\\quad x = 2$$\nSo the graph meets $y = 2$ at $(2, 2)$. In fact $f(x) - 2 = \\dfrac{x - 2}{x^2 + 1}$, which is negative for $x < 2$ and positive for $x > 2$, so the graph genuinely crosses the line there, rises a little above it, and then approaches it from above as $x \\to \\infty$.\n\nA horizontal asymptote only describes the behavior as $x \\to \\pm\\infty$; it says nothing about what happens for moderate values of $x$. (Vertical asymptotes are different: the graph can never cross $x = a$ if $f(x) \\to \\pm\\infty$ there, because $f(a)$ is undefined.)",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><line x1=\"26.8\" y1=\"212\" x2=\"26.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"44.5\" y1=\"212\" x2=\"44.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"62.1\" y1=\"212\" x2=\"62.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"79.8\" y1=\"212\" x2=\"79.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"97.4\" y1=\"212\" x2=\"97.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"115.1\" y1=\"212\" x2=\"115.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"132.7\" y1=\"212\" x2=\"132.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"150.4\" y1=\"212\" x2=\"150.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"168\" y1=\"212\" x2=\"168\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"185.6\" y1=\"212\" x2=\"185.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"203.3\" y1=\"212\" x2=\"203.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"220.9\" y1=\"212\" x2=\"220.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"238.6\" y1=\"212\" x2=\"238.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"256.2\" y1=\"212\" x2=\"256.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"273.9\" y1=\"212\" x2=\"273.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"291.5\" y1=\"212\" x2=\"291.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"309.2\" y1=\"212\" x2=\"309.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"195.7\" x2=\"318\" y2=\"195.7\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"168.4\" x2=\"318\" y2=\"168.4\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"141.2\" x2=\"318\" y2=\"141.2\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"114\" x2=\"318\" y2=\"114\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"86.8\" x2=\"318\" y2=\"86.8\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"59.6\" x2=\"318\" y2=\"59.6\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"32.3\" x2=\"318\" y2=\"32.3\" stroke=\"currentColor\" stroke-opacity=\"0.13\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"168.4\" x2=\"324\" y2=\"168.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"132.7\" y1=\"212\" x2=\"132.7\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M324,168.4 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M132.7,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"324\" y=\"161.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"139.7\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"26.8\" y1=\"165.4\" x2=\"26.8\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"26.8\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−6</text><line x1=\"62.1\" y1=\"165.4\" x2=\"62.1\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"62.1\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"97.4\" y1=\"165.4\" x2=\"97.4\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"97.4\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"168\" y1=\"165.4\" x2=\"168\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"168\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"203.3\" y1=\"165.4\" x2=\"203.3\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"203.3\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"238.6\" y1=\"165.4\" x2=\"238.6\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"238.6\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"273.9\" y1=\"165.4\" x2=\"273.9\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"273.9\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">8</text><line x1=\"309.2\" y1=\"165.4\" x2=\"309.2\" y2=\"171.4\" stroke=\"currentColor\"/><text x=\"309.2\" y=\"183.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"129.7\" y1=\"114\" x2=\"135.7\" y2=\"114\" stroke=\"currentColor\"/><text x=\"126.7\" y=\"118\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"129.7\" y1=\"59.6\" x2=\"135.7\" y2=\"59.6\" stroke=\"currentColor\"/><text x=\"126.7\" y=\"63.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"126.7\" y=\"182.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M18,59.6 L318,59.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linejoin=\"round\" stroke-dasharray=\"5 4\"/><path d=\"M18,70.3 L19.5,70.4 L21,70.6 L22.5,70.8 L24,71 L25.5,71.2 L27,71.4 L28.5,71.6 L30,71.8 L31.5,72 L33,72.2 L34.5,72.4 L36,72.7 L37.5,72.9 L39,73.2 L40.5,73.5 L42,73.7 L43.5,74 L45,74.3 L46.5,74.6 L48,75 L49.5,75.3 L51,75.6 L52.5,76 L54,76.4 L55.5,76.8 L57,77.2 L58.5,77.6 L60,78.1 L61.5,78.6 L63,79.1 L64.5,79.6 L66,80.1 L67.5,80.7 L69,81.3 L70.5,82 L72,82.6 L73.5,83.3 L75,84.1 L76.5,84.9 L78,85.7 L79.5,86.6 L81,87.6 L82.5,88.6 L84,89.6 L85.5,90.8 L87,92 L88.5,93.3 L90,94.7 L91.5,96.1 L93,97.7 L94.5,99.4 L96,101.3 L97.5,103.2 L99,105.4 L100.5,107.6 L102,110.1 L103.5,112.8 L105,115.7 L106.5,118.8 L108,122.1 L109.5,125.7 L111,129.5 L112.5,133.6 L114,138 L115.5,142.6 L117,147.4 L118.5,152.2 L120,157.1 L121.5,161.8 L123,166.1 L124.5,169.9 L126,172.8 L127.5,174.5 L129,174.8 L130.5,173.5 L132,170.4 L133.5,165.8 L135,159.7 L136.5,152.4 L138,144.5 L139.5,136.1 L141,127.8 L142.5,119.7 L144,112.1 L145.5,105.1 L147,98.7 L148.5,93 L150,87.9 L151.5,83.4 L153,79.5 L154.5,76 L156,73.1 L157.5,70.4 L159,68.2 L160.5,66.2 L162,64.5 L163.5,63 L165,61.7 L166.5,60.5 L168,59.6 L169.5,58.7 L171,57.9 L172.5,57.3 L174,56.7 L175.5,56.2 L177,55.8 L178.5,55.4 L180,55 L181.5,54.7 L183,54.5 L184.5,54.3 L186,54.1 L187.5,53.9 L189,53.8 L190.5,53.6 L192,53.5 L193.5,53.4 L195,53.4 L196.5,53.3 L198,53.3 L199.5,53.2 L201,53.2 L202.5,53.2 L204,53.1 L205.5,53.1 L207,53.1 L208.5,53.1 L210,53.1 L211.5,53.1 L213,53.2 L214.5,53.2 L216,53.2 L217.5,53.2 L219,53.2 L220.5,53.3 L222,53.3 L223.5,53.3 L225,53.4 L226.5,53.4 L228,53.4 L229.5,53.5 L231,53.5 L232.5,53.5 L234,53.6 L235.5,53.6 L237,53.6 L238.5,53.7 L240,53.7 L241.5,53.7 L243,53.8 L244.5,53.8 L246,53.9 L247.5,53.9 L249,53.9 L250.5,54 L252,54 L253.5,54 L255,54.1 L256.5,54.1 L258,54.2 L259.5,54.2 L261,54.2 L262.5,54.3 L264,54.3 L265.5,54.3 L267,54.4 L268.5,54.4 L270,54.4 L271.5,54.5 L273,54.5 L274.5,54.5 L276,54.6 L277.5,54.6 L279,54.6 L280.5,54.7 L282,54.7 L283.5,54.7 L285,54.8 L286.5,54.8 L288,54.8 L289.5,54.9 L291,54.9 L292.5,54.9 L294,55 L295.5,55 L297,55 L298.5,55 L300,55.1 L301.5,55.1 L303,55.1 L304.5,55.2 L306,55.2 L307.5,55.2 L309,55.2 L310.5,55.3 L312,55.3 L313.5,55.3 L315,55.3 L316.5,55.4 L318,55.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/><text x=\"316.2\" y=\"51.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = 2</text><text x=\"80.2\" y=\"102.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = f(x)</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q12",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find\n$$\\text{(a)}\\ \\lim_{x \\to \\infty}\\left(\\sqrt{x^2 + 6x} - \\sqrt{x^2 - 2x}\\right) \\qquad \\text{(b)}\\ \\lim_{x \\to -\\infty}\\left(\\sqrt{x^2 + 6x} - \\sqrt{x^2 - 2x}\\right)$$",
+  "hint": "Both square roots grow like $|x|$, so the difference has the form $\\infty - \\infty$. Multiply and divide by the conjugate, then take $|x|$ out of each square root.",
+  "answer": "(a) $4$ (b) $-4$",
+  "solution": "Each root grows without bound, so this is the indeterminate form $\\infty - \\infty$ (it is **not** automatically 0). Multiply by the conjugate:\n$$\\sqrt{x^2 + 6x} - \\sqrt{x^2 - 2x} = \\frac{(x^2 + 6x) - (x^2 - 2x)}{\\sqrt{x^2 + 6x} + \\sqrt{x^2 - 2x}} = \\frac{8x}{\\sqrt{x^2 + 6x} + \\sqrt{x^2 - 2x}}$$\n\nNow $\\sqrt{x^2 + 6x} = |x|\\sqrt{1 + \\frac{6}{x}}$ and $\\sqrt{x^2 - 2x} = |x|\\sqrt{1 - \\frac{2}{x}}$, so\n$$= \\frac{8x}{|x|\\left(\\sqrt{1 + \\frac{6}{x}} + \\sqrt{1 - \\frac{2}{x}}\\right)}$$\n\n(a) As $x \\to \\infty$, $|x| = x$:\n$$\\frac{8}{\\sqrt{1 + \\frac{6}{x}} + \\sqrt{1 - \\frac{2}{x}}} \\to \\frac{8}{1 + 1} = 4$$\n\n(b) As $x \\to -\\infty$, $|x| = -x$:\n$$\\frac{-8}{\\sqrt{1 + \\frac{6}{x}} + \\sqrt{1 - \\frac{2}{x}}} \\to \\frac{-8}{2} = -4$$\n\nCheck (b) is sensible: for $x = -1000$, $\\sqrt{994000} - \\sqrt{1002000} \\approx 996.99 - 1001.00 = -4.01$.",
+  "misconceptionIds": [
+   "m1",
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q13",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The graph of\n$$f(x) = \\frac{ax^2 + 3}{2x^2 + bx - 5}$$\nhas a horizontal asymptote $y = 3$ and a vertical asymptote $x = 1$.\n\nFind the values of the constants $a$ and $b$, and find the equation of the other vertical asymptote.",
+  "hint": "The degrees are equal, so the horizontal asymptote comes from the leading coefficients. A vertical asymptote at $x = 1$ needs the denominator to be 0 there (and the numerator not to be).",
+  "answer": "$a = 6$, $b = 3$; the other vertical asymptote is $x = -\\dfrac{5}{2}$.",
+  "solution": "**Horizontal asymptote.** Numerator and denominator both have degree 2, so\n$$\\lim_{x \\to \\pm\\infty} f(x) = \\frac{a}{2} = 3 \\quad\\Rightarrow\\quad a = 6$$\n\n**Vertical asymptote at $x = 1$.** The denominator must be 0 at $x = 1$:\n$$2 + b - 5 = 0 \\quad\\Rightarrow\\quad b = 3$$\n\nCheck the numerator is not also 0 there (otherwise there might be a hole instead): $6(1)^2 + 3 = 9 \\ne 0$ ✓\n\n**Other vertical asymptote.** Factor the denominator:\n$$2x^2 + 3x - 5 = (x - 1)(2x + 5)$$\nwhich is also 0 at $x = -\\frac{5}{2}$. The numerator there is $6 \\times \\frac{25}{4} + 3 = 40.5 \\ne 0$, so $x = -\\frac{5}{2}$ is a vertical asymptote.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [
+   "alg-rational-functions"
+  ]
+ },
+ {
+  "id": "calc-limits-infinity-q14",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A small company makes skateboards. It has fixed costs of \\$15,000 per month and each skateboard costs \\$8 to make. The average cost per skateboard when $n$ skateboards are made in a month is\n$$A(n) = \\frac{15000 + 8n}{n}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\lim_{n \\to \\infty} A(n)$ and interpret your answer in context."
+   },
+   {
+    "label": "b",
+    "prompt": "How many skateboards must be made in a month for the average cost to be less than \\$8.50?"
+   }
+  ],
+  "hint": "Split the fraction: $A(n) = \\frac{15000}{n} + 8$. What happens to $\\frac{15000}{n}$ as $n$ gets very large?",
+  "answer": "(a) \\$8: as production increases, the average cost per skateboard approaches the \\$8 cost of making one board (the fixed costs are spread ever more thinly). (b) More than 30,000 (at least 30,001) skateboards.",
+  "solution": "(a) $A(n) = \\dfrac{15000}{n} + 8$. As $n \\to \\infty$, $\\dfrac{15000}{n} \\to 0$, so\n$$\\lim_{n \\to \\infty} A(n) = 8$$\n\nIn context: as the company makes more and more skateboards, the \\$15,000 fixed costs are shared among more boards, so the average cost per board gets closer and closer to \\$8 (the cost of materials and labor for one board). It never actually reaches \\$8, since $\\frac{15000}{n} > 0$.\n\n(b) Solve $A(n) < 8.50$:\n$$\\frac{15000}{n} + 8 < 8.5 \\quad\\Rightarrow\\quad \\frac{15000}{n} < 0.5 \\quad\\Rightarrow\\quad n > 30000$$\n\nThe company must make more than 30,000 skateboards (at least 30,001) in a month.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q15",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A large tank initially holds 200 gallons of pure water. Starting at time $t = 0$, salt water containing 0.5 pounds of salt per gallon is pumped into the tank at 4 gallons per minute. The mixture is kept well stirred and nothing flows out. (Assume the tank never overflows.)",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the concentration of salt in the tank after $t$ minutes is $C(t) = \\dfrac{t}{100 + 2t}$ pounds per gallon."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\displaystyle\\lim_{t \\to \\infty} C(t)$ and explain why the answer makes sense."
+   },
+   {
+    "label": "c",
+    "prompt": "After how many minutes is the concentration 0.4 pounds per gallon?"
+   }
+  ],
+  "hint": "Concentration $= \\dfrac{\\text{amount of salt}}{\\text{volume of liquid}}$. Find each one after $t$ minutes.",
+  "answer": "(a) Shown (b) $\\frac{1}{2}$ lb/gal (c) 200 minutes",
+  "solution": "(a) After $t$ minutes, $4t$ gallons have been added, containing $0.5 \\times 4t = 2t$ pounds of salt. The volume is $200 + 4t$ gallons. So\n$$C(t) = \\frac{2t}{200 + 4t} = \\frac{t}{100 + 2t} \\text{ lb/gal}$$\n\n(b) Divide by $t$:\n$$C(t) = \\frac{1}{\\frac{100}{t} + 2} \\to \\frac{1}{0 + 2} = \\frac{1}{2}$$\n\nSo $\\displaystyle\\lim_{t \\to \\infty} C(t) = 0.5$ lb/gal. This makes sense: as time goes on, the original 200 gallons of pure water become a smaller and smaller fraction of the mixture, so the concentration approaches that of the incoming salt water, 0.5 lb/gal. It never quite reaches it, since $t < \\frac{1}{2}(100 + 2t)$ for all $t$.\n\n(c) Solve $\\dfrac{t}{100 + 2t} = 0.4$:\n$$t = 40 + 0.8t \\quad\\Rightarrow\\quad 0.2t = 40 \\quad\\Rightarrow\\quad t = 200$$\nAfter 200 minutes (when the tank holds 1000 gallons).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-limits-infinity-q16",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Let $f(x) = \\dfrac{5e^x + 2}{e^x - 3}$.\n\nFind all horizontal and vertical asymptotes of the graph of $f$. For the vertical asymptote, describe the behavior of $f$ on each side.",
+  "hint": "As $x \\to \\infty$ divide top and bottom by $e^x$. As $x \\to -\\infty$, what does $e^x$ tend to? For the vertical asymptote, solve $e^x = 3$.",
+  "answer": "Horizontal asymptotes $y = 5$ (as $x \\to \\infty$) and $y = -\\dfrac{2}{3}$ (as $x \\to -\\infty$); vertical asymptote $x = \\ln 3$, with $f(x) \\to +\\infty$ as $x \\to (\\ln 3)^+$ and $f(x) \\to -\\infty$ as $x \\to (\\ln 3)^-$.",
+  "solution": "**As $x \\to \\infty$:** $e^x \\to \\infty$. Divide every term by $e^x$:\n$$f(x) = \\frac{5 + 2e^{-x}}{1 - 3e^{-x}} \\to \\frac{5 + 0}{1 - 0} = 5$$\nHorizontal asymptote $y = 5$.\n\n**As $x \\to -\\infty$:** $e^x \\to 0$, so\n$$f(x) \\to \\frac{0 + 2}{0 - 3} = -\\frac{2}{3}$$\nHorizontal asymptote $y = -\\frac{2}{3}$. (Exponential functions behave differently in the two directions, so there can be two horizontal asymptotes.)\n\n**Vertical asymptote:** the denominator is 0 when $e^x = 3$, i.e. $x = \\ln 3$. There the numerator is $5(3) + 2 = 17 \\ne 0$, so $x = \\ln 3$ is a vertical asymptote.\n\nFor $x > \\ln 3$, $e^x > 3$ so the denominator is a small positive number: $f(x) \\to +\\infty$ as $x \\to (\\ln 3)^+$.\n\nFor $x < \\ln 3$, the denominator is a small negative number: $f(x) \\to -\\infty$ as $x \\to (\\ln 3)^-$.",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ]
+ },
+ {
+  "id": "calc-limits-infinity-q17",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "The floor function $\\lfloor x \\rfloor$ is the greatest integer less than or equal to $x$ (for example $\\lfloor 3.7 \\rfloor = 3$ and $\\lfloor -1.2 \\rfloor = -2$).",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Explain why $x - 1 < \\lfloor x \\rfloor \\le x$ for every real number $x$."
+   },
+   {
+    "label": "b",
+    "prompt": "Use the squeeze theorem to find $\\displaystyle\\lim_{x \\to \\infty} \\frac{\\lfloor x \\rfloor}{x}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to 0^+} x\\left\\lfloor \\frac{1}{x} \\right\\rfloor$."
+   }
+  ],
+  "hint": "For (b), divide the inequality in (a) by $x > 0$. For (c), apply the inequality in (a) to $\\frac{1}{x}$ and then multiply by $x > 0$.",
+  "answer": "(a) $\\lfloor x \\rfloor$ is an integer $\\le x$, and the next integer $\\lfloor x \\rfloor + 1$ is $> x$. (b) $1$ (c) $1$",
+  "solution": "(a) By definition $\\lfloor x \\rfloor \\le x$. Since $\\lfloor x \\rfloor$ is the **greatest** integer $\\le x$, the next integer $\\lfloor x \\rfloor + 1$ must be greater than $x$, so $\\lfloor x \\rfloor > x - 1$. Hence $x - 1 < \\lfloor x \\rfloor \\le x$.\n\n(b) For $x > 0$, divide by $x$ (the inequalities keep their direction):\n$$\\frac{x - 1}{x} < \\frac{\\lfloor x \\rfloor}{x} \\le 1, \\quad\\text{i.e.}\\quad 1 - \\frac{1}{x} < \\frac{\\lfloor x \\rfloor}{x} \\le 1$$\n\nAs $x \\to \\infty$, $1 - \\frac{1}{x} \\to 1$ and the upper bound is 1. By the squeeze theorem,\n$$\\lim_{x \\to \\infty} \\frac{\\lfloor x \\rfloor}{x} = 1$$\n\n(c) Apply (a) to $\\frac{1}{x}$:\n$$\\frac{1}{x} - 1 < \\left\\lfloor \\frac{1}{x} \\right\\rfloor \\le \\frac{1}{x}$$\n\nFor $x > 0$, multiply by $x$:\n$$1 - x < x\\left\\lfloor \\frac{1}{x} \\right\\rfloor \\le 1$$\n\nAs $x \\to 0^+$, $1 - x \\to 1$. By the squeeze theorem,\n$$\\lim_{x \\to 0^+} x\\left\\lfloor \\frac{1}{x} \\right\\rfloor = 1$$\n\n(Notice that $x \\to 0$ and $\\left\\lfloor \\frac{1}{x} \\right\\rfloor \\to \\infty$: a \"$0 \\times \\infty$\" form, which could have been anything.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "alg-piecewise-functions"
+  ]
+ },
+ {
+  "id": "calc-limits-infinity-q18",
+  "topicId": "calc-limits-infinity",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "Let $f$ be the function defined by\n$$f(x) = \\frac{2x^2 - 8}{x^2 + x - 6}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to \\infty} f(x)$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\displaystyle\\lim_{x \\to -3^-} f(x)$ and $\\displaystyle\\lim_{x \\to -3^+} f(x)$. Show the work that leads to your answers.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "The denominator of $f$ is also 0 when $x = 2$. Find $\\displaystyle\\lim_{x \\to 2} f(x)$ and explain why the graph of $f$ does not have a vertical asymptote at $x = 2$.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "A function $k$ satisfies $f(x) \\le k(x) \\le \\dfrac{2x + 1}{x}$ for all $x > 2$. Find $\\displaystyle\\lim_{x \\to \\infty} k(x)$. Justify your answer.",
+    "marks": 2
+   }
+  ],
+  "marks": 7,
+  "calculator": false,
+  "hint": "Factor the numerator and the denominator first. For (d), find the limit of each bound.",
+  "answer": "(a) $2$ (b) $+\\infty$ and $-\\infty$ (c) $\\frac{8}{5}$; the limit is finite, so $x = 2$ is a removable discontinuity (hole), not an asymptote. (d) $2$, by the squeeze theorem",
+  "solution": "Factor:\n$$f(x) = \\frac{2(x - 2)(x + 2)}{(x + 3)(x - 2)} = \\frac{2(x + 2)}{x + 3} \\quad (x \\ne 2)$$\n\n(a) Equal degrees, so $\\displaystyle\\lim_{x \\to \\infty} f(x) = \\frac{2}{1} = 2$. (1 pt)\n\n(b) As $x \\to -3$, the numerator $2(x + 2) \\to -2$ and the denominator $x + 3 \\to 0$. (1 pt: analysis of numerator and denominator)\n\nAs $x \\to -3^-$, $x + 3 < 0$: negative over small negative, so $\\displaystyle\\lim_{x \\to -3^-} f(x) = +\\infty$.\n\nAs $x \\to -3^+$, $x + 3 > 0$: negative over small positive, so $\\displaystyle\\lim_{x \\to -3^+} f(x) = -\\infty$. (1 pt: both answers)\n\n(c) $\\displaystyle\\lim_{x \\to 2} f(x) = \\lim_{x \\to 2}\\frac{2(x + 2)}{x + 3} = \\frac{8}{5}$ (1 pt)\n\nBecause this limit is a finite number, $f(x)$ does not grow without bound near $x = 2$; the common factor $(x - 2)$ cancels and the graph has a hole at $\\left(2, \\frac{8}{5}\\right)$ rather than a vertical asymptote. (1 pt)\n\n(d) From (a), $\\displaystyle\\lim_{x \\to \\infty} f(x) = 2$, and $\\displaystyle\\lim_{x \\to \\infty}\\frac{2x + 1}{x} = \\lim_{x \\to \\infty}\\left(2 + \\frac{1}{x}\\right) = 2$. (1 pt)\n\nSince $f(x) \\le k(x) \\le \\frac{2x + 1}{x}$ and both bounds tend to 2, by the squeeze theorem $\\displaystyle\\lim_{x \\to \\infty} k(x) = 2$. (1 pt: answer with reference to the squeeze theorem)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ }
+]
