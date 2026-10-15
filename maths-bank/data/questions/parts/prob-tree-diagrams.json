@@ -1,0 +1,290 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><text x=\"60\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">First counter</text><text x=\"190\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Second counter</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"97.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"114\" y=\"86\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"55.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"63.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"60.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"108.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"111.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"160.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"114\" y=\"172\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"141.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"149.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"146.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"192.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"194.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"197.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "question": "A bag contains 3 red counters (R) and 2 blue counters (B). A counter is taken at random, its colour is recorded and it is **put back**. A second counter is then taken at random.\n\nThe tree diagram shows the probabilities.\n\nFind the probability that both counters are red.",
+  "hint": "Follow the route red, then red. Do you add or multiply along a route?",
+  "answer": "$P(\\text{RR}) = \\dfrac{9}{25}$",
+  "solution": "Both red means red on the first draw **and** red on the second draw, so follow the top route and **multiply** along the branches:\n$$P(\\text{RR}) = \\frac{3}{5} \\times \\frac{3}{5} = \\frac{9}{25}$$\n\nThe counter is replaced, so the second-stage probabilities are the same as the first.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q01",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><text x=\"60\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">First counter</text><text x=\"190\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Second counter</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"97.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"114\" y=\"86\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"55.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"63.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"60.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"108.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"111.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"160.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"114\" y=\"172\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"141.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"149.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"146.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"192.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"194.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"197.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "question": "The bag and the tree diagram are the same as in the previous question (3 red, 2 blue, with replacement).\n\nFind the probability that the first counter is red **and** the second counter is blue.",
+  "hint": "Which single route on the tree is \"red then blue\"?",
+  "answer": "$P(\\text{RB}) = \\dfrac{6}{25}$",
+  "solution": "**What changed:** the second counter is now blue instead of red, so we follow a different route: R then B.\n\n$$P(\\text{RB}) = \\frac{3}{5} \\times \\frac{2}{5} = \\frac{6}{25}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q02",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><text x=\"60\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">First counter</text><text x=\"190\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Second counter</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"97.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"114\" y=\"86\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"55.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"63.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"60.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"108.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"111.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"160.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"114\" y=\"172\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"141.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"149.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3/5</text><text x=\"217\" y=\"146.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"192.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"164.5\" y=\"194.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">2/5</text><text x=\"217\" y=\"197.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "question": "The bag and the tree diagram are the same as in the previous questions (3 red, 2 blue, with replacement).\n\nFind the probability that the two counters are **different** colours.",
+  "hint": "\"Different colours\" can happen in more than one order. List every route that gives one red and one blue.",
+  "answer": "$P(\\text{one of each}) = \\dfrac{12}{25}$",
+  "solution": "**What changed:** the order no longer matters, so there are now **two** routes instead of one: red then blue, **or** blue then red.\n\n$$P(\\text{RB}) = \\frac{3}{5} \\times \\frac{2}{5} = \\frac{6}{25} \\qquad P(\\text{BR}) = \\frac{2}{5} \\times \\frac{3}{5} = \\frac{6}{25}$$\n\nAdd the routes (\"or\"):\n$$P(\\text{different colours}) = \\frac{6}{25} + \\frac{6}{25} = \\frac{12}{25}$$\n\nGiving only $\\frac{6}{25}$ misses the BR route.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q03",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The bag again contains 3 red counters and 2 blue counters. This time the first counter is taken at random and **not** put back. A second counter is then taken at random.\n\nFind the probability that both counters are red.",
+  "hint": "After a red counter has been taken out, how many red counters are left, and how many counters are left altogether?",
+  "answer": "$P(\\text{RR}) = \\dfrac{3}{10}$",
+  "solution": "**What changed:** compared with the first question, the counter is **not replaced**, so the second-stage probabilities change.\n\nFirst counter red: $\\dfrac{3}{5}$.\n\nNow there are 2 red counters out of **4** counters left, so the second counter is red with probability $\\dfrac{2}{4}$.\n\n$$P(\\text{RR}) = \\frac{3}{5} \\times \\frac{2}{4} = \\frac{6}{20} = \\frac{3}{10}$$\n\nEffect of the change: $\\frac{3}{10} = 0.3$ is smaller than $\\frac{9}{25} = 0.36$ with replacement, because removing a red counter makes a second red less likely. Both the numerator **and** the denominator drop by 1.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q04",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><text x=\"60\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Weather</text><text x=\"215\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Bus</text><line x1=\"12\" y1=\"124\" x2=\"100\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"97.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">0.6</text><text x=\"109\" y=\"86\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Rain</text><line x1=\"142\" y1=\"81\" x2=\"215\" y2=\"55.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"175.5\" y=\"63.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">0.2</text><text x=\"224\" y=\"60.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Late</text><line x1=\"142\" y1=\"81\" x2=\"215\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"175.5\" y=\"108.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">b</text><text x=\"224\" y=\"111.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">On time</text><line x1=\"12\" y1=\"124\" x2=\"100\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"53\" y=\"160.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">a</text><text x=\"109\" y=\"172\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Dry</text><line x1=\"142\" y1=\"167\" x2=\"215\" y2=\"141.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"175.5\" y=\"149.1\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">c</text><text x=\"224\" y=\"146.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Late</text><line x1=\"142\" y1=\"167\" x2=\"215\" y2=\"192.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"175.5\" y=\"194.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">d</text><text x=\"224\" y=\"197.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">On time</text></svg>",
+  "question": "The probability that it rains on a school day is $0.6$. The probability that Zak's bus is late is $0.2$, whatever the weather (the two events are independent).\n\nThe tree diagram shows this information.\n\n(a) Write down the values of $a$, $b$, $c$ and $d$.\n\n(b) Find the probability that it rains and the bus is late.",
+  "hint": "The branches coming out of any one point add up to 1. Independent means the bus probabilities are the same on both sets of branches.",
+  "answer": "(a) $a = 0.4$, $b = 0.8$, $c = 0.2$, $d = 0.8$ (b) $0.12$",
+  "solution": "(a) Branches from one point add up to 1:\n$$a = 1 - 0.6 = 0.4, \\qquad b = 1 - 0.2 = 0.8$$\n\nThe bus is late with probability $0.2$ whatever the weather (independent events), so the second pair of branches is the same as the first:\n$$c = 0.2, \\qquad d = 0.8$$\n\n(b) Rain **and** late: multiply along the top route.\n$$P(\\text{Rain and Late}) = 0.6 \\times 0.2 = 0.12$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q05",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A box contains 8 chocolates: 3 dark and 5 milk. Lewis eats two chocolates, chosen at random one after the other.\n\nLewis's working to find the probability that both chocolates are dark is shown below.\n\n$P(\\text{first dark}) = \\dfrac{3}{8}$\n\n$P(\\text{second dark}) = \\dfrac{2}{7}$\n\n$P(\\text{both dark}) = \\dfrac{3}{8} + \\dfrac{2}{7} = \\dfrac{21}{56} + \\dfrac{16}{56} = \\dfrac{37}{56}$\n\n(a) Explain the mistake Lewis has made.\n\n(b) Work out the correct probability that both chocolates are dark.",
+  "hint": "Lewis's two separate probabilities are right. Is \"first dark **and** second dark\" found by adding or by multiplying?",
+  "answer": "(a) He added along the branches; for \"first and then second\" you multiply. (b) $\\dfrac{6}{56} = \\dfrac{3}{28}$",
+  "solution": "(a) Lewis's first two lines are correct: after one dark chocolate is eaten, 2 dark out of 7 remain. The error is in the last line: he has **added** the probabilities along the route. \"Dark **and then** dark\" is one route on a tree diagram, so the probabilities must be **multiplied**. (A clue: $\\frac{37}{56}$ is more than $\\frac{3}{8}$, but getting two dark chocolates cannot be more likely than getting a dark first one.)\n\n(b) $$P(\\text{both dark}) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56} = \\frac{3}{28}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q06",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A bag contains 5 green sweets and 7 yellow sweets. Grace takes a sweet at random and eats it. She then takes a second sweet at random.\n\nGrace's working to find the probability that both sweets are green is shown below.\n\n$P(\\text{both green}) = \\dfrac{5}{12} \\times \\dfrac{4}{12} = \\dfrac{20}{144} = \\dfrac{5}{36}$\n\n(a) Identify the error in Grace's working.\n\n(b) Find the correct probability.",
+  "hint": "Grace ate the first sweet. How many sweets are in the bag when she takes the second one?",
+  "answer": "(a) She reduced the number of green sweets to 4 but left the total as 12; it should be 11. (b) $\\dfrac{20}{132} = \\dfrac{5}{33}$",
+  "solution": "(a) Grace correctly changed the numerator from 5 to 4 (one green sweet has gone), but she kept the denominator as 12. After one sweet is eaten there are only **11** sweets left, so the second probability should be $\\frac{4}{11}$, not $\\frac{4}{12}$. Without replacement, both the numerator and the denominator change.\n\n(b) $$P(\\text{both green}) = \\frac{5}{12} \\times \\frac{4}{11} = \\frac{20}{132} = \\frac{5}{33}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q07",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Nadia is taking two flights on a trip. For each flight, the probability that it is delayed is $0.15$, independently of the other flight.\n\nNadia says: \"The probability that at least one of my flights is delayed is $0.15 + 0.15 = 0.3$.\"\n\n(a) Explain why Nadia's method is wrong.\n\n(b) Work out the correct probability that at least one flight is delayed.",
+  "hint": "Which outcome has Nadia counted twice? Alternatively, what is the opposite of \"at least one delayed\"?",
+  "answer": "(a) Adding counts the outcome \"both flights delayed\" twice. (b) $1 - 0.85^2 = 0.2775$",
+  "solution": "(a) \"At least one delayed\" means delayed–not, not–delayed, **or** delayed–delayed. Adding $0.15 + 0.15$ treats the events as if they could not happen together, so the outcome where **both** flights are delayed has been counted twice. (With more flights this method could even give a probability above 1.)\n\n(b) The opposite of \"at least one delayed\" is \"neither delayed\". $P(\\text{not delayed}) = 1 - 0.15 = 0.85$ for each flight, and the flights are independent, so\n$$P(\\text{neither delayed}) = 0.85 \\times 0.85 = 0.7225$$\n$$P(\\text{at least one delayed}) = 1 - 0.7225 = 0.2775$$\n\nCheck with the three routes: $0.15 \\times 0.85 + 0.85 \\times 0.15 + 0.15 \\times 0.15 = 0.1275 + 0.1275 + 0.0225 = 0.2775$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q08",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In each league match, a football team scores 3 points for a win (W), 1 point for a draw (D) and 0 points for a loss (L).\n\nFor any match, $P(\\text{W}) = 0.6$, $P(\\text{D}) = 0.25$ and $P(\\text{L}) = 0.15$, independently of other matches.\n\nThe team plays two matches.\n\n(a) Find the probability that the team scores exactly 4 points.\n\n(b) Find the probability that the team scores at least 4 points.",
+  "hint": "Draw a tree with three branches at each stage. Which combinations of results give 4 points? Remember the order of the two matches matters.",
+  "answer": "(a) $0.3$ (b) $0.66$",
+  "solution": "Points for each pair of results: WW = 6, WD or DW = 4, WL or LW = 3, DD = 2, DL or LD = 1, LL = 0.\n\n(a) Exactly 4 points: a win and a draw, in either order (two routes):\n$$P(\\text{WD}) + P(\\text{DW}) = 0.6 \\times 0.25 + 0.25 \\times 0.6 = 0.15 + 0.15 = 0.3$$\n\n(b) At least 4 points: 4 or 6 points, i.e. WD, DW or WW.\n$$P(\\text{WW}) = 0.6 \\times 0.6 = 0.36$$\n$$P(\\text{at least 4}) = 0.36 + 0.3 = 0.66$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q09",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "The probability that Mia passes her driving test at the first attempt is $0.45$. If she fails, she takes the test again, and the probability that she passes at the second attempt is $0.6$.\n\n(a) Draw a tree diagram to show this information.\n\n(b) Find the probability that Mia passes her test within her first two attempts.",
+  "hint": "If Mia passes the first time, the tree stops on that branch. She only takes a second test on the \"fail\" branch.",
+  "answer": "(a) First attempt: Pass $0.45$, Fail $0.55$; after Fail: Pass $0.6$, Fail $0.4$ (b) $0.78$",
+  "solution": "(a) First attempt: Pass $0.45$, Fail $1 - 0.45 = 0.55$.\n\nOnly the Fail branch continues. Second attempt: Pass $0.6$, Fail $1 - 0.6 = 0.4$.\n\n(b) Mia passes within two attempts if she passes first time, **or** fails then passes:\n$$0.45 + 0.55 \\times 0.6 = 0.45 + 0.33 = 0.78$$\n\nCheck using the opposite event: fails both $= 0.55 \\times 0.4 = 0.22$, and $1 - 0.22 = 0.78$ ✓\n\nNote that the two attempts are **not** independent here (the second-attempt probability is different), but the tree diagram handles this: each branch shows the probability at that point.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q10",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A drawer contains 4 black socks and 4 white socks. Ben takes two socks out at random, without replacement.\n\nBen says: \"The socks are either the same colour or different colours, and there are the same number of each colour, so the probability that they match is $\\dfrac{1}{2}$.\"\n\n(a) Is Ben correct? Show your working.\n\n(b) If the first sock were put back before the second was taken, would Ben's answer be correct? Explain why the two situations give different answers.",
+  "hint": "Work out $P(\\text{BB}) + P(\\text{WW})$ using a tree diagram. After a black sock is taken, what fraction of the remaining socks are black?",
+  "answer": "(a) No: $P(\\text{same colour}) = \\dfrac{3}{7}$ (b) Yes, with replacement it is $\\dfrac{1}{2}$; without replacement there is one fewer sock of the first colour, so a match is less likely.",
+  "solution": "(a) Without replacement:\n$$P(\\text{BB}) = \\frac{4}{8} \\times \\frac{3}{7} = \\frac{12}{56}, \\qquad P(\\text{WW}) = \\frac{4}{8} \\times \\frac{3}{7} = \\frac{12}{56}$$\n$$P(\\text{same colour}) = \\frac{24}{56} = \\frac{3}{7}$$\n\nBen is **not** correct. \"Same\" and \"different\" are two outcomes, but they are not equally likely.\n\n(b) With replacement, $P(\\text{same}) = \\frac{4}{8} \\times \\frac{4}{8} + \\frac{4}{8} \\times \\frac{4}{8} = \\frac{1}{4} + \\frac{1}{4} = \\frac{1}{2}$, so Ben's answer would be right (though his reasoning still is not a proof).\n\nWithout replacement, whatever colour the first sock is, only 3 of the remaining 7 socks match it, and $\\frac{3}{7} < \\frac{1}{2}$. Removing the first sock changes the second-stage probabilities, which is why the events are not independent.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q11",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><text x=\"60\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">First bead</text><text x=\"190\" y=\"16\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">Second bead</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"81\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"97.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">8/12</text><text x=\"114\" y=\"86\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"55.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"217\" y=\"60.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"81\" x2=\"208\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"217\" y=\"111.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">W</text><line x1=\"12\" y1=\"124\" x2=\"105\" y2=\"167\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.5\" y=\"160.5\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">4/12</text><text x=\"114\" y=\"172\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">W</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"141.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"217\" y=\"146.2\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">R</text><line x1=\"127\" y1=\"167\" x2=\"208\" y2=\"192.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"217\" y=\"197.8\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">W</text></svg>",
+  "question": "There are 8 red beads and 4 white beads in a bag.\n\nSam takes a bead at random from the bag and does **not** put it back. She then takes a second bead at random from the bag.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Complete the probability tree diagram.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Work out the probability that both beads are the same colour.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Work out the probability that at least one of the beads is white.",
+    "marks": 2
+   }
+  ],
+  "marks": 6,
+  "hint": "After the first bead is taken there are 11 beads left. For (c), consider the only outcome that has no white bead.",
+  "answer": "(a) After R: R $\\frac{7}{11}$, W $\\frac{4}{11}$; after W: R $\\frac{8}{11}$, W $\\frac{3}{11}$ (b) $\\dfrac{68}{132} = \\dfrac{17}{33}$ (c) $\\dfrac{76}{132} = \\dfrac{19}{33}$",
+  "solution": "(a) After a red bead: 7 red and 4 white remain, so R $\\frac{7}{11}$, W $\\frac{4}{11}$.\n\nAfter a white bead: 8 red and 3 white remain, so R $\\frac{8}{11}$, W $\\frac{3}{11}$.\n\nB2 for all four correct (B1 for one pair correct, or for denominators of 11 throughout)\n\n(b) $$P(\\text{RR}) + P(\\text{WW}) = \\frac{8}{12} \\times \\frac{7}{11} + \\frac{4}{12} \\times \\frac{3}{11} = \\frac{56}{132} + \\frac{12}{132}$$ M1\n$$= \\frac{68}{132} = \\frac{17}{33}$$ A1 (oe)\n\n(c) The only outcome with no white bead is RR:\n$$1 - P(\\text{RR}) = 1 - \\frac{56}{132}$$ M1 (or $\\frac{32}{132} + \\frac{32}{132} + \\frac{12}{132}$)\n$$= \\frac{76}{132} = \\frac{19}{33}$$ A1 (oe)",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q12",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "On her cycle to work, Ruth passes three sets of traffic lights. The probabilities that she has to stop at the first, second and third sets of lights are $0.3$, $0.4$ and $0.5$ respectively. The lights work independently.\n\n(a) Find the probability that Ruth has to stop at least once.\n\n(b) Find the probability that Ruth has to stop exactly once.\n\n(c) Ruth cycles to work on 200 days in a year. Estimate the number of days on which she does not have to stop at all.",
+  "hint": "For (a), find the probability that she does **not** stop at any of the lights first. For (b), there are three routes: she could stop at the first, second or third lights only.",
+  "answer": "(a) $0.79$ (b) $0.44$ (c) 42 days",
+  "solution": "Probabilities of **not** stopping: $0.7$, $0.6$ and $0.5$.\n\n(a) $P(\\text{no stops}) = 0.7 \\times 0.6 \\times 0.5 = 0.21$, so\n$$P(\\text{at least one stop}) = 1 - 0.21 = 0.79$$\n\n(b) Exactly one stop: three routes on a three-stage tree.\n\nStop at first only: $0.3 \\times 0.6 \\times 0.5 = 0.09$\n\nStop at second only: $0.7 \\times 0.4 \\times 0.5 = 0.14$\n\nStop at third only: $0.7 \\times 0.6 \\times 0.5 = 0.21$\n\n$$P(\\text{exactly one}) = 0.09 + 0.14 + 0.21 = 0.44$$\n\n(c) $0.21 \\times 200 = 42$ days.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q13",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-relative-frequency",
+   "rat-financial-maths"
+  ],
+  "question": "At a school fair, a game costs £1 to play. A player takes two balls at random, without replacement, from a bag containing 3 gold balls and 7 silver balls. If both balls are gold, the player wins £8. Otherwise they win nothing.\n\n(a) Find the probability that a player wins.\n\n(b) The game is played 300 times. Work out how much profit the school should expect to make.",
+  "hint": "Use a tree diagram for the two draws. For (b), find the expected number of wins, then compare the money taken with the money paid out.",
+  "answer": "(a) $\\dfrac{1}{15}$ (b) £140",
+  "solution": "(a) $$P(\\text{both gold}) = \\frac{3}{10} \\times \\frac{2}{9} = \\frac{6}{90} = \\frac{1}{15}$$\n\n(b) Expected number of wins in 300 games:\n$$300 \\times \\frac{1}{15} = 20$$\n\nMoney taken: $300 \\times £1 = £300$\n\nExpected prize money paid out: $20 \\times £8 = £160$\n\nExpected profit: $£300 - £160 = £140$\n\n(The actual profit will vary; £140 is what the school should expect on average.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-tree-diagrams-q14",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising",
+   "alg-forming-equations"
+  ],
+  "question": "A bag contains 10 counters. $x$ of the counters are red and the rest are blue. There are more blue counters than red counters.\n\nTwo counters are taken at random from the bag, without replacement. The probability that one counter of each colour is taken is $\\dfrac{8}{15}$.\n\n(a) Show that $x^2 - 10x + 24 = 0$.\n\n(b) Find the probability that both counters are blue.",
+  "hint": "There are two routes for \"one of each colour\": red then blue, and blue then red. Write each in terms of $x$.",
+  "answer": "(a) Shown (b) $\\dfrac{1}{3}$",
+  "solution": "(a) There are $x$ red and $10 - x$ blue counters.\n\n$$P(\\text{RB}) = \\frac{x}{10} \\times \\frac{10 - x}{9}, \\qquad P(\\text{BR}) = \\frac{10 - x}{10} \\times \\frac{x}{9}$$\n\nOne of each colour (two routes):\n$$\\frac{2x(10 - x)}{90} = \\frac{8}{15}$$\n$$x(10 - x) = \\frac{8}{15} \\times 45 = 24$$\n$$10x - x^2 = 24 \\quad\\Rightarrow\\quad x^2 - 10x + 24 = 0 \\quad \\text{as required}$$\n\n(b) Factorise: $(x - 4)(x - 6) = 0$, so $x = 4$ or $x = 6$.\n\nThere are more blue than red counters, so $x = 4$: 4 red and 6 blue.\n\n$$P(\\text{both blue}) = \\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90} = \\frac{1}{3}$$",
+  "misconceptionIds": [
+   "m3",
+   "m2"
+  ],
+  "id": "prob-tree-diagrams-q15",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Ali and Chloe play a tennis match. The first player to win two sets wins the match. In each set, the probability that Ali wins is $0.6$, independently of the other sets.\n\n(a) Find the probability that the match lasts exactly three sets.\n\n(b) Find the probability that Ali wins the match.\n\n(c) Ali says, \"Playing best of three sets gives me a better chance of winning than playing just one set.\" Is Ali correct? Give a reason.",
+  "hint": "Draw a tree, but stop a branch as soon as someone has won two sets. The match lasts three sets only if the first two sets are shared.",
+  "answer": "(a) $0.48$ (b) $0.648$ (c) Yes: $0.648 > 0.6$",
+  "solution": "Let A = Ali wins a set, C = Chloe wins a set.\n\n(a) The match lasts three sets if the first two sets are split: AC or CA.\n$$P = 0.6 \\times 0.4 + 0.4 \\times 0.6 = 0.24 + 0.24 = 0.48$$\n\n(b) Ali wins in two sets: AA, probability $0.6^2 = 0.36$.\n\nAli wins in three sets: ACA or CAA, probability $2 \\times 0.6 \\times 0.4 \\times 0.6 = 0.288$.\n\n$$P(\\text{Ali wins}) = 0.36 + 0.288 = 0.648$$\n\n(c) Yes. In a single set Ali wins with probability $0.6$; over best of three it rises to $0.648$. Longer matches give the stronger player more chances for their advantage to show.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q16",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Asha and Ben take turns to roll a fair six-sided dice. Asha rolls first. The first person to roll a six wins, and the game then stops.\n\n(a) Find the probability that Ben wins on his first roll.\n\n(b) Find the probability that Asha wins on her second roll.\n\n(c) Let $p$ be the probability that Asha wins the game. By considering what happens if neither player rolls a six in their first rolls, explain why\n$$p = \\frac{1}{6} + \\frac{25}{36}p$$\nand hence find $p$.",
+  "hint": "For Asha to win on her second roll, three rolls must happen in order: not six, not six, six. For (c), if both players miss their first roll, the game is back to exactly where it started.",
+  "answer": "(a) $\\dfrac{5}{36}$ (b) $\\dfrac{25}{216}$ (c) $p = \\dfrac{6}{11}$",
+  "solution": "Each roll: $P(6) = \\frac{1}{6}$, $P(\\text{not } 6) = \\frac{5}{6}$, independently.\n\n(a) Asha misses, then Ben rolls a six:\n$$\\frac{5}{6} \\times \\frac{1}{6} = \\frac{5}{36}$$\n\n(b) Asha misses, Ben misses, Asha rolls a six:\n$$\\frac{5}{6} \\times \\frac{5}{6} \\times \\frac{1}{6} = \\frac{25}{216}$$\n\n(c) Asha can win in two ways:\n\n- she rolls a six straight away: probability $\\frac{1}{6}$; **or**\n- both players miss their first roll (probability $\\frac{5}{6} \\times \\frac{5}{6} = \\frac{25}{36}$). The game is then exactly as it was at the start, with Asha to roll, so from that point she wins with probability $p$ again. This route has probability $\\frac{25}{36} \\times p$.\n\nThese are the only ways (if Asha misses and Ben hits, Ben wins), so\n$$p = \\frac{1}{6} + \\frac{25}{36}p$$\n$$\\frac{11}{36}p = \\frac{1}{6} \\quad\\Rightarrow\\quad p = \\frac{1}{6} \\times \\frac{36}{11} = \\frac{6}{11}$$\n\nGoing first is an advantage: $\\frac{6}{11} \\approx 0.545 > \\frac{1}{2}$.",
+  "misconceptionIds": [],
+  "linkedTopicIds": [],
+  "id": "prob-tree-diagrams-q17",
+  "topicId": "prob-tree-diagrams"
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "question": "A bag contains red and blue counters only. A fraction $p$ of the counters are red. Two counters are taken at random **with replacement**.\n\n(a) Prove that the probability that both counters are the same colour is at least $\\dfrac{1}{2}$, and state when it is exactly $\\dfrac{1}{2}$.\n\n(b) Give an example to show that this result is **not** always true if the counters are taken without replacement.",
+  "hint": "Write $P(\\text{same})$ as a quadratic in $p$ and complete the square.",
+  "answer": "(a) $P(\\text{same}) = p^2 + (1 - p)^2 = 2\\left(p - \\frac{1}{2}\\right)^2 + \\frac{1}{2} \\ge \\frac{1}{2}$, with equality when $p = \\frac{1}{2}$ (equal numbers of each colour). (b) e.g. 1 red and 1 blue counter: $P(\\text{same}) = 0$.",
+  "solution": "(a) With replacement the draws are independent, and $P(\\text{blue}) = 1 - p$ on each draw.\n$$P(\\text{same}) = P(\\text{RR}) + P(\\text{BB}) = p^2 + (1 - p)^2 = 2p^2 - 2p + 1$$\n\nComplete the square:\n$$2p^2 - 2p + 1 = 2\\left(p^2 - p\\right) + 1 = 2\\left(p - \\tfrac{1}{2}\\right)^2 - \\tfrac{1}{2} + 1 = 2\\left(p - \\tfrac{1}{2}\\right)^2 + \\tfrac{1}{2}$$\n\nA square is never negative, so $P(\\text{same}) \\ge \\frac{1}{2}$, with equality only when $p = \\frac{1}{2}$, i.e. when there are equal numbers of red and blue counters.\n\n(b) Without replacement the second-stage probabilities change. For example, with 1 red and 1 blue counter, the second counter is always the other colour, so $P(\\text{same}) = 0 < \\frac{1}{2}$. (Similarly, 4 black and 4 white socks give $\\frac{3}{7}$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "prob-tree-diagrams-q18",
+  "topicId": "prob-tree-diagrams"
+ }
+]

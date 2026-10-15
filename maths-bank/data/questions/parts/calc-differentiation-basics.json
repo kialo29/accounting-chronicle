@@ -1,0 +1,354 @@
+[
+ {
+  "id": "calc-differentiation-basics-q01",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Given $y = 6x^4$, find $\\dfrac{dy}{dx}$.",
+  "hint": "Multiply by the power, then reduce the power by $1$.",
+  "answer": "$\\dfrac{dy}{dx} = 24x^3$",
+  "solution": "Power rule: $\\frac{d}{dx}(ax^n) = anx^{n-1}$.\n\nHere $a = 6$ and $n = 4$:\n$$\\frac{dy}{dx} = 6 \\times 4x^{4-1} = 24x^3$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q02",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Given $y = 6x^{-4}$, find $\\dfrac{dy}{dx}$.",
+  "hint": "The same rule works for negative powers. What is $-4 - 1$?",
+  "answer": "$\\dfrac{dy}{dx} = -24x^{-5}$",
+  "solution": "**What changed:** the power is now $-4$ instead of $4$.\n\nMultiply by the power:\n$$6 \\times (-4) = -24$$\n\nReduce the power by $1$: $-4 - 1 = -5$ (more negative, not $-3$).\n$$\\frac{dy}{dx} = -24x^{-5}$$\n\nThe negative power makes the coefficient negative and the new power moves further from zero.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q03",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Given $y = \\dfrac{6}{x^4}$, find $\\dfrac{dy}{dx}$, giving your answer as a fraction with a positive power of $x$.",
+  "hint": "Write $y$ as a power of $x$ before differentiating.",
+  "answer": "$\\dfrac{dy}{dx} = -\\dfrac{24}{x^5}$",
+  "solution": "**What changed:** only the notation. $\\dfrac{6}{x^4}$ is the same function as $6x^{-4}$.\n\nRewrite:\n$$y = 6x^{-4}$$\n\nDifferentiate:\n$$\\frac{dy}{dx} = -24x^{-5}$$\n\nWrite with a positive power:\n$$\\frac{dy}{dx} = -\\frac{24}{x^5}$$\n\nSame function, so the same derivative as the previous question – only the way it is written has changed.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q04",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Given $y = \\dfrac{1}{6x^4}$, find $\\dfrac{dy}{dx}$, giving your answer as a fraction with a positive power of $x$.",
+  "hint": "Only the $x^4$ moves to the numerator. The $6$ stays in the denominator as $\\frac{1}{6}$.",
+  "answer": "$\\dfrac{dy}{dx} = -\\dfrac{2}{3x^5}$",
+  "solution": "**What changed:** the $6$ is now in the denominator with the $x^4$.\n\nRewrite carefully – only the power of $x$ moves up:\n$$y = \\frac{1}{6}x^{-4} \\qquad \\left(\\text{not } 6x^{-4}\\right)$$\n\nDifferentiate:\n$$\\frac{dy}{dx} = \\frac{1}{6} \\times (-4)x^{-5} = -\\frac{4}{6}x^{-5} = -\\frac{2}{3}x^{-5}$$\n\nSo\n$$\\frac{dy}{dx} = -\\frac{2}{3x^5}$$\n\nCompare with the previous question: moving the $6$ into the denominator divides the derivative by $36$ ($-\\frac{24}{x^5} \\div 36 = -\\frac{2}{3x^5}$).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q05",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "$f(x) = x^3 - 4x^2 + 7x - 2$\n\nFind $f'(x)$ and $f''(x)$, and hence find the value of $f''(2)$.",
+  "hint": "Differentiate term by term. The constant term differentiates to $0$. Then differentiate $f'(x)$ again.",
+  "answer": "$f'(x) = 3x^2 - 8x + 7$, $f''(x) = 6x - 8$, $f''(2) = 4$",
+  "solution": "Differentiate each term ($7x$ gives $7$, and $-2$ gives $0$):\n$$f'(x) = 3x^2 - 8x + 7$$\n\nDifferentiate again to get the second derivative:\n$$f''(x) = 6x - 8$$\n\nSubstitute $x = 2$:\n$$f''(2) = 12 - 8 = 4$$",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q06",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A curve has equation $y = 8\\sqrt{x} - \\dfrac{3}{x} + \\dfrac{x^2}{4}$, $x > 0$.\n\nFind the gradient of the curve at the point where $x = 4$.",
+  "hint": "Write every term as a power of $x$: $\\sqrt{x} = x^{\\frac12}$, $\\frac{3}{x} = 3x^{-1}$, $\\frac{x^2}{4} = \\frac14 x^2$.",
+  "answer": "$\\dfrac{67}{16}$",
+  "solution": "Rewrite as powers of $x$:\n$$y = 8x^{\\frac12} - 3x^{-1} + \\tfrac14 x^2$$\n\nDifferentiate term by term:\n$$\\frac{dy}{dx} = 8 \\times \\tfrac12 x^{-\\frac12} - 3 \\times (-1)x^{-2} + \\tfrac14 \\times 2x = 4x^{-\\frac12} + 3x^{-2} + \\tfrac12 x$$\n\nAt $x = 4$: $4^{-\\frac12} = \\frac12$ and $4^{-2} = \\frac{1}{16}$, so\n$$\\frac{dy}{dx} = 4\\left(\\tfrac12\\right) + 3\\left(\\tfrac{1}{16}\\right) + \\tfrac12(4) = 2 + \\tfrac{3}{16} + 2 = \\frac{67}{16}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q07",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to find $\\dfrac{dy}{dx}$ when $y = (2x + 3)(x^2 - 5)$. Her working is shown below.\n\n$$\\frac{d}{dx}(2x+3) = 2 \\qquad \\frac{d}{dx}(x^2-5) = 2x$$\n\n$$\\frac{dy}{dx} = 2 \\times 2x = 4x$$\n\nIdentify Priya's error, explain why it is wrong, and find the correct $\\dfrac{dy}{dx}$.",
+  "hint": "Is the derivative of a product the product of the derivatives? Expand the brackets first.",
+  "answer": "Priya differentiated each bracket and multiplied the results; the derivative of a product is not the product of the derivatives. Correct: $\\dfrac{dy}{dx} = 6x^2 + 6x - 10$.",
+  "solution": "**Error:** Priya differentiated each bracket separately and multiplied the answers. There is no such rule – the derivative of a product is **not** the product of the derivatives.\n\nA quick check shows it fails: $y = x \\times x = x^2$ has derivative $2x$, but \"differentiating each factor\" would give $1 \\times 1 = 1$.\n\n**Correct method:** expand first.\n$$y = (2x+3)(x^2-5) = 2x^3 - 10x + 3x^2 - 15 = 2x^3 + 3x^2 - 10x - 15$$\n\nDifferentiate term by term:\n$$\\frac{dy}{dx} = 6x^2 + 6x - 10$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q08",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ahmed is asked to differentiate $y = \\dfrac{4}{\\sqrt{x}} + \\dfrac{2}{x^3}$, $x > 0$. His working is shown below.\n\nLine 1: $y = 4x^{-\\frac12} + 2x^{-3}$\n\nLine 2: $\\dfrac{dy}{dx} = 4\\left(-\\tfrac12\\right)x^{\\frac12} + 2(-3)x^{-2}$\n\nLine 3: $\\dfrac{dy}{dx} = -2\\sqrt{x} - \\dfrac{6}{x^2}$\n\nIdentify the line containing Ahmed's error, explain the mistake, and give the correct $\\dfrac{dy}{dx}$.",
+  "hint": "Check the new powers in Line 2. What is $-\\frac12 - 1$? What is $-3 - 1$?",
+  "answer": "Line 2: he added $1$ to the negative powers instead of subtracting $1$. Correct: $\\dfrac{dy}{dx} = -2x^{-\\frac32} - 6x^{-4} = -\\dfrac{2}{x\\sqrt{x}} - \\dfrac{6}{x^4}$",
+  "solution": "Line 1 is correct: $\\frac{4}{\\sqrt{x}} = 4x^{-\\frac12}$ and $\\frac{2}{x^3} = 2x^{-3}$.\n\n**Line 2 is wrong.** The coefficients $4 \\times (-\\frac12)$ and $2 \\times (-3)$ are right, but Ahmed has made the powers *less negative* ($-\\frac12 \\to \\frac12$ and $-3 \\to -2$). That is adding $1$. The power rule always **subtracts** $1$, so a negative power becomes more negative:\n$$-\\tfrac12 - 1 = -\\tfrac32, \\qquad -3 - 1 = -4$$\n\n**Correct working:**\n$$\\frac{dy}{dx} = 4\\left(-\\tfrac12\\right)x^{-\\frac32} + 2(-3)x^{-4} = -2x^{-\\frac32} - 6x^{-4}$$\n\nwhich can be written\n$$\\frac{dy}{dx} = -\\frac{2}{x\\sqrt{x}} - \\frac{6}{x^4}$$\n\n(Sense check: $y$ is decreasing for $x > 0$ and flattens out as $x$ grows, so the gradient should be negative and tend to $0$ – Ahmed's $-2\\sqrt{x}$ would get steeper and steeper, which cannot be right.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q09",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "In this question $a$ is a constant.\n\nJess is asked to find $\\dfrac{dy}{dx}$ when $y = a^2x^3 + a^3$. She writes\n$$\\frac{dy}{dx} = 3a^2x^2 + 3a^2$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Is Jess correct? Explain your answer."
+   },
+   {
+    "label": "b",
+    "prompt": "Given that the gradient of the curve at $x = 1$ is $12$, find the possible values of $a$."
+   }
+  ],
+  "hint": "We are differentiating with respect to $x$. Which parts of the expression change when $x$ changes?",
+  "answer": "(a) No. $a^3$ is a constant, so its derivative is $0$: $\\dfrac{dy}{dx} = 3a^2x^2$. (b) $a = 2$ or $a = -2$",
+  "solution": "**(a)** Jess is not correct. The derivative is taken **with respect to $x$**, and $a$ is a constant.\n\n- $a^2x^3$ is a constant ($a^2$) times $x^3$, so it differentiates to $a^2 \\times 3x^2 = 3a^2x^2$. Jess got this term right.\n- $a^3$ contains no $x$ at all. It is a fixed number (e.g. if $a = 2$ it is $8$), so its derivative is $0$. Jess has treated $a$ as if it were the variable and used the power rule on $a^3$.\n\nCorrect answer:\n$$\\frac{dy}{dx} = 3a^2x^2$$\n\n**(b)** At $x = 1$: $3a^2(1)^2 = 12$, so $a^2 = 4$ and\n$$a = 2 \\text{ or } a = -2$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q10",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A ball is thrown vertically upwards. Its height above the ground, $h$ metres, $t$ seconds after it is thrown, is modelled by\n$$h = 1.5 + 14t - 4.9t^2$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dh}{dt}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the value of $\\dfrac{dh}{dt}$ when $t = 2$ and explain what it tells you about the ball."
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\dfrac{d^2h}{dt^2}$ and interpret its value."
+   }
+  ],
+  "hint": "$\\frac{dh}{dt}$ is the rate of change of height, i.e. the velocity. Differentiate with respect to $t$ exactly as you would with respect to $x$.",
+  "answer": "(a) $\\dfrac{dh}{dt} = 14 - 9.8t$ (b) $-5.6$: the ball is moving downwards at $5.6\\ \\text{m s}^{-1}$ (c) $\\dfrac{d^2h}{dt^2} = -9.8$: a constant acceleration of $9.8\\ \\text{m s}^{-2}$ downwards (gravity)",
+  "solution": "**(a)** Differentiate with respect to $t$ (the constant $1.5$ gives $0$):\n$$\\frac{dh}{dt} = 14 - 9.8t$$\n\n**(b)** At $t = 2$:\n$$\\frac{dh}{dt} = 14 - 19.6 = -5.6$$\n$\\frac{dh}{dt}$ is the rate of change of height, i.e. the vertical velocity in $\\text{m s}^{-1}$. It is negative, so the height is decreasing: after 2 seconds the ball is falling at $5.6\\ \\text{m s}^{-1}$.\n\n**(c)**\n$$\\frac{d^2h}{dt^2} = -9.8$$\nThis is the rate of change of velocity, i.e. the acceleration: $-9.8\\ \\text{m s}^{-2}$, constant. The ball's upward velocity decreases by $9.8\\ \\text{m s}^{-1}$ every second – the acceleration due to gravity, acting downwards.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q11",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A workshop makes $x$ electric scooters per week, where $0 \\le x \\le 200$. The total weekly cost, $£C$, is modelled by\n$$C = 0.002x^3 - 0.6x^2 + 80x + 5000$$\nThe derivative $\\dfrac{dC}{dx}$ is called the *marginal cost*.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dC}{dx}$ when $x = 50$ and interpret your answer in context."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\dfrac{d^2C}{dx^2}$ when $x = 50$ and explain what it tells you about the marginal cost."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the weekly output at which the marginal cost is £20."
+   }
+  ],
+  "hint": "Differentiate term by term; the fixed cost £5000 differentiates to $0$. For (c), set $\\frac{dC}{dx} = 20$ and solve the quadratic.",
+  "answer": "(a) $35$: making one more scooter (the 51st) costs about £35 extra (b) $-0.6$: the marginal cost is decreasing (by about £0.60 per extra scooter) (c) $x = 100$ scooters per week",
+  "solution": "$$\\frac{dC}{dx} = 0.006x^2 - 1.2x + 80, \\qquad \\frac{d^2C}{dx^2} = 0.012x - 1.2$$\n\n**(a)** At $x = 50$:\n$$\\frac{dC}{dx} = 0.006(2500) - 1.2(50) + 80 = 15 - 60 + 80 = 35$$\nWhen 50 scooters a week are being made, the cost is rising at about £35 per extra scooter, so making a 51st scooter adds roughly £35 to the weekly cost.\n\n**(b)** At $x = 50$:\n$$\\frac{d^2C}{dx^2} = 0.6 - 1.2 = -0.6$$\nThis is negative, so the marginal cost is decreasing: each extra scooter is (for now) slightly cheaper to make than the one before, by about £0.60 per scooter.\n\n**(c)** Set $\\frac{dC}{dx} = 20$:\n$$0.006x^2 - 1.2x + 80 = 20 \\;\\Rightarrow\\; 0.006x^2 - 1.2x + 60 = 0$$\nDivide by $0.006$:\n$$x^2 - 200x + 10000 = 0 \\;\\Rightarrow\\; (x - 100)^2 = 0$$\nSo $x = 100$ scooters per week. (This is where marginal cost is lowest.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q12",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 7,
+  "question": "$$f(x) = \\frac{(x+3)^2}{\\sqrt{x}}, \\qquad x > 0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $f(x)$ can be written in the form $x^{\\frac32} + Ax^{\\frac12} + Bx^{-\\frac12}$, where $A$ and $B$ are constants to be found.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find $f'(x)$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact value of the gradient of the curve $y = f(x)$ at the point where $x = 9$.",
+    "marks": 2
+   }
+  ],
+  "hint": "Expand $(x+3)^2$, then divide each term by $x^{\\frac12}$ using the index laws. Do not try to differentiate the top and bottom separately.",
+  "answer": "(a) $A = 6$, $B = 9$ (b) $f'(x) = \\tfrac32x^{\\frac12} + 3x^{-\\frac12} - \\tfrac92x^{-\\frac32}$ (c) $\\dfrac{16}{3}$",
+  "solution": "**(a)** $(x+3)^2 = x^2 + 6x + 9$ **M1** (expanding and attempting to divide each term by $x^{\\frac12}$)\n$$f(x) = \\frac{x^2}{x^{\\frac12}} + \\frac{6x}{x^{\\frac12}} + \\frac{9}{x^{\\frac12}} = x^{\\frac32} + 6x^{\\frac12} + 9x^{-\\frac12}$$\nSo $A = 6$, $B = 9$. **A1**\n\n**(b)**\n$$f'(x) = \\tfrac32x^{\\frac12} + 6 \\times \\tfrac12 x^{-\\frac12} + 9 \\times \\left(-\\tfrac12\\right)x^{-\\frac32}$$\n**M1** for $x^n \\to x^{n-1}$ on at least one term\n$$f'(x) = \\tfrac32x^{\\frac12} + 3x^{-\\frac12} - \\tfrac92x^{-\\frac32}$$\n**A1** two terms correct, **A1** all three correct.\n\n**(c)** At $x = 9$: $9^{\\frac12} = 3$, $9^{-\\frac12} = \\frac13$, $9^{-\\frac32} = \\frac{1}{27}$. **M1** (substituting $x = 9$ into $f'(x)$)\n$$f'(9) = \\tfrac32(3) + 3\\left(\\tfrac13\\right) - \\tfrac92\\left(\\tfrac{1}{27}\\right) = \\tfrac92 + 1 - \\tfrac16 = \\frac{16}{3}$$ **A1**\n\nNote: \"differentiating top and bottom\", $\\frac{2(x+3)}{\\frac12x^{-\\frac12}}$, scores no marks in (b).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q13",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "$$f(x) = ax^2 + \\frac{b}{x}, \\qquad x \\ne 0$$\nwhere $a$ and $b$ are constants. Given that $f'(1) = 2$ and $f'(2) = 11$, find the values of $a$ and $b$, and hence find $f''(1)$.",
+  "hint": "Write $\\frac{b}{x} = bx^{-1}$, differentiate, then substitute $x = 1$ and $x = 2$ to get two equations in $a$ and $b$.",
+  "answer": "$a = 3$, $b = 4$, $f''(1) = 14$",
+  "solution": "Write $f(x) = ax^2 + bx^{-1}$. Then\n$$f'(x) = 2ax - bx^{-2} = 2ax - \\frac{b}{x^2}$$\n\n$f'(1) = 2$: $\\quad 2a - b = 2 \\quad (1)$\n\n$f'(2) = 11$: $\\quad 4a - \\frac{b}{4} = 11 \\;\\Rightarrow\\; 16a - b = 44 \\quad (2)$\n\n$(2) - (1)$: $14a = 42$, so $a = 3$, and then $b = 2a - 2 = 4$.\n\nSecond derivative:\n$$f''(x) = 2a + 2bx^{-3} = 6 + \\frac{8}{x^3}$$\nso $f''(1) = 6 + 8 = 14$.",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "calc-differentiation-basics-q14",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A curve has equation $y = \\dfrac{2x^2 - 3}{\\sqrt{x}}$, $x > 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the gradient of the curve at the point where $x = 3$, giving your answer in the form $k\\sqrt{3}$ where $k$ is a rational number."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact value of $\\dfrac{d^2y}{dx^2}$ at $x = 3$, giving your answer in the form $m\\sqrt{3}$."
+   }
+  ],
+  "hint": "Split the fraction into $2x^{\\frac32} - 3x^{-\\frac12}$. When you substitute, $3^{\\frac12} = \\sqrt3$ and $3^{-\\frac32} = \\frac{1}{3\\sqrt3}$; rationalise the denominators.",
+  "answer": "(a) $\\dfrac{19\\sqrt{3}}{6}$ (b) $\\dfrac{5\\sqrt{3}}{12}$",
+  "solution": "Split the fraction (dividing each term by $x^{\\frac12}$):\n$$y = 2x^{\\frac32} - 3x^{-\\frac12}$$\n\n**(a)**\n$$\\frac{dy}{dx} = 3x^{\\frac12} + \\tfrac32x^{-\\frac32}$$\nAt $x = 3$: $3^{\\frac12} = \\sqrt3$ and $3^{-\\frac32} = \\dfrac{1}{3\\sqrt3}$.\n$$\\frac{dy}{dx} = 3\\sqrt3 + \\frac32 \\times \\frac{1}{3\\sqrt3} = 3\\sqrt3 + \\frac{1}{2\\sqrt3}$$\nRationalise: $\\dfrac{1}{2\\sqrt3} = \\dfrac{\\sqrt3}{6}$, so\n$$\\frac{dy}{dx} = \\frac{18\\sqrt3}{6} + \\frac{\\sqrt3}{6} = \\frac{19\\sqrt3}{6}$$\n\n**(b)**\n$$\\frac{d^2y}{dx^2} = \\tfrac32x^{-\\frac12} - \\tfrac94x^{-\\frac52}$$\nAt $x = 3$: $3^{-\\frac12} = \\dfrac{1}{\\sqrt3} = \\dfrac{\\sqrt3}{3}$ and $3^{-\\frac52} = \\dfrac{1}{9\\sqrt3} = \\dfrac{\\sqrt3}{27}$.\n$$\\frac{d^2y}{dx^2} = \\frac32 \\times \\frac{\\sqrt3}{3} - \\frac94 \\times \\frac{\\sqrt3}{27} = \\frac{\\sqrt3}{2} - \\frac{\\sqrt3}{12} = \\frac{5\\sqrt3}{12}$$",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "calc-differentiation-basics-q15",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Find all the values of the constant $n$ for which $y = x^n$ satisfies\n$$x^2\\frac{d^2y}{dx^2} - 2x\\frac{dy}{dx} - 4y = 0$$\nfor all $x > 0$.",
+  "hint": "Find $\\frac{dy}{dx}$ and $\\frac{d^2y}{dx^2}$ in terms of $n$ and $x$, substitute, and notice that every term becomes a multiple of $x^n$.",
+  "answer": "$n = 4$ or $n = -1$",
+  "solution": "For $y = x^n$:\n$$\\frac{dy}{dx} = nx^{n-1}, \\qquad \\frac{d^2y}{dx^2} = n(n-1)x^{n-2}$$\n\nSubstitute:\n$$x^2 \\cdot n(n-1)x^{n-2} - 2x \\cdot nx^{n-1} - 4x^n = \\big(n(n-1) - 2n - 4\\big)x^n$$\n\nFor this to be $0$ for all $x > 0$ we need (as $x^n \\ne 0$)\n$$n^2 - n - 2n - 4 = 0 \\;\\Rightarrow\\; n^2 - 3n - 4 = 0 \\;\\Rightarrow\\; (n - 4)(n + 1) = 0$$\n\nSo $n = 4$ or $n = -1$.\n\nCheck $n = -1$: $y = x^{-1}$, $y' = -x^{-2}$, $y'' = 2x^{-3}$: $2x^{-1} + 2x^{-1} - 4x^{-1} = 0$ ✓",
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "calc-differentiation-basics-q16",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Let $y = \\sqrt{x\\sqrt{x\\sqrt{x}}}$, $x > 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $y = x^{\\frac78}$ and hence find $\\dfrac{dy}{dx}$."
+   },
+   {
+    "label": "b",
+    "prompt": "The same pattern is continued with four square roots: $y_4 = \\sqrt{x\\sqrt{x\\sqrt{x\\sqrt{x}}}}$. Find $\\dfrac{dy_4}{dx}$."
+   },
+   {
+    "label": "c",
+    "prompt": "Show that with $n$ nested square roots, $y_n = x^{1 - 2^{-n}}$. Hence describe what happens to $\\dfrac{dy_n}{dx}$ as $n$ becomes very large, and explain why this makes sense."
+   }
+  ],
+  "hint": "Work from the inside out using index laws: $\\sqrt{x} = x^{\\frac12}$, then $x \\cdot x^{\\frac12} = x^{\\frac32}$, and so on.",
+  "answer": "(a) $\\dfrac{dy}{dx} = \\tfrac78x^{-\\frac18}$ (b) $\\dfrac{dy_4}{dx} = \\tfrac{15}{16}x^{-\\frac{1}{16}}$ (c) $\\dfrac{dy_n}{dx} = (1 - 2^{-n})x^{-2^{-n}} \\to 1$; the curves approach $y = x$, whose gradient is $1$",
+  "solution": "**(a)** Work from the inside out:\n$$\\sqrt{x} = x^{\\frac12}, \\quad x\\sqrt{x} = x^{\\frac32}, \\quad \\sqrt{x\\sqrt x} = x^{\\frac34}, \\quad x\\sqrt{x\\sqrt x} = x^{\\frac74}, \\quad \\sqrt{x\\sqrt{x\\sqrt x}} = x^{\\frac78}$$\nSo $y = x^{\\frac78}$ and\n$$\\frac{dy}{dx} = \\tfrac78x^{-\\frac18}$$\n\n**(b)** One more layer: $x \\cdot x^{\\frac78} = x^{\\frac{15}{8}}$, and the square root gives $y_4 = x^{\\frac{15}{16}}$. So\n$$\\frac{dy_4}{dx} = \\tfrac{15}{16}x^{-\\frac{1}{16}}$$\n\n**(c)** If $y_n = x^{p_n}$ then $y_{n+1} = \\sqrt{x \\cdot x^{p_n}} = x^{\\frac{1 + p_n}{2}}$, so $p_{n+1} = \\frac{1 + p_n}{2}$, with $p_1 = \\frac12$.\n\nIf $p_n = 1 - 2^{-n}$ then $p_{n+1} = \\dfrac{2 - 2^{-n}}{2} = 1 - 2^{-(n+1)}$, and $p_1 = 1 - \\frac12$ is correct, so the pattern continues for every $n$ (this matches $\\frac12, \\frac34, \\frac78, \\frac{15}{16}$).\n\nThen\n$$\\frac{dy_n}{dx} = (1 - 2^{-n})x^{-2^{-n}}$$\nAs $n$ grows, $2^{-n} \\to 0$, so $1 - 2^{-n} \\to 1$ and $x^{-2^{-n}} \\to x^0 = 1$ for each fixed $x > 0$. The gradient function tends to the constant $1$.\n\nThis makes sense: the \"infinite\" expression $Y = \\sqrt{x\\sqrt{x\\sqrt{x\\cdots}}}$ satisfies $Y = \\sqrt{xY}$, so $Y^2 = xY$ and $Y = x$, a straight line of gradient $1$.",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-differentiation-basics-q17",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "In this question $x > 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that if $y = x^n$, where $n$ is a constant, then $x^2\\dfrac{d^2y}{dx^2} + x\\dfrac{dy}{dx} = n^2y$."
+   },
+   {
+    "label": "b",
+    "prompt": "Hence find the function $y = Ax^p + Bx^q$, where $A$ and $B$ are non-zero constants and $p > q$, which satisfies $x^2\\dfrac{d^2y}{dx^2} + x\\dfrac{dy}{dx} = 9y$, and for which $y = 2$ and $\\dfrac{dy}{dx} = 0$ when $x = 1$. Justify your choice of $p$ and $q$."
+   }
+  ],
+  "hint": "For (b), apply the left-hand side to each term separately; the result is $A(p^2 - 9)x^p + B(q^2 - 9)x^q$.",
+  "answer": "(a) Proof (see solution) (b) $y = x^3 + x^{-3}$",
+  "solution": "**(a)** $\\dfrac{dy}{dx} = nx^{n-1}$ and $\\dfrac{d^2y}{dx^2} = n(n-1)x^{n-2}$. So\n$$x^2\\frac{d^2y}{dx^2} + x\\frac{dy}{dx} = n(n-1)x^n + nx^n = (n^2 - n + n)x^n = n^2x^n = n^2y \\qquad \\blacksquare$$\n\n**(b)** Differentiation works term by term, so by part (a) applied to each term,\n$$x^2y'' + xy' - 9y = A(p^2 - 9)x^p + B(q^2 - 9)x^q$$\nThis must be $0$ for all $x > 0$. Since $p \\ne q$, the powers $x^p$ and $x^q$ cannot cancel each other for every $x$ (e.g. divide by $x^q$: $A(p^2-9)x^{p-q} = -B(q^2-9)$ would make a non-constant function equal a constant unless both sides are $0$). With $A, B \\ne 0$ this forces $p^2 = 9$ and $q^2 = 9$, so with $p > q$:\n$$p = 3, \\quad q = -3$$\n\nNow $y = Ax^3 + Bx^{-3}$ and $\\dfrac{dy}{dx} = 3Ax^2 - 3Bx^{-4}$.\n\n$x = 1$, $y = 2$: $\\quad A + B = 2$\n\n$x = 1$, $\\frac{dy}{dx} = 0$: $\\quad 3A - 3B = 0 \\Rightarrow A = B$\n\nSo $A = B = 1$ and\n$$y = x^3 + x^{-3} = x^3 + \\frac{1}{x^3}$$",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "calc-differentiation-basics-q18",
+  "topicId": "calc-differentiation-basics",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "$$y = (1 - \\sqrt{x})(1 + \\sqrt{x})(1 + x)(1 + x^2)(1 + x^4), \\qquad x \\ge 0$$\n\nFind $\\dfrac{d^2y}{dx^2}$, showing your method clearly.",
+  "hint": "Do not differentiate bracket by bracket. Multiply the first two brackets together – what do you notice? Keep going.",
+  "answer": "$\\dfrac{d^2y}{dx^2} = -56x^6$",
+  "solution": "Differentiating each factor separately is not valid (and expanding blindly would be long). Look for a difference of two squares:\n$$(1 - \\sqrt x)(1 + \\sqrt x) = 1 - x$$\n$$(1 - x)(1 + x) = 1 - x^2$$\n$$(1 - x^2)(1 + x^2) = 1 - x^4$$\n$$(1 - x^4)(1 + x^4) = 1 - x^8$$\n\nSo the whole product simplifies to\n$$y = 1 - x^8$$\n\nThen\n$$\\frac{dy}{dx} = -8x^7, \\qquad \\frac{d^2y}{dx^2} = -56x^6$$",
+  "linkedTopicIds": [
+   "alg-expand-double-triple"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
