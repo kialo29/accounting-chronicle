@@ -9,4 +9,4 @@ Checked 18 questions: 15 ok, 0 fixed, 3 clarified. Topic details: ok
 All proofs were checked line by line (every statement has a valid reason, congruence criteria match the included/non-included arrangement, CPCTC only after a congruence line). q09's counterexample (AC ≈ 9.22 or 3.04) and q13(b) (x = 9, AC = 34, AB = 30) were verified numerically.
 
 ### Diagram audit
-14 diagrams checked (13 questions + worked example 2): 11 ok, 3 changed (q06 caption, q14 label as above; q09 diagram unchanged, wording changed). q09, q13, q14 and q15 diagrams are to scale.
+14 diagrams checked (13 questions + worked example 2): 12 ok, 2 changed (q06 caption, q14 label, as above). q09, q13, q14 and q15 diagrams are to scale.
