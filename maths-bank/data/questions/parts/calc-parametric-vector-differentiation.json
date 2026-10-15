@@ -38,7 +38,7 @@
   "question": "A curve has parametric equations $x=t^2$, $y=4t^3$. Find the gradient of the curve at the point $(4,32)$.",
   "hint": "$4$ and $32$ are coordinates, not values of $t$. Which value of $t$ gives this point?",
   "answer": "$12$ (at $t=2$)",
-  "solution": "**What changed:** the point is now given by its coordinates rather than by $t$, so first find $t$.\n\n$x=4\\Rightarrow t^2=4\\Rightarrow t=\\pm2$. Check with $y$: $t=2$ gives $y=32$ ✓; $t=-2$ gives $y=-32$ ✗. So $t=2$.\n\nFrom the previous question, $\\frac{dy}{dx}=6t$, so the gradient is $6\\times2=12$.\n\n(Substituting $t=4$ or $t=32$ would be a mistake: those are coordinates, not parameter values.)",
+  "solution": "**What changed:** the point is now given by its coordinates rather than by $t$, so first find $t$.\n\n$x=4\\Rightarrow t^2=4\\Rightarrow t=\\pm2$. Check with $y$: $t=2$ gives $y=32$ ✓; $t=-2$ gives $y=-32$ ✗. So $t=2$.\n\n$\\frac{dx}{dt}=2t$ and $\\frac{dy}{dt}=12t^2$, so $\\frac{dy}{dx}=\\frac{12t^2}{2t}=6t$ and the gradient is $6\\times2=12$.\n\n(Substituting $t=4$ or $t=32$ would be a mistake: those are coordinates, not parameter values.)",
   "misconceptionIds": [
    "m3"
   ],
