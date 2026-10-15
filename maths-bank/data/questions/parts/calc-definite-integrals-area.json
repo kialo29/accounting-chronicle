@@ -1,0 +1,269 @@
+[
+ {
+  "id": "calc-definite-integrals-area-q01",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\int_1^3 x^2\\,dx$.",
+  "hint": "Integrate, then work out $F(3) - F(1)$.",
+  "answer": "$\\frac{26}{3}$",
+  "solution": "$$\\int_1^3 x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_1^3 = \\frac{27}{3} - \\frac{1}{3} = \\frac{26}{3}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q02",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\int_{-1}^{3} x^2\\,dx$.",
+  "hint": "Substitute the lower limit in brackets: $\\frac{(-1)^3}{3}$.",
+  "answer": "$\\frac{28}{3}$",
+  "solution": "**What changed:** the lower limit is now negative.\n$$\\int_{-1}^{3} x^2\\,dx = \\left[\\frac{x^3}{3}\\right]_{-1}^{3} = \\frac{3^3}{3} - \\frac{(-1)^3}{3} = 9 - \\left(-\\frac{1}{3}\\right) = \\frac{28}{3}$$\n\nSubtracting a negative adds, so the answer is bigger than before, as it should be: the region now also includes the part from $x = -1$ to $x = 1$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q03",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Evaluate $\\displaystyle\\int_{-1}^{3} x^3\\,dx$.",
+  "hint": "$(-1)^4 = 1$. Think about what happens to the part of the graph between $x = -1$ and $x = 0$.",
+  "answer": "$20$",
+  "solution": "**What changed:** the power is now $3$ instead of $2$.\n$$\\int_{-1}^{3} x^3\\,dx = \\left[\\frac{x^4}{4}\\right]_{-1}^{3} = \\frac{3^4}{4} - \\frac{(-1)^4}{4} = \\frac{81}{4} - \\frac{1}{4} = 20$$\n\nNote that $y = x^3$ is below the $x$-axis for $-1 < x < 0$, so that part contributes negatively. The integral is a **signed** area: $\\int_{-1}^{0}x^3\\,dx = -\\frac{1}{4}$ and $\\int_{0}^{3}x^3\\,dx = \\frac{81}{4}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q04",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "(a) Evaluate $\\displaystyle\\int_{-3}^{-1} x^3\\,dx$.\n\n(b) Hence write down the area of the region bounded by $y = x^3$, the $x$-axis and the lines $x = -3$ and $x = -1$.",
+  "hint": "Where is the curve $y = x^3$ when $x$ is negative?",
+  "answer": "(a) $-20$ (b) $20$ square units",
+  "solution": "**What changed:** both limits are now negative.\n\n**(a)**\n$$\\int_{-3}^{-1} x^3\\,dx = \\left[\\frac{x^4}{4}\\right]_{-3}^{-1} = \\frac{(-1)^4}{4} - \\frac{(-3)^4}{4} = \\frac{1}{4} - \\frac{81}{4} = -20$$\n\n**(b)** For $-3 \\le x \\le -1$ the curve is entirely **below** the $x$-axis, so the integral is negative. The area is the size of the integral: $20$ square units.\n\n(By symmetry, this region is the reflection of the region from $x = 1$ to $x = 3$ in the origin, which has integral $+20$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q05",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Find the area of the region bounded by the curve $y = 4x - x^2$ and the $x$-axis.",
+  "hint": "Find where the curve crosses the $x$-axis; these are your limits.",
+  "answer": "$\\frac{32}{3}$ square units",
+  "solution": "Roots: $4x - x^2 = x(4 - x) = 0$, so $x = 0$ and $x = 4$. The curve is an $\\cap$-shape, above the axis between the roots.\n$$\\int_0^4 (4x - x^2)\\,dx = \\left[2x^2 - \\frac{x^3}{3}\\right]_0^4 = \\left(32 - \\frac{64}{3}\\right) - 0 = \\frac{32}{3}$$\n\nArea $= \\frac{32}{3}$ square units.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q06",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Find the exact area of the region bounded by the curve $y = \\frac{1}{x^2}$, the $x$-axis and the lines $x = 1$ and $x = 4$.",
+  "hint": "Write $\\frac{1}{x^2} = x^{-2}$ before integrating.",
+  "answer": "$\\frac{3}{4}$ square units",
+  "solution": "For $x > 0$ the curve is above the axis.\n$$\\int_1^4 x^{-2}\\,dx = \\left[\\frac{x^{-1}}{-1}\\right]_1^4 = \\left[-\\frac{1}{x}\\right]_1^4 = \\left(-\\frac{1}{4}\\right) - (-1) = \\frac{3}{4}$$\n\nArea $= \\frac{3}{4}$ square units.",
+  "linkedTopicIds": [
+   "num-negative-fractional-indices"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q07",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 250\" width=\"340\" height=\"250\"><polygon points=\"70,170 72.6,173.3 75.2,176.5 77.9,179.6 80.5,182.5 83.1,185.3 85.8,188 88.4,190.5 91,192.9 93.6,195.2 96.2,197.4 98.9,199.5 101.5,201.4 104.1,203.2 106.8,204.8 109.4,206.4 112,207.8 114.6,209.1 117.2,210.2 119.9,211.3 122.5,212.2 125.1,213 127.8,213.6 130.4,214.1 133,214.6 135.6,214.8 138.2,215 140.9,215 143.5,214.9 146.1,214.7 148.8,214.3 151.4,213.8 154,213.2 156.6,212.5 159.2,211.6 161.9,210.6 164.5,209.5 167.1,208.2 169.8,206.9 172.4,205.4 175,203.8 177.6,202 180.2,200.1 182.9,198.1 185.5,196 188.1,193.7 190.8,191.3 193.4,188.8 196,186.2 198.6,183.4 201.2,180.5 203.9,177.5 206.5,174.4 209.1,171.1 211.8,167.7 214.4,164.2 217,160.6 219.6,156.8 222.2,152.9 224.9,148.8 227.5,144.7 230.1,140.4 232.8,136 235.4,131.5 238,126.8 240.6,122 243.2,117.1 245.9,112.1 248.5,106.9 251.1,101.6 253.8,96.2 256.4,90.6 259,84.9 261.6,79.1 264.2,73.2 266.9,67.2 269.5,61 272.1,54.7 274.8,48.2 277.4,41.7 280,35 280,170\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"20\" y1=\"170\" x2=\"330\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"70\" y1=\"15\" x2=\"70\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polyline points=\"38.5,120.4 41.8,126.4 45.1,132.2 48.3,137.8 51.6,143.3 54.9,148.5 58.2,153.5 61.5,158.4 64.8,163 68,167.4 71.3,171.7 74.6,175.7 77.9,179.6 81.2,183.2 84.4,186.6 87.7,189.9 91,192.9 94.3,195.8 97.6,198.5 100.8,200.9 104.1,203.2 107.4,205.2 110.7,207.1 114,208.8 117.2,210.2 120.5,211.5 123.8,212.6 127.1,213.5 130.4,214.1 133.7,214.6 136.9,214.9 140.2,215 143.5,214.9 146.8,214.6 150.1,214.1 153.3,213.4 156.6,212.5 159.9,211.4 163.2,210.1 166.5,208.6 169.8,206.9 173,205 176.3,202.9 179.6,200.6 182.9,198.1 186.2,195.4 189.4,192.6 192.7,189.5 196,186.2 199.3,182.7 202.6,179.1 205.8,175.2 209.1,171.1 212.4,166.9 215.7,162.4 219,157.7 222.2,152.9 225.5,147.8 228.8,142.6 232.1,137.1 235.4,131.5 238.7,125.6 241.9,119.6 245.2,113.3 248.5,106.9 251.8,100.2 255.1,93.4 258.3,86.4 261.6,79.1 264.9,71.7 268.2,64.1 271.5,56.3 274.8,48.2 278,40 281.3,31.6 284.6,23 287.9,14.2 291.2,5.2 294.4,-4 297.7,-13.4 301,-23\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"280\" y1=\"170\" x2=\"280\" y2=\"35\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><text x=\"322\" y=\"164\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"78\" y=\"25\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"64\" y=\"186\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"214\" y=\"164\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2</text><text x=\"286\" y=\"186\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">3</text><text x=\"293\" y=\"-19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x² − 2x</text></svg>",
+  "question": "The diagram shows part of the curve $y = x^2 - 2x$. Tom is asked to find the total area of the shaded region, between the curve, the $x$-axis and the line $x = 3$. His working is shown below.\n\n$$\\int_0^3 (x^2 - 2x)\\,dx = \\left[\\frac{x^3}{3} - x^2\\right]_0^3 = (9 - 9) - 0 = 0$$\n$$\\text{So the shaded area is } 0.$$\n\nExplain Tom's mistake and find the correct area.",
+  "hint": "The curve crosses the axis at $x = 2$. What happens when you integrate across a root?",
+  "answer": "Tom integrated straight across the root $x = 2$, so the negative part (below the axis) cancelled the positive part. Correct area: $\\frac{4}{3} + \\frac{4}{3} = \\frac{8}{3}$ square units.",
+  "solution": "A definite integral gives **signed** area: regions below the $x$-axis count negatively. The curve is below the axis for $0 < x < 2$ and above it for $2 < x < 3$, so in Tom's single integral the two parts cancel exactly. An area can't be $0$ when the diagram clearly shows a shaded region.\n\n**Correct method:** split at the root $x = 2$. Let $F(x) = \\frac{x^3}{3} - x^2$.\n$$\\int_0^2 (x^2 - 2x)\\,dx = F(2) - F(0) = \\frac{8}{3} - 4 = -\\frac{4}{3}$$\n$$\\int_2^3 (x^2 - 2x)\\,dx = F(3) - F(2) = 0 - \\left(-\\frac{4}{3}\\right) = \\frac{4}{3}$$\n\nTotal area $= \\frac{4}{3} + \\frac{4}{3} = \\frac{8}{3}$ square units.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q08",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Nadia is finding the area of the region enclosed by the curve $y = x^2 - 2x$ and the line $y = x$. Her working is shown below.\n\n$$x^2 - 2x = x \\Rightarrow x^2 - 3x = 0 \\Rightarrow x = 0 \\text{ or } x = 3$$\n$$\\text{Area} = \\int_0^3 \\left((x^2 - 2x) - x\\right)dx = \\left[\\frac{x^3}{3} - \\frac{3x^2}{2}\\right]_0^3 = 9 - \\frac{27}{2} = -\\frac{9}{2}$$\n$$\\text{The area is } -\\frac{9}{2} \\text{ square units.}$$\n\nIdentify Nadia's error, explain it, and give the correct area.",
+  "hint": "Which graph is on top between $x = 0$ and $x = 3$? Try $x = 1$.",
+  "answer": "She subtracted the wrong way round (bottom minus top). The line is on top, so the area is $\\int_0^3 (3x - x^2)\\,dx = \\frac{9}{2}$ square units.",
+  "solution": "Her intersection points are correct. The error is in the integrand: she used **curve minus line**, but between $x = 0$ and $x = 3$ the line is above the curve (e.g. at $x = 1$: line $y = 1$, curve $y = -1$). An area cannot be negative; a negative answer is a sign that the subtraction is the wrong way round.\n\n**Correct:** top minus bottom:\n$$\\int_0^3 \\left(x - (x^2 - 2x)\\right)dx = \\int_0^3 (3x - x^2)\\,dx = \\left[\\frac{3x^2}{2} - \\frac{x^3}{3}\\right]_0^3 = \\frac{27}{2} - 9 = \\frac{9}{2}$$\n\nThe area is $\\frac{9}{2}$ square units. (Notice that this works even though part of the curve lies below the $x$-axis: top minus bottom is always the height of the region.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q09",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ben is asked to find the mean value of $f(x) = x^3$ over the interval $0 \\le x \\le 2$. He writes:\n\n\"$f(0) = 0$ and $f(2) = 8$, so the mean value is $\\dfrac{0 + 8}{2} = 4$.\"\n\nExplain why Ben is wrong and find the correct mean value.",
+  "hint": "The mean value of $f$ on $[a, b]$ is $\\frac{1}{b - a}\\int_a^b f(x)\\,dx$.",
+  "answer": "Averaging the end values ignores the shape of the curve between them (it would only work for a straight line). Correct mean value $= \\frac{1}{2}\\int_0^2 x^3\\,dx = 2$.",
+  "solution": "Ben has used only two values of the function. The mean value must take account of **every** value of $f$ on the interval, which is what the integral does. Averaging the end points only works when the graph is a straight line; $y = x^3$ stays close to $0$ for much of $[0, 2]$ and only shoots up near $x = 2$.\n\n$$\\text{Mean value} = \\frac{1}{2 - 0}\\int_0^2 x^3\\,dx = \\frac{1}{2}\\left[\\frac{x^4}{4}\\right]_0^2 = \\frac{1}{2}\\times 4 = 2$$\n\nInterpretation: a rectangle of height $2$ on $[0, 2]$ has the same area ($4$) as the region under the curve.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q10",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "The temperature, $T\\ ^\\circ\\text{C}$, inside a greenhouse $t$ hours after 6 am is modelled by\n$$T = 12 + 3t - \\frac{1}{4}t^2, \\qquad 0 \\le t \\le 12$$\n\n(a) Find the maximum temperature predicted by the model.\n\n(b) Find the mean temperature between 6 am and 6 pm.\n\n(c) A gardener estimates the mean temperature by averaging the temperatures at 6 am and 6 pm. Explain why this gives a poor estimate here.",
+  "hint": "For (b) use $\\frac{1}{12 - 0}\\int_0^{12} T\\,dt$.",
+  "answer": "(a) $21\\ ^\\circ\\text{C}$ (at noon) (b) $18\\ ^\\circ\\text{C}$ (c) Both end temperatures are $12\\ ^\\circ\\text{C}$, so the gardener gets $12\\ ^\\circ\\text{C}$, ignoring the much warmer middle of the day.",
+  "solution": "**(a)** $\\frac{dT}{dt} = 3 - \\frac{1}{2}t = 0$ when $t = 6$ (noon). $T(6) = 12 + 18 - 9 = 21\\ ^\\circ\\text{C}$. (It is a maximum because the graph of $T$ is an $\\cap$-shaped parabola.)\n\n**(b)**\n$$\\int_0^{12}\\left(12 + 3t - \\frac{1}{4}t^2\\right)dt = \\left[12t + \\frac{3t^2}{2} - \\frac{t^3}{12}\\right]_0^{12} = 144 + 216 - 144 = 216$$\n$$\\text{Mean temperature} = \\frac{216}{12} = 18\\ ^\\circ\\text{C}$$\n\n**(c)** $T(0) = 12$ and $T(12) = 12 + 36 - 36 = 12$, so averaging the end values gives $12\\ ^\\circ\\text{C}$. That uses only two instants and ignores the warm middle of the day; the temperature is above $12\\ ^\\circ\\text{C}$ for the whole time in between. The mean value of a function uses the whole curve.",
+  "linkedTopicIds": [
+   "calc-stationary-points"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q11",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "The power output, $P$ kilowatts (kW), of a set of solar panels on a sunny day is modelled by\n$$P = 0.1t(12 - t), \\qquad 0 \\le t \\le 12$$\nwhere $t$ is the number of hours after 6 am. The energy generated, in kilowatt-hours (kWh), is the area under the graph of $P$ against $t$.\n\n(a) Find the total energy generated during the day.\n\n(b) The household is paid 24p for each kWh. How much is the day's energy worth?",
+  "hint": "Expand $0.1t(12 - t)$ first, then integrate from $0$ to $12$.",
+  "answer": "(a) $28.8\\text{ kWh}$ (b) £6.91",
+  "solution": "**(a)** $P = 1.2t - 0.1t^2$.\n$$\\int_0^{12}(1.2t - 0.1t^2)\\,dt = \\left[0.6t^2 - \\frac{0.1t^3}{3}\\right]_0^{12} = 0.6(144) - \\frac{0.1(1728)}{3} = 86.4 - 57.6 = 28.8$$\nThe panels generate $28.8\\text{ kWh}$.\n\n**(b)** $28.8\\times 24 = 691.2$p, which is £6.91 to the nearest penny.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q12",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 290\" width=\"340\" height=\"290\"><polygon points=\"120,219 160,183 200,147 240,111 280,75 280,75 278,80.4 276,85.6 274,90.8 272,95.9 270,100.9 268,105.8 266,110.6 264,115.3 262,120 260,124.5 258,129 256,133.3 254,137.6 252,141.8 250,145.9 248,149.9 246,153.8 244,157.6 242,161.4 240,165 238,168.6 236,172 234,175.4 232,178.7 230,181.9 228,185 226,188 224,190.9 222,193.8 220,196.5 218,199.2 216,201.7 214,204.2 212,206.6 210,208.9 208,211.1 206,213.2 204,215.2 202,217.2 200,219 198,220.8 196,222.4 194,224 192,225.5 190,226.9 188,228.2 186,229.4 184,230.5 182,231.6 180,232.5 178,233.4 176,234.1 174,234.8 172,235.4 170,235.9 168,236.3 166,236.6 164,236.8 162,237 160,237 158,237 156,236.8 154,236.6 152,236.3 150,235.9 148,235.4 146,234.8 144,234.1 142,233.4 140,232.5 138,231.6 136,230.5 134,229.4 132,228.2 130,226.9 128,225.5 126,224 124,222.4 122,220.8 120,219\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"15\" y1=\"255\" x2=\"330\" y2=\"255\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"285\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polyline points=\"85.2,174 87,177.1 88.9,180.1 90.8,183.1 92.7,186 94.5,188.8 96.4,191.5 98.3,194.1 100.1,196.7 102,199.2 103.9,201.6 105.7,203.9 107.6,206.1 109.5,208.3 111.4,210.4 113.2,212.4 115.1,214.3 117,216.2 118.8,217.9 120.7,219.6 122.6,221.2 124.5,222.8 126.3,224.2 128.2,225.6 130.1,226.9 131.9,228.1 133.8,229.3 135.7,230.3 137.6,231.3 139.4,232.2 141.3,233.1 143.2,233.8 145,234.5 146.9,235.1 148.8,235.6 150.6,236 152.5,236.4 154.4,236.6 156.3,236.8 158.1,237 160,237 161.9,237 163.7,236.8 165.6,236.6 167.5,236.4 169.4,236 171.2,235.6 173.1,235.1 175,234.5 176.8,233.8 178.7,233.1 180.6,232.2 182.4,231.3 184.3,230.3 186.2,229.3 188.1,228.1 189.9,226.9 191.8,225.6 193.7,224.2 195.5,222.8 197.4,221.3 199.3,219.6 201.2,217.9 203,216.2 204.9,214.3 206.8,212.4 208.6,210.4 210.5,208.3 212.4,206.1 214.3,203.9 216.1,201.6 218,199.2 219.9,196.7 221.7,194.1 223.6,191.5 225.5,188.8 227.3,186 229.2,183.1 231.1,180.1 233,177.1 234.8,174\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"64\" y1=\"269.4\" x2=\"324\" y2=\"35.4\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"120\" cy=\"219\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"280\" cy=\"75\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"128\" y=\"237\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">A</text><text x=\"270\" y=\"67\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">B</text><text x=\"206\" y=\"159.6\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"322\" y=\"249\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"48\" y=\"25\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"34\" y=\"271\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><text x=\"81.2\" y=\"44\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">C</text><text x=\"320\" y=\"65.4\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\" font-style=\"italic\">l</text></svg>",
+  "question": "The diagram shows the curve $C$ with equation $y = x^2 - 6x + 10$ and the line $l$ with equation $y = 2x - 2$.\n\nThe line meets the curve at the points $A$ and $B$. The finite region $R$, shown shaded, is bounded by $C$ and $l$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of $A$ and $B$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Use algebraic integration to find the exact area of $R$.",
+    "marks": 5
+   }
+  ],
+  "marks": 8,
+  "hint": "Solve $x^2 - 6x + 10 = 2x - 2$. Between $A$ and $B$ the line is above the curve.",
+  "answer": "(a) $A(2, 2)$, $B(6, 10)$ (b) $\\frac{32}{3}$",
+  "solution": "**(a)** $x^2 - 6x + 10 = 2x - 2 \\Rightarrow x^2 - 8x + 12 = 0$ **M1**\n\n$(x - 2)(x - 6) = 0 \\Rightarrow x = 2,\\ x = 6$ **A1**\n\n$y = 2(2) - 2 = 2$ and $y = 2(6) - 2 = 10$, so $A(2, 2)$ and $B(6, 10)$. **A1**\n\n**(b)** Area $= \\int_2^6 \\left[(2x - 2) - (x^2 - 6x + 10)\\right]dx = \\int_2^6 (-x^2 + 8x - 12)\\,dx$ **M1** (top minus bottom, correct limits)\n\n$$= \\left[-\\frac{x^3}{3} + 4x^2 - 12x\\right]_2^6 \\quad \\textbf{M1 A1}$$\n\n$$= (-72 + 144 - 72) - \\left(-\\frac{8}{3} + 16 - 24\\right) = 0 - \\left(-\\frac{32}{3}\\right) \\quad \\textbf{dM1}$$\n\n$$\\text{Area of } R = \\frac{32}{3} \\quad \\textbf{A1}$$\n\n(Alternative: area of trapezium under $l$ from $x = 2$ to $6$ is $\\frac{1}{2}(2 + 10)(4) = 24$, minus $\\int_2^6 (x^2 - 6x + 10)\\,dx = \\frac{40}{3}$, giving $\\frac{32}{3}$.)",
+  "linkedTopicIds": [
+   "alg-simultaneous-nonlinear"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q13",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The curve $y = x^2$ and the line $y = ax$, where $a$ is a positive constant, enclose a finite region of area $36$ square units.\n\nFind the value of $a$.",
+  "hint": "Find the intersection points in terms of $a$, then find the enclosed area in terms of $a$.",
+  "answer": "$a = 6$",
+  "solution": "Intersections: $x^2 = ax \\Rightarrow x(x - a) = 0 \\Rightarrow x = 0$ or $x = a$.\n\nFor $0 < x < a$ the line is above the curve (e.g. at $x = \\frac{a}{2}$: $\\frac{a^2}{2} > \\frac{a^2}{4}$), so\n$$\\text{Area} = \\int_0^a (ax - x^2)\\,dx = \\left[\\frac{ax^2}{2} - \\frac{x^3}{3}\\right]_0^a = \\frac{a^3}{2} - \\frac{a^3}{3} = \\frac{a^3}{6}$$\n\nSet $\\frac{a^3}{6} = 36$: $a^3 = 216$, so $a = 6$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-definite-integrals-area-q14",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 270\" width=\"340\" height=\"270\"><polygon points=\"40,215 42.8,201.6 45.5,196 48.2,191.8 51,188.2 53.8,185 56.5,182.1 59.2,179.5 62,177.1 64.8,174.8 67.5,172.6 70.2,170.5 73,168.5 75.8,166.6 78.5,164.8 81.2,163 84,161.3 86.8,159.7 89.5,158.1 92.2,156.5 95,155 97.8,153.5 100.5,152.1 103.2,150.7 106,149.3 108.8,147.9 111.5,146.6 114.2,145.3 117,144 119.8,142.8 122.5,141.5 125.2,140.3 128,139.1 130.8,137.9 133.5,136.8 136.2,135.6 139,134.5 141.8,133.4 144.5,132.3 147.2,131.2 150,130.1 152.8,129.1 155.5,128.1 158.2,127 161,126 163.8,125 166.5,124 169.2,123 172,122 174.8,121.1 177.5,120.1 180.2,119.2 183,118.3 185.8,117.3 188.5,116.4 191.2,115.5 194,114.6 196.8,113.7 199.5,112.8 202.2,111.9 205,111.1 207.8,110.2 210.5,109.4 213.2,108.5 216,107.7 218.8,106.8 221.5,106 224.2,105.2 227,104.4 229.8,103.6 232.5,102.8 235.2,102 238,101.2 240.8,100.4 243.5,99.6 246.2,98.8 249,98 251.8,97.3 254.5,96.5 257.2,95.8 260,95 150,215\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"15\" y1=\"215\" x2=\"330\" y2=\"215\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"40\" y1=\"15\" x2=\"40\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polyline points=\"40,215 42.5,202.3 45,197 47.4,193 49.9,189.5 52.4,186.5 54.9,183.8 57.3,181.3 59.8,179 62.3,176.8 64.8,174.8 67.2,172.8 69.7,170.9 72.2,169.1 74.7,167.4 77.1,165.7 79.6,164.1 82.1,162.5 84.6,161 87,159.5 89.5,158.1 92,156.7 94.5,155.3 96.9,154 99.4,152.6 101.9,151.4 104.4,150.1 106.8,148.9 109.3,147.7 111.8,146.5 114.2,145.3 116.7,144.1 119.2,143 121.7,141.9 124.2,140.8 126.6,139.7 129.1,138.6 131.6,137.6 134.1,136.5 136.5,135.5 139,134.5 141.5,133.5 143.9,132.5 146.4,131.5 148.9,130.6 151.4,129.6 153.8,128.7 156.3,127.7 158.8,126.8 161.3,125.9 163.8,125 166.2,124.1 168.7,123.2 171.2,122.3 173.7,121.5 176.1,120.6 178.6,119.8 181.1,118.9 183.6,118.1 186,117.2 188.5,116.4 191,115.6 193.4,114.8 195.9,114 198.4,113.2 200.9,112.4 203.4,111.6 205.8,110.8 208.3,110 210.8,109.3 213.2,108.5 215.7,107.8 218.2,107 220.7,106.3 223.2,105.5 225.6,104.8 228.1,104 230.6,103.3 233.1,102.6 235.5,101.9 238,101.2 240.5,100.4 242.9,99.7 245.4,99 247.9,98.3 250.4,97.7 252.8,97 255.3,96.3 257.8,95.6 260.3,94.9 262.8,94.3 265.2,93.6 267.7,92.9 270.2,92.3 272.7,91.6 275.1,90.9 277.6,90.3 280.1,89.6 282.6,89 285,88.4 287.5,87.7 290,87.1 292.5,86.5 294.9,85.8 297.4,85.2 299.9,84.6 302.4,84 304.8,83.3 307.3,82.7 309.8,82.1 312.2,81.5 314.7,80.9 317.2,80.3 319.7,79.7 322.1,79.1 324.6,78.5 327.1,77.9 329.6,77.3 332.1,76.7 334.5,76.2 337,75.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"106\" y1=\"263\" x2=\"337\" y2=\"11\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"260\" cy=\"95\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"250\" y=\"87\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">(4, 2)</text><text x=\"183\" y=\"170\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">R</text><text x=\"156\" y=\"233\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">2</text><text x=\"337\" y=\"97.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = √x</text><text x=\"307\" y=\"31\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">y = x − 2</text><text x=\"322\" y=\"209\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">x</text><text x=\"48\" y=\"25\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><text x=\"34\" y=\"231\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text></svg>",
+  "question": "The shaded region $R$ is bounded by the curve $y = \\sqrt{x}$, the line $y = x - 2$ and the $x$-axis, as shown.\n\n(a) By writing the boundaries of $R$ in the form $x = g(y)$, find the area of $R$ using a single integral with respect to $y$.\n\n(b) Check your answer by integrating with respect to $x$, and explain why this method needs more than one integral.",
+  "hint": "$y = \\sqrt{x} \\Rightarrow x = y^2$ and $y = x - 2 \\Rightarrow x = y + 2$. Integrating with respect to $y$, use \"right minus left\" for $0 \\le y \\le 2$.",
+  "answer": "(a) $\\int_0^2 \\left(y + 2 - y^2\\right)dy = \\frac{10}{3}$ (b) $\\int_0^4 \\sqrt{x}\\,dx - \\int_2^4 (x - 2)\\,dx = \\frac{16}{3} - 2 = \\frac{10}{3}$; the lower boundary changes at $x = 2$ (from the $x$-axis to the line).",
+  "solution": "**(a)** The curve and line meet where $\\sqrt{x} = x - 2$, giving $(4, 2)$ (from the diagram; check: $\\sqrt{4} = 2 = 4 - 2$).\n\nIn terms of $y$: the curve is $x = y^2$ (left boundary) and the line is $x = y + 2$ (right boundary), for $0 \\le y \\le 2$. Horizontal strips have length right $-$ left:\n$$\\text{Area} = \\int_0^2 \\left((y + 2) - y^2\\right)dy = \\left[\\frac{y^2}{2} + 2y - \\frac{y^3}{3}\\right]_0^2 = 2 + 4 - \\frac{8}{3} = \\frac{10}{3}$$\n\n**(b)** With vertical strips, the top boundary is always $y = \\sqrt{x}$ but the bottom boundary is the $x$-axis for $0 \\le x \\le 2$ and the line for $2 \\le x \\le 4$. One way:\n$$\\int_0^4 \\sqrt{x}\\,dx - \\int_2^4 (x - 2)\\,dx = \\left[\\frac{2}{3}x^{\\frac{3}{2}}\\right]_0^4 - \\left[\\frac{x^2}{2} - 2x\\right]_2^4 = \\frac{16}{3} - \\left(0 - (-2)\\right) = \\frac{16}{3} - 2 = \\frac{10}{3}$$\n✓ The answers agree. Integrating with respect to $y$ needs only one integral because every horizontal strip runs from the same curve to the same line.",
+  "linkedTopicIds": [
+   "alg-rearranging-formulae"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q15",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Find the set of values of $k$ for which\n$$\\int_1^k (2x - 3)\\,dx > 2$$",
+  "hint": "Evaluate the integral in terms of $k$; you will get a quadratic inequality. Remember that $k$ is allowed to be less than $1$.",
+  "answer": "$k < 0$ or $k > 3$",
+  "solution": "$$\\int_1^k (2x - 3)\\,dx = \\left[x^2 - 3x\\right]_1^k = (k^2 - 3k) - (1 - 3) = k^2 - 3k + 2$$\n\nSo we need\n$$k^2 - 3k + 2 > 2 \\Rightarrow k^2 - 3k > 0 \\Rightarrow k(k - 3) > 0$$\n\nThe graph of $y = k(k - 3)$ is a $\\cup$-shaped parabola with roots $0$ and $3$, positive outside the roots:\n$$k < 0 \\quad\\text{or}\\quad k > 3$$\n\n(Check $k = -1$: $\\int_1^{-1}(2x - 3)\\,dx = -\\int_{-1}^{1}(2x - 3)\\,dx = -(-6) = 6 > 2$ ✓. Swapping the limits changes the sign, which is why some $k < 1$ work.)",
+  "linkedTopicIds": [
+   "alg-quadratic-inequalities"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q16",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $a < b$, and let $A(a, a^2)$ and $B(b, b^2)$ be points on the parabola $y = x^2$.\n\n(a) Show that the line $AB$ has equation $y = (a + b)x - ab$.\n\n(b) Prove that the area of the region enclosed by the parabola and the chord $AB$ is $\\frac{(b - a)^3}{6}$.\n\n(c) The point $C$ on the parabola has $x$-coordinate $\\frac{a + b}{2}$. Show that the area of triangle $ABC$ is $\\frac{(b - a)^3}{8}$, and hence prove Archimedes' result that the parabolic segment has $\\frac{4}{3}$ of the area of triangle $ABC$.",
+  "hint": "For (b), factorise $(a + b)x - ab - x^2$. For (c), split the triangle with a vertical line through $C$: each part has the same vertical \"base\".",
+  "answer": "(a) gradient $\\frac{b^2 - a^2}{b - a} = a + b$, through $A$ (b) $\\int_a^b\\left((a + b)x - ab - x^2\\right)dx = \\frac{(b - a)^3}{6}$ (c) the vertical distance from $C$ up to $AB$ is $\\frac{(b - a)^2}{4}$, so the area is $\\frac{1}{2}\\cdot\\frac{(b - a)^2}{4}\\cdot(b - a) = \\frac{(b - a)^3}{8}$; ratio $\\frac{1/6}{1/8} = \\frac{4}{3}$",
+  "solution": "**(a)** Gradient $= \\frac{b^2 - a^2}{b - a} = a + b$. Line through $(a, a^2)$: $y - a^2 = (a + b)(x - a)$, so $y = (a + b)x - a^2 - ab + a^2 = (a + b)x - ab$.\n\n**(b)** For $a < x < b$ the chord is above the parabola, since $(a + b)x - ab - x^2 = -(x - a)(x - b) > 0$ there. So\n$$\\text{Area} = \\int_a^b -(x - a)(x - b)\\,dx$$\nSubstitute $x = a + u$ (so $x - b = u - (b - a)$); writing $h = b - a$:\n$$\\int_0^h -u(u - h)\\,du = \\int_0^h (hu - u^2)\\,du = \\frac{h^3}{2} - \\frac{h^3}{3} = \\frac{h^3}{6} = \\frac{(b - a)^3}{6}$$\n\n**(c)** Let $m = \\frac{a + b}{2}$. The vertical line $x = m$ meets $AB$ at height $(a + b)m - ab$, so the vertical distance from $C$ up to $AB$ is\n$$d = (a + b)m - ab - m^2 = \\frac{(a + b)^2}{2} - ab - \\frac{(a + b)^2}{4} = \\frac{(a + b)^2 - 4ab}{4} = \\frac{(b - a)^2}{4}$$\n\nThis vertical segment splits triangle $ABC$ into two triangles with common base $d$ and horizontal \"heights\" $m - a$ and $b - m$, which add to $b - a$. So\n$$\\text{Area of } ABC = \\frac{1}{2}d(b - a) = \\frac{(b - a)^3}{8}$$\n\nTherefore\n$$\\frac{\\text{segment}}{\\text{triangle}} = \\frac{(b - a)^3/6}{(b - a)^3/8} = \\frac{8}{6} = \\frac{4}{3}$$\nfor **every** chord of $y = x^2$, as Archimedes showed without calculus. $\\blacksquare$",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance",
+   "alg-equation-of-a-line",
+   "pure-proof"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q17",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The region $R$ is bounded by the curve $y = 4x - x^2$ and the $x$-axis.\n\nThe line $y = mx$, where $0 < m < 4$, divides $R$ into two regions of equal area.\n\nFind the exact value of $m$, and give it to 3 significant figures.",
+  "hint": "Find the area of $R$. Then find, in terms of $m$, the area between the curve and the line (they meet at $x = 0$ and one other point).",
+  "answer": "$m = 4 - 2\\sqrt[3]{4} \\approx 0.825$",
+  "solution": "**Area of $R$:** $\\int_0^4 (4x - x^2)\\,dx = 32 - \\frac{64}{3} = \\frac{32}{3}$. Each part must have area $\\frac{16}{3}$.\n\n**Where the line meets the curve:** $4x - x^2 = mx \\Rightarrow x(4 - m - x) = 0$, so $x = 0$ or $x = 4 - m$ (which lies between $0$ and $4$ because $0 < m < 4$).\n\n**Area between the curve and the line** (curve on top for $0 < x < 4 - m$). Let $p = 4 - m$:\n$$\\int_0^{p}\\left(4x - x^2 - mx\\right)dx = \\int_0^{p}\\left(px - x^2\\right)dx = \\frac{p^3}{2} - \\frac{p^3}{3} = \\frac{p^3}{6}$$\n\n**Equal areas:** $\\frac{p^3}{6} = \\frac{16}{3} \\Rightarrow p^3 = 32 \\Rightarrow p = \\sqrt[3]{32} = 2\\sqrt[3]{4}$.\n\nSo $m = 4 - 2\\sqrt[3]{4} \\approx 0.825$.",
+  "linkedTopicIds": [
+   "num-surds"
+  ]
+ },
+ {
+  "id": "calc-definite-integrals-area-q18",
+  "topicId": "calc-definite-integrals-area",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Without integrating, explain why $\\displaystyle\\int_{-2}^{2} \\left(x^3 - 4x\\right)dx = 0$.\n\n(b) Jess says: \"So the area enclosed by the curve $y = x^3 - 4x$ and the $x$-axis is $0$.\" Is Jess correct? Justify your answer, and find the enclosed area.",
+  "hint": "Is $f(x) = x^3 - 4x$ an odd function, i.e. is $f(-x) = -f(x)$? Where does the curve cross the $x$-axis?",
+  "answer": "(a) $f(-x) = -f(x)$, so the signed areas on $[-2, 0]$ and $[0, 2]$ are equal and opposite and cancel. (b) No: the integral cancels a region above the axis against one below. The enclosed area is $4 + 4 = 8$ square units.",
+  "solution": "**(a)** Let $f(x) = x^3 - 4x$. Then $f(-x) = -x^3 + 4x = -f(x)$, so the graph has rotational symmetry of order 2 about the origin. The region from $-2$ to $0$ is a copy of the region from $0$ to $2$ rotated by $180°$, so it lies on the opposite side of the $x$-axis. The two signed areas are equal in size and opposite in sign, so they add to $0$.\n\n**(b)** Jess is **not** correct. The integral is $0$ only because the positive part cancels the negative part. The roots are $x(x - 2)(x + 2) = 0$, i.e. $x = -2, 0, 2$: the curve is above the axis on $(-2, 0)$ and below on $(0, 2)$.\n\n$$\\int_{-2}^{0}(x^3 - 4x)\\,dx = \\left[\\frac{x^4}{4} - 2x^2\\right]_{-2}^{0} = 0 - (4 - 8) = 4$$\n\nBy symmetry the part on $[0, 2]$ has integral $-4$, i.e. area $4$.\n\nTotal enclosed area $= 4 + 4 = 8$ square units.",
+  "linkedTopicIds": [
+   "pure-curve-sketching"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]
