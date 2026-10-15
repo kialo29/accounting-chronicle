@@ -1,0 +1,403 @@
+[
+ {
+  "id": "calc-parametric-vector-differentiation-q01",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A curve has parametric equations $x=t^2$, $y=4t$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "hint": "Find $\\frac{dx}{dt}$ and $\\frac{dy}{dt}$, then $\\frac{dy}{dx}=\\frac{dy}{dt}\\div\\frac{dx}{dt}$.",
+  "answer": "$\\dfrac{dy}{dx}=\\dfrac{2}{t}$",
+  "solution": "$$\\frac{dx}{dt}=2t,\\qquad\\frac{dy}{dt}=4$$\n\n$$\\frac{dy}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}=\\frac{4}{2t}=\\frac2t$$\n\nThe derivative of $y$ goes on top.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q02",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A curve has parametric equations $x=t^2$, $y=4t^3$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "hint": "Only $y$ has changed. Find the new $\\frac{dy}{dt}$.",
+  "answer": "$\\dfrac{dy}{dx}=6t$",
+  "solution": "**What changed:** $y=4t$ became $y=4t^3$, so only the numerator changes.\n\n$$\\frac{dx}{dt}=2t,\\qquad\\frac{dy}{dt}=12t^2$$\n\n$$\\frac{dy}{dx}=\\frac{12t^2}{2t}=6t\\quad(t\\ne0)$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q03",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A curve has parametric equations $x=t^2$, $y=4t^3$. Find the gradient of the curve at the point $(4,32)$.",
+  "hint": "$4$ and $32$ are coordinates, not values of $t$. Which value of $t$ gives this point?",
+  "answer": "$12$ (at $t=2$)",
+  "solution": "**What changed:** the point is now given by its coordinates rather than by $t$, so first find $t$.\n\n$x=4\\Rightarrow t^2=4\\Rightarrow t=\\pm2$. Check with $y$: $t=2$ gives $y=32$ ✓; $t=-2$ gives $y=-32$ ✗. So $t=2$.\n\nFrom the previous question, $\\frac{dy}{dx}=6t$, so the gradient is $6\\times2=12$.\n\n(Substituting $t=4$ or $t=32$ would be a mistake: those are coordinates, not parameter values.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q04",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A curve has parametric equations $x=t^2$, $y=4t^3$. Find the gradient of the curve at the point $(4,-32)$.",
+  "hint": "The $x$-coordinate is the same as before, so $t=\\pm2$ again. Use the $y$-coordinate to choose.",
+  "answer": "$-12$ (at $t=-2$)",
+  "solution": "**What changed:** the sign of the $y$-coordinate.\n\n$x=4\\Rightarrow t=\\pm2$; $y=4t^3=-32\\Rightarrow t^3=-8\\Rightarrow t=-2$.\n\n$$\\frac{dy}{dx}=6t=6\\times(-2)=-12$$\n\nThe two points $(4,\\pm32)$ are reflections of each other in the $x$-axis, so their gradients are negatives of each other.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q05",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The ellipse $E$ has parametric equations $x=3\\cos t$, $y=2\\sin t$, $0\\le t<2\\pi$.\n\nFind the equation of the tangent to $E$ at the point where $t=\\dfrac{\\pi}{4}$, giving your answer in the form $ax+by=c$, where $a$ and $b$ are integers and $c$ is an exact constant.",
+  "hint": "Find the point and the gradient at $t=\\frac\\pi4$, then use $y-y_1=m(x-x_1)$.",
+  "answer": "$2x+3y=6\\sqrt2$",
+  "solution": "$\\frac{dx}{dt}=-3\\sin t$, $\\frac{dy}{dt}=2\\cos t$, so\n$$\\frac{dy}{dx}=\\frac{2\\cos t}{-3\\sin t}=-\\frac23\\cot t$$\n\nAt $t=\\frac\\pi4$: $\\cot\\frac\\pi4=1$, so the gradient is $-\\frac23$.\n\nPoint: $x=3\\cdot\\frac{\\sqrt2}{2}=\\frac{3\\sqrt2}{2}$, $y=2\\cdot\\frac{\\sqrt2}{2}=\\sqrt2$.\n\nTangent:\n$$y-\\sqrt2=-\\frac23\\left(x-\\frac{3\\sqrt2}{2}\\right)\\implies3y-3\\sqrt2=-2x+3\\sqrt2\\implies2x+3y=6\\sqrt2$$",
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q06",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A particle moves in the plane so that its position at time $t$ is $\\mathbf{r}(t)=\\langle t^2+1,\\ 3t\\rangle$.\n\nFind the velocity, the speed and the acceleration of the particle at $t=2$.",
+  "hint": "Differentiate each component. Speed is the magnitude of the velocity vector.",
+  "answer": "$\\mathbf v(2)=\\langle4,\\ 3\\rangle$, speed $5$, $\\mathbf a(2)=\\langle2,\\ 0\\rangle$",
+  "solution": "Velocity: $\\mathbf v(t)=\\langle2t,\\ 3\\rangle$, so $\\mathbf v(2)=\\langle4,\\ 3\\rangle$.\n\nSpeed: $|\\mathbf v(2)|=\\sqrt{4^2+3^2}=\\sqrt{25}=5$.\n\nAcceleration: $\\mathbf a(t)=\\langle2,\\ 0\\rangle$ (constant), so $\\mathbf a(2)=\\langle2,\\ 0\\rangle$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-vectors"
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q07",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Kofi is asked to find the gradient of the curve $x=t^3-3t$, $y=t^2$ at the point where $t=2$. His working is shown below.\n\n$$\\frac{dx}{dt}=3t^2-3,\\qquad\\frac{dy}{dt}=2t$$\n$$\\frac{dy}{dx}=\\frac{3t^2-3}{2t}\\qquad\\text{At }t=2:\\ \\frac{dy}{dx}=\\frac{9}{4}$$\n\nIdentify Kofi's error, explain it, and find the correct gradient.",
+  "hint": "Think of $\\frac{dy}{dx}$ as $\\frac{dy}{dt}\\times\\frac{dt}{dx}$. Which derivative should be on top?",
+  "answer": "Kofi divided the wrong way round. $\\dfrac{dy}{dx}=\\dfrac{2t}{3t^2-3}$, so the gradient at $t=2$ is $\\dfrac49$.",
+  "solution": "Kofi's derivatives $\\frac{dx}{dt}$ and $\\frac{dy}{dt}$ are correct, but he wrote $\\frac{dx}{dt}\\div\\frac{dy}{dt}$, which is $\\frac{dx}{dy}$, not $\\frac{dy}{dx}$.\n\nBy the chain rule\n$$\\frac{dy}{dx}=\\frac{dy}{dt}\\times\\frac{dt}{dx}=\\frac{\\frac{dy}{dt}}{\\frac{dx}{dt}}=\\frac{2t}{3t^2-3}$$\n(the \"$dt$\"s cancel, leaving $dy$ on top and $dx$ underneath).\n\nAt $t=2$:\n$$\\frac{dy}{dx}=\\frac{4}{12-3}=\\frac49$$\n\nKofi's answer $\\frac94$ is the reciprocal of the correct gradient.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q08",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Mia is asked to find $\\dfrac{d^2y}{dx^2}$ at $t=1$ for the curve $x=t^2+2t$, $y=t^3$. Her working is shown below.\n\n$$\\frac{dy}{dx}=\\frac{3t^2}{2t+2}$$\n$$\\frac{d^2y}{dx^2}=\\frac{d}{dt}\\left(\\frac{3t^2}{2t+2}\\right)=\\frac{6t(2t+2)-3t^2\\cdot2}{(2t+2)^2}=\\frac{6t^2+12t}{(2t+2)^2}$$\n$$\\text{At }t=1:\\ \\frac{d^2y}{dx^2}=\\frac{18}{16}=\\frac98$$\n\nIdentify the error in Mia's working, explain it, and find the correct value.",
+  "hint": "Mia has found the rate of change of $\\frac{dy}{dx}$ with respect to $t$. How do you convert a rate with respect to $t$ into a rate with respect to $x$?",
+  "answer": "Mia did not divide by $\\dfrac{dx}{dt}$. Correctly $\\dfrac{d^2y}{dx^2}=\\dfrac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}=\\dfrac{9/8}{4}=\\dfrac{9}{32}$.",
+  "solution": "Mia's $\\frac{dy}{dx}$ and her quotient-rule derivative are correct, but the second line is wrong: she has calculated $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$, the rate of change of the gradient with respect to $t$, and called it $\\frac{d^2y}{dx^2}$.\n\nBy the chain rule,\n$$\\frac{d^2y}{dx^2}=\\frac{d}{dx}\\left(\\frac{dy}{dx}\\right)=\\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}$$\n\nHere $\\frac{dx}{dt}=2t+2$, which is $4$ at $t=1$. Her value $\\frac98$ is $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$ at $t=1$, so\n$$\\frac{d^2y}{dx^2}=\\frac{\\frac98}{4}=\\frac{9}{32}$$\n\n(In general, $\\frac{d^2y}{dx^2}=\\frac{6t^2+12t}{(2t+2)^2\\cdot(2t+2)}=\\frac{3t(t+2)}{4(t+1)^3}$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q09",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A remote-controlled boat moves on a lake. Its position, in metres, relative to a fixed point after $t$ seconds is $\\mathbf r(t)=\\langle5t,\\ 2t^2+4t\\rangle$.\n\nNoah is asked to find the speed of the boat when $t=2$. His working is shown below.\n\n$$\\mathbf v(t)=\\langle5,\\ 4t+4\\rangle,\\qquad\\mathbf v(2)=\\langle5,\\ 12\\rangle$$\n$$\\text{speed}=5+12=17\\ \\text{m s}^{-1}$$\n\nIdentify Noah's error, explain it, and find the correct speed.",
+  "hint": "Speed is the length of the velocity vector. How do you find the length of a vector with components $5$ and $12$?",
+  "answer": "Noah added the components. Speed $=\\sqrt{5^2+12^2}=13\\ \\text{m s}^{-1}$",
+  "solution": "Noah's velocity $\\mathbf v(2)=\\langle5,12\\rangle$ is correct. His error is in the last line: speed is the **magnitude** of the velocity vector, not the sum of its components. The components are perpendicular, so the magnitude comes from Pythagoras:\n$$|\\mathbf v(2)|=\\sqrt{5^2+12^2}=\\sqrt{169}=13\\ \\text{m s}^{-1}$$\n\nAdding components only works if both point the same way; here the boat moves 5 m/s east and 12 m/s north at the same time, which is 13 m/s along the diagonal, not 17 m/s.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-vectors"
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q10",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The diagram shows the curve with parametric equations $x=t^2-4$, $y=t^3-4t$.\n\nAmir says: 'To find the gradient at the origin I put $x=0$, so $t=0$… no, wait, $t^2-4=0$ gives $t=\\pm2$, so there are two answers for the gradient. One of them must be wrong.'",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the curve passes through the origin for two different values of $t$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the gradient of the curve for each of these values of $t$, and explain to Amir why both answers are correct."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 300\" width=\"300\" height=\"300\"><line x1=\"47.0\" y1=\"150.0\" x2=\"291.2\" y2=\"150.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"190.0\" y1=\"293.0\" x2=\"190.0\" y2=\"7.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"291.2,150.0 283.2,146.0 283.2,154.0\" fill=\"currentColor\"/><polygon points=\"190.0,7.0 186.0,15.0 194.0,15.0\" fill=\"currentColor\"/><text x=\"287.2\" y=\"168.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"198.0\" y=\"17.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"200.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"239.5,273.8 238.6,271.1 237.7,268.4 236.8,265.7 235.9,263.1 234.9,260.5 234.0,257.9 233.1,255.3 232.3,252.8 231.4,250.3 230.5,247.8 229.6,245.3 228.7,242.9 227.8,240.5 226.9,238.0 226.1,235.7 225.2,233.3 224.3,231.0 223.5,228.6 222.6,226.3 221.7,224.1 220.9,221.8 220.0,219.6 219.2,217.4 218.3,215.2 217.5,213.0 216.7,210.9 215.8,208.7 215.0,206.6 214.2,204.6 213.3,202.5 212.5,200.4 211.7,198.4 210.9,196.4 210.1,194.4 209.2,192.5 208.4,190.5 207.6,188.6 206.8,186.7 206.0,184.8 205.2,183.0 204.4,181.1 202.9,177.5 201.3,174.0 199.7,170.5 198.2,167.1 196.7,163.8 195.1,160.6 193.6,157.4 192.1,154.3 190.7,151.3 189.2,148.4 187.7,145.5 186.3,142.7 184.9,140.0 183.4,137.4 182.0,134.8 180.6,132.3 179.3,129.9 177.9,127.5 176.5,125.2 175.2,123.0 173.8,120.8 172.5,118.7 171.2,116.7 169.9,114.7 168.6,112.8 167.4,111.0 166.1,109.2 164.9,107.5 163.6,105.9 162.4,104.3 160.6,102.0 158.8,99.9 157.0,97.9 155.3,96.0 153.6,94.3 151.9,92.7 150.3,91.2 148.7,89.8 147.1,88.6 145.0,87.1 143.0,85.8 141.0,84.8 139.1,83.9 137.2,83.2 134.9,82.6 132.7,82.3 130.6,82.3 128.5,82.5 126.5,83.0 124.6,83.7 122.8,84.7 121.1,85.8 119.4,87.2 117.8,88.8 116.3,90.6 114.8,92.6 113.7,94.3 112.7,96.1 111.7,98.0 110.7,100.0 109.8,102.2 109.0,104.4 108.2,106.6 107.4,109.0 106.7,111.4 106.1,113.9 105.5,116.5 105.0,118.4 104.6,120.4 104.3,122.4 103.9,124.5 103.6,126.6 103.3,128.7 103.1,130.8 102.8,132.9 102.6,135.1 102.5,137.2 102.3,139.4 102.2,141.6 102.1,143.8 102.0,146.0 102.0,148.2 102.0,150.4 102.0,152.6 102.1,154.8 102.1,157.0 102.2,159.2 102.4,161.3 102.5,163.5 102.7,165.7 102.9,167.8 103.2,169.9 103.4,172.0 103.7,174.1 104.0,176.2 104.4,178.2 104.8,180.2 105.2,182.2 105.8,184.8 106.4,187.3 107.1,189.8 107.8,192.2 108.6,194.5 109.4,196.8 110.3,198.9 111.2,201.0 112.2,202.9 113.2,204.8 114.3,206.6 115.7,208.6 117.2,210.5 118.7,212.2 120.4,213.6 122.1,214.9 123.9,215.9 125.8,216.8 127.7,217.3 129.7,217.7 131.8,217.7 134.0,217.5 136.3,217.1 138.6,216.3 140.5,215.5 142.5,214.5 144.5,213.2 146.6,211.8 148.7,210.2 150.3,208.8 151.9,207.3 153.6,205.7 155.3,204.0 157.0,202.1 158.8,200.1 160.6,198.0 162.4,195.7 163.6,194.1 164.9,192.5 166.1,190.8 167.4,189.0 168.6,187.2 169.9,185.3 171.2,183.3 172.5,181.3 173.8,179.2 175.2,177.0 176.5,174.8 177.9,172.5 179.3,170.1 180.6,167.7 182.0,165.2 183.4,162.6 184.9,160.0 186.3,157.3 187.7,154.5 189.2,151.6 190.7,148.7 192.1,145.7 193.6,142.6 195.1,139.4 196.7,136.2 198.2,132.9 199.7,129.5 201.3,126.0 202.9,122.5 204.4,118.9 205.2,117.0 206.0,115.2 206.8,113.3 207.6,111.4 208.4,109.5 209.2,107.5 210.1,105.6 210.9,103.6 211.7,101.6 212.5,99.6 213.3,97.5 214.2,95.4 215.0,93.4 215.8,91.3 216.7,89.1 217.5,87.0 218.3,84.8 219.2,82.6 220.0,80.4 220.9,78.2 221.7,75.9 222.6,73.7 223.5,71.4 224.3,69.0 225.2,66.7 226.1,64.3 226.9,62.0 227.8,59.5 228.7,57.1 229.6,54.7 230.5,52.2 231.4,49.7 232.3,47.2 233.1,44.7 234.0,42.1 234.9,39.5 235.9,36.9 236.8,34.3 237.7,31.6 238.6,28.9 239.5,26.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"102.0\" y1=\"146.0\" x2=\"102.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"102.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\"></text><line x1=\"234.0\" y1=\"146.0\" x2=\"234.0\" y2=\"154.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"234.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"97.0\" y=\"167.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"186.0\" y1=\"62.0\" x2=\"194.0\" y2=\"62.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"198.0\" y=\"67.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">4</text><line x1=\"186.0\" y1=\"238.0\" x2=\"194.0\" y2=\"238.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"198.0\" y=\"243.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">−4</text></svg>",
+  "hint": "Solve $x=0$ and check $y$ for each solution. Then look at the diagram: how many times does the curve pass through $O$?",
+  "answer": "(a) $t=2$ and $t=-2$ both give $(0,0)$. (b) Gradients $2$ (at $t=2$) and $-2$ (at $t=-2$); the curve crosses itself at $O$, so it has two tangents there.",
+  "solution": "**(a)** $x=0\\Rightarrow t^2=4\\Rightarrow t=\\pm2$.\n- $t=2$: $y=8-8=0$.\n- $t=-2$: $y=-8+8=0$.\n\nBoth values of $t$ give the origin.\n\n**(b)** $\\frac{dx}{dt}=2t$, $\\frac{dy}{dt}=3t^2-4$, so $\\frac{dy}{dx}=\\frac{3t^2-4}{2t}$.\n- $t=2$: $\\frac{dy}{dx}=\\frac{8}{4}=2$.\n- $t=-2$: $\\frac{dy}{dx}=\\frac{8}{-4}=-2$.\n\nBoth are correct. A point on a parametric curve can correspond to more than one value of $t$: here the curve passes through $O$ twice (once on the way into the loop and once on the way out), crossing itself. Each pass has its own tangent, so the curve has two tangents at $O$, $y=2x$ and $y=-2x$. \"The gradient at $(0,0)$\" is not a single number for this curve – you have to say which value of $t$ you mean.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q11",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "The parabola $C$ has parametric equations $x=at^2$, $y=2at$, where $a$ is a positive constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that the tangent to $C$ at the point with parameter $t$ ($t\\ne0$) has equation $ty=x+at^2$."
+   },
+   {
+    "label": "b",
+    "prompt": "The tangents at the points with parameters $p$ and $q$ ($p\\ne q$, both non-zero) meet at $R$. Prove that $R$ has coordinates $\\big(apq,\\ a(p+q)\\big)$."
+   },
+   {
+    "label": "c",
+    "prompt": "Prove that if these two tangents are perpendicular, then $R$ lies on the line $x=-a$."
+   }
+  ],
+  "hint": "(a) $\\frac{dy}{dx}=\\frac{1}{t}$. (b) Subtract the two tangent equations to eliminate $x$. (c) Perpendicular gradients multiply to $-1$.",
+  "answer": "(a), (b), (c) Proofs – see solution. In (c), $pq=-1$ so $x_R=-a$.",
+  "solution": "**(a)** $\\frac{dx}{dt}=2at$, $\\frac{dy}{dt}=2a$, so $\\frac{dy}{dx}=\\frac{2a}{2at}=\\frac1t$.\n\nTangent at $(at^2,2at)$:\n$$y-2at=\\frac1t(x-at^2)\\implies ty-2at^2=x-at^2\\implies ty=x+at^2\\qquad\\blacksquare$$\n\n**(b)** The tangents are $py=x+ap^2$ and $qy=x+aq^2$. Subtracting:\n$$(p-q)y=a(p^2-q^2)=a(p-q)(p+q)$$\nSince $p\\ne q$, divide by $p-q$: $y=a(p+q)$. Then\n$$x=py-ap^2=ap(p+q)-ap^2=apq$$\nSo $R=\\big(apq,\\ a(p+q)\\big)$. $\\blacksquare$\n\n**(c)** The gradients are $\\frac1p$ and $\\frac1q$. Perpendicular means\n$$\\frac1p\\times\\frac1q=-1\\implies pq=-1$$\nso $x_R=apq=-a$: $R$ lies on the line $x=-a$ (the directrix of the parabola). $\\blacksquare$",
+  "linkedTopicIds": [
+   "pure-parametric-equations",
+   "pure-proof"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q12",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 10,
+  "question": "The curve $C$ has parametric equations\n$$x=t^2+2t,\\qquad y=t^3-12t,\\qquad t\\in\\mathbb{R}.$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "The point $P(3,-11)$ lies on $C$. Find an equation of the normal to $C$ at $P$, giving your answer in the form $ax+by+c=0$, where $a$, $b$ and $c$ are integers.",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Find the coordinates of the points on $C$ at which the tangent is parallel to the $x$-axis.",
+    "marks": 3
+   }
+  ],
+  "hint": "(b) First find the value of $t$ at $P$: solve $t^2+2t=3$ and check which root gives $y=-11$.",
+  "answer": "(a) $\\dfrac{dy}{dx}=\\dfrac{3t^2-12}{2t+2}$ (b) $4x-9y-111=0$ (c) $(8,-16)$ and $(0,16)$",
+  "solution": "**(a)** $\\frac{dx}{dt}=2t+2$, $\\frac{dy}{dt}=3t^2-12$ **B1** (both)\n$$\\frac{dy}{dx}=\\frac{3t^2-12}{2t+2}$$ **B1** (ft their derivatives, correct way up)\n\n**(b)** $t^2+2t=3\\Rightarrow(t+3)(t-1)=0\\Rightarrow t=1$ or $t=-3$. **M1**\n$t=1$: $y=1-12=-11$ ✓; $t=-3$: $y=-27+36=9$ ✗. So $t=1$. **A1**\n\nGradient of tangent: $\\frac{3-12}{4}=-\\frac94$ **M1** (substituting their $t$)\n\nGradient of normal: $\\frac49$ **M1** (negative reciprocal)\n$$y+11=\\frac49(x-3)\\implies9y+99=4x-12\\implies4x-9y-111=0$$ **A1**\n\n**(c)** Parallel to the $x$-axis: $\\frac{dy}{dt}=0$ (with $\\frac{dx}{dt}\\ne0$) **M1**\n$$3t^2-12=0\\Rightarrow t=\\pm2$$ **A1** (and $2t+2=6$ or $-2$, non-zero)\n- $t=2$: $(4+4,\\ 8-24)=(8,-16)$\n- $t=-2$: $(4-4,\\ -8+24)=(0,16)$ **A1**\n\nNote: using $t=3$ in (b) (the $x$-coordinate) scores M0.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q13",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 9,
+  "question": "A particle moves in the $xy$-plane so that for $t\\ge0$ its velocity vector is\n$$\\mathbf v(t)=\\langle3t^2-12,\\ 2t\\rangle.$$\nAt time $t=0$ the particle is at the point $(1,5)$.\n\n(AP Calculus BC FRQ style – a graphing calculator is permitted. Show the work that leads to your answers.)",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the speed of the particle at $t=1$. Is the speed of the particle increasing or decreasing at $t=1$? Give a reason for your answer.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "The path of the particle is a curve. Find $\\dfrac{d^2y}{dx^2}$ at $t=1$, and state whether the path is concave up or concave down at that point.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the position of the particle at $t=3$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the total distance travelled by the particle over the interval $0\\le t\\le3$.",
+    "marks": 2
+   }
+  ],
+  "hint": "(a) Compare the directions of $\\mathbf v(1)$ and $\\mathbf a(1)$ using their scalar (dot) product. (b) $\\frac{dy}{dx}=\\frac{y'(t)}{x'(t)}$; differentiate with respect to $t$ and divide by $x'(t)$. (d) Integrate the speed.",
+  "answer": "(a) $\\sqrt{85}\\approx9.220$; decreasing, since $\\mathbf v(1)\\cdot\\mathbf a(1)=-50<0$. (b) $\\dfrac{10}{243}$; concave up. (c) $(-8,\\ 14)$ (d) $26.168$",
+  "solution": "**(a)** $\\mathbf v(1)=\\langle-9,\\ 2\\rangle$, speed $=\\sqrt{81+4}=\\sqrt{85}\\approx9.220$. **1 pt**\n\n$\\mathbf a(t)=\\langle6t,\\ 2\\rangle$, $\\mathbf a(1)=\\langle6,\\ 2\\rangle$. $\\mathbf v(1)\\cdot\\mathbf a(1)=-54+4=-50<0$, so the acceleration has a component opposite to the velocity: the speed is **decreasing**. **1 pt**\n\n**(b)** $\\frac{dy}{dx}=\\frac{2t}{3t^2-12}$.\n$$\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)=\\frac{2(3t^2-12)-2t\\cdot6t}{(3t^2-12)^2}=\\frac{-6t^2-24}{(3t^2-12)^2}$$\nAt $t=1$: $\\frac{-30}{81}$. Divide by $x'(1)=-9$: **1 pt**\n$$\\frac{d^2y}{dx^2}=\\frac{-30/81}{-9}=\\frac{30}{729}=\\frac{10}{243}>0$$\nso the path is **concave up** at $t=1$. **1 pt**\n\n**(c)** $x(3)=1+\\int_0^3(3t^2-12)\\,dt=1+\\big[t^3-12t\\big]_0^3=1+(27-36)=-8$ **1 pt** (integral with initial condition) **1 pt** ($x$)\n\n$y(3)=5+\\int_0^3 2t\\,dt=5+9=14$\n\nPosition $(-8,\\ 14)$. **1 pt**\n\n**(d)** Distance $=\\int_0^3\\sqrt{(3t^2-12)^2+(2t)^2}\\,dt$ **1 pt** $=26.168$ (calculator) **1 pt**\n\nCommon error in (b): giving $-\\frac{30}{81}$, which is $\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)$, not $\\frac{d^2y}{dx^2}$.",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-definite-integrals-area"
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q14",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The curve $C$ has parametric equations $x=2t^2$, $y=4t$.\n\nThe normal to $C$ at the point $P$, where $t=2$, meets $C$ again at the point $Q$. Find the coordinates of $Q$.",
+  "hint": "Find the equation of the normal at $P$, then substitute $x=2t^2$, $y=4t$ into it. You already know one root of the resulting equation in $t$.",
+  "answer": "$Q(18,\\ -12)$",
+  "solution": "$\\frac{dx}{dt}=4t$, $\\frac{dy}{dt}=4$, so $\\frac{dy}{dx}=\\frac{4}{4t}=\\frac1t$.\n\nAt $t=2$: $P=(8,8)$, tangent gradient $\\frac12$, normal gradient $-2$.\n\nNormal: $y-8=-2(x-8)\\implies y=-2x+24$.\n\nSubstitute the parametric equations to find where the normal meets $C$:\n$$4t=-2(2t^2)+24\\implies4t^2+4t-24=0\\implies t^2+t-6=0\\implies(t-2)(t+3)=0$$\n\n$t=2$ is $P$ itself (as expected), so $Q$ has $t=-3$:\n$$Q=\\big(2(-3)^2,\\ 4(-3)\\big)=(18,\\ -12)$$\n\nCheck: $-2(18)+24=-12$ ✓.",
+  "linkedTopicIds": [
+   "calc-tangents-normals"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q15",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The diagram shows the curve $C$ with parametric equations\n$$x=\\sin t,\\qquad y=\\sin2t,\\qquad0\\le t<2\\pi.$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\dfrac{dy}{dx}$ in terms of $t$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the exact coordinates of the four points on $C$ at which the tangent is horizontal."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the gradients of the two tangents to $C$ at the origin."
+   },
+   {
+    "label": "d",
+    "prompt": "Show that a Cartesian equation of $C$ is $y^2=4x^2(1-x^2)$."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 290\" width=\"320\" height=\"290\"><line x1=\"11.5\" y1=\"145.0\" x2=\"308.5\" y2=\"145.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"160.0\" y1=\"279.2\" x2=\"160.0\" y2=\"10.8\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"308.5,145.0 300.5,141.0 300.5,149.0\" fill=\"currentColor\"/><polygon points=\"160.0,10.8 156.0,18.8 164.0,18.8\" fill=\"currentColor\"/><text x=\"304.5\" y=\"163.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"168.0\" y=\"20.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"174.0\" y=\"161.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"160.0,145.0 161.7,141.5 163.5,138.1 165.2,134.6 166.9,131.2 168.6,127.8 170.4,124.4 172.1,121.0 173.8,117.6 175.5,114.3 177.2,111.0 178.9,107.7 180.6,104.5 182.3,101.3 184.0,98.1 185.7,95.0 187.4,91.9 189.1,88.9 190.7,86.0 192.4,83.1 194.0,80.3 195.7,77.5 197.3,74.8 198.9,72.2 200.5,69.6 202.1,67.1 203.7,64.7 205.3,62.4 206.9,60.2 208.4,58.0 210.0,55.9 211.5,53.9 213.1,52.0 214.6,50.2 216.1,48.5 217.5,46.9 219.0,45.4 220.5,44.0 222.6,42.0 224.7,40.3 226.8,38.9 228.8,37.6 230.9,36.6 232.8,35.8 235.4,35.2 237.9,35.0 240.3,35.2 242.6,35.9 244.8,37.0 247.0,38.5 248.6,39.9 250.1,41.6 251.5,43.5 253.0,45.6 254.3,47.9 255.6,50.5 256.5,52.3 257.3,54.2 258.1,56.2 258.9,58.3 259.6,60.4 260.3,62.7 261.0,65.0 261.7,67.4 262.3,69.9 263.0,72.5 263.6,75.1 264.1,77.9 264.7,80.6 265.2,83.5 265.7,86.4 266.1,89.3 266.6,92.3 267.0,95.4 267.4,98.5 267.8,101.7 268.1,104.9 268.4,108.1 268.7,111.4 268.9,114.7 269.2,118.0 269.4,121.4 269.5,124.8 269.7,128.2 269.8,131.6 269.9,135.1 270.0,138.5 270.0,142.0 270.0,145.4 270.0,148.9 269.9,152.3 269.9,155.8 269.8,159.2 269.6,162.7 269.5,166.1 269.3,169.4 269.1,172.8 268.9,176.1 268.6,179.4 268.3,182.7 268.0,185.9 267.7,189.1 267.3,192.3 266.9,195.4 266.5,198.4 266.0,201.4 265.6,204.4 265.1,207.3 264.5,210.1 264.0,212.8 263.4,215.5 262.8,218.1 262.2,220.7 261.5,223.2 260.8,225.6 260.1,227.9 259.4,230.1 258.7,232.3 257.9,234.3 257.1,236.3 256.3,238.2 255.0,240.8 253.6,243.3 252.2,245.5 250.8,247.5 249.3,249.3 247.8,250.8 246.2,252.1 244.0,253.5 241.7,254.4 239.4,254.9 236.9,255.0 234.4,254.6 232.5,254.0 230.5,253.2 228.5,252.2 226.5,250.9 224.4,249.4 222.3,247.6 220.1,245.7 218.6,244.2 217.2,242.7 215.7,241.0 214.2,239.3 212.7,237.5 211.1,235.6 209.6,233.6 208.1,231.5 206.5,229.3 204.9,227.0 203.3,224.7 201.7,222.2 200.1,219.7 198.5,217.2 196.9,214.5 195.3,211.8 193.6,209.0 192.0,206.2 190.3,203.3 188.6,200.3 187.0,197.3 185.3,194.2 183.6,191.1 181.9,187.9 180.2,184.7 178.5,181.5 176.8,178.2 175.1,174.9 173.4,171.6 171.7,168.2 169.9,164.8 168.2,161.4 166.5,157.9 164.8,154.5 163.0,151.1 161.3,147.6 159.6,144.1 157.8,140.7 156.1,137.2 154.4,133.8 152.7,130.3 150.9,126.9 149.2,123.5 147.5,120.1 145.8,116.8 144.1,113.4 142.3,110.1 140.6,106.9 138.9,103.7 137.2,100.5 135.6,97.3 133.9,94.2 132.2,91.2 130.5,88.2 128.9,85.3 127.2,82.4 125.6,79.6 123.9,76.8 122.3,74.1 120.7,71.5 119.1,69.0 117.5,66.5 115.9,64.1 114.3,61.8 112.7,59.6 111.2,57.5 109.6,55.4 108.1,53.5 106.6,51.6 105.1,49.8 103.6,48.1 102.1,46.5 100.6,45.0 99.2,43.6 97.0,41.7 94.9,40.1 92.9,38.6 90.8,37.4 88.8,36.5 86.9,35.7 84.3,35.2 81.8,35.0 79.4,35.3 77.1,36.0 74.9,37.2 72.7,38.7 71.2,40.2 69.7,41.9 68.2,43.8 66.8,46.0 65.5,48.3 64.2,50.9 63.3,52.8 62.5,54.7 61.7,56.7 61.0,58.8 60.2,61.0 59.5,63.3 58.8,65.6 58.1,68.1 57.5,70.6 56.9,73.2 56.3,75.8 55.7,78.5 55.2,81.3 54.7,84.2 54.2,87.1 53.7,90.1 53.3,93.1 52.9,96.2 52.5,99.3 52.2,102.5 51.8,105.7 51.5,108.9 51.3,112.2 51.0,115.5 50.8,118.9 50.6,122.2 50.4,125.6 50.3,129.1 50.2,132.5 50.1,135.9 50.0,139.4 50.0,142.8 50.0,146.3 50.0,149.8 50.1,153.2 50.2,156.7 50.3,160.1 50.4,163.5 50.6,166.9 50.7,170.3 51.0,173.6 51.2,177.0 51.5,180.3 51.8,183.5 52.1,186.7 52.4,189.9 52.8,193.1 53.2,196.1 53.6,199.2 54.1,202.2 54.6,205.1 55.1,208.0 55.6,210.8 56.2,213.5 56.7,216.2 57.4,218.8 58.0,221.3 58.6,223.8 59.3,226.1 60.0,228.4 60.8,230.7 61.5,232.8 62.3,234.8 63.1,236.8 64.0,238.6 65.2,241.3 66.6,243.7 68.0,245.8 69.4,247.8 70.9,249.5 72.5,251.0 74.1,252.3 76.3,253.6 78.6,254.5 80.9,254.9 83.4,255.0 85.9,254.5 87.8,253.9 89.8,253.1 91.8,252.0 93.9,250.7 96.0,249.1 98.1,247.3 100.3,245.3 101.7,243.9 103.2,242.3 104.7,240.6 106.2,238.9 107.7,237.0 109.2,235.1 110.8,233.0 112.3,230.9 113.9,228.7 115.5,226.4 117.1,224.1 118.7,221.6 120.3,219.1 121.9,216.5 123.5,213.8 125.1,211.1 126.8,208.3 128.4,205.5 130.1,202.5 131.8,199.6 133.4,196.5 135.1,193.4 136.8,190.3 138.5,187.1 140.2,183.9 141.9,180.7 143.6,177.4 145.3,174.1 147.1,170.7 148.8,167.3 150.5,163.9 152.2,160.5 153.9,157.1 155.7,153.6 157.4,150.2 159.1,146.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"270.0\" y1=\"141.0\" x2=\"270.0\" y2=\"149.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"270.0\" y=\"162.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\"></text><line x1=\"50.0\" y1=\"141.0\" x2=\"50.0\" y2=\"149.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"50.0\" y=\"162.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\"></text><text x=\"275.0\" y=\"162.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><text x=\"45.0\" y=\"162.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"156.0\" y1=\"35.0\" x2=\"164.0\" y2=\"35.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"168.0\" y=\"40.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">1</text><line x1=\"156.0\" y1=\"255.0\" x2=\"164.0\" y2=\"255.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"168.0\" y=\"260.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">−1</text></svg>",
+  "hint": "(b) Solve $\\cos2t=0$ in the given interval. (c) Which values of $t$ give the origin? (d) Use $\\sin2t=2\\sin t\\cos t$ and $\\cos^2t=1-\\sin^2t$.",
+  "answer": "(a) $\\dfrac{2\\cos2t}{\\cos t}$ (b) $\\left(\\dfrac{\\sqrt2}{2},1\\right)$, $\\left(\\dfrac{\\sqrt2}{2},-1\\right)$, $\\left(-\\dfrac{\\sqrt2}{2},-1\\right)$, $\\left(-\\dfrac{\\sqrt2}{2},1\\right)$ (c) $2$ and $-2$ (d) Shown.",
+  "solution": "**(a)** $\\frac{dx}{dt}=\\cos t$, $\\frac{dy}{dt}=2\\cos2t$:\n$$\\frac{dy}{dx}=\\frac{2\\cos2t}{\\cos t}$$\n\n**(b)** Horizontal: $\\cos2t=0$ (and $\\cos t\\ne0$). For $0\\le2t<4\\pi$: $2t=\\frac\\pi2,\\frac{3\\pi}2,\\frac{5\\pi}2,\\frac{7\\pi}2$, so $t=\\frac\\pi4,\\frac{3\\pi}4,\\frac{5\\pi}4,\\frac{7\\pi}4$ (none of these make $\\cos t=0$).\n\n| $t$ | $x=\\sin t$ | $y=\\sin2t$ |\n|---|---|---|\n| $\\frac\\pi4$ | $\\frac{\\sqrt2}{2}$ | $1$ |\n| $\\frac{3\\pi}4$ | $\\frac{\\sqrt2}{2}$ | $-1$ |\n| $\\frac{5\\pi}4$ | $-\\frac{\\sqrt2}{2}$ | $1$ |\n| $\\frac{7\\pi}4$ | $-\\frac{\\sqrt2}{2}$ | $-1$ |\n\nPoints: $\\left(\\pm\\frac{\\sqrt2}{2},\\ \\pm1\\right)$ (all four sign combinations).\n\n**(c)** $x=0$ and $y=0$ when $\\sin t=0$: $t=0$ or $t=\\pi$.\n- $t=0$: $\\frac{dy}{dx}=\\frac{2\\cos0}{\\cos0}=2$.\n- $t=\\pi$: $\\frac{dy}{dx}=\\frac{2\\cos2\\pi}{\\cos\\pi}=\\frac{2}{-1}=-2$.\n\nThe curve crosses itself at $O$ with tangents of gradient $2$ and $-2$.\n\n**(d)** $y=\\sin2t=2\\sin t\\cos t$, so\n$$y^2=4\\sin^2t\\cos^2t=4\\sin^2t(1-\\sin^2t)=4x^2(1-x^2)\\qquad\\blacksquare$$",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "pure-parametric-equations"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q16",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A particle moves in the plane with velocity $\\mathbf v(t)=\\langle2t,\\ t^2-1\\rangle$ for $t\\ge0$. At $t=0$ it is at the origin.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the speed of the particle is $t^2+1$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the time $T$ at which the particle has travelled a total distance of 12 units."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the position of the particle at time $T$, and its straight-line distance from the origin. Explain why this is less than 12."
+   }
+  ],
+  "hint": "(a) Expand $(2t)^2+(t^2-1)^2$ and look for a perfect square. (b) Distance travelled is $\\int_0^T\\text{speed}\\,dt$. (c) Integrate each component of $\\mathbf v$.",
+  "answer": "(a) Shown. (b) $T=3$ (c) $(9,\\ 6)$; distance $\\sqrt{117}=3\\sqrt{13}\\approx10.8$ units, less than 12 because the path is curved.",
+  "solution": "**(a)**\n$$|\\mathbf v|^2=(2t)^2+(t^2-1)^2=4t^2+t^4-2t^2+1=t^4+2t^2+1=(t^2+1)^2$$\nSince $t^2+1>0$, speed $=t^2+1$. $\\blacksquare$\n\n**(b)** Distance travelled from $t=0$ to $t=T$:\n$$\\int_0^T(t^2+1)\\,dt=\\frac{T^3}{3}+T=12\\implies T^3+3T-36=0$$\n$T=3$ works ($27+9-36=0$), and $T^3+3T$ is strictly increasing, so it is the only solution: $T=3$.\n\n**(c)** Position (integrating each component, with $\\mathbf r(0)=\\langle0,0\\rangle$):\n$$\\mathbf r(t)=\\left\\langle t^2,\\ \\frac{t^3}{3}-t\\right\\rangle\\implies\\mathbf r(3)=\\langle9,\\ 9-3\\rangle=\\langle9,\\ 6\\rangle$$\n\nStraight-line distance: $\\sqrt{81+36}=\\sqrt{117}=3\\sqrt{13}\\approx10.8$ units.\n\nThe magnitude of the displacement is less than the distance travelled because the path is not a straight line: the particle first moves downwards ($y'<0$ for $0<t<1$) and then curves up, and a curved path between two points is longer than the straight segment joining them.",
+  "linkedTopicIds": [
+   "calc-definite-integrals-area",
+   "pure-vectors"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q17",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A football is kicked from ground level. Ignoring air resistance, its position $t$ seconds after the kick is modelled by\n$$x=18t,\\qquad y=14t-4.9t^2,$$\nwhere $x$ metres is the horizontal distance travelled and $y$ metres is the height.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the angle between the ball's direction of motion and the horizontal at $t=1$. Give your answer to 1 decimal place."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the speed of the ball at $t=1$, to 3 significant figures."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the time at which the ball is travelling horizontally, and its height at that moment."
+   }
+  ],
+  "hint": "The direction of motion is along the tangent to the path, with gradient $\\frac{dy}{dx}$. The speed uses both $\\frac{dx}{dt}$ and $\\frac{dy}{dt}$.",
+  "answer": "(a) $13.1^\\circ$ above the horizontal (b) $18.5\\ \\text{m s}^{-1}$ (c) $t=\\dfrac{10}{7}\\approx1.43$ s; height 10 m",
+  "solution": "$\\frac{dx}{dt}=18$, $\\frac{dy}{dt}=14-9.8t$.\n\n**(a)** $\\frac{dy}{dx}=\\frac{14-9.8t}{18}$. At $t=1$: $\\frac{4.2}{18}=0.2\\overline{3}$.\n\nAngle with horizontal: $\\tan^{-1}(0.2\\overline{3})=13.1^\\circ$ (above the horizontal, as $\\frac{dy}{dx}>0$).\n\n**(b)** Velocity at $t=1$ is $\\langle18,\\ 4.2\\rangle$, so\n$$\\text{speed}=\\sqrt{18^2+4.2^2}=\\sqrt{341.64}=18.48\\ldots\\approx18.5\\ \\text{m s}^{-1}$$\n(not $18+4.2$ – speed is the magnitude of the velocity vector).\n\n**(c)** Travelling horizontally: $\\frac{dy}{dx}=0$, i.e. $\\frac{dy}{dt}=0$ (since $\\frac{dx}{dt}=18\\ne0$):\n$$14-9.8t=0\\implies t=\\frac{14}{9.8}=\\frac{10}{7}\\approx1.43\\text{ s}$$\nHeight: $y=14\\cdot\\frac{10}{7}-4.9\\cdot\\frac{100}{49}=20-10=10$ m (the top of its flight).",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "mech-projectiles"
+  ]
+ },
+ {
+  "id": "calc-parametric-vector-differentiation-q18",
+  "topicId": "calc-parametric-vector-differentiation",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A bicycle wheel of radius 0.35 m rolls along level ground without slipping. A reflector $R$ is fixed to the rim. With axes along the ground as shown, the position of $R$ after $t$ seconds is\n$$x=0.35(4t-\\sin4t),\\qquad y=0.35(1-\\cos4t),$$\nin metres. The dashed curve shows the path of $R$ during one revolution of the wheel.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the speed of $R$ at time $t$ is $2.8|\\sin2t|\\ \\text{m s}^{-1}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the greatest speed of $R$ and where $R$ is when this happens. Compare it with the speed of the bicycle."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact distance travelled by $R$ during one revolution of the wheel ($0\\le t\\le\\frac\\pi2$), and compare it with the distance travelled by the bicycle."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 170\" width=\"340\" height=\"170\"><line x1=\"30.0\" y1=\"135.0\" x2=\"336.8\" y2=\"135.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"30.0\" y1=\"135.0\" x2=\"30.0\" y2=\"15.4\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"336.8,135.0 328.8,131.0 328.8,139.0\" fill=\"currentColor\"/><polygon points=\"30.0,15.4 26.0,23.4 34.0,23.4\" fill=\"currentColor\"/><text x=\"332.8\" y=\"153.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">x</text><text x=\"38.0\" y=\"25.4\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" font-style=\"italic\">y</text><text x=\"16.0\" y=\"151.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">O</text><polyline points=\"30.0,135.0 30.2,133.0 30.6,130.9 31.0,129.0 31.7,126.7 32.5,124.5 33.2,122.6 34.0,120.6 35.0,118.4 36.1,116.2 37.0,114.4 38.1,112.6 39.2,110.7 40.4,108.8 41.7,106.8 43.0,104.8 44.5,102.7 46.1,100.7 47.7,98.6 49.5,96.5 51.4,94.3 53.4,92.2 55.4,90.0 56.9,88.6 58.4,87.2 59.9,85.7 61.5,84.3 63.1,82.9 64.7,81.5 66.5,80.1 68.2,78.7 70.0,77.3 71.8,75.9 73.7,74.6 75.6,73.2 77.6,71.9 79.6,70.6 81.7,69.3 83.8,68.0 85.9,66.8 88.1,65.5 90.3,64.3 92.5,63.1 94.8,62.0 97.1,60.9 99.5,59.8 101.9,58.7 104.3,57.6 106.7,56.6 109.2,55.7 111.7,54.7 114.3,53.8 116.8,52.9 119.4,52.1 122.1,51.3 124.7,50.6 127.4,49.8 130.1,49.1 132.8,48.5 135.5,47.9 138.3,47.3 141.0,46.8 143.8,46.4 146.6,45.9 149.4,45.5 152.3,45.2 155.1,44.9 157.9,44.6 160.8,44.4 163.6,44.2 166.5,44.1 169.4,44.0 172.2,44.0 175.1,44.0 178.0,44.1 180.8,44.2 183.7,44.3 186.5,44.5 189.4,44.7 192.2,45.0 195.0,45.3 197.9,45.7 200.7,46.1 203.5,46.6 206.2,47.1 209.0,47.6 211.7,48.2 214.5,48.8 217.2,49.5 219.9,50.2 222.5,50.9 225.1,51.7 227.8,52.5 230.3,53.4 232.9,54.3 235.4,55.2 237.9,56.1 240.4,57.1 242.8,58.2 245.2,59.2 247.6,60.3 249.9,61.4 252.2,62.6 254.5,63.7 256.7,64.9 258.9,66.1 261.1,67.4 263.2,68.6 265.2,69.9 267.3,71.2 269.3,72.5 271.2,73.9 273.1,75.2 275.0,76.6 276.8,78.0 278.6,79.4 280.3,80.8 282.0,82.2 283.6,83.6 285.2,85.0 286.8,86.5 288.3,87.9 289.7,89.3 291.2,90.8 293.2,92.9 295.1,95.0 297.0,97.2 298.7,99.3 300.3,101.4 301.9,103.4 303.3,105.5 304.7,107.4 305.9,109.4 307.1,111.3 308.2,113.2 309.2,115.0 310.3,117.3 311.4,119.5 312.3,121.6 313.1,123.6 313.9,125.8 314.5,127.9 315.1,130.0 315.5,132.0 315.8,134.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"130.1\" cy=\"89.5\" r=\"45.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"130.1\" y1=\"89.5\" x2=\"93.3\" y2=\"62.7\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"130.1\" cy=\"89.5\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"93.3\" cy=\"62.7\" r=\"4\" fill=\"currentColor\"/><text x=\"77.3\" y=\"58.7\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\">R</text><line x1=\"316.0\" y1=\"131.0\" x2=\"316.0\" y2=\"139.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"316.0\" y=\"152.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2.2</text></svg>",
+  "hint": "(a) Use $\\sin^2+\\cos^2=1$ and then $1-\\cos2A=2\\sin^2A$ with $A=2t$. (c) Distance travelled is the integral of speed; $\\sin2t\\ge0$ on this interval.",
+  "answer": "(a) Shown. (b) $2.8\\ \\text{m s}^{-1}$, when $R$ is at the top of the wheel (height 0.7 m); twice the bicycle's speed of $1.4\\ \\text{m s}^{-1}$. (c) $2.8$ m, compared with $0.7\\pi\\approx2.20$ m for the bicycle.",
+  "solution": "**(a)** $\\frac{dx}{dt}=0.35(4-4\\cos4t)=1.4(1-\\cos4t)$ and $\\frac{dy}{dt}=0.35\\times4\\sin4t=1.4\\sin4t$.\n$$\\text{speed}^2=1.4^2\\left[(1-\\cos4t)^2+\\sin^24t\\right]=1.96\\left[1-2\\cos4t+\\cos^24t+\\sin^24t\\right]=1.96(2-2\\cos4t)$$\nUsing $1-\\cos4t=2\\sin^22t$:\n$$\\text{speed}^2=1.96\\times4\\sin^22t\\implies\\text{speed}=2.8|\\sin2t|\\qquad\\blacksquare$$\n\n**(b)** The greatest value of $|\\sin2t|$ is $1$, so the greatest speed is $2.8\\ \\text{m s}^{-1}$, when $2t=\\frac\\pi2$, i.e. $t=\\frac\\pi4$. Then $4t=\\pi$: $x=0.35\\pi$, $y=0.35(1-\\cos\\pi)=0.7$ m – the **top** of the wheel.\n\nThe centre of the wheel is at $x=0.35\\times4t=1.4t$, so the bicycle moves at $1.4\\ \\text{m s}^{-1}$. At the top of the wheel the reflector moves at **twice** the bicycle's speed (and at $t=0$, touching the ground, it is momentarily at rest).\n\n**(c)** One revolution is $0\\le4t\\le2\\pi$, i.e. $0\\le t\\le\\frac\\pi2$, where $\\sin2t\\ge0$:\n$$\\int_0^{\\pi/2}2.8\\sin2t\\,dt=2.8\\left[-\\tfrac12\\cos2t\\right]_0^{\\pi/2}=1.4\\big(-\\cos\\pi+\\cos0\\big)=2.8\\text{ m}$$\n\nThe bicycle travels one circumference, $2\\pi\\times0.35=0.7\\pi\\approx2.20$ m. The reflector travels further (exactly $8r=2.8$ m) because it goes up and over as well as forwards.",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "calc-integration-standard"
+  ],
+  "misconceptionIds": []
+ }
+]

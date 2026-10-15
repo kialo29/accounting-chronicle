@@ -1,0 +1,267 @@
+[
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A block of mass 5 kg lies on rough horizontal ground. The coefficient of friction between the block and the ground is 0.4. A horizontal force of 30 N is applied to the block.\n\n(a) Find the maximum possible frictional force.\n\n(b) Find the acceleration of the block.",
+  "hint": "Resolve vertically to find $R$, then the most friction can be is $\\mu R$. Compare this with 30 N.",
+  "answer": "(a) $19.6$ N (b) $2.08\\text{ m s}^{-2}$",
+  "solution": "(a) Vertically there is no acceleration, so\n$$R = 5g = 49\\text{ N}$$\nThe maximum friction is\n$$F_{\\max} = \\mu R = 0.4 \\times 49 = 19.6\\text{ N}$$\n\n(b) The pull, 30 N, is greater than 19.6 N, so the block slides and friction is limiting: $F = 19.6$ N.\n\nHorizontally, using $F = ma$:\n$$30 - 19.6 = 5a \\quad\\Rightarrow\\quad a = \\frac{10.4}{5} = 2.08\\text{ m s}^{-2}$$",
+  "misconceptionIds": [],
+  "id": "mech-friction-q01",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The block from the previous question (mass 5 kg, on rough horizontal ground with coefficient of friction 0.4) is now pushed by a horizontal force of **15 N** instead of 30 N.\n\nFind the frictional force acting on the block and state whether the block moves.",
+  "hint": "The maximum friction is still $\\mu R = 19.6$ N. Is 15 N enough to overcome it?",
+  "answer": "Friction is 15 N; the block does not move.",
+  "solution": "**What changed:** only the size of the applied force (30 N → 15 N).\n\nAs before, $R = 5g = 49$ N and the maximum friction available is $\\mu R = 0.4 \\times 49 = 19.6$ N.\n\nThe push is $15 < 19.6$, so friction can balance it and the block stays at rest. Friction only takes the value it needs:\n$$F = 15\\text{ N}$$\n\nNote: writing $F = \\mu R = 19.6$ N and $a = \\frac{15 - 19.6}{5} = -0.92$ would say the block accelerates **backwards** towards the person pushing it, which is impossible. $F = \\mu R$ only when friction is limiting.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "id": "mech-friction-q02",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The 5 kg block on rough horizontal ground ($\\mu = 0.4$) is now pulled by a force of 30 N acting at $30^\\circ$ **above** the horizontal, as shown.\n\nFind the acceleration of the block.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 145\" width=\"320\" height=\"145\"><line x1=\"20\" y1=\"125\" x2=\"300\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"24\" y1=\"125\" x2=\"18\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"34\" y1=\"125\" x2=\"28\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"44\" y1=\"125\" x2=\"38\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"54\" y1=\"125\" x2=\"48\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"64\" y1=\"125\" x2=\"58\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"74\" y1=\"125\" x2=\"68\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"84\" y1=\"125\" x2=\"78\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"94\" y1=\"125\" x2=\"88\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"104\" y1=\"125\" x2=\"98\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"114\" y1=\"125\" x2=\"108\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"124\" y1=\"125\" x2=\"118\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"134\" y1=\"125\" x2=\"128\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"144\" y1=\"125\" x2=\"138\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"154\" y1=\"125\" x2=\"148\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"164\" y1=\"125\" x2=\"158\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"174\" y1=\"125\" x2=\"168\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"184\" y1=\"125\" x2=\"178\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"194\" y1=\"125\" x2=\"188\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"204\" y1=\"125\" x2=\"198\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"214\" y1=\"125\" x2=\"208\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"224\" y1=\"125\" x2=\"218\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"234\" y1=\"125\" x2=\"228\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"244\" y1=\"125\" x2=\"238\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"254\" y1=\"125\" x2=\"248\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"264\" y1=\"125\" x2=\"258\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"274\" y1=\"125\" x2=\"268\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"284\" y1=\"125\" x2=\"278\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"294\" y1=\"125\" x2=\"288\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><polygon points=\"110,75 190,75 190,125 110,125\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"190\" y1=\"95\" x2=\"265.3\" y2=\"51.5\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"272.3,47.5 266.7,55.9 262.2,48.1\" fill=\"currentColor\"/><line x1=\"190\" y1=\"95\" x2=\"260\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M230,95 A40,40 0 0 0 224.6,75\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"238\" y=\"89\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">30°</text><text x=\"264.3\" y=\"41.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">30 N</text></svg>",
+  "hint": "The pull now has an upward component. Resolve vertically first: $R$ is no longer $5g$.",
+  "answer": "$2.48\\text{ m s}^{-2}$ (3 s.f.)",
+  "solution": "**What changed:** the 30 N force now acts at $30^\\circ$ above the horizontal instead of horizontally.\n\n**Vertically:**\n$$R + 30\\sin 30^\\circ = 5g \\quad\\Rightarrow\\quad R = 49 - 15 = 34\\text{ N}$$\nThe upward component of the pull has reduced $R$, and so reduced the friction available:\n$$F_{\\max} = 0.4 \\times 34 = 13.6\\text{ N}$$\n**Horizontally:** the driving component is $30\\cos 30^\\circ = 25.98$ N $> 13.6$ N, so the block slides and $F = 13.6$ N.\n$$25.98 - 13.6 = 5a \\quad\\Rightarrow\\quad a = 2.48\\text{ m s}^{-2}\\text{ (3 s.f.)}$$\nAlthough the horizontal driving force is smaller than before, the acceleration is greater, because friction has dropped from 19.6 N to 13.6 N.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-friction-q03",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The 5 kg block on rough horizontal ground ($\\mu = 0.4$) is now **pushed** by a force of 30 N acting at $30^\\circ$ **below** the horizontal, as shown.\n\nFind the acceleration of the block.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 145\" width=\"320\" height=\"145\"><line x1=\"20\" y1=\"125\" x2=\"300\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"24\" y1=\"125\" x2=\"18\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"34\" y1=\"125\" x2=\"28\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"44\" y1=\"125\" x2=\"38\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"54\" y1=\"125\" x2=\"48\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"64\" y1=\"125\" x2=\"58\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"74\" y1=\"125\" x2=\"68\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"84\" y1=\"125\" x2=\"78\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"94\" y1=\"125\" x2=\"88\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"104\" y1=\"125\" x2=\"98\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"114\" y1=\"125\" x2=\"108\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"124\" y1=\"125\" x2=\"118\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"134\" y1=\"125\" x2=\"128\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"144\" y1=\"125\" x2=\"138\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"154\" y1=\"125\" x2=\"148\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"164\" y1=\"125\" x2=\"158\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"174\" y1=\"125\" x2=\"168\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"184\" y1=\"125\" x2=\"178\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"194\" y1=\"125\" x2=\"188\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"204\" y1=\"125\" x2=\"198\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"214\" y1=\"125\" x2=\"208\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"224\" y1=\"125\" x2=\"218\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"234\" y1=\"125\" x2=\"228\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"244\" y1=\"125\" x2=\"238\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"254\" y1=\"125\" x2=\"248\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"264\" y1=\"125\" x2=\"258\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"274\" y1=\"125\" x2=\"268\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"284\" y1=\"125\" x2=\"278\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"294\" y1=\"125\" x2=\"288\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><polygon points=\"110,75 190,75 190,125 110,125\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"27.7\" y1=\"35.5\" x2=\"103.1\" y2=\"79\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"110,83 100,82.4 104.5,74.6\" fill=\"currentColor\"/><line x1=\"35\" y1=\"83\" x2=\"110\" y2=\"83\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M75.4,63 A40,40 0 0 0 70,83\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"50\" y=\"78\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30°</text><text x=\"31.7\" y=\"27.5\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">30 N</text></svg>",
+  "hint": "The force now has a downward component, which presses the block into the ground.",
+  "answer": "$0.0762\\text{ m s}^{-2}$ (3 s.f.)",
+  "solution": "**What changed:** the force acts $30^\\circ$ **below** the horizontal instead of above.\n\n**Vertically:** the downward component adds to the weight:\n$$R = 5g + 30\\sin 30^\\circ = 49 + 15 = 64\\text{ N}$$\n$$F_{\\max} = 0.4 \\times 64 = 25.6\\text{ N}$$\n**Horizontally:** $30\\cos 30^\\circ = 25.98$ N $> 25.6$ N, so the block (just) slides with $F = 25.6$ N:\n$$25.98 - 25.6 = 5a \\quad\\Rightarrow\\quad a = 0.0762\\text{ m s}^{-2}\\text{ (3 s.f.)}$$\nSame force, same angle, but pushing down instead of pulling up raises $R$ from 34 N to 64 N, and the acceleration falls from 2.48 to $0.0762\\text{ m s}^{-2}$. This is why it is easier to pull a heavy box at an angle than to push it.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-friction-q04",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A small block rests on a rough plane inclined at $20^\\circ$ to the horizontal. The only forces acting on the block are its weight, the normal reaction and friction. The block is on the point of sliding down the plane.\n\nFind the coefficient of friction between the block and the plane.",
+  "hint": "Resolve perpendicular to the plane and parallel to the plane, with the block of mass $m$, and use $F = \\mu R$.",
+  "answer": "$\\mu = \\tan 20^\\circ = 0.364$ (3 s.f.)",
+  "solution": "Let the mass be $m$ kg.\n\n**Perpendicular to the plane:** $R = mg\\cos 20^\\circ$\n\n**Parallel to the plane** (friction acts up the plane, since the block is about to slide down):\n$$F = mg\\sin 20^\\circ$$\nLimiting equilibrium, so $F = \\mu R$:\n$$\\mu\\, mg\\cos 20^\\circ = mg\\sin 20^\\circ \\quad\\Rightarrow\\quad \\mu = \\tan 20^\\circ = 0.364\\text{ (3 s.f.)}$$",
+  "misconceptionIds": [],
+  "id": "mech-friction-q05",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "A removal firm uses a ramp to slide boxes down from a van. An empty box placed on the ramp just stays at rest when the ramp is raised to $18^\\circ$, but starts to slide if the angle is any bigger.\n\nSam says: \"A box full of books is much heavier, so the ramp could be raised to a steeper angle before the full box starts to slide.\"\n\nIs Sam correct? Justify your answer, assuming the coefficient of friction is the same for both boxes.",
+  "hint": "Let the mass be $m$ and find the angle at which the box is in limiting equilibrium. Does $m$ survive to the end?",
+  "answer": "No. Limiting equilibrium gives $\\tan\\alpha = \\mu$, which does not depend on the mass, so the full box also starts to slide at $18^\\circ$.",
+  "solution": "For a box of mass $m$ on the point of sliding at angle $\\alpha$, the only forces are weight, normal reaction and friction.\n\nPerpendicular: $R = mg\\cos\\alpha$.\n\nParallel (limiting, friction up the ramp): $\\mu R = mg\\sin\\alpha$.\n\nSo $\\mu\\, mg\\cos\\alpha = mg\\sin\\alpha$, and the $mg$ cancels:\n$$\\tan\\alpha = \\mu$$\nFor the empty box, $\\mu = \\tan 18^\\circ = 0.325$. The full box has the same $\\mu$, so it also starts to slide when $\\tan\\alpha = 0.325$, i.e. at $18^\\circ$.\n\nSam is **not** correct. A heavier box has a larger weight component down the ramp, but also a proportionally larger normal reaction and so a proportionally larger maximum friction; the two effects cancel exactly.",
+  "misconceptionIds": [],
+  "id": "mech-friction-q06",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "After a collision on a road with a 40 mph speed limit, police measure skid marks 32 m long. The car skidded to rest in a straight line on a level road with its wheels locked. Tests show that the coefficient of friction between the tyres and that road surface is 0.7.\n\nModelling the car as a particle and ignoring air resistance, estimate the speed of the car when it started to skid. Was the car breaking the speed limit? (1 mile $= 1609$ m.)",
+  "hint": "Friction is the only horizontal force, and $F = \\mu R = \\mu mg$ while skidding. Find the deceleration, then use $v^2 = u^2 + 2as$.",
+  "answer": "About $21.0\\text{ m s}^{-1}$ ($\\approx 47$ mph), so yes, the car was speeding.",
+  "solution": "Let the mass be $m$ kg. Vertically $R = mg$. The wheels are locked, so the tyres slide and friction is limiting:\n$$F = 0.7mg$$\nNewton's second law (taking the direction of motion as positive):\n$$-0.7mg = ma \\quad\\Rightarrow\\quad a = -0.7 \\times 9.8 = -6.86\\text{ m s}^{-2}$$\nThe mass cancels, so we do not need to know it.\n\nUsing $v^2 = u^2 + 2as$ with $v = 0$, $s = 32$:\n$$0 = u^2 - 2(6.86)(32) \\quad\\Rightarrow\\quad u^2 = 439.04 \\quad\\Rightarrow\\quad u = 20.95\\text{ m s}^{-1}$$\nConverting: $20.95 \\times 3600 \\div 1609 = 46.9$ mph.\n\nThis is above 40 mph, so the evidence suggests the car **was** speeding. (Air resistance would also have helped to slow the car, so the true speed was probably a little higher, which strengthens the conclusion.)",
+  "misconceptionIds": [],
+  "id": "mech-friction-q07",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "fluency",
+  "question": "A particle of mass 3 kg is released from rest on a rough plane inclined at $35^\\circ$ to the horizontal. The coefficient of friction between the particle and the plane is 0.25.\n\n(a) Show that the particle slides down the plane.\n\n(b) Find the time it takes to slide 5 m and its speed at that moment.",
+  "hint": "Compare the component of the weight down the slope with the maximum friction $\\mu R$, where $R = 3g\\cos 35^\\circ$.",
+  "answer": "(a) $3g\\sin 35^\\circ = 16.9$ N $> \\mu R = 6.02$ N (b) $1.66$ s, $6.01\\text{ m s}^{-1}$ (3 s.f.)",
+  "solution": "(a) Perpendicular to the plane: $R = 3g\\cos 35^\\circ = 24.08$ N, so $F_{\\max} = 0.25 \\times 24.08 = 6.02$ N.\n\nComponent of weight down the plane: $3g\\sin 35^\\circ = 16.86$ N.\n\nSince $16.86 > 6.02$, friction cannot hold the particle and it slides down. (Equivalently, $\\mu = 0.25 < \\tan 35^\\circ = 0.700$.)\n\n(b) Sliding, so $F = 6.02$ N up the plane. Down the plane:\n$$3g\\sin 35^\\circ - 0.25 \\times 3g\\cos 35^\\circ = 3a \\quad\\Rightarrow\\quad a = g(\\sin 35^\\circ - 0.25\\cos 35^\\circ) = 3.614\\text{ m s}^{-2}$$\nWith $u = 0$, $s = 5$:\n$$5 = \\tfrac{1}{2}(3.614)t^2 \\quad\\Rightarrow\\quad t = \\sqrt{\\frac{10}{3.614}} = 1.66\\text{ s}$$\n$$v^2 = 2(3.614)(5) = 36.14 \\quad\\Rightarrow\\quad v = 6.01\\text{ m s}^{-1}\\text{ (3 s.f.)}$$",
+  "misconceptionIds": [],
+  "id": "mech-friction-q08",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle of mass 4 kg rests on a rough plane inclined at $25^\\circ$ to the horizontal. The coefficient of friction is 0.3. A force of $P$ N acts on the particle up a line of greatest slope, as shown. The question asks for the least value of $P$ that will make the particle **move up** the plane.\n\nPriya's working is shown below.\n\n> $R = 4g\\cos 25^\\circ = 35.53$ N, so $F = 0.3 \\times 35.53 = 10.66$ N.\n>\n> Friction acts up the slope to stop it sliding.\n>\n> Resolving along the slope: $P + 10.66 = 4g\\sin 25^\\circ = 16.57$\n>\n> So $P = 5.91$ N.\n\nIdentify Priya's error, explain why it is wrong, and find the correct answer.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 195\" width=\"340\" height=\"195\"><polygon points=\"30,173 320,173 320,37.8\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M72,173 A42,42 0 0 0 68.1,155.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"80.8\" y=\"167.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">25°</text><polygon points=\"165.9,109.6 196.8,95.2 182.4,64.4 151.6,78.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"189.6\" y1=\"79.8\" x2=\"238.5\" y2=\"57\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"245.8,53.6 239.5,61.5 235.7,53.4\" fill=\"currentColor\"/><text x=\"218.2\" y=\"50.6\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text></svg>",
+  "hint": "Which way would the particle move? Friction always opposes that motion.",
+  "answer": "Friction should act **down** the slope; $P = 27.2$ N (3 s.f.).",
+  "solution": "Priya's values of $R$ and $\\mu R$ are correct. Her error is the **direction of friction** in the third line.\n\nThe particle is about to move **up** the plane, so friction opposes this and acts **down** the plane. (Her value, $P = 5.91$ N, is actually the force at which the particle is about to slide **down**: it is the least force that stops it slipping, not the least force that moves it up.)\n\nCorrected, resolving parallel to the plane with friction down the slope:\n$$P = 4g\\sin 25^\\circ + 0.3 \\times 4g\\cos 25^\\circ = 16.57 + 10.66 = 27.22$$\nSo the least force needed is $P = 27.2$ N (3 s.f.).\n\nTogether, the particle stays in equilibrium for $5.91 \\le P \\le 27.2$.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "mech-friction-q09",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle of mass 2 kg rests on a rough plane inclined at $30^\\circ$ to the horizontal. It is held in equilibrium by a **horizontal** force of 5 N, acting in the vertical plane containing a line of greatest slope, as shown. The particle is on the point of slipping down the plane. The question asks for the coefficient of friction.\n\nBen writes:\n\n> The particle is in limiting equilibrium on a slope, so $\\mu = \\tan 30^\\circ = 0.577$.\n\nExplain why Ben's method is not valid here, and find the correct value of $\\mu$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 227\" width=\"340\" height=\"227\"><polygon points=\"30,205 320,205 320,37.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M72,205 A42,42 0 0 0 66.4,184\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"80.3\" y=\"197.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">30°</text><polygon points=\"159.9,130 189.3,113 172.3,83.6 142.9,100.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"78.5\" y1=\"106.8\" x2=\"138.5\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"146.5,106.8 137.5,111.3 137.5,102.3\" fill=\"currentColor\"/><text x=\"98.5\" y=\"98.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5 N</text></svg>",
+  "hint": "Ben's shortcut comes from $mg\\sin\\alpha = \\mu mg\\cos\\alpha$. Which force has he left out? Resolve properly in both directions.",
+  "answer": "$\\mu = 0.281$ (3 s.f.)",
+  "solution": "$\\mu = \\tan\\alpha$ comes from resolving when weight, normal reaction and friction are the **only** forces. Here there is also the 5 N horizontal force, which has components both along the plane and into the plane, so the shortcut does not apply.\n\n**Perpendicular to the plane:** the horizontal force pushes the particle into the plane with component $5\\sin 30^\\circ$:\n$$R = 2g\\cos 30^\\circ + 5\\sin 30^\\circ = 16.97 + 2.5 = 19.47\\text{ N}$$\n**Parallel to the plane:** about to slip down, so friction acts up the plane:\n$$F + 5\\cos 30^\\circ = 2g\\sin 30^\\circ \\quad\\Rightarrow\\quad F = 9.8 - 4.330 = 5.470\\text{ N}$$\n**Limiting:** $F = \\mu R$:\n$$\\mu = \\frac{5.470}{19.47} = 0.281\\text{ (3 s.f.)}$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "id": "mech-friction-q10",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A child and sledge have a combined mass of 32 kg. The sledge is pulled across horizontal snow at **constant speed** by a rope inclined at $25^\\circ$ above the horizontal, as shown. The coefficient of friction between the sledge and the snow is 0.12.\n\nModelling the child and sledge as a particle, find the tension in the rope.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 170\" width=\"320\" height=\"170\"><line x1=\"20\" y1=\"125\" x2=\"300\" y2=\"125\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"24\" y1=\"125\" x2=\"18\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"34\" y1=\"125\" x2=\"28\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"44\" y1=\"125\" x2=\"38\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"54\" y1=\"125\" x2=\"48\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"64\" y1=\"125\" x2=\"58\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"74\" y1=\"125\" x2=\"68\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"84\" y1=\"125\" x2=\"78\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"94\" y1=\"125\" x2=\"88\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"104\" y1=\"125\" x2=\"98\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"114\" y1=\"125\" x2=\"108\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"124\" y1=\"125\" x2=\"118\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"134\" y1=\"125\" x2=\"128\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"144\" y1=\"125\" x2=\"138\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"154\" y1=\"125\" x2=\"148\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"164\" y1=\"125\" x2=\"158\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"174\" y1=\"125\" x2=\"168\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"184\" y1=\"125\" x2=\"178\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"194\" y1=\"125\" x2=\"188\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"204\" y1=\"125\" x2=\"198\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"214\" y1=\"125\" x2=\"208\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"224\" y1=\"125\" x2=\"218\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"234\" y1=\"125\" x2=\"228\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"244\" y1=\"125\" x2=\"238\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"254\" y1=\"125\" x2=\"248\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"264\" y1=\"125\" x2=\"258\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"274\" y1=\"125\" x2=\"268\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"284\" y1=\"125\" x2=\"278\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"294\" y1=\"125\" x2=\"288\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"0.8\"/><polygon points=\"110,75 190,75 190,125 110,125\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"190\" y1=\"95\" x2=\"268.8\" y2=\"58.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"276.1,54.9 269.8,62.7 266,54.6\" fill=\"currentColor\"/><line x1=\"190\" y1=\"95\" x2=\"260\" y2=\"95\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M230,95 A40,40 0 0 0 226.3,78.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"238\" y=\"89\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">25°</text><text x=\"268.1\" y=\"48.9\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">T N</text></svg>",
+  "hint": "Constant speed means the resultant force is zero, but the sledge is sliding, so $F = \\mu R$. The rope lifts slightly, so $R \\ne 32g$.",
+  "answer": "$39.3$ N (3 s.f.)",
+  "solution": "Let the tension be $T$ N.\n\n**Vertically:** $R + T\\sin 25^\\circ = 32g$, so $R = 313.6 - T\\sin 25^\\circ$.\n\nThe sledge is sliding, so $F = 0.12R = 0.12(313.6 - T\\sin 25^\\circ)$.\n\n**Horizontally**, constant speed so the resultant is zero:\n$$T\\cos 25^\\circ = 0.12(313.6 - T\\sin 25^\\circ)$$\n$$T(\\cos 25^\\circ + 0.12\\sin 25^\\circ) = 37.632$$\n$$T = \\frac{37.632}{0.9063 + 0.0507} = \\frac{37.632}{0.9570} = 39.3\\text{ N (3 s.f.)}$$\n\n(Taking $R = 32g$ would ignore the lift from the rope and give $T = 37.632 \\div \\cos 25^\\circ = 41.5$ N, which is too big.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-friction-q11",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A particle of mass 5 kg is placed on a rough plane inclined at $30^\\circ$ to the horizontal. The coefficient of friction between the particle and the plane is 0.2. A **horizontal** force of magnitude $P$ N acts on the particle, in the vertical plane containing a line of greatest slope, pushing it towards the plane, as shown.\n\nFind the range of values of $P$ for which the particle remains in equilibrium.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 227\" width=\"340\" height=\"227\"><polygon points=\"30,205 320,205 320,37.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M72,205 A42,42 0 0 0 66.4,184\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"80.3\" y=\"197.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">30°</text><polygon points=\"159.9,130 189.3,113 172.3,83.6 142.9,100.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"78.5\" y1=\"106.8\" x2=\"138.5\" y2=\"106.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polygon points=\"146.5,106.8 137.5,111.3 137.5,102.3\" fill=\"currentColor\"/><text x=\"98.5\" y=\"98.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">P</text></svg>",
+  "hint": "Consider two limiting cases. In each, $R$ depends on $P$. Decide which way friction acts in each case.",
+  "answer": "$16.6 \\le P \\le 43.1$ (3 s.f.)",
+  "solution": "**Perpendicular to the plane** (in both cases):\n$$R = 5g\\cos 30^\\circ + P\\sin 30^\\circ$$\nAlong the plane, $P$ has component $P\\cos 30^\\circ$ up the plane and the weight has component $5g\\sin 30^\\circ = 24.5$ N down the plane.\n\n**Case 1: on the point of slipping down** (smallest $P$; friction acts **up** the plane, $F = \\mu R$):\n$$P\\cos 30^\\circ + 0.2(5g\\cos 30^\\circ + P\\sin 30^\\circ) = 5g\\sin 30^\\circ$$\n$$P(\\cos 30^\\circ + 0.2\\sin 30^\\circ) = 5g(\\sin 30^\\circ - 0.2\\cos 30^\\circ)$$\n$$P = \\frac{49(0.5 - 0.1732)}{0.8660 + 0.1} = \\frac{16.013}{0.9660} = 16.58$$\n\n**Case 2: on the point of moving up** (largest $P$; friction acts **down** the plane):\n$$P\\cos 30^\\circ = 5g\\sin 30^\\circ + 0.2(5g\\cos 30^\\circ + P\\sin 30^\\circ)$$\n$$P(\\cos 30^\\circ - 0.2\\sin 30^\\circ) = 5g(\\sin 30^\\circ + 0.2\\cos 30^\\circ)$$\n$$P = \\frac{49(0.5 + 0.1732)}{0.8660 - 0.1} = \\frac{32.987}{0.7660} = 43.06$$\n\nSo the particle stays in equilibrium for $16.6 \\le P \\le 43.1$ (3 s.f.).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "mech-friction-q12",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "mech-connected-particles",
+   "mech-suvat"
+  ],
+  "question": "Particle A, of mass 4 kg, lies on a rough horizontal table, 4 m from a small smooth pulley fixed at the edge of the table. It is attached to a light inextensible string which passes over the pulley and carries particle B, of mass 3 kg, hanging freely 1.4 m above the floor, as shown. The coefficient of friction between A and the table is 0.25. The system is released from rest with the string taut.\n\n(a) Find the acceleration of the system and the tension in the string while B is falling.\n\n(b) B hits the floor and does not rebound. Find the **total** distance moved by A before it comes to rest.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 290\" width=\"340\" height=\"290\"><line x1=\"20\" y1=\"90\" x2=\"250\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"240\" y1=\"90\" x2=\"240\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"200\" y1=\"280\" x2=\"330\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.8\"/><line x1=\"204\" y1=\"280\" x2=\"198\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"214\" y1=\"280\" x2=\"208\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"224\" y1=\"280\" x2=\"218\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"234\" y1=\"280\" x2=\"228\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"244\" y1=\"280\" x2=\"238\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"254\" y1=\"280\" x2=\"248\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"264\" y1=\"280\" x2=\"258\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"274\" y1=\"280\" x2=\"268\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"284\" y1=\"280\" x2=\"278\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"294\" y1=\"280\" x2=\"288\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"304\" y1=\"280\" x2=\"298\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"314\" y1=\"280\" x2=\"308\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><line x1=\"324\" y1=\"280\" x2=\"318\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"0.8\"/><polygon points=\"70,56 120,56 120,90 70,90\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"95\" y=\"78\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><line x1=\"240\" y1=\"90\" x2=\"258\" y2=\"82\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"260\" cy=\"80\" r=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"260\" cy=\"80\" r=\"2\" fill=\"currentColor\"/><line x1=\"120\" y1=\"70\" x2=\"260\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"270\" y1=\"80\" x2=\"270\" y2=\"160\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"256,160 284,160 284,188 256,188\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"270\" y=\"179\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><line x1=\"300\" y1=\"188\" x2=\"300\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"294\" y1=\"188\" x2=\"306\" y2=\"188\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"306\" y=\"240\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">1.4 m</text></svg>",
+  "hint": "(a) Write $F = ma$ for each particle separately. (b) Once B lands the string goes slack; the only horizontal force on A is friction.",
+  "answer": "(a) $2.8\\text{ m s}^{-2}$, $21$ N (b) $3$ m",
+  "solution": "(a) For A: $R = 4g$, and A slides, so $F = 0.25 \\times 4g = 9.8$ N.\n\nA (horizontally): $T - 9.8 = 4a$\n\nB (vertically down): $3g - T = 3a$\n\nAdding: $3g - 9.8 = 7a \\Rightarrow 19.6 = 7a \\Rightarrow a = 2.8\\text{ m s}^{-2}$.\n\nThen $T = 3g - 3(2.8) = 29.4 - 8.4 = 21$ N.\n\n(b) **Speed when B lands** (A has also moved 1.4 m):\n$$v^2 = 0 + 2(2.8)(1.4) = 7.84 \\quad\\Rightarrow\\quad v = 2.8\\text{ m s}^{-1}$$\n**After B lands** the string is slack. The only horizontal force on A is friction, 9.8 N, so\n$$-9.8 = 4a \\quad\\Rightarrow\\quad a = -2.45\\text{ m s}^{-2}$$\n$$0 = 7.84 - 2(2.45)s \\quad\\Rightarrow\\quad s = 1.6\\text{ m}$$\nTotal distance $= 1.4 + 1.6 = 3$ m. This is less than 4 m, so A stops before reaching the pulley, as assumed.",
+  "misconceptionIds": [],
+  "id": "mech-friction-q13",
+  "topicId": "mech-friction"
+ },
+ {
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 11,
+  "calculator": true,
+  "question": "A particle P of mass 0.5 kg is projected with speed $7\\text{ m s}^{-1}$ up a line of greatest slope of a rough plane, from a point A on the plane. The plane is inclined at angle $\\alpha$ to the horizontal, where $\\tan\\alpha = \\frac{3}{4}$. The coefficient of friction between P and the plane is $\\frac{1}{2}$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 260\" width=\"340\" height=\"260\"><polygon points=\"30,238 320,238 320,20.5\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M72,238 A42,42 0 0 0 63.6,212.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"79.4\" y=\"227.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">α</text><polygon points=\"98,187 118.8,171.4 103.2,150.6 82.4,166.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"111\" y1=\"161\" x2=\"154.2\" y2=\"128.6\" stroke=\"#3b82f6\" stroke-width=\"1.5\"/><polygon points=\"160.6,123.8 156.1,132.8 150.7,125.6\" fill=\"#3b82f6\"/><text x=\"132.2\" y=\"126.6\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">7 m s⁻¹</text><circle cx=\"98\" cy=\"187\" r=\"2.5\" fill=\"currentColor\"/><text x=\"88\" y=\"181\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the deceleration of P as it moves up the plane is $g\\text{ m s}^{-2}$.",
+    "marks": 4
+   },
+   {
+    "label": "b",
+    "prompt": "Find the distance P travels up the plane before coming to instantaneous rest.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Show that P does not remain at rest.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the speed of P when it returns to A.",
+    "marks": 3
+   }
+  ],
+  "hint": "$\\sin\\alpha = \\frac{3}{5}$, $\\cos\\alpha = \\frac{4}{5}$. Friction acts down the slope while P moves up, and up the slope when P slides back down.",
+  "answer": "(a) shown (b) $2.5$ m (c) $mg\\sin\\alpha = 0.6mg > \\mu R = 0.4mg$ (d) $3.13\\text{ m s}^{-1}$ (3 s.f.)",
+  "solution": "$\\tan\\alpha = \\frac{3}{4}$ gives $\\sin\\alpha = \\frac{3}{5}$, $\\cos\\alpha = \\frac{4}{5}$.\n\n(a) Perpendicular: $R = 0.5g\\cos\\alpha = 0.4g$ **M1 A1**\n\nMoving, so $F = \\mu R = \\frac{1}{2}(0.4g) = 0.2g$, acting down the plane.\n\nDown the plane: $0.5g\\sin\\alpha + 0.2g = 0.5a$, i.e. $0.3g + 0.2g = 0.5a$ **M1**\n\n$a = g$, so the deceleration is $g\\text{ m s}^{-2}$ **A1** (shown)\n\n(b) $0 = 7^2 - 2(9.8)s$ **M1**, so $s = \\dfrac{49}{19.6} = 2.5$ m **A1**\n\n(c) At rest, the component of weight down the plane is $0.5g\\sin\\alpha = 0.3g$. **M1**\n\nThe maximum friction is $\\mu R = 0.2g < 0.3g$, so friction cannot hold P and it slides back down. **A1**\n\n(d) Now friction acts **up** the plane: $0.3g - 0.2g = 0.5a$, so $a = 0.2g = 1.96\\text{ m s}^{-2}$. **M1 A1**\n\n$v^2 = 0 + 2(1.96)(2.5) = 9.8$, $v = 3.13\\text{ m s}^{-1}$ (3 s.f.) **A1**",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "mech-friction-q14",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "pure-trig-harmonic-form"
+  ],
+  "question": "A crate of mass 20 kg rests on rough horizontal ground. The coefficient of friction between the crate and the ground is 0.75. A rope is attached to the crate and pulled with tension $T$ N at an angle $\\theta$ above the horizontal, where $0 \\le \\theta < 90^\\circ$.\n\n(a) Show that the crate is on the point of moving when\n$$T = \\frac{147}{\\cos\\theta + 0.75\\sin\\theta}$$\n\n(b) By writing $\\cos\\theta + 0.75\\sin\\theta$ in the form $R\\cos(\\theta - \\beta)$, find the least tension that will move the crate and the angle at which the rope should be pulled.",
+  "hint": "(a) Resolve vertically for the normal reaction (it depends on $T$), then horizontally with $F = \\mu R$. (b) $T$ is least when the denominator is greatest.",
+  "answer": "(a) shown (b) least tension $117.6$ N at $\\theta = 36.9^\\circ$ (3 s.f.)",
+  "solution": "(a) Vertically: $R + T\\sin\\theta = 20g$, so $R = 196 - T\\sin\\theta$.\n\nOn the point of moving, friction is limiting: $F = 0.75(196 - T\\sin\\theta)$.\n\nHorizontally: $T\\cos\\theta = 0.75(196 - T\\sin\\theta) = 147 - 0.75T\\sin\\theta$\n\n$$T(\\cos\\theta + 0.75\\sin\\theta) = 147 \\quad\\Rightarrow\\quad T = \\frac{147}{\\cos\\theta + 0.75\\sin\\theta}$$\n\n(b) $\\cos\\theta + 0.75\\sin\\theta = R\\cos(\\theta - \\beta) = R\\cos\\theta\\cos\\beta + R\\sin\\theta\\sin\\beta$, so\n$$R\\cos\\beta = 1, \\quad R\\sin\\beta = 0.75$$\n$$R = \\sqrt{1 + 0.75^2} = 1.25, \\qquad \\tan\\beta = 0.75 \\Rightarrow \\beta = 36.87^\\circ$$\nSo\n$$T = \\frac{147}{1.25\\cos(\\theta - 36.87^\\circ)}$$\n$T$ is least when $\\cos(\\theta - 36.87^\\circ)$ takes its greatest value, 1, i.e. when $\\theta = 36.87^\\circ$:\n$$T_{\\min} = \\frac{147}{1.25} = 117.6\\text{ N}$$\nThe least tension is $117.6$ N, with the rope at $36.9^\\circ$ above the horizontal (note $\\tan\\theta = \\mu$ at the optimum). A horizontal pull would need $147$ N.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "id": "mech-friction-q15",
+  "topicId": "mech-friction"
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A particle is projected up a line of greatest slope of a rough plane inclined at angle $\\alpha$ to the horizontal. The coefficient of friction is $\\mu$, where $\\mu < \\tan\\alpha$. The particle comes to instantaneous rest and then slides back to its starting point.\n\n(a) Prove that\n$$\\frac{\\text{time taken to move up}}{\\text{time taken to slide down}} = \\sqrt{\\frac{\\sin\\alpha - \\mu\\cos\\alpha}{\\sin\\alpha + \\mu\\cos\\alpha}}$$\n\n(b) Explain why the condition $\\mu < \\tan\\alpha$ is needed.\n\n(c) On a plane inclined at $30^\\circ$, the particle takes exactly twice as long to slide down as it took to move up. Find the exact value of $\\mu$.",
+  "hint": "Both journeys cover the same distance $d$, and each can be treated as motion from rest (the upward journey reversed in time ends at rest). Use $d = \\frac{1}{2}at^2$.",
+  "answer": "(a) proof (b) otherwise the particle stays at rest at the top (c) $\\mu = \\dfrac{\\sqrt{3}}{5}$",
+  "solution": "(a) Let the mass be $m$; $R = mg\\cos\\alpha$ throughout.\n\n**Up:** friction acts down the plane, deceleration $a_1 = g(\\sin\\alpha + \\mu\\cos\\alpha)$.\n\n**Down:** friction acts up the plane, acceleration $a_2 = g(\\sin\\alpha - \\mu\\cos\\alpha)$.\n\nLet the distance up the plane be $d$. The upward motion has uniform deceleration $a_1$ and ends at rest, so (running it backwards in time) $d = \\frac{1}{2}a_1t_1^2$. The downward motion starts from rest: $d = \\frac{1}{2}a_2t_2^2$.\n\nSo $a_1t_1^2 = a_2t_2^2$ and\n$$\\frac{t_1}{t_2} = \\sqrt{\\frac{a_2}{a_1}} = \\sqrt{\\frac{\\sin\\alpha - \\mu\\cos\\alpha}{\\sin\\alpha + \\mu\\cos\\alpha}} \\quad\\blacksquare$$\nSince $a_2 < a_1$, the particle always takes longer to come down than to go up.\n\n(b) At the top the particle is at rest. It slides back only if the weight component $mg\\sin\\alpha$ exceeds the maximum friction $\\mu mg\\cos\\alpha$, i.e. $\\mu < \\tan\\alpha$. Otherwise friction holds it in equilibrium and $t_2$ does not exist (the formula would need the square root of a non-positive number).\n\n(c) $\\dfrac{t_1}{t_2} = \\dfrac{1}{2}$, so\n$$\\frac{\\sin 30^\\circ - \\mu\\cos 30^\\circ}{\\sin 30^\\circ + \\mu\\cos 30^\\circ} = \\frac{1}{4}$$\n$$4\\sin 30^\\circ - 4\\mu\\cos 30^\\circ = \\sin 30^\\circ + \\mu\\cos 30^\\circ \\quad\\Rightarrow\\quad 3\\sin 30^\\circ = 5\\mu\\cos 30^\\circ$$\n$$\\mu = \\frac{3}{5}\\tan 30^\\circ = \\frac{3}{5} \\times \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{5}\\ (\\approx 0.346)$$\nCheck: $\\frac{\\sqrt{3}}{5} < \\tan 30^\\circ = \\frac{\\sqrt{3}}{3}$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "id": "mech-friction-q16",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ },
+ {
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "A particle of mass $m$ rests on a rough plane inclined at angle $\\alpha$ to the horizontal, with coefficient of friction $\\mu$. A horizontal force of magnitude $P$, in the vertical plane containing a line of greatest slope, pushes the particle towards the plane.\n\n(a) Show that, if the particle is on the point of moving **up** the plane,\n$$P(\\cos\\alpha - \\mu\\sin\\alpha) = mg(\\sin\\alpha + \\mu\\cos\\alpha)$$\n\n(b) Hence prove that if $\\mu \\ge \\cot\\alpha$, **no** horizontal force, however large, can push the particle up the plane. Explain this physically.\n\n(c) For a plane inclined at $40^\\circ$, find the greatest value of $\\mu$ for which some horizontal force can push the particle up the plane.",
+  "hint": "(b) Look at the sign of the left-hand side of the equation in (a) when $\\mu\\sin\\alpha \\ge \\cos\\alpha$. What does increasing $P$ do to $R$?",
+  "answer": "(a) shown (b) proof (c) $\\mu$ must be less than $\\cot 40^\\circ = 1.19$ (3 s.f.)",
+  "solution": "(a) Perpendicular: $R = mg\\cos\\alpha + P\\sin\\alpha$.\n\nOn the point of moving up, friction acts **down** the plane with $F = \\mu R$. Parallel to the plane:\n$$P\\cos\\alpha = mg\\sin\\alpha + \\mu(mg\\cos\\alpha + P\\sin\\alpha)$$\n$$P(\\cos\\alpha - \\mu\\sin\\alpha) = mg(\\sin\\alpha + \\mu\\cos\\alpha) \\quad\\blacksquare$$\n\n(b) More generally, the net force up the plane (with maximum friction opposing) is\n$$P\\cos\\alpha - mg\\sin\\alpha - \\mu(mg\\cos\\alpha + P\\sin\\alpha) = P(\\cos\\alpha - \\mu\\sin\\alpha) - mg(\\sin\\alpha + \\mu\\cos\\alpha)$$\nIf $\\mu \\ge \\cot\\alpha$ then $\\mu\\sin\\alpha \\ge \\cos\\alpha$, so $\\cos\\alpha - \\mu\\sin\\alpha \\le 0$. The first term is then $\\le 0$ for every $P \\ge 0$, while $mg(\\sin\\alpha + \\mu\\cos\\alpha) > 0$. So the push up the plane can never exceed the friction available plus the weight component, and the particle cannot be moved up, whatever $P$ is. $\\blacksquare$\n\n**Physically:** increasing $P$ increases the push up the plane by $P\\cos\\alpha$, but also presses the particle harder into the plane, raising the maximum friction by $\\mu P\\sin\\alpha$. When $\\mu\\sin\\alpha \\ge \\cos\\alpha$ the extra friction grows at least as fast as the extra push, so pushing harder never helps (\"self-locking\").\n\n(c) We need $\\cos 40^\\circ - \\mu\\sin 40^\\circ > 0$, i.e. $\\mu < \\cot 40^\\circ = \\dfrac{1}{\\tan 40^\\circ} = 1.19$ (3 s.f.). So $\\mu$ must be less than $1.19$; at or above this value no horizontal force works.",
+  "misconceptionIds": [],
+  "id": "mech-friction-q17",
+  "topicId": "mech-friction",
+  "linkedTopicIds": []
+ }
+]

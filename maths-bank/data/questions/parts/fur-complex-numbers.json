@@ -1,0 +1,265 @@
+[
+ {
+  "id": "fur-complex-numbers-q01",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Write $\\sqrt{-49}$ and $\\sqrt{-12}$ in terms of $i$, simplifying any surds.\n\n(b) Simplify $i^3$ and $i^4$.\n\n(c) Write down $\\mathrm{Re}(z)$ and $\\mathrm{Im}(z)$ for each of\n$$z_1 = 5 + 2i, \\quad z_2 = 4 - 7i, \\quad z_3 = 6i, \\quad z_4 = -3$$",
+  "hint": "Use $\\sqrt{-k} = \\sqrt{k} \\times \\sqrt{-1} = i\\sqrt{k}$ and $i^2 = -1$. The imaginary part is the real number multiplying $i$.",
+  "answer": "(a) $7i$ and $2\\sqrt{3}\\,i$ (b) $i^3 = -i$, $i^4 = 1$ (c) $z_1$: $5, 2$; $z_2$: $4, -7$; $z_3$: $0, 6$; $z_4$: $-3, 0$",
+  "solution": "(a) $\\sqrt{-49} = \\sqrt{49} \\times \\sqrt{-1} = 7i$\n\n$\\sqrt{-12} = \\sqrt{12}\\,i = \\sqrt{4 \\times 3}\\,i = 2\\sqrt{3}\\,i$\n\n(b) $i^3 = i^2 \\times i = -1 \\times i = -i$\n\n$i^4 = i^2 \\times i^2 = (-1)(-1) = 1$\n\n(c) Write each number as $a + bi$; then $\\mathrm{Re}(z) = a$ and $\\mathrm{Im}(z) = b$, both real.\n\n* $z_1 = 5 + 2i$: $\\mathrm{Re} = 5$, $\\mathrm{Im} = 2$\n* $z_2 = 4 + (-7)i$: $\\mathrm{Re} = 4$, $\\mathrm{Im} = -7$ (not $-7i$)\n* $z_3 = 0 + 6i$: $\\mathrm{Re} = 0$, $\\mathrm{Im} = 6$\n* $z_4 = -3 + 0i$: $\\mathrm{Re} = -3$, $\\mathrm{Im} = 0$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q02",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Given $z = 3 + 5i$ and $w = 2 - 7i$, find, in the form $a + bi$,\n\n(a) $z + w$\n\n(b) $z - w$\n\n(c) $3z - 2w$",
+  "hint": "Deal with the real parts and the imaginary parts separately. Take care with the signs when subtracting $w$.",
+  "answer": "(a) $5 - 2i$ (b) $1 + 12i$ (c) $5 + 29i$",
+  "solution": "(a) $z + w = (3 + 2) + (5 - 7)i = 5 - 2i$\n\n(b) $z - w = (3 - 2) + (5 - (-7))i = 1 + 12i$\n\n(c) $3z = 9 + 15i$ and $2w = 4 - 14i$, so\n$$3z - 2w = (9 - 4) + (15 - (-14))i = 5 + 29i$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q03",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $(2 + 3i)(4 + i)$ in the form $a + bi$.",
+  "hint": "Expand the brackets as you would $(2 + 3x)(4 + x)$, then replace $i^2$ by $-1$.",
+  "answer": "$5 + 14i$",
+  "solution": "Expand:\n$$(2 + 3i)(4 + i) = 8 + 2i + 12i + 3i^2$$\n\nReplace $i^2$ by $-1$:\n$$= 8 + 14i - 3 = 5 + 14i$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q04",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $(2 + 3i)(4 - i)$ in the form $a + bi$.",
+  "hint": "Compare with $(2 + 3i)(4 + i)$: only the sign of $i$ in the second bracket has changed. Watch the sign of the $i^2$ term.",
+  "answer": "$11 + 10i$",
+  "solution": "$$(2 + 3i)(4 - i) = 8 - 2i + 12i - 3i^2 = 8 + 10i + 3 = 11 + 10i$$\n\n**What changed:** the second bracket became $4 - i$. The $i^2$ term is now $-3i^2 = +3$, so it adds to the real part instead of subtracting (compare $5 + 14i$ for $(2 + 3i)(4 + i)$).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q05",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $(2 + 3i)(2 - 3i)$ in the form $a + bi$. What do you notice?",
+  "hint": "The second bracket is now the conjugate of the first.",
+  "answer": "$13$ (a real number: $zz^* = a^2 + b^2$)",
+  "solution": "$$(2 + 3i)(2 - 3i) = 4 - 6i + 6i - 9i^2 = 4 + 9 = 13$$\n\n**What changed:** the second bracket is now the **conjugate** of $2 + 3i$. The imaginary terms cancel and the answer is real: in general $(a + bi)(a - bi) = a^2 + b^2$, here $2^2 + 3^2 = 13$. This is why we multiply by the conjugate when dividing.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q06",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Express $(2 + 3i)^2$ in the form $a + bi$.",
+  "hint": "Write it as $(2 + 3i)(2 + 3i)$. It is not $2^2 + (3i)^2$.",
+  "answer": "$-5 + 12i$",
+  "solution": "$$(2 + 3i)^2 = (2 + 3i)(2 + 3i) = 4 + 6i + 6i + 9i^2 = 4 + 12i - 9 = -5 + 12i$$\n\n**What changed:** both brackets are now the same. The imaginary terms add instead of cancelling, and $9i^2 = -9$ makes the real part negative. A common slip is to treat $9i^2$ as $+9$, giving $13 + 12i$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q07",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Express $\\dfrac{5 + i}{2 - 3i}$ in the form $a + bi$, where $a$ and $b$ are rational.",
+  "hint": "Multiply the numerator and denominator by $2 + 3i$, the conjugate of the denominator.",
+  "answer": "$\\dfrac{7}{13} + \\dfrac{17}{13}i$",
+  "solution": "Multiply top and bottom by $2 + 3i$:\n$$\\frac{(5 + i)(2 + 3i)}{(2 - 3i)(2 + 3i)}$$\n\nNumerator: $10 + 15i + 2i + 3i^2 = 10 + 17i - 3 = 7 + 17i$\n\nDenominator: $2^2 + 3^2 = 13$\n\n$$\\frac{5 + i}{2 - 3i} = \\frac{7 + 17i}{13} = \\frac{7}{13} + \\frac{17}{13}i$$\n\nCheck: $(2 - 3i)(7 + 17i) = 14 + 34i - 21i - 51i^2 = 65 + 13i = 13(5 + i)$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q08",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Solve $z^2 + 4z + 13 = 0$, giving your answers in the form $a + bi$.",
+  "hint": "Find the discriminant first. If it is negative, write its square root using $i$.",
+  "answer": "$z = -2 + 3i$ or $z = -2 - 3i$",
+  "solution": "Discriminant: $b^2 - 4ac = 16 - 52 = -36 < 0$, so the roots are not real.\n\n$\\sqrt{-36} = \\sqrt{36} \\times \\sqrt{-1} = 6i$\n\n$$z = \\frac{-4 \\pm 6i}{2} = -2 \\pm 3i$$\n\nAlternatively, complete the square: $(z + 2)^2 + 9 = 0$, so $(z + 2)^2 = -9$, $z + 2 = \\pm 3i$.\n\nCheck: the roots are a conjugate pair with sum $-4$ and product $(-2)^2 + 3^2 = 13$, matching $z^2 + 4z + 13$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q09",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Priya is asked to write $\\dfrac{10 + 5i}{2 + i}$ in the form $a + bi$. Her working is shown below.\n\n$$\\frac{10 + 5i}{2 + i} = \\frac{10}{2} + \\frac{5i}{i} = 5 + 5i$$\n\n(a) Show, by multiplying, that Priya's answer is wrong.\n\n(b) Explain the mistake in her method.\n\n(c) Find the correct answer.",
+  "hint": "If $\\dfrac{p}{q} = r$ then $qr$ should equal $p$. For the correct method, use the conjugate of $2 + i$.",
+  "answer": "(a) $(2 + i)(5 + 5i) = 5 + 15i \\ne 10 + 5i$ (b) She divided real part by real part and imaginary part by imaginary part, which is not valid (c) $5$",
+  "solution": "(a) If Priya were right, $(2 + i)(5 + 5i)$ would equal $10 + 5i$. But\n$$(2 + i)(5 + 5i) = 10 + 10i + 5i + 5i^2 = 5 + 15i \\ne 10 + 5i$$\nso her answer is wrong.\n\n(b) She divided the real parts and the imaginary parts separately. Division does not work component by component: $\\dfrac{a + b}{c + d} \\ne \\dfrac{a}{c} + \\dfrac{b}{d}$ in general, just as $\\dfrac{10 + 5}{2 + 1} = 5$ is not $\\dfrac{10}{2} + \\dfrac{5}{1} = 10$. To divide, make the denominator real by multiplying top and bottom by its conjugate.\n\n(c) Multiply top and bottom by $2 - i$:\n$$\\frac{(10 + 5i)(2 - i)}{(2 + i)(2 - i)} = \\frac{20 - 10i + 10i - 5i^2}{4 + 1} = \\frac{25}{5} = 5$$\n\nSo $\\dfrac{10 + 5i}{2 + i} = 5$ (a real number). Check: $5(2 + i) = 10 + 5i$ ✓. (In fact $10 + 5i = 5(2 + i)$, which would have been a quicker route.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q10",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Tom solves $z^2 - 4z + 29 = 0$. His working is shown below.\n\n$$z = \\frac{4 \\pm \\sqrt{16 - 116}}{2} = \\frac{4 \\pm \\sqrt{-100}}{2} = \\frac{4 \\pm (-10)}{2}$$\n$$z = -3 \\quad \\text{or} \\quad z = 7$$\n\n(a) Show that $z = 7$ does not satisfy the equation.\n\n(b) Identify Tom's error and explain it.\n\n(c) Solve the equation correctly.",
+  "hint": "What is $\\sqrt{-1}$? Is $(-10)^2$ equal to $-100$?",
+  "answer": "(a) $49 - 28 + 29 = 50 \\ne 0$ (b) He wrote $\\sqrt{-100} = -10$; in fact $\\sqrt{-100} = 10i$ (c) $z = 2 \\pm 5i$",
+  "solution": "(a) $7^2 - 4(7) + 29 = 49 - 28 + 29 = 50 \\ne 0$, so $7$ is not a root.\n\n(b) The error is $\\sqrt{-100} = -10$. Squaring $-10$ gives $+100$, not $-100$: no real number squares to a negative. The correct value is\n$$\\sqrt{-100} = \\sqrt{100} \\times \\sqrt{-1} = 10i$$\nA negative discriminant ($16 - 116 = -100$) means the roots are **non-real**, so Tom should not have got two real answers.\n\n(c)\n$$z = \\frac{4 \\pm 10i}{2} = 2 \\pm 5i$$\n\nCheck: sum $= 4$ and product $= 2^2 + 5^2 = 29$, matching $z^2 - 4z + 29$ ✓",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q11",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Sam writes:\n\n$$\\sqrt{-4} \\times \\sqrt{-9} = \\sqrt{(-4) \\times (-9)} = \\sqrt{36} = 6$$\n\nIs Sam correct? Justify your answer, and explain which rule Sam has used that does not hold here.",
+  "hint": "Write $\\sqrt{-4}$ and $\\sqrt{-9}$ in terms of $i$ first, then multiply.",
+  "answer": "No. $\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$. The rule $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$ only holds when $a, b \\ge 0$.",
+  "solution": "Write each root in terms of $i$:\n$$\\sqrt{-4} = 2i, \\qquad \\sqrt{-9} = 3i$$\n\nSo\n$$\\sqrt{-4} \\times \\sqrt{-9} = 2i \\times 3i = 6i^2 = -6$$\n\nSam's answer $6$ is wrong.\n\nSam used $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$. This rule is proved for $a, b \\ge 0$ (both sides are non-negative and square to $ab$). When $a$ and $b$ are both negative, $\\sqrt{a}\\sqrt{b}$ is a product of two imaginary numbers, which is negative, so it cannot equal the non-negative number $\\sqrt{ab}$.\n\nThe safe approach: always rewrite $\\sqrt{-k}$ as $i\\sqrt{k}$ **before** doing any other algebra.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q12",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $z = a + bi$, where $a$ and $b$ are real, and let $z^*$ be its complex conjugate.\n\n(a) Prove that $z + z^*$ and $zz^*$ are both real, and that $zz^* \\ge 0$.\n\n(b) Prove that $(zw)^* = z^* w^*$ for any complex number $w = c + di$, where $c$ and $d$ are real.\n\n(c) Hence explain why, if $p$ is a non-real root of a quadratic $z^2 + Bz + C = 0$ with real $B$ and $C$, then $p^*$ is also a root.",
+  "hint": "For (c), take the conjugate of both sides of $p^2 + Bp + C = 0$ and use (b) and the fact that a real number equals its own conjugate.",
+  "answer": "(a) $z + z^* = 2a$ and $zz^* = a^2 + b^2 \\ge 0$ (b) both sides equal $(ac - bd) - (ad + bc)i$ (c) conjugating $p^2 + Bp + C = 0$ gives $(p^*)^2 + Bp^* + C = 0$",
+  "solution": "(a) $z + z^* = (a + bi) + (a - bi) = 2a$, which is real.\n\n$zz^* = (a + bi)(a - bi) = a^2 - abi + abi - b^2 i^2 = a^2 + b^2$, which is real, and it is $\\ge 0$ because it is a sum of squares of real numbers.\n\n(b) $zw = (a + bi)(c + di) = (ac - bd) + (ad + bc)i$, so\n$$(zw)^* = (ac - bd) - (ad + bc)i$$\n\n$z^* w^* = (a - bi)(c - di) = ac - adi - bci + bdi^2 = (ac - bd) - (ad + bc)i$\n\nThe two are equal, so $(zw)^* = z^* w^*$. (Similarly $(z + w)^* = z^* + w^*$, by adding parts.)\n\n(c) Since $p$ is a root, $p^2 + Bp + C = 0$. Take the conjugate of both sides. Using (b) and the corresponding rule for sums:\n$$(p^*)^2 + B^* p^* + C^* = 0^* = 0$$\n\n$B$ and $C$ are real, so $B^* = B$ and $C^* = C$:\n$$(p^*)^2 + Bp^* + C = 0$$\n\nSo $p^*$ is also a root. As $p$ is non-real, $p^* \\ne p$, so the two roots are $p$ and $p^*$: non-real roots of a real quadratic come in conjugate pairs.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q13",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 8,
+  "calculator": false,
+  "question": "In this question you must show detailed reasoning.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Given that $(a + bi)^2 = -15 + 8i$, where $a$ and $b$ are real, find the possible values of $a$ and $b$. Hence write down the two square roots of $-15 + 8i$.",
+    "marks": 5
+   },
+   {
+    "label": "b",
+    "prompt": "Hence solve the equation $z^2 - 3z + 6 - 2i = 0$.",
+    "marks": 3
+   }
+  ],
+  "hint": "(a) Expand $(a + bi)^2$ and equate real parts and imaginary parts, then eliminate $b$. (b) Use the quadratic formula: the discriminant is $-15 + 8i$.",
+  "answer": "(a) $a = 1, b = 4$ or $a = -1, b = -4$; square roots $\\pm(1 + 4i)$ (b) $z = 2 + 2i$ or $z = 1 - 2i$",
+  "solution": "(a) $(a + bi)^2 = a^2 - b^2 + 2abi$. Equating real and imaginary parts:\n$$a^2 - b^2 = -15, \\qquad 2ab = 8 \\quad \\text{M1}$$\n\nFrom the second, $b = \\dfrac{4}{a}$. Substitute:\n$$a^2 - \\frac{16}{a^2} = -15 \\;\\Rightarrow\\; a^4 + 15a^2 - 16 = 0 \\quad \\text{M1}$$\n$$(a^2 + 16)(a^2 - 1) = 0 \\quad \\text{dM1}$$\n\n$a$ is real, so $a^2 = 1$: $a = 1, b = 4$ or $a = -1, b = -4$. A1\n\nSquare roots: $1 + 4i$ and $-1 - 4i$. A1\n\n(b) Discriminant: $(-3)^2 - 4(1)(6 - 2i) = 9 - 24 + 8i = -15 + 8i$ M1\n\nUsing (a), $\\sqrt{-15 + 8i} = \\pm(1 + 4i)$:\n$$z = \\frac{3 \\pm (1 + 4i)}{2} \\quad \\text{M1}$$\n\n$z = \\dfrac{4 + 4i}{2} = 2 + 2i$ or $z = \\dfrac{2 - 4i}{2} = 1 - 2i$ A1\n\nCheck: sum $= 3$ ✓; product $= (2 + 2i)(1 - 2i) = 2 - 4i + 2i - 4i^2 = 6 - 2i$ ✓. The roots are **not** a conjugate pair, which is fine because the coefficient $6 - 2i$ is not real.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q14",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "In AC circuit analysis, each component has an **impedance**, a complex number measured in ohms ($\\Omega$). Impedances in series add, and the current $I$ (amps) through a circuit of total impedance $Z$ with supply voltage $V$ (volts) is $I = \\dfrac{V}{Z}$.\n\nA coil with impedance $Z_1 = 4 + 7i$ is connected in series with a capacitor of impedance $Z_2 = 2 - 15i$, across a supply with $V = 50$.\n\n(a) Find the total impedance $Z$.\n\n(b) Find the current $I$ in the form $a + bi$.\n\n(c) Verify your answer by checking that $IZ = V$.",
+  "hint": "Add the impedances, then divide $50$ by $Z$ by multiplying top and bottom by $Z^*$.",
+  "answer": "(a) $Z = 6 - 8i$ (b) $I = 3 + 4i$ (c) $(3 + 4i)(6 - 8i) = 50$ ✓",
+  "solution": "(a) $Z = (4 + 7i) + (2 - 15i) = 6 - 8i$ ohms\n\n(b)\n$$I = \\frac{50}{6 - 8i} = \\frac{50(6 + 8i)}{(6 - 8i)(6 + 8i)} = \\frac{50(6 + 8i)}{36 + 64} = \\frac{50(6 + 8i)}{100} = 3 + 4i$$\n\nSo $I = 3 + 4i$ amps.\n\n(c) $IZ = (3 + 4i)(6 - 8i) = 18 - 24i + 24i - 32i^2 = 18 + 32 = 50 = V$ ✓\n\n(Electrical engineers usually write $j$ for $\\sqrt{-1}$, because $i$ is used for current, but the arithmetic is identical.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q15",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "For two components connected in parallel, the total impedance $Z$ satisfies\n$$\\frac{1}{Z} = \\frac{1}{Z_1} + \\frac{1}{Z_2}$$\n\nA coil of impedance $Z_1 = 3 + 4i$ ohms is connected in parallel with a capacitor of impedance $Z_2 = -Xi$ ohms, where $X$ is a positive real constant. An engineer wants the combination to behave like a pure resistor, which happens when $Z$ is **real**.\n\n(a) Find the value of $X$ for which $Z$ is real.\n\n(b) For this value of $X$, find $Z$.",
+  "hint": "$Z$ is real exactly when $\\frac{1}{Z}$ is real. Write $\\frac{1}{3 + 4i}$ and $\\frac{1}{-Xi}$ in the form $a + bi$.",
+  "answer": "(a) $X = \\dfrac{25}{4} = 6.25$ (b) $Z = \\dfrac{25}{3} \\approx 8.33$ ohms",
+  "solution": "(a) If $Z$ is real (and non-zero) then $\\frac{1}{Z}$ is real, and conversely, so work with $\\frac{1}{Z}$.\n\n$$\\frac{1}{3 + 4i} = \\frac{3 - 4i}{3^2 + 4^2} = \\frac{3}{25} - \\frac{4}{25}i$$\n\n$$\\frac{1}{-Xi} = \\frac{1}{-Xi} \\times \\frac{i}{i} = \\frac{i}{-Xi^2} = \\frac{i}{X}$$\n\nSo\n$$\\frac{1}{Z} = \\frac{3}{25} + \\left(\\frac{1}{X} - \\frac{4}{25}\\right)i$$\n\nThis is real when the imaginary part is zero:\n$$\\frac{1}{X} = \\frac{4}{25} \\;\\Rightarrow\\; X = \\frac{25}{4} = 6.25$$\n\n(b) Then $\\frac{1}{Z} = \\frac{3}{25}$, so $Z = \\frac{25}{3} \\approx 8.33$ ohms.\n\nCheck: $Z = \\dfrac{Z_1 Z_2}{Z_1 + Z_2} = \\dfrac{(3 + 4i)(-6.25i)}{3 - 2.25i} = \\dfrac{25 - 18.75i}{3 - 2.25i} = \\dfrac{25}{3}$, since $25 - 18.75i = \\frac{25}{3}(3 - 2.25i)$ ✓",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-complex-numbers-q16",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The quadratic equation $z^2 - 2kz + (k + 6) = 0$, where $k$ is a real constant, has two non-real roots.\n\n(a) Find the set of possible values of $k$.\n\n(b) Show that the roots are $k \\pm i\\sqrt{6 + k - k^2}$.\n\n(c) Given also that the imaginary parts of the roots are $\\pm\\sqrt{5}$, find the exact possible values of $k$.",
+  "hint": "(a) Non-real roots means the discriminant is negative: solve the resulting quadratic inequality. (b) Use the quadratic formula and write $\\sqrt{\\text{negative}}$ using $i$.",
+  "answer": "(a) $-2 < k < 3$ (b) shown (c) $k = \\dfrac{1 \\pm \\sqrt{5}}{2}$",
+  "solution": "(a) Non-real roots require $b^2 - 4ac < 0$:\n$$4k^2 - 4(k + 6) < 0 \\;\\Rightarrow\\; k^2 - k - 6 < 0 \\;\\Rightarrow\\; (k - 3)(k + 2) < 0$$\n\nThe parabola $y = (k - 3)(k + 2)$ is below the axis between its roots, so $-2 < k < 3$.\n\n(b)\n$$z = \\frac{2k \\pm \\sqrt{4k^2 - 4(k + 6)}}{2} = \\frac{2k \\pm 2\\sqrt{k^2 - k - 6}}{2} = k \\pm \\sqrt{-(6 + k - k^2)}$$\n\nFor $-2 < k < 3$, $6 + k - k^2 > 0$, so $\\sqrt{-(6 + k - k^2)} = i\\sqrt{6 + k - k^2}$, giving $z = k \\pm i\\sqrt{6 + k - k^2}$.\n\n(c) The imaginary parts are $\\pm\\sqrt{6 + k - k^2}$ (real numbers), so\n$$6 + k - k^2 = 5 \\;\\Rightarrow\\; k^2 - k - 1 = 0 \\;\\Rightarrow\\; k = \\frac{1 \\pm \\sqrt{5}}{2}$$\n\n$\\frac{1 + \\sqrt{5}}{2} \\approx 1.62$ and $\\frac{1 - \\sqrt{5}}{2} \\approx -0.62$ both lie in $-2 < k < 3$, so both are valid.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant",
+   "alg-quadratic-inequalities"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-complex-numbers-q17",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Show that $(1 + i)^4 = -4$.\n\n(b) Hence find, in the form $a + bi$, the exact value of\n$$S = \\sum_{k=1}^{20} (1 + i)^k = (1 + i) + (1 + i)^2 + \\cdots + (1 + i)^{20}$$",
+  "hint": "(a) Find $(1 + i)^2$ first. (b) $S$ is a geometric series with first term $1 + i$ and common ratio $1 + i$; the formula $S_n = \\dfrac{a(r^n - 1)}{r - 1}$ works for complex $r \\ne 1$ too.",
+  "answer": "(a) shown (b) $S = -1025 + 1025i$",
+  "solution": "(a) $(1 + i)^2 = 1 + 2i + i^2 = 2i$, so\n$$(1 + i)^4 = (2i)^2 = 4i^2 = -4$$\n\n(b) Geometric series with $a = 1 + i$, $r = 1 + i$, $n = 20$:\n$$S = \\frac{(1 + i)\\left[(1 + i)^{20} - 1\\right]}{(1 + i) - 1} = \\frac{(1 + i)\\left[(1 + i)^{20} - 1\\right]}{i}$$\n\nUsing (a): $(1 + i)^{20} = \\left[(1 + i)^4\\right]^5 = (-4)^5 = -1024$.\n\n$$S = \\frac{(1 + i)(-1025)}{i}$$\n\nSince $\\frac{1}{i} = \\frac{i}{i^2} = -i$:\n$$S = -1025(1 + i)(-i) = 1025(i + i^2) = 1025(-1 + i) = -1025 + 1025i$$\n\nSanity check on a shorter sum: $(1 + i) + (1 + i)^2 + (1 + i)^3 + (1 + i)^4 = (1 + i) + 2i + (-2 + 2i) + (-4) = -5 + 5i$, and the formula gives $\\frac{(1 + i)(-4 - 1)}{i} = 5(1 + i)i = -5 + 5i$ ✓",
+  "linkedTopicIds": [
+   "pure-geometric-series"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-complex-numbers-q18",
+  "topicId": "fur-complex-numbers",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find all complex numbers $z$ such that\n$$z^2 = z^*$$\nwhere $z^*$ is the complex conjugate of $z$.",
+  "hint": "Let $z = x + iy$ with $x, y$ real. Equate real and imaginary parts and solve the two equations simultaneously; consider $y = 0$ and $y \\ne 0$ separately.",
+  "answer": "$z = 0$, $z = 1$, $z = -\\dfrac{1}{2} + \\dfrac{\\sqrt{3}}{2}i$, $z = -\\dfrac{1}{2} - \\dfrac{\\sqrt{3}}{2}i$",
+  "solution": "Let $z = x + iy$ with $x, y$ real. Then $z^2 = x^2 - y^2 + 2xyi$ and $z^* = x - iy$.\n\nEquate real and imaginary parts:\n$$x^2 - y^2 = x \\quad (1) \\qquad 2xy = -y \\quad (2)$$\n\nFrom (2): $y(2x + 1) = 0$, so $y = 0$ or $x = -\\frac{1}{2}$.\n\n**Case $y = 0$:** (1) gives $x^2 = x$, so $x = 0$ or $x = 1$. This gives $z = 0$ and $z = 1$.\n\n**Case $x = -\\frac{1}{2}$:** (1) gives $\\frac{1}{4} - y^2 = -\\frac{1}{2}$, so $y^2 = \\frac{3}{4}$, $y = \\pm\\frac{\\sqrt{3}}{2}$. This gives $z = -\\frac{1}{2} \\pm \\frac{\\sqrt{3}}{2}i$.\n\nSo there are four solutions:\n$$z = 0, \\quad 1, \\quad -\\tfrac{1}{2} + \\tfrac{\\sqrt{3}}{2}i, \\quad -\\tfrac{1}{2} - \\tfrac{\\sqrt{3}}{2}i$$\n\nCheck $z = -\\frac{1}{2} + \\frac{\\sqrt{3}}{2}i$: $z^2 = \\frac{1}{4} - \\frac{\\sqrt{3}}{2}i + \\frac{3}{4}i^2 = -\\frac{1}{2} - \\frac{\\sqrt{3}}{2}i = z^*$ ✓\n\n(Do not divide (2) by $y$ straight away – that would lose the real solutions $0$ and $1$. The non-zero solutions are the three cube roots of unity, since $z^2 = z^*$ forces $|z| = 1$ or $0$ and then $z^3 = zz^* = 1$.)",
+  "linkedTopicIds": []
+ }
+]
