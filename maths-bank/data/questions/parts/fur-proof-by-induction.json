@@ -1,0 +1,283 @@
+[
+ {
+  "id": "fur-proof-by-induction-q01",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove by induction that, for all positive integers $n$,\n$$\\sum_{r=1}^{n} (2r - 1) = n^2$$",
+  "hint": "Check $n = 1$ first. For the step, $\\sum_{r=1}^{k+1}(2r - 1) = \\sum_{r=1}^{k}(2r - 1) + \\big(2(k + 1) - 1\\big)$.",
+  "answer": "Proof: true for $n = 1$ ($1 = 1^2$); assuming $\\sum_{r=1}^{k}(2r - 1) = k^2$ gives $\\sum_{r=1}^{k+1}(2r - 1) = k^2 + 2k + 1 = (k + 1)^2$, so true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**Basis:** $n = 1$: LHS $= 2(1) - 1 = 1$, RHS $= 1^2 = 1$ ✓\n\n**Assumption:** assume true for $n = k$: $\\sum_{r=1}^{k}(2r - 1) = k^2$.\n\n**Inductive step:** the $(k + 1)$th term is $2(k + 1) - 1 = 2k + 1$, so\n$$\\sum_{r=1}^{k+1}(2r - 1) = k^2 + (2k + 1) = (k + 1)^2$$\nwhich is the result with $n = k + 1$.\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-proof-by-induction-q02",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove by induction that, for all positive integers $n$,\n$$\\sum_{r=1}^{n} (2r + 1) = n(n + 2)$$",
+  "hint": "Only the sign of the constant has changed from $\\sum (2r - 1)$. Find the $(k + 1)$th term by replacing $r$ with $k + 1$.",
+  "answer": "Proof: true for $n = 1$ ($3 = 1 \\times 3$); assuming $\\sum_{r=1}^{k}(2r + 1) = k(k + 2)$ gives $\\sum_{r=1}^{k+1}(2r + 1) = k^2 + 4k + 3 = (k + 1)(k + 3)$, so true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**What changed:** the constant is now $+1$ instead of $-1$, so every term is 2 bigger and the total grows by $2n$: $n^2 + 2n = n(n + 2)$. The proof has exactly the same structure.\n\n**Basis:** $n = 1$: LHS $= 2(1) + 1 = 3$, RHS $= 1 \\times 3 = 3$ ✓\n\n**Assumption:** assume $\\sum_{r=1}^{k}(2r + 1) = k(k + 2)$.\n\n**Inductive step:** the $(k + 1)$th term is $2(k + 1) + 1 = 2k + 3$:\n$$\\sum_{r=1}^{k+1}(2r + 1) = k(k + 2) + 2k + 3 = k^2 + 4k + 3 = (k + 1)(k + 3)$$\nand $(k + 1)\\big((k + 1) + 2\\big) = (k + 1)(k + 3)$, the result with $n = k + 1$.\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-proof-by-induction-q03",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Prove by induction that, for all positive integers $n$,\n$$\\sum_{r=1}^{n} (4r - 1) = n(2n + 1)$$",
+  "hint": "This time the coefficient of $r$ has changed. The $(k + 1)$th term is $4(k + 1) - 1$.",
+  "answer": "Proof: true for $n = 1$ ($3 = 1 \\times 3$); assuming $\\sum_{r=1}^{k}(4r - 1) = k(2k + 1)$ gives $\\sum_{r=1}^{k+1}(4r - 1) = 2k^2 + 5k + 3 = (k + 1)(2k + 3)$, so true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**What changed:** compared with $\\sum(2r - 1)$ the coefficient of $r$ has doubled, so the next term is now $4k + 3$ and the factorisation target is $(k + 1)(2k + 3)$.\n\n**Basis:** $n = 1$: LHS $= 4 - 1 = 3$, RHS $= 1 \\times 3 = 3$ ✓\n\n**Assumption:** assume $\\sum_{r=1}^{k}(4r - 1) = k(2k + 1)$.\n\n**Inductive step:** the $(k + 1)$th term is $4(k + 1) - 1 = 4k + 3$:\n$$\\sum_{r=1}^{k+1}(4r - 1) = k(2k + 1) + 4k + 3 = 2k^2 + 5k + 3 = (k + 1)(2k + 3)$$\nand with $n = k + 1$ the formula gives $(k + 1)\\big(2(k + 1) + 1\\big) = (k + 1)(2k + 3)$ ✓\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-proof-by-induction-q04",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The matrix $\\mathbf{M} = \\begin{pmatrix} 2 & 0 \\\\ 1 & 1 \\end{pmatrix}$.\n\nProve by induction that, for all positive integers $n$,\n$$\\mathbf{M}^n = \\begin{pmatrix} 2^n & 0 \\\\ 2^n - 1 & 1 \\end{pmatrix}$$",
+  "hint": "Write $\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M}$ and use the assumed form of $\\mathbf{M}^k$.",
+  "answer": "Proof: true for $n = 1$; assuming the form for $\\mathbf{M}^k$, $\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M} = \\begin{pmatrix} 2^{k+1} & 0 \\\\ 2^{k+1} - 1 & 1 \\end{pmatrix}$, so true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**Basis:** $n = 1$: $\\begin{pmatrix} 2^1 & 0 \\\\ 2^1 - 1 & 1 \\end{pmatrix} = \\begin{pmatrix} 2 & 0 \\\\ 1 & 1 \\end{pmatrix} = \\mathbf{M}$ ✓\n\n**Assumption:** assume $\\mathbf{M}^k = \\begin{pmatrix} 2^k & 0 \\\\ 2^k - 1 & 1 \\end{pmatrix}$.\n\n**Inductive step:**\n$$\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M} = \\begin{pmatrix} 2^k & 0 \\\\ 2^k - 1 & 1 \\end{pmatrix}\\begin{pmatrix} 2 & 0 \\\\ 1 & 1 \\end{pmatrix} = \\begin{pmatrix} 2 \\cdot 2^k & 0 \\\\ 2(2^k - 1) + 1 & 1 \\end{pmatrix} = \\begin{pmatrix} 2^{k+1} & 0 \\\\ 2^{k+1} - 1 & 1 \\end{pmatrix}$$\nwhich is the result with $n = k + 1$.\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "fur-proof-by-induction-q05",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Prove by induction that $7^n - 1$ is divisible by 6 for all positive integers $n$.",
+  "hint": "Let $f(n) = 7^n - 1$ and simplify $f(k + 1) - f(k)$. Remember $7^{k+1} = 7 \\times 7^k$.",
+  "answer": "Proof: $f(1) = 6$; $f(k + 1) - f(k) = 7^{k+1} - 7^k = 6 \\times 7^k$, so $f(k + 1) = f(k) + 6 \\times 7^k$ is divisible by 6 whenever $f(k)$ is; hence true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "Let $f(n) = 7^n - 1$.\n\n**Basis:** $f(1) = 7 - 1 = 6 = 6 \\times 1$ ✓\n\n**Assumption:** assume $f(k)$ is divisible by 6, i.e. $f(k) = 6m$ for some integer $m$.\n\n**Inductive step:** using $7^{k+1} = 7 \\times 7^k$ (not $7^k + 7$):\n$$f(k + 1) - f(k) = (7^{k+1} - 1) - (7^k - 1) = 7 \\times 7^k - 7^k = 6 \\times 7^k$$\nSo $f(k + 1) = 6m + 6 \\times 7^k = 6(m + 7^k)$, which is divisible by 6.\n\n**Conclusion:** if $f(k)$ is divisible by 6 then so is $f(k + 1)$. Since $f(1)$ is divisible by 6, $f(n)$ is divisible by 6 for all positive integers $n$ by mathematical induction.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q06",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Emma is asked to prove by induction that $\\displaystyle\\sum_{r=1}^{n} r^2 = \\frac{n(n + 1)(2n + 1)}{6}$ for all positive integers $n$. Her proof is shown below.\n\n**Basis:** $n = 1$: LHS $= 1$, RHS $= \\frac{1 \\times 2 \\times 3}{6} = 1$ ✓\n\n**Assumption:** assume the result is true for $n = k + 1$, so $\\displaystyle\\sum_{r=1}^{k+1} r^2 = \\frac{(k + 1)(k + 2)(2k + 3)}{6}$.\n\n**Step:** putting $n = k + 1$ into the formula gives $\\frac{(k + 1)(k + 2)(2k + 3)}{6}$, which matches, so the result is true for $n = k + 1$.\n\n**Conclusion:** true for all positive integers $n$.\n\n(a) Explain what is wrong with Emma's proof.\n\n(b) Write a correct inductive step.",
+  "hint": "What is Emma allowed to assume? The step should *start* from $\\sum_{r=1}^{k} r^2$ plus one more term.",
+  "answer": "(a) She assumed the result for $n = k + 1$, which is the very thing she had to prove, so her \"step\" is circular and proves nothing. (b) Assume $\\sum_{r=1}^{k} r^2 = \\frac{k(k + 1)(2k + 1)}{6}$; then $\\sum_{r=1}^{k+1} r^2 = \\frac{k(k + 1)(2k + 1)}{6} + (k + 1)^2 = \\frac{(k + 1)(2k^2 + 7k + 6)}{6} = \\frac{(k + 1)(k + 2)(2k + 3)}{6}$.",
+  "solution": "**(a)** Emma's basis is fine. The error is in the assumption: she assumes the result for $n = k + 1$, which is exactly what has to be shown. Her \"step\" then just substitutes $n = k + 1$ into the formula and compares it with itself, so it is circular: nothing links the $k$ case to the $k + 1$ case. Substituting into a formula never shows the formula is *true*.\n\n**(b)** **Assumption:** assume true for $n = k$:\n$$\\sum_{r=1}^{k} r^2 = \\frac{k(k + 1)(2k + 1)}{6}$$\n\n**Inductive step:** add the $(k + 1)$th term, $(k + 1)^2$:\n$$\\sum_{r=1}^{k+1} r^2 = \\frac{k(k + 1)(2k + 1)}{6} + (k + 1)^2 = \\frac{(k + 1)\\big[k(2k + 1) + 6(k + 1)\\big]}{6} = \\frac{(k + 1)(2k^2 + 7k + 6)}{6} = \\frac{(k + 1)(k + 2)(2k + 3)}{6}$$\nThis is $\\frac{n(n + 1)(2n + 1)}{6}$ with $n = k + 1$, since $2(k + 1) + 1 = 2k + 3$.\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q07",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Kwame wants to prove that $\\displaystyle\\sum_{r=1}^{n} r(r + 3) = \\frac{n(n + 1)(n + 5)}{3}$ for all positive integers $n$.\n\nHe checks $n = 1$ correctly, assumes the result for $n = k$, and then writes:\n$$\\sum_{r=1}^{k+1} r(r + 3) = \\frac{k(k + 1)(k + 5)}{3} + k(k + 3) = \\frac{k(k + 2)(k + 7)}{3}$$\n\"But the formula with $n = k + 1$ is $\\frac{(k + 1)(k + 2)(k + 6)}{3}$. These are different, so the statement is false.\"\n\nIdentify Kwame's error, explain it, and complete the proof correctly.",
+  "hint": "Which term is added when you go from the sum up to $k$ to the sum up to $k + 1$? Replace $r$ by $k + 1$ in $r(r + 3)$.",
+  "answer": "He added the $k$th term $k(k + 3)$ instead of the $(k + 1)$th term $(k + 1)(k + 4)$. Correctly, $\\frac{k(k + 1)(k + 5)}{3} + (k + 1)(k + 4) = \\frac{(k + 1)(k^2 + 8k + 12)}{3} = \\frac{(k + 1)(k + 2)(k + 6)}{3}$, so the statement is true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**Error:** going from $\\sum_{r=1}^{k}$ to $\\sum_{r=1}^{k+1}$ adds the term with $r = k + 1$, which is $(k + 1)\\big((k + 1) + 3\\big) = (k + 1)(k + 4)$. Kwame added $k(k + 3)$, the $k$th term, which is already included in the sum up to $k$, so he counted it twice. A failed step caused by an algebra slip does not show the statement is false.\n\n**Correct step:**\n$$\\sum_{r=1}^{k+1} r(r + 3) = \\frac{k(k + 1)(k + 5)}{3} + (k + 1)(k + 4) = \\frac{(k + 1)\\big[k(k + 5) + 3(k + 4)\\big]}{3}$$\n$$= \\frac{(k + 1)(k^2 + 8k + 12)}{3} = \\frac{(k + 1)(k + 2)(k + 6)}{3}$$\nwhich is the formula with $n = k + 1$, because $(k + 1) + 1 = k + 2$ and $(k + 1) + 5 = k + 6$.\n\n**Basis** (as Kwame checked): $n = 1$: LHS $= 1 \\times 4 = 4$, RHS $= \\frac{1 \\times 2 \\times 6}{3} = 4$ ✓\n\n**Conclusion:** if the result is true for $n = k$ then it is true for $n = k + 1$. It is true for $n = 1$, so by mathematical induction it is true for all positive integers $n$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q08",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ravi's proof that $5^n - 1$ is divisible by 4 for all positive integers $n$ is shown below.\n\nLine 1: $n = 1$: $5^1 - 1 = 4$, which is divisible by 4.\nLine 2: Assume $5^k - 1$ is divisible by 4.\nLine 3: $5^{k+1} - 1 = 25^k - 1$\nLine 4: $= (5^k)^2 - 1 = (5^k - 1)(5^k + 1)$\nLine 5: $5^k - 1$ is a multiple of 4, so $5^{k+1} - 1$ is a multiple of 4.\nLine 6: So by induction $5^n - 1$ is divisible by 4 for all positive integers $n$.\n\n(a) Identify the line containing Ravi's error and explain the mistake.\n\n(b) Write out a correct inductive step.",
+  "hint": "Test Line 3 with $k = 1$. What does $5^{k+1}$ actually equal in terms of $5^k$?",
+  "answer": "(a) Line 3: $5^{k+1} = 5 \\times 5^k$, not $25^k$ (e.g. $k = 2$: $5^3 = 125$ but $25^2 = 625$). (b) $5^{k+1} - 1 = 5 \\times 5^k - 1 = 5(5^k - 1) + 4$, a multiple of 4 plus 4, so divisible by 4.",
+  "solution": "**(a)** The error is in **Line 3**. By the index laws $5^{k+1} = 5^k \\times 5^1 = 5 \\times 5^k$. Ravi has written $5^{k+1} = 25^k = 5^{2k}$, i.e. he has multiplied the indices instead of adding them. Check with $k = 2$: $5^3 = 125$ but $25^2 = 625$. Lines 4–5 are then about $5^{2k} - 1$, not $5^{k+1} - 1$, so the proof is invalid (even though the statement happens to be true).\n\n**(b)** Let $f(n) = 5^n - 1$ and assume $f(k) = 4m$ for some integer $m$. Then\n$$f(k + 1) = 5^{k+1} - 1 = 5 \\times 5^k - 1 = 5(5^k - 1) + 5 - 1 = 5f(k) + 4 = 5(4m) + 4 = 4(5m + 1)$$\nwhich is divisible by 4.\n\n(Equivalently $f(k + 1) - f(k) = 5^{k+1} - 5^k = 4 \\times 5^k$.)\n\n**Conclusion:** if true for $n = k$ then true for $n = k + 1$; since $f(1) = 4$ is divisible by 4, the result holds for all positive integers $n$ by induction.",
+  "linkedTopicIds": [
+   "num-index-laws"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q09",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $f(n) = n^2 + 5n + 1$.\n\nSam writes: \"Assume $f(k)$ is even. Then $f(k + 1) - f(k) = 2k + 6$, which is even, so $f(k + 1)$ is even too. Therefore $f(n)$ is even for all positive integers $n$ by induction.\"\n\n(a) Show that Sam's algebra for $f(k + 1) - f(k)$ is correct.\n\n(b) Is Sam's conclusion correct? Justify your answer, and explain what is missing from his argument.",
+  "hint": "Work out $f(1)$. Then think about $n(n + 5)$: one of $n$ and $n + 5$ is always even.",
+  "answer": "(a) $f(k + 1) - f(k) = (k^2 + 7k + 7) - (k^2 + 5k + 1) = 2k + 6$. (b) No. He never checked a basis case: $f(1) = 7$ is odd. In fact $f(n) = n(n + 5) + 1$ is odd for every positive integer $n$, so the statement is false for all $n$.",
+  "solution": "**(a)** $f(k + 1) = (k + 1)^2 + 5(k + 1) + 1 = k^2 + 7k + 7$, so\n$$f(k + 1) - f(k) = (k^2 + 7k + 7) - (k^2 + 5k + 1) = 2k + 6 = 2(k + 3)$$\nwhich is even. Sam's step is correct: **if** $f(k)$ is even **then** $f(k + 1)$ is even.\n\n**(b)** Sam is **not** correct. An inductive step only shows the implication \"$P(k) \\Rightarrow P(k + 1)$\"; it says nothing unless the chain is started by a true basis case. Sam never checked one.\n\n$f(1) = 1 + 5 + 1 = 7$, which is odd, so the chain never starts.\n\nIn fact $f(n) = n(n + 5) + 1$. Exactly one of $n$ and $n + 5$ is even (they differ by an odd number), so $n(n + 5)$ is even and $f(n)$ is **odd** for every positive integer $n$. The statement \"$f(n)$ is even\" is false for all $n$, even though the inductive step works. (Sam's step, applied to \"$f(n)$ is odd\" with basis $f(1) = 7$, would prove this correct statement.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q10",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 3,
+  "type": "exam-style",
+  "question": "$$\\mathbf{M} = \\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $\\mathbf{M}^2$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Prove by induction that, for all positive integers $n$,\n$$\\mathbf{M}^n = \\begin{pmatrix} 2n + 1 & -4n \\\\ n & 1 - 2n \\end{pmatrix}$$",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Hence show that $\\det(\\mathbf{M}^n) = 1$ for all positive integers $n$.",
+    "marks": 2
+   }
+  ],
+  "marks": 8,
+  "calculator": false,
+  "hint": "For (b), write $\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M}$ and simplify each entry so it matches the formula with $n = k + 1$.",
+  "answer": "(a) $\\mathbf{M}^2 = \\begin{pmatrix} 5 & -8 \\\\ 2 & -3 \\end{pmatrix}$ (b) Proof (see solution). (c) $\\det(\\mathbf{M}^n) = (2n + 1)(1 - 2n) + 4n^2 = 1$",
+  "solution": "**(a)**\n$$\\mathbf{M}^2 = \\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix}\\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix} = \\begin{pmatrix} 9 - 4 & -12 + 4 \\\\ 3 - 1 & -4 + 1 \\end{pmatrix} = \\begin{pmatrix} 5 & -8 \\\\ 2 & -3 \\end{pmatrix}$$ **B1**\n\n**(b)** **Basis:** $n = 1$: $\\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix} = \\mathbf{M}$ ✓ **B1**\n\n**Assume** $\\mathbf{M}^k = \\begin{pmatrix} 2k + 1 & -4k \\\\ k & 1 - 2k \\end{pmatrix}$ for some positive integer $k$.\n\n$$\\mathbf{M}^{k+1} = \\mathbf{M}^k\\mathbf{M} = \\begin{pmatrix} 2k + 1 & -4k \\\\ k & 1 - 2k \\end{pmatrix}\\begin{pmatrix} 3 & -4 \\\\ 1 & -1 \\end{pmatrix}$$ **M1**\n$$= \\begin{pmatrix} 3(2k + 1) - 4k & -4(2k + 1) + 4k \\\\ 3k + 1 - 2k & -4k - 1 + 2k \\end{pmatrix} = \\begin{pmatrix} 2k + 3 & -4k - 4 \\\\ k + 1 & -2k - 1 \\end{pmatrix}$$ **A1**\n$$= \\begin{pmatrix} 2(k + 1) + 1 & -4(k + 1) \\\\ k + 1 & 1 - 2(k + 1) \\end{pmatrix}$$ **A1**\nwhich is the result with $n = k + 1$.\n\nIf the result is true for $n = k$ then it is true for $n = k + 1$; it is true for $n = 1$, so it is true for all positive integers $n$ by mathematical induction. **A1** (conclusion requires all previous marks)\n\n**(c)**\n$$\\det(\\mathbf{M}^n) = (2n + 1)(1 - 2n) - (-4n)(n) = 1 - 4n^2 + 4n^2 = 1$$ **M1 A1**\n\n(Check: $\\det\\mathbf{M} = -3 + 4 = 1$ and $\\det(\\mathbf{M}^n) = (\\det\\mathbf{M})^n = 1$.)",
+  "linkedTopicIds": [
+   "fur-matrices-arithmetic",
+   "fur-determinants-inverses"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q11",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Priya pays £500 into a savings account at the end of every year. At the end of each year, before her payment, interest of 2% is added to the balance already in the account. The account was empty before her first payment.\n\nLet $B_n$ be the balance, in pounds, just after her $n$th payment, so $B_1 = 500$ and\n$$B_{n+1} = 1.02B_n + 500$$\n\n(a) Prove by induction that $B_n = 25\\,000(1.02^n - 1)$ for all positive integers $n$.\n\n(b) Find the balance just after her 10th payment, to the nearest penny.",
+  "hint": "Substitute the assumed formula for $B_k$ into $B_{k+1} = 1.02B_k + 500$ and expand.",
+  "answer": "(a) Proof (see solution). (b) £5474.86",
+  "solution": "**(a)** **Basis:** $n = 1$: $25\\,000(1.02 - 1) = 25\\,000 \\times 0.02 = 500 = B_1$ ✓\n\n**Assumption:** assume $B_k = 25\\,000(1.02^k - 1)$.\n\n**Inductive step:**\n$$B_{k+1} = 1.02B_k + 500 = 1.02 \\times 25\\,000(1.02^k - 1) + 500 = 25\\,000 \\times 1.02^{k+1} - 25\\,500 + 500$$\n$$= 25\\,000 \\times 1.02^{k+1} - 25\\,000 = 25\\,000(1.02^{k+1} - 1)$$\nwhich is the formula with $n = k + 1$.\n\n**Conclusion:** if true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so true for all positive integers $n$ by induction.\n\n**(b)**\n$$B_{10} = 25\\,000(1.02^{10} - 1) = 25\\,000 \\times 0.218994\\ldots = 5474.86$$\nThe balance is £5474.86 (she has paid in £5000, so £474.86 is interest).",
+  "linkedTopicIds": [
+   "rat-compound-growth-decay",
+   "pure-sigma-recurrence"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q12",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A supermarket builds a triangular pyramid display of cans. Seen from above, the top layer has 1 can, the next layer has 3 cans, then 6, then 10, and so on: layer $r$ (counting from the top) has $\\frac{1}{2}r(r + 1)$ cans. The diagram shows the first four layers viewed from above.\n\n(a) Prove by induction that a display with $n$ complete layers uses\n$$\\frac{n(n + 1)(n + 2)}{6} \\text{ cans}$$\n\n(b) A delivery contains exactly 220 cans. Show that they can all be used to build a complete display, and state how many cans are in its bottom layer.",
+  "hint": "For (a), the $(k + 1)$th layer has $\\frac{1}{2}(k + 1)(k + 2)$ cans; take out the common factor $(k + 1)(k + 2)$. For (b), try values of $n$ near $\\sqrt[3]{6 \\times 220}$.",
+  "answer": "(a) Proof (see solution). (b) $n = 10$ gives $\\frac{10 \\times 11 \\times 12}{6} = 220$, so a 10-layer display uses all 220 cans; the bottom layer has 55 cans.",
+  "solution": "**(a)** Let $S_n = \\sum_{r=1}^{n} \\frac{1}{2}r(r + 1)$.\n\n**Basis:** $n = 1$: one can; $\\frac{1 \\times 2 \\times 3}{6} = 1$ ✓\n\n**Assumption:** assume $S_k = \\frac{k(k + 1)(k + 2)}{6}$.\n\n**Inductive step:** layer $k + 1$ has $\\frac{1}{2}(k + 1)(k + 2)$ cans, so\n$$S_{k+1} = \\frac{k(k + 1)(k + 2)}{6} + \\frac{(k + 1)(k + 2)}{2} = \\frac{(k + 1)(k + 2)(k + 3)}{6}$$\n(common factor $\\frac{(k + 1)(k + 2)}{6}$ times $k + 3$), which is the formula with $n = k + 1$.\n\n**Conclusion:** if true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so true for all positive integers $n$ by induction.\n\n**(b)** We need $\\frac{n(n + 1)(n + 2)}{6} = 220$, i.e. $n(n + 1)(n + 2) = 1320$. Since $\\sqrt[3]{1320} \\approx 11$, try $n = 10$: $10 \\times 11 \\times 12 = 1320$ ✓. The product is increasing in $n$, so $n = 10$ is the only solution: a complete 10-layer display uses exactly 220 cans.\n\nBottom layer: $\\frac{1}{2} \\times 10 \\times 11 = 55$ cans.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 290 180\" width=\"290\" height=\"180\"><circle cx=\"27.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"27.0\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 1</text><text x=\"27.0\" y=\"168\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1 cans</text><circle cx=\"74.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"67.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"81.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"74.0\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 2</text><text x=\"74.0\" y=\"168\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3 cans</text><circle cx=\"141.0\" cy=\"95.6\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"134.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"148.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"127.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"141.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"155.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"141.0\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 3</text><text x=\"141.0\" y=\"168\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6 cans</text><circle cx=\"233.0\" cy=\"83.5\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"226.0\" cy=\"95.6\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"240.0\" cy=\"95.6\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"219.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"233.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"247.0\" cy=\"107.8\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"212.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"226.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"240.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><circle cx=\"254.0\" cy=\"120.0\" r=\"7\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><text x=\"233.0\" y=\"150\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Layer 4</text><text x=\"233.0\" y=\"168\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10 cans</text></svg>"
+ },
+ {
+  "id": "fur-proof-by-induction-q13",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "In the Tower of Hanoi puzzle, $n$ discs of different sizes start on peg A, largest at the bottom (the diagram shows $n = 4$). A move takes the top disc from one peg and places it on another peg; a disc may never be placed on a smaller disc. The aim is to move the whole tower to peg C.\n\nLet $m_n$ be the minimum number of moves needed for $n$ discs, so $m_1 = 1$.\n\n(a) Explain why $m_{n+1} = 2m_n + 1$.\n\n(b) Prove by induction that $m_n = 2^n - 1$ for all positive integers $n$.\n\n(c) A legend says a temple has a 64-disc tower and the monks make one move per second. Estimate how long the full transfer would take, in years, to 2 significant figures.",
+  "hint": "(a) Before the largest disc can move, where must all the other discs be? (b) Substitute $m_k = 2^k - 1$ into the recurrence.",
+  "answer": "(a) See solution: the top $n$ discs must be moved off (at least $m_n$ moves), the largest disc moved (at least 1), then the $n$ discs moved back on top (at least $m_n$), and this can be achieved. (b) Proof (see solution). (c) About $5.8 \\times 10^{11}$ years.",
+  "solution": "**(a)** With $n + 1$ discs, the largest disc must move at least once. When it first moves, the other $n$ discs must all be on one other peg (none can be on top of it, and none on the peg it moves to), stacked in order. Getting them there takes at least $m_n$ moves. After the largest disc's final move to C, the $n$ smaller discs must all be moved onto it, taking at least another $m_n$ moves. So $m_{n+1} \\ge m_n + 1 + m_n$.\n\nThis is also achievable: move the top $n$ discs to B ($m_n$ moves), the largest to C (1 move), then the $n$ discs from B to C ($m_n$ moves). Hence\n$$m_{n+1} = 2m_n + 1$$\n\n**(b)** **Basis:** $m_1 = 1 = 2^1 - 1$ ✓\n\n**Assumption:** assume $m_k = 2^k - 1$.\n\n**Inductive step:**\n$$m_{k+1} = 2m_k + 1 = 2(2^k - 1) + 1 = 2^{k+1} - 2 + 1 = 2^{k+1} - 1$$\nwhich is the formula with $n = k + 1$.\n\n**Conclusion:** if true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so $m_n = 2^n - 1$ for all positive integers $n$ by induction.\n\n**(c)** $m_{64} = 2^{64} - 1 \\approx 1.845 \\times 10^{19}$ seconds. One year $\\approx 365.25 \\times 24 \\times 3600 = 3.156 \\times 10^7$ s, so the time is\n$$\\frac{1.845 \\times 10^{19}}{3.156 \\times 10^7} \\approx 5.8 \\times 10^{11} \\text{ years}$$\n(about 40 times the age of the universe).",
+  "linkedTopicIds": [],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 155\" width=\"340\" height=\"155\"><line x1=\"10\" y1=\"120\" x2=\"330\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"60\" y1=\"120\" x2=\"60\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"60\" y=\"142\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><line x1=\"170\" y1=\"120\" x2=\"170\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"170\" y=\"142\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><line x1=\"280\" y1=\"120\" x2=\"280\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"3\"/><text x=\"280\" y=\"142\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">C</text><rect x=\"15.0\" y=\"106\" width=\"90\" height=\"14\" rx=\"3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><rect x=\"24.0\" y=\"92\" width=\"72\" height=\"14\" rx=\"3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><rect x=\"33.0\" y=\"78\" width=\"54\" height=\"14\" rx=\"3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/><rect x=\"42.0\" y=\"64\" width=\"36\" height=\"14\" rx=\"3\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\"/></svg>"
+ },
+ {
+  "id": "fur-proof-by-induction-q14",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Given that $f(x) = xe^{2x}$, prove by induction that, for all positive integers $n$,\n$$\\frac{\\mathrm{d}^n f}{\\mathrm{d}x^n} = 2^{n-1}(2x + n)e^{2x}$$",
+  "hint": "For the step, differentiate the assumed expression for the $k$th derivative using the product rule, then take out $2^k e^{2x}$.",
+  "answer": "Proof: $f'(x) = (2x + 1)e^{2x}$ matches $n = 1$; differentiating $2^{k-1}(2x + k)e^{2x}$ gives $2^{k-1}e^{2x}(2 + 4x + 2k) = 2^k(2x + k + 1)e^{2x}$, the $n = k + 1$ form; so true for all $n \\in \\mathbb{Z}^+$.",
+  "solution": "**Basis:** $n = 1$: by the product rule\n$$f'(x) = 1 \\cdot e^{2x} + x \\cdot 2e^{2x} = (2x + 1)e^{2x}$$\nand the formula gives $2^0(2x + 1)e^{2x} = (2x + 1)e^{2x}$ ✓\n\n**Assumption:** assume $\\dfrac{\\mathrm{d}^k f}{\\mathrm{d}x^k} = 2^{k-1}(2x + k)e^{2x}$.\n\n**Inductive step:** differentiate once more (product rule, $2^{k-1}$ is a constant):\n$$\\frac{\\mathrm{d}^{k+1} f}{\\mathrm{d}x^{k+1}} = 2^{k-1}\\Big[2e^{2x} + (2x + k) \\cdot 2e^{2x}\\Big] = 2^{k-1} \\cdot 2e^{2x}\\big[1 + 2x + k\\big] = 2^{k}\\big(2x + (k + 1)\\big)e^{2x}$$\nwhich is the formula with $n = k + 1$ (since $2^{(k+1)-1} = 2^k$).\n\n**Conclusion:** if true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so true for all positive integers $n$ by mathematical induction.",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient",
+   "calc-derivatives-exp-log-trig"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q15",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A sequence is defined by $u_1 = 1$ and $u_{n+1} = \\sqrt{2 + u_n}$ for $n \\ge 1$.\n\n(a) Prove by induction that $0 < u_n < 2$ for all positive integers $n$.\n\n(b) Hence show that the sequence is increasing.\n\n(c) Given that the sequence converges to a limit $L$, find $L$.",
+  "hint": "(a) If $0 < u_k < 2$, what can you say about $2 + u_k$, and then its square root? (b) Factorise $u_{n+1}^2 - u_n^2 = 2 + u_n - u_n^2$.",
+  "answer": "(a) Proof (see solution). (b) $u_{n+1}^2 - u_n^2 = (2 - u_n)(1 + u_n) > 0$ and both terms are positive, so $u_{n+1} > u_n$. (c) $L = 2$",
+  "solution": "**(a)** **Basis:** $u_1 = 1$ and $0 < 1 < 2$ ✓\n\n**Assumption:** assume $0 < u_k < 2$.\n\n**Inductive step:** adding 2, $2 < 2 + u_k < 4$. The square root function is increasing, so\n$$\\sqrt{2} < \\sqrt{2 + u_k} < \\sqrt{4}, \\quad \\text{i.e. } 0 < \\sqrt{2} < u_{k+1} < 2$$\nSo $0 < u_{k+1} < 2$.\n\n**Conclusion:** true for $n = 1$, and true for $n = k$ implies true for $n = k + 1$, so $0 < u_n < 2$ for all positive integers $n$ by induction.\n\n**(b)**\n$$u_{n+1}^2 - u_n^2 = 2 + u_n - u_n^2 = (2 - u_n)(1 + u_n)$$\nBy (a), $2 - u_n > 0$ and $1 + u_n > 0$, so $u_{n+1}^2 > u_n^2$. Both $u_{n+1}$ and $u_n$ are positive, so $u_{n+1} > u_n$: the sequence is increasing.\n\n**(c)** If $u_n \\to L$ then $u_{n+1} \\to L$ as well, so $L = \\sqrt{2 + L}$:\n$$L^2 = 2 + L \\Rightarrow L^2 - L - 2 = 0 \\Rightarrow (L - 2)(L + 1) = 0$$\n$L = -1$ is impossible because every term is positive (and $\\sqrt{\\ }$ is non-negative), so $L = 2$.\n\n(The first few terms are $1, 1.732, 1.932, 1.983, \\ldots$, increasing towards 2.)",
+  "linkedTopicIds": [
+   "pure-sigma-recurrence"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q16",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Find, with proof, the set of all positive integers $n$ for which $2^n > n^2$.",
+  "hint": "Test small values of $n$ first. The basis of an induction need not be $n = 1$. In the step you will need $2k^2 \\ge (k + 1)^2$: for which $k$ is that true?",
+  "answer": "$n = 1$ and all $n \\ge 5$, i.e. $\\{1\\} \\cup \\{n \\in \\mathbb{Z} : n \\ge 5\\}$.",
+  "solution": "**Small values:**\n\n| $n$ | 1 | 2 | 3 | 4 | 5 | 6 |\n|---|---|---|---|---|---|---|\n| $2^n$ | 2 | 4 | 8 | 16 | 32 | 64 |\n| $n^2$ | 1 | 4 | 9 | 16 | 25 | 36 |\n\nSo the inequality holds for $n = 1$, fails for $n = 2, 3, 4$, and holds for $n = 5, 6$. We prove it holds for every $n \\ge 5$.\n\n**Basis:** $n = 5$: $32 > 25$ ✓\n\n**Assumption:** assume $2^k > k^2$ for some integer $k \\ge 5$.\n\n**Inductive step:**\n$$2^{k+1} = 2 \\times 2^k > 2k^2$$\nNow $2k^2 - (k + 1)^2 = k^2 - 2k - 1 = (k - 1)^2 - 2$. For $k \\ge 5$, $(k - 1)^2 \\ge 16 > 2$, so $2k^2 > (k + 1)^2$. Hence\n$$2^{k+1} > 2k^2 > (k + 1)^2$$\nso the result holds for $n = k + 1$ (and $k + 1 \\ge 5$ as well).\n\n**Conclusion:** true for $n = 5$, and true for $n = k \\ge 5$ implies true for $n = k + 1$, so $2^n > n^2$ for all integers $n \\ge 5$ by induction.\n\nCombining with the table: the set is $n = 1$ together with all integers $n \\ge 5$.\n\nNote why the induction must start at 5: the step needs $(k - 1)^2 > 2$, i.e. $k \\ge 3$, but the statement itself is false at $n = 3$ and $n = 4$, so there is no true basis before 5.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q17",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Use the compound angle formulae to show that\n$$2\\sin\\theta\\cos\\big((2k + 1)\\theta\\big) = \\sin\\big((2k + 2)\\theta\\big) - \\sin(2k\\theta)$$\n\n(b) Hence prove by induction that, for $\\sin\\theta \\ne 0$ and all positive integers $n$,\n$$\\sum_{r=1}^{n} \\cos\\big((2r - 1)\\theta\\big) = \\frac{\\sin(2n\\theta)}{2\\sin\\theta}$$\n\n(c) Deduce the exact value of $\\cos\\frac{\\pi}{7} + \\cos\\frac{3\\pi}{7} + \\cos\\frac{5\\pi}{7}$.",
+  "hint": "(a) Expand $\\sin(A + B) - \\sin(A - B)$ with $A = (2k + 1)\\theta$ and $B = \\theta$. (c) Choose $n$ and $\\theta$ so that $\\sin(2n\\theta) = \\sin(\\pi - \\theta)$.",
+  "answer": "(a) Shown (see solution). (b) Proof (see solution). (c) $\\frac{1}{2}$",
+  "solution": "**(a)** With $A = (2k + 1)\\theta$, $B = \\theta$:\n$$\\sin(A + B) - \\sin(A - B) = (\\sin A\\cos B + \\cos A\\sin B) - (\\sin A\\cos B - \\cos A\\sin B) = 2\\cos A\\sin B$$\nso $2\\sin\\theta\\cos\\big((2k + 1)\\theta\\big) = \\sin\\big((2k + 2)\\theta\\big) - \\sin(2k\\theta)$.\n\n**(b)** **Basis:** $n = 1$: LHS $= \\cos\\theta$, RHS $= \\frac{\\sin 2\\theta}{2\\sin\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{2\\sin\\theta} = \\cos\\theta$ ✓\n\n**Assumption:** assume $\\sum_{r=1}^{k}\\cos\\big((2r - 1)\\theta\\big) = \\frac{\\sin(2k\\theta)}{2\\sin\\theta}$.\n\n**Inductive step:** the $(k + 1)$th term is $\\cos\\big((2k + 1)\\theta\\big)$, so\n$$\\sum_{r=1}^{k+1}\\cos\\big((2r - 1)\\theta\\big) = \\frac{\\sin(2k\\theta)}{2\\sin\\theta} + \\cos\\big((2k + 1)\\theta\\big) = \\frac{\\sin(2k\\theta) + 2\\sin\\theta\\cos\\big((2k + 1)\\theta\\big)}{2\\sin\\theta}$$\nBy (a) the numerator is $\\sin(2k\\theta) + \\sin\\big((2k + 2)\\theta\\big) - \\sin(2k\\theta) = \\sin\\big(2(k + 1)\\theta\\big)$, so the sum is\n$$\\frac{\\sin\\big(2(k + 1)\\theta\\big)}{2\\sin\\theta}$$\nwhich is the result with $n = k + 1$.\n\n**Conclusion:** true for $n = 1$, and true for $n = k$ implies true for $n = k + 1$, so true for all positive integers $n$ by induction.\n\n**(c)** Take $n = 3$, $\\theta = \\frac{\\pi}{7}$:\n$$\\cos\\frac{\\pi}{7} + \\cos\\frac{3\\pi}{7} + \\cos\\frac{5\\pi}{7} = \\frac{\\sin\\frac{6\\pi}{7}}{2\\sin\\frac{\\pi}{7}}$$\nSince $\\sin\\frac{6\\pi}{7} = \\sin\\left(\\pi - \\frac{\\pi}{7}\\right) = \\sin\\frac{\\pi}{7}$, the value is $\\frac{1}{2}$.",
+  "linkedTopicIds": [
+   "pure-trig-compound-angles",
+   "pure-sigma-recurrence"
+  ]
+ },
+ {
+  "id": "fur-proof-by-induction-q18",
+  "topicId": "fur-proof-by-induction",
+  "difficulty": 5,
+  "type": "exam-style",
+  "question": "The Fibonacci numbers are defined by $F_0 = 0$, $F_1 = 1$ and $F_{n+1} = F_n + F_{n-1}$ for $n \\ge 1$.\n\n$$\\mathbf{A} = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove by induction that, for all positive integers $n$,\n$$\\mathbf{A}^n = \\begin{pmatrix} F_{n+1} & F_n \\\\ F_n & F_{n-1} \\end{pmatrix}$$",
+    "marks": 5
+   },
+   {
+    "label": "b",
+    "prompt": "By considering $\\det(\\mathbf{A}^n)$, prove that $F_{n+1}F_{n-1} - F_n^2 = (-1)^n$ for all positive integers $n$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "By considering $\\mathbf{A}^{2n} = \\mathbf{A}^n\\mathbf{A}^n$, show that $F_{2n} = F_n(F_{n+1} + F_{n-1})$.",
+    "marks": 3
+   }
+  ],
+  "marks": 11,
+  "calculator": false,
+  "hint": "(a) Use $\\mathbf{A}^{k+1} = \\mathbf{A}^k\\mathbf{A}$ and the recurrence to tidy each entry. (b) $\\det(\\mathbf{A}^n) = (\\det\\mathbf{A})^n$. (c) Compare the top-right entries.",
+  "answer": "(a) Proof (see solution). (b) $\\det(\\mathbf{A}^n) = F_{n+1}F_{n-1} - F_n^2$ and $(\\det\\mathbf{A})^n = (-1)^n$. (c) Top-right entry: $F_{2n} = F_{n+1}F_n + F_nF_{n-1} = F_n(F_{n+1} + F_{n-1})$.",
+  "solution": "**(a)** **Basis:** $n = 1$: $F_2 = F_1 + F_0 = 1$, so $\\begin{pmatrix} F_2 & F_1 \\\\ F_1 & F_0 \\end{pmatrix} = \\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\mathbf{A}$ ✓ **B1**\n\n**Assume** $\\mathbf{A}^k = \\begin{pmatrix} F_{k+1} & F_k \\\\ F_k & F_{k-1} \\end{pmatrix}$ for some positive integer $k$. Then\n$$\\mathbf{A}^{k+1} = \\mathbf{A}^k\\mathbf{A} = \\begin{pmatrix} F_{k+1} & F_k \\\\ F_k & F_{k-1} \\end{pmatrix}\\begin{pmatrix} 1 & 1 \\\\ 1 & 0 \\end{pmatrix} = \\begin{pmatrix} F_{k+1} + F_k & F_{k+1} \\\\ F_k + F_{k-1} & F_k \\end{pmatrix}$$ **M1 A1**\nUsing the recurrence, $F_{k+1} + F_k = F_{k+2}$ and $F_k + F_{k-1} = F_{k+1}$:\n$$\\mathbf{A}^{k+1} = \\begin{pmatrix} F_{k+2} & F_{k+1} \\\\ F_{k+1} & F_k \\end{pmatrix}$$ **A1**\nwhich is the result with $n = k + 1$. If true for $n = k$ then true for $n = k + 1$; true for $n = 1$, so true for all positive integers $n$ by induction. **A1**\n\n**(b)** $\\det\\mathbf{A} = 0 - 1 = -1$. **B1**\nSince $\\det(\\mathbf{PQ}) = \\det\\mathbf{P}\\det\\mathbf{Q}$, $\\det(\\mathbf{A}^n) = (\\det\\mathbf{A})^n = (-1)^n$. **M1**\nFrom (a), $\\det(\\mathbf{A}^n) = F_{n+1}F_{n-1} - F_n^2$, so $F_{n+1}F_{n-1} - F_n^2 = (-1)^n$. **A1**\n(Check $n = 3$: $F_4F_2 - F_3^2 = 3 \\times 1 - 4 = -1$ ✓)\n\n**(c)** By (a) with $2n$ in place of $n$, the top-right entry of $\\mathbf{A}^{2n}$ is $F_{2n}$. **B1**\nTop-right entry of $\\mathbf{A}^n\\mathbf{A}^n$:\n$$\\begin{pmatrix} F_{n+1} & F_n \\\\ F_n & F_{n-1} \\end{pmatrix}\\begin{pmatrix} F_{n+1} & F_n \\\\ F_n & F_{n-1} \\end{pmatrix} \\to F_{n+1}F_n + F_nF_{n-1}$$ **M1**\nEquating: $F_{2n} = F_n(F_{n+1} + F_{n-1})$. **A1**\n(Check $n = 4$: $F_8 = 21$ and $F_4(F_5 + F_3) = 3(5 + 2) = 21$ ✓)",
+  "linkedTopicIds": [
+   "fur-matrices-arithmetic",
+   "fur-determinants-inverses"
+  ]
+ }
+]
