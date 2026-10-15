@@ -3,6 +3,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("styles.css");
   eleventyConfig.addPassthroughCopy("script.js");
   eleventyConfig.addPassthroughCopy("admin");
+  eleventyConfig.addPassthroughCopy("hustle"); // Hustle HQ app, served at /hustle/
   eleventyConfig.addPassthroughCopy("src/images");
   
   // Date formatting filter

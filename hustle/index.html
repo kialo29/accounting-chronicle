@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hustle HQ</title>
+<meta name="description" content="Run your side hustle in one place: sales, invoices, products and margins, expenses, time, tasks, delivery and reports. Your data stays on your device.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23E86A33'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-weight='700' font-size='36' fill='white' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="app.css">
+<script>
+  // Apply saved theme before paint
+  try { var t = localStorage.getItem('hustlehq.theme'); if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+</script>
+</head>
+<body>
+<div class="app" id="app">
+  <aside class="rail" id="rail">
+    <a class="brand" href="#dashboard" aria-label="Hustle HQ home">
+      <span class="brand-mark" aria-hidden="true">H</span>
+      <span class="brand-text"><b id="brand-name">Hustle HQ</b><span id="brand-sub">Side hustle HQ</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main"></nav>
+    <div class="rail-foot">
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+      <span id="rail-note">Saved on this device</span>
+    </div>
+  </aside>
+  <main class="main" id="main"></main>
+</div>
+<div id="print-area"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

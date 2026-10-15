@@ -2,6 +2,34 @@
 
 A blog and content site for documenting your ACA journey, with a built-in CMS for easy editing.
 
+It also ships **Hustle HQ**, a free all-in-one app for running a side hustle or small business, served at `/hustle/`.
+
+---
+
+## 🚀 Hustle HQ (the side hustle app)
+
+Everything a tutor, Vinted reseller, baker, cleaner, freelancer or maker needs to run the business from one screen:
+
+| Area | What it does |
+|---|---|
+| **Dashboard** | Revenue, profit and margin this month, what's owed to you, goal progress, what needs attention, tip of the day |
+| **Sales / Orders / Bookings / Jobs** | Record sales with line items, channel fees, postage and discounts. Live profit and margin per sale. List or drag-and-drop board with your own pipeline stages |
+| **Invoices** | Numbered invoices from a sale, from unbilled time, or from scratch. Draft → sent → paid, overdue detection, print/save as PDF, copy as text, copy a payment reminder |
+| **Products & pricing** | Catalogue with unit cost, fees and margin for each item. Stock on hand and low-stock alerts. Pricing calculator (price for a target margin, break-even sales per month). Sales channels with their fees (Etsy, eBay, Vinted, PayPal, Stripe, card reader…) |
+| **Customers** | Lifetime value, profit, balance owed, full history, notes |
+| **Expenses** | Categories that map to the HMRC self-employment boxes, repeating costs, mileage helper at 45p/mile, link a cost to a specific sale |
+| **Delivery** | What still needs posting, what's on the way (carrier and tracking), what's delivered |
+| **Time** | Timer and manual entries, unbilled hours turned into an invoice in one click |
+| **Tasks & processes** | To-do list with due dates, priorities and repeats. Save processes (checklists) and run them as tasks |
+| **Reports & tax** | Profit & loss by month and by period, by channel, best sellers, top customers, CSV export, UK Self Assessment estimate (income tax + Class 4 NI, trading allowance check) |
+| **Settings** | Business details, invoice numbering and payment details, pipeline stages, tax rates, backup/restore |
+
+Pick a business type on first run (Reseller, Maker, Tutor, Trades & services, Freelancer, Food, Creator, or anything else) and the app sets up matching stages, channels, example products, process checklists and a launch checklist. Sample data is available so you can explore every screen first.
+
+**Where is the data?** On the user's device, in the browser (localStorage). Nothing is sent anywhere. Download a backup from Settings to move it to another device. There is no login and nothing to host beyond the static files in `hustle/`.
+
+**Tech:** plain HTML, CSS and ES modules, no build step and no dependencies. Charts are hand-drawn SVG. Edit anything in `hustle/` and redeploy.
+
 ---
 
 ## 🚀 Quick Setup Guide (15 minutes)
