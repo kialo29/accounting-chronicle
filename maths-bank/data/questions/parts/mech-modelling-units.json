@@ -1,0 +1,276 @@
+[
+ {
+  "id": "mech-modelling-units-q01",
+  "topicId": "mech-modelling-units",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Convert $36\\text{ km h}^{-1}$ into $\\text{m s}^{-1}$.",
+  "hint": "Change kilometres to metres and hours to seconds. How many seconds are in one hour?",
+  "answer": "$10\\text{ m s}^{-1}$",
+  "solution": "$36\\text{ km h}^{-1}$ means 36 km in 1 hour, which is $36\\,000$ m in $3600$ s.\n$$36\\text{ km h}^{-1} = \\frac{36 \\times 1000}{3600}\\text{ m s}^{-1} = 10\\text{ m s}^{-1}$$\n\nShortcut: multiplying by 1000 and dividing by 3600 is the same as dividing by 3.6. Sense check: the answer is smaller than 36 because a car covers far fewer metres in one second than kilometres in one hour.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q02",
+  "topicId": "mech-modelling-units",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Convert $36\\text{ km h}^{-2}$ into $\\text{m s}^{-2}$. Give your answer as an exact fraction and as a decimal to 3 significant figures.",
+  "hint": "$\\text{km h}^{-2}$ means kilometres per hour **per hour**, so you divide by 3600 twice.",
+  "answer": "$\\dfrac{1}{360}\\text{ m s}^{-2} \\approx 0.00278\\text{ m s}^{-2}$",
+  "solution": "**What changed from the previous question:** the time unit is now squared ($\\text{h}^{-2}$ instead of $\\text{h}^{-1}$).\n\n$1\\text{ h}^2 = 3600^2\\text{ s}^2 = 12\\,960\\,000\\text{ s}^2$, so\n$$36\\text{ km h}^{-2} = \\frac{36 \\times 1000}{3600^2}\\text{ m s}^{-2} = \\frac{36\\,000}{12\\,960\\,000} = \\frac{1}{360}\\text{ m s}^{-2} \\approx 0.00278\\text{ m s}^{-2}$$\n\nDividing by 3600 only once (giving $10$) would be a speed, not an acceleration: the units would not match.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q03",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Convert $36\\text{ m s}^{-2}$ into $\\text{km h}^{-2}$.",
+  "hint": "This is the previous conversion in reverse. Metres to kilometres: divide by 1000. Per second squared to per hour squared: multiply by $3600^2$.",
+  "answer": "$466\\,560\\text{ km h}^{-2}$",
+  "solution": "**What changed:** the conversion now goes the other way, from SI units to $\\text{km h}^{-2}$.\n\nIn one hour squared there are $3600^2 = 12\\,960\\,000\\text{ s}^2$, so the number gets **bigger** by that factor; changing metres to kilometres makes it smaller by a factor of 1000:\n$$36\\text{ m s}^{-2} = \\frac{36 \\times 12\\,960\\,000}{1000}\\text{ km h}^{-2} = 466\\,560\\text{ km h}^{-2}$$\n\nCheck: $1\\text{ m s}^{-2} = 12\\,960\\text{ km h}^{-2}$, and $36 \\times 12\\,960 = 466\\,560$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q04",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Convert $36\\text{ m s}^{-1}$ into $\\text{km h}^{-1}$.",
+  "hint": "Going from $\\text{m s}^{-1}$ to $\\text{km h}^{-1}$, the number gets bigger. By what factor?",
+  "answer": "$129.6\\text{ km h}^{-1}$",
+  "solution": "**What changed:** the time unit is back to a single power ($\\text{s}^{-1}$), so the factor is $3600$, not $3600^2$.\n\nIn one hour the object travels $36 \\times 3600 = 129\\,600$ m $= 129.6$ km, so\n$$36\\text{ m s}^{-1} = 36 \\times 3.6 = 129.6\\text{ km h}^{-1}$$\n\nCompare with the first question in this set: $\\text{km h}^{-1} \\to \\text{m s}^{-1}$ is $\\div 3.6$, and $\\text{m s}^{-1} \\to \\text{km h}^{-1}$ is $\\times 3.6$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q05",
+  "topicId": "mech-modelling-units",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "(a) Sort these quantities into scalars and vectors:\n\nmass, displacement, speed, acceleration, time, weight, distance, velocity\n\n(b) A car is travelling at $20\\text{ m s}^{-1}$ due north. Is \"$20\\text{ m s}^{-1}$ due north\" a speed or a velocity? Explain your answer.\n\n(c) State the SI unit of each of: mass, time, displacement, acceleration.",
+  "hint": "A vector needs a direction to describe it fully. Weight is a force.",
+  "answer": "(a) Scalars: mass, speed, time, distance. Vectors: displacement, acceleration, weight, velocity. (b) A velocity, because it gives a direction (due north) as well as a size. (c) kg, s, m, $\\text{m s}^{-2}$",
+  "solution": "(a) A **scalar** has size (magnitude) only; a **vector** has size and direction.\n\n| Scalars | Vectors |\n|---|---|\n| mass | displacement |\n| speed | acceleration |\n| time | weight (a force, acting downwards) |\n| distance | velocity |\n\nDistance/displacement and speed/velocity come in pairs: the vector version includes the direction.\n\n(b) It is a **velocity**: \"due north\" gives the direction. The speed is just $20\\text{ m s}^{-1}$.\n\n(c) mass: kilogram (kg); time: second (s); displacement: metre (m); acceleration: $\\text{m s}^{-2}$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q06",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Take $g = 9.8\\text{ m s}^{-2}$.\n\n(a) Find the weight of a bag of flour of mass 2.5 kg.\n\n(b) A crate has weight 343 N. Find its mass.\n\n(c) Find the weight of a phone of mass 750 g.\n\n(d) On the Moon the acceleration due to gravity is $1.6\\text{ m s}^{-2}$. State the mass of the crate in part (b) on the Moon, and find its weight there.",
+  "hint": "Weight $W = mg$, with $m$ in kilograms and $W$ in newtons. Mass does not depend on where the object is.",
+  "answer": "(a) 24.5 N (b) 35 kg (c) 7.35 N (d) mass 35 kg; weight 56 N",
+  "solution": "(a) $W = mg = 2.5 \\times 9.8 = 24.5$ N\n\n(b) $m = \\dfrac{W}{g} = \\dfrac{343}{9.8} = 35$ kg\n\n(c) Convert to kilograms first: $750\\text{ g} = 0.75$ kg.\n$$W = 0.75 \\times 9.8 = 7.35\\text{ N}$$\n\n(d) Mass is the amount of matter, so it is still **35 kg** on the Moon. The weight changes because $g$ changes:\n$$W = 35 \\times 1.6 = 56\\text{ N}$$\n\nMass is measured in kg, weight (a force) in N; they are not interchangeable.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q07",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A car is travelling at $108\\text{ km h}^{-1}$. Tom converts this speed to $\\text{m s}^{-1}$. His working is shown below.\n\nThe conversion factor between km/h and m/s is 3.6.\n$108 \\times 3.6 = 388.8$\nSo the speed is $388.8\\text{ m s}^{-1}$.\n\n(a) Explain the mistake in Tom's working.\n\n(b) Find the correct speed in $\\text{m s}^{-1}$.\n\n(c) Describe a quick check Tom could have used to spot that his answer was wrong.",
+  "hint": "Does the number of metres travelled in one **second** come out bigger or smaller than the number of kilometres travelled in one **hour**?",
+  "answer": "(a) He multiplied by 3.6 instead of dividing: converting $\\text{km h}^{-1}$ to $\\text{m s}^{-1}$ means $\\times 1000 \\div 3600$, which is $\\div 3.6$. (b) $30\\text{ m s}^{-1}$ (c) e.g. $388.8\\text{ m s}^{-1}$ is faster than the speed of sound (about $340\\text{ m s}^{-1}$), which is impossible for a car; or check $30 \\times 3.6 = 108$.",
+  "solution": "(a) The error is the line $108 \\times 3.6 = 388.8$. Tom knows the factor is 3.6 but applies it the wrong way round.\n\n$108\\text{ km h}^{-1}$ means $108\\,000$ m in $3600$ s. To get metres per second we multiply by 1000 (km to m) and **divide** by 3600 (per hour to per second), which overall is dividing by 3.6.\n\n(b)\n$$108\\text{ km h}^{-1} = \\frac{108 \\times 1000}{3600} = \\frac{108}{3.6} = 30\\text{ m s}^{-1}$$\n\n(c) Sense check: $388.8\\text{ m s}^{-1}$ is about 1400 km per hour, faster than the speed of sound, so it cannot be a car. Alternatively, reverse the conversion: $30 \\times 3.6 = 108$ ✓.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q08",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Ella swims 3 lengths of a straight 25 m swimming pool in 45 s, starting at the shallow end. Her friend works out her average speed and average velocity:\n\nLine 1: distance travelled $= 3 \\times 25 = 75$ m\nLine 2: displacement $= 75$ m\nLine 3: average speed $= \\dfrac{75}{45} = 1.67\\text{ m s}^{-1}$ (3 s.f.)\nLine 4: average velocity $= \\dfrac{75}{45} = 1.67\\text{ m s}^{-1}$ (3 s.f.)\n\n(a) Identify the incorrect line and explain the error.\n\n(b) Find Ella's correct average velocity.",
+  "hint": "Where is Ella after 3 lengths? Displacement only depends on the start and end positions.",
+  "answer": "(a) Line 2: displacement is not the same as distance. After 3 lengths Ella is at the deep end, 25 m from her start. (b) $\\frac{5}{9} \\approx 0.556\\text{ m s}^{-1}$, directed from the shallow end towards the deep end",
+  "solution": "(a) Line 2 is wrong. **Distance** (a scalar) is the total length swum, 75 m. **Displacement** (a vector) is the change in position from start to finish. After lengths 1, 2, 3 Ella is at the deep end, the shallow end, then the deep end, so her displacement is **25 m** towards the deep end.\n\nLine 3 is correct (average speed uses distance); Line 4 is wrong only because it uses the wrong displacement from Line 2.\n\n(b)\n$$\\text{average velocity} = \\frac{\\text{displacement}}{\\text{time}} = \\frac{25}{45} = \\frac{5}{9} \\approx 0.556\\text{ m s}^{-1}$$\ndirected from the shallow end towards the deep end.\n\nNote: if she had swum an even number of lengths, her displacement and average velocity would be zero even though her average speed is not.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q09",
+  "topicId": "mech-modelling-units",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A sprinter runs 100 m in 9.6 seconds.\n\n(a) Find the sprinter's average speed in $\\text{m s}^{-1}$, to 3 significant figures, and in $\\text{km h}^{-1}$.\n\n(b) A cheetah can reach a top speed of about $108\\text{ km h}^{-1}$. Assuming it runs at this top speed throughout, how long would it take a cheetah to cover 100 m?\n\n(c) Using 1 mile $= 1.609$ km, express the sprinter's average speed in miles per hour to 3 significant figures.",
+  "hint": "Speed $=$ distance $\\div$ time. To compare with the cheetah, put both speeds in $\\text{m s}^{-1}$.",
+  "answer": "(a) $10.4\\text{ m s}^{-1}$; $37.5\\text{ km h}^{-1}$ (b) $3.33$ s (3 s.f.) (c) $23.3$ mph",
+  "solution": "(a)\n$$\\text{average speed} = \\frac{100}{9.6} = 10.416\\ldots \\approx 10.4\\text{ m s}^{-1}$$\nIn $\\text{km h}^{-1}$ multiply by 3.6 (use the unrounded value):\n$$10.416\\ldots \\times 3.6 = 37.5\\text{ km h}^{-1}$$\n\n(b) Convert the cheetah's speed to $\\text{m s}^{-1}$:\n$$108 \\div 3.6 = 30\\text{ m s}^{-1}$$\n$$t = \\frac{100}{30} = 3.33\\text{ s (3 s.f.)}$$\n\n(c)\n$$37.5 \\div 1.609 = 23.306\\ldots \\approx 23.3\\text{ mph}$$\n\nModelling note: real sprinters and cheetahs start from rest, so they are not at top speed for the whole 100 m. The cheetah's time in (b) is an underestimate.",
+  "linkedTopicIds": [
+   "rat-speed-distance-time"
+  ]
+ },
+ {
+  "id": "mech-modelling-units-q10",
+  "topicId": "mech-modelling-units",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The diagram shows block A on a horizontal table, attached to a string that passes over a pulley at the edge of the table to a particle B, which hangs freely.\n\nThe model assumes that the string is **light** and **inextensible**, and that the table and the pulley are **smooth**.\n\nRavi writes:\n\n\"Because the string is light, A and B move with the same acceleration. Because the string is inextensible, the tension is the same all the way along it.\"\n\n(a) Is Ravi correct? Explain what each assumption about the string actually tells you.\n\n(b) Explain what \"smooth\" means for the table, and for the pulley.\n\n(c) The table is in fact slightly rough. State, with a reason, whether the model will overestimate or underestimate the acceleration of the system.",
+  "hint": "Ask yourself: what would happen if the string could stretch? What would happen if the string had mass, so part of the weight of the string also had to be pulled along?",
+  "answer": "(a) No, he has swapped the consequences. Inextensible means the string does not stretch, so A and B have the same acceleration (and speed). Light means the string's mass is negligible, so the tension is the same throughout the string. (b) Smooth table: no friction between A and the table. Smooth pulley: no friction at the pulley, so the tension is the same on both sides of it. (c) Overestimate: friction on A would oppose the motion and reduce the acceleration.",
+  "solution": "(a) Ravi is **not** correct: he has matched each assumption to the wrong consequence.\n\n• **Inextensible** (does not stretch): the distance along the string from A to B stays fixed, so whenever A moves 1 m, B moves 1 m. Hence A and B have the **same speed and the same magnitude of acceleration**.\n• **Light** (mass negligible): no resultant force is needed to accelerate the string itself, so the **tension is the same throughout** the string.\n\n(b) **Smooth table:** there is no friction force between block A and the table.\n**Smooth pulley:** there is no friction in the pulley, so the string runs over it freely and the tension is the same on both sides of the pulley (together with the string being light).\n\n(c) With a rough table, a friction force acts on A opposite to its motion. The resultant force on the system is then smaller than the model predicts, so the real acceleration is smaller. The model will **overestimate** the acceleration.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 310 200\" width=\"310\" height=\"200\"><path d=\"M10,80 L220,80 L220,190\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"20\" y1=\"80\" x2=\"12\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"34\" y1=\"80\" x2=\"26\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"48\" y1=\"80\" x2=\"40\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"62\" y1=\"80\" x2=\"54\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"76\" y1=\"80\" x2=\"68\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"90\" y1=\"80\" x2=\"82\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"104\" y1=\"80\" x2=\"96\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"118\" y1=\"80\" x2=\"110\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"132\" y1=\"80\" x2=\"124\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"146\" y1=\"80\" x2=\"138\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"160\" y1=\"80\" x2=\"152\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"174\" y1=\"80\" x2=\"166\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"188\" y1=\"80\" x2=\"180\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"202\" y1=\"80\" x2=\"194\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><line x1=\"216\" y1=\"80\" x2=\"208\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"1\"/><path d=\"M70,80 L70,46 L124,46 L124,80 L70,80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"97\" y=\"68\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">A</text><line x1=\"220\" y1=\"80\" x2=\"232\" y2=\"68\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"232\" cy=\"68\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"232\" cy=\"68\" r=\"2\" fill=\"currentColor\"/><line x1=\"124\" y1=\"56\" x2=\"232\" y2=\"56\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"244\" y1=\"68\" x2=\"244\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/><path d=\"M232,140 L256,140 L256,166 L232,166 L232,140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"244\" y=\"158\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">B</text><text x=\"175\" y=\"48\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">string</text><text x=\"262\" y=\"52\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">pulley</text><text x=\"120\" y=\"110\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">table</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q11",
+  "topicId": "mech-modelling-units",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A football is kicked from the ground. In a model of its motion, the football is treated as a **particle**.\n\n(a) Explain what modelling the football as a particle means.\n\n(b) Give two features of the real motion of the ball that this model ignores.\n\n(c) The model predicts that the ball lands 52 m from where it was kicked. State, with a reason, whether you would expect the real ball to land closer or further away.\n\n(d) Jess says: \"Modelling the ball as a particle means we are ignoring its mass.\" Is Jess correct? Explain.",
+  "hint": "A particle has mass but no size. What effects depend on the size and shape of the ball?",
+  "answer": "(a) The ball's dimensions are negligible: it is treated as a single point with mass, so it cannot spin and all forces act at one point. (b) e.g. air resistance; spin of the ball (and the swerve it causes); wind. (c) Closer: air resistance opposes the motion and slows the ball, so it travels less far than predicted. (d) No: a particle keeps its mass; only its size (and shape) is ignored.",
+  "solution": "(a) Treating the ball as a **particle** means its size is negligible compared with the distances involved: the ball is a single point that has mass. All forces act through that point, so the ball cannot rotate.\n\n(b) Any two of:\n• air resistance (drag), which depends on the size and shape of the ball;\n• the spin of the ball and the swerve it causes;\n• the effect of wind.\n\n(c) The real ball would be expected to land **closer** than 52 m. In the particle model air resistance is ignored; in reality it acts against the motion and reduces the ball's speed, so the ball does not travel as far.\n\n(d) Jess is **not** correct. A particle has mass (the ball's weight $mg$ still acts on it); it is the ball's **dimensions** that are ignored. An object whose mass is ignored would be described as **light**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q12",
+  "topicId": "mech-modelling-units",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A box of mass 12 kg rests on a smooth horizontal floor. A horizontal force of 30 N is applied to the box. Zoe finds the acceleration of the box. Her working is shown below.\n\nLine 1: weight of box $= mg = 12 \\times 9.8 = 117.6$\nLine 2: so the mass to use is $m = 117.6$\nLine 3: $F = ma \\Rightarrow 30 = 117.6a$\nLine 4: $a = 0.255\\text{ m s}^{-2}$ (3 s.f.)\n\n(a) Identify the line containing Zoe's error and explain the misconception.\n\n(b) Find the correct acceleration of the box.",
+  "hint": "In $F = ma$, what units does $m$ have? What units does $117.6$ have?",
+  "answer": "(a) Line 2: she has used the weight (117.6 N, a force) as the mass. The mass is 12 kg. (b) $2.5\\text{ m s}^{-2}$",
+  "solution": "(a) Line 1 is a correct calculation of the **weight**, but it should be labelled $117.6$ **N**: weight is a force. The error is in **Line 2**, where Zoe treats this force as the mass. Mass (kg) and weight (N) are different quantities: weight is the gravitational force on the mass, $W = mg$. In $F = ma$ the $m$ is the mass in kilograms.\n\n(b) The floor is smooth and the force is horizontal, so the resultant force on the box is 30 N (the weight is balanced by the normal reaction from the floor).\n$$F = ma \\Rightarrow 30 = 12a \\Rightarrow a = 2.5\\text{ m s}^{-2}$$\n\nZoe's answer is too small by a factor of $9.8$, exactly because she multiplied the mass by $g$.",
+  "linkedTopicIds": [
+   "mech-forces-newtons-laws"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-modelling-units-q13",
+  "topicId": "mech-modelling-units",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A building-site crane lifts a crate of mass 1.2 tonnes using a vertical steel cable. When the crate hangs at rest, the length of cable between the crane and the crate is 60 m. The cable has mass 0.8 kg per metre.\n\n(a) Find the weight of the crate.\n\n(b) Find the mass of the 60 m of cable and express it as a percentage of the mass of the crate.\n\n(c) With the crate hanging at rest, find the tension at the bottom of the cable and at the top of the cable. Hence comment on whether modelling the cable as **light** is reasonable.\n\n(d) The same type of cable is used to lower a 1.2 tonne cage 600 m down a mine shaft. Explain why the \"light cable\" model is no longer appropriate.\n\n(e) State one other modelling assumption that is usually made about the cable, and describe a situation in which it might not be valid.",
+  "hint": "1 tonne $= 1000$ kg. At the top, the cable has to hold up the crate **and** the cable below it.",
+  "answer": "(a) $11\\,760$ N (b) 48 kg, 4% (c) bottom 11 760 N, top 12 230.4 N (about 4% more); a light model is reasonable as the difference is small. (d) 600 m of cable has mass 480 kg, 40% of the cage's mass, so the tension varies a lot along it. (e) e.g. inextensible: a long cable, or a heavy load, makes the cable stretch noticeably.",
+  "solution": "(a) $m = 1.2$ tonnes $= 1200$ kg.\n$$W = mg = 1200 \\times 9.8 = 11\\,760\\text{ N}$$\n\n(b) Cable mass $= 60 \\times 0.8 = 48$ kg.\n$$\\frac{48}{1200} \\times 100\\% = 4\\%$$\n\n(c) The crate is at rest, so at the bottom of the cable the tension balances the crate's weight: $T_{\\text{bottom}} = 11\\,760$ N.\n\nAt the top the cable supports the crate **and** the whole 60 m of cable:\n$$T_{\\text{top}} = 11\\,760 + 48 \\times 9.8 = 11\\,760 + 470.4 = 12\\,230.4\\text{ N}$$\n\nIn a \"light cable\" model the tension would be the same (11 760 N) everywhere. The real tension varies by only about 4%, so modelling the cable as light is reasonable here.\n\n(d) A 600 m cable has mass $600 \\times 0.8 = 480$ kg, which is 40% of the cage's mass. The tension at the top would be about 40% larger than at the bottom, so ignoring the cable's mass would give very inaccurate results. The cable cannot be treated as light.\n\n(e) The cable is usually modelled as **inextensible** (it does not stretch). This may not be valid for a very long cable (such as the mine shaft) or a very heavy load, where the steel stretches noticeably and the cage would bounce slightly as it starts and stops.",
+  "linkedTopicIds": [
+   "mech-forces-newtons-laws"
+  ]
+ },
+ {
+  "id": "mech-modelling-units-q14",
+  "topicId": "mech-modelling-units",
+  "difficulty": 4,
+  "type": "exam-style",
+  "marks": 6,
+  "question": "A child pulls a sledge of mass 15 kg in a straight line across horizontal snow, using a rope. In a model of the motion:\n• the sledge is modelled as a particle,\n• the rope is modelled as light and inextensible,\n• the snow is modelled as smooth.\n\nThe sledge starts from rest and reaches a speed of $9\\text{ km h}^{-1}$ after 5 seconds. The acceleration of the sledge is assumed to be constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the speed of the sledge after 5 seconds is $2.5\\text{ m s}^{-1}$.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Find the acceleration of the sledge.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the weight of the sledge.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "Explain what the modelling assumption that the rope is **light** tells you about the tension in the rope.",
+    "marks": 1
+   },
+   {
+    "label": "e",
+    "prompt": "In reality the snow is not smooth. State, with a reason, how the real acceleration of the sledge, under the same pulling force, compares with the acceleration found using the model.",
+    "marks": 1
+   }
+  ],
+  "hint": "For (b), acceleration is change in velocity divided by time, in SI units.",
+  "answer": "(a) $9 \\div 3.6 = 2.5\\text{ m s}^{-1}$ (b) $0.5\\text{ m s}^{-2}$ (c) 147 N (d) The tension is the same throughout the rope. (e) Smaller, because friction would oppose the motion.",
+  "solution": "(a) $$9\\text{ km h}^{-1} = \\frac{9 \\times 1000}{3600} = 2.5\\text{ m s}^{-1}$$ B1 (answer given, so the working must be shown)\n\n(b) $$a = \\frac{v - u}{t} = \\frac{2.5 - 0}{5}$$ M1 (change in velocity over time, consistent units)\n$$a = 0.5\\text{ m s}^{-2}$$ A1\n\n(c) $W = mg = 15 \\times 9.8 = 147$ N B1 (units of newtons required)\n\n(d) The rope has negligible mass, so the **tension is the same at all points** along the rope. B1\n\n(e) The real acceleration would be **smaller**: friction between the sledge and the snow would act against the motion, reducing the resultant force. B1\n\nTotal: 6 marks",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-modelling-units-q15",
+  "topicId": "mech-modelling-units",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A walker starts at point S. She walks 3 km due north to point T, then 4 km on a bearing of $060^\\circ$ to point F, as shown in the diagram. The whole walk takes 2 hours.\n\n(a) Find the total distance walked.\n\n(b) Find the magnitude of her displacement from S to F. Give your answer to 3 significant figures.\n\n(c) Find the bearing of F from S, to the nearest degree.\n\n(d) Find her average speed and the magnitude of her average velocity, in $\\text{km h}^{-1}$, for the whole walk.",
+  "hint": "Find angle STF inside the triangle first. The north line at T and the first leg ST lie on the same straight line.",
+  "answer": "(a) 7 km (b) $\\sqrt{37} \\approx 6.08$ km (c) $035^\\circ$ (d) average speed $3.5\\text{ km h}^{-1}$; average velocity $3.04\\text{ km h}^{-1}$ (3 s.f.) on a bearing of $035^\\circ$",
+  "solution": "(a) Distance is a scalar: $3 + 4 = 7$ km.\n\n(b) The walker arrives at T heading north. The new direction is $60^\\circ$ clockwise from north, so the angle inside the triangle at T is\n$$\\angle STF = 180^\\circ - 60^\\circ = 120^\\circ$$\nCosine rule:\n$$SF^2 = 3^2 + 4^2 - 2(3)(4)\\cos 120^\\circ = 9 + 16 + 12 = 37$$\n$$SF = \\sqrt{37} = 6.08\\text{ km (3 s.f.)}$$\n\n(c) Sine rule for angle $TSF$:\n$$\\frac{\\sin \\angle TSF}{4} = \\frac{\\sin 120^\\circ}{\\sqrt{37}} \\Rightarrow \\sin\\angle TSF = \\frac{4 \\times 0.8660}{6.083} = 0.5695$$\n$$\\angle TSF = 34.7^\\circ$$\nST points due north, so the bearing of F from S is $035^\\circ$ (to the nearest degree).\n\n(Check with components: east $= 4\\sin 60^\\circ = 3.464$, north $= 3 + 4\\cos 60^\\circ = 5$; $\\tan^{-1}\\frac{3.464}{5} = 34.7^\\circ$ ✓.)\n\n(d)\n$$\\text{average speed} = \\frac{\\text{distance}}{\\text{time}} = \\frac{7}{2} = 3.5\\text{ km h}^{-1}$$\n$$|\\text{average velocity}| = \\frac{|\\text{displacement}|}{\\text{time}} = \\frac{\\sqrt{37}}{2} = 3.04\\text{ km h}^{-1}\\text{ (3 s.f.)}$$\nThe average velocity is directed on a bearing of $035^\\circ$. It is smaller than the average speed because the walk is not in a straight line.",
+  "linkedTopicIds": [
+   "geo-sine-cosine-rules",
+   "geo-bearings"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" width=\"300\" height=\"240\"><path d=\"M70,222 L70,102 L208.6,22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"70\" y1=\"222\" x2=\"208.6\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-dasharray=\"5 4\"/><line x1=\"250\" y1=\"225\" x2=\"250\" y2=\"192\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M250,185 L253.2,192 L246.8,192 z\" fill=\"currentColor\"/><text x=\"250\" y=\"179\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">N</text><line x1=\"70\" y1=\"102\" x2=\"70\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><path d=\"M70,78 A24,24 0 0 1 90.8,90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"84\" y=\"74\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">60°</text><circle cx=\"70\" cy=\"222\" r=\"3\" fill=\"currentColor\"/><text x=\"60\" y=\"228\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">S</text><circle cx=\"70\" cy=\"102\" r=\"3\" fill=\"currentColor\"/><text x=\"60\" y=\"108\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">T</text><circle cx=\"208.6\" cy=\"22\" r=\"3\" fill=\"currentColor\"/><text x=\"216.6\" y=\"26\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">F</text><text x=\"62\" y=\"166\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3 km</text><text x=\"141.3\" y=\"50\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4 km</text></svg>"
+ },
+ {
+  "id": "mech-modelling-units-q16",
+  "topicId": "mech-modelling-units",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A park has a circular running track with circumference 400 m and centre O. Kofi starts at point S on the track and runs anticlockwise around it at a constant speed of $5\\text{ m s}^{-1}$.\n\n(a) Find Kofi's distance travelled and the magnitude of his displacement from S after 60 s.\n\n(b) Hence find his average speed and the magnitude of his average velocity over these 60 s.\n\n(c) Find the greatest possible magnitude of his displacement from S, and the first time at which it occurs.\n\n(d) Find the first time after the start at which the magnitude of his displacement from S is equal to the radius of the track.\n\nGive non-exact answers to 3 significant figures.",
+  "hint": "Find the radius from the circumference. For a chord of a circle, the angle at the centre tells you its length: chord $= 2r\\sin\\frac{\\theta}{2}$.",
+  "answer": "(a) 300 m; $90.0$ m (b) $5\\text{ m s}^{-1}$; $1.50\\text{ m s}^{-1}$ (c) $127$ m (the diameter, $\\frac{400}{\\pi}$ m), first at $t = 40$ s (d) $t = 13.3$ s",
+  "solution": "Radius: $2\\pi r = 400 \\Rightarrow r = \\dfrac{200}{\\pi} = 63.66$ m.\n\n(a) Distance $= 5 \\times 60 = 300$ m, which is $\\frac{3}{4}$ of a lap. The angle turned through at the centre is $\\frac{3}{4} \\times 360^\\circ = 270^\\circ$, so the angle between OS and OP (Kofi's position) is $90^\\circ$.\n\nDisplacement is the straight line SP, the hypotenuse of a right-angled isosceles triangle with legs $r$:\n$$SP = r\\sqrt{2} = \\frac{200\\sqrt{2}}{\\pi} = 90.0\\text{ m (3 s.f.)}$$\n\n(b) Average speed $= \\dfrac{300}{60} = 5\\text{ m s}^{-1}$.\n$$|\\text{average velocity}| = \\frac{90.03}{60} = 1.50\\text{ m s}^{-1}$$\n\n(c) The longest chord through S is the diameter, $2r = \\dfrac{400}{\\pi} = 127$ m. Kofi is at the opposite end of that diameter after half a lap: $\\dfrac{200}{5} = 40$ s.\n\n(d) If the chord SP equals $r$, triangle OSP is equilateral, so angle SOP $= 60^\\circ$, i.e. $\\frac{1}{6}$ of a lap. Arc length $= \\frac{400}{6} = 66.67$ m, so\n$$t = \\frac{66.67}{5} = 13.3\\text{ s}$$\n\nThe difference between (a) and (b) illustrates that distance and speed are scalars measured along the path, while displacement and velocity depend only on start and end positions; after any whole number of laps his average velocity is zero.",
+  "linkedTopicIds": [
+   "geo-circles",
+   "geo-trig-right-angled"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 230\" width=\"300\" height=\"230\"><circle cx=\"150\" cy=\"120\" r=\"85\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"120\" r=\"2.5\" fill=\"currentColor\"/><text x=\"150\" y=\"138\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">O</text><circle cx=\"235\" cy=\"120\" r=\"3.5\" fill=\"currentColor\"/><text x=\"243\" y=\"125\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">S</text><path d=\"M248,106.2 A99,99 0 0 0 235.7,70.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\"/><line x1=\"238.7\" y1=\"75.7\" x2=\"239.2\" y2=\"76.6\" stroke=\"currentColor\" stroke-width=\"1.4\"/><path d=\"M235.7,70.5 L242,75 L236.5,78.1 z\" fill=\"currentColor\"/><text x=\"150\" y=\"25\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">circumference 400 m</text></svg>"
+ },
+ {
+  "id": "mech-modelling-units-q17",
+  "topicId": "mech-modelling-units",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "(a) Express the newton in terms of the SI base units kg, m and s.\n\n(b) The speed $v$ of waves in deep water is thought to depend only on the wavelength $\\lambda$ (in metres) and on $g$, through a formula of the form\n$$v = k\\lambda^{a}g^{b}$$\nwhere $k$ is a dimensionless constant (it has no units). By comparing the SI units of both sides, find the values of $a$ and $b$.\n\n(c) In fact $k = \\dfrac{1}{\\sqrt{2\\pi}}$. Find the speed of an ocean wave of wavelength 60 m, in $\\text{m s}^{-1}$ and in $\\text{km h}^{-1}$, to 3 significant figures.\n\n(d) Without further calculation, state the effect on the speed of the wave of multiplying its wavelength by 4.",
+  "hint": "Write the units of each side as a power of m times a power of s. The powers of m must match, and so must the powers of s.",
+  "answer": "(a) $1\\text{ N} = 1\\text{ kg m s}^{-2}$ (b) $a = \\frac{1}{2}$, $b = \\frac{1}{2}$ (c) $9.67\\text{ m s}^{-1}$, $34.8\\text{ km h}^{-1}$ (d) The speed doubles.",
+  "solution": "(a) From $F = ma$: force $=$ kg $\\times\\ \\text{m s}^{-2}$, so $1\\text{ N} = 1\\text{ kg m s}^{-2}$.\n\n(b) Units of the left-hand side: $\\text{m s}^{-1} = \\text{m}^1\\,\\text{s}^{-1}$.\n\nUnits of the right-hand side ($k$ has none):\n$$\\text{m}^{a} \\times (\\text{m s}^{-2})^{b} = \\text{m}^{a + b}\\,\\text{s}^{-2b}$$\nEquating powers (index laws):\n$$\\text{s}: \\; -2b = -1 \\Rightarrow b = \\tfrac{1}{2} \\qquad \\text{m}: \\; a + b = 1 \\Rightarrow a = \\tfrac{1}{2}$$\nSo $v = k\\sqrt{\\lambda g}$.\n\n(c)\n$$v = \\sqrt{\\frac{g\\lambda}{2\\pi}} = \\sqrt{\\frac{9.8 \\times 60}{2\\pi}} = \\sqrt{93.58\\ldots} = 9.67\\text{ m s}^{-1}\\text{ (3 s.f.)}$$\n$$9.6738\\ldots \\times 3.6 = 34.8\\text{ km h}^{-1}\\text{ (3 s.f.)}$$\n\n(d) $v \\propto \\sqrt{\\lambda}$, so multiplying $\\lambda$ by 4 multiplies $v$ by $\\sqrt{4} = 2$: the speed doubles.\n\nThis method (dimensional analysis) works because every valid equation in mechanics must have the same SI units on both sides.",
+  "linkedTopicIds": [
+   "num-index-laws",
+   "alg-simultaneous-linear"
+  ]
+ }
+]

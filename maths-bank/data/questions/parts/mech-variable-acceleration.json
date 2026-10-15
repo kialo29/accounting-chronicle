@@ -1,0 +1,305 @@
+[
+ {
+  "id": "mech-variable-acceleration-q01",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "A particle moves in a straight line. Its displacement from a fixed point O at time $t$ seconds is $s$ metres, where\n$$s = t^3 - 4t^2 + 5t, \\qquad t \\ge 0$$\nFind the velocity and the acceleration of the particle when $t = 2$.",
+  "hint": "Velocity is $\\dfrac{ds}{dt}$ and acceleration is $\\dfrac{dv}{dt}$.",
+  "answer": "$v = 1$ $\\text{m s}^{-1}$, $a = 4$ $\\text{m s}^{-2}$",
+  "solution": "Differentiate the displacement to get the velocity:\n$$v = \\frac{ds}{dt} = 3t^2 - 8t + 5$$\n\nAt $t = 2$: $v = 12 - 16 + 5 = 1$ $\\text{m s}^{-1}$.\n\nDifferentiate again to get the acceleration:\n$$a = \\frac{dv}{dt} = 6t - 8$$\n\nAt $t = 2$: $a = 12 - 8 = 4$ $\\text{m s}^{-2}$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q02",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle starts **from rest** and moves in a straight line with acceleration $a = 6t$ $\\text{m s}^{-2}$ at time $t$ seconds. Find its velocity when $t = 3$.",
+  "hint": "Integrate $a$ to get $v$, and use \"from rest\" to find the constant.",
+  "answer": "$27$ $\\text{m s}^{-1}$",
+  "solution": "$$v = \\int 6t\\,dt = 3t^2 + c$$\n\n\"From rest\" means $v = 0$ when $t = 0$, so $0 = 0 + c$ and $c = 0$.\n$$v = 3t^2 \\quad\\Rightarrow\\quad v(3) = 27\\text{ m s}^{-1}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q03",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with acceleration $a = 6t$ $\\text{m s}^{-2}$ at time $t$ seconds. When $t = 0$ its velocity is $4$ $\\text{m s}^{-1}$. Find its velocity when $t = 3$.",
+  "hint": "Same integral as before, but now the initial velocity is not zero. What does that do to the constant?",
+  "answer": "$31$ $\\text{m s}^{-1}$",
+  "solution": "$$v = \\int 6t\\,dt = 3t^2 + c$$\n\nWhen $t = 0$, $v = 4$: $4 = 0 + c$, so $c = 4$.\n$$v = 3t^2 + 4 \\quad\\Rightarrow\\quad v(3) = 27 + 4 = 31\\text{ m s}^{-1}$$\n\n**What changed:** the particle no longer starts from rest. The constant of integration is now the initial velocity, $4$, and every later velocity is $4$ $\\text{m s}^{-1}$ larger than before. Writing $v = 3t^2$ here would give the wrong answer $27$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q04",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with acceleration $a = 6t$ $\\text{m s}^{-2}$ at time $t$ seconds. When $t = 1$ its velocity is $4$ $\\text{m s}^{-1}$. Find its velocity when $t = 3$.",
+  "hint": "The condition is now given at $t = 1$, not $t = 0$. Substitute $t = 1$ into $v = 3t^2 + c$.",
+  "answer": "$28$ $\\text{m s}^{-1}$",
+  "solution": "$$v = 3t^2 + c$$\n\nWhen $t = 1$, $v = 4$: $4 = 3(1)^2 + c$, so $c = 1$.\n$$v = 3t^2 + 1 \\quad\\Rightarrow\\quad v(3) = 27 + 1 = 28\\text{ m s}^{-1}$$\n\n**What changed:** the known velocity is now at $t = 1$. The constant is no longer the starting velocity: the particle's velocity at $t = 0$ is actually $1$ $\\text{m s}^{-1}$. Always substitute the given time, not $t = 0$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q05",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A particle moves in a straight line with acceleration $a = 6t$ $\\text{m s}^{-2}$ at time $t$ seconds. When $t = 1$ its velocity is $4$ $\\text{m s}^{-1}$. Find its displacement between $t = 0$ and $t = 3$.",
+  "hint": "You found $v$ in the previous question. Displacement is $\\displaystyle\\int v\\,dt$ between the two times.",
+  "answer": "$30$ m",
+  "solution": "As before, $v = 3t^2 + 1$.\n\nDisplacement between $t = 0$ and $t = 3$:\n$$\\int_0^3 (3t^2 + 1)\\,dt = \\Big[t^3 + t\\Big]_0^3 = 27 + 3 = 30\\text{ m}$$\n\n**What changed:** we integrate a second time. Because $v = 3t^2 + 1 > 0$ for all $t$, the particle never changes direction, so the distance travelled is also $30$ m.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q06",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "A particle starts at O and moves in a straight line with velocity $v = 12t - 3t^2$ $\\text{m s}^{-1}$ at time $t$ seconds.\n\nJosh wants its displacement from O when $t = 4$. He writes:\n\n\"At $t = 0$, $u = 0$. At $t = 4$, $v = 48 - 48 = 0$. Using $s = \\frac{1}{2}(u + v)t = \\frac{1}{2}(0 + 0)(4) = 0$, the particle is back at O.\"\n\nIs Josh correct? Justify your answer and find the correct displacement.",
+  "hint": "Is the acceleration constant? Find $\\dfrac{dv}{dt}$.",
+  "answer": "No. The acceleration $a = 12 - 6t$ is not constant, so suvat is invalid. The displacement is $32$ m.",
+  "solution": "Josh is **not** correct.\n\nThe suvat formulae, including $s = \\frac{1}{2}(u + v)t$, only hold when the acceleration is constant. Here\n$$a = \\frac{dv}{dt} = 12 - 6t$$\nwhich changes with time (from $12$ $\\text{m s}^{-2}$ at $t = 0$ to $-12$ $\\text{m s}^{-2}$ at $t = 4$). So suvat cannot be used.\n\nIntegrate instead, with $s = 0$ at $t = 0$:\n$$s = \\int (12t - 3t^2)\\,dt = 6t^2 - t^3 + c, \\quad c = 0$$\n$$s(4) = 96 - 64 = 32\\text{ m}$$\n\nIn fact $v = 3t(4 - t) > 0$ for $0 < t < 4$, so the particle moves away from O the whole time: it cannot be back at O. It is $32$ m from O.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q07",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A particle moves in a straight line with acceleration $a = (4t - 3)$ $\\text{m s}^{-2}$. When $t = 0$ it is at O with velocity $5$ $\\text{m s}^{-1}$.\n\nLeah's working to find its velocity when $t = 2$ is shown below.\n\nLine 1: $v = \\int (4t - 3)\\,dt$\n\nLine 2: $v = 2t^2 - 3t$\n\nLine 3: When $t = 2$, $v = 8 - 6 = 2$ $\\text{m s}^{-1}$.\n\n(a) Identify the error in Leah's working and explain why it is wrong.\n\n(b) Find the correct velocity when $t = 2$.\n\n(c) Find the displacement of the particle from O when $t = 3$.",
+  "hint": "Every indefinite integral has a $+\\,c$. What information tells you its value?",
+  "answer": "(a) Line 2: the constant of integration is missing; it should be $v = 2t^2 - 3t + 5$ (b) $7$ $\\text{m s}^{-1}$ (c) $19.5$ m",
+  "solution": "**(a)** The error is in **Line 2**. Integrating gives $v = 2t^2 - 3t + c$; Leah has left out the constant (in effect assuming $c = 0$). The constant is fixed by the initial condition $v = 5$ when $t = 0$, so $c = 5$, not $0$. The constant is zero only when the initial velocity is zero.\n\n**(b)**\n$$v = 2t^2 - 3t + 5 \\quad\\Rightarrow\\quad v(2) = 8 - 6 + 5 = 7\\text{ m s}^{-1}$$\n\n**(c)** Integrate again; $s = 0$ when $t = 0$, so this constant is $0$:\n$$s = \\frac{2t^3}{3} - \\frac{3t^2}{2} + 5t$$\n$$s(3) = 18 - 13.5 + 15 = 19.5\\text{ m}$$",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q08",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A car joins a motorway from a slip road. At time $t = 0$ it is travelling at $14$ $\\text{m s}^{-1}$. For $0 \\le t \\le 10$ its acceleration is modelled by\n$$a = 2.4 - 0.24t \\ \\ \\text{m s}^{-2}$$\nAfter $t = 10$ the car travels at a constant speed.\n\n(a) Find the speed of the car when $t = 10$. Give your answer in $\\text{m s}^{-1}$ and in $\\text{km h}^{-1}$.\n\n(b) Explain why it is sensible for the model to switch to constant speed at $t = 10$.\n\n(c) Find the distance the car travels in the first 10 seconds.",
+  "hint": "Integrate $a$ to get $v$, using $v = 14$ when $t = 0$. To convert $\\text{m s}^{-1}$ to $\\text{km h}^{-1}$ multiply by $3.6$.",
+  "answer": "(a) $26$ $\\text{m s}^{-1}$ $= 93.6$ $\\text{km h}^{-1}$ (b) $a = 0$ at $t = 10$, so the speed is at its maximum and the acceleration has just fallen to zero; it would become negative after that. (c) $220$ m",
+  "solution": "**(a)**\n$$v = \\int (2.4 - 0.24t)\\,dt = 2.4t - 0.12t^2 + c$$\n$v = 14$ when $t = 0$, so $c = 14$ and $v = 14 + 2.4t - 0.12t^2$.\n$$v(10) = 14 + 24 - 12 = 26\\text{ m s}^{-1}$$\n$26 \\times 3.6 = 93.6$ $\\text{km h}^{-1}$ (about 58 mph, a sensible motorway speed).\n\n**(b)** At $t = 10$, $a = 2.4 - 2.4 = 0$. The acceleration falls steadily to zero at the moment the car reaches its cruising speed, so the velocity is at its maximum there. If the formula were used beyond $t = 10$, $a$ would become negative and the car would slow down for no reason, so switching to constant speed makes sense. (It also means there is no sudden jump in acceleration.)\n\n**(c)** Distance (the car never reverses, so this equals the displacement):\n$$\\int_0^{10} (14 + 2.4t - 0.12t^2)\\,dt = \\Big[14t + 1.2t^2 - 0.04t^3\\Big]_0^{10} = 140 + 120 - 40 = 220\\text{ m}$$",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q09",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle moves in a straight line with velocity $v = t^2 - 5t + 4$ $\\text{m s}^{-1}$ at time $t$ seconds. Its velocity–time graph for $0 \\le t \\le 5$ is shown.\n\nKemi is asked for the **total distance** travelled in the first 5 seconds. She writes:\n$$\\int_0^5 (t^2 - 5t + 4)\\,dt = \\left[\\frac{t^3}{3} - \\frac{5t^2}{2} + 4t\\right]_0^5 = -\\frac{5}{6}$$\n\"Distance cannot be negative, so the distance travelled is $\\frac{5}{6}$ m.\"\n\n(a) Explain the mistake in Kemi's method.\n\n(b) Find the correct total distance travelled.",
+  "hint": "Where is $v = 0$? The particle changes direction there, and the integral adds areas below the axis as negatives.",
+  "answer": "(a) The integral gives the displacement; the particle changes direction at $t = 1$ and $t = 4$, so the negative area cancels positive area. (b) $\\dfrac{49}{6}$ m $\\approx 8.17$ m",
+  "solution": "**(a)** $\\int_0^5 v\\,dt$ is the **displacement**, not the distance. $v = (t - 1)(t - 4)$, so the particle is at rest and changes direction at $t = 1$ and $t = 4$. Between $t = 1$ and $t = 4$ the velocity is negative, and that region (below the axis on the graph) counts as negative in the integral, cancelling most of the motion. Taking the modulus of the final answer does not undo this cancellation.\n\n**(b)** Let $s(t) = \\dfrac{t^3}{3} - \\dfrac{5t^2}{2} + 4t$ (with $s(0) = 0$).\n$$s(1) = \\frac{1}{3} - \\frac{5}{2} + 4 = \\frac{11}{6}, \\qquad s(4) = \\frac{64}{3} - 40 + 16 = -\\frac{8}{3}, \\qquad s(5) = -\\frac{5}{6}$$\n\nSplit the interval at $t = 1$ and $t = 4$:\n* $0 \\le t \\le 1$: $\\left|\\frac{11}{6} - 0\\right| = \\frac{11}{6}$\n* $1 \\le t \\le 4$: $\\left|-\\frac{8}{3} - \\frac{11}{6}\\right| = \\frac{27}{6}$\n* $4 \\le t \\le 5$: $\\left|-\\frac{5}{6} + \\frac{8}{3}\\right| = \\frac{11}{6}$\n\n$$\\text{Distance} = \\frac{11 + 27 + 11}{6} = \\frac{49}{6}\\text{ m} \\approx 8.17\\text{ m}$$",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><path d=\"M 40 136.2 L 40 51.2 L 40.4 52.1 L 40.8 53 L 41.2 53.9 L 41.7 54.8 L 42.1 55.6 L 42.5 56.5 L 42.9 57.4 L 43.3 58.2 L 43.8 59.1 L 44.2 60 L 44.6 60.8 L 45 61.7 L 45.4 62.5 L 45.8 63.4 L 46.2 64.2 L 46.7 65 L 47.1 65.9 L 47.5 66.7 L 47.9 67.5 L 48.3 68.4 L 48.8 69.2 L 49.2 70 L 49.6 70.8 L 50 71.7 L 50.4 72.5 L 50.8 73.3 L 51.2 74.1 L 51.7 74.9 L 52.1 75.7 L 52.5 76.5 L 52.9 77.3 L 53.3 78.1 L 53.8 78.9 L 54.2 79.6 L 54.6 80.4 L 55 81.2 L 55.4 82 L 55.8 82.8 L 56.2 83.5 L 56.7 84.3 L 57.1 85.1 L 57.5 85.8 L 57.9 86.6 L 58.3 87.4 L 58.8 88.1 L 59.2 88.9 L 59.6 89.6 L 60 90.3 L 60.4 91.1 L 60.8 91.8 L 61.2 92.6 L 61.7 93.3 L 62.1 94 L 62.5 94.8 L 62.9 95.5 L 63.3 96.2 L 63.8 96.9 L 64.2 97.6 L 64.6 98.4 L 65 99.1 L 65.4 99.8 L 65.8 100.5 L 66.2 101.2 L 66.7 101.9 L 67.1 102.6 L 67.5 103.3 L 67.9 103.9 L 68.3 104.6 L 68.8 105.3 L 69.2 106 L 69.6 106.7 L 70 107.4 L 70.4 108 L 70.8 108.7 L 71.2 109.4 L 71.7 110 L 72.1 110.7 L 72.5 111.3 L 72.9 112 L 73.3 112.6 L 73.8 113.3 L 74.2 113.9 L 74.6 114.6 L 75 115.2 L 75.4 115.8 L 75.8 116.5 L 76.2 117.1 L 76.7 117.7 L 77.1 118.4 L 77.5 119 L 77.9 119.6 L 78.3 120.2 L 78.8 120.8 L 79.2 121.4 L 79.6 122 L 80 122.6 L 80.4 123.3 L 80.8 123.8 L 81.2 124.4 L 81.7 125 L 82.1 125.6 L 82.5 126.2 L 82.9 126.8 L 83.3 127.4 L 83.8 127.9 L 84.2 128.5 L 84.6 129.1 L 85 129.7 L 85.4 130.2 L 85.8 130.8 L 86.2 131.3 L 86.7 131.9 L 87.1 132.5 L 87.5 133 L 87.9 133.6 L 88.3 134.1 L 88.8 134.6 L 89.2 135.2 L 89.6 135.7 L 90 136.2 L 90 136.2 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M 90 136.2 L 90 136.2 L 91.2 137.8 L 92.5 139.4 L 93.8 140.9 L 95 142.4 L 96.2 143.9 L 97.5 145.3 L 98.8 146.8 L 100 148.2 L 101.2 149.5 L 102.5 150.9 L 103.8 152.2 L 105 153.5 L 106.2 154.7 L 107.5 156 L 108.7 157.2 L 110 158.3 L 111.2 159.5 L 112.5 160.6 L 113.8 161.7 L 115 162.8 L 116.2 163.9 L 117.5 164.9 L 118.7 165.9 L 120 166.8 L 121.2 167.8 L 122.5 168.7 L 123.8 169.6 L 125 170.5 L 126.2 171.3 L 127.5 172.1 L 128.8 172.9 L 130 173.7 L 131.2 174.4 L 132.5 175.1 L 133.8 175.8 L 135 176.4 L 136.2 177 L 137.5 177.6 L 138.8 178.2 L 140 178.8 L 141.2 179.3 L 142.5 179.8 L 143.8 180.2 L 145 180.7 L 146.2 181.1 L 147.5 181.5 L 148.8 181.8 L 150 182.1 L 151.2 182.5 L 152.5 182.7 L 153.8 183 L 155 183.2 L 156.2 183.4 L 157.5 183.6 L 158.8 183.7 L 160 183.8 L 161.2 183.9 L 162.5 184 L 163.8 184 L 165 184.1 L 166.2 184 L 167.5 184 L 168.8 183.9 L 170 183.8 L 171.2 183.7 L 172.5 183.6 L 173.7 183.4 L 175 183.2 L 176.2 183 L 177.5 182.7 L 178.8 182.5 L 180 182.2 L 181.2 181.8 L 182.5 181.5 L 183.7 181.1 L 185 180.7 L 186.2 180.2 L 187.5 179.8 L 188.8 179.3 L 190 178.8 L 191.2 178.2 L 192.5 177.6 L 193.8 177 L 195 176.4 L 196.2 175.8 L 197.5 175.1 L 198.7 174.4 L 200 173.6 L 201.2 172.9 L 202.5 172.1 L 203.7 171.3 L 205 170.5 L 206.2 169.6 L 207.5 168.7 L 208.8 167.8 L 210 166.9 L 211.2 165.9 L 212.5 164.9 L 213.8 163.9 L 215 162.8 L 216.2 161.7 L 217.5 160.6 L 218.7 159.5 L 220 158.3 L 221.2 157.2 L 222.5 156 L 223.7 154.7 L 225 153.5 L 226.2 152.2 L 227.5 150.9 L 228.7 149.5 L 230 148.2 L 231.2 146.8 L 232.5 145.3 L 233.8 143.9 L 235 142.4 L 236.2 140.9 L 237.5 139.4 L 238.7 137.8 L 240 136.2 L 240 136.2 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><path d=\"M 240 136.2 L 240 136.2 L 240.4 135.7 L 240.8 135.2 L 241.2 134.6 L 241.7 134.1 L 242.1 133.6 L 242.5 133 L 242.9 132.5 L 243.3 131.9 L 243.8 131.3 L 244.2 130.8 L 244.6 130.2 L 245 129.7 L 245.4 129.1 L 245.8 128.5 L 246.2 127.9 L 246.7 127.4 L 247.1 126.8 L 247.5 126.2 L 247.9 125.6 L 248.3 125 L 248.7 124.4 L 249.2 123.8 L 249.6 123.3 L 250 122.6 L 250.4 122 L 250.8 121.4 L 251.2 120.8 L 251.7 120.2 L 252.1 119.6 L 252.5 119 L 252.9 118.4 L 253.3 117.7 L 253.8 117.1 L 254.2 116.5 L 254.6 115.8 L 255 115.2 L 255.4 114.6 L 255.8 113.9 L 256.2 113.3 L 256.7 112.6 L 257.1 112 L 257.5 111.3 L 257.9 110.7 L 258.3 110 L 258.8 109.4 L 259.2 108.7 L 259.6 108 L 260 107.3 L 260.4 106.7 L 260.8 106 L 261.2 105.3 L 261.7 104.6 L 262.1 103.9 L 262.5 103.3 L 262.9 102.6 L 263.3 101.9 L 263.8 101.2 L 264.2 100.5 L 264.6 99.8 L 265 99.1 L 265.4 98.4 L 265.8 97.6 L 266.2 96.9 L 266.7 96.2 L 267.1 95.5 L 267.5 94.8 L 267.9 94 L 268.3 93.3 L 268.8 92.6 L 269.2 91.8 L 269.6 91.1 L 270 90.4 L 270.4 89.6 L 270.8 88.9 L 271.2 88.1 L 271.7 87.4 L 272.1 86.6 L 272.5 85.8 L 272.9 85.1 L 273.3 84.3 L 273.8 83.5 L 274.2 82.8 L 274.6 82 L 275 81.2 L 275.4 80.4 L 275.8 79.6 L 276.2 78.9 L 276.7 78.1 L 277.1 77.3 L 277.5 76.5 L 277.9 75.7 L 278.3 74.9 L 278.8 74.1 L 279.2 73.3 L 279.6 72.5 L 280 71.7 L 280.4 70.8 L 280.8 70 L 281.2 69.2 L 281.7 68.4 L 282.1 67.5 L 282.5 66.7 L 282.9 65.9 L 283.3 65 L 283.8 64.2 L 284.2 63.4 L 284.6 62.5 L 285 61.7 L 285.4 60.8 L 285.8 60 L 286.2 59.1 L 286.7 58.2 L 287.1 57.4 L 287.5 56.5 L 287.9 55.6 L 288.3 54.8 L 288.8 53.9 L 289.2 53 L 289.6 52.1 L 290 51.2 L 290 136.2 Z\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"none\"/><line x1=\"40\" y1=\"136.2\" x2=\"314\" y2=\"136.2\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"322,136.2 314,140.2 314,132.2\" fill=\"currentColor\"/><line x1=\"40\" y1=\"204\" x2=\"40\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"40,18 44,26 36,26\" fill=\"currentColor\"/><text x=\"320\" y=\"154.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">t (s)</text><text x=\"46\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">v (m s⁻¹)</text><polyline points=\"40,51.2 41.2,53.9 42.5,56.5 43.8,59.1 45,61.7 46.2,64.2 47.5,66.7 48.8,69.2 50,71.7 51.2,74.1 52.5,76.5 53.8,78.9 55,81.2 56.2,83.5 57.5,85.8 58.8,88.1 60,90.3 61.2,92.6 62.5,94.8 63.8,96.9 65,99.1 66.2,101.2 67.5,103.3 68.8,105.3 70,107.4 71.2,109.4 72.5,111.3 73.8,113.3 75,115.2 76.2,117.1 77.5,119 78.8,120.8 80,122.6 81.2,124.4 82.5,126.2 83.8,127.9 85,129.7 86.2,131.3 87.5,133 88.8,134.6 90,136.2 91.2,137.8 92.5,139.4 93.8,140.9 95,142.4 96.2,143.9 97.5,145.3 98.8,146.8 100,148.2 101.2,149.5 102.5,150.9 103.8,152.2 105,153.5 106.2,154.7 107.5,156 108.7,157.2 110,158.3 111.2,159.5 112.5,160.6 113.8,161.7 115,162.8 116.2,163.9 117.5,164.9 118.7,165.9 120,166.8 121.2,167.8 122.5,168.7 123.8,169.6 125,170.5 126.2,171.3 127.5,172.1 128.8,172.9 130,173.7 131.2,174.4 132.5,175.1 133.8,175.8 135,176.4 136.2,177 137.5,177.6 138.8,178.2 140,178.8 141.2,179.3 142.5,179.8 143.8,180.2 145,180.7 146.2,181.1 147.5,181.5 148.8,181.8 150,182.1 151.2,182.5 152.5,182.7 153.8,183 155,183.2 156.2,183.4 157.5,183.6 158.8,183.7 160,183.8 161.2,183.9 162.5,184 163.8,184 165,184.1 166.2,184 167.5,184 168.8,183.9 170,183.8 171.2,183.7 172.5,183.6 173.7,183.4 175,183.2 176.2,183 177.5,182.7 178.8,182.5 180,182.2 181.2,181.8 182.5,181.5 183.7,181.1 185,180.7 186.2,180.2 187.5,179.8 188.8,179.3 190,178.8 191.2,178.2 192.5,177.6 193.8,177 195,176.4 196.2,175.8 197.5,175.1 198.7,174.4 200,173.6 201.2,172.9 202.5,172.1 203.7,171.3 205,170.5 206.2,169.6 207.5,168.7 208.8,167.8 210,166.9 211.2,165.9 212.5,164.9 213.8,163.9 215,162.8 216.2,161.7 217.5,160.6 218.7,159.5 220,158.3 221.2,157.2 222.5,156 223.7,154.7 225,153.5 226.2,152.2 227.5,150.9 228.7,149.5 230,148.2 231.2,146.8 232.5,145.3 233.8,143.9 235,142.4 236.2,140.9 237.5,139.4 238.7,137.8 240,136.2 241.2,134.6 242.5,133 243.8,131.3 245,129.7 246.2,127.9 247.5,126.2 248.7,124.4 250,122.6 251.2,120.8 252.5,119 253.8,117.1 255,115.2 256.2,113.3 257.5,111.3 258.8,109.4 260,107.3 261.2,105.3 262.5,103.3 263.8,101.2 265,99.1 266.2,96.9 267.5,94.8 268.8,92.6 270,90.4 271.2,88.1 272.5,85.8 273.8,83.5 275,81.2 276.2,78.9 277.5,76.5 278.8,74.1 280,71.7 281.2,69.2 282.5,66.7 283.8,64.2 285,61.7 286.2,59.1 287.5,56.5 288.8,53.9 290,51.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"90\" y1=\"133.2\" x2=\"90\" y2=\"139.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"90\" y=\"152.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"140\" y1=\"133.2\" x2=\"140\" y2=\"139.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"140\" y=\"130.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"190\" y1=\"133.2\" x2=\"190\" y2=\"139.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"190\" y=\"130.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"290\" y1=\"133.2\" x2=\"290\" y2=\"139.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"290\" y=\"152.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"240\" y1=\"133.2\" x2=\"240\" y2=\"139.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"231\" y=\"130.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"37\" y1=\"51.2\" x2=\"43\" y2=\"51.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"34\" y=\"55.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"37\" y1=\"178.8\" x2=\"43\" y2=\"178.8\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"34\" y=\"182.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text></svg>",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q10",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A particle moves along the $x$-axis. Its position at time $t$ seconds is $x = t^3 - 9t^2 + 24t$ metres, $t \\ge 0$.\n\nMarcus is asked whether the particle is speeding up or slowing down at $t = 2.5$. He writes:\n\n\"$v = 3t^2 - 18t + 24$ and $a = 6t - 18$. At $t = 2.5$, $a = 15 - 18 = -3$. The acceleration is negative, so the particle is slowing down.\"\n\n(a) Explain the error in Marcus's reasoning and give the correct conclusion.\n\n(b) Find the intervals of time for which the particle is speeding up.",
+  "hint": "Speed is $|v|$. Compare the signs of $v$ **and** $a$.",
+  "answer": "(a) He used only the sign of $a$. At $t = 2.5$, $v = -2.25$ and $a = -3$ have the same sign, so the particle is speeding up. (b) $2 < t < 3$ and $t > 4$",
+  "solution": "**(a)** A negative acceleration does not mean \"slowing down\": it means the velocity is decreasing. Speed is $|v|$, so we must compare the signs of $v$ and $a$.\n\nAt $t = 2.5$: $v = 3(6.25) - 45 + 24 = -2.25$ $\\text{m s}^{-1}$ and $a = -3$ $\\text{m s}^{-2}$.\n\nBoth are negative: the particle is moving in the negative direction and the acceleration is also in the negative direction, so the particle is **speeding up** (its speed is increasing).\n\n**(b)** $v = 3(t^2 - 6t + 8) = 3(t - 2)(t - 4)$ and $a = 6(t - 3)$.\n\n| interval | sign of $v$ | sign of $a$ | motion |\n|---|---|---|---|\n| $0 \\le t < 2$ | $+$ | $-$ | slowing down |\n| $2 < t < 3$ | $-$ | $-$ | speeding up |\n| $3 < t < 4$ | $-$ | $+$ | slowing down |\n| $t > 4$ | $+$ | $+$ | speeding up |\n\nThe particle is speeding up for $2 < t < 3$ and for $t > 4$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q11",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "A particle moves in a straight line with velocity $v = t^2 - 4t + 7$ $\\text{m s}^{-1}$ at time $t$ seconds, $t \\ge 0$.\n\n(a) By completing the square, prove that the particle is never at rest, and state its minimum speed.\n\n(b) Explain why the total distance travelled by the particle in the first 6 seconds is equal to the magnitude of its displacement over that time, and find this distance.",
+  "hint": "$t^2 - 4t + 7 = (t - 2)^2 + \\ldots$",
+  "answer": "(a) $v = (t - 2)^2 + 3 \\ge 3 > 0$; minimum speed $3$ $\\text{m s}^{-1}$ (at $t = 2$) (b) $v > 0$ always, so it never changes direction; distance $= 42$ m",
+  "solution": "**(a)**\n$$v = t^2 - 4t + 7 = (t - 2)^2 - 4 + 7 = (t - 2)^2 + 3$$\nSince $(t - 2)^2 \\ge 0$ for all $t$, $v \\ge 3 > 0$. So $v$ is never $0$: the particle is never at rest. The minimum speed is $3$ $\\text{m s}^{-1}$, when $t = 2$.\n\n**(b)** Because $v > 0$ throughout, the particle always moves in the positive direction and never turns back. There are no parts of the motion that cancel, so the distance travelled equals the displacement.\n$$\\int_0^6 (t^2 - 4t + 7)\\,dt = \\left[\\frac{t^3}{3} - 2t^2 + 7t\\right]_0^6 = 72 - 72 + 42 = 42\\text{ m}$$",
+  "linkedTopicIds": [
+   "alg-completing-the-square"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration-q12",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "question": "A particle P moves along a straight line. At time $t$ seconds, $t \\ge 0$, the velocity of P is $v$ $\\text{m s}^{-1}$, where\n$$v = 8t - 2t^2$$\nWhen $t = 0$, P is at the point O on the line.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the maximum velocity of P.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the value of $t$, $t > 0$, at which P is instantaneously at rest.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Show that P returns to O when $t = 6$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the total distance travelled by P in the interval $0 \\le t \\le 6$.",
+    "marks": 3
+   }
+  ],
+  "marks": 11,
+  "hint": "Maximum velocity when $\\dfrac{dv}{dt} = 0$. For (d), P turns round when it is at rest.",
+  "answer": "(a) $8$ $\\text{m s}^{-1}$ (b) $t = 4$ (c) $s = 4t^2 - \\frac{2}{3}t^3 = 0$ at $t = 6$ (d) $\\dfrac{128}{3}$ m $\\approx 42.7$ m",
+  "solution": "**(a)** $a = \\dfrac{dv}{dt} = 8 - 4t$ — M1 (differentiates)\n\n$8 - 4t = 0 \\Rightarrow t = 2$ — M1 (sets $a = 0$)\n\n$v = 16 - 8 = 8$ $\\text{m s}^{-1}$ — A1\n\n**(b)** $8t - 2t^2 = 0 \\Rightarrow 2t(4 - t) = 0$ — M1\n\n$t = 4$ — A1\n\n**(c)** $s = \\displaystyle\\int (8t - 2t^2)\\,dt = 4t^2 - \\frac{2}{3}t^3 + c$ — M1 (integrates, powers increased)\n\n$s = 0$ when $t = 0$, so $c = 0$ — B1\n\n$s(6) = 4(36) - \\frac{2}{3}(216) = 144 - 144 = 0$, so P is at O when $t = 6$ — A1 (cso)\n\n**(d)** P changes direction at $t = 4$: — M1 (splits at $t = 4$)\n\n$s(4) = 64 - \\frac{128}{3} = \\frac{64}{3}$ — A1\n\nP travels $\\frac{64}{3}$ m out and $\\frac{64}{3}$ m back, so the distance is $\\dfrac{128}{3}$ m $\\approx 42.7$ m — A1\n\n(Note: $\\int_0^6 v\\,dt = 0$ is the displacement and scores no marks in (d).)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q13",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "A particle moves along a straight line, starting from rest at O when $t = 0$. At time $t$ seconds its velocity, $v$ $\\text{m s}^{-1}$, is given by\n$$v = \\begin{cases} 3t^2, & 0 \\le t \\le 2 \\\\[4pt] 16 - \\dfrac{16}{t^2}, & t > 2 \\end{cases}$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the velocity is continuous at $t = 2$, and find the magnitude of the acceleration just before and just after $t = 2$.",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Find the distance of the particle from O when $t = 4$.",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Explain why the speed of the particle never reaches $16$ $\\text{m s}^{-1}$.",
+    "marks": 2
+   }
+  ],
+  "marks": 10,
+  "hint": "Treat the two time intervals separately; for $t > 2$ write $\\dfrac{16}{t^2} = 16t^{-2}$ before integrating.",
+  "answer": "(a) Both expressions give $12$ $\\text{m s}^{-1}$ at $t = 2$; $a = 12$ $\\text{m s}^{-2}$ just before and $4$ $\\text{m s}^{-2}$ just after (b) $36$ m (c) $\\frac{16}{t^2} > 0$, so $v < 16$ for all $t$ ($v \\to 16$ as $t \\to \\infty$)",
+  "solution": "**(a)** At $t = 2$: $3(2)^2 = 12$ and $16 - \\frac{16}{4} = 12$, equal, so $v$ is continuous. — B1\n\nJust before: $a = 6t = 12$ $\\text{m s}^{-2}$. Just after: $a = \\dfrac{d}{dt}(16 - 16t^{-2}) = 32t^{-3} = \\dfrac{32}{8} = 4$ $\\text{m s}^{-2}$. — M1 A1\n\n**(b)** First stage: $\\displaystyle\\int_0^2 3t^2\\,dt = \\Big[t^3\\Big]_0^2 = 8$ m — M1 A1\n\nSecond stage: $\\displaystyle\\int_2^4 \\left(16 - 16t^{-2}\\right)dt = \\left[16t + \\frac{16}{t}\\right]_2^4$ — M1 (integrates $t^{-2}$ correctly)\n\n$= (64 + 4) - (32 + 8) = 28$ m — A1\n\n$v > 0$ throughout, so the particle never turns back: distance from O $= 8 + 28 = 36$ m — A1\n\n**(c)** For $t > 2$, $\\dfrac{16}{t^2} > 0$, so $v = 16 - \\dfrac{16}{t^2} < 16$. — M1\n\nFor $t \\le 2$, $v \\le 12$. So the speed is always less than $16$ $\\text{m s}^{-1}$; it approaches $16$ as $t \\to \\infty$ but never reaches it. — A1",
+  "linkedTopicIds": [
+   "calc-integration-basics"
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration-q14",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A particle starts at O and moves in a straight line. At time $t$ seconds its velocity is\n$$v = 3t^2 - 2pt + q \\ \\ \\text{m s}^{-1}$$\nwhere $p$ and $q$ are constants. The particle is instantaneously at rest when $t = 1$ and it returns to O when $t = 4$.\n\n(a) Find $p$ and $q$.\n\n(b) Find the total distance travelled by the particle in the first 4 seconds, giving your answer as an exact fraction.",
+  "hint": "Write down $s$ in terms of $p$ and $q$. You then have two conditions: $v(1) = 0$ and $s(4) = 0$.",
+  "answer": "(a) $p = \\frac{13}{2}$, $q = 10$ (b) $\\dfrac{343}{27}$ m $\\approx 12.7$ m",
+  "solution": "**(a)** $s = \\displaystyle\\int v\\,dt = t^3 - pt^2 + qt$ (constant $0$, since $s = 0$ at $t = 0$).\n\n$v(1) = 0$: $3 - 2p + q = 0$ … (1)\n\n$s(4) = 0$: $64 - 16p + 4q = 0 \\Rightarrow 16 - 4p + q = 0$ … (2)\n\n(2) − (1): $13 - 2p = 0$, so $p = \\frac{13}{2}$, and then $q = 2p - 3 = 10$.\n\n**(b)** $v = 3t^2 - 13t + 10 = (t - 1)(3t - 10)$, so the particle is at rest at $t = 1$ and $t = \\frac{10}{3}$, both inside $[0, 4]$.\n\n$s = t^3 - \\frac{13}{2}t^2 + 10t$:\n$$s(1) = 1 - \\tfrac{13}{2} + 10 = \\tfrac{9}{2}$$\n$$s\\!\\left(\\tfrac{10}{3}\\right) = \\tfrac{1000}{27} - \\tfrac{650}{9} + \\tfrac{100}{3} = \\tfrac{1000 - 1950 + 900}{27} = -\\tfrac{50}{27}$$\n$$s(4) = 0$$\n\nDistance:\n$$\\tfrac{9}{2} + \\left(\\tfrac{9}{2} + \\tfrac{50}{27}\\right) + \\tfrac{50}{27} = 9 + \\tfrac{100}{27} = \\tfrac{343}{27}\\text{ m} \\approx 12.7\\text{ m}$$\n\nThe particle goes $4.5$ m out, back through O to $\\frac{50}{27}$ m on the other side, then returns to O.",
+  "linkedTopicIds": [
+   "alg-simultaneous-linear"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration-q15",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "A particle moves in a straight line with velocity\n$$v = t^3 - 6t^2 + 11t - 6 \\ \\ \\text{m s}^{-1}, \\qquad t \\ge 0$$\nIt starts at the point O.\n\n(a) Use the factor theorem to show that $(t - 1)$ is a factor of $v$, and hence find all the times at which the particle is at rest.\n\n(b) Find the total distance travelled by the particle in the interval $0 \\le t \\le 3$.\n\n(c) Find the displacement from O when $t = 3$ and explain why it differs from your answer to (b).",
+  "hint": "Evaluate $v$ at $t = 1$. After dividing by $(t - 1)$, factorise the quadratic.",
+  "answer": "(a) $v(1) = 0$; $v = (t - 1)(t - 2)(t - 3)$; at rest at $t = 1, 2, 3$ (b) $\\dfrac{11}{4}$ m (c) $-\\dfrac{9}{4}$ m; the particle changes direction twice, so some of the motion cancels",
+  "solution": "**(a)** $v(1) = 1 - 6 + 11 - 6 = 0$, so by the factor theorem $(t - 1)$ is a factor.\n\nDividing: $t^3 - 6t^2 + 11t - 6 = (t - 1)(t^2 - 5t + 6) = (t - 1)(t - 2)(t - 3)$.\n\nThe particle is at rest when $t = 1$, $t = 2$ and $t = 3$.\n\n**(b)** $s = \\dfrac{t^4}{4} - 2t^3 + \\dfrac{11t^2}{2} - 6t$ (with $s(0) = 0$).\n$$s(1) = \\tfrac{1}{4} - 2 + \\tfrac{11}{2} - 6 = -\\tfrac{9}{4}$$\n$$s(2) = 4 - 16 + 22 - 12 = -2$$\n$$s(3) = \\tfrac{81}{4} - 54 + \\tfrac{99}{2} - 18 = -\\tfrac{9}{4}$$\n\nDistances on each piece: $\\frac{9}{4}$, then $\\left|-2 + \\frac{9}{4}\\right| = \\frac{1}{4}$, then $\\left|-\\frac{9}{4} + 2\\right| = \\frac{1}{4}$.\n$$\\text{Total distance} = \\tfrac{9}{4} + \\tfrac{1}{4} + \\tfrac{1}{4} = \\tfrac{11}{4}\\text{ m}$$\n\n**(c)** Displacement $= s(3) = -\\frac{9}{4}$ m, i.e. $2.25$ m on the negative side of O. The particle moves in the negative direction, turns at $t = 1$, moves $\\frac{1}{4}$ m back, turns again at $t = 2$ and returns $\\frac{1}{4}$ m. The displacement counts the back-and-forth movements with opposite signs, so they cancel; the distance adds them.",
+  "linkedTopicIds": [
+   "pure-polynomials-factor-theorem"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration-q16",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A particle starts at O and moves in a straight line with velocity\n$$v = t^2 - 4t + 3 \\ \\ \\text{m s}^{-1}, \\qquad t \\ge 0$$\nFind **all** the values of $T > 0$ for which the total distance travelled in the interval $0 \\le t \\le T$ is exactly three times the magnitude of the displacement from O at time $T$.",
+  "hint": "The particle changes direction at $t = 1$ and $t = 3$. The formula for the distance travelled is different in each of the intervals $0 < T \\le 1$, $1 < T \\le 3$ and $T > 3$: write it in terms of $s(T)$ in each case.",
+  "answer": "$T = 2$ and $T = 4$",
+  "solution": "$v = (t - 1)(t - 3)$ and $s(t) = \\dfrac{t^3}{3} - 2t^2 + 3t = \\dfrac{t(t - 3)^2}{3}$, so $s(t) \\ge 0$ for all $t \\ge 0$.\n\nKey values: $s(1) = \\frac{4}{3}$, $s(3) = 0$. Let $D(T)$ be the distance travelled.\n\n**Case 1: $0 < T \\le 1$.** No change of direction, so $D = s(T)$. $D = 3s$ needs $s(T) = 0$, impossible for $0 < T \\le 1$.\n\n**Case 2: $1 < T \\le 3$.** Out $\\frac{4}{3}$ m, then back: $D = \\frac{4}{3} + \\left(\\frac{4}{3} - s(T)\\right) = \\frac{8}{3} - s(T)$.\n$$\\tfrac{8}{3} - s = 3s \\Rightarrow s(T) = \\tfrac{2}{3} \\Rightarrow T(T - 3)^2 = 2 \\Rightarrow T^3 - 6T^2 + 9T - 2 = 0$$\n$T = 2$ is a root: $(T - 2)(T^2 - 4T + 1) = 0$, so $T = 2$ or $T = 2 \\pm \\sqrt{3}$. Only $T = 2$ lies in $(1, 3]$ ($2 + \\sqrt{3} \\approx 3.73$, $2 - \\sqrt{3} \\approx 0.27$).\n\n**Case 3: $T > 3$.** The particle is back at O at $t = 3$ (distance so far $\\frac{8}{3}$) and then moves out again: $D = \\frac{8}{3} + s(T)$.\n$$\\tfrac{8}{3} + s = 3s \\Rightarrow s(T) = \\tfrac{4}{3} \\Rightarrow T(T - 3)^2 = 4 \\Rightarrow T^3 - 6T^2 + 9T - 4 = 0$$\n$(T - 4)(T - 1)^2 = 0$. The root $T = 1$ is not in this case, so $T = 4$.\n\n**Check:** $T = 2$: $s = \\frac{2}{3}$, $D = \\frac{4}{3} + \\frac{2}{3} = 2 = 3 \\times \\frac{2}{3}$ ✓. $T = 4$: $s = \\frac{4}{3}$, $D = \\frac{8}{3} + \\frac{4}{3} = 4 = 3 \\times \\frac{4}{3}$ ✓.\n\nSo $T = 2$ or $T = 4$. (Note that using $D = \\int_0^T v\\,dt$ throughout would miss both.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "mech-variable-acceleration-q17",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A sprinter's velocity during a 100 m race is modelled by\n$$v = 11\\left(1 - e^{-0.9t}\\right) \\ \\ \\text{m s}^{-1}$$\nwhere $t$ is the time in seconds after the start.\n\n(a) Find her acceleration at the start, and the time at which she reaches $95\\%$ of her limiting speed of $11$ $\\text{m s}^{-1}$.\n\n(b) Show that the distance she has run after $t$ seconds is $s = 11t - \\dfrac{110}{9}\\left(1 - e^{-0.9t}\\right)$.\n\n(c) Show that she has not finished the race after 10 seconds.\n\n(d) Use the iteration $t_{n+1} = \\dfrac{1}{11}\\left(100 + \\dfrac{110}{9}\\left(1 - e^{-0.9t_n}\\right)\\right)$ with $t_0 = 10$ to find her finishing time to 2 decimal places, and justify that the iteration formula is correct.",
+  "hint": "Differentiate $e^{-0.9t}$ to get $-0.9e^{-0.9t}$, and integrate it to get $-\\dfrac{1}{0.9}e^{-0.9t}$. Remember the constant in (b): $s = 0$ at $t = 0$.",
+  "answer": "(a) $9.9$ $\\text{m s}^{-2}$; $t = \\frac{\\ln 20}{0.9} \\approx 3.33$ s (b) shown (c) $s(10) \\approx 97.8$ m $< 100$ m (d) $10.20$ s",
+  "solution": "**(a)** $a = \\dfrac{dv}{dt} = 11 \\times 0.9e^{-0.9t} = 9.9e^{-0.9t}$. At $t = 0$: $a = 9.9$ $\\text{m s}^{-2}$.\n\n$95\\%$ of $11$: $1 - e^{-0.9t} = 0.95 \\Rightarrow e^{-0.9t} = 0.05 \\Rightarrow t = \\dfrac{\\ln 20}{0.9} \\approx 3.33$ s.\n\n**(b)** $$s = \\int 11\\left(1 - e^{-0.9t}\\right)dt = 11t + \\frac{11}{0.9}e^{-0.9t} + c = 11t + \\frac{110}{9}e^{-0.9t} + c$$\n$s = 0$ when $t = 0$: $0 = \\frac{110}{9} + c$, so $c = -\\frac{110}{9}$. Hence\n$$s = 11t - \\frac{110}{9}\\left(1 - e^{-0.9t}\\right)$$\n(Note the constant is **not** zero even though she starts at the line.)\n\n**(c)** $s(10) = 110 - \\frac{110}{9}\\left(1 - e^{-9}\\right) = 110 - 12.2207\\ldots = 97.78$ m $< 100$ m. Since $v > 0$, $s$ is increasing, so she has not yet reached 100 m.\n\n**(d)** She finishes when $s = 100$: $11t - \\frac{110}{9}\\left(1 - e^{-0.9t}\\right) = 100$, which rearranges to $t = \\frac{1}{11}\\left(100 + \\frac{110}{9}\\left(1 - e^{-0.9t}\\right)\\right)$, the given iteration.\n\n$t_1 = 10.20188\\ldots$, $t_2 = 10.20190\\ldots$, $t_3 = 10.20190\\ldots$\n\nFinishing time $\\approx 10.20$ s. (Check: $s(10.195) \\approx 99.93 < 100$ and $s(10.205) \\approx 100.04 > 100$, so the root is $10.20$ to 2 d.p.)",
+  "linkedTopicIds": [
+   "calc-integration-standard",
+   "pure-exponentials-logs",
+   "pure-numerical-methods"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "mech-variable-acceleration-q18",
+  "topicId": "mech-variable-acceleration",
+  "difficulty": 5,
+  "type": "real-world",
+  "question": "A lift travels 30 m between two floors in 12 seconds, starting and finishing at rest. Two models are proposed for its velocity $v$ $\\text{m s}^{-1}$ at time $t$ seconds, $0 \\le t \\le 12$:\n$$\\text{Model A: } v = kt(12 - t) \\qquad\\qquad \\text{Model B: } v = ct^2(12 - t)^2$$\nwhere $k$ and $c$ are constants. The graph shows both models (A solid, B dashed).\n\n(a) Find the exact values of $k$ and $c$.\n\n(b) Find the greatest magnitude of acceleration in each model, giving the answer for model B in exact form.\n\n(c) Passengers find a sudden change in acceleration (a \"jolt\") uncomfortable. Use your answers to explain which model is more realistic.",
+  "hint": "Use $\\displaystyle\\int_0^{12} v\\,dt = 30$. For model B, the substitution $u = t - 6$ gives $t(12 - t) = 36 - u^2$, which makes the algebra symmetric.",
+  "answer": "(a) $k = \\frac{5}{48}$, $c = \\frac{25}{6912}$ (b) A: $1.25$ $\\text{m s}^{-2}$ (at $t = 0$ and $t = 12$); B: $\\frac{25\\sqrt{3}}{36} \\approx 1.20$ $\\text{m s}^{-2}$ (at $t = 6 \\pm 2\\sqrt{3}$) (c) Model B: its acceleration is $0$ at the start and end, whereas model A's jumps instantly from $0$ to $1.25$ $\\text{m s}^{-2}$",
+  "solution": "**(a)** Model A: $\\displaystyle\\int_0^{12} kt(12 - t)\\,dt = k\\left[6t^2 - \\frac{t^3}{3}\\right]_0^{12} = k(864 - 576) = 288k = 30$, so $k = \\dfrac{30}{288} = \\dfrac{5}{48}$.\n\nModel B: let $u = t - 6$, so $t(12 - t) = 36 - u^2$ and $v = c(36 - u^2)^2$ for $-6 \\le u \\le 6$.\n$$\\int_{-6}^{6} c(36 - u^2)^2\\,du = 2c\\left[1296u - 24u^3 + \\frac{u^5}{5}\\right]_0^6 = 2c(7776 - 5184 + 1555.2) = 8294.4c$$\n$8294.4c = 30$, so $c = \\dfrac{30}{8294.4} = \\dfrac{25}{6912}$.\n\n**(b)** Model A: $a = k(12 - 2t)$, which is linear, so its greatest magnitude is at an end: $|a| = 12k = 1.25$ $\\text{m s}^{-2}$ at $t = 0$ and $t = 12$.\n\nModel B: $a = \\dfrac{dv}{du} = c \\cdot 2(36 - u^2)(-2u) = -4c\\,u(36 - u^2)$.\n\n$\\dfrac{d}{du}\\left[u(36 - u^2)\\right] = 36 - 3u^2 = 0 \\Rightarrow u = \\pm 2\\sqrt{3}$, where $|u(36 - u^2)| = 2\\sqrt{3}(36 - 12) = 48\\sqrt{3}$.\n(At the ends $u = \\pm 6$ the acceleration is $0$.) So\n$$|a|_{\\max} = 4c \\times 48\\sqrt{3} = \\frac{192\\sqrt{3} \\times 25}{6912} = \\frac{25\\sqrt{3}}{36} \\approx 1.20\\text{ m s}^{-2}$$\nat $t = 6 \\pm 2\\sqrt{3}$ ($t \\approx 2.54$ and $9.46$).\n\n**(c)** In model A the lift is at rest with zero acceleration before $t = 0$, then suddenly has acceleration $1.25$ $\\text{m s}^{-2}$ — an instant jolt (and again on arrival). In model B, $a = 0$ at $t = 0$ and $t = 12$ and the acceleration builds up smoothly, so there is no jolt; its maximum acceleration is also slightly smaller. Model B is more realistic for a passenger lift (at the cost of a higher top speed, $c \\times 36^2 \\approx 4.69$ $\\text{m s}^{-1}$ against $3.75$ $\\text{m s}^{-1}$).",
+  "linkedTopicIds": [
+   "calc-stationary-points"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><line x1=\"45\" y1=\"200\" x2=\"304\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"312,200 304,204 304,196\" fill=\"currentColor\"/><line x1=\"45\" y1=\"204\" x2=\"45\" y2=\"26\" stroke=\"currentColor\" stroke-width=\"1.2\"/><polygon points=\"45,18 49,26 41,26\" fill=\"currentColor\"/><text x=\"310\" y=\"218\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">t (s)</text><text x=\"51\" y=\"24\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">v (m s⁻¹)</text><polyline points=\"45,200 46.2,197.6 47.4,195.1 48.5,192.8 49.7,190.4 50.9,188 52.1,185.7 53.2,183.4 54.4,181.2 55.6,178.9 56.8,176.7 57.9,174.5 59.1,172.3 60.3,170.2 61.5,168.1 62.7,166 63.8,163.9 65,161.9 66.2,159.8 67.4,157.8 68.5,155.9 69.7,153.9 70.9,152 72.1,150.1 73.2,148.2 74.4,146.4 75.6,144.5 76.8,142.7 78,141 79.1,139.2 80.3,137.5 81.5,135.8 82.7,134.1 83.8,132.4 85,130.8 86.2,129.2 87.4,127.6 88.5,126.1 89.7,124.5 90.9,123 92.1,121.5 93.3,120.1 94.4,118.6 95.6,117.2 96.8,115.9 98,114.5 99.1,113.2 100.3,111.8 101.5,110.6 102.7,109.3 103.8,108.1 105,106.8 106.2,105.7 107.4,104.5 108.6,103.3 109.7,102.2 110.9,101.1 112.1,100.1 113.3,99 114.4,98 115.6,97 116.8,96.1 118,95.1 119.1,94.2 120.3,93.3 121.5,92.4 122.7,91.6 123.9,90.8 125,90 126.2,89.2 127.4,88.4 128.6,87.7 129.7,87 130.9,86.3 132.1,85.7 133.3,85.1 134.4,84.5 135.6,83.9 136.8,83.3 138,82.8 139.2,82.3 140.3,81.8 141.5,81.4 142.7,80.9 143.9,80.5 145,80.2 146.2,79.8 147.4,79.5 148.6,79.2 149.7,78.9 150.9,78.6 152.1,78.4 153.3,78.2 154.5,78 155.6,77.8 156.8,77.7 158,77.6 159.2,77.5 160.3,77.5 161.5,77.4 162.7,77.4 163.9,77.4 165,77.5 166.2,77.5 167.4,77.6 168.6,77.7 169.8,77.8 170.9,78 172.1,78.2 173.3,78.4 174.5,78.6 175.6,78.9 176.8,79.2 178,79.5 179.2,79.8 180.3,80.2 181.5,80.5 182.7,80.9 183.9,81.4 185.1,81.8 186.2,82.3 187.4,82.8 188.6,83.3 189.8,83.9 190.9,84.5 192.1,85.1 193.3,85.7 194.5,86.3 195.6,87 196.8,87.7 198,88.4 199.2,89.2 200.4,90 201.5,90.8 202.7,91.6 203.9,92.4 205.1,93.3 206.2,94.2 207.4,95.1 208.6,96.1 209.8,97 210.9,98 212.1,99 213.3,100.1 214.5,101.1 215.7,102.2 216.8,103.3 218,104.5 219.2,105.7 220.4,106.8 221.5,108.1 222.7,109.3 223.9,110.6 225.1,111.8 226.2,113.2 227.4,114.5 228.6,115.8 229.8,117.2 231,118.6 232.1,120.1 233.3,121.5 234.5,123 235.7,124.5 236.8,126.1 238,127.6 239.2,129.2 240.4,130.8 241.5,132.4 242.7,134.1 243.9,135.8 245.1,137.5 246.3,139.2 247.4,141 248.6,142.7 249.8,144.5 251,146.4 252.1,148.2 253.3,150.1 254.5,152 255.7,153.9 256.8,155.9 258,157.8 259.2,159.8 260.4,161.9 261.6,163.9 262.7,166 263.9,168.1 265.1,170.2 266.3,172.3 267.4,174.5 268.6,176.7 269.8,178.9 271,181.2 272.1,183.4 273.3,185.7 274.5,188 275.7,190.4 276.9,192.8 278,195.1 279.2,197.6 280.4,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"45,200 46.2,199.9 47.4,199.8 48.5,199.5 49.7,199.1 50.9,198.5 52.1,197.9 53.2,197.2 54.4,196.4 55.6,195.5 56.8,194.5 57.9,193.4 59.1,192.2 60.3,190.9 61.5,189.6 62.7,188.2 63.8,186.7 65,185.2 66.2,183.6 67.4,181.9 68.5,180.1 69.7,178.3 70.9,176.5 72.1,174.6 73.2,172.7 74.4,170.7 75.6,168.6 76.8,166.6 78,164.5 79.1,162.3 80.3,160.1 81.5,157.9 82.7,155.7 83.8,153.5 85,151.2 86.2,148.9 87.4,146.6 88.5,144.3 89.7,141.9 90.9,139.6 92.1,137.2 93.3,134.9 94.4,132.5 95.6,130.2 96.8,127.8 98,125.4 99.1,123.1 100.3,120.8 101.5,118.4 102.7,116.1 103.8,113.8 105,111.5 106.2,109.2 107.4,107 108.6,104.7 109.7,102.5 110.9,100.3 112.1,98.2 113.3,96.1 114.4,93.9 115.6,91.9 116.8,89.8 118,87.8 119.1,85.8 120.3,83.9 121.5,82 122.7,80.1 123.9,78.3 125,76.5 126.2,74.8 127.4,73.1 128.6,71.4 129.7,69.8 130.9,68.3 132.1,66.8 133.3,65.3 134.4,63.9 135.6,62.5 136.8,61.2 138,60 139.2,58.8 140.3,57.6 141.5,56.5 142.7,55.5 143.9,54.5 145,53.6 146.2,52.7 147.4,51.9 148.6,51.1 149.7,50.4 150.9,49.8 152.1,49.2 153.3,48.7 154.5,48.3 155.6,47.9 156.8,47.5 158,47.2 159.2,47 160.3,46.9 161.5,46.8 162.7,46.8 163.9,46.8 165,46.9 166.2,47 167.4,47.2 168.6,47.5 169.8,47.9 170.9,48.3 172.1,48.7 173.3,49.2 174.5,49.8 175.6,50.4 176.8,51.1 178,51.9 179.2,52.7 180.3,53.6 181.5,54.5 182.7,55.5 183.9,56.5 185.1,57.6 186.2,58.8 187.4,60 188.6,61.2 189.8,62.5 190.9,63.9 192.1,65.3 193.3,66.8 194.5,68.3 195.6,69.8 196.8,71.4 198,73.1 199.2,74.8 200.4,76.5 201.5,78.3 202.7,80.1 203.9,82 205.1,83.9 206.2,85.8 207.4,87.8 208.6,89.8 209.8,91.9 210.9,93.9 212.1,96.1 213.3,98.2 214.5,100.3 215.7,102.5 216.8,104.7 218,107 219.2,109.2 220.4,111.5 221.5,113.8 222.7,116.1 223.9,118.4 225.1,120.8 226.2,123.1 227.4,125.4 228.6,127.8 229.8,130.2 231,132.5 232.1,134.9 233.3,137.2 234.5,139.6 235.7,141.9 236.8,144.3 238,146.6 239.2,148.9 240.4,151.2 241.5,153.5 242.7,155.7 243.9,157.9 245.1,160.1 246.3,162.3 247.4,164.5 248.6,166.6 249.8,168.6 251,170.7 252.1,172.7 253.3,174.6 254.5,176.5 255.7,178.3 256.8,180.1 258,181.9 259.2,183.6 260.4,185.2 261.6,186.7 262.7,188.2 263.9,189.6 265.1,190.9 266.3,192.2 267.4,193.4 268.6,194.5 269.8,195.5 271,196.4 272.1,197.2 273.3,197.9 274.5,198.5 275.7,199.1 276.9,199.5 278,199.8 279.2,199.9 280.4,200\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-dasharray=\"6 4\"/><line x1=\"103.8\" y1=\"197\" x2=\"103.8\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"103.8\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"162.7\" y1=\"197\" x2=\"162.7\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"162.7\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">6</text><line x1=\"221.5\" y1=\"197\" x2=\"221.5\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"221.5\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">9</text><line x1=\"280.4\" y1=\"197\" x2=\"280.4\" y2=\"203\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"280.4\" y=\"216\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">12</text><line x1=\"42\" y1=\"167.3\" x2=\"48\" y2=\"167.3\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"39\" y=\"171.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"42\" y1=\"134.6\" x2=\"48\" y2=\"134.6\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"39\" y=\"138.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"42\" y1=\"101.9\" x2=\"48\" y2=\"101.9\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"39\" y=\"105.9\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"42\" y1=\"69.2\" x2=\"48\" y2=\"69.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"39\" y=\"73.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"42\" y1=\"36.5\" x2=\"48\" y2=\"36.5\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"39\" y=\"40.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">5</text><text x=\"78.2\" y=\"123.9\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A</text><text x=\"166.7\" y=\"38.8\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B</text></svg>"
+ }
+]

@@ -1,0 +1,292 @@
+[
+ {
+  "id": "stat-regression-inference-q01",
+  "topicId": "stat-regression-inference",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The owner of a coffee cart records the daily high temperature $x$ (in °F) and the number of iced drinks sold $y$ on a random sample of 22 summer days. The conditions for regression inference are met. The least-squares slope is $b = 1.84$ drinks per °F, with standard error $SE_b = 0.42$.\n\nConstruct a 95% confidence interval for the slope $\\beta$ of the population regression line.",
+  "hint": "Interval: $b \\pm t^* SE_b$, with $df = n - 2$.",
+  "answer": "$1.84 \\pm 2.086(0.42) = (0.964, 2.716)$ drinks per °F",
+  "solution": "$t$-interval for the slope. $df = n - 2 = 22 - 2 = 20$, so for 95% confidence $t^* = 2.086$.\n\n$$ME = t^* SE_b = 2.086 \\times 0.42 = 0.876$$\n$$1.84 \\pm 0.876 = (0.964, 2.716)$$\n\nWe are 95% confident that the interval from 0.964 to 2.716 captures the slope of the population regression line: on average, sales increase by between about 0.96 and 2.72 iced drinks for each 1°F rise in the daily high temperature.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-regression-inference-q02",
+  "topicId": "stat-regression-inference",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "The owner of a coffee cart records the daily high temperature $x$ (in °F) and the number of iced drinks sold $y$ on a random sample of 22 summer days. The conditions for regression inference are met. The least-squares slope is $b = 1.84$ drinks per °F, with standard error $SE_b = 0.42$.\n\nConstruct a 99% confidence interval for the slope $\\beta$ of the population regression line.",
+  "hint": "Only the confidence level has changed. Find the new $t^*$ with the same $df$.",
+  "answer": "$1.84 \\pm 2.845(0.42) = (0.645, 3.035)$ drinks per °F",
+  "solution": "**What changed:** 99% instead of 95% confidence. $df = 20$ still, so $t^* = 2.845$.\n\n$$ME = 2.845 \\times 0.42 = 1.195$$\n$$1.84 \\pm 1.195 = (0.645, 3.035)$$\n\n**Effect:** a higher confidence level needs a larger $t^*$, so the interval is wider. It still lies entirely above 0.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-regression-inference-q03",
+  "topicId": "stat-regression-inference",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The owner of a coffee cart records the daily high temperature $x$ (in °F) and the number of iced drinks sold $y$ on a random sample of 12 summer days. The conditions for regression inference are met. The least-squares slope is $b = 1.84$ drinks per °F, with standard error $SE_b = 0.42$.\n\nConstruct a 99% confidence interval for the slope $\\beta$ of the population regression line.",
+  "hint": "Now the sample size has changed. Recalculate $df = n - 2$ and $t^*$; $b$ and $SE_b$ are as given.",
+  "answer": "$1.84 \\pm 3.169(0.42) = (0.509, 3.171)$ drinks per °F",
+  "solution": "**What changed:** $n = 12$ instead of 22 (with the same $b$ and $SE_b$, 99% confidence).\n\n$df = 12 - 2 = 10$, so $t^* = 3.169$.\n$$ME = 3.169 \\times 0.42 = 1.331$$\n$$1.84 \\pm 1.331 = (0.509, 3.171)$$\n\n**Effect:** fewer degrees of freedom give a heavier-tailed $t$ distribution and a larger $t^*$, so the interval is wider. (In practice a smaller sample would also usually increase $SE_b$.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-regression-inference-q04",
+  "topicId": "stat-regression-inference",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The owner of a coffee cart records the daily high temperature $x$ (in °F) and the number of iced drinks sold $y$ on a random sample of 12 summer days. The conditions for regression inference are met. The least-squares slope is $b = 1.84$ drinks per °F, with standard error $SE_b = 0.84$.\n\nConstruct a 99% confidence interval for the slope $\\beta$ of the population regression line.\n\nDoes the interval give convincing evidence of a linear relationship between temperature and iced-drink sales?",
+  "hint": "Only $SE_b$ has changed (it has doubled). Then check whether 0 is in the interval.",
+  "answer": "$1.84 \\pm 3.169(0.84) = (-0.822, 4.502)$; no: 0 is a plausible value of $\\beta$, so the interval does not give convincing evidence of a linear relationship.",
+  "solution": "**What changed:** $SE_b = 0.84$, double the previous value. $df = 10$ and $t^* = 3.169$ as before.\n$$ME = 3.169 \\times 0.84 = 2.662$$\n$$1.84 \\pm 2.662 = (-0.822, 4.502)$$\n\n**Effect:** doubling $SE_b$ doubles the margin of error. The interval now contains 0, so $\\beta = 0$ (no linear relationship) is plausible at the 99% level: these data do **not** give convincing evidence of a linear relationship between temperature and iced-drink sales.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [],
+  "variationSet": "v1"
+ },
+ {
+  "id": "stat-regression-inference-q05",
+  "topicId": "stat-regression-inference",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For a random sample of 25 homes in a city, $x$ = floor area (in hundreds of square feet) and $y$ = monthly electricity bill (in dollars). Computer output for the least-squares regression is shown.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 38.62 | 9.15 | 4.22 | 0.000 |\n| Area | 4.115 | 0.611 | 6.73 | 0.000 |\n\nS = 14.27 R-Sq = 66.3%\n\n(a) Write the equation of the least-squares regression line.\n\n(b) State the values of $b$, $SE_b$ and the degrees of freedom for inference about the slope.\n\n(c) Show how the value 6.73 is calculated, and state the hypotheses it tests.",
+  "hint": "The slope is in the row for the explanatory variable (Area), not the Constant row. $S$ is not the standard error of the slope.",
+  "answer": "(a) $\\hat{y} = 38.62 + 4.115x$ (b) $b = 4.115$, $SE_b = 0.611$, $df = 23$ (c) $t = \\frac{4.115 - 0}{0.611} \\approx 6.73$, testing $H_0: \\beta = 0$ against $H_a: \\beta \\ne 0$.",
+  "solution": "(a) The Constant row gives the intercept and the Area row gives the slope:\n$$\\widehat{\\text{bill}} = 38.62 + 4.115(\\text{area})$$\n\n(b) From the **Area** row: $b = 4.115$ dollars per hundred square feet, $SE_b = 0.611$. Degrees of freedom: $n - 2 = 25 - 2 = 23$.\n\nNote: $S = 14.27$ is the standard deviation of the residuals (a typical prediction error is about \\$14.27), not $SE_b$; and R-Sq is $r^2$.\n\n(c) $$t = \\frac{b - 0}{SE_b} = \\frac{4.115}{0.611} \\approx 6.73$$\nThis is the test statistic for $H_0: \\beta = 0$ (no linear relationship between floor area and electricity bill in the population) against the two-sided $H_a: \\beta \\ne 0$. The P-value 0.000 (less than 0.0005) is two-sided.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q06",
+  "topicId": "stat-regression-inference",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "A sleep researcher selects a random sample of 18 adults and records their average daily caffeine intake $x$ (mg) and average nightly sleep $y$ (hours). The least-squares slope is $b = -0.0062$ hours per mg with $SE_b = 0.0024$. The conditions for inference are met.\n\nTest $H_0: \\beta = 0$ against $H_a: \\beta \\ne 0$ at $\\alpha = 0.05$.",
+  "hint": "$t = \\frac{b - 0}{SE_b}$ with $df = n - 2$. The alternative is two-sided.",
+  "answer": "$t \\approx -2.58$, $df = 16$, P-value $\\approx 0.020 < 0.05$: reject $H_0$. There is convincing evidence of a linear relationship between caffeine intake and sleep.",
+  "solution": "$$t = \\frac{-0.0062 - 0}{0.0024} \\approx -2.58, \\qquad df = 18 - 2 = 16$$\n$$\\text{P-value} = 2P(t_{16} \\le -2.58) \\approx 0.020$$\n\n$0.020 < 0.05$, so reject $H_0$. There is convincing evidence of a linear relationship between average daily caffeine intake and average nightly sleep for adults in this population (the sample suggests more caffeine is associated with less sleep: about 0.0062 hours, or 22 seconds, less per extra mg; that is about 37 minutes less per extra 100 mg).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q07",
+  "topicId": "stat-regression-inference",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "A random sample of 15 adults had their arm span $x$ and height $y$ measured, both in inches. The least-squares slope is $b = 0.93$ with $SE_b = 0.21$. The conditions for inference are met.\n\nIsaac's 95% confidence interval for the slope is shown below.\n\nLine 1: $df = n - 1 = 15 - 1 = 14$\n\nLine 2: $t^* = 2.145$\n\nLine 3: $0.93 \\pm 2.145(0.21) = 0.93 \\pm 0.450 = (0.480, 1.380)$\n\n(a) Identify the error in Isaac's working and explain why it is wrong.\n\n(b) Find the correct interval and interpret it in context.",
+  "hint": "How many parameters does the regression line estimate from the data?",
+  "answer": "(a) Line 1: for inference about a slope $df = n - 2 = 13$, because two parameters (intercept and slope) are estimated. (b) $t^* = 2.160$; $0.93 \\pm 0.454 = (0.476, 1.384)$. We are 95% confident that the interval from 0.476 to 1.384 captures the slope of the population regression line: on average, height increases by between about 0.48 and 1.38 inches for each extra inch of arm span.",
+  "solution": "(a) The error is in **Line 1**. Isaac used $df = n - 1$, which is correct for a one-sample $t$ procedure on a mean. A regression line estimates **two** parameters ($\\alpha$ and $\\beta$) from the data, and the residuals must satisfy two constraints, so only $n - 2$ degrees of freedom remain:\n$$df = 15 - 2 = 13$$\n\n(b) For 95% confidence and $df = 13$, $t^* = 2.160$.\n$$0.93 \\pm 2.160(0.21) = 0.93 \\pm 0.454 = (0.476, 1.384)$$\n\nWe are 95% confident that the interval from 0.476 to 1.384 captures the slope of the population regression line relating height to arm span: on average, height increases by between about 0.48 and 1.38 inches for each additional inch of arm span. (Since 0 is not in the interval, there is convincing evidence of a positive linear relationship. Since 1 is in the interval, height increasing at the same rate as arm span is plausible.)",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q08",
+  "topicId": "stat-regression-inference",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A forester takes a random sample of 20 red maple trees in a state forest and records each tree's age $x$ (years) and trunk diameter $y$ (inches). The output is shown.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 2.31 | 0.88 | 2.63 | 0.017 |\n| Age | 0.452 | 0.097 | 4.66 | 0.000 |\n\nS = 1.24 R-Sq = 54.7%\n\nAssume the conditions for inference are met. Hannah's 95% confidence interval for the slope is shown.\n\nLine 1: $b = 0.452$, $df = 20 - 2 = 18$, $t^* = 2.101$\n\nLine 2: $0.452 \\pm 2.101(1.24) = 0.452 \\pm 2.605 = (-2.153, 3.057)$\n\nLine 3: The interval contains 0, so there is no convincing evidence that diameter is linearly related to age.\n\n(a) Identify the error and explain why it is wrong.\n\n(b) Find the correct interval and the correct conclusion.",
+  "hint": "Which number in the output measures how much the sample **slope** would vary from sample to sample?",
+  "answer": "(a) Line 2: she used $S = 1.24$ (the SD of the residuals) instead of $SE_b = 0.097$ (the SE Coef in the Age row). (b) $0.452 \\pm 2.101(0.097) = (0.248, 0.656)$ inches per year; 0 is not in the interval, so there is convincing evidence of a positive linear relationship between age and trunk diameter.",
+  "solution": "(a) Line 1 is correct. The error is in **Line 2**: Hannah used $S = 1.24$ as the standard error. $S$ is the standard deviation of the **residuals**: a typical tree's diameter is about 1.24 inches from the value predicted by the line. The standard error of the **slope**, $SE_b$, is the SE Coef value in the **Age** row: $0.097$.\n\n(b) $$0.452 \\pm 2.101(0.097) = 0.452 \\pm 0.204 = (0.248, 0.656)$$\n\nWe are 95% confident that the interval from 0.248 to 0.656 inches per year captures the slope of the population regression line: on average, a red maple's trunk diameter increases by between about 0.25 and 0.66 inches for each additional year of age.\n\nThe interval does **not** contain 0, so there is convincing evidence of a (positive) linear relationship between age and trunk diameter for red maples in this forest. This agrees with $t = 4.66$, P-value $\\approx 0.000$ in the output.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q09",
+  "topicId": "stat-regression-inference",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A basketball coach believes that more practice leads to better free-throw shooting. For a random sample of 16 players in a youth league, he records weekly practice time $x$ (hours) and free-throw percentage $y$. The output is shown.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 51.20 | 3.85 | 13.30 | 0.000 |\n| Practice | 0.84 | 0.42 | 2.00 | 0.065 |\n\nS = 6.15 R-Sq = 22.2%\n\nThe conditions for inference are met. Chloe tests $H_0: \\beta = 0$ against $H_a: \\beta > 0$ at $\\alpha = 0.05$.\n\nLine 1: $t = \\dfrac{0.84}{0.42} = 2.00$ with $df = 14$.\n\nLine 2: From the output, the P-value is 0.065.\n\nLine 3: $0.065 > 0.05$, so fail to reject $H_0$. There is not convincing evidence of a positive linear relationship.\n\n(a) Identify the error and explain it.\n\n(b) Give the correct P-value and conclusion.\n\n(c) Would your answer to (b) change if the coach's alternative had been $H_a: \\beta \\ne 0$? Explain.",
+  "hint": "Is the P-value printed in regression output one-sided or two-sided?",
+  "answer": "(a) Line 2: the printed P-value is two-sided (for $H_a: \\beta \\ne 0$). For the one-sided $H_a: \\beta > 0$ with $b > 0$, halve it. (b) P-value $= \\frac{0.065}{2} \\approx 0.033 < 0.05$: reject $H_0$. There is convincing evidence of a positive linear relationship between weekly practice time and free-throw percentage. (c) Yes: for $H_a: \\beta \\ne 0$ the P-value is 0.065 as printed, $> 0.05$, so fail to reject $H_0$.",
+  "solution": "(a) Line 1 is correct. The error is in **Line 2**. Regression software reports the P-value for the **two-sided** alternative $H_a: \\beta \\ne 0$, i.e. $P(|t_{14}| \\ge 2.00)$. Chloe's alternative is one-sided, $H_a: \\beta > 0$, and the sample slope $b = 0.84$ is positive (in the direction of $H_a$), so the P-value is only the upper tail: half of the printed value.\n\n(b) $$\\text{P-value} = P(t_{14} \\ge 2.00) = \\frac{0.065}{2} \\approx 0.033$$\n$0.033 < 0.05$, so **reject** $H_0$. There is convincing evidence of a positive linear relationship between weekly practice time and free-throw percentage for players in this league. (This is an observational study, so it does not show that practice **causes** the improvement.)\n\n(c) Yes. For $H_a: \\beta \\ne 0$ the printed P-value 0.065 is the correct one (it must **not** be halved). Since $0.065 > 0.05$, we would fail to reject $H_0$. This is why the alternative must be chosen before seeing the data.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q10",
+  "topicId": "stat-regression-inference",
+  "difficulty": 2,
+  "type": "reasoning",
+  "question": "The diagram shows three residual plots (residual against $x$) from three different regression studies. The dashed line is residual $= 0$.\n\n(a) For each plot, decide whether the **Linear** condition and the **Equal SD** condition are met. Explain.\n\n(b) Ben looks at Plot C and says: \"There is no curved pattern, so the Equal SD condition is met.\" Is Ben correct? Explain.\n\n(c) Which plot(s), if any, would allow a $t$-interval for the slope to be used (assuming the other conditions are met)?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 150\" width=\"360\" height=\"150\"><rect x=\"12\" y=\"12\" width=\"104\" height=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"12.0\" y1=\"64.0\" x2=\"116.0\" y2=\"64.0\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"21.3\" cy=\"82.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"34.6\" cy=\"60.1\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"39.4\" cy=\"61.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"40.3\" cy=\"66.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"42.8\" cy=\"100.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"44.9\" cy=\"71.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"46.7\" cy=\"64.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"47.0\" cy=\"62.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"59.3\" cy=\"86.3\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"61.2\" cy=\"71.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"64.4\" cy=\"78.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"68.6\" cy=\"75.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"74.6\" cy=\"48.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"74.8\" cy=\"75.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"87.8\" cy=\"64.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"89.3\" cy=\"51.1\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"89.7\" cy=\"72.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"91.8\" cy=\"65.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"96.3\" cy=\"62.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"98.3\" cy=\"63.1\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"106.2\" cy=\"81.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"106.8\" cy=\"62.9\" r=\"2.8\" fill=\"currentColor\"/><text x=\"64.0\" y=\"136.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Plot A</text><rect x=\"130\" y=\"12\" width=\"104\" height=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"130.0\" y1=\"64.0\" x2=\"234.0\" y2=\"64.0\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"139.3\" cy=\"34.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"152.6\" cy=\"69.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"157.4\" cy=\"66.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"158.3\" cy=\"70.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"160.8\" cy=\"76.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"162.9\" cy=\"68.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"164.7\" cy=\"74.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"165.0\" cy=\"82.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"177.3\" cy=\"84.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"179.2\" cy=\"82.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"182.4\" cy=\"85.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"186.6\" cy=\"81.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"192.6\" cy=\"82.3\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"192.8\" cy=\"79.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"205.8\" cy=\"65.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"207.3\" cy=\"71.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"207.7\" cy=\"67.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"209.8\" cy=\"67.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"214.3\" cy=\"58.5\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"216.3\" cy=\"59.9\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"224.2\" cy=\"42.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"224.8\" cy=\"40.0\" r=\"2.8\" fill=\"currentColor\"/><text x=\"182.0\" y=\"136.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Plot B</text><rect x=\"248\" y=\"12\" width=\"104\" height=\"104\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"248.0\" y1=\"64.0\" x2=\"352.0\" y2=\"64.0\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><circle cx=\"257.3\" cy=\"65.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"270.6\" cy=\"66.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"275.4\" cy=\"75.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"276.3\" cy=\"71.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"278.8\" cy=\"54.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"280.9\" cy=\"71.3\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"282.7\" cy=\"51.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"283.0\" cy=\"59.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"295.3\" cy=\"52.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"297.2\" cy=\"70.1\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"300.4\" cy=\"55.8\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"304.6\" cy=\"89.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"310.6\" cy=\"85.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"310.8\" cy=\"47.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"323.8\" cy=\"41.7\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"325.3\" cy=\"95.9\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"325.7\" cy=\"82.0\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"327.8\" cy=\"89.2\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"332.3\" cy=\"34.6\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"334.3\" cy=\"84.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"342.2\" cy=\"36.4\" r=\"2.8\" fill=\"currentColor\"/><circle cx=\"342.8\" cy=\"99.7\" r=\"2.8\" fill=\"currentColor\"/><text x=\"300.0\" y=\"136.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Plot C</text></svg>",
+  "hint": "Linear: is there a curved pattern? Equal SD: is the vertical spread of the residuals about the same all the way across?",
+  "answer": "(a) A: both met (random scatter, constant spread). B: Linear not met (clear curved pattern); spread fairly constant. C: Linear met (no curve), Equal SD not met (fan shape: spread increases with $x$). (b) No: \"no curve\" checks the Linear condition; Equal SD needs constant vertical spread, and Plot C fans out. (c) Only Plot A.",
+  "solution": "(a) **Plot A:** the residuals are scattered randomly above and below 0 with no pattern, and their vertical spread is about the same for all $x$. Linear ✓, Equal SD ✓.\n\n**Plot B:** the residuals are positive at both ends and negative in the middle: a clear **curved** pattern. The straight-line model is not appropriate, so Linear ✗. (The spread about the curve is roughly constant.)\n\n**Plot C:** no curved pattern, so Linear ✓. But the residuals are close to 0 for small $x$ and spread out more and more as $x$ increases (a **fan** shape), so Equal SD ✗.\n\n(b) Ben is **not** correct. The absence of a curve is the check for the **Linear** condition. The **Equal SD** condition says the standard deviation of $y$ about the population line is the same for every $x$, so the vertical spread of the residuals should be roughly constant across the plot. In Plot C the spread increases steadily with $x$, so this condition is not met. ($SE_b$ would then be unreliable.)\n\n(c) Only **Plot A** satisfies both conditions, so only that study's data would support a $t$-interval for the slope.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q11",
+  "topicId": "stat-regression-inference",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A used-car website takes a random sample of 24 listings for one model of sedan and records each car's age $x$ (years) and asking price $y$ (in thousands of dollars).\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 28.45 | 1.12 | 25.40 | 0.000 |\n| Age | $-2.137$ | 0.214 | $-9.99$ | 0.000 |\n\nS = 2.31 R-Sq = 81.9%\n\nThe conditions for inference are met.\n\n(a) Interpret the slope in context.\n\n(b) A car dealer claims that this model loses **more than \\$2000** in value per year on average. Do the data give convincing evidence for the dealer's claim at $\\alpha = 0.05$?\n\n(c) Explain why the P-value of 0.000 in the output does not answer part (b).",
+  "hint": "The dealer's claim is $\\beta < -2$ (in thousands of dollars per year). Use $t = \\dfrac{b - \\beta_0}{SE_b}$ with $\\beta_0 = -2$.",
+  "answer": "(a) For each additional year of age, the predicted asking price decreases by about \\$2137. (b) $H_0: \\beta = -2$, $H_a: \\beta < -2$; $t = \\frac{-2.137 - (-2)}{0.214} \\approx -0.64$, $df = 22$, P-value $\\approx 0.26 > 0.05$: fail to reject $H_0$. Not convincing evidence that the average loss is more than \\$2000 per year. (c) The printed T and P are for $H_0: \\beta = 0$ only.",
+  "solution": "(a) The predicted asking price decreases by about 2.137 thousand dollars (about \\$2137) for each additional year of age.\n\n(b) The dealer claims the average yearly loss is more than 2 (thousand dollars), i.e. $\\beta < -2$.\n\n$H_0: \\beta = -2$, $H_a: \\beta < -2$, where $\\beta$ is the slope of the population regression line of asking price (in \\$1000s) on age for all listings of this model.\n\n$$t = \\frac{b - \\beta_0}{SE_b} = \\frac{-2.137 - (-2)}{0.214} = \\frac{-0.137}{0.214} \\approx -0.64, \\qquad df = 24 - 2 = 22$$\n$$\\text{P-value} = P(t_{22} \\le -0.64) \\approx 0.26$$\n\n$0.26 > 0.05$, so fail to reject $H_0$. There is not convincing evidence that this model loses more than \\$2000 in value per year on average. (The sample slope, \\$2137 per year, is only 0.64 standard errors beyond \\$2000.)\n\n(c) The output's T $= -9.99$ and P $= 0.000$ test $H_0: \\beta = 0$, i.e. whether there is **any** linear relationship. They show convincingly that price decreases with age, but say nothing directly about whether the decrease exceeds \\$2000 per year; that requires a different null value and a new $t$ statistic.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q12",
+  "topicId": "stat-regression-inference",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A solar farm operator takes a random sample of 30 days and records the average cloud cover $x$ (%) and the energy produced $y$ (megawatt-hours, MWh). The output is shown.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 84.71 | 2.96 | 28.62 | 0.000 |\n| Cloud | $-0.386$ | 0.052 | $-7.42$ | 0.000 |\n\nS = 5.80 R-Sq = 66.3%\n\nThe conditions for inference are met.\n\n(a) Construct and interpret a 95% confidence interval for the slope of the population regression line.\n\n(b) An engineer's model predicts that energy output falls by 0.5 MWh for each 1 percentage point increase in cloud cover. Is this consistent with the data? Explain.\n\n(c) Interpret the values of S and R-Sq in context.",
+  "hint": "$df = 30 - 2 = 28$. Use the Cloud row for $b$ and $SE_b$.",
+  "answer": "(a) $-0.386 \\pm 2.048(0.052) = (-0.493, -0.279)$. We are 95% confident that, on average, energy output falls by between about 0.279 and 0.493 MWh for each additional percentage point of cloud cover. (b) No: $-0.5$ is just outside the interval, so it is not a plausible value of the slope at 95% confidence. (c) S: actual energy output typically differs from the value predicted by the line by about 5.80 MWh. R-Sq: 66.3% of the variation in daily energy output is accounted for by the linear relationship with cloud cover.",
+  "solution": "(a) $df = 28$, $t^* = 2.048$.\n$$-0.386 \\pm 2.048(0.052) = -0.386 \\pm 0.1065 = (-0.493, -0.279)$$\nWe are 95% confident that the interval from $-0.493$ to $-0.279$ captures the slope of the population regression line: on average, daily energy production decreases by between about 0.279 and 0.493 MWh for each additional percentage point of cloud cover.\n\n(b) The engineer's model says $\\beta = -0.5$. This value lies just **outside** the 95% interval $(-0.493, -0.279)$, so it is not a plausible value of the slope: the data suggest output falls more slowly than the engineer predicts. (Equivalently, a two-sided test of $H_0: \\beta = -0.5$ at $\\alpha = 0.05$ would reject $H_0$.)\n\n(c) **S = 5.80:** when the least-squares line is used to predict a day's energy production from its cloud cover, the prediction is typically off by about 5.80 MWh.\n\n**R-Sq = 66.3%:** about 66.3% of the variation in daily energy production is accounted for by the linear relationship with cloud cover.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q13",
+  "topicId": "stat-regression-inference",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 7,
+  "question": "A tutoring company selected a random sample of 15 of its students who took the SAT twice. For each student it recorded $x$, the number of hours of tutored study between the two attempts, and $y$, the improvement in total score (points). Computer output and a residual plot are shown.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 6.50 | 18.40 | 0.35 | 0.730 |\n| Hours | 1.193 | 0.479 | 2.49 | 0.027 |\n\nS = 26.53 R-Sq = 32.3%",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><line x1=\"55.0\" y1=\"190.0\" x2=\"55.0\" y2=\"15.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"55.0\" y1=\"190.0\" x2=\"325.0\" y2=\"190.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"55.0\" y1=\"102.5\" x2=\"325.0\" y2=\"102.5\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"50.0\" y1=\"190.0\" x2=\"55.0\" y2=\"190.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"47.0\" y=\"194.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−60</text><line x1=\"50.0\" y1=\"146.2\" x2=\"55.0\" y2=\"146.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"47.0\" y=\"150.2\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−30</text><line x1=\"50.0\" y1=\"102.5\" x2=\"55.0\" y2=\"102.5\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"47.0\" y=\"106.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0</text><line x1=\"50.0\" y1=\"58.8\" x2=\"55.0\" y2=\"58.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"47.0\" y=\"62.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">30</text><line x1=\"50.0\" y1=\"15.0\" x2=\"55.0\" y2=\"15.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"47.0\" y=\"19.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">60</text><line x1=\"55.0\" y1=\"190.0\" x2=\"55.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"55.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">0</text><line x1=\"100.0\" y1=\"190.0\" x2=\"100.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"100.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">10</text><line x1=\"145.0\" y1=\"190.0\" x2=\"145.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"145.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">20</text><line x1=\"190.0\" y1=\"190.0\" x2=\"190.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"190.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><line x1=\"235.0\" y1=\"190.0\" x2=\"235.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"235.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">40</text><line x1=\"280.0\" y1=\"190.0\" x2=\"280.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"280.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">50</text><line x1=\"325.0\" y1=\"190.0\" x2=\"325.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"325.0\" y=\"209.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">60</text><circle cx=\"181.0\" cy=\"51.3\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"307.0\" cy=\"133.6\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"145.0\" cy=\"130.7\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"91.0\" cy=\"74.9\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"154.0\" cy=\"73.0\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"257.5\" cy=\"114.5\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"271.0\" cy=\"29.3\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"212.5\" cy=\"81.0\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"154.0\" cy=\"124.0\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"302.5\" cy=\"98.3\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"307.0\" cy=\"89.9\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"185.5\" cy=\"153.7\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"181.0\" cy=\"122.8\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"230.5\" cy=\"163.8\" r=\"3.2\" fill=\"currentColor\"/><circle cx=\"253.0\" cy=\"96.7\" r=\"3.2\" fill=\"currentColor\"/><text x=\"190.0\" y=\"226.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Hours of study</text><text x=\"14\" y=\"102.5\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" transform=\"rotate(-90 14 102.5)\">Residual</text></svg>",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Interpret the slope of the least-squares regression line in context.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Use the residual plot to comment on whether the Linear and Equal SD conditions for inference are met.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Assuming all conditions are met, do the data provide convincing evidence at $\\alpha = 0.01$ of a positive linear relationship between hours of tutored study and score improvement for the company's students? Give appropriate statistical evidence.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "The company's advertising says: \"Every hour of tutoring adds over a point to your SAT score!\" Give one reason why the study does not support this claim.",
+    "marks": 1
+   }
+  ],
+  "hint": "Use the Hours row. The printed P-value is for a two-sided alternative; your alternative is $\\beta > 0$.",
+  "answer": "(a) Predicted score improvement increases by about 1.193 points for each additional hour of tutored study. (b) Residuals are randomly scattered about 0 with no curve (Linear met) and roughly constant spread across $x$ (Equal SD met). (c) $H_0: \\beta = 0$, $H_a: \\beta > 0$; $t = 2.49$, $df = 13$, P-value $= \\frac{0.027}{2} \\approx 0.0135 > 0.01$: fail to reject $H_0$; not convincing evidence at the 1% level. (d) For example: it is an observational study (students chose their hours), so no cause-and-effect conclusion; also the result is not significant at $\\alpha = 0.01$, and the interval for the slope includes values below 1.",
+  "solution": "(a) The predicted improvement in SAT score increases by about 1.193 points for each additional hour of tutored study. **1 pt**\n\n(b) Linear: the residuals are scattered randomly above and below 0 with no curved pattern, so a linear model is appropriate. **1 pt**\n\nEqual SD: the vertical spread of the residuals is roughly the same across the whole range of hours (no fanning), so the Equal SD condition is met. **1 pt**\n\n(c) $H_0: \\beta = 0$ and $H_a: \\beta > 0$, where $\\beta$ is the slope of the population regression line relating score improvement to hours of tutored study for all of the company's students who take the SAT twice. **1 pt**\n\n$t = \\frac{1.193 - 0}{0.479} \\approx 2.49$ with $df = 15 - 2 = 13$. The output P-value 0.027 is two-sided; since $b > 0$, the one-sided P-value is $\\frac{0.027}{2} \\approx 0.0135$. **1 pt**\n\n$0.0135 > 0.01$, so we fail to reject $H_0$. At the 1% level, there is not convincing evidence of a positive linear relationship between hours of tutored study and score improvement for the company's students. **1 pt**\n\n(d) Any one of: the students were not randomly assigned to numbers of hours (observational study), so a cause-and-effect claim is not justified, since motivated students might both study more and improve more; the slope is not significant at the 1% level; a 95% interval for $\\beta$, $1.193 \\pm 2.160(0.479) = (0.158, 2.228)$, includes values below 1 point per hour. **1 pt**",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q14",
+  "topicId": "stat-regression-inference",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "A public-health researcher takes a random sample of 40 US counties and records $x$ = number of fast-food restaurants per 10,000 residents and $y$ = adult obesity rate (%). The output gives $b = 0.68$, $SE_b = 0.21$, $t = 3.24$ and P-value $= 0.003$, and a 95% confidence interval for $\\beta$ is $(0.255, 1.105)$. The conditions for inference are met.\n\nEvaluate each statement. Say whether it is correct and explain.\n\n(a) \"These results prove that opening more fast-food restaurants causes obesity rates to rise.\"\n\n(b) \"95% of US counties have a slope between 0.255 and 1.105.\"\n\n(c) \"If there were no linear relationship between fast-food density and obesity rate in all US counties, there would be only about a 0.3% chance of getting a sample slope at least as far from 0 as 0.68.\"\n\n(d) \"Because the P-value is so small, the relationship must be strong.\"\n\n(e) \"We need $n \\ge 30$ for this test to be valid, so a sample of 15 counties could never be used.\" ",
+  "hint": "Think about the study design, what a slope is a property of, the conditional nature of a P-value, and what the Normal condition in regression actually requires.",
+  "answer": "(a) Incorrect: observational study; confounding variables (e.g. income) may explain the association. (b) Incorrect: there is one population slope $\\beta$ for the line through all counties; the interval is a range of plausible values for $\\beta$. (c) Correct: this is the right interpretation of a two-sided P-value. (d) Incorrect: a small P-value means convincing evidence that $\\beta \\ne 0$, not a strong relationship; strength is measured by $r$ (or $r^2$). (e) Incorrect: with small $n$, regression inference is fine if the residuals show no strong skew or outliers (Normal condition).",
+  "solution": "(a) **Incorrect.** The counties were not randomly assigned numbers of fast-food restaurants; this is an observational study. Other variables (for example income, education or how rural a county is) may be related to both fast-food density and obesity, so we can conclude there is an association, but not causation.\n\n(b) **Incorrect.** Individual counties do not \"have slopes\". $\\beta$ is a single number: the slope of the population regression line for all US counties. The 95% confidence interval gives the plausible values of that one parameter, and \"95%\" describes the success rate of the method in repeated sampling.\n\n(c) **Correct.** The printed P-value is two-sided and is calculated assuming $H_0: \\beta = 0$ is true. It is the probability of getting a sample slope at least as extreme (in either direction) as 0.68 purely by chance.\n\n(d) **Incorrect.** The P-value measures how convincing the evidence is that $\\beta \\ne 0$, which depends heavily on $n$. Strength is measured by $r$: here $r^2 = \\frac{t^2}{t^2 + df} = \\frac{3.24^2}{3.24^2 + 38} \\approx 0.22$, so only about 22% of the variation in obesity rate is explained by fast-food density. That is a moderate relationship at best.\n\n(e) **Incorrect.** For regression, the Normal condition is about the distribution of $y$ about the line, checked using the **residuals**. With a small sample (such as 15 counties) the test can be used if a graph of the residuals (dotplot, histogram or normal probability plot) shows no strong skew or outliers. $n \\ge 30$ is only a guide that makes the procedure robust when that check is doubtful.",
+  "linkedTopicIds": [
+   "stat-experimental-design"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q15",
+  "topicId": "stat-regression-inference",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "An agricultural researcher selects a random sample of 15 farms in a region and records growing-season rainfall $x$ (inches) and corn yield $y$ (bushels per acre). Some values in the output have been smudged.\n\n| Predictor | Coef | SE Coef | T | P |\n|---|---|---|---|---|\n| Constant | 98.40 | 21.60 | [A] | 0.001 |\n| Rainfall | 1.928 | [B] | 2.41 | [C] |\n\nS = 12.70 R-Sq = 30.9%\n\nThe conditions for inference are met.\n\n(a) Find the values of A, B and C.\n\n(b) Construct a 95% confidence interval for the slope.\n\n(c) The standard error of the slope is given by $SE_b = \\dfrac{s}{s_x\\sqrt{n - 1}}$, where $s$ is S in the output and $s_x$ is the standard deviation of the rainfall values. Find $s_x$, and explain how the researcher could have designed the study to reduce $SE_b$.",
+  "hint": "Each T is Coef divided by SE Coef. The printed P is two-sided with $df = n - 2$.",
+  "answer": "(a) A $= \\frac{98.40}{21.60} \\approx 4.56$; B $= \\frac{1.928}{2.41} = 0.800$; C $= 2P(t_{13} \\ge 2.41) \\approx 0.031$ (b) $1.928 \\pm 2.160(0.800) = (0.200, 3.656)$ bushels per acre per inch (c) $s_x = \\frac{12.70}{0.800\\sqrt{14}} \\approx 4.24$ inches; include farms with a wider spread of rainfall values (larger $s_x$), or sample more farms (larger $n$).",
+  "solution": "(a) Each $T$ value is $\\frac{\\text{Coef}}{\\text{SE Coef}}$:\n$$A = \\frac{98.40}{21.60} \\approx 4.56$$\n$$B = SE_b = \\frac{1.928}{2.41} = 0.800$$\nThe printed P-value is two-sided with $df = 15 - 2 = 13$:\n$$C = 2P(t_{13} \\ge 2.41) \\approx 0.031$$\n\n(b) $df = 13$, $t^* = 2.160$:\n$$1.928 \\pm 2.160(0.800) = 1.928 \\pm 1.728 = (0.200, 3.656)$$\nWe are 95% confident that, on average, corn yield increases by between about 0.20 and 3.66 bushels per acre for each extra inch of growing-season rainfall.\n\n(c) Rearranging: $$s_x = \\frac{s}{SE_b\\sqrt{n - 1}} = \\frac{12.70}{0.800\\sqrt{14}} = \\frac{12.70}{2.993} \\approx 4.24 \\text{ inches}$$\n\nFrom the formula, $SE_b$ is smaller when $s_x$ is larger or $n$ is larger. So the researcher could choose farms with a **wider range of rainfall** (a slope is estimated more precisely when the $x$-values are spread out), or sample **more farms**. ($s$ reflects the natural scatter of yields and is not directly under the researcher's control.)",
+  "linkedTopicIds": [
+   "alg-rearranging-formulae"
+  ],
+  "misconceptionIds": [
+   "m3",
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q16",
+  "topicId": "stat-regression-inference",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "A random sample of 12 used electric scooters gives the following summary statistics for $x$ = age (months) and $y$ = maximum range on a full charge (miles):\n$$\\bar{x} = 14.0, \\quad s_x = 3.5, \\quad \\bar{y} = 21.6, \\quad s_y = 8.4, \\quad r = -0.62$$\nThe conditions for regression inference are met.\n\nYou may use: $b = r\\dfrac{s_y}{s_x}$, $\\;s = s_y\\sqrt{\\dfrac{(1 - r^2)(n - 1)}{n - 2}}$, $\\;SE_b = \\dfrac{s}{s_x\\sqrt{n - 1}}$.\n\n(a) Find the equation of the least-squares regression line.\n\n(b) Calculate $s$ and $SE_b$.\n\n(c) Test whether there is convincing evidence of a negative linear relationship between age and range at $\\alpha = 0.05$.",
+  "hint": "The least-squares line passes through $(\\bar{x}, \\bar{y})$. For (c), $t = \\frac{b}{SE_b}$ with $df = n - 2$, and $H_a: \\beta < 0$.",
+  "answer": "(a) $\\hat{y} = 42.43 - 1.488x$ (b) $s \\approx 6.91$ miles, $SE_b \\approx 0.595$ (c) $t \\approx -2.50$, $df = 10$, P-value $\\approx 0.016 < 0.05$: reject $H_0$. Convincing evidence of a negative linear relationship between age and range.",
+  "solution": "(a) $$b = r\\frac{s_y}{s_x} = -0.62 \\times \\frac{8.4}{3.5} = -1.488$$\nThe line passes through $(\\bar{x}, \\bar{y}) = (14.0, 21.6)$:\n$$a = \\bar{y} - b\\bar{x} = 21.6 - (-1.488)(14.0) = 21.6 + 20.832 = 42.432$$\n$$\\hat{y} = 42.43 - 1.488x$$\n\n(b) $$s = 8.4\\sqrt{\\frac{(1 - 0.3844)(11)}{10}} = 8.4\\sqrt{0.67716} = 8.4 \\times 0.8229 \\approx 6.91 \\text{ miles}$$\n$$SE_b = \\frac{6.912}{3.5\\sqrt{11}} = \\frac{6.912}{11.608} \\approx 0.595$$\n\n(c) $H_0: \\beta = 0$, $H_a: \\beta < 0$, where $\\beta$ is the slope of the population regression line of maximum range on age for used scooters of this kind.\n$$t = \\frac{-1.488 - 0}{0.595} \\approx -2.50, \\qquad df = 12 - 2 = 10$$\n$$\\text{P-value} = P(t_{10} \\le -2.50) \\approx 0.016$$\n$0.016 < 0.05$, so reject $H_0$. There is convincing evidence of a negative linear relationship between age and maximum range for used scooters of this kind: older scooters tend to have a shorter range.",
+  "linkedTopicIds": [
+   "stat-linear-regression"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q17",
+  "topicId": "stat-regression-inference",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "For a least-squares regression on $n$ data points with correlation $r$, the following results hold:\n$$b = r\\frac{s_y}{s_x}, \\qquad s = s_y\\sqrt{\\frac{(1 - r^2)(n - 1)}{n - 2}}, \\qquad SE_b = \\frac{s}{s_x\\sqrt{n - 1}}$$\n\n(a) Prove that the test statistic for $H_0: \\beta = 0$ can be written as\n$$t = \\frac{r\\sqrt{n - 2}}{\\sqrt{1 - r^2}}$$\n\n(b) Hence show that the test statistic does not depend on the units in which $x$ and $y$ are measured.\n\n(c) For a sample of $n = 20$, find the smallest value of $|r|$ that gives a significant result in a two-sided test at $\\alpha = 0.05$. Give your answer to 3 decimal places.",
+  "hint": "Substitute all three formulas into $t = \\frac{b}{SE_b}$; the $s_x$ and $s_y$ cancel. For (c), set $t = t^*$ for $df = 18$ and solve for $r$.",
+  "answer": "(a) $t = \\frac{b}{SE_b} = \\frac{r s_y/s_x}{s_y\\sqrt{(1-r^2)(n-1)/(n-2)}\\,/\\,(s_x\\sqrt{n-1})} = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}}$ (b) $t$ depends only on $r$ and $n$, and $r$ has no units. (c) $|r| = \\frac{t^*}{\\sqrt{n - 2 + t^{*2}}} = \\frac{2.101}{\\sqrt{18 + 2.101^2}} \\approx 0.444$",
+  "solution": "(a) First simplify $SE_b$:\n$$SE_b = \\frac{s}{s_x\\sqrt{n-1}} = \\frac{s_y}{s_x\\sqrt{n-1}}\\sqrt{\\frac{(1-r^2)(n-1)}{n-2}} = \\frac{s_y}{s_x}\\sqrt{\\frac{1-r^2}{n-2}}$$\nThen\n$$t = \\frac{b - 0}{SE_b} = \\frac{r\\,\\frac{s_y}{s_x}}{\\frac{s_y}{s_x}\\sqrt{\\frac{1-r^2}{n-2}}} = r\\sqrt{\\frac{n-2}{1-r^2}} = \\frac{r\\sqrt{n-2}}{\\sqrt{1-r^2}} \\qquad \\blacksquare$$\n\n(b) The formula involves only $r$ and $n$. The correlation $r$ has no units and is unchanged by changing units (for example inches to centimeters, or dollars to thousands of dollars), so $t$ and the P-value are unchanged too. (By contrast, $b$ and $SE_b$ both change with the units, but their ratio does not.)\n\n(c) Two-sided test at $\\alpha = 0.05$ with $df = 20 - 2 = 18$: reject when $|t| \\ge t^* = 2.101$. Since $t$ increases with $|r|$, solve\n$$\\frac{|r|\\sqrt{18}}{\\sqrt{1 - r^2}} = 2.101 \\;\\Rightarrow\\; 18r^2 = 2.101^2(1 - r^2) \\;\\Rightarrow\\; r^2(18 + 2.101^2) = 2.101^2$$\n$$|r| = \\frac{2.101}{\\sqrt{18 + 4.414}} = \\frac{2.101}{4.734} \\approx 0.444$$\n\nSo with 20 points, any correlation with $|r| > 0.444$ gives convincing evidence (at the 5% level) of a linear relationship, even though $r^2 \\approx 0.197$ means less than 20% of the variation in $y$ is explained.",
+  "linkedTopicIds": [
+   "stat-linear-regression",
+   "alg-rearranging-formulae"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "stat-regression-inference-q18",
+  "topicId": "stat-regression-inference",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A pilot study with a random sample of $n = 11$ greenhouse plants gives a least-squares slope of $b = 0.8$ cm of growth per hour of supplemental light, with $SE_b = 0.5$. The conditions for inference are met.\n\n(a) Find the P-value for testing $H_0: \\beta = 0$ against $H_a: \\beta \\ne 0$.\n\n(b) The researcher plans a larger study. Assume that the new study will give the same slope $b = 0.8$, the same value of $s$ and the same spread of light times $s_x$. Using $SE_b = \\dfrac{s}{s_x\\sqrt{n - 1}}$, show that the new standard error would be $SE_b = 0.5\\sqrt{\\dfrac{10}{n - 1}}$.\n\n(c) Find the smallest sample size $n$ for which the two-sided test would be significant at $\\alpha = 0.05$.",
+  "hint": "In (b), $s$ and $s_x$ are fixed, so $SE_b \\propto \\frac{1}{\\sqrt{n-1}}$. In (c), remember that $t^*$ also changes with $n$ because $df = n - 2$: test values of $n$.",
+  "answer": "(a) $t = 1.6$, $df = 9$, P-value $\\approx 0.144$ (b) $\\frac{s}{s_x} = 0.5\\sqrt{10}$, so $SE_b = \\frac{0.5\\sqrt{10}}{\\sqrt{n-1}}$ (c) $n = 19$ ($t \\approx 2.147 > t^*_{17} = 2.110$; for $n = 18$, $t \\approx 2.086 < t^*_{16} = 2.120$)",
+  "solution": "(a) $t = \\frac{0.8}{0.5} = 1.6$ with $df = 11 - 2 = 9$:\n$$\\text{P-value} = 2P(t_9 \\ge 1.6) \\approx 0.144$$\nNot significant at any common level.\n\n(b) In the pilot, $0.5 = \\frac{s}{s_x\\sqrt{10}}$, so $\\frac{s}{s_x} = 0.5\\sqrt{10}$. With the same $s$ and $s_x$ and a new sample size $n$:\n$$SE_b = \\frac{s}{s_x\\sqrt{n-1}} = \\frac{0.5\\sqrt{10}}{\\sqrt{n-1}} = 0.5\\sqrt{\\frac{10}{n-1}}$$\n\n(c) The test statistic for sample size $n$ is\n$$t = \\frac{0.8}{0.5\\sqrt{10/(n-1)}} = 1.6\\sqrt{\\frac{n-1}{10}}$$\nand we need $t \\ge t^*$ for $df = n - 2$ (two-sided, 0.05). Both sides change with $n$:\n\n| $n$ | $t = 1.6\\sqrt{\\frac{n-1}{10}}$ | $t^*$ ($df = n - 2$) | Significant? |\n|---|---|---|---|\n| 17 | 2.024 | 2.131 | No |\n| 18 | 2.086 | 2.120 | No |\n| 19 | 2.147 | 2.110 | Yes |\n\nSo the smallest sample size is $n = 19$ (P-value $\\approx 0.047$).\n\nThis shows how a non-significant pilot result can become significant with a larger sample even when the estimated effect is the same, because $SE_b$ shrinks like $\\frac{1}{\\sqrt{n - 1}}$.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]

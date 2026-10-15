@@ -1,0 +1,360 @@
+[
+ {
+  "id": "calc-slope-fields-euler-q01",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Consider the differential equation $\\dfrac{dy}{dx} = x - 2y$.\n\n(a) Find the slope of the slope-field segment at each of the points $(0, 0)$, $(2, 0)$, $(0, 1)$, $(2, 1)$, $(-2, 1)$ and $(1, -1)$.\n\n(b) Describe the set of all points where the segments are horizontal.",
+  "hint": "Substitute the $x$- and $y$-coordinates of each point into $x - 2y$. Horizontal segments have slope $0$.",
+  "answer": "(a) $0,\\ 2,\\ -2,\\ 0,\\ -4,\\ 3$ respectively (b) the line $y = \\frac{1}{2}x$",
+  "solution": "(a) Substitute each point into $x - 2y$:\n\n| point | $(0, 0)$ | $(2, 0)$ | $(0, 1)$ | $(2, 1)$ | $(-2, 1)$ | $(1, -1)$ |\n|---|---|---|---|---|---|---|\n| $x - 2y$ | $0$ | $2$ | $-2$ | $0$ | $-4$ | $3$ |\n\nSo the segment at $(2, 0)$ rises with slope 2, the one at $(-2, 1)$ falls steeply, and so on.\n\n(b) Segments are horizontal where $\\frac{dy}{dx} = 0$:\n$$x - 2y = 0 \\quad\\Leftrightarrow\\quad y = \\tfrac{1}{2}x$$\nEvery segment on the line $y = \\frac{1}{2}x$ is horizontal (for example at $(0, 0)$ and $(2, 1)$). Note that this line is **not** a solution curve: its own slope is $\\frac{1}{2}$, not $0$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q02",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 2x + y$ with $f(0) = 1$.\n\nUse Euler's method with **one step** of size $0.5$, starting at $x = 0$, to approximate $f(0.5)$.",
+  "hint": "New $y$ = old $y$ + (step size) $\\times$ (slope at the old point).",
+  "answer": "$f(0.5) \\approx 1.5$",
+  "solution": "Slope at $(0, 1)$: $\\frac{dy}{dx} = 2(0) + 1 = 1$.\n\n$$y_1 = y_0 + h \\cdot \\frac{dy}{dx}\\Big|_{(0,\\,1)} = 1 + 0.5(1) = 1.5$$\n\nSo $f(0.5) \\approx 1.5$.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q03",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 2x + y$ with $f(0) = 1$.\n\nUse Euler's method with **two steps** of size $0.25$, starting at $x = 0$, to approximate $f(0.5)$.",
+  "hint": "After the first step you are at $x = 0.25$. Work out a new slope there before taking the second step.",
+  "answer": "$f(0.5) \\approx 1.6875$",
+  "solution": "**What changed:** same target $f(0.5)$, but the step size is halved, so two steps are needed.\n\nStep 1: slope at $(0, 1)$ is $2(0) + 1 = 1$.\n$$y_1 = 1 + 0.25(1) = 1.25 \\quad\\text{at } x = 0.25$$\n\nStep 2: slope at $(0.25, 1.25)$ is $2(0.25) + 1.25 = 1.75$.\n$$y_2 = 1.25 + 0.25(1.75) = 1.6875 \\quad\\text{at } x = 0.5$$\n\nSo $f(0.5) \\approx 1.6875$. (The exact value is $3e^{0.5} - 3 \\approx 1.946$; the smaller steps give a better estimate than the one-step value $1.5$, because the slope is updated more often.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q04",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 2x + y$ with $f(0) = 1$.\n\nUse Euler's method with **two steps** of size $0.5$, starting at $x = 0$, to approximate $f(1)$.",
+  "hint": "The first step is the same as with one step of size $0.5$. Recalculate the slope at $(0.5, 1.5)$.",
+  "answer": "$f(1) \\approx 2.75$",
+  "solution": "**What changed:** the step size is back to $0.5$, and we now go two steps, to $x = 1$.\n\nStep 1: slope at $(0, 1)$ is $1$, so $y_1 = 1 + 0.5(1) = 1.5$ at $x = 0.5$.\n\nStep 2: slope at $(0.5, 1.5)$ is $2(0.5) + 1.5 = 2.5$, so\n$$y_2 = 1.5 + 0.5(2.5) = 2.75 \\quad\\text{at } x = 1$$\n\nSo $f(1) \\approx 2.75$. (Exact: $3e - 4 \\approx 4.155$. Large steps over a steepening curve lose a lot of accuracy.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q05",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 2x + y$ with $f(0) = 1$.\n\nUse Euler's method with two steps of size $0.5$, starting at $x = 0$ and moving **to the left**, to approximate $f(-1)$.",
+  "hint": "Moving left means $h = -0.5$. The formula $y_{n+1} = y_n + h\\cdot\\frac{dy}{dx}$ is unchanged.",
+  "answer": "$f(-1) \\approx 0.75$",
+  "solution": "**What changed:** the direction. Now $h = -0.5$, so $\\Delta x$ is negative and $\\Delta y = h \\times \\text{slope}$ has the opposite sign to the slope.\n\nStep 1: slope at $(0, 1)$ is $1$.\n$$y_1 = 1 + (-0.5)(1) = 0.5 \\quad\\text{at } x = -0.5$$\n\nStep 2: slope at $(-0.5, 0.5)$ is $2(-0.5) + 0.5 = -0.5$.\n$$y_2 = 0.5 + (-0.5)(-0.5) = 0.75 \\quad\\text{at } x = -1$$\n\nSo $f(-1) \\approx 0.75$. (Exact: $\\frac{3}{e} \\approx 1.104$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q06",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 1,
+  "type": "reasoning",
+  "question": "The slope field for one of the differential equations below is shown.\n\n(A) $\\dfrac{dy}{dx} = x - 1$ $\\qquad$ (B) $\\dfrac{dy}{dx} = y - 1$ $\\qquad$ (C) $\\dfrac{dy}{dx} = x + y$ $\\qquad$ (D) $\\dfrac{dy}{dx} = 1 - y$\n\nWhich equation is it? Explain why each of the other three can be ruled out.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 240\" width=\"320\" height=\"240\"><line x1=\"16\" y1=\"161.4\" x2=\"304\" y2=\"161.4\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"157\" y1=\"226\" x2=\"157\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,161.4 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M157,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"304\" y=\"154.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"164\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"39.5\" y1=\"158.4\" x2=\"39.5\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"39.5\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"78.7\" y1=\"158.4\" x2=\"78.7\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"78.7\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"117.8\" y1=\"158.4\" x2=\"117.8\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"117.8\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"196.2\" y1=\"158.4\" x2=\"196.2\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"196.2\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"235.3\" y1=\"158.4\" x2=\"235.3\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"235.3\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"274.5\" y1=\"158.4\" x2=\"274.5\" y2=\"164.4\" stroke=\"currentColor\"/><text x=\"274.5\" y=\"176.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"154\" y1=\"201.8\" x2=\"160\" y2=\"201.8\" stroke=\"currentColor\"/><text x=\"151\" y=\"205.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"154\" y1=\"121\" x2=\"160\" y2=\"121\" stroke=\"currentColor\"/><text x=\"151\" y=\"125\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"154\" y1=\"80.6\" x2=\"160\" y2=\"80.6\" stroke=\"currentColor\"/><text x=\"151\" y=\"84.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"154\" y1=\"40.2\" x2=\"160\" y2=\"40.2\" stroke=\"currentColor\"/><text x=\"151\" y=\"44.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"151\" y=\"175.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M35.8 194.1L43.2 209.4M33.6 155.3L45.4 167.5M31 121L48 121M33.6 86.7L45.4 74.5M35.8 47.9L43.2 32.6M75 194.1L82.4 209.4M72.7 155.3L84.6 167.5M70.2 121L87.2 121M72.7 86.7L84.6 74.5M75 47.9L82.4 32.6M114.1 194.1L121.5 209.4M111.9 155.3L123.8 167.5M109.3 121L126.3 121M111.9 86.7L123.8 74.5M114.1 47.9L121.5 32.6M153.3 194.1L160.7 209.4M151.1 155.3L162.9 167.5M148.5 121L165.5 121M151.1 86.7L162.9 74.5M153.3 47.9L160.7 32.6M192.5 194.1L199.9 209.4M190.2 155.3L202.1 167.5M187.7 121L204.7 121M190.2 86.7L202.1 74.5M192.5 47.9L199.9 32.6M231.6 194.1L239 209.4M229.4 155.3L241.3 167.5M226.8 121L243.8 121M229.4 86.7L241.3 74.5M231.6 47.9L239 32.6M270.8 194.1L278.2 209.4M268.6 155.3L280.4 167.5M266 121L283 121M268.6 86.7L280.4 74.5M270.8 47.9L278.2 32.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\"/></svg>",
+  "hint": "Look along a horizontal row (fixed $y$): do the segments change as $x$ changes? Then look at the sign of the slopes above the row $y = 1$.",
+  "answer": "(B) $\\dfrac{dy}{dx} = y - 1$",
+  "solution": "**Observation 1.** Along each horizontal row (fixed $y$) all the segments are identical, so the slope does not depend on $x$. It depends only on $y$. This rules out (A), whose slope depends only on $x$ (it would have identical segments down each **vertical** column), and (C), whose slope changes with $x$ along a row.\n\n**Observation 2.** Along the row $y = 1$ the segments are horizontal, and above it (for example at $y = 2$) the slopes are positive, while below it (at $y = 0$) they are negative.\n\nFor (B), $y - 1$ is positive when $y > 1$. ✓\nFor (D), $1 - y$ would be **negative** when $y > 1$, so (D) is ruled out.\n\nThe answer is **(B)**, $\\frac{dy}{dx} = y - 1$. Check: at $y = 3$ the slope should be $2$ and at $y = -1$ it should be $-2$, which matches the steepest segments in the top and bottom rows.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q07",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = xy$ with $f(1) = 2$. Noah uses Euler's method with two steps of size $0.5$ to approximate $f(2)$. His work is shown below.\n\n**Line 1:** slope at $(1, 2)$ is $1 \\times 2 = 2$\n\n**Line 2:** $y_1 = 2 + 0.5(2) = 3$ at $x = 1.5$\n\n**Line 3:** $y_2 = 3 + 0.5(2) = 4$ at $x = 2$\n\n**Line 4:** $f(2) \\approx 4$\n\nIdentify Noah's error, explain it, and give the correct approximation.",
+  "hint": "Which point should the slope be calculated at for the second step?",
+  "answer": "Line 3: he reused the slope from $(1, 2)$. The slope at $(1.5, 3)$ is $4.5$, giving $f(2) \\approx 5.25$.",
+  "solution": "Lines 1 and 2 are correct.\n\n**Line 3 is wrong.** Noah used the starting slope $2$ again. Euler's method follows a **new** tangent segment at each step, so the slope must be recalculated at the new point $(1.5, 3)$:\n$$\\frac{dy}{dx}\\Big|_{(1.5,\\,3)} = 1.5 \\times 3 = 4.5$$\n\n$$y_2 = 3 + 0.5(4.5) = 3 + 2.25 = 5.25$$\n\nSo $f(2) \\approx 5.25$. Using the same slope for every step just follows a single straight line from $(1, 2)$, which ignores how the slope field changes.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q08",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Let $y = g(x)$ be the solution to $\\dfrac{dy}{dx} = y - x$ with $g(0) = 2$. Ava uses Euler's method with two steps of size $0.1$ to approximate $g(0.2)$. Her work is shown below.\n\n**Line 1:** slope at $(0, 2)$ is $2 - 0 = 2$\n\n**Line 2:** $y_1 = 2 + 2 = 4$ at $x = 0.1$\n\n**Line 3:** slope at $(0.1, 4)$ is $4 - 0.1 = 3.9$\n\n**Line 4:** $y_2 = 4 + 3.9 = 7.9$ at $x = 0.2$\n\nIdentify Ava's error, explain it, and give the correct approximation.",
+  "hint": "The slope tells you the change in $y$ per **one** unit of $x$. How far does $x$ move in each step?",
+  "answer": "Line 2 (and Line 4): she added the slope instead of $h \\times$ slope. Correct: $y_1 = 2.2$, $y_2 = 2.41$, so $g(0.2) \\approx 2.41$.",
+  "solution": "**Line 2 is wrong** (and the same error is repeated in Line 4). Ava added the slope itself to $y$. The slope is the change in $y$ per **unit** change in $x$, but $x$ only moves $0.1$, so\n$$\\Delta y = h \\times \\text{slope} = 0.1 \\times 2 = 0.2$$\n\nCorrected work:\n\nStep 1: $y_1 = 2 + 0.1(2) = 2.2$ at $x = 0.1$.\n\nStep 2: slope at $(0.1, 2.2)$ is $2.2 - 0.1 = 2.1$, so\n$$y_2 = 2.2 + 0.1(2.1) = 2.41 \\quad\\text{at } x = 0.2$$\n\nSo $g(0.2) \\approx 2.41$. Ava's $7.9$ is wildly too big: the curve could not climb almost 6 units over an $x$-distance of $0.2$ with slopes around 2.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q09",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 1 - y$ with $f(0) = 3$.\n\n(a) Use Euler's method with two steps of size $0.5$ to approximate $f(1)$.\n\n(b) Marcus writes: '$\\dfrac{d^2y}{dx^2} = -\\dfrac{dy}{dx} = y - 1$, which is positive because the solution stays above $y = 1$. So the curve is concave up and Euler's method gives an **overestimate**.'\n\nIs Marcus correct? Justify your answer.",
+  "hint": "Draw a concave up curve and one of its tangent lines. Is the tangent above or below the curve?",
+  "answer": "(a) $f(1) \\approx 1.5$ (b) No. His concavity is right, but a concave up curve lies above its tangent lines, so Euler's method gives an underestimate.",
+  "solution": "(a) Step 1: slope at $(0, 3)$ is $1 - 3 = -2$, so $y_1 = 3 + 0.5(-2) = 2$ at $x = 0.5$.\n\nStep 2: slope at $(0.5, 2)$ is $1 - 2 = -1$, so $y_2 = 2 + 0.5(-1) = 1.5$ at $x = 1$.\n\n$f(1) \\approx 1.5$.\n\n(b) Marcus's calculus is correct: $\\frac{d^2y}{dx^2} = \\frac{d}{dx}(1 - y) = -\\frac{dy}{dx} = -(1 - y) = y - 1$. The line $y = 1$ is an equilibrium solution, so the solution starting at $y = 3$ stays above it and $\\frac{d^2y}{dx^2} > 0$: the curve is concave up.\n\nBut his conclusion is backwards. Each Euler step moves along a tangent line, and a **concave up** curve lies **above** its tangent lines. So the Euler points fall below the true curve, and $1.5$ is an **underestimate**. Marcus is not correct.\n\n(Check: the exact solution is $y = 1 + 2e^{-x}$, so $f(1) = 1 + \\frac{2}{e} \\approx 1.736 > 1.5$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q10",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The slope field for the differential equation\n$$\\frac{dy}{dx} = \\frac{1}{2}y(3 - y)$$\nis shown.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Write down the equations of the two equilibrium (constant) solutions, and explain how they appear in the slope field."
+   },
+   {
+    "label": "b",
+    "prompt": "Describe the behavior of the solution curve through $(0, 1)$ as $x$ increases, and find the value of $y$ at which this solution is increasing most rapidly."
+   },
+   {
+    "label": "c",
+    "prompt": "Describe the behavior of the solutions through $(0, 4)$ and through $(0, -0.5)$ as $x$ increases."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><line x1=\"16\" y1=\"205.7\" x2=\"304\" y2=\"205.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"43.3\" y1=\"266\" x2=\"43.3\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,205.7 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M43.3,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"304\" y=\"198.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"50.3\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"88.8\" y1=\"202.7\" x2=\"88.8\" y2=\"208.7\" stroke=\"currentColor\"/><text x=\"88.8\" y=\"220.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"134.3\" y1=\"202.7\" x2=\"134.3\" y2=\"208.7\" stroke=\"currentColor\"/><text x=\"134.3\" y=\"220.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"179.7\" y1=\"202.7\" x2=\"179.7\" y2=\"208.7\" stroke=\"currentColor\"/><text x=\"179.7\" y=\"220.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"225.2\" y1=\"202.7\" x2=\"225.2\" y2=\"208.7\" stroke=\"currentColor\"/><text x=\"225.2\" y=\"220.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><line x1=\"270.7\" y1=\"202.7\" x2=\"270.7\" y2=\"208.7\" stroke=\"currentColor\"/><text x=\"270.7\" y=\"220.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">5</text><line x1=\"40.3\" y1=\"248.8\" x2=\"46.3\" y2=\"248.8\" stroke=\"currentColor\"/><text x=\"37.3\" y=\"252.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"40.3\" y1=\"162.6\" x2=\"46.3\" y2=\"162.6\" stroke=\"currentColor\"/><text x=\"37.3\" y=\"166.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"40.3\" y1=\"119.4\" x2=\"46.3\" y2=\"119.4\" stroke=\"currentColor\"/><text x=\"37.3\" y=\"123.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"40.3\" y1=\"76.3\" x2=\"46.3\" y2=\"76.3\" stroke=\"currentColor\"/><text x=\"37.3\" y=\"80.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"40.3\" y1=\"33.2\" x2=\"46.3\" y2=\"33.2\" stroke=\"currentColor\"/><text x=\"37.3\" y=\"37.2\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"37.3\" y=\"219.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M63 243L69.1 254.5M61 223.1L71 231.4M59.5 205.7L72.5 205.7M60.4 187.4L71.6 180.8M61.3 167L70.8 158.1M61.6 145.7L70.5 136.3M61.3 123.9L70.8 115M60.4 101.2L71.6 94.6M59.5 76.3L72.5 76.3M61 50.6L71 58.9M63 27.5L69.1 39M85.7 243L91.8 254.5M83.8 223.1L93.8 231.4M82.3 205.7L95.3 205.7M83.2 187.4L94.4 180.8M84.1 167L93.5 158.1M84.3 145.7L93.2 136.3M84.1 123.9L93.5 115M83.2 101.2L94.4 94.6M82.3 76.3L95.3 76.3M83.8 50.6L93.8 58.9M85.7 27.5L91.8 39M108.5 243L114.5 254.5M106.5 223.1L116.5 231.4M105 205.7L118 205.7M105.9 187.4L117.1 180.8M106.8 167L116.2 158.1M107.1 145.7L116 136.3M106.8 123.9L116.2 115M105.9 101.2L117.1 94.6M105 76.3L118 76.3M106.5 50.6L116.5 58.9M108.5 27.5L114.5 39M131.2 243L137.3 254.5M129.3 223.1L139.3 231.4M127.8 205.7L140.8 205.7M128.7 187.4L139.9 180.8M129.5 167L139 158.1M129.8 145.7L138.7 136.3M129.5 123.9L139 115M128.7 101.2L139.9 94.6M127.8 76.3L140.8 76.3M129.3 50.6L139.3 58.9M131.2 27.5L137.3 39M154 243L160 254.5M152 223.1L162 231.4M150.5 205.7L163.5 205.7M151.4 187.4L162.6 180.8M152.3 167L161.7 158.1M152.6 145.7L161.4 136.3M152.3 123.9L161.7 115M151.4 101.2L162.6 94.6M150.5 76.3L163.5 76.3M152 50.6L162 58.9M154 27.5L160 39M176.7 243L182.8 254.5M174.7 223.1L184.7 231.4M173.2 205.7L186.2 205.7M174.1 187.4L185.3 180.8M175 167L184.5 158.1M175.3 145.7L184.2 136.3M175 123.9L184.5 115M174.1 101.2L185.3 94.6M173.2 76.3L186.2 76.3M174.7 50.6L184.7 58.9M176.7 27.5L182.8 39M199.5 243L205.5 254.5M197.5 223.1L207.5 231.4M196 205.7L209 205.7M196.9 187.4L208.1 180.8M197.8 167L207.2 158.1M198 145.7L206.9 136.3M197.8 123.9L207.2 115M196.9 101.2L208.1 94.6M196 76.3L209 76.3M197.5 50.6L207.5 58.9M199.5 27.5L205.5 39M222.2 243L228.3 254.5M220.2 223.1L230.2 231.4M218.7 205.7L231.7 205.7M219.6 187.4L230.8 180.8M220.5 167L229.9 158.1M220.8 145.7L229.7 136.3M220.5 123.9L229.9 115M219.6 101.2L230.8 94.6M218.7 76.3L231.7 76.3M220.2 50.6L230.2 58.9M222.2 27.5L228.3 39M244.9 243L251 254.5M243 223.1L253 231.4M241.5 205.7L254.5 205.7M242.4 187.4L253.6 180.8M243.2 167L252.7 158.1M243.5 145.7L252.4 136.3M243.2 123.9L252.7 115M242.4 101.2L253.6 94.6M241.5 76.3L254.5 76.3M243 50.6L253 58.9M244.9 27.5L251 39M267.7 243L273.7 254.5M265.7 223.1L275.7 231.4M264.2 205.7L277.2 205.7M265.1 187.4L276.3 180.8M266 167L275.4 158.1M266.3 145.7L275.2 136.3M266 123.9L275.4 115M265.1 101.2L276.3 94.6M264.2 76.3L277.2 76.3M265.7 50.6L275.7 58.9M267.7 27.5L273.7 39\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg>",
+  "hint": "An equilibrium solution $y = k$ needs $\\frac{dy}{dx} = 0$ for every $x$. For (b), treat $\\frac{1}{2}y(3 - y)$ as a quadratic in $y$.",
+  "answer": "(a) $y = 0$ and $y = 3$: rows of horizontal segments (b) increases, approaching $y = 3$ but never reaching it; fastest when $y = 1.5$ (c) through $(0, 4)$: decreases toward $y = 3$; through $(0, -0.5)$: decreases ever more steeply, moving away from $y = 0$",
+  "solution": "(a) $\\frac{dy}{dx} = 0$ for all $x$ when $y = 0$ or $y = 3$, so $y = 0$ and $y = 3$ are equilibrium solutions. In the slope field they are the rows in which every segment is horizontal. Because the slope depends only on $y$, every row has identical segments.\n\n(b) For $0 < y < 3$, $\\frac{dy}{dx} = \\frac{1}{2}y(3 - y) > 0$, so the solution through $(0, 1)$ increases. As $y \\to 3$, the slopes shrink to $0$, so the curve levels off and approaches $y = 3$ as $x \\to \\infty$. It cannot cross the equilibrium $y = 3$.\n\n$\\frac{1}{2}y(3 - y)$ is a downward parabola in $y$ with roots $0$ and $3$, so it is largest at $y = 1.5$, where the slope is $\\frac{1}{2}(1.5)(1.5) = 1.125$. The solution increases most rapidly when $y = 1.5$.\n\n(c) At $y = 4$, $\\frac{dy}{dx} = \\frac{1}{2}(4)(-1) = -2 < 0$. The solution through $(0, 4)$ decreases, flattening out as it approaches $y = 3$ from above.\n\nAt $y = -0.5$, $\\frac{dy}{dx} = \\frac{1}{2}(-0.5)(3.5) = -0.875 < 0$. The solution through $(0, -0.5)$ decreases, and as $y$ becomes more negative the slopes become steeper and steeper, so it moves away from $y = 0$ and decreases without bound.\n\nSo $y = 3$ attracts nearby solutions (stable) and $y = 0$ repels them (unstable).",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q11",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A cup of coffee is poured at $190^\\circ\\text{F}$ in a room that is kept at $70^\\circ\\text{F}$. Its temperature $T$ (in $^\\circ\\text{F}$) after $t$ minutes satisfies\n$$\\frac{dT}{dt} = -0.1(T - 70)$$\n\n(a) Use Euler's method with three steps of size $\\Delta t = 2$ minutes to approximate the temperature of the coffee after 6 minutes.\n\n(b) Find $\\dfrac{d^2T}{dt^2}$ in terms of $T$, and use it to decide whether your answer to (a) is an overestimate or an underestimate.",
+  "hint": "The slope at each step is $-0.1(T - 70)$ using the current approximate temperature. For (b), differentiate $\\frac{dT}{dt}$ with respect to $t$ using the chain rule.",
+  "answer": "(a) $131.44^\\circ\\text{F}$ (b) $\\dfrac{d^2T}{dt^2} = 0.01(T - 70) > 0$, so concave up and the estimate is an underestimate",
+  "solution": "(a) Start at $(0, 190)$ with $\\Delta t = 2$:\n\n| $t$ | $T$ | $\\frac{dT}{dt} = -0.1(T - 70)$ | $\\Delta T = 2 \\times \\frac{dT}{dt}$ |\n|---|---|---|---|\n| $0$ | $190$ | $-12$ | $-24$ |\n| $2$ | $166$ | $-9.6$ | $-19.2$ |\n| $4$ | $146.8$ | $-7.68$ | $-15.36$ |\n| $6$ | $131.44$ | | |\n\nAfter 6 minutes the temperature is approximately $131.44^\\circ\\text{F}$.\n\n(b)\n$$\\frac{d^2T}{dt^2} = -0.1\\frac{dT}{dt} = -0.1 \\times \\left(-0.1(T - 70)\\right) = 0.01(T - 70)$$\n\nThe coffee is always hotter than the room ($T > 70$), so $\\frac{d^2T}{dt^2} > 0$ and the graph of $T$ is concave up. The tangent-line steps lie below a concave up curve, so $131.44^\\circ\\text{F}$ is an **underestimate**.\n\n(The exact solution is $T = 70 + 120e^{-0.1t}$, giving $T(6) \\approx 135.86^\\circ\\text{F}$.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-chain-product-quotient"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q12",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 10,
+  "question": "Consider the differential equation\n$$\\frac{dy}{dx} = \\frac{x(y - 3)}{2}$$\nThe nine points shown are at $x = -1, 0, 1$ and $y = 2, 3, 4$.\n\nLet $y = f(x)$ be the particular solution to the differential equation with initial condition $f(2) = 4$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the slope of the slope field at each of the nine points shown, and describe the segments you would draw along the line $y = 3$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Write an equation for the line tangent to the graph of $f$ at $x = 2$, and use it to approximate $f(2.2)$.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$. Is your approximation in part (b) an overestimate or an underestimate of $f(2.2)$? Give a reason for your answer.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find $y = f(x)$, the particular solution to the differential equation with initial condition $f(2) = 4$.",
+    "marks": 4
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 250\" width=\"220\" height=\"250\"><line x1=\"18\" y1=\"211.6\" x2=\"204\" y2=\"211.6\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"108\" y1=\"236\" x2=\"108\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M204,211.6 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M108,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"204\" y=\"204.6\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"115\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"58\" y1=\"208.6\" x2=\"58\" y2=\"214.6\" stroke=\"currentColor\"/><text x=\"58\" y=\"226.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"158\" y1=\"208.6\" x2=\"158\" y2=\"214.6\" stroke=\"currentColor\"/><text x=\"158\" y=\"226.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"105\" y1=\"170.8\" x2=\"111\" y2=\"170.8\" stroke=\"currentColor\"/><text x=\"102\" y=\"174.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"105\" y1=\"130.1\" x2=\"111\" y2=\"130.1\" stroke=\"currentColor\"/><text x=\"102\" y=\"134.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"105\" y1=\"89.3\" x2=\"111\" y2=\"89.3\" stroke=\"currentColor\"/><text x=\"102\" y=\"93.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><line x1=\"105\" y1=\"48.6\" x2=\"111\" y2=\"48.6\" stroke=\"currentColor\"/><text x=\"102\" y=\"52.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"102\" y=\"225.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><circle cx=\"58\" cy=\"130.1\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"58\" cy=\"89.3\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"58\" cy=\"48.6\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"108\" cy=\"130.1\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"108\" cy=\"89.3\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"108\" cy=\"48.6\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"158\" cy=\"130.1\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"158\" cy=\"89.3\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"158\" cy=\"48.6\" r=\"2.6\" fill=\"currentColor\"/></svg>",
+  "hint": "For (c) use the product rule on $\\frac{1}{2}x(y - 3)$, remembering that $y$ depends on $x$. For (d), separate the variables.",
+  "answer": "(a) row $y = 4$: $-\\frac{1}{2}, 0, \\frac{1}{2}$; row $y = 3$: $0, 0, 0$; row $y = 2$: $\\frac{1}{2}, 0, -\\frac{1}{2}$ (for $x = -1, 0, 1$); along $y = 3$ all segments are horizontal (b) $y = 4 + (x - 2)$; $f(2.2) \\approx 4.2$ (c) $\\dfrac{d^2y}{dx^2} = \\dfrac{y - 3}{2} + \\dfrac{x^2(y - 3)}{4}$; at $(2, 4)$ it equals $\\frac{3}{2} > 0$, so the graph is concave up and $4.2$ is an underestimate (d) $f(x) = 3 + e^{\\frac{x^2}{4} - 1}$",
+  "solution": "(a) Slopes $\\frac{x(y - 3)}{2}$:\n\n| | $x = -1$ | $x = 0$ | $x = 1$ |\n|---|---|---|---|\n| $y = 4$ | $-\\frac{1}{2}$ | $0$ | $\\frac{1}{2}$ |\n| $y = 3$ | $0$ | $0$ | $0$ |\n| $y = 2$ | $\\frac{1}{2}$ | $0$ | $-\\frac{1}{2}$ |\n\n1 pt: zero slopes at the five points with $x = 0$ or $y = 3$. 1 pt: correct nonzero slopes. Along $y = 3$ every segment is horizontal (in fact $y = 3$ is an equilibrium solution).\n\n(b) At $(2, 4)$: $\\frac{dy}{dx} = \\frac{2(4 - 3)}{2} = 1$. **1 pt**\n$$y = 4 + 1(x - 2), \\qquad f(2.2) \\approx 4 + 0.2 = 4.2 \\quad \\textbf{1 pt}$$\n\n(c) Product rule, with $\\frac{d}{dx}(y - 3) = \\frac{dy}{dx}$:\n$$\\frac{d^2y}{dx^2} = \\frac{1}{2}(y - 3) + \\frac{x}{2}\\cdot\\frac{dy}{dx} = \\frac{y - 3}{2} + \\frac{x^2(y - 3)}{4} \\quad \\textbf{1 pt}$$\n\nAt $(2, 4)$: $\\frac{d^2y}{dx^2} = \\frac{1}{2} + \\frac{4}{4} = \\frac{3}{2} > 0$, so the graph of $f$ is concave up near $x = 2$ and lies above its tangent line. The approximation $4.2$ is an **underestimate**. **1 pt** (answer with reason)\n\n(d)\n$$\\int \\frac{1}{y - 3}\\,dy = \\int \\frac{x}{2}\\,dx \\quad \\textbf{1 pt (separation)}$$\n$$\\ln|y - 3| = \\frac{x^2}{4} + C \\quad \\textbf{1 pt (antiderivatives)}$$\nUsing $f(2) = 4$: $\\ln 1 = 1 + C$, so $C = -1$. **1 pt (constant)**\n$$|y - 3| = e^{\\frac{x^2}{4} - 1}$$\nSince $y - 3 = 1 > 0$ at the initial point, $y = 3 + e^{\\frac{x^2}{4} - 1}$. **1 pt (solves for y)**\n\n(Check: $f(2.2) = 3 + e^{0.21} \\approx 4.234 > 4.2$, consistent with (c).)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-differential-equations"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q13",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "A skydiver jumps from a plane. Until she opens her parachute, her downward velocity $v$ (in feet per second) $t$ seconds after jumping is modeled by\n$$\\frac{dv}{dt} = 32 - 0.16v, \\qquad v(0) = 0$$\n\n(a) Explain how the slope field of this differential equation shows that the skydiver's velocity approaches a limiting (terminal) velocity, and find it.\n\n(b) Use Euler's method with three steps of size $\\Delta t = 1$ second to approximate $v(3)$.\n\n(c) Determine whether your approximation is an overestimate or an underestimate of $v(3)$. Justify your answer.",
+  "hint": "Where are the segments horizontal? For (c), find $\\frac{d^2v}{dt^2}$ and decide its sign for $0 \\le v < 200$.",
+  "answer": "(a) slopes are $0$ along $v = 200$, positive below it; terminal velocity 200 ft/s (b) $v(3) \\approx 81.46$ ft/s (c) overestimate, since $\\frac{d^2v}{dt^2} = -0.16(32 - 0.16v) < 0$ for $v < 200$ (concave down)",
+  "solution": "(a) $\\frac{dv}{dt} = 0$ when $32 - 0.16v = 0$, i.e. $v = 200$. Along the row $v = 200$ every segment is horizontal, so $v = 200$ is an equilibrium solution. For $v < 200$ the slopes are positive but get flatter as $v$ approaches 200, so the solution starting at $v = 0$ rises and levels off toward $v = 200$. Terminal velocity: **200 ft/s** (about 136 mph).\n\n(b)\n\n| $t$ | $v$ | $\\frac{dv}{dt} = 32 - 0.16v$ | $\\Delta v = 1 \\times \\frac{dv}{dt}$ |\n|---|---|---|---|\n| $0$ | $0$ | $32$ | $32$ |\n| $1$ | $32$ | $26.88$ | $26.88$ |\n| $2$ | $58.88$ | $22.5792$ | $22.5792$ |\n| $3$ | $81.4592$ | | |\n\n$v(3) \\approx 81.46$ ft/s.\n\n(c)\n$$\\frac{d^2v}{dt^2} = -0.16\\frac{dv}{dt} = -0.16(32 - 0.16v)$$\nFor $0 \\le v < 200$, $32 - 0.16v > 0$, so $\\frac{d^2v}{dt^2} < 0$ and the graph of $v$ is **concave down**. A concave down curve lies below its tangent lines, so the Euler steps run above the curve: $81.46$ ft/s is an **overestimate**.\n\n(Exact: $v = 200\\left(1 - e^{-0.16t}\\right)$, so $v(3) \\approx 76.24$ ft/s.)",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-slope-fields-euler-q14",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "Consider the differential equation $\\dfrac{dy}{dx} = y - x^2$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the segments of the slope field are horizontal exactly at the points on a certain curve, and name the curve."
+   },
+   {
+    "label": "b",
+    "prompt": "Find $\\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$."
+   },
+   {
+    "label": "c",
+    "prompt": "The solution curve through $(2, 4)$ has a horizontal tangent there. Determine whether it has a relative maximum, a relative minimum or neither at $(2, 4)$."
+   },
+   {
+    "label": "d",
+    "prompt": "Euler's method with one step of size $0.1$, starting at $(2, 4)$, gives $y(2.1) \\approx 4$. Is this an overestimate or an underestimate? Explain."
+   }
+  ],
+  "hint": "Differentiate $y - x^2$ with respect to $x$, remembering $\\frac{d}{dx}(y) = \\frac{dy}{dx}$. Then use the second derivative test.",
+  "answer": "(a) the parabola $y = x^2$ (b) $\\dfrac{d^2y}{dx^2} = y - x^2 - 2x$ (c) relative maximum (d) overestimate",
+  "solution": "(a) Segments are horizontal where $\\frac{dy}{dx} = 0$: $y - x^2 = 0$, i.e. on the **parabola** $y = x^2$. (Above it the slopes are positive; below it they are negative.)\n\n(b)\n$$\\frac{d^2y}{dx^2} = \\frac{dy}{dx} - 2x = (y - x^2) - 2x = y - x^2 - 2x$$\n\n(c) At $(2, 4)$: $\\frac{dy}{dx} = 4 - 4 = 0$ and\n$$\\frac{d^2y}{dx^2} = 4 - 4 - 4 = -4 < 0$$\nBy the second derivative test, the solution curve has a **relative maximum** at $(2, 4)$.\n\n(d) Euler's step follows the horizontal tangent at $(2, 4)$, giving $4$. Since the curve has a maximum at $(2, 4)$ (concave down there, $\\frac{d^2y}{dx^2} < 0$), the actual values just to the right are **below** 4. So $y(2.1) \\approx 4$ is an **overestimate**.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-concavity-inflection",
+   "calc-stationary-points"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q15",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "Let $y = h(x)$ be the solution to $\\dfrac{dy}{dx} = x + ky$ with $h(0) = 2$, where $k$ is a positive constant.\n\nEuler's method with two steps of size $0.5$, starting at $x = 0$, gives the approximation $h(1) \\approx 8.25$. Find the value of $k$.",
+  "hint": "Carry $k$ through both Euler steps, keeping it as a letter. You will get a quadratic equation in $k$.",
+  "answer": "$k = 2$",
+  "solution": "Step 1: slope at $(0, 2)$ is $0 + 2k = 2k$.\n$$y_1 = 2 + 0.5(2k) = 2 + k \\quad\\text{at } x = 0.5$$\n\nStep 2: slope at $(0.5, 2 + k)$ is $0.5 + k(2 + k) = 0.5 + 2k + k^2$.\n$$y_2 = (2 + k) + 0.5\\left(0.5 + 2k + k^2\\right) = 2.25 + 2k + 0.5k^2$$\n\nSet this equal to $8.25$:\n$$0.5k^2 + 2k + 2.25 = 8.25 \\quad\\Rightarrow\\quad k^2 + 4k - 12 = 0 \\quad\\Rightarrow\\quad (k + 6)(k - 2) = 0$$\n\nSo $k = 2$ or $k = -6$. Since $k > 0$, $k = 2$.\n\nCheck with $k = 2$: slope $4$ gives $y_1 = 4$; slope at $(0.5, 4)$ is $0.5 + 8 = 8.5$, giving $y_2 = 4 + 4.25 = 8.25$. ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": [
+   "alg-quadratic-equations-factorising"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q16",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The slope field for the differential equation $\\dfrac{dy}{dx} = x - y$ is shown.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the line $y = x - 1$ is a solution of the differential equation, and describe how this appears in the slope field."
+   },
+   {
+    "label": "b",
+    "prompt": "The solution curve through the origin has slope $0$ there. Show that it has a relative minimum at the origin."
+   },
+   {
+    "label": "c",
+    "prompt": "Find $\\dfrac{d^2y}{dx^2}$ in terms of $x$ and $y$, and hence show that every solution curve lying above the line $y = x - 1$ is concave up."
+   },
+   {
+    "label": "d",
+    "prompt": "Let $u = y - (x - 1)$ measure how far a solution is above the line. Show that $\\dfrac{du}{dx} = -u$, and explain what this tells you about every solution as $x \\to \\infty$."
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 290\" width=\"300\" height=\"290\"><line x1=\"16\" y1=\"167.7\" x2=\"284\" y2=\"167.7\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"125.2\" y1=\"276\" x2=\"125.2\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,167.7 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M125.2,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"160.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"132.2\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"37.8\" y1=\"164.7\" x2=\"37.8\" y2=\"170.7\" stroke=\"currentColor\"/><text x=\"37.8\" y=\"182.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"81.5\" y1=\"164.7\" x2=\"81.5\" y2=\"170.7\" stroke=\"currentColor\"/><text x=\"81.5\" y=\"182.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"168.8\" y1=\"164.7\" x2=\"168.8\" y2=\"170.7\" stroke=\"currentColor\"/><text x=\"168.8\" y=\"182.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"212.5\" y1=\"164.7\" x2=\"212.5\" y2=\"170.7\" stroke=\"currentColor\"/><text x=\"212.5\" y=\"182.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"256.2\" y1=\"164.7\" x2=\"256.2\" y2=\"170.7\" stroke=\"currentColor\"/><text x=\"256.2\" y=\"182.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"122.2\" y1=\"254.3\" x2=\"128.2\" y2=\"254.3\" stroke=\"currentColor\"/><text x=\"119.2\" y=\"258.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"122.2\" y1=\"211\" x2=\"128.2\" y2=\"211\" stroke=\"currentColor\"/><text x=\"119.2\" y=\"215\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−1</text><line x1=\"122.2\" y1=\"124.3\" x2=\"128.2\" y2=\"124.3\" stroke=\"currentColor\"/><text x=\"119.2\" y=\"128.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><line x1=\"122.2\" y1=\"81\" x2=\"128.2\" y2=\"81\" stroke=\"currentColor\"/><text x=\"119.2\" y=\"85\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"122.2\" y1=\"37.7\" x2=\"128.2\" y2=\"37.7\" stroke=\"currentColor\"/><text x=\"119.2\" y=\"41.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">3</text><text x=\"119.2\" y=\"181.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M31.8 254.3L43.8 254.3M32.5 230L43.2 235.3M33.6 206.8L42.1 215.2M34.5 184.4L41.2 194.3M35.1 162.3L40.5 173M35.6 140.4L40.1 151.6M35.9 118.6L39.7 130M36.2 96.9L39.5 108.4M36.4 75.2L39.3 86.8M36.5 53.5L39.1 65.2M36.6 31.8L39 43.5M54.3 257L65 251.7M53.7 232.7L65.7 232.7M54.3 208.3L65 213.7M55.4 185.1L63.9 193.6M56.3 162.7L63 172.6M57 140.6L62.4 151.4M57.4 118.8L61.9 129.9M57.8 97L61.6 108.4M58 75.2L61.3 86.8M58.2 53.5L61.1 65.2M58.4 31.8L61 43.5M77.2 258.6L85.8 250.1M76.1 235.3L86.9 230M75.5 211L87.5 211M76.1 186.7L86.9 192M77.2 163.4L85.8 171.9M78.2 141L84.8 151M78.8 119L84.2 129.7M79.3 97.1L83.7 108.2M79.6 75.3L83.4 86.7M79.8 53.6L83.2 65.1M80 31.8L83 43.5M100 259.3L106.7 249.4M99.1 236.9L107.6 228.4M98 213.7L108.7 208.3M97.3 189.3L109.3 189.3M98 165L108.7 170.3M99.1 141.8L107.6 150.2M100 119.4L106.7 129.3M100.6 97.3L106 108M101.1 75.4L105.6 86.6M101.4 53.6L105.2 65M101.7 31.9L105 43.4M122.5 259.7L127.9 249M121.8 237.6L128.5 227.7M120.9 215.2L129.4 206.8M119.8 192L130.5 186.7M119.2 167.7L131.2 167.7M119.8 143.3L130.5 148.7M120.9 120.1L129.4 128.6M121.8 97.7L128.5 107.6M122.5 75.6L127.9 86.4M122.9 53.8L127.4 64.9M123.3 32L127.1 43.4M144.8 259.9L149.2 248.8M144.3 238L149.7 227.3M143.7 216L150.3 206M142.7 193.6L151.3 185.1M141.6 170.3L152.4 165M141 146L153 146M141.6 121.7L152.4 127M142.7 98.4L151.3 106.9M143.7 76L150.3 86M144.3 54L149.7 64.7M144.8 32.1L149.2 43.2M166.9 260L170.7 248.6M166.6 238.2L171.1 227.1M166.1 216.4L171.5 205.6M165.5 194.3L172.2 184.4M164.6 171.9L173.1 163.4M163.5 148.7L174.2 143.3M162.8 124.3L174.8 124.3M163.5 100L174.2 105.3M164.6 76.8L173.1 85.2M165.5 54.4L172.2 64.3M166.1 32.3L171.5 43M189 260.1L192.3 248.6M188.8 238.4L192.6 227M188.4 216.6L192.9 205.4M188 194.7L193.4 184M187.3 172.6L194 162.7M186.4 150.2L194.9 141.8M185.3 127L196 121.7M184.7 102.7L196.7 102.7M185.3 78.3L196 83.7M186.4 55.1L194.9 63.6M187.3 32.7L194 42.6M211 260.2L214 248.5M210.8 238.4L214.2 226.9M210.6 216.7L214.4 205.3M210.3 194.9L214.7 183.8M209.8 173L215.2 162.3M209.2 151L215.8 141M208.2 128.6L216.8 120.1M207.1 105.3L217.9 100M206.5 81L218.5 81M207.1 56.7L217.9 62M208.2 33.4L216.8 41.9M233 260.2L235.6 248.5M232.9 238.5L235.8 226.8M232.7 216.8L236 205.2M232.4 195L236.2 183.6M232.1 173.2L236.6 162.1M231.6 151.4L237 140.6M231 129.3L237.7 119.4M230.1 106.9L238.6 98.4M229 83.7L239.7 78.3M228.3 59.3L240.3 59.3M229 35L239.7 40.3M255 260.2L257.4 248.5M254.9 238.5L257.5 226.8M254.7 216.8L257.6 205.2M254.5 195.1L257.8 183.6M254.3 173.4L258.1 162M253.9 151.6L258.4 140.4M253.5 129.7L258.9 119M252.8 107.6L259.5 97.7M251.9 85.2L260.4 76.8M250.8 62L261.5 56.7M250.2 37.7L262.2 37.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\"/></svg>",
+  "hint": "For a line, $\\frac{dy}{dx}$ is its slope. For (c), $\\frac{d^2y}{dx^2} = 1 - \\frac{dy}{dx}$.",
+  "answer": "(a) $\\frac{dy}{dx} = 1$ and $x - (x - 1) = 1$; the segments along this line all have slope 1 and lie along it (b) $\\frac{d^2y}{dx^2} = 1 > 0$ at $(0, 0)$ (c) $\\frac{d^2y}{dx^2} = 1 - x + y > 0$ when $y > x - 1$ (d) $u = Ce^{-x} \\to 0$, so every solution approaches the line $y = x - 1$",
+  "solution": "(a) For $y = x - 1$: the left side is $\\frac{dy}{dx} = 1$, and the right side is $x - y = x - (x - 1) = 1$. They agree for all $x$, so $y = x - 1$ is a solution. In the slope field, every segment on this line has slope 1, so the segments line up along the line itself (for example at $(1, 0)$, $(2, 1)$, $(3, 2)$).\n\n(b) At $(0, 0)$: $\\frac{dy}{dx} = 0$. Also $\\frac{d^2y}{dx^2} = 1 - \\frac{dy}{dx} = 1 - 0 = 1 > 0$. By the second derivative test the solution has a relative minimum at the origin.\n\n(c)\n$$\\frac{d^2y}{dx^2} = \\frac{d}{dx}(x - y) = 1 - \\frac{dy}{dx} = 1 - (x - y) = 1 - x + y$$\nAbove the line, $y > x - 1$, i.e. $y - x + 1 > 0$, so $\\frac{d^2y}{dx^2} > 0$: concave up. (Below the line it is negative, so solutions there are concave down.)\n\n(d)\n$$\\frac{du}{dx} = \\frac{dy}{dx} - 1 = (x - y) - 1 = -(y - x + 1) = -u$$\nThis is exponential decay: $u = Ce^{-x}$. As $x \\to \\infty$, $u \\to 0$, so **every** solution approaches the line $y = x - 1$ (from above if it starts above, from below if below). This matches the slope field, where solution curves on the right are all funneled toward the line.",
+  "linkedTopicIds": [
+   "calc-concavity-inflection"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q17",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 5,
+  "type": "synoptic",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = y$ with $f(0) = 1$, so that $f(1) = e$.\n\n(a) Show that Euler's method with $n$ equal steps from $x = 0$ to $x = 1$ gives the approximation\n$$f(1) \\approx \\left(1 + \\frac{1}{n}\\right)^n$$\n\n(b) Evaluate this approximation for $n = 10$ and $n = 100$, and find the percentage error in each case, to 2 decimal places.\n\n(c) Explain why, for every $n$, the approximation is an underestimate, and state the limit of $\\left(1 + \\frac{1}{n}\\right)^n$ as $n \\to \\infty$.",
+  "hint": "With $h = \\frac{1}{n}$, each step multiplies $y$ by the same factor. That makes the $y$-values a geometric sequence.",
+  "answer": "(a) each step gives $y_{k+1} = \\left(1 + \\frac{1}{n}\\right)y_k$ (b) $n = 10$: $2.5937$, error $4.58\\%$; $n = 100$: $2.7048$, error $0.50\\%$ (c) $y'' = y > 0$ so the solution is concave up and lies above the tangent steps; the limit is $e$",
+  "solution": "(a) The step size is $h = \\frac{1}{n}$. At each step the slope is the current $y$-value, so\n$$y_{k+1} = y_k + \\frac{1}{n}y_k = \\left(1 + \\frac{1}{n}\\right)y_k$$\nThe $y$-values form a geometric sequence with first term $y_0 = 1$ and common ratio $1 + \\frac{1}{n}$. After $n$ steps (at $x = 1$):\n$$y_n = \\left(1 + \\frac{1}{n}\\right)^n$$\n\n(b) $n = 10$: $1.1^{10} = 2.5937\\ldots$; percentage error $= \\dfrac{e - 2.5937}{e} \\times 100\\% \\approx 4.58\\%$.\n\n$n = 100$: $1.01^{100} = 2.7048\\ldots$; percentage error $\\approx 0.50\\%$.\n\n(Ten times as many steps cuts the error by about a factor of 10: Euler's method error is roughly proportional to $h$.)\n\n(c) $\\frac{d^2y}{dx^2} = \\frac{dy}{dx} = y > 0$ (the solution $y = e^x$ is positive), so the solution curve is concave up everywhere. Each Euler step moves along a tangent line, which lies below a concave up curve, so every approximation is less than $e$.\n\nAs $n \\to \\infty$ the step size $\\to 0$ and the Euler approximation tends to the true value:\n$$\\lim_{n\\to\\infty}\\left(1 + \\frac{1}{n}\\right)^n = e$$",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "pure-geometric-series",
+   "calc-limits-infinity"
+  ]
+ },
+ {
+  "id": "calc-slope-fields-euler-q18",
+  "topicId": "calc-slope-fields-euler",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Let $y = f(x)$ be the solution to $\\dfrac{dy}{dx} = 1 + y^2$ with $f(0) = 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Use Euler's method with two steps of size $0.5$ to approximate $f(1)$."
+   },
+   {
+    "label": "b",
+    "prompt": "Solve the differential equation by separating variables, and hence explain whether your answer to (a) is an overestimate or an underestimate."
+   },
+   {
+    "label": "c",
+    "prompt": "Leah uses Euler's method with four steps of size $\\frac{\\pi}{8}$ and obtains $f\\left(\\frac{\\pi}{2}\\right) \\approx 2.82$. Explain why her result is meaningless."
+   }
+  ],
+  "hint": "$\\int \\frac{1}{1 + y^2}\\,dy = \\arctan y$. What happens to $\\tan x$ as $x \\to \\frac{\\pi}{2}$?",
+  "answer": "(a) $f(1) \\approx 1.125$ (b) $f(x) = \\tan x$; $f(1) = \\tan 1 \\approx 1.557$, so $1.125$ is an underestimate (c) $f(x) = \\tan x \\to \\infty$ as $x \\to \\frac{\\pi}{2}^-$, so $f\\left(\\frac{\\pi}{2}\\right)$ does not exist, but Euler's method always produces a finite number",
+  "solution": "(a) Step 1: slope at $(0, 0)$ is $1 + 0 = 1$, so $y_1 = 0 + 0.5(1) = 0.5$.\n\nStep 2: slope at $(0.5, 0.5)$ is $1 + 0.25 = 1.25$, so $y_2 = 0.5 + 0.5(1.25) = 1.125$.\n\n$f(1) \\approx 1.125$.\n\n(b) Separate:\n$$\\int \\frac{1}{1 + y^2}\\,dy = \\int 1\\,dx \\quad\\Rightarrow\\quad \\arctan y = x + C$$\n$f(0) = 0$ gives $C = 0$, so $f(x) = \\tan x$ for $-\\frac{\\pi}{2} < x < \\frac{\\pi}{2}$.\n\n$f(1) = \\tan 1 \\approx 1.557$, so $1.125$ is an **underestimate**. This agrees with concavity: $\\frac{d^2y}{dx^2} = 2y\\frac{dy}{dx} = 2y(1 + y^2) > 0$ for $y > 0$, so the curve is concave up on $0 < x < 1$ and lies above its tangent steps.\n\n(c) Leah's steps (approximately):\n$$0 \\to 0.393 \\to 0.846 \\to 1.520 \\to 2.819$$\nEvery Euler step adds a finite amount, so Euler's method always gives a finite number. But the true solution is $f(x) = \\tan x$, which has a vertical asymptote at $x = \\frac{\\pi}{2}$: $f(x) \\to \\infty$ as $x \\to \\frac{\\pi}{2}^-$. The solution does not exist at $\\frac{\\pi}{2}$, so there is no value for her result to approximate. Euler's method cannot detect that a solution 'blows up'.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": [
+   "calc-differential-equations"
+  ]
+ }
+]

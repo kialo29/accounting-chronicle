@@ -1,0 +1,409 @@
+[
+ {
+  "id": "calc-concavity-inflection-q01",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of the points of inflection on the curve $y = x^4 - 6x^2$, and state the interval on which the curve is concave.",
+  "hint": "Solve $\\frac{d^2y}{dx^2} = 0$, then check that $\\frac{d^2y}{dx^2}$ changes sign either side of each solution.",
+  "answer": "$(-1, -5)$ and $(1, -5)$; concave for $-1 < x < 1$",
+  "solution": "$$\\frac{dy}{dx} = 4x^3 - 12x, \\qquad \\frac{d^2y}{dx^2} = 12x^2 - 12 = 12(x - 1)(x + 1)$$\n\n$\\frac{d^2y}{dx^2} = 0$ when $x = \\pm1$. Check the sign:\n\n| $x$ | $-2$ | $0$ | $2$ |\n|---|---|---|---|\n| $\\frac{d^2y}{dx^2}$ | $36 > 0$ | $-12 < 0$ | $36 > 0$ |\n\nThe sign changes at both $x = -1$ and $x = 1$, so both are points of inflection. $y = 1 - 6 = -5$ in each case:\n$$(-1, -5) \\text{ and } (1, -5)$$\n\n$\\frac{d^2y}{dx^2} < 0$ for $-1 < x < 1$, so the curve is **concave** there (and convex for $x < -1$ and $x > 1$).",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q02",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Find the coordinates of any points of inflection on the curve $y = x^4 + 6x^2$.",
+  "hint": "Find $\\frac{d^2y}{dx^2}$. Can it ever be zero?",
+  "answer": "There are none: $\\dfrac{d^2y}{dx^2} = 12x^2 + 12 > 0$ for all $x$, so the curve is convex everywhere.",
+  "solution": "**What changed:** the sign of the $x^2$ term ($+6x^2$ instead of $-6x^2$).\n\n$$\\frac{d^2y}{dx^2} = 12x^2 + 12$$\n\nSince $12x^2 \\ge 0$, $\\frac{d^2y}{dx^2} \\ge 12 > 0$ for every $x$. It is never zero and never changes sign, so the curve is **convex for all $x$** and has **no points of inflection**.",
+  "misconceptionIds": [],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q03",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Determine whether the curve $y = x^4$ has a point of inflection.",
+  "hint": "$\\frac{d^2y}{dx^2} = 0$ at one point. Does $\\frac{d^2y}{dx^2}$ change sign there?",
+  "answer": "No. $\\dfrac{d^2y}{dx^2} = 12x^2 = 0$ at $x = 0$ but it is positive on both sides, so there is no change of concavity (the origin is a minimum).",
+  "solution": "**What changed:** the $6x^2$ term has been removed.\n\n$$\\frac{d^2y}{dx^2} = 12x^2$$\nThis is $0$ at $x = 0$, so $x = 0$ is a **candidate**. Check the sign:\n- $x = -1$: $12 > 0$\n- $x = 1$: $12 > 0$\n\n$\\frac{d^2y}{dx^2}$ does **not** change sign: the curve is convex on both sides of the origin. So there is **no** point of inflection, even though $\\frac{d^2y}{dx^2} = 0$ at $x = 0$. (The origin is a minimum point.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q04",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Determine whether the curve $y = x^5$ has a point of inflection. If it does, state whether it is a stationary point of inflection.",
+  "hint": "Compare with $y = x^4$. What is the sign of $x^3$ either side of $0$?",
+  "answer": "Yes: $(0, 0)$ is a point of inflection ($\\frac{d^2y}{dx^2} = 20x^3$ changes sign), and it is a stationary point of inflection since $\\frac{dy}{dx} = 0$ there.",
+  "solution": "**What changed:** the power is $5$ instead of $4$.\n\n$$\\frac{dy}{dx} = 5x^4, \\qquad \\frac{d^2y}{dx^2} = 20x^3$$\n$\\frac{d^2y}{dx^2} = 0$ at $x = 0$. Check the sign:\n- $x = -1$: $-20 < 0$ (concave)\n- $x = 1$: $20 > 0$ (convex)\n\nThe sign changes, so $(0, 0)$ **is** a point of inflection. Also $\\frac{dy}{dx} = 0$ at $x = 0$, so it is a **stationary** point of inflection.\n\nThe odd power makes $\\frac{d^2y}{dx^2}$ an odd power of $x$, which changes sign at $0$; with $x^4$ the second derivative was an even power, which does not.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q05",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "Grace is asked to find any points of inflection on the curve $y = x^3 - 3x^2 + 4x$. Her working is shown below.\n\n$$\\frac{dy}{dx} = 3x^2 - 6x + 4, \\qquad \\frac{d^2y}{dx^2} = 6x - 6$$\n\n$\\dfrac{d^2y}{dx^2} = 0$ when $x = 1$, so $y = 1 - 3 + 4 = 2$.\n\nAt $x = 1$, $\\dfrac{dy}{dx} = 3 - 6 + 4 = 1$. This is not $0$, so $(1, 2)$ is not a stationary point and cannot be a point of inflection.\n\nSo the curve has no points of inflection.\n\nIdentify Grace's error, explain it, and give the correct conclusion.",
+  "hint": "What is the definition of a point of inflection? Does it say anything about the gradient being zero?",
+  "answer": "Grace thinks a point of inflection must be stationary. $\\frac{d^2y}{dx^2} = 6x - 6$ changes sign at $x = 1$, so $(1, 2)$ is a (non-stationary) point of inflection.",
+  "solution": "Grace's derivatives and the point $(1, 2)$ are correct.\n\n**Error:** she assumes a point of inflection must have zero gradient. A point of inflection is where the curve **changes concavity**, i.e. where $\\frac{d^2y}{dx^2}$ changes sign. The gradient there can be any value; stationary points of inflection are just a special case.\n\n**Correct check:** $\\frac{d^2y}{dx^2} = 6x - 6$:\n- $x = 0$: $-6 < 0$ (concave)\n- $x = 2$: $6 > 0$ (convex)\n\nThe sign changes, so $(1, 2)$ **is** a point of inflection. Since $\\frac{dy}{dx} = 1$ there, it is a **non-stationary** point of inflection: the curve is still rising (in fact $\\frac{dy}{dx} = 3(x - 1)^2 + 1 > 0$ everywhere) but changes from bending one way to bending the other.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q06",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "question": "The diagram shows the graph of $y = f'(x)$, where $f'(x) = 4 - x^2$.\n\nHannah writes: \"$f'(x) = 0$ when $x = -2$ and $x = 2$, so the graph of $y = f(x)$ has points of inflection at $x = -2$ and $x = 2$.\"\n\nIdentify Hannah's error. State what happens to the graph of $y = f(x)$ at $x = -2$ and at $x = 2$, and find the $x$-coordinate of the point of inflection of $y = f(x)$.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 260\" width=\"300\" height=\"260\"><line x1=\"16\" y1=\"244\" x2=\"16\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"54.5\" y1=\"244\" x2=\"54.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"93.1\" y1=\"244\" x2=\"93.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"131.6\" y1=\"244\" x2=\"131.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"170.1\" y1=\"244\" x2=\"170.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"208.6\" y1=\"244\" x2=\"208.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"247.2\" y1=\"244\" x2=\"247.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"244\" x2=\"278\" y2=\"244\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"223.3\" x2=\"278\" y2=\"223.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"202.5\" x2=\"278\" y2=\"202.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"181.8\" x2=\"278\" y2=\"181.8\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"161.1\" x2=\"278\" y2=\"161.1\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"140.4\" x2=\"278\" y2=\"140.4\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"119.6\" x2=\"278\" y2=\"119.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"98.9\" x2=\"278\" y2=\"98.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"78.2\" x2=\"278\" y2=\"78.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"57.5\" x2=\"278\" y2=\"57.5\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"36.7\" x2=\"278\" y2=\"36.7\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"16\" x2=\"278\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"130\" x2=\"284\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"147\" y1=\"244\" x2=\"147\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M284,130 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M147,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"284\" y=\"123\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"154\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"31.4\" y1=\"127\" x2=\"31.4\" y2=\"133\" stroke=\"currentColor\"/><text x=\"31.4\" y=\"145\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−3</text><line x1=\"108.5\" y1=\"127\" x2=\"108.5\" y2=\"133\" stroke=\"currentColor\"/><text x=\"108.5\" y=\"145\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"185.5\" y1=\"127\" x2=\"185.5\" y2=\"133\" stroke=\"currentColor\"/><text x=\"185.5\" y=\"145\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"262.6\" y1=\"127\" x2=\"262.6\" y2=\"133\" stroke=\"currentColor\"/><text x=\"262.6\" y=\"145\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><line x1=\"144\" y1=\"212.9\" x2=\"150\" y2=\"212.9\" stroke=\"currentColor\"/><text x=\"141\" y=\"216.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"144\" y1=\"171.5\" x2=\"150\" y2=\"171.5\" stroke=\"currentColor\"/><text x=\"141\" y=\"175.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"144\" y1=\"88.5\" x2=\"150\" y2=\"88.5\" stroke=\"currentColor\"/><text x=\"141\" y=\"92.5\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"144\" y1=\"47.1\" x2=\"150\" y2=\"47.1\" stroke=\"currentColor\"/><text x=\"141\" y=\"51.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><text x=\"141\" y=\"144\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><line x1=\"69.9\" y1=\"127.0\" x2=\"69.9\" y2=\"133.0\" stroke=\"currentColor\"/><line x1=\"224.1\" y1=\"127.0\" x2=\"224.1\" y2=\"133.0\" stroke=\"currentColor\"/><text x=\"73.9\" y=\"124\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">−2</text><text x=\"219.1\" y=\"124\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><path d=\"M28.4,243.3 L29.1,241.2 L29.8,239 L30.4,236.9 L31.1,234.8 L31.7,232.6 L32.4,230.5 L33,228.4 L33.7,226.4 L34.3,224.3 L35,222.2 L35.7,220.2 L36.3,218.2 L37,216.2 L37.6,214.2 L38.3,212.2 L38.9,210.2 L39.6,208.2 L40.2,206.2 L40.9,204.3 L41.5,202.4 L42.2,200.4 L42.9,198.5 L43.5,196.6 L44.2,194.7 L44.8,192.9 L45.5,191 L46.1,189.2 L46.8,187.3 L47.4,185.5 L48.1,183.7 L48.8,181.9 L49.4,180.1 L50.1,178.3 L50.7,176.5 L51.4,174.8 L52,173 L52.7,171.3 L53.3,169.6 L54,167.9 L54.6,166.2 L55.3,164.5 L56,162.8 L56.6,161.2 L57.3,159.5 L57.9,157.9 L58.6,156.3 L59.2,154.7 L59.9,153.1 L60.5,151.5 L61.2,149.9 L61.8,148.3 L62.5,146.8 L63.2,145.2 L63.8,143.7 L64.5,142.2 L65.1,140.7 L65.8,139.2 L66.4,137.7 L67.1,136.2 L67.7,134.8 L68.4,133.3 L69.1,131.9 L69.7,130.5 L70.4,129.1 L71,127.7 L71.7,126.3 L72.3,124.9 L73,123.6 L73.6,122.2 L74.3,120.9 L75,119.6 L75.6,118.3 L76.3,117 L76.9,115.7 L77.6,114.4 L78.2,113.1 L78.9,111.9 L79.5,110.6 L80.2,109.4 L80.8,108.2 L81.5,107 L82.2,105.8 L82.8,104.6 L83.5,103.5 L84.1,102.3 L84.8,101.2 L85.4,100 L86.1,98.9 L86.7,97.8 L87.4,96.7 L88.1,95.6 L88.7,94.5 L89.4,93.5 L90,92.4 L90.7,91.4 L91.3,90.4 L92,89.4 L92.6,88.4 L93.3,87.4 L93.9,86.4 L94.6,85.4 L95.3,84.5 L95.9,83.5 L96.6,82.6 L97.2,81.7 L97.9,80.8 L98.5,79.9 L99.2,79 L99.8,78.1 L100.5,77.3 L101.2,76.4 L101.8,75.6 L102.5,74.8 L103.1,74 L103.8,73.2 L104.4,72.4 L105.1,71.6 L105.7,70.9 L106.4,70.1 L107,69.4 L107.7,68.7 L108.4,67.9 L109,67.2 L109.7,66.6 L110.3,65.9 L111,65.2 L111.6,64.6 L112.3,63.9 L112.9,63.3 L113.6,62.7 L114.2,62.1 L114.9,61.5 L115.6,60.9 L116.2,60.3 L116.9,59.8 L117.5,59.2 L118.2,58.7 L118.8,58.2 L119.5,57.7 L120.1,57.2 L120.8,56.7 L121.5,56.2 L122.1,55.7 L122.8,55.3 L123.4,54.9 L124.1,54.4 L124.7,54 L125.4,53.6 L126,53.2 L126.7,52.8 L127.4,52.5 L128,52.1 L128.7,51.8 L129.3,51.5 L130,51.1 L130.6,50.8 L131.3,50.5 L131.9,50.3 L132.6,50 L133.2,49.7 L133.9,49.5 L134.6,49.3 L135.2,49 L135.9,48.8 L136.5,48.6 L137.2,48.4 L137.8,48.3 L138.5,48.1 L139.1,48 L139.8,47.8 L140.4,47.7 L141.1,47.6 L141.8,47.5 L142.4,47.4 L143.1,47.3 L143.7,47.2 L144.4,47.2 L145,47.1 L145.7,47.1 L146.3,47.1 L147,47.1 L147.7,47.1 L148.3,47.1 L149,47.1 L149.6,47.2 L150.3,47.2 L150.9,47.3 L151.6,47.4 L152.2,47.5 L152.9,47.6 L153.6,47.7 L154.2,47.8 L154.9,48 L155.5,48.1 L156.2,48.3 L156.8,48.4 L157.5,48.6 L158.1,48.8 L158.8,49 L159.4,49.3 L160.1,49.5 L160.8,49.7 L161.4,50 L162.1,50.3 L162.7,50.5 L163.4,50.8 L164,51.1 L164.7,51.5 L165.3,51.8 L166,52.1 L166.7,52.5 L167.3,52.8 L168,53.2 L168.6,53.6 L169.3,54 L169.9,54.4 L170.6,54.9 L171.2,55.3 L171.9,55.7 L172.5,56.2 L173.2,56.7 L173.9,57.2 L174.5,57.7 L175.2,58.2 L175.8,58.7 L176.5,59.2 L177.1,59.8 L177.8,60.3 L178.4,60.9 L179.1,61.5 L179.8,62.1 L180.4,62.7 L181.1,63.3 L181.7,63.9 L182.4,64.6 L183,65.2 L183.7,65.9 L184.3,66.6 L185,67.2 L185.6,67.9 L186.3,68.7 L187,69.4 L187.6,70.1 L188.3,70.9 L188.9,71.6 L189.6,72.4 L190.2,73.2 L190.9,74 L191.5,74.8 L192.2,75.6 L192.9,76.4 L193.5,77.3 L194.2,78.1 L194.8,79 L195.5,79.9 L196.1,80.8 L196.8,81.7 L197.4,82.6 L198.1,83.5 L198.7,84.5 L199.4,85.4 L200.1,86.4 L200.7,87.4 L201.4,88.4 L202,89.4 L202.7,90.4 L203.3,91.4 L204,92.4 L204.6,93.5 L205.3,94.5 L205.9,95.6 L206.6,96.7 L207.3,97.8 L207.9,98.9 L208.6,100 L209.2,101.2 L209.9,102.3 L210.5,103.5 L211.2,104.6 L211.8,105.8 L212.5,107 L213.2,108.2 L213.8,109.4 L214.5,110.6 L215.1,111.9 L215.8,113.1 L216.4,114.4 L217.1,115.7 L217.7,117 L218.4,118.3 L219,119.6 L219.7,120.9 L220.4,122.2 L221,123.6 L221.7,124.9 L222.3,126.3 L223,127.7 L223.6,129.1 L224.3,130.5 L224.9,131.9 L225.6,133.3 L226.3,134.8 L226.9,136.2 L227.6,137.7 L228.2,139.2 L228.9,140.7 L229.5,142.2 L230.2,143.7 L230.8,145.2 L231.5,146.8 L232.2,148.3 L232.8,149.9 L233.5,151.5 L234.1,153.1 L234.8,154.7 L235.4,156.3 L236.1,157.9 L236.7,159.5 L237.4,161.2 L238,162.8 L238.7,164.5 L239.4,166.2 L240,167.9 L240.7,169.6 L241.3,171.3 L242,173 L242.6,174.8 L243.3,176.5 L243.9,178.3 L244.6,180.1 L245.2,181.9 L245.9,183.7 L246.6,185.5 L247.2,187.3 L247.9,189.2 L248.5,191 L249.2,192.9 L249.8,194.7 L250.5,196.6 L251.1,198.5 L251.8,200.4 L252.5,202.4 L253.1,204.3 L253.8,206.2 L254.4,208.2 L255.1,210.2 L255.7,212.2 L256.4,214.2 L257,216.2 L257.7,218.2 L258.4,220.2 L259,222.2 L259.7,224.3 L260.3,226.4 L261,228.4 L261.6,230.5 L262.3,232.6 L262.9,234.8 L263.6,236.9 L264.2,239 L264.9,241.2 L265.6,243.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><text x=\"243.6\" y=\"142.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = f′(x)</text></svg>",
+  "hint": "Where $f' = 0$ and changes sign, what does $f$ have? Points of inflection of $f$ are where $f''$ changes sign, i.e. where $f'$ has a turning point.",
+  "answer": "The $x$-intercepts of $f'$ give turning points of $f$, not inflections: minimum at $x = -2$, maximum at $x = 2$. The point of inflection is at $x = 0$ (the turning point of $f'$).",
+  "solution": "**Error:** Hannah has read the wrong feature. Where the graph of $f'$ crosses the $x$-axis, $f' = 0$ and changes sign, so $f$ has **turning points** there, not points of inflection.\n\n- At $x = -2$: $f'$ changes from negative to positive, so $f$ has a **minimum**.\n- At $x = 2$: $f'$ changes from positive to negative, so $f$ has a **maximum**.\n\n**Points of inflection** of $f$ occur where $f''$ changes sign, i.e. where $f'$ changes from increasing to decreasing (or vice versa) – at a **turning point of the graph of $f'$**. The graph of $f'$ has its maximum at $x = 0$: $f'' = -2x$ changes from positive to negative there.\n\nSo $y = f(x)$ has a point of inflection at $x = 0$ (convex for $x < 0$, concave for $x > 0$).",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q07",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Ethan is asked to find the points of inflection on the curve $y = x^4 - 4x^3 + 6x^2 - 4x + 1$. His working is shown below.\n\n$$\\frac{dy}{dx} = 4x^3 - 12x^2 + 12x - 4$$\n$$\\frac{d^2y}{dx^2} = 12x^2 - 24x + 12 = 0 \\;\\Rightarrow\\; x^2 - 2x + 1 = 0 \\;\\Rightarrow\\; x = 1$$\n\nWhen $x = 1$, $y = 1 - 4 + 6 - 4 + 1 = 0$. So the curve has a point of inflection at $(1, 0)$.\n\nIdentify the error in Ethan's reasoning and give the correct conclusion, including the nature of the point $(1, 0)$.",
+  "hint": "Factorise $\\frac{d^2y}{dx^2}$ completely. Does it change sign at $x = 1$?",
+  "answer": "Ethan did not check for a sign change. $\\frac{d^2y}{dx^2} = 12(x - 1)^2 \\ge 0$, so the curve is convex everywhere and has no point of inflection; $(1, 0)$ is a minimum (the curve is $y = (x - 1)^4$).",
+  "solution": "Ethan's derivatives and the solution $x = 1$ are correct.\n\n**Error:** $\\frac{d^2y}{dx^2} = 0$ only identifies a **candidate**. A point of inflection requires $\\frac{d^2y}{dx^2}$ to **change sign**, and Ethan did not check.\n\n$$\\frac{d^2y}{dx^2} = 12(x^2 - 2x + 1) = 12(x - 1)^2 \\ge 0$$\nIt is positive on both sides of $x = 1$ (e.g. $12$ at $x = 0$ and at $x = 2$), so there is **no** change of concavity and **no** point of inflection: the curve is convex everywhere.\n\n**Nature of $(1, 0)$:** $\\frac{dy}{dx} = 4(x - 1)^3$ is $0$ at $x = 1$, negative for $x < 1$ and positive for $x > 1$, so $(1, 0)$ is a **minimum**.\n\n(In fact $y = (x - 1)^4$, which is $y = x^4$ translated 1 unit right.)",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q08",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Dev makes two claims:\n\n**Claim 1:** \"If a function is increasing on an interval, its graph is convex (concave up) there.\"\n\n**Claim 2:** \"If a function is decreasing on an interval, its graph is concave (concave down) there.\"\n\nShow that both claims are false by giving a counterexample to each, justifying your answers using derivatives. Then explain what concavity actually depends on.",
+  "hint": "Think about $y = \\sqrt{x}$ and $y = \\frac1x$ for $x > 0$. Find the first and second derivatives of each.",
+  "answer": "e.g. Claim 1: $y = \\sqrt{x}$ ($x > 0$) is increasing ($y' > 0$) but concave ($y'' < 0$). Claim 2: $y = \\frac1x$ ($x > 0$) is decreasing ($y' < 0$) but convex ($y'' > 0$). Concavity depends on the sign of $f''$ (whether the gradient is increasing or decreasing), not on the sign of $f'$. (Other counterexamples are possible.)",
+  "solution": "**Claim 1 – counterexample $f(x) = \\sqrt{x} = x^{\\frac12}$, $x > 0$:**\n$$f'(x) = \\tfrac12x^{-\\frac12} > 0 \\quad \\text{(increasing)}, \\qquad f''(x) = -\\tfrac14x^{-\\frac32} < 0 \\quad \\text{(concave)}$$\nThe graph rises, but less and less steeply.\n\n**Claim 2 – counterexample $g(x) = \\frac1x = x^{-1}$, $x > 0$:**\n$$g'(x) = -x^{-2} < 0 \\quad \\text{(decreasing)}, \\qquad g''(x) = 2x^{-3} > 0 \\quad \\text{(convex)}$$\nThe graph falls, but its gradient is negative and **increasing** towards $0$, so it bends upwards.\n\n**What concavity depends on:** the sign of the **second** derivative, i.e. whether the gradient is increasing ($f'' > 0$, convex) or decreasing ($f'' < 0$, concave). Whether $f$ is increasing or decreasing depends on the sign of the **first** derivative, a separate property. All four combinations (increasing/decreasing with convex/concave) are possible.",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q09",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The diagram shows the graphs of $y = f(x)$, $y = f'(x)$ and $y = f''(x)$ on the same axes, for a polynomial function $f$. The graphs are labelled $A$, $B$ and $C$.\n\nIdentify which graph is which. Give clear reasons based on the features of the graphs.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 280\" width=\"320\" height=\"280\"><line x1=\"16\" y1=\"264\" x2=\"16\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"44.2\" y1=\"264\" x2=\"44.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"72.4\" y1=\"264\" x2=\"72.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"100.6\" y1=\"264\" x2=\"100.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"128.8\" y1=\"264\" x2=\"128.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"157\" y1=\"264\" x2=\"157\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"185.2\" y1=\"264\" x2=\"185.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"213.4\" y1=\"264\" x2=\"213.4\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"241.6\" y1=\"264\" x2=\"241.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"269.8\" y1=\"264\" x2=\"269.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"298\" y1=\"264\" x2=\"298\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"264\" x2=\"298\" y2=\"264\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"246.3\" x2=\"298\" y2=\"246.3\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"228.6\" x2=\"298\" y2=\"228.6\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"210.9\" x2=\"298\" y2=\"210.9\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"193.1\" x2=\"298\" y2=\"193.1\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"175.4\" x2=\"298\" y2=\"175.4\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"157.7\" x2=\"298\" y2=\"157.7\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"140\" x2=\"298\" y2=\"140\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"122.3\" x2=\"298\" y2=\"122.3\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"104.6\" x2=\"298\" y2=\"104.6\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"86.9\" x2=\"298\" y2=\"86.9\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"69.1\" x2=\"298\" y2=\"69.1\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"51.4\" x2=\"298\" y2=\"51.4\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"33.7\" x2=\"298\" y2=\"33.7\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"16\" x2=\"298\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.12\" stroke-width=\"0.6\"/><line x1=\"16\" y1=\"140\" x2=\"304\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"157\" y1=\"264\" x2=\"157\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M304,140 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M157,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"304\" y=\"133\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"164\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"44.2\" y1=\"137\" x2=\"44.2\" y2=\"143\" stroke=\"currentColor\"/><text x=\"44.2\" y=\"155\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"100.6\" y1=\"137\" x2=\"100.6\" y2=\"143\" stroke=\"currentColor\"/><text x=\"100.6\" y=\"155\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−1</text><line x1=\"213.4\" y1=\"137\" x2=\"213.4\" y2=\"143\" stroke=\"currentColor\"/><text x=\"213.4\" y=\"155\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><line x1=\"269.8\" y1=\"137\" x2=\"269.8\" y2=\"143\" stroke=\"currentColor\"/><text x=\"269.8\" y=\"155\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"154\" y1=\"246.3\" x2=\"160\" y2=\"246.3\" stroke=\"currentColor\"/><text x=\"151\" y=\"250.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−6</text><line x1=\"154\" y1=\"210.9\" x2=\"160\" y2=\"210.9\" stroke=\"currentColor\"/><text x=\"151\" y=\"214.9\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−4</text><line x1=\"154\" y1=\"175.4\" x2=\"160\" y2=\"175.4\" stroke=\"currentColor\"/><text x=\"151\" y=\"179.4\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−2</text><line x1=\"154\" y1=\"104.6\" x2=\"160\" y2=\"104.6\" stroke=\"currentColor\"/><text x=\"151\" y=\"108.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><line x1=\"154\" y1=\"69.1\" x2=\"160\" y2=\"69.1\" stroke=\"currentColor\"/><text x=\"151\" y=\"73.1\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">4</text><line x1=\"154\" y1=\"33.7\" x2=\"160\" y2=\"33.7\" stroke=\"currentColor\"/><text x=\"151\" y=\"37.7\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">6</text><text x=\"151\" y=\"154\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M21.6,257.3 L23.5,249 L25.4,241 L27.3,233.3 L29.2,225.8 L31,218.6 L32.9,211.7 L34.8,205 L36.7,198.6 L38.6,192.5 L40.4,186.5 L42.3,180.9 L44.2,175.4 L46.1,170.2 L48,165.3 L49.8,160.5 L51.7,156 L53.6,151.7 L55.5,147.7 L57.4,143.8 L59.2,140.1 L61.1,136.7 L63,133.4 L64.9,130.4 L66.8,127.5 L68.6,124.9 L70.5,122.4 L72.4,120.1 L74.3,117.9 L76.2,116 L78,114.2 L79.9,112.6 L81.8,111.1 L83.7,109.8 L85.6,108.7 L87.4,107.7 L89.3,106.8 L91.2,106.1 L93.1,105.6 L95,105.1 L96.8,104.8 L98.7,104.6 L100.6,104.6 L102.5,104.6 L104.4,104.8 L106.2,105.1 L108.1,105.5 L110,106 L111.9,106.6 L113.8,107.2 L115.6,108 L117.5,108.9 L119.4,109.8 L121.3,110.8 L123.2,111.9 L125,113.1 L126.9,114.3 L128.8,115.6 L130.7,117 L132.6,118.4 L134.4,119.9 L136.3,121.4 L138.2,122.9 L140.1,124.5 L142,126.2 L143.8,127.8 L145.7,129.5 L147.6,131.2 L149.5,133 L151.4,134.7 L153.2,136.5 L155.1,138.2 L157,140 L158.9,141.8 L160.8,143.5 L162.6,145.3 L164.5,147 L166.4,148.8 L168.3,150.5 L170.2,152.2 L172,153.8 L173.9,155.5 L175.8,157.1 L177.7,158.6 L179.6,160.1 L181.4,161.6 L183.3,163 L185.2,164.4 L187.1,165.7 L189,166.9 L190.8,168.1 L192.7,169.2 L194.6,170.2 L196.5,171.1 L198.4,172 L200.2,172.8 L202.1,173.4 L204,174 L205.9,174.5 L207.8,174.9 L209.6,175.2 L211.5,175.4 L213.4,175.4 L215.3,175.4 L217.2,175.2 L219,174.9 L220.9,174.4 L222.8,173.9 L224.7,173.2 L226.6,172.3 L228.4,171.3 L230.3,170.2 L232.2,168.9 L234.1,167.4 L236,165.8 L237.8,164 L239.7,162.1 L241.6,159.9 L243.5,157.6 L245.4,155.1 L247.2,152.5 L249.1,149.6 L251,146.6 L252.9,143.3 L254.8,139.9 L256.6,136.2 L258.5,132.3 L260.4,128.3 L262.3,124 L264.2,119.5 L266,114.7 L267.9,109.8 L269.8,104.6 L271.7,99.1 L273.6,93.5 L275.4,87.5 L277.3,81.4 L279.2,75 L281.1,68.3 L283,61.4 L284.8,54.2 L286.7,46.7 L288.6,39 L290.5,31 L292.4,22.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><path d=\"M55.5,21 L57.4,27.3 L59.2,33.5 L61.1,39.6 L63,45.5 L64.9,51.4 L66.8,57.1 L68.6,62.7 L70.5,68.2 L72.4,73.6 L74.3,78.8 L76.2,84 L78,89 L79.9,93.9 L81.8,98.7 L83.7,103.3 L85.6,107.9 L87.4,112.3 L89.3,116.6 L91.2,120.8 L93.1,124.9 L95,128.8 L96.8,132.7 L98.7,136.4 L100.6,140 L102.5,143.5 L104.4,146.8 L106.2,150.1 L108.1,153.2 L110,156.2 L111.9,159.1 L113.8,161.9 L115.6,164.6 L117.5,167.1 L119.4,169.5 L121.3,171.8 L123.2,174 L125,176.1 L126.9,178 L128.8,179.9 L130.7,181.6 L132.6,183.2 L134.4,184.6 L136.3,186 L138.2,187.2 L140.1,188.4 L142,189.4 L143.8,190.2 L145.7,191 L147.6,191.7 L149.5,192.2 L151.4,192.6 L153.2,192.9 L155.1,193.1 L157,193.1 L158.9,193.1 L160.8,192.9 L162.6,192.6 L164.5,192.2 L166.4,191.7 L168.3,191 L170.2,190.2 L172,189.4 L173.9,188.4 L175.8,187.2 L177.7,186 L179.6,184.6 L181.4,183.2 L183.3,181.6 L185.2,179.9 L187.1,178 L189,176.1 L190.8,174 L192.7,171.8 L194.6,169.5 L196.5,167.1 L198.4,164.6 L200.2,161.9 L202.1,159.1 L204,156.2 L205.9,153.2 L207.8,150.1 L209.6,146.8 L211.5,143.5 L213.4,140 L215.3,136.4 L217.2,132.7 L219,128.8 L220.9,124.9 L222.8,120.8 L224.7,116.6 L226.6,112.3 L228.4,107.9 L230.3,103.3 L232.2,98.7 L234.1,93.9 L236,89 L237.8,84 L239.7,78.8 L241.6,73.6 L243.5,68.2 L245.4,62.7 L247.2,57.1 L249.1,51.4 L251,45.5 L252.9,39.6 L254.8,33.5 L256.6,27.3 L258.5,21\" fill=\"none\" stroke=\"#3b82f6\" stroke-width=\"2.2\"/><path d=\"M100.6,246.3 L114.7,219.7 L128.8,193.1 L142.9,166.6 L157,140 L171.1,113.4 L185.2,86.9 L199.3,60.3 L213.4,33.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-dasharray=\"5 4\"/><text x=\"295.7\" y=\"52.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">B</text><text x=\"245.7\" y=\"30.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">C</text><text x=\"91.6\" y=\"250.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">A</text></svg>",
+  "hint": "Look at where each curve crosses the $x$-axis and compare with where the other curves have turning points. Zeros of $f'$ line up with turning points of $f$; zeros of $f''$ line up with turning points of $f'$.",
+  "answer": "$B$ is $y = f(x)$, $C$ is $y = f'(x)$, $A$ is $y = f''(x)$",
+  "solution": "Use the facts: where $f$ has a turning point, $f'$ crosses the axis; where $f'$ has a turning point, $f''$ crosses the axis (and $f$ has a point of inflection).\n\n- $B$ has turning points at $x = -1$ and $x = 1$. $C$ crosses the $x$-axis at exactly $x = -1$ and $x = 1$, so $C$ could be the derivative of $B$. Checking signs: $B$ is increasing for $x < -1$ and $x > 1$, where $C$ is positive, and decreasing for $-1 < x < 1$, where $C$ is negative. ✓\n\n- $C$ has one turning point, a minimum at $x = 0$. $A$ crosses the $x$-axis at $x = 0$, negative before and positive after, matching $C$ decreasing then increasing. So $A$ is the derivative of $C$. ✓\n\n- So $C$ is the derivative of $B$, and $A$ is the derivative of $C$. (Neither $A$ nor $C$ could be $f$: $B$ crosses the axis at three points, not at $x = 0$ only or at $x = \\pm1$ only, so $B$ is the derivative of neither of them.)\n\nSo $B = f$, $C = f'$, $A = f''$. Also $B$ changes from concave to convex at $x = 0$, exactly where $A$ (that is, $f''$) changes from negative to positive – and where $C$ (that is, $f'$) has its turning point.\n\n(The functions shown are $f(x) = x^3 - 3x$, $f'(x) = 3x^2 - 3$, $f''(x) = 6x$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q10",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 10,
+  "question": "The curve $C$ has equation $y = f(x)$, where\n$$f(x) = 3x^4 - 4x^3 - 12x^2 + 20$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find $f'(x)$ and $f''(x)$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $C$ has a stationary point where $x = 2$ and determine its nature.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the exact $x$-coordinates of the points of inflection of $C$, justifying that they are points of inflection.",
+    "marks": 4
+   },
+   {
+    "label": "d",
+    "prompt": "Find the set of values of $x$ for which $C$ is concave.",
+    "marks": 2
+   }
+  ],
+  "hint": "For (c), set $f''(x) = 0$ and use the quadratic formula. A quadratic with two distinct roots changes sign at each root.",
+  "answer": "(a) $f'(x) = 12x^3 - 12x^2 - 24x$, $f''(x) = 36x^2 - 24x - 24$ (b) $f'(2) = 0$, $f''(2) = 72 > 0$: minimum (c) $x = \\dfrac{1 - \\sqrt7}{3}$ and $x = \\dfrac{1 + \\sqrt7}{3}$ (d) $\\dfrac{1 - \\sqrt7}{3} < x < \\dfrac{1 + \\sqrt7}{3}$",
+  "solution": "**(a)**\n$$f'(x) = 12x^3 - 12x^2 - 24x \\quad \\textbf{B1}$$\n$$f''(x) = 36x^2 - 24x - 24 \\quad \\textbf{B1}$$\n\n**(b)** $f'(2) = 96 - 48 - 48 = 0$, so there is a stationary point at $x = 2$. **B1**\n\n$f''(2) = 144 - 48 - 24 = 72 > 0$, so it is a **minimum**. **B1**\n\n**(c)** $f''(x) = 12(3x^2 - 2x - 2) = 0$ **M1**\n$$x = \\frac{2 \\pm \\sqrt{4 + 24}}{6} = \\frac{2 \\pm 2\\sqrt7}{6} = \\frac{1 \\pm \\sqrt7}{3}$$ **M1 A1**\n\n$f''$ is a quadratic with positive leading coefficient and two distinct roots, so it is positive outside the roots and negative between them, e.g. $f''(0) = -24 < 0$ and $f''(2) = 72 > 0$, $f''(-1) = 36 > 0$. Hence $f''$ changes sign at each root, so both are points of inflection. **A1**\n\n**(d)** $C$ is concave where $f''(x) < 0$: **M1**\n$$\\frac{1 - \\sqrt7}{3} < x < \\frac{1 + \\sqrt7}{3}$$ **A1**",
+  "linkedTopicIds": [
+   "alg-quadratic-formula"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-concavity-inflection-q11",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": false,
+  "marks": 6,
+  "question": "The function $f$ is defined on the closed interval $-5 \\le x \\le 3$. The graph of $f'$, the derivative of $f$, is shown. The graph of $f'$ has horizontal tangents at $x = -2$ and $x = 2$, and crosses the $x$-axis at $x = -4$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find all values of $x$ in the open interval $-5 < x < 3$ at which $f$ has a relative minimum or a relative maximum. Justify your answer.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the $x$-coordinates of all points of inflection of the graph of $f$. Justify your answer.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find all open intervals on which the graph of $f$ is both concave down and increasing. Give a reason for your answer.",
+    "marks": 2
+   }
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 290\" width=\"330\" height=\"290\"><line x1=\"18\" y1=\"276\" x2=\"18\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"49.9\" y1=\"276\" x2=\"49.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"81.7\" y1=\"276\" x2=\"81.7\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"113.6\" y1=\"276\" x2=\"113.6\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"145.5\" y1=\"276\" x2=\"145.5\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"177.3\" y1=\"276\" x2=\"177.3\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"209.2\" y1=\"276\" x2=\"209.2\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"241.1\" y1=\"276\" x2=\"241.1\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"272.9\" y1=\"276\" x2=\"272.9\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"304.8\" y1=\"276\" x2=\"304.8\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"276\" x2=\"308\" y2=\"276\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"247.1\" x2=\"308\" y2=\"247.1\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"218.2\" x2=\"308\" y2=\"218.2\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"189.3\" x2=\"308\" y2=\"189.3\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"160.4\" x2=\"308\" y2=\"160.4\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"131.6\" x2=\"308\" y2=\"131.6\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"102.7\" x2=\"308\" y2=\"102.7\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"73.8\" x2=\"308\" y2=\"73.8\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"44.9\" x2=\"308\" y2=\"44.9\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"16\" x2=\"308\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.14\" stroke-width=\"0.6\"/><line x1=\"18\" y1=\"125.8\" x2=\"314\" y2=\"125.8\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"193.3\" y1=\"276\" x2=\"193.3\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M314,125.8 l-6,-3.5 l0,7 z\" fill=\"currentColor\"/><path d=\"M193.3,10 l-3.5,6 l7,0 z\" fill=\"currentColor\"/><text x=\"314\" y=\"118.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">x</text><text x=\"200.3\" y=\"19\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y</text><line x1=\"65.8\" y1=\"122.8\" x2=\"65.8\" y2=\"128.8\" stroke=\"currentColor\"/><text x=\"65.8\" y=\"140.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−4</text><line x1=\"129.5\" y1=\"122.8\" x2=\"129.5\" y2=\"128.8\" stroke=\"currentColor\"/><text x=\"129.5\" y=\"140.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">−2</text><line x1=\"257\" y1=\"122.8\" x2=\"257\" y2=\"128.8\" stroke=\"currentColor\"/><text x=\"257\" y=\"140.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><line x1=\"190.3\" y1=\"241.3\" x2=\"196.3\" y2=\"241.3\" stroke=\"currentColor\"/><text x=\"187.3\" y=\"245.3\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−40</text><line x1=\"190.3\" y1=\"183.6\" x2=\"196.3\" y2=\"183.6\" stroke=\"currentColor\"/><text x=\"187.3\" y=\"187.6\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">−20</text><line x1=\"190.3\" y1=\"68\" x2=\"196.3\" y2=\"68\" stroke=\"currentColor\"/><text x=\"187.3\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">20</text><text x=\"187.3\" y=\"139.8\" font-size=\"12\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">O</text><path d=\"M33.9,267.3 L34.4,264.9 L34.8,262.5 L35.2,260.1 L35.6,257.7 L36.1,255.4 L36.5,253 L36.9,250.7 L37.3,248.4 L37.8,246.1 L38.2,243.8 L38.6,241.6 L39,239.3 L39.5,237.1 L39.9,234.9 L40.3,232.6 L40.7,230.5 L41.2,228.3 L41.6,226.1 L42,224 L42.4,221.8 L42.9,219.7 L43.3,217.6 L43.7,215.5 L44.1,213.4 L44.6,211.4 L45,209.3 L45.4,207.3 L45.8,205.3 L46.3,203.3 L46.7,201.3 L47.1,199.3 L47.5,197.3 L48,195.4 L48.4,193.5 L48.8,191.5 L49.2,189.6 L49.7,187.7 L50.1,185.9 L50.5,184 L50.9,182.2 L51.4,180.3 L51.8,178.5 L52.2,176.7 L52.6,174.9 L53.1,173.1 L53.5,171.3 L53.9,169.6 L54.3,167.8 L54.8,166.1 L55.2,164.4 L55.6,162.7 L56,161 L56.5,159.3 L56.9,157.7 L57.3,156 L57.7,154.4 L58.2,152.8 L58.6,151.2 L59,149.6 L59.4,148 L59.9,146.4 L60.3,144.9 L60.7,143.3 L61.1,141.8 L61.6,140.3 L62,138.8 L62.4,137.3 L62.8,135.8 L63.3,134.3 L63.7,132.9 L64.1,131.4 L64.5,130 L65,128.6 L65.4,127.2 L65.8,125.8 L66.2,124.4 L66.7,123 L67.1,121.7 L67.5,120.3 L67.9,119 L68.4,117.7 L68.8,116.4 L69.2,115.1 L69.6,113.8 L70.1,112.5 L70.5,111.3 L70.9,110 L71.3,108.8 L71.8,107.6 L72.2,106.3 L72.6,105.1 L73,104 L73.5,102.8 L73.9,101.6 L74.3,100.5 L74.7,99.3 L75.2,98.2 L75.6,97.1 L76,96 L76.4,94.9 L76.8,93.8 L77.3,92.7 L77.7,91.6 L78.1,90.6 L78.5,89.5 L79,88.5 L79.4,87.5 L79.8,86.5 L80.2,85.5 L80.7,84.5 L81.1,83.5 L81.5,82.6 L81.9,81.6 L82.4,80.7 L82.8,79.7 L83.2,78.8 L83.6,77.9 L84.1,77 L84.5,76.1 L84.9,75.2 L85.3,74.4 L85.8,73.5 L86.2,72.7 L86.6,71.8 L87,71 L87.5,70.2 L87.9,69.4 L88.3,68.6 L88.7,67.8 L89.2,67 L89.6,66.2 L90,65.5 L90.4,64.7 L90.9,64 L91.3,63.3 L91.7,62.6 L92.1,61.9 L92.6,61.2 L93,60.5 L93.4,59.8 L93.8,59.1 L94.3,58.5 L94.7,57.8 L95.1,57.2 L95.5,56.6 L96,55.9 L96.4,55.3 L96.8,54.7 L97.2,54.1 L97.7,53.6 L98.1,53 L98.5,52.4 L98.9,51.9 L99.4,51.3 L99.8,50.8 L100.2,50.3 L100.6,49.7 L101.1,49.2 L101.5,48.7 L101.9,48.2 L102.3,47.8 L102.8,47.3 L103.2,46.8 L103.6,46.4 L104,45.9 L104.5,45.5 L104.9,45 L105.3,44.6 L105.7,44.2 L106.2,43.8 L106.6,43.4 L107,43 L107.4,42.6 L107.9,42.3 L108.3,41.9 L108.7,41.5 L109.1,41.2 L109.6,40.9 L110,40.5 L110.4,40.2 L110.8,39.9 L111.3,39.6 L111.7,39.3 L112.1,39 L112.5,38.7 L113,38.4 L113.4,38.2 L113.8,37.9 L114.2,37.6 L114.7,37.4 L115.1,37.2 L115.5,36.9 L115.9,36.7 L116.4,36.5 L116.8,36.3 L117.2,36.1 L117.6,35.9 L118.1,35.7 L118.5,35.5 L118.9,35.4 L119.3,35.2 L119.8,35 L120.2,34.9 L120.6,34.8 L121,34.6 L121.5,34.5 L121.9,34.4 L122.3,34.3 L122.7,34.2 L123.2,34 L123.6,34 L124,33.9 L124.4,33.8 L124.9,33.7 L125.3,33.6 L125.7,33.6 L126.1,33.5 L126.6,33.5 L127,33.4 L127.4,33.4 L127.8,33.4 L128.3,33.4 L128.7,33.3 L129.1,33.3 L129.5,33.3 L130,33.3 L130.4,33.3 L130.8,33.4 L131.2,33.4 L131.7,33.4 L132.1,33.4 L132.5,33.5 L132.9,33.5 L133.4,33.6 L133.8,33.6 L134.2,33.7 L134.6,33.8 L135.1,33.8 L135.5,33.9 L135.9,34 L136.3,34.1 L136.8,34.2 L137.2,34.3 L137.6,34.4 L138,34.5 L138.5,34.6 L138.9,34.8 L139.3,34.9 L139.7,35 L140.2,35.2 L140.6,35.3 L141,35.4 L141.4,35.6 L141.9,35.8 L142.3,35.9 L142.7,36.1 L143.1,36.3 L143.6,36.4 L144,36.6 L144.4,36.8 L144.8,37 L145.3,37.2 L145.7,37.4 L146.1,37.6 L146.5,37.8 L147,38 L147.4,38.3 L147.8,38.5 L148.2,38.7 L148.7,38.9 L149.1,39.2 L149.5,39.4 L149.9,39.7 L150.4,39.9 L150.8,40.2 L151.2,40.4 L151.6,40.7 L152.1,41 L152.5,41.2 L152.9,41.5 L153.3,41.8 L153.8,42.1 L154.2,42.4 L154.6,42.7 L155,42.9 L155.5,43.2 L155.9,43.5 L156.3,43.9 L156.7,44.2 L157.2,44.5 L157.6,44.8 L158,45.1 L158.4,45.4 L158.9,45.8 L159.3,46.1 L159.7,46.4 L160.1,46.8 L160.6,47.1 L161,47.4 L161.4,47.8 L161.8,48.1 L162.3,48.5 L162.7,48.8 L163.1,49.2 L163.5,49.5 L164,49.9 L164.4,50.3 L164.8,50.6 L165.2,51 L165.7,51.4 L166.1,51.8 L166.5,52.1 L166.9,52.5 L167.4,52.9 L167.8,53.3 L168.2,53.7 L168.6,54.1 L169.1,54.5 L169.5,54.9 L169.9,55.3 L170.3,55.7 L170.8,56.1 L171.2,56.5 L171.6,56.9 L172,57.3 L172.5,57.7 L172.9,58.1 L173.3,58.5 L173.7,59 L174.2,59.4 L174.6,59.8 L175,60.2 L175.4,60.6 L175.9,61.1 L176.3,61.5 L176.7,61.9 L177.1,62.4 L177.6,62.8 L178,63.2 L178.4,63.7 L178.8,64.1 L179.3,64.5 L179.7,65 L180.1,65.4 L180.5,65.9 L181,66.3 L181.4,66.8 L181.8,67.2 L182.2,67.7 L182.7,68.1 L183.1,68.6 L183.5,69 L183.9,69.5 L184.4,69.9 L184.8,70.4 L185.2,70.8 L185.6,71.3 L186.1,71.7 L186.5,72.2 L186.9,72.6 L187.3,73.1 L187.8,73.6 L188.2,74 L188.6,74.5 L189,74.9 L189.5,75.4 L189.9,75.9 L190.3,76.3 L190.7,76.8 L191.2,77.2 L191.6,77.7 L192,78.2 L192.4,78.6 L192.8,79.1 L193.3,79.6 L193.7,80 L194.1,80.5 L194.5,80.9 L195,81.4 L195.4,81.9 L195.8,82.3 L196.2,82.8 L196.7,83.2 L197.1,83.7 L197.5,84.2 L197.9,84.6 L198.4,85.1 L198.8,85.5 L199.2,86 L199.6,86.5 L200.1,86.9 L200.5,87.4 L200.9,87.8 L201.3,88.3 L201.8,88.7 L202.2,89.2 L202.6,89.7 L203,90.1 L203.5,90.6 L203.9,91 L204.3,91.5 L204.7,91.9 L205.2,92.3 L205.6,92.8 L206,93.2 L206.4,93.7 L206.9,94.1 L207.3,94.6 L207.7,95 L208.1,95.4 L208.6,95.9 L209,96.3 L209.4,96.7 L209.8,97.2 L210.3,97.6 L210.7,98 L211.1,98.5 L211.5,98.9 L212,99.3 L212.4,99.7 L212.8,100.2 L213.2,100.6 L213.7,101 L214.1,101.4 L214.5,101.8 L214.9,102.2 L215.4,102.6 L215.8,103 L216.2,103.4 L216.6,103.8 L217.1,104.2 L217.5,104.6 L217.9,105 L218.3,105.4 L218.8,105.8 L219.2,106.2 L219.6,106.6 L220,107 L220.5,107.3 L220.9,107.7 L221.3,108.1 L221.7,108.5 L222.2,108.8 L222.6,109.2 L223,109.6 L223.4,109.9 L223.9,110.3 L224.3,110.6 L224.7,111 L225.1,111.3 L225.6,111.7 L226,112 L226.4,112.4 L226.8,112.7 L227.3,113 L227.7,113.4 L228.1,113.7 L228.5,114 L229,114.3 L229.4,114.6 L229.8,115 L230.2,115.3 L230.7,115.6 L231.1,115.9 L231.5,116.2 L231.9,116.5 L232.4,116.7 L232.8,117 L233.2,117.3 L233.6,117.6 L234.1,117.9 L234.5,118.1 L234.9,118.4 L235.3,118.7 L235.8,118.9 L236.2,119.2 L236.6,119.4 L237,119.7 L237.5,119.9 L237.9,120.2 L238.3,120.4 L238.7,120.6 L239.2,120.8 L239.6,121.1 L240,121.3 L240.4,121.5 L240.9,121.7 L241.3,121.9 L241.7,122.1 L242.1,122.3 L242.6,122.5 L243,122.7 L243.4,122.8 L243.8,123 L244.3,123.2 L244.7,123.4 L245.1,123.5 L245.5,123.7 L246,123.8 L246.4,124 L246.8,124.1 L247.2,124.2 L247.7,124.4 L248.1,124.5 L248.5,124.6 L248.9,124.7 L249.4,124.8 L249.8,124.9 L250.2,125 L250.6,125.1 L251.1,125.2 L251.5,125.3 L251.9,125.3 L252.3,125.4 L252.8,125.5 L253.2,125.5 L253.6,125.6 L254,125.6 L254.5,125.7 L254.9,125.7 L255.3,125.7 L255.7,125.8 L256.2,125.8 L256.6,125.8 L257,125.8 L257.4,125.8 L257.9,125.8 L258.3,125.7 L258.7,125.7 L259.1,125.7 L259.6,125.7 L260,125.6 L260.4,125.6 L260.8,125.5 L261.3,125.5 L261.7,125.4 L262.1,125.3 L262.5,125.2 L263,125.2 L263.4,125.1 L263.8,125 L264.2,124.9 L264.7,124.7 L265.1,124.6 L265.5,124.5 L265.9,124.4 L266.4,124.2 L266.8,124.1 L267.2,123.9 L267.6,123.7 L268.1,123.6 L268.5,123.4 L268.9,123.2 L269.3,123 L269.8,122.8 L270.2,122.6 L270.6,122.4 L271,122.2 L271.5,121.9 L271.9,121.7 L272.3,121.5 L272.7,121.2 L273.2,121 L273.6,120.7 L274,120.4 L274.4,120.1 L274.9,119.8 L275.3,119.5 L275.7,119.2 L276.1,118.9 L276.6,118.6 L277,118.3 L277.4,117.9 L277.8,117.6 L278.3,117.2 L278.7,116.9 L279.1,116.5 L279.5,116.1 L280,115.7 L280.4,115.3 L280.8,114.9 L281.2,114.5 L281.7,114.1 L282.1,113.6 L282.5,113.2 L282.9,112.8 L283.4,112.3 L283.8,111.8 L284.2,111.4 L284.6,110.9 L285.1,110.4 L285.5,109.9 L285.9,109.4 L286.3,108.9 L286.8,108.3 L287.2,107.8 L287.6,107.2 L288,106.7 L288.5,106.1 L288.9,105.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"/><circle cx=\"33.9\" cy=\"267.3\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"288.9\" cy=\"105.6\" r=\"2.6\" fill=\"currentColor\"/><text x=\"141.5\" y=\"29.3\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\">y = f′(x)</text></svg>",
+  "hint": "Sign of $f'$ tells you increasing/decreasing and extrema of $f$. Whether $f'$ is increasing or decreasing tells you the concavity of $f$.",
+  "answer": "(a) Relative minimum at $x = -4$ only (b) $x = -2$ and $x = 2$ (c) $-2 < x < 2$",
+  "solution": "**(a)** $f$ has a **relative minimum at $x = -4$** because $f'$ changes from negative to positive there.\n\nAt $x = 2$, $f'(2) = 0$ but $f'$ does not change sign (it is positive on both sides), so $f$ has no relative extremum there. There are no relative maxima.\n\n1 pt: $x = -4$ relative minimum with justification. 1 pt: correctly rejects $x = 2$ (no sign change).\n\n**(b)** Points of inflection occur where $f''$ changes sign, i.e. where $f'$ changes from increasing to decreasing or vice versa.\n\n$f'$ is increasing for $-5 < x < -2$, decreasing for $-2 < x < 2$, and increasing for $2 < x < 3$. So the graph of $f$ has points of inflection at $x = -2$ and $x = 2$.\n\n1 pt: both values. 1 pt: justification. (The value $x = -4$, where $f'$ crosses the axis, is **not** a point of inflection.)\n\n**(c)** Concave down requires $f'' < 0$, i.e. $f'$ decreasing: $-2 < x < 2$.\n\nIncreasing requires $f' > 0$: $-4 < x < 2$ and $2 < x < 3$.\n\nBoth hold on $-2 < x < 2$, because $f'$ is positive and decreasing there.\n\n1 pt: interval. 1 pt: reason.",
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q12",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 2,
+  "type": "real-world",
+  "question": "A car sets off from rest along a straight road. For the first 20 seconds, the distance travelled, $s$ metres, after $t$ seconds is modelled by\n$$s = 1.2t^2 - 0.04t^3, \\qquad 0 \\le t \\le 20$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the value of $t$ at which the graph of $s$ against $t$ has a point of inflection, and show that it is a point of inflection."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the velocity of the car at this time."
+   },
+   {
+    "label": "c",
+    "prompt": "Describe what the concavity of the graph tells you about the motion of the car before and after this time."
+   }
+  ],
+  "hint": "$\\frac{ds}{dt}$ is the velocity and $\\frac{d^2s}{dt^2}$ is the acceleration.",
+  "answer": "(a) $t = 10$ (b) $12\\ \\text{m s}^{-1}$ (c) Convex for $t < 10$: the car is speeding up; concave for $t > 10$: it is slowing down. Its velocity is greatest at $t = 10$.",
+  "solution": "$$v = \\frac{ds}{dt} = 2.4t - 0.12t^2, \\qquad a = \\frac{d^2s}{dt^2} = 2.4 - 0.24t$$\n\n**(a)** $\\frac{d^2s}{dt^2} = 0$ when $t = 10$. At $t = 5$: $1.2 > 0$; at $t = 15$: $-1.2 < 0$. The sign changes, so $t = 10$ is a point of inflection (where $s = 120 - 40 = 80$ m).\n\n**(b)** $v = 2.4(10) - 0.12(100) = 24 - 12 = 12\\ \\text{m s}^{-1}$\n\n**(c)** For $0 < t < 10$, $\\frac{d^2s}{dt^2} > 0$: the graph is convex, the gradient (velocity) is increasing – the car is **accelerating**.\n\nFor $10 < t < 20$, $\\frac{d^2s}{dt^2} < 0$: the graph is concave, the velocity is decreasing – the car is **decelerating** (it comes to rest at $t = 20$, where $v = 48 - 48 = 0$).\n\nAt the point of inflection the velocity is at its maximum, $12\\ \\text{m s}^{-1}$.",
+  "misconceptionIds": [
+   "m3",
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q13",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "A company models its monthly sales, $S$ (£ thousand), in terms of its monthly advertising spend, $x$ (£ thousand), by\n$$S = -0.5x^3 + 15x^2 + 20x + 100, \\qquad 0 \\le x \\le 20$$\nThe *point of diminishing returns* is the point on the graph after which each extra £1000 of advertising produces a smaller increase in sales than the one before.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of the point of inflection of the graph of $S$ and show that it is a point of inflection."
+   },
+   {
+    "label": "b",
+    "prompt": "Explain why this is the point of diminishing returns, and find the rate of change of sales with respect to advertising spend at this point."
+   }
+  ],
+  "hint": "The rate of increase of sales is $\\frac{dS}{dx}$. It is greatest where $\\frac{d^2S}{dx^2}$ changes from positive to negative.",
+  "answer": "(a) $(10, 1300)$: spend £10 000, sales £1 300 000 (b) $\\frac{dS}{dx}$ is greatest there, $170$: about £170 000 of extra sales per extra £1000 of advertising; after this point $\\frac{dS}{dx}$ decreases",
+  "solution": "$$\\frac{dS}{dx} = -1.5x^2 + 30x + 20, \\qquad \\frac{d^2S}{dx^2} = -3x + 30$$\n\n**(a)** $\\frac{d^2S}{dx^2} = 0$ when $x = 10$. It is positive for $x < 10$ (e.g. $15$ at $x = 5$) and negative for $x > 10$ (e.g. $-15$ at $x = 15$), so the concavity changes: a point of inflection.\n\n$S(10) = -500 + 1500 + 200 + 100 = 1300$. The point is $(10, 1300)$.\n\n**(b)** For $x < 10$ the graph is convex: $\\frac{dS}{dx}$ is increasing, so each extra £1000 brings a bigger increase in sales than the last. For $x > 10$ the graph is concave: $\\frac{dS}{dx}$ is decreasing, so each extra £1000 brings a smaller increase – returns are diminishing. The switch happens at the point of inflection, where $\\frac{dS}{dx}$ is at its maximum.\n\n$$\\frac{dS}{dx} = -1.5(100) + 300 + 20 = 170$$\nAt this point sales are increasing at about £170 thousand per £1 thousand of extra advertising. (Sales are still increasing after $x = 10$ – just more slowly.)",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q14",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "$$f(x) = x^2 + 2\\cos x$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that the graph of $y = f(x)$ is convex for all real $x$."
+   },
+   {
+    "label": "b",
+    "prompt": "Amir says: \"$f''(0) = 0$, so the graph has a point of inflection at $(0, 2)$.\" Explain why Amir is wrong."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the coordinates of the stationary point of $y = f(x)$ and determine its nature."
+   }
+  ],
+  "hint": "$\\frac{d}{dx}(\\cos x) = -\\sin x$ and $\\frac{d}{dx}(\\sin x) = \\cos x$. Use $-1 \\le \\cos x \\le 1$.",
+  "answer": "(a) $f''(x) = 2 - 2\\cos x \\ge 0$ for all $x$ (b) $f''$ is $0$ at $x = 0$ but does not change sign (it is $\\ge 0$ on both sides), so there is no change of concavity (c) $(0, 2)$, a minimum",
+  "solution": "$$f'(x) = 2x - 2\\sin x, \\qquad f''(x) = 2 - 2\\cos x$$\n\n**(a)** Since $\\cos x \\le 1$ for all $x$, $f''(x) = 2(1 - \\cos x) \\ge 0$ for all $x$. So $f'$ is never decreasing and the graph is convex everywhere.\n\n**(b)** $f''(0) = 2 - 2 = 0$, but $f''(x) \\ge 0$ on **both** sides of $0$ (e.g. $f''(\\pm\\frac{\\pi}{2}) = 2$). A point of inflection needs a **change** of concavity, i.e. a change of sign of $f''$. There is none, so there is no point of inflection at $x = 0$. (In fact $f''(x) = 0$ at every $x = 2n\\pi$, and the graph has no points of inflection anywhere.)\n\n**(c)** $f'(x) = 2(x - \\sin x) = 0 \\iff \\sin x = x$. Since $f''(x) \\ge 0$, $f'$ is increasing, and it is $0$ at $x = 0$; because $f''$ is only zero at isolated points, $f'$ is strictly increasing, so $x = 0$ is the only solution.\n\n$f(0) = 0 + 2\\cos 0 = 2$, so the stationary point is $(0, 2)$.\n\n$f''(0) = 0$ is inconclusive, so check the sign of $f'$: $f'(-1) = -2 + 2\\sin 1 \\approx -0.32 < 0$ and $f'(1) = 2 - 2\\sin 1 \\approx 0.32 > 0$. The gradient changes from negative to positive: $(0, 2)$ is a **minimum**.",
+  "linkedTopicIds": [
+   "calc-derivatives-exp-log-trig"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-concavity-inflection-q15",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "After a dose of a drug is taken, its concentration in the blood, $C$ mg per litre, $t$ hours later is modelled by\n$$C = 20te^{-0.5t}, \\qquad t \\ge 0$$",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $\\dfrac{dC}{dt} = 10e^{-0.5t}(2 - t)$ and that $\\dfrac{d^2C}{dt^2} = 5e^{-0.5t}(t - 4)$."
+   },
+   {
+    "label": "b",
+    "prompt": "Find the maximum concentration, giving your answer to 3 significant figures."
+   },
+   {
+    "label": "c",
+    "prompt": "Find the time at which the graph of $C$ has a point of inflection. Explain the significance of this time in context, and find the rate of change of concentration then, to 3 significant figures."
+   }
+  ],
+  "hint": "Use the product rule with $u = 20t$ and $v = e^{-0.5t}$. Since $e^{-0.5t} > 0$, the signs of the derivatives depend only on the brackets.",
+  "answer": "(a) shown (b) $40e^{-1} \\approx 14.7$ mg per litre (at $t = 2$) (c) $t = 4$ hours: the concentration is falling fastest, at $-20e^{-2} \\approx -2.71$ mg per litre per hour",
+  "solution": "**(a)** Product rule with $u = 20t$, $v = e^{-0.5t}$ ($u' = 20$, $v' = -0.5e^{-0.5t}$):\n$$\\frac{dC}{dt} = 20e^{-0.5t} - 10te^{-0.5t} = 10e^{-0.5t}(2 - t)$$\nDifferentiate again, with $u = 10(2 - t)$, $v = e^{-0.5t}$:\n$$\\frac{d^2C}{dt^2} = -10e^{-0.5t} - 5(2 - t)e^{-0.5t} = e^{-0.5t}(-10 - 10 + 5t) = 5e^{-0.5t}(t - 4)$$\n\n**(b)** $\\frac{dC}{dt} = 0$ when $t = 2$ (as $e^{-0.5t} \\ne 0$). $\\frac{d^2C}{dt^2} = 5e^{-1}(-2) < 0$, so a maximum:\n$$C = 40e^{-1} \\approx 14.7 \\text{ mg per litre}$$\n\n**(c)** $\\frac{d^2C}{dt^2} = 0$ when $t = 4$, and $t - 4$ changes from negative to positive there, so the concavity changes: a point of inflection at $t = 4$ hours ($C = 80e^{-2} \\approx 10.8$).\n\nSignificance: for $2 < t < 4$ the graph is concave and the concentration is decreasing ever faster; after $t = 4$ it is convex, so the decrease slows down. At $t = 4$, $\\frac{dC}{dt}$ is at its most negative – the drug is being cleared from the blood **fastest**.\n$$\\frac{dC}{dt} = 10e^{-2}(2 - 4) = -20e^{-2} \\approx -2.71 \\text{ mg per litre per hour}$$",
+  "linkedTopicIds": [
+   "calc-chain-product-quotient",
+   "calc-derivatives-exp-log-trig"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "calc-concavity-inflection-q16",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "Let $f(x) = ax^3 + bx^2 + cx + d$, where $a$, $b$, $c$, $d$ are constants and $a \\ne 0$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Prove that the graph of $y = f(x)$ has exactly one point of inflection, and that it occurs at $x = x_0$, where $x_0 = -\\dfrac{b}{3a}$."
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $f(x_0 + h) = f(x_0) + f'(x_0)h + ah^3$ for all $h$. Hence prove that the graph has rotational symmetry of order 2 about its point of inflection."
+   },
+   {
+    "label": "c",
+    "prompt": "A cubic curve has a maximum point at $(-1, 7)$ and a minimum point at $(3, -25)$. Without finding its equation, write down the coordinates of its point of inflection, explaining your reasoning."
+   }
+  ],
+  "hint": "For (b), expand $a(x_0 + h)^3 + b(x_0 + h)^2 + c(x_0 + h) + d$ and collect powers of $h$; the $h^2$ coefficient is $3ax_0 + b$. A rotation by $180°$ about $(p, q)$ sends $(p + h, q + k)$ to $(p - h, q - k)$.",
+  "answer": "(a) $f''(x) = 6ax + 2b$ is linear with non-zero gradient, so it has one root $x_0 = -\\frac{b}{3a}$ and changes sign there (b) proof (c) $(1, -9)$, the midpoint of the turning points",
+  "solution": "**(a)** $f'(x) = 3ax^2 + 2bx + c$ and $f''(x) = 6ax + 2b$.\n\n$f''(x) = 0 \\iff x = -\\dfrac{b}{3a} = x_0$, a single solution (as $a \\ne 0$). Since $f''$ is a linear function with non-zero gradient $6a$, it changes sign at $x_0$. Therefore the concavity changes at $x_0$ and nowhere else: exactly one point of inflection. $\\blacksquare$\n\n**(b)** Expand:\n$$f(x_0 + h) = a(x_0^3 + 3x_0^2h + 3x_0h^2 + h^3) + b(x_0^2 + 2x_0h + h^2) + c(x_0 + h) + d$$\nCollect powers of $h$:\n$$= \\underbrace{(ax_0^3 + bx_0^2 + cx_0 + d)}_{f(x_0)} + \\underbrace{(3ax_0^2 + 2bx_0 + c)}_{f'(x_0)}h + (3ax_0 + b)h^2 + ah^3$$\nSince $3ax_0 + b = -b + b = 0$:\n$$f(x_0 + h) = f(x_0) + f'(x_0)h + ah^3$$\n\nLet $g(h) = f'(x_0)h + ah^3$, so $f(x_0 + h) - f(x_0) = g(h)$. Then $g(-h) = -g(h)$, so\n$$f(x_0 - h) - f(x_0) = -\\big(f(x_0 + h) - f(x_0)\\big)$$\nThis says that for every point $(x_0 + h, f(x_0) + k)$ on the curve, the point $(x_0 - h, f(x_0) - k)$ is also on it: the curve is unchanged by a rotation of $180°$ about the point of inflection $(x_0, f(x_0))$. $\\blacksquare$\n\n**(c)** By (b), the $180°$ rotation about the point of inflection maps the curve to itself, so it maps the maximum to the minimum (it swaps the two turning points). The centre of a $180°$ rotation is the midpoint of any point and its image, so the point of inflection is the midpoint of $(-1, 7)$ and $(3, -25)$:\n$$\\left(\\frac{-1 + 3}{2}, \\frac{7 + (-25)}{2}\\right) = (1, -9)$$\n\n(Check: this cubic is $y = x^3 - 3x^2 - 9x + 2$, with $y'' = 6x - 6 = 0$ at $x = 1$ and $y(1) = -9$ ✓)",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "calc-concavity-inflection-q17",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The curve $y = x^4 - 6x^2$ has two points of inflection, $P$ and $Q$, where $P$ is to the left of $Q$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the coordinates of $P$ and $Q$."
+   },
+   {
+    "label": "b",
+    "prompt": "The straight line through $P$ and $Q$ meets the curve at two further points, $R$ and $S$, with $R$ to the left of $P$. Find the exact coordinates of $R$ and $S$."
+   },
+   {
+    "label": "c",
+    "prompt": "Show that $\\dfrac{PQ}{RP} = \\dfrac{1 + \\sqrt5}{2}$, the golden ratio."
+   },
+   {
+    "label": "d",
+    "prompt": "Show that the same ratio arises for every curve $y = x^4 - 6a^2x^2$ with $a > 0$."
+   }
+  ],
+  "hint": "The line $PQ$ is horizontal. Solving \"curve $=$ line\" gives a quartic in $x$ that is a quadratic in $x^2$, and you already know two of its roots.",
+  "answer": "(a) $P(-1, -5)$, $Q(1, -5)$ (b) $R(-\\sqrt5, -5)$, $S(\\sqrt5, -5)$ (c) $\\frac{2}{\\sqrt5 - 1} = \\frac{1 + \\sqrt5}{2}$ (d) the points are $x = \\pm a, \\pm a\\sqrt5$, so every length scales by $a$ and the ratio is unchanged",
+  "solution": "**(a)** $y'' = 12x^2 - 12 = 12(x - 1)(x + 1)$, which changes sign at $x = \\pm1$ (positive outside, negative between). $y = 1 - 6 = -5$ at both, so $P(-1, -5)$ and $Q(1, -5)$.\n\n**(b)** The line $PQ$ is $y = -5$. Intersections with the curve:\n$$x^4 - 6x^2 = -5 \\;\\Rightarrow\\; x^4 - 6x^2 + 5 = 0 \\;\\Rightarrow\\; (x^2 - 1)(x^2 - 5) = 0$$\n$x = \\pm1$ are $P$ and $Q$; the new points have $x = \\pm\\sqrt5$:\n$$R(-\\sqrt5, -5), \\qquad S(\\sqrt5, -5)$$\n\n**(c)** All four points lie on $y = -5$, so distances are differences in $x$:\n$$RP = -1 - (-\\sqrt5) = \\sqrt5 - 1, \\qquad PQ = 2$$\n$$\\frac{PQ}{RP} = \\frac{2}{\\sqrt5 - 1} \\times \\frac{\\sqrt5 + 1}{\\sqrt5 + 1} = \\frac{2(\\sqrt5 + 1)}{5 - 1} = \\frac{1 + \\sqrt5}{2}$$ $\\blacksquare$\n\n**(d)** $y'' = 12x^2 - 12a^2$ changes sign at $x = \\pm a$, where $y = a^4 - 6a^4 = -5a^4$. The line $y = -5a^4$ meets the curve where\n$$x^4 - 6a^2x^2 + 5a^4 = 0 \\;\\Rightarrow\\; (x^2 - a^2)(x^2 - 5a^2) = 0 \\;\\Rightarrow\\; x = \\pm a, \\pm a\\sqrt5$$\nSo $RP = a(\\sqrt5 - 1)$ and $PQ = 2a$: every length is multiplied by $a$, and $\\frac{PQ}{RP} = \\frac{2}{\\sqrt5 - 1} = \\frac{1 + \\sqrt5}{2}$ again.",
+  "linkedTopicIds": [
+   "num-surds"
+  ],
+  "misconceptionIds": []
+ },
+ {
+  "id": "calc-concavity-inflection-q18",
+  "topicId": "calc-concavity-inflection",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The curve $C$ has equation $y = x^4 + kx^3 + 6x^2 + 1$, where $k$ is a real constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Determine, for **every** real value of $k$, how many points of inflection $C$ has. Justify your answer carefully, paying particular attention to the boundary cases."
+   },
+   {
+    "label": "b",
+    "prompt": "For $k = 5$, find the $x$-coordinates of the points of inflection and the interval on which $C$ is concave."
+   }
+  ],
+  "hint": "$\\frac{d^2y}{dx^2} = 6(2x^2 + kx + 2)$. Consider the discriminant of $2x^2 + kx + 2$, but remember that a root of $\\frac{d^2y}{dx^2}$ only gives an inflection if the sign changes.",
+  "answer": "(a) Two points of inflection if $|k| > 4$; none if $|k| \\le 4$ (including $k = \\pm4$, where $\\frac{d^2y}{dx^2} = 12(x \\pm 1)^2$ does not change sign) (b) $x = -2$ and $x = -\\frac12$; concave for $-2 < x < -\\frac12$",
+  "solution": "$$\\frac{dy}{dx} = 4x^3 + 3kx^2 + 12x, \\qquad \\frac{d^2y}{dx^2} = 12x^2 + 6kx + 12 = 6(2x^2 + kx + 2)$$\nThe discriminant of $2x^2 + kx + 2$ is $k^2 - 16$.\n\n**(a)**\n- **$|k| > 4$:** $k^2 - 16 > 0$, two distinct roots. A quadratic with positive leading coefficient is negative strictly between its distinct roots and positive outside, so $\\frac{d^2y}{dx^2}$ changes sign at both: **two** points of inflection.\n- **$|k| < 4$:** $k^2 - 16 < 0$, no roots, so $\\frac{d^2y}{dx^2} > 0$ everywhere: convex everywhere, **no** points of inflection.\n- **$k = \\pm4$:** a repeated root. $2x^2 \\pm 4x + 2 = 2(x \\pm 1)^2$, so $\\frac{d^2y}{dx^2} = 12(x \\pm 1)^2 \\ge 0$. It is zero at $x = \\mp1$ but does **not** change sign, so there are **no** points of inflection – even though $\\frac{d^2y}{dx^2} = 0$ there.\n\nSo $C$ has two points of inflection when $k < -4$ or $k > 4$, and none when $-4 \\le k \\le 4$. It can never have exactly one.\n\n**(b)** $k = 5$: $2x^2 + 5x + 2 = (2x + 1)(x + 2) = 0$, so $x = -2$ or $x = -\\frac12$ (both inflections, by (a)).\n\n$C$ is concave where $\\frac{d^2y}{dx^2} < 0$, i.e. between the roots: $-2 < x < -\\frac12$.",
+  "linkedTopicIds": [
+   "pure-quadratic-functions-discriminant"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ }
+]

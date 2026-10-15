@@ -1,0 +1,250 @@
+[
+ {
+  "id": "stat-hypothesis-normal-mean-q01",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The masses of hens' eggs from a farm are normally distributed with mean 60 g and standard deviation 8 g. Eggs are packed in random trays.\n\nA random sample of 16 eggs is taken.\n\n(a) Write down the distribution of $\\bar{X}$, the mean mass of the 16 eggs.\n\n(b) Find $P(\\bar{X} > 62)$.",
+  "hint": "$\\bar{X} \\sim N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$, so the standard deviation of $\\bar{X}$ is $\\frac{\\sigma}{\\sqrt{n}}$.",
+  "answer": "(a) $\\bar{X} \\sim N\\left(60, \\frac{8^2}{16}\\right) = N(60, 2^2)$ (b) $0.1587$",
+  "solution": "(a) $\\bar{X} \\sim N\\left(60, \\frac{8^2}{16}\\right) = N(60, 4)$, so the standard deviation of $\\bar{X}$ is $\\frac{8}{\\sqrt{16}} = 2$ g.\n\n(b) $$P(\\bar{X} > 62) = P\\left(Z > \\frac{62 - 60}{2}\\right) = P(Z > 1) = 0.1587$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q02",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The masses of hens' eggs from a farm are normally distributed with mean 60 g and standard deviation 8 g. Eggs are packed in random trays.\n\nA random sample of 64 eggs is taken.\n\n(a) Write down the distribution of $\\bar{X}$, the mean mass of the 64 eggs.\n\n(b) Find $P(\\bar{X} > 62)$.",
+  "hint": "Only the sample size has changed. How does that affect $\\frac{\\sigma}{\\sqrt{n}}$?",
+  "answer": "(a) $\\bar{X} \\sim N(60, 1^2)$ (b) $0.0228$",
+  "solution": "**What changed:** $n$ went from 16 to 64 (four times as large).\n\n(a) $\\bar{X} \\sim N\\left(60, \\frac{64}{64}\\right) = N(60, 1)$; the standard deviation is $\\frac{8}{\\sqrt{64}} = 1$ g.\n\nMultiplying $n$ by 4 **halves** the standard deviation of $\\bar{X}$ (from 2 to 1), because of the square root.\n\n(b) $$P(\\bar{X} > 62) = P\\left(Z > \\frac{62 - 60}{1}\\right) = P(Z > 2) = 0.0228$$\n\nA mean of over 62 g is much less likely with the larger sample: large samples have means closer to $\\mu$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q03",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The masses of hens' eggs from a farm are normally distributed with mean 60 g and standard deviation 8 g. Eggs are packed in random trays.\n\nA random sample of 64 eggs is taken. Find $P(\\bar{X} < 58)$.",
+  "hint": "Use the same distribution of $\\bar{X}$ as for 64 eggs. Think about symmetry.",
+  "answer": "$0.0228$",
+  "solution": "**What changed:** the inequality now looks at the lower tail, 2 g **below** the mean.\n\n$\\bar{X} \\sim N(60, 1^2)$:\n$$P(\\bar{X} < 58) = P\\left(Z < \\frac{58 - 60}{1}\\right) = P(Z < -2) = 0.0228$$\n\nBy symmetry this equals $P(\\bar{X} > 62)$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q04",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "The masses of hens' eggs from a farm are normally distributed with mean 60 g and standard deviation 8 g. Eggs are packed in random trays.\n\nA random sample of 64 eggs is taken. Find $P(58 < \\bar{X} < 62)$, and interpret your answer.",
+  "hint": "Subtract the two tail probabilities from 1.",
+  "answer": "$0.9545$; about $95\\%$ of samples of 64 eggs have a mean mass within 2 g of 60 g.",
+  "solution": "**What changed:** now we want the region between the two tails.\n\n$$P(58 < \\bar{X} < 62) = P(-2 < Z < 2) = 1 - 2 \\times 0.0228 = 0.9545$$\n(using unrounded values).\n\nAbout $95\\%$ of random samples of 64 eggs have a mean mass between 58 g and 62 g, even though individual eggs vary much more ($P(58 < X < 62)$ for a single egg is only about $0.20$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q05",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The lifetimes of a type of battery are normally distributed with mean 200 hours and standard deviation 12 hours. A new design is claimed to last longer, with the same standard deviation. A random sample of 36 new batteries has a mean lifetime of 204.5 hours.\n\nTest, at the $5\\%$ level of significance, whether the mean lifetime of the new batteries is greater than 200 hours.",
+  "hint": "Find $z = \\dfrac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}$ and compare it with the one-tailed critical value $1.6449$.",
+  "answer": "$z = 2.25 > 1.6449$ (p-value $0.0122$): reject $H_0$. There is sufficient evidence that the mean lifetime of the new batteries is greater than 200 hours.",
+  "solution": "$H_0: \\mu = 200$, $H_1: \\mu > 200$, where $\\mu$ is the mean lifetime (hours) of the new batteries.\n\nUnder $H_0$: $\\bar{X} \\sim N\\left(200, \\frac{12^2}{36}\\right)$, so the standard deviation of $\\bar{X}$ is $\\frac{12}{6} = 2$.\n\n$$z = \\frac{204.5 - 200}{2} = 2.25$$\n\nCritical value (one-tailed, $5\\%$): $1.6449$. Since $2.25 > 1.6449$, the result is significant. (Equivalently, p-value $= P(Z > 2.25) = 0.0122 < 0.05$.)\n\nReject $H_0$: there is sufficient evidence at the $5\\%$ level to suggest that the mean lifetime of the new batteries is greater than 200 hours.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q06",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 225\" width=\"350\" height=\"225\"><polygon points=\"25.0,190.0 25.0,189.8 26.1,189.7 27.2,189.7 28.3,189.7 29.4,189.7 30.5,189.6 31.6,189.6 32.7,189.6 33.9,189.5 35.0,189.5 36.1,189.4 37.2,189.4 38.3,189.3 39.4,189.3 40.5,189.2 41.6,189.1 42.7,189.1 43.8,189.0 44.9,188.9 46.0,188.8 47.1,188.7 48.2,188.6 49.3,188.5 50.4,188.4 51.6,188.2 52.7,188.1 53.8,188.0 54.9,187.8 56.0,187.6 57.1,187.4 58.2,187.3 59.3,187.1 60.4,186.8 61.5,186.6 62.6,186.4 63.7,186.1 64.8,185.8 65.9,185.5 67.0,185.2 68.2,184.9 69.3,184.6 70.4,184.2 71.5,183.8 72.6,183.4 73.7,183.0 74.8,182.5 75.9,182.0 77.0,181.5 78.1,181.0 79.2,180.5 79.2,190.0\" fill=\"#3b82f6\" fill-opacity=\"0.45\" stroke=\"none\"/><polyline points=\"25.0,189.8 26.9,189.7 28.9,189.7 30.8,189.6 32.7,189.6 34.7,189.5 36.6,189.4 38.6,189.3 40.5,189.2 42.4,189.1 44.4,188.9 46.3,188.8 48.3,188.6 50.2,188.4 52.1,188.2 54.1,187.9 56.0,187.6 57.9,187.3 59.9,186.9 61.8,186.5 63.8,186.1 65.7,185.6 67.6,185.1 69.6,184.5 71.5,183.8 73.4,183.1 75.4,182.3 77.3,181.4 79.2,180.4 81.2,179.4 83.1,178.3 85.1,177.1 87.0,175.7 88.9,174.3 90.9,172.8 92.8,171.2 94.8,169.4 96.7,167.5 98.6,165.5 100.6,163.4 102.5,161.2 104.4,158.8 106.4,156.3 108.3,153.7 110.2,150.9 112.2,148.1 114.1,145.1 116.1,142.0 118.0,138.7 119.9,135.4 121.9,132.0 123.8,128.4 125.8,124.8 127.7,121.1 129.6,117.4 131.6,113.6 133.5,109.8 135.4,105.9 137.4,102.0 139.3,98.2 141.2,94.3 143.2,90.5 145.1,86.8 147.1,83.1 149.0,79.5 150.9,76.0 152.9,72.7 154.8,69.5 156.7,66.4 158.7,63.5 160.6,60.9 162.6,58.4 164.5,56.1 166.4,54.1 168.4,52.3 170.3,50.8 172.3,49.5 174.2,48.5 176.1,47.8 178.1,47.4 180.0,47.3 181.9,47.4 183.9,47.8 185.8,48.5 187.7,49.5 189.7,50.8 191.6,52.3 193.6,54.1 195.5,56.1 197.4,58.4 199.4,60.9 201.3,63.5 203.3,66.4 205.2,69.5 207.1,72.7 209.1,76.0 211.0,79.5 212.9,83.1 214.9,86.8 216.8,90.5 218.8,94.3 220.7,98.2 222.6,102.0 224.6,105.9 226.5,109.8 228.4,113.6 230.4,117.4 232.3,121.1 234.2,124.8 236.2,128.4 238.1,132.0 240.1,135.4 242.0,138.7 243.9,142.0 245.9,145.1 247.8,148.1 249.8,150.9 251.7,153.7 253.6,156.3 255.6,158.8 257.5,161.2 259.4,163.4 261.4,165.5 263.3,167.5 265.3,169.4 267.2,171.2 269.1,172.8 271.1,174.3 273.0,175.7 274.9,177.1 276.9,178.3 278.8,179.4 280.8,180.4 282.7,181.4 284.6,182.3 286.6,183.1 288.5,183.8 290.4,184.5 292.4,185.1 294.3,185.6 296.2,186.1 298.2,186.5 300.1,186.9 302.1,187.3 304.0,187.6 305.9,187.9 307.9,188.2 309.8,188.4 311.7,188.6 313.7,188.8 315.6,188.9 317.6,189.1 319.5,189.2 321.4,189.3 323.4,189.4 325.3,189.5 327.2,189.6 329.2,189.6 331.1,189.7 333.1,189.7 335.0,189.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\"/><line x1=\"25.0\" y1=\"190.0\" x2=\"335.0\" y2=\"190.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"79.2\" y1=\"190.0\" x2=\"79.2\" y2=\"180.5\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"180.0\" y1=\"190.0\" x2=\"180.0\" y2=\"47.3\" stroke=\"currentColor\" stroke-width=\"1\" stroke-dasharray=\"4 3\"/><line x1=\"180.0\" y1=\"190.0\" x2=\"180.0\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"79.2\" y1=\"190.0\" x2=\"79.2\" y2=\"195.0\" stroke=\"currentColor\" stroke-width=\"1.2\"/><text x=\"180.0\" y=\"210.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">30</text><text x=\"79.2\" y=\"210.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\" font-style=\"italic\">c</text><text x=\"331.0\" y=\"210.0\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\" font-style=\"italic\">x̄</text><text x=\"48.3\" y=\"126.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1%</text><line x1=\"50.3\" y1=\"131.0\" x2=\"65.7\" y2=\"185.2\" stroke=\"currentColor\" stroke-width=\"1\"/><text x=\"280.8\" y=\"70.0\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">X̄ under H₀</text></svg>",
+  "question": "A random variable $X \\sim N(\\mu, 5^2)$. A random sample of 20 observations is used to test $H_0: \\mu = 30$ against $H_1: \\mu < 30$ at the $1\\%$ level of significance.\n\nThe diagram shows the distribution of $\\bar{X}$ under $H_0$, with the critical region shaded.\n\n(a) Find the value of $c$, the boundary of the critical region, to 2 decimal places.\n\n(b) The sample mean is $\\bar{x} = 27.6$. State the conclusion of the test.",
+  "hint": "The shaded area is $0.01$, so $c = 30 - 2.3263 \\times \\frac{\\sigma}{\\sqrt{n}}$.",
+  "answer": "(a) $c = 27.40$; critical region $\\bar{X} < 27.40$ (b) $27.6$ is not in the critical region: do not reject $H_0$; insufficient evidence at the $1\\%$ level that $\\mu < 30$.",
+  "solution": "(a) Under $H_0$: $\\bar{X} \\sim N\\left(30, \\frac{25}{20}\\right)$, so the standard deviation of $\\bar{X}$ is $\\frac{5}{\\sqrt{20}} = 1.1180$.\n\nFor a lower tail of $1\\%$, $P(Z < -2.3263) = 0.01$, so\n$$c = 30 - 2.3263 \\times 1.1180 = 30 - 2.601 = 27.40 \\text{ (2 d.p.)}$$\nCritical region: $\\bar{X} < 27.40$.\n\n(b) $27.6 > 27.40$, so $\\bar{x}$ is not in the critical region. Do not reject $H_0$: there is insufficient evidence at the $1\\%$ level to suggest that $\\mu < 30$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q07",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The masses of chocolate bars are normally distributed with standard deviation 3 g. The label says the mean mass is 45 g. A trading standards officer weighs a random sample of 36 bars and finds a mean of 44.1 g. She tests, at the $5\\%$ level, whether the mean mass is less than 45 g.\n\nHer assistant's working is shown below.\n\n$H_0: \\mu = 45$, $H_1: \\mu < 45$\n$z = \\dfrac{44.1 - 45}{3} = -0.3$\n$P(Z < -0.3) = 0.3821 > 0.05$, so do not reject $H_0$. There is no evidence that the bars are underweight.\n\n(a) Identify the error and explain why it is wrong.\n\n(b) Carry out the test correctly.",
+  "hint": "The test statistic is about the mean of 36 bars, not a single bar. What is the standard deviation of $\\bar{X}$?",
+  "answer": "(a) He divided by $\\sigma = 3$ instead of $\\frac{\\sigma}{\\sqrt{n}} = 0.5$. (b) $z = -1.8$, $P(Z < -1.8) = 0.0359 < 0.05$: reject $H_0$; sufficient evidence that the mean mass is less than 45 g.",
+  "solution": "(a) The error is in the second line. The assistant used the standard deviation of a **single** bar, $\\sigma = 3$. But the test uses the sample **mean** of 36 bars, which varies much less: under $H_0$, $\\bar{X} \\sim N\\left(45, \\frac{3^2}{36}\\right)$, with standard deviation $\\frac{3}{\\sqrt{36}} = 0.5$.\n\n(b) $$z = \\frac{44.1 - 45}{0.5} = -1.8$$\n$P(Z < -1.8) = 0.0359 < 0.05$ (or: $-1.8 < -1.6449$), so the result is significant. Reject $H_0$.\n\nThere is sufficient evidence at the $5\\%$ level to suggest that the mean mass of the bars is less than 45 g. The assistant's error reversed the conclusion.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q08",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "Bags of flour are filled by a machine. The masses are normally distributed with variance $9\\ \\text{g}^2$ and the mean is supposed to be 1000 g. A random sample of 25 bags has mean mass 1001 g. Test, at the $5\\%$ level, whether the mean mass has changed.\n\nRhys's working is shown below.\n\n$H_0: \\mu = 1000$, $H_1: \\mu \\ne 1000$\n$\\bar{X} \\sim N\\left(1000, \\frac{9}{25}\\right)$, so the standard deviation of $\\bar{X}$ is $\\frac{9}{25} = 0.36$\n$z = \\dfrac{1001 - 1000}{0.36} = 2.78 > 1.96$, so reject $H_0$.\n\n(a) Identify Rhys's error.\n\n(b) Carry out the test correctly and state the conclusion in context.",
+  "hint": "In $N\\left(\\mu, \\frac{\\sigma^2}{n}\\right)$, the second number is a variance.",
+  "answer": "(a) $\\frac{9}{25}$ is the variance of $\\bar{X}$; he did not square root it (the standard deviation is $0.6$). (b) $z = 1.67 < 1.96$: do not reject $H_0$; insufficient evidence that the mean mass has changed from 1000 g.",
+  "solution": "(a) The distribution $\\bar{X} \\sim N\\left(1000, \\frac{9}{25}\\right)$ is correct, but $\\frac{9}{25} = 0.36$ is the **variance** of $\\bar{X}$. The standard deviation is its square root:\n$$\\sqrt{\\frac{9}{25}} = \\frac{3}{5} = 0.6$$\n(Here $\\sigma^2 = 9$, so $\\sigma = 3$ and $\\frac{\\sigma}{\\sqrt{n}} = \\frac{3}{5}$.)\n\n(b) $$z = \\frac{1001 - 1000}{0.6} = 1.67 \\text{ (3 s.f.)}$$\nTwo-tailed at $5\\%$: critical values $\\pm 1.96$. Since $1.67 < 1.96$, the result is not significant. Do not reject $H_0$.\n\nThere is insufficient evidence at the $5\\%$ level to suggest that the mean mass of the bags has changed from 1000 g.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q09",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The times taken by adults to complete a puzzle are normally distributed with standard deviation 15 seconds. The mean time used to be 120 seconds. After the puzzle was redesigned, a random sample of 50 adults had a mean time of 116 seconds. Test, at the $5\\%$ level, whether the mean time has **changed**.\n\nGrace's working is shown below.\n\n$H_0: \\mu = 120$, $H_1: \\mu \\ne 120$\nStandard deviation of $\\bar{X}$: $\\frac{15}{\\sqrt{50}} = 2.1213$\n$z = \\dfrac{116 - 120}{2.1213} = -1.886$\nCritical value $-1.6449$. Since $-1.886 < -1.6449$, reject $H_0$: the mean time has changed.\n\n(a) Identify Grace's error.\n\n(b) Complete the test correctly.\n\n(c) For what alternative hypothesis would Grace's critical value have been correct, and would the conclusion then have been different?",
+  "hint": "Her $H_1$ uses $\\ne$. How is the $5\\%$ shared out?",
+  "answer": "(a) She used the one-tailed critical value; for a two-tailed $5\\%$ test it is $\\pm 1.96$. (b) $|z| = 1.886 < 1.96$: do not reject $H_0$; insufficient evidence that the mean time has changed. (c) $H_1: \\mu < 120$; then $-1.886 < -1.6449$ and $H_0$ would be rejected.",
+  "solution": "(a) The hypotheses, standard deviation and $z$-value are all correct. The error is the critical value: $H_1: \\mu \\ne 120$ is two-tailed, so the $5\\%$ is split as $2.5\\%$ in each tail and the critical values are $\\pm 1.96$. The value $1.6449$ is for a one-tailed $5\\%$ test.\n\n(b) $z = -1.886$ and $-1.886 > -1.96$, so $z$ is not in the critical region. (Equivalently, $P(Z < -1.886) = 0.0297 > 0.025$.)\n\nDo not reject $H_0$: there is insufficient evidence at the $5\\%$ level to suggest that the mean time to complete the puzzle has changed.\n\n(c) $-1.6449$ is the critical value for the one-tailed test $H_1: \\mu < 120$ (the mean time has decreased). Then $-1.886 < -1.6449$, so $H_0$ would be rejected. That hypothesis must be chosen before seeing the data, though; the question asked about a **change**.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q10",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "The reaction times of drivers are normally distributed with standard deviation 0.05 s. A road safety group tests whether a training course reduces the mean reaction time from 0.42 s. A random sample of 25 drivers who took the course had a mean reaction time of 0.40 s. They test $H_0: \\mu = 0.42$ against $H_1: \\mu < 0.42$ at the $5\\%$ level.\n\n(a) Show that the p-value is $0.0228$.\n\nFour students write conclusions:\n\n**A:** \"The mean reaction time has decreased to 0.40 s.\"\n**B:** \"This proves that the course reduces mean reaction time.\"\n**C:** \"There is sufficient evidence at the $5\\%$ level to suggest that the mean reaction time of drivers who take the course is less than 0.42 s.\"\n**D:** \"There is a $2.28\\%$ chance that the null hypothesis is true.\"\n\n(b) Which conclusion is acceptable? Explain what is wrong with each of the others.",
+  "hint": "A hypothesis test gives evidence about the population mean $\\mu$; it never gives certainty or the exact value of $\\mu$. What is a p-value the probability of?",
+  "answer": "(a) $z = \\frac{0.40 - 0.42}{0.01} = -2$, $P(Z < -2) = 0.0228$ (b) C. A treats the sample mean as the population mean; B claims certainty (a test cannot prove); D misreads the p-value, which is $P(\\text{data this extreme} \\mid H_0 \\text{ true})$, not $P(H_0 \\text{ true})$.",
+  "solution": "(a) Under $H_0$, $\\bar{X} \\sim N\\left(0.42, \\frac{0.05^2}{25}\\right)$, standard deviation $\\frac{0.05}{5} = 0.01$.\n$$z = \\frac{0.40 - 0.42}{0.01} = -2, \\qquad P(\\bar{X} \\le 0.40) = P(Z \\le -2) = 0.0228$$\n$0.0228 < 0.05$, so $H_0$ is rejected.\n\n(b) **C** is acceptable: it is about the population mean, gives the significance level, uses non-definite language (\"suggest\") and is in context.\n\n**A** is wrong: 0.40 s is the mean of this sample only. The test gives evidence that the population mean is below 0.42 s, not that it equals 0.40 s; another sample would give a different mean.\n\n**B** is wrong: a test never proves anything. There is still a chance (up to $5\\%$) of rejecting a true $H_0$; also, without a controlled comparison group we cannot be sure the course caused the change.\n\n**D** is wrong: the p-value is the probability of getting a sample mean as low as 0.40 s **if** $H_0$ is true. It is not the probability that $H_0$ is true.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q11",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 3,
+  "type": "exam-style",
+  "marks": 9,
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "A machine fills jars with jam. The mass of jam in a jar is normally distributed with standard deviation 4 g, and the mean is set to 454 g. After the machine is serviced, a quality controller takes a random sample of 20 jars and finds that the mean mass of jam is 455.9 g. She wishes to test, at the $5\\%$ level of significance, whether the mean mass has changed.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "State suitable hypotheses, and the distribution of $\\bar{X}$, the sample mean, under the null hypothesis.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Find the critical region for $\\bar{X}$. Give the boundaries to 2 decimal places.",
+    "marks": 4
+   },
+   {
+    "label": "c",
+    "prompt": "State the conclusion of the test in context.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Explain why the distribution of $\\bar{X}$ is exactly normal here, even though the sample size is only 20.",
+    "marks": 1
+   }
+  ],
+  "hint": "Two-tailed at $5\\%$ uses $z = \\pm 1.96$. The boundaries are $454 \\pm 1.96 \\times \\frac{4}{\\sqrt{20}}$.",
+  "answer": "(a) $H_0: \\mu = 454$, $H_1: \\mu \\ne 454$; $\\bar{X} \\sim N\\left(454, \\frac{4^2}{20}\\right)$ (b) $\\bar{X} < 452.25$ or $\\bar{X} > 455.75$ (c) $455.9$ is in the critical region: sufficient evidence that the mean mass of jam has changed. (d) The individual masses are normally distributed, so the mean of any number of them is normal.",
+  "solution": "(a) $H_0: \\mu = 454$, $H_1: \\mu \\ne 454$, where $\\mu$ is the mean mass (g) of jam in a jar. B1\n\nUnder $H_0$: $\\bar{X} \\sim N\\left(454, \\frac{4^2}{20}\\right) = N(454, 0.8)$. B1\n\n(b) Standard deviation of $\\bar{X}$: $\\frac{4}{\\sqrt{20}} = 0.8944$ M1\n\nTwo-tailed: $2.5\\%$ in each tail, $z = \\pm 1.96$. B1\n\n$454 - 1.96 \\times 0.8944 = 452.25$ and $454 + 1.96 \\times 0.8944 = 455.75$ M1\n\nCritical region: $\\bar{X} < 452.25$ or $\\bar{X} > 455.75$. A1\n\n(c) $455.9 > 455.75$, so $\\bar{x}$ lies in the critical region: reject $H_0$. M1\n\nThere is sufficient evidence at the $5\\%$ level to suggest that the mean mass of jam in a jar has changed (from 454 g). A1 (must not state that the mean **is** 455.9 g)\n\n(d) The masses of individual jars are normally distributed, and the mean of a random sample from a normal population is itself normally distributed for any sample size, so no large-sample approximation is needed. B1",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q12",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "Scores on a national reading test are normally distributed with mean 100 and standard deviation 15. A head teacher believes that her school's pupils perform differently from the national population. A random sample of 40 pupils from the school has a mean score of 104.2.\n\n(a) Test the head teacher's belief at the $5\\%$ level, using a p-value.\n\n(b) State an assumption you have made about the school's pupils.",
+  "hint": "The head teacher says \"differently\", so the test is two-tailed. Compare the tail probability with $0.025$.",
+  "answer": "(a) $z = 1.771$, $P(Z > 1.771) = 0.0383 > 0.025$: do not reject $H_0$; insufficient evidence at the $5\\%$ level that the school's mean score differs from 100. (b) The standard deviation of the school's scores is 15, the same as nationally (and the scores are normally distributed).",
+  "solution": "(a) Let $\\mu$ be the mean score of pupils at the school.\n\n$H_0: \\mu = 100$, $H_1: \\mu \\ne 100$.\n\nUnder $H_0$: $\\bar{X} \\sim N\\left(100, \\frac{15^2}{40}\\right)$, standard deviation $\\frac{15}{\\sqrt{40}} = 2.3717$.\n\n$$z = \\frac{104.2 - 100}{2.3717} = 1.771$$\n\np-value (one tail) $= P(Z > 1.771) = 0.0383$.\n\nTwo-tailed at $5\\%$: compare with $0.025$. Since $0.0383 > 0.025$, the result is not significant. (Equivalently, $1.771 < 1.96$.)\n\nDo not reject $H_0$: there is insufficient evidence at the $5\\%$ level to suggest that the mean score of the school's pupils differs from 100.\n\n(Note: had the head teacher claimed beforehand that her pupils score **higher**, a one-tailed test would have been significant, since $0.0383 < 0.05$.)\n\n(b) We assume the school's scores are normally distributed with the same standard deviation as nationally, $\\sigma = 15$ (known variance), and that the 40 pupils are a random sample of the school's pupils.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q13",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "IQ-style test scores in a population are normally distributed with standard deviation 15. A researcher wants to test $H_0: \\mu = 100$ against $H_1: \\mu > 100$ at the $5\\%$ level. She expects the sample mean to be about 103.\n\n(a) Find the smallest sample size $n$ for which a sample mean of 103 would lead to rejecting $H_0$.\n\n(b) Find the smallest sample size needed if she uses the $1\\%$ level instead.\n\n(c) Explain, in terms of the distribution of $\\bar{X}$, why larger samples make it easier to detect a small difference from $100$.",
+  "hint": "Reject when $\\dfrac{103 - 100}{15/\\sqrt{n}} > 1.6449$. Solve for $\\sqrt{n}$, then square.",
+  "answer": "(a) $n = 68$ (b) $n = 136$ (c) The standard deviation of $\\bar{X}$, $\\frac{15}{\\sqrt{n}}$, shrinks as $n$ grows, so the same difference of 3 is more standard deviations from 100.",
+  "solution": "(a) Reject $H_0$ when\n$$\\frac{103 - 100}{15/\\sqrt{n}} > 1.6449 \\Rightarrow \\frac{3\\sqrt{n}}{15} > 1.6449 \\Rightarrow \\sqrt{n} > 8.2245 \\Rightarrow n > 67.64$$\nSo the smallest sample size is $n = 68$.\n\nCheck: $n = 67$: $z = \\frac{3\\sqrt{67}}{15} = 1.637 < 1.6449$; $n = 68$: $z = 1.649 > 1.6449$ ✓\n\n(b) At $1\\%$ the critical value is $2.3263$:\n$$\\frac{3\\sqrt{n}}{15} > 2.3263 \\Rightarrow \\sqrt{n} > 11.6315 \\Rightarrow n > 135.29$$\nSo $n = 136$.\n\n(c) Under $H_0$, $\\bar{X} \\sim N\\left(100, \\frac{15^2}{n}\\right)$. As $n$ increases, the standard deviation $\\frac{15}{\\sqrt{n}}$ decreases, so sample means cluster more tightly around 100. A sample mean of 103 is then a larger number of standard deviations above 100, and so less likely to occur by chance if $H_0$ were true.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q14",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "The volume of cola in a can is normally distributed with standard deviation 6 ml. A random sample of 16 cans is used to test $H_0: \\mu = 250$ against $H_1: \\mu > 250$.\n\n(a) Find the critical regions for $\\bar{X}$ at the $5\\%$ level and at the $1\\%$ level.\n\n(b) Find the range of values of $\\bar{x}$ for which the result is significant at the $5\\%$ level but not at the $1\\%$ level.\n\n(c) Explain why any result that is significant at the $1\\%$ level must also be significant at the $5\\%$ level.",
+  "hint": "The standard deviation of $\\bar{X}$ is $\\frac{6}{\\sqrt{16}}$. Use $1.6449$ and $2.3263$.",
+  "answer": "(a) $5\\%$: $\\bar{X} > 252.47$; $1\\%$: $\\bar{X} > 253.49$ (b) $252.47 < \\bar{x} \\le 253.49$ (c) The $1\\%$ critical value is further from 250, so the $1\\%$ critical region lies inside the $5\\%$ critical region.",
+  "solution": "(a) Standard deviation of $\\bar{X}$: $\\frac{6}{\\sqrt{16}} = 1.5$.\n\n$5\\%$: $250 + 1.6449 \\times 1.5 = 252.47$, so the critical region is $\\bar{X} > 252.47$.\n\n$1\\%$: $250 + 2.3263 \\times 1.5 = 253.49$, so the critical region is $\\bar{X} > 253.49$.\n\n(b) Significant at $5\\%$ but not at $1\\%$ means $\\bar{x}$ is in the first region but not the second:\n$$252.47 < \\bar{x} \\le 253.49 \\text{ (2 d.p.)}$$\n\n(c) A result is significant at $1\\%$ when its p-value is below $0.01$; any such p-value is also below $0.05$. Geometrically, the $1\\%$ tail has the larger critical value ($2.3263 > 1.6449$), so $\\{\\bar{X} > 253.49\\}$ is contained in $\\{\\bar{X} > 252.47\\}$. The converse is false, as (b) shows: a smaller significance level demands stronger evidence.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q15",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "stat-standard-deviation"
+  ],
+  "question": "Bags of rice are labelled 500 g. The masses, $x$ g, are normally distributed with standard deviation 4 g. A consumer group suspects that the mean mass is **more** than 500 g (so the company is wasting rice). A random sample of 20 bags is weighed and the results are coded using $y = x - 500$:\n$$\\sum y = 46, \\qquad \\sum y^2 = 446$$\n\n(a) Find the sample mean mass $\\bar{x}$.\n\n(b) Test, at the $1\\%$ level, whether the mean mass is more than 500 g.\n\n(c) Calculate the standard deviation of the sample, and comment on whether the assumption that $\\sigma = 4$ is reasonable.",
+  "hint": "Coding: $\\bar{x} = \\bar{y} + 500$. Subtracting 500 does not change the standard deviation.",
+  "answer": "(a) $502.3$ g (b) $z = 2.571 > 2.3263$: reject $H_0$; sufficient evidence at $1\\%$ that the mean mass is more than 500 g. (c) $s = 4.12$ g, close to 4, so the assumption seems reasonable.",
+  "solution": "(a) $\\bar{y} = \\frac{46}{20} = 2.3$, so $\\bar{x} = 500 + 2.3 = 502.3$ g.\n\n(b) $H_0: \\mu = 500$, $H_1: \\mu > 500$.\n\nUnder $H_0$: $\\bar{X} \\sim N\\left(500, \\frac{4^2}{20}\\right)$, standard deviation $\\frac{4}{\\sqrt{20}} = 0.8944$.\n$$z = \\frac{502.3 - 500}{0.8944} = 2.571$$\nOne-tailed $1\\%$ critical value: $2.3263$. Since $2.571 > 2.3263$ (p-value $= 0.0051 < 0.01$), reject $H_0$.\n\nThere is sufficient evidence at the $1\\%$ level to suggest that the mean mass of the bags is more than 500 g.\n\n(c) Coding by subtracting a constant does not change the spread, so $s_x = s_y$:\n$$s_y = \\sqrt{\\frac{\\sum y^2}{n} - \\bar{y}^2} = \\sqrt{\\frac{446}{20} - 2.3^2} = \\sqrt{22.3 - 5.29} = \\sqrt{17.01} = 4.12 \\text{ g}$$\nThis is very close to the assumed $\\sigma = 4$ g, so the assumption appears reasonable. (A sample of 20 cannot confirm it exactly.)"
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q16",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "prob-binomial"
+  ],
+  "question": "A machine cuts metal rods whose lengths are normally distributed with standard deviation 2 mm. The target mean length is 500 mm. Each day a random sample of 10 rods is measured and a test of $H_0: \\mu = 500$ against $H_1: \\mu \\ne 500$ is carried out at the $5\\%$ level.\n\n(a) Find the critical region for $\\bar{X}$, giving the boundaries to 2 decimal places.\n\n(b) Suppose the mean really is 500 mm every day for 30 days, with the tests independent. Find the probability that $H_0$ is rejected on at least 4 of the 30 days.\n\n(c) One day the machine drifts so that the true mean becomes 501 mm. Find the probability that the test on that day rejects $H_0$.\n\n(d) If the mean stays at 501 mm for 5 days, find the probability that $H_0$ is rejected on at least one of those days. Comment on the daily test.",
+  "hint": "For (b), the number of days on which $H_0$ is rejected is binomial with $p = 0.05$. For (c), use $\\bar{X} \\sim N\\left(501, \\frac{2^2}{10}\\right)$ with the critical region from (a).",
+  "answer": "(a) $\\bar{X} < 498.76$ or $\\bar{X} > 501.24$ (b) $0.0608$ (c) $0.353$ (3 s.f.) (d) $0.886$; a single day's test often misses a 1 mm drift (it detects it only about $35\\%$ of the time), though repeated testing catches it fairly quickly.",
+  "solution": "(a) Standard deviation of $\\bar{X}$: $\\frac{2}{\\sqrt{10}} = 0.6325$.\n\n$500 \\pm 1.96 \\times 0.6325 = 500 \\pm 1.2396$\n\nCritical region: $\\bar{X} < 498.76$ or $\\bar{X} > 501.24$.\n\n(b) When $H_0$ is true, each day's test rejects $H_0$ with probability $0.05$ (the significance level; $\\bar{X}$ is continuous so this is exact). Let $Y$ be the number of days out of 30 on which $H_0$ is rejected: $Y \\sim B(30, 0.05)$.\n$$P(Y \\ge 4) = 1 - P(Y \\le 3) = 0.0608 \\text{ (3 s.f.)}$$\n\n(c) Now $\\bar{X} \\sim N(501, 0.6325^2)$.\n$$P(\\bar{X} > 501.24) = P\\left(Z > \\frac{501.2396 - 501}{0.6325}\\right) = P(Z > 0.379) = 0.3524$$\n$$P(\\bar{X} < 498.76) = P\\left(Z < \\frac{498.7604 - 501}{0.6325}\\right) = P(Z < -3.541) = 0.0002$$\nProbability of rejecting $H_0$ $= 0.3526 \\approx 0.353$ (3 s.f.).\n\n(d) $P(\\text{at least one rejection in 5 days}) = 1 - (1 - 0.3526)^5 = 1 - 0.6474^5 = 0.886$ (3 s.f.)\n\nA single day's test only detects a 1 mm drift about $35\\%$ of the time, because the shift is small compared with the standard deviation of $\\bar{X}$; a larger daily sample would make the test more sensitive. Over several days, however, the drift is very likely to be noticed."
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q17",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "A random variable $X \\sim N(\\mu, \\sigma^2)$, where $\\sigma$ is known. A test of $H_0: \\mu = \\mu_0$ against $H_1: \\mu > \\mu_0$ is carried out at the $5\\%$ level.\n\nWith a sample of size 25, the critical region is $\\bar{X} > 81.645$.\nWith a sample of size 100, the critical region is $\\bar{X} > 80.822$.\n\n(a) Find the values of $\\mu_0$ and $\\sigma$, giving each to the nearest whole number.\n\n(b) Using these values, a random sample of 64 observations has mean 81.1. Carry out the test at the $5\\%$ level, and state whether the conclusion would be the same at the $1\\%$ level.",
+  "hint": "Each boundary has the form $\\mu_0 + 1.6449 \\times \\frac{\\sigma}{\\sqrt{n}}$. Write two equations and subtract.",
+  "answer": "(a) $\\mu_0 = 80$, $\\sigma = 5$ (b) $z = 1.76 > 1.6449$: reject $H_0$ at $5\\%$; at $1\\%$, $1.76 < 2.3263$, so $H_0$ would not be rejected.",
+  "solution": "(a) The boundary of the critical region is $\\mu_0 + 1.6449\\frac{\\sigma}{\\sqrt{n}}$:\n$$\\mu_0 + 1.6449\\frac{\\sigma}{5} = 81.645 \\quad (1)$$\n$$\\mu_0 + 1.6449\\frac{\\sigma}{10} = 80.822 \\quad (2)$$\nSubtract (2) from (1):\n$$1.6449\\sigma\\left(\\frac{1}{5} - \\frac{1}{10}\\right) = 0.823 \\Rightarrow 0.16449\\sigma = 0.823 \\Rightarrow \\sigma = 5.003\\ldots \\approx 5$$\nThen from (1): $\\mu_0 = 81.645 - 1.6449 \\times \\frac{5.003}{5} = 80.0$, so $\\mu_0 = 80$.\n\n(b) $H_0: \\mu = 80$, $H_1: \\mu > 80$. Standard deviation of $\\bar{X}$: $\\frac{5}{\\sqrt{64}} = 0.625$.\n$$z = \\frac{81.1 - 80}{0.625} = 1.76$$\nAt $5\\%$: $1.76 > 1.6449$ (p-value $= 0.0392 < 0.05$), so reject $H_0$: there is sufficient evidence that $\\mu > 80$.\n\nAt $1\\%$: $1.76 < 2.3263$ (and $0.0392 > 0.01$), so $H_0$ would not be rejected; the conclusion would be different.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "stat-hypothesis-normal-mean-q18",
+  "topicId": "stat-hypothesis-normal-mean",
+  "difficulty": 5,
+  "type": "reasoning",
+  "linkedTopicIds": [
+   "prob-discrete-random-variables",
+   "prob-combining-random-variables"
+  ],
+  "question": "Let $X_1, X_2, \\ldots, X_n$ be independent observations, each with mean $\\mu$ and variance $\\sigma^2$, and let $\\bar{X} = \\dfrac{X_1 + X_2 + \\cdots + X_n}{n}$.\n\n(a) Using $E(aY) = aE(Y)$, $\\mathrm{Var}(aY) = a^2\\mathrm{Var}(Y)$, and the facts that expectations add and that variances of **independent** random variables add, prove that\n$$E(\\bar{X}) = \\mu \\quad \\text{and} \\quad \\mathrm{Var}(\\bar{X}) = \\frac{\\sigma^2}{n}$$\n\n(b) A student says, \"If I double my sample size, the standard deviation of $\\bar{X}$ halves.\" Is she correct? By what factor must the sample size be multiplied to halve the standard deviation of $\\bar{X}$?\n\n(c) Explain why the result $\\mathrm{Var}(\\bar{X}) = \\frac{\\sigma^2}{n}$ would be false if the observations were not independent, using the extreme case where $X_1 = X_2 = \\cdots = X_n$.",
+  "hint": "Write $\\bar{X} = \\frac{1}{n}S$ where $S = X_1 + \\cdots + X_n$. Find $E(S)$ and $\\mathrm{Var}(S)$ first.",
+  "answer": "(a) $E(S) = n\\mu$, $\\mathrm{Var}(S) = n\\sigma^2$; so $E(\\bar{X}) = \\mu$, $\\mathrm{Var}(\\bar{X}) = \\frac{n\\sigma^2}{n^2} = \\frac{\\sigma^2}{n}$ (b) No: doubling $n$ divides the SD by $\\sqrt{2}$; $n$ must be multiplied by 4. (c) Then $\\bar{X} = X_1$, so $\\mathrm{Var}(\\bar{X}) = \\sigma^2$, not $\\frac{\\sigma^2}{n}$.",
+  "solution": "(a) Let $S = X_1 + X_2 + \\cdots + X_n$, so $\\bar{X} = \\frac{1}{n}S$.\n\nExpectations add: $E(S) = \\mu + \\mu + \\cdots + \\mu = n\\mu$.\n\nThe $X_i$ are independent, so variances add: $\\mathrm{Var}(S) = \\sigma^2 + \\cdots + \\sigma^2 = n\\sigma^2$.\n\nThen\n$$E(\\bar{X}) = \\frac{1}{n}E(S) = \\frac{1}{n} \\times n\\mu = \\mu$$\n$$\\mathrm{Var}(\\bar{X}) = \\left(\\frac{1}{n}\\right)^2\\mathrm{Var}(S) = \\frac{n\\sigma^2}{n^2} = \\frac{\\sigma^2}{n}$$\nas required.\n\n(b) She is not correct. The standard deviation of $\\bar{X}$ is $\\frac{\\sigma}{\\sqrt{n}}$. Doubling $n$ gives $\\frac{\\sigma}{\\sqrt{2n}} = \\frac{1}{\\sqrt{2}} \\times \\frac{\\sigma}{\\sqrt{n}}$, which reduces it by a factor of $\\sqrt{2} \\approx 1.41$, not 2.\n\nTo halve it we need $\\frac{\\sigma}{\\sqrt{kn}} = \\frac{1}{2} \\times \\frac{\\sigma}{\\sqrt{n}}$, so $\\sqrt{k} = 2$ and $k = 4$: the sample size must be multiplied by 4.\n\n(c) If $X_1 = X_2 = \\cdots = X_n$, then $\\bar{X} = \\frac{nX_1}{n} = X_1$, so $\\mathrm{Var}(\\bar{X}) = \\sigma^2$, however large $n$ is. Repeating the same observation gives no new information. The step \"variances add\" requires independence; this is why a hypothesis test for a mean needs a **random** sample of independent observations."
+ }
+]
