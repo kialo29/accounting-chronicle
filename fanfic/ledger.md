@@ -29,6 +29,7 @@
 - [Ch26] Choke witnessed by Ahsoka, Ventress, Padmé (and Fives from the gantry); recording has a gap during it (Padmé implied to have switched it off). Obi-Wan didn't see it but noticed throat bruises; Barriss claimed 'a fall'. Fox holds the sealed chip (Padmé presented it; Obi-Wan witnessed the logging). Anakin holds Hondo's borrowed blue saber; Luminara holds Barriss's.
 - [Ch27] Recording gap 3:41. Vorne's right arm in a sling. Sgt Holt's first name: Aron. Ahsoka PARDONED (not vacated). Sabers #417/#418 remain in evidence pending Barriss's sentencing.
 - [Ch28] Detention gap 0241–0252; Barriss found at 0600 check, windpipe crushed, cell door never opened. Ahsoka's visit: 12 minutes ending 0058; Ahsoka in medical 0225–0307; Anakin logged in 1910, out 0331. Dace Orrin announced the inquiry closed; detention records sealed. Ahsoka slept in Temple guest quarters. Barriss is dead, so her sentencing is moot and evidence #417/#418 can now be released.
+- [Ch29] Kix removed Rex's chip (probe above the right ear); chip hidden in a vial labeled 'REX' behind expired fever shots in the Resolute medbay. Ahsoka has sabers #417/#418 + Hondo's blue saber. Fives signs '5555' = healed. Ventress's note signed '— V.'
 
 ## Open threads
 - [Ch01] Anakin nearly told Fox the figure 'fought like a Jedi' (Temple defensive forms) but didn't. Ventress began to say the attacker knew where to wait. Anakin ignored four comm calls from Obi-Wan. Ventress's fate unknown to Anakin.
@@ -59,6 +60,7 @@
 - [Ch26] Obi-Wan suspects Anakin choked Barriss. Barriss asked Ahsoka to visit — 'one more thing that's true' (the visit happens in Ch28, after the tribunal).
 - [Ch27] Palpatine hinted an Outer Rim governorship for Tarkin after the war and wants an eye kept on Vorne. Padmé's motion to vacate unfiled; Palpatine seemed to know its contents.
 - [Ch28] Ahsoka has told no one Barriss's claim about the Chancellor (told Council/Anakin only that Barriss was 'sorry'); Yoda sensed she withheld something. Barriss asked Ahsoka to light the candles — 'Ask me tomorrow' (pay off in Ch29).
+- [Ch29] SEQUEL THREADS: Kix and Jesse still chipped (Kix wants his out). Ahsoka owes Hondo a Florrum visit re: the saber's owner. Windu still holds her beads. Yoda asked her to report back. Anakin carries the 'Chancellor knew' claim and disbelieves it. Merrick Tal with Dooku. Bane holds the collar control. Tarkin's governorship; collar program.
 
 ## Current state
 - [Ch01] Barriss carries Ventress's sabers + mask in her healer's satchel ('tomorrow'); lights a memorial candle each morning; heading to the Temple for the expulsion vote.
@@ -87,4 +89,5 @@
 - [Ch26] Barriss in a secure cell, Military Operations Center detention level, Fox-only access. Ahsoka cuffed, escorted by Anakin to the same facility. Fives gone from the gantry with his helmet, unseen. Ventress free with both sabers. Chancellor sent word of gratitude to Anakin.
 - [Ch27] Ahsoka free; release processing runs into the night. Anakin waiting in the Military Operations Center building at Palpatine's request (so he is logged there that night). Ahsoka granted ten minutes with Barriss tonight in the same cell block she was once held in. Padmé told Anakin to stay with Ahsoka.
 - [Ch28] Ahsoka free; believes Anakin. Anakin grateful to Palpatine; Obi-Wan won't look at him.
+- [Ch29] Ahsoka free, not a Jedi, leaving Coruscant with Fives on a scrap hauler from Berth Nine.
 
