@@ -1,0 +1,287 @@
+[
+ {
+  "id": "pure-geometric-series-q01",
+  "topicId": "pure-geometric-series",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A geometric sequence has first term $a = 3$ and common ratio $r = 2$. Find the 8th term.",
+  "hint": "Use $u_n = ar^{n-1}$. How many times do you multiply by $r$ to get from $u_1$ to $u_8$?",
+  "answer": "$u_8 = 384$",
+  "solution": "$$u_n = ar^{n-1}$$\n$$u_8 = 3 \\times 2^7 = 3 \\times 128 = 384$$\n\nThere are 7 multiplications by $r$ from the 1st term to the 8th (not 8): $3, 6, 12, 24, 48, 96, 192, 384$.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q02",
+  "topicId": "pure-geometric-series",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A geometric sequence has first term $a = 3$ and common ratio $r = -2$. Find the 8th term.",
+  "hint": "Same formula; think about the sign of $(-2)^7$.",
+  "answer": "$u_8 = -384$",
+  "solution": "**What changed:** $r = 2$ became $r = -2$, so the terms alternate in sign: $3, -6, 12, -24, \\ldots$\n$$u_8 = 3 \\times (-2)^7 = 3 \\times (-128) = -384$$\n\nAn odd power of a negative number is negative, so the even-numbered terms are negative.",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q03",
+  "topicId": "pure-geometric-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A geometric series has first term $a = 3$ and common ratio $r = -2$. Find the sum of the first 8 terms.",
+  "hint": "Use $S_n = \\dfrac{a(1 - r^n)}{1 - r}$ and be careful with $1 - (-2)$.",
+  "answer": "$S_8 = -255$",
+  "solution": "**What changed:** we now want the **sum** of the first 8 terms.\n$$S_8 = \\frac{3\\big(1 - (-2)^8\\big)}{1 - (-2)} = \\frac{3(1 - 256)}{3} = -255$$\n\nCheck by adding: $3 - 6 + 12 - 24 + 48 - 96 + 192 - 384 = -255$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q04",
+  "topicId": "pure-geometric-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "A geometric series has first term $a = 3$ and common ratio $r = -\\frac{1}{2}$.\n\n(a) Find the sum of the first 8 terms, as an exact fraction.\n\n(b) Explain why this series has a sum to infinity, and find it.",
+  "hint": "Same method, with $r = -\\frac{1}{2}$. For (b), what happens to $\\left(-\\frac{1}{2}\\right)^n$ as $n$ gets large?",
+  "answer": "(a) $S_8 = \\frac{255}{128}$ (b) $|r| = \\frac{1}{2} < 1$, so it converges; $S_\\infty = 2$",
+  "solution": "**What changed:** $r = -2$ became $r = -\\frac{1}{2}$, a fraction between $-1$ and $1$, so the terms now shrink.\n\n(a)\n$$S_8 = \\frac{3\\left(1 - \\left(-\\frac{1}{2}\\right)^8\\right)}{1 - \\left(-\\frac{1}{2}\\right)} = \\frac{3\\left(1 - \\frac{1}{256}\\right)}{\\frac{3}{2}} = 2 \\times \\frac{255}{256} = \\frac{255}{128}$$\n\n(b) Since $|r| < 1$, $\\left(-\\frac{1}{2}\\right)^n \\to 0$ as $n \\to \\infty$, so $S_n \\to \\dfrac{a}{1 - r}$:\n$$S_\\infty = \\frac{3}{1 + \\frac{1}{2}} = 2$$\n\n$S_8 = 1.992\\ldots$ is already very close to 2.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q05",
+  "topicId": "pure-geometric-series",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "For the geometric series\n$$24 + 18 + 13.5 + \\cdots$$\nfind the common ratio and the sum to infinity.",
+  "hint": "Divide a term by the one before it to get $r$. Then use $S_\\infty = \\dfrac{a}{1 - r}$.",
+  "answer": "$r = 0.75$, $S_\\infty = 96$",
+  "solution": "$$r = \\frac{18}{24} = 0.75 \\quad \\left(\\text{check: } \\frac{13.5}{18} = 0.75\\right)$$\n\n$|r| < 1$, so the series converges:\n$$S_\\infty = \\frac{24}{1 - 0.75} = \\frac{24}{0.25} = 96$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q06",
+  "topicId": "pure-geometric-series",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "The 3rd term of a geometric sequence is 18 and the 6th term is $-486$.\n\n(a) Find the common ratio and the first term.\n\n(b) Find the sum of the first 7 terms.",
+  "hint": "Write $ar^2 = 18$ and $ar^5 = -486$, then divide one equation by the other.",
+  "answer": "(a) $r = -3$, $a = 2$ (b) $S_7 = 1094$",
+  "solution": "(a) $ar^2 = 18$ and $ar^5 = -486$. Divide:\n$$r^3 = \\frac{-486}{18} = -27 \\Rightarrow r = -3$$\n\nThen $a = \\dfrac{18}{(-3)^2} = 2$.\n\n(b)\n$$S_7 = \\frac{2\\big(1 - (-3)^7\\big)}{1 - (-3)} = \\frac{2(1 + 2187)}{4} = 1094$$\n\nCheck: $2 - 6 + 18 - 54 + 162 - 486 + 1458 = 1094$ ✓",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q07",
+  "topicId": "pure-geometric-series",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Oliver is asked to find the sum to infinity of the geometric series\n$$5 + 7.5 + 11.25 + \\cdots$$\n\nHis working is shown.\n\n$$r = \\frac{7.5}{5} = 1.5$$\n$$S_\\infty = \\frac{a}{1 - r} = \\frac{5}{1 - 1.5} = \\frac{5}{-0.5} = -10$$\n\nExplain what is wrong with Oliver's answer.",
+  "hint": "All the terms are positive. Can they add up to a negative number? When is $S_\\infty = \\frac{a}{1 - r}$ allowed?",
+  "answer": "$|r| = 1.5 \\ge 1$, so the series diverges and has no sum to infinity; the formula cannot be used.",
+  "solution": "Oliver's value of $r = 1.5$ is correct. The error is using $S_\\infty = \\dfrac{a}{1 - r}$.\n\nThat formula comes from $S_n = \\dfrac{a(1 - r^n)}{1 - r}$ with $r^n \\to 0$, which only happens when $|r| < 1$. Here $r = 1.5$, so $1.5^n$ grows without limit:\n$$S_n = \\frac{5(1.5^n - 1)}{0.5} = 10(1.5^n - 1) \\to \\infty$$\n\nThe series **diverges**: it has no sum to infinity. (A sense check: every term is positive and getting bigger, so the total can't be $-10$.)",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q08",
+  "topicId": "pure-geometric-series",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "A geometric series has first term 10 and common ratio 0.8. Hannah is asked to find the smallest value of $n$ for which $S_n$ is greater than 99% of $S_\\infty$. Her working is shown.\n\n$$S_\\infty = \\frac{10}{0.2} = 50, \\quad \\text{so we need } S_n > 49.5$$\n$$\\frac{10(1 - 0.8^n)}{0.2} > 49.5 \\Rightarrow 1 - 0.8^n > 0.99 \\Rightarrow 0.8^n < 0.01$$\n$$n\\log 0.8 < \\log 0.01$$\n$$n < \\frac{\\log 0.01}{\\log 0.8} = 20.6$$\n$$\\text{So } n = 20$$\n\nFind Hannah's mistake, explain it, and give the correct answer.",
+  "hint": "What is the sign of $\\log 0.8$? What happens to an inequality when you divide by a negative number?",
+  "answer": "She did not reverse the inequality when dividing by $\\log 0.8 < 0$; correct: $n > 20.6$, so $n = 21$.",
+  "solution": "**Error:** in the line $n < \\dfrac{\\log 0.01}{\\log 0.8}$. Since $0.8 < 1$, $\\log 0.8 < 0$, and dividing both sides of an inequality by a negative number **reverses** it:\n$$n\\log 0.8 < \\log 0.01 \\Rightarrow n > \\frac{\\log 0.01}{\\log 0.8} = 20.64\\ldots$$\n\nSo the smallest integer is $n = 21$.\n\nSense check: $S_n$ increases towards 50 as $n$ increases, so we need $n$ to be large enough, not small enough. Indeed $S_{20} = 50(1 - 0.8^{20}) = 49.42 < 49.5$ and $S_{21} = 49.54 > 49.5$ ✓",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q09",
+  "topicId": "pure-geometric-series",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "(a) Prove that the sum of the first $n$ terms of a geometric series with first term $a$ and common ratio $r$ ($r \\ne 1$) is\n$$S_n = \\frac{a(1 - r^n)}{1 - r}$$\n\n(b) Explain why the series has a sum to infinity if $-1 < r < 1$, and state its value.\n\n(c) Explain what happens when $r = 1$ and when $r = -1$.",
+  "hint": "Write out $S_n$, then write out $rS_n$ underneath, shifted along by one term, and subtract.",
+  "answer": "(a) proof (b) $r^n \\to 0$, so $S_n \\to \\dfrac{a}{1 - r}$ (c) $r = 1$: $S_n = na$, unbounded; $r = -1$: $S_n$ alternates between $a$ and $0$; neither converges.",
+  "solution": "(a)\n$$S_n = a + ar + ar^2 + \\cdots + ar^{n-1}$$\n$$rS_n = \\phantom{a + {}} ar + ar^2 + \\cdots + ar^{n-1} + ar^n$$\n\nSubtract: every term cancels except the first of $S_n$ and the last of $rS_n$:\n$$S_n - rS_n = a - ar^n \\Rightarrow S_n(1 - r) = a(1 - r^n)$$\n\nSince $r \\ne 1$ we can divide by $1 - r$:\n$$S_n = \\frac{a(1 - r^n)}{1 - r}$$\n\n(b) If $|r| < 1$, then $|r^n| = |r|^n \\to 0$ as $n \\to \\infty$ (each multiplication makes it smaller by a fixed factor). So\n$$S_n = \\frac{a}{1 - r} - \\frac{ar^n}{1 - r} \\to \\frac{a}{1 - r}$$\n\nThe partial sums settle on a limit, so $S_\\infty = \\dfrac{a}{1 - r}$.\n\n(c) $r = 1$: every term is $a$, so $S_n = na$, which grows without limit (for $a \\ne 0$); the formula in (a) cannot even be used (division by zero).\n\n$r = -1$: the series is $a - a + a - a + \\cdots$, so $S_n$ alternates $a, 0, a, 0, \\ldots$ and never settles. No sum to infinity.\n\nSo we need $|r| < 1$ strictly.",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q10",
+  "topicId": "pure-geometric-series",
+  "difficulty": 3,
+  "type": "exam-style",
+  "calculator": true,
+  "marks": 10,
+  "question": "The first three terms of a geometric series are\n$$(k + 4), \\quad k, \\quad (2k - 15)$$\nwhere $k$ is a constant.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Show that $k^2 - 7k - 60 = 0$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $k$ is positive, find the value of $k$ and the common ratio of the series.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Find the sum to infinity of the series, explaining why it exists.",
+    "marks": 2
+   },
+   {
+    "label": "d",
+    "prompt": "Find the smallest value of $n$ for which the difference between the sum to infinity and the sum of the first $n$ terms is less than 0.5.",
+    "marks": 4
+   }
+  ],
+  "hint": "In a geometric sequence, $\\dfrac{u_2}{u_1} = \\dfrac{u_3}{u_2}$. For (d), show that $S_\\infty - S_n = \\dfrac{ar^n}{1 - r}$.",
+  "answer": "(a) shown (b) $k = 12$, $r = \\frac{3}{4}$ (c) $S_\\infty = 64$ (since $|r| < 1$) (d) $n = 17$",
+  "solution": "(a) Common ratio: $\\dfrac{k}{k + 4} = \\dfrac{2k - 15}{k}$ **M1**\n$$k^2 = (k + 4)(2k - 15) = 2k^2 - 7k - 60 \\Rightarrow k^2 - 7k - 60 = 0$$\n**A1** (shown)\n\n(b) $(k - 12)(k + 5) = 0$, and $k > 0$, so $k = 12$. **B1**\n\nTerms are $16, 12, 9$, so $r = \\dfrac{12}{16} = \\dfrac{3}{4}$. **B1**\n\n(c) $|r| = \\frac{3}{4} < 1$, so the sum to infinity exists. **B1**\n$$S_\\infty = \\frac{16}{1 - \\frac{3}{4}} = 64$$\n**B1**\n\n(d) $S_\\infty - S_n = \\dfrac{a}{1 - r} - \\dfrac{a(1 - r^n)}{1 - r} = \\dfrac{ar^n}{1 - r} = 64\\left(\\tfrac{3}{4}\\right)^n$ **M1**\n$$64(0.75)^n < 0.5 \\Rightarrow 0.75^n < \\frac{1}{128}$$\n$$n\\log 0.75 < \\log\\tfrac{1}{128} \\Rightarrow n > \\frac{\\log\\frac{1}{128}}{\\log 0.75} = 16.87\\ldots$$\n**M1** (takes logs) **A1** ($16.87$, inequality reversed because $\\log 0.75 < 0$)\n\nSmallest $n = 17$. **A1**\n\nCheck: $64(0.75)^{16} = 0.641 > 0.5$, $64(0.75)^{17} = 0.481 < 0.5$ ✓\n\n(For $k = -5$ the terms would be $-1, -5, -25$ with $r = 5$: no sum to infinity, which is why $k > 0$ is given.)",
+  "linkedTopicIds": [
+   "pure-exponentials-logs"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q11",
+  "topicId": "pure-geometric-series",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "On 1 January each year, starting in 2026, Aisha pays £2000 into a savings account. The account pays 3% interest per year, added on 31 December each year. She makes 15 payments in total.\n\n(a) Show that the amount in the account on 31 December 2026, after interest, is £2060, and write down an expression for the amount on 31 December 2027.\n\n(b) Find the amount in the account on 31 December 2040, after interest has been added. Give your answer to the nearest penny.\n\n(c) Her friend calculates $\\dfrac{2000(1.03^{15} - 1)}{0.03}$. Explain why this gives the wrong answer.",
+  "hint": "Each payment earns interest in the year it is paid in. Write out the first two or three year-end totals to see the pattern, then decide on $a$, $r$ and $n$.",
+  "answer": "(a) $2000 \\times 1.03 = £2060$; $(2060 + 2000) \\times 1.03 = 2000(1.03^2 + 1.03)$ (b) £38 313.76 (c) it treats each payment as if it were made at the end of the year, so no payment earns interest in its first year (the first term should be $2000 \\times 1.03 = 2060$, not $2000$).",
+  "solution": "(a) End of 2026: $2000 \\times 1.03 = £2060$.\n\nEnd of 2027: $(2060 + 2000) \\times 1.03 = 2000 \\times 1.03^2 + 2000 \\times 1.03$.\n\n(b) 2040 is the 15th year. On 31 December 2040:\n$$2000(1.03) + 2000(1.03)^2 + \\cdots + 2000(1.03)^{15}$$\n\n(the last payment, made in January 2040, has earned one year's interest; the first has earned 15 years' interest).\n\nThis is geometric with $a = 2000 \\times 1.03 = 2060$, $r = 1.03$, $n = 15$:\n$$S_{15} = \\frac{2060(1.03^{15} - 1)}{1.03 - 1} = \\frac{2060 \\times 0.557967\\ldots}{0.03} = £38\\,313.76$$\n\n(c) $\\dfrac{2000(1.03^{15} - 1)}{0.03}$ is the sum with first term $2000$, that is, $2000 + 2000(1.03) + \\cdots + 2000(1.03)^{14}$. That would be correct if each payment were made at the **end** of the year (so the last one earns no interest). Aisha pays at the **start** of each year, so every payment earns one extra year of interest. The friend's answer, £37 197.83, is too small by a factor of $1.03$.",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-geometric-series-q12",
+  "topicId": "pure-geometric-series",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "Ravi takes out a mortgage of £150 000 at a fixed interest rate of 4% per year. At the end of each year, interest is added to the amount owed and then Ravi makes a repayment of £$P$.\n\n(a) Show that the amount owed immediately after the second repayment is\n$$150\\,000(1.04)^2 - P(1.04) - P$$\n\n(b) Show that the amount owed immediately after the $n$th repayment is\n$$150\\,000(1.04)^n - 25P(1.04^n - 1)$$\n\n(c) The mortgage is to be paid off with exactly 25 repayments. Find $P$ to the nearest penny, and the total amount Ravi repays.",
+  "hint": "After $n$ years, the repayments contribute $P(1.04)^{n-1} + \\cdots + P(1.04) + P$, which is a geometric series. Note that $\\frac{1}{0.04} = 25$.",
+  "answer": "(a) shown (b) shown (c) $P = £9601.79$; total repaid $\\approx$ £240 044.86 (about £240 045)",
+  "solution": "(a) End of year 1: $150\\,000(1.04) - P$.\n\nEnd of year 2: $\\big(150\\,000(1.04) - P\\big)(1.04) - P = 150\\,000(1.04)^2 - P(1.04) - P$ ✓\n\n(b) Continuing the pattern, after $n$ repayments:\n$$150\\,000(1.04)^n - P\\big(1.04^{n-1} + 1.04^{n-2} + \\cdots + 1.04 + 1\\big)$$\n\nThe bracket is a geometric series with $a = 1$, $r = 1.04$ and $n$ terms:\n$$1 + 1.04 + \\cdots + 1.04^{n-1} = \\frac{1.04^n - 1}{1.04 - 1} = \\frac{1.04^n - 1}{0.04} = 25(1.04^n - 1)$$\n\nSo the amount owed is $150\\,000(1.04)^n - 25P(1.04^n - 1)$ ✓\n\n(c) Set the amount owed to zero when $n = 25$:\n$$150\\,000(1.04)^{25} = 25P(1.04^{25} - 1)$$\n$$P = \\frac{150\\,000 \\times 1.04^{25}}{25(1.04^{25} - 1)} = \\frac{150\\,000 \\times 2.665836\\ldots}{25 \\times 1.665836\\ldots} = 9601.794\\ldots$$\n\n$P = £9601.79$ per year.\n\nTotal repaid: $25 \\times 9601.794\\ldots \\approx £240\\,044.86$, so about £90 000 of the total is interest.\n\n(In practice the last payment is adjusted by a penny or two for the rounding of $P$.)",
+  "linkedTopicIds": [
+   "rat-compound-growth-decay"
+  ],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q13",
+  "topicId": "pure-geometric-series",
+  "difficulty": 4,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 230\" width=\"340\" height=\"230\"><line x1=\"100\" y1=\"194\" x2=\"100\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"160\" y1=\"194\" x2=\"160\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"220\" y1=\"194\" x2=\"220\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"280\" y1=\"194\" x2=\"280\" y2=\"16\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"155.3\" x2=\"316\" y2=\"155.3\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"116.6\" x2=\"316\" y2=\"116.6\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"77.9\" x2=\"316\" y2=\"77.9\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"39.2\" x2=\"316\" y2=\"39.2\" stroke=\"currentColor\" stroke-opacity=\"0.18\" stroke-width=\"1\"/><line x1=\"40\" y1=\"194\" x2=\"322\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.3\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"10\" stroke=\"currentColor\" stroke-width=\"1.3\"/><path d=\"M322,194 l-7,-4 v8 z\" fill=\"currentColor\"/><path d=\"M40,10 l-4,7 h8 z\" fill=\"currentColor\"/><text x=\"100\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">1</text><text x=\"160\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">2</text><text x=\"220\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">3</text><text x=\"280\" y=\"210\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">4</text><text x=\"34\" y=\"159.8\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">0.5</text><text x=\"34\" y=\"121.1\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1</text><text x=\"34\" y=\"82.4\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">1.5</text><text x=\"34\" y=\"43.7\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\">2</text><text x=\"320\" y=\"186\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"end\"><tspan font-style=\"italic\">t (s)</tspan></text><text x=\"48\" y=\"20\" font-size=\"14\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"start\"><tspan font-style=\"italic\">h (m)</tspan></text><polyline points=\"40,39.2 40.6,39.3 41.3,39.4 41.9,39.6 42.6,39.9 43.2,40.3 43.8,40.8 44.5,41.3 45.1,42 45.7,42.7 46.4,43.5 47,44.4 47.7,45.4 48.3,46.5 48.9,47.6 49.6,48.9 50.2,50.2 50.9,51.6 51.5,53.1 52.1,54.7 52.8,56.4 53.4,58.2 54.1,60 54.7,62 55.3,64 56,66.1 56.6,68.3 57.2,70.6 57.9,72.9 58.5,75.4 59.2,77.9 59.8,80.5 60.4,83.2 61.1,86 61.7,88.9 62.4,91.9 63,94.9 63.6,98.1 64.3,101.3 64.9,104.6 65.6,108 66.2,111.5 66.8,115.1 67.5,118.7 68.1,122.5 68.7,126.3 69.4,130.2 70,134.2 70.7,138.3 71.3,142.4 71.9,146.7 72.6,151 73.2,155.5 73.9,160 74.5,164.6 75.1,169.3 75.8,174.1 76.4,178.9 77.1,183.9 77.7,188.9 78.3,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"78.3,194 79.3,187.9 80.3,182 81.3,176.4 82.3,170.9 83.3,165.6 84.3,160.6 85.3,155.7 86.3,151.1 87.2,146.6 88.2,142.4 89.2,138.4 90.2,134.6 91.2,131 92.2,127.5 93.2,124.3 94.2,121.4 95.2,118.6 96.1,116 97.1,113.6 98.1,111.4 99.1,109.5 100.1,107.7 101.1,106.2 102.1,104.8 103.1,103.7 104.1,102.8 105.1,102.1 106,101.5 107,101.2 108,101.1 109,101.2 110,101.5 111,102.1 112,102.8 113,103.7 114,104.8 115,106.2 115.9,107.7 116.9,109.5 117.9,111.4 118.9,113.6 119.9,116 120.9,118.6 121.9,121.4 122.9,124.3 123.9,127.5 124.9,131 125.8,134.6 126.8,138.4 127.8,142.4 128.8,146.6 129.8,151.1 130.8,155.7 131.8,160.6 132.8,165.6 133.8,170.9 134.7,176.4 135.7,182 136.7,187.9 137.7,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"137.7,194 138.5,190.3 139.3,186.8 140,183.4 140.8,180.1 141.6,177 142.3,173.9 143.1,171 143.9,168.2 144.6,165.6 145.4,163 146.2,160.6 146.9,158.3 147.7,156.2 148.5,154.1 149.2,152.2 150,150.4 150.8,148.7 151.5,147.2 152.3,145.8 153.1,144.5 153.8,143.3 154.6,142.2 155.4,141.3 156.1,140.5 156.9,139.8 157.7,139.3 158.4,138.8 159.2,138.5 160,138.3 160.7,138.3 161.5,138.3 162.3,138.5 163,138.8 163.8,139.3 164.6,139.8 165.3,140.5 166.1,141.3 166.8,142.2 167.6,143.3 168.4,144.5 169.1,145.8 169.9,147.2 170.7,148.7 171.4,150.4 172.2,152.2 173,154.1 173.7,156.2 174.5,158.3 175.3,160.6 176,163 176.8,165.6 177.6,168.2 178.3,171 179.1,173.9 179.9,177 180.6,180.1 181.4,183.4 182.2,186.8 182.9,190.3 183.7,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"183.7,194 184.3,191.8 184.9,189.7 185.5,187.6 186.1,185.7 186.7,183.8 187.3,182 187.9,180.2 188.5,178.5 189.1,176.9 189.7,175.4 190.2,174 190.8,172.6 191.4,171.3 192,170.1 192.6,168.9 193.2,167.8 193.8,166.8 194.4,165.9 195,165.1 195.6,164.3 196.2,163.6 196.8,162.9 197.4,162.4 198,161.9 198.6,161.5 199.2,161.2 199.8,160.9 200.3,160.7 200.9,160.6 201.5,160.6 202.1,160.6 202.7,160.7 203.3,160.9 203.9,161.2 204.5,161.5 205.1,161.9 205.7,162.4 206.3,162.9 206.9,163.6 207.5,164.3 208.1,165.1 208.7,165.9 209.3,166.8 209.8,167.8 210.4,168.9 211,170.1 211.6,171.3 212.2,172.6 212.8,174 213.4,175.4 214,176.9 214.6,178.5 215.2,180.2 215.8,182 216.4,183.8 217,185.7 217.6,187.6 218.2,189.7 218.8,191.8 219.3,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"219.3,194 219.8,192.7 220.3,191.4 220.7,190.2 221.2,189 221.6,187.9 222.1,186.8 222.6,185.7 223,184.7 223.5,183.8 223.9,182.9 224.4,182 224.9,181.2 225.3,180.4 225.8,179.6 226.2,179 226.7,178.3 227.2,177.7 227.6,177.1 228.1,176.6 228.5,176.2 229,175.7 229.5,175.4 229.9,175 230.4,174.7 230.8,174.5 231.3,174.3 231.8,174.1 232.2,174 232.7,174 233.1,173.9 233.6,174 234.1,174 234.5,174.1 235,174.3 235.4,174.5 235.9,174.7 236.4,175 236.8,175.4 237.3,175.7 237.7,176.2 238.2,176.6 238.7,177.1 239.1,177.7 239.6,178.3 240,179 240.5,179.6 241,180.4 241.4,181.2 241.9,182 242.3,182.9 242.8,183.8 243.3,184.7 243.7,185.7 244.2,186.8 244.6,187.9 245.1,189 245.6,190.2 246,191.4 246.5,192.7 246.9,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"246.9,194 247.3,193.2 247.7,192.4 248,191.7 248.4,191 248.7,190.3 249.1,189.7 249.4,189 249.8,188.4 250.2,187.9 250.5,187.3 250.9,186.8 251.2,186.3 251.6,185.8 251.9,185.4 252.3,185 252.6,184.6 253,184.2 253.4,183.9 253.7,183.6 254.1,183.3 254.4,183 254.8,182.8 255.1,182.6 255.5,182.4 255.9,182.3 256.2,182.2 256.6,182.1 256.9,182 257.3,182 257.6,182 258,182 258.3,182 258.7,182.1 259.1,182.2 259.4,182.3 259.8,182.4 260.1,182.6 260.5,182.8 260.8,183 261.2,183.3 261.6,183.6 261.9,183.9 262.3,184.2 262.6,184.6 263,185 263.3,185.4 263.7,185.8 264,186.3 264.4,186.8 264.8,187.3 265.1,187.9 265.5,188.4 265.8,189 266.2,189.7 266.5,190.3 266.9,191 267.3,191.7 267.6,192.4 268,193.2 268.3,194\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><polyline points=\"268.3,194 268.5,193.7 268.7,193.3 268.9,193 269.1,192.7 269.3,192.4 269.5,192.1 269.7,191.8 269.9,191.5 270.1,191.3 270.3,191 270.5,190.7 270.7,190.5 270.9,190.3 271,190 271.2,189.8 271.4,189.6 271.6,189.4 271.8,189.2 272,189 272.2,188.8 272.4,188.6 272.6,188.5 272.8,188.3 273,188.2 273.2,188 273.4,187.9 273.6,187.7 273.8,187.6 274,187.5 274.2,187.4 274.4,187.3 274.6,187.2 274.7,187.1 274.9,187.1 275.1,187 275.3,186.9 275.5,186.9 275.7,186.9 275.9,186.8 276.1,186.8 276.3,186.8 276.5,186.8 276.7,186.8 276.9,186.8 277.1,186.8 277.3,186.8 277.5,186.9 277.7,186.9 277.9,186.9 278.1,187 278.2,187.1 278.4,187.1 278.6,187.2 278.8,187.3 279,187.4 279.2,187.5 279.4,187.6 279.6,187.7 279.8,187.9 280,188\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/></svg>",
+  "question": "A ball is dropped from a height of 2 m onto a hard floor. After each bounce it rises to $\\frac{3}{5}$ of the height from which it last fell. The graph shows its height $h$ m against time $t$ seconds for the first few bounces.\n\n(a) Find the total vertical distance travelled by the ball before it comes to rest, according to this model.\n\n(b) The time taken to fall from rest through a height of $h$ metres is $\\sqrt{\\dfrac{h}{4.9}}$ seconds, and the time to rise to a height $h$ is the same. Show that the model predicts that the ball stops bouncing after a finite time, and find this time to 2 significant figures.\n\n(c) Give one reason why the model will not be accurate for very small bounces.",
+  "hint": "After the first fall, each bounce takes the ball up and down the same height, so count each bounce height twice. For (b), the times form a geometric series too: what is the ratio?",
+  "answer": "(a) 8 m (b) $\\sqrt{\\frac{2}{4.9}}\\left(1 + \\frac{2\\sqrt{0.6}}{1 - \\sqrt{0.6}}\\right) \\approx 5.0$ s (c) e.g. for tiny bounces the ball rolls or vibrates, and the rebound fraction will not stay exactly $\\frac{3}{5}$; air resistance and the ball's size are ignored.",
+  "solution": "(a) Distances: fall 2 m, then up and down $1.2$ m, up and down $0.72$ m, and so on:\n$$2 + 2(1.2 + 0.72 + 0.432 + \\cdots)$$\n\nThe bracket is geometric with $a = 1.2$, $r = 0.6$, so its sum to infinity is $\\dfrac{1.2}{1 - 0.6} = 3$.\n\nTotal distance $= 2 + 2 \\times 3 = 8$ m.\n\n(b) First fall: $t_0 = \\sqrt{\\dfrac{2}{4.9}} = 0.6389$ s.\n\nThe $k$th bounce reaches height $2(0.6)^k$, so it lasts $2\\sqrt{\\dfrac{2(0.6)^k}{4.9}} = 2t_0\\left(\\sqrt{0.6}\\right)^k$ seconds (up and down).\n\nThese times are geometric with ratio $\\sqrt{0.6} = 0.7746 < 1$, so their sum converges:\n$$\\text{Total time} = t_0 + 2t_0\\left(\\sqrt{0.6} + 0.6 + \\cdots\\right) = t_0\\left(1 + \\frac{2\\sqrt{0.6}}{1 - \\sqrt{0.6}}\\right)$$\n$$= 0.6389 \\times (1 + 6.873) = 0.6389 \\times 7.873 = 5.03\\ldots$$\n\nAlthough there are infinitely many bounces, the model predicts the ball stops after about **5.0 s**.\n\n(c) The model treats the ball as a particle that always rebounds to exactly $\\frac{3}{5}$ of its height. In reality, very small bounces are affected by the ball's size and deformation, air resistance and energy lost as sound and heat, so the ball stops after a finite number of bounces.",
+  "linkedTopicIds": [
+   "mech-vertical-motion"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q14",
+  "topicId": "pure-geometric-series",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "The infinite series\n$$1 + (3x - 1) + (3x - 1)^2 + (3x - 1)^3 + \\cdots$$\nis geometric.\n\n(a) Find the set of values of $x$ for which the series converges.\n\n(b) Given that the sum to infinity is 4, find the value of $x$.\n\n(c) Explain why the sum to infinity can never equal $\\frac{1}{3}$.",
+  "hint": "The common ratio is $3x - 1$. Convergence needs $|3x - 1| < 1$.",
+  "answer": "(a) $0 < x < \\frac{2}{3}$ (b) $x = \\frac{7}{12}$ (c) $S_\\infty = \\frac{1}{2 - 3x}$, and for $0 < x < \\frac{2}{3}$ this is always greater than $\\frac{1}{2}$.",
+  "solution": "(a) $r = 3x - 1$. The series converges when $|r| < 1$:\n$$-1 < 3x - 1 < 1 \\Rightarrow 0 < 3x < 2 \\Rightarrow 0 < x < \\frac{2}{3}$$\n\n(b)\n$$S_\\infty = \\frac{1}{1 - (3x - 1)} = \\frac{1}{2 - 3x} = 4$$\n$$2 - 3x = \\frac{1}{4} \\Rightarrow 3x = \\frac{7}{4} \\Rightarrow x = \\frac{7}{12}$$\n\nCheck: $\\frac{7}{12}$ is in $\\left(0, \\frac{2}{3}\\right)$ since $\\frac{2}{3} = \\frac{8}{12}$ ✓, and $r = \\frac{3}{4}$.\n\n(c) For $0 < x < \\frac{2}{3}$, $0 < 2 - 3x < 2$, so $S_\\infty = \\dfrac{1}{2 - 3x} > \\dfrac{1}{2}$. So $S_\\infty$ can never be $\\frac{1}{3}$.\n\n(Solving $\\frac{1}{2 - 3x} = \\frac{1}{3}$ gives $x = -\\frac{1}{3}$, but then $r = -2$ and the series diverges, so the formula does not apply.)",
+  "linkedTopicIds": [
+   "pure-modulus"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q15",
+  "topicId": "pure-geometric-series",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Show that, for values of $\\theta$ where the series converges,\n$$1 + \\cos^2\\theta + \\cos^4\\theta + \\cos^6\\theta + \\cdots = \\operatorname{cosec}^2\\theta$$\n\n(b) State the values of $\\theta$ in the interval $0 \\le \\theta \\le \\pi$ for which the series does **not** converge.\n\n(c) Solve, for $0 < \\theta < \\pi$,\n$$1 + \\cos^2\\theta + \\cos^4\\theta + \\cdots = 4$$",
+  "hint": "The common ratio is $\\cos^2\\theta$. Use $1 - \\cos^2\\theta = \\sin^2\\theta$.",
+  "answer": "(a) shown (b) $\\theta = 0$ and $\\theta = \\pi$ (c) $\\theta = \\frac{\\pi}{6}, \\frac{5\\pi}{6}$",
+  "solution": "(a) Geometric with $a = 1$ and $r = \\cos^2\\theta$. When $|r| < 1$:\n$$S_\\infty = \\frac{1}{1 - \\cos^2\\theta} = \\frac{1}{\\sin^2\\theta} = \\operatorname{cosec}^2\\theta$$\n\n(b) $0 \\le \\cos^2\\theta \\le 1$ always, so the series converges unless $\\cos^2\\theta = 1$, i.e. $\\cos\\theta = \\pm 1$. In $[0, \\pi]$ this happens at $\\theta = 0$ and $\\theta = \\pi$ (then every term is 1 and the sum grows without limit, matching the fact that $\\operatorname{cosec}\\theta$ is undefined there).\n\n(c) $\\operatorname{cosec}^2\\theta = 4 \\Rightarrow \\sin^2\\theta = \\frac{1}{4} \\Rightarrow \\sin\\theta = \\frac{1}{2}$ (as $\\sin\\theta > 0$ for $0 < \\theta < \\pi$).\n$$\\theta = \\frac{\\pi}{6} \\text{ or } \\theta = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}$$\n\nBoth give $\\cos^2\\theta = \\frac{3}{4} < 1$, so the series converges ✓",
+  "linkedTopicIds": [
+   "pure-trig-reciprocal-inverse",
+   "pure-trig-identities-equations"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q16",
+  "topicId": "pure-geometric-series",
+  "difficulty": 2,
+  "type": "synoptic",
+  "question": "(a) Write the recurring decimal $0.\\dot{3}\\dot{6} = 0.363636\\ldots$ as an infinite geometric series, and hence show that it equals $\\frac{4}{11}$.\n\n(b) Use the same method to write $0.1\\dot{5} = 0.1555\\ldots$ as a fraction in its simplest form.",
+  "hint": "$0.363636\\ldots = 0.36 + 0.0036 + 0.000036 + \\cdots$. What is the common ratio?",
+  "answer": "(a) $\\frac{0.36}{1 - 0.01} = \\frac{36}{99} = \\frac{4}{11}$ (b) $\\frac{7}{45}$",
+  "solution": "(a)\n$$0.363636\\ldots = 0.36 + 0.0036 + 0.000036 + \\cdots$$\n\nGeometric with $a = 0.36$ and $r = 0.01$; $|r| < 1$, so\n$$S_\\infty = \\frac{0.36}{1 - 0.01} = \\frac{0.36}{0.99} = \\frac{36}{99} = \\frac{4}{11}$$\n\n(b) $0.1555\\ldots = 0.1 + (0.05 + 0.005 + 0.0005 + \\cdots)$\n\nThe bracket is geometric with $a = 0.05$, $r = 0.1$:\n$$\\frac{0.05}{1 - 0.1} = \\frac{0.05}{0.9} = \\frac{1}{18}$$\n$$0.1\\dot{5} = \\frac{1}{10} + \\frac{1}{18} = \\frac{9}{90} + \\frac{5}{90} = \\frac{14}{90} = \\frac{7}{45}$$",
+  "linkedTopicIds": [
+   "num-recurring-decimals"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q17",
+  "topicId": "pure-geometric-series",
+  "difficulty": 5,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 215\" width=\"340\" height=\"215\"><polygon points=\"85,38.7 25,142.6 145,142.6\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.6\"/><polygon points=\"250,38.7 230,73.4 190,73.4 210,108 190,142.6 230,142.6 250,177.3 270,142.6 310,142.6 290,108 310,73.4 270,73.4\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke=\"currentColor\" stroke-width=\"1.6\"/><text x=\"85\" y=\"205\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Stage 0</text><text x=\"250\" y=\"205\" font-size=\"13\" font-family=\"sans-serif\" fill=\"currentColor\" text-anchor=\"middle\">Stage 1</text></svg>",
+  "question": "The Koch snowflake is built in stages. Stage 0 is an equilateral triangle of side 1. To get each new stage, every edge is divided into three equal parts and an outward-pointing equilateral triangle is added on the middle third (then the base of that new triangle is removed). Stages 0 and 1 are shown.\n\n(a) Show that the number of edges at stage $n$ is $3 \\times 4^n$, and find the perimeter at stage $n$. What happens to the perimeter as $n \\to \\infty$?\n\n(b) Show that the area added in going from stage $n - 1$ to stage $n$ is $\\dfrac{\\sqrt{3}}{12}\\left(\\dfrac{4}{9}\\right)^{n-1}$.\n\n(c) Hence show that the area of the snowflake tends to $\\dfrac{2\\sqrt{3}}{5}$, and express this as a fraction of the area of the original triangle.",
+  "hint": "Each edge becomes 4 edges, each $\\frac{1}{3}$ as long. At stage $n$ you add one small triangle on each edge of stage $n - 1$; its side is $\\left(\\frac{1}{3}\\right)^n$ and the area of an equilateral triangle of side $s$ is $\\frac{\\sqrt{3}}{4}s^2$.",
+  "answer": "(a) perimeter $3\\left(\\frac{4}{3}\\right)^n \\to \\infty$ (b) shown (c) area $\\to \\frac{\\sqrt{3}}{4} + \\frac{\\frac{\\sqrt{3}}{12}}{1 - \\frac{4}{9}} = \\frac{2\\sqrt{3}}{5}$, which is $\\frac{8}{5}$ of the original triangle's area.",
+  "solution": "(a) Each edge is replaced by 4 edges, so the number of edges is multiplied by 4 each stage: $3, 12, 48, \\ldots$, i.e. $3 \\times 4^n$ at stage $n$.\n\nEach new edge is $\\frac{1}{3}$ of the old length, so at stage $n$ each edge has length $\\left(\\frac{1}{3}\\right)^n$. Perimeter:\n$$P_n = 3 \\times 4^n \\times \\left(\\frac{1}{3}\\right)^n = 3\\left(\\frac{4}{3}\\right)^n$$\n\nThis is geometric with ratio $\\frac{4}{3} > 1$, so $P_n \\to \\infty$: the perimeter grows without limit.\n\n(b) Going to stage $n$, one triangle is added on each of the $3 \\times 4^{n-1}$ edges of stage $n - 1$. Each has side $\\left(\\frac{1}{3}\\right)^n$, so area $\\frac{\\sqrt{3}}{4} \\times \\frac{1}{9^n}$.\n$$\\text{Area added} = 3 \\times 4^{n-1} \\times \\frac{\\sqrt{3}}{4} \\times \\frac{1}{9^n} = \\frac{3\\sqrt{3}}{4 \\times 9} \\times \\frac{4^{n-1}}{9^{n-1}} = \\frac{\\sqrt{3}}{12}\\left(\\frac{4}{9}\\right)^{n-1}$$\n\n(c) Total area = original triangle + all the additions:\n$$A = \\frac{\\sqrt{3}}{4} + \\sum_{n=1}^{\\infty}\\frac{\\sqrt{3}}{12}\\left(\\frac{4}{9}\\right)^{n-1}$$\n\nThe sum is geometric with $a = \\frac{\\sqrt{3}}{12}$, $r = \\frac{4}{9}$ and $|r| < 1$:\n$$\\sum = \\frac{\\frac{\\sqrt{3}}{12}}{1 - \\frac{4}{9}} = \\frac{\\sqrt{3}}{12} \\times \\frac{9}{5} = \\frac{3\\sqrt{3}}{20}$$\n$$A = \\frac{\\sqrt{3}}{4} + \\frac{3\\sqrt{3}}{20} = \\frac{5\\sqrt{3} + 3\\sqrt{3}}{20} = \\frac{8\\sqrt{3}}{20} = \\frac{2\\sqrt{3}}{5}$$\n\nAs a fraction of the original area: $\\dfrac{2\\sqrt{3}}{5} \\div \\dfrac{\\sqrt{3}}{4} = \\dfrac{8}{5}$.\n\nSo the snowflake has a finite area ($1.6$ times the triangle) but an infinite perimeter.",
+  "linkedTopicIds": [
+   "geo-area-triangle-sine",
+   "num-surds"
+  ],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "pure-geometric-series-q18",
+  "topicId": "pure-geometric-series",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "Let\n$$S = \\sum_{r=1}^{\\infty}\\frac{r}{2^r} = \\frac{1}{2} + \\frac{2}{4} + \\frac{3}{8} + \\frac{4}{16} + \\cdots$$\n\n(a) By writing $\\frac{2}{4} = \\frac{1}{4} + \\frac{1}{4}$, $\\frac{3}{8} = \\frac{1}{8} + \\frac{1}{8} + \\frac{1}{8}$, and so on, express $S$ as the sum of infinitely many geometric series, and hence show that $S = 2$.\n\n(b) Confirm your answer by considering $S - \\frac{1}{2}S$.\n\n(c) Use a similar method to find $\\displaystyle\\sum_{r=1}^{\\infty}\\frac{r}{3^r}$.",
+  "hint": "Arrange the pieces in rows: row 1 is $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\cdots$, row 2 starts at $\\frac{1}{4}$, row 3 starts at $\\frac{1}{8}$, and so on. Sum each row, then sum the row totals.",
+  "answer": "(a) $S = 1 + \\frac{1}{2} + \\frac{1}{4} + \\cdots = 2$ (b) $\\frac{1}{2}S = \\frac{1}{2} + \\frac{1}{4} + \\cdots = 1$, so $S = 2$ (c) $\\frac{3}{4}$",
+  "solution": "(a) Split each term $\\dfrac{r}{2^r}$ into $r$ copies of $\\dfrac{1}{2^r}$ and arrange them in rows:\n\nRow 1: $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\cdots = \\dfrac{\\frac{1}{2}}{1 - \\frac{1}{2}} = 1$\n\nRow 2: $\\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\cdots = \\dfrac{\\frac{1}{4}}{1 - \\frac{1}{2}} = \\frac{1}{2}$\n\nRow 3: $\\frac{1}{8} + \\frac{1}{16} + \\cdots = \\frac{1}{4}$\n\nRow $k$ starts at $\\frac{1}{2^k}$ and sums to $\\frac{1}{2^{k-1}}$. (Column $r$ contains $\\frac{1}{2^r}$ in rows $1$ to $r$, i.e. $r$ copies, giving $\\frac{r}{2^r}$ ✓.)\n\nAdding the row totals (all terms positive, so rearranging is safe):\n$$S = 1 + \\frac{1}{2} + \\frac{1}{4} + \\cdots = \\frac{1}{1 - \\frac{1}{2}} = 2$$\n\n(b)\n$$S = \\frac{1}{2} + \\frac{2}{4} + \\frac{3}{8} + \\frac{4}{16} + \\cdots$$\n$$\\frac{1}{2}S = \\phantom{\\frac{1}{2} + {}}\\frac{1}{4} + \\frac{2}{8} + \\frac{3}{16} + \\cdots$$\n\nSubtract term by term:\n$$\\frac{1}{2}S = \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\cdots = 1 \\Rightarrow S = 2 \\checkmark$$\n\n(c) Let $U = \\sum \\frac{r}{3^r}$. Then\n$$U - \\frac{1}{3}U = \\frac{1}{3} + \\frac{1}{9} + \\frac{1}{27} + \\cdots = \\frac{\\frac{1}{3}}{1 - \\frac{1}{3}} = \\frac{1}{2}$$\n$$\\frac{2}{3}U = \\frac{1}{2} \\Rightarrow U = \\frac{3}{4}$$",
+  "linkedTopicIds": []
+ }
+]

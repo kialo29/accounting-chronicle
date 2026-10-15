@@ -1,0 +1,289 @@
+[
+ {
+  "id": "geo-logic-conditionals-q01",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Statement: \"If two angles form a linear pair, then they are supplementary.\" (This statement is true.)\n\n(a) Identify the hypothesis $p$ and the conclusion $q$.\n\n(b) Write the statement in symbols.",
+  "hint": "The hypothesis is the part after \"if\"; the conclusion is the part after \"then\".",
+  "answer": "(a) $p$: two angles form a linear pair; $q$: the two angles are supplementary. (b) $p \\to q$",
+  "solution": "**(a)** In \"If $p$, then $q$\", the hypothesis $p$ follows \"if\" and the conclusion $q$ follows \"then\".\n\n* Hypothesis $p$: two angles form a linear pair.\n* Conclusion $q$: the two angles are supplementary.\n\n(The words \"if\" and \"then\" are not part of $p$ or $q$.)\n\n**(b)** $p \\to q$, read \"$p$ implies $q$\" or \"if $p$, then $q$\".\n\nIt is true: the angles of a linear pair together make a straight angle, so their measures add to $180^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-logic-conditionals-q02",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Statement: \"If two angles form a linear pair, then they are supplementary.\" (This statement is true.)\n\nWrite the **converse** of the statement. Is the converse true or false? If it is false, give a counterexample.",
+  "hint": "The converse swaps the hypothesis and the conclusion: $q \\to p$.",
+  "answer": "Converse: \"If two angles are supplementary, then they form a linear pair.\" False; e.g. a $70^\\circ$ angle and a $110^\\circ$ angle in different parts of a figure are supplementary but are not adjacent, so they do not form a linear pair.",
+  "solution": "**What changed:** we now **swap** $p$ and $q$.\n\nConverse ($q \\to p$): \"If two angles are supplementary, then they form a linear pair.\"\n\nThis is **false**. A counterexample must make the hypothesis true and the conclusion false: take $\\angle A = 70^\\circ$ in one triangle and $\\angle B = 110^\\circ$ in a different triangle. They are supplementary ($70^\\circ + 110^\\circ = 180^\\circ$), but they do not share a vertex or a side, so they are not a linear pair.\n\nSo a true conditional can have a false converse.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q03",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Statement: \"If two angles form a linear pair, then they are supplementary.\" (This statement is true.)\n\nWrite the **inverse** of the statement. Is the inverse true or false? If it is false, give a counterexample.",
+  "hint": "The inverse negates both parts but keeps them in the same order: $\\sim p \\to \\sim q$.",
+  "answer": "Inverse: \"If two angles do not form a linear pair, then they are not supplementary.\" False; the same non-adjacent $70^\\circ$ and $110^\\circ$ angles are not a linear pair but are supplementary.",
+  "solution": "**What changed:** instead of swapping, we now **negate** both parts and keep the order.\n\nInverse ($\\sim p \\to \\sim q$): \"If two angles do not form a linear pair, then they are not supplementary.\"\n\nThis is **false**. Counterexample (hypothesis true, conclusion false): a $70^\\circ$ angle and a $110^\\circ$ angle in two different triangles do not form a linear pair, yet they **are** supplementary.\n\nNotice that the inverse has the same truth value as the converse (both false), and the same counterexample works for both. This always happens, because the inverse is the contrapositive of the converse.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q04",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "Statement: \"If two angles form a linear pair, then they are supplementary.\" (This statement is true.)\n\nWrite the **contrapositive** of the statement. Is the contrapositive true or false? Explain.",
+  "hint": "The contrapositive both swaps **and** negates: $\\sim q \\to \\sim p$.",
+  "answer": "Contrapositive: \"If two angles are not supplementary, then they do not form a linear pair.\" True, because it is logically equivalent to the original true statement.",
+  "solution": "**What changed:** we now **swap and negate**.\n\nContrapositive ($\\sim q \\to \\sim p$): \"If two angles are not supplementary, then they do not form a linear pair.\"\n\nThis is **true**. A conditional and its contrapositive always have the same truth value. Directly: if two angles did form a linear pair, they would be supplementary; so if they are not supplementary, they cannot be a linear pair.\n\nSummary of the sequence:\n\n| Statement | Form | Truth value |\n|---|---|---|\n| Conditional | $p \\to q$ | True |\n| Converse | $q \\to p$ | False |\n| Inverse | $\\sim p \\to \\sim q$ | False |\n| Contrapositive | $\\sim q \\to \\sim p$ | True |",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q05",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 1,
+  "type": "fluency",
+  "question": "Each conditional below is **false**. Give a counterexample for each one.\n\n(a) If $x^2 = 49$, then $x = 7$.\n\n(b) If a quadrilateral has four congruent sides, then it is a square.\n\n(c) If $n$ is a prime number, then $n$ is odd.",
+  "hint": "A counterexample is a single case where the hypothesis is **true** but the conclusion is **false**.",
+  "answer": "(a) $x = -7$ (b) a rhombus that is not a square, e.g. one with angles $60^\\circ$ and $120^\\circ$ (c) $n = 2$",
+  "solution": "A counterexample needs the hypothesis true **and** the conclusion false.\n\n**(a)** $x = -7$: $(-7)^2 = 49$ (hypothesis true) but $x \\ne 7$ (conclusion false).\n\n**(b)** A rhombus with angles $60^\\circ, 120^\\circ, 60^\\circ, 120^\\circ$: all four sides are congruent, but it has no right angles, so it is not a square.\n\n**(c)** $n = 2$: 2 is prime, but 2 is even.\n\nOne counterexample is enough to prove a conditional false, however many examples agree with it.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-logic-conditionals-q06",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "For each true conditional, write its converse and decide whether the converse is true. If it is, combine the two into a **biconditional** using \"if and only if\". If it is not, give a counterexample to the converse.\n\n(a) If an angle is a right angle, then its measure is $90^\\circ$.\n\n(b) If two angles are vertical angles, then they are congruent.\n\n(c) If $M$ is the midpoint of $\\overline{AB}$, then $M$ lies on $\\overline{AB}$ and $AM = MB$.",
+  "hint": "A biconditional $p \\leftrightarrow q$ is true only when **both** $p \\to q$ and $q \\to p$ are true.",
+  "answer": "(a) Converse true: \"An angle is a right angle if and only if its measure is $90^\\circ$.\" (b) Converse false (e.g. the two base angles of an isosceles triangle are congruent but not vertical), so no biconditional. (c) Converse true: \"$M$ is the midpoint of $\\overline{AB}$ if and only if $M$ lies on $\\overline{AB}$ and $AM = MB$.\" ",
+  "solution": "**(a)** Converse: \"If the measure of an angle is $90^\\circ$, then it is a right angle.\" True (this is the definition of a right angle).\n\nBiconditional: \"An angle is a right angle **if and only if** its measure is $90^\\circ$.\"\n\n**(b)** Converse: \"If two angles are congruent, then they are vertical angles.\" False. Counterexample: the base angles of an isosceles triangle are congruent, but they are not formed by two intersecting lines, so they are not vertical angles.\n\nNo biconditional can be written.\n\n**(c)** Converse: \"If $M$ lies on $\\overline{AB}$ and $AM = MB$, then $M$ is the midpoint of $\\overline{AB}$.\" True (this is the definition of a midpoint).\n\nBiconditional: \"$M$ is the midpoint of $\\overline{AB}$ **if and only if** $M$ lies on $\\overline{AB}$ and $AM = MB$.\"\n\nNote that (a) and (c) are definitions: a good definition can always be written as a true biconditional.",
+  "linkedTopicIds": [
+   "geo-foundations-definitions"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q07",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "Use the Law of Detachment or the Law of Syllogism to write a valid conclusion, if possible. State which law you used. If no valid conclusion is possible, explain why.\n\n(a) If a triangle is equilateral, then each of its angles measures $60^\\circ$. Triangle $PQR$ is equilateral.\n\n(b) If an angle measures $35^\\circ$, then it is acute. If an angle is acute, then its complement is less than $90^\\circ$ but more than $0^\\circ$.\n\n(c) If a figure is a rhombus, then its diagonals are perpendicular. The diagonals of quadrilateral $WXYZ$ are perpendicular.",
+  "hint": "Detachment: from $p \\to q$ and $p$, conclude $q$. Syllogism: from $p \\to q$ and $q \\to r$, conclude $p \\to r$. Check whether you are given the **hypothesis** or only the conclusion.",
+  "answer": "(a) Each angle of $\\triangle PQR$ measures $60^\\circ$ (Detachment). (b) If an angle measures $35^\\circ$, then its complement is more than $0^\\circ$ and less than $90^\\circ$ (Syllogism). (c) No valid conclusion: we are given the conclusion, not the hypothesis.",
+  "solution": "**(a)** $p$: a triangle is equilateral; $q$: each angle is $60^\\circ$. We are told $p$ is true for $\\triangle PQR$, so by the **Law of Detachment**: each angle of $\\triangle PQR$ measures $60^\\circ$.\n\n**(b)** $p \\to q$: $35^\\circ \\to$ acute. $q \\to r$: acute $\\to$ complement between $0^\\circ$ and $90^\\circ$. The conclusion of the first is the hypothesis of the second, so by the **Law of Syllogism** ($p \\to r$): if an angle measures $35^\\circ$, then its complement is more than $0^\\circ$ and less than $90^\\circ$. (Indeed its complement is $55^\\circ$.)\n\n**(c)** **No valid conclusion.** We know \"rhombus $\\to$ perpendicular diagonals\" and that $WXYZ$ has perpendicular diagonals, which is the **conclusion**, not the hypothesis. A kite also has perpendicular diagonals but need not be a rhombus, so $WXYZ$ might not be a rhombus.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q08",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Marcus is asked to write the contrapositive of the true statement\n\n\"If a quadrilateral is a square, then it is a rectangle.\"\n\nand to decide whether it is true. His work is shown below.\n\n> Contrapositive: \"If a quadrilateral is not a square, then it is not a rectangle.\"\n>\n> This is false, because a $3 \\times 5$ rectangle is not a square but is a rectangle. So the contrapositive of a true statement can be false.\n\n(a) What mistake has Marcus made?\n\n(b) Write the correct contrapositive and state whether it is true.\n\n(c) Explain why Marcus's final sentence cannot be right.",
+  "hint": "Compare Marcus's statement with the forms $\\sim p \\to \\sim q$ and $\\sim q \\to \\sim p$.",
+  "answer": "(a) He wrote the inverse ($\\sim p \\to \\sim q$): he negated but did not swap. (b) \"If a quadrilateral is not a rectangle, then it is not a square.\" True. (c) A conditional and its contrapositive always have the same truth value, so the contrapositive of a true statement is always true.",
+  "solution": "Let $p$: the quadrilateral is a square; $q$: the quadrilateral is a rectangle.\n\n**(a)** Marcus wrote $\\sim p \\to \\sim q$, which is the **inverse**: he negated both parts but did not swap them. His counterexample correctly shows that the **inverse** is false.\n\n**(b)** The contrapositive swaps **and** negates, $\\sim q \\to \\sim p$:\n\n\"If a quadrilateral is not a rectangle, then it is not a square.\"\n\nThis is **true**: every square is a rectangle, so a shape that fails to be a rectangle cannot be a square.\n\n**(c)** A conditional and its contrapositive are logically equivalent; they are true in exactly the same situations. So if \"square $\\to$ rectangle\" is true, its contrapositive must be true. A false \"contrapositive\" is a sign that the statement has been formed incorrectly.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q09",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "question": "Jasmine is given these facts.\n\n1. If two lines are perpendicular, then they intersect to form four right angles.\n2. Lines $j$ and $k$ intersect to form four right angles.\n3. If two lines intersect to form four right angles, then they form congruent adjacent angles.\n\nHer reasoning is shown below.\n\n> From 1 and 2, by the Law of Detachment, lines $j$ and $k$ are perpendicular.\n>\n> Then from 3, lines $j$ and $k$ form congruent adjacent angles.\n\n(a) Explain the error in Jasmine's first line.\n\n(b) Using only the Law of Detachment and statements 2 and 3, write a valid conclusion.\n\n(c) Is the conclusion \"$j$ and $k$ are perpendicular\" actually true here? Explain carefully what the error is about.",
+  "hint": "For the Law of Detachment you need $p \\to q$ **and** $p$. In statement 1, which part is fact 2 matching: the hypothesis or the conclusion?",
+  "answer": "(a) Fact 2 matches the **conclusion** of statement 1, not its hypothesis; reasoning from $p \\to q$ and $q$ to $p$ is not valid (affirming the conclusion). (b) Lines $j$ and $k$ form congruent adjacent angles. (c) Yes, it happens to be true (by the definition of perpendicular lines), but it does not follow from statements 1 and 2; the argument is invalid even though the conclusion is true.",
+  "solution": "**(a)** Statement 1 has the form $p \\to q$ with $p$: \"the lines are perpendicular\" and $q$: \"they form four right angles\". Fact 2 tells us $q$ is true. Jasmine concluded $p$. That is **affirming the conclusion**, which is not the Law of Detachment (Detachment needs the **hypothesis** $p$ to be true). In general, $p \\to q$ and $q$ do not give $p$.\n\n**(b)** Statement 3 has hypothesis \"two lines intersect to form four right angles\", and fact 2 says exactly that about $j$ and $k$. By the Law of Detachment:\n\nLines $j$ and $k$ form congruent adjacent angles.\n\n**(c)** The conclusion is in fact true, because by **definition** perpendicular lines are lines that intersect to form right angles. But that uses the definition (a biconditional), not statement 1. The error is in the **logic**, not the final claim: an invalid argument can accidentally reach a true conclusion, and the same pattern of reasoning would fail elsewhere (e.g. \"If a figure is a square, then it has four right angles; $ABCD$ has four right angles; so $ABCD$ is a square\" is false for a $3 \\times 5$ rectangle).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q10",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Tyler says:\n\n> \"The statement 'If two angles are vertical angles, then they are congruent' is a theorem, so it is true. That means its converse, 'If two angles are congruent, then they are vertical angles,' must be true too.\"\n\nIs Tyler correct? Justify your answer, and explain what the truth of a conditional does tell you about its related statements.",
+  "hint": "Try to find two congruent angles that are **not** formed by two intersecting lines.",
+  "answer": "No. The converse is false: for example, two angles of $40^\\circ$ in different places (or the base angles of an isosceles triangle) are congruent but are not vertical angles. A true conditional guarantees only that its contrapositive is true; the converse (and inverse) must be checked separately.",
+  "solution": "Tyler is **not correct**.\n\nThe converse is \"If two angles are congruent, then they are vertical angles.\" Counterexample: in an isosceles triangle the two base angles are congruent, but they are at different vertices and are not formed by two intersecting lines, so they are not vertical angles. (Even simpler: any two $40^\\circ$ angles drawn separately.)\n\nWhat a true conditional tells you:\n\n* Its **contrapositive** is also true: \"If two angles are not congruent, then they are not vertical angles.\"\n* Its **converse** and **inverse** might be true or false; they have to be tested separately (and they always share a truth value with each other).\n\nSo a conditional and its converse are independent: a theorem's converse needs its own proof (sometimes it is a separate theorem, e.g. the Converse of the Alternate Interior Angles Theorem).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q11",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "Kai works out $n^2 - n + 11$ for $n = 1, 2, 3, \\ldots, 10$ and gets\n$$11, \\; 13, \\; 17, \\; 23, \\; 31, \\; 41, \\; 53, \\; 67, \\; 83, \\; 101$$\nall of which are prime. He writes: \"Ten out of ten cases work, so $n^2 - n + 11$ is prime for every positive integer $n$.\"\n\n(a) Is Kai using inductive or deductive reasoning? Explain.\n\n(b) Show that Kai's conjecture is false.\n\n(c) Explain why no number of checked examples could ever prove a statement like Kai's.",
+  "hint": "Try $n = 11$. What do the two terms $n^2$ and $11$ have in common then?",
+  "answer": "(a) Inductive: he generalizes from a pattern in examples. (b) $n = 11$ gives $121 = 11^2$, which is not prime. (c) A statement about every positive integer covers infinitely many cases, and checking finitely many leaves others untested; a proof needs deductive reasoning.",
+  "solution": "**(a)** Kai is using **inductive reasoning**: he observes a pattern in specific cases and makes a general conjecture. He is not deducing it from definitions, postulates or proven facts.\n\n**(b)** Counterexample $n = 11$:\n$$11^2 - 11 + 11 = 121 = 11 \\times 11$$\n121 is not prime, so the conjecture is false.\n\n(Why $n = 11$? Then $n^2 - n + 11 = 11(11 - 1 + 1) = 11^2$, so 11 is a factor.)\n\n**(c)** \"For every positive integer\" covers infinitely many cases. Checking 10 (or 10 million) cases leaves infinitely many unchecked, and as part (b) shows, the very next case can fail. Inductive reasoning can only produce a **conjecture**; to prove a general statement you need **deductive** reasoning, while a single counterexample is enough to disprove it.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q12",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 3,
+  "type": "real-world",
+  "question": "An online store states this policy: \"If your order total is over \\$50, then shipping is free.\"\n\nAssume the store always follows its policy.\n\n(a) Maria's order total is \\$62.40. What can you conclude? Name the law of logic you used.\n\n(b) Write the converse, inverse and contrapositive of the policy.\n\n(c) Which of the three statements in (b) **must** be true? For each of the others, describe a realistic situation in which it is false.\n\n(d) Leon's shipping was **not** free. What can you conclude about his order?",
+  "hint": "Only the contrapositive is guaranteed. For the others, think about other ways a store might give free shipping (a promo code, a membership, a sale weekend).",
+  "answer": "(a) Maria gets free shipping (Law of Detachment). (b) Converse: if shipping is free, then the order total is over \\$50. Inverse: if the order total is not over \\$50, then shipping is not free. Contrapositive: if shipping is not free, then the order total is not over \\$50. (c) Only the contrapositive must be true; a \\$30 order with a free-shipping promo code makes both the converse and the inverse false. (d) His order total was \\$50 or less (contrapositive).",
+  "solution": "Let $p$: the order total is over \\$50; $q$: shipping is free.\n\n**(a)** \\$62.40 is over \\$50, so $p$ is true. By the **Law of Detachment**, Maria's shipping is free.\n\n**(b)**\n\n* Converse ($q \\to p$): If shipping is free, then the order total is over \\$50.\n* Inverse ($\\sim p \\to \\sim q$): If the order total is not over \\$50, then shipping is not free.\n* Contrapositive ($\\sim q \\to \\sim p$): If shipping is not free, then the order total is not over \\$50.\n\n**(c)** Only the **contrapositive** must be true, since it is logically equivalent to the policy.\n\nThe converse and inverse are not guaranteed: the policy says nothing about orders of \\$50 or less. If a customer orders \\$30 of goods and uses a free-shipping promo code, then shipping is free but the total is not over \\$50, so the converse is false; and the same order has a total not over \\$50 but free shipping, so the inverse is false too.\n\n**(d)** Leon's shipping was not free ($\\sim q$). By the contrapositive (and the Law of Detachment), his order total was **not over \\$50**, i.e. \\$50 or less.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m1",
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q13",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 4,
+  "type": "exam-style",
+  "question": "Consider the true statement:\n\n\"If a quadrilateral is a rectangle, then its diagonals are congruent.\" ",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Identify the hypothesis and the conclusion.",
+    "marks": 1
+   },
+   {
+    "label": "b",
+    "prompt": "Write the converse. Determine whether it is true or false. If false, give a counterexample and justify it.",
+    "marks": 2
+   },
+   {
+    "label": "c",
+    "prompt": "Write the contrapositive and state its truth value. Justify your answer without drawing a figure.",
+    "marks": 1
+   },
+   {
+    "label": "d",
+    "prompt": "A student claims the statement can be written as \"A quadrilateral is a rectangle if and only if its diagonals are congruent.\" Is the student correct? Explain.",
+    "marks": 1
+   }
+  ],
+  "marks": 5,
+  "hint": "Think of a quadrilateral that is not a rectangle but whose diagonals have equal length. Trapezoids are worth considering.",
+  "answer": "(a) Hypothesis: a quadrilateral is a rectangle; conclusion: its diagonals are congruent. (b) \"If the diagonals of a quadrilateral are congruent, then it is a rectangle.\" False: an isosceles trapezoid (non-rectangular) has congruent diagonals. (c) \"If the diagonals of a quadrilateral are not congruent, then it is not a rectangle.\" True, because a statement and its contrapositive have the same truth value. (d) No: the biconditional needs the converse to be true, and it is false.",
+  "solution": "**(a)** Hypothesis: a quadrilateral is a rectangle. Conclusion: its diagonals are congruent. (1 pt)\n\n**(b)** Converse: \"If the diagonals of a quadrilateral are congruent, then the quadrilateral is a rectangle.\" (1 pt for the correct converse)\n\n**False.** Counterexample: an isosceles trapezoid with bases 4 and 10 and legs 5. Its diagonals are congruent (the figure is symmetric about the perpendicular bisector of the bases, which maps one diagonal onto the other), but its base angles are not right angles (the height is 4, as $\\sqrt{5^2 - 3^2} = 4$, so each base angle has tangent $\\frac{4}{3}$), so it is not a rectangle. (1 pt for a valid counterexample with justification)\n\n**(c)** Contrapositive: \"If the diagonals of a quadrilateral are not congruent, then the quadrilateral is not a rectangle.\" **True**, because a conditional and its contrapositive always have the same truth value and the original statement is true. (1 pt)\n\n**(d)** The student is **not** correct. \"$p$ if and only if $q$\" means both $p \\to q$ and $q \\to p$. The converse $q \\to p$ was shown false in (b), so the biconditional is false. (1 pt)",
+  "linkedTopicIds": [
+   "geo-shape-properties"
+  ],
+  "misconceptionIds": [
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q14",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 4,
+  "type": "reasoning",
+  "question": "Points are placed on a circle and every pair of points is joined by a chord. The points are positioned so that no three chords meet at the same point inside the circle. The diagram shows the number of regions the circle is divided into for 2, 3 and 4 points. With 1 point there is 1 region, and with 5 points there are 16 regions.\n\n| Number of points, $n$ | 1 | 2 | 3 | 4 | 5 |\n|---|---|---|---|---|---|\n| Regions | 1 | 2 | 4 | 8 | 16 |\n\n(a) Based on the pattern, make a conjecture for the number of regions with $n$ points. What type of reasoning is this?\n\n(b) In fact, 6 points give 31 regions. What does this tell you about your conjecture?\n\n(c) Ruby says, \"The conjecture worked for five different values of $n$, so it's basically proved.\" Explain why Ruby is wrong.",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 200\" width=\"360\" height=\"200\"><circle cx=\"60\" cy=\"90\" r=\"48\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><line x1=\"51.7\" y1=\"42.7\" x2=\"68.3\" y2=\"137.3\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"51.7\" cy=\"42.7\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"68.3\" cy=\"137.3\" r=\"2.5\" fill=\"currentColor\"/><text x=\"60\" y=\"167\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2 points</text><text x=\"60\" y=\"187\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2 regions</text><circle cx=\"180\" cy=\"90\" r=\"48\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><line x1=\"171.7\" y1=\"42.7\" x2=\"143.2\" y2=\"120.9\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"171.7\" y1=\"42.7\" x2=\"225.1\" y2=\"106.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"143.2\" y1=\"120.9\" x2=\"225.1\" y2=\"106.4\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"171.7\" cy=\"42.7\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"143.2\" cy=\"120.9\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"225.1\" cy=\"106.4\" r=\"2.5\" fill=\"currentColor\"/><text x=\"180\" y=\"167\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3 points</text><text x=\"180\" y=\"187\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4 regions</text><circle cx=\"300\" cy=\"90\" r=\"48\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"2\"/><line x1=\"278.2\" y1=\"47.2\" x2=\"257.2\" y2=\"111.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"278.2\" y1=\"47.2\" x2=\"321.8\" y2=\"132.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"278.2\" y1=\"47.2\" x2=\"342.8\" y2=\"68.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"257.2\" y1=\"111.8\" x2=\"321.8\" y2=\"132.8\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"257.2\" y1=\"111.8\" x2=\"342.8\" y2=\"68.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"321.8\" y1=\"132.8\" x2=\"342.8\" y2=\"68.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"278.2\" cy=\"47.2\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"257.2\" cy=\"111.8\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"321.8\" cy=\"132.8\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"342.8\" cy=\"68.2\" r=\"2.5\" fill=\"currentColor\"/><text x=\"300\" y=\"167\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4 points</text><text x=\"300\" y=\"187\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">8 regions</text></svg>",
+  "hint": "The numbers double each time. What does the 6th value need to be for the pattern to continue?",
+  "answer": "(a) $2^{n-1}$ regions; inductive reasoning. (b) The conjecture predicts $2^5 = 32$ but there are 31, so $n = 6$ is a counterexample and the conjecture is false. (c) Agreement in several cases is only evidence; one counterexample ($n = 6$) disproves a general statement, and a proof needs deductive reasoning.",
+  "solution": "**(a)** The number of regions doubles each time: $1, 2, 4, 8, 16$. Conjecture: with $n$ points there are $2^{n-1}$ regions.\n\nThis is **inductive reasoning**: a general rule guessed from a pattern in specific cases.\n\n**(b)** The conjecture predicts $2^{6-1} = 32$ regions for 6 points, but the actual number is 31. So $n = 6$ is a **counterexample** and the conjecture is **false**. (The true formula is $1 + \\binom{n}{2} + \\binom{n}{4}$, which gives $1, 2, 4, 8, 16, 31, 57, \\ldots$; it just happens to match powers of 2 for $n \\le 5$.)\n\n**(c)** Five confirming cases do not prove anything about all $n$: the statement claims something about infinitely many cases, and part (b) shows it fails at the very next one. Confirming examples support a conjecture; only **deductive** reasoning (a proof) establishes it, and a **single** counterexample is enough to disprove it.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q15",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "(a) Hannah notices that $3 + 5 = 8$, $7 + 11 = 18$ and $13 + 21 = 34$, and conjectures: \"The sum of any two odd integers is even.\" What type of reasoning has she used?\n\n(b) Use deductive reasoning to prove Hannah's conjecture. (Hint: any odd integer can be written as $2m + 1$ for some integer $m$.)\n\n(c) Hannah makes a second conjecture: \"For every positive integer $n$, the number $n(n + 1) + 1$ is prime.\" She checks $n = 1, 2, 3$. Test her conjecture and decide whether it is true.",
+  "hint": "In (b), use **different** letters for the two odd integers, e.g. $2m + 1$ and $2k + 1$, then factor out 2. In (c), keep going past $n = 3$.",
+  "answer": "(a) Inductive. (b) $(2m + 1) + (2k + 1) = 2(m + k + 1)$, which is even because $m + k + 1$ is an integer. (c) False: $n = 4$ gives $21 = 3 \\times 7$.",
+  "solution": "**(a)** **Inductive** reasoning: a general conjecture based on a few examples.\n\n**(b)** Let the two odd integers be $2m + 1$ and $2k + 1$, where $m$ and $k$ are integers. (Different letters, so the integers need not be equal.)\n$$(2m + 1) + (2k + 1) = 2m + 2k + 2 = 2(m + k + 1)$$\n\n$m + k + 1$ is an integer, so the sum is 2 times an integer, which is the definition of an even number. This holds for **every** pair of odd integers, so the conjecture is proved. This is **deductive** reasoning: it uses definitions and algebra, not examples.\n\n**(c)**\n\n| $n$ | $n(n + 1) + 1$ | Prime? |\n|---|---|---|\n| 1 | 3 | yes |\n| 2 | 7 | yes |\n| 3 | 13 | yes |\n| 4 | 21 | **no**, $21 = 3 \\times 7$ |\n\n$n = 4$ is a counterexample, so the conjecture is false. Three confirming cases were not enough.",
+  "linkedTopicIds": [
+   "alg-algebraic-proof"
+  ],
+  "misconceptionIds": [
+   "m3"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q16",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 4,
+  "type": "synoptic",
+  "question": "The **Alternate Interior Angles Theorem** says: \"If two parallel lines are cut by a transversal, then the alternate interior angles are congruent.\"\n\nIn the figure, lines $\\ell$ and $m$ are cut by transversal $t$ at $A$ and $B$. The alternate interior angles shown measure $72^\\circ$ and $74^\\circ$.\n\n(a) Write the contrapositive of the theorem.\n\n(b) Use the contrapositive and the Law of Detachment to decide whether $\\ell \\parallel m$.\n\n(c) The **converse** of the theorem is also a theorem. Write it, and explain why it needed its own proof rather than following from the original theorem.\n\n(d) If the $74^\\circ$ angle were changed to $x^\\circ$, for what value of $x$ would the lines be parallel? Which statement (the theorem or its converse) justifies this?",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><line x1=\"20\" y1=\"80\" x2=\"340\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"37.2\" y1=\"199.4\" x2=\"357\" y2=\"188.2\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"133\" y1=\"27.7\" x2=\"204.1\" y2=\"246.4\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"80\" r=\"2.5\" fill=\"currentColor\"/><circle cx=\"187.1\" cy=\"194.1\" r=\"2.5\" fill=\"currentColor\"/><text x=\"334\" y=\"73\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">ℓ</text><text x=\"351\" y=\"181.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">m</text><text x=\"216.1\" y=\"249.4\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">t</text><path d=\"M176 80 A26 26 0 0 1 158 104.7\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"185.6\" y=\"110.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">72°</text><path d=\"M161.1 195 A26 26 0 0 1 179 169.4\" stroke=\"currentColor\" fill=\"none\" stroke-width=\"1.5\"/><text x=\"151\" y=\"173.9\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">74°</text><text x=\"136\" y=\"73\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"201.1\" y=\"215.1\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text></svg>",
+  "hint": "Contrapositive: \"If the alternate interior angles are not congruent, then …\". For (d), you need a statement whose hypothesis is about the angles.",
+  "answer": "(a) If the alternate interior angles formed by a transversal are not congruent, then the lines are not parallel. (b) $72^\\circ \\ne 74^\\circ$, so $\\ell$ and $m$ are not parallel. (c) \"If two lines are cut by a transversal so that the alternate interior angles are congruent, then the lines are parallel.\" A conditional being true says nothing about its converse. (d) $x = 72$, justified by the converse.",
+  "solution": "**(a)** Contrapositive ($\\sim q \\to \\sim p$): \"If two lines are cut by a transversal and the alternate interior angles are **not** congruent, then the lines are **not** parallel.\" It is true because the theorem is true.\n\n**(b)** The alternate interior angles measure $72^\\circ$ and $74^\\circ$, which are not equal, so the hypothesis of the contrapositive is true. By the **Law of Detachment**, $\\ell$ is **not** parallel to $m$. (The lines meet far off to the right of the figure.)\n\n**(c)** Converse: \"If two lines are cut by a transversal so that the alternate interior angles are congruent, then the lines are parallel.\"\n\nA true conditional does not guarantee a true converse (e.g. \"vertical angles $\\to$ congruent\" has a false converse), so the converse had to be proved separately; it happens to be true here.\n\n**(d)** For $\\ell \\parallel m$ we need the alternate interior angles to be congruent: $x = 72$. This uses the **converse** (its hypothesis is \"the alternate interior angles are congruent\"). The original theorem cannot be used, because its hypothesis is that the lines are already parallel, and using it here would be affirming the conclusion.",
+  "linkedTopicIds": [
+   "geo-parallel-lines-angles"
+  ],
+  "misconceptionIds": [
+   "m4",
+   "m1"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q17",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "At a high school, the following statements are all true.\n\n1. If a student is on the robotics team, then the student takes Geometry.\n2. If a student takes Geometry, then the student owns a graphing calculator.\n3. If a student is in the chess club, then the student does not own a graphing calculator.\n\n(a) Dev is in the chess club. Using the statements, what can you conclude about Dev? Give a chain of reasoning, naming each law of logic or related statement you use.\n\n(b) Priya owns a graphing calculator. What, if anything, can you conclude about Priya? What can you **not** conclude?\n\n(c) Write one new true conditional that connects the robotics team and the chess club directly, and justify it.",
+  "hint": "Write the statements in symbols ($r \\to g$, $g \\to c$, $h \\to \\sim c$). Contrapositives let you run a chain backwards.",
+  "answer": "(a) Dev does not own a graphing calculator, does not take Geometry, and is not on the robotics team. (b) Priya is not in the chess club; we cannot conclude that she takes Geometry or is on the robotics team. (c) \"If a student is on the robotics team, then the student is not in the chess club\" (or the equivalent \"If a student is in the chess club, then the student is not on the robotics team\").",
+  "solution": "Symbols: $r$: on the robotics team; $g$: takes Geometry; $c$: owns a graphing calculator; $h$: in the chess club.\n\nGiven: (1) $r \\to g$, (2) $g \\to c$, (3) $h \\to \\sim c$.\n\nContrapositives (each equivalent to its statement): (1') $\\sim g \\to \\sim r$, (2') $\\sim c \\to \\sim g$, (3') $c \\to \\sim h$.\n\n**(a)** Dev: $h$ is true.\n\n* By (3) and the Law of Detachment: $\\sim c$. Dev does **not** own a graphing calculator.\n* By (2') and Detachment: $\\sim g$. Dev does **not** take Geometry.\n* By (1') and Detachment: $\\sim r$. Dev is **not** on the robotics team.\n\n(Equivalently, by the Law of Syllogism, $h \\to \\sim c \\to \\sim g \\to \\sim r$.)\n\n**(b)** Priya: $c$ is true. By (3') and Detachment: $\\sim h$, so Priya is **not** in the chess club.\n\nWe **cannot** conclude that she takes Geometry: statement (2) is $g \\to c$, and knowing $c$ is the conclusion, not the hypothesis (affirming the conclusion is invalid). She might own the calculator for another class. Similarly we cannot conclude anything about the robotics team.\n\n**(c)** Chain (1), (2), (3'): $r \\to g \\to c \\to \\sim h$. By the Law of Syllogism, $r \\to \\sim h$:\n\n\"If a student is on the robotics team, then the student is not in the chess club.\"\n\nIts contrapositive, \"If a student is in the chess club, then the student is not on the robotics team\", is equally true (and is the result of part (a)).",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m4",
+   "m2"
+  ]
+ },
+ {
+  "id": "geo-logic-conditionals-q18",
+  "topicId": "geo-logic-conditionals",
+  "difficulty": 5,
+  "type": "reasoning",
+  "question": "(a) Copy and complete a truth table with columns $p$, $q$, $\\sim p$, $\\sim q$, $p \\to q$, $q \\to p$, $\\sim p \\to \\sim q$ and $\\sim q \\to \\sim p$.\n\n(b) Use your table to explain why a conditional and its contrapositive are logically equivalent, but a conditional and its converse are not.\n\n(c) Without using the table, explain why the converse and the inverse of any conditional must always have the same truth value.\n\n(d) The biconditional $p \\leftrightarrow q$ is defined as $(p \\to q)$ **and** $(q \\to p)$. Add a column for it and describe in words when it is true.",
+  "hint": "Remember that $p \\to q$ is false in only one row: when $p$ is true and $q$ is false.",
+  "answer": "(a) Rows (T,T), (T,F), (F,T), (F,F): $p \\to q$: T, F, T, T; $q \\to p$: T, T, F, T; $\\sim p \\to \\sim q$: T, T, F, T; $\\sim q \\to \\sim p$: T, F, T, T. (b) The $p \\to q$ and $\\sim q \\to \\sim p$ columns are identical; the $q \\to p$ column differs in rows 2 and 3. (c) The inverse $\\sim p \\to \\sim q$ is the contrapositive of the converse $q \\to p$. (d) $p \\leftrightarrow q$: T, F, F, T; true exactly when $p$ and $q$ have the same truth value.",
+  "solution": "**(a)** A conditional is false only when its hypothesis is true and its conclusion is false.\n\n| $p$ | $q$ | $\\sim p$ | $\\sim q$ | $p \\to q$ | $q \\to p$ | $\\sim p \\to \\sim q$ | $\\sim q \\to \\sim p$ | $p \\leftrightarrow q$ |\n|---|---|---|---|---|---|---|---|---|\n| T | T | F | F | T | T | T | T | T |\n| T | F | F | T | **F** | T | T | **F** | F |\n| F | T | T | F | T | **F** | **F** | T | F |\n| F | F | T | T | T | T | T | T | T |\n\nFor example, in row 2 the contrapositive $\\sim q \\to \\sim p$ has hypothesis $\\sim q =$ T and conclusion $\\sim p =$ F, so it is false.\n\n**(b)** The columns for $p \\to q$ and $\\sim q \\to \\sim p$ are identical (T, F, T, T): in every possible situation they have the same truth value, so they are **logically equivalent**. The converse column $q \\to p$ (T, T, F, T) differs in rows 2 and 3, so a conditional can be true while its converse is false (row 3) or vice versa (row 2).\n\n**(c)** Start from the converse $q \\to p$. Its contrapositive swaps and negates: $\\sim p \\to \\sim q$, which is exactly the inverse of the original. Since any conditional is equivalent to its contrapositive, the converse and inverse always share a truth value. (The table confirms it: both columns read T, T, F, T.)\n\n**(d)** $p \\leftrightarrow q$ is true only when both $p \\to q$ and $q \\to p$ are true: rows 1 and 4, giving T, F, F, T. In words, the biconditional is true exactly when $p$ and $q$ are both true or both false, i.e. when they have the **same truth value**.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m1"
+  ]
+ }
+]

@@ -5,15 +5,15 @@
   "difficulty": 1,
   "type": "fluency",
   "variationSet": "v1",
-  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} + 2y = 6$$",
-  "hint": "Here $P(x) = 2$, so the integrating factor is $e^{\\int 2\\,dx}$.",
-  "answer": "$y = 3 + ce^{-2x}$",
-  "solution": "Already in standard form with $P(x) = 2$, $Q(x) = 6$.\n\nIntegrating factor: $I = e^{\\int 2\\,dx} = e^{2x}$.\n\nMultiply **every** term by $e^{2x}$:\n$$e^{2x}\\frac{dy}{dx} + 2e^{2x}y = 6e^{2x} \\quad\\Rightarrow\\quad \\frac{d}{dx}\\left(ye^{2x}\\right) = 6e^{2x}$$\n\nIntegrate (constant now): $ye^{2x} = 3e^{2x} + c$\n\nDivide everything by $e^{2x}$:\n$$y = 3 + ce^{-2x}$$",
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} - 2y = 6$$",
+  "hint": "Here $P(x) = -2$, so the integrating factor is $e^{\\int -2\\,dx}$. Watch the sign.",
+  "answer": "$y = -3 + ce^{2x}$",
+  "solution": "Already in standard form with $P(x) = -2$, $Q(x) = 6$.\n\nIntegrating factor: $I = e^{\\int -2\\,dx} = e^{-2x}$.\n\nMultiply **every** term by $e^{-2x}$:\n$$e^{-2x}\\frac{dy}{dx} - 2e^{-2x}y = 6e^{-2x} \\quad\\Rightarrow\\quad \\frac{d}{dx}\\left(ye^{-2x}\\right) = 6e^{-2x}$$\n\nIntegrate (constant now): $ye^{-2x} = -3e^{-2x} + c$\n\nDivide everything by $e^{-2x}$:\n$$y = -3 + ce^{2x}$$",
+  "linkedTopicIds": [],
   "misconceptionIds": [
    "m2",
    "m3"
-  ],
-  "linkedTopicIds": []
+  ]
  },
  {
   "id": "fur-first-order-de-q02",
@@ -21,11 +21,15 @@
   "difficulty": 1,
   "type": "fluency",
   "variationSet": "v1",
-  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} - 2y = 6$$",
-  "hint": "Now $P(x) = -2$. Watch the sign in the integrating factor.",
-  "answer": "$y = -3 + ce^{2x}$",
-  "solution": "**What changed:** the sign of the $y$ term, so $P(x) = -2$.\n\n$I = e^{\\int -2\\,dx} = e^{-2x}$.\n\n$$\\frac{d}{dx}\\left(ye^{-2x}\\right) = 6e^{-2x} \\Rightarrow ye^{-2x} = -3e^{-2x} + c$$\n$$y = -3 + ce^{2x}$$\n\n**Effect:** the exponential term now grows instead of decaying, so solutions move away from the constant solution $y = -3$ rather than settling towards $y = 3$.",
-  "linkedTopicIds": []
+  "question": "Use an integrating factor to find the general solution of\n$$\\frac{dy}{dx} + 2y = 6$$",
+  "hint": "Now $P(x) = 2$. How does the integrating factor change?",
+  "answer": "$y = 3 + ce^{-2x}$",
+  "solution": "**What changed:** the sign of the $y$ term, so $P(x) = 2$.\n\n$I = e^{\\int 2\\,dx} = e^{2x}$.\n\nMultiply **every** term by $e^{2x}$:\n$$\\frac{d}{dx}\\left(ye^{2x}\\right) = 6e^{2x} \\Rightarrow ye^{2x} = 3e^{2x} + c$$\n$$y = 3 + ce^{-2x}$$\n\n**Effect:** the exponential term now decays instead of growing, so every solution settles towards the constant solution $y = 3$, rather than moving away from $y = -3$ as in the previous question.",
+  "linkedTopicIds": [],
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ]
  },
  {
   "id": "fur-first-order-de-q03",
@@ -156,7 +160,7 @@
   "question": "A cup of tea at $90^\\circ\\text{C}$ is placed in a cold room at $15^\\circ\\text{C}$ just as the heating comes on, so that the room temperature after $t$ minutes is $(15 + 0.2t)^\\circ\\text{C}$. The temperature $\\theta^\\circ\\text{C}$ of the tea is modelled by\n$$\\frac{d\\theta}{dt} = -0.1\\left(\\theta - (15 + 0.2t)\\right), \\quad 0 \\le t \\le 60$$\n\n(a) Show that $\\theta = 13 + 0.2t + 77e^{-0.1t}$.\n\n(b) Find, to the nearest 0.1 minutes, when the tea has cooled to $50^\\circ\\text{C}$.\n\n(c) Find the lowest temperature of the tea in the first hour, and interpret the long-term behaviour of the model.",
   "hint": "Rearrange to $\\frac{d\\theta}{dt} + 0.1\\theta = 1.5 + 0.02t$; the integrating factor is $e^{0.1t}$. You will need integration by parts for $\\int te^{0.1t}\\,dt$. For (b) use a numerical method or calculator solver.",
   "answer": "(a) Shown (b) $t \\approx 7.8$ minutes (c) $22.3^\\circ\\text{C}$ at $t = 10\\ln 38.5 \\approx 36.5$ min; eventually the tea stays about $2^\\circ\\text{C}$ below the (rising) room temperature.",
-  "solution": "**(a)** $\\frac{d\\theta}{dt} + 0.1\\theta = 1.5 + 0.02t$, $I = e^{0.1t}$:\n$$\\frac{d}{dt}\\left(\\theta e^{0.1t}\\right) = (1.5 + 0.02t)e^{0.1t}$$\n\nBy parts, $\\int te^{0.1t}\\,dt = 10te^{0.1t} - 100e^{0.1t}$, so\n$$\\theta e^{0.1t} = 15e^{0.1t} + 0.02\\left(10te^{0.1t} - 100e^{0.1t}\\right) + c = (13 + 0.2t)e^{0.1t} + c$$\n$$\\theta = 13 + 0.2t + ce^{-0.1t}$$\n$t = 0$, $\\theta = 90$: $13 + c = 90 \\Rightarrow c = 77$, giving $\\theta = 13 + 0.2t + 77e^{-0.1t}$ ✓\n\n**(b)** Solve $13 + 0.2t + 77e^{-0.1t} = 50$. Let $g(t) = 0.2t + 77e^{-0.1t} - 37$. A calculator solver (or Newton–Raphson from $t = 8$) gives $t = 7.757\\ldots$. Confirm with a sign change: $g(7.75) = 0.024 > 0$ and $g(7.85) = -0.30 < 0$, so the root rounds to 7.8. The tea reaches $50^\\circ\\text{C}$ after about **7.8 minutes**.\n\n**(c)** $\\frac{d\\theta}{dt} = 0.2 - 7.7e^{-0.1t} = 0 \\Rightarrow e^{0.1t} = 38.5 \\Rightarrow t = 10\\ln 38.5 \\approx 36.5$ min.\n$$\\theta_{\\min} = 13 + 0.2(36.5) + 77 \\times \\frac{1}{38.5} = 13 + 7.30 + 2 = 22.3^\\circ\\text{C}$$\n(a minimum, since $\\frac{d^2\\theta}{dt^2} = 0.77e^{-0.1t} > 0$).\n\nAs $t$ increases, $77e^{-0.1t} \\to 0$ and $\\theta \\approx 13 + 0.2t = (15 + 0.2t) - 2$: the tea warms up again with the room, but lags about $2^\\circ\\text{C}$ behind it. (The model is only meant for the first hour – the room will not keep heating forever.)",
+  "solution": "**(a)** $\\frac{d\\theta}{dt} + 0.1\\theta = 1.5 + 0.02t$, $I = e^{0.1t}$:\n$$\\frac{d}{dt}\\left(\\theta e^{0.1t}\\right) = (1.5 + 0.02t)e^{0.1t}$$\n\nBy parts, $\\int te^{0.1t}\\,dt = 10te^{0.1t} - 100e^{0.1t}$, so\n$$\\theta e^{0.1t} = 15e^{0.1t} + 0.02\\left(10te^{0.1t} - 100e^{0.1t}\\right) + c = (13 + 0.2t)e^{0.1t} + c$$\n$$\\theta = 13 + 0.2t + ce^{-0.1t}$$\n$t = 0$, $\\theta = 90$: $13 + c = 90 \\Rightarrow c = 77$, giving $\\theta = 13 + 0.2t + 77e^{-0.1t}$ ✓\n\n**(b)** Solve $13 + 0.2t + 77e^{-0.1t} = 50$. Let $g(t) = 0.2t + 77e^{-0.1t} - 37$. A calculator solver (or Newton–Raphson from $t = 8$) gives $t = 7.757\\ldots$. Confirm with a sign change: $g(7.75) = 0.024 > 0$ and $g(7.85) = -0.31 < 0$, so the root rounds to 7.8. The tea reaches $50^\\circ\\text{C}$ after about **7.8 minutes**.\n\n**(c)** $\\frac{d\\theta}{dt} = 0.2 - 7.7e^{-0.1t} = 0 \\Rightarrow e^{0.1t} = 38.5 \\Rightarrow t = 10\\ln 38.5 \\approx 36.5$ min.\n$$\\theta_{\\min} = 13 + 0.2(36.5) + 77 \\times \\frac{1}{38.5} = 13 + 7.30 + 2 = 22.3^\\circ\\text{C}$$\n(a minimum, since $\\frac{d^2\\theta}{dt^2} = 0.77e^{-0.1t} > 0$).\n\nAs $t$ increases, $77e^{-0.1t} \\to 0$ and $\\theta \\approx 13 + 0.2t = (15 + 0.2t) - 2$: the tea warms up again with the room, but lags about $2^\\circ\\text{C}$ behind it. (The model is only meant for the first hour – the room will not keep heating forever.)",
   "linkedTopicIds": [
    "calc-integration-by-parts"
   ]

@@ -1,0 +1,276 @@
+[
+ {
+  "id": "pure-vectors-q01",
+  "topicId": "pure-vectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "For the vector $\\mathbf{v} = 6\\mathbf{i} + 8\\mathbf{j}$, find\n\n(a) the magnitude $|\\mathbf{v}|$,\n\n(b) the angle $\\mathbf{v}$ makes with the positive $x$-axis, to 1 decimal place.",
+  "hint": "Use Pythagoras for the magnitude. Sketch the vector: which quadrant is it in?",
+  "answer": "(a) $10$ (b) $53.1°$",
+  "solution": "**(a)** $|\\mathbf{v}| = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10$\n\n**(b)** Both components are positive, so $\\mathbf{v}$ points into the 1st quadrant.\n$$\\theta = \\tan^{-1}\\left(\\frac{8}{6}\\right) = 53.1° \\text{ (1 d.p.)}$$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q02",
+  "topicId": "pure-vectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "For the vector $\\mathbf{v} = -6\\mathbf{i} + 8\\mathbf{j}$, find\n\n(a) the magnitude $|\\mathbf{v}|$,\n\n(b) the angle $\\mathbf{v}$ makes with the positive $x$-axis, measured anticlockwise, to 1 decimal place.",
+  "hint": "The magnitude does not care about signs. For the angle, sketch the vector first: it points left and up.",
+  "answer": "(a) $10$ (b) $126.9°$",
+  "solution": "**(a)** $|\\mathbf{v}| = \\sqrt{(-6)^2 + 8^2} = \\sqrt{36 + 64} = 10$ (unchanged: squaring removes the sign).\n\n**(b)** The vector points left and up, into the **2nd quadrant**. A calculator gives $\\tan^{-1}\\left(\\frac{8}{-6}\\right) = -53.1°$, which is in the 4th quadrant, so it cannot be right.\n\nThe acute angle with the negative $x$-axis is $\\tan^{-1}\\frac{8}{6} = 53.1°$, so the angle with the positive $x$-axis is\n$$180° - 53.1° = 126.9°$$\n\n**What changed:** only the sign of the $\\mathbf{i}$-component. The magnitude is the same; the vector is reflected in the $y$-axis, so the angle becomes $180° - 53.1°$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q03",
+  "topicId": "pure-vectors",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2",
+   "m3"
+  ],
+  "question": "For the vector $\\mathbf{v} = -6\\mathbf{i} - 8\\mathbf{j}$, find\n\n(a) the magnitude $|\\mathbf{v}|$,\n\n(b) the angle $\\mathbf{v}$ makes with the positive $x$-axis, measured anticlockwise, to 1 decimal place.",
+  "hint": "Both components are now negative. Square each component (including its sign) for the magnitude, and sketch to find the quadrant.",
+  "answer": "(a) $10$ (b) $233.1°$ (equivalently $-126.9°$)",
+  "solution": "**(a)** $|\\mathbf{v}| = \\sqrt{(-6)^2 + (-8)^2} = \\sqrt{36 + 64} = 10$. (Not $\\sqrt{36 - 64}$: $(-8)^2 = +64$.)\n\n**(b)** The vector points left and down, into the **3rd quadrant**. The calculator gives $\\tan^{-1}\\left(\\frac{-8}{-6}\\right) = \\tan^{-1}\\frac{4}{3} = 53.1°$, which is the 1st-quadrant angle, the exact opposite direction.\n\nThe angle below the negative $x$-axis is $53.1°$, so measured anticlockwise from the positive $x$-axis:\n$$180° + 53.1° = 233.1°$$\n(or $-126.9°$ measured clockwise).\n\n**What changed:** now the $\\mathbf{j}$-component is also negative. $-6\\mathbf{i} - 8\\mathbf{j} = -(6\\mathbf{i} + 8\\mathbf{j})$, so it is the vector from Q1 reversed: same magnitude, direction rotated by $180°$ ($53.1° + 180° = 233.1°$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q04",
+  "topicId": "pure-vectors",
+  "difficulty": 1,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m1",
+   "m4"
+  ],
+  "question": "The points $A$ and $B$ have position vectors $\\mathbf{a} = 2\\mathbf{i} - \\mathbf{j} + 4\\mathbf{k}$ and $\\mathbf{b} = 5\\mathbf{i} + 3\\mathbf{j} - 8\\mathbf{k}$.\n\n(a) Find $\\overrightarrow{AB}$.\n\n(b) Find the distance $AB$.\n\n(c) Find a unit vector in the direction of $\\overrightarrow{AB}$.",
+  "hint": "$\\overrightarrow{AB}$ is \"end minus start\". A unit vector is the vector divided by its magnitude.",
+  "answer": "(a) $3\\mathbf{i} + 4\\mathbf{j} - 12\\mathbf{k}$ (b) $13$ (c) $\\frac{1}{13}(3\\mathbf{i} + 4\\mathbf{j} - 12\\mathbf{k})$",
+  "solution": "**(a)** End minus start:\n$$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a} = (5 - 2)\\mathbf{i} + (3 - (-1))\\mathbf{j} + (-8 - 4)\\mathbf{k} = 3\\mathbf{i} + 4\\mathbf{j} - 12\\mathbf{k}$$\n\n**(b)** $AB = \\sqrt{3^2 + 4^2 + (-12)^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13$\n\n**(c)** Divide by the magnitude (not by the sum of components):\n$$\\frac{1}{13}(3\\mathbf{i} + 4\\mathbf{j} - 12\\mathbf{k}) = \\tfrac{3}{13}\\mathbf{i} + \\tfrac{4}{13}\\mathbf{j} - \\tfrac{12}{13}\\mathbf{k}$$\n\nCheck: $\\frac{9 + 16 + 144}{169} = 1$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q05",
+  "topicId": "pure-vectors",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "The vectors $\\mathbf{u}$ and $\\mathbf{v}$ are given in component form as $\\mathbf{u} = \\langle 3, -2\\rangle$ and $\\mathbf{v} = \\langle -1, 5\\rangle$. (This is the US notation for $\\begin{pmatrix} 3 \\\\ -2 \\end{pmatrix}$ and $\\begin{pmatrix} -1 \\\\ 5 \\end{pmatrix}$.)\n\n(a) Find $\\mathbf{w} = 2\\mathbf{u} - 3\\mathbf{v}$ in component form.\n\n(b) Find $|\\mathbf{w}|$, to 3 significant figures.\n\n(c) Find the direction of $\\mathbf{w}$ as an angle measured anticlockwise from the positive $x$-axis, to 1 decimal place.",
+  "hint": "Multiply each component by the scalar, then subtract component by component. Sketch $\\mathbf{w}$ before finding its angle.",
+  "answer": "(a) $\\langle 9, -19\\rangle$ (b) $21.0$ (c) $295.3°$",
+  "solution": "**(a)** $2\\mathbf{u} = \\langle 6, -4\\rangle$, $3\\mathbf{v} = \\langle -3, 15\\rangle$\n$$\\mathbf{w} = \\langle 6 - (-3), -4 - 15\\rangle = \\langle 9, -19\\rangle$$\n\n**(b)** $|\\mathbf{w}| = \\sqrt{9^2 + (-19)^2} = \\sqrt{81 + 361} = \\sqrt{442} = 21.0$ (3 s.f.)\n\n**(c)** $\\mathbf{w}$ points right and down: 4th quadrant. The angle below the positive $x$-axis is $\\tan^{-1}\\frac{19}{9} = 64.7°$.\n\nAnticlockwise from the positive $x$-axis: $360° - 64.7° = 295.3°$ (equivalently $-64.7°$).",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q06",
+  "topicId": "pure-vectors",
+  "difficulty": 2,
+  "type": "fluency",
+  "question": "$\\mathbf{a} = 2\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}$ and $\\mathbf{b} = 3\\mathbf{i} + 4\\mathbf{j}$.\n\n(a) Find the scalar (dot) product $\\mathbf{a} \\cdot \\mathbf{b}$.\n\n(b) Find the angle between $\\mathbf{a}$ and $\\mathbf{b}$, to 1 decimal place.",
+  "hint": "$\\mathbf{a} \\cdot \\mathbf{b} = a_1b_1 + a_2b_2 + a_3b_3$ and $\\cos\\theta = \\dfrac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|}$. $\\mathbf{b}$ has a $\\mathbf{k}$-component of 0.",
+  "answer": "(a) $2$ (b) $82.3°$",
+  "solution": "**(a)** $\\mathbf{a} \\cdot \\mathbf{b} = (2)(3) + (-1)(4) + (2)(0) = 6 - 4 + 0 = 2$\n\n**(b)** $|\\mathbf{a}| = \\sqrt{4 + 1 + 4} = 3$, $|\\mathbf{b}| = \\sqrt{9 + 16 + 0} = 5$\n$$\\cos\\theta = \\frac{\\mathbf{a} \\cdot \\mathbf{b}}{|\\mathbf{a}||\\mathbf{b}|} = \\frac{2}{3 \\times 5} = \\frac{2}{15}$$\n$$\\theta = \\cos^{-1}\\left(\\tfrac{2}{15}\\right) = 82.3° \\text{ (1 d.p.)}$$\n\n(The dot product is small and positive, so the angle is acute but close to $90°$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q07",
+  "topicId": "pure-vectors",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "Ana is asked to find a unit vector in the direction of $\\mathbf{p} = 2\\mathbf{i} - 3\\mathbf{j} + 6\\mathbf{k}$. Her working is shown below.\n\nLine 1: Total of the components $= 2 + (-3) + 6 = 5$\n\nLine 2: Unit vector $= \\frac{1}{5}(2\\mathbf{i} - 3\\mathbf{j} + 6\\mathbf{k}) = 0.4\\mathbf{i} - 0.6\\mathbf{j} + 1.2\\mathbf{k}$\n\n(a) Explain why Ana's answer cannot be a unit vector.\n\n(b) Identify her mistake and find the correct unit vector.",
+  "hint": "Work out the magnitude of Ana's answer. What should a unit vector's magnitude be?",
+  "answer": "(a) Its magnitude is $\\sqrt{0.16 + 0.36 + 1.44} = 1.4 \\ne 1$.\n(b) She divided by the sum of the components instead of the magnitude $|\\mathbf{p}| = 7$: unit vector $= \\frac{1}{7}(2\\mathbf{i} - 3\\mathbf{j} + 6\\mathbf{k})$.",
+  "solution": "**(a)** A unit vector has magnitude 1. Ana's vector has magnitude\n$$\\sqrt{0.4^2 + (-0.6)^2 + 1.2^2} = \\sqrt{0.16 + 0.36 + 1.44} = \\sqrt{1.96} = 1.4$$\nso it is not a unit vector. (Its $\\mathbf{k}$-component alone is bigger than 1.)\n\n**(b)** The error is in **Line 1**: she divided by the sum of the components. You must divide by the **magnitude**:\n$$|\\mathbf{p}| = \\sqrt{2^2 + (-3)^2 + 6^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = 7$$\n\nUnit vector:\n$$\\hat{\\mathbf{p}} = \\frac{1}{7}(2\\mathbf{i} - 3\\mathbf{j} + 6\\mathbf{k}) = \\tfrac{2}{7}\\mathbf{i} - \\tfrac{3}{7}\\mathbf{j} + \\tfrac{6}{7}\\mathbf{k}$$\n\nCheck: $\\frac{4 + 9 + 36}{49} = 1$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q08",
+  "topicId": "pure-vectors",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "The points $A$ and $B$ have coordinates $(1, 4, -2)$ and $(3, -1, 5)$. The point $C$ is such that $\\overrightarrow{AC} = 3\\overrightarrow{AB}$.\n\nTom's working to find the coordinates of $C$ is shown below.\n\nLine 1: $\\overrightarrow{AB} = \\mathbf{a} - \\mathbf{b} = -2\\mathbf{i} + 5\\mathbf{j} - 7\\mathbf{k}$\n\nLine 2: $\\overrightarrow{AC} = 3\\overrightarrow{AB} = -6\\mathbf{i} + 15\\mathbf{j} - 21\\mathbf{k}$\n\nLine 3: $\\mathbf{c} = \\mathbf{a} + \\overrightarrow{AC} = -5\\mathbf{i} + 19\\mathbf{j} - 23\\mathbf{k}$, so $C$ is $(-5, 19, -23)$.\n\n(a) Identify Tom's error and explain it.\n\n(b) Find the correct coordinates of $C$.",
+  "hint": "To go from $A$ to $B$ you can go from $A$ back to the origin, then out to $B$. Which way round is the subtraction?",
+  "answer": "(a) Line 1: $\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a}$, not $\\mathbf{a} - \\mathbf{b}$ (he found $\\overrightarrow{BA}$). (b) $C(7, -11, 19)$",
+  "solution": "**(a)** The error is in **Line 1**. Going from $A$ to $B$ via the origin: $\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB} = -\\mathbf{a} + \\mathbf{b} = \\mathbf{b} - \\mathbf{a}$ (\"end minus start\"). Tom calculated $\\mathbf{a} - \\mathbf{b}$, which is $\\overrightarrow{BA}$, the vector pointing the opposite way. So his $C$ lies on the wrong side of $A$.\n\n**(b)**\n$$\\overrightarrow{AB} = \\mathbf{b} - \\mathbf{a} = (3 - 1)\\mathbf{i} + (-1 - 4)\\mathbf{j} + (5 - (-2))\\mathbf{k} = 2\\mathbf{i} - 5\\mathbf{j} + 7\\mathbf{k}$$\n$$\\overrightarrow{AC} = 3\\overrightarrow{AB} = 6\\mathbf{i} - 15\\mathbf{j} + 21\\mathbf{k}$$\n$$\\mathbf{c} = \\mathbf{a} + \\overrightarrow{AC} = (1 + 6)\\mathbf{i} + (4 - 15)\\mathbf{j} + (-2 + 21)\\mathbf{k} = 7\\mathbf{i} - 11\\mathbf{j} + 19\\mathbf{k}$$\n\n$C$ is $(7, -11, 19)$.\n\nCheck: $B$ should be one third of the way from $A$ to $C$: $\\mathbf{a} + \\frac{1}{3}(6\\mathbf{i} - 15\\mathbf{j} + 21\\mathbf{k}) = 3\\mathbf{i} - \\mathbf{j} + 5\\mathbf{k}$ ✓",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q09",
+  "topicId": "pure-vectors",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The points $A$, $B$ and $C$ have coordinates $(1, 2, 3)$, $(3, 5, 4)$ and $(7, 11, 6)$.\n\n(a) Prove that $A$, $B$ and $C$ are collinear, and find the ratio $AB : BC$.\n\n(b) Zara says: \"The point $D(5, 8, 6)$ also lies on the line through $A$ and $B$, because its coordinates are between those of $B$ and $C$.\" Is Zara correct? Justify your answer.",
+  "hint": "Compare $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$: is one a multiple of the other? For (b), is $\\overrightarrow{AD}$ a multiple of $\\overrightarrow{AB}$?",
+  "answer": "(a) $\\overrightarrow{BC} = 2\\overrightarrow{AB}$ and $B$ is common, so collinear; $AB : BC = 1 : 2$.\n(b) No: $\\overrightarrow{AD} = 4\\mathbf{i} + 6\\mathbf{j} + 3\\mathbf{k}$ is not a multiple of $2\\mathbf{i} + 3\\mathbf{j} + \\mathbf{k}$.",
+  "solution": "**(a)**\n$$\\overrightarrow{AB} = (3 - 1)\\mathbf{i} + (5 - 2)\\mathbf{j} + (4 - 3)\\mathbf{k} = 2\\mathbf{i} + 3\\mathbf{j} + \\mathbf{k}$$\n$$\\overrightarrow{BC} = (7 - 3)\\mathbf{i} + (11 - 5)\\mathbf{j} + (6 - 4)\\mathbf{k} = 4\\mathbf{i} + 6\\mathbf{j} + 2\\mathbf{k} = 2\\overrightarrow{AB}$$\n\nSo $\\overrightarrow{AB}$ and $\\overrightarrow{BC}$ are parallel. Being parallel alone is not enough (they could be parallel but separate lines), but they also share the point $B$, so $A$, $B$, $C$ lie on one straight line. $\\blacksquare$\n\nSince $\\overrightarrow{BC} = 2\\overrightarrow{AB}$, $AB : BC = 1 : 2$.\n\n**(b)** $\\overrightarrow{AD} = (5 - 1)\\mathbf{i} + (8 - 2)\\mathbf{j} + (6 - 3)\\mathbf{k} = 4\\mathbf{i} + 6\\mathbf{j} + 3\\mathbf{k}$.\n\nFor $D$ to be on line $AB$ we need $\\overrightarrow{AD} = \\lambda(2\\mathbf{i} + 3\\mathbf{j} + \\mathbf{k})$. The $\\mathbf{i}$-components give $\\lambda = 2$, but then the $\\mathbf{k}$-component would be $2$, not $3$. No single $\\lambda$ works, so $D$ is **not** on the line and Zara is wrong.\n\nHaving each coordinate between those of $B$ and $C$ only places $D$ in the box with opposite corners $B$ and $C$, not on the segment. (The point on the line with $x = 5$ is $(5, 8, 5)$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q10",
+  "topicId": "pure-vectors",
+  "difficulty": 3,
+  "type": "reasoning",
+  "question": "The points $P$, $Q$ and $R$ have coordinates $(4, 0, 2)$, $(2, 1, 0)$ and $(3, 3, 0)$.\n\n(a) Explain why, for non-zero vectors $\\mathbf{u}$ and $\\mathbf{v}$, $\\mathbf{u} \\cdot \\mathbf{v} = 0$ means $\\mathbf{u}$ and $\\mathbf{v}$ are perpendicular.\n\n(b) Show that triangle $PQR$ has a right angle at $Q$.\n\n(c) Kai says the triangle is also isosceles. Is Kai correct? Justify your answer, and find the exact area of the triangle.",
+  "hint": "Use $\\mathbf{u} \\cdot \\mathbf{v} = |\\mathbf{u}||\\mathbf{v}|\\cos\\theta$. For (b) use the vectors $\\overrightarrow{QP}$ and $\\overrightarrow{QR}$, both starting at $Q$.",
+  "answer": "(a) $|\\mathbf{u}||\\mathbf{v}| \\ne 0$, so $\\cos\\theta = 0$ and $\\theta = 90°$.\n(b) $\\overrightarrow{QP} \\cdot \\overrightarrow{QR} = 0$.\n(c) No: $QP = 3$, $QR = \\sqrt{5}$, $PR = \\sqrt{14}$ are all different. Area $= \\frac{3\\sqrt{5}}{2}$.",
+  "solution": "**(a)** $\\mathbf{u} \\cdot \\mathbf{v} = |\\mathbf{u}||\\mathbf{v}|\\cos\\theta$ where $\\theta$ is the angle between them ($0° \\le \\theta \\le 180°$). The vectors are non-zero, so $|\\mathbf{u}||\\mathbf{v}| \\ne 0$. Hence $\\mathbf{u} \\cdot \\mathbf{v} = 0$ forces $\\cos\\theta = 0$, so $\\theta = 90°$.\n\n**(b)** Use vectors leaving $Q$ (end minus start):\n$$\\overrightarrow{QP} = 2\\mathbf{i} - \\mathbf{j} + 2\\mathbf{k}, \\quad \\overrightarrow{QR} = \\mathbf{i} + 2\\mathbf{j} + 0\\mathbf{k}$$\n$$\\overrightarrow{QP} \\cdot \\overrightarrow{QR} = (2)(1) + (-1)(2) + (2)(0) = 0$$\nSo $\\angle PQR = 90°$. $\\blacksquare$\n\n**(c)** $QP = \\sqrt{4 + 1 + 4} = 3$, $QR = \\sqrt{1 + 4 + 0} = \\sqrt{5}$, $\\overrightarrow{PR} = -\\mathbf{i} + 3\\mathbf{j} - 2\\mathbf{k}$ so $PR = \\sqrt{1 + 9 + 4} = \\sqrt{14}$.\n\nAll three sides are different, so the triangle is **not** isosceles: Kai is wrong. (Consistency check: $3^2 + (\\sqrt{5})^2 = 14 = (\\sqrt{14})^2$ ✓, Pythagoras.)\n\nArea $= \\frac{1}{2} \\times QP \\times QR = \\frac{1}{2} \\times 3 \\times \\sqrt{5} = \\frac{3\\sqrt{5}}{2}$",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q11",
+  "topicId": "pure-vectors",
+  "difficulty": 3,
+  "type": "exam-style",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 350 265\" width=\"350\" height=\"265\"><line x1=\"30\" y1=\"240\" x2=\"320\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"240\" x2=\"130\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"320\" y1=\"240\" x2=\"130\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"30\" y1=\"240\" x2=\"256.67\" y2=\"173.33\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"320\" y1=\"240\" x2=\"80\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.2\"/><path d=\"M189.5,240 L182.5,243.5 L182.5,236.5 Z\" fill=\"currentColor\"/><path d=\"M60,180 L60,187.83 L53.74,184.7 Z\" fill=\"currentColor\"/><circle cx=\"80\" cy=\"140\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"256.67\" cy=\"173.33\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"200\" cy=\"190\" r=\"2.6\" fill=\"currentColor\"/><text x=\"26\" y=\"258\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text><text x=\"324\" y=\"258\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"130\" y=\"32\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><text x=\"66\" y=\"142\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">M</text><text x=\"270.67\" y=\"175.33\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">P</text><text x=\"198\" y=\"212\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">X</text><text x=\"181\" y=\"260\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">a</text><text x=\"46\" y=\"186\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\" font-weight=\"bold\">b</text></svg>",
+  "calculator": false,
+  "question": "The diagram shows triangle $OAB$, with $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OB} = \\mathbf{b}$.\n\n$M$ is the midpoint of $OB$. The point $P$ lies on $AB$ such that $AP : PB = 1 : 2$. The lines $OP$ and $AM$ intersect at the point $X$.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find, in terms of $\\mathbf{a}$ and $\\mathbf{b}$, simplifying your answers, (i) $\\overrightarrow{AB}$ (ii) $\\overrightarrow{OP}$ (iii) $\\overrightarrow{AM}$",
+    "marks": 3
+   },
+   {
+    "label": "b",
+    "prompt": "Given that $\\overrightarrow{OX} = \\lambda\\overrightarrow{OP}$ and $\\overrightarrow{AX} = \\mu\\overrightarrow{AM}$, where $\\lambda$ and $\\mu$ are scalars, find the values of $\\lambda$ and $\\mu$.",
+    "marks": 5
+   },
+   {
+    "label": "c",
+    "prompt": "Hence find the ratio $OX : XP$.",
+    "marks": 1
+   }
+  ],
+  "marks": 9,
+  "hint": "Write $\\overrightarrow{OX}$ in two ways: as $\\lambda\\overrightarrow{OP}$, and as $\\overrightarrow{OA} + \\mu\\overrightarrow{AM}$. Since $\\mathbf{a}$ and $\\mathbf{b}$ are not parallel, you can equate coefficients.",
+  "answer": "(a)(i) $\\mathbf{b} - \\mathbf{a}$ (ii) $\\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$ (iii) $\\frac{1}{2}\\mathbf{b} - \\mathbf{a}$\n(b) $\\lambda = \\frac{3}{4}$, $\\mu = \\frac{1}{2}$\n(c) $3 : 1$",
+  "solution": "**(a)(i)** $\\overrightarrow{AB} = \\overrightarrow{AO} + \\overrightarrow{OB} = \\mathbf{b} - \\mathbf{a}$ **B1**\n\n**(ii)** $\\overrightarrow{OP} = \\mathbf{a} + \\frac{1}{3}(\\mathbf{b} - \\mathbf{a}) = \\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}$ **B1**\n\n**(iii)** $\\overrightarrow{AM} = -\\mathbf{a} + \\frac{1}{2}\\mathbf{b}$ **B1**\n\n**(b)** Route 1: $\\overrightarrow{OX} = \\lambda\\left(\\frac{2}{3}\\mathbf{a} + \\frac{1}{3}\\mathbf{b}\\right) = \\frac{2\\lambda}{3}\\mathbf{a} + \\frac{\\lambda}{3}\\mathbf{b}$ **M1**\n\nRoute 2: $\\overrightarrow{OX} = \\overrightarrow{OA} + \\overrightarrow{AX} = \\mathbf{a} + \\mu\\left(\\frac{1}{2}\\mathbf{b} - \\mathbf{a}\\right) = (1 - \\mu)\\mathbf{a} + \\frac{\\mu}{2}\\mathbf{b}$ **M1**\n\n$\\mathbf{a}$ and $\\mathbf{b}$ are non-parallel, so equate coefficients: **M1**\n$$\\mathbf{a}: \\ \\frac{2\\lambda}{3} = 1 - \\mu \\qquad \\mathbf{b}: \\ \\frac{\\lambda}{3} = \\frac{\\mu}{2}$$\n\nFrom the second, $\\mu = \\frac{2\\lambda}{3}$. Substitute: $\\frac{2\\lambda}{3} = 1 - \\frac{2\\lambda}{3} \\Rightarrow \\frac{4\\lambda}{3} = 1$ **dM1**\n\n$\\lambda = \\frac{3}{4}$, $\\mu = \\frac{1}{2}$ **A1**\n\n**(c)** $\\overrightarrow{OX} = \\frac{3}{4}\\overrightarrow{OP}$, so $OX : XP = \\frac{3}{4} : \\frac{1}{4} = 3 : 1$ **B1 ft**\n\n(Also $\\mu = \\frac{1}{2}$ shows $X$ is the midpoint of $AM$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q12",
+  "topicId": "pure-vectors",
+  "difficulty": 4,
+  "type": "exam-style",
+  "calculator": true,
+  "question": "The points $A$, $B$ and $C$ have coordinates $(2, 1, -1)$, $(4, -1, 0)$ and $(1, 3, 3)$ respectively.",
+  "parts": [
+   {
+    "label": "a",
+    "prompt": "Find the vectors $\\overrightarrow{BA}$ and $\\overrightarrow{BC}$.",
+    "marks": 2
+   },
+   {
+    "label": "b",
+    "prompt": "Show that $\\cos\\angle ABC = \\dfrac{11}{3\\sqrt{34}}$.",
+    "marks": 3
+   },
+   {
+    "label": "c",
+    "prompt": "Hence show that the area of triangle $ABC$ is $\\dfrac{\\sqrt{185}}{2}$.",
+    "marks": 3
+   },
+   {
+    "label": "d",
+    "prompt": "Find the coordinates of the point $D$ such that $ABCD$ is a parallelogram.",
+    "marks": 2
+   }
+  ],
+  "marks": 10,
+  "hint": "Use vectors that both start at $B$ for the angle at $B$. For the area, use $\\frac{1}{2}ac\\sin B$ with $\\sin^2 B = 1 - \\cos^2 B$.",
+  "answer": "(a) $\\overrightarrow{BA} = -2\\mathbf{i} + 2\\mathbf{j} - \\mathbf{k}$, $\\overrightarrow{BC} = -3\\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}$\n(b) Shown (c) Shown (d) $D(-1, 5, 2)$",
+  "solution": "**(a)** $\\overrightarrow{BA} = \\mathbf{a} - \\mathbf{b} = -2\\mathbf{i} + 2\\mathbf{j} - \\mathbf{k}$ **B1**\n\n$\\overrightarrow{BC} = \\mathbf{c} - \\mathbf{b} = -3\\mathbf{i} + 4\\mathbf{j} + 3\\mathbf{k}$ **B1**\n\n**(b)** $\\overrightarrow{BA} \\cdot \\overrightarrow{BC} = 6 + 8 - 3 = 11$ **M1**\n\n$|\\overrightarrow{BA}| = \\sqrt{4 + 4 + 1} = 3$, $|\\overrightarrow{BC}| = \\sqrt{9 + 16 + 9} = \\sqrt{34}$ **M1**\n\n$$\\cos\\angle ABC = \\frac{11}{3\\sqrt{34}} \\quad \\textbf{A1 (cso)}$$\n\n**(c)** $\\sin^2\\angle ABC = 1 - \\dfrac{121}{9 \\times 34} = 1 - \\dfrac{121}{306} = \\dfrac{185}{306}$ **M1**\n\nArea $= \\frac{1}{2} \\times 3 \\times \\sqrt{34} \\times \\sqrt{\\dfrac{185}{306}}$ **M1**\n\nSince $\\frac{34}{306} = \\frac{1}{9}$: Area $= \\frac{1}{2} \\times 3 \\times \\sqrt{\\dfrac{185}{9}} = \\frac{1}{2} \\times 3 \\times \\frac{\\sqrt{185}}{3} = \\dfrac{\\sqrt{185}}{2}$ **A1 (cso)**\n\n**(d)** In parallelogram $ABCD$, $\\overrightarrow{AD} = \\overrightarrow{BC}$ **M1**\n\n$\\mathbf{d} = \\mathbf{a} + \\overrightarrow{BC} = (2 - 3)\\mathbf{i} + (1 + 4)\\mathbf{j} + (-1 + 3)\\mathbf{k}$, so $D(-1, 5, 2)$ **A1**\n\n(Check: $\\overrightarrow{DC} = 2\\mathbf{i} - 2\\mathbf{j} + \\mathbf{k} = \\overrightarrow{AB}$ ✓)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q13",
+  "topicId": "pure-vectors",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "A harbour is at the origin $O$. The unit vectors $\\mathbf{i}$ and $\\mathbf{j}$ point due east and due north, and distances are in kilometres. A ship's position $t$ hours after noon is\n$$\\mathbf{r} = (2\\mathbf{i} + 5\\mathbf{j}) + t(3\\mathbf{i} - 4\\mathbf{j})$$\n\n(a) Find the speed of the ship.\n\n(b) Find the distance of the ship from the harbour at 2 pm, to 3 significant figures.\n\n(c) Find the time at which the ship is due east of the harbour.\n\n(d) Find the bearing on which the ship is travelling, to the nearest degree.",
+  "hint": "The velocity is the vector multiplied by $t$. \"Due east of the harbour\" means the $\\mathbf{j}$-component of the position is zero. Bearings are measured clockwise from north: sketch the velocity vector.",
+  "answer": "(a) $5$ km/h (b) $8.54$ km (c) 1:15 pm (d) $143°$",
+  "solution": "**(a)** The velocity is $3\\mathbf{i} - 4\\mathbf{j}$ km/h, so the speed is $\\sqrt{3^2 + (-4)^2} = 5$ km/h.\n\n**(b)** At 2 pm, $t = 2$: $\\mathbf{r} = (2 + 6)\\mathbf{i} + (5 - 8)\\mathbf{j} = 8\\mathbf{i} - 3\\mathbf{j}$.\nDistance $= \\sqrt{8^2 + (-3)^2} = \\sqrt{73} = 8.54$ km (3 s.f.)\n\n**(c)** Due east means the $\\mathbf{j}$-component is 0 (and the $\\mathbf{i}$-component positive):\n$$5 - 4t = 0 \\Rightarrow t = 1.25 \\text{ hours}$$\nThen $\\mathbf{r} = 5.75\\mathbf{i}$, which is east ✓. The time is **1:15 pm**.\n\n**(d)** The velocity $3\\mathbf{i} - 4\\mathbf{j}$ points east and south (south-east quadrant). The angle east of due south is $\\tan^{-1}\\frac{3}{4} = 36.9°$.\n\nBearing $= 180° - 36.9° = 143.1° \\approx 143°$.\n\n(A calculator's $\\tan^{-1}\\left(\\frac{-4}{3}\\right) = -53.1°$ is an angle from the east direction, not a bearing. Always sketch.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q14",
+  "topicId": "pure-vectors",
+  "difficulty": 4,
+  "type": "real-world",
+  "question": "The work done by a constant force $\\mathbf{F}$ moving an object through a displacement $\\mathbf{d}$ is $W = \\mathbf{F} \\cdot \\mathbf{d}$. With force in newtons and displacement in metres, $W$ is in joules (J).\n\n(a) A child pulls a sledge 25 m along level ground using a rope. The tension in the rope is 60 N and the rope makes an angle of $35°$ with the horizontal. Find the work done by the tension, to 3 significant figures.\n\n(b) A force $\\mathbf{F} = (8\\mathbf{i} + 5\\mathbf{j} - 2\\mathbf{k})$ N moves a small object in a straight line from $A(1, 2, 0)$ to $B(6, -1, 4)$, where distances are in metres. Find the work done by $\\mathbf{F}$.\n\n(c) Explain why the normal reaction from the ground does no work on the sledge in part (a).",
+  "hint": "In (a), $\\mathbf{F} \\cdot \\mathbf{d} = |\\mathbf{F}||\\mathbf{d}|\\cos\\theta$. In (b), the displacement is $\\overrightarrow{AB}$, not the position vector of $B$.",
+  "answer": "(a) $1230$ J (b) $17$ J (c) The reaction is perpendicular to the displacement, so $\\mathbf{R} \\cdot \\mathbf{d} = |\\mathbf{R}||\\mathbf{d}|\\cos 90° = 0$.",
+  "solution": "**(a)** $W = |\\mathbf{F}||\\mathbf{d}|\\cos\\theta = 60 \\times 25 \\times \\cos 35° = 1228.7\\ldots$\n\n$W = 1230$ J (3 s.f.)\n\n**(b)** Displacement (end minus start):\n$$\\mathbf{d} = \\overrightarrow{AB} = (6 - 1)\\mathbf{i} + (-1 - 2)\\mathbf{j} + (4 - 0)\\mathbf{k} = 5\\mathbf{i} - 3\\mathbf{j} + 4\\mathbf{k}$$\n$$W = \\mathbf{F} \\cdot \\mathbf{d} = (8)(5) + (5)(-3) + (-2)(4) = 40 - 15 - 8 = 17 \\text{ J}$$\n\n(Using the position vector of $B$ instead would give $48 - 5 - 8 = 35$ J, which is wrong.)\n\n**(c)** The normal reaction acts vertically and the sledge moves horizontally, so the angle between them is $90°$. Then $\\mathbf{R} \\cdot \\mathbf{d} = |\\mathbf{R}||\\mathbf{d}|\\cos 90° = 0$: a force perpendicular to the motion does no work.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q15",
+  "topicId": "pure-vectors",
+  "difficulty": 4,
+  "type": "problem-solving",
+  "question": "A straight cable is fixed at the origin $O$ and runs in the direction of $\\mathbf{d} = 2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}$. A sensor is at the point $P$ with position vector $\\mathbf{p} = 5\\mathbf{i} + \\mathbf{j} + 3\\mathbf{k}$. Distances are in metres.\n\nThe sensor is to be joined to the cable by the shortest possible wire.\n\n(a) Find the scalar projection of $\\mathbf{p}$ onto $\\mathbf{d}$ and the vector projection of $\\mathbf{p}$ onto $\\mathbf{d}$.\n\n(b) Hence find the position vector of the point $F$ on the cable where the wire should be attached, and verify that $\\overrightarrow{FP}$ is perpendicular to the cable.\n\n(c) Find the length of the wire, giving your answer in exact form and to 3 significant figures.",
+  "hint": "The scalar projection of $\\mathbf{p}$ onto $\\mathbf{d}$ is $\\dfrac{\\mathbf{p} \\cdot \\mathbf{d}}{|\\mathbf{d}|}$. The shortest wire is perpendicular to the cable, so it meets the cable at the foot of the perpendicular from $P$.",
+  "answer": "(a) $\\frac{5}{3}$; $\\frac{5}{9}(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$\n(b) $\\overrightarrow{OF} = \\frac{10}{9}\\mathbf{i} + \\frac{5}{9}\\mathbf{j} - \\frac{10}{9}\\mathbf{k}$; $\\overrightarrow{FP} \\cdot \\mathbf{d} = 0$\n(c) $\\frac{\\sqrt{290}}{3} \\approx 5.68$ m",
+  "solution": "**(a)** $\\mathbf{p} \\cdot \\mathbf{d} = 10 + 1 - 6 = 5$ and $|\\mathbf{d}| = \\sqrt{4 + 1 + 4} = 3$.\n\nScalar projection $= \\dfrac{\\mathbf{p} \\cdot \\mathbf{d}}{|\\mathbf{d}|} = \\dfrac{5}{3}$\n\nVector projection $= \\dfrac{5}{3} \\times \\hat{\\mathbf{d}} = \\dfrac{5}{3} \\times \\dfrac{\\mathbf{d}}{3} = \\dfrac{5}{9}(2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k})$\n\n**(b)** The shortest wire is perpendicular to the cable, so $F$ is the foot of the perpendicular from $P$, which is exactly the vector projection:\n$$\\overrightarrow{OF} = \\tfrac{10}{9}\\mathbf{i} + \\tfrac{5}{9}\\mathbf{j} - \\tfrac{10}{9}\\mathbf{k}$$\n\n$\\overrightarrow{FP} = \\mathbf{p} - \\overrightarrow{OF} = \\frac{35}{9}\\mathbf{i} + \\frac{4}{9}\\mathbf{j} + \\frac{37}{9}\\mathbf{k}$\n\n$\\overrightarrow{FP} \\cdot \\mathbf{d} = \\frac{70}{9} + \\frac{4}{9} - \\frac{74}{9} = 0$ ✓, so $FP$ is perpendicular to the cable.\n\n**(c)** Either directly, $|\\overrightarrow{FP}| = \\frac{1}{9}\\sqrt{35^2 + 4^2 + 37^2} = \\frac{\\sqrt{2610}}{9}$, or by Pythagoras in triangle $OFP$:\n$$FP^2 = |\\mathbf{p}|^2 - OF^2 = 35 - \\left(\\tfrac{5}{3}\\right)^2 = 35 - \\tfrac{25}{9} = \\tfrac{290}{9}$$\n$$FP = \\frac{\\sqrt{290}}{3} = 5.68 \\text{ m (3 s.f.)}$$\n(The two forms agree: $\\frac{\\sqrt{2610}}{9} = \\frac{3\\sqrt{290}}{9}$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "pure-vectors-q16",
+  "topicId": "pure-vectors",
+  "difficulty": 4,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "geo-circle-theorems"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><circle cx=\"180\" cy=\"145\" r=\"105\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"75\" y1=\"145\" x2=\"285\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"1.2\"/><line x1=\"229.29\" y1=\"52.29\" x2=\"75\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"229.29\" y1=\"52.29\" x2=\"285\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"145\" x2=\"229.29\" y2=\"52.29\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-dasharray=\"4 3\"/><circle cx=\"180\" cy=\"145\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"75\" cy=\"145\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"285\" cy=\"145\" r=\"2.6\" fill=\"currentColor\"/><circle cx=\"229.29\" cy=\"52.29\" r=\"2.6\" fill=\"currentColor\"/><text x=\"65\" y=\"150\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">A</text><text x=\"295\" y=\"150\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">B</text><text x=\"233.29\" y=\"43.29\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">P</text><text x=\"180\" y=\"165\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\" fill=\"currentColor\">O</text></svg>",
+  "question": "The diagram shows a circle with centre $O$. $AB$ is a diameter and $P$ is any other point on the circle.\n\nLet $\\overrightarrow{OA} = \\mathbf{a}$ and $\\overrightarrow{OP} = \\mathbf{p}$.\n\n(a) Write $\\overrightarrow{OB}$, $\\overrightarrow{PA}$ and $\\overrightarrow{PB}$ in terms of $\\mathbf{a}$ and $\\mathbf{p}$.\n\n(b) Use the scalar product to prove the circle theorem that the angle in a semicircle is a right angle.",
+  "hint": "$B$ is diametrically opposite $A$. What do you know about $|\\mathbf{a}|$ and $|\\mathbf{p}|$? Remember $\\mathbf{x} \\cdot \\mathbf{x} = |\\mathbf{x}|^2$.",
+  "answer": "(a) $\\overrightarrow{OB} = -\\mathbf{a}$, $\\overrightarrow{PA} = \\mathbf{a} - \\mathbf{p}$, $\\overrightarrow{PB} = -\\mathbf{a} - \\mathbf{p}$\n(b) $\\overrightarrow{PA} \\cdot \\overrightarrow{PB} = |\\mathbf{p}|^2 - |\\mathbf{a}|^2 = 0$ since both are radii, so $\\angle APB = 90°$.",
+  "solution": "**(a)** $O$ is the midpoint of $AB$, so $\\overrightarrow{OB} = -\\mathbf{a}$.\n\nEnd minus start:\n$$\\overrightarrow{PA} = \\mathbf{a} - \\mathbf{p}, \\qquad \\overrightarrow{PB} = -\\mathbf{a} - \\mathbf{p}$$\n\n**(b)**\n$$\\overrightarrow{PA} \\cdot \\overrightarrow{PB} = (\\mathbf{a} - \\mathbf{p}) \\cdot (-\\mathbf{a} - \\mathbf{p}) = -(\\mathbf{a} - \\mathbf{p}) \\cdot (\\mathbf{a} + \\mathbf{p})$$\nExpanding (the dot product distributes and $\\mathbf{a} \\cdot \\mathbf{p} = \\mathbf{p} \\cdot \\mathbf{a}$):\n$$= -(\\mathbf{a} \\cdot \\mathbf{a} + \\mathbf{a} \\cdot \\mathbf{p} - \\mathbf{p} \\cdot \\mathbf{a} - \\mathbf{p} \\cdot \\mathbf{p}) = -(|\\mathbf{a}|^2 - |\\mathbf{p}|^2) = |\\mathbf{p}|^2 - |\\mathbf{a}|^2$$\n\n$OA$ and $OP$ are both radii, so $|\\mathbf{a}| = |\\mathbf{p}| = r$, hence\n$$\\overrightarrow{PA} \\cdot \\overrightarrow{PB} = r^2 - r^2 = 0$$\n\n$P$ is different from $A$ and $B$, so $\\overrightarrow{PA}$ and $\\overrightarrow{PB}$ are non-zero, and a zero scalar product means they are perpendicular: $\\angle APB = 90°$. Since $P$ was any point on the circle, the angle in a semicircle is always a right angle. $\\blacksquare$"
+ },
+ {
+  "id": "pure-vectors-q17",
+  "topicId": "pure-vectors",
+  "difficulty": 5,
+  "type": "synoptic",
+  "linkedTopicIds": [
+   "alg-completing-the-square",
+   "alg-quadratic-equations-factorising"
+  ],
+  "question": "$\\mathbf{a} = 2\\mathbf{i} + \\mathbf{j} - 2\\mathbf{k}$ and $\\mathbf{b} = \\mathbf{i} - \\mathbf{j} + \\mathbf{k}$, and $t$ is a real number.\n\n(a) Show that $|\\mathbf{a} + t\\mathbf{b}|^2 = 3t^2 - 2t + 9$.\n\n(b) Find the values of $t$ for which $|\\mathbf{a} + t\\mathbf{b}| = 5$.\n\n(c) Find the minimum value of $|\\mathbf{a} + t\\mathbf{b}|$ as $t$ varies, in exact form, and the value of $t$ at which it occurs.\n\n(d) Show that, for this value of $t$, the vector $\\mathbf{a} + t\\mathbf{b}$ is perpendicular to $\\mathbf{b}$, and explain geometrically why this should be so.",
+  "hint": "Write $\\mathbf{a} + t\\mathbf{b}$ in components first. For (c), complete the square on the quadratic in $t$.",
+  "answer": "(a) Shown (b) $t = \\frac{8}{3}$ or $t = -2$ (c) minimum $\\sqrt{\\frac{26}{3}}$ at $t = \\frac{1}{3}$ (d) $(\\mathbf{a} + \\frac{1}{3}\\mathbf{b}) \\cdot \\mathbf{b} = 0$; the shortest vector from the origin to the line $\\mathbf{a} + t\\mathbf{b}$ is perpendicular to it.",
+  "solution": "**(a)** $\\mathbf{a} + t\\mathbf{b} = (2 + t)\\mathbf{i} + (1 - t)\\mathbf{j} + (t - 2)\\mathbf{k}$\n$$|\\mathbf{a} + t\\mathbf{b}|^2 = (2 + t)^2 + (1 - t)^2 + (t - 2)^2$$\n$$= (4 + 4t + t^2) + (1 - 2t + t^2) + (t^2 - 4t + 4) = 3t^2 - 2t + 9 \\ \\blacksquare$$\n\n**(b)** $3t^2 - 2t + 9 = 25 \\Rightarrow 3t^2 - 2t - 16 = 0 \\Rightarrow (3t - 8)(t + 2) = 0$\n\n$t = \\frac{8}{3}$ or $t = -2$.\n\nCheck $t = -2$: $\\mathbf{a} - 2\\mathbf{b} = 3\\mathbf{j} - 4\\mathbf{k}$, magnitude 5 ✓\n\n**(c)** Complete the square:\n$$3t^2 - 2t + 9 = 3\\left(t - \\tfrac{1}{3}\\right)^2 - \\tfrac{1}{3} + 9 = 3\\left(t - \\tfrac{1}{3}\\right)^2 + \\tfrac{26}{3}$$\nThe minimum of $|\\mathbf{a} + t\\mathbf{b}|^2$ is $\\frac{26}{3}$ when $t = \\frac{1}{3}$, so the minimum of $|\\mathbf{a} + t\\mathbf{b}|$ is $\\sqrt{\\frac{26}{3}}$ ($\\approx 2.94$).\n\n**(d)** At $t = \\frac{1}{3}$: $\\mathbf{a} + \\frac{1}{3}\\mathbf{b} = \\frac{7}{3}\\mathbf{i} + \\frac{2}{3}\\mathbf{j} - \\frac{5}{3}\\mathbf{k}$\n$$\\left(\\mathbf{a} + \\tfrac{1}{3}\\mathbf{b}\\right) \\cdot \\mathbf{b} = \\tfrac{7}{3} - \\tfrac{2}{3} - \\tfrac{5}{3} = 0 \\ ✓$$\n\nGeometrically, $\\mathbf{a} + t\\mathbf{b}$ is the position vector of a point moving along a straight line through the point with position vector $\\mathbf{a}$, in direction $\\mathbf{b}$. The point of the line closest to the origin is where the line from $O$ meets it at right angles, so at the minimum, $\\mathbf{a} + t\\mathbf{b}$ is perpendicular to the direction $\\mathbf{b}$."
+ },
+ {
+  "id": "pure-vectors-q18",
+  "topicId": "pure-vectors",
+  "difficulty": 5,
+  "type": "problem-solving",
+  "question": "The points $A$ and $B$ have coordinates $(1, 2, 3)$ and $(5, -2, 1)$.\n\n(a) Find the exact coordinates of the points $C$ on the $x$-axis for which $\\angle ACB = 90°$.\n\n(b) Find the set of values of $x$ for which the point $(x, 0, 0)$ makes $\\angle ACB$ obtuse.\n\n(c) Show that there is no point $C$ on the $y$-axis for which $\\angle ACB = 90°$.",
+  "hint": "Let $C$ be $(x, 0, 0)$. The angle at $C$ is between $\\overrightarrow{CA}$ and $\\overrightarrow{CB}$. What does the sign of their scalar product tell you about the angle?",
+  "answer": "(a) $(3 + \\sqrt{5}, 0, 0)$ and $(3 - \\sqrt{5}, 0, 0)$\n(b) $3 - \\sqrt{5} < x < 3 + \\sqrt{5}$\n(c) $\\overrightarrow{CA} \\cdot \\overrightarrow{CB} = y^2 + 4 > 0$ for all $y$.",
+  "solution": "**(a)** Let $C = (x, 0, 0)$. Then\n$$\\overrightarrow{CA} = (1 - x)\\mathbf{i} + 2\\mathbf{j} + 3\\mathbf{k}, \\qquad \\overrightarrow{CB} = (5 - x)\\mathbf{i} - 2\\mathbf{j} + \\mathbf{k}$$\n$$\\overrightarrow{CA} \\cdot \\overrightarrow{CB} = (1 - x)(5 - x) - 4 + 3 = x^2 - 6x + 4$$\n\n$\\angle ACB = 90°$ when this is 0 (both vectors are non-zero because $A$ and $B$ are not on the $x$-axis):\n$$x^2 - 6x + 4 = 0 \\Rightarrow x = \\frac{6 \\pm \\sqrt{36 - 16}}{2} = 3 \\pm \\sqrt{5}$$\n\n$C$ is $(3 + \\sqrt{5}, 0, 0)$ or $(3 - \\sqrt{5}, 0, 0)$.\n\n**(b)** $\\cos\\angle ACB$ has the same sign as $\\overrightarrow{CA} \\cdot \\overrightarrow{CB}$ (the magnitudes are positive). The angle is obtuse when $\\cos\\angle ACB < 0$:\n$$x^2 - 6x + 4 < 0 \\Rightarrow 3 - \\sqrt{5} < x < 3 + \\sqrt{5}$$\n(between the roots of an upward parabola).\n\n**(c)** Let $C = (0, y, 0)$:\n$$\\overrightarrow{CA} = \\mathbf{i} + (2 - y)\\mathbf{j} + 3\\mathbf{k}, \\qquad \\overrightarrow{CB} = 5\\mathbf{i} + (-2 - y)\\mathbf{j} + \\mathbf{k}$$\n$$\\overrightarrow{CA} \\cdot \\overrightarrow{CB} = 5 + (2 - y)(-2 - y) + 3 = 5 + (y^2 - 4) + 3 = y^2 + 4$$\n\n$y^2 + 4 \\ge 4 > 0$ for every real $y$, so the scalar product is never 0: there is no such point (in fact $\\angle ACB$ is acute for every point on the $y$-axis).\n\n(Geometric view: the points $C$ with $\\angle ACB = 90°$ form the sphere with diameter $AB$, centre $(3, 0, 2)$, radius 3. The $x$-axis passes through this sphere but the $y$-axis misses it.)",
+  "linkedTopicIds": []
+ }
+]

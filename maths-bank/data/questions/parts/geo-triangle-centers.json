@@ -1,0 +1,270 @@
+[
+ {
+  "id": "geo-triangle-centers-q01",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><polygon points=\"110,35 30,240 330,240\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"110\" y1=\"35\" x2=\"180\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"156.7\" cy=\"171.7\" r=\"3\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"240\" r=\"3\" fill=\"currentColor\"/><line x1=\"105\" y1=\"234\" x2=\"105\" y2=\"246\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"255\" y1=\"234\" x2=\"255\" y2=\"246\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"110\" y=\"24\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"18\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"342\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"180\" y=\"263\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"170.7\" y=\"172.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text></svg>",
+  "question": "$G$ is the centroid of $\\triangle ABC$, and $\\overline{AD}$ is a median with $AD = 24$. Find $AG$ and $GD$.",
+  "hint": "The centroid is $\\frac{2}{3}$ of the way along each median, measured from the vertex.",
+  "answer": "$AG = 16$, $GD = 8$",
+  "solution": "Centroid Theorem: $AG = \\frac{2}{3}AD$.\n$$AG = \\frac{2}{3} \\times 24 = 16, \\qquad GD = 24 - 16 = 8$$\nCheck: $AG = 2 \\cdot GD$, i.e. $AG : GD = 2 : 1$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q02",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "$G$ is the centroid of $\\triangle ABC$, and $\\overline{AD}$ is a median with $GD = 7$. Find $AG$ and $AD$.",
+  "hint": "$GD$ is the **short** piece of the median, next to the midpoint. The piece next to the vertex is twice as long.",
+  "answer": "$AG = 14$, $AD = 21$",
+  "solution": "$AG : GD = 2 : 1$, so\n$$AG = 2 \\times 7 = 14, \\qquad AD = 14 + 7 = 21$$\n\n**What changed:** we now know the short piece instead of the whole median. $GD$ is $\\frac{1}{3}$ of the median, so $AD = 3 \\times 7 = 21$. (A common error is to treat $GD$ as $\\frac{2}{3}$ of the median, giving $AD = 10.5$.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q03",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 1,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$G$ is the centroid of $\\triangle ABC$, and $\\overline{AD}$ is a median with $AG = 10$. Find $GD$ and $AD$.",
+  "hint": "$AG$ is the long piece, twice $GD$.",
+  "answer": "$GD = 5$, $AD = 15$",
+  "solution": "$AG = 2 \\cdot GD$, so\n$$GD = \\frac{10}{2} = 5, \\qquad AD = 10 + 5 = 15$$\n\n**What changed:** the known piece is now the **long** piece next to the vertex, $\\frac{2}{3}$ of the median. So $AD = \\frac{3}{2} \\times 10 = 15$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q04",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 2,
+  "type": "fluency",
+  "variationSet": "v1",
+  "question": "$G$ is the centroid of $\\triangle ABC$, and $\\overline{AD}$ is a median with $AG = 3x + 2$ and $GD = 2x - 1$. Find $x$, $AG$, $GD$ and $AD$.",
+  "hint": "Write the relationship $AG = 2 \\cdot GD$ as an equation in $x$.",
+  "answer": "$x = 4$, $AG = 14$, $GD = 7$, $AD = 21$",
+  "solution": "$AG = 2 \\cdot GD$:\n$$3x + 2 = 2(2x - 1) = 4x - 2 \\quad\\Rightarrow\\quad x = 4$$\n\n$AG = 3(4) + 2 = 14$, $GD = 2(4) - 1 = 7$, $AD = 21$. Check: $14 = 2 \\times 7$.\n\n**What changed:** both pieces are now expressions, so the $2 : 1$ ratio becomes an equation. (Putting the 2 on the wrong side, $2(3x + 2) = 2x - 1$, gives $x = -\\frac{5}{4}$ and negative lengths, a sign the ratio is the wrong way round.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q05",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 2,
+  "type": "fluency",
+  "misconceptionIds": [
+   "m4"
+  ],
+  "question": "In $\\triangle ABC$, $D$ is the midpoint of $\\overline{AB}$ and $E$ is the midpoint of $\\overline{AC}$.\n\n(a) $BC = 26$. Find $DE$.\n\n(b) $DE = 2x + 3$ and $BC = 5x - 4$. Find $x$ and $BC$.\n\n(c) $m\\angle ABC = 68^\\circ$. Find $m\\angle ADE$, giving a reason.",
+  "hint": "Triangle Midsegment Theorem: $\\overline{DE}$ is parallel to $\\overline{BC}$ and half as long.",
+  "answer": "(a) 13 (b) $x = 10$, $BC = 46$ (c) $68^\\circ$ (corresponding angles, $\\overline{DE} \\parallel \\overline{BC}$)",
+  "solution": "**(a)** $DE = \\frac{1}{2}BC = \\frac{1}{2}(26) = 13$.\n\n**(b)** $BC = 2 \\cdot DE$:\n$$5x - 4 = 2(2x + 3) = 4x + 6 \\quad\\Rightarrow\\quad x = 10$$\n$BC = 5(10) - 4 = 46$ and $DE = 23$. Check: $46 = 2 \\times 23$. (Setting $DE = BC$ or $DE = 2 \\cdot BC$ are common wrong equations.)\n\n**(c)** $\\overline{DE} \\parallel \\overline{BC}$ with transversal $\\overleftrightarrow{AB}$, so $\\angle ADE$ and $\\angle ABC$ are corresponding angles: $m\\angle ADE = 68^\\circ$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q06",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 2,
+  "type": "fluency",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><line x1=\"20\" y1=\"200\" x2=\"150\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"85\" y1=\"222\" x2=\"85\" y2=\"40\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"85\" y1=\"70\" x2=\"20\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"85\" y1=\"70\" x2=\"150\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"85\" cy=\"70\" r=\"3\" fill=\"currentColor\"/><polyline points=\"94,200 94,191 85,191\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"52.5\" y1=\"194\" x2=\"52.5\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"117.5\" y1=\"194\" x2=\"117.5\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"12\" y=\"217\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"158\" y=\"217\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"73\" y=\"65\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"48\" y=\"133\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">3x + 4</text><text x=\"122\" y=\"133\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">5x − 6</text><line x1=\"200\" y1=\"230\" x2=\"350\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"200\" y1=\"230\" x2=\"285\" y2=\"82.8\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"200\" y1=\"230\" x2=\"338.6\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"303.9\" cy=\"170\" r=\"3\" fill=\"currentColor\"/><line x1=\"303.9\" y1=\"170\" x2=\"303.9\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"303.9\" y1=\"170\" x2=\"252\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/><polyline points=\"311.9,230 311.9,222 303.9,222\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><polyline points=\"256,133.1 262.9,137.1 258.9,144\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M226 215 A30 30 0 0 1 230 230\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><path d=\"M217 200.6 A34 34 0 0 1 229.4 213\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"192\" y=\"245\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Y</text><text x=\"350\" y=\"249\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Z</text><text x=\"275\" y=\"79.8\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">X</text><text x=\"315.9\" y=\"165\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">Q</text><text x=\"310\" y=\"210\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">4y − 9</text><text x=\"292\" y=\"142\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">2y + 1</text></svg>",
+  "question": "(a) In the left figure, $P$ lies on the perpendicular bisector of $\\overline{AB}$, with $PA = 3x + 4$ and $PB = 5x - 6$. Find $x$ and $PA$.\n\n(b) In the right figure, $Q$ lies on the bisector of $\\angle XYZ$. The perpendicular distances from $Q$ to $\\overrightarrow{YX}$ and $\\overrightarrow{YZ}$ are $2y + 1$ and $4y - 9$. Find $y$ and the distance.",
+  "hint": "A point on a perpendicular bisector is equidistant from the segment's **endpoints**. A point on an angle bisector is equidistant from the angle's **sides**.",
+  "answer": "(a) $x = 5$, $PA = 19$ (b) $y = 5$, distance $11$",
+  "solution": "**(a)** Perpendicular Bisector Theorem: $PA = PB$.\n$$3x + 4 = 5x - 6 \\quad\\Rightarrow\\quad 10 = 2x \\quad\\Rightarrow\\quad x = 5$$\n$PA = 3(5) + 4 = 19$ (and $PB = 25 - 6 = 19$ ✓).\n\n**(b)** Angle Bisector Theorem: $Q$ is equidistant from the two sides of the angle (distances measured along perpendiculars).\n$$2y + 1 = 4y - 9 \\quad\\Rightarrow\\quad 10 = 2y \\quad\\Rightarrow\\quad y = 5$$\nDistance $= 2(5) + 1 = 11$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q07",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 2,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "question": "(a) Name the point of concurrency that is:\n  (i) the center of the circle passing through all three vertices,\n  (ii) the center of the circle that touches all three sides,\n  (iii) the balance point of a triangular plate of uniform thickness,\n  (iv) the intersection of the three altitudes.\n\n(b) Which two of these points always lie inside the triangle?\n\n(c) In a right triangle, where is the circumcenter? Explain why.",
+  "hint": "Match each center to the lines that form it: perpendicular bisectors, angle bisectors, medians, altitudes. For (c), think about the rectangle formed by two copies of the right triangle.",
+  "answer": "(a) (i) circumcenter (ii) incenter (iii) centroid (iv) orthocenter (b) centroid and incenter (c) At the midpoint of the hypotenuse, because that point is equidistant from all three vertices.",
+  "solution": "**(a)**\n(i) **Circumcenter** (perpendicular bisectors): equidistant from the vertices.\n(ii) **Incenter** (angle bisectors): equidistant from the sides.\n(iii) **Centroid** (medians).\n(iv) **Orthocenter** (altitudes).\n\n**(b)** The **centroid** and the **incenter**. Medians and angle bisectors run from a vertex into the interior, so they always meet inside. The circumcenter and orthocenter lie outside an obtuse triangle.\n\n**(c)** At the **midpoint of the hypotenuse**. Reflect the right triangle $ABC$ (right angle at $C$) through the midpoint $M$ of hypotenuse $\\overline{AB}$ to form a rectangle $ACBD$. A rectangle's diagonals are congruent and bisect each other, so $MA = MB = MC$. A point equidistant from all three vertices is the circumcenter.\n\n(In a right triangle the orthocenter is at the right-angle vertex $C$, because the two legs are themselves altitudes.)",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q08",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 2,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m2"
+  ],
+  "question": "$G$ is the centroid of $\\triangle ABC$. $\\overline{BE}$ and $\\overline{CF}$ are medians, $BG = 12$ and $GF = 5$. Find $BE$, $CF$ and $CG$.\n\nJamal's working:\n\n$GE$ is half of $BG$, so $GE = 6$ and $BE = 12 + 6 = 18$.\n\n$GF$ is $\\frac{2}{3}$ of $CF$, so $CF = 5 \\div \\frac{2}{3} = 7.5$ and $CG = 7.5 - 5 = 2.5$.\n\nFind Jamal's mistake, explain it, and give the correct answers.",
+  "hint": "Which piece of median $\\overline{CF}$ is $GF$: the one next to the vertex $C$, or the one next to the midpoint $F$?",
+  "answer": "His second line is wrong: $GF$ is the short piece, $\\frac{1}{3}$ of $CF$. Correct: $BE = 18$, $CF = 15$, $CG = 10$.",
+  "solution": "**First line:** correct. $BG$ is the vertex piece, so $GE = \\frac{1}{2}BG = 6$ and $BE = 18$.\n\n**Error, second line:** Jamal puts the $\\frac{2}{3}$ on the wrong piece. $F$ is the midpoint of $\\overline{AB}$, so $\\overline{GF}$ is the piece next to the midpoint: the **short** piece, $\\frac{1}{3}$ of the median. His answer $CG = 2.5 < GF = 5$ is a warning sign: the piece next to the vertex should be the longer one.\n\n**Correct:**\n$$CF = 3 \\times GF = 15, \\qquad CG = 2 \\times GF = 10$$\nCheck: $CG : GF = 10 : 5 = 2 : 1$.",
+  "linkedTopicIds": []
+ },
+ {
+  "id": "geo-triangle-centers-q09",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 3,
+  "type": "spot-the-mistake",
+  "misconceptionIds": [
+   "m1"
+  ],
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\"><line x1=\"36\" y1=\"254\" x2=\"36\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"66\" y1=\"254\" x2=\"66\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"96\" y1=\"254\" x2=\"96\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"126\" y1=\"254\" x2=\"126\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"156\" y1=\"254\" x2=\"156\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"186\" y1=\"254\" x2=\"186\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"216\" y1=\"254\" x2=\"216\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"246\" y1=\"254\" x2=\"246\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"276\" y1=\"254\" x2=\"276\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"306\" y1=\"254\" x2=\"306\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"336\" y1=\"254\" x2=\"336\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"254\" x2=\"336\" y2=\"254\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"224\" x2=\"336\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"194\" x2=\"336\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"164\" x2=\"336\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"134\" x2=\"336\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"104\" x2=\"336\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"74\" x2=\"336\" y2=\"74\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"44\" x2=\"336\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"36\" y1=\"14\" x2=\"336\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"66\" y1=\"254\" x2=\"66\" y2=\"14\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"36\" y1=\"224\" x2=\"336\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"36\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"96\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"126\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">2</text><text x=\"156\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"186\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">4</text><text x=\"216\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"246\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">6</text><text x=\"276\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"306\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">8</text><text x=\"336\" y=\"237\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"61\" y=\"259\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"61\" y=\"199\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"61\" y=\"169\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">2</text><text x=\"61\" y=\"139\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"61\" y=\"109\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">4</text><text x=\"61\" y=\"79\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"61\" y=\"49\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">6</text><text x=\"61\" y=\"19\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">7</text><text x=\"61\" y=\"238\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"332\" y=\"218\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"72\" y=\"26\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"66,224 306,224 66,44\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><circle cx=\"66\" cy=\"224\" r=\"4\" fill=\"currentColor\"/><circle cx=\"306\" cy=\"224\" r=\"4\" fill=\"currentColor\"/><circle cx=\"66\" cy=\"44\" r=\"4\" fill=\"currentColor\"/><circle cx=\"126\" cy=\"164\" r=\"4\" fill=\"currentColor\"/><text x=\"78\" y=\"241\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"310\" y=\"213\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"78\" y=\"37\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"140\" y=\"159\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">K</text></svg>",
+  "question": "Three villages are at $A(0, 0)$, $B(8, 0)$ and $C(0, 6)$ on a map grid where 1 unit represents 1 mile. A new fire station is to be built at the point that is the same distance from all three villages.\n\nKai says: \"I constructed the three angle bisectors of $\\triangle ABC$. They meet at $K(2, 2)$, so the station should go there.\"\n\n(a) Explain Kai's mistake. Support your answer by calculating $KA$ and $KB$.\n\n(b) Find the correct location and the distance from it to each village.",
+  "hint": "Angle bisectors give a point equidistant from the **sides** of the triangle. Which lines give a point equidistant from the **vertices**? $\\triangle ABC$ has a right angle at $A$.",
+  "answer": "(a) Angle bisectors meet at the incenter, which is equidistant from the sides, not the vertices: $KA = 2\\sqrt{2} \\approx 2.83$ mi but $KB = 2\\sqrt{10} \\approx 6.32$ mi. (b) The circumcenter $(4, 3)$, 5 miles from each village.",
+  "solution": "**(a)** The angle bisectors meet at the **incenter**, which is equidistant from the three **sides** (it is the center of the inscribed circle). The station needs to be equidistant from the three **vertices**, which is the **circumcenter**, where the perpendicular bisectors meet.\n\nKai's point is not equidistant from the villages:\n$$KA = \\sqrt{2^2 + 2^2} = \\sqrt{8} \\approx 2.83 \\text{ mi}, \\qquad KB = \\sqrt{6^2 + 2^2} = \\sqrt{40} \\approx 6.32 \\text{ mi}$$\n(and $KC = \\sqrt{2^2 + 4^2} = \\sqrt{20} \\approx 4.47$ mi).\n\n**(b)** The perpendicular bisector of $\\overline{AB}$ is $x = 4$; the perpendicular bisector of $\\overline{AC}$ is $y = 3$. They meet at $O(4, 3)$.\n\n(Because $\\angle A$ is a right angle, $O$ is also the midpoint of hypotenuse $\\overline{BC}$: $\\left(\\frac{8 + 0}{2}, \\frac{0 + 6}{2}\\right) = (4, 3)$.)\n$$OA = \\sqrt{4^2 + 3^2} = 5, \\quad OB = \\sqrt{4^2 + 3^2} = 5, \\quad OC = \\sqrt{4^2 + 3^2} = 5$$\nThe station should be at $(4, 3)$, 5 miles from each village.",
+  "linkedTopicIds": [
+   "alg-coordinates-midpoint-distance"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q10",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 3,
+  "type": "reasoning",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "(a) Which of these sets of lengths can be the sides of a triangle? Justify each answer.\n  (i) 4, 6, 9  (ii) 3, 5, 8  (iii) 2, 3, 10  (iv) 7, 7, 13\n\n(b) A triangle has sides of length 5 and 9. How many different **whole-number** lengths are possible for the third side?\n\n(c) Prove that for every positive number $n$, the lengths $n$, $n + 1$ and $2n + 1$ can never form a triangle.",
+  "hint": "It is enough to check that the two **shortest** sides add to **more than** the longest. \"Equal to\" is not enough.",
+  "answer": "(a) (i) yes (ii) no (iii) no (iv) yes (b) 9 (lengths 5 to 13) (c) $n + (n + 1) = 2n + 1$, which is not greater than $2n + 1$.",
+  "solution": "**(a)** Compare the sum of the two shortest sides with the longest:\n(i) $4 + 6 = 10 > 9$: **yes**.\n(ii) $3 + 5 = 8$, not greater than 8: **no** (the three points would be collinear; the \"triangle\" is flat).\n(iii) $2 + 3 = 5 < 10$: **no**. (Checking $10 + 3 > 2$ is not enough: the check that matters is the two short sides against the longest.)\n(iv) $7 + 7 = 14 > 13$: **yes**.\n\n**(b)** $9 - 5 < x < 9 + 5$, so $4 < x < 14$. The whole numbers are $5, 6, \\ldots, 13$: **9** possible lengths.\n\n**(c)** For $n > 0$ the longest length is $2n + 1$ (it exceeds $n + 1$ by $n$). The two shorter sides sum to\n$$n + (n + 1) = 2n + 1,$$\nwhich equals the longest side rather than exceeding it. The Triangle Inequality requires a strict inequality, so the lengths can never form a triangle, whatever the value of $n$.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q11",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 3,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 260\" width=\"360\" height=\"260\"><line x1=\"40\" y1=\"220\" x2=\"320\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2\"/><line x1=\"180\" y1=\"245\" x2=\"180\" y2=\"30\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"80\" x2=\"40\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><line x1=\"180\" y1=\"80\" x2=\"320\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"180\" cy=\"80\" r=\"3\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"220\" r=\"3\" fill=\"currentColor\"/><polyline points=\"190,220 190,210 180,210\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><line x1=\"110\" y1=\"214\" x2=\"110\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"250\" y1=\"214\" x2=\"250\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"30\" y=\"235\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"330\" y=\"235\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"168\" y=\"239\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">M</text><text x=\"192\" y=\"75\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">P</text><text x=\"188\" y=\"42\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">ℓ</text></svg>",
+  "question": "(a) Prove the Perpendicular Bisector Theorem with a two-column proof.\n\n**Given:** line $\\ell$ is the perpendicular bisector of $\\overline{AB}$, meeting it at $M$; $P$ is a point on $\\ell$ (not $M$).\n**Prove:** $PA = PB$\n\n(b) Use the theorem (and its converse) to explain why the three perpendicular bisectors of a triangle meet at a single point that is equidistant from all three vertices.",
+  "hint": "(a) Prove $\\triangle PMA \\cong \\triangle PMB$; they share $\\overline{PM}$. (b) Let two of the perpendicular bisectors meet at a point $O$. What can you say about $OA$, $OB$ and $OC$?",
+  "answer": "(a) $\\overline{AM} \\cong \\overline{BM}$, right angles at $M$, $\\overline{PM} \\cong \\overline{PM}$; SAS; CPCTC. (b) If the bisectors of $\\overline{AB}$ and $\\overline{BC}$ meet at $O$, then $OA = OB$ and $OB = OC$, so $OA = OC$ and $O$ is on the bisector of $\\overline{AC}$ too.",
+  "solution": "**(a)**\n\n| Statements | Reasons |\n|---|---|\n| 1. $\\ell$ is the perpendicular bisector of $\\overline{AB}$ at $M$; $P$ is on $\\ell$ | Given |\n| 2. $\\overline{AM} \\cong \\overline{BM}$ | Definition of bisector ($M$ is the midpoint) |\n| 3. $\\angle PMA$ and $\\angle PMB$ are right angles | Definition of perpendicular lines |\n| 4. $\\angle PMA \\cong \\angle PMB$ | All right angles are congruent |\n| 5. $\\overline{PM} \\cong \\overline{PM}$ | Reflexive Property of Congruence |\n| 6. $\\triangle PMA \\cong \\triangle PMB$ | SAS (steps 2, 4, 5) |\n| 7. $\\overline{PA} \\cong \\overline{PB}$, so $PA = PB$ | CPCTC; definition of congruent segments |\n\n(If $P = M$, then $PA = MA = MB = PB$ directly.)\n\n**(b)** In $\\triangle ABC$, the perpendicular bisectors of $\\overline{AB}$ and $\\overline{BC}$ are not parallel (they are perpendicular to two non-parallel sides), so they meet at some point $O$.\n* $O$ is on the bisector of $\\overline{AB}$, so $OA = OB$ (theorem).\n* $O$ is on the bisector of $\\overline{BC}$, so $OB = OC$ (theorem).\n* By the Transitive Property, $OA = OC$, so $O$ is on the perpendicular bisector of $\\overline{AC}$ (converse of the theorem).\n\nAll three bisectors pass through $O$, and $OA = OB = OC$: $O$ is the circumcenter, the center of the circle through $A$, $B$ and $C$.",
+  "linkedTopicIds": [
+   "geo-two-column-proofs"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q12",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 3,
+  "type": "real-world",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 275\" width=\"330\" height=\"275\"><polygon points=\"60,240 60,90 260,240\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><circle cx=\"110\" cy=\"190\" r=\"50\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\" stroke-dasharray=\"5 4\"/><circle cx=\"110\" cy=\"190\" r=\"3\" fill=\"currentColor\"/><polyline points=\"60,228 72,228 72,240\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"110\" y=\"181\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">I</text><text x=\"52\" y=\"170\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"end\">30 ft</text><text x=\"160\" y=\"262\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">40 ft</text><text x=\"172\" y=\"152\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"start\">50 ft</text></svg>",
+  "question": "A garden bed is a right triangle with legs 30 ft and 40 ft and hypotenuse 50 ft. A landscaper wants to build the **largest possible circular pond** that fits entirely inside the bed.\n\n(a) Which point of concurrency is the center of the pond? Explain your choice.\n\n(b) Show that the radius of the pond is 10 ft. (Hint: split the triangle into three triangles with a common vertex at the center.)\n\n(c) What percent of the bed's area does the pond cover? Give your answer to the nearest percent.",
+  "hint": "The largest circle inside a triangle touches all three sides. The three triangles $I$-side-side each have height $r$; their areas add up to the area of the whole triangle.",
+  "answer": "(a) The incenter (where the angle bisectors meet), because it is equidistant from all three sides. (b) $\\frac{1}{2}r(30 + 40 + 50) = 600$ gives $r = 10$ ft. (c) About 52%",
+  "solution": "**(a)** The largest circle that fits inside touches all three sides, so its center must be the same distance from all three sides. That point is the **incenter**, where the angle bisectors meet. (The circumcenter is equidistant from the **corners**; here it is the midpoint of the hypotenuse, on the edge of the bed.)\n\n**(b)** Join the incenter $I$ to the three corners. This splits the bed into three triangles whose bases are the sides (30, 40 and 50 ft) and whose heights are all the radius $r$ (the perpendicular distance from $I$ to each side).\n$$\\tfrac{1}{2}(30)r + \\tfrac{1}{2}(40)r + \\tfrac{1}{2}(50)r = \\text{area of bed} = \\tfrac{1}{2}(30)(40) = 600$$\n$$60r = 600 \\quad\\Rightarrow\\quad r = 10 \\text{ ft}$$\n\n**(c)** Pond area $= \\pi(10)^2 = 100\\pi \\approx 314.2 \\text{ ft}^2$.\n$$\\frac{314.2}{600} \\times 100\\% \\approx 52\\%$$",
+  "linkedTopicIds": [
+   "geo-circles"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q13",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 3,
+  "type": "real-world",
+  "misconceptionIds": [
+   "m3"
+  ],
+  "question": "Maya's home is 4.2 miles from the library in a straight line, and the library is 2.5 miles from the park in a straight line.\n\n(a) Maya says the straight-line distance from her home to the park is 7 miles. Explain why she must be wrong.\n\n(b) Find the range of possible straight-line distances from Maya's home to the park. When could the distance equal one of the endpoints of your range?",
+  "hint": "Think of the home, the library and the park as the corners of a triangle. What happens to the \"triangle\" if the three places lie on one straight line?",
+  "answer": "(a) The distance can be at most $4.2 + 2.5 = 6.7$ mi. (b) $1.7 \\le d \\le 6.7$ mi; the endpoints occur only if the three places are on a straight line (strictly between them otherwise).",
+  "solution": "**(a)** Going from home to the park via the library is $4.2 + 2.5 = 6.7$ miles, and a straight line is never longer than a route through another point. So the straight-line distance is at most 6.7 miles, not 7.\n\n**(b)** If the three places form a triangle, the Triangle Inequality gives\n$$4.2 - 2.5 < d < 4.2 + 2.5 \\quad\\Rightarrow\\quad 1.7 < d < 6.7 \\text{ miles}$$\nThe strict inequalities apply because a genuine triangle cannot be flat.\n\nThe endpoint values happen only when the three places are **collinear** (a degenerate \"triangle\"):\n* $d = 6.7$ mi if the library lies on the straight line between home and the park;\n* $d = 1.7$ mi if the park lies on the straight line between home and the library.\n\nSo overall $1.7 \\le d \\le 6.7$ miles.",
+  "linkedTopicIds": [
+   "alg-linear-inequalities"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q14",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 4,
+  "type": "exam-style",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 280\" width=\"360\" height=\"280\"><polygon points=\"150,30 30,250 330,250\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><polygon points=\"90,140 180,250 240,140\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\" stroke-dasharray=\"5 4\"/><line x1=\"150\" y1=\"30\" x2=\"180\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"250\" x2=\"90\" y2=\"140\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"170\" cy=\"176.7\" r=\"3\" fill=\"currentColor\"/><circle cx=\"90\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"250\" r=\"3\" fill=\"currentColor\"/><circle cx=\"240\" cy=\"140\" r=\"3\" fill=\"currentColor\"/><text x=\"150\" y=\"19\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"18\" y=\"261\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"342\" y=\"261\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"76\" y=\"141\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"180\" y=\"273\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"254\" y=\"141\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">F</text><text x=\"166\" y=\"199.7\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text></svg>",
+  "marks": 8,
+  "misconceptionIds": [
+   "m2",
+   "m4"
+  ],
+  "question": "In $\\triangle ABC$, $D$, $E$ and $F$ are the midpoints of $\\overline{AB}$, $\\overline{BC}$ and $\\overline{CA}$. Medians $\\overline{AE}$ and $\\overline{CD}$ intersect at $G$.",
+  "parts": [
+   {
+    "label": "a",
+    "marks": 3,
+    "prompt": "$DF = 2x + 1$ and $BC = 5x - 7$. Find $BC$. Show your work."
+   },
+   {
+    "label": "b",
+    "marks": 2,
+    "prompt": "The perimeter of $\\triangle ABC$ is 90 in. Find the perimeter of $\\triangle DEF$. Explain your reasoning."
+   },
+   {
+    "label": "c",
+    "marks": 2,
+    "prompt": "$AE = 21$ in. Find $AG$ and $GE$."
+   },
+   {
+    "label": "d",
+    "marks": 1,
+    "prompt": "Explain why $\\overline{BF}$ must also pass through $G$."
+   }
+  ],
+  "hint": "Each side of $\\triangle DEF$ is a midsegment of $\\triangle ABC$. $G$ is the centroid.",
+  "answer": "(a) $x = 9$, $BC = 38$ (b) 45 in. (c) $AG = 14$ in., $GE = 7$ in. (d) The three medians of a triangle are concurrent, and $\\overline{BF}$ is the third median.",
+  "solution": "**(a)** $\\overline{DF}$ joins the midpoints of $\\overline{AB}$ and $\\overline{AC}$, so it is a midsegment parallel to $\\overline{BC}$ and $BC = 2 \\cdot DF$. **M1**\n$$5x - 7 = 2(2x + 1) = 4x + 2 \\quad\\Rightarrow\\quad x = 9 \\qquad \\textbf{A1}$$\n$BC = 5(9) - 7 = 38$. **A1**\n\n**(b)** Each side of $\\triangle DEF$ is a midsegment, half the side of $\\triangle ABC$ it is parallel to: $DF = \\frac{1}{2}BC$, $DE = \\frac{1}{2}AC$, $EF = \\frac{1}{2}AB$. **M1**\nPerimeter of $\\triangle DEF = \\frac{1}{2}(90) = 45$ in. **A1**\n\n**(c)** $G$ is the centroid, $\\frac{2}{3}$ of the way from $A$ to $E$. **M1**\n$AG = \\frac{2}{3}(21) = 14$ in., $GE = 21 - 14 = 7$ in. **A1**\n\n**(d)** $\\overline{BF}$ joins vertex $B$ to the midpoint of the opposite side, so it is the third median. The three medians of a triangle are concurrent (meet at the centroid), so $\\overline{BF}$ passes through $G$. **B1**",
+  "linkedTopicIds": [
+   "alg-linear-equations"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q15",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 4,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 245\" width=\"360\" height=\"245\"><line x1=\"22\" y1=\"220\" x2=\"22\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"48\" y1=\"220\" x2=\"48\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"74\" y1=\"220\" x2=\"74\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"100\" y1=\"220\" x2=\"100\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"126\" y1=\"220\" x2=\"126\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"152\" y1=\"220\" x2=\"152\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"178\" y1=\"220\" x2=\"178\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"204\" y1=\"220\" x2=\"204\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"230\" y1=\"220\" x2=\"230\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"256\" y1=\"220\" x2=\"256\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"282\" y1=\"220\" x2=\"282\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"308\" y1=\"220\" x2=\"308\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"334\" y1=\"220\" x2=\"334\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"220\" x2=\"334\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"194\" x2=\"334\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"168\" x2=\"334\" y2=\"168\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"142\" x2=\"334\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"116\" x2=\"334\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"90\" x2=\"334\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"64\" x2=\"334\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"38\" x2=\"334\" y2=\"38\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"22\" y1=\"12\" x2=\"334\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"0.5\" stroke-opacity=\"0.35\"/><line x1=\"48\" y1=\"220\" x2=\"48\" y2=\"12\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"22\" y1=\"194\" x2=\"334\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"1.5\"/><text x=\"22\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">−1</text><text x=\"74\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">1</text><text x=\"126\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">3</text><text x=\"178\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">5</text><text x=\"230\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">7</text><text x=\"282\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">9</text><text x=\"334\" y=\"207\" fill=\"currentColor\" font-size=\"13\" font-family=\"sans-serif\" text-anchor=\"middle\">11</text><text x=\"43\" y=\"225\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">−1</text><text x=\"43\" y=\"173\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">1</text><text x=\"43\" y=\"121\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">3</text><text x=\"43\" y=\"69\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">5</text><text x=\"43\" y=\"17\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">7</text><text x=\"43\" y=\"208\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\">0</text><text x=\"330\" y=\"188\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"end\" font-style=\"italic\">x</text><text x=\"54\" y=\"24\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"start\" font-style=\"italic\">y</text><polygon points=\"48,194 308,194 152,38\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"#3b82f6\" fill-opacity=\"0.2\"/><circle cx=\"48\" cy=\"194\" r=\"3\" fill=\"currentColor\"/><circle cx=\"308\" cy=\"194\" r=\"3\" fill=\"currentColor\"/><circle cx=\"152\" cy=\"38\" r=\"3\" fill=\"currentColor\"/><text x=\"38\" y=\"185\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"312\" y=\"183\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"152\" y=\"27\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text></svg>",
+  "question": "Triangle $ABC$ has vertices $A(0, 0)$, $B(10, 0)$ and $C(4, 6)$.\n\n(a) Find the centroid $G$.\n\n(b) Find the circumcenter $O$ and the radius of the circumscribed circle.\n\n(c) Find the orthocenter $H$.\n\n(d) Show that $O$, $G$ and $H$ are collinear and that $HG = 2 \\cdot GO$.",
+  "hint": "(b) Intersect the perpendicular bisectors of $\\overline{AB}$ and $\\overline{AC}$. (c) Intersect two altitudes: each passes through a vertex and is perpendicular to the opposite side.",
+  "answer": "(a) $G\\left(\\frac{14}{3}, 2\\right)$ (b) $O(5, 1)$, radius $\\sqrt{26}$ (c) $H(4, 4)$ (d) Slopes $OG$ and $GH$ are both $-3$; $HG = \\frac{2\\sqrt{10}}{3}$, $GO = \\frac{\\sqrt{10}}{3}$.",
+  "solution": "**(a)** $G = \\left(\\frac{0 + 10 + 4}{3}, \\frac{0 + 0 + 6}{3}\\right) = \\left(\\frac{14}{3}, 2\\right)$.\n\n**(b)** The perpendicular bisector of $\\overline{AB}$ (horizontal, midpoint $(5, 0)$) is $x = 5$.\n\n$\\overline{AC}$ has midpoint $(2, 3)$ and slope $\\frac{6}{4} = \\frac{3}{2}$, so its perpendicular bisector has slope $-\\frac{2}{3}$:\n$$y - 3 = -\\tfrac{2}{3}(x - 2)$$\nAt $x = 5$: $y = 3 - 2 = 1$. So $O = (5, 1)$.\n\nRadius: $OA = \\sqrt{5^2 + 1^2} = \\sqrt{26}$. (Check: $OB = \\sqrt{25 + 1}$, $OC = \\sqrt{1 + 25}$, both $\\sqrt{26}$.)\n\n**(c)** The altitude from $C$ is perpendicular to $\\overline{AB}$ (horizontal), so it is $x = 4$.\n\n$\\overline{BC}$ has slope $\\frac{6 - 0}{4 - 10} = -1$, so the altitude from $A$ has slope 1 and passes through the origin: $y = x$.\n\nThey meet at $H = (4, 4)$.\n\n**(d)**\n$$m_{OG} = \\frac{2 - 1}{\\frac{14}{3} - 5} = \\frac{1}{-\\frac{1}{3}} = -3, \\qquad m_{GH} = \\frac{4 - 2}{4 - \\frac{14}{3}} = \\frac{2}{-\\frac{2}{3}} = -3$$\nEqual slopes through the common point $G$, so $O$, $G$, $H$ are collinear (this line is the **Euler line**).\n$$HG = \\sqrt{\\left(\\tfrac{2}{3}\\right)^2 + 2^2} = \\sqrt{\\tfrac{40}{9}} = \\tfrac{2\\sqrt{10}}{3}, \\qquad GO = \\sqrt{\\left(\\tfrac{1}{3}\\right)^2 + 1^2} = \\sqrt{\\tfrac{10}{9}} = \\tfrac{\\sqrt{10}}{3}$$\nSo $HG = 2 \\cdot GO$.",
+  "linkedTopicIds": [
+   "alg-perpendicular-lines",
+   "alg-coordinates-midpoint-distance"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q16",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 5,
+  "type": "reasoning",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 265\" width=\"360\" height=\"265\"><polygon points=\"140,30 30,240 330,240\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"30\" y1=\"240\" x2=\"156.9\" y2=\"163.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"330\" y1=\"240\" x2=\"156.9\" y2=\"163.2\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"30\" x2=\"156.9\" y2=\"163.2\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle cx=\"156.9\" cy=\"163.2\" r=\"3\" fill=\"currentColor\"/><text x=\"140\" y=\"19\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"18\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"342\" y=\"251\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"156.9\" y=\"152.2\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">I</text></svg>",
+  "question": "$I$ is the incenter of $\\triangle ABC$.\n\n(a) Prove that $m\\angle BIC = 90^\\circ + \\frac{1}{2}m\\angle A$.\n\n(b) In a particular triangle, $m\\angle BIC = 128^\\circ$. Find $m\\angle A$.\n\n(c) Now let $H$ be the orthocenter of an **acute** triangle $ABC$. Prove that $m\\angle BHC = 180^\\circ - m\\angle A$.\n\n(d) For what measure of $\\angle A$ (in an acute triangle) is $m\\angle BIC = m\\angle BHC$?",
+  "hint": "(a) $\\overline{BI}$ and $\\overline{CI}$ bisect $\\angle B$ and $\\angle C$; use the angle sum in $\\triangle BIC$ and in $\\triangle ABC$. (c) Let the altitudes from $B$ and $C$ meet the opposite sides at $E$ and $F$, and look at quadrilateral $AFHE$.",
+  "answer": "(a) $m\\angle BIC = 180^\\circ - \\frac{1}{2}(m\\angle B + m\\angle C) = 180^\\circ - \\frac{1}{2}(180^\\circ - m\\angle A) = 90^\\circ + \\frac{1}{2}m\\angle A$ (b) $76^\\circ$ (c) In $AFHE$, $m\\angle FHE = 360^\\circ - 90^\\circ - 90^\\circ - m\\angle A$, and $\\angle BHC$ is vertical to $\\angle FHE$. (d) $60^\\circ$",
+  "solution": "**(a)** The incenter lies on the angle bisectors, so $m\\angle IBC = \\frac{1}{2}m\\angle B$ and $m\\angle ICB = \\frac{1}{2}m\\angle C$. In $\\triangle BIC$:\n$$m\\angle BIC = 180^\\circ - \\tfrac{1}{2}m\\angle B - \\tfrac{1}{2}m\\angle C = 180^\\circ - \\tfrac{1}{2}(m\\angle B + m\\angle C)$$\nIn $\\triangle ABC$, $m\\angle B + m\\angle C = 180^\\circ - m\\angle A$, so\n$$m\\angle BIC = 180^\\circ - \\tfrac{1}{2}(180^\\circ - m\\angle A) = 90^\\circ + \\tfrac{1}{2}m\\angle A$$\n\n**(b)** $90^\\circ + \\frac{1}{2}m\\angle A = 128^\\circ \\Rightarrow \\frac{1}{2}m\\angle A = 38^\\circ \\Rightarrow m\\angle A = 76^\\circ$.\n\n**(c)** Let $\\overline{BE}$ and $\\overline{CF}$ be altitudes, with $E$ on $\\overline{AC}$ and $F$ on $\\overline{AB}$; they meet at $H$ inside the acute triangle. Quadrilateral $AFHE$ has right angles at $E$ and $F$, and its angles sum to $360^\\circ$:\n$$m\\angle FHE = 360^\\circ - 90^\\circ - 90^\\circ - m\\angle A = 180^\\circ - m\\angle A$$\n$\\angle BHC$ and $\\angle FHE$ are vertical angles ($B$, $H$, $E$ collinear and $C$, $H$, $F$ collinear), so $m\\angle BHC = 180^\\circ - m\\angle A$.\n\n**(d)**\n$$90^\\circ + \\tfrac{1}{2}m\\angle A = 180^\\circ - m\\angle A \\quad\\Rightarrow\\quad \\tfrac{3}{2}m\\angle A = 90^\\circ \\quad\\Rightarrow\\quad m\\angle A = 60^\\circ$$\n(Then both angles are $120^\\circ$; for example, in an equilateral triangle $I$ and $H$ are the same point.)",
+  "linkedTopicIds": [
+   "geo-angle-facts"
+  ]
+ },
+ {
+  "id": "geo-triangle-centers-q17",
+  "topicId": "geo-triangle-centers",
+  "difficulty": 5,
+  "type": "synoptic",
+  "diagram": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 270\" width=\"360\" height=\"270\"><polygon points=\"180,61 292,145 68,229\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"/><line x1=\"180\" y1=\"61\" x2=\"180\" y2=\"187\" stroke=\"currentColor\" stroke-width=\"1.5\"/><line x1=\"292\" y1=\"145\" x2=\"124\" y2=\"145\" stroke=\"currentColor\" stroke-width=\"1.5\"/><circle cx=\"180\" cy=\"145\" r=\"3\" fill=\"currentColor\"/><circle cx=\"180\" cy=\"187\" r=\"3\" fill=\"currentColor\"/><circle cx=\"124\" cy=\"145\" r=\"3\" fill=\"currentColor\"/><polyline points=\"180,136 189,136 189,145\" stroke=\"currentColor\" stroke-width=\"1.5\" fill=\"none\"/><text x=\"180\" y=\"50\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">A</text><text x=\"306\" y=\"150\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">B</text><text x=\"56\" y=\"242\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">C</text><text x=\"184\" y=\"208\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">D</text><text x=\"110\" y=\"144\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">E</text><text x=\"168\" y=\"162\" fill=\"currentColor\" font-size=\"14\" font-family=\"sans-serif\" text-anchor=\"middle\">G</text></svg>",
+  "question": "In $\\triangle ABC$, the medians $\\overline{AD}$ and $\\overline{BE}$ meet at the centroid $G$ and are perpendicular. $AD = 9$ and $BE = 12$.\n\n(a) Find $AB$.\n\n(b) Find $AC$ and $BC$ in simplest radical form.\n\n(c) Verify that $AC^2 + BC^2 = 5 \\cdot AB^2$.",
+  "hint": "Use the centroid to split each median $2 : 1$. Then $\\triangle AGB$, $\\triangle AGE$ and $\\triangle BGD$ are all right triangles with the right angle at $G$.",
+  "answer": "(a) $AB = 10$ (b) $AC = 4\\sqrt{13}$, $BC = 2\\sqrt{73}$ (c) $208 + 292 = 500 = 5 \\times 100$",
+  "solution": "Centroid splits: $AG = \\frac{2}{3}(9) = 6$, $GD = 3$, $BG = \\frac{2}{3}(12) = 8$, $GE = 4$.\n\n**(a)** In right $\\triangle AGB$: $AB = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10$.\n\n**(b)** In right $\\triangle AGE$ (the angle at $G$ is $90^\\circ$ because $\\overline{GE}$ lies along $\\overline{BE}$):\n$$AE = \\sqrt{6^2 + 4^2} = \\sqrt{52} = 2\\sqrt{13}$$\n$E$ is the midpoint of $\\overline{AC}$, so $AC = 2 \\cdot AE = 4\\sqrt{13}$.\n\nIn right $\\triangle BGD$:\n$$BD = \\sqrt{8^2 + 3^2} = \\sqrt{73}$$\n$D$ is the midpoint of $\\overline{BC}$, so $BC = 2\\sqrt{73}$.\n\n**(c)** $AC^2 = 16 \\times 13 = 208$ and $BC^2 = 4 \\times 73 = 292$, so $AC^2 + BC^2 = 500$. And $5 \\cdot AB^2 = 5 \\times 100 = 500$. ✓\n\n(This holds whenever the medians from $A$ and $B$ are perpendicular.)",
+  "linkedTopicIds": [
+   "geo-pythagoras",
+   "num-surds"
+  ]
+ }
+]
