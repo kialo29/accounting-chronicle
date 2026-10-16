@@ -156,7 +156,74 @@ function toast(msg) {
   clearTimeout(el._t);
   el._t = setTimeout(() => el.classList.remove('show'), 2200);
 }
-function download(filename, text, type = 'application/json') {
+/** In-page confirmation (the site may run where native confirm() is unavailable). */
+function ask(message, { okLabel = 'OK', cancelLabel = 'Cancel', danger = false } = {}) {
+  return new Promise((resolve) => {
+    const dlg = document.getElementById('bg-confirm');
+    if (!dlg) {
+      resolve(window.confirm ? window.confirm(message) : false);
+      return;
+    }
+    dlg.innerHTML = `<div class="modal-body"><p>${esc(message)}</p><div class="bg-actions"><button class="btn ${danger ? 'btn-outline danger' : 'btn-primary'}" data-ok>${esc(okLabel)}</button>${cancelLabel ? `<button class="btn btn-secondary" data-cancel>${esc(cancelLabel)}</button>` : ''}</div></div>`;
+    const done = (v) => {
+      if (dlg.open) dlg.close();
+      resolve(v);
+    };
+    dlg.querySelector('[data-ok]').onclick = () => done(true);
+    const c = dlg.querySelector('[data-cancel]');
+    if (c) c.onclick = () => done(false);
+    dlg.oncancel = (e) => {
+      e.preventDefault();
+      done(false);
+    };
+    dlg.showModal();
+    dlg.querySelector('[data-ok]').focus();
+  });
+}
+const notice = (message) => ask(message, { cancelLabel: '' });
+
+async function importBackupText(text) {
+  let imported;
+  try {
+    imported = S.parseImport(text);
+  } catch (e) {
+    await notice(`Could not import: ${e.message}`);
+    return;
+  }
+  if (state.accounts.length && !(await ask('Replace your current data with this backup?', { okLabel: 'Replace', danger: true }))) return;
+  state = imported;
+  commit('Backup imported');
+}
+
+function exportView(spec) {
+  return `${modalHead(spec.title)}
+  <div class="bg-form">
+    <p class="muted small">${esc(spec.hint || '')}</p>
+    <textarea class="export-text" rows="12" readonly>${esc(spec.text)}</textarea>
+    <div class="bg-actions">
+      <button class="btn btn-primary" data-action="copy-text">Copy to clipboard</button>
+      <button class="btn btn-secondary" data-action="download-text" data-filename="${esc(spec.filename)}" data-mime="${esc(spec.mime)}">Download file</button>
+      <button class="btn btn-secondary" data-action="close-modal">Close</button>
+    </div>
+  </div>`;
+}
+
+async function download(filename, text, type = 'application/json') {
+  // Inside the claude.ai artifact viewer, files are handed over through the
+  // downloads capability; everywhere else a normal browser download works.
+  if (window.claude && typeof window.claude.use === 'function') {
+    try {
+      const dl = await window.claude.use('downloads');
+      if (dl) {
+        await dl.save({ filename, data: text });
+        toast('Saved');
+        return;
+      }
+    } catch (e) {
+      if (!(e && e.code === 'declined')) toast('Could not save the file. Use Copy to clipboard instead.');
+      return;
+    }
+  }
   const blob = new Blob([text], { type });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
@@ -190,13 +257,14 @@ function render() {
   root.innerHTML = `
     <div class="bg-shell">
       <nav class="bg-nav" aria-label="Budget sections">
-        ${VIEWS.map(([id, label]) => `<a href="#/${id}" class="${ui.view === id ? 'active' : ''}">${label}</a>`).join('')}
+        ${VIEWS.map(([id, label]) => `<a href="#${id}" class="${ui.view === id ? 'active' : ''}">${label}</a>`).join('')}
       </nav>
       <div class="bg-main">
         ${empty && ui.view !== 'settings' ? renderEmpty() : renderView()}
       </div>
     </div>
-    <dialog class="bg-modal" id="bg-modal"></dialog>`;
+    <dialog class="bg-modal" id="bg-modal"></dialog>
+    <dialog class="bg-modal bg-confirm" id="bg-confirm"></dialog>`;
   C.bindCharts(root);
   if (ui.modal) openModal(ui.modal);
 }
@@ -289,7 +357,7 @@ function viewDashboard() {
     <section class="bg-card">${chart}</section>
     <section class="bg-grid two">
       <div class="bg-card">
-        <div class="bg-card-head"><h3>Budget this period</h3><a href="#/budget" class="see-all">Full budget →</a></div>
+        <div class="bg-card-head"><h3>Budget this period</h3><a href="#budget" class="see-all">Full budget →</a></div>
         <p class="muted small">${esc(fmtDay(period.from))} to ${esc(fmtDay(period.to))}, ${tracker.daysLeft} days left. Spent ${esc(money0(tracker.totals.spent))} of ${esc(money0(tracker.totals.budget))}; ${esc(money0(tracker.totals.due))} still planned.</p>
         ${topCats.length ? topCats.map((r) => `
           <div class="track-row">
@@ -298,11 +366,11 @@ function viewDashboard() {
           </div>`).join('') : '<p class="muted">No planned spending yet. Add expenses to your budget plan to track them here.</p>'}
       </div>
       <div class="bg-card">
-        <div class="bg-card-head"><h3>Next 14 days</h3><a href="#/cashflow" class="see-all">Cash flow →</a></div>
+        <div class="bg-card-head"><h3>Next 14 days</h3><a href="#cashflow" class="see-all">Cash flow →</a></div>
         ${up.length ? `<ul class="event-list">${up.slice(0, 12).map(eventRow).join('')}</ul>` : '<p class="muted">Nothing planned in the next two weeks.</p>'}
       </div>
     </section>
-    ${state.goals.length ? `<section class="bg-card"><div class="bg-card-head"><h3>Goals</h3><a href="#/accounts" class="see-all">Manage →</a></div><div class="bg-grid three">${state.goals.map(goalCard).join('')}</div></section>` : ''}
+    ${state.goals.length ? `<section class="bg-card"><div class="bg-card-head"><h3>Goals</h3><a href="#accounts" class="see-all">Manage →</a></div><div class="bg-grid three">${state.goals.map(goalCard).join('')}</div></section>` : ''}
   `;
 }
 
@@ -336,7 +404,7 @@ function renderAttention() {
       </span></li>`;
   const shownAlerts = items.slice(0, 4);
   return `<section class="bg-card attention">
-    ${items.length ? `<ul class="alerts">${shownAlerts.map((i) => `<li class="alert alert-${i.level}"><span class="alert-icon" aria-hidden="true">${i.level === 'critical' ? '⚠' : '!'}</span><span>${i.text}</span></li>`).join('')}${items.length > shownAlerts.length ? `<li class="muted small">and ${items.length - shownAlerts.length} more: see <a href="#/cashflow">Cash flow</a>.</li>` : ''}</ul>` : ''}
+    ${items.length ? `<ul class="alerts">${shownAlerts.map((i) => `<li class="alert alert-${i.level}"><span class="alert-icon" aria-hidden="true">${i.level === 'critical' ? '⚠' : '!'}</span><span>${i.text}</span></li>`).join('')}${items.length > shownAlerts.length ? `<li class="muted small">and ${items.length - shownAlerts.length} more: see <a href="#cashflow">Cash flow</a>.</li>` : ''}</ul>` : ''}
     ${overdue.length ? `<h4>Missed planned items (counted as due today)</h4><ul class="attn-list">${overdue.map((e) => row(e, true)).join('')}</ul>` : ''}
     ${unrecorded.length ? `<details class="attn-more"><summary>${f.unrecorded.length} planned item${f.unrecorded.length > 1 ? 's' : ''} passed without a record</summary><p class="muted small">These are not counted in the forecast. Record them if they happened, or skip them. (Change this behaviour in Settings → missed items.)</p><ul class="attn-list">${unrecorded.map((e) => row(e, false)).join('')}</ul></details>` : ''}
   </section>`;
@@ -871,10 +939,14 @@ function viewSettings() {
     <p class="muted">Everything is stored only in this browser (localStorage). Export a backup regularly, and import it on another device to carry on there.</p>
     <div class="bg-actions">
       <button class="btn btn-secondary" data-action="export-json">Export backup (JSON)</button>
-      <label class="btn btn-secondary file">Import backup<input type="file" accept="application/json,.json" data-change="import-json" hidden></label>
+      <label class="btn btn-secondary file">Import backup file<input type="file" accept="application/json,.json" data-change="import-json" hidden></label>
       <button class="btn btn-secondary" data-action="load-sample">Load the example data</button>
       <button class="btn btn-outline danger" data-action="reset-all">Delete everything</button>
     </div>
+    <details class="import-paste"><summary>Or paste a backup</summary>
+      <textarea id="import-text" rows="5" placeholder="Paste the contents of a backup file here"></textarea>
+      <div class="bg-actions"><button class="btn btn-secondary" data-action="import-text">Restore from pasted backup</button></div>
+    </details>
     <p class="muted small">${state.accounts.length} accounts · ${state.lines.length} plan items · ${state.transactions.length} transactions · ${state.scenarios.length} scenarios · ${state.goals.length} goals</p>
   </section>
   <section class="bg-card">
@@ -919,6 +991,7 @@ function modalContent(spec) {
     case 'scenario': return scenarioForm(spec);
     case 'balance': return balanceForm(spec);
     case 'csv': return csvForm(spec);
+    case 'export': return exportView(spec);
     default: return '';
   }
 }
@@ -1264,7 +1337,7 @@ function guessCategory(desc, kind) {
   return { category: kind === 'income' ? 'Other income' : 'Other', lineId: null };
 }
 
-function handleAction(action, el) {
+async function handleAction(action, el) {
   const id = el.dataset.id;
   switch (action) {
     case 'close-modal': closeModal(); break;
@@ -1279,27 +1352,50 @@ function handleAction(action, el) {
     }
     case 'load-sample':
       if (state.accounts.length || state.lines.length) {
-        if (!confirm('Replace your current data with the example? Export a backup first if you want to keep it.')) return;
+        if (!(await ask('Replace your current data with the example? Export a backup first if you want to keep it.', { okLabel: 'Replace with example', danger: true }))) return;
       }
       state = sampleState();
       commit('Example data loaded');
-      location.hash = '#/dashboard';
+      location.hash = '#dashboard';
       break;
     case 'reset-all':
-      if (!confirm('Delete all budget data from this browser? This cannot be undone.')) return;
+      if (!(await ask('Delete all budget data from this browser? This cannot be undone.', { okLabel: 'Delete everything', danger: true }))) return;
       S.clear();
       state = S.emptyState();
       commit('All data deleted');
       break;
     case 'export-json':
-      download(`budget-backup-${E.today()}.json`, S.exportJson(state));
+      openModal({ type: 'export', title: 'Backup (JSON)', filename: `budget-backup-${E.today()}.json`, mime: 'application/json', text: S.exportJson(state), hint: 'Keep this somewhere safe. Paste it back in under Settings → Your data to restore, on any device.' });
       break;
+    case 'import-text': {
+      const ta = root.querySelector('#import-text');
+      if (ta && ta.value.trim()) importBackupText(ta.value);
+      else notice('Paste the contents of a backup file first.');
+      break;
+    }
+    case 'copy-text': {
+      const ta = el.closest('.modal-body').querySelector('textarea');
+      try {
+        await navigator.clipboard.writeText(ta.value);
+        toast('Copied');
+      } catch (e) {
+        ta.focus();
+        ta.select();
+        toast('Press Ctrl+C / Cmd+C to copy');
+      }
+      break;
+    }
+    case 'download-text': {
+      const ta = el.closest('.modal-body').querySelector('textarea');
+      download(el.dataset.filename, ta.value, el.dataset.mime);
+      break;
+    }
     case 'export-csv': {
       const rows = [['date', 'kind', 'amount', 'account', 'to_account', 'category', 'description', 'plan_item']];
       for (const t of [...state.transactions].sort((a, b) => (a.date < b.date ? -1 : 1))) {
         rows.push([t.date, t.kind, t.amount, accName(t.accountId), t.toAccountId ? accName(t.toAccountId) : '', t.category || '', t.description || '', t.lineId ? (lineById(t.lineId) || {}).name || '' : '']);
       }
-      download(`transactions-${E.today()}.csv`, S.toCsv(rows), 'text/csv');
+      openModal({ type: 'export', title: 'Transactions (CSV)', filename: `transactions-${E.today()}.csv`, mime: 'text/csv', text: S.toCsv(rows), hint: 'Paste into a spreadsheet, or download the file.' });
       break;
     }
     case 'budget-kind': ui.budget.kind = el.dataset.kind; render(); break;
@@ -1322,7 +1418,7 @@ function handleAction(action, el) {
     case 'delete-line': {
       const l = lineById(id);
       const linked = state.transactions.filter((t) => t.lineId === id).length;
-      if (!confirm(`Delete "${l.name}"?${linked ? ` ${linked} recorded transaction(s) will be unlinked but kept.` : ''}`)) return;
+      if (!(await ask(`Delete "${l.name}"?${linked ? ` ${linked} recorded transaction(s) will be unlinked but kept.` : ''}`, { okLabel: 'Delete', danger: true }))) return;
       state.lines = state.lines.filter((x) => x.id !== id);
       for (const t of state.transactions) if (t.lineId === id) t.lineId = null;
       commit('Item deleted');
@@ -1360,7 +1456,7 @@ function handleAction(action, el) {
     case 'remove-change': el.closest('.change-row').remove(); break;
     case 'edit-tx': openModal({ type: 'transaction', tx: state.transactions.find((t) => t.id === id) }); break;
     case 'delete-tx':
-      if (!confirm('Delete this transaction?')) return;
+      if (!(await ask('Delete this transaction?', { okLabel: 'Delete', danger: true }))) return;
       state.transactions = state.transactions.filter((t) => t.id !== id);
       commit('Transaction deleted');
       break;
@@ -1384,10 +1480,10 @@ function handleAction(action, el) {
       const a = accById(id);
       const used = state.transactions.filter((t) => t.accountId === id || t.toAccountId === id).length + state.lines.filter((l) => l.accountId === id || l.toAccountId === id).length;
       if (used) {
-        alert(`"${a.name}" is used by ${used} transaction(s) or plan item(s). Move or delete those first.`);
+        await notice(`"${a.name}" is used by ${used} transaction(s) or plan item(s). Move or delete those first.`);
         return;
       }
-      if (!confirm(`Delete account "${a.name}"?`)) return;
+      if (!(await ask(`Delete account "${a.name}"?`, { okLabel: 'Delete', danger: true }))) return;
       state.accounts = state.accounts.filter((x) => x.id !== id);
       state.goals = state.goals.filter((g) => g.accountId !== id);
       commit('Account deleted');
@@ -1395,14 +1491,14 @@ function handleAction(action, el) {
     }
     case 'edit-goal': openModal({ type: 'goal', goal: state.goals.find((g) => g.id === id) }); break;
     case 'delete-goal':
-      if (!confirm('Delete this goal?')) return;
+      if (!(await ask('Delete this goal?', { okLabel: 'Delete', danger: true }))) return;
       state.goals = state.goals.filter((g) => g.id !== id);
       commit('Goal deleted');
       break;
     case 'edit-scenario': openModal({ type: 'scenario', scenario: state.scenarios.find((s) => s.id === id) }); break;
     case 'delete-scenario': {
       const n = state.lines.filter((l) => l.scenarioId === id).length;
-      if (!confirm(`Delete this scenario${n ? ` and its ${n} item(s)` : ''}?`)) return;
+      if (!(await ask(`Delete this scenario${n ? ` and its ${n} item(s)` : ''}?`, { okLabel: 'Delete', danger: true }))) return;
       state.scenarios = state.scenarios.filter((s) => s.id !== id);
       state.lines = state.lines.filter((l) => l.scenarioId !== id);
       commit('Scenario deleted');
@@ -1412,7 +1508,7 @@ function handleAction(action, el) {
   }
 }
 
-function handleChange(key, el) {
+async function handleChange(key, el) {
   switch (key) {
     case 'cf-months': ui.cashflow.months = Number(el.value); render(); break;
     case 'cf-account': ui.cashflow.account = el.value; render(); break;
@@ -1432,23 +1528,14 @@ function handleChange(key, el) {
     case 'import-json': {
       const file = el.files && el.files[0];
       if (!file) return;
-      file.text().then((text) => {
-        try {
-          const imported = S.parseImport(text);
-          if (state.accounts.length && !confirm('Replace your current data with this backup?')) return;
-          state = imported;
-          commit('Backup imported');
-        } catch (e) {
-          alert(`Could not import: ${e.message}`);
-        }
-      });
+      importBackupText(await file.text());
       break;
     }
     default: break;
   }
 }
 
-function handleSubmit(form) {
+async function handleSubmit(form) {
   const type = form.dataset.form;
   if (type === 'line') {
     const line = readLineForm(form);
@@ -1561,7 +1648,7 @@ function handleSubmit(form) {
     try {
       new Intl.NumberFormat(s.locale, { style: 'currency', currency: s.currency });
     } catch (e) {
-      alert('That currency code or locale is not recognised.');
+      await notice('That currency code or locale is not recognised.');
       return;
     }
     ui.cashflow.months = s.horizonMonths;
@@ -1573,7 +1660,7 @@ function handleSubmit(form) {
     file.text().then((text) => {
       const rows = S.parseCsv(text);
       if (rows.length < 2) {
-        alert('The file needs a header row and at least one transaction.');
+        notice('The file needs a header row and at least one transaction.');
         return;
       }
       ui.csv = { step: 'map', headers: rows[0].map((h) => h.trim()), rows: rows.slice(1), accountId };
@@ -1684,7 +1771,7 @@ document.addEventListener('submit', (ev) => {
   handleSubmit(form);
 });
 document.addEventListener('keydown', (ev) => {
-  if (ev.key === 'Escape' && ui.modal) {
+  if (ev.key === 'Escape' && ui.modal && !(document.getElementById('bg-confirm') || {}).open) {
     ev.preventDefault();
     closeModal();
   }

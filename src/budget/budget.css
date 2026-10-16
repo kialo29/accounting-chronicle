@@ -298,3 +298,12 @@ body.dark-mode .tag.warn { color: #fab219; }
   .bg-nav, .bg-toolbar, .actions, .btn, .chart-table, .goal-actions { display: none !important; }
   .bg-card { break-inside: avoid; border: none; padding: 0; margin-bottom: 1.5rem; }
 }
+
+/* Confirmation dialog, export/import text areas */
+.bg-confirm { width: min(440px, 92vw); }
+.bg-confirm p { font-size: 1rem; }
+.budget-app textarea { font: inherit; font-size: 0.85rem; padding: 0.5rem 0.6rem; border: 1px solid var(--bg-border); border-radius: var(--radius-sm); background: var(--bg-surface); color: var(--bg-ink); width: 100%; resize: vertical; }
+.export-text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.78rem; white-space: pre; }
+.import-paste { margin-top: 1rem; }
+.import-paste summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.import-paste textarea { margin-top: 0.5rem; }

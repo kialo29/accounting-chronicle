@@ -91,6 +91,9 @@ browser's localStorage, with JSON export/import for backups and moving between d
 npm test
 ```
 
+**Standalone version**: `npm run build:standalone` writes `dist/budget-standalone.html`,
+a single file with everything inlined that you can open directly in a browser or host anywhere.
+
 ---
 
 ## 🌐 Custom Domain (Optional)
