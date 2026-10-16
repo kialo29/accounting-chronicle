@@ -79,11 +79,15 @@ browser's localStorage, with JSON export/import for backups and moving between d
 - **Statements**: income statement (budget vs actual vs expected, with variances),
   cash-flow statement, balance sheet (actual or projected, with comparison) and
   actual-vs-plan analysis by month and category.
+- **Take-home pay calculator**: UK PAYE (income tax incl. Scottish bands, National Insurance,
+  student loan plans, pension by salary sacrifice / net pay / relief at source, tax codes), with
+  salary comparison, "gross needed for a target take-home", editable tax-year rules, and a button
+  that applies the result to your salary item in the budget.
 - **Goals, scenarios and settings**: savings goals with projected completion dates,
   debt payoff dates, what-if scenarios you can switch on and off, pay-cycle budgeting,
   currency, horizon and buffer.
 
-**Files**: `src/budget/engine.js` (pure calculation engine), `app.js` (UI),
+**Files**: `src/budget/engine.js` (pure calculation engine), `tax.js` (take-home pay), `app.js` (UI),
 `charts.js` (SVG charts), `storage.js` (persistence, CSV), `sample.js` (example data),
 `budget.css`, `index.njk` (page). Unit tests for the engine live in `tests/` and run with:
 

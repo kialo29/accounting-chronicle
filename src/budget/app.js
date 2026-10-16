@@ -6,6 +6,7 @@ import * as E from './engine.js';
 import * as C from './charts.js';
 import * as S from './storage.js';
 import { sampleState } from './sample.js';
+import * as T from './tax.js';
 
 /* ------------------------------------------------------------
    Helpers
@@ -248,6 +249,7 @@ const VIEWS = [
   ['avp', 'Actual vs plan'],
   ['accounts', 'Accounts & goals'],
   ['scenarios', 'Scenarios'],
+  ['takehome', 'Take-home pay'],
   ['settings', 'Settings'],
 ];
 
@@ -279,6 +281,7 @@ function renderView() {
     case 'avp': return viewAvp();
     case 'accounts': return viewAccounts();
     case 'scenarios': return viewScenarios();
+    case 'takehome': return viewTakeHome();
     case 'settings': return viewSettings();
     default: return viewDashboard();
   }
@@ -917,6 +920,187 @@ function viewScenarios() {
 /* ------------------------------------------------------------
    Settings
    ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------
+   Take-home pay calculator
+   ------------------------------------------------------------ */
+const TH_DEFAULTS = { gross: 32000, frequency: 'monthly', scotland: false, taxCode: '1257L', pensionPct: 5, pensionMethod: 'salarySacrifice', employerPensionPct: 3, studentLoans: ['plan2'], noNI: false, compareGross: '', targetNet: '' };
+
+function thInputs() {
+  return { ...TH_DEFAULTS, ...((state.settings && state.settings.takeHome) || {}) };
+}
+function thRules() {
+  return T.rulesWith((state.settings && state.settings.taxRules) || {});
+}
+const pct = (v) => `${Math.round(v * 1000) / 10}%`;
+
+function viewTakeHome() {
+  const inp = thInputs();
+  const rules = thRules();
+  const overridden = Object.keys((state.settings && state.settings.taxRules) || {}).length;
+  const loans = Object.entries(rules.studentLoans);
+  return `<section class="bg-grid two takehome">
+    <div class="bg-card">
+      <h3>Your pay</h3>
+      <p class="muted small">UK PAYE rules for ${esc(rules.taxYear)}${overridden ? ' (edited)' : ''}. Salary only; benefits in kind, bonuses and other income are not included.</p>
+      <form data-form="takehome" class="bg-form" novalidate>
+        <div class="grid2">
+          <label>Gross annual salary (${esc(currencySymbol())}) <input id="th-gross" name="gross" type="number" min="0" step="100" value="${esc(inp.gross)}"></label>
+          <label>Paid <select id="th-frequency" name="frequency">${selectOptions(T.PAY_FREQUENCIES.map((f) => [f.id, f.label]), inp.frequency)}</select></label>
+          <label>Where you pay tax <select id="th-region" name="scotland">${selectOptions([['0', 'England, Wales or Northern Ireland'], ['1', 'Scotland']], inp.scotland ? '1' : '0')}</select></label>
+          <label>Tax code <input id="th-taxcode" name="taxCode" value="${esc(inp.taxCode)}" placeholder="1257L"><small>From your payslip. 1257L is the standard code.</small></label>
+        </div>
+        <fieldset><legend>Pension</legend>
+          <div class="grid3">
+            <label>You pay (% of salary) <input id="th-pension" name="pensionPct" type="number" min="0" max="100" step="0.5" value="${esc(inp.pensionPct)}"></label>
+            <label>Employer pays (%) <input id="th-emp-pension" name="employerPensionPct" type="number" min="0" max="100" step="0.5" value="${esc(inp.employerPensionPct)}"></label>
+            <label>How it is taken <select id="th-pension-method" name="pensionMethod">${selectOptions(T.PENSION_METHODS, inp.pensionMethod)}</select></label>
+          </div>
+        </fieldset>
+        <fieldset><legend>Student loans</legend>
+          <div class="check-row">${loans.map(([id, l]) => `<label class="check"><input type="checkbox" name="loan_${id}" id="th-loan-${id}" ${inp.studentLoans.includes(id) ? 'checked' : ''}> ${esc(l.label)}</label>`).join('')}</div>
+        </fieldset>
+        <label class="check"><input type="checkbox" name="noNI" id="th-noni" ${inp.noNI ? 'checked' : ''}> Over State Pension age (no employee National Insurance)</label>
+        <fieldset><legend>What-ifs <small class="muted">(optional)</small></legend>
+          <div class="grid2">
+            <label>Compare with another salary (${esc(currencySymbol())}) <input id="th-compare" name="compareGross" type="number" min="0" step="100" value="${esc(inp.compareGross)}" placeholder="e.g. a job offer"></label>
+            <label>Gross needed for a monthly take-home of <input id="th-target" name="targetNet" type="number" min="0" step="10" value="${esc(inp.targetNet)}" placeholder="e.g. 2500"></label>
+          </div>
+        </fieldset>
+      </form>
+      <details class="rules-editor" ${ui.rulesOpen ? 'open' : ''}>
+        <summary>Tax year rules (edit when rates change)</summary>
+        <form data-form="taxrules" class="bg-form">
+          <div class="grid3">${T.ruleFields().map(([path, label, type]) => {
+            const v = T.getPath(rules, path);
+            const shown = type === 'pct' ? Math.round(v * 10000) / 100 : v;
+            return `<label>${esc(label)}${type === 'pct' ? ' (%)' : ''} <input name="${esc(path)}" id="rule-${esc(path.replace(/\./g, '-'))}" type="${type === 'text' ? 'text' : 'number'}" step="any" value="${esc(shown)}"></label>`;
+          }).join('')}</div>
+          <div class="bg-actions"><button class="btn btn-primary" type="submit">Save rules</button><button class="btn btn-secondary" type="button" data-action="reset-rules">Reset to ${esc(T.DEFAULT_RULES.taxYear)} defaults</button></div>
+          <p class="muted small">Band limits are taxable income after the personal allowance. Your tax code sets your own allowance (1257L = £12,579), so update the code too if the standard allowance changes. Check the current figures on GOV.UK each April.</p>
+        </form>
+      </details>
+    </div>
+    <div class="bg-card" id="th-results">${takeHomeResults(inp, rules)}</div>
+  </section>`;
+}
+
+function takeHomeResults(inp, rules) {
+  const r = T.takeHome(inp, rules);
+  const cmp = inp.compareGross !== '' && Number(inp.compareGross) > 0 ? T.takeHome({ ...inp, gross: Number(inp.compareGross) }, rules) : null;
+  const periodLabel = r.frequency.id === 'monthly' ? 'a month' : r.frequency.id === 'weekly' ? 'a week' : r.frequency.id === 'fortnightly' ? 'a fortnight' : 'every 4 weeks';
+  const cols = ['annual', 'monthly', 'weekly'];
+  const colLabels = ['Per year', 'Per month', 'Per week'];
+  if (r.frequency.id === 'fourweekly' || r.frequency.id === 'fortnightly') {
+    cols.splice(2, 0, 'period');
+    colLabels.splice(2, 0, r.frequency.id === 'fourweekly' ? 'Per 4 weeks' : 'Per fortnight');
+  }
+  const row = (label, obj, { neg = false, cls = '' } = {}) => `<tr class="${cls}"><td>${label}</td>${cols.map((c) => `<td class="num ${neg && obj[c] ? 'neg' : ''}">${esc(fmtMoney(neg ? -obj[c] : obj[c]))}</td>`).join('')}</tr>`;
+  const pensionLabel = r.pensionMethod === 'reliefAtSource' ? 'Pension (80% of contribution, from pay)' : r.pensionMethod === 'netPay' ? 'Pension (net pay arrangement)' : 'Pension (salary sacrifice)';
+  let target = '';
+  if (inp.targetNet !== '' && Number(inp.targetNet) > 0) {
+    const g = T.grossForNet(Number(inp.targetNet) * 12, inp, rules);
+    target = `<p class="small">For a take-home of <b>${esc(money0(Number(inp.targetNet)))}</b> a month with these settings you need a gross salary of about <b>${esc(money0(Math.ceil(g / 100) * 100))}</b>.</p>`;
+  }
+  return `
+    <div class="stat stat-hero">
+      <div class="stat-label">Take-home pay</div>
+      <div class="stat-value">${esc(money0(r.net.period))} <span class="stat-unit">${periodLabel}</span></div>
+      <div class="stat-sub">${esc(money0(r.net.annual))} a year from a ${esc(money0(r.gross.annual))} salary. Deductions take ${esc(pct(r.gross.annual ? r.totalDeductions.annual / r.gross.annual : 0))}; every extra £1 you earn, you keep ${esc(fmtMoney(1 - r.marginalRate))}.</div>
+    </div>
+    ${r.warnings.map((w) => `<p class="small muted">${esc(w)}</p>`).join('')}
+    <div class="table-scroll"><table class="bg-table statement payslip">
+      <thead><tr><th></th>${colLabels.map((l) => `<th class="num">${l}</th>`).join('')}</tr></thead>
+      <tbody>
+        ${row('Gross pay', r.gross, { cls: 'strong' })}
+        ${r.pensionFromPay.annual ? row(pensionLabel, r.pensionFromPay, { neg: true }) : ''}
+        ${row('Income tax', r.incomeTax, { neg: true })}
+        ${row('National Insurance', r.nationalInsurance, { neg: true })}
+        ${r.studentLoan.annual ? row('Student loan', r.studentLoan, { neg: true }) : ''}
+        ${row('Take-home pay', r.net, { cls: 'strong total' })}
+      </tbody></table></div>
+    ${target}
+    <div class="bg-grid two compact">
+      <div>
+        <h4 class="group-title">Income tax</h4>
+        <table class="bg-table inner small">
+          <tr><td>Personal allowance</td><td class="num">${esc(fmtMoney(r.allowance))}</td></tr>
+          <tr><td>Taxable income</td><td class="num">${esc(fmtMoney(r.taxable))}</td></tr>
+          ${r.bands.map((b) => `<tr><td>${esc(b.name)} at ${esc(pct(b.rate))} on ${esc(money0(b.amount))}</td><td class="num">${esc(fmtMoney(b.tax))}</td></tr>`).join('')}
+          ${r.loans.map((l) => `<tr><td>${esc(l.label)}: ${esc(pct(l.rate))} above ${esc(money0(l.threshold))}</td><td class="num">${esc(fmtMoney(l.amount))}</td></tr>`).join('')}
+          <tr><td>Effective tax and NI rate</td><td class="num">${esc(pct(r.effectiveRate))}</td></tr>
+          <tr><td>Marginal rate on the next £1</td><td class="num">${esc(pct(r.marginalRate))}</td></tr>
+        </table>
+      </div>
+      <div>
+        <h4 class="group-title">Pension and employer cost</h4>
+        <table class="bg-table inner small">
+          <tr><td>Into your pension each year</td><td class="num">${esc(fmtMoney(r.pension.annual + r.employerPension.annual))}</td></tr>
+          <tr><td class="indent">from you${r.pensionMethod === 'reliefAtSource' ? ' (incl. 20% relief)' : ''}</td><td class="num">${esc(fmtMoney(r.pension.annual))}</td></tr>
+          <tr><td class="indent">from your employer</td><td class="num">${esc(fmtMoney(r.employerPension.annual))}</td></tr>
+          <tr><td>Employer National Insurance</td><td class="num">${esc(fmtMoney(r.employerNI.annual))}</td></tr>
+          <tr><td>Total cost to employer</td><td class="num">${esc(fmtMoney(r.employerCost.annual))}</td></tr>
+        </table>
+      </div>
+    </div>
+    ${cmp ? `<h4 class="group-title">Compared with ${esc(money0(cmp.gross.annual))}</h4>
+    <div class="table-scroll"><table class="bg-table statement payslip">
+      <thead><tr><th>Per month</th><th class="num">${esc(money0(r.gross.annual))}</th><th class="num">${esc(money0(cmp.gross.annual))}</th><th class="num">Difference</th></tr></thead>
+      <tbody>${[['Gross pay', 'gross'], ['Income tax', 'incomeTax'], ['National Insurance', 'nationalInsurance'], ['Student loan', 'studentLoan'], ['Pension (from pay)', 'pensionFromPay'], ['Take-home pay', 'net']].map(([label, k]) => `<tr class="${k === 'net' ? 'strong total' : ''}"><td>${label}</td><td class="num">${esc(fmtMoney(r[k].monthly))}</td><td class="num">${esc(fmtMoney(cmp[k].monthly))}</td>${varianceCell(cmp[k].monthly - r[k].monthly, { good: k === 'gross' || k === 'net' ? 'pos' : 'neg' })}</tr>`).join('')}</tbody></table></div>
+    <p class="small muted">A ${esc(money0(cmp.gross.annual - r.gross.annual))} change in salary is worth ${esc(fmtMoney(cmp.net.monthly - r.net.monthly, { signed: true }))} a month in your pocket.</p>` : ''}
+    <div class="bg-actions">
+      <button class="btn btn-primary" data-action="open-modal" data-modal="apply-salary" data-net="${r.net.monthly.toFixed(2)}" data-gross="${r.gross.annual}">Use ${esc(money0(r.net.monthly))} a month as my salary in the budget</button>
+      ${cmp ? `<button class="btn btn-secondary" data-action="open-modal" data-modal="apply-salary" data-net="${cmp.net.monthly.toFixed(2)}" data-gross="${cmp.gross.annual}">Use the ${esc(money0(cmp.gross.annual))} figure instead</button>` : ''}
+    </div>`;
+}
+
+function readTakeHomeForm(form) {
+  const fd = new FormData(form);
+  const g = (k) => (fd.get(k) ?? '').toString().trim();
+  const loans = Object.keys(T.DEFAULT_RULES.studentLoans).filter((id) => form[`loan_${id}`] && form[`loan_${id}`].checked);
+  return {
+    gross: Number(g('gross')) || 0,
+    frequency: g('frequency') || 'monthly',
+    scotland: g('scotland') === '1',
+    taxCode: g('taxCode') || '1257L',
+    pensionPct: Number(g('pensionPct')) || 0,
+    employerPensionPct: Number(g('employerPensionPct')) || 0,
+    pensionMethod: g('pensionMethod') || 'salarySacrifice',
+    studentLoans: loans,
+    noNI: !!(form.noNI && form.noNI.checked),
+    compareGross: g('compareGross'),
+    targetNet: g('targetNet'),
+  };
+}
+
+function refreshTakeHome(form) {
+  const next = readTakeHomeForm(form);
+  const box = root.querySelector('#th-results');
+  // Skip when nothing changed (e.g. the blur that happens when clicking a results button),
+  // so the results are not re-rendered under the user's click.
+  if (box && JSON.stringify(next) === JSON.stringify(state.settings.takeHome)) return;
+  state.settings.takeHome = next;
+  S.save(state);
+  if (box) box.innerHTML = takeHomeResults(thInputs(), thRules());
+}
+
+function applySalaryForm(spec) {
+  const incomeLines = state.lines.filter((l) => l.kind === 'income');
+  const current = incomeLines.find((l) => /salary|wages|pay/i.test(l.name)) || incomeLines[0];
+  return `${modalHead('Use this take-home pay in the budget')}
+  <form data-form="apply-salary" class="bg-form" novalidate>
+    <input type="hidden" name="net" value="${esc(spec.net)}">
+    <p class="small muted">Monthly take-home of <b>${esc(fmtMoney(Number(spec.net)))}</b> from a ${esc(money0(Number(spec.gross)))} salary.</p>
+    <div class="grid2">
+      <label>Apply to <select name="target" id="apply-target">${selectOptions([['new', 'Create a new salary item'], ...incomeLines.map((l) => [l.id, `Update "${l.name}" (${money0(E.amountAt(l, forecast.asOf).expected)} now)`])], current ? current.id : 'new')}</select></label>
+      <label>From <input name="from" id="apply-from" type="date" value="${esc(forecast.asOf)}"><small>Earlier occurrences keep their current amount, so a pay rise or new job from a future date is recorded as a change.</small></label>
+      <label>Paid into <select name="accountId" id="apply-account">${accountOptions((state.accounts.find((a) => a.type === 'current') || state.accounts[0] || {}).id)}</select></label>
+      <label>Pay day (new items) <select name="payday" id="apply-payday">${selectOptions([['last', 'Last working day of the month'], ...Array.from({ length: 28 }, (_, i) => [String(i + 1), ordinal(i + 1)])], 'last')}</select></label>
+    </div>
+    <div class="bg-actions"><button class="btn btn-primary" type="submit">Apply</button><button class="btn btn-secondary" type="button" data-action="close-modal">Cancel</button></div>
+  </form>`;
+}
+
 function viewSettings() {
   const s = state.settings;
   return `<section class="bg-card">
@@ -992,6 +1176,7 @@ function modalContent(spec) {
     case 'balance': return balanceForm(spec);
     case 'csv': return csvForm(spec);
     case 'export': return exportView(spec);
+    case 'apply-salary': return applySalaryForm(spec);
     default: return '';
   }
 }
@@ -1346,6 +1531,14 @@ async function handleAction(action, el) {
       const spec = { type };
       if (type === 'line' && el.dataset.scenario) spec.scenario = el.dataset.scenario;
       if (type === 'balance') spec.id = id;
+      if (type === 'apply-salary') {
+        spec.net = el.dataset.net;
+        spec.gross = el.dataset.gross;
+        if (!state.accounts.length) {
+          notice('Add an account first (Accounts & goals), so the salary has somewhere to be paid into.');
+          return;
+        }
+      }
       if (type === 'csv') ui.csv = null;
       openModal(spec);
       break;
@@ -1399,6 +1592,11 @@ async function handleAction(action, el) {
       break;
     }
     case 'budget-kind': ui.budget.kind = el.dataset.kind; render(); break;
+    case 'reset-rules':
+      delete state.settings.taxRules;
+      ui.rulesOpen = true;
+      commit('Tax rules reset to defaults');
+      break;
     case 'edit-line': openModal({ type: 'line', line: lineById(id) }); break;
     case 'dup-line': {
       const l = lineById(id);
@@ -1653,6 +1851,56 @@ async function handleSubmit(form) {
     }
     ui.cashflow.months = s.horizonMonths;
     commit('Settings saved');
+  } else if (type === 'taxrules') {
+    const fd = new FormData(form);
+    const overrides = {};
+    for (const [path, , kind] of T.ruleFields()) {
+      const raw = (fd.get(path) ?? '').toString().trim();
+      const def = T.getPath(T.DEFAULT_RULES, path);
+      let v;
+      if (kind === 'text') v = raw || def;
+      else if (raw === '') v = def;
+      else v = kind === 'pct' ? Number(raw) / 100 : Number(raw);
+      if (Number.isNaN(v)) v = def;
+      if (v !== def) overrides[path] = v;
+    }
+    state.settings.taxRules = overrides;
+    ui.rulesOpen = true;
+    commit('Tax rules saved');
+  } else if (type === 'takehome') {
+    refreshTakeHome(form);
+  } else if (type === 'apply-salary') {
+    const fd = new FormData(form);
+    const g = (k) => (fd.get(k) ?? '').toString().trim();
+    const net = Math.round(Number(g('net')) * 100) / 100;
+    const from = g('from') || forecast.asOf;
+    const target = g('target');
+    if (target === 'new') {
+      const payday = g('payday');
+      state.lines.push({
+        id: S.uid('ln'), name: 'Salary (net)', kind: 'income', category: 'Salary', flowType: 'fixed', accountId: g('accountId'), toAccountId: null,
+        amount: net, amountMin: null, amountMax: null, annualGrowthPct: 0,
+        schedule: { frequency: 'monthly', interval: 1, start: from, end: null, dayOfMonth: payday === 'last' ? 'last' : Number(payday), weekendRule: 'previous' },
+        changes: [], skips: [], scenarioId: null, active: true, notes: 'From the take-home pay calculator',
+      });
+      closeModal();
+      commit('Salary item added to the budget');
+    } else {
+      const line = lineById(target);
+      if (!line) return;
+      if (from <= line.schedule.start) {
+        line.amount = net;
+        line.amountMin = null;
+        line.amountMax = null;
+        line.changes = (line.changes || []).filter((c) => c.from > from);
+      } else {
+        line.changes = (line.changes || []).filter((c) => c.from !== from);
+        line.changes.push({ from, amount: net, amountMin: null, amountMax: null, note: 'From the take-home pay calculator' });
+        line.changes.sort((a, b) => (a.from < b.from ? -1 : 1));
+      }
+      closeModal();
+      commit(`"${line.name}" updated`);
+    }
   } else if (type === 'csv-file') {
     const file = form.file.files && form.file.files[0];
     const accountId = form.accountId.value;
@@ -1743,6 +1991,7 @@ document.addEventListener('change', (ev) => {
   const el = ev.target;
   if (!root.contains(el)) return;
   if (el.dataset.change) handleChange(el.dataset.change, el);
+  if (el.closest('form[data-form="takehome"]')) refreshTakeHome(el.closest('form'));
   const form = el.closest('form');
   if (form && form.dataset.form === 'line') syncLineForm(form);
   if (form && form.dataset.form === 'transaction') syncTxForm(form);
@@ -1750,6 +1999,12 @@ document.addEventListener('change', (ev) => {
 let searchTimer = null;
 document.addEventListener('input', (ev) => {
   const el = ev.target;
+  const thForm = el.closest && el.closest('form[data-form="takehome"]');
+  if (thForm) {
+    clearTimeout(searchTimer);
+    searchTimer = setTimeout(() => refreshTakeHome(thForm), 250);
+    return;
+  }
   if (!el.dataset || !el.dataset.input) return;
   clearTimeout(searchTimer);
   searchTimer = setTimeout(() => {
@@ -1770,6 +2025,9 @@ document.addEventListener('submit', (ev) => {
   ev.preventDefault();
   handleSubmit(form);
 });
+document.addEventListener('toggle', (ev) => {
+  if (ev.target && ev.target.classList && ev.target.classList.contains('rules-editor')) ui.rulesOpen = ev.target.open;
+}, true);
 document.addEventListener('keydown', (ev) => {
   if (ev.key === 'Escape' && ui.modal && !(document.getElementById('bg-confirm') || {}).open) {
     ev.preventDefault();

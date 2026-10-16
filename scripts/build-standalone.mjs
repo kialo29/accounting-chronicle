@@ -31,7 +31,7 @@ function moduleToIife(name, code, deps) {
   return `const __${name} = (() => {\n${out}\nreturn { ${exported.join(', ')} };\n})();\n`;
 }
 
-const modules = ['engine', 'charts', 'storage', 'sample'].map((m) => moduleToIife(m, read(`${m}.js`)));
+const modules = ['engine', 'charts', 'storage', 'sample', 'tax'].map((m) => moduleToIife(m, read(`${m}.js`)));
 const appCode = read('app.js')
   .replace(/^import \* as (\w+) from '\.\/(\w+)\.js';\s*$/gm, (m, alias, mod) => `const ${alias} = __${mod};`)
   .replace(/^import \{([^}]+)\} from '\.\/(\w+)\.js';/gm, (m, names, mod) => `const {${names}} = __${mod};`);
