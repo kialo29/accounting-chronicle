@@ -96,3 +96,48 @@ test('gross for a target net and editable rules', () => {
   const r = takeHome({ gross: 30000 }, rules);
   near(r.incomeTax.annual, (30000 - 13000) * 0.2, 'custom allowance');
 });
+
+test('taxable benefits are taxed but not NI\'d and not paid as cash', () => {
+  const base = takeHome({ gross: 30000 });
+  const r = takeHome({ gross: 30000, taxableBenefits: 1000 });
+  near(r.incomeTax.annual - base.incomeTax.annual, 200, 'tax on PMI');
+  near(r.nationalInsurance.annual, base.nationalInsurance.annual, 'NI unchanged');
+  near(r.net.annual, base.net.annual - 200, 'net down by the tax only');
+  assert.ok(r.warnings.some((w) => /benefits/i.test(w)));
+});
+
+test('bought holiday and other salary sacrifice reduce tax and NI', () => {
+  const r = takeHome({ gross: 26000, holidayDays: 5, workingDays: 260, otherSacrifice: 500 });
+  near(r.holidayCost.annual, 500, '5 days at £100');
+  near(r.incomeTax.annual, (25000 - 12570) * 0.2, 'tax on reduced pay');
+  near(r.nationalInsurance.annual, (25000 - 12570) * 0.08, 'NI on reduced pay');
+  near(r.net.annual, 25000 - r.incomeTax.annual - r.nationalInsurance.annual, 'net');
+});
+
+test('payroll giving relieves tax but not NI', () => {
+  const r = takeHome({ gross: 30000, payrollGiving: 600 });
+  near(r.incomeTax.annual, (29400 - 12570) * 0.2, 'tax');
+  near(r.nationalInsurance.annual, (30000 - 12570) * 0.08, 'NI');
+  near(r.net.annual, 30000 - 600 - r.incomeTax.annual - r.nationalInsurance.annual, 'net');
+});
+
+test('company loan and other after-tax deductions, with payoff', () => {
+  const base = takeHome({ gross: 30000 });
+  const r = takeHome({ gross: 30000, loanRepayment: 100, loanBalance: 1450, otherNetDeductions: 20 });
+  near(r.incomeTax.annual, base.incomeTax.annual, 'tax unchanged');
+  near(r.net.annual, base.net.annual - 1200 - 240, 'net');
+  near(r.netAfterLoan.monthly, r.net.monthly + 100, 'after loan');
+  assert.equal(r.loanPeriods, 15);
+  const w = takeHome({ gross: 30000, frequency: 'weekly', loanRepayment: 25, loanBalance: 1000 });
+  near(w.loanRepayment.annual, 1300, 'weekly x52');
+  assert.equal(w.loanPeriods, 40);
+});
+
+test('bonus is taxed as earnings and not pensionable', () => {
+  const r = takeHome({ gross: 30000, bonus: 2000, pensionPct: 5, pensionMethod: 'salarySacrifice', studentLoans: ['plan2'] });
+  near(r.pension.annual, 1500, 'pension on base');
+  near(r.incomeTax.annual, (30500 - 12570) * 0.2, 'tax');
+  near(r.nationalInsurance.annual, (30500 - 12570) * 0.08, 'NI');
+  near(r.studentLoan.annual, (30500 - 28470) * 0.09, 'loan');
+  near(r.totalPay.annual, 32000, 'total pay');
+});

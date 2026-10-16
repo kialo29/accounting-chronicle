@@ -924,7 +924,7 @@ function viewScenarios() {
 /* ------------------------------------------------------------
    Take-home pay calculator
    ------------------------------------------------------------ */
-const TH_DEFAULTS = { gross: 32000, frequency: 'monthly', scotland: false, taxCode: '1257L', pensionPct: 5, pensionMethod: 'salarySacrifice', employerPensionPct: 3, studentLoans: ['plan2'], noNI: false, compareGross: '', targetNet: '' };
+const TH_DEFAULTS = { gross: 32000, frequency: 'monthly', scotland: false, taxCode: '1257L', pensionPct: 5, pensionMethod: 'salarySacrifice', employerPensionPct: 3, studentLoans: ['plan2'], noNI: false, compareGross: '', targetNet: '', bonus: '', taxableBenefits: '', holidayDays: '', workingDays: 260, otherSacrifice: '', payrollGiving: '', loanRepayment: '', loanBalance: '', otherNetDeductions: '' };
 
 function thInputs() {
   return { ...TH_DEFAULTS, ...((state.settings && state.settings.takeHome) || {}) };
@@ -933,6 +933,10 @@ function thRules() {
   return T.rulesWith((state.settings && state.settings.taxRules) || {});
 }
 const pct = (v) => `${Math.round(v * 1000) / 10}%`;
+function loanEndDate(r) {
+  const days = Math.round((r.loanPeriods * 365) / r.frequency.perYear);
+  return E.addDays(forecast.asOf, days);
+}
 
 function viewTakeHome() {
   const inp = thInputs();
@@ -961,6 +965,23 @@ function viewTakeHome() {
           <div class="check-row">${loans.map(([id, l]) => `<label class="check"><input type="checkbox" name="loan_${id}" id="th-loan-${id}" ${inp.studentLoans.includes(id) ? 'checked' : ''}> ${esc(l.label)}</label>`).join('')}</div>
         </fieldset>
         <label class="check"><input type="checkbox" name="noNI" id="th-noni" ${inp.noNI ? 'checked' : ''}> Over State Pension age (no employee National Insurance)</label>
+        <fieldset><legend>Benefits, bonus and salary sacrifice <small class="muted">(per year)</small></legend>
+          <div class="grid2">
+            <label>Taxable benefits (${esc(currencySymbol())}) <input id="th-benefits" name="taxableBenefits" type="number" min="0" step="10" value="${esc(inp.taxableBenefits)}" placeholder="e.g. 600"><small>Private medical insurance, company car, gym: the taxable value on your P11D or payslip.</small></label>
+            <label>Bonus (${esc(currencySymbol())}) <input id="th-bonus" name="bonus" type="number" min="0" step="100" value="${esc(inp.bonus)}" placeholder="e.g. 1500"><small>Taxed as pay. Pension is worked out on base salary only.</small></label>
+            <label>Holiday purchased (days) <input id="th-holiday" name="holidayDays" type="number" min="0" max="60" step="0.5" value="${esc(inp.holidayDays)}" placeholder="e.g. 5"><small>Priced at salary ÷ working days, taken by salary sacrifice.</small></label>
+            <label>Working days a year <input id="th-workdays" name="workingDays" type="number" min="200" max="366" step="1" value="${esc(inp.workingDays)}"></label>
+            <label>Other salary sacrifice (${esc(currencySymbol())}) <input id="th-sacrifice" name="otherSacrifice" type="number" min="0" step="10" value="${esc(inp.otherSacrifice)}" placeholder="e.g. 1200"><small>Cycle to work, electric car lease, childcare: saves tax and NI.</small></label>
+            <label>Payroll giving (${esc(currencySymbol())}) <input id="th-giving" name="payrollGiving" type="number" min="0" step="10" value="${esc(inp.payrollGiving)}" placeholder="e.g. 120"><small>Charity from pre-tax pay: saves tax, not NI.</small></label>
+          </div>
+        </fieldset>
+        <fieldset><legend>Taken from pay after tax <small class="muted">(per ${inp.frequency === 'monthly' ? 'month' : inp.frequency === 'weekly' ? 'week' : 'pay period'})</small></legend>
+          <div class="grid3">
+            <label>Company / graduate loan repayment (${esc(currencySymbol())}) <input id="th-loan" name="loanRepayment" type="number" min="0" step="5" value="${esc(inp.loanRepayment)}" placeholder="e.g. 150"></label>
+            <label>Loan balance left (${esc(currencySymbol())}) <input id="th-loan-balance" name="loanBalance" type="number" min="0" step="10" value="${esc(inp.loanBalance)}" placeholder="e.g. 1800"><small>So we can show when it clears.</small></label>
+            <label>Other deductions (${esc(currencySymbol())}) <input id="th-other-net" name="otherNetDeductions" type="number" min="0" step="5" value="${esc(inp.otherNetDeductions)}" placeholder="e.g. 25"><small>Season ticket loan, union fees, sports club.</small></label>
+          </div>
+        </fieldset>
         <fieldset><legend>What-ifs <small class="muted">(optional)</small></legend>
           <div class="grid2">
             <label>Compare with another salary (${esc(currencySymbol())}) <input id="th-compare" name="compareGross" type="number" min="0" step="100" value="${esc(inp.compareGross)}" placeholder="e.g. a job offer"></label>
@@ -1006,20 +1027,28 @@ function takeHomeResults(inp, rules) {
     <div class="stat stat-hero">
       <div class="stat-label">Take-home pay</div>
       <div class="stat-value">${esc(money0(r.net.period))} <span class="stat-unit">${periodLabel}</span></div>
-      <div class="stat-sub">${esc(money0(r.net.annual))} a year from a ${esc(money0(r.gross.annual))} salary. Deductions take ${esc(pct(r.gross.annual ? r.totalDeductions.annual / r.gross.annual : 0))}; every extra £1 you earn, you keep ${esc(fmtMoney(1 - r.marginalRate))}.</div>
+      <div class="stat-sub">${esc(money0(r.net.annual))} a year from ${esc(money0(r.totalPay.annual))} of pay${r.taxableBenefits.annual ? ` plus ${esc(money0(r.taxableBenefits.annual))} of taxable benefits` : ''}. Deductions take ${esc(pct(r.totalPay.annual ? r.totalDeductions.annual / r.totalPay.annual : 0))}; every extra £1 you earn, you keep ${esc(fmtMoney(1 - r.marginalRate))}.</div>
     </div>
     ${r.warnings.map((w) => `<p class="small muted">${esc(w)}</p>`).join('')}
     <div class="table-scroll"><table class="bg-table statement payslip">
       <thead><tr><th></th>${colLabels.map((l) => `<th class="num">${l}</th>`).join('')}</tr></thead>
       <tbody>
-        ${row('Gross pay', r.gross, { cls: 'strong' })}
+        ${row(r.bonus.annual ? 'Salary' : 'Gross pay', r.gross, { cls: r.bonus.annual ? '' : 'strong' })}
+        ${r.bonus.annual ? row('Bonus', r.bonus) + row('Gross pay', r.totalPay, { cls: 'strong' }) : ''}
+        ${r.holidayCost.annual ? row('Holiday purchase (salary sacrifice)', r.holidayCost, { neg: true }) : ''}
+        ${r.otherSacrifice.annual ? row('Other salary sacrifice', r.otherSacrifice, { neg: true }) : ''}
         ${r.pensionFromPay.annual ? row(pensionLabel, r.pensionFromPay, { neg: true }) : ''}
+        ${r.payrollGiving.annual ? row('Payroll giving', r.payrollGiving, { neg: true }) : ''}
         ${row('Income tax', r.incomeTax, { neg: true })}
         ${row('National Insurance', r.nationalInsurance, { neg: true })}
         ${r.studentLoan.annual ? row('Student loan', r.studentLoan, { neg: true }) : ''}
+        ${r.loanRepayment.annual ? row('Company loan repayment', r.loanRepayment, { neg: true }) : ''}
+        ${r.otherNetDeductions.annual ? row('Other deductions', r.otherNetDeductions, { neg: true }) : ''}
         ${row('Take-home pay', r.net, { cls: 'strong total' })}
+        ${r.taxableBenefits.annual ? `<tr class="muted"><td>Taxable benefits (tax included above, not paid as cash)</td>${cols.map((c) => `<td class="num">${esc(fmtMoney(r.taxableBenefits[c]))}</td>`).join('')}</tr>` : ''}
       </tbody></table></div>
     ${target}
+    ${r.loanPeriods ? `<p class="small">The company loan clears after <b>${r.loanPeriods}</b> more ${r.frequency.id === 'monthly' ? 'months' : 'pay periods'} (around ${esc(fmtDay(loanEndDate(r)))}); your take-home then rises to <b>${esc(money0(r.netAfterLoan.monthly))}</b> a month.</p>` : ''}
     <div class="bg-grid two compact">
       <div>
         <h4 class="group-title">Income tax</h4>
@@ -1039,6 +1068,7 @@ function takeHomeResults(inp, rules) {
           <tr><td class="indent">from you${r.pensionMethod === 'reliefAtSource' ? ' (incl. 20% relief)' : ''}</td><td class="num">${esc(fmtMoney(r.pension.annual))}</td></tr>
           <tr><td class="indent">from your employer</td><td class="num">${esc(fmtMoney(r.employerPension.annual))}</td></tr>
           <tr><td>Employer National Insurance</td><td class="num">${esc(fmtMoney(r.employerNI.annual))}</td></tr>
+          ${r.taxableBenefits.annual ? `<tr><td>Benefits provided</td><td class="num">${esc(fmtMoney(r.taxableBenefits.annual))}</td></tr>` : ''}
           <tr><td>Total cost to employer</td><td class="num">${esc(fmtMoney(r.employerCost.annual))}</td></tr>
         </table>
       </div>
@@ -1046,10 +1076,10 @@ function takeHomeResults(inp, rules) {
     ${cmp ? `<h4 class="group-title">Compared with ${esc(money0(cmp.gross.annual))}</h4>
     <div class="table-scroll"><table class="bg-table statement payslip">
       <thead><tr><th>Per month</th><th class="num">${esc(money0(r.gross.annual))}</th><th class="num">${esc(money0(cmp.gross.annual))}</th><th class="num">Difference</th></tr></thead>
-      <tbody>${[['Gross pay', 'gross'], ['Income tax', 'incomeTax'], ['National Insurance', 'nationalInsurance'], ['Student loan', 'studentLoan'], ['Pension (from pay)', 'pensionFromPay'], ['Take-home pay', 'net']].map(([label, k]) => `<tr class="${k === 'net' ? 'strong total' : ''}"><td>${label}</td><td class="num">${esc(fmtMoney(r[k].monthly))}</td><td class="num">${esc(fmtMoney(cmp[k].monthly))}</td>${varianceCell(cmp[k].monthly - r[k].monthly, { good: k === 'gross' || k === 'net' ? 'pos' : 'neg' })}</tr>`).join('')}</tbody></table></div>
+      <tbody>${[['Gross pay', 'totalPay'], ['Holiday purchase', 'holidayCost'], ['Income tax', 'incomeTax'], ['National Insurance', 'nationalInsurance'], ['Student loan', 'studentLoan'], ['Pension (from pay)', 'pensionFromPay'], ['Company loan repayment', 'loanRepayment'], ['Take-home pay', 'net']].filter(([, k]) => r[k].annual || cmp[k].annual || k === 'totalPay' || k === 'net').map(([label, k]) => `<tr class="${k === 'net' ? 'strong total' : ''}"><td>${label}</td><td class="num">${esc(fmtMoney(r[k].monthly))}</td><td class="num">${esc(fmtMoney(cmp[k].monthly))}</td>${varianceCell(cmp[k].monthly - r[k].monthly, { good: k === 'totalPay' || k === 'net' ? 'pos' : 'neg' })}</tr>`).join('')}</tbody></table></div>
     <p class="small muted">A ${esc(money0(cmp.gross.annual - r.gross.annual))} change in salary is worth ${esc(fmtMoney(cmp.net.monthly - r.net.monthly, { signed: true }))} a month in your pocket.</p>` : ''}
     <div class="bg-actions">
-      <button class="btn btn-primary" data-action="open-modal" data-modal="apply-salary" data-net="${r.net.monthly.toFixed(2)}" data-gross="${r.gross.annual}">Use ${esc(money0(r.net.monthly))} a month as my salary in the budget</button>
+      <button class="btn btn-primary" data-action="open-modal" data-modal="apply-salary" data-net="${r.net.monthly.toFixed(2)}" data-gross="${r.gross.annual}" data-after-loan="${r.loanPeriods ? r.netAfterLoan.monthly.toFixed(2) : ''}" data-loan-end="${r.loanPeriods ? loanEndDate(r) : ''}">Use ${esc(money0(r.net.monthly))} a month as my salary in the budget</button>
       ${cmp ? `<button class="btn btn-secondary" data-action="open-modal" data-modal="apply-salary" data-net="${cmp.net.monthly.toFixed(2)}" data-gross="${cmp.gross.annual}">Use the ${esc(money0(cmp.gross.annual))} figure instead</button>` : ''}
     </div>`;
 }
@@ -1070,6 +1100,15 @@ function readTakeHomeForm(form) {
     noNI: !!(form.noNI && form.noNI.checked),
     compareGross: g('compareGross'),
     targetNet: g('targetNet'),
+    bonus: g('bonus'),
+    taxableBenefits: g('taxableBenefits'),
+    holidayDays: g('holidayDays'),
+    workingDays: Number(g('workingDays')) || 260,
+    otherSacrifice: g('otherSacrifice'),
+    payrollGiving: g('payrollGiving'),
+    loanRepayment: g('loanRepayment'),
+    loanBalance: g('loanBalance'),
+    otherNetDeductions: g('otherNetDeductions'),
   };
 }
 
@@ -1097,6 +1136,7 @@ function applySalaryForm(spec) {
       <label>Paid into <select name="accountId" id="apply-account">${accountOptions((state.accounts.find((a) => a.type === 'current') || state.accounts[0] || {}).id)}</select></label>
       <label>Pay day (new items) <select name="payday" id="apply-payday">${selectOptions([['last', 'Last working day of the month'], ...Array.from({ length: 28 }, (_, i) => [String(i + 1), ordinal(i + 1)])], 'last')}</select></label>
     </div>
+    ${spec.afterLoan ? `<label class="check"><input type="checkbox" name="loanBump" id="apply-loan-bump" checked> Rise to ${esc(fmtMoney(Number(spec.afterLoan)))} a month from ${esc(fmtDay(spec.loanEnd))}, when the company loan is repaid</label><input type="hidden" name="afterLoan" value="${esc(spec.afterLoan)}"><input type="hidden" name="loanEnd" value="${esc(spec.loanEnd)}"` : ''}
     <div class="bg-actions"><button class="btn btn-primary" type="submit">Apply</button><button class="btn btn-secondary" type="button" data-action="close-modal">Cancel</button></div>
   </form>`;
 }
@@ -1534,6 +1574,8 @@ async function handleAction(action, el) {
       if (type === 'apply-salary') {
         spec.net = el.dataset.net;
         spec.gross = el.dataset.gross;
+        spec.afterLoan = el.dataset.afterLoan || '';
+        spec.loanEnd = el.dataset.loanEnd || '';
         if (!state.accounts.length) {
           notice('Add an account first (Accounts & goals), so the salary has somewhere to be paid into.');
           return;
@@ -1875,13 +1917,16 @@ async function handleSubmit(form) {
     const net = Math.round(Number(g('net')) * 100) / 100;
     const from = g('from') || forecast.asOf;
     const target = g('target');
+    const bump = form.loanBump && form.loanBump.checked && g('afterLoan') && g('loanEnd') > from
+      ? { from: g('loanEnd'), amount: Math.round(Number(g('afterLoan')) * 100) / 100, amountMin: null, amountMax: null, note: 'Company loan repaid' }
+      : null;
     if (target === 'new') {
       const payday = g('payday');
       state.lines.push({
         id: S.uid('ln'), name: 'Salary (net)', kind: 'income', category: 'Salary', flowType: 'fixed', accountId: g('accountId'), toAccountId: null,
         amount: net, amountMin: null, amountMax: null, annualGrowthPct: 0,
         schedule: { frequency: 'monthly', interval: 1, start: from, end: null, dayOfMonth: payday === 'last' ? 'last' : Number(payday), weekendRule: 'previous' },
-        changes: [], skips: [], scenarioId: null, active: true, notes: 'From the take-home pay calculator',
+        changes: bump ? [bump] : [], skips: [], scenarioId: null, active: true, notes: 'From the take-home pay calculator',
       });
       closeModal();
       commit('Salary item added to the budget');
@@ -1896,8 +1941,12 @@ async function handleSubmit(form) {
       } else {
         line.changes = (line.changes || []).filter((c) => c.from !== from);
         line.changes.push({ from, amount: net, amountMin: null, amountMax: null, note: 'From the take-home pay calculator' });
-        line.changes.sort((a, b) => (a.from < b.from ? -1 : 1));
       }
+      if (bump) {
+        line.changes = (line.changes || []).filter((c) => c.from !== bump.from);
+        line.changes.push(bump);
+      }
+      line.changes.sort((a, b) => (a.from < b.from ? -1 : 1));
       closeModal();
       commit(`"${line.name}" updated`);
     }

@@ -70,54 +70,64 @@ function round2(n) {
 
 /**
  * input = {
- *   gross,                 // annual salary before deductions
+ *   gross,                 // annual base salary before deductions
+ *   bonus: 0,              // annual bonus, taxed and NI'd as earnings (not pensionable here)
  *   scotland: false,
  *   taxCode: '1257L',      // optional; overrides the standard allowance
- *   pensionPct: 0,         // employee contribution, % of gross
+ *   pensionPct: 0,         // employee contribution, % of base salary
  *   pensionMethod: 'salarySacrifice' | 'netPay' | 'reliefAtSource',
  *   employerPensionPct: 0, // for the employer cost line only
  *   studentLoans: ['plan2', 'postgrad'],
  *   noNI: false,           // over State Pension age
  *   frequency: 'monthly',
+ *   taxableBenefits: 0,    // annual taxable value of benefits in kind (PMI, car): taxed, not NI'd, not cash
+ *   holidayDays: 0,        // days of extra leave bought through salary sacrifice
+ *   workingDays: 260,      // days a year used to price a day of leave
+ *   otherSacrifice: 0,     // annual: cycle to work, EV lease, childcare etc.
+ *   payrollGiving: 0,      // annual: charity from pre-tax pay (tax relief, no NI relief)
+ *   loanRepayment: 0,      // per pay period, from net pay (company / graduate loan)
+ *   loanBalance: 0,        // remaining balance, to show when it clears
+ *   otherNetDeductions: 0, // per pay period, from net pay (season ticket loan, union fees…)
  * }
  */
-export function takeHome(input, rules = DEFAULT_RULES) {
+function compute(input, rules) {
   const gross = Math.max(0, Number(input.gross) || 0);
+  const bonus = Math.max(0, Number(input.bonus) || 0);
   const pensionPct = Math.max(0, Number(input.pensionPct) || 0) / 100;
   const method = input.pensionMethod || 'salarySacrifice';
-  const pensionGross = round2(gross * pensionPct); // the amount that ends up in the pension
-  const warnings = [];
+  const freq = PAY_FREQUENCIES.find((f) => f.id === input.frequency) || PAY_FREQUENCIES[0];
+  const num = (k) => Math.max(0, Number(input[k]) || 0);
 
-  // Earnings used for each calculation
-  const salaryForNI = method === 'salarySacrifice' ? gross - pensionGross : gross;
-  const salaryForTax = method === 'salarySacrifice' || method === 'netPay' ? gross - pensionGross : gross;
+  const pensionGross = round2(gross * pensionPct);
+  const workingDays = Math.max(1, Number(input.workingDays) || 260);
+  const holidayCost = round2((gross / workingDays) * num('holidayDays'));
+  const otherSacrifice = round2(num('otherSacrifice'));
+  const sacrifice = (method === 'salarySacrifice' ? pensionGross : 0) + holidayCost + otherSacrifice;
+  const payrollGiving = round2(num('payrollGiving'));
+  const taxableBenefits = round2(num('taxableBenefits'));
+  const loanRepayment = round2(num('loanRepayment') * freq.perYear);
+  const otherNetDeductions = round2(num('otherNetDeductions') * freq.perYear);
+
+  const earnings = gross + bonus - sacrifice; // cash earnings after salary sacrifice
+  const salaryForNI = Math.max(0, earnings);
+  const salaryForTax = Math.max(0, earnings - (method === 'netPay' ? pensionGross : 0) - payrollGiving + taxableBenefits);
   const deductedFromPay = method === 'reliefAtSource' ? round2(pensionGross * 0.8) : method === 'netPay' ? pensionGross : 0;
-  if (method === 'reliefAtSource' && pensionGross > 0) {
-    warnings.push('Relief at source: basic-rate relief is added to your pension automatically. Higher or additional-rate taxpayers claim the rest through Self Assessment.');
-  }
 
-  // Personal allowance (tax code, then taper above £100k based on adjusted net income)
   let allowance = allowanceFromTaxCode(input.taxCode, rules);
-  if (allowance == null) {
-    warnings.push(`Tax code "${input.taxCode}" was not recognised, so the standard allowance was used.`);
-    allowance = rules.personalAllowance;
-  }
-  const adjustedNetIncome = salaryForTax;
-  if (adjustedNetIncome > rules.paTaperStart && allowance > 0) {
-    const reduction = Math.floor((adjustedNetIncome - rules.paTaperStart) / 2);
-    allowance = Math.max(0, allowance - reduction);
+  const badCode = allowance == null;
+  if (badCode) allowance = rules.personalAllowance;
+  if (salaryForTax > rules.paTaperStart && allowance > 0) {
+    allowance = Math.max(0, allowance - Math.floor((salaryForTax - rules.paTaperStart) / 2));
   }
   const taxable = Math.max(0, salaryForTax - allowance);
 
-  // Income tax by band
   const bands = input.scotland ? rules.scotland : rules.rUK;
   const bandRows = [];
   let remaining = taxable;
   let lower = 0;
   let incomeTax = 0;
   for (const b of bands) {
-    const width = (b.upTo === Infinity ? Infinity : b.upTo) - lower;
-    const inBand = Math.max(0, Math.min(remaining, width));
+    const inBand = Math.max(0, Math.min(remaining, b.upTo - lower));
     const tax = round2(inBand * b.rate);
     if (inBand > 0) bandRows.push({ name: b.name, rate: b.rate, amount: inBand, tax });
     incomeTax += tax;
@@ -127,7 +137,6 @@ export function takeHome(input, rules = DEFAULT_RULES) {
   }
   incomeTax = round2(incomeTax);
 
-  // National Insurance (employee)
   const ni = rules.ni;
   let nationalInsurance = 0;
   if (!input.noNI) {
@@ -138,7 +147,6 @@ export function takeHome(input, rules = DEFAULT_RULES) {
   const employerNI = round2(Math.max(0, salaryForNI - ni.employerThreshold) * ni.employerRate);
   const employerPension = round2(gross * (Math.max(0, Number(input.employerPensionPct) || 0) / 100));
 
-  // Student loans (each plan on the same earnings; postgraduate stacks with one undergraduate plan)
   const loanRows = [];
   let studentLoan = 0;
   for (const id of input.studentLoans || []) {
@@ -150,77 +158,68 @@ export function takeHome(input, rules = DEFAULT_RULES) {
   }
   studentLoan = round2(studentLoan);
 
-  const totalDeductions = round2(incomeTax + nationalInsurance + studentLoan + deductedFromPay + (method === 'salarySacrifice' ? pensionGross : 0));
-  const net = round2(gross - totalDeductions);
-
-  // Marginal rate: what you keep of the next £1 (gross), ignoring pension
-  const marginal = (() => {
-    const bump = takeHomeCore({ ...input, gross: gross + 100 }, rules);
-    const base = net;
-    return round2(1 - (bump - base) / 100);
-  })();
-
-  const freq = PAY_FREQUENCIES.find((f) => f.id === input.frequency) || PAY_FREQUENCIES[0];
-  const per = (v) => ({ annual: round2(v), monthly: round2(v / 12), weekly: round2(v / 52), period: round2(v / freq.perYear) });
-
+  const totalDeductions = round2(sacrifice + deductedFromPay + payrollGiving + incomeTax + nationalInsurance + studentLoan + loanRepayment + otherNetDeductions);
+  const net = round2(gross + bonus - totalDeductions);
   return {
-    rules,
-    frequency: freq,
-    warnings,
-    allowance,
-    taxable,
-    bands: bandRows,
-    loans: loanRows,
-    pensionMethod: method,
-    gross: per(gross),
-    pension: per(pensionGross),
-    pensionFromPay: per(method === 'reliefAtSource' ? deductedFromPay : pensionGross),
-    incomeTax: per(incomeTax),
-    nationalInsurance: per(nationalInsurance),
-    studentLoan: per(studentLoan),
-    totalDeductions: per(totalDeductions),
-    net: per(net),
-    employerNI: per(employerNI),
-    employerPension: per(employerPension),
-    employerCost: per(gross + employerNI + employerPension),
-    effectiveRate: gross ? round2((incomeTax + nationalInsurance) / gross) : 0,
-    marginalRate: marginal,
+    gross, bonus, pensionGross, holidayCost, otherSacrifice, sacrifice, payrollGiving, taxableBenefits, loanRepayment, otherNetDeductions,
+    salaryForNI, salaryForTax, deductedFromPay, allowance, badCode, taxable, bandRows, incomeTax, nationalInsurance, employerNI, employerPension,
+    loanRows, studentLoan, totalDeductions, net, freq, method,
   };
 }
 
-/** Net pay only, used for the marginal-rate calculation (avoids recursion into marginal). */
+export function takeHome(input, rules = DEFAULT_RULES) {
+  const c = compute(input, rules);
+  const warnings = [];
+  if (c.method === 'reliefAtSource' && c.pensionGross > 0) {
+    warnings.push('Relief at source: basic-rate relief is added to your pension automatically. Higher or additional-rate taxpayers claim the rest through Self Assessment.');
+  }
+  if (c.badCode) warnings.push(`Tax code "${input.taxCode}" was not recognised, so the standard allowance was used.`);
+  if (c.taxableBenefits > 0) warnings.push('Taxable benefits are not paid to you as cash, but you pay income tax on their value (usually through your tax code). They are not subject to employee National Insurance.');
+
+  const bump = compute({ ...input, gross: c.gross + 100 }, rules);
+  const marginalRate = round2(1 - (bump.net - c.net) / 100);
+  const per = (v) => ({ annual: round2(v), monthly: round2(v / 12), weekly: round2(v / 52), period: round2(v / c.freq.perYear) });
+  const loanBalance = Math.max(0, Number(input.loanBalance) || 0);
+  const loanPeriods = c.loanRepayment > 0 && loanBalance > 0 ? Math.ceil(loanBalance / (c.loanRepayment / c.freq.perYear)) : null;
+
+  return {
+    rules,
+    frequency: c.freq,
+    warnings,
+    allowance: c.allowance,
+    taxable: c.taxable,
+    bands: c.bandRows,
+    loans: c.loanRows,
+    pensionMethod: c.method,
+    gross: per(c.gross),
+    bonus: per(c.bonus),
+    totalPay: per(c.gross + c.bonus),
+    taxableBenefits: per(c.taxableBenefits),
+    holidayCost: per(c.holidayCost),
+    otherSacrifice: per(c.otherSacrifice),
+    payrollGiving: per(c.payrollGiving),
+    pension: per(c.pensionGross),
+    pensionFromPay: per(c.method === 'reliefAtSource' ? c.deductedFromPay : c.pensionGross),
+    incomeTax: per(c.incomeTax),
+    nationalInsurance: per(c.nationalInsurance),
+    studentLoan: per(c.studentLoan),
+    loanRepayment: per(c.loanRepayment),
+    otherNetDeductions: per(c.otherNetDeductions),
+    totalDeductions: per(c.totalDeductions),
+    net: per(c.net),
+    netAfterLoan: per(c.net + c.loanRepayment),
+    loanPeriods,
+    employerNI: per(c.employerNI),
+    employerPension: per(c.employerPension),
+    employerCost: per(c.gross + c.bonus + c.taxableBenefits + c.employerNI + c.employerPension),
+    effectiveRate: c.gross + c.bonus ? round2((c.incomeTax + c.nationalInsurance) / (c.gross + c.bonus)) : 0,
+    marginalRate,
+  };
+}
+
+/** Net pay only (used by the inverse search). */
 function takeHomeCore(input, rules) {
-  const gross = Math.max(0, Number(input.gross) || 0);
-  const pensionPct = Math.max(0, Number(input.pensionPct) || 0) / 100;
-  const method = input.pensionMethod || 'salarySacrifice';
-  const pensionGross = round2(gross * pensionPct);
-  const salaryForNI = method === 'salarySacrifice' ? gross - pensionGross : gross;
-  const salaryForTax = method === 'salarySacrifice' || method === 'netPay' ? gross - pensionGross : gross;
-  const deductedFromPay = method === 'reliefAtSource' ? round2(pensionGross * 0.8) : method === 'netPay' ? pensionGross : 0;
-  let allowance = allowanceFromTaxCode(input.taxCode, rules);
-  if (allowance == null) allowance = rules.personalAllowance;
-  if (salaryForTax > rules.paTaperStart && allowance > 0) allowance = Math.max(0, allowance - Math.floor((salaryForTax - rules.paTaperStart) / 2));
-  const taxable = Math.max(0, salaryForTax - allowance);
-  const bands = input.scotland ? rules.scotland : rules.rUK;
-  let remaining = taxable;
-  let lower = 0;
-  let tax = 0;
-  for (const b of bands) {
-    const inBand = Math.max(0, Math.min(remaining, b.upTo - lower));
-    tax += inBand * b.rate;
-    remaining -= inBand;
-    lower = b.upTo;
-    if (remaining <= 0) break;
-  }
-  const ni = rules.ni;
-  let nat = 0;
-  if (!input.noNI) nat = Math.max(0, Math.min(salaryForNI, ni.upperEarningsLimit) - ni.primaryThreshold) * ni.mainRate + Math.max(0, salaryForNI - ni.upperEarningsLimit) * ni.upperRate;
-  let loans = 0;
-  for (const id of input.studentLoans || []) {
-    const plan = rules.studentLoans[id];
-    if (plan) loans += Math.max(0, salaryForNI - plan.threshold) * plan.rate;
-  }
-  return gross - tax - nat - loans - deductedFromPay - (method === 'salarySacrifice' ? pensionGross : 0);
+  return compute(input, rules).net;
 }
 
 /** Gross salary needed for a target annual take-home (search). */
