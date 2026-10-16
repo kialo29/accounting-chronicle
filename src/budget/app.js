@@ -262,7 +262,7 @@ function render() {
         ${VIEWS.map(([id, label]) => `<a href="#${id}" class="${ui.view === id ? 'active' : ''}">${label}</a>`).join('')}
       </nav>
       <div class="bg-main">
-        ${empty && ui.view !== 'settings' ? renderEmpty() : renderView()}
+        ${empty && ui.view !== 'settings' && ui.view !== 'takehome' ? renderEmpty() : renderView()}
       </div>
     </div>
     <dialog class="bg-modal" id="bg-modal"></dialog>
@@ -928,6 +928,7 @@ function viewScenarios() {
 // 8% SMART (salary sacrifice) pension, flexible benefits and purchased holiday by sacrifice,
 // payrolled benefits in kind, a graduate loan repaid from net pay, NI category H, no student loan.
 const TH_DEFAULTS = {
+  thVersion: 2, // bump when the defaults change so stale saved inputs are discarded
   gross: 31800, frequency: 'monthly', scotland: false, taxCode: '1257L', niCategory: 'H', payDay: 28,
   pensionPct: 8, pensionMethod: 'salarySacrifice', employerPensionPct: '', studentLoans: [],
   benefitsBasis: 'period', allowances: 50, taxableBenefits: 108.96, bonus: '',
@@ -937,7 +938,11 @@ const TH_DEFAULTS = {
 };
 
 function thInputs() {
-  return { ...TH_DEFAULTS, ...((state.settings && state.settings.takeHome) || {}) };
+  const stored = state.settings && state.settings.takeHome;
+  // Inputs saved by an older version of the calculator lack fields and would override the
+  // payslip defaults with stale values, so they are ignored until the user edits the form again.
+  if (!stored || stored.thVersion !== TH_DEFAULTS.thVersion) return { ...TH_DEFAULTS };
+  return { ...TH_DEFAULTS, ...stored };
 }
 function thRules() {
   return T.rulesWith((state.settings && state.settings.taxRules) || {});
@@ -955,8 +960,8 @@ function viewTakeHome() {
   const loans = Object.entries(rules.studentLoans);
   return `<section class="bg-grid two takehome">
     <div class="bg-card">
-      <h3>Your pay</h3>
-      <p class="muted small">UK PAYE rules for ${esc(rules.taxYear)}${overridden ? ' (edited)' : ''}. Salary only; benefits in kind, bonuses and other income are not included.</p>
+      <div class="bg-card-head"><h3>Your pay</h3><button class="btn-link" data-action="reset-takehome">Reset to payslip figures</button></div>
+      <p class="muted small">UK PAYE rules for ${esc(rules.taxYear)}${overridden ? ' (edited)' : ''}. Starts from the figures on the August payslip; change anything and the results update as you type.</p>
       <form data-form="takehome" class="bg-form" novalidate>
         <div class="grid2">
           <label>Gross annual salary (${esc(currencySymbol())}) <input id="th-gross" name="gross" type="number" min="0" step="100" value="${esc(inp.gross)}"></label>
@@ -1108,6 +1113,7 @@ function readTakeHomeForm(form) {
   const g = (k) => (fd.get(k) ?? '').toString().trim();
   const loans = Object.keys(T.DEFAULT_RULES.studentLoans).filter((id) => form[`loan_${id}`] && form[`loan_${id}`].checked);
   return {
+    thVersion: TH_DEFAULTS.thVersion,
     gross: Number(g('gross')) || 0,
     frequency: g('frequency') || 'monthly',
     scotland: g('scotland') === '1',
@@ -1657,6 +1663,10 @@ async function handleAction(action, el) {
       break;
     }
     case 'budget-kind': ui.budget.kind = el.dataset.kind; render(); break;
+    case 'reset-takehome':
+      delete state.settings.takeHome;
+      commit('Calculator reset to the payslip figures');
+      break;
     case 'reset-rules':
       delete state.settings.taxRules;
       ui.rulesOpen = true;
