@@ -46,6 +46,13 @@ export const PAY_FREQUENCIES = [
   { id: 'weekly', label: 'Weekly', perYear: 52 },
 ];
 
+export const NI_CATEGORIES = [
+  ['A', 'A: standard'],
+  ['M', 'M: under 21'],
+  ['H', 'H: apprentice under 25'],
+  ['C', 'C: over State Pension age (no employee NI)'],
+];
+
 export const PENSION_METHODS = [
   ['salarySacrifice', 'Salary sacrifice (saves tax and NI)'],
   ['netPay', 'Net pay arrangement (saves tax, not NI)'],
@@ -80,15 +87,22 @@ function round2(n) {
  *   studentLoans: ['plan2', 'postgrad'],
  *   noNI: false,           // over State Pension age
  *   frequency: 'monthly',
- *   taxableBenefits: 0,    // annual taxable value of benefits in kind (PMI, car): taxed, not NI'd, not cash
- *   holidayDays: 0,        // days of extra leave bought through salary sacrifice
+ *   niCategory: 'A',       // A standard, M under 21, H apprentice under 25, C over State Pension age
+ *   benefitsBasis: 'year' | 'period',  // how the five amounts below are entered
+ *   allowances: 0,         // cash allowances paid with salary (benefits allowance, car allowance): taxed, NI'd, not pensionable
+ *   taxableBenefits: 0,    // taxable value of benefits in kind (PMI, car): taxed, not NI'd, not cash
+ *   holidayDays: 0,        // days of extra leave bought through salary sacrifice...
+ *   holidayAmount: '',     // ...or the deduction as shown on the payslip (overrides days when set)
  *   workingDays: 260,      // days a year used to price a day of leave
- *   otherSacrifice: 0,     // annual: cycle to work, EV lease, childcare etc.
- *   payrollGiving: 0,      // annual: charity from pre-tax pay (tax relief, no NI relief)
+ *   otherSacrifice: 0,     // flexible benefits by salary sacrifice: life assurance, cycle to work, EV lease…
+ *   payrollGiving: 0,      // charity from pre-tax pay (tax relief, no NI relief)
  *   loanRepayment: 0,      // per pay period, from net pay (company / graduate loan)
  *   loanBalance: 0,        // remaining balance, to show when it clears
  *   otherNetDeductions: 0, // per pay period, from net pay (season ticket loan, union fees…)
  * }
+ * National Insurance uses per-pay-period thresholds (as payroll does), so monthly
+ * figures match a payslip. Income tax is worked out on the year and divided, so it
+ * can differ from a cumulative PAYE payslip by a few pence.
  */
 function compute(input, rules) {
   const gross = Math.max(0, Number(input.gross) || 0);
@@ -98,17 +112,21 @@ function compute(input, rules) {
   const freq = PAY_FREQUENCIES.find((f) => f.id === input.frequency) || PAY_FREQUENCIES[0];
   const num = (k) => Math.max(0, Number(input[k]) || 0);
 
+  const basis = input.benefitsBasis === 'period' ? freq.perYear : 1;
   const pensionGross = round2(gross * pensionPct);
   const workingDays = Math.max(1, Number(input.workingDays) || 260);
-  const holidayCost = round2((gross / workingDays) * num('holidayDays'));
-  const otherSacrifice = round2(num('otherSacrifice'));
+  const holidayAmount = input.holidayAmount === '' || input.holidayAmount == null ? 0 : Math.max(0, Number(input.holidayAmount) || 0);
+  const holidayCost = holidayAmount > 0 ? round2(holidayAmount * basis) : round2((gross / workingDays) * num('holidayDays'));
+  const otherSacrifice = round2(num('otherSacrifice') * basis);
   const sacrifice = (method === 'salarySacrifice' ? pensionGross : 0) + holidayCost + otherSacrifice;
-  const payrollGiving = round2(num('payrollGiving'));
-  const taxableBenefits = round2(num('taxableBenefits'));
+  const payrollGiving = round2(num('payrollGiving') * basis);
+  const taxableBenefits = round2(num('taxableBenefits') * basis);
+  const allowances = round2(num('allowances') * basis);
   const loanRepayment = round2(num('loanRepayment') * freq.perYear);
   const otherNetDeductions = round2(num('otherNetDeductions') * freq.perYear);
+  const niCategory = input.niCategory || (input.noNI ? 'C' : 'A');
 
-  const earnings = gross + bonus - sacrifice; // cash earnings after salary sacrifice
+  const earnings = gross + allowances + bonus - sacrifice; // cash earnings after salary sacrifice
   const salaryForNI = Math.max(0, earnings);
   const salaryForTax = Math.max(0, earnings - (method === 'netPay' ? pensionGross : 0) - payrollGiving + taxableBenefits);
   const deductedFromPay = method === 'reliefAtSource' ? round2(pensionGross * 0.8) : method === 'netPay' ? pensionGross : 0;
@@ -137,14 +155,20 @@ function compute(input, rules) {
   }
   incomeTax = round2(incomeTax);
 
+  // National Insurance per pay period, with HMRC's rounded period thresholds.
   const ni = rules.ni;
+  const ptP = Math.round(ni.primaryThreshold / freq.perYear);
+  const uelP = Math.round(ni.upperEarningsLimit / freq.perYear);
+  const stP = Math.round(ni.employerThreshold / freq.perYear);
+  const payP = salaryForNI / freq.perYear;
   let nationalInsurance = 0;
-  if (!input.noNI) {
-    const main = Math.max(0, Math.min(salaryForNI, ni.upperEarningsLimit) - ni.primaryThreshold);
-    const upper = Math.max(0, salaryForNI - ni.upperEarningsLimit);
-    nationalInsurance = round2(main * ni.mainRate + upper * ni.upperRate);
+  if (niCategory !== 'C') {
+    const main = Math.max(0, Math.min(payP, uelP) - ptP);
+    const upper = Math.max(0, payP - uelP);
+    nationalInsurance = round2(round2(main * ni.mainRate + upper * ni.upperRate) * freq.perYear);
   }
-  const employerNI = round2(Math.max(0, salaryForNI - ni.employerThreshold) * ni.employerRate);
+  const employerStart = niCategory === 'M' || niCategory === 'H' ? uelP : stP; // under-21s and apprentices: employer NI only above the upper limit
+  const employerNI = round2(round2(Math.max(0, payP - employerStart) * ni.employerRate) * freq.perYear);
   const employerPension = round2(gross * (Math.max(0, Number(input.employerPensionPct) || 0) / 100));
 
   const loanRows = [];
@@ -159,9 +183,9 @@ function compute(input, rules) {
   studentLoan = round2(studentLoan);
 
   const totalDeductions = round2(sacrifice + deductedFromPay + payrollGiving + incomeTax + nationalInsurance + studentLoan + loanRepayment + otherNetDeductions);
-  const net = round2(gross + bonus - totalDeductions);
+  const net = round2(gross + allowances + bonus - totalDeductions);
   return {
-    gross, bonus, pensionGross, holidayCost, otherSacrifice, sacrifice, payrollGiving, taxableBenefits, loanRepayment, otherNetDeductions,
+    gross, bonus, allowances, pensionGross, holidayCost, otherSacrifice, sacrifice, payrollGiving, taxableBenefits, loanRepayment, otherNetDeductions, niCategory,
     salaryForNI, salaryForTax, deductedFromPay, allowance, badCode, taxable, bandRows, incomeTax, nationalInsurance, employerNI, employerPension,
     loanRows, studentLoan, totalDeductions, net, freq, method,
   };
@@ -193,7 +217,11 @@ export function takeHome(input, rules = DEFAULT_RULES) {
     pensionMethod: c.method,
     gross: per(c.gross),
     bonus: per(c.bonus),
-    totalPay: per(c.gross + c.bonus),
+    allowances: per(c.allowances),
+    totalPay: per(c.gross + c.allowances + c.bonus),
+    taxablePay: per(c.salaryForTax),
+    niablePay: per(c.salaryForNI),
+    niCategory: c.niCategory,
     taxableBenefits: per(c.taxableBenefits),
     holidayCost: per(c.holidayCost),
     otherSacrifice: per(c.otherSacrifice),
@@ -211,8 +239,8 @@ export function takeHome(input, rules = DEFAULT_RULES) {
     loanPeriods,
     employerNI: per(c.employerNI),
     employerPension: per(c.employerPension),
-    employerCost: per(c.gross + c.bonus + c.taxableBenefits + c.employerNI + c.employerPension),
-    effectiveRate: c.gross + c.bonus ? round2((c.incomeTax + c.nationalInsurance) / (c.gross + c.bonus)) : 0,
+    employerCost: per(c.gross + c.allowances + c.bonus + c.taxableBenefits + c.employerNI + c.employerPension),
+    effectiveRate: c.gross + c.allowances + c.bonus ? round2((c.incomeTax + c.nationalInsurance) / (c.gross + c.allowances + c.bonus)) : 0,
     marginalRate,
   };
 }

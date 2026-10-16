@@ -82,8 +82,9 @@ browser's localStorage, with JSON export/import for backups and moving between d
 - **Take-home pay calculator**: UK PAYE (income tax incl. Scottish bands, National Insurance,
   student loan plans, pension by salary sacrifice / net pay / relief at source, tax codes),
   taxable benefits such as private medical insurance, bonuses, purchased holiday and other
-  salary sacrifice, payroll giving, and after-tax deductions such as a company loan (with the
-  date it clears), with salary comparison, "gross needed for a target take-home", editable tax-year rules, and a button
+  salary sacrifice, cash allowances, payroll giving, NI categories (apprentice, under 21),
+  and after-tax deductions such as a company loan (with the date it clears). NI uses
+  per-pay-period thresholds so monthly figures match a payslip. Includes salary comparison, "gross needed for a target take-home", editable tax-year rules, and a button
   that applies the result to your salary item in the budget.
 - **Goals, scenarios and settings**: savings goals with projected completion dates,
   debt payoff dates, what-if scenarios you can switch on and off, pay-cycle budgeting,

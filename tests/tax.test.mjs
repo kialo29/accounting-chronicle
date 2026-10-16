@@ -3,13 +3,16 @@ import assert from 'node:assert/strict';
 import { takeHome, allowanceFromTaxCode, grossForNet, rulesWith, DEFAULT_RULES } from '../src/budget/tax.js';
 
 const near = (a, b, msg) => assert.ok(Math.abs(a - b) < 0.01, `${msg || ''} expected ${b} got ${a}`);
+// Employee NI as payroll does it: monthly thresholds £1,048 and £4,189, rounded to pence each month.
+const r2 = (n) => Math.round(n * 100) / 100;
+const niMonthly = (annualPay) => r2(r2(Math.max(0, Math.min(annualPay / 12, 4189) - 1048) * 0.08 + Math.max(0, annualPay / 12 - 4189) * 0.02) * 12);
 
 test('£30,000 basic-rate taxpayer, no pension or loans', () => {
   const r = takeHome({ gross: 30000 });
   near(r.incomeTax.annual, 3486, 'tax');
-  near(r.nationalInsurance.annual, 1394.4, 'NI');
-  near(r.net.annual, 25119.6, 'net');
-  near(r.net.monthly, 2093.3, 'monthly');
+  near(r.nationalInsurance.annual, niMonthly(30000), 'NI');
+  near(r.net.annual, 30000 - 3486 - niMonthly(30000), 'net');
+  near(r.net.monthly, (30000 - 3486 - niMonthly(30000)) / 12, 'monthly');
   assert.equal(r.bands.length, 1);
   assert.equal(r.bands[0].name, 'Basic rate');
 });
@@ -17,8 +20,8 @@ test('£30,000 basic-rate taxpayer, no pension or loans', () => {
 test('£60,000 higher-rate taxpayer', () => {
   const r = takeHome({ gross: 60000 });
   near(r.incomeTax.annual, 11432, 'tax');
-  near(r.nationalInsurance.annual, 3210.6, 'NI');
-  near(r.net.annual, 45357.4, 'net');
+  near(r.nationalInsurance.annual, niMonthly(60000), 'NI');
+  near(r.net.annual, 60000 - 11432 - niMonthly(60000), 'net');
   assert.deepEqual(r.bands.map((b) => b.name), ['Basic rate', 'Higher rate']);
   near(r.marginalRate, 0.42, 'marginal 40% + 2%');
 });
@@ -46,12 +49,12 @@ test('pension methods', () => {
   const sac = takeHome({ gross: 40000, pensionPct: 5, pensionMethod: 'salarySacrifice' });
   near(sac.pension.annual, 2000, 'pension');
   near(sac.incomeTax.annual, (38000 - 12570) * 0.2, 'tax on reduced salary');
-  near(sac.nationalInsurance.annual, (38000 - 12570) * 0.08, 'NI on reduced salary');
+  near(sac.nationalInsurance.annual, niMonthly(38000), 'NI on reduced salary');
   near(sac.net.annual, 38000 - sac.incomeTax.annual - sac.nationalInsurance.annual, 'net');
 
   const netPay = takeHome({ gross: 40000, pensionPct: 5, pensionMethod: 'netPay' });
   near(netPay.incomeTax.annual, (38000 - 12570) * 0.2, 'tax relief');
-  near(netPay.nationalInsurance.annual, (40000 - 12570) * 0.08, 'NI on full salary');
+  near(netPay.nationalInsurance.annual, niMonthly(40000), 'NI on full salary');
   near(netPay.net.annual, 40000 - 2000 - netPay.incomeTax.annual - netPay.nationalInsurance.annual, 'net');
 
   const ras = takeHome({ gross: 40000, pensionPct: 5, pensionMethod: 'reliefAtSource' });
@@ -80,13 +83,13 @@ test('no NI over state pension age; pay frequencies; employer cost', () => {
   const r = takeHome({ gross: 30000, noNI: true, frequency: 'weekly' });
   assert.equal(r.nationalInsurance.annual, 0);
   near(r.net.period, r.net.annual / 52, 'weekly period');
-  near(r.employerNI.annual, (30000 - 5000) * 0.15, 'employer NI');
+  near(r.employerNI.annual, r2(r2((30000 / 52 - 96) * 0.15) * 52), 'employer NI (weekly thresholds)');
   const e = takeHome({ gross: 30000, employerPensionPct: 3 });
-  near(e.employerCost.annual, 30000 + 3750 + 900, 'employer cost');
+  near(e.employerCost.annual, 30000 + e.employerNI.annual + 900, 'employer cost');
 });
 
 test('gross for a target net and editable rules', () => {
-  const g = grossForNet(25119.6, {});
+  const g = grossForNet(takeHome({ gross: 30000 }).net.annual, {});
   near(g, 30000, 'inverse');
   const rules = rulesWith({ personalAllowance: 13000, 'ni.mainRate': 0.1 });
   assert.equal(rules.personalAllowance, 13000);
@@ -110,14 +113,14 @@ test('bought holiday and other salary sacrifice reduce tax and NI', () => {
   const r = takeHome({ gross: 26000, holidayDays: 5, workingDays: 260, otherSacrifice: 500 });
   near(r.holidayCost.annual, 500, '5 days at £100');
   near(r.incomeTax.annual, (25000 - 12570) * 0.2, 'tax on reduced pay');
-  near(r.nationalInsurance.annual, (25000 - 12570) * 0.08, 'NI on reduced pay');
+  near(r.nationalInsurance.annual, niMonthly(25000), 'NI on reduced pay');
   near(r.net.annual, 25000 - r.incomeTax.annual - r.nationalInsurance.annual, 'net');
 });
 
 test('payroll giving relieves tax but not NI', () => {
   const r = takeHome({ gross: 30000, payrollGiving: 600 });
   near(r.incomeTax.annual, (29400 - 12570) * 0.2, 'tax');
-  near(r.nationalInsurance.annual, (30000 - 12570) * 0.08, 'NI');
+  near(r.nationalInsurance.annual, niMonthly(30000), 'NI');
   near(r.net.annual, 30000 - 600 - r.incomeTax.annual - r.nationalInsurance.annual, 'net');
 });
 
@@ -137,7 +140,36 @@ test('bonus is taxed as earnings and not pensionable', () => {
   const r = takeHome({ gross: 30000, bonus: 2000, pensionPct: 5, pensionMethod: 'salarySacrifice', studentLoans: ['plan2'] });
   near(r.pension.annual, 1500, 'pension on base');
   near(r.incomeTax.annual, (30500 - 12570) * 0.2, 'tax');
-  near(r.nationalInsurance.annual, (30500 - 12570) * 0.08, 'NI');
+  near(r.nationalInsurance.annual, niMonthly(30500), 'NI');
   near(r.studentLoan.annual, (30500 - 28470) * 0.09, 'loan');
   near(r.totalPay.annual, 32000, 'total pay');
+});
+
+test('reproduces a real monthly payslip (benefits allowance, SMART pension, flex benefits, BIK, graduate loan, NI category H)', () => {
+  const r = takeHome({
+    gross: 31800, frequency: 'monthly', taxCode: '1257L', pensionPct: 8, pensionMethod: 'salarySacrifice', niCategory: 'H',
+    benefitsBasis: 'period', allowances: 50, taxableBenefits: 100.51 + 8.45, holidayAmount: 92.63, otherSacrifice: 2.74 + 7.09 + 1.36,
+    loanRepayment: 194.45, loanBalance: 4861.05, studentLoans: [],
+  });
+  near(r.pension.monthly, 212, 'SMART pension');
+  near(r.taxablePay.monthly, 2493.14, 'total taxable pay');
+  near(r.niablePay.monthly, 2384.18, 'total payments');
+  near(r.nationalInsurance.monthly, 106.89, 'employee NIC');
+  assert.ok(Math.abs(r.incomeTax.monthly - 289.0) < 0.05, `PAYE ${r.incomeTax.monthly} within 5p of 289.00 (cumulative rounding)`);
+  assert.ok(Math.abs(r.net.monthly - 1793.84) < 0.05, `net pay ${r.net.monthly} within 5p of 1,793.84`);
+  assert.equal(r.employerNI.annual, 0, 'apprentice: no employer NI below the upper limit');
+  assert.equal(r.loanPeriods, 25);
+  near(r.netAfterLoan.monthly, r.net.monthly + 194.45, 'after the graduate loan');
+});
+
+test('NI categories', () => {
+  const a = takeHome({ gross: 30000, niCategory: 'A' });
+  const m = takeHome({ gross: 30000, niCategory: 'M' });
+  const c = takeHome({ gross: 30000, niCategory: 'C' });
+  near(m.nationalInsurance.annual, a.nationalInsurance.annual, 'employee NI same for under-21s');
+  assert.equal(m.employerNI.annual, 0);
+  assert.ok(a.employerNI.annual > 0);
+  assert.equal(c.nationalInsurance.annual, 0);
+  const high = takeHome({ gross: 60000, niCategory: 'H' });
+  near(high.employerNI.annual, r2(r2((60000 / 12 - 4189) * 0.15) * 12), 'employer NI above UEL only');
 });
